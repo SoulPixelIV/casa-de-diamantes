@@ -87,11 +87,35 @@
             }
         },
         {
+            "Key": "50433d8f-4fdf-47d7-b5d9-e61bcf4461b4",
+            "Value": {
+                "id": "fa8f701a-9475-4c2e-849a-2ac0710a38e1",
+                "resourcePath": "sprites\\lensDirt_spr\\lensDirt_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "5baed84c-7459-457c-9b69-252e0ac18446",
+            "Value": {
+                "id": "30292c16-5cbc-43ab-a43a-885fcc4fec31",
+                "resourcePath": "objects\\water_obj\\water_obj.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "6198de6d-3e57-44b1-8d7c-e9bf48e92c18",
             "Value": {
                 "id": "b821d322-5d4f-4095-995c-a6003cb2d1ab",
                 "resourcePath": "views\\6198de6d-3e57-44b1-8d7c-e9bf48e92c18.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "65e55a38-a1d0-4026-977f-f1e4f432143b",
+            "Value": {
+                "id": "b67942a5-7d5c-4e72-afce-77e37e0fca94",
+                "resourcePath": "sprites\\water_spr\\water_spr.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -140,6 +164,14 @@
                 "id": "67ce5b4d-2264-4a8a-833a-a743ef9ff3c5",
                 "resourcePath": "objects\\ground_obj\\ground_obj.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "86828b18-608a-45ae-b6bd-ed9289e63699",
+            "Value": {
+                "id": "6f62e65a-98ee-4f22-88e8-84687b13be1b",
+                "resourcePath": "tilesets\\metalGround\\metalGround.yy",
+                "resourceType": "GMTileSet"
             }
         },
         {
@@ -218,7 +250,7 @@
             "Key": "a9cb15d0-8a88-4c5d-a07f-cdedafa195e9",
             "Value": {
                 "id": "1492a2e8-0263-4b46-944c-ce71a5691cbe",
-                "resourcePath": "sprites\\testBlock_spr\\testBlock_spr.yy",
+                "resourcePath": "sprites\\metalGround_spr\\metalGround_spr.yy",
                 "resourceType": "GMSprite"
             }
         },
