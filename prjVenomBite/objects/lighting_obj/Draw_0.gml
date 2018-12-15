@@ -1,0 +1,15 @@
+/// @description Lighting
+
+surface_set_target(surface);
+draw_clear(c_black);
+if (instance_exists(particleBlue_obj))
+{
+    with(particles)
+    {
+        gpu_set_blendmode(bm_add);
+        draw_sprite_ext(light_spr, 0, x*other.surfaceScale, y*other.surfaceScale, lightSize*other.surfaceScale, lightSize*other.surfaceScale, 0, c_white, lightStrength);
+        gpu_set_blendmode(bm_normal);
+    }
+}
+surface_reset_target();
+draw_surface_ext(surface, 0, 0, 1/surfaceScale, 1/surfaceScale, 0, c_white, 0.3);
