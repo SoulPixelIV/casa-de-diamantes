@@ -1,8 +1,8 @@
 {
-    "id": "85dfc7bf-2473-41c2-8ff6-f6f7a1ba35a1",
+    "id": "1d0ee4ed-0c51-410a-9737-cbaebaa2fc5c",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "ground_obj",
+    "name": "lights",
     "eventList": [
         
     ],
@@ -23,7 +23,7 @@
     "physicsShapePoints": null,
     "physicsStartAwake": true,
     "properties": null,
-    "solid": true,
-    "spriteId": "a9cb15d0-8a88-4c5d-a07f-cdedafa195e9",
+    "solid": false,
+    "spriteId": "00000000-0000-0000-0000-000000000000",
     "visible": true
 }

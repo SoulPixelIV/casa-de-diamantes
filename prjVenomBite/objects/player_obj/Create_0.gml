@@ -7,5 +7,8 @@ frictionStrength = 0.2; //Lower is more slippery
 fallJumpSafety = 9;
 
 fullJump = false;
+grounded = false;
 fallJumpSafetySave = fallJumpSafety;
+
+tilemap = layer_tilemap_get_id("TilesCollider");
 

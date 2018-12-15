@@ -41,7 +41,7 @@ if (vspeed < 14)
 }
 
 //Jump
-if (!place_free(x, y + 1) && (key_jump) || fallJumpSafety > 0 && (key_jump))
+if (grounded && (key_jump) || fallJumpSafety > 0 && (key_jump))
 {
     vspeed = -jumpStrength;
 }
@@ -79,5 +79,5 @@ else
 {
 	fallJumpSafety -= 1;
 }
-
+		
 
