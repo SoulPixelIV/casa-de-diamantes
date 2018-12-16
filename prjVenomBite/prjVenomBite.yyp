@@ -127,6 +127,14 @@
             }
         },
         {
+            "Key": "31577ad6-f08e-44cf-803c-4d754f53e39c",
+            "Value": {
+                "id": "00a05cab-ee53-4402-ab49-1d890819ded7",
+                "resourcePath": "sounds\\pistolShot_snd\\pistolShot_snd.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "338e8398-0f64-4c83-8b4d-695e12cd6cbb",
             "Value": {
                 "id": "2c2dbfb5-f705-449b-a523-2beb183d84aa",
@@ -195,6 +203,14 @@
             "Value": {
                 "id": "72c65fb5-2af2-4da2-a0e0-a1181e00b058",
                 "resourcePath": "objects\\particleBlue_obj\\particleBlue_obj.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "6a95b0d1-f6ff-423e-92d6-ecec989b354f",
+            "Value": {
+                "id": "73a80de1-a7c1-4878-af8e-58c30c1cfa0c",
+                "resourcePath": "objects\\shotLight_obj\\shotLight_obj.yy",
                 "resourceType": "GMObject"
             }
         },

@@ -11,12 +11,10 @@ key_jump_release = keyboard_check_released(vk_space) || gamepad_button_check_rel
 if (keyboard_check(ord("D")) && !keyboard_check(ord("A")))
 {
 	hspeed = movSpeed;
-	image_xscale = 1;
 }
 if (keyboard_check(ord("A")) && !keyboard_check(ord("D")))
 {
 	hspeed = -movSpeed;
-	image_xscale = -1;
 }
 
 if (hspeed > 0)
@@ -82,7 +80,9 @@ else
 	fallJumpSafety -= 1;
 }
 
-//Weapon System
+//###Weapon System###
+var dirCursor = point_direction(x, y, mouse_x, mouse_y);
+
 if (global.pickedWeapon[0])
 {
 	sprite_index = playerPistol_spr;
@@ -90,13 +90,26 @@ if (global.pickedWeapon[0])
 
 if (mouse_check_button_pressed(mb_left) && global.pickedWeapon[0])
 {
+	audio_play_sound(pistolShot_snd, 1, false);
 	if (image_xscale == 1)
 	{
 		instance_create_layer(x + 25, y - 1, "Instances", bullet_obj);
+		instance_create_layer(x + 25, y - 1, "Instances", shotLight_obj);
 	}
 	else
 	{
 		instance_create_layer(x - 25, y - 1, "Instances", bullet_obj);
+		instance_create_layer(x - 25, y - 1, "Instances", shotLight_obj);
 	}
+}
+
+//Animation
+if (dirCursor > 90 && dirCursor < 270)
+{
+	image_xscale = -1;
+}
+else
+{
+	image_xscale = 1;
 }
 
