@@ -447,6 +447,14 @@
             }
         },
         {
+            "Key": "e259c4b3-8c1c-48e4-980a-25d18c1c2998",
+            "Value": {
+                "id": "053a9207-2571-481c-a5f7-e1a78f41ccd9",
+                "resourcePath": "sprites\\playerWalking_spr\\playerWalking_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "e676e81c-f2e1-4c21-a598-19ea8cfe38a4",
             "Value": {
                 "id": "0589981c-971a-4091-af28-4024e4b01d65",
