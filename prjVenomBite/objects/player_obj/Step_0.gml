@@ -81,11 +81,11 @@ else
 }
 
 //###Weapon System###
-var dirCursor = point_direction(x, y, mouse_x, mouse_y);
+dirCursor = point_direction(x, y, mouse_x, mouse_y);
 
 if (global.pickedWeapon[0])
 {
-	sprite_index = playerPistol_spr;
+	sprite_index = playerEquipped_spr;
 }
 
 if (mouse_check_button_pressed(mb_left) && global.pickedWeapon[0])
