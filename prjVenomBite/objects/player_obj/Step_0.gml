@@ -116,7 +116,7 @@ if (global.pickedWeapon[0])
 {
 	if !(instance_exists(playerPistol_obj))
 	{
-		instance_create_layer(x, y, "InstancesForeground", playerPistol_obj);
+		instance_create_layer(x, y, "Instances", playerPistol_obj);
 	}
 	sprite_index = playerEquipped_spr;
 }
