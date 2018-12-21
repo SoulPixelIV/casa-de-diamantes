@@ -31,14 +31,6 @@
     },
     "resources": [
         {
-            "Key": "00c29022-3824-4132-b5dc-3b6810816ce8",
-            "Value": {
-                "id": "2adcd3d0-52e3-45cd-9e30-6884d7538972",
-                "resourcePath": "objects\\playerPistol_obj\\playerPistol_obj.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "02374d3f-b56e-4b17-ae3a-f6784192cc50",
             "Value": {
                 "id": "f216eb8d-0aea-4b6a-a948-8a9d1d078529",
@@ -164,14 +156,6 @@
                 "id": "c16700ea-aefe-4223-8b03-c7f2396d0610",
                 "resourcePath": "objects\\godraysRed_obj\\godraysRed_obj.yy",
                 "resourceType": "GMObject"
-            }
-        },
-        {
-            "Key": "498e5c37-631e-4e55-97c7-c222aefea94d",
-            "Value": {
-                "id": "007b9abd-78d1-4073-b730-37c68b9a3048",
-                "resourcePath": "sprites\\spotlight_spr\\spotlight_spr.yy",
-                "resourceType": "GMSprite"
             }
         },
         {
