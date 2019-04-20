@@ -1,6 +1,6 @@
 /// @description Variables
 
-lightSize = 1;
-lightStrength = 0.65;
+lightSize = 0;
+lightStrength = 0;
 
 lightSizeSave = lightSize;

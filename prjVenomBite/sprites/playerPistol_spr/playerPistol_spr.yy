@@ -1,5 +1,5 @@
 {
-    "id": "9b9b0abb-1771-49ad-837d-9c04ad110b20",
+    "id": "0ec59177-b878-4c75-b676-0d06889ddb5b",
     "modelName": "GMSprite",
     "mvc": "1.12",
     "name": "playerPistol_spr",
@@ -16,24 +16,24 @@
     "edgeFiltering": false,
     "frames": [
         {
-            "id": "e9679407-f631-4a67-803a-540092674086",
+            "id": "0d1fc5ff-a73c-48a8-b11e-0499c023acc0",
             "modelName": "GMSpriteFrame",
             "mvc": "1.0",
-            "SpriteId": "9b9b0abb-1771-49ad-837d-9c04ad110b20",
+            "SpriteId": "0ec59177-b878-4c75-b676-0d06889ddb5b",
             "compositeImage": {
-                "id": "4295215e-c42a-4508-b0a8-604e9cf4b9d7",
+                "id": "9386c14c-97e4-4d51-9618-4ef7a21bfece",
                 "modelName": "GMSpriteImage",
                 "mvc": "1.0",
-                "FrameId": "e9679407-f631-4a67-803a-540092674086",
+                "FrameId": "0d1fc5ff-a73c-48a8-b11e-0499c023acc0",
                 "LayerId": "00000000-0000-0000-0000-000000000000"
             },
             "images": [
                 {
-                    "id": "c16e4434-e8f8-4e67-91ae-a38ea36dc812",
+                    "id": "54df5f75-21da-4cd6-b4dd-8034ca895386",
                     "modelName": "GMSpriteImage",
                     "mvc": "1.0",
-                    "FrameId": "e9679407-f631-4a67-803a-540092674086",
-                    "LayerId": "feaf6115-baa2-49ca-a1d9-70fa465e5316"
+                    "FrameId": "0d1fc5ff-a73c-48a8-b11e-0499c023acc0",
+                    "LayerId": "6f0dce4c-c704-4058-bdb3-ce2b87d498bd"
                 }
             ]
         }
@@ -43,10 +43,10 @@
     "height": 64,
     "layers": [
         {
-            "id": "feaf6115-baa2-49ca-a1d9-70fa465e5316",
+            "id": "6f0dce4c-c704-4058-bdb3-ce2b87d498bd",
             "modelName": "GMImageLayer",
             "mvc": "1.0",
-            "SpriteId": "9b9b0abb-1771-49ad-837d-9c04ad110b20",
+            "SpriteId": "0ec59177-b878-4c75-b676-0d06889ddb5b",
             "blendMode": 0,
             "isLocked": false,
             "name": "default",
@@ -65,6 +65,6 @@
     "textureGroupId": "1225f6b0-ac20-43bd-a82e-be73fa0b6f4f",
     "type": 0,
     "width": 48,
-    "xorig": 20,
-    "yorig": 31
+    "xorig": 23,
+    "yorig": 30
 }

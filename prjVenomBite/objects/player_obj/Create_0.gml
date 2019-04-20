@@ -10,6 +10,8 @@ fullJump = false;
 grounded = false;
 fallJumpSafetySave = fallJumpSafety;
 dirCursor = 0;
+lightStrength = 0;
+lightSize = 0;
 
 tilemap = layer_tilemap_get_id("TilesCollider");
 

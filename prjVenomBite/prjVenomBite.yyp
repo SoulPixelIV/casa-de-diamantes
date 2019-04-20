@@ -55,6 +55,14 @@
             }
         },
         {
+            "Key": "0ec59177-b878-4c75-b676-0d06889ddb5b",
+            "Value": {
+                "id": "e2851335-09b3-4641-8840-e3316ab7765d",
+                "resourcePath": "sprites\\playerPistol_spr\\playerPistol_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "107a82d9-d2f7-4e0f-96e3-61fcb35459b6",
             "Value": {
                 "id": "249c9d24-e320-46d1-b98d-0e0f4dc58807",
@@ -108,6 +116,22 @@
                 "id": "a666bcf0-3e27-4717-a45f-d71aaf595ee7",
                 "resourcePath": "objects\\camera_obj\\camera_obj.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "25abc260-cb06-4d9d-b35e-0169357f99da",
+            "Value": {
+                "id": "9e945075-97ed-41cc-89b4-dcf5812951dd",
+                "resourcePath": "objects\\spotLight_obj\\spotLight_obj.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "287c182c-bbe2-4062-991a-4fa1635dc1d4",
+            "Value": {
+                "id": "3d6eb99a-4412-4983-aaed-2ac29836b692",
+                "resourcePath": "sprites\\playerEquipped_spr\\playerEquipped_spr.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -202,7 +226,7 @@
             "Key": "6756b9f8-d43f-4f9a-97d5-1f34bfb71b6e",
             "Value": {
                 "id": "e9b05898-a065-45ae-851e-faa50bff97d3",
-                "resourcePath": "sprites\\playerEquipped_spr\\playerEquipped_spr.yy",
+                "resourcePath": "sprites\\playerEquipped_spr_Backup\\playerEquipped_spr_Backup.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -314,7 +338,7 @@
             "Key": "9b9b0abb-1771-49ad-837d-9c04ad110b20",
             "Value": {
                 "id": "a45981a2-2a05-4d83-9575-ce6b833fc0cf",
-                "resourcePath": "sprites\\playerPistol_spr\\playerPistol_spr.yy",
+                "resourcePath": "sprites\\playerPistol_spr_Backup\\playerPistol_spr_Backup.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -507,6 +531,14 @@
             "Value": {
                 "id": "81a8731e-2853-4699-9bf4-e8c37ffccd34",
                 "resourcePath": "sprites\\bulletHit_spr\\bulletHit_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "f383535f-e5ef-40a8-9afa-e5c4432b6186",
+            "Value": {
+                "id": "fd9c278a-d0f8-40f6-99dc-6e3766284c4a",
+                "resourcePath": "sprites\\player_spr_Backup\\player_spr_Backup.yy",
                 "resourceType": "GMSprite"
             }
         },
