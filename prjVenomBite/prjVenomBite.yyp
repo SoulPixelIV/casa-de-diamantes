@@ -31,6 +31,14 @@
     },
     "resources": [
         {
+            "Key": "01e75341-095a-4b53-b390-e283a084a355",
+            "Value": {
+                "id": "00dffc66-9dfe-47eb-bd2d-c23a8f0e5395",
+                "resourcePath": "objects\\ledBarRedFlickering_obj\\ledBarRedFlickering_obj.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "02374d3f-b56e-4b17-ae3a-f6784192cc50",
             "Value": {
                 "id": "f216eb8d-0aea-4b6a-a948-8a9d1d078529",
@@ -103,6 +111,14 @@
             }
         },
         {
+            "Key": "1df2adb7-3cea-45b3-9235-15e2b954de14",
+            "Value": {
+                "id": "f7cc549e-6602-4506-8723-d90408273d3f",
+                "resourcePath": "sprites\\ledSign1_spr\\ledSign1_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "200fc3e7-2d91-4713-9dd4-2b6229140b4b",
             "Value": {
                 "id": "46570484-1a53-4fef-9030-70cebda8803f",
@@ -159,6 +175,14 @@
             }
         },
         {
+            "Key": "316d45cc-3188-4a0a-ad86-74b10ed4a3ab",
+            "Value": {
+                "id": "83a6e172-b3c8-41b3-b668-4bb97eb4940f",
+                "resourcePath": "views\\316d45cc-3188-4a0a-ad86-74b10ed4a3ab.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "338e8398-0f64-4c83-8b4d-695e12cd6cbb",
             "Value": {
                 "id": "2c2dbfb5-f705-449b-a523-2beb183d84aa",
@@ -183,6 +207,14 @@
             }
         },
         {
+            "Key": "443a1349-9a60-43ca-9e6a-61fbc2c6198c",
+            "Value": {
+                "id": "3ed68e01-eeab-4ed9-977f-4c2486687751",
+                "resourcePath": "objects\\ledSign1_obj\\ledSign1_obj.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "4f9c6178-1021-4954-9ed4-10056c58a875",
             "Value": {
                 "id": "0b9a10ec-92d3-42b1-a9ec-dd3cf9de326a",
@@ -195,6 +227,30 @@
             "Value": {
                 "id": "fa8f701a-9475-4c2e-849a-2ac0710a38e1",
                 "resourcePath": "sprites\\lensDirt_spr\\lensDirt_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "5251aba1-7a41-4504-8f00-2e8c8d87b6a1",
+            "Value": {
+                "id": "10ad330d-1c64-44a4-8807-89cf08b87635",
+                "resourcePath": "views\\5251aba1-7a41-4504-8f00-2e8c8d87b6a1.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "5284d2c6-d321-4ccb-8d66-79e1df65395a",
+            "Value": {
+                "id": "c50f29d9-4d47-4c15-9bf7-988ddb25d841",
+                "resourcePath": "sprites\\ledBarRedHanging_spr\\ledBarRedHanging_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "5a0b8468-92ce-4736-8cc4-780aa75c99c4",
+            "Value": {
+                "id": "71c8f9a4-3b38-42d5-b668-0d1559b1222c",
+                "resourcePath": "sprites\\playerWalking_spr\\playerWalking_spr.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -231,6 +287,22 @@
             }
         },
         {
+            "Key": "69ae86d9-1d7c-4c86-95f4-eb77d4a8cc8c",
+            "Value": {
+                "id": "3be166ce-ac2d-4ae7-aaff-cafddebf0f75",
+                "resourcePath": "sprites\\ledBarRed_spr\\ledBarRed_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "69f1fa44-2ecd-4fd4-8c07-4e0ed1ce1c45",
+            "Value": {
+                "id": "50a189b2-c97c-4187-95a4-ad4754a6311b",
+                "resourcePath": "views\\69f1fa44-2ecd-4fd4-8c07-4e0ed1ce1c45.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "6a59bdf5-08f9-4039-8134-1797ed3d8ea6",
             "Value": {
                 "id": "72c65fb5-2af2-4da2-a0e0-a1181e00b058",
@@ -263,6 +335,14 @@
             }
         },
         {
+            "Key": "726d83fb-7592-43bd-be4d-9951966aea4a",
+            "Value": {
+                "id": "c57449bd-e138-42f2-83ad-113978e75087",
+                "resourcePath": "views\\726d83fb-7592-43bd-be4d-9951966aea4a.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "732c9c55-1aab-4b37-8197-d5ce57250003",
             "Value": {
                 "id": "757259c3-22f8-4277-a9ef-ab961d146a0f",
@@ -292,6 +372,14 @@
                 "id": "ecb8a899-9a4c-4aa3-8973-49eee336e1c7",
                 "resourcePath": "sprites\\protoBanana_spr\\protoBanana_spr.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "81f49802-35f8-4710-99f9-92489bcae030",
+            "Value": {
+                "id": "b5df9856-4cb4-4701-accf-8f74c9dd7dfb",
+                "resourcePath": "views\\81f49802-35f8-4710-99f9-92489bcae030.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -439,10 +527,26 @@
             }
         },
         {
+            "Key": "b6157d18-123a-4c4e-947f-7acb82aed91a",
+            "Value": {
+                "id": "7adf08c7-a426-4374-a6e8-0749bf6d6fde",
+                "resourcePath": "views\\b6157d18-123a-4c4e-947f-7acb82aed91a.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "bcc12b6f-2c71-484d-93ba-97e1236af728",
             "Value": {
                 "id": "a582d04e-9b0b-455a-99b0-e010809d4f5b",
                 "resourcePath": "objects\\bulletHit_obj\\bulletHit_obj.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "bf035cae-92c7-4827-8093-109be55e5c17",
+            "Value": {
+                "id": "88131713-9b05-41d7-bff5-d23240e955c1",
+                "resourcePath": "objects\\ledBarRedHanging_obj\\ledBarRedHanging_obj.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -487,6 +591,14 @@
             }
         },
         {
+            "Key": "d2242a0d-fedb-4699-8c00-6a0e1cb72e94",
+            "Value": {
+                "id": "3098cf7e-8347-4f46-9cc4-09a9ce1d3124",
+                "resourcePath": "views\\d2242a0d-fedb-4699-8c00-6a0e1cb72e94.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "d494c6af-9189-456b-90e4-0dad8c1f46cf",
             "Value": {
                 "id": "2eee738f-1090-4e1c-bf84-ab4a730625de",
@@ -495,10 +607,26 @@
             }
         },
         {
+            "Key": "d5a00a65-9257-41be-9966-c1e9e01bd55c",
+            "Value": {
+                "id": "fe43838b-47d4-4375-b072-c8d41e4f427f",
+                "resourcePath": "views\\d5a00a65-9257-41be-9966-c1e9e01bd55c.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "d5b6dbe7-2382-48e8-bac9-7b5835e0de2b",
+            "Value": {
+                "id": "bfd870d2-4aa4-4435-8c5c-390cfcdc8899",
+                "resourcePath": "objects\\lightsRed_obj\\lightsRed_obj.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "e259c4b3-8c1c-48e4-980a-25d18c1c2998",
             "Value": {
                 "id": "053a9207-2571-481c-a5f7-e1a78f41ccd9",
-                "resourcePath": "sprites\\playerWalking_spr\\playerWalking_spr.yy",
+                "resourcePath": "sprites\\playerWalking_spr_Backup\\playerWalking_spr_Backup.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -543,6 +671,14 @@
             }
         },
         {
+            "Key": "f1bd0ef3-3f1e-49c4-a7ca-ea61626396cf",
+            "Value": {
+                "id": "44abd765-2984-4176-9570-5c44aeba765e",
+                "resourcePath": "objects\\shaderVignetteRed_obj\\shaderVignetteRed_obj.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "f29d74e3-1e59-4e24-9a0b-8d1ad1ca0fc4",
             "Value": {
                 "id": "81a8731e-2853-4699-9bf4-e8c37ffccd34",
@@ -564,6 +700,30 @@
                 "id": "232e79af-bbff-433a-b8e7-bfe251338e04",
                 "resourcePath": "options\\mac\\options_mac.yy",
                 "resourceType": "GMMacOptions"
+            }
+        },
+        {
+            "Key": "f724692b-d656-42bc-8cae-f0a89c74e6ec",
+            "Value": {
+                "id": "c02162e8-fe5f-4bf0-b7e0-8bb0ac19ca02",
+                "resourcePath": "views\\f724692b-d656-42bc-8cae-f0a89c74e6ec.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "f8234edd-7da9-4883-9f99-118a991bdae9",
+            "Value": {
+                "id": "d5bb295e-d111-4dc7-8710-1717fcd52a75",
+                "resourcePath": "views\\f8234edd-7da9-4883-9f99-118a991bdae9.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "f84e884c-c5e1-4bce-870e-28f60c877420",
+            "Value": {
+                "id": "004050a2-9ce3-4aa0-af71-6ac6af253c28",
+                "resourcePath": "objects\\ledBarRed_obj\\ledBarRed_obj.yy",
+                "resourceType": "GMObject"
             }
         },
         {

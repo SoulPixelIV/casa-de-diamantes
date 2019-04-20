@@ -85,7 +85,25 @@ dirCursor = point_direction(x, y, mouse_x, mouse_y);
 
 if (global.pickedWeapon[0])
 {
-	sprite_index = playerEquipped_spr;
+	if (hspeed != 0)
+	{
+		sprite_index = playerWalking_spr;
+	}
+	else
+	{
+		sprite_index = playerEquipped_spr;
+	}
+}
+else
+{
+	if (hspeed != 0)
+	{
+		sprite_index = playerWalking_spr;
+	}
+	else
+	{
+		sprite_index = player_spr;
+	}
 }
 
 if (mouse_check_button_pressed(mb_left) && global.pickedWeapon[0])
