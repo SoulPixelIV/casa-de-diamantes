@@ -87,7 +87,7 @@ if (global.pickedWeapon[0])
 {
 	if (hspeed != 0)
 	{
-		sprite_index = playerWalking_spr;
+		sprite_index = playerWalkingEquipped_spr;
 	}
 	else
 	{

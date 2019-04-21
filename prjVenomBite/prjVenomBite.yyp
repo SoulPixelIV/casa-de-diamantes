@@ -143,14 +143,6 @@
             }
         },
         {
-            "Key": "287c182c-bbe2-4062-991a-4fa1635dc1d4",
-            "Value": {
-                "id": "3d6eb99a-4412-4983-aaed-2ac29836b692",
-                "resourcePath": "sprites\\playerEquipped_spr\\playerEquipped_spr.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "291468b4-dbad-4d39-bee3-8f3df2da0c79",
             "Value": {
                 "id": "e06e58e2-e202-4d76-80ea-c01db410017d",
@@ -316,6 +308,14 @@
                 "id": "72c65fb5-2af2-4da2-a0e0-a1181e00b058",
                 "resourcePath": "objects\\particleBlue_obj\\particleBlue_obj.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "6a627897-1c00-4b95-95e0-c5a6e76c2858",
+            "Value": {
+                "id": "37556316-2463-46b7-a072-7ee98314ed6b",
+                "resourcePath": "sprites\\playerEquipped_spr\\playerEquipped_spr.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -523,6 +523,14 @@
             "Value": {
                 "id": "1492a2e8-0263-4b46-944c-ce71a5691cbe",
                 "resourcePath": "sprites\\metalGround_spr\\metalGround_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "b08b83d2-dc16-4c2a-bc45-6f9bc11fae55",
+            "Value": {
+                "id": "5ea961ba-d68a-4ffb-9b78-f93a8b17d71a",
+                "resourcePath": "sprites\\playerWalkingEquipped_spr\\playerWalkingEquipped_spr.yy",
                 "resourceType": "GMSprite"
             }
         },
