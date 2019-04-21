@@ -55,6 +55,14 @@
             }
         },
         {
+            "Key": "06426bbf-3f6c-4f28-a966-b6d3202e61fb",
+            "Value": {
+                "id": "9ebc25ec-e9a1-4302-9015-3c682bf23c9a",
+                "resourcePath": "sprites\\water_spr\\water_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "076fe53e-de30-40ed-bd59-e9f341e0a8cf",
             "Value": {
                 "id": "aa68a33f-55dd-41a9-a9cd-83a043e3be00",
@@ -247,6 +255,14 @@
             }
         },
         {
+            "Key": "52888905-45a2-4cc6-a454-9436cd22225f",
+            "Value": {
+                "id": "5155dccd-e9ca-47e0-8ec5-3b78c1b4e19c",
+                "resourcePath": "objects\\waterReflectionRed_obj\\waterReflectionRed_obj.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "5a0b8468-92ce-4736-8cc4-780aa75c99c4",
             "Value": {
                 "id": "71c8f9a4-3b38-42d5-b668-0d1559b1222c",
@@ -268,14 +284,6 @@
                 "id": "b821d322-5d4f-4095-995c-a6003cb2d1ab",
                 "resourcePath": "views\\6198de6d-3e57-44b1-8d7c-e9bf48e92c18.yy",
                 "resourceType": "GMFolder"
-            }
-        },
-        {
-            "Key": "65e55a38-a1d0-4026-977f-f1e4f432143b",
-            "Value": {
-                "id": "b67942a5-7d5c-4e72-afce-77e37e0fca94",
-                "resourcePath": "sprites\\water_spr\\water_spr.yy",
-                "resourceType": "GMSprite"
             }
         },
         {
@@ -652,6 +660,14 @@
                 "id": "bfd870d2-4aa4-4435-8c5c-390cfcdc8899",
                 "resourcePath": "objects\\lightsRed_obj\\lightsRed_obj.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "dde2d35a-431b-4019-a7dc-95db008f3f26",
+            "Value": {
+                "id": "e2e277f7-33ed-45f9-804c-0c6c567ab1b8",
+                "resourcePath": "sprites\\waterReflectionRed_spr\\waterReflectionRed_spr.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
