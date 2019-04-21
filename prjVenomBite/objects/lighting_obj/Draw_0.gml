@@ -28,6 +28,12 @@ if (instance_exists(particleBlue_obj))
         draw_sprite_ext(light_spr, 0, x*other.surfaceScale, y*other.surfaceScale, lightSize*other.surfaceScale, lightSize*other.surfaceScale, 0, c_red, lightStrength);
         gpu_set_blendmode(bm_normal);
     }
+	with (lightsBlue_obj)
+	{
+        gpu_set_blendmode(bm_add);
+        draw_sprite_ext(light_spr, 0, x*other.surfaceScale, y*other.surfaceScale, lightSize*other.surfaceScale, lightSize*other.surfaceScale, 0, c_blue, lightStrength);
+        gpu_set_blendmode(bm_normal);
+    }
 }
 surface_reset_target();
 draw_surface_ext(surface, 0, 0, 1/surfaceScale, 1/surfaceScale, 0, c_white, 0.3);

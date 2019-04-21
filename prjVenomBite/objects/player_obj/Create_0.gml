@@ -2,7 +2,7 @@
 
 movSpeed = 3.4;
 gravityStrength = -0.42;
-jumpStrength = 9.2;
+jumpStrength = 4.2;
 frictionStrength = 0.2; //Lower is more slippery
 fallJumpSafety = 9;
 

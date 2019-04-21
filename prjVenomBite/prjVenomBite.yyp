@@ -215,6 +215,14 @@
             }
         },
         {
+            "Key": "4aa40d2f-c252-4c97-a784-7b9b6efcf9f9",
+            "Value": {
+                "id": "e0166ba6-34a5-4334-a116-c80c848d6dda",
+                "resourcePath": "objects\\lightsBlue_obj\\lightsBlue_obj.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "4f9c6178-1021-4954-9ed4-10056c58a875",
             "Value": {
                 "id": "0b9a10ec-92d3-42b1-a9ec-dd3cf9de326a",
@@ -431,6 +439,14 @@
             }
         },
         {
+            "Key": "99614ceb-df93-4ef0-9cbb-e37cb4987611",
+            "Value": {
+                "id": "281d56c0-3d71-45eb-be0d-131f1f968b14",
+                "resourcePath": "sprites\\ledSignBlue1_spr\\ledSignBlue1_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "9a3357ce-128b-47e7-8378-9c553ee4200b",
             "Value": {
                 "id": "250d87c5-f100-418c-8d39-f199edcf6415",
@@ -516,6 +532,14 @@
                 "id": "897b7c1c-9141-474a-9a57-e82d6865b8cb",
                 "resourcePath": "views\\b2c044bf-e0ff-425d-a68d-475a4d9c0f73.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "b2fd10a4-f6e8-4f90-abec-be5dd673e196",
+            "Value": {
+                "id": "65ff0a3c-030a-44ef-9d0b-8e733ab4fb31",
+                "resourcePath": "objects\\ledSignBlue1_obj\\ledSignBlue1_obj.yy",
+                "resourceType": "GMObject"
             }
         },
         {
