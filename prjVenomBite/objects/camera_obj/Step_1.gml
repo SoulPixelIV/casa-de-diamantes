@@ -26,7 +26,7 @@ if (zoomCooldown < 0)
 }
 else
 {
-	if (viewX < 640 || viewY > 360)
+	if (viewX < 640 || viewY < 360)
 	{
 		viewX += 16 * 2;
 		viewY += 9 * 2;

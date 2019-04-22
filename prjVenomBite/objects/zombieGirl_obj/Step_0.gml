@@ -3,7 +3,7 @@
 x += (hspeed / 10000) * (dt - delta_time);
 y += (vspeed / 10000) * (dt - delta_time);
 
-if (distance_to_object(player_obj) < 128)
+if (distance_to_object(player_obj) < 128 && distance_to_object(player_obj) > 16)
 {
 	if (player_obj.x > x)
 	{
