@@ -114,7 +114,7 @@
             "Key": "1d0ee4ed-0c51-410a-9737-cbaebaa2fc5c",
             "Value": {
                 "id": "a066a183-254a-4c27-a0a4-a6516941758d",
-                "resourcePath": "objects\\lights\\lights.yy",
+                "resourcePath": "objects\\lights_obj\\lights_obj.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -140,6 +140,14 @@
                 "id": "a666bcf0-3e27-4717-a45f-d71aaf595ee7",
                 "resourcePath": "objects\\camera_obj\\camera_obj.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "248634b9-1279-4e4e-b3ff-20ab76fa0da1",
+            "Value": {
+                "id": "78436737-3b47-447c-8a1f-11f0a4dc6d60",
+                "resourcePath": "sprites\\zombieGirl_spr\\zombieGirl_spr.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -303,6 +311,14 @@
             }
         },
         {
+            "Key": "65e2ef96-24e5-4aab-9ae2-e62edd7ac063",
+            "Value": {
+                "id": "8e20476e-f3e3-4546-ba96-6ffd442a59ff",
+                "resourcePath": "tilesets\\cityBackground\\cityBackground.yy",
+                "resourceType": "GMTileSet"
+            }
+        },
+        {
             "Key": "6756b9f8-d43f-4f9a-97d5-1f34bfb71b6e",
             "Value": {
                 "id": "e9b05898-a065-45ae-851e-faa50bff97d3",
@@ -427,6 +443,14 @@
             "Value": {
                 "id": "0b1f0bf0-4db2-4ff8-96cc-6ad54f2d7af0",
                 "resourcePath": "views\\875bb2df-e54b-44fd-b927-5532404eec5f.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "885a6ebf-4b2a-43ea-9558-4c20351bee4a",
+            "Value": {
+                "id": "53de58b2-706d-4183-a842-2943f6bb6d50",
+                "resourcePath": "views\\885a6ebf-4b2a-43ea-9558-4c20351bee4a.yy",
                 "resourceType": "GMFolder"
             }
         },
@@ -607,6 +631,14 @@
             }
         },
         {
+            "Key": "c0febdb3-1eba-47e3-8446-134774adb175",
+            "Value": {
+                "id": "8f13cfc9-1322-4954-b0af-6f237b0f1735",
+                "resourcePath": "sprites\\cityBackground_spr\\cityBackground_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "c870b1d1-addf-4ff2-9243-5bff619edec5",
             "Value": {
                 "id": "9fde4e15-2a09-454e-818a-ce0422005ad1",
@@ -679,6 +711,14 @@
             }
         },
         {
+            "Key": "d9026e12-2afd-4c03-b6a5-ce264a56b60c",
+            "Value": {
+                "id": "3e41577f-4d0d-4ff0-809f-bf1c5b8998e2",
+                "resourcePath": "objects\\zombieGirl_obj\\zombieGirl_obj.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "dde2d35a-431b-4019-a7dc-95db008f3f26",
             "Value": {
                 "id": "e2e277f7-33ed-45f9-804c-0c6c567ab1b8",
@@ -723,6 +763,14 @@
             "Value": {
                 "id": "60f45f0c-4377-4f5a-826d-84b6dd85b9cf",
                 "resourcePath": "views\\e98fb20e-c431-4909-826f-2cf2085debe1.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "ea9ece90-0f55-4822-b3fa-42d502c475de",
+            "Value": {
+                "id": "0c7a2844-4ebd-471c-9bea-01494bee3b46",
+                "resourcePath": "views\\ea9ece90-0f55-4822-b3fa-42d502c475de.yy",
                 "resourceType": "GMFolder"
             }
         },

@@ -2,7 +2,7 @@
     "id": "1d0ee4ed-0c51-410a-9737-cbaebaa2fc5c",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "lights",
+    "name": "lights_obj",
     "eventList": [
         
     ],
