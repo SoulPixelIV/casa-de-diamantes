@@ -199,11 +199,27 @@
             }
         },
         {
+            "Key": "38123b52-2523-4f27-b14a-db22a286e07e",
+            "Value": {
+                "id": "3fc552e8-9783-4751-b9c4-88887d93f7a6",
+                "resourcePath": "objects\\enemy_obj\\enemy_obj.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "38cdb1fe-2c0a-4b56-83dd-b076361f1c96",
             "Value": {
                 "id": "bb088163-3b1f-4f92-af88-5a479f7609a2",
                 "resourcePath": "objects\\colliderSideway_obj\\colliderSideway_obj.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "3a059d9b-350e-471e-b92a-97d846baa09e",
+            "Value": {
+                "id": "c5b5ce95-b7bf-4ad3-b0d4-a091476db124",
+                "resourcePath": "sprites\\backgroundWindow_spr\\backgroundWindow_spr.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -235,6 +251,14 @@
             "Value": {
                 "id": "3ed68e01-eeab-4ed9-977f-4c2486687751",
                 "resourcePath": "objects\\ledSign1_obj\\ledSign1_obj.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "4593506e-85d0-4004-b468-089431bb07ff",
+            "Value": {
+                "id": "c1f38052-d9b0-4866-957b-825292da2adb",
+                "resourcePath": "objects\\backgroundWindow_obj\\backgroundWindow_obj.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -391,11 +415,27 @@
             }
         },
         {
+            "Key": "72ceb36c-9ea3-4122-8db2-71022dafcc47",
+            "Value": {
+                "id": "b6d7b373-0da6-4ed8-9f38-37379c5669cf",
+                "resourcePath": "objects\\backgroundRestaurant_obj\\backgroundRestaurant_obj.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "732c9c55-1aab-4b37-8197-d5ce57250003",
             "Value": {
                 "id": "757259c3-22f8-4277-a9ef-ab961d146a0f",
                 "resourcePath": "objects\\lighting_obj\\lighting_obj.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "759e28aa-b820-4841-bc4d-cd7a22e90515",
+            "Value": {
+                "id": "2c3308b8-74b0-4eb0-9b95-0d82c32515ab",
+                "resourcePath": "sprites\\backgroundRestaurant_spr\\backgroundRestaurant_spr.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -623,6 +663,14 @@
             }
         },
         {
+            "Key": "bccc4c25-d84d-4147-9e4a-492a163d2729",
+            "Value": {
+                "id": "896d6bb6-a448-4b72-b18e-06792eac5474",
+                "resourcePath": "sprites\\bloodSpread_spr\\bloodSpread_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "bf035cae-92c7-4827-8093-109be55e5c17",
             "Value": {
                 "id": "88131713-9b05-41d7-bff5-d23240e955c1",
@@ -780,6 +828,14 @@
                 "id": "29c68e1d-3437-4940-9e4d-28519f361ed2",
                 "resourcePath": "views\\eae774b0-0a0d-40fe-869c-1ddebe39e8dd.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "f0b6f293-5828-4c79-8deb-dcb63da7c2d1",
+            "Value": {
+                "id": "1934ed75-e0ac-448c-81a0-9b40ec85062c",
+                "resourcePath": "objects\\bloodSpread_obj\\bloodSpread_obj.yy",
+                "resourceType": "GMObject"
             }
         },
         {
