@@ -1,14 +1,14 @@
 {
-    "id": "d5b6dbe7-2382-48e8-bac9-7b5835e0de2b",
+    "id": "7f41c6be-ae43-481a-9d37-d24032976f58",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "lightsRed_obj",
+    "name": "casinoBuilding_obj",
     "eventList": [
         
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
-    "parentObjectId": "ce9d59ef-e7e4-473c-aa32-94145f89ea01",
+    "parentObjectId": "00000000-0000-0000-0000-000000000000",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
@@ -24,6 +24,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "00000000-0000-0000-0000-000000000000",
+    "spriteId": "e00caac6-2a32-4ecc-a585-04b467505ae6",
     "visible": true
 }

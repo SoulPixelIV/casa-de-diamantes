@@ -11,5 +11,7 @@ if (!place_free(x, y))
 }
 if (place_meeting(x, y, enemy_obj))
 {
+	var enemyTarget = instance_place(x, y, enemy_obj);
+	enemyTarget.hp -= 20;
 	instance_change(bloodSpread_obj, true);
 }

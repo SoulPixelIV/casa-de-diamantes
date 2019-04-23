@@ -29,3 +29,9 @@ else
 
 dirLookat = point_direction(x, y, player_obj.x, player_obj.y);
 
+//Death
+if (hp < 0)
+{
+	instance_destroy();
+}
+
