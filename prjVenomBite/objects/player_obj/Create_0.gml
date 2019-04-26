@@ -8,6 +8,7 @@ fallJumpSafety = 9;
 
 fullJump = false;
 grounded = false;
+crouching = false;
 fallJumpSafetySave = fallJumpSafety;
 dirCursor = 0;
 lightStrength = 0;

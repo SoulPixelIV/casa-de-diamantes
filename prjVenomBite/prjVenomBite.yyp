@@ -319,6 +319,14 @@
             }
         },
         {
+            "Key": "52fcc415-5a4a-4fca-9d8d-f8f2fca35679",
+            "Value": {
+                "id": "66fa070e-3954-4ddb-95e5-28acbd93e1fc",
+                "resourcePath": "sprites\\playerKnifeBuildup_spr\\playerKnifeBuildup_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "5a0b8468-92ce-4736-8cc4-780aa75c99c4",
             "Value": {
                 "id": "71c8f9a4-3b38-42d5-b668-0d1559b1222c",

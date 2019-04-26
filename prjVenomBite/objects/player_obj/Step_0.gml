@@ -6,6 +6,7 @@ y += (vspeed / 10000) * (dt - delta_time);
 key_jump = keyboard_check_pressed(vk_space) || gamepad_button_check_pressed(0, gp_face1);
 key_jump_hold = keyboard_check(vk_space) || gamepad_button_check(0, gp_face1);
 key_jump_release = keyboard_check_released(vk_space) || gamepad_button_check_released(0, gp_face1);
+key_shift_hold = keyboard_check(vk_shift) || gamepad_button_check(0, gp_face2);
 
 //Movement
 if (keyboard_check(ord("D")) && !keyboard_check(ord("A")))
@@ -91,7 +92,14 @@ if (global.pickedWeapon[0])
 	}
 	else
 	{
-		sprite_index = playerEquipped_spr;
+		if (crouching)
+		{
+			sprite_index = playerKnifeBuildup_spr;
+		}
+		else
+		{
+			sprite_index = playerEquipped_spr;
+		}
 	}
 }
 else
@@ -102,7 +110,14 @@ else
 	}
 	else
 	{
-		sprite_index = player_spr;
+		if (crouching)
+		{
+			sprite_index = playerKnifeBuildup_spr;
+		}
+		else
+		{
+			sprite_index = player_spr;
+		}
 	}
 }
 
@@ -131,3 +146,11 @@ else
 	image_xscale = 1;
 }
 
+if (key_shift_hold)
+{
+	crouching = true;
+}
+else
+{
+	crouching = false;
+}
