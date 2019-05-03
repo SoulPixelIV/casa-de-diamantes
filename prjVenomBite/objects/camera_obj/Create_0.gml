@@ -7,7 +7,7 @@ mYPos = 0;
 xCoor = 100;
 yCoor = 100;
 
-zoomCooldown = 300;
+zoomCooldown = 300000;
 
 zoomCooldownSave = zoomCooldown;
 
