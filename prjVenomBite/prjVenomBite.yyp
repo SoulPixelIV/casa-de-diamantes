@@ -95,6 +95,14 @@
             }
         },
         {
+            "Key": "1369c773-602b-4e10-b1a7-214cc713d1e2",
+            "Value": {
+                "id": "f19ad0d3-9b8a-4963-9b4b-3e4e8c9b68e5",
+                "resourcePath": "objects\\ledSignEmail_obj\\ledSignEmail_obj.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "15d89916-7c87-435b-ac52-2980b5410198",
             "Value": {
                 "id": "5fcb7683-6f10-48ef-89d5-d9b74e9b7823",
@@ -155,6 +163,14 @@
             "Value": {
                 "id": "9e945075-97ed-41cc-89b4-dcf5812951dd",
                 "resourcePath": "objects\\spotLight_obj\\spotLight_obj.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "25c27325-dfae-4e53-b5b4-57311620e2dd",
+            "Value": {
+                "id": "11b88163-a5f8-4932-ad6d-473b91726c12",
+                "resourcePath": "objects\\ledSignGithub_obj\\ledSignGithub_obj.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -607,6 +623,14 @@
             }
         },
         {
+            "Key": "a20a54d2-4a01-471e-8f8c-51c19ffebd7d",
+            "Value": {
+                "id": "b71d34c0-d68e-45ae-a844-35ef6f4ad20e",
+                "resourcePath": "sprites\\githubLEDLogo_spr\\githubLEDLogo_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "a6441658-9892-425d-89c4-593d5fb4979b",
             "Value": {
                 "id": "131706b6-f57e-4bc4-be98-35b7bb406b45",
@@ -751,6 +775,14 @@
             }
         },
         {
+            "Key": "d05dee10-644c-448b-920d-16a9694567c8",
+            "Value": {
+                "id": "49e34126-cc53-48f6-bdb9-8d65def807d4",
+                "resourcePath": "sprites\\discordLEDLogo_spr\\discordLEDLogo_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "d1995fa1-ba32-40f5-9d11-f77bb1218bab",
             "Value": {
                 "id": "c4212984-5b3a-4f31-87b3-ad6bb53ebfe2",
@@ -788,6 +820,14 @@
                 "id": "bfd870d2-4aa4-4435-8c5c-390cfcdc8899",
                 "resourcePath": "objects\\lightsRed_obj\\lightsRed_obj.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "d7f84dea-cd47-4860-b912-95450c480988",
+            "Value": {
+                "id": "7f12177d-2697-4385-8d91-ced99b28c770",
+                "resourcePath": "sprites\\emailLEDLogo_spr\\emailLEDLogo_spr.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -956,6 +996,14 @@
                 "id": "e60992ab-3cda-45f2-b40c-92fea6dc62fa",
                 "resourcePath": "sprites\\colliderBox_spr\\colliderBox_spr.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "fe59b418-74da-4c84-b6f5-44c00af4b860",
+            "Value": {
+                "id": "e761fd4b-d41d-41ca-b320-642385de2864",
+                "resourcePath": "objects\\ledSignDiscord_obj\\ledSignDiscord_obj.yy",
+                "resourceType": "GMObject"
             }
         }
     ],
