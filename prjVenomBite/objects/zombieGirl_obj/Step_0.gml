@@ -35,6 +35,10 @@ if (hp < 0)
 	hspeed = 0;
 	vspeed = 0;
 	image_alpha = 0;
+	with (headshotHitbox)
+	{
+		instance_destroy();
+	}
 }
 
 //Headshot Hitbox

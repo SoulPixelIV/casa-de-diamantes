@@ -128,11 +128,13 @@ if (mouse_check_button_pressed(mb_left) && global.pickedWeapon[0])
 	{
 		instance_create_layer(x + 25, y - 1, "Instances", bullet_obj);
 		instance_create_layer(x + 25, y - 1, "Instances", shotLight_obj);
+		hspeed -= 1.5;
 	}
 	else
 	{
 		instance_create_layer(x - 25, y - 1, "Instances", bullet_obj);
 		instance_create_layer(x - 25, y - 1, "Instances", shotLight_obj);
+		hspeed += 1.5;
 	}
 }
 
