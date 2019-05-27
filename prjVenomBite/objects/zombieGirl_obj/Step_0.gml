@@ -37,3 +37,12 @@ if (hp < 0)
 	image_alpha = 0;
 }
 
+//Headshot Hitbox
+with (headshotHitbox)
+{
+	if (x != body.x && y != body.y)
+	{
+		move_towards_point(body.x, body.y - 16, 3);
+	}
+}
+

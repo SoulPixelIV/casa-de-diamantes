@@ -487,6 +487,14 @@
             }
         },
         {
+            "Key": "7baf7ac7-59de-4859-8add-dab402ae03e8",
+            "Value": {
+                "id": "c436491f-dc0c-4b16-9f14-52ef2e32b9b0",
+                "resourcePath": "objects\\headshotHitbox_obj\\headshotHitbox_obj.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "7f41c6be-ae43-481a-9d37-d24032976f58",
             "Value": {
                 "id": "3efa6420-ebe5-48c5-944f-f4898abba274",
@@ -859,6 +867,14 @@
             "Value": {
                 "id": "053a9207-2571-481c-a5f7-e1a78f41ccd9",
                 "resourcePath": "sprites\\playerWalking_spr_Backup\\playerWalking_spr_Backup.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "e3007b1f-e6cd-4a99-88f1-30f00368a107",
+            "Value": {
+                "id": "5b940e56-6d48-4dbf-8c3a-c2f21b84db39",
+                "resourcePath": "sprites\\redcubex16_spr\\redcubex16_spr.yy",
                 "resourceType": "GMSprite"
             }
         },
