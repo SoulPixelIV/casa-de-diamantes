@@ -123,18 +123,39 @@ else
 
 if (mouse_check_button_pressed(mb_left) && global.pickedWeapon[0])
 {
-	audio_play_sound(pistolShot_snd, 1, false);
-	if (image_xscale == 1)
+	//Check Ammo
+	if (global.pistolAmmo > 0)
 	{
-		instance_create_layer(x + 25, y - 1, "Instances", bullet_obj);
-		instance_create_layer(x + 25, y - 1, "Instances", shotLight_obj);
-		hspeed -= 1.5;
+		audio_play_sound(pistolShot_snd, 1, false);
+		if (image_xscale == 1)
+		{
+			instance_create_layer(x + 25, y - 1, "Instances", bullet_obj);
+			instance_create_layer(x + 25, y - 1, "Instances", shotLight_obj);
+			hspeed -= 1.5;
+		}
+		else
+		{
+			instance_create_layer(x - 25, y - 1, "Instances", bullet_obj);
+			instance_create_layer(x - 25, y - 1, "Instances", shotLight_obj);
+			hspeed += 1.5;
+		}
+		global.pistolAmmo--;
 	}
-	else
+}
+
+//Reload
+if (keyboard_check_pressed(ord("R")))
+{
+	if (global.pistolMag >= 6 && global.pistolAmmo < 6)
 	{
-		instance_create_layer(x - 25, y - 1, "Instances", bullet_obj);
-		instance_create_layer(x - 25, y - 1, "Instances", shotLight_obj);
-		hspeed += 1.5;
+		global.pistolMag -= 6 - global.pistolAmmo;
+		global.pistolAmmo += 6 - global.pistolAmmo;
+	}
+	
+	if (global.pistolMag < 6 && global.pistolAmmo < 6)
+	{
+		global.pistolAmmo += global.pistolMag;
+		global.pistolMag = 0;
 	}
 }
 

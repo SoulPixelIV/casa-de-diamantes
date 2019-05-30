@@ -1,6 +1,6 @@
 /// @description Shortcuts
 
-if (keyboard_check_pressed(ord("R")))
+if (keyboard_check_pressed(vk_f1))
 {
 	room_restart();
 }
