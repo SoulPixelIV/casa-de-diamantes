@@ -183,6 +183,14 @@
             }
         },
         {
+            "Key": "276c1c24-7b84-428a-95ea-87be419f58a3",
+            "Value": {
+                "id": "2fe87df2-9510-4720-a48c-a249955d20c5",
+                "resourcePath": "sprites\\dualBarettas_spr\\dualBarettas_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "291468b4-dbad-4d39-bee3-8f3df2da0c79",
             "Value": {
                 "id": "e06e58e2-e202-4d76-80ea-c01db410017d",
@@ -388,6 +396,14 @@
                 "id": "e9b05898-a065-45ae-851e-faa50bff97d3",
                 "resourcePath": "sprites\\playerEquipped_spr_Backup\\playerEquipped_spr_Backup.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "67f92079-0fc1-4cf0-a520-a0705b9f310e",
+            "Value": {
+                "id": "b9faec31-4e08-4eb2-b409-39bc8c0e21d0",
+                "resourcePath": "objects\\dualBarettas_obj\\dualBarettas_obj.yy",
+                "resourceType": "GMObject"
             }
         },
         {
