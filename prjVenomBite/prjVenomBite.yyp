@@ -287,6 +287,14 @@
             }
         },
         {
+            "Key": "44f9f782-399d-4660-aeb4-af144715a291",
+            "Value": {
+                "id": "ba27312c-243d-4c06-8265-045b7ffc469d",
+                "resourcePath": "sprites\\playerDualBarettas_spr\\playerDualBarettas_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "4593506e-85d0-4004-b468-089431bb07ff",
             "Value": {
                 "id": "c1f38052-d9b0-4866-957b-825292da2adb",

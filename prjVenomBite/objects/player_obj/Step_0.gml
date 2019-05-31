@@ -121,7 +121,7 @@ else
 	}
 }
 
-if (mouse_check_button_pressed(mb_left) && global.pickedWeapon[0])
+if (mouse_check_button_pressed(mb_left) && global.pickedWeapon[0] && global.pistolCooldown <= 0)
 {
 	//Check Ammo
 	if (global.pistolAmmo > 0)
@@ -140,7 +140,16 @@ if (mouse_check_button_pressed(mb_left) && global.pickedWeapon[0])
 			hspeed += 1.5;
 		}
 		global.pistolAmmo--;
+		global.pistolCooldown = global.pistolCooldownSave;
 	}
+}
+
+//Shot Cooldown
+if (global.pistolCooldown > 0 || global.dualBarettasCooldown > 0 || global.shotgunCooldown > 0)
+{
+	global.pistolCooldown -= 0.1;
+	global.dualBarettasCooldown -= 0.1;
+	global.shotgunCooldown -= 0.1;
 }
 
 //Reload
