@@ -130,15 +130,15 @@ if (mouse_check_button_pressed(mb_left) && global.pickedWeapon[0] && global.pist
 		audio_play_sound(pistolShot_snd, 1, false);
 		if (image_xscale == 1)
 		{
-			instance_create_layer(x + 25, y - 1, "Instances", bullet_obj);
+			instance_create_layer(x + 25, y - 1, "Instances", bulletPistol_obj);
 			instance_create_layer(x + 25, y - 1, "Instances", shotLight_obj);
-			hspeed -= 1.5;
+			hspeed -= 1;
 		}
 		else
 		{
-			instance_create_layer(x - 25, y - 1, "Instances", bullet_obj);
+			instance_create_layer(x - 25, y - 1, "Instances", bulletPistol_obj);
 			instance_create_layer(x - 25, y - 1, "Instances", shotLight_obj);
-			hspeed += 1.5;
+			hspeed += 1;
 		}
 		global.pistolAmmo--;
 		global.pistolCooldown = global.pistolCooldownSave;
@@ -154,15 +154,15 @@ if (mouse_check_button_pressed(mb_left) && global.pickedWeapon[1] && global.dual
 		audio_play_sound(dualBarettasShot_snd, 1, false);
 		if (image_xscale == 1)
 		{
-			instance_create_layer(x + 25, y - 1, "Instances", bullet_obj);
+			instance_create_layer(x + 25, y - 1, "Instances", bulletDualBarettas_obj);
 			instance_create_layer(x + 25, y - 1, "Instances", shotLight_obj);
-			hspeed -= 1.5;
+			hspeed -= 2;
 		}
 		else
 		{
-			instance_create_layer(x - 25, y - 1, "Instances", bullet_obj);
+			instance_create_layer(x - 25, y - 1, "Instances", bulletDualBarettas_obj);
 			instance_create_layer(x - 25, y - 1, "Instances", shotLight_obj);
-			hspeed += 1.5;
+			hspeed += 2;
 		}
 		global.dualBarettasAmmo--;
 		global.dualBarettasCooldown = global.dualBarettasCooldownSave;

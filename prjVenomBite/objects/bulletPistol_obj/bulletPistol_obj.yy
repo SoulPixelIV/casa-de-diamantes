@@ -2,7 +2,7 @@
     "id": "4f9c6178-1021-4954-9ed4-10056c58a875",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "bullet_obj",
+    "name": "bulletPistol_obj",
     "eventList": [
         {
             "id": "f7bb56eb-e595-432b-b0a0-d8a0dd36cf1b",

@@ -95,6 +95,14 @@
             }
         },
         {
+            "Key": "1302b9d1-1f4a-4bf1-b5fa-c4a8d7efdf89",
+            "Value": {
+                "id": "960a100d-2dc0-4b43-9013-8ef403a3f30a",
+                "resourcePath": "objects\\bulletDualBarettas_obj\\bulletDualBarettas_obj.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "1369c773-602b-4e10-b1a7-214cc713d1e2",
             "Value": {
                 "id": "f19ad0d3-9b8a-4963-9b4b-3e4e8c9b68e5",
@@ -314,7 +322,7 @@
             "Key": "4f9c6178-1021-4954-9ed4-10056c58a875",
             "Value": {
                 "id": "0b9a10ec-92d3-42b1-a9ec-dd3cf9de326a",
-                "resourcePath": "objects\\bullet_obj\\bullet_obj.yy",
+                "resourcePath": "objects\\bulletPistol_obj\\bulletPistol_obj.yy",
                 "resourceType": "GMObject"
             }
         },
