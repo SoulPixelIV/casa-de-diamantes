@@ -84,7 +84,7 @@ else
 //###Weapon System###
 dirCursor = point_direction(x, y, mouse_x, mouse_y);
 
-if (global.pickedWeapon[0])
+if (global.pickedWeapon[0] || global.pickedWeapon[1])
 {
 	if (hspeed != 0)
 	{
@@ -121,6 +121,7 @@ else
 	}
 }
 
+//Pistol
 if (mouse_check_button_pressed(mb_left) && global.pickedWeapon[0] && global.pistolCooldown <= 0)
 {
 	//Check Ammo
@@ -144,6 +145,30 @@ if (mouse_check_button_pressed(mb_left) && global.pickedWeapon[0] && global.pist
 	}
 }
 
+//Dual Barettas
+if (mouse_check_button_pressed(mb_left) && global.pickedWeapon[1] && global.dualBarettasCooldown <= 0)
+{
+	//Check Ammo
+	if (global.dualBarettasAmmo > 0)
+	{
+		audio_play_sound(dualBarettasShot_snd, 1, false);
+		if (image_xscale == 1)
+		{
+			instance_create_layer(x + 25, y - 1, "Instances", bullet_obj);
+			instance_create_layer(x + 25, y - 1, "Instances", shotLight_obj);
+			hspeed -= 1.5;
+		}
+		else
+		{
+			instance_create_layer(x - 25, y - 1, "Instances", bullet_obj);
+			instance_create_layer(x - 25, y - 1, "Instances", shotLight_obj);
+			hspeed += 1.5;
+		}
+		global.dualBarettasAmmo--;
+		global.dualBarettasCooldown = global.dualBarettasCooldownSave;
+	}
+}
+
 //Shot Cooldown
 if (global.pistolCooldown > 0 || global.dualBarettasCooldown > 0 || global.shotgunCooldown > 0)
 {
@@ -155,16 +180,33 @@ if (global.pistolCooldown > 0 || global.dualBarettasCooldown > 0 || global.shotg
 //Reload
 if (keyboard_check_pressed(ord("R")))
 {
-	if (global.pistolMag >= 6 && global.pistolAmmo < 6)
+	if (global.pickedWeapon[0])
 	{
-		global.pistolMag -= 6 - global.pistolAmmo;
-		global.pistolAmmo += 6 - global.pistolAmmo;
-	}
+		if (global.pistolMag >= 6 && global.pistolAmmo < 6)
+		{
+			global.pistolMag -= 6 - global.pistolAmmo;
+			global.pistolAmmo += 6 - global.pistolAmmo;
+		}
 	
-	if (global.pistolMag < 6 && global.pistolAmmo < 6)
+		if (global.pistolMag < 6 && global.pistolAmmo < 6)
+		{
+			global.pistolAmmo += global.pistolMag;
+			global.pistolMag = 0;
+		}
+	}
+	if (global.pickedWeapon[1])
 	{
-		global.pistolAmmo += global.pistolMag;
-		global.pistolMag = 0;
+		if (global.dualBarettasMag >= 6 && global.dualBarettasAmmo < 6)
+		{
+			global.dualBarettasMag -= 6 - global.dualBarettasAmmo;
+			global.dualBarettasAmmo += 6 - global.dualBarettasAmmo;
+		}
+	
+		if (global.dualBarettasMag < 6 && global.dualBarettasAmmo < 6)
+		{
+			global.dualBarettasAmmo += global.dualBarettasMag;
+			global.dualBarettasMag = 0;
+		}
 	}
 }
 

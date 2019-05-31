@@ -847,6 +847,14 @@
             }
         },
         {
+            "Key": "d46150cb-2a0b-4553-8bfa-c71867e0ec83",
+            "Value": {
+                "id": "110c64a4-c09d-436e-9b4d-798d8d41dd13",
+                "resourcePath": "sounds\\dualBarettasShot_snd\\dualBarettasShot_snd.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "d494c6af-9189-456b-90e4-0dad8c1f46cf",
             "Value": {
                 "id": "2eee738f-1090-4e1c-bf84-ab4a730625de",

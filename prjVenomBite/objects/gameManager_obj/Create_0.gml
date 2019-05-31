@@ -16,4 +16,5 @@ global.shotgunCooldown = 10;
 global.shotgunCooldownSave = global.shotgunCooldown;
 
 global.pickedWeapon[0] = false;
+global.pickedWeapon[1] = false;
 
