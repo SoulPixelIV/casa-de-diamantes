@@ -12,9 +12,10 @@ global.dualBarettasCooldownSave = global.dualBarettasCooldown;
 
 global.shotgunAmmo = 0;
 global.shotgunMag = 0;
-global.shotgunCooldown = 10;
+global.shotgunCooldown = 5;
 global.shotgunCooldownSave = global.shotgunCooldown;
 
 global.pickedWeapon[0] = false;
 global.pickedWeapon[1] = false;
+global.pickedWeapon[2] = false;
 

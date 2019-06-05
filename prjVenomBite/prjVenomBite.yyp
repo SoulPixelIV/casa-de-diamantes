@@ -215,6 +215,14 @@
             }
         },
         {
+            "Key": "29cec75b-ceab-4a97-8ba4-3386c0e9b8db",
+            "Value": {
+                "id": "4c55d972-1b99-4ada-87d5-7ee1602669ec",
+                "resourcePath": "objects\\shotgun_obj\\shotgun_obj.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "2e158006-106b-469d-a0dc-3adee82c3cac",
             "Value": {
                 "id": "f542877e-431b-44b6-b097-9f687a048d56",
@@ -275,6 +283,14 @@
             "Value": {
                 "id": "c5b5ce95-b7bf-4ad3-b0d4-a091476db124",
                 "resourcePath": "sprites\\backgroundWindow_spr\\backgroundWindow_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "3d9f15ec-94a7-45da-a955-e8f01265850a",
+            "Value": {
+                "id": "64d31eab-5442-4817-a9a2-d8715fa08182",
+                "resourcePath": "sprites\\playerShotgun_spr\\playerShotgun_spr.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -396,6 +412,14 @@
                 "id": "71c8f9a4-3b38-42d5-b668-0d1559b1222c",
                 "resourcePath": "sprites\\playerWalking_spr\\playerWalking_spr.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "5adb3264-face-4d24-9f54-d68aeb7452de",
+            "Value": {
+                "id": "048f8967-5863-42a5-8de2-4460ce3a9b0d",
+                "resourcePath": "objects\\bulletShotgun_obj\\bulletShotgun_obj.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -652,6 +676,14 @@
                 "id": "281d56c0-3d71-45eb-be0d-131f1f968b14",
                 "resourcePath": "sprites\\ledSignBlue1_spr\\ledSignBlue1_spr.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "9a206052-3f79-49de-8e0d-54bddc1c49e1",
+            "Value": {
+                "id": "87439eac-4c0b-4082-bc55-45c8cd69d8b7",
+                "resourcePath": "sounds\\shotgunShot_snd\\shotgunShot_snd.yy",
+                "resourceType": "GMSound"
             }
         },
         {

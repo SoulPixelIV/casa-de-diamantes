@@ -84,7 +84,7 @@ else
 //###Weapon System###
 dirCursor = point_direction(x, y, mouse_x, mouse_y);
 
-if (global.pickedWeapon[0] || global.pickedWeapon[1])
+if (global.pickedWeapon[0] || global.pickedWeapon[1] || global.pickedWeapon[2])
 {
 	if (hspeed != 0)
 	{
@@ -169,6 +169,30 @@ if (mouse_check_button_pressed(mb_left) && global.pickedWeapon[1] && global.dual
 	}
 }
 
+//Shotgun
+if (mouse_check_button_pressed(mb_left) && global.pickedWeapon[2] && global.shotgunCooldown <= 0)
+{
+	//Check Ammo
+	if (global.shotgunAmmo > 0)
+	{
+		audio_play_sound(shotgunShot_snd, 1, false);
+		if (image_xscale == 1)
+		{
+			instance_create_layer(x + 25, y - 1, "Instances", bulletShotgun_obj);
+			instance_create_layer(x + 25, y - 1, "Instances", shotLight_obj);
+			hspeed -= 6;
+		}
+		else
+		{
+			instance_create_layer(x - 25, y - 1, "Instances", bulletShotgun_obj);
+			instance_create_layer(x - 25, y - 1, "Instances", shotLight_obj);
+			hspeed += 6;
+		}
+		global.shotgunAmmo--;
+		global.shotgunCooldown = global.shotgunCooldownSave;
+	}
+}
+
 //Shot Cooldown
 if (global.pistolCooldown > 0 || global.dualBarettasCooldown > 0 || global.shotgunCooldown > 0)
 {
@@ -196,16 +220,30 @@ if (keyboard_check_pressed(ord("R")))
 	}
 	if (global.pickedWeapon[1])
 	{
-		if (global.dualBarettasMag >= 6 && global.dualBarettasAmmo < 6)
+		if (global.dualBarettasMag >= 12 && global.dualBarettasAmmo < 12)
 		{
-			global.dualBarettasMag -= 6 - global.dualBarettasAmmo;
-			global.dualBarettasAmmo += 6 - global.dualBarettasAmmo;
+			global.dualBarettasMag -= 12 - global.dualBarettasAmmo;
+			global.dualBarettasAmmo += 12 - global.dualBarettasAmmo;
 		}
 	
-		if (global.dualBarettasMag < 6 && global.dualBarettasAmmo < 6)
+		if (global.dualBarettasMag < 12 && global.dualBarettasAmmo < 12)
 		{
 			global.dualBarettasAmmo += global.dualBarettasMag;
 			global.dualBarettasMag = 0;
+		}
+	}
+	if (global.pickedWeapon[2])
+	{
+		if (global.shotgunMag >= 2 && global.shotgunAmmo < 2)
+		{
+			global.shotgunMag -= 2 - global.shotgunAmmo;
+			global.shotgunAmmo += 2 - global.shotgunAmmo;
+		}
+	
+		if (global.shotgunMag < 2 && global.shotgunAmmo < 2)
+		{
+			global.shotgunAmmo += global.shotgunMag;
+			global.shotgunMag = 0;
 		}
 	}
 }
