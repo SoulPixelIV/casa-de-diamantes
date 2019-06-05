@@ -791,6 +791,14 @@
             }
         },
         {
+            "Key": "b1bcdd7c-0132-4cc4-ba29-6016484b5223",
+            "Value": {
+                "id": "cc6f2640-3939-4833-a230-888e0a4c63c4",
+                "resourcePath": "sprites\\windowWeapon_spr\\windowWeapon_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "b2c044bf-e0ff-425d-a68d-475a4d9c0f73",
             "Value": {
                 "id": "897b7c1c-9141-474a-9a57-e82d6865b8cb",
