@@ -1,4 +1,5 @@
 /// @description Draw vars
+draw_set_font(neonFont);
 draw_text(32, 32, "Framerate: " + string(fps_real));
 draw_text(32, 64, "Roomspeed: " + string(fps));
 draw_text(32, 632, "AMMO PS: " + string(global.pistolAmmo) + " | " + string(global.pistolMag));
