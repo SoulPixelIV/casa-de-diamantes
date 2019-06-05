@@ -190,6 +190,11 @@ if (mouse_check_button_pressed(mb_left) && global.pickedWeapon[2] && global.shot
 		}
 		global.shotgunAmmo--;
 		global.shotgunCooldown = global.shotgunCooldownSave;
+		
+		if (dirCursor > 225 && dirCursor < 320)
+		{
+			vspeed = -shotJumpStrength;
+		}
 	}
 }
 
