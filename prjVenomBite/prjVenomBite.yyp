@@ -119,6 +119,14 @@
             }
         },
         {
+            "Key": "193b46fd-87dc-4e18-9328-4dfeaaac97b0",
+            "Value": {
+                "id": "a620beaa-745f-4171-b597-f521fc22f32a",
+                "resourcePath": "sprites\\windowBackground\\windowBackground.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "1a98feb0-eaa3-40e3-8977-c6284473a0f6",
             "Value": {
                 "id": "9cb81652-7e0b-4210-b483-8b05842bce2d",
@@ -203,6 +211,14 @@
             "Value": {
                 "id": "e06e58e2-e202-4d76-80ea-c01db410017d",
                 "resourcePath": "sprites\\lensflareYellow_spr\\lensflareYellow_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "2e158006-106b-469d-a0dc-3adee82c3cac",
+            "Value": {
+                "id": "f542877e-431b-44b6-b097-9f687a048d56",
+                "resourcePath": "sprites\\shotgun_spr\\shotgun_spr.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -308,6 +324,14 @@
                 "id": "c1f38052-d9b0-4866-957b-825292da2adb",
                 "resourcePath": "objects\\backgroundWindow_obj\\backgroundWindow_obj.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "4849d125-b995-46a3-82a3-efe9cd41ebc4",
+            "Value": {
+                "id": "59aed12f-50ad-44c2-b984-36cb54e4a3d4",
+                "resourcePath": "views\\4849d125-b995-46a3-82a3-efe9cd41ebc4.yy",
+                "resourceType": "GMFolder"
             }
         },
         {

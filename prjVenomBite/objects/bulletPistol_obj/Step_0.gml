@@ -17,12 +17,12 @@ if (place_meeting(x, y, headshotHitbox_obj))
 	{
 		enemyTarget = instance_place(x, y, enemy_obj);
 	}
-	enemyTarget.hp -= 70;
+	enemyTarget.hp -= 40;
 	instance_change(bloodSpread_obj, true);
 }
 if (place_meeting(x, y, enemy_obj))
 {
 	var enemyTarget = instance_place(x, y, enemy_obj);
-	enemyTarget.hp -= 20;
+	enemyTarget.hp -= 10;
 	instance_change(bloodSpread_obj, true);
 }

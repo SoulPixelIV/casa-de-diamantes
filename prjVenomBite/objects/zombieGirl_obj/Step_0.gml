@@ -32,13 +32,11 @@ dirLookat = point_direction(x, y, player_obj.x, player_obj.y);
 //Death
 if (hp < 0)
 {
-	hspeed = 0;
-	vspeed = 0;
-	image_alpha = 0;
 	with (headshotHitbox)
 	{
 		instance_destroy();
 	}
+	instance_destroy();
 }
 
 //Headshot Hitbox
