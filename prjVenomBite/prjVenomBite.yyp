@@ -71,6 +71,14 @@
             }
         },
         {
+            "Key": "0d0bd69a-659c-467b-b7aa-1e6280e37644",
+            "Value": {
+                "id": "3f883fd8-256a-40a2-8fc7-77ee30b63761",
+                "resourcePath": "views\\0d0bd69a-659c-467b-b7aa-1e6280e37644.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "0ec59177-b878-4c75-b676-0d06889ddb5b",
             "Value": {
                 "id": "e2851335-09b3-4641-8840-e3316ab7765d",
@@ -122,7 +130,7 @@
             "Key": "193b46fd-87dc-4e18-9328-4dfeaaac97b0",
             "Value": {
                 "id": "a620beaa-745f-4171-b597-f521fc22f32a",
-                "resourcePath": "sprites\\windowBackground\\windowBackground.yy",
+                "resourcePath": "sprites\\windowBackground_spr\\windowBackground_spr.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -980,6 +988,14 @@
                 "id": "0088b8a6-f6b1-4a5c-a08c-92ec86616b28",
                 "resourcePath": "sprites\\casinoBuilding_spr\\casinoBuilding_spr.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "e0d1c377-e592-49c7-97a9-e5d2ad400d99",
+            "Value": {
+                "id": "80452eb7-5f18-40d6-9f75-11712b3d37f5",
+                "resourcePath": "objects\\windowBackground_obj\\windowBackground_obj.yy",
+                "resourceType": "GMObject"
             }
         },
         {
