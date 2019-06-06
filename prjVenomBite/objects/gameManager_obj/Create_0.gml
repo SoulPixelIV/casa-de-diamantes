@@ -23,6 +23,3 @@ global.unlockedWeapon[0] = false;
 global.unlockedWeapon[1] = false;
 global.unlockedWeapon[2] = false;
 
-//Fonts
-neonFont = font_add("neon.ttf", 30, false, false, 32, 128);
-

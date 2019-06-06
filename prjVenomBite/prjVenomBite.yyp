@@ -1007,6 +1007,14 @@
             }
         },
         {
+            "Key": "defa5a9f-7ba1-4afe-90bb-71d299d6a0f2",
+            "Value": {
+                "id": "661f327c-26e3-4aad-915f-d6ef78f0c7a5",
+                "resourcePath": "fonts\\neon_fnt\\neon_fnt.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
             "Key": "e00caac6-2a32-4ecc-a585-04b467505ae6",
             "Value": {
                 "id": "0088b8a6-f6b1-4a5c-a08c-92ec86616b28",
