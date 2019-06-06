@@ -1,4 +1,4 @@
-/// @description Post Processing
+/// @description GUI
 
 //HUD
 draw_text_ext(64, 512, "AMMO: X|Y", 1, 1);
@@ -27,6 +27,12 @@ draw_text_colour(32, 656, "Roomspeed: " + string(fps), c_purple, c_aqua, c_aqua,
 draw_sprite_ext(windowBackground_spr, 0, 1168, 520, 1, 1, 0, -1, 1);
 draw_sprite_ext(healthbarBorder_spr, 0, 32, 48, 1, 1, 0, -1, 1);
 draw_sprite_ext(healthbar_spr, 0, 32, 48, player_obj.hp / 100, 1, 0, -1, 1);
+
+//Score
+draw_set_font(neonBig_fnt);
+draw_sprite_ext(windowBackground_spr, 0, 1184, 44, 1, 1, 0, -1, 1);
+draw_text_colour(1120, 32, string(global.scorepoints) + "P", c_purple, c_aqua, c_aqua, c_purple, 1);
+draw_set_font(neon_fnt);
 
 //Syringes
 for (i = 0; i < player_obj.syringes; i++)

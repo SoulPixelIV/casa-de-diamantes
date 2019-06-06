@@ -879,6 +879,14 @@
             }
         },
         {
+            "Key": "bd2ac676-5d1b-48e0-b932-0c914118ae31",
+            "Value": {
+                "id": "de8732cb-9f30-4c88-9961-bc71f49a399f",
+                "resourcePath": "fonts\\neonBig_fnt\\neonBig_fnt.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
             "Key": "bf035cae-92c7-4827-8093-109be55e5c17",
             "Value": {
                 "id": "88131713-9b05-41d7-bff5-d23240e955c1",

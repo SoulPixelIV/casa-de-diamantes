@@ -1,5 +1,7 @@
 /// @description Variables
 
+global.scorepoints = 937402;
+
 global.pistolAmmo = 0;
 global.pistolMag = 0;
 global.pistolCooldown = 1.75;
