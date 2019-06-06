@@ -455,6 +455,14 @@
             }
         },
         {
+            "Key": "610151b4-7ab6-441c-b62a-f3895915c4ca",
+            "Value": {
+                "id": "6c891748-4855-41fd-bdfd-7b42adc0f923",
+                "resourcePath": "sprites\\healthbar_spr\\healthbar_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "6198de6d-3e57-44b1-8d7c-e9bf48e92c18",
             "Value": {
                 "id": "b821d322-5d4f-4095-995c-a6003cb2d1ab",
@@ -996,6 +1004,14 @@
                 "id": "3e41577f-4d0d-4ff0-809f-bf1c5b8998e2",
                 "resourcePath": "objects\\zombieGirl_obj\\zombieGirl_obj.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "dca0f6ec-134e-43fa-a810-aaafc8617282",
+            "Value": {
+                "id": "c0592471-7de0-4c4d-92e8-4653e40e393c",
+                "resourcePath": "sprites\\healthbarBorder_spr\\healthbarBorder_spr.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
