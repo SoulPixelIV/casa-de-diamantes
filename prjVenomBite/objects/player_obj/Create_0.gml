@@ -1,6 +1,7 @@
 /// @description Vars
 
 hp = 100;
+syringes = 3;
 movSpeed = 3.4;
 gravityStrength = -0.42;
 jumpStrength = 6.2;
