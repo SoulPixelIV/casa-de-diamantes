@@ -631,6 +631,14 @@
             }
         },
         {
+            "Key": "7fe310bb-9092-4b41-b9ac-fd6664991536",
+            "Value": {
+                "id": "13b06aad-7805-4d00-8f8c-1cd885fc6aa8",
+                "resourcePath": "sprites\\syringe_spr\\syringe_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "817c6337-c4f5-4db1-9e12-73eee36cac77",
             "Value": {
                 "id": "ecb8a899-9a4c-4aa3-8973-49eee336e1c7",
