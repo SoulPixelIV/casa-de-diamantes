@@ -316,4 +316,21 @@ if (hp < 0)
 		camera_obj.viewX -= 16;
 		camera_obj.viewY -= 9;
 	}
+	
+	//Revive
+	if (keyboard_check_pressed(ord("R")))
+	{
+		camera_obj.noZoom = false;
+		camera_obj.deathVignette = false;
+		camera_obj.noHUD = false;
+		camera_obj.drawInfectionText = false;
+		movement = true;
+		if (camera_obj.viewX < 640 || camera_obj.viewY < 360)
+		{
+			camera_obj.viewX += 16 * 2;
+			camera_obj.viewY += 9 * 2;
+		}
+		hp = 100;
+		syringes -= 1;
+	}
 }
