@@ -8,10 +8,13 @@ jumpStrength = 6.2;
 shotJumpStrength = 9.2;
 frictionStrength = 0.2; //Lower is more slippery
 fallJumpSafety = 9;
+damageCooldown = 30;
 
 fullJump = false;
 grounded = false;
 crouching = false;
+damageRecieved = false;
+damageCooldownSave = damageCooldown;
 fallJumpSafetySave = fallJumpSafety;
 dirCursor = 0;
 lightStrength = 0;

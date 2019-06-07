@@ -286,3 +286,13 @@ else
 {
 	crouching = false;
 }
+
+//Damage Cooldown
+if (damageRecieved)
+{
+	damageCooldown -= 1;
+}
+if (damageCooldown < 0)
+{
+	damageRecieved = false;
+}

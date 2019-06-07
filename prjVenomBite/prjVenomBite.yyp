@@ -151,6 +151,14 @@
             }
         },
         {
+            "Key": "1d38e79b-4a72-40d5-825a-b5739be7a623",
+            "Value": {
+                "id": "a7655bf0-5f9c-43a2-a114-0eea28c8d377",
+                "resourcePath": "sprites\\zombieGirlAttack_spr\\zombieGirlAttack_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "1df2adb7-3cea-45b3-9235-15e2b954de14",
             "Value": {
                 "id": "f7cc549e-6602-4506-8723-d90408273d3f",
