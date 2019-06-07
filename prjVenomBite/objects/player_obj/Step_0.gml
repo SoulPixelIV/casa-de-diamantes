@@ -9,13 +9,16 @@ key_jump_release = keyboard_check_released(vk_space) || gamepad_button_check_rel
 key_shift_hold = keyboard_check(vk_shift) || gamepad_button_check(0, gp_face2);
 
 //Movement
-if (keyboard_check(ord("D")) && !keyboard_check(ord("A")))
+if (movement)
 {
-	hspeed = movSpeed;
-}
-if (keyboard_check(ord("A")) && !keyboard_check(ord("D")))
-{
-	hspeed = -movSpeed;
+	if (keyboard_check(ord("D")) && !keyboard_check(ord("A")))
+	{
+		hspeed = movSpeed;
+	}
+	if (keyboard_check(ord("A")) && !keyboard_check(ord("D")))
+	{
+		hspeed = -movSpeed;
+	}
 }
 
 if (hspeed > 0)
@@ -42,17 +45,20 @@ if (vspeed < 14)
 }
 
 //Jump
-if (grounded && (key_jump) || fallJumpSafety > 0 && (key_jump))
+if (movement)
 {
-    vspeed = -jumpStrength;
-}
+	if (grounded && (key_jump) || fallJumpSafety > 0 && (key_jump))
+	{
+	    vspeed = -jumpStrength;
+	}
    
-if (key_jump_release && fullJump == false)
-{
-    if (vspeed < 0)
-    {
-        vspeed = vspeed / 2;
-    }
+	if (key_jump_release && fullJump == false)
+	{
+	    if (vspeed < 0)
+	    {
+	        vspeed = vspeed / 2;
+	    }
+	}
 }
 
 //Collision
@@ -295,4 +301,19 @@ if (damageRecieved)
 if (damageCooldown < 0)
 {
 	damageRecieved = false;
+}
+
+//Death
+if (hp < 0)
+{
+	camera_obj.noZoom = true;
+	camera_obj.deathVignette = true;
+	camera_obj.noHUD = true;
+	camera_obj.drawInfectionText = true;
+	movement = false;
+	if (camera_obj.viewX > 160 || camera_obj.viewY > 90)
+	{
+		camera_obj.viewX -= 16;
+		camera_obj.viewY -= 9;
+	}
 }

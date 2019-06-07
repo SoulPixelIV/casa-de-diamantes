@@ -239,6 +239,14 @@
             }
         },
         {
+            "Key": "2b7e93e1-f6b3-4250-bcb9-9a0e0c9972c5",
+            "Value": {
+                "id": "165a47ee-d538-4f09-87c5-cbce334c345b",
+                "resourcePath": "scripts\\cameraZoom_scr\\cameraZoom_scr.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "2e158006-106b-469d-a0dc-3adee82c3cac",
             "Value": {
                 "id": "f542877e-431b-44b6-b097-9f687a048d56",
@@ -791,6 +799,14 @@
             }
         },
         {
+            "Key": "a362c4bb-2bd6-4560-be83-e593e355a79b",
+            "Value": {
+                "id": "69673c88-6328-4d40-8395-83fdb526f622",
+                "resourcePath": "fonts\\neonHuge_fnt\\neonHuge_fnt.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
             "Key": "a6441658-9892-425d-89c4-593d5fb4979b",
             "Value": {
                 "id": "131706b6-f57e-4bc4-be98-35b7bb406b45",
@@ -1012,6 +1028,14 @@
                 "id": "b4dab3cc-4b7a-4ee8-90ef-886f3f7ced85",
                 "resourcePath": "sprites\\ammoPackPistol_spr\\ammoPackPistol_spr.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "d6aa94ed-12d0-4b19-a2e0-491e5189a2aa",
+            "Value": {
+                "id": "7d4be644-947b-4e75-9927-733cfd03db5c",
+                "resourcePath": "scripts\\cameraZoomOut_scr\\cameraZoomOut_scr.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -1240,7 +1264,9 @@
         }
     ],
     "script_order": [
-        "fbd12ebb-330e-4770-8afc-ee86112af9d9"
+        "fbd12ebb-330e-4770-8afc-ee86112af9d9",
+        "2b7e93e1-f6b3-4250-bcb9-9a0e0c9972c5",
+        "d6aa94ed-12d0-4b19-a2e0-491e5189a2aa"
     ],
     "tutorial": ""
 }

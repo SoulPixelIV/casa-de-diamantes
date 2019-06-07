@@ -9,6 +9,7 @@ shotJumpStrength = 9.2;
 frictionStrength = 0.2; //Lower is more slippery
 fallJumpSafety = 9;
 damageCooldown = 30;
+movement = true;
 
 fullJump = false;
 grounded = false;

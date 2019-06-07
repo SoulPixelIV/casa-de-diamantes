@@ -8,6 +8,10 @@ xCoor = 100;
 yCoor = 100;
 
 zoomCooldown = 300;
+deathVignette = false;
+drawInfectionText = false;
+noZoom = false;
+noHUD = false;
 
 zoomCooldownSave = zoomCooldown;
 

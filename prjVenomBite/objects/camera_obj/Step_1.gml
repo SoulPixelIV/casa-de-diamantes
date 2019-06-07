@@ -16,20 +16,23 @@ else
 	zoomCooldown = zoomCooldownSave;
 }
 
-if (zoomCooldown < 0)
+if (!noZoom)
 {
-	if (viewX > 160 || viewY > 90)
+	if (zoomCooldown < 0)
 	{
-		viewX -= 16 / 12;
-		viewY -= 9 / 12;
+		if (viewX > 160 || viewY > 90)
+		{
+			viewX -= 16 / 12;
+			viewY -= 9 / 12;
+		}
 	}
-}
-else
-{
-	if (viewX < 640 || viewY < 360)
+	else
 	{
-		viewX += 16 * 2;
-		viewY += 9 * 2;
+		if (viewX < 640 || viewY < 360)
+		{
+			viewX += 16 * 2;
+			viewY += 9 * 2;
+		}
 	}
 }
 
