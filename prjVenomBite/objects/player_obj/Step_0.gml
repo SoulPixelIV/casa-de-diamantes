@@ -1,7 +1,9 @@
 /// @description Movement
 
-x += (hspeed / 10000) * (dt - delta_time);
-y += (vspeed / 10000) * (dt - delta_time);
+dt = (delta_time / 1000000) * globalSettings_obj.TARGET_FRAMERATE;
+show_debug_message(dt);
+x += horspeed * dt;
+y += verspeed * dt;
 
 key_jump = keyboard_check_pressed(vk_space) || gamepad_button_check_pressed(0, gp_face1);
 key_jump_hold = keyboard_check(vk_space) || gamepad_button_check(0, gp_face1);
@@ -13,35 +15,35 @@ if (movement)
 {
 	if (keyboard_check(ord("D")) && !keyboard_check(ord("A")))
 	{
-		hspeed = movSpeed;
+		horspeed = movSpeed;
 	}
 	if (keyboard_check(ord("A")) && !keyboard_check(ord("D")))
 	{
-		hspeed = -movSpeed;
+		horspeed = -movSpeed;
 	}
 }
 
-if (hspeed > 0)
+if (horspeed > 0)
 {
-	hspeed -= frictionStrength;
-	if (hspeed < 0.3)
+	horspeed -= frictionStrength * dt;
+	if (horspeed < 0.3)
 	{
-		hspeed = 0;
+		horspeed = 0;
 	}
 }
 else
 {
-	hspeed += frictionStrength;
-	if (hspeed > -0.3)
+	horspeed += frictionStrength * dt;
+	if (horspeed > -0.3)
 	{
-		hspeed = 0;
+		horspeed = 0;
 	}
 }
 
 //Gravity
-if (vspeed < 14)
+if (verspeed < 14)
 {
-	vspeed = vspeed - gravityStrength;
+	verspeed -= gravityStrength * dt;
 }
 
 //Jump
@@ -49,42 +51,42 @@ if (movement)
 {
 	if (grounded && (key_jump) || fallJumpSafety > 0 && (key_jump))
 	{
-	    vspeed = -jumpStrength;
+	    verspeed = -jumpStrength;
 	}
    
 	if (key_jump_release && fullJump == false)
 	{
-	    if (vspeed < 0)
+	    if (verspeed < 0)
 	    {
-	        vspeed = vspeed / 2;
+	        verspeed = verspeed / 2;
 	    }
 	}
 }
 
 //Collision
-//Hspeed
-if (!place_free(x + hspeed, y))
+//horspeed
+if (!place_free(x + horspeed, y))
 {
-    while (place_free(x + sign(hspeed), y))
+    while (place_free(x + sign(horspeed), y))
     {
-        x += sign(hspeed);
+        x += sign(horspeed * dt);
     }
-    hspeed = 0;
+    horspeed = 0;
 } 
-//Vspeed
-if (!place_free(x, y + vspeed))
+//verspeed
+if (!place_free(x, y + verspeed))
 {
-    while (place_free(x, y + sign(vspeed)))
+    while (place_free(x, y + sign(verspeed)))
     {
-        y += sign(vspeed);
+        y += sign(verspeed * dt);
     }
     fullJump = false;
 	fallJumpSafety = fallJumpSafetySave;
-    vspeed = 0;   
+    verspeed = 0;   
 }
 else
 {
-	fallJumpSafety -= 1;
+	fallJumpSafety -= 1 * dt;
 }
 
 //###Weapon System###
@@ -92,7 +94,7 @@ dirCursor = point_direction(x, y, mouse_x, mouse_y);
 
 if (global.pickedWeapon[0] || global.pickedWeapon[1] || global.pickedWeapon[2])
 {
-	if (hspeed != 0)
+	if (horspeed != 0)
 	{
 		sprite_index = playerWalkingEquipped_spr;
 	}
@@ -110,7 +112,7 @@ if (global.pickedWeapon[0] || global.pickedWeapon[1] || global.pickedWeapon[2])
 }
 else
 {
-	if (hspeed != 0)
+	if (horspeed != 0)
 	{
 		sprite_index = playerWalking_spr;
 	}
@@ -138,13 +140,13 @@ if (mouse_check_button_pressed(mb_left) && global.pickedWeapon[0] && global.pist
 		{
 			instance_create_layer(x + 25, y - 1, "Instances", bulletPistol_obj);
 			instance_create_layer(x + 25, y - 1, "Instances", shotLight_obj);
-			hspeed -= 1;
+			horspeed = -1;
 		}
 		else
 		{
 			instance_create_layer(x - 25, y - 1, "Instances", bulletPistol_obj);
 			instance_create_layer(x - 25, y - 1, "Instances", shotLight_obj);
-			hspeed += 1;
+			horspeed = 1;
 		}
 		global.pistolAmmo--;
 		global.pistolCooldown = global.pistolCooldownSave;
@@ -162,13 +164,13 @@ if (mouse_check_button_pressed(mb_left) && global.pickedWeapon[1] && global.dual
 		{
 			instance_create_layer(x + 25, y - 1, "Instances", bulletDualBarettas_obj);
 			instance_create_layer(x + 25, y - 1, "Instances", shotLight_obj);
-			hspeed -= 2;
+			horspeed = -2;
 		}
 		else
 		{
 			instance_create_layer(x - 25, y - 1, "Instances", bulletDualBarettas_obj);
 			instance_create_layer(x - 25, y - 1, "Instances", shotLight_obj);
-			hspeed += 2;
+			horspeed = 2;
 		}
 		global.dualBarettasAmmo--;
 		global.dualBarettasCooldown = global.dualBarettasCooldownSave;
@@ -186,20 +188,20 @@ if (mouse_check_button_pressed(mb_left) && global.pickedWeapon[2] && global.shot
 		{
 			instance_create_layer(x + 25, y - 1, "Instances", bulletShotgun_obj);
 			instance_create_layer(x + 25, y - 1, "Instances", shotLight_obj);
-			hspeed -= 6;
+			horspeed = -6;
 		}
 		else
 		{
 			instance_create_layer(x - 25, y - 1, "Instances", bulletShotgun_obj);
 			instance_create_layer(x - 25, y - 1, "Instances", shotLight_obj);
-			hspeed += 6;
+			horspeed = 6;
 		}
 		global.shotgunAmmo--;
 		global.shotgunCooldown = global.shotgunCooldownSave;
 		
 		if (dirCursor > 225 && dirCursor < 320)
 		{
-			vspeed = -shotJumpStrength;
+			verspeed = -shotJumpStrength;
 		}
 	}
 }
@@ -207,9 +209,9 @@ if (mouse_check_button_pressed(mb_left) && global.pickedWeapon[2] && global.shot
 //Shot Cooldown
 if (global.pistolCooldown > 0 || global.dualBarettasCooldown > 0 || global.shotgunCooldown > 0)
 {
-	global.pistolCooldown -= 0.1;
-	global.dualBarettasCooldown -= 0.1;
-	global.shotgunCooldown -= 0.1;
+	global.pistolCooldown -= 0.1 * dt;
+	global.dualBarettasCooldown -= 0.1 * dt;
+	global.shotgunCooldown -= 0.1 * dt;
 }
 
 //Reload
@@ -333,4 +335,14 @@ if (hp < 0)
 		hp = 100;
 		syringes -= 1;
 	}
+}
+
+//Slowmotion
+if (keyboard_check(vk_shift))
+{
+	global.timeScale = 0.2;
+}
+else
+{
+	global.timeScale = 1;
 }

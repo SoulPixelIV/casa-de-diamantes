@@ -1,17 +1,19 @@
 /// @description Enemy AI
 
-x += (hspeed / 10000) * (dt - delta_time);
-y += (vspeed / 10000) * (dt - delta_time);
+dt = (delta_time / 1000000) * globalSettings_obj.TARGET_FRAMERATE;
+
+x += horspeed * dt;
+y += verspeed * dt;
 
 if (distance_to_object(player_obj) < 128 && distance_to_object(player_obj) > 16)
 {
 	if (player_obj.x > x)
 	{
-		hspeed = movSpeed;
+		horspeed = movSpeed;
 	}
 	else
 	{
-		hspeed = -movSpeed;
+		horspeed = -movSpeed;
 	}
 	if (dirLookat > 90 && dirLookat < 270)
 	{
@@ -24,7 +26,7 @@ if (distance_to_object(player_obj) < 128 && distance_to_object(player_obj) > 16)
 }
 else
 {
-	hspeed = 0;
+	horspeed = 0;
 }
 
 dirLookat = point_direction(x, y, player_obj.x, player_obj.y);

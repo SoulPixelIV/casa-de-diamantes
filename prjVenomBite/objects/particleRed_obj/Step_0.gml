@@ -1,34 +1,36 @@
 /// @description Movement
+
+dt = (delta_time / 1000000) * globalSettings_obj.TARGET_FRAMERATE;
 dir = choose (0,1,2,3,4,5,6,7);
 switch (dir) 
 {
 	case 0:
-	    x += 0.1 * spd;
+	    x += (0.1 * spd) * dt;
 	    break;
 	case 1:
-	    x += 0.1 * spd;
-		y += 0.1 * spd;
+	    x += (0.1 * spd) * dt;
+		y += (0.1 * spd) * dt;
 	    break;
 	case 2:
-	    y += 0.1 * spd;
+	    y += (0.1 * spd) * dt;
 	    break;
 	case 3:
-		y += 0.1 * spd;
-	    x -= 0.1 * spd;
+		y += (0.1 * spd) * dt;
+	    x -= (0.1 * spd) * dt;
 	    break;
 	case 4:
-	    x -= 0.1 * spd;
+	    x -= (0.1 * spd) * dt;
 	    break;
 	case 5:
-		y -= 0.1 * spd;
-	    x -= 0.1 * spd;
+		y -= (0.1 * spd) * dt;
+	    x -= (0.1 * spd) * dt;
 	    break;
 	case 6:
-	    y -= 0.1 * spd;
+	    y -= (0.1 * spd) * dt;
 	    break;
 	case 7:
-	    x += 0.1 * spd;
-		y += 0.1 * spd;
+	    x += (0.1 * spd) * dt;
+		y += (0.1 * spd) * dt;
 	    break;
 }
 

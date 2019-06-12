@@ -4,13 +4,13 @@ if (!damageRecieved)
 {
 	hp -= other.damage;
 
-	if (hspeed > 0)
+	if (horspeed > 0)
 	{
-		hspeed = -other.knockback;
+		horspeed = -other.knockback;
 	}
 	else
 	{
-		hspeed = other.knockback;
+		horspeed = other.knockback;
 	}
 	damageCooldown = damageCooldownSave;
 	damageRecieved = true;
