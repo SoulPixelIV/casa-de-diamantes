@@ -1,7 +1,6 @@
 /// @description Variables
 
 global.scorepoints = 937402;
-global.timeScale = 1;
 
 global.pistolAmmo = 0;
 global.pistolMag = 0;
