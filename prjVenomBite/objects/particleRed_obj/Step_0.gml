@@ -37,14 +37,19 @@ switch (dir)
 //Light
 if (!shrink)
 {
-	lightSize += choose(0.01, -0.01, 0);
+	lightSize += choose(0.01, -0.01, 0) * dt;
 	lightSize = clamp(lightSize, lightSize - (lightSize / 4), lightSize);
 }
 
 //Death
+lifespan -= dt;
+if (lifespan < 0)
+{
+	shrink = true;
+}
 if (shrink)
 {
-	lightStrength -= 0.01;
+	lightStrength -= 0.01 * dt;
 }
 if (lightStrength <= 0)
 {

@@ -9,4 +9,3 @@ shrink = false;
 image_xscale = 0.38;
 image_yscale = 0.38;
 
-alarm[0] = lifespan;

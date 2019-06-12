@@ -1,3 +1,0 @@
-/// @description Destroy
-
-shrink = true;
