@@ -334,6 +334,7 @@ if (hp < 0)
 		syringes -= 1;
 		syringesLost += 1;
 		hp = 100 - 25 * syringesLost;
+		maxhp -= 25;
 	}
 }
 

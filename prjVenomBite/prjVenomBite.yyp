@@ -943,6 +943,14 @@
             }
         },
         {
+            "Key": "c1c77801-1598-4c3a-82b3-6fd2d32490d2",
+            "Value": {
+                "id": "70aca32b-0ce0-4564-96f7-1bf628c6be31",
+                "resourcePath": "objects\\maxHealthpack_obj\\maxHealthpack_obj.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "c870b1d1-addf-4ff2-9243-5bff619edec5",
             "Value": {
                 "id": "9fde4e15-2a09-454e-818a-ce0422005ad1",
@@ -1131,6 +1139,14 @@
             "Value": {
                 "id": "5b940e56-6d48-4dbf-8c3a-c2f21b84db39",
                 "resourcePath": "sprites\\redcubex16_spr\\redcubex16_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "e3c03457-afc5-44d2-b759-89a80aeaeb41",
+            "Value": {
+                "id": "ea6cf075-9dc3-4dfe-b970-452b2559c385",
+                "resourcePath": "sprites\\maxHealthpack_spr\\maxHealthpack_spr.yy",
                 "resourceType": "GMSprite"
             }
         },

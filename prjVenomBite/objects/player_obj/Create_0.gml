@@ -3,6 +3,7 @@
 horspeed = 0;
 verspeed = 0;
 hp = 100;
+maxhp = hp;
 syringes = 3;
 syringesLost = 0;
 movSpeed = 3.4;
