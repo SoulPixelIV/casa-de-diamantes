@@ -55,6 +55,12 @@ if (!noHUD)
 	{
 		draw_text_colour(1104, 514, "AMMO " + string(global.shotgunAmmo) + "|" + string(global.shotgunMag), c_purple, c_aqua, c_aqua, c_purple, 1);
 	}
+	
+	//Healthcut
+	if (player_obj.syringesLost > 0)
+	{
+		draw_sprite_ext(healthCut_spr, 0, 408 - 96.5 * player_obj.syringesLost, 48, 1, 1, 0, -1, 1);
+	}
 }
 
 //Infectiontext

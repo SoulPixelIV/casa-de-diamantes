@@ -1,7 +1,6 @@
 /// @description Movement
 
 dt = (delta_time / 1000000) * globalSettings_obj.TARGET_FRAMERATE;
-show_debug_message(dt);
 x += horspeed * dt;
 y += verspeed * dt;
 
@@ -332,8 +331,9 @@ if (hp < 0)
 			camera_obj.viewX += 16 * 2;
 			camera_obj.viewY += 9 * 2;
 		}
-		hp = 100;
 		syringes -= 1;
+		syringesLost += 1;
+		hp = 100 - 25 * syringesLost;
 	}
 }
 

@@ -4,6 +4,7 @@ horspeed = 0;
 verspeed = 0;
 hp = 100;
 syringes = 3;
+syringesLost = 0;
 movSpeed = 3.4;
 gravityStrength = -0.42;
 jumpStrength = 6.2;
