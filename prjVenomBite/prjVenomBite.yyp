@@ -567,6 +567,14 @@
             }
         },
         {
+            "Key": "6d6dd3bf-ebc3-4f9b-afea-a02b41f2902a",
+            "Value": {
+                "id": "4f3289eb-a1d4-4383-a976-492542198885",
+                "resourcePath": "objects\\healthpack_obj\\healthpack_obj.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "6f5ec621-3613-4390-b926-fc3c92a7a11a",
             "Value": {
                 "id": "505ff816-dfd7-4d42-afe6-6c9efca43339",
@@ -940,6 +948,14 @@
                 "id": "9fde4e15-2a09-454e-818a-ce0422005ad1",
                 "resourcePath": "views\\c870b1d1-addf-4ff2-9243-5bff619edec5.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "c8f0e20d-da24-4996-baa6-3de38e7cebfe",
+            "Value": {
+                "id": "97e2d2b6-9d3b-4ce2-9fbe-39e3a5bc45c0",
+                "resourcePath": "sprites\\healthpack_spr\\healthpack_spr.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

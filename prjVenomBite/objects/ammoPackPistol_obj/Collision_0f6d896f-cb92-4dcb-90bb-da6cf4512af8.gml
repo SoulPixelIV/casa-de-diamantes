@@ -1,4 +1,4 @@
-/// @description Pickuo
+/// @description Pickup
 
 global.pistolMag += 18;
 global.dualBarettasMag += 12;

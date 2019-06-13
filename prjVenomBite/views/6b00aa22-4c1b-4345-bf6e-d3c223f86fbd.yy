@@ -4,7 +4,8 @@
     "mvc": "1.1",
     "name": "6b00aa22-4c1b-4345-bf6e-d3c223f86fbd",
     "children": [
-        "6027fbf5-a7f5-4b43-84ed-1b516870516a"
+        "6027fbf5-a7f5-4b43-84ed-1b516870516a",
+        "6d6dd3bf-ebc3-4f9b-afea-a02b41f2902a"
     ],
     "filterType": "GMObject",
     "folderName": "Pickups",
