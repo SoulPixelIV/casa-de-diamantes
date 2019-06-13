@@ -711,6 +711,14 @@
             }
         },
         {
+            "Key": "893d64b8-68d7-4eec-8f59-3f9f2f73e037",
+            "Value": {
+                "id": "f849ea64-1445-48b3-9038-ccf0c9c4b657",
+                "resourcePath": "objects\\playerBulletLine_obj\\playerBulletLine_obj.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "8df26c2c-dcb9-46d2-aa83-4c32dab43f61",
             "Value": {
                 "id": "bf0ba402-cdc1-431f-8575-ff1cf242e837",
@@ -1211,6 +1219,14 @@
             "Value": {
                 "id": "88015bd1-78d3-47f1-ad17-287c363af144",
                 "resourcePath": "sprites\\windowDualBarettas_spr\\windowDualBarettas_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "ede286ce-97d1-4c8b-aa80-3443fc28886f",
+            "Value": {
+                "id": "b5fee7e7-0b12-4e98-808f-7851d8acfb38",
+                "resourcePath": "sprites\\playerBulletLine_spr\\playerBulletLine_spr.yy",
                 "resourceType": "GMSprite"
             }
         },

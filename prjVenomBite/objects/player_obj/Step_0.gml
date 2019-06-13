@@ -135,16 +135,16 @@ if (mouse_check_button_pressed(mb_left) && global.pickedWeapon[0] && global.pist
 	if (global.pistolAmmo > 0)
 	{
 		audio_play_sound(pistolShot_snd, 1, false);
+		
+		instance_create_layer(playerBulletLine_obj.x + 10, playerBulletLine_obj.y, "Instances", bulletPistol_obj);
+		instance_create_layer(playerBulletLine_obj.x + 10, playerBulletLine_obj.y, "Instances", shotLight_obj);
+		
 		if (image_xscale == 1)
 		{
-			instance_create_layer(x + 25, y - 1, "Instances", bulletPistol_obj);
-			instance_create_layer(x + 25, y - 1, "Instances", shotLight_obj);
 			horspeed = -1;
 		}
 		else
 		{
-			instance_create_layer(x - 25, y - 1, "Instances", bulletPistol_obj);
-			instance_create_layer(x - 25, y - 1, "Instances", shotLight_obj);
 			horspeed = 1;
 		}
 		global.pistolAmmo--;
@@ -159,16 +159,16 @@ if (mouse_check_button_pressed(mb_left) && global.pickedWeapon[1] && global.dual
 	if (global.dualBarettasAmmo > 0)
 	{
 		audio_play_sound(dualBarettasShot_snd, 1, false);
+		
+		instance_create_layer(playerBulletLine_obj.x + 10, playerBulletLine_obj.y, "Instances", bulletDualBarettas_obj);
+		instance_create_layer(playerBulletLine_obj.x + 10, playerBulletLine_obj.y, "Instances", shotLight_obj);
+		
 		if (image_xscale == 1)
 		{
-			instance_create_layer(x + 25, y - 1, "Instances", bulletDualBarettas_obj);
-			instance_create_layer(x + 25, y - 1, "Instances", shotLight_obj);
 			horspeed = -2;
 		}
 		else
 		{
-			instance_create_layer(x - 25, y - 1, "Instances", bulletDualBarettas_obj);
-			instance_create_layer(x - 25, y - 1, "Instances", shotLight_obj);
 			horspeed = 2;
 		}
 		global.dualBarettasAmmo--;
@@ -183,16 +183,16 @@ if (mouse_check_button_pressed(mb_left) && global.pickedWeapon[2] && global.shot
 	if (global.shotgunAmmo > 0)
 	{
 		audio_play_sound(shotgunShot_snd, 1, false);
+		
+		instance_create_layer(playerBulletLine_obj.x + 10, playerBulletLine_obj.y, "Instances", bulletShotgun_obj);
+		instance_create_layer(playerBulletLine_obj.x + 10, playerBulletLine_obj.y, "Instances", shotLight_obj);
+		
 		if (image_xscale == 1)
 		{
-			instance_create_layer(x + 25, y - 1, "Instances", bulletShotgun_obj);
-			instance_create_layer(x + 25, y - 1, "Instances", shotLight_obj);
 			horspeed = -6;
 		}
 		else
 		{
-			instance_create_layer(x - 25, y - 1, "Instances", bulletShotgun_obj);
-			instance_create_layer(x - 25, y - 1, "Instances", shotLight_obj);
 			horspeed = 6;
 		}
 		global.shotgunAmmo--;
