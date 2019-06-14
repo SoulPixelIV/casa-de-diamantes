@@ -33,8 +33,29 @@ if (!noHUD)
 
 	//Score
 	draw_set_font(neonBig_fnt);
-	draw_sprite_ext(windowBackground_spr, 0, 1184, 44, 1, 1, 0, -1, 1);
-	draw_text_colour(1120, 32, string(global.scorepoints) + "P", c_purple, c_aqua, c_aqua, c_purple, 1);
+	if (rotation > 3 * scoreMovementMax)
+	{
+		dir = 1;
+	}
+	if (rotation < -3 * scoreMovementMax)
+	{
+		dir = 0;
+	}
+	
+	if (dir == 0)
+	{		
+		rotation += scoreMovementSpeed * dt;
+	}
+	else
+	{
+		rotation -= scoreMovementSpeed * dt;
+	}
+		
+	draw_sprite_ext(windowBackground_spr, 0, 1184, 44, 1, 1, rotation, -1, 1);	
+	draw_text_transformed_colour(1120, 32, string(global.scorepoints) + "P", 1, 1, rotation, c_purple, c_aqua, c_aqua, c_purple, 1);
+	
+	draw_sprite_ext(windowBackground_spr, 0, 1248, 76, 0.45, 1, rotation, -1, 1);	
+	draw_text_transformed_colour(1220, 64, string(global.multiplier) + "><", 1, 1, rotation, c_purple, c_aqua, c_aqua, c_purple, 1);
 	draw_set_font(neon_fnt);
 
 	//Syringes

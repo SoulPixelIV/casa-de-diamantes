@@ -4,6 +4,7 @@ horspeed = 0;
 verspeed = 0;
 hp = 100;
 damage = 15;
+points = 125;
 knockback = 5;
 movSpeed = 0.45;
 

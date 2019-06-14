@@ -37,5 +37,20 @@ if (!noZoom)
 	}
 }
 
+//Score Shake
+if (scoreShake)
+{
+	scoreMovementSpeed = 0.8;
+	scoreMovementMax = 1.75;
+	scoreShakeLength -= dt;
+}
+if (scoreShakeLength < 0)
+{
+	scoreShake = false;
+	scoreMovementSpeed = 0.2;
+	scoreMovementMax = 1;
+	scoreShakeLength = 80;
+}
+
 
 

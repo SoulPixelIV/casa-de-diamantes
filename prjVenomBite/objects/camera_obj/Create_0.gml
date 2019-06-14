@@ -8,6 +8,12 @@ xCoor = 100;
 yCoor = 100;
 
 zoomCooldown = 300;
+scoreShakeLength = 80;
+scoreMovementSpeed = 0.2;
+scoreMovementMax = 1;
+rotation = 0;
+dir = 0;
+scoreShake = false;
 deathVignette = false;
 drawInfectionText = false;
 noZoom = false;

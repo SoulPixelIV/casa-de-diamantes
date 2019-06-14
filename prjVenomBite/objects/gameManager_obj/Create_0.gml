@@ -1,6 +1,9 @@
 /// @description Variables
 
-global.scorepoints = 937402;
+global.scorepoints = 0;
+global.multiplier = 1;
+global.multiplierTimer = 300;
+multiplierRun = false;
 
 global.pistolAmmo = 0;
 global.pistolMag = 0;
