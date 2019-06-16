@@ -1,6 +1,6 @@
 /// @description Damage Detection
 
-if (!damageRecieved)
+if (!damageRecieved && !isZombie)
 {
 	hp -= other.damage;
 

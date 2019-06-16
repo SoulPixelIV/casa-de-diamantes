@@ -14,11 +14,25 @@ if (movement)
 {
 	if (keyboard_check(ord("D")) && !keyboard_check(ord("A")))
 	{
-		horspeed = movSpeed;
+		if (!isZombie)
+		{
+			horspeed = movSpeed;
+		}
+		else
+		{
+			horspeed = movSpeedZombie;
+		}
 	}
 	if (keyboard_check(ord("A")) && !keyboard_check(ord("D")))
 	{
-		horspeed = -movSpeed;
+		if (!isZombie)
+		{
+			horspeed = -movSpeed;
+		}
+		else
+		{
+			horspeed = -movSpeedZombie;
+		}
 	}
 }
 
@@ -93,114 +107,159 @@ dirCursor = point_direction(x, y, mouse_x, mouse_y);
 
 if (global.pickedWeapon[0] || global.pickedWeapon[1] || global.pickedWeapon[2])
 {
-	if (horspeed != 0)
+	if (!isZombie)
 	{
-		sprite_index = playerWalkingEquipped_spr;
-	}
-	else
-	{
-		if (crouching)
+		if (horspeed != 0)
 		{
-			sprite_index = playerKnifeBuildup_spr;
+			sprite_index = playerWalkingEquipped_spr;
 		}
 		else
 		{
-			sprite_index = playerEquipped_spr;
+			if (crouching)
+			{
+				sprite_index = playerKnifeBuildup_spr;
+			}
+			else
+			{
+				sprite_index = playerEquipped_spr;
+			}
+		}
+	}
+	else
+	{
+		if (horspeed != 0)
+		{
+			sprite_index = zombieGirl_spr;
+		}
+		else
+		{
+			if (crouching)
+			{
+				sprite_index = zombieGirl_spr;
+			}
+			else
+			{
+				sprite_index = zombieGirl_spr;
+			}
 		}
 	}
 }
 else
 {
-	if (horspeed != 0)
+	if (!isZombie)
 	{
-		sprite_index = playerWalking_spr;
+		if (horspeed != 0)
+		{
+			sprite_index = playerWalking_spr;
+		}
+		else
+		{
+			if (crouching)
+			{
+				sprite_index = playerKnifeBuildup_spr;
+			}
+			else
+			{
+				sprite_index = player_spr;
+			}
+		}
 	}
 	else
 	{
-		if (crouching)
+		if (horspeed != 0)
 		{
-			sprite_index = playerKnifeBuildup_spr;
+			sprite_index = zombieGirl_spr;
 		}
 		else
 		{
-			sprite_index = player_spr;
+			if (crouching)
+			{
+				sprite_index = zombieGirl_spr;
+			}
+			else
+			{
+				sprite_index = zombieGirl_spr;
+			}
 		}
 	}
 }
 
-//Pistol
-if (mouse_check_button_pressed(mb_left) && global.pickedWeapon[0] && global.pistolCooldown <= 0)
+if (!isZombie)
 {
-	//Check Ammo
-	if (global.pistolAmmo > 0)
+	//Pistol
+	if (mouse_check_button_pressed(mb_left) && global.pickedWeapon[0] && global.pistolCooldown <= 0)
 	{
-		audio_play_sound(pistolShot_snd, 1, false);
-		
-		instance_create_layer(playerBulletLine_obj.x + 10, playerBulletLine_obj.y, "Instances", bulletPistol_obj);
-		instance_create_layer(playerBulletLine_obj.x + 10, playerBulletLine_obj.y, "Instances", shotLight_obj);
-		
-		if (image_xscale == 1)
+		//Check Ammo
+		if (global.pistolAmmo > 0)
 		{
-			horspeed = -1;
+			audio_play_sound(pistolShot_snd, 1, false);
+		
+			instance_create_layer(playerBulletLine_obj.x + 10, playerBulletLine_obj.y, "Instances", bulletPistol_obj);
+			instance_create_layer(playerBulletLine_obj.x + 10, playerBulletLine_obj.y, "Instances", shotLight_obj);
+		
+			if (image_xscale == 1)
+			{
+				horspeed = -1;
+			}
+			else
+			{
+				horspeed = 1;
+			}
+			global.pistolAmmo--;
+			global.pistolCooldown = global.pistolCooldownSave;
 		}
-		else
-		{
-			horspeed = 1;
-		}
-		global.pistolAmmo--;
-		global.pistolCooldown = global.pistolCooldownSave;
 	}
-}
 
-//Dual Barettas
-if (mouse_check_button_pressed(mb_left) && global.pickedWeapon[1] && global.dualBarettasCooldown <= 0)
-{
-	//Check Ammo
-	if (global.dualBarettasAmmo > 0)
+	//Dual Barettas
+	if (mouse_check_button_pressed(mb_left) && global.pickedWeapon[1] && global.dualBarettasCooldown <= 0)
 	{
-		audio_play_sound(dualBarettasShot_snd, 1, false);
-		
-		instance_create_layer(playerBulletLine_obj.x + 10, playerBulletLine_obj.y, "Instances", bulletDualBarettas_obj);
-		instance_create_layer(playerBulletLine_obj.x + 10, playerBulletLine_obj.y, "Instances", shotLight_obj);
-		
-		if (image_xscale == 1)
+		//Check Ammo
+		if (global.dualBarettasAmmo > 0)
 		{
-			horspeed = -2;
+			audio_play_sound(dualBarettasShot_snd, 1, false);
+		
+			instance_create_layer(playerBulletLine_obj.x + 10, playerBulletLine_obj.y, "Instances", bulletDualBarettas_obj);
+			instance_create_layer(playerBulletLine_obj.x + 10, playerBulletLine_obj.y, "Instances", shotLight_obj);
+		
+			if (image_xscale == 1)
+			{
+				horspeed = -2;
+			}
+			else
+			{
+				horspeed = 2;
+			}
+			global.dualBarettasAmmo--;
+			global.dualBarettasCooldown = global.dualBarettasCooldownSave;
 		}
-		else
-		{
-			horspeed = 2;
-		}
-		global.dualBarettasAmmo--;
-		global.dualBarettasCooldown = global.dualBarettasCooldownSave;
 	}
-}
 
-//Shotgun
-if (mouse_check_button_pressed(mb_left) && global.pickedWeapon[2] && global.shotgunCooldown <= 0)
-{
-	//Check Ammo
-	if (global.shotgunAmmo > 0)
+	//Shotgun
+	if (mouse_check_button_pressed(mb_left) && global.pickedWeapon[2] && global.shotgunCooldown <= 0)
 	{
-		audio_play_sound(shotgunShot_snd, 1, false);
-		
-		instance_create_layer(playerBulletLine_obj.x + 10, playerBulletLine_obj.y, "Instances", bulletShotgun_obj);
-		instance_create_layer(playerBulletLine_obj.x + 10, playerBulletLine_obj.y, "Instances", shotLight_obj);
-		
-		if (image_xscale == 1)
+		//Check Ammo
+		if (global.shotgunAmmo > 0)
 		{
-			horspeed = -6;
-		}
-		else
-		{
-			horspeed = 6;
-		}
-		global.shotgunAmmo--;
-		global.shotgunCooldown = global.shotgunCooldownSave;
+			audio_play_sound(shotgunShot_snd, 1, false);
 		
-		if (dirCursor > 225 && dirCursor < 320)
-		{
-			verspeed = -shotJumpStrength;
+			instance_create_layer(playerBulletLine_obj.x + 10, playerBulletLine_obj.y, "Instances", bulletShotgun_obj);
+			instance_create_layer(playerBulletLine_obj.x + 10, playerBulletLine_obj.y, "Instances", shotLight_obj);
+		
+			if (image_xscale == 1)
+			{
+				horspeed = -6;
+			}
+			else
+			{
+				horspeed = 6;
+			}
+			global.shotgunAmmo--;
+			global.shotgunCooldown = global.shotgunCooldownSave;
+		
+			if (dirCursor > 225 && dirCursor < 320)
+			{
+				verspeed = -shotJumpStrength;
+			}
 		}
 	}
 }
@@ -335,7 +394,21 @@ if (hp < 0)
 		syringesLost += 1;
 		hp = 100 - 25 * syringesLost;
 		maxhp -= 25;
+		invincible = true;
+		isZombie = true;
 	}
+}
+
+//Zombie
+if (isZombie)
+{
+	zombieTimer -= dt;
+}
+if (zombieTimer < 0)
+{
+	isZombie = false;
+	invincible = false;
+	zombieTimer = zombieTimerSave;
 }
 
 //Slowmotion
