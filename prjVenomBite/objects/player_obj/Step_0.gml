@@ -273,7 +273,7 @@ if (global.pistolCooldown > 0 || global.dualBarettasCooldown > 0 || global.shotg
 }
 
 //Reload
-if (keyboard_check_pressed(ord("R")))
+if (keyboard_check_pressed(ord("R")) && !isZombie)
 {
 	if (global.pickedWeapon[0])
 	{
@@ -320,17 +320,20 @@ if (keyboard_check_pressed(ord("R")))
 }
 
 //Weapon Switching
-if (keyboard_check_pressed(ord("1")) && global.unlockedWeapon[0])
+if (!isZombie)
 {
-	pickWeapon_scr(0);
-}
-if (keyboard_check_pressed(ord("2")) && global.unlockedWeapon[1])
-{
-	pickWeapon_scr(1);
-}
-if (keyboard_check_pressed(ord("3")) && global.unlockedWeapon[2])
-{
-	pickWeapon_scr(2);
+	if (keyboard_check_pressed(ord("1")) && global.unlockedWeapon[0])
+	{
+		pickWeapon_scr(0);
+	}
+	if (keyboard_check_pressed(ord("2")) && global.unlockedWeapon[1])
+	{
+		pickWeapon_scr(1);
+	}
+	if (keyboard_check_pressed(ord("3")) && global.unlockedWeapon[2])
+	{
+		pickWeapon_scr(2);
+	}
 }
 
 

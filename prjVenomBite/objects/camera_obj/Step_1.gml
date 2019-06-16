@@ -17,7 +17,7 @@ else
 	zoomCooldown = zoomCooldownSave;
 }
 
-if (!noZoom)
+if (!noZoom && !player_obj.isZombie)
 {
 	if (zoomCooldown < 0)
 	{
@@ -33,6 +33,33 @@ if (!noZoom)
 		{
 			viewX += (16 * 2) * dt;
 			viewY += (9 * 2) * dt;
+		}
+	}
+}
+if (!noZoom && player_obj.isZombie)
+{
+	if (zombieShakeDir == 0)
+	{
+		if (viewX < 592 || viewY < 333)
+		{
+			viewX += (16 / 2) * dt;
+			viewY += (9 / 2) * dt;
+		}
+		else
+		{
+			zombieShakeDir = 1;
+		}
+	}
+	if (zombieShakeDir == 1)
+	{
+		if (viewX > 448 || viewY > 252)
+		{
+			viewX -= (16 / 2) * dt;
+			viewY -= (9 / 2) * dt;
+		}
+		else
+		{
+			zombieShakeDir = 0;
 		}
 	}
 }

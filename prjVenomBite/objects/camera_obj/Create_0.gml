@@ -13,6 +13,7 @@ scoreMovementSpeed = 0.2;
 scoreMovementMax = 1;
 rotation = 0;
 dir = 0;
+zombieShakeDir = 0;
 scoreShake = false;
 deathVignette = false;
 drawInfectionText = false;
