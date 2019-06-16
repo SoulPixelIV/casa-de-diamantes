@@ -92,6 +92,13 @@ if (drawInfectionText)
 	draw_text(256, 128, "PRESS 'R' TO INFECT YOURSELF!");
 	draw_set_font(neon_fnt);
 }
+if (player_obj.isZombie)
+{
+	draw_set_font(neonHuge_fnt);
+	draw_set_color(c_red);
+	draw_text(128, 128, "PRESS 'F' TO BECOME HUMAN AGAIN!");
+	draw_set_font(neon_fnt);
+}
 
 //Lens Dirt + Vignette
 draw_sprite_ext(lensDirt_spr, 0, -200, -200, 1, 1, 0, -1, 0.17);

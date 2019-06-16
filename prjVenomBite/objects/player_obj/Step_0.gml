@@ -413,6 +413,12 @@ if (zombieTimer < 0)
 	invincible = false;
 	zombieTimer = zombieTimerSave;
 }
+if (isZombie && keyboard_check_pressed(ord("F")))
+{
+	isZombie = false;
+	invincible = false;
+	zombieTimer = zombieTimerSave;
+}
 
 //Slowmotion
 if (keyboard_check(vk_shift))

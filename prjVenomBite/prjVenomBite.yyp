@@ -143,6 +143,14 @@
             }
         },
         {
+            "Key": "1aacba01-2195-419a-8bea-dafd30836120",
+            "Value": {
+                "id": "6924e26b-3cd7-457a-8a77-c4ca44d6bca9",
+                "resourcePath": "objects\\zombieBucketGirl_obj\\zombieBucketGirl_obj.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "1d0ee4ed-0c51-410a-9737-cbaebaa2fc5c",
             "Value": {
                 "id": "a066a183-254a-4c27-a0a4-a6516941758d",
@@ -844,6 +852,14 @@
                 "id": "1ecf1986-e2ed-4d10-9ba2-63e2f8cd83e2",
                 "resourcePath": "objects\\collider_obj\\collider_obj.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "a8206aa0-670f-4f00-94ea-4350235a0a91",
+            "Value": {
+                "id": "fdfd85ce-cc8f-4616-985c-5acf10a1919b",
+                "resourcePath": "sprites\\zombieBucketGirl_spr\\zombieBucketGirl_spr.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
