@@ -359,7 +359,7 @@ else
 //Damage Cooldown
 if (damageRecieved)
 {
-	damageCooldown -= 1;
+	damageCooldown -= dt;
 }
 if (damageCooldown < 0)
 {
