@@ -27,7 +27,7 @@ if (!noHUD)
 	draw_text_colour(32, 656, "Roomspeed: " + string(fps), c_purple, c_aqua, c_aqua, c_purple, 1);
 	draw_text_colour(32, 688, "Speed: " + string(global.timeScale), c_purple, c_aqua, c_aqua, c_purple, 1);
 
-	draw_sprite_ext(windowBackground_spr, 0, 1168, 520, 1, 1, 0, -1, 1);
+	draw_sprite_ext(windowBackground_spr, 0, 1168, 520, 1, 1, rotation, -1, 1);
 	draw_sprite_ext(healthbarBorder_spr, 0, 32, 48, 1, 1, 0, -1, 1);
 	draw_sprite_ext(healthbar_spr, 0, 32, 48, player_obj.hp / 100, 1, 0, -1, 1);
 
@@ -66,15 +66,15 @@ if (!noHUD)
 	
 	if (global.pickedWeapon[0])
 	{
-		draw_text_colour(1104, 514, "AMMO " + string(global.pistolAmmo) + "|" + string(global.pistolMag), c_purple, c_aqua, c_aqua, c_purple, 1);
+		draw_text_transformed_colour(1104, 514, "AMMO " + string(global.pistolAmmo) + "|" + string(global.pistolMag), 1, 1, rotation, c_purple, c_aqua, c_aqua, c_purple, 1);
 	}
 	if (global.pickedWeapon[1])
 	{
-		draw_text_colour(1104, 514, "AMMO " + string(global.dualBarettasAmmo) + "|" + string(global.dualBarettasMag), c_purple, c_aqua, c_aqua, c_purple, 1);
+		draw_text_transformed_colour(1104, 514, "AMMO " + string(global.dualBarettasAmmo) + "|" + string(global.dualBarettasMag), 1, 1, rotation, c_purple, c_aqua, c_aqua, c_purple, 1);
 	}
 	if (global.pickedWeapon[2])
 	{
-		draw_text_colour(1104, 514, "AMMO " + string(global.shotgunAmmo) + "|" + string(global.shotgunMag), c_purple, c_aqua, c_aqua, c_purple, 1);
+		draw_text_transformed_colour(1104, 514, "AMMO " + string(global.shotgunAmmo) + "|" + string(global.shotgunMag), 1, 1, rotation, c_purple, c_aqua, c_aqua, c_purple, 1);
 	}
 	
 	//Healthcut
