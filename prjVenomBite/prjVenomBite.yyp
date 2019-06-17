@@ -767,6 +767,14 @@
             }
         },
         {
+            "Key": "95b698cb-89f1-486f-90e5-d4fffd3f9a53",
+            "Value": {
+                "id": "8395369f-b64e-4e1c-865f-c0504f1281c7",
+                "resourcePath": "sprites\\zombieSoldierGirlAim_spr\\zombieSoldierGirlAim_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "96060c03-375a-453e-962b-324748aad49e",
             "Value": {
                 "id": "e9cf4893-7a0d-4787-a63c-4ecbb2afbd32",

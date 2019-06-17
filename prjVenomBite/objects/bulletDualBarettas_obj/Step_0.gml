@@ -31,7 +31,10 @@ if (place_meeting(x, y, bucketHitbox_obj))
 		enemyTarget = instance_place(x, y, enemy_obj);
 	}
 	enemyTarget.hp -= 4;
-	enemyTarget.hpBucket -= 9;
+	if (enemyTarget.hpBucket != noone)
+	{
+		enemyTarget.hpBucket -= 9;
+	}
 	audio_play_sound(bucketHit_snd, 1, false);
 }
 if (place_meeting(x, y, enemy_obj))

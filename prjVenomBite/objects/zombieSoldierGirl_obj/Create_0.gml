@@ -6,7 +6,7 @@ hp = 85;
 attackCooldown = 150;
 damage = 5;
 points = 125;
-knockback = 13;
+knockback = 8;
 movSpeed = 0.57;
 playedSound = false;
 

@@ -57,6 +57,10 @@ with (headshotHitbox)
 //Attack
 attackCooldown -= dt;
 
+if (attackCooldown < 60)
+{
+	sprite_index = zombieSoldierGirlAim_spr;
+}
 if (attackCooldown < 0)
 {
 	audio_play_sound(shotgunShot_snd, 1, false);
@@ -65,5 +69,6 @@ if (attackCooldown < 0)
 	instance_create_layer(x + 10, y, "Instances", shotLight_obj);	
 
 	attackCooldown = attackCooldownSave;
+	sprite_index = zombieSoldierGirl_spr;
 }
 
