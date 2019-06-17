@@ -9,6 +9,7 @@ points = 125;
 knockback = 8;
 movSpeed = 0.57;
 playedSound = false;
+gravityStrength = -0.32;
 
 attackCooldownSave = attackCooldown;
 
