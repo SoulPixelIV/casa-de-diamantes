@@ -135,6 +135,14 @@
             }
         },
         {
+            "Key": "1870c47a-6635-459f-abaa-c4256cc71be0",
+            "Value": {
+                "id": "c31057ac-5235-414d-b2ec-77052c7624b3",
+                "resourcePath": "sprites\\zombieSoldierGirl_spr\\zombieSoldierGirl_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "193b46fd-87dc-4e18-9328-4dfeaaac97b0",
             "Value": {
                 "id": "a620beaa-745f-4171-b597-f521fc22f32a",
@@ -855,6 +863,14 @@
             }
         },
         {
+            "Key": "a40bc67f-467c-42b2-a2bc-b67378faf9d1",
+            "Value": {
+                "id": "2f4c78fb-382e-46fb-9429-2fc3ab286145",
+                "resourcePath": "objects\\zombieSoldierGirl_obj\\zombieSoldierGirl_obj.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "a6441658-9892-425d-89c4-593d5fb4979b",
             "Value": {
                 "id": "131706b6-f57e-4bc4-be98-35b7bb406b45",
@@ -940,6 +956,14 @@
                 "id": "7adf08c7-a426-4374-a6e8-0749bf6d6fde",
                 "resourcePath": "views\\b6157d18-123a-4c4e-947f-7acb82aed91a.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "baa1fe17-cd4c-439a-83ea-31a7a826be1d",
+            "Value": {
+                "id": "c158dd32-c6b4-439e-b70c-10f0a1d5d8cb",
+                "resourcePath": "objects\\bulletZombieSoldierGirl_obj\\bulletZombieSoldierGirl_obj.yy",
+                "resourceType": "GMObject"
             }
         },
         {
