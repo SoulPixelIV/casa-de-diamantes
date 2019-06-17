@@ -34,7 +34,7 @@ dirLookat = point_direction(x, y, player_obj.x, player_obj.y);
 //Death
 if (hp < 0)
 {
-	with (headshotHitbox)
+	with (bucketHitbox)
 	{
 		instance_destroy();
 	}
@@ -46,12 +46,24 @@ if (hp < 0)
 	instance_destroy();
 }
 
-//Headshot Hitbox
-with (headshotHitbox)
+//Bucket Hitbox
+with (bucketHitbox)
 {
 	if (x != body.x && y != body.y)
 	{
 		move_towards_point(body.x, body.y - 16, 3);
+	}
+}
+
+//Bucket Destruction
+if (hpBucket < 0 && !playedSound)
+{
+	audio_play_sound(bucketBroken_snd, 1, false);
+	playedSound = true;
+	sprite_index = zombieBucketGirlBroken_spr;
+	with (bucketHitbox)
+	{
+		instance_destroy();
 	}
 }
 

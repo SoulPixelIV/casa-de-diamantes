@@ -95,6 +95,14 @@
             }
         },
         {
+            "Key": "11212dd2-6b18-4bed-ab90-cc2c594653cd",
+            "Value": {
+                "id": "c8f5b1fd-3dee-440a-9426-9bdf31fa163f",
+                "resourcePath": "sounds\\bucketHit_snd\\bucketHit_snd.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "114a4b60-dd9f-4b5b-8b89-5299d5f291a0",
             "Value": {
                 "id": "b42862dc-f530-462f-bb9e-405d1f6bcb5c",
@@ -156,14 +164,6 @@
                 "id": "a066a183-254a-4c27-a0a4-a6516941758d",
                 "resourcePath": "objects\\lights_obj\\lights_obj.yy",
                 "resourceType": "GMObject"
-            }
-        },
-        {
-            "Key": "1d38e79b-4a72-40d5-825a-b5739be7a623",
-            "Value": {
-                "id": "a7655bf0-5f9c-43a2-a114-0eea28c8d377",
-                "resourcePath": "sprites\\zombieGirlAttack_spr\\zombieGirlAttack_spr.yy",
-                "resourceType": "GMSprite"
             }
         },
         {
@@ -356,6 +356,14 @@
                 "id": "c16700ea-aefe-4223-8b03-c7f2396d0610",
                 "resourcePath": "objects\\godraysRed_obj\\godraysRed_obj.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "43c9eb19-4be1-4308-ac7a-b48e2cab0567",
+            "Value": {
+                "id": "0ad8b0d0-d147-4380-b5d2-0660172fbd07",
+                "resourcePath": "sprites\\zombieBucketGirlBroken_spr\\zombieBucketGirlBroken_spr.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -716,6 +724,14 @@
                 "id": "53de58b2-706d-4183-a842-2943f6bb6d50",
                 "resourcePath": "views\\885a6ebf-4b2a-43ea-9558-4c20351bee4a.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "891b3423-a61b-473f-a4d1-9756e22d9dff",
+            "Value": {
+                "id": "95c3d185-91f4-4e79-a5ab-8b3b0d6b997e",
+                "resourcePath": "sounds\\bucketBroken_snd\\bucketBroken_snd.yy",
+                "resourceType": "GMSound"
             }
         },
         {
@@ -1196,6 +1212,14 @@
                 "id": "5c9a53ef-2f5f-46e7-8621-6cbb89d8db27",
                 "resourcePath": "views\\e80a431e-bb38-48d3-a5b7-8ff4c6666842.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "e81c92a1-f8df-4879-8d23-a6a6dc646633",
+            "Value": {
+                "id": "ba544fe6-d314-4c22-bae5-c981bf3a9b73",
+                "resourcePath": "objects\\bucketHitbox_obj\\bucketHitbox_obj.yy",
+                "resourceType": "GMObject"
             }
         },
         {
