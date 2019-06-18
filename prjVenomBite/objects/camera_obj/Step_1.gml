@@ -29,7 +29,7 @@ if (!noZoom && !player_obj.isZombie)
 	}
 	else
 	{
-		if (viewX < 640 || viewY < 360)
+		if (viewX < 512 || viewY < 288)
 		{
 			viewX += (16 * 2) * dt;
 			viewY += (9 * 2) * dt;
@@ -40,7 +40,7 @@ if (!noZoom && player_obj.isZombie)
 {
 	if (zombieShakeDir == 0)
 	{
-		if (viewX < 592 || viewY < 333)
+		if (viewX < 464 || viewY < 261)
 		{
 			viewX += (16 / 2) * dt;
 			viewY += (9 / 2) * dt;
@@ -52,7 +52,7 @@ if (!noZoom && player_obj.isZombie)
 	}
 	if (zombieShakeDir == 1)
 	{
-		if (viewX > 448 || viewY > 252)
+		if (viewX > 400 || viewY > 225)
 		{
 			viewX -= (16 / 2) * dt;
 			viewY -= (9 / 2) * dt;

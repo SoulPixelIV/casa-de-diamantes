@@ -1,7 +1,7 @@
 /// @description Camera Variables
 
-viewX = 640;
-viewY = 360;
+viewX = 512;
+viewY = 288;
 mXPos = 0;
 mYPos = 0;
 xCoor = 100;
