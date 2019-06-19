@@ -438,8 +438,10 @@ if (isZombie && keyboard_check_pressed(ord("F")))
 if (keyboard_check(vk_shift))
 {
 	global.timeScale = 0.2;
+	image_speed = 0.2;
 }
 else
 {
 	global.timeScale = 1;
+	image_speed = 1;
 }
