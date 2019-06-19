@@ -76,6 +76,12 @@ if (movement)
 	}
 }
 
+//Flip
+if (!grounded) //check flip var TODO
+{
+	sprite_index = playerFlip_spr;
+}
+
 //Collision
 //horspeed
 if (!place_free(x + horspeed, y))
@@ -95,11 +101,13 @@ if (!place_free(x, y + verspeed))
     }
     fullJump = false;
 	fallJumpSafety = fallJumpSafetySave;
-    verspeed = 0;   
+    verspeed = 0;
+	grounded = true;
 }
 else
 {
 	fallJumpSafety -= 1 * dt;
+	grounded = false;
 }
 
 //###Weapon System###
@@ -107,39 +115,42 @@ dirCursor = point_direction(x, y, mouse_x, mouse_y);
 
 if (global.pickedWeapon[0] || global.pickedWeapon[1] || global.pickedWeapon[2])
 {
-	if (!isZombie)
+	if (grounded)
 	{
-		if (horspeed != 0)
+		if (!isZombie)
 		{
-			sprite_index = playerWalkingEquipped_spr;
-		}
-		else
-		{
-			if (crouching)
+			if (horspeed != 0)
 			{
-				sprite_index = playerKnifeBuildup_spr;
+				sprite_index = playerWalkingEquipped_spr;
 			}
 			else
 			{
-				sprite_index = playerEquipped_spr;
+				if (crouching)
+				{
+					sprite_index = playerKnifeBuildup_spr;
+				}
+				else
+				{
+					sprite_index = playerEquipped_spr;
+				}
 			}
-		}
-	}
-	else
-	{
-		if (horspeed != 0)
-		{
-			sprite_index = zombieGirl_spr;
 		}
 		else
 		{
-			if (crouching)
+			if (horspeed != 0)
 			{
 				sprite_index = zombieGirl_spr;
 			}
 			else
 			{
-				sprite_index = zombieGirl_spr;
+				if (crouching)
+				{
+					sprite_index = zombieGirl_spr;
+				}
+				else
+				{
+					sprite_index = zombieGirl_spr;
+				}
 			}
 		}
 	}
@@ -338,13 +349,16 @@ if (!isZombie)
 
 
 //Animation
-if (dirCursor > 90 && dirCursor < 270)
+if (grounded)
 {
-	image_xscale = -1;
-}
-else
-{
-	image_xscale = 1;
+	if (dirCursor > 90 && dirCursor < 270)
+	{
+		image_xscale = -1;
+	}
+	else
+	{
+		image_xscale = 1;
+	}
 }
 
 if (key_shift_hold)
