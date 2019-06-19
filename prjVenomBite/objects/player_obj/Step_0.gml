@@ -60,7 +60,7 @@ if (verspeed < 14)
 }
 
 //Jump
-if (movement)
+if (movement && !isZombie)
 {
 	if (grounded && (key_jump) || fallJumpSafety > 0 && (key_jump))
 	{
@@ -77,7 +77,7 @@ if (movement)
 }
 
 //Flip
-if (!grounded) //check flip var TODO
+if (!grounded && !isZombie) //check flip var TODO
 {
 	sprite_index = playerFlip_spr;
 }
