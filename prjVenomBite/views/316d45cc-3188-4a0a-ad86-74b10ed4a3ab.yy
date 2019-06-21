@@ -6,7 +6,9 @@
     "children": [
         "6f5ec621-3613-4390-b926-fc3c92a7a11a",
         "114a4b60-dd9f-4b5b-8b89-5299d5f291a0",
-        "e3007b1f-e6cd-4a99-88f1-30f00368a107"
+        "e3007b1f-e6cd-4a99-88f1-30f00368a107",
+        "c2af666c-3b8d-440d-98aa-3751b7d372ef",
+        "0f0b26ec-6070-4dcd-bb6e-91b84d70aae2"
     ],
     "filterType": "GMSprite",
     "folderName": "Debug",

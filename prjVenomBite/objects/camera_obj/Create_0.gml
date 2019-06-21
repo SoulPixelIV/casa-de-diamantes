@@ -2,6 +2,8 @@
 
 viewX = 512;
 viewY = 288;
+viewXSave = viewX;
+viewYSave = viewY;
 mXPos = 0;
 mYPos = 0;
 xCoor = 100;
@@ -18,6 +20,7 @@ scoreShake = false;
 deathVignette = false;
 drawInfectionText = false;
 noZoom = false;
+zoomOut = false;
 noHUD = false;
 
 zoomCooldownSave = zoomCooldown;

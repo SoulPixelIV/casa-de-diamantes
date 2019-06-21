@@ -4,8 +4,8 @@ dt = (delta_time / 1000000) * globalSettings_obj.TARGET_FRAMERATE;
 xCoor = player_obj.x - (viewX / 2);
 yCoor = player_obj.y - (viewY / 2);
 
-camera_set_view_size(view_camera[0], viewX, viewY);
-camera_set_view_pos(view_camera[0], player_obj.x - (viewX / 2), player_obj.y - (viewY / 2));
+camera_set_view_size(view_camera[0], viewXSave, viewYSave);
+camera_set_view_pos(view_camera[0], player_obj.x - (viewXSave / 2), player_obj.y - (viewYSave / 2));
 
 //Zooming
 if (player_obj.horspeed == 0 && player_obj.verspeed == 0)
@@ -17,8 +17,54 @@ else
 	zoomCooldown = zoomCooldownSave;
 }
 
+//Change Camera View
+if (viewX > viewXSave)
+{
+	viewXSave += (16 / 2) * dt;
+	viewYSave += (9 / 2) * dt;
+}
+if (viewX < viewXSave)
+{
+	viewXSave -= (16 / 2) * dt;
+	viewYSave -= (9 / 2) * dt;
+}
+
+//Normal Camera
 if (!noZoom && !player_obj.isZombie)
 {
+	//Zoom
+	if (zoomCooldown < 0)
+	{
+		viewX = 160;
+		viewY = 90;
+	}
+	else //Zoom Out
+	{
+		if (zoomOut)
+		{
+			viewX = 768;
+			viewY = 432;
+		}
+		else //Normal View
+		{
+			viewX = 512;
+			viewY = 288;
+		}
+	}
+}
+
+
+
+
+
+
+
+//#############OLD#############
+//Normal Camera
+/*
+if (!noZoom && !player_obj.isZombie)
+{
+	//Zoom
 	if (zoomCooldown < 0)
 	{
 		if (viewX > 160 || viewY > 90)
@@ -27,15 +73,27 @@ if (!noZoom && !player_obj.isZombie)
 			viewY -= (9 / 12) * dt;
 		}
 	}
-	else
+	else //Normal View
 	{
-		if (viewX < 512 || viewY < 288)
+		if (!zoomOut)
 		{
-			viewX += (16 * 2) * dt;
-			viewY += (9 * 2) * dt;
+			if (viewX < 512 || viewY < 288)
+			{
+				viewX += (16 * 2) * dt;
+				viewY += (9 * 2) * dt;
+			}
+		}
+		else //Zoom Out
+		{
+			if (viewX < 768 || viewY < 432)
+			{
+				viewX += (16 * 2) * dt;
+				viewY += (9 * 2) * dt;
+			}
 		}
 	}
 }
+*/
 if (!noZoom && player_obj.isZombie)
 {
 	if (zombieShakeDir == 0)

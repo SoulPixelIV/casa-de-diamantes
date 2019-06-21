@@ -87,6 +87,14 @@
             }
         },
         {
+            "Key": "0f0b26ec-6070-4dcd-bb6e-91b84d70aae2",
+            "Value": {
+                "id": "e605223a-fe06-4ac7-bba8-693ae90993b5",
+                "resourcePath": "sprites\\cameraIcon_spr\\cameraIcon_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "107a82d9-d2f7-4e0f-96e3-61fcb35459b6",
             "Value": {
                 "id": "249c9d24-e320-46d1-b98d-0e0f4dc58807",
@@ -671,6 +679,14 @@
             }
         },
         {
+            "Key": "7970cf9e-241b-47b3-a83e-bd9c7177e68f",
+            "Value": {
+                "id": "a6f80145-3f95-48d7-9765-b323f4b9e9d0",
+                "resourcePath": "objects\\cameraViewOut_obj\\cameraViewOut_obj.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "7baf7ac7-59de-4859-8add-dab402ae03e8",
             "Value": {
                 "id": "c436491f-dc0c-4b16-9f14-52ef2e32b9b0",
@@ -1028,6 +1044,14 @@
                 "id": "70aca32b-0ce0-4564-96f7-1bf628c6be31",
                 "resourcePath": "objects\\maxHealthpack_obj\\maxHealthpack_obj.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "c2af666c-3b8d-440d-98aa-3751b7d372ef",
+            "Value": {
+                "id": "7e9f53a5-da48-4299-aab6-69afe5b80420",
+                "resourcePath": "sprites\\cameraViewIcon_spr\\cameraViewIcon_spr.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

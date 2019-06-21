@@ -1,5 +1,4 @@
 /// @description GUI
-
 if (!noHUD)
 {
 	//HUD
@@ -112,5 +111,13 @@ else
 {
 	draw_set_alpha(0.075);
 	draw_ellipse_colour(-200, -200, 1480, 920, c_black , c_purple, false);
+	draw_set_alpha(1);
+}
+
+//Vignette Effect
+if (!deathVignette)
+{
+	draw_set_alpha(0.15);
+	draw_ellipse_colour(-200, -200, 1480, 920, c_black , c_red, false);
 	draw_set_alpha(1);
 }
