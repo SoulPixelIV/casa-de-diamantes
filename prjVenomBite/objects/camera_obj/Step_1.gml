@@ -53,72 +53,40 @@ if (!noZoom && !player_obj.isZombie)
 	}
 }
 
-
-
-
-
-
-
-//#############OLD#############
-//Normal Camera
-/*
-if (!noZoom && !player_obj.isZombie)
-{
-	//Zoom
-	if (zoomCooldown < 0)
-	{
-		if (viewX > 160 || viewY > 90)
-		{
-			viewX -= (16 / 12) * dt;
-			viewY -= (9 / 12) * dt;
-		}
-	}
-	else //Normal View
-	{
-		if (!zoomOut)
-		{
-			if (viewX < 512 || viewY < 288)
-			{
-				viewX += (16 * 2) * dt;
-				viewY += (9 * 2) * dt;
-			}
-		}
-		else //Zoom Out
-		{
-			if (viewX < 768 || viewY < 432)
-			{
-				viewX += (16 * 2) * dt;
-				viewY += (9 * 2) * dt;
-			}
-		}
-	}
-}
-*/
+//Zombie Camera
 if (!noZoom && player_obj.isZombie)
 {
-	if (zombieShakeDir == 0)
+	zombieShakeTime -= zombieShakeSpeed * dt;
+	if (zombieShakeTime < 0)
 	{
-		if (viewX < 464 || viewY < 261)
-		{
-			viewX += (16 / 2) * dt;
-			viewY += (9 / 2) * dt;
-		}
-		else
+		if (zombieShakeDir == 0)
 		{
 			zombieShakeDir = 1;
-		}
-	}
-	if (zombieShakeDir == 1)
-	{
-		if (viewX > 400 || viewY > 225)
-		{
-			viewX -= (16 / 2) * dt;
-			viewY -= (9 / 2) * dt;
 		}
 		else
 		{
 			zombieShakeDir = 0;
 		}
+		zombieShakeTime = 30;
+	}
+	
+	if (zombieShakeDir == 0)
+	{
+		viewX = 464;
+		viewY = 261;
+	}
+	else
+	{
+		zombieShakeDir = 1;
+	}
+	if (zombieShakeDir == 1)
+	{
+		viewX = 400;
+		viewY = 225;
+	}
+	else
+	{
+		zombieShakeDir = 0;
 	}
 }
 
