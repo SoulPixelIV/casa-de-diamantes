@@ -4,6 +4,7 @@ dt = (delta_time / 1000000) * globalSettings_obj.TARGET_FRAMERATE;
 x += horspeed * dt;
 y += verspeed * dt;
 
+key_shoot = mouse_check_button_pressed(mb_left) || keyboard_check_pressed(vk_control);
 key_jump = keyboard_check_pressed(vk_space) || gamepad_button_check_pressed(0, gp_face1);
 key_jump_hold = keyboard_check(vk_space) || gamepad_button_check(0, gp_face1);
 key_jump_release = keyboard_check_released(vk_space) || gamepad_button_check_released(0, gp_face1);
@@ -112,6 +113,22 @@ else
 
 //###Weapon System###
 dirCursor = point_direction(x, y, mouse_x, mouse_y);
+if (keyboard_check(vk_left))
+{
+	dirCursor = 180;
+}
+if (keyboard_check(vk_right))
+{
+	dirCursor = 0;
+}
+if (keyboard_check(vk_up))
+{
+	dirCursor = 90;
+}
+if (keyboard_check(vk_down))
+{
+	dirCursor = 270;
+}
 
 if (global.pickedWeapon[0] || global.pickedWeapon[1] || global.pickedWeapon[2])
 {
@@ -198,7 +215,7 @@ else
 if (!isZombie)
 {
 	//Pistol
-	if (mouse_check_button_pressed(mb_left) && global.pickedWeapon[0] && global.pistolCooldown <= 0)
+	if (key_shoot && global.pickedWeapon[0] && global.pistolCooldown <= 0)
 	{
 		//Check Ammo
 		if (global.pistolAmmo > 0)
@@ -222,7 +239,7 @@ if (!isZombie)
 	}
 
 	//Dual Barettas
-	if (mouse_check_button_pressed(mb_left) && global.pickedWeapon[1] && global.dualBarettasCooldown <= 0)
+	if (key_shoot && global.pickedWeapon[1] && global.dualBarettasCooldown <= 0)
 	{
 		//Check Ammo
 		if (global.dualBarettasAmmo > 0)
@@ -246,7 +263,7 @@ if (!isZombie)
 	}
 
 	//Shotgun
-	if (mouse_check_button_pressed(mb_left) && global.pickedWeapon[2] && global.shotgunCooldown <= 0)
+	if (key_shoot && global.pickedWeapon[2] && global.shotgunCooldown <= 0)
 	{
 		//Check Ammo
 		if (global.shotgunAmmo > 0)
