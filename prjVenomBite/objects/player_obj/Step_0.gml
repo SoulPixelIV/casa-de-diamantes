@@ -78,18 +78,22 @@ if (movement && !isZombie)
 }
 
 //Flip
-if (!grounded && !isZombie) //check flip var TODO
+if (!grounded && !isZombie && !onSlope) //check flip var TODO
 {
 	sprite_index = playerFlip_spr;
 }
 
 //Collision
+if (!instance_position(x, y, colliderSideway_obj))
+{
+	onSlope = false;
+}
 //horspeed
 if (!place_free(x + horspeed, y))
 {
     while (place_free(x + sign(horspeed), y))
     {
-        x += sign(horspeed * dt);
+        x += sign(horspeed) * dt;
     }
     horspeed = 0;
 } 
@@ -98,7 +102,7 @@ if (!place_free(x, y + verspeed))
 {
     while (place_free(x, y + sign(verspeed)))
     {
-        y += sign(verspeed * dt);
+        y += sign(verspeed) * dt;
     }
     fullJump = false;
 	fallJumpSafety = fallJumpSafetySave;

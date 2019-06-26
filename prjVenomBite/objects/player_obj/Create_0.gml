@@ -22,6 +22,7 @@ isZombie = false;
 fullJump = false;
 grounded = false;
 crouching = false;
+onSlope = false;
 damageRecieved = false;
 damageCooldownSave = damageCooldown;
 fallJumpSafetySave = fallJumpSafety;
