@@ -31,6 +31,5 @@ dirCursor = 0;
 lightStrength = 0;
 lightSize = 0;
 
-tilemap = layer_tilemap_get_id("TilesCollider");
 instance_create_layer(x + 1, y - 4, "Instances", playerBulletLine_obj);
 

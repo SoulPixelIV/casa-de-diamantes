@@ -88,6 +88,8 @@ if (!instance_position(x, y, colliderSideway_obj))
 {
 	onSlope = false;
 }
+
+/*
 //horspeed
 if (!place_free(x + horspeed, y))
 {
@@ -111,7 +113,55 @@ else
 	fallJumpSafety -= dt;
 	grounded = false;
 }
+*/
 
+//Horspeed
+var bbox_side;
+if (horspeed > 0)
+{
+	bbox_side = bbox_right;
+}
+else
+{
+	bbox_side = bbox_left;
+}
+if (tilemap_get_at_pixel(global.tilemap, bbox_side + horspeed, bbox_top) != 0 || tilemap_get_at_pixel(global.tilemap, bbox_side + horspeed, bbox_bottom) != 0)
+{
+	if (horspeed > 0)
+	{
+		x = x - ((x mod 32) + 31 - (bbox_right - x)) * dt;
+	}
+	else
+	{
+		x = x - ((x mod 32) - (bbox_left - x)) * dt;
+	}
+	horspeed = 0;
+}
+
+//Verspeed
+var bbox_side;
+if (verspeed > 0)
+{
+	bbox_side = bbox_bottom;
+}
+else
+{
+	bbox_side = bbox_top;
+}
+if ((tilemap_get_at_pixel(global.tilemap, bbox_left, bbox_side + ceil (verspeed)) != 0) || (tilemap_get_at_pixel(global.tilemap, bbox_right, bbox_side + ceil (verspeed)) != 0 ))
+{
+	if (verspeed > 0)
+	{
+		y = y - ((y mod 32) + 31 - (bbox_bottom - y)) * dt;
+	}
+	else
+	{
+		y = y - ((y mod 32) - (bbox_top - y)) * dt;
+	}
+	verspeed = 0;
+}
+	
+	
 //###Weapon System###
 dirCursor = point_direction(x, y, mouse_x, mouse_y);
 if (keyboard_check(vk_left))
