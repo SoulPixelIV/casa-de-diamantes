@@ -783,6 +783,14 @@
             }
         },
         {
+            "Key": "8ad57dd0-7350-4d51-9821-14206d3920b0",
+            "Value": {
+                "id": "8de1d31c-cb7e-4a49-a072-0c9582b68665",
+                "resourcePath": "scripts\\resetJump_scr\\resetJump_scr.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "8df26c2c-dcb9-46d2-aa83-4c32dab43f61",
             "Value": {
                 "id": "bf0ba402-cdc1-431f-8575-ff1cf242e837",
@@ -1442,7 +1450,8 @@
     "script_order": [
         "fbd12ebb-330e-4770-8afc-ee86112af9d9",
         "2b7e93e1-f6b3-4250-bcb9-9a0e0c9972c5",
-        "d6aa94ed-12d0-4b19-a2e0-491e5189a2aa"
+        "d6aa94ed-12d0-4b19-a2e0-491e5189a2aa",
+        "8ad57dd0-7350-4d51-9821-14206d3920b0"
     ],
     "tutorial": ""
 }

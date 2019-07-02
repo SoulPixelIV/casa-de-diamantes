@@ -104,14 +104,11 @@ if (!place_free(x, y + verspeed))
     {
         y += sign(verspeed) * dt;
     }
-    fullJump = false;
-	fallJumpSafety = fallJumpSafetySave;
-    verspeed = 0;
-	grounded = true;
+    resetJump_scr();
 }
 else
 {
-	fallJumpSafety -= 1 * dt;
+	fallJumpSafety -= dt;
 	grounded = false;
 }
 

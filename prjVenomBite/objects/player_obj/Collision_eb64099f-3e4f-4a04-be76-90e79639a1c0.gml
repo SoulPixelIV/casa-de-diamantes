@@ -1,14 +1,11 @@
 /// @description Slope Collision
 
-if (keyboard_check(ord("D")) || keyboard_check(ord("A")))
+if (keyboard_check(ord("D")) || keyboard_check(ord("A")) || verspeed > 0)
 {
 	verspeed = -3;
 }
 else
 {
-	fullJump = false;
-	fallJumpSafety = fallJumpSafetySave;
-    verspeed = 0;
+	resetJump_scr();
 }
-grounded = true;
 onSlope = true;
