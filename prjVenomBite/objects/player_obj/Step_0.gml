@@ -1,8 +1,6 @@
 /// @description Movement
 
 dt = (delta_time / 1000000) * globalSettings_obj.TARGET_FRAMERATE;
-x += horspeed * dt;
-y += verspeed * dt;
 
 key_shoot = mouse_check_button_pressed(mb_left) || keyboard_check_pressed(vk_control);
 key_jump = keyboard_check_pressed(vk_space) || gamepad_button_check_pressed(0, gp_face1);
@@ -137,6 +135,7 @@ if (tilemap_get_at_pixel(global.tilemap, bbox_side + horspeed, bbox_top) != 0 ||
 	}
 	horspeed = 0;
 }
+x += horspeed * dt;
 
 //Verspeed
 var bbox_side;
@@ -148,7 +147,7 @@ else
 {
 	bbox_side = bbox_top;
 }
-if ((tilemap_get_at_pixel(global.tilemap, bbox_left, bbox_side + ceil (verspeed)) != 0) || (tilemap_get_at_pixel(global.tilemap, bbox_right, bbox_side + ceil (verspeed)) != 0 ))
+if ((tilemap_get_at_pixel(global.tilemap, bbox_left, bbox_side + verspeed) != 0) || (tilemap_get_at_pixel(global.tilemap, bbox_right, bbox_side + verspeed) != 0 ))
 {
 	if (verspeed > 0)
 	{
@@ -160,7 +159,7 @@ if ((tilemap_get_at_pixel(global.tilemap, bbox_left, bbox_side + ceil (verspeed)
 	}
 	verspeed = 0;
 }
-	
+y += verspeed * dt;	
 	
 //###Weapon System###
 dirCursor = point_direction(x, y, mouse_x, mouse_y);
