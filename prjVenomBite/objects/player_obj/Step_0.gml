@@ -2,6 +2,9 @@
 
 dt = (delta_time / 1000000) * globalSettings_obj.TARGET_FRAMERATE;
 
+x += horspeed * dt;
+y += verspeed * dt;
+
 key_shoot = mouse_check_button_pressed(mb_left) || keyboard_check_pressed(vk_control);
 key_jump = keyboard_check_pressed(vk_space) || gamepad_button_check_pressed(0, gp_face1);
 key_jump_hold = keyboard_check(vk_space) || gamepad_button_check(0, gp_face1);
@@ -76,18 +79,12 @@ if (movement && !isZombie)
 }
 
 //Flip
-if (!grounded && !isZombie && !onSlope) //check flip var TODO
+if (!grounded && !isZombie && slowmo)
 {
 	sprite_index = playerFlip_spr;
 }
 
 //Collision
-if (!instance_position(x, y, colliderSideway_obj))
-{
-	onSlope = false;
-}
-
-/*
 //horspeed
 if (!place_free(x + horspeed, y))
 {
@@ -111,55 +108,6 @@ else
 	fallJumpSafety -= dt;
 	grounded = false;
 }
-*/
-
-//Horspeed
-var bbox_side;
-if (horspeed > 0)
-{
-	bbox_side = bbox_right;
-}
-else
-{
-	bbox_side = bbox_left;
-}
-if (tilemap_get_at_pixel(global.tilemap, bbox_side + horspeed, bbox_top) != 0 || tilemap_get_at_pixel(global.tilemap, bbox_side + horspeed, bbox_bottom) != 0)
-{
-	if (horspeed > 0)
-	{
-		x = x - ((x mod 32) + 31 - (bbox_right - x)) * dt;
-	}
-	else
-	{
-		x = x - ((x mod 32) - (bbox_left - x)) * dt;
-	}
-	horspeed = 0;
-}
-x += horspeed * dt;
-
-//Verspeed
-var bbox_side;
-if (verspeed > 0)
-{
-	bbox_side = bbox_bottom;
-}
-else
-{
-	bbox_side = bbox_top;
-}
-if ((tilemap_get_at_pixel(global.tilemap, bbox_left, bbox_side + verspeed) != 0) || (tilemap_get_at_pixel(global.tilemap, bbox_right, bbox_side + verspeed) != 0 ))
-{
-	if (verspeed > 0)
-	{
-		y = y - ((y mod 32) + 31 - (bbox_bottom - y)) * dt;
-	}
-	else
-	{
-		y = y - ((y mod 32) - (bbox_top - y)) * dt;
-	}
-	verspeed = 0;
-}
-y += verspeed * dt;	
 	
 //###Weapon System###
 dirCursor = point_direction(x, y, mouse_x, mouse_y);
@@ -192,14 +140,35 @@ if (global.pickedWeapon[0] || global.pickedWeapon[1] || global.pickedWeapon[2])
 			}
 			else
 			{
-				if (crouching)
-				{
-					sprite_index = playerKnifeBuildup_spr;
-				}
-				else
-				{
-					sprite_index = playerEquipped_spr;
-				}
+				sprite_index = playerEquipped_spr;
+			}
+		}
+		else
+		{
+			if (horspeed != 0)
+			{
+				sprite_index = zombieGirl_spr;
+			}
+			else
+			{
+				sprite_index = zombieGirl_spr;
+			}
+		}
+	}
+}
+else
+{
+	if (grounded)
+	{
+		if (!isZombie)
+		{
+			if (horspeed != 0)
+			{
+				sprite_index = playerWalking_spr;
+			}
+			else
+			{
+				sprite_index = player_spr;
 			}
 		}
 		else
@@ -218,45 +187,6 @@ if (global.pickedWeapon[0] || global.pickedWeapon[1] || global.pickedWeapon[2])
 				{
 					sprite_index = zombieGirl_spr;
 				}
-			}
-		}
-	}
-}
-else
-{
-	if (!isZombie)
-	{
-		if (horspeed != 0)
-		{
-			sprite_index = playerWalking_spr;
-		}
-		else
-		{
-			if (crouching)
-			{
-				sprite_index = playerKnifeBuildup_spr;
-			}
-			else
-			{
-				sprite_index = player_spr;
-			}
-		}
-	}
-	else
-	{
-		if (horspeed != 0)
-		{
-			sprite_index = zombieGirl_spr;
-		}
-		else
-		{
-			if (crouching)
-			{
-				sprite_index = zombieGirl_spr;
-			}
-			else
-			{
-				sprite_index = zombieGirl_spr;
 			}
 		}
 	}
@@ -416,7 +346,7 @@ if (!isZombie)
 
 
 //Animation
-if (grounded)
+if (grounded || !slowmo)
 {
 	if (dirCursor > 90 && dirCursor < 270)
 	{
@@ -504,11 +434,13 @@ if (isZombie && keyboard_check_pressed(ord("F")))
 //Slowmotion
 if (keyboard_check(vk_shift))
 {
+	slowmo = true;
 	global.timeScale = 0.2;
 	image_speed = 0.2;
 }
 else
 {
+	slowmo = false;
 	global.timeScale = 1;
 	image_speed = 1;
 }

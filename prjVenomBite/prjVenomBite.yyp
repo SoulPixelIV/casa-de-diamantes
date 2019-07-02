@@ -799,14 +799,6 @@
             }
         },
         {
-            "Key": "916e2957-7cf7-447e-9896-0406b7708c5e",
-            "Value": {
-                "id": "89a789c5-22c9-4617-9f44-84ef52740b8d",
-                "resourcePath": "tilesets\\collider\\collider.yy",
-                "resourceType": "GMTileSet"
-            }
-        },
-        {
             "Key": "93d232cd-84a4-45d7-981b-c298e90998c4",
             "Value": {
                 "id": "0a4e996c-b7c7-41f6-9d1a-d4323e0557c3",
