@@ -263,6 +263,14 @@
             }
         },
         {
+            "Key": "2b0d5953-2f95-4834-92c1-62c0f2d6aa8b",
+            "Value": {
+                "id": "fff513b5-a10a-4e81-8c84-5f7d2de2791b",
+                "resourcePath": "sprites\\casinoBuildingFrontStairs_spr\\casinoBuildingFrontStairs_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "2b7e93e1-f6b3-4250-bcb9-9a0e0c9972c5",
             "Value": {
                 "id": "165a47ee-d538-4f09-87c5-cbce334c345b",
@@ -795,6 +803,14 @@
             "Value": {
                 "id": "bf0ba402-cdc1-431f-8575-ff1cf242e837",
                 "resourcePath": "objects\\protoBanana_obj\\protoBanana_obj.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "904a46fc-0a9b-418f-a016-22cd4a6f63e2",
+            "Value": {
+                "id": "74c981a6-498a-4fc5-98c6-9a086c25fbd3",
+                "resourcePath": "objects\\casinoBuildingFrontStairs_obj\\casinoBuildingFrontStairs_obj.yy",
                 "resourceType": "GMObject"
             }
         },
