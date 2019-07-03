@@ -38,20 +38,47 @@ if (movement)
 	}
 }
 
-if (horspeed > 0)
+if (!place_meeting(x, y, colliderSideway_obj))
 {
-	horspeed -= frictionStrength * dt;
-	if (horspeed < 0.3)
+	frictionActive = true;
+}
+
+if (frictionActive)
+{
+	if (horspeed > 0)
 	{
-		horspeed = 0;
+		horspeed -= frictionStrength * dt;
+		if (horspeed < 0.3)
+		{
+			horspeed = 0;
+		}
+	}
+	else
+	{
+		horspeed += frictionStrength * dt;
+		if (horspeed > -0.3)
+		{
+			horspeed = 0;
+		}
 	}
 }
 else
 {
-	horspeed += frictionStrength * dt;
-	if (horspeed > -0.3)
+	if (horspeed > 0)
 	{
-		horspeed = 0;
+		horspeed -= dt;
+		if (horspeed < 0.3)
+		{
+			horspeed = 0;
+		}
+	}
+	else
+	{
+		horspeed += dt;
+		if (horspeed > -0.3)
+		{
+			horspeed = 0;
+		}
 	}
 }
 

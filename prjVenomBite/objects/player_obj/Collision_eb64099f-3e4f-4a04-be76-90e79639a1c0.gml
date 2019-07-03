@@ -9,3 +9,5 @@ else
 	resetJump_scr();
 }
 grounded = true;
+frictionActive = false;
+walkingActive = false;

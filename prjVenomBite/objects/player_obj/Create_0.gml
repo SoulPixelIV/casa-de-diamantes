@@ -7,6 +7,7 @@ maxhp = hp;
 syringes = 3;
 syringesLost = 0;
 movSpeed = 3.4;
+frictionActive = true;
 movSpeedZombie = 1.8;
 zombieTimer = 550;
 gravityStrength = -0.42;
