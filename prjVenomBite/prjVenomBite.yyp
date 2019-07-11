@@ -175,6 +175,14 @@
             }
         },
         {
+            "Key": "1bf8fa24-5782-419d-a33e-1e9ec101dc37",
+            "Value": {
+                "id": "04ebe700-705d-41d9-b1ec-9877c6991505",
+                "resourcePath": "sprites\\playerArmEmpty_spr\\playerArmEmpty_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "1d0ee4ed-0c51-410a-9737-cbaebaa2fc5c",
             "Value": {
                 "id": "a066a183-254a-4c27-a0a4-a6516941758d",
