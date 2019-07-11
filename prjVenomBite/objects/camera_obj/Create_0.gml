@@ -23,6 +23,7 @@ deathVignette = false;
 drawInfectionText = false;
 noZoom = false;
 zoomOut = false;
+zoomIn = false;
 noHUD = false;
 
 zoomCooldownSave = zoomCooldown;

@@ -45,7 +45,13 @@ if (!noZoom && !player_obj.isZombie)
 			viewX = 768;
 			viewY = 432;
 		}
-		else //Normal View
+		if (zoomIn)
+		{
+			viewX = 256;
+			viewY = 144;
+		}
+		
+		if (!zoomIn && !zoomOut) //Normal View
 		{
 			viewX = 512;
 			viewY = 288;

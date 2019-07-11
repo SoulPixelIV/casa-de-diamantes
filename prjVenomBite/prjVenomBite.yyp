@@ -375,6 +375,22 @@
             }
         },
         {
+            "Key": "40c36547-3be1-4e48-8c24-30adc3fa585d",
+            "Value": {
+                "id": "aca511d3-8c7f-4b1c-98f3-c7d9e37f46c6",
+                "resourcePath": "objects\\cameraViewIn_obj\\cameraViewIn_obj.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "431fc4bd-f8ff-4b39-ac5c-272af2a98041",
+            "Value": {
+                "id": "058e55b9-f9a2-4ba7-8c4f-a612e39dbb2a",
+                "resourcePath": "sprites\\cameraViewIcon2_spr\\cameraViewIcon2_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "438d1c93-9ef8-4a94-9d2d-8ba06878cfd0",
             "Value": {
                 "id": "c16700ea-aefe-4223-8b03-c7f2396d0610",
