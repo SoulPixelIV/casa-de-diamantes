@@ -109,6 +109,11 @@ if (movement && !isZombie)
 if (!grounded && !isZombie && slowmo)
 {
 	sprite_index = playerFlip_spr;
+	flip = true;
+}
+else
+{
+	flip = false;
 }
 
 //Collision
@@ -373,7 +378,7 @@ if (!isZombie)
 
 
 //Animation
-if (grounded || !slowmo)
+if (grounded || !flip)
 {
 	if (dirCursor > 90 && dirCursor < 270)
 	{

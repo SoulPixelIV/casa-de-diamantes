@@ -19,10 +19,12 @@ damageCooldown = 60;
 movement = true;
 invincible = false;
 isZombie = false;
+currDir = 0;
 
 fullJump = false;
 grounded = false;
 crouching = false;
+flip = false;
 slowmo = false;
 damageRecieved = false;
 damageCooldownSave = damageCooldown;
