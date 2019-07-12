@@ -743,14 +743,6 @@
             }
         },
         {
-            "Key": "7d8a93eb-3ca1-43a2-8d8a-fab35afb746a",
-            "Value": {
-                "id": "09b04c30-49c6-46bb-9bfd-a308a104d68d",
-                "resourcePath": "sprites\\playerFlipOLD_spr\\playerFlipOLD_spr.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "7f41c6be-ae43-481a-9d37-d24032976f58",
             "Value": {
                 "id": "3efa6420-ebe5-48c5-944f-f4898abba274",
