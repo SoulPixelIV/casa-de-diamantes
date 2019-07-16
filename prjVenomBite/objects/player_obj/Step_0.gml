@@ -5,6 +5,8 @@ dt = (delta_time / 1000000) * globalSettings_obj.TARGET_FRAMERATE;
 x += horspeed * dt;
 y += verspeed * dt;
 
+key_left = keyboard_check(ord("A"));
+key_right = keyboard_check(ord("D"));
 key_shoot = mouse_check_button_pressed(mb_left) || keyboard_check_pressed(vk_control);
 key_jump = keyboard_check_pressed(vk_space) || gamepad_button_check_pressed(0, gp_face1);
 key_jump_hold = keyboard_check(vk_space) || gamepad_button_check(0, gp_face1);
@@ -14,7 +16,7 @@ key_shift_hold = keyboard_check(vk_shift) || gamepad_button_check(0, gp_face2);
 //Movement
 if (movement && !wallJumping)
 {
-	if (keyboard_check(ord("D")) && !keyboard_check(ord("A")))
+	if (key_right && !key_left)
 	{
 		if (!isZombie)
 		{
@@ -25,7 +27,7 @@ if (movement && !wallJumping)
 			horspeed = movSpeedZombie;
 		}
 	}
-	if (keyboard_check(ord("A")) && !keyboard_check(ord("D")))
+	if (key_right && !key_left)
 	{
 		if (!isZombie)
 		{
@@ -113,11 +115,11 @@ if (movement && !isZombie && wallJumps > 0)
 		wallJumping = true;
 		verspeed = -jumpStrength;
 		
-		if (keyboard_check(ord("D")))
+		if (key_right)
 		{
 			horspeed = -jumpStrength / 1.5;
 		}
-		if (keyboard_check(ord("A")))
+		if (key_left)
 		{
 			horspeed = jumpStrength / 1.5;
 		}
