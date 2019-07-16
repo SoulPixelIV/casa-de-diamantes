@@ -25,6 +25,7 @@ fullJump = false;
 grounded = false;
 crouching = false;
 flip = false;
+spin = false;
 slowmo = false;
 damageRecieved = false;
 damageCooldownSave = damageCooldown;

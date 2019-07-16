@@ -106,7 +106,7 @@ if (movement && !isZombie)
 }
 
 //Flip
-if (!grounded && !isZombie && slowmo)
+if (!grounded && !isZombie && slowmo && !spin)
 {
 	sprite_index = playerFlip_spr;
 	flip = true;
@@ -114,6 +114,17 @@ if (!grounded && !isZombie && slowmo)
 else
 {
 	flip = false;
+}
+
+//Jump Spin
+if (!grounded && !isZombie && !slowmo && !flip)
+{
+	sprite_index = playerJumpSpin_spr;
+	spin = true;
+}
+else
+{
+	spin = false;
 }
 
 //Collision

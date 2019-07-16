@@ -759,6 +759,14 @@
             }
         },
         {
+            "Key": "80f76815-982d-4b38-a58c-63626775e2f9",
+            "Value": {
+                "id": "3a19b242-ef19-4253-8b11-d669efadbc49",
+                "resourcePath": "sprites\\playerJumpSpin_spr\\playerJumpSpin_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "817c6337-c4f5-4db1-9e12-73eee36cac77",
             "Value": {
                 "id": "ecb8a899-9a4c-4aa3-8973-49eee336e1c7",
