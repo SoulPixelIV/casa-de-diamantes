@@ -4,27 +4,13 @@ draw_self();
 
 if (!flip)
 {
-	if (!wallJumpingInAir)
+	if (dirCursor > 90 && dirCursor < 270)
 	{
-		if (dirCursor > 90 && dirCursor < 270)
-		{
-			currDir = 0;
-		}
-		else
-		{
-			currDir = 1;
-		}
+		currDir = 0;
 	}
 	else
 	{
-		if (image_xscale == -1)
-		{
-			currDir = 0;
-		}
-		else
-		{
-			currDir = 1;
-		}
+		currDir = 1;
 	}
 }
 	

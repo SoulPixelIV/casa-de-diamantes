@@ -27,7 +27,7 @@ if (movement && !wallJumping)
 			horspeed = movSpeedZombie;
 		}
 	}
-	if (key_right && !key_left)
+	if (key_left && !key_right)
 	{
 		if (!isZombie)
 		{
@@ -110,21 +110,22 @@ if (movement && !isZombie)
 //Walljump
 if (movement && !isZombie && wallJumps > 0)
 {
-	if (huggingWall && key_jump)
+	if (huggingWall && key_jump && !grounded)
 	{
 		wallJumping = true;
-		verspeed = -jumpStrength;
+		verspeed = -jumpStrength / 1.3;
 		
 		if (key_right)
 		{
-			horspeed = -jumpStrength / 1.5;
+			horspeed -= jumpStrength;
 		}
 		if (key_left)
 		{
-			horspeed = jumpStrength / 1.5;
+			horspeed += jumpStrength;
 		}
 		wallJumps--;
 		wallJumpingInAir = true;
+		/*
 		if (image_xscale == -1)
 		{
 			image_xscale = 1;
@@ -133,9 +134,15 @@ if (movement && !isZombie && wallJumps > 0)
 		{
 			image_xscale = -1;
 		}
+		*/
 	}
-	else
+	if (wallJumping)
 	{
+		wallJumpTimer -= dt;
+	}
+	if (wallJumpTimer < 0)
+	{
+		wallJumpTimer = 3;
 		wallJumping = false;
 	}
 }
