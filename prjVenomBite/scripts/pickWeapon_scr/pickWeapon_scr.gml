@@ -25,3 +25,4 @@ switch (argument0)
 		//instance_create_layer(player_obj.x, player_obj.y, "Instances", spotLight_obj);
 		break;
 }
+player_obj.unarmed = false;

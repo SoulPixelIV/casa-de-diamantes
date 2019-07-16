@@ -12,7 +12,7 @@ key_jump_release = keyboard_check_released(vk_space) || gamepad_button_check_rel
 key_shift_hold = keyboard_check(vk_shift) || gamepad_button_check(0, gp_face2);
 
 //Movement
-if (movement)
+if (movement && !wallJumping)
 {
 	if (keyboard_check(ord("D")) && !keyboard_check(ord("A")))
 	{
@@ -91,7 +91,7 @@ if (verspeed < 14)
 //Jump
 if (movement && !isZombie)
 {
-	if (grounded && (key_jump) || fallJumpSafety > 0 && (key_jump))
+	if (grounded && key_jump || fallJumpSafety > 0 && (key_jump))
 	{
 	    verspeed = -jumpStrength;
 	}
@@ -105,26 +105,89 @@ if (movement && !isZombie)
 	}
 }
 
+//Walljump
+if (movement && !isZombie && wallJumps > 0)
+{
+	if (huggingWall && key_jump)
+	{
+		wallJumping = true;
+		verspeed = -jumpStrength;
+		
+		if (keyboard_check(ord("D")))
+		{
+			horspeed = -jumpStrength / 1.5;
+		}
+		if (keyboard_check(ord("A")))
+		{
+			horspeed = jumpStrength / 1.5;
+		}
+		wallJumps--;
+		wallJumpingInAir = true;
+		if (image_xscale == -1)
+		{
+			image_xscale = 1;
+		}
+		else
+		{
+			image_xscale = -1;
+		}
+	}
+	else
+	{
+		wallJumping = false;
+	}
+}
+
 //Flip
-if (!grounded && !isZombie && slowmo && !spin)
+if (!grounded && !isZombie && slowmo && !spin && !unarmed && horspeed != 0)
 {
 	sprite_index = playerFlip_spr;
 	flip = true;
 }
 else
 {
-	flip = false;
+	if (grounded)
+	{
+		flip = false;
+	}
 }
 
 //Jump Spin
-if (!grounded && !isZombie && !slowmo && !flip)
+if (!grounded && !isZombie && !flip && !unarmed && horspeed == 0)
 {
 	sprite_index = playerJumpSpin_spr;
 	spin = true;
 }
 else
 {
-	spin = false;
+	if (grounded)
+	{
+		spin = false;
+	}
+}
+if (spin)
+{
+	if (spinWeaponDir == 0)
+	{
+		spinWeaponPos += dt * 1.7;
+	}
+	if (spinWeaponDir == 1)
+	{
+		spinWeaponPos -= dt * 1.7;
+	}
+	if (spinWeaponPos > 5)
+	{
+		spinWeaponDir = 1;
+	}
+	if (spinWeaponPos < 0)
+	{
+		spinWeaponDir = 0;
+	}
+}
+else
+{
+	spinWeaponPos = 0;
+	spinWeaponDir = 0;
 }
 
 //Collision
@@ -135,8 +198,16 @@ if (!place_free(x + horspeed, y))
     {
         x += sign(horspeed) * dt;
     }
-    horspeed = 0;
+	if (!wallJumping)
+	{
+		horspeed = 0;
+	}
+	huggingWall = true;
 } 
+else
+{
+	huggingWall = false;
+}
 //verspeed
 if (!place_free(x, y + verspeed))
 {
@@ -391,13 +462,16 @@ if (!isZombie)
 //Animation
 if (grounded || !flip)
 {
-	if (dirCursor > 90 && dirCursor < 270)
+	if (!wallJumpingInAir)
 	{
-		image_xscale = -1;
-	}
-	else
-	{
-		image_xscale = 1;
+		if (dirCursor > 90 && dirCursor < 270)
+		{
+			image_xscale = -1;
+		}
+		else
+		{
+			image_xscale = 1;
+		}
 	}
 }
 
