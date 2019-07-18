@@ -231,6 +231,19 @@ else
 	fallJumpSafety -= dt;
 	grounded = false;
 }
+
+//###OutsideSolid###
+if (place_free(x, y))
+{
+    savePosX = x;
+    savePosY = y;
+}
+else
+{
+    x = savePosX;
+    y = savePosY;
+    verSpeed = 0;
+}
 	
 //###Weapon System###
 dirCursor = point_direction(x, y, mouse_x, mouse_y);
@@ -328,13 +341,16 @@ if (!isZombie)
 			instance_create_layer(playerBulletLine_obj.x + 10, playerBulletLine_obj.y, "Instances", bulletPistol_obj);
 			instance_create_layer(playerBulletLine_obj.x + 10, playerBulletLine_obj.y, "Instances", shotLight_obj);
 		
-			if (image_xscale == 1)
+			if (!huggingWall)
 			{
-				horspeed = -1;
-			}
-			else
-			{
-				horspeed = 1;
+				if (image_xscale == 1)
+				{
+					horspeed = -1;
+				}
+				else
+				{
+					horspeed = 1;
+				}
 			}
 			global.pistolAmmo--;
 			global.pistolCooldown = global.pistolCooldownSave;
@@ -352,13 +368,16 @@ if (!isZombie)
 			instance_create_layer(playerBulletLine_obj.x + 10, playerBulletLine_obj.y, "Instances", bulletDualBarettas_obj);
 			instance_create_layer(playerBulletLine_obj.x + 10, playerBulletLine_obj.y, "Instances", shotLight_obj);
 		
-			if (image_xscale == 1)
+			if (!huggingWall)
 			{
-				horspeed = -2;
-			}
-			else
-			{
-				horspeed = 2;
+				if (image_xscale == 1)
+				{
+					horspeed = -2;
+				}
+				else
+				{
+					horspeed = 2;
+				}
 			}
 			global.dualBarettasAmmo--;
 			global.dualBarettasCooldown = global.dualBarettasCooldownSave;
@@ -376,13 +395,16 @@ if (!isZombie)
 			instance_create_layer(playerBulletLine_obj.x + 10, playerBulletLine_obj.y, "Instances", bulletShotgun_obj);
 			instance_create_layer(playerBulletLine_obj.x + 10, playerBulletLine_obj.y, "Instances", shotLight_obj);
 		
-			if (image_xscale == 1)
+			if (!huggingWall)
 			{
-				horspeed = -6;
-			}
-			else
-			{
-				horspeed = 6;
+				if (image_xscale == 1)
+				{
+					horspeed = -6;
+				}
+				else
+				{
+					horspeed = 6;
+				}
 			}
 			global.shotgunAmmo--;
 			global.shotgunCooldown = global.shotgunCooldownSave;
