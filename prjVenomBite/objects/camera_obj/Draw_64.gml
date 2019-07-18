@@ -23,6 +23,7 @@ if (!noHUD)
 
 	draw_set_font(neon_fnt);
 	draw_text_colour(32, 624, "Framerate: " + string(fps_real), c_purple, c_aqua, c_aqua, c_purple, 1);
+	draw_text_colour(32, 592, "WALLJUMPING: " + string(player_obj.wallJumping), c_purple, c_aqua, c_aqua, c_purple, 1);
 	draw_text_colour(32, 656, "Roomspeed: " + string(fps), c_purple, c_aqua, c_aqua, c_purple, 1);
 	draw_text_colour(32, 688, "Speed: " + string(global.timeScale), c_purple, c_aqua, c_aqua, c_purple, 1);
 

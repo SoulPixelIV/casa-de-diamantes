@@ -136,15 +136,15 @@ if (movement && !isZombie && wallJumps > 0)
 		}
 		*/
 	}
-	if (wallJumping)
-	{
-		wallJumpTimer -= dt;
-	}
-	if (wallJumpTimer < 0)
-	{
-		wallJumpTimer = 3;
-		wallJumping = false;
-	}
+}
+if (wallJumping)
+{
+	wallJumpTimer -= dt;
+}
+if (wallJumpTimer < 0)
+{
+	wallJumpTimer = 12;
+	wallJumping = false;
 }
 
 //Flip
