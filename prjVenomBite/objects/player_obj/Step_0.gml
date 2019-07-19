@@ -174,6 +174,7 @@ else
 		spin = false;
 	}
 }
+/*
 if (spin)
 {
 	if (spinWeaponDir == 0)
@@ -198,7 +199,7 @@ else
 	spinWeaponPos = 0;
 	spinWeaponDir = 0;
 }
-
+*/
 //Collision
 //horspeed
 if (!place_free(x + horspeed, y))

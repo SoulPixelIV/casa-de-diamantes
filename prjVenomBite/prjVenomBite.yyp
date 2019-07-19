@@ -47,6 +47,14 @@
             }
         },
         {
+            "Key": "044ef8c7-5ebc-4829-885e-30a9b8385f37",
+            "Value": {
+                "id": "1d92e7e2-51b2-4aed-bc32-fceb7013836e",
+                "resourcePath": "sprites\\playerArmEmptyJumpSpin_spr\\playerArmEmptyJumpSpin_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "04b09689-b420-42be-ad2b-69cf6b147425",
             "Value": {
                 "id": "45118cbc-66e8-4f80-a4e4-2c8b02d4287d",
@@ -163,6 +171,14 @@
             "Value": {
                 "id": "9cb81652-7e0b-4210-b483-8b05842bce2d",
                 "resourcePath": "sprites\\bullet_spr\\bullet_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "1a9a6915-6cb6-49e1-a50c-8cdc4f8d58e5",
+            "Value": {
+                "id": "5d904569-7961-4995-bd79-224f6045c2e6",
+                "resourcePath": "sprites\\playerShotgunJumpSpin_spr\\playerShotgunJumpSpin_spr.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -588,6 +604,14 @@
                 "id": "b9faec31-4e08-4eb2-b409-39bc8c0e21d0",
                 "resourcePath": "objects\\dualBarettas_obj\\dualBarettas_obj.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "6817dee1-1e88-4691-ae55-5f94de269da4",
+            "Value": {
+                "id": "278ad697-6846-48e8-81e6-e7306179690e",
+                "resourcePath": "sprites\\playerDualBarettasJumpSpin_spr\\playerDualBarettasJumpSpin_spr.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1100,6 +1124,14 @@
                 "id": "88131713-9b05-41d7-bff5-d23240e955c1",
                 "resourcePath": "objects\\ledBarRedHanging_obj\\ledBarRedHanging_obj.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "bfc5b0ca-98b0-4a02-9e60-841d586a2fc4",
+            "Value": {
+                "id": "f1b9af4c-001d-4192-bba1-61f3ad19dd5a",
+                "resourcePath": "sprites\\playerPistolJumpSpin_spr\\playerPistolJumpSpin_spr.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
