@@ -339,8 +339,10 @@ if (!isZombie)
 		{
 			audio_play_sound(pistolShot_snd, 1, false);
 		
-			instance_create_layer(playerBulletLine_obj.x + 10, playerBulletLine_obj.y, "Instances", bulletPistol_obj);
-			instance_create_layer(playerBulletLine_obj.x + 10, playerBulletLine_obj.y, "Instances", shotLight_obj);
+			var shotLightx = x + lengthdir_x(32, dirCursor);
+			var shotLighty = y + lengthdir_x(32, dirCursor);
+			instance_create_layer(playerBulletLine_obj.x, playerBulletLine_obj.y, "Instances", bulletPistol_obj);
+			instance_create_layer(shotLightx, shotLighty, "ForegroundObjects", shotLight_obj);
 		
 			if (!huggingWall)
 			{

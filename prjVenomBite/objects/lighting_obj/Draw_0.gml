@@ -17,30 +17,30 @@ else
 	        draw_sprite_ext(light_spr, 0, x*other.surfaceScale, y*other.surfaceScale, lightSize*other.surfaceScale, lightSize*other.surfaceScale, 0, c_white, lightStrength);
 	        gpu_set_blendmode(bm_normal);
 	    }
-		with(lights_obj)
-	    {
-	        gpu_set_blendmode(bm_add);
-	        draw_sprite_ext(light_spr, 0, x*other.surfaceScale, y*other.surfaceScale, lightSize*other.surfaceScale, lightSize*other.surfaceScale, 0, c_white, lightStrength);
-	        gpu_set_blendmode(bm_normal);
-	    }
-		with (spotLight_obj)
-		{
-	        gpu_set_blendmode(bm_add);
-	        draw_sprite_ext(spotlight_spr, 0, x*other.surfaceScale, y*other.surfaceScale, lightSize*other.surfaceScale, lightSize*other.surfaceScale, 0, c_white, spotLight_obj.lightStrength);
-	        gpu_set_blendmode(bm_normal);
-	    }
-		with (lightsRed_obj)
-		{
-	        gpu_set_blendmode(bm_add);
-	        draw_sprite_ext(light_spr, 0, x*other.surfaceScale, y*other.surfaceScale, lightSize*other.surfaceScale, lightSize*other.surfaceScale, 0, c_red, lightsRed_obj.lightStrength);
-	        gpu_set_blendmode(bm_normal);
-	    }
-		with (lightsBlue_obj)
-		{
-	        gpu_set_blendmode(bm_add);
-	        draw_sprite_ext(light_spr, 0, x*other.surfaceScale, y*other.surfaceScale, lightSize*other.surfaceScale, lightSize*other.surfaceScale, 0, c_blue, lightsBlue_obj.lightStrength);
-	        gpu_set_blendmode(bm_normal);
-	    }
+	}
+	with(lights_obj)
+	{
+	    gpu_set_blendmode(bm_add);
+	    draw_sprite_ext(light_spr, 0, x*other.surfaceScale, y*other.surfaceScale, lightSize*other.surfaceScale, lightSize*other.surfaceScale, 0, c_white, lightStrength);
+	    gpu_set_blendmode(bm_normal);
+	}
+	with (spotLight_obj)
+	{
+	    gpu_set_blendmode(bm_add);
+	    draw_sprite_ext(spotlight_spr, 0, x*other.surfaceScale, y*other.surfaceScale, lightSize*other.surfaceScale, lightSize*other.surfaceScale, 0, c_white, spotLight_obj.lightStrength);
+	    gpu_set_blendmode(bm_normal);
+	}
+	with (lightsRed_obj)
+	{
+	    gpu_set_blendmode(bm_add);
+	    draw_sprite_ext(light_spr, 0, x*other.surfaceScale, y*other.surfaceScale, lightSize*other.surfaceScale, lightSize*other.surfaceScale, 0, c_red, lightsRed_obj.lightStrength);
+	    gpu_set_blendmode(bm_normal);
+	}
+	with (lightsBlue_obj)
+	{
+	    gpu_set_blendmode(bm_add);
+	    draw_sprite_ext(light_spr, 0, x*other.surfaceScale, y*other.surfaceScale, lightSize*other.surfaceScale, lightSize*other.surfaceScale, 0, c_blue, lightsBlue_obj.lightStrength);
+	    gpu_set_blendmode(bm_normal);
 	}
 	surface_reset_target();
 	draw_surface_ext(surface, 0, 0, 1/surfaceScale, 1/surfaceScale, 0, c_white, 0.5);

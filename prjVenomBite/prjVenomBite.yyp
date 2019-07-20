@@ -743,6 +743,14 @@
             }
         },
         {
+            "Key": "7809016a-54cd-41b0-ba82-8bda5dbf2bdb",
+            "Value": {
+                "id": "82cf03a4-2630-4c01-9b56-015ef772e57a",
+                "resourcePath": "objects\\explosionSmall_obj\\explosionSmall_obj.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "79583bf9-5fd6-4bb0-8c0c-fd9f73d6f950",
             "Value": {
                 "id": "af470a93-6656-4b69-96ff-d298e7c02811",
@@ -915,6 +923,14 @@
             "Value": {
                 "id": "281d56c0-3d71-45eb-be0d-131f1f968b14",
                 "resourcePath": "sprites\\ledSignBlue1_spr\\ledSignBlue1_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "99a699d7-0080-4681-ae6f-78076a149f9e",
+            "Value": {
+                "id": "78286008-38fd-4823-a496-a13bce4bf471",
+                "resourcePath": "sprites\\explosionSmall_spr\\explosionSmall_spr.yy",
                 "resourceType": "GMSprite"
             }
         },

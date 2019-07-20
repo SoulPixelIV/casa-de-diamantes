@@ -1,6 +1,5 @@
 /// @description Variables
 
-lightSize = 1.75;
-lightStrength = 0.5;
-
-alarm[0] = 3;
+lightSize = 1.2;
+lightStrength = 0.6;
+lifeLength = 6.5;
