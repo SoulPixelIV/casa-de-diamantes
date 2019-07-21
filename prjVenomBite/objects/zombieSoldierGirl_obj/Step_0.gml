@@ -92,7 +92,7 @@ if (attackCooldown < 0)
 	audio_play_sound(shotgunShot_snd, 1, false);
 		
 	instance_create_layer(x + 10, y, "Instances", bulletZombieSoldierGirl_obj);
-	instance_create_layer(x + 10, y, "Instances", shotLight_obj);	
+	instance_create_layer(x + 10, y, "Instances", shotLightDualBarettas_obj);	
 
 	attackCooldown = attackCooldownSave;
 	sprite_index = zombieSoldierGirl_spr;

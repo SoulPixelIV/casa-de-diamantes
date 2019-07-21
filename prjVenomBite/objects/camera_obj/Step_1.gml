@@ -51,10 +51,28 @@ if (!noZoom && !player_obj.isZombie)
 			viewY = 144;
 		}
 		
-		if (!zoomIn && !zoomOut) //Normal View
+		if (!zoomIn && !zoomOut && !player_obj.slowmo) //Normal View
 		{
 			viewX = 512;
 			viewY = 288;
+		}
+		if (player_obj.slowmo) //Slowmo
+		{
+			if (!zoomOut && !zoomIn)
+			{
+				viewX = 464;
+				viewY = 261;
+			}
+			if (zoomOut)
+			{
+				viewX = 720;
+				viewY = 405;
+			}
+			if (zoomIn)
+			{
+				viewX = 208;
+				viewY = 117;
+			}
 		}
 	}
 }
