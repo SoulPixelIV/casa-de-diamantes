@@ -5,8 +5,8 @@ lifeLength -= dt;
 
 if (lifeLength < 0)
 {
-	image_alpha -= 0.025;
-	lightStrength -= 0.025;
+	image_alpha -= dt / 10;
+	lightStrength -= dt / 10;
 }
 if (image_alpha == 0)
 {
