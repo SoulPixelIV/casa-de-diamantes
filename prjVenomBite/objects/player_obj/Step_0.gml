@@ -408,13 +408,21 @@ if (!isZombie)
 		
 			if (!huggingWall)
 			{
-				if (image_xscale == 1)
+				if (dirCursor > 310 || dirCursor < 50)
 				{
-					horspeed = -6;
+					horspeed -= 6;
+				}
+				else if (dirCursor > 130 && dirCursor < 230)
+				{
+					horspeed += 6;
+				}
+				else if (image_xscale == 1)
+				{
+					horspeed -= 3;
 				}
 				else
 				{
-					horspeed = 6;
+					horspeed += 3;
 				}
 			}
 			global.shotgunAmmo--;

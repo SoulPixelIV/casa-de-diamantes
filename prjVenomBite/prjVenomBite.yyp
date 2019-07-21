@@ -178,7 +178,7 @@
             "Key": "1a98feb0-eaa3-40e3-8977-c6284473a0f6",
             "Value": {
                 "id": "9cb81652-7e0b-4210-b483-8b05842bce2d",
-                "resourcePath": "sprites\\bullet_spr\\bullet_spr.yy",
+                "resourcePath": "sprites\\bulletPistol_spr\\bulletPistol_spr.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -607,6 +607,14 @@
             }
         },
         {
+            "Key": "643ef54b-67d6-47f3-9a5f-e5991c484c5b",
+            "Value": {
+                "id": "168e3c31-a1b5-4e73-9121-aaa115aa8a65",
+                "resourcePath": "sprites\\bulletShotgun_spr\\bulletShotgun_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "65e2ef96-24e5-4aab-9ae2-e62edd7ac063",
             "Value": {
                 "id": "8e20476e-f3e3-4546-ba96-6ffd442a59ff",
@@ -748,6 +756,14 @@
                 "id": "757259c3-22f8-4277-a9ef-ab961d146a0f",
                 "resourcePath": "objects\\lighting_obj\\lighting_obj.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "7405c51d-d825-4b4c-bdd1-086edef15596",
+            "Value": {
+                "id": "2cbd3213-52d9-4759-9c01-636cc5f3a5b5",
+                "resourcePath": "sprites\\bulletDualBarettas_spr\\bulletDualBarettas_spr.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
