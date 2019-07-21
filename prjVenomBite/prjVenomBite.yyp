@@ -31,6 +31,14 @@
     },
     "resources": [
         {
+            "Key": "003e29b7-ed68-4760-8fbc-7c752ae28675",
+            "Value": {
+                "id": "7597deba-4e5b-4af3-983f-9aef26d05374",
+                "resourcePath": "objects\\shotLightDualBarettas_obj\\shotLightDualBarettas_obj.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "01e75341-095a-4b53-b390-e283a084a355",
             "Value": {
                 "id": "00dffc66-9dfe-47eb-bd2d-c23a8f0e5395",
@@ -583,6 +591,14 @@
             }
         },
         {
+            "Key": "6432b7ca-34f6-46cf-9052-ad7ec40442ae",
+            "Value": {
+                "id": "f52b9a3a-0bac-4e80-98a2-90c61209e699",
+                "resourcePath": "sprites\\explosionBig_spr\\explosionBig_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "65e2ef96-24e5-4aab-9ae2-e62edd7ac063",
             "Value": {
                 "id": "8e20476e-f3e3-4546-ba96-6ffd442a59ff",
@@ -631,6 +647,14 @@
             }
         },
         {
+            "Key": "69f75811-a957-4ae3-8c2a-8edbbdeda899",
+            "Value": {
+                "id": "19c0bc70-2500-4a82-9df7-6906063cecca",
+                "resourcePath": "objects\\shotLightShotgun_obj\\shotLightShotgun_obj.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "6a59bdf5-08f9-4039-8134-1797ed3d8ea6",
             "Value": {
                 "id": "72c65fb5-2af2-4da2-a0e0-a1181e00b058",
@@ -650,7 +674,7 @@
             "Key": "6a95b0d1-f6ff-423e-92d6-ecec989b354f",
             "Value": {
                 "id": "73a80de1-a7c1-4878-af8e-58c30c1cfa0c",
-                "resourcePath": "objects\\shotLight_obj\\shotLight_obj.yy",
+                "resourcePath": "objects\\shotLightPistol_obj\\shotLightPistol_obj.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -947,6 +971,14 @@
             "Value": {
                 "id": "250d87c5-f100-418c-8d39-f199edcf6415",
                 "resourcePath": "sprites\\particleRed_spr\\particleRed_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "9a7bee5c-5475-4435-b8f0-982a92be61c6",
+            "Value": {
+                "id": "dbe04c18-1a82-48c2-b733-23635eeb5495",
+                "resourcePath": "sprites\\explosionVerySmall_spr\\explosionVerySmall_spr.yy",
                 "resourceType": "GMSprite"
             }
         },
