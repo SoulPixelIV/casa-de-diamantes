@@ -604,7 +604,7 @@ if (keyboard_check(vk_shift))
 	if (slowmoTimer > 0)
 	{
 		slowmo = true;
-		slowmoTimer -= dt * 1.5;
+		slowmoTimer -= dt * 3;
 		global.timeScale = 0.2;
 		image_speed = 0.2;
 	}
@@ -614,7 +614,7 @@ else
 	slowmo = false;
 	if (slowmoTimer < slowmoTimerSave)
 	{
-		slowmoTimer += dt * 2;
+		slowmoTimer += dt * 3.5;
 	}
 	global.timeScale = 1;
 	image_speed = 1;
