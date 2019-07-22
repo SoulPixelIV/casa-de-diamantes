@@ -775,6 +775,14 @@
             }
         },
         {
+            "Key": "763981b0-e3d6-4909-8f8f-defcdaf8b31d",
+            "Value": {
+                "id": "7e25e8d8-9f70-4ceb-abf5-02a7e6718983",
+                "resourcePath": "sprites\\slowmoEnergyCircle_spr\\slowmoEnergyCircle_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "76a87d56-3096-417a-8b49-104ea72fadef",
             "Value": {
                 "id": "7b3b80f3-9be9-4e76-8721-eabdc0a059d3",
@@ -1348,14 +1356,6 @@
                 "id": "2eee738f-1090-4e1c-bf84-ab4a730625de",
                 "resourcePath": "sprites\\light_spr\\light_spr.yy",
                 "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "d4965e66-9845-41ea-9616-d7c564f19859",
-            "Value": {
-                "id": "43af1ddf-e2da-48bd-9f63-c8ae1e31d276",
-                "resourcePath": "fonts\\f_std\\f_std.yy",
-                "resourceType": "GMFont"
             }
         },
         {

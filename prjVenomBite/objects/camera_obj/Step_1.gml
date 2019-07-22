@@ -60,18 +60,18 @@ if (!noZoom && !player_obj.isZombie)
 		{
 			if (!zoomOut && !zoomIn)
 			{
-				viewX = 464;
-				viewY = 261;
+				viewX = 480;
+				viewY = 270;
 			}
 			if (zoomOut)
 			{
-				viewX = 720;
-				viewY = 405;
+				viewX = 736;
+				viewY = 414;
 			}
 			if (zoomIn)
 			{
-				viewX = 208;
-				viewY = 117;
+				viewX = 224;
+				viewY = 126;
 			}
 		}
 	}

@@ -601,13 +601,27 @@ if (isZombie && keyboard_check_pressed(ord("F")))
 //Slowmotion
 if (keyboard_check(vk_shift))
 {
-	slowmo = true;
-	global.timeScale = 0.2;
-	image_speed = 0.2;
+	if (slowmoTimer > 0)
+	{
+		slowmo = true;
+		slowmoTimer -= dt * 1.5;
+		global.timeScale = 0.2;
+		image_speed = 0.2;
+	}
 }
 else
 {
 	slowmo = false;
+	if (slowmoTimer < slowmoTimerSave)
+	{
+		slowmoTimer += dt * 2;
+	}
+	global.timeScale = 1;
+	image_speed = 1;
+}
+if (slowmoTimer < 30)
+{
+	slowmo = false
 	global.timeScale = 1;
 	image_speed = 1;
 }
