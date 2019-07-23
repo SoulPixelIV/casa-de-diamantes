@@ -327,6 +327,14 @@
             }
         },
         {
+            "Key": "2f5909f4-6aac-4f27-9f2e-98de8be26e5c",
+            "Value": {
+                "id": "0f681b55-c18f-4b5a-a176-95b91e397107",
+                "resourcePath": "rooms\\testLevel0\\testLevel0.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "31577ad6-f08e-44cf-803c-4d754f53e39c",
             "Value": {
                 "id": "00a05cab-ee53-4402-ab49-1d890819ded7",
@@ -547,6 +555,14 @@
             "Value": {
                 "id": "66fa070e-3954-4ddb-95e5-28acbd93e1fc",
                 "resourcePath": "sprites\\playerKnifeBuildup_spr\\playerKnifeBuildup_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "5822cec0-d5c3-4a4a-9c35-aee68f138406",
+            "Value": {
+                "id": "d07bf595-b086-46cf-bf6f-c2e209140043",
+                "resourcePath": "sprites\\debugBlock32x_spr\\debugBlock32x_spr.yy",
                 "resourceType": "GMSprite"
             }
         },
