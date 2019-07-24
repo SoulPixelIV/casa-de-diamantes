@@ -85,7 +85,7 @@ else
 }
 
 //Gravity
-if (verspeed < 14)
+if (verspeed < 14 && !onLadder)
 {
 	verspeed -= gravityStrength * dt;
 }
@@ -245,7 +245,33 @@ else
     y = savePosY;
     verSpeed = 0;
 }
-	
+
+//Ladder
+if (place_meeting(x, y, ladder_obj))
+{
+	onLadder = true;
+}
+else
+{
+	onLadder = false;
+}
+
+if (onLadder)
+{
+	if (keyboard_check(ord("W")))
+	{
+		verspeed = -1;
+	}
+	else if (keyboard_check(ord("S")))
+	{
+		verspeed = 1;
+	}
+	else
+	{
+		verspeed = 0;
+	}
+}
+
 //###Weapon System###
 dirCursor = point_direction(x, y, mouse_x, mouse_y);
 if (keyboard_check(vk_left))

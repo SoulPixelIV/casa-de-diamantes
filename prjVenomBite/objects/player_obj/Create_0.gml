@@ -17,11 +17,12 @@ slowmoTimer = 400;
 gravityStrength = -0.42;
 jumpStrength = 7.6;
 shotJumpStrength = 9.2;
-frictionStrength = 0.2; //Lower is more slippery
+frictionStrength = 0.3; //Lower is more slippery
 fallJumpSafety = 9;
 damageCooldown = 60;
 movement = true;
 invincible = false;
+onLadder = false;
 isZombie = false;
 currDir = 0;
 
