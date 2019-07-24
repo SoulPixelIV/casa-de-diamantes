@@ -153,12 +153,9 @@ if (!grounded && !isZombie && slowmo && !spin && !unarmed && horspeed != 0)
 	sprite_index = playerFlip_spr;
 	flip = true;
 }
-else
+if (grounded)
 {
-	if (grounded)
-	{
-		flip = false;
-	}
+	flip = false;
 }
 
 //Jump Spin
@@ -167,12 +164,9 @@ if (!grounded && !isZombie && !flip && !unarmed && horspeed == 0)
 	sprite_index = playerJumpSpin_spr;
 	spin = true;
 }
-else
+if (grounded)
 {
-	if (grounded)
-	{
-		spin = false;
-	}
+	spin = false;
 }
 /*
 if (spin)
