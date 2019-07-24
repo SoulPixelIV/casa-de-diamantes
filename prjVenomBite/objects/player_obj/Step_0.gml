@@ -354,103 +354,112 @@ if (!isZombie)
 	//Pistol
 	if (key_shoot && global.pickedWeapon[0] && global.pistolCooldown <= 0)
 	{
-		//Check Ammo
-		if (global.pistolAmmo > 0)
+		if (!onLadder || onLadder && verspeed == 0)
 		{
-			audio_play_sound(pistolShot_snd, 1, false);
-		
-			var shotLightx = x + lengthdir_x(24, dirCursor);
-			var shotLighty = y - 8 + lengthdir_y(24, dirCursor);
-			instance_create_layer(playerBulletLine_obj.x, playerBulletLine_obj.y, "Instances", bulletPistol_obj);
-			instance_create_layer(shotLightx, shotLighty, "ForegroundObjects", shotLightPistol_obj);
-			instance_create_layer(shotLightx, shotLighty, "ForegroundObjects", smokecloud_obj);
-		
-			if (!huggingWall)
+			//Check Ammo
+			if (global.pistolAmmo > 0)
 			{
-				if (image_xscale == 1)
+				audio_play_sound(pistolShot_snd, 1, false);
+		
+				var shotLightx = x + lengthdir_x(24, dirCursor);
+				var shotLighty = y - 8 + lengthdir_y(24, dirCursor);
+				instance_create_layer(playerBulletLine_obj.x, playerBulletLine_obj.y, "Instances", bulletPistol_obj);
+				instance_create_layer(shotLightx, shotLighty, "ForegroundObjects", shotLightPistol_obj);
+				instance_create_layer(shotLightx, shotLighty, "ForegroundObjects", smokecloud_obj);
+		
+				if (!huggingWall)
 				{
-					horspeed = -1;
+					if (image_xscale == 1)
+					{
+						horspeed = -1;
+					}
+					else
+					{
+						horspeed = 1;
+					}
 				}
-				else
-				{
-					horspeed = 1;
-				}
+				global.pistolAmmo--;
+				global.pistolCooldown = global.pistolCooldownSave;
 			}
-			global.pistolAmmo--;
-			global.pistolCooldown = global.pistolCooldownSave;
 		}
 	}
 
 	//Dual Barettas
 	if (key_shoot && global.pickedWeapon[1] && global.dualBarettasCooldown <= 0)
 	{
-		//Check Ammo
-		if (global.dualBarettasAmmo > 0)
+		if (!onLadder || onLadder && verspeed == 0)
 		{
-			audio_play_sound(dualBarettasShot_snd, 1, false);
-		
-			var shotLightx = x + lengthdir_x(24, dirCursor);
-			var shotLighty = y - 8 + lengthdir_y(24, dirCursor);
-			instance_create_layer(playerBulletLine_obj.x + 10, playerBulletLine_obj.y, "Instances", bulletDualBarettas_obj);
-			instance_create_layer(shotLightx, shotLighty, "ForegroundObjects", shotLightDualBarettas_obj);
-			instance_create_layer(shotLightx, shotLighty, "ForegroundObjects", smokecloud_obj);
-		
-			if (!huggingWall)
+			//Check Ammo
+			if (global.dualBarettasAmmo > 0)
 			{
-				if (image_xscale == 1)
+				audio_play_sound(dualBarettasShot_snd, 1, false);
+		
+				var shotLightx = x + lengthdir_x(24, dirCursor);
+				var shotLighty = y - 8 + lengthdir_y(24, dirCursor);
+				instance_create_layer(playerBulletLine_obj.x + 10, playerBulletLine_obj.y, "Instances", bulletDualBarettas_obj);
+				instance_create_layer(shotLightx, shotLighty, "ForegroundObjects", shotLightDualBarettas_obj);
+				instance_create_layer(shotLightx, shotLighty, "ForegroundObjects", smokecloud_obj);
+		
+				if (!huggingWall)
 				{
-					horspeed = -2;
+					if (image_xscale == 1)
+					{
+						horspeed = -2;
+					}
+					else
+					{
+						horspeed = 2;
+					}
 				}
-				else
-				{
-					horspeed = 2;
-				}
+				global.dualBarettasAmmo--;
+				global.dualBarettasCooldown = global.dualBarettasCooldownSave;
 			}
-			global.dualBarettasAmmo--;
-			global.dualBarettasCooldown = global.dualBarettasCooldownSave;
 		}
 	}
 
 	//Shotgun
 	if (key_shoot && global.pickedWeapon[2] && global.shotgunCooldown <= 0)
 	{
-		//Check Ammo
-		if (global.shotgunAmmo > 0)
+		if (!onLadder || onLadder && verspeed == 0)
 		{
-			audio_play_sound(shotgunShot_snd, 1, false);
-		
-		
-			var shotLightx = x + lengthdir_x(24, dirCursor);
-			var shotLighty = y - 8 + lengthdir_y(24, dirCursor);
-			instance_create_layer(playerBulletLine_obj.x + 10, playerBulletLine_obj.y, "Instances", bulletShotgun_obj);
-			instance_create_layer(shotLightx, shotLighty, "ForegroundObjects", shotLightShotgun_obj);
-			instance_create_layer(shotLightx, shotLighty, "ForegroundObjects", smokecloud_obj);
-		
-			if (!huggingWall)
+			//Check Ammo
+			if (global.shotgunAmmo > 0)
 			{
-				if (dirCursor > 310 || dirCursor < 50)
-				{
-					horspeed -= 6;
-				}
-				else if (dirCursor > 130 && dirCursor < 230)
-				{
-					horspeed += 6;
-				}
-				else if (image_xscale == 1)
-				{
-					horspeed -= 3;
-				}
-				else
-				{
-					horspeed += 3;
-				}
-			}
-			global.shotgunAmmo--;
-			global.shotgunCooldown = global.shotgunCooldownSave;
+				audio_play_sound(shotgunShot_snd, 1, false);
 		
-			if (dirCursor > 225 && dirCursor < 320)
-			{
-				verspeed = -shotJumpStrength;
+		
+				var shotLightx = x + lengthdir_x(24, dirCursor);
+				var shotLighty = y - 8 + lengthdir_y(24, dirCursor);
+				instance_create_layer(playerBulletLine_obj.x + 10, playerBulletLine_obj.y, "Instances", bulletShotgun_obj);
+				instance_create_layer(shotLightx, shotLighty, "ForegroundObjects", shotLightShotgun_obj);
+				instance_create_layer(shotLightx, shotLighty, "ForegroundObjects", smokecloud_obj);
+		
+				if (!huggingWall)
+				{
+					if (dirCursor > 310 || dirCursor < 50)
+					{
+						horspeed -= 6;
+					}
+					else if (dirCursor > 130 && dirCursor < 230)
+					{
+						horspeed += 6;
+					}
+					else if (image_xscale == 1)
+					{
+						horspeed -= 3;
+					}
+					else
+					{
+						horspeed += 3;
+					}
+				}
+				global.shotgunAmmo--;
+				global.shotgunCooldown = global.shotgunCooldownSave;
+		
+				if (dirCursor > 225 && dirCursor < 320)
+				{
+					verspeed = -shotJumpStrength;
+				}
 			}
 		}
 	}
