@@ -287,7 +287,7 @@ if (keyboard_check(vk_down))
 
 if (global.pickedWeapon[0] || global.pickedWeapon[1] || global.pickedWeapon[2])
 {
-	if (grounded)
+	if (grounded || onLadder)
 	{
 		if (!isZombie)
 		{
@@ -315,7 +315,7 @@ if (global.pickedWeapon[0] || global.pickedWeapon[1] || global.pickedWeapon[2])
 }
 else
 {
-	if (grounded)
+	if (grounded || onLadder)
 	{
 		if (!isZombie)
 		{
