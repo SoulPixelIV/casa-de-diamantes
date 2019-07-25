@@ -1351,6 +1351,14 @@
             }
         },
         {
+            "Key": "cd01481f-ed50-4552-9579-20ec30216b4e",
+            "Value": {
+                "id": "0a4c5fdd-fc43-4884-900e-29257e1d9711",
+                "resourcePath": "sprites\\playerClimbing_spr\\playerClimbing_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "ce9d59ef-e7e4-473c-aa32-94145f89ea01",
             "Value": {
                 "id": "6c69dc7f-8a36-4a6e-bba1-1744cc073e2b",

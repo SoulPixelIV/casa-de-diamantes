@@ -287,9 +287,9 @@ if (keyboard_check(vk_down))
 
 if (global.pickedWeapon[0] || global.pickedWeapon[1] || global.pickedWeapon[2])
 {
-	if (grounded || onLadder)
+	if (grounded)
 	{
-		if (!isZombie)
+		if (!isZombie && !onLadder)
 		{
 			if (horspeed != 0)
 			{
@@ -315,9 +315,9 @@ if (global.pickedWeapon[0] || global.pickedWeapon[1] || global.pickedWeapon[2])
 }
 else
 {
-	if (grounded || onLadder)
+	if (grounded)
 	{
-		if (!isZombie)
+		if (!isZombie && !onLadder)
 		{
 			if (horspeed != 0)
 			{
@@ -346,6 +346,24 @@ else
 				}
 			}
 		}
+	}
+}
+if (onLadder && !isZombie)
+{
+	if (verspeed == 0)
+	{
+		if (global.pickedWeapon[0] || global.pickedWeapon[1] || global.pickedWeapon[2])
+		{
+			sprite_index = playerEquipped_spr;
+		}
+		else
+		{
+			sprite_index = player_spr;
+		}
+	}
+	else
+	{
+		sprite_index = playerClimbing_spr;
 	}
 }
 
