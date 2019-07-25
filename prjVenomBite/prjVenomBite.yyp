@@ -1215,6 +1215,14 @@
             }
         },
         {
+            "Key": "b6debe15-d9d4-443f-bc90-93f533b9d12a",
+            "Value": {
+                "id": "dcdc6404-8482-4f54-bac4-81f3ff242cf3",
+                "resourcePath": "fonts\\standard_fnt\\standard_fnt.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
             "Key": "baa1fe17-cd4c-439a-83ea-31a7a826be1d",
             "Value": {
                 "id": "c158dd32-c6b4-439e-b70c-10f0a1d5d8cb",
@@ -1644,6 +1652,14 @@
                 "id": "004050a2-9ce3-4aa0-af71-6ac6af253c28",
                 "resourcePath": "objects\\ledBarRed_obj\\ledBarRed_obj.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "fb312a06-1fe7-4eb6-8570-9490112ff105",
+            "Value": {
+                "id": "66810d11-6025-4ce7-9f98-2e9a02d84006",
+                "resourcePath": "sprites\\enemyPointer_spr\\enemyPointer_spr.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

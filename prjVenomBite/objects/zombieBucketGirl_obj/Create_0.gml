@@ -3,6 +3,7 @@
 horspeed = 0;
 verspeed = 0;
 hp = 225;
+level = 2;
 hpBucket = 75;
 damage = 35;
 points = 125;

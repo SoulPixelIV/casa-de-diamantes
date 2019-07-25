@@ -3,6 +3,7 @@
 horspeed = 0;
 verspeed = 0;
 hp = 85;
+level = 2;
 attackCooldown = 150;
 damage = 5;
 points = 125;
