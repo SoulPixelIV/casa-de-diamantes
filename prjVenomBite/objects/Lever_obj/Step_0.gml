@@ -6,5 +6,10 @@ if (distance_to_object(player_obj) < 32)
 	{
 		image_index = 1;
 		used = true;
+		
+		if (instance_exists(gate_obj))
+		{
+			gate_obj.open = true;
+		}
 	}
 }
