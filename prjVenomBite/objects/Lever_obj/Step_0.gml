@@ -9,7 +9,8 @@ if (distance_to_object(player_obj) < 32)
 		
 		if (instance_exists(gate_obj))
 		{
-			gate_obj.open = true;
+			gate = instance_nearest(x, y, gate_obj);
+			gate.open = true;
 		}
 	}
 }

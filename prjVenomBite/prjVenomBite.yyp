@@ -615,6 +615,14 @@
             }
         },
         {
+            "Key": "5b83be12-279c-4901-b30d-c4a473b55fe2",
+            "Value": {
+                "id": "f8894b73-9ddb-46c7-9c27-99b9238fc9a8",
+                "resourcePath": "objects\\gate2_obj\\gate2_obj.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "5baed84c-7459-457c-9b69-252e0ac18446",
             "Value": {
                 "id": "30292c16-5cbc-43ab-a43a-885fcc4fec31",
