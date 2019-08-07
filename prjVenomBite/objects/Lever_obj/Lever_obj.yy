@@ -2,7 +2,7 @@
     "id": "f35e5ca1-523d-4fb8-aa3b-56ee865c2d0b",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "Lever_obj",
+    "name": "lever_obj",
     "eventList": [
         {
             "id": "d9620511-d6be-4ea4-9bed-d4727c6989ed",

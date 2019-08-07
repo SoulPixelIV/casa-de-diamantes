@@ -967,6 +967,14 @@
             }
         },
         {
+            "Key": "8cd24f7f-5784-4cb6-a109-370956343c6f",
+            "Value": {
+                "id": "0f3b43eb-7ca2-4d42-ba15-e3f2159d6c0a",
+                "resourcePath": "objects\\triggerBlockA_obj\\triggerBlockA_obj.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "8d3820be-cc47-4a4c-98e9-a339d0c5aea0",
             "Value": {
                 "id": "3eb1fc83-7ace-44e8-9146-de4db17b95d2",
@@ -1642,7 +1650,7 @@
             "Key": "f35e5ca1-523d-4fb8-aa3b-56ee865c2d0b",
             "Value": {
                 "id": "a524fe7a-0dd2-473f-acae-f85388f2e8cb",
-                "resourcePath": "objects\\Lever_obj\\Lever_obj.yy",
+                "resourcePath": "objects\\lever_obj\\lever_obj.yy",
                 "resourceType": "GMObject"
             }
         },
