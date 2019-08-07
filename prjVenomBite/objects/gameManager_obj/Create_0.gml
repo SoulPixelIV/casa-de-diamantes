@@ -7,12 +7,12 @@ multiplierRun = false;
 
 global.pistolAmmo = 0;
 global.pistolMag = 0;
-global.pistolCooldown = 1.75;
+global.pistolCooldown = 0.75;
 global.pistolCooldownSave = global.pistolCooldown;
 
 global.dualBarettasAmmo = 0;
 global.dualBarettasMag = 0;
-global.dualBarettasCooldown = 0.75;
+global.dualBarettasCooldown = 0.45;
 global.dualBarettasCooldownSave = global.dualBarettasCooldown;
 
 global.shotgunAmmo = 0;
