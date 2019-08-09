@@ -398,6 +398,7 @@ if (!isZombie)
 				}
 				global.pistolAmmo--;
 				global.pistolCooldown = global.pistolCooldownSave;
+				shotZoom = true;
 			}
 		}
 	}
@@ -431,6 +432,7 @@ if (!isZombie)
 				}
 				global.dualBarettasAmmo--;
 				global.dualBarettasCooldown = global.dualBarettasCooldownSave;
+				shotZoom = true;
 			}
 		}
 	}
@@ -473,6 +475,7 @@ if (!isZombie)
 				}
 				global.shotgunAmmo--;
 				global.shotgunCooldown = global.shotgunCooldownSave;
+				shotZoom = true;
 		
 				if (dirCursor > 225 && dirCursor < 320)
 				{
@@ -481,6 +484,17 @@ if (!isZombie)
 			}
 		}
 	}
+}
+
+//ShotZoom
+if (shotZoom)
+{
+	shotZoomTimer -= dt;
+}
+if (shotZoomTimer < 0)
+{
+	shotZoom = false;
+	shotZoomTimer = shotZoomTimerSave;
 }
 
 //Shot Cooldown
@@ -671,4 +685,15 @@ if (slowmoTimer < 30)
 	slowmo = false
 	global.timeScale = 1;
 	image_speed = 1;
+}
+if (enemySlowmo)
+{
+	enemySlowmoTimer -= dt;
+	global.timeScale = 0.05;
+}
+if (enemySlowmoTimer < 0)
+{
+	enemySlowmoTimer = enemySlowmoTimerSave;
+	enemySlowmo = false;
+	global.timeScale = 1;
 }

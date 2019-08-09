@@ -51,7 +51,7 @@ if (!noZoom && !player_obj.isZombie)
 			viewY = 144;
 		}
 		
-		if (!zoomIn && !zoomOut && !player_obj.slowmo) //Normal View
+		if (!zoomIn && !zoomOut && !player_obj.slowmo && !player_obj.shotZoom) //Normal View
 		{
 			viewX = 512;
 			viewY = 288;
@@ -72,6 +72,24 @@ if (!noZoom && !player_obj.isZombie)
 			{
 				viewX = 224;
 				viewY = 126;
+			}
+		}
+		if (player_obj.shotZoom) //Slowmo
+		{
+			if (!zoomOut && !zoomIn)
+			{
+				viewX = 496;
+				viewY = 279;
+			}
+			if (zoomOut)
+			{
+				viewX = 752;
+				viewY = 423;
+			}
+			if (zoomIn)
+			{
+				viewX = 240;
+				viewY = 135;
 			}
 		}
 	}

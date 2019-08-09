@@ -10,6 +10,9 @@ xCoor = 100;
 yCoor = 100;
 
 zoomCooldown = 300;
+vignetteStrength = 1;
+vignetteStrengthTimer = 12;
+vignetteStrengthTimerSave = vignetteStrengthTimer;
 scoreShakeLength = 80;
 scoreMovementSpeed = 0.2;
 scoreMovementMax = 1;

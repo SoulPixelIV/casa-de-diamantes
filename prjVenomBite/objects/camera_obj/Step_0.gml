@@ -15,3 +15,17 @@ with (player_obj)
 		camera_obj.zoomOut = false;
 	}
 }
+
+//VignetteStrength
+dt = (delta_time / 1000000) * globalSettings_obj.TARGET_FRAMERATE;
+
+if (vignetteStrength != 1)
+{
+	vignetteStrengthTimer -= dt;
+}
+
+if (vignetteStrengthTimer < 0)
+{
+	vignetteStrength = 1;
+	vignetteStrengthTimer = vignetteStrengthTimerSave;
+}

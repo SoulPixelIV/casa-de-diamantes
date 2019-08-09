@@ -110,7 +110,7 @@ if (deathVignette)
 }
 else
 {
-	draw_set_alpha(0.075);
+	draw_set_alpha(0.075 * vignetteStrength);
 	draw_ellipse_colour(-200, -200, 1480, 920, c_black , c_purple, false);
 	draw_set_alpha(1);
 }
