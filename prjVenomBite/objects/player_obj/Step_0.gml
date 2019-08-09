@@ -254,11 +254,11 @@ if (onLadder)
 {
 	if (keyboard_check(ord("W")))
 	{
-		verspeed = -1;
+		verspeed = -2;
 	}
 	else if (keyboard_check(ord("S")))
 	{
-		verspeed = 1;
+		verspeed = 2;
 	}
 	else
 	{
