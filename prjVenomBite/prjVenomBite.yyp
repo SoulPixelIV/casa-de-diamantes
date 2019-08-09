@@ -1527,6 +1527,14 @@
             }
         },
         {
+            "Key": "de8361f0-b6c1-43af-b51c-317511e9b41f",
+            "Value": {
+                "id": "e6bff460-2ef4-417f-9705-51973e6e6421",
+                "resourcePath": "sprites\\ammoPackDualBarettas_spr\\ammoPackDualBarettas_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "defa5a9f-7ba1-4afe-90bb-71d299d6a0f2",
             "Value": {
                 "id": "661f327c-26e3-4aad-915f-d6ef78f0c7a5",
