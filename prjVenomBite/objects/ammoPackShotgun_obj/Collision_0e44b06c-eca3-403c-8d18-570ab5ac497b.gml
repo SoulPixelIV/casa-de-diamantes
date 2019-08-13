@@ -1,4 +1,4 @@
 /// @description Pickup
 
-global.pistolMag += 18;
+global.shotgunMag += 8;
 instance_destroy();

@@ -55,6 +55,14 @@
             }
         },
         {
+            "Key": "03323ae0-9d13-4571-a7bb-244f1d01bbff",
+            "Value": {
+                "id": "2b01d6d1-56a6-4a27-bb11-10c9df986bb1",
+                "resourcePath": "objects\\ammoPackDualBarettas_obj\\ammoPackDualBarettas_obj.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "044ef8c7-5ebc-4829-885e-30a9b8385f37",
             "Value": {
                 "id": "1d92e7e2-51b2-4aed-bc32-fceb7013836e",
@@ -1591,6 +1599,14 @@
             }
         },
         {
+            "Key": "e7491fb8-dba2-4fa1-b8f3-5b92acd90319",
+            "Value": {
+                "id": "2079a11f-7555-41f1-b358-f2b8a87beeab",
+                "resourcePath": "sprites\\ammoPackShotgun_spr\\ammoPackShotgun_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "e80a431e-bb38-48d3-a5b7-8ff4c6666842",
             "Value": {
                 "id": "5c9a53ef-2f5f-46e7-8621-6cbb89d8db27",
@@ -1652,6 +1668,14 @@
                 "id": "b5fee7e7-0b12-4e98-808f-7851d8acfb38",
                 "resourcePath": "sprites\\playerBulletLine_spr\\playerBulletLine_spr.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "f09d3b6c-b357-42a2-8dd1-2fbfa6e61142",
+            "Value": {
+                "id": "a2eda861-ab06-43c3-98f1-86152ab62176",
+                "resourcePath": "objects\\ammoPackShotgun_obj\\ammoPackShotgun_obj.yy",
+                "resourceType": "GMObject"
             }
         },
         {
