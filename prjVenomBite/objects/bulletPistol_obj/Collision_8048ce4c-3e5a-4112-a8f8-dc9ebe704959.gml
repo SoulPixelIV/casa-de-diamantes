@@ -7,9 +7,12 @@ with (hitbox)
 if (!dealtDamage)
 {
 	enemyTarget.hp -= 2;
-	if (enemyTarget.hpBucket != noone)
+	if (enemyTarget == zombieBucketGirl_obj)
 	{
-		enemyTarget.hpBucket -= 5;
+		if (enemyTarget.hpBucket != noone)
+		{
+			enemyTarget.hpBucket -= 5;
+		}
 	}
 	dealtDamage = true;
 	audio_play_sound(bucketHit_snd, 1, false);
