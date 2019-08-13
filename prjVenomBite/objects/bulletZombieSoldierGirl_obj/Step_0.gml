@@ -1,10 +1,7 @@
 /// @description Movement
 
 dt = (delta_time / 1000000) * globalSettings_obj.TARGET_FRAMERATE;
-
-x += (lengthdir_x(movSpeed, dir)) * dt;
-y += (lengthdir_y(movSpeed, dir)) * dt;
-image_angle = dir;
+speed = movSpeed * dt;
 
 //Collision
 if (!place_free(x, y))
