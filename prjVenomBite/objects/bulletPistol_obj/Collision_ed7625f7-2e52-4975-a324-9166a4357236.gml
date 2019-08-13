@@ -7,6 +7,12 @@ with (hitbox)
 if (!dealtDamage)
 {
 	enemyTarget.hp -= 40;
-	instance_change(bloodSpread_obj, true);
+	instance_create_layer(x, y, "Instances", bloodSpread_obj);
+	penetration--;
 	dealtDamage = true;
+}
+
+if (penetration < 1)
+{
+	instance_change(bloodSpread_obj, true);
 }

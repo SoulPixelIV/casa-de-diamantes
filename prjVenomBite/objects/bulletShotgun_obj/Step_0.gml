@@ -11,3 +11,13 @@ if (!place_free(x, y))
 {
 	instance_change(bulletHit_obj, true);
 }
+
+if (dealtDamage)
+{
+	penetrationTime -= dt;
+}
+if (penetrationTime < 0)
+{
+	dealtDamage = false;
+	penetrationTime = 3;
+}
