@@ -6,15 +6,15 @@ x += horspeed * dt;
 y += verspeed * dt;
 
 dirLookat = point_direction(x, y, player_obj.x, player_obj.y);
-if (distance_to_object(player_obj) < 256 && distance_to_object(player_obj) > 64)
+if (distance_to_object(player_obj) < 64 && distance_to_object(player_obj) > 16)
 {
 	if (player_obj.x > x)
 	{
-		horspeed = movSpeed;
+		horspeed = -movSpeed;
 	}
 	else
 	{
-		horspeed = -movSpeed;
+		horspeed = movSpeed;
 	}
 	if (dirLookat > 90 && dirLookat < 270)
 	{
