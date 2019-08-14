@@ -783,6 +783,14 @@
             }
         },
         {
+            "Key": "6a986448-64db-4a4f-9edd-efd3516ea7ed",
+            "Value": {
+                "id": "d06e3bf8-375c-4b49-a9e9-80e0d7def772",
+                "resourcePath": "sprites\\cavernBackground_spr\\cavernBackground_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "6b00aa22-4c1b-4345-bf6e-d3c223f86fbd",
             "Value": {
                 "id": "738d93a8-127c-4e42-bc9e-ea1049252ee6",
@@ -1476,6 +1484,14 @@
                 "id": "3098cf7e-8347-4f46-9cc4-09a9ce1d3124",
                 "resourcePath": "views\\d2242a0d-fedb-4699-8c00-6a0e1cb72e94.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "d27aef85-67c2-4c44-9a81-0e354357e41a",
+            "Value": {
+                "id": "e3cd71d6-3a55-4dc2-b346-0b3829b9f7a0",
+                "resourcePath": "sprites\\redOceanBackground_spr\\redOceanBackground_spr.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

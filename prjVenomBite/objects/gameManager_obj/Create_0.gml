@@ -27,4 +27,3 @@ global.pickedWeapon[2] = false;
 global.unlockedWeapon[0] = false;
 global.unlockedWeapon[1] = false;
 global.unlockedWeapon[2] = false;
-
