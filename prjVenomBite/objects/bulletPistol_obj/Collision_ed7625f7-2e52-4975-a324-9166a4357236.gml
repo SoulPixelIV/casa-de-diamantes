@@ -8,6 +8,7 @@ if (!dealtDamage)
 {
 	enemyTarget.hp -= 40;
 	instance_create_layer(x, y, "Instances", bloodSpread_obj);
+	audio_play_sound(bulletHitHeadshot_snd, 1, false);
 	penetration--;
 	dealtDamage = true;
 }

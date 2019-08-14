@@ -519,6 +519,14 @@
             }
         },
         {
+            "Key": "44757509-a35e-4231-833c-4e1e0902b58d",
+            "Value": {
+                "id": "eee8146b-9d48-47df-bc2c-cba9742630b2",
+                "resourcePath": "sounds\\bulletHitHeadshot_snd\\bulletHitHeadshot_snd.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "44f9f782-399d-4660-aeb4-af144715a291",
             "Value": {
                 "id": "ba27312c-243d-4c06-8265-045b7ffc469d",
