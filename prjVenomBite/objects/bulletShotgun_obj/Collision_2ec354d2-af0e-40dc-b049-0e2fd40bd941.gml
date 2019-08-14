@@ -4,6 +4,7 @@ if (!dealtDamage)
 	enemyTarget.hp -= 85;
 	penetration--;
 	instance_create_layer(x, y, "Instances", bloodSpread_obj);
+	audio_play_sound(bulletHit_snd, 1, false);
 	dealtDamage = true;
 }
 

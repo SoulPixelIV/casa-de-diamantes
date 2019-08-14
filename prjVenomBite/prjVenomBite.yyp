@@ -1623,6 +1623,14 @@
             }
         },
         {
+            "Key": "e2a5dfcd-ca5c-44d5-8483-8fffd39a3541",
+            "Value": {
+                "id": "f624fc60-7a79-409e-ad9f-62760bdb2e7e",
+                "resourcePath": "sounds\\bulletHit_snd\\bulletHit_snd.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "e3007b1f-e6cd-4a99-88f1-30f00368a107",
             "Value": {
                 "id": "5b940e56-6d48-4dbf-8c3a-c2f21b84db39",
