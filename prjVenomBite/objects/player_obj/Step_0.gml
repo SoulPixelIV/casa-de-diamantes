@@ -113,7 +113,7 @@ if (movement && !isZombie && wallJumps > 0)
 	if (huggingWall && key_jump && !grounded)
 	{
 		wallJumping = true;
-		verspeed = -jumpStrength / 1.3;
+		verspeed = -jumpStrength * 1.1;
 		
 		if (key_right)
 		{
