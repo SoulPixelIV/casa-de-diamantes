@@ -103,6 +103,14 @@
             }
         },
         {
+            "Key": "09c27d0c-1bdc-47f0-b488-71705b5f548c",
+            "Value": {
+                "id": "e727e424-50ef-4191-9a80-582870d51003",
+                "resourcePath": "rooms\\blackJackTable\\blackJackTable.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "0d0bd69a-659c-467b-b7aa-1e6280e37644",
             "Value": {
                 "id": "3f883fd8-256a-40a2-8fc7-77ee30b63761",
@@ -479,6 +487,14 @@
             }
         },
         {
+            "Key": "419b40e8-0932-4306-b4e4-73c735e3a71d",
+            "Value": {
+                "id": "790f1c66-d0ae-4c61-b730-e3db60775737",
+                "resourcePath": "objects\\blackJackCalc_obj\\blackJackCalc_obj.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "431fc4bd-f8ff-4b39-ac5c-272af2a98041",
             "Value": {
                 "id": "058e55b9-f9a2-4ba7-8c4f-a612e39dbb2a",
@@ -663,6 +679,14 @@
             }
         },
         {
+            "Key": "5dbfe7f8-d999-4f60-abb0-4207afaf69bd",
+            "Value": {
+                "id": "b8ddc328-19f7-4da2-81eb-8874a822b0c9",
+                "resourcePath": "sprites\\blackjackHitButton_spr\\blackjackHitButton_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "6027fbf5-a7f5-4b43-84ed-1b516870516a",
             "Value": {
                 "id": "c9d8d51a-1626-4a12-8a88-c9d20467a833",
@@ -684,6 +708,14 @@
                 "id": "b821d322-5d4f-4095-995c-a6003cb2d1ab",
                 "resourcePath": "views\\6198de6d-3e57-44b1-8d7c-e9bf48e92c18.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "62cbd05f-4144-404f-8a59-621e7e36470b",
+            "Value": {
+                "id": "f31f8f9e-934a-472b-9e14-b3fe40c0ec7b",
+                "resourcePath": "sprites\\blackjackStandButton_spr\\blackjackStandButton_spr.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -915,6 +947,14 @@
             "Value": {
                 "id": "82cf03a4-2630-4c01-9b56-015ef772e57a",
                 "resourcePath": "objects\\explosionSmall_obj\\explosionSmall_obj.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "78c02517-326a-496f-ab68-166a9778149f",
+            "Value": {
+                "id": "1dd6c0d2-fc4e-44e1-b1a5-3849c4110f77",
+                "resourcePath": "objects\\blackjackHitButton_obj\\blackjackHitButton_obj.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -1484,6 +1524,14 @@
                 "id": "49e34126-cc53-48f6-bdb9-8d65def807d4",
                 "resourcePath": "sprites\\discordLEDLogo_spr\\discordLEDLogo_spr.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "d155eecc-581b-4bf7-9691-17b230c264f2",
+            "Value": {
+                "id": "de1372aa-680f-43ba-8457-5bcbb32b91a4",
+                "resourcePath": "objects\\blackjackStandButton_obj\\blackjackStandButton_obj.yy",
+                "resourceType": "GMObject"
             }
         },
         {
