@@ -30,6 +30,12 @@ if (!noHUD)
 	draw_sprite_ext(windowBackground_spr, 0, 1168, 520, 1, 1, rotation, -1, 1);
 	draw_sprite_ext(healthbarBorder_spr, 0, 32, 48, 1, 1, 0, -1, 1);
 	draw_sprite_ext(healthbar_spr, 0, 32, 48, player_obj.hp / 100, 1, 0, -1, 1);
+	
+	if (player_obj.plagueTransformation)
+	{
+		draw_sprite_ext(infectionbarBorder_spr, 0, 256, 128, 1, 1, 0, -1, 1);
+		draw_sprite_ext(infectionbar_spr, 0, 256, 128, player_obj.infection / 100, 1, 0, -1, 1);
+	}
 
 	//Score
 	draw_set_font(neonBig_fnt);

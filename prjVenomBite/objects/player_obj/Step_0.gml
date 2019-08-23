@@ -638,11 +638,12 @@ if (hp < 0)
 		maxhp -= 25;
 		invincible = true;
 		isZombie = true;
+		audio_play_sound(infectedVoice_snd, 1, false);
 	}
 }
 
 //Zombie
-if (isZombie)
+if (isZombie && !plagueTransformation)
 {
 	zombieTimer -= dt;
 }
@@ -652,11 +653,17 @@ if (zombieTimer < 0)
 	invincible = false;
 	zombieTimer = zombieTimerSave;
 }
-if (isZombie && keyboard_check_pressed(ord("F")))
+if (isZombie && keyboard_check_pressed(ord("F")) && !plagueTransformation)
 {
 	isZombie = false;
 	invincible = false;
 	zombieTimer = zombieTimerSave;
+}
+
+//Plague
+if (plagueTransformation)
+{
+	infection += dt / 15;
 }
 
 //Slowmotion

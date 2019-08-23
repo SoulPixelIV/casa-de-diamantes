@@ -3,6 +3,7 @@
 horspeed = 0;
 verspeed = 0;
 hp = 100;
+infection = 0;
 maxhp = hp;
 syringes = 3;
 syringesLost = 0;
@@ -24,6 +25,7 @@ movement = true;
 invincible = false;
 onLadder = false;
 isZombie = false;
+plagueTransformation = false;
 shotZoom = false;
 enemySlowmo = false;
 currDir = 0;
