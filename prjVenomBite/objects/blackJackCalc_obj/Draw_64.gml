@@ -1,11 +1,14 @@
-for (i = 0; i <= dealerPhase; i++)
+for (i = 0; i < dealerPhase; i++)
 {
 	draw_text(256 + i * 32, 256, dealerDeck[i]);
 }
-for (i = 0; i <= playerPhase; i++)
+for (i = 0; i < playerPhase; i++)
 {
 	draw_text(256 + i * 32, 356, playerDeck[i]);
 }
+
+draw_text(150, 256, dealerSum);
+draw_text(150, 356, playerSum);
 
 if (dealerVisible)
 {
