@@ -1463,6 +1463,14 @@
             }
         },
         {
+            "Key": "bed280b1-1da2-45dd-a633-0b5be8b529b5",
+            "Value": {
+                "id": "c7479c7f-3c89-46eb-96df-08bc7875044a",
+                "resourcePath": "objects\\desinfectionDoor_obj\\desinfectionDoor_obj.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "bf035cae-92c7-4827-8093-109be55e5c17",
             "Value": {
                 "id": "88131713-9b05-41d7-bff5-d23240e955c1",
@@ -1532,6 +1540,14 @@
                 "id": "66f0976a-5662-4601-a602-5765da76532d",
                 "resourcePath": "views\\c93b2719-5e44-4d3e-a724-aef3a6969f46.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "cbaaff9b-943f-4033-a31c-19c04b3d2d3e",
+            "Value": {
+                "id": "29ce4ff7-770b-499d-a519-76787b62c3af",
+                "resourcePath": "sprites\\desinfectionDoor_spr\\desinfectionDoor_spr.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
