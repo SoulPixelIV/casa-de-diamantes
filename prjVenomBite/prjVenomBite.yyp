@@ -1255,6 +1255,14 @@
             }
         },
         {
+            "Key": "9e8cbf35-b0be-4630-80ce-6d532f943618",
+            "Value": {
+                "id": "a814c0ea-a25a-4fe5-a359-a5de79934f9f",
+                "resourcePath": "sprites\\playerDash_spr\\playerDash_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "9efd1501-6fa9-4126-9730-aef5ca6dfef9",
             "Value": {
                 "id": "e7fa34dc-d63d-4bc7-9f96-120dc81ff299",
