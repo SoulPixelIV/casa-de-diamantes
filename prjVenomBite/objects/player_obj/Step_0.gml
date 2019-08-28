@@ -168,6 +168,23 @@ if (grounded)
 {
 	spin = false;
 }
+
+//Dash
+if (key_right && key_jump || key_left && key_jump)
+{
+	if (!flip && !slowmo)
+	{
+		isDashing = true;
+	}
+}
+if (isDashing)
+{
+	sprite_index = playerDash_spr;
+	if (image_index > image_number - 1)
+	{
+		image_index = image_number - 1;
+	}
+}
 /*
 if (spin)
 {

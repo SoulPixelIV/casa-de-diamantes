@@ -1,7 +1,7 @@
 1.0.0←ed6a955d-5826-4f98-a450-10b414266c27←ed6a955d-5826-4f98-a450-10b414266c27|{
     "option_gameguid": "92453fc3-fc61-469f-8b79-0b5f5b02b6f9",
-    "option_game_speed": 60,
-    "option_lastchanged": "27 August 2019 0:18:05",
+    "option_game_speed": 240,
+    "option_lastchanged": "28 August 2019 23:12:53",
     "option_draw_colour": {
         "Value": 4294967295
     }
