@@ -1015,6 +1015,14 @@
             }
         },
         {
+            "Key": "7b4365cf-3793-444c-9b9d-0776384ef9db",
+            "Value": {
+                "id": "22f98d52-6126-4acf-b1e5-810f3ce50635",
+                "resourcePath": "objects\\clothTest_obj\\clothTest_obj.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "7baf7ac7-59de-4859-8add-dab402ae03e8",
             "Value": {
                 "id": "c436491f-dc0c-4b16-9f14-52ef2e32b9b0",

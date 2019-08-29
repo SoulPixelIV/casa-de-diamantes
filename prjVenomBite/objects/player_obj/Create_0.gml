@@ -26,7 +26,6 @@ invincible = false;
 onLadder = false;
 isZombie = false;
 isDashing = false;
-dashed = false;
 plagueTransformation = false;
 shotZoom = false;
 enemySlowmo = false;
