@@ -93,20 +93,23 @@ if (verspeed < 14 && !onLadder)
 //Jump
 if (movement && !isZombie)
 {
-	if (grounded && key_jump && horspeed == 0 || fallJumpSafety > 0 && (key_jump) && horspeed == 0)
+	if (grounded && key_jump && horspeed < 0.3 && horspeed > -0.3 || fallJumpSafety > 0 && (key_jump) && horspeed == 0)
 	{
 	    verspeed = -jumpStrength;
 	}
-	if (grounded && key_jump && horspeed != 0 || fallJumpSafety > 0 && (key_jump) && horspeed != 0)
+	if (grounded && key_jump || fallJumpSafety > 0 && (key_jump) && horspeed != 0)
 	{
-	    verspeed = -jumpStrength / 1.5;
-		if (image_xscale == 1)
+		if (horspeed > 0.3 || horspeed < -0.3)
 		{
-			horspeed += 6;
-		}
-		else
-		{
-			horspeed -= 6;
+		    verspeed = -jumpStrength / 1.3;
+			if (image_xscale == 1)
+			{
+				horspeed += 6;
+			}
+			else
+			{
+				horspeed -= 6;
+			}
 		}
 	}
    
