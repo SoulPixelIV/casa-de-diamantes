@@ -1,8 +1,8 @@
 {
-    "id": "bd4de7d4-3b52-4166-bb7a-7240b2fa6338",
+    "id": "d800f6bc-71bb-497f-9c08-7a4c5d5c2106",
     "modelName": "GMSound",
     "mvc": "1.0",
-    "name": "infectedVoice_snd",
+    "name": "plagueInfectionVoice_snd",
     "audioGroupGuid": "7b2c4976-1e09-44e5-8256-c527145e03bb",
     "bitDepth": 1,
     "bitRate": 128,
