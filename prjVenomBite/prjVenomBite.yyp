@@ -463,14 +463,6 @@
             }
         },
         {
-            "Key": "3740aff3-863e-4e69-9184-d015179c3f6f",
-            "Value": {
-                "id": "97aa06af-ca68-4fd7-8eac-0c0bf7f2d3b9",
-                "resourcePath": "sprites\\door_spr\\door_spr.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "37ae45ff-9729-4324-9da4-8b89a267e412",
             "Value": {
                 "id": "b1d69244-12fc-4093-8760-67d540a89559",
@@ -1484,6 +1476,14 @@
                 "id": "9a1b195b-cab8-4e56-ba9a-200e3413c19a",
                 "resourcePath": "extensions\\Chromatic_Aberration_Shader\\Chromatic_Aberration_Shader.yy",
                 "resourceType": "GMExtension"
+            }
+        },
+        {
+            "Key": "b69cbb58-31fd-411e-ba45-95e9cd545f1c",
+            "Value": {
+                "id": "b9357c7c-42c4-4847-a84b-69a539da5c93",
+                "resourcePath": "sprites\\woodDoor_spr\\woodDoor_spr.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
