@@ -707,7 +707,7 @@ if (keyboard_check(vk_shift))
 		slowmo = true;
 		slowmoTimer -= dt * 3;
 		global.timeScale = 0.2;
-		image_speed = 0.2;
+		image_speed = 2 * dt;
 	}
 }
 else
@@ -718,22 +718,24 @@ else
 		slowmoTimer += dt * 3.5;
 	}
 	global.timeScale = 1;
-	image_speed = 1;
+	image_speed = 4 * dt;
 }
 if (slowmoTimer < 30)
 {
 	slowmo = false
 	global.timeScale = 1;
-	image_speed = 1;
+	image_speed = 4 * dt;
 }
 if (enemySlowmo)
 {
 	enemySlowmoTimer -= dt;
 	global.timeScale = 0.05;
+	image_speed = dt;
 }
 if (enemySlowmoTimer < 0)
 {
 	enemySlowmoTimer = enemySlowmoTimerSave;
 	enemySlowmo = false;
 	global.timeScale = 1;
+	image_speed = 4 * dt;
 }
