@@ -94,6 +94,7 @@ if (attackCooldown < 60)
 }
 if (attackCooldown < 0)
 {
+	audio_sound_pitch(shotgunShot_snd, random_range(0.9, 1.1));
 	audio_play_sound(shotgunShot_snd, 1, false);
 		
 	instance_create_layer(x + 10, y, "Instances", bulletZombieSoldierGirl_obj);
