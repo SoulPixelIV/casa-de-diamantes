@@ -40,48 +40,18 @@ if (movement && !wallJumping)
 	}
 }
 
+//Friction
 if (!place_meeting(x, y, colliderSideway_obj))
 {
 	frictionActive = true;
 }
-
 if (frictionActive)
 {
-	if (horspeed > 0)
-	{
-		horspeed -= frictionStrength * dt;
-		if (horspeed < 0.3)
-		{
-			horspeed = 0;
-		}
-	}
-	else
-	{
-		horspeed += frictionStrength * dt;
-		if (horspeed > -0.3)
-		{
-			horspeed = 0;
-		}
-	}
+	frictionActive_scr(true);
 }
 else
 {
-	if (horspeed > 0)
-	{
-		horspeed -= dt;
-		if (horspeed < 0.3)
-		{
-			horspeed = 0;
-		}
-	}
-	else
-	{
-		horspeed += dt;
-		if (horspeed > -0.3)
-		{
-			horspeed = 0;
-		}
-	}
+	frictionActive_scr(false);
 }
 
 //Gravity
@@ -90,35 +60,45 @@ if (verspeed < 14 && !onLadder)
 	verspeed -= gravityStrength * dt;
 }
 
-//Jump
 if (movement && !isZombie)
 {
-	if (grounded && key_jump && horspeed < 0.3 && horspeed > -0.3 || fallJumpSafety > 0 && (key_jump) && horspeed == 0)
+	//Jump
+	if (grounded && key_jump && horspeed < 0.3 && horspeed > -0.3 || fallJumpSafety > 0 && key_jump && horspeed == 0)
 	{
-	    verspeed = -jumpStrength;
+		jump_scr();
 	}
+	//Dash ###TODO###
 	if (grounded && key_jump || fallJumpSafety > 0 && (key_jump) && horspeed != 0)
 	{
 		if (horspeed > 0.3 || horspeed < -0.3)
 		{
-		    verspeed = -jumpStrength / 1.3;
-			if (image_xscale == 1)
-			{
-				horspeed += 6;
-			}
-			else
-			{
-				horspeed -= 6;
-			}
+		    dash_scr();
 		}
 	}
    
+	//Short Jump
 	if (key_jump_release && fullJump == false)
 	{
 	    if (verspeed < 0)
 	    {
-	        verspeed = verspeed / 2;
+	        verspeed /= 2;
 	    }
+	}
+}
+//Dash
+if (horspeed > movSpeed - 0.3 && key_jump || horspeed < -movSpeed + 0.3 && key_jump)
+{
+	if (!flip && !slowmo)
+	{
+		isDashing = true;
+	}
+}
+if (isDashing)
+{
+	sprite_index = playerDash_spr;
+	if (image_index > image_number - 1)
+	{
+		image_index = image_number - 1;
 	}
 }
 
@@ -140,6 +120,7 @@ if (movement && !isZombie && wallJumps > 0)
 		}
 		wallJumps--;
 		wallJumpingInAir = true;
+		//Wallturning ###TODO###
 		/*
 		if (image_xscale == -1)
 		{
@@ -184,49 +165,6 @@ if (grounded)
 	spin = false;
 }
 
-//Dash
-if (key_right && key_jump || key_left && key_jump)
-{
-	if (!flip && !slowmo)
-	{
-		isDashing = true;
-	}
-}
-if (isDashing)
-{
-	sprite_index = playerDash_spr;
-	if (image_index > image_number - 1)
-	{
-		image_index = image_number - 1;
-	}
-}
-
-/*
-if (spin)
-{
-	if (spinWeaponDir == 0)
-	{
-		spinWeaponPos += dt * 1.7;
-	}
-	if (spinWeaponDir == 1)
-	{
-		spinWeaponPos -= dt * 1.7;
-	}
-	if (spinWeaponPos > 5)
-	{
-		spinWeaponDir = 1;
-	}
-	if (spinWeaponPos < 0)
-	{
-		spinWeaponDir = 0;
-	}
-}
-else
-{
-	spinWeaponPos = 0;
-	spinWeaponDir = 0;
-}
-*/
 //Collision
 //horspeed
 if (!place_free(x + horspeed, y))
@@ -299,7 +237,7 @@ if (onLadder)
 	}
 }
 
-//###Weapon System###
+//Weapon System ###TODO###
 dirCursor = point_direction(x, y, mouse_x, mouse_y);
 if (keyboard_check(vk_left))
 {
@@ -407,33 +345,7 @@ if (!isZombie)
 	{
 		if (!onLadder || onLadder && verspeed == 0)
 		{
-			//Check Ammo
-			if (global.pistolAmmo > 0)
-			{
-				audio_sound_pitch(pistolShot_snd, random_range(0.9, 1.1));
-				audio_play_sound(pistolShot_snd, 1, false);
-		
-				var shotLightx = x + lengthdir_x(24, dirCursor);
-				var shotLighty = y - 8 + lengthdir_y(24, dirCursor);
-				instance_create_layer(playerBulletLine_obj.x, playerBulletLine_obj.y, "Instances", bulletPistol_obj);
-				instance_create_layer(shotLightx, shotLighty, "ForegroundObjects", shotLightPistol_obj);
-				instance_create_layer(shotLightx, shotLighty, "ForegroundObjects", smokecloud_obj);
-		
-				if (!huggingWall)
-				{
-					if (image_xscale == 1)
-					{
-						horspeed = -1;
-					}
-					else
-					{
-						horspeed = 1;
-					}
-				}
-				global.pistolAmmo--;
-				global.pistolCooldown = global.pistolCooldownSave;
-				shotZoom = true;
-			}
+			shooting_scr("pistol");
 		}
 	}
 
@@ -442,33 +354,7 @@ if (!isZombie)
 	{
 		if (!onLadder || onLadder && verspeed == 0)
 		{
-			//Check Ammo
-			if (global.dualBarettasAmmo > 0)
-			{
-				audio_sound_pitch(dualBarettasShot_snd, random_range(0.9, 1.1));
-				audio_play_sound(dualBarettasShot_snd, 1, false);
-		
-				var shotLightx = x + lengthdir_x(24, dirCursor);
-				var shotLighty = y - 8 + lengthdir_y(24, dirCursor);
-				instance_create_layer(playerBulletLine_obj.x + 10, playerBulletLine_obj.y, "Instances", bulletDualBarettas_obj);
-				instance_create_layer(shotLightx, shotLighty, "ForegroundObjects", shotLightDualBarettas_obj);
-				instance_create_layer(shotLightx, shotLighty, "ForegroundObjects", smokecloud_obj);
-		
-				if (!huggingWall)
-				{
-					if (image_xscale == 1)
-					{
-						horspeed = -2;
-					}
-					else
-					{
-						horspeed = 2;
-					}
-				}
-				global.dualBarettasAmmo--;
-				global.dualBarettasCooldown = global.dualBarettasCooldownSave;
-				shotZoom = true;
-			}
+			shooting_scr("dualBarettas");
 		}
 	}
 
@@ -477,47 +363,7 @@ if (!isZombie)
 	{
 		if (!onLadder || onLadder && verspeed == 0)
 		{
-			//Check Ammo
-			if (global.shotgunAmmo > 0)
-			{
-				audio_sound_pitch(shotgunShot_snd, random_range(0.9, 1.1));
-				audio_play_sound(shotgunShot_snd, 1, false);
-		
-		
-				var shotLightx = x + lengthdir_x(24, dirCursor);
-				var shotLighty = y - 8 + lengthdir_y(24, dirCursor);
-				instance_create_layer(playerBulletLine_obj.x + 10, playerBulletLine_obj.y, "Instances", bulletShotgun_obj);
-				instance_create_layer(shotLightx, shotLighty, "ForegroundObjects", shotLightShotgun_obj);
-				instance_create_layer(shotLightx, shotLighty, "ForegroundObjects", smokecloud_obj);
-		
-				if (!huggingWall)
-				{
-					if (dirCursor > 310 || dirCursor < 50)
-					{
-						horspeed -= 6;
-					}
-					else if (dirCursor > 130 && dirCursor < 230)
-					{
-						horspeed += 6;
-					}
-					else if (image_xscale == 1)
-					{
-						horspeed -= 3;
-					}
-					else
-					{
-						horspeed += 3;
-					}
-				}
-				global.shotgunAmmo--;
-				global.shotgunCooldown = global.shotgunCooldownSave;
-				shotZoom = true;
-		
-				if (dirCursor > 225 && dirCursor < 320)
-				{
-					verspeed = -shotJumpStrength;
-				}
-			}
+			shooting_scr("shotgun");
 		}
 	}
 }
@@ -544,48 +390,7 @@ if (global.pistolCooldown > 0 || global.dualBarettasCooldown > 0 || global.shotg
 //Reload
 if (keyboard_check_pressed(ord("R")) && !isZombie)
 {
-	if (global.pickedWeapon[0])
-	{
-		if (global.pistolMag >= 6 && global.pistolAmmo < 6)
-		{
-			global.pistolMag -= 6 - global.pistolAmmo;
-			global.pistolAmmo += 6 - global.pistolAmmo;
-		}
-	
-		if (global.pistolMag < 6 && global.pistolAmmo < 6)
-		{
-			global.pistolAmmo += global.pistolMag;
-			global.pistolMag = 0;
-		}
-	}
-	if (global.pickedWeapon[1])
-	{
-		if (global.dualBarettasMag >= 12 && global.dualBarettasAmmo < 12)
-		{
-			global.dualBarettasMag -= 12 - global.dualBarettasAmmo;
-			global.dualBarettasAmmo += 12 - global.dualBarettasAmmo;
-		}
-	
-		if (global.dualBarettasMag < 12 && global.dualBarettasAmmo < 12)
-		{
-			global.dualBarettasAmmo += global.dualBarettasMag;
-			global.dualBarettasMag = 0;
-		}
-	}
-	if (global.pickedWeapon[2])
-	{
-		if (global.shotgunMag >= 2 && global.shotgunAmmo < 2)
-		{
-			global.shotgunMag -= 2 - global.shotgunAmmo;
-			global.shotgunAmmo += 2 - global.shotgunAmmo;
-		}
-	
-		if (global.shotgunMag < 2 && global.shotgunAmmo < 2)
-		{
-			global.shotgunAmmo += global.shotgunMag;
-			global.shotgunMag = 0;
-		}
-	}
+	reload_scr();
 }
 
 //Weapon Switching
@@ -641,40 +446,15 @@ if (damageCooldown < 0)
 	damageRecieved = false;
 }
 
-//Death
 if (hp < 0)
 {
-	camera_obj.noZoom = true;
-	camera_obj.deathVignette = true;
-	camera_obj.noHUD = true;
-	camera_obj.drawInfectionText = true;
-	movement = false;
-	if (camera_obj.viewX > 160 || camera_obj.viewY > 90)
-	{
-		camera_obj.viewX -= 16;
-		camera_obj.viewY -= 9;
-	}
+	//Death
+	death_scr();
 	
 	//Revive
 	if (keyboard_check_pressed(ord("R")))
 	{
-		camera_obj.noZoom = false;
-		camera_obj.deathVignette = false;
-		camera_obj.noHUD = false;
-		camera_obj.drawInfectionText = false;
-		movement = true;
-		if (camera_obj.viewX < 640 || camera_obj.viewY < 360)
-		{
-			camera_obj.viewX += 16 * 2;
-			camera_obj.viewY += 9 * 2;
-		}
-		syringes -= 1;
-		syringesLost += 1;
-		hp = 100 - 25 * syringesLost;
-		maxhp -= 25;
-		invincible = true;
-		isZombie = true;
-		audio_play_sound(infectedVoice_snd, 1, false);
+		revive_scr();
 	}
 }
 
