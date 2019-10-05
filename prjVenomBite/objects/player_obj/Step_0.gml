@@ -497,13 +497,19 @@ if (isZombie && !plagueTransformation)
 if (zombieTimer < 0)
 {
 	isZombie = false;
-	invincible = false;
+	if (!isDashing && !grounded)
+	{
+		invincible = false;
+	}
 	zombieTimer = zombieTimerSave;
 }
 if (isZombie && keyboard_check_pressed(ord("F")) && !plagueTransformation)
 {
 	isZombie = false;
-	invincible = false;
+	if (!isDashing && !grounded)
+	{
+		invincible = false;
+	}
 	zombieTimer = zombieTimerSave;
 }
 

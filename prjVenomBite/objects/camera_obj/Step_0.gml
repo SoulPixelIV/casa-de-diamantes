@@ -13,6 +13,7 @@ with (player_obj)
 	else
 	{
 		camera_obj.zoomOut = false;
+		camera_obj.zoomIn = false;
 	}
 }
 
