@@ -13,13 +13,16 @@ if (argument0 == "pistol")
 		
 		if (!huggingWall)
 		{
-			if (image_xscale == 1)
+			if (!isDashing && !grounded)
 			{
-				horspeed = -1;
-			}
-			else
-			{
-				horspeed = 1;
+				if (image_xscale == 1)
+				{
+					horspeed = -1;
+				}
+				else
+				{
+					horspeed = 1;
+				}
 			}
 		}
 		global.pistolAmmo--;
@@ -43,13 +46,16 @@ if (argument0 == "dualBarettas")
 		
 		if (!huggingWall)
 		{
-			if (image_xscale == 1)
+			if (!isDashing && !grounded)
 			{
-				horspeed = -2;
-			}
-			else
-			{
-				horspeed = 2;
+				if (image_xscale == 1)
+				{
+					horspeed = -2;
+				}
+				else
+				{
+					horspeed = 2;
+				}
 			}
 		}
 		global.dualBarettasAmmo--;

@@ -7,14 +7,15 @@ y += verspeed * dt;
 
 key_left = keyboard_check(ord("A"));
 key_right = keyboard_check(ord("D"));
-key_shoot = mouse_check_button_pressed(mb_left) || keyboard_check_pressed(vk_control);
+key_shoot = mouse_check_button_pressed(mb_left);
 key_jump = keyboard_check_pressed(vk_space) || gamepad_button_check_pressed(0, gp_face1);
 key_jump_hold = keyboard_check(vk_space) || gamepad_button_check(0, gp_face1);
 key_jump_release = keyboard_check_released(vk_space) || gamepad_button_check_released(0, gp_face1);
 key_shift_hold = keyboard_check(vk_shift) || gamepad_button_check(0, gp_face2);
+key_control = keyboard_check_pressed(vk_control); //CONTROLLER TODO
 
 //Movement
-if (movement && !wallJumping)
+if (movement && !wallJumping && !isDashing)
 {
 	if (key_right && !key_left)
 	{
@@ -63,19 +64,34 @@ if (verspeed < 14 && !onLadder)
 if (movement && !isZombie)
 {
 	//Jump
-	if (grounded && key_jump && horspeed < 0.3 && horspeed > -0.3 || fallJumpSafety > 0 && key_jump && horspeed == 0)
+	if (grounded && key_jump || fallJumpSafety > 0 && key_jump && horspeed == 0)
 	{
 		jump_scr();
 	}
-	//Dash ###TODO###
-	if (grounded && key_jump || fallJumpSafety > 0 && (key_jump) && horspeed != 0)
+	//Dash
+	if (key_control && !isDashing)
 	{
 		if (horspeed > 0.3 || horspeed < -0.3)
 		{
 		    dash_scr();
 		}
 	}
-   
+	if (isDashing && !grounded)
+	{
+		invincible = true;
+	}
+	//Cancel Dash
+	if (stoppedDashing)
+	{
+		dashTimer -= dt;
+	}
+	if (dashTimer < 0)
+	{
+		isDashing = false;
+		stoppedDashing = false;
+		dashTimer = dashTimerSave;
+	}
+
 	//Short Jump
 	if (key_jump_release && fullJump == false)
 	{
@@ -85,7 +101,16 @@ if (movement && !isZombie)
 	    }
 	}
 }
+if (isDashing)
+{
+	sprite_index = playerDash_spr;
+	if (image_index > image_number - 1 && sprite_index == playerDash_spr)
+	{
+		image_index = image_number - 1;
+	}
+}
 //Dash
+/*
 if (horspeed > movSpeed - 0.3 && key_jump || horspeed < -movSpeed + 0.3 && key_jump)
 {
 	if (!flip && !slowmo)
@@ -93,14 +118,8 @@ if (horspeed > movSpeed - 0.3 && key_jump || horspeed < -movSpeed + 0.3 && key_j
 		isDashing = true;
 	}
 }
-if (isDashing)
-{
-	sprite_index = playerDash_spr;
-	if (image_index > image_number - 1)
-	{
-		image_index = image_number - 1;
-	}
-}
+*/
+
 
 //Walljump
 if (movement && !isZombie && wallJumps > 0)
@@ -144,10 +163,13 @@ if (wallJumpTimer < 0)
 }
 
 //Flip
-if (!grounded && !isZombie && slowmo && !spin && !unarmed && horspeed != 0)
+if (!grounded && !isZombie && !spin && !isDashing && !unarmed && slowmo)
 {
-	sprite_index = playerFlip_spr;
-	flip = true;
+	if (horspeed > movSpeed - 0.5 || horspeed < -movSpeed + 0.5)
+	{
+		sprite_index = playerFlip_spr;
+		flip = true;
+	}
 }
 if (grounded)
 {
@@ -155,10 +177,13 @@ if (grounded)
 }
 
 //Jump Spin
-if (!grounded && !isZombie && !flip && !unarmed && horspeed == 0)
+if (!grounded && !isZombie && !flip && !isDashing && !unarmed)
 {
-	sprite_index = playerJumpSpin_spr;
-	spin = true;
+	if (horspeed < movSpeed - 0.5 || horspeed > -movSpeed + 0.5)
+	{
+		sprite_index = playerJumpSpin_spr;
+		spin = true;
+	}
 }
 if (grounded)
 {
@@ -258,56 +283,24 @@ if (keyboard_check(vk_down))
 
 if (global.pickedWeapon[0] || global.pickedWeapon[1] || global.pickedWeapon[2])
 {
-	if (grounded)
+	if (!isDashing)
 	{
-		if (!isZombie && !onLadder)
+		if (grounded)
 		{
-			if (horspeed != 0)
+			if (!isZombie && !onLadder)
 			{
-				sprite_index = playerWalkingEquipped_spr;
+				if (horspeed != 0)
+				{
+					sprite_index = playerWalkingEquipped_spr;
+				}
+				else
+				{
+					sprite_index = playerEquipped_spr;
+				}
 			}
 			else
 			{
-				sprite_index = playerEquipped_spr;
-			}
-		}
-		else
-		{
-			if (horspeed != 0)
-			{
-				sprite_index = zombieGirl_spr;
-			}
-			else
-			{
-				sprite_index = zombieGirl_spr;
-			}
-		}
-	}
-}
-else
-{
-	if (grounded)
-	{
-		if (!isZombie && !onLadder)
-		{
-			if (horspeed != 0)
-			{
-				sprite_index = playerWalking_spr;
-			}
-			else
-			{
-				sprite_index = player_spr;
-			}
-		}
-		else
-		{
-			if (horspeed != 0)
-			{
-				sprite_index = zombieGirl_spr;
-			}
-			else
-			{
-				if (crouching)
+				if (horspeed != 0)
 				{
 					sprite_index = zombieGirl_spr;
 				}
@@ -319,7 +312,45 @@ else
 		}
 	}
 }
-if (onLadder && !isZombie)
+else
+{
+	if (!isDashing)
+	{
+		if (grounded)
+		{
+			if (!isZombie && !onLadder)
+			{
+				if (horspeed != 0)
+				{
+					sprite_index = playerWalking_spr;
+				}
+				else
+				{
+					sprite_index = player_spr;
+				}
+			}
+			else
+			{
+				if (horspeed != 0)
+				{
+					sprite_index = zombieGirl_spr;
+				}
+				else
+				{
+					if (crouching)
+					{
+						sprite_index = zombieGirl_spr;
+					}
+					else
+					{
+						sprite_index = zombieGirl_spr;
+					}
+				}
+			}
+		}
+	}
+}
+if (onLadder && !isZombie && !isDashing)
 {
 	if (verspeed == 0)
 	{
@@ -414,7 +445,7 @@ if (!isZombie)
 //Animation
 if (grounded || !flip)
 {
-	if (!wallJumpingInAir)
+	if (!wallJumpingInAir && !isDashing)
 	{
 		if (dirCursor > 90 && dirCursor < 270)
 		{
