@@ -8,4 +8,5 @@ The game will launch on steam.
 Currently there is no set release date.
 
 # Contribute
-If you want to help out with art, code, ideas etc., feel free to contact me via. Discord!
+If you want to help out with art, code, ideas etc., feel free to contact me via Discord!
+Discord: P/X3Lはい#1016
