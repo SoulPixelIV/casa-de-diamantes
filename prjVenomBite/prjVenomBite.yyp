@@ -1663,6 +1663,14 @@
             }
         },
         {
+            "Key": "c795ce05-1729-4354-a5f3-9ab354e16a52",
+            "Value": {
+                "id": "9b5fb572-0c9e-4fbd-9d51-0a3d8d183863",
+                "resourcePath": "rooms\\level2_Casino\\level2_Casino.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "c870b1d1-addf-4ff2-9243-5bff619edec5",
             "Value": {
                 "id": "9fde4e15-2a09-454e-818a-ce0422005ad1",

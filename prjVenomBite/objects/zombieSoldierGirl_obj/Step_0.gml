@@ -83,7 +83,7 @@ with (headshotHitbox)
 }
 
 //Attack
-if (distance_to_object(player_obj) < 700 && player_obj.y > y - 96 && player_obj.y < y + 256)
+if (distance_to_object(player_obj) < 700 && player_obj.y > y - 64 && player_obj.y < y + 196)
 {
 	attackCooldown -= dt;
 }
