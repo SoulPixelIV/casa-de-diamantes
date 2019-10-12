@@ -6,7 +6,7 @@ with (hitbox)
 }
 if (!dealtDamage)
 {
-	enemyTarget.hp -= 90;
+	enemyTarget.hp -= 150;
 	penetration--;
 	instance_create_layer(x, y, "Instances", bloodSpread_obj);
 	bloodSpread2 = instance_create_layer(x, y, "Instances", bloodSpread2_obj);
