@@ -6,7 +6,7 @@ with (hitbox)
 }
 if (!dealtDamage)
 {
-	enemyTarget.hp -= 120;
+	enemyTarget.hp -= 90;
 	penetration--;
 	instance_create_layer(x, y, "Instances", bloodSpread_obj);
 	bloodSpread2 = instance_create_layer(x, y, "Instances", bloodSpread2_obj);
@@ -21,3 +21,4 @@ if (penetration < 1)
 	bloodSpread2 = instance_create_layer(x, y, "Instances", bloodSpread2_obj);
 	bloodSpread2.image_angle = image_angle;
 }
+
