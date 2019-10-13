@@ -3,22 +3,36 @@
 dt = (delta_time / 1000000) * globalSettings_obj.TARGET_FRAMERATE;
 
 //Set Camera Borders
-if (player_obj.x >= 1000 && player_obj.x <= room_width - 1000)
+if (player_obj.x >= viewXSave / 2 + 32 && player_obj.x <= room_width - viewXSave / 2 - 32)
 {
     xCoor = player_obj.x - (viewXSave / 2);
 }
 else
 {
-	xCoor = player_obj.x - (viewXSave / 2);
+	if (player_obj.x <= viewXSave / 2 + 32)
+	{
+		xCoor = 32;
+	}
+	if (player_obj.x >= room_width - viewXSave / 2 - 32)
+	{
+		xCoor = room_width - viewXSave - 32;
+	}
 }
 
-if (player_obj.y <= (room_height - 180) && player_obj.y >= 180)
+if (player_obj.y <= room_height - viewYSave / 2 - 32 && player_obj.y >= viewYSave / 2 + 32)
 {
     yCoor += (player_obj.y - (viewYSave / 2) - camera_get_view_y(view_camera[0]));
 }
 else
 {
-	yCoor = player_obj.y - (viewYSave / 2);
+	if (player_obj.y >= room_height - viewYSave / 2 - 32)
+	{
+		yCoor = room_height - viewYSave - 32;
+	}
+	if (player_obj.y <= viewYSave / 2 + 32)
+	{
+		yCoor = 32;
+	}
 }
 
 //###TODO###
