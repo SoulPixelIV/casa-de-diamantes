@@ -1,15 +1,32 @@
 /// @description Camera Movement
 
 dt = (delta_time / 1000000) * globalSettings_obj.TARGET_FRAMERATE;
-xCoor = player_obj.x - (viewX / 2);
-yCoor = player_obj.y - (viewY / 2);
+
+//Set Camera Borders
+if (player_obj.x >= 1000 && player_obj.x <= room_width - 1000)
+{
+    xCoor = player_obj.x - (viewXSave / 2);
+}
+else
+{
+	xCoor = player_obj.x - (viewXSave / 2);
+}
+
+if (player_obj.y <= (room_height - 180) && player_obj.y >= 180)
+{
+    yCoor += (player_obj.y - (viewYSave / 2) - camera_get_view_y(view_camera[0]));
+}
+else
+{
+	yCoor = player_obj.y - (viewYSave / 2);
+}
 
 //###TODO###
 mouseXPos = window_mouse_get_x() / viewXSave;
 mouseYPos = window_mouse_get_y() / viewYSave;
 
 camera_set_view_size(view_camera[0], viewXSave, viewYSave);
-camera_set_view_pos(view_camera[0], (player_obj.x - (viewXSave / 2)) + mouseXPos, (player_obj.y - (viewYSave / 2)) + mouseYPos);
+camera_set_view_pos(view_camera[0], xCoor + mouseXPos, yCoor + mouseYPos);
 
 //Zooming
 if (player_obj.horspeed == 0 && player_obj.verspeed == 0)
