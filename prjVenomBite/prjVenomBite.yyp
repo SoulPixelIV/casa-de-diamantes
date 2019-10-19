@@ -295,6 +295,14 @@
             }
         },
         {
+            "Key": "213695a7-587a-4dbd-81af-d90cb7ac5da4",
+            "Value": {
+                "id": "adb82ab7-be96-4714-a3b5-c74b3fcbf19c",
+                "resourcePath": "sprites\\zombieGirlAttack1_spr\\zombieGirlAttack1_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "22deb360-62ef-4ff2-9d07-328ab2eaa10a",
             "Value": {
                 "id": "a666bcf0-3e27-4717-a45f-d71aaf595ee7",
@@ -1204,6 +1212,14 @@
                 "id": "90be9ae9-9dc9-4500-b3b1-c5d831d79ff7",
                 "resourcePath": "objects\\plagueDoor_obj\\plagueDoor_obj.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "84a83355-77c4-4f87-a528-30064dd9d975",
+            "Value": {
+                "id": "2f164968-92dd-445a-8553-a576d8b5afd1",
+                "resourcePath": "views\\84a83355-77c4-4f87-a528-30064dd9d975.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
