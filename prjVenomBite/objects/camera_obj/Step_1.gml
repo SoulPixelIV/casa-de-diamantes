@@ -40,8 +40,14 @@ mouseXPos = window_mouse_get_x() / viewXSave;
 mouseYPos = window_mouse_get_y() / viewYSave;
 
 camera_set_view_size(view_camera[0], viewXSave, viewYSave);
-camera_set_view_pos(view_camera[0], xCoor + mouseXPos, yCoor + mouseYPos);
-
+if (mouse_check_button(mb_right))
+{
+	camera_set_view_pos(view_camera[0], xCoor + mouseXPos, yCoor + mouseYPos);
+}
+else
+{
+	camera_set_view_pos(view_camera[0], xCoor, yCoor);
+}
 //Zooming
 if (player_obj.horspeed == 0 && player_obj.verspeed == 0)
 {

@@ -343,6 +343,14 @@
             }
         },
         {
+            "Key": "26d188ee-3c31-4023-bced-0beecdb7e053",
+            "Value": {
+                "id": "153afafd-c3f2-4555-8d27-7f969785ca8d",
+                "resourcePath": "objects\\RTC_12_teleporter\\RTC_12_teleporter.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "276c1c24-7b84-428a-95ea-87be419f58a3",
             "Value": {
                 "id": "2fe87df2-9510-4720-a48c-a249955d20c5",
@@ -724,6 +732,14 @@
                 "id": "66fa070e-3954-4ddb-95e5-28acbd93e1fc",
                 "resourcePath": "sprites\\playerKnifeBuildup_spr\\playerKnifeBuildup_spr.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "55b1af09-b458-413f-9115-a6ce1bc80c85",
+            "Value": {
+                "id": "902607a5-c43d-43db-ae51-669e79ea181a",
+                "resourcePath": "rooms\\level2_CasinoHub\\level2_CasinoHub.yy",
+                "resourceType": "GMRoom"
             }
         },
         {

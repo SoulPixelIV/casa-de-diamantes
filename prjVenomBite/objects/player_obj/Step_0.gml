@@ -163,7 +163,7 @@ if (wallJumpTimer < 0)
 }
 
 //Flip
-if (!grounded && !isZombie && !spin && !isDashing && !unarmed)
+if (!grounded && !isZombie && !spin && !isDashing && !unarmed && mouse_check_button(mb_right))
 {
 	if (horspeed > movSpeed - 0.3 || horspeed < -movSpeed + 0.3)
 	{
