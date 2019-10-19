@@ -163,9 +163,9 @@ if (wallJumpTimer < 0)
 }
 
 //Flip
-if (!grounded && !isZombie && !spin && !isDashing && !unarmed && slowmo)
+if (!grounded && !isZombie && !spin && !isDashing && !unarmed)
 {
-	if (horspeed > movSpeed - 0.5 || horspeed < -movSpeed + 0.5)
+	if (horspeed > movSpeed - 0.3 || horspeed < -movSpeed + 0.3)
 	{
 		sprite_index = playerFlip_spr;
 		flip = true;
@@ -179,7 +179,7 @@ if (grounded)
 //Jump Spin
 if (!grounded && !isZombie && !flip && !isDashing && !unarmed)
 {
-	if (horspeed < movSpeed - 0.5 || horspeed > -movSpeed + 0.5)
+	if (horspeed < movSpeed - 0.3 || horspeed > -movSpeed + 0.3)
 	{
 		sprite_index = playerJumpSpin_spr;
 		spin = true;
