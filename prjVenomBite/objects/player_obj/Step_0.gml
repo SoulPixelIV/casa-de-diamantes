@@ -549,7 +549,7 @@ if (slowmoTimer < 30)
 if (enemySlowmo)
 {
 	enemySlowmoTimer -= dt;
-	global.timeScale = 0.05;
+	global.timeScale = 0.025;
 	image_speed = dt;
 }
 if (enemySlowmoTimer < 0)
