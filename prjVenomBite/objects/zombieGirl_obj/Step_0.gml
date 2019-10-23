@@ -78,7 +78,9 @@ with (headshotHitbox)
 {
 	if (x != body.x && y != body.y)
 	{
-		move_towards_point(body.x, body.y - 16, 3);
+		x = body.x;
+		y = body.y - 16;
+		//move_towards_point(body.x, body.y - 16, 3);
 	}
 }
 
