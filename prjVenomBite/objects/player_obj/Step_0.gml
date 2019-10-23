@@ -120,7 +120,6 @@ if (horspeed > movSpeed - 0.3 && key_jump || horspeed < -movSpeed + 0.3 && key_j
 }
 */
 
-
 //Walljump
 if (movement && !isZombie && wallJumps > 0)
 {
