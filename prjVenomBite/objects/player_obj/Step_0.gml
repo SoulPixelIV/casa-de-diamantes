@@ -1,18 +1,17 @@
 /// @description Movement
 
 dt = (delta_time / 1000000) * globalSettings_obj.TARGET_FRAMERATE;
-
 x += horspeed * dt;
 y += verspeed * dt;
 
-key_left = keyboard_check(ord("A"));
-key_right = keyboard_check(ord("D"));
-key_shoot = mouse_check_button_pressed(mb_left);
+key_left = keyboard_check(ord("A")) //CONTROLLER AXIS L;
+key_right = keyboard_check(ord("D")) // CONTROLLER AXIS R;
+key_shoot = mouse_check_button_pressed(mb_left) || gamepad_button_check_pressed(0, gp_shoulderrb);
 key_jump = keyboard_check_pressed(vk_space) || gamepad_button_check_pressed(0, gp_face1);
 key_jump_hold = keyboard_check(vk_space) || gamepad_button_check(0, gp_face1);
 key_jump_release = keyboard_check_released(vk_space) || gamepad_button_check_released(0, gp_face1);
-key_shift_hold = keyboard_check(vk_shift) || gamepad_button_check(0, gp_face2);
-key_control = keyboard_check_pressed(vk_control); //CONTROLLER TODO
+key_shift_hold = keyboard_check(vk_shift) || gamepad_button_check(0, gp_shoulderl);
+key_control = keyboard_check_pressed(vk_control) || gamepad_button_check(0, gp_face2);
 
 //Movement
 if (movement && !wallJumping && !isDashing)
@@ -91,7 +90,6 @@ if (movement && !isZombie)
 		stoppedDashing = false;
 		dashTimer = dashTimerSave;
 	}
-
 	//Short Jump
 	if (key_jump_release && fullJump == false)
 	{
@@ -109,16 +107,6 @@ if (isDashing && !onLadder)
 		image_index = image_number - 1;
 	}
 }
-//Dash
-/*
-if (horspeed > movSpeed - 0.3 && key_jump || horspeed < -movSpeed + 0.3 && key_jump)
-{
-	if (!flip && !slowmo)
-	{
-		isDashing = true;
-	}
-}
-*/
 
 //Walljump
 if (movement && !isZombie && wallJumps > 0)
