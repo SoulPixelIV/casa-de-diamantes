@@ -85,7 +85,7 @@ if (movement && !isZombie)
 	{
 		dashTimer -= dt;
 	}
-	if (dashTimer < 0)
+	if (dashTimer < 0 || onLadder)
 	{
 		isDashing = false;
 		stoppedDashing = false;
@@ -101,7 +101,7 @@ if (movement && !isZombie)
 	    }
 	}
 }
-if (isDashing)
+if (isDashing && !onLadder)
 {
 	sprite_index = playerDash_spr;
 	if (image_index > image_number - 1 && sprite_index == playerDash_spr)
