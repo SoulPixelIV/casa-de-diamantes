@@ -110,14 +110,14 @@ if (player_obj.isZombie)
 draw_sprite_ext(lensDirt_spr, 0, -200, -200, 1, 1, 0, -1, 0.17);
 if (deathVignette)
 {
-	draw_set_alpha(0.33);
-	draw_ellipse_colour(-200 * (viewXSave / 512), -200 * (viewYSave / 288), 1480 * (viewXSave / 512), 920 * (viewYSave / 288), c_black , c_red, false);
+	draw_set_alpha(0.3);
+	draw_ellipse_colour(-200 * (viewXSave / 100), -200 * (viewYSave / 70), 1480 * (viewXSave / 100), 920 * (viewYSave / 70), c_black , c_red, false);
 	draw_set_alpha(1);
 }
 else
 {
 	draw_set_alpha(0.075 * vignetteStrength);
-	draw_ellipse_colour(-200 * (viewXSave / 512), -200 * (viewYSave / 288), 1480 * (viewXSave / 512), 920 * (viewYSave / 288), c_black , c_purple, false);
+	draw_ellipse_colour(-200 * (viewXSave / 100), -200 * (viewYSave / 70), 1480 * (viewXSave / 100), 920 * (viewYSave / 70), c_black , c_purple, false);
 	draw_set_alpha(1);
 }
 
@@ -125,6 +125,6 @@ else
 if (!deathVignette)
 {
 	draw_set_alpha(0.15);
-	draw_ellipse_colour(-200 * (viewXSave / 512), -200 * (viewYSave / 288), 1480 * (viewXSave / 512), 920 * (viewYSave / 288), c_black , c_red, false);
+	draw_ellipse_colour(-200 * (viewXSave / 100), -200 * (viewYSave / 70), 1480 * (viewXSave / 100), 920 * (viewYSave / 70), c_black , c_red, false);
 	draw_set_alpha(1);
 }
