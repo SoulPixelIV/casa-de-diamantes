@@ -1,8 +1,8 @@
 {
-    "id": "af9a3cec-26a4-4b1f-9606-fe73ad29df3e",
+    "id": "c2232310-564d-40fa-9bfc-4c4db261bd89",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "buildingWallSide1_obj",
+    "name": "buildingWallFront_obj",
     "eventList": [
         
     ],
@@ -24,6 +24,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "7201d0ae-d340-4d85-9de5-1d56f429c989",
+    "spriteId": "d0f7c626-f9d9-4c41-b9ce-019381a73ac0",
     "visible": true
 }
