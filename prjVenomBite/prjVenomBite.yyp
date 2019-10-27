@@ -551,6 +551,14 @@
             }
         },
         {
+            "Key": "3e629ee5-3706-4102-b9b3-76c6a60a044c",
+            "Value": {
+                "id": "ffae71fe-d3c8-4dcc-b0f2-cb94a5b17a68",
+                "resourcePath": "rooms\\room10\\room10.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "3f3e2540-b4b8-476e-a613-31d86622cfa8",
             "Value": {
                 "id": "098f4d9b-1886-46e2-9059-67b3ba1909a9",
@@ -1847,6 +1855,14 @@
             }
         },
         {
+            "Key": "cb913b8f-a660-4c02-b88f-e5bfc0c5efcd",
+            "Value": {
+                "id": "ef626c5d-58ca-4dda-b4e8-fef49333aa61",
+                "resourcePath": "shaders\\shd_blur_1_pass_isoweight_discrete\\shd_blur_1_pass_isoweight_discrete.yy",
+                "resourceType": "GMShader"
+            }
+        },
+        {
             "Key": "cbaaff9b-943f-4033-a31c-19c04b3d2d3e",
             "Value": {
                 "id": "29ce4ff7-770b-499d-a519-76787b62c3af",
@@ -1979,6 +1995,14 @@
             "Value": {
                 "id": "bfd870d2-4aa4-4435-8c5c-390cfcdc8899",
                 "resourcePath": "objects\\lightsRed_obj\\lightsRed_obj.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "d5b89174-8bc2-451e-8a47-237c279a21e3",
+            "Value": {
+                "id": "9791f333-be2b-4219-a6bc-058cb30a7618",
+                "resourcePath": "objects\\obj_blur_1_pass_isoweight_discrete\\obj_blur_1_pass_isoweight_discrete.yy",
                 "resourceType": "GMObject"
             }
         },
