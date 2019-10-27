@@ -695,6 +695,14 @@
             }
         },
         {
+            "Key": "4a1def20-6670-4778-b38c-a0b20950299f",
+            "Value": {
+                "id": "913650d4-37ec-4b49-89ae-14c7f14e6103",
+                "resourcePath": "sprites\\fog_spr\\fog_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "4aa40d2f-c252-4c97-a784-7b9b6efcf9f9",
             "Value": {
                 "id": "e0166ba6-34a5-4334-a116-c80c848d6dda",
@@ -1283,6 +1291,14 @@
             "Value": {
                 "id": "f849ea64-1445-48b3-9038-ccf0c9c4b657",
                 "resourcePath": "objects\\playerBulletLine_obj\\playerBulletLine_obj.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "8a008bfd-f552-45b8-bde6-d05ebdc6be54",
+            "Value": {
+                "id": "e4fb9d0f-cdfd-495b-b295-7c88a79a584b",
+                "resourcePath": "objects\\fog_obj\\fog_obj.yy",
                 "resourceType": "GMObject"
             }
         },
