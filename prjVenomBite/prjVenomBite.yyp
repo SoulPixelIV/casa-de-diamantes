@@ -1895,6 +1895,14 @@
             }
         },
         {
+            "Key": "cd604960-1e15-435c-9e61-2f420dc13cf7",
+            "Value": {
+                "id": "87c46bb4-1286-4e12-ae40-92f75f278e1c",
+                "resourcePath": "scripts\\bjCalcSum_scr\\bjCalcSum_scr.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "ce9d59ef-e7e4-473c-aa32-94145f89ea01",
             "Value": {
                 "id": "6c69dc7f-8a36-4a6e-bba1-1744cc073e2b",
@@ -2402,7 +2410,8 @@
         "6671b8a2-6452-4e1b-a9a3-ed0f33439e99",
         "378dea68-3862-43ef-8d62-dbd64009fd42",
         "cfb9536a-21a5-44ed-94e4-ee6665a826eb",
-        "359e8d9f-b7d6-4ae8-bd96-47e8529f8191"
+        "359e8d9f-b7d6-4ae8-bd96-47e8529f8191",
+        "cd604960-1e15-435c-9e61-2f420dc13cf7"
     ],
     "tutorial": ""
 }
