@@ -554,7 +554,7 @@
             "Key": "3e629ee5-3706-4102-b9b3-76c6a60a044c",
             "Value": {
                 "id": "ffae71fe-d3c8-4dcc-b0f2-cb94a5b17a68",
-                "resourcePath": "rooms\\room10\\room10.yy",
+                "resourcePath": "rooms\\shaderTestEnvironment\\shaderTestEnvironment.yy",
                 "resourceType": "GMRoom"
             }
         },
@@ -819,6 +819,14 @@
             "Value": {
                 "id": "30292c16-5cbc-43ab-a43a-885fcc4fec31",
                 "resourcePath": "objects\\water_obj\\water_obj.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "5be923ed-b397-4439-8727-fa83fdf47379",
+            "Value": {
+                "id": "e44139a6-557d-4544-ae3a-0a04d930e1a7",
+                "resourcePath": "objects\\testShader_obj\\testShader_obj.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -2290,7 +2298,7 @@
             "Key": "f292a74c-ef3e-474d-be2e-7f4f21983b07",
             "Value": {
                 "id": "611153d7-8c65-483a-bd87-dc4fd6be4c63",
-                "resourcePath": "shaders\\shader2\\shader2.yy",
+                "resourcePath": "shaders\\testShader\\testShader.yy",
                 "resourceType": "GMShader"
             }
         },

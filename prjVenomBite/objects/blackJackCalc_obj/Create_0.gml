@@ -14,7 +14,7 @@ for (i = 0; i < 5; i++)
 //CHANGE TO DO 2X
 for (i = 0; i < 2; i++)
 {
-	playerSum += bjCalcSum(playerDeck[i]);
-	dealerSum += bjCalcSum(dealerDeck[i]);
+	playerSum += bjCalcSum_scr(playerDeck[i]);
+	dealerSum += bjCalcSum_scr(dealerDeck[i]);
 }
 
