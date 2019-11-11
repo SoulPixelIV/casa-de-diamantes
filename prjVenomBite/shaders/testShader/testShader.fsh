@@ -11,7 +11,7 @@ uniform vec4 uvs;
 
 void main()
 {
-    int res = 23;
+    int res = 4;
     highp vec4 newCol = vec4(0,0,0,0);
     vec4 div = vec4(res*res,res*res,res*res,res*res);
     
