@@ -6,21 +6,19 @@ varying vec4 v_vColour;
 
 uniform float imageW;
 uniform float imageH;
+uniform vec4 uvs;
 //uniform int res;
 
 void main()
 {
-    int res = 8;
-    vec4 newCol = vec4(0,0,0,0);
+    int res = 23;
+    highp vec4 newCol = vec4(0,0,0,0);
     vec4 div = vec4(res*res,res*res,res*res,res*res);
     
     for (int i = 0; i < res * res; i++)    
     {
-        float x = v_vTexcoord.x + float(res/2 + (i / res)) * imageW;
-        float y = v_vTexcoord.y + float(float(res/2) + mod(float(i), float(res))) * imageH;
-        
-        //float x = v_vTexcoord.x - (res / 2.0) + (i / res * imageW);
-        //float y = v_vTexcoord.y - (res / 2.0) + (mod(i, res) * imageH);
+        float x = clamp(v_vTexcoord.x + float(res/2 + (i / res)) * imageW, uvs.x, uvs.z);
+        float y = clamp(v_vTexcoord.y + float(float(res/2) + mod(float(i), float(res))) * imageH, uvs.y, uvs.w);
 
         newCol += texture2D(gm_BaseTexture, vec2(x, y)) / div;
     }
