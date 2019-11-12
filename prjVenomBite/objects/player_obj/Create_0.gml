@@ -1,5 +1,8 @@
 /// @description Vars
 
+event_inherited();
+polygon = polygon_from_instance(id);
+
 horspeed = 0;
 verspeed = 0;
 hp = 100;
