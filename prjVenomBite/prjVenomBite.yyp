@@ -2223,6 +2223,14 @@
             }
         },
         {
+            "Key": "b6bb739f-9559-49f8-93e2-97980e04cd23",
+            "Value": {
+                "id": "8d420ee7-d513-461e-8c49-2281ecc03412",
+                "resourcePath": "shaders\\bwShader\\bwShader.yy",
+                "resourceType": "GMShader"
+            }
+        },
+        {
             "Key": "b6debe15-d9d4-443f-bc90-93f533b9d12a",
             "Value": {
                 "id": "dcdc6404-8482-4f54-bac4-81f3ff242cf3",
@@ -2922,7 +2930,7 @@
             "Key": "f292a74c-ef3e-474d-be2e-7f4f21983b07",
             "Value": {
                 "id": "611153d7-8c65-483a-bd87-dc4fd6be4c63",
-                "resourcePath": "shaders\\testShader\\testShader.yy",
+                "resourcePath": "shaders\\blurShaderNew\\blurShaderNew.yy",
                 "resourceType": "GMShader"
             }
         },

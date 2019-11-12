@@ -1,7 +1,7 @@
-uPixelH = shader_get_uniform(testShader, "imageH");
-uPixelW = shader_get_uniform(testShader, "imageW");
+uPixelH = shader_get_uniform(bwShader, "imageH");
+uPixelW = shader_get_uniform(bwShader, "imageW");
 
-u_uvs = shader_get_uniform(testShader, "uvs");
+u_uvs = shader_get_uniform(bwShader, "uvs");
 var uvs_all = sprite_get_uvs(casinoBuildingSmall_spr, 0);
 uvs = [uvs_all[0], uvs_all[1], uvs_all[2], uvs_all[3]];
 
