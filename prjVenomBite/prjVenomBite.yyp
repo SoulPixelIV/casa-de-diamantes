@@ -2799,6 +2799,14 @@
             }
         },
         {
+            "Key": "e3500cd8-da8b-43b3-8bd5-888a8e5f9277",
+            "Value": {
+                "id": "640847ec-89ab-4c8c-ac6b-41da922c38e6",
+                "resourcePath": "sprites\\woodBridge_spr\\woodBridge_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "e3c03457-afc5-44d2-b759-89a80aeaeb41",
             "Value": {
                 "id": "ea6cf075-9dc3-4dfe-b970-452b2559c385",
@@ -2819,6 +2827,14 @@
             "Value": {
                 "id": "0589981c-971a-4091-af28-4024e4b01d65",
                 "resourcePath": "objects\\globalSettings_obj\\globalSettings_obj.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "e6b88372-4d4f-4150-a0d3-5f4dab58690d",
+            "Value": {
+                "id": "b0ed4383-3043-49a2-bb1b-265294e026c2",
+                "resourcePath": "objects\\woodBridge_obj\\woodBridge_obj.yy",
                 "resourceType": "GMObject"
             }
         },
