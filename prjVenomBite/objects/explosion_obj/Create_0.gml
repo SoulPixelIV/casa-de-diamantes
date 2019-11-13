@@ -1,5 +1,3 @@
-/// @description Variables
-
 explosionDamage = 60;
 dealtDamage = false;
 lightSize = 4.4;

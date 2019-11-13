@@ -8,7 +8,7 @@ if (lifeLength < 0)
 	image_alpha -= dt / 10;
 	lightStrength -= dt / 10;
 }
-if (image_alpha == 0)
+if (image_alpha < 0.1)
 {
 	instance_destroy();
 }
