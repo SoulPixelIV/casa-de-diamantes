@@ -43,5 +43,5 @@ else
 	    gpu_set_blendmode(bm_normal);
 	}
 	surface_reset_target();
-	draw_surface_ext(surface, 0, 0, 1/surfaceScale, 1/surfaceScale, 0, c_white, 0.5);
+	draw_surface_ext(surface, 0, 0, 1/surfaceScale, 1/surfaceScale, 0, c_white, 0.1);
 }
