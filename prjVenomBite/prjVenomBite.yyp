@@ -135,6 +135,14 @@
             }
         },
         {
+            "Key": "0a4c12b8-7999-4a63-9e24-973193ce7cc0",
+            "Value": {
+                "id": "1624cc61-696a-4478-b84d-8b3f2aaefa7f",
+                "resourcePath": "tilesets\\caveTiles\\caveTiles.yy",
+                "resourceType": "GMTileSet"
+            }
+        },
+        {
             "Key": "0bc37551-88ad-45ca-ba09-33ccccbb6d7d",
             "Value": {
                 "id": "e45343c1-d31c-4cfd-b48a-d604e9f1edcd",
@@ -927,6 +935,14 @@
             }
         },
         {
+            "Key": "4bb09b81-1e99-4af4-ad02-a246ed998c61",
+            "Value": {
+                "id": "fca4da3c-6398-408e-b8db-19e5d3becfeb",
+                "resourcePath": "sprites\\caveTiles_spr\\caveTiles_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "4f9c6178-1021-4954-9ed4-10056c58a875",
             "Value": {
                 "id": "0b9a10ec-92d3-42b1-a9ec-dd3cf9de326a",
@@ -1300,6 +1316,14 @@
                 "id": "4f3289eb-a1d4-4383-a976-492542198885",
                 "resourcePath": "objects\\healthpack_obj\\healthpack_obj.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "6dadcfc4-9bd1-4381-ae05-6153fadf3676",
+            "Value": {
+                "id": "74b3b8f2-dc9b-4066-a448-30cd4db75ac2",
+                "resourcePath": "sprites\\lampForm_spr\\lampForm_spr.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1690,7 +1714,7 @@
             "Key": "86828b18-608a-45ae-b6bd-ed9289e63699",
             "Value": {
                 "id": "6f62e65a-98ee-4f22-88e8-84687b13be1b",
-                "resourcePath": "tilesets\\metalGround\\metalGround.yy",
+                "resourcePath": "tilesets\\caveTilesOld\\caveTilesOld.yy",
                 "resourceType": "GMTileSet"
             }
         },
@@ -2106,7 +2130,7 @@
             "Key": "a9cb15d0-8a88-4c5d-a07f-cdedafa195e9",
             "Value": {
                 "id": "1492a2e8-0263-4b46-944c-ce71a5691cbe",
-                "resourcePath": "sprites\\metalGround_spr\\metalGround_spr.yy",
+                "resourcePath": "sprites\\caveTilesOld_spr\\caveTilesOld_spr.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -2764,6 +2788,14 @@
                 "id": "456fbf16-43ac-4de8-bc47-2b5032cc9d77",
                 "resourcePath": "sprites\\spr_light_renderer\\spr_light_renderer.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "dfe289d7-6925-4d97-bc2c-d12130a43741",
+            "Value": {
+                "id": "dda21399-8d03-4279-bbbd-84aab1ba9335",
+                "resourcePath": "objects\\lampForm_obj\\lampForm_obj.yy",
+                "resourceType": "GMObject"
             }
         },
         {
