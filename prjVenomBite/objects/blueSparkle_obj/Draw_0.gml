@@ -1,4 +1,4 @@
 /// @description Lensflare
 
 draw_self();
-draw_sprite(lensflareYellow_spr, 0, x, y + 6);
+draw_sprite(lensflareBlue_spr, 0, x, y + 6);

@@ -2127,6 +2127,14 @@
             }
         },
         {
+            "Key": "a537359f-6d94-4db4-a681-c3c6d1701a12",
+            "Value": {
+                "id": "1b515377-b539-4887-90e2-952c43e88893",
+                "resourcePath": "sprites\\lensflareRed_spr\\lensflareRed_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "a6038d91-d544-40af-9fd9-4d96d9162eea",
             "Value": {
                 "id": "fc2c6baf-8811-4e0e-a957-3017d784078a",
@@ -3164,6 +3172,14 @@
                 "id": "1ca1ff24-7b06-4b54-a33e-d88751873095",
                 "resourcePath": "rooms\\r_test\\r_test.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "fcf4c7eb-f969-4875-840c-7b41f15a51ad",
+            "Value": {
+                "id": "e96875a4-f7d5-410f-a436-6f3edb3c48e3",
+                "resourcePath": "sprites\\lensflareBlue_spr\\lensflareBlue_spr.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
