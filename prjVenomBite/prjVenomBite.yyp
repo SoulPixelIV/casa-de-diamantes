@@ -151,6 +151,14 @@
             }
         },
         {
+            "Key": "0c8c63eb-1b61-46c0-8232-da115052a115",
+            "Value": {
+                "id": "63e7b425-e1d3-49a2-b598-afc91fe73648",
+                "resourcePath": "objects\\blueSparkle_obj\\blueSparkle_obj.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "0d0bd69a-659c-467b-b7aa-1e6280e37644",
             "Value": {
                 "id": "3f883fd8-256a-40a2-8fc7-77ee30b63761",
@@ -492,6 +500,14 @@
                 "id": "8555b535-9099-4266-9cc2-07af4db4921e",
                 "resourcePath": "scripts\\lighting_debug_shadow_casters\\lighting_debug_shadow_casters.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "29603ced-d0b8-4496-8936-3a8a15657cbb",
+            "Value": {
+                "id": "095ff0cb-fec3-4239-b36d-8b2e4ff84aab",
+                "resourcePath": "sprites\\debugHor_spr\\debugHor_spr.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1727,6 +1743,14 @@
             }
         },
         {
+            "Key": "881a8ae1-cb39-4844-afec-01ffb5f729dc",
+            "Value": {
+                "id": "402da97d-9d64-48f2-a08a-e4a2aec5f377",
+                "resourcePath": "sprites\\redSparkle_spr\\redSparkle_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "885a6ebf-4b2a-43ea-9558-4c20351bee4a",
             "Value": {
                 "id": "53de58b2-706d-4183-a842-2943f6bb6d50",
@@ -1871,6 +1895,14 @@
             }
         },
         {
+            "Key": "959bcafd-9726-436b-9469-fe28e740d082",
+            "Value": {
+                "id": "98e7b459-d983-4519-9c40-555f8b382004",
+                "resourcePath": "sprites\\blueSparkle_spr\\blueSparkle_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "95b698cb-89f1-486f-90e5-d4fffd3f9a53",
             "Value": {
                 "id": "8395369f-b64e-4e1c-865f-c0504f1281c7",
@@ -1927,6 +1959,14 @@
             }
         },
         {
+            "Key": "98d5f8d8-655d-4940-86c8-a519c095c639",
+            "Value": {
+                "id": "daacc6b9-f7f2-4c26-88b9-56c704f5d841",
+                "resourcePath": "objects\\sparkleSpawnerX_obj\\sparkleSpawnerX_obj.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "9911ba89-6846-4739-8a9b-e1845197e47b",
             "Value": {
                 "id": "1685666f-d2b1-4897-9019-3fe372f38cb3",
@@ -1948,6 +1988,14 @@
                 "id": "78286008-38fd-4823-a496-a13bce4bf471",
                 "resourcePath": "sprites\\explosionSmall_spr\\explosionSmall_spr.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "9a1df22e-d51a-4a71-8572-63142822c33b",
+            "Value": {
+                "id": "a572f921-ca4b-487e-87db-0c39bfc97be0",
+                "resourcePath": "objects\\redSparkle_obj\\redSparkle_obj.yy",
+                "resourceType": "GMObject"
             }
         },
         {

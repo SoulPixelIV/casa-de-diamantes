@@ -12,7 +12,8 @@
         "431fc4bd-f8ff-4b39-ac5c-272af2a98041",
         "0f0b26ec-6070-4dcd-bb6e-91b84d70aae2",
         "5dbfe7f8-d999-4f60-abb0-4207afaf69bd",
-        "62cbd05f-4144-404f-8a59-621e7e36470b"
+        "62cbd05f-4144-404f-8a59-621e7e36470b",
+        "29603ced-d0b8-4496-8936-3a8a15657cbb"
     ],
     "filterType": "GMSprite",
     "folderName": "Debug",
