@@ -9,7 +9,7 @@ mYPos = 0;
 xCoor = 100;
 yCoor = 100;
 
-zoomCooldown = 300;
+zoomCooldown = 5000;
 vignetteStrength = 1;
 vignetteStrengthTimer = 12;
 vignetteStrengthTimerSave = vignetteStrengthTimer;
