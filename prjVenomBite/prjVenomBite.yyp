@@ -1151,6 +1151,14 @@
             }
         },
         {
+            "Key": "652def16-fec3-470c-805b-17ca45bfe405",
+            "Value": {
+                "id": "f17c2625-b18f-4953-8fac-eb580c79168b",
+                "resourcePath": "sprites\\debugParticleSpawner2_spr\\debugParticleSpawner2_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "659c1ed8-6be9-4c9b-9a9a-5d0762ca1f13",
             "Value": {
                 "id": "dafa686e-cc86-4d06-85fc-677466a4399f",
@@ -1852,6 +1860,14 @@
                 "id": "ca3e75c8-9f9a-443c-885d-2a457ab4d2bf",
                 "resourcePath": "views\\8eca4227-5477-429d-a5d3-6485ae2fc436.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "8f2341d7-0568-4e10-a173-c1d0529fd808",
+            "Value": {
+                "id": "76410446-6ce4-4ec4-868c-7c1c35203bf2",
+                "resourcePath": "sprites\\moneyFrame_spr\\moneyFrame_spr.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

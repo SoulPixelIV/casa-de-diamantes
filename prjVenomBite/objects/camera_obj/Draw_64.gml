@@ -4,6 +4,7 @@ if (!noHUD)
 	//HUD
 	draw_text_ext(64, 512, "AMMO: X|Y", 1, 1);
 	draw_sprite_ext(windowWeapon_spr, 0, 1168, 608, 1, 1, 0, -1, 1);
+	draw_sprite_ext(moneyFrame_spr, 0, 1216, 18, 1, 1, 0, -1, 1);
 
 	//Pistol
 	if (global.pickedWeapon[0])
