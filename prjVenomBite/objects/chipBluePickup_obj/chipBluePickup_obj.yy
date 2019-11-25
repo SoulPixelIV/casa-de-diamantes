@@ -2,9 +2,28 @@
     "id": "c5d836f4-92c0-4394-9ef5-83631b762df8",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "chipBlue_obj",
+    "name": "chipBluePickup_obj",
     "eventList": [
-        
+        {
+            "id": "16cad1d5-e311-4328-a657-7a00c24f6e8e",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "c5d836f4-92c0-4394-9ef5-83631b762df8"
+        },
+        {
+            "id": "2cf88540-287d-44fd-9c2e-33208b0a9737",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 3,
+            "m_owner": "c5d836f4-92c0-4394-9ef5-83631b762df8"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,

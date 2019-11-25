@@ -70,6 +70,15 @@ if (hp < 0)
 	camera_obj.scoreShake = true;
 	camera_obj.vignetteStrength = 3;
 	player_obj.enemySlowmo = true;
+
+	//Drop Money
+	var maxAmount = random_range(moneyDropMin, moneyDropMax);
+	for (i = 0; i < maxAmount; i++)
+	{
+		instance_create_layer(x, y - 16, "Instances", chipBluePickup_obj);
+		instance_create_layer(x, y - 16, "Instances", chipRedPickup_obj);
+	}
+	
 	instance_destroy();
 }
 
