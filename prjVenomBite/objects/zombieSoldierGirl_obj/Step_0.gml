@@ -71,6 +71,22 @@ if (hp < 0)
 	camera_obj.vignetteStrength = 3;
 	player_obj.enemySlowmo = true;
 	instance_destroy();
+	
+	//Drop Money
+	var maxAmount = random_range(moneyDropMin, moneyDropMax);
+	for (i = 0; i < maxAmount; i++)
+	{
+		chip = choose(1,2,2)
+		
+		if (chip == 1)
+		{
+			instance_create_layer(x, y - 16, "Instances", chipBluePickup_obj);
+		}
+		if (chip == 2)
+		{
+			instance_create_layer(x, y - 16, "Instances", chipRedPickup_obj);
+		}
+	}
 }
 
 //Headshot Hitbox

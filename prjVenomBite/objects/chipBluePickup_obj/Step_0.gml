@@ -33,18 +33,10 @@ if (verspeed < 14)
 //horspeed
 if (!place_free(x + horspeed, y))
 {
-    while (place_free(x + sign(horspeed), y))
-    {
-        x += sign(horspeed * dt);
-    }
     horspeed = 0;
 } 
 //verspeed
 if (!place_free(x, y + verspeed))
 {
-    while (place_free(x, y + sign(verspeed)))
-    {
-        y += sign(verspeed * dt);
-    }
     verspeed = 0;   
 }

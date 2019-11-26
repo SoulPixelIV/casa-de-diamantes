@@ -75,8 +75,16 @@ if (hp < 0)
 	var maxAmount = random_range(moneyDropMin, moneyDropMax);
 	for (i = 0; i < maxAmount; i++)
 	{
-		instance_create_layer(x, y - 16, "Instances", chipBluePickup_obj);
-		instance_create_layer(x, y - 16, "Instances", chipRedPickup_obj);
+		chip = choose(1,1,1,1,2)
+		
+		if (chip == 1)
+		{
+			instance_create_layer(x, y - 16, "Instances", chipBluePickup_obj);
+		}
+		if (chip == 2)
+		{
+			instance_create_layer(x, y - 16, "Instances", chipRedPickup_obj);
+		}
 	}
 	
 	instance_destroy();

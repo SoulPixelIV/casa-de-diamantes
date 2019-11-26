@@ -5,9 +5,9 @@ y += verspeed * dt;
 
 if (horspeed > 0)
 {
-	horspeed -= 0.002 * dt;
+	horspeed -= 0.004 * dt;
 
-	if (horspeed < 0.3)
+	if (horspeed < 0.1)
 	{
 		horspeed = 0;
 	}
@@ -15,9 +15,9 @@ if (horspeed > 0)
 else
 {
 
-	horspeed += 0.002 * dt;
+	horspeed += 0.004 * dt;
 
-	if (horspeed > -0.3)
+	if (horspeed > -0.1)
 	{
 		horspeed = 0;
 	}
@@ -33,18 +33,10 @@ if (verspeed < 14)
 //horspeed
 if (!place_free(x + horspeed, y))
 {
-    while (place_free(x + sign(horspeed), y))
-    {
-        x += sign(horspeed * dt);
-    }
     horspeed = 0;
 } 
 //verspeed
 if (!place_free(x, y + verspeed))
 {
-    while (place_free(x, y + sign(verspeed)))
-    {
-        y += sign(verspeed * dt);
-    }
     verspeed = 0;   
 }

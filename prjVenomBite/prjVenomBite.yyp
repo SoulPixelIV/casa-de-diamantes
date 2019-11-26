@@ -2463,6 +2463,14 @@
             }
         },
         {
+            "Key": "bec8ca18-5e11-4c5b-a918-7fb46c189656",
+            "Value": {
+                "id": "5feb9434-f441-4574-80ec-3d13503768f7",
+                "resourcePath": "sprites\\chipViolet_spr\\chipViolet_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "bed280b1-1da2-45dd-a633-0b5be8b529b5",
             "Value": {
                 "id": "c7479c7f-3c89-46eb-96df-08bc7875044a",
