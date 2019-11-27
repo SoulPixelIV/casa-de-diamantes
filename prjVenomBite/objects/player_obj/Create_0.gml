@@ -23,6 +23,10 @@ zombieTimer = 550;
 slowmoTimer = 400;
 damageCooldown = 60;
 
+//Effects
+enemySlowmoTimer = 1.12;
+shotZoomTimer = 1.75;
+
 
 infection = 0;
 maxhp = hp;
@@ -53,8 +57,6 @@ slowmo = false;
 spinWeaponPos = 0;
 spinWeaponDir = 0;
 damageRecieved = false;
-enemySlowmoTimer = 1.07;
-shotZoomTimer = 1.75;
 huggingWall = false;
 dirCursor = 0;
 lightStrength = 0;
