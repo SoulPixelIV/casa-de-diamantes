@@ -967,6 +967,14 @@
             }
         },
         {
+            "Key": "4be78941-3cb1-414d-831a-8d72c1e8201e",
+            "Value": {
+                "id": "576a186c-ed68-4e1e-b19f-055986f37366",
+                "resourcePath": "objects\\chipVioletPickup_obj\\chipVioletPickup_obj.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "4f9c6178-1021-4954-9ed4-10056c58a875",
             "Value": {
                 "id": "0b9a10ec-92d3-42b1-a9ec-dd3cf9de326a",

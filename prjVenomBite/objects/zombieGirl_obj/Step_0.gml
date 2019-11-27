@@ -85,6 +85,10 @@ if (hp < 0)
 		{
 			instance_create_layer(x, y - 16, "Instances", chipRedPickup_obj);
 		}
+		if (chip == 3)
+		{
+			instance_create_layer(x, y - 16, "Instances", chipVioletPickup_obj);
+		}
 	}
 	
 	instance_destroy();
