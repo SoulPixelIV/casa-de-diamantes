@@ -1,30 +1,34 @@
 /// @description Vars
 
-event_inherited();
-polygon = polygon_from_instance(id);
-
+//Movement
 horspeed = 0;
 verspeed = 0;
-hp = 100;
-infection = 0;
-maxhp = hp;
-syringes = 3;
-syringesLost = 0;
 movSpeed = 3.4;
+movSpeedZombie = 1.8;
 dashSpeed = 5.6;
 wallJumps = 3;
-savePosX = x;
-savePosY = y;
-frictionActive = true;
-movSpeedZombie = 1.8;
-zombieTimer = 550;
-slowmoTimer = 400;
+
+//Physics
 gravityStrength = -0.42;
 jumpStrength = 7.6;
-shotJumpStrength = 9.2;
+frictionActive = true;
 frictionStrength = 0.3; //Lower is more slippery
+shotJumpStrength = 9.2;
 fallJumpSafety = 9;
+
+//Action
+hp = 100;
+syringes = 3;
+zombieTimer = 550;
+slowmoTimer = 400;
 damageCooldown = 60;
+
+
+infection = 0;
+maxhp = hp;
+syringesLost = 0;
+savePosX = x;
+savePosY = y;
 movement = true;
 invincible = false;
 onLadder = false;
@@ -34,7 +38,6 @@ plagueTransformation = false;
 shotZoom = false;
 enemySlowmo = false;
 currDir = 0;
-
 fullJump = false;
 grounded = false;
 crouching = false;
@@ -50,6 +53,14 @@ slowmo = false;
 spinWeaponPos = 0;
 spinWeaponDir = 0;
 damageRecieved = false;
+enemySlowmoTimer = 1.07;
+shotZoomTimer = 1.75;
+huggingWall = false;
+dirCursor = 0;
+lightStrength = 0;
+lightSize = 0;
+
+//Help Vars
 damageCooldownSave = damageCooldown;
 fallJumpSafetySave = fallJumpSafety;
 zombieTimerSave = zombieTimer;
@@ -57,14 +68,9 @@ wallJumpTimerSave = wallJumpTimer;
 slowmoTimerSave = slowmoTimer;
 wallJumpsSave = wallJumps;
 dashTimerSave = dashTimer;
-enemySlowmoTimer = 1.07;
 enemySlowmoTimerSave = enemySlowmoTimer;
-shotZoomTimer = 1.75;
 shotZoomTimerSave = shotZoomTimer;
-huggingWall = false;
-dirCursor = 0;
-lightStrength = 0;
-lightSize = 0;
 
+//Debug
 instance_create_layer(x + 1, y - 4, "Instances", playerBulletLine_obj);
 
