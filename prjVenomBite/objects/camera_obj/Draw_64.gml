@@ -4,7 +4,6 @@ if (!noHUD)
 	//HUD
 	draw_text_ext(64, 512, "AMMO: X|Y", 1, 1);
 	draw_sprite_ext(windowWeapon_spr, 0, 1168, 608, 1, 1, 0, -1, 1);
-	draw_sprite_ext(moneyFrame_spr, 0, 0, 0, 1, 1, 0, -1, 1);
 
 	//Pistol
 	if (global.pickedWeapon[0])
@@ -112,13 +111,13 @@ draw_sprite_ext(lensDirt_spr, 0, -200, -200, 1, 1, 0, -1, 0.17);
 if (deathVignette)
 {
 	draw_set_alpha(0.2);
-	draw_ellipse_colour(-200 * (viewXSave / 100), -200 * (viewYSave / 70), 1480 * (viewXSave / 100), 920 * (viewYSave / 70), c_black , c_red, false);
+	draw_ellipse_colour(-500 * (viewXSave / 100), -500 * (viewYSave / 70), 1480 * (viewXSave / 100), 920 * (viewYSave / 70), c_black , c_red, false);
 	draw_set_alpha(1);
 }
 else
 {
 	draw_set_alpha(0.055 * vignetteStrength);
-	draw_ellipse_colour(-200 * (viewXSave / 100), -200 * (viewYSave / 70), 1480 * (viewXSave / 100), 920 * (viewYSave / 70), c_black , c_purple, false);
+	draw_ellipse_colour(-500 * (viewXSave / 100), -500 * (viewYSave / 70), 1480 * (viewXSave / 100), 920 * (viewYSave / 70), c_black , c_purple, false);
 	draw_set_alpha(1);
 }
 
@@ -126,6 +125,8 @@ else
 if (!deathVignette)
 {
 	draw_set_alpha(0.1);
-	draw_ellipse_colour(-200 * (viewXSave / 100), -200 * (viewYSave / 70), 1480 * (viewXSave / 100), 920 * (viewYSave / 70), c_black , c_red, false);
+	draw_ellipse_colour(-500 * (viewXSave / 100), -500 * (viewYSave / 70), 1480 * (viewXSave / 100), 920 * (viewYSave / 70), c_black , c_red, false);
 	draw_set_alpha(1);
 }
+
+draw_sprite_ext(moneyFrame_spr, 0, 0, 0, 1, 1, 0, -1, 1);
