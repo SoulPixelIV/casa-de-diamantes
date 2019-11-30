@@ -47,6 +47,14 @@
             }
         },
         {
+            "Key": "017fd816-85be-47b2-98fc-583c6c3b1ca2",
+            "Value": {
+                "id": "2442ffed-dd6e-468e-87f1-50434d125d78",
+                "resourcePath": "objects\\digitsManager_obj\\digitsManager_obj.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "01e75341-095a-4b53-b390-e283a084a355",
             "Value": {
                 "id": "00dffc66-9dfe-47eb-bd2d-c23a8f0e5395",

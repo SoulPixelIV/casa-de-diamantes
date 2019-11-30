@@ -1,5 +1,6 @@
 /// @description Variables
 
+global.money = 0;
 global.scorepoints = 0;
 global.multiplier = 1;
 global.multiplierTimer = 300;
