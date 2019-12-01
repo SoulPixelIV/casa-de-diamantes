@@ -1127,14 +1127,6 @@
             }
         },
         {
-            "Key": "610151b4-7ab6-441c-b62a-f3895915c4ca",
-            "Value": {
-                "id": "6c891748-4855-41fd-bdfd-7b42adc0f923",
-                "resourcePath": "sprites\\healthbar_spr\\healthbar_spr.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "6198de6d-3e57-44b1-8d7c-e9bf48e92c18",
             "Value": {
                 "id": "b821d322-5d4f-4095-995c-a6003cb2d1ab",
@@ -2828,6 +2820,14 @@
                 "id": "7d4be644-947b-4e75-9927-733cfd03db5c",
                 "resourcePath": "scripts\\cameraZoomOut_scr\\cameraZoomOut_scr.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "d773ee78-ce13-40b4-a9e9-2c2e1539e8b4",
+            "Value": {
+                "id": "14bd47c0-cd5a-4645-a6c6-511806a1152e",
+                "resourcePath": "sprites\\healthbar_spr\\healthbar_spr.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

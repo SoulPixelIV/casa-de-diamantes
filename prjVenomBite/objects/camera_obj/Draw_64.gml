@@ -1,8 +1,33 @@
 /// @description GUI
+
+//Lens Dirt + Vignette
+draw_sprite_ext(lensDirt_spr, 0, -200, -200, 1, 1, 0, -1, 0.17);
+if (deathVignette)
+{
+	draw_set_alpha(0.2);
+	draw_ellipse_colour(-500 * (viewXSave / 100), -500 * (viewYSave / 70), 1480 * (viewXSave / 100), 920 * (viewYSave / 70), c_black , c_red, false);
+	draw_set_alpha(1);
+}
+else
+{
+	draw_set_alpha(0.055 * vignetteStrength);
+	draw_ellipse_colour(-500 * (viewXSave / 100), -500 * (viewYSave / 70), 1480 * (viewXSave / 100), 920 * (viewYSave / 70), c_black , c_purple, false);
+	draw_set_alpha(1);
+}
+
+//Vignette Effect
+if (!deathVignette)
+{
+	draw_set_alpha(0.1);
+	draw_ellipse_colour(-500 * (viewXSave / 100), -500 * (viewYSave / 70), 1480 * (viewXSave / 100), 920 * (viewYSave / 70), c_black , c_red, false);
+	draw_set_alpha(1);
+}
+
 if (!noHUD)
 {
 	//HUD
 	draw_text_ext(64, 512, "AMMO: X|Y", 1, 1);
+	draw_text(128,128, global.money);
 	draw_sprite_ext(windowWeapon_spr, 0, 1168, 608, 1, 1, 0, -1, 1);
 
 	//Pistol
@@ -28,8 +53,8 @@ if (!noHUD)
 	draw_text_colour(32, 688, "Speed: " + string(global.timeScale), c_purple, c_aqua, c_aqua, c_purple, 1);
 
 	draw_sprite_ext(windowBackground_spr, 0, 1168, 520, 1, 1, rotation, -1, 1);
-	draw_sprite_ext(healthbarBorder_spr, 0, 32, 48, 1, 1, 0, -1, 1);
-	draw_sprite_ext(healthbar_spr, 0, 32, 48, player_obj.hp / 100, 1, 0, -1, 1);
+	draw_sprite_ext(healthbarBorder_spr, 0, 32, 16, 1, 1, 0, -1, 1);
+	draw_sprite_ext(healthbar_spr, 0, 32, 16, 1, player_obj.hp / 100, 0, -1, 1);
 	
 	if (player_obj.plagueTransformation)
 	{
@@ -105,28 +130,3 @@ if (player_obj.isZombie)
 	draw_text(128, 128, "PRESS 'F' TO BECOME HUMAN AGAIN!");
 	draw_set_font(neon_fnt);
 }
-
-//Lens Dirt + Vignette
-draw_sprite_ext(lensDirt_spr, 0, -200, -200, 1, 1, 0, -1, 0.17);
-if (deathVignette)
-{
-	draw_set_alpha(0.2);
-	draw_ellipse_colour(-500 * (viewXSave / 100), -500 * (viewYSave / 70), 1480 * (viewXSave / 100), 920 * (viewYSave / 70), c_black , c_red, false);
-	draw_set_alpha(1);
-}
-else
-{
-	draw_set_alpha(0.055 * vignetteStrength);
-	draw_ellipse_colour(-500 * (viewXSave / 100), -500 * (viewYSave / 70), 1480 * (viewXSave / 100), 920 * (viewYSave / 70), c_black , c_purple, false);
-	draw_set_alpha(1);
-}
-
-//Vignette Effect
-if (!deathVignette)
-{
-	draw_set_alpha(0.1);
-	draw_ellipse_colour(-500 * (viewXSave / 100), -500 * (viewYSave / 70), 1480 * (viewXSave / 100), 920 * (viewYSave / 70), c_black , c_red, false);
-	draw_set_alpha(1);
-}
-
-draw_sprite_ext(moneyFrame_spr, 0, 0, 0, 1, 1, 0, -1, 1);
