@@ -1,5 +1,30 @@
 /// @description Movement
 
 image_angle = player_obj.dirCursor;
-x = player_obj.x + 1;
-y = player_obj.y - 6;
+
+if (!player_obj.spin)
+{
+	if (player_obj.currDir == 0)
+	{
+		x = player_obj.x + 4 - player_obj.spinWeaponPos;
+		y = player_obj.y - 4.3;
+	}
+	else
+	{
+		x = player_obj.x - 4 + player_obj.spinWeaponPos;
+		y = player_obj.y - 4.3;
+	}
+}
+else
+{
+	if (player_obj.currDir == 0)
+	{
+		x = player_obj.x + 4 - player_obj.spinWeaponPos;
+		y = player_obj.y - 4.3;
+	}
+	else
+	{
+		x = player_obj.x - 4 + player_obj.spinWeaponPos;
+		y = player_obj.y - 4.3;
+	}
+}
