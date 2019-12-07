@@ -55,7 +55,7 @@ if (!noHUD)
 
 	draw_sprite_ext(windowBackground_spr, 0, 1168, 520, 1, 1, rotation, -1, 1);
 	draw_sprite_ext(healthbarBorder_spr, 0, 32, 16, 1, 1, 0, -1, 1);
-	draw_sprite_ext(healthbar_spr, 0, 32, 16, 1, player_obj.hp / 100, 0, -1, 1);
+	//draw_sprite_ext(healthbar_spr, 0, 32, 16, 1, player_obj.hp / 100, 0, -1, 1);
 	
 	if (player_obj.plagueTransformation)
 	{

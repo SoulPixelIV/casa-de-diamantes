@@ -128,7 +128,7 @@ if (attackRecoilTimer < 0)
 	attackRecoilTimer = attackRecoilTimerSave;
 	image_speed = 1;
 	sprite_index = zombieGirl_spr;
-	damageCollision = false;
+	//damageCollision = false;
 }
 
 if (attackBoost)
