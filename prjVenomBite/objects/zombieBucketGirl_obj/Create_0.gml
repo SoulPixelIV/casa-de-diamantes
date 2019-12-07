@@ -6,6 +6,7 @@ hp = 225;
 level = 2;
 hpBucket = 75;
 damage = 35;
+damageCollision = true;
 points = 125;
 knockback = 7;
 movSpeed = 0.33;

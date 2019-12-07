@@ -105,3 +105,42 @@ with (headshotHitbox)
 	}
 }
 
+//Attack
+if (distance_to_object(player_obj) < 200 && player_obj.y > y - 32 && player_obj.y < y + 32)
+{
+	attackCooldown -= dt;
+}
+if (attackCooldown < 0)
+{
+	sprite_index = zombieGirlAttack1_spr;
+	attackInProg = true;
+	attackBoost = true;
+	attackCooldown = attackCooldownSave;
+}
+if (attackInProg && image_index == image_number -1)
+{
+	image_speed = 0;
+	attackRecoilTimer -= dt;
+	damageCollision = true;	
+}
+if (attackRecoilTimer < 0)
+{
+	attackRecoilTimer = attackRecoilTimerSave;
+	image_speed = 1;
+	sprite_index = zombieGirl_spr;
+	damageCollision = false;
+}
+
+if (attackBoost)
+{
+	if (image_xscale == 1)
+	{
+		horspeed = 15;
+	}
+	else
+	{
+		horspeed = -15;
+	}
+	attackBoost = false;
+}
+

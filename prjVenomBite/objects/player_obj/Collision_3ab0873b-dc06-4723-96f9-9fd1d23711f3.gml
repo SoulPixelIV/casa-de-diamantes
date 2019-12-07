@@ -2,7 +2,10 @@
 
 if (!damageRecieved && !isZombie)
 {
-	hp -= other.damage;
+	if (other.damageCollision)
+	{
+		hp -= other.damage;
+	}
 
 	if (horspeed > 0)
 	{

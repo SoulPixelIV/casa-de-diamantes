@@ -8,6 +8,7 @@ moneyDropMin = 3;
 moneyDropMax = 7;
 attackCooldown = 150;
 damage = 5;
+damageCollision = true;
 points = 125;
 knockback = 8;
 movSpeed = 0.57;
