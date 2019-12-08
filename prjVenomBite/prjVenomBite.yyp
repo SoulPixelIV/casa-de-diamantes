@@ -663,6 +663,14 @@
             }
         },
         {
+            "Key": "37475be7-56f9-47b0-a40e-b410e1a7269c",
+            "Value": {
+                "id": "00a9c1cb-a829-48bf-b64f-2ec75f572cb7",
+                "resourcePath": "sprites\\healthbarTop_spr\\healthbarTop_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "378dea68-3862-43ef-8d62-dbd64009fd42",
             "Value": {
                 "id": "d7858295-990b-4ea3-8bc4-482e419bc123",
@@ -692,6 +700,14 @@
                 "id": "bb088163-3b1f-4f92-af88-5a479f7609a2",
                 "resourcePath": "objects\\colliderSideway_obj\\colliderSideway_obj.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "392279c7-f9b9-4604-8078-4ca5507b17ed",
+            "Value": {
+                "id": "9e61c9ff-8795-4e10-8a65-0626b4044980",
+                "resourcePath": "sprites\\healthbar_spr\\healthbar_spr.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -2687,6 +2703,14 @@
             }
         },
         {
+            "Key": "cdb7cf61-7202-485e-9a37-ee0e703ed5e0",
+            "Value": {
+                "id": "1551f955-bdc6-4dc8-a0be-c1cea136dcdd",
+                "resourcePath": "sprites\\healthbarTop2_spr\\healthbarTop2_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "ce9d59ef-e7e4-473c-aa32-94145f89ea01",
             "Value": {
                 "id": "6c69dc7f-8a36-4a6e-bba1-1744cc073e2b",
@@ -2836,14 +2860,6 @@
                 "id": "7d4be644-947b-4e75-9927-733cfd03db5c",
                 "resourcePath": "scripts\\cameraZoomOut_scr\\cameraZoomOut_scr.yy",
                 "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "d773ee78-ce13-40b4-a9e9-2c2e1539e8b4",
-            "Value": {
-                "id": "14bd47c0-cd5a-4645-a6c6-511806a1152e",
-                "resourcePath": "sprites\\healthbar_spr\\healthbar_spr.yy",
-                "resourceType": "GMSprite"
             }
         },
         {

@@ -54,8 +54,10 @@ if (!noHUD)
 	draw_text_colour(32, 688, "Speed: " + string(global.timeScale), c_purple, c_aqua, c_aqua, c_purple, 1);
 
 	draw_sprite_ext(windowBackground_spr, 0, 1168, 520, 1, 1, rotation, -1, 1);
-	draw_sprite_ext(healthbarBorder_spr, 0, 32, 16, 1, 1, 0, -1, 1);
-	//draw_sprite_ext(healthbar_spr, 0, 32, 16, 1, player_obj.hp / 100, 0, -1, 1);
+	draw_sprite_ext(healthbarBorder_spr, 0, 32, 16, 2, 2, 0, -1, 1);
+	image_speed = 0.1;
+	draw_sprite_ext(healthbarTop2_spr, -1, 32, 22, 2, 2, 0, -1, 1);
+	draw_sprite_ext(healthbar_spr, 0, 32, 256, 2, 2 * (player_obj.hp / 100) , 0, -1, 1);
 	
 	if (player_obj.plagueTransformation)
 	{
