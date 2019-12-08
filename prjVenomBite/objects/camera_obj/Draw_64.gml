@@ -95,7 +95,7 @@ if (!noHUD)
 	//Syringes
 	for (i = 0; i < player_obj.syringes; i++)
 	{
-		draw_sprite_ext(syringe_spr, 0, 86, 48 + 48 * i, 1, 1, -1, -1, 1);
+		draw_sprite_ext(syringe_spr, -1, 86, 48 + 48 * i, 2, 2, -1, -1, 1);
 	}	
 	
 	if (global.pickedWeapon[0])
