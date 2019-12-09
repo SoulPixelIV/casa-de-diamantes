@@ -575,6 +575,14 @@
             }
         },
         {
+            "Key": "313924c2-b345-40a3-b31a-5020a4c6f055",
+            "Value": {
+                "id": "749a3fd2-5f43-4f60-bbc3-85e1a159a802",
+                "resourcePath": "scripts\\zombieGirlFrontDash_scr\\zombieGirlFrontDash_scr.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "31577ad6-f08e-44cf-803c-4d754f53e39c",
             "Value": {
                 "id": "00a05cab-ee53-4402-ab49-1d890819ded7",
@@ -3376,7 +3384,8 @@
         "cc6f7f61-1e60-40ae-9c11-41eed5a452eb",
         "3efd9d36-f4e9-4931-8cf7-113d75c93e9c",
         "ab54a712-5b9d-4388-8375-b3501845852b",
-        "67f04608-7f1b-4d76-8f81-a7c369858ad5"
+        "67f04608-7f1b-4d76-8f81-a7c369858ad5",
+        "313924c2-b345-40a3-b31a-5020a4c6f055"
     ],
     "tutorial": ""
 }

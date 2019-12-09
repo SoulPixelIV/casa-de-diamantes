@@ -106,7 +106,7 @@ with (headshotHitbox)
 }
 
 //Attack
-if (!attackInProg && distance_to_object(player_obj) < 200 && player_obj.y > y - 32 && player_obj.y < y + 32)
+if (!attackInProg && distance_to_object(player_obj) < 200)
 {
 	attackCooldown -= dt;
 }
@@ -119,27 +119,15 @@ if (attackCooldown < 0)
 if (attackInProg && image_index == image_number -1)
 {
 	image_speed = 0;
-	damageCollision = true;	
-	attackBoost = true;
-}
-
-if (attackBoost)
-{
-	if (image_xscale == 1)
+	damageCollision = true;
+	//Front Dash
+	if (player_obj.y > y - 32 && player_obj.y < y + 32)
 	{
-		horspeed = boostSpeed;
+		zombieGirlFrontDash_scr(id);
 	}
 	else
 	{
-		horspeed = -boostSpeed;
-	}
-	if (horspeed < 0.3 || horspeed > -0.3)
-	{
-		attackBoost = false;
-		image_speed = 1;
-		sprite_index = zombieGirl_spr;
-		damageCollision = false;
-		attackInProg = false;
+		zombieGirlFrontDash_scr(id);
 	}
 }
 
