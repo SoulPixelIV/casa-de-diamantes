@@ -578,7 +578,7 @@
             "Key": "313924c2-b345-40a3-b31a-5020a4c6f055",
             "Value": {
                 "id": "749a3fd2-5f43-4f60-bbc3-85e1a159a802",
-                "resourcePath": "scripts\\zombieGirlFrontDash_scr\\zombieGirlFrontDash_scr.yy",
+                "resourcePath": "scripts\\frontDash_scr\\frontDash_scr.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -748,6 +748,14 @@
                 "id": "dd7f1acd-d188-4d47-86a5-fc609d1c36fa",
                 "resourcePath": "scripts\\shadow_casters_exist\\shadow_casters_exist.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "3d67f1ee-47bb-47ef-b053-d69d5a4b66a8",
+            "Value": {
+                "id": "1b86bbc3-7b4b-4c3b-9702-b57b205fd428",
+                "resourcePath": "sprites\\scoreBorder_spr\\scoreBorder_spr.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

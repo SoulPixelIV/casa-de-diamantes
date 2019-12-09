@@ -56,7 +56,6 @@ if (!noHUD)
 	draw_sprite_ext(windowBackground_spr, 0, 1168, 520, 1, 1, rotation, -1, 1);
 	draw_sprite_ext(healthbarBorder_spr, 0, 32, 16, 2, 2, 0, -1, 1);
 	image_speed = 0.1;
-	//22
 	draw_sprite_ext(healthbarTop2_spr, -1, 32, 234 - (player_obj.hp * 2.12), 2, 2, 0, -1, 1);
 	draw_sprite_ext(healthbar_spr, 0, 32, 256, 2, 2 * (player_obj.hp / 100) , 0, -1, 1);
 	
@@ -86,10 +85,11 @@ if (!noHUD)
 		rotation -= scoreMovementSpeed * dt;
 	}
 		
-	draw_sprite_ext(windowBackground_spr, 0, 1184, 44, 1, 1, rotation, -1, 1);	
-	draw_text_transformed_colour(1120, 32, string(global.scorepoints) + "P", 1, 1, rotation, c_purple, c_aqua, c_aqua, c_purple, 1);
+	//draw_sprite_ext(windowBackground_spr, 0, 1184, 44, 1, 1, rotation, -1, 1);	
+	draw_sprite_ext(scoreBorder_spr, -1, 1078, 16, 2, 2, 0, -1, 1);
+	draw_text_transformed_colour(1184, 22, string(global.scorepoints) + "P", 1, 1, 0, c_black, c_black, c_black, c_black, 1);
 	
-	draw_sprite_ext(windowBackground_spr, 0, 1248, 76, 0.45, 1, rotation, -1, 1);	
+	//draw_sprite_ext(windowBackground_spr, 0, 1248, 76, 0.45, 1, rotation, -1, 1);	
 	draw_text_transformed_colour(1220, 64, string(global.multiplier) + "><", 1, 1, rotation, c_purple, c_aqua, c_aqua, c_purple, 1);
 	draw_set_font(neon_fnt);
 

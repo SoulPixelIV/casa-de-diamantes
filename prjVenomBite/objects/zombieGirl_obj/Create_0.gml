@@ -7,8 +7,11 @@ level = 1;
 moneyDropMin = 1;
 moneyDropMax = 4;
 damage = 15;
-attackCooldown = 600;
-boostSpeed = 15;
+attackCooldown = 100;
+delay = false;
+isDashing = false;
+attackDelay = 20;
+boostSpeed = 4.2;
 attackInProg = false;
 damageCollision = false;
 points = 125;
@@ -17,6 +20,7 @@ movSpeed = 0.45;
 gravityStrength = -0.32;
 
 attackCooldownSave = attackCooldown;
+attackDelaySave = attackDelay;
 
 headshotHitbox = instance_create_layer(x, y - 16, "Instances", headshotHitbox_obj);
 with (headshotHitbox)

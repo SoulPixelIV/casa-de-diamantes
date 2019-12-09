@@ -1,66 +1,66 @@
-if (argument0)
+if (argument1)
 {
-	if (player_obj.horspeed > 0)
+	if (argument0.horspeed > 0)
 	{
-		if (!player_obj.isDashing)
+		if (!argument0.isDashing)
 		{
-			player_obj.horspeed -= player_obj.frictionStrength * player_obj.dt;
+			argument0.horspeed -= argument0.frictionStrength * argument0.dt;
 		}
 		else
 		{
-			player_obj.horspeed -= (player_obj.frictionStrength * player_obj.dt) / 4;
+			argument0.horspeed -= (argument0.frictionStrength * argument0.dt) / 4;
 		}
-		if (player_obj.horspeed < 0.3)
+		if (argument0.horspeed < 0.3)
 		{
-			player_obj.horspeed = 0;
+			argument0.horspeed = 0;
 		}
 	}
 	else
 	{
-		if (!player_obj.isDashing)
+		if (!argument0.isDashing)
 		{
-			player_obj.horspeed += player_obj.frictionStrength * player_obj.dt;
+			argument0.horspeed += argument0.frictionStrength * argument0.dt;
 		}
 		else
 		{
-			player_obj.horspeed += (player_obj.frictionStrength * player_obj.dt) / 4;
+			argument0.horspeed += (argument0.frictionStrength * argument0.dt) / 4;
 		}
-		if (player_obj.horspeed > -0.3)
+		if (argument0.horspeed > -0.3)
 		{
-			player_obj.horspeed = 0;
+			argument0.horspeed = 0;
 		}
 	}
 }
 else
 {
-	if (player_obj.horspeed > 0)
+	if (argument0.horspeed > 0)
 	{
-		if (!player_obj.isDashing)
+		if (!argument0.isDashing)
 		{
-			player_obj.horspeed -= player_obj.dt;
+			argument0.horspeed -= argument0.dt;
 		}
 		else
 		{
-			player_obj.horspeed -= player_obj.dt / 4;
+			argument0.horspeed -= argument0.dt / 4;
 		}
-		if (player_obj.horspeed < 0.3)
+		if (argument0.horspeed < 0.3)
 		{
-			player_obj.horspeed = 0;
+			argument0.horspeed = 0;
 		}
 	}
 	else
 	{
-		if (!player_obj.isDashing)
+		if (!argument0.isDashing)
 		{
-			player_obj.horspeed += player_obj.dt;
+			argument0.horspeed += argument0.dt;
 		}
 		else
 		{
-			player_obj.horspeed += player_obj.dt / 4;
+			argument0.horspeed += argument0.dt / 4;
 		}
-		if (player_obj.horspeed > -0.3)
+		if (argument0.horspeed > -0.3)
 		{
-			player_obj.horspeed = 0;
+			argument0.horspeed = 0;
 		}
 	}
 }

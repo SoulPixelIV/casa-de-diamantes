@@ -47,11 +47,11 @@ if (!place_meeting(x, y, colliderSideway_obj))
 }
 if (frictionActive)
 {
-	frictionActive_scr(true);
+	frictionActive_scr(id, true);
 }
 else
 {
-	frictionActive_scr(false);
+	frictionActive_scr(id, false);
 }
 
 //Gravity
