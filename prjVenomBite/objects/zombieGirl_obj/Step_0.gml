@@ -6,7 +6,7 @@ x += horspeed * dt;
 y += verspeed * dt;
 
 dirLookat = point_direction(x, y, player_obj.x, player_obj.y);
-if (distance_to_object(player_obj) < 128 && distance_to_object(player_obj) > 16)
+if (distance_to_object(player_obj) < 128 && distance_to_object(player_obj) > 16 && !attackBoost)
 {
 	if (player_obj.x > x)
 	{
@@ -106,7 +106,7 @@ with (headshotHitbox)
 }
 
 //Attack
-if (distance_to_object(player_obj) < 200 && player_obj.y > y - 32 && player_obj.y < y + 32)
+if (!attackInProg && distance_to_object(player_obj) < 200 && player_obj.y > y - 32 && player_obj.y < y + 32)
 {
 	attackCooldown -= dt;
 }
@@ -114,33 +114,32 @@ if (attackCooldown < 0)
 {
 	sprite_index = zombieGirlAttack1_spr;
 	attackInProg = true;
-	attackBoost = true;
 	attackCooldown = attackCooldownSave;
 }
 if (attackInProg && image_index == image_number -1)
 {
 	image_speed = 0;
-	attackRecoilTimer -= dt;
 	damageCollision = true;	
-}
-if (attackRecoilTimer < 0)
-{
-	attackRecoilTimer = attackRecoilTimerSave;
-	image_speed = 1;
-	sprite_index = zombieGirl_spr;
-	//damageCollision = false;
+	attackBoost = true;
 }
 
 if (attackBoost)
 {
 	if (image_xscale == 1)
 	{
-		horspeed = 15;
+		horspeed = boostSpeed;
 	}
 	else
 	{
-		horspeed = -15;
+		horspeed = -boostSpeed;
 	}
-	attackBoost = false;
+	if (horspeed < 0.3 || horspeed > -0.3)
+	{
+		attackBoost = false;
+		image_speed = 1;
+		sprite_index = zombieGirl_spr;
+		damageCollision = false;
+		attackInProg = false;
+	}
 }
 
