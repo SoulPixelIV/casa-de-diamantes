@@ -5,8 +5,6 @@ dt = (delta_time / 1000000) * globalSettings_obj.TARGET_FRAMERATE;
 x += horspeed * dt;
 y += verspeed * dt;
 
-frictionActive_scr(id, false);
-
 dirLookat = point_direction(x, y, player_obj.x, player_obj.y);
 if (distance_to_object(player_obj) < 128 && distance_to_object(player_obj) > 16 && !attackInProg)
 {
@@ -27,9 +25,22 @@ if (distance_to_object(player_obj) < 128 && distance_to_object(player_obj) > 16 
 		image_xscale = 1;
 	}
 }
-else
+
+if (horspeed > 0.3)
 {
-	horspeed = 0;
+	horspeed -= dt * 8;
+}
+if (horspeed < 0.3)
+{
+	horspeed += dt * 8;
+}
+
+if (horspeed < 0.3 || horspeed > -0.3)
+{
+	if (!delay)
+	{
+		horspeed = 0;
+	}
 }
 
 //Gravity
