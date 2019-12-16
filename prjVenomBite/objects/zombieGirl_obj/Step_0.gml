@@ -6,33 +6,44 @@ x += horspeed * dt;
 y += verspeed * dt;
 
 dirLookat = point_direction(x, y, player_obj.x, player_obj.y);
-if (distance_to_object(player_obj) < 128 && distance_to_object(player_obj) > 16 && !attackInProg)
+
+if (!attackInProg)
 {
-	if (player_obj.x > x)
+	if (distance_to_object(player_obj) < 128 && distance_to_object(player_obj) > 16)
 	{
-		horspeed = movSpeed;
+		if (player_obj.x > x)
+		{
+			horspeed = movSpeed;
+		}
+		else
+		{
+			horspeed = -movSpeed;
+		}
+		if (dirLookat > 90 && dirLookat < 270)
+		{
+			image_xscale = -1;
+		}
+		else
+		{
+			image_xscale = 1;
+		}
 	}
 	else
 	{
-		horspeed = -movSpeed;
-	}
-	if (dirLookat > 90 && dirLookat < 270)
-	{
-		image_xscale = -1;
-	}
-	else
-	{
-		image_xscale = 1;
+		horspeed = 0;
 	}
 }
 
-if (horspeed > 0.3)
+if (attackInProg && !delay)
 {
-	horspeed -= dt * 8;
-}
-if (horspeed < 0.3)
-{
-	horspeed += dt * 8;
+	if (horspeed > 0.3)
+	{
+		horspeed -= dt * 8;
+	}
+	if (horspeed < 0.3)
+	{
+		horspeed += dt * 8;
+	}
 }
 
 if (horspeed < 0.3 || horspeed > -0.3)
