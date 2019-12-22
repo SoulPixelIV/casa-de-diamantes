@@ -10,5 +10,5 @@ lensFlareYPos = [];
 for (i = 0; i < 10; i++)
 {
 	lensFlareXPos[i] = random_range(x - 56, x + 56);
-	lensFlareYPos[i] = random_range(y - 28, y + 28);
+	lensFlareYPos[i] = random_range(y - 16, y + 16);
 }
