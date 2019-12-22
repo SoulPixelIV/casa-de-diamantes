@@ -4,12 +4,11 @@ dt = (delta_time / 1000000) * globalSettings_obj.TARGET_FRAMERATE;
 
 x += horspeed * dt;
 y += verspeed * dt;
-
 dirLookat = point_direction(x, y, player_obj.x, player_obj.y);
 
 if (!attackInProg)
 {
-	if (distance_to_object(player_obj) < 128 && distance_to_object(player_obj) > 16)
+	if (distance_to_object(player_obj) < playerSightMax && distance_to_object(player_obj) > playerSightMin)
 	{
 		if (player_obj.x > x)
 		{
@@ -34,33 +33,13 @@ if (!attackInProg)
 	}
 }
 
-if (attackInProg && !delay)
-{
-	if (horspeed > 0.3)
-	{
-		horspeed -= dt * 8;
-	}
-	if (horspeed < 0.3)
-	{
-		horspeed += dt * 8;
-	}
-}
-
-if (horspeed < 0.3 || horspeed > -0.3)
-{
-	if (!delay)
-	{
-		horspeed = 0;
-	}
-}
-
 //Gravity
 if (verspeed < 14)
 {
 	verspeed -= gravityStrength * dt;
 }
 
-//Collision
+//###Collision###
 //horspeed
 if (!place_free(x + horspeed, y))
 {
@@ -80,7 +59,7 @@ if (!place_free(x, y + verspeed))
     verspeed = 0;   
 }
 
-//Death
+//###Death###
 if (hp < 0)
 {
 	with (headshotHitbox)
@@ -125,22 +104,27 @@ with (headshotHitbox)
 	{
 		x = body.x;
 		y = body.y - 16;
-		//move_towards_point(body.x, body.y - 16, 3);
 	}
 }
 
-//Attack
+//###Attack###
+
+//Cooldown
 if (!attackInProg && distance_to_object(player_obj) < 200)
 {
 	attackCooldown -= dt;
 }
+
+//Prepare Attack
 if (attackCooldown < 0)
 {
 	sprite_index = zombieGirlAttack1_spr;
 	attackInProg = true;
 	attackCooldown = attackCooldownSave;
 }
-if (attackInProg && image_index > image_number - 1)
+
+//Start Attack
+if (attackInProg && image_index > image_number - 1 && !dashed)
 {
 	image_speed = 0;
 	damageCollision = true;
@@ -153,7 +137,9 @@ if (attackInProg && image_index > image_number - 1)
 	{
 		frontDash_scr(id);
 	}
+	dashed = true;
 }
+
 if (delay)
 {
 	attackDelay -= dt;
@@ -162,15 +148,9 @@ if (attackDelay < 0)
 {
 	delay = false;
 	attackDelay = attackDelaySave;
-}
-/*
-if (horspeed < 0.3 || horspeed > -0.3 && attackInProg && !delay)
-{
+	dashed = false;
+	attackInProg = false;
 	image_speed = 1;
 	sprite_index = zombieGirl_spr;
 	damageCollision = false;
-	attackInProg = false;
-	dashed = false;
 }
-
-*/

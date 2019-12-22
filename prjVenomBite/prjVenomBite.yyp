@@ -351,6 +351,14 @@
             }
         },
         {
+            "Key": "1ad01f27-e45c-4c23-9713-fe1121c14526",
+            "Value": {
+                "id": "1298a095-521c-4b86-88e0-0accfb6d3635",
+                "resourcePath": "sprites\\planeGreen_spr\\planeGreen_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "1bf8fa24-5782-419d-a33e-1e9ec101dc37",
             "Value": {
                 "id": "04ebe700-705d-41d9-b1ec-9877c6991505",
@@ -851,6 +859,14 @@
             "Value": {
                 "id": "a0338b05-fd2e-4507-93a1-56db4fa7d49c",
                 "resourcePath": "objects\\spotlightYellow_obj\\spotlightYellow_obj.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "41f17b9d-be99-4663-b71a-d9138163cc90",
+            "Value": {
+                "id": "5db10a5f-b0c3-4c34-8655-f3b34d3c194c",
+                "resourcePath": "objects\\planeGreen_obj\\planeGreen_obj.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -1543,6 +1559,14 @@
             }
         },
         {
+            "Key": "7685cc78-9213-4359-ae2d-40633327480c",
+            "Value": {
+                "id": "edc28efe-b7f1-449c-8649-6604b4ff1f5a",
+                "resourcePath": "objects\\ledStripe_obj\\ledStripe_obj.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "76a87d56-3096-417a-8b49-104ea72fadef",
             "Value": {
                 "id": "7b3b80f3-9be9-4e76-8721-eabdc0a059d3",
@@ -1724,6 +1748,14 @@
                 "id": "b5df9856-4cb4-4701-accf-8f74c9dd7dfb",
                 "resourcePath": "views\\81f49802-35f8-4710-99f9-92489bcae030.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "83369cc9-0e5f-41c1-bf58-622b737ddd35",
+            "Value": {
+                "id": "3870d6e8-f260-4705-a0d0-d82cce12fc20",
+                "resourcePath": "sprites\\ledStripe_spr\\ledStripe_spr.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1948,6 +1980,14 @@
                 "id": "74c981a6-498a-4fc5-98c6-9a086c25fbd3",
                 "resourcePath": "objects\\casinoBuildingFrontStairs_obj\\casinoBuildingFrontStairs_obj.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "9359f3ae-1427-45e6-9f7d-9375f05b9b39",
+            "Value": {
+                "id": "cdfb9495-23ae-4593-8d1c-a87ca1df9993",
+                "resourcePath": "sprites\\newZombie_spr\\newZombie_spr.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -2876,6 +2916,14 @@
                 "id": "34efcc44-325d-4eec-861a-559341ed0700",
                 "resourcePath": "objects\\caEffect_obj\\caEffect_obj.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "d640aa0e-e3f3-407e-9688-487ec798cf25",
+            "Value": {
+                "id": "829aebab-f3a7-47aa-894b-0aa6feaf5e65",
+                "resourcePath": "sprites\\zombieGirlRemake_spr\\zombieGirlRemake_spr.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

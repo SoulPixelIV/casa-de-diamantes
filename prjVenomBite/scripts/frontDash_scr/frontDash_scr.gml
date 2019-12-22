@@ -1,11 +1,4 @@
 var object = argument0;
 
-if (object.image_xscale == 1)
-{
-	object.horspeed = object.boostSpeed;
-}
-else
-{
-	object.horspeed = -object.boostSpeed;
-}
+object.horspeed = object.boostSpeed * object.image_xscale;
 object.delay = true;
