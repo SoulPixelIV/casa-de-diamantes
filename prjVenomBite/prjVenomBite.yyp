@@ -2151,6 +2151,14 @@
             }
         },
         {
+            "Key": "9d3028e8-a873-443e-a0de-b15b578b93ba",
+            "Value": {
+                "id": "6fb798b4-6859-484e-8f3e-45f0b8f07a03",
+                "resourcePath": "sprites\\debugVer_spr\\debugVer_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "9dd8577d-bb8f-4a3e-99e8-290b9f8344d7",
             "Value": {
                 "id": "03b851bc-c186-4edf-bd05-6597379b6616",
@@ -2388,6 +2396,14 @@
                 "id": "c054d279-fb54-4197-abd3-41f32076b6ff",
                 "resourcePath": "scripts\\lighting_update_camera\\lighting_update_camera.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "b2ac7ba6-322c-4c03-a785-f94e2a0c8611",
+            "Value": {
+                "id": "cec1b357-0a9e-499d-8c43-e77e183e4299",
+                "resourcePath": "objects\\sparkleSpawnerY_obj\\sparkleSpawnerY_obj.yy",
+                "resourceType": "GMObject"
             }
         },
         {
