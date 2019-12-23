@@ -10,7 +10,10 @@ if (hitbox != noone)
 
 	if (!dealtDamage)
 	{
-		enemyTarget.hp -= 40;
+		if (enemyTarget != noone)
+		{
+			enemyTarget.hp -= 40;
+		}
 		instance_create_layer(x, y, "Instances", bloodSpread_obj);
 		bloodSpread2 = instance_create_layer(x, y, "Instances", bloodSpread2_obj);
 		bloodSpread2.image_angle = image_angle;

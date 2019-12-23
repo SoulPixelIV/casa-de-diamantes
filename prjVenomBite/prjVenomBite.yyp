@@ -2719,6 +2719,14 @@
             }
         },
         {
+            "Key": "c90ad615-b689-433b-915e-3be0e1d26df1",
+            "Value": {
+                "id": "9f893f86-3e13-4d47-9e6b-968ca4e2a646",
+                "resourcePath": "tilesets\\streetTiles\\streetTiles.yy",
+                "resourceType": "GMTileSet"
+            }
+        },
+        {
             "Key": "c93b2719-5e44-4d3e-a724-aef3a6969f46",
             "Value": {
                 "id": "66f0976a-5662-4601-a602-5765da76532d",
@@ -3239,6 +3247,14 @@
             }
         },
         {
+            "Key": "f13d0535-9dda-4732-8216-a2aea0e213c7",
+            "Value": {
+                "id": "668bf60b-45d3-4591-911e-b6a5e2cdfa42",
+                "resourcePath": "objects\\spotlightGreen_obj\\spotlightGreen_obj.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "f1bd0ef3-3f1e-49c4-a7ca-ea61626396cf",
             "Value": {
                 "id": "44abd765-2984-4176-9570-5c44aeba765e",
@@ -3412,6 +3428,14 @@
                 "id": "c76cd6bc-72a5-4e09-9a58-7215e3aeba6a",
                 "resourcePath": "scripts\\ext_light_attenuation_apply\\ext_light_attenuation_apply.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "fe7e0846-9383-4399-a2fa-50d385a8f7db",
+            "Value": {
+                "id": "ccb5b163-2bd8-453d-8fca-447f9a9b1752",
+                "resourcePath": "sprites\\streetTiles_spr\\streetTiles_spr.yy",
+                "resourceType": "GMSprite"
             }
         }
     ],
