@@ -1031,6 +1031,14 @@
             }
         },
         {
+            "Key": "4d633993-b29e-41fa-9dcc-fd18b934159a",
+            "Value": {
+                "id": "1e9fd779-41a0-4aae-8751-7a30304ecfa5",
+                "resourcePath": "sprites\\ledStripe2_spr\\ledStripe2_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "4f9c6178-1021-4954-9ed4-10056c58a875",
             "Value": {
                 "id": "0b9a10ec-92d3-42b1-a9ec-dd3cf9de326a",
@@ -1995,6 +2003,14 @@
             "Value": {
                 "id": "74c981a6-498a-4fc5-98c6-9a086c25fbd3",
                 "resourcePath": "objects\\casinoBuildingFrontStairs_obj\\casinoBuildingFrontStairs_obj.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "91bcbb47-d5ff-4dcf-a4db-3c9f0854e4a9",
+            "Value": {
+                "id": "131981af-1796-4c8b-8620-e6387461c5c8",
+                "resourcePath": "objects\\toxicWater_obj\\toxicWater_obj.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -3143,6 +3159,14 @@
             }
         },
         {
+            "Key": "e41cc446-df7c-4078-92fb-72e5919dfb3c",
+            "Value": {
+                "id": "deb47914-383e-485f-8106-39ceded7e815",
+                "resourcePath": "objects\\ledStripe2_obj\\ledStripe2_obj.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "e56fc0ae-29ba-4860-9e85-b1a01be66e90",
             "Value": {
                 "id": "572c7a55-02b2-4649-83a6-a573ac620e44",
@@ -3244,6 +3268,14 @@
                 "id": "c67d79e5-323b-48d8-b823-7397bf710dcd",
                 "resourcePath": "objects\\barrel_obj\\barrel_obj.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "edd1f774-89b3-4956-b4a8-046e5e38506a",
+            "Value": {
+                "id": "cfdbc094-de39-45c2-b204-4b289dd47b24",
+                "resourcePath": "sprites\\toxicWater_spr\\toxicWater_spr.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
