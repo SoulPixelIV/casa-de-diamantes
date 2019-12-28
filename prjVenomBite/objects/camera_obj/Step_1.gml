@@ -63,11 +63,21 @@ if (viewX > viewXSave)
 {
 	viewXSave += (16 / 2) * dt;
 	viewYSave += (9 / 2) * dt;
+	if (viewX > viewXSave && viewX < viewXSave + 4)
+	{
+		viewXSave = viewX;
+		viewYSave = viewY;
+	}
 }
 if (viewX < viewXSave)
 {
 	viewXSave -= (16 / 2) * dt;
 	viewYSave -= (9 / 2) * dt;
+	if (viewX < viewXSave && viewX > viewXSave - 4)
+	{
+		viewXSave = viewX;
+		viewYSave = viewY;
+	}
 }
 
 //Normal Camera
