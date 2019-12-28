@@ -1,7 +1,7 @@
 /// @description GUI
 
 //Lens Dirt + Vignette
-draw_sprite_ext(lensDirt_spr, 0, -200, -200, 1, 1, 0, -1, 0.17);
+draw_sprite_ext(lensDirt_spr, 0, -200, -200, 1, 1, 0, -1, 0.075);
 if (deathVignette)
 {
 	draw_set_alpha(0.2);
