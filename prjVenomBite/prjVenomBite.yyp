@@ -983,6 +983,14 @@
             }
         },
         {
+            "Key": "48d5ce7f-e70a-4259-8cd7-7f8bfccf055c",
+            "Value": {
+                "id": "0ebe28ba-e653-4bb6-8a35-3e7a84d6f3dd",
+                "resourcePath": "sprites\\windowShotgun_spr1\\windowShotgun_spr1.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "4a1def20-6670-4778-b38c-a0b20950299f",
             "Value": {
                 "id": "913650d4-37ec-4b49-89ae-14c7f14e6103",
@@ -1051,6 +1059,14 @@
             "Value": {
                 "id": "fa8f701a-9475-4c2e-849a-2ac0710a38e1",
                 "resourcePath": "sprites\\lensDirt_spr\\lensDirt_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "5131c340-442c-44fb-8726-0e8dd28a541f",
+            "Value": {
+                "id": "0890741f-4d47-4393-9515-92c202402a68",
+                "resourcePath": "sprites\\magazine_spr\\magazine_spr.yy",
                 "resourceType": "GMSprite"
             }
         },

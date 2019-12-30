@@ -97,19 +97,51 @@ if (!noHUD)
 	for (i = 0; i < player_obj.syringes; i++)
 	{
 		draw_sprite_ext(syringe_spr, -1, 86, 48 + 48 * i, 2, 2, -1, -1, 1);
-	}	
+	}
 	
+	//Ammo
 	if (global.pickedWeapon[0])
 	{
 		draw_text_transformed_colour(1104, 514, "AMMO " + string(global.pistolAmmo) + "|" + string(global.pistolMag), 1, 1, rotation, c_purple, c_aqua, c_aqua, c_purple, 1);
+		for (i = 0; i < global.pistolMag / 6; i++)
+		{
+			if (i > 2)
+			{
+				draw_sprite_ext(magazine_spr, -1, 204, 48 + 64 * (i - 3), 2, 2, -1, -1, 1);
+			}
+			else
+			{
+				draw_sprite_ext(magazine_spr, -1, 140, 48 + 64 * i, 2, 2, -1, -1, 1);
+			}
+		}
 	}
 	if (global.pickedWeapon[1])
 	{
-		draw_text_transformed_colour(1104, 514, "AMMO " + string(global.dualBarettasAmmo) + "|" + string(global.dualBarettasMag), 1, 1, rotation, c_purple, c_aqua, c_aqua, c_purple, 1);
+		for (i = 0; i < global.dualBarettasMag / 12; i++)
+		{
+			if (i > 2)
+			{
+				draw_sprite_ext(magazine_spr, -1, 204, 48 + 64 * (i - 3), 2, 2, -1, -1, 1);
+			}
+			else
+			{
+				draw_sprite_ext(magazine_spr, -1, 140, 48 + 64 * i, 2, 2, -1, -1, 1);
+			}
+		}
 	}
 	if (global.pickedWeapon[2])
 	{
-		draw_text_transformed_colour(1104, 514, "AMMO " + string(global.shotgunAmmo) + "|" + string(global.shotgunMag), 1, 1, rotation, c_purple, c_aqua, c_aqua, c_purple, 1);
+		for (i = 0; i < global.shotgunMag / 2; i++)
+		{
+			if (i > 2)
+			{
+				draw_sprite_ext(magazine_spr, -1, 204, 48 + 64 * (i - 3), 2, 2, -1, -1, 1);
+			}
+			else
+			{
+				draw_sprite_ext(magazine_spr, -1, 140, 48 + 64 * i, 2, 2, -1, -1, 1);
+			}
+		}
 	}
 	
 	//Healthcut
