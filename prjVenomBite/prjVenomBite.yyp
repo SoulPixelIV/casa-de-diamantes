@@ -1066,7 +1066,7 @@
             "Key": "5131c340-442c-44fb-8726-0e8dd28a541f",
             "Value": {
                 "id": "0890741f-4d47-4393-9515-92c202402a68",
-                "resourcePath": "sprites\\magazine_spr\\magazine_spr.yy",
+                "resourcePath": "sprites\\magazineOld_spr\\magazineOld_spr.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -3380,6 +3380,14 @@
                 "id": "232e79af-bbff-433a-b8e7-bfe251338e04",
                 "resourcePath": "options\\mac\\options_mac.yy",
                 "resourceType": "GMMacOptions"
+            }
+        },
+        {
+            "Key": "f5e97f36-35e6-4019-ba32-981347859fe3",
+            "Value": {
+                "id": "f1925ef9-5d00-4351-9fcd-6d88927ef36c",
+                "resourcePath": "sprites\\magazine_spr\\magazine_spr.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

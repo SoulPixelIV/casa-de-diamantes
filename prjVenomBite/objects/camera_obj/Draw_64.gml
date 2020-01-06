@@ -26,11 +26,12 @@ if (!deathVignette)
 if (!noHUD)
 {
 	//HUD
-	draw_text_ext(64, 512, "AMMO: X|Y", 1, 1);
+	//draw_text_ext(64, 512, "AMMO: X|Y", 1, 1);
 	draw_text(128,128, global.money);
 	draw_text(128, 150, digitsManager_obj.currMoney);
-	draw_sprite_ext(windowWeapon_spr, 0, 1168, 608, 1, 1, 0, -1, 1);
+	//draw_sprite_ext(windowWeapon_spr, 0, 1168, 608, 1, 1, 0, -1, 1);
 
+	/*
 	//Pistol
 	if (global.pickedWeapon[0])
 	{
@@ -46,6 +47,7 @@ if (!noHUD)
 	{
 		draw_sprite_ext(windowShotgun_spr, 0, 1168, 608, 1, 1, 0, -1, 1);
 	}
+	*/
 
 	draw_set_font(neon_fnt);
 	draw_text_colour(32, 624, "Framerate: " + string(fps_real), c_purple, c_aqua, c_aqua, c_purple, 1);
@@ -53,7 +55,7 @@ if (!noHUD)
 	draw_text_colour(32, 656, "Roomspeed: " + string(fps), c_purple, c_aqua, c_aqua, c_purple, 1);
 	draw_text_colour(32, 688, "Speed: " + string(global.timeScale), c_purple, c_aqua, c_aqua, c_purple, 1);
 
-	draw_sprite_ext(windowBackground_spr, 0, 1168, 520, 1, 1, rotation, -1, 1);
+	//draw_sprite_ext(windowBackground_spr, 0, 1168, 520, 1, 1, rotation, -1, 1);
 	draw_sprite_ext(healthbarBorder_spr, 0, 32, 16, 2, 2, 0, -1, 1);
 	image_speed = 0.1;
 	draw_sprite_ext(healthbarTop2_spr, -1, 32, 234 - (player_obj.hp * 2.12), 2, 2, 0, -1, 1);
@@ -102,16 +104,15 @@ if (!noHUD)
 	//Ammo
 	if (global.pickedWeapon[0])
 	{
-		draw_text_transformed_colour(1104, 514, "AMMO " + string(global.pistolAmmo) + "|" + string(global.pistolMag), 1, 1, rotation, c_purple, c_aqua, c_aqua, c_purple, 1);
 		for (i = 0; i < global.pistolMag / 6; i++)
 		{
 			if (i > 2)
 			{
-				draw_sprite_ext(magazine_spr, -1, 204, 48 + 64 * (i - 3), 2, 2, -1, -1, 1);
+				draw_sprite_ext(magazine_spr, -1, 207, 60 + 48 * (i - 3), 2, 2, -1, -1, 1);
 			}
 			else
 			{
-				draw_sprite_ext(magazine_spr, -1, 140, 48 + 64 * i, 2, 2, -1, -1, 1);
+				draw_sprite_ext(magazine_spr, -1, 145, 44 + 48 * i, 2, 2, -1, -1, 1);
 			}
 		}
 	}
@@ -121,11 +122,11 @@ if (!noHUD)
 		{
 			if (i > 2)
 			{
-				draw_sprite_ext(magazine_spr, -1, 204, 48 + 64 * (i - 3), 2, 2, -1, -1, 1);
+				draw_sprite_ext(magazine_spr, -1, 207, 48 + 64 * (i - 3), 2, 2, -1, -1, 1);
 			}
 			else
 			{
-				draw_sprite_ext(magazine_spr, -1, 140, 48 + 64 * i, 2, 2, -1, -1, 1);
+				draw_sprite_ext(magazine_spr, -1, 145, 48 + 64 * i, 2, 2, -1, -1, 1);
 			}
 		}
 	}
@@ -135,11 +136,11 @@ if (!noHUD)
 		{
 			if (i > 2)
 			{
-				draw_sprite_ext(magazine_spr, -1, 204, 48 + 64 * (i - 3), 2, 2, -1, -1, 1);
+				draw_sprite_ext(magazine_spr, -1, 207, 48 + 64 * (i - 3), 2, 2, -1, -1, 1);
 			}
 			else
 			{
-				draw_sprite_ext(magazine_spr, -1, 140, 48 + 64 * i, 2, 2, -1, -1, 1);
+				draw_sprite_ext(magazine_spr, -1, 145, 48 + 64 * i, 2, 2, -1, -1, 1);
 			}
 		}
 	}
