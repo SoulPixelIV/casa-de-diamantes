@@ -1,4 +1,4 @@
-currMoney = value[0]+value[1]+value[2]+value[3]+value[4]+value[5]+value[6]+value[7];
+currMoney = value[0]+value[1]*10+value[2]*100+value[3]*1000+value[4]*10000+value[5]*1000000+value[6]*10000000+value[7]*100000000;
 
 while (currMoney < global.money)
 {

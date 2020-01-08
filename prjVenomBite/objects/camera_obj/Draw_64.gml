@@ -27,8 +27,6 @@ if (!noHUD)
 {
 	//HUD
 	//draw_text_ext(64, 512, "AMMO: X|Y", 1, 1);
-	draw_text(128,128, global.money);
-	draw_text(128, 150, digitsManager_obj.currMoney);
 	//draw_sprite_ext(windowWeapon_spr, 0, 1168, 608, 1, 1, 0, -1, 1);
 
 	/*
