@@ -122,11 +122,11 @@ if (!noHUD)
 		{
 			if (i > 2)
 			{
-				draw_sprite_ext(magazine_spr, -1, 207, 48 + 64 * (i - 3), 2, 2, -1, -1, 1);
+				draw_sprite_ext(magazine_spr, -1, 207, 44 + 48 * (i - 3), 2, 2, -1, -1, 1);
 			}
 			else
 			{
-				draw_sprite_ext(magazine_spr, -1, 145, 48 + 64 * i, 2, 2, -1, -1, 1);
+				draw_sprite_ext(magazine_spr, -1, 145, 44 + 48 * i, 2, 2, -1, -1, 1);
 			}
 		}
 	}
@@ -136,11 +136,11 @@ if (!noHUD)
 		{
 			if (i > 2)
 			{
-				draw_sprite_ext(magazine_spr, -1, 207, 48 + 64 * (i - 3), 2, 2, -1, -1, 1);
+				draw_sprite_ext(magazine_spr, -1, 207, 44 + 48 * (i - 3), 2, 2, -1, -1, 1);
 			}
 			else
 			{
-				draw_sprite_ext(magazine_spr, -1, 145, 48 + 64 * i, 2, 2, -1, -1, 1);
+				draw_sprite_ext(magazine_spr, -1, 145, 44 + 48 * i, 2, 2, -1, -1, 1);
 			}
 		}
 	}
