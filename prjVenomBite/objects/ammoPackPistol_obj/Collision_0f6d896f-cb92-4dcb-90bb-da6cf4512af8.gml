@@ -1,4 +1,7 @@
 /// @description Pickup
 
-global.pistolMag += 18;
-instance_destroy();
+if (global.pistolMag < 36)
+{
+    global.pistolMag += 6;
+    instance_destroy();
+}

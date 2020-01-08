@@ -1063,14 +1063,6 @@
             }
         },
         {
-            "Key": "5131c340-442c-44fb-8726-0e8dd28a541f",
-            "Value": {
-                "id": "0890741f-4d47-4393-9515-92c202402a68",
-                "resourcePath": "sprites\\magazineOld_spr\\magazineOld_spr.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "5251aba1-7a41-4504-8f00-2e8c8d87b6a1",
             "Value": {
                 "id": "10ad330d-1c64-44a4-8807-89cf08b87635",

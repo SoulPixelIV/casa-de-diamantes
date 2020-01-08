@@ -108,7 +108,7 @@ if (!noHUD)
 		{
 			if (i > 2)
 			{
-				draw_sprite_ext(magazine_spr, -1, 207, 60 + 48 * (i - 3), 2, 2, -1, -1, 1);
+				draw_sprite_ext(magazine_spr, -1, 207, 44 + 48 * (i - 3), 2, 2, -1, -1, 1);
 			}
 			else
 			{
