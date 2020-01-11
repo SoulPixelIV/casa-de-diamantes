@@ -682,7 +682,7 @@
             "Key": "3739fb40-008e-4ceb-a286-2751964cbf59",
             "Value": {
                 "id": "23b9b92a-3fab-4e21-853e-bd6b03886e43",
-                "resourcePath": "sprites\\healthCut_spr\\healthCut_spr.yy",
+                "resourcePath": "sprites\\healthCutOld_spr\\healthCutOld_spr.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1607,6 +1607,14 @@
             }
         },
         {
+            "Key": "77cfa0e1-8ee7-4df1-a445-2921b25916b8",
+            "Value": {
+                "id": "8585e3d8-851d-4882-8865-e9372fdbbf6a",
+                "resourcePath": "sprites\\healthCut_spr\\healthCut_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "7809016a-54cd-41b0-ba82-8bda5dbf2bdb",
             "Value": {
                 "id": "82cf03a4-2630-4c01-9b56-015ef772e57a",
@@ -2092,6 +2100,14 @@
                 "id": "2bb7ff3c-4efe-4a94-a572-aa1db616050d",
                 "resourcePath": "scripts\\light_create_area\\light_create_area.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "97d99674-86a6-4808-b8d0-b290cb9031b3",
+            "Value": {
+                "id": "c9da8366-fe4a-408a-bee4-514dd23ad90f",
+                "resourcePath": "sprites\\multiplierBorder_spr\\multiplierBorder_spr.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

@@ -25,37 +25,15 @@ if (!deathVignette)
 
 if (!noHUD)
 {
-	//HUD
-	//draw_text_ext(64, 512, "AMMO: X|Y", 1, 1);
-	//draw_sprite_ext(windowWeapon_spr, 0, 1168, 608, 1, 1, 0, -1, 1);
+	draw_set_font(standard_fnt);
+	draw_set_color(c_white);
+	draw_text_colour(32, 624, "Framerate: " + string(fps_real), c_white, c_white, c_white, c_white, 1);
+	draw_text_colour(32, 592, "Slowmo: " + string(player_obj.slowmoTimer), c_white, c_white, c_white, c_white, 1);
+	draw_text_colour(32, 656, "Roomspeed: " + string(fps), c_white, c_white, c_white, c_white, 1);
+	draw_text_colour(32, 688, "Speed: " + string(global.timeScale), c_white, c_white, c_white, c_white, 1);
 
-	/*
-	//Pistol
-	if (global.pickedWeapon[0])
-	{
-		draw_sprite_ext(windowPistol_spr, 0, 1168, 608, 1, 1, 0, -1, 1);
-	}
-	//Dual Barettas
-	if (global.pickedWeapon[1])
-	{
-		draw_sprite_ext(windowDualBarettas_spr, 0, 1168, 608, 1, 1, 0, -1, 1);
-	}
-	//Shotgun
-	if (global.pickedWeapon[2])
-	{
-		draw_sprite_ext(windowShotgun_spr, 0, 1168, 608, 1, 1, 0, -1, 1);
-	}
-	*/
-
-	draw_set_font(neon_fnt);
-	draw_text_colour(32, 624, "Framerate: " + string(fps_real), c_purple, c_aqua, c_aqua, c_purple, 1);
-	draw_text_colour(32, 592, "Slowmo: " + string(player_obj.slowmoTimer), c_purple, c_aqua, c_aqua, c_purple, 1);
-	draw_text_colour(32, 656, "Roomspeed: " + string(fps), c_purple, c_aqua, c_aqua, c_purple, 1);
-	draw_text_colour(32, 688, "Speed: " + string(global.timeScale), c_purple, c_aqua, c_aqua, c_purple, 1);
-
-	//draw_sprite_ext(windowBackground_spr, 0, 1168, 520, 1, 1, rotation, -1, 1);
-	draw_sprite_ext(healthbarBorder_spr, 0, 32, 16, 2, 2, 0, -1, 1);
 	image_speed = 0.1;
+	draw_sprite_ext(healthbarBorder_spr, 0, 32, 16, 2, 2, 0, -1, 1);
 	draw_sprite_ext(healthbarTop2_spr, -1, 32, 234 - (player_obj.hp * 2.12), 2, 2, 0, -1, 1);
 	draw_sprite_ext(healthbar_spr, 0, 32, 256, 2, 2 * (player_obj.hp / 100) , 0, -1, 1);
 	
@@ -67,6 +45,7 @@ if (!noHUD)
 
 	//Score
 	draw_set_font(standard_fnt);
+	/*
 	if (rotation > 3 * scoreMovementMax)
 	{
 		dir = 1;
@@ -84,15 +63,13 @@ if (!noHUD)
 	{
 		rotation -= scoreMovementSpeed * dt;
 	}
-		
-	//draw_sprite_ext(windowBackground_spr, 0, 1184, 44, 1, 1, rotation, -1, 1);	
+	*/	
+	
 	draw_sprite_ext(scoreBorder_spr, -1, 1078, 16, 2, 2, 0, -1, 1);
 	draw_text_transformed_colour(1144, 22, string(global.scorepoints) + "P", 1, 1, 0, c_black, c_black, c_black, c_black, 1);
 	
-	//draw_sprite_ext(windowBackground_spr, 0, 1248, 76, 0.45, 1, rotation, -1, 1);	
 	draw_text_transformed_colour(1220, 64, string(global.multiplier) + "><", 1, 1, rotation, c_purple, c_aqua, c_aqua, c_purple, 1);
 	draw_sprite_ext(score1X_spr, 0, 1195, 78, 2, 2, 0, -1, 1);
-	draw_set_font(neon_fnt);
 
 	//Syringes
 	for (i = 0; i < player_obj.syringes; i++)
@@ -147,7 +124,7 @@ if (!noHUD)
 	//Healthcut
 	if (player_obj.syringesLost > 0)
 	{
-		draw_sprite_ext(healthCut_spr, 0, 408 - 96.5 * player_obj.syringesLost, 48, 1, 1, 0, -1, 1);
+		draw_sprite_ext(healthCut_spr, 0, 32, 108 - 96.5 * player_obj.syringesLost, 1, 1, 0, -1, 1);
 	}
 }
 
