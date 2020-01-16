@@ -66,10 +66,10 @@ if (!noHUD)
 	*/	
 	
 	draw_sprite_ext(scoreBorder_spr, -1, 1078, 16, 2, 2, 0, -1, 1);
-	draw_text_transformed_colour(1144, 22, string(global.scorepoints) + "P", 1, 1, 0, c_black, c_black, c_black, c_black, 1);
+	//draw_text_transformed_colour(1144, 22, string(global.scorepoints) + "P", 1, 1, 0, c_black, c_black, c_black, c_black, 1);
 	
-	draw_text_transformed_colour(1220, 64, string(global.multiplier) + "><", 1, 1, rotation, c_purple, c_aqua, c_aqua, c_purple, 1);
-	draw_sprite_ext(score1X_spr, 0, 1195, 78, 2, 2, 0, -1, 1);
+	//draw_text_transformed_colour(1220, 64, string(global.multiplier) + "><", 1, 1, rotation, c_purple, c_aqua, c_aqua, c_purple, 1);
+	//draw_sprite_ext(score1X_spr, 0, 1195, 78, 2, 2, 0, -1, 1);
 
 	//Syringes
 	for (i = 0; i < player_obj.syringes; i++)

@@ -2087,6 +2087,14 @@
             }
         },
         {
+            "Key": "9622a713-2a89-41c4-9988-ee927ffaafa7",
+            "Value": {
+                "id": "b88e9caf-b86c-4fe3-88dd-09be75be810d",
+                "resourcePath": "objects\\spotlightRGB_obj\\spotlightRGB_obj.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "9641a99b-cbc7-4712-a2e6-527e34f1157d",
             "Value": {
                 "id": "f479002d-88cb-4cc8-94fb-ee30b06786bb",
