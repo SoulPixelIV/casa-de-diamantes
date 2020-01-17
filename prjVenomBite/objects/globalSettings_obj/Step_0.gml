@@ -1,6 +1,6 @@
 /// @description Shortcuts
 
-TARGET_FRAMERATE = 60 * global.timeScale;
+TARGET_FRAMERATE = tf * global.timeScale;
 
 if (keyboard_check_pressed(vk_f1))
 {
