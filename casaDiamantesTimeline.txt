@@ -1,0 +1,88 @@
+December 2018:
+- Tile System
+- Shooting Mechanic
+- Worked on player sprite
+- Polished shooting
+
+April 2019:
+- New Animations + Sprites
+- Graphical Effects (LED lights etc.)
+- Reflectionsystem
+- Added basic zombie
+- Added camera zoom
+- Added casino sprite
+
+May 2019:
+- Recoilsystem
+- Headshotsystem
+- Basic HUD
+- Ammopacks
+- Added dual barettas
+
+June 2019:
+- Added shotgun
+- Added shotjump mechanic
+- New HUD elements
+- Added weapon switching + pickup
+- Healthsystem & Death/Revivesystem
+- Unlocked framerate
+- Added slowmotion capeability
+- Added healthpacks
+- Added bucket zombie
+- Added soldier zombie
+- New sound effects
+- Added backflip mechanic
+- Reworked camera system
+
+Juli 2019:
+- Added new collision system
+- Fixed all player animations
+- Added walljump mechanic
+- Added jumpspin mechanic
+- Polished shooting effects
+- Added slowmotion feature
+- Added first level
+- Added ladder
+- Added levers + doors/gates
+- Added levelcounter to enemies
+
+August 2019:
+- Polished shooting feedback + enemies
+- Added bullet penetration system
+- Finished soldier zombies
+- New sound effects
+- Added Blackjack prototype
+- Added plague doors
+- Added dash mechanic
+
+September 2019:
+- Added new tiles
+- Added soundpitch system
+
+October 2019:
+- Cleaned code
+- Changed level1
+- Added explosive barrels
+- Changed camera system
+- Added new tiles
+- Started shader work
+
+November 2019:
+- Added new light system
+- Polished sprites
+- Added new decoration
+- Added new tiles
+- Added moneysystem & casinochips
+
+December 2019:
+- Added character cindy
+- Finished UI
+- Added new zombie attack
+- Added new decoration
+- Added new tiles to level
+- Gamma now changeable
+
+January 2019:
+- Changed ammo system
+- Polished level1
+
