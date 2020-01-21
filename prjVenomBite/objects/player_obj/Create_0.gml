@@ -52,6 +52,8 @@ spin = false;
 wallJumping = false;
 wallJumpingInAir = false;
 wallJumpTimer = 12;
+groundCollisionTimer = 20;
+groundCollisionTimerOn = false;
 dashTimer = 12;
 slowmo = false;
 spinWeaponPos = 0;
@@ -72,6 +74,7 @@ wallJumpsSave = wallJumps;
 dashTimerSave = dashTimer;
 enemySlowmoTimerSave = enemySlowmoTimer;
 shotZoomTimerSave = shotZoomTimer;
+groundCollisionTimerSave = groundCollisionTimer;
 
 //Debug
 instance_create_layer(x + 1, y - 4, "Instances", playerBulletLine_obj);

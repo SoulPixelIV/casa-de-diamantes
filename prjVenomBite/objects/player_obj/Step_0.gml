@@ -164,7 +164,7 @@ if (grounded)
 }
 
 //Jump Spin
-if (!grounded && !isZombie && !flip && !isDashing && !unarmed)
+if (!grounded && !isZombie && !flip && !isDashing && !unarmed && !groundCollisionTimerOn)
 {
 	if (horspeed < movSpeed - 0.3 || horspeed > -movSpeed + 0.3)
 	{
@@ -208,6 +208,16 @@ else
 {
 	fallJumpSafety -= dt;
 	grounded = false;
+}
+
+if (groundCollisionTimerOn)
+{
+	groundCollisionTimer -= dt;
+}
+if (groundCollisionTimer < 0)
+{
+	groundCollisionTimerOn = false;
+	groundCollisionTimer = groundCollisionTimerSave;
 }
 
 //###OutsideSolid###
