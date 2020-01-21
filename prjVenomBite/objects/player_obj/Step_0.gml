@@ -183,7 +183,7 @@ if (!place_free(x + horspeed, y))
 {
     while (place_free(x + sign(horspeed), y))
     {
-        x += sign(horspeed) * dt;
+        x += sign(horspeed);
     }
 	if (!wallJumping)
 	{
@@ -200,7 +200,7 @@ if (!place_free(x, y + verspeed))
 {
     while (place_free(x, y + sign(verspeed)))
     {
-        y += sign(verspeed) * dt;
+        y += sign(verspeed);
     }
     resetJump_scr();
 }
