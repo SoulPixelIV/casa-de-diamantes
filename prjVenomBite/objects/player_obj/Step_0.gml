@@ -41,7 +41,7 @@ if (movement && !wallJumping && !isDashing)
 }
 
 //Friction
-if (!place_meeting(x, y, colliderSideway_obj))
+if (!place_meeting(x, y, colliderSideway_obj) && !huggingWall)
 {
 	frictionActive = true;
 }
@@ -57,7 +57,7 @@ else
 //Gravity
 if (verspeed < 14 && !onLadder)
 {
-	verspeed -= gravityStrength * dt;
+	verspeed -= gravityStrength * global.timeScale;
 }
 
 if (movement && !isZombie)
@@ -178,16 +178,14 @@ if (grounded)
 }
 
 //Collision
-dirX = key_right - key_left;
-dirY = 1;
 //horspeed
-if (!place_free(x + (horspeed * dt) * dirX, y))
+if (!place_free(x + (horspeed * dt), y))
 {
-	if (dirX != 0)
+	if (sign(horspeed) != 0)
 	{
-		while (place_free(x + dirX, y))
+		while (place_free(x + sign(horspeed) / 10000, y))
 		{
-			x += dirX;
+			x += sign(horspeed) / 10000;
 		}
 		if (!wallJumping)
 		{
@@ -201,13 +199,16 @@ else
 	huggingWall = false;
 }
 //verspeed
-if (!place_free(x, y + verspeed))
+if (!place_free(x, y + (verspeed * dt)))
 {
-    while (place_free(x, y + sign(verspeed)))
-    {
-        y += sign(verspeed);
-    }
-    resetJump_scr();
+	if (sign(verspeed) != 0)
+	{
+		while (place_free(x, y + sign(verspeed) / 10000))
+		{
+			y += sign(verspeed) / 10000;
+		}
+		resetJump_scr();
+	}
 }
 else
 {
