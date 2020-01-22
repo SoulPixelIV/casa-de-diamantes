@@ -178,18 +178,23 @@ if (grounded)
 }
 
 //Collision
+dirX = key_right - key_left;
+dirY = 1;
 //horspeed
-if (!place_free(x + horspeed, y))
+if (!place_free(x + (horspeed * dt) * dirX, y))
 {
-    while (place_free(x + sign(horspeed), y))
-    {
-        x += sign(horspeed);
-    }
-	if (!wallJumping)
+	if (dirX != 0)
 	{
-		horspeed = 0;
+		while (place_free(x + dirX, y))
+		{
+			x += dirX;
+		}
+		if (!wallJumping)
+		{
+			horspeed = 0;
+		}
+		huggingWall = true;
 	}
-	huggingWall = true;
 } 
 else
 {
@@ -209,44 +214,6 @@ else
 	fallJumpSafety -= dt;
 	grounded = false;
 }
-/*
-dirX = key_right - key_left;
-dirY = abs(verspeed);
-if (!place_free(x + horspeed * dt, y + verspeed * dt))
-{
-	//Horizontal
-	for (var i = 0; i < abs(horspeed * dt); i += min(abs(horspeed * dt) - x, 1))
-	{
-		if (!place_free(x + (i * dirX), y))
-		{
-			x += (i * dirX) + -dirX;
-			if (!wallJumping)
-			{
-				horspeed = 0;
-			}
-			huggingWall = true;
-		}
-		else
-		{
-			huggingWall = false;
-		}
-	}
-	//Vertical
-	for (var j = 0; j < abs(verspeed * dt); j += min(abs(verspeed * dt) - y, 1))
-	{
-		if (!place_free(x, y + (j * dirY)))
-		{
-			y += (j * dirY) + -dirY;
-			resetJump_scr();
-		}
-		else
-		{
-			fallJumpSafety -= dt;
-			grounded = false;
-		}
-	}
-}
-*/
 
 if (groundCollisionTimerOn)
 {
@@ -259,6 +226,7 @@ if (groundCollisionTimer < 0)
 }
 
 //###OutsideSolid###
+/*
 if (place_free(x, y))
 {
     savePosX = x;
@@ -270,7 +238,7 @@ else
     y = savePosY;
     verSpeed = 0;
 }
-
+*/
 //Ladder
 if (place_meeting(x, y, ladder_obj))
 {
