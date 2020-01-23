@@ -9,8 +9,8 @@ dashSpeed = 5.6;
 wallJumps = 3;
 
 //Physics
-gravityStrength = -0.22; //Lower is lower gravity
-jumpStrength = 8;
+gravityStrength = -0.42; //Lower is lower gravity
+jumpStrength = 7.6;
 frictionActive = true;
 frictionStrength = 0.3; //Lower is more slippery
 shotJumpStrength = 9.2;

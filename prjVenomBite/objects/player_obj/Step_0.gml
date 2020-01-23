@@ -57,7 +57,7 @@ else
 //Gravity
 if (verspeed < 14 && !onLadder)
 {
-	verspeed -= gravityStrength * global.timeScale;
+	verspeed -= gravityStrength * dt;
 }
 
 if (movement && !isZombie)
@@ -183,9 +183,9 @@ if (!place_free(x + (horspeed * dt), y))
 {
 	if (sign(horspeed) != 0)
 	{
-		while (place_free(x + sign(horspeed) / 10000, y))
+		while (place_free(x + sign(horspeed) / 100, y))
 		{
-			x += sign(horspeed) / 10000;
+			x += sign(horspeed) / 100;
 		}
 		if (!wallJumping)
 		{
@@ -203,9 +203,9 @@ if (!place_free(x, y + (verspeed * dt)))
 {
 	if (sign(verspeed) != 0)
 	{
-		while (place_free(x, y + sign(verspeed) / 10000))
+		while (place_free(x, y + sign(verspeed) / 100))
 		{
-			y += sign(verspeed) / 10000;
+			y += sign(verspeed) / 100;
 		}
 		resetJump_scr();
 	}
@@ -227,7 +227,6 @@ if (groundCollisionTimer < 0)
 }
 
 //###OutsideSolid###
-/*
 if (place_free(x, y))
 {
     savePosX = x;
@@ -239,7 +238,7 @@ else
     y = savePosY;
     verSpeed = 0;
 }
-*/
+
 //Ladder
 if (place_meeting(x, y, ladder_obj))
 {
