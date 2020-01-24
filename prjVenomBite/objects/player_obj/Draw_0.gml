@@ -1,17 +1,46 @@
 /// @description Draw Guns
 
 draw_self();
+animated = 0;
+changePos = 1;
+pistolSprite = playerPistol_spr;
+dualBarettasSprite = dualBarettas_spr;
+shotgunSprite = shotgun_spr
 
 if (!flip)
 {
 	if (dirCursor > 90 && dirCursor < 270)
 	{
-		currDir = 0;
+		currDir = 1;
 	}
 	else
 	{
-		currDir = 1;
+		currDir = -1;
 	}
+}
+
+if (isDashing)
+{
+	changePos = 0;
+}
+else
+{
+	changePos = 1;
+}
+
+if (spin)
+{
+	animated = -1;
+	pistolSprite = playerPistolJumpSpin_spr;
+	dualBarettasSprite = playerDualBarettasJumpSpin_spr;
+	shotgunSprite = playerShotgunJumpSpin_spr
+}
+else
+{
+	animated = 0;
+	pistolSprite = playerPistol_spr;
+	dualBarettasSprite = playerDualBarettas_spr;
+	shotgunSprite = playerShotgun_spr
 }
 	
 if (!isZombie)
@@ -20,86 +49,17 @@ if (!isZombie)
 	{
 		if (global.currentWeapon == gameManager_obj.pickedWeapon.pistol)
 		{
-			if (!spin)
-			{
-				if (currDir == 0)
-				{
-					draw_sprite_ext(playerPistol_spr, 0, x + 4 - spinWeaponPos, y - 4.3, 1, -1, dirCursor, -1, 1);
-				}
-				else
-				{
-					draw_sprite_ext(playerPistol_spr, 0, x - 4 + spinWeaponPos, y - 4.3, 1, 1, dirCursor, -1, 1);
-				}
-			}
-			else
-			{
-				if (currDir == 0)
-				{
-					draw_sprite_ext(playerPistolJumpSpin_spr, -1, x + 4 - spinWeaponPos, y - 4.3, 1, -1, dirCursor, -1, 1);
-				}
-				else
-				{
-					draw_sprite_ext(playerPistolJumpSpin_spr, -1, x - 4 + spinWeaponPos, y - 4.3, 1, 1, dirCursor, -1, 1);
-				}
-			}
+			draw_sprite_ext(pistolSprite, animated, x + ((4 + spinWeaponPos) * currDir) * changePos, y - 4.3, 1, -currDir, dirCursor, -1, 1);
 		}
 		if (global.currentWeapon == gameManager_obj.pickedWeapon.dualBarettas)
 		{
-			if (!spin)
-			{
-				if (currDir == 0)
-				{
-					draw_sprite_ext(playerDualBarettas_spr, 0, x + 4 - spinWeaponPos, y - 4.3, 1, -1, dirCursor, -1, 1);
-					draw_sprite_ext(playerDualBarettas_spr, 0, x + 4 - spinWeaponPos, y - 3.3, 1, -1, dirCursor, -1, 1);
-				}
-				else
-				{
-					draw_sprite_ext(playerDualBarettas_spr, 0, x - 4 + spinWeaponPos, y - 4.3, 1, 1, dirCursor, -1, 1);
-					draw_sprite_ext(playerDualBarettas_spr, 0, x - 4 + spinWeaponPos, y - 3.3, 1, 1, dirCursor, -1, 1);
-				}
-			}
-			else
-			{
-				if (currDir == 0)
-				{
-					draw_sprite_ext(playerDualBarettasJumpSpin_spr, -1, x + 4 - spinWeaponPos, y - 4.3, 1, -1, dirCursor, -1, 1);
-					draw_sprite_ext(playerDualBarettasJumpSpin_spr, -1, x + 4 - spinWeaponPos, y - 3.3, 1, -1, dirCursor, -1, 1);
-				}
-				else
-				{
-					draw_sprite_ext(playerDualBarettasJumpSpin_spr, -1, x - 4 + spinWeaponPos, y - 4.3, 1, 1, dirCursor, -1, 1);
-					draw_sprite_ext(playerDualBarettasJumpSpin_spr, -1, x - 4 + spinWeaponPos, y - 3.3, 1, 1, dirCursor, -1, 1);
-				}
-			}
+			draw_sprite_ext(dualBarettasSprite, animated, x + ((4 + spinWeaponPos) * currDir) * changePos, y - 4.3, 1, -currDir, dirCursor, -1, 1);
+			draw_sprite_ext(dualBarettasSprite, animated, x + ((4 + spinWeaponPos) * currDir) * changePos, y - 3.3, 1, -currDir, dirCursor, -1, 1);
 		}
 		if (global.currentWeapon == gameManager_obj.pickedWeapon.shotgun)
 		{
-			if (!spin)
-			{
-				if (currDir == 0)
-				{
-					draw_sprite_ext(playerShotgun_spr, 0, x + 4 - spinWeaponPos, y - 4.3, 1, -1, dirCursor, -1, 1);
-					draw_sprite_ext(playerArmEmpty_spr, 0, x + 4 - spinWeaponPos, y - 3.3, 1, -1, dirCursor, -1, 1);
-				}
-				else
-				{
-					draw_sprite_ext(playerShotgun_spr, 0, x - 4 + spinWeaponPos, y - 4.3, 1, 1, dirCursor, -1, 1);
-					draw_sprite_ext(playerArmEmpty_spr, 0, x - 4 + spinWeaponPos, y - 3.3, 1, 1, dirCursor, -1, 1);
-				}
-			}
-			else
-			{
-				if (currDir == 0)
-				{
-					draw_sprite_ext(playerShotgunJumpSpin_spr, -1, x + 4 - spinWeaponPos, y - 4.3, 1, -1, dirCursor, -1, 1);
-					draw_sprite_ext(playerArmEmptyJumpSpin_spr, -1, x + 4 - spinWeaponPos, y - 3.3, 1, -1, dirCursor, -1, 1);
-				}
-				else
-				{
-					draw_sprite_ext(playerShotgunJumpSpin_spr, -1, x - 4 + spinWeaponPos, y - 4.3, 1, 1, dirCursor, -1, 1);
-					draw_sprite_ext(playerArmEmptyJumpSpin_spr, -1, x - 4 + spinWeaponPos, y - 3.3, 1, 1, dirCursor, -1, 1);
-				}
-			}
+			draw_sprite_ext(shotgunSprite, animated, x + ((4 + spinWeaponPos) * currDir) * changePos, y - 4.3, 1, -currDir, dirCursor, -1, 1);
+			draw_sprite_ext(shotgunSprite, animated, x + ((4 + spinWeaponPos) * currDir) * changePos, y - 3.3, 1, -currDir, dirCursor, -1, 1);
 		}
 	}
 }
