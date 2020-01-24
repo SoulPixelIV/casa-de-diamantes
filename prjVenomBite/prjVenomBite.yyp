@@ -3023,14 +3023,6 @@
             }
         },
         {
-            "Key": "d640aa0e-e3f3-407e-9688-487ec798cf25",
-            "Value": {
-                "id": "829aebab-f3a7-47aa-894b-0aa6feaf5e65",
-                "resourcePath": "sprites\\zombieGirlRemake_spr\\zombieGirlRemake_spr.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "d67b6552-ad90-4288-877a-bfea52eaea58",
             "Value": {
                 "id": "b4dab3cc-4b7a-4ee8-90ef-886f3f7ced85",
