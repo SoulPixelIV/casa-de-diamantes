@@ -21,9 +21,14 @@ global.shotgunMag = 0;
 global.shotgunCooldown = 5;
 global.shotgunCooldownSave = global.shotgunCooldown;
 
-global.pickedWeapon[0] = false;
-global.pickedWeapon[1] = false;
-global.pickedWeapon[2] = false;
+enum pickedWeapon {
+	unarmed,
+	pistol,
+	dualBarettas,
+	shotgun
+	}
+	
+global.currentWeapon = pickedWeapon.unarmed;
 
 global.unlockedWeapon[0] = false;
 global.unlockedWeapon[1] = false;

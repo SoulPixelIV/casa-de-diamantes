@@ -1,4 +1,4 @@
-if (global.pickedWeapon[0])
+if (global.currentWeapon == gameManager_obj.pickedWeapon.pistol)
 {
 	if (global.pistolMag >= 6 && global.pistolAmmo < 6)
 	{
@@ -12,7 +12,7 @@ if (global.pickedWeapon[0])
 		global.pistolMag = 0;
 	}
 }
-if (global.pickedWeapon[1])
+if (global.currentWeapon == gameManager_obj.pickedWeapon.dualBarettas)
 {
 	if (global.dualBarettasMag >= 12 && global.dualBarettasAmmo < 12)
 	{
@@ -26,7 +26,7 @@ if (global.pickedWeapon[1])
 		global.dualBarettasMag = 0;
 	}
 }
-if (global.pickedWeapon[2])
+if (global.currentWeapon == gameManager_obj.pickedWeapon.shotgun)
 {
 	if (global.shotgunMag >= 2 && global.shotgunAmmo < 2)
 	{

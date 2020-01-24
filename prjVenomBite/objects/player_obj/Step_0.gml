@@ -284,7 +284,7 @@ if (keyboard_check(vk_down))
 	dirCursor = 270;
 }
 
-if (global.pickedWeapon[0] || global.pickedWeapon[1] || global.pickedWeapon[2])
+if (global.currentWeapon != gameManager_obj.pickedWeapon.unarmed)
 {
 	if (!isDashing)
 	{
@@ -357,7 +357,7 @@ if (onLadder && !isZombie && !isDashing)
 {
 	if (verspeed == 0)
 	{
-		if (global.pickedWeapon[0] || global.pickedWeapon[1] || global.pickedWeapon[2])
+		if (global.currentWeapon != unarmed)
 		{
 			sprite_index = playerEquipped_spr;
 		}
@@ -375,7 +375,7 @@ if (onLadder && !isZombie && !isDashing)
 if (!isZombie)
 {
 	//Pistol
-	if (key_shoot && global.pickedWeapon[0] && global.pistolCooldown <= 0)
+	if (key_shoot && global.currentWeapon == gameManager_obj.pickedWeapon.pistol && global.pistolCooldown <= 0)
 	{
 		if (!onLadder || onLadder && verspeed == 0)
 		{
@@ -384,7 +384,7 @@ if (!isZombie)
 	}
 
 	//Dual Barettas
-	if (key_shoot && global.pickedWeapon[1] && global.dualBarettasCooldown <= 0)
+	if (key_shoot && global.currentWeapon == gameManager_obj.pickedWeapon.dualBarettas && global.dualBarettasCooldown <= 0)
 	{
 		if (!onLadder || onLadder && verspeed == 0)
 		{
@@ -393,7 +393,7 @@ if (!isZombie)
 	}
 
 	//Shotgun
-	if (key_shoot && global.pickedWeapon[2] && global.shotgunCooldown <= 0)
+	if (key_shoot && global.currentWeapon == gameManager_obj.pickedWeapon.shotgun && global.shotgunCooldown <= 0)
 	{
 		if (!onLadder || onLadder && verspeed == 0)
 		{

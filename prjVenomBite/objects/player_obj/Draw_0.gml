@@ -16,9 +16,9 @@ if (!flip)
 	
 if (!isZombie)
 {
-	if (!onLadder || onLadder && verspeed == 0)
+	if (!onLadder || (onLadder && verspeed == 0))
 	{
-		if (global.pickedWeapon[0])
+		if (global.currentWeapon == gameManager_obj.pickedWeapon.pistol)
 		{
 			if (!spin)
 			{
@@ -43,7 +43,7 @@ if (!isZombie)
 				}
 			}
 		}
-		if (global.pickedWeapon[1])
+		if (global.currentWeapon == gameManager_obj.pickedWeapon.dualBarettas)
 		{
 			if (!spin)
 			{
@@ -72,7 +72,7 @@ if (!isZombie)
 				}
 			}
 		}
-		if (global.pickedWeapon[2])
+		if (global.currentWeapon == gameManager_obj.pickedWeapon.shotgun)
 		{
 			if (!spin)
 			{

@@ -78,7 +78,7 @@ if (!noHUD)
 	}
 	
 	//Ammo
-	if (global.pickedWeapon[0])
+	if (global.currentWeapon == gameManager_obj.pickedWeapon.pistol)
 	{
 		for (i = 0; i < global.pistolMag / 6; i++)
 		{
@@ -92,7 +92,7 @@ if (!noHUD)
 			}
 		}
 	}
-	if (global.pickedWeapon[1])
+	if (global.currentWeapon == gameManager_obj.pickedWeapon.dualBarettas)
 	{
 		for (i = 0; i < global.dualBarettasMag / 12; i++)
 		{
@@ -106,7 +106,7 @@ if (!noHUD)
 			}
 		}
 	}
-	if (global.pickedWeapon[2])
+	if (global.currentWeapon == gameManager_obj.pickedWeapon.shotgun)
 	{
 		for (i = 0; i < global.shotgunMag / 2; i++)
 		{
