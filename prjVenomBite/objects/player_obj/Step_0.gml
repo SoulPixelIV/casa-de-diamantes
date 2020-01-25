@@ -118,11 +118,11 @@ if (movement && !isZombie && wallJumps > 0)
 		
 		if (key_right)
 		{
-			horspeed -= jumpStrength;
+			horspeed -= jumpStrength / 1.15;
 		}
 		if (key_left)
 		{
-			horspeed += jumpStrength;
+			horspeed += jumpStrength / 1.15;
 		}
 		wallJumps--;
 		wallJumpingInAir = true;
