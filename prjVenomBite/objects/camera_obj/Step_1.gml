@@ -35,14 +35,13 @@ else
 	}
 }
 
-//###TODO###
-mouseXPos = window_mouse_get_x() / viewXSave;
-mouseYPos = window_mouse_get_y() / viewYSave;
+mouseXPos = window_mouse_get_x();
+mouseYPos = window_mouse_get_y();
 
 camera_set_view_size(view_camera[0], viewXSave, viewYSave);
 if (mouse_check_button(mb_right))
 {
-	camera_set_view_pos(view_camera[0], xCoor + mouseXPos, yCoor + mouseYPos);
+	camera_set_view_pos(view_camera[0], mouseXPos / 15 + (player_obj.x - viewXSave / 1.6), mouseYPos / 15 + (player_obj.y - viewYSave / 1.6));
 }
 else
 {

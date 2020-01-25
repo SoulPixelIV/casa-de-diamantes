@@ -1,5 +1,6 @@
 /// @description Camera Variables
 
+image_speed = 0.1;
 viewX = 512;
 viewY = 288;
 viewXSave = viewX;

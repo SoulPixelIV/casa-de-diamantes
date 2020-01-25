@@ -1567,14 +1567,6 @@
             }
         },
         {
-            "Key": "763981b0-e3d6-4909-8f8f-defcdaf8b31d",
-            "Value": {
-                "id": "7e25e8d8-9f70-4ceb-abf5-02a7e6718983",
-                "resourcePath": "sprites\\slowmoEnergyCircle_spr\\slowmoEnergyCircle_spr.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "76575a5d-cc3f-464a-896c-ca572414e5a7",
             "Value": {
                 "id": "a14b59ba-12fb-4c48-bd06-d71b010bd220",
