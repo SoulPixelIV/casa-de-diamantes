@@ -39,24 +39,43 @@ if (verspeed < 14)
 	verspeed -= gravityStrength * dt;
 }
 
-//###Collision###
+//Collision
 //horspeed
-if (!place_free(x + horspeed, y))
+if (!place_free(x + (horspeed * dt), y))
 {
-    while (place_free(x + sign(horspeed), y))
-    {
-        x += sign(horspeed * dt);
-    }
-    horspeed = 0;
+	if (sign(horspeed) != 0)
+	{
+		while (place_free(x + sign(horspeed) / 100, y))
+		{
+			x += sign(horspeed) / 100;
+		}
+		horspeed = 0;
+	}
 } 
 //verspeed
-if (!place_free(x, y + verspeed))
+if (!place_free(x, y + (verspeed * dt)))
 {
-    while (place_free(x, y + sign(verspeed)))
-    {
-        y += sign(verspeed * dt);
-    }
-    verspeed = 0;   
+	if (sign(verspeed) != 0)
+	{
+		while (place_free(x, y + sign(verspeed) / 100))
+		{
+			y += sign(verspeed) / 100;
+		}
+		verspeed = 0;
+	}
+}
+
+//###OutsideSolid###
+if (place_free(x, y))
+{
+    savePosX = x;
+    savePosY = y;
+}
+else
+{
+    x = savePosX;
+    y = savePosY;
+    verSpeed = 0;
 }
 
 //###Death###

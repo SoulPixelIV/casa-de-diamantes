@@ -14,6 +14,8 @@ knockback = 8;
 movSpeed = 0.57;
 playedSound = false;
 gravityStrength = -0.32;
+savePosX = x;
+savePosY = y;
 
 attackCooldownSave = attackCooldown;
 

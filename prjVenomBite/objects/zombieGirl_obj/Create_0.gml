@@ -13,6 +13,8 @@ damage = 15;
 playerSightMax = 128;
 playerSightMin = 16;
 
+savePosX = x;
+savePosY = y;
 attackCooldown = 100;
 delay = false;
 isDashing = false;

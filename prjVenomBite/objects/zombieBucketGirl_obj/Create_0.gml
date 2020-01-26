@@ -12,6 +12,8 @@ knockback = 7;
 movSpeed = 0.33;
 playedSound = false;
 gravityStrength = -0.32;
+savePosX = x;
+savePosY = y;
 
 bucketHitbox = instance_create_layer(x, y - 16, "Instances", bucketHitbox_obj);
 with (bucketHitbox)
