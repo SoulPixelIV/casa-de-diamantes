@@ -10,6 +10,14 @@ mYPos = 0;
 xCoor = 100;
 yCoor = 100;
 
+pistolRecoilZoom = 32;
+dualBarettasRecoilZoom = 48;
+shotgunRecoilZoom = 72;
+slowmotionZoomStrength = 64;
+recoilZoomX = 0;
+recoilZoomY = 0;
+slowmotionZoomX = 0;
+slowmotionZoomY = 0;
 zoomCooldown = 5000;
 vignetteStrength = 1;
 vignetteStrengthTimer = 12;
@@ -29,6 +37,15 @@ noZoom = false;
 zoomOut = false;
 zoomIn = false;
 noHUD = false;
+
+enum cameraState {
+    normal,
+    zoomIn,
+    zoomOut,
+    zoomAFK;
+}
+
+currentCameraState = cameraState.normal;
 
 zoomCooldownSave = zoomCooldown;
 

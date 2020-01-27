@@ -503,6 +503,14 @@
             }
         },
         {
+            "Key": "28082bf0-1420-4a54-8669-67c9f6716990",
+            "Value": {
+                "id": "d583da6a-4ba0-48fe-86d8-cd028db3edc4",
+                "resourcePath": "scripts\\changeCamera_scr\\changeCamera_scr.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "291468b4-dbad-4d39-bee3-8f3df2da0c79",
             "Value": {
                 "id": "e06e58e2-e202-4d76-80ea-c01db410017d",
@@ -3585,7 +3593,8 @@
         "cc6f7f61-1e60-40ae-9c11-41eed5a452eb",
         "3efd9d36-f4e9-4931-8cf7-113d75c93e9c",
         "ab54a712-5b9d-4388-8375-b3501845852b",
-        "67f04608-7f1b-4d76-8f81-a7c369858ad5"
+        "67f04608-7f1b-4d76-8f81-a7c369858ad5",
+        "28082bf0-1420-4a54-8669-67c9f6716990"
     ],
     "tutorial": ""
 }
