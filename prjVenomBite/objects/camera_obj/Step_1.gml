@@ -6,6 +6,7 @@ cameraBorderXMax = room_width - viewXSave / 2 - 32;
 cameraBorderYMin = viewYSave / 2 + 32;
 cameraBorderYMax = room_height - viewYSave / 2 - 32;
 
+camera_set_view_pos(view_camera[0], xCoor, yCoor);
 camera_set_view_size(view_camera[0], viewXSave, viewYSave);
 
 //Set Camera Borders
@@ -43,17 +44,13 @@ else
 }
 
 //Aim Zoom
-mouseXPos = window_mouse_get_x();
-mouseYPos = window_mouse_get_y();
-
 if (mouse_check_button(mb_right))
 {
-	camera_set_view_pos(view_camera[0], mouseXPos / 15 + (player_obj.x - viewXSave / 1.6), mouseYPos / 15 + (player_obj.y - viewYSave / 1.6));
+	xCoor += window_mouse_get_x() / 15 + (player_obj.x - viewXSave / 1.6);
+	yCoor += window_mouse_get_y() / 15 + (player_obj.y - viewYSave / 1.6);
+	//camera_set_view_pos(view_camera[0], mouseXPos / 15 + (player_obj.x - viewXSave / 1.6), mouseYPos / 15 + (player_obj.y - viewYSave / 1.6));
 }
-else
-{
-	camera_set_view_pos(view_camera[0], xCoor, yCoor);
-}
+
 //Zooming
 if (player_obj.horspeed == 0 && player_obj.verspeed == 0)
 {
