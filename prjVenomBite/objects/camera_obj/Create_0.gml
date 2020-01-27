@@ -42,7 +42,7 @@ enum cameraState {
     normal,
     zoomIn,
     zoomOut,
-    zoomAFK;
+    zoomAFK
 }
 
 currentCameraState = cameraState.normal;

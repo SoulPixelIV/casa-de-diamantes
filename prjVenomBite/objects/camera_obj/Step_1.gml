@@ -96,6 +96,7 @@ switch (currentCameraState)
 		break;
 	case cameraState.zoomAFK:
 		changeCamera_scr(160 - slowmotionZoomX - recoilZoomX, 90 - slowmotionZoomY - recoilZoomY);
+		break;
 }
 
 if (zoomCooldown < 0 && !noZoom && !player_obj.isZombie)

@@ -4,16 +4,15 @@ with (player_obj)
 {
 	if (distance_to_object(cameraViewOut_obj) < 230)
 	{
-		camera_obj.zoomOut = true;
+		currentCameraState = cameraState.zoomOut;
 	}
 	else if (distance_to_object(cameraViewIn_obj) < 230)
 	{
-		camera_obj.zoomIn = true;
+		currentCameraState = cameraState.zoomIn;
 	}
 	else
 	{
-		camera_obj.zoomOut = false;
-		camera_obj.zoomIn = false;
+		currentCameraState = cameraState.normal;
 	}
 }
 
