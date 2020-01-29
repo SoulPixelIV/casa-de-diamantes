@@ -6,7 +6,7 @@ cameraBorderXMax = room_width - viewXSave / 2 - 32;
 cameraBorderYMin = viewYSave / 2 + 32;
 cameraBorderYMax = room_height - viewYSave / 2 - 32;
 
-camera_set_view_pos(view_camera[0], xCoor, yCoor);
+camera_set_view_pos(view_camera[0], xCoorNew, yCoorNew);
 camera_set_view_size(view_camera[0], viewXSave, viewYSave);
 
 //Set Camera Borders
@@ -46,15 +46,22 @@ else
 //Aim Zoom
 if (mouse_check_button(mb_right))
 {
-	//xCoor += window_mouse_get_x() / 15 + (player_obj.x - viewXSave / 1.6);
-	//yCoor += window_mouse_get_y() / 15 + (player_obj.y - viewYSave / 1.6);
-	camera_set_view_pos(view_camera[0], window_mouse_get_x() / 15 + (player_obj.x - viewXSave / 1.6), window_mouse_get_y() / 15 + (player_obj.y - viewYSave / 1.6));
+	//xCoorNew = lerp(xCoor, window_mouse_get_x() / 15 + (player_obj.x - viewXSave / 1.6), 0.05);
+	//yCoorNew = lerp(yCoor, window_mouse_get_y() / 15 + (player_obj.y - viewYSave / 1.6), 0.05);
+	speed = point_distance(xCoor, yCoor, window_mouse_get_x() / 15 + (player_obj.x - viewXSave / 1.6), window_mouse_get_y() / 15 + (player_obj.y - viewYSave / 1.6)) * 0.1;
+	direction = point_direction(xCoor, yCoor, window_mouse_get_x() / 15 + (player_obj.x - viewXSave / 1.6), window_mouse_get_y() / 15 + (player_obj.y - viewYSave / 1.6));
+	//camera_set_view_pos(view_camera[0], window_mouse_get_x() / 15 + (player_obj.x - viewXSave / 1.6), window_mouse_get_y() / 15 + (player_obj.y - viewYSave / 1.6));
+}
+else
+{
+	xCoorNew = xCoor;
+	yCoorNew = yCoor;
 }
 
 //Zooming
 if (player_obj.horspeed == 0 && player_obj.verspeed == 0)
 {
-	zoomCooldown -= dt * 20;
+	zoomCooldown -= dt;
 }
 else
 {

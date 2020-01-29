@@ -9,6 +9,8 @@ mXPos = 0;
 mYPos = 0;
 xCoor = 100;
 yCoor = 100;
+xCoorNew = xCoor;
+yCoorNew = yCoor;
 
 pistolRecoilZoom = 32;
 dualBarettasRecoilZoom = 48;
