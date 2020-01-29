@@ -115,3 +115,4 @@ if (player_obj.isZombie)
 	draw_set_color(c_red);
 	draw_text(128, 128, "PRESS 'F' TO BECOME HUMAN AGAIN!");
 }
+draw_text(256, 256, zoomCooldown);

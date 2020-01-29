@@ -2,17 +2,21 @@
 
 with (player_obj)
 {
-	if (distance_to_object(cameraViewOut_obj) < 230)
+	if (camera_obj.zoomAFK)
 	{
-		currentCameraState = cameraState.zoomOut;
+		camera_obj.currentCameraState = cameraState.zoomAFK;
+	}
+	else if (distance_to_object(cameraViewOut_obj) < 230)
+	{
+		camera_obj.currentCameraState = cameraState.zoomOut;
 	}
 	else if (distance_to_object(cameraViewIn_obj) < 230)
 	{
-		currentCameraState = cameraState.zoomIn;
+		camera_obj.currentCameraState = cameraState.zoomIn;
 	}
 	else
 	{
-		currentCameraState = cameraState.normal;
+		camera_obj.currentCameraState = cameraState.normal;
 	}
 }
 

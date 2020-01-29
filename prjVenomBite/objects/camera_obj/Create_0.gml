@@ -34,6 +34,7 @@ scoreShake = false;
 deathVignette = false;
 drawInfectionText = false;
 noZoom = false;
+zoomAFK = false;
 zoomOut = false;
 zoomIn = false;
 noHUD = false;

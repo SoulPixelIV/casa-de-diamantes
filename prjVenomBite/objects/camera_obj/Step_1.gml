@@ -46,19 +46,20 @@ else
 //Aim Zoom
 if (mouse_check_button(mb_right))
 {
-	xCoor += window_mouse_get_x() / 15 + (player_obj.x - viewXSave / 1.6);
-	yCoor += window_mouse_get_y() / 15 + (player_obj.y - viewYSave / 1.6);
-	//camera_set_view_pos(view_camera[0], mouseXPos / 15 + (player_obj.x - viewXSave / 1.6), mouseYPos / 15 + (player_obj.y - viewYSave / 1.6));
+	//xCoor += window_mouse_get_x() / 15 + (player_obj.x - viewXSave / 1.6);
+	//yCoor += window_mouse_get_y() / 15 + (player_obj.y - viewYSave / 1.6);
+	camera_set_view_pos(view_camera[0], window_mouse_get_x() / 15 + (player_obj.x - viewXSave / 1.6), window_mouse_get_y() / 15 + (player_obj.y - viewYSave / 1.6));
 }
 
 //Zooming
 if (player_obj.horspeed == 0 && player_obj.verspeed == 0)
 {
-	zoomCooldown -= dt;
+	zoomCooldown -= dt * 20;
 }
 else
 {
 	zoomCooldown = zoomCooldownSave;
+	zoomAFK = false;
 }
 
 //Change Camera View
@@ -101,7 +102,7 @@ switch (currentCameraState)
 
 if (zoomCooldown < 0 && !noZoom && !player_obj.isZombie)
 {
-	currentCameraState = cameraState.zoomAFK;
+	zoomAFK = true;
 }
 
 if (player_obj.slowmo)
