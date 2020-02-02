@@ -48,9 +48,24 @@ if (mouse_check_button(mb_right))
 {
 	//xCoorNew = lerp(xCoor, window_mouse_get_x() / 15 + (player_obj.x - viewXSave / 1.6), 0.05);
 	//yCoorNew = lerp(yCoor, window_mouse_get_y() / 15 + (player_obj.y - viewYSave / 1.6), 0.05);
-	speed = point_distance(xCoor, yCoor, window_mouse_get_x() / 15 + (player_obj.x - viewXSave / 1.6), window_mouse_get_y() / 15 + (player_obj.y - viewYSave / 1.6)) * 0.1;
-	direction = point_direction(xCoor, yCoor, window_mouse_get_x() / 15 + (player_obj.x - viewXSave / 1.6), window_mouse_get_y() / 15 + (player_obj.y - viewYSave / 1.6));
-	//camera_set_view_pos(view_camera[0], window_mouse_get_x() / 15 + (player_obj.x - viewXSave / 1.6), window_mouse_get_y() / 15 + (player_obj.y - viewYSave / 1.6));
+	if (xCoorNew < window_mouse_get_x() / 15 + (player_obj.x - viewXSave / 1.6))
+	{
+		xCoorNew += (10 / 16) * dt;
+	}
+	else
+	{
+		xCoorNew -= (10 / 16) * dt;
+	}
+	if (yCoorNew < window_mouse_get_y() / 15 + (player_obj.y - viewYSave / 1.6))
+	{
+		yCoorNew += (10 / 9) * dt;
+	}
+	else
+	{
+		yCoorNew -= (10 / 9) * dt;
+	}
+	//xCoorNew += window_mouse_get_x() / 15 + (player_obj.x - viewXSave / 1.6);
+	//yCoorNew += window_mouse_get_y() / 15 + (player_obj.y - viewYSave / 1.6);
 }
 else
 {
