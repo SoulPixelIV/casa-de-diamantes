@@ -1,8 +1,7 @@
 /// @description Movement
 
-dt = (delta_time / 1000000) * globalSettings_obj.TARGET_FRAMERATE;
-x += horspeed * dt;
-y += verspeed * dt;
+x += horspeed * global.dt;
+y += verspeed * global.dt;
 
 key_left = keyboard_check(ord("A")) //CONTROLLER AXIS L;
 key_right = keyboard_check(ord("D")) // CONTROLLER AXIS R;
@@ -57,7 +56,7 @@ else
 //Gravity
 if (verspeed < 14 && !onLadder)
 {
-	verspeed -= gravityStrength * dt;
+	verspeed -= gravityStrength * global.dt;
 }
 
 if (movement && !isZombie)
@@ -82,7 +81,7 @@ if (movement && !isZombie)
 	//Cancel Dash
 	if (stoppedDashing)
 	{
-		dashTimer -= dt;
+		dashTimer -= global.dt;
 	}
 	if (dashTimer < 0 || onLadder)
 	{
@@ -141,7 +140,7 @@ if (movement && !isZombie && wallJumps > 0)
 }
 if (wallJumping)
 {
-	wallJumpTimer -= dt;
+	wallJumpTimer -= global.dt;
 }
 if (wallJumpTimer < 0)
 {
@@ -179,7 +178,7 @@ if (grounded)
 
 //Collision
 //horspeed
-if (!place_free(x + (horspeed * dt), y))
+if (!place_free(x + (horspeed * global.dt), y))
 {
 	if (sign(horspeed) != 0)
 	{
@@ -199,7 +198,7 @@ else
 	huggingWall = false;
 }
 //verspeed
-if (!place_free(x, y + (verspeed * dt)))
+if (!place_free(x, y + (verspeed * global.dt)))
 {
 	if (sign(verspeed) != 0)
 	{
@@ -212,13 +211,13 @@ if (!place_free(x, y + (verspeed * dt)))
 }
 else
 {
-	fallJumpSafety -= dt;
+	fallJumpSafety -= global.dt;
 	grounded = false;
 }
 
 if (groundCollisionTimerOn)
 {
-	groundCollisionTimer -= dt;
+	groundCollisionTimer -= global.dt;
 }
 if (groundCollisionTimer < 0)
 {
@@ -405,7 +404,7 @@ if (!isZombie)
 //ShotZoom
 if (shotZoom)
 {
-	shotZoomTimer -= dt;
+	shotZoomTimer -= global.dt;
 }
 if (shotZoomTimer < 0)
 {
@@ -416,9 +415,9 @@ if (shotZoomTimer < 0)
 //Shot Cooldown
 if (global.pistolCooldown > 0 || global.dualBarettasCooldown > 0 || global.shotgunCooldown > 0)
 {
-	global.pistolCooldown -= 0.1 * dt;
-	global.dualBarettasCooldown -= 0.1 * dt;
-	global.shotgunCooldown -= 0.1 * dt;
+	global.pistolCooldown -= 0.1 * global.dt;
+	global.dualBarettasCooldown -= 0.1 * global.dt;
+	global.shotgunCooldown -= 0.1 * global.dt;
 }
 
 //Reload
@@ -473,7 +472,7 @@ else
 //Damage Cooldown
 if (damageRecieved)
 {
-	damageCooldown -= dt;
+	damageCooldown -= global.dt;
 }
 if (damageCooldown < 0)
 {
@@ -495,7 +494,7 @@ if (hp < 0)
 //Zombie
 if (isZombie && !plagueTransformation)
 {
-	zombieTimer -= dt;
+	zombieTimer -= global.dt;
 }
 if (zombieTimer < 0)
 {
@@ -519,7 +518,7 @@ if (isZombie && keyboard_check_pressed(ord("F")) && !plagueTransformation)
 //Plague
 if (plagueTransformation)
 {
-	infection += dt / 15;
+	infection += global.dt / 15;
 }
 
 //Slowmotion
@@ -528,9 +527,9 @@ if (keyboard_check(vk_shift))
 	if (slowmoTimer > 0)
 	{
 		slowmo = true;
-		slowmoTimer -= dt * 3;
+		slowmoTimer -= global.dt * 3;
 		global.timeScale = 0.2;
-		image_speed = 2 * dt;
+		image_speed = 2 * global.dt;
 	}
 }
 else
@@ -538,27 +537,27 @@ else
 	slowmo = false;
 	if (slowmoTimer < slowmoTimerSave)
 	{
-		slowmoTimer += dt * 3.5;
+		slowmoTimer += global.dt * 3.5;
 	}
 	global.timeScale = 1;
-	image_speed = 4 * dt;
+	image_speed = 4 * global.dt;
 }
 if (slowmoTimer < 30)
 {
 	slowmo = false
 	global.timeScale = 1;
-	image_speed = 4 * dt;
+	image_speed = 4 * global.dt;
 }
 if (enemySlowmo)
 {
-	enemySlowmoTimer -= dt * 1.6;
+	enemySlowmoTimer -= global.dt * 1.6;
 	global.timeScale = 0.025;
-	image_speed = dt;
+	image_speed = global.dt;
 }
 if (enemySlowmoTimer < 0)
 {
 	enemySlowmoTimer = enemySlowmoTimerSave;
 	enemySlowmo = false;
 	global.timeScale = 1;
-	image_speed = 4 * dt;
+	image_speed = 4 * global.dt;
 }

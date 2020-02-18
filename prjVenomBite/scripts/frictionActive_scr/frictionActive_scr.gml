@@ -4,11 +4,11 @@ if (argument1)
 	{
 		if (!argument0.isDashing)
 		{
-			argument0.horspeed -= argument0.frictionStrength * argument0.dt;
+			argument0.horspeed -= argument0.frictionStrength * global.dt;
 		}
 		else
 		{
-			argument0.horspeed -= (argument0.frictionStrength * argument0.dt) / 4;
+			argument0.horspeed -= (argument0.frictionStrength * global.dt) / 4;
 		}
 		if (argument0.horspeed < 0.3)
 		{
@@ -19,11 +19,11 @@ if (argument1)
 	{
 		if (!argument0.isDashing)
 		{
-			argument0.horspeed += argument0.frictionStrength * argument0.dt;
+			argument0.horspeed += argument0.frictionStrength * global.dt;
 		}
 		else
 		{
-			argument0.horspeed += (argument0.frictionStrength * argument0.dt) / 4;
+			argument0.horspeed += (argument0.frictionStrength * global.dt) / 4;
 		}
 		if (argument0.horspeed > -0.3)
 		{
@@ -37,11 +37,11 @@ else
 	{
 		if (!argument0.isDashing)
 		{
-			argument0.horspeed -= argument0.dt;
+			argument0.horspeed -= global.dt;
 		}
 		else
 		{
-			argument0.horspeed -= argument0.dt / 4;
+			argument0.horspeed -= global.dt / 4;
 		}
 		if (argument0.horspeed < 0.3)
 		{
@@ -52,11 +52,11 @@ else
 	{
 		if (!argument0.isDashing)
 		{
-			argument0.horspeed += argument0.dt;
+			argument0.horspeed += global.dt;
 		}
 		else
 		{
-			argument0.horspeed += argument0.dt / 4;
+			argument0.horspeed += global.dt / 4;
 		}
 		if (argument0.horspeed > -0.3)
 		{
