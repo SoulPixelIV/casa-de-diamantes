@@ -7,27 +7,28 @@ movSpeed = 3.4 / 3.3;
 movSpeedZombie = 1.8 / 3.3;
 dashSpeed = 5.6 / 3.3;
 wallJumps = 3;
+animationSpeed = 1;
 
 //Physics
-gravityStrength = -0.42 / 3.3; //Lower is lower gravity
-jumpStrength = 7.6 / 3.3;
+gravityStrength = -0.05; //Lower is lower gravity
+jumpStrength = 2.75;
 frictionActive = true;
-frictionStrength = 0.3 / 3.3; //Lower is more slippery
+frictionStrength = 0.02; //Lower is more slippery
 shotJumpStrength = 9.2 / 3.3;
 fallJumpSafety = 9 / 3.3;
 
 //Action
 hp = 100;
 syringes = 3;
-zombieTimer = 550;
-slowmoTimer = 400;
-damageCooldown = 60;
+zombieTimer = 550 * 3.3;
+slowmoTimer = 400 * 3.3;
+damageCooldown = 60 * 3.3;
 
 //Effects
-enemySlowmoTimer = 1.12;
-shotZoomTimer = 1.75;
+enemySlowmoTimer = 1.12 * 3.3;
+shotZoomTimer = 1.75 * 3.3;
 
-
+image_speed = 0;
 infection = 0;
 maxhp = hp;
 syringesLost = 0;
@@ -51,10 +52,10 @@ flip = false;
 spin = false;
 wallJumping = false;
 wallJumpingInAir = false;
-wallJumpTimer = 12;
-groundCollisionTimer = 20;
+wallJumpTimer = 12 * 3.3;
+groundCollisionTimer = 20 * 3.3;
 groundCollisionTimerOn = false;
-dashTimer = 12;
+dashTimer = 12 * 3.3;
 slowmo = false;
 spinWeaponPos = 0;
 spinWeaponDir = 0;
