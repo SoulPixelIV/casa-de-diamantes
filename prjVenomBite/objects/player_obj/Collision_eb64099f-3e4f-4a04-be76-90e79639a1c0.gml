@@ -2,7 +2,7 @@
 
 if (keyboard_check(ord("D")) || keyboard_check(ord("A")))
 {
-	verspeed = -3;
+	verspeed = -0.75;
 }
 else
 {

@@ -1,7 +1,7 @@
 /// @description Shortcuts
 
 ideal_delta_time = 1000000 / room_speed;
-global.dt = delta_time / ideal_delta_time;
+global.dt = (delta_time / ideal_delta_time) * global.timeScale;
 
 if (keyboard_check_pressed(vk_f1))
 {

@@ -28,7 +28,6 @@ damageCooldown = 60 * 3.3;
 enemySlowmoTimer = 1.12 * 3.3;
 shotZoomTimer = 1.75 * 3.3;
 
-image_speed = 0;
 infection = 0;
 maxhp = hp;
 syringesLost = 0;

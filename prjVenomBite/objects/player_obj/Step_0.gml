@@ -445,8 +445,30 @@ if (!isZombie)
 
 
 //Animation
+image_speed = 0;
+image_index += (global.dt / 15) * animationSpeed;
 
-image_index += global.dt / 15;
+switch (sprite_index)
+{
+	case player_spr:
+		animationSpeed = 0.1;
+		break;
+	case playerFlip_spr:
+		animationSpeed = 1.75;
+		break;
+	case playerJumpSpin_spr:
+		animationSpeed = 1.2;
+		break;
+	case playerEquipped_spr:
+		animationSpeed = 1;
+		break;
+	case playerWalkingEquipped_spr:
+		animationSpeed = 1;
+		break;
+	case playerWalking_spr:
+		animationSpeed = 1;
+		break;
+}
 
 if (grounded || !flip)
 {
@@ -532,8 +554,6 @@ if (keyboard_check(vk_shift))
 		slowmo = true;
 		slowmoTimer -= global.dt * 3;
 		global.timeScale = 0.2;
-		//image_speed = 2 * global.dt;
-		animationSpeed = 2;
 	}
 }
 else
@@ -544,28 +564,20 @@ else
 		slowmoTimer += global.dt * 3.5;
 	}
 	global.timeScale = 1;
-	//image_speed = 4 * global.dt;
-	animationSpeed = 4;
 }
 if (slowmoTimer < 30)
 {
 	slowmo = false
 	global.timeScale = 1;
-	//image_speed = 4 * global.dt;
-	animationSpeed = 4;
 }
 if (enemySlowmo)
 {
 	enemySlowmoTimer -= global.dt * 1.6;
 	global.timeScale = 0.025;
-	//image_speed = global.dt;
-	animationSpeed = 1;
 }
 if (enemySlowmoTimer < 0)
 {
 	enemySlowmoTimer = enemySlowmoTimerSave;
 	enemySlowmo = false;
 	global.timeScale = 1;
-	//image_speed = 4 * global.dt;
-	animationSpeed = 4;
 }
