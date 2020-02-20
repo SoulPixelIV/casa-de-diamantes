@@ -90,7 +90,7 @@ if (movement && !isZombie)
 		dashTimer = dashTimerSave;
 	}
 	//Short Jump
-	if (key_jump_release && fullJump == false)
+	if (key_jump_release && fullJump == false && !isDashing)
 	{
 	    if (verspeed < 0)
 	    {
