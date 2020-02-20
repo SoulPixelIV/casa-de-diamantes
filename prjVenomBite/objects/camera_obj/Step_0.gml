@@ -21,11 +21,10 @@ with (player_obj)
 }
 
 //VignetteStrength
-dt = (delta_time / 1000000) * globalSettings_obj.TARGET_FRAMERATE;
 
 if (vignetteStrength != 1)
 {
-	vignetteStrengthTimer -= dt;
+	vignetteStrengthTimer -= global.dt;
 }
 
 if (vignetteStrengthTimer < 0)

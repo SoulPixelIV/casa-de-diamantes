@@ -54,7 +54,7 @@ else
 }
 
 //Gravity
-if (verspeed < 14 && !onLadder)
+if (verspeed < 4 && !onLadder)
 {
 	verspeed -= gravityStrength * global.dt;
 }
@@ -252,11 +252,11 @@ if (onLadder)
 {
 	if (keyboard_check(ord("W")))
 	{
-		verspeed = -2;
+		verspeed = -0.75;
 	}
 	else if (keyboard_check(ord("S")))
 	{
-		verspeed = 2;
+		verspeed = 0.75;
 	}
 	else
 	{

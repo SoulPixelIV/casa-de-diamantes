@@ -1,6 +1,5 @@
 /// @description Camera Movement
 
-dt = (delta_time / 1000000) * globalSettings_obj.TARGET_FRAMERATE;
 cameraBorderXMin = viewXSave / 2 + 32;
 cameraBorderXMax = room_width - viewXSave / 2 - 32;
 cameraBorderYMin = viewYSave / 2 + 32;
@@ -50,19 +49,19 @@ if (mouse_check_button(mb_right))
 	//yCoorNew = lerp(yCoor, window_mouse_get_y() / 15 + (player_obj.y - viewYSave / 1.6), 0.05);
 	if (xCoorNew < window_mouse_get_x() / 15 + (player_obj.x - viewXSave / 1.6))
 	{
-		xCoorNew += (10 / 16) * dt;
+		xCoorNew += (10 / 16) * global.dt / 3;
 	}
 	else
 	{
-		xCoorNew -= (10 / 16) * dt;
+		xCoorNew -= (10 / 16) * global.dt / 3;
 	}
 	if (yCoorNew < window_mouse_get_y() / 15 + (player_obj.y - viewYSave / 1.6))
 	{
-		yCoorNew += (10 / 9) * dt;
+		yCoorNew += (10 / 9) * global.dt / 3;
 	}
 	else
 	{
-		yCoorNew -= (10 / 9) * dt;
+		yCoorNew -= (10 / 9) * global.dt / 3;
 	}
 	//xCoorNew += window_mouse_get_x() / 15 + (player_obj.x - viewXSave / 1.6);
 	//yCoorNew += window_mouse_get_y() / 15 + (player_obj.y - viewYSave / 1.6);
@@ -76,7 +75,7 @@ else
 //Zooming
 if (player_obj.horspeed == 0 && player_obj.verspeed == 0)
 {
-	zoomCooldown -= dt;
+	zoomCooldown -= global.dt / 3;
 }
 else
 {
@@ -87,8 +86,8 @@ else
 //Change Camera View
 if (viewX > viewXSave)
 {
-	viewXSave += (16 / 2) * dt;
-	viewYSave += (9 / 2) * dt;
+	viewXSave += (16 / 2) * global.dt / 3;
+	viewYSave += (9 / 2) * global.dt / 3;
 	if (viewX > viewXSave && viewX < viewXSave + 4)
 	{
 		viewXSave = viewX;
@@ -97,8 +96,8 @@ if (viewX > viewXSave)
 }
 if (viewX < viewXSave)
 {
-	viewXSave -= (16 / 2) * dt;
-	viewYSave -= (9 / 2) * dt;
+	viewXSave -= (16 / 2) * global.dt / 3;
+	viewYSave -= (9 / 2) * global.dt / 3;
 	if (viewX < viewXSave && viewX > viewXSave - 4)
 	{
 		viewXSave = viewX;
@@ -161,7 +160,7 @@ if (player_obj.shotZoom)
 /*
 if (!noZoom && player_obj.isZombie)
 {
-	zombieShakeTime -= zombieShakeSpeed * dt;
+	zombieShakeTime -= zombieShakeSpeed * global.dt;
 	if (zombieShakeTime < 0)
 	{
 		if (zombieShakeDir == 0)
@@ -201,7 +200,7 @@ if (scoreShake)
 {
 	scoreMovementSpeed = 0.8;
 	scoreMovementMax = 1.75;
-	scoreShakeLength -= dt;
+	scoreShakeLength -= global.dt;
 }
 if (scoreShakeLength < 0)
 {

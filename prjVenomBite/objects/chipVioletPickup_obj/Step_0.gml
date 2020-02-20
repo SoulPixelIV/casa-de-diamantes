@@ -1,11 +1,9 @@
-dt = (delta_time / 1000000) * globalSettings_obj.TARGET_FRAMERATE;
-
-x += horspeed * dt;
-y += verspeed * dt;
+x += horspeed * global.dt / 3;
+y += verspeed * global.dt / 3;
 
 if (horspeed > 0)
 {
-	horspeed -= 0.006 * dt;
+	horspeed -= 0.006 * global.dt / 3;
 
 	if (horspeed < 0.1)
 	{
@@ -15,7 +13,7 @@ if (horspeed > 0)
 else
 {
 
-	horspeed += 0.006 * dt;
+	horspeed += 0.006 * global.dt / 3;
 
 	if (horspeed > -0.1)
 	{
@@ -26,7 +24,7 @@ else
 //Gravity
 if (verspeed < 14)
 {
-	verspeed -= gravityStrength * dt;
+	verspeed -= gravityStrength * global.dt / 3;
 }
 
 //Collision

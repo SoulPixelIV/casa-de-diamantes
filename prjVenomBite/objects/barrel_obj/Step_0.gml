@@ -1,5 +1,3 @@
-dt = (delta_time / 1000000) * globalSettings_obj.TARGET_FRAMERATE;
-
 //Death
 if (hp < 0)
 {
@@ -14,5 +12,5 @@ if (hp < 0)
 
 if (hp < 50)
 {
-	hp -= dt / 4;
+	hp -= global.dt / 12;
 }

@@ -1,12 +1,11 @@
 /// @description Life Length
 
-dt = (delta_time / 1000000) * globalSettings_obj.TARGET_FRAMERATE;
-lifeLength -= dt;
+lifeLength -= global.dt;
 
 if (lifeLength < 0)
 {
-	image_alpha -= dt / 10;
-	lightStrength -= dt / 10;
+	image_alpha -= global.dt / 30;
+	lightStrength -= global.dt / 30;
 }
 if (image_alpha < 0.1)
 {

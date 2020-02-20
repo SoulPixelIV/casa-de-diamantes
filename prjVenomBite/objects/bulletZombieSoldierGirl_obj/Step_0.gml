@@ -1,7 +1,6 @@
 /// @description Movement
 
-dt = (delta_time / 1000000) * globalSettings_obj.TARGET_FRAMERATE;
-speed = movSpeed * dt;
+speed = movSpeed * global.dt;
 
 //Collision
 if (!place_free(x, y))

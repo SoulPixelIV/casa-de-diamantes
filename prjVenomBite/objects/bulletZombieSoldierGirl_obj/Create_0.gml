@@ -1,9 +1,8 @@
 /// @description Variables
 
-movSpeed = 12.4
+movSpeed = 5.2;
 createdFire = false;
 
-dt = (delta_time / 1000000) * globalSettings_obj.TARGET_FRAMERATE;
 move_towards_point(player_obj.x, player_obj.y, movSpeed * dt);
 image_angle = point_direction(x, y, player_obj.x, player_obj.y);
 

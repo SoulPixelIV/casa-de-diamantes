@@ -1,9 +1,7 @@
 /// @description Enemy AI
 
-dt = (delta_time / 1000000) * globalSettings_obj.TARGET_FRAMERATE;
-
-x += horspeed * dt;
-y += verspeed * dt;
+x += horspeed * global.dt;
+y += verspeed * global.dt;
 dirLookat = point_direction(x, y, player_obj.x, player_obj.y);
 
 if (!attackInProg)
@@ -36,12 +34,12 @@ if (!attackInProg)
 //Gravity
 if (verspeed < 14)
 {
-	verspeed -= gravityStrength * dt;
+	verspeed -= gravityStrength * global.dt;
 }
 
 //Collision
 //horspeed
-if (!place_free(x + (horspeed * dt), y))
+if (!place_free(x + (horspeed * global.dt), y))
 {
 	if (sign(horspeed) != 0)
 	{
@@ -53,7 +51,7 @@ if (!place_free(x + (horspeed * dt), y))
 	}
 } 
 //verspeed
-if (!place_free(x, y + (verspeed * dt)))
+if (!place_free(x, y + (verspeed * global.dt)))
 {
 	if (sign(verspeed) != 0)
 	{
@@ -131,7 +129,7 @@ with (headshotHitbox)
 //Cooldown
 if (!attackInProg && distance_to_object(player_obj) < 200)
 {
-	attackCooldown -= dt;
+	attackCooldown -= global.dt;
 }
 
 //Prepare Attack
@@ -161,7 +159,7 @@ if (attackInProg && image_index > image_number - 1 && !dashed)
 
 if (delay)
 {
-	attackDelay -= dt;
+	attackDelay -= global.dt;
 }
 if (attackDelay < 0)
 {
