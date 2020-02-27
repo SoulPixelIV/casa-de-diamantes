@@ -3,19 +3,19 @@
 //Movement
 horspeed = 0;
 verspeed = 0;
-movSpeed = 3.4 / 3.3;
-movSpeedZombie = 1.8 / 3.3;
-dashSpeed = 5.6 / 3.3;
+movSpeed = 0.95;
+movSpeedZombie = 0.72;
+dashSpeed = 1.72;
 wallJumps = 3;
 animationSpeed = 1;
 
 //Physics
-gravityStrength = -0.05; //Lower is lower gravity
-jumpStrength = 2.75;
+gravityStrength = -0.03; //Lower is lower gravity
+jumpStrength = 2.2;
 frictionActive = true;
 frictionStrength = 0.02; //Lower is more slippery
-shotJumpStrength = 9.2 / 3.3;
-fallJumpSafety = 9 / 3.3;
+shotJumpStrength = 5;
+fallJumpSafety = 3;
 
 //Action
 hp = 100;

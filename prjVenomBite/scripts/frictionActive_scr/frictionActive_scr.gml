@@ -8,7 +8,7 @@ if (argument1)
 		}
 		else
 		{
-			argument0.horspeed -= (argument0.frictionStrength * global.dt) / 4;
+			argument0.horspeed -= (argument0.frictionStrength * global.dt) / 3;
 		}
 		if (argument0.horspeed < 0.3)
 		{
@@ -23,7 +23,7 @@ if (argument1)
 		}
 		else
 		{
-			argument0.horspeed += (argument0.frictionStrength * global.dt) / 4;
+			argument0.horspeed += (argument0.frictionStrength * global.dt) / 3;
 		}
 		if (argument0.horspeed > -0.3)
 		{
@@ -41,7 +41,7 @@ else
 		}
 		else
 		{
-			argument0.horspeed -= global.dt / 4;
+			argument0.horspeed -= global.dt / 3;
 		}
 		if (argument0.horspeed < 0.3)
 		{
@@ -56,7 +56,7 @@ else
 		}
 		else
 		{
-			argument0.horspeed += global.dt / 4;
+			argument0.horspeed += global.dt / 3;
 		}
 		if (argument0.horspeed > -0.3)
 		{

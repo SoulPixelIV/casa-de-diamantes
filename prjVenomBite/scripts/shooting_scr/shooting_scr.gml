@@ -82,28 +82,28 @@ if (argument0 == "shotgun")
 		{
 			if (dirCursor > 310 || dirCursor < 50)
 			{
-				horspeed -= 6;
+				horspeed -= shotJumpStrength / 3;
 			}
 			else if (dirCursor > 130 && dirCursor < 230)
 			{
-				horspeed += 6;
+				horspeed += shotJumpStrength / 3;
 			}
 			else if (image_xscale == 1)
 			{
-				horspeed -= 3;
+				horspeed -= shotJumpStrength / 6;
 			}
 			else
 			{
-				horspeed += 3;
+				horspeed += shotJumpStrength / 6;
 			}
 		}
 		global.shotgunAmmo--;
 		global.shotgunCooldown = global.shotgunCooldownSave;
 		shotZoom = true;
 		
-		if (dirCursor > 225 && dirCursor < 320)
+		if (dirCursor > 205 && dirCursor < 340)
 		{
-			verspeed = -shotJumpStrength;
+			verspeed = -shotJumpStrength / 2;
 		}
 	}
 }

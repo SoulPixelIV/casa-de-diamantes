@@ -39,6 +39,14 @@
             }
         },
         {
+            "Key": "003e9439-1cd1-4eb0-b4da-d2c2f43f8fdb",
+            "Value": {
+                "id": "89a04bf0-86ea-4bf2-a97d-55a3ec709f97",
+                "resourcePath": "datafiles_yy\\GMLive\\std.ndll.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
             "Key": "007bad62-eaaf-4e08-8ac7-75b73bdbe749",
             "Value": {
                 "id": "6a796e5b-c7ad-498c-bb00-63353fed9feb",
@@ -127,6 +135,14 @@
             }
         },
         {
+            "Key": "08ecba7d-0483-4b63-a35d-6e600343a5b3",
+            "Value": {
+                "id": "24670491-df49-48dd-b2fe-05253a743892",
+                "resourcePath": "views\\08ecba7d-0483-4b63-a35d-6e600343a5b3.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "09520cb4-cab0-4e1f-b16f-caef40a7f19c",
             "Value": {
                 "id": "a8f47dcb-b5ab-497f-893a-8a2452eb1c60",
@@ -172,6 +188,14 @@
                 "id": "3f883fd8-256a-40a2-8fc7-77ee30b63761",
                 "resourcePath": "views\\0d0bd69a-659c-467b-b7aa-1e6280e37644.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "0daa07f8-ee67-4f86-aa84-e124150c39ea",
+            "Value": {
+                "id": "4e8488c7-0fd9-485b-a2c8-7d74e604ff1c",
+                "resourcePath": "datafiles_yy\\GMLive\\gcmt-dll.dll.yy",
+                "resourceType": "GMIncludedFile"
             }
         },
         {
@@ -631,11 +655,27 @@
             }
         },
         {
+            "Key": "33634c94-b392-4387-9e8a-14a6330a1256",
+            "Value": {
+                "id": "e88dd0be-5bff-4be3-bbd2-5ad97cfaa7ef",
+                "resourcePath": "objects\\obj_gmlive\\obj_gmlive.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "338e8398-0f64-4c83-8b4d-695e12cd6cbb",
             "Value": {
                 "id": "2c2dbfb5-f705-449b-a523-2beb183d84aa",
                 "resourcePath": "views\\338e8398-0f64-4c83-8b4d-695e12cd6cbb.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "34ebc914-3fea-42f7-a6b9-db18b75cd055",
+            "Value": {
+                "id": "ff1aba08-63e7-4045-bbfa-df536d342cbe",
+                "resourcePath": "extensions\\GMLive\\GMLive.yy",
+                "resourceType": "GMExtension"
             }
         },
         {
@@ -1847,6 +1887,14 @@
             }
         },
         {
+            "Key": "84c1b589-af7f-44a0-be01-9f5847a6e6c1",
+            "Value": {
+                "id": "6ab0926a-ff1d-4080-91d2-5845cd7b2b39",
+                "resourcePath": "datafiles_yy\\GMLive\\gmlive-server.exe.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
             "Key": "84d30723-7254-44a9-978a-de1cd589a612",
             "Value": {
                 "id": "7ed35ef9-ccc2-4efa-b30d-51cce1cf7335",
@@ -2036,6 +2084,14 @@
                 "id": "131981af-1796-4c8b-8620-e6387461c5c8",
                 "resourcePath": "objects\\toxicWater_obj\\toxicWater_obj.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "91ed824c-5947-4f13-92da-c7afaae1d7bc",
+            "Value": {
+                "id": "61a50714-e130-410d-88c4-a02d482b395c",
+                "resourcePath": "datafiles_yy\\GMLive\\neko.dll.yy",
+                "resourceType": "GMIncludedFile"
             }
         },
         {
@@ -2287,6 +2343,14 @@
             }
         },
         {
+            "Key": "a21c7e2d-eaaf-4f1f-adb8-1dfbf5f11e9c",
+            "Value": {
+                "id": "c1cab5dd-d1fb-4e50-bd39-7187ebd5a840",
+                "resourcePath": "datafiles_yy\\GMLive\\gmlive-server.n.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
             "Key": "a30690ec-1db7-4ff4-9ad6-137b79c106fe",
             "Value": {
                 "id": "c2e58be0-0aaf-4252-b725-ad58f304a442",
@@ -2359,6 +2423,14 @@
             }
         },
         {
+            "Key": "a752e42e-fd5b-41d2-ad6d-b78364f813ae",
+            "Value": {
+                "id": "01d18377-d86e-44cc-8cac-6eb0ec3665cb",
+                "resourcePath": "datafiles_yy\\GMLive\\gmlive.html.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
             "Key": "a78a9c74-ff71-4fb4-9f64-0e728f1c8634",
             "Value": {
                 "id": "bbfa90cb-e13a-407a-8508-81d65879b90f",
@@ -2372,6 +2444,14 @@
                 "id": "fdfd85ce-cc8f-4616-985c-5acf10a1919b",
                 "resourcePath": "sprites\\zombieBucketGirl_spr\\zombieBucketGirl_spr.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "a8402d40-9b3d-4efa-9797-e1e1a9704b58",
+            "Value": {
+                "id": "75c80fdf-720b-4144-8d15-f7915e03930f",
+                "resourcePath": "datafiles_yy\\GMLive\\regexp.ndll.yy",
+                "resourceType": "GMIncludedFile"
             }
         },
         {

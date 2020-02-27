@@ -1,5 +1,5 @@
 /// @description Movement
-
+if (live_call()) return live_result;
 x += horspeed * global.dt;
 y += verspeed * global.dt;
 
@@ -283,75 +283,85 @@ if (keyboard_check(vk_down))
 	dirCursor = 270;
 }
 
-if (global.currentWeapon != gameManager_obj.pickedWeapon.unarmed)
+with (gameManager_obj)
 {
-	if (!isDashing)
+	if (global.currentWeapon != pickedWeapon.unarmed)
 	{
-		if (grounded)
+		with (player_obj)
 		{
-			if (!isZombie && !onLadder)
+			if (!isDashing)
 			{
-				if (horspeed != 0)
+				if (grounded)
 				{
-					sprite_index = playerWalkingEquipped_spr;
-				}
-				else
-				{
-					sprite_index = playerEquipped_spr;
-				}
-			}
-			else
-			{
-				if (horspeed != 0)
-				{
-					sprite_index = zombieGirl_spr;
-				}
-				else
-				{
-					sprite_index = zombieGirl_spr;
-				}
-			}
-		}
-	}
-}
-else
-{
-	if (!isDashing)
-	{
-		if (grounded)
-		{
-			if (!isZombie && !onLadder)
-			{
-				if (horspeed != 0)
-				{
-					sprite_index = playerWalking_spr;
-				}
-				else
-				{
-					sprite_index = player_spr;
-				}
-			}
-			else
-			{
-				if (horspeed != 0)
-				{
-					sprite_index = zombieGirl_spr;
-				}
-				else
-				{
-					if (crouching)
+					if (!isZombie && !onLadder)
 					{
-						sprite_index = zombieGirl_spr;
+						if (horspeed != 0)
+						{
+							sprite_index = playerWalkingEquipped_spr;
+						}
+						else
+						{
+							sprite_index = playerEquipped_spr;
+						}
 					}
 					else
 					{
-						sprite_index = zombieGirl_spr;
+						if (horspeed != 0)
+						{
+							sprite_index = zombieGirl_spr;
+						}
+						else
+						{
+							sprite_index = zombieGirl_spr;
+						}
+					}
+				}
+			}
+		}
+	}
+	else
+	{
+		with (player_obj)
+		{
+			if (!isDashing)
+			{
+				if (grounded)
+				{
+					if (!isZombie && !onLadder)
+					{
+						if (horspeed != 0)
+						{
+							sprite_index = playerWalking_spr;
+						}
+						else
+						{
+							sprite_index = player_spr;
+						}
+					}
+					else
+					{
+						if (horspeed != 0)
+						{
+							sprite_index = zombieGirl_spr;
+						}
+						else
+						{
+							if (crouching)
+							{
+								sprite_index = zombieGirl_spr;
+							}
+							else
+							{
+								sprite_index = zombieGirl_spr;
+							}
+						}
 					}
 				}
 			}
 		}
 	}
 }
+
 if (onLadder && !isZombie && !isDashing)
 {
 	if (verspeed == 0)
@@ -374,29 +384,56 @@ if (onLadder && !isZombie && !isDashing)
 if (!isZombie)
 {
 	//Pistol
-	if (key_shoot && global.currentWeapon == gameManager_obj.pickedWeapon.pistol && global.pistolCooldown <= 0)
+	with (gameManager_obj)
 	{
-		if (!onLadder || onLadder && verspeed == 0)
+		if (global.currentWeapon == pickedWeapon.pistol && global.pistolCooldown <= 0)
 		{
-			shooting_scr("pistol");
+			with (player_obj)
+			{
+				if (key_shoot)
+				{
+					if (!onLadder || onLadder && verspeed == 0)
+					{
+						shooting_scr("pistol");
+					}
+				}
+			}
 		}
 	}
 
 	//Dual Barettas
-	if (key_shoot && global.currentWeapon == gameManager_obj.pickedWeapon.dualBarettas && global.dualBarettasCooldown <= 0)
+	with (gameManager_obj)
 	{
-		if (!onLadder || onLadder && verspeed == 0)
+		if (global.currentWeapon == pickedWeapon.dualBarettas && global.dualBarettasCooldown <= 0)
 		{
-			shooting_scr("dualBarettas");
+			with (player_obj)
+			{
+				if (key_shoot)
+				{
+					if (!onLadder || onLadder && verspeed == 0)
+					{
+						shooting_scr("dualBarettas");
+					}
+				}
+			}
 		}
 	}
 
 	//Shotgun
-	if (key_shoot && global.currentWeapon == gameManager_obj.pickedWeapon.shotgun && global.shotgunCooldown <= 0)
+	with (gameManager_obj)
 	{
-		if (!onLadder || onLadder && verspeed == 0)
+		if (global.currentWeapon == pickedWeapon.shotgun && global.shotgunCooldown <= 0)
 		{
-			shooting_scr("shotgun");
+			with (player_obj)
+			{
+				if (key_shoot)
+				{
+					if (!onLadder || onLadder && verspeed == 0)
+					{
+						shooting_scr("shotgun");
+					}
+				}
+			}
 		}
 	}
 }
