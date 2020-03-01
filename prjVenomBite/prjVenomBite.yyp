@@ -1410,7 +1410,7 @@
             "Key": "6a627897-1c00-4b95-95e0-c5a6e76c2858",
             "Value": {
                 "id": "37556316-2463-46b7-a072-7ee98314ed6b",
-                "resourcePath": "sprites\\playerEquipped_spr\\playerEquipped_spr.yy",
+                "resourcePath": "sprites\\playerEquippedOld_spr\\playerEquippedOld_spr.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -2459,6 +2459,14 @@
             "Value": {
                 "id": "1492a2e8-0263-4b46-944c-ce71a5691cbe",
                 "resourcePath": "sprites\\caveTilesOld_spr\\caveTilesOld_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "aab55607-834b-4599-881b-d67f3d508cee",
+            "Value": {
+                "id": "0c790c35-141c-4d5e-90ae-052ef0deeec6",
+                "resourcePath": "sprites\\playerEquipped_spr\\playerEquipped_spr.yy",
                 "resourceType": "GMSprite"
             }
         },

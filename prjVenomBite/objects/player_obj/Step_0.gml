@@ -497,7 +497,7 @@ switch (sprite_index)
 		animationSpeed = 1.2;
 		break;
 	case playerEquipped_spr:
-		animationSpeed = 1;
+		animationSpeed = 0.5;
 		break;
 	case playerWalkingEquipped_spr:
 		animationSpeed = 1;
