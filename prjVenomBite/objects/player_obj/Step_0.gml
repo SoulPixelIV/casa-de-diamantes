@@ -20,7 +20,7 @@ if (movement && !wallJumping && !isDashing)
 		if (!isZombie)
 		{
 			horspeed = movSpeed;
-		}
+		} 
 		else
 		{
 			horspeed = movSpeedZombie;
@@ -488,7 +488,7 @@ image_index += (global.dt / 15) * animationSpeed;
 switch (sprite_index)
 {
 	case player_spr:
-		animationSpeed = 0.1;
+		animationSpeed = 0.5;
 		break;
 	case playerFlip_spr:
 		animationSpeed = 1.75;

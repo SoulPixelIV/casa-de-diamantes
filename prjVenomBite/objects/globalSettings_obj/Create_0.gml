@@ -12,3 +12,4 @@ global.dt = (delta_time / ideal_delta_time) * global.timeScale;
 
 global.tilemap = layer_tilemap_get_id("TileCollider");
 
+sprite_set_live(player_spr, true);

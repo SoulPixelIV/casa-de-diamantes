@@ -2287,14 +2287,6 @@
             }
         },
         {
-            "Key": "9dd8577d-bb8f-4a3e-99e8-290b9f8344d7",
-            "Value": {
-                "id": "03b851bc-c186-4edf-bd05-6597379b6616",
-                "resourcePath": "sprites\\player_spr\\player_spr.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "9e8cbf35-b0be-4630-80ce-6d532f943618",
             "Value": {
                 "id": "a814c0ea-a25a-4fe5-a359-a5de79934f9f",
@@ -3463,19 +3455,19 @@
             }
         },
         {
-            "Key": "f383535f-e5ef-40a8-9afa-e5c4432b6186",
-            "Value": {
-                "id": "fd9c278a-d0f8-40f6-99dc-6e3766284c4a",
-                "resourcePath": "sprites\\player_spr_Backup\\player_spr_Backup.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "f418569b-3bdd-4706-a0e4-364317f54032",
             "Value": {
                 "id": "232e79af-bbff-433a-b8e7-bfe251338e04",
                 "resourcePath": "options\\mac\\options_mac.yy",
                 "resourceType": "GMMacOptions"
+            }
+        },
+        {
+            "Key": "f4cf8647-fa8a-40c1-ae4a-f570026e5ad2",
+            "Value": {
+                "id": "78c68044-88eb-43be-9ec2-3140b9d6a30e",
+                "resourcePath": "sprites\\player_spr\\player_spr.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -3532,6 +3524,14 @@
                 "id": "004050a2-9ce3-4aa0-af71-6ac6af253c28",
                 "resourcePath": "objects\\ledBarRed_obj\\ledBarRed_obj.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "f9fd4e97-57cb-418f-84cc-977114e82a5d",
+            "Value": {
+                "id": "937111f5-70a2-4e48-9662-c23573f18ea4",
+                "resourcePath": "sprites\\playerOLD_spr\\playerOLD_spr.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
