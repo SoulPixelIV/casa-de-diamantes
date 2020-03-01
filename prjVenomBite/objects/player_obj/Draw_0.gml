@@ -19,6 +19,12 @@ if (!flip)
 	}
 }
 
+//Flip Sparkle
+if (flipAvail)
+{
+	draw_sprite(redSparkle_spr, 0, x + 8, y + 6);
+}
+
 if (isDashing)
 {
 	changePos = 0;
