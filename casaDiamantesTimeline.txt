@@ -89,5 +89,15 @@ December 2019:
 January 2020:
 - Changed ammo system
 - Polished level1
-...
+- Fixed ground jitter issue
+- Added framerate detached collision system
+- Changed weapon sprites
+- Started new camera aim system
+
+Febuary 2020(Exams):
+- New delta time system
+- Tweaked gravity + movement
+
+March 2020:
+- Added new animations (Idle, walking, jump spin)
 
