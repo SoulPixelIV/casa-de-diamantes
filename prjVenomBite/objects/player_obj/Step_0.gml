@@ -150,7 +150,7 @@ if (wallJumpTimer < 0)
 
 //Flip
 //if (!grounded && !isZombie && !spin && !isDashing && !unarmed && mouse_check_button(mb_right))
-if (key_jump && (verspeed == 0 || flipAvail))
+if (key_jump && (verspeed == 0 || flipAvail) && !isDashing)
 {
 	sprite_index = playerFlip_spr;
 	flip = true;
@@ -158,7 +158,7 @@ if (key_jump && (verspeed == 0 || flipAvail))
 	flipUsed = true;
 	jump_scr();
 }
-if (grounded)
+if (grounded || isDashing)
 {
 	flip = false;
 	flipAvail = false;
@@ -166,7 +166,7 @@ if (grounded)
 	flipTiming = flipTimingSave;
 }
 
-if (verspeed > 0 && !grounded && !flipUsed)
+if (verspeed > 0 && !grounded && !flipUsed && !isDashing)
 {
 	flipAvail = true;
 	flipTiming -= global.dt;
