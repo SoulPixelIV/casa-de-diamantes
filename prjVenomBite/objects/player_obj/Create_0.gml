@@ -16,6 +16,9 @@ frictionActive = true;
 frictionStrength = 0.02; //Lower is more slippery
 shotJumpStrength = 5;
 fallJumpSafety = 3;
+flipTiming = 10;
+flipAvail = false;
+flipUsed = false;
 
 //Action
 hp = 100;
@@ -75,6 +78,7 @@ dashTimerSave = dashTimer;
 enemySlowmoTimerSave = enemySlowmoTimer;
 shotZoomTimerSave = shotZoomTimer;
 groundCollisionTimerSave = groundCollisionTimer;
+flipTimingSave = flipTiming;
 
 //Debug
 instance_create_layer(x + 1, y - 4, "Instances", playerBulletLine_obj);

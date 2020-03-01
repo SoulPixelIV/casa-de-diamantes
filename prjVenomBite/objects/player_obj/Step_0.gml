@@ -149,17 +149,31 @@ if (wallJumpTimer < 0)
 }
 
 //Flip
-if (!grounded && !isZombie && !spin && !isDashing && !unarmed && mouse_check_button(mb_right))
+//if (!grounded && !isZombie && !spin && !isDashing && !unarmed && mouse_check_button(mb_right))
+if (key_jump && (verspeed == 0 || flipAvail))
 {
-	if (horspeed > movSpeed - 0.3 || horspeed < -movSpeed + 0.3)
-	{
-		sprite_index = playerFlip_spr;
-		flip = true;
-	}
+	sprite_index = playerFlip_spr;
+	flip = true;
+	flipAvail = false;
+	flipUsed = true;
+	jump_scr();
 }
 if (grounded)
 {
 	flip = false;
+	flipAvail = false;
+	flipUsed = false;
+	flipTiming = flipTimingSave;
+}
+
+if (verspeed > 0 && !grounded && !flipUsed)
+{
+	flipAvail = true;
+	flipTiming -= global.dt;
+}
+if (flipTiming < 0)
+{
+	flipAvail = false;
 }
 
 //Jump Spin
