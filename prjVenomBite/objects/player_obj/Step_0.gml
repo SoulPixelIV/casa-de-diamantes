@@ -54,7 +54,7 @@ else
 }
 
 //Gravity
-if (verspeed < 4 && !onLadder)
+if (verspeed < 3.5 && !onLadder)
 {
 	verspeed -= gravityStrength * global.dt;
 }
