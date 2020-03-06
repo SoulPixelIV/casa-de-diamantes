@@ -149,15 +149,24 @@ if (wallJumpTimer < 0)
 }
 
 //Flip
-//if (!grounded && !isZombie && !spin && !isDashing && !unarmed && mouse_check_button(mb_right))
-if (key_jump && (verspeed == 0 || flipAvail) && !isDashing)
+with (gameManager_obj)
 {
-	sprite_index = playerFlip_spr;
-	flip = true;
-	flipAvail = false;
-	flipUsed = true;
-	jump_scr();
+	if (global.currentWeapon != pickedWeapon.unarmed)
+	{
+		with (player_obj)
+		{
+			if (key_jump && (verspeed == 0 || flipAvail) && !isDashing)
+			{
+				sprite_index = playerFlip_spr;
+				flip = true;
+				flipAvail = false;
+				flipUsed = true;
+				jump_scr();
+			}
+		}
+	}
 }
+		
 if (grounded || isDashing)
 {
 	flip = false;
@@ -371,6 +380,13 @@ with (gameManager_obj)
 						}
 					}
 				}
+				else
+				{
+					if (jumping)
+					{
+						sprite_index = playerJump_spr;
+					}
+				}
 			}
 		}
 	}
@@ -518,6 +534,9 @@ switch (sprite_index)
 		break;
 	case playerWalking_spr:
 		animationSpeed = 1;
+		break;
+	case playerJump_spr:
+		animationSpeed = 0.75;
 		break;
 }
 

@@ -11,3 +11,4 @@ if (player_obj.isDashing)
 {
 	player_obj.stoppedDashing = true;
 }
+player_obj.jumping = true;

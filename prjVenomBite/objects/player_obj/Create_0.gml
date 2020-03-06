@@ -46,6 +46,7 @@ shotZoom = false;
 enemySlowmo = false;
 currDir = 0;
 fullJump = false;
+jumping = false;
 grounded = false;
 crouching = false;
 unarmed = true;
