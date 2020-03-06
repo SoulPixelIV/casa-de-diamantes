@@ -3351,6 +3351,14 @@
             }
         },
         {
+            "Key": "e9d5a6ca-dfa4-47a7-b1d2-f84075c7350b",
+            "Value": {
+                "id": "88408215-b1ab-4902-b62c-e1a084dc5aff",
+                "resourcePath": "sprites\\playerFalling_spr\\playerFalling_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "ea9ece90-0f55-4822-b3fa-42d502c475de",
             "Value": {
                 "id": "0c7a2844-4ebd-471c-9bea-01494bee3b46",
