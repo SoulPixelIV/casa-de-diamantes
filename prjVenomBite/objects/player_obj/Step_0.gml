@@ -106,6 +106,13 @@ if (isDashing && !onLadder)
 		image_index = image_number - 1;
 	}
 }
+if (jumping)
+{
+	if (image_index > image_number - 1)
+	{
+		image_index = image_number - 1;
+	}
+}
 
 //Walljump
 if (movement && !isZombie && wallJumps > 0)
