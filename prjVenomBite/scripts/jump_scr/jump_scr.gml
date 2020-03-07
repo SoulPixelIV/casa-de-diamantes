@@ -12,3 +12,4 @@ if (player_obj.isDashing)
 	player_obj.stoppedDashing = true;
 }
 player_obj.jumping = true;
+player_obj.image_index = 0;
