@@ -553,6 +553,9 @@ switch (sprite_index)
 	case playerJump_spr:
 		animationSpeed = 0.75;
 		break;
+	case playerFalling_spr:
+		animationSpeed = 0.75;
+		break;
 }
 
 if (grounded || !flip)
