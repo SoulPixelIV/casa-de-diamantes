@@ -106,7 +106,8 @@ if (isDashing && !onLadder)
 		image_index = image_number - 1;
 	}
 }
-if (jumping)
+
+if (jumping && !onLadder && !isDashing && !spin)
 {
 	if (image_index > image_number - 1)
 	{
