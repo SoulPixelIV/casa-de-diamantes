@@ -392,7 +392,14 @@ with (gameManager_obj)
 				{
 					if (jumping)
 					{
-						sprite_index = playerJump_spr;
+						if (verspeed < 0)
+						{
+							sprite_index = playerJump_spr;
+						}
+						else
+						{
+							sprite_index = playerFalling_spr;
+						}
 					}
 				}
 			}
