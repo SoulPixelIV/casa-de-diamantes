@@ -15,18 +15,18 @@ playerSightMin = 16;
 
 savePosX = x;
 savePosY = y;
-attackCooldown = 100;
+attackCooldown = 625;
 delay = false;
 isDashing = false;
-attackDelay = 25;
-boostSpeed = 4.2;
+attackDelay = 75;
+boostSpeed = 1.45;
 attackInProg = false;
 dashed = false;
 damageCollision = false;
 points = 125;
-knockback = 5;
-movSpeed = 0.45;
-gravityStrength = -0.32;
+knockback = 2;
+movSpeed = 0.15;
+gravityStrength = -0.05;
 
 //Help Vars
 attackCooldownSave = attackCooldown;

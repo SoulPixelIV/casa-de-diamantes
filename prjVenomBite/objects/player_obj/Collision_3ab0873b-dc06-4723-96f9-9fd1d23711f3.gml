@@ -11,6 +11,10 @@ if (!damageRecieved && !isZombie)
 	{
 		horspeed = -other.knockback;
 	}
+	else if (horspeed = 0)
+	{
+		verspeed = -other.knockback;
+	}
 	else
 	{
 		horspeed = other.knockback;
