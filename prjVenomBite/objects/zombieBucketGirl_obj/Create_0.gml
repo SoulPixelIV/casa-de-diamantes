@@ -8,10 +8,10 @@ hpBucket = 75;
 damage = 35;
 damageCollision = true;
 points = 125;
-knockback = 7;
-movSpeed = 0.33;
+knockback = 2.25;
+movSpeed = 0.12;
 playedSound = false;
-gravityStrength = -0.32;
+gravityStrength = -0.05;
 savePosX = x;
 savePosY = y;
 

@@ -3,7 +3,7 @@
 movSpeed = 5.2;
 createdFire = false;
 
-move_towards_point(player_obj.x, player_obj.y, movSpeed * dt);
+move_towards_point(player_obj.x, player_obj.y, movSpeed * global.dt);
 image_angle = point_direction(x, y, player_obj.x, player_obj.y);
 
 body = instance_nearest(x, y, zombieSoldierGirl_obj);
