@@ -2,6 +2,9 @@
 if (live_call()) return live_result;
 x += horspeed * global.dt;
 y += verspeed * global.dt;
+dashTimer = 20;
+wallJumpTimer = 12 * 3.3;
+groundCollisionTimer = 30;
 
 key_left = keyboard_check(ord("A")) //CONTROLLER AXIS L;
 key_right = keyboard_check(ord("D")) // CONTROLLER AXIS R;
