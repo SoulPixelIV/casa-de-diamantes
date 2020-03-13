@@ -152,7 +152,7 @@ if (wallJumping)
 }
 if (wallJumpTimer < 0)
 {
-	wallJumpTimer = 12;
+	wallJumpTimer = wallJumpTimerSave;
 	wallJumping = false;
 }
 
