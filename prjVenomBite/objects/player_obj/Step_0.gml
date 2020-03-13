@@ -2,9 +2,7 @@
 if (live_call()) return live_result;
 x += horspeed * global.dt;
 y += verspeed * global.dt;
-dashTimer = 20;
 wallJumpTimer = 12 * 3.3;
-groundCollisionTimer = 30;
 
 key_left = keyboard_check(ord("A")) //CONTROLLER AXIS L;
 key_right = keyboard_check(ord("D")) // CONTROLLER AXIS R;
@@ -112,7 +110,7 @@ if (isDashing && !onLadder)
 
 if (jumping && !onLadder && !isDashing && !spin)
 {
-	if (image_index > image_number - 1)
+	if (image_index > image_number - 1 && sprite_index == playerJump_spr)
 	{
 		image_index = image_number - 1;
 	}
