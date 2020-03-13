@@ -23,13 +23,13 @@ flipUsed = false;
 //Action
 hp = 100;
 syringes = 3;
-zombieTimer = 550 * 3.3;
-slowmoTimer = 400 * 3.3;
-damageCooldown = 60 * 3.3;
+zombieTimer = 1550;
+slowmoTimer = 600;
+damageCooldown = 100;
 
 //Effects
-enemySlowmoTimer = 1.12 * 3.3;
-shotZoomTimer = 1.75 * 3.3;
+enemySlowmoTimer = 3.82;
+shotZoomTimer = 8.75;
 
 infection = 0;
 maxhp = hp;
@@ -55,7 +55,7 @@ flip = false;
 spin = false;
 wallJumping = false;
 wallJumpingInAir = false;
-wallJumpTimer = 12 * 3.3;
+wallJumpTimer = 15;
 groundCollisionTimer = 20;
 groundCollisionTimerOn = false;
 dashTimer = 20;
