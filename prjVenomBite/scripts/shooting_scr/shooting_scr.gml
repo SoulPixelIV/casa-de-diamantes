@@ -13,15 +13,15 @@ if (argument0 == "pistol")
 		
 		if (!huggingWall)
 		{
-			if (!isDashing && !grounded)
+			if (!isDashing)
 			{
 				if (image_xscale == 1)
 				{
-					horspeed = -1;
+					horspeed = -0.75;
 				}
 				else
 				{
-					horspeed = 1;
+					horspeed = 0.75;
 				}
 			}
 		}
@@ -46,15 +46,15 @@ if (argument0 == "dualBarettas")
 		
 		if (!huggingWall)
 		{
-			if (!isDashing && !grounded)
+			if (!isDashing)
 			{
 				if (image_xscale == 1)
 				{
-					horspeed = -2;
+					horspeed = -1.15;
 				}
 				else
 				{
-					horspeed = 2;
+					horspeed = 1.15;
 				}
 			}
 		}
