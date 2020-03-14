@@ -4,6 +4,6 @@ if (open)
 {
 	if (y < goalY)
 	{
-		y += global.dt;
+		y += global.dt / 3;
 	}
 }

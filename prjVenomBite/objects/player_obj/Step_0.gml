@@ -95,6 +95,7 @@ if (movement && !isZombie)
 	    if (verspeed < 0)
 	    {
 	        verspeed /= 2;
+			shortJump = true;
 	    }
 	}
 }
@@ -109,7 +110,7 @@ if (isDashing && !onLadder)
 
 if (jumping && !onLadder && !isDashing && !spin)
 {
-	if (image_index > image_number - 1 && sprite_index == playerJump_spr)
+	if (image_index > image_number - 1)
 	{
 		image_index = image_number - 1;
 	}
@@ -394,7 +395,7 @@ with (gameManager_obj)
 					{
 						if (verspeed < 0)
 						{
-							sprite_index = playerJump_spr;
+							sprite_index = playerJumpSpinUnequipped_spr;
 						}
 						else
 						{
@@ -539,6 +540,9 @@ switch (sprite_index)
 		animationSpeed = 1.75;
 		break;
 	case playerJumpSpin_spr:
+		animationSpeed = 1.2;
+		break;
+	case playerJumpSpinUnequipped_spr:
 		animationSpeed = 1.2;
 		break;
 	case playerEquipped_spr:

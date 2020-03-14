@@ -67,6 +67,7 @@ huggingWall = false;
 dirCursor = 0;
 lightStrength = 0;
 lightSize = 0;
+shortJump = false;
 
 //Help Vars
 damageCooldownSave = damageCooldown;
