@@ -266,6 +266,17 @@ else
 {
 	fallJumpSafety -= global.dt;
 	grounded = false;
+	createdParticles = false;
+}
+
+//Create Dust Particles
+if (grounded && !createdParticles && !isDashing)
+{
+	repeat(5)
+	{
+		instance_create_layer(player_obj.x, player_obj.y + 26, "ForegroundObjects", dustParticle_obj);
+	}
+	createdParticles = true;
 }
 
 if (groundCollisionTimerOn)
