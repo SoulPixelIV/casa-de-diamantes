@@ -6,5 +6,8 @@ ypos = player_obj.y - 8 + lengthdir_y(24, player_obj.dirCursor);
 x = xpos;
 y = ypos;
 
-dt = (delta_time / 1000000) * globalSettings_obj.TARGET_FRAMERATE;
-image_alpha -= dt / 40;
+image_alpha -= global.dt / 80;
+
+//Animation
+image_speed = 0;
+image_index += (global.dt / 12);
