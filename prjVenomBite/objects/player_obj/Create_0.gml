@@ -3,9 +3,9 @@
 //Movement
 horspeed = 0;
 verspeed = 0;
-movSpeed = 0.95;
-movSpeedZombie = 0.72;
-dashSpeed = 1.72;
+movSpeed = 0.82;
+movSpeedZombie = 0.67;
+dashSpeed = 1.42;
 wallJumps = 3;
 animationSpeed = 1;
 
