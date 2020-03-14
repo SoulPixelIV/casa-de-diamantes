@@ -101,10 +101,30 @@ if (movement && !isZombie)
 }
 if (isDashing && !onLadder)
 {
-	sprite_index = playerDash_spr;
-	if (image_index > image_number - 1 && sprite_index == playerDash_spr)
+	with (gameManager_obj)
 	{
-		image_index = image_number - 1;
+		if (global.currentWeapon == pickedWeapon.unarmed)
+		{
+			with (player_obj)
+			{
+				sprite_index = playerDashUnequipped_spr;
+				if (image_index > image_number - 1 && sprite_index == playerDashUnequipped_spr)
+				{
+					image_index = image_number - 1;
+				}
+			}
+		}
+		else
+		{
+			with (player_obj)
+			{
+				sprite_index = playerDash_spr;
+				if (image_index > image_number - 1 && sprite_index == playerDash_spr)
+				{
+					image_index = image_number - 1;
+				}
+			}
+		}
 	}
 }
 

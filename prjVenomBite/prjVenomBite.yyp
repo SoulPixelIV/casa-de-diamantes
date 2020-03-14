@@ -3183,6 +3183,14 @@
             }
         },
         {
+            "Key": "dbeb7686-93a8-42e2-a548-3f73b691e068",
+            "Value": {
+                "id": "4f3cc103-6d3d-47f8-9771-76f823f6cce5",
+                "resourcePath": "sprites\\playerDashUnequipped_spr\\playerDashUnequipped_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "dca0f6ec-134e-43fa-a810-aaafc8617282",
             "Value": {
                 "id": "c0592471-7de0-4c4d-92e8-4653e40e393c",
