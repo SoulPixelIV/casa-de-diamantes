@@ -155,17 +155,6 @@ if (movement && !isZombie && wallJumps > 0)
 		}
 		wallJumps--;
 		wallJumpingInAir = true;
-		//Wallturning ###TODO###
-		/*
-		if (image_xscale == -1)
-		{
-			image_xscale = 1;
-		}
-		else
-		{
-			image_xscale = -1;
-		}
-		*/
 	}
 }
 if (wallJumping)
@@ -444,7 +433,7 @@ with (gameManager_obj)
 	}
 }
 
-if (huggingWall)
+if (huggingWall && !grounded)
 {
 	sprite_index = playerWall_spr;
 	if (key_left)
