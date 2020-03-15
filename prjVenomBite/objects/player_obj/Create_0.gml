@@ -6,7 +6,7 @@ verspeed = 0;
 movSpeed = 0.82;
 movSpeedZombie = 0.67;
 dashSpeed = 1.42;
-wallJumps = 3;
+wallJumps = 2;
 animationSpeed = 1;
 
 //Physics
@@ -30,6 +30,7 @@ damageCooldown = 100;
 //Effects
 enemySlowmoTimer = 3.82;
 shotZoomTimer = 8.75;
+walljumpDustTimer = 12;
 
 infection = 0;
 maxhp = hp;
@@ -71,6 +72,7 @@ shortJump = false;
 createdParticles = false;
 
 //Help Vars
+walljumpDustTimerSave = walljumpDustTimer;
 damageCooldownSave = damageCooldown;
 fallJumpSafetySave = fallJumpSafety;
 zombieTimerSave = zombieTimer;

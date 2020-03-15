@@ -143,7 +143,7 @@ if (movement && !isZombie && wallJumps > 0)
 	if (huggingWall && key_jump && !grounded)
 	{
 		wallJumping = true;
-		verspeed = -jumpStrength * 1.1;
+		verspeed = -jumpStrength / 1.3;
 		
 		if (key_right)
 		{
@@ -327,6 +327,10 @@ if (onLadder)
 		verspeed = 0;
 	}
 }
+if (huggingWall && !onLadder && !grounded)
+{
+	verspeed = 0.2;
+}
 
 //Weapon System ###TODO###
 dirCursor = point_direction(x, y, mouse_x, mouse_y);
@@ -353,7 +357,7 @@ with (gameManager_obj)
 	{
 		with (player_obj)
 		{
-			if (!isDashing)
+			if (!isDashing && !huggingWall)
 			{
 				if (grounded)
 				{
@@ -387,7 +391,7 @@ with (gameManager_obj)
 	{
 		with (player_obj)
 		{
-			if (!isDashing)
+			if (!isDashing && !huggingWall)
 			{
 				if (grounded)
 				{
@@ -436,6 +440,33 @@ with (gameManager_obj)
 					}
 				}
 			}
+		}
+	}
+}
+
+if (huggingWall)
+{
+	sprite_index = playerWall_spr;
+	if (key_left)
+	{
+		image_xscale = 1;
+		walljumpDustTimer -= global.dt;
+		if (walljumpDustTimer < 0)
+		{
+			instance_create_layer(player_obj.x - 6, player_obj.y + 22, "ForegroundObjects", dustParticle_obj);
+			instance_create_layer(player_obj.x - 6, player_obj.y - 16, "BackgroundObjects", dustParticle_obj);
+			walljumpDustTimer = walljumpDustTimerSave;
+		}
+	}
+	if (key_right)
+	{
+		image_xscale = -1;
+		walljumpDustTimer -= global.dt;
+		if (walljumpDustTimer < 0)
+		{
+			instance_create_layer(player_obj.x + 6, player_obj.y + 22, "ForegroundObjects", dustParticle_obj);
+			instance_create_layer(player_obj.x + 6, player_obj.y - 16, "BackgroundObjects", dustParticle_obj);
+			walljumpDustTimer = walljumpDustTimerSave;
 		}
 	}
 }
@@ -596,7 +627,7 @@ switch (sprite_index)
 
 if (grounded || !flip)
 {
-	if (!wallJumpingInAir && !isDashing)
+	if (!wallJumpingInAir && !isDashing && !huggingWall)
 	{
 		if (dirCursor > 90 && dirCursor < 270)
 		{

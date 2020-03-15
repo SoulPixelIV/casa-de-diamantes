@@ -1935,6 +1935,14 @@
             }
         },
         {
+            "Key": "87052d3e-4ee6-45b3-84cd-ee7cd62e145a",
+            "Value": {
+                "id": "66b9d92c-20dd-4210-8b55-78620ae4c0dd",
+                "resourcePath": "sprites\\playerWall_spr\\playerWall_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "875bb2df-e54b-44fd-b927-5532404eec5f",
             "Value": {
                 "id": "0b1f0bf0-4db2-4ff8-96cc-6ad54f2d7af0",
