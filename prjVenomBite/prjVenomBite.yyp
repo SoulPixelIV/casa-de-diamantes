@@ -1847,6 +1847,14 @@
             }
         },
         {
+            "Key": "836f63b9-529a-4a1b-8003-1fd77e04786c",
+            "Value": {
+                "id": "6db61a7d-ac72-41a3-bbeb-657140b78290",
+                "resourcePath": "sounds\\walk2_snd\\walk2_snd.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "83b20320-8690-4dfe-8ae2-fb5b1f48b44d",
             "Value": {
                 "id": "ec335b0e-8466-48d3-b521-067024054a6b",
@@ -3260,6 +3268,14 @@
                 "id": "0088b8a6-f6b1-4a5c-a08c-92ec86616b28",
                 "resourcePath": "sprites\\casinoBuilding_spr\\casinoBuilding_spr.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "e0201a26-f715-4f11-b421-b4b552ae1cf0",
+            "Value": {
+                "id": "879aa8a4-4421-4798-82dd-c5872c4c39dc",
+                "resourcePath": "sounds\\walk1_snd\\walk1_snd.yy",
+                "resourceType": "GMSound"
             }
         },
         {
