@@ -70,6 +70,7 @@ lightStrength = 0;
 lightSize = 0;
 shortJump = false;
 createdParticles = false;
+landSoundPlayed = false;
 
 //Help Vars
 walljumpDustTimerSave = walljumpDustTimer;

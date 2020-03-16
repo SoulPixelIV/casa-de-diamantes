@@ -16,3 +16,5 @@ if (!player_obj.isDashing)
 {
 	player_obj.image_index = 0;
 }
+audio_play_sound(jump_snd, 1, false);
+landSoundPlayed = false;

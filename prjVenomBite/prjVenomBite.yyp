@@ -191,6 +191,14 @@
             }
         },
         {
+            "Key": "0da87f21-ae37-4e4c-b51e-da692921899a",
+            "Value": {
+                "id": "0f1e89a8-0203-4488-bdb5-1c01df6e530d",
+                "resourcePath": "sounds\\land_snd\\land_snd.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "0daa07f8-ee67-4f86-aa84-e124150c39ea",
             "Value": {
                 "id": "4e8488c7-0fd9-485b-a2c8-7d74e604ff1c",
@@ -3404,6 +3412,14 @@
                 "id": "88408215-b1ab-4902-b62c-e1a084dc5aff",
                 "resourcePath": "sprites\\playerFalling_spr\\playerFalling_spr.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "ea7ee958-c137-4162-a1c0-a72ac5d62af9",
+            "Value": {
+                "id": "4a16cd01-4eaa-4d08-bec9-8abb1d516ceb",
+                "resourcePath": "sounds\\jump_snd\\jump_snd.yy",
+                "resourceType": "GMSound"
             }
         },
         {
