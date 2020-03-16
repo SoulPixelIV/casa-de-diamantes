@@ -10,6 +10,7 @@ if (verspeed >= 0)
 }
 player_obj.wallJumps = player_obj.wallJumpsSave;
 player_obj.wallJumpingInAir = false;
+player_obj.invincible = false;
 if (!landSoundPlayed)
 {
 	audio_play_sound(land_snd, 1, false);

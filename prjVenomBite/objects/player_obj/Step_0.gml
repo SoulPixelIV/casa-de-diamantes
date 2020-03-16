@@ -185,6 +185,7 @@ with (gameManager_obj)
 			if (key_jump && (verspeed == 0 || flipAvail) && !isDashing)
 			{
 				sprite_index = playerFlip_spr;
+				invincible = true;
 				flip = true;
 				flipAvail = false;
 				flipUsed = true;

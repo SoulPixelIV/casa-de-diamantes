@@ -1,6 +1,6 @@
 /// @description Damage Detection
 
-if (!damageRecieved && !isZombie)
+if (!damageRecieved && !isZombie && !invincible)
 {
 	if (other.damageCollision)
 	{
