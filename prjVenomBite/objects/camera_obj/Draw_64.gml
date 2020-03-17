@@ -1,5 +1,17 @@
 //#####LAYER 0#####
 
+//Zombie Spikes
+draw_sprite_ext(zombiespikesEffectLeft_spr, 0, -zombiespikeEffectBorder, 0, 2, 2, 0, -1, zombiespikeBorderTransparent);
+draw_sprite_ext(zombiespikesEffectRight_spr, 0, 1034 + zombiespikeEffectBorder, 0, 2, 2, 0, -1, zombiespikeBorderTransparent);
+draw_sprite_ext(zombiespikesEffectTop_spr, 0, 0, -zombiespikeEffectBorder, 2, 2, 0, -1, zombiespikeBorderTransparent);
+draw_sprite_ext(zombiespikesEffectDown_spr, 0, 0, 364 + zombiespikeEffectBorder, 2, 2, 0, -1, zombiespikeBorderTransparent);
+
+if (zombiespikeEffectBorder > 0)
+{
+	zombiespikeEffectBorder -= 0.5;
+	zombiespikeBorderTransparent += 0.001;
+}
+
 //Lens Dirt + Vignette
 draw_sprite_ext(lensDirt_spr, 0, -200, -200, 1, 1, 0, -1, 0.075);
 if (deathVignette)
@@ -36,7 +48,7 @@ if (!noHUD)
 	//Healthcut
 	if (player_obj.syringesLost > 0)
 	{
-		draw_sprite_ext(healthCut_spr, 0, 32, 108 - 96.5 * player_obj.syringesLost, 1, 1, 0, -1, 1);
+		draw_sprite_ext(healthCut_spr, 0, 32, 138 - 96.5 * player_obj.syringesLost, 1, 1, 0, -1, 1);
 	}
 
 	//Syringes
@@ -102,6 +114,7 @@ if (!noHUD)
 
 //#####LAYER 2#####
 
+draw_set_alpha(1);
 //Infectiontext
 if (drawInfectionText)
 {

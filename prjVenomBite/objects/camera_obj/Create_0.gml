@@ -3,6 +3,8 @@
 image_speed = 0.1;
 viewX = 512;
 viewY = 288;
+zombiespikeEffectBorder = 342;
+zombiespikeBorderTransparent = 0;
 viewXSave = viewX;
 viewYSave = viewY;
 mXPos = 0;

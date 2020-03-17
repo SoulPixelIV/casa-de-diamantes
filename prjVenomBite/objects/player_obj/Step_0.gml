@@ -2,8 +2,7 @@
 if (live_call()) return live_result;
 x += horspeed * global.dt;
 y += verspeed * global.dt;
-movSpeed = 0.82;
-dashSpeed = 1.42;
+
 key_left = keyboard_check(ord("A")) //CONTROLLER AXIS L;
 key_right = keyboard_check(ord("D")) // CONTROLLER AXIS R;
 key_shoot = mouse_check_button_pressed(mb_left) || gamepad_button_check_pressed(0, gp_shoulderrb);
@@ -596,6 +595,9 @@ switch (sprite_index)
 {
 	case player_spr:
 		animationSpeed = 0.5;
+		break;
+	case zombieGirl_spr:
+		animationSpeed = 0.25;
 		break;
 	case playerFlip_spr:
 		animationSpeed = 1.75;

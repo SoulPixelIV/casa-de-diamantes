@@ -9,7 +9,7 @@ hp = 100;
 level = 1;
 moneyDropMin = 1;
 moneyDropMax = 4;
-damage = 15;
+damage = 35;
 playerSightMax = 128;
 playerSightMin = 16;
 

@@ -11,7 +11,7 @@ if (!place_free(x, y))
 
 if (place_meeting(x, y, player_obj) && !player_obj.isZombie && !player_obj.invincible)
 {
-	player_obj.hp -= 20;
+	player_obj.hp -= 25;
 	instance_change(bloodSpread_obj, true);
 	bloodSpread2 = instance_create_layer(x, y, "Instances", bloodSpread2_obj);
 	bloodSpread2.image_angle = image_angle;

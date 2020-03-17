@@ -591,6 +591,14 @@
             }
         },
         {
+            "Key": "2c63e5c3-5817-41b2-b003-406cbe2f2721",
+            "Value": {
+                "id": "6b1f660a-ebce-4d7e-8b04-4e6f49677899",
+                "resourcePath": "sprites\\zombiespikesEffectTop_spr\\zombiespikesEffectTop_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "2e158006-106b-469d-a0dc-3adee82c3cac",
             "Value": {
                 "id": "f542877e-431b-44b6-b097-9f687a048d56",
@@ -811,6 +819,14 @@
             "Value": {
                 "id": "c5b5ce95-b7bf-4ad3-b0d4-a091476db124",
                 "resourcePath": "sprites\\backgroundWindow_spr\\backgroundWindow_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "3bed5338-efff-42d2-beae-fb2bbd721315",
+            "Value": {
+                "id": "8be9d34f-5908-4cba-b29f-3e2ca5a94267",
+                "resourcePath": "sprites\\zombiespikesEffectRight_spr\\zombiespikesEffectRight_spr.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -2679,6 +2695,14 @@
             }
         },
         {
+            "Key": "b7ab5432-afef-4392-830b-e10b7eadedd1",
+            "Value": {
+                "id": "ce892106-6217-4ff8-9d48-774ab93a83e8",
+                "resourcePath": "sprites\\zombiespikesEffectDown_spr\\zombiespikesEffectDown_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "b899a980-9335-4b23-b288-d303266fac37",
             "Value": {
                 "id": "9fa5e033-5aab-4122-9ff3-5cd8f7840a19",
@@ -3563,6 +3587,14 @@
             "Value": {
                 "id": "78c68044-88eb-43be-9ec2-3140b9d6a30e",
                 "resourcePath": "sprites\\player_spr\\player_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "f57c4a82-5bad-470b-8d09-9f514c55853f",
+            "Value": {
+                "id": "b5794581-124b-4c49-add3-f4946ea2fe0c",
+                "resourcePath": "sprites\\zombiespikesEffectLeft_spr\\zombiespikesEffectLeft_spr.yy",
                 "resourceType": "GMSprite"
             }
         },
