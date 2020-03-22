@@ -1,5 +1,5 @@
 //#####LAYER 0#####
-
+if (live_call()) return live_result;
 //Zombie Spikes
 draw_sprite_ext(zombiespikesEffectLeft_spr, 0, -zombiespikeEffectBorder, 0, 2, 2, 0, -1, zombiespikeBorderTransparent);
 draw_sprite_ext(zombiespikesEffectRight_spr, 0, 1034 + zombiespikeEffectBorder, 0, 2, 2, 0, -1, zombiespikeBorderTransparent);
@@ -52,7 +52,7 @@ if (!noHUD)
 	//Healthcut
 	if (player_obj.syringesLost > 0)
 	{
-		draw_sprite_ext(healthCut_spr, 0, 32, 138 - 96.5 * player_obj.syringesLost, 1, 1, 0, -1, 1);
+		draw_sprite_ext(healthCut_spr, 0, 32, 82 + 52 * (player_obj.syringesLost - 1), 1, 1, 0, -1, 1);
 	}
 
 	//Syringes
