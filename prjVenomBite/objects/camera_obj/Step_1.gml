@@ -1,5 +1,5 @@
 /// @description Camera Movement
-
+if (live_call()) return live_result;
 cameraBorderXMin = viewXSave / 2 + 32;
 cameraBorderXMax = room_width - viewXSave / 2 - 32;
 cameraBorderYMin = viewYSave / 2 + 32;
@@ -45,8 +45,9 @@ else
 //Aim Zoom
 if (mouse_check_button(mb_right))
 {
-	//xCoorNew = lerp(xCoor, window_mouse_get_x() / 15 + (player_obj.x - viewXSave / 1.6), 0.05);
-	//yCoorNew = lerp(yCoor, window_mouse_get_y() / 15 + (player_obj.y - viewYSave / 1.6), 0.05);
+	//xCoorNew = lerp(xCoor, window_mouse_get_x() / 15 + (player_obj.x - viewXSave / 1.6), 0.8);
+	//yCoorNew = lerp(yCoor, window_mouse_get_y() / 15 + (player_obj.y - viewYSave / 1.6), 0.8);
+	/*
 	if (xCoorNew < window_mouse_get_x() / 15 + (player_obj.x - viewXSave / 1.6))
 	{
 		xCoorNew += (10 / 16) * global.dt / 3;
@@ -63,13 +64,14 @@ if (mouse_check_button(mb_right))
 	{
 		yCoorNew -= (10 / 9) * global.dt / 3;
 	}
-	//xCoorNew += window_mouse_get_x() / 15 + (player_obj.x - viewXSave / 1.6);
-	//yCoorNew += window_mouse_get_y() / 15 + (player_obj.y - viewYSave / 1.6);
+	*/
+	xCoorNew = window_mouse_get_x() / 15 + (player_obj.x - viewXSave / 1.6);
+	yCoorNew = window_mouse_get_y() / 15 + (player_obj.y - viewYSave / 1.6);
 }
 else
 {
-	xCoorNew = xCoor;
-	yCoorNew = yCoor;
+	xCoorNew = lerp(xCoorNew, xCoor, 0.1);
+	yCoorNew = lerp(yCoorNew, yCoor, 0.1);
 }
 
 //Zooming
