@@ -6,10 +6,14 @@ draw_sprite_ext(zombiespikesEffectRight_spr, 0, 1034 + zombiespikeEffectBorder, 
 draw_sprite_ext(zombiespikesEffectTop_spr, 0, 0, -zombiespikeEffectBorder, 2, 2, 0, -1, zombiespikeBorderTransparent);
 draw_sprite_ext(zombiespikesEffectDown_spr, 0, 0, 364 + zombiespikeEffectBorder, 2, 2, 0, -1, zombiespikeBorderTransparent);
 
-if (zombiespikeEffectBorder > 0)
+draw_set_alpha(zombiespikeBorderTransparent);
+draw_ellipse_colour(-500 * (viewXSave / 100), -500 * (viewYSave / 70), 1480 * (viewXSave / 100), 920 * (viewYSave / 70), c_black , c_green, false);
+draw_set_alpha(1);
+
+if (zombiespikeEffectBorder > 0 && player_obj.plagueTransformation)
 {
-	zombiespikeEffectBorder -= 0.5;
-	zombiespikeBorderTransparent += 0.001;
+	zombiespikeEffectBorder -= 0.06;
+	zombiespikeBorderTransparent += 0.00012;
 }
 
 //Lens Dirt + Vignette

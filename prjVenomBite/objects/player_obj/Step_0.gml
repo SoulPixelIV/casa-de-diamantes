@@ -698,7 +698,7 @@ if (isZombie && keyboard_check_pressed(ord("F")) && !plagueTransformation)
 //Plague
 if (plagueTransformation)
 {
-	infection += global.dt / 15;
+	infection += global.dt / 45;
 }
 
 //Slowmotion
