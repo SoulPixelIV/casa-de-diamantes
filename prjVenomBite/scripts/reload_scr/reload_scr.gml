@@ -14,13 +14,13 @@ if (global.currentWeapon == gameManager_obj.pickedWeapon.pistol)
 }
 if (global.currentWeapon == gameManager_obj.pickedWeapon.dualBarettas)
 {
-	if (global.dualBarettasMag >= 12 && global.dualBarettasAmmo < 12)
+	if (global.dualBarettasMag >= 8 && global.dualBarettasAmmo < 8)
 	{
-		global.dualBarettasMag -= 12 - global.dualBarettasAmmo;
-		global.dualBarettasAmmo += 12 - global.dualBarettasAmmo;
+		global.dualBarettasMag -= 8 - global.dualBarettasAmmo;
+		global.dualBarettasAmmo += 8 - global.dualBarettasAmmo;
 	}
 	
-	if (global.dualBarettasMag < 12 && global.dualBarettasAmmo < 12)
+	if (global.dualBarettasMag < 8 && global.dualBarettasAmmo < 8)
 	{
 		global.dualBarettasAmmo += global.dualBarettasMag;
 		global.dualBarettasMag = 0;
