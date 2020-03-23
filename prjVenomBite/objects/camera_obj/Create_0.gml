@@ -1,8 +1,8 @@
 /// @description Camera Variables
 
 image_speed = 0.1;
-viewX = 512;
-viewY = 288;
+viewX = 464;
+viewY = 261;
 zombiespikeEffectBorder = 342;
 zombiespikeBorderTransparent = 0;
 viewXSave = viewX;
@@ -13,6 +13,8 @@ xCoor = 100;
 yCoor = 100;
 xCoorNew = xCoor;
 yCoorNew = yCoor;
+xCoorSway = 0;
+yCoorSway = 0;
 
 pistolRecoilZoom = 32;
 dualBarettasRecoilZoom = 48;

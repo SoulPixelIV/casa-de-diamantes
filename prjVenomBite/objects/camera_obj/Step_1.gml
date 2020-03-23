@@ -45,33 +45,40 @@ else
 //Aim Zoom
 if (mouse_check_button(mb_right))
 {
-	//xCoorNew = lerp(xCoor, window_mouse_get_x() / 15 + (player_obj.x - viewXSave / 1.6), 0.8);
-	//yCoorNew = lerp(yCoor, window_mouse_get_y() / 15 + (player_obj.y - viewYSave / 1.6), 0.8);
-	/*
-	if (xCoorNew < window_mouse_get_x() / 15 + (player_obj.x - viewXSave / 1.6))
+	xCoorSway = window_mouse_get_x() / 10 + (player_obj.x - viewXSave / 1.6);
+	yCoorSway = window_mouse_get_y() / 10 + (player_obj.y - viewYSave / 1.6);
+	var swayVector = point_direction(xCoorNew, yCoorNew, xCoorSway, yCoorSway);
+	var swayDistance = point_distance(xCoorNew, yCoorNew, xCoorSway, yCoorSway);
+	
+	if (yCoorSway > yCoorNew - 0.2 && yCoorSway < yCoorNew + 0.2)
 	{
-		xCoorNew += (10 / 16) * global.dt / 3;
+		yCoorNew = yCoorSway;
+		xCoorNew = xCoorSway;
 	}
 	else
 	{
-		xCoorNew -= (10 / 16) * global.dt / 3;
+		xCoorNew += lengthdir_x(global.dt * (swayDistance / 50), swayVector);
+		yCoorNew += lengthdir_y(global.dt * (swayDistance / 50), swayVector);
 	}
-	if (yCoorNew < window_mouse_get_y() / 15 + (player_obj.y - viewYSave / 1.6))
-	{
-		yCoorNew += (10 / 9) * global.dt / 3;
-	}
-	else
-	{
-		yCoorNew -= (10 / 9) * global.dt / 3;
-	}
-	*/
-	xCoorNew = window_mouse_get_x() / 15 + (player_obj.x - viewXSave / 1.6);
-	yCoorNew = window_mouse_get_y() / 15 + (player_obj.y - viewYSave / 1.6);
 }
 else
 {
-	xCoorNew = lerp(xCoorNew, xCoor, 0.1);
-	yCoorNew = lerp(yCoorNew, yCoor, 0.1);
+	var swayVector = point_direction(xCoorNew, yCoorNew, xCoor, yCoor);
+	var swayDistance = point_distance(xCoorNew, yCoorNew, xCoor, yCoor);
+	/*
+	if (yCoorNew > yCoor - 0.2 && yCoorNew < yCoor + 0.2)
+	{
+		yCoorNew = yCoor;
+		xCoorNew = xCoor;
+	}
+	else
+	{
+		xCoorNew += lengthdir_x(global.dt * (swayDistance / 25), swayVector);
+		yCoorNew += lengthdir_y(global.dt * (swayDistance / 25), swayVector);
+	}
+	*/
+	yCoorNew = yCoor;
+	xCoorNew = xCoor;
 }
 
 //Zooming
@@ -110,13 +117,13 @@ if (viewX < viewXSave)
 switch (currentCameraState)
 {
 	case cameraState.normal:
-		changeCamera_scr(512 - slowmotionZoomX - recoilZoomX, 288 - slowmotionZoomY - recoilZoomY);
+		changeCamera_scr(464 - slowmotionZoomX - recoilZoomX, 261 - slowmotionZoomY - recoilZoomY);
 		break;
 	case cameraState.zoomIn:
-		changeCamera_scr(256 - slowmotionZoomX - recoilZoomX, 144 - slowmotionZoomY - recoilZoomY);
+		changeCamera_scr(208 - slowmotionZoomX - recoilZoomX, 117 - slowmotionZoomY - recoilZoomY);
 		break;
 	case cameraState.zoomOut:
-		changeCamera_scr(768 - slowmotionZoomX - recoilZoomX, 432 - slowmotionZoomY - recoilZoomY);
+		changeCamera_scr(672 - slowmotionZoomX - recoilZoomX, 378 - slowmotionZoomY - recoilZoomY);
 		break;
 	case cameraState.zoomAFK:
 		changeCamera_scr(160 - slowmotionZoomX - recoilZoomX, 90 - slowmotionZoomY - recoilZoomY);
