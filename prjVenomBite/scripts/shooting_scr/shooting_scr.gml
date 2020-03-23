@@ -41,8 +41,11 @@ if (argument0 == "dualBarettas")
 		var shotLightx = x + lengthdir_x(24, dirCursor);
 		var shotLighty = y - 8 + lengthdir_y(24, dirCursor);
 		instance_create_layer(playerBulletLine_obj.x, playerBulletLine_obj.y, "Instances", bulletDualBarettas_obj);
+		instance_create_layer(playerBulletLine_obj.x - 2, playerBulletLine_obj.y - 4, "Instances", bulletDualBarettas_obj);
 		instance_create_layer(shotLightx, shotLighty, "ForegroundObjects", shotLightDualBarettas_obj);
 		instance_create_layer(shotLightx, shotLighty, "ForegroundObjects", smokecloud_obj);
+		instance_create_layer(shotLightx - 2, shotLighty - 4, "ForegroundObjects", shotLightDualBarettas_obj);
+		instance_create_layer(shotLightx - 2, shotLighty - 4, "ForegroundObjects", smokecloud_obj);
 		
 		if (!huggingWall)
 		{

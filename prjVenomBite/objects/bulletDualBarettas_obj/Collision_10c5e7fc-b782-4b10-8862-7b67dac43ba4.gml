@@ -1,7 +1,7 @@
 var enemyTarget = instance_place(x, y, enemy_obj);
 if (!dealtDamage)
 {
-	enemyTarget.hp -= 20;
+	enemyTarget.hp -= 15;
 	penetration--;
 	instance_create_layer(x, y, "Instances", bloodSpread_obj);
 	bloodSpread2 = instance_create_layer(x, y, "Instances", bloodSpread2_obj);

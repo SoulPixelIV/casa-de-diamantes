@@ -68,13 +68,12 @@ if (!isZombie)
 		}
 		if (global.currentWeapon == gameManager_obj.pickedWeapon.dualBarettas)
 		{
-			draw_sprite_ext(dualBarettasSprite, animated, x + ((4 + spinWeaponPos) * currDir) * changePos, y - 4.3, 1, -currDir, dirCursor, -1, 1);
+			draw_sprite_ext(dualBarettasSprite, animated, x - ((4 + (spinWeaponPos - 2)) * currDir) * changePos, y - 5.3, 1, -currDir, dirCursor, -1, 1);
 			draw_sprite_ext(dualBarettasSprite, animated, x + ((4 + spinWeaponPos) * currDir) * changePos, y - 3.3, 1, -currDir, dirCursor, -1, 1);
 		}
 		if (global.currentWeapon == gameManager_obj.pickedWeapon.shotgun)
 		{
 			draw_sprite_ext(shotgunSprite, animated, x + ((4 + spinWeaponPos) * currDir) * changePos, y - 4.3, 1, -currDir, dirCursor, -1, 1);
-			draw_sprite_ext(shotgunSprite, animated, x + ((4 + spinWeaponPos) * currDir) * changePos, y - 3.3, 1, -currDir, dirCursor, -1, 1);
 		}
 	}
 }

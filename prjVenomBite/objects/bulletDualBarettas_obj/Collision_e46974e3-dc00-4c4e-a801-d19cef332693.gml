@@ -1,7 +1,7 @@
 var explosiveTarget = instance_place(x, y, explosive_obj);
 if (!dealtDamage)
 {
-	explosiveTarget.hp -= 20;
+	explosiveTarget.hp -= 15;
 	fire = instance_create_layer(x, y, "Instances", fireLong_obj);
 	fire.image_angle = image_angle;
 	audio_play_sound(bulletHit_snd, 1, false);
