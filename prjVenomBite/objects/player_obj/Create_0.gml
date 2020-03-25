@@ -86,6 +86,9 @@ shotZoomTimerSave = shotZoomTimer;
 groundCollisionTimerSave = groundCollisionTimer;
 flipTimingSave = flipTiming;
 
+//Second Dualbarettas arm
+sprID = layer_sprite_create("BackgroundObjects", -1000, -1000, playerDualBarettas_spr);
+
 //Debug
 instance_create_layer(x + 1, y - 4, "Instances", playerBulletLine_obj);
 

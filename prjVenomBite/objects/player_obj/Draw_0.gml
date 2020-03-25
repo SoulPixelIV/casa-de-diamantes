@@ -4,8 +4,8 @@ draw_self();
 animated = 0;
 changePos = 1;
 pistolSprite = playerPistol_spr;
-dualBarettasSprite = dualBarettas_spr;
-shotgunSprite = shotgun_spr
+dualBarettasSprite = playerDualBarettas_spr;
+shotgunSprite = playerShotgun_spr
 
 if (!flip)
 {
@@ -68,8 +68,18 @@ if (!isZombie)
 		}
 		if (global.currentWeapon == gameManager_obj.pickedWeapon.dualBarettas)
 		{
-			draw_sprite_ext(dualBarettasSprite, animated, x - ((4 + (spinWeaponPos - 2)) * currDir) * changePos, y - 5.3, 1, -currDir, dirCursor, -1, 1);
+			//First Arm
 			draw_sprite_ext(dualBarettasSprite, animated, x + ((4 + spinWeaponPos) * currDir) * changePos, y - 3.3, 1, -currDir, dirCursor, -1, 1);
+			//Second Arm
+			if (sprID != noone)
+			{
+				layer_sprite_x(sprID, x - ((4 + (spinWeaponPos - 2)) * currDir) * changePos);
+				layer_sprite_y(sprID, y - 5.3);
+				layer_sprite_yscale(sprID, -currDir);
+				layer_sprite_angle(sprID, dirCursor);
+				layer_sprite_change(sprID, dualBarettasSprite);
+				layer_sprite_index(sprID, animated);
+			}
 		}
 		if (global.currentWeapon == gameManager_obj.pickedWeapon.shotgun)
 		{
