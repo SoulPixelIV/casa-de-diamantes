@@ -20,3 +20,10 @@ if (penetrationTime < 0)
 	dealtDamage = false;
 	penetrationTime = 3;
 }
+
+image_alpha -= global.dt / 75;
+
+if (image_alpha < 0)
+{
+	instance_destroy();
+}
