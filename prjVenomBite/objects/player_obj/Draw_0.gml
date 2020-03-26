@@ -36,7 +36,7 @@ else
 	changePos = 1;
 }
 
-if (spin && sprite_index != playerWall_spr)
+if (spin && sprite_index != playerWall_spr && !flip)
 {
 	animated = -1;
 	pistolSprite = playerPistolJumpSpin_spr;
