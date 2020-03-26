@@ -303,6 +303,14 @@
             }
         },
         {
+            "Key": "15ce07c9-60e4-49c3-9e7b-d0ba2fb07156",
+            "Value": {
+                "id": "40674ca6-49bf-4a7e-a966-6e9fa873a2f8",
+                "resourcePath": "objects\\chipBluePickupStatic_obj\\chipBluePickupStatic_obj.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "15d89916-7c87-435b-ac52-2980b5410198",
             "Value": {
                 "id": "5fcb7683-6f10-48ef-89d5-d9b74e9b7823",
@@ -2215,6 +2223,14 @@
             }
         },
         {
+            "Key": "97203b5a-7dba-4fdd-8946-71bb0e756ef9",
+            "Value": {
+                "id": "e274f996-289a-42a8-9e6f-953034104d0a",
+                "resourcePath": "views\\97203b5a-7dba-4fdd-8946-71bb0e756ef9.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "97d99674-86a6-4808-b8d0-b290cb9031b3",
             "Value": {
                 "id": "c9da8366-fe4a-408a-bee4-514dd23ad90f",
@@ -2967,6 +2983,14 @@
             }
         },
         {
+            "Key": "c97980dd-6e63-41d2-9074-f972bca23103",
+            "Value": {
+                "id": "3e478962-c1f1-402f-9500-f0894dd579d6",
+                "resourcePath": "objects\\chipVioletPickupStatic_obj\\chipVioletPickupStatic_obj.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "cb913b8f-a660-4c02-b88f-e5bfc0c5efcd",
             "Value": {
                 "id": "ef626c5d-58ca-4dda-b4e8-fef49333aa61",
@@ -2996,6 +3020,14 @@
                 "id": "b759447a-ece9-42ae-ad3d-a09f55844ee4",
                 "resourcePath": "scripts\\lighting_free\\lighting_free.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "cc95f903-80e3-4eb2-b258-a0bf757556f1",
+            "Value": {
+                "id": "58c7cfcf-878f-4cc7-a134-9108b4c95d27",
+                "resourcePath": "objects\\chipRedPickupStatic_obj\\chipRedPickupStatic_obj.yy",
+                "resourceType": "GMObject"
             }
         },
         {
