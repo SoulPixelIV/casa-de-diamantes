@@ -4,7 +4,7 @@
 horspeed = 0;
 verspeed = 0;
 movSpeed = 0.82;
-movSpeedZombie = 0.32;
+movSpeedZombie = 0.54;
 dashSpeed = 1.42;
 wallJumps = 2;
 animationSpeed = 1;

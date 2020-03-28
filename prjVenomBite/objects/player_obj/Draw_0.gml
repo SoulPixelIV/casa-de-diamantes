@@ -83,3 +83,7 @@ if (!isZombie)
 		draw_self();
 	}
 }
+else
+{
+	draw_self();
+}

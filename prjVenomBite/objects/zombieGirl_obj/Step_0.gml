@@ -140,6 +140,11 @@ if (attackCooldown < 0)
 	attackCooldown = attackCooldownSave;
 }
 
+if (attackInProg)
+{
+	instance_create_layer(x, y - 4, "ForegroundObjects", dustParticle_obj);
+}
+
 //Start Attack
 if (attackInProg && image_index > image_number - 1 && !dashed)
 {
