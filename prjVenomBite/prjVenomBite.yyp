@@ -626,7 +626,7 @@
             "Key": "2f5909f4-6aac-4f27-9f2e-98de8be26e5c",
             "Value": {
                 "id": "0f681b55-c18f-4b5a-a176-95b91e397107",
-                "resourcePath": "rooms\\level0_RoadToCasino\\level0_RoadToCasino.yy",
+                "resourcePath": "rooms\\OLDlevel0_RoadToCasino\\OLDlevel0_RoadToCasino.yy",
                 "resourceType": "GMRoom"
             }
         },
@@ -2596,6 +2596,14 @@
                 "id": "5ea961ba-d68a-4ffb-9b78-f93a8b17d71a",
                 "resourcePath": "sprites\\playerWalkingEquipped_spr\\playerWalkingEquipped_spr.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "b0fbc21c-f505-41bd-8506-94f3a61ad7b1",
+            "Value": {
+                "id": "c5d6db39-2f97-499a-ac85-01f060347fc6",
+                "resourcePath": "rooms\\level0_RoadToCasino\\level0_RoadToCasino.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
