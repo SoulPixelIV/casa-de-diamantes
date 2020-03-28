@@ -120,7 +120,7 @@ with (headshotHitbox)
 //Attack
 if (distance_to_object(player_obj) < 700 && player_obj.y > y - 64 && player_obj.y < y + 196)
 {
-	attackCooldown -= global.dt;
+	attackCooldown -= global.dt / 4;
 }
 
 if (attackCooldown < 60)
