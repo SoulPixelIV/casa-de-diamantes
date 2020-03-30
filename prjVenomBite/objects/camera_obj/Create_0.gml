@@ -11,6 +11,7 @@ mXPos = 0;
 mYPos = 0;
 xCoor = 100;
 yCoor = 100;
+yCoorDelay = player_obj.y;
 xCoorNew = xCoor;
 yCoorNew = yCoor;
 xCoorSway = 0;

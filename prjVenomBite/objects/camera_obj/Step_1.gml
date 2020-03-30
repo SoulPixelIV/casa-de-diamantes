@@ -26,17 +26,33 @@ else
 	}
 }
 //vertical
-if (player_obj.y <= cameraBorderYMax && player_obj.y >= cameraBorderYMin)
+if (player_obj.y <= cameraBorderYMax || player_obj.y >= cameraBorderYMin)
 {
-    yCoor += (player_obj.y - (viewYSave / 2) - camera_get_view_y(view_camera[0]));
+	if ((player_obj.y - 24) < yCoorDelay - 96 || player_obj.y > yCoorDelay - 16)
+	{
+		yCoor += ((player_obj.y - 24) - (viewYSave / 2) - camera_get_view_y(view_camera[0]));
+		//yCoorDelay = yCoor;
+	}
+	else
+	{
+		//yCoorDelay Transition
+		if (yCoorDelay < yCoor)
+		{
+			yCoorDelay += global.dt / 16;
+		}
+		if (yCoorDelay > yCoor)
+		{
+			yCoorDelay -= global.dt / 16;
+		}
+	}
 }
 else
 {
-	if (player_obj.y >= cameraBorderYMax)
+	if ((player_obj.y - 24) >= cameraBorderYMax)
 	{
 		yCoor = room_height - viewYSave - 32;
 	}
-	if (player_obj.y <= cameraBorderYMin)
+	if ((player_obj.y - 24) <= cameraBorderYMin)
 	{
 		yCoor = 32;
 	}
