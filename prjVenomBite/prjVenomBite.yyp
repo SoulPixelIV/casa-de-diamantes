@@ -759,6 +759,14 @@
             }
         },
         {
+            "Key": "37096061-62b1-426b-badf-1f12ae9c642d",
+            "Value": {
+                "id": "a3f89813-8c70-4674-aedb-49444dfa9186",
+                "resourcePath": "objects\\electricGate_obj\\electricGate_obj.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "3739fb40-008e-4ceb-a286-2751964cbf59",
             "Value": {
                 "id": "23b9b92a-3fab-4e21-853e-bd6b03886e43",
@@ -3275,6 +3283,14 @@
             "Value": {
                 "id": "5b821bf6-4848-4768-a925-de52b1150133",
                 "resourcePath": "sprites\\spr_light_spot\\spr_light_spot.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "db962cfa-9503-4faf-9379-5b128f126db6",
+            "Value": {
+                "id": "5e3f718c-7991-4ad2-84fa-ac3b3a409377",
+                "resourcePath": "sprites\\electricGate_spr\\electricGate_spr.yy",
                 "resourceType": "GMSprite"
             }
         },
