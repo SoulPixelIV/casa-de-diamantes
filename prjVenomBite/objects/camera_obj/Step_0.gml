@@ -1,11 +1,26 @@
 if (follow != noone)
 {
 	xTo = follow.x;
-	yTo = follow.y - 24;
+	yTo = follow.y - 16;
+}
+if (follow == camera_obj)
+{
+	xTo = player_obj.x + (mouse_x - player_obj.x) / 2;
+	yTo = (player_obj.y + 16) + (mouse_y - (player_obj.y + 16)) / 2;
 }
 
-x += (xTo - x) / (global.dt / 1);
-y += (yTo - y - 24) / (global.dt / 1);
+x += (xTo - x) / (global.dt * 10);
+y += (yTo - y - 16) / (global.dt * 10);
 
 var vm = matrix_build_lookat(x,y,-10,x,y,0,0,1,0);
 camera_set_view_mat(camera,vm);
+
+//Aim Zoom
+if (mouse_check_button(mb_right))
+{
+	follow = camera_obj;
+}
+if (mouse_check_button_released(mb_right))
+{
+	follow = player_obj;
+}

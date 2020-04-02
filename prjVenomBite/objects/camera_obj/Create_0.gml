@@ -11,4 +11,4 @@ view_camera[0] = camera;
 follow = player_obj;
 
 xTo = x;
-yTo = y - 24;
+yTo = y - 16;
