@@ -1,34 +1,11 @@
-/// @description Check for Camera View Objects
-
-with (player_obj)
+if (follow != noone)
 {
-	if (camera_obj.zoomAFK)
-	{
-		camera_obj.currentCameraState = cameraState.zoomAFK;
-	}
-	else if (distance_to_object(cameraViewOut_obj) < 230)
-	{
-		camera_obj.currentCameraState = cameraState.zoomOut;
-	}
-	else if (distance_to_object(cameraViewIn_obj) < 230)
-	{
-		camera_obj.currentCameraState = cameraState.zoomIn;
-	}
-	else
-	{
-		camera_obj.currentCameraState = cameraState.normal;
-	}
+	xTo = follow.x;
+	yTo = follow.y - 24;
 }
 
-//VignetteStrength
+x += (xTo - x) / (global.dt / 1);
+y += (yTo - y - 24) / (global.dt / 1);
 
-if (vignetteStrength != 1)
-{
-	vignetteStrengthTimer -= global.dt;
-}
-
-if (vignetteStrengthTimer < 0)
-{
-	vignetteStrength = 1;
-	vignetteStrengthTimer = vignetteStrengthTimerSave;
-}
+var vm = matrix_build_lookat(x,y,-10,x,y,0,0,1,0);
+camera_set_view_mat(camera,vm);

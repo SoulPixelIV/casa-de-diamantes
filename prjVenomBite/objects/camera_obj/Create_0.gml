@@ -1,60 +1,14 @@
-/// @description Camera Variables
+camera = camera_create();
 
-image_speed = 0.1;
-viewX = 464;
-viewY = 261;
-zombiespikeEffectBorder = 342;
-zombiespikeBorderTransparent = 0;
-viewXSave = viewX;
-viewYSave = viewY;
-mXPos = 0;
-mYPos = 0;
-xCoor = 100;
-yCoor = 100;
-yCoorDelay = player_obj.y;
-xCoorNew = xCoor;
-yCoorNew = yCoor;
-xCoorSway = 0;
-yCoorSway = 0;
+var vm = matrix_build_lookat(x,y,-10,x,y,0,0,1,0);
+var pm = matrix_build_projection_ortho(464,261,1,10000);
 
-pistolRecoilZoom = 32;
-dualBarettasRecoilZoom = 48;
-shotgunRecoilZoom = 72;
-slowmotionZoomStrength = 64;
-recoilZoomX = 0;
-recoilZoomY = 0;
-slowmotionZoomX = 0;
-slowmotionZoomY = 0;
-zoomCooldown = 5000;
-vignetteStrength = 1;
-vignetteStrengthTimer = 12;
-vignetteStrengthTimerSave = vignetteStrengthTimer;
-scoreShakeLength = 80;
-scoreMovementSpeed = 0.2;
-scoreMovementMax = 1;
-rotation = 0;
-dir = 0;
-zombieShakeDir = 0;
-zombieShakeSpeed = 4;
-zombieShakeTime = 30;
-scoreShake = false;
-deathVignette = false;
-drawInfectionText = false;
-noZoom = false;
-zoomAFK = false;
-zoomOut = false;
-zoomIn = false;
-noHUD = false;
+camera_set_view_mat(camera,vm);
+camera_set_proj_mat(camera,pm);
 
-enum cameraState {
-    normal,
-    zoomIn,
-    zoomOut,
-    zoomAFK
-}
+view_camera[0] = camera;
 
-currentCameraState = cameraState.normal;
+follow = player_obj;
 
-zoomCooldownSave = zoomCooldown;
-
-view_camera[0] = camera_create();
+xTo = x;
+yTo = y - 24;

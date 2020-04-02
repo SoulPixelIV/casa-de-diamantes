@@ -466,7 +466,7 @@
             "Key": "22deb360-62ef-4ff2-9d07-328ab2eaa10a",
             "Value": {
                 "id": "a666bcf0-3e27-4717-a45f-d71aaf595ee7",
-                "resourcePath": "objects\\camera_obj\\camera_obj.yy",
+                "resourcePath": "objects\\cameraOld_obj\\cameraOld_obj.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -1507,6 +1507,14 @@
             "Value": {
                 "id": "3eb2ab3e-7bc0-41e7-be28-b65494cb3766",
                 "resourcePath": "objects\\obj_light_renderer\\obj_light_renderer.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "6c0db73e-40b7-4448-b83c-312b5dfd1dda",
+            "Value": {
+                "id": "d4a14926-da64-4516-8d21-e2c6d35492d2",
+                "resourcePath": "objects\\camera_obj\\camera_obj.yy",
                 "resourceType": "GMObject"
             }
         },
