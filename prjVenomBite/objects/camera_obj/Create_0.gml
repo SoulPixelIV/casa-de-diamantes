@@ -12,3 +12,4 @@ follow = player_obj;
 
 xTo = x;
 yTo = y - 16;
+ySave = y;

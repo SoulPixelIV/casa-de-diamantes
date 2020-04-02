@@ -1,7 +1,10 @@
 if (follow != noone)
 {
 	xTo = follow.x;
-	yTo = follow.y - 16;
+	if ((follow.y - 16) < y - 64 || (follow.y - 16) > y + 64)
+	{
+		yTo = follow.y - 16;
+	}
 }
 if (follow == camera_obj)
 {
