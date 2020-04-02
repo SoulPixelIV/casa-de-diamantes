@@ -2159,6 +2159,14 @@
             }
         },
         {
+            "Key": "9240a87f-c1e3-4aac-a134-1a14d7133b56",
+            "Value": {
+                "id": "0480ff32-0237-40eb-b659-9d7bed7885fc",
+                "resourcePath": "objects\\doorEnter_obj\\doorEnter_obj.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "9359f3ae-1427-45e6-9f7d-9375f05b9b39",
             "Value": {
                 "id": "cdfb9495-23ae-4593-8d1c-a87ca1df9993",
@@ -2531,6 +2539,14 @@
             "Value": {
                 "id": "1492a2e8-0263-4b46-944c-ce71a5691cbe",
                 "resourcePath": "sprites\\caveTilesOld_spr\\caveTilesOld_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "aaa3b623-1f99-48f3-9cfe-0dfe17f465f8",
+            "Value": {
+                "id": "c87a2138-9f48-483b-955b-b32f25b37d2f",
+                "resourcePath": "sprites\\woodDoorFront_spr\\woodDoorFront_spr.yy",
                 "resourceType": "GMSprite"
             }
         },
