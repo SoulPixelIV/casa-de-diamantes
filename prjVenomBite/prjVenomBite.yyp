@@ -1079,6 +1079,14 @@
             }
         },
         {
+            "Key": "488b4415-bf30-4c83-8565-5f4512763af4",
+            "Value": {
+                "id": "80c21d4c-ad82-473c-b11d-ccb4dc45ffc9",
+                "resourcePath": "objects\\electricGate2_obj\\electricGate2_obj.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "48d5ce7f-e70a-4259-8cd7-7f8bfccf055c",
             "Value": {
                 "id": "0ebe28ba-e653-4bb6-8a35-3e7a84d6f3dd",
@@ -3108,6 +3116,14 @@
                 "id": "87c46bb4-1286-4e12-ae40-92f75f278e1c",
                 "resourcePath": "scripts\\bjCalcSum_scr\\bjCalcSum_scr.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "cd77c392-d65a-42b6-9f7d-063da1d73978",
+            "Value": {
+                "id": "e63fad99-9fae-4a5f-b460-6cb2c55cdb41",
+                "resourcePath": "sprites\\electricGate2_spr\\electricGate2_spr.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
