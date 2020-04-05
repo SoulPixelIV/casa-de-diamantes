@@ -7,35 +7,18 @@ if (distance_to_object(player_obj) < 32)
 		image_index = 1;
 		used = true;
 		
-		if (instance_exists(gate_obj))
+		if (instance_exists(objectAccess))
 		{
-			gate = instance_nearest(x, y, gate_obj);
-		}
-		if (instance_exists(gate2_obj))
-		{
-			gate2 = instance_nearest(x, y, gate2_obj);
-		}
-		
-		if (instance_exists(gate_obj) && instance_exists(gate2_obj))
-		{
-			if (distance_to_object(gate) < distance_to_object(gate2))
+			var i;
+			for (i = 0; i < instance_number(objectAccess); i += 1)
 			{
-				gate.open = true;
-			}
-			else
-			{
-				gate2.open = true;
-			}
-		}
-		else
-		{
-			if (instance_exists(gate_obj))
-			{
-				gate.open = true;
-			}
-			if (instance_exists(gate2_obj))
-			{
-				gate2.open = true;
+				object[i] = instance_find(objectAccess, i);
+				
+				if (object[i].open == false)
+				{
+					object[i].open = true;
+					break;
+				}
 			}
 		}
 	}

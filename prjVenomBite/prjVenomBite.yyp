@@ -1663,6 +1663,14 @@
             }
         },
         {
+            "Key": "75928470-9bb3-47a0-add2-d066d9a8f9da",
+            "Value": {
+                "id": "bfbf4ec9-901f-4145-bbb6-65955e00541d",
+                "resourcePath": "objects\\doorExit_obj\\doorExit_obj.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "759e28aa-b820-4841-bc4d-cd7a22e90515",
             "Value": {
                 "id": "2c3308b8-74b0-4eb0-9b95-0d82c32515ab",
