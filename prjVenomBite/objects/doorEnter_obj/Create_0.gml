@@ -1,1 +1,1 @@
-teleportDestination = noone;
+entered = true;

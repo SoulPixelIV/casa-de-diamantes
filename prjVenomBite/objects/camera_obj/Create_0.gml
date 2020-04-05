@@ -1,3 +1,11 @@
+noHUD = false;
+
+zombiespikeEffectBorder = 342;
+zombiespikeBorderTransparent = 0;
+deathVignette = false;
+vignetteStrength = 1;
+drawInfectionText = false;
+
 camera = camera_create();
 
 var vm = matrix_build_lookat(x,y,-10,x,y,0,0,1,0);
@@ -13,3 +21,5 @@ follow = player_obj;
 xTo = x;
 yTo = y - 16;
 ySave = y;
+
+image_speed = 0.1;
