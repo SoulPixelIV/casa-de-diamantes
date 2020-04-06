@@ -1,5 +1,5 @@
 //#####LAYER 0#####
-if (live_call()) return live_result;
+
 //Zombie Spikes
 draw_sprite_ext(zombiespikesEffectLeft_spr, 0, -zombiespikeEffectBorder, 0, 2, 2, 0, -1, zombiespikeBorderTransparent);
 draw_sprite_ext(zombiespikesEffectRight_spr, 0, 1034 + zombiespikeEffectBorder, 0, 2, 2, 0, -1, zombiespikeBorderTransparent);
@@ -132,3 +132,10 @@ if (player_obj.isZombie)
 	draw_set_color(c_red);
 	draw_text(128, 128, "PRESS 'F' TO BECOME HUMAN AGAIN!");
 }
+
+//#####LAYER 3#####
+
+draw_set_alpha(blackscreenStrength);
+draw_set_color(c_black);
+draw_rectangle(-300, -225, 1600, 1150, false);
+draw_set_alpha(1);

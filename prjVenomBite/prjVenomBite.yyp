@@ -1095,6 +1095,14 @@
             }
         },
         {
+            "Key": "48e63daa-57ee-4840-aaa6-6bfa634376fe",
+            "Value": {
+                "id": "7bd4f3e1-0e2f-4a08-90cf-b85cd1999332",
+                "resourcePath": "scripts\\blackscreen_scr\\blackscreen_scr.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "4a1def20-6670-4778-b38c-a0b20950299f",
             "Value": {
                 "id": "913650d4-37ec-4b49-89ae-14c7f14e6103",
@@ -1668,14 +1676,6 @@
                 "id": "af9cc22d-8c25-45d4-bdeb-dacf55c7b1c0",
                 "resourcePath": "sprites\\cardTest_spr\\cardTest_spr.yy",
                 "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "75928470-9bb3-47a0-add2-d066d9a8f9da",
-            "Value": {
-                "id": "bfbf4ec9-901f-4145-bbb6-65955e00541d",
-                "resourcePath": "objects\\doorExit_obj\\doorExit_obj.yy",
-                "resourceType": "GMObject"
             }
         },
         {
@@ -3415,6 +3415,14 @@
             }
         },
         {
+            "Key": "e0357372-ce99-4735-b664-1bf15d81bb7b",
+            "Value": {
+                "id": "54828f40-1c65-4596-9471-ec86e5804108",
+                "resourcePath": "objects\\doorExit_obj\\doorExit_obj.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "e0d1c377-e592-49c7-97a9-e5d2ad400d99",
             "Value": {
                 "id": "80452eb7-5f18-40d6-9f75-11712b3d37f5",
@@ -3906,7 +3914,8 @@
         "3efd9d36-f4e9-4931-8cf7-113d75c93e9c",
         "ab54a712-5b9d-4388-8375-b3501845852b",
         "67f04608-7f1b-4d76-8f81-a7c369858ad5",
-        "28082bf0-1420-4a54-8669-67c9f6716990"
+        "28082bf0-1420-4a54-8669-67c9f6716990",
+        "48e63daa-57ee-4840-aaa6-6bfa634376fe"
     ],
     "tutorial": ""
 }

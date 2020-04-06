@@ -1,5 +1,6 @@
 noHUD = false;
 
+blackscreenStrength = 0;
 zombiespikeEffectBorder = 342;
 zombiespikeBorderTransparent = 0;
 deathVignette = false;

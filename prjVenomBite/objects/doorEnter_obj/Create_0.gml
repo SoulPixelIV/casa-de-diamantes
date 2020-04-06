@@ -1,1 +1,2 @@
-entered = true;
+entered = false;
+exited = false;
