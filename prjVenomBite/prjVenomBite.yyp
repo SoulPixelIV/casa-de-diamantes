@@ -2327,6 +2327,14 @@
             }
         },
         {
+            "Key": "9997e984-7098-4343-bab7-e31b8723ae54",
+            "Value": {
+                "id": "516d69d3-efc4-410d-b635-f302687f38ce",
+                "resourcePath": "sprites\\chaingunTurret_spr\\chaingunTurret_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "99a699d7-0080-4681-ae6f-78076a149f9e",
             "Value": {
                 "id": "78286008-38fd-4823-a496-a13bce4bf471",
@@ -3499,6 +3507,14 @@
             "Value": {
                 "id": "b0ed4383-3043-49a2-bb1b-265294e026c2",
                 "resourcePath": "objects\\woodBridge_obj\\woodBridge_obj.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "e73417b7-a431-4454-a809-3b45f9653e94",
+            "Value": {
+                "id": "4fbf1377-e78a-4773-b27c-8860ba1262ba",
+                "resourcePath": "objects\\chaingunTurret_obj\\chaingunTurret_obj.yy",
                 "resourceType": "GMObject"
             }
         },
