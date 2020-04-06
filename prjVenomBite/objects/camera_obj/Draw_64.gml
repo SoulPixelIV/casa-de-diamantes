@@ -1,5 +1,5 @@
 //#####LAYER 0#####
-
+if (live_call()) return live_result;
 //Zombie Spikes
 draw_sprite_ext(zombiespikesEffectLeft_spr, 0, -zombiespikeEffectBorder, 0, 2, 2, 0, -1, zombiespikeBorderTransparent);
 draw_sprite_ext(zombiespikesEffectRight_spr, 0, 1034 + zombiespikeEffectBorder, 0, 2, 2, 0, -1, zombiespikeBorderTransparent);
@@ -7,7 +7,7 @@ draw_sprite_ext(zombiespikesEffectTop_spr, 0, 0, -zombiespikeEffectBorder, 2, 2,
 draw_sprite_ext(zombiespikesEffectDown_spr, 0, 0, 364 + zombiespikeEffectBorder, 2, 2, 0, -1, zombiespikeBorderTransparent);
 
 draw_set_alpha(zombiespikeBorderTransparent);
-draw_ellipse_colour(-500, -380, 500, 380, c_black , c_green, false);
+draw_ellipse_colour(-300, -225, 1600, 1150, c_black , c_green, false);
 draw_set_alpha(1);
 
 if (zombiespikeEffectBorder > 0 && player_obj.plagueTransformation)
@@ -21,15 +21,15 @@ draw_sprite_ext(lensDirt_spr, 0, -200, -200, 1, 1, 0, -1, 0.075);
 if (deathVignette)
 {
 	draw_set_alpha(0.2);
-	draw_ellipse_colour(camera_obj.x - 350, camera_obj.y - 250, camera_obj.x + 350, camera_obj.y + 250, c_black , c_red, false);
+	draw_ellipse_colour(-300, -225, 1600, 1150, c_black , c_red, false);
 }
 else
 {
 	draw_set_alpha(0.055 * vignetteStrength);
-	draw_ellipse_colour(camera_obj.x - 350, camera_obj.y - 250, camera_obj.x + 350, camera_obj.y + 250, c_black , c_purple, false);
+	draw_ellipse_colour(-300, -225, 1600, 1150, c_black , c_purple, false);
 	//Vignette Effect
 	draw_set_alpha(0.1);
-	draw_ellipse_colour(camera_obj.x - 350, camera_obj.y - 250, camera_obj.x + 350, camera_obj.y + 250, c_black , c_red, false);
+	draw_ellipse_colour(-300, -225, 1600, 1150, c_black , c_red, false);
 	draw_set_alpha(1);
 }
 
