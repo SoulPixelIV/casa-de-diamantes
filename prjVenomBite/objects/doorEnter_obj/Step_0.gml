@@ -22,9 +22,9 @@ if (camera_obj.blackscreenStrength == 1 && entered)
 {	
 	doorExit_obj.exited = true;		
 	player_obj.x = doorExit_obj.x;
-	player_obj.y = doorExit_obj.y - 28;
+	player_obj.y = doorExit_obj.y - 26;
 	camera_obj.x = doorExit_obj.x;
-	camera_obj.y = doorExit_obj.y - 28;
+	camera_obj.y = doorExit_obj.y - 26;
 	entered = false;
 }
 
