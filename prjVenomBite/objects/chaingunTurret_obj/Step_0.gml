@@ -7,10 +7,6 @@ if (aimDelay > 160)
 	if (instance_exists(player_obj) && distance_to_object(player_obj) < 256)
 	{
 	    image_angle = point_direction(x, y, player_obj.x, player_obj.y) + 90;
-		if (!audio_is_playing(chaingunLocked_snd))
-		{
-			audio_play_sound(chaingunLocked_snd, 1, false);
-		}
 	}
 	else
 	{
@@ -40,11 +36,19 @@ if (aimDelay < 140)
 {
 	if (animationSpeed < 1)
 	{
-		animationSpeed += global.dt / 60;
+		animationSpeed += global.dt / 120;
 	}
 	if (animationSpeed > 1)
 	{
 		animationSpeed = 1;
+	}
+}
+
+if (aimDelay < 40 && aimDelay > 10)
+{
+	if (!audio_is_playing(chaingunLocked_snd))
+	{
+		audio_play_sound(chaingunLocked_snd, 1, false);
 	}
 }
 
@@ -64,7 +68,7 @@ if (throttle)
 {  
 	if (animationSpeed > 0)
 	{
-		animationSpeed -= global.dt / 60;
+		animationSpeed -= global.dt / 120;
 	}
 	if (animationSpeed < 0)
 	{
