@@ -1831,6 +1831,14 @@
             }
         },
         {
+            "Key": "7eb555e7-60ac-41fd-ab8a-fdf50be7931b",
+            "Value": {
+                "id": "6ce2012e-200d-4ac4-a2b8-df70fa8f1ae8",
+                "resourcePath": "objects\\bulletChaingun_obj\\bulletChaingun_obj.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "7ec6e1a4-36c9-419e-87f2-6f5eda7e45d6",
             "Value": {
                 "id": "8a1a07af-a38b-4db4-8c0b-aba23f17bd79",
@@ -2564,6 +2572,14 @@
                 "id": "35b2a520-e723-49bc-bda4-ca17bf58d284",
                 "resourcePath": "options\\linux\\options_linux.yy",
                 "resourceType": "GMLinuxOptions"
+            }
+        },
+        {
+            "Key": "a979f0fd-1844-4a70-996d-9867c3ae1cd6",
+            "Value": {
+                "id": "b64b1ede-bb7f-4ef9-a5a7-54b825dcc205",
+                "resourcePath": "sounds\\chaingunLocked_snd\\chaingunLocked_snd.yy",
+                "resourceType": "GMSound"
             }
         },
         {
