@@ -2191,6 +2191,14 @@
             }
         },
         {
+            "Key": "90154e62-15e3-473f-a613-5c0b8beaa868",
+            "Value": {
+                "id": "71fc8ec1-2984-459a-8804-e5e770a082a7",
+                "resourcePath": "objects\\fallingObjectPlayer_obj\\fallingObjectPlayer_obj.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "904a46fc-0a9b-418f-a016-22cd4a6f63e2",
             "Value": {
                 "id": "74c981a6-498a-4fc5-98c6-9a086c25fbd3",
