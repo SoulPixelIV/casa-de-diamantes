@@ -1,0 +1,1 @@
+image_index += global.dt / 15 * 0.1;

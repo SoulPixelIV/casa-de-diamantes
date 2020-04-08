@@ -223,6 +223,14 @@
             }
         },
         {
+            "Key": "0e8d5958-686d-4e7c-b5c5-74b72d2c93a4",
+            "Value": {
+                "id": "99c3de4f-b1ca-46eb-a505-690bf917a663",
+                "resourcePath": "objects\\checkpoint_obj\\checkpoint_obj.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "0ec59177-b878-4c75-b676-0d06889ddb5b",
             "Value": {
                 "id": "e2851335-09b3-4641-8840-e3316ab7765d",
@@ -2655,6 +2663,14 @@
             }
         },
         {
+            "Key": "ab0a9780-66d9-489b-8c67-0170f10c69ea",
+            "Value": {
+                "id": "7b313375-2fab-4b41-bb7a-1150cf6054c6",
+                "resourcePath": "sprites\\trapdoor_spr\\trapdoor_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "ab16fe92-2f94-459d-b135-596715946a35",
             "Value": {
                 "id": "de9d48a9-d396-409e-821d-d11ac3eda2ef",
@@ -3403,6 +3419,14 @@
             "Value": {
                 "id": "5b821bf6-4848-4768-a925-de52b1150133",
                 "resourcePath": "sprites\\spr_light_spot\\spr_light_spot.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "dad31fbb-438f-4238-b8d4-3d2bf3d2ce02",
+            "Value": {
+                "id": "fa49b236-14df-40c2-b5a0-663bb53a45bd",
+                "resourcePath": "sprites\\checkpoint_spr\\checkpoint_spr.yy",
                 "resourceType": "GMSprite"
             }
         },
