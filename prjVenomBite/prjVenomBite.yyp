@@ -175,6 +175,14 @@
             }
         },
         {
+            "Key": "0c8941dd-1539-4a5f-8a7f-85f59de1d437",
+            "Value": {
+                "id": "35d8361d-6991-4e8a-85f7-5557d4545df1",
+                "resourcePath": "sprites\\electricGate3Short_spr\\electricGate3Short_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "0c8c63eb-1b61-46c0-8232-da115052a115",
             "Value": {
                 "id": "63e7b425-e1d3-49a2-b598-afc91fe73648",
@@ -188,6 +196,14 @@
                 "id": "3f883fd8-256a-40a2-8fc7-77ee30b63761",
                 "resourcePath": "views\\0d0bd69a-659c-467b-b7aa-1e6280e37644.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "0d0cd730-ffcf-4acd-9979-38dd57ce644d",
+            "Value": {
+                "id": "d454bdd3-9bd3-4d94-9799-270f9f163d58",
+                "resourcePath": "sprites\\electricGate3_spr\\electricGate3_spr.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1831,6 +1847,14 @@
             }
         },
         {
+            "Key": "7ea12a6b-d3f4-42de-8c88-9de70c66b8bc",
+            "Value": {
+                "id": "d0339303-80cd-4742-9450-5c1beb01faee",
+                "resourcePath": "objects\\electricGate3_obj\\electricGate3_obj.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "7eb555e7-60ac-41fd-ab8a-fdf50be7931b",
             "Value": {
                 "id": "6ce2012e-200d-4ac4-a2b8-df70fa8f1ae8",
@@ -2415,6 +2439,14 @@
             }
         },
         {
+            "Key": "9ed026d6-8993-4a16-b1ea-cd6a818a366d",
+            "Value": {
+                "id": "0ff3d5cf-21eb-4463-858c-d369d13f2728",
+                "resourcePath": "views\\9ed026d6-8993-4a16-b1ea-cd6a818a366d.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "9efd1501-6fa9-4126-9730-aef5ca6dfef9",
             "Value": {
                 "id": "e7fa34dc-d63d-4bc7-9f96-120dc81ff299",
@@ -2564,6 +2596,14 @@
                 "id": "75c80fdf-720b-4144-8d15-f7915e03930f",
                 "resourcePath": "datafiles_yy\\GMLive\\regexp.ndll.yy",
                 "resourceType": "GMIncludedFile"
+            }
+        },
+        {
+            "Key": "a88fcfef-46c8-4712-babf-6f1248a3662a",
+            "Value": {
+                "id": "08de4888-6b16-4ce8-ab09-c31a8b065fe3",
+                "resourcePath": "objects\\electricGate3Short_obj\\electricGate3Short_obj.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -3756,6 +3796,14 @@
                 "id": "2d01b88c-e6e6-40c8-ac8c-8f95b708f6d9",
                 "resourcePath": "scripts\\lighting_get_active_camera\\lighting_get_active_camera.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "f6d88ad7-f636-469b-99b3-bd3763670121",
+            "Value": {
+                "id": "f1067650-9c1a-4876-afa1-a747158b1518",
+                "resourcePath": "views\\f6d88ad7-f636-469b-99b3-bd3763670121.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
