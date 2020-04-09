@@ -15,11 +15,11 @@ if (follow == camera_obj)
 x += (xTo - x) / (global.dtNoSlowmo * 10);
 if (follow == camera_obj)
 {
-	y += (yTo - y - 16) / (global.dtNoSlowmo * 10);
+	y += (yTo - y - 16) * (global.dtNoSlowmo / 10);
 }
 else
 {
-	y += (yTo - y - 16) / (global.dtNoSlowmo * 50);
+	y += (yTo - y - 16) * (global.dtNoSlowmo / 50);
 }
 
 var vm = matrix_build_lookat(x,y,-10,x,y,0,0,1,0);
