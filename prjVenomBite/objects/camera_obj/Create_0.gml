@@ -19,6 +19,11 @@ view_camera[0] = camera;
 
 follow = player_obj;
 
+if (player_obj != noone)
+{
+	x = player_obj.x;
+	y = player_obj.y;
+}
 xTo = x;
 yTo = y - 16;
 ySave = y;
