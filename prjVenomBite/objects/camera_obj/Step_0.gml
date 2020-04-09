@@ -12,7 +12,7 @@ if (follow == camera_obj)
 	yTo = (player_obj.y + 16) + (mouse_y - (player_obj.y + 16)) / 2;
 }
 
-x += (xTo - x) / (global.dtNoSlowmo * 10);
+x += (xTo - x) * (global.dtNoSlowmo / 10);
 if (follow == camera_obj)
 {
 	y += (yTo - y - 16) * (global.dtNoSlowmo / 10);
