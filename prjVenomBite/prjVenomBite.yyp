@@ -791,6 +791,14 @@
             }
         },
         {
+            "Key": "373259ee-134e-4705-88e7-dfc46e89a029",
+            "Value": {
+                "id": "6a8d91e1-a00f-4f16-a947-c5f40341106b",
+                "resourcePath": "tilesets\\buildingTiles\\buildingTiles.yy",
+                "resourceType": "GMTileSet"
+            }
+        },
+        {
             "Key": "3739fb40-008e-4ceb-a286-2751964cbf59",
             "Value": {
                 "id": "23b9b92a-3fab-4e21-853e-bd6b03886e43",
@@ -1180,6 +1188,14 @@
                 "id": "1e9fd779-41a0-4aae-8751-7a30304ecfa5",
                 "resourcePath": "sprites\\ledStripe2_spr\\ledStripe2_spr.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "4f65690f-b059-4994-877f-7f8435e1fc7f",
+            "Value": {
+                "id": "c94ba200-e4db-410a-9ac8-6c218fd22a7e",
+                "resourcePath": "tilesets\\buildingBackgroundTiles\\buildingBackgroundTiles.yy",
+                "resourceType": "GMTileSet"
             }
         },
         {
@@ -2127,6 +2143,14 @@
             }
         },
         {
+            "Key": "8bc9e2d0-7d04-4a1f-99bb-5a02d5e2831e",
+            "Value": {
+                "id": "6738fd6c-e0bb-4696-9546-806eb933c8cc",
+                "resourcePath": "sprites\\buildingBackgroundTiles_spr\\buildingBackgroundTiles_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "8c236617-5938-4159-9415-0dfd629cd30a",
             "Value": {
                 "id": "073f86df-1c7f-4222-bcaa-afe064756315",
@@ -2663,14 +2687,6 @@
             }
         },
         {
-            "Key": "ab0a9780-66d9-489b-8c67-0170f10c69ea",
-            "Value": {
-                "id": "7b313375-2fab-4b41-bb7a-1150cf6054c6",
-                "resourcePath": "sprites\\trapdoor_spr\\trapdoor_spr.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "ab16fe92-2f94-459d-b135-596715946a35",
             "Value": {
                 "id": "de9d48a9-d396-409e-821d-d11ac3eda2ef",
@@ -3052,6 +3068,14 @@
                 "id": "c0472242-a5e8-4c1f-a2ce-93d6170cdce7",
                 "resourcePath": "objects\\chipBluePickup_obj\\chipBluePickup_obj.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "c6261e06-4aff-4bc4-800b-addf580b0e1c",
+            "Value": {
+                "id": "ec830e51-b9c4-4d53-bbcb-c08fc5c28438",
+                "resourcePath": "sprites\\buildingTiles_spr\\buildingTiles_spr.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
