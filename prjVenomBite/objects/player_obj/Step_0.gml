@@ -3,8 +3,10 @@ if (live_call()) return live_result;
 x += horspeed * global.dt;
 y += verspeed * global.dt;
 
-key_left = keyboard_check(ord("A")) //CONTROLLER AXIS L;
-key_right = keyboard_check(ord("D")) // CONTROLLER AXIS R;
+key_left = keyboard_check(ord("A")); //CONTROLLER AXIS L;
+key_right = keyboard_check(ord("D")); // CONTROLLER AXIS R;
+key_up = keyboard_check(ord("W"));
+key_down = keyboard_check(ord("S"))
 key_shoot = mouse_check_button_pressed(mb_left) || gamepad_button_check_pressed(0, gp_shoulderrb);
 key_jump = keyboard_check_pressed(vk_space) || gamepad_button_check_pressed(0, gp_face1);
 key_jump_hold = keyboard_check(vk_space) || gamepad_button_check(0, gp_face1);
@@ -300,11 +302,12 @@ else
 }
 
 //Ladder
-if (place_meeting(x, y, ladder_obj))
+if (place_meeting(x, y, ladder_obj) && (key_up || key_down))
 {
 	onLadder = true;
 }
-else
+
+if (!place_meeting(x, y, ladder_obj))
 {
 	onLadder = false;
 }
