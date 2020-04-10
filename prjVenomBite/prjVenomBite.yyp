@@ -303,6 +303,14 @@
             }
         },
         {
+            "Key": "1456745c-b1a8-4171-acbd-ecc162545a0e",
+            "Value": {
+                "id": "789a7176-c21d-4075-8aea-8200d10ba0c4",
+                "resourcePath": "objects\\triggerBlockB_obj\\triggerBlockB_obj.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "150d235b-50f5-4a93-858f-3666436a9ab8",
             "Value": {
                 "id": "58ed7e55-b685-4733-bf6c-76e85f9c7e3b",
@@ -3015,6 +3023,14 @@
             }
         },
         {
+            "Key": "bf9e3956-223c-4ed5-b561-3e0e51c1773f",
+            "Value": {
+                "id": "702434e5-52ea-4e7b-9af9-4658eb2c33f8",
+                "resourcePath": "views\\bf9e3956-223c-4ed5-b561-3e0e51c1773f.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "bfc5b0ca-98b0-4a02-9e60-841d586a2fc4",
             "Value": {
                 "id": "f1b9af4c-001d-4192-bba1-61f3ad19dd5a",
@@ -3652,6 +3668,14 @@
                 "id": "2079a11f-7555-41f1-b358-f2b8a87beeab",
                 "resourcePath": "sprites\\ammoPackShotgun_spr\\ammoPackShotgun_spr.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "e752711d-f7fd-47da-8338-8fa69fe29401",
+            "Value": {
+                "id": "08b4a669-21e0-44f7-b6c5-613956406ac7",
+                "resourcePath": "objects\\triggerBox_obj\\triggerBox_obj.yy",
+                "resourceType": "GMObject"
             }
         },
         {
