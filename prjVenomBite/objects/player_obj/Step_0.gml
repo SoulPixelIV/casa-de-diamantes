@@ -84,7 +84,7 @@ if (movement && !isZombie)
 		    dash_scr();
 		}
 	}
-	if (isDashing && !grounded)
+	if (!grounded && !onLadder)
 	{
 		invincible = true;
 	}
