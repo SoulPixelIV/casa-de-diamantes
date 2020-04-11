@@ -149,7 +149,7 @@ if (jumping && !onLadder && !isDashing && !spin)
 //Walljump
 if (movement && !isZombie && wallJumps > 0)
 {
-	if (huggingWall && key_jump && !grounded)
+	if (huggingWall && key_jump)
 	{
 		wallJumping = true;
 		verspeed = -jumpStrength / 1.3;
