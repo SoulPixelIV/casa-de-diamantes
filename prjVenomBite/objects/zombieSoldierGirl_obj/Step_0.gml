@@ -93,7 +93,7 @@ if (hp < 0)
 	var maxAmount = random_range(moneyDropMin, moneyDropMax);
 	for (i = 0; i < maxAmount; i++)
 	{
-		chip = choose(1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,3)
+		chip = choose(1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,3);
 		
 		if (chip == 1)
 		{
@@ -118,7 +118,7 @@ with (headshotHitbox)
 }
 
 //Attack
-if (distance_to_object(player_obj) < 700 && player_obj.y > y - 64 && player_obj.y < y + 196)
+if (distance_to_object(player_obj) < 300 && player_obj.y > y - 64 && player_obj.y < y + 196)
 {
 	attackCooldown -= global.dt / 4;
 }

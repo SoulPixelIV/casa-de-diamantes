@@ -3479,6 +3479,14 @@
             }
         },
         {
+            "Key": "d9b44d17-0ce6-4c64-ad83-96105e89b9ec",
+            "Value": {
+                "id": "f30177bc-0cf5-4c4e-855c-41084ba84630",
+                "resourcePath": "sprites\\zombieSoldierGirlGun_spr\\zombieSoldierGirlGun_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "da787a9b-77c8-440d-98b9-bdc4dbabf195",
             "Value": {
                 "id": "7bd6ff18-083d-48a7-b638-4cf91ab0f037",
