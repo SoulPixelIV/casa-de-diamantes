@@ -16,3 +16,10 @@ if (global.multiplierTimer < 0)
 	global.multiplier = 1;
 	multiplierRun = false;
 }
+
+//Level lighting
+
+if (room_get_name(room) == "level0_RoadToCasino")
+{
+	//global.levelLighting = 1.5;
+}

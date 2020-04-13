@@ -3663,6 +3663,14 @@
             }
         },
         {
+            "Key": "e39c04d1-34b2-402f-8732-1775ecab112b",
+            "Value": {
+                "id": "700971e7-fd9a-4005-9542-5c384360d0e7",
+                "resourcePath": "objects\\caveBackgroundForeground_obj\\caveBackgroundForeground_obj.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "e3c03457-afc5-44d2-b759-89a80aeaeb41",
             "Value": {
                 "id": "ea6cf075-9dc3-4dfe-b970-452b2559c385",
