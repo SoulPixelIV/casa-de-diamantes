@@ -847,6 +847,14 @@
             }
         },
         {
+            "Key": "37aa0c27-6b63-4980-95b6-0c884c70372a",
+            "Value": {
+                "id": "4cf82634-55cf-4853-9a40-b3e5e27537a0",
+                "resourcePath": "objects\\caveBackground_obj\\caveBackground_obj.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "37ae45ff-9729-4324-9da4-8b89a267e412",
             "Value": {
                 "id": "b1d69244-12fc-4093-8760-67d540a89559",
@@ -2271,6 +2279,14 @@
             }
         },
         {
+            "Key": "90595c3f-9534-47bd-8532-acd72552101e",
+            "Value": {
+                "id": "8dff3074-eaf4-4967-82f0-9953d218d761",
+                "resourcePath": "sprites\\caveBackgroundForeground_spr\\caveBackgroundForeground_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "91bcbb47-d5ff-4dcf-a4db-3c9f0854e4a9",
             "Value": {
                 "id": "131981af-1796-4c8b-8620-e6387461c5c8",
@@ -3163,6 +3179,14 @@
             "Value": {
                 "id": "021f4e93-b93e-44a7-a2f7-94e004a247fe",
                 "resourcePath": "sprites\\playerJumpSpinUnequipped_spr\\playerJumpSpinUnequipped_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "c82ae424-5bca-431e-916f-9e404df25079",
+            "Value": {
+                "id": "d2aaf6d0-53fa-4190-ba1b-0f7c8b5f9427",
+                "resourcePath": "sprites\\caveBackground_spr\\caveBackground_spr.yy",
                 "resourceType": "GMSprite"
             }
         },
