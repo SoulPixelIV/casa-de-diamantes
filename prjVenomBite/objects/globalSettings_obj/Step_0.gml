@@ -1,7 +1,7 @@
 /// @description Shortcuts
 
 ideal_delta_time = 1000000 / room_speed;
-global.dt = (delta_time / ideal_delta_time) * global.timeScale;
+global.dt = clamp((delta_time / ideal_delta_time) * global.timeScale, 0.1, 5000);
 global.dtNoSlowmo = delta_time / ideal_delta_time;
 
 if (keyboard_check_pressed(vk_f1))
