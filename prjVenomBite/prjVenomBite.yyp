@@ -383,6 +383,14 @@
             }
         },
         {
+            "Key": "18ba1abe-7518-4e99-ba39-9ee64fce424e",
+            "Value": {
+                "id": "70b783c3-0a00-4f7f-95f5-b9c574f027ff",
+                "resourcePath": "objects\\brokenStreetTile_obj\\brokenStreetTile_obj.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "193b46fd-87dc-4e18-9328-4dfeaaac97b0",
             "Value": {
                 "id": "a620beaa-745f-4171-b597-f521fc22f32a",
@@ -716,6 +724,14 @@
                 "id": "83a6e172-b3c8-41b3-b668-4bb97eb4940f",
                 "resourcePath": "views\\316d45cc-3188-4a0a-ad86-74b10ed4a3ab.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "31a1c295-f169-4f56-9878-fe8a00879f69",
+            "Value": {
+                "id": "06539096-6da4-4360-99c1-a4a08c6244eb",
+                "resourcePath": "objects\\destructible_obj\\destructible_obj.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -1123,6 +1139,14 @@
             "Value": {
                 "id": "ba27312c-243d-4c06-8265-045b7ffc469d",
                 "resourcePath": "sprites\\playerDualBarettas_spr\\playerDualBarettas_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "455269f4-6911-4ef8-a580-02449c424ac4",
+            "Value": {
+                "id": "575716b5-7106-4377-9999-ad94b2ca0369",
+                "resourcePath": "sprites\\brokenStreetTile_spr\\brokenStreetTile_spr.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -3884,6 +3908,14 @@
                 "id": "44abd765-2984-4176-9570-5c44aeba765e",
                 "resourcePath": "objects\\shaderVignetteRed_obj\\shaderVignetteRed_obj.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "f20fe9a4-672c-4708-94f8-204d0d3d6e1c",
+            "Value": {
+                "id": "676655f9-24a3-4e05-afd9-7e0a0a3fc4a8",
+                "resourcePath": "views\\f20fe9a4-672c-4708-94f8-204d0d3d6e1c.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
