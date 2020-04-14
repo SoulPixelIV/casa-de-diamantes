@@ -679,6 +679,14 @@
             }
         },
         {
+            "Key": "30b5874d-c9da-4c7b-8943-b7a7ee17a3ff",
+            "Value": {
+                "id": "5710fd52-9ba9-418e-87e3-0d54ed698fdd",
+                "resourcePath": "sprites\\doorDecorative_spr\\doorDecorative_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "30e57535-d74d-4255-af96-70aead74941f",
             "Value": {
                 "id": "ffdbe3e7-a60e-4ba6-89f8-a91708f35983",
@@ -1516,6 +1524,14 @@
                 "id": "3be166ce-ac2d-4ae7-aaff-cafddebf0f75",
                 "resourcePath": "sprites\\ledBarRed_spr\\ledBarRed_spr.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "69c3525e-7aee-4bee-b278-c56da4ea760e",
+            "Value": {
+                "id": "6c4a672c-7668-44a1-a0d5-5331b82897ab",
+                "resourcePath": "objects\\doorDecorative_obj\\doorDecorative_obj.yy",
+                "resourceType": "GMObject"
             }
         },
         {
