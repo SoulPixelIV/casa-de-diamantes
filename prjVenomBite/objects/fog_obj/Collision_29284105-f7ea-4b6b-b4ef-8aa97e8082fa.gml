@@ -1,1 +1,1 @@
-image_alpha = 0.45;
+collision = true;
