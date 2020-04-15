@@ -12,7 +12,7 @@ if (hitbox != noone)
 	{
 		if (enemyTarget != noone)
 		{
-			enemyTarget.hp -= 30;
+			enemyTarget.hp -= 20;
 		}
 		penetration--;
 		instance_create_layer(x, y, "Instances", bloodSpread_obj);

@@ -12,7 +12,7 @@ if (hitbox != noone)
 	{
 		if (enemyTarget != noone)
 		{
-			enemyTarget.hp -= 40;
+			enemyTarget.hp -= 20;
 		}
 		instance_create_layer(x, y, "Instances", bloodSpread_obj);
 		bloodSpread2 = instance_create_layer(x, y, "Instances", bloodSpread2_obj);
