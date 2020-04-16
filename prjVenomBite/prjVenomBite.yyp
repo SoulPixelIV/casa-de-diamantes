@@ -1159,6 +1159,14 @@
             }
         },
         {
+            "Key": "45ab02a3-7792-4789-91e4-35ea3f810f8a",
+            "Value": {
+                "id": "3d3f6d0a-e0dd-4ff9-a36d-74b01543a0a2",
+                "resourcePath": "sprites\\minecartRail_spr\\minecartRail_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "478108a7-8c5e-4fbb-ad83-8d493dfe1ad3",
             "Value": {
                 "id": "d225173b-f6e5-4ce3-bffa-5c13d3d937e1",
@@ -2044,6 +2052,14 @@
                 "id": "3870d6e8-f260-4705-a0d0-d82cce12fc20",
                 "resourcePath": "sprites\\ledStripe_spr\\ledStripe_spr.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "834e09a5-fdec-4126-bddf-bb5b2f53caab",
+            "Value": {
+                "id": "b008b9c3-454f-40ad-9485-8b984deb91f8",
+                "resourcePath": "objects\\minecartRail_obj\\minecartRail_obj.yy",
+                "resourceType": "GMObject"
             }
         },
         {

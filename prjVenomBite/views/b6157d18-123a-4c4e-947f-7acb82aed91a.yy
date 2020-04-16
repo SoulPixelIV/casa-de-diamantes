@@ -16,7 +16,8 @@
         "1ad01f27-e45c-4c23-9713-fe1121c14526",
         "83369cc9-0e5f-41c1-bf58-622b737ddd35",
         "4d633993-b29e-41fa-9dcc-fd18b934159a",
-        "30b5874d-c9da-4c7b-8943-b7a7ee17a3ff"
+        "30b5874d-c9da-4c7b-8943-b7a7ee17a3ff",
+        "45ab02a3-7792-4789-91e4-35ea3f810f8a"
     ],
     "filterType": "GMSprite",
     "folderName": "Decoration",
