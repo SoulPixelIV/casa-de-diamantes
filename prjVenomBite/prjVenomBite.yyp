@@ -999,6 +999,14 @@
             }
         },
         {
+            "Key": "3f2bf592-baa0-46af-92ad-f59271d1ec0e",
+            "Value": {
+                "id": "3b5861ca-d0be-457d-9520-59fda906d4ed",
+                "resourcePath": "sprites\\minecartRail2_spr\\minecartRail2_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "3f3e2540-b4b8-476e-a613-31d86622cfa8",
             "Value": {
                 "id": "098f4d9b-1886-46e2-9059-67b3ba1909a9",
@@ -2679,6 +2687,14 @@
             }
         },
         {
+            "Key": "a46d76a3-ec42-4bbf-997d-9bdd89fd274f",
+            "Value": {
+                "id": "532c26cd-82a0-4dae-b0f1-5e8989a41720",
+                "resourcePath": "objects\\minecartForeground_obj\\minecartForeground_obj.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "a537359f-6d94-4db4-a681-c3c6d1701a12",
             "Value": {
                 "id": "1b515377-b539-4887-90e2-952c43e88893",
@@ -2927,6 +2943,14 @@
             }
         },
         {
+            "Key": "b48f0761-5776-4837-b1b9-9575da515e31",
+            "Value": {
+                "id": "be4b98c4-3805-461d-a0f1-29eefffa21d8",
+                "resourcePath": "sprites\\minecart_spr\\minecart_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "b57b4d2e-7415-4986-85fd-c25666da3915",
             "Value": {
                 "id": "bbf1e607-ccf4-4627-9d8a-b54e1efe2a8d",
@@ -2996,6 +3020,14 @@
                 "id": "9fa5e033-5aab-4122-9ff3-5cd8f7840a19",
                 "resourcePath": "scripts\\light_create_point\\light_create_point.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "b8edec4a-7ca1-478b-b5c4-5cac4008a956",
+            "Value": {
+                "id": "60531cec-1e93-46ee-ab78-102a6fbb9c16",
+                "resourcePath": "sprites\\minecartForeground_spr\\minecartForeground_spr.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -3455,6 +3487,14 @@
             }
         },
         {
+            "Key": "d3b7dcb5-687f-4711-8e95-04eb499e8b75",
+            "Value": {
+                "id": "1d6b3c60-1887-48fa-9512-2b31a41f18c8",
+                "resourcePath": "objects\\minecartBackground_obj\\minecartBackground_obj.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "d46150cb-2a0b-4553-8bfa-c71867e0ec83",
             "Value": {
                 "id": "110c64a4-c09d-436e-9b4d-798d8d41dd13",
@@ -3468,6 +3508,14 @@
                 "id": "2eee738f-1090-4e1c-bf84-ab4a730625de",
                 "resourcePath": "sprites\\light_spr\\light_spr.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "d4be7878-c7db-4c75-9090-a09a274632b6",
+            "Value": {
+                "id": "35b27814-13d1-41db-9963-a1f6b4fc439d",
+                "resourcePath": "objects\\minecartRail2_obj\\minecartRail2_obj.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -3884,6 +3932,14 @@
                 "id": "c67d79e5-323b-48d8-b823-7397bf710dcd",
                 "resourcePath": "objects\\barrel_obj\\barrel_obj.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "eda296d0-c05f-4f57-b9ee-8615ad40931b",
+            "Value": {
+                "id": "404be746-27c3-464e-9864-88c04577e5a2",
+                "resourcePath": "sprites\\minecartBackground_spr\\minecartBackground_spr.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
