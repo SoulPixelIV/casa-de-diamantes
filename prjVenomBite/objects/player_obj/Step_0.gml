@@ -1,4 +1,3 @@
-/// @description Movement
 if (live_call()) return live_result;
 x += horspeed * global.dt;
 y += verspeed * global.dt;
@@ -229,43 +228,59 @@ if (grounded)
 }
 
 //Collision
-//horspeed
-if (!place_free(x + (horspeed * global.dt), y))
+if (colliding)
 {
-	if (sign(horspeed) != 0)
+	//horspeed
+	if (!place_free(x + (horspeed * global.dt), y))
 	{
-		while (place_free(x + sign(horspeed) / 100, y))
+		if (sign(horspeed) != 0)
 		{
-			x += sign(horspeed) / 100;
+			while (place_free(x + sign(horspeed) / 100, y))
+			{
+				x += sign(horspeed) / 100;
+			}
+			if (!wallJumping)
+			{
+				horspeed = 0;
+			}
+			huggingWall = true;
 		}
-		if (!wallJumping)
-		{
-			horspeed = 0;
-		}
-		huggingWall = true;
-	}
-} 
-else
-{
-	huggingWall = false;
-}
-//verspeed
-if (!place_free(x, y + (verspeed * global.dt)))
-{
-	if (sign(verspeed) != 0)
+	} 
+	else
 	{
-		while (place_free(x, y + sign(verspeed) / 100))
-		{
-			y += sign(verspeed) / 100;
-		}
-		resetJump_scr();
+		huggingWall = false;
 	}
-}
-else
-{
-	fallJumpSafety -= global.dt;
-	grounded = false;
-	createdParticles = false;
+	//verspeed
+	if (!place_free(x, y + (verspeed * global.dt)))
+	{
+		if (sign(verspeed) != 0)
+		{
+			while (place_free(x, y + sign(verspeed) / 100))
+			{
+				y += sign(verspeed) / 100;
+			}
+			resetJump_scr();
+		}
+	}
+	else
+	{
+		fallJumpSafety -= global.dt;
+		grounded = false;
+		createdParticles = false;
+	}
+	
+	//###OutsideSolid###
+	if (place_free(x, y))
+	{
+	    savePosX = x;
+	    savePosY = y;
+	}
+	else
+	{
+	    x = savePosX;
+	    y = savePosY;
+	    verSpeed = 0;
+	}
 }
 
 //Create Dust Particles
@@ -286,19 +301,6 @@ if (groundCollisionTimer < 0)
 {
 	groundCollisionTimerOn = false;
 	groundCollisionTimer = groundCollisionTimerSave;
-}
-
-//###OutsideSolid###
-if (place_free(x, y))
-{
-    savePosX = x;
-    savePosY = y;
-}
-else
-{
-    x = savePosX;
-    y = savePosY;
-    verSpeed = 0;
 }
 
 //Ladder

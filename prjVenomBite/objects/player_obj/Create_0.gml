@@ -32,6 +32,7 @@ enemySlowmoTimer = 3.82;
 shotZoomTimer = 8.75;
 walljumpDustTimer = 12;
 
+colliding = true;
 infection = 0;
 maxhp = hp;
 syringesLost = 0;

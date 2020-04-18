@@ -1,1 +1,4 @@
-inMinecart = true;
+if (player_obj.verspeed > 0)
+{
+	inMinecart = true;
+}

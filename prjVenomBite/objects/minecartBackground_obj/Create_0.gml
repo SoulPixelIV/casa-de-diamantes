@@ -1,5 +1,4 @@
-xTo = x;
-yTo = y;
+mainObj = instance_nearest(x, y, minecartForeground_obj);
 
-minecartXTo = minecartForeground_obj.x;
-minecartYTo = minecartForeground_obj.y;
+offsetX = x - mainObj.x;
+offsetY = y - mainObj.y;
