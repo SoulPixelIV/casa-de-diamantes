@@ -34,3 +34,15 @@ if (mouse_check_button_released(mb_right))
 {
 	follow = player_obj;
 }
+
+//VignetteStrength
+if (vignetteStrength != 1)
+{
+	vignetteStrengthTimer -= global.dt;
+}
+
+if (vignetteStrengthTimer < 0)
+{
+	vignetteStrength = 1;
+	vignetteStrengthTimer = vignetteStrengthTimerSave;
+}

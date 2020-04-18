@@ -4,6 +4,8 @@ blackscreenStrength = 0;
 zombiespikeEffectBorder = 342;
 zombiespikeBorderTransparent = 0;
 deathVignette = false;
+vignetteStrengthTimer = 40;
+vignetteStrengthTimerSave = vignetteStrengthTimer;
 vignetteStrength = 1;
 drawInfectionText = false;
 

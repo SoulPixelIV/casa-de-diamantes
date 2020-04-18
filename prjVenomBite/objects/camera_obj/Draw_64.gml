@@ -26,7 +26,7 @@ if (deathVignette)
 else
 {
 	draw_set_alpha(0.055 * vignetteStrength);
-	draw_ellipse_colour(-300, -225, 1600, 1150, c_black , c_purple, false);
+	draw_ellipse_colour(-300, -225, 1600, 1150, c_black , c_blue, false);
 	//Vignette Effect
 	draw_set_alpha(0.1);
 	draw_ellipse_colour(-300, -225, 1600, 1150, c_black , c_red, false);
