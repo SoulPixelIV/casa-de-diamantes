@@ -1351,6 +1351,14 @@
             }
         },
         {
+            "Key": "583c7105-d72c-4ead-b45e-d7e41a107a1a",
+            "Value": {
+                "id": "4536cd4d-d02a-4010-b907-c77985f9fdbb",
+                "resourcePath": "objects\\fallingMinecart_obj\\fallingMinecart_obj.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "5a0b8468-92ce-4736-8cc4-780aa75c99c4",
             "Value": {
                 "id": "71c8f9a4-3b38-42d5-b668-0d1559b1222c",
