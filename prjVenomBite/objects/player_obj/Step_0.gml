@@ -738,7 +738,7 @@ if (enemySlowmo)
 if (enemyFlash)
 {
 	camera_obj.vignetteFlash = true;
-	vignetteFlashTimer -= global.dt / 10;
+	vignetteFlashTimer -= global.dt / 2;
 }
 if (vignetteFlashTimer < 0)
 {	

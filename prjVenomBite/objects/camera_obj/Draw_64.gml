@@ -25,18 +25,18 @@ if (deathVignette)
 }
 else
 {
-	draw_set_alpha(0.055 * vignetteStrength);
+	draw_set_alpha(0.125 * vignetteStrength);
 	var col = merge_colour(c_blue, c_red, vignetteColorClamp);
 
 	if (vignetteFlash)
 	{
 		if (vignetteColorDir == 0)
 		{
-			vignetteColorClamp += global.dt / 50;
+			vignetteColorClamp += global.dt / 150;
 		}
 		else
 		{
-			vignetteColorClamp -= global.dt / 50;
+			vignetteColorClamp -= global.dt / 150;
 		}
 	
 		if (vignetteColorClamp == 1)
