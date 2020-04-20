@@ -85,8 +85,15 @@ if (hp < 0)
 	global.multiplierTimer = 300;
 	gameManager_obj.multiplierRun = true;
 	camera_obj.scoreShake = true;
-	camera_obj.vignetteStrength = 3;
-	player_obj.enemySlowmo = true;
+	//camera_obj.vignetteStrength = 3;
+	player_obj.enemyFlash = true;
+
+	//Enemy Slowmo
+	var randNum = choose(1,2,3,4,5,6);
+	if (randNum == 6)
+	{
+		player_obj.enemySlowmo = true;
+	}
 	instance_destroy();
 }
 

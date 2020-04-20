@@ -28,7 +28,7 @@ slowmoTimer = 600;
 damageCooldown = 100;
 
 //Effects
-enemySlowmoTimer = 3.82;
+vignetteFlashTimer = 90;
 shotZoomTimer = 8.75;
 walljumpDustTimer = 12;
 
@@ -46,6 +46,7 @@ isDashing = false;
 plagueTransformation = false;
 shotZoom = false;
 enemySlowmo = false;
+enemyFlash = false;
 currDir = 0;
 fullJump = false;
 jumping = false;
@@ -82,7 +83,7 @@ wallJumpTimerSave = wallJumpTimer;
 slowmoTimerSave = slowmoTimer;
 wallJumpsSave = wallJumps;
 dashTimerSave = dashTimer;
-enemySlowmoTimerSave = enemySlowmoTimer;
+vignetteFlashTimerSave = vignetteFlashTimer;
 shotZoomTimerSave = shotZoomTimer;
 groundCollisionTimerSave = groundCollisionTimer;
 flipTimingSave = flipTiming;

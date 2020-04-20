@@ -26,7 +26,30 @@ if (deathVignette)
 else
 {
 	draw_set_alpha(0.055 * vignetteStrength);
-	draw_ellipse_colour(-300, -225, 1600, 1150, c_black , c_blue, false);
+	var col = merge_colour(c_blue, c_red, vignetteColorClamp);
+
+	if (vignetteFlash)
+	{
+		if (vignetteColorDir == 0)
+		{
+			vignetteColorClamp += global.dt / 50;
+		}
+		else
+		{
+			vignetteColorClamp -= global.dt / 50;
+		}
+	
+		if (vignetteColorClamp == 1)
+		{
+			vignetteColorDir = 1;
+		}
+		if (vignetteColorClamp == 0)
+		{
+			vignetteColorDir = 0;
+		}	
+		draw_ellipse_colour(-300, -225, 1600, 1150, c_black, col, false);
+	}
+	
 	//Vignette Effect
 	draw_set_alpha(0.1);
 	draw_ellipse_colour(-300, -225, 1600, 1150, c_black , c_red, false);

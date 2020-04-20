@@ -7,6 +7,10 @@ deathVignette = false;
 vignetteStrengthTimer = 40;
 vignetteStrengthTimerSave = vignetteStrengthTimer;
 vignetteStrength = 1;
+vignetteColor = 0.5;
+vignetteColorClamp = clamp(vignetteColor, 0, 1);
+vignetteColorDir = 0;
+vignetteFlash = false;
 drawInfectionText = false;
 
 camera = camera_create();

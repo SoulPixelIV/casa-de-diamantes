@@ -732,12 +732,20 @@ if (slowmoTimer < 30)
 }
 if (enemySlowmo)
 {
-	enemySlowmoTimer -= global.dt * 1.6;
-	global.timeScale = 0.025;
+	vignetteFlashTimer -= global.dt;
+	global.timeScale = 0.25;
 }
-if (enemySlowmoTimer < 0)
+if (enemyFlash)
 {
-	enemySlowmoTimer = enemySlowmoTimerSave;
+	camera_obj.vignetteFlash = true;
+	vignetteFlashTimer -= global.dt / 10;
+}
+if (vignetteFlashTimer < 0)
+{	
+	camera_obj.vignetteFlash = false;
 	enemySlowmo = false;
+	enemyFlash = false;
 	global.timeScale = 1;
+	enemySlowmo = false;
+	vignetteFlashTimer = vignetteFlashTimerSave;
 }
