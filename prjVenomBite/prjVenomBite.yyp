@@ -1711,6 +1711,14 @@
             }
         },
         {
+            "Key": "6eb259df-9263-4073-b4ed-e5764e73695f",
+            "Value": {
+                "id": "f8a773ea-d19f-40f0-a5d4-d607fe567da9",
+                "resourcePath": "objects\\minecartRail3_obj\\minecartRail3_obj.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "6ee3e0fb-bcca-4948-a799-5edcb09383c4",
             "Value": {
                 "id": "388bec0e-4141-4a93-b90e-f4ac81e12394",
@@ -4092,6 +4100,14 @@
                 "id": "2d01b88c-e6e6-40c8-ac8c-8f95b708f6d9",
                 "resourcePath": "scripts\\lighting_get_active_camera\\lighting_get_active_camera.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "f6696888-b5dd-44cc-b21e-44dd7303511b",
+            "Value": {
+                "id": "178d0929-47a7-4546-b406-86e95c7bc289",
+                "resourcePath": "sprites\\minecartRail3_spr\\minecartRail3_spr.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
