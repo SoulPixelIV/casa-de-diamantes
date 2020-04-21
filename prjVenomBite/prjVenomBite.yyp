@@ -1919,6 +1919,14 @@
             }
         },
         {
+            "Key": "7a15b9f1-155e-4d54-aab0-c16d072db503",
+            "Value": {
+                "id": "e53a5adc-a741-4a8f-af26-b2737e21341e",
+                "resourcePath": "tilesets\\caveBackgroundTiles\\caveBackgroundTiles.yy",
+                "resourceType": "GMTileSet"
+            }
+        },
+        {
             "Key": "7a16ecec-4a1c-4ec7-afa7-e57936f55c2d",
             "Value": {
                 "id": "14b04193-d941-4134-a929-555d50e2c6f6",
@@ -2844,6 +2852,14 @@
                 "id": "a93d1b1c-cb72-4ee6-b5a8-5c5848a94d1e",
                 "resourcePath": "scripts\\composite_shadow_map\\composite_shadow_map.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "ab550559-0d99-4e79-8723-1ea90132c16a",
+            "Value": {
+                "id": "ccd72bcf-367e-4ea4-9f80-1f038abcb9e1",
+                "resourcePath": "sprites\\caveBackgroundTiles_spr\\caveBackgroundTiles_spr.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
