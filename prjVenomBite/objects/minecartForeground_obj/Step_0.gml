@@ -121,8 +121,9 @@ if (keyboard_check_pressed(vk_space) && inMinecart)
 	inMinecart = false;
 	player_obj.movement = true;
 	player_obj.invincible = false;
-	player_obj.x = x - 64;
+	player_obj.x = x;
 	player_obj.y = y - 64;
+	jump_scr();
 	camera_obj.follow = player_obj;
 	player_obj.colliding = true;
 }
