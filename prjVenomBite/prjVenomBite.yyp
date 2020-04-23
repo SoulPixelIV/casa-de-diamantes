@@ -47,6 +47,14 @@
             }
         },
         {
+            "Key": "0062a2e2-3c56-4e6e-8660-a7eae03702a3",
+            "Value": {
+                "id": "a46085c5-a04d-496c-a1a8-296eb499d44e",
+                "resourcePath": "objects\\trapdoorClosed_obj\\trapdoorClosed_obj.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "007bad62-eaaf-4e08-8ac7-75b73bdbe749",
             "Value": {
                 "id": "6a796e5b-c7ad-498c-bb00-63353fed9feb",
@@ -148,6 +156,14 @@
                 "id": "a8f47dcb-b5ab-497f-893a-8a2452eb1c60",
                 "resourcePath": "scripts\\polygon_get_area\\polygon_get_area.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "096f3efa-9120-4419-8b23-bb934cf8e20c",
+            "Value": {
+                "id": "c5783bf1-cd5a-4139-b3b9-78df89ee3bac",
+                "resourcePath": "objects\\trapdoorOpen_obj\\trapdoorOpen_obj.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -2972,6 +2988,14 @@
                 "id": "dbe5d06c-770a-44d1-8b39-82dfbefac661",
                 "resourcePath": "scripts\\light_remove_from_world\\light_remove_from_world.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "b33efe09-c9ef-4522-9df8-6faf194b8aac",
+            "Value": {
+                "id": "fd726336-e1cd-44e5-8e53-a2b25f736105",
+                "resourcePath": "sprites\\trapdoor_spr\\trapdoor_spr.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
