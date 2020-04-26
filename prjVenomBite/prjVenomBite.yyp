@@ -4103,6 +4103,14 @@
             }
         },
         {
+            "Key": "f32d947a-ff6e-47a3-a74a-23c0b2938e9f",
+            "Value": {
+                "id": "6d1fe288-f8c9-4dd5-80ce-acd1883eea52",
+                "resourcePath": "objects\\damageHitbox_obj\\damageHitbox_obj.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "f35e5ca1-523d-4fb8-aa3b-56ee865c2d0b",
             "Value": {
                 "id": "a524fe7a-0dd2-473f-acae-f85388f2e8cb",
