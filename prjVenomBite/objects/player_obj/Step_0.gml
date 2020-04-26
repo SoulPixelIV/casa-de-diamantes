@@ -732,16 +732,16 @@ if (slowmoTimer < 30)
 }
 if (enemySlowmo)
 {
-	vignetteFlashTimer -= global.dt;
-	global.timeScale = 0.25;
+	global.timeScale = 0.05;
 }
 if (enemyFlash)
 {
 	camera_obj.vignetteFlash = true;
-	vignetteFlashTimer -= global.dt / 2;
+	vignetteFlashTimer -= global.dt * 2;
 }
 if (vignetteFlashTimer < 0)
 {	
+	camera_obj.follow = player_obj;
 	camera_obj.vignetteFlash = false;
 	enemySlowmo = false;
 	enemyFlash = false;

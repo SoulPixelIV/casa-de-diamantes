@@ -93,6 +93,29 @@ if (hp < 0)
 	if (randNum == 6)
 	{
 		player_obj.enemySlowmo = true;
+		//Camera Bullet Follow
+		var cameraTarget = noone;
+		if (instance_exists(bulletPistol_obj))
+		{
+			cameraTarget = instance_nearest(x, y, bulletPistol_obj);
+		}
+		else if (instance_exists(bulletDualBarettas_obj))
+		{
+			cameraTarget = instance_nearest(x, y, bulletDualBarettas_obj);
+		}
+		else if (instance_exists(bulletShotgun_obj))
+		{
+			cameraTarget = instance_nearest(x, y, bulletShotgun_obj);
+		}
+		else
+		{
+			cameraTarget = noone;
+		}
+		
+		if (cameraTarget != noone)
+		{
+			camera_obj.follow = cameraTarget;
+		}
 	}
 	instance_destroy();
 	

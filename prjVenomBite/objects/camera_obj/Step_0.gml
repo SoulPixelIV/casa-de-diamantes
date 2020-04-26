@@ -6,6 +6,7 @@ if (follow != noone)
 		yTo = follow.y - 16;
 	}
 }
+
 if (follow == camera_obj)
 {
 	xTo = player_obj.x + (mouse_x - player_obj.x) / 2;
