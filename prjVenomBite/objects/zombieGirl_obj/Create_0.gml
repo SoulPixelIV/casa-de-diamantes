@@ -15,12 +15,13 @@ playerSightMin = 16;
 
 savePosX = x;
 savePosY = y;
-attackCooldown = 625;
+attackCooldown = 400;
 delay = false;
 isDashing = false;
 attackDelay = 50;
 boostSpeed = 2.05;
 attackInProg = false;
+attackInProg2 = false;
 dashed = false;
 damageCollision = false;
 points = 125;

@@ -2343,6 +2343,14 @@
             }
         },
         {
+            "Key": "8f109a15-9829-4977-a69e-980ffd1f30d1",
+            "Value": {
+                "id": "214a429b-3513-4158-ab5d-df11da5897d0",
+                "resourcePath": "sprites\\zombieGirlAttack2OLD_spr\\zombieGirlAttack2OLD_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "8f2341d7-0568-4e10-a173-c1d0529fd808",
             "Value": {
                 "id": "76410446-6ce4-4ec4-868c-7c1c35203bf2",
@@ -4019,6 +4027,14 @@
             "Value": {
                 "id": "b5fee7e7-0b12-4e98-808f-7851d8acfb38",
                 "resourcePath": "sprites\\playerBulletLine_spr\\playerBulletLine_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "eea588c9-8a39-4c8a-b353-9f6b0651b713",
+            "Value": {
+                "id": "9f818461-b5e7-43e9-9199-3fed87ff4943",
+                "resourcePath": "sprites\\zombieGirlAttack2_spr\\zombieGirlAttack2_spr.yy",
                 "resourceType": "GMSprite"
             }
         },
