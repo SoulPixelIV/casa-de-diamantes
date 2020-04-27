@@ -92,8 +92,8 @@ if (hp < 0)
 	player_obj.enemyFlash = true;
 	
 	//Enemy Slowmo
-	var randNum = choose(1,2,3,4,5,6);
-	if (randNum == 6)
+	var randNum = choose(1,2,3,4,5,6,7,8,9);
+	if (randNum == 9)
 	{
 		player_obj.enemySlowmo = true;
 		
