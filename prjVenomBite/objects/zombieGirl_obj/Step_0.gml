@@ -4,7 +4,7 @@ x += horspeed * global.dt;
 y += verspeed * global.dt;
 dirLookat = point_direction(x, y, player_obj.x, player_obj.y);
 
-if (!attackInProg)
+if ((!attackInProg || !attackInProg2) && movement)
 {
 	if (distance_to_object(player_obj) < playerSightMax && distance_to_object(player_obj) > playerSightMin)
 	{
@@ -30,9 +30,13 @@ if (!attackInProg)
 		horspeed = 0;
 	}
 }
+else
+{
+	horspeed = 0;
+}
 
 //Gravity
-if (verspeed < 14)
+if (verspeed < 2)
 {
 	verspeed -= gravityStrength * global.dt;
 }
@@ -158,7 +162,7 @@ with (headshotHitbox)
 //###Attack###
 
 //Cooldown
-if (!attackInProg && distance_to_object(player_obj) < 200)
+if (!attackInProg && !attackInProg2 && distance_to_object(player_obj) < 200)
 {
 	if (distance_to_object(player_obj) < 64)
 	{
@@ -176,6 +180,7 @@ if (attackCooldown < 0)
 	if (distance_to_object(player_obj) < 64)
 	{
 		sprite_index = zombieGirlAttack2_spr;
+		movement = false;
 		attackInProg2 = true;
 	}
 	else
@@ -186,12 +191,11 @@ if (attackCooldown < 0)
 	attackCooldown = attackCooldownSave;
 }
 
+//Start Attack 1
 if (attackInProg)
 {
 	instance_create_layer(x, y - 4, "ForegroundObjects", dustParticle_obj);
 }
-
-//Start Attack 1
 if (attackInProg && image_index > image_number - 1 && !dashed)
 {
 	image_speed = 0;
@@ -212,10 +216,17 @@ if (attackInProg && image_index > image_number - 1 && !dashed)
 if (attackInProg2 && image_index > image_number - 1 && !dashed)
 {
 	image_speed = 0;
-	damageCollision = true;
 	dashed = true;
 	delay = true;
 }	
+if (attackInProg2 && image_index > 8 && !spawnedHitbox)
+{
+	var hitbox = instance_create_layer(x + (12 * image_xscale), y, "Instances", damageHitbox_obj);
+	hitbox.image_yscale = 1.5;
+	hitbox.damage = 30;
+	hitbox.timer = 140;
+	spawnedHitbox = true;
+}
 	
 if (delay)
 {
@@ -231,4 +242,6 @@ if (attackDelay < 0)
 	image_speed = 1;
 	sprite_index = zombieGirl_spr;
 	damageCollision = false;
+	movement = true;
+	spawnedHitbox = false;
 }

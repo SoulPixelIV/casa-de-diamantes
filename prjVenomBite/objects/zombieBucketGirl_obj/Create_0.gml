@@ -12,6 +12,7 @@ knockback = 2.25;
 movSpeed = 0.12;
 playedSound = false;
 gravityStrength = -0.05;
+movement = true;
 savePosX = x;
 savePosY = y;
 

@@ -24,9 +24,11 @@ attackInProg = false;
 attackInProg2 = false;
 dashed = false;
 damageCollision = false;
+spawnedHitbox = false;
 points = 125;
 knockback = 2;
 movSpeed = 0.15;
+movement = true;
 gravityStrength = -0.05;
 
 //Help Vars

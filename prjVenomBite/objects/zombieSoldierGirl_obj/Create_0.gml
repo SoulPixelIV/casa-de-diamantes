@@ -13,6 +13,7 @@ points = 125;
 knockback = 1.25;
 movSpeed = 0.08;
 playedSound = false;
+movement = true;
 gravityStrength = -0.05;
 savePosX = x;
 savePosY = y;

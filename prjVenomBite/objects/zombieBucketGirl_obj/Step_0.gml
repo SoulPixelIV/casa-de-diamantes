@@ -4,32 +4,36 @@ x += horspeed * global.dt;
 y += verspeed * global.dt;
 
 dirLookat = point_direction(x, y, player_obj.x, player_obj.y);
-if (distance_to_object(player_obj) < 128 && distance_to_object(player_obj) > 16)
+
+if (movement)
 {
-	if (player_obj.x > x)
+	if (distance_to_object(player_obj) < 128 && distance_to_object(player_obj) > 16)
 	{
-		horspeed = movSpeed;
+		if (player_obj.x > x)
+		{
+			horspeed = movSpeed;
+		}
+		else
+		{
+			horspeed = -movSpeed;
+		}
+		if (dirLookat > 90 && dirLookat < 270)
+		{
+			image_xscale = -1;
+		}
+		else
+		{
+			image_xscale = 1;
+		}
 	}
 	else
 	{
-		horspeed = -movSpeed;
+		horspeed = 0;
 	}
-	if (dirLookat > 90 && dirLookat < 270)
-	{
-		image_xscale = -1;
-	}
-	else
-	{
-		image_xscale = 1;
-	}
-}
-else
-{
-	horspeed = 0;
 }
 
 //Gravity
-if (verspeed < 14)
+if (verspeed < 2)
 {
 	verspeed -= gravityStrength * global.dt;
 }
