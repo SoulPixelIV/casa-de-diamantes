@@ -9,9 +9,11 @@ if (!place_free(x, y))
 	instance_change(bulletHit_obj, true);
 }
 
-if (place_meeting(x, y, player_obj) && !player_obj.isZombie && !player_obj.invincible)
+if (place_meeting(x, y, player_obj) && !player_obj.isZombie && !player_obj.invincible && !player_obj.damageRecieved)
 {
 	player_obj.hp -= 25;
+	player_obj.damageRecieved = true;
+	player_obj.damageCooldown = player_obj.damageCooldownSave;
 	instance_change(bloodSpread_obj, true);
 	bloodSpread2 = instance_create_layer(x, y, "Instances", bloodSpread2_obj);
 	bloodSpread2.image_angle = image_angle;

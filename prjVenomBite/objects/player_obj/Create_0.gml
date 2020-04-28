@@ -32,6 +32,7 @@ vignetteFlashTimer = 90;
 shotZoomTimer = 8.75;
 walljumpDustTimer = 12;
 
+damageFlickerTimer = 17;
 colliding = true;
 infection = 0;
 maxhp = hp;
@@ -75,6 +76,7 @@ createdParticles = false;
 landSoundPlayed = false;
 
 //Help Vars
+damageFlickerTimerSave = damageFlickerTimer;
 walljumpDustTimerSave = walljumpDustTimer;
 damageCooldownSave = damageCooldown;
 fallJumpSafetySave = fallJumpSafety;

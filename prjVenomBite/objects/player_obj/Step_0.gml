@@ -658,10 +658,31 @@ else
 if (damageRecieved)
 {
 	damageCooldown -= global.dt;
+	if (damageCooldown < damageCooldownSave / 4)
+	{
+		damageFlickerTimer -= global.dt * 2;
+	}
+	else
+	{
+		damageFlickerTimer -= global.dt;
+	}
+}
+if (damageFlickerTimer < 0)
+{
+	if (image_alpha > 0)
+	{
+		image_alpha = 0;
+	}
+	else
+	{
+		image_alpha = 1;
+	}
+	damageFlickerTimer = damageFlickerTimerSave;
 }
 if (damageCooldown < 0)
 {
 	damageRecieved = false;
+	image_alpha = 1;
 }
 
 if (hp < 0)
