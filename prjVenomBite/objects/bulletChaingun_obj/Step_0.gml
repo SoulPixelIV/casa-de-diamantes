@@ -3,7 +3,7 @@
 speed = movSpeed * global.dt;
 
 //Collision
-if (!place_free(x, y))
+if (!place_free(x, y) && !place_meeting(x, y, colliderBulletFree_obj))
 {
 	audio_play_sound(bulletHitGround_snd, 0.9, false);
 	instance_change(bulletHit_obj, true);
