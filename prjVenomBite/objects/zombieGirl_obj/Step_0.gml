@@ -203,11 +203,11 @@ if (attackInProg && image_index > image_number - 1 && !dashed)
 	//Front Dash
 	if (player_obj.y > y - 32 && player_obj.y < y + 32)
 	{
-		frontDash_scr(id, boostSpeed);
+		frontDash_scr(id);
 	}
 	else
 	{
-		frontDash_scr(id, boostSpeed);
+		frontDash_scr(id);
 	}
 	dashed = true;
 }
