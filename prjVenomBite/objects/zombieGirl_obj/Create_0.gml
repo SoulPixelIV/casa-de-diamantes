@@ -15,7 +15,7 @@ playerSightMin = 16;
 
 savePosX = x;
 savePosY = y;
-attackCooldown = 400;
+attackCooldown = 300;
 delay = false;
 isDashing = false;
 attackDelay = 50;

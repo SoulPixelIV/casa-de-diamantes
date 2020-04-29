@@ -1959,6 +1959,14 @@
             }
         },
         {
+            "Key": "7ab03f04-20c1-45f3-a8d9-3838ea77813c",
+            "Value": {
+                "id": "c21399f0-6b2f-4c94-ab71-8a18eb5fd095",
+                "resourcePath": "objects\\grenate_obj\\grenate_obj.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "7ab85828-b6f9-4d3d-901b-77c59af58608",
             "Value": {
                 "id": "31bcd54a-dcbd-4e0d-babd-7dfbc9dfc5d4",
@@ -4148,6 +4156,14 @@
                 "id": "7cc8d707-97a9-4f3f-872d-f461fea16a0b",
                 "resourcePath": "objects\\dustParticle_obj\\dustParticle_obj.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "f4c94cac-2aac-4fc5-a5e2-15b4e69eafb6",
+            "Value": {
+                "id": "a1f35df5-aa48-4c35-9e12-ca9f484519ae",
+                "resourcePath": "sprites\\grenate_spr\\grenate_spr.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

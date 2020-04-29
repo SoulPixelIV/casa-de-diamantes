@@ -157,11 +157,20 @@ if (distance_to_object(player_obj) < 300 && player_obj.y > y - 64 && player_obj.
 	attackCooldown -= global.dt / 4;
 }
 
-if (attackCooldown < 60)
+if (randAttack == 1)
+{
+	attackInProg1 = true;
+}
+else
+{
+	attackInProg2 = true;
+}
+
+if (attackCooldown < 60 && attackInProg1)
 {
 	sprite_index = zombieSoldierGirlAim_spr;
 }
-if (attackCooldown < 0)
+if (attackCooldown < 0 && attackInProg1)
 {
 	audio_sound_pitch(shotgunShot_snd, random_range(0.9, 1.1));
 	audio_play_sound(shotgunShot_snd, 1, false);
@@ -171,5 +180,19 @@ if (attackCooldown < 0)
 
 	attackCooldown = attackCooldownSave;
 	sprite_index = zombieSoldierGirl_spr;
+	attackInProg1 = false;
+	attackInProg2 = false;
+	randAttack = choose(1,2);
+}
+if (attackCooldown < 0 && attackInProg2)
+{	
+	var grenate = instance_create_layer(x + 10 * image_xscale, y, "Instances", grenate_obj);
+	grenate.horspeed = random_range(2, 4) * image_xscale;
+	grenate.verspeed = random_range(-4, -6);
+	attackCooldown = attackCooldownSave / 2;
+	sprite_index = zombieSoldierGirl_spr;
+	attackInProg1 = false;
+	attackInProg2 = false;
+	randAttack = choose(1,2);
 }
 

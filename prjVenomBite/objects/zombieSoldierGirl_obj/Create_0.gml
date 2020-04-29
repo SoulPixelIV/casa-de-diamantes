@@ -17,6 +17,9 @@ movement = true;
 gravityStrength = -0.05;
 savePosX = x;
 savePosY = y;
+randAttack = 1;
+attackInProg1 = false;
+attackInProg2 = false;
 
 attackCooldownSave = attackCooldown;
 
