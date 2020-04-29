@@ -1375,6 +1375,14 @@
             }
         },
         {
+            "Key": "598761dc-f275-4e69-a910-dc9745cda821",
+            "Value": {
+                "id": "f64d3069-716e-493f-a6ae-2e22ec209861",
+                "resourcePath": "sprites\\ammoCounter_spr\\ammoCounter_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "5a0b8468-92ce-4736-8cc4-780aa75c99c4",
             "Value": {
                 "id": "71c8f9a4-3b38-42d5-b668-0d1559b1222c",
