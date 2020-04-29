@@ -21,7 +21,7 @@ if (!damageRecieved && !isZombie && !invincible)
 	if (other.damageCollision)
 	{
 		hp -= other.damage;
+		damageCooldown = damageCooldownSave;
+		damageRecieved = true;
 	}
-	damageCooldown = damageCooldownSave;
-	damageRecieved = true;
 }

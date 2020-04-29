@@ -4,7 +4,7 @@ x += horspeed * global.dt;
 y += verspeed * global.dt;
 dirLookat = point_direction(x, y, player_obj.x, player_obj.y);
 
-if ((!attackInProg || !attackInProg2) && movement)
+if (movement)
 {
 	if (distance_to_object(player_obj) < playerSightMax && distance_to_object(player_obj) > playerSightMin)
 	{
@@ -32,7 +32,10 @@ if ((!attackInProg || !attackInProg2) && movement)
 }
 else
 {
-	horspeed = 0;
+	if (!attackInProg)
+	{
+		horspeed = 0;
+	}
 }
 
 //Gravity
@@ -186,6 +189,7 @@ if (attackCooldown < 0)
 	else
 	{
 		sprite_index = zombieGirlAttack1_spr;
+		movement = false;
 		attackInProg = true;
 	}
 	attackCooldown = attackCooldownSave;
@@ -221,7 +225,7 @@ if (attackInProg2 && image_index > image_number - 1 && !dashed)
 }	
 if (attackInProg2 && image_index > 8 && !spawnedHitbox)
 {
-	var hitbox = instance_create_layer(x + (12 * image_xscale), y, "Instances", damageHitbox_obj);
+	var hitbox = instance_create_layer(x + (16 * image_xscale), y, "Instances", damageHitbox_obj);
 	hitbox.image_yscale = 1.5;
 	hitbox.damage = 30;
 	hitbox.timer = 140;

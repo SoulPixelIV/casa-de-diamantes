@@ -10,7 +10,7 @@ if (distance_to_object(player_obj) < 130)
 }
 
 //Vision line
-if (attackCooldown < 60)
+if (attackCooldown < 60 && distance_to_object(player_obj) < 300)
 {
 	if (image_xscale == 1)
 	{
