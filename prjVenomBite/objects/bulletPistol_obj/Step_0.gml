@@ -20,3 +20,10 @@ if (penetrationTime < 0)
 	dealtDamage = false;
 	penetrationTime = 3;
 }
+
+//Destroy
+deleteTimer -= global.dt;
+if (deleteTimer < 0)
+{
+	instance_destroy();
+}

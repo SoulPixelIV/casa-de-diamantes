@@ -21,3 +21,9 @@ if (penetrationTime < 0)
 	penetrationTime = 3;
 }
 
+//Destroy
+deleteTimer -= global.dt;
+if (deleteTimer < 0)
+{
+	instance_destroy();
+}
