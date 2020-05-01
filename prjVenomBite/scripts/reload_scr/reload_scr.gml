@@ -28,13 +28,13 @@ if (global.currentWeapon == gameManager_obj.pickedWeapon.dualBarettas)
 }
 if (global.currentWeapon == gameManager_obj.pickedWeapon.shotgun)
 {
-	if (global.shotgunMag >= 2 && global.shotgunAmmo < 2)
+	if (global.shotgunMag >= 3 && global.shotgunAmmo < 3)
 	{
-		global.shotgunMag -= 2 - global.shotgunAmmo;
-		global.shotgunAmmo += 2 - global.shotgunAmmo;
+		global.shotgunMag -= 3 - global.shotgunAmmo;
+		global.shotgunAmmo += 3 - global.shotgunAmmo;
 	}
 	
-	if (global.shotgunMag < 2 && global.shotgunAmmo < 2)
+	if (global.shotgunMag < 3 && global.shotgunAmmo < 3)
 	{
 		global.shotgunAmmo += global.shotgunMag;
 		global.shotgunMag = 0;
