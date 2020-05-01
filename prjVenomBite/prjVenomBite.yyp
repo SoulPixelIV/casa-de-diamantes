@@ -4175,6 +4175,14 @@
             }
         },
         {
+            "Key": "f4aacca7-e062-45cc-86bf-8556fb4916d9",
+            "Value": {
+                "id": "a1c3e933-0718-49dc-a99f-19492c122ded",
+                "resourcePath": "sprites\\dashCircle_spr\\dashCircle_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "f4c94cac-2aac-4fc5-a5e2-15b4e69eafb6",
             "Value": {
                 "id": "a1f35df5-aa48-4c35-9e12-ca9f484519ae",
