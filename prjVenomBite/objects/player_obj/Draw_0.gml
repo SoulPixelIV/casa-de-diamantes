@@ -18,29 +18,6 @@ if (!flip)
 	}
 }
 
-//Ammo Counter
-if (global.currentWeapon = pickedWeapon.pistol)
-{
-	if (global.pistolAmmo < 5)
-	{
-		draw_sprite_ext(ammoCounter_spr, global.pistolAmmo, x - 22, y - 20, 1, 1, 0, -1, 1 / (global.pistolAmmo + 1));
-	}
-}
-if (global.currentWeapon = pickedWeapon.dualBarettas)
-{
-	if (global.dualBarettasAmmo < 5)
-	{
-		draw_sprite_ext(ammoCounter_spr, global.dualBarettasAmmo, x - 22, y - 20, 1, 1, 0, -1, 1 / (global.dualBarettasAmmo + 1));
-	}
-}
-if (global.currentWeapon = pickedWeapon.shotgun)
-{
-	if (global.shotgunAmmo < 2)
-	{
-		draw_sprite_ext(ammoCounter_spr, global.shotgunAmmo, x - 22, y - 20, 1, 1, 0, -1, 1 / (global.shotgunAmmo + 1));
-	}
-}
-
 //Flip Sparkle
 if (global.currentWeapon != gameManager_obj.pickedWeapon.unarmed)
 {

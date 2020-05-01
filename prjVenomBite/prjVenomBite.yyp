@@ -3039,6 +3039,14 @@
             }
         },
         {
+            "Key": "b47b8f1b-90c1-4b77-a60d-784e2034553e",
+            "Value": {
+                "id": "3d69a393-df24-4ae1-b85b-6dfbdd56e9cb",
+                "resourcePath": "objects\\spotlightPlayer_obj\\spotlightPlayer_obj.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "b48f0761-5776-4837-b1b9-9575da515e31",
             "Value": {
                 "id": "be4b98c4-3805-461d-a0f1-29eefffa21d8",
