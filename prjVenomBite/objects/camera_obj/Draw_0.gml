@@ -22,3 +22,9 @@ if (global.currentWeapon = pickedWeapon.shotgun)
 		draw_sprite_ext(ammoCounter_spr, global.shotgunAmmo, player_obj.x - 22, player_obj.y - 20, 1, 1, 0, -1, 1 / (global.shotgunAmmo + 1) * 1.5);
 	}
 }
+
+//Dash Circle
+if (player_obj.dashDelay < 150)
+{
+	var dashCircle = draw_sprite_ext(dashCircle_spr, 0, player_obj.x, player_obj.y, 1 / (player_obj.dashDelay / 40), 1 / (player_obj.dashDelay / 40), 0, -1, 1 / (player_obj.dashDelay / 40))	
+}

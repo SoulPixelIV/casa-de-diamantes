@@ -66,7 +66,7 @@ if (!noHUD)
 	draw_text_colour(32, 624, "Framerate: " + string(fps_real), c_white, c_white, c_white, c_white, 1);
 	draw_text_colour(32, 592, "Slowmo: " + string(player_obj.slowmoTimer), c_white, c_white, c_white, c_white, 1);
 	draw_text_colour(32, 656, "Roomspeed: " + string(fps), c_white, c_white, c_white, c_white, 1);
-	draw_text_colour(32, 688, "Speed: " + string(global.timeScale), c_white, c_white, c_white, c_white, 1);
+	draw_text_colour(32, 688, "Dash: " + string(player_obj.dashDelay), c_white, c_white, c_white, c_white, 1);
 
 	//Healthbar
 	draw_sprite_ext(healthbarBorder_spr, 0, 32, 16, 2, 2, 0, -1, 1);

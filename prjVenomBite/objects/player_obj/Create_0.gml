@@ -7,6 +7,7 @@ movSpeed = 0.82;
 movSpeedZombie = 0.54;
 dashSpeed = 1.57;
 wallJumps = 2;
+dashDelay = 300;
 animationSpeed = 1;
 
 //Physics
@@ -31,8 +32,8 @@ damageCooldown = 400;
 vignetteFlashTimer = 90;
 shotZoomTimer = 8.75;
 walljumpDustTimer = 12;
-
 damageFlickerTimer = 17;
+
 colliding = true;
 infection = 0;
 maxhp = hp;
@@ -89,6 +90,7 @@ vignetteFlashTimerSave = vignetteFlashTimer;
 shotZoomTimerSave = shotZoomTimer;
 groundCollisionTimerSave = groundCollisionTimer;
 flipTimingSave = flipTiming;
+dashDelaySave = dashDelay;
 
 //Second Dualbarettas arm
 sprID = layer_sprite_create("BackgroundObjects", -1000, -1000, playerDualBarettas_spr);

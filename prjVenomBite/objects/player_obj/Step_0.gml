@@ -76,13 +76,18 @@ if (movement && !isZombie)
 		jump_scr();
 	}
 	//Dash
-	if (key_control && !isDashing)
+	if (key_control && !isDashing && dashDelay < 0)
 	{
 		if (horspeed > 0.3 || horspeed < -0.3)
 		{
 		    dash_scr();
 		}
 	}
+	if (dashDelay > 0)
+	{
+		dashDelay -= global.dt;
+	}
+	
 	if (!grounded && !onLadder && !huggingWall)
 	{
 		invincible = true;
