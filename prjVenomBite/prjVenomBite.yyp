@@ -207,6 +207,14 @@
             }
         },
         {
+            "Key": "0ce2fc74-7e70-4cfa-aeee-28c44a08cff9",
+            "Value": {
+                "id": "d6dc3bd1-e50f-4310-a3d4-86374c3e5932",
+                "resourcePath": "sprites\\key_spr\\key_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "0d0bd69a-659c-467b-b7aa-1e6280e37644",
             "Value": {
                 "id": "3f883fd8-256a-40a2-8fc7-77ee30b63761",
@@ -740,6 +748,14 @@
                 "id": "83a6e172-b3c8-41b3-b668-4bb97eb4940f",
                 "resourcePath": "views\\316d45cc-3188-4a0a-ad86-74b10ed4a3ab.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "3180294c-1d15-46ac-8e35-e2c00a64eba2",
+            "Value": {
+                "id": "7cda17d7-4b0c-4fb7-a0f7-49c07059b0cc",
+                "resourcePath": "sprites\\lockedDoorClosed_spr\\lockedDoorClosed_spr.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -2423,6 +2439,14 @@
             }
         },
         {
+            "Key": "91b1f503-55e1-4eb4-9c92-515e554cd771",
+            "Value": {
+                "id": "562d22c5-c318-43b0-a39c-9e28b8b8121f",
+                "resourcePath": "objects\\key_obj\\key_obj.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "91bcbb47-d5ff-4dcf-a4db-3c9f0854e4a9",
             "Value": {
                 "id": "131981af-1796-4c8b-8620-e6387461c5c8",
@@ -3111,6 +3135,14 @@
             }
         },
         {
+            "Key": "b712a561-0606-4219-b03d-03224d917da3",
+            "Value": {
+                "id": "488650c3-1308-4996-9457-e89231c1ce06",
+                "resourcePath": "sprites\\lockedDoorOpen_spr\\lockedDoorOpen_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "b7ab5432-afef-4392-830b-e10b7eadedd1",
             "Value": {
                 "id": "ce892106-6217-4ff8-9d48-774ab93a83e8",
@@ -3388,6 +3420,14 @@
                 "id": "9fde4e15-2a09-454e-818a-ce0422005ad1",
                 "resourcePath": "views\\c870b1d1-addf-4ff2-9243-5bff619edec5.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "c8daf687-121f-4477-b8e9-22813f25f414",
+            "Value": {
+                "id": "b0b60030-64b1-4e0b-9ff5-7b2289c6f2ae",
+                "resourcePath": "objects\\lockedDoorClosed_obj\\lockedDoorClosed_obj.yy",
+                "resourceType": "GMObject"
             }
         },
         {
