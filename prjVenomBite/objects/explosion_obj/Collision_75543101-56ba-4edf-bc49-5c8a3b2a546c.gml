@@ -1,5 +1,5 @@
 if (!dealtDamage)
 {
-	player_obj.hp -= explosionDamage;
+	other.hp -= explosionDamage;
 	dealtDamage = true;
 }

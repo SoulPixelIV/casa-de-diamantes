@@ -1,5 +1,5 @@
 if (!dealtDamage)
 {
-	enemy_obj.hp -= explosionDamage;
+	other.hp -= explosionDamage;
 	dealtDamage = true;
 }
