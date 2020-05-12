@@ -6,12 +6,12 @@ with (hitbox)
 }
 if (!dealtDamage)
 {
-	enemyTarget.hp -= 4;
+	enemyTarget.hp -= 25;
 	if (enemyTarget == zombieBucketGirl_obj)
 	{
 		if (enemyTarget.hpBucket != noone)
 		{
-			enemyTarget.hpBucket -= 9;
+			enemyTarget.hpBucket -= 15;
 		}
 	}
 	audio_play_sound(bucketHit_snd, 1, false);

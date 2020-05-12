@@ -6,12 +6,12 @@ with (hitbox)
 }
 if (!dealtDamage)
 {
-	enemyTarget.hp -= 2;
+	enemyTarget.hp -= 15;
 	if (enemyTarget == zombieBucketGirl_obj)
 	{
 		if (enemyTarget.hpBucket != noone)
 		{
-			enemyTarget.hpBucket -= 5;
+			enemyTarget.hpBucket -= 10;
 		}
 	}
 	dealtDamage = true;

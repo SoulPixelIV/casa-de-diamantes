@@ -131,7 +131,6 @@ with (bucketHitbox)
 	{
 		x = body.x;
 		y = body.y - 16;
-		//move_towards_point(body.x, body.y - 16, 3);
 	}
 }
 

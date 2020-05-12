@@ -11,7 +11,7 @@ if (!dealtDamage)
 	{
 		if (enemyTarget.hpBucket != noone)
 		{
-			enemyTarget.hpBucket -= 25;
+			enemyTarget.hpBucket -= 20;
 		}
 	}
 	audio_play_sound(bucketHit_snd, 1, false);
