@@ -2,7 +2,7 @@
 
 horspeed = 0;
 verspeed = 0;
-attackCooldown = 300;
+attackCooldown = 550;
 attackDelay = 50;
 hp = 225;
 level = 2;
@@ -11,6 +11,7 @@ damage = 40;
 playerSightMax = 196;
 playerSightMin = 0;
 
+bucketRemoved = false;
 delay = false;
 damageCollision = true;
 attackInProg = false;
@@ -25,7 +26,6 @@ savePosY = y;
 
 //Help Vars
 attackCooldownSave = attackCooldown;
-attackDelaySave = attackDelay;
 
 bucketHitbox = instance_create_layer(x, y - 16, "Instances", bucketHitbox_obj);
 with (bucketHitbox)

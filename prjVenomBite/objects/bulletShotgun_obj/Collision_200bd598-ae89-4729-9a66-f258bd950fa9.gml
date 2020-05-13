@@ -5,7 +5,7 @@ with (other)
 }
 if (!dealtDamage)
 {
-	enemyTarget.hpBucket -= 15;
+	enemyTarget.hpBucket -= 20;
 	dealtDamage = true;
 	audio_play_sound(bucketHit_snd, 1, false);
 	instance_destroy();

@@ -146,6 +146,7 @@ if (hpBucket < 0 && !playedSound)
 {
 	audio_play_sound(bucketBroken_snd, 1, false);
 	playedSound = true;
+	bucketRemoved = true;
 	sprite_index = zombieBucketGirlBroken_spr;
 	with (bucketHitbox)
 	{
@@ -156,9 +157,11 @@ if (hpBucket < 0 && !playedSound)
 //###Attack###
 
 //Cooldown
-if (!attackInProg && distance_to_object(player_obj) < 280)
+if (!attackInProg && distance_to_object(player_obj) < 280 && bucketRemoved)
 {
-	//attackCooldown -= global.dt;
+	attackCooldown -= global.dt;
+	movement = true;
+	sprite_index = zombieBucketGirlBroken_spr;
 }
 
 //Prepare Attack
@@ -171,26 +174,15 @@ if (attackCooldown < 0)
 }
 
 //Start Attack 1
-if (attackInProg)
-{
-	instance_create_layer(x, y - 4, "ForegroundObjects", dustParticle_obj);
-}
 if (attackInProg && image_index > image_number - 1)
 {
-	image_speed = 0;
-	//Throw projectiles
-}
-
-if (delay)
-{
-	attackDelay -= global.dt;
-}
-if (attackDelay < 0)
-{
-	delay = false;
-	attackDelay = attackDelaySave;
+	image_index = 0;
+	instance_create_layer(x + 10 * image_xscale, y - 10 * image_xscale, "ForegroundObjects", dustParticle_obj);
+	repeat(3)
+	{
+		var grenate = instance_create_layer(x + 10 * image_xscale, y, "Instances", flyingGrenate_obj);
+		grenate.horspeed = random_range(1.4, 2.6) * image_xscale;
+		grenate.verspeed = random_range(-0.2, -0.8);
+	}
 	attackInProg = false;
-	image_speed = 1;
-	sprite_index = zombieBucketGirl_spr;
-	movement = true;
 }

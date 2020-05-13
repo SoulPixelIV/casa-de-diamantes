@@ -591,6 +591,14 @@
             }
         },
         {
+            "Key": "26a1cc5f-7510-452a-9ad5-9773f927f10b",
+            "Value": {
+                "id": "9e38f148-fb59-40c9-be7c-acd7a5b98743",
+                "resourcePath": "objects\\flyingGrenate_obj\\flyingGrenate_obj.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "26d188ee-3c31-4023-bced-0beecdb7e053",
             "Value": {
                 "id": "153afafd-c3f2-4555-8d27-7f969785ca8d",
@@ -3075,6 +3083,14 @@
             "Value": {
                 "id": "fd726336-e1cd-44e5-8e53-a2b25f736105",
                 "resourcePath": "sprites\\trapdoor_spr\\trapdoor_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "b3c94608-2bf2-453f-8540-5afa904ab028",
+            "Value": {
+                "id": "e6abe9f1-a8fc-4e8e-a319-a33981527943",
+                "resourcePath": "sprites\\flyingGrenate_spr\\flyingGrenate_spr.yy",
                 "resourceType": "GMSprite"
             }
         },
