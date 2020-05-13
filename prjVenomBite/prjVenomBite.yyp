@@ -4359,6 +4359,14 @@
             }
         },
         {
+            "Key": "fc987c9c-fb8a-4e67-b7d9-3a79e78b19b6",
+            "Value": {
+                "id": "f34b0d8c-9ce1-4e1c-a7a6-134ab17c5290",
+                "resourcePath": "sprites\\zombieBucketGirlAttack1_spr\\zombieBucketGirlAttack1_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "fca987a2-e73a-4d53-846f-55fb9a9fd528",
             "Value": {
                 "id": "c345e5cb-c991-40a4-91f4-1c77f30c6cd8",

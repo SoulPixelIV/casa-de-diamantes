@@ -7,7 +7,7 @@ dirLookat = point_direction(x, y, player_obj.x, player_obj.y);
 
 if (movement)
 {
-	if (distance_to_object(player_obj) < 128 && distance_to_object(player_obj) > 16)
+	if (distance_to_object(player_obj) < playerSightMax && distance_to_object(player_obj) > playerSightMin)
 	{
 		if (player_obj.x > x)
 		{
@@ -27,6 +27,13 @@ if (movement)
 		}
 	}
 	else
+	{
+		horspeed = 0;
+	}
+}
+else
+{
+	if (!attackInProg)
 	{
 		horspeed = 0;
 	}
@@ -146,3 +153,44 @@ if (hpBucket < 0 && !playedSound)
 	}
 }
 
+//###Attack###
+
+//Cooldown
+if (!attackInProg && distance_to_object(player_obj) < 280)
+{
+	//attackCooldown -= global.dt;
+}
+
+//Prepare Attack
+if (attackCooldown < 0)
+{
+	sprite_index = zombieBucketGirlAttack1_spr;
+	movement = false;
+	attackInProg = true;
+	attackCooldown = attackCooldownSave;
+}
+
+//Start Attack 1
+if (attackInProg)
+{
+	instance_create_layer(x, y - 4, "ForegroundObjects", dustParticle_obj);
+}
+if (attackInProg && image_index > image_number - 1)
+{
+	image_speed = 0;
+	//Throw projectiles
+}
+
+if (delay)
+{
+	attackDelay -= global.dt;
+}
+if (attackDelay < 0)
+{
+	delay = false;
+	attackDelay = attackDelaySave;
+	attackInProg = false;
+	image_speed = 1;
+	sprite_index = zombieBucketGirl_spr;
+	movement = true;
+}
