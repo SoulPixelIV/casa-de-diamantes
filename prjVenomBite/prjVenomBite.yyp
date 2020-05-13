@@ -823,6 +823,14 @@
             }
         },
         {
+            "Key": "357fb2e7-0376-4acf-831f-bdca9973b5d8",
+            "Value": {
+                "id": "b746539a-567c-49b7-a80b-d659220f36db",
+                "resourcePath": "sprites\\bluecubex16_spr\\bluecubex16_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "359e8d9f-b7d6-4ae8-bd96-47e8529f8191",
             "Value": {
                 "id": "aabddcf2-a875-418c-8048-640e8f5ed736",

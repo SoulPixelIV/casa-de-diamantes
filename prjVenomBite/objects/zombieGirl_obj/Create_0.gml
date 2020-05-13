@@ -11,7 +11,7 @@ moneyDropMin = 1;
 moneyDropMax = 4;
 damage = 35;
 playerSightMax = 128;
-playerSightMin = 16;
+playerSightMin = 8;
 
 savePosX = x;
 savePosY = y;
