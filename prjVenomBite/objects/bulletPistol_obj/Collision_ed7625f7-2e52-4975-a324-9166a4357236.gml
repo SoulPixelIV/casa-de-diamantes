@@ -12,6 +12,7 @@ if (hitbox != noone)
 	{
 		if (enemyTarget != noone)
 		{
+			enemyTarget.damageTint = true;
 			enemyTarget.hp -= 20;
 		}
 		instance_create_layer(x, y, "Instances", bloodSpread_obj);

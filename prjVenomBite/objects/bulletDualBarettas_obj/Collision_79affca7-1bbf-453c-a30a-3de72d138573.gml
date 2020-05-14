@@ -12,6 +12,7 @@ if (hitbox != noone)
 	{
 		if (enemyTarget != noone)
 		{
+			enemyTarget.damageTint = true;
 			enemyTarget.hp -= 20;
 		}
 		penetration--;
