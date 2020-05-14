@@ -3863,6 +3863,14 @@
             }
         },
         {
+            "Key": "de0c12c1-2e34-4ee3-9d7d-7c89e228bf9f",
+            "Value": {
+                "id": "5e1f5e7e-6506-46de-b99d-0c2553e04404",
+                "resourcePath": "objects\\deathCross_obj\\deathCross_obj.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "de8361f0-b6c1-43af-b51c-317511e9b41f",
             "Value": {
                 "id": "e6bff460-2ef4-417f-9705-51973e6e6421",
@@ -3948,6 +3956,14 @@
                 "id": "f624fc60-7a79-409e-ad9f-62760bdb2e7e",
                 "resourcePath": "sounds\\bulletHit_snd\\bulletHit_snd.yy",
                 "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "e2f2babd-8a33-4292-83c5-64626a16a418",
+            "Value": {
+                "id": "18a5f485-890a-44a9-846a-be225addddb9",
+                "resourcePath": "sprites\\deathCross_spr\\deathCross_spr.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

@@ -86,6 +86,7 @@ else
 //###Death###
 if (hp < 0)
 {
+	instance_create_layer(x, y, "ForegroundObjects", deathCross_obj);
 	with (headshotHitbox)
 	{
 		instance_destroy();
