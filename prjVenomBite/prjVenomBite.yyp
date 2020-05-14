@@ -191,6 +191,14 @@
             }
         },
         {
+            "Key": "0c85cc95-2b4c-4531-a99f-c004f1983f84",
+            "Value": {
+                "id": "798bc37d-831c-45db-81d4-9915a57bd25b",
+                "resourcePath": "sounds\\moan2_snd\\moan2_snd.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "0c8941dd-1539-4a5f-8a7f-85f59de1d437",
             "Value": {
                 "id": "35d8361d-6991-4e8a-85f7-5557d4545df1",
@@ -3116,6 +3124,14 @@
                 "id": "bbf1e607-ccf4-4627-9d8a-b54e1efe2a8d",
                 "resourcePath": "views\\b57b4d2e-7415-4986-85fd-c25666da3915.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "b5b628c7-6ede-4b3b-994a-ffde7dbe57a8",
+            "Value": {
+                "id": "64a8a606-87c9-44af-9a0a-eda6261a04bd",
+                "resourcePath": "sounds\\moan1_snd\\moan1_snd.yy",
+                "resourceType": "GMSound"
             }
         },
         {

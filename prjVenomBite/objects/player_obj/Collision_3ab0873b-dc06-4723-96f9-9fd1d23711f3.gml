@@ -23,5 +23,9 @@ if (!damageRecieved && !isZombie && !invincible)
 		hp -= other.damage;
 		damageCooldown = damageCooldownSave;
 		damageRecieved = true;
+		if (!audio_is_playing(moan1_snd) && !audio_is_playing(moan2_snd))
+		{
+			audio_play_sound(choose(moan1_snd, moan2_snd), 1, false);
+		}
 	}
 }
