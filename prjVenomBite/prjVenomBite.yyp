@@ -551,6 +551,14 @@
             }
         },
         {
+            "Key": "232872d0-2421-44ae-a136-19aec9d66f24",
+            "Value": {
+                "id": "e736e048-c5a0-40d3-a466-ce4076ec4fad",
+                "resourcePath": "sprites\\zombieBucketGirlFlash_spr\\zombieBucketGirlFlash_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "23ca3f87-6215-49de-a611-16f29b6f9502",
             "Value": {
                 "id": "16936925-bd78-4a9a-9660-0992e5d71772",
@@ -2383,6 +2391,14 @@
             }
         },
         {
+            "Key": "8ca9dc55-db8d-4921-a190-f4f11dcf8797",
+            "Value": {
+                "id": "1173c72b-171e-4727-9ed0-1de5afa4253d",
+                "resourcePath": "sprites\\zombieGirlFlash_spr\\zombieGirlFlash_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "8cd24f7f-5784-4cb6-a109-370956343c6f",
             "Value": {
                 "id": "0f3b43eb-7ca2-4d42-ba15-e3f2159d6c0a",
@@ -4148,6 +4164,14 @@
                 "id": "3fe1d23a-15b4-414a-9260-93889722f0a6",
                 "resourcePath": "objects\\cardTest_obj\\cardTest_obj.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "ebaaa393-0ce2-493e-b1f7-c5cc5876d55d",
+            "Value": {
+                "id": "052ec14c-3765-4136-b555-6aafb2b43478",
+                "resourcePath": "sprites\\zombieSoldierGirlFlash_spr\\zombieSoldierGirlFlash_spr.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

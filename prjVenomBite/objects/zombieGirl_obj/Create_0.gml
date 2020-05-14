@@ -30,10 +30,13 @@ knockback = 2;
 movSpeed = 0.15;
 movement = true;
 gravityStrength = -0.05;
+damageTint = false;
+damageTintTimer = 15;
 
 //Help Vars
 attackCooldownSave = attackCooldown;
 attackDelaySave = attackDelay;
+damageTintTimerSave = damageTintTimer;
 
 headshotHitbox = instance_create_layer(x, y - 16, "Instances", headshotHitbox_obj);
 with (headshotHitbox)

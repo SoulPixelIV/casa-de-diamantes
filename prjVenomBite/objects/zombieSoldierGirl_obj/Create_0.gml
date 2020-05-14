@@ -20,8 +20,11 @@ savePosY = y;
 randAttack = 1;
 attackInProg1 = false;
 attackInProg2 = false;
+damageTint = false;
+damageTintTimer = 15;
 
 attackCooldownSave = attackCooldown;
+damageTintTimerSave = damageTintTimer;
 
 headshotHitbox = instance_create_layer(x, y - 16, "Instances", headshotHitbox_obj);
 with (headshotHitbox)

@@ -250,3 +250,15 @@ if (attackDelay < 0)
 	movement = true;
 	spawnedHitbox = false;
 }
+
+if (damageTint)
+{
+	sprite_index = zombieGirlFlash_spr;
+	damageTintTimer -= global.dt;
+}
+if (damageTintTimer < 0)
+{
+	sprite_index = zombieGirl_spr;
+	damageTintTimer = damageTintTimerSave;
+	damageTint = false;
+}

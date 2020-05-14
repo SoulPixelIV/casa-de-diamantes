@@ -197,3 +197,14 @@ if (attackCooldown < 0 && attackInProg2)
 	randAttack = choose(1,2);
 }
 
+if (damageTint)
+{
+	sprite_index = zombieSoldierGirlFlash_spr;
+	damageTintTimer -= global.dt;
+}
+if (damageTintTimer < 0)
+{
+	sprite_index = zombieSoldierGirl_spr;
+	damageTintTimer = damageTintTimerSave;
+	damageTint = false;
+}

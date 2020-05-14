@@ -187,3 +187,15 @@ if (attackInProg && image_index > image_number - 1)
 	}
 	attackInProg = false;
 }
+
+if (damageTint)
+{
+	sprite_index = zombieBucketGirlFlash_spr;
+	damageTintTimer -= global.dt;
+}
+if (damageTintTimer < 0)
+{
+	sprite_index = zombieBucketGirl_spr;
+	damageTintTimer = damageTintTimerSave;
+	damageTint = false;
+}

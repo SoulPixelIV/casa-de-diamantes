@@ -23,9 +23,12 @@ gravityStrength = -0.05;
 movement = true;
 savePosX = x;
 savePosY = y;
+damageTint = false;
+damageTintTimer = 15;
 
 //Help Vars
 attackCooldownSave = attackCooldown;
+damageTintTimerSave = damageTintTimer;
 
 bucketHitbox = instance_create_layer(x, y - 16, "Instances", bucketHitbox_obj);
 with (bucketHitbox)
