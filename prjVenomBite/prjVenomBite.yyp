@@ -1991,6 +1991,14 @@
             }
         },
         {
+            "Key": "79848eda-5765-41ec-b799-5403567cb1ef",
+            "Value": {
+                "id": "6965d97d-e0b8-4304-8419-db832f04f2c7",
+                "resourcePath": "sounds\\deathCross_snd\\deathCross_snd.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "7a15b9f1-155e-4d54-aab0-c16d072db503",
             "Value": {
                 "id": "e53a5adc-a741-4a8f-af26-b2737e21341e",

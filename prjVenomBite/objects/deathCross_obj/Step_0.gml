@@ -1,10 +1,10 @@
 if (image_xscale > 1)
 {
-	image_xscale -= global.dt / 40;
+	image_xscale -= global.dt / 35;
 }
 if (image_yscale > 1)
 {
-	image_yscale -= global.dt / 40;
+	image_yscale -= global.dt / 35;
 }
 
 if (image_alpha < 1 && !vanish)
