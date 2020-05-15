@@ -28,7 +28,8 @@ if (movement && !wallJumping && !isDashing)
 		}
 		if (!audio_is_playing(walk1_snd) && !audio_is_playing(walk2_snd) && grounded)
 		{
-			audio_play_sound(choose(walk1_snd, walk2_snd), 1, false);
+			var walksnd = audio_play_sound(choose(walk1_snd, walk2_snd), 1, false);
+			audio_sound_pitch(walksnd, random_range(0.9, 1.1));
 		}
 	}
 	if (key_left && !key_right)

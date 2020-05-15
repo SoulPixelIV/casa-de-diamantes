@@ -2,8 +2,8 @@ if (argument0 == "pistol")
 {
 	if (global.pistolAmmo > 0)
 	{
-		audio_sound_pitch(pistolShot_snd, random_range(0.9, 1.1));
-		audio_play_sound(pistolShot_snd, 1, false);
+		var pistolShot = audio_play_sound(pistolShot_snd, 1, false);
+		audio_sound_pitch(pistolShot, random_range(0.9, 1.1));
 		
 		var shotLightx = x + lengthdir_x(24, dirCursor);
 		var shotLighty = y - 8 + lengthdir_y(24, dirCursor);
@@ -35,8 +35,8 @@ if (argument0 == "dualBarettas")
 {
 	if (global.dualBarettasAmmo > 0)
 	{
-		audio_sound_pitch(dualBarettasShot_snd, random_range(0.9, 1.1));
-		audio_play_sound(dualBarettasShot_snd, 1, false);
+		var barettaShot = audio_play_sound(dualBarettasShot_snd, 1, false);
+		audio_sound_pitch(barettaShot, random_range(0.9, 1.1));
 		
 		var shotLightx = x + lengthdir_x(24, dirCursor);
 		var shotLighty = y - 8 + lengthdir_y(24, dirCursor);
@@ -71,9 +71,8 @@ if (argument0 == "shotgun")
 {
 	if (global.shotgunAmmo > 0)
 	{
-		audio_sound_pitch(shotgunShot_snd, random_range(0.9, 1.1));
-		audio_play_sound(shotgunShot_snd, 1, false);
-		
+		var shotgunShot = audio_play_sound(shotgunShot_snd, 1, false);
+		audio_sound_pitch(shotgunShot, random_range(0.9, 1.1));		
 		
 		var shotLightx = x + lengthdir_x(24, dirCursor);
 		var shotLighty = y - 8 + lengthdir_y(24, dirCursor);
