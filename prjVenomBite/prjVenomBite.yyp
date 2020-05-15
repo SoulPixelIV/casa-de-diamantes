@@ -1199,6 +1199,14 @@
             }
         },
         {
+            "Key": "44acc44a-b99d-4b2f-a7b3-0d11a4fee6de",
+            "Value": {
+                "id": "20ef0746-b5ec-41a3-a0c1-4625610bf101",
+                "resourcePath": "sprites\\railwayFalling_spr\\railwayFalling_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "44d7f04b-3b18-4620-b33c-6aa314e17d60",
             "Value": {
                 "id": "c234c732-376d-43e0-8d1f-cd30030cb59f",
@@ -3556,6 +3564,14 @@
                 "id": "29ce4ff7-770b-499d-a519-76787b62c3af",
                 "resourcePath": "sprites\\desinfectionDoor_spr\\desinfectionDoor_spr.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "cc16ad0f-2a14-4809-af8c-cd12f08a18a2",
+            "Value": {
+                "id": "04b004e6-d6f6-47ee-bc6b-100adda6ea84",
+                "resourcePath": "objects\\railwayFalling_obj\\railwayFalling_obj.yy",
+                "resourceType": "GMObject"
             }
         },
         {
