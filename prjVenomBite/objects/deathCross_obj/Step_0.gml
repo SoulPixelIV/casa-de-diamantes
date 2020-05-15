@@ -19,7 +19,7 @@ if (image_alpha > 0.98)
 
 if (vanish)
 {
-	image_alpha -= global.dt / 400;
+	image_alpha -= global.dt / 200;
 	if (image_alpha < 0.02)
 	{
 		instance_destroy();
