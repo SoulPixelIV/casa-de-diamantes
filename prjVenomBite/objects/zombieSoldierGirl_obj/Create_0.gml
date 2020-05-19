@@ -15,6 +15,7 @@ movSpeed = 0.08;
 playedSound = false;
 movement = true;
 gravityStrength = -0.05;
+dir = 0;
 savePosX = x;
 savePosY = y;
 randAttack = 1;

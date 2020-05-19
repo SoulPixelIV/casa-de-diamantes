@@ -32,10 +32,28 @@ if (movement)
 	}
 }
 
-//Gravity
-if (verspeed < 2)
+//Jetpack
+if (dir == 0)
 {
-	verspeed -= gravityStrength * global.dt;
+	if (verspeed > -0.2)
+	{
+		verspeed -= global.dt / 800;
+	}
+	if (verspeed <= -0.2)
+	{
+		dir = 1;
+	}
+}
+else
+{
+	if (verspeed < 0.2)
+	{
+		verspeed += global.dt / 800;
+	}
+	if (verspeed >= 0.2)
+	{
+		dir = 0;
+	}
 }
 
 //Collision
