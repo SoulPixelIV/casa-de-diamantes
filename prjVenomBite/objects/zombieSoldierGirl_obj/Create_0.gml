@@ -23,6 +23,7 @@ attackInProg1 = false;
 attackInProg2 = false;
 damageTint = false;
 damageTintTimer = 15;
+animationSpeed = 1;
 
 attackCooldownSave = attackCooldown;
 damageTintTimerSave = damageTintTimer;

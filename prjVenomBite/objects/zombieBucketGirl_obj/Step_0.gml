@@ -45,6 +45,10 @@ if (verspeed < 2)
 	verspeed -= gravityStrength * global.dt;
 }
 
+//Animation
+image_speed = 0;
+image_index += (global.dt / 15) * animationSpeed;
+
 //Collision
 //horspeed
 if (!place_free(x + (horspeed * global.dt), y))

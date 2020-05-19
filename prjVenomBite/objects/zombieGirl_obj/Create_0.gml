@@ -13,6 +13,7 @@ damage = 35;
 playerSightMax = 128;
 playerSightMin = 8;
 
+animationSpeed = 0.5;
 savePosX = x;
 savePosY = y;
 attackCooldown = 300;

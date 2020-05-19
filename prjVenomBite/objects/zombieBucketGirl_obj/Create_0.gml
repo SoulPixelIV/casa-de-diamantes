@@ -11,6 +11,7 @@ damage = 40;
 playerSightMax = 196;
 playerSightMin = 0;
 
+animationSpeed = 0.5;
 bucketRemoved = false;
 delay = false;
 damageCollision = true;
