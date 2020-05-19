@@ -338,7 +338,7 @@
             "Key": "13fbf43a-c4c8-45f8-b617-a337e2eb6e5b",
             "Value": {
                 "id": "83a5cbfe-5be2-4c4e-bacd-79d644d30599",
-                "resourcePath": "rooms\\level1_RoadToCasino\\level1_RoadToCasino.yy",
+                "resourcePath": "rooms\\OLDlevel1_RoadToCasino\\OLDlevel1_RoadToCasino.yy",
                 "resourceType": "GMRoom"
             }
         },
@@ -1015,6 +1015,14 @@
             }
         },
         {
+            "Key": "3ce44b82-a11d-46eb-91fb-a3e927f867ea",
+            "Value": {
+                "id": "5eea403c-6266-46a6-abf7-77fdc513c6e1",
+                "resourcePath": "sprites\\syringeStatic_spr\\syringeStatic_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "3d67f1ee-47bb-47ef-b053-d69d5a4b66a8",
             "Value": {
                 "id": "1b86bbc3-7b4b-4c3b-9702-b57b205fd428",
@@ -1410,7 +1418,7 @@
             "Key": "55b1af09-b458-413f-9115-a6ce1bc80c85",
             "Value": {
                 "id": "902607a5-c43d-43db-ae51-669e79ea181a",
-                "resourcePath": "rooms\\level2_CasinoHub\\level2_CasinoHub.yy",
+                "resourcePath": "rooms\\OLDlevel2_CasinoHub\\OLDlevel2_CasinoHub.yy",
                 "resourceType": "GMRoom"
             }
         },
@@ -1959,6 +1967,14 @@
             }
         },
         {
+            "Key": "7748e348-8fe9-482e-bdf2-ee023d48143e",
+            "Value": {
+                "id": "d1ef41b0-d6b1-409f-8171-e0515587d556",
+                "resourcePath": "rooms\\level1_RoadToCasino\\level1_RoadToCasino.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "77cfa0e1-8ee7-4df1-a445-2921b25916b8",
             "Value": {
                 "id": "8585e3d8-851d-4882-8865-e9372fdbbf6a",
@@ -1971,6 +1987,14 @@
             "Value": {
                 "id": "82cf03a4-2630-4c01-9b56-015ef772e57a",
                 "resourcePath": "objects\\explosionSmall_obj\\explosionSmall_obj.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "78699ab5-611d-4333-aa8b-7e7e2085ac46",
+            "Value": {
+                "id": "ce1e1b7a-5735-422a-8940-f4a9ffc5df0a",
+                "resourcePath": "objects\\syringeStatic_obj\\syringeStatic_obj.yy",
                 "resourceType": "GMObject"
             }
         },

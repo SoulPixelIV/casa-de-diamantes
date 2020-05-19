@@ -1,6 +1,6 @@
 
 {
-    "name": "level2_CasinoHub",
+    "name": "OLDlevel2_CasinoHub",
     "id": "55b1af09-b458-413f-9115-a6ce1bc80c85",
     "creationCodeFile": "",
     "inheritCode": false,
@@ -390,7 +390,7 @@
             "m_serialiseFrozen": false,
             "modelName": "GMRTileLayer",
             "prev_tileheight": 32,
-            "prev_tilewidth": 64,
+            "prev_tilewidth": 32,
             "mvc": "1.0",
             "tiles": {
                 "SerialiseData": null,
