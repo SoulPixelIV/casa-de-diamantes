@@ -1,9 +1,12 @@
 if (follow != noone)
 {
-	xTo = follow.x;
-	if ((follow.y - 16) < y - 86 || (follow.y - 16) > y + 64)
+	if (instance_exists(follow))
 	{
-		yTo = follow.y - 16;
+		xTo = follow.x;
+		if ((follow.y - 16) < y - 86 || (follow.y - 16) > y + 64)
+		{
+			yTo = follow.y - 16;
+		}
 	}
 }
 
