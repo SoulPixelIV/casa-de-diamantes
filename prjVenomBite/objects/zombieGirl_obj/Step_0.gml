@@ -156,11 +156,8 @@ if (hp < 0)
 //Headshot Hitbox
 with (headshotHitbox)
 {
-	if (x != body.x && y != body.y)
-	{
-		x = body.x;
-		y = body.y - 16;
-	}
+	x = body.x;
+	y = body.y - 16;
 }
 
 //###Attack###

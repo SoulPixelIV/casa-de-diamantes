@@ -1,5 +1,5 @@
 {
-    "id": "95b698cb-89f1-486f-90e5-d4fffd3f9a53",
+    "id": "be168c7d-fe27-4542-a8f3-1c8a80930770",
     "modelName": "GMSprite",
     "mvc": "1.12",
     "name": "zombieSoldierGirlAim_spr",
@@ -16,24 +16,68 @@
     "edgeFiltering": false,
     "frames": [
         {
-            "id": "71a8e6fe-fbd5-4d57-80b0-23d3edb7cc15",
+            "id": "642f2713-1b3f-4543-bd30-e1020b736122",
             "modelName": "GMSpriteFrame",
             "mvc": "1.0",
-            "SpriteId": "95b698cb-89f1-486f-90e5-d4fffd3f9a53",
+            "SpriteId": "be168c7d-fe27-4542-a8f3-1c8a80930770",
             "compositeImage": {
-                "id": "80f28a8f-51bf-4ff1-a053-f68fc35358b9",
+                "id": "952e5431-396a-43e1-a02b-d66a9a0c6099",
                 "modelName": "GMSpriteImage",
                 "mvc": "1.0",
-                "FrameId": "71a8e6fe-fbd5-4d57-80b0-23d3edb7cc15",
+                "FrameId": "642f2713-1b3f-4543-bd30-e1020b736122",
                 "LayerId": "00000000-0000-0000-0000-000000000000"
             },
             "images": [
                 {
-                    "id": "9132e159-30fb-4774-bfd0-57f0caa48792",
+                    "id": "cd26516b-6566-4a61-aaa5-2b5d3d03d007",
                     "modelName": "GMSpriteImage",
                     "mvc": "1.0",
-                    "FrameId": "71a8e6fe-fbd5-4d57-80b0-23d3edb7cc15",
-                    "LayerId": "dab1f6d5-5371-4ce0-99b1-d0e0b3230279"
+                    "FrameId": "642f2713-1b3f-4543-bd30-e1020b736122",
+                    "LayerId": "1632725d-e1ee-41dc-b38f-a67d4d087597"
+                }
+            ]
+        },
+        {
+            "id": "4f88b631-9fea-4473-826e-22758348f1b5",
+            "modelName": "GMSpriteFrame",
+            "mvc": "1.0",
+            "SpriteId": "be168c7d-fe27-4542-a8f3-1c8a80930770",
+            "compositeImage": {
+                "id": "7e9eaa40-c796-4e41-8f94-408c7bc08fca",
+                "modelName": "GMSpriteImage",
+                "mvc": "1.0",
+                "FrameId": "4f88b631-9fea-4473-826e-22758348f1b5",
+                "LayerId": "00000000-0000-0000-0000-000000000000"
+            },
+            "images": [
+                {
+                    "id": "edcfbbe2-eecb-4305-b63d-d7842baa2ca8",
+                    "modelName": "GMSpriteImage",
+                    "mvc": "1.0",
+                    "FrameId": "4f88b631-9fea-4473-826e-22758348f1b5",
+                    "LayerId": "1632725d-e1ee-41dc-b38f-a67d4d087597"
+                }
+            ]
+        },
+        {
+            "id": "80be51bf-acb2-4f68-b3f0-1ca6a09378e8",
+            "modelName": "GMSpriteFrame",
+            "mvc": "1.0",
+            "SpriteId": "be168c7d-fe27-4542-a8f3-1c8a80930770",
+            "compositeImage": {
+                "id": "219b4efe-1f96-466c-9159-a092589473b3",
+                "modelName": "GMSpriteImage",
+                "mvc": "1.0",
+                "FrameId": "80be51bf-acb2-4f68-b3f0-1ca6a09378e8",
+                "LayerId": "00000000-0000-0000-0000-000000000000"
+            },
+            "images": [
+                {
+                    "id": "837fd411-d360-4801-a0e6-2e8194ddd921",
+                    "modelName": "GMSpriteImage",
+                    "mvc": "1.0",
+                    "FrameId": "80be51bf-acb2-4f68-b3f0-1ca6a09378e8",
+                    "LayerId": "1632725d-e1ee-41dc-b38f-a67d4d087597"
                 }
             ]
         }
@@ -43,10 +87,10 @@
     "height": 52,
     "layers": [
         {
-            "id": "dab1f6d5-5371-4ce0-99b1-d0e0b3230279",
+            "id": "1632725d-e1ee-41dc-b38f-a67d4d087597",
             "modelName": "GMImageLayer",
             "mvc": "1.0",
-            "SpriteId": "95b698cb-89f1-486f-90e5-d4fffd3f9a53",
+            "SpriteId": "be168c7d-fe27-4542-a8f3-1c8a80930770",
             "blendMode": 0,
             "isLocked": false,
             "name": "default",
@@ -56,7 +100,7 @@
     ],
     "origin": 9,
     "originLocked": false,
-    "playbackSpeed": 1,
+    "playbackSpeed": 5,
     "playbackSpeedType": 0,
     "premultiplyAlpha": false,
     "sepmasks": false,

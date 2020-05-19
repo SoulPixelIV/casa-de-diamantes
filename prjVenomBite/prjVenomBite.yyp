@@ -2567,14 +2567,6 @@
             }
         },
         {
-            "Key": "95b698cb-89f1-486f-90e5-d4fffd3f9a53",
-            "Value": {
-                "id": "8395369f-b64e-4e1c-865f-c0504f1281c7",
-                "resourcePath": "sprites\\zombieSoldierGirlAim_spr\\zombieSoldierGirlAim_spr.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "96060c03-375a-453e-962b-324748aad49e",
             "Value": {
                 "id": "e9cf4893-7a0d-4787-a63c-4ecbb2afbd32",
@@ -3319,6 +3311,14 @@
             }
         },
         {
+            "Key": "be168c7d-fe27-4542-a8f3-1c8a80930770",
+            "Value": {
+                "id": "2c3e2ebb-1a87-402f-897d-dcfa96add2ad",
+                "resourcePath": "sprites\\zombieSoldierGirlAim_spr\\zombieSoldierGirlAim_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "be1d2f37-b012-412b-b138-bcb865f3b813",
             "Value": {
                 "id": "91da8443-71b6-4f41-9572-2ec30b28cbf8",
@@ -3935,6 +3935,14 @@
             }
         },
         {
+            "Key": "dea7cf61-4064-4519-9fe9-0c19d4c5ba56",
+            "Value": {
+                "id": "d7d9f183-69cd-40f5-9478-0af2d940cbcf",
+                "resourcePath": "sprites\\zombieSoldierGirlFlash_spr\\zombieSoldierGirlFlash_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "defa5a9f-7ba1-4afe-90bb-71d299d6a0f2",
             "Value": {
                 "id": "661f327c-26e3-4aad-915f-d6ef78f0c7a5",
@@ -4180,14 +4188,6 @@
                 "id": "3fe1d23a-15b4-414a-9260-93889722f0a6",
                 "resourcePath": "objects\\cardTest_obj\\cardTest_obj.yy",
                 "resourceType": "GMObject"
-            }
-        },
-        {
-            "Key": "ebaaa393-0ce2-493e-b1f7-c5cc5876d55d",
-            "Value": {
-                "id": "052ec14c-3765-4136-b555-6aafb2b43478",
-                "resourcePath": "sprites\\zombieSoldierGirlFlash_spr\\zombieSoldierGirlFlash_spr.yy",
-                "resourceType": "GMSprite"
             }
         },
         {

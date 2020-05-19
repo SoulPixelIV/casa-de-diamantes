@@ -1,5 +1,5 @@
 {
-    "id": "ebaaa393-0ce2-493e-b1f7-c5cc5876d55d",
+    "id": "dea7cf61-4064-4519-9fe9-0c19d4c5ba56",
     "modelName": "GMSprite",
     "mvc": "1.12",
     "name": "zombieSoldierGirlFlash_spr",
@@ -16,24 +16,24 @@
     "edgeFiltering": false,
     "frames": [
         {
-            "id": "c42cddb7-863a-41eb-a3ff-add4850cd052",
+            "id": "f8a35383-9f74-42fe-8196-abb4c4564f7a",
             "modelName": "GMSpriteFrame",
             "mvc": "1.0",
-            "SpriteId": "ebaaa393-0ce2-493e-b1f7-c5cc5876d55d",
+            "SpriteId": "dea7cf61-4064-4519-9fe9-0c19d4c5ba56",
             "compositeImage": {
-                "id": "38076c27-0f23-4fac-93c5-408c226c097d",
+                "id": "4ee1727e-e382-4742-908c-a92586037c50",
                 "modelName": "GMSpriteImage",
                 "mvc": "1.0",
-                "FrameId": "c42cddb7-863a-41eb-a3ff-add4850cd052",
+                "FrameId": "f8a35383-9f74-42fe-8196-abb4c4564f7a",
                 "LayerId": "00000000-0000-0000-0000-000000000000"
             },
             "images": [
                 {
-                    "id": "ab887866-4c85-4d01-93b5-16831caf5353",
+                    "id": "67a24c89-31b8-4e63-9d03-69db9f72bf2e",
                     "modelName": "GMSpriteImage",
                     "mvc": "1.0",
-                    "FrameId": "c42cddb7-863a-41eb-a3ff-add4850cd052",
-                    "LayerId": "2e0b57c7-4b92-4721-b551-aea6f5fe48d3"
+                    "FrameId": "f8a35383-9f74-42fe-8196-abb4c4564f7a",
+                    "LayerId": "76d6aa03-f4cd-4063-8b73-e7fae8deaf36"
                 }
             ]
         }
@@ -43,10 +43,10 @@
     "height": 52,
     "layers": [
         {
-            "id": "2e0b57c7-4b92-4721-b551-aea6f5fe48d3",
+            "id": "76d6aa03-f4cd-4063-8b73-e7fae8deaf36",
             "modelName": "GMImageLayer",
             "mvc": "1.0",
-            "SpriteId": "ebaaa393-0ce2-493e-b1f7-c5cc5876d55d",
+            "SpriteId": "dea7cf61-4064-4519-9fe9-0c19d4c5ba56",
             "blendMode": 0,
             "isLocked": false,
             "name": "default",
@@ -56,7 +56,7 @@
     ],
     "origin": 9,
     "originLocked": false,
-    "playbackSpeed": 1,
+    "playbackSpeed": 5,
     "playbackSpeedType": 0,
     "premultiplyAlpha": false,
     "sepmasks": false,
