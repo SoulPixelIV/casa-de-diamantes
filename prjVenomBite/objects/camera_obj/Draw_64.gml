@@ -12,8 +12,8 @@ draw_set_alpha(1);
 
 if (zombiespikeEffectBorder > 0 && player_obj.plagueTransformation)
 {
-	zombiespikeEffectBorder -= 0.06;
-	zombiespikeBorderTransparent += 0.00012;
+	zombiespikeEffectBorder -= global.dt / 800;
+	zombiespikeBorderTransparent += global.dt / 800;
 }
 
 //Lens Dirt + Vignette
