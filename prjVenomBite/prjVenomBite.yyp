@@ -2207,6 +2207,14 @@
             }
         },
         {
+            "Key": "81df3bdc-b870-4980-9614-5fe19c75aa17",
+            "Value": {
+                "id": "43f3cffd-d61b-42e4-84e1-cbace3229715",
+                "resourcePath": "sprites\\checkpoint_spr\\checkpoint_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "81f49802-35f8-4710-99f9-92489bcae030",
             "Value": {
                 "id": "b5df9856-4cb4-4701-accf-8f74c9dd7dfb",
@@ -3930,7 +3938,7 @@
             "Key": "dad31fbb-438f-4238-b8d4-3d2bf3d2ce02",
             "Value": {
                 "id": "fa49b236-14df-40c2-b5a0-663bb53a45bd",
-                "resourcePath": "sprites\\checkpoint_spr\\checkpoint_spr.yy",
+                "resourcePath": "sprites\\checkpointOLD_spr\\checkpointOLD_spr.yy",
                 "resourceType": "GMSprite"
             }
         },
