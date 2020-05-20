@@ -60,7 +60,7 @@ else
 
 if (!noHUD)
 {
-	draw_set_font(standard_fnt);
+	draw_set_font(global.optixFont);
 	draw_set_color(c_white);
 	//Debug
 	draw_text_colour(32, 624, "Framerate: " + string(fps_real), c_white, c_white, c_white, c_white, 1);
@@ -145,15 +145,17 @@ draw_set_alpha(1);
 //Infectiontext
 if (drawInfectionText)
 {
-	draw_set_font(neonHuge_fnt);
+	draw_set_font(global.optixFontHuge);
 	draw_set_color(c_red);
-	draw_text(256, 128, "PRESS 'R' TO INFECT YOURSELF!");
+	draw_text(312, 128, "PRESS 'R' TO INFECT YOURSELF!");
+	draw_text(312, 164, "PRESS 'Q' TO DIE INSTANTLY!");
 }
 if (player_obj.isZombie)
 {
-	draw_set_font(neonHuge_fnt);
+	draw_set_font(global.optixFontHuge);
 	draw_set_color(c_red);
 	draw_text(128, 128, "PRESS 'F' TO BECOME HUMAN AGAIN!");
+	draw_text(312, 164, "PRESS 'Q' TO DIE INSTANTLY!");
 }
 
 //#####LAYER 3#####

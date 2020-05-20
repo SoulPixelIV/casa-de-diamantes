@@ -2551,6 +2551,14 @@
             }
         },
         {
+            "Key": "923f2529-0890-4369-b53f-0ae4516f5be1",
+            "Value": {
+                "id": "61cb43ca-48ae-409f-8c80-cb50745d4288",
+                "resourcePath": "datafiles_yy\\Optixal.ttf.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
             "Key": "9240a87f-c1e3-4aac-a134-1a14d7133b56",
             "Value": {
                 "id": "0480ff32-0237-40eb-b659-9d7bed7885fc",
