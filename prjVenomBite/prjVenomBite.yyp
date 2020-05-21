@@ -2202,7 +2202,7 @@
             "Key": "81c04772-333c-4f2b-9ea5-5af42e9c2e6c",
             "Value": {
                 "id": "5cbc866c-9c85-4a87-a56f-c7b71d2e9542",
-                "resourcePath": "sprites\\player_spr1\\player_spr1.yy",
+                "resourcePath": "sprites\\newnpc_spr\\newnpc_spr.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -3076,6 +3076,14 @@
                 "id": "86746415-7ca5-49c0-98fa-43ede5d2f040",
                 "resourcePath": "views\\ad591343-5111-4d14-b858-d4824f44d013.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "ae6a03ce-a9e9-447c-8c89-1843478f1734",
+            "Value": {
+                "id": "a61eb065-65af-4f1e-b54d-6c070f5aafad",
+                "resourcePath": "objects\\newnpc_obj\\newnpc_obj.yy",
+                "resourceType": "GMObject"
             }
         },
         {
