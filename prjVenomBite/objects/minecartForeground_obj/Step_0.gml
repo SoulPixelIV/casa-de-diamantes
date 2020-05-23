@@ -119,6 +119,7 @@ else
 if (keyboard_check_pressed(vk_space) && inMinecart)
 {
 	inMinecart = false;
+	player_obj.grounded = false;
 	player_obj.movement = true;
 	player_obj.invincible = false;
 	player_obj.x = x;
