@@ -691,7 +691,7 @@ if (damageCooldown < 0)
 	image_alpha = 1;
 }
 
-if (hp < 0)
+if (hp < 0 || infection > 100)
 {
 	//Death
 	death_scr();
