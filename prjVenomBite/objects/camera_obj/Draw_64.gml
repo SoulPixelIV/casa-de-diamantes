@@ -85,11 +85,13 @@ if (!noHUD)
 	}
 	
 	//Infectionbar
+	/*
 	if (player_obj.plagueTransformation)
 	{
 		draw_sprite_ext(infectionbarBorder_spr, 0, 256, 128, 1, 1, 0, -1, 1);
 		draw_sprite_ext(infectionbar_spr, 0, 256, 128, player_obj.infection / 100, 1, 0, -1, 1);
 	}
+	*/
 	
 	//Chipbar
 	draw_sprite_ext(scoreBorder_spr, -1, 1078, 16, 2, 2, 0, -1, 1);
@@ -147,8 +149,8 @@ if (drawInfectionText)
 {
 	draw_set_font(global.optixFontHuge);
 	draw_set_color(c_red);
-	draw_text(312, 128, "PRESS 'R' TO INFECT YOURSELF!");
-	draw_text(312, 164, "PRESS 'Q' TO DIE INSTANTLY!");
+	draw_text(236, 128, "PRESS 'R' TO INFECT YOURSELF!");
+	draw_text(236, 211, "PRESS 'Q' TO DIE INSTANTLY!");
 }
 if (player_obj.isZombie)
 {
