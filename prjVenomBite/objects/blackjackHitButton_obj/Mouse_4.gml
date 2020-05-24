@@ -1,2 +1,2 @@
-blackJackCalc_obj.playerPhase++;
+blackJackCalc_obj.drawCard = true;
 
