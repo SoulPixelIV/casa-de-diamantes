@@ -175,6 +175,10 @@ if (distance_to_object(player_obj) < 300 && player_obj.y > y - 64 && player_obj.
 {
 	attackCooldown -= global.dt / 4;
 }
+else
+{
+	attackCooldown = attackCooldownSave;
+}
 
 if (randAttack == 1)
 {

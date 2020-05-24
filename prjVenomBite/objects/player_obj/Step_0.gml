@@ -14,7 +14,7 @@ key_shift_hold = keyboard_check(vk_shift) || gamepad_button_check(0, gp_shoulder
 key_control = keyboard_check_pressed(vk_control) || gamepad_button_check(0, gp_face2);
 
 //Movement
-if (movement && !wallJumping && !isDashing)
+if (movement && !wallJumping && !isDashing && !place_meeting(x, y, enemy_obj))
 {
 	if (key_right && !key_left)
 	{
