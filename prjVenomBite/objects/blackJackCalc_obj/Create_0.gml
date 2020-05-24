@@ -8,7 +8,9 @@ spadeDeck = [2,3,4,5,6,7,8,9,10,"B","Q","K","A"];
 
 drawCard = false;
 playerSlot = 2;
+dealerSlot = 1;
 dealerDraws = false;
+checkScore = false;
 
 playerSum = 0;
 dealerSum = 0;
@@ -24,6 +26,19 @@ for (i = 0; i < 2; i++)
 	}
 
 	playerDeck[i] = chosenDeck[chosenCard];
+	playerSum += blackjackConverter_scr(chosenDeck[chosenCard]);
 	chosenDeck[chosenCard] = 0;
 }
+
+//First Round -> Dealer gets 1 Card
+var chosenDeck = choose(heartDeck, diamondDeck, clubDeck, spadeDeck);
+var chosenCard = choose(0,1,2,3,4,5,6,7,8,9,10,11,12);
+while (chosenDeck[chosenCard] == 0)
+{
+	var chosenCard = choose(0,1,2,3,4,5,6,7,8,9,10,11,12);
+}
+
+dealerDeck[0] = chosenDeck[chosenCard];
+dealerSum += blackjackConverter_scr(chosenDeck[chosenCard]);
+chosenDeck[chosenCard] = 0;
 

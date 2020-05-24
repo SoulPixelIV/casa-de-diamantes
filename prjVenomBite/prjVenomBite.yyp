@@ -1367,6 +1367,14 @@
             }
         },
         {
+            "Key": "502c6e21-7784-4cf2-bb4a-769ef27bd5b3",
+            "Value": {
+                "id": "99727c0e-60ad-48e9-ba7a-e3c8e19cc459",
+                "resourcePath": "scripts\\blackjackConverter_scr\\blackjackConverter_scr.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "50433d8f-4fdf-47d7-b5d9-e61bcf4461b4",
             "Value": {
                 "id": "fa8f701a-9475-4c2e-849a-2ac0710a38e1",
@@ -4651,7 +4659,8 @@
         "ab54a712-5b9d-4388-8375-b3501845852b",
         "67f04608-7f1b-4d76-8f81-a7c369858ad5",
         "28082bf0-1420-4a54-8669-67c9f6716990",
-        "48e63daa-57ee-4840-aaa6-6bfa634376fe"
+        "48e63daa-57ee-4840-aaa6-6bfa634376fe",
+        "502c6e21-7784-4cf2-bb4a-769ef27bd5b3"
     ],
     "tutorial": ""
 }
