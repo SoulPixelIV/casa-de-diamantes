@@ -1,5 +1,5 @@
-playerDeck = [0,0,0,0,0,0,0,0,0,0];
-dealerDeck = [0,0,0,0,0,0,0,0,0,0];
+playerDeck = [-1,-1,-1,-1,-1,-1,-1,-1,-1,-1];
+dealerDeck = [-1,-1,-1,-1,-1,-1,-1,-1,-1,-1];
 
 heartDeck = [2,3,4,5,6,7,8,9,10,"B","Q","K","A"];
 diamondDeck = [2,3,4,5,6,7,8,9,10,"B","Q","K","A"];
@@ -20,25 +20,51 @@ for (i = 0; i < 2; i++)
 {
 	var chosenDeck = choose(heartDeck, diamondDeck, clubDeck, spadeDeck);
 	var chosenCard = choose(0,1,2,3,4,5,6,7,8,9,10,11,12);
-	while (chosenDeck[chosenCard] == 0)
+	while (chosenDeck[chosenCard] == -1)
 	{
 		var chosenCard = choose(0,1,2,3,4,5,6,7,8,9,10,11,12);
 	}
 
-	playerDeck[i] = chosenDeck[chosenCard];
+	switch (chosenDeck) {
+	    case heartDeck:
+	        playerDeck[i] = string(chosenDeck[chosenCard]) + "H";
+	        break;
+		case diamondDeck:
+	        playerDeck[i] = string(chosenDeck[chosenCard]) + "D";
+	        break;
+		case clubDeck:
+	        playerDeck[i] = string(chosenDeck[chosenCard]) + "C";
+	        break;
+		case spadeDeck:
+	        playerDeck[i] = string(chosenDeck[chosenCard]) + "S";
+	        break;
+	}
 	playerSum += blackjackConverter_scr(chosenDeck[chosenCard]);
-	chosenDeck[chosenCard] = 0;
+	chosenDeck[chosenCard] = -1;
 }
 
 //First Round -> Dealer gets 1 Card
 var chosenDeck = choose(heartDeck, diamondDeck, clubDeck, spadeDeck);
 var chosenCard = choose(0,1,2,3,4,5,6,7,8,9,10,11,12);
-while (chosenDeck[chosenCard] == 0)
+while (chosenDeck[chosenCard] == -1)
 {
 	var chosenCard = choose(0,1,2,3,4,5,6,7,8,9,10,11,12);
 }
 
-dealerDeck[0] = chosenDeck[chosenCard];
+switch (chosenDeck) {
+	case heartDeck:
+	    dealerDeck[0] = string(chosenDeck[chosenCard]) + "H";
+	    break;
+	case diamondDeck:
+	    dealerDeck[0] = string(chosenDeck[chosenCard]) + "D";
+	    break;
+	case clubDeck:
+	    dealerDeck[0] = string(chosenDeck[chosenCard]) + "C";
+	    break;
+	case spadeDeck:
+	    dealerDeck[0] = string(chosenDeck[chosenCard]) + "S";
+	    break;
+}
 dealerSum += blackjackConverter_scr(chosenDeck[chosenCard]);
-chosenDeck[chosenCard] = 0;
+chosenDeck[chosenCard] = -1;
 

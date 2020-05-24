@@ -3,14 +3,27 @@ if (drawCard)
 {
 	var chosenDeck = choose(heartDeck, diamondDeck, clubDeck, spadeDeck);
 	var chosenCard = choose(0,1,2,3,4,5,6,7,8,9,10,11,12);
-	while (chosenDeck[chosenCard] == 0)
+	while (chosenDeck[chosenCard] == -1)
 	{
 		var chosenCard = choose(0,1,2,3,4,5,6,7,8,9,10,11,12);
 	}
 
-	playerDeck[playerSlot] = chosenDeck[chosenCard];
+	switch (chosenDeck) {
+	    case heartDeck:
+	        playerDeck[playerSlot] = string(chosenDeck[chosenCard]) + "H";
+	        break;
+		case diamondDeck:
+	        playerDeck[playerSlot] = string(chosenDeck[chosenCard]) + "D";
+	        break;
+		case clubDeck:
+	        playerDeck[playerSlot] = string(chosenDeck[chosenCard]) + "C";
+	        break;
+		case spadeDeck:
+	        playerDeck[playerSlot] = string(chosenDeck[chosenCard]) + "S";
+	        break;
+	}
 	playerSum += blackjackConverter_scr(chosenDeck[chosenCard]);
-	chosenDeck[chosenCard] = 0;
+	chosenDeck[chosenCard] = -1;
 	
 	playerSlot++;
 	drawCard = false;
@@ -23,14 +36,27 @@ if (dealerDraws)
 	{
 		var chosenDeck = choose(heartDeck, diamondDeck, clubDeck, spadeDeck);
 		var chosenCard = choose(0,1,2,3,4,5,6,7,8,9,10,11,12);
-		while (chosenDeck[chosenCard] == 0)
+		while (chosenDeck[chosenCard] == -1)
 		{
 			var chosenCard = choose(0,1,2,3,4,5,6,7,8,9,10,11,12);
 		}
 
-		dealerDeck[dealerSlot] = chosenDeck[chosenCard];
+		switch (chosenDeck) {
+		    case heartDeck:
+		        dealerDeck[dealerSlot] = string(chosenDeck[chosenCard]) + "H";
+		        break;
+			case diamondDeck:
+		        dealerDeck[dealerSlot] = string(chosenDeck[chosenCard]) + "D";
+		        break;
+			case clubDeck:
+		        dealerDeck[dealerSlot] = string(chosenDeck[chosenCard]) + "C";
+		        break;
+			case spadeDeck:
+		        dealerDeck[dealerSlot] = string(chosenDeck[chosenCard]) + "S";
+		        break;
+		}
 		dealerSum += blackjackConverter_scr(chosenDeck[chosenCard]);
-		chosenDeck[chosenCard] = 0;
+		chosenDeck[chosenCard] = -1;
 		dealerSlot++;
 	}
 	dealerDraws = false;
@@ -38,6 +64,7 @@ if (dealerDraws)
 }
 
 //Check Score
+/*
 if (playerSum == 21)
 {
 	if (dealerSum < 10)
@@ -48,14 +75,27 @@ if (playerSum == 21)
 	{
 		var chosenDeck = choose(heartDeck, diamondDeck, clubDeck, spadeDeck);
 		var chosenCard = choose(0,1,2,3,4,5,6,7,8,9,10,11,12);
-		while (chosenDeck[chosenCard] == 0)
+		while (chosenDeck[chosenCard] == -1)
 		{
 			var chosenCard = choose(0,1,2,3,4,5,6,7,8,9,10,11,12);
 		}
 
-		dealerDeck[dealerSlot] = chosenDeck[chosenCard];
+		switch (chosenDeck) {
+		    case heartDeck:
+		        dealerDeck[dealerSlot] = string(chosenDeck[chosenCard]) + "H";
+		        break;
+			case diamondDeck:
+		        dealerDeck[dealerSlot] = string(chosenDeck[chosenCard]) + "D";
+		        break;
+			case clubDeck:
+		        dealerDeck[dealerSlot] = string(chosenDeck[chosenCard]) + "C";
+		        break;
+			case spadeDeck:
+		        dealerDeck[dealerSlot] = string(chosenDeck[chosenCard]) + "S";
+		        break;
+		}
 		dealerSum += blackjackConverter_scr(chosenDeck[chosenCard]);
-		chosenDeck[chosenCard] = 0;
+		chosenDeck[chosenCard] = -1;
 		dealerSlot++;
 		drawLastCard = false;
 		
@@ -69,7 +109,7 @@ if (playerSum == 21)
 		}
 	}
 }
-
+*/
 if (checkScore)
 {
 	if (playerSum > dealerSum)

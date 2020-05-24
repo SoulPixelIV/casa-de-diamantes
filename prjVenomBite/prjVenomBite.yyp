@@ -1519,6 +1519,14 @@
             }
         },
         {
+            "Key": "6017663b-8aec-4044-aadf-4fc7dda6f4c1",
+            "Value": {
+                "id": "a478ad6b-e953-4c66-901f-ae8788a68e94",
+                "resourcePath": "sprites\\infected_spr\\infected_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "6027fbf5-a7f5-4b43-84ed-1b516870516a",
             "Value": {
                 "id": "c9d8d51a-1626-4a12-8a88-c9d20467a833",
@@ -1780,6 +1788,14 @@
                 "id": "4f3289eb-a1d4-4383-a976-492542198885",
                 "resourcePath": "objects\\healthpack_obj\\healthpack_obj.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "6d925aef-3be1-4e13-b605-758fca0b71f6",
+            "Value": {
+                "id": "d81341a2-31ce-4bb7-a8a5-2ec1af99559b",
+                "resourcePath": "sprites\\playingCards_spr\\playingCards_spr.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -2459,6 +2475,14 @@
             "Value": {
                 "id": "0f3b43eb-7ca2-4d42-ba15-e3f2159d6c0a",
                 "resourcePath": "objects\\triggerBlockA_obj\\triggerBlockA_obj.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "8ce2c196-2bfd-4d11-a07b-c99d00b9b5a6",
+            "Value": {
+                "id": "91b2bf29-71fc-47f9-b408-e46a13b5993c",
+                "resourcePath": "objects\\infected_obj\\infected_obj.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -3239,6 +3263,14 @@
             }
         },
         {
+            "Key": "b5da7224-c945-4461-b71e-b234533f26fe",
+            "Value": {
+                "id": "ee0989ed-89aa-4ea3-af59-0648cd499f59",
+                "resourcePath": "objects\\playingCards_obj\\playingCards_obj.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "b6157d18-123a-4c4e-947f-7acb82aed91a",
             "Value": {
                 "id": "7adf08c7-a426-4374-a6e8-0749bf6d6fde",
@@ -3340,6 +3372,14 @@
                 "id": "ee2dff2b-cb0c-458f-a97c-03a07e7b09ac",
                 "resourcePath": "shaders\\sh_aberration\\sh_aberration.yy",
                 "resourceType": "GMShader"
+            }
+        },
+        {
+            "Key": "bc784aae-c56f-4e9b-b2e8-69674cc00a52",
+            "Value": {
+                "id": "6a3cc838-ae28-4014-b4bc-3aa680316754",
+                "resourcePath": "scripts\\blackjackSpriteConverter_scr\\blackjackSpriteConverter_scr.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -4660,7 +4700,8 @@
         "67f04608-7f1b-4d76-8f81-a7c369858ad5",
         "28082bf0-1420-4a54-8669-67c9f6716990",
         "48e63daa-57ee-4840-aaa6-6bfa634376fe",
-        "502c6e21-7784-4cf2-bb4a-769ef27bd5b3"
+        "502c6e21-7784-4cf2-bb4a-769ef27bd5b3",
+        "bc784aae-c56f-4e9b-b2e8-69674cc00a52"
     ],
     "tutorial": ""
 }
