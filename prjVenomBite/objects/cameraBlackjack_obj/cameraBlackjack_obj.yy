@@ -1,28 +1,28 @@
 {
-    "id": "b5da7224-c945-4461-b71e-b234533f26fe",
+    "id": "83436e02-64f9-4438-b476-699fb749dfd2",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "playingCards_obj",
+    "name": "cameraBlackjack_obj",
     "eventList": [
         {
-            "id": "bdb1aef1-d35c-42bb-8585-3a1659574709",
+            "id": "47441326-ad40-49fd-9050-f902c9d429c8",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 0,
-            "m_owner": "b5da7224-c945-4461-b71e-b234533f26fe"
+            "m_owner": "83436e02-64f9-4438-b476-699fb749dfd2"
         },
         {
-            "id": "3aa3f572-2a8b-44e3-beee-f927c679f054",
+            "id": "927d725e-73ef-4dcf-af5b-53d1fd0f2fcb",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 3,
-            "m_owner": "b5da7224-c945-4461-b71e-b234533f26fe"
+            "m_owner": "83436e02-64f9-4438-b476-699fb749dfd2"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -43,6 +43,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "6d925aef-3be1-4e13-b605-758fca0b71f6",
+    "spriteId": "00000000-0000-0000-0000-000000000000",
     "visible": true
 }

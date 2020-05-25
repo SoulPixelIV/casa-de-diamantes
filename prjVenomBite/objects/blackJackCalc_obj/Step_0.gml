@@ -22,6 +22,7 @@ if (drawCard)
 	        playerDeck[playerSlot] = string(chosenDeck[chosenCard]) + "S";
 	        break;
 	}
+	playerInstances[playerSlot].image_index = blackjackSpriteConverter_scr(playerDeck[playerSlot]);
 	playerSum += blackjackConverter_scr(chosenDeck[chosenCard]);
 	chosenDeck[chosenCard] = -1;
 	
@@ -55,6 +56,7 @@ if (dealerDraws)
 		        dealerDeck[dealerSlot] = string(chosenDeck[chosenCard]) + "S";
 		        break;
 		}
+		dealerInstances[dealerSlot].image_index = blackjackSpriteConverter_scr(dealerDeck[dealerSlot]);
 		dealerSum += blackjackConverter_scr(chosenDeck[chosenCard]);
 		chosenDeck[chosenCard] = -1;
 		dealerSlot++;

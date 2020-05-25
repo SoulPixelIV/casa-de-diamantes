@@ -1263,6 +1263,14 @@
             }
         },
         {
+            "Key": "4795a6f2-5f7a-4ef3-991f-f4d80fc61b30",
+            "Value": {
+                "id": "e0c3f187-1b1e-4f26-9ce7-ff1cee2ad1e1",
+                "resourcePath": "views\\4795a6f2-5f7a-4ef3-991f-f4d80fc61b30.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "4849d125-b995-46a3-82a3-efe9cd41ebc4",
             "Value": {
                 "id": "59aed12f-50ad-44c2-b984-36cb54e4a3d4",
@@ -2252,6 +2260,14 @@
                 "id": "3870d6e8-f260-4705-a0d0-d82cce12fc20",
                 "resourcePath": "sprites\\ledStripe_spr\\ledStripe_spr.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "83436e02-64f9-4438-b476-699fb749dfd2",
+            "Value": {
+                "id": "1e9d56c2-19f3-4f5b-90df-99999105e72e",
+                "resourcePath": "objects\\cameraBlackjack_obj\\cameraBlackjack_obj.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -3399,6 +3415,14 @@
             }
         },
         {
+            "Key": "bccf4540-a736-4b29-a9d3-96a4843608af",
+            "Value": {
+                "id": "4e59a2fb-4588-4fef-a7df-a6b272970278",
+                "resourcePath": "sprites\\blackjackBackground_spr\\blackjackBackground_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "bd14b136-d107-4ffb-bdfe-761cb5d17348",
             "Value": {
                 "id": "f3e4e81b-0238-4054-9f62-0a44ab16b52c",
@@ -4468,6 +4492,14 @@
                 "id": "b5794581-124b-4c49-add3-f4946ea2fe0c",
                 "resourcePath": "sprites\\zombiespikesEffectLeft_spr\\zombiespikesEffectLeft_spr.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "f57ec493-e553-40e6-890f-733538034c65",
+            "Value": {
+                "id": "bc5a2da1-c6c0-498b-b6d9-5bdea6517eb8",
+                "resourcePath": "objects\\blackjackBackground_obj\\blackjackBackground_obj.yy",
+                "resourceType": "GMObject"
             }
         },
         {

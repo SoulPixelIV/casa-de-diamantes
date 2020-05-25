@@ -1,16 +1,20 @@
 playerDeck = [-1,-1,-1,-1,-1,-1,-1,-1,-1,-1];
 dealerDeck = [-1,-1,-1,-1,-1,-1,-1,-1,-1,-1];
+playerInstances = [-1,-1,-1,-1,-1,-1,-1,-1,-1,-1];
+dealerInstances = [-1,-1,-1,-1,-1,-1,-1,-1,-1,-1];
 
-heartDeck = [2,3,4,5,6,7,8,9,10,"B","Q","K","A"];
-diamondDeck = [2,3,4,5,6,7,8,9,10,"B","Q","K","A"];
-clubDeck = [2,3,4,5,6,7,8,9,10,"B","Q","K","A"];
-spadeDeck = [2,3,4,5,6,7,8,9,10,"B","Q","K","A"];
+heartDeck = [2,3,4,5,6,7,8,9,"X","B","Q","K","A"];
+diamondDeck = [2,3,4,5,6,7,8,9,"X","B","Q","K","A"];
+clubDeck = [2,3,4,5,6,7,8,9,"X","B","Q","K","A"];
+spadeDeck = [2,3,4,5,6,7,8,9,"X","B","Q","K","A"];
 
 drawCard = false;
 playerSlot = 2;
 dealerSlot = 1;
 dealerDraws = false;
 checkScore = false;
+
+holdingCard = false;
 
 playerSum = 0;
 dealerSum = 0;
@@ -67,4 +71,17 @@ switch (chosenDeck) {
 }
 dealerSum += blackjackConverter_scr(chosenDeck[chosenCard]);
 chosenDeck[chosenCard] = -1;
+
+
+//Create Cards
+for (i = 0; i < 7; i++)
+{
+	playerInstances[i] = instance_create_layer(204 + i * 32, 248, "Instances", playingCards_obj);
+	playerInstances[i].image_index = blackjackSpriteConverter_scr(playerDeck[i]);
+}
+for (i = 0; i < 7; i++)
+{
+	dealerInstances[i] = instance_create_layer(204 + i * 32, 48, "Instances", playingCards_obj);
+	dealerInstances[i].image_index = blackjackSpriteConverter_scr(dealerDeck[i]);
+}
 

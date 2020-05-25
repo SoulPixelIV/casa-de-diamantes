@@ -1,7 +1,7 @@
 chosenCard = argument0;
 chosenChar = string_char_at(chosenCard, 1);
 
-if (chosenChar == "B" || chosenChar == "Q" || chosenChar == "K")
+if (chosenChar == "B" || chosenChar == "Q" || chosenChar == "K" || chosenChar == "X")
 {
 	return 10;
 }

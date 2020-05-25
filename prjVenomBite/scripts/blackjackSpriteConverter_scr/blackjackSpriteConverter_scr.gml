@@ -10,6 +10,9 @@ else
 	chosenColor = string_char_at(chosenCard, 2);
 
 	switch (chosenNumber) {
+		case "X":
+	        chosenNumber = 10;
+	        break;
 	    case "B":
 	        chosenNumber = 11;
 	        break;
