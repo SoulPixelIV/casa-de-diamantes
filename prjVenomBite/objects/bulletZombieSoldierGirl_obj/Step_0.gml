@@ -2,11 +2,20 @@
 
 speed = movSpeed * global.dt;
 
-//Collision
-if (!place_free(x, y) && !place_meeting(x, y, colliderBulletFree_obj))
+//Invincibility
+if (invincibilityTimer > 0)
 {
-	audio_play_sound(bulletHitGround_snd, 1, false);
-	instance_change(bulletHit_obj, true);
+	invincibilityTimer -= global.dt;
+}
+
+//Collision
+if (invincibilityTimer <= 0)
+{
+	if (!place_free(x, y) && !place_meeting(x, y, colliderBulletFree_obj))
+	{
+		audio_play_sound(bulletHitGround_snd, 1, false);
+		instance_change(bulletHit_obj, true);
+	}
 }
 
 if (place_meeting(x, y, player_obj) && !player_obj.isZombie && !player_obj.invincible && !player_obj.damageRecieved)

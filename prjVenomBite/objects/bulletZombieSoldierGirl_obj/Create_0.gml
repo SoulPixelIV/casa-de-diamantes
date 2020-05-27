@@ -2,6 +2,7 @@
 
 movSpeed = 5.2;
 createdFire = false;
+invincibilityTimer = 5;
 
 move_towards_point(player_obj.x, player_obj.y, movSpeed * global.dt);
 image_angle = point_direction(x, y, player_obj.x, player_obj.y);
