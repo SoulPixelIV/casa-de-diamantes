@@ -67,6 +67,7 @@ dashTimer = 20;
 slowmo = false;
 spinWeaponPos = 0;
 spinWeaponDir = 0;
+setWallDir = false;
 damageRecieved = false;
 huggingWall = false;
 dirCursor = 0;

@@ -16,35 +16,38 @@ key_control = keyboard_check_pressed(vk_control) || gamepad_button_check(0, gp_f
 //Movement
 if (movement && !wallJumping && !isDashing)
 {
-	if (key_right && !key_left)
+	if (!huggingWall)
 	{
-		if (!isZombie)
+		if (key_right && !key_left)
 		{
-			horspeed = movSpeed;
-		} 
-		else
-		{
-			horspeed = movSpeedZombie;
+			if (!isZombie)
+			{
+				horspeed = movSpeed;
+			} 
+			else
+			{
+				horspeed = movSpeedZombie;
+			}
+			if (!audio_is_playing(walk1_snd) && !audio_is_playing(walk2_snd) && grounded)
+			{
+				var walksnd = audio_play_sound(choose(walk1_snd, walk2_snd), 1, false);
+				audio_sound_pitch(walksnd, random_range(0.9, 1.1));
+			}
 		}
-		if (!audio_is_playing(walk1_snd) && !audio_is_playing(walk2_snd) && grounded)
+		if (key_left && !key_right)
 		{
-			var walksnd = audio_play_sound(choose(walk1_snd, walk2_snd), 1, false);
-			audio_sound_pitch(walksnd, random_range(0.9, 1.1));
-		}
-	}
-	if (key_left && !key_right)
-	{
-		if (!isZombie)
-		{
-			horspeed = -movSpeed;
-		}
-		else
-		{
-			horspeed = -movSpeedZombie;
-		}
-		if (!audio_is_playing(walk1_snd) && !audio_is_playing(walk2_snd) && grounded)
-		{
-			audio_play_sound(walk1_snd, 1, false);
+			if (!isZombie)
+			{
+				horspeed = -movSpeed;
+			}
+			else
+			{
+				horspeed = -movSpeedZombie;
+			}
+			if (!audio_is_playing(walk1_snd) && !audio_is_playing(walk2_snd) && grounded)
+			{
+				audio_play_sound(walk1_snd, 1, false);
+			}
 		}
 	}
 }
@@ -159,18 +162,29 @@ if (movement && !isZombie && wallJumps > 0)
 		wallJumping = true;
 		verspeed = -jumpStrength / 1.3;
 		
-		if (key_right)
-		{
-			horspeed -= jumpStrength / 1.15;
-		}
-		if (key_left)
+		if (image_xscale == 1 && key_right)
 		{
 			horspeed += jumpStrength / 1.15;
 		}
+		if (image_xscale == 1 && key_left)
+		{
+			horspeed += jumpStrength / 1.7;
+		}
+		if (image_xscale == -1 && key_left)
+		{
+			horspeed -= jumpStrength / 1.15;
+		}
+		if (image_xscale == -1 && key_right)
+		{
+			horspeed -= jumpStrength / 1.7;
+		}
 		wallJumps--;
 		wallJumpingInAir = true;
+		huggingWall = false;
+		setWallDir = false;
 	}
 }
+
 if (wallJumping)
 {
 	wallJumpTimer -= global.dt;
@@ -249,13 +263,17 @@ if (colliding)
 			{
 				horspeed = 0;
 			}
-			huggingWall = true;
+			if (!grounded)
+			{
+				huggingWall = true;
+			}
 		}
-	} 
-	else
+	}
+	if ((place_free(x + 1, y) && place_free(x - 1, y)) || grounded)
 	{
 		huggingWall = false;
 	}
+
 	//verspeed
 	if (!place_free(x, y + (verspeed * global.dt)))
 	{
@@ -455,9 +473,8 @@ with (gameManager_obj)
 if (huggingWall && !grounded)
 {
 	sprite_index = playerWall_spr;
-	if (key_left)
+	if (horspeed <= 0)
 	{
-		image_xscale = 1;
 		walljumpDustTimer -= global.dt;
 		if (walljumpDustTimer < 0)
 		{
@@ -466,9 +483,8 @@ if (huggingWall && !grounded)
 			walljumpDustTimer = walljumpDustTimerSave;
 		}
 	}
-	if (key_right)
+	else
 	{
-		image_xscale = -1;
 		walljumpDustTimer -= global.dt;
 		if (walljumpDustTimer < 0)
 		{
@@ -477,6 +493,18 @@ if (huggingWall && !grounded)
 			walljumpDustTimer = walljumpDustTimerSave;
 		}
 	}
+	if (!setWallDir)
+	{
+		if (key_left)
+		{
+			image_xscale = 1;
+		}
+		if (key_right)
+		{
+			image_xscale = -1;
+		}
+	}
+	setWallDir = true;
 }
 
 if (onLadder && !isZombie && !isDashing)
