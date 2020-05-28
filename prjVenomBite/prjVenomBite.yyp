@@ -1135,6 +1135,14 @@
             }
         },
         {
+            "Key": "42027dac-06ff-4388-aff6-2750e813e7c7",
+            "Value": {
+                "id": "a7ff7f6a-d243-4482-9d72-0080ff6df39a",
+                "resourcePath": "objects\\cameraViewOut_obj\\cameraViewOut_obj.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "42a5fe7d-949d-4f29-ab51-d0fac0594e14",
             "Value": {
                 "id": "48704f0a-db58-4522-8e3b-e0c8b05dd4e6",
@@ -2052,14 +2060,6 @@
                 "id": "af470a93-6656-4b69-96ff-d298e7c02811",
                 "resourcePath": "sprites\\cursor_spr\\cursor_spr.yy",
                 "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "7970cf9e-241b-47b3-a83e-bd9c7177e68f",
-            "Value": {
-                "id": "a6f80145-3f95-48d7-9765-b323f4b9e9d0",
-                "resourcePath": "objects\\cameraViewOut_obj\\cameraViewOut_obj.yy",
-                "resourceType": "GMObject"
             }
         },
         {

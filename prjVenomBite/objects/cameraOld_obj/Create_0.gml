@@ -46,6 +46,7 @@ zoomOut = false;
 zoomIn = false;
 noHUD = false;
 
+/*
 enum cameraState {
     normal,
     zoomIn,
@@ -54,7 +55,7 @@ enum cameraState {
 }
 
 currentCameraState = cameraState.normal;
-
+*/
 zoomCooldownSave = zoomCooldown;
 
 view_camera[0] = camera_create();

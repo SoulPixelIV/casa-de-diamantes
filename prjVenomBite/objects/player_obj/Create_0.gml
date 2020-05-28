@@ -22,7 +22,7 @@ flipAvail = false;
 flipUsed = false;
 
 //Action
-hp = 100;
+hp = 1;
 syringes = 0;
 zombieTimer = 1550;
 slowmoTimer = 600;

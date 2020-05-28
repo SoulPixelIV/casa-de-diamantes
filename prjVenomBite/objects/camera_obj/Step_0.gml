@@ -28,6 +28,8 @@ else
 
 var vm = matrix_build_lookat(x,y,-10,x,y,0,0,1,0);
 camera_set_view_mat(camera,vm);
+var pm = matrix_build_projection_ortho(xScreenSize, yScreenSize,1,10000);
+camera_set_proj_mat(camera,pm);
 
 //Aim Zoom
 if (mouse_check_button(mb_right))
@@ -37,6 +39,47 @@ if (mouse_check_button(mb_right))
 if (mouse_check_button_released(mb_right))
 {
 	follow = player_obj;
+}
+
+//Change Camera Size
+if (xScreenSizeNew > xScreenSize)
+{
+	xScreenSize += ((16 / 2) * global.dt / 3) * cameraSpeed;
+	yScreenSize += ((9 / 2) * global.dt / 3) * cameraSpeed;
+	if (xScreenSizeNew > xScreenSize && xScreenSizeNew < xScreenSize + 4)
+	{
+		xScreenSize = xScreenSizeNew;
+		yScreenSize = yScreenSizeNew;
+	}
+}
+if (xScreenSizeNew < xScreenSize)
+{
+	xScreenSize -= ((16 / 2) * global.dt / 3) * cameraSpeed;
+	yScreenSize -= ((9 / 2) * global.dt / 3) * cameraSpeed;
+	if (xScreenSizeNew < xScreenSize && xScreenSizeNew > xScreenSize - 4)
+	{
+		xScreenSize = xScreenSizeNew;
+		yScreenSize = yScreenSizeNew;
+	}
+}
+
+switch (currentCameraState)
+{
+	case cameraState.normal:
+		changeCamera_scr(464, 261);
+		break;
+	case cameraState.zoomIn:
+		changeCamera_scr(208, 117);
+		break;
+	case cameraState.zoomOut:
+		changeCamera_scr(672, 378);
+		break;
+	case cameraState.zoomAFK:
+		changeCamera_scr(160, 90);
+		break;
+	case cameraState.death:
+		changeCamera_scr(128, 72);
+		break;
 }
 
 //VignetteStrength
@@ -49,4 +92,17 @@ if (vignetteStrengthTimer < 0)
 {
 	vignetteStrength = 1;
 	vignetteStrengthTimer = vignetteStrengthTimerSave;
+}
+
+if (keyboard_check_pressed(vk_f2))
+{
+	currentCameraState = cameraState.zoomIn;
+}
+if (keyboard_check_pressed(vk_f3))
+{
+	currentCameraState = cameraState.zoomOut;
+}
+if (keyboard_check_pressed(vk_f4))
+{
+	currentCameraState = cameraState.death;
 }

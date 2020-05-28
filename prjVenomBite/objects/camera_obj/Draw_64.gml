@@ -20,7 +20,7 @@ if (zombiespikeEffectBorder > 0 && player_obj.plagueTransformation)
 draw_sprite_ext(lensDirt_spr, 0, -200, -200, 1, 1, 0, -1, 0.075);
 if (deathVignette)
 {
-	draw_set_alpha(0.2);
+	draw_set_alpha(0.4);
 	draw_ellipse_colour(-300, -225, 1600, 1150, c_black , c_red, false);
 }
 else
@@ -148,16 +148,16 @@ draw_set_alpha(1);
 if (drawInfectionText)
 {
 	draw_set_font(global.optixFontHuge);
-	draw_set_color(c_red);
+	draw_set_color(c_white);
 	draw_text(236, 128, "PRESS 'R' TO INFECT YOURSELF!");
 	draw_text(236, 211, "PRESS 'Q' TO DIE INSTANTLY!");
 }
 if (player_obj.isZombie)
 {
 	draw_set_font(global.optixFontHuge);
-	draw_set_color(c_red);
-	draw_text(128, 128, "PRESS 'F' TO BECOME HUMAN AGAIN!");
-	draw_text(312, 164, "PRESS 'Q' TO DIE INSTANTLY!");
+	draw_set_color(c_white);
+	draw_text(236, 128, "PRESS 'F' TO BECOME HUMAN AGAIN!");
+	draw_text(236, 211, "PRESS 'Q' TO DIE INSTANTLY!");
 }
 
 //#####LAYER 3#####

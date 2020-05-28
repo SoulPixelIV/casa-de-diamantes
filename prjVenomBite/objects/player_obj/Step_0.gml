@@ -804,3 +804,9 @@ if (vignetteFlashTimer < 0)
 	enemySlowmo = false;
 	vignetteFlashTimer = vignetteFlashTimerSave;
 }
+
+//Camera Settings
+if (!place_meeting(x, y, cameraViewIn_obj) && !place_meeting(x, y, cameraViewOut_obj))
+{
+	camera_obj.currentCameraState = cameraState.normal;
+}
