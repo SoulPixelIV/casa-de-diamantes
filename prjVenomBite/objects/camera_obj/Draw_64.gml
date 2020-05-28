@@ -7,7 +7,7 @@ draw_sprite_ext(zombiespikesEffectTop_spr, 0, 0, -zombiespikeEffectBorder, 2, 2,
 draw_sprite_ext(zombiespikesEffectDown_spr, 0, 0, 364 + zombiespikeEffectBorder, 2, 2, 0, -1, zombiespikeBorderTransparent);
 
 draw_set_alpha(zombiespikeBorderTransparent);
-draw_ellipse_colour(-300, -225, 1600, 1150, c_black , c_green, false);
+draw_ellipse_colour(-xScreenSize, -yScreenSize, xScreenSize, yScreenSize, c_black , c_green, false);
 draw_set_alpha(1);
 
 if (zombiespikeEffectBorder > 0 && player_obj.plagueTransformation)
@@ -18,43 +18,18 @@ if (zombiespikeEffectBorder > 0 && player_obj.plagueTransformation)
 
 //Lens Dirt + Vignette
 draw_sprite_ext(lensDirt_spr, 0, -200, -200, 1, 1, 0, -1, 0.075);
+	
+//Vignette Effect
 if (deathVignette)
 {
 	draw_set_alpha(0.4);
-	draw_ellipse_colour(-300, -225, 1600, 1150, c_black , c_red, false);
 }
 else
 {
-	draw_set_alpha(0.125 * vignetteStrength);
-	var col = merge_colour(c_blue, c_red, vignetteColorClamp);
-
-	if (vignetteFlash)
-	{
-		if (vignetteColorDir == 0)
-		{
-			vignetteColorClamp += global.dt / 150;
-		}
-		else
-		{
-			vignetteColorClamp -= global.dt / 150;
-		}
-	
-		if (vignetteColorClamp == 1)
-		{
-			vignetteColorDir = 1;
-		}
-		if (vignetteColorClamp == 0)
-		{
-			vignetteColorDir = 0;
-		}	
-		draw_ellipse_colour(-300, -225, 1600, 1150, c_black, col, false);
-	}
-	
-	//Vignette Effect
 	draw_set_alpha(0.1);
-	draw_ellipse_colour(-300, -225, 1600, 1150, c_black , c_red, false);
-	draw_set_alpha(1);
 }
+draw_ellipse_colour(-xScreenSize - 100, -yScreenSize - 100, xScreenSize * 16 / 2, yScreenSize * 9 / 2, c_black , c_red, false);
+draw_set_alpha(1);
 
 //#####LAYER 1#####
 

@@ -93,16 +93,3 @@ if (vignetteStrengthTimer < 0)
 	vignetteStrength = 1;
 	vignetteStrengthTimer = vignetteStrengthTimerSave;
 }
-
-if (keyboard_check_pressed(vk_f2))
-{
-	currentCameraState = cameraState.zoomIn;
-}
-if (keyboard_check_pressed(vk_f3))
-{
-	currentCameraState = cameraState.zoomOut;
-}
-if (keyboard_check_pressed(vk_f4))
-{
-	currentCameraState = cameraState.death;
-}

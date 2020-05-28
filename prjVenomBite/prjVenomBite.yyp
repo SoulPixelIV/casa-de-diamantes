@@ -4391,14 +4391,6 @@
             }
         },
         {
-            "Key": "f1bd0ef3-3f1e-49c4-a7ca-ea61626396cf",
-            "Value": {
-                "id": "44abd765-2984-4176-9570-5c44aeba765e",
-                "resourcePath": "objects\\shaderVignetteRed_obj\\shaderVignetteRed_obj.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "f20fe9a4-672c-4708-94f8-204d0d3d6e1c",
             "Value": {
                 "id": "676655f9-24a3-4e05-afd9-7e0a0a3fc4a8",
