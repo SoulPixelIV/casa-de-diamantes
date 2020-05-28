@@ -155,33 +155,49 @@ if (jumping && !onLadder && !isDashing && !spin)
 }
 
 //Walljump
-if (movement && !isZombie && wallJumps > 0)
+if (movement && !isZombie)
 {
 	if (huggingWall && key_jump)
 	{
-		wallJumping = true;
-		verspeed = -jumpStrength / 1.3;
+		if (wallJumps > 0)
+		{
+			wallJumping = true;
+			verspeed = -jumpStrength / 1.3;
 		
-		if (image_xscale == 1 && key_right)
-		{
-			horspeed += jumpStrength / 1.15;
+			if (image_xscale == 1 && key_right)
+			{
+				horspeed += jumpStrength / 1.15;
+			}
+			if (image_xscale == 1 && key_left)
+			{
+				horspeed += jumpStrength / 1.7;
+			}
+			if (image_xscale == -1 && key_left)
+			{
+				horspeed -= jumpStrength / 1.15;
+			}
+			if (image_xscale == -1 && key_right)
+			{
+				horspeed -= jumpStrength / 1.7;
+			}
+			if (image_xscale == 1 && !key_right && !key_left)
+			{
+				horspeed += jumpStrength / 1.7;
+			}
+			if (image_xscale == -1 && !key_right && !key_left)
+			{
+				horspeed -= jumpStrength / 1.7;
+			}
+			wallJumps--;
+			wallJumpingInAir = true;
+			huggingWall = false;
+			setWallDir = false;
 		}
-		if (image_xscale == 1 && key_left)
+		else
 		{
-			horspeed += jumpStrength / 1.7;
+			huggingWall = false;
+			setWallDir = false;
 		}
-		if (image_xscale == -1 && key_left)
-		{
-			horspeed -= jumpStrength / 1.15;
-		}
-		if (image_xscale == -1 && key_right)
-		{
-			horspeed -= jumpStrength / 1.7;
-		}
-		wallJumps--;
-		wallJumpingInAir = true;
-		huggingWall = false;
-		setWallDir = false;
 	}
 }
 
@@ -495,11 +511,11 @@ if (huggingWall && !grounded)
 	}
 	if (!setWallDir)
 	{
-		if (key_left)
+		if (!place_free(x - 1, y))
 		{
 			image_xscale = 1;
 		}
-		if (key_right)
+		if (!place_free(x + 1, y))
 		{
 			image_xscale = -1;
 		}
@@ -666,7 +682,7 @@ switch (sprite_index)
 
 if (grounded || !flip)
 {
-	if (!wallJumpingInAir && !isDashing && !huggingWall)
+	if (!wallJumpingInAir && !isDashing && !huggingWall && !setWallDir)
 	{
 		if (dirCursor > 90 && dirCursor < 270)
 		{
