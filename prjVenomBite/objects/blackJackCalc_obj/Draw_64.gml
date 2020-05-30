@@ -11,7 +11,7 @@ for (i = 0; i < 7; i++)
 }
 */
 //Player Card Sum
-draw_text(44, 200, playerSum);
+draw_text(44, 80, playerSum);
 
 //Dealer Card Sum
-draw_text(44, 100, dealerSum);
+draw_text(44, 20, dealerSum);

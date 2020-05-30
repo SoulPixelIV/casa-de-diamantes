@@ -3,7 +3,7 @@ if (drawCard)
 {
 	var chosenDeck = choose(heartDeck, diamondDeck, clubDeck, spadeDeck);
 	var chosenCard = choose(0,1,2,3,4,5,6,7,8,9,10,11,12);
-	while (chosenDeck[chosenCard] == -1)
+	while (chosenDeck[chosenCard] == -2)
 	{
 		var chosenCard = choose(0,1,2,3,4,5,6,7,8,9,10,11,12);
 	}
@@ -24,7 +24,7 @@ if (drawCard)
 	}
 	playerInstances[playerSlot].image_index = blackjackSpriteConverter_scr(playerDeck[playerSlot]);
 	playerSum += blackjackConverter_scr(chosenDeck[chosenCard]);
-	chosenDeck[chosenCard] = -1;
+	chosenDeck[chosenCard] = -2;
 	
 	playerSlot++;
 	drawCard = false;
@@ -37,7 +37,7 @@ if (dealerDraws)
 	{
 		var chosenDeck = choose(heartDeck, diamondDeck, clubDeck, spadeDeck);
 		var chosenCard = choose(0,1,2,3,4,5,6,7,8,9,10,11,12);
-		while (chosenDeck[chosenCard] == -1)
+		while (chosenDeck[chosenCard] == -2)
 		{
 			var chosenCard = choose(0,1,2,3,4,5,6,7,8,9,10,11,12);
 		}
@@ -58,7 +58,7 @@ if (dealerDraws)
 		}
 		dealerInstances[dealerSlot].image_index = blackjackSpriteConverter_scr(dealerDeck[dealerSlot]);
 		dealerSum += blackjackConverter_scr(chosenDeck[chosenCard]);
-		chosenDeck[chosenCard] = -1;
+		chosenDeck[chosenCard] = -2;
 		dealerSlot++;
 	}
 	dealerDraws = false;

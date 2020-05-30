@@ -2,7 +2,7 @@ if (mouse_x > x - 24 && mouse_x < x + 24)
 {
 	if (mouse_y > y - 24 && mouse_y < y + 24)
 	{
-		if (image_xscale < 1.75 && !blackJackCalc_obj.holdingCard)
+		if (image_xscale < 1.5 && !blackJackCalc_obj.holdingCard)
 		{
 			//image_xscale += global.dt / 50;
 			//image_yscale += global.dt / 50;

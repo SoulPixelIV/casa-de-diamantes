@@ -24,7 +24,7 @@ for (i = 0; i < 2; i++)
 {
 	var chosenDeck = choose(heartDeck, diamondDeck, clubDeck, spadeDeck);
 	var chosenCard = choose(0,1,2,3,4,5,6,7,8,9,10,11,12);
-	while (chosenDeck[chosenCard] == -1)
+	while (chosenDeck[chosenCard] == -2)
 	{
 		var chosenCard = choose(0,1,2,3,4,5,6,7,8,9,10,11,12);
 	}
@@ -44,13 +44,13 @@ for (i = 0; i < 2; i++)
 	        break;
 	}
 	playerSum += blackjackConverter_scr(chosenDeck[chosenCard]);
-	chosenDeck[chosenCard] = -1;
+	chosenDeck[chosenCard] = -2;
 }
 
 //First Round -> Dealer gets 1 Card
 var chosenDeck = choose(heartDeck, diamondDeck, clubDeck, spadeDeck);
 var chosenCard = choose(0,1,2,3,4,5,6,7,8,9,10,11,12);
-while (chosenDeck[chosenCard] == -1)
+while (chosenDeck[chosenCard] == -2)
 {
 	var chosenCard = choose(0,1,2,3,4,5,6,7,8,9,10,11,12);
 }
@@ -70,7 +70,7 @@ switch (chosenDeck) {
 	    break;
 }
 dealerSum += blackjackConverter_scr(chosenDeck[chosenCard]);
-chosenDeck[chosenCard] = -1;
+chosenDeck[chosenCard] = -2;
 
 
 //Create Cards

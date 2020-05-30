@@ -9,7 +9,7 @@ else if (chosenChar == "A")
 {
 	return 11;
 }
-else if (chosenChar == "-1")
+else if (chosenChar == "-2")
 {
 	return 0;
 }
