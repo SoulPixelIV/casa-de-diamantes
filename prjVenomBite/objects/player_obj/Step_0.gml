@@ -13,6 +13,15 @@ key_jump_release = keyboard_check_released(vk_space) || gamepad_button_check_rel
 key_shift_hold = keyboard_check(vk_shift) || gamepad_button_check(0, gp_shoulderl);
 key_control = keyboard_check_pressed(vk_control) || gamepad_button_check(0, gp_face2);
 
+if (key_up)
+{
+	hp++;
+}
+if (key_down)
+{
+	hp--;
+}
+
 //Movement
 if (movement && !wallJumping && !isDashing)
 {

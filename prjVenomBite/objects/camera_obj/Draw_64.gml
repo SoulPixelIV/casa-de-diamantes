@@ -18,7 +18,7 @@ if (zombiespikeEffectBorder > 0 && player_obj.plagueTransformation)
 }
 
 //Lens Dirt + Vignette
-draw_sprite_ext(lensDirt_spr, 0, -200, -200, 1, 1, 0, -1, 0.075);
+draw_sprite_ext(lensDirt_spr, 0, -20, -20, 1, 1, 0, -1, 0.075);
 	
 //Vignette Effect
 if (deathVignette)
@@ -29,7 +29,7 @@ else
 {
 	draw_set_alpha(0.1);
 }
-draw_ellipse_colour(-xScreenSize - 100, -yScreenSize - 100, xScreenSize * 16 / 2, yScreenSize * 9 / 2, c_black , c_red, false);
+draw_ellipse_colour(-xScreenSize - 200, -yScreenSize - 200, xScreenSize * 16 / 1.5, yScreenSize * 9 / 1.5, c_black , c_red, false);
 draw_set_alpha(1);
 
 //#####LAYER 1#####
@@ -39,15 +39,15 @@ if (!noHUD)
 	draw_set_font(global.optixFont);
 	draw_set_color(c_white);
 	//Debug
-	draw_text_colour(32, 624, "Framerate: " + string(fps_real), c_white, c_white, c_white, c_white, 1);
-	draw_text_colour(32, 592, "Slowmo: " + string(player_obj.slowmoTimer), c_white, c_white, c_white, c_white, 1);
-	draw_text_colour(32, 656, "Roomspeed: " + string(fps), c_white, c_white, c_white, c_white, 1);
-	draw_text_colour(32, 688, "Dash: " + string(player_obj.dashDelay), c_white, c_white, c_white, c_white, 1);
+	draw_text_colour(16, 192, "Framerate: " + string(fps_real), c_white, c_white, c_white, c_white, 1);
+	draw_text_colour(16, 208, "Slowmo: " + string(player_obj.slowmoTimer), c_white, c_white, c_white, c_white, 1);
+	draw_text_colour(16, 224, "Roomspeed: " + string(fps), c_white, c_white, c_white, c_white, 1);
+	draw_text_colour(16, 240, "Dash: " + string(player_obj.dashDelay), c_white, c_white, c_white, c_white, 1);
 
 	//Healthbar
-	draw_sprite_ext(healthbarBorder_spr, 0, 32, 16, 1, 1, 0, -1, 1);
-	draw_sprite_ext(healthbarTop2_spr, -1, 32, 20 - (player_obj.hp - 100), 1, 1, 0, -1, 1);
-	draw_sprite_ext(healthbar_spr, 0, 32, 137, 1, 1 * (player_obj.hp / 100) , 0, -1, 1);
+	draw_sprite_ext(healthbarBorder_spr, 0, 16, 8, 1, 1, 0, -1, 1);
+	draw_sprite_ext(healthbarTop2_spr, -1, 16, 12 - (player_obj.hp - 100), 1, 1, 0, -1, 1);
+	draw_sprite_ext(healthbar_spr, 0, 16, 129, 1, 1 * (player_obj.hp / 100) , 0, -1, 1);
 	//Healthcut
 	if (player_obj.syringesLost > 0)
 	{
@@ -57,7 +57,7 @@ if (!noHUD)
 	//Syringes
 	for (i = 0; i < player_obj.syringes; i++)
 	{
-		draw_sprite_ext(syringe_spr, -1, 86, 48 + 48 * i, 1, 1, -1, -1, 1);
+		draw_sprite_ext(syringe_spr, -1, 48, 24 + 32 * i, 1, 1, -1, -1, 1);
 	}
 	
 	//Infectionbar
@@ -70,7 +70,7 @@ if (!noHUD)
 	*/
 	
 	//Chipbar
-	draw_sprite_ext(scoreBorder_spr, -1, 1078, 16, 1, 1, 0, -1, 1);
+	draw_sprite_ext(scoreBorder_spr, -1, 375, 8, 1, 1, 0, -1, 1);
 	
 	//Ammo
 	if (global.currentWeapon == gameManager_obj.pickedWeapon.pistol)
@@ -79,39 +79,39 @@ if (!noHUD)
 		{
 			if (i > 2)
 			{
-				draw_sprite_ext(magazine_spr, -1, 207, 44 + 48 * (i - 3), 1, 1, -1, -1, 1);
+				draw_sprite_ext(magazine_spr, -1, 112, 32 + 24 * (i - 3), 1, 1, -1, -1, 1);
 			}
 			else
 			{
-				draw_sprite_ext(magazine_spr, -1, 145, 44 + 48 * i, 1, 1, -1, -1, 1);
+				draw_sprite_ext(magazine_spr, -1, 80, 24 + 24 * i, 1, 1, -1, -1, 1);
 			}
 		}
 	}
 	if (global.currentWeapon == gameManager_obj.pickedWeapon.dualBarettas)
 	{
-		for (i = 0; i < global.dualBarettasMag / 12; i++)
+		for (i = 0; i < global.dualBarettasMag / 8; i++)
 		{
 			if (i > 2)
 			{
-				draw_sprite_ext(magazine_spr, -1, 207, 44 + 48 * (i - 3), 1, 1, -1, -1, 1);
+				draw_sprite_ext(magazine_spr, -1, 112, 32 + 24 * (i - 3), 1, 1, -1, -1, 1);
 			}
 			else
 			{
-				draw_sprite_ext(magazine_spr, -1, 145, 44 + 48 * i, 1, 1, -1, -1, 1);
+				draw_sprite_ext(magazine_spr, -1, 80, 24 + 24 * i, 1, 1, -1, -1, 1);
 			}
 		}
 	}
 	if (global.currentWeapon == gameManager_obj.pickedWeapon.shotgun)
 	{
-		for (i = 0; i < global.shotgunMag / 2; i++)
+		for (i = 0; i < global.shotgunMag / 3; i++)
 		{
 			if (i > 2)
 			{
-				draw_sprite_ext(magazine_spr, -1, 207, 44 + 48 * (i - 3), 1, 1, -1, -1, 1);
+				draw_sprite_ext(magazine_spr, -1, 112, 32 + 24 * (i - 3), 1, 1, -1, -1, 1);
 			}
 			else
 			{
-				draw_sprite_ext(magazine_spr, -1, 145, 44 + 48 * i, 1, 1, -1, -1, 1);
+				draw_sprite_ext(magazine_spr, -1, 80, 24 + 24 * i, 1, 1, -1, -1, 1);
 			}
 		}
 	}
