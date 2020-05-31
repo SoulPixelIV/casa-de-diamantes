@@ -288,6 +288,7 @@ if (colliding)
 	if ((place_free(x + 1, y) && place_free(x - 1, y)) || grounded)
 	{
 		huggingWall = false;
+		setWallDir = false;
 	}
 
 	//verspeed
