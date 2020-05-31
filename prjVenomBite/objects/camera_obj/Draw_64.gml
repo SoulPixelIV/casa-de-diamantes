@@ -1,10 +1,11 @@
+if (live_call()) return live_result;
 //#####LAYER 0#####
 
 //Zombie Spikes
-draw_sprite_ext(zombiespikesEffectLeft_spr, 0, -zombiespikeEffectBorder, 0, 2, 2, 0, -1, zombiespikeBorderTransparent);
-draw_sprite_ext(zombiespikesEffectRight_spr, 0, 1034 + zombiespikeEffectBorder, 0, 2, 2, 0, -1, zombiespikeBorderTransparent);
-draw_sprite_ext(zombiespikesEffectTop_spr, 0, 0, -zombiespikeEffectBorder, 2, 2, 0, -1, zombiespikeBorderTransparent);
-draw_sprite_ext(zombiespikesEffectDown_spr, 0, 0, 364 + zombiespikeEffectBorder, 2, 2, 0, -1, zombiespikeBorderTransparent);
+draw_sprite_ext(zombiespikesEffectLeft_spr, 0, -zombiespikeEffectBorder, 0, 1, 1, 0, -1, zombiespikeBorderTransparent);
+draw_sprite_ext(zombiespikesEffectRight_spr, 0, 1034 + zombiespikeEffectBorder, 0, 1, 1, 0, -1, zombiespikeBorderTransparent);
+draw_sprite_ext(zombiespikesEffectTop_spr, 0, 0, -zombiespikeEffectBorder, 1, 1, 0, -1, zombiespikeBorderTransparent);
+draw_sprite_ext(zombiespikesEffectDown_spr, 0, 0, 364 + zombiespikeEffectBorder, 1, 1, 0, -1, zombiespikeBorderTransparent);
 
 draw_set_alpha(zombiespikeBorderTransparent);
 draw_ellipse_colour(-xScreenSize, -yScreenSize, xScreenSize, yScreenSize, c_black , c_green, false);
@@ -44,9 +45,9 @@ if (!noHUD)
 	draw_text_colour(32, 688, "Dash: " + string(player_obj.dashDelay), c_white, c_white, c_white, c_white, 1);
 
 	//Healthbar
-	draw_sprite_ext(healthbarBorder_spr, 0, 32, 16, 2, 2, 0, -1, 1);
-	draw_sprite_ext(healthbarTop2_spr, -1, 32, 234 - (player_obj.hp * 2.12), 2, 2, 0, -1, 1);
-	draw_sprite_ext(healthbar_spr, 0, 32, 256, 2, 2 * (player_obj.hp / 100) , 0, -1, 1);
+	draw_sprite_ext(healthbarBorder_spr, 0, 32, 16, 1, 1, 0, -1, 1);
+	draw_sprite_ext(healthbarTop2_spr, -1, 32, 20 - (player_obj.hp - 100), 1, 1, 0, -1, 1);
+	draw_sprite_ext(healthbar_spr, 0, 32, 137, 1, 1 * (player_obj.hp / 100) , 0, -1, 1);
 	//Healthcut
 	if (player_obj.syringesLost > 0)
 	{
@@ -56,7 +57,7 @@ if (!noHUD)
 	//Syringes
 	for (i = 0; i < player_obj.syringes; i++)
 	{
-		draw_sprite_ext(syringe_spr, -1, 86, 48 + 48 * i, 2, 2, -1, -1, 1);
+		draw_sprite_ext(syringe_spr, -1, 86, 48 + 48 * i, 1, 1, -1, -1, 1);
 	}
 	
 	//Infectionbar
@@ -69,7 +70,7 @@ if (!noHUD)
 	*/
 	
 	//Chipbar
-	draw_sprite_ext(scoreBorder_spr, -1, 1078, 16, 2, 2, 0, -1, 1);
+	draw_sprite_ext(scoreBorder_spr, -1, 1078, 16, 1, 1, 0, -1, 1);
 	
 	//Ammo
 	if (global.currentWeapon == gameManager_obj.pickedWeapon.pistol)
@@ -78,11 +79,11 @@ if (!noHUD)
 		{
 			if (i > 2)
 			{
-				draw_sprite_ext(magazine_spr, -1, 207, 44 + 48 * (i - 3), 2, 2, -1, -1, 1);
+				draw_sprite_ext(magazine_spr, -1, 207, 44 + 48 * (i - 3), 1, 1, -1, -1, 1);
 			}
 			else
 			{
-				draw_sprite_ext(magazine_spr, -1, 145, 44 + 48 * i, 2, 2, -1, -1, 1);
+				draw_sprite_ext(magazine_spr, -1, 145, 44 + 48 * i, 1, 1, -1, -1, 1);
 			}
 		}
 	}
@@ -92,11 +93,11 @@ if (!noHUD)
 		{
 			if (i > 2)
 			{
-				draw_sprite_ext(magazine_spr, -1, 207, 44 + 48 * (i - 3), 2, 2, -1, -1, 1);
+				draw_sprite_ext(magazine_spr, -1, 207, 44 + 48 * (i - 3), 1, 1, -1, -1, 1);
 			}
 			else
 			{
-				draw_sprite_ext(magazine_spr, -1, 145, 44 + 48 * i, 2, 2, -1, -1, 1);
+				draw_sprite_ext(magazine_spr, -1, 145, 44 + 48 * i, 1, 1, -1, -1, 1);
 			}
 		}
 	}
@@ -106,11 +107,11 @@ if (!noHUD)
 		{
 			if (i > 2)
 			{
-				draw_sprite_ext(magazine_spr, -1, 207, 44 + 48 * (i - 3), 2, 2, -1, -1, 1);
+				draw_sprite_ext(magazine_spr, -1, 207, 44 + 48 * (i - 3), 1, 1, -1, -1, 1);
 			}
 			else
 			{
-				draw_sprite_ext(magazine_spr, -1, 145, 44 + 48 * i, 2, 2, -1, -1, 1);
+				draw_sprite_ext(magazine_spr, -1, 145, 44 + 48 * i, 1, 1, -1, -1, 1);
 			}
 		}
 	}
