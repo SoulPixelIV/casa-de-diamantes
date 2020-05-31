@@ -66,13 +66,13 @@ if (xScreenSizeNew < xScreenSize)
 switch (currentCameraState)
 {
 	case cameraState.normal:
-		changeCamera_scr(464, 261);
+		changeCamera_scr(480, 270);
 		break;
 	case cameraState.zoomIn:
-		changeCamera_scr(208, 117);
+		changeCamera_scr(192, 108);
 		break;
 	case cameraState.zoomOut:
-		changeCamera_scr(672, 378);
+		changeCamera_scr(640, 360);
 		break;
 	case cameraState.zoomAFK:
 		changeCamera_scr(160, 90);

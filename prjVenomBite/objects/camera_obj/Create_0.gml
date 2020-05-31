@@ -1,5 +1,5 @@
-xScreenSize = 464;
-yScreenSize = 261;
+xScreenSize = 480;
+yScreenSize = 270;
 xScreenSizeNew = x;
 yScreenSizeNew = y;
 cameraSpeed = 1;
