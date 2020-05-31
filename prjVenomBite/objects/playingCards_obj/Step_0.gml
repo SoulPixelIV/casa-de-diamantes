@@ -4,8 +4,8 @@ if (mouse_x > x - 24 && mouse_x < x + 24)
 	{
 		if (image_xscale < 1.5 && !blackJackCalc_obj.holdingCard)
 		{
-			image_xscale += global.dt / 50;
-			image_yscale += global.dt / 50;
+			//image_xscale += global.dt / 50;
+			//image_yscale += global.dt / 50;
 		}
 		
 		//Moving Card

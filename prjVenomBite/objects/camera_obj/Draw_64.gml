@@ -1,4 +1,3 @@
-if (live_call()) return live_result;
 //#####LAYER 0#####
 
 //Zombie Spikes
@@ -29,7 +28,7 @@ else
 {
 	draw_set_alpha(0.1);
 }
-draw_ellipse_colour(-xScreenSize - 200, -yScreenSize - 200, xScreenSize * 16 / 1.5, yScreenSize * 9 / 1.5, c_black , c_red, false);
+draw_ellipse_colour(-200, -200, 600, 600, c_black , c_red, false);
 draw_set_alpha(1);
 
 //#####LAYER 1#####
