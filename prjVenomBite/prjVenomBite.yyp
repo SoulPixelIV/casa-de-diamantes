@@ -2279,6 +2279,14 @@
             }
         },
         {
+            "Key": "8201054b-6737-41a8-a21b-1f17ec5de06d",
+            "Value": {
+                "id": "05db565c-8a2d-4c77-b454-8c7943203674",
+                "resourcePath": "scripts\\fullDeath_scr\\fullDeath_scr.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "83369cc9-0e5f-41c1-bf58-622b737ddd35",
             "Value": {
                 "id": "3870d6e8-f260-4705-a0d0-d82cce12fc20",
@@ -4707,6 +4715,7 @@
         "378dea68-3862-43ef-8d62-dbd64009fd42",
         "cfb9536a-21a5-44ed-94e4-ee6665a826eb",
         "359e8d9f-b7d6-4ae8-bd96-47e8529f8191",
+        "8201054b-6737-41a8-a21b-1f17ec5de06d",
         "cd604960-1e15-435c-9e61-2f420dc13cf7",
         "313924c2-b345-40a3-b31a-5020a4c6f055",
         "7ec6e1a4-36c9-419e-87f2-6f5eda7e45d6",

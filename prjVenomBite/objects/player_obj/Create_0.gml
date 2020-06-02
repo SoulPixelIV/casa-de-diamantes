@@ -27,6 +27,7 @@ syringes = 0;
 zombieTimer = 1550;
 slowmoTimer = 600;
 damageCooldown = 400;
+lastCheckpoint = noone;
 
 //Effects
 vignetteFlashTimer = 90;

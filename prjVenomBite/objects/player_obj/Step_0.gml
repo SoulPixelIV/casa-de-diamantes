@@ -755,6 +755,11 @@ if (hp < 0 || infection > 100)
 	{
 		revive_scr();
 	}
+	//Full Death
+	if (keyboard_check_pressed(ord("Q")))
+	{
+		fullDeath_scr();
+	}
 }
 
 //Zombie
