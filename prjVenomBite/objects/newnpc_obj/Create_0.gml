@@ -1,1 +1,1 @@
-animationSpeed = 0.5;
+animationSpeed = 0.43;

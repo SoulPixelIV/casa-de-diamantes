@@ -991,6 +991,14 @@
             }
         },
         {
+            "Key": "3a084b02-aae1-4f2a-8e61-222b9306b08b",
+            "Value": {
+                "id": "34533f5b-8d4e-4a8c-a919-1808808df192",
+                "resourcePath": "sprites\\waterfall_spr\\waterfall_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "3bed5338-efff-42d2-beae-fb2bbd721315",
             "Value": {
                 "id": "8be9d34f-5908-4cba-b29f-3e2ca5a94267",
@@ -1036,6 +1044,14 @@
                 "id": "64d31eab-5442-4817-a9a2-d8715fa08182",
                 "resourcePath": "sprites\\playerShotgun_spr\\playerShotgun_spr.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "3e235100-0d22-4cca-90e0-8fcbff58d8e3",
+            "Value": {
+                "id": "8a7e1cef-1467-42c0-90d3-4f501001648f",
+                "resourcePath": "objects\\waterfall_obj\\waterfall_obj.yy",
+                "resourceType": "GMObject"
             }
         },
         {
