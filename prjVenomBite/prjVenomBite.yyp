@@ -1847,6 +1847,14 @@
             }
         },
         {
+            "Key": "6dffd60f-205f-403e-9a3d-d6e881dcb489",
+            "Value": {
+                "id": "e411775e-e1c1-4ca9-a046-e6ae10a7f6eb",
+                "resourcePath": "sprites\\waterfall2_spr\\waterfall2_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "6ea2aec8-0615-48aa-914d-7789fa25e4c6",
             "Value": {
                 "id": "1c6684ea-9323-46ff-ad06-c07fbdda41de",
@@ -3220,6 +3228,14 @@
                 "id": "897b7c1c-9141-474a-9a57-e82d6865b8cb",
                 "resourcePath": "views\\b2c044bf-e0ff-425d-a68d-475a4d9c0f73.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "b2cb7b39-82be-4602-8529-45db2afcbb05",
+            "Value": {
+                "id": "07678d71-2e7b-4007-9189-8921b55ae7c2",
+                "resourcePath": "objects\\waterfall2_obj\\waterfall2_obj.yy",
+                "resourceType": "GMObject"
             }
         },
         {
