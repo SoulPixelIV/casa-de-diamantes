@@ -5,6 +5,7 @@ camera_obj.drawInfectionText = false;
 player_obj.movement = true;
 player_obj.hp = 100;
 player_obj.maxhp = 100;
+player_obj.deathActivated = false;
 
 if (player_obj.lastCheckpoint != noone)
 {

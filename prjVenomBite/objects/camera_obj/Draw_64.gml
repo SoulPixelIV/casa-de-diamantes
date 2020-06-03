@@ -1,3 +1,6 @@
+edgeMarginVer = 8;
+edgeMarginHor = 16;
+
 //#####LAYER 0#####
 
 //Zombie Spikes
@@ -38,15 +41,15 @@ if (!noHUD)
 	draw_set_font(global.optixFont);
 	draw_set_color(c_white);
 	//Debug
-	draw_text_colour(16, 192, "Framerate: " + string(fps_real), c_white, c_white, c_white, c_white, 1);
-	draw_text_colour(16, 208, "Slowmo: " + string(player_obj.slowmoTimer), c_white, c_white, c_white, c_white, 1);
-	draw_text_colour(16, 224, "Roomspeed: " + string(fps), c_white, c_white, c_white, c_white, 1);
-	draw_text_colour(16, 240, "Dash: " + string(player_obj.dashDelay), c_white, c_white, c_white, c_white, 1);
+	draw_text_colour(edgeMarginHor, 192, "Framerate: " + string(fps_real), c_white, c_white, c_white, c_white, 1);
+	draw_text_colour(edgeMarginHor, 208, "Slowmo: " + string(player_obj.slowmoTimer), c_white, c_white, c_white, c_white, 1);
+	draw_text_colour(edgeMarginHor, 224, "Roomspeed: " + string(fps), c_white, c_white, c_white, c_white, 1);
+	draw_text_colour(edgeMarginHor, 240, "Dash: " + string(player_obj.dashDelay), c_white, c_white, c_white, c_white, 1);
 
 	//Healthbar
-	draw_sprite_ext(healthbarBorder_spr, 0, 16, 8, 1, 1, 0, -1, 1);
-	draw_sprite_ext(healthbarTop2_spr, -1, 16, 12 - (player_obj.hp - 100), 1, 1, 0, -1, 1);
-	draw_sprite_ext(healthbar_spr, 0, 16, 129, 1, 1 * (player_obj.hp / 100) , 0, -1, 1);
+	draw_sprite_ext(healthbarBorder_spr, 0, edgeMarginHor, edgeMarginVer, 1, 1, 0, -1, 1);
+	draw_sprite_ext(healthbarTop2_spr, -1, edgeMarginHor, 12 - (player_obj.hp - 100), 1, 1, 0, -1, 1);
+	draw_sprite_ext(healthbar_spr, 0, edgeMarginHor, 129, 1, 1 * (player_obj.hp / 100) , 0, -1, 1);
 	//Healthcut
 	if (player_obj.syringesLost > 0)
 	{
@@ -69,7 +72,7 @@ if (!noHUD)
 	*/
 	
 	//Chipbar
-	draw_sprite_ext(scoreBorder_spr, -1, 375, 8, 1, 1, 0, -1, 1);
+	draw_sprite_ext(scoreBorder_spr, -1, 375, edgeMarginVer, 1, 1, 0, -1, 1);
 	
 	//Ammo
 	if (global.currentWeapon == gameManager_obj.pickedWeapon.pistol)

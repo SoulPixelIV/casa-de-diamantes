@@ -13,15 +13,6 @@ key_jump_release = keyboard_check_released(vk_space) || gamepad_button_check_rel
 key_shift_hold = keyboard_check(vk_shift) || gamepad_button_check(0, gp_shoulderl);
 key_control = keyboard_check_pressed(vk_control) || gamepad_button_check(0, gp_face2);
 
-if (key_up)
-{
-	hp++;
-}
-if (key_down)
-{
-	hp--;
-}
-
 //Movement
 if (movement && !wallJumping && !isDashing)
 {
@@ -748,7 +739,11 @@ if (damageCooldown < 0)
 if (hp < 0 || infection > 100)
 {
 	//Death
-	death_scr();
+	if (!deathActivated)
+	{
+		death_scr();
+		deathActivated = true;
+	}
 	
 	//Revive
 	if (keyboard_check_pressed(ord("R")))
@@ -793,47 +788,52 @@ if (plagueTransformation)
 }
 
 //Slowmotion
-if (keyboard_check(vk_shift))
+if (!deathSlowmo)
 {
-	if (slowmoTimer > 0)
+	if (keyboard_check(vk_shift))
 	{
-		slowmo = true;
-		slowmoTimer -= global.dt * 3;
-		global.timeScale = 0.2;
+		if (slowmoTimer > 0)
+		{
+			slowmo = true;
+			slowmoTimer -= global.dt * 3;
+			global.timeScale = 0.2;
+		}
 	}
-}
-else
-{
-	slowmo = false;
-	if (slowmoTimer < slowmoTimerSave)
+	else
 	{
-		slowmoTimer += global.dt * 3.5;
+		slowmo = false;
+		if (slowmoTimer < slowmoTimerSave)
+		{
+			slowmoTimer += global.dt * 3.5;
+		}
+		global.timeScale = 1;
 	}
-	global.timeScale = 1;
-}
-if (slowmoTimer < 30)
-{
-	slowmo = false
-	global.timeScale = 1;
-}
-if (enemySlowmo)
-{
-	global.timeScale = 0.05;
-}
-if (enemyFlash)
-{
-	camera_obj.vignetteFlash = true;
-	vignetteFlashTimer -= global.dt * 3;
-}
-if (vignetteFlashTimer < 0)
-{	
-	camera_obj.follow = player_obj;
-	camera_obj.vignetteFlash = false;
-	enemySlowmo = false;
-	enemyFlash = false;
-	global.timeScale = 1;
-	enemySlowmo = false;
-	vignetteFlashTimer = vignetteFlashTimerSave;
+	
+	if (slowmoTimer < 30)
+	{
+		slowmo = false
+		global.timeScale = 1;
+	}
+	if (enemySlowmo)
+	{
+		global.timeScale = 0.05;
+	}
+	
+	if (enemyFlash)
+	{
+		camera_obj.vignetteFlash = true;
+		vignetteFlashTimer -= global.dt * 3;
+	}
+	if (vignetteFlashTimer < 0)
+	{	
+		camera_obj.follow = player_obj;
+		camera_obj.vignetteFlash = false;
+		enemySlowmo = false;
+		enemyFlash = false;
+		global.timeScale = 1;
+		enemySlowmo = false;
+		vignetteFlashTimer = vignetteFlashTimerSave;
+	}
 }
 
 //Camera Settings
@@ -841,3 +841,17 @@ if (!place_meeting(x, y, cameraViewIn_obj) && !place_meeting(x, y, cameraViewOut
 {
 	camera_obj.currentCameraState = cameraState.normal;
 }
+
+//Death Slowmo
+if (deathSlowmo)
+{
+	sprite_index = playerDeath_spr;
+	global.timeScale += global.dt / 200;
+	
+	if (global.timeScale > 0.95)
+	{
+		global.timeScale = 1;
+		deathSlowmo = false;
+	}
+}
+	

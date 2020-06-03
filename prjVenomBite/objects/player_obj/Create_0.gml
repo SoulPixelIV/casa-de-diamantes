@@ -22,7 +22,7 @@ flipAvail = false;
 flipUsed = false;
 
 //Action
-hp = 100;
+hp = 10;
 syringes = 0;
 zombieTimer = 1550;
 slowmoTimer = 600;
@@ -77,6 +77,8 @@ lightSize = 0;
 shortJump = false;
 createdParticles = false;
 landSoundPlayed = false;
+deathActivated = false;
+deathSlowmo = false;
 
 //Help Vars
 damageFlickerTimerSave = damageFlickerTimer;

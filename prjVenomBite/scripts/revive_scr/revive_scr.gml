@@ -16,4 +16,5 @@ player_obj.hp = 100 - 25 * player_obj.syringesLost;
 player_obj.maxhp -= 25;
 player_obj.invincible = true;
 player_obj.isZombie = true;
+player_obj.deathActivated = false;
 audio_play_sound(infectedVoice_snd, 1, false);
