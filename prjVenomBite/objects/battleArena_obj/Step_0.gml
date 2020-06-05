@@ -14,3 +14,52 @@ for (var i = 0; i < spawnNumber; i++)
 		}
 	}
 }
+
+//Count enemies
+var enemyList;
+var updatedEnemyCount = 0;
+
+//Find all enemies
+for (var i = 0; i < enemyNumber; i++)
+{
+	enemyList[i] = instance_find(enemy_obj, i);
+}
+for (var i = 0; i < enemyNumber; i++)
+{
+	if (place_meeting(x, y, enemyList[i]))	
+	{
+		updatedEnemyCount++;
+	}
+}
+
+//Use Gates
+if (place_meeting(x, y, player_obj) && updatedEnemyCount > 1)
+{
+	if (instance_exists(objectAccess))
+	{
+		objectNumber = instance_number(objectAccess);
+		for (var i = 0; i < objectNumber; i++)
+		{
+			selectedGate = instance_find(objectAccess, i);
+			if (place_meeting(x, y, selectedGate))
+			{
+				selectedGate.open = true;
+			}
+		}
+	}
+}
+else
+{
+	if (instance_exists(objectAccess))
+	{
+		objectNumber = instance_number(objectAccess);
+		for (var i = 0; i < objectNumber; i++)
+		{
+			selectedGate = instance_find(objectAccess, i);
+			if (place_meeting(x, y, selectedGate))
+			{
+				selectedGate.open = false;
+			}
+		}
+	}
+}

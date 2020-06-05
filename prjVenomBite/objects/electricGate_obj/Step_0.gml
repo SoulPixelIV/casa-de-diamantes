@@ -31,4 +31,22 @@ if (open)
 		}
 	}
 }
-
+else
+{
+	if (x > originX)
+	{
+		x -= global.dt / 10;
+	}
+	if (x < originX)
+	{
+		x += global.dt / 10;
+	}
+	if (y > originY)
+	{
+		y -= global.dt / 10;
+	}
+	if (y < originY)
+	{
+		y += global.dt / 10;
+	}
+}
