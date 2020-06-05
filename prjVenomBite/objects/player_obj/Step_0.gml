@@ -746,7 +746,7 @@ if (hp < 0 || infection > 100)
 	}
 	
 	//Revive
-	if (keyboard_check_pressed(ord("R")))
+	if (keyboard_check_pressed(ord("R")) && syringes > 0)
 	{
 		revive_scr();
 	}

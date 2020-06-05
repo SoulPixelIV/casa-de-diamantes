@@ -23,7 +23,7 @@ flipUsed = false;
 
 //Action
 hp = 10;
-syringes = 0;
+syringes = 1;
 zombieTimer = 1550;
 slowmoTimer = 600;
 damageCooldown = 400;

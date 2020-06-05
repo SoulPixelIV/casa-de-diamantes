@@ -125,17 +125,19 @@ draw_set_alpha(1);
 //Infectiontext
 if (drawInfectionText)
 {
-	draw_set_font(global.optixFontHuge);
+	draw_set_font(global.optixFont);
 	draw_set_color(c_white);
-	draw_text(136, 78, "PRESS 'R' TO INFECT YOURSELF!");
-	draw_text(136, 111, "PRESS 'Q' TO DIE INSTANTLY!");
+	draw_text(136, 90, "Syringes Left: " + string(player_obj.syringes))
+	draw_set_font(global.optixFontHuge);
+	draw_text(116, 78, "PRESS 'R' TO INFECT YOURSELF!");
+	draw_text(116, 131, "PRESS 'Q' TO DIE INSTANTLY!");
 }
 if (player_obj.isZombie)
 {
 	draw_set_font(global.optixFontHuge);
 	draw_set_color(c_white);
-	draw_text(136, 78, "PRESS 'F' TO BECOME HUMAN AGAIN!");
-	draw_text(136, 111, "PRESS 'Q' TO DIE INSTANTLY!");
+	draw_text(116, 78, "PRESS 'F' TO BECOME HUMAN AGAIN!");
+	draw_text(116, 111, "PRESS 'Q' TO DIE INSTANTLY!");
 }
 
 //#####LAYER 3#####
