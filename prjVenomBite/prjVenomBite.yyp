@@ -2375,6 +2375,14 @@
             }
         },
         {
+            "Key": "84c67fe9-08c2-4a85-ac69-1efb3295b5be",
+            "Value": {
+                "id": "939d33cf-da5a-45d4-9544-9b761de3bbf6",
+                "resourcePath": "objects\\battleArena_obj\\battleArena_obj.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "84d30723-7254-44a9-978a-de1cd589a612",
             "Value": {
                 "id": "7ed35ef9-ccc2-4efa-b30d-51cce1cf7335",
@@ -4060,6 +4068,14 @@
                 "id": "fa49b236-14df-40c2-b5a0-663bb53a45bd",
                 "resourcePath": "sprites\\checkpointOLD_spr\\checkpointOLD_spr.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "db5c03fb-589e-417c-8ae9-8fb67001fc1f",
+            "Value": {
+                "id": "3f3f7018-680d-481c-8fb9-761d4a540f0c",
+                "resourcePath": "objects\\battleArenaSpawn_obj\\battleArenaSpawn_obj.yy",
+                "resourceType": "GMObject"
             }
         },
         {
