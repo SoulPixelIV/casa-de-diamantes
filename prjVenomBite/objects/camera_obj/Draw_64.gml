@@ -127,7 +127,7 @@ if (drawInfectionText)
 {
 	draw_set_font(global.optixFont);
 	draw_set_color(c_white);
-	draw_text(136, 90, "Syringes Left: " + string(player_obj.syringes))
+	draw_text(136, 100, "Syringes Left: " + string(player_obj.syringes))
 	draw_set_font(global.optixFontHuge);
 	draw_text(116, 78, "PRESS 'R' TO INFECT YOURSELF!");
 	draw_text(116, 131, "PRESS 'Q' TO DIE INSTANTLY!");

@@ -2695,6 +2695,14 @@
             }
         },
         {
+            "Key": "957a3f01-90c2-4484-83af-c49b545f5e4b",
+            "Value": {
+                "id": "c622631c-f507-40a9-91a2-9c68c2767c58",
+                "resourcePath": "sprites\\spawnCloud_spr\\spawnCloud_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "959bcafd-9726-436b-9469-fe28e740d082",
             "Value": {
                 "id": "98e7b459-d983-4519-9c40-555f8b382004",
@@ -2852,6 +2860,14 @@
                 "id": "dbe04c18-1a82-48c2-b733-23635eeb5495",
                 "resourcePath": "sprites\\explosionVerySmall_spr\\explosionVerySmall_spr.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "9b87cc13-739a-4864-acd8-4b4d3e086126",
+            "Value": {
+                "id": "94cf7323-bdb5-4615-bdf1-e7c2c8da76ae",
+                "resourcePath": "objects\\spawnCloud_obj\\spawnCloud_obj.yy",
+                "resourceType": "GMObject"
             }
         },
         {

@@ -9,7 +9,8 @@ for (var i = 0; i < spawnNumber; i++)
 		selectedSpawn = instance_find(battleArenaSpawn_obj, i);
 		if (selectedSpawn.spawnedEnemy == false && selectedSpawn.wave = wave)
 		{
-			instance_create_layer(selectedSpawn.x, selectedSpawn.y, "Instances", selectedSpawn.enemy);
+			var spawnCloud = instance_create_layer(selectedSpawn.x, selectedSpawn.y, "Instances", spawnCloud_obj);
+			spawnCloud.spawnObject = selectedSpawn.enemy;
 			selectedSpawn.spawnedEnemy = true;
 		}
 	}
