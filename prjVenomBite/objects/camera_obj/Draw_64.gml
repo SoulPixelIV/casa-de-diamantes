@@ -3,22 +3,6 @@ edgeMarginHor = 16;
 
 //#####LAYER 0#####
 
-//Zombie Spikes
-draw_sprite_ext(zombiespikesEffectLeft_spr, 0, -zombiespikeEffectBorder, 0, 1, 1, 0, -1, zombiespikeBorderTransparent);
-draw_sprite_ext(zombiespikesEffectRight_spr, 0, 1034 + zombiespikeEffectBorder, 0, 1, 1, 0, -1, zombiespikeBorderTransparent);
-draw_sprite_ext(zombiespikesEffectTop_spr, 0, 0, -zombiespikeEffectBorder, 1, 1, 0, -1, zombiespikeBorderTransparent);
-draw_sprite_ext(zombiespikesEffectDown_spr, 0, 0, 364 + zombiespikeEffectBorder, 1, 1, 0, -1, zombiespikeBorderTransparent);
-
-draw_set_alpha(zombiespikeBorderTransparent);
-draw_ellipse_colour(-xScreenSize, -yScreenSize, xScreenSize, yScreenSize, c_black , c_green, false);
-draw_set_alpha(1);
-
-if (zombiespikeEffectBorder > 0 && player_obj.plagueTransformation)
-{
-	zombiespikeEffectBorder -= global.dt / 20;
-	zombiespikeBorderTransparent += global.dt / 8500;
-}
-
 //Lens Dirt + Vignette
 draw_sprite_ext(lensDirt_spr, 0, -20, -20, 1, 1, 0, -1, 0.075);
 	
@@ -70,7 +54,6 @@ if (!noHUD)
 		draw_sprite_ext(infectionbar_spr, 0, 256, 128, player_obj.infection / 100, 1, 0, -1, 1);
 	}
 	*/
-	
 	//Chipbar
 	draw_sprite_ext(scoreBorder_spr, -1, 375, edgeMarginVer, 1, 1, 0, -1, 1);
 	
@@ -122,6 +105,40 @@ if (!noHUD)
 //#####LAYER 2#####
 
 draw_set_alpha(1);
+
+//Hourglass
+if (player_obj.plagueTransformation)
+{
+	if (player_obj.infection < 10)
+	{
+		draw_sprite(hourglass_spr, 0, 447, 230);
+	}
+	if (player_obj.infection > 10 && player_obj.infection < 20)
+	{
+		draw_sprite(hourglass_spr, 1, 447, 230);
+	}
+	if (player_obj.infection > 20 && player_obj.infection < 40)
+	{
+		draw_sprite(hourglass_spr, 2, 447, 230);
+	}
+	if (player_obj.infection > 40 && player_obj.infection < 50)
+	{
+		draw_sprite(hourglass_spr, 3, 447, 230);
+	}
+	if (player_obj.infection > 50 && player_obj.infection < 70)
+	{
+		draw_sprite(hourglass_spr, 4, 447, 230);
+	}
+	if (player_obj.infection > 70 && player_obj.infection < 90)
+	{
+		draw_sprite(hourglass_spr, 5, 447, 230);
+	}
+	if (player_obj.infection > 90)
+	{
+		draw_sprite(hourglass_spr, 6, 447, 230);
+	}
+}
+
 //Infectiontext
 if (drawInfectionText)
 {
