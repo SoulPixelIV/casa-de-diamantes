@@ -3063,6 +3063,14 @@
             }
         },
         {
+            "Key": "a70f54d9-9fb0-477f-b90d-67b58d7b89a1",
+            "Value": {
+                "id": "48e41964-137b-4673-a0aa-bbd6c774dd21",
+                "resourcePath": "sprites\\casinoBuildingNEW_spr\\casinoBuildingNEW_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "a752e42e-fd5b-41d2-ad6d-b78364f813ae",
             "Value": {
                 "id": "01d18377-d86e-44cc-8cac-6eb0ec3665cb",
