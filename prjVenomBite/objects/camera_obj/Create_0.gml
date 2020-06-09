@@ -42,7 +42,7 @@ view_camera[0] = camera;
 
 follow = player_obj;
 
-if (player_obj != noone)
+if (instance_exists(player_obj))
 {
 	x = player_obj.x;
 	y = player_obj.y;

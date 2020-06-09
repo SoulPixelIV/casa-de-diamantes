@@ -1615,6 +1615,14 @@
             }
         },
         {
+            "Key": "65315e10-350b-4881-b671-05420ad6eae5",
+            "Value": {
+                "id": "6d6bf1ed-cb9b-410b-8cc7-38ab048d31b6",
+                "resourcePath": "rooms\\level_CasinoHub\\level_CasinoHub.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "659c1ed8-6be9-4c9b-9a9a-5d0762ca1f13",
             "Value": {
                 "id": "dafa686e-cc86-4d06-85fc-677466a4399f",
@@ -1716,6 +1724,14 @@
                 "id": "6c4a672c-7668-44a1-a0d5-5331b82897ab",
                 "resourcePath": "objects\\doorDecorative_obj\\doorDecorative_obj.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "69d3be8d-f355-437f-bbca-fbac77f54d71",
+            "Value": {
+                "id": "1afe4eaa-517d-4df1-8722-365951b57ad2",
+                "resourcePath": "sprites\\waterfall2_spr\\waterfall2_spr.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1844,14 +1860,6 @@
                 "id": "171d775d-5ce8-4a4f-8488-266e1e290fd0",
                 "resourcePath": "objects\\spotlightBlue_obj\\spotlightBlue_obj.yy",
                 "resourceType": "GMObject"
-            }
-        },
-        {
-            "Key": "6dffd60f-205f-403e-9a3d-d6e881dcb489",
-            "Value": {
-                "id": "e411775e-e1c1-4ca9-a046-e6ae10a7f6eb",
-                "resourcePath": "sprites\\waterfall2_spr\\waterfall2_spr.yy",
-                "resourceType": "GMSprite"
             }
         },
         {
@@ -3627,6 +3635,14 @@
             "Value": {
                 "id": "7e9f53a5-da48-4299-aab6-69afe5b80420",
                 "resourcePath": "sprites\\cameraViewIcon_spr\\cameraViewIcon_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "c31b114c-4e9d-4d75-8c8e-5f91b3c75b06",
+            "Value": {
+                "id": "384790f0-7c6d-4ffc-81f5-cdd28fe0ffc0",
+                "resourcePath": "sprites\\waterfall3_spr\\waterfall3_spr.yy",
                 "resourceType": "GMSprite"
             }
         },
