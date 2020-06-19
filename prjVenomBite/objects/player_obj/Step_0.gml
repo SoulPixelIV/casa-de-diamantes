@@ -279,7 +279,7 @@ if (colliding)
 			{
 				horspeed = 0;
 			}
-			if (!grounded)
+			if (!grounded && verspeed > 0)
 			{
 				huggingWall = true;
 			}
