@@ -1143,6 +1143,14 @@
             }
         },
         {
+            "Key": "41ca4c56-d335-4b4b-b7fd-34182265e55f",
+            "Value": {
+                "id": "4489f675-778e-45cd-a60f-8254fa30e0d0",
+                "resourcePath": "sprites\\zombieGirlWoundedFlash_spr\\zombieGirlWoundedFlash_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "41f17b9d-be99-4663-b71a-d9138163cc90",
             "Value": {
                 "id": "5db10a5f-b0c3-4c34-8655-f3b34d3c194c",
@@ -3255,6 +3263,14 @@
             }
         },
         {
+            "Key": "b2551bba-324b-4533-87f0-0c6b70d00991",
+            "Value": {
+                "id": "72b06898-2330-486a-b151-61b425082195",
+                "resourcePath": "objects\\zombieGirlWounded_obj\\zombieGirlWounded_obj.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "b259a5f8-db04-4cf8-a95e-ea6bdf9719d3",
             "Value": {
                 "id": "c054d279-fb54-4197-abd3-41f32076b6ff",
@@ -4683,6 +4699,14 @@
             "Value": {
                 "id": "937111f5-70a2-4e48-9662-c23573f18ea4",
                 "resourcePath": "sprites\\playerOLD_spr\\playerOLD_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "fab00cdd-c2d0-43c3-8507-cb5f3893df36",
+            "Value": {
+                "id": "817e77c2-02c7-4c2c-80f1-527a6a771909",
+                "resourcePath": "sprites\\zombieGirlWounded_spr\\zombieGirlWounded_spr.yy",
                 "resourceType": "GMSprite"
             }
         },
