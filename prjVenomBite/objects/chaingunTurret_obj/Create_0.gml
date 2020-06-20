@@ -4,7 +4,7 @@ shootDelay = 5;
 throttle = false;
 
 setTarget = false;
-if (player_obj != noone)
+if (instance_exists(player_obj))
 {
 	targetX = player_obj.x;
 	targetY = player_obj.y;

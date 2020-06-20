@@ -1,6 +1,8 @@
 /// @description Movement
 
-speed = movSpeed * global.dt;
+speedMov = movSpeed * global.dt;
+x += lengthdir_x(speedMov, image_angle)
+y += lengthdir_y(speedMov, image_angle)
 
 //Invincibility
 if (invincibilityTimer > 0)
