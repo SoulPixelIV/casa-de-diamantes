@@ -2,7 +2,7 @@
     "id": "26d188ee-3c31-4023-bced-0beecdb7e053",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "RTC_12_teleporter",
+    "name": "RTC_0_teleporter",
     "eventList": [
         {
             "id": "1e759904-efe8-4e7b-9cd4-a162d37ddd84",
@@ -34,5 +34,5 @@
     "properties": null,
     "solid": false,
     "spriteId": "e3007b1f-e6cd-4a99-88f1-30f00368a107",
-    "visible": true
+    "visible": false
 }

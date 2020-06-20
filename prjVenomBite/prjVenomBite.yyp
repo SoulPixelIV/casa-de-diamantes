@@ -514,7 +514,7 @@
             "Key": "1dee552c-b94f-40e7-b2d2-85c4a1fabf93",
             "Value": {
                 "id": "f4c03aab-cc6b-46d8-b9ff-b72f1fe57734",
-                "resourcePath": "objects\\RTC_01_teleporter\\RTC_01_teleporter.yy",
+                "resourcePath": "objects\\RTC_1_teleporter\\RTC_1_teleporter.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -618,7 +618,7 @@
             "Key": "26d188ee-3c31-4023-bced-0beecdb7e053",
             "Value": {
                 "id": "153afafd-c3f2-4555-8d27-7f969785ca8d",
-                "resourcePath": "objects\\RTC_12_teleporter\\RTC_12_teleporter.yy",
+                "resourcePath": "objects\\RTC_0_teleporter\\RTC_0_teleporter.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -1900,14 +1900,6 @@
                 "id": "b64f05fc-0d10-4f64-97a8-7d134c504f74",
                 "resourcePath": "sprites\\chipRed_spr\\chipRed_spr.yy",
                 "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "6f1cfbd7-a5e0-4ab4-a10d-3b47766eb71e",
-            "Value": {
-                "id": "cb970858-6fef-48c0-b093-61562f819e11",
-                "resourcePath": "objects\\RTC_11_teleporter\\RTC_11_teleporter.yy",
-                "resourceType": "GMObject"
             }
         },
         {

@@ -8,4 +8,5 @@ if (falling)
 if (!place_free(x, y))
 {
     falling = false;
+	instance_destroy();
 }

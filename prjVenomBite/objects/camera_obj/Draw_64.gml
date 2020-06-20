@@ -57,6 +57,11 @@ if (!noHUD)
 	//Chipbar
 	draw_sprite_ext(scoreBorder_spr, -1, 375, edgeMarginVer, 1, 1, 0, -1, 1);
 	
+	for (i = 0; i < array_length_1d(digitsManager_obj.value); i++)
+	{
+		draw_text(415 - (i*16), edgeMarginVer, digitsManager_obj.value[i]);
+	}
+	
 	//Ammo
 	if (global.currentWeapon == gameManager_obj.pickedWeapon.pistol)
 	{
