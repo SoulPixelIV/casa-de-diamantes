@@ -599,14 +599,6 @@
             }
         },
         {
-            "Key": "25c27325-dfae-4e53-b5b4-57311620e2dd",
-            "Value": {
-                "id": "11b88163-a5f8-4932-ad6d-473b91726c12",
-                "resourcePath": "objects\\ledSignGithub_obj\\ledSignGithub_obj.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "263ade7e-0630-47e8-a0ce-ef16b8a8fb1f",
             "Value": {
                 "id": "9e2aab5d-272d-422f-9607-087ccb82f400",
@@ -4780,14 +4772,6 @@
                 "id": "e60992ab-3cda-45f2-b40c-92fea6dc62fa",
                 "resourcePath": "sprites\\colliderBox_spr\\colliderBox_spr.yy",
                 "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "fe59b418-74da-4c84-b6f5-44c00af4b860",
-            "Value": {
-                "id": "e761fd4b-d41d-41ca-b320-642385de2864",
-                "resourcePath": "objects\\ledSignDiscord_obj\\ledSignDiscord_obj.yy",
-                "resourceType": "GMObject"
             }
         },
         {
