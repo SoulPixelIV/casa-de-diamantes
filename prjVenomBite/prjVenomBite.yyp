@@ -511,6 +511,14 @@
             }
         },
         {
+            "Key": "1dec184f-7340-4de0-b744-f0e91c641971",
+            "Value": {
+                "id": "ef5da857-c499-40c2-9d2c-8459f39fbf8e",
+                "resourcePath": "tilesets\\voidBackground\\voidBackground.yy",
+                "resourceType": "GMTileSet"
+            }
+        },
+        {
             "Key": "1dee552c-b94f-40e7-b2d2-85c4a1fabf93",
             "Value": {
                 "id": "f4c03aab-cc6b-46d8-b9ff-b72f1fe57734",
@@ -1828,6 +1836,14 @@
                 "id": "d4a14926-da64-4516-8d21-e2c6d35492d2",
                 "resourcePath": "objects\\camera_obj\\camera_obj.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "6c39a6dc-0527-4e88-9c2d-aa1f8a16de8a",
+            "Value": {
+                "id": "f93048b8-283e-49e5-8b52-6a59d809e3c0",
+                "resourcePath": "sprites\\voidBackground_spr\\voidBackground_spr.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

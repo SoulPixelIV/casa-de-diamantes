@@ -12,7 +12,8 @@
         "ab550559-0d99-4e79-8723-1ea90132c16a",
         "ae8fe856-051e-452a-8df4-727de5e9c866",
         "c0febdb3-1eba-47e3-8446-134774adb175",
-        "e1ed1098-d13a-4769-a14a-abe33f7c7339"
+        "e1ed1098-d13a-4769-a14a-abe33f7c7339",
+        "6c39a6dc-0527-4e88-9c2d-aa1f8a16de8a"
     ],
     "filterType": "GMSprite",
     "folderName": "Tilesets",
