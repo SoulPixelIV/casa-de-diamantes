@@ -87,6 +87,14 @@
             }
         },
         {
+            "Key": "02532902-6089-4da8-b265-7e4abb5ca48b",
+            "Value": {
+                "id": "0c673fd7-d4a3-47f7-976f-419937d6306a",
+                "resourcePath": "notes\\compatibility_report_230620_20351351.yy",
+                "resourceType": "GMNotes"
+            }
+        },
+        {
             "Key": "03323ae0-9d13-4571-a7bb-244f1d01bbff",
             "Value": {
                 "id": "2b01d6d1-56a6-4a27-bb11-10c9df986bb1",
@@ -3527,6 +3535,14 @@
             }
         },
         {
+            "Key": "bd2638f4-da22-4f12-91e8-96c9bb5e0f1b",
+            "Value": {
+                "id": "7441975c-9075-474c-b092-1337afbc1c8b",
+                "resourcePath": "objects\\CHub_teleporter1\\CHub_teleporter1.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "bd2ac676-5d1b-48e0-b932-0c914118ae31",
             "Value": {
                 "id": "de8732cb-9f30-4c88-9961-bc71f49a399f",
@@ -3556,6 +3572,14 @@
                 "id": "91da8443-71b6-4f41-9572-2ec30b28cbf8",
                 "resourcePath": "scripts\\light_acknowledge_shadow_caster\\light_acknowledge_shadow_caster.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "be792f72-be98-42b0-ae0c-a700a30bb7c9",
+            "Value": {
+                "id": "694fb3fd-be85-4a7e-8817-1fc91a87eaa9",
+                "resourcePath": "extensions\\display_mouse_lock\\display_mouse_lock.yy",
+                "resourceType": "GMExtension"
             }
         },
         {
