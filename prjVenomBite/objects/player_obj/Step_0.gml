@@ -370,7 +370,13 @@ if (onLadder)
 	{
 		verspeed = 0;
 	}
+	movSpeed = movSpeedSave / 2
 }
+else
+{
+	movSpeed = movSpeedSave;
+}
+	
 if (huggingWall && !onLadder && !grounded)
 {
 	verspeed = 0.2;
