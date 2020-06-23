@@ -220,7 +220,7 @@ with (gameManager_obj)
 	{
 		with (player_obj)
 		{
-			if (key_jump && !huggingWall && !wallJumping && !grounded && !isDashing && !flipUsed && jumpType == 1)
+			if (key_jump && !huggingWall && !wallJumping && !grounded && !isDashing && !flipUsed && jumpType == 1 && fallJumpSafety < 0 && wallJumps > 0)
 			{
 				sprite_index = playerFlip_spr;
 				invincible = true;
@@ -785,7 +785,7 @@ if (plagueTransformation)
 //Slowmotion
 if (!deathSlowmo)
 {
-	if (!player_obj.grounded && jumpType == 2 && !huggingWall && !wallJumping)
+	if (!player_obj.grounded && jumpType == 2 && !huggingWall && !wallJumping && wallJumps > 0)
 	{
 		if (key_jump_hold)
 		{

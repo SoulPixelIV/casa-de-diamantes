@@ -1,4 +1,4 @@
-if (player_obj.grounded)
+if (player_obj.grounded || (player_obj.fallJumpSafety > 0 && !player_obj.grounded))
 {
 	player_obj.verspeed = -player_obj.jumpStrength;
 	player_obj.jumpType = 1;
