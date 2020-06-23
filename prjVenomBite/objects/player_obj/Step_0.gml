@@ -11,7 +11,8 @@ key_jump = keyboard_check_pressed(vk_space) || gamepad_button_check_pressed(0, g
 key_jump_hold = keyboard_check(vk_space) || gamepad_button_check(0, gp_face1);
 key_jump_release = keyboard_check_released(vk_space) || gamepad_button_check_released(0, gp_face1);
 key_shift_hold = keyboard_check(vk_shift) || gamepad_button_check(0, gp_shoulderl);
-key_control = keyboard_check_pressed(vk_control) || gamepad_button_check(0, gp_face2);
+key_shift = keyboard_check_pressed(vk_shift) || gamepad_button_check_pressed(0, gp_shoulderl);
+key_control = keyboard_check_pressed(vk_control) || gamepad_button_check_pressed(0, gp_face2);
 
 //Movement
 if (movement && !wallJumping && !isDashing)
@@ -75,12 +76,12 @@ if (verspeed < 2 && !onLadder)
 if (movement && !isZombie)
 {
 	//Jump
-	if (grounded && key_jump || fallJumpSafety > 0 && key_jump && horspeed == 0)
+	if (grounded && key_jump || fallJumpSafety > 0 && key_jump)
 	{
 		jump_scr();
 	}
 	//Dash
-	if (key_control && !isDashing && dashDelay < 0)
+	if (key_shift && !isDashing && dashDelay < 0)
 	{
 		if (horspeed > 0.3 || horspeed < -0.3)
 		{
@@ -219,12 +220,11 @@ with (gameManager_obj)
 	{
 		with (player_obj)
 		{
-			if (key_jump && (verspeed == 0 || flipAvail) && !isDashing)
+			if (key_jump && !huggingWall && !wallJumping && !grounded && !isDashing && !flipUsed && jumpType == 1)
 			{
 				sprite_index = playerFlip_spr;
 				invincible = true;
 				flip = true;
-				flipAvail = false;
 				flipUsed = true;
 				jump_scr();
 			}
@@ -235,19 +235,7 @@ with (gameManager_obj)
 if (grounded || isDashing)
 {
 	flip = false;
-	flipAvail = false;
 	flipUsed = false;
-	flipTiming = flipTimingSave;
-}
-
-if (verspeed > 0 && !grounded && !flipUsed && !isDashing)
-{
-	flipAvail = true;
-	flipTiming -= global.dt;
-}
-if (flipTiming < 0)
-{
-	flipAvail = false;
 }
 
 //Jump Spin
@@ -797,23 +785,22 @@ if (plagueTransformation)
 //Slowmotion
 if (!deathSlowmo)
 {
-	if (keyboard_check(vk_shift))
+	if (!player_obj.grounded && jumpType == 2 && !huggingWall && !wallJumping)
 	{
-		if (slowmoTimer > 0)
+		if (key_jump_hold)
 		{
-			slowmo = true;
-			slowmoTimer -= global.dt * 3;
-			global.timeScale = 0.2;
+			if (slowmoTimer > 0)
+			{
+				slowmo = true;
+				slowmoTimer -= global.dt * 3;
+				global.timeScale = 0.2;
+			}
 		}
-	}
-	else
-	{
-		slowmo = false;
-		if (slowmoTimer < slowmoTimerSave)
+		else
 		{
-			slowmoTimer += global.dt * 3.5;
+			slowmo = false;
+			global.timeScale = 1;
 		}
-		global.timeScale = 1;
 	}
 	
 	if (slowmoTimer < 30)

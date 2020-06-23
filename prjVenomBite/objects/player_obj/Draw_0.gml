@@ -18,15 +18,6 @@ if (!flip)
 	}
 }
 
-//Flip Sparkle
-if (global.currentWeapon != gameManager_obj.pickedWeapon.unarmed)
-{
-	if (flipAvail)
-	{
-		draw_sprite(redSparkle_spr, 0, x + 8, y + 6);
-	}
-}
-
 if (isDashing)
 {
 	changePos = 0;

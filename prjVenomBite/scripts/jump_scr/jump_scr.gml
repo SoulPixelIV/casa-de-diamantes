@@ -1,10 +1,12 @@
 if (player_obj.grounded)
 {
 	player_obj.verspeed = -player_obj.jumpStrength;
+	player_obj.jumpType = 1;
 }
 else
 {
 	player_obj.verspeed = -player_obj.jumpStrength / 1.4;
+	player_obj.jumpType = 2;
 }
 
 if (player_obj.isDashing)
