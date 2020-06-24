@@ -7,11 +7,33 @@ global.dtNoSlowmo = delta_time / ideal_delta_time;
 //Timescale
 if (realTimeScale < global.timeScale)
 {
-	realTimeScale += 0.01;
+	if (!player_obj.enemyFlash)
+	{
+		realTimeScale += 0.01;
+	}
+	else
+	{
+		realTimeScale += 0.03;
+	}
 }
 if (realTimeScale > global.timeScale)
 {
-	realTimeScale -= 0.01;
+	if (!player_obj.enemyFlash)
+	{
+		realTimeScale -= 0.01;
+	}
+	else
+	{
+		realTimeScale -= 0.03;
+	}
+}
+if (realTimeScale > global.timeScale - 0.05)
+{
+	realTimeScale = global.timeScale;
+}
+if (realTimeScale < global.timeScale + 0.05)
+{
+	realTimeScale = global.timeScale;
 }
 
 //Lock Cursor

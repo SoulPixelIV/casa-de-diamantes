@@ -85,30 +85,29 @@ if (argument0 == "shotgun")
 		
 		if (!huggingWall)
 		{
-			if (dirCursor > 310 || dirCursor < 50)
+			if (dirCursor > 0 && dirCursor <90)
 			{
 				horspeed -= shotJumpStrength / 3;
+				verspeed += shotJumpStrength / 3;
 			}
-			else if (dirCursor > 130 && dirCursor < 230)
+			if (dirCursor < 180 && dirCursor > 90)
 			{
 				horspeed += shotJumpStrength / 3;
+				verspeed += shotJumpStrength / 3;
 			}
-			else if (image_xscale == 1)
+			if (dirCursor > 180 && dirCursor < 270)
 			{
-				horspeed -= shotJumpStrength / 6;
+				horspeed += shotJumpStrength / 3;
+				verspeed -= shotJumpStrength / 3;
 			}
-			else
+			if (dirCursor < 360 && dirCursor > 270)
 			{
-				horspeed += shotJumpStrength / 6;
+				horspeed -= shotJumpStrength / 3;
+				verspeed -= shotJumpStrength / 3;
 			}
 		}
 		global.shotgunAmmo--;
 		global.shotgunCooldown = global.shotgunCooldownSave;
 		shotZoom = true;
-		
-		if (dirCursor > 205 && dirCursor < 340)
-		{
-			verspeed = -shotJumpStrength / 2;
-		}
 	}
 }

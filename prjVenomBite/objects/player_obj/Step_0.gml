@@ -23,7 +23,10 @@ if (movement && !wallJumping && !isDashing)
 		{
 			if (!isZombie)
 			{
-				horspeed = movSpeed;
+				if (horspeed < movSpeed)
+				{
+					horspeed = movSpeed;
+				}
 			} 
 			else
 			{
@@ -39,7 +42,10 @@ if (movement && !wallJumping && !isDashing)
 		{
 			if (!isZombie)
 			{
-				horspeed = -movSpeed;
+				if (horspeed > -movSpeed)
+				{
+					horspeed = -movSpeed;
+				}
 			}
 			else
 			{
@@ -832,7 +838,7 @@ if (!deathSlowmo)
 	if (enemyFlash)
 	{
 		camera_obj.vignetteFlash = true;
-		vignetteFlashTimer -= global.dt / 3;
+		vignetteFlashTimer -= global.dt;
 	}
 	if (vignetteFlashTimer < 0)
 	{	
@@ -841,7 +847,6 @@ if (!deathSlowmo)
 		enemySlowmo = false;
 		enemyFlash = false;
 		global.timeScale = 1;
-		enemySlowmo = false;
 		vignetteFlashTimer = vignetteFlashTimerSave;
 	}
 }
