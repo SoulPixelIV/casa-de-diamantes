@@ -13,7 +13,8 @@
         "fcf4c7eb-f969-4875-840c-7b41f15a51ad",
         "04b09689-b420-42be-ad2b-69cf6b147425",
         "881a8ae1-cb39-4844-afec-01ffb5f729dc",
-        "959bcafd-9726-436b-9469-fe28e740d082"
+        "959bcafd-9726-436b-9469-fe28e740d082",
+        "763f892f-e184-45d2-b478-7d49980a117d"
     ],
     "filterType": "GMSprite",
     "folderName": "Graphics",

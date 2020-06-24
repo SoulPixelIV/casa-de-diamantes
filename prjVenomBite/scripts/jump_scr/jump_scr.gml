@@ -7,6 +7,7 @@ else
 {
 	player_obj.verspeed = -player_obj.jumpStrength / 1.4;
 	player_obj.jumpType = 2;
+	instance_create_layer(player_obj.x, player_obj.y + 16, "Instances", sparkleCloud_obj);
 }
 
 if (player_obj.isDashing)
