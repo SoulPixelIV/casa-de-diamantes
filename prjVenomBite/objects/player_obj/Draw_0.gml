@@ -6,7 +6,7 @@ pistolSprite = playerPistol_spr;
 dualBarettasSprite = playerDualBarettas_spr;
 shotgunSprite = playerShotgun_spr
 
-if (!flip)
+if (!flip || flip && huggingWall)
 {
 	if (dirCursor > 90 && dirCursor < 270)
 	{
