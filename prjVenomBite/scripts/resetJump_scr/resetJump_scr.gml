@@ -6,6 +6,8 @@ player_obj.jumping = false;
 player_obj.groundCollisionTimerOn = true;
 player_obj.jumpType = 0;
 player_obj.slowmoTimer = player_obj.slowmoTimerSave;
+player_obj.slowmo = false;
+
 if (verspeed >= 0)
 {
 	player_obj.grounded = true;

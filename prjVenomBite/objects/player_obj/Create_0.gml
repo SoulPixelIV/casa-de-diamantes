@@ -25,7 +25,7 @@ flipUsed = false;
 hp = 100;
 syringes = 1;
 zombieTimer = 1550;
-slowmoTimer = 200;
+slowmoTimer = 360;
 damageCooldown = 400;
 lastCheckpoint = noone;
 

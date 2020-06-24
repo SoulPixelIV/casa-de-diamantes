@@ -201,6 +201,15 @@ if (movement && !isZombie)
 			setWallDir = false;
 		}
 	}
+	if (huggingWall && key_down)
+	{
+		huggingWall = false;
+		setWallDir = false;
+	}
+	if (huggingWall)
+	{
+		slowmo = false;
+	}
 }
 
 if (wallJumping)
@@ -793,14 +802,21 @@ if (!deathSlowmo)
 			{
 				slowmo = true;
 				slowmoTimer -= global.dt * 3;
-				global.timeScale = 0.2;
 			}
 		}
 		else
 		{
 			slowmo = false;
-			global.timeScale = 1;
 		}
+	}
+	
+	if (slowmo)
+	{
+		global.timeScale = 0.2;
+	}
+	else
+	{
+		global.timeScale = 1;
 	}
 	
 	if (slowmoTimer < 30)
@@ -816,7 +832,7 @@ if (!deathSlowmo)
 	if (enemyFlash)
 	{
 		camera_obj.vignetteFlash = true;
-		vignetteFlashTimer -= global.dt * 3;
+		vignetteFlashTimer -= global.dt / 3;
 	}
 	if (vignetteFlashTimer < 0)
 	{	
