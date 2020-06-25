@@ -26,9 +26,9 @@ if (!noHUD)
 	draw_set_color(c_white);
 	//Debug
 	draw_text_colour(edgeMarginHor, 192, "Framerate: " + string(fps_real), c_white, c_white, c_white, c_white, 1);
-	draw_text_colour(edgeMarginHor, 208, "Slowmo: " + string(player_obj.slowmoTimer), c_white, c_white, c_white, c_white, 1);
+	draw_text_colour(edgeMarginHor, 208, "Verspeed: " + string(player_obj.verspeed), c_white, c_white, c_white, c_white, 1);
 	draw_text_colour(edgeMarginHor, 224, "Roomspeed: " + string(fps), c_white, c_white, c_white, c_white, 1);
-	draw_text_colour(edgeMarginHor, 240, "Dash: " + string(player_obj.dashDelay), c_white, c_white, c_white, c_white, 1);
+	draw_text_colour(edgeMarginHor, 240, "Horspeed: " + string(player_obj.horspeed), c_white, c_white, c_white, c_white, 1);
 
 	//Healthbar
 	draw_sprite_ext(healthbarBorder_spr, 0, edgeMarginHor, edgeMarginVer, 1, 1, 0, -1, 1);

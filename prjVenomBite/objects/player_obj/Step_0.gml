@@ -15,6 +15,25 @@ key_shift = keyboard_check_pressed(vk_shift) || gamepad_button_check_pressed(0, 
 key_control = keyboard_check_pressed(vk_control) || gamepad_button_check_pressed(0, gp_face2);
 
 //Movement
+
+//Cap Speed
+if (horspeed > horspeedMax)
+{
+	horspeed = horspeedMax;
+}
+if (horspeed < -horspeedMax)
+{
+	horspeed = -horspeedMax;
+}
+if (verspeed > verspeedMax)
+{
+	verspeed = verspeedMax;
+}
+if (verspeed < -verspeedMax)
+{
+	verspeed = -verspeedMax;
+}
+
 if (movement && !wallJumping && !isDashing)
 {
 	if (!huggingWall)
