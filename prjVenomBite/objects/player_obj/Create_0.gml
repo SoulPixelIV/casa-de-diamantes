@@ -6,7 +6,7 @@ verspeed = 0;
 movSpeed = 0.82;
 movSpeedSave = movSpeed;
 movSpeedZombie = 0.54;
-dashSpeed = 1.57;
+dashSpeed = 1.23;
 wallJumps = 2;
 dashDelay = 300;
 animationSpeed = 1;
@@ -17,7 +17,7 @@ gravityStrength = -0.03; //Lower is lower gravity
 jumpStrength = 2.2;
 frictionActive = true;
 frictionStrength = 0.02; //Lower is more slippery
-shotJumpStrength = 5;
+shotJumpStrength = 4;
 fallJumpSafety = 25;
 flipUsed = false;
 
