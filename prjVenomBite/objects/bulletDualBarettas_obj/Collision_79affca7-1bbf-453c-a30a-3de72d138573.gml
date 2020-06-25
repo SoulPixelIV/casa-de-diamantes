@@ -13,7 +13,7 @@ if (hitbox != noone)
 		if (enemyTarget != noone)
 		{
 			enemyTarget.damageTint = true;
-			enemyTarget.hp -= 20;
+			enemyTarget.hp -= 12;
 		}
 		penetration--;
 		instance_create_layer(x, y, "Instances", bloodSpread_obj);

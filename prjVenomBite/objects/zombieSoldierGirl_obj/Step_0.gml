@@ -7,7 +7,7 @@ dirLookat = point_direction(x, y, player_obj.x, player_obj.y);
 
 if (movement)
 {
-	if (distance_to_object(player_obj) < 64 && distance_to_object(player_obj) > 16)
+	if (distance_to_object(player_obj) < playerSightMax && distance_to_object(player_obj) > playerSightMin)
 	{
 		if (player_obj.x > x)
 		{
@@ -107,13 +107,6 @@ if (hp < 0)
 	{
 		instance_destroy();
 	}
-	global.scorepoints += points * global.multiplier;
-	global.multiplier += 1;
-	global.multiplierTimer = 300;
-	gameManager_obj.multiplierRun = true;
-	camera_obj.scoreShake = true;
-	//camera_obj.vignetteStrength = 3;
-	player_obj.enemyFlash = true;
 
 	//Enemy Slowmo
 	var randNum = choose(1,2,3,4,5,6,7,8,9);

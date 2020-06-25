@@ -7,24 +7,24 @@ global.dtNoSlowmo = delta_time / ideal_delta_time;
 //Timescale
 if (realTimeScale < global.timeScale)
 {
-	if (!player_obj.enemyFlash)
+	if (!player_obj.enemySlowmo)
 	{
 		realTimeScale += 0.02;
 	}
 	else
 	{
-		realTimeScale += 0.02;
+		realTimeScale += 0.03;
 	}
 }
 if (realTimeScale > global.timeScale)
 {
-	if (!player_obj.enemyFlash)
+	if (!player_obj.enemySlowmo)
 	{
 		realTimeScale -= 0.02;
 	}
 	else
 	{
-		realTimeScale -= 0.02;
+		realTimeScale -= 0.03;
 	}
 }
 

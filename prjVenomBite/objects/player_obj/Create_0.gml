@@ -32,7 +32,7 @@ damageCooldown = 400;
 lastCheckpoint = noone;
 
 //Effects
-vignetteFlashTimer = 90;
+enemySlowMotionTimer = 65;
 shotZoomTimer = 8.75;
 walljumpDustTimer = 12;
 damageFlickerTimer = 17;
@@ -51,7 +51,6 @@ isDashing = false;
 plagueTransformation = false;
 shotZoom = false;
 enemySlowmo = false;
-enemyFlash = false;
 currDir = 0;
 fullJump = false;
 jumping = false;
@@ -92,7 +91,7 @@ wallJumpTimerSave = wallJumpTimer;
 slowmoTimerSave = slowmoTimer;
 wallJumpsSave = wallJumps;
 dashTimerSave = dashTimer;
-vignetteFlashTimerSave = vignetteFlashTimer;
+enemySlowMotionTimerSave = enemySlowMotionTimer;
 shotZoomTimerSave = shotZoomTimer;
 groundCollisionTimerSave = groundCollisionTimer;
 dashDelaySave = dashDelay;

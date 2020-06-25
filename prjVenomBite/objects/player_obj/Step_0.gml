@@ -852,21 +852,15 @@ if (!deathSlowmo)
 	if (enemySlowmo)
 	{
 		global.timeScale = 0.05;
+		enemySlowMotionTimer -= global.dt;
 	}
-	
-	if (enemyFlash)
-	{
-		camera_obj.vignetteFlash = true;
-		vignetteFlashTimer -= global.dt * 3;
-	}
-	if (vignetteFlashTimer < 0)
+	if (enemySlowMotionTimer < 0)
 	{	
 		camera_obj.follow = player_obj;
 		camera_obj.vignetteFlash = false;
 		enemySlowmo = false;
-		enemyFlash = false;
 		global.timeScale = 1;
-		vignetteFlashTimer = vignetteFlashTimerSave;
+		enemySlowMotionTimer = enemySlowMotionTimerSave;
 	}
 }
 

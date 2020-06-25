@@ -2,6 +2,8 @@
 
 horspeed = 0;
 verspeed = 0;
+playerSightMax = 72;
+playerSightMin = 8;
 hp = 85;
 level = 1;
 moneyDropMin = 3;
