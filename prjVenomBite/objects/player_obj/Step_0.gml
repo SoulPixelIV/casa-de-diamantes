@@ -281,7 +281,7 @@ if (colliding)
 			}
 			if (!wallJumping)
 			{
-				horspeed = 0;
+				horGrounded = true;
 			}
 			if (!grounded && verspeed > 0)
 			{
@@ -289,10 +289,19 @@ if (colliding)
 			}
 		}
 	}
+	else
+	{
+		horGrounded = false;
+	}
 	if ((place_free(x + 1, y) && place_free(x - 1, y)) || grounded)
 	{
 		huggingWall = false;
 		setWallDir = false;
+	}
+	
+	if (horGrounded)
+	{
+		horspeed = 0;
 	}
 
 	//verspeed

@@ -13,16 +13,25 @@ if (argument0 == "pistol")
 		
 		if (!huggingWall)
 		{
-			if (!isDashing)
+			if (dirCursor > 0 && dirCursor < 90)
 			{
-				if (image_xscale == 1)
-				{
-					horspeed = -0.75;
-				}
-				else
-				{
-					horspeed = 0.75;
-				}
+				horspeed -= shotJumpStrength / 8;
+				verspeed -= shotJumpStrength / 18;
+			}
+			if (dirCursor < 180 && dirCursor > 90)
+			{
+				horspeed += shotJumpStrength / 8;
+				verspeed -= shotJumpStrength / 18;
+			}
+			if (dirCursor > 180 && dirCursor < 270)
+			{
+				horspeed += shotJumpStrength / 8;
+				verspeed -= shotJumpStrength / 8;
+			}
+			if (dirCursor < 360 && dirCursor > 270)
+			{
+				horspeed -= shotJumpStrength / 8;
+				verspeed -= shotJumpStrength / 8;
 			}
 		}
 		global.pistolAmmo--;
@@ -49,16 +58,25 @@ if (argument0 == "dualBarettas")
 		
 		if (!huggingWall)
 		{
-			if (!isDashing)
+			if (dirCursor > 0 && dirCursor < 90)
 			{
-				if (image_xscale == 1)
-				{
-					horspeed = -1.15;
-				}
-				else
-				{
-					horspeed = 1.15;
-				}
+				horspeed -= shotJumpStrength / 6;
+				verspeed -= shotJumpStrength / 14;
+			}
+			if (dirCursor < 180 && dirCursor > 90)
+			{
+				horspeed += shotJumpStrength / 6;
+				verspeed -= shotJumpStrength / 14;
+			}
+			if (dirCursor > 180 && dirCursor < 270)
+			{
+				horspeed += shotJumpStrength / 6;
+				verspeed -= shotJumpStrength / 6;
+			}
+			if (dirCursor < 360 && dirCursor > 270)
+			{
+				horspeed -= shotJumpStrength / 6;
+				verspeed -= shotJumpStrength / 6;
 			}
 		}
 		global.dualBarettasAmmo--;
@@ -71,6 +89,7 @@ if (argument0 == "shotgun")
 {
 	if (global.shotgunAmmo > 0)
 	{
+		//player_obj.horGrounded = false;
 		var shotgunShot = audio_play_sound(shotgunShot_snd, 1, false);
 		audio_sound_pitch(shotgunShot, random_range(0.9, 1.1));		
 		
@@ -85,25 +104,25 @@ if (argument0 == "shotgun")
 		
 		if (!huggingWall)
 		{
-			if (dirCursor > 0 && dirCursor <90)
+			if (dirCursor > 0 && dirCursor < 90)
 			{
-				horspeed -= shotJumpStrength / 3;
-				verspeed += shotJumpStrength / 3;
+				horspeed -= shotJumpStrength / 2;
+				verspeed -= shotJumpStrength / 8;
 			}
 			if (dirCursor < 180 && dirCursor > 90)
 			{
-				horspeed += shotJumpStrength / 3;
-				verspeed += shotJumpStrength / 3;
+				horspeed += shotJumpStrength / 2;
+				verspeed -= shotJumpStrength / 8;
 			}
 			if (dirCursor > 180 && dirCursor < 270)
 			{
-				horspeed += shotJumpStrength / 3;
-				verspeed -= shotJumpStrength / 3;
+				horspeed += shotJumpStrength / 2;
+				verspeed -= shotJumpStrength / 2;
 			}
 			if (dirCursor < 360 && dirCursor > 270)
 			{
-				horspeed -= shotJumpStrength / 3;
-				verspeed -= shotJumpStrength / 3;
+				horspeed -= shotJumpStrength / 2;
+				verspeed -= shotJumpStrength / 2;
 			}
 		}
 		global.shotgunAmmo--;

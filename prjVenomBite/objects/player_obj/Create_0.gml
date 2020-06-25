@@ -54,6 +54,7 @@ currDir = 0;
 fullJump = false;
 jumping = false;
 grounded = false;
+horGrounded = false;
 crouching = false;
 unarmed = true;
 stoppedDashing = false;
