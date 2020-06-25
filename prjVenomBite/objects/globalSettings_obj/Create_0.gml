@@ -19,3 +19,5 @@ global.dtNoSlowmo = delta_time / ideal_delta_time;
 global.tilemap = layer_tilemap_get_id("TileCollider");
 
 sprite_set_live(playerJumpSpin_spr, true);
+
+instance_create_layer(x, y, "GameManagerLayer", gifRecorder_obj);

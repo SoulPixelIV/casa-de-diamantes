@@ -115,7 +115,7 @@ if (movement && !isZombie)
 		dashTimer = dashTimerSave;
 	}
 	//Short Jump
-	if (key_jump_release && fullJump == false && !isDashing)
+	if (key_jump_release && fullJump == false && !isDashing && !flip)
 	{
 	    if (verspeed < 0)
 	    {
@@ -281,7 +281,7 @@ if (colliding)
 			}
 			if (!wallJumping)
 			{
-				horGrounded = true;
+				horspeed = 0;
 			}
 			if (!grounded && verspeed > 0)
 			{
@@ -289,19 +289,10 @@ if (colliding)
 			}
 		}
 	}
-	else
-	{
-		horGrounded = false;
-	}
 	if ((place_free(x + 1, y) && place_free(x - 1, y)) || grounded)
 	{
 		huggingWall = false;
 		setWallDir = false;
-	}
-	
-	if (horGrounded)
-	{
-		horspeed = 0;
 	}
 
 	//verspeed
@@ -847,7 +838,7 @@ if (!deathSlowmo)
 	if (enemyFlash)
 	{
 		camera_obj.vignetteFlash = true;
-		vignetteFlashTimer -= global.dt;
+		vignetteFlashTimer -= global.dt * 3;
 	}
 	if (vignetteFlashTimer < 0)
 	{	

@@ -25,7 +25,7 @@ flipUsed = false;
 hp = 100;
 syringes = 1;
 zombieTimer = 1550;
-slowmoTimer = 360;
+slowmoTimer = 260;
 damageCooldown = 400;
 lastCheckpoint = noone;
 
@@ -54,7 +54,6 @@ currDir = 0;
 fullJump = false;
 jumping = false;
 grounded = false;
-horGrounded = false;
 crouching = false;
 unarmed = true;
 stoppedDashing = false;

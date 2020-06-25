@@ -13,6 +13,14 @@ else
 if (player_obj.isDashing)
 {
 	player_obj.stoppedDashing = true;
+	if (player_obj.image_xscale == 1)
+	{
+		player_obj.horspeed += 1.2;
+	}
+	if (player_obj.image_xscale == -1)
+	{
+		player_obj.horspeed -= 1.2;
+	}
 }
 player_obj.jumping = true;
 if (!player_obj.isDashing)

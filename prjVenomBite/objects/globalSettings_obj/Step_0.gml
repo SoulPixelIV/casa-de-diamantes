@@ -9,29 +9,26 @@ if (realTimeScale < global.timeScale)
 {
 	if (!player_obj.enemyFlash)
 	{
-		realTimeScale += 0.01;
+		realTimeScale += 0.02;
 	}
 	else
 	{
-		realTimeScale += 0.03;
+		realTimeScale += 0.02;
 	}
 }
 if (realTimeScale > global.timeScale)
 {
 	if (!player_obj.enemyFlash)
 	{
-		realTimeScale -= 0.01;
+		realTimeScale -= 0.02;
 	}
 	else
 	{
-		realTimeScale -= 0.03;
+		realTimeScale -= 0.02;
 	}
 }
-if (realTimeScale > global.timeScale - 0.05)
-{
-	realTimeScale = global.timeScale;
-}
-if (realTimeScale < global.timeScale + 0.05)
+
+if (realTimeScale > global.timeScale - 0.03 && realTimeScale < global.timeScale + 0.03)
 {
 	realTimeScale = global.timeScale;
 }
