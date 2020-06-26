@@ -559,6 +559,14 @@
             }
         },
         {
+            "Key": "2287ecf8-e9ac-4c16-92d2-ba86e22d18fb",
+            "Value": {
+                "id": "b2c17d3b-2a73-4420-8fdf-157b25e2d3da",
+                "resourcePath": "sprites\\balcony_spr\\balcony_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "22deb360-62ef-4ff2-9d07-328ab2eaa10a",
             "Value": {
                 "id": "a666bcf0-3e27-4717-a45f-d71aaf595ee7",
@@ -4747,6 +4755,14 @@
             "Value": {
                 "id": "004050a2-9ce3-4aa0-af71-6ac6af253c28",
                 "resourcePath": "objects\\ledBarRed_obj\\ledBarRed_obj.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "f958d3d1-2b27-419e-8dae-17ba57bce523",
+            "Value": {
+                "id": "202fc292-bea7-4b02-9fd3-000b577ca3fd",
+                "resourcePath": "objects\\balcony_obj\\balcony_obj.yy",
                 "resourceType": "GMObject"
             }
         },

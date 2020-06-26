@@ -194,23 +194,23 @@ if (movement && !isZombie)
 			{
 				horspeed += jumpStrength / 1.15;
 			}
-			if (image_xscale == 1 && key_left)
+			else if (image_xscale == 1 && key_left)
 			{
 				horspeed += jumpStrength / 1.7;
 			}
-			if (image_xscale == -1 && key_left)
+			else if (image_xscale == -1 && key_left)
 			{
 				horspeed -= jumpStrength / 1.15;
 			}
-			if (image_xscale == -1 && key_right)
+			else if (image_xscale == -1 && key_right)
 			{
 				horspeed -= jumpStrength / 1.7;
 			}
-			if (image_xscale == 1 && !key_right && !key_left)
+			else if (image_xscale == 1 && !key_right && !key_left)
 			{
 				horspeed += jumpStrength / 1.7;
 			}
-			if (image_xscale == -1 && !key_right && !key_left)
+			else if (image_xscale == -1 && !key_right && !key_left)
 			{
 				horspeed -= jumpStrength / 1.7;
 			}
