@@ -2735,6 +2735,14 @@
             }
         },
         {
+            "Key": "940d4181-4950-4d4a-8421-7de4c13156b1",
+            "Value": {
+                "id": "c99670b8-cb2a-415d-977a-026c5096bc7f",
+                "resourcePath": "rooms\\level0_SenzelaForest\\level0_SenzelaForest.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "94235e28-1a97-4435-96b4-96163ec1c6d6",
             "Value": {
                 "id": "7374e4f1-ba7c-42ed-af2c-4559e34e3831",
