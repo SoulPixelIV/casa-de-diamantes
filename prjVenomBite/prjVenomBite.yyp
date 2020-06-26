@@ -1519,6 +1519,14 @@
             }
         },
         {
+            "Key": "5a767dee-7621-49fb-afbf-d1f2ab9062d7",
+            "Value": {
+                "id": "4a1f5f29-a783-4230-908f-7deb8d066f57",
+                "resourcePath": "objects\\spotlightPink_obj\\spotlightPink_obj.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "5adb3264-face-4d24-9f54-d68aeb7452de",
             "Value": {
                 "id": "048f8967-5863-42a5-8de2-4460ce3a9b0d",
@@ -3199,6 +3207,14 @@
             }
         },
         {
+            "Key": "aa66d9cf-c123-48c5-9f96-0132b30f4ead",
+            "Value": {
+                "id": "4f2a2411-f32e-45dd-8143-23bd2db76af9",
+                "resourcePath": "objects\\ledSignCocktails_obj\\ledSignCocktails_obj.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "aaa3b623-1f99-48f3-9cfe-0dfe17f465f8",
             "Value": {
                 "id": "c87a2138-9f48-483b-955b-b32f25b37d2f",
@@ -4308,6 +4324,14 @@
                 "id": "80452eb7-5f18-40d6-9f75-11712b3d37f5",
                 "resourcePath": "objects\\windowBackground_obj\\windowBackground_obj.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "e18bd27b-1776-48d5-83ef-d5bd94b37e2f",
+            "Value": {
+                "id": "0c2e66a5-1412-40db-8877-ff639cc8a6c7",
+                "resourcePath": "sprites\\ledSignCocktails_spr\\ledSignCocktails_spr.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

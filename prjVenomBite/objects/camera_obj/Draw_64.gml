@@ -25,10 +25,7 @@ if (!noHUD)
 	draw_set_font(global.optixFont);
 	draw_set_color(c_white);
 	//Debug
-	draw_text_colour(edgeMarginHor, 192, "Framerate: " + string(fps_real), c_white, c_white, c_white, c_white, 1);
-	draw_text_colour(edgeMarginHor, 208, "Verspeed: " + string(player_obj.verspeed), c_white, c_white, c_white, c_white, 1);
-	draw_text_colour(edgeMarginHor, 224, "Roomspeed: " + string(fps), c_white, c_white, c_white, c_white, 1);
-	draw_text_colour(edgeMarginHor, 240, "Horspeed: " + string(player_obj.horspeed), c_white, c_white, c_white, c_white, 1);
+	draw_text_colour(edgeMarginHor, 252, "Framerate: " + string(fps_real), c_white, c_white, c_white, c_white, 1);
 
 	//Healthbar
 	draw_sprite_ext(healthbarBorder_spr, 0, edgeMarginHor, edgeMarginVer, 1, 1, 0, -1, 1);
@@ -43,7 +40,7 @@ if (!noHUD)
 	//Syringes
 	for (i = 0; i < player_obj.syringes; i++)
 	{
-		draw_sprite_ext(syringe_spr, -1, 48, 24 + 32 * i, 1, 1, -1, -1, 1);
+		draw_sprite_ext(syringe_spr, -1, 42, 24 + 16 * i, 1, 1, -1, -1, 1);
 	}
 	
 	//Infectionbar
@@ -69,11 +66,11 @@ if (!noHUD)
 		{
 			if (i > 2)
 			{
-				draw_sprite_ext(magazine_spr, -1, 112, 32 + 24 * (i - 3), 1, 1, -1, -1, 1);
+				draw_sprite_ext(magazine_spr, -1, 94, 32 + 24 * (i - 3), 1, 1, -1, -1, 1);
 			}
 			else
 			{
-				draw_sprite_ext(magazine_spr, -1, 80, 24 + 24 * i, 1, 1, -1, -1, 1);
+				draw_sprite_ext(magazine_spr, -1, 68, 24 + 24 * i, 1, 1, -1, -1, 1);
 			}
 		}
 	}
@@ -83,11 +80,11 @@ if (!noHUD)
 		{
 			if (i > 2)
 			{
-				draw_sprite_ext(magazine_spr, -1, 112, 32 + 24 * (i - 3), 1, 1, -1, -1, 1);
+				draw_sprite_ext(magazine_spr, -1, 94, 32 + 24 * (i - 3), 1, 1, -1, -1, 1);
 			}
 			else
 			{
-				draw_sprite_ext(magazine_spr, -1, 80, 24 + 24 * i, 1, 1, -1, -1, 1);
+				draw_sprite_ext(magazine_spr, -1, 68, 24 + 24 * i, 1, 1, -1, -1, 1);
 			}
 		}
 	}
@@ -97,11 +94,11 @@ if (!noHUD)
 		{
 			if (i > 2)
 			{
-				draw_sprite_ext(magazine_spr, -1, 112, 32 + 24 * (i - 3), 1, 1, -1, -1, 1);
+				draw_sprite_ext(magazine_spr, -1, 94, 32 + 24 * (i - 3), 1, 1, -1, -1, 1);
 			}
 			else
 			{
-				draw_sprite_ext(magazine_spr, -1, 80, 24 + 24 * i, 1, 1, -1, -1, 1);
+				draw_sprite_ext(magazine_spr, -1, 68, 24 + 24 * i, 1, 1, -1, -1, 1);
 			}
 		}
 	}
