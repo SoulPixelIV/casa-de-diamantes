@@ -1015,6 +1015,14 @@
             }
         },
         {
+            "Key": "3a0cb685-3cb3-469b-848e-998c93b8b9e5",
+            "Value": {
+                "id": "d09aa00b-1c6c-49f2-8eee-7bf3a545c9f7",
+                "resourcePath": "sprites\\tree_spr\\tree_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "3bed5338-efff-42d2-beae-fb2bbd721315",
             "Value": {
                 "id": "8be9d34f-5908-4cba-b29f-3e2ca5a94267",
