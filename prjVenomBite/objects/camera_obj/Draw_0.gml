@@ -33,7 +33,7 @@ else
 		anim++;
 		reloadAnimTimer = reloadAnimTimerSave;
 	}
-	else
+	if (anim >= ammoCounterReloading_spr.image_number)
 	{
 		anim = 0;
 	}

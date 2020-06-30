@@ -11,21 +11,21 @@ global.pistolAmmo = 0;
 global.pistolMag = 0;
 global.pistolCooldown = 2;
 global.pistolCooldownSave = global.pistolCooldown;
-global.pistolReload = 40;
+global.pistolReload = 125;
 global.pistolReloadSave = global.pistolReload;
 
 global.dualBarettasAmmo = 0;
 global.dualBarettasMag = 0;
 global.dualBarettasCooldown = 3;
 global.dualBarettasCooldownSave = global.dualBarettasCooldown;
-global.dualBarettasReload = 65;
+global.dualBarettasReload = 160;
 global.dualBarettasReloadSave = global.dualBarettasReload;
 
 global.shotgunAmmo = 0;
 global.shotgunMag = 0;
 global.shotgunCooldown = 15;
 global.shotgunCooldownSave = global.shotgunCooldown;
-global.shotgunReload = 135;
+global.shotgunReload = 360;
 global.shotgunReloadSave = global.shotgunReload;
 
 enum pickedWeapon {

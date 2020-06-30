@@ -581,7 +581,7 @@ if (!isZombie)
 		{
 			with (player_obj)
 			{
-				if (key_shoot)
+				if (key_shoot && !reloading)
 				{
 					if (!onLadder || onLadder && verspeed == 0)
 					{
@@ -599,7 +599,7 @@ if (!isZombie)
 		{
 			with (player_obj)
 			{
-				if (key_shoot)
+				if (key_shoot && !reloading)
 				{
 					if (!onLadder || onLadder && verspeed == 0)
 					{
@@ -617,7 +617,7 @@ if (!isZombie)
 		{
 			with (player_obj)
 			{
-				if (key_shoot)
+				if (key_shoot && !reloading)
 				{
 					if (!onLadder || onLadder && verspeed == 0)
 					{
@@ -651,7 +651,11 @@ if (global.pistolCooldown > 0 || global.dualBarettasCooldown > 0 || global.shotg
 //Reload
 if (keyboard_check_pressed(ord("R")) && !isZombie)
 {
-	reloading = true;
+	if (global.currentWeapon == pickedWeapon.pistol && global.pistolAmmo < 6 || global.currentWeapon == pickedWeapon.dualBarettas && global.dualBarettasAmmo < 8
+	|| global.currentWeapon == pickedWeapon.shotgun && global.shotgunAmmo < 3)
+	{
+		reloading = true;
+	}
 }
 
 if (reloading)
@@ -676,7 +680,7 @@ if (global.pistolReload < 0 || global.dualBarettasReload < 0 || global.shotgunRe
 }
 
 //Weapon Switching
-if (!isZombie)
+if (!isZombie && !reloading)
 {
 	if (keyboard_check_pressed(ord("1")) && global.unlockedWeapon[0])
 	{
