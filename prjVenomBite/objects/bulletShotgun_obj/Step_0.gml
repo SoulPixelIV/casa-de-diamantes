@@ -30,7 +30,7 @@ if (penetrationTime < 0)
 	penetrationTime = 3;
 }
 
-image_alpha -= global.dt / 75;
+image_alpha -= global.dt / 55;
 
 if (image_alpha < 0)
 {
