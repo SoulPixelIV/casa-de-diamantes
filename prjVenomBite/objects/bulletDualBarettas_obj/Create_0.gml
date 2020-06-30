@@ -1,6 +1,6 @@
 /// @description Variables
 
-deleteTimer = 1000;
+deleteTimer = 110;
 movSpeed = 5.2;
 penetration = 3;
 penetrationTime = 3;
