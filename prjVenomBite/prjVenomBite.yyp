@@ -1151,6 +1151,14 @@
             }
         },
         {
+            "Key": "40f01d2a-bce8-45ed-8e8c-2d02550f0f32",
+            "Value": {
+                "id": "cef44712-74f3-49f6-9e14-8e544bbd4451",
+                "resourcePath": "objects\\gateGolden_obj\\gateGolden_obj.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "419b40e8-0932-4306-b4e4-73c735e3a71d",
             "Value": {
                 "id": "790f1c66-d0ae-4c61-b730-e3db60775737",
@@ -1492,6 +1500,14 @@
                 "id": "902607a5-c43d-43db-ae51-669e79ea181a",
                 "resourcePath": "rooms\\OLDlevel2_CasinoHub\\OLDlevel2_CasinoHub.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "55ebd6a9-1d7a-4728-a97a-1d4e1dd09ccf",
+            "Value": {
+                "id": "79bb5500-6fd6-4275-a6fd-9b82c4e973da",
+                "resourcePath": "sprites\\gateGolden_spr\\gateGolden_spr.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -4795,6 +4811,14 @@
             "Value": {
                 "id": "202fc292-bea7-4b02-9fd3-000b577ca3fd",
                 "resourcePath": "objects\\balcony_obj\\balcony_obj.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "f99ba8d0-843e-40e8-a666-2eb903d78618",
+            "Value": {
+                "id": "c442b3a3-bf49-4c69-95fe-e85fb620f482",
+                "resourcePath": "objects\\tree_obj\\tree_obj.yy",
                 "resourceType": "GMObject"
             }
         },
