@@ -38,6 +38,7 @@ walljumpDustTimer = 12;
 damageFlickerTimer = 17;
 
 colliding = true;
+reloading = false;
 infection = 0;
 maxhp = hp;
 syringesLost = 0;

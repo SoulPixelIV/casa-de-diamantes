@@ -4,6 +4,9 @@ xScreenSizeNew = x;
 yScreenSizeNew = y;
 cameraSpeed = 1;
 noHUD = false;
+anim = 0;
+reloadAnimTimer = 25;
+reloadAnimTimerSave = reloadAnimTimer;
 
 enum cameraState {
     normal,

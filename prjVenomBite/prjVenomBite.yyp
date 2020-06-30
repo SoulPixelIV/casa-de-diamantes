@@ -2359,6 +2359,14 @@
             }
         },
         {
+            "Key": "81efda57-f837-4ce6-abb4-97fddd362d78",
+            "Value": {
+                "id": "c15cedf6-8850-402e-8030-567afbe73d84",
+                "resourcePath": "sprites\\ammoCounterReloading_spr\\ammoCounterReloading_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "81f49802-35f8-4710-99f9-92489bcae030",
             "Value": {
                 "id": "b5df9856-4cb4-4701-accf-8f74c9dd7dfb",

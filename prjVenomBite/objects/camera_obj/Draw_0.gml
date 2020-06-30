@@ -1,26 +1,43 @@
 /// @description Player UI
 
 //Ammo Counter
-if (global.currentWeapon = pickedWeapon.pistol)
+if (!player_obj.reloading)
 {
-	if (global.pistolAmmo < 5)
+	if (global.currentWeapon = pickedWeapon.pistol)
 	{
-		draw_sprite_ext(ammoCounter_spr, global.pistolAmmo, player_obj.x - 22, player_obj.y - 20, 1, 1, 0, -1, 1 / (global.pistolAmmo + 1) * 1.5);
+		if (global.pistolAmmo < 5)
+		{
+			draw_sprite_ext(ammoCounter_spr, global.pistolAmmo, player_obj.x - 22, player_obj.y - 20, 1, 1, 0, -1, 1 / (global.pistolAmmo + 1) * 1.5);
+		}
+	}
+	if (global.currentWeapon = pickedWeapon.dualBarettas)
+	{
+		if (global.dualBarettasAmmo < 5)
+		{
+			draw_sprite_ext(ammoCounter_spr, global.dualBarettasAmmo, player_obj.x - 22, player_obj.y - 20, 1, 1, 0, -1, 1 / (global.dualBarettasAmmo + 1) * 1.5);
+		}
+	}
+	if (global.currentWeapon = pickedWeapon.shotgun)
+	{
+		if (global.shotgunAmmo < 3)
+		{
+			draw_sprite_ext(ammoCounter_spr, global.shotgunAmmo, player_obj.x - 22, player_obj.y - 20, 1, 1, 0, -1, 1 / (global.shotgunAmmo + 1) * 1.5);
+		}
 	}
 }
-if (global.currentWeapon = pickedWeapon.dualBarettas)
+else
 {
-	if (global.dualBarettasAmmo < 5)
+	reloadAnimTimer -= global.dt;
+	if (anim < ammoCounterReloading_spr.image_number && reloadAnimTimer < 0)
 	{
-		draw_sprite_ext(ammoCounter_spr, global.dualBarettasAmmo, player_obj.x - 22, player_obj.y - 20, 1, 1, 0, -1, 1 / (global.dualBarettasAmmo + 1) * 1.5);
+		anim++;
+		reloadAnimTimer = reloadAnimTimerSave;
 	}
-}
-if (global.currentWeapon = pickedWeapon.shotgun)
-{
-	if (global.shotgunAmmo < 3)
+	else
 	{
-		draw_sprite_ext(ammoCounter_spr, global.shotgunAmmo, player_obj.x - 22, player_obj.y - 20, 1, 1, 0, -1, 1 / (global.shotgunAmmo + 1) * 1.5);
+		anim = 0;
 	}
+	draw_sprite_ext(ammoCounterReloading_spr, anim, player_obj.x - 22, player_obj.y - 20, 1, 1, 0, -1, 1);
 }
 
 //Dash Circle

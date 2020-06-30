@@ -40,3 +40,8 @@ if (global.currentWeapon == gameManager_obj.pickedWeapon.shotgun)
 		global.shotgunMag = 0;
 	}
 }
+
+global.pistolReload = global.pistolReloadSave;
+global.dualBarettasReload = global.dualBarettasReloadSave;
+global.shotgunReload = global.shotgunReloadSave;
+player_obj.reloading = false;

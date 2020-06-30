@@ -651,6 +651,27 @@ if (global.pistolCooldown > 0 || global.dualBarettasCooldown > 0 || global.shotg
 //Reload
 if (keyboard_check_pressed(ord("R")) && !isZombie)
 {
+	reloading = true;
+}
+
+if (reloading)
+{
+	if (global.currentWeapon == pickedWeapon.pistol)
+	{
+		global.pistolReload -= global.dt;
+	}
+	if (global.currentWeapon == pickedWeapon.dualBarettas)
+	{
+		global.dualBarettasReload -= global.dt;
+	}
+	if (global.currentWeapon == pickedWeapon.shotgun)
+	{
+		global.shotgunReload -= global.dt;
+	}
+}
+
+if (global.pistolReload < 0 || global.dualBarettasReload < 0 || global.shotgunReload < 0)
+{
 	reload_scr();
 }
 
