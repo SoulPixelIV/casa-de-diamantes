@@ -8,6 +8,7 @@ hp = 130;
 level = 2;
 hpBucket = 40;
 damage = 40;
+knockback = 2.4;
 playerSightMax = 196;
 playerSightMin = 0;
 
@@ -17,7 +18,6 @@ delay = false;
 damageCollision = true;
 attackInProg = false;
 points = 125;
-knockback = 2.25;
 movSpeed = 0.178;
 playedSound = false;
 gravityStrength = -0.05;

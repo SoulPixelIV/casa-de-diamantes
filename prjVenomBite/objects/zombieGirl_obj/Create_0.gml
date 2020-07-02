@@ -10,6 +10,7 @@ level = 1;
 moneyDropMin = 1;
 moneyDropMax = 4;
 damage = 35;
+knockback = 2.1;
 playerSightMax = 128;
 playerSightMin = 8;
 
@@ -27,7 +28,6 @@ dashed = false;
 damageCollision = false;
 spawnedHitbox = false;
 points = 125;
-knockback = 2;
 movSpeed = 0.15;
 movement = true;
 gravityStrength = -0.05;

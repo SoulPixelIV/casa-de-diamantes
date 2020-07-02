@@ -13,7 +13,7 @@ if (realTimeScale < global.timeScale)
 	}
 	else
 	{
-		realTimeScale += 0.03;
+		realTimeScale += 0.12;
 	}
 }
 if (realTimeScale > global.timeScale)
