@@ -42,7 +42,7 @@ if (argument0 == "pistol")
 
 if (argument0 == "dualBarettas")
 {
-	if (global.dualBarettasAmmo > 0)
+	if (global.pistolAmmo > 0)
 	{
 		var barettaShot = audio_play_sound(dualBarettasShot_snd, 1, false);
 		audio_sound_pitch(barettaShot, random_range(0.9, 1.1));
@@ -79,7 +79,7 @@ if (argument0 == "dualBarettas")
 				verspeed -= shotJumpStrength / 6;
 			}
 		}
-		global.dualBarettasAmmo--;
+		global.pistolAmmo--;
 		global.dualBarettasCooldown = global.dualBarettasCooldownSave;
 		shotZoom = true;
 	}

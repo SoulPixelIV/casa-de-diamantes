@@ -14,8 +14,6 @@ global.pistolCooldownSave = global.pistolCooldown;
 global.pistolReload = 125;
 global.pistolReloadSave = global.pistolReload;
 
-global.dualBarettasAmmo = 0;
-global.dualBarettasMag = 0;
 global.dualBarettasCooldown = 3;
 global.dualBarettasCooldownSave = global.dualBarettasCooldown;
 global.dualBarettasReload = 160;

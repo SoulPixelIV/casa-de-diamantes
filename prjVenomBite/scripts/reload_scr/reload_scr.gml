@@ -1,12 +1,12 @@
 if (global.currentWeapon == gameManager_obj.pickedWeapon.pistol)
 {
-	if (global.pistolMag >= 6 && global.pistolAmmo < 6)
+	if (global.pistolMag >= 8 && global.pistolAmmo < 8)
 	{
-		global.pistolMag -= 6 - global.pistolAmmo;
-		global.pistolAmmo += 6 - global.pistolAmmo;
+		global.pistolMag -= 8 - global.pistolAmmo;
+		global.pistolAmmo += 8 - global.pistolAmmo;
 	}
 	
-	if (global.pistolMag < 6 && global.pistolAmmo < 6)
+	if (global.pistolMag < 8 && global.pistolAmmo < 8)
 	{
 		global.pistolAmmo += global.pistolMag;
 		global.pistolMag = 0;
@@ -14,16 +14,16 @@ if (global.currentWeapon == gameManager_obj.pickedWeapon.pistol)
 }
 if (global.currentWeapon == gameManager_obj.pickedWeapon.dualBarettas)
 {
-	if (global.dualBarettasMag >= 8 && global.dualBarettasAmmo < 8)
+	if (global.pistolMag >= 8 && global.pistolAmmo < 8)
 	{
-		global.dualBarettasMag -= 8 - global.dualBarettasAmmo;
-		global.dualBarettasAmmo += 8 - global.dualBarettasAmmo;
+		global.pistolMag -= 8 - global.pistolAmmo;
+		global.pistolAmmo += 8 - global.pistolAmmo;
 	}
 	
-	if (global.dualBarettasMag < 8 && global.dualBarettasAmmo < 8)
+	if (global.pistolMag < 8 && global.pistolAmmo < 8)
 	{
-		global.dualBarettasAmmo += global.dualBarettasMag;
-		global.dualBarettasMag = 0;
+		global.pistolAmmo += global.pistolMag;
+		global.pistolMag = 0;
 	}
 }
 if (global.currentWeapon == gameManager_obj.pickedWeapon.shotgun)

@@ -60,23 +60,9 @@ if (!noHUD)
 	}
 	
 	//Ammo
-	if (global.currentWeapon == gameManager_obj.pickedWeapon.pistol)
+	if (global.currentWeapon == gameManager_obj.pickedWeapon.pistol || global.currentWeapon == gameManager_obj.pickedWeapon.dualBarettas)
 	{
-		for (i = 0; i < global.pistolMag / 6; i++)
-		{
-			if (i > 2)
-			{
-				draw_sprite_ext(magazine_spr, -1, 94, 32 + 24 * (i - 3), 1, 1, -1, -1, 1);
-			}
-			else
-			{
-				draw_sprite_ext(magazine_spr, -1, 68, 24 + 24 * i, 1, 1, -1, -1, 1);
-			}
-		}
-	}
-	if (global.currentWeapon == gameManager_obj.pickedWeapon.dualBarettas)
-	{
-		for (i = 0; i < global.dualBarettasMag / 8; i++)
+		for (i = 0; i < global.pistolMag / 8; i++)
 		{
 			if (i > 2)
 			{

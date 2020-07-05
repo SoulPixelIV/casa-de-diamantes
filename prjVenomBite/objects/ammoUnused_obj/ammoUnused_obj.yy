@@ -2,7 +2,7 @@
     "id": "03323ae0-9d13-4571-a7bb-244f1d01bbff",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "ammoPackDualBarettas_obj",
+    "name": "ammoUnused_obj",
     "eventList": [
         {
             "id": "42e9df1f-3a48-41b6-ba15-de67a23eb9d1",
