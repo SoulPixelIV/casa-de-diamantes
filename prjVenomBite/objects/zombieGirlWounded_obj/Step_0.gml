@@ -90,7 +90,7 @@ else
 //###Death###
 if (hp < 0)
 {
-	instance_create_layer(x, y - 8, "ForegroundObjects", deathCross_obj);
+	var deathCross = instance_create_layer(x, y - 8, "ForegroundObjects", deathCross_obj);
 	with (headshotHitbox)
 	{
 		instance_destroy();
@@ -101,49 +101,18 @@ if (hp < 0)
 	if (randNum == 9)
 	{
 		player_obj.enemySlowmo = true;
-		
-		//Camera Bullet Follow
-		var cameraTarget = noone;
-		if (instance_exists(bulletPistol_obj))
-		{
-			cameraTarget = instance_nearest(x, y, bulletPistol_obj);
-		}
-		else if (instance_exists(bulletDualBarettas_obj))
-		{
-			cameraTarget = instance_nearest(x, y, bulletDualBarettas_obj);
-		}
-		else if (instance_exists(bulletShotgun_obj))
-		{
-			cameraTarget = instance_nearest(x, y, bulletShotgun_obj);
-		}
-		else
-		{
-			cameraTarget = noone;
-		}
-		
-		if (cameraTarget != noone)
-		{
-			camera_obj.follow = cameraTarget;
-		}
+		camera_obj.follow = deathCross;
 	}
 
 	//Drop Money
 	var maxAmount = random_range(moneyDropMin, moneyDropMax);
 	for (i = 0; i < maxAmount; i++)
 	{
-		chip = choose(1,1,1,1,2)
+		chip = 1;
 		
 		if (chip == 1)
 		{
 			instance_create_layer(x, y - 16, "Instances", chipBluePickup_obj);
-		}
-		if (chip == 2)
-		{
-			instance_create_layer(x, y - 16, "Instances", chipRedPickup_obj);
-		}
-		if (chip == 3)
-		{
-			instance_create_layer(x, y - 16, "Instances", chipVioletPickup_obj);
 		}
 	}
 	

@@ -90,7 +90,7 @@ else
 //###Death###
 if (hp < 0)
 {
-	instance_create_layer(x, y - 8, "ForegroundObjects", deathCross_obj);
+	var deathCross = instance_create_layer(x, y - 8, "ForegroundObjects", deathCross_obj);
 	with (headshotHitbox)
 	{
 		instance_destroy();
@@ -101,11 +101,7 @@ if (hp < 0)
 	if (randNum == 9)
 	{
 		player_obj.enemySlowmo = true;
-		
-		if (cameraTarget != noone)
-		{
-			camera_obj.follow = id;
-		}
+		camera_obj.follow = deathCross;
 	}
 
 	//Drop Money
@@ -121,10 +117,6 @@ if (hp < 0)
 		if (chip == 2)
 		{
 			instance_create_layer(x, y - 16, "Instances", chipRedPickup_obj);
-		}
-		if (chip == 3)
-		{
-			instance_create_layer(x, y - 16, "Instances", chipVioletPickup_obj);
 		}
 	}
 	
