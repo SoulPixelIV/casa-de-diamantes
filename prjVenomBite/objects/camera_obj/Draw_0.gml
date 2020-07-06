@@ -21,12 +21,12 @@ if (!player_obj.reloading)
 else
 {
 	reloadAnimTimer -= global.dt;
-	if (anim < ammoCounterReloading_spr.image_number && reloadAnimTimer < 0)
+	if (anim < sprite_get_number(ammoCounterReloading_spr) && reloadAnimTimer < 0)
 	{
 		anim++;
 		reloadAnimTimer = reloadAnimTimerSave;
 	}
-	if (anim >= ammoCounterReloading_spr.image_number)
+	if (anim >= sprite_get_number(ammoCounterReloading_spr))
 	{
 		anim = 0;
 	}
