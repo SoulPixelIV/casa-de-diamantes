@@ -807,6 +807,14 @@
             }
         },
         {
+            "Key": "319ab36e-79c9-4794-a602-5655e619f107",
+            "Value": {
+                "id": "01b1299a-5397-4fc1-858b-ba4f97d7bfe5",
+                "resourcePath": "sprites\\zombieGirlWoundedDeath1_spr\\zombieGirlWoundedDeath1_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "31a1c295-f169-4f56-9878-fe8a00879f69",
             "Value": {
                 "id": "06539096-6da4-4360-99c1-a4a08c6244eb",
@@ -4571,6 +4579,14 @@
             "Value": {
                 "id": "2c5a2f0a-f9fc-40f4-b129-b93c2919b9bd",
                 "resourcePath": "objects\\particles\\particles.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "e98c9b0c-4106-4fdf-baf8-4d21c60c187f",
+            "Value": {
+                "id": "4cb79035-d0ac-493d-b1b4-6152f5834ca5",
+                "resourcePath": "objects\\zombieGirlWoundedDeath1_obj\\zombieGirlWoundedDeath1_obj.yy",
                 "resourceType": "GMObject"
             }
         },

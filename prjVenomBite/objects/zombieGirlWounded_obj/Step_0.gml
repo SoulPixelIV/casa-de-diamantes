@@ -116,7 +116,8 @@ if (hp < 0)
 		}
 	}
 	
-	instance_destroy();
+	damageTint = false;
+	instance_change(zombieGirlWoundedDeath1_obj, false);
 }
 
 //Headshot Hitbox
