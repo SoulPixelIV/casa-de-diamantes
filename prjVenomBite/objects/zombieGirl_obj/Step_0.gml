@@ -119,8 +119,15 @@ if (hp < 0)
 			instance_create_layer(x, y - 16, "Instances", chipRedPickup_obj);
 		}
 	}
-	
-	instance_destroy();
+	damageTint = false;
+	if (headshot)
+	{
+		instance_change(zombieGirlDeath1_obj, false);
+	}
+	else
+	{
+		instance_change(zombieGirlDeath2_obj, false);
+	}
 }
 
 //Headshot Hitbox

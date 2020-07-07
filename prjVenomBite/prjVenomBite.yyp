@@ -287,6 +287,14 @@
             }
         },
         {
+            "Key": "100ad326-61b0-4ec4-83fb-a6c3a0ca3822",
+            "Value": {
+                "id": "52188dc1-8ec1-44ea-9dd9-d32ff3b5a280",
+                "resourcePath": "views\\100ad326-61b0-4ec4-83fb-a6c3a0ca3822.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "107a82d9-d2f7-4e0f-96e3-61fcb35459b6",
             "Value": {
                 "id": "249c9d24-e320-46d1-b98d-0e0f4dc58807",
@@ -983,6 +991,14 @@
             }
         },
         {
+            "Key": "38d4ae70-d074-475d-a3b6-f7abe1398ea3",
+            "Value": {
+                "id": "68a06bec-77ee-42d8-91b3-3035bde637da",
+                "resourcePath": "views\\38d4ae70-d074-475d-a3b6-f7abe1398ea3.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "392279c7-f9b9-4604-8078-4ca5507b17ed",
             "Value": {
                 "id": "9e61c9ff-8795-4e10-8a65-0626b4044980",
@@ -1147,6 +1163,14 @@
             "Value": {
                 "id": "aca511d3-8c7f-4b1c-98f3-c7d9e37f46c6",
                 "resourcePath": "objects\\cameraViewIn_obj\\cameraViewIn_obj.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "40d12692-4988-4329-9f40-ba28b85dcc4f",
+            "Value": {
+                "id": "6de4d1e9-b9b6-4828-8c75-53da7eaa3335",
+                "resourcePath": "objects\\zombieGirlDeath1_obj\\zombieGirlDeath1_obj.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -1455,6 +1479,14 @@
             }
         },
         {
+            "Key": "50e7399a-e931-433c-9ff4-0726f9e0603a",
+            "Value": {
+                "id": "9c06c0b9-e3de-45c8-b2d7-b4a81bd07f20",
+                "resourcePath": "sprites\\zombieGirlDeath1_spr\\zombieGirlDeath1_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "5251aba1-7a41-4504-8f00-2e8c8d87b6a1",
             "Value": {
                 "id": "10ad330d-1c64-44a4-8807-89cf08b87635",
@@ -1663,6 +1695,14 @@
             }
         },
         {
+            "Key": "64ea7899-2fff-4e48-ad48-2b908bebb2a5",
+            "Value": {
+                "id": "9a867a62-f0c5-4a3e-8eb0-0148c0a99cbe",
+                "resourcePath": "sprites\\zombieGirlDeath2_spr\\zombieGirlDeath2_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "652def16-fec3-470c-805b-17ca45bfe405",
             "Value": {
                 "id": "f17c2625-b18f-4953-8fac-eb580c79168b",
@@ -1852,6 +1892,14 @@
                 "id": "738d93a8-127c-4e42-bc9e-ea1049252ee6",
                 "resourcePath": "views\\6b00aa22-4c1b-4345-bf6e-d3c223f86fbd.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "6b61367d-bc11-4de0-b805-8c8c0da53d8f",
+            "Value": {
+                "id": "d462df30-2c60-4385-8889-562eae73ed8f",
+                "resourcePath": "objects\\zombieGirlDeath2_obj\\zombieGirlDeath2_obj.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -2263,6 +2311,14 @@
             }
         },
         {
+            "Key": "7e5939c1-0d3b-45c0-b4c0-65f6af24c45e",
+            "Value": {
+                "id": "ae78529f-e40f-4882-b6d7-901106791002",
+                "resourcePath": "views\\7e5939c1-0d3b-45c0-b4c0-65f6af24c45e.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "7ea12a6b-d3f4-42de-8c88-9de70c66b8bc",
             "Value": {
                 "id": "d0339303-80cd-4742-9450-5c1beb01faee",
@@ -2599,6 +2655,14 @@
             }
         },
         {
+            "Key": "8c1f3ec1-a293-4f3c-866f-b398f82bcc3e",
+            "Value": {
+                "id": "c4550401-95ae-446a-8e35-db87ea0e99bb",
+                "resourcePath": "views\\8c1f3ec1-a293-4f3c-866f-b398f82bcc3e.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "8c236617-5938-4159-9415-0dfd629cd30a",
             "Value": {
                 "id": "073f86df-1c7f-4222-bcaa-afe064756315",
@@ -2756,14 +2820,6 @@
                 "id": "0480ff32-0237-40eb-b659-9d7bed7885fc",
                 "resourcePath": "objects\\doorEnter_obj\\doorEnter_obj.yy",
                 "resourceType": "GMObject"
-            }
-        },
-        {
-            "Key": "9359f3ae-1427-45e6-9f7d-9375f05b9b39",
-            "Value": {
-                "id": "cdfb9495-23ae-4593-8d1c-a87ca1df9993",
-                "resourcePath": "sprites\\newZombie_spr\\newZombie_spr.yy",
-                "resourceType": "GMSprite"
             }
         },
         {

@@ -28,6 +28,7 @@ savePosX = x;
 savePosY = y;
 damageTint = false;
 damageTintTimer = 15;
+headshot = false;
 
 //Help Vars
 attackCooldownSave = attackCooldown;

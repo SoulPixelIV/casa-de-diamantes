@@ -26,6 +26,7 @@ attackInProg2 = false;
 damageTint = false;
 damageTintTimer = 15;
 animationSpeed = 1;
+headshot = false;
 
 attackCooldownSave = attackCooldown;
 damageTintTimerSave = damageTintTimer;

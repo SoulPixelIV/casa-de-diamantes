@@ -14,6 +14,7 @@ if (hitbox != noone)
 		{
 			enemyTarget.damageTint = true;
 			enemyTarget.hp -= 10;
+			enemyTarget.headshot = true;
 		}
 		penetration--;
 		instance_create_layer(x, y, "Instances", bloodSpread_obj);
