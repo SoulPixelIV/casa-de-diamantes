@@ -151,6 +151,14 @@
             }
         },
         {
+            "Key": "07aff0a0-fbb3-4859-a84e-76b3b0e793cd",
+            "Value": {
+                "id": "b25be246-a49a-48cb-af11-3d2ab571e037",
+                "resourcePath": "views\\07aff0a0-fbb3-4859-a84e-76b3b0e793cd.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "08ecba7d-0483-4b63-a35d-6e600343a5b3",
             "Value": {
                 "id": "24670491-df49-48dd-b2fe-05253a743892",
@@ -1807,6 +1815,14 @@
             }
         },
         {
+            "Key": "68feef66-1238-451a-a5c7-0e2c7ead3556",
+            "Value": {
+                "id": "630c4dd6-7800-4689-88f3-c4956316b3b3",
+                "resourcePath": "views\\68feef66-1238-451a-a5c7-0e2c7ead3556.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "69672ea7-a848-4ef3-be63-6474710e89e6",
             "Value": {
                 "id": "2d7a32d9-ea2c-443a-8c02-bc907347afd0",
@@ -2023,6 +2039,14 @@
             }
         },
         {
+            "Key": "6f932f5c-b447-4952-8179-1f18a1a720e3",
+            "Value": {
+                "id": "7e79b665-65f9-4138-a34b-4b24b2956efa",
+                "resourcePath": "objects\\cursor_obj\\cursor_obj.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "6ff5c81a-41ec-4e60-a345-ce3852b56bba",
             "Value": {
                 "id": "83a99eff-8be6-48fa-b17a-4f7f3a7a8823",
@@ -2204,6 +2228,14 @@
                 "id": "257186bc-c239-4ca3-940f-f04bf69ce823",
                 "resourcePath": "objects\\spikes_obj\\spikes_obj.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "7947f668-0994-4aa7-9ea1-74febd48b199",
+            "Value": {
+                "id": "883e3d6d-8912-48ad-bf0d-33e3e28aec5b",
+                "resourcePath": "views\\7947f668-0994-4aa7-9ea1-74febd48b199.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -3967,6 +3999,14 @@
             }
         },
         {
+            "Key": "cb9b94d9-967f-48a7-ba5f-708e26e4b108",
+            "Value": {
+                "id": "78ff7e48-77e7-4d57-a1be-3b58e215d841",
+                "resourcePath": "views\\cb9b94d9-967f-48a7-ba5f-708e26e4b108.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "cba22ca6-91a9-4d2a-bf2e-2c88ad410e24",
             "Value": {
                 "id": "5e626c2f-3314-4d0a-806b-ad6ef02cd148",
@@ -4916,6 +4956,14 @@
                 "id": "817e77c2-02c7-4c2c-80f1-527a6a771909",
                 "resourcePath": "sprites\\zombieGirlWounded_spr\\zombieGirlWounded_spr.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "fb0a432e-3050-42c8-a38e-a93a8488fa8e",
+            "Value": {
+                "id": "ce57b2bc-31db-40ee-9d7a-519c146e43cb",
+                "resourcePath": "views\\fb0a432e-3050-42c8-a38e-a93a8488fa8e.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
