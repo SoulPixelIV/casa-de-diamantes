@@ -8,7 +8,7 @@ if (image_index > image_number - 1)
 }
 else
 {
-	image_index += global.dt / 30;
+	image_index += global.dt / 25;
 }
 
 if (image_alpha < 0.05)

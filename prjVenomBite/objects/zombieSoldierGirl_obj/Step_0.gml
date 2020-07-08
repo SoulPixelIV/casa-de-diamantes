@@ -135,7 +135,9 @@ if (hp < 0)
 			instance_create_layer(x, y - 16, "Instances", chipVioletPickup_obj);
 		}
 	}
-	instance_destroy();
+	damageTint = false;
+	attackCooldown = attackCooldownSave;
+	instance_change(zombieSoldierGirlDeath1_obj, false);
 }
 
 //Headshot Hitbox

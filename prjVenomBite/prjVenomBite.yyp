@@ -1911,6 +1911,14 @@
             }
         },
         {
+            "Key": "6ae6c1e0-c179-4b89-a445-af36a2d35d81",
+            "Value": {
+                "id": "a7b90727-dc57-4dab-8e3c-957afdfae37d",
+                "resourcePath": "sprites\\zombieSoldierGirlDeath1_spr\\zombieSoldierGirlDeath1_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "6b00aa22-4c1b-4345-bf6e-d3c223f86fbd",
             "Value": {
                 "id": "738d93a8-127c-4e42-bc9e-ea1049252ee6",
@@ -2835,6 +2843,14 @@
             "Value": {
                 "id": "131981af-1796-4c8b-8620-e6387461c5c8",
                 "resourcePath": "objects\\toxicWater_obj\\toxicWater_obj.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "91c49168-5025-43bd-beae-994c2e2b99f3",
+            "Value": {
+                "id": "42cf796e-dd36-4a3e-a308-e91585e1c128",
+                "resourcePath": "objects\\zombieSoldierGirlDeath1_obj\\zombieSoldierGirlDeath1_obj.yy",
                 "resourceType": "GMObject"
             }
         },
