@@ -1,28 +1,28 @@
 {
-    "id": "91c49168-5025-43bd-beae-994c2e2b99f3",
+    "id": "f652e398-f0c5-48a4-89de-92daab7cc49d",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "zombieSoldierGirlDeath1_obj",
+    "name": "fireSpark_obj",
     "eventList": [
         {
-            "id": "cf37400a-4c22-4a56-b090-67fcd14f7ad9",
+            "id": "cfbd7fdd-2517-4ee8-8c74-69699e4adaf3",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 3,
-            "m_owner": "91c49168-5025-43bd-beae-994c2e2b99f3"
+            "m_owner": "f652e398-f0c5-48a4-89de-92daab7cc49d"
         },
         {
-            "id": "3918f46d-3257-49cf-b9c6-cc280a548765",
+            "id": "d5981bb0-8d5a-446b-ba3d-83f3fe334086",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 0,
-            "m_owner": "91c49168-5025-43bd-beae-994c2e2b99f3"
+            "m_owner": "f652e398-f0c5-48a4-89de-92daab7cc49d"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -43,6 +43,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "6ae6c1e0-c179-4b89-a445-af36a2d35d81",
+    "spriteId": "e161377c-cc36-4664-844b-869c1a61b17e",
     "visible": true
 }

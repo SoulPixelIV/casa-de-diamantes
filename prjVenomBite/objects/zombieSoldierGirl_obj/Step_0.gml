@@ -137,7 +137,7 @@ if (hp < 0)
 	}
 	damageTint = false;
 	attackCooldown = attackCooldownSave;
-	instance_change(zombieSoldierGirlDeath1_obj, false);
+	instance_change(zombieSoldierGirlDeath1_obj, true);
 }
 
 //Headshot Hitbox

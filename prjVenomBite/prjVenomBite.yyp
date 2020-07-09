@@ -4479,6 +4479,14 @@
             }
         },
         {
+            "Key": "e161377c-cc36-4664-844b-869c1a61b17e",
+            "Value": {
+                "id": "275ea72e-80d8-4cfe-bf66-d4aef95dfb59",
+                "resourcePath": "sprites\\fireSpark_spr\\fireSpark_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "e18bd27b-1776-48d5-83ef-d5bd94b37e2f",
             "Value": {
                 "id": "0c2e66a5-1412-40db-8877-ff639cc8a6c7",
@@ -4884,6 +4892,14 @@
                 "id": "2d01b88c-e6e6-40c8-ac8c-8f95b708f6d9",
                 "resourcePath": "scripts\\lighting_get_active_camera\\lighting_get_active_camera.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "f652e398-f0c5-48a4-89de-92daab7cc49d",
+            "Value": {
+                "id": "74bea533-060e-43c9-9757-d83cdcb3790e",
+                "resourcePath": "objects\\fireSpark_obj\\fireSpark_obj.yy",
+                "resourceType": "GMObject"
             }
         },
         {
