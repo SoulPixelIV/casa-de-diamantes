@@ -6,5 +6,8 @@ turnSpeed = random_range(-1, 1);
 
 lifetime = random_range(25, 200);
 
+lightSize = 0.1;
+lightStrength = 1;
+
 image_xscale = random_range(0.2, 0.4);
 image_yscale = random_range(0.2, 0.4);
