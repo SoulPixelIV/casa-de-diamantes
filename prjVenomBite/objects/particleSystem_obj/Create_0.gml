@@ -54,6 +54,6 @@ part_type_colour_rgb(global.bloodPart, 140, 255, 0, 0, 0, 0);
 part_type_life(global.bloodPart, 40, 110);
 part_type_size(global.bloodPart, 0.3, 0.5, 0, 0);
 part_type_orientation(global.bloodPart, 0, 359, 1, 0, 1);
-part_type_direction(global.bloodPart, 30, 150, 0, 0);
+part_type_direction(global.bloodPart, 60, 120, 0, 0);
 part_type_gravity(global.bloodPart, 0.01, 270);
 part_type_speed(global.bloodPart, 1, 2, 0, 0);

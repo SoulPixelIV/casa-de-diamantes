@@ -126,10 +126,13 @@ if (hp < 0)
 //Bucket Hitbox
 with (bucketHitbox)
 {
-	if (x != body.x && y != body.y)
+	if (!is_undefined(body))
 	{
-		x = body.x;
-		y = body.y - 16;
+		if (x != body.x && y != body.y)
+		{
+			x = body.x;
+			y = body.y - 16;
+		}
 	}
 }
 
