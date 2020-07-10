@@ -7,7 +7,11 @@ else
 {
 	player_obj.verspeed = -player_obj.jumpStrength / 1.4;
 	player_obj.jumpType = 2;
-	instance_create_layer(player_obj.x, player_obj.y + 16, "Instances", sparkleCloud_obj);
+	//instance_create_layer(player_obj.x, player_obj.y + 16, "Instances", sparkleCloud_obj);
+	partEmitter = part_emitter_create(global.partSystem);
+	part_emitter_region(global.partSystem, partEmitter, player_obj.x - 32, player_obj.x + 32, player_obj.y + 8, player_obj.y + 32, ps_shape_ellipse, ps_distr_linear);
+	part_emitter_burst(global.partSystem, partEmitter, global.playerPart, 50);
+	part_emitter_destroy(global.partSystem, partEmitter);
 }
 
 if (player_obj.isDashing)

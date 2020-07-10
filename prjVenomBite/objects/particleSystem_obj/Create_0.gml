@@ -37,6 +37,16 @@ part_type_orientation(global.bluePart, 0, 359, 1, 0, 1);
 part_type_direction(global.bluePart, 180, 270, 0, 3);
 part_type_speed(global.bluePart, 0.04, 0.1, 0, 0.1);
 
+global.playerPart = part_type_create();
+part_type_sprite(global.playerPart, fireSpark_spr, true, true, true);
+part_type_colour_rgb(global.playerPart, 190, 255, 0, 0, 120, 255);
+part_type_life(global.playerPart, 90, 140);
+part_type_size(global.playerPart, 0.1, 0.2, 0, 0);
+part_type_orientation(global.playerPart, 0, 359, 1, 0, 1);
+part_type_direction(global.playerPart, 0, 359, 0, 3);
+part_type_gravity(global.playerPart, 0.0001, 270);
+part_type_speed(global.playerPart, 0.01, 0.02, 0, 0.003);
+
 //Blood Particles
 global.bloodPart = part_type_create();
 part_type_sprite(global.bloodPart, fireSpark_spr, true, true, true);
