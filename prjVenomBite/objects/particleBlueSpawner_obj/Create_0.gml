@@ -1,5 +1,4 @@
-/// @description Variables
+sparkEmitter = part_emitter_create(global.partSystem);
+part_emitter_region(global.partSystem, sparkEmitter, x - 64, x + 64, y - 64, y + 64, ps_shape_ellipse, ps_distr_gaussian);
 
-spawnrate = 20;
-sprite_index = noone;
-alarm[0] = 1;
+part_emitter_stream(global.partSystem, sparkEmitter, global.bluePart, spawnRate);

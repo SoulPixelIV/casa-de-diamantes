@@ -25,7 +25,7 @@ if (!noHUD)
 	draw_set_font(global.optixFont);
 	draw_set_color(c_white);
 	//Debug
-	draw_text_colour(edgeMarginHor, 252, "Framerate: " + string(globalSettings_obj.realTimeScale), c_white, c_white, c_white, c_white, 1);
+	draw_text_colour(edgeMarginHor, 252, "Framerate: " + string(fps), c_white, c_white, c_white, c_white, 1);
 
 	//Healthbar
 	draw_sprite_ext(healthbarBorder_spr, 0, edgeMarginHor, edgeMarginVer, 1, 1, 0, -1, 1);
