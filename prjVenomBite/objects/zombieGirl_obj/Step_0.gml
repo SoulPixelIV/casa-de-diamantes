@@ -122,11 +122,11 @@ if (hp < 0)
 	damageTint = false;
 	if (headshot)
 	{
-		instance_change(zombieGirlDeath1_obj, false);
+		instance_change(zombieGirlDeath1_obj, true);
 	}
 	else
 	{
-		instance_change(zombieGirlDeath2_obj, false);
+		instance_change(zombieGirlDeath2_obj, true);
 	}
 }
 
