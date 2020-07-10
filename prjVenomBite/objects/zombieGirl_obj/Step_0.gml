@@ -236,3 +236,4 @@ if (damageTintTimer < 0)
 	damageTintTimer = damageTintTimerSave;
 	damageTint = false;
 }
+

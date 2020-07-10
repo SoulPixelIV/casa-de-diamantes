@@ -2759,6 +2759,14 @@
             }
         },
         {
+            "Key": "8dc71532-7165-4174-b794-c79d8a490b24",
+            "Value": {
+                "id": "c4be577b-2405-4eeb-952d-297b45e54b08",
+                "resourcePath": "objects\\particleSystem_obj\\particleSystem_obj.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "8df26c2c-dcb9-46d2-aa83-4c32dab43f61",
             "Value": {
                 "id": "bf0ba402-cdc1-431f-8575-ff1cf242e837",
