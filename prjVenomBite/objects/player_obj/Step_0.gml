@@ -814,7 +814,7 @@ if (hp < 0 || infection > 100)
 //Zombie
 if (isZombie && !plagueTransformation)
 {
-	zombieTimer -= global.dt;
+	zombieTimer -= global.dt / 1.5;
 }
 if (zombieTimer < 0)
 {

@@ -7,3 +7,4 @@ camera_obj.showInfOverlay = false;
 camera_obj.InfOverlayTimer = camera_obj.InfOverlayTimerSave;
 camera_obj.infOverlayX = camera_obj.xScreenSize;
 camera_obj.infOverlayY = 0;
+camera_obj.infOverlayLocked = false;
