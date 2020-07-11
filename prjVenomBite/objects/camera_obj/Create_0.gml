@@ -55,3 +55,12 @@ yTo = y - 16;
 ySave = y;
 
 image_speed = 0.1;
+
+//Infection Overlay
+showInfOverlay = false;
+showedInf = false;
+InfOverlayTimer = 450;
+InfOverlayTimerSave = InfOverlayTimer;
+infOverlayLocked = false;
+infOverlayX = xScreenSize;
+infOverlayY = 0;

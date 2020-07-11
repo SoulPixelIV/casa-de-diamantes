@@ -25,7 +25,7 @@ if (!noHUD)
 	draw_set_font(global.optixFont);
 	draw_set_color(c_white);
 	//Debug
-	draw_text_colour(edgeMarginHor, 252, "Framerate: " + string(fps), c_white, c_white, c_white, c_white, 1);
+	draw_text_colour(edgeMarginHor, 252, "Framerate: " + string(infOverlayLocked), c_white, c_white, c_white, c_white, 1);
 
 	//Healthbar
 	draw_sprite_ext(healthbarBorder_spr, 0, edgeMarginHor, edgeMarginVer, 1, 1, 0, -1, 1);
@@ -143,6 +143,50 @@ if (player_obj.isZombie)
 	draw_set_color(c_white);
 	draw_text(116, 78, "PRESS 'F' TO BECOME HUMAN AGAIN!");
 	draw_text(116, 111, "PRESS 'Q' TO DIE INSTANTLY!");
+}
+
+if (showInfOverlay && !showedInf)
+{
+	InfOverlayTimer -= global.dt;
+	if (!infOverlayLocked)
+	{
+		if (infOverlayX > 0)
+		{
+			infOverlayX -= 16;
+		}
+		if (infOverlayY < yScreenSize - 1)
+		{
+			infOverlayY += 9;
+		}
+		if (infOverlayX < 0)
+		{
+			infOverlayLocked = true;
+		}
+		if (infOverlayY > yScreenSize - 1)
+		{
+			infOverlayLocked = true;
+		}
+	}
+
+	if (infOverlayLocked && InfOverlayTimer > 0)
+	{
+		infOverlayX = 0;
+		infOverlayY = yScreenSize - 1;
+	}
+	
+	if (InfOverlayTimer < 0)
+	{
+		infOverlayX -= 16;
+		infOverlayY += 9;
+		
+		if (infOverlayX < -xScreenSize)
+		{
+			showedInf = true;
+			InfOverlayTimer = InfOverlayTimerSave;
+		}
+	}
+
+	draw_sprite(infectedOverlay_spr, 0, infOverlayX, infOverlayY);
 }
 
 //#####LAYER 3#####
