@@ -575,6 +575,14 @@
             }
         },
         {
+            "Key": "219169ab-dfce-4c82-9d84-eed5f883f52c",
+            "Value": {
+                "id": "cf9d0243-a0bb-4227-8949-b684499ce816",
+                "resourcePath": "sprites\\deathOverlay_spr\\deathOverlay_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "2287ecf8-e9ac-4c16-92d2-ba86e22d18fb",
             "Value": {
                 "id": "b2c17d3b-2a73-4420-8fdf-157b25e2d3da",
@@ -2836,6 +2844,14 @@
                 "id": "71fc8ec1-2984-459a-8804-e5e770a082a7",
                 "resourcePath": "objects\\fallingObjectPlayer_obj\\fallingObjectPlayer_obj.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "9046bbbe-f4fe-4600-8043-c02243d864c2",
+            "Value": {
+                "id": "09c446b2-99cc-4738-97d7-d478b77098f3",
+                "resourcePath": "sprites\\death_spr\\death_spr.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
