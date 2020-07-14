@@ -1503,6 +1503,14 @@
             }
         },
         {
+            "Key": "502e5a26-d0eb-47f7-acbb-4f93e84d935b",
+            "Value": {
+                "id": "12beae91-59ae-450e-a21c-7b0e8f783b31",
+                "resourcePath": "objects\\lensflareYellow_obj\\lensflareYellow_obj.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "50433d8f-4fdf-47d7-b5d9-e61bcf4461b4",
             "Value": {
                 "id": "fa8f701a-9475-4c2e-849a-2ac0710a38e1",
