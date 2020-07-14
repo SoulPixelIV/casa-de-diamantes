@@ -767,14 +767,6 @@
             }
         },
         {
-            "Key": "2e3b3351-f8ef-479a-97b6-80869d95481b",
-            "Value": {
-                "id": "2610ff2b-9949-4893-9988-0e5a2d27053f",
-                "resourcePath": "objects\\particleRedSpawner_obj\\particleRedSpawner_obj.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "2f5909f4-6aac-4f27-9f2e-98de8be26e5c",
             "Value": {
                 "id": "0f681b55-c18f-4b5a-a176-95b91e397107",
@@ -1003,6 +995,14 @@
             "Value": {
                 "id": "b1d69244-12fc-4093-8760-67d540a89559",
                 "resourcePath": "sprites\\windowPistol_spr\\windowPistol_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "37fc725f-70c0-46af-b77c-d76c06e31ddd",
+            "Value": {
+                "id": "a537cba1-5435-4bb0-a798-17e572cc5071",
+                "resourcePath": "sprites\\ladderPacked_spr\\ladderPacked_spr.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1691,6 +1691,14 @@
             "Value": {
                 "id": "c9d8d51a-1626-4a12-8a88-c9d20467a833",
                 "resourcePath": "objects\\ammoPackPistol_obj\\ammoPackPistol_obj.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "617efbb0-8102-46d1-96db-09d1e4857ff6",
+            "Value": {
+                "id": "57a0135f-9816-4449-9a3b-25a31e731886",
+                "resourcePath": "objects\\ladderPacked_obj\\ladderPacked_obj.yy",
                 "resourceType": "GMObject"
             }
         },
