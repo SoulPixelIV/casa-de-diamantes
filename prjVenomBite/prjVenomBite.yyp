@@ -559,6 +559,14 @@
             }
         },
         {
+            "Key": "1ebe068f-5058-4a97-9261-103d7c38f06f",
+            "Value": {
+                "id": "9927846e-dc05-4437-ae07-e512d38b24ba",
+                "resourcePath": "objects\\cityShop_obj\\cityShop_obj.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "200fc3e7-2d91-4713-9dd4-2b6229140b4b",
             "Value": {
                 "id": "46570484-1a53-4fef-9030-70cebda8803f",
@@ -724,14 +732,6 @@
                 "id": "4c55d972-1b99-4ada-87d5-7ee1602669ec",
                 "resourcePath": "objects\\shotgun_obj\\shotgun_obj.yy",
                 "resourceType": "GMObject"
-            }
-        },
-        {
-            "Key": "2b0d5953-2f95-4834-92c1-62c0f2d6aa8b",
-            "Value": {
-                "id": "fff513b5-a10a-4e81-8c84-5f7d2de2791b",
-                "resourcePath": "sprites\\casinoBuildingFrontStairs_spr\\casinoBuildingFrontStairs_spr.yy",
-                "resourceType": "GMSprite"
             }
         },
         {
@@ -1151,14 +1151,6 @@
             }
         },
         {
-            "Key": "3f029ea7-cb6d-4191-8dd5-ff2a42cdd29c",
-            "Value": {
-                "id": "550bc158-2438-4280-85e3-d5d391e6ec0f",
-                "resourcePath": "sprites\\casinoBuildingSmall_spr\\casinoBuildingSmall_spr.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "3f2bf592-baa0-46af-92ad-f59271d1ec0e",
             "Value": {
                 "id": "3b5861ca-d0be-457d-9520-59fda906d4ed",
@@ -1371,6 +1363,14 @@
             "Value": {
                 "id": "3d3f6d0a-e0dd-4ff9-a36d-74b01543a0a2",
                 "resourcePath": "sprites\\minecartRail_spr\\minecartRail_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "4669a4bf-b02f-4be6-b6d9-c3bd02f1565c",
+            "Value": {
+                "id": "b0f52861-be26-4623-ae6a-b5782dbcf9cf",
+                "resourcePath": "sprites\\cityShop_spr\\cityShop_spr.yy",
                 "resourceType": "GMSprite"
             }
         },
