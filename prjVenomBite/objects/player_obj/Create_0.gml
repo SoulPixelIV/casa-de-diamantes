@@ -16,7 +16,7 @@ jumpType = 0;
 
 //Physics
 gravityStrength = -0.03; //Lower is lower gravity
-jumpStrength = 2.2;
+jumpStrength = 2;
 frictionActive = true;
 frictionStrength = 0.02; //Lower is more slippery
 shotJumpStrength = 4;
