@@ -383,10 +383,18 @@ if (onLadder)
 	if (keyboard_check(ord("W")))
 	{
 		verspeed = -0.75;
+		if (!audio_is_playing(climb1_snd) && !audio_is_playing(climb2_snd) && !audio_is_playing(climb3_snd) && !audio_is_playing(climb4_snd))
+		{
+			var climbsnd = audio_play_sound(choose(climb1_snd, climb2_snd, climb3_snd, climb4_snd), 1, false);
+		}
 	}
 	else if (keyboard_check(ord("S")))
 	{
 		verspeed = 0.75;
+		if (!audio_is_playing(climb1_snd) && !audio_is_playing(climb2_snd) && !audio_is_playing(climb3_snd) && !audio_is_playing(climb4_snd))
+		{
+			var climbsnd = audio_play_sound(choose(climb1_snd, climb2_snd, climb3_snd, climb4_snd), 1, false);
+		}
 	}
 	else
 	{

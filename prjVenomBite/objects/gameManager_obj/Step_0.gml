@@ -11,11 +11,18 @@ audio_sound_pitch(bulletHitHeadshot_snd, 1 * global.timeScale);
 audio_sound_pitch(bucketBroken_snd, 1 * global.timeScale);
 audio_sound_pitch(chaingunLocked_snd, 1 * global.timeScale);
 audio_sound_pitch(deathCross_snd, 1 * global.timeScale);
+audio_sound_pitch(explosion_snd, 1 * global.timeScale);
 
 audio_sound_pitch(infectedVoice_snd, 1 * global.timeScale);
 audio_sound_pitch(plagueInfectionVoice_snd, 1 * global.timeScale);
 
 audio_sound_pitch(walk1_snd, 1 * global.timeScale);
+audio_sound_pitch(glitter_snd, 1 * global.timeScale);
+audio_sound_pitch(climb1_snd, 1 * global.timeScale);
+audio_sound_pitch(climb2_snd, 1 * global.timeScale);
+audio_sound_pitch(climb3_snd, 1 * global.timeScale);
+audio_sound_pitch(climb4_snd, 1 * global.timeScale);
+audio_sound_pitch(glitterLong_snd, 1 * global.timeScale);
 audio_sound_pitch(walk2_snd, 1 * global.timeScale);
 audio_sound_pitch(jump_snd, 1 * global.timeScale);
 audio_sound_pitch(land_snd, 1 * global.timeScale);
