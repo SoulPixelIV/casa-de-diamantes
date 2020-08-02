@@ -3,9 +3,9 @@ if (follow != noone)
 	if (instance_exists(follow))
 	{
 		xTo = follow.x;
-		if ((follow.y - 16) < y - 86 || (follow.y - 16) > y + 64)
+		if ((follow.y - cameraYBorder) < y - 86 || (follow.y - cameraYBorder) > y + 64)
 		{
-			yTo = follow.y - 16;
+			yTo = follow.y - cameraYBorder;
 		}
 	}
 }
@@ -13,17 +13,17 @@ if (follow != noone)
 if (follow == camera_obj)
 {
 	xTo = player_obj.x + (mouse_x - player_obj.x) / 2;
-	yTo = (player_obj.y + 16) + (mouse_y - (player_obj.y + 16)) / 2;
+	yTo = (player_obj.y + cameraYBorder) + (mouse_y - (player_obj.y + cameraYBorder)) / 2;
 }
 
 x += (xTo - x) * (global.dtNoSlowmo / 10);
 if (follow == camera_obj)
 {
-	y += (yTo - y - 16) * (global.dtNoSlowmo / 10);
+	y += (yTo - y - cameraYBorder) * (global.dtNoSlowmo / 10);
 }
 else
 {
-	y += (yTo - y - 16) * (global.dtNoSlowmo / 50);
+	y += (yTo - y - cameraYBorder) * (global.dtNoSlowmo / 50);
 }
 
 var vm = matrix_build_lookat(x,y,-10,x,y,0,0,1,0);
@@ -67,12 +67,14 @@ switch (currentCameraState)
 {
 	case cameraState.normal:
 		changeCamera_scr(480, 270);
+		cameraYBorder = 16;
 		break;
 	case cameraState.zoomIn:
 		changeCamera_scr(192, 108);
 		break;
 	case cameraState.zoomOut:
-		changeCamera_scr(640, 360);
+		changeCamera_scr(768, 432);
+		cameraYBorder = 86;
 		break;
 	case cameraState.zoomAFK:
 		changeCamera_scr(160, 90);

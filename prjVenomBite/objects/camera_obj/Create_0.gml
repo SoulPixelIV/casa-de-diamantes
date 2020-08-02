@@ -1,8 +1,11 @@
 xScreenSize = 480;
 yScreenSize = 270;
+xWindowSize = xScreenSize * 2;
+yWindowSize = yScreenSize * 2;
 xScreenSizeNew = x;
 yScreenSizeNew = y;
 cameraSpeed = 1;
+cameraYBorder = 16;
 noHUD = false;
 anim = 0;
 reloadAnimTimer = 25;
