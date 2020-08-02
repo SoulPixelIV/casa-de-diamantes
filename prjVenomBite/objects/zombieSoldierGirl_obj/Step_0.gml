@@ -4,6 +4,11 @@ x += horspeed * global.dt;
 y += verspeed * global.dt;
 
 dirLookat = point_direction(x, y, player_obj.x, player_obj.y);
+if (attackCooldown > 90 && attackInProg1)
+{
+	playerPosX = player_obj.x;
+	playerPosY = player_obj.y;
+}
 
 if (movement)
 {
@@ -166,7 +171,7 @@ else
 	attackInProg2 = true;
 }
 
-if (attackCooldown < 60 && attackInProg1)
+if (attackCooldown < 160 && attackInProg1)
 {
 	sprite_index = zombieSoldierGirlAim_spr;
 }
