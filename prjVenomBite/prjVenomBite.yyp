@@ -319,6 +319,14 @@
             }
         },
         {
+            "Key": "108b1228-aba7-4a53-90b0-8d39bbf811f4",
+            "Value": {
+                "id": "40696f65-8b4a-4b9b-bb33-fa996313fba4",
+                "resourcePath": "sprites\\spark_spr\\spark_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "1099eadc-1a5f-4f76-aa6f-7851b6120cfa",
             "Value": {
                 "id": "507346ad-9560-440c-86d7-a639a543ac7f",
@@ -419,6 +427,14 @@
             "Value": {
                 "id": "5fcb7683-6f10-48ef-89d5-d9b74e9b7823",
                 "resourcePath": "sprites\\lantern_spr\\lantern_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "15ed718f-98ed-4c0c-981a-beb5c1c2b48b",
+            "Value": {
+                "id": "22f0d9e3-8fe0-4937-b3d3-590fe7c3a8e3",
+                "resourcePath": "sprites\\sprite241\\sprite241.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -588,6 +604,14 @@
                 "id": "e60b94c6-4aed-43a1-99f0-fdc300ffb37c",
                 "resourcePath": "views\\201ab256-c570-435b-bd9b-7a9c028041e1.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "207ce82b-3d77-464f-87da-85853d0a7867",
+            "Value": {
+                "id": "05da3bdb-8427-4bbd-842b-1825c7fda4bc",
+                "resourcePath": "objects\\fireworkSpawner_obj\\fireworkSpawner_obj.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -764,6 +788,14 @@
                 "id": "139a65fd-b52e-40d7-80ba-3985d852b46e",
                 "resourcePath": "sprites\\spikesShort_spr\\spikesShort_spr.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "2dac89e9-18b8-4a7f-9304-f218136ed881",
+            "Value": {
+                "id": "04120c51-1fee-43b0-8b20-14e97880b7e7",
+                "resourcePath": "views\\2dac89e9-18b8-4a7f-9304-f218136ed881.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
