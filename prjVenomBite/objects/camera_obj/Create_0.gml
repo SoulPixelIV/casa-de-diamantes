@@ -67,3 +67,16 @@ InfOverlayTimerSave = InfOverlayTimer;
 infOverlayLocked = false;
 infOverlayX = xScreenSize;
 infOverlayY = 0;
+
+//Particles
+randParticleX = random_range(0, xScreenSize);
+randParticleY = random_range(0, yScreenSize);
+randParticleX2 = random_range(0, xScreenSize);
+randParticleY2 = random_range(0, yScreenSize);
+randParticleX3 = random_range(0, xScreenSize);
+randParticleY3 = random_range(0, yScreenSize);
+randParticleX4 = random_range(0, xScreenSize);
+randParticleY4 = random_range(0, yScreenSize);
+
+partMovement = 0;
+partDir = 0;

@@ -95,3 +95,22 @@ if (vignetteStrengthTimer < 0)
 	vignetteStrength = 1;
 	vignetteStrengthTimer = vignetteStrengthTimerSave;
 }
+
+//Particles
+if (partMovement > 15)
+{
+	partDir = 1;
+}
+if (partMovement < -15)
+{
+	partDir = 0;
+}
+
+if (partDir == 0)
+{
+	partMovement += global.dt / 100;
+}
+else
+{
+	partMovement -= global.dt / 100;
+}

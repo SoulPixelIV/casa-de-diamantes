@@ -4,7 +4,10 @@ edgeMarginHor = 16;
 //#####LAYER 0#####
 
 //Lens Dirt + Vignette
-draw_sprite_ext(lensDirt_spr, 0, -20, -20, 1, 1, 0, -1, 0.075);
+draw_sprite_ext(lensDirt1_spr, 0, randParticleX + partMovement, randParticleY + partMovement / 2, 1, 1, 0, -1, 0.075);
+draw_sprite_ext(lensDirt2_spr, 0, randParticleX2 + partMovement, randParticleY2 + partMovement / 2, 1, 1, 0, -1, 0.075);
+draw_sprite_ext(lensDirt3_spr, 0, randParticleX3 + partMovement, randParticleY3 + partMovement / 2, 1, 1, 0, -1, 0.04);
+draw_sprite_ext(lensDirt4_spr, 0, randParticleX4 + partMovement, randParticleY4 + partMovement / 2, 1, 1, 0, -1, 0.075);
 	
 //Vignette Effect
 if (deathVignette)
