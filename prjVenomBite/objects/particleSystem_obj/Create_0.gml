@@ -98,3 +98,22 @@ part_type_orientation(global.fireworkBluePart, 0, 359, 1, 0, 1);
 part_type_direction(global.fireworkBluePart, 0, 360, 0, 0);
 part_type_gravity(global.fireworkBluePart, 0.0035, 270);
 part_type_speed(global.fireworkBluePart, 1.2, 1.7, -0.004, 0);
+
+//Coins
+
+global.coinBluePart = part_type_create();
+part_type_sprite(global.coinBluePart, particleBlue_spr, true, true, true);
+part_type_life(global.coinBluePart, 100, 140);
+part_type_size(global.coinBluePart, 0.1, 0.2, 0, 0);
+part_type_orientation(global.coinBluePart, 0, 359, 1, 0, 1);
+part_type_direction(global.coinBluePart, 0, 360, 0, 3);
+part_type_speed(global.coinBluePart, 0.1, 0.16, 0, 0.1);
+
+global.coinRedPart = part_type_create();
+part_type_sprite(global.coinRedPart, particleBlue_spr, true, true, true);
+part_type_colour_rgb(global.coinRedPart, 190, 255, 0, 0, 0, 0);
+part_type_life(global.coinRedPart, 100, 140);
+part_type_size(global.coinRedPart, 0.1, 0.2, 0, 0);
+part_type_orientation(global.coinRedPart, 0, 359, 1, 0, 1);
+part_type_direction(global.coinRedPart, 0, 360, 0, 3);
+part_type_speed(global.coinRedPart, 0.1, 0.16, 0, 0.1);

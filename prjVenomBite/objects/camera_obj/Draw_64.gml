@@ -57,11 +57,14 @@ if (!noHUD)
 	//Chipbar
 	draw_sprite_ext(scoreBorder_spr, -1, 375, edgeMarginVer, 1, 1, 0, -1, 1);
 	
-	for (i = 0; i < array_length_1d(digitsManager_obj.value); i++)
-	{
-		draw_text(415 - (i*16), edgeMarginVer, digitsManager_obj.value[i]);
-	}
-	
+	draw_sprite(scoreNumber_spr, digitsManager_obj.value[0], 452, edgeMarginVer + 2);
+	draw_sprite(scoreNumber_spr, digitsManager_obj.value[1], 442, edgeMarginVer + 2);
+	draw_sprite(scoreNumber_spr, digitsManager_obj.value[2], 432, edgeMarginVer + 2);
+	draw_sprite(scoreNumber_spr, digitsManager_obj.value[3], 422, edgeMarginVer + 2);
+	draw_sprite(scoreNumber_spr, digitsManager_obj.value[4], 412, edgeMarginVer + 2);
+	draw_sprite(scoreNumber_spr, digitsManager_obj.value[5], 402, edgeMarginVer + 2);
+	draw_sprite(scoreNumber_spr, digitsManager_obj.value[6], 392, edgeMarginVer + 2);
+
 	//Ammo
 	if (global.currentWeapon == gameManager_obj.pickedWeapon.pistol || global.currentWeapon == gameManager_obj.pickedWeapon.dualBarettas)
 	{
