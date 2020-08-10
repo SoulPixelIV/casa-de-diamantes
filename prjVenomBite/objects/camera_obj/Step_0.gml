@@ -108,9 +108,9 @@ if (partMovement < -15)
 
 if (partDir == 0)
 {
-	partMovement += global.dt / 100;
+	partMovement += global.dt / 150;
 }
 else
 {
-	partMovement -= global.dt / 100;
+	partMovement -= global.dt / 150;
 }
