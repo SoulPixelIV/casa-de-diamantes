@@ -78,5 +78,10 @@ randParticleY3 = random_range(0, yScreenSize);
 randParticleX4 = random_range(0, xScreenSize);
 randParticleY4 = random_range(0, yScreenSize);
 
+//Score
+scoreSpin = false;
+scoreSpinTimer = 100;
+scoreSpinTimerSave = scoreSpinTimer;
+
 partMovement = 0;
 partDir = 0;

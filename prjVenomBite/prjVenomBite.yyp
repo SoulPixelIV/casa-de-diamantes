@@ -647,6 +647,14 @@
             }
         },
         {
+            "Key": "22be7605-5745-477b-8884-cce68ab52735",
+            "Value": {
+                "id": "0f3a7927-0070-45e7-a84e-696cf5be5af0",
+                "resourcePath": "sprites\\scoreNumberSpin_spr\\scoreNumberSpin_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "22deb360-62ef-4ff2-9d07-328ab2eaa10a",
             "Value": {
                 "id": "a666bcf0-3e27-4717-a45f-d71aaf595ee7",

@@ -1,4 +1,5 @@
 global.money += 1;
+camera_obj.scoreSpin = true;
 audio_play_sound(coin1_snd, 1, false);
 
 partEmitter = part_emitter_create(global.partSystem);
