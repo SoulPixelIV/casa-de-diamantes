@@ -12,6 +12,11 @@ audio_sound_pitch(bucketBroken_snd, 1 * global.timeScale);
 audio_sound_pitch(chaingunLocked_snd, 1 * global.timeScale);
 audio_sound_pitch(deathCross_snd, 1 * global.timeScale);
 audio_sound_pitch(explosion_snd, 1 * global.timeScale);
+audio_sound_pitch(coin1_snd, 1 * global.timeScale);
+audio_sound_pitch(coin2_snd, 1 * global.timeScale);
+audio_sound_pitch(coin3_snd, 1 * global.timeScale);
+audio_sound_pitch(coinbarSpin_snd, 1 * global.timeScale);
+audio_sound_pitch(coinbarStop_snd, 1 * global.timeScale);
 
 audio_sound_pitch(infectedVoice_snd, 1 * global.timeScale);
 audio_sound_pitch(plagueInfectionVoice_snd, 1 * global.timeScale);

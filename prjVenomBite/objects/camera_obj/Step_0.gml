@@ -114,3 +114,22 @@ else
 {
 	partMovement -= global.dt / 150;
 }
+
+//Coinbar
+if (scoreSpin)
+{
+	if (!audio_is_playing(coinbarSpin_snd))
+	{
+		spinsnd = audio_play_sound(coinbarSpin_snd, 1, false);
+	}
+	playScoreStop = true;
+}
+else
+{
+	if (playScoreStop)
+	{
+		audio_play_sound(coinbarStop_snd, 1, false);
+		audio_stop_sound(spinsnd);
+		playScoreStop = false;
+	}
+}

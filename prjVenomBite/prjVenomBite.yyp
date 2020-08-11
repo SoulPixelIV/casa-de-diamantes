@@ -567,6 +567,14 @@
             }
         },
         {
+            "Key": "1d150504-bb34-4e3f-8be4-92c19f311a98",
+            "Value": {
+                "id": "c2a23afa-4d7b-4ed5-ad7c-25c3e815026f",
+                "resourcePath": "sounds\\coinbarStop_snd\\coinbarStop_snd.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "1d42e569-1e31-47af-ae60-aee0e506b68b",
             "Value": {
                 "id": "1ee80f09-7561-4ce6-9a07-e2e7f95b0586",
@@ -4892,6 +4900,14 @@
                 "id": "0c7a2844-4ebd-471c-9bea-01494bee3b46",
                 "resourcePath": "views\\ea9ece90-0f55-4822-b3fa-42d502c475de.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "eaa90e6b-17a2-4a0f-87dd-0a2e5b237ce7",
+            "Value": {
+                "id": "525ba4ac-c238-4e31-a4a5-045c7465f2a3",
+                "resourcePath": "sounds\\coinbarSpin_snd\\coinbarSpin_snd.yy",
+                "resourceType": "GMSound"
             }
         },
         {

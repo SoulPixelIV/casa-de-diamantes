@@ -81,6 +81,8 @@ randParticleY4 = random_range(0, yScreenSize);
 //Score
 scoreSpin = false;
 scoreSpinTimer = 200;
+playScoreStop = false;
+spinsnd = noone;
 scoreSpinTimerSave = scoreSpinTimer;
 
 partMovement = 0;
