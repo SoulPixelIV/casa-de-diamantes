@@ -1583,14 +1583,6 @@
             }
         },
         {
-            "Key": "50433d8f-4fdf-47d7-b5d9-e61bcf4461b4",
-            "Value": {
-                "id": "fa8f701a-9475-4c2e-849a-2ac0710a38e1",
-                "resourcePath": "sprites\\lensDirt_spr\\lensDirt_spr.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "50e7399a-e931-433c-9ff4-0726f9e0603a",
             "Value": {
                 "id": "9c06c0b9-e3de-45c8-b2d7-b4a81bd07f20",
