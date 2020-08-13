@@ -177,7 +177,7 @@ if (attackCooldown < 160 && attackInProg1)
 }
 if (attackCooldown < 0 && attackInProg1)
 {
-	var shot = audio_play_sound(shotgunShot_snd, 1, false);
+	var shot = audio_play_sound_on(emitter, shotgunShot_snd, false, 1);
 	audio_sound_pitch(shot, random_range(0.9, 1.1));
 		
 	instance_create_layer(x + 10, y, "Instances", bulletZombieSoldierGirl_obj);

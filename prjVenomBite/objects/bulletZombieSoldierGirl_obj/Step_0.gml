@@ -13,7 +13,7 @@ if (invincibilityTimer <= 0)
 {
 	if (!place_free(x, y) && !place_meeting(x, y, colliderBulletFree_obj))
 	{
-		audio_play_sound(bulletHitGround_snd, 1, false);
+		audio_play_sound_on(emitter, bulletHitGround_snd, false, 1);
 		instance_change(bulletHit_obj, true);
 	}
 }

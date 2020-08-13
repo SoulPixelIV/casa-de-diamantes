@@ -100,6 +100,9 @@ dashDelaySave = dashDelay;
 //Second Dualbarettas arm
 sprID = layer_sprite_create("BackgroundObjects", -1000, -1000, playerDualBarettas_spr);
 
+//Audio
+audio_listener_orientation(1,0,0,0,0,1);
+
 //Debug
 instance_create_layer(x + 1, y - 4, "Instances", playerBulletLine_obj);
 
