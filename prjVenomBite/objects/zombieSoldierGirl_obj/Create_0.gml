@@ -41,8 +41,8 @@ with (headshotHitbox)
 
 //Create Emitter
 emitter = audio_emitter_create();
-audio_max_distance = 500;
-audio_drop_start = 180;
+audio_max_distance = 200;
+audio_drop_start = 50;
 
 audio_falloff_set_model(audio_falloff_linear_distance);
 audio_emitter_position(emitter, x, y, 0);

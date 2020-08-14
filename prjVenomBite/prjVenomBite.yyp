@@ -4415,6 +4415,14 @@
             }
         },
         {
+            "Key": "d35e9f5d-70a1-4e7a-b3cb-8bcb67d80bd9",
+            "Value": {
+                "id": "bf2493dc-6ac6-4b13-af0b-51f4eb678f18",
+                "resourcePath": "sounds\\lever_snd\\lever_snd.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "d3b7dcb5-687f-4711-8e95-04eb499e8b75",
             "Value": {
                 "id": "1d6b3c60-1887-48fa-9512-2b31a41f18c8",

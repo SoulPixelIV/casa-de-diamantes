@@ -7,6 +7,12 @@ if (distance_to_object(player_obj) < 32)
 		image_index = 1;
 		used = true;
 		
+		if (!playedSound)
+		{
+			audio_play_sound(lever_snd, 1, false);
+			playedSound = true;
+		}
+		
 		if (instance_exists(objectAccess))
 		{
 			if (objectCount == 1)
