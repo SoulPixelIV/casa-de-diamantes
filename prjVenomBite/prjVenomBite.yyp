@@ -2495,6 +2495,14 @@
             }
         },
         {
+            "Key": "7e5a27b5-6e1f-4800-b739-35a0b6ae3d49",
+            "Value": {
+                "id": "e316cdf5-cd55-4c0e-99ed-187cf24446ba",
+                "resourcePath": "sounds\\jetpack_snd\\jetpack_snd.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "7ea12a6b-d3f4-42de-8c88-9de70c66b8bc",
             "Value": {
                 "id": "d0339303-80cd-4742-9450-5c1beb01faee",
