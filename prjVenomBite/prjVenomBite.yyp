@@ -4559,6 +4559,14 @@
             }
         },
         {
+            "Key": "d903839d-8f8e-45f3-8fcf-8825458cff20",
+            "Value": {
+                "id": "f3c425f8-9ad6-447e-bf92-b21819667d9d",
+                "resourcePath": "sounds\\pickup_snd\\pickup_snd.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "d9b44d17-0ce6-4c64-ad83-96105e89b9ec",
             "Value": {
                 "id": "f30177bc-0cf5-4c4e-855c-41084ba84630",
@@ -5260,6 +5268,14 @@
                 "id": "66810d11-6025-4ce7-9f98-2e9a02d84006",
                 "resourcePath": "sprites\\enemyPointer_spr\\enemyPointer_spr.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "fb968078-482e-4bbd-858c-7f50585d6249",
+            "Value": {
+                "id": "1bfbe415-3c69-4257-ba46-39af9d5884ed",
+                "resourcePath": "sounds\\pickupSingle_snd\\pickupSingle_snd.yy",
+                "resourceType": "GMSound"
             }
         },
         {

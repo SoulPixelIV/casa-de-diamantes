@@ -17,3 +17,4 @@ switch (argument0)
 		break;
 }
 player_obj.unarmed = false;
+audio_play_sound(pickup_snd, 1, false);

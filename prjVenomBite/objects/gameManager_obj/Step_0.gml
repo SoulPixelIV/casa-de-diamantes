@@ -18,6 +18,8 @@ audio_sound_pitch(coin3_snd, clamp(1 * global.timeScale, 0.5, 1.5));
 audio_sound_pitch(coinbarSpin_snd, clamp(1 * global.timeScale, 0.5, 1.5));
 audio_sound_pitch(coinbarStop_snd, clamp(1 * global.timeScale, 0.5, 1.5));
 audio_sound_pitch(jetpack_snd, clamp(1 * global.timeScale, 0.5, 1.5));
+audio_sound_pitch(pickup_snd, clamp(1 * global.timeScale, 0.5, 1.5));
+audio_sound_pitch(pickupSingle_snd, clamp(1 * global.timeScale, 0.5, 1.5));
 
 audio_sound_pitch(infectedVoice_snd, clamp(1 * global.timeScale, 0.5, 1.5));
 audio_sound_pitch(plagueInfectionVoice_snd, clamp(1 * global.timeScale, 0.5, 1.5));
