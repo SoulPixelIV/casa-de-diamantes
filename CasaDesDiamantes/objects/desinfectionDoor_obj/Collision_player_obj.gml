@@ -1,0 +1,10 @@
+player_obj.plagueTransformation = false;
+player_obj.infection = 0;
+camera_obj.zombiespikeEffectBorder = camera_obj.zombiespikeEffectBorderSave;
+camera_obj.zombiespikeBorderTransparent = camera_obj.zombiespikeBorderTransparentSave;
+camera_obj.showedInf = false;
+camera_obj.showInfOverlay = false;
+camera_obj.InfOverlayTimer = camera_obj.InfOverlayTimerSave;
+camera_obj.infOverlayX = camera_obj.xScreenSize;
+camera_obj.infOverlayY = 0;
+camera_obj.infOverlayLocked = false;

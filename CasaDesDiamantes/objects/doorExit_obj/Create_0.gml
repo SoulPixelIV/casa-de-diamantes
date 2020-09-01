@@ -1,0 +1,2 @@
+entered = false;
+exited = false;
