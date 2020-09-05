@@ -28,7 +28,7 @@
     "path": "folders/Objects/TeleportBoxes.yy",
   },
   "resourceVersion": "1.0",
-  "name": "RTC_11_spawn",
+  "name": "RTC_0_spawn2",
   "tags": [],
   "resourceType": "GMObject",
 }

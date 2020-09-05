@@ -1,8 +1,8 @@
 {
   "type": 1,
   "parent": {
-    "name": "CasaDesDiamantes",
-    "path": "CasaDesDiamantes.yyp",
+    "name": "Shaders",
+    "path": "folders/Other/Shaders.yy",
   },
   "resourceVersion": "1.0",
   "name": "shdMask",

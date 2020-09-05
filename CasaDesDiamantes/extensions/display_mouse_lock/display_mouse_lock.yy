@@ -65,7 +65,7 @@
   "copyToTargets": 113497714299118,
   "parent": {
     "name": "Extensions",
-    "path": "folders/Extensions.yy",
+    "path": "folders/Other/Extensions.yy",
   },
   "resourceVersion": "1.0",
   "name": "display_mouse_lock",

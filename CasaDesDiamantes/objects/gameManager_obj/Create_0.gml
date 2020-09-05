@@ -1,5 +1,6 @@
 /// @description Variables
 
+global.spawn = 0;
 global.money = 1000;
 global.key = false;
 global.scorepoints = 0;

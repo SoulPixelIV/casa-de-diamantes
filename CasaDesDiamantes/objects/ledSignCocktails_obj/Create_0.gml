@@ -10,24 +10,19 @@ part_emitter_region(global.partSystem, sparkEmitter, x - 64, x + 64, y - 64, y +
 
 part_emitter_stream(global.partSystem, sparkEmitter, global.ledRedPart, -50);
 
-/// @description Set up the shader uniform variables
+/// @description Initialize the main object
+// Initialize the time variable
 time = 0;
 
-// Sprite names
-spr = ledSignCocktails_spr; // Change these if you named them differently
+// Set sprite names
+spr = ledSignCocktails_spr;
 mask = mask_spr;
 ramp = ramp_spr;
 
-// Options
+// Set options
 optionFPS = 60;
 optionSeconds = 4;
-optionTimeCurve = "inBounce";
+optionTimeCurve = "linear";
 
-// Shader samplers & uniforms
-uMaskTex = shader_get_sampler_index(shdMask, "maskTex");
-uRampTex = shader_get_sampler_index(shdMask, "rampTex");
-uRampXMin = shader_get_uniform(shdMask, "rampXMin");
-uRampXMax = shader_get_uniform(shdMask, "rampXMax");
-uRampYMin = shader_get_uniform(shdMask, "rampYMin");
-uTime = shader_get_uniform(shdMask, "time");
-uMaskTransform = shader_get_uniform(shdMask, "maskTransform");
+// Initialize the mask animation
+maskAnimationInit();

@@ -206,17 +206,17 @@ function getMaskTransformVector(spr, mask) {
 /// @function				maskAnimationInit();
 /// @description			Gets the mask shaders uniforms and samplers.
 function maskAnimationInit() {
-uMaskTex = shader_get_sampler_index(shdMask, "maskTex");
-uRampTex = shader_get_sampler_index(shdMask, "rampTex");
-uRampXMin = shader_get_uniform(shdMask, "rampXMin");
-uRampXMax = shader_get_uniform(shdMask, "rampXMax");
-uRampYMin = shader_get_uniform(shdMask, "rampYMin");
-uTime = shader_get_uniform(shdMask, "time");
-uInvert = shader_get_uniform(shdMask, "invert");
-uRimSize = shader_get_uniform(shdMask, "rimSize");
-uSmoothness = shader_get_uniform(shdMask, "smoothness");
-uPulseRange = shader_get_uniform(shdMask, "pulseRange");
-uMaskTransform = shader_get_uniform(shdMask, "maskTransform");	
+	uMaskTex = shader_get_sampler_index(shdMask, "maskTex");
+	uRampTex = shader_get_sampler_index(shdMask, "rampTex");
+	uRampXMin = shader_get_uniform(shdMask, "rampXMin");
+	uRampXMax = shader_get_uniform(shdMask, "rampXMax");
+	uRampYMin = shader_get_uniform(shdMask, "rampYMin");
+	uTime = shader_get_uniform(shdMask, "time");
+	uInvert = shader_get_uniform(shdMask, "invert");
+	uRimSize = shader_get_uniform(shdMask, "rimSize");
+	uSmoothness = shader_get_uniform(shdMask, "smoothness");
+	uPulseRange = shader_get_uniform(shdMask, "pulseRange");
+	uMaskTransform = shader_get_uniform(shdMask, "maskTransform");	
 };
 
 // Mask animation draw
@@ -227,33 +227,33 @@ uMaskTransform = shader_get_uniform(shdMask, "maskTransform");
 /// @param {real} time		The time.
 /// @description			Draws the mask animation.
 function maskAnimationDraw(spr, mask, ramp, time) {
-// Get textures and UVs
-var maskTex = sprite_get_texture(mask, 0);
-var rampTex = sprite_get_texture(ramp, 0);
-var vec = getMaskTransformVector(spr, mask);
-var uvs = texture_get_uvs(rampTex);
-
-// Set shader and texfilter
-gpu_set_tex_filter_ext(uRampTex, true);
-shader_set(shdMask);
-
-// Pass samplers and uniforms
-texture_set_stage(uMaskTex, maskTex);
-texture_set_stage(uRampTex, rampTex);
-shader_set_uniform_f(uRampXMin, uvs[0]);
-shader_set_uniform_f(uRampXMax, uvs[2] - uvs[0]);
-shader_set_uniform_f(uRampYMin, uvs[1]);
-shader_set_uniform_f(uTime, time);
-shader_set_uniform_f(uInvert, optionInvert);
-shader_set_uniform_f(uRimSize, optionColorRimSize);
-shader_set_uniform_f(uSmoothness, optionEdgeSmoothness);
-shader_set_uniform_f(uPulseRange, optionPulseRange);
-shader_set_uniform_f_array(uMaskTransform, vec);
-
-// Draw the animation
-draw_sprite_ext(spr, 0, x, y, 1, 1, 0, c_white, 1);
-
-// Reset shader and texfilter
-shader_reset();
-gpu_set_tex_filter(false);
+	// Get textures and UVs
+	var maskTex = sprite_get_texture(mask, 0);
+	var rampTex = sprite_get_texture(ramp, 0);
+	var vec = getMaskTransformVector(spr, mask);
+	var uvs = texture_get_uvs(rampTex);
+	
+	// Set shader and texfilter
+	gpu_set_tex_filter_ext(uRampTex, true);
+	shader_set(shdMask);
+	
+	// Pass samplers and uniforms
+	texture_set_stage(uMaskTex, maskTex);
+	texture_set_stage(uRampTex, rampTex);
+	shader_set_uniform_f(uRampXMin, uvs[0]);
+	shader_set_uniform_f(uRampXMax, uvs[2] - uvs[0]);
+	shader_set_uniform_f(uRampYMin, uvs[1]);
+	shader_set_uniform_f(uTime, time);
+	shader_set_uniform_f(uInvert, 0);
+	shader_set_uniform_f(uRimSize, 0.17);
+	shader_set_uniform_f(uSmoothness, 0.08);
+	shader_set_uniform_f(uPulseRange, 0);
+	shader_set_uniform_f_array(uMaskTransform, vec);
+	
+	// Draw the animation
+	draw_sprite_ext(spr, 0, x, y, 1, 1, 0, c_white, 1);
+	
+	// Reset shader and texfilter
+	shader_reset();
+	gpu_set_tex_filter(false);
 };

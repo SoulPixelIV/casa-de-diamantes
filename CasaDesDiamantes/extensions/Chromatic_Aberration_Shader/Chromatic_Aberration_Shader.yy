@@ -49,7 +49,7 @@
   "copyToTargets": -1,
   "parent": {
     "name": "Extensions",
-    "path": "folders/Extensions.yy",
+    "path": "folders/Other/Extensions.yy",
   },
   "resourceVersion": "1.0",
   "name": "Chromatic_Aberration_Shader",

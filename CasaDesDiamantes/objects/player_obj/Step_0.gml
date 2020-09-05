@@ -946,3 +946,11 @@ else
 		audio_stop_sound(slide_snd);
 	}
 }
+
+//Set Spawn
+if (global.spawn == 1 && room == level0_RoadToCasino)
+{
+	x = RTC_0_spawn2.x;
+	y = RTC_0_spawn2.y;
+	global.spawn = 0;
+}

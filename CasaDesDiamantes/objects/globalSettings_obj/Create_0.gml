@@ -21,3 +21,5 @@ global.tilemap = layer_tilemap_get_id("TileCollider");
 //sprite_set_live(playerJumpSpin_spr, true);
 
 instance_create_layer(x, y, "GameManagerLayer", gifRecorder_obj);
+
+room_goto_next();
