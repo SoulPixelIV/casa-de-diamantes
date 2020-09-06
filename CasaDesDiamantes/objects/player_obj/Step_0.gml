@@ -954,3 +954,9 @@ if (global.spawn == 1 && room == level0_RoadToCasino)
 	y = RTC_0_spawn2.y;
 	global.spawn = 0;
 }
+if (global.spawn == 2 && room == level1_RoadToCasino)
+{
+	x = RTC_1_spawn2.x;
+	y = RTC_1_spawn2.y;
+	global.spawn = 0;
+}

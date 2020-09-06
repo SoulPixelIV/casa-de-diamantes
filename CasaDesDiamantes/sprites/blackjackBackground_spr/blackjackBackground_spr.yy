@@ -26,6 +26,7 @@
   "frames": [
     {"compositeImage":{"FrameId":{"name":"25ed84a3-cf47-4c17-afdd-70277c1be3b8","path":"sprites/blackjackBackground_spr/blackjackBackground_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"25ed84a3-cf47-4c17-afdd-70277c1be3b8","path":"sprites/blackjackBackground_spr/blackjackBackground_spr.yy",},"LayerId":{"name":"008ba177-60e8-494f-8562-e391f945eb65","path":"sprites/blackjackBackground_spr/blackjackBackground_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"25ed84a3-cf47-4c17-afdd-70277c1be3b8","path":"sprites/blackjackBackground_spr/blackjackBackground_spr.yy",},"LayerId":{"name":"008ba177-60e8-494f-8562-e391f945eb65","path":"sprites/blackjackBackground_spr/blackjackBackground_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"blackjackBackground_spr","path":"sprites/blackjackBackground_spr/blackjackBackground_spr.yy",},"resourceVersion":"1.0","name":"25ed84a3-cf47-4c17-afdd-70277c1be3b8","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {

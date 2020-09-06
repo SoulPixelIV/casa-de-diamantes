@@ -4,7 +4,7 @@
     "path": "sprites/colliderBox_spr/colliderBox_spr.yy",
   },
   "solid": false,
-  "visible": true,
+  "visible": false,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": null,

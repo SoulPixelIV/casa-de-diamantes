@@ -60,7 +60,7 @@
     "eventStubScript": null,
     "parent": {"name":"enemyPointer_spr","path":"sprites/enemyPointer_spr/enemyPointer_spr.yy",},
     "resourceVersion": "1.3",
-    "name": "",
+    "name": "enemyPointer_spr",
     "tags": [],
     "resourceType": "GMSequence",
   },

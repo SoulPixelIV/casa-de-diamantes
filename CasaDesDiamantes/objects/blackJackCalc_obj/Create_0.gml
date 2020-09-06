@@ -1,3 +1,6 @@
+screen = 0;
+yBorderSize = 96;
+xBorderSize = 32;
 moneypool = 0;
 playerDeck = [-1,-1,-1,-1,-1,-1,-1,-1,-1,-1];
 dealerDeck = [-1,-1,-1,-1,-1,-1,-1,-1,-1,-1];

@@ -9,6 +9,7 @@ cursor_sprite = cursor_spr;
 realTimeScale = global.timeScale;
 
 global.optixFont = font_add("Optixal.ttf", 12, false, false, 32, 128);
+global.casinoFont = font_add("Casino3DFilledMarquee.ttf", 30, false, false, 32, 128);
 global.optixFontBig = font_add("Optixal.ttf", 14, true, false, 32, 128);
 global.optixFontHuge = font_add("Optixal.ttf", 18, true, false, 32, 128);
 

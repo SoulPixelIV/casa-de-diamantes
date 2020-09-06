@@ -88,7 +88,7 @@
     "eventStubScript": null,
     "parent": {"name":"chipRed_spr","path":"sprites/chipRed_spr/chipRed_spr.yy",},
     "resourceVersion": "1.3",
-    "name": "",
+    "name": "chipRed_spr",
     "tags": [],
     "resourceType": "GMSequence",
   },
