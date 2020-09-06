@@ -1,4 +1,5 @@
 screen = 0;
+spawnedCards = false;
 yBorderSize = 96;
 xBorderSize = 32;
 moneypool = 0;
@@ -19,8 +20,6 @@ dealerDraws = false;
 checkScore = false;
 
 holdingCard = false;
-
-finished = false;
 
 playerSum = 0;
 dealerSum = 0;
@@ -77,17 +76,4 @@ switch (chosenDeck) {
 }
 dealerSum += blackjackConverter_scr(chosenDeck[chosenCard]);
 chosenDeck[chosenCard] = -2;
-
-
-//Create Cards
-for (i = 0; i < 7; i++)
-{
-	playerInstances[i] = instance_create_layer(204 + i * 32, 248, "Instances", playingCards_obj);
-	playerInstances[i].image_index = blackjackSpriteConverter_scr(playerDeck[i]);
-}
-for (i = 0; i < 7; i++)
-{
-	dealerInstances[i] = instance_create_layer(204 + i * 32, 48, "Instances", playingCards_obj);
-	dealerInstances[i].image_index = blackjackSpriteConverter_scr(dealerDeck[i]);
-}
 

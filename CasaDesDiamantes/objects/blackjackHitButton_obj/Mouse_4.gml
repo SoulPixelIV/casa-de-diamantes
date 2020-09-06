@@ -1,5 +1,4 @@
-if (!blackJackCalc_obj.finished)
-{
-	blackJackCalc_obj.drawCard = true;
-}
+blackJackCalc_obj.drawCard = true;
+blackJackCalc_obj.screen = 1;
+
 

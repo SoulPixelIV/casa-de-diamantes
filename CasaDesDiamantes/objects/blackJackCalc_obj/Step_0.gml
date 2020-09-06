@@ -117,7 +117,23 @@ if (playerSum == 21)
 }
 */
 
-if (finished && keyboard_check_pressed(vk_enter))
+//Create Cards
+if (screen == 1 && !spawnedCards)
+{
+	for (i = 0; i < 7; i++)
+	{
+		playerInstances[i] = instance_create_layer(204 + i * 32, 248, "Instances", playingCards_obj);
+		playerInstances[i].image_index = blackjackSpriteConverter_scr(playerDeck[i]);
+	}
+	for (i = 0; i < 7; i++)
+	{
+		dealerInstances[i] = instance_create_layer(204 + i * 32, 48, "Instances", playingCards_obj);
+		dealerInstances[i].image_index = blackjackSpriteConverter_scr(dealerDeck[i]);
+	}
+	spawnedCards = true;
+}
+
+if (screen == 1 && keyboard_check_pressed(vk_enter))
 {
 	blackjackReset();
 }

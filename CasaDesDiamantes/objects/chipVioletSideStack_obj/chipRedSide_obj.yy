@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "chipBlueSide_spr",
-    "path": "sprites/chipBlueSide_spr/chipBlueSide_spr.yy",
+    "name": "chipRedSide_spr",
+    "path": "sprites/chipRedSide_spr/chipRedSide_spr.yy",
   },
   "solid": false,
   "visible": true,
@@ -28,7 +28,7 @@
     "path": "folders/Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "chipBlueSide_obj",
+  "name": "chipRedSide_obj",
   "tags": [],
   "resourceType": "GMObject",
 }
