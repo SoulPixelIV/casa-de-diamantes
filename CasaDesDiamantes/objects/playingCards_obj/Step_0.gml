@@ -46,8 +46,3 @@ if (target)
 	x = mouse_x;
 	y = mouse_y;
 }
-
-if (blackJackCalc_obj.finished)
-{
-	instance_destroy();
-}

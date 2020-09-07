@@ -1,3 +1,11 @@
+if (blackJackCalc_obj.screen == 0)
+{
+	draw_set_color(c_black);
+	draw_set_alpha(0.7);
+	draw_rectangle(0, 0, xScreenSize, yScreenSize, false);
+	draw_set_alpha(1);
+}
+
 //Chipbar
 draw_sprite_ext(scoreBorder_spr, -1, 375, edgeMarginVer, 1, 1, 0, -1, 1);
 	

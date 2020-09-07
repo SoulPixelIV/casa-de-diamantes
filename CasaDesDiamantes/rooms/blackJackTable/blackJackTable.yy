@@ -14,6 +14,18 @@
   ],
   "layers": [
     {"instances":[
+        {"properties":[
+            {"propertyId":{"name":"text","path":"objects/button_obj/button_obj.yy",},"objectId":{"name":"button_obj","path":"objects/button_obj/button_obj.yy",},"value":"50 $","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+            {"propertyId":{"name":"bet50","path":"objects/button_obj/button_obj.yy",},"objectId":{"name":"button_obj","path":"objects/button_obj/button_obj.yy",},"value":"True","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+          ],"isDnd":false,"objectId":{"name":"button_obj","path":"objects/button_obj/button_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":16.0,"y":192.0,"resourceVersion":"1.0","name":"inst_2099246","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[
+            {"propertyId":{"name":"text","path":"objects/button_obj/button_obj.yy",},"objectId":{"name":"button_obj","path":"objects/button_obj/button_obj.yy",},"value":"500 $","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+            {"propertyId":{"name":"bet500","path":"objects/button_obj/button_obj.yy",},"objectId":{"name":"button_obj","path":"objects/button_obj/button_obj.yy",},"value":"True","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+          ],"isDnd":false,"objectId":{"name":"button_obj","path":"objects/button_obj/button_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":169.0,"y":192.0,"resourceVersion":"1.0","name":"inst_27B55DAC","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[
+            {"propertyId":{"name":"text","path":"objects/button_obj/button_obj.yy",},"objectId":{"name":"button_obj","path":"objects/button_obj/button_obj.yy",},"value":"10000 $","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+            {"propertyId":{"name":"bet10000","path":"objects/button_obj/button_obj.yy",},"objectId":{"name":"button_obj","path":"objects/button_obj/button_obj.yy",},"value":"True","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+          ],"isDnd":false,"objectId":{"name":"button_obj","path":"objects/button_obj/button_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":320.0,"y":192.0,"resourceVersion":"1.0","name":"inst_68ECF1DC","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"cameraBlackjack_obj","path":"objects/cameraBlackjack_obj/cameraBlackjack_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":232.0,"y":160.0,"resourceVersion":"1.0","name":"inst_3DF1D76B","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"digitsManager_obj","path":"objects/digitsManager_obj/digitsManager_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":96.0,"y":0.0,"resourceVersion":"1.0","name":"inst_6E5D5821","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"blackJackCalc_obj","path":"objects/blackJackCalc_obj/blackJackCalc_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":0.0,"y":0.0,"resourceVersion":"1.0","name":"inst_4F2C5528","tags":[],"resourceType":"GMRInstance",},
@@ -22,18 +34,6 @@
         {"properties":[],"isDnd":false,"objectId":{"name":"blackjackHitButton_obj","path":"objects/blackjackHitButton_obj/blackjackHitButton_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":0.75,"scaleY":0.5,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":100.0,"y":57.0,"resourceVersion":"1.0","name":"inst_4E6A0457","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"blackjackStandButton_obj","path":"objects/blackjackStandButton_obj/blackjackStandButton_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":0.75,"scaleY":0.5,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":100.0,"y":98.0,"resourceVersion":"1.0","name":"inst_6F7AD672","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"chipRedSide_obj","path":"objects/chipRedSide_obj/chipRedSide_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":66.0,"y":174.0,"resourceVersion":"1.0","name":"inst_4EFEAF2D","tags":[],"resourceType":"GMRInstance",},
-        {"properties":[
-            {"propertyId":{"name":"text","path":"objects/button_obj/button_obj.yy",},"objectId":{"name":"button_obj","path":"objects/button_obj/button_obj.yy",},"value":"50 $","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
-            {"propertyId":{"name":"bet50","path":"objects/button_obj/button_obj.yy",},"objectId":{"name":"button_obj","path":"objects/button_obj/button_obj.yy",},"value":"True","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
-          ],"isDnd":false,"objectId":{"name":"button_obj","path":"objects/button_obj/button_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":16.0,"y":192.0,"resourceVersion":"1.0","name":"inst_1276189F","tags":[],"resourceType":"GMRInstance",},
-        {"properties":[
-            {"propertyId":{"name":"text","path":"objects/button_obj/button_obj.yy",},"objectId":{"name":"button_obj","path":"objects/button_obj/button_obj.yy",},"value":"500 $","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
-            {"propertyId":{"name":"bet500","path":"objects/button_obj/button_obj.yy",},"objectId":{"name":"button_obj","path":"objects/button_obj/button_obj.yy",},"value":"True","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
-          ],"isDnd":false,"objectId":{"name":"button_obj","path":"objects/button_obj/button_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":169.0,"y":192.0,"resourceVersion":"1.0","name":"inst_343C59E6","tags":[],"resourceType":"GMRInstance",},
-        {"properties":[
-            {"propertyId":{"name":"text","path":"objects/button_obj/button_obj.yy",},"objectId":{"name":"button_obj","path":"objects/button_obj/button_obj.yy",},"value":"10000 $","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
-            {"propertyId":{"name":"bet10000","path":"objects/button_obj/button_obj.yy",},"objectId":{"name":"button_obj","path":"objects/button_obj/button_obj.yy",},"value":"True","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
-          ],"isDnd":false,"objectId":{"name":"button_obj","path":"objects/button_obj/button_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":320.0,"y":192.0,"resourceVersion":"1.0","name":"inst_650EB156","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"chipRedSide_obj","path":"objects/chipRedSide_obj/chipRedSide_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":66.0,"y":172.0,"resourceVersion":"1.0","name":"inst_68A91572","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"chipRedSide_obj","path":"objects/chipRedSide_obj/chipRedSide_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":66.0,"y":170.0,"resourceVersion":"1.0","name":"inst_7E67AE2C","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"chipRedSide_obj","path":"objects/chipRedSide_obj/chipRedSide_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":66.0,"y":168.0,"resourceVersion":"1.0","name":"inst_2955BC5D","tags":[],"resourceType":"GMRInstance",},
@@ -77,6 +77,7 @@
         {"properties":[],"isDnd":false,"objectId":{"name":"chipRedSide_obj","path":"objects/chipRedSide_obj/chipRedSide_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":328.0,"y":178.0,"resourceVersion":"1.0","name":"inst_D0C9427","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"chipRedSide_obj","path":"objects/chipRedSide_obj/chipRedSide_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":335.0,"y":162.0,"resourceVersion":"1.0","name":"inst_1BD963C0","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"chipRedSideStack_obj","path":"objects/chipRedSideStack_obj/chipRedSideStack_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":268.0,"y":167.0,"resourceVersion":"1.0","name":"inst_797E366A","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"blackjackStartButton_obj","path":"objects/blackjackStartButton_obj/blackjackStartButton_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":0.625,"scaleY":0.5,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":312.0,"y":80.0,"resourceVersion":"1.0","name":"inst_6A737C37","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":100,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":16,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Instances","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"blackjackBackground_obj","path":"objects/blackjackBackground_obj/blackjackBackground_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":0.0,"y":0.0,"resourceVersion":"1.0","name":"inst_5CB28D40","tags":[],"resourceType":"GMRInstance",},
@@ -86,6 +87,9 @@
   "creationCodeFile": "",
   "inheritCode": false,
   "instanceCreationOrder": [
+    {"name":"inst_2099246","path":"rooms/blackJackTable/blackJackTable.yy",},
+    {"name":"inst_27B55DAC","path":"rooms/blackJackTable/blackJackTable.yy",},
+    {"name":"inst_68ECF1DC","path":"rooms/blackJackTable/blackJackTable.yy",},
     {"name":"inst_4E6A0457","path":"rooms/blackJackTable/blackJackTable.yy",},
     {"name":"inst_6F7AD672","path":"rooms/blackJackTable/blackJackTable.yy",},
     {"name":"inst_5CB28D40","path":"rooms/blackJackTable/blackJackTable.yy",},
@@ -93,9 +97,6 @@
     {"name":"inst_3DF1D76B","path":"rooms/blackJackTable/blackJackTable.yy",},
     {"name":"inst_6E5D5821","path":"rooms/blackJackTable/blackJackTable.yy",},
     {"name":"inst_4EFEAF2D","path":"rooms/blackJackTable/blackJackTable.yy",},
-    {"name":"inst_1276189F","path":"rooms/blackJackTable/blackJackTable.yy",},
-    {"name":"inst_343C59E6","path":"rooms/blackJackTable/blackJackTable.yy",},
-    {"name":"inst_650EB156","path":"rooms/blackJackTable/blackJackTable.yy",},
     {"name":"inst_68A91572","path":"rooms/blackJackTable/blackJackTable.yy",},
     {"name":"inst_7E67AE2C","path":"rooms/blackJackTable/blackJackTable.yy",},
     {"name":"inst_2955BC5D","path":"rooms/blackJackTable/blackJackTable.yy",},
@@ -139,6 +140,7 @@
     {"name":"inst_D0C9427","path":"rooms/blackJackTable/blackJackTable.yy",},
     {"name":"inst_1BD963C0","path":"rooms/blackJackTable/blackJackTable.yy",},
     {"name":"inst_797E366A","path":"rooms/blackJackTable/blackJackTable.yy",},
+    {"name":"inst_6A737C37","path":"rooms/blackJackTable/blackJackTable.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
