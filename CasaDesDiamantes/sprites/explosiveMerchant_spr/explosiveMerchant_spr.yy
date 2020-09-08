@@ -15,7 +15,7 @@
   "VTile": false,
   "For3D": false,
   "width": 48,
-  "height": 64,
+  "height": 52,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -27,21 +27,37 @@
     {"compositeImage":{"FrameId":{"name":"d20b8bb9-d941-4fb8-bbb5-5c6937d965c6","path":"sprites/explosiveMerchant_spr/explosiveMerchant_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"d20b8bb9-d941-4fb8-bbb5-5c6937d965c6","path":"sprites/explosiveMerchant_spr/explosiveMerchant_spr.yy",},"LayerId":{"name":"d5588e13-2699-4744-bb02-954e2cded410","path":"sprites/explosiveMerchant_spr/explosiveMerchant_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"explosiveMerchant_spr","path":"sprites/explosiveMerchant_spr/explosiveMerchant_spr.yy",},"resourceVersion":"1.0","name":"d20b8bb9-d941-4fb8-bbb5-5c6937d965c6","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"edec7ecb-4a21-4252-9c29-b6b5a506effe","path":"sprites/explosiveMerchant_spr/explosiveMerchant_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"edec7ecb-4a21-4252-9c29-b6b5a506effe","path":"sprites/explosiveMerchant_spr/explosiveMerchant_spr.yy",},"LayerId":{"name":"d5588e13-2699-4744-bb02-954e2cded410","path":"sprites/explosiveMerchant_spr/explosiveMerchant_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"explosiveMerchant_spr","path":"sprites/explosiveMerchant_spr/explosiveMerchant_spr.yy",},"resourceVersion":"1.0","name":"edec7ecb-4a21-4252-9c29-b6b5a506effe","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"92b633fd-4f6e-4281-a308-da918d15907a","path":"sprites/explosiveMerchant_spr/explosiveMerchant_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"92b633fd-4f6e-4281-a308-da918d15907a","path":"sprites/explosiveMerchant_spr/explosiveMerchant_spr.yy",},"LayerId":{"name":"d5588e13-2699-4744-bb02-954e2cded410","path":"sprites/explosiveMerchant_spr/explosiveMerchant_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"explosiveMerchant_spr","path":"sprites/explosiveMerchant_spr/explosiveMerchant_spr.yy",},"resourceVersion":"1.0","name":"92b633fd-4f6e-4281-a308-da918d15907a","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"242a466c-d109-4746-b0ac-216e6be41090","path":"sprites/explosiveMerchant_spr/explosiveMerchant_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"242a466c-d109-4746-b0ac-216e6be41090","path":"sprites/explosiveMerchant_spr/explosiveMerchant_spr.yy",},"LayerId":{"name":"d5588e13-2699-4744-bb02-954e2cded410","path":"sprites/explosiveMerchant_spr/explosiveMerchant_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"explosiveMerchant_spr","path":"sprites/explosiveMerchant_spr/explosiveMerchant_spr.yy",},"resourceVersion":"1.0","name":"242a466c-d109-4746-b0ac-216e6be41090","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"51b2aaa0-170d-48ec-b0da-1f60aa034393","path":"sprites/explosiveMerchant_spr/explosiveMerchant_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"51b2aaa0-170d-48ec-b0da-1f60aa034393","path":"sprites/explosiveMerchant_spr/explosiveMerchant_spr.yy",},"LayerId":{"name":"d5588e13-2699-4744-bb02-954e2cded410","path":"sprites/explosiveMerchant_spr/explosiveMerchant_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"explosiveMerchant_spr","path":"sprites/explosiveMerchant_spr/explosiveMerchant_spr.yy",},"resourceVersion":"1.0","name":"51b2aaa0-170d-48ec-b0da-1f60aa034393","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"explosiveMerchant_spr","path":"sprites/explosiveMerchant_spr/explosiveMerchant_spr.yy",},
     "timeUnits": 1,
     "playback": 1,
-    "playbackSpeed": 1.0,
+    "playbackSpeed": 8.0,
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,
-    "length": 1.0,
+    "length": 5.0,
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"143cf5bc-0c83-4add-aa2c-b275e2525540","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d20b8bb9-d941-4fb8-bbb5-5c6937d965c6","path":"sprites/explosiveMerchant_spr/explosiveMerchant_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"2dbd5f61-657b-4ae9-a5fd-5abe6544c930","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"edec7ecb-4a21-4252-9c29-b6b5a506effe","path":"sprites/explosiveMerchant_spr/explosiveMerchant_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"c3fc41ab-b276-4410-ad87-5caac0a9042b","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"92b633fd-4f6e-4281-a308-da918d15907a","path":"sprites/explosiveMerchant_spr/explosiveMerchant_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"2d44db9e-ffc4-40d6-a95d-5b8b57d3dc79","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"242a466c-d109-4746-b0ac-216e6be41090","path":"sprites/explosiveMerchant_spr/explosiveMerchant_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"883adc3f-15b0-4a60-a863-0cee8876de49","Key":4.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"51b2aaa0-170d-48ec-b0da-1f60aa034393","path":"sprites/explosiveMerchant_spr/explosiveMerchant_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -55,7 +71,7 @@
     "backdropXOffset": 0.0,
     "backdropYOffset": 0.0,
     "xorigin": 16,
-    "yorigin": 32,
+    "yorigin": 26,
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"explosiveMerchant_spr","path":"sprites/explosiveMerchant_spr/explosiveMerchant_spr.yy",},
