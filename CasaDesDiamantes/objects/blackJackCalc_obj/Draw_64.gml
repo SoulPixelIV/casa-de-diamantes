@@ -11,14 +11,14 @@ if (screen == 1)
 		if ((playerSum > 21 || playerSum < dealerSum) && dealerSum < 22)
 		{
 			//LOOSE
-			draw_text(50, 50, "YOU LOOSE!");
+			draw_text(150, 150, "YOU LOOSE!");
 			moneypool = 0;
 			screen = 0;
 		}
 		else if (dealerSum > 21 || playerSum > dealerSum)
 		{
 			//WIN
-			draw_text(50, 50, "YOU WIN!");
+			draw_text(150, 150, "YOU WIN!");
 			if (!finished)
 			{
 				global.money += moneypool * 2;
@@ -29,7 +29,7 @@ if (screen == 1)
 		else if (playerSum == dealerSum)
 		{
 			//DRAW
-			draw_text(50, 50, "DRAW!");
+			draw_text(150, 150, "DRAW!");
 			if (!finished)
 			{
 				global.money += moneypool;

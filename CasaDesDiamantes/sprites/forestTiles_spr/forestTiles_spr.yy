@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"1bfb3df4-e099-4057-ac77-359769abf679","path":"sprites/streetTiles_spr/streetTiles_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"1bfb3df4-e099-4057-ac77-359769abf679","path":"sprites/streetTiles_spr/streetTiles_spr.yy",},"LayerId":{"name":"bbe75377-6bcf-4608-be53-f0484317fdcb","path":"sprites/streetTiles_spr/streetTiles_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"streetTiles_spr","path":"sprites/streetTiles_spr/streetTiles_spr.yy",},"resourceVersion":"1.0","name":"1bfb3df4-e099-4057-ac77-359769abf679","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"1bfb3df4-e099-4057-ac77-359769abf679","path":"sprites/forestTiles_spr/forestTiles_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"1bfb3df4-e099-4057-ac77-359769abf679","path":"sprites/forestTiles_spr/forestTiles_spr.yy",},"LayerId":{"name":"bbe75377-6bcf-4608-be53-f0484317fdcb","path":"sprites/forestTiles_spr/forestTiles_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"forestTiles_spr","path":"sprites/forestTiles_spr/forestTiles_spr.yy",},"resourceVersion":"1.0","name":"1bfb3df4-e099-4057-ac77-359769abf679","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"streetTiles_spr","path":"sprites/streetTiles_spr/streetTiles_spr.yy",},
+    "spriteId": {"name":"forestTiles_spr","path":"sprites/forestTiles_spr/forestTiles_spr.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 15.0,
@@ -41,10 +41,10 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"b27db958-5a12-4b79-b391-84e537c89c9a","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"1bfb3df4-e099-4057-ac77-359769abf679","path":"sprites/streetTiles_spr/streetTiles_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"4eba8f97-dfd1-4f54-b427-9d60d19ec89b","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"1bfb3df4-e099-4057-ac77-359769abf679","path":"sprites/forestTiles_spr/forestTiles_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
-    "visibleRange": {"x":0.0,"y":0.0,},
+    "visibleRange": null,
     "lockOrigin": false,
     "showBackdrop": true,
     "showBackdropImage": false,
@@ -58,9 +58,9 @@
     "yorigin": 128,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"streetTiles_spr","path":"sprites/streetTiles_spr/streetTiles_spr.yy",},
+    "parent": {"name":"forestTiles_spr","path":"sprites/forestTiles_spr/forestTiles_spr.yy",},
     "resourceVersion": "1.3",
-    "name": "streetTiles_spr",
+    "name": "forestTiles_spr",
     "tags": [],
     "resourceType": "GMSequence",
   },
@@ -72,7 +72,7 @@
     "path": "folders/Sprites/Tilesets.yy",
   },
   "resourceVersion": "1.0",
-  "name": "streetTiles_spr",
+  "name": "forestTiles_spr",
   "tags": [],
   "resourceType": "GMSprite",
 }

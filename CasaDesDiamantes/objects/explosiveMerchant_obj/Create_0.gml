@@ -22,6 +22,7 @@ savePosY = y;
 movement = true;
 gravityStrength = -0.05;
 damageTint = false;
+damageCollision = false;
 damageTintTimer = 15;
 headshot = false;
 

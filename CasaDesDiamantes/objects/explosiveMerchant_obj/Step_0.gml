@@ -9,10 +9,12 @@ if (movement)
 	if (dir == 0)
 	{
 		horspeed = movSpeed;
+		image_xscale = 1;
 	}
 	else
 	{
 		horspeed = -movSpeed;
+		image_xscale = -1;
 	}
 }
 
@@ -37,6 +39,15 @@ if (!place_free(x + (horspeed * global.dt), y))
 			x += sign(horspeed) / 100;
 		}
 		horspeed = 0;
+		
+		if (dir == 0)
+		{
+			dir = 1;
+		}
+		else
+		{
+			dir = 0;
+		}
 	}
 } 
 //verspeed

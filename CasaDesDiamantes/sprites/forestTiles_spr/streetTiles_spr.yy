@@ -60,7 +60,7 @@
     "eventStubScript": null,
     "parent": {"name":"streetTiles_spr","path":"sprites/streetTiles_spr/streetTiles_spr.yy",},
     "resourceVersion": "1.3",
-    "name": "streetTiles_spr",
+    "name": "",
     "tags": [],
     "resourceType": "GMSequence",
   },

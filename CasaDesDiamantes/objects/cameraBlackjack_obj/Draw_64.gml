@@ -2,7 +2,7 @@ if (blackJackCalc_obj.screen == 0)
 {
 	draw_set_color(c_black);
 	draw_set_alpha(0.7);
-	draw_rectangle(0, 0, xScreenSize, yScreenSize, false);
+	//draw_rectangle(0, 0, xScreenSize, yScreenSize, false);
 	draw_set_alpha(1);
 }
 
