@@ -18,7 +18,7 @@ else
 {
 	draw_set_alpha(0.1);
 }
-draw_ellipse_colour(-200, -200, 600, 600, c_black , c_red, false);
+draw_ellipse_colour(-200, -200, xScreenSize + 200, yScreenSize + 200, c_black , c_red, false);
 draw_set_alpha(1);
 
 //#####LAYER 1#####
