@@ -8,6 +8,11 @@ if (lifeLength < 0)
 	instance_destroy(light);
 }
 
+if (image_index > image_number - 1) 
+{
+    instance_destroy();
+}
+
 //Animation
 image_speed = 0;
 image_index += (global.dt / 15) * animationSpeed;
