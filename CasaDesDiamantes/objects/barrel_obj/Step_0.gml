@@ -1,5 +1,5 @@
 //Death
-if (hp < 0)
+if (hp < 0 || place_meeting(x, y, explosion_obj))
 {
 	global.scorepoints += points * global.multiplier;
 	global.multiplier += 1;

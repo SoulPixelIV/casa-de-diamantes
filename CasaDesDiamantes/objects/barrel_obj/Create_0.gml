@@ -3,7 +3,7 @@ polygon = polygon_from_instance(id);
 
 horspeed = 0;
 verspeed = 0;
-hp = 50;
+hp = 120;
 level = 1;
 damage = 15;
 points = 125;

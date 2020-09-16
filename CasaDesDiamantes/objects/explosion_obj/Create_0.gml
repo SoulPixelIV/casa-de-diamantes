@@ -1,8 +1,10 @@
 explosionDamage = 60;
 dealtDamage = false;
-lightSize = 4.4;
-lightStrength = 0.92;
-lifeLength = 30;
+animationSpeed = 1;
+lifeLength = 70;
+
+//Create light
+light = instance_create_layer(x, y, "GraphicsLayer", spotlightYellowIntense_obj);
 
 //Create Emitter
 emitter = audio_emitter_create();

@@ -5,9 +5,9 @@ lifeLength -= global.dt;
 if (lifeLength < 0)
 {
 	image_alpha -= global.dt / 30;
-	lightStrength -= global.dt / 30;
+	instance_destroy(light);
 }
-if (image_alpha < 0.1)
-{
-	instance_destroy();
-}
+
+//Animation
+image_speed = 0;
+image_index += (global.dt / 15) * animationSpeed;

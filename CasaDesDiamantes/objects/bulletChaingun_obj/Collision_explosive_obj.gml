@@ -4,6 +4,9 @@ if (!dealtDamage)
 	explosiveTarget.hp -= 4;
 	fire = instance_create_layer(x, y, "Instances", fireLong_obj);
 	fire.image_angle = image_angle;
+	fire.image_xscale = 0.75;
+	fire.image_yscale = 0.5;
+	fire.temporary = true;
 	audio_play_sound(bulletHit_snd, 1, false);
 	dealtDamage = true;
 	penetration -= 2;
@@ -19,6 +22,9 @@ else
 	{
 		fire2 = instance_create_layer(x, y, "Instances", fireLong_obj);
 		fire2.image_angle = image_angle + 180;
+		fire2.image_xscale = 0.75;
+		fire2.image_yscale = 0.5;
+		fire2.temporary = true;
 		createdFire = true;
 	}
 }
