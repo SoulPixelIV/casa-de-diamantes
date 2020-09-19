@@ -103,6 +103,12 @@ sprID = layer_sprite_create("BackgroundObjects", -1000, -1000, playerDualBaretta
 //Audio
 audio_listener_orientation(1,0,0,0,0,1);
 
+//Create Light
+if (!instance_exists(spotlightPlayer_obj))
+{
+	instance_create_layer(x, y, "GraphicsLayer", spotlightPlayer_obj);
+}
+
 //Debug
 instance_create_layer(x + 1, y - 4, "Instances", playerBulletLine_obj);
 

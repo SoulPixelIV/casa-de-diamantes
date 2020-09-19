@@ -6,7 +6,7 @@ verspeed = 0;
 dir = 0;
 
 //Stats
-hp = 100;
+hp = 40;
 level = 1;
 movSpeed = 0.033;
 moneyDropMin = 7;
@@ -29,8 +29,10 @@ headshot = false;
 //Help Vars
 damageTintTimerSave = damageTintTimer;
 
-headshotHitbox = instance_create_layer(x, y - 16, "Instances", headshotHitbox_obj);
-with (headshotHitbox)
+barrelHitbox = instance_create_layer(x, y - 12, "ForegroundObjects", barrelHitbox_obj);
+with (barrelHitbox)
 {
+	image_yscale = 2.2;
+	image_angle = -24;
 	body = instance_nearest(x, y, explosiveMerchant_obj);
 }

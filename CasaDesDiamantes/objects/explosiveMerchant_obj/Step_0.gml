@@ -80,10 +80,6 @@ else
 if (hp < 0)
 {
 	var deathCross = instance_create_layer(x, y - 8, "ForegroundObjects", deathCross_obj);
-	with (headshotHitbox)
-	{
-		instance_destroy();
-	}
 	
 	//Enemy Slowmo
 	var randNum = choose(1,2,3,4,5,6,7,8,9);
@@ -119,11 +115,18 @@ if (hp < 0)
 	}
 }
 
-//Headshot Hitbox
-with (headshotHitbox)
+//Barrel Hitbox
+with (barrelHitbox)
 {
-	x = body.x;
-	y = body.y - 16;
+	if (body.image_xscale == 1)
+	{
+		x = body.x - 12;
+	}
+	else
+	{
+		x = body.x + 12;
+	}
+	y = body.y - 12;
 }
 
 if (damageTint)
@@ -133,7 +136,7 @@ if (damageTint)
 }
 if (damageTintTimer < 0)
 {
-	sprite_index = zombieGirl_spr;
+	sprite_index = explosiveMerchant_spr;
 	damageTintTimer = damageTintTimerSave;
 	damageTint = false;
 }
