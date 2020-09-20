@@ -113,6 +113,13 @@ if (hp < 0)
 	{
 		instance_change(zombieGirlDeath2_obj, true);
 	}
+	instance_destroy(alarmLight);
+	with (barrelHitbox)
+	{
+		image_xscale = 1;
+		image_yscale = 1;
+		instance_change(explosionBig_obj, true);
+	}
 }
 
 //Barrel Hitbox

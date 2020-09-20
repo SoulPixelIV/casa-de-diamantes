@@ -30,6 +30,7 @@ headshot = false;
 damageTintTimerSave = damageTintTimer;
 
 barrelHitbox = instance_create_layer(x, y - 12, "ForegroundObjects", barrelHitbox_obj);
+alarmLight = instance_create_layer(x, y, "GraphicsLayer", spotlightRed_obj); 
 with (barrelHitbox)
 {
 	image_yscale = 2.2;

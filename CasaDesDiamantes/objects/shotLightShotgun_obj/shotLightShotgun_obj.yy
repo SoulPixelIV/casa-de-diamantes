@@ -1,8 +1,5 @@
 {
-  "spriteId": {
-    "name": "explosionBig_spr",
-    "path": "sprites/explosionBig_spr/explosionBig_spr.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "spriteMaskId": null,

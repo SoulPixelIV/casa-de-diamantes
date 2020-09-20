@@ -88,7 +88,7 @@
     "eventStubScript": null,
     "parent": {"name":"explosion_spr","path":"sprites/explosion_spr/explosion_spr.yy",},
     "resourceVersion": "1.3",
-    "name": "explosion_spr",
+    "name": "",
     "tags": [],
     "resourceType": "GMSequence",
   },
