@@ -87,10 +87,11 @@ function light_create(argument0, argument1, argument2, argument3, argument4, arg
 	//
 	//	Add default extensions
 	//
-
-	if(global.lightDefaultExtensions != undefined) {
+	if(!is_undefined(global.lightDefaultExtensions)) 
+	{
 		var len = array_length_1d(global.lightDefaultExtensions);
-		for(var i = 0; i < len; ++i) {
+		for(var i = 0; i < len; ++i) 
+		{
 			var ext = global.lightDefaultExtensions[i];
 			light_add_extension(arr, ext);
 		}

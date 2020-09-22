@@ -551,8 +551,8 @@
     "PhysicsWorldPixToMetres": 0.1,
   },
   "parent": {
-    "name": "Main",
-    "path": "folders/Rooms/Main.yy",
+    "name": "Hub",
+    "path": "folders/Rooms/Main/Hub.yy",
   },
   "resourceVersion": "1.0",
   "name": "level_CasinoHub",

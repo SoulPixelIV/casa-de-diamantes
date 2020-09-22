@@ -1646,8 +1646,8 @@
     "PhysicsWorldPixToMetres": 0.1,
   },
   "parent": {
-    "name": "Main",
-    "path": "folders/Rooms/Main.yy",
+    "name": "RoadToCasino",
+    "path": "folders/Rooms/Main/RoadToCasino.yy",
   },
   "resourceVersion": "1.0",
   "name": "level1_RoadToCasino",

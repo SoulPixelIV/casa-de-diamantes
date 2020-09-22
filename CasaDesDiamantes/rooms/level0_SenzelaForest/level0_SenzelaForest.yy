@@ -395,9 +395,9 @@
   "creationCodeFile": "",
   "inheritCode": false,
   "instanceCreationOrder": [
+    {"name":"inst_390D6B5B","path":"rooms/level0_SenzelaForest/level0_SenzelaForest.yy",},
     {"name":"inst_7BE7C0C3","path":"rooms/level0_SenzelaForest/level0_SenzelaForest.yy",},
     {"name":"inst_47BEA389","path":"rooms/level0_SenzelaForest/level0_SenzelaForest.yy",},
-    {"name":"inst_390D6B5B","path":"rooms/level0_SenzelaForest/level0_SenzelaForest.yy",},
     {"name":"inst_1BA80D3D","path":"rooms/level0_SenzelaForest/level0_SenzelaForest.yy",},
     {"name":"inst_1E78AA07","path":"rooms/level0_SenzelaForest/level0_SenzelaForest.yy",},
     {"name":"inst_69D823B0","path":"rooms/level0_SenzelaForest/level0_SenzelaForest.yy",},
@@ -507,8 +507,8 @@
     "PhysicsWorldPixToMetres": 0.1,
   },
   "parent": {
-    "name": "Main",
-    "path": "folders/Rooms/Main.yy",
+    "name": "SenzelaForest",
+    "path": "folders/Rooms/Main/SenzelaForest.yy",
   },
   "resourceVersion": "1.0",
   "name": "level0_SenzelaForest",
