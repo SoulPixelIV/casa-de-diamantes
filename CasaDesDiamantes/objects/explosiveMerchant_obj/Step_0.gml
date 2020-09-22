@@ -128,12 +128,21 @@ with (barrelHitbox)
 	if (body.image_xscale == 1)
 	{
 		x = body.x - 12;
+		image_xscale = 1;
 	}
 	else
 	{
 		x = body.x + 12;
+		image_xscale = -1;
 	}
 	y = body.y - 12;
+}
+
+//Alarm Light
+with (alarmLight)
+{
+	x = body.x;
+	y = body.y;
 }
 
 if (damageTint)

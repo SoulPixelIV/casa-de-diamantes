@@ -37,3 +37,7 @@ with (barrelHitbox)
 	image_angle = -24;
 	body = instance_nearest(x, y, explosiveMerchant_obj);
 }
+with (alarmLight)
+{
+	body = instance_nearest(x, y, explosiveMerchant_obj);
+}
