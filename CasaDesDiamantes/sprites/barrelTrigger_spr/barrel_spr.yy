@@ -60,7 +60,7 @@
     "eventStubScript": null,
     "parent": {"name":"barrel_spr","path":"sprites/barrel_spr/barrel_spr.yy",},
     "resourceVersion": "1.3",
-    "name": "barrel_spr",
+    "name": "",
     "tags": [],
     "resourceType": "GMSequence",
   },

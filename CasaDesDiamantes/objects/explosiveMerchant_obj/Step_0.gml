@@ -141,8 +141,8 @@ with (barrelHitbox)
 //Alarm Light
 with (alarmLight)
 {
-	x = body.x;
-	y = body.y;
+	light[| eLight.X] = body.x;
+	light[| eLight.Y] = body.y;
 }
 
 if (damageTint)

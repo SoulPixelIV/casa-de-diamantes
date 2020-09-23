@@ -3,7 +3,7 @@
     "name": "barrel_spr",
     "path": "sprites/barrel_spr/barrel_spr.yy",
   },
-  "solid": false,
+  "solid": true,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
