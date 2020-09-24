@@ -4,9 +4,13 @@
 function polygon_get_area(argument0) {
 
 	var polygon = argument0;
-
-	// Number of points in polygon
-	var points = polygon[ePolygon.Length];
+	var points = 0;
+	
+	if (is_array(polygon))
+	{
+		// Number of points in polygon
+		points = polygon[ePolygon.Length];
+	}
 
 	var area = [1000000000, 1000000000, -1000000000, -1000000000];
 

@@ -40,8 +40,12 @@ function light_trace_polygon(argument0, argument1) {
 	var shadow_length = min(sc_shadow_length, light[| eLight.ShadowLength]);
 	var line_emitter = light_type == eLightType.Area || light_type == eLightType.Line;
 
-	// Get the # of vertices in the polygon
-	var vertex_count = polygon[ePolygon.Length];
+	var vertex_count = 0;
+	if (is_array(polygon))
+	{
+		// Get the # of vertices in the polygon
+		vertex_count = polygon[ePolygon.Length];
+	}
 	// Vertices in the polygon start after the ePolygon enum
 	var vertex_offset = ePolygon.Count;
 

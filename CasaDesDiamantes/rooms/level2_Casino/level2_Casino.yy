@@ -17,7 +17,6 @@
         {"properties":[],"isDnd":false,"objectId":{"name":"globalSettings_obj","path":"objects/globalSettings_obj/globalSettings_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":0.0,"y":0.0,"resourceVersion":"1.0","name":"inst_1C7C8882","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"cameraOld_obj","path":"objects/cameraOld_obj/cameraOld_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":32.0,"y":0.0,"resourceVersion":"1.0","name":"inst_F9F1940","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"gameManager_obj","path":"objects/gameManager_obj/gameManager_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":64.0,"y":0.0,"resourceVersion":"1.0","name":"inst_2C6330A2","tags":[],"resourceType":"GMRInstance",},
-        {"properties":[],"isDnd":false,"objectId":{"name":"lighting_obj","path":"objects/lighting_obj/lighting_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":true,"inheritItemSettings":false,"x":128.0,"y":0.0,"resourceVersion":"1.0","name":"inst_762F73A","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"GameManagerLayer","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"godraysRed_obj","path":"objects/godraysRed_obj/godraysRed_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":0.0,"y":0.0,"resourceVersion":"1.0","name":"inst_66987FC5","tags":[],"resourceType":"GMRInstance",},
@@ -300,7 +299,6 @@
     {"name":"inst_F9F1940","path":"rooms/level2_Casino/level2_Casino.yy",},
     {"name":"inst_2C6330A2","path":"rooms/level2_Casino/level2_Casino.yy",},
     {"name":"inst_66987FC5","path":"rooms/level2_Casino/level2_Casino.yy",},
-    {"name":"inst_762F73A","path":"rooms/level2_Casino/level2_Casino.yy",},
     {"name":"inst_31574434","path":"rooms/level2_Casino/level2_Casino.yy",},
     {"name":"inst_7340549D","path":"rooms/level2_Casino/level2_Casino.yy",},
     {"name":"inst_6D142FAF","path":"rooms/level2_Casino/level2_Casino.yy",},
