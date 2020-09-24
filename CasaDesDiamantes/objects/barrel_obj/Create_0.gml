@@ -11,4 +11,4 @@ knockback = 5;
 movSpeed = 0.45;
 gravityStrength = -0.32;
 
-//barrelTrigger = instance_create_layer(x, y, "Instances", barrelTrigger_obj);
+barrelTrigger = instance_create_layer(x, y, "Instances", barrelTrigger_obj);

@@ -4,6 +4,9 @@ movSpeed = 5.2;
 createdFire = false;
 invincibilityTimer = 5;
 
+dealtDamage = false;
+penetrationTime = 3;
+
 body = instance_nearest(x, y, zombieSoldierGirl_obj);
 if (body.image_xscale == -1)
 {

@@ -2,7 +2,7 @@ var explosiveTarget = instance_place(x, y, explosive_obj);
 if (!dealtDamage)
 {
 	explosiveTarget.hp -= 20;
-	fire = instance_create_layer(x, y, "Instances", fireLong_obj);
+	fire = instance_create_layer(other.x, y, "Instances", fireLong_obj);
 	fire.image_angle = image_angle;
 	fire.image_xscale = 0.75;
 	fire.image_yscale = 0.5;
@@ -20,7 +20,7 @@ else
 {
 	if (!createdFire)
 	{
-		fire2 = instance_create_layer(x, y, "Instances", fireLong_obj);
+		fire2 = instance_create_layer(other.x, y, "Instances", fireLong_obj);
 		fire2.image_angle = image_angle + 180;
 		fire2.image_xscale = 0.75;
 		fire2.image_yscale = 0.5;

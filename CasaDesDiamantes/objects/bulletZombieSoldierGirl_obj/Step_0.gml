@@ -27,3 +27,13 @@ if (place_meeting(x, y, player_obj) && !player_obj.isZombie && !player_obj.invin
 	bloodSpread2 = instance_create_layer(x, y, "Instances", bloodSpread2_obj);
 	bloodSpread2.image_angle = image_angle;
 }
+
+if (dealtDamage)
+{
+	penetrationTime -= global.dt;
+}
+if (penetrationTime < 0)
+{
+	dealtDamage = false;
+	penetrationTime = 3;
+}

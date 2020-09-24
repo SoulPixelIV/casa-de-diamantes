@@ -1,14 +1,8 @@
 //Death
-//with (barrelTrigger)
-//{
+with (barrelTrigger)
+{
 	if (hp < 0 || place_meeting(x, y, explosion_obj))
 	{
-		global.scorepoints += points * global.multiplier;
-		global.multiplier += 1;
-		global.multiplierTimer = 300;
-		gameManager_obj.multiplierRun = true;
-		camera_obj.scoreShake = true;
-		camera_obj.vignetteStrength = 3;
 		with (body)
 		{
 			instance_change(explosion_obj, true);
@@ -19,4 +13,4 @@
 	{
 		hp -= global.dt / 12;
 	}
-//}
+}
