@@ -1,7 +1,7 @@
 //Death
 with (barrelTrigger)
 {
-	if (hp < 0 || place_meeting(x, y, explosion_obj))
+	if (hp < 0 || place_meeting(x, y, explosionParent_obj))
 	{
 		with (body)
 		{

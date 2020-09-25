@@ -152,7 +152,7 @@ if (damageTint)
 }
 if (damageTintTimer < 0)
 {
-	sprite_index = explosiveMerchant_spr;
+	sprite_index = explosiveMerchantDead_spr;
 	damageTintTimer = damageTintTimerSave;
 	damageTint = false;
 }
