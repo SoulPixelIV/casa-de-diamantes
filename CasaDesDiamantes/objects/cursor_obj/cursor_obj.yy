@@ -26,8 +26,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Global",
-    "path": "folders/Objects/Global.yy",
+    "name": "Global Objects",
+    "path": "folders/Global Objects.yy",
   },
   "resourceVersion": "1.0",
   "name": "cursor_obj",

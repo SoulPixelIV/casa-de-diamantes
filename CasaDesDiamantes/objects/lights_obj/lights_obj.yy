@@ -4,10 +4,7 @@
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": {
-    "name": "static_obj",
-    "path": "objects/static_obj/static_obj.yy",
-  },
+  "parentObjectId": null,
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -25,7 +22,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Parents",
-    "path": "folders/Objects/Parents.yy",
+    "path": "folders/Parents.yy",
   },
   "resourceVersion": "1.0",
   "name": "lights_obj",

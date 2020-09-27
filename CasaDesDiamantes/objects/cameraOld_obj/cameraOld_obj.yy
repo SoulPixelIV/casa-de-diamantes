@@ -26,8 +26,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Player",
-    "path": "folders/Player.yy",
+    "name": "Legacy",
+    "path": "folders/Steph/Camera/Legacy.yy",
   },
   "resourceVersion": "1.0",
   "name": "cameraOld_obj",

@@ -24,8 +24,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Decoration",
+    "path": "folders/Objects/Decoration.yy",
   },
   "resourceVersion": "1.0",
   "name": "casinoBuilding_obj",

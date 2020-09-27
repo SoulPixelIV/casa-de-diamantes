@@ -25,7 +25,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Backgrounds",
-    "path": "folders/Objects/Backgrounds.yy",
+    "path": "folders/Backgrounds.yy",
   },
   "resourceVersion": "1.0",
   "name": "blackjackBackground_obj",

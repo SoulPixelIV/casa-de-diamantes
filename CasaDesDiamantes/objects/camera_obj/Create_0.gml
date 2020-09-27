@@ -11,6 +11,11 @@ anim = 0;
 reloadAnimTimer = 25;
 reloadAnimTimerSave = reloadAnimTimer;
 
+shake = false;
+shake_time = 0;
+shake_magnitude = 0;
+shake_fade = 0.25;
+
 enum cameraState {
     normal,
     zoomIn,

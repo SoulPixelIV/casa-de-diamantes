@@ -202,6 +202,7 @@ if (attackInProg2 && image_index > 8 && !spawnedHitbox)
 {
 	var hitbox = instance_create_layer(x + (16 * image_xscale), y, "Instances", damageHitbox_obj);
 	hitbox.image_yscale = 1.5;
+	hitbox.image_xscale = 3;
 	hitbox.damage = 30;
 	hitbox.timer = 140;
 	spawnedHitbox = true;

@@ -26,8 +26,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Player",
-    "path": "folders/Player.yy",
+    "name": "Camera",
+    "path": "folders/Camera.yy",
   },
   "resourceVersion": "1.0",
   "name": "cameraBlackjack_obj",

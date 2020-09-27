@@ -30,8 +30,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Hitboxes",
+    "path": "folders/Hitboxes.yy",
   },
   "resourceVersion": "1.0",
   "name": "barrelTrigger_obj",

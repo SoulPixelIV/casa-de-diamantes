@@ -34,7 +34,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Enemies",
-    "path": "folders/Objects/Enemies.yy",
+    "path": "folders/Enemies.yy",
   },
   "resourceVersion": "1.0",
   "name": "zombieGirl_obj",

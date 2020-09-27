@@ -26,8 +26,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "CasaDesDiamantes",
+    "path": "CasaDesDiamantes.yyp",
   },
   "resourceVersion": "1.0",
   "name": "explosionSmall_obj",

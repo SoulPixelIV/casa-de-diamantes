@@ -31,8 +31,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Bullets",
+    "path": "folders/Bullets.yy",
   },
   "resourceVersion": "1.0",
   "name": "bulletChaingun_obj",

@@ -27,8 +27,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Graphics",
-    "path": "folders/Objects/Graphics.yy",
+    "name": "Image Effects",
+    "path": "folders/Image Effects.yy",
   },
   "resourceVersion": "1.0",
   "name": "godraysRed_obj",

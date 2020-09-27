@@ -17,3 +17,5 @@ audio_emitter_falloff(emitter, audio_drop_start, audio_max_distance, 1);
 
 var expSnd = audio_play_sound_on(emitter, explosion_snd, false, 1);
 audio_sound_pitch(expSnd, random_range(0.8, 1));
+
+screenshake(60, 25, 0.6);

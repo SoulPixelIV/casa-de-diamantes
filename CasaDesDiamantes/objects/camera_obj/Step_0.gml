@@ -10,6 +10,23 @@ if (follow != noone)
 	}
 }
 
+if (shake) 
+{ 
+   shake_time -= 1; 
+   xTo += choose(-shake_magnitude, shake_magnitude); 
+   //yTo += choose(-shake_magnitude, shake_magnitude); 
+
+   if (shake_time <= 0) 
+   { 
+      shake_magnitude -= shake_fade; 
+
+      if (shake_magnitude <= 0) 
+      { 
+         shake = false; 
+      } 
+   } 
+}
+
 if (follow == camera_obj)
 {
 	xTo = player_obj.x + (mouse_x - player_obj.x) / 2;

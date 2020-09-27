@@ -27,8 +27,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Player",
-    "path": "folders/Player.yy",
+    "name": "Legacy",
+    "path": "folders/Steph/Legacy.yy",
   },
   "resourceVersion": "1.0",
   "name": "sparkleCloud_obj",

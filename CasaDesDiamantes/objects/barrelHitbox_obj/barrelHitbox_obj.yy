@@ -28,8 +28,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "CasaDesDiamantes",
-    "path": "CasaDesDiamantes.yyp",
+    "name": "Hitboxes",
+    "path": "folders/Hitboxes.yy",
   },
   "resourceVersion": "1.0",
   "name": "barrelHitbox_obj",

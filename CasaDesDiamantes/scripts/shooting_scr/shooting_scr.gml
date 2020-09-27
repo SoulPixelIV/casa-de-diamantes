@@ -11,6 +11,7 @@ function shooting_scr(argument0) {
 			instance_create_layer(playerBulletLine_obj.x, playerBulletLine_obj.y, "Instances", bulletPistol_obj);
 			instance_create_layer(shotLightx, shotLighty, "ForegroundObjects", shotLightPistol_obj);
 			instance_create_layer(shotLightx, shotLighty, "ForegroundObjects", smokecloud_obj);
+			screenshake(50, 2.5, 0.4);
 		
 			if (!huggingWall)
 			{
@@ -56,6 +57,7 @@ function shooting_scr(argument0) {
 			instance_create_layer(shotLightx, shotLighty, "ForegroundObjects", smokecloud_obj);
 			instance_create_layer(shotLightx - 2, shotLighty - 4, "ForegroundObjects", shotLightDualBarettas_obj);
 			instance_create_layer(shotLightx - 2, shotLighty - 4, "ForegroundObjects", smokecloud_obj);
+			screenshake(50, 3.5, 0.4);
 		
 			if (!huggingWall)
 			{
@@ -102,6 +104,7 @@ function shooting_scr(argument0) {
 			}
 			instance_create_layer(shotLightx, shotLighty, "ForegroundObjects", shotLightShotgun_obj);
 			instance_create_layer(shotLightx, shotLighty, "ForegroundObjects", smokecloud_obj);
+			screenshake(50, 12, 0.6);
 		
 			if (!huggingWall)
 			{

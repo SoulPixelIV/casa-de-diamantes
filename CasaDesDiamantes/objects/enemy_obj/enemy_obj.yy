@@ -22,7 +22,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Parents",
-    "path": "folders/Objects/Parents.yy",
+    "path": "folders/Parents.yy",
   },
   "resourceVersion": "1.0",
   "name": "enemy_obj",
