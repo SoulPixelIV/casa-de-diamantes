@@ -29,7 +29,7 @@ headshot = false;
 //Help Vars
 damageTintTimerSave = damageTintTimer;
 
-barrelHitbox = instance_create_layer(x, y - 12, "ForegroundObjects", barrelHitbox_obj);
+barrelHitbox = instance_create_layer(x + 24, y + 4, "ForegroundObjects", barrelHitbox_obj);
 alarmLight = instance_create_layer(x, y, "GraphicsLayer", spotlightRed_obj); 
 with (barrelHitbox)
 {

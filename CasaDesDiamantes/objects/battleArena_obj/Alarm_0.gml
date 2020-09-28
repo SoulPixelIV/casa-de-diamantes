@@ -1,7 +1,7 @@
 /// @description Check Enemy Count
 
 var enemyList;
-var updatedEnemyCount = 0;
+updatedEnemyCount = 0;
 
 //Find all enemies
 for (var i = 0; i < enemyNumber; i++)
@@ -18,7 +18,7 @@ for (var i = 0; i < enemyNumber; i++)
 	}
 }
 
-if (updatedEnemyCount < enemyCount / 2)
+if (updatedEnemyCount < enemyCount / 2 && !setWave && !countEnemies && !instance_exists(spawnCloud_obj))
 {
 	//Find all spawns
 	spawnNumber = instance_number(battleArenaSpawn_obj);
@@ -30,6 +30,8 @@ if (updatedEnemyCount < enemyCount / 2)
 			if (selectedSpawn.wave > wave)
 			{
 				wave++;
+				setWave = true;
+				break;
 			}
 		}
 	}

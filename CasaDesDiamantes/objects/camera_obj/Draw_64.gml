@@ -221,3 +221,9 @@ draw_set_alpha(blackscreenStrength);
 draw_set_color(c_black);
 draw_rectangle(-300, -225, 1600, 1150, false);
 draw_set_alpha(1);
+
+draw_set_color(c_white);
+draw_text(100,50,battleArena_obj.wave);
+draw_text(100,100,battleArena_obj.enemyCount);
+draw_text(100,150,battleArena_obj.updatedEnemyCount);
+draw_text(100,200,battleArena_obj.setWave);

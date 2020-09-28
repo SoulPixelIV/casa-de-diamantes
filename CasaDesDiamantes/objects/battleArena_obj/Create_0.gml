@@ -1,8 +1,11 @@
 /// @description Enemy Count
 
 wave = 0;
+setWave = false;
+countEnemies = false;
 enemyNumber = instance_number(enemy_obj);
 enemyCount = 0;
+updatedEnemyCount = 0;
 var enemyList;
 
 //Find all enemies

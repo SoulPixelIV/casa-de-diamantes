@@ -127,15 +127,15 @@ with (barrelHitbox)
 {
 	if (body.image_xscale == 1)
 	{
-		x = body.x - 12;
+		x = body.x + 9;
 		image_angle = -24;
 	}
 	else
 	{
-		x = body.x + 12;
+		x = body.x - 9;
 		image_angle = 24;
 	}
-	y = body.y - 12;
+	y = body.y;
 }
 
 //Alarm Light

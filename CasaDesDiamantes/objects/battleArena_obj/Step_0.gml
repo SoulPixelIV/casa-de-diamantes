@@ -1,6 +1,6 @@
 /// @description Spawn enemies
 
-//Find all spawns
+//Activate Spawnpoints
 spawnNumber = instance_number(battleArenaSpawn_obj);
 for (var i = 0; i < spawnNumber; i++)
 {
@@ -16,25 +16,9 @@ for (var i = 0; i < spawnNumber; i++)
 	}
 }
 
-//Count enemies
-var enemyList;
-var updatedEnemyCount = 0;
-
-//Find all enemies
-for (var i = 0; i < enemyNumber; i++)
-{
-	enemyList[i] = instance_find(enemy_obj, i);
-}
-for (var i = 0; i < enemyNumber; i++)
-{
-	if (place_meeting(x, y, enemyList[i]))	
-	{
-		updatedEnemyCount++;
-	}
-}
-
 //Use Gates
-if (place_meeting(x, y, player_obj) && updatedEnemyCount > 1)
+//Close Gate
+if ((place_meeting(x, y, player_obj) && updatedEnemyCount > 1) || instance_exists(spawnCloud_obj))
 {
 	if (instance_exists(objectAccess))
 	{
@@ -49,6 +33,7 @@ if (place_meeting(x, y, player_obj) && updatedEnemyCount > 1)
 		}
 	}
 }
+//Open Gate
 else
 {
 	if (instance_exists(objectAccess))
@@ -64,3 +49,27 @@ else
 		}
 	}
 }
+
+//Count Enemies again
+if (countEnemies)
+{
+	enemyCount = 0;
+	var enemyList;
+
+	//Find all enemies
+	for (var i = 0; i < enemyNumber; i++)
+	{
+		enemyList[i] = instance_find(enemy_obj, i);
+	}
+
+	//Count enemies
+	for (var i = 0; i < enemyNumber; i++)
+	{
+		if (place_meeting(x, y, enemyList[i]))	
+		{
+			enemyCount++;
+		}
+	}
+	countEnemies = false;
+}
+setWave = false;
