@@ -12,13 +12,13 @@ if (follow != noone)
 
 if (shake) 
 { 
-   shake_time -= 1; 
+   shake_time -= global.dt; 
    xTo += choose(-shake_magnitude, shake_magnitude); 
    //yTo += choose(-shake_magnitude, shake_magnitude); 
 
    if (shake_time <= 0) 
    { 
-      shake_magnitude -= shake_fade; 
+      shake_magnitude -= shake_fade * global.dt; 
 
       if (shake_magnitude <= 0) 
       { 

@@ -122,6 +122,22 @@ if (hp < 0)
 	}
 }
 
+//Barrel Hitbox
+with (barrelHitbox)
+{
+	if (body.image_xscale == 1)
+	{
+		x = body.x + 24;
+		image_angle = -24;
+	}
+	else
+	{
+		x = body.x - 24;
+		image_angle = 24;
+	}
+	y = body.y + 4;
+}
+
 //Alarm Light
 with (alarmLight)
 {
