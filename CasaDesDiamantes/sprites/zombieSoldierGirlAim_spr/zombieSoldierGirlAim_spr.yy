@@ -77,7 +77,7 @@
   ],
   "parent": {
     "name": "ZombieSoldier",
-    "path": "folders/Sprites/Enemies/ZombieSoldier.yy",
+    "path": "folders/Enemies/Enemy Sprites/ZombieSoldier.yy",
   },
   "resourceVersion": "1.0",
   "name": "zombieSoldierGirlAim_spr",

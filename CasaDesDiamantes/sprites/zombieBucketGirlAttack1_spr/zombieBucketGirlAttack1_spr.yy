@@ -109,7 +109,7 @@
   ],
   "parent": {
     "name": "BucketZombie",
-    "path": "folders/Sprites/Enemies/BucketZombie.yy",
+    "path": "folders/Enemies/Enemy Sprites/BucketZombie.yy",
   },
   "resourceVersion": "1.0",
   "name": "zombieBucketGirlAttack1_spr",

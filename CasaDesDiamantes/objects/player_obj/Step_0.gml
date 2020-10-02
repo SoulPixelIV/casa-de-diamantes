@@ -143,6 +143,7 @@ if (movement && !isZombie)
 	    }
 	}
 }
+
 if (isDashing && !onLadder)
 {
 	with (gameManager_obj)

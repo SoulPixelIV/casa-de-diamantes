@@ -1643,7 +1643,7 @@
   },
   "parent": {
     "name": "RoadToCasino",
-    "path": "folders/Rooms/Main/RoadToCasino.yy",
+    "path": "folders/Scenes/Main/RoadToCasino.yy",
   },
   "resourceVersion": "1.0",
   "name": "level1_RoadToCasino",

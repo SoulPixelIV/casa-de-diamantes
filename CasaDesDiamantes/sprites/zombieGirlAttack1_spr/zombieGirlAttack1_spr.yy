@@ -93,7 +93,7 @@
   ],
   "parent": {
     "name": "ZombieGirl",
-    "path": "folders/Sprites/Enemies/ZombieGirl.yy",
+    "path": "folders/Enemies/Enemy Sprites/ZombieGirl.yy",
   },
   "resourceVersion": "1.0",
   "name": "zombieGirlAttack1_spr",

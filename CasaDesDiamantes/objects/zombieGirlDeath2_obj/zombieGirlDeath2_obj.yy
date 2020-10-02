@@ -27,7 +27,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "ZombieGirl",
-    "path": "folders/Objects/Enemies/Animations/ZombieGirl.yy",
+    "path": "folders/Objects/Enemy Animations/Animations/ZombieGirl.yy",
   },
   "resourceVersion": "1.0",
   "name": "zombieGirlDeath2_obj",

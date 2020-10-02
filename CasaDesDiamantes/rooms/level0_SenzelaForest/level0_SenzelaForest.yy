@@ -512,7 +512,7 @@
   },
   "parent": {
     "name": "SenzelaForest",
-    "path": "folders/Rooms/Main/SenzelaForest.yy",
+    "path": "folders/Scenes/Main/SenzelaForest.yy",
   },
   "resourceVersion": "1.0",
   "name": "level0_SenzelaForest",

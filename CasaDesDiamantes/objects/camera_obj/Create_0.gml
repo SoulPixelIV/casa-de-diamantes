@@ -8,8 +8,10 @@ cameraSpeed = 1;
 cameraYBorder = 16;
 noHUD = false;
 anim = 0;
+anim2 = 0;
 reloadAnimTimer = 25;
 reloadAnimTimerSave = reloadAnimTimer;
+reloadFailed = false;
 
 shake = false;
 shake_time = 0;

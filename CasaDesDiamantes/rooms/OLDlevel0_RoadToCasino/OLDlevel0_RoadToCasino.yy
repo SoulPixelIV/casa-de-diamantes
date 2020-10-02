@@ -1118,7 +1118,7 @@
   },
   "parent": {
     "name": "Legacy",
-    "path": "folders/Rooms/Legacy.yy",
+    "path": "folders/Scenes/Legacy.yy",
   },
   "resourceVersion": "1.0",
   "name": "OLDlevel0_RoadToCasino",

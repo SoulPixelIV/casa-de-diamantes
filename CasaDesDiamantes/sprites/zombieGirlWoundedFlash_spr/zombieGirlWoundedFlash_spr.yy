@@ -69,7 +69,7 @@
   ],
   "parent": {
     "name": "ZombieGirlWounded",
-    "path": "folders/Sprites/Enemies/ZombieGirlWounded.yy",
+    "path": "folders/Enemies/Enemy Sprites/ZombieGirlWounded.yy",
   },
   "resourceVersion": "1.0",
   "name": "zombieGirlWoundedFlash_spr",

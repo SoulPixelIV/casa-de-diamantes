@@ -212,7 +212,7 @@
   },
   "parent": {
     "name": "Test",
-    "path": "folders/Rooms/Test.yy",
+    "path": "folders/Scenes/Test.yy",
   },
   "resourceVersion": "1.0",
   "name": "room0",

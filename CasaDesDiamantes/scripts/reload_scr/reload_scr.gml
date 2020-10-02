@@ -46,6 +46,6 @@ function reload_scr() {
 	global.dualBarettasReload = global.dualBarettasReloadSave;
 	global.shotgunReload = global.shotgunReloadSave;
 	player_obj.reloading = false;
-
+	camera_obj.reloadFailed = false;
 
 }

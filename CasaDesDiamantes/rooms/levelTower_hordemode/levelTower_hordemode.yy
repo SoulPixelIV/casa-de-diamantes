@@ -312,7 +312,7 @@
   },
   "parent": {
     "name": "Main",
-    "path": "folders/Rooms/Main.yy",
+    "path": "folders/Scenes/Main.yy",
   },
   "resourceVersion": "1.0",
   "name": "levelTower_hordemode",

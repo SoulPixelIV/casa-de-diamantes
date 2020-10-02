@@ -85,7 +85,7 @@
   ],
   "parent": {
     "name": "ExplosiveMerchant",
-    "path": "folders/Sprites/Enemies/ExplosiveMerchant.yy",
+    "path": "folders/Enemies/Enemy Sprites/ExplosiveMerchant.yy",
   },
   "resourceVersion": "1.0",
   "name": "explosiveMerchantDead_spr",

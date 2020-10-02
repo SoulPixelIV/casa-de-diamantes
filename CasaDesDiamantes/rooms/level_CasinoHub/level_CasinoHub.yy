@@ -550,7 +550,7 @@
   },
   "parent": {
     "name": "Hub",
-    "path": "folders/Rooms/Main/Hub.yy",
+    "path": "folders/Scenes/Main/Hub.yy",
   },
   "resourceVersion": "1.0",
   "name": "level_CasinoHub",
