@@ -235,6 +235,7 @@ if (movement && !isZombie)
 	if (huggingWall)
 	{
 		slowmo = false;
+		isDashing = false;
 	}
 }
 

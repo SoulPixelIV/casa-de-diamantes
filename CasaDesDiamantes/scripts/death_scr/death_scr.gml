@@ -26,6 +26,7 @@ function death_scr() {
 	}
 	else
 	{
+		/*
 		if (enemyPosition.x > player_obj.x - 64 && enemyPosition.x < player_obj.x + 64)
 		{
 			player_obj.deathSlowmo = true;
@@ -41,6 +42,7 @@ function death_scr() {
 				player_obj.verspeed = -1.5;
 			}
 		}
+		*/
 	}
 
 

@@ -39,7 +39,7 @@ else
 	//Check Perfect Reload
 	if (keyboard_check_pressed(ord("R")) && !reloadFailed && anim > 3)
 	{
-		if (anim > sprite_get_number(ammoCounterReloading_spr) - 2 && anim <= sprite_get_number(ammoCounterReloading_spr))
+		if (anim > sprite_get_number(ammoCounterReloading_spr) - 3 && anim <= sprite_get_number(ammoCounterReloading_spr))
 		{
 			reload_scr();
 		}
@@ -49,7 +49,7 @@ else
 		}
 	}
 }
-	draw_text(player_obj.x + 32, player_obj.y, reloadFailed);
+
 //Dash Circle
 if (instance_exists(player_obj))
 {
