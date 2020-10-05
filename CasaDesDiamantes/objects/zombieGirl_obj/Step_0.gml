@@ -140,13 +140,13 @@ with (headshotHitbox)
 //###Attack###
 
 //Cooldown
-if (!attackInProg && !attackInProg2 && distance_to_object(player_obj) < 200)
+if (!attackInProg && !attackInProg2)
 {
 	if (distance_to_object(player_obj) < 64)
 	{
 		attackCooldown -= global.dt * 2;
 	}
-	else
+	else if (distance_to_object(player_obj) < 200)
 	{
 		attackCooldown -= global.dt;
 	}
