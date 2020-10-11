@@ -4,6 +4,7 @@
 horspeed = 0;
 verspeed = 0;
 dir = 0;
+aggro = false;
 
 //Stats
 hp = 40;

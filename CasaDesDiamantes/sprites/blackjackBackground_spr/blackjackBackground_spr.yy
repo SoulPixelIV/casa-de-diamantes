@@ -70,7 +70,7 @@
   ],
   "parent": {
     "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "path": "folders/Backgrounds/Sprites.yy",
   },
   "resourceVersion": "1.0",
   "name": "blackjackBackground_spr",

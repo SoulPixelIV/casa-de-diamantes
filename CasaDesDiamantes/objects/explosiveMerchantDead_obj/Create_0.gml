@@ -3,7 +3,14 @@
 //Movement
 horspeed = 0;
 verspeed = 0;
-dir = 0;
+if (image_xscale == 1)
+{
+	dir = 0;
+}
+else
+{
+	dir = 1;
+}
 
 //Stats
 hp = 90;
@@ -20,11 +27,11 @@ animationSpeed = 0.5;
 savePosX = x;
 savePosY = y;
 movement = true;
-gravityStrength = -0.05;
 damageTint = false;
 damageCollision = false;
 damageTintTimer = 15;
 headshot = false;
+open = false;
 
 //Help Vars
 damageTintTimerSave = damageTintTimer;

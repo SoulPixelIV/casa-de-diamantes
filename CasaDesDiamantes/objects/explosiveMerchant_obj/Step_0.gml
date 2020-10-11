@@ -4,7 +4,15 @@ x += horspeed * global.dt;
 y += verspeed * global.dt;
 dirLookat = point_direction(x, y, player_obj.x, player_obj.y);
 
-if (movement)
+if (instance_exists(player_obj))
+{
+	if (distance_to_object(player_obj) < aggroRange)
+	{
+		aggro = true;
+	}
+}
+
+if (movement && aggro)
 {
 	if (dir == 0)
 	{
@@ -77,7 +85,7 @@ else
 }
 
 //###Death###
-if (hp < 0)
+if (hp <= 0)
 {
 	var deathCross = instance_create_layer(x, y - 8, "ForegroundObjects", deathCross_obj);
 	

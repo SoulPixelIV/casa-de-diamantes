@@ -60,6 +60,10 @@ if (!place_free(x, y + (verspeed * global.dt)))
 			y += sign(verspeed) / 100;
 		}
 		verspeed = 0;
+		if (explodeOnContact)
+		{
+			hp = 0;
+		}
 	}
 }
 
@@ -77,7 +81,7 @@ else
 }
 
 //###Death###
-if (hp < 0)
+if (hp <= 0)
 {
 	var deathCross = instance_create_layer(x, y - 8, "ForegroundObjects", deathCross_obj);
 	
@@ -155,5 +159,10 @@ if (damageTintTimer < 0)
 	sprite_index = explosiveMerchantDead_spr;
 	damageTintTimer = damageTintTimerSave;
 	damageTint = false;
+}
+
+if (open)
+{
+	gravityStrength = -0.05;
 }
 

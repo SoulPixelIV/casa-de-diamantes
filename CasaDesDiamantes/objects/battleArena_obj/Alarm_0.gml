@@ -18,21 +18,34 @@ for (var i = 0; i < enemyNumber; i++)
 	}
 }
 
-if (updatedEnemyCount < enemyCount / 2 && !setWave && !countEnemies && !instance_exists(spawnCloud_obj))
+if (!onlySpawn)
 {
-	//Find all spawns
-	spawnNumber = instance_number(battleArenaSpawn_obj);
-	for (var i = 0; i < spawnNumber; i++)
+	if (updatedEnemyCount < enemyCount / 2 && !setWave && !countEnemies && !instance_exists(spawnCloud_obj))
 	{
-		if (place_meeting(x, y, instance_find(battleArenaSpawn_obj, i)))
+		//Find all spawns
+		spawnNumber = instance_number(battleArenaSpawn_obj);
+		for (var i = 0; i < spawnNumber; i++)
 		{
-			selectedSpawn = instance_find(battleArenaSpawn_obj, i);
-			if (selectedSpawn.wave > wave)
+			if (place_meeting(x, y, instance_find(battleArenaSpawn_obj, i)))
 			{
-				wave++;
-				setWave = true;
-				break;
+				selectedSpawn = instance_find(battleArenaSpawn_obj, i);
+				if (selectedSpawn.wave > wave)
+				{
+					wave++;
+					setWave = true;
+					break;
+				}
 			}
+		}
+	}
+}
+else
+{
+	if (instance_exists(player_obj))
+	{
+		if (place_meeting(x, y, player_obj))
+		{
+			wave = 1;
 		}
 	}
 }
