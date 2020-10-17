@@ -157,15 +157,17 @@ if (player_obj.plagueTransformation)
 if (drawInfectionText)
 {
 	draw_set_font(global.optixFont);
+	draw_sprite(death_spr, 0, camera_obj.xScreenSize / 2, camera_obj.yScreenSize / 4);
 	draw_set_color(c_white);
-	draw_text(136, 100, "Syringes Left: " + string(player_obj.syringes))
+	draw_text(camera_obj.xScreenSize / 4, camera_obj.yScreenSize - (camera_obj.yScreenSize / 5), "Syringes Left: " + string(player_obj.syringes))
 	draw_set_font(global.optixFontHuge);
-	draw_text(116, 78, "PRESS 'R' TO INFECT YOURSELF!");
-	draw_text(116, 131, "PRESS 'Q' TO DIE INSTANTLY!");
+	draw_text(camera_obj.xScreenSize / 4, camera_obj.yScreenSize - (camera_obj.yScreenSize / 4), "INFECT");
+	draw_text(camera_obj.xScreenSize - (camera_obj.xScreenSize / 4), camera_obj.yScreenSize - (camera_obj.yScreenSize / 4), "DIE");
 }
 if (player_obj.isZombie)
 {
 	draw_set_font(global.optixFontHuge);
+	draw_sprite(death_spr, 0, camera_obj.xScreenSize / 2, camera_obj.yScreenSize / 2);
 	draw_set_color(c_white);
 	draw_text(116, 78, "PRESS 'F' TO BECOME HUMAN AGAIN!");
 	draw_text(116, 111, "PRESS 'Q' TO DIE INSTANTLY!");
