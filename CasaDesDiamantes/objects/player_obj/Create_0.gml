@@ -13,6 +13,7 @@ wallJumps = 2;
 dashDelay = 300;
 animationSpeed = 1;
 jumpType = 0;
+dialog = ""
 
 //Physics
 gravityStrength = -0.03; //Lower is lower gravity
