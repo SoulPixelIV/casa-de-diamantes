@@ -13,6 +13,9 @@ function fullDeath_scr() {
 		player_obj.x = player_obj.lastCheckpoint.x;
 		player_obj.y = player_obj.lastCheckpoint.y - 64;
 	}
-
-
+	else
+	{
+		player_obj.x = player_obj.firstPosX;
+		player_obj.y = player_obj.firstPosY;
+	}
 }

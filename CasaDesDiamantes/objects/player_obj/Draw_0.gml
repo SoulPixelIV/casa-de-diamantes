@@ -78,3 +78,8 @@ else
 {
 	draw_self();
 }
+
+draw_set_font(gothicPixel_fnt);
+draw_set_color(c_white);
+draw_set_halign(fa_center);
+draw_text(x, y - 32, "I don't like this...");

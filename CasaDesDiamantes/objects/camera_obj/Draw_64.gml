@@ -163,8 +163,8 @@ if (drawInfectionText)
 	draw_set_font(global.optixFontHuge);
 	draw_sprite(button_spr, 0, camera_obj.xScreenSize / 4, camera_obj.yScreenSize - (camera_obj.yScreenSize / 4));
 	draw_sprite(button_spr, 0, camera_obj.xScreenSize - (camera_obj.xScreenSize / 4), camera_obj.yScreenSize - (camera_obj.yScreenSize / 4));
-	draw_text(camera_obj.xScreenSize / 4 - 32, camera_obj.yScreenSize - (camera_obj.yScreenSize / 4) - 32, "INFECT");
-	draw_text(camera_obj.xScreenSize - (camera_obj.xScreenSize / 4) - 32, camera_obj.yScreenSize - (camera_obj.yScreenSize / 4) - 32, "DIE");
+	draw_text(camera_obj.xScreenSize - (camera_obj.xScreenSize / 4) - 32, camera_obj.yScreenSize - (camera_obj.yScreenSize / 4) - 32, "INFECT (WIP)");
+	draw_text(camera_obj.xScreenSize / 4 - 32, camera_obj.yScreenSize - (camera_obj.yScreenSize / 4) - 32, "DIE [Q]");
 }
 if (player_obj.isZombie)
 {

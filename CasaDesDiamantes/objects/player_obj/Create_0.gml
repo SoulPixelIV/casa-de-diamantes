@@ -81,6 +81,8 @@ createdParticles = false;
 landSoundPlayed = false;
 deathActivated = false;
 deathSlowmo = false;
+firstPosX = x;
+firstPosY = y;
 
 //Help Vars
 damageFlickerTimerSave = damageFlickerTimer;
