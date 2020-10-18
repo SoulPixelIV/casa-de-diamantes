@@ -157,12 +157,14 @@ if (player_obj.plagueTransformation)
 if (drawInfectionText)
 {
 	draw_set_font(global.optixFont);
-	draw_sprite(death_spr, 0, camera_obj.xScreenSize / 2, camera_obj.yScreenSize / 4);
+	draw_sprite_ext(death_spr, 0, camera_obj.xScreenSize / 2, camera_obj.yScreenSize / 4, 1.5, 1.5, 0, -1, 1);
 	draw_set_color(c_white);
 	draw_text(camera_obj.xScreenSize / 4, camera_obj.yScreenSize - (camera_obj.yScreenSize / 5), "Syringes Left: " + string(player_obj.syringes))
 	draw_set_font(global.optixFontHuge);
-	draw_text(camera_obj.xScreenSize / 4, camera_obj.yScreenSize - (camera_obj.yScreenSize / 4), "INFECT");
-	draw_text(camera_obj.xScreenSize - (camera_obj.xScreenSize / 4), camera_obj.yScreenSize - (camera_obj.yScreenSize / 4), "DIE");
+	draw_sprite(button_spr, 0, camera_obj.xScreenSize / 4, camera_obj.yScreenSize - (camera_obj.yScreenSize / 4));
+	draw_sprite(button_spr, 0, camera_obj.xScreenSize - (camera_obj.xScreenSize / 4), camera_obj.yScreenSize - (camera_obj.yScreenSize / 4));
+	draw_text(camera_obj.xScreenSize / 4 - 32, camera_obj.yScreenSize - (camera_obj.yScreenSize / 4) - 32, "INFECT");
+	draw_text(camera_obj.xScreenSize - (camera_obj.xScreenSize / 4) - 32, camera_obj.yScreenSize - (camera_obj.yScreenSize / 4) - 32, "DIE");
 }
 if (player_obj.isZombie)
 {

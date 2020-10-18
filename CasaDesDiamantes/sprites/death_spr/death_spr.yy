@@ -26,7 +26,7 @@
   "frames": [
     {"compositeImage":{"FrameId":{"name":"528fcb03-9de6-4d79-8ca1-6dd9175a4b7a","path":"sprites/death_spr/death_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"528fcb03-9de6-4d79-8ca1-6dd9175a4b7a","path":"sprites/death_spr/death_spr.yy",},"LayerId":{"name":"c5c11509-a9b5-47dd-bcd8-ba7fd800c419","path":"sprites/death_spr/death_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-        {"FrameId":{"name":"528fcb03-9de6-4d79-8ca1-6dd9175a4b7a","path":"sprites/death_spr/death_spr.yy",},"LayerId":{"name":"5e3ad522-0a40-4821-98a0-abdeeb2b546e","path":"sprites/death_spr/death_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"528fcb03-9de6-4d79-8ca1-6dd9175a4b7a","path":"sprites/death_spr/death_spr.yy",},"LayerId":{"name":"death_spr","path":"sprites/death_spr/death_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"death_spr","path":"sprites/death_spr/death_spr.yy",},"resourceVersion":"1.0","name":"528fcb03-9de6-4d79-8ca1-6dd9175a4b7a","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
