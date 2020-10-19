@@ -13,7 +13,12 @@ wallJumps = 2;
 dashDelay = 300;
 animationSpeed = 1;
 jumpType = 0;
-dialog = ""
+talking = false;
+dialog = "";
+dialogCut = "";
+dialogSpeed = 18;
+dialogIdleTime = 500;
+dialogCount = 1;
 
 //Physics
 gravityStrength = -0.03; //Lower is lower gravity
@@ -99,6 +104,8 @@ enemySlowMotionTimerSave = enemySlowMotionTimer;
 shotZoomTimerSave = shotZoomTimer;
 groundCollisionTimerSave = groundCollisionTimer;
 dashDelaySave = dashDelay;
+dialogSpeedSave = dialogSpeed;
+dialogIdleTimeSave = dialogIdleTime;
 
 //Second Dualbarettas arm
 sprID = layer_sprite_create("BackgroundObjects", -1000, -1000, playerDualBarettas_spr);

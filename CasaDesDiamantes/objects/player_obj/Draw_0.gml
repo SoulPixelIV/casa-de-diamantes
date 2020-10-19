@@ -78,13 +78,3 @@ else
 {
 	draw_self();
 }
-
-if (random_range(0, 100) > 99)
-{
-	dialog = StephLines();
-}
-draw_set_font(gothicPixel_fnt);
-draw_set_color(c_white);
-draw_set_halign(fa_center);
-draw_text(x, y - 32, dialog);
-draw_set_halign(fa_left);

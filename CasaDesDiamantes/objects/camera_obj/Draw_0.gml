@@ -58,3 +58,10 @@ if (instance_exists(player_obj))
 		var dashCircle = draw_sprite_ext(dashCircle_spr, 0, player_obj.x, player_obj.y, 1 / (player_obj.dashDelay / 60), 1 / (player_obj.dashDelay / 60), 0, -1, 0.2 / (player_obj.dashDelay / 40))
 	}
 }
+
+//Player Dialog
+draw_set_font(gothicPixel_fnt);
+draw_set_color(c_white);
+draw_set_halign(fa_center);
+draw_text(player_obj.x, player_obj.y - 32, player_obj.dialogCut);
+draw_set_halign(fa_left);
