@@ -2,7 +2,7 @@ edgeMarginVer = 8;
 edgeMarginHor = 16;
 
 //#####LAYER 0#####
-draw_text(200, 200, global.dt);
+
 //Lens Dirt + Vignette
 draw_sprite_ext(lensDirt1_spr, 0, randParticleX + partMovement, randParticleY + partMovement / 2, 1, 1, 0, -1, 0.075);
 draw_sprite_ext(lensDirt2_spr, 0, randParticleX2 + partMovement, randParticleY2 + partMovement / 2, 1, 1, 0, -1, 0.075);
@@ -32,7 +32,7 @@ if (!noHUD)
 
 	//Healthbar
 	draw_sprite_ext(healthbarBorder_spr, 0, edgeMarginHor, edgeMarginVer, 1, 1, 0, -1, 1);
-	draw_sprite_ext(healthbarTop2_spr, -1, edgeMarginHor, 12 - (player_obj.hp - 100), 1, 1, 0, -1, 1);
+	draw_sprite_ext(healthbarTop2_spr, -1, edgeMarginHor, 17 - (player_obj.hp - 100), 1, 1, 0, -1, 1);
 	draw_sprite_ext(healthbar_spr, 0, edgeMarginHor, 129, 1, 1 * (player_obj.hp / 100) , 0, -1, 1);
 	//Healthcut
 	if (player_obj.syringesLost > 0)
@@ -159,12 +159,12 @@ if (drawInfectionText)
 	draw_set_font(global.optixFont);
 	draw_sprite_ext(death_spr, 0, camera_obj.xScreenSize / 2, camera_obj.yScreenSize / 4, 1.5, 1.5, 0, -1, 1);
 	draw_set_color(c_white);
-	draw_text(camera_obj.xScreenSize / 4, camera_obj.yScreenSize - (camera_obj.yScreenSize / 5), "Syringes Left: " + string(player_obj.syringes))
+	draw_text(camera_obj.xScreenSize - (camera_obj.xScreenSize / 4) - 48, camera_obj.yScreenSize - (camera_obj.yScreenSize / 5) + 32, "Syringes Left: " + string(player_obj.syringes))
 	draw_set_font(global.optixFontHuge);
 	draw_sprite(button_spr, 0, camera_obj.xScreenSize / 4, camera_obj.yScreenSize - (camera_obj.yScreenSize / 4));
 	draw_sprite(button_spr, 0, camera_obj.xScreenSize - (camera_obj.xScreenSize / 4), camera_obj.yScreenSize - (camera_obj.yScreenSize / 4));
-	draw_text(camera_obj.xScreenSize - (camera_obj.xScreenSize / 4) - 32, camera_obj.yScreenSize - (camera_obj.yScreenSize / 4) - 32, "INFECT (WIP)");
-	draw_text(camera_obj.xScreenSize / 4 - 32, camera_obj.yScreenSize - (camera_obj.yScreenSize / 4) - 32, "DIE [Q]");
+	draw_text(camera_obj.xScreenSize - (camera_obj.xScreenSize / 4) - 48, camera_obj.yScreenSize - (camera_obj.yScreenSize / 4) - 16, "INFECT (WIP)");
+	draw_text(camera_obj.xScreenSize / 4 - 32, camera_obj.yScreenSize - (camera_obj.yScreenSize / 4) - 16, "DIE [Q]");
 }
 if (player_obj.isZombie)
 {

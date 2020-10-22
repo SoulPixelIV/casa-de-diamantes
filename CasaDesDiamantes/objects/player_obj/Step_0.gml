@@ -306,7 +306,10 @@ if (colliding)
 			}
 			if (!grounded && verspeed > 0)
 			{
-				huggingWall = true;
+				if (place_free(x, y + (verspeed * global.dt)))
+				{
+					huggingWall = true;
+				}
 			}
 		}
 	}
