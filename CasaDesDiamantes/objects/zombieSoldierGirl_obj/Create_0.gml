@@ -2,13 +2,13 @@
 
 horspeed = 0;
 verspeed = 0;
-playerSightMax = 72;
-playerSightMin = 8;
+playerSightMax = 256;
+playerSightMin = 32;
 hp = 85;
 level = 1;
 moneyDropMin = 3;
 moneyDropMax = 7;
-attackCooldown = 320;
+attackCooldown = 240;
 damage = 15;
 damageCollision = true;
 points = 125;

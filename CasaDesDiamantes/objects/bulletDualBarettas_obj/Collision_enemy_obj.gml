@@ -1,5 +1,5 @@
 var enemyTarget = instance_place(x, y, enemy_obj);
-if (!dealtDamage)
+if (!dealtDamage && instance_exists(enemyTarget))
 {
 	enemyTarget.damageTint = true;
 	enemyTarget.hp -= 6;

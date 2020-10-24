@@ -16,11 +16,11 @@ if (movement)
 	{
 		if (player_obj.x > x)
 		{
-			horspeed = -movSpeed;
+			horspeed = movSpeed * 2;
 		}
 		else
 		{
-			horspeed = movSpeed;
+			horspeed = -movSpeed * 2;
 		}
 		if (dirLookat > 90 && dirLookat < 270)
 		{
@@ -153,7 +153,7 @@ with (headshotHitbox)
 }
 
 //Attack
-if (distance_to_object(player_obj) < 300 && player_obj.y > y - 64 && player_obj.y < y + 196)
+if (distance_to_object(player_obj) < aggroRangeX && player_obj.y > y - 64 && player_obj.y < y + aggroRangeY)
 {
 	attackCooldown -= global.dt / 4;
 }

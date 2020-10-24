@@ -43,6 +43,10 @@ if (verspeed < 2)
 {
 	verspeed -= gravityStrength * global.dt;
 }
+if (attackInProg)
+{
+	verspeed = 0;
+}
 
 //Animation
 image_speed = 0;
@@ -153,7 +157,7 @@ if (!attackInProg && !attackInProg2)
 }
 
 //Prepare Attack
-if (attackCooldown < 0)
+if (attackCooldown < 0 && verspeed == 0)
 {
 	if (distance_to_object(player_obj) < 64)
 	{
