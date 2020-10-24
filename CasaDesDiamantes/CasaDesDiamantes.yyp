@@ -589,6 +589,7 @@
     {"id":{"name":"RTC_1_spawn2","path":"objects/RTC_1_spawn2/RTC_1_spawn2.yy",},"order":6,},
     {"id":{"name":"spotlightYellow_obj","path":"objects/spotlightYellow_obj/spotlightYellow_obj.yy",},"order":4,},
     {"id":{"name":"spotlightPlayer_obj","path":"objects/spotlightPlayer_obj/spotlightPlayer_obj.yy",},"order":5,},
+    {"id":{"name":"hazard_obj","path":"objects/hazard_obj/hazard_obj.yy",},"order":8,},
     {"id":{"name":"spotlightBlue_obj","path":"objects/spotlightBlue_obj/spotlightBlue_obj.yy",},"order":6,},
     {"id":{"name":"spotlightRed_obj","path":"objects/spotlightRed_obj/spotlightRed_obj.yy",},"order":7,},
     {"id":{"name":"ledSignCocktailsOff_obj","path":"objects/ledSignCocktailsOff_obj/ledSignCocktailsOff_obj.yy",},"order":10,},
@@ -682,8 +683,8 @@
   },
   "RoomOrder": [
     {"name":"loadVars","path":"rooms/loadVars/loadVars.yy",},
-    {"name":"level1_SenzelaForest","path":"rooms/level1_SenzelaForest/level1_SenzelaForest.yy",},
     {"name":"level0_RoadToCasino","path":"rooms/level0_RoadToCasino/level0_RoadToCasino.yy",},
+    {"name":"level1_SenzelaForest","path":"rooms/level1_SenzelaForest/level1_SenzelaForest.yy",},
     {"name":"level1_RoadToCasino","path":"rooms/level1_RoadToCasino/level1_RoadToCasino.yy",},
     {"name":"level0_SenzelaForest","path":"rooms/level0_SenzelaForest/level0_SenzelaForest.yy",},
     {"name":"level_Casino","path":"rooms/level_Casino/level_Casino.yy",},

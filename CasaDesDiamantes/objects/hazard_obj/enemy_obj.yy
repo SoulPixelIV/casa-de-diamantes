@@ -1,16 +1,10 @@
 {
-  "spriteId": {
-    "name": "spikesShort_spr",
-    "path": "sprites/spikesShort_spr/spikesShort_spr.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": {
-    "name": "hazard_obj",
-    "path": "objects/hazard_obj/hazard_obj.yy",
-  },
+  "parentObjectId": null,
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -23,17 +17,15 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"spikesShort_obj","path":"objects/spikesShort_obj/spikesShort_obj.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-  ],
+  "eventList": [],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Parents",
+    "path": "folders/Parents.yy",
   },
   "resourceVersion": "1.0",
-  "name": "spikesShort_obj",
+  "name": "enemy_obj",
   "tags": [],
   "resourceType": "GMObject",
 }
