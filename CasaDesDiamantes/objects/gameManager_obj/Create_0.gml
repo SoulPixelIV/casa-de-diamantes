@@ -10,19 +10,19 @@ multiplierRun = false;
 
 global.pistolAmmo = 0;
 global.pistolMag = 0;
-global.pistolCooldown = 2;
+global.pistolCooldown = 3;
 global.pistolCooldownSave = global.pistolCooldown;
 global.pistolReload = 300;
 global.pistolReloadSave = global.pistolReload;
 
-global.dualBarettasCooldown = 3;
+global.dualBarettasCooldown = 4;
 global.dualBarettasCooldownSave = global.dualBarettasCooldown;
 global.dualBarettasReload = 500;
 global.dualBarettasReloadSave = global.dualBarettasReload;
 
 global.shotgunAmmo = 0;
 global.shotgunMag = 0;
-global.shotgunCooldown = 9;
+global.shotgunCooldown = 14;
 global.shotgunCooldownSave = global.shotgunCooldown;
 global.shotgunReload = 750;
 global.shotgunReloadSave = global.shotgunReload;

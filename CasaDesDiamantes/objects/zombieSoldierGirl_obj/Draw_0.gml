@@ -14,7 +14,7 @@ if (attackCooldown < 160 && distance_to_object(player_obj) < 300 && !attackInPro
 {
 	if (image_xscale == 1)
 	{
-		if (attackCooldown > 90)
+		if (attackCooldown > 30)
 		{
 			draw_line_width_color(x + 15, y - 4, playerPosX, playerPosY, 0.8, c_red, c_red);
 		}
@@ -25,7 +25,7 @@ if (attackCooldown < 160 && distance_to_object(player_obj) < 300 && !attackInPro
 	}
 	if (image_xscale == -1)
 	{
-		if (attackCooldown > 90)
+		if (attackCooldown > 30)
 		{
 			draw_line_width_color(x - 15, y - 4, playerPosX, playerPosY, 0.8, c_red, c_red);
 		}

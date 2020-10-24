@@ -13,7 +13,7 @@ if (!player_obj.reloading)
 	}
 	if (global.currentWeapon == pickedWeapon.shotgun)
 	{
-		if (global.shotgunAmmo < 3)
+		if (global.shotgunAmmo < 5)
 		{
 			draw_sprite_ext(ammoCounter_spr, global.shotgunAmmo, player_obj.x - 22, player_obj.y - 20, 1, 1, 0, -1, 1 / (global.shotgunAmmo + 1) * 1.5);
 		}

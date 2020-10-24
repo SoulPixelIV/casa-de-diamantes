@@ -676,8 +676,8 @@ if (global.pistolCooldown > 0 || global.dualBarettasCooldown > 0 || global.shotg
 //Reload
 if (keyboard_check_pressed(ord("R")) && !isZombie)
 {
-	if (global.currentWeapon == pickedWeapon.pistol && global.pistolAmmo < 8 || global.currentWeapon == pickedWeapon.dualBarettas && global.pistolAmmo < 8
-	|| global.currentWeapon == pickedWeapon.shotgun && global.shotgunAmmo < 3)
+	if (global.currentWeapon == pickedWeapon.pistol && global.pistolAmmo < 18 || global.currentWeapon == pickedWeapon.dualBarettas && global.pistolAmmo < 18
+	|| global.currentWeapon == pickedWeapon.shotgun && global.shotgunAmmo < 6)
 	{
 		reloading = true;
 	}

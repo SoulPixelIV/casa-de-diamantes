@@ -4,7 +4,7 @@ x += horspeed * global.dt;
 y += verspeed * global.dt;
 
 dirLookat = point_direction(x, y, player_obj.x, player_obj.y);
-if (attackCooldown > 90 && attackInProg1)
+if (attackCooldown > 30 && attackInProg1)
 {
 	playerPosX = player_obj.x;
 	playerPosY = player_obj.y;
@@ -16,11 +16,11 @@ if (movement)
 	{
 		if (player_obj.x > x)
 		{
-			horspeed = movSpeed * 2;
+			horspeed = movSpeed * 3;
 		}
 		else
 		{
-			horspeed = -movSpeed * 2;
+			horspeed = -movSpeed * 3;
 		}
 		if (dirLookat > 90 && dirLookat < 270)
 		{
