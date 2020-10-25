@@ -25,6 +25,7 @@ if (hp > 0)
 			{
 				audio_play_sound(choose(moan1_snd, moan2_snd), 1, false);
 			}
+			camera_obj.hitVignette = true;
 		}
 	}
 }

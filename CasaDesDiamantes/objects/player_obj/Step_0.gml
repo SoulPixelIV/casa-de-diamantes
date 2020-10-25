@@ -815,7 +815,7 @@ if (damageCooldown < 0)
 	image_alpha = 1;
 }
 
-if (hp < 0 || infection > 100)
+if (hp < 0 || infection < 0)
 {
 	//Death
 	if (!deathActivated)
@@ -863,7 +863,7 @@ if (isZombie && keyboard_check_pressed(ord("F")) && !plagueTransformation)
 //Plague
 if (plagueTransformation)
 {
-	infection += global.dt / 69;
+	infection -= global.dt / 200;
 }
 
 //Slowmotion

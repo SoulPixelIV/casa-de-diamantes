@@ -39,6 +39,10 @@ vignetteColorClamp = clamp(vignetteColor, 0, 1);
 vignetteColorDir = 0;
 vignetteFlash = false;
 drawInfectionText = false;
+hitVignette = false;
+hitVignetteTimer = 50;
+hitVignetteTimerSave = hitVignetteTimer;
+vignetteAlpha = 0;
 
 zombiespikeEffectBorderSave = zombiespikeEffectBorder;
 zombiespikeBorderTransparentSave = zombiespikeBorderTransparent;

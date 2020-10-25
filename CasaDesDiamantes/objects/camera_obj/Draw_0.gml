@@ -59,6 +59,16 @@ if (instance_exists(player_obj))
 	}
 }
 
+//Player Infection Timer
+if (player_obj.plagueTransformation)
+{
+	draw_set_font(gothicPixel_fnt);
+	draw_set_color(make_color_rgb(255, 215, 0));
+	draw_set_halign(fa_center);
+	draw_text(player_obj.x, player_obj.y - 38, round(player_obj.infection));
+	draw_set_halign(fa_left);
+}
+
 //Player Dialog
 draw_set_font(gothicPixel_fnt);
 draw_set_color(c_white);

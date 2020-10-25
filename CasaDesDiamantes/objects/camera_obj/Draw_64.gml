@@ -10,14 +10,51 @@ draw_sprite_ext(lensDirt3_spr, 0, randParticleX3 + partMovement, randParticleY3 
 draw_sprite_ext(lensDirt4_spr, 0, randParticleX4 + partMovement, randParticleY4 + partMovement / 2, 1, 1, 0, -1, 0.075);
 	
 //Vignette Effect
-if (deathVignette)
+if (!hitVignette)
 {
-	draw_set_alpha(0.4);
+	if (deathVignette)
+	{
+		if (vignetteAlpha > 0.4)
+		{
+			vignetteAlpha -= 0.02;
+		}
+		if (vignetteAlpha < 0.4)
+		{
+			vignetteAlpha += 0.02;
+		}
+	}
+	else
+	{
+		if (vignetteAlpha > 0.1)
+		{
+			vignetteAlpha -= 0.02;
+		}
+		if (vignetteAlpha < 0.1)
+		{
+			vignetteAlpha += 0.02;
+		}
+	}
 }
 else
 {
-	draw_set_alpha(0.1);
+	if (vignetteAlpha > 0.3)
+	{
+		vignetteAlpha -= 0.02;
+	}
+	if (vignetteAlpha < 0.3)
+	{
+		vignetteAlpha += 0.02;
+	}
+	hitVignetteTimer -= global.dt;
 }
+
+if (hitVignetteTimer < 0)
+{
+	hitVignette = false;
+	hitVignetteTimer = hitVignetteTimerSave;
+}
+
+draw_set_alpha(vignetteAlpha);
 draw_ellipse_colour(-200, -200, xScreenSize + 200, yScreenSize + 200, c_black , c_red, false);
 draw_set_alpha(1);
 
@@ -121,6 +158,7 @@ if (!noHUD)
 draw_set_alpha(1);
 
 //Hourglass
+/*
 if (player_obj.plagueTransformation)
 {
 	if (player_obj.infection < 10)
@@ -152,6 +190,7 @@ if (player_obj.plagueTransformation)
 		draw_sprite(hourglass_spr, 6, 447, 230);
 	}
 }
+*/
 
 //Infectiontext
 if (drawInfectionText)

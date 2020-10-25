@@ -1,5 +1,5 @@
 player_obj.plagueTransformation = false;
-player_obj.infection = 0;
+player_obj.infection = 30;
 camera_obj.zombiespikeEffectBorder = camera_obj.zombiespikeEffectBorderSave;
 camera_obj.zombiespikeBorderTransparent = camera_obj.zombiespikeBorderTransparentSave;
 camera_obj.showedInf = false;
