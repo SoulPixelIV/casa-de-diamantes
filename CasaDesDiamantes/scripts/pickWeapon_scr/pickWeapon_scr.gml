@@ -19,6 +19,4 @@ function pickWeapon_scr(argument0) {
 	}
 	player_obj.unarmed = false;
 	audio_play_sound(pickup_snd, 1, false);
-
-
 }

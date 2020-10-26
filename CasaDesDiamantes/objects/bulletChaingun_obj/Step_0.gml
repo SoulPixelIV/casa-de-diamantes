@@ -26,6 +26,7 @@ if (place_meeting(x, y, player_obj) && !player_obj.isZombie && !player_obj.invin
 	instance_change(bloodSpread_obj, true);
 	player_obj.damageRecieved = true;
 	player_obj.damageCooldown = player_obj.damageCooldownSave;
+	camera_obj.hitVignette = true;
 	bloodSpread2 = instance_create_layer(x, y, "Instances", bloodSpread2_obj);
 	bloodSpread2.image_angle = image_angle;
 }

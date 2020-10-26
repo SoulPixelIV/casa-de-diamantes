@@ -18,7 +18,7 @@ function jump_scr() {
 		part_emitter_burst(global.partSystem, partEmitter, global.playerPart, 50);
 		part_emitter_destroy(global.partSystem, partEmitter);
 	}
-
+	//Dash Momentum after jump
 	if (player_obj.isDashing)
 	{
 		player_obj.stoppedDashing = true;

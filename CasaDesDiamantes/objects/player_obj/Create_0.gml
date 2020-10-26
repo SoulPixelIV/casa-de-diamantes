@@ -63,7 +63,6 @@ fullJump = false;
 jumping = false;
 grounded = false;
 crouching = false;
-unarmed = true;
 stoppedDashing = false;
 flip = false;
 spin = false;
@@ -89,6 +88,15 @@ deathActivated = false;
 deathSlowmo = false;
 firstPosX = x;
 firstPosY = y;
+
+if (global.unlockedWeapon[0] == true || global.unlockedWeapon[1] == true || global.unlockedWeapon[2] == true)
+{
+	unarmed = false;
+}
+else
+{
+	unarmed = true;
+}
 
 //Help Vars
 damageFlickerTimerSave = damageFlickerTimer;
@@ -122,3 +130,4 @@ if (!instance_exists(spotlightPlayer_obj))
 //Debug
 instance_create_layer(x + 1, y - 4, "Instances", playerBulletLine_obj);
 
+global.spawn = 0;

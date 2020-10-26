@@ -18,8 +18,16 @@ playedSound = false;
 movement = true;
 gravityStrength = -0.05;
 dir = 0;
-playerPosX = player_obj.x;
-playerPosY = player_obj.y;
+if (instance_exists(player_obj))
+{
+	playerPosX = player_obj.x;
+	playerPosY = player_obj.y;
+}
+else
+{
+	playerPosX = 0;
+	playerPosY = 0;
+}
 savePosX = x;
 savePosY = y;
 randAttack = 1;

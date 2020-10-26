@@ -194,7 +194,6 @@
       ],"visible":true,"depth":400,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"TileCollider","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"zombieGirl_obj","path":"objects/zombieGirl_obj/zombieGirl_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":2227.0,"y":1924.0,"resourceVersion":"1.0","name":"inst_1EA6E8C0","tags":[],"resourceType":"GMRInstance",},
-        {"properties":[],"isDnd":false,"objectId":{"name":"player_obj","path":"objects/player_obj/player_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1088.0,"y":1664.0,"resourceVersion":"1.0","name":"inst_5E80FFA","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"explosiveMerchant_obj","path":"objects/explosiveMerchant_obj/explosiveMerchant_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":2508.0,"y":2181.0,"resourceVersion":"1.0","name":"inst_F56CC0C","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"zombieGirl_obj","path":"objects/zombieGirl_obj/zombieGirl_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":-1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":2259.0,"y":1924.0,"resourceVersion":"1.0","name":"inst_7FCBAFC1","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"zombieGirl_obj","path":"objects/zombieGirl_obj/zombieGirl_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":-1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":2099.0,"y":1924.0,"resourceVersion":"1.0","name":"inst_7FAF39CA","tags":[],"resourceType":"GMRInstance",},
@@ -323,6 +322,7 @@
             {"propertyId":{"name":"wave","path":"objects/battleArenaSpawn_obj/battleArenaSpawn_obj.yy",},"objectId":{"name":"battleArenaSpawn_obj","path":"objects/battleArenaSpawn_obj/battleArenaSpawn_obj.yy",},"value":"1","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
             {"propertyId":{"name":"enemy","path":"objects/battleArenaSpawn_obj/battleArenaSpawn_obj.yy",},"objectId":{"name":"battleArenaSpawn_obj","path":"objects/battleArenaSpawn_obj/battleArenaSpawn_obj.yy",},"value":"healthpack_obj","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
           ],"isDnd":false,"objectId":{"name":"battleArenaSpawn_obj","path":"objects/battleArenaSpawn_obj/battleArenaSpawn_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1211.0,"y":1393.0,"resourceVersion":"1.0","name":"inst_57CBE05B","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"Spawn1_obj","path":"objects/Spawn1_obj/Spawn1_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1088.0,"y":1652.0,"resourceVersion":"1.0","name":"inst_19D83AB5","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":500,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Instances","tags":[],"resourceType":"GMRInstanceLayer",},
     {"tilesetId":{"name":"caveTilesOld","path":"tilesets/caveTilesOld/caveTilesOld.yy",},"x":0,"y":0,"tiles":{"SerialiseWidth":110,"SerialiseHeight":94,"TileSerialiseData":[
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -1257,7 +1257,7 @@
     {"spriteId":null,"colour":4280029198,"x":0,"y":0,"htiled":false,"vtiled":false,"hspeed":0.0,"vspeed":0.0,"stretch":false,"animationFPS":15.0,"animationSpeedType":0,"userdefinedAnimFPS":false,"visible":true,"depth":2100,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"BackgroundColor","tags":[],"resourceType":"GMRBackgroundLayer",},
   ],
   "inheritLayers": false,
-  "creationCodeFile": "",
+  "creationCodeFile": "${project_dir}/rooms/level1_SenzelaForest/RoomCreationCode.gml",
   "inheritCode": false,
   "instanceCreationOrder": [
     {"name":"inst_7BE7C0C3","path":"rooms/level1_SenzelaForest/level1_SenzelaForest.yy",},
@@ -1275,7 +1275,6 @@
     {"name":"inst_500763AA","path":"rooms/level1_SenzelaForest/level1_SenzelaForest.yy",},
     {"name":"inst_64E8F001","path":"rooms/level1_SenzelaForest/level1_SenzelaForest.yy",},
     {"name":"inst_43E85ECB","path":"rooms/level1_SenzelaForest/level1_SenzelaForest.yy",},
-    {"name":"inst_5E80FFA","path":"rooms/level1_SenzelaForest/level1_SenzelaForest.yy",},
     {"name":"inst_53A95B4E","path":"rooms/level1_SenzelaForest/level1_SenzelaForest.yy",},
     {"name":"inst_790D082D","path":"rooms/level1_SenzelaForest/level1_SenzelaForest.yy",},
     {"name":"inst_1A68F5EC","path":"rooms/level1_SenzelaForest/level1_SenzelaForest.yy",},
@@ -1434,6 +1433,7 @@
     {"name":"inst_1E21475E","path":"rooms/level1_SenzelaForest/level1_SenzelaForest.yy",},
     {"name":"inst_263C6213","path":"rooms/level1_SenzelaForest/level1_SenzelaForest.yy",},
     {"name":"inst_1A96AE68","path":"rooms/level1_SenzelaForest/level1_SenzelaForest.yy",},
+    {"name":"inst_19D83AB5","path":"rooms/level1_SenzelaForest/level1_SenzelaForest.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

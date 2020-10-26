@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "colliderBox_spr",
-    "path": "sprites/colliderBox_spr/colliderBox_spr.yy",
+    "name": "bluecubex16_spr",
+    "path": "sprites/bluecubex16_spr/bluecubex16_spr.yy",
   },
   "solid": false,
   "visible": true,
@@ -11,7 +11,7 @@
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
-  "physicsGroup": 0,
+  "physicsGroup": 1,
   "physicsDensity": 0.5,
   "physicsRestitution": 0.1,
   "physicsLinearDamping": 0.1,
@@ -24,11 +24,11 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "TeleportBoxes",
-    "path": "folders/Objects/TeleportBoxes.yy",
+    "name": "Spawns",
+    "path": "folders/Objects/Spawns.yy",
   },
   "resourceVersion": "1.0",
-  "name": "RTC_0_spawn2",
+  "name": "Spawn2_obj",
   "tags": [],
   "resourceType": "GMObject",
 }

@@ -15,7 +15,6 @@ key_shift = keyboard_check_pressed(vk_shift) || gamepad_button_check_pressed(0, 
 key_control = keyboard_check_pressed(vk_control) || gamepad_button_check_pressed(0, gp_face2);
 
 //Movement
-
 //Cap Speed
 if (horspeed > horspeedMax)
 {
@@ -950,20 +949,6 @@ else
 	{
 		audio_stop_sound(slide_snd);
 	}
-}
-
-//Set Spawn
-if (global.spawn == 1 && room == level0_RoadToCasino)
-{
-	x = RTC_0_spawn2.x;
-	y = RTC_0_spawn2.y;
-	global.spawn = 0;
-}
-if (global.spawn == 2 && room == level1_RoadToCasino)
-{
-	x = RTC_1_spawn2.x;
-	y = RTC_1_spawn2.y;
-	global.spawn = 0;
 }
 
 //Talking

@@ -2,7 +2,14 @@
 
 x += horspeed * global.dt;
 y += verspeed * global.dt;
-dirLookat = point_direction(x, y, player_obj.x, player_obj.y);
+if (instance_exists(player_obj))
+{
+	dirLookat = point_direction(x, y, player_obj.x, player_obj.y);
+}
+else
+{
+	dirLookat = 0;
+}
 
 if (movement)
 {
