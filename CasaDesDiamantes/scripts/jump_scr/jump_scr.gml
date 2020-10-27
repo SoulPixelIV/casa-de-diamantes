@@ -38,7 +38,4 @@ function jump_scr() {
 	}
 	audio_play_sound(jump_snd, 1, false);
 	landSoundPlayed = false;
-
-
-
 }

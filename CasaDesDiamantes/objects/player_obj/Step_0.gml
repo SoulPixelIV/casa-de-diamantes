@@ -100,7 +100,7 @@ if (verspeed < 2 && !onLadder)
 if (movement && !isZombie)
 {
 	//Jump
-	if (grounded && key_jump || fallJumpSafety > 0 && key_jump)
+	if (grounded && key_jump || fallJumpSafety > 0 && key_jump || isDashing && key_jump)
 	{
 		jump_scr();
 	}
