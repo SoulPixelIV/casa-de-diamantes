@@ -2,7 +2,7 @@ edgeMarginVer = 8;
 edgeMarginHor = 16;
 
 //#####LAYER 0#####
-
+draw_text(200, 200, player_obj.horspeed);
 //Lens Dirt + Vignette
 draw_sprite_ext(lensDirt1_spr, 0, randParticleX + partMovement, randParticleY + partMovement / 2, 1, 1, 0, -1, 0.075);
 draw_sprite_ext(lensDirt2_spr, 0, randParticleX2 + partMovement, randParticleY2 + partMovement / 2, 1, 1, 0, -1, 0.075);

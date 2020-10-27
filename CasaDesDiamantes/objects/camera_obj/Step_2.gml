@@ -33,14 +33,29 @@ if (follow == camera_obj)
 	yTo = (player_obj.y + cameraYBorder) + (mouse_y - (player_obj.y + cameraYBorder)) / 2;
 }
 
-x += (xTo - x) * (global.dtNoSlowmo / 10);
+if (x < xTo + 4 && x > xTo - 4 && !shake)
+{
+	x += (xTo - x);
+}
+else
+{
+	x += (xTo - x) * (global.dtNoSlowmo / 10);
+}
+
 if (follow == camera_obj)
 {
 	y += (yTo - y - cameraYBorder) * (global.dtNoSlowmo / 10);
 }
 else
 {
-	y += (yTo - y - cameraYBorder) * (global.dtNoSlowmo / 50);
+	if (y < yTo + 4 - 64 && y > yTo - 4 && !shake)
+	{
+		y += (yTo - y - cameraYBorder)
+	}
+	else
+	{
+		y += (yTo - y - cameraYBorder) * (global.dtNoSlowmo / 50);
+	}
 }
 
 var vm = matrix_build_lookat(x,y,-10,x,y,0,0,1,0);
@@ -150,3 +165,4 @@ else
 		playScoreStop = false;
 	}
 }
+

@@ -6,6 +6,16 @@ function frictionActive_scr(argument0, argument1) {
 			if (!argument0.isDashing)
 			{
 				argument0.horspeed -= argument0.frictionStrength * global.dt;
+				if (argument0.key_right || argument0.key_left)
+				{
+					if (!argument0.jumping)
+					{
+						if (argument0.horspeed > argument0.movSpeed - 0.15)
+						{
+							argument0.horspeed = argument0.movSpeed;
+						}
+					}
+				}
 			}
 			else
 			{
@@ -21,6 +31,16 @@ function frictionActive_scr(argument0, argument1) {
 			if (!argument0.isDashing)
 			{
 				argument0.horspeed += argument0.frictionStrength * global.dt;
+				if (argument0.key_right || argument0.key_left)
+				{
+					if (!argument0.jumping)
+					{
+						if (argument0.horspeed < -argument0.movSpeed + 0.15)
+						{
+							argument0.horspeed = -argument0.movSpeed;
+						}
+					}
+				}
 			}
 			else
 			{
