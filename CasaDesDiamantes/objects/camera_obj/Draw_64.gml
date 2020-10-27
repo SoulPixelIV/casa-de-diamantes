@@ -35,13 +35,13 @@ if (!hitVignette)
 		}
 	}
 }
-else
+if (hitVignette || player_obj.hp < 20)
 {
-	if (vignetteAlpha > 0.3)
+	if (vignetteAlpha > 0.4)
 	{
 		vignetteAlpha -= 0.02;
 	}
-	if (vignetteAlpha < 0.3)
+	if (vignetteAlpha < 0.4)
 	{
 		vignetteAlpha += 0.02;
 	}
