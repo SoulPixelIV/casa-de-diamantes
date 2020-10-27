@@ -49,11 +49,11 @@ var pm = matrix_build_projection_ortho(xScreenSize, yScreenSize,1,10000);
 camera_set_proj_mat(camera,pm);
 
 //Aim Zoom
-if (mouse_check_button(mb_right))
+if (keyboard_check_pressed(vk_control))
 {
 	follow = camera_obj;
 }
-if (mouse_check_button_released(mb_right))
+if (keyboard_check_released(vk_control))
 {
 	follow = player_obj;
 }

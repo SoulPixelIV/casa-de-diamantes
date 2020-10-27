@@ -37,7 +37,7 @@ else
 	}
 
 	//Check Perfect Reload
-	if (keyboard_check_pressed(ord("R")) && !reloadFailed && anim > 3)
+	if (mouse_check_button_pressed(mb_right) && !reloadFailed && anim > 3)
 	{
 		if (anim > sprite_get_number(ammoCounterReloading_spr) - 3 && anim <= sprite_get_number(ammoCounterReloading_spr))
 		{
