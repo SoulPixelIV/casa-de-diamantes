@@ -9,13 +9,42 @@ if (movement)
 {
 	if (distance_to_object(player_obj) < playerSightMax && distance_to_object(player_obj) > playerSightMin)
 	{
-		if (player_obj.x > x)
+		if (instance_exists(hazard_obj))
 		{
-			horspeed = movSpeed;
+			if (!collision_circle(x, y, 64, hazard_obj, false, true))
+			{
+				if (player_obj.x > x)
+				{
+					horspeed = movSpeed;
+				}
+				else
+				{
+					horspeed = -movSpeed;
+				}
+			}
+			else
+			{
+				hazard = instance_nearest(x, y, hazard_obj);
+				if (hazard.x > x)
+				{
+					horspeed = -movSpeed / 2;
+				}
+				else
+				{
+					horspeed = movSpeed / 2;
+				}
+			}
 		}
 		else
 		{
-			horspeed = -movSpeed;
+			if (player_obj.x > x)
+			{
+				horspeed = movSpeed;
+			}
+			else
+			{
+				horspeed = -movSpeed;
+			}
 		}
 		if (dirLookat > 90 && dirLookat < 270)
 		{
