@@ -19,7 +19,7 @@ function frictionActive_scr(argument0, argument1) {
 			}
 			else
 			{
-				argument0.horspeed -= (argument0.frictionStrength * global.dt) / 3;
+				argument0.horspeed -= (argument0.frictionStrength / 3) * global.dt;
 			}
 			if (argument0.horspeed < 0.3)
 			{
@@ -44,7 +44,7 @@ function frictionActive_scr(argument0, argument1) {
 			}
 			else
 			{
-				argument0.horspeed += (argument0.frictionStrength * global.dt) / 3;
+				argument0.horspeed += (argument0.frictionStrength / 3) * global.dt;
 			}
 			if (argument0.horspeed > -0.3)
 			{

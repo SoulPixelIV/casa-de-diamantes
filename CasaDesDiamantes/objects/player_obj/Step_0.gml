@@ -117,10 +117,6 @@ if (movement && !isZombie)
 		dashDelay -= global.dt;
 	}
 	
-	if (!grounded && !onLadder && !huggingWall)
-	{
-		invincible = true;
-	}
 	//Cancel Dash
 	if (stoppedDashing)
 	{
@@ -258,7 +254,6 @@ with (gameManager_obj)
 			if (key_jump && !huggingWall && !wallJumping && !grounded && !isDashing && !flipUsed && jumpType == 1 && fallJumpSafety < 0 && wallJumps > 0)
 			{
 				sprite_index = playerFlip_spr;
-				invincible = true;
 				flip = true;
 				flipUsed = true;
 				jump_scr();
@@ -372,7 +367,7 @@ if (groundCollisionTimer < 0)
 }
 
 //Ladder
-if (place_meeting(x, y, ladder_obj) && (key_up || key_down))
+if (place_meeting(x, y, ladder_obj) && (key_up || key_down) && !isDashing)
 {
 	onLadder = true;
 }
@@ -843,19 +838,11 @@ if (isZombie && !plagueTransformation)
 if (zombieTimer < 0)
 {
 	isZombie = false;
-	if (!isDashing && !grounded)
-	{
-		invincible = false;
-	}
 	zombieTimer = zombieTimerSave;
 }
 if (isZombie && keyboard_check_pressed(ord("F")) && !plagueTransformation)
 {
 	isZombie = false;
-	if (!isDashing && !grounded)
-	{
-		invincible = false;
-	}
 	zombieTimer = zombieTimerSave;
 }
 

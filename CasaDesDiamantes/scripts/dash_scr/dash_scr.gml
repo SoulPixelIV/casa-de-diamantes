@@ -13,6 +13,4 @@ function dash_scr() {
 	{
 		player_obj.horspeed += player_obj.dashSpeed;
 	}
-
-
 }
