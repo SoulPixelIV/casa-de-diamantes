@@ -60,7 +60,7 @@
     "eventStubScript": null,
     "parent": {"name":"spikes_spr","path":"sprites/spikes_spr/spikes_spr.yy",},
     "resourceVersion": "1.3",
-    "name": "",
+    "name": "spikes_spr",
     "tags": [],
     "resourceType": "GMSequence",
   },
