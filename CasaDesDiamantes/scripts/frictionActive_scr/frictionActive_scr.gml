@@ -1,87 +1,90 @@
-function frictionActive_scr(argument0, argument1) {
-	if (argument1)
+function frictionActive_scr(instance, frictionActive) {
+	var currFriction = instance.frictionStrength * global.dt;
+	var currFrictionDashing = (instance.frictionStrength / 3) * global.dt;
+	
+	if (frictionActive)
 	{
-		if (argument0.horspeed > 0)
+		if (instance.horspeed > 0)
 		{
-			if (!argument0.isDashing)
+			if (!instance.isDashing)
 			{
-				argument0.horspeed -= argument0.frictionStrength * global.dt;
-				if (argument0.key_right || argument0.key_left)
+				instance.horspeed -= currFriction;
+				if (instance.key_right || instance.key_left)
 				{
-					if (!argument0.jumping)
+					if (!instance.jumping)
 					{
-						if (argument0.horspeed > argument0.movSpeed - 0.15)
+						if (instance.horspeed > instance.movSpeed - 0.15)
 						{
-							argument0.horspeed = argument0.movSpeed;
+							instance.horspeed = instance.movSpeed;
 						}
 					}
 				}
 			}
 			else
 			{
-				argument0.horspeed -= (argument0.frictionStrength / 3) * global.dt;
+				instance.horspeed -= currFrictionDashing;
 			}
-			if (argument0.horspeed < 0.3)
+			if (instance.horspeed < 0.3)
 			{
-				argument0.horspeed = 0;
+				instance.horspeed = 0;
 			}
 		}
 		else
 		{
-			if (!argument0.isDashing)
+			if (!instance.isDashing)
 			{
-				argument0.horspeed += argument0.frictionStrength * global.dt;
-				if (argument0.key_right || argument0.key_left)
+				instance.horspeed += currFriction;
+				if (instance.key_right || instance.key_left)
 				{
-					if (!argument0.jumping)
+					if (!instance.jumping)
 					{
-						if (argument0.horspeed < -argument0.movSpeed + 0.15)
+						if (instance.horspeed < -instance.movSpeed + 0.15)
 						{
-							argument0.horspeed = -argument0.movSpeed;
+							instance.horspeed = -instance.movSpeed;
 						}
 					}
 				}
 			}
 			else
 			{
-				argument0.horspeed += (argument0.frictionStrength / 3) * global.dt;
+				instance.horspeed += currFrictionDashing;
 			}
-			if (argument0.horspeed > -0.3)
+			if (instance.horspeed > -0.3)
 			{
-				argument0.horspeed = 0;
+				instance.horspeed = 0;
 			}
 		}
 	}
 	else
 	{
-		if (argument0.horspeed > 0)
+		if (instance.horspeed > 0)
 		{
-			if (!argument0.isDashing)
+			if (!instance.isDashing)
 			{
-				argument0.horspeed -= global.dt;
+				instance.horspeed -= global.dt;
 			}
 			else
 			{
-				argument0.horspeed -= global.dt / 3;
+				instance.horspeed -= global.dt / 3;
 			}
-			if (argument0.horspeed < 0.3)
+			if (instance.horspeed < 0.3)
 			{
-				argument0.horspeed = 0;
+				instance.horspeed = 0;
 			}
 		}
 		else
 		{
-			if (!argument0.isDashing)
+			if (!instance.isDashing)
 			{
-				argument0.horspeed += global.dt;
+				instance.horspeed += global.dt;
 			}
 			else
 			{
-				argument0.horspeed += global.dt / 3;
+				instance.horspeed += global.dt / 3;
 			}
-			if (argument0.horspeed > -0.3)
+			if (instance.horspeed > -0.3)
 			{
-				argument0.horspeed = 0;
+				instance.horspeed = 0;
 			}
 		}
 	}

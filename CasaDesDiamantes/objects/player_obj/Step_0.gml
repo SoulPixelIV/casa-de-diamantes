@@ -78,9 +78,13 @@ if (movement && !wallJumping && !isDashing)
 }
 
 //Friction
-if (!place_meeting(x, y, colliderSideway_obj) && !huggingWall)
+if (!huggingWall)
 {
 	frictionActive = true;
+}
+else
+{
+	frictionActive = false;
 }
 if (frictionActive)
 {

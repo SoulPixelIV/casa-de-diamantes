@@ -15,8 +15,8 @@ global.optixFontBig = font_add("Optixal.ttf", 14, true, false, 32, 128);
 global.optixFontHuge = font_add("Optixal.ttf", 18, true, false, 32, 128);
 
 ideal_delta_time = 1000000 / room_speed;
-global.dt = clamp((delta_time / ideal_delta_time) * realTimeScale, 0.1, 3);
-global.dtNoSlowmo = clamp(delta_time / ideal_delta_time, 0.1, 3);
+global.dt = clamp((delta_time / ideal_delta_time) * realTimeScale, 0.1, 2.7);
+global.dtNoSlowmo = clamp(delta_time / ideal_delta_time, 0.1, 2.7);
 
 global.tilemap = layer_tilemap_get_id("TileCollider");
 

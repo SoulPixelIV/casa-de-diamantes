@@ -1,8 +1,8 @@
 /// @description Shortcuts
 
 ideal_delta_time = 1000000 / room_speed;
-global.dt = clamp((delta_time / ideal_delta_time) * realTimeScale, 0.1, 3);
-global.dtNoSlowmo = clamp(delta_time / ideal_delta_time, 0.1, 3);
+global.dt = clamp((delta_time / ideal_delta_time) * realTimeScale, 0.1, 2.7);
+global.dtNoSlowmo = clamp(delta_time / ideal_delta_time, 0.1, 2.7);
 
 //Timescale
 if (realTimeScale < global.timeScale)
