@@ -230,7 +230,11 @@ if (movement && !isZombie)
 	if (huggingWall)
 	{
 		slowmo = false;
-		isDashing = false;
+		//Check if there is space to cancel dash
+		if (place_free(x, y + 32))
+		{
+			isDashing = false;
+		}
 	}
 }
 
