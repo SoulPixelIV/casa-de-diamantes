@@ -26,6 +26,7 @@
   "frames": [
     {"compositeImage":{"FrameId":{"name":"1bfb3df4-e099-4057-ac77-359769abf679","path":"sprites/forestTiles_spr/forestTiles_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"1bfb3df4-e099-4057-ac77-359769abf679","path":"sprites/forestTiles_spr/forestTiles_spr.yy",},"LayerId":{"name":"bbe75377-6bcf-4608-be53-f0484317fdcb","path":"sprites/forestTiles_spr/forestTiles_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"1bfb3df4-e099-4057-ac77-359769abf679","path":"sprites/forestTiles_spr/forestTiles_spr.yy",},"LayerId":{"name":"e0ff861a-1de3-402f-b93c-bfe4b7126c41","path":"sprites/forestTiles_spr/forestTiles_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"forestTiles_spr","path":"sprites/forestTiles_spr/forestTiles_spr.yy",},"resourceVersion":"1.0","name":"1bfb3df4-e099-4057-ac77-359769abf679","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
@@ -66,6 +67,7 @@
   },
   "layers": [
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"bbe75377-6bcf-4608-be53-f0484317fdcb","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"Layer 1","resourceVersion":"1.0","name":"e0ff861a-1de3-402f-b93c-bfe4b7126c41","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
     "name": "Tilesets",
