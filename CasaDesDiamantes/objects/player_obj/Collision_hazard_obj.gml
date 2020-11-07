@@ -4,7 +4,8 @@ if (hp > 0)
 {
 	if (!damageRecieved && !isZombie)
 	{
-		if (horspeed > 0)
+		nextHayard = instance_nearest(x, y, hazard_obj);
+		if (hazard.x > x)
 		{
 			horspeed -= other.knockback;
 		}

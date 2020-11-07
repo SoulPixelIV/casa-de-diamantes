@@ -9,6 +9,7 @@ function revive_scr() {
 	player_obj.hp = 100 - 25 * player_obj.syringesLost;
 	player_obj.maxhp -= 25;
 	player_obj.deathActivated = false;
+	reload_scr();
 	
 	player_obj.plagueTransformation = true;
 	camera_obj.showInfOverlay = true;

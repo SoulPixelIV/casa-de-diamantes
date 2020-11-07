@@ -1,4 +1,5 @@
-explosionDamage = 60;
+damage = 60;
+knockback = 5;
 dealtDamage = false;
 animationSpeed = 1;
 lifeLength = 70;

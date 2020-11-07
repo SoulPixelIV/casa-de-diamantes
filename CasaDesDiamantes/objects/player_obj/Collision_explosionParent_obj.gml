@@ -1,11 +1,10 @@
 /// @description Damage Detection
-
 if (hp > 0)
 {
 	if (!damageRecieved && !isZombie)
 	{
-		nextEnemy = instance_nearest(x, y, enemy_obj);
-		if (nextEnemy.x > x)
+		nextExplosion = instance_nearest(x, y, explosionParent_obj);
+		if (nextExplosion.x > x)
 		{
 			horspeed -= other.knockback;
 		}
@@ -17,7 +16,7 @@ if (hp > 0)
 
 	if (!damageRecieved && !isZombie && !invincible)
 	{
-		if (other.damageCollision)
+		if (!other.dealtDamage)
 		{
 			hp -= other.damage;
 			damageCooldown = damageCooldownSave;
@@ -27,6 +26,7 @@ if (hp > 0)
 				audio_play_sound(choose(moan1_snd, moan2_snd), 1, false);
 			}
 			camera_obj.hitVignette = true;
+			other.dealtDamage = true;
 		}
 	}
 }

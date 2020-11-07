@@ -2,7 +2,7 @@ edgeMarginVer = 8;
 edgeMarginHor = 16;
 
 //#####LAYER 0#####
-draw_text(200, 200, movingPlatform_obj.moving);
+
 //Lens Dirt + Vignette
 draw_sprite_ext(lensDirt1_spr, 0, randParticleX + partMovement, randParticleY + partMovement / 2, 1, 1, 0, -1, 0.075);
 draw_sprite_ext(lensDirt2_spr, 0, randParticleX2 + partMovement, randParticleY2 + partMovement / 2, 1, 1, 0, -1, 0.075);
@@ -157,41 +157,6 @@ if (!noHUD)
 
 draw_set_alpha(1);
 
-//Hourglass
-/*
-if (player_obj.plagueTransformation)
-{
-	if (player_obj.infection < 10)
-	{
-		draw_sprite(hourglass_spr, 0, 447, 230);
-	}
-	if (player_obj.infection > 10 && player_obj.infection < 20)
-	{
-		draw_sprite(hourglass_spr, 1, 447, 230);
-	}
-	if (player_obj.infection > 20 && player_obj.infection < 40)
-	{
-		draw_sprite(hourglass_spr, 2, 447, 230);
-	}
-	if (player_obj.infection > 40 && player_obj.infection < 50)
-	{
-		draw_sprite(hourglass_spr, 3, 447, 230);
-	}
-	if (player_obj.infection > 50 && player_obj.infection < 70)
-	{
-		draw_sprite(hourglass_spr, 4, 447, 230);
-	}
-	if (player_obj.infection > 70 && player_obj.infection < 90)
-	{
-		draw_sprite(hourglass_spr, 5, 447, 230);
-	}
-	if (player_obj.infection > 90)
-	{
-		draw_sprite(hourglass_spr, 6, 447, 230);
-	}
-}
-*/
-
 //Infectiontext
 if (drawInfectionText)
 {
@@ -199,11 +164,14 @@ if (drawInfectionText)
 	draw_sprite_ext(death_spr, 0, camera_obj.xScreenSize / 2, camera_obj.yScreenSize / 4, 1.5, 1.5, 0, -1, 1);
 	draw_set_color(c_white);
 	draw_text(camera_obj.xScreenSize - (camera_obj.xScreenSize / 4) - 48, camera_obj.yScreenSize - (camera_obj.yScreenSize / 5) + 32, "Syringes Left: " + string(player_obj.syringes))
-	draw_set_font(global.optixFontHuge);
+	draw_set_font(gothicPixel_fnt);
+	draw_set_color(make_color_rgb(255, 215, 0));
+	draw_set_halign(fa_center);
 	draw_sprite(button_spr, 0, camera_obj.xScreenSize / 4, camera_obj.yScreenSize - (camera_obj.yScreenSize / 4));
 	draw_sprite(button_spr, 0, camera_obj.xScreenSize - (camera_obj.xScreenSize / 4), camera_obj.yScreenSize - (camera_obj.yScreenSize / 4));
-	draw_text(camera_obj.xScreenSize - (camera_obj.xScreenSize / 4) - 48, camera_obj.yScreenSize - (camera_obj.yScreenSize / 4) - 16, "INFECT (WIP)");
-	draw_text(camera_obj.xScreenSize / 4 - 32, camera_obj.yScreenSize - (camera_obj.yScreenSize / 4) - 16, "DIE [Q]");
+	draw_text(camera_obj.xScreenSize - (camera_obj.xScreenSize / 4), camera_obj.yScreenSize - (camera_obj.yScreenSize / 4) - 4, "INFECT [E]");
+	draw_text(camera_obj.xScreenSize / 4, camera_obj.yScreenSize - (camera_obj.yScreenSize / 4) - 4, "DIE [Q]");
+	draw_set_halign(fa_left);
 }
 if (player_obj.isZombie)
 {
