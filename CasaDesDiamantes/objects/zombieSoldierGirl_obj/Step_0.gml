@@ -153,13 +153,19 @@ with (headshotHitbox)
 }
 
 //Attack
-if (distance_to_object(player_obj) < aggroRangeX && player_obj.y > y - 64 && player_obj.y < y + aggroRangeY)
+if (instance_exists(player_obj))
 {
-	attackCooldown -= global.dt / 4;
-}
-else
-{
-	attackCooldown = attackCooldownSave;
+	if (player_obj.movement)
+	{
+		if (distance_to_object(player_obj) < aggroRangeX && player_obj.y > y - 64 && player_obj.y < y + aggroRangeY)
+		{
+			attackCooldown -= global.dt / 4;
+		}
+		else
+		{
+			attackCooldown = attackCooldownSave;
+		}
+	}
 }
 
 if (randAttack == 1)

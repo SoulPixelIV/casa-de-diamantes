@@ -1,6 +1,8 @@
 /// @description Enemy Count
 
 wave = 0;
+highestWave = 0;
+done = false;
 setWave = false;
 countEnemies = false;
 enemyNumber = instance_number(enemy_obj);

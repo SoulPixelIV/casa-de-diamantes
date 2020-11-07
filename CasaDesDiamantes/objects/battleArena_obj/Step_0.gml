@@ -73,3 +73,12 @@ if (countEnemies)
 	countEnemies = false;
 }
 setWave = false;
+
+//Check if done
+if (!place_meeting(x, y, enemy_obj) && !place_meeting(x, y, spawnCloud_obj))
+{
+	if (wave == highestWave && !setWave)
+	{
+		done = true;
+	}
+}

@@ -96,7 +96,7 @@ else
 }
 
 //Gravity
-if (verspeed < 2 && !onLadder)
+if (verspeed < 2 && !onLadder && gravityOn)
 {
 	verspeed -= gravityStrength * global.dt;
 }
@@ -259,7 +259,7 @@ with (gameManager_obj)
 	{
 		with (player_obj)
 		{
-			if (key_jump && !huggingWall && !wallJumping && !grounded && !isDashing && !flipUsed && jumpType == 1 && fallJumpSafety < 0 && wallJumps > 0)
+			if (key_jump && !huggingWall && !wallJumping && !grounded && !isDashing && !flipUsed && jumpType == 1 && fallJumpSafety < 0 && wallJumps > 0 && movement)
 			{
 				sprite_index = playerFlip_spr;
 				flip = true;
@@ -277,7 +277,7 @@ if (grounded || isDashing)
 }
 
 //Jump Spin
-if (!grounded && !isZombie && !flip && !isDashing && !unarmed && !groundCollisionTimerOn)
+if (!grounded && !isZombie && !flip && !isDashing && !unarmed && !groundCollisionTimerOn && movement)
 {
 	if (horspeed < movSpeed - 0.3 || horspeed > -movSpeed + 0.3)
 	{
@@ -288,6 +288,16 @@ if (!grounded && !isZombie && !flip && !isDashing && !unarmed && !groundCollisio
 if (grounded)
 {
 	spin = false;
+}
+
+//Invincibility
+if (!movement)
+{
+	invincible = true;
+}
+else
+{
+	invincible = false;
 }
 
 //Collision
@@ -462,7 +472,7 @@ with (gameManager_obj)
 				{
 					if (!isZombie && !onLadder)
 					{
-						if (horspeed != 0)
+						if (horspeed != 0 && movement)
 						{
 							sprite_index = playerWalkingEquipped_spr;
 						}
@@ -526,7 +536,7 @@ with (gameManager_obj)
 				}
 				else
 				{
-					if (jumping)
+					if (jumping && movement)
 					{
 						if (verspeed < 0)
 						{
@@ -608,7 +618,7 @@ if (!isZombie)
 		{
 			with (player_obj)
 			{
-				if (key_shoot && !reloading)
+				if (key_shoot && !reloading && movement)
 				{
 					if (!onLadder || onLadder && verspeed == 0)
 					{

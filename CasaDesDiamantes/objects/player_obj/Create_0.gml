@@ -22,6 +22,7 @@ dialogCount = 1;
 
 //Physics
 gravityStrength = -0.03; //Lower is lower gravity
+gravityOn = true;
 jumpStrength = 2;
 frictionActive = true;
 frictionStrength = 0.02; //Lower is more slippery

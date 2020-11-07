@@ -32,6 +32,11 @@ if (follow == camera_obj)
 	xTo = player_obj.x + (mouse_x - player_obj.x) / 2;
 	yTo = (player_obj.y + cameraYBorder) + (mouse_y - (player_obj.y + cameraYBorder)) / 2;
 }
+if (follow == movingPlatform_obj)
+{
+	xTo = follow.x;
+	yTo = follow.y - 64;
+}
 
 if (x < xTo + 4 && x > xTo - 4 && !shake)
 {
