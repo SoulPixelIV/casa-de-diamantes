@@ -1,5 +1,5 @@
 if (!dealtDamage)
 {
-	other.hp -= explosionDamage;
+	other.hp -= damage;
 	dealtDamage = true;
 }

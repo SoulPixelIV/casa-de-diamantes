@@ -905,7 +905,7 @@ if (!deathSlowmo)
 	}
 	if (enemySlowmo)
 	{
-		global.timeScale = 0.05;
+		global.timeScale = 0.2;
 		enemySlowMotionTimer -= global.dt;
 	}
 	if (enemySlowMotionTimer < 0)
