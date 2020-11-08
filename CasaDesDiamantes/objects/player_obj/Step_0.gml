@@ -426,7 +426,18 @@ else
 	
 if (huggingWall && !onLadder && !grounded)
 {
-	verspeed = 0.2;
+	if (verspeed > 0.22)
+	{
+		verspeed -= global.dt / 20;
+	}
+	if (verspeed < 0.18)
+	{
+		verspeed += global.dt / 20;
+	}
+	if (verspeed < 0.22 && verspeed > 0.18)
+	{
+		verspeed = 0.2;
+	}
 	if (!audio_is_playing(slide_snd))
 	{
 		var slidesnd = audio_play_sound(slide_snd, 1, false);
