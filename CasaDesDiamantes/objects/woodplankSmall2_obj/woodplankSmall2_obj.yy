@@ -24,8 +24,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Decoration",
-    "path": "folders/Objects/Decoration.yy",
+    "name": "woodplankSmall",
+    "path": "folders/Objects/Decoration/woodplankSmall.yy",
   },
   "resourceVersion": "1.0",
   "name": "woodplankSmall2_obj",
