@@ -29,10 +29,9 @@ part_type_orientation(global.ledRedPart, 0, 359, 1, 0, 1);
 part_type_direction(global.ledRedPart, 0, 359, 0, 3);
 part_type_gravity(global.ledRedPart, 0.0001, 270);
 
-//BROKEN
 global.ledBluePart = part_type_create();
 part_type_sprite(global.ledBluePart, fireSpark_spr, true, true, true);
-part_type_colour_rgb(global.ledBluePart, 100, 100, 100, 100, 200, 2550);
+part_type_colour_rgb(global.ledBluePart, 200, 255, 100, 100, 200, 255);
 part_type_life(global.ledBluePart, 300, 700);
 part_type_size(global.ledBluePart, 0.1, 0.2, 0, 0);
 part_type_orientation(global.ledBluePart, 0, 359, 1, 0, 1);
