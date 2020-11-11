@@ -1,4 +1,4 @@
-if (keyboard_check_pressed(vk_f12))
+if (keyboard_check_pressed(vk_f9))
 {
 	gifRecorder = !gifRecorder;
 	

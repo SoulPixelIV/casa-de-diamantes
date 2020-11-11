@@ -26,9 +26,9 @@
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"parent":{"name":"zombieBucketGirl_obj","path":"objects/zombieBucketGirl_obj/zombieBucketGirl_obj.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"zombieBucketGirl_obj","path":"objects/zombieBucketGirl_obj/zombieBucketGirl_obj.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"parent":{"name":"zombieBucketGirl_obj","path":"objects/zombieBucketGirl_obj/zombieBucketGirl_obj.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"fallingObject_obj","path":"objects/fallingObject_obj/fallingObject_obj.yy",},"parent":{"name":"zombieBucketGirl_obj","path":"objects/zombieBucketGirl_obj/zombieBucketGirl_obj.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"minecartForeground_obj","path":"objects/minecartForeground_obj/minecartForeground_obj.yy",},"parent":{"name":"zombieBucketGirl_obj","path":"objects/zombieBucketGirl_obj/zombieBucketGirl_obj.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"hazard_obj","path":"objects/hazard_obj/hazard_obj.yy",},"parent":{"name":"zombieBucketGirl_obj","path":"objects/zombieBucketGirl_obj/zombieBucketGirl_obj.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
