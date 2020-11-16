@@ -24,9 +24,9 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"e17f4eec-d1ce-4b15-abee-7cd16e546d45","path":"sprites/playerBulletLine_spr/playerBulletLine_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"e17f4eec-d1ce-4b15-abee-7cd16e546d45","path":"sprites/playerBulletLine_spr/playerBulletLine_spr.yy",},"LayerId":{"name":"ea87a863-52f2-4e4f-8c43-c7dfe49d4b45","path":"sprites/playerBulletLine_spr/playerBulletLine_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"playerBulletLine_spr","path":"sprites/playerBulletLine_spr/playerBulletLine_spr.yy",},"resourceVersion":"1.0","name":"e17f4eec-d1ce-4b15-abee-7cd16e546d45","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"3ddcf2b4-8b58-4798-93ff-5e0160f2b71e","path":"sprites/playerBulletLine_spr/playerBulletLine_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"3ddcf2b4-8b58-4798-93ff-5e0160f2b71e","path":"sprites/playerBulletLine_spr/playerBulletLine_spr.yy",},"LayerId":{"name":"1236d499-304c-4d56-bd22-11de3365cb7d","path":"sprites/playerBulletLine_spr/playerBulletLine_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"playerBulletLine_spr","path":"sprites/playerBulletLine_spr/playerBulletLine_spr.yy",},"resourceVersion":"1.0","name":"3ddcf2b4-8b58-4798-93ff-5e0160f2b71e","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"playerBulletLine_spr","path":"sprites/playerBulletLine_spr/playerBulletLine_spr.yy",},
@@ -41,17 +41,17 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"b4033aea-ddc8-4b84-9b58-32c4261572cc","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"e17f4eec-d1ce-4b15-abee-7cd16e546d45","path":"sprites/playerBulletLine_spr/playerBulletLine_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"f77cbf94-d25a-40d9-b6a1-90adaee42419","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"3ddcf2b4-8b58-4798-93ff-5e0160f2b71e","path":"sprites/playerBulletLine_spr/playerBulletLine_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
-    "visibleRange": {"x":0.0,"y":0.0,},
+    "visibleRange": null,
     "lockOrigin": false,
     "showBackdrop": true,
     "showBackdropImage": false,
     "backdropImagePath": "",
     "backdropImageOpacity": 0.5,
-    "backdropWidth": 1920,
-    "backdropHeight": 1080,
+    "backdropWidth": 1366,
+    "backdropHeight": 768,
     "backdropXOffset": 0.0,
     "backdropYOffset": 0.0,
     "xorigin": 5,
@@ -60,16 +60,16 @@
     "eventStubScript": null,
     "parent": {"name":"playerBulletLine_spr","path":"sprites/playerBulletLine_spr/playerBulletLine_spr.yy",},
     "resourceVersion": "1.3",
-    "name": "",
+    "name": "playerBulletLine_spr",
     "tags": [],
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"ea87a863-52f2-4e4f-8c43-c7dfe49d4b45","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"1236d499-304c-4d56-bd22-11de3365cb7d","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Player",
-    "path": "folders/Player/Player.yy",
+    "name": "CasaDesDiamantes",
+    "path": "CasaDesDiamantes.yyp",
   },
   "resourceVersion": "1.0",
   "name": "playerBulletLine_spr",

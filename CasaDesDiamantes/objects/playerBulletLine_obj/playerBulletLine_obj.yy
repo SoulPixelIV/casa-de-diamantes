@@ -1,8 +1,5 @@
 {
-  "spriteId": {
-    "name": "playerBulletLine_spr",
-    "path": "sprites/playerBulletLine_spr/playerBulletLine_spr.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "spriteMaskId": null,

@@ -24,9 +24,9 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"5a6bc04b-fe79-4821-b19c-b26674fd4354","path":"sprites/playerClimbing_spr/playerClimbing_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"5a6bc04b-fe79-4821-b19c-b26674fd4354","path":"sprites/playerClimbing_spr/playerClimbing_spr.yy",},"LayerId":{"name":"86bc835d-0925-4d9d-aaa8-ca8d28d46083","path":"sprites/playerClimbing_spr/playerClimbing_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"playerClimbing_spr","path":"sprites/playerClimbing_spr/playerClimbing_spr.yy",},"resourceVersion":"1.0","name":"5a6bc04b-fe79-4821-b19c-b26674fd4354","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"33f26e4d-a2e8-4f2d-96cd-0576e8845e3d","path":"sprites/playerClimbing_spr/playerClimbing_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"33f26e4d-a2e8-4f2d-96cd-0576e8845e3d","path":"sprites/playerClimbing_spr/playerClimbing_spr.yy",},"LayerId":{"name":"bb0e7a21-4cd9-487e-82f6-5d62339d47a2","path":"sprites/playerClimbing_spr/playerClimbing_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"playerClimbing_spr","path":"sprites/playerClimbing_spr/playerClimbing_spr.yy",},"resourceVersion":"1.0","name":"33f26e4d-a2e8-4f2d-96cd-0576e8845e3d","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"playerClimbing_spr","path":"sprites/playerClimbing_spr/playerClimbing_spr.yy",},
@@ -41,17 +41,17 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"7f5799e7-e405-478b-97fe-f53a9729d525","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"5a6bc04b-fe79-4821-b19c-b26674fd4354","path":"sprites/playerClimbing_spr/playerClimbing_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"285b4d60-5e96-4137-af90-609e2030a216","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"33f26e4d-a2e8-4f2d-96cd-0576e8845e3d","path":"sprites/playerClimbing_spr/playerClimbing_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
-    "visibleRange": {"x":0.0,"y":0.0,},
+    "visibleRange": null,
     "lockOrigin": false,
     "showBackdrop": true,
     "showBackdropImage": false,
     "backdropImagePath": "",
     "backdropImageOpacity": 0.5,
-    "backdropWidth": 1920,
-    "backdropHeight": 1080,
+    "backdropWidth": 1366,
+    "backdropHeight": 768,
     "backdropXOffset": 0.0,
     "backdropYOffset": 0.0,
     "xorigin": 16,
@@ -60,16 +60,16 @@
     "eventStubScript": null,
     "parent": {"name":"playerClimbing_spr","path":"sprites/playerClimbing_spr/playerClimbing_spr.yy",},
     "resourceVersion": "1.3",
-    "name": "",
+    "name": "playerClimbing_spr",
     "tags": [],
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"86bc835d-0925-4d9d-aaa8-ca8d28d46083","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"bb0e7a21-4cd9-487e-82f6-5d62339d47a2","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Player",
-    "path": "folders/Player/Player.yy",
+    "name": "CasaDesDiamantes",
+    "path": "CasaDesDiamantes.yyp",
   },
   "resourceVersion": "1.0",
   "name": "playerClimbing_spr",

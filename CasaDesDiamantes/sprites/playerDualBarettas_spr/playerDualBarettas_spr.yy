@@ -24,9 +24,9 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"ca2f88a3-624a-4bfa-adfe-0cbc2ece0dc2","path":"sprites/playerDualBarettas_spr/playerDualBarettas_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"ca2f88a3-624a-4bfa-adfe-0cbc2ece0dc2","path":"sprites/playerDualBarettas_spr/playerDualBarettas_spr.yy",},"LayerId":{"name":"675e7d37-cf12-4517-a34a-df2cef7c115a","path":"sprites/playerDualBarettas_spr/playerDualBarettas_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"playerDualBarettas_spr","path":"sprites/playerDualBarettas_spr/playerDualBarettas_spr.yy",},"resourceVersion":"1.0","name":"ca2f88a3-624a-4bfa-adfe-0cbc2ece0dc2","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"a105ce42-741b-4622-b458-f215efd10671","path":"sprites/playerDualBarettas_spr/playerDualBarettas_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"a105ce42-741b-4622-b458-f215efd10671","path":"sprites/playerDualBarettas_spr/playerDualBarettas_spr.yy",},"LayerId":{"name":"68c9e4f4-5040-4da6-9dbc-a2498009be09","path":"sprites/playerDualBarettas_spr/playerDualBarettas_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"playerDualBarettas_spr","path":"sprites/playerDualBarettas_spr/playerDualBarettas_spr.yy",},"resourceVersion":"1.0","name":"a105ce42-741b-4622-b458-f215efd10671","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"playerDualBarettas_spr","path":"sprites/playerDualBarettas_spr/playerDualBarettas_spr.yy",},
@@ -41,17 +41,17 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"d363fbc3-7e39-41de-b2e9-b6546e700dcb","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"ca2f88a3-624a-4bfa-adfe-0cbc2ece0dc2","path":"sprites/playerDualBarettas_spr/playerDualBarettas_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"8d810c4b-92fa-4981-aa0e-2a112b3d4789","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"a105ce42-741b-4622-b458-f215efd10671","path":"sprites/playerDualBarettas_spr/playerDualBarettas_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
-    "visibleRange": {"x":0.0,"y":0.0,},
+    "visibleRange": null,
     "lockOrigin": false,
     "showBackdrop": true,
     "showBackdropImage": false,
     "backdropImagePath": "",
     "backdropImageOpacity": 0.5,
-    "backdropWidth": 1920,
-    "backdropHeight": 1080,
+    "backdropWidth": 1366,
+    "backdropHeight": 768,
     "backdropXOffset": 0.0,
     "backdropYOffset": 0.0,
     "xorigin": 8,
@@ -60,16 +60,16 @@
     "eventStubScript": null,
     "parent": {"name":"playerDualBarettas_spr","path":"sprites/playerDualBarettas_spr/playerDualBarettas_spr.yy",},
     "resourceVersion": "1.3",
-    "name": "",
+    "name": "playerDualBarettas_spr",
     "tags": [],
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"675e7d37-cf12-4517-a34a-df2cef7c115a","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"68c9e4f4-5040-4da6-9dbc-a2498009be09","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Player",
-    "path": "folders/Player/Player.yy",
+    "name": "CasaDesDiamantes",
+    "path": "CasaDesDiamantes.yyp",
   },
   "resourceVersion": "1.0",
   "name": "playerDualBarettas_spr",

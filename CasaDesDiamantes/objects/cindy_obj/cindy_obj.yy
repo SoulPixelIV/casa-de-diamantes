@@ -1,8 +1,5 @@
 {
-  "spriteId": {
-    "name": "cindy_spr",
-    "path": "sprites/cindy_spr/cindy_spr.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "spriteMaskId": null,

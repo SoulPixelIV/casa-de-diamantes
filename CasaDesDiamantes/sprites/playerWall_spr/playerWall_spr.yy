@@ -24,9 +24,9 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"d87b4f3a-c89a-4934-9828-5151029c8c83","path":"sprites/playerWall_spr/playerWall_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"d87b4f3a-c89a-4934-9828-5151029c8c83","path":"sprites/playerWall_spr/playerWall_spr.yy",},"LayerId":{"name":"15ba89cf-9408-4394-a26b-3640a87f7be4","path":"sprites/playerWall_spr/playerWall_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"playerWall_spr","path":"sprites/playerWall_spr/playerWall_spr.yy",},"resourceVersion":"1.0","name":"d87b4f3a-c89a-4934-9828-5151029c8c83","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"5d54ff3c-6cc9-46d4-8f1c-b1fce03200ba","path":"sprites/playerWall_spr/playerWall_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"5d54ff3c-6cc9-46d4-8f1c-b1fce03200ba","path":"sprites/playerWall_spr/playerWall_spr.yy",},"LayerId":{"name":"17d05c17-d24c-43bc-a82a-7b820273eb72","path":"sprites/playerWall_spr/playerWall_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"playerWall_spr","path":"sprites/playerWall_spr/playerWall_spr.yy",},"resourceVersion":"1.0","name":"5d54ff3c-6cc9-46d4-8f1c-b1fce03200ba","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"playerWall_spr","path":"sprites/playerWall_spr/playerWall_spr.yy",},
@@ -41,17 +41,17 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"8cfb3a37-1cc9-44fa-9cca-92b1bd47d352","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d87b4f3a-c89a-4934-9828-5151029c8c83","path":"sprites/playerWall_spr/playerWall_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"84b45a07-a858-4be5-99cb-2a4811b1a5a2","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"5d54ff3c-6cc9-46d4-8f1c-b1fce03200ba","path":"sprites/playerWall_spr/playerWall_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
-    "visibleRange": {"x":0.0,"y":0.0,},
+    "visibleRange": null,
     "lockOrigin": false,
     "showBackdrop": true,
     "showBackdropImage": false,
     "backdropImagePath": "",
     "backdropImageOpacity": 0.5,
-    "backdropWidth": 1920,
-    "backdropHeight": 1080,
+    "backdropWidth": 1366,
+    "backdropHeight": 768,
     "backdropXOffset": 0.0,
     "backdropYOffset": 0.0,
     "xorigin": 16,
@@ -60,16 +60,16 @@
     "eventStubScript": null,
     "parent": {"name":"playerWall_spr","path":"sprites/playerWall_spr/playerWall_spr.yy",},
     "resourceVersion": "1.3",
-    "name": "",
+    "name": "playerWall_spr",
     "tags": [],
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"15ba89cf-9408-4394-a26b-3640a87f7be4","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"17d05c17-d24c-43bc-a82a-7b820273eb72","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Player",
-    "path": "folders/Player/Player.yy",
+    "name": "CasaDesDiamantes",
+    "path": "CasaDesDiamantes.yyp",
   },
   "resourceVersion": "1.0",
   "name": "playerWall_spr",

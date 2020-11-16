@@ -24,9 +24,9 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"add4e279-9c1a-4ece-bfc9-4778ed8cc56b","path":"sprites/playerDeath_spr/playerDeath_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"add4e279-9c1a-4ece-bfc9-4778ed8cc56b","path":"sprites/playerDeath_spr/playerDeath_spr.yy",},"LayerId":{"name":"e05d4e4e-0d0a-43af-a116-c523ce21599f","path":"sprites/playerDeath_spr/playerDeath_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"playerDeath_spr","path":"sprites/playerDeath_spr/playerDeath_spr.yy",},"resourceVersion":"1.0","name":"add4e279-9c1a-4ece-bfc9-4778ed8cc56b","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"63e5094e-0e00-4eb5-aa4b-d38849181d40","path":"sprites/playerDeath_spr/playerDeath_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"63e5094e-0e00-4eb5-aa4b-d38849181d40","path":"sprites/playerDeath_spr/playerDeath_spr.yy",},"LayerId":{"name":"bb4760d6-495d-4778-ace0-12e7ede168ae","path":"sprites/playerDeath_spr/playerDeath_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"playerDeath_spr","path":"sprites/playerDeath_spr/playerDeath_spr.yy",},"resourceVersion":"1.0","name":"63e5094e-0e00-4eb5-aa4b-d38849181d40","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"playerDeath_spr","path":"sprites/playerDeath_spr/playerDeath_spr.yy",},
@@ -41,17 +41,17 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"8e22c37f-8f47-47b1-b238-5ab8f7563d3f","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"add4e279-9c1a-4ece-bfc9-4778ed8cc56b","path":"sprites/playerDeath_spr/playerDeath_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"d1ea1ff6-a84a-46da-a2df-e13f0437e870","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"63e5094e-0e00-4eb5-aa4b-d38849181d40","path":"sprites/playerDeath_spr/playerDeath_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
-    "visibleRange": {"x":0.0,"y":0.0,},
+    "visibleRange": null,
     "lockOrigin": false,
     "showBackdrop": true,
     "showBackdropImage": false,
     "backdropImagePath": "",
     "backdropImageOpacity": 0.5,
-    "backdropWidth": 1920,
-    "backdropHeight": 1080,
+    "backdropWidth": 1366,
+    "backdropHeight": 768,
     "backdropXOffset": 0.0,
     "backdropYOffset": 0.0,
     "xorigin": 36,
@@ -60,16 +60,16 @@
     "eventStubScript": null,
     "parent": {"name":"playerDeath_spr","path":"sprites/playerDeath_spr/playerDeath_spr.yy",},
     "resourceVersion": "1.3",
-    "name": "",
+    "name": "playerDeath_spr",
     "tags": [],
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"e05d4e4e-0d0a-43af-a116-c523ce21599f","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"bb4760d6-495d-4778-ace0-12e7ede168ae","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Player",
-    "path": "folders/Player/Player.yy",
+    "name": "CasaDesDiamantes",
+    "path": "CasaDesDiamantes.yyp",
   },
   "resourceVersion": "1.0",
   "name": "playerDeath_spr",

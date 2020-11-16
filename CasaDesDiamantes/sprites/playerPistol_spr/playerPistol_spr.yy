@@ -24,9 +24,9 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"0d1fc5ff-a73c-48a8-b11e-0499c023acc0","path":"sprites/playerPistol_spr/playerPistol_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"0d1fc5ff-a73c-48a8-b11e-0499c023acc0","path":"sprites/playerPistol_spr/playerPistol_spr.yy",},"LayerId":{"name":"6f0dce4c-c704-4058-bdb3-ce2b87d498bd","path":"sprites/playerPistol_spr/playerPistol_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"playerPistol_spr","path":"sprites/playerPistol_spr/playerPistol_spr.yy",},"resourceVersion":"1.0","name":"0d1fc5ff-a73c-48a8-b11e-0499c023acc0","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"24be42e0-ba83-4060-945a-2542b66c05db","path":"sprites/playerPistol_spr/playerPistol_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"24be42e0-ba83-4060-945a-2542b66c05db","path":"sprites/playerPistol_spr/playerPistol_spr.yy",},"LayerId":{"name":"8497c747-8862-4618-a804-34520a8bb066","path":"sprites/playerPistol_spr/playerPistol_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"playerPistol_spr","path":"sprites/playerPistol_spr/playerPistol_spr.yy",},"resourceVersion":"1.0","name":"24be42e0-ba83-4060-945a-2542b66c05db","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"playerPistol_spr","path":"sprites/playerPistol_spr/playerPistol_spr.yy",},
@@ -41,17 +41,17 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"82b1f9fd-c4e3-4bd9-8c0b-5440b207bf72","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"0d1fc5ff-a73c-48a8-b11e-0499c023acc0","path":"sprites/playerPistol_spr/playerPistol_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"e242de88-e226-4246-9d7a-3956f97bd67c","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"24be42e0-ba83-4060-945a-2542b66c05db","path":"sprites/playerPistol_spr/playerPistol_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
-    "visibleRange": {"x":0.0,"y":0.0,},
+    "visibleRange": null,
     "lockOrigin": false,
     "showBackdrop": true,
     "showBackdropImage": false,
     "backdropImagePath": "",
     "backdropImageOpacity": 0.5,
-    "backdropWidth": 1920,
-    "backdropHeight": 1080,
+    "backdropWidth": 1366,
+    "backdropHeight": 768,
     "backdropXOffset": 0.0,
     "backdropYOffset": 0.0,
     "xorigin": 5,
@@ -60,16 +60,16 @@
     "eventStubScript": null,
     "parent": {"name":"playerPistol_spr","path":"sprites/playerPistol_spr/playerPistol_spr.yy",},
     "resourceVersion": "1.3",
-    "name": "",
+    "name": "playerPistol_spr",
     "tags": [],
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"6f0dce4c-c704-4058-bdb3-ce2b87d498bd","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"8497c747-8862-4618-a804-34520a8bb066","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Player",
-    "path": "folders/Player/Player.yy",
+    "name": "CasaDesDiamantes",
+    "path": "CasaDesDiamantes.yyp",
   },
   "resourceVersion": "1.0",
   "name": "playerPistol_spr",
