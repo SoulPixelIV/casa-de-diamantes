@@ -76,8 +76,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"8fcb7146-c1b5-4044-add7-b264646cf8f7","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "CasaDesDiamantes",
-    "path": "CasaDesDiamantes.yyp",
+    "name": "Steph Sprites",
+    "path": "folders/Steph/Steph Sprites.yy",
   },
   "resourceVersion": "1.0",
   "name": "playerFalling_spr",

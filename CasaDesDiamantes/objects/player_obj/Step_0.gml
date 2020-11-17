@@ -43,7 +43,7 @@ if (movement && !wallJumping && !isDashing)
 			{
 				if (horspeed < movSpeed)
 				{
-					horspeed = movSpeed;
+					horspeed += 0.4;
 				}
 			} 
 			else
@@ -62,7 +62,7 @@ if (movement && !wallJumping && !isDashing)
 			{
 				if (horspeed > -movSpeed)
 				{
-					horspeed = -movSpeed;
+					horspeed -= 0.4;
 				}
 			}
 			else
@@ -77,6 +77,26 @@ if (movement && !wallJumping && !isDashing)
 	}
 }
 
+//Moving Platform
+if (onMovingPlatform)
+{
+	if (horspeed < instance_nearest(x, y, sidewaysPlatform_obj).horspeed + 0.05 && horspeed > instance_nearest(x, y, sidewaysPlatform_obj).horspeed - 0.05)
+	{
+		horspeed = instance_nearest(x, y, sidewaysPlatform_obj).horspeed;
+	}
+	else
+	{
+		if (horspeed < instance_nearest(x, y, sidewaysPlatform_obj).horspeed)
+		{
+			horspeed += 0.02;
+		}
+		else
+		{
+			horspeed -= 0.02;
+		}
+	}
+}
+
 //Friction
 if (!huggingWall)
 {
@@ -86,13 +106,16 @@ else
 {
 	frictionActive = false;
 }
-if (frictionActive)
+if (!onMovingPlatform)
 {
-	frictionActive_scr(id, true);
-}
-else
-{
-	frictionActive_scr(id, false);
+	if (frictionActive)
+	{
+		frictionActive_scr(id, true);
+	}
+	else
+	{
+		frictionActive_scr(id, false);
+	}
 }
 
 //Gravity
@@ -188,31 +211,31 @@ if (movement && !isZombie)
 		if (wallJumps > 0)
 		{
 			wallJumping = true;
-			verspeed = -jumpStrength / 1.12;
+			verspeed = -jumpStrength / 1.05;
 		
 			if (image_xscale == 1 && key_right)
 			{
-				horspeed += jumpStrength / 1.15;
+				horspeed += jumpStrength / 2.3;
 			}
 			else if (image_xscale == 1 && key_left)
 			{
-				horspeed += jumpStrength / 1.7;
+				horspeed += jumpStrength / 3;
 			}
 			else if (image_xscale == -1 && key_left)
 			{
-				horspeed -= jumpStrength / 1.15;
+				horspeed -= jumpStrength / 2.3;
 			}
 			else if (image_xscale == -1 && key_right)
 			{
-				horspeed -= jumpStrength / 1.7;
+				horspeed -= jumpStrength / 3;
 			}
 			else if (image_xscale == 1 && !key_right && !key_left)
 			{
-				horspeed += jumpStrength / 1.7;
+				horspeed += jumpStrength / 3;
 			}
 			else if (image_xscale == -1 && !key_right && !key_left)
 			{
-				horspeed -= jumpStrength / 1.7;
+				horspeed -= jumpStrength / 3;
 			}
 			wallJumps--;
 			wallJumpingInAir = true;
@@ -347,6 +370,7 @@ if (colliding)
 	{
 		fallJumpSafety -= global.dt;
 		grounded = false;
+		onMovingPlatform = false;
 		createdParticles = false;
 	}
 	
@@ -780,6 +804,9 @@ switch (sprite_index)
 		break;
 	case playerFalling_spr:
 		animationSpeed = 0.75;
+		break;
+	case playerClimbing_spr:
+		animationSpeed = 0.25;
 		break;
 }
 

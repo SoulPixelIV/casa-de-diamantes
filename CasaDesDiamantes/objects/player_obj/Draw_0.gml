@@ -27,7 +27,7 @@ else
 	changePos = 1;
 }
 
-if (spin && sprite_index != playerWall_spr && !flip)
+if (spin && sprite_index != playerWall_spr && !flip && !onLadder)
 {
 	animated = -1;
 	pistolSprite = playerPistolJumpSpin_spr;

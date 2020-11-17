@@ -10,7 +10,7 @@ level = 1;
 moneyDropMin = 1;
 moneyDropMax = 4;
 damage = 35;
-knockback = 2.1;
+knockback = 0.2;
 playerSightMax = 128;
 playerSightMin = 8;
 

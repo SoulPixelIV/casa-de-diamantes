@@ -10,7 +10,7 @@ hpBucket = 40;
 damage = 40;
 moneyDropMin = 5;
 moneyDropMax = 13;
-knockback = 2.4;
+knockback = 0.25;
 playerSightMax = 196;
 playerSightMin = 0;
 

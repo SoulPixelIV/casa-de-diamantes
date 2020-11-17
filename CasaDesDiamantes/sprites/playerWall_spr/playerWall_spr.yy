@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"17d05c17-d24c-43bc-a82a-7b820273eb72","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "CasaDesDiamantes",
-    "path": "CasaDesDiamantes.yyp",
+    "name": "Steph Sprites",
+    "path": "folders/Steph/Steph Sprites.yy",
   },
   "resourceVersion": "1.0",
   "name": "playerWall_spr",

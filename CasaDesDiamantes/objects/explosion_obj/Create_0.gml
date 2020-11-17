@@ -1,5 +1,5 @@
 damage = 60;
-knockback = 4;
+knockback = 3;
 dealtDamage = false;
 animationSpeed = 1;
 lifeLength = 70;

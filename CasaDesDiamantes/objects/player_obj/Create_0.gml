@@ -4,7 +4,7 @@
 horspeed = 0;
 verspeed = 0;
 horspeedMax = 2.4;
-verspeedMax = 7;
+verspeedMax = 2.4;
 movSpeed = 0.82;
 movSpeedSave = movSpeed;
 movSpeedZombie = 0.54;
@@ -29,6 +29,7 @@ frictionStrength = 0.02; //Lower is more slippery
 shotJumpStrength = 4;
 fallJumpSafety = 25;
 flipUsed = false;
+onMovingPlatform = false;
 
 //Action
 hp = 100;

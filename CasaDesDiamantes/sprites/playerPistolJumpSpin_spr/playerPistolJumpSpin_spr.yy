@@ -80,8 +80,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"7bd1981a-897a-4d0d-b4a5-acdda6be42b9","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "CasaDesDiamantes",
-    "path": "CasaDesDiamantes.yyp",
+    "name": "Steph Sprites",
+    "path": "folders/Steph/Steph Sprites.yy",
   },
   "resourceVersion": "1.0",
   "name": "playerPistolJumpSpin_spr",

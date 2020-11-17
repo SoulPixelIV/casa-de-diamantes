@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"68c9e4f4-5040-4da6-9dbc-a2498009be09","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "CasaDesDiamantes",
-    "path": "CasaDesDiamantes.yyp",
+    "name": "Steph Sprites",
+    "path": "folders/Steph/Steph Sprites.yy",
   },
   "resourceVersion": "1.0",
   "name": "playerDualBarettas_spr",

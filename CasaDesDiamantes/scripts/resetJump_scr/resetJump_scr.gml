@@ -21,7 +21,8 @@ function resetJump_scr() {
 		audio_play_sound(land_snd, 1, false);
 		landSoundPlayed = true;
 	}
-
-
-
+	if (distance_to_object(sidewaysPlatform_obj) < 2)
+	{
+		player_obj.onMovingPlatform = true;
+	}
 }

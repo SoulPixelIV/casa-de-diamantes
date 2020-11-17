@@ -182,7 +182,7 @@ with (headshotHitbox)
 //Cooldown
 if (!attackInProg && !attackInProg2)
 {
-	if (distance_to_object(player_obj) < 64)
+	if (distance_to_object(player_obj) < 32)
 	{
 		attackCooldown -= global.dt * 2;
 	}
@@ -195,7 +195,7 @@ if (!attackInProg && !attackInProg2)
 //Prepare Attack
 if (attackCooldown < 0 && verspeed == 0)
 {
-	if (distance_to_object(player_obj) < 64)
+	if (distance_to_object(player_obj) < 32)
 	{
 		sprite_index = zombieGirlAttack2_spr;
 		movement = false;

@@ -27,21 +27,25 @@
     {"compositeImage":{"FrameId":{"name":"33f26e4d-a2e8-4f2d-96cd-0576e8845e3d","path":"sprites/playerClimbing_spr/playerClimbing_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"33f26e4d-a2e8-4f2d-96cd-0576e8845e3d","path":"sprites/playerClimbing_spr/playerClimbing_spr.yy",},"LayerId":{"name":"bb0e7a21-4cd9-487e-82f6-5d62339d47a2","path":"sprites/playerClimbing_spr/playerClimbing_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"playerClimbing_spr","path":"sprites/playerClimbing_spr/playerClimbing_spr.yy",},"resourceVersion":"1.0","name":"33f26e4d-a2e8-4f2d-96cd-0576e8845e3d","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"377ec3d6-66e5-4be3-9272-86e19e6eaefb","path":"sprites/playerClimbing_spr/playerClimbing_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"377ec3d6-66e5-4be3-9272-86e19e6eaefb","path":"sprites/playerClimbing_spr/playerClimbing_spr.yy",},"LayerId":{"name":"bb0e7a21-4cd9-487e-82f6-5d62339d47a2","path":"sprites/playerClimbing_spr/playerClimbing_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"playerClimbing_spr","path":"sprites/playerClimbing_spr/playerClimbing_spr.yy",},"resourceVersion":"1.0","name":"377ec3d6-66e5-4be3-9272-86e19e6eaefb","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"playerClimbing_spr","path":"sprites/playerClimbing_spr/playerClimbing_spr.yy",},
     "timeUnits": 1,
     "playback": 1,
-    "playbackSpeed": 1.0,
+    "playbackSpeed": 3.0,
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,
-    "length": 1.0,
+    "length": 2.0,
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"285b4d60-5e96-4137-af90-609e2030a216","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"33f26e4d-a2e8-4f2d-96cd-0576e8845e3d","path":"sprites/playerClimbing_spr/playerClimbing_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"55155209-2e8c-49ef-bcb3-599d6b7f0a0a","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"377ec3d6-66e5-4be3-9272-86e19e6eaefb","path":"sprites/playerClimbing_spr/playerClimbing_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -68,8 +72,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"bb0e7a21-4cd9-487e-82f6-5d62339d47a2","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "CasaDesDiamantes",
-    "path": "CasaDesDiamantes.yyp",
+    "name": "Steph Sprites",
+    "path": "folders/Steph/Steph Sprites.yy",
   },
   "resourceVersion": "1.0",
   "name": "playerClimbing_spr",

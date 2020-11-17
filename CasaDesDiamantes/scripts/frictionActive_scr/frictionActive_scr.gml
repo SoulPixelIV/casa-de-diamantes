@@ -8,7 +8,10 @@ function frictionActive_scr(instance, frictionActive) {
 		{
 			if (!instance.isDashing)
 			{
-				instance.horspeed -= currFriction;
+				if (grounded)
+				{
+					instance.horspeed -= currFriction;
+				}
 				if (instance.key_right || instance.key_left)
 				{
 					if (!instance.jumping)
@@ -33,7 +36,10 @@ function frictionActive_scr(instance, frictionActive) {
 		{
 			if (!instance.isDashing)
 			{
-				instance.horspeed += currFriction;
+				if (grounded)
+				{
+					instance.horspeed += currFriction;
+				}
 				if (instance.key_right || instance.key_left)
 				{
 					if (!instance.jumping)
@@ -61,7 +67,10 @@ function frictionActive_scr(instance, frictionActive) {
 		{
 			if (!instance.isDashing)
 			{
-				instance.horspeed -= global.dt;
+				if (grounded)
+				{
+					instance.horspeed -= global.dt;
+				}
 			}
 			else
 			{
@@ -76,7 +85,10 @@ function frictionActive_scr(instance, frictionActive) {
 		{
 			if (!instance.isDashing)
 			{
-				instance.horspeed += global.dt;
+				if (grounded)
+				{
+					instance.horspeed += global.dt;
+				}
 			}
 			else
 			{

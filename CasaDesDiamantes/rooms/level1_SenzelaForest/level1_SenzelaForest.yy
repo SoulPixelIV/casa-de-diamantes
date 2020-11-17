@@ -664,6 +664,7 @@
           ],"isDnd":false,"objectId":{"name":"explosiveMerchant_obj","path":"objects/explosiveMerchant_obj/explosiveMerchant_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":550.0,"y":1247.0,"resourceVersion":"1.0","name":"inst_67079840","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"spikes_obj","path":"objects/spikes_obj/spikes_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1312.0,"y":1455.0,"resourceVersion":"1.0","name":"inst_323D7709","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"spikes_obj","path":"objects/spikes_obj/spikes_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":2048.0,"y":1136.0,"resourceVersion":"1.0","name":"inst_3411EA99","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"sidewaysPlatform_obj","path":"objects/sidewaysPlatform_obj/sidewaysPlatform_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":3.0,"scaleY":0.625,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1984.0,"y":1606.0,"resourceVersion":"1.0","name":"inst_335C7034","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":500,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Instances","tags":[],"resourceType":"GMRInstanceLayer",},
     {"tilesetId":{"name":"caveTilesOld","path":"tilesets/caveTilesOld/caveTilesOld.yy",},"x":0,"y":0,"tiles":{"SerialiseWidth":110,"SerialiseHeight":94,"TileSerialiseData":[
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -2123,6 +2124,7 @@
     {"name":"inst_68BC0B26","path":"rooms/level1_SenzelaForest/level1_SenzelaForest.yy",},
     {"name":"inst_3411EA99","path":"rooms/level1_SenzelaForest/level1_SenzelaForest.yy",},
     {"name":"inst_5926EA6B","path":"rooms/level1_SenzelaForest/level1_SenzelaForest.yy",},
+    {"name":"inst_335C7034","path":"rooms/level1_SenzelaForest/level1_SenzelaForest.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
