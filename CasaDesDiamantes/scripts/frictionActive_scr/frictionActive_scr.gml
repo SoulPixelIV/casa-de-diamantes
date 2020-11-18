@@ -1,6 +1,6 @@
 function frictionActive_scr(instance, frictionActive) {
 	var currFriction = instance.frictionStrength;
-	var currFrictionDashing = (instance.frictionStrength / 2.25);
+	var currFrictionDashing = (instance.frictionStrength / 3);
 	
 	if (frictionActive)
 	{
@@ -8,7 +8,7 @@ function frictionActive_scr(instance, frictionActive) {
 		{
 			if (!instance.isDashing)
 			{
-				if (grounded)
+				if (grounded && instance.horspeed != instance.movSpeed)
 				{
 					instance.horspeed -= currFriction;
 				}
@@ -26,7 +26,7 @@ function frictionActive_scr(instance, frictionActive) {
 		{
 			if (!instance.isDashing)
 			{
-				if (grounded)
+				if (grounded && instance.horspeed != -instance.movSpeed)
 				{
 					instance.horspeed += currFriction;
 				}

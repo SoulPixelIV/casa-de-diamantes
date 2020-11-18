@@ -4,6 +4,8 @@ y += verspeed * global.dt;
 
 key_left = keyboard_check(ord("A")); //CONTROLLER AXIS L;
 key_right = keyboard_check(ord("D")); // CONTROLLER AXIS R;
+key_left_release = keyboard_check_released(ord("A"));
+key_right_release = keyboard_check_released(ord("D"));
 key_up = keyboard_check(ord("W"));
 key_down = keyboard_check(ord("S"))
 key_shoot = mouse_check_button_pressed(mb_left) || gamepad_button_check_pressed(0, gp_shoulderrb);
@@ -43,6 +45,10 @@ if (movement && !wallJumping && !isDashing)
 			{
 				horspeed += 0.2;
 			}
+			if (horspeed > movSpeed - 0.2 && horspeed < movSpeed + 0.2)
+			{
+				horspeed = movSpeed
+			}
 			if (!audio_is_playing(walk1_snd) && !audio_is_playing(walk2_snd) && grounded)
 			{
 				var walksnd = audio_play_sound(choose(walk1_snd, walk2_snd), 1, false);
@@ -51,6 +57,10 @@ if (movement && !wallJumping && !isDashing)
 		}
 		if (key_left)
 		{
+			if (horspeed < -movSpeed + 0.2 && horspeed > -movSpeed - 0.2)
+			{
+				horspeed = -movSpeed
+			}
 			if (horspeed > -movSpeed)
 			{
 				horspeed -= 0.2;
@@ -59,6 +69,20 @@ if (movement && !wallJumping && !isDashing)
 			if (!audio_is_playing(walk1_snd) && !audio_is_playing(walk2_snd) && grounded)
 			{
 				audio_play_sound(walk1_snd, 1, false);
+			}
+		}
+		if (!key_right && grounded)
+		{
+			if (horspeed = movSpeed)
+			{
+				horspeed -= 0.05;
+			}
+		}
+		if (!key_left && grounded)
+		{
+			if (horspeed = -movSpeed)
+			{
+				horspeed += 0.05;
 			}
 		}
 	}
