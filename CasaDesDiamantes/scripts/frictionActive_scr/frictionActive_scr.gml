@@ -1,6 +1,6 @@
 function frictionActive_scr(instance, frictionActive) {
-	var currFriction = instance.frictionStrength * global.dt;
-	var currFrictionDashing = (instance.frictionStrength / 3) * global.dt;
+	var currFriction = instance.frictionStrength;
+	var currFrictionDashing = (instance.frictionStrength / 2.25);
 	
 	if (frictionActive)
 	{
@@ -12,22 +12,12 @@ function frictionActive_scr(instance, frictionActive) {
 				{
 					instance.horspeed -= currFriction;
 				}
-				if (instance.key_right || instance.key_left)
-				{
-					if (!instance.jumping)
-					{
-						if (instance.horspeed > instance.movSpeed - 0.15)
-						{
-							instance.horspeed = instance.movSpeed;
-						}
-					}
-				}
 			}
 			else
 			{
 				instance.horspeed -= currFrictionDashing;
 			}
-			if (instance.horspeed < 0.3)
+			if (instance.horspeed < 0.02)
 			{
 				instance.horspeed = 0;
 			}
@@ -40,22 +30,12 @@ function frictionActive_scr(instance, frictionActive) {
 				{
 					instance.horspeed += currFriction;
 				}
-				if (instance.key_right || instance.key_left)
-				{
-					if (!instance.jumping)
-					{
-						if (instance.horspeed < -instance.movSpeed + 0.15)
-						{
-							instance.horspeed = -instance.movSpeed;
-						}
-					}
-				}
 			}
 			else
 			{
 				instance.horspeed += currFrictionDashing;
 			}
-			if (instance.horspeed > -0.3)
+			if (instance.horspeed > -0.02)
 			{
 				instance.horspeed = 0;
 			}
@@ -76,7 +56,7 @@ function frictionActive_scr(instance, frictionActive) {
 			{
 				instance.horspeed -= global.dt / 3;
 			}
-			if (instance.horspeed < 0.3)
+			if (instance.horspeed < 0.02)
 			{
 				instance.horspeed = 0;
 			}
@@ -94,7 +74,7 @@ function frictionActive_scr(instance, frictionActive) {
 			{
 				instance.horspeed += global.dt / 3;
 			}
-			if (instance.horspeed > -0.3)
+			if (instance.horspeed > -0.02)
 			{
 				instance.horspeed = 0;
 			}

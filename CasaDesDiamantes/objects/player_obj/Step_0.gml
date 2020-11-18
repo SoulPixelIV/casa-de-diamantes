@@ -37,18 +37,11 @@ if (movement && !wallJumping && !isDashing)
 {
 	if (!huggingWall)
 	{
-		if (key_right && !key_left)
+		if (key_right)
 		{
-			if (!isZombie)
+			if (horspeed < movSpeed)
 			{
-				if (horspeed < movSpeed)
-				{
-					horspeed += 0.4;
-				}
-			} 
-			else
-			{
-				horspeed = movSpeedZombie;
+				horspeed += 0.2;
 			}
 			if (!audio_is_playing(walk1_snd) && !audio_is_playing(walk2_snd) && grounded)
 			{
@@ -56,19 +49,13 @@ if (movement && !wallJumping && !isDashing)
 				audio_sound_pitch(walksnd, random_range(0.9, 1.1));
 			}
 		}
-		if (key_left && !key_right)
+		if (key_left)
 		{
-			if (!isZombie)
+			if (horspeed > -movSpeed)
 			{
-				if (horspeed > -movSpeed)
-				{
-					horspeed -= 0.4;
-				}
+				horspeed -= 0.2;
 			}
-			else
-			{
-				horspeed = -movSpeedZombie;
-			}
+
 			if (!audio_is_playing(walk1_snd) && !audio_is_playing(walk2_snd) && grounded)
 			{
 				audio_play_sound(walk1_snd, 1, false);

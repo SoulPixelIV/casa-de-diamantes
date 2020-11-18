@@ -24,11 +24,11 @@ function jump_scr() {
 		player_obj.stoppedDashing = true;
 		if (player_obj.image_xscale == 1)
 		{
-			player_obj.horspeed += 0.3;
+			player_obj.horspeed -= 0.4;
 		}
 		if (player_obj.image_xscale == -1)
 		{
-			player_obj.horspeed -= 0.3;
+			player_obj.horspeed += 0.4;
 		}
 	}
 	player_obj.jumping = true;
