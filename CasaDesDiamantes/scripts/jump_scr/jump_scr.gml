@@ -22,13 +22,28 @@ function jump_scr() {
 	if (player_obj.isDashing)
 	{
 		player_obj.stoppedDashing = true;
-		if (player_obj.image_xscale == 1)
+		if (player_obj.horspeed == 0)
 		{
-			player_obj.horspeed -= 0.4;
+			if (player_obj.image_xscale == 1)
+			{
+				player_obj.horspeed += 0.2;
+			}
+			else
+			{
+				player_obj.horspeed -= 0.2;
+			}
+				
 		}
-		if (player_obj.image_xscale == -1)
+		else
 		{
-			player_obj.horspeed += 0.4;
+			if (player_obj.horspeed > 0)
+			{
+				player_obj.horspeed += 0.2;
+			}
+			if (player_obj.horspeed < 0)
+			{
+				player_obj.horspeed -= 0.2;
+			}
 		}
 	}
 	player_obj.jumping = true;
