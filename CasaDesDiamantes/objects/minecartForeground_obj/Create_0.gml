@@ -3,5 +3,5 @@ horspeed = 0;
 verspeed = 0;
 savePosX = x;
 savePosY = y;
-gravityStrength = -0.012;
-movSpeed = 0.005;
+gravityStrength = -0.016;
+movSpeed = 0.012;

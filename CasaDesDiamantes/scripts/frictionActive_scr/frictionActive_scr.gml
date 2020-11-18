@@ -8,7 +8,7 @@ function frictionActive_scr(instance, frictionActive) {
 		{
 			if (!instance.isDashing)
 			{
-				if (grounded && instance.horspeed != instance.movSpeed)
+				if ((grounded && instance.horspeed != instance.movSpeed) || instance.onLadder)
 				{
 					instance.horspeed -= currFriction;
 				}
@@ -26,7 +26,7 @@ function frictionActive_scr(instance, frictionActive) {
 		{
 			if (!instance.isDashing)
 			{
-				if (grounded && instance.horspeed != -instance.movSpeed)
+				if (grounded && instance.horspeed != -instance.movSpeed || instance.onLadder)
 				{
 					instance.horspeed += currFriction;
 				}

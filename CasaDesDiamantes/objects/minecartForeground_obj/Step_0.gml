@@ -62,13 +62,13 @@ else
 }
 
 //Max Speed
-if (horspeed > 1.3)
+if (horspeed > 2.3)
 {
-	horspeed = 1.3;
+	horspeed = 2.3;
 }
-if (horspeed < -1.3)
+if (horspeed < -2.3)
 {
-	horspeed = -1.3;
+	horspeed = -2.3;
 }
 
 //Gravity

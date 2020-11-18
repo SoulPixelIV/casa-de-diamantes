@@ -289,17 +289,14 @@ if (wallJumpTimer < 0)
 //Flip
 with (gameManager_obj)
 {
-	if (global.currentWeapon != pickedWeapon.unarmed)
+	with (player_obj)
 	{
-		with (player_obj)
+		if (key_jump && !huggingWall && !wallJumping && !grounded && !isDashing && !flipUsed && jumpType == 1 && fallJumpSafety < 0 && wallJumps > 0 && movement)
 		{
-			if (key_jump && !huggingWall && !wallJumping && !grounded && !isDashing && !flipUsed && jumpType == 1 && fallJumpSafety < 0 && wallJumps > 0 && movement)
-			{
-				sprite_index = playerFlip_spr;
-				flip = true;
-				flipUsed = true;
-				jump_scr();
-			}
+			sprite_index = playerFlip_spr;
+			flip = true;
+			flipUsed = true;
+			jump_scr();
 		}
 	}
 }
