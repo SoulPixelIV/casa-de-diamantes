@@ -13,7 +13,7 @@ movSpeed = 0.033;
 moneyDropMin = 7;
 moneyDropMax = 15;
 damage = 0;
-knockback = 2.1;
+knockback = 0;
 playerSightMax = 128;
 playerSightMin = 8;
 

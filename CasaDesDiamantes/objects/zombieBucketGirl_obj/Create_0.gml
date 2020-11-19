@@ -7,10 +7,10 @@ attackDelay = 50;
 hp = 130;
 level = 2;
 hpBucket = 40;
-damage = 40;
+damage = 0;
 moneyDropMin = 5;
 moneyDropMax = 13;
-knockback = 0.25;
+knockback = 0;
 playerSightMax = 196;
 playerSightMin = 0;
 

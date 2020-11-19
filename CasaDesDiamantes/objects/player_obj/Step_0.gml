@@ -393,17 +393,6 @@ if (colliding)
 		createdParticles = false;
 	}
 	
-	if (place_meeting(x, y + (verspeed * global.dt), enemy_obj))
-	{
-		if (sign(verspeed) != 0)
-		{
-			while (place_meeting(x, y + sign(verspeed) / 100, enemy_obj))
-			{
-				y -= sign(horspeed) / 100;
-			}
-		}
-	}
-	
 	//###OutsideSolid###
 	if (place_free(x, y))
 	{

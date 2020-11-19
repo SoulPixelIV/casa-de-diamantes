@@ -4,7 +4,7 @@ verspeed = 0;
 gravityStrength = -0.05;
 
 hp = 35;
-knockback = 1.6;
+knockback = 0;
 movSpeed = 0.85;
 movSpeedGrad = 0;
 moneyDropMin = 1;
