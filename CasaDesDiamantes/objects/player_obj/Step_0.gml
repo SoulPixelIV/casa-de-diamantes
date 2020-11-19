@@ -356,6 +356,17 @@ if (colliding)
 			}
 		}
 	}
+	
+	if (place_meeting(x + (horspeed * global.dt), y, enemy_obj))
+	{
+		if (sign(horspeed) != 0)
+		{
+			while (place_meeting(x + sign(horspeed) / 100, y, enemy_obj))
+			{
+				x -= sign(horspeed) / 100;
+			}
+		}
+	}
 	if ((place_free(x + 1, y) && place_free(x - 1, y)) || grounded)
 	{
 		huggingWall = false;
@@ -380,6 +391,17 @@ if (colliding)
 		grounded = false;
 		onMovingPlatform = false;
 		createdParticles = false;
+	}
+	
+	if (place_meeting(x, y + (verspeed * global.dt), enemy_obj))
+	{
+		if (sign(verspeed) != 0)
+		{
+			while (place_meeting(x, y + sign(verspeed) / 100, enemy_obj))
+			{
+				y -= sign(horspeed) / 100;
+			}
+		}
 	}
 	
 	//###OutsideSolid###
