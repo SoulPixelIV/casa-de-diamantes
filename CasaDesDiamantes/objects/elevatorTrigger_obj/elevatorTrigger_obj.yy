@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "goldenElevatorDirtyBackground_spr",
-    "path": "sprites/goldenElevatorDirtyBackground_spr/goldenElevatorDirtyBackground_spr.yy",
+    "name": "debugBlock32x_spr",
+    "path": "sprites/debugBlock32x_spr/debugBlock32x_spr.yy",
   },
   "solid": false,
   "visible": true,
@@ -20,7 +20,10 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [],
+  "eventList": [
+    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"parent":{"name":"elevatorTrigger_obj","path":"objects/elevatorTrigger_obj/elevatorTrigger_obj.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"elevatorTrigger_obj","path":"objects/elevatorTrigger_obj/elevatorTrigger_obj.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+  ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
@@ -28,7 +31,7 @@
     "path": "folders/Objects/Elevator.yy",
   },
   "resourceVersion": "1.0",
-  "name": "goldenElevatorDiryBackground_obj",
+  "name": "elevatorTrigger_obj",
   "tags": [],
   "resourceType": "GMObject",
 }

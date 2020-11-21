@@ -22,12 +22,13 @@
   "physicsShapePoints": [],
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"goldenElevatorDirtyForeground_obj","path":"objects/goldenElevatorDirtyForeground_obj/goldenElevatorDirtyForeground_obj.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"parent":{"name":"goldenElevatorDirtyForeground_obj","path":"objects/goldenElevatorDirtyForeground_obj/goldenElevatorDirtyForeground_obj.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Elevator",
+    "path": "folders/Objects/Elevator.yy",
   },
   "resourceVersion": "1.0",
   "name": "goldenElevatorDirtyForeground_obj",

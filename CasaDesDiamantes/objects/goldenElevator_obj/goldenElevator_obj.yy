@@ -24,8 +24,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Elevator",
+    "path": "folders/Objects/Elevator.yy",
   },
   "resourceVersion": "1.0",
   "name": "goldenElevator_obj",

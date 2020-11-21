@@ -37,6 +37,11 @@ if (follow == movingPlatform_obj)
 	xTo = follow.x;
 	yTo = follow.y - 64;
 }
+if (follow == goldenElevatorDirtyForeground_obj)
+{
+	xTo = follow.x;
+	yTo = follow.y + 64;
+}
 
 if (x < xTo + 4 && x > xTo - 4 && !shake)
 {
