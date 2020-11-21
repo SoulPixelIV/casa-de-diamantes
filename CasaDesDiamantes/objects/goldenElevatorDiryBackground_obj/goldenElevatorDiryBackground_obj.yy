@@ -1,10 +1,10 @@
 {
   "spriteId": {
-    "name": "bluecubex16_spr",
-    "path": "sprites/bluecubex16_spr/bluecubex16_spr.yy",
+    "name": "goldenElevatorDirtyBackground_spr",
+    "path": "sprites/goldenElevatorDirtyBackground_spr/goldenElevatorDirtyBackground_spr.yy",
   },
   "solid": false,
-  "visible": false,
+  "visible": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": null,
@@ -24,11 +24,11 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Spawns",
-    "path": "folders/Objects/Spawns.yy",
+    "name": "Objects",
+    "path": "folders/Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "Spawn2_obj",
+  "name": "goldenElevatorDiryBackground_obj",
   "tags": [],
   "resourceType": "GMObject",
 }
