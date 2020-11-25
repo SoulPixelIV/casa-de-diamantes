@@ -13,17 +13,6 @@ if (moving)
 		elevatorTrigger.y -= speedMov * global.dt;
 		background.y -= speedMov * global.dt;
 	}
-	for (var i = 0; i < _num; ++i;)
-	{
-		if (dir == 0)
-		{
-			_list[| i].y += speedMov * global.dt;
-		}
-		else
-		{
-			_list[| i].y -= speedMov * global.dt;
-		}
-	}
 	if (instance_exists(player_obj))
 	{
 		player_obj.y = y + 48;

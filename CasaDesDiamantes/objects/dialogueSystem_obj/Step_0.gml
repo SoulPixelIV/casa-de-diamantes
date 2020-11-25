@@ -1,0 +1,14 @@
+//Scene 1
+if (scene1)
+{
+	if (!camera_obj.drawText)
+	{
+		for (i = scene1Low; i < scene1High + 1; i++)
+		{
+			camera_obj.dialogue[i] = dialogue[i];
+		}
+		camera_obj.dialogueLine = scene1Low;
+		camera_obj.drawText = true;
+	}
+	scene1 = false;
+}

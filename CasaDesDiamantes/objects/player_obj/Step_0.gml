@@ -1012,36 +1012,3 @@ else
 		audio_stop_sound(slide_snd);
 	}
 }
-
-//Talking
-if (random_range(0, 10000) > 49999 && !talking)
-{
-	dialog = StephLines();
-	talking = true;
-}
-
-if (talking)
-{
-	dialogSpeed -= global.dt;
-	if (dialogCount < string_length(dialog))
-	{
-		if (dialogSpeed < 0)
-		{
-			dialogCut = string_copy(dialog, 1, dialogCount);
-			dialogCount++;
-			dialogSpeed = dialogSpeedSave;
-		}
-	}
-	else
-	{
-		dialogIdleTime -= global.dt;
-		if (dialogIdleTime < 0)
-		{
-			dialogCount = 1;
-			dialogCut = "";
-			dialog = "";
-			dialogIdleTime = dialogIdleTimeSave;
-			talking = false;
-		}
-	}
-}

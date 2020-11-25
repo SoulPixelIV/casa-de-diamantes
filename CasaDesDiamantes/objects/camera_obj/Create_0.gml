@@ -96,5 +96,18 @@ playScoreStop = false;
 spinsnd = noone;
 scoreSpinTimerSave = scoreSpinTimer;
 
+//Dialogue Drawing
+drawText = false;
+dialogue[0] = "";
+dialogueStripped = "";
+character = noone;
+textDelay = 400;
+letterDelay = 10;
+dialogueLine = 0;
+letterCount = 2;
+
+textDelaySave = textDelay;
+letterDelaySave = letterDelay;
+
 partMovement = 0;
 partDir = 0;

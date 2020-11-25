@@ -59,6 +59,16 @@ if (instance_exists(player_obj))
 	}
 }
 
+//Set Character for Dialogue
+if (string_char_at(dialogue[dialogueLine], 1) == "#")
+{
+	character = player_obj;
+}
+if (string_char_at(dialogue[dialogueLine], 1) == "@")
+{
+	character = shopWorker_obj;
+}
+
 //Player Infection Timer
 if (player_obj.plagueTransformation)
 {
@@ -69,9 +79,42 @@ if (player_obj.plagueTransformation)
 	draw_set_halign(fa_left);
 }
 
-//Player Dialog
-draw_set_font(gothicPixel_fnt);
-draw_set_color(c_white);
-draw_set_halign(fa_center);
-draw_text(player_obj.x, player_obj.y - 32, player_obj.dialogCut);
-draw_set_halign(fa_left);
+//Draw Dialogue
+if (drawText)
+{
+	draw_set_font(gothicPixel_fnt);
+	draw_set_halign(fa_center);
+	draw_set_color(c_black);
+	draw_text(character.x - 1, character.y - 32 + 1, string_copy(dialogueStripped, 1, string_length(dialogue[dialogueLine])));
+	draw_set_color(make_color_rgb(255, 215, 0));
+	draw_text(character.x, character.y - 32, string_copy(dialogueStripped, 1, string_length(dialogue[dialogueLine])));
+	draw_set_halign(fa_left);
+
+	//Sentence incomplete
+	if (letterCount < string_length(dialogue[dialogueLine]))
+	{
+		letterDelay -= global.dt;
+		if (letterDelay < 0)
+		{
+			dialogueStripped = string_copy(dialogue[dialogueLine], 2, letterCount);
+			letterCount++;
+			letterDelay = letterDelaySave;
+		}
+	}
+	else //Sentence complete
+	{
+		textDelay -= global.dt;
+		if (textDelay < 0)
+		{
+			dialogueLine++;
+			letterCount = 2;
+			dialogueStripped = "";
+			if (dialogue[dialogueLine] == "")
+			{
+				drawText = false;
+				dialogueLine = 0;
+			}
+			textDelay = textDelaySave;
+		}
+	}
+} 
