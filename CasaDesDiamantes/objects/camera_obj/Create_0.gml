@@ -80,14 +80,22 @@ infOverlayX = xScreenSize;
 infOverlayY = 0;
 
 //Particles
-randParticleX = random_range(0, xScreenSize);
-randParticleY = random_range(0, yScreenSize);
-randParticleX2 = random_range(0, xScreenSize);
-randParticleY2 = random_range(0, yScreenSize);
-randParticleX3 = random_range(0, xScreenSize);
-randParticleY3 = random_range(0, yScreenSize);
-randParticleX4 = random_range(0, xScreenSize);
-randParticleY4 = random_range(0, yScreenSize);
+randParticleX = random_range(-12, 48);
+randParticleY = random_range(-12, 48);
+randParticleX2 = random_range(-12, 48);
+randParticleY2 = random_range(-12, 48);
+randParticleX3 = random_range(-12, 48);
+randParticleY3 = random_range(-12, 48);
+randParticleX4 = random_range(-12, 48);
+randParticleY4 = random_range(-12, 48);
+randParticle2X = random_range(xScreenSize + 12, xScreenSize - 48);
+randParticle2Y = random_range(yScreenSize + 12, yScreenSize - 48);
+randParticle2X2 = random_range(xScreenSize + 12, xScreenSize - 48);
+randParticle2Y2 = random_range(yScreenSize + 12, yScreenSize - 48);
+randParticle2X3 = random_range(xScreenSize + 12, xScreenSize - 48);
+randParticle2Y3 = random_range(yScreenSize + 12, yScreenSize - 48);
+randParticle2X4 = random_range(xScreenSize + 12, xScreenSize - 48);
+randParticle2Y4 = random_range(yScreenSize + 12, yScreenSize - 48);
 
 //Score
 scoreSpin = false;

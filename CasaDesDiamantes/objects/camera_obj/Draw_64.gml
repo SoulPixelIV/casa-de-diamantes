@@ -4,10 +4,15 @@ edgeMarginHor = 16;
 //#####LAYER 0#####
 
 //Lens Dirt + Vignette
-draw_sprite_ext(lensDirt1_spr, 0, randParticleX + partMovement, randParticleY + partMovement / 2, 1, 1, 0, -1, 0.075);
-draw_sprite_ext(lensDirt2_spr, 0, randParticleX2 + partMovement, randParticleY2 + partMovement / 2, 1, 1, 0, -1, 0.075);
-draw_sprite_ext(lensDirt3_spr, 0, randParticleX3 + partMovement, randParticleY3 + partMovement / 2, 1, 1, 0, -1, 0.04);
-draw_sprite_ext(lensDirt4_spr, 0, randParticleX4 + partMovement, randParticleY4 + partMovement / 2, 1, 1, 0, -1, 0.075);
+draw_sprite_ext(lensDirt1_spr, 0, randParticleX + partMovement, randParticleY + partMovement / 2, 1, 1, 0, -1, 0.135);
+draw_sprite_ext(lensDirt2_spr, 0, randParticleX2 + partMovement, randParticleY2 + partMovement / 2, 1, 1, 0, -1, 0.135);
+draw_sprite_ext(lensDirt2_spr, 0, randParticleX3 + partMovement, randParticleY3 + partMovement / 2, 1, 1, 0, -1, 0.135);
+draw_sprite_ext(lensDirt2_spr, 0, randParticleX4 + partMovement, randParticleY4 + partMovement / 2, 1, 1, 0, -1, 0.135);
+
+draw_sprite_ext(lensDirt1_spr, 0, randParticle2X + partMovement, randParticle2Y + partMovement / 2, 1, 1, 0, -1, 0.135);
+draw_sprite_ext(lensDirt2_spr, 0, randParticle2X2 + partMovement, randParticle2Y2 + partMovement / 2, 1, 1, 0, -1, 0.135);
+draw_sprite_ext(lensDirt2_spr, 0, randParticle2X3 + partMovement, randParticle2Y3 + partMovement / 2, 1, 1, 0, -1, 0.135);
+draw_sprite_ext(lensDirt2_spr, 0, randParticle2X4 + partMovement, randParticle2Y4 + partMovement / 2, 1, 1, 0, -1, 0.135);
 	
 //Vignette Effect
 if (!hitVignette)
