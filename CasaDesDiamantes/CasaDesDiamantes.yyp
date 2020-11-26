@@ -552,6 +552,7 @@
     {"id":{"name":"cameraViewIn_obj","path":"objects/cameraViewIn_obj/cameraViewIn_obj.yy",},"order":3,},
     {"id":{"name":"cameraViewOut_obj","path":"objects/cameraViewOut_obj/cameraViewOut_obj.yy",},"order":4,},
     {"id":{"name":"explosionSmall_obj","path":"objects/explosionSmall_obj/explosionSmall_obj.yy",},"order":76,},
+    {"id":{"name":"wKeyPromt_spr","path":"sprites/wKeyPromt_spr/wKeyPromt_spr.yy",},"order":37,},
     {"id":{"name":"woodplank_spr","path":"sprites/woodplank_spr/woodplank_spr.yy",},"order":23,},
     {"id":{"name":"caEffect_obj","path":"objects/caEffect_obj/caEffect_obj.yy",},"order":3,},
     {"id":{"name":"ladder_obj","path":"objects/ladder_obj/ladder_obj.yy",},"order":6,},
