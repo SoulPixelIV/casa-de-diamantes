@@ -14,7 +14,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 16,
+  "width": 15,
   "height": 16,
   "textureGroupId": {
     "name": "Default",
@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"084cfd4e-4f30-4e66-a828-6b8178af92ce","path":"sprites/fKeyIcon_spr/fKeyIcon_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"084cfd4e-4f30-4e66-a828-6b8178af92ce","path":"sprites/fKeyIcon_spr/fKeyIcon_spr.yy",},"LayerId":{"name":"802c52b5-777b-402c-a664-afd84bc70158","path":"sprites/fKeyIcon_spr/fKeyIcon_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"fKeyIcon_spr","path":"sprites/fKeyIcon_spr/fKeyIcon_spr.yy",},"resourceVersion":"1.0","name":"084cfd4e-4f30-4e66-a828-6b8178af92ce","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"084cfd4e-4f30-4e66-a828-6b8178af92ce","path":"sprites/wKeyIcon_spr/wKeyIcon_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"084cfd4e-4f30-4e66-a828-6b8178af92ce","path":"sprites/wKeyIcon_spr/wKeyIcon_spr.yy",},"LayerId":{"name":"802c52b5-777b-402c-a664-afd84bc70158","path":"sprites/wKeyIcon_spr/wKeyIcon_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"wKeyIcon_spr","path":"sprites/wKeyIcon_spr/wKeyIcon_spr.yy",},"resourceVersion":"1.0","name":"084cfd4e-4f30-4e66-a828-6b8178af92ce","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"fKeyIcon_spr","path":"sprites/fKeyIcon_spr/fKeyIcon_spr.yy",},
+    "spriteId": {"name":"wKeyIcon_spr","path":"sprites/wKeyIcon_spr/wKeyIcon_spr.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 15.0,
@@ -41,10 +41,10 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"31fa67bf-89fd-42c2-96cd-f712daa3760f","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"084cfd4e-4f30-4e66-a828-6b8178af92ce","path":"sprites/fKeyIcon_spr/fKeyIcon_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"31fa67bf-89fd-42c2-96cd-f712daa3760f","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"084cfd4e-4f30-4e66-a828-6b8178af92ce","path":"sprites/wKeyIcon_spr/wKeyIcon_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
-    "visibleRange": {"x":0.0,"y":0.0,},
+    "visibleRange": null,
     "lockOrigin": false,
     "showBackdrop": true,
     "showBackdropImage": false,
@@ -54,13 +54,13 @@
     "backdropHeight": 1080,
     "backdropXOffset": 0.0,
     "backdropYOffset": 0.0,
-    "xorigin": 8,
+    "xorigin": 7,
     "yorigin": 8,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"fKeyIcon_spr","path":"sprites/fKeyIcon_spr/fKeyIcon_spr.yy",},
+    "parent": {"name":"wKeyIcon_spr","path":"sprites/wKeyIcon_spr/wKeyIcon_spr.yy",},
     "resourceVersion": "1.3",
-    "name": "",
+    "name": "wKeyIcon_spr",
     "tags": [],
     "resourceType": "GMSequence",
   },
@@ -72,7 +72,7 @@
     "path": "folders/Sprites.yy",
   },
   "resourceVersion": "1.0",
-  "name": "fKeyIcon_spr",
+  "name": "wKeyIcon_spr",
   "tags": [],
   "resourceType": "GMSprite",
 }

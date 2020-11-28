@@ -3,7 +3,11 @@
 x += horspeed * global.dt;
 y += verspeed * global.dt;
 
-dirLookat = point_direction(x, y, player_obj.x, player_obj.y);
+if (instance_exists(player_obj))
+{
+	dirLookat = point_direction(x, y, player_obj.x, player_obj.y);
+}
+
 if (attackCooldown > 30 && attackInProg1)
 {
 	playerPosX = player_obj.x;

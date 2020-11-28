@@ -117,4 +117,59 @@ if (drawText)
 			textDelay = textDelaySave;
 		}
 	}
-} 
+}
+
+//Draw Tutorials
+tutorialAnimTimer -= global.dt;
+
+if (tutorialAnimTimer < 0)
+{
+	if (tutorialAnimImage == 0)
+	{
+		tutorialAnimImage = 1;
+	}
+	else
+	{
+		tutorialAnimImage = 0;
+	}
+	tutorialAnimTimer = tutorialAnimTimerSave;
+}
+
+with (player_obj)
+{
+	if (place_meeting(x, y, tutorialWKeyPromt_obj))
+	{
+		with (camera_obj)
+		{
+			draw_sprite(wKeyPromt_spr, tutorialAnimImage, player_obj.x, player_obj.y - 32);
+		}
+	}
+	if (place_meeting(x, y, tutorialADKeyPromt_obj))
+	{
+		with (camera_obj)
+		{
+			draw_sprite(adKeyPrompt_spr, tutorialAnimImage, player_obj.x, player_obj.y - 32);
+		}
+	}
+	if (place_meeting(x, y, tutorialSpaceKeyPromt_obj))
+	{
+		with (camera_obj)
+		{
+			draw_sprite(spaceKeyPrompt_spr, tutorialAnimImage, player_obj.x, player_obj.y - 32);
+		}
+	}
+	if (place_meeting(x, y, tutorialShiftKeyPromt_obj))
+	{
+		with (camera_obj)
+		{
+			draw_sprite(shiftKeyPrompt_spr, tutorialAnimImage, player_obj.x, player_obj.y - 32);
+		}
+	}
+	if (place_meeting(x, y, tutorialMousePromt_obj))
+	{
+		with (camera_obj)
+		{
+			draw_sprite(mousePromt_spr, tutorialAnimImage, player_obj.x, player_obj.y - 32);
+		}
+	}
+}

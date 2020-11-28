@@ -1,6 +1,6 @@
 /// @description Check Player
 
-if ((distance_to_object(player_obj) < 32 && keyboard_check_pressed(ord("F"))) || place_meeting(x, y, crawler_obj) && instance_nearest(x, y, crawler_obj).usedLever == false)
+if ((distance_to_object(player_obj) < 32 && keyboard_check_pressed(ord("W"))) || place_meeting(x, y, crawler_obj) && instance_nearest(x, y, crawler_obj).usedLever == false)
 {
 	if (!playedSound)
 	{

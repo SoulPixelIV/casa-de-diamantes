@@ -9,9 +9,13 @@ cameraYBorder = 16;
 noHUD = false;
 anim = 0;
 anim2 = 0;
+tutorialAnimTimer = 150;
+tutorialAnimImage = 0;
 reloadAnimTimer = 25;
-reloadAnimTimerSave = reloadAnimTimer;
 reloadFailed = false;
+
+reloadAnimTimerSave = reloadAnimTimer;
+tutorialAnimTimerSave = tutorialAnimTimer;
 
 shake = false;
 shake_time = 0;
