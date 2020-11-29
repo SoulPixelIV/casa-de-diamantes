@@ -27,9 +27,14 @@ if ((distance_to_object(player_obj) < 32 && keyboard_check_pressed(ord("W"))) ||
 			else
 			{
 				var i;
+				object[0] = noone;
 				for (i = 0; i < objectCount; i++)
 				{
-					object[i] = instance_find(objectAccess, i);
+					object[i] = noone;
+					if (distance_to_object(instance_find(objectAccess, i)) < objectMaxDistance)
+					{
+						object[i] = instance_find(objectAccess, i);
+					}
 				
 					if (object[i] != noone)
 					{
@@ -57,9 +62,14 @@ if ((distance_to_object(player_obj) < 32 && keyboard_check_pressed(ord("W"))) ||
 			else
 			{
 				var i;
+				object[0] = noone;
 				for (i = 0; i < objectCount; i++)
 				{
-					object[i] = instance_find(objectAccess, i);
+					object[i] = noone;
+					if (distance_to_object(instance_find(objectAccess, i)) < objectMaxDistance)
+					{
+						object[i] = instance_find(objectAccess, i);
+					}
 				
 					if (object[i] != noone)
 					{
