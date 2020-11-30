@@ -16,6 +16,15 @@ checkedWaypoint = true;
 usedLever = false;
 useDelayTimer = 200;
 
+attackInProg = false;
+attackInProg2 = false;
+attackCooldown = 250;
+attackDelay = 500;
+delay = false;
+
+attackCooldownSave = attackCooldown;
+attackDelaySave = attackDelay;
+
 useDelayTimerSave = useDelayTimer;
 
 animationSpeed = 0.5;

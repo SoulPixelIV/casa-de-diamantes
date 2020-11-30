@@ -169,3 +169,46 @@ if (useDelayTimer < 0)
 	usedLever = false;
 	useDelayTimer = useDelayTimerSave;
 }
+
+//###Attack###
+
+//Cooldown
+if (!attackInProg && !attackInProg2)
+{
+	attackCooldown -= global.dt;
+}
+
+//Prepare Attack
+if (attackCooldown < 0 && verspeed == 0)
+{
+	if (distance_to_object(player_obj) < 128)
+	{
+		animationSpeed = 0.2;
+		sprite_index = crawlerFireAttackProgress_spr;
+		attackInProg = true;
+	}
+	attackCooldown = attackCooldownSave;
+}
+
+//Start Attack 1
+if (attackInProg && image_index > image_number - 1)
+{
+	animationSpeed = 1;
+	sprite_index = crawlerFireAttack_spr;
+	delay = true;
+}
+	
+if (delay)
+{
+	attackDelay -= global.dt;
+}
+if (attackDelay < 0)
+{
+	delay = false;
+	attackDelay = attackDelaySave;
+	attackInProg = false;
+	attackInProg2 = false;
+	animationSpeed = 1;
+	sprite_index = crawler_spr;
+	damageCollision = false;
+}
