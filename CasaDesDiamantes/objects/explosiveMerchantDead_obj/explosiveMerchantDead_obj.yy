@@ -26,6 +26,7 @@
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"explosiveMerchantDead_obj","path":"objects/explosiveMerchantDead_obj/explosiveMerchantDead_obj.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"parent":{"name":"explosiveMerchantDead_obj","path":"objects/explosiveMerchantDead_obj/explosiveMerchantDead_obj.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"hazard_obj","path":"objects/hazard_obj/hazard_obj.yy",},"parent":{"name":"explosiveMerchantDead_obj","path":"objects/explosiveMerchantDead_obj/explosiveMerchantDead_obj.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [
     {"varType":3,"value":"0","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"explodeOnContact","tags":[],"resourceType":"GMObjectProperty",},

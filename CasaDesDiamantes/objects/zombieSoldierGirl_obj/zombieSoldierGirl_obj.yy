@@ -30,6 +30,7 @@
     {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"minecartForeground_obj","path":"objects/minecartForeground_obj/minecartForeground_obj.yy",},"parent":{"name":"zombieSoldierGirl_obj","path":"objects/zombieSoldierGirl_obj/zombieSoldierGirl_obj.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":1,"collisionObjectId":null,"parent":{"name":"zombieSoldierGirl_obj","path":"objects/zombieSoldierGirl_obj/zombieSoldierGirl_obj.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"parent":{"name":"zombieSoldierGirl_obj","path":"objects/zombieSoldierGirl_obj/zombieSoldierGirl_obj.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"hazard_obj","path":"objects/hazard_obj/hazard_obj.yy",},"parent":{"name":"zombieSoldierGirl_obj","path":"objects/zombieSoldierGirl_obj/zombieSoldierGirl_obj.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [
     {"varType":1,"value":"300","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"aggroRangeX","tags":[],"resourceType":"GMObjectProperty",},
