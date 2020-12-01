@@ -156,6 +156,14 @@ if (hp < 0)
 		}
 	}
 	damageTint = false;
+	if (instance_exists(light))
+	{
+		instance_destroy(light);
+	}
+	if (instance_exists(hitbox))
+	{
+		instance_destroy(hitbox);
+	}
 	instance_change(zombieGirlDeath2_obj, true);
 }
 
