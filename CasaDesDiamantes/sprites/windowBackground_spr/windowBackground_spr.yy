@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"2af72413-5b03-491b-a883-2ed7f74cb66e","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "UI",
-    "path": "folders/Sprites/UI.yy",
+    "name": "UISprites",
+    "path": "folders/UI/UISprites.yy",
   },
   "resourceVersion": "1.0",
   "name": "windowBackground_spr",

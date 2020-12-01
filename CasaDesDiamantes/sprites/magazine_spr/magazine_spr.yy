@@ -80,8 +80,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"1ca44833-1ece-4479-8107-15d7d9f597a0","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "UI",
-    "path": "folders/Sprites/UI.yy",
+    "name": "UISprites",
+    "path": "folders/UI/UISprites.yy",
   },
   "resourceVersion": "1.0",
   "name": "magazine_spr",

@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"85027e0e-a403-4a2f-9ed5-91c15b7fb43e","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "UI",
-    "path": "folders/Sprites/UI.yy",
+    "name": "UISprites",
+    "path": "folders/UI/UISprites.yy",
   },
   "resourceVersion": "1.0",
   "name": "dashCircle_spr",

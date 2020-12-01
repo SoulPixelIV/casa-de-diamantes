@@ -88,8 +88,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"a75425d1-08ca-4029-b948-b9e924e3c70f","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "UI",
-    "path": "folders/Sprites/UI.yy",
+    "name": "UISprites",
+    "path": "folders/UI/UISprites.yy",
   },
   "resourceVersion": "1.0",
   "name": "arrow_spr",

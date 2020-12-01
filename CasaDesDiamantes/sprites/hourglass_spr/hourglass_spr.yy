@@ -92,8 +92,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"d7dbb694-3d4d-44e4-932c-0333eaaebe7a","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "UI",
-    "path": "folders/Sprites/UI.yy",
+    "name": "UISprites",
+    "path": "folders/UI/UISprites.yy",
   },
   "resourceVersion": "1.0",
   "name": "hourglass_spr",

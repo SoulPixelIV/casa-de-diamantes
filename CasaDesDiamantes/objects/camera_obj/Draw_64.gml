@@ -1,5 +1,5 @@
-edgeMarginVer = 8;
-edgeMarginHor = 16;
+edgeMarginVer = 11;
+edgeMarginHor = 17;
 
 //#####LAYER 0#####
 
@@ -88,16 +88,8 @@ if (!noHUD)
 		draw_sprite_ext(syringe_spr, -1, 42, 24 + 16 * i, 1, 1, -1, -1, 1);
 	}
 	
-	//Infectionbar
-	/*
-	if (player_obj.plagueTransformation)
-	{
-		draw_sprite_ext(infectionbarBorder_spr, 0, 256, 128, 1, 1, 0, -1, 1);
-		draw_sprite_ext(infectionbar_spr, 0, 256, 128, player_obj.infection / 100, 1, 0, -1, 1);
-	}
-	*/
 	//Chipbar
-	draw_sprite_ext(scoreBorder_spr, -1, 375, edgeMarginVer, 1, 1, 0, -1, 1);
+	draw_sprite_ext(scoreBorder_spr, -1, 380, edgeMarginVer, 1, 1, 0, -1, 1);
 	
 	if (scoreSpin)
 	{
@@ -237,3 +229,6 @@ draw_set_alpha(blackscreenStrength);
 draw_set_color(c_black);
 draw_rectangle(-300, -225, 1600, 1150, false);
 draw_set_alpha(1);
+
+//#####LAYER 4#####
+draw_sprite(guiBorder_spr, 0, 0, 0);
