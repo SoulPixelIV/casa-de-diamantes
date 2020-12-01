@@ -719,8 +719,8 @@
   },
   "RoomOrder": [
     {"name":"loadVars","path":"rooms/loadVars/loadVars.yy",},
-    {"name":"level_CasinoHub","path":"rooms/level_CasinoHub/level_CasinoHub.yy",},
     {"name":"level1_SenzelaForest","path":"rooms/level1_SenzelaForest/level1_SenzelaForest.yy",},
+    {"name":"level_CasinoHub","path":"rooms/level_CasinoHub/level_CasinoHub.yy",},
     {"name":"level0_RoadToCasino","path":"rooms/level0_RoadToCasino/level0_RoadToCasino.yy",},
     {"name":"levelTower_hordemode","path":"rooms/levelTower_hordemode/levelTower_hordemode.yy",},
     {"name":"level1_RoadToCasino","path":"rooms/level1_RoadToCasino/level1_RoadToCasino.yy",},

@@ -5,6 +5,7 @@ verspeed = 0;
 playerSightMax = 256;
 playerSightMin = 32;
 hp = 85;
+colliding = true;
 level = 1;
 moneyDropMin = 3;
 moneyDropMax = 7;

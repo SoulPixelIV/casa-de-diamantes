@@ -6,6 +6,7 @@ verspeed = 0;
 
 //Stats
 hp = 100;
+colliding = true;
 level = 1;
 moneyDropMin = 1;
 moneyDropMax = 4;

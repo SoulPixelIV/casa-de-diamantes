@@ -5,6 +5,7 @@ verspeed = 0;
 attackCooldown = 550;
 attackDelay = 50;
 hp = 130;
+colliding = true;
 level = 2;
 hpBucket = 40;
 damage = 0;

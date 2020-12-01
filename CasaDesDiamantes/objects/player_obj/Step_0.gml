@@ -359,11 +359,14 @@ if (colliding)
 	
 	if (place_meeting(x + (horspeed * global.dt), y, enemy_obj))
 	{
-		if (sign(horspeed) != 0)
+		if (instance_place(x + (horspeed * global.dt), y, enemy_obj).colliding)
 		{
-			while (place_meeting(x + sign(horspeed) / 100, y, enemy_obj))
+			if (sign(horspeed) != 0)
 			{
-				x -= sign(horspeed) / 100;
+				while (place_meeting(x + sign(horspeed) / 100, y, enemy_obj))
+				{
+					x -= sign(horspeed) / 100;
+				}
 			}
 		}
 	}
@@ -884,7 +887,7 @@ if (damageCooldown < 0)
 	image_alpha = 1;
 }
 
-if (hp < 0 || infection < 0)
+if (hp <= 0 || infection < 0)
 {
 	//Death
 	if (!deathActivated)

@@ -74,8 +74,8 @@ if (!noHUD)
 
 	//Healthbar
 	draw_sprite_ext(healthbarBorder_spr, 0, edgeMarginHor, edgeMarginVer, 1, 1, 0, -1, 1);
-	draw_sprite_ext(healthbarTop2_spr, -1, edgeMarginHor, 17 - (player_obj.hp - 100), 1, 1, 0, -1, 1);
-	draw_sprite_ext(healthbar_spr, 0, edgeMarginHor, 129, 1, 1 * (player_obj.hp / 100) , 0, -1, 1);
+	draw_sprite_ext(healthbarTop2_spr, -1, edgeMarginHor, 19 - (player_obj.hp - 100), 1, 1, 0, -1, 1);
+	draw_sprite_ext(healthbar_spr, 0, edgeMarginHor, 131, 1, 1 * (player_obj.hp / 100) , 0, -1, 1);
 	//Healthcut
 	if (player_obj.syringesLost > 0)
 	{
@@ -94,23 +94,23 @@ if (!noHUD)
 	if (scoreSpin)
 	{
 		scoreSpinTimer -= global.dt;
-		draw_sprite(scoreNumberSpin_spr, -1, 452, edgeMarginVer + 2);
-		draw_sprite(scoreNumberSpin_spr, -1, 442, edgeMarginVer + 2);
-		draw_sprite(scoreNumberSpin_spr, -1, 432, edgeMarginVer + 2);
-		draw_sprite(scoreNumberSpin_spr, -1, 422, edgeMarginVer + 2);
-		draw_sprite(scoreNumberSpin_spr, -1, 412, edgeMarginVer + 2);
-		draw_sprite(scoreNumberSpin_spr, -1, 402, edgeMarginVer + 2);
-		draw_sprite(scoreNumberSpin_spr, -1, 392, edgeMarginVer + 2);
+		draw_sprite(scoreNumberSpin_spr, -1, 457, edgeMarginVer + 2);
+		draw_sprite(scoreNumberSpin_spr, -1, 447, edgeMarginVer + 2);
+		draw_sprite(scoreNumberSpin_spr, -1, 437, edgeMarginVer + 2);
+		draw_sprite(scoreNumberSpin_spr, -1, 427, edgeMarginVer + 2);
+		draw_sprite(scoreNumberSpin_spr, -1, 417, edgeMarginVer + 2);
+		draw_sprite(scoreNumberSpin_spr, -1, 407, edgeMarginVer + 2);
+		draw_sprite(scoreNumberSpin_spr, -1, 397, edgeMarginVer + 2);
 	}
 	else
 	{
-		draw_sprite(scoreNumber_spr, digitsManager_obj.value[0], 452, edgeMarginVer + 2);
-		draw_sprite(scoreNumber_spr, digitsManager_obj.value[1], 442, edgeMarginVer + 2);
-		draw_sprite(scoreNumber_spr, digitsManager_obj.value[2], 432, edgeMarginVer + 2);
-		draw_sprite(scoreNumber_spr, digitsManager_obj.value[3], 422, edgeMarginVer + 2);
-		draw_sprite(scoreNumber_spr, digitsManager_obj.value[4], 412, edgeMarginVer + 2);
-		draw_sprite(scoreNumber_spr, digitsManager_obj.value[5], 402, edgeMarginVer + 2);
-		draw_sprite(scoreNumber_spr, digitsManager_obj.value[6], 392, edgeMarginVer + 2);
+		draw_sprite(scoreNumber_spr, digitsManager_obj.value[0], 457, edgeMarginVer + 2);
+		draw_sprite(scoreNumber_spr, digitsManager_obj.value[1], 447, edgeMarginVer + 2);
+		draw_sprite(scoreNumber_spr, digitsManager_obj.value[2], 437, edgeMarginVer + 2);
+		draw_sprite(scoreNumber_spr, digitsManager_obj.value[3], 427, edgeMarginVer + 2);
+		draw_sprite(scoreNumber_spr, digitsManager_obj.value[4], 417, edgeMarginVer + 2);
+		draw_sprite(scoreNumber_spr, digitsManager_obj.value[5], 407, edgeMarginVer + 2);
+		draw_sprite(scoreNumber_spr, digitsManager_obj.value[6], 397, edgeMarginVer + 2);
 	}
 	
 	if (scoreSpinTimer < 0)
@@ -232,3 +232,6 @@ draw_set_alpha(1);
 
 //#####LAYER 4#####
 draw_sprite(guiBorder_spr, 0, 0, 0);
+
+//#####LAYER 5#####
+draw_sprite(cursor_spr, 0, mouse_x, mouse_y);

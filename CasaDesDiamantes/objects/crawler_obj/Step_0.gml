@@ -104,14 +104,14 @@ if (!place_free(x, y + (verspeed * global.dt)))
 //###OutsideSolid###
 if (place_free(x, y))
 {
-    savePosX = x;
-    savePosY = y;
+	savePosX = x;
+	savePosY = y;
 }
 else
 {
-    x = savePosX;
-    y = savePosY;
-    verSpeed = 0;
+	x = savePosX;
+	y = savePosY;
+	verSpeed = 0;
 }
 
 //Animation
@@ -181,7 +181,7 @@ if (!attackInProg && !attackInProg2)
 //Prepare Attack
 if (attackCooldown < 0 && verspeed == 0)
 {
-	if (distance_to_object(player_obj) < 128)
+	if (distance_to_object(player_obj) < 126)
 	{
 		animationSpeed = 0.2;
 		sprite_index = crawlerFireAttackProgress_spr;
@@ -193,9 +193,30 @@ if (attackCooldown < 0 && verspeed == 0)
 //Start Attack 1
 if (attackInProg && image_index > image_number - 1)
 {
-	animationSpeed = 1;
+	animationSpeed = 1.25;
 	sprite_index = crawlerFireAttack_spr;
 	delay = true;
+	if (!instance_exists(hitbox))
+	{
+		hitbox = instance_create_layer(x + 12, y, "Instances", damageHitbox_obj);
+		with (hitbox)
+		{
+			body = instance_nearest(x, y, crawler_obj);
+		}
+		hitbox.damage = 20;
+		hitbox.image_xscale = 2;
+		hitbox.image_yscale = 1.5;
+		hitbox.timer = attackDelay;
+	}
+	
+	if (!instance_exists(light))
+	{
+		light = instance_create_layer(x, y, "GraphicsLayer", spotlightYellow_obj);
+	}
+	with (light)
+	{
+		body = instance_nearest(x, y, crawler_obj);
+	}
 }
 	
 if (delay)
@@ -211,4 +232,42 @@ if (attackDelay < 0)
 	animationSpeed = 1;
 	sprite_index = crawler_spr;
 	damageCollision = false;
+	if (instance_exists(light))
+	{
+		instance_destroy(light);
+	}
+	if (instance_exists(hitbox))
+	{
+		instance_destroy(hitbox);
+	}
+	hitbox = noone;
+	light = noone;
+}
+
+if (instance_exists(light))
+{
+	with (light)
+	{
+		light[| eLight.X] = body.x;
+		light[| eLight.Y] = body.y;
+	}
+}
+if (instance_exists(hitbox))
+{
+	if (dir == 0)
+	{
+		with (hitbox)
+		{
+			x = body.x + 16;
+			y = body.y;
+		}
+	}
+	else
+	{
+		with (hitbox)
+		{
+			x = body.x - 16;
+			y = body.y;
+		}
+	}
 }
