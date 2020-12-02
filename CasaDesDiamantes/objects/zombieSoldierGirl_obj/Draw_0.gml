@@ -1,7 +1,7 @@
 draw_self();
 
 //Vision line
-if (attackCooldown < 160 && distance_to_object(player_obj) < 300 && !attackInProg2)
+if (attackCooldown < 160 && !attackInProg2 && distance_to_object(player_obj) < aggroRangeX && player_obj.y > y - 64 && player_obj.y < y + aggroRangeY)
 {
 	if (image_xscale == 1)
 	{
