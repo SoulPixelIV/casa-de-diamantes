@@ -19,7 +19,7 @@ function jump_scr() {
 		part_emitter_destroy(global.partSystem, partEmitter);
 	}
 	//Dash Momentum after jump
-	if (player_obj.isDashing)
+	if (((player_obj.isDashing && place_free(x, y - 32) && player_obj.grounded) || (player_obj.isDashing && !player_obj.grounded && place_free(x + 32, y) && place_free(x - 32, y))))
 	{
 		player_obj.stoppedDashing = true;
 		if (player_obj.horspeed == 0)
@@ -45,12 +45,12 @@ function jump_scr() {
 				player_obj.horspeed -= 0.2;
 			}
 		}
+		player_obj.jumping = true;
+		if (!player_obj.isDashing)
+		{
+			player_obj.image_index = 0;
+		}
+		audio_play_sound(jump_snd, 1, false);
+		landSoundPlayed = false;
 	}
-	player_obj.jumping = true;
-	if (!player_obj.isDashing)
-	{
-		player_obj.image_index = 0;
-	}
-	audio_play_sound(jump_snd, 1, false);
-	landSoundPlayed = false;
 }

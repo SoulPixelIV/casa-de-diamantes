@@ -252,7 +252,6 @@ if (movement && !isZombie)
 			wallJumpingInAir = true;
 			huggingWall = false;
 			setWallDir = false;
-			stoppedDashing = true;
 		}
 		else
 		{
