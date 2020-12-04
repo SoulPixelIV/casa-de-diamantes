@@ -18,13 +18,28 @@ if (movement)
 {
 	if (distance_to_object(player_obj) < playerSightMax && distance_to_object(player_obj) > playerSightMin)
 	{
-		if (player_obj.x > x)
+		if (!collision_circle(x, y, 8, zombieSoldierGirl_obj, false, true))
 		{
-			horspeed = movSpeed * 3;
+			if (player_obj.x > x)
+			{
+				horspeed = movSpeed * 3;
+			}
+			else
+			{
+				horspeed = -movSpeed * 3;
+			}
 		}
 		else
 		{
-			horspeed = -movSpeed * 3;
+			nextEnemy = instance_nearest(x, y, zombieSoldierGirl_obj);
+			if (nextEnemy.x > x)
+			{
+				horspeed = -movSpeed / 2;
+			}
+			else
+			{
+				horspeed = movSpeed / 2;
+			}
 		}
 		if (dirLookat > 90 && dirLookat < 270)
 		{

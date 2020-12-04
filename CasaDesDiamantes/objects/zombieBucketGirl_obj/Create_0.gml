@@ -13,7 +13,7 @@ moneyDropMin = 5;
 moneyDropMax = 13;
 knockback = 0;
 playerSightMax = 196;
-playerSightMin = 0;
+playerSightMin = 32;
 
 animationSpeed = 0.5;
 bucketRemoved = false;

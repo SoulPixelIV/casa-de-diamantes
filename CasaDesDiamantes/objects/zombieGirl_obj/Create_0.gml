@@ -13,7 +13,7 @@ moneyDropMax = 4;
 damage = 35;
 knockback = 0;
 playerSightMax = 128;
-playerSightMin = 8;
+playerSightMin = 32;
 
 animationSpeed = 0.5;
 savePosX = x;
