@@ -160,7 +160,7 @@ if (movement && !isZombie)
 	{
 		dashTimer -= global.dt;
 	}
-	if (dashTimer < 0 || onLadder)
+	if ((dashTimer < 0 || onLadder) && place_free(x, y + 32))
 	{
 		isDashing = false;
 		stoppedDashing = false;
@@ -307,7 +307,7 @@ if (grounded || isDashing)
 }
 
 //Jump Spin
-if (!grounded && !isZombie && !flip && !isDashing && !unarmed && !groundCollisionTimerOn && movement)
+if (!grounded && !isZombie && !flip && !isDashing && !groundCollisionTimerOn && movement && !unarmed)
 {
 	if (horspeed < movSpeed - 0.3 || horspeed > -movSpeed + 0.3)
 	{
