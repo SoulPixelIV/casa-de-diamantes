@@ -1,6 +1,6 @@
 /// @description Pickup
 
-if (global.pistolMag < 90)
+if (global.pistolMag < 90 || (global.pistolMag == 90 && global.unlockedWeapon[1] = true && global.unlockedWeapon[0] = false))
 {
 	pickWeapon_scr(0);
     global.pistolMag += 18;
