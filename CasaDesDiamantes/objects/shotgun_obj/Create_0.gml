@@ -1,0 +1,1 @@
+lightrayRotation = 0;
