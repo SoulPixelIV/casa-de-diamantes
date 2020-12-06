@@ -64,7 +64,7 @@
     "eventStubScript": null,
     "parent": {"name":"lever_spr","path":"sprites/lever_spr/lever_spr.yy",},
     "resourceVersion": "1.3",
-    "name": "lever_spr",
+    "name": "",
     "tags": [],
     "resourceType": "GMSequence",
   },
