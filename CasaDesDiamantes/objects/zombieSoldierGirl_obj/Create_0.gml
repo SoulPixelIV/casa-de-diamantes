@@ -36,11 +36,14 @@ attackInProg1 = false;
 attackInProg2 = false;
 damageTint = false;
 damageTintTimer = 15;
+lineFlashTimer = 10;
+lineColor = c_yellow;
 animationSpeed = 1;
 headshot = false;
 
 attackCooldownSave = attackCooldown;
 damageTintTimerSave = damageTintTimer;
+lineFlashTimerSave = lineFlashTimer;
 
 headshotHitbox = instance_create_layer(x, y - 16, "Instances", headshotHitbox_obj);
 with (headshotHitbox)

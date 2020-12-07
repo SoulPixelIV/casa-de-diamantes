@@ -194,6 +194,7 @@ if (randAttack == 1)
 else
 {
 	attackInProg2 = true;
+	sprite_index = zombieSoldierGirlGrenate_spr;
 }
 
 if (attackCooldown < 160 && attackInProg1)
@@ -220,7 +221,7 @@ if (attackCooldown < 0 && attackInProg2)
 	grenate.horspeed = random_range(2, 4) * image_xscale;
 	grenate.verspeed = random_range(-4, -6);
 	attackCooldown = attackCooldownSave / 2;
-	sprite_index = zombieSoldierGirl_spr;
+	sprite_index = zombieSoldierGirlGrenate_spr;
 	attackInProg1 = false;
 	attackInProg2 = false;
 	randAttack = choose(1,2);
