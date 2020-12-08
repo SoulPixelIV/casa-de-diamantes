@@ -20,12 +20,15 @@ if (hp > 0)
 		{
 			hp -= other.damage;
 			damageCooldown = damageCooldownSave;
-			damageRecieved = true;
-			if (!audio_is_playing(moan1_snd) && !audio_is_playing(moan2_snd))
+			if (other.damage != 0)
 			{
-				audio_play_sound(choose(moan1_snd, moan2_snd), 1, false);
+				damageRecieved = true;
+				if (!audio_is_playing(moan1_snd) && !audio_is_playing(moan2_snd))
+				{
+					audio_play_sound(choose(moan1_snd, moan2_snd), 1, false);
+				}
+				camera_obj.hitVignette = true;
 			}
-			camera_obj.hitVignette = true;
 			other.dealtDamage = true;
 		}
 	}

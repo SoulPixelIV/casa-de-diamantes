@@ -62,7 +62,7 @@ if (movement)
 }
 else
 {
-	if (!attackInProg)
+	if (!attackInProg1)
 	{
 		horspeed = 0;
 	}
@@ -180,25 +180,43 @@ if (hpBucket < 0 && !playedSound)
 
 //###Attack###
 
+attackCooldown -= global.dt;
+
 //Cooldown
-if (!attackInProg && distance_to_object(player_obj) < 280 && bucketRemoved)
+if (!attackInProg1 && !attackInProg2 && distance_to_object(player_obj) < 280 && bucketRemoved)
 {
-	attackCooldown -= global.dt;
 	movement = true;
 	sprite_index = zombieBucketGirlBroken_spr;
 }
 
-//Prepare Attack
-if (attackCooldown < 0)
+if (attackCooldown < 0 && !bucketRemoved && distance_to_object(player_obj) < 32)
 {
-	sprite_index = zombieBucketGirlAttack1_spr;
+	sprite_index = zombieBucketGirlAttack2_spr;
 	movement = false;
-	attackInProg = true;
+	attackInProg2 = true;
+	attackCooldown = attackCooldownSave;
+}
+
+//Prepare Attack
+if (attackCooldown < 0 && bucketRemoved)
+{
+	if (randAttack == 1)
+	{
+		sprite_index = zombieBucketGirlAttack1_spr;
+		movement = false;
+		attackInProg1 = true;
+	}
+	if (randAttack == 2)
+	{
+		sprite_index = zombieBucketGirlAttack2Broken_spr;
+		movement = false;
+		attackInProg2 = true;
+	}
 	attackCooldown = attackCooldownSave;
 }
 
 //Start Attack 1
-if (attackInProg && image_index > image_number - 1)
+if (attackInProg1 && image_index > image_number - 1)
 {
 	image_index = 0;
 	instance_create_layer(x + 10 * image_xscale, y - 10 * image_xscale, "ForegroundObjects", dustParticle_obj);
@@ -208,7 +226,26 @@ if (attackInProg && image_index > image_number - 1)
 		grenate.horspeed = random_range(1.4, 2.6) * image_xscale;
 		grenate.verspeed = random_range(-0.2, -0.8);
 	}
-	attackInProg = false;
+	attackInProg1 = false;
+	randAttack = choose(1,2);
+}
+
+//Start Attack 2
+if (attackInProg2 && image_index > image_number - 1)
+{
+	image_index = 0;
+	instance_create_layer(x, y, "ForegroundObjects", forcefield_obj);
+	attackInProg2 = false;
+	randAttack = choose(1,2);
+	movement = true;
+	if (bucketRemoved)
+	{
+		sprite_index = zombieBucketGirlBroken_spr;
+	}
+	else
+	{
+		sprite_index = zombieBucketGirl_spr;
+	}
 }
 
 if (damageTint)

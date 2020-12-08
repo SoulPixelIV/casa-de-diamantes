@@ -60,7 +60,7 @@
     "eventStubScript": null,
     "parent": {"name":"zombieBucketGirl_spr","path":"sprites/zombieBucketGirl_spr/zombieBucketGirl_spr.yy",},
     "resourceVersion": "1.3",
-    "name": "zombieBucketGirl_spr",
+    "name": "",
     "tags": [],
     "resourceType": "GMSequence",
   },
