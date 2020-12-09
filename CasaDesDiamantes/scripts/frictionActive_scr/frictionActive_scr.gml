@@ -1,6 +1,6 @@
 function frictionActive_scr(instance, frictionActive) {
-	var currFriction = instance.frictionStrength;
-	var currFrictionDashing = (instance.frictionStrength / 3);
+	var currFriction = instance.frictionStrength * global.dt;
+	var currFrictionDashing = (instance.frictionStrength / 3) * global.dt;
 	
 	if (frictionActive)
 	{

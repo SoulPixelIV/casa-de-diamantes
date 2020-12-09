@@ -43,7 +43,7 @@ if (movement && !wallJumping && !isDashing)
 		{
 			if (horspeed < movSpeed)
 			{
-				horspeed += 0.2;
+				horspeed += global.dt / 10;
 			}
 			if (horspeed > movSpeed - 0.2 && horspeed < movSpeed + 0.2)
 			{
@@ -63,7 +63,7 @@ if (movement && !wallJumping && !isDashing)
 			}
 			if (horspeed > -movSpeed)
 			{
-				horspeed -= 0.2;
+				horspeed -= global.dt / 10;
 			}
 
 			if (!audio_is_playing(walk1_snd) && !audio_is_playing(walk2_snd) && grounded)
