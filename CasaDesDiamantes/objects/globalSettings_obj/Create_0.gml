@@ -6,6 +6,7 @@ global.gamma = 1.4;
 TARGET_FRAMERATE = 60;
 cursor_sprite = cursor_spr;
 realTimeScale = global.timeScale;
+restartInProg = false;
 
 room_speed = 200;
 

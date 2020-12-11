@@ -3,10 +3,10 @@
 if (falling)
 {
 	y += global.dt * 2;
+	image_alpha -= global.dt / 5
 }
 
-if (!place_free(x, y))
+if (image_alpha < 0.05)
 {
-    falling = false;
 	instance_destroy();
 }
