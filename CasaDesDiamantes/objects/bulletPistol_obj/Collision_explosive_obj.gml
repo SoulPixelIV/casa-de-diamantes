@@ -7,7 +7,7 @@ if (!dealtDamage)
 	fire.image_xscale = 0.75;
 	fire.image_yscale = 0.5;
 	fire.temporary = true;
-	audio_play_sound_on(emitter, bulletHit_snd, false, 1);
+	audio_play_sound(bulletHit_snd, 1, false);
 	dealtDamage = true;
 	penetration--;
 }

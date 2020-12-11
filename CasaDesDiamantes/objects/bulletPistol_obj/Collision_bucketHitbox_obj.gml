@@ -10,6 +10,6 @@ if (!dealtDamage)
 		enemyTarget.hpBucket -= 10;
 	}
 	dealtDamage = true;
-	audio_play_sound_on(emitter, bucketHit_snd, false, 1);
+	audio_play_sound(bucketHit_snd, 1, false);
 	instance_destroy();
 }

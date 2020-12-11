@@ -15,7 +15,7 @@ if (invincibilityTimer <= 0)
 {
 	if (!place_free(x, y) && (camera_obj.follow == player_obj || camera_obj.follow == camera_obj) && !place_meeting(x, y, colliderBulletFree_obj))
 	{
-		audio_play_sound_on(emitter, bulletHitGround_snd, false, 1);
+		audio_play_sound(bulletHitGround_snd, 1, false);
 		instance_change(bulletHit_obj, true);
 	}
 }
