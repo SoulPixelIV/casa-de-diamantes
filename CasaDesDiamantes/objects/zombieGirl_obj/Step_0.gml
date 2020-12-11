@@ -160,6 +160,7 @@ if (hp < 0)
 		}
 	}
 	damageTint = false;
+	damageTintHeadshot = false;
 	if (headshot)
 	{
 		instance_change(zombieGirlDeath1_obj, true);
@@ -272,9 +273,14 @@ if (attackDelay < 0)
 	spawnedHitbox = false;
 }
 
-if (damageTint)
+if (damageTint && sprite_index != zombieGirlFlashHeadshot_spr)
 {
 	sprite_index = zombieGirlFlash_spr;
+	damageTintTimer -= global.dt;
+}
+if (damageTintHeadshot && sprite_index != zombieGirlFlash_spr)
+{
+	sprite_index = zombieGirlFlashHeadshot_spr;
 	damageTintTimer -= global.dt;
 }
 if (damageTintTimer < 0)
@@ -282,4 +288,5 @@ if (damageTintTimer < 0)
 	sprite_index = zombieGirl_spr;
 	damageTintTimer = damageTintTimerSave;
 	damageTint = false;
+	damageTintHeadshot = false;
 }

@@ -146,6 +146,7 @@ if (hp < 0)
 	}
 	
 	damageTint = false;
+	damageTintHeadshot = false;
 	instance_change(zombieGirlWoundedDeath1_obj, false);
 }
 
@@ -156,9 +157,14 @@ with (headshotHitbox)
 	y = body.y - 16;
 }
 
-if (damageTint)
+if (damageTint && sprite_index != zombieGirlWoundedFlashHeadshot_spr)
 {
 	sprite_index = zombieGirlWoundedFlash_spr;
+	damageTintTimer -= global.dt;
+}
+if (damageTintHeadshot && sprite_index != zombieGirlWoundedFlash_spr)
+{
+	sprite_index = zombieGirlWoundedFlashHeadshot_spr;
 	damageTintTimer -= global.dt;
 }
 if (damageTintTimer < 0)
@@ -166,4 +172,5 @@ if (damageTintTimer < 0)
 	sprite_index = zombieGirlWounded_spr;
 	damageTintTimer = damageTintTimerSave;
 	damageTint = false;
+	damageTintHeadshot = false;
 }

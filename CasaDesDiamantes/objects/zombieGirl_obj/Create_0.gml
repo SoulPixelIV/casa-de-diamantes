@@ -33,6 +33,7 @@ movSpeed = 0.15;
 movement = true;
 gravityStrength = -0.05;
 damageTint = false;
+damageTintHeadshot = false;
 damageTintTimer = 15;
 headshot = false;
 

@@ -60,7 +60,7 @@
     "eventStubScript": null,
     "parent": {"name":"zombieSoldierGirlFlash_spr","path":"sprites/zombieSoldierGirlFlash_spr/zombieSoldierGirlFlash_spr.yy",},
     "resourceVersion": "1.3",
-    "name": "zombieSoldierGirlFlash_spr",
+    "name": "",
     "tags": [],
     "resourceType": "GMSequence",
   },

@@ -12,7 +12,7 @@ if (hitbox != noone)
 	{
 		if (enemyTarget != noone)
 		{
-			enemyTarget.damageTint = true;
+			enemyTarget.damageTintHeadshot = true;
 			enemyTarget.headshot = true;
 			enemyTarget.hp -= 6;
 		}

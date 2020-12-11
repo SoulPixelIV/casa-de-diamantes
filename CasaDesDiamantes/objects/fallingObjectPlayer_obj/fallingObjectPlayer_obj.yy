@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "fallingObject_spr",
-    "path": "sprites/fallingObject_spr/fallingObject_spr.yy",
+    "name": "fallingGround_spr",
+    "path": "sprites/fallingGround_spr/fallingGround_spr.yy",
   },
   "solid": false,
   "visible": true,

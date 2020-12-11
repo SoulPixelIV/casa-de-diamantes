@@ -35,6 +35,7 @@ randAttack = 1;
 attackInProg1 = false;
 attackInProg2 = false;
 damageTint = false;
+damageTintHeadshot = false;
 damageTintTimer = 15;
 lineFlashTimer = 10;
 lineColor = c_yellow;

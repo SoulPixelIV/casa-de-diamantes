@@ -160,6 +160,7 @@ if (hp < 0)
 		}
 	}
 	damageTint = false;
+	damageTintHeadshot = false;
 	attackCooldown = attackCooldownSave;
 	instance_change(zombieSoldierGirlDeath1_obj, true);
 }
@@ -227,9 +228,14 @@ if (attackCooldown < 0 && attackInProg2)
 	randAttack = choose(1,2);
 }
 
-if (damageTint)
+if (damageTint && sprite_index != zombieSoldierGirlFlashHeadshot_spr)
 {
 	sprite_index = zombieSoldierGirlFlash_spr;
+	damageTintTimer -= global.dt;
+}
+if (damageTintHeadshot && sprite_index != zombieSoldierGirlFlash_spr)
+{
+	sprite_index = zombieSoldierGirlFlashHeadshot_spr;
 	damageTintTimer -= global.dt;
 }
 if (damageTintTimer < 0)
@@ -237,4 +243,5 @@ if (damageTintTimer < 0)
 	sprite_index = zombieSoldierGirl_spr;
 	damageTintTimer = damageTintTimerSave;
 	damageTint = false;
+	damageTintHeadshot = false;
 }

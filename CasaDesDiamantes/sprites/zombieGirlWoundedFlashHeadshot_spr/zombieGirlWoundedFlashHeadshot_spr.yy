@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"24238cd7-7a89-4a27-afb2-a22a723d2280","path":"sprites/zombieGirlWoundedFlash_spr/zombieGirlWoundedFlash_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"24238cd7-7a89-4a27-afb2-a22a723d2280","path":"sprites/zombieGirlWoundedFlash_spr/zombieGirlWoundedFlash_spr.yy",},"LayerId":{"name":"20ef104d-baa1-4c72-9d8b-571b9d4ba426","path":"sprites/zombieGirlWoundedFlash_spr/zombieGirlWoundedFlash_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"zombieGirlWoundedFlash_spr","path":"sprites/zombieGirlWoundedFlash_spr/zombieGirlWoundedFlash_spr.yy",},"resourceVersion":"1.0","name":"24238cd7-7a89-4a27-afb2-a22a723d2280","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"24238cd7-7a89-4a27-afb2-a22a723d2280","path":"sprites/zombieGirlWoundedFlashHeadshot_spr/zombieGirlWoundedFlashHeadshot_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"24238cd7-7a89-4a27-afb2-a22a723d2280","path":"sprites/zombieGirlWoundedFlashHeadshot_spr/zombieGirlWoundedFlashHeadshot_spr.yy",},"LayerId":{"name":"20ef104d-baa1-4c72-9d8b-571b9d4ba426","path":"sprites/zombieGirlWoundedFlashHeadshot_spr/zombieGirlWoundedFlashHeadshot_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"zombieGirlWoundedFlashHeadshot_spr","path":"sprites/zombieGirlWoundedFlashHeadshot_spr/zombieGirlWoundedFlashHeadshot_spr.yy",},"resourceVersion":"1.0","name":"24238cd7-7a89-4a27-afb2-a22a723d2280","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"zombieGirlWoundedFlash_spr","path":"sprites/zombieGirlWoundedFlash_spr/zombieGirlWoundedFlash_spr.yy",},
+    "spriteId": {"name":"zombieGirlWoundedFlashHeadshot_spr","path":"sprites/zombieGirlWoundedFlashHeadshot_spr/zombieGirlWoundedFlashHeadshot_spr.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 3.0,
@@ -41,10 +41,10 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"6664b116-0707-4088-a4fa-ea07cdb69227","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"24238cd7-7a89-4a27-afb2-a22a723d2280","path":"sprites/zombieGirlWoundedFlash_spr/zombieGirlWoundedFlash_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"37dd7c55-3363-491c-bfc8-b942ba620093","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"24238cd7-7a89-4a27-afb2-a22a723d2280","path":"sprites/zombieGirlWoundedFlashHeadshot_spr/zombieGirlWoundedFlashHeadshot_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
-    "visibleRange": {"x":0.0,"y":0.0,},
+    "visibleRange": null,
     "lockOrigin": false,
     "showBackdrop": true,
     "showBackdropImage": false,
@@ -58,9 +58,9 @@
     "yorigin": 26,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"zombieGirlWoundedFlash_spr","path":"sprites/zombieGirlWoundedFlash_spr/zombieGirlWoundedFlash_spr.yy",},
+    "parent": {"name":"zombieGirlWoundedFlashHeadshot_spr","path":"sprites/zombieGirlWoundedFlashHeadshot_spr/zombieGirlWoundedFlashHeadshot_spr.yy",},
     "resourceVersion": "1.3",
-    "name": "zombieGirlWoundedFlash_spr",
+    "name": "zombieGirlWoundedFlashHeadshot_spr",
     "tags": [],
     "resourceType": "GMSequence",
   },
@@ -72,7 +72,7 @@
     "path": "folders/Enemies/Enemy Sprites/ZombieGirlWounded.yy",
   },
   "resourceVersion": "1.0",
-  "name": "zombieGirlWoundedFlash_spr",
+  "name": "zombieGirlWoundedFlashHeadshot_spr",
   "tags": [],
   "resourceType": "GMSprite",
 }
