@@ -72,6 +72,10 @@ else if (room == level_CasinoHub)
 {
 	global.ambientShadowIntensity = 0.52 * global.gamma;
 }
+else if (room == blackJackTable)
+{
+	global.ambientShadowIntensity = 0.48 * global.gamma;
+}
 else if (room == level0_SenzelaForest || room == level1_SenzelaForest)
 {
 	global.ambientShadowIntensity = 0.55 * global.gamma;
