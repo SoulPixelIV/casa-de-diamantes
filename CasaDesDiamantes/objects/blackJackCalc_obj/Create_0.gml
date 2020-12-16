@@ -77,3 +77,6 @@ switch (chosenDeck) {
 dealerSum += blackjackConverter_scr(chosenDeck[chosenCard]);
 chosenDeck[chosenCard] = -2;
 
+//Deactivate Player Movement
+player_obj.movement = false;
+
