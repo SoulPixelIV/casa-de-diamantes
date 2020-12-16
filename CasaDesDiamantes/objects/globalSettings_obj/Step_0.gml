@@ -72,7 +72,7 @@ else if (room == level_CasinoHub)
 {
 	global.ambientShadowIntensity = 0.52 * global.gamma;
 }
-else if (room == blackJackTable)
+else if (room == blackjackTable)
 {
 	global.ambientShadowIntensity = 0.48 * global.gamma;
 }

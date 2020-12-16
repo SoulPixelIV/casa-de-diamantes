@@ -12,6 +12,14 @@ function lighting_get_active_camera() {
 			var cameraW = camera_obj.xScreenSize + 200; //+200Px Safezone
 			var cameraH = camera_obj.yScreenSize + 100; //+100Px Safezone
 		}
+		else
+		{
+			var camera = cameraBlackjack_obj.camera;
+			var cameraX = cameraBlackjack_obj.x - 432; //+200Px Safezone
+			var cameraY = cameraBlackjack_obj.y - 230.5; //+100Px Safezone
+			var cameraW = cameraBlackjack_obj.xScreenSize + 200; //+200Px Safezone
+			var cameraH = cameraBlackjack_obj.yScreenSize + 100; //+100Px Safezone
+		}
 
 		return [cameraX, cameraY, cameraW, cameraH];
 	}

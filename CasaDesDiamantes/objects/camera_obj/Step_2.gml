@@ -27,6 +27,7 @@ if (shake)
    } 
 }
 
+//Floating Camera
 if (follow == camera_obj)
 {
 	xTo = player_obj.x + (mouse_x - player_obj.x) / 2;
@@ -43,9 +44,10 @@ if (follow == goldenElevatorDirtyForeground_obj)
 	yTo = follow.y + 64;
 }
 
+//Snap camera when close enough
 if (x < xTo + 4 && x > xTo - 4 && !shake)
 {
-	x += (xTo - x);
+	x = xTo;
 }
 else
 {
@@ -58,9 +60,9 @@ if (follow == camera_obj)
 }
 else
 {
-	if (y < yTo + 4 - 64 && y > yTo - 4 && !shake)
+	if (y < yTo + 4 && y > yTo - 4 && !shake)
 	{
-		y += (yTo - y - cameraYBorder)
+		y = yTo;
 	}
 	else
 	{
