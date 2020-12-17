@@ -35,18 +35,18 @@ for (i = 0; i < 2; i++)
 	}
 
 	switch (chosenDeck) {
-	    case heartDeck:
-	        playerDeck[i] = string(chosenDeck[chosenCard]) + "H";
-	        break;
+		case heartDeck:
+		    playerDeck[i] = string(chosenDeck[chosenCard]) + "H";
+		    break;
 		case diamondDeck:
-	        playerDeck[i] = string(chosenDeck[chosenCard]) + "D";
-	        break;
+		    playerDeck[i] = string(chosenDeck[chosenCard]) + "D";
+		    break;
 		case clubDeck:
-	        playerDeck[i] = string(chosenDeck[chosenCard]) + "C";
-	        break;
+		    playerDeck[i] = string(chosenDeck[chosenCard]) + "C";
+		    break;
 		case spadeDeck:
-	        playerDeck[i] = string(chosenDeck[chosenCard]) + "S";
-	        break;
+		    playerDeck[i] = string(chosenDeck[chosenCard]) + "S";
+		    break;
 	}
 	playerSum += blackjackConverter_scr(chosenDeck[chosenCard]);
 	chosenDeck[chosenCard] = -2;
@@ -62,21 +62,17 @@ while (chosenDeck[chosenCard] == -2)
 
 switch (chosenDeck) {
 	case heartDeck:
-	    dealerDeck[0] = string(chosenDeck[chosenCard]) + "H";
-	    break;
+		dealerDeck[0] = string(chosenDeck[chosenCard]) + "H";
+		break;
 	case diamondDeck:
-	    dealerDeck[0] = string(chosenDeck[chosenCard]) + "D";
-	    break;
+		dealerDeck[0] = string(chosenDeck[chosenCard]) + "D";
+		break;
 	case clubDeck:
-	    dealerDeck[0] = string(chosenDeck[chosenCard]) + "C";
-	    break;
+		dealerDeck[0] = string(chosenDeck[chosenCard]) + "C";
+		break;
 	case spadeDeck:
-	    dealerDeck[0] = string(chosenDeck[chosenCard]) + "S";
-	    break;
+		dealerDeck[0] = string(chosenDeck[chosenCard]) + "S";
+		break;
 }
 dealerSum += blackjackConverter_scr(chosenDeck[chosenCard]);
 chosenDeck[chosenCard] = -2;
-
-//Deactivate Player Movement
-player_obj.movement = false;
-

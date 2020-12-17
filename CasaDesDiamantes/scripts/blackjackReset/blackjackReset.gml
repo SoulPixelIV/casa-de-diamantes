@@ -1,9 +1,17 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function blackjackReset(){
+	//Delete current cards on table
+	for (i = 0; i < 7; i++)
+	{
+		instance_destroy(blackJackCalc_obj.playerInstances[i]);
+	}
+	for (i = 0; i < 7; i++)
+	{
+		instance_destroy(blackJackCalc_obj.dealerInstances[i]);
+	}
 	
-	blackJackCalc_obj.finished = false;
-	
+	//Reset all values
 	blackJackCalc_obj.playerDeck = [-1,-1,-1,-1,-1,-1,-1,-1,-1,-1];
 	blackJackCalc_obj.dealerDeck = [-1,-1,-1,-1,-1,-1,-1,-1,-1,-1];
 	blackJackCalc_obj.playerInstances = [-1,-1,-1,-1,-1,-1,-1,-1,-1,-1];
@@ -21,14 +29,17 @@ function blackjackReset(){
 	blackJackCalc_obj.checkScore = false;
 
 	blackJackCalc_obj.holdingCard = false;
+	blackJackCalc_obj.spawnedCards = false;
 
 	blackJackCalc_obj.playerSum = 0;
 	blackJackCalc_obj.dealerSum = 0;
-
+	
+	blackJackCalc_obj.screen = 0;
+	/*
 	//First Round -> Player gets 2 Cards
 	for (i = 0; i < 2; i++)
 	{
-		var chosenDeck = choose(heartDeck, diamondDeck, clubDeck, spadeDeck);
+		var chosenDeck = choose(blackJackCalc_obj.heartDeck, blackJackCalc_obj.diamondDeck, blackJackCalc_obj.clubDeck, blackJackCalc_obj.spadeDeck);
 		var chosenCard = choose(0,1,2,3,4,5,6,7,8,9,10,11,12);
 		while (chosenDeck[chosenCard] == -2)
 		{
@@ -54,7 +65,7 @@ function blackjackReset(){
 	}
 
 	//First Round -> Dealer gets 1 Card
-	var chosenDeck = choose(heartDeck, diamondDeck, clubDeck, spadeDeck);
+	var chosenDeck = choose(blackJackCalc_obj.heartDeck, blackJackCalc_obj.diamondDeck, blackJackCalc_obj.clubDeck, blackJackCalc_obj.spadeDeck);
 	var chosenCard = choose(0,1,2,3,4,5,6,7,8,9,10,11,12);
 	while (chosenDeck[chosenCard] == -2)
 	{
@@ -89,4 +100,5 @@ function blackjackReset(){
 		blackJackCalc_obj.dealerInstances[i] = instance_create_layer(204 + i * 32, 48, "Instances", playingCards_obj);
 		blackJackCalc_obj.dealerInstances[i].image_index = blackjackSpriteConverter_scr(blackJackCalc_obj.dealerDeck[i]);
 	}
+	*/
 }

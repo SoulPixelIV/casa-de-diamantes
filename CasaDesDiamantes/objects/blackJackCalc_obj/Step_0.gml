@@ -30,7 +30,7 @@ if (drawCard)
 	drawCard = false;
 	if (playerSum > 21)
 	{
-		checkScore = true;
+		screen = 2;
 	}
 }
 
@@ -66,57 +66,64 @@ if (dealerDraws)
 		dealerSlot++;
 	}
 	dealerDraws = false;
-	checkScore = true;
+	screen = 2;
 }
 
-//Check Score
 /*
-if (playerSum == 21)
+//Check Score
+if (checkScore)
 {
-	if (dealerSum < 10)
+	if (playerSum == 21)
 	{
-		//WIN
-	}
-	else
-	{
-		var chosenDeck = choose(heartDeck, diamondDeck, clubDeck, spadeDeck);
-		var chosenCard = choose(0,1,2,3,4,5,6,7,8,9,10,11,12);
-		while (chosenDeck[chosenCard] == -1)
+		/*
+		if (dealerSum < 10)
 		{
-			var chosenCard = choose(0,1,2,3,4,5,6,7,8,9,10,11,12);
-		}
-
-		switch (chosenDeck) {
-		    case heartDeck:
-		        dealerDeck[dealerSlot] = string(chosenDeck[chosenCard]) + "H";
-		        break;
-			case diamondDeck:
-		        dealerDeck[dealerSlot] = string(chosenDeck[chosenCard]) + "D";
-		        break;
-			case clubDeck:
-		        dealerDeck[dealerSlot] = string(chosenDeck[chosenCard]) + "C";
-		        break;
-			case spadeDeck:
-		        dealerDeck[dealerSlot] = string(chosenDeck[chosenCard]) + "S";
-		        break;
-		}
-		dealerSum += blackjackConverter_scr(chosenDeck[chosenCard]);
-		chosenDeck[chosenCard] = -1;
-		dealerSlot++;
-		drawLastCard = false;
-		
-		if (dealerSum == 21)
-		{
-			//DRAW
+			//WIN
+			screen = 2;
 		}
 		else
 		{
-			//WIN
-		}
-	}
-}
-*/
+			var chosenDeck = choose(heartDeck, diamondDeck, clubDeck, spadeDeck);
+			var chosenCard = choose(0,1,2,3,4,5,6,7,8,9,10,11,12);
+			while (chosenDeck[chosenCard] == -1)
+			{
+				var chosenCard = choose(0,1,2,3,4,5,6,7,8,9,10,11,12);
+			}
 
+			switch (chosenDeck) {
+			    case heartDeck:
+			        dealerDeck[dealerSlot] = string(chosenDeck[chosenCard]) + "H";
+			        break;
+				case diamondDeck:
+			        dealerDeck[dealerSlot] = string(chosenDeck[chosenCard]) + "D";
+			        break;
+				case clubDeck:
+			        dealerDeck[dealerSlot] = string(chosenDeck[chosenCard]) + "C";
+			        break;
+				case spadeDeck:
+			        dealerDeck[dealerSlot] = string(chosenDeck[chosenCard]) + "S";
+			        break;
+			}
+			dealerSum += blackjackConverter_scr(chosenDeck[chosenCard]);
+			chosenDeck[chosenCard] = -1;
+			dealerSlot++;
+			drawLastCard = false;
+			screen = 2;
+		
+			if (dealerSum == 21)
+			{
+				//DRAW
+				screen = 2;
+			}
+			else
+			{
+				//WIN
+				screen = 2;
+			}
+		}
+	
+	}
+*/
 //Create Cards
 if (screen == 1 && !spawnedCards)
 {
@@ -133,11 +140,12 @@ if (screen == 1 && !spawnedCards)
 	spawnedCards = true;
 }
 
+/*
 if (screen == 1 && keyboard_check_pressed(vk_enter))
 {
 	blackjackReset();
 }
-
+*/
 
 
 
