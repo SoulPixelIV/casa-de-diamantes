@@ -116,23 +116,60 @@ if (screen == 1 && !spawnedCards)
 {
 	for (i = 0; i < 7; i++)
 	{
-		playerInstances[i] = instance_create_layer(204 + i * 32, 248, "Instances", playingCards_obj);
+		playerInstances[i] = instance_create_layer(cameraBlackjack_obj.xScreenSize / 2, -50, "Instances", playingCards_obj);
 		playerInstances[i].image_index = blackjackSpriteConverter_scr(playerDeck[i]);
 	}
 	for (i = 0; i < 7; i++)
 	{
-		dealerInstances[i] = instance_create_layer(204 + i * 32, 48, "Instances", playingCards_obj);
+		dealerInstances[i] = instance_create_layer(cameraBlackjack_obj.xScreenSize / 2, -50, "Instances", playingCards_obj);
 		dealerInstances[i].image_index = blackjackSpriteConverter_scr(dealerDeck[i]);
 	}
 	spawnedCards = true;
 }
 
-/*
-if (screen == 1 && keyboard_check_pressed(vk_enter))
+//Move Cards when used
+if (screen == 1 || screen == 2)
 {
-	blackjackReset();
+	for (i = 0; i < 7; i++)
+	{
+		if (playerDeck[i] != -1 && instance_exists(playerInstances[i]))
+		{
+			if ((playerInstances[i].x > (cardTargetX + i * 32) + 4 || playerInstances[i].x < (cardTargetX + i * 32) - 4) || (playerInstances[i].y > cardTargetY + 4 || playerInstances[i].y < cardTargetY - 4))
+			{
+				playerInstances[i].currentNumber = i;
+				with (playerInstances[i])
+				{
+					move_towards_point(blackJackCalc_obj.cardTargetX + currentNumber * 32, blackJackCalc_obj.cardTargetY, global.dt * 2);
+				}
+			}
+			else
+			{
+				with (playerInstances[i])
+				{
+					speed = 0;
+				}
+			}
+		}
+		if (dealerDeck[i] != -1 && instance_exists(dealerInstances[i]))
+		{
+			if ((dealerInstances[i].x > (cardTargetX + i * 32) + 4 || dealerInstances[i].x < (cardTargetX + i * 32) - 4) || (dealerInstances[i].y > cardTargetDealerY + 4 || dealerInstances[i].y < cardTargetDealerY - 4))
+			{
+				dealerInstances[i].currentNumber = i;
+				with (dealerInstances[i])
+				{
+					move_towards_point(blackJackCalc_obj.cardTargetX + currentNumber * 32, blackJackCalc_obj.cardTargetDealerY, global.dt * 2);
+				}
+			}
+			else
+			{
+				with (dealerInstances[i])
+				{
+					speed = 0;
+				}
+			}
+		}
+	}
 }
-*/
 
 
 

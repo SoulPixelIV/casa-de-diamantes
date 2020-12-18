@@ -13,6 +13,10 @@ diamondDeck = [2,3,4,5,6,7,8,9,"X","B","Q","K","A"];
 clubDeck = [2,3,4,5,6,7,8,9,"X","B","Q","K","A"];
 spadeDeck = [2,3,4,5,6,7,8,9,"X","B","Q","K","A"];
 
+cardTargetX = 204;
+cardTargetY = 220;
+cardTargetDealerY = 78;
+
 drawCard = false;
 playerSlot = 2;
 dealerSlot = 1;
@@ -50,6 +54,12 @@ for (i = 0; i < 2; i++)
 	}
 	playerSum += blackjackConverter_scr(chosenDeck[chosenCard]);
 	chosenDeck[chosenCard] = -2;
+}
+
+//Check if already Blackjack
+if (playerSum == 21)
+{
+	screen = 2;
 }
 
 //First Round -> Dealer gets 1 Card
