@@ -22,7 +22,7 @@ xTo = x;
 yTo = y;
 ySave = y;
 
-image_speed = 0.1;
+animationSpeed = 1;
 
 //Score
 edgeMarginVer = 8;

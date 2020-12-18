@@ -111,7 +111,7 @@ if (onMovingPlatform)
 //Friction
 if (!onMovingPlatform)
 {
-	frictionActive_scr(id, true);
+	frictionActive_scr(id);
 }
 
 //Gravity
@@ -135,7 +135,7 @@ if (movement && !isZombie)
 		    dash_scr();
 		}
 	}
-	if (dashDelay > 0)
+	if (dashDelay >= 0)
 	{
 		dashDelay -= global.dt;
 	}

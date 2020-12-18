@@ -72,7 +72,7 @@ xTo = x;
 yTo = y - 16;
 ySave = y;
 
-image_speed = 0.1;
+animationSpeed = 1;
 
 //Infection Overlay
 showInfOverlay = false;
