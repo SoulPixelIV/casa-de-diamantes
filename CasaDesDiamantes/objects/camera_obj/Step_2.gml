@@ -45,7 +45,7 @@ if (follow == goldenElevatorDirtyForeground_obj)
 }
 
 //Snap camera when close enough
-if (x < xTo + 4 && x > xTo - 4 && !shake)
+if (x < xTo + 2 && x > xTo - 2 && !shake)
 {
 	x = xTo;
 }
@@ -60,9 +60,9 @@ if (follow == camera_obj)
 }
 else
 {
-	if (y < yTo + 4 && y > yTo - 4 && !shake)
+	if (y < (yTo - cameraYBorder) + 1 && y > (yTo - cameraYBorder) - 1 && !shake)
 	{
-		y = yTo;
+		y = yTo - cameraYBorder;
 	}
 	else
 	{
