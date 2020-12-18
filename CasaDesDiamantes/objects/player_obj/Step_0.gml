@@ -109,24 +109,9 @@ if (onMovingPlatform)
 }
 
 //Friction
-if (!huggingWall)
-{
-	frictionActive = true;
-}
-else
-{
-	frictionActive = false;
-}
 if (!onMovingPlatform)
 {
-	if (frictionActive)
-	{
-		frictionActive_scr(id, true);
-	}
-	else
-	{
-		frictionActive_scr(id, false);
-	}
+	frictionActive_scr(id, true);
 }
 
 //Gravity

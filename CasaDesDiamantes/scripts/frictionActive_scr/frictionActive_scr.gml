@@ -43,6 +43,7 @@ function frictionActive_scr(instance, frictionActive) {
 	}
 	else
 	{
+		/*
 		if (instance.horspeed > 0)
 		{
 			if (!instance.isDashing)
@@ -79,7 +80,6 @@ function frictionActive_scr(instance, frictionActive) {
 				instance.horspeed = 0;
 			}
 		}
+		*/
 	}
-
-
 }
