@@ -22,6 +22,8 @@ playerSlot = 2;
 dealerSlot = 1;
 dealerDraws = false;
 transactionComplete = false;
+numberofAces = 0;
+numberofAcesDealer = 0;
 
 holdingCard = false;
 
@@ -53,11 +55,18 @@ for (i = 0; i < 2; i++)
 		    break;
 	}
 	playerSum += blackjackConverter_scr(chosenDeck[chosenCard]);
+	
+	//Check if card is ace
+	if (blackjackConverter_scr(chosenDeck[chosenCard]) == 11)
+	{
+		numberofAces++;
+	}
+	
 	chosenDeck[chosenCard] = -2;
 }
 
 //Check if already Blackjack
-if (playerSum == 21)
+if (playerSum == 21 - (10 * numberofAces))
 {
 	screen = 2;
 }
@@ -85,4 +94,11 @@ switch (chosenDeck) {
 		break;
 }
 dealerSum += blackjackConverter_scr(chosenDeck[chosenCard]);
+
+//Check if card is ace
+if (blackjackConverter_scr(chosenDeck[chosenCard]) == 11)
+{
+	numberofAcesDealer++;
+}
+	
 chosenDeck[chosenCard] = -2;

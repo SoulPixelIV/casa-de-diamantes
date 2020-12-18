@@ -32,13 +32,10 @@ if (scoreSpinTimer < 0)
 //Blackjack System
 
 //Draw Card Sum TEMPORARY
-if (blackJackCalc_obj.screen == 1)
+if (blackJackCalc_obj.screen == 1 || blackJackCalc_obj.screen == 2)
 {
 	//Player Card Sum
-	draw_text(44, 80, blackJackCalc_obj.playerSum);
-
-	//Dealer Card Sum
-	draw_text(44, 20, blackJackCalc_obj.dealerSum);
+	draw_text(xScreenSize - 100, yScreenSize - 30, "Score: " + string(blackJackCalc_obj.playerSum) + " | Small Score: " + string(blackJackCalc_obj.playerSum - (10 * blackJackCalc_obj.numberofAces)));
 }
 
 //Draw Pot
@@ -47,7 +44,7 @@ draw_text(250, 250, "POT: " + string(blackJackCalc_obj.moneypool));
 //DRAW WIN OR LOOSE STATE
 if (blackJackCalc_obj.screen == 2)
 {
-	if (blackJackCalc_obj.playerSum > 21)
+	if (blackJackCalc_obj.playerSum > 21 + (10 * blackJackCalc_obj.numberofAces))
 	{
 		//LOOSE
 		draw_set_color(c_black);
@@ -55,7 +52,7 @@ if (blackJackCalc_obj.screen == 2)
 		draw_set_color(make_color_rgb(255, 215, 0));
 		draw_text(xScreenSize / 2, yScreenSize / 3, "LOOSE - CREDITS LOST");
 	}
-	else if (blackJackCalc_obj.dealerSum > 21)
+	else if (blackJackCalc_obj.dealerSum > 21 + (10 * blackJackCalc_obj.numberofAcesDealer))
 	{
 		//WIN NORMAL
 		draw_set_color(c_black);
@@ -82,7 +79,7 @@ if (blackJackCalc_obj.screen == 2)
 			draw_text(xScreenSize / 2, yScreenSize / 3, "BLACKJACK - TRIPPLE CREDITS");
 		}
 	}
-	else if (blackJackCalc_obj.playerSum > blackJackCalc_obj.dealerSum)
+	else if ((blackJackCalc_obj.playerSum - (10 * blackJackCalc_obj.numberofAces)) > (blackJackCalc_obj.dealerSum - (10 * blackJackCalc_obj.numberofAcesDealer)))
 	{
 		//WIN NORMAL
 		draw_set_color(c_black);
@@ -90,7 +87,7 @@ if (blackJackCalc_obj.screen == 2)
 		draw_set_color(make_color_rgb(255, 215, 0));
 		draw_text(xScreenSize / 2, yScreenSize / 3, "WIN - DOUBLE CREDITS");
 	}
-	else if (blackJackCalc_obj.playerSum == blackJackCalc_obj.dealerSum)
+	else if ((blackJackCalc_obj.playerSum - (10 * blackJackCalc_obj.numberofAces)) == (blackJackCalc_obj.dealerSum - (10 * blackJackCalc_obj.numberofAcesDealer)))
 	{
 		//DRAW
 		draw_set_color(c_black);
@@ -98,7 +95,7 @@ if (blackJackCalc_obj.screen == 2)
 		draw_set_color(make_color_rgb(255, 215, 0));
 		draw_text(xScreenSize / 2, yScreenSize / 3, "DRAW - CREDITS BACK");
 	}
-	else if (blackJackCalc_obj.playerSum < blackJackCalc_obj.dealerSum)
+	else if ((blackJackCalc_obj.playerSum - (10 * blackJackCalc_obj.numberofAces)) < (blackJackCalc_obj.dealerSum - (10 * blackJackCalc_obj.numberofAcesDealer)))
 	{
 		//LOOSE
 		draw_set_color(c_black);

@@ -24,11 +24,18 @@ if (drawCard)
 	}
 	playerInstances[playerSlot].image_index = blackjackSpriteConverter_scr(playerDeck[playerSlot]);
 	playerSum += blackjackConverter_scr(chosenDeck[chosenCard]);
+	
+	//Check if card is ace
+	if (blackjackConverter_scr(chosenDeck[chosenCard]) == 11)
+	{
+		numberofAces++;
+	}
+	
 	chosenDeck[chosenCard] = -2;
 	
 	playerSlot++;
 	drawCard = false;
-	if (playerSum >= 21)
+	if (playerSum >= 21 + (10 * numberofAces))
 	{
 		screen = 2;
 	}
@@ -37,7 +44,7 @@ if (drawCard)
 //Dealer draws card
 if (dealerDraws)
 {
-	while (dealerSum < 17)
+	while (dealerSum < 17 - (10 * numberofAcesDealer))
 	{
 		var chosenDeck = choose(heartDeck, diamondDeck, clubDeck, spadeDeck);
 		var chosenCard = choose(0,1,2,3,4,5,6,7,8,9,10,11,12);
@@ -62,6 +69,13 @@ if (dealerDraws)
 		}
 		dealerInstances[dealerSlot].image_index = blackjackSpriteConverter_scr(dealerDeck[dealerSlot]);
 		dealerSum += blackjackConverter_scr(chosenDeck[chosenCard]);
+		
+		//Check if card is ace
+		if (blackjackConverter_scr(chosenDeck[chosenCard]) == 11)
+		{
+			numberofAcesDealer++;
+		}
+
 		chosenDeck[chosenCard] = -2;
 		dealerSlot++;
 	}
@@ -72,11 +86,11 @@ if (dealerDraws)
 //Check Score
 if (screen == 2 && !transactionComplete)
 {
-	if (playerSum > 21)
+	if (playerSum > (21 + (10 * numberofAces)))
 	{
 		//LOOSE
 	}
-	else if (dealerSum > 21)
+	else if (dealerSum > (21 + (10 * numberofAcesDealer)))
 	{
 		//WIN NORMAL
 		global.money += moneypool * 2;
@@ -94,17 +108,17 @@ if (screen == 2 && !transactionComplete)
 			global.money += moneypool * 3;
 		}
 	}
-	else if (playerSum > dealerSum)
+	else if ((playerSum - (10 * numberofAces)) > (dealerSum - (10 * numberofAcesDealer)))
 	{
 		//WIN NORMAL
 		global.money += moneypool * 2;
 	}
-	else if (playerSum == dealerSum)
+	else if ((playerSum - (10 * numberofAces)) == (dealerSum - (10 * numberofAcesDealer)))
 	{
 		//DRAW
 		global.money += moneypool;
 	}
-	else if (playerSum < dealerSum)
+	else if ((playerSum - (10 * numberofAces)) < (dealerSum - (10 * numberofAcesDealer)))
 	{
 		//LOOSE
 	}
@@ -139,7 +153,10 @@ if (screen == 1 || screen == 2)
 				playerInstances[i].currentNumber = i;
 				with (playerInstances[i])
 				{
-					move_towards_point(blackJackCalc_obj.cardTargetX + currentNumber * 32, blackJackCalc_obj.cardTargetY, global.dt * 2);
+					if (!target)
+					{
+						move_towards_point(blackJackCalc_obj.cardTargetX + currentNumber * 32, blackJackCalc_obj.cardTargetY, global.dt * 2);
+					}
 				}
 			}
 			else
@@ -157,7 +174,10 @@ if (screen == 1 || screen == 2)
 				dealerInstances[i].currentNumber = i;
 				with (dealerInstances[i])
 				{
-					move_towards_point(blackJackCalc_obj.cardTargetX + currentNumber * 32, blackJackCalc_obj.cardTargetDealerY, global.dt * 2);
+					if (!target)
+					{
+						move_towards_point(blackJackCalc_obj.cardTargetX + currentNumber * 32, blackJackCalc_obj.cardTargetDealerY, global.dt * 2);
+					}
 				}
 			}
 			else
