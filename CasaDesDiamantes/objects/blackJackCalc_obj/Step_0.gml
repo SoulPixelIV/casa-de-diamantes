@@ -191,6 +191,13 @@ if (screen == 1 || screen == 2)
 	}
 }
 
+//Escape
+if (keyboard_check(vk_escape))
+{
+	global.spawn = 1;
+	room_goto(level_Casino);
+}
+
 
 
 
