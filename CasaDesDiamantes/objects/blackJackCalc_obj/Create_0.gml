@@ -17,7 +17,7 @@ drawCard = false;
 playerSlot = 2;
 dealerSlot = 1;
 dealerDraws = false;
-checkScore = false;
+transactionComplete = false;
 
 holdingCard = false;
 

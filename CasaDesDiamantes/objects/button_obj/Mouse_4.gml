@@ -30,10 +30,9 @@ if (blackJackCalc_obj.screen == 0)
 			cameraBlackjack_obj.scoreSpinTimer = cameraBlackjack_obj.scoreSpinTimerSave;
 		}
 	}
-	else if (start)
+	else if (start && blackJackCalc_obj.moneypool != 0)
 	{
 		blackJackCalc_obj.screen = 1;
-		blackjackBegin_scr();
 	}
 }
 
@@ -53,7 +52,7 @@ if (blackJackCalc_obj.screen == 2)
 {
 	if (back)
 	{
-		blackjackReset();
+		room_restart();
 	}
 }
 

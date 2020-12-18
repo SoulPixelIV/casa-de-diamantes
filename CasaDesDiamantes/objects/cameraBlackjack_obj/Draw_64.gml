@@ -47,36 +47,63 @@ draw_text(250, 250, "POT: " + string(blackJackCalc_obj.moneypool));
 //DRAW WIN OR LOOSE STATE
 if (blackJackCalc_obj.screen == 2)
 {
-	if (blackJackCalc_obj.checkScore)
+	if (blackJackCalc_obj.playerSum > 21)
 	{
-		if ((blackJackCalc_obj.playerSum > 21 || blackJackCalc_obj.playerSum < blackJackCalc_obj.dealerSum) && blackJackCalc_obj.dealerSum < 22)
+		//LOOSE
+		draw_set_color(c_black);
+		draw_text(xScreenSize / 2 - 1, yScreenSize / 3 + 1, "LOOSE - CREDITS LOST");
+		draw_set_color(make_color_rgb(255, 215, 0));
+		draw_text(xScreenSize / 2, yScreenSize / 3, "LOOSE - CREDITS LOST");
+	}
+	else if (blackJackCalc_obj.dealerSum > 21)
+	{
+		//WIN NORMAL
+		draw_set_color(c_black);
+		draw_text(xScreenSize / 2 - 1, yScreenSize / 3 + 1, "WIN - DOUBLE CREDITS");
+		draw_set_color(make_color_rgb(255, 215, 0));
+		draw_text(xScreenSize / 2, yScreenSize / 3, "WIN - DOUBLE CREDITS");
+	}
+	else if (blackJackCalc_obj.playerSum == 21)
+	{	
+		//DRAW
+		if (blackJackCalc_obj.dealerSum == 21)
 		{
-			//LOOSE
-			draw_text(150, 150, "YOU LOOSE!");
-			//blackJackCalc_obj.moneypool = 0;
-			//blackJackCalc_obj.screen = 0;
+			draw_set_color(c_black);
+			draw_text(xScreenSize / 2 - 1, yScreenSize / 3 + 1, "DRAW - CREDITS BACK");
+			draw_set_color(make_color_rgb(255, 215, 0));
+			draw_text(xScreenSize / 2, yScreenSize / 3, "DRAW - CREDITS BACK");
 		}
-		else if (blackJackCalc_obj.dealerSum > 21 || blackJackCalc_obj.playerSum > blackJackCalc_obj.dealerSum)
+		//WIN BLACKJACK
+		else
 		{
-			//WIN
-			draw_text(150, 150, "YOU WIN!");
-			if (!blackJackCalc_obj.finished)
-			{
-				global.money += blackJackCalc_obj.moneypool * 2;
-				//blackJackCalc_obj.moneypool = 0;
-				//blackJackCalc_obj.screen = 0;
-			}	
+			draw_set_color(c_black);
+			draw_text(xScreenSize / 2 - 1, yScreenSize / 3 + 1, "BLACKJACK - TRIPPLE CREDITS");
+			draw_set_color(make_color_rgb(255, 215, 0));
+			draw_text(xScreenSize / 2, yScreenSize / 3, "BLACKJACK - TRIPPLE CREDITS");
 		}
-		else if (blackJackCalc_obj.playerSum == blackJackCalc_obj.dealerSum)
-		{
-			//DRAW
-			draw_text(150, 150, "DRAW!");
-			if (!blackJackCalc_obj.finished)
-			{
-				global.money += blackJackCalc_obj.moneypool;
-				//blackJackCalc_obj.moneypool = 0;
-				//blackJackCalc_obj.screen = 0;
-			}
-		}
+	}
+	else if (blackJackCalc_obj.playerSum > blackJackCalc_obj.dealerSum)
+	{
+		//WIN NORMAL
+		draw_set_color(c_black);
+		draw_text(xScreenSize / 2 - 1, yScreenSize / 3 + 1, "WIN - DOUBLE CREDITS");
+		draw_set_color(make_color_rgb(255, 215, 0));
+		draw_text(xScreenSize / 2, yScreenSize / 3, "WIN - DOUBLE CREDITS");
+	}
+	else if (blackJackCalc_obj.playerSum == blackJackCalc_obj.dealerSum)
+	{
+		//DRAW
+		draw_set_color(c_black);
+		draw_text(xScreenSize / 2 - 1, yScreenSize / 3 + 1, "DRAW - CREDITS BACK");
+		draw_set_color(make_color_rgb(255, 215, 0));
+		draw_text(xScreenSize / 2, yScreenSize / 3, "DRAW - CREDITS BACK");
+	}
+	else if (blackJackCalc_obj.playerSum < blackJackCalc_obj.dealerSum)
+	{
+		//LOOSE
+		draw_set_color(c_black);
+		draw_text(xScreenSize / 2 - 1, yScreenSize / 3 + 1, "LOOSE - CREDITS LOST");
+		draw_set_color(make_color_rgb(255, 215, 0));
+		draw_text(xScreenSize / 2, yScreenSize / 3, "LOOSE - CREDITS LOST");
 	}
 }
