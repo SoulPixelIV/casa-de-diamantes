@@ -4,7 +4,7 @@
 /// @param  {real}  _fade       How quickly the screenshake effect will fade out
 /// @description    Set the screenshake object variables.
 
-function screenshake(_time, _magnitude, _fade)
+function screenshake(_time, _magnitude, _fade, target)
 {
    with (camera_obj)
    {
@@ -12,5 +12,6 @@ function screenshake(_time, _magnitude, _fade)
       shake_time = _time;
       shake_magnitude = _magnitude;
       shake_fade = _fade;
+	  shake_id = target;
    }
 }

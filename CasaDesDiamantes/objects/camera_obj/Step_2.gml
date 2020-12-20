@@ -11,7 +11,11 @@ if (follow != noone)
 }
 
 if (shake) 
-{ 
+{
+	if (distance_to_object(shake_id) > 300)
+	{
+		shake = false;
+	}
 	shake_time -= global.dt; 
 	xTo += choose(-shake_magnitude, shake_magnitude); 
 	//yTo += choose(-shake_magnitude, shake_magnitude); 
