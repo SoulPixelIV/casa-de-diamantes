@@ -308,6 +308,8 @@ if (grounded)
 if (!movement)
 {
 	invincible = true;
+	horspeed = 0;
+	verspeed = 0;
 }
 else
 {
