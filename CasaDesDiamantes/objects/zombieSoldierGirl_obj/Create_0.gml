@@ -2,8 +2,6 @@
 
 horspeed = 0;
 verspeed = 0;
-playerSightMax = 256;
-playerSightMin = 32;
 hp = 85;
 colliding = true;
 level = 1;
