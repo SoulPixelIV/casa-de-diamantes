@@ -18,8 +18,8 @@ function jump_scr() {
 		part_emitter_burst(global.partSystem, partEmitter, global.playerPart, 50);
 		part_emitter_destroy(global.partSystem, partEmitter);
 	}
-	//Dash Momentum after jump  || (player_obj.isDashing && !player_obj.grounded && place_free(x + 32, y) && place_free(x - 32, y)))
-	if (player_obj.isDashing && place_free(x, y - 32))
+	//Dash Momentum after jump
+	if ((player_obj.isDashing && place_free(x, y - 32)))
 	{
 		player_obj.stoppedDashing = true;
 		if (player_obj.horspeed == 0)

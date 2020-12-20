@@ -141,16 +141,15 @@ if (movement && !isZombie)
 	}
 	
 	//Cancel Dash
-	if (stoppedDashing)
+	if (stoppedDashing || onLadder)
 	{
-		dashTimer -= global.dt;
+		if (place_free(x, y + 32))
+		{
+			isDashing = false;
+			stoppedDashing = false;
+		}
 	}
-	if ((dashTimer < 0 || onLadder) && place_free(x, y + 32))
-	{
-		isDashing = false;
-		stoppedDashing = false;
-		dashTimer = dashTimerSave;
-	}
+	
 	//Short Jump
 	if (key_jump_release && fullJump == false && !isDashing && !flip)
 	{
@@ -881,7 +880,7 @@ if (hp <= 0 || infection < 0)
 	}
 	
 	//Revive
-	if (keyboard_check_pressed(ord("E")) && syringes > 0)
+	if (keyboard_check_pressed(ord("E")) && syringes > 0 && !place_meeting(x, y, toxicWater_obj))
 	{
 		revive_scr();
 	}
