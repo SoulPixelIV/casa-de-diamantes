@@ -426,6 +426,10 @@ if (!place_meeting(x, y, ladder_obj))
 
 if (onLadder)
 {
+	if (!keyboard_check(ord("A")) && !keyboard_check(ord("D")))
+	{
+		horspeed = 0;
+	}
 	if (keyboard_check(ord("W")))
 	{
 		verspeed = -0.75;
