@@ -125,4 +125,4 @@ letterDelaySave = letterDelay;
 partMovement = 0;
 partDir = 0;
 
-smoothness = 0.5;
+smoothness = 0.15;
