@@ -10,6 +10,8 @@ restartInProg = false;
 
 room_speed = TARGET_FRAMERATE;
 
+application_surface_draw_enable(false);
+
 global.optixFont = font_add("Optixal.ttf", 12, false, false, 32, 128);
 global.casinoFont = font_add("Casino3DFilledMarquee.ttf", 30, false, false, 32, 128);
 global.optixFontBig = font_add("Optixal.ttf", 14, true, false, 32, 128);

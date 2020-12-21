@@ -1,6 +1,8 @@
 edgeMarginVer = 11;
 edgeMarginHor = 17;
 
+draw_text(100, 100, smoothness);
+
 //#####LAYER 0#####
 
 //Lens Dirt + Vignette

@@ -17,5 +17,3 @@ if(exists) {
 	// Draw the shadow map
 	draw_shadow_map(camera[eLightingCamera.X], camera[eLightingCamera.Y]);
 }
-
-//draw_colorbanding(application_surface,camera_obj.x - camera_obj.xScreenSize / 2,camera_obj.y - camera_obj.yScreenSize / 2,smoothness);

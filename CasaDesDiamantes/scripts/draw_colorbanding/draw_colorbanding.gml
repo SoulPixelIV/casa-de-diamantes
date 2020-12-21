@@ -20,8 +20,12 @@ function draw_colorbanding_ext(surface,x,y,xscale,yscale,rot,col,alpha,smoothnes
 		shader_get_uniform(shd_colorbanding,"smoothness"),
 		smoothness
 	);
-	
+
 	draw_surface_ext(surface,x,y,xscale,yscale,rot,col,alpha);
+	
+	window_set_size(camera_obj.xWindowSize, camera_obj.yWindowSize);
+	surface_resize(application_surface, camera_obj.xScreenSize, camera_obj.yScreenSize);
+	display_set_gui_size(camera_obj.xWindowSize / 2, camera_obj.yWindowSize / 2);
 	
 	shader_reset();
 }
