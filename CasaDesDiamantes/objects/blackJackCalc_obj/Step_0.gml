@@ -148,14 +148,14 @@ if (screen == 1 || screen == 2)
 	{
 		if (playerDeck[i] != -1 && instance_exists(playerInstances[i]))
 		{
-			if ((playerInstances[i].x > (cardTargetX + i * 32) + 4 || playerInstances[i].x < (cardTargetX + i * 32) - 4) || (playerInstances[i].y > cardTargetY + 4 || playerInstances[i].y < cardTargetY - 4))
+			if ((playerInstances[i].x > (cardTargetX + i * 37 + 2) + 4 || playerInstances[i].x < (cardTargetX + i * 37 + 2) - 4) || (playerInstances[i].y > cardTargetY + 4 || playerInstances[i].y < cardTargetY - 4))
 			{
 				playerInstances[i].currentNumber = i;
 				with (playerInstances[i])
 				{
 					if (!target)
 					{
-						move_towards_point(blackJackCalc_obj.cardTargetX + currentNumber * 32, blackJackCalc_obj.cardTargetY, global.dt * 2);
+						move_towards_point(blackJackCalc_obj.cardTargetX + currentNumber * 37 + 2, blackJackCalc_obj.cardTargetY, global.dt * 2);
 					}
 				}
 			}
@@ -169,14 +169,14 @@ if (screen == 1 || screen == 2)
 		}
 		if (dealerDeck[i] != -1 && instance_exists(dealerInstances[i]))
 		{
-			if ((dealerInstances[i].x > (cardTargetX + i * 32) + 4 || dealerInstances[i].x < (cardTargetX + i * 32) - 4) || (dealerInstances[i].y > cardTargetDealerY + 4 || dealerInstances[i].y < cardTargetDealerY - 4))
+			if ((dealerInstances[i].x > (cardTargetX + i * 37 + 2) + 4 || dealerInstances[i].x < (cardTargetX + i * 37 + 2) - 4) || (dealerInstances[i].y > cardTargetDealerY + 4 || dealerInstances[i].y < cardTargetDealerY - 4))
 			{
 				dealerInstances[i].currentNumber = i;
 				with (dealerInstances[i])
 				{
 					if (!target)
 					{
-						move_towards_point(blackJackCalc_obj.cardTargetX + currentNumber * 32, blackJackCalc_obj.cardTargetDealerY, global.dt * 2);
+						move_towards_point(blackJackCalc_obj.cardTargetX + currentNumber * 37 + 2, blackJackCalc_obj.cardTargetDealerY, global.dt * 2);
 					}
 				}
 			}
