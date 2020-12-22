@@ -1,7 +1,7 @@
 /// @description Shortcuts
 
-global.dt = clamp(((delta_time / 1000000) * 185) * realTimeScale, 0.1, 3);
-global.dtNoSlowmo = clamp((delta_time / 1000000) * 185, 0.1, 3);
+global.dt = ((delta_time / 1000000) * 185) * realTimeScale;
+global.dtNoSlowmo = (delta_time / 1000000) * 185;
 
 //Timescale
 if (realTimeScale < global.timeScale)

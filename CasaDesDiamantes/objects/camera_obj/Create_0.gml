@@ -1,7 +1,8 @@
 xScreenSize = 480;
 yScreenSize = 270;
-xWindowSize = xScreenSize * 2;
-yWindowSize = yScreenSize * 2;
+zoom = 2;
+xWindowSize = xScreenSize * zoom;
+yWindowSize = yScreenSize * zoom;
 xScreenSizeNew = x;
 yScreenSizeNew = y;
 cameraSpeed = 1;
@@ -125,4 +126,4 @@ letterDelaySave = letterDelay;
 partMovement = 0;
 partDir = 0;
 
-smoothness = 0.15;
+smoothness = 0.3;

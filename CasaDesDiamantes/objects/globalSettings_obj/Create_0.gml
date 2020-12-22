@@ -10,7 +10,7 @@ restartInProg = false;
 
 room_speed = TARGET_FRAMERATE;
 
-application_surface_draw_enable(false);
+//application_surface_draw_enable(false);
 
 global.optixFont = font_add("Optixal.ttf", 12, false, false, 32, 128);
 global.casinoFont = font_add("Casino3DFilledMarquee.ttf", 30, false, false, 32, 128);
@@ -20,8 +20,8 @@ global.optixFontHuge = font_add("Optixal.ttf", 18, true, false, 32, 128);
 //ideal_delta_time = 1000000 / room_speed;
 //global.dt = clamp((delta_time / ideal_delta_time) * realTimeScale, 0.1, 3);
 //global.dtNoSlowmo = clamp(delta_time / ideal_delta_time, 0.1, 3);
-global.dt = clamp(((delta_time / 1000000) * 185) * realTimeScale, 0.1, 3);
-global.dtNoSlowmo = clamp((delta_time / 1000000) * 185, 0.1, 3);
+global.dt = ((delta_time / 1000000) * 185) * realTimeScale;
+global.dtNoSlowmo = (delta_time / 1000000) * 185;
 
 global.tilemap = layer_tilemap_get_id("TileCollider");
 

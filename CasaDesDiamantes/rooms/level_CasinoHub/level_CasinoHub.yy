@@ -18,7 +18,6 @@
         {"properties":[],"isDnd":false,"objectId":{"name":"camera_obj","path":"objects/camera_obj/camera_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":32.0,"y":0.0,"resourceVersion":"1.0","name":"inst_60D51684","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_light_renderer","path":"objects/obj_light_renderer/obj_light_renderer.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":0.0,"y":0.0,"resourceVersion":"1.0","name":"inst_3488CB4","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"particleSystem_obj","path":"objects/particleSystem_obj/particleSystem_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":64.0,"y":0.0,"resourceVersion":"1.0","name":"inst_7FADE0DE","tags":[],"resourceType":"GMRInstance",},
-        {"properties":[],"isDnd":false,"objectId":{"name":"cameraViewOut_obj","path":"objects/cameraViewOut_obj/cameraViewOut_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":71.0,"scaleY":31.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1904.0,"y":272.0,"resourceVersion":"1.0","name":"inst_5DD0254E","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"GameManagerLayer","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"spotlightRed_obj","path":"objects/spotlightRed_obj/spotlightRed_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":81.0,"y":477.0,"resourceVersion":"1.0","name":"inst_54B41404","tags":[],"resourceType":"GMRInstance",},
@@ -504,7 +503,6 @@
     {"name":"inst_6887AAD0","path":"rooms/level_CasinoHub/level_CasinoHub.yy",},
     {"name":"inst_3D4F4191","path":"rooms/level_CasinoHub/level_CasinoHub.yy",},
     {"name":"inst_6FFB15BA","path":"rooms/level_CasinoHub/level_CasinoHub.yy",},
-    {"name":"inst_5DD0254E","path":"rooms/level_CasinoHub/level_CasinoHub.yy",},
     {"name":"inst_4936BF8","path":"rooms/level_CasinoHub/level_CasinoHub.yy",},
     {"name":"inst_5147E982","path":"rooms/level_CasinoHub/level_CasinoHub.yy",},
     {"name":"inst_51B81B11","path":"rooms/level_CasinoHub/level_CasinoHub.yy",},
