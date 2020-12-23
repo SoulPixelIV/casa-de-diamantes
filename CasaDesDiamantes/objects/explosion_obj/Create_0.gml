@@ -1,4 +1,4 @@
-damage = 30;
+damage = 42;
 knockback = 3;
 dealtDamage = false;
 animationSpeed = 1;

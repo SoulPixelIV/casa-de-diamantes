@@ -20,7 +20,7 @@ if (invincibilityTimer <= 0)
 
 if (place_meeting(x, y, player_obj) && !player_obj.isZombie && !player_obj.invincible && !player_obj.damageRecieved)
 {
-	player_obj.hp -= 22;
+	player_obj.hp -= 28;
 	player_obj.damageRecieved = true;
 	player_obj.damageCooldown = player_obj.damageCooldownSave;
 	camera_obj.hitVignette = true;

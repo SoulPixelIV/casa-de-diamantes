@@ -1,5 +1,4 @@
 value = [0,0,0,0,0,0,0,0]
 
-timer = 1;
+timer = 200;
 timerSave = timer;
-alarm[0] = 1;
