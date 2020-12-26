@@ -784,6 +784,12 @@ if (!isZombie && !reloading)
 image_speed = 0;
 image_index += (global.dt / 15) * animationSpeed;
 
+spriteAnimation = image_index;
+if (spriteAnimation > image_number)
+{
+	spriteAnimation = 0;
+}
+
 switch (sprite_index)
 {
 	case player_spr:
@@ -1003,4 +1009,16 @@ else
 	{
 		audio_stop_sound(slide_snd);
 	}
+}
+
+//Lock Movement when no window focus
+if (!window_has_focus())
+{
+	movement = false;
+	setMovAfterScreen = true;
+}
+else if (setMovAfterScreen)
+{
+	movement = true;
+	setMovAfterScreen = false;
 }

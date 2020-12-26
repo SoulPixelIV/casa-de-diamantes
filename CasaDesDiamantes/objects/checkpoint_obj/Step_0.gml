@@ -1,4 +1,6 @@
-image_index += global.dt / 15 * 0.1;
+//Animation
+image_speed = 0;
+image_index += (global.dt / 15) * animationSpeed;
 
 if (distance_to_object(player_obj) < 32)
 {

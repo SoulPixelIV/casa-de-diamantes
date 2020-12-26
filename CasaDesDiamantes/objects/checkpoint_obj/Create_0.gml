@@ -1,3 +1,6 @@
+image_speed = 0;
+animationSpeed = 0.3;
+
 //Create Emitter
 emitter = audio_emitter_create();
 audio_max_distance = 600;

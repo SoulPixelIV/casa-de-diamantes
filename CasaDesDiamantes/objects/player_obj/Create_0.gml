@@ -82,6 +82,8 @@ deathActivated = false;
 deathSlowmo = false;
 firstPosX = x;
 firstPosY = y;
+spriteAnimation = 0;
+setMovAfterScreen = false;
 
 if (global.unlockedWeapon[0] == true || global.unlockedWeapon[1] == true || global.unlockedWeapon[2] == true)
 {

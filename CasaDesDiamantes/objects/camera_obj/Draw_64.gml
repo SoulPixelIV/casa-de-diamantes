@@ -59,6 +59,7 @@ if (hitVignetteTimer < 0)
 	hitVignetteTimer = hitVignetteTimerSave;
 }
 
+shader_reset();
 draw_set_alpha(vignetteAlpha);
 draw_ellipse_colour(-200, -200, xScreenSize + 200, yScreenSize + 200, c_black , c_red, false);
 draw_set_alpha(1);

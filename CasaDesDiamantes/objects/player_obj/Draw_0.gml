@@ -78,3 +78,5 @@ else
 {
 	draw_self();
 }
+
+//draw_sprite_ext(christmasHat_spr, spriteAnimation, x - (2 * -currDir), y - 19, -currDir, 1, 0, -1, 1);
