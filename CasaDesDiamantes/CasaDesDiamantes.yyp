@@ -714,6 +714,7 @@
     {"id":{"name":"switchableSpikes_spr","path":"sprites/switchableSpikes_spr/switchableSpikes_spr.yy",},"order":92,},
     {"id":{"name":"r_test","path":"rooms/r_test/r_test.yy",},"order":2,},
     {"id":{"name":"playerPistol_spr","path":"sprites/playerPistol_spr/playerPistol_spr.yy",},"order":16,},
+    {"id":{"name":"chaingunTurretFlash_spr","path":"sprites/chaingunTurretFlash_spr/chaingunTurretFlash_spr.yy",},"order":104,},
     {"id":{"name":"testRoom3","path":"rooms/testRoom3/testRoom3.yy",},"order":3,},
     {"id":{"name":"button_spr","path":"sprites/button_spr/button_spr.yy",},"order":34,},
     {"id":{"name":"testRoom2","path":"rooms/testRoom2/testRoom2.yy",},"order":4,},

@@ -82,3 +82,48 @@ if (shootDelay < 0)
 	instance_create_layer(random_range(x - 7, x + 8), y, "Instances", bulletChaingun_obj);
 	shootDelay = 5;
 }
+
+//###Death###
+if (hp < 0)
+{
+	var deathCross = instance_create_layer(x, y - 8, "ForegroundObjects", deathCross_obj);
+	
+	//Enemy Slowmo
+	var randNum = choose(1,2,3,4,5,6,7,8,9);
+	if (randNum == 9)
+	{
+		player_obj.enemySlowmo = true;
+		camera_obj.follow = deathCross;
+	}
+
+	//Drop Money
+	var maxAmount = random_range(moneyDropMin, moneyDropMax);
+	for (i = 0; i < maxAmount; i++)
+	{
+		chip = choose(1,1,2)
+		
+		if (chip == 1)
+		{
+			instance_create_layer(x, y - 16, "Instances", chipBluePickup_obj);
+		}
+		if (chip == 2)
+		{
+			instance_create_layer(x, y - 16, "Instances", chipRedPickup_obj);
+		}
+	}
+	damageTint = false;
+	instance_change(zombieGirlDeath2_obj, true);
+}
+
+if (damageTint && sprite_index != zombieGirlFlashHeadshot_spr)
+{
+	sprite_index = chaingunTurretFlash_spr;
+	damageTintTimer -= global.dt;
+}
+
+if (damageTintTimer < 0)
+{
+	sprite_index = chaingunTurret_spr;
+	damageTintTimer = damageTintTimerSave;
+	damageTint = false;
+}
