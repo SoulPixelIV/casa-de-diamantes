@@ -14,9 +14,17 @@ tutorialAnimTimer = 150;
 tutorialAnimImage = 0;
 reloadAnimTimer = 25;
 reloadFailed = false;
+cameraTarget = false;
+cameraTargetTimer = 500;
+
+cameraSpeed = 0.1;
+ycameraSpeed = 0.02;
+originalCameraSpeed = cameraSpeed;
+originalyCameraSpeed = ycameraSpeed;
 
 reloadAnimTimerSave = reloadAnimTimer;
 tutorialAnimTimerSave = tutorialAnimTimer;
+cameraTargetTimerSave = cameraTargetTimer;
 
 shake = false;
 shake_time = 0;

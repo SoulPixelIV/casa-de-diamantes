@@ -4,3 +4,4 @@ image_index = 0;
 
 used = false;
 playedSound = false;
+usedCamera = false;

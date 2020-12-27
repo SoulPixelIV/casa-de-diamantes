@@ -10,6 +10,24 @@ if (follow != noone)
 	}
 }
 
+//Camera Target
+if (cameraTarget)
+{
+	cameraTargetTimer -= global.dt;
+	follow = instance_nearest(x, y, cameraTarget_obj);
+	cameraSpeed = 0.01;
+	ycameraSpeed = 0.01;
+}
+
+if (cameraTargetTimer < 0)
+{
+	follow = player_obj;
+	cameraTargetTimer = cameraTargetTimerSave;
+	cameraTarget = false;
+	cameraSpeed = originalCameraSpeed;
+	ycameraSpeed = originalyCameraSpeed;
+}
+
 if (shake) 
 {
 	if (!is_undefined(shake_id))
@@ -35,7 +53,7 @@ if (shake)
 }
 
 //Floating Camera
-if (follow == camera_obj)
+if (follow == camera_obj && !cameraTarget)
 {
 	xTo = player_obj.x + (mouse_x - player_obj.x) / 2;
 	yTo = (player_obj.y + cameraYBorder) + (mouse_y - (player_obj.y + cameraYBorder)) / 2;
@@ -58,12 +76,12 @@ if (x < xTo + 2 && x > xTo - 2 && !shake)
 }
 else
 {
-	x += (xTo - x) * (global.dtNoSlowmo / 10);
+	x += (xTo - x) * (global.dtNoSlowmo * cameraSpeed);
 }
 
 if (follow == camera_obj)
 {
-	y += (yTo - y - cameraYBorder) * (global.dtNoSlowmo / 10);
+	y += (yTo - y - cameraYBorder) * (global.dtNoSlowmo * cameraSpeed);
 }
 else
 {
@@ -73,7 +91,7 @@ else
 	}
 	else
 	{
-		y += (yTo - y - cameraYBorder) * (global.dtNoSlowmo / 50);
+		y += (yTo - y - cameraYBorder) * (global.dtNoSlowmo * ycameraSpeed);
 	}
 }
 

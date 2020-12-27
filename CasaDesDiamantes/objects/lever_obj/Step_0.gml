@@ -82,6 +82,12 @@ if ((distance_to_object(player_obj) < 32 && keyboard_check_pressed(ord("W"))) ||
 			}
 		}
 	}
+	// Camera Target
+	if (activateCamera && !usedCamera)
+	{
+		camera_obj.cameraTarget = true;
+		usedCamera = true;
+	}
 }
 
 if (!audio_is_playing(lever_snd))
