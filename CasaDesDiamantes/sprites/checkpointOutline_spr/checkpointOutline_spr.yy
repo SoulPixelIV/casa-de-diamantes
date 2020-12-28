@@ -59,7 +59,7 @@
     "backdropXOffset": 0.0,
     "backdropYOffset": 0.0,
     "xorigin": 17,
-    "yorigin": 59,
+    "yorigin": 58,
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"checkpointOutline_spr","path":"sprites/checkpointOutline_spr/checkpointOutline_spr.yy",},
