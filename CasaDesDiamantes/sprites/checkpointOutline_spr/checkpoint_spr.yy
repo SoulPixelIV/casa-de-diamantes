@@ -64,7 +64,7 @@
     "eventStubScript": null,
     "parent": {"name":"checkpoint_spr","path":"sprites/checkpoint_spr/checkpoint_spr.yy",},
     "resourceVersion": "1.3",
-    "name": "checkpoint_spr",
+    "name": "",
     "tags": [],
     "resourceType": "GMSequence",
   },
