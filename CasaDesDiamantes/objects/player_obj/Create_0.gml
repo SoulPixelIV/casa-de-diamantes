@@ -25,8 +25,8 @@ flipUsed = false;
 onMovingPlatform = false;
 
 //Action
-hp = 100;
-syringes = 1;
+hp = 10;
+syringes = 3;
 zombieTimer = 1550;
 slowmoTimer = 260;
 damageCooldown = 400;

@@ -71,7 +71,7 @@ if (!noHUD)
 	draw_set_font(global.optixFont);
 	draw_set_color(c_white);
 	//Debug
-	draw_text_colour(edgeMarginHor, 252, "Framerate: " + string(fps), c_white, c_white, c_white, c_white, 1);
+	//draw_text_colour(edgeMarginHor, 252, "Framerate: " + string(fps), c_white, c_white, c_white, c_white, 1);
 
 	//Healthbar
 	draw_sprite_ext(healthbarBorder_spr, 0, edgeMarginHor, edgeMarginVer, 1, 1, 0, -1, 1);
@@ -80,7 +80,7 @@ if (!noHUD)
 	//Healthcut
 	if (player_obj.syringesLost > 0)
 	{
-		draw_sprite_ext(healthCut_spr, 0, 32, 82 + 52 * (player_obj.syringesLost - 1), 1, 1, 0, -1, 1);
+		draw_sprite_ext(healthCut_spr, 0, edgeMarginHor, 32 - player_obj.maxhp, 1, 1, 0, -1, 1);
 	}
 
 	//Syringes
@@ -232,4 +232,7 @@ draw_rectangle(-300, -225, 1600, 1150, false);
 draw_set_alpha(1);
 
 //#####LAYER 4#####
-draw_sprite(guiBorder_spr, 0, 0, 0);
+if (!noHUD)
+{
+	draw_sprite(guiBorder_spr, 0, 0, 0);
+}
