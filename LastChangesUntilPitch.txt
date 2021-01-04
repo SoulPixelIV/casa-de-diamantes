@@ -1,0 +1,9 @@
+- Draw Title [ASSET]
+
+- Change shopworker sprite [ASSET]
+
+- Add fake shop menu [FEATURE]
+
+- Finish up casino interior & exterior [POLISH]
+
+- Soundeffects [POLISH]
