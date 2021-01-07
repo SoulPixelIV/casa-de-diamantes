@@ -55,7 +55,32 @@ if (keyboard_check_pressed(vk_f1))
 	part_emitter_destroy_all(global.partSystem);
 	room_restart();
 }
-
+if (keyboard_check_pressed(vk_f2))
+{
+	part_emitter_destroy_all(global.partSystem);
+	instance_destroy(player_obj);
+	room_goto(level0_RoadToCasino);
+	global.spawn = 0;
+}
+if (keyboard_check_pressed(vk_f3))
+{
+	part_emitter_destroy_all(global.partSystem);
+	instance_destroy(player_obj);
+	room_goto(level1_RoadToCasino);
+}
+if (keyboard_check_pressed(vk_f4))
+{
+	part_emitter_destroy_all(global.partSystem);
+	instance_destroy(player_obj);
+	room_goto(level_CasinoHub);
+}
+if (keyboard_check_pressed(vk_f5))
+{
+	part_emitter_destroy_all(global.partSystem);
+	instance_destroy(player_obj);
+	room_goto(level1_SenzelaForest);
+}
+/*
 if (keyboard_check_pressed(vk_f11))
 {
 	global.gamma -= 0.1;
@@ -64,6 +89,8 @@ if (keyboard_check_pressed(vk_f12))
 {
 	global.gamma += 0.1;
 }
+*/
+
 if (room == level1_RoadToCasino || room == level0_RoadToCasino)
 {
 	global.ambientShadowIntensity = 0.35 * global.gamma;
