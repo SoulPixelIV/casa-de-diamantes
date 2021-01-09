@@ -158,6 +158,14 @@ if (showWindowMenu)
 {
 	draw_sprite_ext(menuWindow_spr, 0, xScreenSize / 2, (yScreenSize / 2) + windowMenuOffset, 1, 1, 0, -1, 1);
 	
+	draw_set_font(gothicPixel_fnt);
+	draw_set_halign(fa_center);
+	draw_set_color(c_black);
+	draw_text(xScreenSize / 2 - 1, (yScreenSize / 2) + 86 + 1, "Press Esc to Cancel");
+	draw_set_color(make_color_rgb(255, 215, 0));
+	draw_text(xScreenSize / 2, (yScreenSize / 2) + 86, "Press Esc to Cancel");
+	draw_set_halign(fa_left);
+	
 	//Draw items
 	if (windowType == 1)
 	{
