@@ -153,6 +153,82 @@ if (!noHUD)
 
 //#####LAYER 2#####
 
+//Menu Window
+if (showWindowMenu)
+{
+	draw_sprite_ext(menuWindow_spr, 0, xScreenSize / 2, (yScreenSize / 2) + windowMenuOffset, 1, 1, 0, -1, 1);
+	
+	//Draw items
+	if (windowType == 1)
+	{
+		//Names
+		draw_set_font(gothicPixel_fnt);
+		draw_set_halign(fa_center);
+		draw_set_color(c_black);
+		draw_text(xScreenSize / 2 - 1, (((yScreenSize / 2) + windowMenuOffset) - 48) + 1, "Shotgun");
+		draw_text((xScreenSize / 2) + 86 - 1, (((yScreenSize / 2) + windowMenuOffset) - 48) + 1, "Jetpack");
+		draw_text((xScreenSize / 2) - 86 - 1, (((yScreenSize / 2) + windowMenuOffset) - 48) + 1, "Pistol Lasersight");
+		draw_set_color(make_color_rgb(255, 215, 0));
+		draw_text(xScreenSize / 2, ((yScreenSize / 2) + windowMenuOffset) - 48, "Shotgun");
+		draw_text((xScreenSize / 2) + 86, ((yScreenSize / 2) + windowMenuOffset) - 48, "Jetpack");
+		draw_text((xScreenSize / 2) - 86, ((yScreenSize / 2) + windowMenuOffset) - 48, "Pistol Lasersight");
+		draw_set_halign(fa_left);
+		//Frames
+		draw_sprite(itemFrame_spr, 0, xScreenSize / 2, (yScreenSize / 2) + windowMenuOffset);
+		draw_sprite(itemFrame_spr, 0, (xScreenSize / 2) + 86, (yScreenSize / 2) + windowMenuOffset);
+		draw_sprite(itemFrame_spr, 0, (xScreenSize / 2) - 86, (yScreenSize / 2) + windowMenuOffset);
+		//Descriptions
+		draw_set_font(gothicPixel_fnt);
+		draw_set_halign(fa_center);
+		draw_set_color(c_black);
+		draw_text(xScreenSize / 2 - 1, (((yScreenSize / 2) + windowMenuOffset) + 42) + 1, "1350$");
+		draw_text((xScreenSize / 2) + 86 - 1, (((yScreenSize / 2) + windowMenuOffset) + 42) + 1, "3850$");
+		draw_text((xScreenSize / 2) - 86 - 1, (((yScreenSize / 2) + windowMenuOffset) + 42) + 1, "215$");
+		if (global.money > 1349)
+		{
+			draw_set_color(make_color_rgb(255, 215, 0));
+		}
+		else
+		{
+			draw_set_color(c_red);
+		}
+		draw_text(xScreenSize / 2, ((yScreenSize / 2) + windowMenuOffset) + 42, "1350$");
+		if (global.money > 3849)
+		{
+			draw_set_color(make_color_rgb(255, 215, 0));
+		}
+		else
+		{
+			draw_set_color(c_red);
+		}
+		draw_text((xScreenSize / 2) + 86, ((yScreenSize / 2) + windowMenuOffset) + 42, "3850$");
+		if (global.money > 214)
+		{
+			draw_set_color(make_color_rgb(255, 215, 0));
+		}
+		else
+		{
+			draw_set_color(c_red);
+		}
+		draw_text((xScreenSize / 2) - 86, ((yScreenSize / 2) + windowMenuOffset) + 42, "215$");
+		draw_set_halign(fa_left);
+	}
+	
+	if (windowMenuOffset < 4)
+	{
+		windowMenuOffset = 0;
+	}
+	else
+	{
+		windowMenuOffset -= global.dt * 1.5;
+	}
+}
+else
+{
+	windowMenuOffset = windowMenuOffsetSave;
+	windowType = 0;
+}
+
 draw_set_alpha(1);
 
 //Infectiontext

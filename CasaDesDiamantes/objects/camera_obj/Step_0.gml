@@ -13,3 +13,12 @@ if (keyboard_check_pressed(ord("J")))
 		noHUD = true;
 	}
 }
+
+if (showWindowMenu)
+{
+	if (keyboard_check_pressed(vk_escape))
+	{
+		dialogueLine++;
+		showWindowMenu = false;
+	}
+}

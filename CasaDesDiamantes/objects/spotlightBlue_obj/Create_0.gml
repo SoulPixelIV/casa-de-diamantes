@@ -4,6 +4,6 @@
 // Inherit the parent event
 event_inherited();
 
-flickerTimer = 8;
+flickerTimer = 16;
 flickerTimerSave = flickerTimer
 

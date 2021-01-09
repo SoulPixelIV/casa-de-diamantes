@@ -78,9 +78,17 @@ if (string_char_at(dialogue[dialogueLine], 1) == "@")
 {
 	character = shopWorker_obj;
 }
+if (string_char_at(dialogue[dialogueLine], 1) == "W")
+{
+	if (string_char_at(dialogue[dialogueLine], 2) == "1")
+	{
+		showWindowMenu = true;
+		windowType = 1;
+	}
+}
 
 //Draw Dialogue
-if (drawText)
+if (drawText && !showWindowMenu)
 {
 	draw_set_font(gothicPixel_fnt);
 	draw_set_halign(fa_center);

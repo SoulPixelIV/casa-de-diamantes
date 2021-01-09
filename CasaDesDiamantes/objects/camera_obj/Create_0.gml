@@ -16,6 +16,9 @@ reloadAnimTimer = 25;
 reloadFailed = false;
 cameraTarget = false;
 cameraTargetTimer = 500;
+showWindowMenu = false;
+windowMenuOffset = yScreenSize;
+windowType = 0;
 
 cameraSpeed = 0.1;
 ycameraSpeed = 0.02;
@@ -25,6 +28,7 @@ originalyCameraSpeed = ycameraSpeed;
 reloadAnimTimerSave = reloadAnimTimer;
 tutorialAnimTimerSave = tutorialAnimTimer;
 cameraTargetTimerSave = cameraTargetTimer;
+windowMenuOffsetSave = windowMenuOffset;
 
 shake = false;
 shake_time = 0;
