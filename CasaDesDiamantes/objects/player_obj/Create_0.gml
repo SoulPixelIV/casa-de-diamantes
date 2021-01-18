@@ -4,7 +4,7 @@
 horspeed = 0;
 verspeed = 0;
 horspeedMax = 2.4;
-verspeedMax = 2.4;
+verspeedMax = 8;
 movSpeed = 0.82;
 movSpeedSave = movSpeed;
 movSpeedZombie = 0.54;
@@ -23,6 +23,7 @@ shotJumpStrength = 4;
 fallJumpSafety = 25;
 flipUsed = false;
 onMovingPlatform = false;
+onBooster = false;
 
 //Action
 hp = 100;

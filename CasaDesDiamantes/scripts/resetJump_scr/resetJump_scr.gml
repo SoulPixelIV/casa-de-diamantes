@@ -8,6 +8,7 @@ function resetJump_scr() {
 	player_obj.jumpType = 0;
 	player_obj.slowmoTimer = player_obj.slowmoTimerSave;
 	player_obj.slowmo = false;
+	player_obj.onBooster = false;
 
 	if (verspeed >= 0)
 	{
