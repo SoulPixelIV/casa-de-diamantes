@@ -420,10 +420,6 @@
         {"properties":[],"isDnd":false,"objectId":{"name":"shotgun_obj","path":"objects/shotgun_obj/shotgun_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1536.0,"y":1664.0,"resourceVersion":"1.0","name":"inst_586B9AA5","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"ammoPackShotgun_obj","path":"objects/ammoPackShotgun_obj/ammoPackShotgun_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1504.0,"y":1664.0,"resourceVersion":"1.0","name":"inst_6FC2889","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"ammoPackShotgun_obj","path":"objects/ammoPackShotgun_obj/ammoPackShotgun_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1504.0,"y":1632.0,"resourceVersion":"1.0","name":"inst_683B3E86","tags":[],"resourceType":"GMRInstance",},
-        {"properties":[],"isDnd":false,"objectId":{"name":"zombieGirl_obj","path":"objects/zombieGirl_obj/zombieGirl_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1657.0,"y":2292.0,"resourceVersion":"1.0","name":"inst_5F0563D4","tags":[],"resourceType":"GMRInstance",},
-        {"properties":[
-            {"propertyId":{"name":"wave","path":"objects/battleArenaSpawn_obj/battleArenaSpawn_obj.yy",},"objectId":{"name":"battleArenaSpawn_obj","path":"objects/battleArenaSpawn_obj/battleArenaSpawn_obj.yy",},"value":"1","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
-          ],"isDnd":false,"objectId":{"name":"battleArenaSpawn_obj","path":"objects/battleArenaSpawn_obj/battleArenaSpawn_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":2018.0,"y":2275.0,"resourceVersion":"1.0","name":"inst_3F46A116","tags":[],"resourceType":"GMRInstance",},
         {"properties":[
             {"propertyId":{"name":"wave","path":"objects/battleArenaSpawn_obj/battleArenaSpawn_obj.yy",},"objectId":{"name":"battleArenaSpawn_obj","path":"objects/battleArenaSpawn_obj/battleArenaSpawn_obj.yy",},"value":"1","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
           ],"isDnd":false,"objectId":{"name":"battleArenaSpawn_obj","path":"objects/battleArenaSpawn_obj/battleArenaSpawn_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":2082.0,"y":2275.0,"resourceVersion":"1.0","name":"inst_20F6A39A","tags":[],"resourceType":"GMRInstance",},
@@ -495,9 +491,6 @@
         {"properties":[],"isDnd":false,"objectId":{"name":"zombieGirl_obj","path":"objects/zombieGirl_obj/zombieGirl_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1130.0,"y":1381.0,"resourceVersion":"1.0","name":"inst_24973AEE","tags":[],"resourceType":"GMRInstance",},
         {"properties":[
             {"propertyId":{"name":"wave","path":"objects/battleArenaSpawn_obj/battleArenaSpawn_obj.yy",},"objectId":{"name":"battleArenaSpawn_obj","path":"objects/battleArenaSpawn_obj/battleArenaSpawn_obj.yy",},"value":"1","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
-          ],"isDnd":false,"objectId":{"name":"battleArenaSpawn_obj","path":"objects/battleArenaSpawn_obj/battleArenaSpawn_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1589.0,"y":1277.0,"resourceVersion":"1.0","name":"inst_6D67F09C","tags":[],"resourceType":"GMRInstance",},
-        {"properties":[
-            {"propertyId":{"name":"wave","path":"objects/battleArenaSpawn_obj/battleArenaSpawn_obj.yy",},"objectId":{"name":"battleArenaSpawn_obj","path":"objects/battleArenaSpawn_obj/battleArenaSpawn_obj.yy",},"value":"1","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
             {"propertyId":{"name":"enemy","path":"objects/battleArenaSpawn_obj/battleArenaSpawn_obj.yy",},"objectId":{"name":"battleArenaSpawn_obj","path":"objects/battleArenaSpawn_obj/battleArenaSpawn_obj.yy",},"value":"zombieBucketGirl_obj","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
           ],"isDnd":false,"objectId":{"name":"battleArenaSpawn_obj","path":"objects/battleArenaSpawn_obj/battleArenaSpawn_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1248.0,"y":1375.0,"resourceVersion":"1.0","name":"inst_3B4ED8FA","tags":[],"resourceType":"GMRInstance",},
         {"properties":[
@@ -559,7 +552,6 @@
         {"properties":[],"isDnd":false,"objectId":{"name":"ammoPackShotgun_obj","path":"objects/ammoPackShotgun_obj/ammoPackShotgun_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":2528.0,"y":1056.0,"resourceVersion":"1.0","name":"inst_441585B6","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"zombieGirl_obj","path":"objects/zombieGirl_obj/zombieGirl_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1854.0,"y":1060.0,"resourceVersion":"1.0","name":"inst_6840AB18","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"zombieGirl_obj","path":"objects/zombieGirl_obj/zombieGirl_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":-1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1933.0,"y":1061.0,"resourceVersion":"1.0","name":"inst_484EE9AF","tags":[],"resourceType":"GMRInstance",},
-        {"properties":[],"isDnd":false,"objectId":{"name":"zombieGirl_obj","path":"objects/zombieGirl_obj/zombieGirl_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":2307.0,"y":1061.0,"resourceVersion":"1.0","name":"inst_2885C904","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"zombieGirl_obj","path":"objects/zombieGirl_obj/zombieGirl_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":2111.0,"y":1061.0,"resourceVersion":"1.0","name":"inst_755B577C","tags":[],"resourceType":"GMRInstance",},
         {"properties":[
             {"propertyId":{"name":"wave","path":"objects/battleArenaSpawn_obj/battleArenaSpawn_obj.yy",},"objectId":{"name":"battleArenaSpawn_obj","path":"objects/battleArenaSpawn_obj/battleArenaSpawn_obj.yy",},"value":"1","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
@@ -1824,8 +1816,6 @@
     {"name":"inst_586B9AA5","path":"rooms/level1_SenzelaForest/level1_SenzelaForest.yy",},
     {"name":"inst_6FC2889","path":"rooms/level1_SenzelaForest/level1_SenzelaForest.yy",},
     {"name":"inst_683B3E86","path":"rooms/level1_SenzelaForest/level1_SenzelaForest.yy",},
-    {"name":"inst_5F0563D4","path":"rooms/level1_SenzelaForest/level1_SenzelaForest.yy",},
-    {"name":"inst_3F46A116","path":"rooms/level1_SenzelaForest/level1_SenzelaForest.yy",},
     {"name":"inst_20F6A39A","path":"rooms/level1_SenzelaForest/level1_SenzelaForest.yy",},
     {"name":"inst_5921464D","path":"rooms/level1_SenzelaForest/level1_SenzelaForest.yy",},
     {"name":"inst_4B7E8B9F","path":"rooms/level1_SenzelaForest/level1_SenzelaForest.yy",},
@@ -1890,7 +1880,6 @@
     {"name":"inst_28AF8E0B","path":"rooms/level1_SenzelaForest/level1_SenzelaForest.yy",},
     {"name":"inst_3BE48D28","path":"rooms/level1_SenzelaForest/level1_SenzelaForest.yy",},
     {"name":"inst_24973AEE","path":"rooms/level1_SenzelaForest/level1_SenzelaForest.yy",},
-    {"name":"inst_6D67F09C","path":"rooms/level1_SenzelaForest/level1_SenzelaForest.yy",},
     {"name":"inst_3B4ED8FA","path":"rooms/level1_SenzelaForest/level1_SenzelaForest.yy",},
     {"name":"inst_4C8F151B","path":"rooms/level1_SenzelaForest/level1_SenzelaForest.yy",},
     {"name":"inst_2FE6FF4B","path":"rooms/level1_SenzelaForest/level1_SenzelaForest.yy",},
@@ -1956,7 +1945,6 @@
     {"name":"inst_441585B6","path":"rooms/level1_SenzelaForest/level1_SenzelaForest.yy",},
     {"name":"inst_6840AB18","path":"rooms/level1_SenzelaForest/level1_SenzelaForest.yy",},
     {"name":"inst_484EE9AF","path":"rooms/level1_SenzelaForest/level1_SenzelaForest.yy",},
-    {"name":"inst_2885C904","path":"rooms/level1_SenzelaForest/level1_SenzelaForest.yy",},
     {"name":"inst_755B577C","path":"rooms/level1_SenzelaForest/level1_SenzelaForest.yy",},
     {"name":"inst_62D9A6EA","path":"rooms/level1_SenzelaForest/level1_SenzelaForest.yy",},
     {"name":"inst_784C6407","path":"rooms/level1_SenzelaForest/level1_SenzelaForest.yy",},

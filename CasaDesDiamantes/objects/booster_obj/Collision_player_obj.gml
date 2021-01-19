@@ -1,7 +1,8 @@
 if (!speedRecieved)
 {
 	resetJump_scr();
-	other.verspeed -= boostStrength;
+	other.verspeed -= boostStrengthY;
+	other.horspeed -= boostStrengthX;
 	other.onBooster = true;
 	speedRecieved = true;
 }
