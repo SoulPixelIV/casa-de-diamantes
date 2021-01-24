@@ -7,6 +7,7 @@ TARGET_FRAMERATE = 60;
 cursor_sprite = cursor_spr;
 realTimeScale = global.timeScale;
 restartInProg = false;
+keyboardActive = true;
 
 room_speed = TARGET_FRAMERATE;
 

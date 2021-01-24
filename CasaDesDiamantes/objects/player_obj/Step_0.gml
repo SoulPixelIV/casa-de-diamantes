@@ -4,11 +4,12 @@ y += verspeed * global.dt;
 
 key_left = keyboard_check(ord("A")); //CONTROLLER AXIS L;
 key_right = keyboard_check(ord("D")); // CONTROLLER AXIS R;
+key_leftright = gamepad_axis_value(4, gp_axislh);
 key_left_release = keyboard_check_released(ord("A"));
 key_right_release = keyboard_check_released(ord("D"));
 key_up = keyboard_check(ord("W"));
 key_down = keyboard_check(ord("S"))
-key_shoot = mouse_check_button_pressed(mb_left) || gamepad_button_check_pressed(0, gp_shoulderrb);
+key_shoot = mouse_check_button_pressed(mb_left) || gamepad_button_check_pressed(4, gp_shoulderrb);
 key_jump = keyboard_check_pressed(vk_space) || gamepad_button_check_pressed(0, gp_face1);
 key_jump_hold = keyboard_check(vk_space) || gamepad_button_check(0, gp_face1);
 key_jump_release = keyboard_check_released(vk_space) || gamepad_button_check_released(0, gp_face1);
