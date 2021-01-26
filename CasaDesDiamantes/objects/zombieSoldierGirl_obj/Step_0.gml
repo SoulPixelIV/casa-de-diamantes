@@ -218,7 +218,7 @@ if (attackCooldown < 0 && attackInProg1)
 }
 if (attackCooldown < 0 && attackInProg2)
 {	
-	var grenate = instance_create_layer(x + 10 * image_xscale, y, "Instances", grenate_obj);
+	var grenate = instance_create_layer(x + 10 * image_xscale, y, "Instances", grenateSmall_obj);
 	grenate.horspeed = random_range(2, 4) * image_xscale;
 	grenate.verspeed = random_range(-4, -6);
 	attackCooldown = attackCooldownSave / 2;

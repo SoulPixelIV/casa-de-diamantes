@@ -183,32 +183,38 @@ if (hpBucket < 0 && !playedSound)
 attackCooldown -= global.dt;
 
 //Cooldown
-if (!attackInProg1 && !attackInProg2 && distance_to_object(player_obj) < 280 && bucketRemoved)
+if (!attackInProg1 && !attackInProg2 && distance_to_object(player_obj) < playerSightMax && bucketRemoved)
 {
 	movement = true;
 	sprite_index = zombieBucketGirlBroken_spr;
 }
 
-if (attackCooldown < 0 && !bucketRemoved && distance_to_object(player_obj) < 32)
-{
-	sprite_index = zombieBucketGirlAttack2_spr;
-	movement = false;
-	attackInProg2 = true;
-	attackCooldown = attackCooldownSave;
-}
-
 //Prepare Attack
-if (attackCooldown < 0 && bucketRemoved)
+if (attackCooldown < 0 && distance_to_object(player_obj) < playerSightMax)
 {
 	if (randAttack == 1)
 	{
-		sprite_index = zombieBucketGirlAttack1_spr;
+		if (bucketRemoved)
+		{
+			sprite_index = zombieBucketGirlAttack1Broken_spr;
+		}
+		else
+		{
+			sprite_index = zombieBucketGirlAttack1_spr;
+		}
 		movement = false;
 		attackInProg1 = true;
 	}
 	if (randAttack == 2)
 	{
-		sprite_index = zombieBucketGirlAttack2Broken_spr;
+		if (bucketRemoved)
+		{
+			sprite_index = zombieBucketGirlAttack2Broken_spr;
+		}
+		else
+		{
+			sprite_index = zombieBucketGirlAttack2_spr;
+		}
 		movement = false;
 		attackInProg2 = true;
 	}
@@ -248,9 +254,14 @@ if (attackInProg2 && image_index > image_number - 1)
 	}
 }
 
-if (damageTint)
+if (damageTint && bucketRemoved)
 {
 	sprite_index = zombieBucketGirlFlash_spr;
+	damageTintTimer -= global.dt;
+}
+if (damageTint && !bucketRemoved)
+{
+	sprite_index = zombieBucketGirlFlashBody_spr;
 	damageTintTimer -= global.dt;
 }
 if (damageTintTimer < 0)

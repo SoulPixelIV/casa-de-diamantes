@@ -2,6 +2,7 @@
 
 x += horspeed * global.dt;
 y += verspeed * global.dt;
+
 if (instance_exists(player_obj))
 {
 	dirLookat = point_direction(x, y, player_obj.x, player_obj.y);
@@ -183,11 +184,11 @@ with (headshotHitbox)
 //Cooldown
 if (!attackInProg && !attackInProg2)
 {
-	if (distance_to_object(player_obj) < 32)
+	if (distance_to_object(player_obj) < playerSightMin)
 	{
 		attackCooldown -= global.dt * 2;
 	}
-	else if (distance_to_object(player_obj) < 200)
+	else if (distance_to_object(player_obj) < playerSightMax)
 	{
 		attackCooldown -= global.dt;
 	}
@@ -196,8 +197,9 @@ if (!attackInProg && !attackInProg2)
 //Prepare Attack
 if (attackCooldown < 0 && verspeed == 0)
 {
-	if (distance_to_object(player_obj) < 32)
+	if (distance_to_object(player_obj) < 48)
 	{
+		animationSpeed = 1;
 		sprite_index = zombieGirlAttack2_spr;
 		movement = false;
 		attackInProg2 = true;
@@ -224,7 +226,7 @@ if (attackInProg)
 }
 if (attackInProg && image_index > image_number - 1 && !dashed)
 {
-	image_speed = 0;
+	animationSpeed = 0;
 	damageCollision = true;
 	//Front Dash
 	if (player_obj.y > y - 32 && player_obj.y < y + 32)
@@ -241,7 +243,7 @@ if (attackInProg && image_index > image_number - 1 && !dashed)
 //Start Attack 2
 if (attackInProg2 && image_index > image_number - 1 && !dashed)
 {
-	image_speed = 0;
+	animationSpeed = 0;
 	dashed = true;
 	delay = true;
 }	
@@ -266,7 +268,7 @@ if (attackDelay < 0)
 	dashed = false;
 	attackInProg = false;
 	attackInProg2 = false;
-	image_speed = 1;
+	animationSpeed = 0.5;
 	sprite_index = zombieGirl_spr;
 	damageCollision = false;
 	movement = true;

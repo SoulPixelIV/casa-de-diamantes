@@ -4,16 +4,12 @@ horspeed = 0;
 verspeed = 0;
 attackCooldown = 550;
 attackDelay = 50;
-hp = 130;
 colliding = true;
 level = 2;
-hpBucket = 40;
 damage = 0;
 moneyDropMin = 5;
 moneyDropMax = 13;
 knockback = 0;
-playerSightMax = 196;
-playerSightMin = 8;
 randAttack = 1;
 
 animationSpeed = 0.5;

@@ -2,7 +2,6 @@
 
 horspeed = 0;
 verspeed = 0;
-hp = 85;
 colliding = true;
 level = 1;
 moneyDropMin = 3;
@@ -12,7 +11,7 @@ damage = 0;
 damageCollision = false;
 points = 125;
 knockback = 0;
-movSpeed = 0.08;
+movSpeed = 0.14;
 playedSound = false;
 movement = true;
 gravityStrength = -0.05;

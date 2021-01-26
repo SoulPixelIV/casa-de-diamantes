@@ -5,15 +5,12 @@ horspeed = 0;
 verspeed = 0;
 
 //Stats
-hp = 100;
 colliding = true;
 level = 1;
 moneyDropMin = 1;
 moneyDropMax = 4;
 damage = 23;
 knockback = 0;
-playerSightMax = 128;
-playerSightMin = 32;
 
 animationSpeed = 0.5;
 savePosX = x;
