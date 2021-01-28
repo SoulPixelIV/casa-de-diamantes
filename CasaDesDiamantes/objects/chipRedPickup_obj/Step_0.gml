@@ -3,7 +3,10 @@ y += verspeed * global.dt / 3;
 
 if (horspeed > 0)
 {
-	horspeed -= 0.004 * global.dt / 3;
+	if (!place_meeting(x, y, booster_obj))
+	{
+		horspeed -= 0.004 * global.dt / 3;
+	}
 
 	if (horspeed < 0.1)
 	{
@@ -12,8 +15,10 @@ if (horspeed > 0)
 }
 else
 {
-
-	horspeed += 0.004 * global.dt / 3;
+	if (!place_meeting(x, y, booster_obj))
+	{
+		horspeed += 0.004 * global.dt / 3;
+	}
 
 	if (horspeed > -0.1)
 	{

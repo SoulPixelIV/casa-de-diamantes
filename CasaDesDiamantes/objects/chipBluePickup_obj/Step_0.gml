@@ -3,7 +3,10 @@ y += verspeed * global.dt / 3;
 
 if (horspeed > 0)
 {
-	horspeed -= 0.002 * global.dt / 3;
+	if (!place_meeting(x, y, booster_obj))
+	{
+		horspeed -= 0.002 * global.dt / 3;
+	}
 
 	if (horspeed < 0.3)
 	{
@@ -12,8 +15,10 @@ if (horspeed > 0)
 }
 else
 {
-
-	horspeed += 0.002 * global.dt / 3;
+	if (!place_meeting(x, y, booster_obj))
+	{
+		horspeed += 0.002 * global.dt / 3;
+	}
 
 	if (horspeed > -0.3)
 	{
@@ -22,7 +27,7 @@ else
 }
 
 //Gravity
-if (verspeed < 14)
+if (verspeed < 2)
 {
 	verspeed -= gravityStrength * global.dt / 3;
 }

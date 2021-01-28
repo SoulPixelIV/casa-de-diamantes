@@ -1,4 +1,4 @@
-if (!speedRecieved)
+if (!speedRecieved && open)
 {
 	resetJump_scr();
 	other.verspeed -= boostStrengthY;
