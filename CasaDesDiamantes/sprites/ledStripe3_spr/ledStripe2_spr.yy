@@ -64,7 +64,7 @@
     "eventStubScript": null,
     "parent": {"name":"ledStripe2_spr","path":"sprites/ledStripe2_spr/ledStripe2_spr.yy",},
     "resourceVersion": "1.3",
-    "name": "ledStripe2_spr",
+    "name": "",
     "tags": [],
     "resourceType": "GMSequence",
   },

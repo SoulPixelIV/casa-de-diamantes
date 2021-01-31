@@ -21,8 +21,19 @@ if ((distance_to_object(player_obj) < 32 && keyboard_check_pressed(ord("W"))) ||
 		{
 			if (objectCount == 1)
 			{
-				object = instance_nearest(x, y, objectAccess);
-				object.open = true;
+				if (!activateCamera)
+				{
+					object = instance_nearest(x, y, objectAccess);
+					object.open = true;
+				}
+				else
+				{
+					with (instance_nearest(x, y, cameraTarget_obj))
+					{
+						object = instance_nearest(x, y, instance_nearest(x, y, lever_obj).objectAccess);
+						object.open = true;
+					}
+				}
 			}
 			else
 			{

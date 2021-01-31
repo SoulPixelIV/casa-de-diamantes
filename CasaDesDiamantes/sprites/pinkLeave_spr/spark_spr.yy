@@ -76,7 +76,7 @@
     "eventStubScript": null,
     "parent": {"name":"spark_spr","path":"sprites/spark_spr/spark_spr.yy",},
     "resourceVersion": "1.3",
-    "name": "spark_spr",
+    "name": "",
     "tags": [],
     "resourceType": "GMSequence",
   },

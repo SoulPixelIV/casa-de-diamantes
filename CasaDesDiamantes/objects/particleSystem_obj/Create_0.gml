@@ -117,3 +117,13 @@ part_type_size(global.coinRedPart, 0.1, 0.2, 0, 0);
 part_type_orientation(global.coinRedPart, 0, 359, 1, 0, 1);
 part_type_direction(global.coinRedPart, 0, 360, 0, 3);
 part_type_speed(global.coinRedPart, 0.1, 0.16, 0, 0.1);
+
+//Leaves
+
+global.pinkLeaves = part_type_create();
+part_type_sprite(global.pinkLeaves, pinkLeave_spr, false, false, true);
+part_type_life(global.pinkLeaves, 1400, 2600);
+part_type_size(global.pinkLeaves, 0.5, 1, 0, 0);
+part_type_orientation(global.pinkLeaves, 0, 359, 1, 0, 1);
+part_type_direction(global.pinkLeaves, 180, 270, 0, 3);
+part_type_speed(global.pinkLeaves, 0.04, 0.1, 0, 0.1);
