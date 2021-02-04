@@ -33,6 +33,7 @@
     {"isDnD":false,"eventNum":1,"eventType":3,"collisionObjectId":null,"parent":{"name":"player_obj","path":"objects/player_obj/player_obj.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"hazard_obj","path":"objects/hazard_obj/hazard_obj.yy",},"parent":{"name":"player_obj","path":"objects/player_obj/player_obj.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"explosionParent_obj","path":"objects/explosionParent_obj/explosionParent_obj.yy",},"parent":{"name":"player_obj","path":"objects/player_obj/player_obj.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"hazardPlayerOnly_obj","path":"objects/hazardPlayerOnly_obj/hazardPlayerOnly_obj.yy",},"parent":{"name":"player_obj","path":"objects/player_obj/player_obj.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],

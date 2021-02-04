@@ -6,18 +6,13 @@ lifetime -= global.dt / 4;
 if (lifetime < 0)
 {
 	body.fireballInstance = noone;
-	if (instance_exists(light))
-	{
-		instance_destroy(light);
-	}
+	instance_destroy(light);
 	instance_destroy();
 }
 
-if (instance_exists(light))
+spawnTime -= global.dt / 4;
+if (spawnTime < 0)
 {
-	with (light)
-	{
-		light[| eLight.X] = body.x;
-		light[| eLight.Y] = body.y;
-	}
+	instance_create_layer(x, y, "Instances", fireballSmall_obj);
+	spawnTime = spawnTimeSave + random_range(-10, 10);
 }
