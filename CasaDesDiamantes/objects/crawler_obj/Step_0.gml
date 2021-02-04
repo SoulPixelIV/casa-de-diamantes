@@ -27,6 +27,22 @@ if (aggro)
 		}
 	}
 	
+	if (attackInProg2)
+	{
+		if (movSpeedGrad > 1)
+		{
+			movSpeedGrad -= global.dt / 200;
+		}
+		if (movSpeedGrad < -1)
+		{
+			movSpeedGrad += global.dt / 200;
+		}
+		if (movSpeedGrad < 1 && movSpeedGrad > -1)
+		{
+			movSpeedGrad = 0;
+		}
+	}
+	
 	if (checkedWaypoint)
 	{
 		if (instance_exists(player_obj))
@@ -181,25 +197,47 @@ if (useDelayTimer < 0)
 //###Attack###
 
 //Cooldown
-if (!attackInProg && !attackInProg2)
+if (!attackInProg1 || !attackInProg2)
 {
 	attackCooldown -= global.dt;
+	
+	if (attackCooldown < 0 && !attackInProg1 && !attackInProg2)
+	{
+		if (fireballInstance == noone)
+		{
+			var attack = choose(1, 2);
+			if (attack == 1)
+			{
+				attackInProg1 = true;
+			}
+			if (attack == 2)
+			{
+				attackInProg2 = true;
+			}
+		}
+		else
+		{
+			attackInProg1 = true;
+		}
+	}
 }
 
 //Prepare Attack
-if (attackCooldown < 0 && verspeed == 0)
+if (verspeed == 0 && attackInProg1 && !startFire)
 {
 	if (distance_to_object(player_obj) < 126)
 	{
 		animationSpeed = 0.2;
 		sprite_index = crawlerFireAttackProgress_spr;
-		attackInProg = true;
 	}
-	attackCooldown = attackCooldownSave;
+	if (image_index > image_number - 1)
+	{
+		startFire = true;
+	}
 }
 
 //Start Attack 1
-if (attackInProg && image_index > image_number - 1)
+if (attackInProg1 && startFire)
 {
 	animationSpeed = 1.25;
 	sprite_index = crawlerFireAttack_spr;
@@ -226,6 +264,28 @@ if (attackInProg && image_index > image_number - 1)
 		body = instance_nearest(x, y, crawler_obj);
 	}
 }
+
+//Start Attack 2
+if (attackInProg2)
+{
+	animationSpeed = 1.25;
+	if (fireballInstance == noone)
+	{
+		fireballInstance = instance_create_layer(x, y - 46, "Instances", fireball_obj);
+		fireballInstance.body = id;
+	}
+	sprite_index = crawlerFireAttack2_spr;
+	
+	if (!instance_exists(light))
+	{
+		light = instance_create_layer(x, y, "GraphicsLayer", spotlightYellow_obj);
+	}
+	with (light)
+	{
+		body = instance_nearest(x, y, crawler_obj);
+	}
+	delay = true;
+}
 	
 if (delay)
 {
@@ -233,9 +293,11 @@ if (delay)
 }
 if (attackDelay < 0)
 {
+	attackCooldown = attackCooldownSave;
 	delay = false;
+	startFire = false;
 	attackDelay = attackDelaySave;
-	attackInProg = false;
+	attackInProg1 = false;
 	attackInProg2 = false;
 	animationSpeed = 1;
 	sprite_index = crawler_spr;

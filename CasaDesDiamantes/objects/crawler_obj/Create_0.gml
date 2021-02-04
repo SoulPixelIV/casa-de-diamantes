@@ -18,8 +18,10 @@ checkedWaypoint = true;
 usedLever = false;
 useDelayTimer = 200;
 
-attackInProg = false;
+attackInProg1 = false;
+startFire = false;
 attackInProg2 = false;
+fireballInstance = noone;
 attackCooldown = 180;
 attackDelay = 450;
 delay = false;
