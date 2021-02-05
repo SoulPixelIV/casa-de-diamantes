@@ -6,15 +6,18 @@ colliding = true;
 level = 1;
 moneyDropMin = 3;
 moneyDropMax = 7;
-attackCooldown = 140;
+attackCooldown = 90;
 damage = 0;
 damageCollision = false;
 points = 125;
 knockback = 0;
 movSpeed = 0.14;
+turnDelay = 40;
+turn = false;
 playedSound = false;
 movement = true;
 gravityStrength = -0.05;
+turnDir = 1;
 dir = 0;
 if (instance_exists(player_obj))
 {
@@ -42,6 +45,7 @@ headshot = false;
 attackCooldownSave = attackCooldown;
 damageTintTimerSave = damageTintTimer;
 lineFlashTimerSave = lineFlashTimer;
+turnDelaySave = turnDelay;
 
 headshotHitbox = instance_create_layer(x, y - 16, "Instances", headshotHitbox_obj);
 with (headshotHitbox)

@@ -35,8 +35,8 @@
   "properties": [
     {"varType":1,"value":"300","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"aggroRangeX","tags":[],"resourceType":"GMObjectProperty",},
     {"varType":1,"value":"196","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"aggroRangeY","tags":[],"resourceType":"GMObjectProperty",},
-    {"varType":1,"value":"128","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"playerSightMax","tags":[],"resourceType":"GMObjectProperty",},
-    {"varType":1,"value":"32","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"playerSightMin","tags":[],"resourceType":"GMObjectProperty",},
+    {"varType":1,"value":"196","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"playerSightMax","tags":[],"resourceType":"GMObjectProperty",},
+    {"varType":1,"value":"90","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"playerSightMin","tags":[],"resourceType":"GMObjectProperty",},
     {"varType":0,"value":"85","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"hp","tags":[],"resourceType":"GMObjectProperty",},
   ],
   "overriddenProperties": [],

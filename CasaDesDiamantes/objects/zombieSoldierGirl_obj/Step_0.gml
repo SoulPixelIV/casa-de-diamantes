@@ -43,11 +43,29 @@ if (movement)
 		}
 		if (dirLookat > 90 && dirLookat < 270)
 		{
-			image_xscale = -1;
+			turnDir = -1;
 		}
 		else
 		{
-			image_xscale = 1;
+			turnDir = 1;
+		}
+		if (turnDir == -1 && image_xscale == 1)
+		{
+			turnDelay -= global.dt;
+			if (turnDelay < 0)
+			{
+				image_xscale = -1;
+				turnDelay = turnDelaySave;
+			}
+		}
+		if (turnDir == 1 && image_xscale == -1)
+		{
+			turnDelay -= global.dt;
+			if (turnDelay < 0)
+			{
+				image_xscale = 1;
+				turnDelay = turnDelaySave;
+			}
 		}
 	}
 	else
@@ -177,7 +195,7 @@ if (instance_exists(player_obj))
 {
 	if (player_obj.movement)
 	{
-		if (distance_to_object(player_obj) < aggroRangeX && player_obj.y > y - 64 && player_obj.y < y + aggroRangeY)
+		if (distance_to_object(player_obj) < aggroRangeX && player_obj.y > y - 64 && player_obj.y < y + aggroRangeY && ((image_xscale == 1 && player_obj.x > x) || (image_xscale == -1 && player_obj.x < x)))
 		{
 			attackCooldown -= global.dt / 4;
 		}

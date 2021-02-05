@@ -520,6 +520,7 @@
         {"properties":[],"isDnd":false,"objectId":{"name":"ammoPackShotgun_obj","path":"objects/ammoPackShotgun_obj/ammoPackShotgun_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1184.0,"y":4288.0,"resourceVersion":"1.0","name":"inst_72C6C078","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"enemyBlockZone_obj","path":"objects/enemyBlockZone_obj/enemyBlockZone_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":2.1875,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":882.0,"y":4115.0,"resourceVersion":"1.0","name":"inst_29059F2C","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"enemyBlockZone_obj","path":"objects/enemyBlockZone_obj/enemyBlockZone_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":2.1875,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":2032.0,"y":4114.0,"resourceVersion":"1.0","name":"inst_757B7905","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"zombieSoldierGirl_obj","path":"objects/zombieSoldierGirl_obj/zombieSoldierGirl_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":736.0,"y":5920.0,"resourceVersion":"1.0","name":"inst_4A732E9E","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":400,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Instances","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"checkpoint_obj","path":"objects/checkpoint_obj/checkpoint_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":2481.0,"y":6016.0,"resourceVersion":"1.0","name":"inst_2940E058","tags":[],"resourceType":"GMRInstance",},
@@ -2021,6 +2022,7 @@
     {"name":"inst_757B7905","path":"rooms/level2_SenzelaForest/level2_SenzelaForest.yy",},
     {"name":"inst_126B3788","path":"rooms/level2_SenzelaForest/level2_SenzelaForest.yy",},
     {"name":"inst_7F38933","path":"rooms/level2_SenzelaForest/level2_SenzelaForest.yy",},
+    {"name":"inst_4A732E9E","path":"rooms/level2_SenzelaForest/level2_SenzelaForest.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

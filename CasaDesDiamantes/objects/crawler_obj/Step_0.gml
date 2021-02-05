@@ -275,15 +275,6 @@ if (attackInProg2)
 		fireballInstance.body = id;
 	}
 	sprite_index = crawlerFireAttack2_spr;
-	
-	if (!instance_exists(light2))
-	{
-		light2 = instance_create_layer(x, y, "GraphicsLayer", spotlightYellow_obj);
-	}
-	with (light2)
-	{
-		body = instance_nearest(x, y, crawler_obj);
-	}
 	delay2 = true;
 }
 	
@@ -310,10 +301,6 @@ if (attackDelay1 < 0 || attackDelay2 < 0)
 	if (instance_exists(light))
 	{
 		instance_destroy(light);
-	}
-	if (instance_exists(light2))
-	{
-		instance_destroy(light2);
 	}
 	if (instance_exists(hitbox))
 	{
