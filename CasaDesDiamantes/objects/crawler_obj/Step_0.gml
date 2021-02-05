@@ -203,7 +203,7 @@ if (!attackInProg1 || !attackInProg2)
 	
 	if (attackCooldown < 0 && !attackInProg1 && !attackInProg2)
 	{
-		if (fireballInstance == noone)
+		if (fireballInstance == noone && place_free(x, y - 46))
 		{
 			var attack = choose(1, 2);
 			if (attack == 1)
@@ -241,7 +241,7 @@ if (attackInProg1 && startFire)
 {
 	animationSpeed = 1.25;
 	sprite_index = crawlerFireAttack_spr;
-	delay = true;
+	delay1 = true;
 	if (!instance_exists(hitbox))
 	{
 		hitbox = instance_create_layer(x + 12, y, "Instances", damageHitbox_obj);
@@ -252,7 +252,7 @@ if (attackInProg1 && startFire)
 		hitbox.damage = 20;
 		hitbox.image_xscale = 2;
 		hitbox.image_yscale = 1.5;
-		hitbox.timer = attackDelay;
+		hitbox.timer = attackDelay1;
 	}
 	
 	if (!instance_exists(light))
@@ -276,27 +276,32 @@ if (attackInProg2)
 	}
 	sprite_index = crawlerFireAttack2_spr;
 	
-	if (!instance_exists(light))
+	if (!instance_exists(light2))
 	{
-		light = instance_create_layer(x, y, "GraphicsLayer", spotlightYellow_obj);
+		light2 = instance_create_layer(x, y, "GraphicsLayer", spotlightYellow_obj);
 	}
-	with (light)
+	with (light2)
 	{
 		body = instance_nearest(x, y, crawler_obj);
 	}
-	delay = true;
+	delay2 = true;
 }
 	
-if (delay)
+if (delay1)
 {
-	attackDelay -= global.dt;
+	attackDelay1 -= global.dt;
 }
-if (attackDelay < 0)
+if (delay2)
+{
+	attackDelay2 -= global.dt;
+}
+if (attackDelay1 < 0 || attackDelay2 < 0)
 {
 	attackCooldown = attackCooldownSave;
-	delay = false;
+	delay1 = false;
 	startFire = false;
-	attackDelay = attackDelaySave;
+	attackDelay1 = attackDelay1Save;
+	attackDelay2 = attackDelay2Save;
 	attackInProg1 = false;
 	attackInProg2 = false;
 	animationSpeed = 1;
@@ -305,6 +310,10 @@ if (attackDelay < 0)
 	if (instance_exists(light))
 	{
 		instance_destroy(light);
+	}
+	if (instance_exists(light2))
+	{
+		instance_destroy(light2);
 	}
 	if (instance_exists(hitbox))
 	{

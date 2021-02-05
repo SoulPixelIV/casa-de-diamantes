@@ -23,14 +23,17 @@ startFire = false;
 attackInProg2 = false;
 fireballInstance = noone;
 attackCooldown = 180;
-attackDelay = 450;
-delay = false;
+attackDelay1 = 450;
+attackDelay2 = 700;
+delay1 = false;
+delay2 = false;
 
 light = noone;
 hitbox = noone;
 
 attackCooldownSave = attackCooldown;
-attackDelaySave = attackDelay;
+attackDelay1Save = attackDelay1;
+attackDelay2Save = attackDelay2;
 
 useDelayTimerSave = useDelayTimer;
 

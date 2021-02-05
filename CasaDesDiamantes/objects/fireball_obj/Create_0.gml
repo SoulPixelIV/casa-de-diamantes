@@ -4,4 +4,8 @@ spawnTime = 20;
 spawnTimeSave = spawnTime;
 body = noone;
 
-light = instance_create_layer(x, y, "GraphicsLayer", spotlightYellow_obj);
+image_alpha = 0;
+image_xscale = 0;
+image_yscale = 0;
+
+firelight = instance_create_layer(x, y, "GraphicsLayer", spotlightYellow_obj);
