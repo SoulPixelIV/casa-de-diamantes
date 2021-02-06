@@ -47,7 +47,7 @@
     "spriteId": {"name":"crawlerFireAttack2_spr","path":"sprites/crawlerFireAttack2_spr/crawlerFireAttack2_spr.yy",},
     "timeUnits": 1,
     "playback": 1,
-    "playbackSpeed": 12.0,
+    "playbackSpeed": 8.0,
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,
