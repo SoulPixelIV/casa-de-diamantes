@@ -964,15 +964,24 @@ if (!deathSlowmo)
 	}
 	if (enemySlowmo)
 	{
+		camera_obj.drawBlackborders = true;
+		if (!slowmoSoundPlayed)
+		{
+			audio_play_sound(slowmoStart_snd, 1, false);
+			slowmoSoundPlayed = true;
+		}
 		global.timeScale = 0.2;
 		enemySlowMotionTimer -= global.dt;
 	}
 	if (enemySlowMotionTimer < 0)
 	{	
+		audio_play_sound(slowmoEnd_snd, 1, false);
 		camera_obj.follow = player_obj;
 		camera_obj.vignetteFlash = false;
 		enemySlowmo = false;
+		slowmoSoundPlayed = false;
 		global.timeScale = 1;
+		camera_obj.drawBlackborders = false;
 		enemySlowMotionTimer = enemySlowMotionTimerSave;
 	}
 }

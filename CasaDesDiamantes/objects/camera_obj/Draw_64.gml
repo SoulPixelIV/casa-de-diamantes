@@ -65,6 +65,29 @@ draw_ellipse_colour(-200, -200, xScreenSize + 200, yScreenSize + 200, c_black , 
 draw_set_alpha(1);
 
 //#####LAYER 1#####
+	
+if (drawBlackborders)
+{
+	if (blackbordersPos < 41)
+	{
+		blackbordersPos += global.dt;
+	}
+	if (blackbordersPos >= 41)
+	{
+		blackbordersPos = 42;
+	}
+}
+else
+{
+	if (blackbordersPos > 1)
+	{
+		blackbordersPos -= global.dt;
+	}
+	if (blackbordersPos <= 1)
+	{
+		blackbordersPos = 0;
+	}
+}
 
 if (!noHUD)
 {
@@ -320,3 +343,7 @@ if (!noHUD)
 {
 	draw_sprite(guiBorder_spr, 0, 0, 0);
 }
+
+//black borders
+draw_sprite(blackborder_spr, 0, xScreenSize / 2, blackbordersPos);
+draw_sprite(blackborder_spr, 0, xScreenSize / 2, yScreenSize + 42 - blackbordersPos);

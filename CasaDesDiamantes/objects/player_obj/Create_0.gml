@@ -34,7 +34,7 @@ damageCooldown = 400;
 lastCheckpoint = noone;
 
 //Effects
-enemySlowMotionTimer = 65;
+enemySlowMotionTimer = 100;
 shotZoomTimer = 8.75;
 walljumpDustTimer = 12;
 damageFlickerTimer = 17;
@@ -79,6 +79,7 @@ lightSize = 0;
 shortJump = false;
 createdParticles = false;
 landSoundPlayed = false;
+slowmoSoundPlayed = false;
 deathActivated = false;
 deathSlowmo = false;
 firstPosX = x;

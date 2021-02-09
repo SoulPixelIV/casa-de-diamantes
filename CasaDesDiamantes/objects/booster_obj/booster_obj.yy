@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "debugBlock32x_spr",
-    "path": "sprites/debugBlock32x_spr/debugBlock32x_spr.yy",
+    "name": "boosterOff_spr",
+    "path": "sprites/boosterOff_spr/boosterOff_spr.yy",
   },
   "solid": false,
   "visible": true,
