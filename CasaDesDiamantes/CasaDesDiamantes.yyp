@@ -714,6 +714,7 @@
     {"id":{"name":"colliderNoShadow_obj","path":"objects/colliderNoShadow_obj/colliderNoShadow_obj.yy",},"order":2,},
     {"id":{"name":"zombieBucketGirlFlashBody_spr","path":"sprites/zombieBucketGirlFlashBody_spr/zombieBucketGirlFlashBody_spr.yy",},"order":6,},
     {"id":{"name":"hugeTree_spr","path":"sprites/hugeTree_spr/hugeTree_spr.yy",},"order":28,},
+    {"id":{"name":"wavecount_spr","path":"sprites/wavecount_spr/wavecount_spr.yy",},"order":20,},
     {"id":{"name":"grenate_obj","path":"objects/grenate_obj/grenate_obj.yy",},"order":45,},
     {"id":{"name":"flyingGrenate_obj","path":"objects/flyingGrenate_obj/flyingGrenate_obj.yy",},"order":46,},
     {"id":{"name":"deathCross_obj","path":"objects/deathCross_obj/deathCross_obj.yy",},"order":47,},

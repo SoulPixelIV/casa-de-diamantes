@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "bluecubex16_spr",
-    "path": "sprites/bluecubex16_spr/bluecubex16_spr.yy",
+    "name": "wavecount_spr",
+    "path": "sprites/wavecount_spr/wavecount_spr.yy",
   },
   "solid": false,
   "visible": false,

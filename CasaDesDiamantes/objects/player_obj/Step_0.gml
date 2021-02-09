@@ -938,8 +938,8 @@ if (!deathSlowmo)
 		{
 			if (slowmoTimer > 0)
 			{
-				slowmo = true;
-				slowmoTimer -= global.dt * 3;
+				//slowmo = true;
+				//slowmoTimer -= global.dt * 3;
 			}
 		}
 		else
