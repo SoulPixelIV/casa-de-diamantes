@@ -18,7 +18,7 @@ for (var i = 0; i < spawnNumber; i++)
 
 //Use Gates
 //Close Gate
-if ((place_meeting(x, y, player_obj) && updatedEnemyCount > 1) || instance_exists(spawnCloud_obj))
+if ((place_meeting(x, y, player_obj) && updatedEnemyCount > 1) || instance_exists(spawnCloud_obj) && place_meeting(x, y, player_obj))
 {
 	if (instance_exists(objectAccess))
 	{
@@ -34,7 +34,7 @@ if ((place_meeting(x, y, player_obj) && updatedEnemyCount > 1) || instance_exist
 	}
 }
 //Open Gate
-else
+if (updatedEnemyCount <= 1 && wave == highestWave || !place_meeting(x, y, player_obj))
 {
 	if (instance_exists(objectAccess))
 	{
@@ -48,6 +48,18 @@ else
 			}
 		}
 	}
+	if (!sectionCleared)
+	{
+		with (player_obj)
+		{
+			if (instance_exists(deathCross_obj))
+			{
+				enemySlowmo = true;
+				camera_obj.follow = instance_nearest(x, y, deathCross_obj);
+			}
+		}
+	}
+	sectionCleared = true;
 }
 
 //Count Enemies again

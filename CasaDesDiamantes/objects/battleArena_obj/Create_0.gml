@@ -5,6 +5,7 @@ highestWave = 0;
 done = false;
 setWave = false;
 countEnemies = false;
+sectionCleared = false;
 enemyNumber = instance_number(enemy_obj);
 enemyCount = 0;
 updatedEnemyCount = 0;
