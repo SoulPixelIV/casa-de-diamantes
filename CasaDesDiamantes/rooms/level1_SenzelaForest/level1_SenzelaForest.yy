@@ -713,6 +713,7 @@
         {"properties":[],"isDnd":false,"objectId":{"name":"healthpack_obj","path":"objects/healthpack_obj/healthpack_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":576.0,"y":2592.0,"resourceVersion":"1.0","name":"inst_50821E09","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"SF1_SF0_teleporter","path":"objects/SF1_SF0_teleporter/SF1_SF0_teleporter.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":7.5,"scaleY":10.25,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1119.0,"y":1644.0,"resourceVersion":"1.0","name":"inst_561B3E9A","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"battleArena_obj","path":"objects/battleArena_obj/battleArena_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":16.8125,"scaleY":15.1875,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1222.5,"y":748.0,"resourceVersion":"1.0","name":"inst_303446B2","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"lasergate_obj","path":"objects/lasergate_obj/lasergate_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1632.0,"y":1344.0,"resourceVersion":"1.0","name":"inst_11D7B529","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":500,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Instances","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"checkpoint_obj","path":"objects/checkpoint_obj/checkpoint_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":2144.0,"y":1680.0,"resourceVersion":"1.0","name":"inst_3E71763F","tags":[],"resourceType":"GMRInstance",},
@@ -2215,6 +2216,7 @@
     {"name":"inst_303446B2","path":"rooms/level1_SenzelaForest/level1_SenzelaForest.yy",},
     {"name":"inst_3E71763F","path":"rooms/level1_SenzelaForest/level1_SenzelaForest.yy",},
     {"name":"inst_566FCBAD","path":"rooms/level1_SenzelaForest/level1_SenzelaForest.yy",},
+    {"name":"inst_11D7B529","path":"rooms/level1_SenzelaForest/level1_SenzelaForest.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
