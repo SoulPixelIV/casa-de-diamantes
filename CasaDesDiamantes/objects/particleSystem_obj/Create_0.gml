@@ -127,3 +127,14 @@ part_type_size(global.pinkLeaves, 0.5, 1, 0, 0);
 part_type_orientation(global.pinkLeaves, 0, 359, 1, 0, 1);
 part_type_direction(global.pinkLeaves, 180, 270, 0, 3);
 part_type_speed(global.pinkLeaves, 0.04, 0.1, 0, 0.1);
+
+//Laser
+global.lasergatePart = part_type_create();
+part_type_sprite(global.lasergatePart, spark_spr, true, true, true);
+part_type_colour_rgb(global.lasergatePart, 200, 255, 0, 0, 0, 0);
+part_type_life(global.lasergatePart, 9999945, 9999990);
+part_type_size(global.lasergatePart, 0.1, 0.2, 0, 0);
+part_type_orientation(global.lasergatePart, 0, 359, 1, 0, 1);
+part_type_direction(global.lasergatePart, 0, 180, 0, 0);
+part_type_gravity(global.lasergatePart, 0.03, 270);
+part_type_speed(global.lasergatePart, 0.4, 0.8, 0, 0);
