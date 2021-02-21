@@ -3,7 +3,7 @@
     "name": "fallingGround_spr",
     "path": "sprites/fallingGround_spr/fallingGround_spr.yy",
   },
-  "solid": false,
+  "solid": true,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
@@ -21,7 +21,6 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"player_obj","path":"objects/player_obj/player_obj.yy",},"parent":{"name":"fallingObjectPlayer_obj","path":"objects/fallingObjectPlayer_obj/fallingObjectPlayer_obj.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"fallingObjectPlayer_obj","path":"objects/fallingObjectPlayer_obj/fallingObjectPlayer_obj.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"parent":{"name":"fallingObjectPlayer_obj","path":"objects/fallingObjectPlayer_obj/fallingObjectPlayer_obj.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],

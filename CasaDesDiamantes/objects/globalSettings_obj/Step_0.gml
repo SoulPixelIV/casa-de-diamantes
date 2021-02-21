@@ -93,23 +93,23 @@ if (keyboard_check_pressed(vk_f12))
 
 if (room == level1_RoadToCasino || room == level0_RoadToCasino)
 {
-	global.ambientShadowIntensity = 0.35 * global.gamma;
+	global.ambientShadowIntensity = 0.45 * global.gamma;
 }
 else if (room == level_CasinoHub)
 {
-	global.ambientShadowIntensity = 0.42 * global.gamma;
+	global.ambientShadowIntensity = 0.5 * global.gamma;
 }
 else if (room == blackjackTable)
 {
-	global.ambientShadowIntensity = 0.5 * global.gamma;
+	global.ambientShadowIntensity = 0.55 * global.gamma;
 }
-else if (room == level0_SenzelaForest || room == level1_SenzelaForest)
+else if (room == level0_SenzelaForest || room == level1_SenzelaForest || room == level2_SenzelaForest)
 {
-	global.ambientShadowIntensity = 0.45 * global.gamma;
+	global.ambientShadowIntensity = 0.6 * global.gamma;
 }
 else
 {
-	global.ambientShadowIntensity = 0.55 * global.gamma;
+	global.ambientShadowIntensity = 0.6 * global.gamma;
 }
 
 //Controller Activation

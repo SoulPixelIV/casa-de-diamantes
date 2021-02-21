@@ -511,7 +511,6 @@
             {"propertyId":{"name":"enemy","path":"objects/battleArenaSpawn_obj/battleArenaSpawn_obj.yy",},"objectId":{"name":"battleArenaSpawn_obj","path":"objects/battleArenaSpawn_obj/battleArenaSpawn_obj.yy",},"value":"healthpack_obj","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
           ],"isDnd":false,"objectId":{"name":"battleArenaSpawn_obj","path":"objects/battleArenaSpawn_obj/battleArenaSpawn_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1211.0,"y":1393.0,"resourceVersion":"1.0","name":"inst_57CBE05B","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"Spawn1_obj","path":"objects/Spawn1_obj/Spawn1_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1234.0,"y":1665.0,"resourceVersion":"1.0","name":"inst_19D83AB5","tags":[],"resourceType":"GMRInstance",},
-        {"properties":[],"isDnd":false,"objectId":{"name":"fallingObjectPlayer_obj","path":"objects/fallingObjectPlayer_obj/fallingObjectPlayer_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":239.0,"y":1301.0,"resourceVersion":"1.0","name":"inst_7E15E62B","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"zombieGirl_obj","path":"objects/zombieGirl_obj/zombieGirl_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":-1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1248.0,"y":820.0,"resourceVersion":"1.0","name":"inst_BC241C4","tags":[],"resourceType":"GMRInstance",},
         {"properties":[
             {"propertyId":{"name":"onlySpawn","path":"objects/battleArena_obj/battleArena_obj.yy",},"objectId":{"name":"battleArena_obj","path":"objects/battleArena_obj/battleArena_obj.yy",},"value":"False","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
@@ -1888,7 +1887,6 @@
     {"name":"inst_19D83AB5","path":"rooms/level1_SenzelaForest/level1_SenzelaForest.yy",},
     {"name":"inst_7332053B","path":"rooms/level1_SenzelaForest/level1_SenzelaForest.yy",},
     {"name":"inst_37EDEC4A","path":"rooms/level1_SenzelaForest/level1_SenzelaForest.yy",},
-    {"name":"inst_7E15E62B","path":"rooms/level1_SenzelaForest/level1_SenzelaForest.yy",},
     {"name":"inst_3E5A47F1","path":"rooms/level1_SenzelaForest/level1_SenzelaForest.yy",},
     {"name":"inst_4D9CF5B9","path":"rooms/level1_SenzelaForest/level1_SenzelaForest.yy",},
     {"name":"inst_7ECBA5CF","path":"rooms/level1_SenzelaForest/level1_SenzelaForest.yy",},
