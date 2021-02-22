@@ -103,9 +103,13 @@ else if (room == blackjackTable)
 {
 	global.ambientShadowIntensity = 0.55 * global.gamma;
 }
-else if (room == level0_SenzelaForest || room == level1_SenzelaForest || room == level2_SenzelaForest)
+else if (room == level0_SenzelaForest || room == level1_SenzelaForest)
 {
 	global.ambientShadowIntensity = 0.6 * global.gamma;
+}
+else if (room == level2_SenzelaForest)
+{
+	global.ambientShadowIntensity = 0;
 }
 else
 {
