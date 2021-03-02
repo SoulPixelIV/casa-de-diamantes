@@ -14,9 +14,38 @@ if (attackCooldown > 30 && attackInProg1)
 	playerPosY = player_obj.y;
 }
 
+//Sight Check
+if (!collision_line(x, y, player_obj.x, player_obj.y, collider_obj, false, true))
+{
+	if (collision_line(x, y, player_obj.x, player_obj.y, player_obj, false, true))
+	{
+		if (distance_to_point(player_obj.x, player_obj.y) < aggroRange)
+		{
+			deaggroTimer = deaggroTimerSave;
+			aggroTimer -= global.dt;
+		}
+	}
+}
+else
+{
+	aggroTimer = aggroTimerSave;
+	deaggroTimer -= global.dt;
+}
+
+if (deaggroTimer < 0)
+{
+	aggro = false;
+	deaggroTimer = deaggroTimerSave;
+}
+if (aggroTimer < 0)
+{
+	aggro = true;
+	aggroTimer = aggroTimerSave;
+}
+
 if (movement)
 {
-	if (distance_to_object(player_obj) < playerSightMax && distance_to_object(player_obj) > playerSightMin)
+	if (aggro && distance_to_object(player_obj) > 64)
 	{
 		if (!collision_circle(x, y, 8, zombieSoldierGirl_obj, false, true))
 		{
@@ -191,13 +220,13 @@ with (headshotHitbox)
 }
 
 //Attack
-if (instance_exists(player_obj))
+if (instance_exists(player_obj) && aggro)
 {
 	if (player_obj.movement)
 	{
-		if (distance_to_object(player_obj) < aggroRangeX && player_obj.y > y - 64 && player_obj.y < y + aggroRangeY && ((image_xscale == 1 && player_obj.x > x) || (image_xscale == -1 && player_obj.x < x)))
+		if ((image_xscale == 1 && player_obj.x > x) || (image_xscale == -1 && player_obj.x < x))
 		{
-			attackCooldown -= global.dt / 4;
+			attackCooldown -= global.dt;
 		}
 		else
 		{

@@ -4,7 +4,7 @@ image_index += global.dt / 15 * animationSpeed;
 
 if (aimDelay > 160)
 {
-	if (instance_exists(player_obj) && distance_to_object(player_obj) < 256)
+	if (instance_exists(player_obj) && distance_to_object(player_obj) < aggroRange)
 	{
 	    image_angle = point_direction(x, y, player_obj.x, player_obj.y) + 90;
 	}
@@ -23,7 +23,7 @@ else
 	}
 }
 
-if (instance_exists(player_obj) && distance_to_object(player_obj) < 128)
+if (instance_exists(player_obj) && distance_to_object(player_obj) < aggroRange - aggroRange / 4)
 {
 	aimDelay -= global.dt;
 }
