@@ -8,7 +8,7 @@ if (spawnTime < 0)
 {
 	instance_destroy(light);
 	var object = instance_create_layer(x, y, "Instances", spawnObject);
-	if (object == crawler_obj)
+	if (object.aggro != noone)
 	{
 		object.aggro = true;
 	}

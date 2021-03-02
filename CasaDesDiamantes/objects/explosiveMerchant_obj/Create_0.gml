@@ -4,7 +4,6 @@
 horspeed = 0;
 verspeed = 0;
 dir = 0;
-aggro = false;
 
 //Stats
 hp = 40;
@@ -27,8 +26,15 @@ damageTint = false;
 damageCollision = false;
 damageTintTimer = 15;
 headshot = false;
+aggro = false;
+aggroTimer = 130;
+deaggroTimer = 3000;
+exclamationmarkTimer = 250;
 
 //Help Vars
+aggroTimerSave = aggroTimer;
+deaggroTimerSave = deaggroTimer;
+exclamationmarkTimerSave = exclamationmarkTimer;
 damageTintTimerSave = damageTintTimer;
 
 barrelHitbox = instance_create_layer(x + 9, y, "ForegroundObjects", barrelHitbox_obj);

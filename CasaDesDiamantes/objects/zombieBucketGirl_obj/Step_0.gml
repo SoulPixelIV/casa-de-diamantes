@@ -5,9 +5,41 @@ y += verspeed * global.dt;
 
 dirLookat = point_direction(x, y, player_obj.x, player_obj.y);
 
+//Sight Check
+if (!collision_line(x, y, player_obj.x, player_obj.y, collider_obj, false, true))
+{
+	if (collision_line(x, y, player_obj.x, player_obj.y, player_obj, false, true))
+	{
+		if (distance_to_point(player_obj.x, player_obj.y) < aggroRange)
+		{
+			if ((image_xscale == 1 && player_obj.x >= x) || (image_xscale == -1 && player_obj.x <= x))
+			{
+				deaggroTimer = deaggroTimerSave;
+				aggroTimer -= global.dt;
+			}
+		}
+	}
+}
+else
+{
+	aggroTimer = aggroTimerSave;
+	deaggroTimer -= global.dt;
+}
+
+if (deaggroTimer < 0)
+{
+	aggro = false;
+	deaggroTimer = deaggroTimerSave;
+}
+if (aggroTimer < 0)
+{
+	aggro = true;
+	aggroTimer = aggroTimerSave;
+}
+
 if (movement)
 {
-	if (distance_to_object(player_obj) < playerSightMax && distance_to_object(player_obj) > playerSightMin)
+	if (aggro && distance_to_object(player_obj) > 24)
 	{
 		if (instance_exists(hazard_obj))
 		{
@@ -180,17 +212,20 @@ if (hpBucket < 0 && !playedSound)
 
 //###Attack###
 
-attackCooldown -= global.dt;
+if (aggro)
+{
+	attackCooldown -= global.dt;
+}
 
 //Cooldown
-if (!attackInProg1 && !attackInProg2 && distance_to_object(player_obj) < playerSightMax && bucketRemoved)
+if (!attackInProg1 && !attackInProg2 && distance_to_object(player_obj) < aggroRange && bucketRemoved && aggro)
 {
 	movement = true;
 	sprite_index = zombieBucketGirlBroken_spr;
 }
 
 //Prepare Attack
-if (attackCooldown < 0 && distance_to_object(player_obj) < playerSightMax)
+if (attackCooldown < 0 && distance_to_object(player_obj) < aggroRange)
 {
 	if (randAttack == 1)
 	{

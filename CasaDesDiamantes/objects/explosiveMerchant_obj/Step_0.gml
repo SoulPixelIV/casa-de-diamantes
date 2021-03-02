@@ -4,12 +4,36 @@ x += horspeed * global.dt;
 y += verspeed * global.dt;
 dirLookat = point_direction(x, y, player_obj.x, player_obj.y);
 
-if (instance_exists(player_obj))
+//Sight Check
+if (!collision_line(x, y, player_obj.x, player_obj.y, collider_obj, false, true))
 {
-	if (distance_to_object(player_obj) < aggroRange)
+	if (collision_line(x, y, player_obj.x, player_obj.y, player_obj, false, true))
 	{
-		aggro = true;
+		if (distance_to_point(player_obj.x, player_obj.y) < aggroRange)
+		{
+			if ((image_xscale == 1 && player_obj.x >= x) || (image_xscale == -1 && player_obj.x <= x))
+			{
+				deaggroTimer = deaggroTimerSave;
+				aggroTimer -= global.dt;
+			}
+		}
 	}
+}
+else
+{
+	aggroTimer = aggroTimerSave;
+	deaggroTimer -= global.dt;
+}
+
+if (deaggroTimer < 0)
+{
+	aggro = false;
+	deaggroTimer = deaggroTimerSave;
+}
+if (aggroTimer < 0)
+{
+	aggro = true;
+	aggroTimer = aggroTimerSave;
 }
 
 if (movement && aggro)

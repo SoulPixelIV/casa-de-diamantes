@@ -4,6 +4,7 @@ if (!dealtDamage && instance_exists(enemyTarget))
 	enemyTarget.damageTint = true;
 	enemyTarget.hp -= 8;
 	enemyTarget.headshot = false;
+	enemyTarget.aggro = true;
 	bloodSpread = instance_create_layer(x, y, "Instances", bloodSpread_obj);
 	bloodSpread.image_angle = image_angle;
 	bloodSpread2 = instance_create_layer(x, y, "Instances", bloodSpread2_obj);

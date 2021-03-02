@@ -4,10 +4,36 @@ x += horspeed * global.dt;
 y += verspeed * global.dt;
 horspeed = movSpeedGrad;
 
-//Aggro
-if (distance_to_object(player_obj) < aggroRange)
+//Sight Check
+if (!collision_line(x, y, player_obj.x, player_obj.y, collider_obj, false, true))
+{
+	if (collision_line(x, y, player_obj.x, player_obj.y, player_obj, false, true))
+	{
+		if (distance_to_point(player_obj.x, player_obj.y) < aggroRange)
+		{
+			if ((image_xscale == 1 && player_obj.x >= x) || (image_xscale == -1 && player_obj.x <= x))
+			{
+				deaggroTimer = deaggroTimerSave;
+				aggroTimer -= global.dt;
+			}
+		}
+	}
+}
+else
+{
+	aggroTimer = aggroTimerSave;
+	deaggroTimer -= global.dt;
+}
+
+if (deaggroTimer < 0)
+{
+	aggro = false;
+	deaggroTimer = deaggroTimerSave;
+}
+if (aggroTimer < 0)
 {
 	aggro = true;
+	aggroTimer = aggroTimerSave;
 }
 
 if (aggro)
@@ -197,27 +223,30 @@ if (useDelayTimer < 0)
 //###Attack###
 
 //Cooldown
-if (!attackInProg1 || !attackInProg2)
+if (aggro)
 {
-	attackCooldown -= global.dt;
-	
-	if (attackCooldown < 0 && !attackInProg1 && !attackInProg2)
+	if (!attackInProg1 || !attackInProg2)
 	{
-		if (fireballInstance == noone && place_free(x, y - 46))
+		attackCooldown -= global.dt;
+	
+		if (attackCooldown < 0 && !attackInProg1 && !attackInProg2)
 		{
-			var attack = choose(1, 2);
-			if (attack == 1)
+			if (fireballInstance == noone && place_free(x, y - 46))
+			{
+				var attack = choose(1, 2);
+				if (attack == 1)
+				{
+					attackInProg1 = true;
+				}
+				if (attack == 2)
+				{
+					attackInProg2 = true;
+				}
+			}
+			else
 			{
 				attackInProg1 = true;
 			}
-			if (attack == 2)
-			{
-				attackInProg2 = true;
-			}
-		}
-		else
-		{
-			attackInProg1 = true;
 		}
 	}
 }

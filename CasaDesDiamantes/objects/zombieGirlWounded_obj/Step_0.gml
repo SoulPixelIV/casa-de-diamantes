@@ -4,13 +4,71 @@ x += horspeed * global.dt;
 y += verspeed * global.dt;
 dirLookat = point_direction(x, y, player_obj.x, player_obj.y);
 
+//Sight Check
+if (!collision_line(x, y, player_obj.x, player_obj.y, collider_obj, false, true))
+{
+	if (collision_line(x, y, player_obj.x, player_obj.y, player_obj, false, true))
+	{
+		if (distance_to_point(player_obj.x, player_obj.y) < aggroRange)
+		{
+			if ((image_xscale == 1 && player_obj.x >= x) || (image_xscale == -1 && player_obj.x <= x))
+			{
+				deaggroTimer = deaggroTimerSave;
+				aggroTimer -= global.dt;
+			}
+		}
+	}
+}
+else
+{
+	aggroTimer = aggroTimerSave;
+	deaggroTimer -= global.dt;
+}
+
+if (deaggroTimer < 0)
+{
+	aggro = false;
+	deaggroTimer = deaggroTimerSave;
+}
+if (aggroTimer < 0)
+{
+	aggro = true;
+	aggroTimer = aggroTimerSave;
+}
+
 if (movement)
 {
-	if (distance_to_object(player_obj) < playerSightMax && distance_to_object(player_obj) > playerSightMin)
+	if (aggro)
 	{
-		if (instance_exists(hazard_obj))
+		if (distance_to_object(player_obj) > 24)
 		{
-			if (!collision_circle(x, y, 64, hazard_obj, false, true))
+			if (instance_exists(hazard_obj))
+			{
+				if (!collision_circle(x, y, 64, hazard_obj, false, true))
+				{
+					if (player_obj.x > x)
+					{
+						horspeed = movSpeed;
+					}
+					else
+					{
+						horspeed = -movSpeed;
+					}
+				}
+				else
+				{
+					hazard = instance_nearest(x, y, hazard_obj);
+					if (hazard.x > x)
+					{
+						horspeed = -movSpeed / 2;
+					}
+					else
+					{
+						horspeed = movSpeed / 2;
+					}
+				}
+			}
+			else
 			{
 				if (player_obj.x > x)
 				{
@@ -21,50 +79,24 @@ if (movement)
 					horspeed = -movSpeed;
 				}
 			}
+			if (dirLookat > 90 && dirLookat < 270)
+			{
+				image_xscale = -1;
+			}
 			else
 			{
-				hazard = instance_nearest(x, y, hazard_obj);
-				if (hazard.x > x)
-				{
-					horspeed = -movSpeed / 2;
-				}
-				else
-				{
-					horspeed = movSpeed / 2;
-				}
+				image_xscale = 1;
 			}
 		}
 		else
 		{
-			if (player_obj.x > x)
-			{
-				horspeed = movSpeed;
-			}
-			else
-			{
-				horspeed = -movSpeed;
-			}
-		}
-		if (dirLookat > 90 && dirLookat < 270)
-		{
-			image_xscale = -1;
-		}
-		else
-		{
-			image_xscale = 1;
-		}
-	}
-	else
-	{
-		horspeed = 0;
+			horspeed = 0;
+		}	
 	}
 }
 else
 {
-	if (!attackInProg)
-	{
-		horspeed = 0;
-	}
+	horspeed = 0;
 }
 
 //Gravity

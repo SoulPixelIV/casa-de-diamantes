@@ -27,6 +27,10 @@ attackDelay1 = 450;
 attackDelay2 = 700;
 delay1 = false;
 delay2 = false;
+aggro = false;
+aggroTimer = 130;
+deaggroTimer = 3000;
+exclamationmarkTimer = 250;
 
 light = noone;
 hitbox = noone;
@@ -35,6 +39,9 @@ attackCooldownSave = attackCooldown;
 attackDelay1Save = attackDelay1;
 attackDelay2Save = attackDelay2;
 
+aggroTimerSave = aggroTimer;
+deaggroTimerSave = deaggroTimer;
+exclamationmarkTimerSave = exclamationmarkTimer;
 useDelayTimerSave = useDelayTimer;
 
 animationSpeed = 0.5;

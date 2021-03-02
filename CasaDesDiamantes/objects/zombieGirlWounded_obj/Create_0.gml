@@ -36,8 +36,15 @@ damageTint = false;
 damageTintHeadshot = false;
 damageTintTimer = 15;
 headshot = false;
+aggro = false;
+aggroTimer = 130;
+deaggroTimer = 3000;
+exclamationmarkTimer = 250;
 
 //Help Vars
+aggroTimerSave = aggroTimer;
+deaggroTimerSave = deaggroTimer;
+exclamationmarkTimerSave = exclamationmarkTimer;
 attackCooldownSave = attackCooldown;
 attackDelaySave = attackDelay;
 damageTintTimerSave = damageTintTimer;

@@ -21,8 +21,11 @@ if (!collision_line(x, y, player_obj.x, player_obj.y, collider_obj, false, true)
 	{
 		if (distance_to_point(player_obj.x, player_obj.y) < aggroRange)
 		{
-			deaggroTimer = deaggroTimerSave;
-			aggroTimer -= global.dt;
+			if ((image_xscale == 1 && player_obj.x >= x) || (image_xscale == -1 && player_obj.x <= x))
+			{
+				deaggroTimer = deaggroTimerSave;
+				aggroTimer -= global.dt;
+			}
 		}
 	}
 }
