@@ -8,9 +8,12 @@ if (spawnTime < 0)
 {
 	instance_destroy(light);
 	var object = instance_create_layer(x, y, "Instances", spawnObject);
-	if (object == zombieGirl_obj || object == zombieSoldierGirl_obj || object == zombieGirlWounded_obj || object == zombieBucketGirl_obj || object == explosiveMerchant_obj || object == crawler_obj)
+	with (object)
 	{
-		object.aggro = true;
+		if (variable_instance_exists(id, "aggro"))
+		{
+			aggro = true;
+		}
 	}
 
 	with (place_meeting(x, y, battleArena_obj))
