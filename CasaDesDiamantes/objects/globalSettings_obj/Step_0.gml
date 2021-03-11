@@ -80,6 +80,12 @@ if (keyboard_check_pressed(vk_f5))
 	instance_destroy(player_obj);
 	room_goto(level1_SenzelaForest);
 }
+if (keyboard_check_pressed(vk_f6))
+{
+	part_emitter_destroy_all(global.partSystem);
+	instance_destroy(player_obj);
+	room_goto(level2_SenzelaForest);
+}
 /*
 if (keyboard_check_pressed(vk_f11))
 {

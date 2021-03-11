@@ -248,7 +248,7 @@ else
 	sprite_index = zombieSoldierGirlGrenate_spr;
 }
 
-if (attackCooldown < 160 && attackInProg1)
+if (attackCooldown < 300 && attackInProg1)
 {
 	sprite_index = zombieSoldierGirlAim_spr;
 }

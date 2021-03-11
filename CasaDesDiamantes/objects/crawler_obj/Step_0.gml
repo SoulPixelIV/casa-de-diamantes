@@ -202,9 +202,9 @@ if (hp < 0)
 	{
 		instance_destroy(light);
 	}
-	if (instance_exists(hitbox))
+	if (instance_exists(dmgHitbox))
 	{
-		instance_destroy(hitbox);
+		instance_destroy(dmgHitbox);
 	}
 	instance_change(zombieGirlDeath2_obj, true);
 }
@@ -271,17 +271,17 @@ if (attackInProg1 && startFire)
 	animationSpeed = 1.25;
 	sprite_index = crawlerFireAttack_spr;
 	delay1 = true;
-	if (!instance_exists(hitbox))
+	if (!instance_exists(dmgHitbox))
 	{
-		hitbox = instance_create_layer(x + 12, y, "Instances", damageHitbox_obj);
-		with (hitbox)
+		dmgHitbox = instance_create_layer(x + 12, y, "Instances", damageHitbox_obj);
+		with (dmgHitbox)
 		{
 			body = instance_nearest(x, y, crawler_obj);
 		}
-		hitbox.damage = 20;
-		hitbox.image_xscale = 2;
-		hitbox.image_yscale = 1.5;
-		hitbox.timer = attackDelay1;
+		dmgHitbox.damage = 20;
+		dmgHitbox.image_xscale = 2;
+		dmgHitbox.image_yscale = 1.5;
+		dmgHitbox.timer = attackDelay1;
 	}
 	
 	if (!instance_exists(light))
@@ -331,11 +331,11 @@ if (attackDelay1 < 0 || attackDelay2 < 0)
 	{
 		instance_destroy(light);
 	}
-	if (instance_exists(hitbox))
+	if (instance_exists(dmgHitbox))
 	{
-		instance_destroy(hitbox);
+		instance_destroy(dmgHitbox);
 	}
-	hitbox = noone;
+	dmgHitbox = noone;
 	light = noone;
 }
 
@@ -347,11 +347,11 @@ if (instance_exists(light))
 		light[| eLight.Y] = body.y;
 	}
 }
-if (instance_exists(hitbox))
+if (instance_exists(dmgHitbox))
 {
 	if (dir == 0)
 	{
-		with (hitbox)
+		with (dmgHitbox)
 		{
 			x = body.x + 16;
 			y = body.y;
@@ -359,7 +359,7 @@ if (instance_exists(hitbox))
 	}
 	else
 	{
-		with (hitbox)
+		with (dmgHitbox)
 		{
 			x = body.x - 16;
 			y = body.y;

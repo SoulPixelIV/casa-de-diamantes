@@ -31,13 +31,13 @@ if (!aggro)
 }
 
 //Vision line
-if (attackCooldown < 160 && !attackInProg2 && aggro)
+if (attackCooldown < 300 && !attackInProg2 && aggro)
 {
 	if ((image_xscale == 1 && player_obj.x > x) || (image_xscale == -1 && player_obj.x < x))
 	{
 		if (image_xscale == 1)
 		{
-			if (attackCooldown > 30)
+			if (attackCooldown > 120)
 			{
 				draw_line_width_color(x + 15, y, playerPosX, playerPosY, 0.8, c_red, c_red);
 			}
@@ -48,7 +48,7 @@ if (attackCooldown < 160 && !attackInProg2 && aggro)
 		}
 		if (image_xscale == -1)
 		{
-			if (attackCooldown > 30)
+			if (attackCooldown > 120)
 			{
 				draw_line_width_color(x - 15, y, playerPosX, playerPosY, 0.8, c_red, c_red);
 			}

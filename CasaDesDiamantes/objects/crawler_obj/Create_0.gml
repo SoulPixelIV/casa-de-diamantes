@@ -31,6 +31,7 @@ aggro = false;
 aggroTimer = 130;
 deaggroTimer = 3000;
 exclamationmarkTimer = 250;
+dmgHitbox = noone;
 
 light = noone;
 hitbox = noone;
