@@ -27,7 +27,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "TeleportBoxes",
-    "path": "folders/Objects/TeleportBoxes.yy",
+    "path": "folders/Objects/Spawns/TeleportBoxes.yy",
   },
   "resourceVersion": "1.0",
   "name": "SF1_SF0_teleporter",

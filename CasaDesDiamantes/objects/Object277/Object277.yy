@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "newnpc_spr",
-    "path": "sprites/newnpc_spr/newnpc_spr.yy",
+    "name": "cindy_spr337",
+    "path": "sprites/cindy_spr337/cindy_spr337.yy",
   },
   "solid": false,
   "visible": true,
@@ -11,7 +11,7 @@
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
-  "physicsGroup": 0,
+  "physicsGroup": 1,
   "physicsDensity": 0.5,
   "physicsRestitution": 0.1,
   "physicsLinearDamping": 0.1,
@@ -21,8 +21,8 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"parent":{"name":"newnpc_obj","path":"objects/newnpc_obj/newnpc_obj.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"newnpc_obj","path":"objects/newnpc_obj/newnpc_obj.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"parent":{"name":"Object277","path":"objects/Object277/Object277.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"Object277","path":"objects/Object277/Object277.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
@@ -31,7 +31,7 @@
     "path": "folders/Characters.yy",
   },
   "resourceVersion": "1.0",
-  "name": "newnpc_obj",
+  "name": "Object277",
   "tags": [],
   "resourceType": "GMObject",
 }

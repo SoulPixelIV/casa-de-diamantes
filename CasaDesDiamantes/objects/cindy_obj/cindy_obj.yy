@@ -28,7 +28,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Characters",
-    "path": "folders/Objects/Characters.yy",
+    "path": "folders/Characters.yy",
   },
   "resourceVersion": "1.0",
   "name": "cindy_obj",
