@@ -83,6 +83,14 @@ if (string_char_at(dialogue[dialogueLine], 1) == "@")
 {
 	character = shopWorker_obj;
 }
+if (string_char_at(dialogue[dialogueLine], 1) == "$")
+{
+	character = cindy_obj;
+}
+if (string_char_at(dialogue[dialogueLine], 1) == "%")
+{
+	character = cutieplus_obj;
+}
 if (string_char_at(dialogue[dialogueLine], 1) == "W")
 {
 	if (string_char_at(dialogue[dialogueLine], 2) == "1")

@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "cindy_spr337",
-    "path": "sprites/cindy_spr337/cindy_spr337.yy",
+    "name": "cutieplus_spr",
+    "path": "sprites/cutieplus_spr/cutieplus_spr.yy",
   },
   "solid": false,
   "visible": true,
@@ -21,8 +21,8 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"parent":{"name":"Object277","path":"objects/Object277/Object277.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"Object277","path":"objects/Object277/Object277.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"parent":{"name":"cutieplus_obj","path":"objects/cutieplus_obj/cutieplus_obj.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"cutieplus_obj","path":"objects/cutieplus_obj/cutieplus_obj.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
@@ -31,7 +31,7 @@
     "path": "folders/Characters.yy",
   },
   "resourceVersion": "1.0",
-  "name": "Object277",
+  "name": "cutieplus_obj",
   "tags": [],
   "resourceType": "GMObject",
 }
