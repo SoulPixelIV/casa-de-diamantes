@@ -122,21 +122,12 @@ else
 	global.ambientShadowIntensity = 0.6 * global.gamma;
 }
 
-//Controller Activation
-if (gamepad_is_connected(4))
+//Crosshair Setup
+if (player_obj.inputMethod == 0)
 {
-	if (gamepad_button_check_pressed(4, gp_face1))
-	{
-		keyboardActive = false;
-	}
+	cursor_sprite = cursor_spr;
 }
-
-if (keyboard_check_pressed(vk_anykey))
+else
 {
-	keyboardActive = true;
-}
-
-if (!keyboardActive)
-{
-	gamepad_set_vibration(4, 1, 1);
+	cursor_sprite = -1;
 }

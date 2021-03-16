@@ -782,6 +782,7 @@
         {"properties":[],"isDnd":false,"objectId":{"name":"cameraTarget_obj","path":"objects/cameraTarget_obj/cameraTarget_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":864.0,"y":672.0,"resourceVersion":"1.0","name":"inst_767E2612","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"chipRedPickupStatic_obj","path":"objects/chipRedPickupStatic_obj/chipRedPickupStatic_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1664.0,"y":525.0,"resourceVersion":"1.0","name":"inst_5AB61D1B","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"chipBluePickupStatic_obj","path":"objects/chipBluePickupStatic_obj/chipBluePickupStatic_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1664.0,"y":493.0,"resourceVersion":"1.0","name":"inst_45461C59","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"pistol_obj","path":"objects/pistol_obj/pistol_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":352.0,"y":480.0,"resourceVersion":"1.0","name":"inst_56A728E8","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":500,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Instances","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"checkpoint_obj","path":"objects/checkpoint_obj/checkpoint_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":877.0,"y":1960.0,"resourceVersion":"1.0","name":"inst_791CBB0D","tags":[],"resourceType":"GMRInstance",},
@@ -2911,6 +2912,7 @@
     {"name":"inst_1A0E36CF","path":"rooms/level0_RoadToCasino/level0_RoadToCasino.yy",},
     {"name":"inst_5FFEADA8","path":"rooms/level0_RoadToCasino/level0_RoadToCasino.yy",},
     {"name":"inst_4D90F938","path":"rooms/level0_RoadToCasino/level0_RoadToCasino.yy",},
+    {"name":"inst_56A728E8","path":"rooms/level0_RoadToCasino/level0_RoadToCasino.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

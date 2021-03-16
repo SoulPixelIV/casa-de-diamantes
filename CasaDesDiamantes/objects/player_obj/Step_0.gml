@@ -2,20 +2,34 @@
 x += horspeed * global.dt;
 y += verspeed * global.dt;
 
-key_left = keyboard_check(ord("A")); //CONTROLLER AXIS L;
-key_right = keyboard_check(ord("D")); // CONTROLLER AXIS R;
-key_leftright = gamepad_axis_value(4, gp_axislh);
-key_left_release = keyboard_check_released(ord("A"));
-key_right_release = keyboard_check_released(ord("D"));
-key_up = keyboard_check(ord("W"));
-key_down = keyboard_check(ord("S"))
+//Check for Controller or Keyboard
+if (gamepad_button_check_pressed(4, gp_face1))
+{
+	inputMethod = 1;
+}
+else if (keyboard_check_pressed(vk_enter))
+{
+	inputMethod = 0;
+}
+
+key_left = keyboard_check(ord("A")) || gamepad_axis_value(4, gp_axislh) < -0.4; //CONTROLLER AXIS L;
+key_right = keyboard_check(ord("D")) || gamepad_axis_value(4, gp_axislh) > 0.4; // CONTROLLER AXIS R;
+key_left_release = keyboard_check_released(ord("A")) || (gamepad_axis_value(4, gp_axislh) < 0.4 && gamepad_axis_value(4, gp_axislh) > -0.4);
+key_right_release = keyboard_check_released(ord("D")) || (gamepad_axis_value(4, gp_axislh) < 0.4 && gamepad_axis_value(4, gp_axislh) > -0.4);
+
+key_up = keyboard_check(ord("W")) || gamepad_button_check(4, gp_padu) || gamepad_axis_value(4, gp_axislv) < -0.4;
+key_down = keyboard_check(ord("S")) || gamepad_button_check(4, gp_padd) || gamepad_axis_value(4, gp_axislv) > 0.4;
+key_up_pressed = keyboard_check_pressed(ord("W")) || gamepad_button_check_pressed(4, gp_padu);
+key_down_pressed = keyboard_check_pressed(ord("S")) || gamepad_button_check_pressed(4, gp_padd);
+
 key_shoot = mouse_check_button_pressed(mb_left) || gamepad_button_check_pressed(4, gp_shoulderrb);
-key_jump = keyboard_check_pressed(vk_space) || gamepad_button_check_pressed(0, gp_face1);
-key_jump_hold = keyboard_check(vk_space) || gamepad_button_check(0, gp_face1);
-key_jump_release = keyboard_check_released(vk_space) || gamepad_button_check_released(0, gp_face1);
-key_shift_hold = keyboard_check(vk_shift) || gamepad_button_check(0, gp_shoulderl);
-key_shift = keyboard_check_pressed(vk_shift) || gamepad_button_check_pressed(0, gp_shoulderl);
-key_control = keyboard_check_pressed(vk_control) || gamepad_button_check_pressed(0, gp_face2);
+key_reload = mouse_check_button_pressed(mb_right) || gamepad_button_check_pressed(4, gp_shoulderr);
+key_jump = keyboard_check_pressed(vk_space) || gamepad_button_check_pressed(4, gp_shoulderl);
+key_jump_hold = keyboard_check(vk_space) || gamepad_button_check(4, gp_shoulderl);
+key_jump_release = keyboard_check_released(vk_space) || gamepad_button_check_released(4, gp_shoulderl);
+key_shift_hold = keyboard_check(vk_shift) || gamepad_button_check(4, gp_shoulderlb);
+key_shift = keyboard_check_pressed(vk_shift) || gamepad_button_check_pressed(4, gp_shoulderlb);
+key_control = keyboard_check_pressed(vk_control) || gamepad_button_check_pressed(4, gp_face2);
 
 //Movement
 //Cap Speed
@@ -429,11 +443,11 @@ if (!place_meeting(x, y, ladder_obj))
 
 if (onLadder)
 {
-	if (!keyboard_check(ord("A")) && !keyboard_check(ord("D")))
+	if (!key_left && !key_right)
 	{
 		horspeed = 0;
 	}
-	if (keyboard_check(ord("W")))
+	if (key_up)
 	{
 		verspeed = -0.75;
 		if (!audio_is_playing(climb1_snd) && !audio_is_playing(climb2_snd) && !audio_is_playing(climb3_snd) && !audio_is_playing(climb4_snd))
@@ -441,7 +455,7 @@ if (onLadder)
 			var climbsnd = audio_play_sound(choose(climb1_snd, climb2_snd, climb3_snd, climb4_snd), 1, false);
 		}
 	}
-	else if (keyboard_check(ord("S")))
+	else if (key_down)
 	{
 		verspeed = 0.75;
 		if (!audio_is_playing(climb1_snd) && !audio_is_playing(climb2_snd) && !audio_is_playing(climb3_snd) && !audio_is_playing(climb4_snd))
@@ -489,22 +503,21 @@ else
 }
 
 //Weapon System ###TODO###
-dirCursor = point_direction(x, y, mouse_x, mouse_y);
-if (keyboard_check(vk_left))
+if (inputMethod == 0)
 {
-	dirCursor = 180;
+	dirCursor = point_direction(x, y, mouse_x, mouse_y);
 }
-if (keyboard_check(vk_right))
+else
 {
-	dirCursor = 0;
-}
-if (keyboard_check(vk_up))
-{
-	dirCursor = 90;
-}
-if (keyboard_check(vk_down))
-{
-	dirCursor = 270;
+	if (gamepad_axis_value(4, gp_axisrh) > -controllerDeadzone && gamepad_axis_value(4, gp_axisrh) < controllerDeadzone && gamepad_axis_value(4, gp_axisrv) > -controllerDeadzone && gamepad_axis_value(4, gp_axisrv) < controllerDeadzone)
+	{
+		dirCursor = controllerDirLastInput;
+	}
+	else
+	{
+		dirCursor = point_direction(0, 0, gamepad_axis_value(4, gp_axisrh), gamepad_axis_value(4, gp_axisrv));
+		controllerDirLastInput = dirCursor;
+	}
 }
 
 with (gameManager_obj)
@@ -733,7 +746,7 @@ if (global.pistolCooldown > 0 || global.dualBarettasCooldown > 0 || global.shotg
 }
 
 //Reload
-if (mouse_check_button_pressed(mb_right) && !isZombie)
+if (key_reload && !isZombie)
 {
 	if ((global.currentWeapon == pickedWeapon.pistol && global.pistolMag != 0) || (global.currentWeapon == pickedWeapon.dualBarettas && global.pistolMag != 0) || (global.currentWeapon == pickedWeapon.shotgun && global.shotgunMag != 0))
 	{

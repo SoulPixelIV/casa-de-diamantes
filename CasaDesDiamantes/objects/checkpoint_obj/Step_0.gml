@@ -8,7 +8,7 @@ if (globalSettings_obj.restartInProg)
 }
 
 //Activate Checkpoint
-if (distance_to_object(player_obj) < 32 && keyboard_check_pressed(ord("W")) && !used)
+if (distance_to_object(player_obj) < 32 && player_obj.key_up_pressed && !used)
 {
 	active = true;
 }
