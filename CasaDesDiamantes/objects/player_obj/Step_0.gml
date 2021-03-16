@@ -3,33 +3,33 @@ x += horspeed * global.dt;
 y += verspeed * global.dt;
 
 //Check for Controller or Keyboard
-if (gamepad_button_check_pressed(4, gp_face1))
+if (gamepad_button_check_pressed(4, gp_face1) || gamepad_button_check_pressed(0, gp_face1))
 {
 	inputMethod = 1;
 }
-else if (keyboard_check_pressed(vk_enter))
+else if (keyboard_check_pressed(vk_anykey))
 {
 	inputMethod = 0;
 }
 
-key_left = keyboard_check(ord("A")) || gamepad_axis_value(4, gp_axislh) < -0.4; //CONTROLLER AXIS L;
-key_right = keyboard_check(ord("D")) || gamepad_axis_value(4, gp_axislh) > 0.4; // CONTROLLER AXIS R;
-key_left_release = keyboard_check_released(ord("A")) || (gamepad_axis_value(4, gp_axislh) < 0.4 && gamepad_axis_value(4, gp_axislh) > -0.4);
-key_right_release = keyboard_check_released(ord("D")) || (gamepad_axis_value(4, gp_axislh) < 0.4 && gamepad_axis_value(4, gp_axislh) > -0.4);
+key_left = keyboard_check(ord("A")) || gamepad_axis_value(4, gp_axislh) < -0.4 || gamepad_axis_value(0, gp_axislh) < -0.4; //CONTROLLER AXIS L;
+key_right = keyboard_check(ord("D")) || gamepad_axis_value(4, gp_axislh) > 0.4 || gamepad_axis_value(0, gp_axislh) > 0.4; // CONTROLLER AXIS R;
+key_left_release = keyboard_check_released(ord("A")) || (gamepad_axis_value(4, gp_axislh) < 0.4 && gamepad_axis_value(4, gp_axislh) > -0.4) || (gamepad_axis_value(0, gp_axislh) < 0.4 && gamepad_axis_value(0, gp_axislh) > -0.4);
+key_right_release = keyboard_check_released(ord("D")) || (gamepad_axis_value(4, gp_axislh) < 0.4 && gamepad_axis_value(4, gp_axislh) > -0.4) || (gamepad_axis_value(0, gp_axislh) < 0.4 && gamepad_axis_value(0, gp_axislh) > -0.4);
 
-key_up = keyboard_check(ord("W")) || gamepad_button_check(4, gp_padu) || gamepad_axis_value(4, gp_axislv) < -0.4;
-key_down = keyboard_check(ord("S")) || gamepad_button_check(4, gp_padd) || gamepad_axis_value(4, gp_axislv) > 0.4;
-key_up_pressed = keyboard_check_pressed(ord("W")) || gamepad_button_check_pressed(4, gp_padu);
-key_down_pressed = keyboard_check_pressed(ord("S")) || gamepad_button_check_pressed(4, gp_padd);
+key_up = keyboard_check(ord("W")) || gamepad_button_check(4, gp_padu) || gamepad_axis_value(4, gp_axislv) < -0.4 || gamepad_button_check(0, gp_padu) || gamepad_axis_value(0, gp_axislv) < -0.4;
+key_down = keyboard_check(ord("S")) || gamepad_button_check(4, gp_padd) || gamepad_axis_value(4, gp_axislv) > 0.4 || gamepad_button_check(0, gp_padd) || gamepad_axis_value(0, gp_axislv) > 0.4;
+key_up_pressed = keyboard_check_pressed(ord("W")) || gamepad_button_check_pressed(4, gp_padu) || gamepad_button_check_pressed(0, gp_padu);
+key_down_pressed = keyboard_check_pressed(ord("S")) || gamepad_button_check_pressed(4, gp_padd) || gamepad_button_check_pressed(0, gp_padd);
 
-key_shoot = mouse_check_button_pressed(mb_left) || gamepad_button_check_pressed(4, gp_shoulderrb);
-key_reload = mouse_check_button_pressed(mb_right) || gamepad_button_check_pressed(4, gp_shoulderr);
-key_jump = keyboard_check_pressed(vk_space) || gamepad_button_check_pressed(4, gp_shoulderl);
-key_jump_hold = keyboard_check(vk_space) || gamepad_button_check(4, gp_shoulderl);
-key_jump_release = keyboard_check_released(vk_space) || gamepad_button_check_released(4, gp_shoulderl);
-key_shift_hold = keyboard_check(vk_shift) || gamepad_button_check(4, gp_shoulderlb);
-key_shift = keyboard_check_pressed(vk_shift) || gamepad_button_check_pressed(4, gp_shoulderlb);
-key_control = keyboard_check_pressed(vk_control) || gamepad_button_check_pressed(4, gp_face2);
+key_shoot = mouse_check_button_pressed(mb_left) || gamepad_button_check_pressed(4, gp_shoulderrb) || gamepad_button_check_pressed(0, gp_shoulderrb);
+key_reload = mouse_check_button_pressed(mb_right) || gamepad_button_check_pressed(4, gp_shoulderr) || gamepad_button_check_pressed(0, gp_shoulderr);
+key_jump = keyboard_check_pressed(vk_space) || gamepad_button_check_pressed(4, gp_shoulderl) || gamepad_button_check_pressed(0, gp_shoulderl);
+key_jump_hold = keyboard_check(vk_space) || gamepad_button_check(4, gp_shoulderl) || gamepad_button_check(0, gp_shoulderl);
+key_jump_release = keyboard_check_released(vk_space) || gamepad_button_check_released(4, gp_shoulderl) || gamepad_button_check_released(0, gp_shoulderl);
+key_shift_hold = keyboard_check(vk_shift) || gamepad_button_check(4, gp_shoulderlb) || gamepad_button_check(0, gp_shoulderlb);
+key_shift = keyboard_check_pressed(vk_shift) || gamepad_button_check_pressed(4, gp_shoulderlb) || gamepad_button_check_pressed(0, gp_shoulderlb);
+key_control = keyboard_check_pressed(vk_control) || gamepad_button_check_pressed(4, gp_face2) || gamepad_button_check_pressed(0, gp_face2);
 
 //Movement
 //Cap Speed
@@ -509,14 +509,29 @@ if (inputMethod == 0)
 }
 else
 {
-	if (gamepad_axis_value(4, gp_axisrh) > -controllerDeadzone && gamepad_axis_value(4, gp_axisrh) < controllerDeadzone && gamepad_axis_value(4, gp_axisrv) > -controllerDeadzone && gamepad_axis_value(4, gp_axisrv) < controllerDeadzone)
+	if (gamepad_is_connected(4))
 	{
-		dirCursor = controllerDirLastInput;
+		if ((gamepad_axis_value(4, gp_axisrh) > -controllerDeadzone && gamepad_axis_value(4, gp_axisrh) < controllerDeadzone && gamepad_axis_value(4, gp_axisrv) > -controllerDeadzone && gamepad_axis_value(4, gp_axisrv) < controllerDeadzone))
+		{
+			dirCursor = controllerDirLastInput;
+		}
+		else
+		{
+			dirCursor = point_direction(0, 0, gamepad_axis_value(4, gp_axisrh), gamepad_axis_value(4, gp_axisrv));
+			controllerDirLastInput = dirCursor;
+		}
 	}
-	else
+	if (gamepad_is_connected(0))
 	{
-		dirCursor = point_direction(0, 0, gamepad_axis_value(4, gp_axisrh), gamepad_axis_value(4, gp_axisrv));
-		controllerDirLastInput = dirCursor;
+		if (gamepad_axis_value(0, gp_axisrh) > -controllerDeadzone && gamepad_axis_value(0, gp_axisrh) < controllerDeadzone && gamepad_axis_value(0, gp_axisrv) > -controllerDeadzone && gamepad_axis_value(0, gp_axisrv) < controllerDeadzone)
+		{
+			dirCursor = controllerDirLastInput;
+		}
+		else
+		{
+			dirCursor = point_direction(0, 0, gamepad_axis_value(0, gp_axisrh), gamepad_axis_value(0, gp_axisrv));
+			controllerDirLastInput = dirCursor;
+		}
 	}
 }
 

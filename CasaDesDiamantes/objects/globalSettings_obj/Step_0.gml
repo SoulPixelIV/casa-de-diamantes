@@ -123,11 +123,14 @@ else
 }
 
 //Crosshair Setup
-if (player_obj.inputMethod == 0)
+if (instance_exists(player_obj))
 {
-	cursor_sprite = cursor_spr;
-}
-else
-{
-	cursor_sprite = -1;
+	if (player_obj.inputMethod == 0)
+	{
+		cursor_sprite = cursor_spr;
+	}
+	else
+	{
+		cursor_sprite = -1;
+	}
 }
