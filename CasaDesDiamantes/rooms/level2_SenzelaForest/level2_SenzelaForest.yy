@@ -501,6 +501,8 @@
         {"properties":[],"isDnd":false,"objectId":{"name":"chipRedPickupStatic_obj","path":"objects/chipRedPickupStatic_obj/chipRedPickupStatic_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1248.0,"y":5056.0,"resourceVersion":"1.0","name":"inst_B097710","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"cindy_obj","path":"objects/cindy_obj/cindy_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":2066.0,"y":6006.0,"resourceVersion":"1.0","name":"inst_7DCEEC6F","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"cutieplus_obj","path":"objects/cutieplus_obj/cutieplus_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":2048.0,"y":5984.0,"resourceVersion":"1.0","name":"inst_1ECA6ECE","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"healthpack_obj","path":"objects/healthpack_obj/healthpack_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":2496.0,"y":5792.0,"resourceVersion":"1.0","name":"inst_4EB76FC6","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"healthpack_obj","path":"objects/healthpack_obj/healthpack_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":2464.0,"y":5792.0,"resourceVersion":"1.0","name":"inst_1FE75E71","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":400,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Instances","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"checkpoint_obj","path":"objects/checkpoint_obj/checkpoint_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":2481.0,"y":6016.0,"resourceVersion":"1.0","name":"inst_2940E058","tags":[],"resourceType":"GMRInstance",},
@@ -2444,6 +2446,8 @@
     {"name":"inst_7358F390","path":"rooms/level2_SenzelaForest/level2_SenzelaForest.yy",},
     {"name":"inst_6E6A3E5F","path":"rooms/level2_SenzelaForest/level2_SenzelaForest.yy",},
     {"name":"inst_617E88A8","path":"rooms/level2_SenzelaForest/level2_SenzelaForest.yy",},
+    {"name":"inst_4EB76FC6","path":"rooms/level2_SenzelaForest/level2_SenzelaForest.yy",},
+    {"name":"inst_1FE75E71","path":"rooms/level2_SenzelaForest/level2_SenzelaForest.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

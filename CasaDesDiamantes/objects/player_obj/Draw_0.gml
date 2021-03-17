@@ -6,6 +6,12 @@ pistolSprite = playerPistol_spr;
 dualBarettasSprite = playerDualBarettas_spr;
 shotgunSprite = playerShotgun_spr
 
+//Controller Line
+if (inputMethod == 1)
+{
+	draw_sprite_ext(playerControllerLine_spr, -1, x, y - 6, 3, 1, dirCursor, -1, 1);
+}
+
 if (!flip || flip && huggingWall)
 {
 	if (dirCursor > 90 && dirCursor < 270)

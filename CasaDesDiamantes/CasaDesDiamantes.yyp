@@ -186,6 +186,7 @@
     {"id":{"name":"cameraViewIcon2_spr","path":"sprites/cameraViewIcon2_spr/cameraViewIcon2_spr.yy",},"order":7,},
     {"id":{"name":"cameraIcon_spr","path":"sprites/cameraIcon_spr/cameraIcon_spr.yy",},"order":8,},
     {"id":{"name":"blackjackHitButton_spr","path":"sprites/blackjackHitButton_spr/blackjackHitButton_spr.yy",},"order":9,},
+    {"id":{"name":"playerControllerLine_spr","path":"sprites/playerControllerLine_spr/playerControllerLine_spr.yy",},"order":25,},
     {"id":{"name":"potionShopForeground_spr","path":"sprites/potionShopForeground_spr/potionShopForeground_spr.yy",},"order":98,},
     {"id":{"name":"blackjackStandButton_spr","path":"sprites/blackjackStandButton_spr/blackjackStandButton_spr.yy",},"order":10,},
     {"id":{"name":"debugHor_spr","path":"sprites/debugHor_spr/debugHor_spr.yy",},"order":11,},
@@ -791,8 +792,8 @@
   },
   "RoomOrder": [
     {"name":"loadVars","path":"rooms/loadVars/loadVars.yy",},
-    {"name":"level2_SenzelaForest","path":"rooms/level2_SenzelaForest/level2_SenzelaForest.yy",},
     {"name":"level0_RoadToCasino","path":"rooms/level0_RoadToCasino/level0_RoadToCasino.yy",},
+    {"name":"level2_SenzelaForest","path":"rooms/level2_SenzelaForest/level2_SenzelaForest.yy",},
     {"name":"levelTower_hordemode","path":"rooms/levelTower_hordemode/levelTower_hordemode.yy",},
     {"name":"level1_SenzelaForest","path":"rooms/level1_SenzelaForest/level1_SenzelaForest.yy",},
     {"name":"level_Casino","path":"rooms/level_Casino/level_Casino.yy",},
