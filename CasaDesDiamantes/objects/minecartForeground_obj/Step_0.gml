@@ -13,50 +13,53 @@ if (inMinecart)
 	player_obj.y = y - 30;
 }
 
-if (inMinecart && keyboard_check(ord("A")))
+if (instance_exists(player_obj))
 {
-	horspeed -= movSpeed;
-}
-if (inMinecart && keyboard_check(ord("D")))
-{
-	horspeed += movSpeed;
-}
+	if (inMinecart && player_obj.key_left)
+	{
+		horspeed -= movSpeed;
+	}
+	if (inMinecart && player_obj.key_right)
+	{
+		horspeed += movSpeed;
+	}
 
-if (inMinecart)
-{
-	if (horspeed > 0 && !keyboard_check(ord("D")))
+	if (inMinecart)
 	{
-		horspeed -= global.dt / 400;
-		if (horspeed < 0.3)
+		if (horspeed > 0 && !player_obj.key_right)
 		{
-			horspeed = 0;
+			horspeed -= global.dt / 400;
+			if (horspeed < 0.3)
+			{
+				horspeed = 0;
+			}
+		}
+		if (horspeed < 0 && !player_obj.key_left)
+		{
+			horspeed += global.dt / 400;
+			if (horspeed > -0.3)
+			{
+				horspeed = 0;
+			}
 		}
 	}
-	if (horspeed < 0 && !keyboard_check(ord("A")))
+	else
 	{
-		horspeed += global.dt / 400;
-		if (horspeed > -0.3)
+		if (horspeed > 0)
 		{
-			horspeed = 0;
+			horspeed -= global.dt / 400;
+			if (horspeed < 0.3)
+			{
+				horspeed = 0;
+			}
 		}
-	}
-}
-else
-{
-	if (horspeed > 0)
-	{
-		horspeed -= global.dt / 400;
-		if (horspeed < 0.3)
+		if (horspeed < 0)
 		{
-			horspeed = 0;
-		}
-	}
-	if (horspeed < 0)
-	{
-		horspeed += global.dt / 400;
-		if (horspeed > -0.3)
-		{
-			horspeed = 0;
+			horspeed += global.dt / 400;
+			if (horspeed > -0.3)
+			{
+				horspeed = 0;
+			}
 		}
 	}
 }
@@ -116,15 +119,18 @@ else
     verspeed = 0;
 }
 
-if (keyboard_check_pressed(vk_space) && inMinecart)
+if (instance_exists(player_obj))
 {
-	inMinecart = false;
-	player_obj.grounded = false;
-	player_obj.movement = true;
-	player_obj.invincible = false;
-	player_obj.x = x;
-	player_obj.y = y - 64;
-	jump_scr();
-	camera_obj.follow = player_obj;
-	player_obj.colliding = true;
+	if (player_obj.key_jump && inMinecart)
+	{
+		inMinecart = false;
+		player_obj.grounded = false;
+		player_obj.movement = true;
+		player_obj.invincible = false;
+		player_obj.x = x;
+		player_obj.y = y - 64;
+		jump_scr();
+		camera_obj.follow = player_obj;
+		player_obj.colliding = true;
+	}
 }

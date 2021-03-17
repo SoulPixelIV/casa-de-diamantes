@@ -190,6 +190,21 @@ if (hp < 0)
 		camera_obj.follow = deathCross;
 	}
 	
+	//Drop Item
+	var randDrop = choose(1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,3,4)
+	if (randDrop == 2)
+	{
+		instance_create_layer(x, y - 16, "Instances", healthpackPickup_obj);
+	}
+	if (randDrop == 3)
+	{
+		instance_create_layer(x, y - 16, "Instances", ammoPackPistolPickup_obj);
+	}
+	if (randDrop == 4)
+	{
+		instance_create_layer(x, y - 16, "Instances", ammoPackShotgunPickup_obj);
+	}
+	
 	//Drop Money
 	var maxAmount = random_range(moneyDropMin, moneyDropMax);
 	for (i = 0; i < maxAmount; i++)
