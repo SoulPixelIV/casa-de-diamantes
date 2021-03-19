@@ -23,10 +23,10 @@ key_up_pressed = keyboard_check_pressed(ord("W")) || gamepad_button_check_presse
 key_down_pressed = keyboard_check_pressed(ord("S")) || gamepad_button_check_pressed(4, gp_padd) || gamepad_button_check_pressed(0, gp_padd);
 
 key_shoot = mouse_check_button_pressed(mb_left) || gamepad_button_check_pressed(4, gp_shoulderrb) || gamepad_button_check_pressed(0, gp_shoulderrb);
-key_reload = mouse_check_button_pressed(mb_right) || gamepad_button_check_pressed(4, gp_shoulderr) || gamepad_button_check_pressed(0, gp_shoulderr);
-key_jump = keyboard_check_pressed(vk_space) || gamepad_button_check_pressed(4, gp_shoulderl) || gamepad_button_check_pressed(0, gp_shoulderl);
-key_jump_hold = keyboard_check(vk_space) || gamepad_button_check(4, gp_shoulderl) || gamepad_button_check(0, gp_shoulderl);
-key_jump_release = keyboard_check_released(vk_space) || gamepad_button_check_released(4, gp_shoulderl) || gamepad_button_check_released(0, gp_shoulderl);
+key_reload = mouse_check_button_pressed(mb_right) || gamepad_button_check_pressed(4, gp_face2) || gamepad_button_check_pressed(0, gp_face2);
+key_jump = keyboard_check_pressed(vk_space) || gamepad_button_check_pressed(4, gp_face1) || gamepad_button_check_pressed(0, gp_face1);
+key_jump_hold = keyboard_check(vk_space) || gamepad_button_check(4, gp_face1) || gamepad_button_check(0, gp_face1);
+key_jump_release = keyboard_check_released(vk_space) || gamepad_button_check_released(4, gp_face1) || gamepad_button_check_released(0, gp_face1);
 key_shift_hold = keyboard_check(vk_shift) || gamepad_button_check(4, gp_shoulderlb) || gamepad_button_check(0, gp_shoulderlb);
 key_shift = keyboard_check_pressed(vk_shift) || gamepad_button_check_pressed(4, gp_shoulderlb) || gamepad_button_check_pressed(0, gp_shoulderlb);
 key_control = keyboard_check_pressed(vk_control) || gamepad_button_check_pressed(4, gp_face2) || gamepad_button_check_pressed(0, gp_face2);

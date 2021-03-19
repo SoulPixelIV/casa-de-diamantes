@@ -44,7 +44,7 @@ if (instance_exists(player_obj))
 		}
 
 		//Check Perfect Reload
-		if (mouse_check_button_pressed(mb_right) && !reloadFailed && anim > 3)
+		if (player_obj.key_reload && !reloadFailed && anim > 3)
 		{
 			if (anim > sprite_get_number(ammoCounterReloading_spr) - 3 && anim <= sprite_get_number(ammoCounterReloading_spr))
 			{
