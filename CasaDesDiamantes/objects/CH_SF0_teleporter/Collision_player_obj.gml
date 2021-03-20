@@ -1,6 +1,9 @@
-if (keyboard_check_pressed(ord("W")))
+if (instance_exists(player_obj))
 {
-	part_emitter_destroy_all(global.partSystem);
-	instance_destroy(player_obj);
-	room_goto(level0_SenzelaForest);
+	if (player_obj.key_up_pressed)
+	{
+		part_emitter_destroy_all(global.partSystem);
+		instance_destroy(player_obj);
+		room_goto(level0_SenzelaForest);
+	}
 }
