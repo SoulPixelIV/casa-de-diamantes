@@ -48,7 +48,7 @@ if (aggroTimer < 0)
 
 if (movement)
 {
-	if (aggro && distance_to_object(player_obj) > 64)
+	if (aggro && (x > player_obj.x + 64 || x < player_obj.x - 64))
 	{
 		if (!collision_circle(x, y, 8, zombieSoldierGirl_obj, false, true))
 		{
@@ -290,7 +290,7 @@ if (attackCooldown < 0 && attackInProg2)
 	sprite_index = zombieSoldierGirlGrenate_spr;
 	attackInProg1 = false;
 	attackInProg2 = false;
-	randAttack = choose(1,2);
+	randAttack = choose(1,1,2);
 }
 
 if (damageTint && sprite_index != zombieSoldierGirlFlashHeadshot_spr)

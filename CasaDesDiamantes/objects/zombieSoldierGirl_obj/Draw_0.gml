@@ -85,7 +85,7 @@ if (player_obj != noone)
 	{
 		clamp(dirCursor, 270, 90);
 	}
-	if (attackCooldown < 160 && !attackInProg2)
+	if (attackCooldown < 300 && !attackInProg2)
 	{
 		draw_sprite_ext(zombieSoldierGirlGun_spr, 0, x + 2 * image_xscale, y - 3.6, 1, image_xscale, dirCursor, -1, 1);
 	}
