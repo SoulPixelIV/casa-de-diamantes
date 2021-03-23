@@ -25,18 +25,30 @@
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"slotblock_obj","path":"objects/slotblock_obj/slotblock_obj.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"parent":{"name":"slotblock_obj","path":"objects/slotblock_obj/slotblock_obj.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"bullet_obj","path":"objects/bullet_obj/bullet_obj.yy",},"parent":{"name":"slotblock_obj","path":"objects/slotblock_obj/slotblock_obj.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":64,"eventType":8,"collisionObjectId":null,"parent":{"name":"slotblock_obj","path":"objects/slotblock_obj/slotblock_obj.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [
-    {"varType":5,"value":"noone","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"spawnElement1","tags":[],"resourceType":"GMObjectProperty",},
-    {"varType":5,"value":"0","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"spawnElement2","tags":[],"resourceType":"GMObjectProperty",},
-    {"varType":5,"value":"0","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"spawnElement3","tags":[],"resourceType":"GMObjectProperty",},
-    {"varType":5,"value":"0","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"spawnElement4","tags":[],"resourceType":"GMObjectProperty",},
-    {"varType":5,"value":"0","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"spawnElement5","tags":[],"resourceType":"GMObjectProperty",},
+    {"varType":5,"value":"noone","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[
+        "GMObject",
+      ],"resourceVersion":"1.0","name":"spawnElement1","tags":[],"resourceType":"GMObjectProperty",},
+    {"varType":5,"value":"0","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[
+        "GMObject",
+      ],"resourceVersion":"1.0","name":"spawnElement2","tags":[],"resourceType":"GMObjectProperty",},
+    {"varType":5,"value":"0","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[
+        "GMObject",
+      ],"resourceVersion":"1.0","name":"spawnElement3","tags":[],"resourceType":"GMObjectProperty",},
+    {"varType":5,"value":"0","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[
+        "GMObject",
+      ],"resourceVersion":"1.0","name":"spawnElement4","tags":[],"resourceType":"GMObjectProperty",},
+    {"varType":5,"value":"0","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[
+        "GMObject",
+      ],"resourceVersion":"1.0","name":"spawnElement5","tags":[],"resourceType":"GMObjectProperty",},
     {"varType":1,"value":"0","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"spawnNumber1","tags":[],"resourceType":"GMObjectProperty",},
     {"varType":1,"value":"0","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"spawnNumber2","tags":[],"resourceType":"GMObjectProperty",},
     {"varType":1,"value":"0","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"spawnNumber3","tags":[],"resourceType":"GMObjectProperty",},
     {"varType":1,"value":"0","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"spawnNumber4","tags":[],"resourceType":"GMObjectProperty",},
     {"varType":1,"value":"0","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"spawnNumber5","tags":[],"resourceType":"GMObjectProperty",},
+    {"varType":1,"value":"0","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"status","tags":[],"resourceType":"GMObjectProperty",},
   ],
   "overriddenProperties": [],
   "parent": {
