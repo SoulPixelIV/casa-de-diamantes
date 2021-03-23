@@ -97,7 +97,18 @@ if (!noHUD)
 	draw_text_colour(edgeMarginHor, 252, "Framerate: " + string(fps), c_white, c_white, c_white, c_white, 1);
 
 	//Healthbar
-	draw_sprite_ext(healthbarBorder_spr, 0, edgeMarginHor, edgeMarginVer, 1, 1, 0, -1, 1);
+	if (player_obj.hp == 100)
+	{
+		draw_sprite_ext(healthbarBorderFull_spr, -1, edgeMarginHor, edgeMarginVer, 1, 1, 0, -1, 1);
+	}
+	else if (player_obj.hp > 20)
+	{
+		draw_sprite_ext(healthbarBorder_spr, -1, edgeMarginHor, edgeMarginVer, 1, 1, 0, -1, 1);
+	}
+	else
+	{
+		draw_sprite_ext(healthbarBorderLow_spr, -1, edgeMarginHor, edgeMarginVer, 1, 1, 0, -1, 1);
+	}
 	draw_sprite_ext(healthbarTop2_spr, -1, edgeMarginHor, 19 - (player_obj.hp - 100), 1, 1, 0, -1, 1);
 	draw_sprite_ext(healthbar_spr, 0, edgeMarginHor, 131, 1, 1 * (player_obj.hp / 100) , 0, -1, 1);
 	//Healthcut
