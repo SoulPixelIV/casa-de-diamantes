@@ -443,6 +443,7 @@ if (!place_meeting(x, y, ladder_obj))
 
 if (onLadder)
 {
+	resetJump_scr();
 	if (!key_left && !key_right)
 	{
 		horspeed = 0;

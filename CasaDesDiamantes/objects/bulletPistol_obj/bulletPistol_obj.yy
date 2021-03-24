@@ -31,6 +31,7 @@
     {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"enemy_obj","path":"objects/enemy_obj/enemy_obj.yy",},"parent":{"name":"bulletPistol_obj","path":"objects/bulletPistol_obj/bulletPistol_obj.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"explosive_obj","path":"objects/explosive_obj/explosive_obj.yy",},"parent":{"name":"bulletPistol_obj","path":"objects/bulletPistol_obj/bulletPistol_obj.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"destructible_obj","path":"objects/destructible_obj/destructible_obj.yy",},"parent":{"name":"bulletPistol_obj","path":"objects/bulletPistol_obj/bulletPistol_obj.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"slotblock_obj","path":"objects/slotblock_obj/slotblock_obj.yy",},"parent":{"name":"bulletPistol_obj","path":"objects/bulletPistol_obj/bulletPistol_obj.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],

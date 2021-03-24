@@ -43,9 +43,28 @@ else
 {
 	if (instance_exists(player_obj))
 	{
-		if (place_meeting(x, y, player_obj))
+		if (spawnAtSpecificPoint)
 		{
-			wave = 1;
+			var activateFromPlayer;
+			activateFromPlayer = false;
+			with (player_obj)
+			{
+				if (place_meeting(x, y, battleArenaPlayerpoint_obj))
+				{
+					activateFromPlayer = true;
+				}
+			}
+			if (activateFromPlayer)
+			{
+				wave = 1;
+			}
+		}
+		else
+		{
+			if (place_meeting(x, y, player_obj))
+			{
+				wave = 1;
+			}
 		}
 	}
 }

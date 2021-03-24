@@ -47,6 +47,7 @@ function jump_scr() {
 		}
 	}
 	player_obj.jumping = true;
+	player_obj.onLadder = false;
 	if (!player_obj.isDashing)
 	{
 		player_obj.image_index = 0;

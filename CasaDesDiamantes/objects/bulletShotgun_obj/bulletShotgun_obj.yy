@@ -31,6 +31,7 @@
     {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"explosive_obj","path":"objects/explosive_obj/explosive_obj.yy",},"parent":{"name":"bulletShotgun_obj","path":"objects/bulletShotgun_obj/bulletShotgun_obj.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"headshotHitbox_obj","path":"objects/headshotHitbox_obj/headshotHitbox_obj.yy",},"parent":{"name":"bulletShotgun_obj","path":"objects/bulletShotgun_obj/bulletShotgun_obj.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"destructible_obj","path":"objects/destructible_obj/destructible_obj.yy",},"parent":{"name":"bulletShotgun_obj","path":"objects/bulletShotgun_obj/bulletShotgun_obj.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"slotblock_obj","path":"objects/slotblock_obj/slotblock_obj.yy",},"parent":{"name":"bulletShotgun_obj","path":"objects/bulletShotgun_obj/bulletShotgun_obj.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
