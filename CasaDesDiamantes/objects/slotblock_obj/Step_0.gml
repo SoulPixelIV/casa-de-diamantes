@@ -2,7 +2,19 @@
 image_speed = 0;
 image_index += (global.dt / 15) * animationSpeed;
 
-if (used && !spawned)
+if (used && !spawned && !spinDone)
+{
+	spinTimer -= global.dt;
+	sprite_index = slotblockSpinning_spr;
+	animationSpeed = 2;
+}
+
+if (spinTimer < 0)
+{
+	spinDone = true;
+}
+
+if (used && !spawned && spinDone)
 {
 	if (spawnElement1 != noone)
 	{
@@ -40,5 +52,7 @@ if (used && !spawned)
 		}
 	}
 	spawned = true;
+	sprite_index = slotblock_spr;
+	animationSpeed = 1;
 }
 
