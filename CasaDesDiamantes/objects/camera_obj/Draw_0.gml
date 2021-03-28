@@ -1,10 +1,5 @@
 /// @description Player UI
 
-if (instance_exists(sniperController_obj))
-{
-	draw_sprite(enemyCrosshair_spr, 0, sniperController_obj.sniperTarget.x, sniperController_obj.sniperTarget.y - 24);
-}
-
 if (instance_exists(player_obj))
 {
 	//Ammo Counter

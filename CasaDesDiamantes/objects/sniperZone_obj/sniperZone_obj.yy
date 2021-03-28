@@ -1,16 +1,13 @@
 {
   "spriteId": {
-    "name": "redstripes_spr",
-    "path": "sprites/redstripes_spr/redstripes_spr.yy",
+    "name": "bluestripes_spr",
+    "path": "sprites/bluestripes_spr/bluestripes_spr.yy",
   },
   "solid": false,
   "visible": false,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": {
-    "name": "hazard_obj",
-    "path": "objects/hazard_obj/hazard_obj.yy",
-  },
+  "parentObjectId": null,
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -23,9 +20,7 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"enemyBlockZone_obj","path":"objects/enemyBlockZone_obj/enemyBlockZone_obj.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-  ],
+  "eventList": [],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
@@ -33,7 +28,7 @@
     "path": "folders/Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "enemyBlockZone_obj",
+  "name": "sniperZone_obj",
   "tags": [],
   "resourceType": "GMObject",
 }
