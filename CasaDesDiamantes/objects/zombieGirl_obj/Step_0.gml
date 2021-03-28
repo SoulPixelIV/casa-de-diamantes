@@ -13,7 +13,7 @@ else
 }
 
 //Sight Check
-if (!collision_line(x, y, player_obj.x, player_obj.y, collider_obj, false, true))
+if (!collision_line(x, y, player_obj.x, player_obj.y, collider_obj, false, true) && !collision_line(x, y, player_obj.x, player_obj.y, enemyVisionBlockZone_obj, false, true))
 {
 	if (collision_line(x, y, player_obj.x, player_obj.y, player_obj, false, true))
 	{
@@ -178,7 +178,7 @@ if (hp < 0)
 	}
 	
 	//Drop Item
-	var randDrop = choose(1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,3,4)
+	var randDrop = choose(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,3,4)
 	if (randDrop == 2)
 	{
 		instance_create_layer(x, y - 16, "Instances", healthpackPickup_obj);

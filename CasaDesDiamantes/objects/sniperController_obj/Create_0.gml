@@ -1,3 +1,4 @@
+image_speed = 0.5;
 shootDelay = 700;
 sniperTarget = player_obj;
 positionCrosshair = false;

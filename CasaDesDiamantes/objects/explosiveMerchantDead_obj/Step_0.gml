@@ -94,7 +94,7 @@ if (hp <= 0)
 	}
 	
 	//Drop Item
-	var randDrop = choose(1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,3,4)
+	var randDrop = choose(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,3,4)
 	if (randDrop == 2)
 	{
 		instance_create_layer(x, y - 16, "Instances", healthpackPickup_obj);

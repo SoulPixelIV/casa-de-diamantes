@@ -5,7 +5,7 @@ y += verspeed * global.dt;
 horspeed = movSpeedGrad;
 
 //Sight Check
-if (!collision_line(x, y, player_obj.x, player_obj.y, collider_obj, false, true))
+if (!collision_line(x, y, player_obj.x, player_obj.y, collider_obj, false, true) && !collision_line(x, y, player_obj.x, player_obj.y, enemyVisionBlockZone_obj, false, true))
 {
 	if (collision_line(x, y, player_obj.x, player_obj.y, player_obj, false, true))
 	{
@@ -183,7 +183,7 @@ if (hp < 0)
 	}
 	
 	//Drop Item
-	var randDrop = choose(1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,3,4)
+	var randDrop = choose(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,3,4)
 	if (randDrop == 2)
 	{
 		instance_create_layer(x, y - 16, "Instances", healthpackPickup_obj);
@@ -240,6 +240,18 @@ if (useDelayTimer < 0)
 //Cooldown
 if (aggro)
 {
+	if (instance_exists(player_obj))
+	{
+		if (player_obj.x > x)
+		{
+			dir = 0;
+		}
+		else
+		{
+			dir = 1;
+		}
+	}
+	
 	if (!attackInProg1 || !attackInProg2)
 	{
 		attackCooldown -= global.dt;
