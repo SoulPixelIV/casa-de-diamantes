@@ -160,15 +160,6 @@ else
 image_speed = 0;
 image_index += (global.dt / 15) * animationSpeed;
 
-if (dir == 0)
-{
-	image_xscale = 1;
-}
-else
-{
-	image_xscale = -1;
-}
-
 //###Death###
 if (hp < 0)
 {
@@ -245,10 +236,12 @@ if (aggro)
 		if (player_obj.x > x)
 		{
 			dir = 0;
+			image_xscale = 1;
 		}
 		else
 		{
 			dir = 1;
+			image_xscale = -1;
 		}
 	}
 	

@@ -38,13 +38,30 @@ if (enableShooting)
 		}
 	}
 	
-	if (distance_to_point(sniperTarget.x, sniperTarget.y) > 6)
+	if (sniperPosX > sniperTarget.x + 2)
 	{
-		move_towards_point(sniperTarget.x, sniperTarget.y, global.dt / 2);
+		sniperPosX -= global.dt / 2;
+	}
+	else if (sniperPosX < sniperTarget.x - 2)
+	{
+		sniperPosX += global.dt / 2;
 	}
 	else
 	{
-		
+		sniperPosX = sniperTarget.x;
+	}
+
+	if (sniperPosY > sniperTarget.y + 2)
+	{
+		sniperPosY -= global.dt / 2;
+	}
+	else if (sniperPosY < sniperTarget.y - 2)
+	{
+		sniperPosY += global.dt / 2;
+	}
+	else
+	{
+		sniperPosY = sniperTarget.y;
 	}
 }
 
