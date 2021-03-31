@@ -30,7 +30,7 @@ if (enableShooting)
 		{
 			if (!player_obj.isZombie && !player_obj.invincible && !player_obj.damageRecieved)
 			{
-				player_obj.hp -= 22;
+				player_obj.hp -= damage;
 				player_obj.damageRecieved = true;
 				player_obj.damageCooldown = player_obj.damageCooldownSave;
 				camera_obj.hitVignette = true;

@@ -535,6 +535,7 @@
         {"properties":[],"isDnd":false,"objectId":{"name":"zombieSoldierGirl_obj","path":"objects/zombieSoldierGirl_obj/zombieSoldierGirl_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":-1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1840.0,"y":885.0,"resourceVersion":"1.0","name":"inst_45C1DB6","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"zombieSoldierGirl_obj","path":"objects/zombieSoldierGirl_obj/zombieSoldierGirl_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":-1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":2086.0,"y":939.0,"resourceVersion":"1.0","name":"inst_2079FDE9","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"desinfectionDoor_obj","path":"objects/desinfectionDoor_obj/desinfectionDoor_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":-1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":2142.0,"y":976.0,"resourceVersion":"1.0","name":"inst_731D22B1","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"enemyVisionBlockZone_obj","path":"objects/enemyVisionBlockZone_obj/enemyVisionBlockZone_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":18.5,"scaleY":0.8125,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":4562.0,"y":1495.5,"resourceVersion":"1.0","name":"inst_44ADF5D7","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":900,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Instances","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"checkpoint_obj","path":"objects/checkpoint_obj/checkpoint_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":977.0,"y":681.0,"resourceVersion":"1.0","name":"inst_734C3BCC","tags":[],"resourceType":"GMRInstance",},
@@ -1704,6 +1705,7 @@
     {"name":"inst_5B4C3564","path":"rooms/level1_RoadToCasino/level1_RoadToCasino.yy",},
     {"name":"inst_3C4E1260","path":"rooms/level1_RoadToCasino/level1_RoadToCasino.yy",},
     {"name":"inst_42A9ABD1","path":"rooms/level1_RoadToCasino/level1_RoadToCasino.yy",},
+    {"name":"inst_44ADF5D7","path":"rooms/level1_RoadToCasino/level1_RoadToCasino.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
