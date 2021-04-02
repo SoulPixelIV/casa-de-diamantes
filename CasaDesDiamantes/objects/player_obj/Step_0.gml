@@ -705,6 +705,7 @@ if (!isZombie)
 		{
 			with (player_obj)
 			{
+				startShotCooldown = false;
 				if (key_shoot && !reloading && movement)
 				{
 					if (!onLadder || onLadder && verspeed == 0)
@@ -723,6 +724,7 @@ if (!isZombie)
 		{
 			with (player_obj)
 			{
+				startShotCooldown = false;
 				if (key_shoot && !reloading)
 				{
 					if (!onLadder || onLadder && verspeed == 0)
@@ -741,12 +743,24 @@ if (!isZombie)
 		{
 			with (player_obj)
 			{
+				startShotCooldown = false;
 				if (key_shoot && !reloading)
 				{
 					if (!onLadder || onLadder && verspeed == 0)
 					{
 						shooting_scr("shotgun");
 					}
+				}
+			}
+		}
+		//Shotgun Cock
+		if (!player_obj.startShotCooldown)
+		{
+			if (global.currentWeapon == pickedWeapon.shotgun && global.shotgunCooldown < global.shotgunCooldownSave / 2)
+			{
+				if (!audio_is_playing(pickup_snd))
+				{
+					audio_play_sound(pickup_snd, 1, false);
 				}
 			}
 		}
@@ -765,7 +779,7 @@ if (shotZoomTimer < 0)
 }
 
 //Shot Cooldown
-if (global.pistolCooldown > 0 || global.dualBarettasCooldown > 0 || global.shotgunCooldown > 0)
+if (startShotCooldown)
 {
 	global.pistolCooldown -= 0.1 * global.dt;
 	global.dualBarettasCooldown -= 0.1 * global.dt;

@@ -270,6 +270,12 @@ if (attackCooldown < 0 && verspeed == 0)
 if (attackInProg)
 {
 	instance_create_layer(x, y - 4, "ForegroundObjects", dustParticle_obj);
+	if (!startDrill)
+	{
+		var drillSnd = audio_play_sound_on(emitter, drill_snd, false, 1);
+		audio_sound_pitch(drillSnd, random_range(0.8, 1.1));
+		startDrill = true;
+	}
 }
 if (attackInProg && image_index > image_number - 1 && !dashed)
 {
@@ -315,6 +321,7 @@ if (attackDelay < 0)
 	dashed = false;
 	attackInProg = false;
 	attackInProg2 = false;
+	startDrill = false;
 	animationSpeed = 0.5;
 	sprite_index = zombieGirl_spr;
 	damageCollision = false;

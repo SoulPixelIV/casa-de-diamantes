@@ -22,6 +22,7 @@ attackDelay = 50;
 boostSpeed = 2.05;
 attackInProg = false;
 attackInProg2 = false;
+startDrill = false;
 dashed = false;
 damageCollision = false;
 spawnedHitbox = false;
@@ -51,3 +52,12 @@ with (headshotHitbox)
 {
 	body = instance_nearest(x, y, zombieGirl_obj);
 }
+
+//Create Emitter
+emitter = audio_emitter_create();
+audio_max_distance = 500;
+audio_drop_start = 64;
+
+audio_falloff_set_model(audio_falloff_linear_distance);
+audio_emitter_position(emitter, x, y, 0);
+audio_emitter_falloff(emitter, audio_drop_start, audio_max_distance, 1);

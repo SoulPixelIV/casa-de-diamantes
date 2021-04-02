@@ -39,6 +39,7 @@ function shooting_scr(argument0) {
 			global.pistolAmmo--;
 			global.pistolCooldown = global.pistolCooldownSave;
 			shotZoom = true;
+			player_obj.startShotCooldown = true;
 		}
 	}
 
@@ -85,6 +86,7 @@ function shooting_scr(argument0) {
 			global.pistolAmmo--;
 			global.dualBarettasCooldown = global.dualBarettasCooldownSave;
 			shotZoom = true;
+			player_obj.startShotCooldown = true;
 		}
 	}
 
@@ -132,6 +134,7 @@ function shooting_scr(argument0) {
 			global.shotgunAmmo--;
 			global.shotgunCooldown = global.shotgunCooldownSave;
 			shotZoom = true;
+			player_obj.startShotCooldown = true;
 		}
 	}
 

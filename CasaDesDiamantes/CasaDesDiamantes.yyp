@@ -557,6 +557,7 @@
     {"id":{"name":"lantern_obj","path":"objects/lantern_obj/lantern_obj.yy",},"order":0,},
     {"id":{"name":"lightsRed_obj","path":"objects/lightsRed_obj/lightsRed_obj.yy",},"order":1,},
     {"id":{"name":"ledBarRed_obj","path":"objects/ledBarRed_obj/ledBarRed_obj.yy",},"order":1,},
+    {"id":{"name":"drill_snd","path":"sounds/drill_snd/drill_snd.yy",},"order":30,},
     {"id":{"name":"ledStripe_obj","path":"objects/ledStripe_obj/ledStripe_obj.yy",},"order":2,},
     {"id":{"name":"ledStripe2_obj","path":"objects/ledStripe2_obj/ledStripe2_obj.yy",},"order":3,},
     {"id":{"name":"backgroundWindow_obj","path":"objects/backgroundWindow_obj/backgroundWindow_obj.yy",},"order":5,},

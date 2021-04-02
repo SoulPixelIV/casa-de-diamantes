@@ -45,6 +45,7 @@ damageFlickerTimer = 17;
 colliding = true;
 reloading = false;
 infection = 30;
+startShotCooldown = true;
 maxhp = hp;
 syringesLost = 0;
 savePosX = x;
@@ -117,7 +118,7 @@ dashDelaySave = dashDelay;
 sprID = layer_sprite_create("BackgroundObjects", -1000, -1000, playerDualBarettas_spr);
 
 //Audio
-audio_listener_orientation(1,0,0,0,0,1);
+audio_listener_orientation(0,0,1000,0,-1,0);
 
 //Create Light
 if (!instance_exists(spotlightPlayer_obj))
