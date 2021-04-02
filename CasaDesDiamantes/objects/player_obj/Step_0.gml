@@ -175,6 +175,17 @@ if (movement && !isZombie)
 	    }
 	}
 }
+//Continue dash circle even if player is in a minecart
+if (instance_exists(minecartForeground_obj))
+{
+	if (instance_nearest(x, y, minecartForeground_obj).inMinecart)
+	{
+		if (dashDelay >= 0)
+		{
+			dashDelay -= global.dt;
+		}
+	}
+}
 
 if (isDashing && !onLadder)
 {
