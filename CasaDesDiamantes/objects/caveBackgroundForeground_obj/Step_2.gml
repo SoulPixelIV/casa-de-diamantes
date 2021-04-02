@@ -1,7 +1,7 @@
 if (instance_exists(camera_obj))
 {
-	xTo = camera_obj.x - 600;
-	yTo = camera_obj.y - 250;
+	xTo = camera_obj.x - 300;
+	yTo = camera_obj.y - 150;
 	setOffset = (camera_obj.x - 232) - offset
 
 	x = xTo - (setOffset / 32);

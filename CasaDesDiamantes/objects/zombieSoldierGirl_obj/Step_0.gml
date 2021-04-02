@@ -238,59 +238,62 @@ with (headshotHitbox)
 }
 
 //Attack
-if (instance_exists(player_obj) && aggro)
+if (aggro)
 {
-	if (player_obj.movement)
+	if (instance_exists(player_obj))
 	{
-		if ((image_xscale == 1 && player_obj.x > x) || (image_xscale == -1 && player_obj.x < x))
+		if (player_obj.movement)
 		{
-			attackCooldown -= global.dt;
-		}
-		else
-		{
-			attackCooldown = attackCooldownSave;
+			if ((image_xscale == 1 && player_obj.x > x) || (image_xscale == -1 && player_obj.x < x))
+			{
+				attackCooldown -= global.dt;
+			}
+			else
+			{
+				attackCooldown = attackCooldownSave;
+			}
 		}
 	}
-}
 
-if (randAttack == 1)
-{
-	attackInProg1 = true;
-}
-else
-{
-	attackInProg2 = true;
-	sprite_index = zombieSoldierGirlGrenate_spr;
-}
+	if (randAttack == 1)
+	{
+		attackInProg1 = true;
+	}
+	else
+	{
+		attackInProg2 = true;
+		sprite_index = zombieSoldierGirlGrenate_spr;
+	}
 
-if (attackCooldown < 300 && attackInProg1)
-{
-	sprite_index = zombieSoldierGirlAim_spr;
-}
-if (attackCooldown < 0 && attackInProg1)
-{
-	var shot = audio_play_sound_on(emitter, shotgunShot_snd, false, 1);
-	audio_sound_pitch(shot, random_range(0.9, 1.1));
+	if (attackCooldown < 300 && attackInProg1)
+	{
+		sprite_index = zombieSoldierGirlAim_spr;
+	}
+	if (attackCooldown < 0 && attackInProg1)
+	{
+		var shot = audio_play_sound_on(emitter, shotgunShot_snd, false, 1);
+		audio_sound_pitch(shot, random_range(0.9, 1.1));
 		
-	instance_create_layer(x + 10, y, "Instances", bulletZombieSoldierGirl_obj);
-	instance_create_layer(x + 10, y, "Instances", shotLightDualBarettas_obj);	
+		instance_create_layer(x + 10, y, "Instances", bulletZombieSoldierGirl_obj);
+		instance_create_layer(x + 10, y, "Instances", shotLightDualBarettas_obj);	
 
-	attackCooldown = attackCooldownSave;
-	sprite_index = zombieSoldierGirl_spr;
-	attackInProg1 = false;
-	attackInProg2 = false;
-	randAttack = choose(1,2);
-}
-if (attackCooldown < 0 && attackInProg2)
-{	
-	var grenate = instance_create_layer(x + 10 * image_xscale, y, "Instances", grenateSmall_obj);
-	grenate.horspeed = random_range(2, 4) * image_xscale;
-	grenate.verspeed = random_range(-4, -6);
-	attackCooldown = attackCooldownSave / 2;
-	sprite_index = zombieSoldierGirlGrenate_spr;
-	attackInProg1 = false;
-	attackInProg2 = false;
-	randAttack = choose(1,1,2);
+		attackCooldown = attackCooldownSave;
+		sprite_index = zombieSoldierGirl_spr;
+		attackInProg1 = false;
+		attackInProg2 = false;
+		randAttack = choose(1,2);
+	}
+	if (attackCooldown < 0 && attackInProg2)
+	{	
+		var grenate = instance_create_layer(x + 10 * image_xscale, y, "Instances", grenateSmall_obj);
+		grenate.horspeed = random_range(2, 4) * image_xscale;
+		grenate.verspeed = random_range(-4, -6);
+		attackCooldown = attackCooldownSave / 2;
+		sprite_index = zombieSoldierGirlGrenate_spr;
+		attackInProg1 = false;
+		attackInProg2 = false;
+		randAttack = choose(1,1,2);
+	}
 }
 
 if (damageTint && sprite_index != zombieSoldierGirlFlashHeadshot_spr)

@@ -26,8 +26,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Backgrounds",
-    "path": "folders/Backgrounds.yy",
+    "name": "RoadToCasino",
+    "path": "folders/Backgrounds/RoadToCasino.yy",
   },
   "resourceVersion": "1.0",
   "name": "caveBackground_obj",

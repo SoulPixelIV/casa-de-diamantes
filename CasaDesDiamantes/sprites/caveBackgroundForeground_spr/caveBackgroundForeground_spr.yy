@@ -8,14 +8,14 @@
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
   "bbox_left": 0,
-  "bbox_right": 1199,
+  "bbox_right": 767,
   "bbox_top": 0,
-  "bbox_bottom": 499,
+  "bbox_bottom": 431,
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 1200,
-  "height": 500,
+  "width": 768,
+  "height": 432,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -24,9 +24,9 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"b35953eb-c8ac-4bb4-843b-19f71277b068","path":"sprites/caveBackgroundForeground_spr/caveBackgroundForeground_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"b35953eb-c8ac-4bb4-843b-19f71277b068","path":"sprites/caveBackgroundForeground_spr/caveBackgroundForeground_spr.yy",},"LayerId":{"name":"41d561bd-7de9-407a-a7df-8e28e609e9fa","path":"sprites/caveBackgroundForeground_spr/caveBackgroundForeground_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"caveBackgroundForeground_spr","path":"sprites/caveBackgroundForeground_spr/caveBackgroundForeground_spr.yy",},"resourceVersion":"1.0","name":"b35953eb-c8ac-4bb4-843b-19f71277b068","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"029c6edc-378e-4053-abb7-a14171224326","path":"sprites/caveBackgroundForeground_spr/caveBackgroundForeground_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"029c6edc-378e-4053-abb7-a14171224326","path":"sprites/caveBackgroundForeground_spr/caveBackgroundForeground_spr.yy",},"LayerId":{"name":"271f55e6-eee8-4f94-9bc8-ffcca6b190fa","path":"sprites/caveBackgroundForeground_spr/caveBackgroundForeground_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"caveBackgroundForeground_spr","path":"sprites/caveBackgroundForeground_spr/caveBackgroundForeground_spr.yy",},"resourceVersion":"1.0","name":"029c6edc-378e-4053-abb7-a14171224326","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"caveBackgroundForeground_spr","path":"sprites/caveBackgroundForeground_spr/caveBackgroundForeground_spr.yy",},
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"6202df6a-0705-4fc9-8021-c7c0879b65b9","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b35953eb-c8ac-4bb4-843b-19f71277b068","path":"sprites/caveBackgroundForeground_spr/caveBackgroundForeground_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"9b5c785b-5e38-4393-905e-c41a6e273afc","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"029c6edc-378e-4053-abb7-a14171224326","path":"sprites/caveBackgroundForeground_spr/caveBackgroundForeground_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -65,11 +65,11 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"41d561bd-7de9-407a-a7df-8e28e609e9fa","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"271f55e6-eee8-4f94-9bc8-ffcca6b190fa","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Backgrounds/Sprites.yy",
+    "name": "RoadToCasino",
+    "path": "folders/Backgrounds/Sprites/RoadToCasino.yy",
   },
   "resourceVersion": "1.0",
   "name": "caveBackgroundForeground_spr",
