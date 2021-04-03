@@ -273,7 +273,7 @@ if (attackInProg)
 	if (!startDrill)
 	{
 		var drillSnd = audio_play_sound_on(emitter, drill_snd, false, 1);
-		audio_sound_pitch(drillSnd, random_range(0.8, 1.1));
+		audio_sound_pitch(drillSnd, random_range(0.8, 1));
 		startDrill = true;
 	}
 }

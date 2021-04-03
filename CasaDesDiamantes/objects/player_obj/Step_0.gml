@@ -758,9 +758,9 @@ if (!isZombie)
 		{
 			if (global.currentWeapon == pickedWeapon.shotgun && global.shotgunCooldown < global.shotgunCooldownSave / 2)
 			{
-				if (!audio_is_playing(pickup_snd))
+				if (!audio_is_playing(shotgunPump_snd))
 				{
-					audio_play_sound(pickup_snd, 1, false);
+					audio_play_sound(shotgunPump_snd, 1, false);
 				}
 			}
 		}
@@ -781,10 +781,37 @@ if (shotZoomTimer < 0)
 //Shot Cooldown
 if (startShotCooldown)
 {
-	global.pistolCooldown -= 0.1 * global.dt;
-	global.dualBarettasCooldown -= 0.1 * global.dt;
-	global.shotgunCooldown -= 0.1 * global.dt;
+	with (gameManager_obj)
+	{
+		if (global.currentWeapon == pickedWeapon.pistol)
+		{
+			global.pistolCooldown -= 0.1 * global.dt;
+		}
+		if (global.currentWeapon == pickedWeapon.dualBarettas)
+		{
+			global.dualBarettasCooldown -= 0.1 * global.dt;
+		}
+		if (global.currentWeapon == pickedWeapon.shotgun)
+		{
+			global.shotgunCooldown -= 0.1 * global.dt;
+		}	
+	}	
 }
+with (gameManager_obj)
+{
+	if (global.currentWeapon == pickedWeapon.pistol && global.pistolCooldown > 0)
+	{
+		player_obj.startShotCooldown = true;
+	}
+	if (global.currentWeapon == pickedWeapon.dualBarettas && global.dualBarettasCooldown > 0)
+	{
+		player_obj.startShotCooldown = true;
+	}
+	if (global.currentWeapon == pickedWeapon.shotgun && global.shotgunCooldown > 0)
+	{
+		player_obj.startShotCooldown = true;
+	}	
+}	
 
 //Reload
 if (key_reload && !isZombie)

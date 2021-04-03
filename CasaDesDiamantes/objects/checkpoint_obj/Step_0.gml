@@ -2,11 +2,6 @@
 image_speed = 0;
 image_index += (global.dt / 15) * animationSpeed;
 
-if (globalSettings_obj.restartInProg)
-{
-	audio_emitter_free(emitter);
-}
-
 //Activate Checkpoint
 if (distance_to_object(player_obj) < 32 && player_obj.key_up_pressed && !used)
 {

@@ -10,14 +10,14 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "checkpoint_sng.mp3",
-  "duration": 30.516,
+  "soundFile": "shotgunPump_snd.mp3",
+  "duration": 0.631939,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
   },
   "resourceVersion": "1.0",
-  "name": "checkpoint_sng",
+  "name": "shotgunPump_snd",
   "tags": [],
   "resourceType": "GMSound",
 }
