@@ -754,7 +754,7 @@ if (!isZombie)
 			}
 		}
 		//Shotgun Cock
-		if (!player_obj.startShotCooldown)
+		if (player_obj.startShotCooldown)
 		{
 			if (global.currentWeapon == pickedWeapon.shotgun && global.shotgunCooldown < global.shotgunCooldownSave / 2)
 			{
