@@ -30,6 +30,7 @@ if (enableShooting)
 		{
 			if (!player_obj.isZombie && !player_obj.invincible && !player_obj.damageRecieved)
 			{
+				player_obj.hpOld = player_obj.hp;
 				player_obj.hp -= damage;
 				player_obj.damageRecieved = true;
 				player_obj.damageCooldown = player_obj.damageCooldownSave;
@@ -53,11 +54,11 @@ if (enableShooting)
 
 	if (sniperPosY > sniperTarget.y + 2)
 	{
-		sniperPosY -= global.dt / 2;
+		sniperPosY -= global.dt / 1.5;
 	}
 	else if (sniperPosY < sniperTarget.y - 2)
 	{
-		sniperPosY += global.dt / 2;
+		sniperPosY += global.dt / 1.5;
 	}
 	else
 	{

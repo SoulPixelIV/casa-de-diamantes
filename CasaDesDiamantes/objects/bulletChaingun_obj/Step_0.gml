@@ -22,6 +22,7 @@ if (invincibilityTimer <= 0)
 
 if (place_meeting(x, y, player_obj) && !player_obj.isZombie && !player_obj.invincible && !player_obj.damageRecieved)
 {
+	player_obj.hpOld = player_obj.hp;
 	player_obj.hp -= 15;
 	instance_change(bloodSpread_obj, true);
 	player_obj.damageRecieved = true;
