@@ -19,6 +19,9 @@ cameraTargetTimer = 500;
 showWindowMenu = false;
 windowMenuOffset = yScreenSize;
 windowType = 0;
+healthbarShrinking = 0;
+healthbarShrinkStart = false;
+healthbarDone = true;
 
 cameraSpeed = 0.1;
 ycameraSpeed = 0.02;

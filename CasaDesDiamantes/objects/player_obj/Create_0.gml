@@ -30,6 +30,7 @@ onBooster = false;
 
 //Action
 hp = 100;
+hpOld = hp;
 syringes = 3;
 zombieTimer = 1550;
 slowmoTimer = 260;

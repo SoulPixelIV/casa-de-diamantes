@@ -19,6 +19,7 @@ if (hp > 0)
 	{
 		if (other.damageCollision)
 		{
+			hpOld = hp;
 			hp -= other.damage;
 			damageCooldown = damageCooldownSave;
 			damageRecieved = true;

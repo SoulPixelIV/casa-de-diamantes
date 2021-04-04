@@ -18,6 +18,7 @@ if (hp > 0)
 	{
 		if (!other.dealtDamage)
 		{
+			hpOld = hp;
 			hp -= other.damage;
 			damageCooldown = damageCooldownSave;
 			if (other.damage != 0)

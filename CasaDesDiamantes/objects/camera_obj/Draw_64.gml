@@ -109,8 +109,36 @@ if (!noHUD)
 	{
 		draw_sprite_ext(healthbarBorderLow_spr, -1, edgeMarginHor, edgeMarginVer, 1, 1, 0, -1, 1);
 	}
-	draw_sprite_ext(healthbarTop2_spr, -1, edgeMarginHor, 19 - (player_obj.hp - 100), 1, 1, 0, -1, 1);
+	if (!player_obj.damageRecieved && healthbarDone)
+	{
+		draw_sprite_ext(healthbarTop2_spr, -1, edgeMarginHor, 19 - (player_obj.hp - 100), 1, 1, 0, -1, 1);
+	}
 	draw_sprite_ext(healthbar_spr, 0, edgeMarginHor, 131, 1, 1 * (player_obj.hp / 100) , 0, -1, 1);
+	//Damage Healthbar
+	if (player_obj.damageRecieved || healthbarShrinkStart)
+	{
+		healthbarDone = false;
+		draw_sprite_ext(healthbarTop2Damage_spr, -1, edgeMarginHor, (19 - (player_obj.hpOld - 100)) + healthbarShrinking, 1, 1, 0, -1, 1);
+		draw_sprite_ext(healthbarDamage_spr, 0, edgeMarginHor, (31 - (player_obj.hpOld - 100)) + healthbarShrinking, 1, ((player_obj.hp / 100) - (player_obj.hpOld / 100)) + (healthbarShrinking / 100), 0, -1, 1);
+	}
+	if (!player_obj.damageRecieved && !healthbarDone)
+	{
+		healthbarShrinkStart = true;
+	}
+	if (healthbarShrinkStart)
+	{
+		if (healthbarShrinking < (player_obj.hpOld - player_obj.hp))
+		{
+			healthbarShrinking += 2;
+		}
+		else
+		{
+			healthbarShrinking = 0;
+			healthbarShrinkStart = false;
+			healthbarDone = true;
+		}
+	}
+	
 	//Healthcut
 	if (player_obj.syringesLost > 0)
 	{
