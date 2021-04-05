@@ -20,6 +20,8 @@ if (exited)
 
 if (camera_obj.blackscreenStrength == 1 && entered)
 {
+	snapCameraX = false;
+	snapCameraY = false;
 	doorEnter_obj.exited = true;		
 	player_obj.x = doorEnter_obj.x;
 	player_obj.y = doorEnter_obj.y - 26;

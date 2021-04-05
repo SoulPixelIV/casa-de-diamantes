@@ -5,6 +5,7 @@ if (follow != noone)
 		xTo = follow.x;
 		if ((follow.y - cameraYBorder) < y - 86 || (follow.y - cameraYBorder) > y + 64)
 		{
+			snapCameraY = false;
 			yTo = follow.y - cameraYBorder;
 		}
 	}
@@ -13,6 +14,8 @@ if (follow != noone)
 //Camera Target
 if (cameraTarget)
 {
+	snapCameraX = false;
+	snapCameraY = false;
 	cameraTargetTimer -= global.dt;
 	follow = instance_nearest(x, y, cameraTarget_obj);
 	cameraSpeed = 0.01;
@@ -21,6 +24,8 @@ if (cameraTarget)
 
 if (cameraTargetTimer < 0)
 {
+	snapCameraX = false;
+	snapCameraY = false;
 	follow = player_obj;
 	cameraTargetTimer = cameraTargetTimerSave;
 	cameraTarget = false;
@@ -70,7 +75,13 @@ if (follow == goldenElevatorDirtyForeground_obj)
 }
 
 //Snap camera when close enough
+//HORIZONTAL
 if (x < xTo + 4 && x > xTo - 4 && !shake)
+{
+	snapCameraX = true;
+}
+
+if (snapCameraX)
 {
 	x = xTo;
 }
@@ -79,20 +90,24 @@ else
 	x += (xTo - x) * (global.dtNoSlowmo * cameraSpeed);
 }
 
-if (follow == camera_obj)
+//VERTICAL
+if (y < (yTo - cameraYBorder) + 1 && y > (yTo - cameraYBorder) - 1 && !shake)
 {
-	y += (yTo - y - cameraYBorder) * (global.dtNoSlowmo * cameraSpeed);
+	snapCameraY = true;
+}
+
+if (snapCameraY)
+{
+	y = yTo - cameraYBorder;
 }
 else
 {
-	if (y < (yTo - cameraYBorder) + 1 && y > (yTo - cameraYBorder) - 1 && !shake)
-	{
-		y = yTo - cameraYBorder;
-	}
-	else
-	{
-		y += (yTo - y - cameraYBorder) * (global.dtNoSlowmo * ycameraSpeed);
-	}
+	y += (yTo - y - cameraYBorder) * (global.dtNoSlowmo * ycameraSpeed);
+}
+
+if (follow == camera_obj)
+{
+	y += (yTo - y - cameraYBorder) * (global.dtNoSlowmo * cameraSpeed);
 }
 
 var vm = matrix_build_lookat(x,y,-10,x,y,0,0,1,0);
@@ -103,10 +118,14 @@ camera_set_proj_mat(camera,pm);
 //Aim Zoom
 if (keyboard_check_pressed(vk_control))
 {
+	snapCameraX = false;
+	snapCameraY = false;
 	follow = camera_obj;
 }
 if (keyboard_check_released(vk_control))
 {
+	snapCameraX = false;
+	snapCameraY = false;
 	follow = player_obj;
 }
 

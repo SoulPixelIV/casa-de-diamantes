@@ -3,7 +3,7 @@
 randomize();
 global.timeScale = 1;
 global.gamma = 1.4;
-TARGET_FRAMERATE = 60;
+TARGET_FRAMERATE = 200;
 cursor_sprite = cursor_spr;
 realTimeScale = global.timeScale;
 restartInProg = false;

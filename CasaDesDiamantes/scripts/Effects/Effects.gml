@@ -13,5 +13,6 @@ function screenshake(_time, _magnitude, _fade, target)
       shake_magnitude = _magnitude;
       shake_fade = _fade;
 	  shake_id = target;
+	  snapCameraX = false;
    }
 }
