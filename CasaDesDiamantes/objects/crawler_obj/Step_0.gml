@@ -25,6 +25,23 @@ else
 	deaggroTimer -= global.dt;
 }
 
+if (aggroAtSpecificPoint)
+{
+	var specificPoint = instance_nearest(x, y, battleArenaPlayerpoint_obj);
+	var playerHitPoint = false
+	with (player_obj)
+	{
+		if (place_meeting(x, y, specificPoint))
+		{
+			playerHitPoint = true;
+		}
+	}
+	if (playerHitPoint)
+	{
+		aggro = true;
+	}
+}
+
 if (deaggroTimer < 0)
 {
 	aggro = false;
