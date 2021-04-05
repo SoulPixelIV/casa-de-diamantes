@@ -1,6 +1,4 @@
 //if (live_call()) return live_result;
-x += horspeed * global.dt;
-y += verspeed * global.dt;
 
 //Check for Controller or Keyboard
 if (gamepad_button_check_pressed(4, gp_face1) || gamepad_button_check_pressed(0, gp_face1))
@@ -340,85 +338,6 @@ if (!movement)
 else
 {
 	invincible = false;
-}
-
-//Collision
-if (colliding)
-{
-	//horspeed
-	if (!place_free(x + (horspeed * global.dt), y))
-	{
-		if (sign(horspeed) != 0)
-		{
-			while (place_free(x + sign(horspeed) / 100, y))
-			{
-				x += sign(horspeed) / 100;
-			}
-			if (!wallJumping)
-			{
-				horspeed = 0;
-			}
-			if (!grounded && verspeed > 0)
-			{
-				if (place_free(x, y + (verspeed * global.dt)))
-				{
-					huggingWall = true;
-				}
-			}
-		}
-	}
-	
-	if (place_meeting(x + (horspeed * global.dt), y, enemy_obj))
-	{
-		if (instance_place(x + (horspeed * global.dt), y, enemy_obj).colliding)
-		{
-			if (sign(horspeed) != 0)
-			{
-				while (place_meeting(x + sign(horspeed) / 100, y, enemy_obj))
-				{
-					x -= sign(horspeed) / 100;
-				}
-			}
-		}
-	}
-	if ((place_free(x + 1, y) && place_free(x - 1, y)) || grounded)
-	{
-		huggingWall = false;
-		setWallDir = false;
-	}
-
-	//verspeed
-	if (!place_free(x, y + (verspeed * global.dt)))
-	{
-		if (sign(verspeed) != 0)
-		{
-			while (place_free(x, y + sign(verspeed) / 100))
-			{
-				y += sign(verspeed) / 100;
-			}
-			resetJump_scr();
-		}
-	}
-	else
-	{
-		fallJumpSafety -= global.dt;
-		grounded = false;
-		onMovingPlatform = false;
-		createdParticles = false;
-	}
-	
-	//###OutsideSolid###
-	if (place_free(x, y))
-	{
-	    savePosX = x;
-	    savePosY = y;
-	}
-	else
-	{
-	    x = savePosX;
-	    y = savePosY;
-	    verSpeed = 0;
-	}
 }
 
 //Create Dust Particles
@@ -1116,3 +1035,87 @@ else if (setMovAfterScreen)
 	movement = true;
 	setMovAfterScreen = false;
 }
+
+//Collision
+if (colliding)
+{
+	//horspeed
+	if (!place_free(x + horspeed * global.dt, y))
+	{
+		if (sign(horspeed) != 0)
+		{
+			while (place_free(x + sign(horspeed), y))
+			{
+				x += sign(horspeed);
+			}
+			if (!wallJumping)
+			{
+				horspeed = 0;
+			}
+			if (!grounded && verspeed > 0)
+			{
+				if (place_free(x, y + (verspeed * global.dt)))
+				{
+					huggingWall = true;
+				}
+			}
+		}
+	}
+	
+	if (place_meeting(x + (horspeed * global.dt), y, enemy_obj))
+	{
+		if (instance_place(x + (horspeed * global.dt), y, enemy_obj).colliding)
+		{
+			if (sign(horspeed) != 0)
+			{
+				while (place_meeting(x + sign(horspeed) / 100, y, enemy_obj))
+				{
+					x -= sign(horspeed) / 100;
+				}
+			}
+		}
+	}
+	if ((place_free(x + 1, y) && place_free(x - 1, y)) || grounded)
+	{
+		huggingWall = false;
+		setWallDir = false;
+	}
+
+	//verspeed
+	if (!place_free(x, y + verspeed * global.dt))
+	{
+		if (sign(verspeed) != 0)
+		{
+			while (place_free(x, y + sign(verspeed)))
+			{
+				y += sign(verspeed);
+			}
+			resetJump_scr();
+		}
+	}
+	else
+	{
+		fallJumpSafety -= global.dt;
+		grounded = false;
+		onMovingPlatform = false;
+		createdParticles = false;
+	}
+	
+	/*
+	//###OutsideSolid###
+	if (place_free(x, y))
+	{
+	    savePosX = x;
+	    savePosY = y;
+	}
+	else
+	{
+	    x = savePosX;
+	    y = savePosY;
+	    verSpeed = 0;
+	}
+	*/
+}
+
+x += horspeed * global.dt;
+y += verspeed * global.dt;

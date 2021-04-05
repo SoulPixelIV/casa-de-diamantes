@@ -24,6 +24,8 @@ windowType = 0;
 healthbarShrinking = 0;
 healthbarShrinkStart = false;
 healthbarDone = true;
+updateFPS = 20;
+currFps = fps_real;
 
 cameraSpeed = 0.1;
 ycameraSpeed = 0.02;
@@ -34,6 +36,7 @@ reloadAnimTimerSave = reloadAnimTimer;
 tutorialAnimTimerSave = tutorialAnimTimer;
 cameraTargetTimerSave = cameraTargetTimer;
 windowMenuOffsetSave = windowMenuOffset;
+updateFPSSave = updateFPS;
 
 shake = false;
 shake_time = 0;

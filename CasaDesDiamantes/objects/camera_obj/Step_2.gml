@@ -1,3 +1,4 @@
+
 if (follow != noone)
 {
 	if (instance_exists(follow))
@@ -221,4 +222,3 @@ else
 		playScoreStop = false;
 	}
 }
-

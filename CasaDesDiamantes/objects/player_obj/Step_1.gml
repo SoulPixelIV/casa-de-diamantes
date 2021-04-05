@@ -1,4 +1,5 @@
 //###OutsideSolid###
+/*
 if (colliding)
 {
 	if (place_free(x, y))
@@ -13,3 +14,4 @@ if (colliding)
 		verSpeed = 0;
 	}
 }
+*/

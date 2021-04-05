@@ -94,7 +94,13 @@ if (!noHUD)
 	draw_set_font(global.optixFont);
 	draw_set_color(c_white);
 	//Debug
-	draw_text_colour(edgeMarginHor, 252, "Framerate: " + string(fps), c_white, c_white, c_white, c_white, 1);
+	updateFPS -= global.dt;
+	if (updateFPS < 0)
+	{
+		currFps = fps_real;
+		updateFPS = updateFPSSave;
+	}
+	draw_text_colour(edgeMarginHor, 252, "Framerate: " + string(currFps), c_white, c_white, c_white, c_white, 1);
 
 	//Healthbar
 	if (player_obj.hp == 100)

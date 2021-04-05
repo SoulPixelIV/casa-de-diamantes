@@ -3,13 +3,13 @@
 randomize();
 global.timeScale = 1;
 global.gamma = 1.4;
-TARGET_FRAMERATE = 200;
+TARGET_FRAMERATE = 240;
 cursor_sprite = cursor_spr;
 realTimeScale = global.timeScale;
 restartInProg = false;
 keyboardActive = true;
 
-room_speed = TARGET_FRAMERATE;
+game_set_speed(TARGET_FRAMERATE, gamespeed_fps);
 
 //application_surface_draw_enable(false);
 
