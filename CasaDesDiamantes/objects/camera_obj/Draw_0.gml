@@ -51,6 +51,20 @@ if (instance_exists(player_obj))
 			}
 		}
 	}
+	
+	//Walljump Indicator
+	if (showWalljumpsLeft)
+	{
+		draw_sprite_ext(walljumpIndicator_spr, player_obj.wallJumps, player_obj.x + 14, player_obj.y - 18, 1, 1, 0, -1, 1);
+	}
+	if (player_obj.huggingWall)
+	{
+		showWalljumpsLeft = true;
+	}
+	if (player_obj.grounded)
+	{
+		showWalljumpsLeft = false;
+	}
 
 	//Dash Circle
 	if (player_obj.dashDelay < 150)

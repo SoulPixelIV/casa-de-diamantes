@@ -71,6 +71,7 @@ hitVignette = false;
 hitVignetteTimer = 50;
 hitVignetteTimerSave = hitVignetteTimer;
 vignetteAlpha = 0;
+showWalljumpsLeft = false;
 
 zombiespikeEffectBorderSave = zombiespikeEffectBorder;
 zombiespikeBorderTransparentSave = zombiespikeBorderTransparent;

@@ -1061,16 +1061,16 @@ if (colliding)
 			}
 		}
 	}
-	
-	if (place_meeting(x + horspeed * global.dt, y, enemy_obj))
+	//Enemy Collision
+	if (place_meeting(x + (horspeed * global.dt), y, enemy_obj))
 	{
 		if (instance_place(x + (horspeed * global.dt), y, enemy_obj).colliding)
 		{
 			if (sign(horspeed) != 0)
 			{
-				while (place_meeting(x + sign(horspeed), y, enemy_obj))
+				while (place_meeting(x + sign(horspeed) / 100, y, enemy_obj))
 				{
-					x += sign(horspeed);
+					x -= sign(horspeed) / 100;
 				}
 			}
 		}

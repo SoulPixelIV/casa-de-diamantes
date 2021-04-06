@@ -76,7 +76,7 @@
     "eventStubScript": null,
     "parent": {"name":"ammoCounter_spr","path":"sprites/ammoCounter_spr/ammoCounter_spr.yy",},
     "resourceVersion": "1.3",
-    "name": "ammoCounter_spr",
+    "name": "",
     "tags": [],
     "resourceType": "GMSequence",
   },
