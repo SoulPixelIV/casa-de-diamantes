@@ -6,8 +6,7 @@ function revive_scr() {
 	player_obj.movement = true;
 	player_obj.syringes -= 1;
 	player_obj.syringesLost += 1;
-	player_obj.hp = 100 - 25 * player_obj.syringesLost;
-	player_obj.maxhp -= 25;
+	player_obj.hp = 100;
 	player_obj.deathActivated = false;
 	reload_scr();
 	
