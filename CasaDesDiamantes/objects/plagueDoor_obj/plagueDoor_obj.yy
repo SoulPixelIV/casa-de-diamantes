@@ -30,8 +30,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Interactable",
+    "path": "folders/Objects/Interactable.yy",
   },
   "resourceVersion": "1.0",
   "name": "plagueDoor_obj",

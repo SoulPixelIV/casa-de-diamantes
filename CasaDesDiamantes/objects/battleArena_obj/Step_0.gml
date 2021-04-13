@@ -18,7 +18,7 @@ for (var i = 0; i < spawnNumber; i++)
 
 //Use Gates
 //Close Gate
-if ((place_meeting(x, y, player_obj) && updatedEnemyCount > 1) || instance_exists(spawnCloud_obj) && place_meeting(x, y, player_obj))
+if ((place_meeting(x, y, player_obj) && updatedEnemyCount > 0) || instance_exists(spawnCloud_obj) && place_meeting(x, y, player_obj))
 {
 	if (instance_exists(objectAccess))
 	{
@@ -32,9 +32,21 @@ if ((place_meeting(x, y, player_obj) && updatedEnemyCount > 1) || instance_exist
 			}
 		}
 	}
+	if (instance_exists(objectAccess2))
+	{
+		objectNumber = instance_number(objectAccess2);
+		for (var i = 0; i < objectNumber; i++)
+		{
+			selectedGate = instance_find(objectAccess2, i);
+			if (place_meeting(x, y, selectedGate))
+			{
+				selectedGate.open = true;
+			}
+		}
+	}
 }
 //Open Gate
-if (updatedEnemyCount <= 1 && wave == highestWave || !place_meeting(x, y, player_obj))
+if (updatedEnemyCount <= 0 && wave == highestWave || !place_meeting(x, y, player_obj))
 {
 	if (instance_exists(objectAccess))
 	{
@@ -42,6 +54,18 @@ if (updatedEnemyCount <= 1 && wave == highestWave || !place_meeting(x, y, player
 		for (var i = 0; i < objectNumber; i++)
 		{
 			selectedGate = instance_find(objectAccess, i);
+			if (place_meeting(x, y, selectedGate))
+			{
+				selectedGate.open = false;
+			}
+		}
+	}
+	if (instance_exists(objectAccess2))
+	{
+		objectNumber = instance_number(objectAccess2);
+		for (var i = 0; i < objectNumber; i++)
+		{
+			selectedGate = instance_find(objectAccess2, i);
 			if (place_meeting(x, y, selectedGate))
 			{
 				selectedGate.open = false;

@@ -27,8 +27,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Legacy Objects",
+    "path": "folders/Legacy Objects.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_blur_1_pass_isoweight_discrete",

@@ -24,8 +24,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Global Objects",
+    "path": "folders/Global Objects.yy",
   },
   "resourceVersion": "1.0",
   "name": "blackJackCalc_obj",

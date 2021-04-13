@@ -32,8 +32,8 @@
   ],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Hazards",
+    "path": "folders/Objects/Hazards.yy",
   },
   "resourceVersion": "1.0",
   "name": "chaingunTurret_obj",
