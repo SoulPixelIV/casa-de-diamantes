@@ -697,6 +697,16 @@ if (shotZoomTimer < 0)
 	shotZoomTimer = shotZoomTimerSave;
 }
 
+//Playerpoint
+if (place_meeting(x, y, battleArenaPlayerpoint_obj))
+{
+	inPlayerpoint = true;
+}
+else
+{
+	inPlayerpoint = false;
+}
+
 //Shot Cooldown
 if (startShotCooldown)
 {

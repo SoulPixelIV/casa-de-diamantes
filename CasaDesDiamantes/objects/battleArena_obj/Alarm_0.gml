@@ -47,13 +47,14 @@ else
 		{
 			var activateFromPlayer;
 			activateFromPlayer = false;
-			var playerpoint;
-			playerpoint = place_meeting(x, y, battleArenaPlayerpoint_obj);
-			with (player_obj)
+			if (player_obj.inPlayerpoint)
 			{
-				if (place_meeting(x, y, playerpoint))
+				with (player_obj)
 				{
-					activateFromPlayer = true;
+					if (place_meeting(x, y, other.id))
+					{
+						activateFromPlayer = true;
+					}
 				}
 			}
 			if (activateFromPlayer)

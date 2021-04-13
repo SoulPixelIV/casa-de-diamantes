@@ -56,6 +56,7 @@ invincible = false;
 onLadder = false;
 isZombie = false;
 isDashing = false;
+inPlayerpoint = false;
 plagueTransformation = false;
 shotZoom = false;
 enemySlowmo = false;
