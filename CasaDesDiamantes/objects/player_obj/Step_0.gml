@@ -127,12 +127,6 @@ if (!onMovingPlatform)
 	frictionActive_scr(id);
 }
 
-//Gravity
-if (verspeed < 2 && !onLadder && gravityOn)
-{
-	verspeed -= gravityStrength * global.dt;
-}
-
 if (movement && !isZombie)
 {
 	//Jump
@@ -1044,6 +1038,12 @@ else if (setMovAfterScreen)
 {
 	movement = true;
 	setMovAfterScreen = false;
+}
+
+//Gravity
+if (verspeed < 2 && !onLadder && gravityOn)
+{
+	verspeed -= gravityStrength * global.dt;
 }
 
 //Collision
