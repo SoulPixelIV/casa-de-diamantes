@@ -12,87 +12,47 @@ if ((distance_to_object(player_obj) < 32 && player_obj.key_up_pressed) || place_
 		instance_nearest(x, y, crawler_obj).usedLever = true;
 	}
 		
-	if (!used)
-	{
-		image_index = 1;
-		used = true;
+	image_index = 1;
+	used = true;
 		
-		if (instance_exists(objectAccess))
-		{
-			if (objectCount == 1)
-			{
-				if (!activateCamera)
-				{
-					object = instance_nearest(x, y, objectAccess);
-					object.open = true;
-				}
-				else
-				{
-					with (instance_nearest(x, y, cameraTarget_obj))
-					{
-						object = instance_nearest(x, y, instance_nearest(x, y, lever_obj).objectAccess);
-						object.open = true;
-					}
-				}
-			}
-			else
-			{
-				var i;
-				object[0] = noone;
-				for (i = 0; i < objectCount; i++)
-				{
-					object[i] = noone;
-					if (distance_to_object(instance_find(objectAccess, i)) < objectMaxDistance)
-					{
-						object[i] = instance_find(objectAccess, i);
-					}
-				
-					if (object[i] != noone)
-					{
-						if (object[i].open == false)
-						{
-							object[i].open = true;
-						}
-					}
-				}
-			}
-		}
-	}
-	else
+	if (instance_exists(objectAccess))
 	{
-		image_index = 0;
-		used = false;
-		
-		if (instance_exists(objectAccess))
+		if (objectCount == 1)
 		{
-			if (objectCount == 1)
+			if (!activateCamera)
 			{
 				object = instance_nearest(x, y, objectAccess);
-				object.open = false;
+				object.open = !object.open;
 			}
 			else
 			{
-				var i;
-				object[0] = noone;
-				for (i = 0; i < objectCount; i++)
+				with (instance_nearest(x, y, cameraTarget_obj))
 				{
-					object[i] = noone;
-					if (distance_to_object(instance_find(objectAccess, i)) < objectMaxDistance)
-					{
-						object[i] = instance_find(objectAccess, i);
-					}
+					object = instance_nearest(x, y, instance_nearest(x, y, lever_obj).objectAccess);
+					object.open = !object.open;
+				}
+			}
+		}
+		else
+		{
+			var i;
+			object[0] = noone;
+			for (i = 0; i < objectCount; i++)
+			{
+				object[i] = noone;
+				if (distance_to_object(instance_find(objectAccess, i)) < objectMaxDistance)
+				{
+					object[i] = instance_find(objectAccess, i);
+				}
 				
-					if (object[i] != noone)
-					{
-						if (object[i].open == true)
-						{
-							object[i].open = false;
-						}
-					}
+				if (object[i] != noone)
+				{
+					object[i].open = !object[i].open;
 				}
 			}
 		}
 	}
+	
 	// Camera Target
 	if (activateCamera && !usedCamera)
 	{

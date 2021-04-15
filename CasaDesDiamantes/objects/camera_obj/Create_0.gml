@@ -24,7 +24,7 @@ windowType = 0;
 healthbarShrinking = 0;
 healthbarShrinkStart = false;
 healthbarDone = true;
-updateFPS = 20;
+updateFPS = 40;
 currFps = fps_real;
 
 cameraSpeed = 0.1;
