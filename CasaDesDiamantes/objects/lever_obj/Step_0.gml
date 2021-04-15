@@ -26,9 +26,10 @@ if ((distance_to_object(player_obj) < 32 && player_obj.key_up_pressed) || place_
 			}
 			else
 			{
+				var selfId = id;
 				with (instance_nearest(x, y, cameraTarget_obj))
 				{
-					object = instance_nearest(x, y, instance_nearest(x, y, lever_obj).objectAccess);
+					object = instance_nearest(x, y, selfId.objectAccess);
 					object.open = !object.open;
 				}
 			}

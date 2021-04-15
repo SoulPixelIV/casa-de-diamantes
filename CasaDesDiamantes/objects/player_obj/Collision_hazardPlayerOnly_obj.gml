@@ -5,13 +5,16 @@ if (hp > 0)
 	if (!damageRecieved && !isZombie)
 	{
 		nextHazard = instance_nearest(x, y, hazard_obj);
-		if (nextHazard.x > x)
+		if (instance_exists(nextHazard))
 		{
-			horspeed -= other.knockback;
-		}
-		else
-		{
-			horspeed += other.knockback;
+			if (nextHazard.x > x)
+			{
+				horspeed -= other.knockback;
+			}
+			else
+			{
+				horspeed += other.knockback;
+			}
 		}
 	}
 

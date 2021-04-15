@@ -69,7 +69,7 @@ if (keyboard_check_pressed(vk_f4))
 {
 	part_emitter_destroy_all(global.partSystem);
 	instance_destroy(player_obj);
-	room_goto(level_CasinoHub);
+	room_goto(level3_SenzelaForest);
 }
 if (keyboard_check_pressed(vk_f5))
 {
