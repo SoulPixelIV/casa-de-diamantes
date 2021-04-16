@@ -853,7 +853,6 @@
         {"properties":[],"isDnd":false,"objectId":{"name":"cameraTarget_obj","path":"objects/cameraTarget_obj/cameraTarget_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":3136.0,"y":1888.0,"resourceVersion":"1.0","name":"inst_604205B3","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"lantern_obj","path":"objects/lantern_obj/lantern_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":3895.0,"y":2172.0,"resourceVersion":"1.0","name":"inst_3FA335CF","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"lantern_obj","path":"objects/lantern_obj/lantern_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":4073.0,"y":2092.0,"resourceVersion":"1.0","name":"inst_6B283BD7","tags":[],"resourceType":"GMRInstance",},
-        {"properties":[],"isDnd":false,"objectId":{"name":"zombieGirl_obj","path":"objects/zombieGirl_obj/zombieGirl_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":-1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":544.0,"y":480.0,"resourceVersion":"1.0","name":"inst_3FB13EED","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":900,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Instances","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"checkpoint_obj","path":"objects/checkpoint_obj/checkpoint_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":877.0,"y":1960.0,"resourceVersion":"1.0","name":"inst_791CBB0D","tags":[],"resourceType":"GMRInstance",},
@@ -2898,7 +2897,6 @@
     {"name":"inst_272648BA","path":"rooms/level0_RoadToCasino/level0_RoadToCasino.yy",},
     {"name":"inst_2B7A3122","path":"rooms/level0_RoadToCasino/level0_RoadToCasino.yy",},
     {"name":"inst_462C38F5","path":"rooms/level0_RoadToCasino/level0_RoadToCasino.yy",},
-    {"name":"inst_3FB13EED","path":"rooms/level0_RoadToCasino/level0_RoadToCasino.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
