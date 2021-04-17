@@ -8,7 +8,7 @@ if (instance_exists(player_obj))
 	dirLookat = point_direction(x, y, player_obj.x, player_obj.y);
 }
 
-if (attackCooldown > 30 && attackInProg1)
+if (attackCooldown > 120 && attackInProg1)
 {
 	playerPosX = player_obj.x;
 	playerPosY = player_obj.y;
