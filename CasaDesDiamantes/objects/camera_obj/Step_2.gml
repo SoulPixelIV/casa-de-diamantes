@@ -21,6 +21,8 @@ if (cameraTarget)
 	follow = instance_nearest(x, y, cameraTarget_obj);
 	cameraSpeed = 0.01;
 	ycameraSpeed = 0.01;
+	player_obj.movement = false;
+	player_obj.invincible = true;
 }
 
 if (cameraTargetTimer < 0)
@@ -32,6 +34,8 @@ if (cameraTargetTimer < 0)
 	cameraTarget = false;
 	cameraSpeed = originalCameraSpeed;
 	ycameraSpeed = originalyCameraSpeed;
+	player_obj.movement = true;
+	player_obj.invincible = false;
 }
 
 if (shake) 
