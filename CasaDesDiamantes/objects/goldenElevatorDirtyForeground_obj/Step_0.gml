@@ -15,7 +15,7 @@ if (moving)
 	}
 	if (instance_exists(player_obj))
 	{
-		player_obj.y = y + 48;
+		player_obj.y = y - 32;
 		player_obj.movement = false;
 		player_obj.gravityOn = false;
 		player_obj.horspeed = 0;
@@ -23,6 +23,20 @@ if (moving)
 		
 		camera_obj.follow = goldenElevatorDirtyForeground_obj;
 	}
+}
+
+//Screenshake
+if (moving)
+{
+	if (!screenshakeActive)
+	{
+		screenshake(50, 12, 0.6, id);
+		screenshakeActive = true;
+	}
+}
+else
+{
+	screenshakeActive = false;
 }
 
 if (instance_exists(goal) && moving)

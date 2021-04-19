@@ -4,7 +4,7 @@
     "path": "sprites/debugBlock32x_spr/debugBlock32x_spr.yy",
   },
   "solid": false,
-  "visible": true,
+  "visible": false,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": null,

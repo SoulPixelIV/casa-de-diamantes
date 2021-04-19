@@ -72,7 +72,7 @@ if (follow == movingPlatform_obj)
 if (follow == goldenElevatorDirtyForeground_obj)
 {
 	xTo = follow.x;
-	yTo = follow.y + 64;
+	yTo = follow.y - 32;
 }
 
 //Snap camera when close enough
