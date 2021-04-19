@@ -14,7 +14,6 @@
   ],
   "layers": [
     {"instances":[
-        {"properties":[],"isDnd":false,"objectId":{"name":"digitsManager_obj","path":"objects/digitsManager_obj/digitsManager_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":0.0,"y":0.0,"resourceVersion":"1.0","name":"inst_7BE7C0C3","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"camera_obj","path":"objects/camera_obj/camera_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":32.0,"y":0.0,"resourceVersion":"1.0","name":"inst_47BEA389","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_light_renderer","path":"objects/obj_light_renderer/obj_light_renderer.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":0.0,"y":32.0,"resourceVersion":"1.0","name":"inst_1E78AA07","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"particleSystem_obj","path":"objects/particleSystem_obj/particleSystem_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":96.0,"y":0.0,"resourceVersion":"1.0","name":"inst_69D823B0","tags":[],"resourceType":"GMRInstance",},
@@ -401,7 +400,6 @@
   "creationCodeFile": "${project_dir}/rooms/level0_SenzelaForest/RoomCreationCode.gml",
   "inheritCode": false,
   "instanceCreationOrder": [
-    {"name":"inst_7BE7C0C3","path":"rooms/level0_SenzelaForest/level0_SenzelaForest.yy",},
     {"name":"inst_47BEA389","path":"rooms/level0_SenzelaForest/level0_SenzelaForest.yy",},
     {"name":"inst_1E78AA07","path":"rooms/level0_SenzelaForest/level0_SenzelaForest.yy",},
     {"name":"inst_69D823B0","path":"rooms/level0_SenzelaForest/level0_SenzelaForest.yy",},

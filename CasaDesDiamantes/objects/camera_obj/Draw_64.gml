@@ -160,6 +160,20 @@ if (!noHUD)
 	//Chipbar
 	draw_sprite_ext(scoreBorder_spr, -1, 380, edgeMarginVer, 1, 1, 0, -1, 1);
 	
+	convMoney = string(global.money);
+	slots = [0,0,0,0,0,0,0];
+	for (i = 0; i < 6; i++)
+	{
+		if (string_char_at(convMoney, i+1) == "")
+		{
+			slots[i] = 0;
+		}
+		else
+		{
+			slots[i] = int64(string_char_at(convMoney, i+1));
+		}
+	}
+
 	if (scoreSpin)
 	{
 		scoreSpinTimer -= global.dt;
@@ -173,13 +187,13 @@ if (!noHUD)
 	}
 	else
 	{
-		draw_sprite(scoreNumber_spr, digitsManager_obj.value[0], 457, edgeMarginVer + 2);
-		draw_sprite(scoreNumber_spr, digitsManager_obj.value[1], 447, edgeMarginVer + 2);
-		draw_sprite(scoreNumber_spr, digitsManager_obj.value[2], 437, edgeMarginVer + 2);
-		draw_sprite(scoreNumber_spr, digitsManager_obj.value[3], 427, edgeMarginVer + 2);
-		draw_sprite(scoreNumber_spr, digitsManager_obj.value[4], 417, edgeMarginVer + 2);
-		draw_sprite(scoreNumber_spr, digitsManager_obj.value[5], 407, edgeMarginVer + 2);
-		draw_sprite(scoreNumber_spr, digitsManager_obj.value[6], 397, edgeMarginVer + 2);
+		draw_sprite(scoreNumber_spr, slots[6], 457, edgeMarginVer + 2);
+		draw_sprite(scoreNumber_spr, slots[5], 447, edgeMarginVer + 2);
+		draw_sprite(scoreNumber_spr, slots[4], 437, edgeMarginVer + 2);
+		draw_sprite(scoreNumber_spr, slots[3], 427, edgeMarginVer + 2);
+		draw_sprite(scoreNumber_spr, slots[2], 417, edgeMarginVer + 2);
+		draw_sprite(scoreNumber_spr, slots[1], 407, edgeMarginVer + 2);
+		draw_sprite(scoreNumber_spr, slots[0], 397, edgeMarginVer + 2);
 	}
 	
 	if (scoreSpinTimer < 0)

@@ -15,7 +15,6 @@
   "layers": [
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"particleSystem_obj","path":"objects/particleSystem_obj/particleSystem_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":64.0,"y":0.0,"resourceVersion":"1.0","name":"inst_2A8B1492","tags":[],"resourceType":"GMRInstance",},
-        {"properties":[],"isDnd":false,"objectId":{"name":"digitsManager_obj","path":"objects/digitsManager_obj/digitsManager_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":96.0,"y":0.0,"resourceVersion":"1.0","name":"inst_7C97402D","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"camera_obj","path":"objects/camera_obj/camera_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":32.0,"y":0.0,"resourceVersion":"1.0","name":"inst_12F0F057","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_light_renderer","path":"objects/obj_light_renderer/obj_light_renderer.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":0.0,"y":0.0,"resourceVersion":"1.0","name":"inst_56F2E88E","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"dialogueSystem_obj","path":"objects/dialogueSystem_obj/dialogueSystem_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":3648.0,"y":1856.0,"resourceVersion":"1.0","name":"inst_7A49DBDB","tags":[],"resourceType":"GMRInstance",},
@@ -2132,7 +2131,6 @@
   "inheritCode": false,
   "instanceCreationOrder": [
     {"name":"inst_2A8B1492","path":"rooms/level0_RoadToCasino/level0_RoadToCasino.yy",},
-    {"name":"inst_7C97402D","path":"rooms/level0_RoadToCasino/level0_RoadToCasino.yy",},
     {"name":"inst_3A0DBC39","path":"rooms/level0_RoadToCasino/level0_RoadToCasino.yy",},
     {"name":"inst_15D37774","path":"rooms/level0_RoadToCasino/level0_RoadToCasino.yy",},
     {"name":"inst_64491BC8","path":"rooms/level0_RoadToCasino/level0_RoadToCasino.yy",},
