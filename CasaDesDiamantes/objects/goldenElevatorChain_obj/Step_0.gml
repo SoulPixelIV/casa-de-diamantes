@@ -1,26 +1,21 @@
-if (elevator.moving)
+if (y < elevator.y)
 {
-	if (elevator.dir == 0)
-	{
-		y -= speedMov * global.dt;
-	}
-	else
-	{
-		y += speedMov * global.dt;
-	}
-}
-
-if (elevator.dir == 0)
-{
-	if (y < elevator.y - 492)
-	{
-		y = elevator.y;
-	}
+	y = elevator.y - dist;
 }
 else
 {
-	if (y > elevator.y)
-	{
-		y = elevator.y - 492;
-	}
+	y = elevator.y + dist;
+}
+
+//Animation
+image_speed = 0;
+image_index += (global.dt / 15) * animationSpeed;
+
+if (elevator.moving)
+{
+	animationSpeed = 1;
+}
+else
+{
+	animationSpeed = 0;
 }

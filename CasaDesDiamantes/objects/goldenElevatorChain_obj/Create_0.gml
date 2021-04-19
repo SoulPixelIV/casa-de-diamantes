@@ -1,2 +1,3 @@
 elevator = instance_nearest(x, y, goldenElevatorDirtyForeground_obj);
-speedMov = elevator.speedMov;
+animationSpeed = 1;
+dist = distance_to_object(elevator);

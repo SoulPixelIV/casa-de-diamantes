@@ -29,6 +29,12 @@
         {"FrameId":{"name":"433e9977-d23e-40f0-8edb-ec873e7c013b","path":"sprites/goldenElevatorChain_spr/goldenElevatorChain_spr.yy",},"LayerId":{"name":"5bd94c17-992c-4be0-83be-1baa867c593e","path":"sprites/goldenElevatorChain_spr/goldenElevatorChain_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
         {"FrameId":{"name":"433e9977-d23e-40f0-8edb-ec873e7c013b","path":"sprites/goldenElevatorChain_spr/goldenElevatorChain_spr.yy",},"LayerId":{"name":"7bf01303-15ac-42eb-906d-5ff71a558dab","path":"sprites/goldenElevatorChain_spr/goldenElevatorChain_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"goldenElevatorChain_spr","path":"sprites/goldenElevatorChain_spr/goldenElevatorChain_spr.yy",},"resourceVersion":"1.0","name":"433e9977-d23e-40f0-8edb-ec873e7c013b","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"e872f644-8b97-43a7-81fa-afbe616bb912","path":"sprites/goldenElevatorChain_spr/goldenElevatorChain_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"e872f644-8b97-43a7-81fa-afbe616bb912","path":"sprites/goldenElevatorChain_spr/goldenElevatorChain_spr.yy",},"LayerId":{"name":"d3a012e0-eb04-446d-913a-cf9901aca5aa","path":"sprites/goldenElevatorChain_spr/goldenElevatorChain_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"goldenElevatorChain_spr","path":"sprites/goldenElevatorChain_spr/goldenElevatorChain_spr.yy",},"resourceVersion":"1.0","name":"e872f644-8b97-43a7-81fa-afbe616bb912","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"bab4204a-1454-4da9-8f2e-30dda83b5685","path":"sprites/goldenElevatorChain_spr/goldenElevatorChain_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"bab4204a-1454-4da9-8f2e-30dda83b5685","path":"sprites/goldenElevatorChain_spr/goldenElevatorChain_spr.yy",},"LayerId":{"name":"d3a012e0-eb04-446d-913a-cf9901aca5aa","path":"sprites/goldenElevatorChain_spr/goldenElevatorChain_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"goldenElevatorChain_spr","path":"sprites/goldenElevatorChain_spr/goldenElevatorChain_spr.yy",},"resourceVersion":"1.0","name":"bab4204a-1454-4da9-8f2e-30dda83b5685","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"goldenElevatorChain_spr","path":"sprites/goldenElevatorChain_spr/goldenElevatorChain_spr.yy",},
@@ -38,12 +44,14 @@
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,
-    "length": 1.0,
+    "length": 3.0,
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"848eede1-36d9-4e2a-a824-c23af7f4ccf3","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"433e9977-d23e-40f0-8edb-ec873e7c013b","path":"sprites/goldenElevatorChain_spr/goldenElevatorChain_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"c543323e-3dfa-4ac7-b9dd-c30fcd46a610","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"e872f644-8b97-43a7-81fa-afbe616bb912","path":"sprites/goldenElevatorChain_spr/goldenElevatorChain_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"4904a810-f7a5-43e5-aba4-f5e512e65ef4","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"bab4204a-1454-4da9-8f2e-30dda83b5685","path":"sprites/goldenElevatorChain_spr/goldenElevatorChain_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,

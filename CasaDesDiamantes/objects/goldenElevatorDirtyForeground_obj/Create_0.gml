@@ -3,7 +3,6 @@ moving = false;
 dir = 0;
 goal = instance_nearest(x, y, elevatorCheckpoint_obj);
 goal2 = instance_nearest(x, y, elevatorCheckpoint2_obj);
-screenshakeActive = false;
 
 elevatorTrigger = instance_place(x, y, elevatorTrigger_obj);
 background = instance_place(x, y, goldenElevatorDiryBackground_obj);
