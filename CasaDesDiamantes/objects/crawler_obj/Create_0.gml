@@ -15,6 +15,7 @@ aggro = false;
 damageCollision = false;
 dir = 0;
 checkedWaypoint = true;
+playerAtAggroPoint = false;
 usedLever = false;
 useDelayTimer = 200;
 

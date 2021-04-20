@@ -38,7 +38,7 @@ if (aggroAtSpecificPoint)
 	}
 	if (playerHitPoint)
 	{
-		aggro = true;
+		playerAtAggroPoint = true;
 	}
 }
 
@@ -86,28 +86,13 @@ if (aggro)
 		}
 	}
 	
-	if (checkedWaypoint)
+	if (playerAtAggroPoint)
 	{
-		if (instance_exists(player_obj))
+		if (checkedWaypoint)
 		{
-			if (player_obj.x > x)
+			if (instance_exists(player_obj))
 			{
-				dir = 0;
-			}
-			else
-			{
-				dir = 1;
-			}
-		}
-	}
-	else
-	{
-		if (instance_exists(waypoint))
-		{
-			//Walk to Waypoint
-			if (distance_to_object(waypoint) > 4)
-			{
-				if (waypoint.x > x)
+				if (player_obj.x > x)
 				{
 					dir = 0;
 				}
@@ -116,14 +101,32 @@ if (aggro)
 					dir = 1;
 				}
 			}
+		}
+		else
+		{
+			if (instance_exists(waypoint))
+			{
+				//Walk to Waypoint
+				if (distance_to_object(waypoint) > 4)
+				{
+					if (waypoint.x > x)
+					{
+						dir = 0;
+					}
+					else
+					{
+						dir = 1;
+					}
+				}
+				else
+				{
+					checkedWaypoint = true;
+				}
+			}
 			else
 			{
 				checkedWaypoint = true;
 			}
-		}
-		else
-		{
-			checkedWaypoint = true;
 		}
 	}
 }
