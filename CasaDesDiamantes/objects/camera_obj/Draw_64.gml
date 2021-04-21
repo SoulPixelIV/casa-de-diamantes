@@ -164,7 +164,7 @@ if (!noHUD)
 	//REWORK ITEMS DISPLAY IF MORE ITEMS ADDED
 	if (global.key)
 	{
-		draw_sprite_ext(key_spr, 0, 291 + 6, edgeMarginVer + 6, 0.5, 0.5, 0, -1, 1);
+		draw_sprite_ext(key_spr, 0, 291 + 3, edgeMarginVer + 2, 0.5, 0.5, 0, -1, 1);
 	}
 	
 	convMoney = string(global.money);

@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"3184cd77-ff3b-4200-a73e-c838c4c38e4a","path":"sprites/desinfectionDoor_spr/desinfectionDoor_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"3184cd77-ff3b-4200-a73e-c838c4c38e4a","path":"sprites/desinfectionDoor_spr/desinfectionDoor_spr.yy",},"LayerId":{"name":"e43f6024-9dad-42ba-ad2f-7505d341742f","path":"sprites/desinfectionDoor_spr/desinfectionDoor_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"desinfectionDoor_spr","path":"sprites/desinfectionDoor_spr/desinfectionDoor_spr.yy",},"resourceVersion":"1.0","name":"3184cd77-ff3b-4200-a73e-c838c4c38e4a","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"3184cd77-ff3b-4200-a73e-c838c4c38e4a","path":"sprites/desinfectionDoorOLD_spr/desinfectionDoorOLD_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"3184cd77-ff3b-4200-a73e-c838c4c38e4a","path":"sprites/desinfectionDoorOLD_spr/desinfectionDoorOLD_spr.yy",},"LayerId":{"name":"e43f6024-9dad-42ba-ad2f-7505d341742f","path":"sprites/desinfectionDoorOLD_spr/desinfectionDoorOLD_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"desinfectionDoorOLD_spr","path":"sprites/desinfectionDoorOLD_spr/desinfectionDoorOLD_spr.yy",},"resourceVersion":"1.0","name":"3184cd77-ff3b-4200-a73e-c838c4c38e4a","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"desinfectionDoor_spr","path":"sprites/desinfectionDoor_spr/desinfectionDoor_spr.yy",},
+    "spriteId": {"name":"desinfectionDoorOLD_spr","path":"sprites/desinfectionDoorOLD_spr/desinfectionDoorOLD_spr.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 15.0,
@@ -41,10 +41,10 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"97f09ad8-1429-483e-9ab5-b45561f9706c","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"3184cd77-ff3b-4200-a73e-c838c4c38e4a","path":"sprites/desinfectionDoor_spr/desinfectionDoor_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"97f09ad8-1429-483e-9ab5-b45561f9706c","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"3184cd77-ff3b-4200-a73e-c838c4c38e4a","path":"sprites/desinfectionDoorOLD_spr/desinfectionDoorOLD_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
-    "visibleRange": {"x":0.0,"y":0.0,},
+    "visibleRange": null,
     "lockOrigin": false,
     "showBackdrop": true,
     "showBackdropImage": false,
@@ -58,9 +58,9 @@
     "yorigin": 59,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"desinfectionDoor_spr","path":"sprites/desinfectionDoor_spr/desinfectionDoor_spr.yy",},
+    "parent": {"name":"desinfectionDoorOLD_spr","path":"sprites/desinfectionDoorOLD_spr/desinfectionDoorOLD_spr.yy",},
     "resourceVersion": "1.3",
-    "name": "",
+    "name": "desinfectionDoorOLD_spr",
     "tags": [],
     "resourceType": "GMSequence",
   },
@@ -72,7 +72,7 @@
     "path": "folders/Sprites.yy",
   },
   "resourceVersion": "1.0",
-  "name": "desinfectionDoor_spr",
+  "name": "desinfectionDoorOLD_spr",
   "tags": [],
   "resourceType": "GMSprite",
 }

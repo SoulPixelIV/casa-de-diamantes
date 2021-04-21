@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "desinfectionDoor_spr",
-    "path": "sprites/desinfectionDoor_spr/desinfectionDoor_spr.yy",
+    "name": "syringeGate_spr",
+    "path": "sprites/syringeGate_spr/syringeGate_spr.yy",
   },
   "solid": false,
   "visible": true,
