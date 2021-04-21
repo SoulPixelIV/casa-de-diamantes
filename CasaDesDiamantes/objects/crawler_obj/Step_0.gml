@@ -38,7 +38,7 @@ if (aggroAtSpecificPoint)
 	}
 	if (playerHitPoint)
 	{
-		playerAtAggroPoint = true;
+		aggro = true;
 	}
 }
 
@@ -55,6 +55,23 @@ if (aggroTimer < 0)
 
 if (aggro)
 {
+	if (checkedWaypoint)
+	{
+		if (instance_exists(player_obj))
+		{
+			if (player_obj.x > x)
+			{
+				dir = 0;
+				image_xscale = 1;
+			}
+			else
+			{
+				dir = 1;
+				image_xscale = -1;
+			}
+		}
+	}
+	
 	if (dir == 0)
 	{
 		if (movSpeedGrad <= movSpeed)
@@ -86,13 +103,28 @@ if (aggro)
 		}
 	}
 	
-	if (playerAtAggroPoint)
+	if (checkedWaypoint)
 	{
-		if (checkedWaypoint)
+		if (instance_exists(player_obj))
 		{
-			if (instance_exists(player_obj))
+			if (player_obj.x > x)
 			{
-				if (player_obj.x > x)
+				dir = 0;
+			}
+			else
+			{
+				dir = 1;
+			}
+		}
+	}
+	else
+	{
+		if (instance_exists(waypoint))
+		{
+			//Walk to Waypoint
+			if (distance_to_object(waypoint) > 4)
+			{
+				if (waypoint.x > x)
 				{
 					dir = 0;
 				}
@@ -101,32 +133,14 @@ if (aggro)
 					dir = 1;
 				}
 			}
-		}
-		else
-		{
-			if (instance_exists(waypoint))
-			{
-				//Walk to Waypoint
-				if (distance_to_object(waypoint) > 4)
-				{
-					if (waypoint.x > x)
-					{
-						dir = 0;
-					}
-					else
-					{
-						dir = 1;
-					}
-				}
-				else
-				{
-					checkedWaypoint = true;
-				}
-			}
 			else
 			{
 				checkedWaypoint = true;
 			}
+		}
+		else
+		{
+			checkedWaypoint = true;
 		}
 	}
 }
@@ -249,22 +263,8 @@ if (useDelayTimer < 0)
 //###Attack###
 
 //Cooldown
-if (aggro)
-{
-	if (instance_exists(player_obj))
-	{
-		if (player_obj.x > x)
-		{
-			dir = 0;
-			image_xscale = 1;
-		}
-		else
-		{
-			dir = 1;
-			image_xscale = -1;
-		}
-	}
-	
+if (aggro && checkedWaypoint)
+{	
 	if (!attackInProg1 || !attackInProg2)
 	{
 		attackCooldown -= global.dt;
