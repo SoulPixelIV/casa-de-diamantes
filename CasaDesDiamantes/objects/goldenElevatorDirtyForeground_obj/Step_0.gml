@@ -30,11 +30,11 @@ if (moving)
 	}
 }
 
-if (instance_exists(goal) && moving)
+if (moving)
 {
 	if (dir == 0)
 	{
-		if (y < goal.y + 2 && y > goal.y - 2)
+		if (y < goal.y + 4 && y > goal.y + 1)
 		{
 			moving = false;
 			if (instance_exists(player_obj))
@@ -47,9 +47,9 @@ if (instance_exists(goal) && moving)
 			dir = 1;
 		}
 	}
-	if (dir == 1)
+	else if (dir == 1)
 	{
-		if (y < goal.y + 2 && y > goal.y - 2)
+		if (y > goal2.y - 4 && y < goal2.y - 1)
 		{
 			moving = false;
 			if (instance_exists(player_obj))
@@ -57,7 +57,7 @@ if (instance_exists(goal) && moving)
 				player_obj.movement = true;
 				player_obj.gravityOn = true;
 				camera_obj.follow = player_obj;
-				y = goal.y;
+				y = goal2.y;
 			}
 			dir = 0;
 		}
