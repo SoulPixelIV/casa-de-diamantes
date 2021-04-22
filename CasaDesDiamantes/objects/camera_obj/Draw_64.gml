@@ -97,7 +97,7 @@ if (!noHUD)
 	updateFPS -= global.dt;
 	if (updateFPS < 0)
 	{
-		currFps = fps_real;
+		currFps = round(fps_real);
 		updateFPS = updateFPSSave;
 	}
 	draw_text_colour(edgeMarginHor, 252, "Framerate: " + string(currFps), c_white, c_white, c_white, c_white, 1);

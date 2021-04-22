@@ -8,14 +8,14 @@
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
   "bbox_left": 0,
-  "bbox_right": 767,
+  "bbox_right": 784,
   "bbox_top": 0,
-  "bbox_bottom": 431,
+  "bbox_bottom": 468,
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 768,
-  "height": 432,
+  "width": 785,
+  "height": 469,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -24,20 +24,9 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"3a7c425d-ac77-4501-9ef1-4efc958e0806","path":"sprites/senzelaBackground_spr/senzelaBackground_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"3a7c425d-ac77-4501-9ef1-4efc958e0806","path":"sprites/senzelaBackground_spr/senzelaBackground_spr.yy",},"LayerId":{"name":"senzelaBackground_spr","path":"sprites/senzelaBackground_spr/senzelaBackground_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-        {"FrameId":{"name":"3a7c425d-ac77-4501-9ef1-4efc958e0806","path":"sprites/senzelaBackground_spr/senzelaBackground_spr.yy",},"LayerId":{"name":"senzelaBackground_spr","path":"sprites/senzelaBackground_spr/senzelaBackground_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-        {"FrameId":{"name":"3a7c425d-ac77-4501-9ef1-4efc958e0806","path":"sprites/senzelaBackground_spr/senzelaBackground_spr.yy",},"LayerId":{"name":"senzelaBackground_spr","path":"sprites/senzelaBackground_spr/senzelaBackground_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-        {"FrameId":{"name":"3a7c425d-ac77-4501-9ef1-4efc958e0806","path":"sprites/senzelaBackground_spr/senzelaBackground_spr.yy",},"LayerId":{"name":"senzelaBackground_spr","path":"sprites/senzelaBackground_spr/senzelaBackground_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-        {"FrameId":{"name":"3a7c425d-ac77-4501-9ef1-4efc958e0806","path":"sprites/senzelaBackground_spr/senzelaBackground_spr.yy",},"LayerId":{"name":"senzelaBackground_spr","path":"sprites/senzelaBackground_spr/senzelaBackground_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-        {"FrameId":{"name":"3a7c425d-ac77-4501-9ef1-4efc958e0806","path":"sprites/senzelaBackground_spr/senzelaBackground_spr.yy",},"LayerId":{"name":"senzelaBackground_spr","path":"sprites/senzelaBackground_spr/senzelaBackground_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-        {"FrameId":{"name":"3a7c425d-ac77-4501-9ef1-4efc958e0806","path":"sprites/senzelaBackground_spr/senzelaBackground_spr.yy",},"LayerId":{"name":"senzelaBackground_spr","path":"sprites/senzelaBackground_spr/senzelaBackground_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-        {"FrameId":{"name":"3a7c425d-ac77-4501-9ef1-4efc958e0806","path":"sprites/senzelaBackground_spr/senzelaBackground_spr.yy",},"LayerId":{"name":"senzelaBackground_spr","path":"sprites/senzelaBackground_spr/senzelaBackground_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-        {"FrameId":{"name":"3a7c425d-ac77-4501-9ef1-4efc958e0806","path":"sprites/senzelaBackground_spr/senzelaBackground_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-        {"FrameId":{"name":"3a7c425d-ac77-4501-9ef1-4efc958e0806","path":"sprites/senzelaBackground_spr/senzelaBackground_spr.yy",},"LayerId":{"name":"senzelaBackground_spr","path":"sprites/senzelaBackground_spr/senzelaBackground_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-        {"FrameId":{"name":"3a7c425d-ac77-4501-9ef1-4efc958e0806","path":"sprites/senzelaBackground_spr/senzelaBackground_spr.yy",},"LayerId":{"name":"senzelaBackground_spr","path":"sprites/senzelaBackground_spr/senzelaBackground_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-        {"FrameId":{"name":"3a7c425d-ac77-4501-9ef1-4efc958e0806","path":"sprites/senzelaBackground_spr/senzelaBackground_spr.yy",},"LayerId":{"name":"2a26f0ce-e90f-4b33-ba7f-a42e86bcf01b","path":"sprites/senzelaBackground_spr/senzelaBackground_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"senzelaBackground_spr","path":"sprites/senzelaBackground_spr/senzelaBackground_spr.yy",},"resourceVersion":"1.0","name":"3a7c425d-ac77-4501-9ef1-4efc958e0806","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"862a3acf-0d41-4797-82df-dd33e5cd9cb9","path":"sprites/senzelaBackground_spr/senzelaBackground_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"862a3acf-0d41-4797-82df-dd33e5cd9cb9","path":"sprites/senzelaBackground_spr/senzelaBackground_spr.yy",},"LayerId":{"name":"ab932be3-ab84-4061-ab80-afff2607809e","path":"sprites/senzelaBackground_spr/senzelaBackground_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"senzelaBackground_spr","path":"sprites/senzelaBackground_spr/senzelaBackground_spr.yy",},"resourceVersion":"1.0","name":"862a3acf-0d41-4797-82df-dd33e5cd9cb9","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"senzelaBackground_spr","path":"sprites/senzelaBackground_spr/senzelaBackground_spr.yy",},
@@ -52,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"9c746032-18c3-411d-8971-3bf511e464f8","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"3a7c425d-ac77-4501-9ef1-4efc958e0806","path":"sprites/senzelaBackground_spr/senzelaBackground_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"5a8dec0f-4e8d-4dd7-8c54-8c7ffd160bc3","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"862a3acf-0d41-4797-82df-dd33e5cd9cb9","path":"sprites/senzelaBackground_spr/senzelaBackground_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -76,7 +65,7 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"2a26f0ce-e90f-4b33-ba7f-a42e86bcf01b","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"ab932be3-ab84-4061-ab80-afff2607809e","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
     "name": "Senzela Forest",

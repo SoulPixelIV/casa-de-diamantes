@@ -1,4 +1,5 @@
 //Find highest wave
+
 spawnNumber = instance_number(battleArenaSpawn_obj);
 for (var i = 0; i < spawnNumber; i++)
 {
