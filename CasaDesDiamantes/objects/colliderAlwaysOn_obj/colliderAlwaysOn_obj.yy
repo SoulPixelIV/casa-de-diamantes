@@ -1,13 +1,13 @@
 {
-  "spriteId": null,
-  "solid": false,
+  "spriteId": {
+    "name": "colliderBox_spr",
+    "path": "sprites/colliderBox_spr/colliderBox_spr.yy",
+  },
+  "solid": true,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": {
-    "name": "deactivate_obj",
-    "path": "objects/deactivate_obj/deactivate_obj.yy",
-  },
+  "parentObjectId": null,
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -24,11 +24,11 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Parents",
-    "path": "folders/Parents.yy",
+    "name": "Colliders",
+    "path": "folders/Objects/Colliders.yy",
   },
   "resourceVersion": "1.0",
-  "name": "enemy_obj",
+  "name": "colliderAlwaysOn_obj",
   "tags": [],
   "resourceType": "GMObject",
 }

@@ -22,3 +22,14 @@ if (showWindowMenu)
 		showWindowMenu = false;
 	}
 }
+
+//Check Culling Area
+checkCullingAreaTimer -= global.dt;
+if (checkCullingAreaTimer < 0)
+{
+	instance_deactivate_object(deactivate_obj);
+	//128px Safezone
+	instance_activate_region((x - xScreenSize / 2) - 256, (y - yScreenSize / 2) - 256, xScreenSize + 512, yScreenSize + 512, true);
+	instance_activate_object(battleArena_obj);
+	checkCullingAreaTimer = checkCullingAreaTimerSave;
+}

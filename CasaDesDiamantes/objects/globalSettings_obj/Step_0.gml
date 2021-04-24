@@ -112,7 +112,7 @@ else if (room == level0_SenzelaForest || room == level1_SenzelaForest)
 }
 else if (room == level2_SenzelaForest)
 {
-	global.ambientShadowIntensity = 0;
+	global.ambientShadowIntensity = 0.55 * global.gamma;
 }
 else
 {

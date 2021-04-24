@@ -1,7 +1,7 @@
 spawnedLight = false;
 spawnedPart = true;
 
-collider = instance_create_layer(x - 8, y, "TileCollider", collider_obj);
+collider = instance_create_layer(x - 8, y, "TileCollider", colliderAlwaysOn_obj);
 collider.image_yscale = 2.5;
 collider.image_xscale = 0.5;
 

@@ -72,9 +72,11 @@ hitVignetteTimer = 50;
 hitVignetteTimerSave = hitVignetteTimer;
 vignetteAlpha = 0;
 showWalljumpsLeft = false;
+checkCullingAreaTimer = 100;
 
 zombiespikeEffectBorderSave = zombiespikeEffectBorder;
 zombiespikeBorderTransparentSave = zombiespikeBorderTransparent;
+checkCullingAreaTimerSave = checkCullingAreaTimer;
 
 camera = camera_create();
 
@@ -88,10 +90,20 @@ view_camera[0] = camera;
 
 follow = player_obj;
 
-if (instance_exists(player_obj))
+if (global.spawn == 0)
 {
-	x = player_obj.x;
-	y = player_obj.y;
+	x = Spawn1_obj.x;
+	y = Spawn1_obj.y;
+}
+if (global.spawn == 1)
+{
+	x = Spawn2_obj.x;
+	y = Spawn2_obj.y;
+}
+if (global.spawn == 2)
+{
+	x = Spawn3_obj.x;
+	y = Spawn3_obj.y;
 }
 xTo = x;
 yTo = y - 16;
