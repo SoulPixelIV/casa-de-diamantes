@@ -23,6 +23,7 @@
         {"properties":[
             {"propertyId":{"name":"objectAccess","path":"objects/battleArena_obj/battleArena_obj.yy",},"objectId":{"name":"battleArena_obj","path":"objects/battleArena_obj/battleArena_obj.yy",},"value":"lasergate_obj","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
           ],"isDnd":false,"objectId":{"name":"battleArena_obj","path":"objects/battleArena_obj/battleArena_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":63.75,"scaleY":32.4375,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":3734.0,"y":1063.5,"resourceVersion":"1.0","name":"inst_241F0550","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"lighningSpawner_obj","path":"objects/lighningSpawner_obj/lighningSpawner_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":0.0,"y":0.0,"resourceVersion":"1.0","name":"inst_46F87422","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"GameManagerLayer","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[],"visible":true,"depth":100,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"GraphicsLayer","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[
@@ -1106,6 +1107,7 @@
     {"name":"inst_1E78AA07","path":"rooms/level3_SenzelaForest/level3_SenzelaForest.yy",},
     {"name":"inst_4E1ED537","path":"rooms/level3_SenzelaForest/level3_SenzelaForest.yy",},
     {"name":"inst_7D0104AE","path":"rooms/level3_SenzelaForest/level3_SenzelaForest.yy",},
+    {"name":"inst_46F87422","path":"rooms/level3_SenzelaForest/level3_SenzelaForest.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
