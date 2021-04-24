@@ -27,7 +27,7 @@ else
 		instance_destroy(lightRed);
 		spawnedLight = false;
 	}
-	//instance_deactivate_object(collider);
+	instance_deactivate_object(collider);
 	part_emitter_destroy(global.partSystem, sparkEmitter);
 	spawnedPart = false;
 }

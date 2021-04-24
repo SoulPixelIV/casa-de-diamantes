@@ -1,14 +1,17 @@
 //Find highest wave
-
-spawnNumber = instance_number(battleArenaSpawn_obj);
-for (var i = 0; i < spawnNumber; i++)
+if (!checkSpawners)
 {
-	if (place_meeting(x, y, instance_find(battleArenaSpawn_obj, i)))
+	spawnNumber = instance_number(battleArenaSpawn_obj);
+	for (var i = 0; i < spawnNumber; i++)
 	{
-		selectedSpawn = instance_find(battleArenaSpawn_obj, i);
-		if (selectedSpawn.wave > highestWave)
+		if (place_meeting(x, y, instance_find(battleArenaSpawn_obj, i)))
 		{
-			highestWave = selectedSpawn.wave;
+			selectedSpawn = instance_find(battleArenaSpawn_obj, i);
+			if (selectedSpawn.wave > highestWave)
+			{
+				highestWave = selectedSpawn.wave;
+			}
 		}
 	}
+	checkSpawners = true;
 }

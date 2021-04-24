@@ -856,9 +856,7 @@
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"senzelaForeground_obj","path":"objects/senzelaForeground_obj/senzelaForeground_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":2560.0,"y":3200.0,"resourceVersion":"1.0","name":"inst_37EDEC4A","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":1600,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Background","tags":[],"resourceType":"GMRInstanceLayer",},
-    {"instances":[
-        {"properties":[],"isDnd":false,"objectId":{"name":"senzelaMiddleground_obj","path":"objects/senzelaMiddleground_obj/senzelaMiddleground_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":2560.0,"y":3200.0,"resourceVersion":"1.0","name":"inst_7332053B","tags":[],"resourceType":"GMRInstance",},
-      ],"visible":true,"depth":1700,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Background2","tags":[],"resourceType":"GMRInstanceLayer",},
+    {"instances":[],"visible":true,"depth":1700,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Background2","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"senzelaBackground_obj","path":"objects/senzelaBackground_obj/senzelaBackground_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":2560.0,"y":3200.0,"resourceVersion":"1.0","name":"inst_4EB54291","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":1800,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Background3","tags":[],"resourceType":"GMRInstanceLayer",},
@@ -872,7 +870,6 @@
     {"name":"inst_51A905BF","path":"rooms/level3_SenzelaForest/level3_SenzelaForest.yy",},
     {"name":"inst_76F4D7","path":"rooms/level3_SenzelaForest/level3_SenzelaForest.yy",},
     {"name":"inst_37EDEC4A","path":"rooms/level3_SenzelaForest/level3_SenzelaForest.yy",},
-    {"name":"inst_7332053B","path":"rooms/level3_SenzelaForest/level3_SenzelaForest.yy",},
     {"name":"inst_4EB54291","path":"rooms/level3_SenzelaForest/level3_SenzelaForest.yy",},
     {"name":"inst_C3D6FD3","path":"rooms/level3_SenzelaForest/level3_SenzelaForest.yy",},
     {"name":"inst_2FDD359D","path":"rooms/level3_SenzelaForest/level3_SenzelaForest.yy",},

@@ -9,7 +9,11 @@ sectionCleared = false;
 enemyNumber = instance_number(enemy_obj);
 enemyCount = 0;
 updatedEnemyCount = 0;
+checkSpawners = false;
 var enemyList;
+
+checkEnemycountTimer = 100;
+checkEnemycountTimerSave = checkEnemycountTimer;
 
 //Find all enemies
 for (var i = 0; i < enemyNumber; i++)
@@ -26,5 +30,4 @@ for (var i = 0; i < enemyNumber; i++)
 	}
 }
 
-alarm[0] = 100;
 

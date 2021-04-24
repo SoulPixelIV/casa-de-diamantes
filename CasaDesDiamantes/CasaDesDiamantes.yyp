@@ -644,7 +644,6 @@
     {"id":{"name":"pistol_obj","path":"objects/pistol_obj/pistol_obj.yy",},"order":0,},
     {"id":{"name":"shotgun_obj","path":"objects/shotgun_obj/shotgun_obj.yy",},"order":2,},
     {"id":{"name":"dualBarettas_obj","path":"objects/dualBarettas_obj/dualBarettas_obj.yy",},"order":3,},
-    {"id":{"name":"senzelaMiddleground_obj","path":"objects/senzelaMiddleground_obj/senzelaMiddleground_obj.yy",},"order":1,},
     {"id":{"name":"ammoPackPistol_obj","path":"objects/ammoPackPistol_obj/ammoPackPistol_obj.yy",},"order":1,},
     {"id":{"name":"ammoUnused_obj","path":"objects/ammoUnused_obj/ammoUnused_obj.yy",},"order":4,},
     {"id":{"name":"ammoPackShotgun_obj","path":"objects/ammoPackShotgun_obj/ammoPackShotgun_obj.yy",},"order":5,},
