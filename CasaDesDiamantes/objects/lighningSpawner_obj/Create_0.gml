@@ -1,1 +1,1 @@
-spawnTimer = random_range(200, 500);
+spawnTimer = random_range(300, 1000);

@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"dcf37917-4ea7-4d94-8e2a-d12885ebcb38","path":"sprites/senzelaBackground_spr/senzelaBackground_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"dcf37917-4ea7-4d94-8e2a-d12885ebcb38","path":"sprites/senzelaBackground_spr/senzelaBackground_spr.yy",},"LayerId":{"name":"9762ad50-f2f0-4ddb-afea-e45a998e57c9","path":"sprites/senzelaBackground_spr/senzelaBackground_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"senzelaBackground_spr","path":"sprites/senzelaBackground_spr/senzelaBackground_spr.yy",},"resourceVersion":"1.0","name":"dcf37917-4ea7-4d94-8e2a-d12885ebcb38","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"43d4b41e-6549-42f6-9843-a9fefe6746ed","path":"sprites/senzelaBackgroundBright_spr/senzelaBackgroundBright_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"43d4b41e-6549-42f6-9843-a9fefe6746ed","path":"sprites/senzelaBackgroundBright_spr/senzelaBackgroundBright_spr.yy",},"LayerId":{"name":"c3a33360-9b92-4cfa-aa59-bc58ccc1f04e","path":"sprites/senzelaBackgroundBright_spr/senzelaBackgroundBright_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"senzelaBackgroundBright_spr","path":"sprites/senzelaBackgroundBright_spr/senzelaBackgroundBright_spr.yy",},"resourceVersion":"1.0","name":"43d4b41e-6549-42f6-9843-a9fefe6746ed","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"senzelaBackground_spr","path":"sprites/senzelaBackground_spr/senzelaBackground_spr.yy",},
+    "spriteId": {"name":"senzelaBackgroundBright_spr","path":"sprites/senzelaBackgroundBright_spr/senzelaBackgroundBright_spr.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 3.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"9efbaf14-64fb-41ea-b77d-ee34e7dd3dda","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"dcf37917-4ea7-4d94-8e2a-d12885ebcb38","path":"sprites/senzelaBackground_spr/senzelaBackground_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"d9a4a993-0161-4b45-8824-f3b99c214834","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"43d4b41e-6549-42f6-9843-a9fefe6746ed","path":"sprites/senzelaBackgroundBright_spr/senzelaBackgroundBright_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -58,21 +58,21 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"senzelaBackground_spr","path":"sprites/senzelaBackground_spr/senzelaBackground_spr.yy",},
+    "parent": {"name":"senzelaBackgroundBright_spr","path":"sprites/senzelaBackgroundBright_spr/senzelaBackgroundBright_spr.yy",},
     "resourceVersion": "1.3",
-    "name": "senzelaBackground_spr",
+    "name": "senzelaBackgroundBright_spr",
     "tags": [],
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"9762ad50-f2f0-4ddb-afea-e45a998e57c9","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"c3a33360-9b92-4cfa-aa59-bc58ccc1f04e","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
     "name": "Senzela Forest",
     "path": "folders/Backgrounds/Sprites/Senzela Forest.yy",
   },
   "resourceVersion": "1.0",
-  "name": "senzelaBackground_spr",
+  "name": "senzelaBackgroundBright_spr",
   "tags": [],
   "resourceType": "GMSprite",
 }
