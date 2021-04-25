@@ -46,6 +46,7 @@ exclamationmarkTimerSave = exclamationmarkTimer;
 attackCooldownSave = attackCooldown;
 attackDelaySave = attackDelay;
 damageTintTimerSave = damageTintTimer;
+gravityStrengthSave = gravityStrength;
 
 headshotHitbox = instance_create_layer(x, y - 16, "Instances", headshotHitbox_obj);
 with (headshotHitbox)
@@ -61,3 +62,8 @@ audio_drop_start = 64;
 audio_falloff_set_model(audio_falloff_linear_distance);
 audio_emitter_position(emitter, x, y, 0);
 audio_emitter_falloff(emitter, audio_drop_start, audio_max_distance, 1);
+
+checkPlayerTimer = 50;
+checkPlayerTimerSave = checkPlayerTimer;
+checkPlayerTimer = 0;
+gravityStrength = 0;

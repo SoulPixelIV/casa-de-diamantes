@@ -36,6 +36,7 @@ aggroTimerSave = aggroTimer;
 deaggroTimerSave = deaggroTimer;
 exclamationmarkTimerSave = exclamationmarkTimer;
 damageTintTimerSave = damageTintTimer;
+gravityStrengthSave = gravityStrength;
 
 barrelHitbox = instance_create_layer(x + 9, y, "ForegroundObjects", barrelHitbox_obj);
 alarmLight = instance_create_layer(x, y, "GraphicsLayer", spotlightRed_obj); 
@@ -49,3 +50,8 @@ with (alarmLight)
 {
 	body = instance_nearest(x, y, explosiveMerchant_obj);
 }
+
+checkPlayerTimer = 50;
+checkPlayerTimerSave = checkPlayerTimer;
+checkPlayerTimer = 0;
+gravityStrength = 0;

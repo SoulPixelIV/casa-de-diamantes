@@ -53,6 +53,7 @@ attackCooldownSave = attackCooldown;
 damageTintTimerSave = damageTintTimer;
 lineFlashTimerSave = lineFlashTimer;
 turnDelaySave = turnDelay;
+gravityStrengthSave = gravityStrength;
 
 headshotHitbox = instance_create_layer(x, y - 16, "Instances", headshotHitbox_obj);
 with (headshotHitbox)
@@ -70,3 +71,8 @@ audio_emitter_position(emitter, x, y, 0);
 audio_emitter_falloff(emitter, audio_drop_start, audio_max_distance, 1);
 
 //snd = audio_play_sound_on(emitter, jetpack_snd, true, 1);
+
+checkPlayerTimer = 50;
+checkPlayerTimerSave = checkPlayerTimer;
+checkPlayerTimer = 0;
+gravityStrength = 0;

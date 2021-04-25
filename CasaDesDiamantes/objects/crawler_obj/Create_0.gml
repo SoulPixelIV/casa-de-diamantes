@@ -44,6 +44,7 @@ aggroTimerSave = aggroTimer;
 deaggroTimerSave = deaggroTimer;
 exclamationmarkTimerSave = exclamationmarkTimer;
 useDelayTimerSave = useDelayTimer;
+gravityStrengthSave = gravityStrength;
 
 animationSpeed = 0.5;
 
@@ -51,3 +52,8 @@ if (instance_exists(waypoint))
 {
 	checkedWaypoint = false;
 }
+
+checkPlayerTimer = 50;
+checkPlayerTimerSave = checkPlayerTimer;
+checkPlayerTimer = 0;
+gravityStrength = 0;

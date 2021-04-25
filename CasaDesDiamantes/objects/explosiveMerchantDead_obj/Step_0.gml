@@ -1,22 +1,6 @@
 /// @description Enemy AI
 
-x += horspeed * global.dt;
 y += verspeed * global.dt;
-dirLookat = point_direction(x, y, player_obj.x, player_obj.y);
-
-if (movement)
-{
-	if (dir == 0)
-	{
-		horspeed = movSpeed;
-		image_xscale = 1;
-	}
-	else
-	{
-		horspeed = -movSpeed;
-		image_xscale = -1;
-	}
-}
 
 //Gravity
 if (verspeed < 2)
@@ -27,58 +11,6 @@ if (verspeed < 2)
 //Animation
 image_speed = 0;
 image_index += (global.dt / 15) * animationSpeed;
-
-//Collision
-//horspeed
-if (!place_free(x + (horspeed * global.dt), y))
-{
-	if (sign(horspeed) != 0)
-	{
-		while (place_free(x + sign(horspeed) / 100, y))
-		{
-			x += sign(horspeed) / 100;
-		}
-		horspeed = 0;
-		
-		if (dir == 0)
-		{
-			dir = 1;
-		}
-		else
-		{
-			dir = 0;
-		}
-	}
-} 
-//verspeed
-if (!place_free(x, y + (verspeed * global.dt)))
-{
-	if (sign(verspeed) != 0)
-	{
-		while (place_free(x, y + sign(verspeed) / 100))
-		{
-			y += sign(verspeed) / 100;
-		}
-		verspeed = 0;
-		if (explodeOnContact)
-		{
-			hp = 0;
-		}
-	}
-}
-
-//###OutsideSolid###
-if (place_free(x, y))
-{
-    savePosX = x;
-    savePosY = y;
-}
-else
-{
-    x = savePosX;
-    y = savePosY;
-    verSpeed = 0;
-}
 
 //###Death###
 if (hp <= 0)
@@ -179,5 +111,26 @@ if (damageTintTimer < 0)
 if (open)
 {
 	gravityStrength = -0.05;
+}
+
+checkPlayerTimer -= global.dt;
+if (checkPlayerTimer < 0)
+{
+	if (instance_exists(camera_obj))
+	{
+		if (distance_to_object(camera_obj) < (camera_obj.xScreenSize / 2) + 128)
+		{
+			gravityStrength = gravityStrengthSave;
+		}
+		else
+		{
+			gravityStrength = 0;
+		}
+	}
+	else
+	{
+		gravityStrength = 0;
+	}
+	checkPlayerTimer = checkPlayerTimerSave;
 }
 

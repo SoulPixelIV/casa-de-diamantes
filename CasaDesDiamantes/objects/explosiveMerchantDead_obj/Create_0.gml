@@ -23,6 +23,7 @@ damage = 0;
 knockback = 0;
 playerSightMax = 128;
 playerSightMin = 8;
+gravityStrength = 0;
 
 animationSpeed = 0.5;
 savePosX = x;
@@ -36,6 +37,7 @@ open = false;
 
 //Help Vars
 damageTintTimerSave = damageTintTimer;
+gravityStrengthSave = gravityStrength;
 
 barrelHitbox = instance_create_layer(x + 24, y + 4, "ForegroundObjects", barrelHitbox_obj);
 alarmLight = instance_create_layer(x, y, "GraphicsLayer", spotlightRed_obj); 
@@ -49,3 +51,8 @@ with (alarmLight)
 {
 	body = instance_nearest(x, y, explosiveMerchantDead_obj);
 }
+
+checkPlayerTimer = 50;
+checkPlayerTimerSave = checkPlayerTimer;
+checkPlayerTimer = 0;
+gravityStrength = 0;

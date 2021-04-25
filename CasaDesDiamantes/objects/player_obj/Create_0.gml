@@ -115,6 +115,7 @@ enemySlowMotionTimerSave = enemySlowMotionTimer;
 shotZoomTimerSave = shotZoomTimer;
 groundCollisionTimerSave = groundCollisionTimer;
 dashDelaySave = dashDelay;
+gravityStrengthSave = gravityStrength;
 
 //Second Dualbarettas arm
 sprID = layer_sprite_create("BackgroundObjects", -1000, -1000, playerDualBarettas_spr);
@@ -132,3 +133,8 @@ if (!instance_exists(spotlightPlayer_obj))
 instance_create_layer(x + 1, y - 4, "Instances", playerBulletLine_obj);
 
 global.spawn = 0;
+
+checkPlayerTimer = 50;
+checkPlayerTimerSave = checkPlayerTimer;
+checkPlayerTimer = 0;
+gravityStrength = 0;

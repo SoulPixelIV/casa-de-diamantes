@@ -320,3 +320,24 @@ if (damageTintTimer < 0)
 	damageTintTimer = damageTintTimerSave;
 	damageTint = false;
 }
+
+checkPlayerTimer -= global.dt;
+if (checkPlayerTimer < 0)
+{
+	if (instance_exists(camera_obj))
+	{
+		if (distance_to_object(camera_obj) < (camera_obj.xScreenSize / 2) + 128)
+		{
+			gravityStrength = gravityStrengthSave;
+		}
+		else
+		{
+			gravityStrength = 0;
+		}
+	}
+	else
+	{
+		gravityStrength = 0;
+	}
+	checkPlayerTimer = checkPlayerTimerSave;
+}
