@@ -352,9 +352,16 @@ if (checkPlayerTimer < 0)
 {
 	if (instance_exists(camera_obj))
 	{
-		if (distance_to_object(camera_obj) < (camera_obj.xScreenSize / 2) + 128)
+		if (x < (camera_obj.x + (camera_obj.xScreenSize / 2) + 128) && x > (camera_obj.x - (camera_obj.xScreenSize / 2) - 128))
 		{
-			gravityStrength = gravityStrengthSave;
+			if (y < (camera_obj.y + (camera_obj.yScreenSize / 2) + 128) && y > (camera_obj.y - (camera_obj.yScreenSize / 2) - 128))
+			{
+				gravityStrength = gravityStrengthSave;
+			}
+			else
+			{
+				gravityStrength = 0;
+			}
 		}
 		else
 		{
