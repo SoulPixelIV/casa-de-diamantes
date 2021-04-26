@@ -4,4 +4,11 @@ boostDelay = 50;
 
 boostDelaySave = boostDelay;
 
-bluelight = instance_create_layer(x, y, "GraphicsLayer", spotlightLightBlue_obj);
+if (spawnLight)
+{
+	bluelight = instance_create_layer(x, y, "GraphicsLayer", spotlightLightBlue_obj);
+}
+else
+{
+	bluelight = noone;
+}

@@ -15,7 +15,10 @@ if (open)
 	
 	if (!createdLight)
 	{
-		bluelight = instance_create_layer(x, y, "GraphicsLayer", spotlightLightBlue_obj);
+		if (instance_exists(bluelight))
+		{
+			bluelight = instance_create_layer(x, y, "GraphicsLayer", spotlightLightBlue_obj);
+		}
 		createdLight = true;
 	}
 }
