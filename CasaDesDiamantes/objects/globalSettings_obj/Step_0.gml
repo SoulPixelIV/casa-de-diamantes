@@ -69,19 +69,19 @@ if (keyboard_check_pressed(vk_f4))
 {
 	part_emitter_destroy_all(global.partSystem);
 	instance_destroy(player_obj);
-	room_goto(level3_SenzelaForest);
+	room_goto(level1_SenzelaForest);
 }
 if (keyboard_check_pressed(vk_f5))
 {
 	part_emitter_destroy_all(global.partSystem);
 	instance_destroy(player_obj);
-	room_goto(level1_SenzelaForest);
+	room_goto(level2_SenzelaForest);
 }
 if (keyboard_check_pressed(vk_f6))
 {
 	part_emitter_destroy_all(global.partSystem);
 	instance_destroy(player_obj);
-	room_goto(level2_SenzelaForest);
+	room_goto(level3_SenzelaForest);
 }
 /*
 if (keyboard_check_pressed(vk_f11))

@@ -23,7 +23,6 @@ damage = 0;
 knockback = 0;
 playerSightMax = 128;
 playerSightMin = 8;
-gravityStrength = 0;
 
 animationSpeed = 0.5;
 savePosX = x;
@@ -55,4 +54,12 @@ with (alarmLight)
 checkPlayerTimer = 50;
 checkPlayerTimerSave = checkPlayerTimer;
 checkPlayerTimer = 0;
-gravityStrength = 0;
+
+if (gravityStrength != 0)
+{
+	firstFall = true;
+}
+else
+{
+	firstFall = false;
+}

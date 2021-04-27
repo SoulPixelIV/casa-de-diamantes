@@ -12,6 +12,41 @@ if (verspeed < 2)
 image_speed = 0;
 image_index += (global.dt / 15) * animationSpeed;
 
+//Collision
+if (open || (!open && firstFall))
+{
+	//verspeed
+	if (!place_free(x, y + (verspeed * global.dt)))
+	{
+		if (sign(verspeed) != 0)
+		{
+			while (place_free(x, y + sign(verspeed) / 100))
+			{
+				y += sign(verspeed) / 100;
+			}
+			verspeed = 0;
+			if (explodeOnContact)
+			{
+				hp = 0;
+			}
+		}
+		firstFall = false;
+	}
+
+	//###OutsideSolid###
+	if (place_free(x, y))
+	{
+	    savePosX = x;
+	    savePosY = y;
+	}
+	else
+	{
+	    x = savePosX;
+	    y = savePosY;
+	    verSpeed = 0;
+	}
+}
+
 //###Death###
 if (hp <= 0)
 {
@@ -108,36 +143,25 @@ if (damageTintTimer < 0)
 	damageTint = false;
 }
 
-if (open)
-{
-	gravityStrength = -0.05;
-}
-
 checkPlayerTimer -= global.dt;
 if (checkPlayerTimer < 0)
 {
-	if (instance_exists(camera_obj))
+	if (open || (!open && firstFall))
 	{
-		if (x < (camera_obj.x + (camera_obj.xScreenSize / 2) + 128) && x > (camera_obj.x - (camera_obj.xScreenSize / 2) - 128))
+		if (instance_exists(camera_obj))
 		{
-			if (y < (camera_obj.y + (camera_obj.yScreenSize / 2) + 128) && y > (camera_obj.y - (camera_obj.yScreenSize / 2) - 128))
+			if (x < (camera_obj.x + (camera_obj.xScreenSize / 2) + 128) && x > (camera_obj.x - (camera_obj.xScreenSize / 2) - 128))
 			{
-				gravityStrength = gravityStrengthSave;
-			}
-			else
-			{
-				gravityStrength = 0;
+				if (y < (camera_obj.y + (camera_obj.yScreenSize / 2) + 128) && y > (camera_obj.y - (camera_obj.yScreenSize / 2) - 128))
+				{
+					gravityStrength = -0.05;
+				}
 			}
 		}
-		else
-		{
-			gravityStrength = 0;
-		}
-	}
-	else
-	{
-		gravityStrength = 0;
 	}
 	checkPlayerTimer = checkPlayerTimerSave;
 }
-
+if (!firstFall && !open)
+{
+	gravityStrength = 0;
+}
