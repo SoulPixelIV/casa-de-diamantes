@@ -895,19 +895,27 @@ if (hp <= 0 || infection < 0)
 	//Death
 	if (!deathActivated)
 	{
-		death_scr();
-		deathActivated = true;
+		if (global.syringes > 0)
+		{
+			death_scr();
+			deathActivated = true;
+		}
+		else
+		{
+			camera_obj.finalDeath = true;
+			camera_obj.drawInfectionText = true;
+		}
 	}
 	
 	//Revive
-	if (keyboard_check_pressed(ord("E")) && syringes > 0 && !place_meeting(x, y, toxicWater_obj))
+	if (keyboard_check_pressed(ord("E")) && global.syringes > 0 && !place_meeting(x, y, toxicWater_obj))
 	{
 		revive_scr();
 	}
 	//Full Death
 	if (keyboard_check_pressed(ord("Q")))
 	{
-		fullDeath_scr();
+		camera_obj.finalDeath = true;
 	}
 }
 

@@ -152,7 +152,7 @@ if (!noHUD)
 	}
 
 	//Syringes
-	for (i = 0; i < player_obj.syringes; i++)
+	for (i = 0; i < global.syringes; i++)
 	{
 		draw_sprite_ext(syringe_spr, -1, 42, 24 + 16 * i, 1, 1, -1, -1, 1);
 	}
@@ -331,19 +331,62 @@ draw_set_alpha(1);
 //Infectiontext
 if (drawInfectionText)
 {
-	draw_set_font(global.optixFont);
-	draw_sprite_ext(death_spr, 0, camera_obj.xScreenSize / 2, camera_obj.yScreenSize / 4, 1.5, 1.5, 0, -1, 1);
-	draw_set_color(c_white);
-	draw_text(camera_obj.xScreenSize - (camera_obj.xScreenSize / 4) - 48, camera_obj.yScreenSize - (camera_obj.yScreenSize / 5) + 32, "Syringes Left: " + string(player_obj.syringes))
-	draw_set_font(gothicPixel_fnt);
-	draw_set_color(make_color_rgb(255, 215, 0));
-	draw_set_halign(fa_center);
-	draw_sprite(button_spr, 0, camera_obj.xScreenSize / 4, camera_obj.yScreenSize - (camera_obj.yScreenSize / 4));
-	draw_sprite(button_spr, 0, camera_obj.xScreenSize - (camera_obj.xScreenSize / 4), camera_obj.yScreenSize - (camera_obj.yScreenSize / 4));
-	draw_text(camera_obj.xScreenSize - (camera_obj.xScreenSize / 4), camera_obj.yScreenSize - (camera_obj.yScreenSize / 4) - 4, "INFECT [E]");
-	draw_text(camera_obj.xScreenSize / 4, camera_obj.yScreenSize - (camera_obj.yScreenSize / 4) - 4, "DIE [Q]");
-	draw_set_halign(fa_left);
+	if (!finalDeath)
+	{
+		draw_set_font(global.optixFont);
+		draw_sprite_ext(death_spr, 0, camera_obj.xScreenSize / 2, camera_obj.yScreenSize / 4, 1.5, 1.5, 0, -1, 1);
+		draw_set_color(c_white);
+		draw_text(camera_obj.xScreenSize - (camera_obj.xScreenSize / 4) - 48, camera_obj.yScreenSize - (camera_obj.yScreenSize / 5) + 32, "Syringes Left: " + string(global.syringes))
+		draw_set_font(gothicPixel_fnt);
+		draw_set_color(make_color_rgb(255, 215, 0));
+		draw_set_halign(fa_center);
+		draw_sprite(button_spr, 0, camera_obj.xScreenSize / 4, camera_obj.yScreenSize - (camera_obj.yScreenSize / 4));
+		draw_sprite(button_spr, 0, camera_obj.xScreenSize - (camera_obj.xScreenSize / 4), camera_obj.yScreenSize - (camera_obj.yScreenSize / 4));
+		draw_text(camera_obj.xScreenSize - (camera_obj.xScreenSize / 4), camera_obj.yScreenSize - (camera_obj.yScreenSize / 4) - 4, "INFECT [E]");
+		draw_text(camera_obj.xScreenSize / 4, camera_obj.yScreenSize - (camera_obj.yScreenSize / 4) - 4, "DIE [Q]");
+		draw_set_halign(fa_left);
+	}
+	else
+	{
+		draw_set_color(c_black);
+		draw_rectangle(-300, -225, 1600, 1150, false);
+		draw_set_alpha(1);
+		draw_sprite_ext(death_spr, 0, camera_obj.xScreenSize / 2, camera_obj.yScreenSize / 4, 2, 2, 0, c_red, 0.2);
+		draw_sprite_ext(death_spr, 0, camera_obj.xScreenSize / 2, camera_obj.yScreenSize / 4, 1.5, 1.5, 0, c_red, 1);
+		finalDeathScreenTimer -= global.dt;
+		if (finalDeathScreenTimer < 0)
+		{
+			blackscreenStrength += global.dt / 100;
+		}
+		if (blackscreenStrength > 0.95)
+		{
+			pauseDeathTimer -= global.dt;
+		}
+		if (pauseDeathTimer < 0)
+		{
+			deathScreenIsDark = false;
+			respawnSetScreenBrightness = true;
+			finalDeathScreenTimer = finalDeathScreenTimerSave;
+			fullDeath_scr();
+			drawInfectionText = false;
+			finalDeath = false;
+			pauseDeathTimer = pauseDeathTimerSave;
+		}
+	}
 }
+if (respawnSetScreenBrightness)
+{
+	if (blackscreenStrength > 0.05)
+	{
+		blackscreenStrength -= global.dt / 100;
+	}
+	else
+	{
+		blackscreenStrength = 0;
+		respawnSetScreenBrightness = false;
+	}
+}
+
 if (player_obj.isZombie)
 {
 	draw_set_font(global.optixFontHuge);
@@ -398,11 +441,10 @@ if (showInfOverlay && !showedInf)
 }
 
 //#####LAYER 3#####
-
-draw_set_alpha(blackscreenStrength);
-draw_set_color(c_black);
-draw_rectangle(-300, -225, 1600, 1150, false);
-draw_set_alpha(1);
+if (!noHUD)
+{
+	draw_sprite(guiBorder_spr, 0, 0, 0);
+}
 
 //#####LAYER 4#####
 if (!noHUD)

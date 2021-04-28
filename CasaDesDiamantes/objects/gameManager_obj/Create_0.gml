@@ -2,6 +2,7 @@
 
 global.spawn = 0;
 global.money = 0;
+global.syringes = 0;
 global.key = false;
 global.scorepoints = 0;
 global.multiplier = 1;
