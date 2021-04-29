@@ -895,16 +895,8 @@ if (hp <= 0 || infection < 0)
 	//Death
 	if (!deathActivated)
 	{
-		if (global.syringes > 0)
-		{
-			death_scr();
-			deathActivated = true;
-		}
-		else
-		{
-			camera_obj.finalDeath = true;
-			camera_obj.drawInfectionText = true;
-		}
+		death_scr();
+		deathActivated = true;
 	}
 	
 	//Revive

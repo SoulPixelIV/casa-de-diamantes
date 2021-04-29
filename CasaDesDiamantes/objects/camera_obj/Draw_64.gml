@@ -447,10 +447,10 @@ if (!noHUD)
 }
 
 //#####LAYER 4#####
-if (!noHUD)
-{
-	draw_sprite(guiBorder_spr, 0, 0, 0);
-}
+draw_set_alpha(blackscreenStrength);
+draw_set_color(c_black);
+draw_rectangle(-300, -225, 1600, 1150, false);
+draw_set_alpha(1);
 
 //black borders
 draw_sprite(blackborder_spr, 0, xScreenSize / 2, blackbordersPos);
