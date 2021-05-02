@@ -64,6 +64,14 @@ draw_set_alpha(vignetteAlpha);
 draw_ellipse_colour(-200, -200, xScreenSize + 200, yScreenSize + 200, c_black , c_red, false);
 draw_set_alpha(1);
 
+if (player_obj.plagueTransformation)
+{
+    shader_reset();
+    draw_set_alpha(0.4);
+    draw_ellipse_colour(-200, -200, xScreenSize + 200, yScreenSize + 200, c_black , c_green, false);
+    draw_set_alpha(1);
+}
+
 //#####LAYER 1#####
 	
 if (drawBlackborders)
@@ -146,10 +154,12 @@ if (!noHUD)
 	}
 	
 	//Healthcut
+	/*
 	if (player_obj.syringesLost > 0)
 	{
 		draw_sprite_ext(healthCut_spr, 0, edgeMarginHor, 32 - player_obj.maxhp, 1, 1, 0, -1, 1);
 	}
+	*/
 
 	//Syringes
 	for (i = 0; i < global.syringes; i++)

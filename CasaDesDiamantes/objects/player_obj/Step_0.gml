@@ -142,7 +142,7 @@ if (movement && !isZombie)
 		    dash_scr();
 		}
 	}
-	if (dashDelay >= 0)
+	if (dashDelay >= 0 && wallJumps == wallJumpsMax)
 	{
 		dashDelay -= global.dt;
 	}

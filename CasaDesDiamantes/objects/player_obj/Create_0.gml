@@ -10,6 +10,7 @@ movSpeedSave = movSpeed;
 movSpeedZombie = 0.54;
 dashSpeed = 1.23;
 wallJumps = 3;
+wallJumpsMax = wallJumps;
 dashDelay = 300;
 animationSpeed = 1;
 jumpType = 0;
@@ -29,7 +30,7 @@ onMovingPlatform = false;
 onBooster = false;
 
 //Action
-hp = 10;
+hp = 100;
 hpOld = hp;
 zombieTimer = 1550;
 slowmoTimer = 260;

@@ -1,9 +1,7 @@
 /// @description Pickup
 
-if (player_obj.maxhp < 100)
+if (player_obj.hp < player_obj.maxhp)
 {
-	player_obj.maxhp += 25;
-	player_obj.hp += 25;
-	player_obj.syringesLost -= 1;
+	player_obj.hp = player_obj.maxhp;
 	instance_destroy();
 }

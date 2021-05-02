@@ -8,7 +8,7 @@ if (open)
 			lightRed = instance_create_layer(x, y + 40, "GraphicsLayer", spotlightRed_obj);
 			spawnedLight = true;
 		}
-		instance_activate_object(collider);
+		//instance_activate_object(collider);
 		if (!spawnedPart)
 		{
 			sparkEmitter = part_emitter_create(global.partSystem);
