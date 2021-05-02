@@ -111,7 +111,11 @@ if (!noHUD)
 	draw_text_colour(edgeMarginHor, 252, "Framerate: " + string(currFps), c_white, c_white, c_white, c_white, 1);
 
 	//Healthbar
-	if (player_obj.hp == 100)
+	if (player_obj.plagueTransformation)
+	{
+		draw_sprite_ext(healthbarBorderInfection_spr, -1, edgeMarginHor, edgeMarginVer, 1, 1, 0, -1, 1);
+	}
+	else if (player_obj.hp == 100)
 	{
 		draw_sprite_ext(healthbarBorderFull_spr, -1, edgeMarginHor, edgeMarginVer, 1, 1, 0, -1, 1);
 	}
@@ -128,6 +132,11 @@ if (!noHUD)
 		draw_sprite_ext(healthbarTop2_spr, -1, edgeMarginHor, 19 - (player_obj.hp - 100), 1, 1, 0, -1, 1);
 	}
 	draw_sprite_ext(healthbar_spr, 0, edgeMarginHor, 131, 1, 1 * (player_obj.hp / 100) , 0, -1, 1);
+	if (player_obj.plagueTransformation)
+	{
+		draw_sprite_ext(healthbarTop2Infection_spr, -1, edgeMarginHor, 119 - player_obj.infection, 1, 1, 0, -1, 1);
+		draw_sprite_ext(healthbarInfection_spr, 0, edgeMarginHor, 131, 1, player_obj.infection / 100, 0, -1, 1);
+	}
 	//Damage Healthbar
 	if (player_obj.damageRecieved || healthbarShrinkStart)
 	{

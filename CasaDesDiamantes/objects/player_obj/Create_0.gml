@@ -45,7 +45,7 @@ damageFlickerTimer = 17;
 
 colliding = true;
 reloading = false;
-infection = 30;
+infection = 0;
 startShotCooldown = true;
 maxhp = hp;
 syringesLost = 0;
