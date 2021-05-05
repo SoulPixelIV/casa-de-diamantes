@@ -1,6 +1,6 @@
 /// @description Pickup
 
-if (player_obj.hp < player_obj.maxhp)
+if (player_obj.hp < player_obj.maxhp || player_obj.plagueTransformation)
 {
 	if (player_obj.hp < player_obj.maxhp - 25)
 	{

@@ -20,7 +20,14 @@ if (hp > 0)
 		if (other.damageCollision)
 		{
 			hpOld = hp;
-			hp -= other.damage;
+			if (!plagueTransformation)
+			{
+				hp -= other.damage;
+			}
+			else
+			{
+				hp -= other.damage / 2;
+			}
 			damageCooldown = damageCooldownSave;
 			damageRecieved = true;
 			if (!audio_is_playing(moan1_snd) && !audio_is_playing(moan2_snd))

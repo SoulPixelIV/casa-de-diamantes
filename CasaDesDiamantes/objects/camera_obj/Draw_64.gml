@@ -68,7 +68,7 @@ if (player_obj.plagueTransformation)
 {
     shader_reset();
     draw_set_alpha(0.4);
-    draw_ellipse_colour(-200, -200, xScreenSize + 200, yScreenSize + 200, c_black , c_green, false);
+    draw_ellipse_colour(-200, -200, xScreenSize + 200, yScreenSize + 200, c_black , c_purple, false);
     draw_set_alpha(1);
 }
 

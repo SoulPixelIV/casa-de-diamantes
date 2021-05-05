@@ -7,6 +7,10 @@ xScreenSizeNew = x;
 yScreenSizeNew = y;
 snapCameraX = false;
 snapCameraY = false;
+minCameraXBorder = xScreenSize / 2 + 32;
+maxCameraXBorder = (room_width - xScreenSize / 2) - 32;
+minCameraYBorder = yScreenSize / 2 + 32;
+maxCameraYBorder = (room_height - yScreenSize / 2) - 32;
 cameraSpeed = 1;
 cameraYBorder = 16;
 noHUD = false;
@@ -98,18 +102,102 @@ follow = player_obj;
 
 if (global.spawn == 0)
 {
-	x = Spawn1_obj.x;
-	y = Spawn1_obj.y;
+	if (Spawn1_obj.x > minCameraXBorder && Spawn1_obj.x < maxCameraXBorder)
+	{
+		x = Spawn1_obj.x;
+	}
+	else
+	{
+		if (Spawn1_obj.x <= minCameraXBorder)
+		{
+			x = minCameraXBorder + 1;
+		}
+		if (Spawn1_obj.x >= maxCameraXBorder)
+		{
+			x = maxCameraXBorder - 1;
+		}
+	}
+	if (Spawn1_obj.y > minCameraYBorder && Spawn1_obj.y < maxCameraYBorder)
+	{
+		y = Spawn1_obj.y;
+	}
+	else
+	{
+		if (Spawn1_obj.y <= minCameraYBorder)
+		{
+			y = minCameraYBorder + 1;
+		}
+		if (Spawn1_obj.y >= maxCameraYBorder)
+		{
+			y = maxCameraYBorder - 1;
+		}
+	}
 }
 if (global.spawn == 1)
 {
-	x = Spawn2_obj.x;
-	y = Spawn2_obj.y;
+	if (Spawn2_obj.x > minCameraXBorder && Spawn2_obj.x < maxCameraXBorder)
+	{
+		x = Spawn2_obj.x;
+	}
+	else
+	{
+		if (Spawn2_obj.x <= minCameraXBorder)
+		{
+			x = minCameraXBorder + 1;
+		}
+		if (Spawn2_obj.x >= maxCameraXBorder)
+		{
+			x = maxCameraXBorder - 1;
+		}
+	}
+	if (Spawn2_obj.y > minCameraYBorder && Spawn2_obj.y < maxCameraYBorder)
+	{
+		y = Spawn2_obj.y;
+	}
+	else
+	{
+		if (Spawn2_obj.y <= minCameraYBorder)
+		{
+			y = minCameraYBorder + 1;
+		}
+		if (Spawn2_obj.y >= maxCameraYBorder)
+		{
+			y = maxCameraYBorder - 1;
+		}
+	}
 }
 if (global.spawn == 2)
 {
-	x = Spawn3_obj.x;
-	y = Spawn3_obj.y;
+	if (Spawn3_obj.x > minCameraXBorder && Spawn3_obj.x < maxCameraXBorder)
+	{
+		x = Spawn3_obj.x;
+	}
+	else
+	{
+		if (Spawn3_obj.x <= minCameraXBorder)
+		{
+			x = minCameraXBorder + 1;
+		}
+		if (Spawn3_obj.x >= maxCameraXBorder)
+		{
+			x = maxCameraXBorder - 1;
+		}
+	}
+	if (Spawn3_obj.y > minCameraYBorder && Spawn3_obj.y < maxCameraYBorder)
+	{
+		y = Spawn3_obj.y;
+	}
+	else
+	{
+		if (Spawn3_obj.y <= minCameraYBorder)
+		{
+			y = minCameraYBorder + 1;
+		}
+		if (Spawn3_obj.y >= maxCameraYBorder)
+		{
+			y = maxCameraYBorder - 1;
+		}
+	}
 }
 xTo = x;
 yTo = y - 16;

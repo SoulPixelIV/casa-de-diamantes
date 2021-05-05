@@ -1,4 +1,4 @@
-if (enableShooting)
+if (enableShooting && !player_obj.deathActivated)
 {
 	if (!positionCrosshair)
 	{

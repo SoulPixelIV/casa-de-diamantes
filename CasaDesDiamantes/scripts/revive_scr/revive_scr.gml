@@ -8,6 +8,7 @@ function revive_scr() {
 	player_obj.syringesLost += 1;
 	player_obj.hp = 100;
 	player_obj.deathActivated = false;
+	damageRecieved = true;
 	reload_scr();
 	
 	player_obj.plagueTransformation = true;
