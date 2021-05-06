@@ -122,18 +122,16 @@ if (hp <= 0)
 	}
 	
 	//Drop Item
-	var randDrop = choose(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,3,4)
-	if (randDrop == 2)
+	if (instance_exists(player_obj))
 	{
-		instance_create_layer(x, y - 16, "Instances", healthpackPickup_obj);
-	}
-	if (randDrop == 3)
-	{
-		instance_create_layer(x, y - 16, "Instances", ammoPackPistolPickup_obj);
-	}
-	if (randDrop == 4)
-	{
-		instance_create_layer(x, y - 16, "Instances", ammoPackShotgunPickup_obj);
+		if (player_obj.hp < 30)
+		{
+			var randDrop = choose(1,1,1,1,1,1,1,1,1,12)
+			if (randDrop == 2)
+			{
+				instance_create_layer(x, y - 16, "Instances", healthpackPickup_obj);
+			}
+		}
 	}
 
 	//Drop Money
