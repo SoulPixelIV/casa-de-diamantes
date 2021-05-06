@@ -223,7 +223,7 @@ if (hp < 0)
 	//Drop Ammo
 	if (lastBullet == bulletDualBarettas_obj)
 	{
-		repeat (ceil(ammoSpawnCount / 2))
+		repeat (ceil(ammoSpawnCount / 3))
 		{
 			instance_create_layer(x, y, "Instances", ammoShotgunSmall_obj);
 		}

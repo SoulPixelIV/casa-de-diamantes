@@ -1,46 +1,42 @@
 function shooting_scr(argument0) {
 	if (argument0 == "pistol")
 	{
-		if (global.pistolAmmo > 0)
+		var pistolShot = audio_play_sound(pistolShot_snd, 1, false);
+		audio_sound_pitch(pistolShot, random_range(0.9, 1.1));
+		
+		var shotLightx = x + lengthdir_x(24, dirCursor);
+		var shotLighty = y - 8 + lengthdir_y(24, dirCursor);
+		instance_create_layer(playerBulletLine_obj.x, playerBulletLine_obj.y, "Instances", bulletPistol_obj);
+		instance_create_layer(shotLightx, shotLighty, "ForegroundObjects", shotLightPistol_obj);
+		instance_create_layer(shotLightx, shotLighty, "ForegroundObjects", smokecloud_obj);
+		screenshake(50, 2.5, 0.4, id);
+		
+		if (!huggingWall)
 		{
-			var pistolShot = audio_play_sound(pistolShot_snd, 1, false);
-			audio_sound_pitch(pistolShot, random_range(0.9, 1.1));
-		
-			var shotLightx = x + lengthdir_x(24, dirCursor);
-			var shotLighty = y - 8 + lengthdir_y(24, dirCursor);
-			instance_create_layer(playerBulletLine_obj.x, playerBulletLine_obj.y, "Instances", bulletPistol_obj);
-			instance_create_layer(shotLightx, shotLighty, "ForegroundObjects", shotLightPistol_obj);
-			instance_create_layer(shotLightx, shotLighty, "ForegroundObjects", smokecloud_obj);
-			screenshake(50, 2.5, 0.4, id);
-		
-			if (!huggingWall)
+			if (dirCursor > 0 && dirCursor < 90)
 			{
-				if (dirCursor > 0 && dirCursor < 90)
-				{
-					horspeed -= shotJumpStrength / 16;
-					verspeed -= shotJumpStrength / 16;
-				}
-				if (dirCursor < 180 && dirCursor > 90)
-				{
-					horspeed += shotJumpStrength / 16;
-					verspeed -= shotJumpStrength / 16;
-				}
-				if (dirCursor > 180 && dirCursor < 270)
-				{
-					horspeed += shotJumpStrength / 16;
-					verspeed -= shotJumpStrength / 16;
-				}
-				if (dirCursor < 360 && dirCursor > 270)
-				{
-					horspeed -= shotJumpStrength / 16;
-					verspeed -= shotJumpStrength / 16;
-				}
+				horspeed -= shotJumpStrength / 16;
+				verspeed -= shotJumpStrength / 16;
 			}
-			global.pistolAmmo--;
-			global.pistolCooldown = global.pistolCooldownSave;
-			shotZoom = true;
-			player_obj.startShotCooldown = true;
+			if (dirCursor < 180 && dirCursor > 90)
+			{
+				horspeed += shotJumpStrength / 16;
+				verspeed -= shotJumpStrength / 16;
+			}
+			if (dirCursor > 180 && dirCursor < 270)
+			{
+				horspeed += shotJumpStrength / 16;
+				verspeed -= shotJumpStrength / 16;
+			}
+			if (dirCursor < 360 && dirCursor > 270)
+			{
+				horspeed -= shotJumpStrength / 16;
+				verspeed -= shotJumpStrength / 16;
+			}
 		}
+		global.pistolCooldown = global.pistolCooldownSave;
+		shotZoom = true;
+		player_obj.startShotCooldown = true;
 	}
 
 	if (argument0 == "dualBarettas")
