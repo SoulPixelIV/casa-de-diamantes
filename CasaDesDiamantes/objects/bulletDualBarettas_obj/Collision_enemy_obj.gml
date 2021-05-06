@@ -1,6 +1,7 @@
 var enemyTarget = instance_place(x, y, enemy_obj);
 if (!dealtDamage && instance_exists(enemyTarget))
 {
+	enemyTarget.lastBullet = bulletDualBarettas_obj;
 	enemyTarget.damageTint = true;
 	enemyTarget.hp -= 6;
 	enemyTarget.headshot = false;

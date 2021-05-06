@@ -3,6 +3,7 @@ if (instance_exists(enemyTarget))
 {
 	if (!dealtDamage)
 	{
+		enemyTarget.lastBullet = bulletShotgun_obj;
 		enemyTarget.damageTint = true;
 		enemyTarget.hp -= 5;
 		enemyTarget.headshot = false;

@@ -18,6 +18,8 @@ checkedWaypoint = true;
 usedLever = false;
 useDelayTimer = 200;
 
+lastBullet = bulletPistol_obj;
+ammoSpawnCount = 2;
 attackInProg1 = false;
 startFire = false;
 attackInProg2 = false;

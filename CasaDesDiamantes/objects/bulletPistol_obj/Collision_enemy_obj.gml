@@ -1,6 +1,7 @@
 var enemyTarget = instance_place(x, y, enemy_obj);
 if (!dealtDamage && instance_exists(enemyTarget))
 {
+	enemyTarget.lastBullet = bulletPistol_obj;
 	enemyTarget.damageTint = true;
 	enemyTarget.hp -= 8;
 	enemyTarget.headshot = false;

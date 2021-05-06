@@ -12,6 +12,8 @@ moneyDropMax = 13;
 knockback = 0;
 randAttack = 1;
 
+lastBullet = bulletPistol_obj;
+ammoSpawnCount = 7;
 animationSpeed = 0.5;
 bucketRemoved = false;
 delay = false;

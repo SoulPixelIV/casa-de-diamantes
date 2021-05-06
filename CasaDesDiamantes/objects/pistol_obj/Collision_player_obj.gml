@@ -1,16 +1,19 @@
 /// @description Pickup
 
-if (global.pistolMag < 90 || global.unlockedWeapon[0] = false)
+if (global.pistolAmmo < global.pistolAmmoMax || global.unlockedWeapon[1] = false)
 {
-	if (global.unlockedWeapon[0] == false)
+	if (global.unlockedWeapon[1] == false)
 	{
 		pickWeapon_scr(0);
 	}
-	if (global.pistolMag < 90)
+	if (global.pistolAmmo <= global.pistolAmmoMax - 6)
 	{
-		global.pistolMag += 18;
+	    global.pistolAmmo += 6;
+	}
+	else if (global.pistolAmmo > global.pistolAmmoMax - 6)
+	{
+		global.pistolAmmo = global.pistolAmmoMax;
 	}
 	audio_play_sound(pickupSingle_snd, 1, false);
-	reload_scr();
     instance_destroy();
 }

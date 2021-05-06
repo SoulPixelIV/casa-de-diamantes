@@ -65,11 +65,27 @@ if (hp <= 0)
 	{
 		if (player_obj.hp < 30)
 		{
-			var randDrop = choose(1,1,1,1,1,1,1,1,1,12)
+			var randDrop = choose(1,1,1,1,1,1,1,1,1,2)
 			if (randDrop == 2)
 			{
 				instance_create_layer(x, y - 16, "Instances", healthpackPickup_obj);
 			}
+		}
+	}
+	
+	//Drop Ammo
+	if (lastBullet == bulletDualBarettas_obj)
+	{
+		repeat (ceil(ammoSpawnCount / 2))
+		{
+			instance_create_layer(x, y, "Instances", ammoShotgunSmall_obj);
+		}
+	}
+	if (lastBullet == bulletShotgun_obj)
+	{
+		repeat (ammoSpawnCount)
+		{
+			instance_create_layer(x, y, "Instances", ammoPistolSmall_obj);
 		}
 	}
 

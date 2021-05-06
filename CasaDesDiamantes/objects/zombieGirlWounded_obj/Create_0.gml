@@ -15,6 +15,8 @@ knockback = 0;
 playerSightMax = 128;
 playerSightMin = 32;
 
+lastBullet = bulletPistol_obj;
+ammoSpawnCount = 3;
 animationSpeed = 0.5;
 savePosX = x;
 savePosY = y;

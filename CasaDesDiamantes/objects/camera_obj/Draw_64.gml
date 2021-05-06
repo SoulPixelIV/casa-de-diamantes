@@ -229,6 +229,10 @@ if (!noHUD)
 	}
 
 	//Ammo
+	draw_set_color(c_white);
+	draw_text(26, 10, "Pistol Ammo: " + string(global.pistolAmmo) + " / " + string(global.pistolAmmoMax));
+	draw_text(26, 20, "Shotgun Ammo: " + string(global.shotgunAmmo) + " / " + string(global.shotgunAmmoMax));
+	/*
 	if (global.currentWeapon == gameManager_obj.pickedWeapon.pistol || global.currentWeapon == gameManager_obj.pickedWeapon.dualBarettas)
 	{
 		for (i = 0; i < global.pistolMag / 18; i++)
@@ -257,6 +261,7 @@ if (!noHUD)
 			}
 		}
 	}
+	*/
 }
 
 //#####LAYER 2#####

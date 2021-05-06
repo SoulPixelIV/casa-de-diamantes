@@ -10,7 +10,7 @@ global.multiplierTimer = 300;
 multiplierRun = false;
 
 global.pistolAmmo = 0;
-global.pistolMag = 0;
+global.pistolAmmoMax = 16;
 global.pistolCooldown = 3;
 global.pistolCooldownSave = global.pistolCooldown;
 global.pistolReload = 300;
@@ -22,7 +22,7 @@ global.dualBarettasReload = 500;
 global.dualBarettasReloadSave = global.dualBarettasReload;
 
 global.shotgunAmmo = 0;
-global.shotgunMag = 0;
+global.shotgunAmmoMax = 6;
 global.shotgunCooldown = 14;
 global.shotgunCooldownSave = global.shotgunCooldown;
 global.shotgunReload = 750;

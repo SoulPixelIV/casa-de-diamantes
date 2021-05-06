@@ -12,6 +12,8 @@ moneyDropMax = 4;
 damage = 23;
 knockback = 0;
 
+lastBullet = bulletPistol_obj;
+ammoSpawnCount = 4;
 animationSpeed = 0.5;
 savePosX = x;
 savePosY = y;

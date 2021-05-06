@@ -1,5 +1,7 @@
 /// @description Vars
 
+lastBullet = bulletPistol_obj;
+ammoSpawnCount = 4;
 horspeed = 0;
 verspeed = 0;
 colliding = true;

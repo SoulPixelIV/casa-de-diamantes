@@ -737,6 +737,7 @@ with (gameManager_obj)
 }	
 
 //Reload
+/*
 if (key_reload && !isZombie)
 {
 	if ((global.currentWeapon == pickedWeapon.pistol && global.pistolMag != 0) || (global.currentWeapon == pickedWeapon.dualBarettas && global.pistolMag != 0) || (global.currentWeapon == pickedWeapon.shotgun && global.shotgunMag != 0))
@@ -769,6 +770,7 @@ if (global.pistolReload < 0 || global.dualBarettasReload < 0 || global.shotgunRe
 {
 	reload_scr();
 }
+*/
 
 //Weapon Switching
 if (!isZombie && !reloading)
