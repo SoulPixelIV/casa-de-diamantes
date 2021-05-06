@@ -1,4 +1,5 @@
 damage = 48;
+damageToEnemies = false;
 knockback = 3;
 dealtDamage = false;
 animationSpeed = 1;
