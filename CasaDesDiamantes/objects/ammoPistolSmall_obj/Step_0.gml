@@ -3,6 +3,12 @@ y += verspeed * global.dt;
 
 image_angle += global.dt / 10;
 
+despawnTimer -= global.dt;
+if (despawnTimer < 0)
+{
+	instance_destroy();
+}
+
 //Gravity
 if (followTimer > 0)
 {
