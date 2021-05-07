@@ -16,7 +16,7 @@ playerSightMax = 128;
 playerSightMin = 32;
 
 lastBullet = bulletPistol_obj;
-ammoSpawnCount = 3;
+ammoSpawnCount = 8;
 animationSpeed = 0.5;
 savePosX = x;
 savePosY = y;
@@ -62,3 +62,6 @@ checkPlayerTimer = 50;
 checkPlayerTimerSave = checkPlayerTimer;
 checkPlayerTimer = 0;
 gravityStrength = 0;
+
+spawnDelay = 54;
+alarm[0] = spawnDelay;

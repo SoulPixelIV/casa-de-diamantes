@@ -179,19 +179,14 @@ if (hp < 0)
 	}
 	
 	//Drop Ammo
-	if (lastBullet == bulletDualBarettas_obj)
+	repeat (ammoSpawnCount)
 	{
-		repeat (ceil(ammoSpawnCount / 3))
-		{
-			instance_create_layer(x, y, "Instances", ammoShotgunSmall_obj);
-		}
+		instance_create_layer(x, y, "Instances", ammoPistolSmall_obj);
 	}
-	if (lastBullet == bulletShotgun_obj)
+	repeat (ammoSpawnCount / 4)
 	{
-		repeat (ammoSpawnCount)
-		{
-			instance_create_layer(x, y, "Instances", ammoPistolSmall_obj);
-		}
+		instance_create_layer(x, y, "Instances", healthpackDrop_obj);
+		instance_create_layer(x, y, "Instances", ammoShotgunSmall_obj);
 	}
 
 	//Drop Money
