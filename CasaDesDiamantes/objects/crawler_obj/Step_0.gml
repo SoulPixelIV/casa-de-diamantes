@@ -216,14 +216,14 @@ if (hp < 0)
 			{
 				repeat (2)
 				{
-					instance_create_layer(x, y - 16, "Instances", healthpackPickup_obj);
+					instance_create_layer(x, y - 16, "Instances", healthSmall_obj);
 				}
 			}
 			else
 			{
 				repeat (4)
 				{
-					instance_create_layer(x, y - 16, "Instances", healthpackPickup_obj);
+					instance_create_layer(x, y - 16, "Instances", healthSmall_obj);
 				}
 			}
 		}
