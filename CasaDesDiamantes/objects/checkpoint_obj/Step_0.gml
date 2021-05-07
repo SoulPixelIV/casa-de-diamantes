@@ -16,7 +16,7 @@ if (distance_to_object(player_obj) < 32)
 //Drop Reward
 if (active)
 {	
-	item = choose(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,3,3,3,3,3,3,4,4,4,5);
+	item = choose(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,3,3,3,3,3,3,5);
 	
 	if (item == 1 || item == 5)
 	{
@@ -63,10 +63,6 @@ if (active)
 		{
 			instance_create_layer(x, y - 64, "Instances", healthpackDrop_obj);
 		}
-	}
-	if (item == 4)
-	{
-		instance_create_layer(x, y - 64, "Instances", syringeDrop_obj);
 	}
 	
 	player_obj.plagueTransformation = false;

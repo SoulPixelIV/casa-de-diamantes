@@ -126,10 +126,19 @@ if (hp <= 0)
 	{
 		if (player_obj.hp < 30)
 		{
-			var randDrop = choose(1,1,1,1,1,1,1,1,1,2)
-			if (randDrop == 2)
+			if (player_obj.hp > 15)
 			{
-				instance_create_layer(x, y - 16, "Instances", healthpackPickup_obj);
+				repeat (2)
+				{
+					instance_create_layer(x, y - 16, "Instances", healthpackPickup_obj);
+				}
+			}
+			else
+			{
+				repeat (4)
+				{
+					instance_create_layer(x, y - 16, "Instances", healthpackPickup_obj);
+				}
 			}
 		}
 	}

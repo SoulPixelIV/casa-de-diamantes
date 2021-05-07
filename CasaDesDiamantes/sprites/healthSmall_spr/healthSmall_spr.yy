@@ -10,12 +10,12 @@
   "bbox_left": 0,
   "bbox_right": 6,
   "bbox_top": 0,
-  "bbox_bottom": 7,
+  "bbox_bottom": 6,
   "HTile": false,
   "VTile": false,
   "For3D": false,
   "width": 7,
-  "height": 8,
+  "height": 7,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"389df37c-9222-4573-8ee6-d90ef8ba2995","path":"sprites/ammoPistolSmall_spr/ammoPistolSmall_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"389df37c-9222-4573-8ee6-d90ef8ba2995","path":"sprites/ammoPistolSmall_spr/ammoPistolSmall_spr.yy",},"LayerId":{"name":"3ba8c449-c434-468e-84b0-7b5b31f0253f","path":"sprites/ammoPistolSmall_spr/ammoPistolSmall_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"ammoPistolSmall_spr","path":"sprites/ammoPistolSmall_spr/ammoPistolSmall_spr.yy",},"resourceVersion":"1.0","name":"389df37c-9222-4573-8ee6-d90ef8ba2995","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"389df37c-9222-4573-8ee6-d90ef8ba2995","path":"sprites/healthSmall_spr/healthSmall_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"389df37c-9222-4573-8ee6-d90ef8ba2995","path":"sprites/healthSmall_spr/healthSmall_spr.yy",},"LayerId":{"name":"3ba8c449-c434-468e-84b0-7b5b31f0253f","path":"sprites/healthSmall_spr/healthSmall_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"healthSmall_spr","path":"sprites/healthSmall_spr/healthSmall_spr.yy",},"resourceVersion":"1.0","name":"389df37c-9222-4573-8ee6-d90ef8ba2995","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"ammoPistolSmall_spr","path":"sprites/ammoPistolSmall_spr/ammoPistolSmall_spr.yy",},
+    "spriteId": {"name":"healthSmall_spr","path":"sprites/healthSmall_spr/healthSmall_spr.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 6.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"bcf750b4-e8e8-4171-b454-6bc79f923b8e","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"389df37c-9222-4573-8ee6-d90ef8ba2995","path":"sprites/ammoPistolSmall_spr/ammoPistolSmall_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"ec0a31d0-da0c-4cf9-8fed-1bebb72c07e6","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"389df37c-9222-4573-8ee6-d90ef8ba2995","path":"sprites/healthSmall_spr/healthSmall_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -55,12 +55,12 @@
     "backdropXOffset": 0.0,
     "backdropYOffset": 0.0,
     "xorigin": 3,
-    "yorigin": 4,
+    "yorigin": 3,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"ammoPistolSmall_spr","path":"sprites/ammoPistolSmall_spr/ammoPistolSmall_spr.yy",},
+    "parent": {"name":"healthSmall_spr","path":"sprites/healthSmall_spr/healthSmall_spr.yy",},
     "resourceVersion": "1.3",
-    "name": "ammoPistolSmall_spr",
+    "name": "healthSmall_spr",
     "tags": [],
     "resourceType": "GMSequence",
   },
@@ -72,7 +72,7 @@
     "path": "folders/Sprites.yy",
   },
   "resourceVersion": "1.0",
-  "name": "ammoPistolSmall_spr",
+  "name": "healthSmall_spr",
   "tags": [],
   "resourceType": "GMSprite",
 }
