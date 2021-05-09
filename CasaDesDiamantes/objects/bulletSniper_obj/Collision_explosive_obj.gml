@@ -1,7 +1,7 @@
 var explosiveTarget = instance_place(x, y, explosive_obj);
 if (!dealtDamage)
 {
-	explosiveTarget.hp -= 30;
+	explosiveTarget.hp -= 30 * (damageBonus / 100);
 	fire = instance_create_layer(other.x, y, "Instances", fireLong_obj);
 	fire.image_angle = image_angle;
 	fire.image_xscale = 0.75;

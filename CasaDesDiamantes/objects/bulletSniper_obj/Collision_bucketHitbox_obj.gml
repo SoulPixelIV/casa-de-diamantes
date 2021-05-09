@@ -7,7 +7,7 @@ if (!dealtDamage)
 {
 	if (instance_exists(enemyTarget))
 	{
-		enemyTarget.hpBucket -= 30;
+		enemyTarget.hpBucket -= 30 * (damageBonus / 100);
 	}
 	dealtDamage = true;
 	audio_play_sound(bucketHit_snd, 1, false);

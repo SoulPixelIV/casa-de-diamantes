@@ -144,7 +144,7 @@ function shooting_scr(argument0) {
 		instance_create_layer(playerBulletLine_obj.x, playerBulletLine_obj.y, "Instances", bulletSniper_obj);
 		instance_create_layer(shotLightx, shotLighty, "ForegroundObjects", shotLightShotgun_obj);
 		instance_create_layer(shotLightx, shotLighty, "ForegroundObjects", smokecloud_obj);
-		screenshake(60, 4, 0.5, id);
+		screenshake(50, 12, 0.6, id);
 		
 		if (!huggingWall)
 		{

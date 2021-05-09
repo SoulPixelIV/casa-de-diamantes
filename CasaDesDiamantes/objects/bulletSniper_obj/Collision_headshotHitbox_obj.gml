@@ -13,7 +13,7 @@ if (hitbox != noone)
 		if (enemyTarget != noone)
 		{
 			enemyTarget.damageTintHeadshot = true;
-			enemyTarget.hp -= 50;
+			enemyTarget.hp -= 50 * (damageBonus / 100);
 			enemyTarget.headshot = true;
 		}
 		instance_create_layer(x, y, "Instances", bloodSpread_obj);

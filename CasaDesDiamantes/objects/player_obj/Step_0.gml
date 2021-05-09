@@ -21,6 +21,8 @@ key_up_pressed = keyboard_check_pressed(ord("W")) || gamepad_button_check_presse
 key_down_pressed = keyboard_check_pressed(ord("S")) || gamepad_button_check_pressed(4, gp_padd) || gamepad_button_check_pressed(0, gp_padd);
 
 key_shoot = mouse_check_button_pressed(mb_left) || gamepad_button_check_pressed(4, gp_shoulderrb) || gamepad_button_check_pressed(0, gp_shoulderrb);
+key_shoot_hold = mouse_check_button(mb_left) || gamepad_button_check(4, gp_shoulderrb) || gamepad_button_check(0, gp_shoulderrb);
+key_shoot_release = mouse_check_button_released(mb_left) || gamepad_button_check_released(4, gp_shoulderrb) || gamepad_button_check_released(0, gp_shoulderrb);
 key_reload = mouse_check_button_pressed(mb_right) || gamepad_button_check_pressed(4, gp_face2) || gamepad_button_check_pressed(0, gp_face2);
 key_jump = keyboard_check_pressed(vk_space) || gamepad_button_check_pressed(4, gp_face1) || gamepad_button_check_pressed(0, gp_face1);
 key_jump_hold = keyboard_check(vk_space) || gamepad_button_check(4, gp_face1) || gamepad_button_check(0, gp_face1);
@@ -687,11 +689,29 @@ if (!isZombie)
 			with (player_obj)
 			{
 				startShotCooldown = false;
-				if (key_shoot && !reloading && movement)
+				if (key_shoot_hold && !reloading && movement)
 				{
 					if (!onLadder || onLadder && verspeed == 0)
 					{
+						slowmo = true;
+						if (sniperDamageValue < sniperDamageValueMax)
+						{
+							sniperDamageValue += global.dt * 3;
+						}
+						else
+						{
+							shooting_scr("sniper");
+							slowmo = false;
+							break;
+						}
+					}
+				}
+				if (key_shoot_release)
+				{
+					if (sniperDamageValue > 50)
+					{
 						shooting_scr("sniper");
+						slowmo = false;
 					}
 				}
 			}
@@ -980,23 +1000,7 @@ if (plagueTransformation)
 
 //Slowmotion
 if (!deathSlowmo)
-{
-	if (!player_obj.grounded && jumpType == 2 && !huggingWall && !wallJumping && wallJumps > 0)
-	{
-		if (key_jump_hold)
-		{
-			if (slowmoTimer > 0)
-			{
-				//slowmo = true;
-				//slowmoTimer -= global.dt * 3;
-			}
-		}
-		else
-		{
-			slowmo = false;
-		}
-	}
-	
+{	
 	if (slowmo)
 	{
 		global.timeScale = 0.2;

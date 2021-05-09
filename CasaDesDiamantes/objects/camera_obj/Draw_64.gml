@@ -72,6 +72,14 @@ if (player_obj.plagueTransformation)
     draw_set_alpha(1);
 }
 
+if (player_obj.slowmo)
+{
+	shader_reset();
+    draw_set_alpha(0.3);
+    draw_ellipse_colour(-200, -200, xScreenSize + 200, yScreenSize + 200, c_black , c_white, false);
+    draw_set_alpha(1);
+}
+
 //#####LAYER 1#####
 	
 if (drawBlackborders)

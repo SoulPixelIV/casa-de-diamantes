@@ -1,5 +1,11 @@
 /// @description Variables
 
+damageBonus = 0;
+if (instance_exists(player_obj))
+{
+	damageBonus = player_obj.sniperDamageValue;
+	player_obj.sniperDamageValue = 0;
+}
 movSpeed = 7;
 penetration = 5;
 penetrationTime = 3;

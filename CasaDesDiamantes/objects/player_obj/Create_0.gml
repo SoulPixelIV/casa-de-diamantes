@@ -43,6 +43,8 @@ shotZoomTimer = 8.75;
 walljumpDustTimer = 12;
 damageFlickerTimer = 17;
 
+sniperDamageValue = 0;
+sniperDamageValueMax = 500;
 colliding = true;
 reloading = false;
 infection = 0;
