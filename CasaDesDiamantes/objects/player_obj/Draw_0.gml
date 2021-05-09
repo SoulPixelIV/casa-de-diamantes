@@ -4,7 +4,8 @@ animated = 0;
 changePos = 1;
 pistolSprite = playerPistol_spr;
 dualBarettasSprite = playerDualBarettas_spr;
-shotgunSprite = playerShotgun_spr
+shotgunSprite = playerShotgun_spr;
+sniperSprite = playerSniper_spr;
 
 //Controller Line
 if (inputMethod == 1)
@@ -39,13 +40,15 @@ if (spin && sprite_index != playerWall_spr && !flip && !onLadder)
 	pistolSprite = playerPistolJumpSpin_spr;
 	dualBarettasSprite = playerDualBarettasJumpSpin_spr;
 	shotgunSprite = playerShotgunJumpSpin_spr
+	sniperSprite = playerSniperJumpSpin_spr
 }
 else
 {
-	animated = 0;
+	animated = -1;
 	pistolSprite = playerPistol_spr;
 	dualBarettasSprite = playerDualBarettas_spr;
 	shotgunSprite = playerShotgun_spr
+	sniperSprite = playerSniper_spr
 }
 	
 if (!isZombie)
@@ -73,6 +76,11 @@ if (!isZombie)
 		{
 			draw_self();
 			draw_sprite_ext(shotgunSprite, animated, x + ((4 + spinWeaponPos) * currDir) * changePos, y - 4.3, 1, -currDir, dirCursor, -1, 1);
+		}
+		if (global.currentWeapon == gameManager_obj.pickedWeapon.sniper)
+		{
+			draw_self();
+			draw_sprite_ext(sniperSprite, animated, x + ((4 + spinWeaponPos) * currDir) * changePos, y - 4.3, 1, -currDir, dirCursor, -1, 1);
 		}
 	}
 	else

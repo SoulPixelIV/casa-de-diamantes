@@ -28,11 +28,19 @@ global.shotgunCooldownSave = global.shotgunCooldown;
 global.shotgunReload = 750;
 global.shotgunReloadSave = global.shotgunReload;
 
+global.sniperAmmo = 0;
+global.sniperAmmoMax = 8;
+global.sniperCooldown = 25;
+global.sniperCooldownSave = global.sniperCooldown;
+global.sniperReload = 600;
+global.sniperReloadSave = global.sniperReload;
+
 enum pickedWeapon {
 	unarmed,
 	pistol,
 	dualBarettas,
-	shotgun
+	shotgun,
+	sniper
 	}
 	
 global.currentWeapon = pickedWeapon.unarmed;
@@ -40,3 +48,4 @@ global.currentWeapon = pickedWeapon.unarmed;
 global.unlockedWeapon[0] = false;
 global.unlockedWeapon[1] = false;
 global.unlockedWeapon[2] = false;
+global.unlockedWeapon[3] = false;

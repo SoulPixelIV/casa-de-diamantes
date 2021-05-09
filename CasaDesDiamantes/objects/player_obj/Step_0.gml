@@ -678,6 +678,25 @@ if (!isZombie)
 			}
 		}
 	}
+	
+	//Sniper
+	with (gameManager_obj)
+	{
+		if (global.currentWeapon == pickedWeapon.sniper && global.sniperCooldown <= 0)
+		{
+			with (player_obj)
+			{
+				startShotCooldown = false;
+				if (key_shoot && !reloading && movement)
+				{
+					if (!onLadder || onLadder && verspeed == 0)
+					{
+						shooting_scr("sniper");
+					}
+				}
+			}
+		}
+	}
 }
 
 //ShotZoom
@@ -718,6 +737,10 @@ if (startShotCooldown)
 		{
 			global.shotgunCooldown -= 0.1 * global.dt;
 		}	
+		if (global.currentWeapon == pickedWeapon.sniper)
+		{
+			global.sniperCooldown -= 0.1 * global.dt;
+		}
 	}	
 }
 with (gameManager_obj)
@@ -734,6 +757,10 @@ with (gameManager_obj)
 	{
 		player_obj.startShotCooldown = true;
 	}	
+	if (global.currentWeapon == pickedWeapon.sniper && global.sniperCooldown > 0)
+	{
+		player_obj.startShotCooldown = true;
+	}
 }	
 
 //Reload
@@ -777,13 +804,17 @@ if (!isZombie && !reloading)
 {
 	if (global.pistolAmmo > 0 || global.shotgunAmmo > 0)
 	{
-		if (keyboard_check_pressed(ord("1")) && global.unlockedWeapon[0])
+		if (keyboard_check_pressed(ord("1")) && global.unlockedWeapon[1])
 		{
 			pickWeapon_scr(1);
 		}
-		if (keyboard_check_pressed(ord("2")) && global.unlockedWeapon[1])
+		if (keyboard_check_pressed(ord("2")) && global.unlockedWeapon[2])
 		{
 			pickWeapon_scr(2);
+		}
+		if (keyboard_check_pressed(ord("3")) && global.unlockedWeapon[3])
+		{
+			pickWeapon_scr(3);
 		}
 	}
 }
@@ -792,11 +823,11 @@ if (global.pistolAmmo == 0 && global.shotgunAmmo == 0 && global.currentWeapon !=
 {
 	pickWeapon_scr(0);
 }
-if ((global.pistolAmmo > 0 || global.shotgunAmmo > 0) && global.currentWeapon == pickedWeapon.pistol)
+if ((global.pistolAmmo > 0 || global.shotgunAmmo > 0 || global.sniperAmmo > 0) && global.currentWeapon == pickedWeapon.pistol)
 {
 	if (global.currentWeapon == pickedWeapon.pistol)
 	{
-		gun = choose(1, 2);
+		gun = choose(1, 2, 3);
 		pickWeapon_scr(gun);
 	}
 }

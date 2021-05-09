@@ -134,5 +134,45 @@ function shooting_scr(argument0) {
 		}
 	}
 
+	if (argument0 == "sniper")
+	{
+		var pistolShot = audio_play_sound(pistolShot_snd, 1, false); //RECORD SNIPER SOUND
+		audio_sound_pitch(pistolShot, random_range(0.9, 1.1));
+		
+		var shotLightx = x + lengthdir_x(24, dirCursor);
+		var shotLighty = y - 8 + lengthdir_y(24, dirCursor);
+		instance_create_layer(playerBulletLine_obj.x, playerBulletLine_obj.y, "Instances", bulletSniper_obj);
+		instance_create_layer(shotLightx, shotLighty, "ForegroundObjects", shotLightShotgun_obj);
+		instance_create_layer(shotLightx, shotLighty, "ForegroundObjects", smokecloud_obj);
+		screenshake(60, 4, 0.5, id);
+		
+		if (!huggingWall)
+		{
+			if (dirCursor > 0 && dirCursor < 90)
+			{
+				horspeed -= shotJumpStrength / 2.5;
+				verspeed -= shotJumpStrength / 2.5;
+			}
+			if (dirCursor < 180 && dirCursor > 90)
+			{
+				horspeed += shotJumpStrength / 2.5;
+				verspeed -= shotJumpStrength / 2.5;
+			}
+			if (dirCursor > 180 && dirCursor < 270)
+			{
+				horspeed += shotJumpStrength / 2.5;
+				verspeed -= shotJumpStrength / 2.5;
+			}
+			if (dirCursor < 360 && dirCursor > 270)
+			{
+				horspeed -= shotJumpStrength / 2.5;
+				verspeed -= shotJumpStrength / 2.5;
+			}
+		}
+		global.sniperCooldown = global.sniperCooldownSave;
+		shotZoom = true;
+		player_obj.startShotCooldown = true;
+	}
+
 
 }

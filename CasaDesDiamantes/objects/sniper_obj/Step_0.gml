@@ -1,0 +1,1 @@
+lightrayRotation += global.dt / 3;

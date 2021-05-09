@@ -67,7 +67,7 @@
     "backdropXOffset": 0.0,
     "backdropYOffset": 0.0,
     "xorigin": 17,
-    "yorigin": 4,
+    "yorigin": 3,
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"playerShotgunJumpSpin_spr","path":"sprites/playerShotgunJumpSpin_spr/playerShotgunJumpSpin_spr.yy",},

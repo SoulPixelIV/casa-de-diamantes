@@ -16,6 +16,11 @@ function pickWeapon_scr(argument0) {
 			//global.shotgunAmmo += 3 - global.shotgunAmmo;
 			global.unlockedWeapon[2] = true;
 			break;
+		case 3:
+			global.currentWeapon = gameManager_obj.pickedWeapon.sniper;
+			//global.shotgunAmmo += 3 - global.shotgunAmmo;
+			global.unlockedWeapon[3] = true;
+			break;
 	}
 	player_obj.unarmed = false;
 	audio_play_sound(pickup_snd, 1, false);
