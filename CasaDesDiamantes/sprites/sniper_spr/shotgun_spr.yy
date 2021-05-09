@@ -80,7 +80,7 @@
     "eventStubScript": null,
     "parent": {"name":"shotgun_spr","path":"sprites/shotgun_spr/shotgun_spr.yy",},
     "resourceVersion": "1.3",
-    "name": "shotgun_spr",
+    "name": "",
     "tags": [],
     "resourceType": "GMSequence",
   },
