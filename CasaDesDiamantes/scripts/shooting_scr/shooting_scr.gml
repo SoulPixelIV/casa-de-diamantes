@@ -136,8 +136,8 @@ function shooting_scr(argument0) {
 
 	if (argument0 == "sniper")
 	{
-		var pistolShot = audio_play_sound(pistolShot_snd, 1, false); //RECORD SNIPER SOUND
-		audio_sound_pitch(pistolShot, random_range(0.9, 1.1));
+		var pistolShot = audio_play_sound(sniperShot_snd, 1, false);
+		audio_sound_pitch(pistolShot, 2 - ((player_obj.sniperDamageValue / 100) / 5));
 		
 		var shotLightx = x + lengthdir_x(24, dirCursor);
 		var shotLighty = y - 8 + lengthdir_y(24, dirCursor);

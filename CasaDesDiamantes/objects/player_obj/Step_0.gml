@@ -270,7 +270,7 @@ if (movement && !isZombie)
 	}
 	if (huggingWall)
 	{
-		slowmo = false;
+		//slowmo = false;
 		//Check if there is space to cancel dash
 		if (place_free(x, y + 32))
 		{
@@ -694,14 +694,20 @@ if (!isZombie)
 					if (!onLadder || onLadder && verspeed == 0)
 					{
 						slowmo = true;
+						if (!audio_is_playing(sniperShotLoad_snd))
+						{
+							var sniperLoad = audio_play_sound(sniperShotLoad_snd, 1, false);
+							audio_sound_pitch(sniperLoad, 0.5 + (sniperDamageValue / 100) / 5);
+						}
 						if (sniperDamageValue < sniperDamageValueMax)
 						{
-							sniperDamageValue += global.dt * 3;
+							sniperDamageValue += global.dt * 4;
 						}
 						else
 						{
 							shooting_scr("sniper");
 							slowmo = false;
+							audio_stop_sound(sniperShotLoad_snd);
 							break;
 						}
 					}
@@ -711,6 +717,7 @@ if (!isZombie)
 					if (sniperDamageValue > 50)
 					{
 						shooting_scr("sniper");
+						audio_stop_sound(sniperShotLoad_snd);
 						slowmo = false;
 					}
 				}

@@ -10,14 +10,14 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "pistolShot_snd",
-  "duration": 0.415635,
+  "soundFile": "sniperShotLoad_snd.mp3",
+  "duration": 0.135612,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
   },
   "resourceVersion": "1.0",
-  "name": "pistolShot_snd",
+  "name": "sniperShotLoad_snd",
   "tags": [],
   "resourceType": "GMSound",
 }

@@ -76,7 +76,7 @@ if (player_obj.slowmo)
 {
 	shader_reset();
     draw_set_alpha(0.3);
-    draw_ellipse_colour(-200, -200, xScreenSize + 200, yScreenSize + 200, c_black , c_white, false);
+    draw_ellipse_colour(-200, -200, xScreenSize + 200, yScreenSize + 200, c_black , make_color_rgb(255,215,0), false);
     draw_set_alpha(1);
 }
 
@@ -487,3 +487,9 @@ draw_set_alpha(1);
 //black borders
 draw_sprite(blackborder_spr, 0, xScreenSize / 2, blackbordersPos);
 draw_sprite(blackborder_spr, 0, xScreenSize / 2, yScreenSize + 42 - blackbordersPos);
+
+if (player_obj.sniperDamageValue > 0)
+{
+	draw_sprite_ext(blackborder_spr, 0, xScreenSize / 2, -128, 2, 3, 110, -1, (player_obj.sniperDamageValue / 100) / 5);
+	draw_sprite_ext(blackborder_spr, 0, xScreenSize / 2, yScreenSize + 128, 2, -3, 110, -1, (player_obj.sniperDamageValue / 100) / 5);
+}

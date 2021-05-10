@@ -1,6 +1,6 @@
 {
   "compression": 0,
-  "volume": 0.3,
+  "volume": 0.8,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -10,14 +10,14 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "pistolShot_snd",
-  "duration": 0.415635,
+  "soundFile": "sniperShot_snd.mp3",
+  "duration": 1.781327,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
   },
   "resourceVersion": "1.0",
-  "name": "pistolShot_snd",
+  "name": "sniperShot_snd",
   "tags": [],
   "resourceType": "GMSound",
 }
