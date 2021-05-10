@@ -490,6 +490,6 @@ draw_sprite(blackborder_spr, 0, xScreenSize / 2, yScreenSize + 42 - blackborders
 
 if (player_obj.sniperDamageValue > 0)
 {
-	draw_sprite_ext(blackborder_spr, 0, xScreenSize / 2, -128, 2, 3, 110, -1, (player_obj.sniperDamageValue / 100) / 5);
-	draw_sprite_ext(blackborder_spr, 0, xScreenSize / 2, yScreenSize + 128, 2, -3, 110, -1, (player_obj.sniperDamageValue / 100) / 5);
+	draw_sprite_ext(blackborder_spr, 0, xScreenSize / 2, 42, 1, 1, 0, -1, (player_obj.sniperDamageValue / 100) / 5);
+	draw_sprite_ext(blackborder_spr, 0, xScreenSize / 2, yScreenSize, 1, 1, 0, -1, (player_obj.sniperDamageValue / 100) / 5);
 }

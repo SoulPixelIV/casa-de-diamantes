@@ -714,7 +714,7 @@ if (!isZombie)
 				}
 				if (key_shoot_release)
 				{
-					if (sniperDamageValue > 50)
+					if (sniperDamageValue > 1)
 					{
 						shooting_scr("sniper");
 						audio_stop_sound(sniperShotLoad_snd);
