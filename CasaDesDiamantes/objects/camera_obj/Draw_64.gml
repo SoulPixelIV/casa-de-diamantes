@@ -238,8 +238,20 @@ if (!noHUD)
 
 	//Ammo
 	draw_set_color(c_white);
-	draw_text(26, 10, "Pistol Ammo: " + string(global.pistolAmmo) + " / " + string(global.pistolAmmoMax));
-	draw_text(26, 20, "Shotgun Ammo: " + string(global.shotgunAmmo) + " / " + string(global.shotgunAmmoMax));
+	if (global.currentWeapon == pickedWeapon.dualBarettas)
+	{
+		draw_sprite(ammoCircle_spr, 0, xScreenSize - edgeMarginHor, 32);
+	}
+	if (global.currentWeapon == pickedWeapon.shotgun)
+	{
+		draw_sprite(ammoCircle_spr, 1, xScreenSize - edgeMarginHor, 32);
+	}
+	
+	var field1 = draw_sprite(ammoCircleDualBarettaField_spr, global.pistolAmmo - 1, (xScreenSize - edgeMarginHor) - 21, 32 + 22);
+	var field2 = draw_sprite_ext(ammoCircleShotgunField_spr, global.shotgunAmmo - 1, (xScreenSize - edgeMarginHor) - 21, 32 + 21, -1, -1, 0, -1, 1);
+	
+	var field3 = draw_sprite(ammoCircleRedField_spr, 0, (xScreenSize - edgeMarginHor) - 21, 32 + 22);
+	var field4 = draw_sprite_ext(ammoCircleRedField_spr, 0, (xScreenSize - edgeMarginHor) - 21, 32 + 21, -1, -1, 0, -1, 1);
 	/*
 	if (global.currentWeapon == gameManager_obj.pickedWeapon.pistol || global.currentWeapon == gameManager_obj.pickedWeapon.dualBarettas)
 	{
