@@ -1,3 +1,5 @@
+//if (live_call()) return live_result;
+
 edgeMarginVer = 11;
 edgeMarginHor = 17;
 
@@ -75,7 +77,7 @@ if (player_obj.plagueTransformation)
 if (player_obj.slowmo)
 {
 	shader_reset();
-    draw_set_alpha(0.3);
+    draw_set_alpha((player_obj.sniperDamageValue / 100) / 5);
     draw_ellipse_colour(-200, -200, xScreenSize + 200, yScreenSize + 200, c_black , make_color_rgb(255,215,0), false);
     draw_set_alpha(1);
 }
@@ -238,50 +240,49 @@ if (!noHUD)
 
 	//Ammo
 	draw_set_color(c_white);
+	var field1 = draw_sprite_ext(ammoCircleDualBarettaField_spr, global.pistolAmmo, 32, 92, -1, -1, 0, -1, 1);
+	var field2 = draw_sprite_ext(ammoCircleShotgunField_spr, global.shotgunAmmo, 32 + 43, 92 + 43, 1, 1, 0, -1, 1);
+	
+	var field3 = draw_sprite_ext(ammoCircleRedField_spr, 0, 32 + 22, 92 + 43, -1, 1,0, -1, 1);
+	var field4 = draw_sprite_ext(ammoCircleRedField_spr, 0, 32 + 21, 92, 1, -1, 0, -1, 1);
 	if (global.currentWeapon == pickedWeapon.dualBarettas)
 	{
-		draw_sprite(ammoCircle_spr, 0, xScreenSize - edgeMarginHor, 32);
+		draw_sprite(ammoCircle_spr, 0, 32, 92);
 	}
 	if (global.currentWeapon == pickedWeapon.shotgun)
 	{
-		draw_sprite(ammoCircle_spr, 1, xScreenSize - edgeMarginHor, 32);
+		draw_sprite(ammoCircle_spr, 1, 32, 92);
 	}
 	
-	var field1 = draw_sprite(ammoCircleDualBarettaField_spr, global.pistolAmmo - 1, (xScreenSize - edgeMarginHor) - 21, 32 + 22);
-	var field2 = draw_sprite_ext(ammoCircleShotgunField_spr, global.shotgunAmmo - 1, (xScreenSize - edgeMarginHor) - 21, 32 + 21, -1, -1, 0, -1, 1);
-	
-	var field3 = draw_sprite(ammoCircleRedField_spr, 0, (xScreenSize - edgeMarginHor) - 21, 32 + 22);
-	var field4 = draw_sprite_ext(ammoCircleRedField_spr, 0, (xScreenSize - edgeMarginHor) - 21, 32 + 21, -1, -1, 0, -1, 1);
-	/*
-	if (global.currentWeapon == gameManager_obj.pickedWeapon.pistol || global.currentWeapon == gameManager_obj.pickedWeapon.dualBarettas)
+	//Weapon
+	draw_set_color(make_color_rgb(255,215,0));
+	draw_set_halign(fa_center);
+	if (newWeapon)
 	{
-		for (i = 0; i < global.pistolMag / 18; i++)
+		if (global.currentWeapon == gameManager_obj.pickedWeapon.pistol)
 		{
-			if (i > 2)
-			{
-				draw_sprite_ext(magazine_spr, -1, 94, 32 + 24 * (i - 3), 1, 1, -1, -1, 1);
-			}
-			else
-			{
-				draw_sprite_ext(magazine_spr, -1, 68, 24 + 24 * i, 1, 1, -1, -1, 1);
-			}
+			draw_text(xScreenSize / 2, yScreenSize - 64, "Pistol");
+		}
+		if (global.currentWeapon == gameManager_obj.pickedWeapon.dualBarettas)
+		{
+			draw_text(xScreenSize / 2, yScreenSize - 64, "Dual Barettas");
+		}
+		if (global.currentWeapon == gameManager_obj.pickedWeapon.shotgun)
+		{
+			draw_text(xScreenSize / 2, yScreenSize - 64, "Shotgun");
+		}
+		if (global.currentWeapon == gameManager_obj.pickedWeapon.sniper)
+		{
+			draw_text(xScreenSize / 2, yScreenSize - 64, "Sniper Rifle");
 		}
 	}
-	if (global.currentWeapon == gameManager_obj.pickedWeapon.shotgun)
+	newWeaponTimer -= global.dtNoSlowmo;
+	if (newWeaponTimer < 0)
 	{
-		for (i = 0; i < global.shotgunMag / 6; i++)
-		{
-			if (i > 2)
-			{
-				draw_sprite_ext(magazine_spr, -1, 94, 32 + 24 * (i - 3), 1, 1, -1, -1, 1);
-			}
-			else
-			{
-				draw_sprite_ext(magazine_spr, -1, 68, 24 + 24 * i, 1, 1, -1, -1, 1);
-			}
-		}
+		newWeaponTimer = newWeaponTimerSave;
+		newWeapon = false;
 	}
-	*/
+	draw_set_halign(fa_left);
 }
 
 //#####LAYER 2#####

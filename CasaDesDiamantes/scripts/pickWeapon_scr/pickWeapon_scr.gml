@@ -20,5 +20,7 @@ function pickWeapon_scr(argument0) {
 	}
 	player_obj.unarmed = false;
 	player_obj.slowmo = false;
+	camera_obj.newWeapon = true;
+	camera_obj.newWeaponTimer = camera_obj.newWeaponTimerSave;
 	audio_play_sound(pickup_snd, 1, false);
 }

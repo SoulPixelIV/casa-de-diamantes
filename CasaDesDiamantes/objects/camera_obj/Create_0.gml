@@ -34,6 +34,8 @@ healthbarShrinkStart = false;
 healthbarDone = true;
 updateFPS = 40;
 currFps = fps_real;
+newWeapon = false;
+newWeaponTimer = 200;
 
 cameraSpeed = 0.1;
 ycameraSpeed = 0.02;
@@ -47,6 +49,7 @@ windowMenuOffsetSave = windowMenuOffset;
 updateFPSSave = updateFPS;
 finalDeathScreenTimerSave = finalDeathScreenTimer;
 pauseDeathTimerSave = pauseDeathTimer;
+newWeaponTimerSave = newWeaponTimer;
 
 shake = false;
 shake_time = 0;
