@@ -86,6 +86,7 @@ hitVignetteTimerSave = hitVignetteTimer;
 vignetteAlpha = 0;
 showWalljumpsLeft = false;
 checkCullingAreaTimer = 100;
+wheelRotation = 0;
 
 zombiespikeEffectBorderSave = zombiespikeEffectBorder;
 zombiespikeBorderTransparentSave = zombiespikeBorderTransparent;

@@ -52,8 +52,12 @@ if (shake)
 			shake = false;
 		}
 	}
-	shake_time -= global.dt; 
-	xTo += choose(-shake_magnitude, shake_magnitude); 
+	shake_time -= global.dt;
+	var magnitude = choose(-shake_magnitude, shake_magnitude);
+	if (xTo + magnitude > minCameraXBorder && xTo + magnitude < maxCameraXBorder)
+	{
+		xTo += choose(-shake_magnitude, shake_magnitude); 
+	}
 	//yTo += choose(-shake_magnitude, shake_magnitude); 
 
 	if (shake_time <= 0) 
