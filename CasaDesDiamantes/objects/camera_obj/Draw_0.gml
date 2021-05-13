@@ -1,6 +1,4 @@
 /// @description Player UI
-if (live_call()) return live_result;
-
 if (instance_exists(player_obj))
 {
 	//Ammo Counter
@@ -209,8 +207,6 @@ with (player_obj)
 
 
 //################################################################## GUI LAYER ######################################################################
-edgeMarginVer = 11;
-edgeMarginHor = 17;
 
 //#####LAYER 0#####
 
@@ -332,36 +328,36 @@ if (!noHUD)
 	//Healthbar
 	if (player_obj.plagueTransformation)
 	{
-		draw_sprite_ext(healthbarBorderInfection_spr, -1, (x - xScreenSize / 2) + 16, (y - yScreenSize / 2) + 16, 1, 1, 0, -1, 1);
+		draw_sprite_ext(healthbarBorderInfection_spr, -1, (x - xScreenSize / 2) + 16, (y - yScreenSize / 2) + 9, 1, 1, 0, -1, 1);
 	}
 	else if (player_obj.hp == 100)
 	{
-		draw_sprite_ext(healthbarBorderFull_spr, -1, (x - xScreenSize / 2) + 16, (y - yScreenSize / 2) + 16, 1, 1, 0, -1, 1);
+		draw_sprite_ext(healthbarBorderFull_spr, -1, (x - xScreenSize / 2) + 16, (y - yScreenSize / 2) + 9, 1, 1, 0, -1, 1);
 	}
 	else if (player_obj.hp > 20)
 	{
-		draw_sprite_ext(healthbarBorder_spr, -1, (x - xScreenSize / 2) + 16, (y - yScreenSize / 2) + 16, 1, 1, 0, -1, 1);
+		draw_sprite_ext(healthbarBorder_spr, -1, (x - xScreenSize / 2) + 16, (y - yScreenSize / 2) + 9, 1, 1, 0, -1, 1);
 	}
 	else
 	{
-		draw_sprite_ext(healthbarBorderLow_spr, -1, (x - xScreenSize / 2) + 16, (y - yScreenSize / 2) + 16, 1, 1, 0, -1, 1);
+		draw_sprite_ext(healthbarBorderLow_spr, -1, (x - xScreenSize / 2) + 16, (y - yScreenSize / 2) + 9, 1, 1, 0, -1, 1);
 	}
 	if (!player_obj.damageRecieved && healthbarDone)
 	{
-		draw_sprite_ext(healthbarTop2_spr, -1, 16 + (x - xScreenSize / 2), 19 - (player_obj.hp - 100) + (y - yScreenSize / 2), 1, 1, 0, -1, 1);
+		draw_sprite_ext(healthbarTop2_spr, -1, 18 + (x - xScreenSize / 2), 18 - (player_obj.hp - 100) + (y - yScreenSize / 2), 1, 1, 0, -1, 1);
 	}
-	draw_sprite_ext(healthbar_spr, 0, 16 + (x - xScreenSize / 2), 131 + (y - yScreenSize / 2), 1, 1 * (player_obj.hp / 100), 0, -1, 1);
+	draw_sprite_ext(healthbar_spr, 0, 18 + (x - xScreenSize / 2), 130 + (y - yScreenSize / 2), 1, 1 * (player_obj.hp / 100), 0, -1, 1);
 	if (player_obj.plagueTransformation)
 	{
-		draw_sprite_ext(healthbarTop2Infection_spr, -1, 16, 119 - player_obj.infection, 1, 1, 0, -1, 1);
-		draw_sprite_ext(healthbarInfection_spr, 0, 16, 131, 1, player_obj.infection / 100, 0, -1, 1);
+		draw_sprite_ext(healthbarTop2Infection_spr, -1, 18 + (x - xScreenSize / 2), (118 - player_obj.infection) + (y - yScreenSize / 2), 1, 1, 0, -1, 1);
+		draw_sprite_ext(healthbarInfection_spr, 0, 18 + (x - xScreenSize / 2), 130 + (y - yScreenSize / 2), 1, player_obj.infection / 100, 0, -1, 1);
 	}
 	//Damage Healthbar
 	if (player_obj.damageRecieved || healthbarShrinkStart)
 	{
 		healthbarDone = false;
-		draw_sprite_ext(healthbarTop2Damage_spr, -1, edgeMarginHor, (19 - (player_obj.hpOld - 100)) + healthbarShrinking, 1, 1, 0, -1, 1);
-		draw_sprite_ext(healthbarDamage_spr, 0, edgeMarginHor, (31 - (player_obj.hpOld - 100)) + healthbarShrinking, 1, ((player_obj.hp / 100) - (player_obj.hpOld / 100)) + (healthbarShrinking / 100), 0, -1, 1);
+		draw_sprite_ext(healthbarTop2Damage_spr, -1, 18 + (x - xScreenSize / 2), ((18 - (player_obj.hpOld - 100)) + healthbarShrinking) + (y - yScreenSize / 2), 1, 1, 0, -1, 1);
+		draw_sprite_ext(healthbarDamage_spr, 0, 18 + (x - xScreenSize / 2), (30 - (player_obj.hpOld - 100)) + healthbarShrinking + (y - yScreenSize / 2), 1, ((player_obj.hp / 100) - (player_obj.hpOld / 100)) + (healthbarShrinking / 100), 0, -1, 1);
 	}
 	if (!player_obj.damageRecieved && !healthbarDone)
 	{
@@ -388,13 +384,13 @@ if (!noHUD)
 	}
 	
 	//Chipbar
-	draw_sprite_ext(scoreBorder_spr, -1, 380, edgeMarginVer, 1, 1, 0, -1, 1);
+	draw_sprite_ext(scoreBorder_spr, -1, x + (xScreenSize / 2) - 16, 9 + y - (yScreenSize / 2), 1, 1, 0, -1, 1);
 	
 	//Items
 	//REWORK ITEMS DISPLAY IF MORE ITEMS ADDED
 	if (global.key)
 	{
-		draw_sprite_ext(key_spr, 0, 291 + 3, edgeMarginVer + 2, 0.5, 0.5, 0, -1, 1);
+		//draw_sprite_ext(key_spr, 0, 294, 16 + 2, 0.5, 0.5, 0, -1, 1);
 	}
 	
 	convMoney = string(global.money);
@@ -414,23 +410,23 @@ if (!noHUD)
 	if (scoreSpin)
 	{
 		scoreSpinTimer -= global.dt;
-		draw_sprite(scoreNumberSpin_spr, -1, 457, edgeMarginVer + 2);
-		draw_sprite(scoreNumberSpin_spr, -1, 447, edgeMarginVer + 2);
-		draw_sprite(scoreNumberSpin_spr, -1, 437, edgeMarginVer + 2);
-		draw_sprite(scoreNumberSpin_spr, -1, 427, edgeMarginVer + 2);
-		draw_sprite(scoreNumberSpin_spr, -1, 417, edgeMarginVer + 2);
-		draw_sprite(scoreNumberSpin_spr, -1, 407, edgeMarginVer + 2);
-		draw_sprite(scoreNumberSpin_spr, -1, 397, edgeMarginVer + 2);
+		draw_sprite(scoreNumberSpin_spr, -1, x + (xScreenSize / 2) - 28, 11 + (y - yScreenSize / 2));
+		draw_sprite(scoreNumberSpin_spr, -1, x + (xScreenSize / 2) - 38, 11 + (y - yScreenSize / 2));
+		draw_sprite(scoreNumberSpin_spr, -1, x + (xScreenSize / 2) - 48, 11 + (y - yScreenSize / 2));
+		draw_sprite(scoreNumberSpin_spr, -1, x + (xScreenSize / 2) - 58, 11 + (y - yScreenSize / 2));
+		draw_sprite(scoreNumberSpin_spr, -1, x + (xScreenSize / 2) - 68, 11 + (y - yScreenSize / 2));
+		draw_sprite(scoreNumberSpin_spr, -1, x + (xScreenSize / 2) - 78, 11 + (y - yScreenSize / 2));
+		draw_sprite(scoreNumberSpin_spr, -1, x + (xScreenSize / 2) - 88, 11 + (y - yScreenSize / 2));
 	}
 	else
 	{
-		draw_sprite(scoreNumber_spr, slots[6], 457, edgeMarginVer + 2);
-		draw_sprite(scoreNumber_spr, slots[5], 447, edgeMarginVer + 2);
-		draw_sprite(scoreNumber_spr, slots[4], 437, edgeMarginVer + 2);
-		draw_sprite(scoreNumber_spr, slots[3], 427, edgeMarginVer + 2);
-		draw_sprite(scoreNumber_spr, slots[2], 417, edgeMarginVer + 2);
-		draw_sprite(scoreNumber_spr, slots[1], 407, edgeMarginVer + 2);
-		draw_sprite(scoreNumber_spr, slots[0], 397, edgeMarginVer + 2);
+		draw_sprite(scoreNumber_spr, slots[6], x + (xScreenSize / 2) - 28, 11 + (y - yScreenSize / 2));
+		draw_sprite(scoreNumber_spr, slots[5], x + (xScreenSize / 2) - 38, 11 + (y - yScreenSize / 2));
+		draw_sprite(scoreNumber_spr, slots[4], x + (xScreenSize / 2) - 48, 11 + (y - yScreenSize / 2));
+		draw_sprite(scoreNumber_spr, slots[3], x + (xScreenSize / 2) - 58, 11 + (y - yScreenSize / 2));
+		draw_sprite(scoreNumber_spr, slots[2], x + (xScreenSize / 2) - 68, 11 + (y - yScreenSize / 2));
+		draw_sprite(scoreNumber_spr, slots[1], x + (xScreenSize / 2) - 78, 11 + (y - yScreenSize / 2));
+		draw_sprite(scoreNumber_spr, slots[0], x + (xScreenSize / 2) - 88, 11 + (y - yScreenSize / 2));
 	}
 	
 	if (scoreSpinTimer < 0)
@@ -440,27 +436,25 @@ if (!noHUD)
 	}
 
 	//Ammo
-	/*
 	wheelRotation += 1;
 	draw_set_color(c_white);
-	var field1 = draw_sprite_ext(ammoCircleDualBarettaField_spr, global.pistolAmmo, 38, 86, -1, -1, wheelRotation, -1, 1);
-	var field2 = draw_sprite_ext(ammoCircleShotgunField_spr, global.shotgunAmmo, 38 + 42, 85 + 43, 1, 1, wheelRotation, -1, 1);
+	var field1 = draw_sprite_ext(ammoCircleDualBarettaField_spr, global.pistolAmmo, 38 + x - xScreenSize / 2, 86 + y - yScreenSize / 2, -1, -1, wheelRotation, -1, 1);
+	var field2 = draw_sprite_ext(ammoCircleShotgunField_spr, global.shotgunAmmo, 38 + 42 + x - xScreenSize / 2, 85 + 43 + y - yScreenSize / 2, 1, 1, wheelRotation, -1, 1);
 	
-	var field3 = draw_sprite_ext(ammoCircleRedField_spr, 0, 32 + 27, 85 + 43, -1, 1, wheelRotation, -1, 1);
-	var field4 = draw_sprite_ext(ammoCircleRedField_spr, 0, 32 + 27, 86, 1, -1, wheelRotation, -1, 1);
+	var field3 = draw_sprite_ext(ammoCircleRedField_spr, 0, 32 + 27 + x - xScreenSize / 2, 85 + 43 + y - yScreenSize / 2, -1, 1, wheelRotation, -1, 1);
+	var field4 = draw_sprite_ext(ammoCircleRedField_spr, 0, 32 + 27 + x - xScreenSize / 2, 86 + y - yScreenSize / 2, 1, -1, wheelRotation, -1, 1);
 	if (global.currentWeapon == pickedWeapon.pistol)
 	{
-		draw_sprite(ammoCircle_spr, 0, 32, 80);
+		draw_sprite(ammoCircle_spr, 0, 32 + x - xScreenSize / 2, 80 + y - yScreenSize / 2);
 	}
 	if (global.currentWeapon == pickedWeapon.dualBarettas)
 	{
-		draw_sprite(ammoCircle_spr, 1, 32, 80);
+		draw_sprite(ammoCircle_spr, 1, 32 + x - xScreenSize / 2, 80 + y - yScreenSize / 2);
 	}
 	if (global.currentWeapon == pickedWeapon.shotgun)
 	{
-		draw_sprite(ammoCircle_spr, 2, 32, 80);
+		draw_sprite(ammoCircle_spr, 2, 32 + x - xScreenSize / 2, 80 + y - yScreenSize / 2);
 	}
-	*/
 	
 	//Weapon
 	draw_set_color(make_color_rgb(255,215,0));
@@ -469,19 +463,19 @@ if (!noHUD)
 	{
 		if (global.currentWeapon == gameManager_obj.pickedWeapon.pistol)
 		{
-			draw_text(x, (y - yScreenSize / 2) + 64, "Pistol");
+			draw_text(x, y + (yScreenSize / 4), "Pistol");
 		}
 		if (global.currentWeapon == gameManager_obj.pickedWeapon.dualBarettas)
 		{
-			draw_text(x, (y - yScreenSize / 2) + 64, "Dual Barettas");
+			draw_text(x, y + (yScreenSize / 4), "Dual Barettas");
 		}
 		if (global.currentWeapon == gameManager_obj.pickedWeapon.shotgun)
 		{
-			draw_text(x, (y - yScreenSize / 2) + 64, "Shotgun");
+			draw_text(x, y + (yScreenSize / 4), "Shotgun");
 		}
 		if (global.currentWeapon == gameManager_obj.pickedWeapon.sniper)
 		{
-			draw_text(x, (y - yScreenSize / 2) + 64, "Sniper Rifle");
+			draw_text(x, y + (yScreenSize / 4), "Sniper Rifle");
 		}
 	}
 	newWeaponTimer -= global.dtNoSlowmo;
