@@ -1,4 +1,4 @@
-//if (live_call()) return live_result;
+if (live_call()) return live_result;
 
 edgeMarginVer = 11;
 edgeMarginHor = 17;
@@ -77,7 +77,7 @@ if (player_obj.plagueTransformation)
 if (player_obj.slowmo)
 {
 	shader_reset();
-    draw_set_alpha((player_obj.sniperDamageValue / 100) / 5);
+    draw_set_alpha(((player_obj.sniperDamageValue / 100) / 5) / 2);
     draw_ellipse_colour(-200, -200, xScreenSize + 200, yScreenSize + 200, c_black , make_color_rgb(255,215,0), false);
     draw_set_alpha(1);
 }
@@ -240,18 +240,18 @@ if (!noHUD)
 
 	//Ammo
 	draw_set_color(c_white);
-	var field1 = draw_sprite_ext(ammoCircleDualBarettaField_spr, global.pistolAmmo, 32, 92, -1, -1, 0, -1, 1);
-	var field2 = draw_sprite_ext(ammoCircleShotgunField_spr, global.shotgunAmmo, 32 + 43, 92 + 43, 1, 1, 0, -1, 1);
+	var field1 = draw_sprite_ext(ammoCircleDualBarettaField_spr, global.pistolAmmo, 38, 86, -1, -1, 0, -1, 1);
+	var field2 = draw_sprite_ext(ammoCircleShotgunField_spr, global.shotgunAmmo, 38 + 42, 85 + 43, 1, 1, 0, -1, 1);
 	
-	var field3 = draw_sprite_ext(ammoCircleRedField_spr, 0, 32 + 22, 92 + 43, -1, 1,0, -1, 1);
-	var field4 = draw_sprite_ext(ammoCircleRedField_spr, 0, 32 + 21, 92, 1, -1, 0, -1, 1);
+	var field3 = draw_sprite_ext(ammoCircleRedField_spr, 0, 32 + 27, 85 + 43, -1, 1,0, -1, 1);
+	var field4 = draw_sprite_ext(ammoCircleRedField_spr, 0, 32 + 27, 86, 1, -1, 0, -1, 1);
 	if (global.currentWeapon == pickedWeapon.dualBarettas)
 	{
-		draw_sprite(ammoCircle_spr, 0, 32, 92);
+		draw_sprite(ammoCircle_spr, 0, 32, 80);
 	}
 	if (global.currentWeapon == pickedWeapon.shotgun)
 	{
-		draw_sprite(ammoCircle_spr, 1, 32, 92);
+		draw_sprite(ammoCircle_spr, 1, 32, 80);
 	}
 	
 	//Weapon

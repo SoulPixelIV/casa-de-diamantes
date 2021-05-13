@@ -7,15 +7,15 @@
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 1,
-  "bbox_right": 20,
-  "bbox_top": 1,
+  "bbox_left": 0,
+  "bbox_right": 21,
+  "bbox_top": 0,
   "bbox_bottom": 20,
   "HTile": false,
   "VTile": false,
   "For3D": false,
   "width": 22,
-  "height": 22,
+  "height": 21,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -24,27 +24,27 @@
   "gridX": 2,
   "gridY": 2,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"82cfc4a6-dd81-4f9d-8047-e457ffd6aafa","path":"sprites/ammoCircleShotgunField_spr/ammoCircleShotgunField_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"82cfc4a6-dd81-4f9d-8047-e457ffd6aafa","path":"sprites/ammoCircleShotgunField_spr/ammoCircleShotgunField_spr.yy",},"LayerId":{"name":"ed80b9fc-e395-4795-88f9-5047a7a02e67","path":"sprites/ammoCircleShotgunField_spr/ammoCircleShotgunField_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"ammoCircleShotgunField_spr","path":"sprites/ammoCircleShotgunField_spr/ammoCircleShotgunField_spr.yy",},"resourceVersion":"1.0","name":"82cfc4a6-dd81-4f9d-8047-e457ffd6aafa","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"f03c2cc7-0c11-4943-a367-034608503826","path":"sprites/ammoCircleShotgunField_spr/ammoCircleShotgunField_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"f03c2cc7-0c11-4943-a367-034608503826","path":"sprites/ammoCircleShotgunField_spr/ammoCircleShotgunField_spr.yy",},"LayerId":{"name":"ed80b9fc-e395-4795-88f9-5047a7a02e67","path":"sprites/ammoCircleShotgunField_spr/ammoCircleShotgunField_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"ammoCircleShotgunField_spr","path":"sprites/ammoCircleShotgunField_spr/ammoCircleShotgunField_spr.yy",},"resourceVersion":"1.0","name":"f03c2cc7-0c11-4943-a367-034608503826","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"e3568d89-4433-4051-9437-f39c5b489440","path":"sprites/ammoCircleShotgunField_spr/ammoCircleShotgunField_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"e3568d89-4433-4051-9437-f39c5b489440","path":"sprites/ammoCircleShotgunField_spr/ammoCircleShotgunField_spr.yy",},"LayerId":{"name":"ed80b9fc-e395-4795-88f9-5047a7a02e67","path":"sprites/ammoCircleShotgunField_spr/ammoCircleShotgunField_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"ammoCircleShotgunField_spr","path":"sprites/ammoCircleShotgunField_spr/ammoCircleShotgunField_spr.yy",},"resourceVersion":"1.0","name":"e3568d89-4433-4051-9437-f39c5b489440","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"41468629-6deb-4786-99c3-d615a060fa29","path":"sprites/ammoCircleShotgunField_spr/ammoCircleShotgunField_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"41468629-6deb-4786-99c3-d615a060fa29","path":"sprites/ammoCircleShotgunField_spr/ammoCircleShotgunField_spr.yy",},"LayerId":{"name":"ed80b9fc-e395-4795-88f9-5047a7a02e67","path":"sprites/ammoCircleShotgunField_spr/ammoCircleShotgunField_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"ammoCircleShotgunField_spr","path":"sprites/ammoCircleShotgunField_spr/ammoCircleShotgunField_spr.yy",},"resourceVersion":"1.0","name":"41468629-6deb-4786-99c3-d615a060fa29","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"72c3120a-c4bb-4ced-86f1-77b92703ccc7","path":"sprites/ammoCircleShotgunField_spr/ammoCircleShotgunField_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"72c3120a-c4bb-4ced-86f1-77b92703ccc7","path":"sprites/ammoCircleShotgunField_spr/ammoCircleShotgunField_spr.yy",},"LayerId":{"name":"ed80b9fc-e395-4795-88f9-5047a7a02e67","path":"sprites/ammoCircleShotgunField_spr/ammoCircleShotgunField_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"ammoCircleShotgunField_spr","path":"sprites/ammoCircleShotgunField_spr/ammoCircleShotgunField_spr.yy",},"resourceVersion":"1.0","name":"72c3120a-c4bb-4ced-86f1-77b92703ccc7","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"7fca55fb-114b-4665-b94b-47408b521927","path":"sprites/ammoCircleShotgunField_spr/ammoCircleShotgunField_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"7fca55fb-114b-4665-b94b-47408b521927","path":"sprites/ammoCircleShotgunField_spr/ammoCircleShotgunField_spr.yy",},"LayerId":{"name":"ed80b9fc-e395-4795-88f9-5047a7a02e67","path":"sprites/ammoCircleShotgunField_spr/ammoCircleShotgunField_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"ammoCircleShotgunField_spr","path":"sprites/ammoCircleShotgunField_spr/ammoCircleShotgunField_spr.yy",},"resourceVersion":"1.0","name":"7fca55fb-114b-4665-b94b-47408b521927","tags":[],"resourceType":"GMSpriteFrame",},
     {"compositeImage":{"FrameId":{"name":"827a162c-e099-4a9e-9a3b-e1a5abe8c0e5","path":"sprites/ammoCircleShotgunField_spr/ammoCircleShotgunField_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"827a162c-e099-4a9e-9a3b-e1a5abe8c0e5","path":"sprites/ammoCircleShotgunField_spr/ammoCircleShotgunField_spr.yy",},"LayerId":{"name":"ed80b9fc-e395-4795-88f9-5047a7a02e67","path":"sprites/ammoCircleShotgunField_spr/ammoCircleShotgunField_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"ammoCircleShotgunField_spr","path":"sprites/ammoCircleShotgunField_spr/ammoCircleShotgunField_spr.yy",},"resourceVersion":"1.0","name":"827a162c-e099-4a9e-9a3b-e1a5abe8c0e5","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"1c1d8404-700e-4e4b-9dc2-0677f6404a7f","path":"sprites/ammoCircleShotgunField_spr/ammoCircleShotgunField_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"1c1d8404-700e-4e4b-9dc2-0677f6404a7f","path":"sprites/ammoCircleShotgunField_spr/ammoCircleShotgunField_spr.yy",},"LayerId":{"name":"ed80b9fc-e395-4795-88f9-5047a7a02e67","path":"sprites/ammoCircleShotgunField_spr/ammoCircleShotgunField_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"ammoCircleShotgunField_spr","path":"sprites/ammoCircleShotgunField_spr/ammoCircleShotgunField_spr.yy",},"resourceVersion":"1.0","name":"1c1d8404-700e-4e4b-9dc2-0677f6404a7f","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"e510a1f1-7b0a-4b67-a2c0-00f302e6840b","path":"sprites/ammoCircleShotgunField_spr/ammoCircleShotgunField_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"e510a1f1-7b0a-4b67-a2c0-00f302e6840b","path":"sprites/ammoCircleShotgunField_spr/ammoCircleShotgunField_spr.yy",},"LayerId":{"name":"ed80b9fc-e395-4795-88f9-5047a7a02e67","path":"sprites/ammoCircleShotgunField_spr/ammoCircleShotgunField_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"ammoCircleShotgunField_spr","path":"sprites/ammoCircleShotgunField_spr/ammoCircleShotgunField_spr.yy",},"resourceVersion":"1.0","name":"e510a1f1-7b0a-4b67-a2c0-00f302e6840b","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"16ac4116-6247-4a3c-8127-ec3de75124d1","path":"sprites/ammoCircleShotgunField_spr/ammoCircleShotgunField_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"16ac4116-6247-4a3c-8127-ec3de75124d1","path":"sprites/ammoCircleShotgunField_spr/ammoCircleShotgunField_spr.yy",},"LayerId":{"name":"ed80b9fc-e395-4795-88f9-5047a7a02e67","path":"sprites/ammoCircleShotgunField_spr/ammoCircleShotgunField_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"ammoCircleShotgunField_spr","path":"sprites/ammoCircleShotgunField_spr/ammoCircleShotgunField_spr.yy",},"resourceVersion":"1.0","name":"16ac4116-6247-4a3c-8127-ec3de75124d1","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"171e568c-9880-4a39-926d-04737f330204","path":"sprites/ammoCircleShotgunField_spr/ammoCircleShotgunField_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"171e568c-9880-4a39-926d-04737f330204","path":"sprites/ammoCircleShotgunField_spr/ammoCircleShotgunField_spr.yy",},"LayerId":{"name":"ed80b9fc-e395-4795-88f9-5047a7a02e67","path":"sprites/ammoCircleShotgunField_spr/ammoCircleShotgunField_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"ammoCircleShotgunField_spr","path":"sprites/ammoCircleShotgunField_spr/ammoCircleShotgunField_spr.yy",},"resourceVersion":"1.0","name":"171e568c-9880-4a39-926d-04737f330204","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"68c2c045-bce7-4a4b-aeff-96e303782f36","path":"sprites/ammoCircleShotgunField_spr/ammoCircleShotgunField_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"68c2c045-bce7-4a4b-aeff-96e303782f36","path":"sprites/ammoCircleShotgunField_spr/ammoCircleShotgunField_spr.yy",},"LayerId":{"name":"ed80b9fc-e395-4795-88f9-5047a7a02e67","path":"sprites/ammoCircleShotgunField_spr/ammoCircleShotgunField_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"ammoCircleShotgunField_spr","path":"sprites/ammoCircleShotgunField_spr/ammoCircleShotgunField_spr.yy",},"resourceVersion":"1.0","name":"68c2c045-bce7-4a4b-aeff-96e303782f36","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"0cc087cc-432b-4561-b7cc-42f3ac6d8817","path":"sprites/ammoCircleShotgunField_spr/ammoCircleShotgunField_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"0cc087cc-432b-4561-b7cc-42f3ac6d8817","path":"sprites/ammoCircleShotgunField_spr/ammoCircleShotgunField_spr.yy",},"LayerId":{"name":"ed80b9fc-e395-4795-88f9-5047a7a02e67","path":"sprites/ammoCircleShotgunField_spr/ammoCircleShotgunField_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"ammoCircleShotgunField_spr","path":"sprites/ammoCircleShotgunField_spr/ammoCircleShotgunField_spr.yy",},"resourceVersion":"1.0","name":"0cc087cc-432b-4561-b7cc-42f3ac6d8817","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"ammoCircleShotgunField_spr","path":"sprites/ammoCircleShotgunField_spr/ammoCircleShotgunField_spr.yy",},
@@ -59,13 +59,13 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"5b0f1b79-7243-4212-80d6-ab72bf83ba42","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"82cfc4a6-dd81-4f9d-8047-e457ffd6aafa","path":"sprites/ammoCircleShotgunField_spr/ammoCircleShotgunField_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"bbf53bc6-b4bb-4167-944e-f0f462a352d7","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"f03c2cc7-0c11-4943-a367-034608503826","path":"sprites/ammoCircleShotgunField_spr/ammoCircleShotgunField_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"657c1e8b-2235-47ec-87b0-0bfb38dc7d90","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"e3568d89-4433-4051-9437-f39c5b489440","path":"sprites/ammoCircleShotgunField_spr/ammoCircleShotgunField_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"7aeaabc7-713a-4f19-9819-167c46e6c9e0","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"41468629-6deb-4786-99c3-d615a060fa29","path":"sprites/ammoCircleShotgunField_spr/ammoCircleShotgunField_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"86718215-b4fa-492a-bf11-834778c112d8","Key":4.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"72c3120a-c4bb-4ced-86f1-77b92703ccc7","path":"sprites/ammoCircleShotgunField_spr/ammoCircleShotgunField_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"5f47d1b3-a4f5-477d-af84-6069a2c00295","Key":5.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"7fca55fb-114b-4665-b94b-47408b521927","path":"sprites/ammoCircleShotgunField_spr/ammoCircleShotgunField_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"57861262-9fec-457b-93ff-52902a5bcaab","Key":6.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"827a162c-e099-4a9e-9a3b-e1a5abe8c0e5","path":"sprites/ammoCircleShotgunField_spr/ammoCircleShotgunField_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"4a11dff8-2932-4c98-b382-3f73c2274f21","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"827a162c-e099-4a9e-9a3b-e1a5abe8c0e5","path":"sprites/ammoCircleShotgunField_spr/ammoCircleShotgunField_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"b05c0a38-553a-4ddb-8e90-cbacb6628277","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"1c1d8404-700e-4e4b-9dc2-0677f6404a7f","path":"sprites/ammoCircleShotgunField_spr/ammoCircleShotgunField_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"684a17cc-249d-4f1b-b7cc-2e1c7c657134","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"e510a1f1-7b0a-4b67-a2c0-00f302e6840b","path":"sprites/ammoCircleShotgunField_spr/ammoCircleShotgunField_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"59d4e38e-343f-49ee-b888-582f6b161e5d","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"16ac4116-6247-4a3c-8127-ec3de75124d1","path":"sprites/ammoCircleShotgunField_spr/ammoCircleShotgunField_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"1e5b2bf8-ccb8-467c-b131-c73e73c1377e","Key":4.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"171e568c-9880-4a39-926d-04737f330204","path":"sprites/ammoCircleShotgunField_spr/ammoCircleShotgunField_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"209afae5-bf2f-4e87-bc6f-47f43b2ae47a","Key":5.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"68c2c045-bce7-4a4b-aeff-96e303782f36","path":"sprites/ammoCircleShotgunField_spr/ammoCircleShotgunField_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"9dffac34-668f-49f1-a8cf-ea499aac9dfd","Key":6.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"0cc087cc-432b-4561-b7cc-42f3ac6d8817","path":"sprites/ammoCircleShotgunField_spr/ammoCircleShotgunField_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -79,7 +79,7 @@
     "backdropXOffset": 0.0,
     "backdropYOffset": 0.0,
     "xorigin": 22,
-    "yorigin": 22,
+    "yorigin": 21,
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"ammoCircleShotgunField_spr","path":"sprites/ammoCircleShotgunField_spr/ammoCircleShotgunField_spr.yy",},
