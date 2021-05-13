@@ -9,7 +9,6 @@ function revive_scr() {
 	player_obj.hp = 100;
 	player_obj.deathActivated = false;
 	damageRecieved = true;
-	reload_scr();
 	
 	player_obj.plagueTransformation = true;
 	camera_obj.showInfOverlay = true;

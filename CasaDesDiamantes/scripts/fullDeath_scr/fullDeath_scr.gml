@@ -7,7 +7,6 @@ function fullDeath_scr() {
 	player_obj.hp = 100;
 	player_obj.maxhp = 100;
 	player_obj.deathActivated = false;
-	reload_scr();
 
 	if (player_obj.lastCheckpoint != noone)
 	{
