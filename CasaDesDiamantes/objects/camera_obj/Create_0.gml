@@ -34,6 +34,7 @@ healthbarShrinkStart = false;
 healthbarDone = true;
 updateFPS = 40;
 currFps = fps_real;
+currDeltatime = global.dt;
 newWeapon = false;
 newWeaponTimer = 200;
 
@@ -87,10 +88,12 @@ vignetteAlpha = 0;
 showWalljumpsLeft = false;
 checkCullingAreaTimer = 100;
 wheelRotation = 0;
+wheelSpeed = 1;
 
 zombiespikeEffectBorderSave = zombiespikeEffectBorder;
 zombiespikeBorderTransparentSave = zombiespikeBorderTransparent;
 checkCullingAreaTimerSave = checkCullingAreaTimer;
+wheelSpeedSave = wheelSpeed;
 
 camera = camera_create();
 
