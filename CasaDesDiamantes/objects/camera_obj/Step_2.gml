@@ -95,10 +95,13 @@ if (follow == goldenElevatorDirtyForeground_obj)
 }
 
 //Snap camera when close enough
-//HORIZONTAL
-if (x < xTo + 4 && x > xTo - 4 && !shake)
+if (!cameraTarget)
 {
-	snapCameraX = true;
+	//HORIZONTAL
+	if (x < xTo + 4 && x > xTo - 4 && !shake)
+	{
+		snapCameraX = true;
+	}
 }
 
 if (snapCameraX)
@@ -110,10 +113,13 @@ else
 	x += (xTo - x) * (global.dtNoSlowmo * cameraSpeed);
 }
 
-//VERTICAL
-if (y < (yTo - cameraYBorder) + 1 && y > (yTo - cameraYBorder) - 1 && !shake)
+if (!cameraTarget)
 {
-	snapCameraY = true;
+	//VERTICAL
+	if (y < (yTo - cameraYBorder) + 1 && y > (yTo - cameraYBorder) - 1 && !shake)
+	{
+		snapCameraY = true;
+	}
 }
 
 if (snapCameraY)
