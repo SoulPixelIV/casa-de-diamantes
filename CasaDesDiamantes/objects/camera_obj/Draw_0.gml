@@ -444,28 +444,40 @@ if (!noHUD)
 	{
 		wheelRotation = 0;
 	}
-	var field1Degree = 270;
-	var field2Degree = 90;
+	var field1Degree = 240;
+	var field2Degree = 60;
 	var field1 = draw_sprite_ext(ammoCircleDualBarettaField_spr, global.pistolAmmo, 59 + x - xScreenSize / 2, 36 + y - yScreenSize / 2, -1, -1, wheelRotation, -1, 1);
 	var field2 = draw_sprite_ext(ammoCircleShotgunField_spr, global.shotgunAmmo, 59 + x - xScreenSize / 2, 36 + y - yScreenSize / 2, 1, 1, wheelRotation, -1, 1);
 	
 	var field3 = draw_sprite_ext(ammoCircleRedField_spr, 0, 59 + x - xScreenSize / 2, 36 + y - yScreenSize / 2, -1, 1, wheelRotation, -1, 1);
 	var field4 = draw_sprite_ext(ammoCircleRedField_spr, 0, 59 + x - xScreenSize / 2, 36 + y - yScreenSize / 2, 1, -1, wheelRotation, -1, 1);
 
-	draw_sprite(ammoCircle_spr, 0, 32 + x - xScreenSize / 2, 9 + y - yScreenSize / 2);
+	if (global.currentWeapon == gameManager_obj.pickedWeapon.dualBarettas)
+	{
+		draw_sprite(ammoCircle_spr, 1, 32 + x - xScreenSize / 2, 9 + y - yScreenSize / 2);
+	}
+	else if (global.currentWeapon == gameManager_obj.pickedWeapon.shotgun)
+	{
+		draw_sprite(ammoCircle_spr, 2, 32 + x - xScreenSize / 2, 9 + y - yScreenSize / 2);
+	}
+	else
+	{
+		draw_sprite(ammoCircle_spr, 0, 32 + x - xScreenSize / 2, 9 + y - yScreenSize / 2);
+	}
 	
 	//Weapon
 	draw_set_color(make_color_rgb(255,215,0));
 	draw_set_halign(fa_center);
+	newWeaponTimer -= global.dtNoSlowmo;
 	if (newWeapon)
 	{
-		if (wheelSpeed < 9.8)
+		if (wheelSpeed < 19.5)
 		{
-			wheelSpeed += global.dt / 5;
+			wheelSpeed += global.dt;
 		}
-		if (wheelSpeed > 9.8)
+		if (wheelSpeed > 19.5)
 		{
-			wheelSpeed = 10;
+			wheelSpeed = 20;
 		}
 		if (global.currentWeapon == gameManager_obj.pickedWeapon.pistol)
 		{
@@ -484,32 +496,28 @@ if (!noHUD)
 			draw_text(x, y + (yScreenSize / 3), "Sniper Rifle");
 		}
 	}
-	newWeaponTimer -= global.dtNoSlowmo;
-	if (wheelSpeed > 0.2)
+	else
 	{
-		wheelSpeed -= global.dt / 20;
-	}
-	if (wheelSpeed < 0.2)
-	{
-		if (global.currentWeapon == gameManager_obj.pickedWeapon.dualBarettas)
+		if (wheelSpeed > 2)
 		{
-			if (wheelRotation > field1Degree - 35 && wheelRotation < field1Degree + 35)
+			wheelSpeed -= global.dt / 10;
+		}
+		if (wheelSpeed < 2 && wheelSpeed >= 0)
+		{
+			if (global.currentWeapon == gameManager_obj.pickedWeapon.dualBarettas)
 			{
-				wheelSpeed -= global.dt / 10;
-				if (wheelSpeed < 0.1)
+				if (wheelRotation > field1Degree - 15 && wheelRotation < field1Degree + 15)
 				{
 					wheelSpeed = 0;
+					wheelRotation = field1Degree;
 				}
 			}
-		}
-		if (global.currentWeapon == gameManager_obj.pickedWeapon.shotgun)
-		{
-			if (wheelRotation > field2Degree - 35 && wheelRotation < field2Degree + 35)
+			if (global.currentWeapon == gameManager_obj.pickedWeapon.shotgun)
 			{
-				wheelSpeed -= global.dt / 20;
-				if (wheelSpeed < 0.1)
+				if (wheelRotation > field2Degree - 15 && wheelRotation < field2Degree + 15)
 				{
 					wheelSpeed = 0;
+					wheelRotation = field2Degree;
 				}
 			}
 		}
