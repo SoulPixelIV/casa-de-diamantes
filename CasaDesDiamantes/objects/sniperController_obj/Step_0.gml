@@ -41,28 +41,20 @@ if (enableShooting && !player_obj.deathActivated)
 	
 	if (sniperPosX > sniperTarget.x + 2)
 	{
-		sniperPosX -= global.dt / 2;
+		sniperPosX -= global.dt / 1.7;
 	}
 	else if (sniperPosX < sniperTarget.x - 2)
 	{
-		sniperPosX += global.dt / 2;
-	}
-	else
-	{
-		sniperPosX = sniperTarget.x;
+		sniperPosX += global.dt / 1.7;
 	}
 
 	if (sniperPosY > sniperTarget.y + 2)
 	{
-		sniperPosY -= global.dt / 1.5;
+		sniperPosY -= global.dt / 1.2;
 	}
 	else if (sniperPosY < sniperTarget.y - 2)
 	{
-		sniperPosY += global.dt / 1.5;
-	}
-	else
-	{
-		sniperPosY = sniperTarget.y;
+		sniperPosY += global.dt / 1.2;
 	}
 }
 
