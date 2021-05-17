@@ -11,26 +11,25 @@ if (entered)
 	blackscreen_scr(0);
 	player_obj.movement = false;
 }
-
-if (exited)
+else
 {
-	blackscreen_scr(1);
-	player_obj.movement = true;
+	if (!doorEnter_obj.entered)
+	{
+		blackscreen_scr(1);
+	}
 }
 
-if (camera_obj.blackscreenStrength == 1 && entered)
+if (!doorEnter_obj.entered)
 {
-	snapCameraX = false;
-	snapCameraY = false;
-	doorEnter_obj.exited = true;		
-	player_obj.x = doorEnter_obj.x;
-	player_obj.y = doorEnter_obj.y - 26;
-	camera_obj.x = doorEnter_obj.x;
-	camera_obj.y = doorEnter_obj.y - 26;
-	entered = false;
-}
-
-if (camera_obj.blackscreenStrength == 0 && exited)
-{
-	exited = false;
+	if (camera_obj.blackscreenStrength == 1 && entered)
+	{
+		snapCameraX = false;
+		snapCameraY = false;
+		player_obj.x = doorEnter_obj.x;
+		player_obj.y = doorEnter_obj.y - 12;
+		camera_obj.xTo = doorEnter_obj.x;
+		camera_obj.yTo = doorEnter_obj.y - 12;
+		player_obj.movement = true;
+		entered = false;
+	}
 }

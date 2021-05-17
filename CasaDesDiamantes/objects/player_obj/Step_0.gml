@@ -1096,25 +1096,19 @@ else if (setMovAfterScreen)
 	setMovAfterScreen = false;
 }
 
-checkPlayerTimer -= global.dt;
-if (checkPlayerTimer < 0)
+//Deactivate Movement if away from camera
+if (instance_exists(camera_obj))
 {
-	if (instance_exists(camera_obj))
+	if (distance_to_object(camera_obj) < (camera_obj.xScreenSize / 2) + 128)
 	{
-		if (distance_to_object(camera_obj) < (camera_obj.xScreenSize / 2) + 128)
-		{
-			gravityStrength = gravityStrengthSave;
-		}
-		else
-		{
-			gravityStrength = 0;
-		}
+		gravityStrength = gravityStrengthSave;
 	}
 	else
 	{
 		gravityStrength = 0;
+		horspeed = 0;
+		verspeed = 0;
 	}
-	checkPlayerTimer = checkPlayerTimerSave;
 }
 
 //Gravity

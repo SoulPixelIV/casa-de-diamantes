@@ -444,8 +444,8 @@ if (!noHUD)
 	{
 		wheelRotation = 0;
 	}
-	var field1Degree = 240;
-	var field2Degree = 60;
+	var field1Degree = 235;
+	var field2Degree = 55;
 	var field1 = draw_sprite_ext(ammoCircleDualBarettaField_spr, global.pistolAmmo, 59 + x - xScreenSize / 2, 36 + y - yScreenSize / 2, -1, -1, wheelRotation, -1, 1);
 	var field2 = draw_sprite_ext(ammoCircleShotgunField_spr, global.shotgunAmmo, 59 + x - xScreenSize / 2, 36 + y - yScreenSize / 2, 1, 1, wheelRotation, -1, 1);
 	
@@ -742,7 +742,7 @@ if (!noHUD)
 //#####LAYER 4#####
 draw_set_alpha(blackscreenStrength);
 draw_set_color(c_black);
-draw_rectangle(1600 - (x - xScreenSize / 2), 1150 - (y - yScreenSize / 2), 1600 + (x - xScreenSize / 2), 1150 + (y - yScreenSize / 2), false);
+draw_rectangle(x - xScreenSize, y - yScreenSize, x + xScreenSize, y + yScreenSize, false);
 draw_set_alpha(1);
 
 //black borders
@@ -752,5 +752,5 @@ draw_sprite(blackborder_spr, 0, x, (y + yScreenSize / 2) + 42 - blackbordersPos)
 if (player_obj.sniperDamageValue > 0)
 {
 	draw_sprite_ext(blackborder_spr, 0, x, 42 + (y - yScreenSize / 2), 1, 1, 0, -1, (player_obj.sniperDamageValue / 100) / 5);
-	draw_sprite_ext(blackborder_spr, 0, x, 42 - y - yScreenSize / 2, 1, 1, 0, -1, (player_obj.sniperDamageValue / 100) / 5);
+	draw_sprite_ext(blackborder_spr, 0, x, y + yScreenSize / 2, 1, 1, 0, -1, (player_obj.sniperDamageValue / 100) / 5);
 }

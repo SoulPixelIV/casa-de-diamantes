@@ -1,2 +1,2 @@
 entered = false;
-exited = false;
+screenAlpha = 0;

@@ -136,7 +136,4 @@ instance_create_layer(x + 1, y - 4, "Instances", playerBulletLine_obj);
 
 global.spawn = 0;
 
-checkPlayerTimer = 50;
-checkPlayerTimerSave = checkPlayerTimer;
-checkPlayerTimer = 0;
 gravityStrength = 0;
