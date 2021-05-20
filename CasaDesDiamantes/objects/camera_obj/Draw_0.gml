@@ -444,8 +444,8 @@ if (!noHUD)
 	{
 		wheelRotation = 0;
 	}
-	var field1Degree = 235;
-	var field2Degree = 55;
+	var field1Degree = 232;
+	var field2Degree = 52;
 	var field1 = draw_sprite_ext(ammoCircleDualBarettaField_spr, global.pistolAmmo, 59 + x - xScreenSize / 2, 36 + y - yScreenSize / 2, -1, -1, wheelRotation, -1, 1);
 	var field2 = draw_sprite_ext(ammoCircleShotgunField_spr, global.shotgunAmmo, 59 + x - xScreenSize / 2, 36 + y - yScreenSize / 2, 1, 1, wheelRotation, -1, 1);
 	
