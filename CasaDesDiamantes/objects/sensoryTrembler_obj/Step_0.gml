@@ -1,5 +1,5 @@
 /// @description Enemy AI
-/*
+
 x += horspeed * global.dt;
 y += verspeed * global.dt;
 
@@ -87,11 +87,11 @@ if (movement)
 		}
 		if (dirLookat > 90 && dirLookat < 270)
 		{
-			//image_xscale = -1;
+			image_xscale = -1;
 		}
 		else
 		{
-			//image_xscale = 1;
+			image_xscale = 1;
 		}
 	}
 	else
@@ -118,8 +118,8 @@ if (attackInProg)
 }
 
 //Animation
-//image_speed = 0;
-//image_index += (global.dt / 15) * animationSpeed;
+image_speed = 0;
+image_index += (global.dt / 15) * animationSpeed;
 
 //Collision
 //horspeed
@@ -386,4 +386,3 @@ if (checkPlayerTimer < 0)
 	}
 	checkPlayerTimer = checkPlayerTimerSave;
 }
-*/

@@ -1,8 +1,4 @@
-//sprite_index = sensoryTremblerBase_spr;
-
-/*
-
-/// @description Vars
+sprite_index = sensoryTremblerBase_spr;
 
 //Movement
 horspeed = 0;
@@ -18,8 +14,7 @@ knockback = 0;
 
 lastBullet = bulletPistol_obj;
 ammoSpawnCount = 4;
-image_speed = 1;
-//animationSpeed = 0.5;
+animationSpeed = 0.5;
 savePosX = x;
 savePosY = y;
 attackCooldown = 250;
