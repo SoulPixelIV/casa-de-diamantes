@@ -35,27 +35,13 @@ if (attackCooldown < 300 && !attackInProg2 && aggro)
 {
 	if ((image_xscale == 1 && player_obj.x > x) || (image_xscale == -1 && player_obj.x < x))
 	{
-		if (image_xscale == 1)
+		if (attackCooldown > 120)
 		{
-			if (attackCooldown > 120)
-			{
-				draw_line_width_color(x + 15, y, playerPosX, playerPosY, 0.8, c_red, c_red);
-			}
-			else
-			{
-				draw_line_width_color(x + 15, y, playerPosX, playerPosY, 0.8, lineColor, lineColor);
-			}
+			draw_sprite_ext(zombieSoldierGirlGunFlashing_spr, -1, x + 2 * image_xscale, y - 3.6, 1, image_xscale, dirCursor, -1, 1);
 		}
-		if (image_xscale == -1)
+		else
 		{
-			if (attackCooldown > 120)
-			{
-				draw_line_width_color(x - 15, y, playerPosX, playerPosY, 0.8, c_red, c_red);
-			}
-			else
-			{
-				draw_line_width_color(x - 15, y, playerPosX, playerPosY, 0.8, lineColor, lineColor);
-			}
+			draw_sprite_ext(zombieSoldierGirlGun_spr, -1, x + 2 * image_xscale, y - 3.6, 1, image_xscale, dirCursor, -1, 1);
 		}
 	}
 }
@@ -64,7 +50,10 @@ if (player_obj != noone)
 {
 	if (aggro)
 	{
-		dirCursor = point_direction(x, y, player_obj.x, player_obj.y);
+		if (attackCooldown > 120)
+		{
+			dirCursor = point_direction(x, y, player_obj.x, player_obj.y);
+		}
 	}
 	else
 	{
@@ -84,9 +73,5 @@ if (player_obj != noone)
 	else
 	{
 		clamp(dirCursor, 270, 90);
-	}
-	if (attackCooldown < 300 && !attackInProg2)
-	{
-		draw_sprite_ext(zombieSoldierGirlGun_spr, 0, x + 2 * image_xscale, y - 3.6, 1, image_xscale, dirCursor, -1, 1);
 	}
 }
