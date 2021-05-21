@@ -1,4 +1,4 @@
-sprite_index = sensoryTremblerBase_spr;
+//sprite_index = sensoryTremblerBase_spr;
 
 //Movement
 horspeed = 0;
