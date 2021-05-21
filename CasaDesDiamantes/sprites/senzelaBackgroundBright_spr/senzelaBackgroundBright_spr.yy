@@ -67,6 +67,7 @@
   "layers": [
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"c3a33360-9b92-4cfa-aa59-bc58ccc1f04e","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
     "name": "Senzela Forest",
     "path": "folders/Backgrounds/Sprites/Senzela Forest.yy",

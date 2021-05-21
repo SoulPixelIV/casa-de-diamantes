@@ -33,6 +33,24 @@ else
 	deaggroTimer -= global.dt;
 }
 
+//Base Rotation
+if (baseRotation > 1)
+{
+	rotDir = 1;
+}
+if (baseRotation < -1)
+{
+	rotDir = 0;
+}
+if (rotDir == 0)
+{
+	baseRotation += global.dt / 7;
+}
+else
+{
+	baseRotation -= global.dt / 7;
+}
+
 if (deaggroTimer < 0)
 {
 	aggro = false;

@@ -26,7 +26,6 @@
   "frames": [
     {"compositeImage":{"FrameId":{"name":"528fcb03-9de6-4d79-8ca1-6dd9175a4b7a","path":"sprites/death_spr/death_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"528fcb03-9de6-4d79-8ca1-6dd9175a4b7a","path":"sprites/death_spr/death_spr.yy",},"LayerId":{"name":"c5c11509-a9b5-47dd-bcd8-ba7fd800c419","path":"sprites/death_spr/death_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-        {"FrameId":{"name":"528fcb03-9de6-4d79-8ca1-6dd9175a4b7a","path":"sprites/death_spr/death_spr.yy",},"LayerId":{"name":"death_spr","path":"sprites/death_spr/death_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"death_spr","path":"sprites/death_spr/death_spr.yy",},"resourceVersion":"1.0","name":"528fcb03-9de6-4d79-8ca1-6dd9175a4b7a","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
@@ -68,6 +67,7 @@
   "layers": [
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"c5c11509-a9b5-47dd-bcd8-ba7fd800c419","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
     "name": "UISprites",
     "path": "folders/UI/UISprites.yy",

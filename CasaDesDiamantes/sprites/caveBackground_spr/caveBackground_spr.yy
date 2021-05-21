@@ -67,6 +67,7 @@
   "layers": [
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"080681bf-d7e6-4ed6-b734-37a933f59fe5","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
     "name": "RoadToCasino",
     "path": "folders/Backgrounds/Sprites/RoadToCasino.yy",

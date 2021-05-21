@@ -26,7 +26,6 @@
   "frames": [
     {"compositeImage":{"FrameId":{"name":"eecfb138-c83e-4653-9a63-8ca2653fafa9","path":"sprites/potionShop_spr/potionShop_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"eecfb138-c83e-4653-9a63-8ca2653fafa9","path":"sprites/potionShop_spr/potionShop_spr.yy",},"LayerId":{"name":"3b8928f2-9e28-4ec6-b900-d3efed028410","path":"sprites/potionShop_spr/potionShop_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-        {"FrameId":{"name":"eecfb138-c83e-4653-9a63-8ca2653fafa9","path":"sprites/potionShop_spr/potionShop_spr.yy",},"LayerId":{"name":"potionShop_spr","path":"sprites/potionShop_spr/potionShop_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"potionShop_spr","path":"sprites/potionShop_spr/potionShop_spr.yy",},"resourceVersion":"1.0","name":"eecfb138-c83e-4653-9a63-8ca2653fafa9","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
@@ -68,6 +67,7 @@
   "layers": [
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"3b8928f2-9e28-4ec6-b900-d3efed028410","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
     "name": "Sprites",
     "path": "folders/Sprites.yy",

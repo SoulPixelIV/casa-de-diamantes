@@ -25,7 +25,6 @@
   "gridY": 0,
   "frames": [
     {"compositeImage":{"FrameId":{"name":"eecfb138-c83e-4653-9a63-8ca2653fafa9","path":"sprites/potionShopForeground_spr/potionShopForeground_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"eecfb138-c83e-4653-9a63-8ca2653fafa9","path":"sprites/potionShopForeground_spr/potionShopForeground_spr.yy",},"LayerId":{"name":"potionShopForeground_spr","path":"sprites/potionShopForeground_spr/potionShopForeground_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
         {"FrameId":{"name":"eecfb138-c83e-4653-9a63-8ca2653fafa9","path":"sprites/potionShopForeground_spr/potionShopForeground_spr.yy",},"LayerId":{"name":"195a217b-aa83-45b7-bc40-71455bae2be2","path":"sprites/potionShopForeground_spr/potionShopForeground_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"potionShopForeground_spr","path":"sprites/potionShopForeground_spr/potionShopForeground_spr.yy",},"resourceVersion":"1.0","name":"eecfb138-c83e-4653-9a63-8ca2653fafa9","tags":[],"resourceType":"GMSpriteFrame",},
   ],
@@ -68,6 +67,7 @@
   "layers": [
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"Layer 1","resourceVersion":"1.0","name":"195a217b-aa83-45b7-bc40-71455bae2be2","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
     "name": "Sprites",
     "path": "folders/Sprites.yy",

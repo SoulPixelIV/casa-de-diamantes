@@ -127,6 +127,7 @@
   "layers": [
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"d0628fad-38ec-4d07-b897-1ff59cb8d890","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
     "name": "ZombieSoldier",
     "path": "folders/Enemies/Enemy Sprites/ZombieSoldier.yy",

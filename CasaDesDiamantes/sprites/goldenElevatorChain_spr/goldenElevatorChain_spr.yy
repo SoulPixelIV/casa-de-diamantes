@@ -26,8 +26,6 @@
   "frames": [
     {"compositeImage":{"FrameId":{"name":"433e9977-d23e-40f0-8edb-ec873e7c013b","path":"sprites/goldenElevatorChain_spr/goldenElevatorChain_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"433e9977-d23e-40f0-8edb-ec873e7c013b","path":"sprites/goldenElevatorChain_spr/goldenElevatorChain_spr.yy",},"LayerId":{"name":"d3a012e0-eb04-446d-913a-cf9901aca5aa","path":"sprites/goldenElevatorChain_spr/goldenElevatorChain_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-        {"FrameId":{"name":"433e9977-d23e-40f0-8edb-ec873e7c013b","path":"sprites/goldenElevatorChain_spr/goldenElevatorChain_spr.yy",},"LayerId":{"name":"5bd94c17-992c-4be0-83be-1baa867c593e","path":"sprites/goldenElevatorChain_spr/goldenElevatorChain_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-        {"FrameId":{"name":"433e9977-d23e-40f0-8edb-ec873e7c013b","path":"sprites/goldenElevatorChain_spr/goldenElevatorChain_spr.yy",},"LayerId":{"name":"7bf01303-15ac-42eb-906d-5ff71a558dab","path":"sprites/goldenElevatorChain_spr/goldenElevatorChain_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"goldenElevatorChain_spr","path":"sprites/goldenElevatorChain_spr/goldenElevatorChain_spr.yy",},"resourceVersion":"1.0","name":"433e9977-d23e-40f0-8edb-ec873e7c013b","tags":[],"resourceType":"GMSpriteFrame",},
     {"compositeImage":{"FrameId":{"name":"e872f644-8b97-43a7-81fa-afbe616bb912","path":"sprites/goldenElevatorChain_spr/goldenElevatorChain_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"e872f644-8b97-43a7-81fa-afbe616bb912","path":"sprites/goldenElevatorChain_spr/goldenElevatorChain_spr.yy",},"LayerId":{"name":"d3a012e0-eb04-446d-913a-cf9901aca5aa","path":"sprites/goldenElevatorChain_spr/goldenElevatorChain_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
@@ -77,6 +75,7 @@
   "layers": [
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"d3a012e0-eb04-446d-913a-cf9901aca5aa","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
     "name": "Sprites",
     "path": "folders/Sprites.yy",

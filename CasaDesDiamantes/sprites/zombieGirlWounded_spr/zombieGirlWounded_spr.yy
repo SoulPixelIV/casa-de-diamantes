@@ -79,6 +79,7 @@
   "layers": [
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"aa8975b4-1fd9-4381-9a21-78ddc3eb7d18","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
     "name": "ZombieGirlWounded",
     "path": "folders/Enemies/Enemy Sprites/ZombieGirlWounded.yy",
