@@ -1,6 +1,13 @@
-if (window_get_width() != xScreenSize*2 && window_get_height() != yScreenSize*2)
+if (window_get_fullscreen())
 {
-	window_set_size(xWindowSize, yWindowSize);
-	surface_resize(application_surface, xScreenSize, yScreenSize);
-	display_set_gui_size(xScreenSize, yScreenSize);
+	if (window_get_width() != xScreenSize * zoom && window_get_height() != yScreenSize * zoom)
+	{
+		window_set_size(xWindowSize * zoom, yWindowSize * zoom);
+		surface_resize(application_surface, xScreenSize, yScreenSize);
+		display_set_gui_size(xScreenSize, yScreenSize);
+	}
+}
+else
+{
+	window_set_position(display_get_width() / 2 - xScreenSize * zoom, display_get_height() / 2 - yScreenSize * zoom);
 }
