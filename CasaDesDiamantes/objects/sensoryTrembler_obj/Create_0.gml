@@ -61,6 +61,9 @@ audio_falloff_set_model(audio_falloff_linear_distance);
 audio_emitter_position(emitter, x, y, 0);
 audio_emitter_falloff(emitter, audio_drop_start, audio_max_distance, 1);
 
+//Create Collider
+colHitbox = instance_create_layer(x, y + 72, "Instances", colliderNoEnemy_obj);
+
 checkPlayerTimer = 50;
 checkPlayerTimerSave = checkPlayerTimer;
 checkPlayerTimer = 0;

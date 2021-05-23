@@ -34,21 +34,21 @@ else
 }
 
 //Base Rotation
-if (baseRotation > 1)
+if (baseRotation > 0.5)
 {
 	rotDir = 1;
 }
-if (baseRotation < -1)
+if (baseRotation < -0.5)
 {
 	rotDir = 0;
 }
 if (rotDir == 0)
 {
-	baseRotation += global.dt / 7;
+	baseRotation += global.dt / 16;
 }
 else
 {
-	baseRotation -= global.dt / 7;
+	baseRotation -= global.dt / 16;
 }
 
 if (deaggroTimer < 0)
@@ -141,6 +141,10 @@ image_index += (global.dt / 15) * animationSpeed;
 
 //Collision
 //horspeed
+//if (place_meeting(x + (horspeed * global.dt), y, enemy_obj))
+	//{
+		//if (instance_place(x + (horspeed * global.dt), y, enemy_obj).colliding)
+		//{
 if (!place_free(x + (horspeed * global.dt), y))
 {
 	if (sign(horspeed) != 0)
@@ -182,6 +186,12 @@ else
 if (hp < 0)
 {
 	var deathCross = instance_create_layer(x, y - 8, "ForegroundObjects", deathCross_obj);
+	
+	//Delete hitbox
+	if (instance_exists(colHitbox))
+	{
+		instance_destroy(colHitbox);
+	}
 	
 	//Enemy Slowmo
 	var randNum = choose(1,2,3,4,5,6,7,8,9);
@@ -403,4 +413,11 @@ if (checkPlayerTimer < 0)
 		gravityStrength = 0;
 	}
 	checkPlayerTimer = checkPlayerTimerSave;
+}
+
+//Set hitbox coordinates
+if (instance_exists(colHitbox))
+{
+	colHitbox.x = x;
+	colHitbox.y = y;
 }
