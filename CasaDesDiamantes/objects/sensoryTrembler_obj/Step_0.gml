@@ -141,10 +141,6 @@ image_index += (global.dt / 15) * animationSpeed;
 
 //Collision
 //horspeed
-//if (place_meeting(x + (horspeed * global.dt), y, enemy_obj))
-	//{
-		//if (instance_place(x + (horspeed * global.dt), y, enemy_obj).colliding)
-		//{
 if (!place_free(x + (horspeed * global.dt), y))
 {
 	if (sign(horspeed) != 0)
@@ -155,13 +151,13 @@ if (!place_free(x + (horspeed * global.dt), y))
 		}
 		horspeed = 0;
 	}
-} 
+}
 //verspeed
-if (!place_free(x, y + (verspeed * global.dt)))
+if (!place_free(x, (y + (verspeed * global.dt))) + 76)
 {
 	if (sign(verspeed) != 0)
 	{
-		while (place_free(x, y + sign(verspeed) / 100))
+		while (place_free(x, (y + sign(verspeed) / 100) + 64))
 		{
 			y += sign(verspeed) / 100;
 		}
@@ -188,10 +184,10 @@ if (hp < 0)
 	var deathCross = instance_create_layer(x, y - 8, "ForegroundObjects", deathCross_obj);
 	
 	//Delete hitbox
-	if (instance_exists(colHitbox))
-	{
-		instance_destroy(colHitbox);
-	}
+	//if (instance_exists(colHitbox))
+	//{
+		//instance_destroy(colHitbox);
+	//}
 	
 	//Enemy Slowmo
 	var randNum = choose(1,2,3,4,5,6,7,8,9);
@@ -416,8 +412,8 @@ if (checkPlayerTimer < 0)
 }
 
 //Set hitbox coordinates
-if (instance_exists(colHitbox))
-{
-	colHitbox.x = x;
-	colHitbox.y = y;
-}
+//if (instance_exists(colHitbox))
+//{
+	//colHitbox.x = x - 48;
+	//colHitbox.y = y - 126;
+//}
