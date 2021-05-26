@@ -316,7 +316,11 @@ if (attackInProg)
 if (attackInProg && image_index > image_number - 1 && !dashed)
 {
 	animationSpeed = 0;
-	damageCollision = true;
+	hitboxDrill = instance_create_layer(x + (16 * image_xscale), y, "Instances", damageHitbox_obj);
+	hitboxDrill.image_yscale = 1.5;
+	hitboxDrill.image_xscale = 2;
+	hitboxDrill.damage = damage;
+	hitboxDrill.timer = 100;
 	//Front Dash
 	if (player_obj.y > y - 32 && player_obj.y < y + 32)
 	{
@@ -328,6 +332,12 @@ if (attackInProg && image_index > image_number - 1 && !dashed)
 	}
 	dashed = true;
 }
+if (instance_exists(hitboxDrill))
+{
+	hitboxDrill.follow = true;
+	hitboxDrill.followX = x + (16 * image_xscale);
+	hitboxDrill.followY = y;
+}
 
 //Start Attack 2
 if (attackInProg2 && image_index > image_number - 1 && !dashed)
@@ -338,7 +348,7 @@ if (attackInProg2 && image_index > image_number - 1 && !dashed)
 }	
 if (attackInProg2 && image_index > 8 && !spawnedHitbox)
 {
-	var hitbox = instance_create_layer(x + (16 * image_xscale), y, "Instances", damageHitbox_obj);
+	var hitbox = instance_create_layer(x + (20 * image_xscale), y, "Instances", damageHitbox_obj);
 	hitbox.image_yscale = 1.5;
 	hitbox.image_xscale = 3;
 	hitbox.damage = 30;

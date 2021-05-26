@@ -1,4 +1,7 @@
 body = noone;
+follow = false;
+followX = x;
+followY = y;
 damage = 10;
 knockback = 1;
 damageCollision = true;

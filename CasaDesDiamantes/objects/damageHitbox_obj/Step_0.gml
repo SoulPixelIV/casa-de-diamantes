@@ -12,3 +12,9 @@ if (instance_exists(body))
 		instance_destroy();
 	}
 }
+
+if (follow)
+{
+	x = followX;
+	y = followY;
+}

@@ -165,6 +165,19 @@ if (!place_free(x, (y + (verspeed * global.dt))) + 76)
 	}
 }
 
+//Player Collision
+if (place_meeting(x + horspeed * global.dt, y, player_obj))
+{
+	if (player_obj.x > x)
+	{
+		horspeed = -movSpeed;
+	}
+	else
+	{
+		horspeed = movSpeed;
+	}
+}
+
 //###OutsideSolid###
 if (place_free(x, y))
 {

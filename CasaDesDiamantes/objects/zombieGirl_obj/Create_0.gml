@@ -28,6 +28,7 @@ startDrill = false;
 dashed = false;
 damageCollision = false;
 spawnedHitbox = false;
+hitboxDrill = noone;
 points = 125;
 movSpeed = 0.15;
 movement = true;
