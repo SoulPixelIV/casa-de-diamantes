@@ -1145,16 +1145,7 @@ if (colliding)
 	//Enemy Collision
 	if (place_meeting(x + horspeed * global.dt, y, enemy_obj))
 	{
-		if (instance_place(x + horspeed * global.dt, y, enemy_obj).colliding)
-		{
-			if (sign(horspeed) != 0)
-			{
-				while (place_free(x + sign(horspeed), y))
-				{
-					x -= sign(horspeed);
-				}
-			}
-		}
+		horspeed = 0;
 	}
 	if ((place_free(x + 1, y) && place_free(x - 1, y)) || grounded)
 	{
@@ -1180,6 +1171,13 @@ if (colliding)
 		grounded = false;
 		onMovingPlatform = false;
 		createdParticles = false;
+	}
+	//Enemy Collision
+	if (place_meeting(x, y + verspeed * global.dt, enemy_obj))
+	{
+		var collidingEnemy = instance_place(x, y + verspeed * global.dt, enemy_obj);
+		collidingEnemy.verspeed = 0;
+		verspeed = 0;
 	}
 }
 

@@ -9,6 +9,8 @@ realTimeScale = global.timeScale;
 restartInProg = false;
 keyboardActive = true;
 
+surface_depth_disable(true);
+
 game_set_speed(TARGET_FRAMERATE, gamespeed_fps);
 
 //application_surface_draw_enable(false);
