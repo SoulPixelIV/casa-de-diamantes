@@ -1,5 +1,5 @@
 //draw_self();
-draw_sprite_ext(sensoryTremblerBase_spr, 0, x, y, 1, 1, baseRotation, -1, 1);
+draw_sprite_ext(sensoryTremblerBase_spr, -1, x, y - 12, 1, 1, baseRotation, -1, 1);
 
 if (horspeed == 0)
 {

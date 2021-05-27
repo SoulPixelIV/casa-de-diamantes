@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sensoryTremblerBase_spr",
-    "path": "sprites/sensoryTremblerBase_spr/sensoryTremblerBase_spr.yy",
+    "name": "sensoryTrembler_spr",
+    "path": "sprites/sensoryTrembler_spr/sensoryTrembler_spr.yy",
   },
   "solid": false,
   "visible": true,

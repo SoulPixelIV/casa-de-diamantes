@@ -2,20 +2,20 @@
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
-  "origin": 7,
+  "origin": 0,
   "preMultiplyAlpha": false,
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 4,
-  "bbox_right": 128,
-  "bbox_top": 108,
-  "bbox_bottom": 171,
+  "bbox_left": 0,
+  "bbox_right": 61,
+  "bbox_top": 14,
+  "bbox_bottom": 56,
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 130,
-  "height": 172,
+  "width": 64,
+  "height": 64,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -24,9 +24,9 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"34e8bc7b-2f5b-4889-9426-413581ed643b","path":"sprites/sensoryTremblerBottom_spr/sensoryTremblerBottom_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"34e8bc7b-2f5b-4889-9426-413581ed643b","path":"sprites/sensoryTremblerBottom_spr/sensoryTremblerBottom_spr.yy",},"LayerId":{"name":"b10b77d5-7b47-4dd9-95ed-ef3ed3c4015a","path":"sprites/sensoryTremblerBottom_spr/sensoryTremblerBottom_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sensoryTremblerBottom_spr","path":"sprites/sensoryTremblerBottom_spr/sensoryTremblerBottom_spr.yy",},"resourceVersion":"1.0","name":"34e8bc7b-2f5b-4889-9426-413581ed643b","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"ee4f52e9-8ee6-449c-a9c1-45008ed77f1c","path":"sprites/sensoryTremblerBottom_spr/sensoryTremblerBottom_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"ee4f52e9-8ee6-449c-a9c1-45008ed77f1c","path":"sprites/sensoryTremblerBottom_spr/sensoryTremblerBottom_spr.yy",},"LayerId":{"name":"2cf9c100-d150-4071-8d16-b67bd5b388c9","path":"sprites/sensoryTremblerBottom_spr/sensoryTremblerBottom_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sensoryTremblerBottom_spr","path":"sprites/sensoryTremblerBottom_spr/sensoryTremblerBottom_spr.yy",},"resourceVersion":"1.0","name":"ee4f52e9-8ee6-449c-a9c1-45008ed77f1c","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"sensoryTremblerBottom_spr","path":"sprites/sensoryTremblerBottom_spr/sensoryTremblerBottom_spr.yy",},
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"3b5e5e07-5e4d-4b3c-bd15-c770708704d1","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"34e8bc7b-2f5b-4889-9426-413581ed643b","path":"sprites/sensoryTremblerBottom_spr/sensoryTremblerBottom_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"4a1ab193-b4fb-441b-9d25-877dba8255c9","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"ee4f52e9-8ee6-449c-a9c1-45008ed77f1c","path":"sprites/sensoryTremblerBottom_spr/sensoryTremblerBottom_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -54,8 +54,8 @@
     "backdropHeight": 768,
     "backdropXOffset": 0.0,
     "backdropYOffset": 0.0,
-    "xorigin": 65,
-    "yorigin": 172,
+    "xorigin": 0,
+    "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sensoryTremblerBottom_spr","path":"sprites/sensoryTremblerBottom_spr/sensoryTremblerBottom_spr.yy",},
@@ -65,7 +65,7 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"b10b77d5-7b47-4dd9-95ed-ef3ed3c4015a","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"2cf9c100-d150-4071-8d16-b67bd5b388c9","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
