@@ -1145,7 +1145,10 @@ if (colliding)
 	//Enemy Collision
 	if (place_meeting(x + horspeed * global.dt, y, enemy_obj))
 	{
-		horspeed = 0;
+		if (instance_place(x + horspeed * global.dt, y, enemy_obj).colliding)
+		{
+			horspeed = 0;
+		}
 	}
 	if ((place_free(x + 1, y) && place_free(x - 1, y)) || grounded)
 	{
@@ -1175,9 +1178,12 @@ if (colliding)
 	//Enemy Collision
 	if (place_meeting(x, y + verspeed * global.dt, enemy_obj))
 	{
-		var collidingEnemy = instance_place(x, y + verspeed * global.dt, enemy_obj);
-		collidingEnemy.verspeed = 0;
-		verspeed = 0;
+		if (instance_place(x, y + verspeed * global.dt, enemy_obj).colliding)
+		{
+			var collidingEnemy = instance_place(x, y + verspeed * global.dt, enemy_obj);
+			collidingEnemy.verspeed = 0;
+			verspeed = 0;
+		}
 	}
 }
 
