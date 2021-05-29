@@ -629,6 +629,7 @@
     {"id":{"name":"GMLiveAPI","path":"scripts/GMLiveAPI/GMLiveAPI.yy",},"order":1,},
     {"id":{"name":"minecartRail_obj","path":"objects/minecartRail_obj/minecartRail_obj.yy",},"order":19,},
     {"id":{"name":"OLD","path":"sprites/OLD/OLD.yy",},"order":1,},
+    {"id":{"name":"sensoryTremblerTurret_spr","path":"sprites/sensoryTremblerTurret_spr/sensoryTremblerTurret_spr.yy",},"order":5,},
     {"id":{"name":"minecartRail2_obj","path":"objects/minecartRail2_obj/minecartRail2_obj.yy",},"order":20,},
     {"id":{"name":"barrelHitbox_obj","path":"objects/barrelHitbox_obj/barrelHitbox_obj.yy",},"order":1,},
     {"id":{"name":"itemFrame_spr","path":"sprites/itemFrame_spr/itemFrame_spr.yy",},"order":47,},

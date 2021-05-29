@@ -154,8 +154,11 @@ if (movement && !isZombie)
 	{
 		if (place_free(x, y + 32))
 		{
-			isDashing = false;
-			stoppedDashing = false;
+			if (!place_meeting(x, y + 32, enemy_obj))
+			{
+				isDashing = false;
+				stoppedDashing = false;
+			}
 		}
 	}
 	
