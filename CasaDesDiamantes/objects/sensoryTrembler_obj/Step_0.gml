@@ -19,18 +19,13 @@ if (!collision_line(x, y, player_obj.x, player_obj.y, collider_obj, false, true)
 	{
 		if (distance_to_point(player_obj.x, player_obj.y) < aggroRange)
 		{
-			if ((image_xscale == 1 && player_obj.x >= x) || (image_xscale == -1 && player_obj.x <= x))
-			{
-				deaggroTimer = deaggroTimerSave;
-				aggroTimer -= global.dt;
-			}
+			aggroTimer -= global.dt;
 		}
 	}
 }
 else
 {
 	aggroTimer = aggroTimerSave;
-	deaggroTimer -= global.dt;
 }
 
 //Base Rotation
@@ -51,11 +46,16 @@ else
 	baseRotation -= global.dt / 16;
 }
 
-if (deaggroTimer < 0)
+//Turret Rotation
+if (turretRotation > turretRotationDest)
 {
-	aggro = false;
-	deaggroTimer = deaggroTimerSave;
+	turretRotation -= global.dt / 4;
 }
+if (baseRotation < turretRotationDest)
+{
+	turretRotation += global.dt / 4;
+}
+
 if (aggroTimer < 0)
 {
 	aggro = true;
@@ -64,7 +64,7 @@ if (aggroTimer < 0)
 
 if (movement)
 {
-	if (aggro && distance_to_object(player_obj) > 24)
+	if (aggro && distance_to_object(player_obj) > 300 && distance_to_object(player_obj) < aggroRange)
 	{
 		if (instance_exists(hazard_obj))
 		{
@@ -103,16 +103,20 @@ if (movement)
 				horspeed = -movSpeed;
 			}
 		}
-		if (dirLookat > 90 && dirLookat < 270)
-		{
-			image_xscale = -1;
-		}
-		else
-		{
-			image_xscale = 1;
-		}
 	}
-	else
+	
+	if (distance_to_object(player_obj) < 300 && distance_to_object(player_obj) > 24)
+	{
+		randDirChangeTimer -= global.dt;
+		if (randDirChangeTimer < 0)
+		{
+			randMovDir = choose(1, -1);
+			randDirChangeTimer = randDirChangeTimerSave + random_range(-80, 80);
+		}
+		horspeed = movSpeed * randMovDir;
+	}
+	
+	if (distance_to_object(player_obj) < 24)
 	{
 		horspeed = 0;
 	}
@@ -196,12 +200,6 @@ if (hp < 0)
 {
 	var deathCross = instance_create_layer(x, y - 8, "ForegroundObjects", deathCross_obj);
 	
-	//Delete hitbox
-	//if (instance_exists(colHitbox))
-	//{
-		//instance_destroy(colHitbox);
-	//}
-	
 	//Enemy Slowmo
 	var randNum = choose(1,2,3,4,5,6,7,8,9);
 	if (randNum == 9)
@@ -280,83 +278,23 @@ if (hp < 0)
 //Cooldown
 if (!attackInProg && !attackInProg2 && aggro)
 {
-	if (distance_to_object(player_obj) < 66)
+	if (distance_to_object(player_obj) < aggroRange)
 	{
-		//attackCooldown -= global.dt * 2;
+		attackCooldown -= global.dt;
 	}
-	else if (distance_to_object(player_obj) < aggroRange)
-	{
-		//attackCooldown -= global.dt;
-	}
-}
-
-//Prepare Attack
-if (attackCooldown < 0 && verspeed == 0)
-{
-	if (distance_to_object(player_obj) < 66)
-	{
-		animationSpeed = 1;
-		sprite_index = zombieGirlAttack2_spr;
-		movement = false;
-		attackInProg2 = true;
-	}
-	else
-	{
-		if (instance_exists(hazard_obj))
-		{
-			if (!collision_circle(x, y, 128, hazard_obj, false, true))
-			{
-				sprite_index = zombieGirlAttack1_spr;
-				movement = false;
-				attackInProg = true;
-			}
-		}
-	}
-	attackCooldown = attackCooldownSave;
 }
 
 //Start Attack 1
-if (attackInProg)
+if (attackCooldown < 0 && !attackInProg)
 {
-	instance_create_layer(x, y - 4, "ForegroundObjects", dustParticle_obj);
-	if (!startDrill)
+	repeat (8)
 	{
-		var drillSnd = audio_play_sound_on(emitter, drill_snd, false, 1);
-		audio_sound_pitch(drillSnd, random_range(0.8, 1));
-		startDrill = true;
+		instance_create_layer(player_obj.x + random_range(-76, 76), player_obj.y + 26, "Instances", targetCircle_obj);
 	}
-}
-if (attackInProg && image_index > image_number - 1 && !dashed)
-{
-	animationSpeed = 0;
-	damageCollision = true;
-	//Front Dash
-	if (player_obj.y > y - 32 && player_obj.y < y + 32)
-	{
-		frontDash_scr(id);
-	}
-	else
-	{
-		frontDash_scr(id);
-	}
-	dashed = true;
-}
-
-//Start Attack 2
-if (attackInProg2 && image_index > image_number - 1 && !dashed)
-{
-	animationSpeed = 0;
-	dashed = true;
+	turretRotationDest = random_range(0, 180);
+	attackInProg = true;
+	attackCooldown = attackCooldownSave;
 	delay = true;
-}	
-if (attackInProg2 && image_index > 8 && !spawnedHitbox)
-{
-	var hitbox = instance_create_layer(x + (16 * image_xscale), y, "Instances", damageHitbox_obj);
-	hitbox.image_yscale = 1.5;
-	hitbox.image_xscale = 3;
-	hitbox.damage = 30;
-	hitbox.timer = 140;
-	spawnedHitbox = true;
 }
 	
 if (delay)
@@ -367,15 +305,8 @@ if (attackDelay < 0)
 {
 	delay = false;
 	attackDelay = attackDelaySave;
-	dashed = false;
 	attackInProg = false;
 	attackInProg2 = false;
-	startDrill = false;
-	animationSpeed = 0.5;
-	sprite_index = zombieGirl_spr;
-	damageCollision = false;
-	movement = true;
-	spawnedHitbox = false;
 }
 
 if (damageTint && sprite_index != zombieGirlFlashHeadshot_spr)

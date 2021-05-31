@@ -2,7 +2,7 @@
   "bboxMode": 2,
   "collisionKind": 1,
   "type": 0,
-  "origin": 7,
+  "origin": 9,
   "preMultiplyAlpha": false,
   "edgeFiltering": false,
   "collisionTolerance": 0,
@@ -14,8 +14,8 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 126,
-  "height": 172,
+  "width": 56,
+  "height": 32,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -26,8 +26,16 @@
   "frames": [
     {"compositeImage":{"FrameId":{"name":"2c363ce0-3ef4-47ee-bdac-9948adc79838","path":"sprites/sensoryTremblerTurret_spr/sensoryTremblerTurret_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"2c363ce0-3ef4-47ee-bdac-9948adc79838","path":"sprites/sensoryTremblerTurret_spr/sensoryTremblerTurret_spr.yy",},"LayerId":{"name":"bfe587d5-7259-4ad5-92a5-0042dbb81914","path":"sprites/sensoryTremblerTurret_spr/sensoryTremblerTurret_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-        {"FrameId":{"name":"2c363ce0-3ef4-47ee-bdac-9948adc79838","path":"sprites/sensoryTremblerTurret_spr/sensoryTremblerTurret_spr.yy",},"LayerId":{"name":"e8534801-5988-4fc3-948d-d4d59cd3f03f","path":"sprites/sensoryTremblerTurret_spr/sensoryTremblerTurret_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"sensoryTremblerTurret_spr","path":"sprites/sensoryTremblerTurret_spr/sensoryTremblerTurret_spr.yy",},"resourceVersion":"1.0","name":"2c363ce0-3ef4-47ee-bdac-9948adc79838","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"9592d808-50c3-4cbc-b4fa-edd47864c9d9","path":"sprites/sensoryTremblerTurret_spr/sensoryTremblerTurret_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"9592d808-50c3-4cbc-b4fa-edd47864c9d9","path":"sprites/sensoryTremblerTurret_spr/sensoryTremblerTurret_spr.yy",},"LayerId":{"name":"bfe587d5-7259-4ad5-92a5-0042dbb81914","path":"sprites/sensoryTremblerTurret_spr/sensoryTremblerTurret_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sensoryTremblerTurret_spr","path":"sprites/sensoryTremblerTurret_spr/sensoryTremblerTurret_spr.yy",},"resourceVersion":"1.0","name":"9592d808-50c3-4cbc-b4fa-edd47864c9d9","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"434adc8c-2120-4089-a62d-c1923c8ab66a","path":"sprites/sensoryTremblerTurret_spr/sensoryTremblerTurret_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"434adc8c-2120-4089-a62d-c1923c8ab66a","path":"sprites/sensoryTremblerTurret_spr/sensoryTremblerTurret_spr.yy",},"LayerId":{"name":"bfe587d5-7259-4ad5-92a5-0042dbb81914","path":"sprites/sensoryTremblerTurret_spr/sensoryTremblerTurret_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sensoryTremblerTurret_spr","path":"sprites/sensoryTremblerTurret_spr/sensoryTremblerTurret_spr.yy",},"resourceVersion":"1.0","name":"434adc8c-2120-4089-a62d-c1923c8ab66a","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"43ad4492-3402-4b4a-a5a8-719ebc834e45","path":"sprites/sensoryTremblerTurret_spr/sensoryTremblerTurret_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"43ad4492-3402-4b4a-a5a8-719ebc834e45","path":"sprites/sensoryTremblerTurret_spr/sensoryTremblerTurret_spr.yy",},"LayerId":{"name":"bfe587d5-7259-4ad5-92a5-0042dbb81914","path":"sprites/sensoryTremblerTurret_spr/sensoryTremblerTurret_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sensoryTremblerTurret_spr","path":"sprites/sensoryTremblerTurret_spr/sensoryTremblerTurret_spr.yy",},"resourceVersion":"1.0","name":"43ad4492-3402-4b4a-a5a8-719ebc834e45","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"sensoryTremblerTurret_spr","path":"sprites/sensoryTremblerTurret_spr/sensoryTremblerTurret_spr.yy",},
@@ -37,12 +45,15 @@
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,
-    "length": 1.0,
+    "length": 4.0,
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"4f455aaf-9179-432e-b5ff-4dcca0d867c9","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"2c363ce0-3ef4-47ee-bdac-9948adc79838","path":"sprites/sensoryTremblerTurret_spr/sensoryTremblerTurret_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"960fe063-580f-4732-81a1-27c415a644fd","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"9592d808-50c3-4cbc-b4fa-edd47864c9d9","path":"sprites/sensoryTremblerTurret_spr/sensoryTremblerTurret_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"5bd4b179-889f-417a-9fdf-05a73d45107f","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"434adc8c-2120-4089-a62d-c1923c8ab66a","path":"sprites/sensoryTremblerTurret_spr/sensoryTremblerTurret_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"3263ff79-6c85-45b3-8470-d758398a6915","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"43ad4492-3402-4b4a-a5a8-719ebc834e45","path":"sprites/sensoryTremblerTurret_spr/sensoryTremblerTurret_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -55,8 +66,8 @@
     "backdropHeight": 1080,
     "backdropXOffset": 0.0,
     "backdropYOffset": 0.0,
-    "xorigin": 63,
-    "yorigin": 172,
+    "xorigin": 45,
+    "yorigin": 18,
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sensoryTremblerTurret_spr","path":"sprites/sensoryTremblerTurret_spr/sensoryTremblerTurret_spr.yy",},
