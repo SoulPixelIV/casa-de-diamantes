@@ -12,11 +12,11 @@ moneyDropMax = 4;
 damage = 23;
 knockback = 0;
 
-turretRotation = 90;
-turretRotationDest = turretRotation;
 turretRotDir = 0;
 randMovDir = 1;
 randDirChangeTimer = 150;
+shootDelay = 5;
+initialShootDelay = 100;
 lastBullet = bulletPistol_obj;
 ammoSpawnCount = 4;
 animationSpeed = 0.75;
@@ -24,7 +24,7 @@ baseRotation = 0;
 rotDir = 0;
 savePosX = x;
 savePosY = y;
-attackCooldown = 800;
+attackCooldown = 700;
 delay = false;
 isDashing = false;
 attackDelay = 50;
@@ -57,6 +57,7 @@ attackDelaySave = attackDelay;
 damageTintTimerSave = damageTintTimer;
 gravityStrengthSave = gravityStrength;
 randDirChangeTimerSave = randDirChangeTimer;
+initialShootDelaySave = initialShootDelay;
 
 //Create Emitter
 emitter = audio_emitter_create();

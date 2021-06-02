@@ -46,16 +46,6 @@ else
 	baseRotation -= global.dt / 16;
 }
 
-//Turret Rotation
-if (turretRotation > turretRotationDest)
-{
-	turretRotation -= global.dt / 4;
-}
-if (baseRotation < turretRotationDest)
-{
-	turretRotation += global.dt / 4;
-}
-
 if (aggroTimer < 0)
 {
 	aggro = true;
@@ -278,23 +268,66 @@ if (hp < 0)
 //Cooldown
 if (!attackInProg && !attackInProg2 && aggro)
 {
-	if (distance_to_object(player_obj) < aggroRange)
+	if (distance_to_object(player_obj) < aggroRange && distance_to_object(player_obj) > 86)
 	{
 		attackCooldown -= global.dt;
+	}
+	if (distance_to_object(player_obj) < 86)
+	{
+		attackInProg2 = true;
+	}
+}
+
+if (attackCooldown < 0 && !attackInProg && !attackInProg2)
+{
+	if (distance_to_object(player_obj) < aggroRange && distance_to_object(player_obj) > 86)
+	{
+		attackInProg = true;
+	}
+	if (distance_to_object(player_obj) < 86)
+	{
+		attackInProg2 = true;
 	}
 }
 
 //Start Attack 1
-if (attackCooldown < 0 && !attackInProg)
+if (attackInProg)
 {
 	repeat (8)
 	{
 		instance_create_layer(player_obj.x + random_range(-76, 76), player_obj.y + 26, "Instances", targetCircle_obj);
 	}
-	turretRotationDest = random_range(0, 180);
-	attackInProg = true;
+	instance_create_layer(x - 16, y - 168, "ForegroundObjects", shotLightShotgun_obj);
+	instance_create_layer(x - 16, y - 168, "ForegroundObjects", smokecloud_obj);
+	screenshake(50, 12, 0.6, id);
 	attackCooldown = attackCooldownSave;
+	attackInProg = false;
 	delay = true;
+}
+
+//Start Attack 2
+if (attackInProg2)
+{
+	initialShootDelay -= global.dt;
+	if (initialShootDelay < 0)
+	{
+		if (distance_to_object(player_obj) > 32)
+		{
+			shootDelay -= global.dt;
+			if (shootDelay < 0)
+			{
+				bullet1 = instance_create_layer(x - 52 + random_range(-1, 1), y - 79, "Instances", bulletSensoryTrembler_obj);
+				bullet2 = instance_create_layer(x + 52 + random_range(-1, 1), y - 79, "Instances", bulletSensoryTrembler_obj);
+				bullet1.dir = 200;
+				bullet1.dirChange = true;
+				bullet2.dir = 330;
+				bullet2.dirChange = true;
+				shootDelay = 5;
+			}
+		}
+		attackCooldown = attackCooldownSave;
+		delay = true;
+	}
 }
 	
 if (delay)
@@ -307,6 +340,7 @@ if (attackDelay < 0)
 	attackDelay = attackDelaySave;
 	attackInProg = false;
 	attackInProg2 = false;
+	initialShootDelay = initialShootDelaySave;
 }
 
 if (damageTint && sprite_index != zombieGirlFlashHeadshot_spr)

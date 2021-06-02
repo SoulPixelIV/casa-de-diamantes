@@ -1,6 +1,11 @@
-draw_sprite_ext(sensoryTremblerTurret_spr, 0, x + 24, y - 163, 1, 1, turretRotation, -1, 1);
-
-draw_sprite_ext(sensoryTremblerBase_spr, -1, x, y - 12, 1, 1, baseRotation, -1, 1);
+if (!attackInProg2)
+{
+	draw_sprite_ext(sensoryTremblerBase_spr, -1, x, y - 12, 1, 1, baseRotation, -1, 1);
+}
+else
+{
+	draw_sprite_ext(sensoryTremblerBaseOpen_spr, -1, x, y - 12, 1, 1, baseRotation, -1, 1);
+}
 
 if (horspeed == 0)
 {
