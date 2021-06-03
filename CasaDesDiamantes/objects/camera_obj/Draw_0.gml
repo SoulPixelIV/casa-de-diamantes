@@ -754,3 +754,13 @@ if (player_obj.sniperDamageValue > 0)
 	draw_sprite_ext(blackborder_spr, 0, x, 42 + (y - yScreenSize / 2), 1, 1, 0, -1, (player_obj.sniperDamageValue / 100) / 5);
 	draw_sprite_ext(blackborder_spr, 0, x, y + yScreenSize / 2, 1, 1, 0, -1, (player_obj.sniperDamageValue / 100) / 5);
 }
+
+//Cursor
+//Crosshair Setup
+if (instance_exists(player_obj))
+{
+	if (player_obj.inputMethod == 0)
+	{
+		draw_sprite(cursor_spr, 0, mouse_x, mouse_y);
+	}
+}

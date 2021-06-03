@@ -4,7 +4,7 @@ randomize();
 global.timeScale = 1;
 global.gamma = 1.4;
 TARGET_FRAMERATE = 240;
-cursor_sprite = cursor_spr;
+cursor_sprite = noone;
 realTimeScale = global.timeScale;
 restartInProg = false;
 keyboardActive = true;

@@ -272,21 +272,29 @@ if (!attackInProg && !attackInProg2 && aggro)
 	{
 		attackCooldown -= global.dt;
 	}
-	if (distance_to_object(player_obj) < 86)
+	if (distance_to_object(player_obj) < 86 && distance_to_object(player_obj) > 32)
 	{
 		attackInProg2 = true;
 	}
+	if (distance_to_object(player_obj) < 32)
+	{
+		attackInProg3 = true;
+	}
 }
 
-if (attackCooldown < 0 && !attackInProg && !attackInProg2)
+if (attackCooldown < 0 && !attackInProg && !attackInProg2 && !attackInProg3)
 {
 	if (distance_to_object(player_obj) < aggroRange && distance_to_object(player_obj) > 86)
 	{
 		attackInProg = true;
 	}
-	if (distance_to_object(player_obj) < 86)
+	if (distance_to_object(player_obj) < 86 && distance_to_object(player_obj) > 32)
 	{
 		attackInProg2 = true;
+	}
+	if (distance_to_object(player_obj) < 32)
+	{
+		attackInProg3 = true;
 	}
 }
 
@@ -329,6 +337,20 @@ if (attackInProg2)
 		delay = true;
 	}
 }
+
+//Start Attack 3
+if (attackInProg3)
+{
+	smokeDelay -= global.dt;
+	if (smokeDelay < 0)
+	{
+		instance_create_layer(x - 50 + random_range(-1, 1), y - 136, "ForegroundObjects", dustParticle_obj);
+		instance_create_layer(x + 57 + random_range(-1, 1), y - 136, "ForegroundObjects", dustParticle_obj);
+		smokeDelay = 4;
+	}
+	attackCooldown = attackCooldownSave;
+	delay = true;
+}
 	
 if (delay)
 {
@@ -340,6 +362,7 @@ if (attackDelay < 0)
 	attackDelay = attackDelaySave;
 	attackInProg = false;
 	attackInProg2 = false;
+	attackInProg3 = false;
 	initialShootDelay = initialShootDelaySave;
 }
 

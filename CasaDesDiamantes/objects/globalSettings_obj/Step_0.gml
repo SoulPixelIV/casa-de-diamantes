@@ -118,16 +118,3 @@ else
 {
 	global.ambientShadowIntensity = 0.6 * global.gamma;
 }
-
-//Crosshair Setup
-if (instance_exists(player_obj))
-{
-	if (player_obj.inputMethod == 0)
-	{
-		cursor_sprite = cursor_spr;
-	}
-	else
-	{
-		cursor_sprite = -1;
-	}
-}
