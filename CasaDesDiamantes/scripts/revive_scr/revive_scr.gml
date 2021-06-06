@@ -11,5 +11,6 @@ function revive_scr() {
 	damageRecieved = true;
 	
 	player_obj.plagueTransformation = true;
+	player_obj.y -= 24;
 	camera_obj.showInfOverlay = true;
 }

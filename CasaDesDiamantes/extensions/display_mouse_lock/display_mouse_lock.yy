@@ -5,9 +5,9 @@
   "supportedTargets": 113497714299118,
   "extensionVersion": "1.0.0",
   "packageId": "",
-  "productId": "F79C97955FD1AF4686EB4EF4EF90F0DB",
+  "productId": "",
   "author": "",
-  "date": "2020-06-23T02:03:50",
+  "date": "2021-05-23T11:21:13.2902984+02:00",
   "license": "Free to use, also for commercial games.",
   "description": "",
   "helpfile": "",
@@ -27,16 +27,28 @@
         {"externalName":"display_mouse_bounds_raw","kind":11,"help":"","hidden":false,"returnType":2,"argCount":1,"args":[
             2,
           ],"resourceVersion":"1.0","name":"display_mouse_bounds_raw","tags":[],"resourceType":"GMExtensionFunction",},
-      ],"constants":[],"ProxyFiles":[],"copyToTargets":9223372036854775807,"order":[
+      ],"constants":[],"ProxyFiles":[
+        {"TargetMask":6,"resourceVersion":"1.0","name":"display_mouse_lock_x64.dll","tags":[],"resourceType":"GMProxyFile",},
+      ],"copyToTargets":105553658380352,"order":[
         {"name":"display_mouse_lock","path":"extensions/display_mouse_lock/display_mouse_lock.yy",},
         {"name":"display_mouse_unlock","path":"extensions/display_mouse_lock/display_mouse_lock.yy",},
         {"name":"display_mouse_bounds_raw","path":"extensions/display_mouse_lock/display_mouse_lock.yy",},
       ],"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMExtensionFile",},
     {"filename":"display_mouse_lock.gml","origname":"extensions\\gml.gml","init":"","final":"","kind":2,"uncompress":false,"functions":[
         {"externalName":"display_mouse_bounds","kind":11,"help":"display_mouse_bounds() : Returns the current mouse' lock bounds (if any).","hidden":false,"returnType":2,"argCount":0,"args":[],"resourceVersion":"1.0","name":"display_mouse_bounds","tags":[],"resourceType":"GMExtensionFunction",},
-      ],"constants":[],"ProxyFiles":[],"copyToTargets":9223372036854775807,"order":[
-        {"name":"display_mouse_bounds","path":"extensions/display_mouse_lock/display_mouse_lock.yy",},
-      ],"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMExtensionFile",},
+      ],"constants":[],"ProxyFiles":[],"copyToTargets":9223372036854775807,"order":[],"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMExtensionFile",},
+    {"filename":"display_mouse_lock_else.gml","origname":"extensions\\gml.gml","init":"","final":"","kind":2,"uncompress":false,"functions":[
+        {"externalName":"display_mouse_lock","kind":11,"help":"","hidden":false,"returnType":2,"argCount":4,"args":[
+            2,
+            2,
+            2,
+            2,
+          ],"resourceVersion":"1.0","name":"display_mouse_lock","tags":[],"resourceType":"GMExtensionFunction",},
+        {"externalName":"display_mouse_unlock","kind":11,"help":"","hidden":false,"returnType":2,"argCount":0,"args":[],"resourceVersion":"1.0","name":"display_mouse_unlock","tags":[],"resourceType":"GMExtensionFunction",},
+        {"externalName":"display_mouse_bounds_raw","kind":11,"help":"","hidden":false,"returnType":2,"argCount":1,"args":[
+            2,
+          ],"resourceVersion":"1.0","name":"display_mouse_bounds_raw","tags":[],"resourceType":"GMExtensionFunction",},
+      ],"constants":[],"ProxyFiles":[],"copyToTargets":7944055918766,"order":[],"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMExtensionFile",},
   ],
   "classname": "",
   "tvosclassname": "",

@@ -39,11 +39,25 @@ if (baseRotation < -0.5)
 }
 if (rotDir == 0)
 {
-	baseRotation += global.dt / 16;
+	if (attackInProg3)
+	{
+		baseRotation += global.dt / 8;
+	}
+	else
+	{
+		baseRotation += global.dt / 16;
+	}
 }
 else
 {
-	baseRotation -= global.dt / 16;
+	if (attackInProg3)
+	{
+		baseRotation -= global.dt / 8;
+	}
+	else
+	{
+		baseRotation -= global.dt / 16;
+	}
 }
 
 if (aggroTimer < 0)
@@ -342,6 +356,7 @@ if (attackInProg2)
 if (attackInProg3)
 {
 	smokeDelay -= global.dt;
+	slamDelay -= global.dt;
 	if (smokeDelay < 0)
 	{
 		instance_create_layer(x - 50 + random_range(-1, 1), y - 136, "ForegroundObjects", dustParticle_obj);
@@ -349,7 +364,34 @@ if (attackInProg3)
 		smokeDelay = 4;
 	}
 	attackCooldown = attackCooldownSave;
-	delay = true;
+	
+	if (slamDelay < 0)
+	{
+		slam = true;
+		slamDelay = slamDelaySave;
+	}
+}
+
+if (slam)
+{
+	if (slamPos < 64)
+	{
+		slamPos += global.dt * 4;
+	}
+	else
+	{
+		if (!delay)
+		{
+			slamHitbox = instance_create_layer(x, y - 16, "Instances", damageHitbox_obj);
+			slamHitbox.image_yscale = 2;
+			slamHitbox.image_xscale = 4;
+			slamHitbox.damage = damage;
+			slamHitbox.timer = 120;
+			slamHitbox.knockback = 5;
+			
+		}
+		delay = true;
+	}
 }
 	
 if (delay)
@@ -363,6 +405,8 @@ if (attackDelay < 0)
 	attackInProg = false;
 	attackInProg2 = false;
 	attackInProg3 = false;
+	slam = false;
+	slamPos = 0;
 	initialShootDelay = initialShootDelaySave;
 }
 

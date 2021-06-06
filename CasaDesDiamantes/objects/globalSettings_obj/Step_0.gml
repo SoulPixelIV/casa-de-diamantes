@@ -30,20 +30,13 @@ if (realTimeScale > global.timeScale - 0.03 && realTimeScale < global.timeScale 
 }
 
 //Lock Cursor
-if (!window_has_focus())
+if (window_has_focus())
 {
-	display_mouse_unlock();
+	display_mouse_lock(window_get_x(), window_get_y(), window_get_width(), window_get_height());
 }
 else
 {
-	if (window_get_fullscreen())
-	{
-		display_mouse_lock(x, y, window_get_width(), window_get_height());
-	}
-	else
-	{
-		display_mouse_lock(window_get_x(), window_get_y(), window_get_width(), window_get_height());
-	}
+	display_mouse_unlock();
 }
 
 if (keyboard_check_pressed(vk_f1))

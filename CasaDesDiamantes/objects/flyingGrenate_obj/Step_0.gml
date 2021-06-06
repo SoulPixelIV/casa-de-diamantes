@@ -42,5 +42,5 @@ if (timer < 200)
 }
 if (timer < 0)
 {
-	instance_change(explosion_obj, true);
+	instance_change(explosionTiny_obj, true);
 }

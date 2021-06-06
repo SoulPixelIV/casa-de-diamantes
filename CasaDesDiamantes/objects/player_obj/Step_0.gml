@@ -614,7 +614,7 @@ if (onLadder && !isZombie && !isDashing)
 	}
 }
 
-if (!isZombie)
+if (!isZombie && !deathActivated)
 {
 	//Pistol
 	with (gameManager_obj)
@@ -912,7 +912,7 @@ switch (sprite_index)
 
 if (grounded || !flip)
 {
-	if (!wallJumpingInAir && !isDashing && !huggingWall && !setWallDir)
+	if (!wallJumpingInAir && !isDashing && !huggingWall && !setWallDir && !deathActivated)
 	{
 		if (dirCursor > 90 && dirCursor < 270)
 		{
@@ -967,6 +967,11 @@ if (damageCooldown < 0)
 
 if (hp <= 0 || infection > hp)
 {
+	if (global.syringes < 1)
+	{
+		camera_obj.finalDeath = true;
+	}
+	sprite_index = playerDeath_spr;
 	//Death
 	if (!deathActivated)
 	{

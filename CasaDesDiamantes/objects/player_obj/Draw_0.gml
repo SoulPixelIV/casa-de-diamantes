@@ -51,7 +51,7 @@ else
 	sniperSprite = playerSniper_spr
 }
 	
-if (!isZombie)
+if (!isZombie && !deathActivated)
 {
 	if (!onLadder || (onLadder && verspeed == 0))
 	{

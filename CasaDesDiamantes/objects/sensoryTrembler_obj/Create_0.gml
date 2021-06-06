@@ -17,6 +17,9 @@ randMovDir = 1;
 randDirChangeTimer = 150;
 shootDelay = 5;
 smokeDelay = 4;
+slamDelay = 200;
+slamPos = 0;
+slam = false;
 initialShootDelay = 100;
 lastBullet = bulletPistol_obj;
 ammoSpawnCount = 4;
@@ -60,6 +63,7 @@ damageTintTimerSave = damageTintTimer;
 gravityStrengthSave = gravityStrength;
 randDirChangeTimerSave = randDirChangeTimer;
 initialShootDelaySave = initialShootDelay;
+slamDelaySave = slamDelay;
 
 //Create Emitter
 emitter = audio_emitter_create();
