@@ -18,6 +18,8 @@ randDirChangeTimer = 150;
 shootDelay = 5;
 smokeDelay = 4;
 slamDelay = 200;
+pauseDelay = 100;
+pause = false;
 slamPos = 0;
 slam = false;
 initialShootDelay = 100;
@@ -64,6 +66,7 @@ gravityStrengthSave = gravityStrength;
 randDirChangeTimerSave = randDirChangeTimer;
 initialShootDelaySave = initialShootDelay;
 slamDelaySave = slamDelay;
+pauseDelaySave = pauseDelay;
 
 //Create Emitter
 emitter = audio_emitter_create();

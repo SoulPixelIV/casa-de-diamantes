@@ -319,8 +319,8 @@ if (attackInProg)
 	{
 		instance_create_layer(player_obj.x + random_range(-76, 76), player_obj.y + 26, "Instances", targetCircle_obj);
 	}
-	instance_create_layer(x - 16, y - 168, "ForegroundObjects", shotLightShotgun_obj);
-	instance_create_layer(x - 16, y - 168, "ForegroundObjects", smokecloud_obj);
+	instance_create_layer(x - 16 + slamPos, y - 168, "ForegroundObjects", shotLightShotgun_obj);
+	instance_create_layer(x - 16, y - 168 + slamPos, "ForegroundObjects", smokecloud_obj);
 	screenshake(50, 12, 0.6, id);
 	attackCooldown = attackCooldownSave;
 	attackInProg = false;
@@ -338,8 +338,8 @@ if (attackInProg2)
 			shootDelay -= global.dt;
 			if (shootDelay < 0)
 			{
-				bullet1 = instance_create_layer(x - 52 + random_range(-1, 1), y - 79, "Instances", bulletSensoryTrembler_obj);
-				bullet2 = instance_create_layer(x + 52 + random_range(-1, 1), y - 79, "Instances", bulletSensoryTrembler_obj);
+				bullet1 = instance_create_layer(x - 52 + random_range(-1, 1), y - 79 + slamPos, "Instances", bulletSensoryTrembler_obj);
+				bullet2 = instance_create_layer(x + 52 + random_range(-1, 1), y - 79 + slamPos, "Instances", bulletSensoryTrembler_obj);
 				bullet1.dir = 200;
 				bullet1.dirChange = true;
 				bullet2.dir = 330;
@@ -355,15 +355,17 @@ if (attackInProg2)
 //Start Attack 3
 if (attackInProg3)
 {
-	smokeDelay -= global.dt;
-	slamDelay -= global.dt;
+	if (!pause && !slam)
+	{
+		smokeDelay -= global.dt;
+		slamDelay -= global.dt;
+	}
 	if (smokeDelay < 0)
 	{
-		instance_create_layer(x - 50 + random_range(-1, 1), y - 136, "ForegroundObjects", dustParticle_obj);
-		instance_create_layer(x + 57 + random_range(-1, 1), y - 136, "ForegroundObjects", dustParticle_obj);
+		instance_create_layer(x - 50 + random_range(-1, 1), y - 136 + slamPos, "ForegroundObjects", dustParticle_obj);
+		instance_create_layer(x + 57 + random_range(-1, 1), y - 136 + slamPos, "ForegroundObjects", dustParticle_obj);
 		smokeDelay = 4;
 	}
-	attackCooldown = attackCooldownSave;
 	
 	if (slamDelay < 0)
 	{
@@ -380,9 +382,9 @@ if (slam)
 	}
 	else
 	{
-		if (!delay)
+		if (!pause)
 		{
-			slamHitbox = instance_create_layer(x, y - 16, "Instances", damageHitbox_obj);
+			slamHitbox = instance_create_layer(x, y - 16, "Instances", damageHitboxKnockback_obj);
 			slamHitbox.image_yscale = 2;
 			slamHitbox.image_xscale = 4;
 			slamHitbox.damage = damage;
@@ -390,7 +392,28 @@ if (slam)
 			slamHitbox.knockback = 5;
 			
 		}
-		delay = true;
+		pause = true;
+		slam = false;
+	}
+}
+
+if (pause)
+{
+	pauseDelay -= global.dt;
+	if (pauseDelay < 0)
+	{
+		if (slamPos > 0)
+		{
+			slamPos -= global.dt / 2;
+		}
+		else
+		{
+			slamPos = 0;
+			pauseDelay = pauseDelaySave;
+			pause = false;
+			attackCooldown = attackCooldownSave;
+			delay = true;
+		}
 	}
 }
 	

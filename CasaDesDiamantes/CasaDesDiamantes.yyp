@@ -510,6 +510,7 @@
     {"id":{"name":"light_create","path":"scripts/light_create/light_create.yy",},"order":3,},
     {"id":{"name":"casinoPillar_obj","path":"objects/casinoPillar_obj/casinoPillar_obj.yy",},"order":31,},
     {"id":{"name":"light_create_point","path":"scripts/light_create_point/light_create_point.yy",},"order":4,},
+    {"id":{"name":"damageHitboxKnockback_obj","path":"objects/damageHitboxKnockback_obj/damageHitboxKnockback_obj.yy",},"order":5,},
     {"id":{"name":"CH_RTC1_teleporter","path":"objects/CH_RTC1_teleporter/CH_RTC1_teleporter.yy",},"order":5,},
     {"id":{"name":"light_create_spot","path":"scripts/light_create_spot/light_create_spot.yy",},"order":5,},
     {"id":{"name":"light_create_directional","path":"scripts/light_create_directional/light_create_directional.yy",},"order":6,},
