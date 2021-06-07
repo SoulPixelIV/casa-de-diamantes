@@ -22,6 +22,7 @@ pauseDelay = 100;
 pause = false;
 slamPos = 0;
 slam = false;
+slamSprite = false;
 initialShootDelay = 100;
 lastBullet = bulletPistol_obj;
 ammoSpawnCount = 4;

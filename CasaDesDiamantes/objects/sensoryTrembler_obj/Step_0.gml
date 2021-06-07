@@ -376,6 +376,7 @@ if (attackInProg3)
 
 if (slam)
 {
+	slamSprite = true;
 	if (slamPos < 46)
 	{
 		slamPos += global.dt * 4;
@@ -402,6 +403,7 @@ if (pause)
 	pauseDelay -= global.dt;
 	if (pauseDelay < 0)
 	{
+		slamSprite = false;
 		if (slamPos > 0)
 		{
 			slamPos -= global.dt / 2;
