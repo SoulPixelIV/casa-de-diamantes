@@ -17,7 +17,8 @@ jumpType = 0;
 inputMethod = 0; //0 -> Keyboard | 1 -> Controller
 controllerDeadzone = 0.3;
 controllerDirLastInput = 0;
-
+playerRotation = 0;
+instance_create_layer(x - 2 * image_xscale, y - 20, "ForegroundObjects", christmasHat_obj);
 //Physics
 gravityStrength = -0.03; //Lower is lower gravity
 gravityOn = true;

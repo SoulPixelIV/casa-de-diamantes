@@ -7,6 +7,12 @@ dualBarettasSprite = playerDualBarettas_spr;
 shotgunSprite = playerShotgun_spr;
 sniperSprite = playerSniper_spr;
 
+if (flip)
+{
+	playerRotation += global.dt * 2.75;
+	draw_sprite_ext(playerFlip_spr, 0, x, y, image_xscale, 1, playerRotation, -1, 1);
+}
+
 //Controller Line
 if (inputMethod == 1)
 {
@@ -57,40 +63,59 @@ if (!isZombie && !deathActivated)
 	{
 		if (global.currentWeapon == gameManager_obj.pickedWeapon.unarmed)
 		{
-			draw_self();
+			if (!flip)
+			{
+				draw_self();
+			}
 		}
 		if (global.currentWeapon == gameManager_obj.pickedWeapon.pistol)
 		{
-			draw_self();
+			if (!flip)
+			{
+				draw_self();
+			}
 			draw_sprite_ext(pistolSprite, animated, x + ((4 + spinWeaponPos) * currDir) * changePos, y - 4.3, 1, -currDir, dirCursor, -1, 1);
 		}
 		if (global.currentWeapon == gameManager_obj.pickedWeapon.dualBarettas)
 		{
 			//First arm
 			draw_sprite_ext(dualBarettasSprite, animated, x - ((4 + spinWeaponPos * changePos) * currDir), y - 4.3, 1, -currDir, dirCursor, -1, 1);
-			draw_self();
+			if (!flip)
+			{
+				draw_self();
+			}
 			//Second arm
 			draw_sprite_ext(dualBarettasSprite, animated, x + ((4 + spinWeaponPos * changePos) * currDir) * changePos, y - 3.3, 1, -currDir, dirCursor, -1, 1);		
 		}
 		if (global.currentWeapon == gameManager_obj.pickedWeapon.shotgun)
 		{
-			draw_self();
+			if (!flip)
+			{
+				draw_self();
+			}
 			draw_sprite_ext(shotgunSprite, animated, x + ((4 + spinWeaponPos) * currDir) * changePos, y - 4.3, 1, -currDir, dirCursor, -1, 1);
 		}
 		if (global.currentWeapon == gameManager_obj.pickedWeapon.sniper)
 		{
-			draw_self();
+			if (!flip)
+			{
+				draw_self();
+			}
 			draw_sprite_ext(sniperSprite, animated, x + ((4 + spinWeaponPos) * currDir) * changePos, y - 4.3, 1, -currDir, dirCursor, -1, 1);
 		}
 	}
 	else
 	{
-		draw_self();
+		if (!flip)
+		{
+			draw_self();
+		}
 	}
 }
 else
 {
-	draw_self();
+	if (!flip)
+	{
+		draw_self();
+	}
 }
-
-//draw_sprite_ext(christmasHat_spr, spriteAnimation, x - (2 * -currDir), y - 19, -currDir, 1, 0, -1, 1);

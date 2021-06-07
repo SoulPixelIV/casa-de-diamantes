@@ -273,6 +273,7 @@ if (movement && !isZombie)
 	}
 	if (huggingWall)
 	{
+		flip = false;
 		//slowmo = false;
 		//Check if there is space to cancel dash
 		if (place_free(x, y + 32))
@@ -299,7 +300,7 @@ with (gameManager_obj)
 	{
 		if (key_jump && !huggingWall && !wallJumping && !grounded && !isDashing && !flipUsed && jumpType == 1 && fallJumpSafety < 0 && wallJumps > 0 && movement)
 		{
-			sprite_index = playerFlip_spr;
+			//sprite_index = playerFlip_spr;
 			flip = true;
 			flipUsed = true;
 			jump_scr();
@@ -861,7 +862,6 @@ if ((global.pistolAmmo > 0 || global.shotgunAmmo > 0 || global.sniperAmmo > 0) &
 		pickWeapon_scr(gun);
 	}
 }
-
 
 //Animation
 image_speed = 0;
