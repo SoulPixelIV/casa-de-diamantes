@@ -12,16 +12,14 @@ image_index = player_obj.image_index;
 x = originX + lengthdir_x(radius, theta);
 y = originY + lengthdir_y(radius, theta);
 
+sprite_index = christmasHat_spr;
+
 if (player_obj.isDashing)
 {
 	sprite_index = christmasHatDash_spr;
 }
-else
-if (player_obj.spin)
+
+if (player_obj.spin && !player_obj.flip)
 {
 	sprite_index = christmasHatSpin_spr;
-}
-else
-{
-	sprite_index = christmasHat_spr;
 }

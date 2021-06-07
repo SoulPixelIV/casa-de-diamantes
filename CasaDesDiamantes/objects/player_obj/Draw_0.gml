@@ -9,7 +9,7 @@ sniperSprite = playerSniper_spr;
 
 if (flip)
 {
-	playerRotation += global.dt * 2.75;
+	playerRotation += (global.dt * 2.25) * -image_xscale;
 	draw_sprite_ext(playerFlip_spr, 0, x, y, image_xscale, 1, playerRotation, -1, 1);
 }
 
