@@ -12,6 +12,10 @@ if (flip)
 	playerRotation += (global.dt * 2.25) * -image_xscale;
 	draw_sprite_ext(playerFlip_spr, 0, x, y, image_xscale, 1, playerRotation, -1, 1);
 }
+else
+{
+	playerRotation = 0;
+}
 
 //Controller Line
 if (inputMethod == 1)
@@ -118,4 +122,48 @@ else
 	{
 		draw_self();
 	}
+}
+
+//Draw Accessories
+originX = player_obj.x;
+originY = player_obj.y;
+
+if (!isDashing)
+{
+	theta = player_obj.playerRotation + 90;
+}
+else
+{
+	theta = 90;
+}
+
+if (stillInAir)
+{
+	theta = 90;
+}
+
+drawSprite = beret_spr;
+
+if (spin && !flip && !isDashing)
+{
+	drawSprite = beretSpin_spr;
+}
+
+if (isDashing)
+{
+	drawSprite = beretDash_spr;
+}
+
+if (horspeed != 0 && grounded && !isDashing && !spin && !flip)
+{
+	drawSprite = beretWalking_spr;
+}
+
+if (flip)
+{
+	draw_sprite_ext(drawSprite, -1, originX + lengthdir_x(radius, theta), originY + lengthdir_y(radius, theta), image_xscale, 1, playerRotation, -1, 1);
+}
+else
+{
+	draw_sprite_ext(drawSprite, -1, x, y - 20, image_xscale, 1, playerRotation, -1, 1);
 }

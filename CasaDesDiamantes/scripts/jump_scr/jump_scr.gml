@@ -22,6 +22,7 @@ function jump_scr() {
 	if ((player_obj.isDashing && place_free(x, y - 32)))
 	{
 		player_obj.stoppedDashing = true;
+		player_obj.stillInAir = true;
 		if (player_obj.horspeed == 0)
 		{
 			if (player_obj.image_xscale == 1)

@@ -12,13 +12,14 @@ dashSpeed = 1.23;
 wallJumps = 3;
 wallJumpsMax = wallJumps;
 dashDelay = 300;
+stillInAir = false;
 animationSpeed = 1;
 jumpType = 0;
 inputMethod = 0; //0 -> Keyboard | 1 -> Controller
 controllerDeadzone = 0.3;
 controllerDirLastInput = 0;
 playerRotation = 0;
-instance_create_layer(x - 2 * image_xscale, y - 20, "ForegroundObjects", christmasHat_obj);
+
 //Physics
 gravityStrength = -0.03; //Lower is lower gravity
 gravityOn = true;
@@ -119,6 +120,14 @@ shotZoomTimerSave = shotZoomTimer;
 groundCollisionTimerSave = groundCollisionTimer;
 dashDelaySave = dashDelay;
 gravityStrengthSave = gravityStrength;
+
+//Accessories
+theta = 0;
+
+originX = player_obj.x;
+originY = player_obj.y;
+
+radius = point_distance(originX, originY, x, y - 20);
 
 //Second Dualbarettas arm
 sprID = layer_sprite_create("BackgroundObjects", -1000, -1000, playerDualBarettas_spr);
