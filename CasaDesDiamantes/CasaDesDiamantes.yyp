@@ -603,7 +603,6 @@
     {"id":{"name":"cameraOld_obj","path":"objects/cameraOld_obj/cameraOld_obj.yy",},"order":0,},
     {"id":{"name":"camera_obj","path":"objects/camera_obj/camera_obj.yy",},"order":0,},
     {"id":{"name":"cameraBlackjack_obj","path":"objects/cameraBlackjack_obj/cameraBlackjack_obj.yy",},"order":1,},
-    {"id":{"name":"christmasHat_obj","path":"objects/christmasHat_obj/christmasHat_obj.yy",},"order":3,},
     {"id":{"name":"playerBulletLine_obj","path":"objects/playerBulletLine_obj/playerBulletLine_obj.yy",},"order":2,},
     {"id":{"name":"cindy_obj","path":"objects/cindy_obj/cindy_obj.yy",},"order":0,},
     {"id":{"name":"hordemodeSystem_obj","path":"objects/hordemodeSystem_obj/hordemodeSystem_obj.yy",},"order":57,},

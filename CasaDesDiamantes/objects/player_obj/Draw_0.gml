@@ -142,21 +142,30 @@ if (stillInAir)
 	theta = 90;
 }
 
-drawSprite = beret_spr;
+drawSprite = global.hat;
 
 if (spin && !flip && !isDashing)
 {
-	drawSprite = beretSpin_spr;
+	if (global.hat == beret_spr)
+	{
+		drawSprite = beretSpin_spr;
+	}
 }
 
 if (isDashing)
 {
-	drawSprite = beretDash_spr;
+	if (global.hat == beret_spr)
+	{
+		drawSprite = beretDash_spr;
+	}
 }
 
 if (horspeed != 0 && grounded && !isDashing && !spin && !flip)
 {
-	drawSprite = beretWalking_spr;
+	if (global.hat == beret_spr)
+	{
+		drawSprite = beretWalking_spr;
+	}
 }
 
 if (flip)

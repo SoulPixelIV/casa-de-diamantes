@@ -35,6 +35,11 @@ global.sniperCooldownSave = global.sniperCooldown;
 global.sniperReload = 600;
 global.sniperReloadSave = global.sniperReload;
 
+global.hat = beret_spr;
+global.top = noone;
+global.bottom = noone;
+global.shoes = noone;
+
 enum pickedWeapon {
 	unarmed,
 	pistol,
