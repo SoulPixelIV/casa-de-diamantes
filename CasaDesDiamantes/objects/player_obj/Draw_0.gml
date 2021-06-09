@@ -7,6 +7,55 @@ dualBarettasSprite = playerDualBarettas_spr;
 shotgunSprite = playerShotgun_spr;
 sniperSprite = playerSniper_spr;
 
+//Draw Accessories
+originX = player_obj.x;
+originY = player_obj.y;
+
+if (!isDashing)
+{
+	theta = player_obj.playerRotation + 90;
+}
+else
+{
+	theta = 90;
+}
+
+if (stillInAir)
+{
+	theta = 90;
+}
+
+drawSpriteHat = global.hat;
+drawSpriteTop1 = global.top1;
+
+if (spin && !flip && !isDashing)
+{
+	if (global.hat == beret_spr)
+	{
+		drawSpriteHat = beretSpin_spr;
+	}
+	if (global.top1 == smokingTop_spr)
+	{
+		drawSpriteTop1 = smokingTop_spr;
+	}
+}
+
+if (isDashing)
+{
+	if (global.hat == beret_spr)
+	{
+		drawSpriteHat = beretDash_spr;
+	}
+}
+
+if (horspeed != 0 && grounded && !isDashing && !spin && !flip)
+{
+	if (global.hat == beret_spr)
+	{
+		drawSpriteHat = beretWalking_spr;
+	}
+}
+
 if (flip)
 {
 	playerRotation += (global.dt * 2.25) * -image_xscale;
@@ -70,6 +119,12 @@ if (!isZombie && !deathActivated)
 			if (!flip)
 			{
 				draw_self();
+				draw_sprite_ext(drawSpriteHat, -1, x, y - 20, image_xscale, 1, playerRotation, -1, 1);
+				draw_sprite_ext(drawSpriteTop1, -1, x, y, image_xscale, 1, playerRotation, -1, 1);
+			}
+			else
+			{
+				draw_sprite_ext(drawSpriteHat, -1, originX + lengthdir_x(radius, theta), originY + lengthdir_y(radius, theta), image_xscale, 1, playerRotation, -1, 1);
 			}
 		}
 		if (global.currentWeapon == gameManager_obj.pickedWeapon.pistol)
@@ -77,6 +132,12 @@ if (!isZombie && !deathActivated)
 			if (!flip)
 			{
 				draw_self();
+				draw_sprite_ext(drawSpriteHat, -1, x, y - 20, image_xscale, 1, playerRotation, -1, 1);
+				draw_sprite_ext(drawSpriteTop1, -1, x, y, image_xscale, 1, playerRotation, -1, 1);
+			}
+			else
+			{
+				draw_sprite_ext(drawSpriteHat, -1, originX + lengthdir_x(radius, theta), originY + lengthdir_y(radius, theta), image_xscale, 1, playerRotation, -1, 1);
 			}
 			draw_sprite_ext(pistolSprite, animated, x + ((4 + spinWeaponPos) * currDir) * changePos, y - 4.3, 1, -currDir, dirCursor, -1, 1);
 		}
@@ -87,6 +148,12 @@ if (!isZombie && !deathActivated)
 			if (!flip)
 			{
 				draw_self();
+				draw_sprite_ext(drawSpriteHat, -1, x, y - 20, image_xscale, 1, playerRotation, -1, 1);
+				draw_sprite_ext(drawSpriteTop1, -1, x, y, image_xscale, 1, playerRotation, -1, 1);
+			}
+			else
+			{
+				draw_sprite_ext(drawSpriteHat, -1, originX + lengthdir_x(radius, theta), originY + lengthdir_y(radius, theta), image_xscale, 1, playerRotation, -1, 1);
 			}
 			//Second arm
 			draw_sprite_ext(dualBarettasSprite, animated, x + ((4 + spinWeaponPos * changePos) * currDir) * changePos, y - 3.3, 1, -currDir, dirCursor, -1, 1);		
@@ -96,6 +163,12 @@ if (!isZombie && !deathActivated)
 			if (!flip)
 			{
 				draw_self();
+				draw_sprite_ext(drawSpriteHat, -1, x, y - 20, image_xscale, 1, playerRotation, -1, 1);
+				draw_sprite_ext(drawSpriteTop1, -1, x, y, image_xscale, 1, playerRotation, -1, 1);
+			}
+			else
+			{
+				draw_sprite_ext(drawSpriteHat, -1, originX + lengthdir_x(radius, theta), originY + lengthdir_y(radius, theta), image_xscale, 1, playerRotation, -1, 1);
 			}
 			draw_sprite_ext(shotgunSprite, animated, x + ((4 + spinWeaponPos) * currDir) * changePos, y - 4.3, 1, -currDir, dirCursor, -1, 1);
 		}
@@ -104,6 +177,12 @@ if (!isZombie && !deathActivated)
 			if (!flip)
 			{
 				draw_self();
+				draw_sprite_ext(drawSpriteHat, -1, x, y - 20, image_xscale, 1, playerRotation, -1, 1);
+				draw_sprite_ext(drawSpriteTop1, -1, x, y, image_xscale, 1, playerRotation, -1, 1);
+			}
+			else
+			{
+				draw_sprite_ext(drawSpriteHat, -1, originX + lengthdir_x(radius, theta), originY + lengthdir_y(radius, theta), image_xscale, 1, playerRotation, -1, 1);
 			}
 			draw_sprite_ext(sniperSprite, animated, x + ((4 + spinWeaponPos) * currDir) * changePos, y - 4.3, 1, -currDir, dirCursor, -1, 1);
 		}
@@ -113,6 +192,12 @@ if (!isZombie && !deathActivated)
 		if (!flip)
 		{
 			draw_self();
+			draw_sprite_ext(drawSpriteHat, -1, x, y - 20, image_xscale, 1, playerRotation, -1, 1);
+			draw_sprite_ext(drawSpriteTop1, -1, x, y, image_xscale, 1, playerRotation, -1, 1);
+		}
+		else
+		{
+			draw_sprite_ext(drawSpriteHat, -1, originX + lengthdir_x(radius, theta), originY + lengthdir_y(radius, theta), image_xscale, 1, playerRotation, -1, 1);
 		}
 	}
 }
@@ -121,58 +206,11 @@ else
 	if (!flip)
 	{
 		draw_self();
+		draw_sprite_ext(drawSpriteHat, -1, x, y - 20, image_xscale, 1, playerRotation, -1, 1);
+		draw_sprite_ext(drawSpriteTop1, -1, x, y, image_xscale, 1, playerRotation, -1, 1);
 	}
-}
-
-//Draw Accessories
-originX = player_obj.x;
-originY = player_obj.y;
-
-if (!isDashing)
-{
-	theta = player_obj.playerRotation + 90;
-}
-else
-{
-	theta = 90;
-}
-
-if (stillInAir)
-{
-	theta = 90;
-}
-
-drawSprite = global.hat;
-
-if (spin && !flip && !isDashing)
-{
-	if (global.hat == beret_spr)
+	else
 	{
-		drawSprite = beretSpin_spr;
+		draw_sprite_ext(drawSpriteHat, -1, originX + lengthdir_x(radius, theta), originY + lengthdir_y(radius, theta), image_xscale, 1, playerRotation, -1, 1);
 	}
-}
-
-if (isDashing)
-{
-	if (global.hat == beret_spr)
-	{
-		drawSprite = beretDash_spr;
-	}
-}
-
-if (horspeed != 0 && grounded && !isDashing && !spin && !flip)
-{
-	if (global.hat == beret_spr)
-	{
-		drawSprite = beretWalking_spr;
-	}
-}
-
-if (flip)
-{
-	draw_sprite_ext(drawSprite, -1, originX + lengthdir_x(radius, theta), originY + lengthdir_y(radius, theta), image_xscale, 1, playerRotation, -1, 1);
-}
-else
-{
-	draw_sprite_ext(drawSprite, -1, x, y - 20, image_xscale, 1, playerRotation, -1, 1);
 }

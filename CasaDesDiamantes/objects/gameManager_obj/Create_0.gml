@@ -36,7 +36,8 @@ global.sniperReload = 600;
 global.sniperReloadSave = global.sniperReload;
 
 global.hat = beret_spr;
-global.top = noone;
+global.top1 = smokingTop_spr;
+global.top2 = noone;
 global.bottom = noone;
 global.shoes = noone;
 

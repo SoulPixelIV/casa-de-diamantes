@@ -484,7 +484,14 @@ with (gameManager_obj)
 						}
 						else
 						{
-							sprite_index = playerEquipped_spr;
+							if (global.top1 == noone)
+							{
+								sprite_index = playerEquipped_spr;
+							}
+							else
+							{
+								sprite_index = playerEquippedNude_spr;
+							}
 						}
 					}
 					else
@@ -518,7 +525,14 @@ with (gameManager_obj)
 						}
 						else
 						{
-							sprite_index = player_spr;
+							if (global.top1 == noone)
+							{
+								sprite_index = player_spr;
+							}
+							else
+							{
+								sprite_index = playerNude_spr;
+							}
 						}
 					}
 					else
@@ -602,11 +616,25 @@ if (onLadder && !isZombie && !isDashing)
 	{
 		if (global.currentWeapon != unarmed)
 		{
-			sprite_index = playerEquipped_spr;
+			if (global.top1 == noone)
+			{
+				sprite_index = playerEquipped_spr;
+			}
+			else
+			{
+				sprite_index = playerEquippedNude_spr;
+			}
 		}
 		else
 		{
-			sprite_index = player_spr;
+			if (global.top1 == noone)
+			{
+				sprite_index = player_spr;
+			}
+			else
+			{
+				sprite_index = playerNude_spr;
+			}
 		}
 	}
 	else
@@ -878,6 +906,9 @@ switch (sprite_index)
 	case player_spr:
 		animationSpeed = 0.5;
 		break;
+	case playerNude_spr:
+		animationSpeed = 0.5;
+		break;
 	case zombieGirl_spr:
 		animationSpeed = 0.25;
 		break;
@@ -891,6 +922,9 @@ switch (sprite_index)
 		animationSpeed = 1.2;
 		break;
 	case playerEquipped_spr:
+		animationSpeed = 0.5;
+		break;
+	case playerEquippedNude_spr:
 		animationSpeed = 0.5;
 		break;
 	case playerWalkingEquipped_spr:
