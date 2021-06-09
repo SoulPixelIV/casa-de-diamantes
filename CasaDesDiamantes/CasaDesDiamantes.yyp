@@ -108,6 +108,7 @@
     {"id":{"name":"syringeGate_spr","path":"sprites/syringeGate_spr/syringeGate_spr.yy",},"order":114,},
     {"id":{"name":"christmasHatSpin_spr","path":"sprites/christmasHatSpin_spr/christmasHatSpin_spr.yy",},"order":2,},
     {"id":{"name":"healthbarTop_spr","path":"sprites/healthbarTop_spr/healthbarTop_spr.yy",},"order":14,},
+    {"id":{"name":"SmokingTop_spr","path":"sprites/SmokingTop_spr/SmokingTop_spr.yy",},"order":0,},
     {"id":{"name":"healthbarTop2_spr","path":"sprites/healthbarTop2_spr/healthbarTop2_spr.yy",},"order":15,},
     {"id":{"name":"hugeTree2_spr","path":"sprites/hugeTree2_spr/hugeTree2_spr.yy",},"order":30,},
     {"id":{"name":"infectionbarBorder_spr","path":"sprites/infectionbarBorder_spr/infectionbarBorder_spr.yy",},"order":16,},
@@ -892,11 +893,11 @@
   },
   "RoomOrderNodes": [
     {"roomId":{"name":"loadVars","path":"rooms/loadVars/loadVars.yy",},},
+    {"roomId":{"name":"level1_SenzelaForest","path":"rooms/level1_SenzelaForest/level1_SenzelaForest.yy",},},
     {"roomId":{"name":"level2_SenzelaForest","path":"rooms/level2_SenzelaForest/level2_SenzelaForest.yy",},},
     {"roomId":{"name":"level0_RoadToCasino","path":"rooms/level0_RoadToCasino/level0_RoadToCasino.yy",},},
     {"roomId":{"name":"level3_SenzelaForest","path":"rooms/level3_SenzelaForest/level3_SenzelaForest.yy",},},
     {"roomId":{"name":"levelTower_hordemode","path":"rooms/levelTower_hordemode/levelTower_hordemode.yy",},},
-    {"roomId":{"name":"level1_SenzelaForest","path":"rooms/level1_SenzelaForest/level1_SenzelaForest.yy",},},
     {"roomId":{"name":"level_Casino","path":"rooms/level_Casino/level_Casino.yy",},},
     {"roomId":{"name":"level_CasinoHub","path":"rooms/level_CasinoHub/level_CasinoHub.yy",},},
     {"roomId":{"name":"blackjackTable","path":"rooms/blackjackTable/blackjackTable.yy",},},
@@ -1021,6 +1022,7 @@
     {"folderPath":"folders/Enemies/Enemy Sprites/SensoryTrembler.yy","order":6,"resourceVersion":"1.0","name":"SensoryTrembler","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Steph/Clothes/ChristmasHat.yy","order":0,"resourceVersion":"1.0","name":"ChristmasHat","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Steph/Clothes/Beret.yy","order":1,"resourceVersion":"1.0","name":"Beret","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Steph/Clothes/SmokingTop.yy","order":2,"resourceVersion":"1.0","name":"SmokingTop","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":-1,"resourceVersion":"1.3","name":"audiogroup_default","resourceType":"GMAudioGroup",},
