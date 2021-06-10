@@ -192,8 +192,15 @@ if (isDashing && !onLadder)
 		{
 			with (player_obj)
 			{
-				sprite_index = playerDashUnequipped_spr;
-				if (image_index > image_number - 1 && sprite_index == playerDashUnequipped_spr)
+				if (global.top1 == noone)
+				{
+					sprite_index = playerDashUnequipped_spr;
+				}
+				else
+				{
+					sprite_index = playerDashUnequippedNude_spr;
+				}
+				if (image_index > image_number - 1 && (sprite_index == playerDashUnequipped_spr || sprite_index == playerDashUnequippedNude_spr))
 				{
 					image_index = image_number - 1;
 				}
@@ -203,8 +210,15 @@ if (isDashing && !onLadder)
 		{
 			with (player_obj)
 			{
-				sprite_index = playerDash_spr;
-				if (image_index > image_number - 1 && sprite_index == playerDash_spr)
+				if (global.top1 == noone)
+				{
+					sprite_index = playerDash_spr;
+				}
+				else
+				{
+					sprite_index = playerDashNude_spr;
+				}
+				if (image_index > image_number - 1 && (sprite_index == playerDash_spr || sprite_index == playerDashNude_spr))
 				{
 					image_index = image_number - 1;
 				}
@@ -319,7 +333,14 @@ if (!grounded && !isZombie && !flip && !isDashing && !groundCollisionTimerOn && 
 {
 	if (horspeed < movSpeed - 0.3 || horspeed > -movSpeed + 0.3)
 	{
-		sprite_index = playerJumpSpin_spr;
+		if (global.top1 == noone)
+		{
+			sprite_index = playerJumpSpin_spr;
+		}
+		else
+		{
+			sprite_index = playerJumpSpinNude_spr;
+		}
 		spin = true;
 	}
 }
@@ -480,7 +501,14 @@ with (gameManager_obj)
 					{
 						if (horspeed != 0 && movement)
 						{
-							sprite_index = playerWalkingEquipped_spr;
+							if (global.top1 == noone)
+							{
+								sprite_index = playerWalkingEquipped_spr;
+							}
+							else
+							{
+								sprite_index = playerWalkingEquippedNude_spr;
+							}
 						}
 						else
 						{
@@ -521,7 +549,14 @@ with (gameManager_obj)
 					{
 						if (horspeed != 0)
 						{
-							sprite_index = playerWalking_spr;
+							if (global.top1 == noone)
+							{
+								sprite_index = playerWalking_spr;
+							}
+							else
+							{
+								sprite_index = playerWalkingNude_spr;
+							}
 						}
 						else
 						{
@@ -560,7 +595,14 @@ with (gameManager_obj)
 					{
 						if (verspeed < 0)
 						{
-							sprite_index = playerJumpSpinUnequipped_spr;
+							if (global.top1 == noone)
+							{
+								sprite_index = playerJumpSpinUnequipped_spr;
+							}
+							else
+							{
+								sprite_index = playerJumpSpinUnequippedNude_spr;
+							}
 						}
 						else
 						{
@@ -918,7 +960,13 @@ switch (sprite_index)
 	case playerJumpSpin_spr:
 		animationSpeed = 1.2;
 		break;
+	case playerJumpSpinNude_spr:
+		animationSpeed = 1.2;
+		break;
 	case playerJumpSpinUnequipped_spr:
+		animationSpeed = 1.2;
+		break;
+	case playerJumpSpinUnequippedNude_spr:
 		animationSpeed = 1.2;
 		break;
 	case playerEquipped_spr:
@@ -930,7 +978,13 @@ switch (sprite_index)
 	case playerWalkingEquipped_spr:
 		animationSpeed = 0.8;
 		break;
+	case playerWalkingEquippedNude_spr:
+		animationSpeed = 0.8;
+		break;
 	case playerWalking_spr:
+		animationSpeed = 0.8;
+		break;
+	case playerWalkingNude_spr:
 		animationSpeed = 0.8;
 		break;
 	case playerJump_spr:
@@ -1050,7 +1104,7 @@ if (plagueTransformation)
 //Slowmotion
 if (!deathSlowmo)
 {	
-	if (slowmo)
+	if (slowmo || keyboard_check(vk_enter))
 	{
 		global.timeScale = 0.2;
 	}

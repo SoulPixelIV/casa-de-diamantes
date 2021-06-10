@@ -128,6 +128,7 @@ originX = player_obj.x;
 originY = player_obj.y;
 
 radius = point_distance(originX, originY, x, y - 20);
+radiusTop1 = point_distance(originX, originY, x, y);
 
 //Second Dualbarettas arm
 sprID = layer_sprite_create("BackgroundObjects", -1000, -1000, playerDualBarettas_spr);

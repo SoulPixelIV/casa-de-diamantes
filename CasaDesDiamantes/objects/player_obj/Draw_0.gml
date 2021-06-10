@@ -11,13 +11,13 @@ sniperSprite = playerSniper_spr;
 originX = player_obj.x;
 originY = player_obj.y;
 
-if (!isDashing)
+if (isDashing || huggingWall)
 {
-	theta = player_obj.playerRotation + 90;
+	theta = 90;
 }
 else
 {
-	theta = 90;
+	theta = player_obj.playerRotation + 90;
 }
 
 if (stillInAir)
@@ -36,7 +36,7 @@ if (spin && !flip && !isDashing)
 	}
 	if (global.top1 == smokingTop_spr)
 	{
-		drawSpriteTop1 = smokingTop_spr;
+		drawSpriteTop1 = smokingTopSpin_spr;
 	}
 }
 
@@ -46,6 +46,10 @@ if (isDashing)
 	{
 		drawSpriteHat = beretDash_spr;
 	}
+	if (global.top1 == smokingTop_spr)
+	{
+		drawSpriteTop1 = smokingTopDash_spr;
+	}
 }
 
 if (horspeed != 0 && grounded && !isDashing && !spin && !flip)
@@ -54,12 +58,23 @@ if (horspeed != 0 && grounded && !isDashing && !spin && !flip)
 	{
 		drawSpriteHat = beretWalking_spr;
 	}
+	if (global.top1 == smokingTop_spr)
+	{
+		drawSpriteTop1 = smokingTopWalking_spr;
+	}
 }
 
 if (flip)
 {
 	playerRotation += (global.dt * 2.25) * -image_xscale;
-	draw_sprite_ext(playerFlip_spr, 0, x, y, image_xscale, 1, playerRotation, -1, 1);
+	if (global.top1 == noone)
+	{
+		draw_sprite_ext(playerFlip_spr, 0, x, y, image_xscale, 1, playerRotation, -1, 1);
+	}
+	else
+	{
+		draw_sprite_ext(playerFlipNude_spr, 0, x, y, image_xscale, 1, playerRotation, -1, 1);
+	}
 }
 else
 {
@@ -124,7 +139,8 @@ if (!isZombie && !deathActivated)
 			}
 			else
 			{
-				draw_sprite_ext(drawSpriteHat, -1, originX + lengthdir_x(radius, theta), originY + lengthdir_y(radius, theta), image_xscale, 1, playerRotation, -1, 1);
+				draw_sprite_ext(drawSpriteHat, 0, originX + lengthdir_x(radius, theta), originY + lengthdir_y(radius, theta), image_xscale, 1, playerRotation, -1, 1);
+				draw_sprite_ext(drawSpriteTop1, 0, originX + lengthdir_x(radiusTop1, theta), originY + lengthdir_y(radiusTop1, theta), image_xscale, 1, playerRotation, -1, 1);
 			}
 		}
 		if (global.currentWeapon == gameManager_obj.pickedWeapon.pistol)
@@ -137,7 +153,8 @@ if (!isZombie && !deathActivated)
 			}
 			else
 			{
-				draw_sprite_ext(drawSpriteHat, -1, originX + lengthdir_x(radius, theta), originY + lengthdir_y(radius, theta), image_xscale, 1, playerRotation, -1, 1);
+				draw_sprite_ext(drawSpriteHat, 0, originX + lengthdir_x(radius, theta), originY + lengthdir_y(radius, theta), image_xscale, 1, playerRotation, -1, 1);
+				draw_sprite_ext(drawSpriteTop1, 0, originX + lengthdir_x(radiusTop1, theta), originY + lengthdir_y(radiusTop1, theta), image_xscale, 1, playerRotation, -1, 1);
 			}
 			draw_sprite_ext(pistolSprite, animated, x + ((4 + spinWeaponPos) * currDir) * changePos, y - 4.3, 1, -currDir, dirCursor, -1, 1);
 		}
@@ -153,7 +170,8 @@ if (!isZombie && !deathActivated)
 			}
 			else
 			{
-				draw_sprite_ext(drawSpriteHat, -1, originX + lengthdir_x(radius, theta), originY + lengthdir_y(radius, theta), image_xscale, 1, playerRotation, -1, 1);
+				draw_sprite_ext(drawSpriteHat, 0, originX + lengthdir_x(radius, theta), originY + lengthdir_y(radius, theta), image_xscale, 1, playerRotation, -1, 1);
+				draw_sprite_ext(drawSpriteTop1, 0, originX + lengthdir_x(radiusTop1, theta), originY + lengthdir_y(radiusTop1, theta), image_xscale, 1, playerRotation, -1, 1);
 			}
 			//Second arm
 			draw_sprite_ext(dualBarettasSprite, animated, x + ((4 + spinWeaponPos * changePos) * currDir) * changePos, y - 3.3, 1, -currDir, dirCursor, -1, 1);		
@@ -168,7 +186,8 @@ if (!isZombie && !deathActivated)
 			}
 			else
 			{
-				draw_sprite_ext(drawSpriteHat, -1, originX + lengthdir_x(radius, theta), originY + lengthdir_y(radius, theta), image_xscale, 1, playerRotation, -1, 1);
+				draw_sprite_ext(drawSpriteHat, 0, originX + lengthdir_x(radius, theta), originY + lengthdir_y(radius, theta), image_xscale, 1, playerRotation, -1, 1);
+				draw_sprite_ext(drawSpriteTop1, 0, originX + lengthdir_x(radiusTop1, theta), originY + lengthdir_y(radiusTop1, theta), image_xscale, 1, playerRotation, -1, 1);
 			}
 			draw_sprite_ext(shotgunSprite, animated, x + ((4 + spinWeaponPos) * currDir) * changePos, y - 4.3, 1, -currDir, dirCursor, -1, 1);
 		}
@@ -182,7 +201,8 @@ if (!isZombie && !deathActivated)
 			}
 			else
 			{
-				draw_sprite_ext(drawSpriteHat, -1, originX + lengthdir_x(radius, theta), originY + lengthdir_y(radius, theta), image_xscale, 1, playerRotation, -1, 1);
+				draw_sprite_ext(drawSpriteHat, 0, originX + lengthdir_x(radius, theta), originY + lengthdir_y(radius, theta), image_xscale, 1, playerRotation, -1, 1);
+				draw_sprite_ext(drawSpriteTop1, 0, originX + lengthdir_x(radiusTop1, theta), originY + lengthdir_y(radiusTop1, theta), image_xscale, 1, playerRotation, -1, 1);
 			}
 			draw_sprite_ext(sniperSprite, animated, x + ((4 + spinWeaponPos) * currDir) * changePos, y - 4.3, 1, -currDir, dirCursor, -1, 1);
 		}
@@ -197,7 +217,8 @@ if (!isZombie && !deathActivated)
 		}
 		else
 		{
-			draw_sprite_ext(drawSpriteHat, -1, originX + lengthdir_x(radius, theta), originY + lengthdir_y(radius, theta), image_xscale, 1, playerRotation, -1, 1);
+			draw_sprite_ext(drawSpriteHat, 0, originX + lengthdir_x(radius, theta), originY + lengthdir_y(radius, theta), image_xscale, 1, playerRotation, -1, 1);
+			draw_sprite_ext(drawSpriteTop1, 0, originX + lengthdir_x(radiusTop1, theta), originY + lengthdir_y(radiusTop1, theta), image_xscale, 1, playerRotation, -1, 1);
 		}
 	}
 }
@@ -211,6 +232,7 @@ else
 	}
 	else
 	{
-		draw_sprite_ext(drawSpriteHat, -1, originX + lengthdir_x(radius, theta), originY + lengthdir_y(radius, theta), image_xscale, 1, playerRotation, -1, 1);
+		draw_sprite_ext(drawSpriteHat, 0, originX + lengthdir_x(radius, theta), originY + lengthdir_y(radius, theta), image_xscale, 1, playerRotation, -1, 1);
+		draw_sprite_ext(drawSpriteTop1, 0, originX + lengthdir_x(radiusTop1, theta), originY + lengthdir_y(radiusTop1, theta), image_xscale, 1, playerRotation, -1, 1);
 	}
 }

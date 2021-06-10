@@ -37,4 +37,3 @@ audio_sound_pitch(land_snd, clamp(1 * global.timeScale, 0.5, 1.5));
 audio_sound_pitch(moan1_snd, clamp(1 * global.timeScale, 0.5, 1.5));
 audio_sound_pitch(moan2_snd, clamp(1 * global.timeScale, 0.5, 1.5));
 
-
