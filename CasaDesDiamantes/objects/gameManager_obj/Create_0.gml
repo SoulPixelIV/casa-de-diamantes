@@ -37,9 +37,10 @@ global.sniperReloadSave = global.sniperReload;
 
 global.hat = beret_spr;
 global.top1 = smokingTop_spr;
-global.top2 = noone;
+global.top2 = smokingJacketEquipped_spr;
 global.bottom = noone;
 global.shoes = noone;
+global.arm = smokingJacketArm_spr;
 
 enum pickedWeapon {
 	unarmed,
