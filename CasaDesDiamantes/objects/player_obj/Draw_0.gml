@@ -75,6 +75,15 @@ if (horspeed != 0 && grounded && !isDashing && !spin && !flip)
 	{
 		drawSpriteTop1 = smokingTopWalking_spr;
 	}
+	
+	if (global.top2 == smokingJacketEquipped_spr)
+	{
+		drawSpriteTop2 = smokingJacketWalkingEquipped_spr;
+	}
+	if (global.top2 == smokingJacket_spr)
+	{
+		drawSpriteTop2 = smokingJacketWalking_spr;
+	}
 }
 
 if (flip)
@@ -154,8 +163,8 @@ if (!isZombie && !deathActivated)
 		if (global.currentWeapon == gameManager_obj.pickedWeapon.dualBarettas)
 		{
 			//First arm
-			draw_sprite_ext(drawSpriteArm, 0, x + ((-2 + spinWeaponPos) * currDir) * changePos, y - 4, 1, -currDir, dirCursor, -1, 1);
-			draw_sprite_ext(playerDualBarettas_spr, 0, x - ((2 - spinWeaponPos * changePos) * currDir), y - 5, 1, -currDir, dirCursor, -1, 1);
+			draw_sprite_ext(drawSpriteArm, 0, x + ((-5 + spinWeaponPos) * currDir) * changePos, y - 4, 1, -currDir, dirCursor, -1, 1);
+			draw_sprite_ext(playerDualBarettas_spr, 0, x - ((-1 + spinWeaponPos * changePos) * currDir), y - 5, 1, -currDir, dirCursor, -1, 1);
 		}
 		
 		//Draw Steph
@@ -183,26 +192,26 @@ if (!isZombie && !deathActivated)
 		
 		if (global.currentWeapon != gameManager_obj.pickedWeapon.dualBarettas)
 		{
-			draw_sprite_ext(drawSpriteArm, 0, x + ((4 - spinWeaponPos) * currDir) * changePos, y - 4, 1, -currDir, dirCursor, -1, 1);
+			draw_sprite_ext(drawSpriteArm, 0, x + ((1 - spinWeaponPos) * currDir) * changePos, y - 4, 1, -currDir, dirCursor, -1, 1);
 		}
 		
 		if (global.currentWeapon == gameManager_obj.pickedWeapon.pistol)
 		{
-			draw_sprite_ext(playerPistol_spr, 0, x - ((-5 + spinWeaponPos) * currDir) * changePos, y - 5, 1, -currDir, dirCursor, -1, 1);
+			draw_sprite_ext(playerPistol_spr, 0, x - ((-6 + spinWeaponPos) * currDir) * changePos, y - 5, 1, -currDir, dirCursor, -1, 1);
 		}
 		if (global.currentWeapon == gameManager_obj.pickedWeapon.dualBarettas)
 		{
 			//Second arm
-			draw_sprite_ext(drawSpriteArm, 0, x + ((3 - spinWeaponPos) * currDir) * changePos, y - 4, 1, -currDir, dirCursor, -1, 1);
-			draw_sprite_ext(playerDualBarettas_spr, 0, x + ((4 - spinWeaponPos * changePos) * currDir) * changePos, y - 5, 1, -currDir, dirCursor, -1, 1);
+			draw_sprite_ext(drawSpriteArm, 0, x + ((1 - spinWeaponPos) * currDir) * changePos, y - 4, 1, -currDir, dirCursor, -1, 1);
+			draw_sprite_ext(playerDualBarettas_spr, 0, x + ((1 - spinWeaponPos * changePos) * currDir) * changePos, y - 5, 1, -currDir, dirCursor, -1, 1);
 		}
 		if (global.currentWeapon == gameManager_obj.pickedWeapon.shotgun)
 		{
-			draw_sprite_ext(playerShotgun_spr, 0, x + ((6 - spinWeaponPos) * currDir) * changePos, y - 4, 1, -currDir, dirCursor, -1, 1);
+			draw_sprite_ext(playerShotgun_spr, 0, x + ((5 - spinWeaponPos) * currDir) * changePos, y - 4, 1, -currDir, dirCursor, -1, 1);
 		}
 		if (global.currentWeapon == gameManager_obj.pickedWeapon.sniper)
 		{
-			draw_sprite_ext(playerSniper_spr, -1, x + ((4 - spinWeaponPos) * currDir) * changePos, y - 4, 1, -currDir, dirCursor, -1, 1);
+			draw_sprite_ext(playerSniper_spr, -1, x + ((1 - spinWeaponPos) * currDir) * changePos, y - 4, 1, -currDir, dirCursor, -1, 1);
 		}
 	}
 }
