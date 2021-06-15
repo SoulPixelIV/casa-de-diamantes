@@ -35,10 +35,10 @@ global.sniperCooldownSave = global.sniperCooldown;
 global.sniperReload = 600;
 global.sniperReloadSave = global.sniperReload;
 
-global.hat = beret_spr;
+global.hat = noone;
 global.top1 = smokingTop_spr;
-global.top2 = smokingJacketEquipped_spr;
-global.bottom = noone;
+global.top2 = noone;
+global.bottom = smokingBottom_spr;
 global.shoes = noone;
 global.arm = smokingJacketArm_spr;
 
