@@ -617,7 +617,14 @@ with (gameManager_obj)
 
 if (huggingWall && !grounded)
 {
-	sprite_index = playerWall_spr;
+	if (global.currentWeapon == gameManager_obj.pickedWeapon.dualBarettas)
+	{
+		sprite_index = playerWallNoArm_spr;
+	}
+	else
+	{
+		sprite_index = playerWall_spr;
+	}
 	if (horspeed <= 0)
 	{
 		walljumpDustTimer -= global.dt;
@@ -654,6 +661,7 @@ if (huggingWall && !grounded)
 
 if (onLadder && !isZombie && !isDashing)
 {
+	/*
 	if (verspeed == 0)
 	{
 		if (global.currentWeapon != unarmed)
@@ -680,9 +688,9 @@ if (onLadder && !isZombie && !isDashing)
 		}
 	}
 	else
-	{
+	{*/
 		sprite_index = playerClimbing_spr;
-	}
+	//}
 }
 
 if (!isZombie && !deathActivated)

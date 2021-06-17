@@ -121,7 +121,7 @@ if (horspeed != 0 && grounded && !isDashing && !spin && !flip)
 	}
 }
 
-if (flip)
+if (flip && !onLadder)
 {
 	playerRotation += (global.dt * 2.25) * -image_xscale;
 	if (global.top1 == noone)
@@ -136,6 +136,30 @@ if (flip)
 else
 {
 	playerRotation = 0;
+}
+
+if (huggingWall)
+{
+	if (global.bottom = smokingBottom_spr)
+	{
+		drawSpriteBottom = SmokingBottomWall_spr;
+	}
+}
+
+if (onLadder && verspeed == 0)
+{
+	if (global.top1 == smokingTop_spr)
+	{
+		drawSpriteTop1 = smokingTopClimbing_spr;
+	}
+	if (global.top2 == smokingJacket_spr)
+	{
+		drawSpriteTop2 = smokingJacketClimbing_spr;
+	}
+	if (global.bottom == smokingBottom_spr)
+	{
+		drawSpriteBottom = smokingBottomClimbing_spr;
+	}
 }
 
 //Controller Line
@@ -165,7 +189,7 @@ else
 	changePos = 1;
 }
 
-if (spin && sprite_index != playerWall_spr && !flip && !onLadder)
+if (spin && sprite_index != playerWall_spr && !flip && !onLadder && !huggingWall)
 {
 	if (spinWeaponPos > 6)
 	{
@@ -226,10 +250,22 @@ if (!isZombie && !deathActivated)
 		}
 		else
 		{
-			draw_sprite_ext(drawSpriteHat, 0, originX + lengthdir_x(radius, theta), originY + lengthdir_y(radius, theta), image_xscale, 1, playerRotation, -1, 1);
-			draw_sprite_ext(drawSpriteTop1, 0, originX + lengthdir_x(radiusTop1, theta), originY + lengthdir_y(radiusTop1, theta), image_xscale, 1, playerRotation, -1, 1);
-			draw_sprite_ext(drawSpriteTop2, 0, originX + lengthdir_x(radiusTop1, theta), originY + lengthdir_y(radiusTop1, theta), image_xscale, 1, playerRotation, -1, 1);
-			draw_sprite_ext(drawSpriteBottom, 0, originX + lengthdir_x(radiusTop1, theta), originY + lengthdir_y(radiusTop1, theta), image_xscale, 1, playerRotation, -1, 1);
+			if (drawSpriteHat != noone)
+			{
+				draw_sprite_ext(drawSpriteHat, 0, originX + lengthdir_x(radius, theta), originY + lengthdir_y(radius, theta), image_xscale, 1, playerRotation, -1, 1);
+			}
+			if (drawSpriteTop1 != noone)
+			{
+				draw_sprite_ext(drawSpriteTop1, 0, originX + lengthdir_x(radiusTop1, theta), originY + lengthdir_y(radiusTop1, theta), image_xscale, 1, playerRotation, -1, 1);
+			}
+			if (drawSpriteTop2 != noone)
+			{
+				draw_sprite_ext(drawSpriteTop2, 0, originX + lengthdir_x(radiusTop1, theta), originY + lengthdir_y(radiusTop1, theta), image_xscale, 1, playerRotation, -1, 1);
+			}
+			if (drawSpriteBottom != noone)
+			{
+				draw_sprite_ext(drawSpriteBottom, 0, originX + lengthdir_x(radiusTop1, theta), originY + lengthdir_y(radiusTop1, theta), image_xscale, 1, playerRotation, -1, 1);
+			}
 		}
 		
 		//PISTOL
