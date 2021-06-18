@@ -66,7 +66,7 @@ if (aggroTimer < 0)
 	aggroTimer = aggroTimerSave;
 }
 
-if (movement)
+if (movement && !attackInProg3)
 {
 	if (aggro && distance_to_object(player_obj) > 300 && distance_to_object(player_obj) < aggroRange)
 	{
@@ -403,7 +403,6 @@ if (pause)
 	pauseDelay -= global.dt;
 	if (pauseDelay < 0)
 	{
-		slamSprite = false;
 		if (slamPos > 0)
 		{
 			slamPos -= global.dt / 2;
@@ -425,6 +424,7 @@ if (delay)
 }
 if (attackDelay < 0)
 {
+	slamSprite = false;
 	delay = false;
 	attackDelay = attackDelaySave;
 	attackInProg = false;

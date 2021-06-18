@@ -27,5 +27,8 @@ if (horspeed == 0)
 }
 else
 {
-	draw_sprite_ext(sensoryTremblerBottomAnimated_spr, -1, x, y + 3 + slamPos, 1, 1, 0, -1, 1);
+	if (!slamSprite)
+	{
+		draw_sprite_ext(sensoryTremblerBottomAnimated_spr, -1, x, y + 3 + slamPos, 1, 1, 0, -1, 1);
+	}
 }
