@@ -333,6 +333,7 @@ if (!grounded && !isZombie && !flip && !isDashing && !groundCollisionTimerOn && 
 {
 	if (horspeed < movSpeed - 0.3 || horspeed > -movSpeed + 0.3)
 	{
+		spin = true;
 		if (global.top1 == noone)
 		{
 			sprite_index = playerJumpSpin_spr;
@@ -341,7 +342,6 @@ if (!grounded && !isZombie && !flip && !isDashing && !groundCollisionTimerOn && 
 		{
 			sprite_index = playerJumpSpinNude_spr;
 		}
-		spin = true;
 	}
 }
 if (grounded)
@@ -394,6 +394,7 @@ if (!place_meeting(x, y, ladder_obj))
 
 if (onLadder)
 {
+	flip = false;
 	resetJump_scr();
 	if (!key_left && !key_right)
 	{
@@ -661,7 +662,6 @@ if (huggingWall && !grounded)
 
 if (onLadder && !isZombie && !isDashing)
 {
-	/*
 	if (verspeed == 0)
 	{
 		if (global.currentWeapon != unarmed)
@@ -688,9 +688,9 @@ if (onLadder && !isZombie && !isDashing)
 		}
 	}
 	else
-	{*/
+	{
 		sprite_index = playerClimbing_spr;
-	//}
+	}
 }
 
 if (!isZombie && !deathActivated)
@@ -1002,7 +1002,7 @@ switch (sprite_index)
 		animationSpeed = 0.75;
 		break;
 	case playerClimbing_spr:
-		animationSpeed = 0.25;
+		animationSpeed = 0.5;
 		break;
 }
 
