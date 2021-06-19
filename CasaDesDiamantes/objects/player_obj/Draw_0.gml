@@ -43,7 +43,7 @@ if (global.currentWeapon == gameManager_obj.pickedWeapon.unarmed)
 	}
 }
 
-if (!grounded && !isZombie && !flip && !isDashing && !groundCollisionTimerOn && movement && !unarmed)
+if (!grounded && !isZombie && !flip && !isDashing && !groundCollisionTimerOn && movement && !unarmed && !huggingWall && !onLadder)
 {
 	if (global.hat == beret_spr)
 	{
@@ -63,7 +63,7 @@ if (!grounded && !isZombie && !flip && !isDashing && !groundCollisionTimerOn && 
 	}
 }
 
-if (flip)
+if (flip && !huggingWall && !onLadder)
 {
 	if (global.bottom == smokingBottom_spr)
 	{
@@ -71,7 +71,7 @@ if (flip)
 	}
 }
 
-if (isDashing)
+if (isDashing && !huggingWall && !onLadder)
 {
 	if (global.hat == beret_spr)
 	{
@@ -95,7 +95,7 @@ if (isDashing)
 	}
 }
 
-if (horspeed != 0 && grounded && !isDashing && !spin && !flip)
+if (horspeed != 0 && grounded && !isDashing && !spin && !flip && !huggingWall && !onLadder)
 {
 	if (global.hat == beret_spr)
 	{
@@ -121,7 +121,7 @@ if (horspeed != 0 && grounded && !isDashing && !spin && !flip)
 	}
 }
 
-if (flip && !onLadder)
+if (flip && !onLadder && !huggingWall)
 {
 	playerRotation += (global.dt * 2.25) * -image_xscale;
 	if (global.top1 == noone)
@@ -138,33 +138,15 @@ else
 	playerRotation = 0;
 }
 
-if (huggingWall)
-{
-	if (global.hat == beret_spr)
-	{
-		drawSpriteHat = beret_spr;
-	}
-	if (global.top1 == smokingTop_spr)
-	{
-		drawSpriteTop1 = smokingTop_spr;
-	}
-	
-	if (global.top2 == smokingJacket_spr)
-	{
-		drawSpriteTop2 = smokingJacket_spr;
-	}
-	if (global.top2 == smokingJacketEquipped_spr)
-	{
-		drawSpriteTop2 = smokingJacketEquipped_spr;
-	}
-	
+if (huggingWall && !onLadder)
+{	
 	if (global.bottom = smokingBottom_spr)
 	{
 		drawSpriteBottom = SmokingBottomWall_spr;
 	}
 }
 
-if (onLadder && !isZombie && !isDashing)
+if (sprite_index == playerClimbing_spr)
 {
 	if (verspeed != 0)
 	{
@@ -253,7 +235,7 @@ else
 	
 if (!isZombie && !deathActivated)
 {
-	if (onLadder)
+	if (sprite_index == playerClimbing_spr)
 	{
 		//Draw Steph
 		draw_self();
@@ -281,8 +263,7 @@ if (!isZombie && !deathActivated)
 			draw_sprite_ext(drawSpriteBottom, -1, originX + lengthdir_x(radiusTop1, theta), originY + lengthdir_y(radiusTop1, theta), image_xscale, 1, playerRotation, -1, image_alpha);
 		}
 	}
-	
-	if (!onLadder || (onLadder && verspeed == 0))
+	else
 	{
 		//DUAL BARETTAS
 		if (global.currentWeapon == gameManager_obj.pickedWeapon.dualBarettas)
