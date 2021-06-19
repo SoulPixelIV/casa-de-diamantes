@@ -140,6 +140,24 @@ else
 
 if (huggingWall)
 {
+	if (global.hat == beret_spr)
+	{
+		drawSpriteHat = beret_spr;
+	}
+	if (global.top1 == smokingTop_spr)
+	{
+		drawSpriteTop1 = smokingTop_spr;
+	}
+	
+	if (global.top2 == smokingJacket_spr)
+	{
+		drawSpriteTop2 = smokingJacket_spr;
+	}
+	if (global.top2 == smokingJacketEquipped_spr)
+	{
+		drawSpriteTop2 = smokingJacketEquipped_spr;
+	}
+	
 	if (global.bottom = smokingBottom_spr)
 	{
 		drawSpriteBottom = SmokingBottomWall_spr;
