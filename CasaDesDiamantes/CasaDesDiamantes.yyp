@@ -372,6 +372,7 @@
     {"id":{"name":"beretSpin_spr","path":"sprites/beretSpin_spr/beretSpin_spr.yy",},"order":1,},
     {"id":{"name":"greenstripes_spr","path":"sprites/greenstripes_spr/greenstripes_spr.yy",},"order":22,},
     {"id":{"name":"boosterOn_spr","path":"sprites/boosterOn_spr/boosterOn_spr.yy",},"order":99,},
+    {"id":{"name":"sensoryTremblerBottomStanding_spr","path":"sprites/sensoryTremblerBottomStanding_spr/sensoryTremblerBottomStanding_spr.yy",},"order":10,},
     {"id":{"name":"waterfall_spr","path":"sprites/waterfall_spr/waterfall_spr.yy",},"order":67,},
     {"id":{"name":"fallingObjectPlayer2_obj","path":"objects/fallingObjectPlayer2_obj/fallingObjectPlayer2_obj.yy",},"order":4,},
     {"id":{"name":"ammoShotgunSmall_spr","path":"sprites/ammoShotgunSmall_spr/ammoShotgunSmall_spr.yy",},"order":16,},
