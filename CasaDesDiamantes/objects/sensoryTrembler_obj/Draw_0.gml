@@ -1,4 +1,8 @@
-if (!attackInProg2)
+if (hp < 200)
+{
+	draw_sprite_ext(sensoryTremblerBaseDestroyed_spr, -1, x, y - 12 + slamPos, 1, 1, baseRotation, -1, 1);
+}
+else if (!attackInProg2)
 {
 	draw_sprite_ext(sensoryTremblerBase_spr, -1, x, y - 12 + slamPos, 1, 1, baseRotation, -1, 1);
 }

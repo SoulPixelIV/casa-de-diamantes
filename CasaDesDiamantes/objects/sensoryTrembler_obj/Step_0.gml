@@ -199,6 +199,16 @@ else
     verSpeed = 0;
 }
 
+//###Second phase###
+if (hp < 200)
+{
+	if (!secondPhase)
+	{
+		movSpeed = movSpeed * 1.3;
+		secondPhase = true;
+	}
+}
+
 //###Death###
 if (hp < 0)
 {
@@ -403,9 +413,16 @@ if (pause)
 	pauseDelay -= global.dt;
 	if (pauseDelay < 0)
 	{
+		smokeDelay2 -= global.dt;
+		if (smokeDelay2 < 0)
+		{
+			instance_create_layer(x - 24, y - 46 + slamPos, "ForegroundObjects", dustParticle_obj);
+			instance_create_layer(x + 24, y - 46 + slamPos, "ForegroundObjects", dustParticle_obj);
+			smokeDelay2 = 3;
+		}
 		if (slamPos > 0)
 		{
-			slamPos -= global.dt / 2;
+			slamPos -= global.dt;
 		}
 		else
 		{
