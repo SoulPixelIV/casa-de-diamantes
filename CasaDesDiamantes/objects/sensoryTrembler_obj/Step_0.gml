@@ -204,13 +204,23 @@ if (hp < 200)
 {
 	if (!secondPhase)
 	{
-		movSpeed = movSpeed * 1.3;
+		hitable = false;
+		movSpeed = movSpeed * 1.5;
 		secondPhase = true;
+		instance_create_layer(x + 8, y - 94, "Instances", sensoryTremblerEyeHitbox_obj);
+		hp = 1200;
+	}
+	explosionDelay -= global.dt;
+	if (explosionDelay < 0 && explosionCount < 10)
+	{
+		instance_create_layer(x + random_range(86, -86), y + random_range(0, -186), "Instances", explosionTiny_obj);
+		explosionDelay = random_range(1, 4);
+		explosionCount++;
 	}
 }
 
 //###Death###
-if (hp < 0)
+if (eyeKilled)
 {
 	var deathCross = instance_create_layer(x, y - 8, "ForegroundObjects", deathCross_obj);
 	
@@ -308,7 +318,7 @@ if (!attackInProg && !attackInProg2 && !attackInProg3 && aggro)
 
 if (attackCooldown < 0 && !attackInProg && !attackInProg2 && !attackInProg3)
 {
-	if (distance_to_object(player_obj) < aggroRange && distance_to_object(player_obj) > 86)
+	if (distance_to_object(player_obj) < aggroRange && distance_to_object(player_obj) > 86 && !secondPhase)
 	{
 		attackInProg = true;
 	}

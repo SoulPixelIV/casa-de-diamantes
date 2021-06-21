@@ -5,6 +5,7 @@ ammoSpawnCount = 4;
 horspeed = 0;
 verspeed = 0;
 colliding = true;
+hitable = true;
 level = 1;
 moneyDropMin = 3;
 moneyDropMax = 7;

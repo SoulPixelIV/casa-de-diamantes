@@ -5,6 +5,7 @@ verspeed = 0;
 attackCooldown = 475;
 attackDelay = 50;
 colliding = true;
+hitable = true;
 level = 2;
 damage = 0;
 moneyDropMin = 5;

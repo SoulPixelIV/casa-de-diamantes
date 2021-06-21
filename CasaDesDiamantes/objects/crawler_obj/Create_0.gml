@@ -5,6 +5,7 @@ gravityStrength = -0.05;
 
 hp = 35;
 colliding = false;
+hitable = true;
 knockback = 0;
 movSpeed = 0.85;
 movSpeedGrad = 0;

@@ -6,6 +6,7 @@ verspeed = 0;
 
 //Stats
 colliding = true;
+hitable = true;
 level = 1;
 moneyDropMin = 1;
 moneyDropMax = 4;
@@ -18,6 +19,9 @@ randDirChangeTimer = 150;
 shootDelay = 5;
 smokeDelay = 4;
 smokeDelay2 = 3;
+eyeKilled = false;
+explosionCount = 0;
+explosionDelay = 2;
 secondPhase = false;
 slamDelay = 200;
 pauseDelay = 100;
@@ -79,11 +83,6 @@ audio_drop_start = 400;
 audio_falloff_set_model(audio_falloff_linear_distance);
 audio_emitter_position(emitter, x, y, 0);
 audio_emitter_falloff(emitter, audio_drop_start, audio_max_distance, 1);
-
-//Create Collider
-//colHitbox = instance_create_layer(x - 48, y - 126, "Instances", colliderNoEnemy_obj);
-//colHitbox.image_xscale = 2.5;
-//colHitbox.image_yscale = 2;
 
 checkPlayerTimer = 50;
 checkPlayerTimerSave = checkPlayerTimer;

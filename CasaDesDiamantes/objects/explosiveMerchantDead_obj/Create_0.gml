@@ -15,6 +15,7 @@ else
 //Stats
 hp = 90;
 colliding = true;
+hitable = true;
 level = 1;
 movSpeed = 0;
 moneyDropMin = 7;

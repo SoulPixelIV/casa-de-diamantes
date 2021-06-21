@@ -932,7 +932,8 @@ if (global.pistolAmmo == 0 && global.shotgunAmmo == 0 && global.currentWeapon !=
 {
 	pickWeapon_scr(0);
 }
-if ((global.pistolAmmo > 0 || global.shotgunAmmo > 0 || global.sniperAmmo > 0) && global.currentWeapon == pickedWeapon.pistol)
+// || global.sniperAmmo > 0
+if ((global.pistolAmmo > 0 || global.shotgunAmmo > 0) && global.currentWeapon == pickedWeapon.pistol)
 {
 	if (global.currentWeapon == pickedWeapon.pistol)
 	{

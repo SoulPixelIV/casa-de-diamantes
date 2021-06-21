@@ -8,6 +8,7 @@ dir = 0;
 //Stats
 hp = 40;
 colliding = true;
+hitable = true;
 level = 1;
 movSpeed = 0.033;
 moneyDropMin = 7;

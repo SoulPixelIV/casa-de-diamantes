@@ -6,6 +6,7 @@ verspeed = 0;
 
 //Stats
 colliding = true;
+hitable = true;
 level = 1;
 moneyDropMin = 1;
 moneyDropMax = 4;

@@ -1,7 +1,7 @@
 var enemyTarget = instance_place(x, y, enemy_obj);
 if (instance_exists(enemyTarget))
 {
-	if (!dealtDamage)
+	if (!dealtDamage && other.hitable)
 	{
 		enemyTarget.lastBullet = bulletShotgun_obj;
 		enemyTarget.damageTint = true;

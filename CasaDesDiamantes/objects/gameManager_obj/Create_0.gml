@@ -35,7 +35,7 @@ global.sniperCooldownSave = global.sniperCooldown;
 global.sniperReload = 600;
 global.sniperReloadSave = global.sniperReload;
 
-global.hat = choose(beret_spr, christmasHat_spr, noone);
+global.hat = choose(beret_spr, noone);
 global.top1 = choose(smokingTop_spr, noone);
 global.top2 = choose(smokingJacketEquipped_spr, noone);
 global.bottom = choose(smokingBottom_spr, noone);
