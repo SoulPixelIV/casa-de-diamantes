@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "explosionSmall_spr",
-    "path": "sprites/explosionSmall_spr/explosionSmall_spr.yy",
+    "name": "pistolBulletCase_spr",
+    "path": "sprites/pistolBulletCase_spr/pistolBulletCase_spr.yy",
   },
   "solid": false,
   "visible": true,
@@ -11,7 +11,7 @@
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
-  "physicsGroup": 0,
+  "physicsGroup": 1,
   "physicsDensity": 0.5,
   "physicsRestitution": 0.1,
   "physicsLinearDamping": 0.1,
@@ -21,18 +21,17 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":7,"eventType":7,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Relevant Stuff",
+    "path": "folders/Steph/Relevant Stuff.yy",
   },
   "resourceVersion": "1.0",
-  "name": "explosionSmall_obj",
+  "name": "pistolBulletCase_obj",
   "tags": [],
   "resourceType": "GMObject",
 }

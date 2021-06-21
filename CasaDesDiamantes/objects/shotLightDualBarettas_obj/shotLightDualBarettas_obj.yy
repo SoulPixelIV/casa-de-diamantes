@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "explosionVerySmall_spr",
-    "path": "sprites/explosionVerySmall_spr/explosionVerySmall_spr.yy",
+    "name": "explosionSmall_spr",
+    "path": "sprites/explosionSmall_spr/explosionSmall_spr.yy",
   },
   "solid": false,
   "visible": true,

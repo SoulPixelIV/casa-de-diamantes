@@ -6,7 +6,11 @@ function shooting_scr(argument0) {
 		
 		var shotLightx = x + lengthdir_x(24, dirCursor);
 		var shotLighty = y - 8 + lengthdir_y(24, dirCursor);
+		
 		instance_create_layer(playerBulletLine_obj.x, playerBulletLine_obj.y, "Instances", bulletPistol_obj);
+		
+		instance_create_layer(playerBulletLine_obj.x, playerBulletLine_obj.y, "Instances", pistolBulletCase_obj);
+		
 		instance_create_layer(shotLightx, shotLighty, "ForegroundObjects", shotLightPistol_obj);
 		instance_create_layer(shotLightx, shotLighty, "ForegroundObjects", smokecloud_obj);
 		screenshake(50, 2.5, 0.4, id);
@@ -48,8 +52,13 @@ function shooting_scr(argument0) {
 		
 			var shotLightx = x + lengthdir_x(24, dirCursor);
 			var shotLighty = y - 8 + lengthdir_y(24, dirCursor);
+			
 			instance_create_layer(playerBulletLine_obj.x, playerBulletLine_obj.y, "Instances", bulletDualBarettas_obj);
 			instance_create_layer(playerBulletLine_obj.x - 2, playerBulletLine_obj.y - 4, "Instances", bulletDualBarettas_obj);
+			
+			instance_create_layer(playerBulletLine_obj.x, playerBulletLine_obj.y, "Instances", pistolBulletCase_obj);
+			instance_create_layer(playerBulletLine_obj.x - 2, playerBulletLine_obj.y - 4, "Instances", pistolBulletCase_obj);
+			
 			instance_create_layer(shotLightx, shotLighty, "ForegroundObjects", shotLightDualBarettas_obj);
 			instance_create_layer(shotLightx, shotLighty, "ForegroundObjects", smokecloud_obj);
 			instance_create_layer(shotLightx - 2, shotLighty - 4, "ForegroundObjects", shotLightDualBarettas_obj);
@@ -100,6 +109,12 @@ function shooting_scr(argument0) {
 			{
 				instance_create_layer(playerBulletLine_obj.x, playerBulletLine_obj.y, "Instances", bulletShotgun_obj);
 			}
+			
+			repeat (choose(4,5,6,7))
+			{
+				instance_create_layer(playerBulletLine_obj.x, playerBulletLine_obj.y, "Instances", shotgunBulletCase_obj);
+			}
+			
 			instance_create_layer(shotLightx, shotLighty, "ForegroundObjects", shotLightShotgun_obj);
 			instance_create_layer(shotLightx, shotLighty, "ForegroundObjects", smokecloud_obj);
 			screenshake(50, 12, 0.6, id);
