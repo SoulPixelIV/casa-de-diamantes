@@ -113,8 +113,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "SmokingTop",
-    "path": "folders/Steph/Clothes/SmokingTop.yy",
+    "name": "WarmJacket",
+    "path": "folders/Steph/Clothes/WarmJacket.yy",
   },
   "resourceVersion": "1.0",
   "name": "warmJacket_spr",
