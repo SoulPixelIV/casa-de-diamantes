@@ -41,6 +41,10 @@ if (global.currentWeapon == gameManager_obj.pickedWeapon.unarmed)
 	{
 		global.top2 = smokingJacket_spr;
 	}
+	if (global.top2 == warmJacketEquipped_spr)
+	{
+		global.top2 = warmJacket_spr;
+	}
 }
 
 if (!grounded && !isZombie && !flip && !isDashing && !groundCollisionTimerOn && movement && !unarmed && !huggingWall && !onLadder)
@@ -53,10 +57,16 @@ if (!grounded && !isZombie && !flip && !isDashing && !groundCollisionTimerOn && 
 	{
 		drawSpriteTop1 = smokingTopSpin_spr;
 	}
+	
 	if (global.top2 == smokingJacketEquipped_spr)
 	{
 		drawSpriteTop2 = smokingJacketSpin_spr;
 	}
+	if (global.top2 == warmJacketEquipped_spr)
+	{
+		drawSpriteTop2 = warmJacketSpin_spr;
+	}
+	
 	if (global.bottom == smokingBottom_spr)
 	{
 		drawSpriteBottom = smokingBottomSpin_spr;
@@ -81,6 +91,7 @@ if (isDashing && !huggingWall && !onLadder)
 	{
 		drawSpriteTop1 = smokingTopDash_spr;
 	}
+	
 	if (global.top2 == smokingJacketEquipped_spr)
 	{
 		drawSpriteTop2 = smokingJacketDashEquipped_spr;
@@ -89,6 +100,15 @@ if (isDashing && !huggingWall && !onLadder)
 	{
 		drawSpriteTop2 = smokingJacketDash_spr;
 	}
+	if (global.top2 == warmJacketEquipped_spr)
+	{
+		drawSpriteTop2 = warmJacketDashEquipped_spr;
+	}
+	if (global.top2 == warmJacket_spr)
+	{
+		drawSpriteTop2 = warmJacketDash_spr;
+	}
+	
 	if (global.bottom == smokingBottom_spr)
 	{
 		drawSpriteBottom = smokingBottomDash_spr;
@@ -113,6 +133,14 @@ if (horspeed != 0 && grounded && !isDashing && !spin && !flip && !huggingWall &&
 	if (global.top2 == smokingJacket_spr)
 	{
 		drawSpriteTop2 = smokingJacketWalking_spr;
+	}
+	if (global.top2 == warmJacketEquipped_spr)
+	{
+		drawSpriteTop2 = warmJacketWalkingEquipped_spr;
+	}
+	if (global.top2 == warmJacket_spr)
+	{
+		drawSpriteTop2 = warmJacketWalking_spr;
 	}
 	
 	if (global.bottom == smokingBottom_spr)
@@ -154,10 +182,16 @@ if (sprite_index == playerClimbing_spr)
 		{
 			drawSpriteTop1 = smokingTopClimbing_spr;
 		}
+		
 		if (global.top2 == smokingJacketEquipped_spr)
 		{
 			drawSpriteTop2 = smokingJacketClimbing_spr;
 		}
+		if (global.top2 == warmJacketEquipped_spr)
+		{
+			drawSpriteTop2 = warmJacketClimbing_spr;
+		}
+		
 		if (global.bottom == smokingBottom_spr)
 		{
 			drawSpriteBottom = smokingBottomClimbing_spr;
@@ -169,10 +203,16 @@ if (sprite_index == playerClimbing_spr)
 		{
 			drawSpriteTop1 = global.top1;
 		}
+		
 		if (global.top2 == smokingJacketEquipped_spr)
 		{
 			drawSpriteTop2 = global.top2;
 		}
+		if (global.top2 == warmJacketEquipped_spr)
+		{
+			drawSpriteTop2 = global.top2;
+		}
+		
 		if (global.bottom == smokingBottom_spr)
 		{
 			drawSpriteBottom = global.bottom;
