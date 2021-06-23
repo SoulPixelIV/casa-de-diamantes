@@ -202,19 +202,19 @@ else
 //###Second phase###
 if (hp < 200)
 {
+	explosionDelay -= global.dt;
 	if (!secondPhase)
 	{
 		hitable = false;
 		movSpeed = movSpeed * 1.5;
 		secondPhase = true;
-		instance_create_layer(x + 8, y - 94, "Instances", sensoryTremblerEyeHitbox_obj);
-		hp = 1200;
+		instance_create_layer(x + 5, y - 94, "Instances", sensoryTremblerEyeHitbox_obj);
+		alarmLight = instance_create_layer(x + 5, y - 94, "GraphicsLayer", spotlightRed_obj); 
 	}
-	explosionDelay -= global.dt;
 	if (explosionDelay < 0 && explosionCount < 10)
 	{
-		instance_create_layer(x + random_range(86, -86), y + random_range(0, -186), "Instances", explosionTiny_obj);
-		explosionDelay = random_range(1, 4);
+		instance_create_layer(x + random_range(86, -86), y + random_range(0, -186), "ForegroundObjects", explosionTiny_obj);
+		explosionDelay = random_range(4, 16);
 		explosionCount++;
 	}
 }
@@ -223,6 +223,11 @@ if (hp < 200)
 if (eyeKilled)
 {
 	var deathCross = instance_create_layer(x, y - 8, "ForegroundObjects", deathCross_obj);
+	
+	if (instance_exists(alarmLight))
+	{
+		instance_destroy(alarmLight);
+	}
 	
 	//Enemy Slowmo
 	var randNum = choose(1,2,3,4,5,6,7,8,9);
@@ -508,9 +513,20 @@ if (checkPlayerTimer < 0)
 	checkPlayerTimer = checkPlayerTimerSave;
 }
 
-//Set hitbox coordinates
-//if (instance_exists(colHitbox))
-//{
-	//colHitbox.x = x - 48;
-	//colHitbox.y = y - 126;
-//}
+//Walk Sound
+audio_emitter_position(emitter, x, y, 0);
+
+walkspeedSound -= global.dt;
+if (walkspeedSound < 0 && horspeed != 0)
+{
+	var ticksnd = audio_play_sound_on(emitter, tick_snd, false, 1);
+	audio_sound_pitch(ticksnd, random_range(1.3, 1.5));
+	walkspeedSound = random_range(24, 32);
+}
+
+//Alarmlight follow
+if (instance_exists(alarmLight))
+{
+	alarmLight.x = x + 5;
+	alarmLight.y = y - 94;
+}

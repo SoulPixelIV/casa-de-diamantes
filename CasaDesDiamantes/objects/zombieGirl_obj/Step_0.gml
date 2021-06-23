@@ -420,3 +420,6 @@ if (checkPlayerTimer < 0)
 	}
 	checkPlayerTimer = checkPlayerTimerSave;
 }
+
+//Sound Position
+audio_emitter_position(emitter, x, y, 0);

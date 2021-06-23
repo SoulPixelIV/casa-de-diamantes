@@ -13,12 +13,14 @@ moneyDropMax = 4;
 damage = 23;
 knockback = 0;
 
+alarmLight = noone;
 turretRotDir = 0;
 randMovDir = 1;
 randDirChangeTimer = 150;
 shootDelay = 5;
 smokeDelay = 4;
 smokeDelay2 = 3;
+walkspeedSound = 28;
 eyeKilled = false;
 explosionCount = 0;
 explosionDelay = 2;

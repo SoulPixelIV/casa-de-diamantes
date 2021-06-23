@@ -529,6 +529,7 @@
     {"id":{"name":"light_cull","path":"scripts/light_cull/light_cull.yy",},"order":3,},
     {"id":{"name":"light_update","path":"scripts/light_update/light_update.yy",},"order":4,},
     {"id":{"name":"warmJacketSpin_spr","path":"sprites/warmJacketSpin_spr/warmJacketSpin_spr.yy",},"order":6,},
+    {"id":{"name":"tick_snd","path":"sounds/tick_snd/tick_snd.yy",},"order":34,},
     {"id":{"name":"light_static_get_array","path":"scripts/light_static_get_array/light_static_get_array.yy",},"order":0,},
     {"id":{"name":"light_static_set_array","path":"scripts/light_static_set_array/light_static_set_array.yy",},"order":1,},
     {"id":{"name":"light_ignore_shadow_caster","path":"scripts/light_ignore_shadow_caster/light_ignore_shadow_caster.yy",},"order":0,},
