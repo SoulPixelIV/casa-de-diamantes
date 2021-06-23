@@ -14,7 +14,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 186,
+  "width": 286,
   "height": 12,
   "textureGroupId": {
     "name": "Default",
@@ -27,21 +27,21 @@
     {"compositeImage":{"FrameId":{"name":"113dc328-3dc8-4644-a86c-a6e2b63e7a88","path":"sprites/zombieSoldierGirlGunFlashing_spr/zombieSoldierGirlGunFlashing_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"113dc328-3dc8-4644-a86c-a6e2b63e7a88","path":"sprites/zombieSoldierGirlGunFlashing_spr/zombieSoldierGirlGunFlashing_spr.yy",},"LayerId":{"name":"6d102596-565c-45fb-a99b-3308887870e0","path":"sprites/zombieSoldierGirlGunFlashing_spr/zombieSoldierGirlGunFlashing_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"zombieSoldierGirlGunFlashing_spr","path":"sprites/zombieSoldierGirlGunFlashing_spr/zombieSoldierGirlGunFlashing_spr.yy",},"resourceVersion":"1.0","name":"113dc328-3dc8-4644-a86c-a6e2b63e7a88","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"3782f8fe-d920-4556-967d-7cbceda93b84","path":"sprites/zombieSoldierGirlGunFlashing_spr/zombieSoldierGirlGunFlashing_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"3782f8fe-d920-4556-967d-7cbceda93b84","path":"sprites/zombieSoldierGirlGunFlashing_spr/zombieSoldierGirlGunFlashing_spr.yy",},"LayerId":{"name":"6d102596-565c-45fb-a99b-3308887870e0","path":"sprites/zombieSoldierGirlGunFlashing_spr/zombieSoldierGirlGunFlashing_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"zombieSoldierGirlGunFlashing_spr","path":"sprites/zombieSoldierGirlGunFlashing_spr/zombieSoldierGirlGunFlashing_spr.yy",},"resourceVersion":"1.0","name":"3782f8fe-d920-4556-967d-7cbceda93b84","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"eee609ea-b7a3-4f99-8237-359e40b029a3","path":"sprites/zombieSoldierGirlGunFlashing_spr/zombieSoldierGirlGunFlashing_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"eee609ea-b7a3-4f99-8237-359e40b029a3","path":"sprites/zombieSoldierGirlGunFlashing_spr/zombieSoldierGirlGunFlashing_spr.yy",},"LayerId":{"name":"6d102596-565c-45fb-a99b-3308887870e0","path":"sprites/zombieSoldierGirlGunFlashing_spr/zombieSoldierGirlGunFlashing_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"zombieSoldierGirlGunFlashing_spr","path":"sprites/zombieSoldierGirlGunFlashing_spr/zombieSoldierGirlGunFlashing_spr.yy",},"resourceVersion":"1.0","name":"eee609ea-b7a3-4f99-8237-359e40b029a3","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"c9565b0f-635e-484a-97d5-99eea8955282","path":"sprites/zombieSoldierGirlGunFlashing_spr/zombieSoldierGirlGunFlashing_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"c9565b0f-635e-484a-97d5-99eea8955282","path":"sprites/zombieSoldierGirlGunFlashing_spr/zombieSoldierGirlGunFlashing_spr.yy",},"LayerId":{"name":"6d102596-565c-45fb-a99b-3308887870e0","path":"sprites/zombieSoldierGirlGunFlashing_spr/zombieSoldierGirlGunFlashing_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"zombieSoldierGirlGunFlashing_spr","path":"sprites/zombieSoldierGirlGunFlashing_spr/zombieSoldierGirlGunFlashing_spr.yy",},"resourceVersion":"1.0","name":"c9565b0f-635e-484a-97d5-99eea8955282","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"c9abf937-16a6-473d-aa90-943f397946b1","path":"sprites/zombieSoldierGirlGunFlashing_spr/zombieSoldierGirlGunFlashing_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"c9abf937-16a6-473d-aa90-943f397946b1","path":"sprites/zombieSoldierGirlGunFlashing_spr/zombieSoldierGirlGunFlashing_spr.yy",},"LayerId":{"name":"6d102596-565c-45fb-a99b-3308887870e0","path":"sprites/zombieSoldierGirlGunFlashing_spr/zombieSoldierGirlGunFlashing_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"zombieSoldierGirlGunFlashing_spr","path":"sprites/zombieSoldierGirlGunFlashing_spr/zombieSoldierGirlGunFlashing_spr.yy",},"resourceVersion":"1.0","name":"c9abf937-16a6-473d-aa90-943f397946b1","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"debbcae7-c967-4fac-bf35-cec8e9563c6c","path":"sprites/zombieSoldierGirlGunFlashing_spr/zombieSoldierGirlGunFlashing_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"debbcae7-c967-4fac-bf35-cec8e9563c6c","path":"sprites/zombieSoldierGirlGunFlashing_spr/zombieSoldierGirlGunFlashing_spr.yy",},"LayerId":{"name":"6d102596-565c-45fb-a99b-3308887870e0","path":"sprites/zombieSoldierGirlGunFlashing_spr/zombieSoldierGirlGunFlashing_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"zombieSoldierGirlGunFlashing_spr","path":"sprites/zombieSoldierGirlGunFlashing_spr/zombieSoldierGirlGunFlashing_spr.yy",},"resourceVersion":"1.0","name":"debbcae7-c967-4fac-bf35-cec8e9563c6c","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"01677a33-679b-4cdd-b01f-fbe325e5a798","path":"sprites/zombieSoldierGirlGunFlashing_spr/zombieSoldierGirlGunFlashing_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"01677a33-679b-4cdd-b01f-fbe325e5a798","path":"sprites/zombieSoldierGirlGunFlashing_spr/zombieSoldierGirlGunFlashing_spr.yy",},"LayerId":{"name":"6d102596-565c-45fb-a99b-3308887870e0","path":"sprites/zombieSoldierGirlGunFlashing_spr/zombieSoldierGirlGunFlashing_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"zombieSoldierGirlGunFlashing_spr","path":"sprites/zombieSoldierGirlGunFlashing_spr/zombieSoldierGirlGunFlashing_spr.yy",},"resourceVersion":"1.0","name":"01677a33-679b-4cdd-b01f-fbe325e5a798","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"zombieSoldierGirlGunFlashing_spr","path":"sprites/zombieSoldierGirlGunFlashing_spr/zombieSoldierGirlGunFlashing_spr.yy",},
     "timeUnits": 1,
     "playback": 1,
-    "playbackSpeed": 12.0,
+    "playbackSpeed": 8.0,
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,
@@ -50,10 +50,10 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"76d0b329-25f2-4727-a13a-b82d43f2cf23","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"113dc328-3dc8-4644-a86c-a6e2b63e7a88","path":"sprites/zombieSoldierGirlGunFlashing_spr/zombieSoldierGirlGunFlashing_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"86191799-8892-4ea0-87e3-da59c834f9d4","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"3782f8fe-d920-4556-967d-7cbceda93b84","path":"sprites/zombieSoldierGirlGunFlashing_spr/zombieSoldierGirlGunFlashing_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"cf5674cc-953c-462c-99f4-406562538e99","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"eee609ea-b7a3-4f99-8237-359e40b029a3","path":"sprites/zombieSoldierGirlGunFlashing_spr/zombieSoldierGirlGunFlashing_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"67f2d936-c53f-41b0-adb5-21a0bec1fcdf","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"c9565b0f-635e-484a-97d5-99eea8955282","path":"sprites/zombieSoldierGirlGunFlashing_spr/zombieSoldierGirlGunFlashing_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"9ccba528-c793-427c-8c5e-a06668181c83","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"113dc328-3dc8-4644-a86c-a6e2b63e7a88","path":"sprites/zombieSoldierGirlGunFlashing_spr/zombieSoldierGirlGunFlashing_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"d620adcf-cf56-4a8b-8126-9bfc392fdb07","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"c9abf937-16a6-473d-aa90-943f397946b1","path":"sprites/zombieSoldierGirlGunFlashing_spr/zombieSoldierGirlGunFlashing_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"7ceb1460-d4ca-493b-bcd7-f43e4c775822","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"debbcae7-c967-4fac-bf35-cec8e9563c6c","path":"sprites/zombieSoldierGirlGunFlashing_spr/zombieSoldierGirlGunFlashing_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"25fca872-c9af-4927-8ba0-dd4c1eb29ef5","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"01677a33-679b-4cdd-b01f-fbe325e5a798","path":"sprites/zombieSoldierGirlGunFlashing_spr/zombieSoldierGirlGunFlashing_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -66,7 +66,7 @@
     "backdropHeight": 1080,
     "backdropXOffset": 0.0,
     "backdropYOffset": 0.0,
-    "xorigin": 5,
+    "xorigin": 7,
     "yorigin": 6,
     "eventToFunction": {},
     "eventStubScript": null,

@@ -14,7 +14,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 186,
+  "width": 286,
   "height": 12,
   "textureGroupId": {
     "name": "Default",
@@ -27,21 +27,21 @@
     {"compositeImage":{"FrameId":{"name":"113dc328-3dc8-4644-a86c-a6e2b63e7a88","path":"sprites/zombieSoldierGirlGun_spr/zombieSoldierGirlGun_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"113dc328-3dc8-4644-a86c-a6e2b63e7a88","path":"sprites/zombieSoldierGirlGun_spr/zombieSoldierGirlGun_spr.yy",},"LayerId":{"name":"6d102596-565c-45fb-a99b-3308887870e0","path":"sprites/zombieSoldierGirlGun_spr/zombieSoldierGirlGun_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"zombieSoldierGirlGun_spr","path":"sprites/zombieSoldierGirlGun_spr/zombieSoldierGirlGun_spr.yy",},"resourceVersion":"1.0","name":"113dc328-3dc8-4644-a86c-a6e2b63e7a88","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"3782f8fe-d920-4556-967d-7cbceda93b84","path":"sprites/zombieSoldierGirlGun_spr/zombieSoldierGirlGun_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"3782f8fe-d920-4556-967d-7cbceda93b84","path":"sprites/zombieSoldierGirlGun_spr/zombieSoldierGirlGun_spr.yy",},"LayerId":{"name":"6d102596-565c-45fb-a99b-3308887870e0","path":"sprites/zombieSoldierGirlGun_spr/zombieSoldierGirlGun_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"zombieSoldierGirlGun_spr","path":"sprites/zombieSoldierGirlGun_spr/zombieSoldierGirlGun_spr.yy",},"resourceVersion":"1.0","name":"3782f8fe-d920-4556-967d-7cbceda93b84","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"eee609ea-b7a3-4f99-8237-359e40b029a3","path":"sprites/zombieSoldierGirlGun_spr/zombieSoldierGirlGun_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"eee609ea-b7a3-4f99-8237-359e40b029a3","path":"sprites/zombieSoldierGirlGun_spr/zombieSoldierGirlGun_spr.yy",},"LayerId":{"name":"6d102596-565c-45fb-a99b-3308887870e0","path":"sprites/zombieSoldierGirlGun_spr/zombieSoldierGirlGun_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"zombieSoldierGirlGun_spr","path":"sprites/zombieSoldierGirlGun_spr/zombieSoldierGirlGun_spr.yy",},"resourceVersion":"1.0","name":"eee609ea-b7a3-4f99-8237-359e40b029a3","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"c9565b0f-635e-484a-97d5-99eea8955282","path":"sprites/zombieSoldierGirlGun_spr/zombieSoldierGirlGun_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"c9565b0f-635e-484a-97d5-99eea8955282","path":"sprites/zombieSoldierGirlGun_spr/zombieSoldierGirlGun_spr.yy",},"LayerId":{"name":"6d102596-565c-45fb-a99b-3308887870e0","path":"sprites/zombieSoldierGirlGun_spr/zombieSoldierGirlGun_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"zombieSoldierGirlGun_spr","path":"sprites/zombieSoldierGirlGun_spr/zombieSoldierGirlGun_spr.yy",},"resourceVersion":"1.0","name":"c9565b0f-635e-484a-97d5-99eea8955282","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"c9abf937-16a6-473d-aa90-943f397946b1","path":"sprites/zombieSoldierGirlGun_spr/zombieSoldierGirlGun_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"c9abf937-16a6-473d-aa90-943f397946b1","path":"sprites/zombieSoldierGirlGun_spr/zombieSoldierGirlGun_spr.yy",},"LayerId":{"name":"6d102596-565c-45fb-a99b-3308887870e0","path":"sprites/zombieSoldierGirlGun_spr/zombieSoldierGirlGun_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"zombieSoldierGirlGun_spr","path":"sprites/zombieSoldierGirlGun_spr/zombieSoldierGirlGun_spr.yy",},"resourceVersion":"1.0","name":"c9abf937-16a6-473d-aa90-943f397946b1","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"debbcae7-c967-4fac-bf35-cec8e9563c6c","path":"sprites/zombieSoldierGirlGun_spr/zombieSoldierGirlGun_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"debbcae7-c967-4fac-bf35-cec8e9563c6c","path":"sprites/zombieSoldierGirlGun_spr/zombieSoldierGirlGun_spr.yy",},"LayerId":{"name":"6d102596-565c-45fb-a99b-3308887870e0","path":"sprites/zombieSoldierGirlGun_spr/zombieSoldierGirlGun_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"zombieSoldierGirlGun_spr","path":"sprites/zombieSoldierGirlGun_spr/zombieSoldierGirlGun_spr.yy",},"resourceVersion":"1.0","name":"debbcae7-c967-4fac-bf35-cec8e9563c6c","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"01677a33-679b-4cdd-b01f-fbe325e5a798","path":"sprites/zombieSoldierGirlGun_spr/zombieSoldierGirlGun_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"01677a33-679b-4cdd-b01f-fbe325e5a798","path":"sprites/zombieSoldierGirlGun_spr/zombieSoldierGirlGun_spr.yy",},"LayerId":{"name":"6d102596-565c-45fb-a99b-3308887870e0","path":"sprites/zombieSoldierGirlGun_spr/zombieSoldierGirlGun_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"zombieSoldierGirlGun_spr","path":"sprites/zombieSoldierGirlGun_spr/zombieSoldierGirlGun_spr.yy",},"resourceVersion":"1.0","name":"01677a33-679b-4cdd-b01f-fbe325e5a798","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"zombieSoldierGirlGun_spr","path":"sprites/zombieSoldierGirlGun_spr/zombieSoldierGirlGun_spr.yy",},
     "timeUnits": 1,
     "playback": 1,
-    "playbackSpeed": 12.0,
+    "playbackSpeed": 8.0,
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,
@@ -51,9 +51,9 @@
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"290bbe08-e49e-4752-be82-b428d9c94023","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"113dc328-3dc8-4644-a86c-a6e2b63e7a88","path":"sprites/zombieSoldierGirlGun_spr/zombieSoldierGirlGun_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"fe3d7dd6-fca2-4eff-a631-37118fa02243","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"3782f8fe-d920-4556-967d-7cbceda93b84","path":"sprites/zombieSoldierGirlGun_spr/zombieSoldierGirlGun_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"70413d91-519d-433e-bc21-eec7ac3820bb","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"eee609ea-b7a3-4f99-8237-359e40b029a3","path":"sprites/zombieSoldierGirlGun_spr/zombieSoldierGirlGun_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"101b6533-8ef0-45a1-9b94-42efe4cb84d7","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"c9565b0f-635e-484a-97d5-99eea8955282","path":"sprites/zombieSoldierGirlGun_spr/zombieSoldierGirlGun_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"aa60dc08-789c-453b-baa2-ecbb8012c5cc","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"c9abf937-16a6-473d-aa90-943f397946b1","path":"sprites/zombieSoldierGirlGun_spr/zombieSoldierGirlGun_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"db8dadc4-5f56-4cff-9a62-29f6753c22da","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"debbcae7-c967-4fac-bf35-cec8e9563c6c","path":"sprites/zombieSoldierGirlGun_spr/zombieSoldierGirlGun_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"8ed5ed4d-30ae-425e-93a5-6dde014072c5","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"01677a33-679b-4cdd-b01f-fbe325e5a798","path":"sprites/zombieSoldierGirlGun_spr/zombieSoldierGirlGun_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -66,7 +66,7 @@
     "backdropHeight": 1080,
     "backdropXOffset": 0.0,
     "backdropYOffset": 0.0,
-    "xorigin": 5,
+    "xorigin": 7,
     "yorigin": 6,
     "eventToFunction": {},
     "eventStubScript": null,
