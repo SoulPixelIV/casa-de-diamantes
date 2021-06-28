@@ -389,7 +389,7 @@ if (attackInProg3)
 		smokeDelay -= global.dt;
 		slamDelay -= global.dt;
 	}
-	if (smokeDelay < 0)
+	if (smokeDelay < 0 && !secondPhase)
 	{
 		instance_create_layer(x - 50 + random_range(-1, 1), y - 136 + slamPos, "ForegroundObjects", dustParticle_obj);
 		instance_create_layer(x + 57 + random_range(-1, 1), y - 136 + slamPos, "ForegroundObjects", dustParticle_obj);

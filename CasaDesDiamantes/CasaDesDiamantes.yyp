@@ -1,5 +1,6 @@
 {
   "resources": [
+    {"id":{"name":"rainmaker_spr","path":"sprites/rainmaker_spr/rainmaker_spr.yy",},"order":7,},
     {"id":{"name":"caveTilesOld_spr","path":"sprites/caveTilesOld_spr/caveTilesOld_spr.yy",},"order":0,},
     {"id":{"name":"caveTiles_spr","path":"sprites/caveTiles_spr/caveTiles_spr.yy",},"order":1,},
     {"id":{"name":"streetTiles_spr","path":"sprites/streetTiles_spr/streetTiles_spr.yy",},"order":2,},
