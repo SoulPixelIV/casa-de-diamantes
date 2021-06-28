@@ -4,5 +4,5 @@ if (hp < 0)
 	instance_destroy();
 }
 
-x = parent.x + 8;
-y = parent.y - 94 + parent.slamPos;
+x = parent.x + 4;
+y = parent.y - 100 + parent.slamPos;

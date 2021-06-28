@@ -208,8 +208,12 @@ if (hp < 200)
 		hitable = false;
 		movSpeed = movSpeed * 1.5;
 		secondPhase = true;
-		instance_create_layer(x + 5, y - 94, "Instances", sensoryTremblerEyeHitbox_obj);
-		alarmLight = instance_create_layer(x + 5, y - 94, "GraphicsLayer", spotlightRed_obj); 
+		instance_create_layer(x + 4, y - 100, "Instances", sensoryTremblerEyeHitbox_obj);
+		alarmLight = instance_create_layer(x + 5, y - 94, "GraphicsLayer", spotlightRedIntense_obj); 
+		with (alarmLight)
+		{
+			body = instance_nearest(x, y, sensoryTrembler_obj);
+		}
 	}
 	if (explosionDelay < 0 && explosionCount < 10)
 	{
@@ -527,6 +531,9 @@ if (walkspeedSound < 0 && horspeed != 0)
 //Alarmlight follow
 if (instance_exists(alarmLight))
 {
-	alarmLight.x = x + 5;
-	alarmLight.y = y - 94;
+	with (alarmLight)
+	{
+		light[| eLight.X] = body.x;
+		light[| eLight.Y] = body.y;
+	}
 }

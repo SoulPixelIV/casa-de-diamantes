@@ -4,7 +4,7 @@
     "path": "sprites/bluecubex16_spr/bluecubex16_spr.yy",
   },
   "solid": false,
-  "visible": true,
+  "visible": false,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {

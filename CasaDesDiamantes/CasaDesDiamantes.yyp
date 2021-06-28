@@ -257,6 +257,7 @@
     {"id":{"name":"shotgunPump_snd","path":"sounds/shotgunPump_snd/shotgunPump_snd.yy",},"order":32,},
     {"id":{"name":"chipBlueSide_obj","path":"objects/chipBlueSide_obj/chipBlueSide_obj.yy",},"order":53,},
     {"id":{"name":"smokingBottom_spr","path":"sprites/smokingBottom_spr/smokingBottom_spr.yy",},"order":0,},
+    {"id":{"name":"spotlightRedIntense_obj","path":"objects/spotlightRedIntense_obj/spotlightRedIntense_obj.yy",},"order":18,},
     {"id":{"name":"cursor_spr","path":"sprites/cursor_spr/cursor_spr.yy",},"order":17,},
     {"id":{"name":"bulletPistol_spr","path":"sprites/bulletPistol_spr/bulletPistol_spr.yy",},"order":18,},
     {"id":{"name":"playerWalking_spr","path":"sprites/playerWalking_spr/playerWalking_spr.yy",},"order":4,},
