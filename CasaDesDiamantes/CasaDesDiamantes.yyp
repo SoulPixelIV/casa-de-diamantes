@@ -1,6 +1,6 @@
 {
   "resources": [
-    {"id":{"name":"rainmaker_spr","path":"sprites/rainmaker_spr/rainmaker_spr.yy",},"order":7,},
+    {"id":{"name":"rainmakerOLD_spr","path":"sprites/rainmakerOLD_spr/rainmakerOLD_spr.yy",},"order":7,},
     {"id":{"name":"caveTilesOld_spr","path":"sprites/caveTilesOld_spr/caveTilesOld_spr.yy",},"order":0,},
     {"id":{"name":"caveTiles_spr","path":"sprites/caveTiles_spr/caveTiles_spr.yy",},"order":1,},
     {"id":{"name":"streetTiles_spr","path":"sprites/streetTiles_spr/streetTiles_spr.yy",},"order":2,},
@@ -249,6 +249,7 @@
     {"id":{"name":"shotgun_spr","path":"sprites/shotgun_spr/shotgun_spr.yy",},"order":8,},
     {"id":{"name":"hordemodeSpawnpointPlayer_obj","path":"objects/hordemodeSpawnpointPlayer_obj/hordemodeSpawnpointPlayer_obj.yy",},"order":58,},
     {"id":{"name":"ammoPistolSmall_spr","path":"sprites/ammoPistolSmall_spr/ammoPistolSmall_spr.yy",},"order":12,},
+    {"id":{"name":"rainmaker_obj","path":"objects/rainmaker_obj/rainmaker_obj.yy",},"order":14,},
     {"id":{"name":"caveLamp_obj","path":"objects/caveLamp_obj/caveLamp_obj.yy",},"order":41,},
     {"id":{"name":"dualBarettas_spr","path":"sprites/dualBarettas_spr/dualBarettas_spr.yy",},"order":10,},
     {"id":{"name":"ammoPackPistol_spr","path":"sprites/ammoPackPistol_spr/ammoPackPistol_spr.yy",},"order":11,},
@@ -484,6 +485,7 @@
     {"id":{"name":"fullDeath_scr","path":"scripts/fullDeath_scr/fullDeath_scr.yy",},"order":11,},
     {"id":{"name":"senzelaBackgroundBACKUP","path":"sprites/senzelaBackgroundBACKUP/senzelaBackgroundBACKUP.yy",},"order":1,},
     {"id":{"name":"bjCalcSum_scr","path":"scripts/bjCalcSum_scr/bjCalcSum_scr.yy",},"order":12,},
+    {"id":{"name":"rainmaker_spr","path":"sprites/rainmaker_spr/rainmaker_spr.yy",},"order":8,},
     {"id":{"name":"frontDash_scr","path":"scripts/frontDash_scr/frontDash_scr.yy",},"order":13,},
     {"id":{"name":"shadow_map_ensure_exists","path":"scripts/shadow_map_ensure_exists/shadow_map_ensure_exists.yy",},"order":0,},
     {"id":{"name":"goldenElevatorDirtyForeground_spr","path":"sprites/goldenElevatorDirtyForeground_spr/goldenElevatorDirtyForeground_spr.yy",},"order":87,},

@@ -7,6 +7,7 @@ damage = 0;
 moneyDropMin = 3;
 moneyDropMax = 7;
 colliding = false;
+hitable = true;
 knockback = 0;
 damageCollision = false;
 

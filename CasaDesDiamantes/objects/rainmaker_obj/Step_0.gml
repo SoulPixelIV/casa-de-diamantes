@@ -48,17 +48,17 @@ if (aggroTimer < 0)
 
 if (movement)
 {
-	if (aggro && (x > player_obj.x + 64 || x < player_obj.x - 64))
+	if (aggro)
 	{
 		if (!collision_circle(x, y, 16, enemy_obj, false, true))
 		{
-			if (player_obj.x > x)
-			{
-				horspeed = movSpeed * 3;
-			}
-			else
+			if (x > player_obj.x + 256)
 			{
 				horspeed = -movSpeed * 3;
+			}
+			if (x < player_obj.x - 256)
+			{
+				horspeed = movSpeed * 3;
 			}
 		}
 		else
@@ -69,29 +69,11 @@ if (movement)
 		}
 		if (dirLookat > 90 && dirLookat < 270)
 		{
-			turnDir = -1;
+			image_xscale = 1
 		}
 		else
 		{
-			turnDir = 1;
-		}
-		if (turnDir == -1 && image_xscale == 1)
-		{
-			turnDelay -= global.dt;
-			if (turnDelay < 0)
-			{
-				image_xscale = -1;
-				turnDelay = turnDelaySave;
-			}
-		}
-		if (turnDir == 1 && image_xscale == -1)
-		{
-			turnDelay -= global.dt;
-			if (turnDelay < 0)
-			{
-				image_xscale = 1;
-				turnDelay = turnDelaySave;
-			}
+			image_xscale = -1
 		}
 	}
 	else
@@ -103,22 +85,22 @@ if (movement)
 //Jetpack
 if (dir == 0)
 {
-	if (verspeed > -0.2)
+	if (verspeed > -0.1)
 	{
 		verspeed -= global.dt / 800;
 	}
-	if (verspeed <= -0.2)
+	if (verspeed <= -0.1)
 	{
 		dir = 1;
 	}
 }
 else
 {
-	if (verspeed < 0.2)
+	if (verspeed < 0.1)
 	{
 		verspeed += global.dt / 800;
 	}
-	if (verspeed >= 0.2)
+	if (verspeed >= 0.1)
 	{
 		dir = 0;
 	}
@@ -279,22 +261,22 @@ if (aggro)
 		{
 			if ((image_xscale == 1 && player_obj.x > x) || (image_xscale == -1 && player_obj.x < x))
 			{
-				attackCooldown -= global.dt;
+				//attackCooldown -= global.dt;
 			}
 			else
 			{
-				attackCooldown = attackCooldownSave;
+				//attackCooldown = attackCooldownSave;
 			}
 		}
 	}
 
 	if (randAttack == 1)
 	{
-		attackInProg1 = true;
+		//attackInProg1 = true;
 	}
 	else
 	{
-		attackInProg2 = true;
+		//attackInProg2 = true;
 		sprite_index = zombieSoldierGirlGrenate_spr;
 	}
 
@@ -336,12 +318,12 @@ if (damageTint && sprite_index != zombieSoldierGirlFlashHeadshot_spr)
 }
 if (damageTintHeadshot && sprite_index != zombieSoldierGirlFlash_spr)
 {
-	sprite_index = zombieSoldierGirlFlashHeadshot_spr;
+	//sprite_index = zombieSoldierGirlFlashHeadshot_spr;
 	damageTintTimer -= global.dt;
 }
 if (damageTintTimer < 0)
 {
-	sprite_index = zombieSoldierGirl_spr;
+	sprite_index = rainmaker_spr;
 	damageTintTimer = damageTintTimerSave;
 	damageTint = false;
 	damageTintHeadshot = false;
