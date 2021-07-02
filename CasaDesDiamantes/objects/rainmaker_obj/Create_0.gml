@@ -58,12 +58,6 @@ lineFlashTimerSave = lineFlashTimer;
 turnDelaySave = turnDelay;
 gravityStrengthSave = gravityStrength;
 
-headshotHitbox = instance_create_layer(x, y - 16, "Instances", headshotHitbox_obj);
-with (headshotHitbox)
-{
-	body = instance_nearest(x, y, zombieSoldierGirl_obj);
-}
-
 //Create Emitter
 emitter = audio_emitter_create();
 audio_max_distance = 800;

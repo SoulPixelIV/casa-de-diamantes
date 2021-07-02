@@ -21,7 +21,7 @@ if (!collision_line(x, y, player_obj.x, player_obj.y, collider_obj, false, true)
 	{
 		if (distance_to_point(player_obj.x, player_obj.y) < aggroRange)
 		{
-			if ((image_xscale == 1 && player_obj.x >= x) || (image_xscale == -1 && player_obj.x <= x))
+			if ((image_xscale == -1 && player_obj.x >= x) || (image_xscale == 1 && player_obj.x <= x))
 			{
 				deaggroTimer = deaggroTimerSave;
 				aggroTimer -= global.dt;
@@ -48,15 +48,30 @@ if (aggroTimer < 0)
 
 if (movement)
 {
+	if (horspeed != 0)
+	{
+		sprite_index = rainmakerWalking_spr;
+	}
 	if (aggro)
 	{
-		if (!collision_circle(x, y, 16, enemy_obj, false, true))
+		if (x < player_obj.x + 128 && x > player_obj.x - 128 && horspeed == 0)
 		{
-			if (x > player_obj.x + 256)
+			if (player_obj.x > x)
+			{
+				horspeed = movSpeed * 3;
+			}
+			else
 			{
 				horspeed = -movSpeed * 3;
 			}
-			if (x < player_obj.x - 256)
+		}
+		if (!collision_circle(x, y, 16, enemy_obj, false, true))
+		{
+			if (x > player_obj.x + 128)
+			{
+				horspeed = -movSpeed * 3;
+			}
+			if (x < player_obj.x - 128)
 			{
 				horspeed = movSpeed * 3;
 			}
@@ -166,10 +181,6 @@ else
 if (hp < 0)
 {
 	var deathCross = instance_create_layer(x, y - 8, "ForegroundObjects", deathCross_obj);
-	with (headshotHitbox)
-	{
-		instance_destroy();
-	}
 	
 	//Enemy Slowmo
 	var randNum = choose(1,2,3,4,5,6,7,8,9);
@@ -242,16 +253,6 @@ if (hp < 0)
 	instance_change(zombieSoldierGirlDeath1_obj, true);
 }
 
-//Headshot Hitbox
-if (instance_exists(headshotHitbox))
-{
-	with (headshotHitbox)
-	{
-		x = body.x;
-		y = body.y - 12;
-	}
-}
-
 //Attack
 if (aggro)
 {
@@ -259,41 +260,24 @@ if (aggro)
 	{
 		if (player_obj.movement)
 		{
-			if ((image_xscale == 1 && player_obj.x > x) || (image_xscale == -1 && player_obj.x < x))
-			{
-				//attackCooldown -= global.dt;
-			}
-			else
-			{
-				//attackCooldown = attackCooldownSave;
-			}
+			attackCooldown -= global.dt;
 		}
 	}
 
 	if (randAttack == 1)
 	{
-		//attackInProg1 = true;
+		attackInProg1 = true;
 	}
 	else
 	{
-		//attackInProg2 = true;
-		sprite_index = zombieSoldierGirlGrenate_spr;
+		attackInProg1 = true;
 	}
 
-	if (attackCooldown < 300 && attackInProg1)
-	{
-		sprite_index = zombieSoldierGirlAim_spr;
-	}
 	if (attackCooldown < 0 && attackInProg1)
 	{
-		var shot = audio_play_sound_on(emitter, shotgunShot_snd, false, 1);
-		audio_sound_pitch(shot, random_range(0.9, 1.1));
-		
-		instance_create_layer(x + 10, y, "Instances", bulletZombieSoldierGirl_obj);
-		instance_create_layer(x + 10, y, "Instances", shotLightDualBarettas_obj);	
+		instance_create_layer(x, y, "Instances", poisontear_obj);	
 
-		attackCooldown = attackCooldownSave;
-		sprite_index = zombieSoldierGirl_spr;
+		attackCooldown = random_range(attackCooldownSave / 1.5, attackCooldownSave);
 		attackInProg1 = false;
 		attackInProg2 = false;
 		randAttack = choose(1,2);

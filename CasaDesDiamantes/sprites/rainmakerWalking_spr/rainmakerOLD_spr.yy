@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Rainmaker",
-    "path": "folders/Enemies/Enemy Sprites/Rainmaker.yy",
+    "name": "Enemy Sprites",
+    "path": "folders/Enemies/Enemy Sprites.yy",
   },
   "resourceVersion": "1.0",
   "name": "rainmakerOLD_spr",
