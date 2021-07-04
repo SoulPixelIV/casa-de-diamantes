@@ -1,15 +1,15 @@
 {
   "spriteId": {
-    "name": "poisonpuddle_spr",
-    "path": "sprites/poisonpuddle_spr/poisonpuddle_spr.yy",
+    "name": "laserbulletshield_spr",
+    "path": "sprites/laserbulletshield_spr/laserbulletshield_spr.yy",
   },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "hazardPlayerOnly_obj",
-    "path": "objects/hazardPlayerOnly_obj/hazardPlayerOnly_obj.yy",
+    "name": "bulletDetect_obj",
+    "path": "objects/bulletDetect_obj/bulletDetect_obj.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
@@ -34,7 +34,7 @@
     "path": "folders/Enemies/Enemy Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "poisonpuddle_obj",
+  "name": "laserbulletshield_obj",
   "tags": [],
   "resourceType": "GMObject",
 }

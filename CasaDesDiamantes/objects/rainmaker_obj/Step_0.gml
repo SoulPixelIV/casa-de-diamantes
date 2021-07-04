@@ -270,7 +270,7 @@ if (aggro)
 	}
 	else
 	{
-		attackInProg1 = true;
+		attackInProg2 = true;
 	}
 
 	if (attackCooldown < 0 && attackInProg1)
@@ -280,18 +280,16 @@ if (aggro)
 		attackCooldown = random_range(attackCooldownSave / 1.5, attackCooldownSave);
 		attackInProg1 = false;
 		attackInProg2 = false;
-		randAttack = choose(1,2);
+		randAttack = choose(1,1,1,2);
 	}
 	if (attackCooldown < 0 && attackInProg2)
 	{	
-		var grenate = instance_create_layer(x + 10 * image_xscale, y, "Instances", grenateSmall_obj);
-		grenate.horspeed = random_range(2, 4) * image_xscale;
-		grenate.verspeed = random_range(-4, -6);
-		attackCooldown = attackCooldownSave / 2;
-		sprite_index = zombieSoldierGirlGrenate_spr;
+		instance_create_layer(x, y, "Instances", laserbulletshield_obj);	
+
+		attackCooldown = random_range(attackCooldownSave / 1.5, attackCooldownSave);
 		attackInProg1 = false;
 		attackInProg2 = false;
-		randAttack = choose(1,1,2);
+		randAttack = choose(1,1,1,2);
 	}
 }
 
