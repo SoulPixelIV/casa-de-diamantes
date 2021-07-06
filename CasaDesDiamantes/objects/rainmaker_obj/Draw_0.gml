@@ -44,3 +44,12 @@ if (player_obj != noone)
 		clamp(dirCursor, 270, 90);
 	}
 }
+
+//Defense Enemy
+if (attackInProg2)
+{
+	if (instance_exists(defenseEnemy))
+	{
+		draw_sprite(bulletshield_spr, -1, defenseEnemy.x, defenseEnemy.y);
+	}
+}

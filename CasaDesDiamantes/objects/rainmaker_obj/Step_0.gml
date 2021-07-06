@@ -270,7 +270,10 @@ if (aggro)
 	}
 	else
 	{
-		attackInProg2 = true;
+		if (distance_to_object(enemy_obj) < 512)
+		{
+			attackInProg2 = true;
+		}
 	}
 
 	if (attackCooldown < 0 && attackInProg1)
@@ -280,16 +283,47 @@ if (aggro)
 		attackCooldown = random_range(attackCooldownSave / 1.5, attackCooldownSave);
 		attackInProg1 = false;
 		attackInProg2 = false;
-		randAttack = choose(1,1,1,2);
+		randAttack = choose(2);
 	}
 	if (attackCooldown < 0 && attackInProg2)
 	{	
-		instance_create_layer(x, y, "Instances", laserbulletshield_obj);	
-
+		instance_deactivate_object(self);
+		foundEnemy = instance_nearest(x, y, enemy_obj);
+		if (foundEnemy != rainmaker_obj)
+		{
+			defenseEnemy = instance_nearest(x, y, enemy_obj);
+			defenseEnemy.hitable = false;
+			postDefenseCooldown -= global.dt;
+		}
+		instance_activate_object(self);
+		if (foundEnemy != rainmaker_obj)
+		{
+			if (!createdLight)
+			{
+				blueLight = instance_create_layer(x, y, "GraphicsLayer", spotlightBlue_obj); 
+				var foundEnemy = foundEnemy;
+				with (blueLight)
+				{
+					body = foundEnemy;
+				}
+				createdLight = true;
+			}
+		}
+	}
+	
+	if (attackInProg2 && postDefenseCooldown < 0)
+	{
 		attackCooldown = random_range(attackCooldownSave / 1.5, attackCooldownSave);
+		postDefenseCooldown = postDefenseCooldownSave;
 		attackInProg1 = false;
 		attackInProg2 = false;
-		randAttack = choose(1,1,1,2);
+		randAttack = choose(2);
+		defenseEnemy.hitable = true;
+		if (instance_exists(blueLight))
+		{
+			instance_destroy(blueLight);
+		}
+		createdLight = false;
 	}
 }
 
@@ -341,3 +375,13 @@ if (checkPlayerTimer < 0)
 
 //Sound Position
 audio_emitter_position(emitter, x, y, 0);
+
+//Blue defense light
+if (instance_exists(blueLight))
+{
+	with (blueLight)
+	{
+		light[| eLight.X] = body.x;
+		light[| eLight.Y] = body.y;
+	}
+}

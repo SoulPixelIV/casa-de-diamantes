@@ -108,6 +108,7 @@
     {"id":{"name":"casinoLightTower_spr","path":"sprites/casinoLightTower_spr/casinoLightTower_spr.yy",},"order":79,},
     {"id":{"name":"scoreBorder_spr","path":"sprites/scoreBorder_spr/scoreBorder_spr.yy",},"order":12,},
     {"id":{"name":"questionmark_spr","path":"sprites/questionmark_spr/questionmark_spr.yy",},"order":103,},
+    {"id":{"name":"bulletshield_spr","path":"sprites/bulletshield_spr/bulletshield_spr.yy",},"order":6,},
     {"id":{"name":"healthbar_spr","path":"sprites/healthbar_spr/healthbar_spr.yy",},"order":13,},
     {"id":{"name":"player_spr","path":"sprites/player_spr/player_spr.yy",},"order":17,},
     {"id":{"name":"syringeGate_spr","path":"sprites/syringeGate_spr/syringeGate_spr.yy",},"order":114,},
