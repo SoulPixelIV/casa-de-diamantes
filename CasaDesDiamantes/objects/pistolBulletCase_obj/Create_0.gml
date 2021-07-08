@@ -1,5 +1,5 @@
-horspeed = random_range(-1.1, 1.1);
-verspeed = random_range(-1, -1.6);
+horspeed = random_range(-1.3, 1.3);
+verspeed = random_range(-1.2, -1.8);
 image_angle = random_range(0, 359);
-gravityStrength = -0.06;
-destroyTimer = 500;
+gravityStrength = -0.065;
+destroyTimer = 620;

@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "ammoShotgunSmall_spr",
-    "path": "sprites/ammoShotgunSmall_spr/ammoShotgunSmall_spr.yy",
+    "name": "ammoPistolSmall_spr",
+    "path": "sprites/ammoPistolSmall_spr/ammoPistolSmall_spr.yy",
   },
   "solid": false,
   "visible": true,

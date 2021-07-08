@@ -110,11 +110,6 @@ function shooting_scr(argument0) {
 				instance_create_layer(playerBulletLine_obj.x, playerBulletLine_obj.y, "Instances", bulletShotgun_obj);
 			}
 			
-			repeat (choose(4,5,6,7))
-			{
-				instance_create_layer(playerBulletLine_obj.x, playerBulletLine_obj.y, "Instances", shotgunBulletCase_obj);
-			}
-			
 			instance_create_layer(shotLightx, shotLighty, "ForegroundObjects", shotLightShotgun_obj);
 			instance_create_layer(shotLightx, shotLighty, "ForegroundObjects", smokecloud_obj);
 			screenshake(50, 12, 0.6, id);

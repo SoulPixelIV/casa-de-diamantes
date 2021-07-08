@@ -283,7 +283,7 @@ if (aggro)
 		attackCooldown = random_range(attackCooldownSave / 1.5, attackCooldownSave);
 		attackInProg1 = false;
 		attackInProg2 = false;
-		randAttack = choose(2);
+		randAttack = choose(1,1,1,2);
 	}
 	if (attackCooldown < 0 && attackInProg2)
 	{	
@@ -317,7 +317,7 @@ if (aggro)
 		postDefenseCooldown = postDefenseCooldownSave;
 		attackInProg1 = false;
 		attackInProg2 = false;
-		randAttack = choose(2);
+		randAttack = choose(1,1,1,2);
 		defenseEnemy.hitable = true;
 		if (instance_exists(blueLight))
 		{

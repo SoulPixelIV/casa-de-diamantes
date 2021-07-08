@@ -53,3 +53,6 @@ if (attackInProg2)
 		draw_sprite(bulletshield_spr, -1, defenseEnemy.x, defenseEnemy.y);
 	}
 }
+
+//Draw shield
+draw_sprite(rainmakershield_spr, -1, x, y);

@@ -758,6 +758,7 @@ if (!isZombie && !deathActivated)
 				if (!audio_is_playing(shotgunPump_snd))
 				{
 					audio_play_sound(shotgunPump_snd, 1, false);
+					instance_create_layer(playerBulletLine_obj.x, playerBulletLine_obj.y, "Instances", shotgunBulletCase_obj);
 				}
 			}
 		}
