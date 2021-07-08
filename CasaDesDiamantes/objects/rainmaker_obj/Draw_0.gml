@@ -45,14 +45,5 @@ if (player_obj != noone)
 	}
 }
 
-//Defense Enemy
-if (attackInProg2)
-{
-	if (instance_exists(defenseEnemy))
-	{
-		draw_sprite(bulletshield_spr, -1, defenseEnemy.x, defenseEnemy.y);
-	}
-}
-
 //Draw shield
 draw_sprite(rainmakershield_spr, -1, x, y);

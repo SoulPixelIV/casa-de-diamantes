@@ -105,6 +105,7 @@
     {"id":{"name":"healthCut_spr","path":"sprites/healthCut_spr/healthCut_spr.yy",},"order":11,},
     {"id":{"name":"forcefield_obj","path":"objects/forcefield_obj/forcefield_obj.yy",},"order":71,},
     {"id":{"name":"casinoLightTower_spr","path":"sprites/casinoLightTower_spr/casinoLightTower_spr.yy",},"order":79,},
+    {"id":{"name":"colliderOnlyBullet_obj","path":"objects/colliderOnlyBullet_obj/colliderOnlyBullet_obj.yy",},"order":7,},
     {"id":{"name":"scoreBorder_spr","path":"sprites/scoreBorder_spr/scoreBorder_spr.yy",},"order":12,},
     {"id":{"name":"questionmark_spr","path":"sprites/questionmark_spr/questionmark_spr.yy",},"order":103,},
     {"id":{"name":"bulletshield_spr","path":"sprites/bulletshield_spr/bulletshield_spr.yy",},"order":6,},

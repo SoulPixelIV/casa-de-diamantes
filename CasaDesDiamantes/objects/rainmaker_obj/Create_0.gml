@@ -10,7 +10,6 @@ level = 1;
 moneyDropMin = 3;
 moneyDropMax = 7;
 attackCooldown = 800;
-postDefenseCooldown = 1100;
 damage = 0;
 damageCollision = false;
 points = 125;
@@ -28,8 +27,7 @@ exclamationmarkTimer = 250;
 turnDir = 1;
 dir = 0;
 defenseEnemy = noone;
-blueLight = noone;
-createdLight = false;
+
 if (instance_exists(player_obj))
 {
 	playerPosX = player_obj.x;
@@ -61,7 +59,6 @@ damageTintTimerSave = damageTintTimer;
 lineFlashTimerSave = lineFlashTimer;
 turnDelaySave = turnDelay;
 gravityStrengthSave = gravityStrength;
-postDefenseCooldownSave = postDefenseCooldown;
 
 //Create Emitter
 emitter = audio_emitter_create();
@@ -78,3 +75,11 @@ checkPlayerTimer = 50;
 checkPlayerTimerSave = checkPlayerTimer;
 checkPlayerTimer = 0;
 gravityStrength = 0;
+
+//Create shield hitboxes
+shieldLeft = instance_create_layer(x - 32, y - 18, "Instances", colliderOnlyBullet_obj);
+shieldRight = instance_create_layer(x + 32, y - 18, "Instances", colliderOnlyBullet_obj);
+shieldLeft.image_xscale = 0.5;
+shieldRight.image_xscale = 0.5;
+shieldLeft.image_yscale = 2;
+shieldRight.image_yscale = 2;
