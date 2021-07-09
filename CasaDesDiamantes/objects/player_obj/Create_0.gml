@@ -47,6 +47,7 @@ damageFlickerTimer = 17;
 
 sniperDamageValue = 0;
 sniperDamageValueMax = 500;
+shotgunPumpDone = false;
 colliding = true;
 reloading = false;
 infection = 0;

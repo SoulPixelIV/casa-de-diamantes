@@ -755,12 +755,17 @@ if (!isZombie && !deathActivated)
 		{
 			if (global.currentWeapon == pickedWeapon.shotgun && global.shotgunCooldown < global.shotgunCooldownSave / 2)
 			{
-				if (!audio_is_playing(shotgunPump_snd))
+				if (!audio_is_playing(shotgunPump_snd) && !player_obj.shotgunPumpDone)
 				{
 					audio_play_sound(shotgunPump_snd, 1, false);
 					instance_create_layer(playerBulletLine_obj.x, playerBulletLine_obj.y, "Instances", shotgunBulletCase_obj);
+					player_obj.shotgunPumpDone = true;
 				}
 			}
+		}
+		if (global.shotgunCooldown < 0)
+		{
+			player_obj.shotgunPumpDone = false;
 		}
 	}
 	
