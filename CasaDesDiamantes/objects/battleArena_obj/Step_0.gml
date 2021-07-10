@@ -48,7 +48,7 @@ if (checkEnemycountTimer < 0)
 				selectedGate = instance_find(objectAccess, i);
 				if (place_meeting(x, y, selectedGate))
 				{
-					//selectedGate.open = true;
+					selectedGate.open = true;
 				}
 			}
 		}

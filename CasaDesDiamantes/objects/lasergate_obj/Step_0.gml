@@ -8,7 +8,13 @@ if (open)
 			lightRed = instance_create_layer(x, y + 40, "GraphicsLayer", spotlightRed_obj);
 			spawnedLight = true;
 		}
-		//instance_activate_object(collider);
+		if (!createdHitbox)
+		{
+			collider = instance_create_layer(x - 8, y, "TileCollider", colliderAlwaysOn_obj);
+			collider.image_yscale = 2.5;
+			collider.image_xscale = 0.5;
+			createdHitbox = true;
+		}
 		if (!spawnedPart)
 		{
 			sparkEmitter = part_emitter_create(global.partSystem);
@@ -27,7 +33,14 @@ else
 		instance_destroy(lightRed);
 		spawnedLight = false;
 	}
-	instance_deactivate_object(collider);
+	if (createdHitbox)
+	{
+		if (instance_exists(collider))
+		{
+			instance_destroy(collider);
+			createdHitbox = false;
+		}
+	}
 	part_emitter_destroy(global.partSystem, sparkEmitter);
 	spawnedPart = false;
 }
