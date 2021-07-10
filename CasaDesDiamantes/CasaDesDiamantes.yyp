@@ -583,6 +583,7 @@
     {"id":{"name":"crawler_spr","path":"sprites/crawler_spr/crawler_spr.yy",},"order":0,},
     {"id":{"name":"playerJumpSpinUnequippedNude_spr","path":"sprites/playerJumpSpinUnequippedNude_spr/playerJumpSpinUnequippedNude_spr.yy",},"order":5,},
     {"id":{"name":"blackjackSpriteConverter_scr","path":"scripts/blackjackSpriteConverter_scr/blackjackSpriteConverter_scr.yy",},"order":18,},
+    {"id":{"name":"level0_Powerplant","path":"rooms/level0_Powerplant/level0_Powerplant.yy",},"order":0,},
     {"id":{"name":"sh_aberration","path":"shaders/sh_aberration/sh_aberration.yy",},"order":1,},
     {"id":{"name":"shd_blur_1_pass_isoweight_discrete","path":"shaders/shd_blur_1_pass_isoweight_discrete/shd_blur_1_pass_isoweight_discrete.yy",},"order":2,},
     {"id":{"name":"blurShaderNew","path":"shaders/blurShaderNew/blurShaderNew.yy",},"order":3,},
@@ -972,6 +973,7 @@
     {"roomId":{"name":"testRoom3","path":"rooms/testRoom3/testRoom3.yy",},},
     {"roomId":{"name":"testRoom2","path":"rooms/testRoom2/testRoom2.yy",},},
     {"roomId":{"name":"level2_Casino","path":"rooms/level2_Casino/level2_Casino.yy",},},
+    {"roomId":{"name":"level0_Powerplant","path":"rooms/level0_Powerplant/level0_Powerplant.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":13,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
@@ -1087,6 +1089,7 @@
     {"folderPath":"folders/Steph/Relevant Stuff.yy","order":6,"resourceVersion":"1.0","name":"Relevant Stuff","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Steph/Clothes/WarmJacket.yy","order":5,"resourceVersion":"1.0","name":"WarmJacket","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Enemies/Enemy Sprites/Rainmaker.yy","order":9,"resourceVersion":"1.0","name":"Rainmaker","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Scenes/Main/Powerplant.yy","order":5,"resourceVersion":"1.0","name":"Powerplant","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":-1,"resourceVersion":"1.3","name":"audiogroup_default","resourceType":"GMAudioGroup",},

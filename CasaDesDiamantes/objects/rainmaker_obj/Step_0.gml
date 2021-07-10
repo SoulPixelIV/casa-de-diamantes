@@ -347,6 +347,6 @@ audio_emitter_position(emitter, x, y, 0);
 
 //Shield position
 shieldLeft.x = x - 32;
-shieldLeft.y = y - 18;
+shieldLeft.y = y - 14;
 shieldRight.x = x + 32;
-shieldRight.y = y - 18;
+shieldRight.y = y - 14;
