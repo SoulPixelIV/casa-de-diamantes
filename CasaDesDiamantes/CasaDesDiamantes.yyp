@@ -951,6 +951,7 @@
   },
   "RoomOrderNodes": [
     {"roomId":{"name":"loadVars","path":"rooms/loadVars/loadVars.yy",},},
+    {"roomId":{"name":"level0_Powerplant","path":"rooms/level0_Powerplant/level0_Powerplant.yy",},},
     {"roomId":{"name":"level1_SenzelaForest","path":"rooms/level1_SenzelaForest/level1_SenzelaForest.yy",},},
     {"roomId":{"name":"level2_SenzelaForest","path":"rooms/level2_SenzelaForest/level2_SenzelaForest.yy",},},
     {"roomId":{"name":"level0_RoadToCasino","path":"rooms/level0_RoadToCasino/level0_RoadToCasino.yy",},},
@@ -973,7 +974,6 @@
     {"roomId":{"name":"testRoom3","path":"rooms/testRoom3/testRoom3.yy",},},
     {"roomId":{"name":"testRoom2","path":"rooms/testRoom2/testRoom2.yy",},},
     {"roomId":{"name":"level2_Casino","path":"rooms/level2_Casino/level2_Casino.yy",},},
-    {"roomId":{"name":"level0_Powerplant","path":"rooms/level0_Powerplant/level0_Powerplant.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":13,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
