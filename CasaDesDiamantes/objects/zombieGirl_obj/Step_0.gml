@@ -215,16 +215,22 @@ if (hp < 0)
 	//Drop Ammo
 	if (lastBullet == bulletDualBarettas_obj)
 	{
-		repeat (ceil(ammoSpawnCount / 4))
+		if (global.unlockedWeapon[2])
 		{
-			instance_create_layer(x, y, "Instances", ammoShotgunSmall_obj);
+			repeat (ceil(ammoSpawnCount / 4))
+			{
+				instance_create_layer(x, y, "Instances", ammoShotgunSmall_obj);
+			}
 		}
 	}
 	if (lastBullet == bulletShotgun_obj)
 	{
-		repeat (ammoSpawnCount)
+		if (global.unlockedWeapon[1])
 		{
-			instance_create_layer(x, y, "Instances", ammoPistolSmall_obj);
+			repeat (ammoSpawnCount)
+			{
+				instance_create_layer(x, y, "Instances", ammoPistolSmall_obj);
+			}
 		}
 	}
 
