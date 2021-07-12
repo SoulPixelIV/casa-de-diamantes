@@ -19,6 +19,7 @@ inputMethod = 0; //0 -> Keyboard | 1 -> Controller
 controllerDeadzone = 0.3;
 controllerDirLastInput = 0;
 playerRotation = 0;
+radiation = 0;
 
 //Physics
 gravityStrength = -0.03; //Lower is lower gravity

@@ -1175,6 +1175,33 @@ if (deathSlowmo)
 		deathSlowmo = false;
 	}
 }
+
+//Radiation
+if (distance_to_object(toxicwaste_obj) > 96)
+{
+	if (radiation > 1)
+	{
+		radiation -= global.dt / 32;
+	}
+	else
+	{
+		radiation = 0;
+	}
+}
+if (distance_to_object(toxicwaste_obj) < 96 && distance_to_object(toxicwaste_obj) > 24)
+{
+	if (radiation < 100)
+	{
+		radiation += global.dt / 24;
+	}
+}
+if (distance_to_object(toxicwaste_obj) < 24)
+{
+	if (radiation < 100)
+	{
+		radiation += global.dt / 16;
+	}
+}
 	
 //Audio
 audio_listener_position(x, y, 0);
