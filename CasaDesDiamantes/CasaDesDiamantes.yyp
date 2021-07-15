@@ -95,6 +95,7 @@
     {"id":{"name":"playerShotgun_spr","path":"sprites/playerShotgun_spr/playerShotgun_spr.yy",},"order":14,},
     {"id":{"name":"windowWeapon_spr","path":"sprites/windowWeapon_spr/windowWeapon_spr.yy",},"order":1,},
     {"id":{"name":"blackborder_spr","path":"sprites/blackborder_spr/blackborder_spr.yy",},"order":49,},
+    {"id":{"name":"level1_Powerplant","path":"rooms/level1_Powerplant/level1_Powerplant.yy",},"order":1,},
     {"id":{"name":"windowPistol_spr","path":"sprites/windowPistol_spr/windowPistol_spr.yy",},"order":2,},
     {"id":{"name":"windowDualBarettas_spr","path":"sprites/windowDualBarettas_spr/windowDualBarettas_spr.yy",},"order":3,},
     {"id":{"name":"windowShotgun_spr","path":"sprites/windowShotgun_spr/windowShotgun_spr.yy",},"order":4,},
@@ -502,6 +503,7 @@
     {"id":{"name":"frontDash_scr","path":"scripts/frontDash_scr/frontDash_scr.yy",},"order":13,},
     {"id":{"name":"shadow_map_ensure_exists","path":"scripts/shadow_map_ensure_exists/shadow_map_ensure_exists.yy",},"order":0,},
     {"id":{"name":"goldenElevatorDirtyForeground_spr","path":"sprites/goldenElevatorDirtyForeground_spr/goldenElevatorDirtyForeground_spr.yy",},"order":87,},
+    {"id":{"name":"battleArenaWoundedpoint_obj","path":"objects/battleArenaWoundedpoint_obj/battleArenaWoundedpoint_obj.yy",},"order":93,},
     {"id":{"name":"darkcaveBackground2_obj","path":"objects/darkcaveBackground2_obj/darkcaveBackground2_obj.yy",},"order":1,},
     {"id":{"name":"casinoCandleLight_obj","path":"objects/casinoCandleLight_obj/casinoCandleLight_obj.yy",},"order":32,},
     {"id":{"name":"C_BJ_teleporter","path":"objects/C_BJ_teleporter/C_BJ_teleporter.yy",},"order":11,},
@@ -963,6 +965,7 @@
   },
   "RoomOrderNodes": [
     {"roomId":{"name":"loadVars","path":"rooms/loadVars/loadVars.yy",},},
+    {"roomId":{"name":"level1_Powerplant","path":"rooms/level1_Powerplant/level1_Powerplant.yy",},},
     {"roomId":{"name":"level0_Powerplant","path":"rooms/level0_Powerplant/level0_Powerplant.yy",},},
     {"roomId":{"name":"level1_SenzelaForest","path":"rooms/level1_SenzelaForest/level1_SenzelaForest.yy",},},
     {"roomId":{"name":"level2_SenzelaForest","path":"rooms/level2_SenzelaForest/level2_SenzelaForest.yy",},},
@@ -3678,7 +3681,7 @@
     {"CopyToMask":-1,"filePath":"datafiles/GMLive","resourceVersion":"1.0","name":"std.ndll","resourceType":"GMIncludedFile",},
   ],
   "MetaData": {
-    "IDEVersion": "2.3.2.560",
+    "IDEVersion": "2.3.3.570",
   },
   "resourceVersion": "1.4",
   "name": "CasaDesDiamantes",

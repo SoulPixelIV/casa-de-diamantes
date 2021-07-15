@@ -10,10 +10,12 @@ enemyNumber = instance_number(enemy_obj);
 enemyCount = 0;
 updatedEnemyCount = 0;
 checkSpawners = false;
+woundedSpawntimer = 2600;
 var enemyList;
 
 checkEnemycountTimer = 100;
 checkEnemycountTimerSave = checkEnemycountTimer;
+woundedSpawntimerSave = woundedSpawntimer;
 
 //Find all enemies
 for (var i = 0; i < enemyNumber; i++)
@@ -27,6 +29,19 @@ for (var i = 0; i < enemyNumber; i++)
 	if (place_meeting(x, y, enemyList[i]))	
 	{
 		enemyCount++;
+	}
+}
+
+//Find all wounded points
+woundedpointList[0] = noone;
+woundedpointNumber = instance_number(battleArenaWoundedpoint_obj);
+woundedpointMaxNum = 0;
+for (var i = 0; i < woundedpointNumber; i++)
+{
+	if (place_meeting(x, y, instance_find(battleArenaWoundedpoint_obj, i)))
+	{
+		woundedpointList[i] = instance_find(battleArenaWoundedpoint_obj, i);
+		woundedpointMaxNum++;
 	}
 }
 

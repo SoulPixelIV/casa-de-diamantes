@@ -8,15 +8,21 @@ if (spawnTime < 0)
 {
 	instance_destroy(light);
 	var object = instance_create_layer(x, y, "Instances", spawnObject);
-	object.image_xscale = instance_nearest(x, y, battleArenaSpawn_obj).dir;
+	if (instance_exists(battleArenaSpawn_obj))
+	{
+		object.image_xscale = instance_nearest(x, y, battleArenaSpawn_obj).dir;
+	}
 	
 	with (object)
 	{
-		if (instance_nearest(x, y, battleArenaSpawn_obj).isAggro)
+		if (instance_exists(battleArenaSpawn_obj))
 		{
-			if (variable_instance_exists(id, "aggro"))
+			if (instance_nearest(x, y, battleArenaSpawn_obj).isAggro)
 			{
-				aggro = true;
+				if (variable_instance_exists(id, "aggro"))
+				{
+					aggro = true;
+				}
 			}
 		}
 	}

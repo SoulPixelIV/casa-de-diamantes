@@ -199,6 +199,23 @@ else
     verSpeed = 0;
 }
 
+if (aggroAtSpecificPoint)
+{
+	var specificPoint = instance_nearest(x, y, battleArenaPlayerpoint_obj);
+	var playerHitPoint = false
+	with (player_obj)
+	{
+		if (place_meeting(x, y, specificPoint))
+		{
+			playerHitPoint = true;
+		}
+	}
+	if (playerHitPoint)
+	{
+		aggro = true;
+	}
+}
+
 //###Second phase###
 if (hp < 200)
 {

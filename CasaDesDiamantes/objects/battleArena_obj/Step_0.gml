@@ -24,6 +24,39 @@ if (countEnemies)
 }
 setWave = false;
 
+//Spawn wounded enemies
+woundedSpawntimer -= global.dt;
+
+if (spawnWoundedEnemies && woundedSpawntimer < 0)
+{
+	woundedCount = 0;
+	woundedList[0] = noone;
+	woundedNumber = instance_number(zombieGirlWounded_obj);
+	for (var i = 0; i < woundedNumber; i++)
+	{
+		woundedList[i] = instance_find(zombieGirlWounded_obj, i);
+	}
+
+	//Count enemies
+	for (var i = 0; i < woundedNumber; i++)
+	{
+		if (place_meeting(x, y, woundedList[i]))	
+		{
+			woundedCount++;
+		}
+	}
+	
+	//Spawn wounded zombie if necessary
+	if (woundedCount == 0)
+	{
+		randWoundedpoint = woundedpointList[irandom(woundedpointMaxNum-1)]
+		var spawnCloud = instance_create_layer(randWoundedpoint.x, randWoundedpoint.y, "Instances", spawnCloud_obj);
+		spawnCloud.spawnObject = zombieGirlWounded_obj;
+	}
+	
+	woundedSpawntimer = woundedSpawntimerSave;
+}
+
 //Check if done
 if (!place_meeting(x, y, enemy_obj) && !place_meeting(x, y, spawnCloud_obj))
 {
@@ -61,6 +94,21 @@ if (checkEnemycountTimer < 0)
 				if (place_meeting(x, y, selectedGate))
 				{
 					selectedGate.open = true;
+				}
+			}
+		}
+		if (instance_exists(objectAccessSpecificWave))
+		{
+			if (wave == specificWave)
+			{
+				objectNumber = instance_number(objectAccessSpecificWave);
+				for (var i = 0; i < objectNumber; i++)
+				{
+					selectedGate = instance_find(objectAccessSpecificWave, i);
+					if (place_meeting(x, y, selectedGate))
+					{
+						selectedGate.open = true;
+					}
 				}
 			}
 		}
@@ -186,7 +234,7 @@ if (checkEnemycountTimer < 0)
 		if (place_meeting(x, y, instance_find(battleArenaSpawn_obj, i)))
 		{
 			selectedSpawn = instance_find(battleArenaSpawn_obj, i);
-			if (selectedSpawn.spawnedEnemy == false && selectedSpawn.wave = wave)
+			if (selectedSpawn.spawnedEnemy == false && selectedSpawn.wave == wave)
 			{
 				var spawnCloud = instance_create_layer(selectedSpawn.x, selectedSpawn.y, "Instances", spawnCloud_obj);
 				spawnCloud.spawnObject = selectedSpawn.enemy;
