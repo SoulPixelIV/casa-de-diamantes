@@ -1283,9 +1283,12 @@ if (colliding)
 	//Enemy Collision
 	if (place_meeting(x + horspeed * global.dt, y, enemy_obj))
 	{
-		if (instance_place(x + horspeed * global.dt, y, enemy_obj).colliding)
+		if (instance_exists(instance_place(x + horspeed * global.dt, y, enemy_obj)))
 		{
-			horspeed = 0;
+			if (instance_place(x + horspeed * global.dt, y, enemy_obj).colliding)
+			{
+				horspeed = 0;
+			}
 		}
 	}
 	if ((place_free(x + 1, y) && place_free(x - 1, y)) || grounded)

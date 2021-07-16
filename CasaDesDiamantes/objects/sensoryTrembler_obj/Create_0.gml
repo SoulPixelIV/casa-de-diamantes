@@ -91,3 +91,5 @@ checkPlayerTimerSave = checkPlayerTimer;
 checkPlayerTimer = 0;
 gravityStrength = 0;
 
+shieldLeft = noone;
+shieldRight = noone;

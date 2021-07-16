@@ -1,4 +1,4 @@
-hp = 200;
+hp = 75;
 hitable = true;
 parent = instance_nearest(x, y, sensoryTrembler_obj);
 image_yscale = 2;
