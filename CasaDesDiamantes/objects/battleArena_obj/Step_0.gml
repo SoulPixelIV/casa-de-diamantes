@@ -17,7 +17,10 @@ if (countEnemies)
 	{
 		if (place_meeting(x, y, enemyList[i]))	
 		{
-			enemyCount++;
+			if (enemyList[i] != zombieGirlWounded_obj)
+			{
+				enemyCount++;
+			}
 		}
 	}
 	countEnemies = false;
@@ -169,28 +172,42 @@ if (checkEnemycountTimer < 0)
 	{
 		if (place_meeting(x, y, enemyList[i]))	
 		{
-			updatedEnemyCount++;
+			if (enemyList[i] != zombieGirlWounded_obj)
+			{
+				updatedEnemyCount++;
+			}
 		}
 	}
 
 	if (!onlySpawn)
 	{
-		if (updatedEnemyCount < enemyCount / 2 && !setWave && !countEnemies && !instance_exists(spawnCloud_obj))
+		//Start new wave
+		if (nextWaveAfterEnemyDead == noone)
 		{
-			//Find all spawns
-			spawnNumber = instance_number(battleArenaSpawn_obj);
-			for (var i = 0; i < spawnNumber; i++)
+			if (updatedEnemyCount < enemyCount / 2 && !setWave && !countEnemies && !instance_exists(spawnCloud_obj))
 			{
-				if (place_meeting(x, y, instance_find(battleArenaSpawn_obj, i)))
+				spawnNumber = instance_number(battleArenaSpawn_obj);
+				for (var i = 0; i < spawnNumber; i++)
 				{
-					selectedSpawn = instance_find(battleArenaSpawn_obj, i);
-					if (selectedSpawn.wave > wave)
+					if (place_meeting(x, y, instance_find(battleArenaSpawn_obj, i)))
 					{
-						wave++;
-						setWave = true;
-						break;
+						selectedSpawn = instance_find(battleArenaSpawn_obj, i);
+						if (selectedSpawn.wave > wave)
+						{
+							wave++;
+							setWave = true;
+							break;
+						}
 					}
 				}
+			}
+		}
+		else
+		{
+			//Start new wave when specific enemy is gone
+			if (!place_meeting(x, y, nextWaveAfterEnemyDead))
+			{
+				nextWaveAfterEnemyDead = noone;
 			}
 		}
 	}
