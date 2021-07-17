@@ -15,7 +15,7 @@
   "VTile": false,
   "For3D": false,
   "width": 126,
-  "height": 172,
+  "height": 196,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -71,7 +71,7 @@
     "backdropXOffset": 0.0,
     "backdropYOffset": 0.0,
     "xorigin": 63,
-    "yorigin": 172,
+    "yorigin": 196,
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sensoryTremblerBaseDestroyed_spr","path":"sprites/sensoryTremblerBaseDestroyed_spr/sensoryTremblerBaseDestroyed_spr.yy",},

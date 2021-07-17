@@ -1,5 +1,9 @@
 hp = 75;
 hitable = true;
+knockback = 0;
+damage = 0;
+damageCollision = false;
+colliding = false;
 parent = instance_nearest(x, y, sensoryTrembler_obj);
 image_yscale = 2;
 x = parent.x;

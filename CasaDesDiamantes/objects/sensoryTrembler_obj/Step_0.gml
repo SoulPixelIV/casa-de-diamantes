@@ -226,11 +226,12 @@ if (hp < 100)
 		movSpeed = movSpeed * 1.5;
 		secondPhase = true;
 		instance_create_layer(x + 4, y - 100, "Instances", sensoryTremblerEyeHitbox_obj);
+		/*
 		alarmLight = instance_create_layer(x + 5, y - 94, "GraphicsLayer", spotlightRedIntense_obj); 
 		with (alarmLight)
 		{
 			body = instance_nearest(x, y, sensoryTrembler_obj);
-		}
+		}*/
 		
 		//Create shield hitboxes
 		shieldLeft = instance_create_layer(x - 48, y - 128, "Instances", colliderOnlyBullet_obj);

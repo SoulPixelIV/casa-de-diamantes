@@ -1283,9 +1283,10 @@ if (colliding)
 	//Enemy Collision
 	if (place_meeting(x + horspeed * global.dt, y, enemy_obj))
 	{
-		if (instance_exists(instance_place(x + horspeed * global.dt, y, enemy_obj)))
+		var nearEnemy = instance_place(x + horspeed * global.dt, y, enemy_obj);
+		if (nearEnemy != noone)
 		{
-			if (instance_place(x + horspeed * global.dt, y, enemy_obj).colliding)
+			if (nearEnemy.colliding)
 			{
 				horspeed = 0;
 			}
