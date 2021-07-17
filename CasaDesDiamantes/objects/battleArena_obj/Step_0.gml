@@ -63,10 +63,7 @@ if (checkEnemycountTimer < 0)
 	{
 		if (place_meeting(x, y, enemyList[i]))	
 		{
-			if (enemyList[i] != zombieGirlWounded_obj)
-			{
-				enemyCount++;
-			}
+			enemyCount++;
 		}
 	}
 		
