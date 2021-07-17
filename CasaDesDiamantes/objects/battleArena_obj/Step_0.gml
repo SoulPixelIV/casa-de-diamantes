@@ -1,30 +1,5 @@
 /// @description Spawn enemies
 
-//Count Enemies again
-if (countEnemies)
-{
-	enemyCount = 0;
-	var enemyList;
-
-	//Find all enemies
-	for (var i = 0; i < enemyNumber; i++)
-	{
-		enemyList[i] = instance_find(enemy_obj, i);
-	}
-
-	//Count enemies
-	for (var i = 0; i < enemyNumber; i++)
-	{
-		if (place_meeting(x, y, enemyList[i]))	
-		{
-			if (enemyList[i] != zombieGirlWounded_obj)
-			{
-				enemyCount++;
-			}
-		}
-	}
-	countEnemies = false;
-}
 setWave = false;
 
 //Spawn wounded enemies
@@ -72,9 +47,32 @@ if (!place_meeting(x, y, enemy_obj) && !place_meeting(x, y, spawnCloud_obj))
 checkEnemycountTimer -= global.dt;
 if (checkEnemycountTimer < 0)
 {
+	enemyNumber = instance_number(enemy_obj);
+	
+	enemyCount = 0;
+	var enemyList;
+
+	//Find all enemies
+	for (var i = 0; i < enemyNumber; i++)
+	{
+		enemyList[i] = instance_find(enemy_obj, i);
+	}
+
+	//Count enemies
+	for (var i = 0; i < enemyNumber; i++)
+	{
+		if (place_meeting(x, y, enemyList[i]))	
+		{
+			if (enemyList[i] != zombieGirlWounded_obj)
+			{
+				enemyCount++;
+			}
+		}
+	}
+		
 	//Use Gates
 	//Close Gate
-	if ((place_meeting(x, y, player_obj) && updatedEnemyCount > 0) || instance_exists(spawnCloud_obj) && place_meeting(x, y, player_obj))
+	if ((place_meeting(x, y, player_obj) && enemyCount > 0) || instance_exists(spawnCloud_obj) && place_meeting(x, y, player_obj))
 	{
 		if (instance_exists(objectAccess))
 		{
@@ -117,7 +115,7 @@ if (checkEnemycountTimer < 0)
 		}
 	}
 	//Open Gate
-	if (updatedEnemyCount <= 0 && wave == highestWave || !place_meeting(x, y, player_obj))
+	if (enemyCount <= 0 && wave == highestWave || !place_meeting(x, y, player_obj))
 	{
 		if (instance_exists(objectAccess))
 		{
@@ -156,35 +154,13 @@ if (checkEnemycountTimer < 0)
 		}
 		sectionCleared = true;
 	}
-	
-	//Check Enemy Count
-	var enemyList;
-	updatedEnemyCount = 0;
-
-	//Find all enemies
-	for (var i = 0; i < enemyNumber; i++)
-	{
-		enemyList[i] = instance_find(enemy_obj, i);
-	}
-
-	//Count enemies
-	for (var i = 0; i < enemyNumber; i++)
-	{
-		if (place_meeting(x, y, enemyList[i]))	
-		{
-			if (enemyList[i] != zombieGirlWounded_obj)
-			{
-				updatedEnemyCount++;
-			}
-		}
-	}
 
 	if (!onlySpawn)
 	{
 		//Start new wave
 		if (nextWaveAfterEnemyDead == noone)
 		{
-			if (updatedEnemyCount < enemyCount / 2 && !setWave && !countEnemies && !instance_exists(spawnCloud_obj))
+			if (enemyCount < 2 && !setWave && !instance_exists(spawnCloud_obj))
 			{
 				spawnNumber = instance_number(battleArenaSpawn_obj);
 				for (var i = 0; i < spawnNumber; i++)

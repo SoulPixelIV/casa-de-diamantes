@@ -4,14 +4,13 @@ wave = 0;
 highestWave = 0;
 done = false;
 setWave = false;
-countEnemies = false;
 sectionCleared = false;
 enemyNumber = instance_number(enemy_obj);
 enemyCount = 0;
-updatedEnemyCount = 0;
 checkSpawners = false;
 woundedSpawntimer = 2600;
-var enemyList;
+enemyList[0] = noone;
+enemyList[1] = noone;
 
 checkEnemycountTimer = 100;
 checkEnemycountTimerSave = checkEnemycountTimer;
