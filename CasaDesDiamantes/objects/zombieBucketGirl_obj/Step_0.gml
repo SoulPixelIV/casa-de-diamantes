@@ -175,6 +175,12 @@ if (hp < 0)
 		camera_obj.follow = deathCross;
 	}
 	
+	//Destroy Bucket
+	if (instance_exists(bucketHitbox))
+	{
+		instance_destroy(bucketHitbox);
+	}
+	
 	//Drop Item
 	if (instance_exists(player_obj))
 	{
