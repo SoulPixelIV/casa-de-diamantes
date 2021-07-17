@@ -86,7 +86,7 @@ hitVignetteTimer = 50;
 hitVignetteTimerSave = hitVignetteTimer;
 vignetteAlpha = 0;
 showWalljumpsLeft = false;
-checkCullingAreaTimer = 100;
+checkCullingAreaTimer = 50;
 wheelRotation = 0;
 wheelSpeed = 1;
 
