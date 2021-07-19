@@ -734,6 +734,7 @@
     {"id":{"name":"movingPlatform_obj","path":"objects/movingPlatform_obj/movingPlatform_obj.yy",},"order":60,},
     {"id":{"name":"cindy_spr","path":"sprites/cindy_spr/cindy_spr.yy",},"order":2,},
     {"id":{"name":"windowBackground_obj","path":"objects/windowBackground_obj/windowBackground_obj.yy",},"order":0,},
+    {"id":{"name":"mainmenuBackground_spr","path":"sprites/mainmenuBackground_spr/mainmenuBackground_spr.yy",},"order":68,},
     {"id":{"name":"pistol_obj","path":"objects/pistol_obj/pistol_obj.yy",},"order":0,},
     {"id":{"name":"shotgun_obj","path":"objects/shotgun_obj/shotgun_obj.yy",},"order":3,},
     {"id":{"name":"dualBarettas_obj","path":"objects/dualBarettas_obj/dualBarettas_obj.yy",},"order":4,},

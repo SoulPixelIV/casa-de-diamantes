@@ -25,7 +25,7 @@ if (spawnWoundedEnemies && woundedSpawntimer < 0)
 	}
 	
 	//Spawn wounded zombie if necessary
-	if (woundedCount == 0)
+	if (woundedCount == 0 && !done)
 	{
 		randWoundedpoint = woundedpointList[irandom(woundedpointMaxNum-1)]
 		var spawnCloud = instance_create_layer(randWoundedpoint.x, randWoundedpoint.y, "Instances", spawnCloud_obj);

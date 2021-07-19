@@ -190,6 +190,16 @@ if (hp < 0)
 		camera_obj.follow = deathCross;
 	}
 	
+	//Destroy shields
+	if (instance_exists(shieldLeft))
+	{
+		instance_destroy(shieldLeft);
+	}
+	if (instance_exists(shieldRight))
+	{
+		instance_destroy(shieldRight);
+	}
+	
 	//Drop Item
 	if (instance_exists(player_obj))
 	{
@@ -353,6 +363,6 @@ audio_emitter_position(emitter, x, y, 0);
 
 //Shield position
 shieldLeft.x = x - 32;
-shieldLeft.y = y - 14;
+shieldLeft.y = y - 20;
 shieldRight.x = x + 32;
-shieldRight.y = y - 14;
+shieldRight.y = y - 20;

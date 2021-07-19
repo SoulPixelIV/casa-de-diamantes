@@ -36,8 +36,38 @@ if (verspeed < 14)
 //horspeed
 if (!place_free(x + horspeed, y))
 {
-    horspeed = 0;
-} 
+	//Move towards player
+	if (distance_to_object(player_obj) < 32)
+	{
+		if (player_obj.x > x)
+		{
+			horspeed += 0.1;
+		}
+		else
+		{
+			horspeed += -0.1;
+		}
+	}
+	else
+	{
+		horspeed = 0;
+	}
+}
+else
+{
+	//Move towards player
+	if (distance_to_object(player_obj) < 32)
+	{
+		if (player_obj.x > x)
+		{
+			horspeed += 0.1;
+		}
+		else
+		{
+			horspeed += -0.1;
+		}
+	}
+}
 //verspeed
 if (!place_free(x, y + verspeed))
 {

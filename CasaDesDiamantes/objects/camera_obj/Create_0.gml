@@ -263,3 +263,8 @@ partMovement = 0;
 partDir = 0;
 
 smoothness = 0.3;
+
+//Check Culling Area first time
+//instance_deactivate_object(deactivate_obj);
+//128px Safezone
+//instance_activate_region((x - xScreenSize / 2) - 256, (y - yScreenSize / 2) - 256, xScreenSize + 512, yScreenSize + 512, true);

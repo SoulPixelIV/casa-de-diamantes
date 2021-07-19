@@ -165,10 +165,6 @@ else
 if (hp < 0)
 {
 	var deathCross = instance_create_layer(x, y - 8, "ForegroundObjects", deathCross_obj);
-	with (headshotHitbox)
-	{
-		instance_destroy();
-	}
 	
 	//Enemy Slowmo
 	var randNum = choose(1,2,3,4,5,6,7,8,9);
@@ -232,13 +228,6 @@ if (hp < 0)
 	damageTint = false;
 	damageTintHeadshot = false;
 	instance_change(zombieGirlWoundedDeath1_obj, false);
-}
-
-//Headshot Hitbox
-with (headshotHitbox)
-{
-	x = body.x;
-	y = body.y - 16;
 }
 
 if (damageTint && sprite_index != zombieGirlWoundedFlashHeadshot_spr)

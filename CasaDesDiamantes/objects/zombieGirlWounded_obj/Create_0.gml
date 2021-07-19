@@ -5,7 +5,7 @@ horspeed = 0;
 verspeed = 0;
 
 //Stats
-hp = 50;
+hp = 40;
 colliding = true;
 hitable = true;
 level = 1;
@@ -52,12 +52,6 @@ attackCooldownSave = attackCooldown;
 attackDelaySave = attackDelay;
 damageTintTimerSave = damageTintTimer;
 gravityStrengthSave = gravityStrength;
-
-headshotHitbox = instance_create_layer(x, y - 16, "Instances", headshotHitbox_obj);
-with (headshotHitbox)
-{
-	body = instance_nearest(x, y, zombieGirlWounded_obj);
-}
 
 checkPlayerTimer = 50;
 checkPlayerTimerSave = checkPlayerTimer;
