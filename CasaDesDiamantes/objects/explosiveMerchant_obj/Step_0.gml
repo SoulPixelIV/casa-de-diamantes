@@ -207,7 +207,9 @@ if (hp <= 0)
 	{
 		image_xscale = 1;
 		image_yscale = 1;
-		instance_change(choose(explosion_obj, explosionBig_obj), true);
+		var explosionSpawned = instance_create_layer(x, y, "Instances", choose(explosion_obj, explosionBig_obj));
+		explosionSpawned.damageToEnemies = true;
+		instance_destroy();
 	}
 }
 
