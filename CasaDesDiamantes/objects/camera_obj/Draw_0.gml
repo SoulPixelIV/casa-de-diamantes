@@ -625,10 +625,24 @@ draw_set_alpha(1);
 //Infectiontext
 if (drawInfectionText)
 {
+	deathDelayTimer -= global.dt;
+}
+
+if (deathDelayTimer < 0)
+{
 	if (!finalDeath)
 	{
+		if (deathFadeIn < 0.95)
+		{
+			deathFadeIn += global.dt / 100;
+		}
+		else
+		{
+			deathFadeIn = 1;
+		}
+		draw_set_alpha(deathFadeIn);
 		draw_set_font(global.optixFont);
-		draw_sprite_ext(death_spr, 0, x, (y - yScreenSize / 4), 1.5, 1.5, 0, -1, 1);
+		draw_sprite_ext(death_spr, 0, x, (y - yScreenSize / 4), 1.5, 1.5, 0, -1, deathFadeIn);
 		draw_set_color(c_white);
 		draw_text((x + xScreenSize / 4) - 48, (y + yScreenSize / 4) + 32, "Syringes Left: " + string(global.syringes))
 		draw_set_font(gothicPixel_fnt);
@@ -665,9 +679,12 @@ if (drawInfectionText)
 			drawInfectionText = false;
 			finalDeath = false;
 			pauseDeathTimer = pauseDeathTimerSave;
+			deathDelayTimer = deathDelayTimerSave;
+			deathFadeIn = 0;
 		}
 	}
 }
+
 if (respawnSetScreenBrightness)
 {
 	if (blackscreenStrength > 0.05)

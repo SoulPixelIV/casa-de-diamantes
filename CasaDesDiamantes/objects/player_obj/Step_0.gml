@@ -494,7 +494,7 @@ with (gameManager_obj)
 	{
 		with (player_obj)
 		{
-			if (!isDashing && !huggingWall)
+			if (!isDashing && !huggingWall && !deathActivated)
 			{
 				if (grounded)
 				{
@@ -542,7 +542,7 @@ with (gameManager_obj)
 	{
 		with (player_obj)
 		{
-			if (!isDashing && !huggingWall)
+			if (!isDashing && !huggingWall && !deathActivated)
 			{
 				if (grounded)
 				{
@@ -1074,7 +1074,6 @@ if (hp <= 0 || infection > hp)
 	{
 		camera_obj.finalDeath = true;
 	}
-	sprite_index = playerDeath_spr;
 	//Death
 	if (!deathActivated)
 	{

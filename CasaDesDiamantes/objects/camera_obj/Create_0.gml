@@ -13,6 +13,8 @@ minCameraYBorder = yScreenSize / 2 + 32;
 maxCameraYBorder = (room_height - yScreenSize / 2) - 32;
 cameraSpeed = 1;
 cameraYBorder = 16;
+deathDelayTimer = 500;
+deathFadeIn = 0;
 noHUD = false;
 anim = 0;
 anim2 = 0;
@@ -51,6 +53,7 @@ updateFPSSave = updateFPS;
 finalDeathScreenTimerSave = finalDeathScreenTimer;
 pauseDeathTimerSave = pauseDeathTimer;
 newWeaponTimerSave = newWeaponTimer;
+deathDelayTimerSave = deathDelayTimer;
 
 shake = false;
 shake_time = 0;

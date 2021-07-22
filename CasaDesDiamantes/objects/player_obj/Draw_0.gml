@@ -387,3 +387,8 @@ if (!isZombie && !deathActivated)
 		}
 	}
 }
+else
+{
+	draw_self();
+	sprite_index = playerDeath_spr;
+}
