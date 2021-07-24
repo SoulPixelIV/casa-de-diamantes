@@ -19,6 +19,7 @@ if (!collision_line(x, y, player_obj.x, player_obj.y, collider_obj, false, true)
 	{
 		if (distance_to_point(player_obj.x, player_obj.y) < aggroRange)
 		{
+			deaggroTimer = deaggroTimerSave;
 			aggroTimer -= global.dt;
 		}
 	}
@@ -26,6 +27,7 @@ if (!collision_line(x, y, player_obj.x, player_obj.y, collider_obj, false, true)
 else
 {
 	aggroTimer = aggroTimerSave;
+	deaggroTimer -= global.dt;
 }
 
 //Base Rotation
@@ -109,20 +111,23 @@ if (movement && !attackInProg3)
 		}
 	}
 	
-	if (distance_to_object(player_obj) < 300 && distance_to_object(player_obj) > 24)
+	if (aggro)
 	{
-		randDirChangeTimer -= global.dt;
-		if (randDirChangeTimer < 0)
+		if (distance_to_object(player_obj) < 300 && distance_to_object(player_obj) > 24)
 		{
-			randMovDir = choose(1, -1);
-			randDirChangeTimer = randDirChangeTimerSave + random_range(-80, 80);
+			randDirChangeTimer -= global.dt;
+			if (randDirChangeTimer < 0)
+			{
+				randMovDir = choose(1, -1);
+				randDirChangeTimer = randDirChangeTimerSave + random_range(-80, 80);
+			}
+			horspeed = movSpeed * randMovDir;
 		}
-		horspeed = movSpeed * randMovDir;
-	}
 	
-	if (distance_to_object(player_obj) < 24)
-	{
-		horspeed = 0;
+		if (distance_to_object(player_obj) < 24)
+		{
+			horspeed = 0;
+		}
 	}
 }
 else
