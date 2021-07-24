@@ -61,7 +61,7 @@ damageTintTimer = 15;
 headshot = false;
 aggro = true;
 aggroTimer = 130;
-deaggroTimer = 3000;
+deaggroTimer = 2000;
 exclamationmarkTimer = 250;
 
 //Help Vars

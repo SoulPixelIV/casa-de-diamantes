@@ -367,7 +367,7 @@ if (!attackInProg && !attackInProg2 && !attackInProg3 && aggro)
 	}
 }
 
-if (attackCooldown < 0 && !attackInProg && !attackInProg2 && !attackInProg3)
+if (attackCooldown < 0 && !attackInProg && !attackInProg2 && !attackInProg3 && aggro)
 {
 	if (distance_to_object(player_obj) < aggroRange && distance_to_object(player_obj) > 86 && !secondPhase)
 	{
