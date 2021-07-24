@@ -23,13 +23,20 @@ else
 	}
 }
 
-if (instance_exists(player_obj) && distance_to_object(player_obj) < aggroRange - aggroRange / 4)
+//Sight Check
+if (!collision_line(x, y, player_obj.x, player_obj.y, collider_obj, false, true) && !collision_line(x, y, player_obj.x, player_obj.y, enemyVisionBlockZone_obj, false, true))
 {
-	aimDelay -= global.dt;
+	if (collision_line(x, y, player_obj.x, player_obj.y, player_obj, false, true))
+	{
+		if (distance_to_point(player_obj.x, player_obj.y) < aggroRange)
+		{
+			aimDelay -= global.dt;
+		}
+	}
 }
 else
 {
-    aimDelay = 230;
+	aimDelay = 230;
 }
 
 if (aimDelay < 140)
