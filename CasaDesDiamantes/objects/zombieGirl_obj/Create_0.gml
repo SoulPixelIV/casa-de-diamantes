@@ -44,6 +44,7 @@ deaggroTimer = 3000;
 exclamationmarkTimer = 250;
 
 //Help Vars
+hpSave = hp;
 aggroTimerSave = aggroTimer;
 deaggroTimerSave = deaggroTimer;
 exclamationmarkTimerSave = exclamationmarkTimer;

@@ -8,6 +8,16 @@ function fullDeath_scr() {
 	player_obj.maxhp = 100;
 	player_obj.deathActivated = false;
 
+	//Reset Battle arenas
+	arenaNum = instance_number(battleArena_obj);
+	for (i = 0; i < arenaNum; i++)
+	{
+		var arena = instance_find(battleArena_obj, i);
+		arena.wave = 0;
+		arena.highestWave = 0;
+		arena.done = false;
+	}
+
 	if (player_obj.lastCheckpoint != noone)
 	{
 		player_obj.x = player_obj.lastCheckpoint.x;

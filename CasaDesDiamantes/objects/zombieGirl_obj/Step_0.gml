@@ -253,11 +253,11 @@ if (hp < 0)
 	damageTintHeadshot = false;
 	if (headshot)
 	{
-		instance_change(zombieGirlDeath1_obj, true);
+		instance_create_layer(x, y, "Instances", zombieGirlDeath1_obj);
 	}
 	else
 	{
-		instance_change(zombieGirlDeath2_obj, true);
+		instance_create_layer(x, y, "Instances", zombieGirlDeath2_obj);
 	}
 }
 
