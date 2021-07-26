@@ -250,7 +250,7 @@ if (hp < 0)
 //Bucket Hitbox
 with (bucketHitbox)
 {
-	if (!is_undefined(body))
+	if (instance_exists(body))
 	{
 		if (x != body.x && y != body.y)
 		{

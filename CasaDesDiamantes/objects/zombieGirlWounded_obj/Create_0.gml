@@ -15,6 +15,7 @@ damage = 0;
 knockback = 0;
 playerSightMax = 128;
 playerSightMin = 32;
+gotSpawned = false;
 
 lastBullet = bulletPistol_obj;
 ammoSpawnCount = 8;
@@ -43,6 +44,15 @@ aggro = false;
 aggroTimer = 130;
 deaggroTimer = 3000;
 exclamationmarkTimer = 250;
+
+if (!gotSpawned)
+{
+	spawn = instance_create_layer(x, y, "Instances", enemyHiddenSpawnpoint_obj);
+	spawn.hp = hp;
+	spawn.aggroRange = aggroRange;
+	spawn.spawnID = zombieGirlWounded_obj;
+	spawn.dir = image_xscale;
+}
 
 //Help Vars
 aggroTimerSave = aggroTimer;

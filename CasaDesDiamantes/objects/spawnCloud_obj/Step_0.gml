@@ -8,6 +8,7 @@ if (spawnTime < 0)
 {
 	instance_destroy(light);
 	var object = instance_create_layer(x, y, "Instances", spawnObject);
+	object.gotSpawned = true;
 	if (instance_exists(battleArenaSpawn_obj))
 	{
 		object.image_xscale = instance_nearest(x, y, battleArenaSpawn_obj).dir;

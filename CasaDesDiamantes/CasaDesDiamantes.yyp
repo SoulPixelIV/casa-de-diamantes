@@ -243,6 +243,7 @@
     {"id":{"name":"debugVer_spr","path":"sprites/debugVer_spr/debugVer_spr.yy",},"order":12,},
     {"id":{"name":"dialogueSystem_obj","path":"objects/dialogueSystem_obj/dialogueSystem_obj.yy",},"order":3,},
     {"id":{"name":"spr_lut_light_intensity_linear","path":"sprites/spr_lut_light_intensity_linear/spr_lut_light_intensity_linear.yy",},"order":0,},
+    {"id":{"name":"enemyHiddenSpawnpoint_obj","path":"objects/enemyHiddenSpawnpoint_obj/enemyHiddenSpawnpoint_obj.yy",},"order":2585,},
     {"id":{"name":"spr_lut_light_intensity_spot","path":"sprites/spr_lut_light_intensity_spot/spr_lut_light_intensity_spot.yy",},"order":1,},
     {"id":{"name":"spr_lut_light_intensity_area","path":"sprites/spr_lut_light_intensity_area/spr_lut_light_intensity_area.yy",},"order":2,},
     {"id":{"name":"spr_lut_light_intensity_line","path":"sprites/spr_lut_light_intensity_line/spr_lut_light_intensity_line.yy",},"order":3,},

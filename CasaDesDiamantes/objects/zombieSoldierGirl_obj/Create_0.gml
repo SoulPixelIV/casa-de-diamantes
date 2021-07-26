@@ -26,6 +26,8 @@ deaggroTimer = 800;
 exclamationmarkTimer = 250;
 turnDir = 1;
 dir = 0;
+gotSpawned = false;
+
 if (instance_exists(player_obj))
 {
 	playerPosX = player_obj.x;
@@ -74,6 +76,15 @@ audio_emitter_position(emitter, x, y, 0);
 audio_emitter_falloff(emitter, audio_drop_start, audio_max_distance, 1);
 
 //snd = audio_play_sound_on(emitter, jetpack_snd, true, 1);
+
+if (!gotSpawned)
+{
+	spawn = instance_create_layer(x, y, "Instances", enemyHiddenSpawnpoint_obj);
+	spawn.hp = hp;
+	spawn.aggroRange = aggroRange;
+	spawn.spawnID = zombieSoldierGirl_obj;
+	spawn.dir = image_xscale;
+}
 
 checkPlayerTimer = 50;
 checkPlayerTimerSave = checkPlayerTimer;

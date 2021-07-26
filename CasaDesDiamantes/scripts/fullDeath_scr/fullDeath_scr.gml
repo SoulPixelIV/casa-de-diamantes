@@ -7,15 +7,21 @@ function fullDeath_scr() {
 	player_obj.hp = 100;
 	player_obj.maxhp = 100;
 	player_obj.deathActivated = false;
-
-	//Reset Battle arenas
-	arenaNum = instance_number(battleArena_obj);
-	for (i = 0; i < arenaNum; i++)
+	
+	//Destroy every Enemy
+	enemNum = instance_number(enemy_obj);
+	for (i = 0; i < enemNum; i++)
 	{
-		var arena = instance_find(battleArena_obj, i);
-		arena.wave = 0;
-		arena.highestWave = 0;
-		arena.done = false;
+		var specEnemy = instance_find(enemy_obj, i);
+		instance_destroy(specEnemy);
+	}
+
+	//Reset Enemies
+	spawnsNum = instance_number(enemyHiddenSpawnpoint_obj);
+	for (i = 0; i < spawnsNum; i++)
+	{
+		var spawn = instance_find(enemyHiddenSpawnpoint_obj, i);
+		spawn.createEnemy = true;
 	}
 
 	if (player_obj.lastCheckpoint != noone)

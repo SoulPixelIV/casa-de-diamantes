@@ -12,6 +12,7 @@ moneyDropMin = 1;
 moneyDropMax = 4;
 damage = 23;
 knockback = 0;
+gotSpawned = false;
 
 lastBullet = bulletPistol_obj;
 ammoSpawnCount = 4;
@@ -44,7 +45,6 @@ deaggroTimer = 3000;
 exclamationmarkTimer = 250;
 
 //Help Vars
-hpSave = hp;
 aggroTimerSave = aggroTimer;
 deaggroTimerSave = deaggroTimer;
 exclamationmarkTimerSave = exclamationmarkTimer;
@@ -57,6 +57,15 @@ headshotHitbox = instance_create_layer(x, y - 16, "Instances", headshotHitbox_ob
 with (headshotHitbox)
 {
 	body = instance_nearest(x, y, zombieGirl_obj);
+}
+
+if (!gotSpawned)
+{
+	spawn = instance_create_layer(x, y, "Instances", enemyHiddenSpawnpoint_obj);
+	spawn.hp = hp;
+	spawn.aggroRange = aggroRange;
+	spawn.spawnID = zombieGirl_obj;
+	spawn.dir = image_xscale;
 }
 
 //Create Emitter

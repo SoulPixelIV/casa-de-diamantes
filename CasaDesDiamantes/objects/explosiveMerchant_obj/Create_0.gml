@@ -17,6 +17,7 @@ damage = 0;
 knockback = 0;
 playerSightMax = 128;
 playerSightMin = 8;
+gotSpawned = false;
 
 lastBullet = bulletPistol_obj;
 ammoSpawnCount = 1;
@@ -52,6 +53,15 @@ with (barrelHitbox)
 with (alarmLight)
 {
 	body = instance_nearest(x, y, explosiveMerchant_obj);
+}
+
+if (!gotSpawned)
+{
+	spawn = instance_create_layer(x, y, "Instances", enemyHiddenSpawnpoint_obj);
+	spawn.hp = hp;
+	spawn.aggroRange = aggroRange;
+	spawn.spawnID = explosiveMerchant_obj;
+	spawn.dir = image_xscale;
 }
 
 checkPlayerTimer = 50;

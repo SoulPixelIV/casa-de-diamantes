@@ -12,6 +12,7 @@ moneyDropMin = 5;
 moneyDropMax = 13;
 knockback = 0;
 randAttack = 1;
+gotSpawned = false;
 
 lastBullet = bulletPistol_obj;
 ammoSpawnCount = 7;
@@ -43,6 +44,15 @@ exclamationmarkTimerSave = exclamationmarkTimer;
 attackCooldownSave = attackCooldown;
 damageTintTimerSave = damageTintTimer;
 gravityStrengthSave = gravityStrength;
+
+if (!gotSpawned)
+{
+	spawn = instance_create_layer(x, y, "Instances", enemyHiddenSpawnpoint_obj);
+	spawn.hp = hp;
+	spawn.aggroRange = aggroRange;
+	spawn.spawnID = zombieBucketGirl_obj;
+	spawn.dir = image_xscale;
+}
 
 bucketHitbox = instance_create_layer(x, y - 16, "Instances", bucketHitbox_obj);
 with (bucketHitbox)

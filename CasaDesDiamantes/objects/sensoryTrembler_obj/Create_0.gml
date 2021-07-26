@@ -12,6 +12,7 @@ moneyDropMin = 1;
 moneyDropMax = 4;
 damage = 23;
 knockback = 0;
+gotSpawned = false;
 
 alarmLight = noone;
 turretRotDir = 0;
@@ -85,6 +86,15 @@ audio_drop_start = 400;
 audio_falloff_set_model(audio_falloff_linear_distance);
 audio_emitter_position(emitter, x, y, 0);
 audio_emitter_falloff(emitter, audio_drop_start, audio_max_distance, 1);
+
+if (!gotSpawned)
+{
+	spawn = instance_create_layer(x, y, "Instances", enemyHiddenSpawnpoint_obj);
+	spawn.hp = hp;
+	spawn.aggroRange = aggroRange;
+	spawn.spawnID = sensoryTrembler_obj;
+	spawn.dir = image_xscale;
+}
 
 checkPlayerTimer = 50;
 checkPlayerTimerSave = checkPlayerTimer;

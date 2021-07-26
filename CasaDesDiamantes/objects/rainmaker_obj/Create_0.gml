@@ -27,6 +27,7 @@ exclamationmarkTimer = 250;
 turnDir = 1;
 dir = 0;
 defenseEnemy = noone;
+gotSpawned = false;
 
 if (instance_exists(player_obj))
 {
@@ -75,6 +76,15 @@ checkPlayerTimer = 50;
 checkPlayerTimerSave = checkPlayerTimer;
 checkPlayerTimer = 0;
 gravityStrength = 0;
+
+if (!gotSpawned)
+{
+	spawn = instance_create_layer(x, y, "Instances", enemyHiddenSpawnpoint_obj);
+	spawn.hp = hp;
+	spawn.aggroRange = aggroRange;
+	spawn.spawnID = rainmaker_obj;
+	spawn.dir = image_xscale;
+}
 
 //Create shield hitboxes
 shieldLeft = instance_create_layer(x - 32, y - 20, "Instances", colliderOnlyBullet_obj);
