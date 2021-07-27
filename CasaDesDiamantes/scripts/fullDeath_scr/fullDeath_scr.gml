@@ -26,11 +26,13 @@ function fullDeath_scr() {
 	{
 		player_obj.x = player_obj.lastCheckpoint.x;
 		player_obj.y = player_obj.lastCheckpoint.y - 64;
+		instance_activate_region((player_obj.lastCheckpoint.x - xScreenSize / 2) - 256, (player_obj.lastCheckpoint.y - yScreenSize / 2) - 256, xScreenSize + 512, yScreenSize + 512, true);
 	}
 	else
 	{
 		player_obj.x = player_obj.firstPosX;
 		player_obj.y = player_obj.firstPosY;
+		instance_activate_region((player_obj.firstPosX - xScreenSize / 2) - 256, (player_obj.firstPosY - yScreenSize / 2) - 256, xScreenSize + 512, yScreenSize + 512, true);
 	}
 	
 	player_obj.plagueTransformation = false;
