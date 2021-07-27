@@ -52,15 +52,6 @@ gravityStrengthSave = gravityStrength;
 
 animationSpeed = 0.5;
 
-if (!gotSpawned)
-{
-	spawn = instance_create_layer(x, y, "Instances", enemyHiddenSpawnpoint_obj);
-	spawn.hp = hp;
-	spawn.aggroRange = aggroRange;
-	spawn.spawnID = crawler_obj;
-	spawn.dir = image_xscale;
-}
-
 if (instance_exists(waypoint))
 {
 	checkedWaypoint = false;

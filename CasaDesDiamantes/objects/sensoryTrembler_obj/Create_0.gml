@@ -87,15 +87,6 @@ audio_falloff_set_model(audio_falloff_linear_distance);
 audio_emitter_position(emitter, x, y, 0);
 audio_emitter_falloff(emitter, audio_drop_start, audio_max_distance, 1);
 
-if (!gotSpawned)
-{
-	spawn = instance_create_layer(x, y, "Instances", enemyHiddenSpawnpoint_obj);
-	spawn.hp = hp;
-	spawn.aggroRange = aggroRange;
-	spawn.spawnID = sensoryTrembler_obj;
-	spawn.dir = image_xscale;
-}
-
 checkPlayerTimer = 50;
 checkPlayerTimerSave = checkPlayerTimer;
 checkPlayerTimer = 0;

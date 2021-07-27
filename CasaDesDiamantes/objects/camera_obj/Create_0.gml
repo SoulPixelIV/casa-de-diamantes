@@ -98,6 +98,8 @@ zombiespikeBorderTransparentSave = zombiespikeBorderTransparent;
 checkCullingAreaTimerSave = checkCullingAreaTimer;
 wheelSpeedSave = wheelSpeed;
 
+checkCullingAreaTimer = 0;
+
 camera = camera_create();
 
 var vm = matrix_build_lookat(x,y,-10,x,y,0,0,1,0);

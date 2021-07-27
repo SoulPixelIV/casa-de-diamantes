@@ -55,15 +55,6 @@ with (alarmLight)
 	body = instance_nearest(x, y, explosiveMerchant_obj);
 }
 
-if (!gotSpawned)
-{
-	spawn = instance_create_layer(x, y, "Instances", enemyHiddenSpawnpoint_obj);
-	spawn.hp = hp;
-	spawn.aggroRange = aggroRange;
-	spawn.spawnID = explosiveMerchant_obj;
-	spawn.dir = image_xscale;
-}
-
 checkPlayerTimer = 50;
 checkPlayerTimerSave = checkPlayerTimer;
 checkPlayerTimer = 0;

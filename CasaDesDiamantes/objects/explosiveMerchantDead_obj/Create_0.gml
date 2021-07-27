@@ -59,14 +59,6 @@ checkPlayerTimer = 50;
 checkPlayerTimerSave = checkPlayerTimer;
 checkPlayerTimer = 0;
 
-if (!gotSpawned)
-{
-	spawn = instance_create_layer(x, y, "Instances", enemyHiddenSpawnpoint_obj);
-	spawn.hp = hp;
-	spawn.spawnID = explosiveMerchantDead_obj;
-	spawn.dir = image_xscale;
-}
-
 if (gravityStrength != 0)
 {
 	firstFall = true;

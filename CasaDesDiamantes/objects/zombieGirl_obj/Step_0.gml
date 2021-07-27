@@ -3,6 +3,16 @@
 x += horspeed * global.dt;
 y += verspeed * global.dt;
 
+if (!gotSpawned)
+{
+	spawn = instance_create_layer(x, y, "Instances", enemyHiddenSpawnpoint_obj);
+	spawn.hp = hp;
+	spawn.aggroRange = aggroRange;
+	spawn.spawnID = zombieGirl_obj;
+	spawn.dir = image_xscale;
+	gotSpawned = true;
+}
+
 if (instance_exists(player_obj))
 {
 	dirLookat = point_direction(x, y, player_obj.x, player_obj.y);

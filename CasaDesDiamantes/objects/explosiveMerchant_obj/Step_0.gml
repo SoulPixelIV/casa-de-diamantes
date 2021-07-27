@@ -4,6 +4,16 @@ x += horspeed * global.dt;
 y += verspeed * global.dt;
 dirLookat = point_direction(x, y, player_obj.x, player_obj.y);
 
+if (!gotSpawned)
+{
+	spawn = instance_create_layer(x, y, "Instances", enemyHiddenSpawnpoint_obj);
+	spawn.hp = hp;
+	spawn.aggroRange = aggroRange;
+	spawn.spawnID = explosiveMerchant_obj;
+	spawn.dir = image_xscale;
+	gotSpawned = true;
+}
+
 //Sight Check
 if (!collision_line(x, y, player_obj.x, player_obj.y, collider_obj, false, true) && !collision_line(x, y, player_obj.x, player_obj.y, enemyVisionBlockZone_obj, false, true))
 {

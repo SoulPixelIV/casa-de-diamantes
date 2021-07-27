@@ -2,6 +2,15 @@
 
 y += verspeed * global.dt;
 
+if (!gotSpawned)
+{
+	spawn = instance_create_layer(x, y, "Instances", enemyHiddenSpawnpoint_obj);
+	spawn.hp = hp;
+	spawn.spawnID = explosiveMerchantDead_obj;
+	spawn.dir = image_xscale;
+	gotSpawned = true;
+}
+
 //Gravity
 if (verspeed < 2)
 {
@@ -156,8 +165,11 @@ with (barrelHitbox)
 //Alarm Light
 with (alarmLight)
 {
-	light[| eLight.X] = body.x;
-	light[| eLight.Y] = body.y;
+	if (instance_exists(body))
+	{
+		light[| eLight.X] = body.x;
+		light[| eLight.Y] = body.y;
+	}
 }
 
 if (damageTint)

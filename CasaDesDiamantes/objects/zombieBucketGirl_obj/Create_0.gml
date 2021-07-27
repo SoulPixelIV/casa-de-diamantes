@@ -45,15 +45,6 @@ attackCooldownSave = attackCooldown;
 damageTintTimerSave = damageTintTimer;
 gravityStrengthSave = gravityStrength;
 
-if (!gotSpawned)
-{
-	spawn = instance_create_layer(x, y, "Instances", enemyHiddenSpawnpoint_obj);
-	spawn.hp = hp;
-	spawn.aggroRange = aggroRange;
-	spawn.spawnID = zombieBucketGirl_obj;
-	spawn.dir = image_xscale;
-}
-
 bucketHitbox = instance_create_layer(x, y - 16, "Instances", bucketHitbox_obj);
 with (bucketHitbox)
 {

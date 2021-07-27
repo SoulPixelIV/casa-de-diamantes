@@ -59,15 +59,6 @@ with (headshotHitbox)
 	body = instance_nearest(x, y, zombieGirl_obj);
 }
 
-if (!gotSpawned)
-{
-	spawn = instance_create_layer(x, y, "Instances", enemyHiddenSpawnpoint_obj);
-	spawn.hp = hp;
-	spawn.aggroRange = aggroRange;
-	spawn.spawnID = zombieGirl_obj;
-	spawn.dir = image_xscale;
-}
-
 //Create Emitter
 emitter = audio_emitter_create();
 audio_max_distance = 800;

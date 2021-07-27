@@ -77,15 +77,6 @@ audio_emitter_falloff(emitter, audio_drop_start, audio_max_distance, 1);
 
 //snd = audio_play_sound_on(emitter, jetpack_snd, true, 1);
 
-if (!gotSpawned)
-{
-	spawn = instance_create_layer(x, y, "Instances", enemyHiddenSpawnpoint_obj);
-	spawn.hp = hp;
-	spawn.aggroRange = aggroRange;
-	spawn.spawnID = zombieSoldierGirl_obj;
-	spawn.dir = image_xscale;
-}
-
 checkPlayerTimer = 50;
 checkPlayerTimerSave = checkPlayerTimer;
 checkPlayerTimer = 0;

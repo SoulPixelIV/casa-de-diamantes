@@ -9,19 +9,17 @@ function fullDeath_scr() {
 	player_obj.deathActivated = false;
 	
 	//Destroy every Enemy
-	enemNum = instance_number(enemy_obj);
-	for (i = 0; i < enemNum; i++)
+	instance_activate_object(enemy_obj);
+	with (enemy_obj)
 	{
-		var specEnemy = instance_find(enemy_obj, i);
-		instance_destroy(specEnemy);
+		instance_destroy();
 	}
 
 	//Reset Enemies
-	spawnsNum = instance_number(enemyHiddenSpawnpoint_obj);
-	for (i = 0; i < spawnsNum; i++)
+	instance_activate_object(enemyHiddenSpawnpoint_obj);
+	with (enemyHiddenSpawnpoint_obj)
 	{
-		var spawn = instance_find(enemyHiddenSpawnpoint_obj, i);
-		spawn.createEnemy = true;
+		createEnemy = true;
 	}
 
 	if (player_obj.lastCheckpoint != noone)
