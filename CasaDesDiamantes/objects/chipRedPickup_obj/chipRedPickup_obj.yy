@@ -8,8 +8,8 @@
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "deactivate_obj",
-    "path": "objects/deactivate_obj/deactivate_obj.yy",
+    "name": "chips_obj",
+    "path": "objects/chips_obj/chips_obj.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,

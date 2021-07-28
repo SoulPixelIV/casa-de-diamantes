@@ -2,7 +2,14 @@
 image_speed = 0;
 image_index += (global.dt / 15) * animationSpeed;
 
-y += verspeed * global.dt;;
+y += verspeed * global.dt;
+
+if (!gotSpawned)
+{
+	spawn = instance_create_layer(x, y, "Instances", pickupHiddenSpawnpoint_obj);
+	spawn.spawnID = ammoPackShotgun_obj;
+	gotSpawned = true;
+}
 
 //Movement
 if (dir == 0)

@@ -21,6 +21,42 @@ function fullDeath_scr() {
 	{
 		createEnemy = true;
 	}
+	
+	//Reset Pickups
+	instance_activate_object(pickupHiddenSpawnpoint_obj);
+	with (pickups_obj)
+	{
+		instance_destroy();
+	}
+	
+	with (pickupHiddenSpawnpoint_obj)
+	{
+		createPickup = true;
+	}
+	
+	//Reset Arenas
+	with (battleArena_obj)
+	{
+		wave = 0;
+		highestWave = 0;
+		done = false;
+		setWave = false;
+		sectionCleared = false;
+		enemyCount = 0;
+		checkSpawners = false;
+		woundedSpawntimer = 2600;
+		checkEnemycountTimer = 100;
+	}
+	with (battleArenaSpawn_obj)
+	{
+		spawnedEnemy = false;
+	}
+	
+	//Remove chips
+	with (chips_obj)
+	{
+		instance_destroy();
+	}
 
 	if (player_obj.lastCheckpoint != noone)
 	{
