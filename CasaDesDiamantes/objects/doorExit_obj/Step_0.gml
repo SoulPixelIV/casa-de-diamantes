@@ -25,6 +25,7 @@ if (!doorEnter_obj.entered)
 	{
 		snapCameraX = false;
 		snapCameraY = false;
+		instance_activate_region((doorEnter_obj.x - camera_obj.xScreenSize / 2) - 256, (doorEnter_obj.y - 12 - camera_obj.yScreenSize / 2) - 256, camera_obj.xScreenSize + 512, camera_obj.yScreenSize + 512, true);
 		player_obj.x = doorEnter_obj.x;
 		player_obj.y = doorEnter_obj.y - 12;
 		camera_obj.xTo = doorEnter_obj.x;
