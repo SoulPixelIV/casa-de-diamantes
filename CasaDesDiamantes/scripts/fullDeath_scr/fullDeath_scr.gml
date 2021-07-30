@@ -57,6 +57,19 @@ function fullDeath_scr() {
 	{
 		instance_destroy();
 	}
+	
+	//Reset moving platforms
+	with (movingPlatform_obj)
+	{
+		moving = false;
+		goal = noone;
+		x = startX;
+		y = startY;
+	}
+	with (movingPlatformCheckpoint_obj)
+	{
+		used = false;
+	}
 
 	if (player_obj.lastCheckpoint != noone)
 	{
