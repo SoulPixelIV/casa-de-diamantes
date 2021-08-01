@@ -616,7 +616,7 @@ with (gameManager_obj)
 	}
 }
 
-if (huggingWall && !grounded)
+if (huggingWall && !grounded && !deathActivated)
 {
 	if (global.currentWeapon == gameManager_obj.pickedWeapon.dualBarettas)
 	{
