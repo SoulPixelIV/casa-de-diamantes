@@ -56,7 +56,7 @@ if (keyboard_check_pressed(vk_f3))
 {
 	part_emitter_destroy_all(global.partSystem);
 	instance_destroy(player_obj);
-	room_goto(level1_RoadToCasino);
+	room_goto(level1_Powerplant);
 }
 if (keyboard_check_pressed(vk_f4))
 {
