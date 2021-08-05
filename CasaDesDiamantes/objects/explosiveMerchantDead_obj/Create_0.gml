@@ -13,7 +13,7 @@ else
 }
 
 //Stats
-hp = 90;
+hp = 1;
 colliding = true;
 hitable = true;
 level = 1;
@@ -42,14 +42,7 @@ open = false;
 damageTintTimerSave = damageTintTimer;
 gravityStrengthSave = gravityStrength;
 
-barrelHitbox = instance_create_layer(x + 24, y + 4, "ForegroundObjects", barrelHitbox_obj);
 alarmLight = instance_create_layer(x, y, "GraphicsLayer", spotlightRed_obj); 
-with (barrelHitbox)
-{
-	image_yscale = 2.2;
-	image_angle = -24;
-	body = instance_nearest(x, y, explosiveMerchantDead_obj);
-}
 with (alarmLight)
 {
 	body = instance_nearest(x, y, explosiveMerchantDead_obj);

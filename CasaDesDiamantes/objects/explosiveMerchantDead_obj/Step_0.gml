@@ -129,37 +129,9 @@ if (hp <= 0)
 		}
 	}
 	damageTint = false;
-	if (headshot)
-	{
-		instance_change(zombieGirlDeath1_obj, true);
-	}
-	else
-	{
-		instance_change(zombieGirlDeath2_obj, true);
-	}
 	instance_destroy(alarmLight);
-	with (barrelHitbox)
-	{
-		image_xscale = 1;
-		image_yscale = 1;
-		instance_change(choose(explosion_obj, explosionBig_obj), true);
-	}
-}
-
-//Barrel Hitbox
-with (barrelHitbox)
-{
-	if (body.image_xscale == 1)
-	{
-		x = body.x + 24;
-		image_angle = -24;
-	}
-	else
-	{
-		x = body.x - 24;
-		image_angle = 24;
-	}
-	y = body.y + 4;
+	instance_create_layer(x, y, "Instances", explosionBig_obj);
+	instance_destroy();
 }
 
 //Alarm Light

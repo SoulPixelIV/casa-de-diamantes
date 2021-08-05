@@ -213,30 +213,8 @@ if (hp <= 0)
 		instance_change(zombieGirlDeath2_obj, true);
 	}
 	instance_destroy(alarmLight);
-	with (barrelHitbox)
-	{
-		image_xscale = 1;
-		image_yscale = 1;
-		var explosionSpawned = instance_create_layer(x, y, "Instances", choose(explosion_obj, explosionBig_obj));
-		explosionSpawned.damageToEnemies = true;
-		instance_destroy();
-	}
-}
-
-//Barrel Hitbox
-with (barrelHitbox)
-{
-	if (body.image_xscale == 1)
-	{
-		x = body.x + 9;
-		image_angle = -24;
-	}
-	else
-	{
-		x = body.x - 9;
-		image_angle = 24;
-	}
-	y = body.y;
+	instance_create_layer(x, y, "Instances", explosionBig_obj);
+	instance_destroy();
 }
 
 //Alarm Light

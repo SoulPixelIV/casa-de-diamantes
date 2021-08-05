@@ -6,7 +6,7 @@ verspeed = 0;
 dir = 0;
 
 //Stats
-hp = 40;
+hp = 1;
 colliding = true;
 hitable = true;
 level = 1;
@@ -42,14 +42,8 @@ exclamationmarkTimerSave = exclamationmarkTimer;
 damageTintTimerSave = damageTintTimer;
 gravityStrengthSave = gravityStrength;
 
-barrelHitbox = instance_create_layer(x + 9, y, "ForegroundObjects", barrelHitbox_obj);
 alarmLight = instance_create_layer(x, y, "GraphicsLayer", spotlightRed_obj); 
-with (barrelHitbox)
-{
-	image_yscale = 2.2;
-	image_angle = -24;
-	body = instance_nearest(x, y, explosiveMerchant_obj);
-}
+
 with (alarmLight)
 {
 	body = instance_nearest(x, y, explosiveMerchant_obj);
