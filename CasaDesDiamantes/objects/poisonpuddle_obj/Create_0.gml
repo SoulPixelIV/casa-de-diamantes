@@ -1,5 +1,5 @@
 damage = 15;
-knockback = 0.5;
+knockback = 0;
 damageCollision = true;
 animationSpeed = 1;
 aliveTimer = 1600;

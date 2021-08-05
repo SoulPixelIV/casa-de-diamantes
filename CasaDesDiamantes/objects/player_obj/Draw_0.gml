@@ -149,7 +149,7 @@ if (horspeed != 0 && grounded && !isDashing && !spin && !flip && !huggingWall &&
 	}
 }
 
-if (flip && !onLadder && !huggingWall)
+if (flip && !onLadder && !huggingWall && !deathActivated)
 {
 	playerRotation += (global.dt * 2.25) * -image_xscale;
 	if (global.top1 == noone)
