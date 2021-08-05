@@ -115,7 +115,7 @@ if (isDashing && !huggingWall && !onLadder)
 	}
 }
 
-if (horspeed != 0 && grounded && !isDashing && !spin && !flip && !huggingWall && !onLadder)
+if (sprite_index == playerWalkingEquipped_spr || sprite_index == playerWalkingEquippedNude_spr)
 {
 	if (global.hat == beret_spr)
 	{
