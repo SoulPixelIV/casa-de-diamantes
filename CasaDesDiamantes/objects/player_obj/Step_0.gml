@@ -943,7 +943,7 @@ if ((global.pistolAmmo > 0 || global.shotgunAmmo > 0) && global.currentWeapon ==
 {
 	if (global.currentWeapon == pickedWeapon.pistol)
 	{
-		gun = choose(1, 2, 3);
+		gun = choose(1, 2);
 		pickWeapon_scr(gun);
 	}
 }
