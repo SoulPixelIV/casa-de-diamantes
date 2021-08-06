@@ -98,7 +98,7 @@ zombiespikeBorderTransparentSave = zombiespikeBorderTransparent;
 checkCullingAreaTimerSave = checkCullingAreaTimer;
 wheelSpeedSave = wheelSpeed;
 
-checkCullingAreaTimer = 0;
+checkCullingAreaTimer = 1;
 
 camera = camera_create();
 

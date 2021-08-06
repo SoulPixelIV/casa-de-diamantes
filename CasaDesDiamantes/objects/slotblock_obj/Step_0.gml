@@ -6,7 +6,7 @@ if (used && !spawned && !spinDone)
 {
 	spinTimer -= global.dt;
 	sprite_index = slotblockSpinning_spr;
-	animationSpeed = 2;
+	animationSpeed = 1;
 }
 
 if (spinTimer < 0)

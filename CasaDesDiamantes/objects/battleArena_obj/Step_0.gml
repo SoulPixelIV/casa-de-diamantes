@@ -156,33 +156,21 @@ if (checkEnemycountTimer < 0)
 	{
 		if (place_meeting(x, y, player_obj))
 		{
-			//Start new wave
-			if (nextWaveAfterEnemyDead == noone)
+			if (enemyCount == 0 && !setWave && !instance_exists(spawnCloud_obj))
 			{
-				if (enemyCount < 2 && !setWave && !instance_exists(spawnCloud_obj))
+				spawnNumber = instance_number(battleArenaSpawn_obj);
+				for (var i = 0; i < spawnNumber; i++)
 				{
-					spawnNumber = instance_number(battleArenaSpawn_obj);
-					for (var i = 0; i < spawnNumber; i++)
+					if (place_meeting(x, y, instance_find(battleArenaSpawn_obj, i)))
 					{
-						if (place_meeting(x, y, instance_find(battleArenaSpawn_obj, i)))
+						selectedSpawn = instance_find(battleArenaSpawn_obj, i);
+						if (selectedSpawn.wave > wave)
 						{
-							selectedSpawn = instance_find(battleArenaSpawn_obj, i);
-							if (selectedSpawn.wave > wave)
-							{
-								wave++;
-								setWave = true;
-								break;
-							}
+							wave++;
+							setWave = true;
+							break;
 						}
 					}
-				}
-			}
-			else
-			{
-				//Start new wave when specific enemy is gone
-				if (!place_meeting(x, y, nextWaveAfterEnemyDead))
-				{
-					nextWaveAfterEnemyDead = noone;
 				}
 			}
 		}
