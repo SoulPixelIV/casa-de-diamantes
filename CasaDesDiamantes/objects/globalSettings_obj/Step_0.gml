@@ -47,10 +47,10 @@ if (keyboard_check_pressed(vk_f1))
 }
 if (keyboard_check_pressed(vk_f2))
 {
-	part_emitter_destroy_all(global.partSystem);
-	instance_destroy(player_obj);
-	room_goto(level0_RoadToCasino);
-	global.spawn = 0;
+	if (instance_exists(player_obj))
+	{
+		player_obj.y -= 32;
+	}
 }
 if (keyboard_check_pressed(vk_f3))
 {
