@@ -27,7 +27,13 @@ if (showWindowMenu)
 checkCullingAreaTimer -= global.dt;
 if (checkCullingAreaTimer < 0)
 {
-	instance_deactivate_object(deactivate_obj);
+	with (deactivate_obj)
+	{
+		if (!place_meeting(x, y, battleArena_obj))
+		{
+			instance_deactivate_object(self);
+		}
+	}
 	//128px Safezone
 	instance_activate_region((x - xScreenSize / 2) - 256, (y - yScreenSize / 2) - 256, xScreenSize + 512, yScreenSize + 512, true);
 	checkCullingAreaTimer = checkCullingAreaTimerSave;
