@@ -7,6 +7,7 @@ function revive_scr() {
 	player_obj.movement = true;
 	global.syringes -= 1;
 	player_obj.syringesLost += 1;
+	player_obj.infection = 0;
 	player_obj.hp = 100;
 	player_obj.deathActivated = false;
 	damageRecieved = true;
