@@ -878,42 +878,6 @@ with (gameManager_obj)
 	}
 }	
 
-//Reload
-/*
-if (key_reload && !isZombie)
-{
-	if ((global.currentWeapon == pickedWeapon.pistol && global.pistolMag != 0) || (global.currentWeapon == pickedWeapon.dualBarettas && global.pistolMag != 0) || (global.currentWeapon == pickedWeapon.shotgun && global.shotgunMag != 0))
-	{
-		if (global.currentWeapon == pickedWeapon.pistol && global.pistolAmmo < 18 || global.currentWeapon == pickedWeapon.dualBarettas && global.pistolAmmo < 18
-		|| global.currentWeapon == pickedWeapon.shotgun && global.shotgunAmmo < 6)
-		{
-			reloading = true;
-		}
-	}
-}
-
-if (reloading)
-{
-	if (global.currentWeapon == pickedWeapon.pistol)
-	{
-		global.pistolReload -= global.dt;
-	}
-	if (global.currentWeapon == pickedWeapon.dualBarettas)
-	{
-		global.dualBarettasReload -= global.dt;
-	}
-	if (global.currentWeapon == pickedWeapon.shotgun)
-	{
-		global.shotgunReload -= global.dt;
-	}
-}
-
-if (global.pistolReload < 0 || global.dualBarettasReload < 0 || global.shotgunReload < 0)
-{
-	reload_scr();
-}
-*/
-
 //Weapon Switching
 if (!isZombie && !reloading)
 {
@@ -934,17 +898,21 @@ if (!isZombie && !reloading)
 	}
 }
 //Switch to pistol if empty
-if (global.pistolAmmo == 0 && global.shotgunAmmo == 0 && global.currentWeapon != pickedWeapon.pistol)
+if ((global.pistolAmmo == 0 || global.unlockedWeapon[1] == false) && (global.shotgunAmmo == 0 || global.unlockedWeapon[2] == false) && global.currentWeapon != pickedWeapon.pistol)
 {
 	pickWeapon_scr(0);
 }
 // || global.sniperAmmo > 0
-if ((global.pistolAmmo > 0 || global.shotgunAmmo > 0) && global.currentWeapon == pickedWeapon.pistol)
+if (global.currentWeapon == pickedWeapon.pistol)
 {
-	if (global.currentWeapon == pickedWeapon.pistol)
+	if (global.unlockedWeapon[1] == true && global.pistolAmmo > 0)
 	{
-		gun = choose(1, 2);
-		pickWeapon_scr(gun);
+		pickWeapon_scr(1);
+	}
+	else
+	if (global.unlockedWeapon[2] == true && global.shotgunAmmo > 0)
+	{
+		pickWeapon_scr(2);
 	}
 }
 

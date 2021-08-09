@@ -28,6 +28,7 @@
     {"id":{"name":"playerEquipped_spr_Backup","path":"sprites/playerEquipped_spr_Backup/playerEquipped_spr_Backup.yy",},"order":4,},
     {"id":{"name":"sensoryRocket_obj","path":"objects/sensoryRocket_obj/sensoryRocket_obj.yy",},"order":0,},
     {"id":{"name":"playerPistol_spr_Backup","path":"sprites/playerPistol_spr_Backup/playerPistol_spr_Backup.yy",},"order":5,},
+    {"id":{"name":"removeAllWeapons_scr","path":"scripts/removeAllWeapons_scr/removeAllWeapons_scr.yy",},"order":25,},
     {"id":{"name":"lantern_spr","path":"sprites/lantern_spr/lantern_spr.yy",},"order":0,},
     {"id":{"name":"slide_snd","path":"sounds/slide_snd/slide_snd.yy",},"order":28,},
     {"id":{"name":"playerDashNude_spr","path":"sprites/playerDashNude_spr/playerDashNude_spr.yy",},"order":0,},
@@ -3702,7 +3703,7 @@
     {"CopyToMask":-1,"filePath":"datafiles/GMLive","resourceVersion":"1.0","name":"std.ndll","resourceType":"GMIncludedFile",},
   ],
   "MetaData": {
-    "IDEVersion": "2.3.3.570",
+    "IDEVersion": "2.3.3.574",
   },
   "resourceVersion": "1.4",
   "name": "CasaDesDiamantes",
