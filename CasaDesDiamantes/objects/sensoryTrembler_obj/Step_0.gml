@@ -80,7 +80,7 @@ if (aggroTimer < 0)
 
 if (movement && !attackInProg3)
 {
-	if (aggro && distance_to_object(player_obj) > 300 && distance_to_object(player_obj) < aggroRange)
+	if (aggro && distance_to_object(player_obj) > 200 && distance_to_object(player_obj) < aggroRange)
 	{
 		if (instance_exists(hazard_obj))
 		{
@@ -123,7 +123,7 @@ if (movement && !attackInProg3)
 	
 	if (aggro)
 	{
-		if (distance_to_object(player_obj) < 300 && distance_to_object(player_obj) > 24)
+		if (distance_to_object(player_obj) < 200 && distance_to_object(player_obj) > 24)
 		{
 			randDirChangeTimer -= global.dt;
 			if (randDirChangeTimer < 0)
