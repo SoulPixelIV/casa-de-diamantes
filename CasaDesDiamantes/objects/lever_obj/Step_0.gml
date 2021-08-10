@@ -1,6 +1,6 @@
 /// @description Check Player
 
-if ((distance_to_object(player_obj) < 32 && player_obj.key_up_pressed) || place_meeting(x, y, crawler_obj) && instance_nearest(x, y, crawler_obj).usedLever == false)
+if ((distance_to_object(player_obj) < 32 && player_obj.key_up_pressed) && !used || place_meeting(x, y, crawler_obj) && instance_nearest(x, y, crawler_obj).usedLever == false)
 {
 	if (!playedSound)
 	{
@@ -13,7 +13,6 @@ if ((distance_to_object(player_obj) < 32 && player_obj.key_up_pressed) || place_
 	}
 		
 	image_index = 1;
-	used = true;
 		
 	if (instance_exists(objectAccess))
 	{
@@ -22,7 +21,7 @@ if ((distance_to_object(player_obj) < 32 && player_obj.key_up_pressed) || place_
 			if (!activateCamera)
 			{
 				object = instance_nearest(x, y, objectAccess);
-				object.open = !object.open;
+				object.open = true;
 			}
 			else
 			{
@@ -30,7 +29,7 @@ if ((distance_to_object(player_obj) < 32 && player_obj.key_up_pressed) || place_
 				with (instance_nearest(x, y, cameraTarget_obj))
 				{
 					object = instance_nearest(x, y, selfId.objectAccess);
-					object.open = !object.open;
+					object.open = true;
 				}
 			}
 		}
@@ -48,7 +47,7 @@ if ((distance_to_object(player_obj) < 32 && player_obj.key_up_pressed) || place_
 				
 				if (object[i] != noone)
 				{
-					object[i].open = !object[i].open;
+					object[i].open = true;
 				}
 			}
 		}
@@ -60,6 +59,8 @@ if ((distance_to_object(player_obj) < 32 && player_obj.key_up_pressed) || place_
 		camera_obj.cameraTarget = true;
 		usedCamera = true;
 	}
+	
+	used = true;
 }
 
 if (!audio_is_playing(lever_snd))
