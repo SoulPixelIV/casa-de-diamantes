@@ -2,7 +2,7 @@
 
 horspeed = 0;
 verspeed = 0;
-attackCooldown = 475;
+attackCooldown = 425;
 attackDelay = 50;
 colliding = true;
 hitable = true;
@@ -23,7 +23,7 @@ damageCollision = false;
 attackInProg1 = false;
 attackInProg2 = false;
 points = 125;
-movSpeed = 0.188;
+movSpeed = 0.24;
 playedSound = false;
 gravityStrength = -0.05;
 movement = true;
