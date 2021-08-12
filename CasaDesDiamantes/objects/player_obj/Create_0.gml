@@ -99,6 +99,8 @@ firstPosY = y;
 spriteAnimation = 0;
 setMovAfterScreen = false;
 selWeapon = 0;
+scrollDelay = 20;
+startScrollDelay = false;
 
 if (global.unlockedWeapon[0] == true || global.unlockedWeapon[1] == true || global.unlockedWeapon[2] == true)
 {
@@ -123,6 +125,7 @@ shotZoomTimerSave = shotZoomTimer;
 groundCollisionTimerSave = groundCollisionTimer;
 dashDelaySave = dashDelay;
 gravityStrengthSave = gravityStrength;
+scrollDelaySave = scrollDelay;
 
 //Accessories
 theta = 0;

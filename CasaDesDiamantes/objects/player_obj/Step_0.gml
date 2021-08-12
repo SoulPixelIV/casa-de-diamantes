@@ -911,50 +911,66 @@ if (!isZombie && !reloading)
 			scrollWeapons[2] = 1;
 		}
 		
-		if (mouse_wheel_up())
+		if (!startScrollDelay)
 		{
-			if (selWeapon > array_length(scrollWeapons) - 1)
+			if (mouse_wheel_up())
 			{
-				selWeapon = 1;
-			}
-			else
-			{
-				selWeapon++;
-			}
+				startScrollDelay = true;
+				if (selWeapon > array_length(scrollWeapons) - 1)
+				{
+					selWeapon = 1;
+				}
+				else
+				{
+					selWeapon++;
+				}
 			
-			if (selWeapon == 1 && !global.unlockedWeapon[1])
-			{
-				selWeapon++;
+				if (selWeapon == 1 && !global.unlockedWeapon[1])
+				{
+					selWeapon++;
+				}
+				if (selWeapon == 2 && !global.unlockedWeapon[2])
+				{
+					selWeapon = 1;
+				}
+				pickWeapon_scr(selWeapon);
 			}
-			if (selWeapon == 2 && !global.unlockedWeapon[2])
+			if (mouse_wheel_down())
 			{
-				selWeapon = 1;
-			}
-			pickWeapon_scr(selWeapon);
-		}
-		if (mouse_wheel_down())
-		{
-			if (selWeapon < 2)
-			{
-				selWeapon = array_length(scrollWeapons);
-			}
-			else
-			{
-				selWeapon--;
-			}
+				startScrollDelay = true;
+				if (selWeapon < 2)
+				{
+					selWeapon = array_length(scrollWeapons);
+				}
+				else
+				{
+					selWeapon--;
+				}
 			
-			if (selWeapon == 1 && !global.unlockedWeapon[1])
-			{
-				selWeapon++;
+				if (selWeapon == 1 && !global.unlockedWeapon[1])
+				{
+					selWeapon++;
+				}
+				if (selWeapon == 2 && !global.unlockedWeapon[2])
+				{
+					selWeapon = 1;
+				}
+				pickWeapon_scr(selWeapon);
 			}
-			if (selWeapon == 2 && !global.unlockedWeapon[2])
-			{
-				selWeapon = 1;
-			}
-			pickWeapon_scr(selWeapon);
 		}
 	}
 }
+
+if (startScrollDelay)
+{
+	scrollDelay -= global.dtNoSlowmo;
+}
+if (scrollDelay < 0)
+{
+	scrollDelay = scrollDelaySave;
+	startScrollDelay = false;
+}
+
 //Switch to pistol if empty
 if ((global.pistolAmmo == 0 || global.unlockedWeapon[1] == false) && (global.shotgunAmmo == 0 || global.unlockedWeapon[2] == false) && global.currentWeapon != pickedWeapon.pistol)
 {
