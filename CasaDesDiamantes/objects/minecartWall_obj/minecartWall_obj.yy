@@ -1,16 +1,13 @@
 {
   "spriteId": {
-    "name": "wavecount_spr",
-    "path": "sprites/wavecount_spr/wavecount_spr.yy",
+    "name": "destructedWoodplankWall_spr",
+    "path": "sprites/destructedWoodplankWall_spr/destructedWoodplankWall_spr.yy",
   },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": {
-    "name": "enemy_obj",
-    "path": "objects/enemy_obj/enemy_obj.yy",
-  },
+  "parentObjectId": null,
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,

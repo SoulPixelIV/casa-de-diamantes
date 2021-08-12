@@ -460,6 +460,7 @@
     {"id":{"name":"rainmakershield_spr","path":"sprites/rainmakershield_spr/rainmakershield_spr.yy",},"order":7,},
     {"id":{"name":"walk1_snd","path":"sounds/walk1_snd/walk1_snd.yy",},"order":0,},
     {"id":{"name":"StephLines","path":"scripts/StephLines/StephLines.yy",},"order":21,},
+    {"id":{"name":"destructedWoodplankWall_spr","path":"sprites/destructedWoodplankWall_spr/destructedWoodplankWall_spr.yy",},"order":33,},
     {"id":{"name":"playerJumpSpinUnequipped_spr","path":"sprites/playerJumpSpinUnequipped_spr/playerJumpSpinUnequipped_spr.yy",},"order":23,},
     {"id":{"name":"walk2_snd","path":"sounds/walk2_snd/walk2_snd.yy",},"order":1,},
     {"id":{"name":"jump_snd","path":"sounds/jump_snd/jump_snd.yy",},"order":2,},
