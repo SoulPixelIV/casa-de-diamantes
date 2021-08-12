@@ -881,8 +881,10 @@ with (gameManager_obj)
 //Weapon Switching
 if (!isZombie && !reloading)
 {
-	if (global.pistolAmmo > 0 || global.shotgunAmmo > 0)
+	if (global.unlockedWeapon[1] || global.unlockedWeapon[2])
 	{
+		scrollWeapons = [0, 0];
+		
 		if (keyboard_check_pressed(ord("1")) && global.unlockedWeapon[1])
 		{
 			pickWeapon_scr(1);
@@ -894,6 +896,62 @@ if (!isZombie && !reloading)
 		if (keyboard_check_pressed(ord("3")) && global.unlockedWeapon[3])
 		{
 			pickWeapon_scr(3);
+		}
+		
+		if (global.unlockedWeapon[1])
+		{
+			scrollWeapons[0] = 1;
+		}
+		if (global.unlockedWeapon[2])
+		{
+			scrollWeapons[1] = 1;
+		}
+		if (global.unlockedWeapon[3])
+		{
+			scrollWeapons[2] = 1;
+		}
+		
+		if (mouse_wheel_up())
+		{
+			if (selWeapon > array_length(scrollWeapons) - 1)
+			{
+				selWeapon = 1;
+			}
+			else
+			{
+				selWeapon++;
+			}
+			
+			if (selWeapon == 1 && !global.unlockedWeapon[1])
+			{
+				selWeapon++;
+			}
+			if (selWeapon == 2 && !global.unlockedWeapon[2])
+			{
+				selWeapon = 1;
+			}
+			pickWeapon_scr(selWeapon);
+		}
+		if (mouse_wheel_down())
+		{
+			if (selWeapon < 2)
+			{
+				selWeapon = array_length(scrollWeapons);
+			}
+			else
+			{
+				selWeapon--;
+			}
+			
+			if (selWeapon == 1 && !global.unlockedWeapon[1])
+			{
+				selWeapon++;
+			}
+			if (selWeapon == 2 && !global.unlockedWeapon[2])
+			{
+				selWeapon = 1;
+			}
+			pickWeapon_scr(selWeapon);
 		}
 	}
 }

@@ -1,4 +1,10 @@
 function pickWeapon_scr(argument0) {
+	
+	if (argument0 == 0 && global.currentWeapon != gameManager_obj.pickedWeapon.pistol || argument0 == 1 && global.currentWeapon != gameManager_obj.pickedWeapon.dualBarettas || argument0 == 2 && global.currentWeapon != gameManager_obj.pickedWeapon.shotgun || argument0 == 3 && global.currentWeapon != gameManager_obj.pickedWeapon.sniper)
+	{
+		audio_play_sound(pickup_snd, 1, false);
+	}
+	
 	switch (argument0)
 	{
 		case 0:
@@ -22,5 +28,4 @@ function pickWeapon_scr(argument0) {
 	player_obj.slowmo = false;
 	camera_obj.newWeapon = true;
 	camera_obj.newWeaponTimer = camera_obj.newWeaponTimerSave;
-	audio_play_sound(pickup_snd, 1, false);
 }
