@@ -69,7 +69,7 @@ if (checkEnemycountTimer < 0)
 		
 	//Use Gates
 	//Close Gate
-	if ((place_meeting(x, y, player_obj) && enemyCount > 0) || instance_exists(spawnCloud_obj) && place_meeting(x, y, player_obj))
+	if ((place_meeting(x, y, player_obj) && !done))
 	{
 		if (instance_exists(objectAccess))
 		{
@@ -112,7 +112,7 @@ if (checkEnemycountTimer < 0)
 		}
 	}
 	//Open Gate
-	if (enemyCount <= 0 && wave == highestWave || !place_meeting(x, y, player_obj))
+	if (done || !place_meeting(x, y, player_obj))
 	{
 		if (instance_exists(objectAccess))
 		{
