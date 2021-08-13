@@ -21,7 +21,7 @@ if (moving)
 	}
 	if (instance_exists(player_obj))
 	{
-		player_obj.y = y - 32;
+		player_obj.y = y - 24;
 		player_obj.movement = false;
 		player_obj.gravityOn = false;
 		player_obj.horspeed = 0;
