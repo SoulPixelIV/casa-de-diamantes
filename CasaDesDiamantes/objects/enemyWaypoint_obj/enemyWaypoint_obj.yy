@@ -24,8 +24,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Enemies",
-    "path": "folders/Enemies.yy",
+    "name": "Enemy Objects",
+    "path": "folders/Enemies/Enemy Objects.yy",
   },
   "resourceVersion": "1.0",
   "name": "enemyWaypoint_obj",

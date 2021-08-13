@@ -34,6 +34,10 @@ aggro = false;
 aggroTimer = 130;
 deaggroTimer = 3000;
 exclamationmarkTimer = 250;
+checkedPlayer = false;
+flying = false;
+exploding = false;
+flyDir = 1;
 
 //Help Vars
 aggroTimerSave = aggroTimer;

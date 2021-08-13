@@ -46,7 +46,7 @@ if (aggroTimer < 0)
 	aggroTimer = aggroTimerSave;
 }
 
-if (movement && aggro)
+if (movement && aggro && !flying)
 {
 	if (dir == 0)
 	{
@@ -61,7 +61,7 @@ if (movement && aggro)
 }
 
 //Gravity
-if (verspeed < 2)
+if (verspeed < 2 && !flying)
 {
 	verspeed -= gravityStrength * global.dt;
 }
@@ -80,18 +80,32 @@ if (!place_free(x + (horspeed * global.dt), y))
 		{
 			x += sign(horspeed) / 100;
 		}
-		horspeed = 0;
 		
-		if (dir == 0)
+		if (!flying)
 		{
-			dir = 1;
+			horspeed = 0;
+		
+			if (dir == 0)
+			{
+				dir = 1;
+			}
+			else
+			{
+				dir = 0;
+			}
 		}
 		else
 		{
-			dir = 0;
+			exploding = true;
 		}
 	}
 } 
+
+if (flying && place_meeting(x, y, enemy_obj))
+{
+	exploding = true;
+}
+
 //verspeed
 if (!place_free(x, y + (verspeed * global.dt)))
 {
@@ -134,87 +148,120 @@ else
 //###Death###
 if (hp <= 0)
 {
-	var deathCross = instance_create_layer(x, y - 8, "ForegroundObjects", deathCross_obj);
-	
-	//Enemy Slowmo
-	var randNum = choose(1,2,3,4,5,6,7,8,9);
-	if (randNum == 9)
+	sprite_index = explosiveMerchantFlying_spr;
+	animationSpeed = 1.75;
+	if (!flying)
 	{
-		player_obj.enemySlowmo = true;
-		camera_obj.follow = deathCross;
-	}
-	
-	//Drop Item
-	if (instance_exists(player_obj))
-	{
-		if (player_obj.hp < 30)
+		if (instance_exists(player_obj) && !checkedPlayer)
 		{
-			if (player_obj.hp > 15)
+			if (player_obj.x > x)
 			{
-				repeat (2)
-				{
-					instance_create_layer(x, y - 16, "Instances", healthSmall_obj);
-				}
+				flyDir = 1;
 			}
 			else
 			{
-				repeat (4)
+				flyDir = -1;
+			}
+			checkedPlayer = true;
+		}
+		
+		if (flyDir == 1)
+		{
+			image_xscale = 1;
+			horspeed = -2.8;
+		}
+		else
+		{
+			image_xscale = -1;
+			horspeed = 2.8;
+		}
+		flying = true;
+	}
+	
+	if (exploding)
+	{
+		var deathCross = instance_create_layer(x, y - 8, "ForegroundObjects", deathCross_obj);
+	
+		//Enemy Slowmo
+		var randNum = choose(1,2,3,4,5,6,7,8,9);
+		if (randNum == 9)
+		{
+			player_obj.enemySlowmo = true;
+			camera_obj.follow = deathCross;
+		}
+	
+		//Drop Item
+		if (instance_exists(player_obj))
+		{
+			if (player_obj.hp < 30)
+			{
+				if (player_obj.hp > 15)
 				{
-					instance_create_layer(x, y - 16, "Instances", healthSmall_obj);
+					repeat (2)
+					{
+						instance_create_layer(x, y - 16, "Instances", healthSmall_obj);
+					}
+				}
+				else
+				{
+					repeat (4)
+					{
+						instance_create_layer(x, y - 16, "Instances", healthSmall_obj);
+					}
 				}
 			}
 		}
-	}
 	
-	//Drop Ammo
-	if (lastBullet == bulletDualBarettas_obj)
-	{
-		if (global.unlockedWeapon[2])
+		//Drop Ammo
+		if (lastBullet == bulletDualBarettas_obj)
 		{
-			repeat (ceil(ammoSpawnCount / 4))
+			if (global.unlockedWeapon[2])
 			{
-				instance_create_layer(x, y, "Instances", ammoShotgunSmall_obj);
+				repeat (ceil(ammoSpawnCount / 4))
+				{
+					instance_create_layer(x, y, "Instances", ammoShotgunSmall_obj);
+				}
 			}
 		}
-	}
-	if (lastBullet == bulletShotgun_obj)
-	{
-		if (global.unlockedWeapon[1])
+		if (lastBullet == bulletShotgun_obj)
 		{
-			repeat (ammoSpawnCount)
+			if (global.unlockedWeapon[1])
 			{
-				instance_create_layer(x, y, "Instances", ammoPistolSmall_obj);
+				repeat (ammoSpawnCount)
+				{
+					instance_create_layer(x, y, "Instances", ammoPistolSmall_obj);
+				}
 			}
 		}
-	}
 
-	//Drop Money
-	var maxAmount = random_range(moneyDropMin, moneyDropMax);
-	for (i = 0; i < maxAmount; i++)
-	{
-		chip = choose(1,1,1,1,2)
+		//Drop Money
+		var maxAmount = random_range(moneyDropMin, moneyDropMax);
+		for (i = 0; i < maxAmount; i++)
+		{
+			chip = choose(1,1,1,1,2)
 		
-		if (chip == 1)
-		{
-			instance_create_layer(x, y - 16, "Instances", chipBluePickup_obj);
+			if (chip == 1)
+			{
+				instance_create_layer(x, y - 16, "Instances", chipBluePickup_obj);
+			}
+			if (chip == 2)
+			{
+				instance_create_layer(x, y - 16, "Instances", chipRedPickup_obj);
+			}
 		}
-		if (chip == 2)
+		damageTint = false;
+		if (headshot)
 		{
-			instance_create_layer(x, y - 16, "Instances", chipRedPickup_obj);
+			instance_change(zombieGirlDeath1_obj, true);
 		}
+		else
+		{
+			instance_change(zombieGirlDeath2_obj, true);
+		}
+		instance_destroy(alarmLight);
+		instance_create_layer(x, y, "Instances", explosionBig_obj);
+		instance_destroy();
 	}
-	damageTint = false;
-	if (headshot)
-	{
-		instance_change(zombieGirlDeath1_obj, true);
-	}
-	else
-	{
-		instance_change(zombieGirlDeath2_obj, true);
-	}
-	instance_destroy(alarmLight);
-	instance_create_layer(x, y, "Instances", explosionBig_obj);
-	instance_destroy();
 }
 
 //Alarm Light
