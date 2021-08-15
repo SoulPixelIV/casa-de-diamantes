@@ -67,3 +67,7 @@ if (!audio_is_playing(lever_snd))
 {
 	playedSound = false;
 }
+
+//Animation
+image_speed = 0;
+image_index += (global.dt / 15) * animationSpeed;

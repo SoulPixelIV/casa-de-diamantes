@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "lever_spr",
-    "path": "sprites/lever_spr/lever_spr.yy",
+    "name": "leverOff_spr",
+    "path": "sprites/leverOff_spr/leverOff_spr.yy",
   },
   "solid": false,
   "visible": true,

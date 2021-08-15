@@ -8,5 +8,12 @@ if (distance_to_object(player_obj) < 32 && !used)
 }
 else
 {
-	sprite_index = lever_spr;
+	if (used)
+	{
+		sprite_index = leverOn_spr;
+	}
+	else
+	{
+		sprite_index = leverOff_spr;
+	}
 }
