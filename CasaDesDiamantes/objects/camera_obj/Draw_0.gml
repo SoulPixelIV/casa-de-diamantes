@@ -5,7 +5,7 @@ if (instance_exists(player_obj))
 	if (!player_obj.reloading)
 	{
 		anim = 0;
-		if (global.currentWeapon == pickedWeapon.pistol || global.currentWeapon == pickedWeapon.dualBarettas)
+		if (global.currentWeapon == pickedWeapon.dualBarettas)
 		{
 			if (global.pistolAmmo < 5)
 			{
