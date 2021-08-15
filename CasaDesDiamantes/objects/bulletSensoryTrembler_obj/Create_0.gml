@@ -2,7 +2,7 @@
 
 dir = 0;
 dirChange = false;
-movSpeed = 1.65;
+movSpeed = 1.35;
 createdFire = false;
 invincibilityTimer = 5;
 
