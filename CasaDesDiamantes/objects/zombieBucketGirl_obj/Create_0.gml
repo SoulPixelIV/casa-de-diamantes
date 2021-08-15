@@ -2,7 +2,7 @@
 
 horspeed = 0;
 verspeed = 0;
-attackCooldown = 425;
+attackCooldown = 465;
 attackDelay = 50;
 colliding = true;
 hitable = true;

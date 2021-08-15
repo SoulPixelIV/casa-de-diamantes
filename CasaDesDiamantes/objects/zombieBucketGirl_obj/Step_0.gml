@@ -334,7 +334,7 @@ if (attackInProg1 && image_index > image_number - 1)
 {
 	image_index = 0;
 	instance_create_layer(x + 10 * image_xscale, y - 10 * image_xscale, "ForegroundObjects", dustParticle_obj);
-	repeat(3)
+	repeat(6)
 	{
 		var grenate = instance_create_layer(x + 10 * image_xscale, y, "Instances", flyingGrenate_obj);
 		grenate.horspeed = random_range(1.4, 2.6) * image_xscale;
