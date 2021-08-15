@@ -213,7 +213,7 @@ if (hp < 0)
 	//Drop Item
 	if (instance_exists(player_obj))
 	{
-		if (player_obj.hp < 30)
+		if (player_obj.hp < 30 || (player_obj.hp - player_obj.infection < 30))
 		{
 			if (player_obj.hp > 15)
 			{
