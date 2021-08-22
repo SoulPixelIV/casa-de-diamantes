@@ -34,6 +34,7 @@
     {"id":{"name":"playerDashNude_spr","path":"sprites/playerDashNude_spr/playerDashNude_spr.yy",},"order":0,},
     {"id":{"name":"playerFlip_spr","path":"sprites/playerFlip_spr/playerFlip_spr.yy",},"order":19,},
     {"id":{"name":"ledBarRed_spr","path":"sprites/ledBarRed_spr/ledBarRed_spr.yy",},"order":1,},
+    {"id":{"name":"overworld_obj","path":"objects/overworld_obj/overworld_obj.yy",},"order":6,},
     {"id":{"name":"syringeDrop_obj","path":"objects/syringeDrop_obj/syringeDrop_obj.yy",},"order":17,},
     {"id":{"name":"healthbarBorderLow_spr","path":"sprites/healthbarBorderLow_spr/healthbarBorderLow_spr.yy",},"order":8,},
     {"id":{"name":"ledSignBlue1_spr","path":"sprites/ledSignBlue1_spr/ledSignBlue1_spr.yy",},"order":2,},
@@ -324,6 +325,7 @@
     {"id":{"name":"woodDoorFront_spr","path":"sprites/woodDoorFront_spr/woodDoorFront_spr.yy",},"order":40,},
     {"id":{"name":"enemyWaypoint_obj","path":"objects/enemyWaypoint_obj/enemyWaypoint_obj.yy",},"order":6,},
     {"id":{"name":"playerJumpSpin_spr","path":"sprites/playerJumpSpin_spr/playerJumpSpin_spr.yy",},"order":24,},
+    {"id":{"name":"levelSelect","path":"rooms/levelSelect/levelSelect.yy",},"order":6,},
     {"id":{"name":"buildingWallSide1_spr","path":"sprites/buildingWallSide1_spr/buildingWallSide1_spr.yy",},"order":7,},
     {"id":{"name":"buildingWallSide2_spr","path":"sprites/buildingWallSide2_spr/buildingWallSide2_spr.yy",},"order":8,},
     {"id":{"name":"deactivate_obj","path":"objects/deactivate_obj/deactivate_obj.yy",},"order":10,},
@@ -990,6 +992,7 @@
   },
   "RoomOrderNodes": [
     {"roomId":{"name":"loadVars","path":"rooms/loadVars/loadVars.yy",},},
+    {"roomId":{"name":"levelSelect","path":"rooms/levelSelect/levelSelect.yy",},},
     {"roomId":{"name":"level2_SenzelaForest","path":"rooms/level2_SenzelaForest/level2_SenzelaForest.yy",},},
     {"roomId":{"name":"level1_Powerplant","path":"rooms/level1_Powerplant/level1_Powerplant.yy",},},
     {"roomId":{"name":"level0_Powerplant","path":"rooms/level0_Powerplant/level0_Powerplant.yy",},},
