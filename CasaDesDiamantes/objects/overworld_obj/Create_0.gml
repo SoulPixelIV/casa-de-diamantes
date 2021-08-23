@@ -1,4 +1,9 @@
-option1 = [32, 64];
-option2 = [32, 80];
-option3 = [32, 96];
-option4 = [32, 112];
+xScreenSize = 480;
+yScreenSize = 270;
+zoom = 2;
+xWindowSize = xScreenSize * zoom;
+yWindowSize = yScreenSize * zoom;
+
+optionsY = [64, 80, 96, 112];
+
+cursorPos = 0;
