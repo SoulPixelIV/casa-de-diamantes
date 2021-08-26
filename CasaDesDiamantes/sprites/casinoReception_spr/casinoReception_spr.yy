@@ -7,8 +7,8 @@
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 2,
-  "bbox_right": 237,
+  "bbox_left": 30,
+  "bbox_right": 209,
   "bbox_top": 0,
   "bbox_bottom": 134,
   "HTile": false,
@@ -27,7 +27,6 @@
     {"compositeImage":{"FrameId":{"name":"5587795d-9901-4d61-96e7-e0acee0dfc47","path":"sprites/casinoReception_spr/casinoReception_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"5587795d-9901-4d61-96e7-e0acee0dfc47","path":"sprites/casinoReception_spr/casinoReception_spr.yy",},"LayerId":{"name":"411d8d57-6e77-4e35-a2a6-1cdbfda1b603","path":"sprites/casinoReception_spr/casinoReception_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
         {"FrameId":{"name":"5587795d-9901-4d61-96e7-e0acee0dfc47","path":"sprites/casinoReception_spr/casinoReception_spr.yy",},"LayerId":{"name":"3f1e7024-a495-44f9-88d4-4029eaa29506","path":"sprites/casinoReception_spr/casinoReception_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-        {"FrameId":{"name":"5587795d-9901-4d61-96e7-e0acee0dfc47","path":"sprites/casinoReception_spr/casinoReception_spr.yy",},"LayerId":{"name":"72c20990-498e-427e-947b-189f7516c3df","path":"sprites/casinoReception_spr/casinoReception_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"casinoReception_spr","path":"sprites/casinoReception_spr/casinoReception_spr.yy",},"resourceVersion":"1.0","name":"5587795d-9901-4d61-96e7-e0acee0dfc47","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
@@ -69,7 +68,6 @@
   "layers": [
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"411d8d57-6e77-4e35-a2a6-1cdbfda1b603","tags":[],"resourceType":"GMImageLayer",},
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"Layer 1","resourceVersion":"1.0","name":"3f1e7024-a495-44f9-88d4-4029eaa29506","tags":[],"resourceType":"GMImageLayer",},
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"Layer 2","resourceVersion":"1.0","name":"72c20990-498e-427e-947b-189f7516c3df","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
