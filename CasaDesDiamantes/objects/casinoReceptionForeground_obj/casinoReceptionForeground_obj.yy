@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "casinoLightTower_spr",
-    "path": "sprites/casinoLightTower_spr/casinoLightTower_spr.yy",
+    "name": "casinoReceptionForeground_spr",
+    "path": "sprites/casinoReceptionForeground_spr/casinoReceptionForeground_spr.yy",
   },
   "solid": false,
   "visible": true,
@@ -24,11 +24,11 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Decoration",
-    "path": "folders/Objects/Decoration.yy",
+    "name": "Objects",
+    "path": "folders/Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "casinoLightTower_obj",
+  "name": "casinoReceptionForeground_obj",
   "tags": [],
   "resourceType": "GMObject",
 }

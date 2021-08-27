@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "casinoReception_spr",
-    "path": "sprites/casinoReception_spr/casinoReception_spr.yy",
+    "name": "casinoReceptionForeground_spr",
+    "path": "sprites/casinoReceptionForeground_spr/casinoReceptionForeground_spr.yy",
   },
   "solid": false,
   "visible": true,
@@ -28,7 +28,7 @@
     "path": "folders/Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "casinoReception_obj",
+  "name": "casinoReceptionForeground_obj",
   "tags": [],
   "resourceType": "GMObject",
 }
