@@ -27,6 +27,7 @@
     {"compositeImage":{"FrameId":{"name":"5587795d-9901-4d61-96e7-e0acee0dfc47","path":"sprites/casinoReceptionBackground_spr/casinoReceptionBackground_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"5587795d-9901-4d61-96e7-e0acee0dfc47","path":"sprites/casinoReceptionBackground_spr/casinoReceptionBackground_spr.yy",},"LayerId":{"name":"411d8d57-6e77-4e35-a2a6-1cdbfda1b603","path":"sprites/casinoReceptionBackground_spr/casinoReceptionBackground_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
         {"FrameId":{"name":"5587795d-9901-4d61-96e7-e0acee0dfc47","path":"sprites/casinoReceptionBackground_spr/casinoReceptionBackground_spr.yy",},"LayerId":{"name":"3f1e7024-a495-44f9-88d4-4029eaa29506","path":"sprites/casinoReceptionBackground_spr/casinoReceptionBackground_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"5587795d-9901-4d61-96e7-e0acee0dfc47","path":"sprites/casinoReceptionBackground_spr/casinoReceptionBackground_spr.yy",},"LayerId":{"name":"976379ff-dd05-4b34-9648-262ad76031d9","path":"sprites/casinoReceptionBackground_spr/casinoReceptionBackground_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"casinoReceptionBackground_spr","path":"sprites/casinoReceptionBackground_spr/casinoReceptionBackground_spr.yy",},"resourceVersion":"1.0","name":"5587795d-9901-4d61-96e7-e0acee0dfc47","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
@@ -67,6 +68,7 @@
   },
   "layers": [
     {"visible":false,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"411d8d57-6e77-4e35-a2a6-1cdbfda1b603","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"Layer 2","resourceVersion":"1.0","name":"976379ff-dd05-4b34-9648-262ad76031d9","tags":[],"resourceType":"GMImageLayer",},
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"Layer 1","resourceVersion":"1.0","name":"3f1e7024-a495-44f9-88d4-4029eaa29506","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
