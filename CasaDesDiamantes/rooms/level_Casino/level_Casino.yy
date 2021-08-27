@@ -118,6 +118,7 @@
         {"properties":[],"isDnd":false,"objectId":{"name":"elevatorCheckpoint_obj","path":"objects/elevatorCheckpoint_obj/elevatorCheckpoint_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":4.09375,"scaleY":0.46875,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1665.0,"y":1342.0,"resourceVersion":"1.0","name":"inst_25E72B04","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"elevatorCheckpoint2_obj","path":"objects/elevatorCheckpoint2_obj/elevatorCheckpoint2_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":5.0,"scaleY":0.53125,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1664.0,"y":1152.0,"resourceVersion":"1.0","name":"inst_66FF5049","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"casinoCandleLight_obj","path":"objects/casinoCandleLight_obj/casinoCandleLight_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":795.0,"y":1201.0,"resourceVersion":"1.0","name":"inst_1EC4E45B","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"dualBarettas_obj","path":"objects/dualBarettas_obj/dualBarettas_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":832.0,"y":1312.0,"resourceVersion":"1.0","name":"inst_4E395B5D","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":600,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Instances","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"checkpoint_obj","path":"objects/checkpoint_obj/checkpoint_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1361.0,"y":1352.0,"resourceVersion":"1.0","name":"inst_47E396D3","tags":[],"resourceType":"GMRInstance",},
@@ -639,6 +640,7 @@
     {"name":"inst_70392C5B","path":"rooms/level_Casino/level_Casino.yy",},
     {"name":"inst_63873848","path":"rooms/level_Casino/level_Casino.yy",},
     {"name":"inst_4C5129D5","path":"rooms/level_Casino/level_Casino.yy",},
+    {"name":"inst_4E395B5D","path":"rooms/level_Casino/level_Casino.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
