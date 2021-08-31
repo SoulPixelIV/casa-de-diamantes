@@ -4,7 +4,10 @@ if (moving)
 	{
 		y += speedMov * global.dt;
 		elevatorTrigger.y += speedMov * global.dt;
-		background.y += speedMov * global.dt;
+		if (instance_exists(background))
+		{
+			background.y += speedMov * global.dt;
+		}
 		snapCameraX = false;
 		snapCameraY = false;
 		screenshake(60, 25, 0.6, id);
@@ -14,7 +17,10 @@ if (moving)
 		y -= speedMov * global.dt;
 		player_obj.y -= speedMov * global.dt;
 		elevatorTrigger.y -= speedMov * global.dt;
-		background.y -= speedMov * global.dt;
+		if (instance_exists(background))
+		{
+			background.y -= speedMov * global.dt;
+		}
 		snapCameraX = false;
 		snapCameraY = false;
 		screenshake(60, 25, 0.6, id);

@@ -1,5 +1,5 @@
 //Chipbar
-draw_sprite_ext(scoreBorder_spr, -1, 375, edgeMarginVer, 1, 1, 0, -1, 1);
+draw_sprite_ext(scoreBorder_spr, -1, 469, edgeMarginVer, 1, 1, 0, -1, 1);
 	
 convMoney = string(global.money);
 slots = [0,0,0,0,0,0,0];
@@ -118,3 +118,5 @@ if (blackJackCalc_obj.screen == 2)
 		draw_text(xScreenSize / 2, yScreenSize / 3, "LOOSE - CREDITS LOST");
 	}
 }
+
+draw_sprite(cursor_spr, 0, mouse_x, mouse_y);
