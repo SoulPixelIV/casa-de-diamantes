@@ -3,6 +3,7 @@ horspeed = random_range(-4.5, 4.5);
 verspeed = random_range(-1, -5);
 gravityStrength = -0.12;
 image_speed = 1;
+playedSound = false;
 
 //Create Emitter
 emitter = audio_emitter_create();

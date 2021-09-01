@@ -19,6 +19,8 @@ checkedWaypoint = true;
 usedLever = false;
 useDelayTimer = 200;
 gotSpawned = false;
+playedSound = false;
+flameSound = noone;
 
 lastBullet = bulletPistol_obj;
 ammoSpawnCount = 2;
@@ -61,3 +63,12 @@ checkPlayerTimer = 50;
 checkPlayerTimerSave = checkPlayerTimer;
 checkPlayerTimer = 0;
 gravityStrength = 0;
+
+//Create Emitter
+emitter = audio_emitter_create();
+audio_max_distance = 500;
+audio_drop_start = 180;
+
+audio_falloff_set_model(audio_falloff_linear_distance);
+audio_emitter_position(emitter, x, y, 0);
+audio_emitter_falloff(emitter, audio_drop_start, audio_max_distance, 1);

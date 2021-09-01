@@ -50,3 +50,17 @@ if (timer < 0)
 {
 	instance_change(explosion_obj, true);
 }
+
+//Play sound
+if (timer < 200)
+{
+	if (!playedSound)
+	{
+		var beepShot = audio_play_sound_on(emitter, beep_snd, true, false);
+		audio_sound_pitch(beepShot, 0.8);
+		playedSound = true;
+	}
+}
+
+//Audio
+audio_emitter_position(emitter, x, y, 0);

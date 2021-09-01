@@ -44,3 +44,6 @@ if (timer < 0)
 {
 	instance_change(explosionTiny_obj, true);
 }
+
+//Audio
+audio_emitter_position(emitter, x, y, 0);

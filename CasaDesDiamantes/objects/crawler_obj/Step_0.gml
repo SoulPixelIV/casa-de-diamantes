@@ -347,6 +347,12 @@ if (verspeed == 0 && attackInProg1 && !startFire)
 //Start Attack 1
 if (attackInProg1 && startFire)
 {
+	if (!playedSound)
+	{
+		flameSound = audio_play_sound_on(emitter, flamethrower_snd, true, false);
+		playedSound = true;
+	}
+	
 	animationSpeed = 1.25;
 	sprite_index = crawlerFireAttack_spr;
 	delay1 = true;
@@ -384,6 +390,12 @@ if (attackInProg2)
 	}
 	sprite_index = crawlerFireAttack2_spr;
 	delay2 = true;
+	if (!playedSound)
+	{
+		flameSound = audio_play_sound_on(emitter, flamethrower_snd, true, false);
+		audio_sound_pitch(flameSound, 0.8);
+		playedSound = true;
+	}
 }
 	
 if (delay1)
@@ -416,6 +428,12 @@ if (attackDelay1 < 0 || attackDelay2 < 0)
 	}
 	dmgHitbox = noone;
 	light = noone;
+	playedSound = false;
+	if (flameSound != noone)
+	{
+		audio_stop_sound(flameSound)
+		flameSound = noone;
+	}
 }
 
 if (instance_exists(light))
@@ -473,3 +491,6 @@ if (checkPlayerTimer < 0)
 	}
 	checkPlayerTimer = checkPlayerTimerSave;
 }
+
+//Audio
+audio_emitter_position(emitter, x, y, 0);

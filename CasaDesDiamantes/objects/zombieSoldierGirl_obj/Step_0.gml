@@ -394,5 +394,15 @@ if (checkPlayerTimer < 0)
 	checkPlayerTimer = checkPlayerTimerSave;
 }
 
+//Play attack sound
+if (aggro && attackCooldown < 120 && attackInProg1)
+{
+	if (!audio_is_playing(sniperShotLoad_snd))
+	{
+		var loadedShot = audio_play_sound_on(emitter, sniperShotLoad_snd, false, false);
+		audio_sound_pitch(loadedShot, (attackCooldown / 10));
+	}
+}
+
 //Sound Position
 audio_emitter_position(emitter, x, y, 0);
