@@ -29,6 +29,9 @@ audio_sound_pitch(explosion_snd, clamp(1 * global.timeScale, 0.5, 1.5));
 audio_sound_pitch(explosionTiny_snd, clamp(1 * global.timeScale, 0.5, 1.5));
 audio_sound_pitch(lever_snd, clamp(1 * global.timeScale, 0.5, 1.5));
 audio_sound_pitch(tick_snd, clamp(1 * global.timeScale, 0.5, 1.5));
+audio_sound_pitch(beep_snd, clamp(1 * global.timeScale, 0.5, 1.5));
+audio_sound_pitch(flamethrowerStart_snd, clamp(1 * global.timeScale, 0.5, 1.5));
+audio_sound_pitch(flamethrower_snd, clamp(1 * global.timeScale, 0.5, 1.5));
 
 audio_sound_pitch(infectedVoice_snd, clamp(1 * global.timeScale, 0.5, 1.5));
 audio_sound_pitch(plagueInfectionVoice_snd, clamp(1 * global.timeScale, 0.5, 1.5));

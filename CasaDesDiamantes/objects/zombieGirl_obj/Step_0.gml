@@ -263,12 +263,26 @@ if (hp < 0)
 	damageTintHeadshot = false;
 	if (headshot)
 	{
+		instance_create_layer(x, y, "Instances", zombiegirlHead_obj);
+		var rand = choose(0,4);
+		repeat (rand)
+		{
+			instance_create_layer(x, y, "Instances", zombiegirlPiece_obj);
+		}
 		instance_change(zombieGirlDeath1_obj, true);
 	}
 	else
 	{
 		instance_change(zombieGirlDeath2_obj, true);
 	}
+}
+
+//Remove Arm
+if (lostArm && !spawnedArm)
+{
+	sprite_index = zombieGirlNoArm_spr;
+	instance_create_layer(x, y, "Instances", zombiegirlArm_obj);
+	spawnedArm = true;
 }
 
 //Headshot Hitbox
@@ -391,7 +405,14 @@ if (attackDelay < 0)
 	attackInProg2 = false;
 	startDrill = false;
 	animationSpeed = 0.5;
-	sprite_index = zombieGirl_spr;
+	if (!lostArm)
+	{
+		sprite_index = zombieGirl_spr;
+	}
+	else
+	{
+		sprite_index = zombieGirlNoArm_spr;
+	}
 	damageCollision = false;
 	movement = true;
 	spawnedHitbox = false;
@@ -409,7 +430,14 @@ if (damageTintHeadshot && sprite_index != zombieGirlFlash_spr)
 }
 if (damageTintTimer < 0)
 {
-	sprite_index = zombieGirl_spr;
+	if (!lostArm)
+	{
+		sprite_index = zombieGirl_spr;
+	}
+	else
+	{
+		sprite_index = zombieGirlNoArm_spr;
+	}
 	damageTintTimer = damageTintTimerSave;
 	damageTint = false;
 	damageTintHeadshot = false;

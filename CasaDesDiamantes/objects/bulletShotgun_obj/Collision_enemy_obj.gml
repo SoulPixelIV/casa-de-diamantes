@@ -15,6 +15,15 @@ if (instance_exists(enemyTarget))
 		bloodSpread2.image_angle = image_angle;
 		audio_play_sound(bulletHit_snd, 1, false);
 		dealtDamage = true;
+		
+		if (place_meeting(x, y, zombieGirl_obj))
+	{
+		var rand = choose(1,1,1,1,1,1,1,1,1,1,1,1,1,2);
+		if (rand == 2)
+		{
+			enemyTarget.lostArm = true;
+		}
+	}
 	}
 }
 

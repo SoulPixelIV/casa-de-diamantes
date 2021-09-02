@@ -13,6 +13,15 @@ if (!dealtDamage && instance_exists(enemyTarget) && other.hitable)
 	audio_play_sound(bulletHit_snd, 1, false);
 	dealtDamage = true;
 	penetration--;
+	
+	if (place_meeting(x, y, zombieGirl_obj))
+	{
+		var rand = choose(1,1,1,1,1,1,1,1,1,1,1,1,1,2);
+		if (rand == 2)
+		{
+			enemyTarget.lostArm = true;
+		}
+	}
 }
 
 if (penetration < 1)

@@ -13,6 +13,8 @@ moneyDropMax = 4;
 damage = 23;
 knockback = 0;
 gotSpawned = false;
+lostArm = false;
+spawnedArm = false;
 
 lastBullet = bulletPistol_obj;
 ammoSpawnCount = 4;

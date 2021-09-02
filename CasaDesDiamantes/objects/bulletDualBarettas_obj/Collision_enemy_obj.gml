@@ -10,9 +10,18 @@ if (!dealtDamage && instance_exists(enemyTarget) && other.hitable)
 	bloodSpread = instance_create_layer(x, y, "Instances", bloodSpread_obj);
 	bloodSpread.image_angle = image_angle;
 	bloodSpread2 = instance_create_layer(x, y, "Instances", bloodSpread2_obj);
-	bloodSpread2.image_angle = image_angle;
+	bloodSpread2.image_angle = image_angle;	
 	audio_play_sound(bulletHit_snd, 1, false);
 	dealtDamage = true;
+	
+	if (place_meeting(x, y, zombieGirl_obj))
+	{
+		var rand = choose(1,1,1,1,1,1,1,1,1,1,1,1,1,2);
+		if (rand == 2)
+		{
+			enemyTarget.lostArm = true;
+		}
+	}
 }
 
 if (penetration < 1)
