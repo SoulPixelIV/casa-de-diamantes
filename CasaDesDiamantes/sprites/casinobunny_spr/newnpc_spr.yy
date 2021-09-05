@@ -80,7 +80,7 @@
     "eventStubScript": null,
     "parent": {"name":"newnpc_spr","path":"sprites/newnpc_spr/newnpc_spr.yy",},
     "resourceVersion": "1.3",
-    "name": "newnpc_spr",
+    "name": "",
     "tags": [],
     "resourceType": "GMSequence",
   },
