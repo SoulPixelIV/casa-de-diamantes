@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "newnpc_spr",
-    "path": "sprites/newnpc_spr/newnpc_spr.yy",
+    "name": "bartender_spr",
+    "path": "sprites/bartender_spr/bartender_spr.yy",
   },
   "solid": false,
   "visible": true,
@@ -23,6 +23,7 @@
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
@@ -31,7 +32,7 @@
     "path": "folders/Characters.yy",
   },
   "resourceVersion": "1.0",
-  "name": "newnpc_obj",
+  "name": "bartender_obj",
   "tags": [],
   "resourceType": "GMObject",
 }

@@ -26,3 +26,17 @@ if (scene2)
 	}
 	scene2 = false;
 }
+//Scene 3
+if (scene3)
+{
+	if (!camera_obj.drawText)
+	{
+		for (i = scene3Low; i < scene3High + 1; i++)
+		{
+			camera_obj.dialogue[i] = dialogue[i];
+		}
+		camera_obj.dialogueLine = scene3Low;
+		camera_obj.drawText = true;
+	}
+	scene3 = false;
+}
