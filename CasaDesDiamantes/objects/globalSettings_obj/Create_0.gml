@@ -9,6 +9,9 @@ realTimeScale = global.timeScale;
 restartInProg = false;
 keyboardActive = true;
 
+global.xScreenSize = 480;
+global.yScreenSize = 270;
+
 surface_depth_disable(true);
 
 game_set_speed(TARGET_FRAMERATE, gamespeed_fps);

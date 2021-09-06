@@ -1,5 +1,5 @@
-xScreenSize = 480;
-yScreenSize = 270;
+xScreenSize = global.xScreenSize;
+yScreenSize = global.yScreenSize;
 zoom = 2;
 xWindowSize = xScreenSize * zoom;
 yWindowSize = yScreenSize * zoom;

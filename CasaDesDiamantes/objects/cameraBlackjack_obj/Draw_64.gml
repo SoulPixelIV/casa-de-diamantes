@@ -1,5 +1,14 @@
 //Chipbar
 draw_sprite_ext(scoreBorder_spr, -1, 469, edgeMarginVer, 1, 1, 0, -1, 1);
+
+if (blackJackCalc_obj.screen == 0)
+{
+	draw_set_font(gothicPixel_fnt);
+	draw_set_halign(fa_center);
+	draw_set_color(make_color_rgb(255, 215, 0));
+	draw_text(global.xScreenSize / 2, 38, "Blackjack");
+	draw_text(global.xScreenSize / 2, 54, "Please place your bet!");
+}
 	
 convMoney = string(global.money);
 slots = [0,0,0,0,0,0,0];
@@ -53,7 +62,7 @@ if (blackJackCalc_obj.screen == 1 || blackJackCalc_obj.screen == 2)
 }
 
 //Draw Pot
-draw_text(250, 250, "POT: " + string(blackJackCalc_obj.moneypool));
+draw_text(global.xScreenSize / 2, 250, "POT: " + string(blackJackCalc_obj.moneypool));
 
 //DRAW WIN OR LOOSE STATE
 if (blackJackCalc_obj.screen == 2)
