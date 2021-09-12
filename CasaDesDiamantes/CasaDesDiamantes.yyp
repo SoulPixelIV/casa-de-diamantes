@@ -1,6 +1,7 @@
 {
   "resources": [
     {"id":{"name":"rainmakerOLD_spr","path":"sprites/rainmakerOLD_spr/rainmakerOLD_spr.yy",},"order":1,},
+    {"id":{"name":"infiniteSpawn","path":"rooms/infiniteSpawn/infiniteSpawn.yy",},"order":7,},
     {"id":{"name":"caveTilesOld_spr","path":"sprites/caveTilesOld_spr/caveTilesOld_spr.yy",},"order":0,},
     {"id":{"name":"caveTiles_spr","path":"sprites/caveTiles_spr/caveTiles_spr.yy",},"order":1,},
     {"id":{"name":"streetTiles_spr","path":"sprites/streetTiles_spr/streetTiles_spr.yy",},"order":2,},
@@ -8,6 +9,7 @@
     {"id":{"name":"buildingTiles_spr","path":"sprites/buildingTiles_spr/buildingTiles_spr.yy",},"order":3,},
     {"id":{"name":"buildingBackgroundTiles_spr","path":"sprites/buildingBackgroundTiles_spr/buildingBackgroundTiles_spr.yy",},"order":4,},
     {"id":{"name":"caveBackgroundTiles_spr","path":"sprites/caveBackgroundTiles_spr/caveBackgroundTiles_spr.yy",},"order":5,},
+    {"id":{"name":"enemySpawnerFlying_obj","path":"objects/enemySpawnerFlying_obj/enemySpawnerFlying_obj.yy",},"order":84,},
     {"id":{"name":"foregroundTiles_spr","path":"sprites/foregroundTiles_spr/foregroundTiles_spr.yy",},"order":6,},
     {"id":{"name":"cityBackground_spr","path":"sprites/cityBackground_spr/cityBackground_spr.yy",},"order":7,},
     {"id":{"name":"cityBackground2_spr","path":"sprites/cityBackground2_spr/cityBackground2_spr.yy",},"order":8,},
@@ -495,6 +497,7 @@
     {"id":{"name":"climb4_snd","path":"sounds/climb4_snd/climb4_snd.yy",},"order":8,},
     {"id":{"name":"coin1_snd","path":"sounds/coin1_snd/coin1_snd.yy",},"order":19,},
     {"id":{"name":"coin2_snd","path":"sounds/coin2_snd/coin2_snd.yy",},"order":20,},
+    {"id":{"name":"explosionBigOnlyEnemy_obj","path":"objects/explosionBigOnlyEnemy_obj/explosionBigOnlyEnemy_obj.yy",},"order":11,},
     {"id":{"name":"casinoWallWindow_spr","path":"sprites/casinoWallWindow_spr/casinoWallWindow_spr.yy",},"order":77,},
     {"id":{"name":"forestTiles_spr","path":"sprites/forestTiles_spr/forestTiles_spr.yy",},"order":11,},
     {"id":{"name":"laserbulletshield_obj","path":"objects/laserbulletshield_obj/laserbulletshield_obj.yy",},"order":4,},
@@ -707,6 +710,7 @@
     {"id":{"name":"lantern_obj","path":"objects/lantern_obj/lantern_obj.yy",},"order":0,},
     {"id":{"name":"lightsRed_obj","path":"objects/lightsRed_obj/lightsRed_obj.yy",},"order":1,},
     {"id":{"name":"ledBarRed_obj","path":"objects/ledBarRed_obj/ledBarRed_obj.yy",},"order":1,},
+    {"id":{"name":"enemySpawner_obj","path":"objects/enemySpawner_obj/enemySpawner_obj.yy",},"order":83,},
     {"id":{"name":"drill_snd","path":"sounds/drill_snd/drill_snd.yy",},"order":31,},
     {"id":{"name":"ledStripe_obj","path":"objects/ledStripe_obj/ledStripe_obj.yy",},"order":2,},
     {"id":{"name":"ledStripe2_obj","path":"objects/ledStripe2_obj/ledStripe2_obj.yy",},"order":3,},
@@ -1044,6 +1048,7 @@
     {"roomId":{"name":"testRoom3","path":"rooms/testRoom3/testRoom3.yy",},},
     {"roomId":{"name":"testRoom2","path":"rooms/testRoom2/testRoom2.yy",},},
     {"roomId":{"name":"level2_Casino","path":"rooms/level2_Casino/level2_Casino.yy",},},
+    {"roomId":{"name":"infiniteSpawn","path":"rooms/infiniteSpawn/infiniteSpawn.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":2577,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},

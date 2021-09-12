@@ -259,7 +259,7 @@ if (hp <= 0)
 			instance_change(zombieGirlDeath2_obj, true);
 		}
 		instance_destroy(alarmLight);
-		instance_create_layer(x, y, "Instances", explosionBig_obj);
+		instance_create_layer(x, y, "Instances", explosionBigOnlyEnemy_obj);
 		instance_destroy();
 	}
 }

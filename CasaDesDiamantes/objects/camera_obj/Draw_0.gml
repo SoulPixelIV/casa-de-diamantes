@@ -120,10 +120,10 @@ if (drawText && !showWindowMenu)
 	draw_set_font(gothicPixel_fnt);
 	draw_set_halign(fa_center);
 	draw_set_color(c_black);
-	draw_sprite_ext(dialogBorder_spr, 0, character.x, character.y - 28,2 + string_length(dialogueStripped) / 3, 1.5, 0, -1, 1);
-	draw_text(character.x - 1, character.y - 32 + 1, string_copy(dialogueStripped, 1, string_length(dialogue[dialogueLine])));
+	draw_sprite_ext(dialogBorder_spr, 0, character.x, character.y - 34,2 + string_length(dialogueStripped) / 3, 1.5, 0, -1, 1);
+	draw_text(character.x - 1, character.y - 38 + 1, string_copy(dialogueStripped, 1, string_length(dialogue[dialogueLine])));
 	draw_set_color(make_color_rgb(255, 215, 0));
-	draw_text(character.x, character.y - 32, string_copy(dialogueStripped, 1, string_length(dialogue[dialogueLine])));
+	draw_text(character.x, character.y - 38, string_copy(dialogueStripped, 1, string_length(dialogue[dialogueLine])));
 	draw_set_halign(fa_left);
 
 	//Sentence incomplete
