@@ -60,6 +60,17 @@ if (aggroTimer < 0)
 
 if (movement)
 {
+	//Check for walls
+	if (collision_circle(x, y, 8, collider_obj, false, true)) {
+		verspeed = -movSpeed;
+	}
+	//Fly down to player
+	if (x < player_obj.x + 128 && x > player_obj.x - 128) {
+		if (y < player_obj.y - 86) {
+			verspeed = movSpeed;
+		}
+	}
+	
 	if (aggro && (x > player_obj.x + 64 || x < player_obj.x - 64))
 	{
 		if (!collision_circle(x, y, 16, enemy_obj, false, true))
