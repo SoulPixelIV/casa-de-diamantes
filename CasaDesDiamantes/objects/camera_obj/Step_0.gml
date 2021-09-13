@@ -24,17 +24,19 @@ if (showWindowMenu)
 }
 
 //Check Culling Area
-checkCullingAreaTimer -= global.dt;
-if (checkCullingAreaTimer < 0)
-{
-	with (deactivate_obj)
+if (room != infiniteSpawn) {
+	checkCullingAreaTimer -= global.dt;
+	if (checkCullingAreaTimer < 0)
 	{
-		if (!place_meeting(x, y, battleArena_obj))
+		with (deactivate_obj)
 		{
-			instance_deactivate_object(self);
+			if (!place_meeting(x, y, battleArena_obj))
+			{
+				instance_deactivate_object(self);
+			}
 		}
+		//128px Safezone
+		instance_activate_region((x - xScreenSize / 2) - 256, (y - yScreenSize / 2) - 256, xScreenSize + 512, yScreenSize + 512, true);
+		checkCullingAreaTimer = checkCullingAreaTimerSave;
 	}
-	//128px Safezone
-	instance_activate_region((x - xScreenSize / 2) - 256, (y - yScreenSize / 2) - 256, xScreenSize + 512, yScreenSize + 512, true);
-	checkCullingAreaTimer = checkCullingAreaTimerSave;
 }

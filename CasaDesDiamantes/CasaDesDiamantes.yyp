@@ -694,6 +694,7 @@
     {"id":{"name":"particleSystem_obj","path":"objects/particleSystem_obj/particleSystem_obj.yy",},"order":2,},
     {"id":{"name":"darkcaveBackground_obj","path":"objects/darkcaveBackground_obj/darkcaveBackground_obj.yy",},"order":0,},
     {"id":{"name":"colliderAlwaysOn_obj","path":"objects/colliderAlwaysOn_obj/colliderAlwaysOn_obj.yy",},"order":5,},
+    {"id":{"name":"enemySpawnerExplosive_obj","path":"objects/enemySpawnerExplosive_obj/enemySpawnerExplosive_obj.yy",},"order":85,},
     {"id":{"name":"colliderSideway_obj","path":"objects/colliderSideway_obj/colliderSideway_obj.yy",},"order":3,},
     {"id":{"name":"radiationMeter_spr","path":"sprites/radiationMeter_spr/radiationMeter_spr.yy",},"order":66,},
     {"id":{"name":"player_obj","path":"objects/player_obj/player_obj.yy",},"order":1,},

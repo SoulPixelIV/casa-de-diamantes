@@ -1,4 +1,3 @@
-timer = 2000;
-enemyToSpawn = choose(zombieGirlWounded_obj, zombieGirl_obj, zombieBucketGirl_obj, explosiveMerchant_obj, crawler_obj);
+enemyToSpawn = choose(zombieGirlWounded_obj, zombieGirl_obj, zombieBucketGirl_obj, crawler_obj);
 
 timerSave = timer;

@@ -30,7 +30,7 @@
     "path": "folders/Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "enemySpawnerFlying_obj",
+  "name": "enemySpawnerExplosive_obj",
   "tags": [],
   "resourceType": "GMObject",
 }
