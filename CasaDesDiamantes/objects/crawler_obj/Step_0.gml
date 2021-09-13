@@ -54,8 +54,10 @@ if (aggroAtSpecificPoint)
 
 if (deaggroTimer < 0)
 {
-	aggro = false;
-	deaggroTimer = deaggroTimerSave;
+	if (!place_meeting(x, y, battleArena_obj) && room != infiniteSpawn) {
+		aggro = false;
+		deaggroTimer = deaggroTimerSave;
+	}
 }
 if (aggroTimer < 0)
 {
