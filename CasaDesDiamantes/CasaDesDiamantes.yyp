@@ -93,6 +93,7 @@
     {"id":{"name":"lensflareYellow_spr","path":"sprites/lensflareYellow_spr/lensflareYellow_spr.yy",},"order":7,},
     {"id":{"name":"cameraTarget_obj","path":"objects/cameraTarget_obj/cameraTarget_obj.yy",},"order":5,},
     {"id":{"name":"beatHigh_msc","path":"sounds/beatHigh_msc/beatHigh_msc.yy",},"order":2,},
+    {"id":{"name":"playerDashReverse_spr","path":"sprites/playerDashReverse_spr/playerDashReverse_spr.yy",},"order":26,},
     {"id":{"name":"lensflareRed_spr","path":"sprites/lensflareRed_spr/lensflareRed_spr.yy",},"order":8,},
     {"id":{"name":"explosiveMerchantDead_spr","path":"sprites/explosiveMerchantDead_spr/explosiveMerchantDead_spr.yy",},"order":1,},
     {"id":{"name":"lensflareBlue_spr","path":"sprites/lensflareBlue_spr/lensflareBlue_spr.yy",},"order":9,},
