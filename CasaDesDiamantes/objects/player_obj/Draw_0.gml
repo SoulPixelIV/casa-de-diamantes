@@ -81,7 +81,7 @@ if (sprite_index == playerFlip_spr || sprite_index == playerFlipNude_spr)
 	}
 }
 
-if (sprite_index == playerDash_spr || sprite_index == playerDashNude_spr || sprite_index = playerDashUnequipped_spr || sprite_index = playerDashUnequippedNude_spr)
+if (sprite_index == playerDash_spr || sprite_index == playerDashNude_spr || sprite_index = playerDashUnequippedNude_spr)
 {
 	if (global.hat == beret_spr)
 	{
@@ -112,6 +112,30 @@ if (sprite_index == playerDash_spr || sprite_index == playerDashNude_spr || spri
 	if (global.bottom == smokingBottom_spr)
 	{
 		drawSpriteBottom = smokingBottomDash_spr;
+	}
+}
+
+if (sprite_index = playerDashReverse_spr)
+{
+	if (global.hat == beret_spr)
+	{
+		drawSpriteHat = beretDashReverse_spr;
+	}
+	if (global.top1 == smokingTop_spr)
+	{
+		drawSpriteTop1 = smokingTopDashReverse_spr;
+	}
+	if (global.top2 == smokingJacketEquipped_spr)
+	{
+		drawSpriteTop2 = smokingJacketDashReverse_spr;
+	}
+	if (global.top2 == warmJacketEquipped_spr)
+	{
+		drawSpriteTop2 = warmJacketDashReverse_spr;
+	}	
+	if (global.bottom == smokingBottom_spr)
+	{
+		drawSpriteBottom = smokingBottomDashReverse_spr;
 	}
 }
 

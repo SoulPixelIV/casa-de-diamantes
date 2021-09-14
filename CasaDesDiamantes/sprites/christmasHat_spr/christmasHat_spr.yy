@@ -114,7 +114,7 @@
   "nineSlice": null,
   "parent": {
     "name": "ChristmasHat",
-    "path": "folders/Steph/Clothes/ChristmasHat.yy",
+    "path": "folders/Legacy Objects/ChristmasHat.yy",
   },
   "resourceVersion": "1.0",
   "name": "christmasHat_spr",
