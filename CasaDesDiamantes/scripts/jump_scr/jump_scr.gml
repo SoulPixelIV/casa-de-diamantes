@@ -21,6 +21,7 @@ function jump_scr() {
 	//Dash Momentum after jump
 	if ((player_obj.isDashing && place_free(x, y - 32)))
 	{
+		player_obj.dashLastSpriteReached = false;
 		player_obj.stoppedDashing = true;
 		player_obj.stillInAir = true;
 		if (player_obj.horspeed == 0)

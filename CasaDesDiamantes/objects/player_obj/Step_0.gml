@@ -212,9 +212,16 @@ if (isDashing && !onLadder)
 			{
 				if (global.top1 == noone)
 				{
-					if ((dirCursor > 90 && dirCursor < 270 && image_xscale == 1) || (dirCursor < 90 || dirCursor > 270 && image_xscale == -1))
+					if (dashLastSpriteReached)
 					{
-						sprite_index = playerDashReverse_spr;
+						if ((dirCursor > 90 && dirCursor < 270 && image_xscale == 1) || (dirCursor < 90 || dirCursor > 270 && image_xscale == -1))
+						{
+							sprite_index = playerDashReverse_spr;
+						}
+						else
+						{
+							sprite_index = playerDash_spr;
+						}
 					}
 					else
 					{
@@ -226,6 +233,10 @@ if (isDashing && !onLadder)
 					sprite_index = playerDashNude_spr;
 				}
 				if (image_index > image_number - 1 && (sprite_index == playerDash_spr || sprite_index == playerDashNude_spr))
+				{
+					dashLastSpriteReached = true;
+				}
+				if (dashLastSpriteReached)
 				{
 					image_index = image_number - 1;
 				}
