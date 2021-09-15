@@ -546,7 +546,6 @@
     {"id":{"name":"battleArenaWoundedpoint_obj","path":"objects/battleArenaWoundedpoint_obj/battleArenaWoundedpoint_obj.yy",},"order":75,},
     {"id":{"name":"darkcaveBackground2_obj","path":"objects/darkcaveBackground2_obj/darkcaveBackground2_obj.yy",},"order":1,},
     {"id":{"name":"casinoCandleLight_obj","path":"objects/casinoCandleLight_obj/casinoCandleLight_obj.yy",},"order":32,},
-    {"id":{"name":"C_BJ_teleporter","path":"objects/C_BJ_teleporter/C_BJ_teleporter.yy",},"order":11,},
     {"id":{"name":"get_next_pot","path":"scripts/get_next_pot/get_next_pot.yy",},"order":1,},
     {"id":{"name":"chipRedSideStack_spr","path":"sprites/chipRedSideStack_spr/chipRedSideStack_spr.yy",},"order":83,},
     {"id":{"name":"lighting_post_composite","path":"scripts/lighting_post_composite/lighting_post_composite.yy",},"order":2,},

@@ -103,6 +103,8 @@ selWeapon = 0;
 scrollDelay = 20;
 startScrollDelay = false;
 
+key_up_pressed = noone;
+
 if (global.unlockedWeapon[0] == true || global.unlockedWeapon[1] == true || global.unlockedWeapon[2] == true)
 {
 	unarmed = false;

@@ -105,12 +105,28 @@ if (string_char_at(dialogue[dialogueLine], 1) == "]")
 {
 	character = bartender_obj;
 }
+if (string_char_at(dialogue[dialogueLine], 1) == "[")
+{
+	character = casinobunny_obj;
+}
+
+//Windows
 if (string_char_at(dialogue[dialogueLine], 1) == "W")
 {
 	if (string_char_at(dialogue[dialogueLine], 2) == "1")
 	{
 		showWindowMenu = true;
 		windowType = 1;
+	}
+}
+//Games
+if (string_char_at(dialogue[dialogueLine], 1) == "G")
+{
+	if (string_char_at(dialogue[dialogueLine], 2) == "1")
+	{
+		part_emitter_destroy_all(global.partSystem);
+		room_goto(blackjackTable);
+		instance_destroy(player_obj);
 	}
 }
 
@@ -252,17 +268,20 @@ if (!hitVignette)
 		}
 	}
 }
-if (hitVignette || player_obj.hp < 20)
-{
-	if (vignetteAlpha > 0.4)
+
+if (instance_exists(player_obj)) {
+	if (hitVignette || player_obj.hp < 20)
 	{
-		vignetteAlpha -= 0.02;
+		if (vignetteAlpha > 0.4)
+		{
+			vignetteAlpha -= 0.02;
+		}
+		if (vignetteAlpha < 0.4)
+		{
+			vignetteAlpha += 0.02;
+		}
+		hitVignetteTimer -= global.dt;
 	}
-	if (vignetteAlpha < 0.4)
-	{
-		vignetteAlpha += 0.02;
-	}
-	hitVignetteTimer -= global.dt;
 }
 
 if (hitVignetteTimer < 0)
@@ -276,20 +295,22 @@ draw_set_alpha(vignetteAlpha);
 draw_ellipse_colour(x - xScreenSize, y - yScreenSize, x + xScreenSize, y + yScreenSize, c_black , c_red, false);
 draw_set_alpha(1);
 
-if (player_obj.plagueTransformation)
-{
-    shader_reset();
-    draw_set_alpha(0.4);
-    draw_ellipse_colour(x - xScreenSize, y - yScreenSize, x + xScreenSize, y + yScreenSize, c_black , c_purple, false);
-    draw_set_alpha(1);
-}
+if (instance_exists(player_obj)) {
+	if (player_obj.plagueTransformation)
+	{
+	    shader_reset();
+	    draw_set_alpha(0.4);
+	    draw_ellipse_colour(x - xScreenSize, y - yScreenSize, x + xScreenSize, y + yScreenSize, c_black , c_purple, false);
+	    draw_set_alpha(1);
+	}
 
-if (player_obj.slowmo)
-{
-	shader_reset();
-    draw_set_alpha(((player_obj.sniperDamageValue / 100) / 5) / 2);
-    draw_ellipse_colour(x - xScreenSize, y - yScreenSize, x + xScreenSize, y + yScreenSize, c_black , make_color_rgb(255,215,0), false);
-    draw_set_alpha(1);
+	if (player_obj.slowmo)
+	{
+		shader_reset();
+	    draw_set_alpha(((player_obj.sniperDamageValue / 100) / 5) / 2);
+	    draw_ellipse_colour(x - xScreenSize, y - yScreenSize, x + xScreenSize, y + yScreenSize, c_black , make_color_rgb(255,215,0), false);
+	    draw_set_alpha(1);
+	}
 }
 
 //#####LAYER 1#####
@@ -317,7 +338,7 @@ else
 	}
 }
 
-if (!noHUD)
+if (!noHUD && instance_exists(player_obj))
 {
 	draw_set_font(global.optixFont);
 	draw_set_color(c_white);
@@ -772,16 +793,15 @@ draw_set_alpha(1);
 draw_sprite(blackborder_spr, 0, x, blackbordersPos + (y - yScreenSize / 2));
 draw_sprite(blackborder_spr, 0, x, (y + yScreenSize / 2) + 42 - blackbordersPos);
 
-if (player_obj.sniperDamageValue > 0)
-{
-	draw_sprite_ext(blackborder_spr, 0, x, 42 + (y - yScreenSize / 2), 1, 1, 0, -1, (player_obj.sniperDamageValue / 100) / 5);
-	draw_sprite_ext(blackborder_spr, 0, x, y + yScreenSize / 2, 1, 1, 0, -1, (player_obj.sniperDamageValue / 100) / 5);
-}
+if (instance_exists(player_obj)) {
+	if (player_obj.sniperDamageValue > 0)
+	{
+		draw_sprite_ext(blackborder_spr, 0, x, 42 + (y - yScreenSize / 2), 1, 1, 0, -1, (player_obj.sniperDamageValue / 100) / 5);
+		draw_sprite_ext(blackborder_spr, 0, x, y + yScreenSize / 2, 1, 1, 0, -1, (player_obj.sniperDamageValue / 100) / 5);
+	}
 
-//Cursor
-//Crosshair Setup
-if (instance_exists(player_obj))
-{
+	//Cursor
+	//Crosshair Setup
 	if (player_obj.inputMethod == 0)
 	{
 		draw_sprite(cursor_spr, 0, mouse_x, mouse_y);

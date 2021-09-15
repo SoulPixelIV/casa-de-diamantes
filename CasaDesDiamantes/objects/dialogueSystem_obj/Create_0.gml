@@ -2,6 +2,7 @@
 scene1 = false;
 scene2 = false;
 scene3 = false;
+scene4 = false;
 
 //Dialogue Markers
 scene1Low = 0;
@@ -10,6 +11,8 @@ scene2Low = 11;
 scene2High = 16;
 scene3Low = 17;
 scene3High = 25;
+scene4Low = 26;
+scene4High = 28;
 
 //Dialogue Text
 //!!!ALWAYS 1 FREE SPACE BETWEEN SCENES
@@ -18,6 +21,7 @@ scene3High = 25;
 // $ = Cindy
 // % = Cutie-Plus
 // ] = Bartender
+// [ = Bunnygirl
 // W[Number] = Open specific window menu
 
 //Scene 1
@@ -46,8 +50,13 @@ dialogue[17] = "]Good evening and welcome to the Casa De Diamantes!";
 dialogue[18] = "]How can I be of service today?";
 dialogue[19] = "#Hey, yeah...I'm looking for a job.";
 dialogue[20] = "]Oh I'm sorry honey our staff is completly packed..";
-dialogue[21] = "#I actually meant something more..discrete";
+dialogue[21] = "#I actually meant something more..discrete.";
 dialogue[22] = "]Please head upstairs. He is already waiting for you.";
-dialogue[23] = "#Thanks";
-dialogue[24] = "]Oh and please come back, if you need a drink";
-dialogue[25] = ""; 
+dialogue[23] = "#Thanks.";
+dialogue[24] = "]Oh and please come back, if you need a drink.";
+dialogue[25] = "";
+
+//Scene 4
+dialogue[26] = "[Good evening!";
+dialogue[27] = "G1";
+dialogue[28] = "";
