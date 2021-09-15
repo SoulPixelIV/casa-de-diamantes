@@ -115,7 +115,7 @@ if (sprite_index == playerDash_spr || sprite_index == playerDashNude_spr || spri
 	}
 }
 
-if (sprite_index = playerDashReverse_spr)
+if (sprite_index = playerDashReverse_spr || sprite_index = playerDashReverseNude_spr)
 {
 	if (global.hat == beret_spr)
 	{
@@ -125,10 +125,11 @@ if (sprite_index = playerDashReverse_spr)
 	{
 		drawSpriteTop1 = smokingTopDashReverse_spr;
 	}
+	
 	if (global.top2 == smokingJacketEquipped_spr)
 	{
 		drawSpriteTop2 = smokingJacketDashReverse_spr;
-	}
+	}	
 	if (global.top2 == warmJacketEquipped_spr)
 	{
 		drawSpriteTop2 = warmJacketDashReverse_spr;
