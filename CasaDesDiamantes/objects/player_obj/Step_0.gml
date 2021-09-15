@@ -230,9 +230,16 @@ if (isDashing && !onLadder)
 				}
 				else
 				{
-					if (((dirCursor > 90 && dirCursor < 270) && image_xscale == 1) || ((dirCursor < 90 || dirCursor > 270) && image_xscale == -1))
+					if (dashLastSpriteReached)
 					{
-						sprite_index = playerDashReverseNude_spr;
+						if (((dirCursor > 90 && dirCursor < 270) && image_xscale == 1) || ((dirCursor < 90 || dirCursor > 270) && image_xscale == -1))
+						{
+							sprite_index = playerDashReverseNude_spr;
+						}
+						else
+						{
+							sprite_index = playerDashNude_spr;
+						}
 					}
 					else
 					{
