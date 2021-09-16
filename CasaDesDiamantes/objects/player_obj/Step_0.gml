@@ -492,6 +492,29 @@ else
 if (inputMethod == 0)
 {
 	dirCursor = point_direction(x, y, mouse_x, mouse_y);
+	if (huggingWall && image_xscale == 1) {
+		if (dirCursor > 0 && dirCursor < 180) {
+			updowndir = 0;
+		}
+		if (dirCursor > 180 && dirCursor < 360) {
+			updowndir = 1;
+		}
+		
+		if (dirCursor > 75 && updowndir == 0) {
+			dirCursor = 75;
+		}
+		if (dirCursor < 285 && updowndir == 1) {
+			dirCursor = 285;
+		}
+	}
+	if (huggingWall && image_xscale == -1) {
+		if (dirCursor < 105) {
+			dirCursor = 105;
+		}
+		if (dirCursor > 255) {
+			dirCursor = 255;
+		}
+	}
 }
 else
 {
