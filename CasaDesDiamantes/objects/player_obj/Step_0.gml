@@ -246,7 +246,8 @@ if (isDashing && !onLadder)
 						sprite_index = playerDashNude_spr;
 					}
 				}
-				if (image_index > image_number - 1 && (sprite_index == playerDash_spr || sprite_index == playerDashNude_spr))
+				
+				if (image_index > image_number - 1 && (sprite_index == playerDash_spr || sprite_index == playerDashNude_spr) && !stoppedDashing)
 				{
 					dashLastSpriteReached = true;
 				}
