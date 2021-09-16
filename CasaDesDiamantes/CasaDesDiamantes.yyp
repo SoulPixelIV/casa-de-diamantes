@@ -401,6 +401,7 @@
     {"id":{"name":"woodplankSmall2_spr","path":"sprites/woodplankSmall2_spr/woodplankSmall2_spr.yy",},"order":1,},
     {"id":{"name":"waterReflectionRed_spr","path":"sprites/waterReflectionRed_spr/waterReflectionRed_spr.yy",},"order":2,},
     {"id":{"name":"barrelTrigger_obj","path":"objects/barrelTrigger_obj/barrelTrigger_obj.yy",},"order":0,},
+    {"id":{"name":"redparticleRedSpawner_obj","path":"objects/redparticleRedSpawner_obj/redparticleRedSpawner_obj.yy",},"order":47,},
     {"id":{"name":"water_spr","path":"sprites/water_spr/water_spr.yy",},"order":3,},
     {"id":{"name":"explosionTiny_spr","path":"sprites/explosionTiny_spr/explosionTiny_spr.yy",},"order":13,},
     {"id":{"name":"minecart_spr","path":"sprites/minecart_spr/minecart_spr.yy",},"order":57,},
