@@ -255,6 +255,8 @@ if (hp < 100)
 		shieldRight.image_xscale = 0.5;
 		shieldLeft.image_yscale = 1.75;
 		shieldRight.image_yscale = 1.75;
+		//Play sound
+		audio_play_sound_on(emitter, alarm_snd, true, 1);
 	}
 	if (explosionDelay < 0 && explosionCount < 10)
 	{

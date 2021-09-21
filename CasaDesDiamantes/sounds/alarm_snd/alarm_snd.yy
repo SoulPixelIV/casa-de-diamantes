@@ -1,6 +1,6 @@
 {
   "compression": 0,
-  "volume": 0.6,
+  "volume": 0.5,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -10,14 +10,14 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "flamethrowerStart_snd",
-  "duration": 0.0,
+  "soundFile": "alarm_snd.mp3",
+  "duration": 3.351688,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
   },
   "resourceVersion": "1.0",
-  "name": "flamethrowerStart_snd",
+  "name": "alarm_snd",
   "tags": [],
   "resourceType": "GMSound",
 }

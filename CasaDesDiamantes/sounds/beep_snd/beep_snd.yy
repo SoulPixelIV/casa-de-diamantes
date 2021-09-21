@@ -1,6 +1,6 @@
 {
   "compression": 0,
-  "volume": 0.4,
+  "volume": 0.5,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -11,7 +11,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "beep_snd.mp3",
-  "duration": 0.20898,
+  "duration": 3.430063,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
