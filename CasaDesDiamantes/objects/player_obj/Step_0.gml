@@ -1299,6 +1299,15 @@ if (distance_to_object(toxicwaste_obj) < 24)
 		radiation += global.dt / 16;
 	}
 }
+
+if (radiation > 80) {
+	radiationHitTimer -= global.dt;
+	if (radiationHitTimer < 0) {
+		hp -= 1;
+		radiationHitTimer = radiationHitTimerSave;
+		camera_obj.hitVignette = true;
+	}
+}
 	
 //Audio
 audio_listener_position(x, y, 0);

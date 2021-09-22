@@ -47,6 +47,7 @@ shotZoomTimer = 8.75;
 walljumpDustTimer = 12;
 damageFlickerTimer = 17;
 
+radiationHitTimer = 35;
 sniperDamageValue = 0;
 sniperDamageValueMax = 500;
 shotgunPumpDone = false;
@@ -130,6 +131,7 @@ groundCollisionTimerSave = groundCollisionTimer;
 dashDelaySave = dashDelay;
 gravityStrengthSave = gravityStrength;
 scrollDelaySave = scrollDelay;
+radiationHitTimerSave = radiationHitTimer;
 
 //Accessories
 theta = 0;
