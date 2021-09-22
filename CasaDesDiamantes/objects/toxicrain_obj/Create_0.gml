@@ -1,2 +1,2 @@
-animationSpeed = 0.75;
-lifetime = 650;
+animationSpeed = 1;
+lifetime = 1200;

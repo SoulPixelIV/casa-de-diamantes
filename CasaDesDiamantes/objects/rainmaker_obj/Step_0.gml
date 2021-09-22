@@ -321,9 +321,7 @@ if (aggro)
 	}
 	if (attackCooldown < 0 && attackInProg2)
 	{	
-		
-		
-		attackCooldown = random_range(attackCooldownSave / 1.5, attackCooldownSave);
+		attackCooldown = attackCooldownSave * 5;
 		attackInProg1 = false;
 		attackInProg2 = false;
 		randAttack = 1;
