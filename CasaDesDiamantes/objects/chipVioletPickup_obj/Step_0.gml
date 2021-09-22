@@ -1,6 +1,12 @@
 x += horspeed * global.dt / 3;
 y += verspeed * global.dt / 3;
 
+despawnTimer -= global.dt;
+if (despawnTimer < 0)
+{
+	instance_destroy();
+}
+
 if (horspeed > 0)
 {
 	if (!place_meeting(x, y, booster_obj))

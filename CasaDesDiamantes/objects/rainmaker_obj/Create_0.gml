@@ -9,7 +9,7 @@ hitable = true;
 level = 1;
 moneyDropMin = 3;
 moneyDropMax = 7;
-attackCooldown = 800;
+attackCooldown = 1750;
 damage = 0;
 damageCollision = false;
 points = 125;
@@ -51,6 +51,7 @@ lineFlashTimer = 10;
 lineColor = c_yellow;
 animationSpeed = 1;
 headshot = false;
+toxicrain = noone;
 
 aggroTimerSave = aggroTimer;
 deaggroTimerSave = deaggroTimer;

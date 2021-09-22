@@ -281,6 +281,9 @@ if (hp < 0)
 	damageTint = false;
 	damageTintHeadshot = false;
 	attackCooldown = attackCooldownSave;
+	if (instance_exists(toxicrain)) {
+		instance_destroy(toxicrain);
+	}
 	instance_change(zombieSoldierGirlDeath1_obj, true);
 }
 
@@ -309,7 +312,7 @@ if (aggro)
 
 	if (attackCooldown < 0 && attackInProg1)
 	{
-		instance_create_layer(x, y, "Instances", poisontear_obj);	
+		toxicrain = instance_create_layer(x, y + 16, "Instances", toxicrain_obj);	
 
 		attackCooldown = random_range(attackCooldownSave / 1.5, attackCooldownSave);
 		attackInProg1 = false;
@@ -371,6 +374,12 @@ if (checkPlayerTimer < 0)
 		gravityStrength = 0;
 	}
 	checkPlayerTimer = checkPlayerTimerSave;
+}
+
+//Check for rain
+if (instance_exists(toxicrain)) {
+	toxicrain.x = x;
+	toxicrain.y = y + 16;
 }
 
 //Sound Position
