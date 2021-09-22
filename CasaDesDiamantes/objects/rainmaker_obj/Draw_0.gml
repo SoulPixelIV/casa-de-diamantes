@@ -45,5 +45,4 @@ if (player_obj != noone)
 	}
 }
 
-//Draw shield
-draw_sprite(rainmakershield_spr, -1, x, y);
+draw_sprite(radioactiveShield_spr, 0, x, y);

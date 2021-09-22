@@ -251,6 +251,7 @@
     {"id":{"name":"bluecubex16_spr","path":"sprites/bluecubex16_spr/bluecubex16_spr.yy",},"order":5,},
     {"id":{"name":"cameraViewIcon_spr","path":"sprites/cameraViewIcon_spr/cameraViewIcon_spr.yy",},"order":6,},
     {"id":{"name":"cameraViewIcon2_spr","path":"sprites/cameraViewIcon2_spr/cameraViewIcon2_spr.yy",},"order":7,},
+    {"id":{"name":"radioactiveShield_spr","path":"sprites/radioactiveShield_spr/radioactiveShield_spr.yy",},"order":8,},
     {"id":{"name":"cameraIcon_spr","path":"sprites/cameraIcon_spr/cameraIcon_spr.yy",},"order":8,},
     {"id":{"name":"blackjackHitButton_spr","path":"sprites/blackjackHitButton_spr/blackjackHitButton_spr.yy",},"order":9,},
     {"id":{"name":"fallingObjectPlayer3_obj","path":"objects/fallingObjectPlayer3_obj/fallingObjectPlayer3_obj.yy",},"order":5,},
@@ -833,6 +834,7 @@
     {"id":{"name":"smokingJacketWalkingEquipped_spr","path":"sprites/smokingJacketWalkingEquipped_spr/smokingJacketWalkingEquipped_spr.yy",},"order":3,},
     {"id":{"name":"warmJacketWalkingEquipped_spr","path":"sprites/warmJacketWalkingEquipped_spr/warmJacketWalkingEquipped_spr.yy",},"order":7,},
     {"id":{"name":"plagueDoor_obj","path":"objects/plagueDoor_obj/plagueDoor_obj.yy",},"order":3,},
+    {"id":{"name":"level2_Powerplant","path":"rooms/level2_Powerplant/level2_Powerplant.yy",},"order":2,},
     {"id":{"name":"smokingBottomWalking_spr","path":"sprites/smokingBottomWalking_spr/smokingBottomWalking_spr.yy",},"order":3,},
     {"id":{"name":"desinfectionDoor_obj","path":"objects/desinfectionDoor_obj/desinfectionDoor_obj.yy",},"order":4,},
     {"id":{"name":"spikes_obj","path":"objects/spikes_obj/spikes_obj.yy",},"order":0,},
@@ -1036,6 +1038,7 @@
   },
   "RoomOrderNodes": [
     {"roomId":{"name":"loadVars","path":"rooms/loadVars/loadVars.yy",},},
+    {"roomId":{"name":"level2_Powerplant","path":"rooms/level2_Powerplant/level2_Powerplant.yy",},},
     {"roomId":{"name":"levelSelect","path":"rooms/levelSelect/levelSelect.yy",},},
     {"roomId":{"name":"level2_SenzelaForest","path":"rooms/level2_SenzelaForest/level2_SenzelaForest.yy",},},
     {"roomId":{"name":"level1_Powerplant","path":"rooms/level1_Powerplant/level1_Powerplant.yy",},},

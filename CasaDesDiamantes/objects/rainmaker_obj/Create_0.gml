@@ -76,11 +76,3 @@ checkPlayerTimer = 50;
 checkPlayerTimerSave = checkPlayerTimer;
 checkPlayerTimer = 0;
 gravityStrength = 0;
-
-//Create shield hitboxes
-shieldLeft = instance_create_layer(x - 32, y - 20, "Instances", colliderOnlyBullet_obj);
-shieldRight = instance_create_layer(x + 32, y - 20, "Instances", colliderOnlyBullet_obj);
-shieldLeft.image_xscale = 0.25;
-shieldRight.image_xscale = 0.25;
-shieldLeft.image_yscale = 1.5;
-shieldRight.image_yscale = 1.5;

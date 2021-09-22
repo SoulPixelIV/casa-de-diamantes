@@ -1274,7 +1274,7 @@ if (deathSlowmo)
 }
 
 //Radiation
-if (distance_to_object(toxicwaste_obj) > 96)
+if (distance_to_object(toxicwaste_obj) > 96 && distance_to_object(rainmaker_obj) > 76)
 {
 	if (radiation > 1)
 	{
@@ -1285,7 +1285,7 @@ if (distance_to_object(toxicwaste_obj) > 96)
 		radiation = 0;
 	}
 }
-if (distance_to_object(toxicwaste_obj) < 96 && distance_to_object(toxicwaste_obj) > 24)
+if ((distance_to_object(toxicwaste_obj) < 96 && distance_to_object(toxicwaste_obj) > 24) || distance_to_object(rainmaker_obj) < 76)
 {
 	if (radiation < 100)
 	{
