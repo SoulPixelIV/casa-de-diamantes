@@ -1278,7 +1278,7 @@ if (distance_to_object(toxicwaste_obj) > 96 && distance_to_object(rainmaker_obj)
 {
 	if (radiation > 1)
 	{
-		radiation -= global.dt / 32;
+		radiation -= global.dt / 24;
 	}
 	else
 	{
@@ -1289,14 +1289,14 @@ if ((distance_to_object(toxicwaste_obj) < 96 && distance_to_object(toxicwaste_ob
 {
 	if (radiation < 100)
 	{
-		radiation += global.dt / 24;
+		radiation += global.dt / 16;
 	}
 }
 if (distance_to_object(toxicwaste_obj) < 24)
 {
 	if (radiation < 100)
 	{
-		radiation += global.dt / 16;
+		radiation += global.dt / 8;
 	}
 }
 
