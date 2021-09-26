@@ -13,6 +13,7 @@ moneyDropMax = 4;
 damage = 23;
 knockback = 0;
 gotSpawned = false;
+points = 1500;
 
 alarmLight = noone;
 turretRotDir = 0;

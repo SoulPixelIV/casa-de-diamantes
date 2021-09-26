@@ -237,6 +237,11 @@ if (hp < 0)
 		}
 	}
 	
+	//Set Points
+	global.multiplier = global.multiplier * 2;
+	global.multiplierTimer = global.multiplierTimerSave;
+	global.scorepoints += points * global.multiplier;
+	
 	damageTint = false;
 	damageTintHeadshot = false;
 	instance_change(zombieGirlWoundedDeath1_obj, false);

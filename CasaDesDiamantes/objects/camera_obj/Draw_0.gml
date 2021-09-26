@@ -562,7 +562,16 @@ if (!noHUD && instance_exists(player_obj))
 	if (room == infiniteSpawn) {
 		draw_text(x - xScreenSize / 3.5, y - yScreenSize / 2.5, "TIME: " + string(global.timer));
 		draw_text(x - xScreenSize / 3.5, (y - yScreenSize / 2.5) + 16, "SCORE: " + string(global.scorepoints));
-		draw_sprite(score1X_spr, 0, x + xScreenSize / 3, y - yScreenSize / 3);
+		
+		if (global.multiplier == 1) {
+			draw_sprite(score1X_spr, -1, player_obj.x + 32, player_obj.y - 32);
+		}
+		if (global.multiplier == 2) {
+			draw_sprite(score2X_spr, -1, player_obj.x + 32, player_obj.y - 32);
+		}
+		if (global.multiplier == 4) {
+			draw_sprite(score4X_spr, -1, player_obj.x + 32, player_obj.y - 32);
+		}
 	}
 }
 

@@ -128,6 +128,12 @@ if (hp <= 0)
 			instance_create_layer(x, y - 16, "Instances", chipRedPickup_obj);
 		}
 	}
+	
+	//Set Points
+	global.multiplier = global.multiplier * 2;
+	global.multiplierTimer = global.multiplierTimerSave;
+	global.scorepoints += points * global.multiplier;
+	
 	damageTint = false;
 	instance_destroy(alarmLight);
 	instance_create_layer(x, y, "Instances", explosionBig_obj);

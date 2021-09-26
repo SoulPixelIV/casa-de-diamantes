@@ -256,6 +256,12 @@ if (hp < 0)
 			instance_create_layer(x, y - 16, "Instances", chipVioletPickup_obj);
 		}
 	}
+	
+	//Set Points
+	global.multiplier = global.multiplier * 2;
+	global.multiplierTimer = global.multiplierTimerSave;
+	global.scorepoints += points * global.multiplier;
+	
 	instance_destroy();
 }
 

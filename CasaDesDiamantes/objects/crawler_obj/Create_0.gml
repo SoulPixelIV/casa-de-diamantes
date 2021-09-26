@@ -21,6 +21,7 @@ useDelayTimer = 200;
 gotSpawned = false;
 playedSound = false;
 flameSound = noone;
+points = 75;
 
 lastBullet = bulletPistol_obj;
 ammoSpawnCount = 2;

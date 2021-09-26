@@ -25,6 +25,7 @@ knockback = 0;
 playerSightMax = 128;
 playerSightMin = 8;
 gotSpawned = false;
+points = 250;
 
 lastBullet = bulletPistol_obj;
 ammoSpawnCount = 1;

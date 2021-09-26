@@ -6,7 +6,8 @@ global.syringes = 0;
 global.key = false;
 global.scorepoints = 0;
 global.multiplier = 1;
-global.multiplierTimer = 300;
+global.multiplierTimer = 700;
+global.multiplierTimerSave = global.multiplierTimer;
 global.timer = 0;
 multiplierRun = false;
 

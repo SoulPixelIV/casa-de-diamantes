@@ -56,3 +56,14 @@ if (room == infiniteSpawn)
 	global.timer += global.dt / 185;
 }
 
+//Multiplier
+if (global.multiplier > 1)
+{
+	global.multiplierTimer -= global.dt;
+}
+if (global.multiplierTimer < 0)
+{
+	global.multiplier = 1;
+	global.multiplierTimer = global.multiplierTimerSave;
+}
+
