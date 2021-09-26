@@ -557,6 +557,13 @@ if (!noHUD && instance_exists(player_obj))
 		newWeapon = false;
 	}
 	draw_set_halign(fa_left);
+	
+	//Timer + Combo for Horde Mode
+	if (room == infiniteSpawn) {
+		draw_text(x - xScreenSize / 3.5, y - yScreenSize / 2.5, "TIME: " + string(global.timer));
+		draw_text(x - xScreenSize / 3.5, (y - yScreenSize / 2.5) + 16, "SCORE: " + string(global.scorepoints));
+		draw_sprite(score1X_spr, 0, x + xScreenSize / 3, y - yScreenSize / 3);
+	}
 }
 
 //#####LAYER 2#####

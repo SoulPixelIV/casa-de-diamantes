@@ -7,6 +7,7 @@ global.key = false;
 global.scorepoints = 0;
 global.multiplier = 1;
 global.multiplierTimer = 300;
+global.timer = 0;
 multiplierRun = false;
 
 global.pistolAmmo = 0;

@@ -366,7 +366,7 @@ if (attackInProg1 && startFire)
 			body = instance_nearest(x, y, crawler_obj);
 		}
 		dmgHitbox.damage = 20;
-		dmgHitbox.image_xscale = 2;
+		dmgHitbox.image_xscale = 3;
 		dmgHitbox.image_yscale = 1.5;
 		dmgHitbox.timer = attackDelay1;
 	}

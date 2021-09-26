@@ -1,4 +1,4 @@
-/// @description Audio Pitch
+/// @description Changing Values
 
 //Audio Pitch
 audio_sound_pitch(pistolShot_snd, clamp(1 * global.timeScale, 0.5, 1.5));
@@ -49,4 +49,10 @@ audio_sound_pitch(land_snd, clamp(1 * global.timeScale, 0.5, 1.5));
 audio_sound_pitch(slide_snd, clamp(1 * global.timeScale, 0.5, 1.5));
 audio_sound_pitch(moan1_snd, clamp(1 * global.timeScale, 0.5, 1.5));
 audio_sound_pitch(moan2_snd, clamp(1 * global.timeScale, 0.5, 1.5));
+
+//Timer
+if (room == infiniteSpawn)
+{
+	global.timer += global.dt / 185;
+}
 

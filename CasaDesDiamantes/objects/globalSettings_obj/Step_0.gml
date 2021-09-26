@@ -42,6 +42,7 @@ else
 if (keyboard_check_pressed(vk_f1))
 {
 	restartInProg = true;
+	global.timer = 0;
 	part_emitter_destroy_all(global.partSystem);
 	room_restart();
 }
