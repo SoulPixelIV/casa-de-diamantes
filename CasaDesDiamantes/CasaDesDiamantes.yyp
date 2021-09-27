@@ -1043,8 +1043,8 @@
   },
   "RoomOrderNodes": [
     {"roomId":{"name":"loadVars","path":"rooms/loadVars/loadVars.yy",},},
-    {"roomId":{"name":"infiniteSpawn","path":"rooms/infiniteSpawn/infiniteSpawn.yy",},},
     {"roomId":{"name":"level2_Powerplant","path":"rooms/level2_Powerplant/level2_Powerplant.yy",},},
+    {"roomId":{"name":"infiniteSpawn","path":"rooms/infiniteSpawn/infiniteSpawn.yy",},},
     {"roomId":{"name":"levelSelect","path":"rooms/levelSelect/levelSelect.yy",},},
     {"roomId":{"name":"level2_SenzelaForest","path":"rooms/level2_SenzelaForest/level2_SenzelaForest.yy",},},
     {"roomId":{"name":"level1_Powerplant","path":"rooms/level1_Powerplant/level1_Powerplant.yy",},},
