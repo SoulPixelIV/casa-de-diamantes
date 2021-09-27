@@ -355,7 +355,9 @@ if (eyeKilled)
 	}
 	
 	//Set Points
-	global.multiplier = global.multiplier * 2;
+	if (global.multiplier < 8) {
+		global.multiplier = global.multiplier * 2;
+	}
 	global.multiplierTimer = global.multiplierTimerSave;
 	global.scorepoints += points * global.multiplier;
 	

@@ -16,6 +16,7 @@ cameraYBorder = 16;
 deathDelayTimer = 500;
 deathFadeIn = 0;
 noHUD = false;
+image_speed = 1;
 anim = 0;
 anim2 = 0;
 tutorialAnimTimer = 150;

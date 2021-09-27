@@ -580,6 +580,7 @@
     {"id":{"name":"polygon_from_instance","path":"scripts/polygon_from_instance/polygon_from_instance.yy",},"order":2,},
     {"id":{"name":"ammoPackShotgunPickup_obj","path":"objects/ammoPackShotgunPickup_obj/ammoPackShotgunPickup_obj.yy",},"order":5,},
     {"id":{"name":"hazardPlayerOnly_obj","path":"objects/hazardPlayerOnly_obj/hazardPlayerOnly_obj.yy",},"order":9,},
+    {"id":{"name":"score8X_spr","path":"sprites/score8X_spr/score8X_spr.yy",},"order":72,},
     {"id":{"name":"enemyBlockZone_obj","path":"objects/enemyBlockZone_obj/enemyBlockZone_obj.yy",},"order":57,},
     {"id":{"name":"polygon_from_path","path":"scripts/polygon_from_path/polygon_from_path.yy",},"order":3,},
     {"id":{"name":"SF2_SF3_teleporter","path":"objects/SF2_SF3_teleporter/SF2_SF3_teleporter.yy",},"order":16,},

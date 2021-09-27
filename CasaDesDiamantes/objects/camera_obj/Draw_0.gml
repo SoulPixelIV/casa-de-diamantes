@@ -572,6 +572,9 @@ if (!noHUD && instance_exists(player_obj))
 		if (global.multiplier == 4) {
 			draw_sprite(score4X_spr, -1, player_obj.x + 32, player_obj.y - 32);
 		}
+		if (global.multiplier == 8) {
+			draw_sprite(score8X_spr, -1, player_obj.x + 32, player_obj.y - 32);
+		}
 	}
 }
 
