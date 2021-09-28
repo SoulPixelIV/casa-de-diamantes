@@ -61,3 +61,10 @@ gravityStrength = 0;
 
 spawnDelay = 54;
 alarm[0] = spawnDelay;
+
+alarmLight = instance_create_layer(x, y, "GraphicsLayer", spotlightYellowSmall_obj); 
+
+with (alarmLight)
+{
+	body = instance_nearest(x, y, zombieGirlWounded_obj);
+}

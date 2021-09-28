@@ -273,6 +273,7 @@
     {"id":{"name":"spr_light_directional","path":"sprites/spr_light_directional/spr_light_directional.yy",},"order":2,},
     {"id":{"name":"spr_light_area","path":"sprites/spr_light_area/spr_light_area.yy",},"order":3,},
     {"id":{"name":"spr_light_line","path":"sprites/spr_light_line/spr_light_line.yy",},"order":4,},
+    {"id":{"name":"spotlightYellowSmall_obj","path":"objects/spotlightYellowSmall_obj/spotlightYellowSmall_obj.yy",},"order":20,},
     {"id":{"name":"RoundTo","path":"scripts/RoundTo/RoundTo.yy",},"order":22,},
     {"id":{"name":"spr_light_spot","path":"sprites/spr_light_spot/spr_light_spot.yy",},"order":5,},
     {"id":{"name":"spr_light_renderer","path":"sprites/spr_light_renderer/spr_light_renderer.yy",},"order":6,},

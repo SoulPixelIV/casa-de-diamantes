@@ -246,6 +246,7 @@ if (hp < 0)
 	
 	damageTint = false;
 	damageTintHeadshot = false;
+	instance_destroy(alarmLight);
 	instance_change(zombieGirlWoundedDeath1_obj, false);
 }
 
@@ -293,4 +294,11 @@ if (checkPlayerTimer < 0)
 		gravityStrength = 0;
 	}
 	checkPlayerTimer = checkPlayerTimerSave;
+}
+
+//Alarm Light
+with (alarmLight)
+{
+	light[| eLight.X] = body.x;
+	light[| eLight.Y] = body.y;
 }
