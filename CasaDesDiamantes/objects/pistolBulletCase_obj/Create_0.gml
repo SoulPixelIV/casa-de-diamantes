@@ -3,3 +3,6 @@ verspeed = random_range(-1.2, -1.8);
 image_angle = random_range(0, 359);
 gravityStrength = -0.065;
 destroyTimer = 620;
+soundTimer = 90;
+
+soundTimerSave = soundTimer;
