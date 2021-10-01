@@ -26,7 +26,6 @@
   "frames": [
     {"compositeImage":{"FrameId":{"name":"4bf12bc1-cbc9-4277-99e2-0764e7cac998","path":"sprites/toxicwaste_spr/toxicwaste_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"4bf12bc1-cbc9-4277-99e2-0764e7cac998","path":"sprites/toxicwaste_spr/toxicwaste_spr.yy",},"LayerId":{"name":"c9bf3915-72fc-4538-abc0-7a8f72821063","path":"sprites/toxicwaste_spr/toxicwaste_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-        {"FrameId":{"name":"4bf12bc1-cbc9-4277-99e2-0764e7cac998","path":"sprites/toxicwaste_spr/toxicwaste_spr.yy",},"LayerId":{"name":"cb02386a-d00e-4b67-99b1-3b4cc33759f7","path":"sprites/toxicwaste_spr/toxicwaste_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"toxicwaste_spr","path":"sprites/toxicwaste_spr/toxicwaste_spr.yy",},"resourceVersion":"1.0","name":"4bf12bc1-cbc9-4277-99e2-0764e7cac998","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
@@ -43,7 +42,7 @@
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"10af7144-3353-4893-8819-a9a045c656d6","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"4bf12bc1-cbc9-4277-99e2-0764e7cac998","path":"sprites/toxicwaste_spr/toxicwaste_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,

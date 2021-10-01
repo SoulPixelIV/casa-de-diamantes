@@ -417,9 +417,14 @@ if (!noHUD && instance_exists(player_obj))
 	//Radiation Meter
 	if (instance_exists(player_obj))
 	{
-		if (player_obj.radiation > 0)
+		if (player_obj.radiation > 0 && player_obj.radiation < 80)
 		{
 			draw_sprite(radiationMeter_spr, 0, (x + xScreenSize / 2) - 16, (y + yScreenSize / 2) - 9);
+			draw_sprite_ext(radiationMeterLine_spr, 0, (x + xScreenSize / 2) - 60, (y + yScreenSize / 2) - 48, 1, 1, (-player_obj.radiation * 1.5) +75, -1, 1);
+		}
+		if (player_obj.radiation > 80)
+		{
+			draw_sprite(radiationMeterAlarm_spr, -1, (x + xScreenSize / 2) - 16, (y + yScreenSize / 2) - 9);
 			draw_sprite_ext(radiationMeterLine_spr, 0, (x + xScreenSize / 2) - 60, (y + yScreenSize / 2) - 48, 1, 1, (-player_obj.radiation * 1.5) +75, -1, 1);
 		}
 	}
