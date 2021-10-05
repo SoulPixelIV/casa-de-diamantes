@@ -7,6 +7,7 @@ function fullDeath_scr() {
 	player_obj.hp = 100;
 	player_obj.maxhp = 100;
 	player_obj.deathActivated = false;
+	player_obj.radiation = 0;
 	
 	//Destroy every Enemy
 	instance_activate_object(enemy_obj);
