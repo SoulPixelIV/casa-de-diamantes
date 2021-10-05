@@ -1,6 +1,3 @@
-x += horspeed * global.dt;
-y += verspeed * global.dt;
-
 if (inMinecart)
 {
 	player_obj.movement = false;
@@ -82,25 +79,25 @@ if (verspeed < 14)
 
 //Collision
 //horspeed
-if (!place_free(x + (horspeed * global.dt), y))
+if (!place_free(x + horspeed * global.dt, y))
 {
 	if (sign(horspeed) != 0)
 	{
-		while (place_free(x + sign(horspeed) / 100, y))
+		while (place_free(x + sign(horspeed), y))
 		{
-			x += sign(horspeed) / 100;
+			x += sign(horspeed);
 		}
 		horspeed = 0;
 	}
 } 
 //verspeed
-if (!place_free(x, y + (verspeed * global.dt)))
+if (!place_free(x, y + verspeed * global.dt))
 {
 	if (sign(verspeed) != 0)
 	{
-		while (place_free(x, y + sign(verspeed) / 100))
+		while (place_free(x, y + sign(verspeed)))
 		{
-			y += sign(verspeed) / 100;
+			y += sign(verspeed);
 		}
 		verspeed = 0;
 	}
@@ -127,6 +124,7 @@ if (instance_exists(player_obj))
 		player_obj.grounded = false;
 		player_obj.movement = true;
 		player_obj.invincible = false;
+		player_obj.horspeed += horspeed;
 		player_obj.x = x;
 		player_obj.y = y - 64;
 		jump_scr();
@@ -134,3 +132,6 @@ if (instance_exists(player_obj))
 		player_obj.colliding = true;
 	}
 }
+
+x += horspeed * global.dt;
+y += verspeed * global.dt;
