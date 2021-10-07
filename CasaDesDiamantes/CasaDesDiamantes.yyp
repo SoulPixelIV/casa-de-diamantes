@@ -212,6 +212,7 @@
     {"id":{"name":"zombieBucketGirl_spr","path":"sprites/zombieBucketGirl_spr/zombieBucketGirl_spr.yy",},"order":0,},
     {"id":{"name":"SF3_SF2_teleporter","path":"objects/SF3_SF2_teleporter/SF3_SF2_teleporter.yy",},"order":17,},
     {"id":{"name":"zombieBucketGirlFlash_spr","path":"sprites/zombieBucketGirlFlash_spr/zombieBucketGirlFlash_spr.yy",},"order":1,},
+    {"id":{"name":"level3_Powerplant","path":"rooms/level3_Powerplant/level3_Powerplant.yy",},"order":3,},
     {"id":{"name":"blackjackBegin_scr","path":"scripts/blackjackBegin_scr/blackjackBegin_scr.yy",},"order":23,},
     {"id":{"name":"zombieBucketGirlBroken_spr","path":"sprites/zombieBucketGirlBroken_spr/zombieBucketGirlBroken_spr.yy",},"order":2,},
     {"id":{"name":"explosiveMerchantDead_obj","path":"objects/explosiveMerchantDead_obj/explosiveMerchantDead_obj.yy",},"order":4,},
@@ -1082,6 +1083,7 @@
     {"roomId":{"name":"testRoom3","path":"rooms/testRoom3/testRoom3.yy",},},
     {"roomId":{"name":"testRoom2","path":"rooms/testRoom2/testRoom2.yy",},},
     {"roomId":{"name":"level2_Casino","path":"rooms/level2_Casino/level2_Casino.yy",},},
+    {"roomId":{"name":"level3_Powerplant","path":"rooms/level3_Powerplant/level3_Powerplant.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":2577,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},

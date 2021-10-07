@@ -11,6 +11,8 @@ global.multiplierTimerSave = global.multiplierTimer;
 global.timer = 0;
 multiplierRun = false;
 
+global.pwlevel2UnlockedElevator = false;
+
 global.pistolAmmo = 0;
 global.pistolAmmoMax = 16;
 global.pistolCooldown = 3;

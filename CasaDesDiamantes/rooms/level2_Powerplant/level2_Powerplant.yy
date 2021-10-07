@@ -513,6 +513,7 @@
         {"properties":[],"isDnd":false,"objectId":{"name":"syringeStatic_obj","path":"objects/syringeStatic_obj/syringeStatic_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":4416.0,"y":2432.0,"resourceVersion":"1.0","name":"inst_25D25D39","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"chipVioletPickupStatic_obj","path":"objects/chipVioletPickupStatic_obj/chipVioletPickupStatic_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":4448.0,"y":2432.0,"resourceVersion":"1.0","name":"inst_19E3C9BF","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"chipVioletPickupStatic_obj","path":"objects/chipVioletPickupStatic_obj/chipVioletPickupStatic_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":4384.0,"y":2432.0,"resourceVersion":"1.0","name":"inst_33EC9977","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"Spawn2_obj","path":"objects/Spawn2_obj/Spawn2_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":960.0,"y":1504.0,"resourceVersion":"1.0","name":"inst_75FAD70D","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":900,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Instances","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"checkpoint_obj","path":"objects/checkpoint_obj/checkpoint_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":3185.0,"y":2496.0,"resourceVersion":"1.0","name":"inst_2287DF5F","tags":[],"resourceType":"GMRInstance",},
@@ -1800,6 +1801,7 @@
     {"name":"inst_29A70A81","path":"rooms/level2_Powerplant/level2_Powerplant.yy",},
     {"name":"inst_43F472C6","path":"rooms/level2_Powerplant/level2_Powerplant.yy",},
     {"name":"inst_2D1E8CD8","path":"rooms/level2_Powerplant/level2_Powerplant.yy",},
+    {"name":"inst_75FAD70D","path":"rooms/level2_Powerplant/level2_Powerplant.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
