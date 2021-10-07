@@ -18,12 +18,20 @@ if (distance_to_object(player_obj) < 32 && used)
 	draw_text(x - 32, y - 86, "Checkpoint!");
 }
 
-if (distance_to_object(player_obj) < 32)
+if (distance_to_object(player_obj) < 32 && (!used || active))
 {
 	draw_sprite(wKeyIcon_spr, 0, player_obj.x, player_obj.y - 32);
-	sprite_index = checkpointOutline_spr;
+	if (timer1Sound < 0) {
+		sprite_index = checkpointSpin_spr;
+	} else {
+		sprite_index = checkpointOutline_spr;
+	}
 }
 else
 {
-	sprite_index = checkpoint_spr;
+	if (timer1Sound < 0) {
+		sprite_index = checkpointSpin_spr;
+	} else {
+		sprite_index = checkpoint_spr;
+	}
 }

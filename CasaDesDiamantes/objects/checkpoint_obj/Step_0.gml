@@ -13,8 +13,25 @@ if (distance_to_object(player_obj) < 32)
 	player_obj.lastCheckpoint = id;
 }
 
+if (active) {
+	if (!playedSound1) {
+		audio_play_sound_on(emitter, coinslot_snd, false, 1);
+		playedSound1 = true;
+	}
+	timer1Sound -= global.dt;
+}
+
+if (timer1Sound < 0) {
+	if (!playedSound2) {
+		animationSpeed = 1;
+		audio_play_sound_on(emitter, slotmachineSpinning_snd, false, 1);
+		playedSound2 = true;
+	}
+	timer2Sound -= global.dt;
+}
+
 //Drop Reward
-if (active)
+if (active && timer2Sound < 0)
 {	
 	item = choose(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,3,3,3,3,3,3,5);
 	
@@ -78,4 +95,10 @@ if (active)
 
 	active = false;
 	used = true;
+	playedSound1 = false;
+	playedSound2 = false;
+	timer1Sound = 100;
+	timer2Sound = 450;
+	sprite_index = checkpoint_spr;
+	animationSpeed = 0.3;
 }
