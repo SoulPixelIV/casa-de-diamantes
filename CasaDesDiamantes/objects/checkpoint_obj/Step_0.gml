@@ -33,10 +33,18 @@ if (timer1Sound < 0) {
 //Drop Reward
 if (active && timer2Sound < 0)
 {	
-	item = choose(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,3,3,3,3,3,3,5);
+	item = choose(1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,3,3,3,3,3,3,5);
 	
-	if (item == 1 || item == 5)
+	if (item == 1)
 	{
+		partEmitter = part_emitter_create(global.partSystem);
+		part_emitter_region(global.partSystem, partEmitter, x - 32, x + 32, y - 64, y, ps_shape_ellipse, ps_distr_invgaussian);
+
+		part_emitter_burst(global.partSystem, partEmitter, global.ledBluePart, 50);
+
+		part_emitter_destroy(global.partSystem, partEmitter);
+
+		audio_play_sound_on(emitter, slotmachineLevel1_snd, false, 1);
 		var maxAmount = random_range(moneyDropMin, moneyDropMax);
 		for (i = 0; i < maxAmount; i++)
 		{
@@ -56,8 +64,15 @@ if (active && timer2Sound < 0)
 			}
 		}
 	}
-	if (item == 2 || item == 5)
+	if (item == 2)
 	{
+		partEmitter = part_emitter_create(global.partSystem);
+		part_emitter_region(global.partSystem, partEmitter, x - 32, x + 32, y - 64, y, ps_shape_ellipse, ps_distr_invgaussian);
+
+		part_emitter_burst(global.partSystem, partEmitter, global.ledRedPart, 85);
+
+		part_emitter_destroy(global.partSystem, partEmitter);
+		audio_play_sound_on(emitter, slotmachineLevel2_snd, false, 1);
 		var maxAmount = random_range(1, 4);
 		for (i = 0; i < maxAmount; i++)
 		{
@@ -73,8 +88,65 @@ if (active && timer2Sound < 0)
 			}
 		}
 	}
-	if (item == 3 || item == 5)
+	if (item == 3)
 	{
+		partEmitter = part_emitter_create(global.partSystem);
+		part_emitter_region(global.partSystem, partEmitter, x - 32, x + 32, y - 64, y, ps_shape_ellipse, ps_distr_invgaussian);
+
+		part_emitter_burst(global.partSystem, partEmitter, global.ledRedPart, 85);
+
+		part_emitter_destroy(global.partSystem, partEmitter);
+		audio_play_sound_on(emitter, slotmachineLevel2_snd, false, 1);
+		var maxAmount = random_range(1, 4);
+		for (i = 0; i < maxAmount; i++)
+		{
+			instance_create_layer(x, y - 64, "Instances", healthpackDrop_obj);
+		}
+	}
+	if (item == 5)
+	{
+		partEmitter = part_emitter_create(global.partSystem);
+		part_emitter_region(global.partSystem, partEmitter, x - 32, x + 32, y - 64, y, ps_shape_ellipse, ps_distr_invgaussian);
+
+		part_emitter_burst(global.partSystem, partEmitter, global.ledYellowPart, 150);
+
+		part_emitter_destroy(global.partSystem, partEmitter);
+		
+		audio_play_sound_on(emitter, slotmachineLevel3_snd, false, 1);
+		var maxAmount = random_range(moneyDropMin, moneyDropMax);
+		for (i = 0; i < maxAmount; i++)
+		{
+			chip = choose(1,1,1,1,1,2,2,2,3)
+		
+			if (chip == 1)
+			{
+				instance_create_layer(x, y - 64, "Instances", chipBluePickup_obj);
+			}
+			if (chip == 2)
+			{
+				instance_create_layer(x, y - 64, "Instances", chipRedPickup_obj);
+			}
+			if (chip == 3)
+			{
+				instance_create_layer(x, y - 64, "Instances", chipVioletPickup_obj);
+			}
+		}
+		
+		var maxAmount = random_range(1, 4);
+		for (i = 0; i < maxAmount; i++)
+		{
+			ammo = choose(1,1,1,1,1,2,2)
+		
+			if (ammo == 1)
+			{
+				instance_create_layer(x, y - 64, "Instances", ammoPackPistolDrop_obj);
+			}
+			if (ammo == 2)
+			{
+				instance_create_layer(x, y - 64, "Instances", ammoPackShotgunDrop_obj);
+			}
+		}
+		
 		var maxAmount = random_range(1, 4);
 		for (i = 0; i < maxAmount; i++)
 		{
