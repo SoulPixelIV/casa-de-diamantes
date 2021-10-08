@@ -52,15 +52,18 @@ if (active && timer2Sound < 0)
 		
 			if (chip == 1)
 			{
-				instance_create_layer(x, y - 64, "Instances", chipBluePickup_obj);
+				var chipblue = instance_create_layer(x, y - 64, "Instances", chipBluePickup_obj);
+				chipblue.verspeed += -2.5;
 			}
 			if (chip == 2)
 			{
-				instance_create_layer(x, y - 64, "Instances", chipRedPickup_obj);
+				var chipred = instance_create_layer(x, y - 64, "Instances", chipRedPickup_obj);
+				chipred.verspeed += -2.3;
 			}
 			if (chip == 3)
 			{
-				instance_create_layer(x, y - 64, "Instances", chipVioletPickup_obj);
+				var chipviolet = instance_create_layer(x, y - 64, "Instances", chipVioletPickup_obj);
+				chipviolet.verspeed += -2;
 			}
 		}
 	}
@@ -108,7 +111,7 @@ if (active && timer2Sound < 0)
 		partEmitter = part_emitter_create(global.partSystem);
 		part_emitter_region(global.partSystem, partEmitter, x - 32, x + 32, y - 64, y, ps_shape_ellipse, ps_distr_invgaussian);
 
-		part_emitter_burst(global.partSystem, partEmitter, global.ledYellowPart, 150);
+		part_emitter_burst(global.partSystem, partEmitter, global.ledYellowPart, 100);
 
 		part_emitter_destroy(global.partSystem, partEmitter);
 		
@@ -120,15 +123,18 @@ if (active && timer2Sound < 0)
 		
 			if (chip == 1)
 			{
-				instance_create_layer(x, y - 64, "Instances", chipBluePickup_obj);
+				var chipblue = instance_create_layer(x, y - 64, "Instances", chipBluePickup_obj);
+				chipblue.verspeed += -2.5;
 			}
 			if (chip == 2)
 			{
-				instance_create_layer(x, y - 64, "Instances", chipRedPickup_obj);
+				var chipred = instance_create_layer(x, y - 64, "Instances", chipRedPickup_obj);
+				chipred.verspeed += -2.3;
 			}
 			if (chip == 3)
 			{
-				instance_create_layer(x, y - 64, "Instances", chipVioletPickup_obj);
+				var chipviolet = instance_create_layer(x, y - 64, "Instances", chipVioletPickup_obj);
+				chipviolet.verspeed += -2;
 			}
 		}
 		
