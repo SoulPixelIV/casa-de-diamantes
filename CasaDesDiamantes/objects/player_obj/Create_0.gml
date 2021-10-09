@@ -106,6 +106,8 @@ scrollDelay = 20;
 startScrollDelay = false;
 
 key_up_pressed = noone;
+key_down = noone;
+key_down_pressed = noone;
 
 if (global.unlockedWeapon[0] == true || global.unlockedWeapon[1] == true || global.unlockedWeapon[2] == true)
 {
