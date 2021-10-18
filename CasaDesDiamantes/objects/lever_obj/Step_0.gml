@@ -53,6 +53,45 @@ if ((distance_to_object(player_obj) < 32 && player_obj.key_up_pressed) && !used 
 		}
 	}
 	
+	if (instance_exists(objectAccess2))
+	{
+		if (objectCount2 == 1)
+		{
+			if (!activateCamera)
+			{
+				object = instance_nearest(x, y, objectAccess2);
+				object.open = true;
+			}
+			else
+			{
+				var selfId = id;
+				with (instance_nearest(x, y, cameraTarget_obj))
+				{
+					object = instance_nearest(x, y, selfId.objectAccess2);
+					object.open = true;
+				}
+			}
+		}
+		else
+		{
+			var i;
+			object[0] = noone;
+			for (i = 0; i < objectCount2; i++)
+			{
+				object[i] = noone;
+				if (distance_to_object(instance_find(objectAccess2, i)) < objectMaxDistance2)
+				{
+					object[i] = instance_find(objectAccess2, i);
+				}
+				
+				if (object[i] != noone)
+				{
+					object[i].open = true;
+				}
+			}
+		}
+	}
+	
 	// Camera Target
 	if (activateCamera && !usedCamera)
 	{
