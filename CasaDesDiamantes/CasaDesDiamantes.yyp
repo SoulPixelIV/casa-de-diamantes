@@ -915,6 +915,7 @@
     {"id":{"name":"toxicwaste_obj","path":"objects/toxicwaste_obj/toxicwaste_obj.yy",},"order":4,},
     {"id":{"name":"testShader_obj","path":"objects/testShader_obj/testShader_obj.yy",},"order":10,},
     {"id":{"name":"obj_lighting_init","path":"objects/obj_lighting_init/obj_lighting_init.yy",},"order":0,},
+    {"id":{"name":"automaticGate_obj","path":"objects/automaticGate_obj/automaticGate_obj.yy",},"order":7,},
     {"id":{"name":"fireball_obj","path":"objects/fireball_obj/fireball_obj.yy",},"order":58,},
     {"id":{"name":"obj_light_renderer","path":"objects/obj_light_renderer/obj_light_renderer.yy",},"order":2,},
     {"id":{"name":"obj_light","path":"objects/obj_light/obj_light.yy",},"order":3,},
