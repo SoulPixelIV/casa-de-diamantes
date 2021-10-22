@@ -1230,7 +1230,7 @@ if (!deathSlowmo)
 		slowmo = false
 		global.timeScale = 1;
 	}
-	if (enemySlowmo)
+	if (enemySlowmo && !blackborderPause)
 	{
 		camera_obj.drawBlackborders = true;
 		if (!slowmoSoundPlayed)
@@ -1251,7 +1251,17 @@ if (!deathSlowmo)
 		global.timeScale = 1;
 		camera_obj.drawBlackborders = false;
 		enemySlowMotionTimer = enemySlowMotionTimerSave;
+		blackborderPause = true;
 	}
+}
+
+if (blackborderPause) {
+	blackborderPauseTimer -= global.dt;
+}
+
+if (blackborderPauseTimer < 0) {
+	blackborderPause = false;
+	blackborderPauseTimer = blackborderPauseTimerSave;
 }
 
 //Camera Settings

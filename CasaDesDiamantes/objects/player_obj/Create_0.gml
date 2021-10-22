@@ -46,6 +46,8 @@ enemySlowMotionTimer = 100;
 shotZoomTimer = 8.75;
 walljumpDustTimer = 12;
 damageFlickerTimer = 17;
+blackborderPauseTimer = 1200;
+blackborderPause = false;
 
 radiationHitTimer = 35;
 sniperDamageValue = 0;
@@ -134,6 +136,7 @@ dashDelaySave = dashDelay;
 gravityStrengthSave = gravityStrength;
 scrollDelaySave = scrollDelay;
 radiationHitTimerSave = radiationHitTimer;
+blackborderPauseTimerSave = blackborderPauseTimer;
 
 //Accessories
 theta = 0;
