@@ -299,6 +299,8 @@ if (checkPlayerTimer < 0)
 //Alarm Light
 with (alarmLight)
 {
-	light[| eLight.X] = body.x;
-	light[| eLight.Y] = body.y;
+	if (instance_exists(body)) {
+		light[| eLight.X] = body.x;
+		light[| eLight.Y] = body.y;
+	}
 }

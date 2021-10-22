@@ -338,6 +338,10 @@ else
 	}
 }
 
+//black borders
+draw_sprite(blackborder_spr, 0, x, blackbordersPos + (y - yScreenSize / 2));
+draw_sprite(blackborder_spr, 0, x, (y + yScreenSize / 2) + 42 - blackbordersPos);
+
 if (!noHUD && instance_exists(player_obj))
 {
 	draw_set_font(global.optixFont);
@@ -812,10 +816,6 @@ draw_set_alpha(blackscreenStrength);
 draw_set_color(c_black);
 draw_rectangle(x - xScreenSize, y - yScreenSize, x + xScreenSize, y + yScreenSize, false);
 draw_set_alpha(1);
-
-//black borders
-draw_sprite(blackborder_spr, 0, x, blackbordersPos + (y - yScreenSize / 2));
-draw_sprite(blackborder_spr, 0, x, (y + yScreenSize / 2) + 42 - blackbordersPos);
 
 if (instance_exists(player_obj)) {
 	if (player_obj.sniperDamageValue > 0)

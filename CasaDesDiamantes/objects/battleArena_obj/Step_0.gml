@@ -28,8 +28,10 @@ if (spawnWoundedEnemies && woundedSpawntimer < 0)
 	if (woundedCount == 0 && !done && place_meeting(x, y, player_obj))
 	{
 		randWoundedpoint = woundedpointList[irandom(woundedpointMaxNum-1)]
-		var spawnCloud = instance_create_layer(randWoundedpoint.x, randWoundedpoint.y, "Instances", spawnCloud_obj);
-		spawnCloud.spawnObject = zombieGirlWounded_obj;
+		if (instance_exists(randWoundedpoint)) {
+			var spawnCloud = instance_create_layer(randWoundedpoint.x, randWoundedpoint.y, "Instances", spawnCloud_obj);
+			spawnCloud.spawnObject = zombieGirlWounded_obj;
+		}
 	}
 	
 	woundedSpawntimer = woundedSpawntimerSave;
