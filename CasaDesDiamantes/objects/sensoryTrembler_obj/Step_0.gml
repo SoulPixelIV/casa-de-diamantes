@@ -36,8 +36,8 @@ if (!collision_line(x, y, player_obj.x, player_obj.y, collider_obj, false, true)
 }
 else
 {
-	//aggroTimer = aggroTimerSave;
-	//deaggroTimer -= global.dt;
+	aggroTimer = aggroTimerSave;
+	deaggroTimer -= global.dt;
 }
 
 //Base Rotation
