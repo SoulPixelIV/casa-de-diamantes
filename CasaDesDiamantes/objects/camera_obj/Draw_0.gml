@@ -682,6 +682,7 @@ if (drawInfectionText)
 
 if (deathDelayTimer < 0)
 {
+	deathInProg = true;
 	if (!finalDeath)
 	{
 		if (deathFadeIn < 0.95)

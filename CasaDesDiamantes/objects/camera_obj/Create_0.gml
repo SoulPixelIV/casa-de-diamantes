@@ -26,6 +26,7 @@ reloadFailed = false;
 finalDeath = false;
 finalDeathScreenTimer = 350;
 pauseDeathTimer = 200;
+deathInProg = false;
 respawnSetScreenBrightness = false;
 cameraTarget = false;
 cameraTargetTimer = 500;

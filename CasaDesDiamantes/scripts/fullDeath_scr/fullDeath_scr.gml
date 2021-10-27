@@ -95,4 +95,5 @@ function fullDeath_scr() {
 	camera_obj.infOverlayX = camera_obj.xScreenSize;
 	camera_obj.infOverlayY = 0;
 	camera_obj.infOverlayLocked = false;
+	camera_obj.deathInProg = false;
 }
