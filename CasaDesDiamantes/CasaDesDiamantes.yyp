@@ -86,6 +86,7 @@
     {"id":{"name":"lensDirt1_spr","path":"sprites/lensDirt1_spr/lensDirt1_spr.yy",},"order":3,},
     {"id":{"name":"tutorialADKeyPromt_obj","path":"objects/tutorialADKeyPromt_obj/tutorialADKeyPromt_obj.yy",},"order":49,},
     {"id":{"name":"gothicPixel_fnt","path":"fonts/gothicPixel_fnt/gothicPixel_fnt.yy",},"order":4,},
+    {"id":{"name":"keyAPrompt_spr","path":"sprites/keyAPrompt_spr/keyAPrompt_spr.yy",},"order":74,},
     {"id":{"name":"lensDirt2_spr","path":"sprites/lensDirt2_spr/lensDirt2_spr.yy",},"order":4,},
     {"id":{"name":"lensDirt3_spr","path":"sprites/lensDirt3_spr/lensDirt3_spr.yy",},"order":5,},
     {"id":{"name":"blackjackStartButton_spr","path":"sprites/blackjackStartButton_spr/blackjackStartButton_spr.yy",},"order":18,},

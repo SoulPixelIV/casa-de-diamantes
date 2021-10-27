@@ -1232,6 +1232,7 @@ if (!deathSlowmo)
 	}
 	if (enemySlowmo && !blackborderPause)
 	{
+		camera_obj.follow = camFollowTarget;
 		camera_obj.drawBlackborders = true;
 		if (!slowmoSoundPlayed)
 		{

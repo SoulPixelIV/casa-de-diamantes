@@ -48,6 +48,7 @@ walljumpDustTimer = 12;
 damageFlickerTimer = 17;
 blackborderPauseTimer = 1200;
 blackborderPause = false;
+camFollowTarget = noone;
 
 radiationHitTimer = 35;
 sniperDamageValue = 0;

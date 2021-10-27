@@ -281,7 +281,7 @@ if (eyeKilled)
 	if (randNum == 9)
 	{
 		player_obj.enemySlowmo = true;
-		camera_obj.follow = deathCross;
+		player_obj.camFollowTarget = deathCross;
 	}
 	
 	//Remove shields
