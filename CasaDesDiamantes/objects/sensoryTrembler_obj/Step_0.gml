@@ -23,7 +23,7 @@ else
 }
 
 //Sight Check
-if (!collision_line(x, y, player_obj.x, player_obj.y, collider_obj, false, true) && !collision_line(x, y, player_obj.x, player_obj.y, enemyVisionBlockZone_obj, false, true))
+if (!collision_line(x, y - 86, player_obj.x, player_obj.y, collider_obj, false, true) && !collision_line(x, y, player_obj.x, player_obj.y, enemyVisionBlockZone_obj, false, true))
 {
 	if (collision_line(x, y, player_obj.x, player_obj.y, player_obj, false, true))
 	{
@@ -248,13 +248,6 @@ if (hp < 100)
 			body = instance_nearest(x, y, sensoryTrembler_obj);
 		}*/
 		
-		//Create shield hitboxes
-		shieldLeft = instance_create_layer(x - 48, y - 128, "Instances", colliderOnlyBullet_obj);
-		shieldRight = instance_create_layer(x + 48, y - 128, "Instances", colliderOnlyBullet_obj);
-		shieldLeft.image_xscale = 0.5;
-		shieldRight.image_xscale = 0.5;
-		shieldLeft.image_yscale = 1.75;
-		shieldRight.image_yscale = 1.75;
 		//Play sound
 		audio_play_sound_on(emitter, alarm_snd, true, 1);
 	}
@@ -282,16 +275,6 @@ if (eyeKilled)
 	{
 		player_obj.enemySlowmo = true;
 		player_obj.camFollowTarget = deathCross;
-	}
-	
-	//Remove shields
-	if (instance_exists(shieldLeft))
-	{
-		instance_destroy(shieldLeft);
-	}
-	if (instance_exists(shieldRight))
-	{
-		instance_destroy(shieldRight);
 	}
 	
 	//Drop Item
@@ -604,13 +587,4 @@ if (instance_exists(alarmLight))
 		light[| eLight.Y] = body.y;
 		light[| eLight.ShadowLength] = 100;
 	}
-}
-
-//Shield position
-if (instance_exists(shieldLeft) && instance_exists(shieldRight))
-{
-	shieldLeft.x = x - 48;
-	shieldLeft.y = y - 128;
-	shieldRight.x = x + 48;
-	shieldRight.y = y - 128;
 }
