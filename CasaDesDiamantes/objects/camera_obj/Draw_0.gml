@@ -533,6 +533,10 @@ if (!noHUD && instance_exists(player_obj))
 		{
 			draw_text(x, y + (yScreenSize / 3), "Sniper Rifle");
 		}
+		if (global.currentWeapon == gameManager_obj.pickedWeapon.bow)
+		{
+			draw_text(x, y + (yScreenSize / 3), "Golden Arrow");
+		}
 	}
 	else
 	{

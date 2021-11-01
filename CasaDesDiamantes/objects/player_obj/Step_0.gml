@@ -868,6 +868,52 @@ if (!isZombie && !deathActivated)
 			}
 		}
 	}
+	
+	//Bow
+	with (gameManager_obj)
+	{
+		if (global.currentWeapon == pickedWeapon.bow && global.bowCooldown <= 0)
+		{
+			with (player_obj)
+			{
+				startShotCooldown = false;
+				if (key_shoot_hold && !reloading && movement)
+				{
+					if (!onLadder || onLadder && verspeed == 0)
+					{
+						slowmo = true;
+						/*
+						if (!audio_is_playing(bowShotLoad_snd))
+						{
+							var bowLoad = audio_play_sound(bowShotLoad_snd, 1, false);
+							audio_sound_pitch(bowLoad, 0.5 + (bowDamageValue / 100) / 5);
+						}
+						*/
+						if (bowDamageValue < bowDamageValueMax)
+						{
+							bowDamageValue += global.dt * 4;
+						}
+						else
+						{
+							shooting_scr("bow");
+							slowmo = false;
+							//audio_stop_sound(bowShotLoad_snd);
+							break;
+						}
+					}
+				}
+				if (key_shoot_release)
+				{
+					if (bowDamageValue > 1)
+					{
+						shooting_scr("bow");
+						//audio_stop_sound(bowShotLoad_snd);
+						slowmo = false;
+					}
+				}
+			}
+		}
+	}
 }
 
 //ShotZoom
@@ -953,6 +999,10 @@ if (!isZombie && !reloading)
 		{
 			pickWeapon_scr(3);
 		}
+		if (keyboard_check_pressed(ord("4")) && global.unlockedWeapon[3])
+		{
+			pickWeapon_scr(4);
+		}
 		
 		if (global.unlockedWeapon[1])
 		{
@@ -965,6 +1015,10 @@ if (!isZombie && !reloading)
 		if (global.unlockedWeapon[3])
 		{
 			scrollWeapons[2] = 1;
+		}
+		if (global.unlockedWeapon[4])
+		{
+			scrollWeapons[3] = 1;
 		}
 		
 		if (!startScrollDelay)

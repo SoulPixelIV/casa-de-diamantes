@@ -183,6 +183,46 @@ function shooting_scr(argument0) {
 		shotZoom = true;
 		player_obj.startShotCooldown = true;
 	}
+	
+	if (argument0 == "bow")
+	{
+		//var pistolShot = audio_play_sound(bowShot_snd, 1, false);
+		//audio_sound_pitch(pistolShot, 2 - ((player_obj.bowDamageValue / 100) / 5));
+		
+		var shotLightx = x + lengthdir_x(24, dirCursor);
+		var shotLighty = y - 8 + lengthdir_y(24, dirCursor);
+		instance_create_layer(playerBulletLine_obj.x, playerBulletLine_obj.y, "Instances", bulletbow_obj);
+		instance_create_layer(shotLightx, shotLighty, "ForegroundObjects", shotLightShotgun_obj);
+		instance_create_layer(shotLightx, shotLighty, "ForegroundObjects", smokecloud_obj);
+		screenshake(50, 12, 0.6, id);
+		
+		if (!huggingWall)
+		{
+			if (dirCursor > 0 && dirCursor < 90)
+			{
+				horspeed -= shotJumpStrength / 2.5;
+				verspeed -= shotJumpStrength / 2.5;
+			}
+			if (dirCursor < 180 && dirCursor > 90)
+			{
+				horspeed += shotJumpStrength / 2.5;
+				verspeed -= shotJumpStrength / 2.5;
+			}
+			if (dirCursor > 180 && dirCursor < 270)
+			{
+				horspeed += shotJumpStrength / 2.5;
+				verspeed -= shotJumpStrength / 2.5;
+			}
+			if (dirCursor < 360 && dirCursor > 270)
+			{
+				horspeed -= shotJumpStrength / 2.5;
+				verspeed -= shotJumpStrength / 2.5;
+			}
+		}
+		global.bowCooldown = global.bowCooldownSave;
+		shotZoom = true;
+		player_obj.startShotCooldown = true;
+	}
 
 
 }

@@ -23,6 +23,10 @@ function pickWeapon_scr(argument0) {
 			global.currentWeapon = gameManager_obj.pickedWeapon.sniper;
 			global.unlockedWeapon[3] = true;
 			break;
+		case 4:
+			global.currentWeapon = gameManager_obj.pickedWeapon.bow;
+			global.unlockedWeapon[4] = true;
+			break;
 	}
 	player_obj.unarmed = false;
 	player_obj.slowmo = false;

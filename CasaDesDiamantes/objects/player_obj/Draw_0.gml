@@ -5,6 +5,7 @@ pistolSprite = playerPistol_spr;
 dualBarettasSprite = playerDualBarettas_spr;
 shotgunSprite = playerShotgun_spr;
 sniperSprite = playerSniper_spr;
+bowSprite = playerBow_spr;
 
 //Draw Accessories
 originX = player_obj.x;
@@ -314,6 +315,13 @@ if (!isZombie && !deathActivated)
 			draw_sprite_ext(drawSpriteArm, 0, x + ((-4 + spinWeaponPos) * currDir) * changePos, y - 4, 1, -currDir, dirCursor, -1, image_alpha);
 		}
 		
+		//BOW
+		if (global.currentWeapon == gameManager_obj.pickedWeapon.bow)
+		{
+			//First arm
+			draw_sprite_ext(drawSpriteArm, 0, x + ((-4 + spinWeaponPos) * currDir) * changePos, y - 4, 1, -currDir, dirCursor, -1, image_alpha);
+		}
+		
 		//Draw Steph
 		if (!flip)
 		{
@@ -379,6 +387,14 @@ if (!isZombie && !deathActivated)
 		if (global.currentWeapon == gameManager_obj.pickedWeapon.sniper)
 		{
 			draw_sprite_ext(playerSniper_spr, -1, x + ((2 - spinWeaponPos) * currDir) * changePos, y - 4, 1, -currDir, dirCursor, -1, image_alpha);
+		}
+		
+		//BOW
+		if (global.currentWeapon == gameManager_obj.pickedWeapon.bow)
+		{
+			//Second arm
+			draw_sprite_ext(playerBow_spr, -1, x + ((2 - spinWeaponPos) * currDir) * changePos, y - 4, 1, -currDir, dirCursor, -1, image_alpha);
+			draw_sprite_ext(bombArrow_spr, -1, x + ((2 - spinWeaponPos) * currDir) * changePos, y - 4, 1, -currDir, dirCursor, -1, image_alpha);
 		}
 		
 		//MAIN ARM
