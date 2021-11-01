@@ -872,16 +872,18 @@ if (!isZombie && !deathActivated)
 	//Bow
 	with (gameManager_obj)
 	{
-		if (global.currentWeapon == pickedWeapon.bow && global.bowCooldown <= 0)
+		if (global.currentWeapon == pickedWeapon.bow)
 		{
 			with (player_obj)
 			{
-				startShotCooldown = false;
 				if (key_shoot_hold && !reloading && movement)
 				{
 					if (!onLadder || onLadder && verspeed == 0)
 					{
-						slowmo = true;
+						bowReadying = true;
+						if (bowReadyingImage < 4) { //playerbowReadying image number
+							bowReadyingImage += global.dt / 40;
+						}
 						/*
 						if (!audio_is_playing(bowShotLoad_snd))
 						{
@@ -889,26 +891,16 @@ if (!isZombie && !deathActivated)
 							audio_sound_pitch(bowLoad, 0.5 + (bowDamageValue / 100) / 5);
 						}
 						*/
-						if (bowDamageValue < bowDamageValueMax)
-						{
-							bowDamageValue += global.dt * 4;
-						}
-						else
-						{
-							shooting_scr("bow");
-							slowmo = false;
-							//audio_stop_sound(bowShotLoad_snd);
-							break;
-						}
 					}
 				}
 				if (key_shoot_release)
 				{
-					if (bowDamageValue > 1)
+					if (bowReadyingImage > 0)
 					{
 						shooting_scr("bow");
 						//audio_stop_sound(bowShotLoad_snd);
-						slowmo = false;
+						bowReadying = false;
+						bowReadyingImage = 0;
 					}
 				}
 			}

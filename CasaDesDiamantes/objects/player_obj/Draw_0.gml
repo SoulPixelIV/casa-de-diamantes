@@ -392,9 +392,15 @@ if (!isZombie && !deathActivated)
 		//BOW
 		if (global.currentWeapon == gameManager_obj.pickedWeapon.bow)
 		{
+			draw_text(player_obj.x + 100, player_obj.y + 50, string(bowReadyingImage));
 			//Second arm
-			draw_sprite_ext(playerBow_spr, -1, x + ((2 - spinWeaponPos) * currDir) * changePos, y - 4, 1, -currDir, dirCursor, -1, image_alpha);
-			draw_sprite_ext(bombArrow_spr, -1, x + ((2 - spinWeaponPos) * currDir) * changePos, y - 4, 1, -currDir, dirCursor, -1, image_alpha);
+			if (!bowReadying) {
+				draw_sprite_ext(playerBow_spr, -1, x + ((2 - spinWeaponPos) * currDir) * changePos, y - 4, 1, -currDir, dirCursor, -1, image_alpha);
+				draw_sprite_ext(bombArrow_spr, -1, x + ((2 - spinWeaponPos) * currDir) * changePos, y - 4, 1, -currDir, dirCursor, -1, image_alpha);
+			} else {
+				draw_sprite_ext(playerBowReady_spr, bowReadyingImage, x + ((2 - spinWeaponPos) * currDir) * changePos, y - 4, 1, -currDir, dirCursor, -1, image_alpha);
+				draw_sprite_ext(bombArrow_spr, -1, (x + ((2 - spinWeaponPos) * currDir) * changePos) + ((bowReadyingImage * 1.5) * currDir), y - 4, 1, -currDir, dirCursor, -1, image_alpha);
+			}
 		}
 		
 		//MAIN ARM
