@@ -1,14 +1,18 @@
-timer = 800;
+timer = 400;
 horspeed = 0;
 verspeed = 0;
 gravityStrength = -0.12;
-damage = 25 * player_obj.bowReadyingImage;
+damage = 5 * player_obj.bowReadyingImage;
 image_speed = 1;
 playedSound = false;
-penetration = 2;
+playedSound2 = false;
+penetration = 3;
 penetrationTime = 3;
-deleteTimer = 2250;
 invincibilityTimer = 5;
+stuckInEnemy = false;
+nearestEnemy = noone;
+distXToEnemy = 0;
+distYToEnemy = 0;
 
 dealtDamage = false;
 createdFire = false;

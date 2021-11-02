@@ -111,6 +111,7 @@ setMovAfterScreen = false;
 selWeapon = 0;
 scrollDelay = 20;
 startScrollDelay = false;
+playedSoundBowReadying = false;
 
 key_up_pressed = noone;
 key_down = noone;

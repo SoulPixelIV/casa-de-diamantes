@@ -872,7 +872,7 @@ if (!isZombie && !deathActivated)
 	//Bow
 	with (gameManager_obj)
 	{
-		if (global.currentWeapon == pickedWeapon.bow)
+		if (global.currentWeapon == pickedWeapon.bow && global.bowCooldown <= 0)
 		{
 			with (player_obj)
 			{
@@ -882,15 +882,13 @@ if (!isZombie && !deathActivated)
 					{
 						bowReadying = true;
 						if (bowReadyingImage < 4) { //playerbowReadying image number
-							bowReadyingImage += global.dt / 40;
+							bowReadyingImage += global.dt / 20;
 						}
-						/*
-						if (!audio_is_playing(bowShotLoad_snd))
+						if (!audio_is_playing(bowReadying_snd) && !playedSoundBowReadying)
 						{
-							var bowLoad = audio_play_sound(bowShotLoad_snd, 1, false);
-							audio_sound_pitch(bowLoad, 0.5 + (bowDamageValue / 100) / 5);
+							audio_play_sound(bowReadying_snd, 1, false);
+							playedSoundBowReadying = true;
 						}
-						*/
 					}
 				}
 				if (key_shoot_release)
@@ -898,9 +896,12 @@ if (!isZombie && !deathActivated)
 					if (bowReadyingImage > 0)
 					{
 						shooting_scr("bow");
-						//audio_stop_sound(bowShotLoad_snd);
+						audio_stop_sound(bowReadying_snd);
+						audio_play_sound(bowShot_snd, 1, false);
+						audio_play_sound(arrowShotWind_snd, 0.9, false);
 						bowReadying = false;
 						bowReadyingImage = 0;
+						playedSoundBowReadying = false;
 					}
 				}
 			}
@@ -950,6 +951,10 @@ if (startShotCooldown)
 		{
 			global.sniperCooldown -= 0.1 * global.dt;
 		}
+		if (global.currentWeapon == pickedWeapon.bow)
+		{
+			global.bowCooldown -= 0.1 * global.dt;
+		}
 	}	
 }
 with (gameManager_obj)
@@ -967,6 +972,10 @@ with (gameManager_obj)
 		player_obj.startShotCooldown = true;
 	}	
 	if (global.currentWeapon == pickedWeapon.sniper && global.sniperCooldown > 0)
+	{
+		player_obj.startShotCooldown = true;
+	}
+	if (global.currentWeapon == pickedWeapon.bow && global.bowCooldown > 0)
 	{
 		player_obj.startShotCooldown = true;
 	}
