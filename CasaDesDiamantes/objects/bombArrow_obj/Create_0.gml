@@ -1,9 +1,10 @@
-timer = 400;
+timer = 200;
 horspeed = 0;
 verspeed = 0;
 gravityStrength = -0.12;
 damage = 5 * player_obj.bowReadyingImage;
-image_speed = 1;
+image_speed = 0;
+image_index = 0;
 playedSound = false;
 playedSound2 = false;
 penetration = 3;
@@ -13,11 +14,12 @@ stuckInEnemy = false;
 nearestEnemy = noone;
 distXToEnemy = 0;
 distYToEnemy = 0;
+alarmDelayTimer = 80;
 
 dealtDamage = false;
 createdFire = false;
 
-image_angle = player_obj.currDir;
+image_angle = player_obj.dirCursor;
 
 //Create Emitter
 emitter = audio_emitter_create();

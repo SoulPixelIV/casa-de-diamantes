@@ -70,10 +70,6 @@ if (!stuckInEnemy) {
 
 	timer -= global.dt;
 
-	if (timer < 200)
-	{
-		image_speed = 2;
-	}
 	if (timer < 0)
 	{
 		instance_change(explosion_obj, true);
@@ -92,24 +88,27 @@ if (!stuckInEnemy) {
 }
 
 if (stuckInEnemy) {
+	horspeed = 0;
+	verspeed = 0;
 	if (instance_exists(nearestEnemy)) {
 		x = distXToEnemy + nearestEnemy.x;
 		y = distYToEnemy + nearestEnemy.y;
 	}
 	
-	timer -= global.dt;
-
-	if (timer < 200)
-	{
-		image_speed = 2;
+	alarmDelayTimer -= global.dt;
+	
+	if (alarmDelayTimer < 0) {
+		timer -= global.dt;
+		image_speed = global.dt / 10;
 	}
+
 	if (timer < 0)
 	{
 		instance_change(explosionBigOnlyEnemy_obj, true);
 	}
 
 	//Play sound
-	if (timer < 200)
+	if (timer < 100)
 	{
 		if (!playedSound)
 		{
