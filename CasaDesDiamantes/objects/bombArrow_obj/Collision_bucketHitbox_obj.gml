@@ -11,5 +11,7 @@ if (!dealtDamage)
 	}
 	dealtDamage = true;
 	audio_play_sound(bucketHit_snd, 1, false);
-	instance_destroy();
+	penetration--;
+	horspeed = horspeed / 1.5;
+	verspeed = verspeed / 1.5;
 }

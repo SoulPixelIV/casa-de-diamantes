@@ -99,12 +99,12 @@ if (stuckInEnemy) {
 	
 	if (alarmDelayTimer < 0) {
 		timer -= global.dt;
-		image_speed = global.dt / 10;
+		image_speed = 1;
 	}
 
 	if (timer < 0)
 	{
-		instance_change(explosionBigOnlyEnemy_obj, true);
+		instance_change(explosionTinyOnlyEnemy_obj, true);
 	}
 
 	//Play sound

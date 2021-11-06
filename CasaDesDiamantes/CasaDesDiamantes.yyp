@@ -648,6 +648,7 @@
     {"id":{"name":"lighting_free","path":"scripts/lighting_free/lighting_free.yy",},"order":4,},
     {"id":{"name":"lasergateOff_spr","path":"sprites/lasergateOff_spr/lasergateOff_spr.yy",},"order":101,},
     {"id":{"name":"lighting_set_dirty","path":"scripts/lighting_set_dirty/lighting_set_dirty.yy",},"order":5,},
+    {"id":{"name":"explosionTinyOnlyEnemy_obj","path":"objects/explosionTinyOnlyEnemy_obj/explosionTinyOnlyEnemy_obj.yy",},"order":12,},
     {"id":{"name":"PW0_PW1_teleporter","path":"objects/PW0_PW1_teleporter/PW0_PW1_teleporter.yy",},"order":20,},
     {"id":{"name":"composite_shadow_map","path":"scripts/composite_shadow_map/composite_shadow_map.yy",},"order":6,},
     {"id":{"name":"chipVioletSideStack_obj","path":"objects/chipVioletSideStack_obj/chipVioletSideStack_obj.yy",},"order":38,},
