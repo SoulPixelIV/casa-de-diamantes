@@ -837,6 +837,7 @@
     {"id":{"name":"warmJacketWalking_spr","path":"sprites/warmJacketWalking_spr/warmJacketWalking_spr.yy",},"order":8,},
     {"id":{"name":"chipRedPickupStatic_obj","path":"objects/chipRedPickupStatic_obj/chipRedPickupStatic_obj.yy",},"order":11,},
     {"id":{"name":"smokingBottomClimbing_spr","path":"sprites/smokingBottomClimbing_spr/smokingBottomClimbing_spr.yy",},"order":6,},
+    {"id":{"name":"bombArrowReadying_spr","path":"sprites/bombArrowReadying_spr/bombArrowReadying_spr.yy",},"order":30,},
     {"id":{"name":"sniper_obj","path":"objects/sniper_obj/sniper_obj.yy",},"order":2,},
     {"id":{"name":"zombieGirlTorso_spr","path":"sprites/zombieGirlTorso_spr/zombieGirlTorso_spr.yy",},"order":2,},
     {"id":{"name":"chipVioletPickupStatic_obj","path":"objects/chipVioletPickupStatic_obj/chipVioletPickupStatic_obj.yy",},"order":12,},

@@ -1,4 +1,4 @@
-timer = 200;
+timer = 100;
 horspeed = 0;
 verspeed = 0;
 gravityStrength = -0.12;

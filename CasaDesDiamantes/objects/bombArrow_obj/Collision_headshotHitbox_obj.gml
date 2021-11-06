@@ -22,9 +22,9 @@ if (hitbox != noone)
 		audio_play_sound(bulletHitHeadshot_snd, 1, false);
 		penetration--;
 		dealtDamage = true;
-		damage = damage / 1.5;
-		horspeed = horspeed / 1.25;
-		verspeed = verspeed / 1.25;
+		damage = damage / 1.1;
+		horspeed = horspeed / 1.1;
+		verspeed = verspeed / 1.1;
 	
 		if ((horspeed < 4 && horspeed > -4) && (verspeed < 4 && verspeed > -4)) {
 			penetration = 0;

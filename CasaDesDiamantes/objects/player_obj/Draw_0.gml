@@ -399,7 +399,7 @@ if (!isZombie && !deathActivated)
 				draw_sprite_ext(bombArrow_spr, 0, x + ((2 - spinWeaponPos) * currDir) * changePos, y - 4, 1, -currDir, dirCursor, -1, image_alpha);
 			} else {
 				draw_sprite_ext(playerBowReady_spr, bowReadyingImage, x + ((2 - spinWeaponPos) * currDir) * changePos, y - 4, 1, -currDir, dirCursor, -1, image_alpha);
-				draw_sprite_ext(bombArrow_spr, 0, (x + ((2 - spinWeaponPos) * currDir) * changePos) + ((bowReadyingImage * 1.5) * currDir), y - 4, 1, -currDir, dirCursor, -1, image_alpha);
+				draw_sprite_ext(bombArrowReadying_spr, bowReadyingImage, (x + ((2 - spinWeaponPos) * currDir) * changePos), y - 4, 1, -currDir, dirCursor, -1, image_alpha);
 			}
 		}
 		
