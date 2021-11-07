@@ -45,6 +45,8 @@ lastCheckpoint = noone;
 enemySlowMotionTimer = 100;
 shotZoomTimer = 8.75;
 walljumpDustTimer = 12;
+dashDustTimer = 18;
+dashDustEndTimer = 75;
 damageFlickerTimer = 17;
 blackborderPauseTimer = 1200;
 blackborderPause = false;
@@ -129,6 +131,8 @@ else
 //Help Vars
 damageFlickerTimerSave = damageFlickerTimer;
 walljumpDustTimerSave = walljumpDustTimer;
+dashDustTimerSave = dashDustTimer;
+dashDustEndTimerSave = dashDustEndTimer;
 damageCooldownSave = damageCooldown;
 fallJumpSafetySave = fallJumpSafety;
 zombieTimerSave = zombieTimer;

@@ -40,4 +40,17 @@ if (elevatorTimer < 0 && used) {
 		global.spawn = 1;
 		room_goto(level2_Powerplant);
 	}
+	if (elevatorNumber == 2) {
+		part_emitter_destroy_all(global.partSystem);
+		instance_destroy(player_obj);
+		global.spawn = 2;
+		global.pwlevel3UnlockedElevator = true;
+		room_goto(level1_Powerplant);
+	}
+	if (elevatorNumber == 3 && global.pwlevel3UnlockedElevator) {
+		part_emitter_destroy_all(global.partSystem);
+		instance_destroy(player_obj);
+		global.spawn = 1;
+		room_goto(level3_Powerplant);
+	}
 }

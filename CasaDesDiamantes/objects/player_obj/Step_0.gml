@@ -184,8 +184,19 @@ if (instance_exists(minecartForeground_obj))
 	}
 }
 
+//Create dust particles while dashing
+if (isDashing && dashDustEndTimer > 0) {
+	dashDustTimer -= global.dt;
+	dashDustEndTimer -= global.dt;
+	if (dashDustTimer < 0)
+	{
+		instance_create_layer(player_obj.x - 28 * sign(horspeed), player_obj.y, "ForegroundObjects", dustParticle_obj);
+		dashDustTimer = dashDustTimerSave;
+	}
+}
+
 if (isDashing && !onLadder)
-{
+{	
 	with (gameManager_obj)
 	{
 		if (global.currentWeapon == pickedWeapon.unarmed)

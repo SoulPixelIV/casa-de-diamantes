@@ -15,24 +15,26 @@ if (!gotSpawned)
 }
 
 //Sight Check
-if (!collision_line(x, y, player_obj.x, player_obj.y, collider_obj, false, true) && !collision_line(x, y, player_obj.x, player_obj.y, enemyVisionBlockZone_obj, false, true))
-{
-	if (collision_line(x, y, player_obj.x, player_obj.y, player_obj, false, true))
+if (instance_exists(player_obj)) {
+	if (!collision_line(x, y, player_obj.x, player_obj.y, collider_obj, false, true) && !collision_line(x, y, player_obj.x, player_obj.y, enemyVisionBlockZone_obj, false, true))
 	{
-		if (distance_to_point(player_obj.x, player_obj.y) < aggroRange)
+		if (collision_line(x, y, player_obj.x, player_obj.y, player_obj, false, true))
 		{
-			if ((image_xscale == 1 && player_obj.x >= x) || (image_xscale == -1 && player_obj.x <= x))
+			if (distance_to_point(player_obj.x, player_obj.y) < aggroRange)
 			{
-				deaggroTimer = deaggroTimerSave;
-				aggroTimer -= global.dt;
+				if ((image_xscale == 1 && player_obj.x >= x) || (image_xscale == -1 && player_obj.x <= x))
+				{
+					deaggroTimer = deaggroTimerSave;
+					aggroTimer -= global.dt;
+				}
 			}
 		}
 	}
-}
-else
-{
-	aggroTimer = aggroTimerSave;
-	deaggroTimer -= global.dt;
+	else
+	{
+		aggroTimer = aggroTimerSave;
+		deaggroTimer -= global.dt;
+	}
 }
 
 if (deaggroTimer < 0)
