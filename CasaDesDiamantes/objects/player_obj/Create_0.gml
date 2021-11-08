@@ -34,7 +34,7 @@ onMovingPlatform = false;
 onBooster = false;
 
 //Action
-hp = 10;
+hp = 100;
 hpOld = hp;
 zombieTimer = 1550;
 slowmoTimer = 260;
