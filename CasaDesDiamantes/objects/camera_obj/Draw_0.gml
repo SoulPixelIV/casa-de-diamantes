@@ -360,6 +360,7 @@ if (!noHUD && instance_exists(player_obj))
 	//Healthbar
 	if (player_obj.plagueTransformation)
 	{
+		draw_sprite_ext(healthbarLensflare_spr, -1, (x - xScreenSize / 2) + 22, (y - yScreenSize / 2) + 130, 1, 1, 0, c_purple, 1);
 		draw_sprite_ext(healthbarBorderInfection_spr, -1, (x - xScreenSize / 2) + 16, (y - yScreenSize / 2) + 9, 1, 1, 0, -1, 1);
 	}
 	else if (player_obj.hp == 100)
@@ -372,6 +373,7 @@ if (!noHUD && instance_exists(player_obj))
 	}
 	else
 	{
+		draw_sprite_ext(healthbarLensflare_spr, -1, (x - xScreenSize / 2) + 22, (y - yScreenSize / 2) + 130, 1, 1, 0, -1, 1);
 		draw_sprite_ext(healthbarBorderLow_spr, -1, (x - xScreenSize / 2) + 16, (y - yScreenSize / 2) + 9, 1, 1, 0, -1, 1);
 	}
 	if (!player_obj.damageRecieved && healthbarDone)
