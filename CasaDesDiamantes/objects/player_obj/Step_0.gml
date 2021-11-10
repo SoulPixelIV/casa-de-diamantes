@@ -142,11 +142,21 @@ if (movement && !isZombie)
 		if (horspeed > 0.3 || horspeed < -0.3)
 		{
 		    dash_scr();
+			dashInvincibilityOn = true;
 		}
 	}
 	if (dashDelay >= 0 && wallJumps == wallJumpsMax)
 	{
 		dashDelay -= global.dt;
+	}
+	if (dashInvincibilityOn) {
+		invincible = true;
+		dashInvincibility -= global.dt;
+	}
+	if (dashInvincibility < 0) {
+		invincible = false;
+		dashInvincibility = dashInvincibilitySave;
+		dashInvincibilityOn = false;
 	}
 	
 	//Cancel Dash
@@ -402,7 +412,9 @@ if (!movement)
 }
 else
 {
-	invincible = false;
+	if (!dashInvincibilityOn) {
+		invincible = false;
+	}
 }
 
 //Create Dust Particles
@@ -1406,6 +1418,9 @@ else
 		audio_stop_sound(slide_snd);
 	}
 }
+
+//Hit Cooldown while invincible
+invincibleHitCooldown -= global.dt;
 
 //Lock Movement when no window focus
 if (!window_has_focus())
