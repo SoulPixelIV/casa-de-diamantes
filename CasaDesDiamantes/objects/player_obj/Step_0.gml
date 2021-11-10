@@ -1327,8 +1327,10 @@ if (blackborderPause) {
 }
 
 if (blackborderPauseTimer < 0) {
-	blackborderPause = false;
-	blackborderPauseTimer = blackborderPauseTimerSave;
+	if (!enemySlowmo) {
+		blackborderPause = false;
+		blackborderPauseTimer = blackborderPauseTimerSave;
+	}
 }
 
 //Camera Settings
