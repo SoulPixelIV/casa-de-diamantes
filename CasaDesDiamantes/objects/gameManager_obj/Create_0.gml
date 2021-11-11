@@ -63,7 +63,7 @@ global.armlist = ["Smoking Jacket Arms", "Warm Jacket Arms", "Nothing"];
 
 global.hatName = [beret_spr, noone];
 global.top1Name = [smokingTop_spr, noone];
-global.top2Name = [smokingJacketEquipped_spr, warmJacketEquipped_spr, noone];
+global.top2Name = [smokingJacket_spr, warmJacket_spr, noone];
 global.bottomName = [smokingBottom_spr, noone];
 global.shoesName = [noone];
 global.armName = [smokingJacketArm_spr, warmJacketArm_spr, noone];

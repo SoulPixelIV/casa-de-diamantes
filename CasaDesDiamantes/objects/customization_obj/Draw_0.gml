@@ -5,10 +5,10 @@ draw_text(256, optionsY[0], "Head: " + string(global.hatlist[currSelectionHat]))
 draw_text(256, optionsY[1], "Top1: " + string(global.top1list[currSelectionTop1]));
 draw_text(256, optionsY[2], "Top2: " + string(global.top2list[currSelectionTop2]));
 draw_text(256, optionsY[3], "Legs: " + string(global.bottomlist[currSelectionBottom]));
-draw_text(256, optionsY[4], "Arms: " + string(global.armlist[currSelectionArm]));
+draw_text(256, optionsY[4], "DONE");
 
 draw_set_halign(fa_center);
 draw_text(240, 32, "-Choose your Style-");
 
 //Draw cursor
-draw_sprite(chipRed_spr, 0, 192, optionsY[cursorPos] + 4);
+draw_sprite(chipRed_spr, 0, 224, optionsY[cursorPos] + 4);

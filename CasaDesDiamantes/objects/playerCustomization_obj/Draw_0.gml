@@ -239,7 +239,3 @@ if (drawSpriteTop2 != noone)
 {
 	draw_sprite_ext(drawSpriteTop2, -1, x, y, image_xscale, image_yscale, playerRotation, -1, image_alpha);
 }
-if (drawSpriteArm != noone)
-{
-	draw_sprite_ext(drawSpriteArm, 0, x  + ((2 - spinWeaponPos) * currDir) * changePos, y - 4, image_xscale, image_yscale, 270, -1, image_alpha);
-}

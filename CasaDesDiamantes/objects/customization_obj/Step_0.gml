@@ -53,13 +53,6 @@ if (keyboard_check_pressed(vk_right))
 				currSelectionBottom = 0;
 			}
 		break;
-		case 4:
-			if (currSelectionArm < array_length(global.armlist) - 1) {
-				currSelectionArm ++;
-			} else {
-				currSelectionArm = 0;
-			}
-		break;
 	}
 }
 
@@ -95,12 +88,30 @@ if (keyboard_check_pressed(vk_left))
 				currSelectionBottom = array_length(global.bottomlist) - 1;
 			}
 		break;
-		case 4:
-			if (currSelectionArm > 0) {
-				currSelectionArm --;
-			} else {
-				currSelectionArm = array_length(global.armlist) - 1;
-			}
-		break;
+	}
+}
+
+if (keyboard_check_pressed(vk_enter)) {
+	if (cursorPos == 4) {
+		//Set Clothes
+		global.hat = global.hatName[currSelectionHat];
+		global.top1 = global.top1Name[currSelectionTop1];
+		
+		switch (currSelectionTop2)
+		{
+			case 0:
+				global.top2 = smokingJacketEquipped_spr;
+			break;
+			case 1:
+				global.top2 = warmJacketEquipped_spr;
+			break;
+			case 2:
+				global.top2 = noone;
+			break;
+		}
+		
+		global.bottom = global.bottomName[currSelectionBottom];
+		global.arm = global.armName[currSelectionTop2];
+		room_goto_next()
 	}
 }
