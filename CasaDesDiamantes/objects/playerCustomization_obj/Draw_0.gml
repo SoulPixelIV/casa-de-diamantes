@@ -239,3 +239,10 @@ if (drawSpriteTop2 != noone)
 {
 	draw_sprite_ext(drawSpriteTop2, -1, x, y, image_xscale, image_yscale, playerRotation, -1, image_alpha);
 }
+
+//Change to Nude
+if (drawSpriteTop1 != noone) {
+	sprite_index = playerNude_spr;
+} else {
+	sprite_index = player_spr;
+}

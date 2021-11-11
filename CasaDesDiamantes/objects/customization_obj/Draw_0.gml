@@ -12,3 +12,6 @@ draw_text(240, 32, "-Choose your Style-");
 
 //Draw cursor
 draw_sprite(chipRed_spr, 0, 224, optionsY[cursorPos] + 4);
+
+//Draw gold border
+draw_sprite(guiBorder_spr, 0, 0, 0);
