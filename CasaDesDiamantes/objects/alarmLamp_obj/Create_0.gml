@@ -1,0 +1,1 @@
+lightRot = 0;
