@@ -2,16 +2,6 @@
 image_speed = 0;
 image_index += global.dt / 15 * animationSpeed;
 
-if (!gotSpawned)
-{
-	spawn = instance_create_layer(x, y, "Instances", enemyHiddenSpawnpoint_obj);
-	spawn.hp = hp;
-	spawn.aggroRange = aggroRange;
-	spawn.spawnID = chaingunTurret_obj;
-	spawn.dir = image_xscale;
-	gotSpawned = true;
-}
-
 if (aimDelay > 160)
 {
 	if (instance_exists(player_obj) && distance_to_object(player_obj) < aggroRange)

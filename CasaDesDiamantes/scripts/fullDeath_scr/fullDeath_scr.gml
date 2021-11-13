@@ -13,7 +13,14 @@ function fullDeath_scr() {
 	instance_activate_object(enemy_obj);
 	with (enemy_obj)
 	{
-		instance_destroy();
+		if (variable_instance_exists(id, "dontRespawn")) {
+			if (!dontRespawn) {
+				instance_destroy();
+			}
+		}
+		else {
+			instance_destroy();
+		}
 	}
 
 	//Reset Enemies
