@@ -243,7 +243,7 @@ draw_sprite_ext(lensDirt2_spr, 0, randParticle2X3 + partMovement + (x - xScreenS
 draw_sprite_ext(lensDirt2_spr, 0, randParticle2X4 + partMovement + (x - xScreenSize / 2), randParticle2Y4 + partMovement / 2 + (y - yScreenSize / 2), 1, 1, 0, -1, 0.135);
 	
 //Vignette Effect
-if (!hitVignette)
+if (!hitVignette && !visualalarmlight)
 {
 	if (deathVignette)
 	{
@@ -270,7 +270,7 @@ if (!hitVignette)
 }
 
 if (instance_exists(player_obj)) {
-	if (hitVignette || player_obj.hp < 20)
+	if ((hitVignette || player_obj.hp < 20) && !visualalarmlight)
 	{
 		if (vignetteAlpha > 0.4)
 		{
@@ -281,6 +281,22 @@ if (instance_exists(player_obj)) {
 			vignetteAlpha += 0.02;
 		}
 		hitVignetteTimer -= global.dt;
+	}
+	
+	if (visualalarmlight) {
+		if (visualalarmlightDir == 0) {
+			vignetteAlpha += 0.001;
+		}
+		if (visualalarmlightDir == 1) {
+			vignetteAlpha -= 0.001;
+		}
+		
+		if (vignetteAlpha > 0.5) {
+			visualalarmlightDir = 1;
+		}
+		if (vignetteAlpha < 0) {
+			visualalarmlightDir = 0;
+		}
 	}
 }
 

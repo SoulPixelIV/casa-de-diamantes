@@ -7,10 +7,10 @@
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 35,
-  "bbox_right": 119,
-  "bbox_top": 14,
-  "bbox_bottom": 174,
+  "bbox_left": 70,
+  "bbox_right": 84,
+  "bbox_top": 87,
+  "bbox_bottom": 101,
   "HTile": false,
   "VTile": false,
   "For3D": false,
@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"c672a824-952e-4369-b456-f50dc6eaa18f","path":"sprites/alarmLight_spr/alarmLight_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"c672a824-952e-4369-b456-f50dc6eaa18f","path":"sprites/alarmLight_spr/alarmLight_spr.yy",},"LayerId":{"name":"5533df84-d489-457d-a7bc-d919ab8b1026","path":"sprites/alarmLight_spr/alarmLight_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"alarmLight_spr","path":"sprites/alarmLight_spr/alarmLight_spr.yy",},"resourceVersion":"1.0","name":"c672a824-952e-4369-b456-f50dc6eaa18f","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"c672a824-952e-4369-b456-f50dc6eaa18f","path":"sprites/alarmLampOff_spr/alarmLampOff_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"c672a824-952e-4369-b456-f50dc6eaa18f","path":"sprites/alarmLampOff_spr/alarmLampOff_spr.yy",},"LayerId":{"name":"de3f6731-ec52-471a-bd40-4a8da07fb763","path":"sprites/alarmLampOff_spr/alarmLampOff_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"alarmLampOff_spr","path":"sprites/alarmLampOff_spr/alarmLampOff_spr.yy",},"resourceVersion":"1.0","name":"c672a824-952e-4369-b456-f50dc6eaa18f","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"alarmLight_spr","path":"sprites/alarmLight_spr/alarmLight_spr.yy",},
+    "spriteId": {"name":"alarmLampOff_spr","path":"sprites/alarmLampOff_spr/alarmLampOff_spr.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 15.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"faf7c85d-5094-4cb5-be7b-ff5b580ca7bd","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"c672a824-952e-4369-b456-f50dc6eaa18f","path":"sprites/alarmLight_spr/alarmLight_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"a17d8f56-b7ce-4ee7-9812-07fedf9016e4","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"c672a824-952e-4369-b456-f50dc6eaa18f","path":"sprites/alarmLampOff_spr/alarmLampOff_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -58,14 +58,14 @@
     "yorigin": 95,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"alarmLight_spr","path":"sprites/alarmLight_spr/alarmLight_spr.yy",},
+    "parent": {"name":"alarmLampOff_spr","path":"sprites/alarmLampOff_spr/alarmLampOff_spr.yy",},
     "resourceVersion": "1.3",
-    "name": "alarmLight_spr",
+    "name": "alarmLampOff_spr",
     "tags": [],
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"Layer 1","resourceVersion":"1.0","name":"5533df84-d489-457d-a7bc-d919ab8b1026","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"de3f6731-ec52-471a-bd40-4a8da07fb763","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
@@ -73,7 +73,7 @@
     "path": "folders/Sprites/Decoration.yy",
   },
   "resourceVersion": "1.0",
-  "name": "alarmLight_spr",
+  "name": "alarmLampOff_spr",
   "tags": [],
   "resourceType": "GMSprite",
 }
