@@ -1,12 +1,20 @@
 /// @description Open Door
 if (instance_exists(player_obj))
 {
-	if (player_obj.y < y - 32) {
+	if (player_obj.y < y - 64) {
 		open = true;
 	}
 	
 	if (open)
 	{
+		if (!turnOffLights) {
+			camera_obj.visualalarmlight = false;
+			with (alarmLamp_obj) {
+				open = false;
+			}
+		}
+		turnOffLights = true;
+		
 		if (moveDirection == 0)
 		{
 			if (x > goalX1)

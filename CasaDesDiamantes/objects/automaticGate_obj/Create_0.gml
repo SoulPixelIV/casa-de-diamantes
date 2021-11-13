@@ -6,3 +6,5 @@ goalY2 = y + 176;
 
 originX = x;
 originY = y;
+
+turnOffLights = false;
