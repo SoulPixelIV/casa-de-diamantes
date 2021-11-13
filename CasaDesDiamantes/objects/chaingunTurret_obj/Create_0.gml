@@ -10,6 +10,9 @@ colliding = false;
 hitable = true;
 knockback = 0;
 damageCollision = false;
+aggroRange = 0;
+dir = 1;
+gotSpawned = false;
 
 setTarget = false;
 damageTint = false;

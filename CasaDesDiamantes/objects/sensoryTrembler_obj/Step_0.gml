@@ -334,7 +334,7 @@ if (eyeKilled)
 	var maxAmount = random_range(moneyDropMin, moneyDropMax);
 	for (i = 0; i < maxAmount; i++)
 	{
-		chip = choose(1,1,1,1,2)
+		chip = choose(1,1,1,1,2,2,2,2,2,2,3,3,3,3)
 		
 		if (chip == 1)
 		{
@@ -343,6 +343,10 @@ if (eyeKilled)
 		if (chip == 2)
 		{
 			instance_create_layer(x, y - 16, "Instances", chipRedPickup_obj);
+		}
+		if (chip == 3)
+		{
+			instance_create_layer(x, y - 16, "Instances", chipVioletPickup_obj);
 		}
 	}
 	
