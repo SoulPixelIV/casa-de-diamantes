@@ -61,7 +61,7 @@ function fullDeath_scr() {
 	}
 	
 	//Remove chips
-	with (chips_obj)
+	with (chipBluePickup_obj && chipRedPickup_obj && chipVioletPickup_obj)
 	{
 		instance_destroy();
 	}
