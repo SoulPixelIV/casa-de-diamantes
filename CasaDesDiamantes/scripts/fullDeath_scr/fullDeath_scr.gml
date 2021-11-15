@@ -37,6 +37,31 @@ function fullDeath_scr() {
 		instance_destroy();
 	}
 	
+	//Reset toxic water and effects
+	camera_obj.visualalarmlight = false;
+	if (instance_exists(toxicWater_obj)) {
+		with (toxicWater_obj) {
+			open = false;
+			x = startX;
+			y = startY;
+		}
+	}
+	if (instance_exists(alarmLamp_obj)) {
+		with (alarmLamp_obj) {
+			open = false;
+		}
+	}
+	if (instance_exists(automaticGate_obj)) {
+		open = false;
+	}
+	
+	//Reset levers
+	if (instance_exists(lever_obj)) {
+		with (lever_obj) {
+			used = false;
+		}
+	}
+	
 	with (pickupHiddenSpawnpoint_obj)
 	{
 		createPickup = true;

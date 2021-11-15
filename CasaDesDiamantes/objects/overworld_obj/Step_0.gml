@@ -32,7 +32,7 @@ if (keyboard_check_pressed(vk_enter))
 			room_goto(level_Casino);
 		break;
 		case 2:
-			room_goto(level0_SenzelaForest);
+			room_goto(level1_SenzelaForest);
 		break;
 		case 3:
 			room_goto(level0_Powerplant);
