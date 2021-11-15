@@ -65,6 +65,7 @@ aggro = false;
 aggroTimer = 130;
 deaggroTimer = 2000;
 exclamationmarkTimer = 250;
+alarmSnd = noone;
 
 //Help Vars
 aggroTimerSave = aggroTimer;

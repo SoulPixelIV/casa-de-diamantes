@@ -258,7 +258,7 @@ if (hp < 100)
 		}*/
 		
 		//Play sound
-		audio_play_sound_on(emitter, alarm_snd, true, 1);
+		alarmSnd = audio_play_sound_on(emitter, alarm_snd, true, 1);
 	}
 	if (explosionDelay < 0 && explosionCount < 10)
 	{
