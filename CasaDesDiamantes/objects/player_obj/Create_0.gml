@@ -40,7 +40,7 @@ hp = 100;
 hpOld = hp;
 zombieTimer = 1550;
 slowmoTimer = 260;
-damageCooldown = 400;
+damageCooldown = 200;
 lastCheckpoint = noone;
 
 //Effects
