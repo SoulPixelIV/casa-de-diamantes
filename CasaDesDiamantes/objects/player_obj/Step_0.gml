@@ -1250,6 +1250,11 @@ if (hp <= 0 || infection > hp)
 	{
 		camera_obj.finalDeath = true;
 	}
+	if (instance_exists(toxicWater_obj)) {
+		if (place_meeting(x, y, toxicWater_obj)) {
+			camera_obj.finalDeath = true;
+		}
+	}
 	//Death
 	if (!deathActivated)
 	{
