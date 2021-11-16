@@ -1313,18 +1313,23 @@ if (!deathSlowmo)
 		slowmo = false
 		global.timeScale = 1;
 	}
-	if (enemySlowmo && !blackborderPause)
-	{
-		camera_obj.follow = camFollowTarget;
-		camera_obj.drawBlackborders = true;
-		if (!slowmoSoundPlayed)
-		{
-			audio_play_sound(slowmoStart_snd, 1, false);
-			slowmoSoundPlayed = true;
+	with (camera_obj) {
+		if (distance_to_object(player_obj.camFollowTarget) < 512) { //Chech if target too far away
+			if (player_obj.enemySlowmo && !player_obj.blackborderPause) {
+				follow = player_obj.camFollowTarget;
+				drawBlackborders = true;
+				if (!player_obj.slowmoSoundPlayed) {
+					with (player_obj) {
+						audio_play_sound(slowmoStart_snd, 1, false);
+						slowmoSoundPlayed = true;
+					}
+				}
+				global.timeScale = 0.2;
+				player_obj.enemySlowMotionTimer -= global.dt;
+			}
 		}
-		global.timeScale = 0.2;
-		enemySlowMotionTimer -= global.dt;
 	}
+
 	if (enemySlowMotionTimer < 0)
 	{	
 		audio_play_sound(slowmoEnd_snd, 1, false);
