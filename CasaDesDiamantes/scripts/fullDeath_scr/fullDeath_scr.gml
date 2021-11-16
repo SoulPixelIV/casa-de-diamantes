@@ -55,6 +55,17 @@ function fullDeath_scr() {
 		open = false;
 	}
 	
+	//Reset some gates
+	instance_activate_object(gates_obj);
+	with (gates_obj)
+	{
+		if (variable_instance_exists(id, "resetAfterDeath")) {
+			if (resetAfterDeath) {
+				open = false;
+			}
+		}
+	}
+	
 	//Reset levers
 	if (instance_exists(lever_obj)) {
 		with (lever_obj) {

@@ -713,6 +713,7 @@
     {"id":{"name":"explosive_obj","path":"objects/explosive_obj/explosive_obj.yy",},"order":5,},
     {"id":{"name":"destructible_obj","path":"objects/destructible_obj/destructible_obj.yy",},"order":6,},
     {"id":{"name":"bullet_obj","path":"objects/bullet_obj/bullet_obj.yy",},"order":4,},
+    {"id":{"name":"gates_obj","path":"objects/gates_obj/gates_obj.yy",},"order":16,},
     {"id":{"name":"ledStripe3_obj","path":"objects/ledStripe3_obj/ledStripe3_obj.yy",},"order":4,},
     {"id":{"name":"elevatorOpening_spr","path":"sprites/elevatorOpening_spr/elevatorOpening_spr.yy",},"order":133,},
     {"id":{"name":"caveEntrance_spr","path":"sprites/caveEntrance_spr/caveEntrance_spr.yy",},"order":105,},

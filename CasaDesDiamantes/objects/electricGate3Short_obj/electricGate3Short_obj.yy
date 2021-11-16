@@ -7,7 +7,10 @@
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "gates_obj",
+    "path": "objects/gates_obj/gates_obj.yy",
+  },
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
