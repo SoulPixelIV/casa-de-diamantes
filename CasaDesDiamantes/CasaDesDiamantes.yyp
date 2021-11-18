@@ -1090,10 +1090,10 @@
   },
   "RoomOrderNodes": [
     {"roomId":{"name":"loadVars","path":"rooms/loadVars/loadVars.yy",},},
+    {"roomId":{"name":"level1_Powerplant","path":"rooms/level1_Powerplant/level1_Powerplant.yy",},},
     {"roomId":{"name":"level3_Powerplant","path":"rooms/level3_Powerplant/level3_Powerplant.yy",},},
     {"roomId":{"name":"charCustomization","path":"rooms/charCustomization/charCustomization.yy",},},
     {"roomId":{"name":"level0_Powerplant","path":"rooms/level0_Powerplant/level0_Powerplant.yy",},},
-    {"roomId":{"name":"level1_Powerplant","path":"rooms/level1_Powerplant/level1_Powerplant.yy",},},
     {"roomId":{"name":"level2_Powerplant","path":"rooms/level2_Powerplant/level2_Powerplant.yy",},},
     {"roomId":{"name":"level1_SenzelaForest","path":"rooms/level1_SenzelaForest/level1_SenzelaForest.yy",},},
     {"roomId":{"name":"level3_SenzelaForest","path":"rooms/level3_SenzelaForest/level3_SenzelaForest.yy",},},
