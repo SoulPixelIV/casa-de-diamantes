@@ -297,7 +297,7 @@ if (movement && !isZombie)
 		if (wallJumps > 0)
 		{
 			wallJumping = true;
-			verspeed = -jumpStrength / 1.05;
+			verspeed = -jumpStrength;
 		
 			if (image_xscale == 1 && key_right)
 			{
