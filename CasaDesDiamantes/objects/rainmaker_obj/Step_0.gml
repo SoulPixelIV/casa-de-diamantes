@@ -68,7 +68,7 @@ if (movement)
 			verspeed = -movSpeed;
 		}
 		//Fly down to player
-		if (x < player_obj.x + 128 && x > player_obj.x - 128) {
+		if (x < player_obj.x + aggroRange && x > player_obj.x - aggroRange) {
 			if (y < player_obj.y - 132) {
 				verspeed = movSpeed;
 			}
