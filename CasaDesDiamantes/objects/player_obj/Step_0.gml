@@ -144,6 +144,11 @@ if (movement && !isZombie)
 		    dash_scr();
 			dashInvincibilityOn = true;
 		}
+		if (horspeed == 0)
+		{
+			dashNoMomentum_scr();
+			dashInvincibilityOn = true;
+		}
 	}
 	if (dashDelay >= 0 && wallJumps == wallJumpsMax)
 	{
