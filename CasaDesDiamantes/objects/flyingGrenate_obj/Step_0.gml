@@ -26,12 +26,12 @@ else
 //horspeed
 if (!place_free(x + horspeed, y))
 {
-    horspeed = 0;
+    horspeed = -horspeed;
 } 
 //verspeed
 if (!place_free(x, y + verspeed))
 {
-    verspeed = 0;   
+    verspeed = -verspeed;   
 }
 
 timer -= global.dt;
