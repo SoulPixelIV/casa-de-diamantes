@@ -4,7 +4,9 @@ if (inMinecart)
 	player_obj.invincible = true;
 	player_obj.colliding = false;
 	
-	camera_obj.follow = self;
+	if (!camera_obj.follow = camera_obj) {
+		camera_obj.follow = self;
+	}
 	
 	player_obj.x = x;
 	player_obj.y = y - 30;
