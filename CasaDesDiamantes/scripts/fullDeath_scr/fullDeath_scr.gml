@@ -22,6 +22,17 @@ function fullDeath_scr() {
 			instance_destroy();
 		}
 	}
+	instance_activate_object(zombieGirlWounded_obj);
+	with (zombieGirlWounded_obj) {
+		if (variable_instance_exists(id, "dontRespawn")) {
+			if (!dontRespawn) {
+				instance_destroy();
+			}
+		}
+		else {
+			instance_destroy();
+		}
+	}
 
 	//Reset Enemies
 	instance_activate_object(enemyHiddenSpawnpoint_obj);
