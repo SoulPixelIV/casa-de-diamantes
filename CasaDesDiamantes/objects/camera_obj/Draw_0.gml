@@ -451,19 +451,25 @@ if (!noHUD && instance_exists(player_obj))
 		}
 	}
 	
+	//Chipbar Digit Calculation
 	convMoney = string(global.money);
 	slots = [0,0,0,0,0,0,0];
-	for (i = 0; i < 6; i++)
-	{
-		if (string_char_at(convMoney, i+1) == "")
-		{
-			slots[i] = 0;
-		}
-		else
-		{
-			slots[i] = int64(string_char_at(convMoney, i+1));
-		}
+	
+	convMoneyLen = string_length(convMoney); //3000 = 4
+	var normIndex = 1;
+	
+	//Fill all digits with Zeros first
+	for (i = 0; i < 7; i++) {
+		slots[i] = 0;
 	}
+	
+	//Fill last digits with money count
+	for (i = array_length(slots) - convMoneyLen; i < 7; i++) {
+		slots[i] = int64(string_char_at(convMoney, normIndex));
+		normIndex ++; //Index starting at 0 for convMoney reading
+	}
+	
+	draw_text(player_obj.x + 200, player_obj.y, string(global.money));
 
 	if (scoreSpin)
 	{
