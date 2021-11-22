@@ -468,8 +468,6 @@ if (!noHUD && instance_exists(player_obj))
 		slots[i] = int64(string_char_at(convMoney, normIndex));
 		normIndex ++; //Index starting at 0 for convMoney reading
 	}
-	
-	draw_text(player_obj.x + 200, player_obj.y, string(global.money));
 
 	if (scoreSpin)
 	{

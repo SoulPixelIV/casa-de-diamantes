@@ -180,3 +180,4 @@ instance_create_layer(x + 1, y - 4, "Instances", playerBulletLine_obj);
 global.spawn = 0;
 
 gravityStrength = 0;
+dashDelay = 0;
