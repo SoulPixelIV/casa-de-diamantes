@@ -4,3 +4,6 @@ speedVer = 0.05;
 dir = 0;
 movTimer = 200;
 movTimerSave = movTimer;
+
+spawnDelay = 156;
+alarm[0] = spawnDelay;
