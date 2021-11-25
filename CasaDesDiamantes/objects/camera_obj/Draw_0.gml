@@ -433,6 +433,15 @@ if (!noHUD && instance_exists(player_obj))
 		draw_sprite_ext(syringe_spr, -1, 32 + x - xScreenSize / 2, ((y - yScreenSize / 2) + 70) + 16 * i, 1, 1, -1, -1, 1);
 	}
 	
+	//Diamond Key
+	if (global.hasWarpzoneKey) {
+		if (global.syringes == 0) {
+			draw_sprite_ext(diamond_spr, -1, 32 + x - xScreenSize / 2, (y - yScreenSize / 2) + 64, 1, 1, -1, -1, 1);
+		} else {
+			draw_sprite_ext(diamond_spr, -1, 54 + x - xScreenSize / 2, (y - yScreenSize / 2) + 64, 1, 1, -1, -1, 1);
+		}
+	}
+	
 	//Chipbar
 	draw_sprite_ext(scoreBorder_spr, -1, x + (xScreenSize / 2) - 16, 9 + y - (yScreenSize / 2), 1, 1, 0, -1, 1);
 	

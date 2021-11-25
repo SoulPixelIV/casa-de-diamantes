@@ -84,7 +84,7 @@
     "eventStubScript": null,
     "parent": {"name":"syringe_spr","path":"sprites/syringe_spr/syringe_spr.yy",},
     "resourceVersion": "1.3",
-    "name": "",
+    "name": "syringe_spr",
     "tags": [],
     "resourceType": "GMSequence",
   },
