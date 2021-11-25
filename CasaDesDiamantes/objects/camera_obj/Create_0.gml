@@ -1,16 +1,14 @@
 xScreenSize = global.xScreenSize;
 yScreenSize = global.yScreenSize;
 zoom = 2;
-xWindowSize = xScreenSize * zoom;
-yWindowSize = yScreenSize * zoom;
 xScreenSizeNew = x;
 yScreenSizeNew = y;
 snapCameraX = false;
 snapCameraY = false;
-minCameraXBorder = xScreenSize / 2 + 32;
-maxCameraXBorder = (room_width - xScreenSize / 2) - 32;
-minCameraYBorder = yScreenSize / 2 + 32;
-maxCameraYBorder = (room_height - yScreenSize / 2) - 32;
+minCameraXBorder = global.xScreenSize / 2 + 32;
+maxCameraXBorder = (room_width - global.xScreenSize / 2) - 32;
+minCameraYBorder = global.yScreenSize / 2 + 32;
+maxCameraYBorder = (room_height - global.yScreenSize / 2) - 32;
 cameraSpeed = 1;
 cameraYBorder = 16;
 deathDelayTimer = 500;
@@ -33,7 +31,7 @@ respawnSetScreenBrightness = false;
 cameraTarget = false;
 cameraTargetTimer = 500;
 showWindowMenu = false;
-windowMenuOffset = yScreenSize;
+windowMenuOffset = global.yScreenSize;
 windowType = 0;
 healthbarShrinking = 0;
 healthbarShrinkStart = false;
@@ -107,10 +105,12 @@ checkCullingAreaTimer = 1;
 camera = camera_create();
 
 var vm = matrix_build_lookat(x,y,-10,x,y,0,0,1,0);
-var pm = matrix_build_projection_ortho(xScreenSize, yScreenSize,1,10000);
+var pm = matrix_build_projection_ortho(global.xScreenSize, global.yScreenSize,1,10000);
 
 camera_set_view_mat(camera, vm);
 camera_set_proj_mat(camera, pm);
+
+camera_set_update_script(camera, updateCamera_scr);
 
 view_camera[0] = camera;
 
@@ -227,7 +227,7 @@ showedInf = false;
 InfOverlayTimer = 450;
 InfOverlayTimerSave = InfOverlayTimer;
 infOverlayLocked = false;
-infOverlayX = xScreenSize;
+infOverlayX = global.xScreenSize;
 infOverlayY = 0;
 
 //Particles
@@ -239,14 +239,14 @@ randParticleX3 = random_range(-12, 48);
 randParticleY3 = random_range(-12, 48);
 randParticleX4 = random_range(-12, 48);
 randParticleY4 = random_range(-12, 48);
-randParticle2X = random_range(xScreenSize + 12, xScreenSize - 48);
-randParticle2Y = random_range(yScreenSize + 12, yScreenSize - 48);
-randParticle2X2 = random_range(xScreenSize + 12, xScreenSize - 48);
-randParticle2Y2 = random_range(yScreenSize + 12, yScreenSize - 48);
-randParticle2X3 = random_range(xScreenSize + 12, xScreenSize - 48);
-randParticle2Y3 = random_range(yScreenSize + 12, yScreenSize - 48);
-randParticle2X4 = random_range(xScreenSize + 12, xScreenSize - 48);
-randParticle2Y4 = random_range(yScreenSize + 12, yScreenSize - 48);
+randParticle2X = random_range(global.xScreenSize + 12, global.xScreenSize - 48);
+randParticle2Y = random_range(global.yScreenSize + 12, global.yScreenSize - 48);
+randParticle2X2 = random_range(global.xScreenSize + 12, global.xScreenSize - 48);
+randParticle2Y2 = random_range(global.yScreenSize + 12, global.yScreenSize - 48);
+randParticle2X3 = random_range(global.xScreenSize + 12, global.xScreenSize - 48);
+randParticle2Y3 = random_range(global.yScreenSize + 12, global.yScreenSize - 48);
+randParticle2X4 = random_range(global.xScreenSize + 12, global.xScreenSize - 48);
+randParticle2Y4 = random_range(global.yScreenSize + 12, global.yScreenSize - 48);
 
 //Score
 scoreSpin = false;
