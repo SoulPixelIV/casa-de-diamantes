@@ -117,6 +117,7 @@ selWeapon = 0;
 scrollDelay = 20;
 startScrollDelay = false;
 playedSoundBowReadying = false;
+laserAimImage = 0;
 
 key_up_pressed = noone;
 key_down = noone;

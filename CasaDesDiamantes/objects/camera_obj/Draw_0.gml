@@ -859,11 +859,14 @@ if (instance_exists(player_obj)) {
 		draw_sprite_ext(blackborder_spr, 0, x, 42 + (y - yScreenSize / 2), 1, 1, 0, -1, (player_obj.sniperDamageValue / 100) / 5);
 		draw_sprite_ext(blackborder_spr, 0, x, y + yScreenSize / 2, 1, 1, 0, -1, (player_obj.sniperDamageValue / 100) / 5);
 	}
+}
 
-	//Cursor
-	//Crosshair Setup
-	if (player_obj.inputMethod == 0)
-	{
-		draw_sprite(cursor_spr, 0, mouse_x, mouse_y);
-	}
+//Cursor
+//Crosshair Setup
+if (player_obj.inputMethod == 0)
+{
+	draw_text(player_obj.x + 100, player_obj.y, string((window_mouse_get_y() / ((window_get_height()+1) / global.yScreenSize))));
+	draw_sprite(cursor_spr, 0, 
+	(window_mouse_get_x() / ((window_get_width()+1) / global.xScreenSize)) + (x - global.xScreenSize / 2), 
+	window_mouse_get_y() / ((window_get_height()+1) / global.yScreenSize) + (y - global.yScreenSize / 2));
 }

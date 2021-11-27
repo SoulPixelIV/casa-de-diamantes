@@ -307,6 +307,13 @@ if (!isZombie && !deathActivated)
 	}
 	else
 	{
+		//Laser Animation
+		if (laserAimImage < 6) {
+			laserAimImage += global.dt / 20;
+		} else {
+			laserAimImage = 0;
+		}
+		
 		//DUAL BARETTAS
 		if (global.currentWeapon == gameManager_obj.pickedWeapon.dualBarettas)
 		{

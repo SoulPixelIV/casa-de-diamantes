@@ -110,8 +110,6 @@ var pm = matrix_build_projection_ortho(global.xScreenSize, global.yScreenSize,1,
 camera_set_view_mat(camera, vm);
 camera_set_proj_mat(camera, pm);
 
-camera_set_update_script(camera, updateCamera_scr);
-
 view_camera[0] = camera;
 
 follow = player_obj;
@@ -215,6 +213,7 @@ if (global.spawn == 2)
 		}
 	}
 }
+
 xTo = x;
 yTo = y - 16;
 ySave = y;

@@ -1,6 +1,6 @@
 if (window_get_fullscreen())
 {
-	if (window_get_width() != xScreenSize * zoom && window_get_height() != yScreenSize * zoom)
+	if (window_get_width() != global.xScreenSize * zoom && window_get_height() != global.xScreenSize * zoom)
 	{
 		window_set_size(global.xScreenSize * zoom, global.yScreenSize * zoom);
 		surface_resize(application_surface, global.xScreenSize, global.yScreenSize);

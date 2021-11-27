@@ -1398,7 +1398,6 @@
   "creationCodeFile": "${project_dir}/rooms/level1_SenzelaForest/RoomCreationCode.gml",
   "inheritCode": false,
   "instanceCreationOrder": [
-    {"name":"inst_3EAA5435","path":"rooms/level2_Powerplant/level2_Powerplant.yy",},
     {"name":"inst_1E78AA07","path":"rooms/level2_Powerplant/level2_Powerplant.yy",},
     {"name":"inst_69D823B0","path":"rooms/level2_Powerplant/level2_Powerplant.yy",},
     {"name":"inst_51A905BF","path":"rooms/level2_Powerplant/level2_Powerplant.yy",},
@@ -1820,6 +1819,7 @@
     {"name":"inst_727F8E66","path":"rooms/level2_Powerplant/level2_Powerplant.yy",},
     {"name":"inst_3E101547","path":"rooms/level2_Powerplant/level2_Powerplant.yy",},
     {"name":"inst_3B37FCBC","path":"rooms/level2_Powerplant/level2_Powerplant.yy",},
+    {"name":"inst_3EAA5435","path":"rooms/level2_Powerplant/level2_Powerplant.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
