@@ -8,7 +8,8 @@ if (follow != noone)
 		}
 		if (follow.y > minCameraYBorder && follow.y < maxCameraYBorder)
 		{
-			if ((follow.y - cameraYBorder) < y - 86 || (follow.y - cameraYBorder) > y + 64)
+			//Camera Y Axis Deadzone
+			if ((follow.y - cameraYBorder) < y - 86 || (follow.y - cameraYBorder) > y + 32)
 			{
 				snapCameraY = false;
 				yTo = follow.y - cameraYBorder;
@@ -153,6 +154,7 @@ if (keyboard_check_released(vk_control))
 	snapCameraX = false;
 	snapCameraY = false;
 	follow = player_obj;
+	yTo = follow.y - cameraYBorder;
 }
 
 //Change Camera Size
@@ -249,7 +251,6 @@ else
 }
 
 if (!firstMoveDone) {
-	firstMoveTimer = 5;
 	firstMoveTimer -= global.dt;
 }
 if (firstMoveTimer > 0) {
@@ -262,4 +263,5 @@ if (firstMoveTimer < 0) {
 	snapCameraY = false;
 	follow = player_obj;
 	firstMoveDone = true;
+	firstMoveTimer = 0;
 }
