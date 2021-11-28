@@ -94,6 +94,8 @@ showWalljumpsLeft = false;
 checkCullingAreaTimer = 50;
 wheelRotation = 0;
 wheelSpeed = 1;
+firstMoveTimer = 5;
+firstMoveDone = false;
 
 zombiespikeEffectBorderSave = zombiespikeEffectBorder;
 zombiespikeBorderTransparentSave = zombiespikeBorderTransparent;

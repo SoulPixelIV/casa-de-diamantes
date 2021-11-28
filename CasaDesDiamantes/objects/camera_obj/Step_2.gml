@@ -247,3 +247,19 @@ else
 		playScoreStop = false;
 	}
 }
+
+if (!firstMoveDone) {
+	firstMoveTimer = 5;
+	firstMoveTimer -= global.dt;
+}
+if (firstMoveTimer > 0) {
+	snapCameraX = false;
+	snapCameraY = false;
+	follow = camera_obj;
+}
+if (firstMoveTimer < 0) {
+	snapCameraX = false;
+	snapCameraY = false;
+	follow = player_obj;
+	firstMoveDone = true;
+}

@@ -294,6 +294,7 @@
     {"id":{"name":"bartender_spr","path":"sprites/bartender_spr/bartender_spr.yy",},"order":3,},
     {"id":{"name":"pistol_spr","path":"sprites/pistol_spr/pistol_spr.yy",},"order":7,},
     {"id":{"name":"shotgun_spr","path":"sprites/shotgun_spr/shotgun_spr.yy",},"order":8,},
+    {"id":{"name":"warpzoneKey2_spr","path":"sprites/warpzoneKey2_spr/warpzoneKey2_spr.yy",},"order":137,},
     {"id":{"name":"hordemodeSpawnpointPlayer_obj","path":"objects/hordemodeSpawnpointPlayer_obj/hordemodeSpawnpointPlayer_obj.yy",},"order":40,},
     {"id":{"name":"ammoShotgunSmall_spr","path":"sprites/ammoShotgunSmall_spr/ammoShotgunSmall_spr.yy",},"order":12,},
     {"id":{"name":"rainmaker_obj","path":"objects/rainmaker_obj/rainmaker_obj.yy",},"order":2584,},
