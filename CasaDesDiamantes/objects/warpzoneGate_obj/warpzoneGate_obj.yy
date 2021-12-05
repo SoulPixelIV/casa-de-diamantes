@@ -3,7 +3,7 @@
     "name": "warpzoneGate_spr",
     "path": "sprites/warpzoneGate_spr/warpzoneGate_spr.yy",
   },
-  "solid": false,
+  "solid": true,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
