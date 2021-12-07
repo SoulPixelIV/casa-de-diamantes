@@ -1318,6 +1318,7 @@
         {"properties":[],"isDnd":false,"objectId":{"name":"ladder_obj","path":"objects/ladder_obj/ladder_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":3712.0,"y":2010.0,"resourceVersion":"1.0","name":"inst_66C20FB","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"woodplankSmall_obj","path":"objects/woodplankSmall_obj/woodplankSmall_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":-1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1755.0,"y":1904.0,"resourceVersion":"1.0","name":"inst_5444CA71","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"warpzone_obj","path":"objects/warpzone_obj/warpzone_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":4512.0,"y":512.0,"resourceVersion":"1.0","name":"inst_6963634C","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"moviesign_obj","path":"objects/moviesign_obj/moviesign_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":4640.0,"y":512.0,"resourceVersion":"1.0","name":"inst_43AE52CC","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":1200,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"BackgroundObjects","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[],"visible":true,"depth":1300,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"BackgroundAssets","tags":[],"resourceType":"GMRInstanceLayer",},
     {"tilesetId":{"name":"caveTiles","path":"tilesets/caveTiles/caveTiles.yy",},"x":0,"y":0,"tiles":{"SerialiseWidth":172,"SerialiseHeight":94,"TileSerialiseData":[
@@ -2451,6 +2452,7 @@
     {"name":"inst_4953D5CB","path":"rooms/level1_SenzelaForest/level1_SenzelaForest.yy",},
     {"name":"inst_16CAC93A","path":"rooms/level1_SenzelaForest/level1_SenzelaForest.yy",},
     {"name":"inst_10FA869F","path":"rooms/level1_SenzelaForest/level1_SenzelaForest.yy",},
+    {"name":"inst_43AE52CC","path":"rooms/level1_SenzelaForest/level1_SenzelaForest.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
