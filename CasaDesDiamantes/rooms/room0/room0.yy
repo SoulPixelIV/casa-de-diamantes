@@ -207,7 +207,7 @@
   },
   "parent": {
     "name": "Test",
-    "path": "folders/Levels/Test.yy",
+    "path": "folders/Other + Legacy/Legacy Levels/Test.yy",
   },
   "resourceVersion": "1.0",
   "name": "room0",

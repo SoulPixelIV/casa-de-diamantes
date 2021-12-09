@@ -46,8 +46,8 @@
     "PhysicsWorldPixToMetres": 0.1,
   },
   "parent": {
-    "name": "Main",
-    "path": "folders/Levels/Main.yy",
+    "name": "Menu",
+    "path": "folders/Levels/Menu.yy",
   },
   "resourceVersion": "1.0",
   "name": "levelSelect",

@@ -48,8 +48,8 @@
     "PhysicsWorldPixToMetres": 0.1,
   },
   "parent": {
-    "name": "Legacy",
-    "path": "folders/Levels/Legacy.yy",
+    "name": "Legacy Levels",
+    "path": "folders/Other + Legacy/Legacy Levels.yy",
   },
   "resourceVersion": "1.0",
   "name": "shaderTestEnvironment",
