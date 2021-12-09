@@ -26,8 +26,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Global Objects",
-    "path": "folders/Global Objects.yy",
+    "name": "Global System Objects",
+    "path": "folders/Global System Objects.yy",
   },
   "resourceVersion": "1.0",
   "name": "customization_obj",

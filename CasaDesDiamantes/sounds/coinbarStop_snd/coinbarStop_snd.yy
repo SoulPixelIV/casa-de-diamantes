@@ -13,8 +13,8 @@
   "soundFile": "coinbarStop_snd",
   "duration": 0.232732,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "Priority Sounds",
+    "path": "folders/Sounds/Priority Sounds.yy",
   },
   "resourceVersion": "1.0",
   "name": "coinbarStop_snd",

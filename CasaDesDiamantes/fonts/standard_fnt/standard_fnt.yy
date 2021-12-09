@@ -223,7 +223,7 @@
   "maintainGms1Font": false,
   "parent": {
     "name": "Fonts",
-    "path": "folders/Other/Fonts.yy",
+    "path": "folders/Other + Legacy/Fonts.yy",
   },
   "resourceVersion": "1.0",
   "name": "standard_fnt",

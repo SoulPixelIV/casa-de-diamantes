@@ -42,8 +42,8 @@
   ],
   "overriddenProperties": [],
   "parent": {
-    "name": "Image Effects",
-    "path": "folders/Image Effects.yy",
+    "name": "Image Effects (Particle Spawners etc.)",
+    "path": "folders/Image Effects (Particle Spawners etc.).yy",
   },
   "resourceVersion": "1.0",
   "name": "particlePinkLeavesSpawner_obj",

@@ -11,10 +11,10 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "infectedVoice_snd",
-  "duration": 1.054252,
+  "duration": 1.049252,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "Legacy",
+    "path": "folders/Sounds/Legacy.yy",
   },
   "resourceVersion": "1.0",
   "name": "infectedVoice_snd",

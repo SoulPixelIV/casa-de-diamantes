@@ -686,7 +686,7 @@
   },
   "parent": {
     "name": "Powerplant",
-    "path": "folders/Scenes/Main/Powerplant.yy",
+    "path": "folders/Levels/Main/Powerplant.yy",
   },
   "resourceVersion": "1.0",
   "name": "level0_Powerplant",

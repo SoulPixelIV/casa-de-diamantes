@@ -29,8 +29,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Characters",
-    "path": "folders/Characters.yy",
+    "name": "Legacy Objects",
+    "path": "folders/Other + Legacy/Legacy Objects.yy",
   },
   "resourceVersion": "1.0",
   "name": "protoBanana_obj",

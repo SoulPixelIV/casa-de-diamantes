@@ -28,7 +28,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Characters",
-    "path": "folders/Characters.yy",
+    "path": "folders/Characters/Characters.yy",
   },
   "resourceVersion": "1.0",
   "name": "shopWorker_obj",

@@ -13,8 +13,8 @@
   "soundFile": "bucketHit_snd",
   "duration": 0.245,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "Enemies",
+    "path": "folders/Sounds/Enemies.yy",
   },
   "resourceVersion": "1.0",
   "name": "bucketHit_snd",

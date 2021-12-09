@@ -13,8 +13,8 @@
   "soundFile": "land_snd",
   "duration": 0.357653,
   "parent": {
-    "name": "Movement",
-    "path": "folders/Sounds/Movement.yy",
+    "name": "Player",
+    "path": "folders/Sounds/Player.yy",
   },
   "resourceVersion": "1.0",
   "name": "land_snd",

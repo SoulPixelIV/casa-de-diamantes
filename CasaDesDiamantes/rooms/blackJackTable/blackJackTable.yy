@@ -170,7 +170,7 @@
   },
   "parent": {
     "name": "Hub",
-    "path": "folders/Scenes/Main/Hub.yy",
+    "path": "folders/Levels/Main/Hub.yy",
   },
   "resourceVersion": "1.0",
   "name": "blackjackTable",

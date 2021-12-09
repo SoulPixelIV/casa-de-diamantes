@@ -13,8 +13,8 @@
   "soundFile": "drill_snd.mp3",
   "duration": 1.337245,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "Enemies",
+    "path": "folders/Sounds/Enemies.yy",
   },
   "resourceVersion": "1.0",
   "name": "drill_snd",

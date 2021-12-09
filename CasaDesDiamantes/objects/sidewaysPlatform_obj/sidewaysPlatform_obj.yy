@@ -27,8 +27,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Bullets",
-    "path": "folders/Bullets.yy",
+    "name": "Legacy Objects",
+    "path": "folders/Other + Legacy/Legacy Objects.yy",
   },
   "resourceVersion": "1.0",
   "name": "sidewaysPlatform_obj",

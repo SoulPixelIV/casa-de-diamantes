@@ -13,8 +13,8 @@
   "soundFile": "climb2_snd",
   "duration": 0.484456,
   "parent": {
-    "name": "Movement",
-    "path": "folders/Sounds/Movement.yy",
+    "name": "Player",
+    "path": "folders/Sounds/Player.yy",
   },
   "resourceVersion": "1.0",
   "name": "climb2_snd",

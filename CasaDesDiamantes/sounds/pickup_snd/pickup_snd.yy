@@ -13,8 +13,8 @@
   "soundFile": "pickup_snd",
   "duration": 0.508741,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "Pickups",
+    "path": "folders/Sounds/Pickups.yy",
   },
   "resourceVersion": "1.0",
   "name": "pickup_snd",

@@ -13,8 +13,8 @@
   "soundFile": "coinbarSpin_snd",
   "duration": 1.051689,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "Priority Sounds",
+    "path": "folders/Sounds/Priority Sounds.yy",
   },
   "resourceVersion": "1.0",
   "name": "coinbarSpin_snd",

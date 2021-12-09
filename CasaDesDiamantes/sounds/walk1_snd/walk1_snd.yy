@@ -13,8 +13,8 @@
   "soundFile": "walk1_snd",
   "duration": 0.489717,
   "parent": {
-    "name": "Movement",
-    "path": "folders/Sounds/Movement.yy",
+    "name": "Player",
+    "path": "folders/Sounds/Player.yy",
   },
   "resourceVersion": "1.0",
   "name": "walk1_snd",

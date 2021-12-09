@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Characters",
-    "path": "folders/Characters.yy",
+    "name": "Character Sprites",
+    "path": "folders/Characters/Character Sprites.yy",
   },
   "resourceVersion": "1.0",
   "name": "shopWorker_spr",

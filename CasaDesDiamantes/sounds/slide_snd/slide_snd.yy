@@ -13,8 +13,8 @@
   "soundFile": "slide_snd.wav",
   "duration": 0.896066,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "Player",
+    "path": "folders/Sounds/Player.yy",
   },
   "resourceVersion": "1.0",
   "name": "slide_snd",

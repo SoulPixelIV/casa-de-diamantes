@@ -13,8 +13,8 @@
   "soundFile": "glitter_snd",
   "duration": 0.31924,
   "parent": {
-    "name": "Movement",
-    "path": "folders/Sounds/Movement.yy",
+    "name": "Player",
+    "path": "folders/Sounds/Player.yy",
   },
   "resourceVersion": "1.0",
   "name": "glitter_snd",

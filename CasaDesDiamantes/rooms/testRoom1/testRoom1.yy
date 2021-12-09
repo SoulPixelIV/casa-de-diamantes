@@ -192,7 +192,7 @@
   },
   "parent": {
     "name": "Test",
-    "path": "folders/Scenes/Test.yy",
+    "path": "folders/Levels/Test.yy",
   },
   "resourceVersion": "1.0",
   "name": "testRoom1",

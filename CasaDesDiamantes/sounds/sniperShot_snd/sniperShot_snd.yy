@@ -13,8 +13,8 @@
   "soundFile": "sniperShot_snd.mp3",
   "duration": 1.781327,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "Weapons",
+    "path": "folders/Sounds/Weapons.yy",
   },
   "resourceVersion": "1.0",
   "name": "sniperShot_snd",

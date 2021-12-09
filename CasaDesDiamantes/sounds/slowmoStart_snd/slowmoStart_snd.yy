@@ -13,8 +13,8 @@
   "soundFile": "slowmoStart_snd.mp3",
   "duration": 1.598469,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "Priority Sounds",
+    "path": "folders/Sounds/Priority Sounds.yy",
   },
   "resourceVersion": "1.0",
   "name": "slowmoStart_snd",

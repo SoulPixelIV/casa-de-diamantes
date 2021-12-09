@@ -13,8 +13,8 @@
   "soundFile": "bulletHitHeadshot_snd",
   "duration": 0.437,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "Weapons",
+    "path": "folders/Sounds/Weapons.yy",
   },
   "resourceVersion": "1.0",
   "name": "bulletHitHeadshot_snd",

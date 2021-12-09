@@ -474,7 +474,7 @@
   },
   "parent": {
     "name": "Main",
-    "path": "folders/Scenes/Main.yy",
+    "path": "folders/Levels/Main.yy",
   },
   "resourceVersion": "1.0",
   "name": "infiniteSpawn",

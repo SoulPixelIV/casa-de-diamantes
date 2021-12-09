@@ -13,8 +13,8 @@
   "soundFile": "moan2_snd",
   "duration": 0.253481,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "Player",
+    "path": "folders/Sounds/Player.yy",
   },
   "resourceVersion": "1.0",
   "name": "moan2_snd",

@@ -11,10 +11,10 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "plagueInfectionVoice_snd",
-  "duration": 1.170533,
+  "duration": 1.165533,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "Legacy",
+    "path": "folders/Sounds/Legacy.yy",
   },
   "resourceVersion": "1.0",
   "name": "plagueInfectionVoice_snd",

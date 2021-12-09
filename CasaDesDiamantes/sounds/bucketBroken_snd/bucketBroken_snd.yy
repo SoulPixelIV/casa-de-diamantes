@@ -13,8 +13,8 @@
   "soundFile": "bucketBroken_snd",
   "duration": 0.389,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "Enemies",
+    "path": "folders/Sounds/Enemies.yy",
   },
   "resourceVersion": "1.0",
   "name": "bucketBroken_snd",

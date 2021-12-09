@@ -28,8 +28,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Enemy Objects",
-    "path": "folders/Enemies/Enemy Objects.yy",
+    "name": "Enemy Helper Objects",
+    "path": "folders/Enemies/Enemy Helper Objects.yy",
   },
   "resourceVersion": "1.0",
   "name": "toxicrain_obj",

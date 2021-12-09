@@ -3,7 +3,7 @@
   "isCompatibility": false,
   "parent": {
     "name": "GMLive",
-    "path": "folders/Other/Extensions/GMLive.yy",
+    "path": "folders/Other + Legacy/Extensions/GMLive.yy",
   },
   "resourceVersion": "1.0",
   "name": "GMLive",

@@ -13,8 +13,8 @@
   "soundFile": "flamethrower_snd.mp3",
   "duration": 2.377143,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "Enemies",
+    "path": "folders/Sounds/Enemies.yy",
   },
   "resourceVersion": "1.0",
   "name": "flamethrower_snd",

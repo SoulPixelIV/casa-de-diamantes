@@ -36,7 +36,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Enemies",
-    "path": "folders/Enemies.yy",
+    "path": "folders/Enemies/Enemies.yy",
   },
   "resourceVersion": "1.0",
   "name": "explosiveMerchantDead_obj",

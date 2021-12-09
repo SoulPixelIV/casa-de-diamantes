@@ -13,8 +13,8 @@
   "soundFile": "pistolShellDrop1_snd.mp3",
   "duration": 0.190875,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "Weapons",
+    "path": "folders/Sounds/Weapons.yy",
   },
   "resourceVersion": "1.0",
   "name": "pistolShellDrop1_snd",

@@ -13,8 +13,8 @@
   "soundFile": "arrowImpact_snd.mp3",
   "duration": 0.316675,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "Weapons",
+    "path": "folders/Sounds/Weapons.yy",
   },
   "resourceVersion": "1.0",
   "name": "arrowImpact_snd",

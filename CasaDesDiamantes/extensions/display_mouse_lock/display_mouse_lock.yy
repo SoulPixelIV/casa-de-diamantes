@@ -85,7 +85,7 @@
   "tvosCocoaPodDependencies": "",
   "parent": {
     "name": "Extensions",
-    "path": "folders/Other/Extensions.yy",
+    "path": "folders/Other + Legacy/Extensions.yy",
   },
   "resourceVersion": "1.2",
   "name": "display_mouse_lock",

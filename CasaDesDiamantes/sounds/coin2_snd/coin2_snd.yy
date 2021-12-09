@@ -13,8 +13,8 @@
   "soundFile": "coin2_snd",
   "duration": 0.325417,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "Pickups",
+    "path": "folders/Sounds/Pickups.yy",
   },
   "resourceVersion": "1.0",
   "name": "coin2_snd",

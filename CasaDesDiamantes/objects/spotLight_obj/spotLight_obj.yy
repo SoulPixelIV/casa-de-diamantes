@@ -28,7 +28,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Legacy Objects",
-    "path": "folders/Legacy Objects.yy",
+    "path": "folders/Other + Legacy/Legacy Objects.yy",
   },
   "resourceVersion": "1.0",
   "name": "spotLight_obj",

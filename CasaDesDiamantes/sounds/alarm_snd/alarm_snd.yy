@@ -13,8 +13,8 @@
   "soundFile": "alarm_snd.mp3",
   "duration": 3.351688,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "Enemies",
+    "path": "folders/Sounds/Enemies.yy",
   },
   "resourceVersion": "1.0",
   "name": "alarm_snd",

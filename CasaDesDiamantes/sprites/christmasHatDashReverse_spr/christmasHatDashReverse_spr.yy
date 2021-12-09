@@ -70,7 +70,7 @@
   "nineSlice": null,
   "parent": {
     "name": "ChristmasHat",
-    "path": "folders/Legacy Objects/ChristmasHat.yy",
+    "path": "folders/Other + Legacy/Legacy Objects/ChristmasHat.yy",
   },
   "resourceVersion": "1.0",
   "name": "christmasHatDashReverse_spr",

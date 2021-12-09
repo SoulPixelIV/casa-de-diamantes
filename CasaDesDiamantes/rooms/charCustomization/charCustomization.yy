@@ -49,8 +49,8 @@
     "PhysicsWorldPixToMetres": 0.1,
   },
   "parent": {
-    "name": "Scenes",
-    "path": "folders/Scenes.yy",
+    "name": "Levels",
+    "path": "folders/Levels.yy",
   },
   "resourceVersion": "1.0",
   "name": "charCustomization",

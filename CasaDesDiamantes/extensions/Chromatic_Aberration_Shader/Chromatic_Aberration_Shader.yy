@@ -57,7 +57,7 @@
   "tvosCocoaPodDependencies": "",
   "parent": {
     "name": "Extensions",
-    "path": "folders/Other/Extensions.yy",
+    "path": "folders/Other + Legacy/Extensions.yy",
   },
   "resourceVersion": "1.2",
   "name": "Chromatic_Aberration_Shader",

@@ -13,8 +13,8 @@
   "soundFile": "chaingunLocked_snd",
   "duration": 0.53065,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "Weapons",
+    "path": "folders/Sounds/Weapons.yy",
   },
   "resourceVersion": "1.0",
   "name": "chaingunLocked_snd",
