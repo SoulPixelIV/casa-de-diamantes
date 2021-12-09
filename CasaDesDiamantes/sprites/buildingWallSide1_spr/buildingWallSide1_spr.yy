@@ -73,8 +73,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Legacy",
-    "path": "folders/Sprites/Legacy.yy",
+    "name": "Legacy Sprites",
+    "path": "folders/Other + Legacy/Legacy Sprites.yy",
   },
   "resourceVersion": "1.0",
   "name": "buildingWallSide1_spr",

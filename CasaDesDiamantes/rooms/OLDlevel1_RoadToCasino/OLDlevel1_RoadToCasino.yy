@@ -15,7 +15,6 @@
   "layers": [
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"globalSettings_obj","path":"objects/globalSettings_obj/globalSettings_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":0.0,"y":0.0,"resourceVersion":"1.0","name":"inst_EE28CA6","tags":[],"resourceType":"GMRInstance",},
-        {"properties":[],"isDnd":false,"objectId":{"name":"cameraOld_obj","path":"objects/cameraOld_obj/cameraOld_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":32.0,"y":0.0,"resourceVersion":"1.0","name":"inst_26B5D6FF","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"gameManager_obj","path":"objects/gameManager_obj/gameManager_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":64.0,"y":0.0,"resourceVersion":"1.0","name":"inst_49239C50","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_lighting_init","path":"objects/obj_lighting_init/obj_lighting_init.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":2784.0,"y":224.0,"resourceVersion":"1.0","name":"inst_5DAB9645","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"GameManagerLayer","tags":[],"resourceType":"GMRInstanceLayer",},
@@ -335,7 +334,6 @@
   "inheritCode": false,
   "instanceCreationOrder": [
     {"name":"inst_EE28CA6","path":"rooms/OLDlevel1_RoadToCasino/OLDlevel1_RoadToCasino.yy",},
-    {"name":"inst_26B5D6FF","path":"rooms/OLDlevel1_RoadToCasino/OLDlevel1_RoadToCasino.yy",},
     {"name":"inst_49239C50","path":"rooms/OLDlevel1_RoadToCasino/OLDlevel1_RoadToCasino.yy",},
     {"name":"inst_61658D62","path":"rooms/OLDlevel1_RoadToCasino/OLDlevel1_RoadToCasino.yy",},
     {"name":"inst_49C32F74","path":"rooms/OLDlevel1_RoadToCasino/OLDlevel1_RoadToCasino.yy",},

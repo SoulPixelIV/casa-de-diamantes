@@ -85,8 +85,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Nude",
-    "path": "folders/Steph/Steph Sprites/Nude.yy",
+    "name": "No Clothes",
+    "path": "folders/Steph/Steph Sprites/No Clothes.yy",
   },
   "resourceVersion": "1.0",
   "name": "playerJumpSpinUnequippedNude_spr",

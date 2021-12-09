@@ -24,8 +24,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "UI",
-    "path": "folders/UI.yy",
+    "name": "Legacy Objects",
+    "path": "folders/Other + Legacy/Legacy Objects.yy",
   },
   "resourceVersion": "1.0",
   "name": "windowBackground_obj",

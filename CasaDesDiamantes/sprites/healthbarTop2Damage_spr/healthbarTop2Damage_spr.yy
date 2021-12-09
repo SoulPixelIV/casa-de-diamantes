@@ -101,8 +101,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "UISprites",
-    "path": "folders/UI/UISprites.yy",
+    "name": "UI Sprites",
+    "path": "folders/UI/UI Sprites.yy",
   },
   "resourceVersion": "1.0",
   "name": "healthbarTop2Damage_spr",
