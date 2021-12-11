@@ -46,6 +46,12 @@ if (!place_meeting(x, y, enemy_obj) && !place_meeting(x, y, spawnCloud_obj))
 	}
 }
 
+//Send arena message
+if (done && !setArenaMessage) {
+	camera_obj.arenaCompleteMessage = true;
+	setArenaMessage = true;
+}
+
 checkEnemycountTimer -= global.dt;
 if (checkEnemycountTimer < 0)
 {

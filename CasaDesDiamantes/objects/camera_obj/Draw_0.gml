@@ -602,6 +602,20 @@ if (!noHUD && instance_exists(player_obj))
 	}
 	draw_set_halign(fa_left);
 	
+	//Battlearena Onscreen Message
+	if (arenaCompleteMessage) {
+		draw_set_color(make_color_rgb(255,215,0));
+		draw_set_halign(fa_center);
+		arenaCompleteMessageTimer -= global.dt;
+		draw_text(x, y - (yScreenSize / 3), "ARENA CLEARED!");
+		draw_set_halign(fa_left);
+		
+		if (arenaCompleteMessageTimer < 0) {
+			arenaCompleteMessage = false;
+			arenaCompleteMessageTimer = arenaCompleteMessageTimerSave;
+		}
+	}
+	
 	//Timer + Combo for Horde Mode
 	if (room == infiniteSpawn) {
 		draw_text(x - xScreenSize / 3.5, y - yScreenSize / 2.5, "TIME: " + string(global.timer));

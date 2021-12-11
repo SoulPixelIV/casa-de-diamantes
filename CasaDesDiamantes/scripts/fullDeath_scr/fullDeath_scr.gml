@@ -95,6 +95,7 @@ function fullDeath_scr() {
 		wave = 0;
 		highestWave = 0;
 		done = false;
+		setArenaMessage = false;
 		setWave = false;
 		sectionCleared = false;
 		enemyCount = 0;

@@ -96,11 +96,14 @@ wheelRotation = 0;
 wheelSpeed = 1;
 firstMoveTimer = 5;
 firstMoveDone = false;
+arenaCompleteMessage = false;
+arenaCompleteMessageTimer = 1250;
 
 zombiespikeEffectBorderSave = zombiespikeEffectBorder;
 zombiespikeBorderTransparentSave = zombiespikeBorderTransparent;
 checkCullingAreaTimerSave = checkCullingAreaTimer;
 wheelSpeedSave = wheelSpeed;
+arenaCompleteMessageTimerSave = arenaCompleteMessageTimer;
 
 checkCullingAreaTimer = 1;
 
