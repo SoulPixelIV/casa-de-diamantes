@@ -1567,6 +1567,10 @@
             {"propertyId":{"name":"objectMaxDistance2","path":"objects/switch_obj/switch_obj.yy",},"objectId":{"name":"switch_obj","path":"objects/switch_obj/switch_obj.yy",},"value":"356","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
             {"propertyId":{"name":"synced","path":"objects/switch_obj/switch_obj.yy",},"objectId":{"name":"switch_obj","path":"objects/switch_obj/switch_obj.yy",},"value":"True","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
           ],"isDnd":false,"objectId":{"name":"switch_obj","path":"objects/switch_obj/switch_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":6100.0,"y":407.0,"resourceVersion":"1.0","name":"inst_23940430","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[
+            {"propertyId":{"name":"item","path":"objects/glassCabinet_obj/glassCabinet_obj.yy",},"objectId":{"name":"glassCabinet_obj","path":"objects/glassCabinet_obj/glassCabinet_obj.yy",},"value":"1","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+          ],"isDnd":false,"objectId":{"name":"glassCabinet_obj","path":"objects/glassCabinet_obj/glassCabinet_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":4607.0,"y":548.0,"resourceVersion":"1.0","name":"inst_7755B29F","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"glassCabinet_obj","path":"objects/glassCabinet_obj/glassCabinet_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":4659.0,"y":548.0,"resourceVersion":"1.0","name":"inst_22572937","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":1200,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"BackgroundObjects","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[],"visible":true,"depth":1300,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"BackgroundAssets","tags":[],"resourceType":"GMRInstanceLayer",},
     {"tilesetId":{"name":"caveTiles","path":"tilesets/caveTiles/caveTiles.yy",},"x":0,"y":0,"tiles":{"SerialiseWidth":219,"SerialiseHeight":94,"TileSerialiseData":[
@@ -2771,6 +2775,8 @@
     {"name":"inst_166CAECB","path":"rooms/level1_SenzelaForest/level1_SenzelaForest.yy",},
     {"name":"inst_271BD1ED","path":"rooms/level1_SenzelaForest/level1_SenzelaForest.yy",},
     {"name":"inst_3C538D99","path":"rooms/level1_SenzelaForest/level1_SenzelaForest.yy",},
+    {"name":"inst_7755B29F","path":"rooms/level1_SenzelaForest/level1_SenzelaForest.yy",},
+    {"name":"inst_22572937","path":"rooms/level1_SenzelaForest/level1_SenzelaForest.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
