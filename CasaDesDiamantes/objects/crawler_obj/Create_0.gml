@@ -65,6 +65,9 @@ checkPlayerTimerSave = checkPlayerTimer;
 checkPlayerTimer = 0;
 gravityStrength = 0;
 
+savePosX = x;
+savePosY = y;
+
 //Create Emitter
 emitter = audio_emitter_create();
 audio_max_distance = 500;
