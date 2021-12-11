@@ -43,22 +43,15 @@ if ((distance_to_object(player_obj) < 32 && player_obj.key_up_pressed) || (place
 		}
 		else
 		{
-			var i;
-			object[0] = noone;
-			for (i = 0; i < objectCount; i++)
+			for (var i = 1; i < objectCount + 1; i++)
 			{
-				object[i] = noone;
-				if (distance_to_object(instance_find(objectAccess, i)) < objectMaxDistance)
-				{
-					object[i] = instance_find(objectAccess, i);
-				}
-				
-				if (object[i] != noone)
+				currObject = instanceNearest(x, y, objectAccess, i);
+				if (currObject != noone)
 				{
 					if (!used) {
-						object[i].open = true;
+						currObject.open = true;
 					} else {
-						object[i].open = false;
+						currObject.open = false;
 					}
 				}
 			}
@@ -94,22 +87,15 @@ if ((distance_to_object(player_obj) < 32 && player_obj.key_up_pressed) || (place
 		}
 		else
 		{
-			var i;
-			object[0] = noone;
-			for (i = 0; i < objectCount2; i++)
+			for (var i = 1; i < objectCount2 + 1; i++)
 			{
-				object[i] = noone;
-				if (distance_to_object(instance_find(objectAccess2, i)) < objectMaxDistance2)
-				{
-					object[i] = instance_find(objectAccess2, i);
-				}
-				
-				if (object[i] != noone)
+				currObject = instanceNearest(x, y, objectAccess2, i);
+				if (currObject != noone)
 				{
 					if (!used) {
-						object[i].open = true;
+						currObject.open = true;
 					} else {
-						object[i].open = false;
+						currObject.open = false;
 					}
 				}
 			}
@@ -124,6 +110,19 @@ if ((distance_to_object(player_obj) < 32 && player_obj.key_up_pressed) || (place
 	}
 	
 	used = !used;
+	
+	//Check synced switches
+	if (synced) {
+		for (i = 0; i < instance_number(switch_obj); i++) {
+			currSwitch = instance_find(switch_obj, i);
+			
+			if (instance_exists(currSwitch)) {
+				if (currSwitch.synced) {
+					currSwitch.used = used;
+				}
+			}
+		}
+	}
 }
 
 if (!audio_is_playing(lever_snd))
