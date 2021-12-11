@@ -291,6 +291,7 @@
     {"id":{"name":"spotlightYellowSmall_obj","path":"objects/spotlightYellowSmall_obj/spotlightYellowSmall_obj.yy",},"order":20,},
     {"id":{"name":"RoundTo","path":"scripts/RoundTo/RoundTo.yy",},"order":22,},
     {"id":{"name":"spr_light_spot","path":"sprites/spr_light_spot/spr_light_spot.yy",},"order":5,},
+    {"id":{"name":"teleportBoxWarpzone_obj","path":"objects/teleportBoxWarpzone_obj/teleportBoxWarpzone_obj.yy",},"order":1,},
     {"id":{"name":"spr_light_renderer","path":"sprites/spr_light_renderer/spr_light_renderer.yy",},"order":6,},
     {"id":{"name":"lampForm_spr","path":"sprites/lampForm_spr/lampForm_spr.yy",},"order":7,},
     {"id":{"name":"sprite241","path":"sprites/sprite241/sprite241.yy",},"order":14,},
@@ -321,6 +322,7 @@
     {"id":{"name":"bulletSensoryTrembler_obj","path":"objects/bulletSensoryTrembler_obj/bulletSensoryTrembler_obj.yy",},"order":7,},
     {"id":{"name":"bulletShotgun_spr","path":"sprites/bulletShotgun_spr/bulletShotgun_spr.yy",},"order":19,},
     {"id":{"name":"tutorialMousePromt_obj","path":"objects/tutorialMousePromt_obj/tutorialMousePromt_obj.yy",},"order":52,},
+    {"id":{"name":"teleportBackToWarpzoneBeginning_obj","path":"objects/teleportBackToWarpzoneBeginning_obj/teleportBackToWarpzoneBeginning_obj.yy",},"order":0,},
     {"id":{"name":"crawlerFireAttack_spr","path":"sprites/crawlerFireAttack_spr/crawlerFireAttack_spr.yy",},"order":2,},
     {"id":{"name":"bulletDualBarettas_spr","path":"sprites/bulletDualBarettas_spr/bulletDualBarettas_spr.yy",},"order":20,},
     {"id":{"name":"spotlight_spr","path":"sprites/spotlight_spr/spotlight_spr.yy",},"order":21,},
@@ -1252,6 +1254,7 @@
     {"folderPath":"folders/Sounds/Legacy.yy","order":56,"resourceVersion":"1.0","name":"Legacy","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/UI/UI Objects.yy","order":3,"resourceVersion":"1.0","name":"UI Objects","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Levels/Menu.yy","order":3,"resourceVersion":"1.0","name":"Menu","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Helper Objects.yy","order":2584,"resourceVersion":"1.0","name":"Helper Objects","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":-1,"resourceVersion":"1.3","name":"audiogroup_default","resourceType":"GMAudioGroup",},
