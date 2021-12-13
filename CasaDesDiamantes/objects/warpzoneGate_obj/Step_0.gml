@@ -1,5 +1,6 @@
 if (global.hasWarpzoneKey && distance_to_object(player_obj) < 32 && player_obj.key_up) {
 	animationSpeed = 1;
+	global.hasWarpzoneKey = false;
 	used = true;
 }
 
