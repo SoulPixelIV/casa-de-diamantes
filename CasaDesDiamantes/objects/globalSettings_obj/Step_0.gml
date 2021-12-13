@@ -112,6 +112,10 @@ else if (room == level0_Powerplant || room == level1_Powerplant || room == level
 {
 	global.ambientShadowIntensity = 0.3 * global.gamma;
 }
+else if (room == warpzone_Powerplant)
+{
+	global.ambientShadowIntensity = 0.7 * global.gamma;
+}
 else
 {
 	global.ambientShadowIntensity = 0.6 * global.gamma;
