@@ -58,6 +58,10 @@ if (sprite_index == playerJumpSpin_spr || sprite_index == playerJumpSpinNude_spr
 	{
 		drawSpriteTop1 = smokingTopSpin_spr;
 	}
+	if (global.top1 == glitterTop_spr)
+	{
+		drawSpriteTop1 = glitterTopSpin_spr;
+	}
 	
 	if (global.top2 == smokingJacketEquipped_spr)
 	{
@@ -91,6 +95,10 @@ if (sprite_index == playerDash_spr || sprite_index == playerDashNude_spr || spri
 	if (global.top1 == smokingTop_spr)
 	{
 		drawSpriteTop1 = smokingTopDash_spr;
+	}
+	if (global.top1 == glitterTop_spr)
+	{
+		drawSpriteTop1 = glitterTopDash_spr;
 	}
 	
 	if (global.top2 == smokingJacketEquipped_spr)
@@ -126,6 +134,10 @@ if (sprite_index = playerDashReverse_spr || sprite_index = playerDashReverseNude
 	{
 		drawSpriteTop1 = smokingTopDashReverse_spr;
 	}
+	if (global.top1 == glitterTop_spr)
+	{
+		drawSpriteTop1 = glitterTopDashReverse_spr;
+	}
 	
 	if (global.top2 == smokingJacketEquipped_spr)
 	{
@@ -150,6 +162,10 @@ if (sprite_index == playerWalkingEquipped_spr || sprite_index == playerWalkingEq
 	if (global.top1 == smokingTop_spr)
 	{
 		drawSpriteTop1 = smokingTopWalking_spr;
+	}
+	if (global.top1 == glitterTop_spr)
+	{
+		drawSpriteTop1 = glitterTopWalking_spr;
 	}
 	
 	if (global.top2 == smokingJacketEquipped_spr)
@@ -205,6 +221,10 @@ if (sprite_index == playerClimbing_spr)
 	if (global.top1 == smokingTop_spr)
 	{
 		drawSpriteTop1 = smokingTopClimbing_spr;
+	}
+	if (global.top1 == glitterTop_spr)
+	{
+		drawSpriteTop1 = glitterTopClimbing_spr;
 	}
 		
 	if (global.top2 == smokingJacketEquipped_spr)
