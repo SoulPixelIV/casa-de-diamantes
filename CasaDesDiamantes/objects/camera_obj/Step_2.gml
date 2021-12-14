@@ -75,13 +75,15 @@ if (shake)
 //Floating Camera
 if (follow == camera_obj && !cameraTarget)
 {
-	if (player_obj.x - xScreenSize / 2 > minCameraXBorder && player_obj.x + xScreenSize / 2 < maxCameraXBorder)
-	{
-		xTo = player_obj.x + (mouse_x - player_obj.x) / 2;
-	}
-	if (player_obj.y - yScreenSize / 2 > minCameraYBorder && player_obj.y + yScreenSize / 2 < maxCameraYBorder)
-	{
-		yTo = (player_obj.y + cameraYBorder) + (mouse_y - (player_obj.y + cameraYBorder)) / 2;
+	if (instance_exists(player_obj)) {
+		if (player_obj.x - xScreenSize / 2 > minCameraXBorder && player_obj.x + xScreenSize / 2 < maxCameraXBorder)
+		{
+			xTo = player_obj.x + (mouse_x - player_obj.x) / 2;
+		}
+		if (player_obj.y - yScreenSize / 2 > minCameraYBorder && player_obj.y + yScreenSize / 2 < maxCameraYBorder)
+		{
+			yTo = (player_obj.y + cameraYBorder) + (mouse_y - (player_obj.y + cameraYBorder)) / 2;
+		}
 	}
 }
 if (follow == movingPlatform_obj)
