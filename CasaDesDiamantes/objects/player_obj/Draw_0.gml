@@ -76,6 +76,10 @@ if (sprite_index == playerJumpSpin_spr || sprite_index == playerJumpSpinNude_spr
 	{
 		drawSpriteBottom = smokingBottomSpin_spr;
 	}
+	if (global.bottom == glitterBottom_spr)
+	{
+		drawSpriteBottom = glitterBottomSpin_spr;
+	}
 }
 
 if (sprite_index == playerFlip_spr || sprite_index == playerFlipNude_spr)
@@ -83,6 +87,10 @@ if (sprite_index == playerFlip_spr || sprite_index == playerFlipNude_spr)
 	if (global.bottom == smokingBottom_spr)
 	{
 		drawSpriteBottom = smokingBottomFlip_spr;
+	}
+	if (global.bottom == glitterBottom_spr)
+	{
+		drawSpriteBottom = glitterBottomFlip_spr;
 	}
 }
 
@@ -122,6 +130,10 @@ if (sprite_index == playerDash_spr || sprite_index == playerDashNude_spr || spri
 	{
 		drawSpriteBottom = smokingBottomDash_spr;
 	}
+	if (global.bottom == glitterBottom_spr)
+	{
+		drawSpriteBottom = glitterBottomDash_spr;
+	}
 }
 
 if (sprite_index = playerDashReverse_spr || sprite_index = playerDashReverseNude_spr)
@@ -147,9 +159,14 @@ if (sprite_index = playerDashReverse_spr || sprite_index = playerDashReverseNude
 	{
 		drawSpriteTop2 = warmJacketDashReverse_spr;
 	}	
+	
 	if (global.bottom == smokingBottom_spr)
 	{
 		drawSpriteBottom = smokingBottomDashReverse_spr;
+	}
+	if (global.bottom == glitterBottom_spr)
+	{
+		drawSpriteBottom = glitterBottomDashReverse_spr;
 	}
 }
 
@@ -189,6 +206,10 @@ if (sprite_index == playerWalkingEquipped_spr || sprite_index == playerWalkingEq
 	{
 		drawSpriteBottom = smokingBottomWalking_spr;
 	}
+	if (global.bottom == glitterBottom_spr)
+	{
+		drawSpriteBottom = glitterBottomWalking_spr;
+	}
 }
 
 if (flip && !onLadder && !huggingWall && !deathActivated)
@@ -213,6 +234,10 @@ if (sprite_index == playerWall_spr || sprite_index == playerWallNoArm_spr)
 	if (global.bottom = smokingBottom_spr)
 	{
 		drawSpriteBottom = SmokingBottomWall_spr;
+	}
+	if (global.bottom = glitterBottom_spr)
+	{
+		drawSpriteBottom = glitterBottomWall_spr;
 	}
 }
 
@@ -239,6 +264,10 @@ if (sprite_index == playerClimbing_spr)
 	if (global.bottom == smokingBottom_spr)
 	{
 		drawSpriteBottom = smokingBottomClimbing_spr;
+	}
+	if (global.bottom == glitterBottom_spr)
+	{
+		drawSpriteBottom = glitterBottomClimbing_spr;
 	}
 }
 

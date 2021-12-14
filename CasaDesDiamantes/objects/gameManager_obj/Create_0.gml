@@ -51,21 +51,21 @@ global.bowReloadSave = global.bowReload;
 global.hat = choose(beret_spr, noone);
 global.top1 = choose(smokingTop_spr, glitterTop_spr, noone);
 global.top2 = choose(smokingJacketEquipped_spr, warmJacketEquipped_spr, noone);
-global.bottom = choose(smokingBottom_spr, noone);
+global.bottom = choose(smokingBottom_spr, glitterBottom_spr, noone);
 global.shoes = noone;
 global.arm = choose(smokingJacketArm_spr, warmJacketArm_spr, noone);
 
 global.hatlist = ["Beret", "Nothing"];
 global.top1list = ["Smoking Top", "Glitter Top", "Nothing"];
 global.top2list = ["Smoking Jacket", "Warm Jacket", "Nothing"];
-global.bottomlist = ["Smoking Bottom", "Nothing"];
+global.bottomlist = ["Smoking Bottom", "Glitter Bottom", "Nothing"];
 global.shoeslist = ["Nothing"];
 global.armlist = ["Smoking Jacket Arms", "Warm Jacket Arms", "Nothing"];
 
 global.hatName = [beret_spr, noone];
 global.top1Name = [smokingTop_spr, glitterTop_spr, noone];
 global.top2Name = [smokingJacket_spr, warmJacket_spr, noone];
-global.bottomName = [smokingBottom_spr, noone];
+global.bottomName = [smokingBottom_spr, glitterBottom_spr, noone];
 global.shoesName = [noone];
 global.armName = [smokingJacketArm_spr, warmJacketArm_spr, noone];
 
