@@ -7,7 +7,7 @@
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 6,
+  "bbox_left": 5,
   "bbox_right": 27,
   "bbox_top": 13,
   "bbox_bottom": 63,
@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"f284e1fe-cdb4-4e97-b73b-a60e513ab15c","path":"sprites/test/test.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"f284e1fe-cdb4-4e97-b73b-a60e513ab15c","path":"sprites/test/test.yy",},"LayerId":{"name":"107ec3f1-d413-4feb-b879-31307bc11efb","path":"sprites/test/test.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"test","path":"sprites/test/test.yy",},"resourceVersion":"1.0","name":"f284e1fe-cdb4-4e97-b73b-a60e513ab15c","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"f5d22793-984a-4e56-b78a-443eb6991d6f","path":"sprites/Sprite526/Sprite526.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"f5d22793-984a-4e56-b78a-443eb6991d6f","path":"sprites/Sprite526/Sprite526.yy",},"LayerId":{"name":"abeb9d06-9730-490c-ad3f-c131d9e919ad","path":"sprites/Sprite526/Sprite526.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"Sprite526","path":"sprites/Sprite526/Sprite526.yy",},"resourceVersion":"1.0","name":"f5d22793-984a-4e56-b78a-443eb6991d6f","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"test","path":"sprites/test/test.yy",},
+    "spriteId": {"name":"Sprite526","path":"sprites/Sprite526/Sprite526.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"82301bba-bf00-4b51-9ee1-b98150be8901","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"f284e1fe-cdb4-4e97-b73b-a60e513ab15c","path":"sprites/test/test.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"3afb8fc6-bcca-4770-9c0c-e9db2aaf884d","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"f5d22793-984a-4e56-b78a-443eb6991d6f","path":"sprites/Sprite526/Sprite526.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -58,14 +58,14 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"test","path":"sprites/test/test.yy",},
+    "parent": {"name":"Sprite526","path":"sprites/Sprite526/Sprite526.yy",},
     "resourceVersion": "1.3",
-    "name": "test",
+    "name": "Sprite526",
     "tags": [],
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"107ec3f1-d413-4feb-b879-31307bc11efb","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"abeb9d06-9730-490c-ad3f-c131d9e919ad","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
@@ -73,7 +73,7 @@
     "path": "folders/Steph/Clothes/Marcus Hat.yy",
   },
   "resourceVersion": "1.0",
-  "name": "test",
+  "name": "Sprite526",
   "tags": [],
   "resourceType": "GMSprite",
 }

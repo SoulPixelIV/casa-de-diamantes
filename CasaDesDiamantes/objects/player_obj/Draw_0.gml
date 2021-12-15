@@ -54,6 +54,11 @@ if (sprite_index == playerJumpSpin_spr || sprite_index == playerJumpSpinNude_spr
 	{
 		drawSpriteHat = beretSpin_spr;
 	}
+	if (global.hat == marcusHat_spr)
+	{
+		drawSpriteHat = marcusHatSpin_spr;
+	}
+	
 	if (global.top1 == smokingTop_spr)
 	{
 		drawSpriteTop1 = smokingTopSpin_spr;
@@ -100,6 +105,11 @@ if (sprite_index == playerDash_spr || sprite_index == playerDashNude_spr || spri
 	{
 		drawSpriteHat = beretDash_spr;
 	}
+	if (global.hat == marcusHat_spr)
+	{
+		drawSpriteHat = marcusHatDash_spr;
+	}
+	
 	if (global.top1 == smokingTop_spr)
 	{
 		drawSpriteTop1 = smokingTopDash_spr;
@@ -142,6 +152,11 @@ if (sprite_index = playerDashReverse_spr || sprite_index = playerDashReverseNude
 	{
 		drawSpriteHat = beretDashReverse_spr;
 	}
+	if (global.hat == marcusHat_spr)
+	{
+		drawSpriteHat = marcusHatDashReverse_spr;
+	}
+	
 	if (global.top1 == smokingTop_spr)
 	{
 		drawSpriteTop1 = smokingTopDashReverse_spr;
@@ -176,6 +191,11 @@ if (sprite_index == playerWalkingEquipped_spr || sprite_index == playerWalkingEq
 	{
 		drawSpriteHat = beretWalking_spr;
 	}
+	if (global.hat == marcusHat_spr)
+	{
+		drawSpriteHat = marcusHatWalking_spr;
+	}
+	
 	if (global.top1 == smokingTop_spr)
 	{
 		drawSpriteTop1 = smokingTopWalking_spr;
