@@ -1136,6 +1136,7 @@
   },
   "RoomOrderNodes": [
     {"roomId":{"name":"loadVars","path":"rooms/loadVars/loadVars.yy",},},
+    {"roomId":{"name":"level_Casino","path":"rooms/level_Casino/level_Casino.yy",},},
     {"roomId":{"name":"level1_SenzelaForest","path":"rooms/level1_SenzelaForest/level1_SenzelaForest.yy",},},
     {"roomId":{"name":"charCustomization","path":"rooms/charCustomization/charCustomization.yy",},},
     {"roomId":{"name":"level2_Powerplant","path":"rooms/level2_Powerplant/level2_Powerplant.yy",},},
@@ -1149,7 +1150,6 @@
     {"roomId":{"name":"level2_SenzelaForest","path":"rooms/level2_SenzelaForest/level2_SenzelaForest.yy",},},
     {"roomId":{"name":"level0_RoadToCasino","path":"rooms/level0_RoadToCasino/level0_RoadToCasino.yy",},},
     {"roomId":{"name":"levelTower_hordemode","path":"rooms/levelTower_hordemode/levelTower_hordemode.yy",},},
-    {"roomId":{"name":"level_Casino","path":"rooms/level_Casino/level_Casino.yy",},},
     {"roomId":{"name":"level_CasinoHub","path":"rooms/level_CasinoHub/level_CasinoHub.yy",},},
     {"roomId":{"name":"blackjackTable","path":"rooms/blackjackTable/blackjackTable.yy",},},
     {"roomId":{"name":"level0_SenzelaForest","path":"rooms/level0_SenzelaForest/level0_SenzelaForest.yy",},},
