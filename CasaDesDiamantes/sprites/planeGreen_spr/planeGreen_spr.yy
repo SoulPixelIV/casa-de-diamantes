@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Decoration",
-    "path": "folders/Sprites/Decoration.yy",
+    "name": "Legacy Sprites",
+    "path": "folders/Other + Legacy/Legacy Sprites.yy",
   },
   "resourceVersion": "1.0",
   "name": "planeGreen_spr",
