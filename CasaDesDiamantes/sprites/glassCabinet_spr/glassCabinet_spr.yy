@@ -27,9 +27,9 @@
     {"compositeImage":{"FrameId":{"name":"0ca05b3b-72b0-42b0-a375-d541a13c6c51","path":"sprites/glassCabinet_spr/glassCabinet_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"0ca05b3b-72b0-42b0-a375-d541a13c6c51","path":"sprites/glassCabinet_spr/glassCabinet_spr.yy",},"LayerId":{"name":"f69cf72d-dfa9-444e-8828-ab46b73f2a4e","path":"sprites/glassCabinet_spr/glassCabinet_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"glassCabinet_spr","path":"sprites/glassCabinet_spr/glassCabinet_spr.yy",},"resourceVersion":"1.0","name":"0ca05b3b-72b0-42b0-a375-d541a13c6c51","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"d7295348-715d-44c0-bfab-d3e0c6e5dad3","path":"sprites/glassCabinet_spr/glassCabinet_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"d7295348-715d-44c0-bfab-d3e0c6e5dad3","path":"sprites/glassCabinet_spr/glassCabinet_spr.yy",},"LayerId":{"name":"f69cf72d-dfa9-444e-8828-ab46b73f2a4e","path":"sprites/glassCabinet_spr/glassCabinet_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"glassCabinet_spr","path":"sprites/glassCabinet_spr/glassCabinet_spr.yy",},"resourceVersion":"1.0","name":"d7295348-715d-44c0-bfab-d3e0c6e5dad3","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"fec0e35c-63e2-4f1e-b9d8-c3fb3338412f","path":"sprites/glassCabinet_spr/glassCabinet_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"fec0e35c-63e2-4f1e-b9d8-c3fb3338412f","path":"sprites/glassCabinet_spr/glassCabinet_spr.yy",},"LayerId":{"name":"f69cf72d-dfa9-444e-8828-ab46b73f2a4e","path":"sprites/glassCabinet_spr/glassCabinet_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"glassCabinet_spr","path":"sprites/glassCabinet_spr/glassCabinet_spr.yy",},"resourceVersion":"1.0","name":"fec0e35c-63e2-4f1e-b9d8-c3fb3338412f","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"glassCabinet_spr","path":"sprites/glassCabinet_spr/glassCabinet_spr.yy",},
@@ -45,7 +45,7 @@
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"ddd8eaf9-2d78-46e7-a99b-3d6cda76d5ab","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"0ca05b3b-72b0-42b0-a375-d541a13c6c51","path":"sprites/glassCabinet_spr/glassCabinet_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"50401a53-ee45-4afb-8db1-791cd035e931","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d7295348-715d-44c0-bfab-d3e0c6e5dad3","path":"sprites/glassCabinet_spr/glassCabinet_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"297bcbb6-8182-4c2e-9b88-706044639607","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"fec0e35c-63e2-4f1e-b9d8-c3fb3338412f","path":"sprites/glassCabinet_spr/glassCabinet_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
