@@ -26,6 +26,7 @@
   "frames": [
     {"compositeImage":{"FrameId":{"name":"5e5902e2-e4fb-4874-a403-82e6092960ef","path":"sprites/casinoWallWindow_spr/casinoWallWindow_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"5e5902e2-e4fb-4874-a403-82e6092960ef","path":"sprites/casinoWallWindow_spr/casinoWallWindow_spr.yy",},"LayerId":{"name":"0c3f5183-cba1-4503-a767-d46c4e8550b1","path":"sprites/casinoWallWindow_spr/casinoWallWindow_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"5e5902e2-e4fb-4874-a403-82e6092960ef","path":"sprites/casinoWallWindow_spr/casinoWallWindow_spr.yy",},"LayerId":{"name":"1b64677d-662f-4955-9263-4a2ab172502f","path":"sprites/casinoWallWindow_spr/casinoWallWindow_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"casinoWallWindow_spr","path":"sprites/casinoWallWindow_spr/casinoWallWindow_spr.yy",},"resourceVersion":"1.0","name":"5e5902e2-e4fb-4874-a403-82e6092960ef","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
@@ -66,6 +67,7 @@
   },
   "layers": [
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"0c3f5183-cba1-4503-a767-d46c4e8550b1","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"Layer 1","resourceVersion":"1.0","name":"1b64677d-662f-4955-9263-4a2ab172502f","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
