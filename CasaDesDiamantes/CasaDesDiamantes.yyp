@@ -1051,6 +1051,7 @@
     {"id":{"name":"damageHitbox_obj","path":"objects/damageHitbox_obj/damageHitbox_obj.yy",},"order":2,},
     {"id":{"name":"flamethrowerStart_snd","path":"sounds/flamethrowerStart_snd/flamethrowerStart_snd.yy",},"order":5,},
     {"id":{"name":"collider_obj","path":"objects/collider_obj/collider_obj.yy",},"order":0,},
+    {"id":{"name":"VIP_spr","path":"sprites/VIP_spr/VIP_spr.yy",},"order":5,},
     {"id":{"name":"powerplantTiles_spr","path":"sprites/powerplantTiles_spr/powerplantTiles_spr.yy",},"order":12,},
     {"id":{"name":"zombieGirlFlashHeadshot_spr","path":"sprites/zombieGirlFlashHeadshot_spr/zombieGirlFlashHeadshot_spr.yy",},"order":7,},
     {"id":{"name":"casinoTiles","path":"tilesets/casinoTiles/casinoTiles.yy",},"order":10,},

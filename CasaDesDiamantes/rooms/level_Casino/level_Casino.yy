@@ -156,6 +156,7 @@
         {"properties":[],"isDnd":false,"objectId":{"name":"collider_obj","path":"objects/collider_obj/collider_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.15,"scaleY":5.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":731.0,"y":2176.0,"resourceVersion":"1.0","name":"inst_5CC00CA6","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"collider_obj","path":"objects/collider_obj/collider_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":14.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":320.0,"y":2176.0,"resourceVersion":"1.0","name":"inst_1B4CF46C","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"collider_obj","path":"objects/collider_obj/collider_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.15,"scaleY":1.25,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":320.0,"y":2208.0,"resourceVersion":"1.0","name":"inst_5D12837","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"collider_obj","path":"objects/collider_obj/collider_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":4.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":640.0,"y":2208.0,"resourceVersion":"1.0","name":"inst_598B1E9F","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":500,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"TileCollider","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"casinoCandleLight_obj","path":"objects/casinoCandleLight_obj/casinoCandleLight_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":560.0,"y":1200.0,"resourceVersion":"1.0","name":"inst_55B517F7","tags":[],"resourceType":"GMRInstance",},
@@ -1005,6 +1006,7 @@
     {"name":"inst_721F7D14","path":"rooms/level_Casino/level_Casino.yy",},
     {"name":"inst_654D8C6F","path":"rooms/level_Casino/level_Casino.yy",},
     {"name":"inst_2B908D47","path":"rooms/level_Casino/level_Casino.yy",},
+    {"name":"inst_598B1E9F","path":"rooms/level_Casino/level_Casino.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
