@@ -181,6 +181,7 @@
     {"id":{"name":"deathBACKUP_spr","path":"sprites/deathBACKUP_spr/deathBACKUP_spr.yy",},"order":31,},
     {"id":{"name":"infectedOverlay_spr","path":"sprites/infectedOverlay_spr/infectedOverlay_spr.yy",},"order":32,},
     {"id":{"name":"warpzoneTiles_spr","path":"sprites/warpzoneTiles_spr/warpzoneTiles_spr.yy",},"order":14,},
+    {"id":{"name":"vip_obj","path":"objects/vip_obj/vip_obj.yy",},"order":5,},
     {"id":{"name":"woodplankSmall_spr","path":"sprites/woodplankSmall_spr/woodplankSmall_spr.yy",},"order":0,},
     {"id":{"name":"casinoReceptionForeground_obj","path":"objects/casinoReceptionForeground_obj/casinoReceptionForeground_obj.yy",},"order":80,},
     {"id":{"name":"colliderOneWay_obj","path":"objects/colliderOneWay_obj/colliderOneWay_obj.yy",},"order":8,},
