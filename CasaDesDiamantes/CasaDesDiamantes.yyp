@@ -727,6 +727,7 @@
     {"id":{"name":"ad_spr","path":"sprites/ad_spr/ad_spr.yy",},"order":41,},
     {"id":{"name":"ramp_spr","path":"sprites/ramp_spr/ramp_spr.yy",},"order":1,},
     {"id":{"name":"particleBlue_obj","path":"objects/particleBlue_obj/particleBlue_obj.yy",},"order":1,},
+    {"id":{"name":"armchair_spr","path":"sprites/armchair_spr/armchair_spr.yy",},"order":44,},
     {"id":{"name":"particleRed_obj","path":"objects/particleRed_obj/particleRed_obj.yy",},"order":2,},
     {"id":{"name":"playerWalkingEquipped_spr","path":"sprites/playerWalkingEquipped_spr/playerWalkingEquipped_spr.yy",},"order":10,},
     {"id":{"name":"spotlightYellowIntense_obj","path":"objects/spotlightYellowIntense_obj/spotlightYellowIntense_obj.yy",},"order":16,},
@@ -1150,8 +1151,8 @@
   },
   "RoomOrderNodes": [
     {"roomId":{"name":"loadVars","path":"rooms/loadVars/loadVars.yy",},},
-    {"roomId":{"name":"charCustomization","path":"rooms/charCustomization/charCustomization.yy",},},
     {"roomId":{"name":"level_Casino","path":"rooms/level_Casino/level_Casino.yy",},},
+    {"roomId":{"name":"charCustomization","path":"rooms/charCustomization/charCustomization.yy",},},
     {"roomId":{"name":"level1_SenzelaForest","path":"rooms/level1_SenzelaForest/level1_SenzelaForest.yy",},},
     {"roomId":{"name":"level2_Powerplant","path":"rooms/level2_Powerplant/level2_Powerplant.yy",},},
     {"roomId":{"name":"warpzone_Powerplant","path":"rooms/warpzone_Powerplant/warpzone_Powerplant.yy",},},
