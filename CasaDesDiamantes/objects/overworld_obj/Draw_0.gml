@@ -11,4 +11,4 @@ draw_set_halign(fa_center);
 draw_text(240, 32, "-Level Select-");
 
 //Draw cursor
-draw_sprite(chipRed_spr, 0, 146, optionsY[cursorPos] + 4);
+draw_sprite(chipRed_spr, -1, 20, optionsY[cursorPos] + 4);
