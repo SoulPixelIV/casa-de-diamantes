@@ -473,7 +473,6 @@
         {"properties":[],"isDnd":false,"objectId":{"name":"healthpack_obj","path":"objects/healthpack_obj/healthpack_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":4128.0,"y":1280.0,"resourceVersion":"1.0","name":"inst_BEDA517","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"ammoPackPistol_obj","path":"objects/ammoPackPistol_obj/ammoPackPistol_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":5280.0,"y":1504.0,"resourceVersion":"1.0","name":"inst_2471B9AD","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"zombieSoldierGirl_obj","path":"objects/zombieSoldierGirl_obj/zombieSoldierGirl_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":-1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":5175.0,"y":1385.0,"resourceVersion":"1.0","name":"inst_320CD085","tags":[],"resourceType":"GMRInstance",},
-        {"properties":[],"isDnd":false,"objectId":{"name":"pistol_obj","path":"objects/pistol_obj/pistol_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":608.0,"y":672.0,"resourceVersion":"1.0","name":"inst_AFF9AA2","tags":[],"resourceType":"GMRInstance",},
         {"properties":[
             {"propertyId":{"name":"wave","path":"objects/battleArenaSpawn_obj/battleArenaSpawn_obj.yy",},"objectId":{"name":"battleArenaSpawn_obj","path":"objects/battleArenaSpawn_obj/battleArenaSpawn_obj.yy",},"value":"1","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
             {"propertyId":{"name":"enemy","path":"objects/battleArenaSpawn_obj/battleArenaSpawn_obj.yy",},"objectId":{"name":"battleArenaSpawn_obj","path":"objects/battleArenaSpawn_obj/battleArenaSpawn_obj.yy",},"value":"zombieGirl_obj","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
@@ -539,6 +538,7 @@
         {"properties":[],"isDnd":false,"objectId":{"name":"zombieSoldierGirl_obj","path":"objects/zombieSoldierGirl_obj/zombieSoldierGirl_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":-1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":2086.0,"y":939.0,"resourceVersion":"1.0","name":"inst_2079FDE9","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"desinfectionDoor_obj","path":"objects/desinfectionDoor_obj/desinfectionDoor_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":-1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":2142.0,"y":976.0,"resourceVersion":"1.0","name":"inst_731D22B1","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"enemyVisionBlockZone_obj","path":"objects/enemyVisionBlockZone_obj/enemyVisionBlockZone_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":18.5,"scaleY":0.8125,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":4562.0,"y":1495.5,"resourceVersion":"1.0","name":"inst_44ADF5D7","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"dualBarettas_obj","path":"objects/dualBarettas_obj/dualBarettas_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":608.0,"y":672.0,"resourceVersion":"1.0","name":"inst_3C66E4E8","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":1000,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Instances","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"checkpoint_obj","path":"objects/checkpoint_obj/checkpoint_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":977.0,"y":681.0,"resourceVersion":"1.0","name":"inst_734C3BCC","tags":[],"resourceType":"GMRInstance",},
@@ -1416,7 +1416,6 @@
     {"name":"inst_379455B3","path":"rooms/level1_RoadToCasino/level1_RoadToCasino.yy",},
     {"name":"inst_178D8307","path":"rooms/level1_RoadToCasino/level1_RoadToCasino.yy",},
     {"name":"inst_320CD085","path":"rooms/level1_RoadToCasino/level1_RoadToCasino.yy",},
-    {"name":"inst_AFF9AA2","path":"rooms/level1_RoadToCasino/level1_RoadToCasino.yy",},
     {"name":"inst_45C52A13","path":"rooms/level1_RoadToCasino/level1_RoadToCasino.yy",},
     {"name":"inst_3B627EF","path":"rooms/level1_RoadToCasino/level1_RoadToCasino.yy",},
     {"name":"inst_7F338704","path":"rooms/level1_RoadToCasino/level1_RoadToCasino.yy",},
@@ -1757,6 +1756,7 @@
     {"name":"inst_44ADF5D7","path":"rooms/level1_RoadToCasino/level1_RoadToCasino.yy",},
     {"name":"inst_52198E17","path":"rooms/level1_RoadToCasino/level1_RoadToCasino.yy",},
     {"name":"inst_214421","path":"rooms/level1_RoadToCasino/level1_RoadToCasino.yy",},
+    {"name":"inst_3C66E4E8","path":"rooms/level1_RoadToCasino/level1_RoadToCasino.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
