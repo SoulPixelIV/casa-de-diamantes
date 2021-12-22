@@ -1,7 +1,7 @@
 /// @description Variables
 
 global.spawn = 0;
-global.money = 3000;
+global.money = 0;
 global.syringes = 0;
 global.hasWarpzoneKey = false;
 global.key = false;

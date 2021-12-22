@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "chaingunTurret_spr",
-    "path": "sprites/chaingunTurret_spr/chaingunTurret_spr.yy",
+    "name": "redcubex16_spr",
+    "path": "sprites/redcubex16_spr/redcubex16_spr.yy",
   },
   "solid": false,
   "visible": true,
@@ -21,19 +21,17 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"player_obj","path":"objects/player_obj/player_obj.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
-  "properties": [
-    {"varType":1,"value":"250","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"aggroRange","tags":[],"resourceType":"GMObjectProperty",},
-  ],
+  "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Hazards",
-    "path": "folders/Objects/Hazards.yy",
+    "name": "TeleportBoxes",
+    "path": "folders/Objects/Spawns/TeleportBoxes.yy",
   },
   "resourceVersion": "1.0",
-  "name": "chaingunTurret_obj",
+  "name": "teleportToCasino",
   "tags": [],
   "resourceType": "GMObject",
 }
