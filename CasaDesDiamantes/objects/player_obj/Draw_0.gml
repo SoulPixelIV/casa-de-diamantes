@@ -351,12 +351,6 @@ if (!isZombie && !deathActivated)
 		//Draw Steph
 		draw_self();
 		
-		var animate = 0;
-		if (verspeed != 0)
-		{
-			animate = -1;
-		}
-		
 		if (drawSpriteHat != noone)
 		{
 			draw_sprite_ext(drawSpriteHat, -1, originX + lengthdir_x(radius, theta), originY + lengthdir_y(radius, theta), image_xscale, 1, playerRotation, -1, image_alpha);
