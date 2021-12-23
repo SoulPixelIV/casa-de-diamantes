@@ -1156,8 +1156,8 @@
   },
   "RoomOrderNodes": [
     {"roomId":{"name":"loadVars","path":"rooms/loadVars/loadVars.yy",},},
-    {"roomId":{"name":"mainmenu","path":"rooms/mainmenu/mainmenu.yy",},},
     {"roomId":{"name":"level1_RoadToCasino","path":"rooms/level1_RoadToCasino/level1_RoadToCasino.yy",},},
+    {"roomId":{"name":"mainmenu","path":"rooms/mainmenu/mainmenu.yy",},},
     {"roomId":{"name":"level1_SenzelaForest","path":"rooms/level1_SenzelaForest/level1_SenzelaForest.yy",},},
     {"roomId":{"name":"charCustomization","path":"rooms/charCustomization/charCustomization.yy",},},
     {"roomId":{"name":"level0_RoadToCasino","path":"rooms/level0_RoadToCasino/level0_RoadToCasino.yy",},},
