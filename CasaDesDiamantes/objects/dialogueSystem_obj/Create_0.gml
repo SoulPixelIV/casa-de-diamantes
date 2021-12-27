@@ -3,6 +3,7 @@ scene1 = false;
 scene2 = false;
 scene3 = false;
 scene4 = false;
+scene5 = false;
 
 //Dialogue Markers
 scene1Low = 0;
@@ -13,6 +14,8 @@ scene3Low = 17;
 scene3High = 25;
 scene4Low = 26;
 scene4High = 28;
+scene5Low = 29;
+scene5High = 40;
 
 //Dialogue Text
 //!!!ALWAYS 1 FREE SPACE BETWEEN SCENES
@@ -22,6 +25,7 @@ scene4High = 28;
 // % = Cutie-Plus
 // ] = Bartender
 // [ = Bunnygirl
+// ^ = VIP
 // W[Number] = Open specific window menu
 
 //Scene 1
@@ -60,3 +64,18 @@ dialogue[25] = "";
 dialogue[26] = "[Good evening!";
 dialogue[27] = "G1";
 dialogue[28] = "";
+
+//Scene 5 VIP First Mission
+dialogue[29] = "^Evening.";
+dialogue[30] = "#I'm looking for a contract.";
+dialogue[31] = "^Well, let's get to business then.";
+dialogue[32] = "^I need you to eliminate a target for me.";
+dialogue[33] = "^No talking. No evidences. No mistakes.";
+dialogue[34] = "#What's the pay?";
+dialogue[35] = "^2000 chips upfront, 6000 on completion.";
+dialogue[36] = "#Sounds like a deal to me.";
+dialogue[37] = "^The target is located somewhere deep in the Senzela Forest.";
+dialogue[38] = "^He is also armed so prepare yourself.";
+dialogue[39] = "#Alright.";
+dialogue[40] = "^Now get going.";
+dialogue[41] = "";

@@ -109,6 +109,10 @@ if (string_char_at(dialogue[dialogueLine], 1) == "[")
 {
 	character = casinobunny_obj;
 }
+if (string_char_at(dialogue[dialogueLine], 1) == "^")
+{
+	character = vip_obj;
+}
 
 //Windows
 if (string_char_at(dialogue[dialogueLine], 1) == "W")

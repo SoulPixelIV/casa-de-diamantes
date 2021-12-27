@@ -54,3 +54,17 @@ if (scene4)
 	}
 	scene4 = false;
 }
+//Scene 5
+if (scene5)
+{
+	if (!camera_obj.drawText)
+	{
+		for (i = scene5Low; i < scene5High + 1; i++)
+		{
+			camera_obj.dialogue[i] = dialogue[i];
+		}
+		camera_obj.dialogueLine = scene5Low;
+		camera_obj.drawText = true;
+	}
+	scene5 = false;
+}
