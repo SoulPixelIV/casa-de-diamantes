@@ -131,7 +131,7 @@
     "path": "folders/Other + Legacy/Fonts.yy",
   },
   "resourceVersion": "1.0",
-  "name": "gothicPixel_fnt",
+  "name": "gothicPixelSmall_fnt",
   "tags": [],
   "resourceType": "GMFont",
 }

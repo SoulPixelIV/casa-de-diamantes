@@ -897,6 +897,18 @@ if (showStartscreen) {
 	}
 }
 
+if (showStartTitle1) {
+	draw_set_font(gothicPixelBig_fnt);
+	draw_set_color(make_color_rgb(255, 215, 0));
+	draw_set_halign(fa_center);
+	draw_text(x, y - global.yScreenSize / 3, "-Senzela Forest-");
+	draw_set_font(gothicPixel_fnt);
+	draw_text(x, y - global.yScreenSize / 3 + 48, "Eliminate the target");
+	draw_set_font(gothicPixelSmall_fnt);
+	draw_text(x, y - global.yScreenSize / 3 + 72, "PRESS -START-");
+	draw_set_halign(fa_left);
+}
+
 //Cursor
 //Crosshair Setup
 if (instance_exists(player_obj)) {
