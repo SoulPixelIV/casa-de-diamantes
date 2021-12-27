@@ -1,0 +1,28 @@
+if (place_meeting(x, y, player_obj))
+{
+	teleporting = true;
+	player_obj.movement = false;
+}
+
+if (teleporting) {
+	blackscreen_scr(0);
+	blackscreenDelay -= global.dt;
+}
+
+if (blackscreenDelay < 0) {
+	player_obj.x = Spawn4_obj.x;
+	player_obj.y = Spawn4_obj.y;
+	player_obj.movement = true;
+	finishingTeleport = true;
+	blackscreenDelay = blackscreenDelaySave;
+	teleporting = false;
+}
+
+if (finishingTeleport) {
+	waitDelay -= global.dt;
+	if (waitDelay < 0) {	
+		part_emitter_destroy_all(global.partSystem);
+		instance_destroy(player_obj);
+		room_goto(level0_SenzelaForest);
+	}
+}

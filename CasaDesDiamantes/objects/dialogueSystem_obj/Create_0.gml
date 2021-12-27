@@ -15,7 +15,7 @@ scene3High = 25;
 scene4Low = 26;
 scene4High = 28;
 scene5Low = 29;
-scene5High = 40;
+scene5High = 41;
 
 //Dialogue Text
 //!!!ALWAYS 1 FREE SPACE BETWEEN SCENES

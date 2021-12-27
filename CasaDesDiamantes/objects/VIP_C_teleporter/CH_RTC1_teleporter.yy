@@ -21,18 +21,17 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"player_obj","path":"objects/player_obj/player_obj.yy",},"parent":{"name":"CH_RTC1_teleporter","path":"objects/CH_RTC1_teleporter/CH_RTC1_teleporter.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"parent":{"name":"CH_RTC1_teleporter","path":"objects/CH_RTC1_teleporter/CH_RTC1_teleporter.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
     "name": "TeleportBoxes",
-    "path": "folders/Objects/Spawns/TeleportBoxes.yy",
+    "path": "folders/Objects/TeleportBoxes.yy",
   },
   "resourceVersion": "1.0",
-  "name": "VIP_CH_teleporter",
+  "name": "CH_RTC1_teleporter",
   "tags": [],
   "resourceType": "GMObject",
 }
