@@ -879,6 +879,24 @@ if (instance_exists(player_obj)) {
 	}
 }
 
+//Start Screen
+if (showStartscreen) {
+	startScreenXAxis1 += global.dt / 2;
+	startScreenXAxis2 += global.dt / 2;
+	startScreen1Pos = (x - global.xScreenSize / 2) - startScreenXAxis1;
+	startScreen2Pos = ((x - global.xScreenSize / 2) - startScreenXAxis2) + 540;
+	
+	draw_sprite(startOverlay_spr, 0, startScreen1Pos, y - global.yScreenSize);
+	draw_sprite(startOverlay_spr, 0, startScreen2Pos, y - global.yScreenSize);
+	
+	if (startScreenXAxis1 > 540) {
+		startScreenXAxis1 = 0;
+	}
+	if (startScreenXAxis2 > 540) {
+		startScreenXAxis2 = 0;
+	}
+}
+
 //Cursor
 //Crosshair Setup
 if (instance_exists(player_obj)) {
