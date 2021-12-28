@@ -558,7 +558,7 @@
     {"instances":[],"visible":true,"depth":2200,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Background4","tags":[],"resourceType":"GMRInstanceLayer",},
   ],
   "inheritLayers": false,
-  "creationCodeFile": "${project_dir}/rooms/level1_SenzelaForest/RoomCreationCode.gml",
+  "creationCodeFile": "${project_dir}/rooms/level0_Powerplant/RoomCreationCode.gml",
   "inheritCode": false,
   "instanceCreationOrder": [
     {"name":"inst_3EAA5435","path":"rooms/level0_Powerplant/level0_Powerplant.yy",},

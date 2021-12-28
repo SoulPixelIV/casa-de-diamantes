@@ -881,13 +881,14 @@ if (instance_exists(player_obj)) {
 
 //Start Screen
 if (showStartscreen) {
+	player_obj.movement = false;
 	startScreenXAxis1 += global.dt / 2;
 	startScreenXAxis2 += global.dt / 2;
 	startScreen1Pos = (x - global.xScreenSize / 2) - startScreenXAxis1;
 	startScreen2Pos = ((x - global.xScreenSize / 2) - startScreenXAxis2) + 540;
 	
-	draw_sprite(startOverlay_spr, 0, startScreen1Pos, y - global.yScreenSize);
-	draw_sprite(startOverlay_spr, 0, startScreen2Pos, y - global.yScreenSize);
+	draw_sprite(startOverlay_spr, 0, startScreen1Pos, y - global.yScreenSize - startScreenYAxis);
+	draw_sprite(startOverlay_spr, 0, startScreen2Pos, y - global.yScreenSize - startScreenYAxis);
 	
 	if (startScreenXAxis1 > 540) {
 		startScreenXAxis1 = 0;
@@ -895,17 +896,70 @@ if (showStartscreen) {
 	if (startScreenXAxis2 > 540) {
 		startScreenXAxis2 = 0;
 	}
+	
+	if (player_obj.key_jump || keyboard_check_pressed(vk_enter)) {
+		startScreenDone = true;
+	}
+	
+	if (startScreenDone) {
+		startScreenYAxis += global.dt * 5;
+		if (startScreenYAxis > 350) {
+			startScreenXAxis1 = 0;
+			startScreenXAxis2 = 0;
+			startScreenYAxis = 0;
+			
+			startScreenDone = false;
+			showStartscreen = false;
+			showStartTitle1 = false;
+			showStartTitle2 = false;
+			showStartTitle3 = false;
+			showStartTitle4 = false;
+			
+			player_obj.movement = true;
+		}
+	}
 }
 
 if (showStartTitle1) {
 	draw_set_font(gothicPixelBig_fnt);
 	draw_set_color(make_color_rgb(255, 215, 0));
 	draw_set_halign(fa_center);
-	draw_text(x, y - global.yScreenSize / 3, "-Senzela Forest-");
+	draw_text(x, y - global.yScreenSize / 3 - startScreenYAxis, "-Paredia West-");
 	draw_set_font(gothicPixel_fnt);
-	draw_text(x, y - global.yScreenSize / 3 + 48, "Eliminate the target");
+	draw_text(x, y - global.yScreenSize / 3 + 48 - startScreenYAxis, "Escape to Safety");
 	draw_set_font(gothicPixelSmall_fnt);
-	draw_text(x, y - global.yScreenSize / 3 + 72, "PRESS -START-");
+	draw_text(x, y - global.yScreenSize / 3 + 72 - startScreenYAxis, "PRESS -START-");
+	draw_set_halign(fa_left);
+}
+if (showStartTitle2) {
+	draw_set_font(gothicPixelBig_fnt);
+	draw_set_color(make_color_rgb(255, 215, 0));
+	draw_set_halign(fa_center);
+	draw_text(x, y - global.yScreenSize / 3 - startScreenYAxis, "-Casa De Diamantes-");
+	draw_set_font(gothicPixelSmall_fnt);
+	draw_text(x, y - global.yScreenSize / 3 + 72 - startScreenYAxis, "PRESS -START-");
+	draw_set_halign(fa_left);
+}
+if (showStartTitle3) {
+	draw_set_font(gothicPixelBig_fnt);
+	draw_set_color(make_color_rgb(255, 215, 0));
+	draw_set_halign(fa_center);
+	draw_text(x, y - global.yScreenSize / 3 - startScreenYAxis, "-Senzela Forest-");
+	draw_set_font(gothicPixel_fnt);
+	draw_text(x, y - global.yScreenSize / 3 + 48 - startScreenYAxis, "Eliminate the target");
+	draw_set_font(gothicPixelSmall_fnt);
+	draw_text(x, y - global.yScreenSize / 3 + 72 - startScreenYAxis, "PRESS -START-");
+	draw_set_halign(fa_left);
+}
+if (showStartTitle4) {
+	draw_set_font(gothicPixelBig_fnt);
+	draw_set_color(make_color_rgb(255, 215, 0));
+	draw_set_halign(fa_center);
+	draw_text(x, y - global.yScreenSize / 3 - startScreenYAxis, "-EDEN Powerplant-");
+	draw_set_font(gothicPixel_fnt);
+	draw_text(x, y - global.yScreenSize / 3 + 48 - startScreenYAxis, "Reroute power to the Casino");
+	draw_set_font(gothicPixelSmall_fnt);
+	draw_text(x, y - global.yScreenSize / 3 + 72 - startScreenYAxis, "PRESS -START-");
 	draw_set_halign(fa_left);
 }
 
