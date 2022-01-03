@@ -100,13 +100,9 @@ else if (room == blackjackTable)
 {
 	global.ambientShadowIntensity = 0.55 * global.gamma;
 }
-else if (room == level0_SenzelaForest || room == level1_SenzelaForest)
+else if (room == level0_SenzelaForest || room == level1_SenzelaForest || room == level2_SenzelaForest || room == level3_SenzelaForest)
 {
-	global.ambientShadowIntensity = 0.6 * global.gamma;
-}
-else if (room == level2_SenzelaForest)
-{
-	global.ambientShadowIntensity = 0.55 * global.gamma;
+	global.ambientShadowIntensity = 0.53 * global.gamma;
 }
 else if (room == level0_Powerplant || room == level1_Powerplant || room == level2_Powerplant || room == level3_Powerplant)
 {
@@ -115,6 +111,10 @@ else if (room == level0_Powerplant || room == level1_Powerplant || room == level
 else if (room == warpzone_Powerplant)
 {
 	global.ambientShadowIntensity = 0.7 * global.gamma;
+}
+else if (room == level0_DarkSewers)
+{
+	global.ambientShadowIntensity = 0.8 * global.gamma;
 }
 else
 {

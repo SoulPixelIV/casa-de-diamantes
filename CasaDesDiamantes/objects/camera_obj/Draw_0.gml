@@ -262,11 +262,11 @@ if (!hitVignette && !visualalarmlight)
 	}
 	else
 	{
-		if (vignetteAlpha > 0.1)
+		if (vignetteAlpha > 0)
 		{
 			vignetteAlpha -= 0.02;
 		}
-		if (vignetteAlpha < 0.1)
+		if (vignetteAlpha < 0)
 		{
 			vignetteAlpha += 0.02;
 		}
