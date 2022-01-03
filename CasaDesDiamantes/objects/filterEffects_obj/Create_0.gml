@@ -1,0 +1,1 @@
+myEffect = fx_create("_filter_tintfilter");

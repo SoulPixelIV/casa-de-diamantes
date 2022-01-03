@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"20d81cce-d4a2-4010-bc25-e89a299fd01b","path":"sprites/caveBackgroundTiles_spr/caveBackgroundTiles_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"20d81cce-d4a2-4010-bc25-e89a299fd01b","path":"sprites/caveBackgroundTiles_spr/caveBackgroundTiles_spr.yy",},"LayerId":{"name":"6e7e754c-65ea-4434-a93a-3a674bf6517b","path":"sprites/caveBackgroundTiles_spr/caveBackgroundTiles_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"caveBackgroundTiles_spr","path":"sprites/caveBackgroundTiles_spr/caveBackgroundTiles_spr.yy",},"resourceVersion":"1.0","name":"20d81cce-d4a2-4010-bc25-e89a299fd01b","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"20d81cce-d4a2-4010-bc25-e89a299fd01b","path":"sprites/caveCrystals_spr/caveCrystals_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"20d81cce-d4a2-4010-bc25-e89a299fd01b","path":"sprites/caveCrystals_spr/caveCrystals_spr.yy",},"LayerId":{"name":"6e7e754c-65ea-4434-a93a-3a674bf6517b","path":"sprites/caveCrystals_spr/caveCrystals_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"caveCrystals_spr","path":"sprites/caveCrystals_spr/caveCrystals_spr.yy",},"resourceVersion":"1.0","name":"20d81cce-d4a2-4010-bc25-e89a299fd01b","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"caveBackgroundTiles_spr","path":"sprites/caveBackgroundTiles_spr/caveBackgroundTiles_spr.yy",},
+    "spriteId": {"name":"caveCrystals_spr","path":"sprites/caveCrystals_spr/caveCrystals_spr.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 15.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"c39a32df-02e0-4b8a-ae28-52e6537ef615","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"20d81cce-d4a2-4010-bc25-e89a299fd01b","path":"sprites/caveBackgroundTiles_spr/caveBackgroundTiles_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"257d819b-0cd5-4bbc-9ce2-05439bba6258","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"20d81cce-d4a2-4010-bc25-e89a299fd01b","path":"sprites/caveCrystals_spr/caveCrystals_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -58,9 +58,9 @@
     "yorigin": 128,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"caveBackgroundTiles_spr","path":"sprites/caveBackgroundTiles_spr/caveBackgroundTiles_spr.yy",},
+    "parent": {"name":"caveCrystals_spr","path":"sprites/caveCrystals_spr/caveCrystals_spr.yy",},
     "resourceVersion": "1.3",
-    "name": "caveBackgroundTiles_spr",
+    "name": "caveCrystals_spr",
     "tags": [],
     "resourceType": "GMSequence",
   },
@@ -73,7 +73,7 @@
     "path": "folders/Sprites/Tilesets.yy",
   },
   "resourceVersion": "1.0",
-  "name": "caveBackgroundTiles_spr",
+  "name": "caveCrystals_spr",
   "tags": [],
   "resourceType": "GMSprite",
 }
