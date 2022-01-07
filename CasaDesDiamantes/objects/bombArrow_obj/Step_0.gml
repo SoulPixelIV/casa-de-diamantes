@@ -2,7 +2,13 @@
 if (!stuckInEnemy) {
 	x += horspeed * global.dt / 3;
 	y += verspeed * global.dt / 3;
-	image_angle += global.dt / 5;
+	
+	if (horspeed < 0) {
+		image_angle += global.dt / 5;
+	}
+	if (horspeed > 0) {
+		image_angle -= global.dt / 5;
+	}
 
 	//Invincibility
 	if (invincibilityTimer > 0)

@@ -188,10 +188,10 @@ function shooting_scr(argument0) {
 	{
 		//var pistolShot = audio_play_sound(bowShot_snd, 1, false);
 		//audio_sound_pitch(pistolShot, 2 - ((player_obj.bowDamageValue / 100) / 5));
-		
+		screenshake(50, 3.5, 0.4, id);
 		var bombarrow = instance_create_layer(playerBulletLine_obj.x, playerBulletLine_obj.y, "Instances", bombArrow_obj);
-		bombarrow.horspeed = cos(degtorad(player_obj.dirCursor)) * (player_obj.bowReadyingImage * 6 + 4);
-		bombarrow.verspeed = -sin(degtorad(player_obj.dirCursor)) * (player_obj.bowReadyingImage * 6 + 4);
+		bombarrow.horspeed = cos(degtorad(player_obj.dirCursor)) * (player_obj.bowReadyingImage * 6 + 6);
+		bombarrow.verspeed = -sin(degtorad(player_obj.dirCursor)) * (player_obj.bowReadyingImage * 6 + 6);
 		
 		global.bowCooldown = global.bowCooldownSave;
 		shotZoom = true;

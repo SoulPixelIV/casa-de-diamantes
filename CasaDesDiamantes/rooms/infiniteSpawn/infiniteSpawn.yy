@@ -87,6 +87,7 @@
         {"properties":[
             {"propertyId":{"name":"timer","path":"objects/enemySpawnerExplosive_obj/enemySpawnerExplosive_obj.yy",},"objectId":{"name":"enemySpawnerExplosive_obj","path":"objects/enemySpawnerExplosive_obj/enemySpawnerExplosive_obj.yy",},"value":"6000","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
           ],"isDnd":false,"objectId":{"name":"enemySpawnerExplosive_obj","path":"objects/enemySpawnerExplosive_obj/enemySpawnerExplosive_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":544.0,"y":544.0,"resourceVersion":"1.0","name":"inst_42901642","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"bow_obj","path":"objects/bow_obj/bow_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":416.0,"y":576.0,"resourceVersion":"1.0","name":"inst_2F2CA38F","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":600,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Instances","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[],"visible":true,"depth":700,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"MidgroundObjects","tags":[],"resourceType":"GMRInstanceLayer",},
     {"tilesetId":{"name":"caveTilesOld","path":"tilesets/caveTilesOld/caveTilesOld.yy",},"x":0,"y":0,"tiles":{"SerialiseWidth":63,"SerialiseHeight":32,"TileSerialiseData":[
@@ -450,6 +451,7 @@
     {"name":"inst_3BF6CA9D","path":"rooms/infiniteSpawn/infiniteSpawn.yy",},
     {"name":"inst_ED6CDC8","path":"rooms/infiniteSpawn/infiniteSpawn.yy",},
     {"name":"inst_2A23128E","path":"rooms/infiniteSpawn/infiniteSpawn.yy",},
+    {"name":"inst_2F2CA38F","path":"rooms/infiniteSpawn/infiniteSpawn.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

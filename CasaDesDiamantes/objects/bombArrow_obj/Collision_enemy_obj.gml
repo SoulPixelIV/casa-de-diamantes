@@ -17,7 +17,7 @@ if (!dealtDamage && instance_exists(enemyTarget) && other.hitable)
 	horspeed = horspeed / 1.1;
 	verspeed = verspeed / 1.1;
 	
-	if ((horspeed < 4 && horspeed > -4) && (verspeed < 4 && verspeed > -4)) {
+	if ((horspeed < 4 && horspeed > -4) && (verspeed < 4 && verspeed > -4) && enemyTarget.hp > 0) {
 		penetration = 0;
 	}
 	
