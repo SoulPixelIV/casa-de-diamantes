@@ -45,6 +45,7 @@ lastCheckpoint = noone;
 
 //Effects
 enemySlowMotionTimer = 100;
+trailDensity = 3;
 shotZoomTimer = 8.75;
 walljumpDustTimer = 12;
 dashDustTimer = 18;
@@ -154,6 +155,7 @@ scrollDelaySave = scrollDelay;
 radiationHitTimerSave = radiationHitTimer;
 blackborderPauseTimerSave = blackborderPauseTimer;
 invincibleHitCooldownSave = invincibleHitCooldown;
+trailDensitySave = trailDensity;
 
 //Accessories
 theta = 0;

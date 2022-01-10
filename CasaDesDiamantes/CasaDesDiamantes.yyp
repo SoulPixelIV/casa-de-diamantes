@@ -948,6 +948,7 @@
     {"id":{"name":"clothTest_obj","path":"objects/clothTest_obj/clothTest_obj.yy",},"order":4,},
     {"id":{"name":"RTC1_RTC0_teleporter","path":"objects/RTC1_RTC0_teleporter/RTC1_RTC0_teleporter.yy",},"order":0,},
     {"id":{"name":"goldenElevatorChain_spr","path":"sprites/goldenElevatorChain_spr/goldenElevatorChain_spr.yy",},"order":109,},
+    {"id":{"name":"playerTrail_obj","path":"objects/playerTrail_obj/playerTrail_obj.yy",},"order":8,},
     {"id":{"name":"RTC0_RTC1_teleporter","path":"objects/RTC0_RTC1_teleporter/RTC0_RTC1_teleporter.yy",},"order":1,},
     {"id":{"name":"RTC1_CH_teleporter","path":"objects/RTC1_CH_teleporter/RTC1_CH_teleporter.yy",},"order":2,},
     {"id":{"name":"elevatorSign_spr","path":"sprites/elevatorSign_spr/elevatorSign_spr.yy",},"order":128,},
