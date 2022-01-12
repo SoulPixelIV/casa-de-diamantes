@@ -1,6 +1,7 @@
-lifetime = 35;
+lifetime = 8;
 
 image_xscale = player_obj.image_xscale;
+image_alpha = 0.4;
 
 drawSpriteHat = global.hat;
 drawSpriteTop1 = global.top1;
@@ -12,10 +13,6 @@ spinWeaponPos = player_obj.spinWeaponPos;
 currDir = player_obj.currDir;
 dirCursor = player_obj.dirCursor;
 changePos = player_obj.changePos;
-isDashing = false;
-if (player_obj.isDashing) {
-	isDashing = true;
-}
 
 //Accessories
 theta = 0;

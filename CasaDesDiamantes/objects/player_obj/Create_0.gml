@@ -45,7 +45,7 @@ lastCheckpoint = noone;
 
 //Effects
 enemySlowMotionTimer = 100;
-trailDensity = 3;
+trailDensity = 1;
 shotZoomTimer = 8.75;
 walljumpDustTimer = 12;
 dashDustTimer = 18;

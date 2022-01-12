@@ -80,6 +80,7 @@
     {"id":{"name":"barrelTrigger_spr","path":"sprites/barrelTrigger_spr/barrelTrigger_spr.yy",},"order":2,},
     {"id":{"name":"explosionTiny_obj","path":"objects/explosionTiny_obj/explosionTiny_obj.yy",},"order":10,},
     {"id":{"name":"chipRedSide_spr","path":"sprites/chipRedSide_spr/chipRedSide_spr.yy",},"order":77,},
+    {"id":{"name":"silencedMP_spr","path":"sprites/silencedMP_spr/silencedMP_spr.yy",},"order":142,},
     {"id":{"name":"smokingJacket_spr","path":"sprites/smokingJacket_spr/smokingJacket_spr.yy",},"order":0,},
     {"id":{"name":"senzelaBackground_spr","path":"sprites/senzelaBackground_spr/senzelaBackground_spr.yy",},"order":2,},
     {"id":{"name":"blackjackTable","path":"rooms/blackjackTable/blackjackTable.yy",},"order":3,},
