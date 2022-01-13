@@ -1,6 +1,6 @@
 function pickWeapon_scr(argument0) {
 	
-	if (argument0 == 0 && global.currentWeapon != gameManager_obj.pickedWeapon.pistol || argument0 == 1 && global.currentWeapon != gameManager_obj.pickedWeapon.dualBarettas || argument0 == 2 && global.currentWeapon != gameManager_obj.pickedWeapon.shotgun || argument0 == 3 && global.currentWeapon != gameManager_obj.pickedWeapon.sniper)
+	if (argument0 == 0 && global.currentWeapon != gameManager_obj.pickedWeapon.pistol || argument0 == 1 && global.currentWeapon != gameManager_obj.pickedWeapon.dualBarettas || argument0 == 2 && global.currentWeapon != gameManager_obj.pickedWeapon.shotgun || argument0 == 3 && global.currentWeapon != gameManager_obj.pickedWeapon.sniper && argument0 == 5 && global.currentWeapon != gameManager_obj.pickedWeapon.silencedMP)
 	{
 		audio_play_sound(pickup_snd, 1, false);
 	}
@@ -26,6 +26,10 @@ function pickWeapon_scr(argument0) {
 		case 4:
 			global.currentWeapon = gameManager_obj.pickedWeapon.bow;
 			global.unlockedWeapon[4] = true;
+			break;
+		case 5:
+			global.currentWeapon = gameManager_obj.pickedWeapon.silencedMP;
+			global.unlockedWeapon[5] = true;
 			break;
 	}
 	player_obj.unarmed = false;

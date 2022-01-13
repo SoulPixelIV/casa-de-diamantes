@@ -6,6 +6,7 @@ dualBarettasSprite = playerDualBarettas_spr;
 shotgunSprite = playerShotgun_spr;
 sniperSprite = playerSniper_spr;
 bowSprite = playerBow_spr;
+silencedMPSprite = playerSilencedMP_spr;
 
 //Draw Accessories
 originX = player_obj.x;
@@ -451,6 +452,14 @@ if (!isZombie && !deathActivated)
 		if (global.currentWeapon == gameManager_obj.pickedWeapon.shotgun)
 		{
 			draw_sprite_ext(playerShotgun_spr, 0, x + ((2 - spinWeaponPos) * currDir) * changePos, y - 4, 1, -currDir, dirCursor, -1, image_alpha);
+		}
+		
+		//SILENCED MP
+		if (global.currentWeapon == gameManager_obj.pickedWeapon.silencedMP)
+		{
+			draw_sprite_ext(playerSilencedMP_spr, 0, x + ((2 - spinWeaponPos) * currDir) * changePos, y - 4, 1, -currDir, dirCursor, -1, image_alpha);
+			//Second arm
+			draw_sprite_ext(drawSpriteArm, 0, x + ((-3 - spinWeaponPos) * currDir) * changePos, y - 4, 1, -currDir, dirCursor, -1, image_alpha);
 		}
 		
 		//SNIPER

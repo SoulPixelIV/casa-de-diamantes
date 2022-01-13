@@ -947,6 +947,25 @@ if (!isZombie && !deathActivated)
 			}
 		}
 	}
+	
+	//Silenced MP
+	with (gameManager_obj)
+	{
+		if (global.currentWeapon == pickedWeapon.silencedMP && global.silencedMPCooldown <= 0)
+		{
+			with (player_obj)
+			{
+				startShotCooldown = false;
+				if (key_shoot && !reloading)
+				{
+					if (!onLadder || onLadder && verspeed == 0)
+					{
+						shooting_scr("silencedMP");
+					}
+				}
+			}
+		}
+	}
 }
 
 //ShotZoom
@@ -995,6 +1014,10 @@ if (startShotCooldown)
 		{
 			global.bowCooldown -= 0.1 * global.dt;
 		}
+		if (global.currentWeapon == pickedWeapon.silencedMP)
+		{
+			global.silencedMPCooldown -= 0.1 * global.dt;
+		}
 	}	
 }
 with (gameManager_obj)
@@ -1016,6 +1039,10 @@ with (gameManager_obj)
 		player_obj.startShotCooldown = true;
 	}
 	if (global.currentWeapon == pickedWeapon.bow && global.bowCooldown > 0)
+	{
+		player_obj.startShotCooldown = true;
+	}
+	if (global.currentWeapon == pickedWeapon.silencedMP && global.silencedMPCooldown > 0)
 	{
 		player_obj.startShotCooldown = true;
 	}
@@ -1044,6 +1071,10 @@ if (!isZombie && !reloading)
 		{
 			pickWeapon_scr(4);
 		}
+		if (keyboard_check_pressed(ord("5")) && global.unlockedWeapon[3])
+		{
+			pickWeapon_scr(5);
+		}
 		
 		if (global.unlockedWeapon[1])
 		{
@@ -1060,6 +1091,10 @@ if (!isZombie && !reloading)
 		if (global.unlockedWeapon[4])
 		{
 			scrollWeapons[3] = 1;
+		}
+		if (global.unlockedWeapon[5])
+		{
+			scrollWeapons[4] = 1;
 		}
 		
 		if (!startScrollDelay)
@@ -1123,7 +1158,7 @@ if (scrollDelay < 0)
 }
 
 //Switch to pistol if empty
-if ((global.pistolAmmo == 0 || global.unlockedWeapon[1] == false) && (global.shotgunAmmo == 0 || global.unlockedWeapon[2] == false) && global.currentWeapon != pickedWeapon.pistol)
+if ((global.pistolAmmo == 0 || global.unlockedWeapon[1] == false) && (global.shotgunAmmo == 0 || global.unlockedWeapon[2] == false && (global.silencedMPAmmo == 0 || global.unlockedWeapon[5] == false)) && global.currentWeapon != pickedWeapon.pistol)
 {
 	pickWeapon_scr(0);
 }
@@ -1138,6 +1173,11 @@ if (global.currentWeapon == pickedWeapon.pistol)
 	if (global.unlockedWeapon[2] == true && global.shotgunAmmo > 0)
 	{
 		pickWeapon_scr(2);
+	}
+	else
+	if (global.unlockedWeapon[5] == true && global.silencedMPAmmo > 0)
+	{
+		pickWeapon_scr(5);
 	}
 }
 

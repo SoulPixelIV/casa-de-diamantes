@@ -1,4 +1,4 @@
-lifetime = 8;
+lifetime = 4;
 
 image_xscale = player_obj.image_xscale;
 image_alpha = 0.4;
