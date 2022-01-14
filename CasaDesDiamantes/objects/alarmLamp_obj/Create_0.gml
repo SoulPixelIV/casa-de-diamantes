@@ -1,1 +1,1 @@
-lightRot = 0;
+lightRot = random_range(-60, 60);
