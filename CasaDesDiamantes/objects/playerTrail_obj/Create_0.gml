@@ -1,5 +1,7 @@
 lifetime = 4;
 
+image_blend =  make_color_rgb(255, 180, 180);
+
 image_xscale = player_obj.image_xscale;
 image_alpha = 0.4;
 
