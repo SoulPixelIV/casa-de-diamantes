@@ -1,4 +1,4 @@
-lifetime = 4;
+lifetime = 2;
 
 image_blend =  make_color_rgb(255, 180, 180);
 
