@@ -210,6 +210,16 @@ if (isDashing && dashDustEndTimer > 0) {
 	}
 }
 
+//DEBUG Slowmo Forced
+if (keyboard_check_pressed(vk_delete)) {
+	forceSlowmo = !forceSlowmo;
+	if (forceSlowmo) {
+		blackborderPauseTimer = 0;
+	} else {
+		blackborderPauseTimer = blackborderPauseTimerSave;
+	}
+}
+
 if (isDashing && !onLadder)
 {	
 	with (gameManager_obj)

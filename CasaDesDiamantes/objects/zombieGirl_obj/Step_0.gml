@@ -198,7 +198,7 @@ if (hp < 0)
 	
 	//Enemy Slowmo
 	var randNum = choose(1,2,3,4,5,6,7,8,9);
-	if (randNum == 9)
+	if (randNum == 9 || player_obj.forceSlowmo)
 	{
 		player_obj.enemySlowmo = true;
 		player_obj.camFollowTarget = deathCross;

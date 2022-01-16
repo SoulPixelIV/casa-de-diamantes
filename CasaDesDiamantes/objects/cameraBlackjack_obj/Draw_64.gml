@@ -132,4 +132,9 @@ if (blackJackCalc_obj.screen == 2)
 	}
 }
 
-draw_sprite(cursor_spr, 0, mouse_x, mouse_y);
+if (!noHUD)
+{
+	draw_sprite(guiBorder_spr, 0, 0, 0);
+}
+
+draw_sprite(mousecursor_spr, 0, mouse_x, mouse_y);

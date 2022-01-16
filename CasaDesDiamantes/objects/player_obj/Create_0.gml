@@ -121,6 +121,9 @@ startScrollDelay = false;
 playedSoundBowReadying = false;
 laserAimImage = 0;
 
+//Debug
+forceSlowmo = false;
+
 key_up_pressed = noone;
 key_down = noone;
 key_down_pressed = noone;
