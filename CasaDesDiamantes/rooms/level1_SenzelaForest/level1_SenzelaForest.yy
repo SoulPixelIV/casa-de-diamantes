@@ -954,6 +954,7 @@
         {"properties":[],"isDnd":false,"objectId":{"name":"dualBarettas_obj","path":"objects/dualBarettas_obj/dualBarettas_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":2016.0,"y":1664.0,"resourceVersion":"1.0","name":"inst_2875170A","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"ammoPackPistol_obj","path":"objects/ammoPackPistol_obj/ammoPackPistol_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":2048.0,"y":1664.0,"resourceVersion":"1.0","name":"inst_2A04C03F","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"ammoPackPistol_obj","path":"objects/ammoPackPistol_obj/ammoPackPistol_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":2016.0,"y":1632.0,"resourceVersion":"1.0","name":"inst_74A10326","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"playerReworkTest","path":"objects/playerReworkTest/playerReworkTest.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1756.0,"y":1681.0,"resourceVersion":"1.0","name":"inst_C90B3B8","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":700,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Instances","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"checkpoint_obj","path":"objects/checkpoint_obj/checkpoint_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":2464.0,"y":1680.0,"resourceVersion":"1.0","name":"inst_3E71763F","tags":[],"resourceType":"GMRInstance",},
@@ -2797,6 +2798,7 @@
     {"name":"inst_2875170A","path":"rooms/level1_SenzelaForest/level1_SenzelaForest.yy",},
     {"name":"inst_2A04C03F","path":"rooms/level1_SenzelaForest/level1_SenzelaForest.yy",},
     {"name":"inst_74A10326","path":"rooms/level1_SenzelaForest/level1_SenzelaForest.yy",},
+    {"name":"inst_C90B3B8","path":"rooms/level1_SenzelaForest/level1_SenzelaForest.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
