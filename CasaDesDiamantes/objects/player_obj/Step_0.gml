@@ -966,7 +966,7 @@ if (!isZombie && !deathActivated)
 			with (player_obj)
 			{
 				startShotCooldown = false;
-				if (key_shoot && !reloading)
+				if (key_shoot_hold && !reloading)
 				{
 					if (!onLadder || onLadder && verspeed == 0)
 					{
@@ -1127,6 +1127,18 @@ if (!isZombie && !reloading)
 				}
 				if (selWeapon == 2 && !global.unlockedWeapon[2])
 				{
+					selWeapon++;
+				}
+				if (selWeapon == 3 && !global.unlockedWeapon[3])
+				{
+					selWeapon++;
+				}
+				if (selWeapon == 4 && !global.unlockedWeapon[4])
+				{
+					selWeapon++;
+				}
+				if (selWeapon == 5 && !global.unlockedWeapon[5])
+				{
 					selWeapon = 1;
 				}
 				pickWeapon_scr(selWeapon);
@@ -1145,11 +1157,23 @@ if (!isZombie && !reloading)
 			
 				if (selWeapon == 1 && !global.unlockedWeapon[1])
 				{
-					selWeapon++;
+					selWeapon = 5;
 				}
 				if (selWeapon == 2 && !global.unlockedWeapon[2])
 				{
-					selWeapon = 1;
+					selWeapon--;
+				}
+				if (selWeapon == 3 && !global.unlockedWeapon[3])
+				{
+					selWeapon--;
+				}
+				if (selWeapon == 4 && !global.unlockedWeapon[4])
+				{
+					selWeapon--;
+				}
+				if (selWeapon == 5 && !global.unlockedWeapon[5])
+				{
+					selWeapon--;
 				}
 				pickWeapon_scr(selWeapon);
 			}
@@ -1168,7 +1192,7 @@ if (scrollDelay < 0)
 }
 
 //Switch to pistol if empty
-if ((global.pistolAmmo == 0 || global.unlockedWeapon[1] == false) && (global.shotgunAmmo == 0 || global.unlockedWeapon[2] == false && (global.silencedMPAmmo == 0 || global.unlockedWeapon[5] == false)) && global.currentWeapon != pickedWeapon.pistol)
+if ((global.pistolAmmo == 0 || global.unlockedWeapon[1] == false) && (global.shotgunAmmo == 0 || global.unlockedWeapon[2] == false) && (global.silencedMPAmmo == 0 || global.unlockedWeapon[5] == false) && global.currentWeapon != pickedWeapon.pistol)
 {
 	pickWeapon_scr(0);
 }

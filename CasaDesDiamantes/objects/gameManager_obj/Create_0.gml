@@ -48,9 +48,9 @@ global.bowCooldownSave = global.bowCooldown;
 global.bowReload = 600;
 global.bowReloadSave = global.bowReload;
 
-global.silencedMPAmmo = 0;
+global.silencedMPAmmo = 24;
 global.silencedMPAmmoMax = 24;
-global.silencedMPCooldown = 0.2;
+global.silencedMPCooldown = 9;
 global.silencedMPCooldownSave = global.silencedMPCooldown;
 global.silencedMPReload = 750;
 global.silencedMPReloadSave = global.silencedMPReload;

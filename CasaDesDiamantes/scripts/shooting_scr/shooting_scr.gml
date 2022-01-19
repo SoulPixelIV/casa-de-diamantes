@@ -53,11 +53,19 @@ function shooting_scr(argument0) {
 			var shotLightx = x + lengthdir_x(24, dirCursor);
 			var shotLighty = y - 8 + lengthdir_y(24, dirCursor);
 			
-			instance_create_layer(playerBulletLine_obj.x, playerBulletLine_obj.y, "Instances", bulletDualBarettas_obj);
-			instance_create_layer(playerBulletLine_obj.x - 2, playerBulletLine_obj.y - 4, "Instances", bulletDualBarettas_obj);
+			if (player_obj.image_xscale == 1) {
+				instance_create_layer(playerBulletLine_obj.x, playerBulletLine_obj.y, "Instances", bulletDualBarettas_obj);
+				instance_create_layer(playerBulletLine_obj.x - 2, playerBulletLine_obj.y - 4, "Instances", bulletDualBarettas_obj);
 			
-			instance_create_layer(playerBulletLine_obj.x, playerBulletLine_obj.y, "Instances", pistolBulletCase_obj);
-			instance_create_layer(playerBulletLine_obj.x - 2, playerBulletLine_obj.y - 4, "Instances", pistolBulletCase_obj);
+				instance_create_layer(playerBulletLine_obj.x, playerBulletLine_obj.y, "Instances", pistolBulletCase_obj);
+				instance_create_layer(playerBulletLine_obj.x - 2, playerBulletLine_obj.y - 4, "Instances", pistolBulletCase_obj);
+			} else {
+				instance_create_layer(playerBulletLine_obj.x - 24, playerBulletLine_obj.y, "Instances", bulletDualBarettas_obj);
+				instance_create_layer(playerBulletLine_obj.x - 2 - 24, playerBulletLine_obj.y - 4, "Instances", bulletDualBarettas_obj);
+			
+				instance_create_layer(playerBulletLine_obj.x - 24, playerBulletLine_obj.y, "Instances", pistolBulletCase_obj);
+				instance_create_layer(playerBulletLine_obj.x - 2 - 24, playerBulletLine_obj.y - 4, "Instances", pistolBulletCase_obj);
+			}
 			
 			instance_create_layer(shotLightx, shotLighty, "ForegroundObjects", shotLightDualBarettas_obj);
 			instance_create_layer(shotLightx, shotLighty, "ForegroundObjects", smokecloud_obj);
@@ -199,20 +207,8 @@ function shooting_scr(argument0) {
 	}
 
 	if (argument0 == "silencedMP")
-	{
-		var silencedMPShot = audio_play_sound(pistolShot_snd, 1, false);
-		audio_sound_pitch(silencedMPShot, random_range(0.9, 1.1));
-		
-		var shotLightx = x + lengthdir_x(24, dirCursor);
-		var shotLighty = y - 8 + lengthdir_y(24, dirCursor);
-		
-		instance_create_layer(playerBulletLine_obj.x, playerBulletLine_obj.y, "Instances", bulletPistol_obj);
-		
-		instance_create_layer(playerBulletLine_obj.x, playerBulletLine_obj.y, "Instances", pistolBulletCase_obj);
-		
-		instance_create_layer(shotLightx, shotLighty, "ForegroundObjects", shotLightPistol_obj);
-		instance_create_layer(shotLightx, shotLighty, "ForegroundObjects", smokecloud_obj);
-		screenshake(50, 2.5, 0.4, id);
+	{		
+		instance_create_layer(playerBulletLine_obj.x, playerBulletLine_obj.y, "Instances", bulletSilencedMPSalveSpawner_obj);
 		
 		if (!huggingWall)
 		{
