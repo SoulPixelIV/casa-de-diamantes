@@ -383,14 +383,14 @@ if (!isZombie && !deathActivated)
 		{
 			//First arm
 			draw_sprite_ext(playerDualBarettas_spr, 0, x + ((-4 + spinWeaponPos * changePos) * currDir), y - 5, 1, -currDir, dirCursor, -1, image_alpha);
-			draw_sprite_ext(drawSpriteArm, 0, x + ((-4 + spinWeaponPos) * currDir) * changePos, y - 4, 1, -currDir, dirCursor, -1, image_alpha);
+			draw_sprite_ext(drawSpriteArm, 0, x + ((-6 + spinWeaponPos) * currDir) * changePos, y - 8, 1, -currDir, dirCursor, -1, image_alpha);
 		}
 		
 		//BOW
 		if (global.currentWeapon == gameManager_obj.pickedWeapon.bow)
 		{
 			//First arm
-			draw_sprite_ext(drawSpriteArm, 0, x + ((-4 + spinWeaponPos) * currDir) * changePos, y - 4, 1, -currDir, dirCursor, -1, image_alpha);
+			draw_sprite_ext(drawSpriteArm, 0, x + ((-6 + spinWeaponPos) * currDir) * changePos, y - 8, 1, -currDir, dirCursor, -1, image_alpha);
 		}
 		
 		//Draw Steph
@@ -445,7 +445,7 @@ if (!isZombie && !deathActivated)
 		{
 			//Second arm
 			draw_sprite_ext(playerDualBarettas_spr, 0, x + ((2 - spinWeaponPos) * currDir) * changePos, y - 4, 1, -currDir, dirCursor, -1, image_alpha);
-			draw_sprite_ext(drawSpriteArm, 0, x + ((2 - spinWeaponPos) * currDir) * changePos, y - 4, 1, -currDir, dirCursor, -1, image_alpha);
+			draw_sprite_ext(drawSpriteArm, 0, x + ((4 - spinWeaponPos) * currDir) * changePos, y - 8, 1, -currDir, dirCursor, -1, image_alpha);
 		}
 		
 		//SHOTGUN
@@ -459,7 +459,7 @@ if (!isZombie && !deathActivated)
 		{
 			draw_sprite_ext(playerSilencedMP_spr, 0, x + ((2 - spinWeaponPos) * currDir) * changePos, y - 4, 1, -currDir, dirCursor, -1, image_alpha);
 			//Second arm
-			draw_sprite_ext(drawSpriteArm, 0, x + ((-3 - spinWeaponPos) * currDir) * changePos, y - 4, 1, -currDir, dirCursor, -1, image_alpha);
+			draw_sprite_ext(drawSpriteArm, 0, x + ((-5 - spinWeaponPos) * currDir) * changePos, y - 8, 1, -currDir, dirCursor, -1, image_alpha);
 		}
 		
 		//SNIPER
@@ -485,7 +485,7 @@ if (!isZombie && !deathActivated)
 		//MAIN ARM
 		if (global.currentWeapon != gameManager_obj.pickedWeapon.dualBarettas)
 		{
-			draw_sprite_ext(drawSpriteArm, 0, x + ((2 - spinWeaponPos) * currDir) * changePos, y - 4, 1, -currDir, dirCursor, -1, image_alpha);
+			draw_sprite_ext(drawSpriteArm, 0, x + ((4 - spinWeaponPos) * currDir) * changePos, y - 8, 1, -currDir, dirCursor, -1, image_alpha);
 		}
 	}
 }

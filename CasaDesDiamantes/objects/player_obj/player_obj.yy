@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "player_spr",
-    "path": "sprites/player_spr/player_spr.yy",
+    "name": "playerLEGACY_spr",
+    "path": "sprites/playerLEGACY_spr/playerLEGACY_spr.yy",
   },
   "solid": false,
   "visible": true,

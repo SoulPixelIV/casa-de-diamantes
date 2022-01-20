@@ -55,12 +55,20 @@ global.silencedMPCooldownSave = global.silencedMPCooldown;
 global.silencedMPReload = 750;
 global.silencedMPReloadSave = global.silencedMPReload;
 
+/*
 global.hat = choose(beret_spr, marcusHat_spr, noone);
 global.top1 = choose(smokingTop_spr, glitterTop_spr, noone);
 global.top2 = choose(smokingJacketEquipped_spr, warmJacketEquipped_spr, noone);
 global.bottom = choose(smokingBottom_spr, glitterBottom_spr, noone);
 global.shoes = noone;
 global.arm = choose(smokingJacketArm_spr, warmJacketArm_spr, noone);
+*/
+global.hat = choose(noone);
+global.top1 = choose(noone);
+global.top2 = choose(noone);
+global.bottom = choose(noone);
+global.shoes = noone;
+global.arm = choose(noone);
 
 global.hatlist = ["Beret", "Marcus Hat", "Nothing"];
 global.top1list = ["Smoking Top", "Glitter Top", "Nothing"];
