@@ -14,8 +14,8 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 16,
-  "height": 10,
+  "width": 36,
+  "height": 12,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -24,9 +24,9 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"24be42e0-ba83-4060-945a-2542b66c05db","path":"sprites/playerPistol_spr/playerPistol_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"24be42e0-ba83-4060-945a-2542b66c05db","path":"sprites/playerPistol_spr/playerPistol_spr.yy",},"LayerId":{"name":"8497c747-8862-4618-a804-34520a8bb066","path":"sprites/playerPistol_spr/playerPistol_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"playerPistol_spr","path":"sprites/playerPistol_spr/playerPistol_spr.yy",},"resourceVersion":"1.0","name":"24be42e0-ba83-4060-945a-2542b66c05db","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"c2b29b90-dcba-4cfd-aead-bcf900d80392","path":"sprites/playerPistol_spr/playerPistol_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"c2b29b90-dcba-4cfd-aead-bcf900d80392","path":"sprites/playerPistol_spr/playerPistol_spr.yy",},"LayerId":{"name":"ce6ca150-8db9-4c36-b713-15a944e4bf2c","path":"sprites/playerPistol_spr/playerPistol_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"playerPistol_spr","path":"sprites/playerPistol_spr/playerPistol_spr.yy",},"resourceVersion":"1.0","name":"c2b29b90-dcba-4cfd-aead-bcf900d80392","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"playerPistol_spr","path":"sprites/playerPistol_spr/playerPistol_spr.yy",},
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"a47bd0f3-b94b-41a8-a8e1-c9671a16083a","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"24be42e0-ba83-4060-945a-2542b66c05db","path":"sprites/playerPistol_spr/playerPistol_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"0180f802-f645-43e3-963e-0994c44cd945","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"c2b29b90-dcba-4cfd-aead-bcf900d80392","path":"sprites/playerPistol_spr/playerPistol_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -54,8 +54,8 @@
     "backdropHeight": 768,
     "backdropXOffset": 0.0,
     "backdropYOffset": 0.0,
-    "xorigin": 3,
-    "yorigin": 6,
+    "xorigin": 7,
+    "yorigin": 5,
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"playerPistol_spr","path":"sprites/playerPistol_spr/playerPistol_spr.yy",},
@@ -65,7 +65,7 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"8497c747-8862-4618-a804-34520a8bb066","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"ce6ca150-8db9-4c36-b713-15a944e4bf2c","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
