@@ -383,8 +383,15 @@ if (!isZombie && !deathActivated)
 		if (global.currentWeapon == gameManager_obj.pickedWeapon.dualBarettas)
 		{
 			//First arm
-			draw_sprite_ext(playerDualBarettas_spr, 0, x + ((-4 + spinWeaponPos) * currDir) * changePos, y - 10, 1, -currDir, dirCursor - 14 * -currDir, -1, image_alpha);
-			draw_sprite_ext(drawSpriteArm, 0, x + ((-4 + spinWeaponPos) * currDir) * changePos, y - 10, 1, -currDir, dirCursor - 14 * -currDir, -1, image_alpha);
+			draw_sprite_ext(playerDualBarettas_spr, -1, x + ((-4 + spinWeaponPos) * currDir) * changePos, y - 10, 1, -currDir, dirCursor - 14 * -currDir, -1, image_alpha);
+			draw_sprite_ext(drawSpriteArm, -1, x + ((-4 + spinWeaponPos) * currDir) * changePos, y - 10, 1, -currDir, dirCursor - 14 * -currDir, -1, image_alpha);
+		}
+		
+		//SHOTGUN
+		if (global.currentWeapon == gameManager_obj.pickedWeapon.shotgun)
+		{
+			//First arm
+			draw_sprite_ext(drawSpriteArm, -1, x + ((-4 + spinWeaponPos) * currDir) * changePos, y - 10, 1, -currDir, dirCursor - 14 * -currDir, -1, image_alpha);
 		}
 		
 		//BOW
@@ -438,21 +445,21 @@ if (!isZombie && !deathActivated)
 		//PISTOL
 		if (global.currentWeapon == gameManager_obj.pickedWeapon.pistol)
 		{
-			draw_sprite_ext(playerPistol_spr, 0, x + ((2 + spinWeaponPos) * currDir) * changePos, y - 8, 1, -currDir, dirCursor - 14 * -currDir, -1, image_alpha);
+			draw_sprite_ext(playerPistol_spr, -1, x + ((2 + spinWeaponPos) * currDir) * changePos, y - 8, 1, -currDir, dirCursor - 14 * -currDir, -1, image_alpha);
 		}
 		
 		//DUAL BARETTAS
 		if (global.currentWeapon == gameManager_obj.pickedWeapon.dualBarettas)
 		{
 			//Second arm
-			draw_sprite_ext(playerDualBarettas_spr, 0, x + ((2 + spinWeaponPos) * currDir) * changePos, y - 8, 1, -currDir, dirCursor - 14 * -currDir, -1, image_alpha);
-			draw_sprite_ext(drawSpriteArm, 0, x + ((4 - spinWeaponPos) * currDir) * changePos, y - 8, 1, -currDir, dirCursor - 14 * -currDir, -1, image_alpha);
+			draw_sprite_ext(playerDualBarettas_spr, -1, x + ((2 + spinWeaponPos) * currDir) * changePos, y - 8, 1, -currDir, dirCursor - 14 * -currDir, -1, image_alpha);
+			draw_sprite_ext(drawSpriteArm, -1, x + ((4 - spinWeaponPos) * currDir) * changePos, y - 8, 1, -currDir, dirCursor - 14 * -currDir, -1, image_alpha);
 		}
 		
 		//SHOTGUN
 		if (global.currentWeapon == gameManager_obj.pickedWeapon.shotgun)
 		{
-			draw_sprite_ext(playerShotgun_spr, 0, x + ((2 - spinWeaponPos) * currDir) * changePos, y - 4, 1, -currDir, dirCursor, -1, image_alpha);
+			draw_sprite_ext(playerShotgun_spr, -1, x + ((2 + spinWeaponPos) * currDir) * changePos, y - 8, 1, -currDir, dirCursor - 14 * -currDir, -1, image_alpha);
 		}
 		
 		//SILENCED MP
@@ -486,7 +493,7 @@ if (!isZombie && !deathActivated)
 		//MAIN ARM
 		if (global.currentWeapon != gameManager_obj.pickedWeapon.dualBarettas)
 		{
-			draw_sprite_ext(drawSpriteArm, 0, x + ((4 - spinWeaponPos) * currDir) * changePos, y - 8, 1, -currDir, dirCursor - 14 * -currDir, -1, image_alpha);
+			draw_sprite_ext(drawSpriteArm, -1, x + ((4 - spinWeaponPos) * currDir) * changePos, y - 8, 1, -currDir, dirCursor - 14 * -currDir, -1, image_alpha);
 		}
 	}
 }
