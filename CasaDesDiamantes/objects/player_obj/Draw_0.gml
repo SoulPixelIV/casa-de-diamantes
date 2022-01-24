@@ -393,55 +393,73 @@ if (!isZombie && !deathActivated)
 			if (dirCursor > 90 && dirCursor < 270) {
 				//First arm
 				if (dirCursor > 0 && dirCursor < 90) {
-					draw_sprite_ext(drawSpriteArm, -1, x + ((-4 + spinWeaponPos) * currDir) * changePos, y - 10, 1, -currDir, clamp((dirCursor - 20 * -currDir) + 20 * (clamp(dirCursor, 0, 90) / 90), 90, 250), -1, image_alpha);
+					draw_sprite_ext(drawSpriteArm, -1, x + ((-4 + spinWeaponPos) * currDir) * changePos, y - 10, 1, -currDir, clamp((dirCursor - 21 * -currDir) + 20 * (clamp(dirCursor, 0, 90) / 90), 90, 250), -1, image_alpha);
 				}
 			
 				if (dirCursor > 90 && dirCursor < 180) {
-					draw_sprite_ext(drawSpriteArm, -1, x + ((-4 + spinWeaponPos) * currDir) * changePos, y - 10, 1, -currDir, clamp((dirCursor - 20 * -currDir) - 20 * (90 - (clamp(dirCursor, 90, 180) - 90)) / 90, 90, 250), -1, image_alpha);
+					draw_sprite_ext(drawSpriteArm, -1, x + ((-4 + spinWeaponPos) * currDir) * changePos, y - 10, 1, -currDir, clamp((dirCursor - 21 * -currDir) - 20 * (90 - (clamp(dirCursor, 90, 180) - 90)) / 90, 90, 250), -1, image_alpha);
 				}
 			
 				if (dirCursor > 180 && dirCursor < 270) {
-					draw_sprite_ext(drawSpriteArm, -1, x + ((-4 + spinWeaponPos) * currDir) * changePos, y - 10, 1, -currDir, clamp((dirCursor - 20 * -currDir) + 20 * ((clamp(dirCursor, 180, 270) - 180) / 90), 90, 250), -1, image_alpha);
+					draw_sprite_ext(drawSpriteArm, -1, x + ((-4 + spinWeaponPos) * currDir) * changePos, y - 10, 1, -currDir, clamp((dirCursor - 21 * -currDir) + 20 * ((clamp(dirCursor, 180, 270) - 180) / 90), 90, 250), -1, image_alpha);
 				}
 			
 				if (dirCursor > 270 && dirCursor < 360) {
-					draw_sprite_ext(drawSpriteArm, -1, x + ((-4 + spinWeaponPos) * currDir) * changePos, y - 10, 1, -currDir, clamp((dirCursor - 20 * -currDir) - 20 * (90 - (clamp(dirCursor, 270, 360) - 270)) / 90, 90, 250), -1, image_alpha);
+					draw_sprite_ext(drawSpriteArm, -1, x + ((-4 + spinWeaponPos) * currDir) * changePos, y - 10, 1, -currDir, clamp((dirCursor - 21 * -currDir) - 20 * (90 - (clamp(dirCursor, 270, 360) - 270)) / 90, 90, 250), -1, image_alpha);
 				}
 			}
 			if (dirCursor > 270 && dirCursor < 360) {
 				//First arm
 				if (dirCursor > 0 && dirCursor < 90) {
-					draw_sprite_ext(drawSpriteArm, -1, x + ((-4 + spinWeaponPos) * currDir) * changePos, y - 10, 1, -currDir, clamp((dirCursor - 20 * -currDir) + 20 * (clamp(dirCursor, 0, 90) / 90), 290, 360), -1, image_alpha);
+					draw_sprite_ext(drawSpriteArm, -1, x + ((-4 + spinWeaponPos) * currDir) * changePos, y - 10, 1, -currDir, clamp((dirCursor - 21 * -currDir) + 20 * (clamp(dirCursor, 0, 90) / 90), 290, 360), -1, image_alpha);
 				}
 			
 				if (dirCursor > 90 && dirCursor < 180) {
-					draw_sprite_ext(drawSpriteArm, -1, x + ((-4 + spinWeaponPos) * currDir) * changePos, y - 10, 1, -currDir, clamp((dirCursor - 20 * -currDir) - 20 * (90 - (clamp(dirCursor, 90, 180) - 90)) / 90, 290, 360), -1, image_alpha);
+					draw_sprite_ext(drawSpriteArm, -1, x + ((-4 + spinWeaponPos) * currDir) * changePos, y - 10, 1, -currDir, clamp((dirCursor - 21 * -currDir) - 20 * (90 - (clamp(dirCursor, 90, 180) - 90)) / 90, 290, 360), -1, image_alpha);
 				}
 			
 				if (dirCursor > 180 && dirCursor < 270) {
-					draw_sprite_ext(drawSpriteArm, -1, x + ((-4 + spinWeaponPos) * currDir) * changePos, y - 10, 1, -currDir, clamp((dirCursor - 20 * -currDir) + 20 * ((clamp(dirCursor, 180, 270) - 180) / 90), 290, 360), -1, image_alpha);
+					draw_sprite_ext(drawSpriteArm, -1, x + ((-4 + spinWeaponPos) * currDir) * changePos, y - 10, 1, -currDir, clamp((dirCursor - 21 * -currDir) + 20 * ((clamp(dirCursor, 180, 270) - 180) / 90), 290, 360), -1, image_alpha);
 				}
 			
 				if (dirCursor > 270 && dirCursor < 360) {
-					draw_sprite_ext(drawSpriteArm, -1, x + ((-4 + spinWeaponPos) * currDir) * changePos, y - 10, 1, -currDir, clamp((dirCursor - 20 * -currDir) - 20 * (90 - (clamp(dirCursor, 270, 360) - 270)) / 90, 290, 360), -1, image_alpha);
+					draw_sprite_ext(drawSpriteArm, -1, x + ((-4 + spinWeaponPos) * currDir) * changePos, y - 10, 1, -currDir, clamp((dirCursor - 21 * -currDir) - 20 * (90 - (clamp(dirCursor, 270, 360) - 270)) / 90, 290, 360), -1, image_alpha);
 				}
 			}
-			if (dirCursor > 0 && dirCursor < 90) {
+			if (dirCursor > 0 && dirCursor < 14) {
 				//First arm
 				if (dirCursor > 0 && dirCursor < 90) {
-					draw_sprite_ext(drawSpriteArm, -1, x + ((-4 + spinWeaponPos) * currDir) * changePos, y - 10, 1, -currDir, clamp((dirCursor - 20 * -currDir) + 20 * (clamp(dirCursor, 0, 90) / 90), 0, 90), -1, image_alpha);
+					draw_sprite_ext(drawSpriteArm, -1, x + ((-4 + spinWeaponPos) * currDir) * changePos, y - 10, 1, -currDir, (dirCursor - 21 * -currDir) + 20 * (clamp(dirCursor, 0, 90) / 90), -1, image_alpha);
 				}
 			
 				if (dirCursor > 90 && dirCursor < 180) {
-					draw_sprite_ext(drawSpriteArm, -1, x + ((-4 + spinWeaponPos) * currDir) * changePos, y - 10, 1, -currDir, clamp((dirCursor - 20 * -currDir) - 20 * (90 - (clamp(dirCursor, 90, 180) - 90)) / 90, 0, 90), -1, image_alpha);
+					draw_sprite_ext(drawSpriteArm, -1, x + ((-4 + spinWeaponPos) * currDir) * changePos, y - 10, 1, -currDir, (dirCursor - 21 * -currDir) - 20 * (90 - (clamp(dirCursor, 90, 180) - 90)) / 90, -1, image_alpha);
 				}
 			
 				if (dirCursor > 180 && dirCursor < 270) {
-					draw_sprite_ext(drawSpriteArm, -1, x + ((-4 + spinWeaponPos) * currDir) * changePos, y - 10, 1, -currDir, clamp((dirCursor - 20 * -currDir) + 20 * ((clamp(dirCursor, 180, 270) - 180) / 90), 0, 90), -1, image_alpha);
+					draw_sprite_ext(drawSpriteArm, -1, x + ((-4 + spinWeaponPos) * currDir) * changePos, y - 10, 1, -currDir, (dirCursor - 21 * -currDir) + 20 * ((clamp(dirCursor, 180, 270) - 180) / 90), -1, image_alpha);
 				}
 			
 				if (dirCursor > 270 && dirCursor < 360) {
-					draw_sprite_ext(drawSpriteArm, -1, x + ((-4 + spinWeaponPos) * currDir) * changePos, y - 10, 1, -currDir, clamp((dirCursor - 20 * -currDir) - 20 * (90 - (clamp(dirCursor, 270, 360) - 270)) / 90, 0, 90), -1, image_alpha);
+					draw_sprite_ext(drawSpriteArm, -1, x + ((-4 + spinWeaponPos) * currDir) * changePos, y - 10, 1, -currDir, (dirCursor - 21 * -currDir) - 20 * (90 - (clamp(dirCursor, 270, 360) - 270)) / 90, -1, image_alpha);
+				}
+			}
+			if (dirCursor > 14 && dirCursor < 90) {
+				//First arm
+				if (dirCursor > 0 && dirCursor < 90) {
+					draw_sprite_ext(drawSpriteArm, -1, x + ((-4 + spinWeaponPos) * currDir) * changePos, y - 10, 1, -currDir, clamp((dirCursor - 21 * -currDir) + 20 * (clamp(dirCursor, 0, 90) / 90), 0, 90), -1, image_alpha);
+				}
+			
+				if (dirCursor > 90 && dirCursor < 180) {
+					draw_sprite_ext(drawSpriteArm, -1, x + ((-4 + spinWeaponPos) * currDir) * changePos, y - 10, 1, -currDir, clamp((dirCursor - 21 * -currDir) - 20 * (90 - (clamp(dirCursor, 90, 180) - 90)) / 90, 0, 90), -1, image_alpha);
+				}
+			
+				if (dirCursor > 180 && dirCursor < 270) {
+					draw_sprite_ext(drawSpriteArm, -1, x + ((-4 + spinWeaponPos) * currDir) * changePos, y - 10, 1, -currDir, clamp((dirCursor - 21 * -currDir) + 20 * ((clamp(dirCursor, 180, 270) - 180) / 90), 0, 90), -1, image_alpha);
+				}
+			
+				if (dirCursor > 270 && dirCursor < 360) {
+					draw_sprite_ext(drawSpriteArm, -1, x + ((-4 + spinWeaponPos) * currDir) * changePos, y - 10, 1, -currDir, clamp((dirCursor - 21 * -currDir) - 20 * (90 - (clamp(dirCursor, 270, 360) - 270)) / 90, 0, 90), -1, image_alpha);
 				}
 			}
 		}
@@ -511,17 +529,20 @@ if (!isZombie && !deathActivated)
 		//SHOTGUN
 		if (global.currentWeapon == gameManager_obj.pickedWeapon.shotgun)
 		{
-							draw_text(x + 30, y, string(dirCursor));
 			//Second arm
 			if (dirCursor > 90 && dirCursor < 270) {
-				draw_sprite_ext(playerShotgun_spr, -1, x + ((2 + spinWeaponPos) * currDir) * changePos, y - 8, 1, -currDir, clamp(dirCursor - 11 * -currDir, 90, 250), -1, image_alpha);
-				draw_sprite_ext(playerArmCurved_spr, -1, x + ((4 - spinWeaponPos) * currDir) * changePos, y - 8, 1, -currDir, clamp(dirCursor - 11 * -currDir, 90, 250), -1, image_alpha);
+				draw_sprite_ext(playerShotgun_spr, -1, x + ((2 + spinWeaponPos) * currDir) * changePos, y - 8, 1, -currDir, clamp(dirCursor - 11 * -currDir, 90, 245), -1, image_alpha);
+				draw_sprite_ext(playerArmCurved_spr, -1, x + ((4 - spinWeaponPos) * currDir) * changePos, y - 8, 1, -currDir, clamp(dirCursor - 11 * -currDir, 90, 245), -1, image_alpha);
 			} 
 			if (dirCursor > 270 && dirCursor < 360) {
-				draw_sprite_ext(playerShotgun_spr, -1, x + ((2 + spinWeaponPos) * currDir) * changePos, y - 8, 1, -currDir, clamp(dirCursor - 11 * -currDir, 290, 360), -1, image_alpha);
-				draw_sprite_ext(playerArmCurved_spr, -1, x + ((4 - spinWeaponPos) * currDir) * changePos, y - 8, 1, -currDir, clamp(dirCursor - 11 * -currDir, 290, 360), -1, image_alpha);
+				draw_sprite_ext(playerShotgun_spr, -1, x + ((2 + spinWeaponPos) * currDir) * changePos, y - 8, 1, -currDir, clamp(dirCursor - 11 * -currDir, 295, 360), -1, image_alpha);
+				draw_sprite_ext(playerArmCurved_spr, -1, x + ((4 - spinWeaponPos) * currDir) * changePos, y - 8, 1, -currDir, clamp(dirCursor - 11 * -currDir, 295, 360), -1, image_alpha);
 			}
-			if (dirCursor > 0 && dirCursor < 90) {
+			if (dirCursor > 0 && dirCursor < 14) {
+				draw_sprite_ext(playerShotgun_spr, -1, x + ((2 + spinWeaponPos) * currDir) * changePos, y - 8, 1, -currDir, dirCursor - 11 * -currDir, -1, image_alpha);
+				draw_sprite_ext(playerArmCurved_spr, -1, x + ((4 - spinWeaponPos) * currDir) * changePos, y - 8, 1, -currDir, dirCursor - 11 * -currDir, -1, image_alpha);
+			}
+			if (dirCursor > 14 && dirCursor < 90) {
 				draw_sprite_ext(playerShotgun_spr, -1, x + ((2 + spinWeaponPos) * currDir) * changePos, y - 8, 1, -currDir, clamp(dirCursor - 11 * -currDir, 0, 90), -1, image_alpha);
 				draw_sprite_ext(playerArmCurved_spr, -1, x + ((4 - spinWeaponPos) * currDir) * changePos, y - 8, 1, -currDir, clamp(dirCursor - 11 * -currDir, 0, 90), -1, image_alpha);
 			}
