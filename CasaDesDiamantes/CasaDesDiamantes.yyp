@@ -114,6 +114,7 @@
     {"id":{"name":"redSparkle_spr","path":"sprites/redSparkle_spr/redSparkle_spr.yy",},"order":11,},
     {"id":{"name":"blueSparkle_spr","path":"sprites/blueSparkle_spr/blueSparkle_spr.yy",},"order":12,},
     {"id":{"name":"sparkleCloud_spr","path":"sprites/sparkleCloud_spr/sparkleCloud_spr.yy",},"order":13,},
+    {"id":{"name":"playerArmCurved_spr","path":"sprites/playerArmCurved_spr/playerArmCurved_spr.yy",},"order":39,},
     {"id":{"name":"playerCustomization_obj","path":"objects/playerCustomization_obj/playerCustomization_obj.yy",},"order":7,},
     {"id":{"name":"windowBackground_spr","path":"sprites/windowBackground_spr/windowBackground_spr.yy",},"order":15,},
     {"id":{"name":"pickupHiddenSpawnpoint_obj","path":"objects/pickupHiddenSpawnpoint_obj/pickupHiddenSpawnpoint_obj.yy",},"order":79,},
