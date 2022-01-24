@@ -391,7 +391,21 @@ if (!isZombie && !deathActivated)
 		if (global.currentWeapon == gameManager_obj.pickedWeapon.shotgun)
 		{
 			//First arm
-			draw_sprite_ext(drawSpriteArm, -1, x + ((-4 + spinWeaponPos) * currDir) * changePos, y - 10, 1, -currDir, dirCursor - 14 * -currDir, -1, image_alpha);
+			if (dirCursor > 0 && dirCursor < 90) {
+				draw_sprite_ext(drawSpriteArm, -1, x + ((-4 + spinWeaponPos) * currDir) * changePos, y - 10, 1, -currDir, (dirCursor - 14 * -currDir) + 20 * (clamp(dirCursor, 0, 90) / 90), -1, image_alpha);
+			}
+			
+			if (dirCursor > 90 && dirCursor < 180) {
+				draw_sprite_ext(drawSpriteArm, -1, x + ((-4 + spinWeaponPos) * currDir) * changePos, y - 10, 1, -currDir, (dirCursor - 14 * -currDir) - 20 * (90 - (clamp(dirCursor, 90, 180) - 90)) / 90, -1, image_alpha);
+			}
+			
+			if (dirCursor > 180 && dirCursor < 270) {
+				draw_sprite_ext(drawSpriteArm, -1, x + ((-4 + spinWeaponPos) * currDir) * changePos, y - 10, 1, -currDir, (dirCursor - 14 * -currDir) + 20 * ((clamp(dirCursor, 180, 270) - 180) / 90), -1, image_alpha);
+			}
+			
+			if (dirCursor > 270 && dirCursor < 359) {
+				draw_sprite_ext(drawSpriteArm, -1, x + ((-4 + spinWeaponPos) * currDir) * changePos, y - 10, 1, -currDir, (dirCursor - 14 * -currDir) - 20 * (90 - (clamp(dirCursor, 270, 359) - 270)) / 90, -1, image_alpha);
+			}
 		}
 		
 		//BOW
