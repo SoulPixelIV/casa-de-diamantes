@@ -182,7 +182,7 @@ if (!instance_exists(spotlightPlayer_obj))
 }
 
 //Debug
-instance_create_layer(x + 1, y - 4, "Instances", playerBulletLine_obj);
+instance_create_layer(x + 4 * currDir, y - 8, "Instances", playerBulletLine_obj);
 
 global.spawn = 0;
 

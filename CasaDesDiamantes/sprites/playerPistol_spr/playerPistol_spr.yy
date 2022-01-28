@@ -15,7 +15,7 @@
   "VTile": false,
   "For3D": false,
   "width": 36,
-  "height": 12,
+  "height": 16,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -67,7 +67,7 @@
     "backdropXOffset": 0.0,
     "backdropYOffset": 0.0,
     "xorigin": 7,
-    "yorigin": 5,
+    "yorigin": 6,
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"playerPistol_spr","path":"sprites/playerPistol_spr/playerPistol_spr.yy",},
