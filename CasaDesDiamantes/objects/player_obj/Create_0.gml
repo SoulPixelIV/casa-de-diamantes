@@ -120,6 +120,9 @@ scrollDelay = 20;
 startScrollDelay = false;
 playedSoundBowReadying = false;
 laserAimImage = 0;
+armSpriteShotgun = playerArmEmpty_spr;
+armSpriteCurvedShotgun = playerArmCurved_spr;
+spriteShotgun = shotgun_spr;
 
 //Debug
 forceSlowmo = false;
