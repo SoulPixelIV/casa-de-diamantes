@@ -1262,10 +1262,10 @@ switch (sprite_index)
 		animationSpeed = 0.5;
 		break;
 	case playerWalkingEquipped_spr:
-		animationSpeed = 1.1;
+		animationSpeed = 0.9;
 		break;
 	case playerWalkingEquippedReverse_spr:
-		animationSpeed = 1.1;
+		animationSpeed = 0.9;
 		break;
 	case playerWalkingEquippedNude_spr:
 		animationSpeed = 0.8;
