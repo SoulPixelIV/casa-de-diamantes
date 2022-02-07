@@ -610,7 +610,11 @@ with (gameManager_obj)
 						{
 							if (global.top1 == noone)
 							{
-								sprite_index = playerWalkingEquipped_spr;
+								if (sign(horspeed) == image_xscale) {
+									sprite_index = playerWalkingEquipped_spr;
+								} else {
+									sprite_index = playerWalkingEquippedReverse_spr;
+								}
 							}
 							else
 							{
@@ -1258,7 +1262,10 @@ switch (sprite_index)
 		animationSpeed = 0.5;
 		break;
 	case playerWalkingEquipped_spr:
-		animationSpeed = 0.8;
+		animationSpeed = 1.1;
+		break;
+	case playerWalkingEquippedReverse_spr:
+		animationSpeed = 1.1;
 		break;
 	case playerWalkingEquippedNude_spr:
 		animationSpeed = 0.8;

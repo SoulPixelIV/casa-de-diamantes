@@ -187,7 +187,7 @@ if (sprite_index = playerDashReverse_spr || sprite_index = playerDashReverseNude
 	}
 }
 
-if (sprite_index == playerWalkingEquipped_spr || sprite_index == playerWalkingEquippedNude_spr)
+if (sprite_index == playerWalkingEquipped_spr || sprite_index == playerWalkingEquippedNude_spr || sprite_index == playerWalkingEquippedReverse_spr)
 {
 	if (global.hat == beret_spr)
 	{
@@ -383,8 +383,13 @@ if (!isZombie && !deathActivated)
 		if (global.currentWeapon == gameManager_obj.pickedWeapon.dualBarettas)
 		{
 			//First arm
-			draw_sprite_ext(playerDualBarettas_spr, -1, x + ((-4 + spinWeaponPos) * currDir) * changePos, y - 10, 1, -currDir, dirCursor, -1, image_alpha);
-			draw_sprite_ext(drawSpriteArm, -1, x + ((-4 + spinWeaponPos) * currDir) * changePos, y - 10, 1, -currDir, dirCursor - 14 * -currDir, -1, image_alpha);
+			if (sprite_index == playerWalkingEquipped_spr || sprite_index == playerWalkingEquippedNude_spr || sprite_index == playerWalkingEquippedReverse_spr) {
+				draw_sprite_ext(playerDualBarettasWalking_spr, -1, x + ((-4 + spinWeaponPos) * currDir) * changePos, y - 10, 1, -currDir, dirCursor, -1, image_alpha);
+				draw_sprite_ext(playerArmEmptyWalking_spr, -1, x + ((-4 + spinWeaponPos) * currDir) * changePos, y - 10, 1, -currDir, dirCursor - 14 * -currDir, -1, image_alpha);
+			} else {
+				draw_sprite_ext(playerDualBarettas_spr, -1, x + ((-4 + spinWeaponPos) * currDir) * changePos, y - 10, 1, -currDir, dirCursor, -1, image_alpha);
+				draw_sprite_ext(drawSpriteArm, -1, x + ((-4 + spinWeaponPos) * currDir) * changePos, y - 10, 1, -currDir, dirCursor - 14 * -currDir, -1, image_alpha);
+			}
 		}
 		
 		//SHOTGUN
@@ -592,15 +597,24 @@ if (!isZombie && !deathActivated)
 		//PISTOL
 		if (global.currentWeapon == gameManager_obj.pickedWeapon.pistol)
 		{
-			draw_sprite_ext(playerPistol_spr, -1, x + ((2 + spinWeaponPos) * currDir) * changePos, y - 8, 1, -currDir, dirCursor, -1, image_alpha);
+			if (sprite_index == playerWalkingEquipped_spr || sprite_index == playerWalkingEquippedNude_spr || sprite_index == playerWalkingEquippedReverse_spr) {
+				draw_sprite_ext(playerPistolWalking_spr, -1, x + ((2 + spinWeaponPos) * currDir) * changePos, y - 8, 1, -currDir, dirCursor, -1, image_alpha);
+			} else {
+				draw_sprite_ext(playerPistol_spr, -1, x + ((2 + spinWeaponPos) * currDir) * changePos, y - 8, 1, -currDir, dirCursor, -1, image_alpha);
+			}
 		}
 		
 		//DUAL BARETTAS
 		if (global.currentWeapon == gameManager_obj.pickedWeapon.dualBarettas)
 		{
 			//Second arm
-			draw_sprite_ext(playerDualBarettas_spr, -1, x + ((2 + spinWeaponPos) * currDir) * changePos, y - 8, 1, -currDir, dirCursor, -1, image_alpha);
-			draw_sprite_ext(drawSpriteArm, -1, x + ((4 - spinWeaponPos) * currDir) * changePos, y - 8, 1, -currDir, dirCursor - 14 * -currDir, -1, image_alpha);
+			if (sprite_index == playerWalkingEquipped_spr || sprite_index == playerWalkingEquippedNude_spr || sprite_index == playerWalkingEquippedReverse_spr) {
+				draw_sprite_ext(playerDualBarettasWalking_spr, -1, x + ((2 + spinWeaponPos) * currDir) * changePos, y - 8, 1, -currDir, dirCursor, -1, image_alpha);
+				draw_sprite_ext(playerArmEmptyWalking_spr, -1, x + ((4 - spinWeaponPos) * currDir) * changePos, y - 8, 1, -currDir, dirCursor - 14 * -currDir, -1, image_alpha);
+			} else {
+				draw_sprite_ext(playerDualBarettas_spr, -1, x + ((2 + spinWeaponPos) * currDir) * changePos, y - 8, 1, -currDir, dirCursor, -1, image_alpha);
+				draw_sprite_ext(drawSpriteArm, -1, x + ((4 - spinWeaponPos) * currDir) * changePos, y - 8, 1, -currDir, dirCursor - 14 * -currDir, -1, image_alpha);
+			}
 		}
 		
 		//SHOTGUN
@@ -670,7 +684,7 @@ if (!isZombie && !deathActivated)
 		//MAIN ARM
 		if (global.currentWeapon != gameManager_obj.pickedWeapon.dualBarettas && global.currentWeapon != gameManager_obj.pickedWeapon.shotgun && global.currentWeapon != gameManager_obj.pickedWeapon.silencedMP)
 		{
-			draw_sprite_ext(drawSpriteArm, -1, x + ((4 - spinWeaponPos) * currDir) * changePos, y - 8, 1, -currDir, dirCursor - 14 * -currDir, -1, image_alpha);
+			draw_sprite_ext(playerArmEmpty_spr, -1, x + ((4 - spinWeaponPos) * currDir) * changePos, y - 8, 1, -currDir, dirCursor - 14 * -currDir, -1, image_alpha);
 		}
 	}
 }

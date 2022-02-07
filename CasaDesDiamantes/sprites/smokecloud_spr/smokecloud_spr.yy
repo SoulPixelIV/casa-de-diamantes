@@ -94,7 +94,7 @@
   "nineSlice": null,
   "parent": {
     "name": "Animations",
-    "path": "folders/Sprites/Animations.yy",
+    "path": "folders/Animations.yy",
   },
   "resourceVersion": "1.0",
   "name": "smokecloud_spr",
