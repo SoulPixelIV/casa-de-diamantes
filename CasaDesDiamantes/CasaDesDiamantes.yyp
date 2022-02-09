@@ -783,6 +783,7 @@
     {"id":{"name":"warpzone_obj","path":"objects/warpzone_obj/warpzone_obj.yy",},"order":68,},
     {"id":{"name":"enemy_obj","path":"objects/enemy_obj/enemy_obj.yy",},"order":3,},
     {"id":{"name":"VIP_C_teleporter","path":"objects/VIP_C_teleporter/VIP_C_teleporter.yy",},"order":26,},
+    {"id":{"name":"playerShotgunStance_spr","path":"sprites/playerShotgunStance_spr/playerShotgunStance_spr.yy",},"order":54,},
     {"id":{"name":"marcusHat_spr","path":"sprites/marcusHat_spr/marcusHat_spr.yy",},"order":0,},
     {"id":{"name":"obj_shadow_caster","path":"objects/obj_shadow_caster/obj_shadow_caster.yy",},"order":1,},
     {"id":{"name":"explosive_obj","path":"objects/explosive_obj/explosive_obj.yy",},"order":5,},
@@ -1201,6 +1202,7 @@
   },
   "RoomOrderNodes": [
     {"roomId":{"name":"loadVars","path":"rooms/loadVars/loadVars.yy",},},
+    {"roomId":{"name":"level1_Powerplant","path":"rooms/level1_Powerplant/level1_Powerplant.yy",},},
     {"roomId":{"name":"level2_SenzelaForest","path":"rooms/level2_SenzelaForest/level2_SenzelaForest.yy",},},
     {"roomId":{"name":"level1_SenzelaForest","path":"rooms/level1_SenzelaForest/level1_SenzelaForest.yy",},},
     {"roomId":{"name":"level0_RoadToCasino","path":"rooms/level0_RoadToCasino/level0_RoadToCasino.yy",},},
@@ -1209,7 +1211,6 @@
     {"roomId":{"name":"level3_Powerplant","path":"rooms/level3_Powerplant/level3_Powerplant.yy",},},
     {"roomId":{"name":"level0_DarkSewers","path":"rooms/level0_DarkSewers/level0_DarkSewers.yy",},},
     {"roomId":{"name":"level_Casino","path":"rooms/level_Casino/level_Casino.yy",},},
-    {"roomId":{"name":"level1_Powerplant","path":"rooms/level1_Powerplant/level1_Powerplant.yy",},},
     {"roomId":{"name":"level1_RoadToCasino","path":"rooms/level1_RoadToCasino/level1_RoadToCasino.yy",},},
     {"roomId":{"name":"level2_Powerplant","path":"rooms/level2_Powerplant/level2_Powerplant.yy",},},
     {"roomId":{"name":"warpzone_Powerplant","path":"rooms/warpzone_Powerplant/warpzone_Powerplant.yy",},},
