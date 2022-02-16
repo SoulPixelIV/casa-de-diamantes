@@ -7,14 +7,14 @@
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 12,
-  "bbox_right": 22,
+  "bbox_left": 28,
+  "bbox_right": 38,
   "bbox_top": 9,
   "bbox_bottom": 61,
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 32,
+  "width": 64,
   "height": 62,
   "textureGroupId": {
     "name": "Default",
@@ -25,21 +25,13 @@
   "gridY": 0,
   "frames": [
     {"compositeImage":{"FrameId":{"name":"7677a738-0344-4a37-89f6-7de5e64dd711","path":"sprites/playerShotgunStance_spr/playerShotgunStance_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"7677a738-0344-4a37-89f6-7de5e64dd711","path":"sprites/playerShotgunStance_spr/playerShotgunStance_spr.yy",},"LayerId":{"name":"3e6e376f-020b-4f08-99cb-29c5e5191b87","path":"sprites/playerShotgunStance_spr/playerShotgunStance_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
         {"FrameId":{"name":"7677a738-0344-4a37-89f6-7de5e64dd711","path":"sprites/playerShotgunStance_spr/playerShotgunStance_spr.yy",},"LayerId":{"name":"3e26bb43-fc16-4dcd-bad7-4a322a6c7fb9","path":"sprites/playerShotgunStance_spr/playerShotgunStance_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"7677a738-0344-4a37-89f6-7de5e64dd711","path":"sprites/playerShotgunStance_spr/playerShotgunStance_spr.yy",},"LayerId":{"name":"3e6e376f-020b-4f08-99cb-29c5e5191b87","path":"sprites/playerShotgunStance_spr/playerShotgunStance_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"playerShotgunStance_spr","path":"sprites/playerShotgunStance_spr/playerShotgunStance_spr.yy",},"resourceVersion":"1.0","name":"7677a738-0344-4a37-89f6-7de5e64dd711","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"19fa8c40-4bae-4f95-8211-79665979d1a4","path":"sprites/playerShotgunStance_spr/playerShotgunStance_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"19fa8c40-4bae-4f95-8211-79665979d1a4","path":"sprites/playerShotgunStance_spr/playerShotgunStance_spr.yy",},"LayerId":{"name":"3e6e376f-020b-4f08-99cb-29c5e5191b87","path":"sprites/playerShotgunStance_spr/playerShotgunStance_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-        {"FrameId":{"name":"19fa8c40-4bae-4f95-8211-79665979d1a4","path":"sprites/playerShotgunStance_spr/playerShotgunStance_spr.yy",},"LayerId":{"name":"3e26bb43-fc16-4dcd-bad7-4a322a6c7fb9","path":"sprites/playerShotgunStance_spr/playerShotgunStance_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"playerShotgunStance_spr","path":"sprites/playerShotgunStance_spr/playerShotgunStance_spr.yy",},"resourceVersion":"1.0","name":"19fa8c40-4bae-4f95-8211-79665979d1a4","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"982cdb27-f49d-4e7e-b533-6efa7600460a","path":"sprites/playerShotgunStance_spr/playerShotgunStance_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"982cdb27-f49d-4e7e-b533-6efa7600460a","path":"sprites/playerShotgunStance_spr/playerShotgunStance_spr.yy",},"LayerId":{"name":"3e6e376f-020b-4f08-99cb-29c5e5191b87","path":"sprites/playerShotgunStance_spr/playerShotgunStance_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-        {"FrameId":{"name":"982cdb27-f49d-4e7e-b533-6efa7600460a","path":"sprites/playerShotgunStance_spr/playerShotgunStance_spr.yy",},"LayerId":{"name":"3e26bb43-fc16-4dcd-bad7-4a322a6c7fb9","path":"sprites/playerShotgunStance_spr/playerShotgunStance_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"playerShotgunStance_spr","path":"sprites/playerShotgunStance_spr/playerShotgunStance_spr.yy",},"resourceVersion":"1.0","name":"982cdb27-f49d-4e7e-b533-6efa7600460a","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"4a437055-5699-4bda-8255-87eab47afb68","path":"sprites/playerShotgunStance_spr/playerShotgunStance_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"4a437055-5699-4bda-8255-87eab47afb68","path":"sprites/playerShotgunStance_spr/playerShotgunStance_spr.yy",},"LayerId":{"name":"3e6e376f-020b-4f08-99cb-29c5e5191b87","path":"sprites/playerShotgunStance_spr/playerShotgunStance_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-        {"FrameId":{"name":"4a437055-5699-4bda-8255-87eab47afb68","path":"sprites/playerShotgunStance_spr/playerShotgunStance_spr.yy",},"LayerId":{"name":"3e26bb43-fc16-4dcd-bad7-4a322a6c7fb9","path":"sprites/playerShotgunStance_spr/playerShotgunStance_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"playerShotgunStance_spr","path":"sprites/playerShotgunStance_spr/playerShotgunStance_spr.yy",},"resourceVersion":"1.0","name":"4a437055-5699-4bda-8255-87eab47afb68","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"7a108a6f-6211-49c5-a61e-264386f21210","path":"sprites/playerShotgunStance_spr/playerShotgunStance_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"7a108a6f-6211-49c5-a61e-264386f21210","path":"sprites/playerShotgunStance_spr/playerShotgunStance_spr.yy",},"LayerId":{"name":"3e26bb43-fc16-4dcd-bad7-4a322a6c7fb9","path":"sprites/playerShotgunStance_spr/playerShotgunStance_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"7a108a6f-6211-49c5-a61e-264386f21210","path":"sprites/playerShotgunStance_spr/playerShotgunStance_spr.yy",},"LayerId":{"name":"3e6e376f-020b-4f08-99cb-29c5e5191b87","path":"sprites/playerShotgunStance_spr/playerShotgunStance_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"playerShotgunStance_spr","path":"sprites/playerShotgunStance_spr/playerShotgunStance_spr.yy",},"resourceVersion":"1.0","name":"7a108a6f-6211-49c5-a61e-264386f21210","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"playerShotgunStance_spr","path":"sprites/playerShotgunStance_spr/playerShotgunStance_spr.yy",},
@@ -49,15 +41,13 @@
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,
-    "length": 4.0,
+    "length": 2.0,
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"38d5c563-a2ef-4e8a-a905-dbb29df50398","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"7677a738-0344-4a37-89f6-7de5e64dd711","path":"sprites/playerShotgunStance_spr/playerShotgunStance_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"4b5654f7-c376-46c3-ba84-f2f17065f528","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"19fa8c40-4bae-4f95-8211-79665979d1a4","path":"sprites/playerShotgunStance_spr/playerShotgunStance_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"1dd672f3-109e-4f57-822b-fab5e38737fa","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"982cdb27-f49d-4e7e-b533-6efa7600460a","path":"sprites/playerShotgunStance_spr/playerShotgunStance_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"c8a587a8-3fcb-433e-9f70-c60106ea7a7e","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"4a437055-5699-4bda-8255-87eab47afb68","path":"sprites/playerShotgunStance_spr/playerShotgunStance_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"689cd86f-ec25-4898-b9fe-9557a0b48517","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"7a108a6f-6211-49c5-a61e-264386f21210","path":"sprites/playerShotgunStance_spr/playerShotgunStance_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -70,7 +60,7 @@
     "backdropHeight": 768,
     "backdropXOffset": 0.0,
     "backdropYOffset": 0.0,
-    "xorigin": 16,
+    "xorigin": 32,
     "yorigin": 31,
     "eventToFunction": {},
     "eventStubScript": null,

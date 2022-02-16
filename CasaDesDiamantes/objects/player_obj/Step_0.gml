@@ -405,11 +405,13 @@ if (!grounded && !isZombie && !flip && !isDashing && !groundCollisionTimerOn && 
 		spin = true;
 		if (global.top1 == noone)
 		{
-			sprite_index = playerJumpSpin_spr;
+			//sprite_index = playerJumpSpin_spr;
+			sprite_index = playerShotgunStance_spr;
 		}
 		else
 		{
-			sprite_index = playerJumpSpinNude_spr;
+			//sprite_index = playerJumpSpinNude_spr;
+			sprite_index = playerShotgunStance_spr;
 		}
 	}
 }
@@ -1248,6 +1250,9 @@ switch (sprite_index)
 		break;
 	case playerJumpSpinNude_spr:
 		animationSpeed = 1.2;
+		break;
+	case playerShotgunStance_spr:
+		animationSpeed = 0.75;
 		break;
 	case playerJumpSpinUnequipped_spr:
 		animationSpeed = 1.2;
