@@ -1252,7 +1252,7 @@ switch (sprite_index)
 		animationSpeed = 1.2;
 		break;
 	case playerShotgunStance_spr:
-		animationSpeed = 1.1;
+		animationSpeed = 1.3;
 		break;
 	case playerJumpSpinUnequipped_spr:
 		animationSpeed = 1.2;
