@@ -372,7 +372,7 @@ if (!isZombie && !deathActivated)
 	}
 	else
 	{
-		if (sprite_index != playerShotgunStance_spr) {
+		if (sprite_index != playerShotgunStance_spr && sprite_index != playerDualBarettasStance_spr) {
 			//Laser Animation
 			if (laserAimImage < 6) {
 				laserAimImage += global.dt / 20;
@@ -602,7 +602,7 @@ if (!isZombie && !deathActivated)
 			}
 		}
 		
-		if (sprite_index != playerShotgunStance_spr) {
+		if (sprite_index != playerShotgunStance_spr && sprite_index != playerDualBarettasStance_spr) {
 			//PISTOL
 			if (global.currentWeapon == gameManager_obj.pickedWeapon.pistol)
 			{
