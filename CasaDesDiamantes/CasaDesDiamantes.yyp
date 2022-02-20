@@ -1123,6 +1123,7 @@
     {"id":{"name":"warmJacketArm_spr","path":"sprites/warmJacketArm_spr/warmJacketArm_spr.yy",},"order":1,},
     {"id":{"name":"hugeTree_spr","path":"sprites/hugeTree_spr/hugeTree_spr.yy",},"order":25,},
     {"id":{"name":"wavecount_spr","path":"sprites/wavecount_spr/wavecount_spr.yy",},"order":20,},
+    {"id":{"name":"playerDualBarettasStance_spr","path":"sprites/playerDualBarettasStance_spr/playerDualBarettasStance_spr.yy",},"order":55,},
     {"id":{"name":"healthbarDamage_spr","path":"sprites/healthbarDamage_spr/healthbarDamage_spr.yy",},"order":52,},
     {"id":{"name":"grenate_obj","path":"objects/grenate_obj/grenate_obj.yy",},"order":18,},
     {"id":{"name":"flyingGrenate_obj","path":"objects/flyingGrenate_obj/flyingGrenate_obj.yy",},"order":19,},
