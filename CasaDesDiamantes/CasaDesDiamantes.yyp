@@ -403,6 +403,7 @@
     {"id":{"name":"casinobunny_obj","path":"objects/casinobunny_obj/casinobunny_obj.yy",},"order":1,},
     {"id":{"name":"buildingWallSide2_spr","path":"sprites/buildingWallSide2_spr/buildingWallSide2_spr.yy",},"order":8,},
     {"id":{"name":"deactivate_obj","path":"objects/deactivate_obj/deactivate_obj.yy",},"order":10,},
+    {"id":{"name":"playerPistolStance_spr","path":"sprites/playerPistolStance_spr/playerPistolStance_spr.yy",},"order":58,},
     {"id":{"name":"darkcaveBackground2_spr","path":"sprites/darkcaveBackground2_spr/darkcaveBackground2_spr.yy",},"order":1,},
     {"id":{"name":"casinoCandleLight_spr","path":"sprites/casinoCandleLight_spr/casinoCandleLight_spr.yy",},"order":72,},
     {"id":{"name":"buildingWallFront1_spr","path":"sprites/buildingWallFront1_spr/buildingWallFront1_spr.yy",},"order":5,},

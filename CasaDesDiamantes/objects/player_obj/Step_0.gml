@@ -406,7 +406,18 @@ if (!grounded && !isZombie && !flip && !isDashing && !groundCollisionTimerOn && 
 		
 		if (jumpspinAim) {
 			sprite_index = playerAimStance_spr;
-		} else {			
+		} else {
+			if (global.currentWeapon == pickedWeapon.pistol) {
+				if (global.top1 == noone)
+				{
+					sprite_index = playerPistolStance_spr;
+				}
+				else
+				{
+					//sprite_index = playerJumpSpinNude_spr;
+					sprite_index = playerPistolStance_spr;
+				}
+			}
 			if (global.currentWeapon == pickedWeapon.dualBarettas) {
 				if (global.top1 == noone)
 				{
@@ -1281,6 +1292,9 @@ switch (sprite_index)
 		animationSpeed = 1.3;
 		break;
 	case playerDualBarettasStance_spr:
+		animationSpeed = 1.3;
+		break;
+	case playerPistolStance_spr:
 		animationSpeed = 1.3;
 		break;
 	case playerJumpSpinUnequipped_spr:
