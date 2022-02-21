@@ -9,6 +9,7 @@
     {"id":{"name":"streetTiles_spr","path":"sprites/streetTiles_spr/streetTiles_spr.yy",},"order":2,},
     {"id":{"name":"slotblock_obj","path":"objects/slotblock_obj/slotblock_obj.yy",},"order":63,},
     {"id":{"name":"buildingTiles_spr","path":"sprites/buildingTiles_spr/buildingTiles_spr.yy",},"order":3,},
+    {"id":{"name":"playerAimStance_spr","path":"sprites/playerAimStance_spr/playerAimStance_spr.yy",},"order":57,},
     {"id":{"name":"buildingBackgroundTiles_spr","path":"sprites/buildingBackgroundTiles_spr/buildingBackgroundTiles_spr.yy",},"order":4,},
     {"id":{"name":"caveBackgroundTiles_spr","path":"sprites/caveBackgroundTiles_spr/caveBackgroundTiles_spr.yy",},"order":5,},
     {"id":{"name":"enemySpawnerFlying_obj","path":"objects/enemySpawnerFlying_obj/enemySpawnerFlying_obj.yy",},"order":84,},

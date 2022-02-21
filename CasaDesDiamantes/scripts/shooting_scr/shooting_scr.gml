@@ -1,4 +1,10 @@
 function shooting_scr(argument0) {
+	
+	if (player_obj.spin) {
+		player_obj.jumpspinAim = true;
+		player_obj.jumpspinAimTimer = player_obj.jumpspinAimTimerSave;
+	}
+	
 	if (argument0 == "pistol")
 	{
 		var pistolShot = audio_play_sound(pistolShot_snd, 1, false);

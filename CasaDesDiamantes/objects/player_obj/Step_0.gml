@@ -403,28 +403,42 @@ if (!grounded && !isZombie && !flip && !isDashing && !groundCollisionTimerOn && 
 	if (horspeed < movSpeed - 0.3 || horspeed > -movSpeed + 0.3)
 	{
 		spin = true;
-		if (global.currentWeapon == pickedWeapon.dualBarettas) {
-			if (global.top1 == noone)
-			{
-				sprite_index = playerDualBarettasStance_spr;
+		
+		if (jumpspinAim) {
+			sprite_index = playerAimStance_spr;
+		} else {			
+			if (global.currentWeapon == pickedWeapon.dualBarettas) {
+				if (global.top1 == noone)
+				{
+					sprite_index = playerDualBarettasStance_spr;
+				}
+				else
+				{
+					//sprite_index = playerJumpSpinNude_spr;
+					sprite_index = playerDualBarettasStance_spr;
+				}
 			}
-			else
-			{
-				//sprite_index = playerJumpSpinNude_spr;
-				sprite_index = playerDualBarettasStance_spr;
+			if (global.currentWeapon == pickedWeapon.shotgun) {
+				if (global.top1 == noone)
+				{
+					sprite_index = playerShotgunStance_spr;
+				}
+				else
+				{
+					//sprite_index = playerJumpSpinNude_spr;
+					sprite_index = playerShotgunStance_spr;
+				}
 			}
 		}
-		if (global.currentWeapon == pickedWeapon.shotgun) {
-			if (global.top1 == noone)
-			{
-				sprite_index = playerShotgunStance_spr;
-			}
-			else
-			{
-				//sprite_index = playerJumpSpinNude_spr;
-				sprite_index = playerShotgunStance_spr;
-			}
-		}
+	}
+	
+	//Spin Aim
+	if (jumpspinAim) {
+		jumpspinAimTimer -= global.dt;
+	}
+	if (jumpspinAimTimer < 0) {
+		jumpspinAim = false;
+		jumpspinAimTimer = jumpspinAimTimerSave;
 	}
 }
 if (grounded)
@@ -1309,7 +1323,7 @@ switch (sprite_index)
 
 if (grounded || !flip)
 {
-	if (!wallJumpingInAir && !isDashing && !huggingWall && !setWallDir && !deathActivated && !spin)
+	if (!wallJumpingInAir && !isDashing && !huggingWall && !setWallDir && !deathActivated && (!spin || (spin && jumpspinAim)))
 	{
 		if (dirCursor > 90 && dirCursor < 270)
 		{

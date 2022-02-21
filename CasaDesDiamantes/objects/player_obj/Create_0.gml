@@ -42,6 +42,8 @@ zombieTimer = 1550;
 slowmoTimer = 260;
 damageCooldown = 200;
 lastCheckpoint = noone;
+jumpspinAim = true;
+jumpspinAimTimer = 70;
 
 //Effects
 enemySlowMotionTimer = 100;
@@ -162,6 +164,7 @@ radiationHitTimerSave = radiationHitTimer;
 blackborderPauseTimerSave = blackborderPauseTimer;
 invincibleHitCooldownSave = invincibleHitCooldown;
 trailDensitySave = trailDensity;
+jumpspinAimTimerSave = jumpspinAimTimer;
 
 //Accessories
 theta = 0;
