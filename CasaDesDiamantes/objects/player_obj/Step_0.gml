@@ -1309,7 +1309,7 @@ switch (sprite_index)
 
 if (grounded || !flip)
 {
-	if (!wallJumpingInAir && !isDashing && !huggingWall && !setWallDir && !deathActivated)
+	if (!wallJumpingInAir && !isDashing && !huggingWall && !setWallDir && !deathActivated && !spin)
 	{
 		if (dirCursor > 90 && dirCursor < 270)
 		{
