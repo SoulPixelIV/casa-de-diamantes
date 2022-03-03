@@ -383,7 +383,7 @@ with (gameManager_obj)
 	{
 		if (key_jump && !huggingWall && !wallJumping && !grounded && !isDashing && !flipUsed && jumpType == 1 && fallJumpSafety < 0 && wallJumps > 0 && movement)
 		{
-			//sprite_index = playerFlip_spr;
+			sprite_index = playerFlip_spr;
 			flip = true;
 			flipUsed = true;
 			jump_scr();
@@ -1289,13 +1289,13 @@ switch (sprite_index)
 		animationSpeed = 1.2;
 		break;
 	case playerShotgunStance_spr:
-		animationSpeed = 1.3;
+		animationSpeed = 1.5;
 		break;
 	case playerDualBarettasStance_spr:
-		animationSpeed = 1.3;
+		animationSpeed = 1.5;
 		break;
 	case playerPistolStance_spr:
-		animationSpeed = 1.3;
+		animationSpeed = 1.5;
 		break;
 	case playerJumpSpinUnequipped_spr:
 		animationSpeed = 1.2;

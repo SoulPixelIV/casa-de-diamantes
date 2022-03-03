@@ -44,6 +44,12 @@ damageCooldown = 200;
 lastCheckpoint = noone;
 jumpspinAim = true;
 jumpspinAimTimer = 70;
+shotgunX = 0;
+shotgunY = 0;
+shotgunArmX = 0;
+shotgunArmY = 0;
+shotgunArmCurvedX = 0;
+shotgunArmCurvedY = 0;
 
 //Effects
 enemySlowMotionTimer = 100;
