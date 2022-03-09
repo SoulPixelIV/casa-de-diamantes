@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"elevatorSign_spr","path":"sprites/elevatorSign_spr/elevatorSign_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "elevatorSign_spr",
     "tags": [],
     "resourceType": "GMSequence",

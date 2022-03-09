@@ -87,7 +87,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"playerWalking_spr","path":"sprites/playerWalking_spr/playerWalking_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "playerWalking_spr",
     "tags": [],
     "resourceType": "GMSequence",

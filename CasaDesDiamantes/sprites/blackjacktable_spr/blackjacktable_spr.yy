@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"blackjacktable_spr","path":"sprites/blackjacktable_spr/blackjacktable_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "blackjacktable_spr",
     "tags": [],
     "resourceType": "GMSequence",

@@ -135,7 +135,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"warpzoneGate_spr","path":"sprites/warpzoneGate_spr/warpzoneGate_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "warpzoneGate_spr",
     "tags": [],
     "resourceType": "GMSequence",

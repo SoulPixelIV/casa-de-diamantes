@@ -60,7 +60,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"casinoWallWindow_spr","path":"sprites/casinoWallWindow_spr/casinoWallWindow_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "casinoWallWindow_spr",
     "tags": [],
     "resourceType": "GMSequence",

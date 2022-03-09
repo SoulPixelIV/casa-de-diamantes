@@ -63,7 +63,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"mousePromt_spr","path":"sprites/mousePromt_spr/mousePromt_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "mousePromt_spr",
     "tags": [],
     "resourceType": "GMSequence",

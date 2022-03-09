@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"casinoCeilingLight_spr","path":"sprites/casinoCeilingLight_spr/casinoCeilingLight_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "casinoCeilingLight_spr",
     "tags": [],
     "resourceType": "GMSequence",

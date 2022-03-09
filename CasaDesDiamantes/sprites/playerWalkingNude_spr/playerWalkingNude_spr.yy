@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"playerWalkingNude_spr","path":"sprites/playerWalkingNude_spr/playerWalkingNude_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "playerWalkingNude_spr",
     "tags": [],
     "resourceType": "GMSequence",

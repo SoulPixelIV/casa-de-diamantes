@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"glitterBottomDash_spr","path":"sprites/glitterBottomDash_spr/glitterBottomDash_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "glitterBottomDash_spr",
     "tags": [],
     "resourceType": "GMSequence",

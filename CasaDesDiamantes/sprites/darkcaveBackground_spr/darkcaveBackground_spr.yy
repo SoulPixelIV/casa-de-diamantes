@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"darkcaveBackground_spr","path":"sprites/darkcaveBackground_spr/darkcaveBackground_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "darkcaveBackground_spr",
     "tags": [],
     "resourceType": "GMSequence",

@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"casinoLightbar_spr","path":"sprites/casinoLightbar_spr/casinoLightbar_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "casinoLightbar_spr",
     "tags": [],
     "resourceType": "GMSequence",

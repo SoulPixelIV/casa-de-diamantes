@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"chainlamp_spr","path":"sprites/chainlamp_spr/chainlamp_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "chainlamp_spr",
     "tags": [],
     "resourceType": "GMSequence",

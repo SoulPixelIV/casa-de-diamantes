@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"shotgun_spr","path":"sprites/shotgun_spr/shotgun_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "shotgun_spr",
     "tags": [],
     "resourceType": "GMSequence",

@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"alarmLamp_spr","path":"sprites/alarmLamp_spr/alarmLamp_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "alarmLamp_spr",
     "tags": [],
     "resourceType": "GMSequence",

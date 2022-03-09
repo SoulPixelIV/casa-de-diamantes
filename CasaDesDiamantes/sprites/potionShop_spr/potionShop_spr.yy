@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"potionShop_spr","path":"sprites/potionShop_spr/potionShop_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "potionShop_spr",
     "tags": [],
     "resourceType": "GMSequence",

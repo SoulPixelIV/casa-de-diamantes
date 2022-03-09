@@ -60,7 +60,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"casinoReceptionForeground_spr","path":"sprites/casinoReceptionForeground_spr/casinoReceptionForeground_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "casinoReceptionForeground_spr",
     "tags": [],
     "resourceType": "GMSequence",

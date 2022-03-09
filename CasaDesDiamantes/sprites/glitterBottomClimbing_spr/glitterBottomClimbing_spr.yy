@@ -63,7 +63,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"glitterBottomClimbing_spr","path":"sprites/glitterBottomClimbing_spr/glitterBottomClimbing_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "glitterBottomClimbing_spr",
     "tags": [],
     "resourceType": "GMSequence",

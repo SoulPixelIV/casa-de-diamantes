@@ -63,7 +63,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spaceKeyPrompt_spr","path":"sprites/spaceKeyPrompt_spr/spaceKeyPrompt_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spaceKeyPrompt_spr",
     "tags": [],
     "resourceType": "GMSequence",

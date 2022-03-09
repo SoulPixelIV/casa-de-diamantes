@@ -63,7 +63,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"switchableSpikes_spr","path":"sprites/switchableSpikes_spr/switchableSpikes_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "switchableSpikes_spr",
     "tags": [],
     "resourceType": "GMSequence",

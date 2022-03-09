@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sensoryRocket_spr","path":"sprites/sensoryRocket_spr/sensoryRocket_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sensoryRocket_spr",
     "tags": [],
     "resourceType": "GMSequence",

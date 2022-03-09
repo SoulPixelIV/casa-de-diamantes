@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"chipVioletSideStack_spr","path":"sprites/chipVioletSideStack_spr/chipVioletSideStack_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "chipVioletSideStack_spr",
     "tags": [],
     "resourceType": "GMSequence",

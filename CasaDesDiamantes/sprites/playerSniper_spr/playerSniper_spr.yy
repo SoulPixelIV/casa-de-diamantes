@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"playerSniper_spr","path":"sprites/playerSniper_spr/playerSniper_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "playerSniper_spr",
     "tags": [],
     "resourceType": "GMSequence",

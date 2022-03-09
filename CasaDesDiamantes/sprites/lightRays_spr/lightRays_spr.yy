@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"lightRays_spr","path":"sprites/lightRays_spr/lightRays_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "lightRays_spr",
     "tags": [],
     "resourceType": "GMSequence",

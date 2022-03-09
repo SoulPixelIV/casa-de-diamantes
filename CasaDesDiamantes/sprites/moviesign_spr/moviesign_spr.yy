@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"moviesign_spr","path":"sprites/moviesign_spr/moviesign_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "moviesign_spr",
     "tags": [],
     "resourceType": "GMSequence",

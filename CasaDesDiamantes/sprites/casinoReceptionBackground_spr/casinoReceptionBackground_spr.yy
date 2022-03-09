@@ -61,7 +61,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"casinoReceptionBackground_spr","path":"sprites/casinoReceptionBackground_spr/casinoReceptionBackground_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "casinoReceptionBackground_spr",
     "tags": [],
     "resourceType": "GMSequence",

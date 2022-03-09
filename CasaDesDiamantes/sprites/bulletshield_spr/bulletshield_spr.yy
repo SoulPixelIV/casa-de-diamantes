@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"bulletshield_spr","path":"sprites/bulletshield_spr/bulletshield_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "bulletshield_spr",
     "tags": [],
     "resourceType": "GMSequence",

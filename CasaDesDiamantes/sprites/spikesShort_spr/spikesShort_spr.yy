@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spikesShort_spr","path":"sprites/spikesShort_spr/spikesShort_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spikesShort_spr",
     "tags": [],
     "resourceType": "GMSequence",

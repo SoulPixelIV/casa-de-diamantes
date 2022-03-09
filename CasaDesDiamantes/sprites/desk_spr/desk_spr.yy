@@ -25,8 +25,8 @@
   "gridY": 0,
   "frames": [
     {"compositeImage":{"FrameId":{"name":"178f6c25-3200-4c43-b19f-eee9ac22061d","path":"sprites/desk_spr/desk_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"178f6c25-3200-4c43-b19f-eee9ac22061d","path":"sprites/desk_spr/desk_spr.yy",},"LayerId":{"name":"d573a668-8e88-4497-8c00-4b439a8a2445","path":"sprites/desk_spr/desk_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
         {"FrameId":{"name":"178f6c25-3200-4c43-b19f-eee9ac22061d","path":"sprites/desk_spr/desk_spr.yy",},"LayerId":{"name":"4697179b-fecb-4c2e-97af-372d175f8a1b","path":"sprites/desk_spr/desk_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"178f6c25-3200-4c43-b19f-eee9ac22061d","path":"sprites/desk_spr/desk_spr.yy",},"LayerId":{"name":"d573a668-8e88-4497-8c00-4b439a8a2445","path":"sprites/desk_spr/desk_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"desk_spr","path":"sprites/desk_spr/desk_spr.yy",},"resourceVersion":"1.0","name":"178f6c25-3200-4c43-b19f-eee9ac22061d","tags":[],"resourceType":"GMSpriteFrame",},
     {"compositeImage":{"FrameId":{"name":"fb70ae5b-2b06-4978-868c-c4a58d379721","path":"sprites/desk_spr/desk_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"fb70ae5b-2b06-4978-868c-c4a58d379721","path":"sprites/desk_spr/desk_spr.yy",},"LayerId":{"name":"4697179b-fecb-4c2e-97af-372d175f8a1b","path":"sprites/desk_spr/desk_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
@@ -85,7 +85,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"desk_spr","path":"sprites/desk_spr/desk_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "desk_spr",
     "tags": [],
     "resourceType": "GMSequence",

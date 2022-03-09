@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"ammoShotgunSmall_spr","path":"sprites/ammoShotgunSmall_spr/ammoShotgunSmall_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "ammoShotgunSmall_spr",
     "tags": [],
     "resourceType": "GMSequence",

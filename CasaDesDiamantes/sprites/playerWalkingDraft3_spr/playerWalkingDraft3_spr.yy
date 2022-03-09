@@ -110,7 +110,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"playerWalkingDraft3_spr","path":"sprites/playerWalkingDraft3_spr/playerWalkingDraft3_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "playerWalkingDraft3_spr",
     "tags": [],
     "resourceType": "GMSequence",

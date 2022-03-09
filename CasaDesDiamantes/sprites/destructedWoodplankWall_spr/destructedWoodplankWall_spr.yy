@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"destructedWoodplankWall_spr","path":"sprites/destructedWoodplankWall_spr/destructedWoodplankWall_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "destructedWoodplankWall_spr",
     "tags": [],
     "resourceType": "GMSequence",

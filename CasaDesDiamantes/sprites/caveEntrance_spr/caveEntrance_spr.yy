@@ -63,7 +63,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"caveEntrance_spr","path":"sprites/caveEntrance_spr/caveEntrance_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "caveEntrance_spr",
     "tags": [],
     "resourceType": "GMSequence",

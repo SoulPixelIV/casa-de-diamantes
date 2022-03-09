@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"meatchunk2_spr","path":"sprites/meatchunk2_spr/meatchunk2_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "meatchunk2_spr",
     "tags": [],
     "resourceType": "GMSequence",

@@ -75,7 +75,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"forestTorch_spr","path":"sprites/forestTorch_spr/forestTorch_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "forestTorch_spr",
     "tags": [],
     "resourceType": "GMSequence",

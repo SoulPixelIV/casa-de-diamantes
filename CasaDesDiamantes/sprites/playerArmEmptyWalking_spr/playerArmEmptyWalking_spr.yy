@@ -79,7 +79,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"playerArmEmptyWalking_spr","path":"sprites/playerArmEmptyWalking_spr/playerArmEmptyWalking_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "playerArmEmptyWalking_spr",
     "tags": [],
     "resourceType": "GMSequence",

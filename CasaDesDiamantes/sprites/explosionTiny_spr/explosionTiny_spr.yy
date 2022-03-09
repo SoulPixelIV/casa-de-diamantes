@@ -87,7 +87,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"explosionTiny_spr","path":"sprites/explosionTiny_spr/explosionTiny_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "explosionTiny_spr",
     "tags": [],
     "resourceType": "GMSequence",

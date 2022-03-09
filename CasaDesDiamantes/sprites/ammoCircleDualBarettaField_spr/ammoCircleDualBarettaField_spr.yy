@@ -123,7 +123,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"ammoCircleDualBarettaField_spr","path":"sprites/ammoCircleDualBarettaField_spr/ammoCircleDualBarettaField_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "ammoCircleDualBarettaField_spr",
     "tags": [],
     "resourceType": "GMSequence",

@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"SmokingBottomWall_spr","path":"sprites/SmokingBottomWall_spr/SmokingBottomWall_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "SmokingBottomWall_spr",
     "tags": [],
     "resourceType": "GMSequence",

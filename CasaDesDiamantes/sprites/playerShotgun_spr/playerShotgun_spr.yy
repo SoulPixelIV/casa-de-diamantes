@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"playerShotgun_spr","path":"sprites/playerShotgun_spr/playerShotgun_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "playerShotgun_spr",
     "tags": [],
     "resourceType": "GMSequence",

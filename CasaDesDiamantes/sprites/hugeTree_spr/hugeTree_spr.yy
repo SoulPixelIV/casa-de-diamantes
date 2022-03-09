@@ -61,7 +61,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"hugeTree_spr","path":"sprites/hugeTree_spr/hugeTree_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "hugeTree_spr",
     "tags": [],
     "resourceType": "GMSequence",

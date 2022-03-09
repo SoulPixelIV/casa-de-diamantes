@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sensoryTremblerBottomStretched_spr","path":"sprites/sensoryTremblerBottomStretched_spr/sensoryTremblerBottomStretched_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sensoryTremblerBottomStretched_spr",
     "tags": [],
     "resourceType": "GMSequence",

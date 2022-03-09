@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"ammoPackSniper_spr","path":"sprites/ammoPackSniper_spr/ammoPackSniper_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "ammoPackSniper_spr",
     "tags": [],
     "resourceType": "GMSequence",

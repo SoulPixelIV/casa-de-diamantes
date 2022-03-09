@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"playerFlipNude_spr","path":"sprites/playerFlipNude_spr/playerFlipNude_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "playerFlipNude_spr",
     "tags": [],
     "resourceType": "GMSequence",

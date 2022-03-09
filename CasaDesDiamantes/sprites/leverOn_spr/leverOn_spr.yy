@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"leverOn_spr","path":"sprites/leverOn_spr/leverOn_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "leverOn_spr",
     "tags": [],
     "resourceType": "GMSequence",

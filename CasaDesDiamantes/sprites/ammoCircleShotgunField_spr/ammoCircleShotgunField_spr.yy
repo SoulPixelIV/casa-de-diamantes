@@ -83,7 +83,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"ammoCircleShotgunField_spr","path":"sprites/ammoCircleShotgunField_spr/ammoCircleShotgunField_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "ammoCircleShotgunField_spr",
     "tags": [],
     "resourceType": "GMSequence",

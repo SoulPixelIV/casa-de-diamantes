@@ -95,7 +95,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"explosionBig_spr","path":"sprites/explosionBig_spr/explosionBig_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "explosionBig_spr",
     "tags": [],
     "resourceType": "GMSequence",

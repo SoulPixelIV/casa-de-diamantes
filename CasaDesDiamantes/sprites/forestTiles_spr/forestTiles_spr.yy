@@ -60,7 +60,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"forestTiles_spr","path":"sprites/forestTiles_spr/forestTiles_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "forestTiles_spr",
     "tags": [],
     "resourceType": "GMSequence",

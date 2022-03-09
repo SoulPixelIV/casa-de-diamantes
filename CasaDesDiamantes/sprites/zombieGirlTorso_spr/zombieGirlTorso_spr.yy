@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"zombieGirlTorso_spr","path":"sprites/zombieGirlTorso_spr/zombieGirlTorso_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "zombieGirlTorso_spr",
     "tags": [],
     "resourceType": "GMSequence",

@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"senzelaBackgroundBright_spr","path":"sprites/senzelaBackgroundBright_spr/senzelaBackgroundBright_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "senzelaBackgroundBright_spr",
     "tags": [],
     "resourceType": "GMSequence",

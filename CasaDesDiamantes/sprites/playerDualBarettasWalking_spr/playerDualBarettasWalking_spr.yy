@@ -79,7 +79,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"playerDualBarettasWalking_spr","path":"sprites/playerDualBarettasWalking_spr/playerDualBarettasWalking_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "playerDualBarettasWalking_spr",
     "tags": [],
     "resourceType": "GMSequence",

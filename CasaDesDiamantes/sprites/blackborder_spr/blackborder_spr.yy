@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"blackborder_spr","path":"sprites/blackborder_spr/blackborder_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "blackborder_spr",
     "tags": [],
     "resourceType": "GMSequence",

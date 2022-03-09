@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"caveBackground_spr","path":"sprites/caveBackground_spr/caveBackground_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "caveBackground_spr",
     "tags": [],
     "resourceType": "GMSequence",

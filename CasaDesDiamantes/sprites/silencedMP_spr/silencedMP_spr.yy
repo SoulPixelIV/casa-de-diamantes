@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"silencedMP_spr","path":"sprites/silencedMP_spr/silencedMP_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "silencedMP_spr",
     "tags": [],
     "resourceType": "GMSequence",

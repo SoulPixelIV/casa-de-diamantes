@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"woodDoorFront_spr","path":"sprites/woodDoorFront_spr/woodDoorFront_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "woodDoorFront_spr",
     "tags": [],
     "resourceType": "GMSequence",

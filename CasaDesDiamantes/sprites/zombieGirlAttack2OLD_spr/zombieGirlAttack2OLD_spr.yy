@@ -87,7 +87,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"zombieGirlAttack2OLD_spr","path":"sprites/zombieGirlAttack2OLD_spr/zombieGirlAttack2OLD_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "",
     "tags": [],
     "resourceType": "GMSequence",

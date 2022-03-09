@@ -60,7 +60,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"playerAimStance_spr","path":"sprites/playerAimStance_spr/playerAimStance_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "playerAimStance_spr",
     "tags": [],
     "resourceType": "GMSequence",

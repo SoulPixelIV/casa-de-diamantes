@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"ad_spr","path":"sprites/ad_spr/ad_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "ad_spr",
     "tags": [],
     "resourceType": "GMSequence",

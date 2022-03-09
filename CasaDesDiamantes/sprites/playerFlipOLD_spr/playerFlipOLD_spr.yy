@@ -127,7 +127,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"playerFlipOLD_spr","path":"sprites/playerFlipOLD_spr/playerFlipOLD_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "playerFlipOLD_spr",
     "tags": [],
     "resourceType": "GMSequence",

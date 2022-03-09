@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"lasergateOff_spr","path":"sprites/lasergateOff_spr/lasergateOff_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "lasergateOff_spr",
     "tags": [],
     "resourceType": "GMSequence",

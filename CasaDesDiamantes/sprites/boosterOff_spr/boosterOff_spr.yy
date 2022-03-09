@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"boosterOff_spr","path":"sprites/boosterOff_spr/boosterOff_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "boosterOff_spr",
     "tags": [],
     "resourceType": "GMSequence",

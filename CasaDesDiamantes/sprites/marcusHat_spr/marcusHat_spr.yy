@@ -103,7 +103,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"marcusHat_spr","path":"sprites/marcusHat_spr/marcusHat_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "marcusHat_spr",
     "tags": [],
     "resourceType": "GMSequence",

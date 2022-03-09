@@ -75,7 +75,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"boosterOn_spr","path":"sprites/boosterOn_spr/boosterOn_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "boosterOn_spr",
     "tags": [],
     "resourceType": "GMSequence",

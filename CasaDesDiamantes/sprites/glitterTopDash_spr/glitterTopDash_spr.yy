@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"glitterTopDash_spr","path":"sprites/glitterTopDash_spr/glitterTopDash_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "glitterTopDash_spr",
     "tags": [],
     "resourceType": "GMSequence",

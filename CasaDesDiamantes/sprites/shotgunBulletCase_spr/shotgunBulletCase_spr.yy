@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"shotgunBulletCase_spr","path":"sprites/shotgunBulletCase_spr/shotgunBulletCase_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "shotgunBulletCase_spr",
     "tags": [],
     "resourceType": "GMSequence",

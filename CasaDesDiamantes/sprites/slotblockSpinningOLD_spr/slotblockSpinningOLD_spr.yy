@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"slotblockSpinningOLD_spr","path":"sprites/slotblockSpinningOLD_spr/slotblockSpinningOLD_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "slotblockSpinningOLD_spr",
     "tags": [],
     "resourceType": "GMSequence",

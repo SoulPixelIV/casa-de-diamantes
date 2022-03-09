@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"playerArmEmpty_spr","path":"sprites/playerArmEmpty_spr/playerArmEmpty_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "playerArmEmpty_spr",
     "tags": [],
     "resourceType": "GMSequence",

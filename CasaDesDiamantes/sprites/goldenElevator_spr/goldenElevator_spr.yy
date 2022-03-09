@@ -61,7 +61,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"goldenElevator_spr","path":"sprites/goldenElevator_spr/goldenElevator_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "goldenElevator_spr",
     "tags": [],
     "resourceType": "GMSequence",

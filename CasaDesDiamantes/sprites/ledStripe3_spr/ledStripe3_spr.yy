@@ -63,7 +63,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"ledStripe3_spr","path":"sprites/ledStripe3_spr/ledStripe3_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "ledStripe3_spr",
     "tags": [],
     "resourceType": "GMSequence",

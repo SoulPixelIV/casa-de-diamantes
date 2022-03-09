@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"greenstripes_spr","path":"sprites/greenstripes_spr/greenstripes_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "greenstripes_spr",
     "tags": [],
     "resourceType": "GMSequence",

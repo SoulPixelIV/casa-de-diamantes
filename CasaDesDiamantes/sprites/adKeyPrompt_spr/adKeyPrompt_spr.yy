@@ -63,7 +63,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"adKeyPrompt_spr","path":"sprites/adKeyPrompt_spr/adKeyPrompt_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "adKeyPrompt_spr",
     "tags": [],
     "resourceType": "GMSequence",

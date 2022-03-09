@@ -103,7 +103,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"playerLEGACY_spr","path":"sprites/playerLEGACY_spr/playerLEGACY_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "playerLEGACY_spr",
     "tags": [],
     "resourceType": "GMSequence",

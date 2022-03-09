@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"leverOutline_spr","path":"sprites/leverOutline_spr/leverOutline_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "leverOutline_spr",
     "tags": [],
     "resourceType": "GMSequence",

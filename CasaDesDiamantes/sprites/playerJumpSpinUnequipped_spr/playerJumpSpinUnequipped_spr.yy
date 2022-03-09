@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"playerJumpSpinUnequipped_spr","path":"sprites/playerJumpSpinUnequipped_spr/playerJumpSpinUnequipped_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "playerJumpSpinUnequipped_spr",
     "tags": [],
     "resourceType": "GMSequence",

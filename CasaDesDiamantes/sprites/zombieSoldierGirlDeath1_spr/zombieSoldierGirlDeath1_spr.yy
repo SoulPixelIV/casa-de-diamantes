@@ -119,7 +119,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"zombieSoldierGirlDeath1_spr","path":"sprites/zombieSoldierGirlDeath1_spr/zombieSoldierGirlDeath1_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "",
     "tags": [],
     "resourceType": "GMSequence",

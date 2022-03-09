@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"playerDashLegacy_spr","path":"sprites/playerDashLegacy_spr/playerDashLegacy_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "playerDashLegacy_spr",
     "tags": [],
     "resourceType": "GMSequence",

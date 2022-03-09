@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"score4X_spr","path":"sprites/score4X_spr/score4X_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "score4X_spr",
     "tags": [],
     "resourceType": "GMSequence",

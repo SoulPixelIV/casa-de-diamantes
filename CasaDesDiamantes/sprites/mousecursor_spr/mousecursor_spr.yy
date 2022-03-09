@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"mousecursor_spr","path":"sprites/mousecursor_spr/mousecursor_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "mousecursor_spr",
     "tags": [],
     "resourceType": "GMSequence",

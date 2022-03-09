@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"startOverlay_spr","path":"sprites/startOverlay_spr/startOverlay_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "startOverlay_spr",
     "tags": [],
     "resourceType": "GMSequence",

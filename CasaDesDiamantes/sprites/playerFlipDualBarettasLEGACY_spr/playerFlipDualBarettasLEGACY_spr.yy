@@ -62,7 +62,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"playerFlipDualBarettasLEGACY_spr","path":"sprites/playerFlipDualBarettasLEGACY_spr/playerFlipDualBarettasLEGACY_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "playerFlipDualBarettasLEGACY_spr",
     "tags": [],
     "resourceType": "GMSequence",

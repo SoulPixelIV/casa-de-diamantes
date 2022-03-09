@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"beretDash_spr","path":"sprites/beretDash_spr/beretDash_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "beretDash_spr",
     "tags": [],
     "resourceType": "GMSequence",

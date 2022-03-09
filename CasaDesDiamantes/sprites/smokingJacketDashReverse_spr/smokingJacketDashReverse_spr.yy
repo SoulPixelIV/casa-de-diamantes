@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"smokingJacketDashReverse_spr","path":"sprites/smokingJacketDashReverse_spr/smokingJacketDashReverse_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "smokingJacketDashReverse_spr",
     "tags": [],
     "resourceType": "GMSequence",

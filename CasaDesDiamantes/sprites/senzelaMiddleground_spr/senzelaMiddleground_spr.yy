@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"senzelaMiddleground_spr","path":"sprites/senzelaMiddleground_spr/senzelaMiddleground_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "senzelaMiddleground_spr",
     "tags": [],
     "resourceType": "GMSequence",

@@ -75,7 +75,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"playerAimLine_spr","path":"sprites/playerAimLine_spr/playerAimLine_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "playerAimLine_spr",
     "tags": [],
     "resourceType": "GMSequence",

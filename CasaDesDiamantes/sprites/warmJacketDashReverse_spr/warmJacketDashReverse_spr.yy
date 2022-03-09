@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"warmJacketDashReverse_spr","path":"sprites/warmJacketDashReverse_spr/warmJacketDashReverse_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "warmJacketDashReverse_spr",
     "tags": [],
     "resourceType": "GMSequence",

@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"woodBridge_spr","path":"sprites/woodBridge_spr/woodBridge_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "woodBridge_spr",
     "tags": [],
     "resourceType": "GMSequence",

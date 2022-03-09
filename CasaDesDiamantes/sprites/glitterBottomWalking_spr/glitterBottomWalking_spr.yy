@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"glitterBottomWalking_spr","path":"sprites/glitterBottomWalking_spr/glitterBottomWalking_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "glitterBottomWalking_spr",
     "tags": [],
     "resourceType": "GMSequence",

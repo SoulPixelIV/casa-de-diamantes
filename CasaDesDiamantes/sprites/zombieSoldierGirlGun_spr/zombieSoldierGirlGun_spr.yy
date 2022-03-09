@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"zombieSoldierGirlGun_spr","path":"sprites/zombieSoldierGirlGun_spr/zombieSoldierGirlGun_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "zombieSoldierGirlGun_spr",
     "tags": [],
     "resourceType": "GMSequence",

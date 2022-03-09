@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"marcusHatDashReverse_spr","path":"sprites/marcusHatDashReverse_spr/marcusHatDashReverse_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "marcusHatDashReverse_spr",
     "tags": [],
     "resourceType": "GMSequence",

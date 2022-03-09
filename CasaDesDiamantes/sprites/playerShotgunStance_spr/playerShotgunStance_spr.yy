@@ -85,7 +85,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"playerShotgunStance_spr","path":"sprites/playerShotgunStance_spr/playerShotgunStance_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "playerShotgunStance_spr",
     "tags": [],
     "resourceType": "GMSequence",

@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"toxicwaste_spr","path":"sprites/toxicwaste_spr/toxicwaste_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "toxicwaste_spr",
     "tags": [],
     "resourceType": "GMSequence",

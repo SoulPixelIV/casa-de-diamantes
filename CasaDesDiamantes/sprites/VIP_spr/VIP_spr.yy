@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"VIP_spr","path":"sprites/VIP_spr/VIP_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "VIP_spr",
     "tags": [],
     "resourceType": "GMSequence",

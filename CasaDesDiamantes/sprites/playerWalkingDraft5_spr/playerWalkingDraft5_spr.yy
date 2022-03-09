@@ -85,7 +85,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"playerWalkingDraft5_spr","path":"sprites/playerWalkingDraft5_spr/playerWalkingDraft5_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "playerWalkingDraft5_spr",
     "tags": [],
     "resourceType": "GMSequence",

@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"casinoCandleLight_spr","path":"sprites/casinoCandleLight_spr/casinoCandleLight_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "casinoCandleLight_spr",
     "tags": [],
     "resourceType": "GMSequence",

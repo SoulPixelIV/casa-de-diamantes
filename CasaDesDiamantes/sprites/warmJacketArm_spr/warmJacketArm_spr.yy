@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"warmJacketArm_spr","path":"sprites/warmJacketArm_spr/warmJacketArm_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "warmJacketArm_spr",
     "tags": [],
     "resourceType": "GMSequence",

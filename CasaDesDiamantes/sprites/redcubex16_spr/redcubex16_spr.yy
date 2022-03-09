@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"redcubex16_spr","path":"sprites/redcubex16_spr/redcubex16_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "redcubex16_spr",
     "tags": [],
     "resourceType": "GMSequence",

@@ -63,7 +63,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"healthbarBorderLow_spr","path":"sprites/healthbarBorderLow_spr/healthbarBorderLow_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "healthbarBorderLow_spr",
     "tags": [],
     "resourceType": "GMSequence",

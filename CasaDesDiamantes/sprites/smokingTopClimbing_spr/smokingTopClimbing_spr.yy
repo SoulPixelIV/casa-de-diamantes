@@ -63,7 +63,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"smokingTopClimbing_spr","path":"sprites/smokingTopClimbing_spr/smokingTopClimbing_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "smokingTopClimbing_spr",
     "tags": [],
     "resourceType": "GMSequence",

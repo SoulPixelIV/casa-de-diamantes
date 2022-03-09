@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"powerplantWallDestruct2_spr","path":"sprites/powerplantWallDestruct2_spr/powerplantWallDestruct2_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "powerplantWallDestruct2_spr",
     "tags": [],
     "resourceType": "GMSequence",

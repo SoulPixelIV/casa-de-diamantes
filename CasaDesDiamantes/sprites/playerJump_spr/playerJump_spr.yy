@@ -75,7 +75,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"playerJump_spr","path":"sprites/playerJump_spr/playerJump_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "playerJump_spr",
     "tags": [],
     "resourceType": "GMSequence",

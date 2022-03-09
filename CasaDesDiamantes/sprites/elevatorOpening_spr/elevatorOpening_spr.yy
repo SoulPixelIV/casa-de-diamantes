@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"elevatorOpening_spr","path":"sprites/elevatorOpening_spr/elevatorOpening_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "elevatorOpening_spr",
     "tags": [],
     "resourceType": "GMSequence",

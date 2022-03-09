@@ -75,7 +75,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"glitterBottomSpin_spr","path":"sprites/glitterBottomSpin_spr/glitterBottomSpin_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "glitterBottomSpin_spr",
     "tags": [],
     "resourceType": "GMSequence",

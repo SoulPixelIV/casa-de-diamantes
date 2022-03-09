@@ -75,7 +75,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"forcefield_spr","path":"sprites/forcefield_spr/forcefield_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "forcefield_spr",
     "tags": [],
     "resourceType": "GMSequence",

@@ -103,7 +103,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"christmasHat_spr","path":"sprites/christmasHat_spr/christmasHat_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "christmasHat_spr",
     "tags": [],
     "resourceType": "GMSequence",

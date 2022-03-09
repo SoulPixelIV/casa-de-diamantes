@@ -63,7 +63,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"shiftKeyPrompt_spr","path":"sprites/shiftKeyPrompt_spr/shiftKeyPrompt_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "shiftKeyPrompt_spr",
     "tags": [],
     "resourceType": "GMSequence",

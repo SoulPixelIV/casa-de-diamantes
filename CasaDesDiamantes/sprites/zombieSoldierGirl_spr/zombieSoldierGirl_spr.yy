@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"zombieSoldierGirl_spr","path":"sprites/zombieSoldierGirl_spr/zombieSoldierGirl_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "zombieSoldierGirl_spr",
     "tags": [],
     "resourceType": "GMSequence",

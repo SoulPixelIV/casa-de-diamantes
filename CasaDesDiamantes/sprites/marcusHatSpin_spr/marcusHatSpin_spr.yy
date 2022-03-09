@@ -75,7 +75,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"marcusHatSpin_spr","path":"sprites/marcusHatSpin_spr/marcusHatSpin_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "marcusHatSpin_spr",
     "tags": [],
     "resourceType": "GMSequence",

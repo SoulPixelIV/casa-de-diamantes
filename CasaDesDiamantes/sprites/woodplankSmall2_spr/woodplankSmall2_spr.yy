@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"woodplankSmall2_spr","path":"sprites/woodplankSmall2_spr/woodplankSmall2_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "woodplankSmall2_spr",
     "tags": [],
     "resourceType": "GMSequence",

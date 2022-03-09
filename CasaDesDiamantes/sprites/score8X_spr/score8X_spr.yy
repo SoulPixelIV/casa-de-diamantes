@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"score8X_spr","path":"sprites/score8X_spr/score8X_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "score8X_spr",
     "tags": [],
     "resourceType": "GMSequence",

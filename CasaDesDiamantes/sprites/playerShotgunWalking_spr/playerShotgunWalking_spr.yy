@@ -79,7 +79,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"playerShotgunWalking_spr","path":"sprites/playerShotgunWalking_spr/playerShotgunWalking_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "playerShotgunWalking_spr",
     "tags": [],
     "resourceType": "GMSequence",

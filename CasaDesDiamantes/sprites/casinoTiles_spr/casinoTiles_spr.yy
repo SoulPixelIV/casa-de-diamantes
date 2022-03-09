@@ -139,7 +139,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"casinoTiles_spr","path":"sprites/casinoTiles_spr/casinoTiles_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "casinoTiles_spr",
     "tags": [],
     "resourceType": "GMSequence",

@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"syringeGate_spr","path":"sprites/syringeGate_spr/syringeGate_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "syringeGate_spr",
     "tags": [],
     "resourceType": "GMSequence",

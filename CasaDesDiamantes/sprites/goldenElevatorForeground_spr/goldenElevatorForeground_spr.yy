@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"goldenElevatorForeground_spr","path":"sprites/goldenElevatorForeground_spr/goldenElevatorForeground_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "goldenElevatorForeground_spr",
     "tags": [],
     "resourceType": "GMSequence",

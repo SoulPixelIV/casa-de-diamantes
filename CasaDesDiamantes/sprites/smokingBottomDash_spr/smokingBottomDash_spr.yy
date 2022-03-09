@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"smokingBottomDash_spr","path":"sprites/smokingBottomDash_spr/smokingBottomDash_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "smokingBottomDash_spr",
     "tags": [],
     "resourceType": "GMSequence",

@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"score1X_spr","path":"sprites/score1X_spr/score1X_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "score1X_spr",
     "tags": [],
     "resourceType": "GMSequence",

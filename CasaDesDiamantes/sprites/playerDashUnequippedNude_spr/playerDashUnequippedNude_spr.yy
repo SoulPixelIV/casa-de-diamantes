@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"playerDashUnequippedNude_spr","path":"sprites/playerDashUnequippedNude_spr/playerDashUnequippedNude_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "playerDashUnequippedNude_spr",
     "tags": [],
     "resourceType": "GMSequence",

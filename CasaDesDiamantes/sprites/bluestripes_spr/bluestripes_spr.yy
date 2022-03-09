@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"bluestripes_spr","path":"sprites/bluestripes_spr/bluestripes_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "bluestripes_spr",
     "tags": [],
     "resourceType": "GMSequence",

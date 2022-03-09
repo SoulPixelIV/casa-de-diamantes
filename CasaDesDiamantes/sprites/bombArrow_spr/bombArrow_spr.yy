@@ -63,7 +63,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"bombArrow_spr","path":"sprites/bombArrow_spr/bombArrow_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "bombArrow_spr",
     "tags": [],
     "resourceType": "GMSequence",

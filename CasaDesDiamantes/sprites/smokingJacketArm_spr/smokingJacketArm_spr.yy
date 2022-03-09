@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"smokingJacketArm_spr","path":"sprites/smokingJacketArm_spr/smokingJacketArm_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "smokingJacketArm_spr",
     "tags": [],
     "resourceType": "GMSequence",

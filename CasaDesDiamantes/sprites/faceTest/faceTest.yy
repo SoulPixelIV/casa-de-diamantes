@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"faceTest","path":"sprites/faceTest/faceTest.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "faceTest",
     "tags": [],
     "resourceType": "GMSequence",

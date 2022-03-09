@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"smokingJacketWalking_spr","path":"sprites/smokingJacketWalking_spr/smokingJacketWalking_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "smokingJacketWalking_spr",
     "tags": [],
     "resourceType": "GMSequence",

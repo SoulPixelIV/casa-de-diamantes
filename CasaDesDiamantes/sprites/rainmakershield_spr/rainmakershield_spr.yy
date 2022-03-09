@@ -79,7 +79,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"rainmakershield_spr","path":"sprites/rainmakershield_spr/rainmakershield_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "rainmakershield_spr",
     "tags": [],
     "resourceType": "GMSequence",

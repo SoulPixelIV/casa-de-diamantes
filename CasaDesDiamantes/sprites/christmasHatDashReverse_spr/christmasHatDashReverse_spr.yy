@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"christmasHatDashReverse_spr","path":"sprites/christmasHatDashReverse_spr/christmasHatDashReverse_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "christmasHatDashReverse_spr",
     "tags": [],
     "resourceType": "GMSequence",

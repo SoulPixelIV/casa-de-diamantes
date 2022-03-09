@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"playerDashReverse_spr","path":"sprites/playerDashReverse_spr/playerDashReverse_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "playerDashReverse_spr",
     "tags": [],
     "resourceType": "GMSequence",

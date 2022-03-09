@@ -87,7 +87,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"warpzoneKey2_spr","path":"sprites/warpzoneKey2_spr/warpzoneKey2_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "warpzoneKey2_spr",
     "tags": [],
     "resourceType": "GMSequence",

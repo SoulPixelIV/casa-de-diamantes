@@ -75,7 +75,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"crawlerFireAttack_spr","path":"sprites/crawlerFireAttack_spr/crawlerFireAttack_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "crawlerFireAttack_spr",
     "tags": [],
     "resourceType": "GMSequence",

@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"walljumpIndicator_spr","path":"sprites/walljumpIndicator_spr/walljumpIndicator_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "walljumpIndicator_spr",
     "tags": [],
     "resourceType": "GMSequence",

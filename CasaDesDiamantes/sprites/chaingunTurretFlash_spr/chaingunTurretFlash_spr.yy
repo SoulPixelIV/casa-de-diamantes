@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"chaingunTurretFlash_spr","path":"sprites/chaingunTurretFlash_spr/chaingunTurretFlash_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "chaingunTurretFlash_spr",
     "tags": [],
     "resourceType": "GMSequence",

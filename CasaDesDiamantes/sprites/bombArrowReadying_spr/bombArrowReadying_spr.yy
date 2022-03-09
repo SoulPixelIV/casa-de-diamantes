@@ -75,7 +75,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"bombArrowReadying_spr","path":"sprites/bombArrowReadying_spr/bombArrowReadying_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "bombArrowReadying_spr",
     "tags": [],
     "resourceType": "GMSequence",

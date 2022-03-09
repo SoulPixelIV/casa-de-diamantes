@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"smokingBottomDashReverse_spr","path":"sprites/smokingBottomDashReverse_spr/smokingBottomDashReverse_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "smokingBottomDashReverse_spr",
     "tags": [],
     "resourceType": "GMSequence",

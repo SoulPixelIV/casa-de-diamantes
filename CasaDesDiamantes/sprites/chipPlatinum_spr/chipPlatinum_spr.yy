@@ -87,7 +87,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"chipPlatinum_spr","path":"sprites/chipPlatinum_spr/chipPlatinum_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "chipPlatinum_spr",
     "tags": [],
     "resourceType": "GMSequence",

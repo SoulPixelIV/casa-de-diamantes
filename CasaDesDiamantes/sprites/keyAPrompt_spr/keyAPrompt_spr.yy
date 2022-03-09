@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"keyAPrompt_spr","path":"sprites/keyAPrompt_spr/keyAPrompt_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "keyAPrompt_spr",
     "tags": [],
     "resourceType": "GMSequence",

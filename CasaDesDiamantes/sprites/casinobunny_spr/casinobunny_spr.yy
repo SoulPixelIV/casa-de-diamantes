@@ -79,7 +79,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"casinobunny_spr","path":"sprites/casinobunny_spr/casinobunny_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "casinobunny_spr",
     "tags": [],
     "resourceType": "GMSequence",

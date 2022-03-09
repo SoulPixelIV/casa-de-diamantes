@@ -79,7 +79,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sensoryTremblerBaseOpen_spr","path":"sprites/sensoryTremblerBaseOpen_spr/sensoryTremblerBaseOpen_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sensoryTremblerBaseOpen_spr",
     "tags": [],
     "resourceType": "GMSequence",

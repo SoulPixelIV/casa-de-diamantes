@@ -61,7 +61,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sensoryTrembler_spr","path":"sprites/sensoryTrembler_spr/sensoryTrembler_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sensoryTrembler_spr",
     "tags": [],
     "resourceType": "GMSequence",

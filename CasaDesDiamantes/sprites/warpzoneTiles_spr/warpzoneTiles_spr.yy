@@ -60,7 +60,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"warpzoneTiles_spr","path":"sprites/warpzoneTiles_spr/warpzoneTiles_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "warpzoneTiles_spr",
     "tags": [],
     "resourceType": "GMSequence",

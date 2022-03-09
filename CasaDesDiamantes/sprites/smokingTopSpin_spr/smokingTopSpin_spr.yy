@@ -75,7 +75,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"smokingTopSpin_spr","path":"sprites/smokingTopSpin_spr/smokingTopSpin_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "smokingTopSpin_spr",
     "tags": [],
     "resourceType": "GMSequence",

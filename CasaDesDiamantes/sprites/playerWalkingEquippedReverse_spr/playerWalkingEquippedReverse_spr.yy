@@ -79,7 +79,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"playerWalkingEquippedReverse_spr","path":"sprites/playerWalkingEquippedReverse_spr/playerWalkingEquippedReverse_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "playerWalkingEquippedReverse_spr",
     "tags": [],
     "resourceType": "GMSequence",

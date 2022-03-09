@@ -75,7 +75,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"explosiveMerchantFlying_spr","path":"sprites/explosiveMerchantFlying_spr/explosiveMerchantFlying_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "explosiveMerchantFlying_spr",
     "tags": [],
     "resourceType": "GMSequence",

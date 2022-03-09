@@ -75,7 +75,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"playerBowReady_spr","path":"sprites/playerBowReady_spr/playerBowReady_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "playerBowReady_spr",
     "tags": [],
     "resourceType": "GMSequence",

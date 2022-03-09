@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"ammoCircle_spr","path":"sprites/ammoCircle_spr/ammoCircle_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "ammoCircle_spr",
     "tags": [],
     "resourceType": "GMSequence",

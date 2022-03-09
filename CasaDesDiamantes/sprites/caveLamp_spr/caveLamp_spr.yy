@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"caveLamp_spr","path":"sprites/caveLamp_spr/caveLamp_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "caveLamp_spr",
     "tags": [],
     "resourceType": "GMSequence",

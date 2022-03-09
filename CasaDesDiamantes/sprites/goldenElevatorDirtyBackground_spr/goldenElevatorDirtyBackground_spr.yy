@@ -61,7 +61,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"goldenElevatorDirtyBackground_spr","path":"sprites/goldenElevatorDirtyBackground_spr/goldenElevatorDirtyBackground_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "goldenElevatorDirtyBackground_spr",
     "tags": [],
     "resourceType": "GMSequence",

@@ -63,7 +63,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"radiationMeterAlarm_spr","path":"sprites/radiationMeterAlarm_spr/radiationMeterAlarm_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "radiationMeterAlarm_spr",
     "tags": [],
     "resourceType": "GMSequence",

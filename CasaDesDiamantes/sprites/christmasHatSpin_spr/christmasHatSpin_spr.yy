@@ -75,7 +75,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"christmasHatSpin_spr","path":"sprites/christmasHatSpin_spr/christmasHatSpin_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "christmasHatSpin_spr",
     "tags": [],
     "resourceType": "GMSequence",

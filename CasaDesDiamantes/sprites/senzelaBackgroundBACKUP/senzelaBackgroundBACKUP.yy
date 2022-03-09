@@ -68,7 +68,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"senzelaBackgroundBACKUP","path":"sprites/senzelaBackgroundBACKUP/senzelaBackgroundBACKUP.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "senzelaBackgroundBACKUP",
     "tags": [],
     "resourceType": "GMSequence",

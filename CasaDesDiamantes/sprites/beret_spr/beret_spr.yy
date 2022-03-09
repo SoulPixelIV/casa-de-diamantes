@@ -103,7 +103,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"beret_spr","path":"sprites/beret_spr/beret_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "beret_spr",
     "tags": [],
     "resourceType": "GMSequence",

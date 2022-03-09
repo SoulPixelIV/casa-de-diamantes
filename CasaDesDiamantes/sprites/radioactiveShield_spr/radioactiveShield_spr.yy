@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"radioactiveShield_spr","path":"sprites/radioactiveShield_spr/radioactiveShield_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "radioactiveShield_spr",
     "tags": [],
     "resourceType": "GMSequence",

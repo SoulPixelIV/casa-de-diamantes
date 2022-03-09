@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"scoreBorder_spr","path":"sprites/scoreBorder_spr/scoreBorder_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "scoreBorder_spr",
     "tags": [],
     "resourceType": "GMSequence",

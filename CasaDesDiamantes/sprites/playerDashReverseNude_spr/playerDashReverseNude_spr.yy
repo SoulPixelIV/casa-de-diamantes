@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"playerDashReverseNude_spr","path":"sprites/playerDashReverseNude_spr/playerDashReverseNude_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "playerDashReverseNude_spr",
     "tags": [],
     "resourceType": "GMSequence",

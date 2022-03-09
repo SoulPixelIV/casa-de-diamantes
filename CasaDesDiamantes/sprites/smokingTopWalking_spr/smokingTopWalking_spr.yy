@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"smokingTopWalking_spr","path":"sprites/smokingTopWalking_spr/smokingTopWalking_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "smokingTopWalking_spr",
     "tags": [],
     "resourceType": "GMSequence",

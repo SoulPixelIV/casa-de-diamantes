@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"playerDeath_spr","path":"sprites/playerDeath_spr/playerDeath_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "playerDeath_spr",
     "tags": [],
     "resourceType": "GMSequence",

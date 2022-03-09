@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"warmJacketDashEquipped_spr","path":"sprites/warmJacketDashEquipped_spr/warmJacketDashEquipped_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "warmJacketDashEquipped_spr",
     "tags": [],
     "resourceType": "GMSequence",

@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"painting3_spr","path":"sprites/painting3_spr/painting3_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "painting3_spr",
     "tags": [],
     "resourceType": "GMSequence",

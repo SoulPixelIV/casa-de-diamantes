@@ -63,7 +63,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"enemyCrosshairFlashing_spr","path":"sprites/enemyCrosshairFlashing_spr/enemyCrosshairFlashing_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "enemyCrosshairFlashing_spr",
     "tags": [],
     "resourceType": "GMSequence",

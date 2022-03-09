@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"marcusHatDash_spr","path":"sprites/marcusHatDash_spr/marcusHatDash_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "marcusHatDash_spr",
     "tags": [],
     "resourceType": "GMSequence",

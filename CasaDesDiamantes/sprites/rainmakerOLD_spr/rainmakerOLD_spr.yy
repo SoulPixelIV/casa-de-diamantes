@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"rainmakerOLD_spr","path":"sprites/rainmakerOLD_spr/rainmakerOLD_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "rainmakerOLD_spr",
     "tags": [],
     "resourceType": "GMSequence",

@@ -25,8 +25,8 @@
   "gridY": 0,
   "frames": [
     {"compositeImage":{"FrameId":{"name":"81265385-1688-4617-8604-e029a5ddfa59","path":"sprites/armchair_spr/armchair_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"81265385-1688-4617-8604-e029a5ddfa59","path":"sprites/armchair_spr/armchair_spr.yy",},"LayerId":{"name":"6dbd9fe8-5f46-468f-a9cf-ba7ca626eedf","path":"sprites/armchair_spr/armchair_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
         {"FrameId":{"name":"81265385-1688-4617-8604-e029a5ddfa59","path":"sprites/armchair_spr/armchair_spr.yy",},"LayerId":{"name":"0cbfc14a-36b8-4274-a811-28d03b172acc","path":"sprites/armchair_spr/armchair_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"81265385-1688-4617-8604-e029a5ddfa59","path":"sprites/armchair_spr/armchair_spr.yy",},"LayerId":{"name":"6dbd9fe8-5f46-468f-a9cf-ba7ca626eedf","path":"sprites/armchair_spr/armchair_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"armchair_spr","path":"sprites/armchair_spr/armchair_spr.yy",},"resourceVersion":"1.0","name":"81265385-1688-4617-8604-e029a5ddfa59","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
@@ -60,7 +60,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"armchair_spr","path":"sprites/armchair_spr/armchair_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "armchair_spr",
     "tags": [],
     "resourceType": "GMSequence",

@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"buildingTiles_spr","path":"sprites/buildingTiles_spr/buildingTiles_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "buildingTiles_spr",
     "tags": [],
     "resourceType": "GMSequence",

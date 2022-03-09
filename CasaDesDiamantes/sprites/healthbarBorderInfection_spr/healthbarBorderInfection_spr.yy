@@ -63,7 +63,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"healthbarBorderInfection_spr","path":"sprites/healthbarBorderInfection_spr/healthbarBorderInfection_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "healthbarBorderInfection_spr",
     "tags": [],
     "resourceType": "GMSequence",

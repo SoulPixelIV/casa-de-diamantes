@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"brokenWall_spr","path":"sprites/brokenWall_spr/brokenWall_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "brokenWall_spr",
     "tags": [],
     "resourceType": "GMSequence",

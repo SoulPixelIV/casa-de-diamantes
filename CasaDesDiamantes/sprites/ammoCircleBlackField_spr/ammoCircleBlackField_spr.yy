@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"ammoCircleBlackField_spr","path":"sprites/ammoCircleBlackField_spr/ammoCircleBlackField_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "ammoCircleBlackField_spr",
     "tags": [],
     "resourceType": "GMSequence",

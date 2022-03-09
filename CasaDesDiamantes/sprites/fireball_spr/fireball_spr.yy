@@ -75,7 +75,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"fireball_spr","path":"sprites/fireball_spr/fireball_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "fireball_spr",
     "tags": [],
     "resourceType": "GMSequence",

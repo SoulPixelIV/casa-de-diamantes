@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"blackjackStartButton_spr","path":"sprites/blackjackStartButton_spr/blackjackStartButton_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "blackjackStartButton_spr",
     "tags": [],
     "resourceType": "GMSequence",

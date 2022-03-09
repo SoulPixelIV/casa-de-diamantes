@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"painting2OLD_spr","path":"sprites/painting2OLD_spr/painting2OLD_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "painting2OLD_spr",
     "tags": [],
     "resourceType": "GMSequence",

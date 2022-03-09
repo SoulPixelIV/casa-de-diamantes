@@ -75,7 +75,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"playerJumpSpinLEGACY_spr","path":"sprites/playerJumpSpinLEGACY_spr/playerJumpSpinLEGACY_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "playerJumpSpinLEGACY_spr",
     "tags": [],
     "resourceType": "GMSequence",

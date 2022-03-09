@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"blackjackHitButton_spr","path":"sprites/blackjackHitButton_spr/blackjackHitButton_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "blackjackHitButton_spr",
     "tags": [],
     "resourceType": "GMSequence",

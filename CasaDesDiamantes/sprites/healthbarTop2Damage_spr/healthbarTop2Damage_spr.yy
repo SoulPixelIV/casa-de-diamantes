@@ -91,7 +91,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"healthbarTop2Damage_spr","path":"sprites/healthbarTop2Damage_spr/healthbarTop2Damage_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "healthbarTop2Damage_spr",
     "tags": [],
     "resourceType": "GMSequence",

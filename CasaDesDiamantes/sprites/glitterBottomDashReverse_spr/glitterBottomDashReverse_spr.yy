@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"glitterBottomDashReverse_spr","path":"sprites/glitterBottomDashReverse_spr/glitterBottomDashReverse_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "glitterBottomDashReverse_spr",
     "tags": [],
     "resourceType": "GMSequence",

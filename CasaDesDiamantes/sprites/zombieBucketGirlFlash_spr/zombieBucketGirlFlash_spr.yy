@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"zombieBucketGirlFlash_spr","path":"sprites/zombieBucketGirlFlash_spr/zombieBucketGirlFlash_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "zombieBucketGirlFlash_spr",
     "tags": [],
     "resourceType": "GMSequence",

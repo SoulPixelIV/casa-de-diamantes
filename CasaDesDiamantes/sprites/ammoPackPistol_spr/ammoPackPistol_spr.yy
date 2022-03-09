@@ -87,7 +87,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"ammoPackPistol_spr","path":"sprites/ammoPackPistol_spr/ammoPackPistol_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "ammoPackPistol_spr",
     "tags": [],
     "resourceType": "GMSequence",

@@ -63,7 +63,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"switchOutline_spr","path":"sprites/switchOutline_spr/switchOutline_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "switchOutline_spr",
     "tags": [],
     "resourceType": "GMSequence",

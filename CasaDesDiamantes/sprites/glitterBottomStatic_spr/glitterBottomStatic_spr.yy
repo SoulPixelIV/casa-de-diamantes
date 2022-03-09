@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"glitterBottomStatic_spr","path":"sprites/glitterBottomStatic_spr/glitterBottomStatic_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "glitterBottomStatic_spr",
     "tags": [],
     "resourceType": "GMSequence",

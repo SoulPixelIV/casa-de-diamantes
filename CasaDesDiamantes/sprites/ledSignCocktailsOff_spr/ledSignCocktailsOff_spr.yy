@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"ledSignCocktailsOff_spr","path":"sprites/ledSignCocktailsOff_spr/ledSignCocktailsOff_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "ledSignCocktailsOff_spr",
     "tags": [],
     "resourceType": "GMSequence",

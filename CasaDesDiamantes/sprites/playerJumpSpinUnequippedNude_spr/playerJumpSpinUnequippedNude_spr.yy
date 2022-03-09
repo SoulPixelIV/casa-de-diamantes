@@ -75,7 +75,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"playerJumpSpinUnequippedNude_spr","path":"sprites/playerJumpSpinUnequippedNude_spr/playerJumpSpinUnequippedNude_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "playerJumpSpinUnequippedNude_spr",
     "tags": [],
     "resourceType": "GMSequence",

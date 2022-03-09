@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"questionmark_spr","path":"sprites/questionmark_spr/questionmark_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "questionmark_spr",
     "tags": [],
     "resourceType": "GMSequence",

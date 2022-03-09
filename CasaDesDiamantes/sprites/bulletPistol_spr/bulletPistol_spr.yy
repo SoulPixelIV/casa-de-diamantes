@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"bulletPistol_spr","path":"sprites/bulletPistol_spr/bulletPistol_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "bulletPistol_spr",
     "tags": [],
     "resourceType": "GMSequence",

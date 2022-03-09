@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"playerBulletLine_spr","path":"sprites/playerBulletLine_spr/playerBulletLine_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "playerBulletLine_spr",
     "tags": [],
     "resourceType": "GMSequence",

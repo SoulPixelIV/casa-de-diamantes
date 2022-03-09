@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"ramp_spr","path":"sprites/ramp_spr/ramp_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "ramp_spr",
     "tags": [],
     "resourceType": "GMSequence",

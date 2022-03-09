@@ -75,7 +75,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"warmJacketSpin_spr","path":"sprites/warmJacketSpin_spr/warmJacketSpin_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "warmJacketSpin_spr",
     "tags": [],
     "resourceType": "GMSequence",

@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"rewardsign_spr","path":"sprites/rewardsign_spr/rewardsign_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "rewardsign_spr",
     "tags": [],
     "resourceType": "GMSequence",

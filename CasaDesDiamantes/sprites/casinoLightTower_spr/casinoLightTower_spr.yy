@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"casinoLightTower_spr","path":"sprites/casinoLightTower_spr/casinoLightTower_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "casinoLightTower_spr",
     "tags": [],
     "resourceType": "GMSequence",

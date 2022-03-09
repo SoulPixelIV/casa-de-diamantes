@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"bet1000_spr","path":"sprites/bet1000_spr/bet1000_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "bet1000_spr",
     "tags": [],
     "resourceType": "GMSequence",

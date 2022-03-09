@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"deathBACKUP_spr","path":"sprites/deathBACKUP_spr/deathBACKUP_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "deathBACKUP_spr",
     "tags": [],
     "resourceType": "GMSequence",

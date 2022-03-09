@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"zombieSoldierGirlFlashHeadshot_spr","path":"sprites/zombieSoldierGirlFlashHeadshot_spr/zombieSoldierGirlFlashHeadshot_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "zombieSoldierGirlFlashHeadshot_spr",
     "tags": [],
     "resourceType": "GMSequence",

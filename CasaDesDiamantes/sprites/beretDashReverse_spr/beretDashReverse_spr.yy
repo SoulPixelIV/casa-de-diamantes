@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"beretDashReverse_spr","path":"sprites/beretDashReverse_spr/beretDashReverse_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "beretDashReverse_spr",
     "tags": [],
     "resourceType": "GMSequence",

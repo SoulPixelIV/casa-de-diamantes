@@ -103,7 +103,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"playerEquippedNude_spr","path":"sprites/playerEquippedNude_spr/playerEquippedNude_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "playerEquippedNude_spr",
     "tags": [],
     "resourceType": "GMSequence",

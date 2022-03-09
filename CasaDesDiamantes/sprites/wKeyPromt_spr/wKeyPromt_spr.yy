@@ -63,7 +63,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"wKeyPromt_spr","path":"sprites/wKeyPromt_spr/wKeyPromt_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "wKeyPromt_spr",
     "tags": [],
     "resourceType": "GMSequence",

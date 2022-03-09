@@ -85,7 +85,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"cutieplus_spr","path":"sprites/cutieplus_spr/cutieplus_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "cutieplus_spr",
     "tags": [],
     "resourceType": "GMSequence",

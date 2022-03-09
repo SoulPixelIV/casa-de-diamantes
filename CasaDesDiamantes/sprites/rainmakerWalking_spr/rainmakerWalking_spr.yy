@@ -85,7 +85,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"rainmakerWalking_spr","path":"sprites/rainmakerWalking_spr/rainmakerWalking_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "rainmakerWalking_spr",
     "tags": [],
     "resourceType": "GMSequence",

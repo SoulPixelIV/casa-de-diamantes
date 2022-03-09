@@ -70,7 +70,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"casinoDoor_spr","path":"sprites/casinoDoor_spr/casinoDoor_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "casinoDoor_spr",
     "tags": [],
     "resourceType": "GMSequence",

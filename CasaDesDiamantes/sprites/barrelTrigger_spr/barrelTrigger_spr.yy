@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"barrelTrigger_spr","path":"sprites/barrelTrigger_spr/barrelTrigger_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "barrelTrigger_spr",
     "tags": [],
     "resourceType": "GMSequence",

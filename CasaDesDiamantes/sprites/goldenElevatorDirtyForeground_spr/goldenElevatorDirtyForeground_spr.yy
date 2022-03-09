@@ -61,7 +61,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"goldenElevatorDirtyForeground_spr","path":"sprites/goldenElevatorDirtyForeground_spr/goldenElevatorDirtyForeground_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "goldenElevatorDirtyForeground_spr",
     "tags": [],
     "resourceType": "GMSequence",

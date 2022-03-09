@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"marcusHatWalking_spr","path":"sprites/marcusHatWalking_spr/marcusHatWalking_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "marcusHatWalking_spr",
     "tags": [],
     "resourceType": "GMSequence",

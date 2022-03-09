@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"poisontear_spr","path":"sprites/poisontear_spr/poisontear_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "poisontear_spr",
     "tags": [],
     "resourceType": "GMSequence",

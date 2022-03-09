@@ -63,7 +63,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"checkpointOutline_spr","path":"sprites/checkpointOutline_spr/checkpointOutline_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "checkpointOutline_spr",
     "tags": [],
     "resourceType": "GMSequence",

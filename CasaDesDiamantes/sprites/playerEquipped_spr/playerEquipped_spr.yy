@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"playerEquipped_spr","path":"sprites/playerEquipped_spr/playerEquipped_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "playerEquipped_spr",
     "tags": [],
     "resourceType": "GMSequence",

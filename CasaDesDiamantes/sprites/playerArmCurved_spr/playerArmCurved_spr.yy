@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"playerArmCurved_spr","path":"sprites/playerArmCurved_spr/playerArmCurved_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "playerArmCurved_spr",
     "tags": [],
     "resourceType": "GMSequence",

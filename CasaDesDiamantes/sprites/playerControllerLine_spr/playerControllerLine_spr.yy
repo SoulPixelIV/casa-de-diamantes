@@ -75,7 +75,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"playerControllerLine_spr","path":"sprites/playerControllerLine_spr/playerControllerLine_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "playerControllerLine_spr",
     "tags": [],
     "resourceType": "GMSequence",

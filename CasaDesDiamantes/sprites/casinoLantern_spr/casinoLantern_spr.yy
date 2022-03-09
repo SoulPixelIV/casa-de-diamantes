@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"casinoLantern_spr","path":"sprites/casinoLantern_spr/casinoLantern_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "casinoLantern_spr",
     "tags": [],
     "resourceType": "GMSequence",

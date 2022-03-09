@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"poisonpuddle_spr","path":"sprites/poisonpuddle_spr/poisonpuddle_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "poisonpuddle_spr",
     "tags": [],
     "resourceType": "GMSequence",

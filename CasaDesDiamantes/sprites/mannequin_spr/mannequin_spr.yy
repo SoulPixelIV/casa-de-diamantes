@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"mannequin_spr","path":"sprites/mannequin_spr/mannequin_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "mannequin_spr",
     "tags": [],
     "resourceType": "GMSequence",

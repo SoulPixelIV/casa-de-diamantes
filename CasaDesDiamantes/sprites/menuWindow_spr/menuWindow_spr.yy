@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"menuWindow_spr","path":"sprites/menuWindow_spr/menuWindow_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "menuWindow_spr",
     "tags": [],
     "resourceType": "GMSequence",

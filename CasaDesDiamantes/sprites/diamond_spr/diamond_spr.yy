@@ -151,7 +151,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"diamond_spr","path":"sprites/diamond_spr/diamond_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "diamond_spr",
     "tags": [],
     "resourceType": "GMSequence",

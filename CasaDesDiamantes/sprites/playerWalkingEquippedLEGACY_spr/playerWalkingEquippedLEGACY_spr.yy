@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"playerWalkingEquippedLEGACY_spr","path":"sprites/playerWalkingEquippedLEGACY_spr/playerWalkingEquippedLEGACY_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "playerWalkingEquippedLEGACY_spr",
     "tags": [],
     "resourceType": "GMSequence",

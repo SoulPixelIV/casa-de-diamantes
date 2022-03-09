@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"dialogBorder_spr","path":"sprites/dialogBorder_spr/dialogBorder_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "dialogBorder_spr",
     "tags": [],
     "resourceType": "GMSequence",

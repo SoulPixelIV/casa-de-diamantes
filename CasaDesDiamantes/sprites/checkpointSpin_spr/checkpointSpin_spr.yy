@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"checkpointSpin_spr","path":"sprites/checkpointSpin_spr/checkpointSpin_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "checkpointSpin_spr",
     "tags": [],
     "resourceType": "GMSequence",

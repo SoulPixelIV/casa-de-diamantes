@@ -87,7 +87,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"ammoCounterReloadingFailed_spr","path":"sprites/ammoCounterReloadingFailed_spr/ammoCounterReloadingFailed_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "ammoCounterReloadingFailed_spr",
     "tags": [],
     "resourceType": "GMSequence",

@@ -267,7 +267,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"playingCards_spr","path":"sprites/playingCards_spr/playingCards_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "",
     "tags": [],
     "resourceType": "GMSequence",

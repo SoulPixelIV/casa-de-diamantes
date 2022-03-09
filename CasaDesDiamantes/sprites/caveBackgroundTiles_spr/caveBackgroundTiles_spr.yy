@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"caveBackgroundTiles_spr","path":"sprites/caveBackgroundTiles_spr/caveBackgroundTiles_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "caveBackgroundTiles_spr",
     "tags": [],
     "resourceType": "GMSequence",

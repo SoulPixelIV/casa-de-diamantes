@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"targetCircle_spr","path":"sprites/targetCircle_spr/targetCircle_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "targetCircle_spr",
     "tags": [],
     "resourceType": "GMSequence",

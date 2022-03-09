@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"glitterTopDashReverse_spr","path":"sprites/glitterTopDashReverse_spr/glitterTopDashReverse_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "glitterTopDashReverse_spr",
     "tags": [],
     "resourceType": "GMSequence",

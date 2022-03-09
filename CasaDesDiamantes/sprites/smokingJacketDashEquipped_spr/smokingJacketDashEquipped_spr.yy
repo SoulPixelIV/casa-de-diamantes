@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"smokingJacketDashEquipped_spr","path":"sprites/smokingJacketDashEquipped_spr/smokingJacketDashEquipped_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "smokingJacketDashEquipped_spr",
     "tags": [],
     "resourceType": "GMSequence",

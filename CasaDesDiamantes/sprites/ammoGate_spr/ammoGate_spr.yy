@@ -79,7 +79,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"ammoGate_spr","path":"sprites/ammoGate_spr/ammoGate_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "ammoGate_spr",
     "tags": [],
     "resourceType": "GMSequence",

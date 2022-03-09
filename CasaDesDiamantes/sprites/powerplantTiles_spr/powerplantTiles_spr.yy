@@ -60,7 +60,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"powerplantTiles_spr","path":"sprites/powerplantTiles_spr/powerplantTiles_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "powerplantTiles_spr",
     "tags": [],
     "resourceType": "GMSequence",

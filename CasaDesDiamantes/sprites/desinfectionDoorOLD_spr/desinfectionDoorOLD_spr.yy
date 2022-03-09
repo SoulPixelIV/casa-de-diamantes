@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"desinfectionDoorOLD_spr","path":"sprites/desinfectionDoorOLD_spr/desinfectionDoorOLD_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "desinfectionDoorOLD_spr",
     "tags": [],
     "resourceType": "GMSequence",

@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"playerWallNoArm_spr","path":"sprites/playerWallNoArm_spr/playerWallNoArm_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "playerWallNoArm_spr",
     "tags": [],
     "resourceType": "GMSequence",

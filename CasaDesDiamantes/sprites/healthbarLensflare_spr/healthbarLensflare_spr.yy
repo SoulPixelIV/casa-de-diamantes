@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"healthbarLensflare_spr","path":"sprites/healthbarLensflare_spr/healthbarLensflare_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "healthbarLensflare_spr",
     "tags": [],
     "resourceType": "GMSequence",

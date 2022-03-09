@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"redstripes_spr","path":"sprites/redstripes_spr/redstripes_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "redstripes_spr",
     "tags": [],
     "resourceType": "GMSequence",

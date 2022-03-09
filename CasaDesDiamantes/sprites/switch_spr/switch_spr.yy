@@ -63,7 +63,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"switch_spr","path":"sprites/switch_spr/switch_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "switch_spr",
     "tags": [],
     "resourceType": "GMSequence",

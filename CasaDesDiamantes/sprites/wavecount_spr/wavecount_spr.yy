@@ -75,7 +75,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"wavecount_spr","path":"sprites/wavecount_spr/wavecount_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "wavecount_spr",
     "tags": [],
     "resourceType": "GMSequence",

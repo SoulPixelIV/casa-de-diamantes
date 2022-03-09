@@ -103,7 +103,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"warmJacketEquipped_spr","path":"sprites/warmJacketEquipped_spr/warmJacketEquipped_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "warmJacketEquipped_spr",
     "tags": [],
     "resourceType": "GMSequence",

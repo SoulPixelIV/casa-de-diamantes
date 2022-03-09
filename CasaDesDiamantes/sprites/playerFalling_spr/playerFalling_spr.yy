@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"playerFalling_spr","path":"sprites/playerFalling_spr/playerFalling_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "playerFalling_spr",
     "tags": [],
     "resourceType": "GMSequence",

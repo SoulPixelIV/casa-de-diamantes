@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"playerRework_spr","path":"sprites/playerRework_spr/playerRework_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "playerRework_spr",
     "tags": [],
     "resourceType": "GMSequence",

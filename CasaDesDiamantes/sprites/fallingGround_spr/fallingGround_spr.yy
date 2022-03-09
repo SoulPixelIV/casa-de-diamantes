@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"fallingGround_spr","path":"sprites/fallingGround_spr/fallingGround_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "fallingGround_spr",
     "tags": [],
     "resourceType": "GMSequence",

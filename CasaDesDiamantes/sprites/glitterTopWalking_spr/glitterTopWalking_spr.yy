@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"glitterTopWalking_spr","path":"sprites/glitterTopWalking_spr/glitterTopWalking_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "glitterTopWalking_spr",
     "tags": [],
     "resourceType": "GMSequence",

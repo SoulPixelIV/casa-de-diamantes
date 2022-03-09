@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"toxicWater_spr","path":"sprites/toxicWater_spr/toxicWater_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "toxicWater_spr",
     "tags": [],
     "resourceType": "GMSequence",

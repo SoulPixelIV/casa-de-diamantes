@@ -63,7 +63,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"glassCabinet_spr","path":"sprites/glassCabinet_spr/glassCabinet_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "glassCabinet_spr",
     "tags": [],
     "resourceType": "GMSequence",

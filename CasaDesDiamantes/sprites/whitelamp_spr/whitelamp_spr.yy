@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"whitelamp_spr","path":"sprites/whitelamp_spr/whitelamp_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "whitelamp_spr",
     "tags": [],
     "resourceType": "GMSequence",

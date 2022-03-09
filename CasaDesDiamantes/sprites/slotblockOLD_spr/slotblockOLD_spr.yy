@@ -87,7 +87,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"slotblockOLD_spr","path":"sprites/slotblockOLD_spr/slotblockOLD_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "slotblockOLD_spr",
     "tags": [],
     "resourceType": "GMSequence",

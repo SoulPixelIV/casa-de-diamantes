@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"beretWalking_spr","path":"sprites/beretWalking_spr/beretWalking_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "beretWalking_spr",
     "tags": [],
     "resourceType": "GMSequence",

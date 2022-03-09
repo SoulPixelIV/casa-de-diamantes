@@ -79,7 +79,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"zombieBucketGirlAttack2_spr","path":"sprites/zombieBucketGirlAttack2_spr/zombieBucketGirlAttack2_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "zombieBucketGirlAttack2_spr",
     "tags": [],
     "resourceType": "GMSequence",

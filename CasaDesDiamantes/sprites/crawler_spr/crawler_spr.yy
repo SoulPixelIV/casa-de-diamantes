@@ -79,7 +79,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"crawler_spr","path":"sprites/crawler_spr/crawler_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "crawler_spr",
     "tags": [],
     "resourceType": "GMSequence",

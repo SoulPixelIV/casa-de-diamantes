@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"toxicrain_spr","path":"sprites/toxicrain_spr/toxicrain_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "toxicrain_spr",
     "tags": [],
     "resourceType": "GMSequence",

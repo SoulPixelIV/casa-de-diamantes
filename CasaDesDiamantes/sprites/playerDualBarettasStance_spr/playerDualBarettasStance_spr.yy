@@ -91,7 +91,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"playerDualBarettasStance_spr","path":"sprites/playerDualBarettasStance_spr/playerDualBarettasStance_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "playerDualBarettasStance_spr",
     "tags": [],
     "resourceType": "GMSequence",

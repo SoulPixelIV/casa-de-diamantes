@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sensoryTremblerBottomStanding_spr","path":"sprites/sensoryTremblerBottomStanding_spr/sensoryTremblerBottomStanding_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sensoryTremblerBottomStanding_spr",
     "tags": [],
     "resourceType": "GMSequence",

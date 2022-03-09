@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"mask_spr","path":"sprites/mask_spr/mask_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "mask_spr",
     "tags": [],
     "resourceType": "GMSequence",

@@ -63,7 +63,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"playerFlipTest_spr","path":"sprites/playerFlipTest_spr/playerFlipTest_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "playerFlipTest_spr",
     "tags": [],
     "resourceType": "GMSequence",

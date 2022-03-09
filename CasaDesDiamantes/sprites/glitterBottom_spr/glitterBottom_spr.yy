@@ -103,7 +103,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"glitterBottom_spr","path":"sprites/glitterBottom_spr/glitterBottom_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "glitterBottom_spr",
     "tags": [],
     "resourceType": "GMSequence",

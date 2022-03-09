@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"guiBorder_spr","path":"sprites/guiBorder_spr/guiBorder_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "guiBorder_spr",
     "tags": [],
     "resourceType": "GMSequence",
