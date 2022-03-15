@@ -1672,7 +1672,11 @@ if (colliding)
 			{
 				y += sign(verspeed);
 			}
-			resetJump_scr();
+			if (place_free(x, y - 16)) {
+				resetJump_scr();
+			} else {
+				verspeed = 0;
+			}
 		}
 	}
 	else
