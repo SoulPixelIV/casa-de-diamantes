@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Steph Sprites",
-    "path": "folders/Steph/Steph Sprites.yy",
+    "name": "Legacy",
+    "path": "folders/Steph/Steph Sprites/Legacy.yy",
   },
   "resourceVersion": "1.0",
   "name": "playerDashLegacy_spr",
