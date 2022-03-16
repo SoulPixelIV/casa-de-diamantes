@@ -756,7 +756,7 @@ with (gameManager_obj)
 						}
 						else
 						{
-							sprite_index = playerFalling_spr;
+							//sprite_index = playerFalling_spr;
 						}
 					}
 				}
@@ -1323,12 +1323,6 @@ switch (sprite_index)
 		break;
 	case playerWalkingNude_spr:
 		animationSpeed = 0.8;
-		break;
-	case playerJump_spr:
-		animationSpeed = 0.75;
-		break;
-	case playerFalling_spr:
-		animationSpeed = 0.75;
 		break;
 	case playerClimbing_spr:
 		animationSpeed = 0.5;
