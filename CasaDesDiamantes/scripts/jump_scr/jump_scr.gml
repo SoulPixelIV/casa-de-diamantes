@@ -22,7 +22,7 @@ function jump_scr() {
 		}
 	}
 	//Dash Momentum after jump
-	if ((player_obj.isDashing && place_free(x, y - 32)))
+	if ((player_obj.isDashing && place_free(x, y - 34)))
 	{
 		player_obj.stoppedDashing = true;
 		player_obj.stillInAir = true;
