@@ -167,9 +167,9 @@ if (movement && !isZombie)
 	//Cancel Dash
 	if (stoppedDashing || onLadder)
 	{
-		if (place_free(x, y + 32))
+		if (place_free(x, y + 36))
 		{
-			if (!place_meeting(x, y + 32, enemy_obj))
+			if (!place_meeting(x, y + 36, enemy_obj))
 			{
 				isDashing = false;
 				stoppedDashing = false;

@@ -374,8 +374,11 @@ if (!noHUD && instance_exists(player_obj))
 		currDeltatime = global.dt;
 		updateFPS = updateFPSSave;
 	}
-	//draw_text_colour((x - xScreenSize / 2) + 16, (y + yScreenSize / 2) - 16, "Framerate: " + string(currFps), c_white, c_white, c_white, c_white, 1);
+	draw_text_colour((x - xScreenSize / 2) + 16, (y + yScreenSize / 2) - 16, "Framerate: " + string(currFps), c_white, c_white, c_white, c_white, 1);
 	//draw_text_colour((x - xScreenSize / 2) + 16, (y + yScreenSize / 2) - 32, "Delta: " + string(currDeltatime), c_white, c_white, c_white, c_white, 1);
+	draw_set_halign(fa_center);
+	draw_text_color(x, (y - yScreenSize / 2) + 6, "F3 - Level Select", c_white, c_white, c_white, c_white, 1);
+	draw_set_halign(fa_left);
 
 	//Healthbar
 	if (player_obj.plagueTransformation)
