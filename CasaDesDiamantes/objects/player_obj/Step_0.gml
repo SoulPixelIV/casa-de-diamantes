@@ -775,26 +775,14 @@ if (huggingWall && !grounded && !deathActivated)
 	{
 		sprite_index = playerWall_spr;
 	}
-	if (horspeed <= 0)
+
+	walljumpDustTimer -= global.dt;
+	if (walljumpDustTimer < 0)
 	{
-		walljumpDustTimer -= global.dt;
-		if (walljumpDustTimer < 0)
-		{
-			instance_create_layer(player_obj.x - 6, player_obj.y + 22, "ForegroundObjects", dustParticle_obj);
-			instance_create_layer(player_obj.x - 6, player_obj.y - 16, "BackgroundObjects", dustParticle_obj);
-			walljumpDustTimer = walljumpDustTimerSave;
-		}
+		instance_create_layer(player_obj.x - 6 * image_xscale, player_obj.y + 22, "ForegroundObjects", dustParticle_obj);
+		walljumpDustTimer = walljumpDustTimerSave;
 	}
-	else
-	{
-		walljumpDustTimer -= global.dt;
-		if (walljumpDustTimer < 0)
-		{
-			instance_create_layer(player_obj.x + 6, player_obj.y + 22, "ForegroundObjects", dustParticle_obj);
-			instance_create_layer(player_obj.x + 6, player_obj.y - 16, "BackgroundObjects", dustParticle_obj);
-			walljumpDustTimer = walljumpDustTimerSave;
-		}
-	}
+
 	if (!setWallDir)
 	{
 		if (!place_free(x - 1, y))
