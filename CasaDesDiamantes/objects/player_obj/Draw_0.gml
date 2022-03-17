@@ -236,7 +236,7 @@ if (sprite_index == playerWalkingEquipped_spr || sprite_index == playerWalkingEq
 
 if (flip && !onLadder && !huggingWall && !deathActivated)
 {
-	playerRotation += (global.dt * 8) * -image_xscale;
+	playerRotation += (global.dt * 16) * -image_xscale;
 	if (global.top1 == noone)
 	{
 		draw_sprite_ext(playerFlip_spr, 0, x, y, image_xscale, 1, playerRotation, -1, 1);
