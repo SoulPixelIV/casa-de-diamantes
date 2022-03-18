@@ -14,6 +14,9 @@ wallJumpsMax = wallJumps;
 dashDelay = 300;
 dashInvincibility = 120;
 dashInvincibilityOn = false;
+crouchRollTimer = 120;
+crouchRollStartDelay = 60;
+dashroll = false;
 stillInAir = false;
 animationSpeed = 1;
 jumpType = 0;
@@ -171,6 +174,8 @@ blackborderPauseTimerSave = blackborderPauseTimer;
 invincibleHitCooldownSave = invincibleHitCooldown;
 trailDensitySave = trailDensity;
 jumpspinAimTimerSave = jumpspinAimTimer;
+crouchRollTimerSave = crouchRollTimer;
+crouchRollStartDelaySave = crouchRollStartDelay;
 
 //Accessories
 theta = 0;

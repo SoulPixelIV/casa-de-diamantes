@@ -167,9 +167,9 @@ if (movement && !isZombie)
 	//Cancel Dash
 	if (stoppedDashing || onLadder)
 	{
-		if (place_free(x, y + 36))
+		if (place_free(x, y + 32))
 		{
-			if (!place_meeting(x, y + 36, enemy_obj))
+			if (!place_meeting(x, y + 32, enemy_obj))
 			{
 				isDashing = false;
 				stoppedDashing = false;
@@ -222,77 +222,88 @@ if (keyboard_check_pressed(vk_delete)) {
 
 if (isDashing && !onLadder)
 {	
-	with (gameManager_obj)
+	if (global.top1 == noone)
 	{
-		if (global.currentWeapon == pickedWeapon.unarmed)
-		{
-			with (player_obj)
+		crouchRollStartDelay -= global.dt;
+		if (!grounded) {
+			if (dashLastSpriteReached)
 			{
-				if (global.top1 == noone)
+				if (((dirCursor > 90 && dirCursor < 270) && image_xscale == 1) || ((dirCursor < 90 || dirCursor > 270) && image_xscale == -1))
 				{
-					//sprite_index = playerDashUnequipped_spr;
+					sprite_index = playerDashReverse_spr;
 				}
 				else
 				{
-					sprite_index = playerDashUnequippedNude_spr;
+					sprite_index = playerDash_spr;
 				}
-				if (image_index > image_number - 1 && (sprite_index == playerDashUnequipped_spr || sprite_index == playerDashUnequippedNude_spr))
-				{
-					image_index = image_number - 1;
+			}
+			else
+			{
+				sprite_index = playerDash_spr;
+			}
+		} else {
+			if (crouchRollStartDelay < 0) {
+				//Ground Roll in to Crouch
+				crouchRollTimer -= global.dt;
+				if (crouchRollTimer > 0) {
+					dashroll = true;
+				} else {
+					dashroll = false;
+				}
+						
+				if (crouchRollTimer > 0) {
+					sprite_index = playerCrouchRoll_spr;
+				} else {
+					sprite_index = playerCrouch_spr;
 				}
 			}
 		}
-		else
-		{
-			with (player_obj)
+	}
+	else
+	{
+		crouchRollStartDelay -= global.dt;
+		if (!grounded) {
+			if (dashLastSpriteReached)
 			{
-				if (global.top1 == noone)
+				if (((dirCursor > 90 && dirCursor < 270) && image_xscale == 1) || ((dirCursor < 90 || dirCursor > 270) && image_xscale == -1))
 				{
-					if (dashLastSpriteReached)
-					{
-						if (((dirCursor > 90 && dirCursor < 270) && image_xscale == 1) || ((dirCursor < 90 || dirCursor > 270) && image_xscale == -1))
-						{
-							sprite_index = playerDashReverse_spr;
-						}
-						else
-						{
-							sprite_index = playerDash_spr;
-						}
-					}
-					else
-					{
-						sprite_index = playerDash_spr;
-					}
+					sprite_index = playerDashReverseNude_spr;
 				}
 				else
 				{
-					if (dashLastSpriteReached)
-					{
-						if (((dirCursor > 90 && dirCursor < 270) && image_xscale == 1) || ((dirCursor < 90 || dirCursor > 270) && image_xscale == -1))
-						{
-							sprite_index = playerDashReverseNude_spr;
-						}
-						else
-						{
-							sprite_index = playerDashNude_spr;
-						}
-					}
-					else
-					{
-						sprite_index = playerDashNude_spr;
-					}
+					sprite_index = playerDashNude_spr;
 				}
+			}
+			else
+			{
+				sprite_index = playerDashNude_spr;
+			}
+		} else {
+			if (crouchRollStartDelay < 0) {
+				//Ground Roll in to Crouch
+				crouchRollTimer -= global.dt;
+				if (crouchRollTimer > 0) {
+					dashroll = true;
+				} else {
+					dashroll = false;
+				}
+			
+				if (crouchRollTimer > 0) {
+					sprite_index = playerCrouchRoll_spr;
+				} else {
+					sprite_index = playerCrouch_spr;
+				}
+			}
+		}
+	}
 				
-				if (image_index > image_number - 1 && (sprite_index == playerDash_spr || sprite_index == playerDashNude_spr) && !stoppedDashing)
-				{
-					dashLastSpriteReached = true;
-				}
-				if (dashLastSpriteReached)
-				{
-					image_index = image_number - 1;
-				}
-			}
-		}
+	if (image_index > image_number - 1 && (sprite_index == playerDash_spr || sprite_index == playerDashNude_spr) && !stoppedDashing)
+	{
+		//dashLastSpriteReached = true;
+	}
+	if (dashLastSpriteReached)
+	{
+		//image_index = image_number - 1;
 	}
 }
 

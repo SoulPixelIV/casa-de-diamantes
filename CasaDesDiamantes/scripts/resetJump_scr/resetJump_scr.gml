@@ -7,7 +7,7 @@ function resetJump_scr() {
 	player_obj.groundCollisionTimerOn = true;
 	player_obj.jumpType = 0;
 	player_obj.slowmoTimer = player_obj.slowmoTimerSave;
-	player_obj.playerRotation = 0;
+	//player_obj.playerRotation = 0;
 	player_obj.stillInAir = false;
 	//player_obj.slowmo = false;
 	player_obj.onBooster = false;

@@ -54,6 +54,9 @@ function jump_scr() {
 	player_obj.onLadder = false;
 	player_obj.dashLastSpriteReached = false;
 	player_obj.dashDustEndTimer = player_obj.dashDustEndTimerSave;
+	player_obj.crouchRollTimer = player_obj.crouchRollTimerSave;
+	player_obj.crouchRollStartDelay = player_obj.crouchRollStartDelaySave;
+	player_obj.dashroll = false;
 	if (!player_obj.isDashing)
 	{
 		player_obj.image_index = 0;

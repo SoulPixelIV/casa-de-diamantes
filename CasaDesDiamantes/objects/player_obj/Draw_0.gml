@@ -233,10 +233,16 @@ if (sprite_index == playerWalkingEquipped_spr || sprite_index == playerWalkingEq
 		drawSpriteBottom = glitterBottomWalking_spr;
 	}
 }
-
-if (flip && !onLadder && !huggingWall && !deathActivated)
+draw_text(x + 30, y, string(dashroll));
+if ((flip && !onLadder && !huggingWall && !deathActivated))
 {
 	playerRotation += (global.dt * 16) * -image_xscale;
+}
+if (isDashing && grounded && crouchRollTimer > 0) {
+	playerRotation += (global.dt * 8) * -image_xscale;
+}
+
+if (flip && !onLadder && !huggingWall && !deathActivated) {
 	if (global.top1 == noone)
 	{
 		draw_sprite_ext(playerFlip_spr, 0, x, y, image_xscale, 1, playerRotation, -1, 1);
@@ -246,9 +252,13 @@ if (flip && !onLadder && !huggingWall && !deathActivated)
 		draw_sprite_ext(playerFlipNude_spr, 0, x, y, image_xscale, 1, playerRotation, -1, 1);
 	}
 }
-else
-{
-	playerRotation = 0;
+
+if (isDashing && grounded && crouchRollTimer > 0) {
+	if (crouchRollTimer > 0) {
+		draw_sprite_ext(playerCrouchRoll_spr, 0, x, y, image_xscale, 1, playerRotation, -1, 1);
+	} else {
+		draw_sprite_ext(playerCrouch_spr, 0, x, y, image_xscale, 1, 0, -1, 1);
+	}
 }
 
 if (sprite_index == playerWall_spr || sprite_index == playerWallNoArm_spr)
@@ -380,7 +390,7 @@ if (!isZombie && !deathActivated)
 	}
 	else
 	{
-		if (sprite_index != playerShotgunStance_spr && sprite_index != playerDualBarettasStance_spr && sprite_index != playerPistolStance_spr && !flip) {
+		if (sprite_index != playerShotgunStance_spr && sprite_index != playerDualBarettasStance_spr && sprite_index != playerPistolStance_spr && !flip && !dashroll) {
 			//Laser Animation
 			if (laserAimImage < 6) {
 				laserAimImage += global.dt / 20;
@@ -570,7 +580,7 @@ if (!isZombie && !deathActivated)
 		}
 		
 		//Draw Steph
-		if (!flip)
+		if (!flip && !dashroll)
 		{
 			draw_self();
 			if (drawSpriteHat != noone)
@@ -610,7 +620,7 @@ if (!isZombie && !deathActivated)
 			}
 		}
 		
-		if (sprite_index != playerShotgunStance_spr && sprite_index != playerDualBarettasStance_spr && sprite_index != playerPistolStance_spr && !flip) {
+		if (sprite_index != playerShotgunStance_spr && sprite_index != playerDualBarettasStance_spr && sprite_index != playerPistolStance_spr && !flip && !dashroll) {
 			//PISTOL
 			if (global.currentWeapon == gameManager_obj.pickedWeapon.pistol)
 			{
