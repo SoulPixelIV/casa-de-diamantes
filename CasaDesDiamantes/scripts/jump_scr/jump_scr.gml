@@ -57,6 +57,7 @@ function jump_scr() {
 	player_obj.crouchRollTimer = player_obj.crouchRollTimerSave;
 	player_obj.crouchRollStartDelay = player_obj.crouchRollStartDelaySave;
 	player_obj.dashroll = false;
+	player_obj.crouchslide = false;
 	if (!player_obj.isDashing)
 	{
 		player_obj.image_index = 0;

@@ -225,7 +225,7 @@ if (isDashing && !onLadder)
 	if (global.top1 == noone)
 	{
 		crouchRollStartDelay -= global.dt;
-		if (place_free(x, y + 24)) {
+		if (place_free(x, y + 26)) {
 			if (dashLastSpriteReached)
 			{
 				if (((dirCursor > 90 && dirCursor < 270) && image_xscale == 1) || ((dirCursor < 90 || dirCursor > 270) && image_xscale == -1))
@@ -273,7 +273,7 @@ if (isDashing && !onLadder)
 	else
 	{
 		crouchRollStartDelay -= global.dt;
-		if (place_free(x, y + 24)) {
+		if (place_free(x, y + 26)) {
 			if (dashLastSpriteReached)
 			{
 				if (((dirCursor > 90 && dirCursor < 270) && image_xscale == 1) || ((dirCursor < 90 || dirCursor > 270) && image_xscale == -1))
