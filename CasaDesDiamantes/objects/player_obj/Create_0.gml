@@ -17,6 +17,7 @@ dashInvincibilityOn = false;
 crouchRollTimer = 120;
 crouchRollStartDelay = 60;
 dashroll = false;
+crouchslide = false;
 stillInAir = false;
 animationSpeed = 1;
 jumpType = 0;

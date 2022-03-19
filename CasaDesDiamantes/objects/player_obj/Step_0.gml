@@ -225,7 +225,7 @@ if (isDashing && !onLadder)
 	if (global.top1 == noone)
 	{
 		crouchRollStartDelay -= global.dt;
-		if (!grounded) {
+		if (place_free(x, y + 24)) {
 			if (dashLastSpriteReached)
 			{
 				if (((dirCursor > 90 && dirCursor < 270) && image_xscale == 1) || ((dirCursor < 90 || dirCursor > 270) && image_xscale == -1))
@@ -254,7 +254,18 @@ if (isDashing && !onLadder)
 				if (crouchRollTimer > 0) {
 					sprite_index = playerCrouchRoll_spr;
 				} else {
+					crouchslide = true;
 					sprite_index = playerCrouch_spr;
+				}
+			}
+			
+			if (horspeed != 0 && crouchslide) {
+				walljumpDustTimer -= global.dt;
+				if (walljumpDustTimer < 0)
+				{
+					instance_create_layer(player_obj.x - 4 * image_xscale, player_obj.y + 19, "ForegroundObjects", dustParticle_obj);
+					instance_create_layer(player_obj.x + 22 * image_xscale, player_obj.y + 19, "ForegroundObjects", dustParticle_obj);
+					walljumpDustTimer = walljumpDustTimerSave;
 				}
 			}
 		}
@@ -262,7 +273,7 @@ if (isDashing && !onLadder)
 	else
 	{
 		crouchRollStartDelay -= global.dt;
-		if (!grounded) {
+		if (place_free(x, y + 24)) {
 			if (dashLastSpriteReached)
 			{
 				if (((dirCursor > 90 && dirCursor < 270) && image_xscale == 1) || ((dirCursor < 90 || dirCursor > 270) && image_xscale == -1))
@@ -291,7 +302,18 @@ if (isDashing && !onLadder)
 				if (crouchRollTimer > 0) {
 					sprite_index = playerCrouchRoll_spr;
 				} else {
+					crouchslide = true;
 					sprite_index = playerCrouch_spr;
+				}
+			}
+			
+			if (horspeed != 0 && crouchslide) {
+				walljumpDustTimer -= global.dt;
+				if (walljumpDustTimer < 0)
+				{
+					instance_create_layer(player_obj.x - 4 * image_xscale, player_obj.y + 19, "ForegroundObjects", dustParticle_obj);
+					instance_create_layer(player_obj.x + 22 * image_xscale, player_obj.y + 19, "ForegroundObjects", dustParticle_obj);
+					walljumpDustTimer = walljumpDustTimerSave;
 				}
 			}
 		}
