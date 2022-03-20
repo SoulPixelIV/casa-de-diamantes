@@ -357,12 +357,51 @@ else
 }
 
 //CLEAN UP
-shotgunArmX = x + ((-4) * currDir) * changePos;
-shotgunArmY = y - 10;
-shotgunArmCurvedX = x + ((4) * currDir) * changePos;
-shotgunArmCurvedY = y - 8;
 shotgunX = x + ((2) * currDir) * changePos
 shotgunY = y - 8;
+
+//ARM POSITIONS
+if (crouchslide) {
+	armPosX = x + ((-4) * currDir) * changePos;
+	armPosY = y - 10;
+
+	armDBPosX = x + ((-10) * currDir) * changePos;
+	armDBPosY = y - 12;
+
+	shotgunArmX = x + ((-4) * currDir) * changePos;
+	shotgunArmY = y - 10;
+	shotgunArmCurvedX = x + ((4) * currDir) * changePos;
+	shotgunArmCurvedY = y - 8;
+
+	armMPPosX = x + ((4) * currDir) * changePos;
+	armMPPosY = y - 8;
+
+	armBowPosX = x + ((-2) * currDir) * changePos;
+	armBowPosY = y - 8;
+	
+	armMainPosX = x + ((4) * currDir) * changePos;
+	armMainPosY = y - 8;
+} else {
+	armPosX = x + ((-4) * currDir) * changePos;
+	armPosY = y - 10;
+
+	armDBPosX = x + ((4) * currDir) * changePos;
+	armDBPosY = y - 8;
+
+	shotgunArmX = x + ((-4) * currDir) * changePos;
+	shotgunArmY = y - 10;
+	shotgunArmCurvedX = x + ((4) * currDir) * changePos;
+	shotgunArmCurvedY = y - 8;
+
+	armMPPosX = x + ((4) * currDir) * changePos;
+	armMPPosY = y - 8;
+
+	armBowPosX = x + ((-2) * currDir) * changePos;
+	armBowPosY = y - 8;
+	
+	armMainPosX = x + ((4) * currDir) * changePos;
+	armMainPosY = y - 8;
+}
 	
 if (!isZombie && !deathActivated)
 {
@@ -403,11 +442,11 @@ if (!isZombie && !deathActivated)
 			{
 				//First arm
 				if (sprite_index == playerWalkingEquipped_spr || sprite_index == playerWalkingEquippedNude_spr || sprite_index == playerWalkingEquippedReverse_spr) {
-					draw_sprite_ext(playerDualBarettasWalking_spr, -1, x + ((-4) * currDir) * changePos, y - 10, 1, -currDir, dirCursor, -1, image_alpha);
-					draw_sprite_ext(playerArmEmptyWalking_spr, -1, x + ((-4) * currDir) * changePos, y - 10, 1, -currDir, dirCursor - 14 * -currDir, -1, image_alpha);
+					draw_sprite_ext(playerDualBarettasWalking_spr, -1, armPosX, armPosY, 1, -currDir, dirCursor, -1, image_alpha);
+					draw_sprite_ext(playerArmEmptyWalking_spr, -1, armPosX, armPosY, 1, -currDir, dirCursor - 14 * -currDir, -1, image_alpha);
 				} else {
-					draw_sprite_ext(playerDualBarettas_spr, -1, x + ((-4) * currDir) * changePos, y - 10, 1, -currDir, dirCursor, -1, image_alpha);
-					draw_sprite_ext(drawSpriteArm, -1, x + ((-4) * currDir) * changePos, y - 10, 1, -currDir, dirCursor - 14 * -currDir, -1, image_alpha);
+					draw_sprite_ext(playerDualBarettas_spr, -1, armPosX, armPosY, 1, -currDir, dirCursor, -1, image_alpha);
+					draw_sprite_ext(drawSpriteArm, -1, armPosX, armPosY, 1, -currDir, dirCursor - 14 * -currDir, -1, image_alpha);
 				}
 			}
 		
@@ -500,73 +539,73 @@ if (!isZombie && !deathActivated)
 				if (dirCursor > 90 && dirCursor < 270) {
 					//First arm
 					if (dirCursor > 0 && dirCursor < 90) {
-						draw_sprite_ext(drawSpriteArm, -1, x + ((-4) * currDir) * changePos, y - 10, 1, -currDir, clamp((dirCursor - 21 * -currDir) + 20 * (clamp(dirCursor, 0, 90) / 90), 90, 250), -1, image_alpha);
+						draw_sprite_ext(drawSpriteArm, -1, armPosX, armPosY, 1, -currDir, clamp((dirCursor - 21 * -currDir) + 20 * (clamp(dirCursor, 0, 90) / 90), 90, 250), -1, image_alpha);
 					}
 			
 					if (dirCursor > 90 && dirCursor < 180) {
-						draw_sprite_ext(drawSpriteArm, -1, x + ((-4) * currDir) * changePos, y - 10, 1, -currDir, clamp((dirCursor - 21 * -currDir) - 20 * (90 - (clamp(dirCursor, 90, 180) - 90)) / 90, 90, 250), -1, image_alpha);
+						draw_sprite_ext(drawSpriteArm, -1, armPosX, armPosY, 1, -currDir, clamp((dirCursor - 21 * -currDir) - 20 * (90 - (clamp(dirCursor, 90, 180) - 90)) / 90, 90, 250), -1, image_alpha);
 					}
 			
 					if (dirCursor > 180 && dirCursor < 270) {
-						draw_sprite_ext(drawSpriteArm, -1, x + ((-4) * currDir) * changePos, y - 10, 1, -currDir, clamp((dirCursor - 21 * -currDir) + 20 * ((clamp(dirCursor, 180, 270) - 180) / 90), 90, 250), -1, image_alpha);
+						draw_sprite_ext(drawSpriteArm, -1, armPosX, armPosY, 1, -currDir, clamp((dirCursor - 21 * -currDir) + 20 * ((clamp(dirCursor, 180, 270) - 180) / 90), 90, 250), -1, image_alpha);
 					}
 			
 					if (dirCursor > 270 && dirCursor < 360) {
-						draw_sprite_ext(drawSpriteArm, -1, x + ((-4) * currDir) * changePos, y - 10, 1, -currDir, clamp((dirCursor - 21 * -currDir) - 20 * (90 - (clamp(dirCursor, 270, 360) - 270)) / 90, 90, 250), -1, image_alpha);
+						draw_sprite_ext(drawSpriteArm, -1, armPosX, armPosY, 1, -currDir, clamp((dirCursor - 21 * -currDir) - 20 * (90 - (clamp(dirCursor, 270, 360) - 270)) / 90, 90, 250), -1, image_alpha);
 					}
 				}
 				if (dirCursor > 270 && dirCursor < 360) {
 					//First arm
 					if (dirCursor > 0 && dirCursor < 90) {
-						draw_sprite_ext(drawSpriteArm, -1, x + ((-4) * currDir) * changePos, y - 10, 1, -currDir, clamp((dirCursor - 21 * -currDir) + 20 * (clamp(dirCursor, 0, 90) / 90), 290, 360), -1, image_alpha);
+						draw_sprite_ext(drawSpriteArm, -1, armPosX, armPosY, 1, -currDir, clamp((dirCursor - 21 * -currDir) + 20 * (clamp(dirCursor, 0, 90) / 90), 290, 360), -1, image_alpha);
 					}
 			
 					if (dirCursor > 90 && dirCursor < 180) {
-						draw_sprite_ext(drawSpriteArm, -1, x + ((-4) * currDir) * changePos, y - 10, 1, -currDir, clamp((dirCursor - 21 * -currDir) - 20 * (90 - (clamp(dirCursor, 90, 180) - 90)) / 90, 290, 360), -1, image_alpha);
+						draw_sprite_ext(drawSpriteArm, -1, armPosX, armPosY, 1, -currDir, clamp((dirCursor - 21 * -currDir) - 20 * (90 - (clamp(dirCursor, 90, 180) - 90)) / 90, 290, 360), -1, image_alpha);
 					}
 			
 					if (dirCursor > 180 && dirCursor < 270) {
-						draw_sprite_ext(drawSpriteArm, -1, x + ((-4) * currDir) * changePos, y - 10, 1, -currDir, clamp((dirCursor - 21 * -currDir) + 20 * ((clamp(dirCursor, 180, 270) - 180) / 90), 290, 360), -1, image_alpha);
+						draw_sprite_ext(drawSpriteArm, -1, armPosX, armPosY, 1, -currDir, clamp((dirCursor - 21 * -currDir) + 20 * ((clamp(dirCursor, 180, 270) - 180) / 90), 290, 360), -1, image_alpha);
 					}
 			
 					if (dirCursor > 270 && dirCursor < 360) {
-						draw_sprite_ext(drawSpriteArm, -1, x + ((-4) * currDir) * changePos, y - 10, 1, -currDir, clamp((dirCursor - 21 * -currDir) - 20 * (90 - (clamp(dirCursor, 270, 360) - 270)) / 90, 290, 360), -1, image_alpha);
+						draw_sprite_ext(drawSpriteArm, -1, armPosX, armPosY, 1, -currDir, clamp((dirCursor - 21 * -currDir) - 20 * (90 - (clamp(dirCursor, 270, 360) - 270)) / 90, 290, 360), -1, image_alpha);
 					}
 				}
 				if (dirCursor > 0 && dirCursor < 14) {
 					//First arm
 					if (dirCursor > 0 && dirCursor < 90) {
-						draw_sprite_ext(drawSpriteArm, -1, x + ((-4) * currDir) * changePos, y - 10, 1, -currDir, (dirCursor - 21 * -currDir) + 20 * (clamp(dirCursor, 0, 90) / 90), -1, image_alpha);
+						draw_sprite_ext(drawSpriteArm, -1, armPosX, armPosY, 1, -currDir, (dirCursor - 21 * -currDir) + 20 * (clamp(dirCursor, 0, 90) / 90), -1, image_alpha);
 					}
 			
 					if (dirCursor > 90 && dirCursor < 180) {
-						draw_sprite_ext(drawSpriteArm, -1, x + ((-4) * currDir) * changePos, y - 10, 1, -currDir, (dirCursor - 21 * -currDir) - 20 * (90 - (clamp(dirCursor, 90, 180) - 90)) / 90, -1, image_alpha);
+						draw_sprite_ext(drawSpriteArm, -1, armPosX, armPosY, 1, -currDir, (dirCursor - 21 * -currDir) - 20 * (90 - (clamp(dirCursor, 90, 180) - 90)) / 90, -1, image_alpha);
 					}
 			
 					if (dirCursor > 180 && dirCursor < 270) {
-						draw_sprite_ext(drawSpriteArm, -1, x + ((-4) * currDir) * changePos, y - 10, 1, -currDir, (dirCursor - 21 * -currDir) + 20 * ((clamp(dirCursor, 180, 270) - 180) / 90), -1, image_alpha);
+						draw_sprite_ext(drawSpriteArm, -1, armPosX, armPosY, 1, -currDir, (dirCursor - 21 * -currDir) + 20 * ((clamp(dirCursor, 180, 270) - 180) / 90), -1, image_alpha);
 					}
 			
 					if (dirCursor > 270 && dirCursor < 360) {
-						draw_sprite_ext(drawSpriteArm, -1, x + ((-4) * currDir) * changePos, y - 10, 1, -currDir, (dirCursor - 21 * -currDir) - 20 * (90 - (clamp(dirCursor, 270, 360) - 270)) / 90, -1, image_alpha);
+						draw_sprite_ext(drawSpriteArm, -1, armPosX, armPosY, 1, -currDir, (dirCursor - 21 * -currDir) - 20 * (90 - (clamp(dirCursor, 270, 360) - 270)) / 90, -1, image_alpha);
 					}
 				}
 				if (dirCursor > 14 && dirCursor < 90) {
 					//First arm
 					if (dirCursor > 0 && dirCursor < 90) {
-						draw_sprite_ext(drawSpriteArm, -1, x + ((-4) * currDir) * changePos, y - 10, 1, -currDir, clamp((dirCursor - 21 * -currDir) + 20 * (clamp(dirCursor, 0, 90) / 90), 0, 90), -1, image_alpha);
+						draw_sprite_ext(drawSpriteArm, -1, armPosX, armPosY, 1, -currDir, clamp((dirCursor - 21 * -currDir) + 20 * (clamp(dirCursor, 0, 90) / 90), 0, 90), -1, image_alpha);
 					}
 			
 					if (dirCursor > 90 && dirCursor < 180) {
-						draw_sprite_ext(drawSpriteArm, -1, x + ((-4) * currDir) * changePos, y - 10, 1, -currDir, clamp((dirCursor - 21 * -currDir) - 20 * (90 - (clamp(dirCursor, 90, 180) - 90)) / 90, 0, 90), -1, image_alpha);
+						draw_sprite_ext(drawSpriteArm, -1, armPosX, armPosY, 1, -currDir, clamp((dirCursor - 21 * -currDir) - 20 * (90 - (clamp(dirCursor, 90, 180) - 90)) / 90, 0, 90), -1, image_alpha);
 					}
 			
 					if (dirCursor > 180 && dirCursor < 270) {
-						draw_sprite_ext(drawSpriteArm, -1, x + ((-4) * currDir) * changePos, y - 10, 1, -currDir, clamp((dirCursor - 21 * -currDir) + 20 * ((clamp(dirCursor, 180, 270) - 180) / 90), 0, 90), -1, image_alpha);
+						draw_sprite_ext(drawSpriteArm, -1, armPosX, armPosY, 1, -currDir, clamp((dirCursor - 21 * -currDir) + 20 * ((clamp(dirCursor, 180, 270) - 180) / 90), 0, 90), -1, image_alpha);
 					}
 			
 					if (dirCursor > 270 && dirCursor < 360) {
-						draw_sprite_ext(drawSpriteArm, -1, x + ((-4) * currDir) * changePos, y - 10, 1, -currDir, clamp((dirCursor - 21 * -currDir) - 20 * (90 - (clamp(dirCursor, 270, 360) - 270)) / 90, 0, 90), -1, image_alpha);
+						draw_sprite_ext(drawSpriteArm, -1, armPosX, armPosY, 1, -currDir, clamp((dirCursor - 21 * -currDir) - 20 * (90 - (clamp(dirCursor, 270, 360) - 270)) / 90, 0, 90), -1, image_alpha);
 					}
 				}
 			}
@@ -575,7 +614,7 @@ if (!isZombie && !deathActivated)
 			if (global.currentWeapon == gameManager_obj.pickedWeapon.bow)
 			{
 				//First arm
-				draw_sprite_ext(drawSpriteArm, 0, x + ((-2) * currDir) * changePos, y - 8, 1, -currDir, dirCursor, -1, image_alpha);
+				draw_sprite_ext(drawSpriteArm, 0, armBowPosX, armBowPosY, 1, -currDir, dirCursor, -1, image_alpha);
 			}
 		}
 		
@@ -637,10 +676,10 @@ if (!isZombie && !deathActivated)
 				//Second arm
 				if (sprite_index == playerWalkingEquipped_spr || sprite_index == playerWalkingEquippedNude_spr || sprite_index == playerWalkingEquippedReverse_spr) {
 					draw_sprite_ext(playerDualBarettasWalking_spr, -1, x + ((2) * currDir) * changePos, y - 8, 1, -currDir, dirCursor, -1, image_alpha);
-					draw_sprite_ext(playerArmEmptyWalking_spr, -1, x + ((4) * currDir) * changePos, y - 8, 1, -currDir, dirCursor - 14 * -currDir, -1, image_alpha);
+					draw_sprite_ext(playerArmEmptyWalking_spr, -1, armDBPosX, armDBPosY, 1, -currDir, dirCursor - 14 * -currDir, -1, image_alpha);
 				} else {
 					draw_sprite_ext(playerDualBarettas_spr, -1, x + ((2) * currDir) * changePos, y - 8, 1, -currDir, dirCursor, -1, image_alpha);
-					draw_sprite_ext(drawSpriteArm, -1, x + ((4) * currDir) * changePos, y - 8, 1, -currDir, dirCursor - 14 * -currDir, -1, image_alpha);
+					draw_sprite_ext(drawSpriteArm, -1, armDBPosX, armDBPosY, 1, -currDir, dirCursor - 14 * -currDir, -1, image_alpha);
 				}
 			}
 
@@ -680,23 +719,24 @@ if (!isZombie && !deathActivated)
 				//Second arm
 				if (dirCursor > 90 && dirCursor < 270) {
 					draw_sprite_ext(playerSilencedMP_spr, -1, x + ((2) * currDir) * changePos, y - 8, 1, -currDir, clamp(dirCursor - 11 * -currDir, 90, 245), -1, image_alpha);
-					draw_sprite_ext(playerArmCurved_spr, -1, x + ((4) * currDir) * changePos, y - 8, 1, -currDir, clamp(dirCursor - 11 * -currDir, 90, 245), -1, image_alpha);
+					draw_sprite_ext(playerArmCurved_spr, -1, armMPPosX, armMPPosY, 1, -currDir, clamp(dirCursor - 11 * -currDir, 90, 245), -1, image_alpha);
 				} 
 				if (dirCursor > 270 && dirCursor < 360) {
 					draw_sprite_ext(playerSilencedMP_spr, -1, x + ((2) * currDir) * changePos, y - 8, 1, -currDir, clamp(dirCursor - 11 * -currDir, 295, 360), -1, image_alpha);
-					draw_sprite_ext(playerArmCurved_spr, -1, x + ((4) * currDir) * changePos, y - 8, 1, -currDir, clamp(dirCursor - 11 * -currDir, 295, 360), -1, image_alpha);
+					draw_sprite_ext(playerArmCurved_spr, -1, armMPPosX, armMPPosY, 1, -currDir, clamp(dirCursor - 11 * -currDir, 295, 360), -1, image_alpha);
 				}
 				if (dirCursor > 0 && dirCursor < 14) {
 					draw_sprite_ext(playerSilencedMP_spr, -1, x + ((2) * currDir) * changePos, y - 8, 1, -currDir, dirCursor - 11 * -currDir, -1, image_alpha);
-					draw_sprite_ext(playerArmCurved_spr, -1, x + ((4) * currDir) * changePos, y - 8, 1, -currDir, dirCursor - 11 * -currDir, -1, image_alpha);
+					draw_sprite_ext(playerArmCurved_spr, -1, armMPPosX, armMPPosY, 1, -currDir, dirCursor - 11 * -currDir, -1, image_alpha);
 				}
 				if (dirCursor > 14 && dirCursor < 90) {
 					draw_sprite_ext(playerSilencedMP_spr, -1, x + ((2) * currDir) * changePos, y - 8, 1, -currDir, clamp(dirCursor - 11 * -currDir, 0, 90), -1, image_alpha);
-					draw_sprite_ext(playerArmCurved_spr, -1, x + ((4) * currDir) * changePos, y - 8, 1, -currDir, clamp(dirCursor - 11 * -currDir, 0, 90), -1, image_alpha);
+					draw_sprite_ext(playerArmCurved_spr, -1, armMPPosX, armMPPosY, 1, -currDir, clamp(dirCursor - 11 * -currDir, 0, 90), -1, image_alpha);
 				}
 			}
 		
 			//SNIPER
+			//#########LEGACY##########
 			if (global.currentWeapon == gameManager_obj.pickedWeapon.sniper)
 			{
 				draw_sprite_ext(playerSniper_spr, -1, x + ((2) * currDir) * changePos, y - 4, 1, -currDir, dirCursor, -1, image_alpha);
@@ -719,7 +759,7 @@ if (!isZombie && !deathActivated)
 			//MAIN ARM
 			if (global.currentWeapon != gameManager_obj.pickedWeapon.dualBarettas && global.currentWeapon != gameManager_obj.pickedWeapon.shotgun && global.currentWeapon != gameManager_obj.pickedWeapon.silencedMP)
 			{
-				draw_sprite_ext(playerArmEmpty_spr, -1, x + ((4) * currDir) * changePos, y - 8, 1, -currDir, dirCursor - 14 * -currDir, -1, image_alpha);
+				draw_sprite_ext(playerArmEmpty_spr, -1, armMainPosX, armMainPosY, 1, -currDir, dirCursor - 14 * -currDir, -1, image_alpha);
 			}
 		}
 	}
