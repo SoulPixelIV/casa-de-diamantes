@@ -233,7 +233,7 @@ if (sprite_index == playerWalkingEquipped_spr || sprite_index == playerWalkingEq
 		drawSpriteBottom = glitterBottomWalking_spr;
 	}
 }
-draw_text(x + 30, y, string(dashroll));
+
 if ((flip && !onLadder && !huggingWall && !deathActivated))
 {
 	playerRotation += (global.dt * 16) * -image_xscale;
@@ -364,9 +364,11 @@ shotgunY = y - 8;
 if (crouchslide) {
 	armPosX = x + ((-4) * currDir) * changePos;
 	armPosY = y - 10;
-
-	armDBPosX = x + ((-10) * currDir) * changePos;
-	armDBPosY = y - 12;
+	draw_text(x + 40, y, string(crouchslide));
+	armDBPosX = x + ((-24) * currDir) * changePos;
+	armDBPosY = y - 16;
+	armDB2PosX = x + ((4) * currDir) * changePos;
+	armDB2PosY = y - 8;
 
 	shotgunArmX = x + ((-4) * currDir) * changePos;
 	shotgunArmY = y - 10;
@@ -387,6 +389,8 @@ if (crouchslide) {
 
 	armDBPosX = x + ((4) * currDir) * changePos;
 	armDBPosY = y - 8;
+	armDB2PosX = x + ((4) * currDir) * changePos;
+	armDB2PosY = y - 8;
 
 	shotgunArmX = x + ((-4) * currDir) * changePos;
 	shotgunArmY = y - 10;
@@ -676,10 +680,10 @@ if (!isZombie && !deathActivated)
 				//Second arm
 				if (sprite_index == playerWalkingEquipped_spr || sprite_index == playerWalkingEquippedNude_spr || sprite_index == playerWalkingEquippedReverse_spr) {
 					draw_sprite_ext(playerDualBarettasWalking_spr, -1, x + ((2) * currDir) * changePos, y - 8, 1, -currDir, dirCursor, -1, image_alpha);
-					draw_sprite_ext(playerArmEmptyWalking_spr, -1, armDBPosX, armDBPosY, 1, -currDir, dirCursor - 14 * -currDir, -1, image_alpha);
+					draw_sprite_ext(playerArmEmptyWalking_spr, -1, armDB2PosX, armDB2PosY, 1, -currDir, dirCursor - 14 * -currDir, -1, image_alpha);
 				} else {
 					draw_sprite_ext(playerDualBarettas_spr, -1, x + ((2) * currDir) * changePos, y - 8, 1, -currDir, dirCursor, -1, image_alpha);
-					draw_sprite_ext(drawSpriteArm, -1, armDBPosX, armDBPosY, 1, -currDir, dirCursor - 14 * -currDir, -1, image_alpha);
+					draw_sprite_ext(drawSpriteArm, -1, armDB2PosX, armDB2PosY, 1, -currDir, dirCursor - 14 * -currDir, -1, image_alpha);
 				}
 			}
 
