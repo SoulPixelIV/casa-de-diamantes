@@ -1348,6 +1348,12 @@ switch (sprite_index)
 	case playerClimbing_spr:
 		animationSpeed = 0.5;
 		break;
+	case playerCrouchRoll_spr:
+		animationSpeed = 0;
+		break;
+	case playerCrouch_spr:
+		animationSpeed = 0;
+		break;
 }
 
 if (grounded || !flip)
