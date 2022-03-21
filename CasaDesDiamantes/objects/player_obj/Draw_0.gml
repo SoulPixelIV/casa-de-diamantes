@@ -364,11 +364,13 @@ shotgunY = y - 8;
 if (crouchslide) {
 	armPosX = x + ((-4) * currDir) * changePos;
 	armPosY = y - 10;
-	draw_text(x + 40, y, string(crouchslide));
-	armDBPosX = x + ((-24) * currDir) * changePos;
-	armDBPosY = y - 16;
-	armDB2PosX = x + ((4) * currDir) * changePos;
-	armDB2PosY = y - 8;
+
+	//Background
+	armDBPosX = x - 4 * currDir;
+	armDBPosY = y - 15;
+	//Foreground
+	armDB2PosX = x + 4 * currDir;
+	armDB2PosY = y - 13;
 
 	shotgunArmX = x + ((-4) * currDir) * changePos;
 	shotgunArmY = y - 10;
@@ -449,8 +451,8 @@ if (!isZombie && !deathActivated)
 					draw_sprite_ext(playerDualBarettasWalking_spr, -1, armPosX, armPosY, 1, -currDir, dirCursor, -1, image_alpha);
 					draw_sprite_ext(playerArmEmptyWalking_spr, -1, armPosX, armPosY, 1, -currDir, dirCursor - 14 * -currDir, -1, image_alpha);
 				} else {
-					draw_sprite_ext(playerDualBarettas_spr, -1, armPosX, armPosY, 1, -currDir, dirCursor, -1, image_alpha);
-					draw_sprite_ext(drawSpriteArm, -1, armPosX, armPosY, 1, -currDir, dirCursor - 14 * -currDir, -1, image_alpha);
+					draw_sprite_ext(playerDualBarettas_spr, -1, armDBPosX, armDBPosY, 1, -currDir, dirCursor, -1, image_alpha);
+					draw_sprite_ext(drawSpriteArm, -1, armDBPosX, armDBPosY, 1, -currDir, dirCursor - 14 * -currDir, -1, image_alpha);
 				}
 			}
 		
