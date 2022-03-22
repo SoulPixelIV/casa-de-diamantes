@@ -356,10 +356,6 @@ else
 	spinWeaponPos = 0;
 }
 
-//CLEAN UP
-shotgunX = x + ((2) * currDir) * changePos
-shotgunY = y - 8;
-
 //ARM POSITIONS
 if (crouchslide) {
 	armPosX = x + ((-4) * currDir) * changePos;
@@ -372,6 +368,8 @@ if (crouchslide) {
 	armDB2PosX = x + 4 * currDir;
 	armDB2PosY = y - 13;
 
+	shotgunX = x + 2 * currDir;
+	shotgunY = y - 14;
 	//Background
 	shotgunArmX = x - 2 * currDir;
 	shotgunArmY = y - 16;
@@ -396,6 +394,8 @@ if (crouchslide) {
 	armDB2PosX = x + ((4) * currDir) * changePos;
 	armDB2PosY = y - 8;
 
+	shotgunX = x + ((2) * currDir) * changePos;
+	shotgunY = y - 8;
 	shotgunArmX = x + ((-4) * currDir) * changePos;
 	shotgunArmY = y - 10;
 	shotgunArmCurvedX = x + ((4) * currDir) * changePos;
