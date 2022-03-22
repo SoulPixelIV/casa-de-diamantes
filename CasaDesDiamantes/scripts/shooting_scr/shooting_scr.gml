@@ -1,5 +1,9 @@
 function shooting_scr(argument0) {
 	
+	if (player_obj.crouchslide) {
+		jump_scr();
+	}
+	
 	if (player_obj.spin) {
 		player_obj.jumpspinAim = true;
 		player_obj.jumpspinAimTimer = player_obj.jumpspinAimTimerSave;

@@ -255,7 +255,17 @@ if (isDashing && !onLadder)
 					sprite_index = playerCrouchRoll_spr;
 				} else {
 					crouchslide = true;
+					if (!crouchDirSet) {
+						crouchDir = image_xscale;
+						crouchDirSet = true;
+					}
 					sprite_index = playerCrouch_spr;
+					
+					//Check for Crouch Cancel while turning around
+					if (image_xscale != crouchDir) {
+						crouchDirSet = false;
+						jump_scr();
+					}
 				}
 			}
 			
@@ -1358,7 +1368,7 @@ switch (sprite_index)
 
 if (grounded || !flip)
 {
-	if (!wallJumpingInAir && !isDashing && !huggingWall && !setWallDir && !deathActivated && (!spin || (spin && jumpspinAim)))
+	if (!wallJumpingInAir && (!isDashing || crouchslide) && !huggingWall && !setWallDir && !deathActivated && (!spin || (spin && jumpspinAim)))
 	{
 		if (dirCursor > 90 && dirCursor < 270)
 		{
