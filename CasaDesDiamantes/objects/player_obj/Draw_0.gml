@@ -360,6 +360,9 @@ else
 if (crouchslide) {
 	armPosX = x + ((-4) * currDir) * changePos;
 	armPosY = y - 10;
+	
+	armPistolPosX = x + 4 * currDir;
+	armPistolPosY = y - 13;
 
 	//Background
 	armDBPosX = x - 4 * currDir;
@@ -383,11 +386,14 @@ if (crouchslide) {
 	armBowPosX = x + ((-2) * currDir) * changePos;
 	armBowPosY = y - 8;
 	
-	armMainPosX = x + ((4) * currDir) * changePos;
-	armMainPosY = y - 8;
+	armMainPosX = x + 4 * currDir;
+	armMainPosY = y - 13;
 } else {
 	armPosX = x + ((-4) * currDir) * changePos;
 	armPosY = y - 10;
+	
+	armPistolPosX = x + ((2) * currDir) * changePos;
+	armPistolPosY = y - 8;
 
 	armDBPosX = x - ((4) * currDir) * changePos;
 	armDBPosY = y - 10;
@@ -672,9 +678,9 @@ if (!isZombie && !deathActivated)
 			if (global.currentWeapon == gameManager_obj.pickedWeapon.pistol)
 			{
 				if (sprite_index == playerWalkingEquipped_spr || sprite_index == playerWalkingEquippedNude_spr || sprite_index == playerWalkingEquippedReverse_spr) {
-					draw_sprite_ext(playerPistolWalking_spr, -1, x + ((2) * currDir) * changePos, y - 8, 1, -currDir, dirCursor, -1, image_alpha);
+					draw_sprite_ext(playerPistolWalking_spr, -1, armPistolPosX, armPistolPosY, 1, -currDir, dirCursor, -1, image_alpha);
 				} else {
-					draw_sprite_ext(playerPistol_spr, -1, x + ((2) * currDir) * changePos, y - 8, 1, -currDir, dirCursor, -1, image_alpha);
+					draw_sprite_ext(playerPistol_spr, -1, armPistolPosX, armPistolPosY, 1, -currDir, dirCursor, -1, image_alpha);
 				}
 			}
 		
