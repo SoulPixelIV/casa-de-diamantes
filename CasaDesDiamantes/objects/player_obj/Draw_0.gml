@@ -372,10 +372,12 @@ if (crouchslide) {
 	armDB2PosX = x + 4 * currDir;
 	armDB2PosY = y - 13;
 
-	shotgunArmX = x + ((-4) * currDir) * changePos;
-	shotgunArmY = y - 10;
-	shotgunArmCurvedX = x + ((4) * currDir) * changePos;
-	shotgunArmCurvedY = y - 8;
+	//Background
+	shotgunArmX = x - 2 * currDir;
+	shotgunArmY = y - 16;
+	//Foreground
+	shotgunArmCurvedX = x + 6 * currDir;
+	shotgunArmCurvedY = y - 14;
 
 	armMPPosX = x + ((4) * currDir) * changePos;
 	armMPPosY = y - 8;
@@ -389,8 +391,8 @@ if (crouchslide) {
 	armPosX = x + ((-4) * currDir) * changePos;
 	armPosY = y - 10;
 
-	armDBPosX = x + ((4) * currDir) * changePos;
-	armDBPosY = y - 8;
+	armDBPosX = x - ((4) * currDir) * changePos;
+	armDBPosY = y - 10;
 	armDB2PosX = x + ((4) * currDir) * changePos;
 	armDB2PosY = y - 8;
 
@@ -448,8 +450,8 @@ if (!isZombie && !deathActivated)
 			{
 				//First arm
 				if (sprite_index == playerWalkingEquipped_spr || sprite_index == playerWalkingEquippedNude_spr || sprite_index == playerWalkingEquippedReverse_spr) {
-					draw_sprite_ext(playerDualBarettasWalking_spr, -1, armPosX, armPosY, 1, -currDir, dirCursor, -1, image_alpha);
-					draw_sprite_ext(playerArmEmptyWalking_spr, -1, armPosX, armPosY, 1, -currDir, dirCursor - 14 * -currDir, -1, image_alpha);
+					draw_sprite_ext(playerDualBarettasWalking_spr, -1, armDBPosX, armDBPosY, 1, -currDir, dirCursor, -1, image_alpha);
+					draw_sprite_ext(playerArmEmptyWalking_spr, -1, armDBPosX, armDBPosY, 1, -currDir, dirCursor - 14 * -currDir, -1, image_alpha);
 				} else {
 					draw_sprite_ext(playerDualBarettas_spr, -1, armDBPosX, armDBPosY, 1, -currDir, dirCursor, -1, image_alpha);
 					draw_sprite_ext(drawSpriteArm, -1, armDBPosX, armDBPosY, 1, -currDir, dirCursor - 14 * -currDir, -1, image_alpha);
@@ -681,10 +683,10 @@ if (!isZombie && !deathActivated)
 			{
 				//Second arm
 				if (sprite_index == playerWalkingEquipped_spr || sprite_index == playerWalkingEquippedNude_spr || sprite_index == playerWalkingEquippedReverse_spr) {
-					draw_sprite_ext(playerDualBarettasWalking_spr, -1, x + ((2) * currDir) * changePos, y - 8, 1, -currDir, dirCursor, -1, image_alpha);
+					draw_sprite_ext(playerDualBarettasWalking_spr, -1, armDB2PosX, armDB2PosY, 1, -currDir, dirCursor, -1, image_alpha);
 					draw_sprite_ext(playerArmEmptyWalking_spr, -1, armDB2PosX, armDB2PosY, 1, -currDir, dirCursor - 14 * -currDir, -1, image_alpha);
 				} else {
-					draw_sprite_ext(playerDualBarettas_spr, -1, x + ((2) * currDir) * changePos, y - 8, 1, -currDir, dirCursor, -1, image_alpha);
+					draw_sprite_ext(playerDualBarettas_spr, -1, armDB2PosX, armDB2PosY, 1, -currDir, dirCursor, -1, image_alpha);
 					draw_sprite_ext(drawSpriteArm, -1, armDB2PosX, armDB2PosY, 1, -currDir, dirCursor - 14 * -currDir, -1, image_alpha);
 				}
 			}
