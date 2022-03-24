@@ -144,11 +144,13 @@ if (movement && !isZombie)
 		    dash_scr();
 			dashInvincibilityOn = true;
 		}
+		/*
 		if (horspeed == 0)
 		{
 			dashNoMomentum_scr();
 			dashInvincibilityOn = true;
 		}
+		*/
 	}
 	if (dashDelay >= 0 && wallJumps == wallJumpsMax)
 	{
@@ -225,7 +227,7 @@ if (isDashing && !onLadder)
 	if (global.top1 == noone)
 	{
 		crouchRollStartDelay -= global.dt;
-		if (place_free(x, y + 26)) {
+		if (place_free(x, y + 26) && place_free(x - 8, y + 26) && place_free(x + 8, y + 26)) {
 			if (dashLastSpriteReached)
 			{
 				if (((dirCursor > 90 && dirCursor < 270) && image_xscale == 1) || ((dirCursor < 90 || dirCursor > 270) && image_xscale == -1))
@@ -400,6 +402,7 @@ if (movement && !isZombie)
 	if (huggingWall)
 	{
 		flip = false;
+		dashroll = false;
 		//slowmo = false;
 		//Check if there is space to cancel dash
 		if (place_free(x, y + 32))
@@ -1671,7 +1674,9 @@ if (colliding)
 			{
 				if (place_free(x, y + (verspeed * global.dt)))
 				{
-					huggingWall = true;
+					if ((player_obj.isDashing && place_free(x, y - 16)) || !player_obj.isDashing) {
+						huggingWall = true;
+					}
 				}
 			}
 		}

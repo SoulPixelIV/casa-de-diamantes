@@ -416,7 +416,7 @@ if (crouchslide) {
 	armMainPosX = x + ((4) * currDir) * changePos;
 	armMainPosY = y - 8;
 }
-	
+	draw_text(x + 30, y, string(dashroll));
 if (!isZombie && !deathActivated)
 {
 	if (sprite_index == playerClimbing_spr)
