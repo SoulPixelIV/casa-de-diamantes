@@ -189,11 +189,21 @@ if (movement && !isZombie)
 	    }
 	}
 }
-//Continue dash circle even if player is in a minecart
+
+//Stop Dash in Minecart
 if (instance_exists(minecartForeground_obj))
 {
 	if (instance_nearest(x, y, minecartForeground_obj).inMinecart)
 	{
+		stoppedDashing = true;
+		stillInAir = true;
+		dashLastSpriteReached = false;
+		dashDustEndTimer = player_obj.dashDustEndTimerSave;
+		crouchRollTimer = player_obj.crouchRollTimerSave;
+		crouchRollStartDelay = player_obj.crouchRollStartDelaySave;
+		dashroll = false;
+		crouchslide = false;
+		//Continue dash circle even if player is in a minecart
 		if (dashDelay >= 0)
 		{
 			dashDelay -= global.dt;
@@ -227,7 +237,7 @@ if (isDashing && !onLadder)
 	if (global.top1 == noone)
 	{
 		crouchRollStartDelay -= global.dt;
-		if (place_free(x, y + 26) && place_free(x - 8, y + 26) && place_free(x + 8, y + 26)) {
+		if (place_free(x, y + 26) && place_free(x - 16, y + 26) && place_free(x + 16, y + 26)) {
 			if (dashLastSpriteReached)
 			{
 				if (((dirCursor > 90 && dirCursor < 270) && image_xscale == 1) || ((dirCursor < 90 || dirCursor > 270) && image_xscale == -1))
