@@ -198,9 +198,9 @@ if (instance_exists(minecartForeground_obj))
 		stoppedDashing = true;
 		stillInAir = true;
 		dashLastSpriteReached = false;
-		dashDustEndTimer = player_obj.dashDustEndTimerSave;
-		crouchRollTimer = player_obj.crouchRollTimerSave;
-		crouchRollStartDelay = player_obj.crouchRollStartDelaySave;
+		dashDustEndTimer = dashDustEndTimerSave;
+		crouchRollTimer = crouchRollTimerSave;
+		crouchRollStartDelay = crouchRollStartDelaySave;
 		dashroll = false;
 		crouchslide = false;
 		//Continue dash circle even if player is in a minecart
@@ -237,7 +237,7 @@ if (isDashing && !onLadder)
 	if (global.top1 == noone)
 	{
 		crouchRollStartDelay -= global.dt;
-		if (place_free(x, y + 26) && place_free(x - 16, y + 26) && place_free(x + 16, y + 26)) {
+		if (place_free(x, y + 26) && place_free(x - 12, y + 26) && place_free(x + 12, y + 26)) {
 			if (dashLastSpriteReached)
 			{
 				if (((dirCursor > 90 && dirCursor < 270) && image_xscale == 1) || ((dirCursor < 90 || dirCursor > 270) && image_xscale == -1))
@@ -413,6 +413,7 @@ if (movement && !isZombie)
 	{
 		flip = false;
 		dashroll = false;
+		crouchRollTimer = crouchRollTimerSave;
 		//slowmo = false;
 		//Check if there is space to cancel dash
 		if (place_free(x, y + 32))

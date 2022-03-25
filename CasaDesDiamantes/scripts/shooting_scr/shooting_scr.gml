@@ -1,5 +1,7 @@
 function shooting_scr(argument0) {
 	
+	player_obj.dashroll = false;
+	player_obj.crouchRollTimer = player_obj.crouchRollTimerSave;
 	if (player_obj.crouchslide) {
 		jump_scr();
 	}
