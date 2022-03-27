@@ -416,7 +416,7 @@ if (crouchslide) {
 	armMainPosX = x + ((4) * currDir) * changePos;
 	armMainPosY = y - 8;
 }
-	draw_text(x + 30, y, string(dashroll));
+
 if (!isZombie && !deathActivated)
 {
 	if (sprite_index == playerClimbing_spr)
@@ -443,7 +443,7 @@ if (!isZombie && !deathActivated)
 	}
 	else
 	{
-		if (sprite_index != playerShotgunStance_spr && sprite_index != playerDualBarettasStance_spr && sprite_index != playerPistolStance_spr && !flip && !dashroll) {
+		if (sprite_index != playerShotgunStance_spr && sprite_index != playerDualBarettasStance_spr && sprite_index != playerPistolStance_spr && !flip && sprite_index != playerCrouchRoll_spr) {
 			//Laser Animation
 			if (laserAimImage < 6) {
 				laserAimImage += global.dt / 20;
@@ -633,7 +633,7 @@ if (!isZombie && !deathActivated)
 		}
 		
 		//Draw Steph
-		if (!flip && !dashroll)
+		if (!flip && sprite_index != playerCrouchRoll_spr)
 		{
 			draw_self();
 			if (drawSpriteHat != noone)
@@ -673,7 +673,7 @@ if (!isZombie && !deathActivated)
 			}
 		}
 		
-		if (sprite_index != playerShotgunStance_spr && sprite_index != playerDualBarettasStance_spr && sprite_index != playerPistolStance_spr && !flip && !dashroll) {
+		if (sprite_index != playerShotgunStance_spr && sprite_index != playerDualBarettasStance_spr && sprite_index != playerPistolStance_spr && !flip && sprite_index != playerCrouchRoll_spr) {
 			//PISTOL
 			if (global.currentWeapon == gameManager_obj.pickedWeapon.pistol)
 			{

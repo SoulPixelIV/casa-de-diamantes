@@ -50,6 +50,14 @@ function jump_scr() {
 			}
 		}
 	}
+	if (!audio_is_playing(glitter_snd)) {
+		var glittersnd = audio_play_sound(glitter_snd, 1, false);
+		audio_sound_pitch(glittersnd, random_range(0.9, 1.1));
+	}
+	partEmitter = part_emitter_create(global.partSystem);
+	part_emitter_region(global.partSystem, partEmitter, player_obj.x - 32, player_obj.x + 32, player_obj.y - 4, player_obj.y + 12, ps_shape_ellipse, ps_distr_gaussian);
+	part_emitter_burst(global.partSystem, partEmitter, global.playerPart, 15);
+	part_emitter_destroy(global.partSystem, partEmitter);
 	player_obj.jumping = true;
 	player_obj.onLadder = false;
 	player_obj.dashLastSpriteReached = false;

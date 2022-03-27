@@ -232,6 +232,14 @@ if (keyboard_check_pressed(vk_delete)) {
 	}
 }
 
+//Dash Particles
+if (isDashing && !grounded) {
+	partEmitter = part_emitter_create(global.partSystem);
+	part_emitter_region(global.partSystem, partEmitter, player_obj.x - 32, player_obj.x + 32, player_obj.y - 4, player_obj.y + 12, ps_shape_ellipse, ps_distr_gaussian);
+	part_emitter_burst(global.partSystem, partEmitter, global.playerPart, 1);
+	part_emitter_destroy(global.partSystem, partEmitter);
+}
+
 if (isDashing && !onLadder)
 {	
 	if (global.top1 == noone)
