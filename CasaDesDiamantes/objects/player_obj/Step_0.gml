@@ -237,7 +237,7 @@ if (isDashing && !onLadder)
 {	
 	dashStartDelay -= global.dt;
 	//Hitbox height difference between dash sprite and crouch roll sprite
-	if (place_free(x, y + 23)) {
+	if (place_free(x, y + 1)) {
 		if (((dirCursor > 90 && dirCursor < 270) && image_xscale == 1) || ((dirCursor < 90 || dirCursor > 270) && image_xscale == -1))
 		{
 			sprite_index = playerDashReverse_spr;
