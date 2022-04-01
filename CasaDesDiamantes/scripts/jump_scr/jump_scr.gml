@@ -1,6 +1,6 @@
 function jump_scr() {
 	//Do not allow infinite roof jumps
-	if ((player_obj.isDashing && place_free(x, y - 32)) || !player_obj.isDashing) {
+	if ((player_obj.isDashing && place_free(x, y - 34)) || !player_obj.isDashing) {
 		if (player_obj.grounded || (player_obj.fallJumpSafety > 0 && !player_obj.grounded))
 		{
 			player_obj.verspeed = -player_obj.jumpStrength;
@@ -63,9 +63,10 @@ function jump_scr() {
 	player_obj.dashLastSpriteReached = false;
 	player_obj.dashDustEndTimer = player_obj.dashDustEndTimerSave;
 	player_obj.crouchRollTimer = player_obj.crouchRollTimerSave;
-	player_obj.crouchRollStartDelay = player_obj.crouchRollStartDelaySave;
 	player_obj.dashroll = false;
 	player_obj.crouchslide = false;
+	player_obj.dashjumpbuffer = false;
+	player_obj.dashStartDelay = player_obj.dashStartDelaySave;
 	if (!player_obj.isDashing)
 	{
 		player_obj.image_index = 0;

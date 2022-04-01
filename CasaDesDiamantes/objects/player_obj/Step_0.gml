@@ -134,8 +134,17 @@ if (movement && !isZombie)
 	//Jump
 	if (grounded && key_jump || fallJumpSafety > 0 && key_jump || isDashing && key_jump || onBooster && key_jump && jumpType != 2)
 	{
+		if (!dashroll) {
+			jump_scr();
+		} else {
+			dashjumpbuffer = true;
+		}
+	}
+	//Dash Jump Buffer
+	if (dashjumpbuffer && !dashroll) {
 		jump_scr();
 	}
+	
 	//Dash
 	if (key_shift && !isDashing && dashDelay < 0)
 	{
@@ -144,13 +153,6 @@ if (movement && !isZombie)
 		    dash_scr();
 			dashInvincibilityOn = true;
 		}
-		/*
-		if (horspeed == 0)
-		{
-			dashNoMomentum_scr();
-			dashInvincibilityOn = true;
-		}
-		*/
 	}
 	if (dashDelay >= 0 && wallJumps == wallJumpsMax)
 	{
@@ -169,6 +171,7 @@ if (movement && !isZombie)
 	//Cancel Dash
 	if (stoppedDashing || onLadder)
 	{
+		//Check for collision with ground (Different hitbox sizes cause issues)
 		if (place_free(x, y + 32))
 		{
 			if (!place_meeting(x, y + 32, enemy_obj))
@@ -197,10 +200,8 @@ if (instance_exists(minecartForeground_obj))
 	{
 		stoppedDashing = true;
 		stillInAir = true;
-		dashLastSpriteReached = false;
 		dashDustEndTimer = dashDustEndTimerSave;
 		crouchRollTimer = crouchRollTimerSave;
-		crouchRollStartDelay = crouchRollStartDelaySave;
 		dashroll = false;
 		crouchslide = false;
 		//Continue dash circle even if player is in a minecart
@@ -232,130 +233,56 @@ if (keyboard_check_pressed(vk_delete)) {
 	}
 }
 
-//Dash Particles
-if (isDashing && !grounded) {
-	partEmitter = part_emitter_create(global.partSystem);
-	part_emitter_region(global.partSystem, partEmitter, player_obj.x - 32, player_obj.x + 32, player_obj.y - 4, player_obj.y + 12, ps_shape_ellipse, ps_distr_gaussian);
-	part_emitter_burst(global.partSystem, partEmitter, global.playerPart, 1);
-	part_emitter_destroy(global.partSystem, partEmitter);
-}
-
 if (isDashing && !onLadder)
 {	
-	if (global.top1 == noone)
-	{
-		crouchRollStartDelay -= global.dt;
-		if (place_free(x, y + 26) && place_free(x - 12, y + 26) && place_free(x + 12, y + 26)) {
-			if (dashLastSpriteReached)
-			{
-				if (((dirCursor > 90 && dirCursor < 270) && image_xscale == 1) || ((dirCursor < 90 || dirCursor > 270) && image_xscale == -1))
-				{
-					sprite_index = playerDashReverse_spr;
-				}
-				else
-				{
-					sprite_index = playerDash_spr;
-				}
-			}
-			else
-			{
-				sprite_index = playerDash_spr;
-			}
-		} else {
-			if (crouchRollStartDelay < 0) {
-				//Ground Roll in to Crouch
-				crouchRollTimer -= global.dt;
-				if (crouchRollTimer > 0) {
-					dashroll = true;
-				} else {
-					dashroll = false;
-				}
-						
-				if (crouchRollTimer > 0) {
-					sprite_index = playerCrouchRoll_spr;
-				} else {
-					crouchslide = true;
-					if (!crouchDirSet) {
-						crouchDir = image_xscale;
-						crouchDirSet = true;
-					}
-					sprite_index = playerCrouch_spr;
-					
-					//Check for Crouch Cancel while turning around
-					if (image_xscale != crouchDir) {
-						crouchDirSet = false;
-						jump_scr();
-					}
-				}
-			}
-			
-			if (horspeed != 0 && crouchslide) {
-				walljumpDustTimer -= global.dt;
-				if (walljumpDustTimer < 0)
-				{
-					instance_create_layer(player_obj.x - 4 * image_xscale, player_obj.y + 19, "ForegroundObjects", dustParticle_obj);
-					instance_create_layer(player_obj.x + 22 * image_xscale, player_obj.y + 19, "ForegroundObjects", dustParticle_obj);
-					walljumpDustTimer = walljumpDustTimerSave;
-				}
-			}
+	dashStartDelay -= global.dt;
+	//Hitbox height difference between dash sprite and crouch roll sprite
+	if (place_free(x, y + 23)) {
+		if (((dirCursor > 90 && dirCursor < 270) && image_xscale == 1) || ((dirCursor < 90 || dirCursor > 270) && image_xscale == -1))
+		{
+			sprite_index = playerDashReverse_spr;
 		}
-	}
-	else
-	{
-		crouchRollStartDelay -= global.dt;
-		if (place_free(x, y + 26)) {
-			if (dashLastSpriteReached)
-			{
-				if (((dirCursor > 90 && dirCursor < 270) && image_xscale == 1) || ((dirCursor < 90 || dirCursor > 270) && image_xscale == -1))
-				{
-					sprite_index = playerDashReverseNude_spr;
-				}
-				else
-				{
-					sprite_index = playerDashNude_spr;
-				}
-			}
-			else
-			{
-				sprite_index = playerDashNude_spr;
-			}
-		} else {
-			if (crouchRollStartDelay < 0) {
-				//Ground Roll in to Crouch
-				crouchRollTimer -= global.dt;
-				if (crouchRollTimer > 0) {
-					dashroll = true;
-				} else {
-					dashroll = false;
-				}
-			
-				if (crouchRollTimer > 0) {
-					sprite_index = playerCrouchRoll_spr;
-				} else {
-					crouchslide = true;
-					sprite_index = playerCrouch_spr;
-				}
-			}
-			
-			if (horspeed != 0 && crouchslide) {
-				walljumpDustTimer -= global.dt;
-				if (walljumpDustTimer < 0)
-				{
-					instance_create_layer(player_obj.x - 4 * image_xscale, player_obj.y + 19, "ForegroundObjects", dustParticle_obj);
-					instance_create_layer(player_obj.x + 22 * image_xscale, player_obj.y + 19, "ForegroundObjects", dustParticle_obj);
-					walljumpDustTimer = walljumpDustTimerSave;
-				}
-			}
+		else
+		{
+			sprite_index = playerDash_spr;
 		}
-	}
+	} else {
+		//Ignore inital grounded position on dash startup
+		if (dashStartDelay < 0) {
+			//Ground Roll in to Crouch
+			crouchRollTimer -= global.dt;
+			if (crouchRollTimer > 0) {
+				sprite_index = playerCrouchRoll_spr;
+			
+				dashroll = true;
+			} else {
+				sprite_index = playerCrouch_spr;
 				
-	if (image_index > image_number - 1 && (sprite_index == playerDash_spr || sprite_index == playerDashNude_spr) && !stoppedDashing)
-	{
-		//dashLastSpriteReached = true;
-	}
-	if (dashLastSpriteReached)
-	{
-		//image_index = image_number - 1;
+				crouchslide = true;
+				dashroll = false;
+				if (!crouchDirSet) {
+					crouchDir = image_xscale;
+					crouchDirSet = true;
+				}
+					
+				//Check for Crouch Cancel while turning around
+				if (image_xscale != crouchDir && !dashjumpbuffer) {
+					crouchDirSet = false;
+					jump_scr();
+				}			
+			}
+		
+			//Particles
+			if (horspeed != 0 && crouchslide) {
+				walljumpDustTimer -= global.dt;
+				if (walljumpDustTimer < 0)
+				{
+					instance_create_layer(player_obj.x - 4 * image_xscale, player_obj.y + 19, "ForegroundObjects", dustParticle_obj);
+					instance_create_layer(player_obj.x + 22 * image_xscale, player_obj.y + 19, "ForegroundObjects", dustParticle_obj);
+					walljumpDustTimer = walljumpDustTimerSave;
+				}
+			}
+		}
 	}
 }
 

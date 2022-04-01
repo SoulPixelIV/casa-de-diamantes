@@ -773,7 +773,11 @@ if (!isZombie && !deathActivated)
 			//MAIN ARM
 			if (global.currentWeapon != gameManager_obj.pickedWeapon.dualBarettas && global.currentWeapon != gameManager_obj.pickedWeapon.shotgun && global.currentWeapon != gameManager_obj.pickedWeapon.silencedMP)
 			{
-				draw_sprite_ext(playerArmEmpty_spr, -1, armMainPosX, armMainPosY, 1, -currDir, dirCursor - 14 * -currDir, -1, image_alpha);
+				if (sprite_index == playerWalkingEquipped_spr || sprite_index == playerWalkingEquippedNude_spr || sprite_index == playerWalkingEquippedReverse_spr) {
+					draw_sprite_ext(playerArmEmptyWalking_spr, -1, armMainPosX, armMainPosY, 1, -currDir, dirCursor - 14 * -currDir, -1, image_alpha);
+				} else {
+					draw_sprite_ext(playerArmEmpty_spr, -1, armMainPosX, armMainPosY, 1, -currDir, dirCursor - 14 * -currDir, -1, image_alpha);
+				}
 			}
 		}
 	}
