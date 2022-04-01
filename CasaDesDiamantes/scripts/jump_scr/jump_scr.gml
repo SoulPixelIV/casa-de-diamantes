@@ -17,7 +17,7 @@ function jump_scr() {
 			}
 			partEmitter = part_emitter_create(global.partSystem);
 			part_emitter_region(global.partSystem, partEmitter, player_obj.x - 32, player_obj.x + 32, player_obj.y + 8, player_obj.y + 32, ps_shape_ellipse, ps_distr_linear);
-			part_emitter_burst(global.partSystem, partEmitter, global.playerPart, 50);
+			part_emitter_burst(global.partSystem, partEmitter, global.playerPart, 20);
 			part_emitter_destroy(global.partSystem, partEmitter);
 		}
 	}
@@ -56,7 +56,7 @@ function jump_scr() {
 	}
 	partEmitter = part_emitter_create(global.partSystem);
 	part_emitter_region(global.partSystem, partEmitter, player_obj.x - 32, player_obj.x + 32, player_obj.y - 4, player_obj.y + 12, ps_shape_ellipse, ps_distr_gaussian);
-	part_emitter_burst(global.partSystem, partEmitter, global.playerPart, 15);
+	part_emitter_burst(global.partSystem, partEmitter, global.playerPart, 5);
 	part_emitter_destroy(global.partSystem, partEmitter);
 	player_obj.jumping = true;
 	player_obj.onLadder = false;

@@ -58,7 +58,7 @@ part_type_speed(global.bluePart, 0.04, 0.1, 0, 0.1);
 
 global.playerPart = part_type_create();
 part_type_sprite(global.playerPart, fireSpark_spr, true, true, true);
-part_type_colour_rgb(global.playerPart, 190, 255, 0, 0, 120, 255);
+part_type_colour_rgb(global.playerPart, 55, 120, 0, 0, 120, 155);
 part_type_life(global.playerPart, 90, 140);
 part_type_size(global.playerPart, 0.7, 1, 0, 0);
 part_type_orientation(global.playerPart, 0, 359, 1, 0, 1);
