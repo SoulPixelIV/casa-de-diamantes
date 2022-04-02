@@ -1311,7 +1311,7 @@ switch (sprite_index)
 		animationSpeed = 0;
 		break;
 	case playerCrouch_spr:
-		animationSpeed = 0;
+		animationSpeed = 0.5;
 		break;
 }
 

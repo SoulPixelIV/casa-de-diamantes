@@ -1,4 +1,5 @@
 /// @description Movement
+/*
 originX = player_obj.x;
 originY = player_obj.y;
 
@@ -18,4 +19,8 @@ if (theta > 14 && theta < 90) {
 }
 
 x = originX + lengthdir_x(radius, theta);
-y = originY + lengthdir_y(radius, theta);
+y = originY + lengthdir_y(radius, theta); */
+
+x = player_obj.x;
+y = player_obj.y - 5;
+image_angle = player_obj.dirCursor;

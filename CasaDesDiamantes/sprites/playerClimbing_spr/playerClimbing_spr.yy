@@ -7,15 +7,15 @@
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 12,
-  "bbox_right": 19,
-  "bbox_top": 0,
-  "bbox_bottom": 51,
+  "bbox_left": 9,
+  "bbox_right": 22,
+  "bbox_top": 9,
+  "bbox_bottom": 61,
   "HTile": false,
   "VTile": false,
   "For3D": false,
   "width": 32,
-  "height": 52,
+  "height": 62,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -24,18 +24,18 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"33f26e4d-a2e8-4f2d-96cd-0576e8845e3d","path":"sprites/playerClimbing_spr/playerClimbing_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"33f26e4d-a2e8-4f2d-96cd-0576e8845e3d","path":"sprites/playerClimbing_spr/playerClimbing_spr.yy",},"LayerId":{"name":"bb0e7a21-4cd9-487e-82f6-5d62339d47a2","path":"sprites/playerClimbing_spr/playerClimbing_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"playerClimbing_spr","path":"sprites/playerClimbing_spr/playerClimbing_spr.yy",},"resourceVersion":"1.0","name":"33f26e4d-a2e8-4f2d-96cd-0576e8845e3d","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"377ec3d6-66e5-4be3-9272-86e19e6eaefb","path":"sprites/playerClimbing_spr/playerClimbing_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"377ec3d6-66e5-4be3-9272-86e19e6eaefb","path":"sprites/playerClimbing_spr/playerClimbing_spr.yy",},"LayerId":{"name":"bb0e7a21-4cd9-487e-82f6-5d62339d47a2","path":"sprites/playerClimbing_spr/playerClimbing_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"playerClimbing_spr","path":"sprites/playerClimbing_spr/playerClimbing_spr.yy",},"resourceVersion":"1.0","name":"377ec3d6-66e5-4be3-9272-86e19e6eaefb","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"7677a738-0344-4a37-89f6-7de5e64dd711","path":"sprites/playerClimbing_spr/playerClimbing_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"7677a738-0344-4a37-89f6-7de5e64dd711","path":"sprites/playerClimbing_spr/playerClimbing_spr.yy",},"LayerId":{"name":"3e6e376f-020b-4f08-99cb-29c5e5191b87","path":"sprites/playerClimbing_spr/playerClimbing_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"playerClimbing_spr","path":"sprites/playerClimbing_spr/playerClimbing_spr.yy",},"resourceVersion":"1.0","name":"7677a738-0344-4a37-89f6-7de5e64dd711","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"98f45efc-ccaa-450b-a274-609ee90e347e","path":"sprites/playerClimbing_spr/playerClimbing_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"98f45efc-ccaa-450b-a274-609ee90e347e","path":"sprites/playerClimbing_spr/playerClimbing_spr.yy",},"LayerId":{"name":"3e6e376f-020b-4f08-99cb-29c5e5191b87","path":"sprites/playerClimbing_spr/playerClimbing_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"playerClimbing_spr","path":"sprites/playerClimbing_spr/playerClimbing_spr.yy",},"resourceVersion":"1.0","name":"98f45efc-ccaa-450b-a274-609ee90e347e","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"playerClimbing_spr","path":"sprites/playerClimbing_spr/playerClimbing_spr.yy",},
     "timeUnits": 1,
     "playback": 1,
-    "playbackSpeed": 3.0,
+    "playbackSpeed": 7.0,
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,
@@ -44,8 +44,8 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"285b4d60-5e96-4137-af90-609e2030a216","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"33f26e4d-a2e8-4f2d-96cd-0576e8845e3d","path":"sprites/playerClimbing_spr/playerClimbing_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"55155209-2e8c-49ef-bcb3-599d6b7f0a0a","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"377ec3d6-66e5-4be3-9272-86e19e6eaefb","path":"sprites/playerClimbing_spr/playerClimbing_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"d22a30c9-fefe-49dc-9932-1ce3195ac454","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"7677a738-0344-4a37-89f6-7de5e64dd711","path":"sprites/playerClimbing_spr/playerClimbing_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"b7966493-7208-4625-9529-4ae759f8f12d","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"98f45efc-ccaa-450b-a274-609ee90e347e","path":"sprites/playerClimbing_spr/playerClimbing_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -59,7 +59,7 @@
     "backdropXOffset": 0.0,
     "backdropYOffset": 0.0,
     "xorigin": 16,
-    "yorigin": 26,
+    "yorigin": 31,
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"playerClimbing_spr","path":"sprites/playerClimbing_spr/playerClimbing_spr.yy",},
@@ -69,7 +69,7 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"bb0e7a21-4cd9-487e-82f6-5d62339d47a2","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"3e6e376f-020b-4f08-99cb-29c5e5191b87","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
