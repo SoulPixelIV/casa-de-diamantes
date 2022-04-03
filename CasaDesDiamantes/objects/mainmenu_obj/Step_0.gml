@@ -26,7 +26,7 @@ if (keyboard_check_pressed(vk_enter))
 	switch (cursorPos)
 	{
 		case 0:
-			room_goto(charCustomization);
+			room_goto(level0_RoadToCasino);
 		break;
 		case 1:
 			room_goto(levelSelect);
