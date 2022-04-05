@@ -24,7 +24,9 @@ function shooting_scr(argument0) {
 		instance_create_layer(playerBulletLine_obj.x, playerBulletLine_obj.y, "Instances", pistolBulletCase_obj);
 		
 		instance_create_layer(shotLightx, shotLighty, "ForegroundObjects", shotLightPistol_obj);
-		instance_create_layer(shotLightx, shotLighty, "ForegroundObjects", smokecloud_obj);
+		if (!player_obj.dashroll) {
+			instance_create_layer(shotLightx, shotLighty, "ForegroundObjects", smokecloud_obj);
+		}
 		screenshake(50, 2.5, 0.4, id);
 		
 		if (!huggingWall)
@@ -32,22 +34,30 @@ function shooting_scr(argument0) {
 			if (dirCursor > 0 && dirCursor < 90)
 			{
 				horspeed -= shotJumpStrength / 16;
-				verspeed -= shotJumpStrength / 16;
+				if (!player_obj.grounded) {
+					verspeed -= shotJumpStrength / 16;
+				}
 			}
 			if (dirCursor < 180 && dirCursor > 90)
 			{
 				horspeed += shotJumpStrength / 16;
-				verspeed -= shotJumpStrength / 16;
+				if (!player_obj.grounded) {
+					verspeed -= shotJumpStrength / 16;
+				}
 			}
 			if (dirCursor > 180 && dirCursor < 270)
 			{
 				horspeed += shotJumpStrength / 16;
-				verspeed -= shotJumpStrength / 16;
+				if (!player_obj.grounded) {
+					verspeed -= shotJumpStrength / 16;
+				}
 			}
 			if (dirCursor < 360 && dirCursor > 270)
 			{
 				horspeed -= shotJumpStrength / 16;
-				verspeed -= shotJumpStrength / 16;
+				if (!player_obj.grounded) {
+					verspeed -= shotJumpStrength / 16;
+				}
 			}
 		}
 		global.pistolCooldown = global.pistolCooldownSave;
@@ -69,9 +79,11 @@ function shooting_scr(argument0) {
 			instance_create_layer(playerBulletLine_obj.x - 2, playerBulletLine_obj.y - 4, "Instances", bulletDualBarettas_obj);
 			
 			instance_create_layer(shotLightx, shotLighty, "ForegroundObjects", shotLightDualBarettas_obj);
-			instance_create_layer(shotLightx, shotLighty, "ForegroundObjects", smokecloud_obj);
 			instance_create_layer(shotLightx - 2, shotLighty - 4, "ForegroundObjects", shotLightDualBarettas_obj);
-			instance_create_layer(shotLightx - 2, shotLighty - 4, "ForegroundObjects", smokecloud_obj);
+			if (!player_obj.dashroll) {
+				instance_create_layer(shotLightx, shotLighty, "ForegroundObjects", smokecloud_obj);
+				instance_create_layer(shotLightx - 2, shotLighty - 4, "ForegroundObjects", smokecloud_obj);
+			}
 			screenshake(50, 3.5, 0.4, id);
 		
 			if (!huggingWall)
@@ -79,22 +91,30 @@ function shooting_scr(argument0) {
 				if (dirCursor > 0 && dirCursor < 90)
 				{
 					horspeed -= shotJumpStrength / 14;
-					verspeed -= shotJumpStrength / 14;
+					if (!player_obj.grounded) {
+						verspeed -= shotJumpStrength / 14;
+					}
 				}
 				if (dirCursor < 180 && dirCursor > 90)
 				{
 					horspeed += shotJumpStrength / 14;
-					verspeed -= shotJumpStrength / 14;
+					if (!player_obj.grounded) {
+						verspeed -= shotJumpStrength / 14;
+					}
 				}
 				if (dirCursor > 180 && dirCursor < 270)
 				{
 					horspeed += shotJumpStrength / 14;
-					verspeed -= shotJumpStrength / 14;
+					if (!player_obj.grounded) {
+						verspeed -= shotJumpStrength / 14;
+					}
 				}
 				if (dirCursor < 360 && dirCursor > 270)
 				{
 					horspeed -= shotJumpStrength / 14;
-					verspeed -= shotJumpStrength / 14;
+					if (!player_obj.grounded) {
+						verspeed -= shotJumpStrength / 14;
+					}
 				}
 			}
 			global.pistolAmmo--;
@@ -120,7 +140,9 @@ function shooting_scr(argument0) {
 			}
 			
 			instance_create_layer(shotLightx, shotLighty, "ForegroundObjects", shotLightShotgun_obj);
-			instance_create_layer(shotLightx, shotLighty, "ForegroundObjects", smokecloud_obj);
+			if (!player_obj.dashroll) {
+				instance_create_layer(shotLightx, shotLighty, "ForegroundObjects", smokecloud_obj);
+			}
 			screenshake(50, 12, 0.6, id);
 		
 			if (!huggingWall)
@@ -216,22 +238,30 @@ function shooting_scr(argument0) {
 			if (dirCursor > 0 && dirCursor < 90)
 			{
 				horspeed -= shotJumpStrength / 16;
-				verspeed -= shotJumpStrength / 16;
+				if (!player_obj.grounded) {
+					verspeed -= shotJumpStrength / 16;
+				}
 			}
 			if (dirCursor < 180 && dirCursor > 90)
 			{
 				horspeed += shotJumpStrength / 16;
-				verspeed -= shotJumpStrength / 16;
+				if (!player_obj.grounded) {
+					verspeed -= shotJumpStrength / 16;
+				}
 			}
 			if (dirCursor > 180 && dirCursor < 270)
 			{
 				horspeed += shotJumpStrength / 16;
-				verspeed -= shotJumpStrength / 16;
+				if (!player_obj.grounded) {
+					verspeed -= shotJumpStrength / 16;
+				}
 			}
 			if (dirCursor < 360 && dirCursor > 270)
 			{
 				horspeed -= shotJumpStrength / 16;
-				verspeed -= shotJumpStrength / 16;
+				if (!player_obj.grounded) {
+					verspeed -= shotJumpStrength / 16;
+				}
 			}
 		}
 		global.silencedMPCooldown = global.silencedMPCooldownSave;
