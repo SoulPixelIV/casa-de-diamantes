@@ -958,6 +958,7 @@
     {"id":{"name":"caEffect_obj","path":"objects/caEffect_obj/caEffect_obj.yy",},"order":3,},
     {"id":{"name":"ladder_obj","path":"objects/ladder_obj/ladder_obj.yy",},"order":2,},
     {"id":{"name":"lever_obj","path":"objects/lever_obj/lever_obj.yy",},"order":0,},
+    {"id":{"name":"proximitySensor_sr","path":"sprites/proximitySensor_sr/proximitySensor_sr.yy",},"order":79,},
     {"id":{"name":"diamond_spr","path":"sprites/diamond_spr/diamond_spr.yy",},"order":76,},
     {"id":{"name":"smokingJacketWalking_spr","path":"sprites/smokingJacketWalking_spr/smokingJacketWalking_spr.yy",},"order":4,},
     {"id":{"name":"fallingMinecart_obj","path":"objects/fallingMinecart_obj/fallingMinecart_obj.yy",},"order":1,},
@@ -1213,8 +1214,8 @@
   },
   "RoomOrderNodes": [
     {"roomId":{"name":"loadVars","path":"rooms/loadVars/loadVars.yy",},},
-    {"roomId":{"name":"level2_SenzelaForest","path":"rooms/level2_SenzelaForest/level2_SenzelaForest.yy",},},
     {"roomId":{"name":"level0_DarkSewers","path":"rooms/level0_DarkSewers/level0_DarkSewers.yy",},},
+    {"roomId":{"name":"level2_SenzelaForest","path":"rooms/level2_SenzelaForest/level2_SenzelaForest.yy",},},
     {"roomId":{"name":"mainmenu","path":"rooms/mainmenu/mainmenu.yy",},},
     {"roomId":{"name":"level0_RoadToCasino","path":"rooms/level0_RoadToCasino/level0_RoadToCasino.yy",},},
     {"roomId":{"name":"charCustomization","path":"rooms/charCustomization/charCustomization.yy",},},
