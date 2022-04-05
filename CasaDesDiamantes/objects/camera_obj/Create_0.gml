@@ -107,12 +107,14 @@ firstMoveTimer = 5;
 firstMoveDone = false;
 arenaCompleteMessage = false;
 arenaCompleteMessageTimer = 1250;
+proximitysensorTimer = 600;
 
 zombiespikeEffectBorderSave = zombiespikeEffectBorder;
 zombiespikeBorderTransparentSave = zombiespikeBorderTransparent;
 checkCullingAreaTimerSave = checkCullingAreaTimer;
 wheelSpeedSave = wheelSpeed;
 arenaCompleteMessageTimerSave = arenaCompleteMessageTimer;
+proximitysensorTimerSave = proximitysensorTimer;
 
 checkCullingAreaTimer = 1;
 

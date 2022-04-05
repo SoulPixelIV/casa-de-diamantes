@@ -452,6 +452,7 @@ if (!noHUD && instance_exists(player_obj))
 	//Chipbar
 	draw_sprite_ext(scoreBorder_spr, -1, x + (xScreenSize / 2) - 16, 9 + y - (yScreenSize / 2), 1, 1, 0, -1, 1);
 	
+	//###### UI TECH ######
 	//Radiation Meter
 	if (instance_exists(player_obj))
 	{
@@ -466,6 +467,35 @@ if (!noHUD && instance_exists(player_obj))
 			draw_sprite_ext(radiationMeterLine_spr, 0, (x + xScreenSize / 2) - 60, (y + yScreenSize / 2) - 48, 1, 1, (-player_obj.radiation * 1.5) +75, -1, 1);
 		}
 	}
+	
+	//Proximity Sensor
+	enemy[0] = noone;
+	if (room == level0_DarkSewers) {
+		if (distance_to_object(enemy_obj) < 512) {
+			
+			proximitysensorTimer -= 0;
+			
+			if (proximitysensorTimer < 0) {
+				for (var i = 0; i < instance_number(enemy_obj); i++)
+				{
+					if (distance_to_object(instance_find(enemy_obj, i)) < 512) {
+						enemy[i] = instance_find(enemy_obj, i);
+					}
+				}
+				proximitysensorTimer = proximitysensorTimerSave;
+			}
+
+			for (var i = 0; i < array_length(enemy); i++) {
+				var offsetX = global.xScreenSize - 128;
+				var offsetY = 256;
+				var distToCenterX = player_obj.x - enemy[i].x;
+				var distToCenterY = player_obj.y - enemy[i].y;
+				
+				draw_sprite(playerBulletLine_spr, 0, distToCenterX + offsetX, distToCenterY + offsetY);
+			}
+		}
+	}
+	
 	
 	//Chipbar Digit Calculation
 	convMoney = string(global.money);
