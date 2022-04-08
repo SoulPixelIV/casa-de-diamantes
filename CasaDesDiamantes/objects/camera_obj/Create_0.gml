@@ -107,7 +107,9 @@ firstMoveTimer = 5;
 firstMoveDone = false;
 arenaCompleteMessage = false;
 arenaCompleteMessageTimer = 1250;
-proximitysensorTimer = 600;
+proximitysensorTimer = 100;
+
+enemy[0] = noone;
 
 zombiespikeEffectBorderSave = zombiespikeEffectBorder;
 zombiespikeBorderTransparentSave = zombiespikeBorderTransparent;

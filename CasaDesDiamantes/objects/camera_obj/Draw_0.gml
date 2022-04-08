@@ -469,33 +469,40 @@ if (!noHUD && instance_exists(player_obj))
 	}
 	
 	//Proximity Sensor
-	enemy[0] = noone;
 	if (room == level0_DarkSewers) {
-		if (distance_to_object(enemy_obj) < 512) {
+		var nearestProximityEnemy = instance_nearest(x, y, enemy_obj);
+		if (distance_to_object(nearestProximityEnemy) < 512) {
+			if (nearestProximityEnemy.object_index == crawler_obj || nearestProximityEnemy.object_index == zombieGirl_obj) {
+				draw_sprite(proximitySensor_spr, 0, (x + xScreenSize / 2) - 16, (y + yScreenSize / 2) - 9);
 			
-			proximitysensorTimer -= 0;
-			
-			if (proximitysensorTimer < 0) {
-				for (var i = 0; i < instance_number(enemy_obj); i++)
-				{
-					if (distance_to_object(instance_find(enemy_obj, i)) < 512) {
-						enemy[i] = instance_find(enemy_obj, i);
+				proximitysensorTimer -= global.dt;
+				if (proximitysensorTimer < 0) {
+					for (var i = 0; i < instance_number(enemy_obj); i++)
+					{
+						if (distance_to_object(instance_find(enemy_obj, i)) < 512) {
+								if (instance_find(enemy_obj, i).object_index == crawler_obj || instance_find(enemy_obj, i).object_index == zombieGirl_obj) {
+									enemy[i] = instance_find(enemy_obj, i);
+								}
+						}
 					}
+					proximitysensorTimer = proximitysensorTimerSave;
 				}
-				proximitysensorTimer = proximitysensorTimerSave;
-			}
 
-			for (var i = 0; i < array_length(enemy); i++) {
-				var offsetX = global.xScreenSize - 128;
-				var offsetY = 256;
-				var distToCenterX = player_obj.x - enemy[i].x;
-				var distToCenterY = player_obj.y - enemy[i].y;
-				
-				draw_sprite(playerBulletLine_spr, 0, distToCenterX + offsetX, distToCenterY + offsetY);
+				for (var i = 0; i < array_length(enemy); i++) {
+					var offsetX = (x + xScreenSize / 2) - 60;
+					var offsetY = (y + yScreenSize / 2) - 29;
+					var distToCenterX = 0;
+					var distToCenterY = 0;
+					if (instance_exists(enemy[i])) {
+						distToCenterX = (enemy[i].x - player_obj.x) / 16;
+						distToCenterY = clamp((enemy[i].y - player_obj.y) / 16, -999, 0);
+					}
+
+					draw_sprite(proximitySensorPoint_spr, 0, distToCenterX + offsetX, distToCenterY + offsetY);
+				}
 			}
 		}
 	}
-	
 	
 	//Chipbar Digit Calculation
 	convMoney = string(global.money);
