@@ -1,6 +1,6 @@
 lifetime = 2;
 
-selCol = choose(make_color_rgb(255, 180, 180), make_color_rgb(180, 255, 180), make_color_rgb(180, 180, 255));
+image_blend = choose(make_color_hsv(255, 180, 255), make_color_hsv(180, 180, 255));
 
 image_xscale = player_obj.image_xscale;
 image_alpha = 0.4;
