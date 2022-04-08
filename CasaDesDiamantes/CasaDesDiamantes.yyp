@@ -1157,6 +1157,7 @@
     {"id":{"name":"cityShop_obj","path":"objects/cityShop_obj/cityShop_obj.yy",},"order":30,},
     {"id":{"name":"object194","path":"objects/object194/object194.yy",},"order":31,},
     {"id":{"name":"level1_RoadToCasino","path":"rooms/level1_RoadToCasino/level1_RoadToCasino.yy",},"order":1,},
+    {"id":{"name":"zombieGirlREWORK_spr","path":"sprites/zombieGirlREWORK_spr/zombieGirlREWORK_spr.yy",},"order":10,},
     {"id":{"name":"level0_RoadToCasino","path":"rooms/level0_RoadToCasino/level0_RoadToCasino.yy",},"order":0,},
     {"id":{"name":"playerFlipTest_spr","path":"sprites/playerFlipTest_spr/playerFlipTest_spr.yy",},"order":10,},
     {"id":{"name":"level_CasinoHub","path":"rooms/level_CasinoHub/level_CasinoHub.yy",},"order":1,},
