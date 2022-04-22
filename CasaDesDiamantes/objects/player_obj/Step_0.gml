@@ -163,7 +163,9 @@ if (movement && !isZombie)
 		dashInvincibility -= global.dt;
 	}
 	if (dashInvincibility < 0) {
-		invincible = false;
+		if (!place_meeting(x, y, slowmoCollider_obj)) {
+			invincible = false;
+		}
 		dashInvincibility = dashInvincibilitySave;
 		dashInvincibilityOn = false;
 	}
@@ -458,9 +460,13 @@ if (!movement)
 }
 else
 {
-	if (!dashInvincibilityOn) {
+	if (!dashInvincibilityOn && !place_meeting(x, y, slowmoCollider_obj)) {
 		invincible = false;
 	}
+}
+
+if (place_meeting(x, y, slowmoCollider_obj)) {
+	invincible = true;
 }
 
 //Player Trail
@@ -1431,7 +1437,9 @@ if (!deathSlowmo)
 	}
 	else
 	{
-		global.timeScale = 1;
+		if (!place_meeting(x, y, slowmoCollider_obj)) {
+			global.timeScale = 1;
+		}
 	}
 	
 	if (slowmoTimer < 30)

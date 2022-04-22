@@ -30,6 +30,16 @@ if (cameraTarget)
 	player_obj.movement = false;
 	player_obj.invincible = true;
 }
+if (cameraTargetMovement)
+{
+	snapCameraX = false;
+	snapCameraY = false;
+	cameraTargetTimer -= global.dt;
+	follow = instance_nearest(x, y, cameraTarget_obj);
+	cameraSpeed = 0.01;
+	ycameraSpeed = 0.01;
+	player_obj.invincible = true;
+}
 
 if (cameraTargetTimer < 0)
 {
@@ -38,6 +48,7 @@ if (cameraTargetTimer < 0)
 	follow = player_obj;
 	cameraTargetTimer = cameraTargetTimerSave;
 	cameraTarget = false;
+	cameraTargetMovement = false;
 	cameraSpeed = originalCameraSpeed;
 	ycameraSpeed = originalyCameraSpeed;
 	player_obj.movement = true;
@@ -73,7 +84,7 @@ if (shake)
 }
 
 //Floating Camera
-if (follow == camera_obj && !cameraTarget)
+if (follow == camera_obj && !cameraTarget && !cameraTargetMovement)
 {
 	if (instance_exists(player_obj)) {
 		if (player_obj.x - xScreenSize / 2 > minCameraXBorder && player_obj.x + xScreenSize / 2 < maxCameraXBorder)
@@ -98,7 +109,7 @@ if (follow == goldenElevatorDirtyForeground_obj)
 }
 
 //Snap camera when close enough
-if (!cameraTarget)
+if (!cameraTarget && !cameraTargetMovement)
 {
 	//HORIZONTAL
 	if (x < xTo + 4 && x > xTo - 4 && !shake)
@@ -116,7 +127,7 @@ else
 	x += (xTo - x) * (global.dtNoSlowmo * cameraSpeed);
 }
 
-if (!cameraTarget)
+if (!cameraTarget && !cameraTargetMovement)
 {
 	//VERTICAL
 	if (y < (yTo - cameraYBorder) + 1 && y > (yTo - cameraYBorder) - 1 && !shake)

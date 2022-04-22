@@ -1,5 +1,7 @@
 /// @description Life Length
 
+sprite_index = explosion_spr;
+	
 lifeLength -= global.dt;
 
 if (lifeLength < 0)
@@ -10,7 +12,7 @@ if (lifeLength < 0)
 
 if (image_index > image_number - 1) 
 {
-    instance_destroy();
+	instance_destroy();
 }
 
 //Animation

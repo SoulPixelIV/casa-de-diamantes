@@ -38,6 +38,7 @@ pauseDeathTimer = 200;
 deathInProg = false;
 respawnSetScreenBrightness = false;
 cameraTarget = false;
+cameraTargetMovement = false;
 cameraTargetTimer = 500;
 showWindowMenu = false;
 windowMenuOffset = global.yScreenSize;

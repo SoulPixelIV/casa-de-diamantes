@@ -65,8 +65,12 @@ if (hp <= 0)
 	var randNum = choose(1,2,3,4,5,6,7,8,9);
 	if (randNum == 9)
 	{
-		player_obj.enemySlowmo = true;
-		player_obj.camFollowTarget = deathCross;
+		with (player_obj) {
+			if (!place_meeting(x, y, slowmoCollider_obj)) {
+				enemySlowmo = true;
+				camFollowTarget = deathCross;
+			}
+		}
 	}
 	
 	//Drop Item
@@ -137,7 +141,7 @@ if (hp <= 0)
 	global.scorepoints += points * global.multiplier;
 	
 	damageTint = false;
-	instance_create_layer(x, y, "Instances", explosionBig_obj);
+	instance_create_layer(x, y, "Instances", explosionBigDelay_obj);
 	instance_destroy();
 }
 
