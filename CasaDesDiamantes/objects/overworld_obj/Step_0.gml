@@ -38,6 +38,9 @@ if (keyboard_check_pressed(vk_enter))
 			room_goto(level0_Powerplant);
 		break;
 		case 4:
+			room_goto(level0_DarkSewers);
+		break;
+		case 5:
 			room_goto(infiniteSpawn);
 		break;
 	}
