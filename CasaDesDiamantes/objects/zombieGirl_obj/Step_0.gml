@@ -330,7 +330,7 @@ if (!attackInProg && !attackInProg2 && aggro)
 }
 
 //Prepare Attack
-if (attackCooldown < 0 && verspeed == 0)
+if (attackCooldown < 0)
 {
 	if (distance_to_object(player_obj) < 66)
 	{
@@ -341,54 +341,72 @@ if (attackCooldown < 0 && verspeed == 0)
 	}
 	else
 	{
-		if (instance_exists(hazard_obj))
-		{
-			if (!collision_circle(x, y, 128, hazard_obj, false, true))
-			{
-				sprite_index = zombieGirlAttack1_spr;
-				movement = false;
-				attackInProg = true;
-			}
-		}
+		sprite_index = zombieGirlAttack1_spr;
+		movement = false;
+		attackInProg = true;
 	}
 	attackCooldown = attackCooldownSave;
 }
 
-//Start Attack 1
+if (attackInProg) {
+	//Stop every animation at last frame during attack1
+	if (image_index > image_number - 1) {
+		image_index = image_number - 1;
+	}
+	
+	attack1PrepareTimer -= global.dt;
+}
+
 if (attackInProg)
-{
-	instance_create_layer(x, y - 4, "ForegroundObjects", dustParticle_obj);
-	if (!startDrill)
-	{
-		var drillSnd = audio_play_sound_on(emitter, drill_snd, false, 1);
-		audio_sound_pitch(drillSnd, random_range(0.8, 1));
-		startDrill = true;
+{	
+	if (attack1PrepareTimer < 0) {
+		attack1StopTimer -= global.dt;
+		
+		//Only Spawn hitbox once
+		if (!snapAttack) {
+			sprite_index = zombieGirlAttack1Start_spr;
+	
+			hitboxDrill = instance_create_layer(x + (16 * image_xscale), y, "Instances", damageHitbox_obj);
+			hitboxDrill.image_yscale = 1.5;
+			hitboxDrill.image_xscale = 2;
+			hitboxDrill.damage = damage;
+			hitboxDrill.timer = 100;
+
+			snapAttack = true;
+		}
 	}
 }
-if (attackInProg && image_index > image_number - 1 && !dashed)
-{
-	animationSpeed = 0;
-	hitboxDrill = instance_create_layer(x + (16 * image_xscale), y, "Instances", damageHitbox_obj);
-	hitboxDrill.image_yscale = 1.5;
-	hitboxDrill.image_xscale = 2;
-	hitboxDrill.damage = damage;
-	hitboxDrill.timer = 100;
-	//Front Dash
-	if (player_obj.y > y - 32 && player_obj.y < y + 32)
-	{
-		frontDash_scr(id);
-	}
-	else
-	{
-		frontDash_scr(id);
-	}
-	dashed = true;
-}
+
 if (instance_exists(hitboxDrill))
 {
 	hitboxDrill.follow = true;
 	hitboxDrill.followX = x + (16 * image_xscale);
 	hitboxDrill.followY = y;
+}
+
+if (attackInProg && snapAttack && attack1StopTimer < 0) {
+	sprite_index = zombieGirlAttack1Stop_spr;
+}
+
+//END Attack 1
+if (attackInProg && sprite_index == zombieGirlAttack1Stop_spr && image_index = image_number -1) {
+	attackDelay = attackDelaySave;
+	attack1PrepareTimer = attack1PrepareTimerSave;
+	attack1StopTimer = attack1StopTimerSave;
+	snapAttack = false;
+	attackInProg = false;
+	animationSpeed = 0.75;
+	if (!lostArm)
+	{
+		sprite_index = zombieGirl_spr;
+	}
+	else
+	{
+		sprite_index = zombieGirlNoArm_spr;
+	}
+	damageCollision = false;
+	movement = true;
+	spawnedHitbox = false;
 }
 
 //Start Attack 2
@@ -420,7 +438,7 @@ if (attackDelay < 0)
 	attackInProg = false;
 	attackInProg2 = false;
 	startDrill = false;
-	animationSpeed = 0.5;
+	animationSpeed = 0.75;
 	if (!lostArm)
 	{
 		sprite_index = zombieGirl_spr;

@@ -18,7 +18,7 @@ spawnedArm = false;
 
 lastBullet = bulletPistol_obj;
 ammoSpawnCount = 4;
-animationSpeed = 0.5;
+animationSpeed = 0.75;
 savePosX = x;
 savePosY = y;
 attackCooldown = 250;
@@ -45,6 +45,9 @@ aggro = false;
 aggroTimer = 130;
 deaggroTimer = 3000;
 exclamationmarkTimer = 250;
+attack1PrepareTimer = 300; //Timer before snap attack begins
+attack1StopTimer = 200; //Timer after snap attack begins
+snapAttack = false; //Snap Attack is happening
 
 //Help Vars
 aggroTimerSave = aggroTimer;
@@ -54,6 +57,8 @@ attackCooldownSave = attackCooldown;
 attackDelaySave = attackDelay;
 damageTintTimerSave = damageTintTimer;
 gravityStrengthSave = gravityStrength;
+attack1PrepareTimerSave = attack1PrepareTimer;
+attack1StopTimerSave = attack1StopTimer;
 
 headshotHitbox = instance_create_layer(x, y - 16, "Instances", headshotHitbox_obj);
 with (headshotHitbox)
