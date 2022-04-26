@@ -332,19 +332,11 @@ if (!attackInProg && !attackInProg2 && aggro)
 //Prepare Attack
 if (attackCooldown < 0)
 {
-	if (distance_to_object(player_obj) < 66)
-	{
-		animationSpeed = 1;
-		sprite_index = zombieGirlAttack2_spr;
-		movement = false;
-		attackInProg2 = true;
-	}
-	else
-	{
-		sprite_index = zombieGirlAttack1_spr;
-		movement = false;
-		attackInProg = true;
-	}
+	//Min Attack range?
+	sprite_index = zombieGirlAttack1_spr;
+	movement = false;
+	attackInProg = true;
+
 	attackCooldown = attackCooldownSave;
 }
 
@@ -366,22 +358,22 @@ if (attackInProg)
 		if (!snapAttack) {
 			sprite_index = zombieGirlAttack1Start_spr;
 	
-			hitboxDrill = instance_create_layer(x + (16 * image_xscale), y, "Instances", damageHitbox_obj);
-			hitboxDrill.image_yscale = 1.5;
-			hitboxDrill.image_xscale = 2;
-			hitboxDrill.damage = damage;
-			hitboxDrill.timer = 100;
+			hitboxFlowerAttack = instance_create_layer(x + (48 * image_xscale), y, "Instances", damageHitbox_obj);
+			hitboxFlowerAttack.image_yscale = 1.5;
+			hitboxFlowerAttack.image_xscale = 3.5;
+			hitboxFlowerAttack.damage = damage;
+			hitboxFlowerAttack.timer = 100;
 
 			snapAttack = true;
 		}
 	}
 }
 
-if (instance_exists(hitboxDrill))
+if (instance_exists(hitboxFlowerAttack))
 {
-	hitboxDrill.follow = true;
-	hitboxDrill.followX = x + (16 * image_xscale);
-	hitboxDrill.followY = y;
+	hitboxFlowerAttack.follow = true;
+	hitboxFlowerAttack.followX = x + (48 * image_xscale);
+	hitboxFlowerAttack.followY = y;
 }
 
 if (attackInProg && snapAttack && attack1StopTimer < 0) {
