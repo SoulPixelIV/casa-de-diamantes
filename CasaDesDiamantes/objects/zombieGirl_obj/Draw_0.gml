@@ -14,5 +14,3 @@ if (!aggro)
 {
 	exclamationmarkTimer = exclamationmarkTimerSave;
 }
-
-draw_text(x+30, y, string(snapHitboxDelay));

@@ -296,7 +296,8 @@ if (hp < 0)
 //Remove Arm
 if (lostArm && !spawnedArm)
 {
-	sprite_index = zombieGirlNoArm_spr;
+	sprite_index = zombieGirl_spr;
+	//sprite_index = zombieGirlNoArm_spr;
 	instance_create_layer(x, y, "Instances", zombiegirlArm_obj);
 	spawnedArm = true;
 }
@@ -356,16 +357,18 @@ if (attackInProg)
 		snapHitboxDelay -= global.dt;
 		
 		//Only Spawn hitbox once
-		if (!snapAttack && snapHitboxDelay < 0) { //CHANGE THIS!
+		if (!snapAttack) {
 			sprite_index = zombieGirlAttack1Start_spr;
 	
-			hitboxFlowerAttack = instance_create_layer(x + (48 * image_xscale), y, "Instances", damageHitbox_obj);
-			hitboxFlowerAttack.image_yscale = 1.5;
-			hitboxFlowerAttack.image_xscale = 3.5;
-			hitboxFlowerAttack.damage = damage;
-			hitboxFlowerAttack.timer = 100;
+			if (snapHitboxDelay < 0) {
+				hitboxFlowerAttack = instance_create_layer(x + (48 * image_xscale), y, "Instances", damageHitbox_obj);
+				hitboxFlowerAttack.image_yscale = 1.5;
+				hitboxFlowerAttack.image_xscale = 3.5;
+				hitboxFlowerAttack.damage = damage;
+				hitboxFlowerAttack.timer = 100;
 
-			snapAttack = true;
+				snapAttack = true;
+			}
 		}
 	}
 }
@@ -396,7 +399,8 @@ if (attackInProg && sprite_index == zombieGirlAttack1Stop_spr && image_index = i
 	}
 	else
 	{
-		sprite_index = zombieGirlNoArm_spr;
+		sprite_index = zombieGirl_spr;
+		//sprite_index = zombieGirlNoArm_spr;
 	}
 	damageCollision = false;
 	movement = true;
@@ -439,7 +443,8 @@ if (attackDelay < 0)
 	}
 	else
 	{
-		sprite_index = zombieGirlNoArm_spr;
+		sprite_index = zombieGirl_spr;
+		//sprite_index = zombieGirlNoArm_spr;
 	}
 	damageCollision = false;
 	movement = true;
@@ -464,7 +469,8 @@ if (damageTintTimer < 0)
 	}
 	else
 	{
-		sprite_index = zombieGirlNoArm_spr;
+		sprite_index = zombieGirl_spr;
+		//sprite_index = zombieGirlNoArm_spr;
 	}
 	damageTintTimer = damageTintTimerSave;
 	damageTint = false;

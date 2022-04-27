@@ -48,7 +48,7 @@ exclamationmarkTimer = 250;
 attack1PrepareTimer = 300; //Timer before snap attack begins
 attack1StopTimer = 200; //Timer after snap attack begins
 snapAttack = false; //Snap Attack is happening
-snapHitboxDelay = 190; //Delay until damage hitbox spawns
+snapHitboxDelay = 45; //Delay until damage hitbox spawns
 
 //Help Vars
 aggroTimerSave = aggroTimer;

@@ -9,13 +9,13 @@
   "swfPrecision": 2.525,
   "bbox_left": 7,
   "bbox_right": 14,
-  "bbox_top": 8,
-  "bbox_bottom": 51,
+  "bbox_top": 16,
+  "bbox_bottom": 59,
   "HTile": false,
   "VTile": false,
   "For3D": false,
   "width": 32,
-  "height": 52,
+  "height": 60,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -24,15 +24,15 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"f9676a2c-351e-42c5-9690-46fc1a9786e8","path":"sprites/zombieGirlFlashHeadshot_spr/zombieGirlFlashHeadshot_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"f9676a2c-351e-42c5-9690-46fc1a9786e8","path":"sprites/zombieGirlFlashHeadshot_spr/zombieGirlFlashHeadshot_spr.yy",},"LayerId":{"name":"e0640f49-bd0b-4a21-9e75-155a4aa7283e","path":"sprites/zombieGirlFlashHeadshot_spr/zombieGirlFlashHeadshot_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"zombieGirlFlashHeadshot_spr","path":"sprites/zombieGirlFlashHeadshot_spr/zombieGirlFlashHeadshot_spr.yy",},"resourceVersion":"1.0","name":"f9676a2c-351e-42c5-9690-46fc1a9786e8","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"d20b8bb9-d941-4fb8-bbb5-5c6937d965c6","path":"sprites/zombieGirlFlashHeadshot_spr/zombieGirlFlashHeadshot_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"d20b8bb9-d941-4fb8-bbb5-5c6937d965c6","path":"sprites/zombieGirlFlashHeadshot_spr/zombieGirlFlashHeadshot_spr.yy",},"LayerId":{"name":"d5588e13-2699-4744-bb02-954e2cded410","path":"sprites/zombieGirlFlashHeadshot_spr/zombieGirlFlashHeadshot_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"zombieGirlFlashHeadshot_spr","path":"sprites/zombieGirlFlashHeadshot_spr/zombieGirlFlashHeadshot_spr.yy",},"resourceVersion":"1.0","name":"d20b8bb9-d941-4fb8-bbb5-5c6937d965c6","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"zombieGirlFlashHeadshot_spr","path":"sprites/zombieGirlFlashHeadshot_spr/zombieGirlFlashHeadshot_spr.yy",},
     "timeUnits": 1,
     "playback": 1,
-    "playbackSpeed": 1.0,
+    "playbackSpeed": 4.0,
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"ccb23554-112a-4732-a105-42b692e04705","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"f9676a2c-351e-42c5-9690-46fc1a9786e8","path":"sprites/zombieGirlFlashHeadshot_spr/zombieGirlFlashHeadshot_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"abc7ad5f-3d65-4d15-81f2-4e14ada48fb0","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d20b8bb9-d941-4fb8-bbb5-5c6937d965c6","path":"sprites/zombieGirlFlashHeadshot_spr/zombieGirlFlashHeadshot_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -55,7 +55,7 @@
     "backdropXOffset": 0.0,
     "backdropYOffset": 0.0,
     "xorigin": 11,
-    "yorigin": 26,
+    "yorigin": 30,
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"zombieGirlFlashHeadshot_spr","path":"sprites/zombieGirlFlashHeadshot_spr/zombieGirlFlashHeadshot_spr.yy",},
@@ -65,7 +65,7 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"e0640f49-bd0b-4a21-9e75-155a4aa7283e","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"d5588e13-2699-4744-bb02-954e2cded410","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
