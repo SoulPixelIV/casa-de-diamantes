@@ -93,8 +93,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "ZombieGirl",
-    "path": "folders/Enemies/Enemy Sprites/ZombieGirl.yy",
+    "name": "Legacy Sprites",
+    "path": "folders/Other + Legacy/Legacy Sprites.yy",
   },
   "resourceVersion": "1.0",
   "name": "zombieGirlAttack1LEGACY_spr",

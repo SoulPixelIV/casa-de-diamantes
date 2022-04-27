@@ -353,9 +353,10 @@ if (attackInProg)
 {	
 	if (attack1PrepareTimer < 0) {
 		attack1StopTimer -= global.dt;
+		snapHitboxDelay -= global.dt;
 		
 		//Only Spawn hitbox once
-		if (!snapAttack) {
+		if (!snapAttack && snapHitboxDelay < 0) { //CHANGE THIS!
 			sprite_index = zombieGirlAttack1Start_spr;
 	
 			hitboxFlowerAttack = instance_create_layer(x + (48 * image_xscale), y, "Instances", damageHitbox_obj);
@@ -385,6 +386,7 @@ if (attackInProg && sprite_index == zombieGirlAttack1Stop_spr && image_index = i
 	attackDelay = attackDelaySave;
 	attack1PrepareTimer = attack1PrepareTimerSave;
 	attack1StopTimer = attack1StopTimerSave;
+	snapHitboxDelay = snapHitboxDelaySave;
 	snapAttack = false;
 	attackInProg = false;
 	animationSpeed = 0.75;

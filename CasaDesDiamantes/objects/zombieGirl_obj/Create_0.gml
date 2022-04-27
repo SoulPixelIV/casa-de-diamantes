@@ -48,6 +48,7 @@ exclamationmarkTimer = 250;
 attack1PrepareTimer = 300; //Timer before snap attack begins
 attack1StopTimer = 200; //Timer after snap attack begins
 snapAttack = false; //Snap Attack is happening
+snapHitboxDelay = 190; //Delay until damage hitbox spawns
 
 //Help Vars
 aggroTimerSave = aggroTimer;
@@ -59,6 +60,7 @@ damageTintTimerSave = damageTintTimer;
 gravityStrengthSave = gravityStrength;
 attack1PrepareTimerSave = attack1PrepareTimer;
 attack1StopTimerSave = attack1StopTimer;
+snapHitboxDelaySave = snapHitboxDelay;
 
 headshotHitbox = instance_create_layer(x, y - 16, "Instances", headshotHitbox_obj);
 with (headshotHitbox)
