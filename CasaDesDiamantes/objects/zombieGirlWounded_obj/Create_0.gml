@@ -59,6 +59,8 @@ checkPlayerTimerSave = checkPlayerTimer;
 checkPlayerTimer = 0;
 gravityStrength = 0;
 
+blend = image_blend;
+
 spawnDelay = 54;
 alarm[0] = spawnDelay;
 

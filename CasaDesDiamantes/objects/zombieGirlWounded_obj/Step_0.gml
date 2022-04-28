@@ -254,16 +254,6 @@ if (hp < 0)
 	instance_change(zombieGirlWoundedDeath1_obj, false);
 }
 
-if (damageTint && sprite_index != zombieGirlWoundedFlashHeadshot_spr)
-{
-	sprite_index = zombieGirlWoundedFlash_spr;
-	damageTintTimer -= global.dt;
-}
-if (damageTintHeadshot && sprite_index != zombieGirlWoundedFlash_spr)
-{
-	sprite_index = zombieGirlWoundedFlashHeadshot_spr;
-	damageTintTimer -= global.dt;
-}
 if (damageTintTimer < 0)
 {
 	sprite_index = zombieGirlWounded_spr;

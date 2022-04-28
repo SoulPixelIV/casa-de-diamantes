@@ -283,11 +283,6 @@ with (alarmLight)
 	light[| eLight.Y] = body.y;
 }
 
-if (damageTint)
-{
-	sprite_index = zombieGirlFlash_spr;
-	damageTintTimer -= global.dt;
-}
 if (damageTintTimer < 0)
 {
 	sprite_index = explosiveMerchant_spr;

@@ -62,6 +62,8 @@ attack1PrepareTimerSave = attack1PrepareTimer;
 attack1StopTimerSave = attack1StopTimer;
 snapHitboxDelaySave = snapHitboxDelay;
 
+blend = image_blend;
+
 headshotHitbox = instance_create_layer(x, y - 16, "Instances", headshotHitbox_obj);
 with (headshotHitbox)
 {

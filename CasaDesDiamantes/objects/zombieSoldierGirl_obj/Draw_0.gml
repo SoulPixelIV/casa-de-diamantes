@@ -1,4 +1,4 @@
-draw_self();
+draw_sprite_ext(sprite_index,image_index,x,y,image_xscale,image_yscale,image_angle, blend, image_alpha);
 
 //Change line color
 lineFlashTimer -= global.dt;
@@ -74,4 +74,11 @@ if (player_obj != noone)
 	{
 		clamp(dirCursor, 270, 90);
 	}
+}
+
+if (damageTint) {
+	blend = c_red;
+	damageTintTimer -= global.dt;
+} else {
+	blend = image_blend;
 }

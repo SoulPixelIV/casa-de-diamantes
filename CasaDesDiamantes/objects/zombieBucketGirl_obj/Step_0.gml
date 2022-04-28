@@ -374,16 +374,6 @@ if (attackInProg2 && image_index > image_number - 1)
 	}
 }
 
-if (damageTint && bucketRemoved)
-{
-	sprite_index = zombieBucketGirlFlash_spr;
-	damageTintTimer -= global.dt;
-}
-if (damageTint && !bucketRemoved)
-{
-	sprite_index = zombieBucketGirlFlashBody_spr;
-	damageTintTimer -= global.dt;
-}
 if (damageTintTimer < 0)
 {
 	sprite_index = zombieBucketGirl_spr;

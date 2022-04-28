@@ -62,6 +62,8 @@ lineFlashTimerSave = lineFlashTimer;
 turnDelaySave = turnDelay;
 gravityStrengthSave = gravityStrength;
 
+blend = image_blend;
+
 //Create Emitter
 emitter = audio_emitter_create();
 audio_max_distance = 800;

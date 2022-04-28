@@ -1,4 +1,4 @@
-draw_self();
+draw_sprite_ext(sprite_index,image_index,x,y,image_xscale,image_yscale,image_angle, blend, image_alpha);
 
 //Draw Aggro Mode
 if (aggroTimer < aggroTimerSave && aggroTimer > 0 && !aggro)
@@ -46,3 +46,10 @@ if (player_obj != noone)
 }
 
 draw_sprite(radioactiveShield_spr, 0, x, y);
+
+if (damageTint) {
+	blend = c_red;
+	damageTintTimer -= global.dt;
+} else {
+	blend = image_blend;
+}

@@ -47,6 +47,8 @@ exclamationmarkTimerSave = exclamationmarkTimer;
 damageTintTimerSave = damageTintTimer;
 gravityStrengthSave = gravityStrength;
 
+blend = image_blend;
+
 alarmLight = instance_create_layer(x, y, "GraphicsLayer", spotlightRed_obj); 
 
 with (alarmLight)

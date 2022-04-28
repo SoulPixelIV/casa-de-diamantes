@@ -45,6 +45,8 @@ attackCooldownSave = attackCooldown;
 damageTintTimerSave = damageTintTimer;
 gravityStrengthSave = gravityStrength;
 
+blend = image_blend;
+
 bucketHitbox = instance_create_layer(x, y - 16, "Instances", bucketHitbox_obj);
 with (bucketHitbox)
 {

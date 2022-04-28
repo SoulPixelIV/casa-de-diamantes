@@ -53,6 +53,8 @@ exclamationmarkTimerSave = exclamationmarkTimer;
 useDelayTimerSave = useDelayTimer;
 gravityStrengthSave = gravityStrength;
 
+blend = image_blend;
+
 animationSpeed = 0.5;
 
 if (instance_exists(waypoint))

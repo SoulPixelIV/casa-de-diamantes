@@ -451,16 +451,6 @@ if (attackDelay < 0)
 	spawnedHitbox = false;
 }
 
-if (damageTint && sprite_index != zombieGirlFlashHeadshot_spr)
-{
-	sprite_index = zombieGirlFlash_spr;
-	damageTintTimer -= global.dt;
-}
-if (damageTintHeadshot && sprite_index != zombieGirlFlash_spr)
-{
-	sprite_index = zombieGirlFlashHeadshot_spr;
-	damageTintTimer -= global.dt;
-}
 if (damageTintTimer < 0)
 {
 	if (!lostArm)
