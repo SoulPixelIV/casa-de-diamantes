@@ -354,6 +354,7 @@
     {"id":{"name":"chainlamp_spr","path":"sprites/chainlamp_spr/chainlamp_spr.yy",},"order":46,},
     {"id":{"name":"bulletShotgun_spr","path":"sprites/bulletShotgun_spr/bulletShotgun_spr.yy",},"order":19,},
     {"id":{"name":"tutorialMousePromt_obj","path":"objects/tutorialMousePromt_obj/tutorialMousePromt_obj.yy",},"order":52,},
+    {"id":{"name":"zombieGirlWalking_spr","path":"sprites/zombieGirlWalking_spr/zombieGirlWalking_spr.yy",},"order":16,},
     {"id":{"name":"teleportBackToWarpzoneBeginning_obj","path":"objects/teleportBackToWarpzoneBeginning_obj/teleportBackToWarpzoneBeginning_obj.yy",},"order":0,},
     {"id":{"name":"crawlerFireAttack_spr","path":"sprites/crawlerFireAttack_spr/crawlerFireAttack_spr.yy",},"order":2,},
     {"id":{"name":"bulletDualBarettas_spr","path":"sprites/bulletDualBarettas_spr/bulletDualBarettas_spr.yy",},"order":20,},

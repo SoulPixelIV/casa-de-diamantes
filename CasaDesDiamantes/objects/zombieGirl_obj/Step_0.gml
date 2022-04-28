@@ -22,6 +22,12 @@ else
 	dirLookat = 0;
 }
 
+//Walking Animation
+if (horspeed != 0 && !attackInProg) {
+	animationSpeed = 0.5;
+	sprite_index = zombieGirlWalking_spr;
+}
+
 //Sight Check
 if (instance_exists(player_obj)) {
 	if (!collision_line(x, y, player_obj.x, player_obj.y, collider_obj, false, true) && !collision_line(x, y, player_obj.x, player_obj.y, enemyVisionBlockZone_obj, false, true))
@@ -115,10 +121,7 @@ if (movement)
 }
 else
 {
-	if (!attackInProg)
-	{
-		horspeed = 0;
-	}
+	horspeed = 0;
 }
 
 //Gravity
@@ -320,12 +323,7 @@ if (instance_exists(headshotHitbox))
 //Cooldown
 if (!attackInProg && !attackInProg2 && aggro)
 {
-	if (distance_to_object(player_obj) < 66)
-	{
-		attackCooldown -= global.dt * 2;
-	}
-	else if (distance_to_object(player_obj) < aggroRange)
-	{
+	if (distance_to_object(player_obj) < 128) {
 		attackCooldown -= global.dt;
 	}
 }
@@ -333,10 +331,11 @@ if (!attackInProg && !attackInProg2 && aggro)
 //Prepare Attack
 if (attackCooldown < 0)
 {
-	//Min Attack range?
-	sprite_index = zombieGirlAttack1_spr;
-	movement = false;
-	attackInProg = true;
+	if (distance_to_object(player_obj) < 128) {
+		sprite_index = zombieGirlAttack1_spr;
+		movement = false;
+		attackInProg = true;
+	}
 
 	attackCooldown = attackCooldownSave;
 }
@@ -347,6 +346,7 @@ if (attackInProg) {
 		image_index = image_number - 1;
 	}
 	
+	animationSpeed = 0.75;
 	attack1PrepareTimer -= global.dt;
 }
 
