@@ -297,7 +297,7 @@ if (hp < 0)
 }
 
 //Remove Arm
-if (lostArm && !spawnedArm)
+if (lostArm && !spawnedArm && !attackInProg)
 {
 	sprite_index = zombieGirl_spr;
 	//sprite_index = zombieGirlNoArm_spr;
@@ -443,8 +443,10 @@ if (attackDelay < 0)
 	}
 	else
 	{
-		sprite_index = zombieGirl_spr;
-		//sprite_index = zombieGirlNoArm_spr;
+		if (!attackInProg) {
+			sprite_index = zombieGirl_spr;
+			//sprite_index = zombieGirlNoArm_spr;
+		}
 	}
 	damageCollision = false;
 	movement = true;
@@ -459,8 +461,10 @@ if (damageTintTimer < 0)
 	}
 	else
 	{
-		sprite_index = zombieGirl_spr;
-		//sprite_index = zombieGirlNoArm_spr;
+		if (!attackInProg) {
+			sprite_index = zombieGirl_spr;
+			//sprite_index = zombieGirlNoArm_spr;
+		}
 	}
 	damageTintTimer = damageTintTimerSave;
 	damageTint = false;
