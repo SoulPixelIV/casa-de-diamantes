@@ -45,10 +45,17 @@ aggro = false;
 aggroTimer = 130;
 deaggroTimer = 3000;
 exclamationmarkTimer = 250;
+
 attack1PrepareTimer = 300; //Timer before snap attack begins
 attack1StopTimer = 200; //Timer after snap attack begins
 snapAttack = false; //Snap Attack is happening
+
+attack2PrepareTimer = 300; //Timer before snap attack begins
+attack2StopTimer = 200; //Timer after snap attack begins
+snapAttack2 = false; //Snap Attack is happening
+
 snapHitboxDelay = 45; //Delay until damage hitbox spawns
+snapHitbox2Delay = 45; //Delay until damage hitbox spawns
 
 //Help Vars
 aggroTimerSave = aggroTimer;
@@ -58,9 +65,14 @@ attackCooldownSave = attackCooldown;
 attackDelaySave = attackDelay;
 damageTintTimerSave = damageTintTimer;
 gravityStrengthSave = gravityStrength;
+
 attack1PrepareTimerSave = attack1PrepareTimer;
 attack1StopTimerSave = attack1StopTimer;
 snapHitboxDelaySave = snapHitboxDelay;
+
+attack2PrepareTimerSave = attack2PrepareTimer;
+attack2StopTimerSave = attack2StopTimer;
+snapHitbox2DelaySave = snapHitbox2Delay;
 
 blend = image_blend;
 

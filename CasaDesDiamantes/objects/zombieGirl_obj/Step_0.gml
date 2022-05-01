@@ -332,16 +332,22 @@ if (!attackInProg && !attackInProg2 && aggro)
 if (attackCooldown < 0)
 {
 	if (distance_to_object(player_obj) < 128) {
-		sprite_index = zombieGirlAttack1_spr;
-		movement = false;
-		attackInProg = true;
+		if (player_obj.y + 16 < y) {
+			sprite_index = zombieGirlAttack2_spr;
+			movement = false;
+			attackInProg2 = true;
+		} else {
+			sprite_index = zombieGirlAttack1_spr;
+			movement = false;
+			attackInProg = true;
+		}
 	}
 
 	attackCooldown = attackCooldownSave;
 }
 
-if (attackInProg) {
-	//Stop every animation at last frame during attack1
+if (attackInProg || attackInProg2) {
+	//Stop every animation at last frame during attack
 	if (image_index > image_number - 1) {
 		image_index = image_number - 1;
 	}
@@ -407,21 +413,55 @@ if (attackInProg && sprite_index == zombieGirlAttack1Stop_spr && image_index = i
 	spawnedHitbox = false;
 }
 
-//Start Attack 2
-if (attackInProg2 && image_index > image_number - 1 && !dashed)
-{
-	animationSpeed = 0;
-	dashed = true;
-	delay = true;
-}	
-if (attackInProg2 && image_index > 8 && !spawnedHitbox)
-{
-	var hitbox = instance_create_layer(x + (20 * image_xscale), y, "Instances", damageHitbox_obj);
-	hitbox.image_yscale = 1.5;
-	hitbox.image_xscale = 3;
-	hitbox.damage = 30;
-	hitbox.timer = 140;
-	spawnedHitbox = true;
+//START ATTACK 2
+if (attackInProg2)
+{	
+	if (attack2PrepareTimer < 0) {
+		attack2StopTimer -= global.dt;
+		snapHitbox2Delay -= global.dt;
+		
+		//Only Spawn hitbox once
+		if (!snapAttack2) {
+			sprite_index = zombieGirlAttack2Start_spr;
+	
+			if (snapHitbox2Delay < 0) {
+				hitboxFlowerAttack = instance_create_layer(x, y - 48, "Instances", damageHitbox_obj);
+				hitboxFlowerAttack.image_yscale = 3.5;
+				hitboxFlowerAttack.image_xscale = 1.5;
+				hitboxFlowerAttack.damage = damage;
+				hitboxFlowerAttack.timer = 100;
+
+				snapAttack2 = true;
+			}
+		}
+	}
+}
+
+if (attackInProg2 && snapAttack2 && attack2StopTimer < 0) {
+	sprite_index = zombieGirlAttack2Stop_spr;
+}
+
+//END Attack 2
+if (attackInProg2 && sprite_index == zombieGirlAttack2Stop_spr && image_index = image_number -1) {
+	attackDelay = attackDelaySave;
+	attack2PrepareTimer = attack2PrepareTimerSave;
+	attack2StopTimer = attack2StopTimerSave;
+	snapHitbox2Delay = snapHitbox2DelaySave;
+	snapAttack2 = false;
+	attackInProg2 = false;
+	animationSpeed = 0.75;
+	if (!lostArm)
+	{
+		sprite_index = zombieGirl_spr;
+	}
+	else
+	{
+		sprite_index = zombieGirl_spr;
+		//sprite_index = zombieGirlNoArm_spr;
+	}
+	damageCollision = false;
+	movement = true;
+	spawnedHitbox = false;
 }
 	
 if (delay)
