@@ -23,7 +23,7 @@ else
 }
 
 //Walking Animation
-if (horspeed != 0 && !attackInProg) {
+if (horspeed != 0 && !attackInProg && !attackInProg2) {
 	animationSpeed = 0.5;
 	sprite_index = zombieGirlWalking_spr;
 }
@@ -353,7 +353,12 @@ if (attackInProg || attackInProg2) {
 	}
 	
 	animationSpeed = 0.75;
-	attack1PrepareTimer -= global.dt;
+	if (attackInProg) {
+		attack1PrepareTimer -= global.dt;
+	}
+	if (attackInProg2) {
+		attack2PrepareTimer -= global.dt;
+	}
 }
 
 if (attackInProg)
@@ -381,9 +386,16 @@ if (attackInProg)
 
 if (instance_exists(hitboxFlowerAttack))
 {
-	hitboxFlowerAttack.follow = true;
-	hitboxFlowerAttack.followX = x + (48 * image_xscale);
-	hitboxFlowerAttack.followY = y;
+	if (attackInProg) {
+		hitboxFlowerAttack.follow = true;
+		hitboxFlowerAttack.followX = x + (48 * image_xscale);
+		hitboxFlowerAttack.followY = y;
+	}
+	if (attackInProg2) {
+		hitboxFlowerAttack.follow = true;
+		hitboxFlowerAttack.followX = x;
+		hitboxFlowerAttack.followY = y - 48;
+	}
 }
 
 if (attackInProg && snapAttack && attack1StopTimer < 0) {

@@ -50,8 +50,8 @@ attack1PrepareTimer = 300; //Timer before snap attack begins
 attack1StopTimer = 200; //Timer after snap attack begins
 snapAttack = false; //Snap Attack is happening
 
-attack2PrepareTimer = 300; //Timer before snap attack begins
-attack2StopTimer = 200; //Timer after snap attack begins
+attack2PrepareTimer = 250; //Timer before snap attack begins
+attack2StopTimer = 150; //Timer after snap attack begins
 snapAttack2 = false; //Snap Attack is happening
 
 snapHitboxDelay = 45; //Delay until damage hitbox spawns
