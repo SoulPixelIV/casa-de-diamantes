@@ -1,16 +1,13 @@
 {
   "spriteId": {
-    "name": "bulletPlant_spr",
-    "path": "sprites/bulletPlant_spr/bulletPlant_spr.yy",
+    "name": "grenatePlant_spr",
+    "path": "sprites/grenatePlant_spr/grenatePlant_spr.yy",
   },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": {
-    "name": "bullet_obj",
-    "path": "objects/bullet_obj/bullet_obj.yy",
-  },
+  "parentObjectId": null,
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -26,17 +23,16 @@
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"explosive_obj","path":"objects/explosive_obj/explosive_obj.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":1,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Bullets",
-    "path": "folders/Bullets.yy",
+    "name": "Objects",
+    "path": "folders/Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "bulletZombieSoldierGirl_obj",
+  "name": "grenatePlant_obj",
   "tags": [],
   "resourceType": "GMObject",
 }

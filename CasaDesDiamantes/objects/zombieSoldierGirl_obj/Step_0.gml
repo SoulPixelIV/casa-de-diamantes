@@ -362,9 +362,9 @@ if (aggro)
 	}
 	if (attackCooldown < 0 && attackInProg2)
 	{	
-		var grenate = instance_create_layer(x + 10 * image_xscale, y, "Instances", grenateSmall_obj);
+		var grenate = instance_create_layer(x + 15 * image_xscale, y, "Instances", grenatePlant_obj);
 		grenate.horspeed = random_range(2, 4) * image_xscale;
-		grenate.verspeed = random_range(-4, -6);
+		grenate.verspeed = -0.5;
 		attackCooldown = attackCooldownSave / 2;
 		sprite_index = zombieSoldierGirlGrenate_spr;
 		attackInProg1 = false;

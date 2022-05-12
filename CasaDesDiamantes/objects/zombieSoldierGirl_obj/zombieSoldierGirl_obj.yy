@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "zombieSoldierGirlLEGACY_spr",
-    "path": "sprites/zombieSoldierGirlLEGACY_spr/zombieSoldierGirlLEGACY_spr.yy",
+    "name": "zombieSoldierGirl_spr",
+    "path": "sprites/zombieSoldierGirl_spr/zombieSoldierGirl_spr.yy",
   },
   "solid": false,
   "visible": true,

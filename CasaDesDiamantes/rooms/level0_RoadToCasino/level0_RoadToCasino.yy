@@ -884,6 +884,7 @@
         {"properties":[],"isDnd":false,"objectId":{"name":"explosiveBarrel_obj","path":"objects/explosiveBarrel_obj/explosiveBarrel_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":355.345764,"scaleX":1.0,"scaleY":-1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":680.0,"y":641.0,"resourceVersion":"1.0","name":"inst_262693B1","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"healthpack_obj","path":"objects/healthpack_obj/healthpack_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":544.0,"y":704.0,"resourceVersion":"1.0","name":"inst_55606318","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"healthpack_obj","path":"objects/healthpack_obj/healthpack_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":576.0,"y":672.0,"resourceVersion":"1.0","name":"inst_3204B6DE","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"zombieSoldierGirl_obj","path":"objects/zombieSoldierGirl_obj/zombieSoldierGirl_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":704.0,"y":352.0,"resourceVersion":"1.0","name":"inst_5113A63F","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":1100,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":"none","properties":[],"resourceVersion":"1.0","name":"Instances","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"checkpoint_obj","path":"objects/checkpoint_obj/checkpoint_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1197.0,"y":1960.0,"resourceVersion":"1.0","name":"inst_791CBB0D","tags":[],"resourceType":"GMRInstance",},
@@ -3129,6 +3130,7 @@
     {"name":"inst_3F06046F","path":"rooms/level0_RoadToCasino/level0_RoadToCasino.yy",},
     {"name":"inst_6B7ECAE4","path":"rooms/level0_RoadToCasino/level0_RoadToCasino.yy",},
     {"name":"inst_4D9791B3","path":"rooms/level0_RoadToCasino/level0_RoadToCasino.yy",},
+    {"name":"inst_5113A63F","path":"rooms/level0_RoadToCasino/level0_RoadToCasino.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

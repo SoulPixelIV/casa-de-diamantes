@@ -37,11 +37,11 @@ if (attackCooldown < 300 && !attackInProg2 && aggro)
 	{
 		if (attackCooldown > 120)
 		{
-			draw_sprite_ext(zombieSoldierGirlGunFlashing_spr, -1, x + 2 * image_xscale, y - 3.6, 1, image_xscale, dirCursor, -1, 1);
+			//draw_sprite_ext(zombieSoldierGirlGunFlashing_spr, -1, x + 2 * image_xscale, y - 3.6, 1, image_xscale, dirCursor, -1, 1);
 		}
 		else
 		{
-			draw_sprite_ext(zombieSoldierGirlGun_spr, -1, x + 2 * image_xscale, y - 3.6, 1, image_xscale, dirCursor, -1, 1);
+			//draw_sprite_ext(zombieSoldierGirlGun_spr, -1, x + 2 * image_xscale, y - 3.6, 1, image_xscale, dirCursor, -1, 1);
 		}
 	}
 }
