@@ -211,10 +211,6 @@ else
 if (hp < 0)
 {
 	var deathCross = instance_create_layer(x, y - 8, "ForegroundObjects", deathCross_obj);
-	with (headshotHitbox)
-	{
-		instance_destroy();
-	}
 	
 	//Enemy Slowmo
 	var randNum = choose(1,2,3,4,5,6,7,8,9);
@@ -299,19 +295,6 @@ if (hp < 0)
 	damageTintHeadshot = false;
 	attackCooldown = attackCooldownSave;
 	instance_change(zombieSoldierGirlDeath1_obj, true);
-}
-
-//Headshot Hitbox
-if (instance_exists(headshotHitbox))
-{
-	with (headshotHitbox)
-	{
-		if (instance_exists(body))
-		{
-			x = body.x;
-			y = body.y - 12;
-		}
-	}
 }
 
 //Attack

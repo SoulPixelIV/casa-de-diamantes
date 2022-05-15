@@ -14,7 +14,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 256,
+  "width": 312,
   "height": 100,
   "textureGroupId": {
     "name": "Default",
@@ -27,6 +27,8 @@
     {"compositeImage":{"FrameId":{"name":"a0e7804c-7807-450d-a1de-79b869554b9e","path":"sprites/zombieSoldierGirlDESIGN_spr/zombieSoldierGirlDESIGN_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"a0e7804c-7807-450d-a1de-79b869554b9e","path":"sprites/zombieSoldierGirlDESIGN_spr/zombieSoldierGirlDESIGN_spr.yy",},"LayerId":{"name":"bfe587d5-7259-4ad5-92a5-0042dbb81914","path":"sprites/zombieSoldierGirlDESIGN_spr/zombieSoldierGirlDESIGN_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
         {"FrameId":{"name":"a0e7804c-7807-450d-a1de-79b869554b9e","path":"sprites/zombieSoldierGirlDESIGN_spr/zombieSoldierGirlDESIGN_spr.yy",},"LayerId":{"name":"25c4a45b-65d6-42e7-b376-753ae72341c9","path":"sprites/zombieSoldierGirlDESIGN_spr/zombieSoldierGirlDESIGN_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"a0e7804c-7807-450d-a1de-79b869554b9e","path":"sprites/zombieSoldierGirlDESIGN_spr/zombieSoldierGirlDESIGN_spr.yy",},"LayerId":{"name":"0ee93b85-8a45-4768-999b-489805674aa4","path":"sprites/zombieSoldierGirlDESIGN_spr/zombieSoldierGirlDESIGN_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"a0e7804c-7807-450d-a1de-79b869554b9e","path":"sprites/zombieSoldierGirlDESIGN_spr/zombieSoldierGirlDESIGN_spr.yy",},"LayerId":{"name":"2097c93d-fe40-4f9b-97de-2d3b2da0bc77","path":"sprites/zombieSoldierGirlDESIGN_spr/zombieSoldierGirlDESIGN_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"zombieSoldierGirlDESIGN_spr","path":"sprites/zombieSoldierGirlDESIGN_spr/zombieSoldierGirlDESIGN_spr.yy",},"resourceVersion":"1.0","name":"a0e7804c-7807-450d-a1de-79b869554b9e","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
@@ -55,7 +57,7 @@
     "backdropHeight": 1080,
     "backdropXOffset": 0.0,
     "backdropYOffset": 0.0,
-    "xorigin": 88,
+    "xorigin": 107,
     "yorigin": 50,
     "eventToFunction": {},
     "eventStubScript": null,
@@ -66,7 +68,9 @@
     "resourceType": "GMSequence",
   },
   "layers": [
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"Teeth","resourceVersion":"1.0","name":"2097c93d-fe40-4f9b-97de-2d3b2da0bc77","tags":[],"resourceType":"GMImageLayer",},
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"bfe587d5-7259-4ad5-92a5-0042dbb81914","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"Wings","resourceVersion":"1.0","name":"0ee93b85-8a45-4768-999b-489805674aa4","tags":[],"resourceType":"GMImageLayer",},
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"Flower","resourceVersion":"1.0","name":"25c4a45b-65d6-42e7-b376-753ae72341c9","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,

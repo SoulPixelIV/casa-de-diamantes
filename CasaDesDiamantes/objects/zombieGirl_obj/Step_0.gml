@@ -194,10 +194,6 @@ else
 if (hp < 0)
 {
 	var deathCross = instance_create_layer(x, y - 8, "ForegroundObjects", deathCross_obj);
-	with (headshotHitbox)
-	{
-		instance_destroy();
-	}
 	
 	//Enemy Slowmo
 	var randNum = choose(1,2,3,4,5,6,7,8,9);
@@ -280,20 +276,6 @@ if (hp < 0)
 	
 	damageTint = false;
 	damageTintHeadshot = false;
-	if (headshot)
-	{
-		instance_create_layer(x, y, "Instances", zombiegirlHead_obj);
-		var rand = choose(0,4);
-		repeat (rand)
-		{
-			instance_create_layer(x, y, "Instances", zombiegirlPiece_obj);
-		}
-		instance_change(zombieGirlDeath1_obj, true);
-	}
-	else
-	{
-		instance_change(zombieGirlDeath2_obj, true);
-	}
 }
 
 //Remove Arm
@@ -303,19 +285,6 @@ if (lostArm && !spawnedArm && !attackInProg)
 	//sprite_index = zombieGirlNoArm_spr;
 	instance_create_layer(x, y, "Instances", zombiegirlArm_obj);
 	spawnedArm = true;
-}
-
-//Headshot Hitbox
-if (instance_exists(headshotHitbox))
-{
-	with (headshotHitbox)
-	{
-		if (instance_exists(body))
-		{
-			x = body.x;
-			y = body.y - 16;
-		}
-	}
 }
 
 //###Attack###
