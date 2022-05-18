@@ -15,7 +15,7 @@ damageCollision = false;
 points = 215;
 knockback = 0;
 movSpeed = 0.14;
-turnDelay = 40;
+turnDelay = 7;
 turn = false;
 playedSound = false;
 movement = true;
@@ -60,6 +60,7 @@ lineFlashTimerSave = lineFlashTimer;
 turnDelaySave = turnDelay;
 gravityStrengthSave = gravityStrength;
 
+image_yscale = -1;
 blend = image_blend;
 
 //Create Emitter

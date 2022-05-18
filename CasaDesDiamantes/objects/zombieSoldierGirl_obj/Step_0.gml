@@ -24,6 +24,13 @@ if (attackCooldown > 120 && attackInProg1)
 	playerPosY = player_obj.y;
 }
 
+//Rotate towards player
+if (instance_exists(player_obj)) {
+	if (distance_to_object(player_obj) < aggroRange) {
+		image_angle = point_direction(x, y, player_obj.x, player_obj.y);
+	}
+}
+
 //Sight Check
 if (instance_exists(player_obj)) {
 	if (!collision_line(x, y, player_obj.x, player_obj.y, collider_obj, false, true) && !collision_line(x, y, player_obj.x, player_obj.y, enemyVisionBlockZone_obj, false, true))
@@ -32,7 +39,7 @@ if (instance_exists(player_obj)) {
 		{
 			if (distance_to_point(player_obj.x, player_obj.y) < aggroRange)
 			{
-				if ((image_xscale == 1 && player_obj.x >= x) || (image_xscale == -1 && player_obj.x <= x))
+				if ((((image_angle > 0 && image_angle < 90) || (image_angle > 270 && image_angle < 359)) && player_obj.x >= x) || ((image_angle > 90 && image_angle < 270) && player_obj.x <= x))
 				{
 					deaggroTimer = deaggroTimerSave;
 					aggroTimer -= global.dt;
@@ -102,21 +109,21 @@ if (movement)
 		{
 			turnDir = 1;
 		}
-		if (turnDir == -1 && image_xscale == 1)
+		if (turnDir == -1 && image_yscale == 1)
 		{
 			turnDelay -= global.dt;
 			if (turnDelay < 0)
 			{
-				image_xscale = -1;
+				image_yscale = -1;
 				turnDelay = turnDelaySave;
 			}
 		}
-		if (turnDir == 1 && image_xscale == -1)
+		if (turnDir == 1 && image_yscale == -1)
 		{
 			turnDelay -= global.dt;
 			if (turnDelay < 0)
 			{
-				image_xscale = 1;
+				image_yscale = 1;
 				turnDelay = turnDelaySave;
 			}
 		}
@@ -345,8 +352,8 @@ if (aggro)
 	}
 	if (attackCooldown < 0 && attackInProg2)
 	{	
-		var grenate = instance_create_layer(x + 15 * image_xscale, y, "Instances", grenatePlant_obj);
-		grenate.horspeed = random_range(2, 4) * image_xscale;
+		var grenate = instance_create_layer(x + 15 * image_angle, y, "Instances", grenatePlant_obj);
+		grenate.horspeed = random_range(2, 4) * image_angle;
 		grenate.verspeed = -0.5;
 		attackCooldown = attackCooldownSave / 2;
 		sprite_index = zombieSoldierGirlGrenate_spr;
