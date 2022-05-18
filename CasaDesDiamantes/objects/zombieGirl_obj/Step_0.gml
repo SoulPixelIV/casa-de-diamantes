@@ -276,6 +276,7 @@ if (hp < 0)
 	
 	damageTint = false;
 	damageTintHeadshot = false;
+	instance_change(zombieSoldierGirlDeath1_obj, true);
 }
 
 //Remove Arm
