@@ -332,7 +332,28 @@ if (attackInProg || attackInProg2) {
 
 if (attackInProg)
 {	
-	if (attack1PrepareTimer < 0) {
+	//Attack Flashing
+	if (attack1PrepareTimer < 150 && attack1PrepareTimer > 0) {
+		attackTintTimer -= global.dt;
+		if (attackTintTimer > 0) {
+			attackTint = true;
+			attackTintDelay = attackTintDelaySave;
+		}
+		if (attackTintTimer < 0) {
+			attackTint = false;
+			attackTintDelay -= global.dt;
+		}
+		
+		if (attackTintDelay < 0) {
+			attackTintTimer = attackTintTimerSave;
+		}
+	}
+	
+	if (attack1PrepareTimer < 0) {		
+		attackTint = false;
+		attackTintTimer = attackTintTimerSave;
+		attackTintDelay = -1;
+	
 		attack1StopTimer -= global.dt;
 		snapHitboxDelay -= global.dt;
 		
@@ -397,7 +418,28 @@ if (attackInProg && sprite_index == zombieGirlAttack1Stop_spr && image_index = i
 //START ATTACK 2
 if (attackInProg2)
 {	
-	if (attack2PrepareTimer < 0) {
+	//Attack Flashing
+	if (attack2PrepareTimer < 150 && attack2PrepareTimer > 0) {
+		attackTintTimer -= global.dt;
+		if (attackTintTimer > 0) {
+			attackTint = true;
+			attackTintDelay = attackTintDelaySave;
+		}
+		if (attackTintTimer < 0) {
+			attackTint = false;
+			attackTintDelay -= global.dt;
+		}
+		
+		if (attackTintDelay < 0) {
+			attackTintTimer = attackTintTimerSave;
+		}
+	}
+	
+	if (attack2PrepareTimer < 0) {			
+		attackTint = false;
+		attackTintTimer = attackTintTimerSave;
+		attackTintDelay = -1;
+	
 		attack2StopTimer -= global.dt;
 		snapHitbox2Delay -= global.dt;
 		
@@ -443,6 +485,10 @@ if (attackInProg2 && sprite_index == zombieGirlAttack2Stop_spr && image_index = 
 	damageCollision = false;
 	movement = true;
 	spawnedHitbox = false;
+	
+	attackTint = false;
+	attackTintTimer = attackTintTimerSave;
+	attackTintDelay = -1;
 }
 	
 if (delay)

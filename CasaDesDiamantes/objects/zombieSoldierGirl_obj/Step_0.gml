@@ -306,7 +306,7 @@ if (hp < 0)
 
 //Attack
 if (aggro)
-{
+{	
 	if (instance_exists(player_obj))
 	{
 		if (player_obj.movement)
@@ -335,6 +335,23 @@ if (aggro)
 	if (attackCooldown < 300 && attackInProg1)
 	{
 		sprite_index = zombieSoldierGirlAim_spr;
+		
+		//Attack Flash
+		if (attackCooldown < 150) {
+			attackTintTimer -= global.dt;
+			if (attackTintTimer > 0) {
+				attackTint = true;
+				attackTintDelay = attackTintDelaySave;
+			}
+			if (attackTintTimer < 0) {
+				attackTint = false;
+				attackTintDelay -= global.dt;
+			}
+		
+			if (attackTintDelay < 0) {
+				attackTintTimer = attackTintTimerSave;
+			}
+		}
 	}
 	if (attackCooldown < 0 && attackInProg1)
 	{
@@ -349,6 +366,10 @@ if (aggro)
 		attackInProg1 = false;
 		attackInProg2 = false;
 		randAttack = choose(1,2);
+		
+		attackTint = false;
+		attackTintTimer = attackTintTimerSave;
+		attackTintDelay = -1;
 	}
 	if (attackCooldown < 0 && attackInProg2)
 	{	
