@@ -25,8 +25,8 @@
   "gridY": 0,
   "frames": [
     {"compositeImage":{"FrameId":{"name":"0a01dd3c-8790-4879-8b00-7507bd0b0512","path":"sprites/zombieBucketGirlDESIGN_spr/zombieBucketGirlDESIGN_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"0a01dd3c-8790-4879-8b00-7507bd0b0512","path":"sprites/zombieBucketGirlDESIGN_spr/zombieBucketGirlDESIGN_spr.yy",},"LayerId":{"name":"49b03071-0b2f-4735-b4ff-48b1015af691","path":"sprites/zombieBucketGirlDESIGN_spr/zombieBucketGirlDESIGN_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
         {"FrameId":{"name":"0a01dd3c-8790-4879-8b00-7507bd0b0512","path":"sprites/zombieBucketGirlDESIGN_spr/zombieBucketGirlDESIGN_spr.yy",},"LayerId":{"name":"c2c7b1cf-f69d-41ce-a0e7-062844c6d4ee","path":"sprites/zombieBucketGirlDESIGN_spr/zombieBucketGirlDESIGN_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"0a01dd3c-8790-4879-8b00-7507bd0b0512","path":"sprites/zombieBucketGirlDESIGN_spr/zombieBucketGirlDESIGN_spr.yy",},"LayerId":{"name":"49b03071-0b2f-4735-b4ff-48b1015af691","path":"sprites/zombieBucketGirlDESIGN_spr/zombieBucketGirlDESIGN_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"zombieBucketGirlDESIGN_spr","path":"sprites/zombieBucketGirlDESIGN_spr/zombieBucketGirlDESIGN_spr.yy",},"resourceVersion":"1.0","name":"0a01dd3c-8790-4879-8b00-7507bd0b0512","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
