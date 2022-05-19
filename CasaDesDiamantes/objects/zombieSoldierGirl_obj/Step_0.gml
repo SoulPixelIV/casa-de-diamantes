@@ -9,7 +9,11 @@ if (!gotSpawned)
 	spawn.hp = hp;
 	spawn.aggroRange = aggroRange;
 	spawn.spawnID = zombieSoldierGirl_obj;
-	spawn.dir = image_xscale;
+	if (spawn.dir == 1) {
+		image_angle = 0;
+	} else {
+		image_angle = 180;
+	}
 	gotSpawned = true;
 }
 

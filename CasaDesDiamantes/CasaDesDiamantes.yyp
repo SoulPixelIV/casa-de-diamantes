@@ -1149,6 +1149,7 @@
     {"id":{"name":"playerDualBarettasStance_spr","path":"sprites/playerDualBarettasStance_spr/playerDualBarettasStance_spr.yy",},"order":38,},
     {"id":{"name":"healthbarDamage_spr","path":"sprites/healthbarDamage_spr/healthbarDamage_spr.yy",},"order":52,},
     {"id":{"name":"grenate_obj","path":"objects/grenate_obj/grenate_obj.yy",},"order":18,},
+    {"id":{"name":"zombieBucketGirlDESIGN_spr","path":"sprites/zombieBucketGirlDESIGN_spr/zombieBucketGirlDESIGN_spr.yy",},"order":8,},
     {"id":{"name":"flyingGrenate_obj","path":"objects/flyingGrenate_obj/flyingGrenate_obj.yy",},"order":19,},
     {"id":{"name":"deathCross_obj","path":"objects/deathCross_obj/deathCross_obj.yy",},"order":20,},
     {"id":{"name":"railwayFalling_obj","path":"objects/railwayFalling_obj/railwayFalling_obj.yy",},"order":21,},

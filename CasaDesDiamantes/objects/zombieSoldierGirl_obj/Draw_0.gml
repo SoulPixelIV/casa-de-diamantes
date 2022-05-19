@@ -12,7 +12,7 @@ if (attackTint && !damageTint) {
 	shader_set_uniform_f(shdAlpha, 1);
 }
 
-draw_sprite_ext(sprite_index,image_index,x,y,image_xscale,image_yscale,image_angle, blend, image_alpha);
+draw_self();
 
 //Change line color
 lineFlashTimer -= global.dt;
@@ -91,10 +91,7 @@ if (player_obj != noone)
 }
 
 if (damageTint) {
-	blend = c_red;
 	damageTintTimer -= global.dt;
-} else {
-	blend = image_blend;
 }
 
 shader_reset();
