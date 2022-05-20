@@ -649,6 +649,7 @@
     {"id":{"name":"goldenElevatorDirtyForeground_spr","path":"sprites/goldenElevatorDirtyForeground_spr/goldenElevatorDirtyForeground_spr.yy",},"order":84,},
     {"id":{"name":"battleArenaWoundedpoint_obj","path":"objects/battleArenaWoundedpoint_obj/battleArenaWoundedpoint_obj.yy",},"order":75,},
     {"id":{"name":"darkcaveBackground2_obj","path":"objects/darkcaveBackground2_obj/darkcaveBackground2_obj.yy",},"order":1,},
+    {"id":{"name":"rose_spr","path":"sprites/rose_spr/rose_spr.yy",},"order":49,},
     {"id":{"name":"casinoCandleLight_obj","path":"objects/casinoCandleLight_obj/casinoCandleLight_obj.yy",},"order":32,},
     {"id":{"name":"get_next_pot","path":"scripts/get_next_pot/get_next_pot.yy",},"order":1,},
     {"id":{"name":"chipRedSideStack_spr","path":"sprites/chipRedSideStack_spr/chipRedSideStack_spr.yy",},"order":80,},
