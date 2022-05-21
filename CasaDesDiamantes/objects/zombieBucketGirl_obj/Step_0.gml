@@ -15,6 +15,12 @@ if (!gotSpawned)
 
 dirLookat = point_direction(x, y, player_obj.x, player_obj.y);
 
+//Walking Animation
+if (horspeed != 0 && !attackInProg1 && !attackInProg2) {
+	animationSpeed = 0.75;
+	sprite_index = zombieBucketGirlWalking_spr;
+}
+
 //Sight Check
 if (instance_exists(player_obj)) {
 	if (!collision_line(x, y, player_obj.x, player_obj.y, collider_obj, false, true) && !collision_line(x, y, player_obj.x, player_obj.y, enemyVisionBlockZone_obj, false, true))
