@@ -14,6 +14,8 @@ moneyDropMax = 2;
 damage = 16;
 aggro = false;
 damageCollision = false;
+damageTint = false;
+damageTintTimer = 15;
 dir = 0;
 checkedWaypoint = true;
 usedLever = false;
@@ -47,6 +49,7 @@ attackCooldownSave = attackCooldown;
 attackDelay1Save = attackDelay1;
 attackDelay2Save = attackDelay2;
 
+damageTintTimerSave = damageTintTimer;
 aggroTimerSave = aggroTimer;
 deaggroTimerSave = deaggroTimer;
 exclamationmarkTimerSave = exclamationmarkTimer;

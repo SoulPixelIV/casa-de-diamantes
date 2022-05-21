@@ -14,7 +14,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 450,
+  "width": 550,
   "height": 90,
   "textureGroupId": {
     "name": "Default",
@@ -27,6 +27,7 @@
     {"compositeImage":{"FrameId":{"name":"0a01dd3c-8790-4879-8b00-7507bd0b0512","path":"sprites/zombieBucketGirlDESIGN_spr/zombieBucketGirlDESIGN_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"0a01dd3c-8790-4879-8b00-7507bd0b0512","path":"sprites/zombieBucketGirlDESIGN_spr/zombieBucketGirlDESIGN_spr.yy",},"LayerId":{"name":"c2c7b1cf-f69d-41ce-a0e7-062844c6d4ee","path":"sprites/zombieBucketGirlDESIGN_spr/zombieBucketGirlDESIGN_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
         {"FrameId":{"name":"0a01dd3c-8790-4879-8b00-7507bd0b0512","path":"sprites/zombieBucketGirlDESIGN_spr/zombieBucketGirlDESIGN_spr.yy",},"LayerId":{"name":"49b03071-0b2f-4735-b4ff-48b1015af691","path":"sprites/zombieBucketGirlDESIGN_spr/zombieBucketGirlDESIGN_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"0a01dd3c-8790-4879-8b00-7507bd0b0512","path":"sprites/zombieBucketGirlDESIGN_spr/zombieBucketGirlDESIGN_spr.yy",},"LayerId":{"name":"15a4a9f9-a1f0-4ba5-a3f4-63c04a45d3b5","path":"sprites/zombieBucketGirlDESIGN_spr/zombieBucketGirlDESIGN_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"zombieBucketGirlDESIGN_spr","path":"sprites/zombieBucketGirlDESIGN_spr/zombieBucketGirlDESIGN_spr.yy",},"resourceVersion":"1.0","name":"0a01dd3c-8790-4879-8b00-7507bd0b0512","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
@@ -55,7 +56,7 @@
     "backdropHeight": 1080,
     "backdropXOffset": 0.0,
     "backdropYOffset": 0.0,
-    "xorigin": 153,
+    "xorigin": 187,
     "yorigin": 45,
     "eventToFunction": {},
     "eventStubScript": null,
@@ -68,6 +69,7 @@
   "layers": [
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"Flower","resourceVersion":"1.0","name":"c2c7b1cf-f69d-41ce-a0e7-062844c6d4ee","tags":[],"resourceType":"GMImageLayer",},
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"49b03071-0b2f-4735-b4ff-48b1015af691","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"FlowerBG","resourceVersion":"1.0","name":"15a4a9f9-a1f0-4ba5-a3f4-63c04a45d3b5","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
