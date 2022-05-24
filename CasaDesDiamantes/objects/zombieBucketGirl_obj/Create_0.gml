@@ -22,6 +22,7 @@ delay = false;
 damageCollision = false;
 attackInProg1 = false;
 attackInProg2 = false;
+hitboxFlowerAttack = noone;
 points = 430;
 movSpeed = 0.41;
 playedSound = false;
@@ -30,20 +31,46 @@ movement = true;
 savePosX = x;
 savePosY = y;
 damageTint = false;
+attackTint = false;
 damageTintTimer = 15;
+attackTintTimer = 15;
+attackTintDelay = 10;
 headshot = false;
 aggro = false;
 aggroTimer = 130;
 deaggroTimer = 3000;
 exclamationmarkTimer = 250;
 
+attack1PrepareTimer = 300; //Timer before snap attack begins
+attack1StopTimer = 200; //Timer after snap attack begins
+snapAttack = false; //Snap Attack is happening
+
+attack2PrepareTimer = 250; //Timer before snap attack begins
+attack2StopTimer = 150; //Timer after snap attack begins
+snapAttack2 = false; //Snap Attack is happening
+
+snapHitboxDelay = 45; //Delay until damage hitbox spawns
+snapHitbox2Delay = 45; //Delay until damage hitbox spawns
+
 //Help Vars
 aggroTimerSave = aggroTimer;
 deaggroTimerSave = deaggroTimer;
 exclamationmarkTimerSave = exclamationmarkTimer;
 attackCooldownSave = attackCooldown;
+attackDelaySave = attackDelay;
 damageTintTimerSave = damageTintTimer;
+attackTintTimerSave = attackTintTimer;
+attackTintDelaySave = attackTintDelay;
+attackTintDelay = -1;
 gravityStrengthSave = gravityStrength;
+
+attack1PrepareTimerSave = attack1PrepareTimer;
+attack1StopTimerSave = attack1StopTimer;
+snapHitboxDelaySave = snapHitboxDelay;
+
+attack2PrepareTimerSave = attack2PrepareTimer;
+attack2StopTimerSave = attack2StopTimer;
+snapHitbox2DelaySave = snapHitbox2Delay;
 
 blend = image_blend;
 

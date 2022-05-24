@@ -114,10 +114,7 @@ if (movement)
 }
 else
 {
-	if (!attackInProg1)
-	{
-		horspeed = 0;
-	}
+	horspeed = 0;
 }
 
 //Gravity
@@ -308,58 +305,116 @@ if (aggro)
 	attackCooldown -= global.dt;
 }
 
-//Cooldown
-if (!attackInProg1 && !attackInProg2 && distance_to_object(player_obj) < aggroRange && bucketRemoved && aggro)
-{
-	movement = true;
-	sprite_index = zombieBucketGirlBroken_spr;
-}
-
 //Prepare Attack
 if (attackCooldown < 0 && distance_to_object(player_obj) < aggroRange)
 {
 	if (randAttack == 1)
 	{
-		if (bucketRemoved)
-		{
-			sprite_index = zombieBucketGirlAttack1Broken_spr;
-		}
-		else
-		{
-			sprite_index = zombieBucketGirlAttack1_spr;
-		}
+		sprite_index = zombieBucketGirlAttack1_spr;
 		movement = false;
 		attackInProg1 = true;
 	}
 	if (randAttack == 2)
 	{
-		if (bucketRemoved)
-		{
-			sprite_index = zombieBucketGirlAttack2Broken_spr;
-		}
-		else
-		{
-			sprite_index = zombieBucketGirlAttack2_spr;
-		}
+		sprite_index = zombieBucketGirlAttack1_spr;
 		movement = false;
-		attackInProg2 = true;
+		attackInProg1 = true;
 	}
 	attackCooldown = attackCooldownSave;
 }
 
-//Start Attack 1
-if (attackInProg1 && image_index > image_number - 1)
-{
-	image_index = 0;
-	instance_create_layer(x + 10 * image_xscale, y - 10 * image_xscale, "ForegroundObjects", dustParticle_obj);
-	repeat(6)
-	{
-		var grenate = instance_create_layer(x + 10 * image_xscale, y, "Instances", flyingGrenate_obj);
-		grenate.horspeed = random_range(1.4, 2.6) * image_xscale;
-		grenate.verspeed = random_range(-0.2, -0.8);
+if (attackInProg1 || attackInProg2) {
+	//Stop every animation at last frame during attack
+	if (image_index > image_number - 1) {
+		image_index = image_number - 1;
 	}
+	
+	animationSpeed = 0.5;
+	if (attackInProg1) {
+		attack1PrepareTimer -= global.dt;
+	}
+	if (attackInProg2) {
+		attack2PrepareTimer -= global.dt;
+	}
+}
+
+//Start Attack 1
+if (attackInProg1)
+{
+	//Attack Flashing
+	if (attack1PrepareTimer < 150 && attack1PrepareTimer > 0) {
+		attackTintTimer -= global.dt;
+		if (attackTintTimer > 0) {
+			attackTint = true;
+			attackTintDelay = attackTintDelaySave;
+		}
+		if (attackTintTimer < 0) {
+			attackTint = false;
+			attackTintDelay -= global.dt;
+		}
+		
+		if (attackTintDelay < 0) {
+			attackTintTimer = attackTintTimerSave;
+		}
+	}
+	
+	if (attack1PrepareTimer < 0) {		
+		attackTint = false;
+		attackTintTimer = attackTintTimerSave;
+		attackTintDelay = -1;
+	
+		attack1StopTimer -= global.dt;
+		snapHitboxDelay -= global.dt;
+		
+		//Only Spawn hitbox once
+		if (!snapAttack) {
+			image_index = 0;
+			sprite_index = zombieBucketGirlAttack1Start_spr;
+	
+			if (snapHitboxDelay < 0) {
+				hitboxFlowerAttack = instance_create_layer(x + (48 * image_xscale), y, "Instances", damageHitbox_obj);
+				hitboxFlowerAttack.image_yscale = 1.5;
+				hitboxFlowerAttack.image_xscale = 3.5;
+				hitboxFlowerAttack.damage = damage;
+				hitboxFlowerAttack.timer = 100;
+
+				snapAttack = true;
+			}
+		}
+	}
+}
+
+if (instance_exists(hitboxFlowerAttack))
+{
+	if (attackInProg1) {
+		hitboxFlowerAttack.follow = true;
+		hitboxFlowerAttack.followX = x + (48 * image_xscale);
+		hitboxFlowerAttack.followY = y;
+	}
+	if (attackInProg2) {
+		hitboxFlowerAttack.follow = true;
+		hitboxFlowerAttack.followX = x;
+		hitboxFlowerAttack.followY = y - 48;
+	}
+}
+
+if (attackInProg1 && snapAttack && attack1StopTimer < 0) {
+	sprite_index = zombieBucketGirlAttack1Stop_spr;
+}
+
+//END Attack 1
+if (attackInProg1 && sprite_index == zombieBucketGirlAttack1Stop_spr && image_index = image_number -1) {
+	attackDelay = attackDelaySave;
+	attack1PrepareTimer = attack1PrepareTimerSave;
+	attack1StopTimer = attack1StopTimerSave;
+	snapHitboxDelay = snapHitboxDelaySave;
+	snapAttack = false;
 	attackInProg1 = false;
-	randAttack = choose(1,2);
+	animationSpeed = 0.75;
+	sprite_index = zombieBucketGirl_spr;
+	damageCollision = false;
+	movement = true;
+	spawnedHitbox = false;
 }
 
 //Start Attack 2
@@ -369,7 +424,7 @@ if (attackInProg2 && image_index > image_number - 1)
 	instance_create_layer(x, y, "ForegroundObjects", forcefield_obj);
 	attackInProg2 = false;
 	randAttack = choose(1,2);
-	movement = true;
+	//movement = true;
 	if (bucketRemoved)
 	{
 		sprite_index = zombieBucketGirlBroken_spr;
