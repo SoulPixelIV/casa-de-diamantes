@@ -300,13 +300,15 @@ if (hpBucket < 0 && !playedSound)
 
 //###Attack###
 
-if (aggro)
+if (aggro && !attackInProg1 && !attackInProg2)
 {
-	attackCooldown -= global.dt;
+	if (distance_to_object(player_obj) < 128) {
+		attackCooldown -= global.dt;
+	}
 }
 
 //Prepare Attack
-if (attackCooldown < 0 && distance_to_object(player_obj) < aggroRange)
+if (attackCooldown < 0)
 {
 	if (randAttack == 1)
 	{
@@ -329,7 +331,7 @@ if (attackInProg1 || attackInProg2) {
 		image_index = image_number - 1;
 	}
 	
-	animationSpeed = 0.5;
+	animationSpeed = 0.75;
 	if (attackInProg1) {
 		attack1PrepareTimer -= global.dt;
 	}
@@ -368,13 +370,12 @@ if (attackInProg1)
 		
 		//Only Spawn hitbox once
 		if (!snapAttack) {
-			image_index = 0;
 			sprite_index = zombieBucketGirlAttack1Start_spr;
 	
 			if (snapHitboxDelay < 0) {
 				hitboxFlowerAttack = instance_create_layer(x + (48 * image_xscale), y, "Instances", damageHitbox_obj);
-				hitboxFlowerAttack.image_yscale = 1.5;
-				hitboxFlowerAttack.image_xscale = 3.5;
+				hitboxFlowerAttack.image_yscale = 3;
+				hitboxFlowerAttack.image_xscale = 4;
 				hitboxFlowerAttack.damage = damage;
 				hitboxFlowerAttack.timer = 100;
 
@@ -433,6 +434,27 @@ if (attackInProg2 && image_index > image_number - 1)
 	{
 		sprite_index = zombieBucketGirl_spr;
 	}
+}
+
+if (delay)
+{
+	attackDelay -= global.dt;
+}
+if (attackDelay < 0)
+{
+	delay = false;
+	attackDelay = attackDelaySave;
+	dashed = false;
+	attackInProg = false;
+	attackInProg2 = false;
+	startDrill = false;
+	animationSpeed = 0.75;
+	if (!attackInProg1) {
+		sprite_index = zombieBucketGirl_spr;
+	}
+	damageCollision = false;
+	movement = true;
+	spawnedHitbox = false;
 }
 
 if (damageTintTimer < 0)
