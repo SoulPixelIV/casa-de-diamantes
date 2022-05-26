@@ -371,19 +371,11 @@ if (attackInProg1)
 		//Only Spawn hitbox once
 		if (!snapAttack) {
 			sprite_index = zombieBucketGirlAttack1Start_spr;
-			
-			//Push forward
-			movement = true;
-			if (image_xscale == 1) {
-				horspeed = 1;
-			} else {
-				horspeed = -1;
-			}
 	
 			if (snapHitboxDelay < 0) {
-				hitboxFlowerAttack = instance_create_layer(x + (48 * image_xscale), y, "Instances", damageHitbox_obj);
+				hitboxFlowerAttack = instance_create_layer(x + (42 * image_xscale), y, "Instances", damageHitbox_obj);
 				hitboxFlowerAttack.image_yscale = 3;
-				hitboxFlowerAttack.image_xscale = 4;
+				hitboxFlowerAttack.image_xscale = 2;
 				hitboxFlowerAttack.damage = damage;
 				hitboxFlowerAttack.timer = 100;
 
@@ -422,7 +414,7 @@ if (attackInProg1 && sprite_index == zombieBucketGirlAttack1Stop_spr && image_in
 	animationSpeed = 0.75;
 	sprite_index = zombieBucketGirl_spr;
 	damageCollision = false;
-	//movement = true;
+	movement = true;
 	spawnedHitbox = false;
 }
 
