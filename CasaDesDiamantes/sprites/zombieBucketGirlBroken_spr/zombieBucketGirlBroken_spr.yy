@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "BucketZombie",
-    "path": "folders/Enemies/Enemy Sprites/BucketZombie.yy",
+    "name": "Legacy Sprites",
+    "path": "folders/Other + Legacy/Legacy Sprites.yy",
   },
   "resourceVersion": "1.0",
   "name": "zombieBucketGirlBroken_spr",

@@ -13,7 +13,7 @@ if (attackTint && !damageTint) {
 }
 
 draw_self();
-
+draw_text(x + 30, y, string(snapAttack));
 //Draw Aggro Mode
 if (aggroTimer < aggroTimerSave && aggroTimer > 0 && !aggro)
 {
