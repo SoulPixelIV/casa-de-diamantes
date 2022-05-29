@@ -302,7 +302,7 @@ if (hpBucket < 0 && !playedSound)
 
 if (aggro && !attackInProg1 && !attackInProg2)
 {
-	if (distance_to_object(player_obj) < 128) {
+	if (distance_to_object(player_obj) < aggroRange) {
 		attackCooldown -= global.dt;
 	}
 }
@@ -310,17 +310,15 @@ if (aggro && !attackInProg1 && !attackInProg2)
 //Prepare Attack
 if (attackCooldown < 0)
 {
-	if (randAttack == 1)
+	if (distance_to_object(player_obj) < 64)
 	{
 		sprite_index = zombieBucketGirlAttack1_spr;
 		movement = false;
 		attackInProg1 = true;
-	}
-	if (randAttack == 2)
-	{
-		sprite_index = zombieBucketGirlAttack1_spr;
+	} else {
+		sprite_index = zombieBucketGirlAttack2_spr;
 		movement = false;
-		attackInProg1 = true;
+		attackInProg2 = true;
 	}
 	attackCooldown = attackCooldownSave;
 }
@@ -370,7 +368,11 @@ if (attackInProg1)
 		
 		//Only Spawn hitbox once
 		if (!snapAttack) {
-			sprite_index = zombieBucketGirlAttack1Start_spr;
+			if (!switchedSprite) {
+				image_index = 0;
+				sprite_index = zombieBucketGirlAttack1Start_spr;
+				switchedSprite = true;
+			}
 	
 			if (snapHitboxDelay < 0) {
 				hitboxFlowerAttack = instance_create_layer(x + (42 * image_xscale), y, "Instances", damageHitbox_obj);
@@ -392,11 +394,6 @@ if (instance_exists(hitboxFlowerAttack))
 		hitboxFlowerAttack.followX = x + (48 * image_xscale);
 		hitboxFlowerAttack.followY = y;
 	}
-	if (attackInProg2) {
-		hitboxFlowerAttack.follow = true;
-		hitboxFlowerAttack.followX = x;
-		hitboxFlowerAttack.followY = y - 48;
-	}
 }
 
 if (attackInProg1 && snapAttack && attack1StopTimer < 0) {
@@ -416,25 +413,58 @@ if (attackInProg1 && sprite_index == zombieBucketGirlAttack1Stop_spr && image_in
 	damageCollision = false;
 	movement = true;
 	spawnedHitbox = false;
+	switchedSprite = false;
 }
 
 //Start Attack 2
-if (attackInProg2 && image_index > image_number - 1)
+if (attackInProg2)
 {
-	image_index = 0;
-	instance_create_layer(x, y, "ForegroundObjects", forcefield_obj);
-	attackInProg2 = false;
-	randAttack = choose(1,2);
-	//movement = true;
-	if (bucketRemoved)
-	{
-		sprite_index = zombieBucketGirlBroken_spr;
+	//Attack Flashing
+	if (attack2PrepareTimer < 150 && attack2PrepareTimer > 0) {
+		attackTintTimer -= global.dt;
+		if (attackTintTimer > 0) {
+			attackTint = true;
+			attackTintDelay = attackTintDelaySave;
+		}
+		if (attackTintTimer < 0) {
+			attackTint = false;
+			attackTintDelay -= global.dt;
+		}
+		
+		if (attackTintDelay < 0) {
+			attackTintTimer = attackTintTimerSave;
+		}
 	}
-	else
-	{
-		sprite_index = zombieBucketGirl_spr;
+	
+	if (attack2PrepareTimer < 0) {		
+		attackTint = false;
+		attackTintTimer = attackTintTimerSave;
+		attackTintDelay = -1;
+	
+		attack2StopTimer -= global.dt;
+		
+		//Only Spawn Flower Object once
+		if (!roseAttack) {
+			flowerline = instance_create_layer(x + 15 * image_xscale, y + 38, "Instances", flowerline_obj);
+			flowerline.dir = image_xscale;
+			roseAttack = true;
+		}
 	}
 }
+
+//END Attack 2
+/*
+if (attackInProg2 && attack2StopTimer < 0) {
+	attackDelay = attackDelaySave;
+	attack2PrepareTimer = attack2PrepareTimerSave;
+	attack2StopTimer = attack2StopTimerSave;
+	roseAttack = false;
+	attackInProg2 = false;
+	animationSpeed = 0.75;
+	sprite_index = zombieBucketGirl_spr;
+	damageCollision = false;
+	movement = true;
+}*/
 
 if (delay)
 {

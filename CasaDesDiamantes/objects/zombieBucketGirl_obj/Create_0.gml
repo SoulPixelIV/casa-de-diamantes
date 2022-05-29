@@ -14,6 +14,8 @@ knockback = 0;
 randAttack = 1;
 gotSpawned = false;
 
+switchedSprite = false;
+
 lastBullet = bulletPistol_obj;
 ammoSpawnCount = 7;
 animationSpeed = 0.5;
@@ -47,10 +49,9 @@ snapAttack = false; //Snap Attack is happening
 
 attack2PrepareTimer = 250; //Timer before snap attack begins
 attack2StopTimer = 150; //Timer after snap attack begins
-snapAttack2 = false; //Snap Attack is happening
+roseAttack = false; //Rose Attack is happening
 
 snapHitboxDelay = 35; //Delay until damage hitbox spawns
-snapHitbox2Delay = 45; //Delay until damage hitbox spawns
 
 //Help Vars
 aggroTimerSave = aggroTimer;
@@ -70,7 +71,6 @@ snapHitboxDelaySave = snapHitboxDelay;
 
 attack2PrepareTimerSave = attack2PrepareTimer;
 attack2StopTimerSave = attack2StopTimer;
-snapHitbox2DelaySave = snapHitbox2Delay;
 
 blend = image_blend;
 
