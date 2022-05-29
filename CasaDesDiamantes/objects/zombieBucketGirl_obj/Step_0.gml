@@ -445,6 +445,12 @@ if (attackInProg2)
 		
 		//Only Spawn Flower Object once
 		if (!roseAttack) {
+			if (!switchedSprite) {
+				image_index = 0;
+				sprite_index = zombieBucketGirlAttack2Start_spr;
+				switchedSprite = true;
+			}
+			
 			flowerline = instance_create_layer(x + 15 * image_xscale, y + 38, "Instances", flowerline_obj);
 			flowerline.dir = image_xscale;
 			roseAttack = true;
