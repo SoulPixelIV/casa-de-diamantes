@@ -458,9 +458,12 @@ if (attackInProg2)
 	}
 }
 
+if (attackInProg2 && roseAttack && attack2StopTimer < 0) {
+	sprite_index = zombieBucketGirlAttack1Stop_spr;
+}
+
 //END Attack 2
-/*
-if (attackInProg2 && attack2StopTimer < 0) {
+if (attackInProg2 && sprite_index == zombieBucketGirlAttack1Stop_spr && image_index = image_number -1) {
 	attackDelay = attackDelaySave;
 	attack2PrepareTimer = attack2PrepareTimerSave;
 	attack2StopTimer = attack2StopTimerSave;
@@ -470,7 +473,7 @@ if (attackInProg2 && attack2StopTimer < 0) {
 	sprite_index = zombieBucketGirl_spr;
 	damageCollision = false;
 	movement = true;
-}*/
+}
 
 if (delay)
 {
