@@ -380,6 +380,14 @@ if (attackInProg1)
 				hitboxFlowerAttack.image_xscale = 2;
 				hitboxFlowerAttack.damage = damage;
 				hitboxFlowerAttack.timer = 100;
+				
+				instance_create_layer(x + 10 * image_xscale, y - 10 * image_xscale, "ForegroundObjects", dustParticle_obj);
+				repeat(6)
+				{
+					var grenate = instance_create_layer(x + 10 * image_xscale, y, "Instances", flyingGrenate_obj);
+					grenate.horspeed = random_range(1.4, 2.6) * image_xscale;
+					grenate.verspeed = random_range(-0.2, -0.8);
+				}
 
 				snapAttack = true;
 			}

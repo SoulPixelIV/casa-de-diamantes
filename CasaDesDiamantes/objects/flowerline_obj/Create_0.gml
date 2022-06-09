@@ -8,4 +8,4 @@ hitboxFlowerAttack = instance_create_layer(x + 42 * dir, y, "Instances", damageH
 hitboxFlowerAttack.image_yscale = 3;
 hitboxFlowerAttack.image_xscale = 2;
 hitboxFlowerAttack.damage = 30;
-hitboxFlowerAttack.timer = 500;
+hitboxFlowerAttack.timer = 300;
