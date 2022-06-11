@@ -33,7 +33,7 @@ dashed = false;
 damageCollision = false;
 spawnedHitbox = false;
 points = 500;
-movSpeed = 0.5;
+movSpeed = 0.3;
 movement = true;
 gravityStrength = -0.05;
 damageTint = false;
@@ -60,6 +60,8 @@ checkPlayerTimer = 0;
 gravityStrength = 0;
 
 blend = image_blend;
+image_xscale = 0.5;
+image_yscale = 0.5;
 
 spawnDelay = 54;
 alarm[0] = spawnDelay;

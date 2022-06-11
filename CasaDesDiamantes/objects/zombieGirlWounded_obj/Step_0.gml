@@ -24,7 +24,7 @@ if (instance_exists(player_obj)) {
 		{
 			if (distance_to_point(player_obj.x, player_obj.y) < aggroRange)
 			{
-				if ((image_xscale == 1 && player_obj.x >= x) || (image_xscale == -1 && player_obj.x <= x))
+				if ((image_xscale > 0 && player_obj.x >= x) || (image_xscale < 0 && player_obj.x <= x))
 				{
 					deaggroTimer = deaggroTimerSave;
 					aggroTimer -= global.dt;
@@ -97,11 +97,11 @@ if (movement)
 			}
 			if (dirLookat > 90 && dirLookat < 270)
 			{
-				image_xscale = -1;
+				image_xscale = -0.5;
 			}
 			else
 			{
-				image_xscale = 1;
+				image_xscale = 0.5;
 			}
 		}
 		else
