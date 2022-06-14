@@ -115,6 +115,15 @@ else
 	horspeed = 0;
 }
 
+//Drop Money while walking
+if (horspeed != 0) {
+	moneyDropTimer -= global.dt;
+	if (moneyDropTimer < 0) {
+		instance_create_layer(x, y - 16, "Instances", chipBluePickup_obj);
+		moneyDropTimer = moneyDropTimerSave;
+	}
+}
+
 //Gravity
 if (verspeed < 2)
 {
@@ -230,15 +239,17 @@ if (hp < 0)
 	}
 
 	//Drop Money
-	var maxAmount = random_range(moneyDropMin, moneyDropMax);
-	for (i = 0; i < maxAmount; i++)
+	repeat(50)
 	{
-		chip = 1;
-		
-		if (chip == 1)
-		{
-			instance_create_layer(x, y - 16, "Instances", chipBluePickup_obj);
-		}
+		instance_create_layer(x, y - 16, "Instances", chipBluePickup_obj);
+	}
+	repeat(50)
+	{
+		instance_create_layer(x, y - 16, "Instances", chipRedPickup_obj);
+	}
+	repeat(15)
+	{
+		instance_create_layer(x, y - 16, "Instances", chipVioletPickup_obj);
 	}
 	
 	//Set Points
