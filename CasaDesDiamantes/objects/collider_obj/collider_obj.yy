@@ -8,8 +8,8 @@
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "obj_shadow_caster",
-    "path": "objects/obj_shadow_caster/obj_shadow_caster.yy",
+    "name": "colliderGlobal_obj",
+    "path": "objects/colliderGlobal_obj/colliderGlobal_obj.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,

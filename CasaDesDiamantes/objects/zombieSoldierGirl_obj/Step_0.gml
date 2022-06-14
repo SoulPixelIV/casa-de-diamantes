@@ -37,7 +37,7 @@ if (instance_exists(player_obj)) {
 
 //Sight Check
 if (instance_exists(player_obj)) {
-	if (!collision_line(x, y, player_obj.x, player_obj.y, collider_obj, false, true) && !collision_line(x, y, player_obj.x, player_obj.y, enemyVisionBlockZone_obj, false, true))
+	if (!collision_line(x, y, player_obj.x, player_obj.y, colliderOneWay_obj, false, true) && !collision_line(x, y, player_obj.x, player_obj.y, enemyVisionBlockZone_obj, false, true))
 	{
 		if (collision_line(x, y, player_obj.x, player_obj.y, player_obj, false, true))
 		{
@@ -75,7 +75,7 @@ if (movement)
 {
 	if (aggro) {
 		//Check for walls
-		if (collision_circle(x, y, 8, collider_obj, false, true)) {
+		if (collision_circle(x, y, 8, colliderOneWay_obj, false, true)) {
 			verspeed = -movSpeed;
 		}
 		//Fly down to player
@@ -86,25 +86,17 @@ if (movement)
 		}
 	}
 	
-	if (aggro && (x > player_obj.x + 64 || x < player_obj.x - 64))
+	if (aggro && (x > player_obj.x + DistFromPlayer || x < player_obj.x - DistFromPlayer))
 	{
-		if (!collision_circle(x, y, 16, enemy_obj, false, true))
+		if (player_obj.x > x)
 		{
-			if (player_obj.x > x)
-			{
-				horspeed = movSpeed * 3;
-			}
-			else
-			{
-				horspeed = -movSpeed * 3;
-			}
+			horspeed = movSpeed * 3;
 		}
 		else
 		{
-			nextEnemy = instance_nearest(x, y, enemy_obj);
-			horspeed = choose(movSpeed, -movSpeed);
-			verspeed = choose(movSpeed, -movSpeed);
+			horspeed = -movSpeed * 3;
 		}
+		
 		if (dirLookat > 90 && dirLookat < 270)
 		{
 			turnDir = -1;
@@ -138,7 +130,7 @@ if (movement)
 	}
 }
 
-//Jetpack
+//Slow Floating Movement
 if (dir == 0)
 {
 	if (verspeed > -0.2)
@@ -168,7 +160,7 @@ image_index += (global.dt / 15) * animationSpeed;
 
 //Collision
 //horspeed
-if (!place_free(x + (horspeed * global.dt), y))
+if (place_meeting(x + (horspeed * global.dt), y, collider_obj))
 {
 	if (sign(horspeed) != 0)
 	{
@@ -180,7 +172,7 @@ if (!place_free(x + (horspeed * global.dt), y))
 	}
 } 
 //verspeed
-if (!place_free(x, y + (verspeed * global.dt)))
+if (place_meeting(x, y + (verspeed * global.dt), collider_obj))
 {
 	if (sign(verspeed) != 0)
 	{
@@ -203,19 +195,6 @@ if (place_meeting(x + horspeed * global.dt, y, player_obj))
 	{
 		horspeed = movSpeed;
 	}
-}
-
-//###OutsideSolid###
-if (place_free(x, y))
-{
-    savePosX = x;
-    savePosY = y;
-}
-else
-{
-    x = savePosX;
-    y = savePosY;
-    verSpeed = 0;
 }
 
 //Death

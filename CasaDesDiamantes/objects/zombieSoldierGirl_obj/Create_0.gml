@@ -4,6 +4,7 @@ lastBullet = bulletPistol_obj;
 ammoSpawnCount = 4;
 horspeed = 0;
 verspeed = 0;
+DistFromPlayer = 200;
 colliding = true;
 hitable = true;
 level = 1;

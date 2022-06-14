@@ -13,6 +13,7 @@
     {"id":{"name":"explosionBigDelay_obj","path":"objects/explosionBigDelay_obj/explosionBigDelay_obj.yy",},"order":13,},
     {"id":{"name":"buildingTiles_spr","path":"sprites/buildingTiles_spr/buildingTiles_spr.yy",},"order":3,},
     {"id":{"name":"playerAimStance_spr","path":"sprites/playerAimStance_spr/playerAimStance_spr.yy",},"order":40,},
+    {"id":{"name":"colliderGlobal_obj","path":"objects/colliderGlobal_obj/colliderGlobal_obj.yy",},"order":17,},
     {"id":{"name":"buildingBackgroundTiles_spr","path":"sprites/buildingBackgroundTiles_spr/buildingBackgroundTiles_spr.yy",},"order":4,},
     {"id":{"name":"caveBackgroundTiles_spr","path":"sprites/caveBackgroundTiles_spr/caveBackgroundTiles_spr.yy",},"order":5,},
     {"id":{"name":"enemySpawnerFlying_obj","path":"objects/enemySpawnerFlying_obj/enemySpawnerFlying_obj.yy",},"order":84,},
