@@ -52,7 +52,7 @@ currDeltatime = global.dt;
 newWeapon = false;
 newWeaponTimer = 200;
 
-cameraSpeed = 0.1;
+cameraSpeed = 0.02;
 ycameraSpeed = 0.02;
 originalCameraSpeed = cameraSpeed;
 originalyCameraSpeed = ycameraSpeed;

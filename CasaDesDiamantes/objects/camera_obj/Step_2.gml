@@ -86,6 +86,8 @@ if (shake)
 //Floating Camera
 if (follow == player_obj && !cameraTarget && !cameraTargetMovement)
 {
+	snapCameraX = false;
+	snapCameraY = false;
 	if (instance_exists(player_obj)) {
 		if (player_obj.x - xScreenSize / 2 > minCameraXBorder && player_obj.x + xScreenSize / 2 < maxCameraXBorder)
 		{
@@ -112,10 +114,12 @@ if (follow == goldenElevatorDirtyForeground_obj)
 if (!cameraTarget && !cameraTargetMovement)
 {
 	//HORIZONTAL
+	/*
 	if (x < xTo + 4 && x > xTo - 4 && !shake)
 	{
 		snapCameraX = true;
 	}
+	*/
 }
 
 if (snapCameraX)
@@ -130,10 +134,12 @@ else
 if (!cameraTarget && !cameraTargetMovement)
 {
 	//VERTICAL
+	/*
 	if (y < (yTo - cameraYBorder) + 1 && y > (yTo - cameraYBorder) - 1 && !shake)
 	{
 		snapCameraY = true;
 	}
+	*/
 }
 
 if (snapCameraY)
@@ -156,6 +162,7 @@ var pm = matrix_build_projection_ortho(global.xScreenSize, global.yScreenSize,1,
 camera_set_proj_mat(camera,pm);
 
 //Aim Zoom
+/*
 if (keyboard_check_pressed(vk_control))
 {
 	snapCameraX = false;
@@ -169,6 +176,7 @@ if (keyboard_check_released(vk_control))
 	follow = player_obj;
 	yTo = follow.y - cameraYBorder;
 }
+*/
 
 //Change Camera Size
 if (xScreenSizeNew > xScreenSize)
