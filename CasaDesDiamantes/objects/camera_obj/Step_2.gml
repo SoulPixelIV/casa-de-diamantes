@@ -84,16 +84,16 @@ if (shake)
 }
 
 //Floating Camera
-if (follow == camera_obj && !cameraTarget && !cameraTargetMovement)
+if (follow == player_obj && !cameraTarget && !cameraTargetMovement)
 {
 	if (instance_exists(player_obj)) {
 		if (player_obj.x - xScreenSize / 2 > minCameraXBorder && player_obj.x + xScreenSize / 2 < maxCameraXBorder)
 		{
-			xTo = player_obj.x + (mouse_x - player_obj.x) / 2;
+			xTo = player_obj.x + (mouse_x - player_obj.x) / 4;
 		}
 		if (player_obj.y - yScreenSize / 2 > minCameraYBorder && player_obj.y + yScreenSize / 2 < maxCameraYBorder)
 		{
-			yTo = (player_obj.y + cameraYBorder) + (mouse_y - (player_obj.y + cameraYBorder)) / 2;
+			yTo = (player_obj.y + cameraYBorder) + (mouse_y - (player_obj.y + cameraYBorder)) / 4;
 		}
 	}
 }
