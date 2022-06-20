@@ -15,6 +15,7 @@ knockback = 0;
 gotSpawned = false;
 lostArm = false;
 spawnedArm = false;
+movingAway = false; //Is Enemy already moving away from other enemy
 
 lastBullet = bulletPistol_obj;
 ammoSpawnCount = 4;
@@ -34,7 +35,7 @@ damageCollision = false;
 spawnedHitbox = false;
 hitboxFlowerAttack = noone;
 points = 125;
-movSpeed = 0.15;
+movSpeed = 0.41;
 movement = true;
 gravityStrength = -0.05;
 damageTint = false;
@@ -49,12 +50,12 @@ aggroTimer = 130;
 deaggroTimer = 3000;
 exclamationmarkTimer = 250;
 
-attack1PrepareTimer = 300; //Timer before snap attack begins
-attack1StopTimer = 200; //Timer after snap attack begins
+attack1PrepareTimer = 100; //Timer before snap attack begins
+attack1StopTimer = 100; //Timer after snap attack begins
 snapAttack = false; //Snap Attack is happening
 
-attack2PrepareTimer = 250; //Timer before snap attack begins
-attack2StopTimer = 150; //Timer after snap attack begins
+attack2PrepareTimer = 70; //Timer before snap attack begins
+attack2StopTimer = 100; //Timer after snap attack begins
 snapAttack2 = false; //Snap Attack is happening
 
 snapHitboxDelay = 45; //Delay until damage hitbox spawns
