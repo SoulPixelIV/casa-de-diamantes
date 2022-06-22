@@ -13,6 +13,7 @@ if (attackTint && !damageTint) {
 }
 
 draw_self();
+draw_text_color(x + 15, y, string(checkForPlayerPosTimer), c_white, c_white, c_white, c_white, 1);
 
 //Draw Aggro Mode
 if (aggroTimer < aggroTimerSave && aggroTimer > 0 && !aggro)

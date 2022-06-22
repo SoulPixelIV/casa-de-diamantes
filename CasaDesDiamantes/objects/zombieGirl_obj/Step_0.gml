@@ -118,6 +118,67 @@ if (movement)
 	{
 		horspeed = 0;
 	}
+	
+	//Stage Jumping
+	if (instance_exists(player_obj)) {
+		checkForPlayerPosTimer -= global.dt;
+	
+		if (checkForPlayerPosTimer < 0) {
+			currPlayerPosY = player_obj.y;
+			nearestPlatform = instance_nearest(player_obj.x, player_obj.y, collider_obj);
+			
+			//Check if new stage closer to player exists
+			if (nearestPlatform.y < y - 24 || nearestPlatform.y > y + 24) {
+				
+				if (nearestPlatform.x > x) {
+					xPosGoal = nearestPlatform.x;
+					yPosGoal = nearestPlatform.y;
+					for (i = 0; i < 256; i++) {
+						xPosGoal -= 1;	
+						//Already check for free yPos before xPos is found
+						if (place_meeting(nearestPlatform.x, yPosGoal, collider_obj)) {
+							yPosGoal -= 0.25;
+						}
+						
+						//Look for edge of platform
+						if (!place_meeting(xPosGoal, yPosGoal, collider_obj)) {
+							x = xPosGoal + 16;
+							y = yPosGoal + 24;
+							
+							//Reset Timer
+							//checkForPlayerPosTimer = checkForPlayerPosTimerSave;
+							
+							break;
+						}
+					}
+				}
+				
+				if (nearestPlatform.x < x) {
+					xPosGoal = nearestPlatform.x;
+					yPosGoal = nearestPlatform.y;
+					for (i = 0; i < 256; i++) {
+						xPosGoal += 1;
+						//Already check for free yPos before xPos is found
+						if (place_meeting(nearestPlatform.x, yPosGoal, collider_obj)) {
+							yPosGoal -= 0.25;
+						}
+						
+						//Look for edge of platform
+						if (!place_meeting(xPosGoal, yPosGoal, collider_obj)) {
+							x = xPosGoal - 16;
+							y = yPosGoal + 24;
+							
+							//Reset Timer
+							//checkForPlayerPosTimer = checkForPlayerPosTimerSave;
+				
+							break;
+						}
+					}
+				}
+			}
+		}
+	}
+	
 }
 else
 {
