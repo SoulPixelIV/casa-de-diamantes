@@ -68,34 +68,9 @@ if (movement)
 {
 	if (aggro && distance_to_object(player_obj) > 24)
 	{
-		if (!movingAway) {
-			if (instance_exists(hazard_obj))
-			{
-				if (!collision_circle(x, y, 64, hazard_obj, false, true))
-				{
-					if (player_obj.x > x)
-					{
-						horspeed = movSpeed;
-					}
-					else
-					{
-						horspeed = -movSpeed;
-					}
-				}
-				else
-				{
-					hazard = instance_nearest(x, y, hazard_obj);
-					if (hazard.x > x)
-					{
-						horspeed = -movSpeed / 2;
-					}
-					else
-					{
-						horspeed = movSpeed / 2;
-					}
-				}
-			}
-			else
+		if (instance_exists(hazard_obj))
+		{
+			if (!collision_circle(x, y, 64, hazard_obj, false, true))
 			{
 				if (player_obj.x > x)
 				{
@@ -106,14 +81,37 @@ if (movement)
 					horspeed = -movSpeed;
 				}
 			}
-			if (dirLookat > 90 && dirLookat < 270)
+			else
 			{
-				image_xscale = -1;
+				hazard = instance_nearest(x, y, hazard_obj);
+				if (hazard.x > x)
+				{
+					horspeed = -movSpeed / 2;
+				}
+				else
+				{
+					horspeed = movSpeed / 2;
+				}
+			}
+		}
+		else
+		{
+			if (player_obj.x > x)
+			{
+				horspeed = movSpeed;
 			}
 			else
 			{
-				image_xscale = 1;
+				horspeed = -movSpeed;
 			}
+		}
+		if (dirLookat > 90 && dirLookat < 270)
+		{
+			image_xscale = -1;
+		}
+		else
+		{
+			image_xscale = 1;
 		}
 	}
 	else
@@ -124,21 +122,6 @@ if (movement)
 else
 {
 	horspeed = 0;
-}
-
-//Move away from Enemies
-if (distance_to_object(enemy_obj) < 24) {
-	var closestEnemy = instance_nearest(x, y, enemy_obj);
-	if (closestEnemy.movingAway == false) {
-		movingAway = true;
-		if (closestEnemy.x > x) {
-			horspeed = -movSpeed;
-		} else {
-			horspeed = movSpeed;
-		}
-	}
-} else {
-	movingAway = false;
 }
 
 //Gravity
@@ -414,7 +397,7 @@ if (attackInProg && snapAttack && attack1StopTimer < 0) {
 if (attackInProg && sprite_index == zombieGirlAttack1Stop_spr && image_index = image_number -1) {
 	attackDelay = attackDelaySave;
 	attack1PrepareTimer = attack1PrepareTimerSave;
-	attack1StopTimer = attack1StopTimerSave;
+	attack1StopTimer = attack1StopTimerSave + random_range(-20, 20);
 	snapHitboxDelay = snapHitboxDelaySave;
 	snapAttack = false;
 	attackInProg = false;
@@ -486,7 +469,7 @@ if (attackInProg2 && snapAttack2 && attack2StopTimer < 0) {
 if (attackInProg2 && sprite_index == zombieGirlAttack2Stop_spr && image_index = image_number -1) {
 	attackDelay = attackDelaySave;
 	attack2PrepareTimer = attack2PrepareTimerSave;
-	attack2StopTimer = attack2StopTimerSave;
+	attack2StopTimer = attack2StopTimerSave + random_range(-20, 20);
 	snapHitbox2Delay = snapHitbox2DelaySave;
 	snapAttack2 = false;
 	attackInProg2 = false;

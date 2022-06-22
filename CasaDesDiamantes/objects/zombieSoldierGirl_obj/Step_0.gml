@@ -86,16 +86,9 @@ if (movement)
 		}
 	}
 	
-	if (aggro && (x > player_obj.x + DistFromPlayer || x < player_obj.x - DistFromPlayer))
+	if (aggro && distance_to_object(player_obj) > DistFromPlayer)
 	{
-		if (player_obj.x > x)
-		{
-			horspeed = movSpeed * 3;
-		}
-		else
-		{
-			horspeed = -movSpeed * 3;
-		}
+		move_towards_point(player_obj.x, player_obj.y, movSpeed);
 		
 		if (dirLookat > 90 && dirLookat < 270)
 		{

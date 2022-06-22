@@ -15,7 +15,6 @@ knockback = 0;
 gotSpawned = false;
 lostArm = false;
 spawnedArm = false;
-movingAway = false; //Is Enemy already moving away from other enemy
 
 lastBullet = bulletPistol_obj;
 ammoSpawnCount = 4;
