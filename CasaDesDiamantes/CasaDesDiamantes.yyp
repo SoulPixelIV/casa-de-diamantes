@@ -450,6 +450,7 @@
     {"id":{"name":"PW0_SF3_teleporter","path":"objects/PW0_SF3_teleporter/PW0_SF3_teleporter.yy",},"order":19,},
     {"id":{"name":"electricGate_spr","path":"sprites/electricGate_spr/electricGate_spr.yy",},"order":0,},
     {"id":{"name":"electricGateShort_spr","path":"sprites/electricGateShort_spr/electricGateShort_spr.yy",},"order":1,},
+    {"id":{"name":"jumpGoalDEBUG_obj","path":"objects/jumpGoalDEBUG_obj/jumpGoalDEBUG_obj.yy",},"order":9,},
     {"id":{"name":"poisontear_spr","path":"sprites/poisontear_spr/poisontear_spr.yy",},"order":3,},
     {"id":{"name":"electricGate2_spr","path":"sprites/electricGate2_spr/electricGate2_spr.yy",},"order":2,},
     {"id":{"name":"electricGate3_spr","path":"sprites/electricGate3_spr/electricGate3_spr.yy",},"order":3,},

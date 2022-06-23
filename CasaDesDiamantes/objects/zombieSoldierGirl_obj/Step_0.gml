@@ -121,9 +121,6 @@ if (movement)
 	{
 		horspeed = 0;
 	}
-	
-	//Check for Stage Jump
-	
 }
 
 //Slow Floating Movement

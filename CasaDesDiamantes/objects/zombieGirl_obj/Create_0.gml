@@ -48,8 +48,13 @@ aggro = false;
 aggroTimer = 130;
 deaggroTimer = 3000;
 exclamationmarkTimer = 250;
-checkForPlayerPosTimer = 150; //Occasionally check for player pos for stage jumping
-
+noCollision = false;
+noGravity = false;
+checkForPlayerPosTimer = 300; //Occasionally check for player pos for stage jumping
+jumpToNewDest = false; //True while stage jumping happens
+newDestPosX = x;
+newDestPosY = y;
+debGoal = instance_create_layer(x, y, "Instances", jumpGoalDEBUG_obj);
 attack1PrepareTimer = 100; //Timer before snap attack begins
 attack1StopTimer = 100; //Timer after snap attack begins
 snapAttack = false; //Snap Attack is happening
