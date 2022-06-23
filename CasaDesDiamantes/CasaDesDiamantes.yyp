@@ -764,6 +764,7 @@
     {"id":{"name":"crawler_spr","path":"sprites/crawler_spr/crawler_spr.yy",},"order":0,},
     {"id":{"name":"roseRoot_spr","path":"sprites/roseRoot_spr/roseRoot_spr.yy",},"order":50,},
     {"id":{"name":"playerJumpSpinUnequippedNude_spr","path":"sprites/playerJumpSpinUnequippedNude_spr/playerJumpSpinUnequippedNude_spr.yy",},"order":4,},
+    {"id":{"name":"debugBlock32xBlue_spr","path":"sprites/debugBlock32xBlue_spr/debugBlock32xBlue_spr.yy",},"order":23,},
     {"id":{"name":"blackjackSpriteConverter_scr","path":"scripts/blackjackSpriteConverter_scr/blackjackSpriteConverter_scr.yy",},"order":18,},
     {"id":{"name":"level0_Powerplant","path":"rooms/level0_Powerplant/level0_Powerplant.yy",},"order":0,},
     {"id":{"name":"sh_aberration","path":"shaders/sh_aberration/sh_aberration.yy",},"order":1,},

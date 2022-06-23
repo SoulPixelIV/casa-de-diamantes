@@ -126,14 +126,16 @@ if (movement)
 		if (checkForPlayerPosTimer < 0) {
 			currPlayerPosY = player_obj.y;
 			nearestPlatform = instance_nearest(player_obj.x, player_obj.y + 47, collider_obj);
+			platformSize = nearestPlatform.image_xscale * 16;
 			
 			//Check if destination is not same stage
 			//if (instance_place(x, y + 14, collider_obj) != nearestPlatform.id) {
-
+			if (instance_exists(nearestPlatform)) {
+				//RIGHT
 				if (nearestPlatform.x > x) {
 					xPosGoal = nearestPlatform.x;
 					yPosGoal = nearestPlatform.y;
-					for (i = 0; i < 256; i++) {
+					for (i = 0; i < 512; i++) {
 						xPosGoal -= 1;	
 						//Already check for free yPos before xPos is found
 						if (place_meeting(nearestPlatform.x, yPosGoal, collider_obj)) {
@@ -143,20 +145,19 @@ if (movement)
 						//Look for edge of platform
 						if (!place_meeting(xPosGoal + 16, yPosGoal - 32, collider_obj)) {
 							//Check if jump is not too far
-							if (distance_to_point(xPosGoal - 16, yPosGoal) < 160) {
+							//if (distance_to_point(xPosGoal - 16, yPosGoal) < 160) {
 								jumpToNewDest = true;
 								newDestPosX = xPosGoal + 16;
 								newDestPosY = yPosGoal - 32;
-							}
+							//}
 							break;
 						}
 					}
-				}
-
-				if (nearestPlatform.x < x) {
+				} else {
+					//LEFT
 					xPosGoal = nearestPlatform.x;
 					yPosGoal = nearestPlatform.y;
-					for (i = 0; i < 256; i++) {
+					for (i = 0; i < 512; i++) {
 						xPosGoal += 1;
 						//Already check for free yPos before xPos is found
 						if (place_meeting(nearestPlatform.x, yPosGoal, collider_obj)) {
@@ -166,16 +167,17 @@ if (movement)
 						//Look for edge of platform
 						if (!place_meeting(xPosGoal - 16, yPosGoal - 32, collider_obj)) {
 							//Check if jump is not too far
-							if (distance_to_point(xPosGoal - 16, yPosGoal) < 160) {
+							//if (distance_to_point(xPosGoal - 16, yPosGoal) < 160) {
 								jumpToNewDest = true;
 								newDestPosX = xPosGoal - 16;
 								newDestPosY = yPosGoal - 32;
-							}
+							//}
 							break;
 						}
 					}
 				}
 			//}
+			}
 		}
 	}
 	
