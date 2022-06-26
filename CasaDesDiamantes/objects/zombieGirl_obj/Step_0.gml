@@ -184,6 +184,7 @@ if (movement)
 	}
 	
 	if (jumpToNewDest) {
+		/*
 		noGravity = true;
 		noCollision = true;
 		debGoal.x = newDestPosX;
@@ -209,6 +210,20 @@ if (movement)
 			//Reset Timer
 			checkForPlayerPosTimer = checkForPlayerPosTimerSave;
 			
+			jumpToNewDest = false;
+		}
+		*/
+		
+		stageTeleportTimer -= global.dt;
+		
+		if (stageTeleportTimer < 0) {
+			x = newDestPosX;
+			y = newDestPosY;
+		
+			//Reset Timer
+			checkForPlayerPosTimer = checkForPlayerPosTimerSave;
+			
+			stageTeleportTimer = stageTeleportTimerSave;
 			jumpToNewDest = false;
 		}
 	}

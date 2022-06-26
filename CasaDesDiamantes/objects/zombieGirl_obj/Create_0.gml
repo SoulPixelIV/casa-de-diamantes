@@ -51,6 +51,7 @@ exclamationmarkTimer = 250;
 noCollision = false;
 noGravity = false;
 checkForPlayerPosTimer = 650; //Occasionally check for player pos for stage jumping
+stageTeleportTimer = 120; //Timer until stage jump starts
 jumpToNewDest = false; //True while stage jumping happens
 newDestPosX = x;
 newDestPosY = y;
@@ -78,6 +79,7 @@ attackTintDelaySave = attackTintDelay;
 attackTintDelay = -1;
 gravityStrengthSave = gravityStrength;
 checkForPlayerPosTimerSave = checkForPlayerPosTimer;
+stageTeleportTimerSave = stageTeleportTimer;
 
 attack1PrepareTimerSave = attack1PrepareTimer;
 attack1StopTimerSave = attack1StopTimer;
