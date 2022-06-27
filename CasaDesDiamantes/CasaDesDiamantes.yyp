@@ -691,6 +691,7 @@
     {"id":{"name":"score8X_spr","path":"sprites/score8X_spr/score8X_spr.yy",},"order":72,},
     {"id":{"name":"enemyBlockZone_obj","path":"objects/enemyBlockZone_obj/enemyBlockZone_obj.yy",},"order":57,},
     {"id":{"name":"polygon_from_path","path":"scripts/polygon_from_path/polygon_from_path.yy",},"order":3,},
+    {"id":{"name":"stagejumpAnimation_obj","path":"objects/stagejumpAnimation_obj/stagejumpAnimation_obj.yy",},"order":96,},
     {"id":{"name":"SF2_SF3_teleporter","path":"objects/SF2_SF3_teleporter/SF2_SF3_teleporter.yy",},"order":16,},
     {"id":{"name":"lighting_get_active_camera","path":"scripts/lighting_get_active_camera/lighting_get_active_camera.yy",},"order":4,},
     {"id":{"name":"slotmachineLevel3_snd","path":"sounds/slotmachineLevel3_snd/slotmachineLevel3_snd.yy",},"order":47,},

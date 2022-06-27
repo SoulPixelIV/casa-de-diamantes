@@ -13,8 +13,7 @@ if (attackTint && !damageTint) {
 }
 
 draw_self();
-nearestPlatform = instance_nearest(player_obj.x, player_obj.y, collider_obj);
-draw_text_color(x + 15, y, string(nearestPlatform.x) + "  " + string(nearestPlatform.y), c_white, c_white, c_white, c_white, 1);
+draw_text_color(x + 30, y, string(horspeed), c_white, c_white, c_white, c_white, 1);
 
 //Draw Aggro Mode
 if (aggroTimer < aggroTimerSave && aggroTimer > 0 && !aggro)

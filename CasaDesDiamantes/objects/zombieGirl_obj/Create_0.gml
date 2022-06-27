@@ -53,6 +53,7 @@ noGravity = false;
 checkForPlayerPosTimer = 650; //Occasionally check for player pos for stage jumping
 stageTeleportTimer = 120; //Timer until stage jump starts
 jumpToNewDest = false; //True while stage jumping happens
+spawnedStageJumpAnimation = false;
 newDestPosX = x;
 newDestPosY = y;
 debGoal = instance_create_layer(x, y, "Instances", jumpGoalDEBUG_obj);

@@ -1,8 +1,5 @@
 /// @description Enemy AI
 
-x += horspeed * global.dt;
-y += verspeed * global.dt;
-
 if (!gotSpawned)
 {
 	spawn = instance_create_layer(x, y, "Instances", enemyHiddenSpawnpoint_obj);
@@ -125,7 +122,7 @@ if (movement)
 		
 		if (checkForPlayerPosTimer < 0) {
 			currPlayerPosY = player_obj.y;
-			nearestPlatform = instance_nearest(player_obj.x, player_obj.y + 47, collider_obj);
+			nearestPlatform = instance_nearest(player_obj.x, player_obj.y + 47, colliderGlobal_obj);
 			platformSize = nearestPlatform.image_xscale * 16;
 			
 			//Check if player is not on same stage
@@ -139,12 +136,12 @@ if (movement)
 							for (i = 0; i < 512; i++) {
 								xPosGoal -= 1;	
 								//Already check for free yPos before xPos is found
-								if (place_meeting(nearestPlatform.x, yPosGoal, collider_obj)) {
+								if (place_meeting(nearestPlatform.x, yPosGoal, colliderGlobal_obj)) {
 									yPosGoal -= 1;
 								}
 						
 								//Look for edge of platform
-								if (!place_meeting(xPosGoal + 16, yPosGoal - 32, collider_obj)) {
+								if (!place_meeting(xPosGoal + 16, yPosGoal - 32, colliderGlobal_obj)) {
 									//Check if jump is not too far
 									if (distance_to_point(xPosGoal + 16, yPosGoal) < 160) {
 										jumpToNewDest = true;
@@ -161,12 +158,12 @@ if (movement)
 							for (i = 0; i < 512; i++) {
 								xPosGoal += 1;
 								//Already check for free yPos before xPos is found
-								if (place_meeting(nearestPlatform.x, yPosGoal, collider_obj)) {
+								if (place_meeting(nearestPlatform.x, yPosGoal, colliderGlobal_obj)) {
 									yPosGoal -= 1;
 								}
 						
 								//Look for edge of platform
-								if (!place_meeting(xPosGoal + 16, yPosGoal - 32, collider_obj)) {
+								if (!place_meeting(xPosGoal + 16, yPosGoal - 32, colliderGlobal_obj)) {
 									//Check if jump is not too far
 									if (distance_to_point(xPosGoal + 16, yPosGoal) < 160) {
 										jumpToNewDest = true;
@@ -183,38 +180,14 @@ if (movement)
 		}
 	}
 	
-	if (jumpToNewDest) {
-		/*
-		noGravity = true;
-		noCollision = true;
-		debGoal.x = newDestPosX;
-		debGoal.y = newDestPosY;
-		
-		if (x < newDestPosX) {
-			x += movSpeed * 2;
-		}
-		if (x > newDestPosX) {
-			x -= movSpeed * 2;
-		}
-		if (y < newDestPosY) {
-			y += movSpeed * 2;
-		}
-		if (y > newDestPosY) {
-			y -= movSpeed * 2;
-		}
-		
-		if (x > newDestPosX - 3 && x < newDestPosX + 3 && y > newDestPosY - 3 && y < newDestPosY + 3) {
-			noGravity = false;
-			noCollision = false;
-			
-			//Reset Timer
-			checkForPlayerPosTimer = checkForPlayerPosTimerSave;
-			
-			jumpToNewDest = false;
-		}
-		*/
-		
+	if (jumpToNewDest) {		
 		stageTeleportTimer -= global.dt;
+		
+		if (!spawnedStageJumpAnimation) {
+			instance_create_layer(x, y, "Instances", stagejumpAnimation_obj);
+			instance_create_layer(newDestPosX, newDestPosY, "Instances", stagejumpAnimation_obj);
+			spawnedStageJumpAnimation = true;
+		}
 		
 		if (stageTeleportTimer < 0) {
 			x = newDestPosX;
@@ -224,6 +197,7 @@ if (movement)
 			checkForPlayerPosTimer = checkForPlayerPosTimerSave;
 			
 			stageTeleportTimer = stageTeleportTimerSave;
+			spawnedStageJumpAnimation = false;
 			jumpToNewDest = false;
 		}
 	}
@@ -249,47 +223,6 @@ if (!noGravity) {
 //Animation
 image_speed = 0;
 image_index += (global.dt / 15) * animationSpeed;
-
-//Collision
-if (!noCollision) {
-	//horspeed
-	if (!place_free(x + (horspeed * global.dt), y))
-	{
-		if (sign(horspeed) != 0)
-		{
-			while (place_free(x + sign(horspeed) / 100, y))
-			{
-				x += sign(horspeed) / 100;
-			}
-			horspeed = 0;
-		}
-	} 
-	//verspeed
-	if (!place_free(x, y + (verspeed * global.dt)))
-	{
-		if (sign(verspeed) != 0)
-		{
-			while (place_free(x, y + sign(verspeed) / 100))
-			{
-				y += sign(verspeed) / 100;
-			}
-			verspeed = 0;
-		}
-	}
-
-	//Player Collision
-	if (place_meeting(x + horspeed * global.dt, y, player_obj))
-	{
-		if (player_obj.x > x)
-		{
-			horspeed = -movSpeed;
-		}
-		else
-		{
-			horspeed = movSpeed;
-		}
-	}
-}
 
 //###Death###
 if (hp < 0)
@@ -670,3 +603,47 @@ if (checkPlayerTimer < 0)
 
 //Sound Position
 audio_emitter_position(emitter, x, y, 0);
+
+//Collision
+if (!noCollision) {
+	//horspeed
+	if (!place_free(x + horspeed * global.dt, y))
+	{
+		if (sign(horspeed) != 0)
+		{
+			while (place_free(x + sign(horspeed), y))
+			{
+				x += sign(horspeed);
+			}
+			horspeed = 0;
+		}
+	} 
+	//verspeed
+	if (!place_free(x, y + verspeed * global.dt))
+	{
+		if (sign(verspeed) != 0)
+		{
+			while (place_free(x, y + sign(verspeed)))
+			{
+				y += sign(verspeed);
+			}
+			verspeed = 0;
+		}
+	}
+
+	//Player Collision
+	if (place_meeting(x + horspeed * global.dt, y, player_obj))
+	{
+		if (player_obj.x > x)
+		{
+			horspeed = -movSpeed;
+		}
+		else
+		{
+			horspeed = movSpeed;
+		}
+	}
+}
+
+x += horspeed * global.dt;
+y += verspeed * global.dt;
