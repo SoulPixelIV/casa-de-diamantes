@@ -144,9 +144,29 @@ if (movement)
 								if (!place_meeting(xPosGoal + 16, yPosGoal - 32, colliderGlobal_obj)) {
 									//Check if jump is not too far
 									if (distance_to_point(xPosGoal + 16, yPosGoal) < 160) {
-										jumpToNewDest = true;
-										newDestPosX = xPosGoal + 16;
-										newDestPosY = yPosGoal - 32;
+										//Check if other enemy already occupied teleport spot
+										nearestOtherEnemySpawn = instance_nearest(xPosGoal + 16, yPosGoal, stagejumpAnimation_obj);
+										if (instance_exists(nearestOtherEnemySpawn)) {
+											if ((xPosGoal + 16) < nearestOtherEnemySpawn.x + 16 && (xPosGoal + 16) > nearestOtherEnemySpawn.x - 16) {
+												if (!place_meeting(xPosGoal + 32, yPosGoal - 32, colliderGlobal_obj)) {
+													jumpToNewDest = true;
+													newDestPosX = xPosGoal + 32;
+													newDestPosY = yPosGoal - 32;
+												} else {
+													jumpToNewDest = true;
+													newDestPosX = xPosGoal + 16;
+													newDestPosY = yPosGoal - 32;
+												}
+											} else {
+												jumpToNewDest = true;
+												newDestPosX = xPosGoal + 16;
+												newDestPosY = yPosGoal - 32;
+											}
+										} else {
+											jumpToNewDest = true;
+											newDestPosX = xPosGoal + 16;
+											newDestPosY = yPosGoal - 32;
+										}
 									}
 									break;
 								}
@@ -166,9 +186,29 @@ if (movement)
 								if (!place_meeting(xPosGoal + 16, yPosGoal - 32, colliderGlobal_obj)) {
 									//Check if jump is not too far
 									if (distance_to_point(xPosGoal + 16, yPosGoal) < 160) {
-										jumpToNewDest = true;
-										newDestPosX = xPosGoal + 16;
-										newDestPosY = yPosGoal - 32;
+										//Check if other enemy already occupied teleport spot
+										nearestOtherEnemySpawn = instance_nearest(xPosGoal + 16, yPosGoal, stagejumpAnimation_obj);
+										if (instance_exists(nearestOtherEnemySpawn)) {
+											if ((xPosGoal + 16) < nearestOtherEnemySpawn.x + 16 && (xPosGoal + 16) > nearestOtherEnemySpawn.x - 16) {
+												if (!place_meeting(xPosGoal + 32, yPosGoal - 32, colliderGlobal_obj)) {
+													jumpToNewDest = true;
+													newDestPosX = xPosGoal + 32;
+													newDestPosY = yPosGoal - 32;
+												} else {
+													jumpToNewDest = true;
+													newDestPosX = xPosGoal + 16;
+													newDestPosY = yPosGoal - 32;
+												}
+											} else {
+												jumpToNewDest = true;
+												newDestPosX = xPosGoal + 16;
+												newDestPosY = yPosGoal - 32;
+											}
+										} else {
+											jumpToNewDest = true;
+											newDestPosX = xPosGoal + 16;
+											newDestPosY = yPosGoal - 32;
+										}
 									}
 									break;
 								}
@@ -196,7 +236,7 @@ if (movement)
 			//Reset Timer
 			checkForPlayerPosTimer = checkForPlayerPosTimerSave;
 			
-			stageTeleportTimer = stageTeleportTimerSave;
+			stageTeleportTimer = stageTeleportTimerSave + random_range(-30, 30);
 			spawnedStageJumpAnimation = false;
 			jumpToNewDest = false;
 		}
