@@ -13,7 +13,6 @@ if (attackTint && !damageTint) {
 }
 
 draw_self();
-draw_text_color(x + 30, y, string(horspeed), c_white, c_white, c_white, c_white, 1);
 
 //Draw Aggro Mode
 if (aggroTimer < aggroTimerSave && aggroTimer > 0 && !aggro)

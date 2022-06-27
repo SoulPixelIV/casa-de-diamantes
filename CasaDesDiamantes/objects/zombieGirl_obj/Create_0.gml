@@ -56,7 +56,6 @@ jumpToNewDest = false; //True while stage jumping happens
 spawnedStageJumpAnimation = false;
 newDestPosX = x;
 newDestPosY = y;
-debGoal = instance_create_layer(x, y, "Instances", jumpGoalDEBUG_obj);
 attack1PrepareTimer = 100; //Timer before snap attack begins
 attack1StopTimer = 100; //Timer after snap attack begins
 snapAttack = false; //Snap Attack is happening
