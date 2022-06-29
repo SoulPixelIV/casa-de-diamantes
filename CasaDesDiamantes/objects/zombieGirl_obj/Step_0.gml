@@ -129,8 +129,7 @@ if (movement)
 		
 		if (checkForPlayerPosTimer < 0) {
 			currPlayerPosY = player_obj.y;
-			nearestPlatform = instance_nearest(player_obj.x, player_obj.y + 47, colliderGlobal_obj);
-			platformSize = nearestPlatform.image_xscale * 16;
+			//platformSize = nearestPlatform.image_xscale * 16;
 			
 			//Check if player is not on same stage
 			var platformToCheck = noone;
@@ -141,30 +140,37 @@ if (movement)
 			
 			if (platformToCheck != platformStanding) {
 				if (player_obj.grounded) {
-					if (instance_exists(nearestPlatform)) {
-						//RIGHT
-						if (nearestPlatform.x > x) {
-							xPosGoal = nearestPlatform.x;
-							yPosGoal = nearestPlatform.y;
+					if (instance_exists(platformToCheck)) {
+						//RIGHT ######################################################
+						if (player_obj.x > x) {
+							xPosGoal = platformToCheck.x;
+							yPosGoal = platformToCheck.y;
 							for (i = 0; i < 512; i++) {
 								xPosGoal -= 1;	
 								//Already check for free yPos before xPos is found
-								if (place_meeting(nearestPlatform.x, yPosGoal, colliderGlobal_obj)) {
+								if (place_meeting(platformToCheck.x, yPosGoal, colliderGlobal_obj)) {
 									yPosGoal -= 1;
 								}
 						
 								//Look for edge of platform
 								if (!place_meeting(xPosGoal + 16, yPosGoal - 32, colliderGlobal_obj)) {
 									//Check if jump is not too far
-									if (distance_to_point(xPosGoal + 16, yPosGoal) < 260) {
-										//Check if other enemy already occupied teleport spot
-										nearestOtherEnemySpawn = instance_nearest(xPosGoal + 16, yPosGoal, stagejumpAnimation_obj);
-										if (instance_exists(nearestOtherEnemySpawn)) {
-											if ((xPosGoal + 16) < nearestOtherEnemySpawn.x + 16 && (xPosGoal + 16) > nearestOtherEnemySpawn.x - 16) {
-												if (!place_meeting(xPosGoal + 32, yPosGoal - 32, colliderGlobal_obj)) {
-													jumpToNewDest = true;
-													newDestPosX = xPosGoal + 32;
-													newDestPosY = yPosGoal - 32;
+									if (distance_to_point(xPosGoal + 16, yPosGoal) < 360) {
+										//Check if destination has ground to stand on
+										if (place_meeting(xPosGoal + 16, yPosGoal, colliderGlobal_obj)) {							
+											//Check if other enemy already occupied teleport spot
+											nearestOtherEnemySpawn = instance_nearest(xPosGoal + 16, yPosGoal, stagejumpAnimation_obj);
+											if (instance_exists(nearestOtherEnemySpawn)) {
+												if ((xPosGoal + 16) < nearestOtherEnemySpawn.x + 16 && (xPosGoal + 16) > nearestOtherEnemySpawn.x - 16) {
+													if (!place_meeting(xPosGoal + 32, yPosGoal - 32, colliderGlobal_obj)) {
+														jumpToNewDest = true;
+														newDestPosX = xPosGoal + 32;
+														newDestPosY = yPosGoal - 32;
+													} else {
+														jumpToNewDest = true;
+														newDestPosX = xPosGoal + 16;
+														newDestPosY = yPosGoal - 32;
+													}
 												} else {
 													jumpToNewDest = true;
 													newDestPosX = xPosGoal + 16;
@@ -175,52 +181,51 @@ if (movement)
 												newDestPosX = xPosGoal + 16;
 												newDestPosY = yPosGoal - 32;
 											}
-										} else {
-											jumpToNewDest = true;
-											newDestPosX = xPosGoal + 16;
-											newDestPosY = yPosGoal - 32;
 										}
 									}
 									break;
 								}
 							}
 						} else {
-							//LEFT
-							xPosGoal = nearestPlatform.x;
-							yPosGoal = nearestPlatform.y;
+							//LEFT ####################################################
+							xPosGoal = platformToCheck.x;
+							yPosGoal = platformToCheck.y;
 							for (i = 0; i < 512; i++) {
 								xPosGoal += 1;
 								//Already check for free yPos before xPos is found
-								if (place_meeting(nearestPlatform.x, yPosGoal, colliderGlobal_obj)) {
+								if (place_meeting(platformToCheck.x, yPosGoal, colliderGlobal_obj)) {
 									yPosGoal -= 1;
 								}
 						
 								//Look for edge of platform
-								if (!place_meeting(xPosGoal + 16, yPosGoal - 32, colliderGlobal_obj)) {
+								if (!place_meeting(xPosGoal - 16, yPosGoal - 32, colliderGlobal_obj)) {
 									//Check if jump is not too far
-									if (distance_to_point(xPosGoal + 16, yPosGoal) < 260) {
-										//Check if other enemy already occupied teleport spot
-										nearestOtherEnemySpawn = instance_nearest(xPosGoal + 16, yPosGoal, stagejumpAnimation_obj);
-										if (instance_exists(nearestOtherEnemySpawn)) {
-											if ((xPosGoal + 16) < nearestOtherEnemySpawn.x + 16 && (xPosGoal + 16) > nearestOtherEnemySpawn.x - 16) {
-												if (!place_meeting(xPosGoal + 32, yPosGoal - 32, colliderGlobal_obj)) {
-													jumpToNewDest = true;
-													newDestPosX = xPosGoal + 32;
-													newDestPosY = yPosGoal - 32;
+									if (distance_to_point(xPosGoal - 16, yPosGoal) < 360) {
+										//Check if destination has ground to stand on
+										if (place_meeting(xPosGoal - 16, yPosGoal, colliderGlobal_obj)) {		
+											//Check if other enemy already occupied teleport spot
+											nearestOtherEnemySpawn = instance_nearest(xPosGoal - 16, yPosGoal, stagejumpAnimation_obj);
+											if (instance_exists(nearestOtherEnemySpawn)) {
+												if ((xPosGoal - 16) < nearestOtherEnemySpawn.x + 16 && (xPosGoal - 16) > nearestOtherEnemySpawn.x - 16) {
+													if (!place_meeting(xPosGoal - 32, yPosGoal - 32, colliderGlobal_obj)) {
+														jumpToNewDest = true;
+														newDestPosX = xPosGoal - 32;
+														newDestPosY = yPosGoal - 32;
+													} else {
+														jumpToNewDest = true;
+														newDestPosX = xPosGoal - 16;
+														newDestPosY = yPosGoal - 32;
+													}
 												} else {
 													jumpToNewDest = true;
-													newDestPosX = xPosGoal + 16;
+													newDestPosX = xPosGoal - 16;
 													newDestPosY = yPosGoal - 32;
 												}
 											} else {
 												jumpToNewDest = true;
-												newDestPosX = xPosGoal + 16;
+												newDestPosX = xPosGoal - 16;
 												newDestPosY = yPosGoal - 32;
 											}
-										} else {
-											jumpToNewDest = true;
-											newDestPosX = xPosGoal + 16;
-											newDestPosY = yPosGoal - 32;
 										}
 									}
 									break;
