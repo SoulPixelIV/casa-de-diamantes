@@ -8,7 +8,7 @@ if (instance_exists(player_obj)) {
 		}
 	} else {
 	//TURN OFF COLLIDER IF PLAYER BELOW PLATFORM
-		if (round(player_obj.y + 30) > y || player_obj.key_down_pressed) {
+		if (round(player_obj.y + 31) > y || player_obj.key_down_pressed) {
 			mask_index = -1;
 		} else {
 			mask_index = colliderBox_spr;

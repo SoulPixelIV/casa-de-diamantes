@@ -65,9 +65,36 @@ if (movement)
 {
 	if (aggro && distance_to_object(player_obj) > 24)
 	{
-		if (instance_exists(hazard_obj))
-		{
-			if (!collision_circle(x, y, 64, hazard_obj, false, true))
+		//Check if ground to walk on exists
+		if (place_meeting(x + 16 * image_xscale, y + 24, colliderGlobal_obj)) {
+			if (instance_exists(hazard_obj))
+			{
+				//Check if hazard is near and avoid it
+				if (!collision_circle(x, y, 64, hazard_obj, false, true))
+				{
+					if (player_obj.x > x)
+					{
+						horspeed = movSpeed;
+					}
+					else
+					{
+						horspeed = -movSpeed;
+					}
+				}
+				else
+				{
+					hazard = instance_nearest(x, y, hazard_obj);
+					if (hazard.x > x)
+					{
+						horspeed = -movSpeed / 2;
+					}
+					else
+					{
+						horspeed = movSpeed / 2;
+					}
+				}
+			}
+			else
 			{
 				if (player_obj.x > x)
 				{
@@ -78,30 +105,10 @@ if (movement)
 					horspeed = -movSpeed;
 				}
 			}
-			else
-			{
-				hazard = instance_nearest(x, y, hazard_obj);
-				if (hazard.x > x)
-				{
-					horspeed = -movSpeed / 2;
-				}
-				else
-				{
-					horspeed = movSpeed / 2;
-				}
-			}
+		} else {
+			horspeed = 0;
 		}
-		else
-		{
-			if (player_obj.x > x)
-			{
-				horspeed = movSpeed;
-			}
-			else
-			{
-				horspeed = -movSpeed;
-			}
-		}
+		
 		if (dirLookat > 90 && dirLookat < 270)
 		{
 			image_xscale = -1;
@@ -126,7 +133,13 @@ if (movement)
 			platformSize = nearestPlatform.image_xscale * 16;
 			
 			//Check if player is not on same stage
-			if (player_obj.y > y + 32 || player_obj.y < y - 32) {
+			var platformToCheck = noone;
+			var platformStanding = instance_place(x, y + 42, colliderGlobal_obj);
+			with (player_obj) {
+				platformToCheck = instance_place(x, y + 42, colliderGlobal_obj);
+			}
+			
+			if (platformToCheck != platformStanding) {
 				if (player_obj.grounded) {
 					if (instance_exists(nearestPlatform)) {
 						//RIGHT
