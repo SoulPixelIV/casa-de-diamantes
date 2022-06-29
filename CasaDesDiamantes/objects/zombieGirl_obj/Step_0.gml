@@ -365,7 +365,7 @@ if (lostArm && !spawnedArm && !attackInProg)
 //###Attack###
 
 //Cooldown
-if (!attackInProg && !attackInProg2 && aggro && !jumpToNewDest && verspeed == 0)
+if (!attackInProg && !attackInProg2 && aggro && !jumpToNewDest && (verspeed < 0.1 && verspeed > -0.1))
 {
 	if (distance_to_object(player_obj) < 128) {
 		attackCooldown -= global.dt;
@@ -647,11 +647,11 @@ audio_emitter_position(emitter, x, y, 0);
 //Collision
 if (!noCollision) {
 	//horspeed
-	if (!place_free(x + horspeed * global.dt, y))
+	if (!place_free(x + horspeed * global.dt, y) || place_meeting(x + horspeed * global.dt, y, colliderEnemyOnly_obj))
 	{
 		if (sign(horspeed) != 0)
 		{
-			while (place_free(x + sign(horspeed), y))
+			while (place_free(x + sign(horspeed), y) && !place_meeting(x + sign(horspeed), y, colliderEnemyOnly_obj))
 			{
 				x += sign(horspeed);
 			}
@@ -659,11 +659,11 @@ if (!noCollision) {
 		}
 	} 
 	//verspeed
-	if (!place_free(x, y + verspeed * global.dt))
+	if (!place_free(x, y + verspeed * global.dt) || place_meeting(x, y + verspeed * global.dt, colliderEnemyOnly_obj))
 	{
 		if (sign(verspeed) != 0)
 		{
-			while (place_free(x, y + sign(verspeed)))
+			while (place_free(x, y + sign(verspeed)) && !place_meeting(x, y + sign(verspeed), colliderEnemyOnly_obj))
 			{
 				y += sign(verspeed);
 			}

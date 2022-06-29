@@ -643,6 +643,7 @@
     {"id":{"name":"playerWallNoArm_spr","path":"sprites/playerWallNoArm_spr/playerWallNoArm_spr.yy",},"order":48,},
     {"id":{"name":"death_scr","path":"scripts/death_scr/death_scr.yy",},"order":9,},
     {"id":{"name":"sensoryTremblerBaseDestroyed_spr","path":"sprites/sensoryTremblerBaseDestroyed_spr/sensoryTremblerBaseDestroyed_spr.yy",},"order":11,},
+    {"id":{"name":"colliderEnemyOnly_obj","path":"objects/colliderEnemyOnly_obj/colliderEnemyOnly_obj.yy",},"order":10,},
     {"id":{"name":"revive_scr","path":"scripts/revive_scr/revive_scr.yy",},"order":10,},
     {"id":{"name":"fullDeath_scr","path":"scripts/fullDeath_scr/fullDeath_scr.yy",},"order":11,},
     {"id":{"name":"senzelaBackgroundBACKUP","path":"sprites/senzelaBackgroundBACKUP/senzelaBackgroundBACKUP.yy",},"order":1,},
