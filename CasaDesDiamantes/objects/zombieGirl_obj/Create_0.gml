@@ -59,7 +59,8 @@ newDestPosY = y;
 attack1PrepareTimer = 100; //Timer before snap attack begins
 attack1StopTimer = 100; //Timer after snap attack begins
 snapAttack = false; //Snap Attack is happening
-
+testX = 0;
+testY = 0;
 attack2PrepareTimer = 70; //Timer before snap attack begins
 attack2StopTimer = 100; //Timer after snap attack begins
 snapAttack2 = false; //Snap Attack is happening

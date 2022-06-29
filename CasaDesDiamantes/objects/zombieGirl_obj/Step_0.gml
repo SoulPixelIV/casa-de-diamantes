@@ -129,7 +129,6 @@ if (movement)
 		
 		if (checkForPlayerPosTimer < 0) {
 			currPlayerPosY = player_obj.y;
-			//platformSize = nearestPlatform.image_xscale * 16;
 			
 			//Check if player is not on same stage
 			var platformToCheck = noone;
@@ -141,99 +140,64 @@ if (movement)
 			if (platformToCheck != platformStanding) {
 				if (player_obj.grounded) {
 					if (instance_exists(platformToCheck)) {
-						//RIGHT ######################################################
-						if (player_obj.x > x) {
-							xPosGoal = platformToCheck.x;
-							yPosGoal = platformToCheck.y;
-							for (i = 0; i < 512; i++) {
-								xPosGoal -= 1;	
-								//Already check for free yPos before xPos is found
-								if (place_meeting(platformToCheck.x, yPosGoal, colliderGlobal_obj)) {
-									yPosGoal -= 1;
-								}
-						
-								//Look for edge of platform
-								if (!place_meeting(xPosGoal + 16, yPosGoal - 32, colliderGlobal_obj)) {
-									//Check if jump is not too far
-									if (distance_to_point(xPosGoal + 16, yPosGoal) < 360) {
-										//Check if destination has ground to stand on
-										if (place_meeting(xPosGoal + 16, yPosGoal, colliderGlobal_obj)) {							
-											//Check if other enemy already occupied teleport spot
-											nearestOtherEnemySpawn = instance_nearest(xPosGoal + 16, yPosGoal, stagejumpAnimation_obj);
-											if (instance_exists(nearestOtherEnemySpawn)) {
-												if ((xPosGoal + 16) < nearestOtherEnemySpawn.x + 16 && (xPosGoal + 16) > nearestOtherEnemySpawn.x - 16) {
-													if (!place_meeting(xPosGoal + 32, yPosGoal - 32, colliderGlobal_obj)) {
-														jumpToNewDest = true;
-														newDestPosX = xPosGoal + 32;
-														newDestPosY = yPosGoal - 32;
-													} else {
-														jumpToNewDest = true;
-														newDestPosX = xPosGoal + 16;
-														newDestPosY = yPosGoal - 32;
-													}
-												} else {
-													jumpToNewDest = true;
-													newDestPosX = xPosGoal + 16;
-													newDestPosY = yPosGoal - 32;
-												}
+						xPosGoalRight = player_obj.x;
+						xPosGoalLeft = player_obj.x;
+						yPosGoal = platformToCheck.y;
+						for (i = 0; i < 512; i++) {
+							//Already check for free yPos before xPos is found
+							if (place_meeting(platformToCheck.x, yPosGoal, colliderGlobal_obj)) {
+								yPosGoal -= 1;
+							}
+							
+							//Look for edge of platform
+							if (!place_meeting(xPosGoalRight + 1, yPosGoal - 32, colliderGlobal_obj) && place_meeting(xPosGoalRight + 1, yPosGoal, colliderGlobal_obj)) {
+								xPosGoalRight += 1;
+								testY = xPosGoalRight;
+								continue;
+							}
+							//Look for edge of platform
+							if (!place_meeting(xPosGoalLeft - 1, yPosGoal - 32, colliderGlobal_obj) && place_meeting(xPosGoalLeft - 1, yPosGoal, colliderGlobal_obj)) {
+								xPosGoalLeft -= 1;
+								testX = xPosGoalLeft;
+								continue;
+							}
+							
+							randDestX = random_range(xPosGoalLeft, xPosGoalRight);
+							
+							//Check if jump is not too far
+							if (distance_to_point(randDestX, yPosGoal) < 360) {
+								//Check if destination has ground to stand on
+								if (place_meeting(randDestX, yPosGoal, colliderGlobal_obj)) {	
+									
+									//Check if other enemy already occupied teleport spot
+									nearestOtherEnemySpawn = instance_nearest(randDestX, yPosGoal, stagejumpAnimation_obj);
+									if (instance_exists(nearestOtherEnemySpawn)) {
+										if (randDestX < nearestOtherEnemySpawn.x + 16 && randDestX > nearestOtherEnemySpawn.x - 16) {
+											if (!place_meeting(randDestX + 32, yPosGoal - 32, colliderGlobal_obj)) {
+												jumpToNewDest = true;
+												newDestPosX = randDestX + 32;
+												newDestPosY = yPosGoal - 32;
 											} else {
 												jumpToNewDest = true;
-												newDestPosX = xPosGoal + 16;
+												newDestPosX = randDestX;
 												newDestPosY = yPosGoal - 32;
 											}
+										} else {
+											jumpToNewDest = true;
+											newDestPosX = randDestX;
+											newDestPosY = yPosGoal - 32;
 										}
+									} else {
+										jumpToNewDest = true;
+										newDestPosX = randDestX;
+										newDestPosY = yPosGoal - 32;
 									}
-									break;
 								}
 							}
-						} else {
-							//LEFT ####################################################
-							xPosGoal = platformToCheck.x;
-							yPosGoal = platformToCheck.y;
-							for (i = 0; i < 512; i++) {
-								xPosGoal += 1;
-								//Already check for free yPos before xPos is found
-								if (place_meeting(platformToCheck.x, yPosGoal, colliderGlobal_obj)) {
-									yPosGoal -= 1;
-								}
-						
-								//Look for edge of platform
-								if (!place_meeting(xPosGoal - 16, yPosGoal - 32, colliderGlobal_obj)) {
-									//Check if jump is not too far
-									if (distance_to_point(xPosGoal - 16, yPosGoal) < 360) {
-										//Check if destination has ground to stand on
-										if (place_meeting(xPosGoal - 16, yPosGoal, colliderGlobal_obj)) {		
-											//Check if other enemy already occupied teleport spot
-											nearestOtherEnemySpawn = instance_nearest(xPosGoal - 16, yPosGoal, stagejumpAnimation_obj);
-											if (instance_exists(nearestOtherEnemySpawn)) {
-												if ((xPosGoal - 16) < nearestOtherEnemySpawn.x + 16 && (xPosGoal - 16) > nearestOtherEnemySpawn.x - 16) {
-													if (!place_meeting(xPosGoal - 32, yPosGoal - 32, colliderGlobal_obj)) {
-														jumpToNewDest = true;
-														newDestPosX = xPosGoal - 32;
-														newDestPosY = yPosGoal - 32;
-													} else {
-														jumpToNewDest = true;
-														newDestPosX = xPosGoal - 16;
-														newDestPosY = yPosGoal - 32;
-													}
-												} else {
-													jumpToNewDest = true;
-													newDestPosX = xPosGoal - 16;
-													newDestPosY = yPosGoal - 32;
-												}
-											} else {
-												jumpToNewDest = true;
-												newDestPosX = xPosGoal - 16;
-												newDestPosY = yPosGoal - 32;
-											}
-										}
-									}
-									break;
-								}
-							}
+							break;
 						}
 					}
-				}
+				} 
 			}
 		}
 	}
@@ -259,7 +223,6 @@ if (movement)
 			jumpToNewDest = false;
 		}
 	}
-	
 }
 else
 {
