@@ -64,7 +64,7 @@
     "eventStubScript": null,
     "parent": {"name":"colliderBox_spr","path":"sprites/colliderBox_spr/colliderBox_spr.yy",},
     "resourceVersion": "1.4",
-    "name": "",
+    "name": "colliderBox_spr",
     "tags": [],
     "resourceType": "GMSequence",
   },
