@@ -165,7 +165,7 @@ if (movement)
 							if (distance_to_point(randDestX, player_obj.y) < 360) {
 								jumpToNewDest = true;
 								newDestPosX = randDestX;
-								newDestPosY = player_obj.y;
+								newDestPosY = player_obj.y - 12;
 							}
 							break;
 						}

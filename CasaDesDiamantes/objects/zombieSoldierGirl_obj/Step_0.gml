@@ -1,8 +1,5 @@
 /// @description Enemy AI
 
-x += horspeed * global.dt;
-y += verspeed * global.dt;
-
 if (!gotSpawned)
 {
 	spawn = instance_create_layer(x, y, "Instances", enemyHiddenSpawnpoint_obj);
@@ -120,6 +117,7 @@ if (movement)
 	else
 	{
 		horspeed = 0;
+		speed = 0;
 	}
 }
 
@@ -150,32 +148,6 @@ else
 //Animation
 image_speed = 0;
 image_index += (global.dt / 15) * animationSpeed;
-
-//Collision
-//horspeed
-if (place_meeting(x + (horspeed * global.dt), y, collider_obj))
-{
-	if (sign(horspeed) != 0)
-	{
-		while (place_free(x + sign(horspeed) / 100, y))
-		{
-			x += sign(horspeed) / 100;
-		}
-		horspeed = 0;
-	}
-} 
-//verspeed
-if (place_meeting(x, y + (verspeed * global.dt), collider_obj))
-{
-	if (sign(verspeed) != 0)
-	{
-		while (place_free(x, y + sign(verspeed) / 100))
-		{
-			y += sign(verspeed) / 100;
-		}
-		verspeed = 0;
-	}
-}
 
 //Player Collision
 if (place_meeting(x + horspeed * global.dt, y, player_obj))
@@ -408,3 +380,32 @@ if (aggro && attackCooldown < 120 && attackInProg1)
 
 //Sound Position
 audio_emitter_position(emitter, x, y, 0);
+
+//Collision
+//horspeed
+if (place_meeting(x + (horspeed * global.dt), y, collider_obj))
+{
+	if (sign(horspeed) != 0)
+	{
+		while (place_free(x + sign(horspeed), y))
+		{
+			x += sign(horspeed);
+		}
+		horspeed = 0;
+	}
+} 
+//verspeed
+if (place_meeting(x, y + (verspeed * global.dt), collider_obj))
+{
+	if (sign(verspeed) != 0)
+	{
+		while (place_free(x, y + sign(verspeed)))
+		{
+			y += sign(verspeed);
+		}
+		verspeed = 0;
+	}
+}
+
+x += horspeed * global.dt;
+y += verspeed * global.dt;
