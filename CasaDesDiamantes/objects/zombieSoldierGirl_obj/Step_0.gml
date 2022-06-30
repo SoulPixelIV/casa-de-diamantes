@@ -6,11 +6,6 @@ if (!gotSpawned)
 	spawn.hp = hp;
 	spawn.aggroRange = aggroRange;
 	spawn.spawnID = zombieSoldierGirl_obj;
-	if (spawn.dir == 1) {
-		image_angle = 0;
-	} else {
-		image_angle = 180;
-	}
 	gotSpawned = true;
 }
 
@@ -29,6 +24,16 @@ if (attackCooldown > 120 && attackInProg1)
 if (instance_exists(player_obj)) {
 	if (distance_to_object(player_obj) < aggroRange) {
 		image_angle = point_direction(x, y, player_obj.x, player_obj.y);
+	}
+	
+	if (image_xscale == -1) {
+		image_xscale = 1;
+	}
+	
+	if (image_angle > 90 && image_angle < 270) {
+		image_yscale = -1;
+	} else {
+		image_yscale = 1;
 	}
 }
 
@@ -83,41 +88,33 @@ if (movement)
 		}
 	}
 	
-	if (aggro && distance_to_object(player_obj) > DistFromPlayer)
+	if (aggro)
 	{
-		move_towards_point(player_obj.x, player_obj.y, movSpeed);
-		
-		if (dirLookat > 90 && dirLookat < 270)
-		{
-			turnDir = -1;
-		}
-		else
-		{
-			turnDir = 1;
-		}
-		if (turnDir == -1 && image_yscale == 1)
-		{
-			turnDelay -= global.dt;
-			if (turnDelay < 0)
-			{
-				image_yscale = -1;
-				turnDelay = turnDelaySave;
+		//MOVE TOWARDS PLAYER
+		if (distance_to_object(player_obj) > DistFromPlayer) {
+			if (player_obj.x > x) {
+				horspeed = movSpeed;
+			} else {
+				horspeed = -movSpeed;
+			}
+			if (player_obj.y > y) {
+				verspeed = movSpeed;
+			} else {
+				verspeed = -movSpeed;
+			}
+		//MOVE AWAY FROM PLAYER
+		} else {
+			if (player_obj.x > x) {
+				horspeed = -movSpeed / 1.5;
+			} else {
+				horspeed = movSpeed / 1.5;
+			}
+			if (player_obj.y > y) {
+				verspeed = -movSpeed / 1.5;
+			} else {
+				verspeed = movSpeed / 1.5;
 			}
 		}
-		if (turnDir == 1 && image_yscale == -1)
-		{
-			turnDelay -= global.dt;
-			if (turnDelay < 0)
-			{
-				image_yscale = 1;
-				turnDelay = turnDelaySave;
-			}
-		}
-	}
-	else
-	{
-		horspeed = 0;
-		speed = 0;
 	}
 }
 
