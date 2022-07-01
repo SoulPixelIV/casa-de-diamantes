@@ -13,6 +13,7 @@ if (attackTint && !damageTint) {
 }
 
 draw_self();
+draw_text_color(x + 30, y, string(attackInProg1) + "   " + string(attackInProg2), c_white, c_white, c_white, c_white, 1);
 
 //Change line color
 lineFlashTimer -= global.dt;

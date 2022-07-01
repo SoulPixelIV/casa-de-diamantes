@@ -23,7 +23,9 @@ if (attackCooldown > 120 && attackInProg1)
 //Rotate towards player
 if (instance_exists(player_obj)) {
 	if (distance_to_object(player_obj) < aggroRange) {
-		image_angle = point_direction(x, y, player_obj.x, player_obj.y);
+		if (attackCooldown > 150 || attackCooldown < 0) {
+			image_angle = point_direction(x, y, player_obj.x, player_obj.y);
+		}
 	}
 	
 	if (image_xscale == -1) {
@@ -92,24 +94,24 @@ if (movement)
 	{
 		//MOVE TOWARDS PLAYER
 		if (distance_to_object(player_obj) > DistFromPlayer) {
-			if (player_obj.x > x) {
+			if (player_obj.x + playerPosRandOffsetX > x) {
 				horspeed = movSpeed;
 			} else {
 				horspeed = -movSpeed;
 			}
-			if (player_obj.y > y) {
+			if (player_obj.y + playerPosRandOffsetY > y) {
 				verspeed = movSpeed;
 			} else {
 				verspeed = -movSpeed;
 			}
 		//MOVE AWAY FROM PLAYER
 		} else {
-			if (player_obj.x > x) {
+			if (player_obj.x + playerPosRandOffsetX > x) {
 				horspeed = -movSpeed / 1.5;
 			} else {
 				horspeed = movSpeed / 1.5;
 			}
-			if (player_obj.y > y) {
+			if (player_obj.y + playerPosRandOffsetY > y) {
 				verspeed = -movSpeed / 1.5;
 			} else {
 				verspeed = movSpeed / 1.5;
@@ -254,16 +256,11 @@ if (aggro)
 {	
 	if (instance_exists(player_obj))
 	{
-		if (player_obj.movement)
+		if (distance_to_object(player_obj) < DistFromPlayer + 64)
 		{
-			if ((image_xscale == 1 && player_obj.x > x) || (image_xscale == -1 && player_obj.x < x))
-			{
-				attackCooldown -= global.dt;
-			}
-			else
-			{
-				attackCooldown = attackCooldownSave;
-			}
+			attackCooldown -= global.dt;
+		} else {
+			attackCooldown = attackCooldownSave;
 		}
 	}
 
@@ -277,6 +274,7 @@ if (aggro)
 		sprite_index = zombieSoldierGirlGrenate_spr;
 	}
 
+	//#######ATTACK 1###############
 	if (attackCooldown < 300 && attackInProg1)
 	{
 		sprite_index = zombieSoldierGirlAim_spr;
@@ -316,10 +314,12 @@ if (aggro)
 		attackTintTimer = attackTintTimerSave;
 		attackTintDelay = -1;
 	}
+	
+	//#######ATTACK 2###############
 	if (attackCooldown < 0 && attackInProg2)
 	{	
 		var grenate = instance_create_layer(x + 15 * image_angle, y, "Instances", grenatePlant_obj);
-		grenate.horspeed = random_range(2, 4) * image_angle;
+		grenate.horspeed = random_range(7, 8) * image_angle;
 		grenate.verspeed = -0.5;
 		attackCooldown = attackCooldownSave / 2;
 		sprite_index = zombieSoldierGirlGrenate_spr;

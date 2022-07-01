@@ -28,6 +28,8 @@ exclamationmarkTimer = 250;
 turnDir = 1;
 dir = 0;
 gotSpawned = false;
+playerPosRandOffsetX = random_range(-48, 48);
+playerPosRandOffsetY = random_range(-48, 48);
 
 if (instance_exists(player_obj))
 {
