@@ -43,6 +43,13 @@ aggroTimer = 130;
 deaggroTimer = 3000;
 exclamationmarkTimer = 250;
 
+checkForPlayerPosTimer = 650; //Occasionally check for player pos for stage jumping
+stageTeleportTimer = 120 + random_range(-30, 30); //Timer until stage jump starts
+jumpToNewDest = false; //True while stage jumping happens
+spawnedStageJumpAnimation = false;
+newDestPosX = x;
+newDestPosY = y;
+
 attack1PrepareTimer = 300; //Timer before snap attack begins
 attack1StopTimer = 200; //Timer after snap attack begins
 snapAttack = false; //Snap Attack is happening
@@ -64,6 +71,8 @@ attackTintTimerSave = attackTintTimer;
 attackTintDelaySave = attackTintDelay;
 attackTintDelay = -1;
 gravityStrengthSave = gravityStrength;
+checkForPlayerPosTimerSave = checkForPlayerPosTimer;
+stageTeleportTimerSave = stageTeleportTimer;
 
 attack1PrepareTimerSave = attack1PrepareTimer;
 attack1StopTimerSave = attack1StopTimer;
