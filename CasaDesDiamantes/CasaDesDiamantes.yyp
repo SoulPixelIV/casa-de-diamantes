@@ -921,6 +921,7 @@
     {"id":{"name":"minecartRail3_obj","path":"objects/minecartRail3_obj/minecartRail3_obj.yy",},"order":21,},
     {"id":{"name":"glitterBottomWalking_spr","path":"sprites/glitterBottomWalking_spr/glitterBottomWalking_spr.yy",},"order":6,},
     {"id":{"name":"playerWalkingNude_spr","path":"sprites/playerWalkingNude_spr/playerWalkingNude_spr.yy",},"order":6,},
+    {"id":{"name":"stagejumpAnimation_spr","path":"sprites/stagejumpAnimation_spr/stagejumpAnimation_spr.yy",},"order":148,},
     {"id":{"name":"waterfall_obj","path":"objects/waterfall_obj/waterfall_obj.yy",},"order":22,},
     {"id":{"name":"waterfall2_obj","path":"objects/waterfall2_obj/waterfall2_obj.yy",},"order":23,},
     {"id":{"name":"balcony_obj","path":"objects/balcony_obj/balcony_obj.yy",},"order":24,},

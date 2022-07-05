@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spawnCloud_spr",
-    "path": "sprites/spawnCloud_spr/spawnCloud_spr.yy",
+    "name": "stagejumpAnimation_spr",
+    "path": "sprites/stagejumpAnimation_spr/stagejumpAnimation_spr.yy",
   },
   "solid": false,
   "visible": true,
