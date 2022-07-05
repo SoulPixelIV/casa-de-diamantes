@@ -1,6 +1,8 @@
-x += horspeed * global.dt / 3;
-y += verspeed * global.dt / 3;
-image_angle += global.dt / 5;
+speed = movSpeed * global.dt;
+
+//Animation
+image_speed = 0;
+image_index += (global.dt / 15) * animationSpeed;
 
 if (horspeed > 0)
 {
@@ -29,15 +31,9 @@ if (verspeed < 3)
 }
 
 //Collision
-//horspeed
-if (!place_free(x + horspeed, y))
+if (!place_free(x, y) && !place_meeting(x, y, colliderBulletFree_obj) || place_meeting(x, y, colliderEnemyOnly_obj))
 {
-    horspeed = 0;
-} 
-//verspeed
-if (!place_free(x, y + verspeed))
-{
-    verspeed = 0;   
+	speed = 0;
 }
 
 timer -= global.dt;
@@ -56,6 +52,7 @@ if (timer < 200)
 {
 	if (!playedSound)
 	{
+		animationSpeed = 0.75;
 		var beepShot = audio_play_sound_on(emitter, beep_snd, true, false);
 		audio_sound_pitch(beepShot, 0.8);
 		playedSound = true;

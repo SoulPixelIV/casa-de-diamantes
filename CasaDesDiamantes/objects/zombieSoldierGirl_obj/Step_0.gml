@@ -14,7 +14,7 @@ if (instance_exists(player_obj))
 	dirLookat = point_direction(x, y, player_obj.x, player_obj.y);
 }
 
-if (attackCooldown > 120 && attackInProg1)
+if (attackCooldown > 150 && (attackInProg1 || attackInProg2))
 {
 	playerPosX = player_obj.x;
 	playerPosY = player_obj.y;
@@ -271,7 +271,7 @@ if (aggro)
 	else
 	{
 		attackInProg2 = true;
-		sprite_index = zombieSoldierGirlGrenate_spr;
+		//sprite_index = zombieSoldierGirlGrenate_spr;
 	}
 
 	//#######ATTACK 1###############
@@ -316,16 +316,41 @@ if (aggro)
 	}
 	
 	//#######ATTACK 2###############
+	if (attackCooldown < 300 && attackInProg2)
+	{
+		sprite_index = zombieSoldierGirlAim_spr;
+		
+		//Attack Flash
+		if (attackCooldown < 150) {
+			attackTintTimer -= global.dt;
+			if (attackTintTimer > 0) {
+				attackTint = true;
+				attackTintDelay = attackTintDelaySave;
+			}
+			if (attackTintTimer < 0) {
+				attackTint = false;
+				attackTintDelay -= global.dt;
+			}
+		
+			if (attackTintDelay < 0) {
+				attackTintTimer = attackTintTimerSave;
+			}
+		}
+	}
 	if (attackCooldown < 0 && attackInProg2)
 	{	
-		var grenate = instance_create_layer(x + 15 * image_angle, y, "Instances", grenatePlant_obj);
-		grenate.horspeed = random_range(7, 8) * image_angle;
-		grenate.verspeed = -0.5;
-		attackCooldown = attackCooldownSave / 2;
-		sprite_index = zombieSoldierGirlGrenate_spr;
+		repeat(6) {
+			var grenate = instance_create_layer(x, y, "Instances", grenatePlant_obj);
+		}
+		attackCooldown = attackCooldownSave;
+		//sprite_index = zombieSoldierGirlGrenate_spr;
 		attackInProg1 = false;
 		attackInProg2 = false;
-		randAttack = choose(1,1,2);
+		randAttack = choose(1,2);
+		
+		attackTint = false;
+		attackTintTimer = attackTintTimerSave;
+		attackTintDelay = -1;
 	}
 }
 
@@ -335,6 +360,14 @@ if (damageTintTimer < 0)
 	damageTintTimer = damageTintTimerSave;
 	damageTint = false;
 	damageTintHeadshot = false;
+}
+
+//Reset Tint
+if (distance_to_object(player_obj) > DistFromPlayer + 64)
+{
+	attackTint = false;
+	attackTintTimer = attackTintTimerSave;
+	attackTintDelay = -1;
 }
 
 checkPlayerTimer -= global.dt;

@@ -1,9 +1,15 @@
 timer = 800;
 horspeed = 0;
 verspeed = 0;
+movSpeed = 4.3;
 gravityStrength = -0.12;
-image_speed = 1;
+animationSpeed = 0;
 playedSound = false;
+
+body = instance_nearest(x, y, zombieSoldierGirl_obj);
+
+move_towards_point(body.playerPosX + random_range(-16, 16), body.playerPosY + random_range(-16, 16), movSpeed * global.dt);
+image_angle = point_direction(x, y, body.playerPosX, body.playerPosY);
 
 //Create Emitter
 emitter = audio_emitter_create();
