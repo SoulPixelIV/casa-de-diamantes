@@ -4,6 +4,7 @@ movSpeed = 2.7;
 createdFire = false;
 invincibilityTimer = 5;
 playedSound = false;
+lifetime = 3000;
 
 dealtDamage = false;
 penetrationTime = 3;

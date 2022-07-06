@@ -152,8 +152,8 @@ if (checkEnemycountTimer < 0)
 			{
 				if (instance_exists(deathCross_obj))
 				{
-					enemySlowmo = true;
-					camera_obj.follow = instance_nearest(x, y, deathCross_obj);
+					//enemySlowmo = true;
+					//camera_obj.follow = instance_nearest(x, y, deathCross_obj);
 				}
 			}
 		}
