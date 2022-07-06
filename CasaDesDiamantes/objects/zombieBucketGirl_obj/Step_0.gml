@@ -110,7 +110,7 @@ if (movement)
 	}
 	
 	//Stage Jumping
-	if (instance_exists(player_obj) && !jumpToNewDest) {
+	if (instance_exists(player_obj) && !jumpToNewDest && aggro) {
 		checkForPlayerPosTimer -= global.dt;
 		
 		if (checkForPlayerPosTimer < 0) {
@@ -224,12 +224,6 @@ if (hp < 0)
 		player_obj.camFollowTarget = deathCross;
 	}
 	
-	//Destroy Bucket
-	if (instance_exists(bucketHitbox))
-	{
-		instance_destroy(bucketHitbox);
-	}
-	
 	//Drop Item
 	if (instance_exists(player_obj))
 	{
@@ -302,32 +296,6 @@ if (hp < 0)
 	global.scorepoints += points * global.multiplier;
 	
 	instance_destroy();
-}
-
-//Bucket Hitbox
-with (bucketHitbox)
-{
-	if (instance_exists(body))
-	{
-		if (x != body.x && y != body.y)
-		{
-			x = body.x;
-			y = body.y - 16;
-		}
-	}
-}
-
-//Bucket Destruction
-if (hpBucket < 0 && !playedSound)
-{
-	audio_play_sound(bucketBroken_snd, 1, false);
-	playedSound = true;
-	bucketRemoved = true;
-	sprite_index = zombieBucketGirlBroken_spr;
-	with (bucketHitbox)
-	{
-		instance_destroy();
-	}
 }
 
 //###Attack###

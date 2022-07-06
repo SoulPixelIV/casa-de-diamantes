@@ -124,7 +124,7 @@ if (movement)
 	}
 	
 	//Stage Jumping
-	if (instance_exists(player_obj) && !jumpToNewDest) {
+	if (instance_exists(player_obj) && !jumpToNewDest && aggro) {
 		checkForPlayerPosTimer -= global.dt;
 		
 		if (checkForPlayerPosTimer < 0) {

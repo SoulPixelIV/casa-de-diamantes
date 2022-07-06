@@ -83,12 +83,6 @@ attack2StopTimerSave = attack2StopTimer;
 
 blend = image_blend;
 
-bucketHitbox = instance_create_layer(x, y - 16, "Instances", bucketHitbox_obj);
-with (bucketHitbox)
-{
-	body = instance_nearest(x, y, zombieBucketGirl_obj);
-}
-
 checkPlayerTimer = 50;
 checkPlayerTimerSave = checkPlayerTimer;
 checkPlayerTimer = 0;

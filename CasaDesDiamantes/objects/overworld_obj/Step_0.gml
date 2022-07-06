@@ -29,19 +29,40 @@ if (keyboard_check_pressed(vk_enter))
 			room_goto(level0_RoadToCasino);
 		break;
 		case 1:
-			room_goto(level_Casino);
+			room_goto(level1_RoadToCasino);
 		break;
 		case 2:
-			room_goto(level0_SenzelaForest);
+			room_goto(level_Casino);
 		break;
 		case 3:
-			room_goto(level0_Powerplant);
+			room_goto(level0_SenzelaForest);
 		break;
 		case 4:
-			room_goto(level0_DarkSewers);
+			room_goto(level1_SenzelaForest);
 		break;
 		case 5:
-			room_goto(infiniteSpawn);
+			room_goto(level2_SenzelaForest);
+		break;
+		case 6:
+			room_goto(level3_SenzelaForest);
+		break;
+		case 7:
+			room_goto(level0_Powerplant);
+		break;
+		case 8:
+			room_goto(level1_Powerplant);
+		break;
+		case 9:
+			room_goto(level2_Powerplant);
+		break;
+		case 10:
+			room_goto(level3_Powerplant);
+		break;
+		case 11:
+			room_goto(level0_DarkSewers);
+		break;
+		case 12:
+			room_goto(enemyTestRoom1);
 		break;
 	}
 }
