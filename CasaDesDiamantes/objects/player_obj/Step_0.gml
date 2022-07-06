@@ -1636,14 +1636,16 @@ if (colliding)
 		}
 	}
 	//Enemy Collision
-	if (place_meeting(x + horspeed * global.dt, y, enemy_obj))
-	{
-		var nearEnemy = instance_place(x + horspeed * global.dt, y, enemy_obj);
-		if (nearEnemy != noone)
+	if (!isDashing) {
+		if (place_meeting(x + horspeed * global.dt, y, enemy_obj))
 		{
-			if (nearEnemy.colliding)
+			var nearEnemy = instance_place(x + horspeed * global.dt, y, enemy_obj);
+			if (nearEnemy != noone)
 			{
-				horspeed = 0;
+				if (nearEnemy.colliding)
+				{
+					horspeed = 0;
+				}
 			}
 		}
 	}
@@ -1677,13 +1679,15 @@ if (colliding)
 		createdParticles = false;
 	}
 	//Enemy Collision
-	if (place_meeting(x, y + verspeed * global.dt, enemy_obj))
-	{
-		if (instance_place(x, y + verspeed * global.dt, enemy_obj).colliding)
+	if (!isDashing) {
+		if (place_meeting(x, y + verspeed * global.dt, enemy_obj))
 		{
-			var collidingEnemy = instance_place(x, y + verspeed * global.dt, enemy_obj);
-			collidingEnemy.verspeed = 0;
-			verspeed = 0;
+			if (instance_place(x, y + verspeed * global.dt, enemy_obj).colliding)
+			{
+				var collidingEnemy = instance_place(x, y + verspeed * global.dt, enemy_obj);
+				collidingEnemy.verspeed = 0;
+				verspeed = 0;
+			}
 		}
 	}
 }
