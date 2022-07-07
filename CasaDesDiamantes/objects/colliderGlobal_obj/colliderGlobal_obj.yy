@@ -4,7 +4,10 @@
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_shadow_caster",
+    "path": "objects/obj_shadow_caster/obj_shadow_caster.yy",
+  },
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
