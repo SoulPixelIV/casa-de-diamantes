@@ -275,12 +275,12 @@ if (aggro)
 	}
 
 	//#######ATTACK 1###############
-	if (attackCooldown < 300 && attackInProg1)
+	if (attackCooldown < 200 && attackInProg1)
 	{
 		sprite_index = zombieSoldierGirlAim_spr;
 		
 		//Attack Flash
-		if (attackCooldown < 150) {
+		if (attackCooldown < 75) {
 			attackTintTimer -= global.dt;
 			if (attackTintTimer > 0) {
 				attackTint = true;
@@ -316,12 +316,12 @@ if (aggro)
 	}
 	
 	//#######ATTACK 2###############
-	if (attackCooldown < 300 && attackInProg2)
+	if (attackCooldown < 200 && attackInProg2)
 	{
 		sprite_index = zombieSoldierGirlAim_spr;
 		
 		//Attack Flash
-		if (attackCooldown < 150) {
+		if (attackCooldown < 75) {
 			attackTintTimer -= global.dt;
 			if (attackTintTimer > 0) {
 				attackTint = true;

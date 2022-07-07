@@ -7,7 +7,7 @@ draw_text(32, optionsY[2], "Setting -NOT DONE-");
 draw_text(32, optionsY[3], "Exit");
 
 draw_set_halign(fa_right);
-draw_text(global.xScreenSize - 24, global.yScreenSize - 16, "v.0.4.2");
+draw_text(global.xScreenSize - 24, global.yScreenSize - 16, "v.0.4.3");
 draw_set_halign(fa_left);
 
 //Draw title

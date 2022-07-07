@@ -45,7 +45,7 @@ if (!aggro)
 }
 
 //Vision line
-if (attackCooldown < 300 && !attackInProg2 && aggro)
+if (attackCooldown < 150 && !attackInProg2 && aggro)
 {
 	draw_sprite_ext(warninglaser_spr, -1, x, y, 1, 1, image_angle, -1, 1);
 }
