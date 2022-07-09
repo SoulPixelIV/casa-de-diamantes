@@ -1,5 +1,5 @@
 spawnTimer = random_range(0.5,1.2);
-liveTimer = 300;
+liveTimer = 250;
 xPos = 0;
 dir = 0;
 

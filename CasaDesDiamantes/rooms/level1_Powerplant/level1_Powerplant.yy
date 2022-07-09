@@ -621,6 +621,7 @@
         {"properties":[],"isDnd":false,"objectId":{"name":"chipBluePickupStatic_obj","path":"objects/chipBluePickupStatic_obj/chipBluePickupStatic_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":3984.0,"y":1330.0,"resourceVersion":"1.0","name":"inst_4977D317","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"chipBluePickupStatic_obj","path":"objects/chipBluePickupStatic_obj/chipBluePickupStatic_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":3984.0,"y":1298.0,"resourceVersion":"1.0","name":"inst_74C62378","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"shotgun_obj","path":"objects/shotgun_obj/shotgun_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1184.0,"y":1504.0,"resourceVersion":"1.0","name":"inst_40472F6A","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"zombieBucketGirl_obj","path":"objects/zombieBucketGirl_obj/zombieBucketGirl_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":-1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1536.0,"y":1504.0,"resourceVersion":"1.0","name":"inst_1F3883F2","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":1000,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],"resourceVersion":"1.0","name":"Instances","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"checkpoint_obj","path":"objects/checkpoint_obj/checkpoint_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1392.0,"y":1546.0,"resourceVersion":"1.0","name":"inst_35111358","tags":[],"resourceType":"GMRInstance",},
@@ -1894,6 +1895,7 @@
     {"name":"inst_4966ADAF","path":"rooms/level1_Powerplant/level1_Powerplant.yy",},
     {"name":"inst_2F89DA3E","path":"rooms/level1_Powerplant/level1_Powerplant.yy",},
     {"name":"inst_40472F6A","path":"rooms/level1_Powerplant/level1_Powerplant.yy",},
+    {"name":"inst_1F3883F2","path":"rooms/level1_Powerplant/level1_Powerplant.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

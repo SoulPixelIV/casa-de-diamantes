@@ -1,7 +1,7 @@
 spawnTimer -= global.dt;
 liveTimer -= global.dt;
 
-xPos += (global.dt / 1.3) * dir;
+xPos += (global.dt * 1.2) * dir;
 
 if (instance_exists(hitboxFlowerAttack)) {
 	hitboxFlowerAttack.image_xscale += global.dt / 25;

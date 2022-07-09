@@ -64,11 +64,11 @@ if (movement)
 				{
 					if (player_obj.x > x)
 					{
-						horspeed = movSpeed;
+						horspeed = -movSpeed;
 					}
 					else
 					{
-						horspeed = -movSpeed;
+						horspeed = movSpeed;
 					}
 				}
 				else
@@ -88,20 +88,20 @@ if (movement)
 			{
 				if (player_obj.x > x)
 				{
-					horspeed = movSpeed;
+					horspeed = -movSpeed;
 				}
 				else
 				{
-					horspeed = -movSpeed;
+					horspeed = movSpeed;
 				}
 			}
-			if (dirLookat > 90 && dirLookat < 270)
+			if (horspeed < 0)
 			{
-				image_xscale = -0.5;
+				image_xscale = -1;
 			}
 			else
 			{
-				image_xscale = 0.5;
+				image_xscale = 1;
 			}
 		}
 		else

@@ -4,7 +4,7 @@
     "path": "sprites/playerBulletLine_spr/playerBulletLine_spr.yy",
   },
   "solid": false,
-  "visible": true,
+  "visible": false,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": null,
