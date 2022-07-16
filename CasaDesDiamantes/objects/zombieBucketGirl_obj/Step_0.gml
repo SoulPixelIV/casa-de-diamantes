@@ -310,16 +310,19 @@ if (aggro && !attackInProg1 && !attackInProg2)
 //Prepare Attack
 if (attackCooldown < 0)
 {
-	if (distance_to_object(player_obj) < 64)
+	if (randAttack == 1)
 	{
 		sprite_index = zombieBucketGirlAttack1_spr;
 		movement = false;
 		attackInProg1 = true;
-	} else {
+	}
+	else
+	{
 		sprite_index = zombieBucketGirlAttack2_spr;
 		movement = false;
 		attackInProg2 = true;
 	}
+	
 	attackCooldown = attackCooldownSave;
 }
 
@@ -422,6 +425,7 @@ if (attackInProg1 && sprite_index == zombieBucketGirlAttack1Stop_spr && image_in
 	movement = true;
 	spawnedHitbox = false;
 	switchedSprite = false;
+	randAttack = choose(1,2);
 }
 
 //Start Attack 2
@@ -481,6 +485,7 @@ if (attackInProg2 && sprite_index == zombieBucketGirlAttack1Stop_spr && image_in
 	sprite_index = zombieBucketGirl_spr;
 	damageCollision = false;
 	movement = true;
+	randAttack = choose(1,2);
 }
 
 if (delay)

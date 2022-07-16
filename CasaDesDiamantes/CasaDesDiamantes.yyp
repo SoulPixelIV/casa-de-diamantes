@@ -881,6 +881,7 @@
     {"id":{"name":"drill_snd","path":"sounds/drill_snd/drill_snd.yy",},"order":3,},
     {"id":{"name":"ledStripe_obj","path":"objects/ledStripe_obj/ledStripe_obj.yy",},"order":2,},
     {"id":{"name":"glitterBottomStatic_spr","path":"sprites/glitterBottomStatic_spr/glitterBottomStatic_spr.yy",},"order":8,},
+    {"id":{"name":"goldbulletpoint_spr","path":"sprites/goldbulletpoint_spr/goldbulletpoint_spr.yy",},"order":149,},
     {"id":{"name":"ledStripe2_obj","path":"objects/ledStripe2_obj/ledStripe2_obj.yy",},"order":3,},
     {"id":{"name":"backgroundWindow_obj","path":"objects/backgroundWindow_obj/backgroundWindow_obj.yy",},"order":5,},
     {"id":{"name":"zombieSoldierGirlDESIGN_spr","path":"sprites/zombieSoldierGirlDESIGN_spr/zombieSoldierGirlDESIGN_spr.yy",},"order":8,},

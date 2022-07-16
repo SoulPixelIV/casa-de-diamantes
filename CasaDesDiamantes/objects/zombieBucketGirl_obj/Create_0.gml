@@ -16,6 +16,7 @@ gotSpawned = false;
 
 switchedSprite = false;
 
+randAttack = 1;
 lastBullet = bulletPistol_obj;
 ammoSpawnCount = 7;
 animationSpeed = 0.5;
