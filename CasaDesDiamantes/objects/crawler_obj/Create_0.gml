@@ -3,11 +3,11 @@ horspeed = 0;
 verspeed = 0;
 gravityStrength = -0.05;
 
-hp = 35;
+hp = 25;
 colliding = false;
 hitable = true;
 knockback = 0;
-movSpeed = 0.85;
+movSpeed = 1.12;
 movSpeedGrad = 0;
 moneyDropMin = 1;
 moneyDropMax = 2;
@@ -25,6 +25,13 @@ playedSound = false;
 flameSound = noone;
 points = 75;
 
+checkForPlayerPosTimer = 650; //Occasionally check for player pos for stage jumping
+stageTeleportTimer = 120 + random_range(-30, 30); //Timer until stage jump starts
+jumpToNewDest = false; //True while stage jumping happens
+spawnedStageJumpAnimation = false;
+newDestPosX = x;
+newDestPosY = y;
+
 lastBullet = bulletPistol_obj;
 ammoSpawnCount = 2;
 attackInProg1 = false;
@@ -32,8 +39,8 @@ startFire = false;
 attackInProg2 = false;
 fireballInstance = noone;
 attackCooldown = 180;
-attackDelay1 = 450;
-attackDelay2 = 700;
+attackDelay1 = 250;
+attackDelay2 = 350;
 delay1 = false;
 delay2 = false;
 aggro = false;
@@ -55,6 +62,8 @@ deaggroTimerSave = deaggroTimer;
 exclamationmarkTimerSave = exclamationmarkTimer;
 useDelayTimerSave = useDelayTimer;
 gravityStrengthSave = gravityStrength;
+checkForPlayerPosTimerSave = checkForPlayerPosTimer;
+stageTeleportTimerSave = stageTeleportTimer;
 
 blend = image_blend;
 
