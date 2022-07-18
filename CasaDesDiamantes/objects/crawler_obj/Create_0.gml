@@ -25,6 +25,14 @@ playedSound = false;
 flameSound = noone;
 points = 75;
 
+damageTint = false;
+attackTint = false;
+damageTintTimer = 15;
+attackTintTimer = 15;
+attackTintDelay = 10;
+
+attack1PrepareTimer = 100; //Timer before snap attack begins
+
 checkForPlayerPosTimer = 650; //Occasionally check for player pos for stage jumping
 stageTeleportTimer = 120 + random_range(-30, 30); //Timer until stage jump starts
 jumpToNewDest = false; //True while stage jumping happens
@@ -35,7 +43,6 @@ newDestPosY = y;
 lastBullet = bulletPistol_obj;
 ammoSpawnCount = 2;
 attackInProg1 = false;
-startFire = false;
 attackInProg2 = false;
 fireballInstance = noone;
 attackCooldown = 180;
@@ -64,6 +71,13 @@ useDelayTimerSave = useDelayTimer;
 gravityStrengthSave = gravityStrength;
 checkForPlayerPosTimerSave = checkForPlayerPosTimer;
 stageTeleportTimerSave = stageTeleportTimer;
+
+attack1PrepareTimerSave = attack1PrepareTimer;
+
+damageTintTimerSave = damageTintTimer;
+attackTintTimerSave = attackTintTimer;
+attackTintDelaySave = attackTintDelay;
+attackTintDelay = -1;
 
 blend = image_blend;
 

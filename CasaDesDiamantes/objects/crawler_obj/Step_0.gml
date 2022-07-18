@@ -97,7 +97,7 @@ if (aggro)
 		}
 	}
 	
-	if (attackInProg2)
+	if (attackInProg1)
 	{
 		if (movSpeedGrad > 1)
 		{
@@ -347,82 +347,74 @@ if (useDelayTimer < 0)
 //Cooldown
 if (aggro && checkedWaypoint)
 {	
-	if (!attackInProg1 || !attackInProg2)
+	if (!attackInProg1)
 	{
 		attackCooldown -= global.dt;
 	
-		if (attackCooldown < 0 && !attackInProg1 && !attackInProg2)
+		if (attackCooldown < 0 && !attackInProg1)
 		{
-			if (fireballInstance == noone && place_free(x, y - 46))
-			{
-				var attack = choose(1, 2);
-				if (attack == 1)
-				{
-					attackInProg1 = true;
-				}
-				if (attack == 2)
-				{
-					attackInProg2 = true;
-				}
-			}
-			else
-			{
-				attackInProg1 = true;
-			}
+			attackInProg1 = true;
 		}
-	}
-}
-
-//Prepare Attack
-if (verspeed == 0 && attackInProg1 && !startFire)
-{
-	if (distance_to_object(player_obj) < 126)
-	{
-		animationSpeed = 0.2;
-		sprite_index = crawlerFireAttackProgress_spr;
-	}
-	if (image_index > image_number - 1)
-	{
-		startFire = true;
 	}
 }
 
 //Start Attack 1
-if (attackInProg1 && startFire)
+if (attackInProg1)
 {
-	if (!playedSound)
-	{
-		flameSound = audio_play_sound_on(emitter, flamethrower_snd, true, false);
-		playedSound = true;
+	attack1PrepareTimer -= global.dt;
+	//Attack Flashing
+	if (attack1PrepareTimer < 150 && attack1PrepareTimer > 0) {
+		attackTintTimer -= global.dt;
+		if (attackTintTimer > 0) {
+			attackTint = true;
+			attackTintDelay = attackTintDelaySave;
+		}
+		if (attackTintTimer < 0) {
+			attackTint = false;
+			attackTintDelay -= global.dt;
+		}
+		
+		if (attackTintDelay < 0) {
+			attackTintTimer = attackTintTimerSave;
+		}
 	}
 	
-	animationSpeed = 1.25;
-	sprite_index = crawlerFireAttack_spr;
-	delay1 = true;
-	if (!instance_exists(dmgHitbox))
-	{
-		dmgHitbox = instance_create_layer(x + 12, y, "Instances", damageHitbox_obj);
-		with (dmgHitbox)
+	if (attack1PrepareTimer < 0) {
+		if (!playedSound)
+		{
+			flameSound = audio_play_sound_on(emitter, flamethrower_snd, true, false);
+			playedSound = true;
+		}
+	
+		animationSpeed = 1.25;
+		sprite_index = crawlerFireAttack_spr;
+		delay1 = true;
+		if (!instance_exists(dmgHitbox))
+		{
+			dmgHitbox = instance_create_layer(x + 24 * image_xscale, y - 16, "Instances", damageHitbox_obj);
+			with (dmgHitbox)
+			{
+				body = instance_nearest(x, y, crawler_obj);
+			}
+			dmgHitbox.damage = 20;
+			dmgHitbox.image_xscale = 1.5;
+			dmgHitbox.image_yscale = 5;
+			dmgHitbox.timer = attackDelay1;
+		}
+	
+		if (!instance_exists(light))
+		{
+			light = instance_create_layer(x, y, "GraphicsLayer", spotlightYellow_obj);
+		}
+		with (light)
 		{
 			body = instance_nearest(x, y, crawler_obj);
 		}
-		dmgHitbox.damage = 20;
-		dmgHitbox.image_xscale = 3;
-		dmgHitbox.image_yscale = 1.5;
-		dmgHitbox.timer = attackDelay1;
-	}
-	
-	if (!instance_exists(light))
-	{
-		light = instance_create_layer(x, y, "GraphicsLayer", spotlightYellow_obj);
-	}
-	with (light)
-	{
-		body = instance_nearest(x, y, crawler_obj);
 	}
 }
 
 //Start Attack 2
+/*
 if (attackInProg2)
 {
 	animationSpeed = 1.25;
@@ -440,6 +432,7 @@ if (attackInProg2)
 		playedSound = true;
 	}
 }
+*/
 	
 if (delay1)
 {
@@ -453,11 +446,11 @@ if (attackDelay1 < 0 || attackDelay2 < 0)
 {
 	attackCooldown = attackCooldownSave;
 	delay1 = false;
-	startFire = false;
 	attackDelay1 = attackDelay1Save;
 	attackDelay2 = attackDelay2Save;
 	attackInProg1 = false;
 	attackInProg2 = false;
+	attack1PrepareTimer = attack1PrepareTimerSave;
 	animationSpeed = 1;
 	sprite_index = crawler_spr;
 	damageCollision = false;
@@ -489,21 +482,10 @@ if (instance_exists(light))
 }
 if (instance_exists(dmgHitbox))
 {
-	if (dir == 0)
+	with (dmgHitbox)
 	{
-		with (dmgHitbox)
-		{
-			x = body.x + 16;
-			y = body.y;
-		}
-	}
-	else
-	{
-		with (dmgHitbox)
-		{
-			x = body.x - 16;
-			y = body.y;
-		}
+		x = body.x + 24 * image_xscale;
+		y = body.y - 16;
 	}
 }
 
@@ -540,25 +522,25 @@ audio_emitter_position(emitter, x, y, 0);
 
 //Collision
 //horspeed
-if (!place_free(x + (horspeed * global.dt), y))
+if (!place_free(x + horspeed * global.dt, y) || place_meeting(x + horspeed * global.dt, y, colliderEnemyOnly_obj))
 {
 	if (sign(horspeed) != 0)
 	{
-		while (place_free(x + sign(horspeed) / 100, y))
+		while (place_free(x + sign(horspeed), y) && !place_meeting(x + sign(horspeed), y, colliderEnemyOnly_obj))
 		{
-			x += sign(horspeed) / 100;
+			x += sign(horspeed);
 		}
 		horspeed = 0;
 	}
 } 
 //verspeed
-if (!place_free(x, y + (verspeed * global.dt)))
+if (!place_free(x, y + verspeed * global.dt) || place_meeting(x, y + verspeed * global.dt, colliderEnemyOnly_obj))
 {
 	if (sign(verspeed) != 0)
 	{
-		while (place_free(x, y + sign(verspeed) / 100))
+		while (place_free(x, y + sign(verspeed)) && !place_meeting(x, y + sign(verspeed), colliderEnemyOnly_obj))
 		{
-			y += sign(verspeed) / 100;
+			y += sign(verspeed);
 		}
 		verspeed = 0;
 	}
