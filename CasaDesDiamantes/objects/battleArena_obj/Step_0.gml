@@ -2,6 +2,16 @@
 
 setWave = false;
 
+//Start Soundtrack
+if (place_meeting(x, y, player_obj)) {
+	if (!playedMusic) {
+		currMusic = audio_play_sound(choose(track1_msc), 1, true);
+		audio_sound_gain(currMusic, 0, 0);
+		audio_sound_gain(currMusic, 1, 5000);
+	}
+	playedMusic = true;
+}
+
 //Spawn wounded enemies
 woundedSpawntimer -= global.dt;
 
@@ -50,6 +60,7 @@ if (!place_meeting(x, y, enemy_obj) && !place_meeting(x, y, spawnCloud_obj))
 if (done && !setArenaMessage) {
 	camera_obj.arenaCompleteMessage = true;
 	setArenaMessage = true;
+	audio_sound_gain(currMusic, 0, 5000);
 }
 
 checkEnemycountTimer -= global.dt;

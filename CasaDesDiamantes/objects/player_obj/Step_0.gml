@@ -1138,7 +1138,7 @@ if (!isZombie && !reloading)
 		
 		if (!startScrollDelay)
 		{
-			if (mouse_wheel_up())
+			if (mouse_wheel_up() || gamepad_button_check(0, gp_shoulderr) || gamepad_button_check(4, gp_shoulderr))
 			{
 				startScrollDelay = true;
 				if (selWeapon > array_length(scrollWeapons) - 1)
@@ -1172,7 +1172,7 @@ if (!isZombie && !reloading)
 				}
 				pickWeapon_scr(selWeapon);
 			}
-			if (mouse_wheel_down())
+			if (mouse_wheel_down() || gamepad_button_check(0, gp_shoulderl) || gamepad_button_check(4, gp_shoulderl))
 			{
 				startScrollDelay = true;
 				if (selWeapon < 2)
