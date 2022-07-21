@@ -13,6 +13,7 @@ woundedSpawntimer = 2600;
 enemyList[0] = noone;
 enemyList[1] = noone;
 playedMusic = false;
+currMusic = noone;
 
 checkEnemycountTimer = 100;
 checkEnemycountTimerSave = checkEnemycountTimer;

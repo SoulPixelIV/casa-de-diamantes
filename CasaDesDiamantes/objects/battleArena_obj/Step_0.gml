@@ -10,6 +10,10 @@ if (place_meeting(x, y, player_obj)) {
 		audio_sound_gain(currMusic, 1, 5000);
 	}
 	playedMusic = true;
+} else {
+	if (currMusic != noone) {
+		audio_sound_gain(currMusic, 0, 5000);
+	}
 }
 
 //Spawn wounded enemies
