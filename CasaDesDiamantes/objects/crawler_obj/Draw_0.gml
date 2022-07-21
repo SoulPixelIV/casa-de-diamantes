@@ -36,7 +36,5 @@ if (damageTint) {
 	blend = image_blend;
 }
 
-draw_text_color(x + 30, y, string(attackCooldown), c_white, c_white, c_white, c_white, 1);
-
 shader_reset();
 gpu_set_blendmode(bm_normal);

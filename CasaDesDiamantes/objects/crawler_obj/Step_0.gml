@@ -65,7 +65,7 @@ if (aggroTimer < 0)
 
 if (aggro)
 {
-	if (checkedWaypoint)
+	if (checkedWaypoint && !attackInProg1)
 	{
 		if (instance_exists(player_obj))
 		{
@@ -86,31 +86,20 @@ if (aggro)
 	{
 		if (movSpeedGrad <= movSpeed)
 		{
-			movSpeedGrad += global.dt / 350;
+			movSpeedGrad += global.dt / 200;
 		}
 	}
 	else
 	{
 		if (movSpeedGrad >= -movSpeed)
 		{
-			movSpeedGrad -= global.dt / 350;
+			movSpeedGrad -= global.dt / 200;
 		}
 	}
 	
 	if (attackInProg1)
 	{
-		if (movSpeedGrad > 1)
-		{
-			movSpeedGrad -= global.dt / 200;
-		}
-		if (movSpeedGrad < -1)
-		{
-			movSpeedGrad += global.dt / 200;
-		}
-		if (movSpeedGrad < 1 && movSpeedGrad > -1)
-		{
-			movSpeedGrad = 0;
-		}
+		movSpeedGrad = 0;
 	}
 	
 	if (checkedWaypoint)
@@ -155,7 +144,7 @@ if (aggro)
 	}
 	
 	//Stage Jumping
-	if (instance_exists(player_obj) && !jumpToNewDest && aggro) {
+	if (instance_exists(player_obj) && !jumpToNewDest && aggro && !attackInProg1) {
 		checkForPlayerPosTimer -= global.dt;
 		
 		if (checkForPlayerPosTimer < 0) {
@@ -331,6 +320,12 @@ if (hp < 0)
 	instance_change(zombieGirlDeath2_obj, true);
 }
 
+if (damageTintTimer < 0)
+{
+	damageTintTimer = damageTintTimerSave;
+	damageTint = false;
+}
+
 //Lever Delay
 if (usedLever)
 {
@@ -380,6 +375,10 @@ if (attackInProg1)
 	}
 	
 	if (attack1PrepareTimer < 0) {
+		attackTint = false;
+		attackTintTimer = attackTintTimerSave;
+		attackTintDelay = -1;
+		
 		if (!playedSound)
 		{
 			flameSound = audio_play_sound_on(emitter, flamethrower_snd, true, false);
@@ -391,14 +390,14 @@ if (attackInProg1)
 		delay1 = true;
 		if (!instance_exists(dmgHitbox))
 		{
-			dmgHitbox = instance_create_layer(x + 24 * image_xscale, y - 16, "Instances", damageHitbox_obj);
+			dmgHitbox = instance_create_layer(x + 37 * image_xscale, y - 32, "Instances", damageHitbox_obj);
 			with (dmgHitbox)
 			{
 				body = instance_nearest(x, y, crawler_obj);
 			}
 			dmgHitbox.damage = 20;
 			dmgHitbox.image_xscale = 1.5;
-			dmgHitbox.image_yscale = 5;
+			dmgHitbox.image_yscale = 6;
 			dmgHitbox.timer = attackDelay1;
 		}
 	
@@ -484,8 +483,8 @@ if (instance_exists(dmgHitbox))
 {
 	with (dmgHitbox)
 	{
-		x = body.x + 24 * image_xscale;
-		y = body.y - 16;
+		x = body.x + 37 * body.image_xscale;
+		y = body.y - 32;
 	}
 }
 
