@@ -5,17 +5,24 @@ if (!gotSpawned)
 	spawn = instance_create_layer(x, y, "Instances", enemyHiddenSpawnpoint_obj);
 	spawn.hp = hp;
 	spawn.aggroRange = aggroRange;
-	spawn.spawnID = zombieBucketGirl_obj;
+	spawn.spawnID = zombieGirl_obj;
 	spawn.dir = image_xscale;
 	gotSpawned = true;
 }
 
-dirLookat = point_direction(x, y, player_obj.x, player_obj.y);
+if (instance_exists(player_obj))
+{
+	dirLookat = point_direction(x, y, player_obj.x, player_obj.y);
+}
+else
+{
+	dirLookat = 0;
+}
 
 //Walking Animation
-if (horspeed != 0 && !attackInProg1 && !attackInProg2) {
-	animationSpeed = 0.75;
-	sprite_index = zombieBucketGirlWalking_spr;
+if (horspeed != 0 && !attackInProg && !attackInProg2) {
+	animationSpeed = 0.5;
+	sprite_index = spidercorpseWalking_spr;
 }
 
 //Sight Check
@@ -56,20 +63,38 @@ if (aggroTimer < 0)
 
 if (movement)
 {
-	if (dirLookat > 90 && dirLookat < 270)
+	if (aggro && distance_to_object(player_obj) > 24)
 	{
-		image_xscale = -1;
-	}
-	else
-	{
-		image_xscale = 1;
-	}
-		
-	if (aggro && distance_to_object(player_obj) > 128)
-	{
-		if (instance_exists(hazard_obj))
-		{
-			if (!collision_circle(x, y, 64, hazard_obj, false, true))
+		//Check if ground to walk on exists
+		if (place_meeting(x + 16 * image_xscale, y + 24, colliderGlobal_obj)) {
+			if (instance_exists(hazard_obj))
+			{
+				//Check if hazard is near and avoid it
+				if (!collision_circle(x, y, 64, hazard_obj, false, true))
+				{
+					if (player_obj.x > x)
+					{
+						horspeed = movSpeed;
+					}
+					else
+					{
+						horspeed = -movSpeed;
+					}
+				}
+				else
+				{
+					hazard = instance_nearest(x, y, hazard_obj);
+					if (hazard.x > x)
+					{
+						horspeed = -movSpeed / 2;
+					}
+					else
+					{
+						horspeed = movSpeed / 2;
+					}
+				}
+			}
+			else
 			{
 				if (player_obj.x > x)
 				{
@@ -80,29 +105,17 @@ if (movement)
 					horspeed = -movSpeed;
 				}
 			}
-			else
-			{
-				hazard = instance_nearest(x, y, hazard_obj);
-				if (hazard.x > x)
-				{
-					horspeed = -movSpeed / 2;
-				}
-				else
-				{
-					horspeed = movSpeed / 2;
-				}
-			}
+		} else {
+			horspeed = 0;
+		}
+		
+		if (dirLookat > 90 && dirLookat < 270)
+		{
+			image_xscale = -1;
 		}
 		else
 		{
-			if (player_obj.x > x)
-			{
-				horspeed = movSpeed;
-			}
-			else
-			{
-				horspeed = -movSpeed;
-			}
+			image_xscale = 1;
 		}
 	}
 	else
@@ -190,29 +203,22 @@ else
 }
 
 //Gravity
-if (verspeed < 2)
-{
-	verspeed -= gravityStrength * global.dt;
+if (!noGravity) {
+	if (verspeed < 2)
+	{
+		verspeed -= gravityStrength * global.dt;
+	}
+	if (attackInProg)
+	{
+		verspeed = 0;
+	}
 }
 
 //Animation
 image_speed = 0;
 image_index += (global.dt / 15) * animationSpeed;
 
-//###OutsideSolid###
-if (place_free(x, y))
-{
-    savePosX = x;
-    savePosY = y;
-}
-else
-{
-    x = savePosX;
-    y = savePosY;
-    verSpeed = 0;
-}
-
-//Death
+//###Death###
 if (hp < 0)
 {
 	var deathCross = instance_create_layer(x, y - 8, "ForegroundObjects", deathCross_obj);
@@ -221,8 +227,12 @@ if (hp < 0)
 	var randNum = choose(1,2,3,4,5,6,7,8,9);
 	if (randNum == 9 || player_obj.forceSlowmo)
 	{
-		player_obj.enemySlowmo = true;
-		player_obj.camFollowTarget = deathCross;
+		with (player_obj) {
+			if (!place_meeting(x, y, slowmoCollider_obj)) {
+				enemySlowmo = true;
+				camFollowTarget = deathCross;
+			}
+		}
 	}
 	
 	//Drop Item
@@ -268,12 +278,12 @@ if (hp < 0)
 			}
 		}
 	}
-	
+
 	//Drop Money
 	var maxAmount = random_range(moneyDropMin, moneyDropMax);
 	for (i = 0; i < maxAmount; i++)
 	{
-		chip = choose(1,1,1,2,2,2,2,2,2,3);
+		chip = choose(1,1,1,1,2)
 		
 		if (chip == 1)
 		{
@@ -282,10 +292,6 @@ if (hp < 0)
 		if (chip == 2)
 		{
 			instance_create_layer(x, y - 16, "Instances", chipRedPickup_obj);
-		}
-		if (chip == 3)
-		{
-			instance_create_layer(x, y - 16, "Instances", chipVioletPickup_obj);
 		}
 	}
 	
@@ -296,45 +302,56 @@ if (hp < 0)
 	global.multiplierTimer = global.multiplierTimerSave;
 	global.scorepoints += points * global.multiplier;
 	
-	instance_destroy();
+	damageTint = false;
+	damageTintHeadshot = false;
+	instance_change(zombieSoldierGirlDeath1_obj, true);
+}
+
+//Remove Arm
+if (lostArm && !spawnedArm && !attackInProg)
+{
+	sprite_index = zombieGirl_spr;
+	//sprite_index = zombieGirlNoArm_spr;
+	instance_create_layer(x, y, "Instances", zombiegirlArm_obj);
+	spawnedArm = true;
 }
 
 //###Attack###
 
-if (aggro && !attackInProg1 && !attackInProg2)
+//Cooldown
+if (!attackInProg && !attackInProg2 && aggro && !jumpToNewDest && (verspeed < 0.1 && verspeed > -0.1))
 {
-	if (distance_to_object(player_obj) < aggroRange) {
-		attackCooldown -= global.dt;
+	if (distance_to_object(player_obj) < 128) {
+		//attackCooldown -= global.dt;
 	}
 }
 
 //Prepare Attack
 if (attackCooldown < 0)
 {
-	if (randAttack == 1)
-	{
-		sprite_index = zombieBucketGirlAttack1_spr;
-		movement = false;
-		attackInProg1 = true;
+	if (distance_to_object(player_obj) < 128) {
+		if (player_obj.y + 16 < y) {
+			sprite_index = zombieGirlAttack2_spr;
+			movement = false;
+			attackInProg2 = true;
+		} else {
+			sprite_index = zombieGirlAttack1_spr;
+			movement = false;
+			attackInProg = true;
+		}
 	}
-	else
-	{
-		sprite_index = zombieBucketGirlAttack2_spr;
-		movement = false;
-		attackInProg2 = true;
-	}
-	
+
 	attackCooldown = attackCooldownSave;
 }
 
-if (attackInProg1 || attackInProg2) {
+if (attackInProg || attackInProg2) {
 	//Stop every animation at last frame during attack
 	if (image_index > image_number - 1) {
 		image_index = image_number - 1;
 	}
 	
 	animationSpeed = 0.75;
-	if (attackInProg1) {
+	if (attackInProg) {
 		attack1PrepareTimer -= global.dt;
 	}
 	if (attackInProg2) {
@@ -342,9 +359,8 @@ if (attackInProg1 || attackInProg2) {
 	}
 }
 
-//Start Attack 1
-if (attackInProg1)
-{
+if (attackInProg)
+{	
 	//Attack Flashing
 	if (attack1PrepareTimer < 150 && attack1PrepareTimer > 0) {
 		attackTintTimer -= global.dt;
@@ -372,26 +388,14 @@ if (attackInProg1)
 		
 		//Only Spawn hitbox once
 		if (!snapAttack) {
-			if (!switchedSprite) {
-				image_index = 0;
-				sprite_index = zombieBucketGirlAttack1Start_spr;
-				switchedSprite = true;
-			}
+			sprite_index = zombieGirlAttack1Start_spr;
 	
 			if (snapHitboxDelay < 0) {
-				hitboxFlowerAttack = instance_create_layer(x + (42 * image_xscale), y, "Instances", damageHitbox_obj);
-				hitboxFlowerAttack.image_yscale = 3;
-				hitboxFlowerAttack.image_xscale = 2;
+				hitboxFlowerAttack = instance_create_layer(x + (48 * image_xscale), y, "Instances", damageHitbox_obj);
+				hitboxFlowerAttack.image_yscale = 1.5;
+				hitboxFlowerAttack.image_xscale = 3.5;
 				hitboxFlowerAttack.damage = damage;
 				hitboxFlowerAttack.timer = 100;
-				
-				instance_create_layer(x + 10 * image_xscale, y - 10 * image_xscale, "ForegroundObjects", dustParticle_obj);
-				repeat(6)
-				{
-					var grenate = instance_create_layer(x + 10 * image_xscale, y, "Instances", flyingGrenate_obj);
-					grenate.horspeed = random_range(1.4, 2.6) * image_xscale;
-					grenate.verspeed = random_range(-0.2, -0.8);
-				}
 
 				snapAttack = true;
 			}
@@ -401,37 +405,48 @@ if (attackInProg1)
 
 if (instance_exists(hitboxFlowerAttack))
 {
-	if (attackInProg1) {
+	if (attackInProg) {
 		hitboxFlowerAttack.follow = true;
 		hitboxFlowerAttack.followX = x + (48 * image_xscale);
 		hitboxFlowerAttack.followY = y;
 	}
+	if (attackInProg2) {
+		hitboxFlowerAttack.follow = true;
+		hitboxFlowerAttack.followX = x;
+		hitboxFlowerAttack.followY = y - 48;
+	}
 }
 
-if (attackInProg1 && snapAttack && attack1StopTimer < 0) {
-	sprite_index = zombieBucketGirlAttack1Stop_spr;
+if (attackInProg && snapAttack && attack1StopTimer < 0) {
+	sprite_index = zombieGirlAttack1Stop_spr;
 }
 
 //END Attack 1
-if (attackInProg1 && sprite_index == zombieBucketGirlAttack1Stop_spr && image_index = image_number -1) {
+if (attackInProg && sprite_index == zombieGirlAttack1Stop_spr && image_index = image_number -1) {
 	attackDelay = attackDelaySave;
 	attack1PrepareTimer = attack1PrepareTimerSave;
-	attack1StopTimer = attack1StopTimerSave;
+	attack1StopTimer = attack1StopTimerSave + random_range(-20, 20);
 	snapHitboxDelay = snapHitboxDelaySave;
 	snapAttack = false;
-	attackInProg1 = false;
+	attackInProg = false;
 	animationSpeed = 0.75;
-	sprite_index = zombieBucketGirl_spr;
+	if (!lostArm)
+	{
+		sprite_index = zombieGirl_spr;
+	}
+	else
+	{
+		sprite_index = zombieGirl_spr;
+		//sprite_index = zombieGirlNoArm_spr;
+	}
 	damageCollision = false;
 	movement = true;
 	spawnedHitbox = false;
-	switchedSprite = false;
-	randAttack = choose(1,2);
 }
 
-//Start Attack 2
+//START ATTACK 2
 if (attackInProg2)
-{
+{	
 	//Attack Flashing
 	if (attack2PrepareTimer < 150 && attack2PrepareTimer > 0) {
 		attackTintTimer -= global.dt;
@@ -449,46 +464,62 @@ if (attackInProg2)
 		}
 	}
 	
-	if (attack2PrepareTimer < 0) {		
+	if (attack2PrepareTimer < 0) {			
 		attackTint = false;
 		attackTintTimer = attackTintTimerSave;
 		attackTintDelay = -1;
 	
 		attack2StopTimer -= global.dt;
+		snapHitbox2Delay -= global.dt;
 		
-		//Only Spawn Flower Object once
-		if (!roseAttack) {
-			if (!switchedSprite) {
-				image_index = 0;
-				sprite_index = zombieBucketGirlAttack2Start_spr;
-				switchedSprite = true;
+		//Only Spawn hitbox once
+		if (!snapAttack2) {
+			sprite_index = zombieGirlAttack2Start_spr;
+	
+			if (snapHitbox2Delay < 0) {
+				hitboxFlowerAttack = instance_create_layer(x, y - 48, "Instances", damageHitbox_obj);
+				hitboxFlowerAttack.image_yscale = 3.5;
+				hitboxFlowerAttack.image_xscale = 1.5;
+				hitboxFlowerAttack.damage = damage;
+				hitboxFlowerAttack.timer = 100;
+
+				snapAttack2 = true;
 			}
-			
-			flowerline = instance_create_layer(x + 15 * image_xscale, y + 38, "Instances", flowerline_obj);
-			flowerline.dir = image_xscale;
-			roseAttack = true;
 		}
 	}
 }
 
-if (attackInProg2 && roseAttack && attack2StopTimer < 0) {
-	sprite_index = zombieBucketGirlAttack1Stop_spr;
+if (attackInProg2 && snapAttack2 && attack2StopTimer < 0) {
+	sprite_index = zombieGirlAttack2Stop_spr;
 }
 
 //END Attack 2
-if (attackInProg2 && sprite_index == zombieBucketGirlAttack1Stop_spr && image_index = image_number -1) {
+if (attackInProg2 && sprite_index == zombieGirlAttack2Stop_spr && image_index = image_number -1) {
 	attackDelay = attackDelaySave;
 	attack2PrepareTimer = attack2PrepareTimerSave;
-	attack2StopTimer = attack2StopTimerSave;
-	roseAttack = false;
+	attack2StopTimer = attack2StopTimerSave + random_range(-20, 20);
+	snapHitbox2Delay = snapHitbox2DelaySave;
+	snapAttack2 = false;
 	attackInProg2 = false;
 	animationSpeed = 0.75;
-	sprite_index = zombieBucketGirl_spr;
+	if (!lostArm)
+	{
+		sprite_index = zombieGirl_spr;
+	}
+	else
+	{
+		sprite_index = zombieGirl_spr;
+		//sprite_index = zombieGirlNoArm_spr;
+	}
 	damageCollision = false;
 	movement = true;
-	randAttack = choose(1,2);
+	spawnedHitbox = false;
+	
+	attackTint = false;
+	attackTintTimer = attackTintTimerSave;
+	attackTintDelay = -1;
 }
-
+	
 if (delay)
 {
 	attackDelay -= global.dt;
@@ -502,8 +533,16 @@ if (attackDelay < 0)
 	attackInProg2 = false;
 	startDrill = false;
 	animationSpeed = 0.75;
-	if (!attackInProg1) {
-		sprite_index = zombieBucketGirl_spr;
+	if (!lostArm)
+	{
+		sprite_index = zombieGirl_spr;
+	}
+	else
+	{
+		if (!attackInProg) {
+			sprite_index = zombieGirl_spr;
+			//sprite_index = zombieGirlNoArm_spr;
+		}
 	}
 	damageCollision = false;
 	movement = true;
@@ -512,9 +551,20 @@ if (attackDelay < 0)
 
 if (damageTintTimer < 0)
 {
-	sprite_index = zombieBucketGirl_spr;
+	if (!lostArm)
+	{
+		sprite_index = zombieGirl_spr;
+	}
+	else
+	{
+		if (!attackInProg) {
+			sprite_index = zombieGirl_spr;
+			//sprite_index = zombieGirlNoArm_spr;
+		}
+	}
 	damageTintTimer = damageTintTimerSave;
 	damageTint = false;
+	damageTintHeadshot = false;
 }
 
 checkPlayerTimer -= global.dt;
@@ -545,42 +595,47 @@ if (checkPlayerTimer < 0)
 	checkPlayerTimer = checkPlayerTimerSave;
 }
 
-//Collision
-//horspeed
-if (!place_free(x + horspeed * global.dt, y) || place_meeting(x + horspeed * global.dt, y, colliderEnemyOnly_obj))
-{
-	if (sign(horspeed) != 0)
-	{
-		while (place_free(x + sign(horspeed), y) && !place_meeting(x + sign(horspeed), y, colliderEnemyOnly_obj))
-		{
-			x += sign(horspeed);
-		}
-		horspeed = 0;
-	}
-} 
-//verspeed
-if (!place_free(x, y + verspeed * global.dt) || place_meeting(x, y + verspeed * global.dt, colliderEnemyOnly_obj))
-{
-	if (sign(verspeed) != 0)
-	{
-		while (place_free(x, y + sign(verspeed)) && !place_meeting(x, y + sign(verspeed), colliderEnemyOnly_obj))
-		{
-			y += sign(verspeed);
-		}
-		verspeed = 0;
-	}
-}
+//Sound Position
+audio_emitter_position(emitter, x, y, 0);
 
-//Player Collision
-if (place_meeting(x + horspeed * global.dt, y, player_obj))
-{
-	if (player_obj.x > x)
+//Collision
+if (!noCollision) {
+	//horspeed
+	if (!place_free(x + horspeed * global.dt, y) || place_meeting(x + horspeed * global.dt, y, colliderEnemyOnly_obj))
 	{
-		horspeed = -movSpeed;
+		if (sign(horspeed) != 0)
+		{
+			while (place_free(x + sign(horspeed), y) && !place_meeting(x + sign(horspeed), y, colliderEnemyOnly_obj))
+			{
+				x += sign(horspeed);
+			}
+			horspeed = 0;
+		}
+	} 
+	//verspeed
+	if (!place_free(x, y + verspeed * global.dt) || place_meeting(x, y + verspeed * global.dt, colliderEnemyOnly_obj))
+	{
+		if (sign(verspeed) != 0)
+		{
+			while (place_free(x, y + sign(verspeed)) && !place_meeting(x, y + sign(verspeed), colliderEnemyOnly_obj))
+			{
+				y += sign(verspeed);
+			}
+			verspeed = 0;
+		}
 	}
-	else
+
+	//Player Collision
+	if (place_meeting(x + horspeed * global.dt, y, player_obj))
 	{
-		horspeed = movSpeed;
+		if (player_obj.x > x)
+		{
+			horspeed = -movSpeed;
+		}
+		else
+		{
+			horspeed = movSpeed;
+		}
 	}
 }
 

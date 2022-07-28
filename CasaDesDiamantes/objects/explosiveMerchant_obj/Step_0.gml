@@ -1,7 +1,5 @@
 /// @description Enemy AI
 
-x += horspeed * global.dt;
-y += verspeed * global.dt;
 dirLookat = point_direction(x, y, player_obj.x, player_obj.y);
 
 if (!gotSpawned)
@@ -74,86 +72,12 @@ if (verspeed < 2 && !flying)
 image_speed = 0;
 image_index += (global.dt / 15) * animationSpeed;
 
-//Collision
-//horspeed
-if (!place_free(x + (horspeed * global.dt), y))
-{
-	if (sign(horspeed) != 0)
-	{
-		while (place_free(x + sign(horspeed) / 100, y))
-		{
-			x += sign(horspeed) / 100;
-		}
-		
-		if (!flying)
-		{
-			horspeed = 0;
-		
-			if (dir == 0)
-			{
-				dir = 1;
-			}
-			else
-			{
-				dir = 0;
-			}
-		}
-		else
-		{
-			exploding = true;
-		}
-	}
-} 
-
-if (flying && place_meeting(x, y, enemy_obj))
-{
-	exploding = true;
-}
-
-//verspeed
-if (!place_free(x, y + (verspeed * global.dt)))
-{
-	if (sign(verspeed) != 0)
-	{
-		while (place_free(x, y + sign(verspeed) / 100))
-		{
-			y += sign(verspeed) / 100;
-		}
-		verspeed = 0;
-	}
-}
-
-//Player Collision
-if (place_meeting(x + horspeed * global.dt, y, player_obj))
-{
-	if (player_obj.x > x)
-	{
-		horspeed = -movSpeed;
-	}
-	else
-	{
-		horspeed = movSpeed;
-	}
-}
-
-//###OutsideSolid###
-if (place_free(x, y))
-{
-    savePosX = x;
-    savePosY = y;
-}
-else
-{
-    x = savePosX;
-    y = savePosY;
-    verSpeed = 0;
-}
-
 //###Death###
 if (hp <= 0)
 {
-	sprite_index = explosiveMerchantFlying_spr;
-	animationSpeed = 1.75;
+	//sprite_index = explosiveMerchantFlying_spr;
+	//animationSpeed = 1.75;
+	/*
 	if (!flying)
 	{
 		if (instance_exists(player_obj) && !checkedPlayer)
@@ -181,99 +105,97 @@ if (hp <= 0)
 		}
 		flying = true;
 	}
+	*/
 	
-	if (exploding)
+	var deathCross = instance_create_layer(x, y - 8, "ForegroundObjects", deathCross_obj);
+	
+	//Enemy Slowmo
+	var randNum = choose(1,2,3,4,5,6,7,8,9);
+	if (randNum == 9 || player_obj.forceSlowmo)
 	{
-		var deathCross = instance_create_layer(x, y - 8, "ForegroundObjects", deathCross_obj);
+		player_obj.enemySlowmo = true;
+		player_obj.camFollowTarget = deathCross;
+	}
 	
-		//Enemy Slowmo
-		var randNum = choose(1,2,3,4,5,6,7,8,9);
-		if (randNum == 9 || player_obj.forceSlowmo)
+	//Drop Item
+	if (instance_exists(player_obj))
+	{
+		if (player_obj.hp < 30 || (player_obj.hp - player_obj.infection < 30))
 		{
-			player_obj.enemySlowmo = true;
-			player_obj.camFollowTarget = deathCross;
-		}
-	
-		//Drop Item
-		if (instance_exists(player_obj))
-		{
-			if (player_obj.hp < 30 || (player_obj.hp - player_obj.infection < 30))
+			if (player_obj.hp > 15)
 			{
-				if (player_obj.hp > 15)
+				repeat (2)
 				{
-					repeat (2)
-					{
-						instance_create_layer(x, y - 16, "Instances", healthSmall_obj);
-					}
+					instance_create_layer(x, y - 16, "Instances", healthSmall_obj);
 				}
-				else
+			}
+			else
+			{
+				repeat (4)
 				{
-					repeat (4)
-					{
-						instance_create_layer(x, y - 16, "Instances", healthSmall_obj);
-					}
+					instance_create_layer(x, y - 16, "Instances", healthSmall_obj);
 				}
 			}
 		}
+	}
 	
-		//Drop Ammo
-		if (lastBullet == bulletDualBarettas_obj)
+	//Drop Ammo
+	if (lastBullet == bulletDualBarettas_obj)
+	{
+		if (global.unlockedWeapon[2])
 		{
-			if (global.unlockedWeapon[2])
+			repeat (ceil(ammoSpawnCount / 4))
 			{
-				repeat (ceil(ammoSpawnCount / 4))
-				{
-					instance_create_layer(x, y, "Instances", ammoShotgunSmall_obj);
-				}
+				instance_create_layer(x, y, "Instances", ammoShotgunSmall_obj);
 			}
 		}
-		if (lastBullet == bulletShotgun_obj)
+	}
+	if (lastBullet == bulletShotgun_obj)
+	{
+		if (global.unlockedWeapon[1])
 		{
-			if (global.unlockedWeapon[1])
+			repeat (ammoSpawnCount)
 			{
-				repeat (ammoSpawnCount)
-				{
-					instance_create_layer(x, y, "Instances", ammoPistolSmall_obj);
-				}
+				instance_create_layer(x, y, "Instances", ammoPistolSmall_obj);
 			}
 		}
+	}
 
-		//Drop Money
-		var maxAmount = random_range(moneyDropMin, moneyDropMax);
-		for (i = 0; i < maxAmount; i++)
+	//Drop Money
+	var maxAmount = random_range(moneyDropMin, moneyDropMax);
+	for (i = 0; i < maxAmount; i++)
+	{
+		chip = choose(1,1,1,2,2)
+		
+		if (chip == 1)
 		{
-			chip = choose(1,1,1,2,2)
-		
-			if (chip == 1)
-			{
-				instance_create_layer(x, y - 16, "Instances", chipBluePickup_obj);
-			}
-			if (chip == 2)
-			{
-				instance_create_layer(x, y - 16, "Instances", chipRedPickup_obj);
-			}
+			instance_create_layer(x, y - 16, "Instances", chipBluePickup_obj);
 		}
+		if (chip == 2)
+		{
+			instance_create_layer(x, y - 16, "Instances", chipRedPickup_obj);
+		}
+	}
 		
-		//Set Points
+	//Set Points
 	if (global.multiplier < 8) {
 		global.multiplier = global.multiplier * 2;
 	}
 	global.multiplierTimer = global.multiplierTimerSave;
 	global.scorepoints += points * global.multiplier;
 	
-		damageTint = false;
-		if (headshot)
-		{
-			instance_change(zombieGirlDeath1_obj, true);
-		}
-		else
-		{
-			instance_change(zombieGirlDeath2_obj, true);
-		}
-		instance_destroy(alarmLight);
-		instance_create_layer(x, y, "Instances", explosionBigOnlyEnemy_obj);
-		instance_destroy();
+	damageTint = false;
+	if (headshot)
+	{
+		instance_change(zombieGirlDeath1_obj, true);
 	}
+	else
+	{
+		instance_change(zombieGirlDeath2_obj, true);
+	}
+	instance_destroy(alarmLight);
+	instance_create_layer(x, y, "Instances", explosionBigOnlyEnemy_obj);
+	instance_destroy();
 }
 
 //Alarm Light
@@ -317,3 +239,55 @@ if (checkPlayerTimer < 0)
 	}
 	checkPlayerTimer = checkPlayerTimerSave;
 }
+
+//Collision
+//horspeed
+if (!place_free(x + (horspeed * global.dt), y))
+{
+	if (sign(horspeed) != 0)
+	{
+		while (place_free(x + sign(horspeed), y))
+		{
+			x += sign(horspeed);
+		}
+		
+		if (!flying)
+		{
+			horspeed = 0;
+		
+			if (dir == 0)
+			{
+				dir = 1;
+			}
+			else
+			{
+				dir = 0;
+			}
+		}
+		else
+		{
+			exploding = true;
+		}
+	}
+} 
+
+if (flying && place_meeting(x, y, enemy_obj))
+{
+	exploding = true;
+}
+
+//verspeed
+if (!place_free(x, y + (verspeed * global.dt)))
+{
+	if (sign(verspeed) != 0)
+	{
+		while (place_free(x, y + sign(verspeed)))
+		{
+			y += sign(verspeed);
+		}
+		verspeed = 0;
+	}
+}
+
+x += horspeed * global.dt;
+y += verspeed * global.dt;

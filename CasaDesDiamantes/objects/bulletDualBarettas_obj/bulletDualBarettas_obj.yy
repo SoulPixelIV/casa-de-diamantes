@@ -35,6 +35,7 @@
     {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"bulletDetect_obj","path":"objects/bulletDetect_obj/bulletDetect_obj.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"colliderOnlyBullet_obj","path":"objects/colliderOnlyBullet_obj/colliderOnlyBullet_obj.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"zombieGirlWounded_obj","path":"objects/zombieGirlWounded_obj/zombieGirlWounded_obj.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"explosiveMerchant_obj","path":"objects/explosiveMerchant_obj/explosiveMerchant_obj.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],

@@ -1,16 +1,13 @@
 {
   "spriteId": {
-    "name": "explosiveMerchant_spr",
-    "path": "sprites/explosiveMerchant_spr/explosiveMerchant_spr.yy",
+    "name": "explosiveFortunae_spr",
+    "path": "sprites/explosiveFortunae_spr/explosiveFortunae_spr.yy",
   },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": {
-    "name": "enemy_obj",
-    "path": "objects/enemy_obj/enemy_obj.yy",
-  },
+  "parentObjectId": null,
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,

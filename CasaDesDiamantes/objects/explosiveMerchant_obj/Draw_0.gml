@@ -1,4 +1,4 @@
-draw_sprite_ext(sprite_index,image_index,x,y,image_xscale,image_yscale,image_angle, blend, image_alpha);
+draw_sprite_ext(sprite_index,image_index,x,y,image_xscale,image_yscale,image_angle, make_color_rgb(255, 122, 122), image_alpha);
 
 //Draw Aggro Mode
 if (aggroTimer < aggroTimerSave && aggroTimer > 0 && !aggro)
