@@ -18,7 +18,7 @@ spawnedArm = false;
 
 lastBullet = bulletPistol_obj;
 ammoSpawnCount = 4;
-animationSpeed = 0.75;
+animationSpeed = 1;
 savePosX = x;
 savePosY = y;
 attackCooldown = 250;
@@ -34,7 +34,8 @@ damageCollision = false;
 spawnedHitbox = false;
 hitboxFlowerAttack = noone;
 points = 125;
-movSpeed = 1.08;
+movSpeed = 0.87;
+randXDistanceToPlayer = random_range(-14, 14); //Random distance to player modifier so enemies dont stack on one position
 movement = true;
 gravityStrength = -0.05;
 damageTint = false;
@@ -64,6 +65,8 @@ testY = 0;
 attack2PrepareTimer = 70; //Timer before snap attack begins
 attack2StopTimer = 100; //Timer after snap attack begins
 snapAttack2 = false; //Snap Attack is happening
+wallrunning = true;
+rotateForWallrunning = false;
 
 snapHitboxDelay = 45; //Delay until damage hitbox spawns
 snapHitbox2Delay = 45; //Delay until damage hitbox spawns

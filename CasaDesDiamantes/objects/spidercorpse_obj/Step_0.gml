@@ -63,7 +63,7 @@ if (aggroTimer < 0)
 
 if (movement)
 {
-	if (aggro && distance_to_object(player_obj) > 24)
+	if (aggro && (player_obj.x > x + 64 + randXDistanceToPlayer || player_obj.x < x - 64 + randXDistanceToPlayer))
 	{
 		//Check if ground to walk on exists
 		if (place_meeting(x + 16 * image_xscale, y + 24, colliderGlobal_obj)) {
@@ -98,11 +98,11 @@ if (movement)
 			{
 				if (player_obj.x > x)
 				{
-					horspeed = movSpeed;
+					horspeed = movSpeed + random_range(-(movSpeed / 3), movSpeed / 3);
 				}
 				else
 				{
-					horspeed = -movSpeed;
+					horspeed = -movSpeed + random_range(-(movSpeed / 3), movSpeed / 3);
 				}
 			}
 		} else {
@@ -123,78 +123,14 @@ if (movement)
 		horspeed = 0;
 	}
 	
-	//Stage Jumping
-	if (instance_exists(player_obj) && !jumpToNewDest && aggro) {
-		checkForPlayerPosTimer -= global.dt;
-		
-		if (checkForPlayerPosTimer < 0) {
-			currPlayerPosY = player_obj.y;
-			
-			var platformToCheck = noone;
-			var platformStanding = instance_place(x, y + 42, colliderGlobal_obj);
-			with (player_obj) {
-				platformToCheck = instance_place(x, y + 42, colliderGlobal_obj);
-			}
-			//Check if player is not on same stage
-			if (platformToCheck != platformStanding) {
-				if (player_obj.grounded) {
-					if (instance_exists(platformToCheck)) {
-						xPosGoalRight = player_obj.x;
-						xPosGoalLeft = player_obj.x;
-						for (i = 0; i < 512; i++) {	
-							//Look for edge of platform
-							if (!place_meeting(xPosGoalRight + 1, player_obj.y, colliderGlobal_obj) && place_meeting(xPosGoalRight + 1, player_obj.y + 42, colliderGlobal_obj)) {
-								xPosGoalRight += 1;
-								continue;
-							}
-							//Look for edge of platform
-							if (!place_meeting(xPosGoalLeft - 1, player_obj.y, colliderGlobal_obj) && place_meeting(xPosGoalLeft - 1, player_obj.y + 42, colliderGlobal_obj)) {
-								xPosGoalLeft -= 1;
-								continue;
-							}
-							
-							if (xPosGoalLeft < xPosGoalRight) {
-								randDestX = random_range(xPosGoalLeft, xPosGoalRight);
-							} else {
-								randDestX = random_range(xPosGoalRight, xPosGoalLeft);
-							}
-							testX = xPosGoalRight;
-							testY = xPosGoalLeft;
-							
-							//Check if jump is not too far
-							if (distance_to_point(randDestX, player_obj.y) < 360) {
-								jumpToNewDest = true;
-								newDestPosX = randDestX;
-								newDestPosY = player_obj.y - 12;
-							}
-							break;
-						}
-					}
-				} 
-			}
-		}
+	//Wallrunning
+	if (place_meeting(x + 48 * image_xscale, y - 76, collider_obj)) {
+		wallrunning = true;
+		noCollision = true;
 	}
-	
-	if (jumpToNewDest) {		
-		stageTeleportTimer -= global.dt;
-		
-		if (!spawnedStageJumpAnimation) {
-			instance_create_layer(x, y, "Instances", stagejumpAnimation_obj);
-			instance_create_layer(newDestPosX, newDestPosY, "Instances", stagejumpAnimation_obj);
-			spawnedStageJumpAnimation = true;
-		}
-		
-		if (stageTeleportTimer < 0) {
-			x = newDestPosX;
-			y = newDestPosY;
-		
-			//Reset Timer
-			checkForPlayerPosTimer = checkForPlayerPosTimerSave;
-			
-			stageTeleportTimer = stageTeleportTimerSave + random_range(-30, 30);
-			spawnedStageJumpAnimation = false;
-			jumpToNewDest = false;
-		}
+	if (wallrunning && !rotateForWallrunning) {
+		image_angle += 90;
+		rotateForWallrunning = true;
 	}
 }
 else
@@ -639,5 +575,10 @@ if (!noCollision) {
 	}
 }
 
-x += horspeed * global.dt;
-y += verspeed * global.dt;
+if (!wallrunning) {
+	x += horspeed * global.dt;
+	y += verspeed * global.dt;
+} else {
+	x += 0;
+	y += horspeed * global.dt;
+}
