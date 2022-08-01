@@ -124,12 +124,12 @@ if (movement)
 	}
 	
 	//Wallrunning
-	if (place_meeting(x + 48 * image_xscale, y - 76, collider_obj)) {
+	if (place_meeting(x, y - 32, collider_obj)) {
 		wallrunning = true;
 		noCollision = true;
 	}
 	if (wallrunning && !rotateForWallrunning) {
-		image_angle += 90;
+		image_angle = 180;
 		rotateForWallrunning = true;
 	}
 }
@@ -579,6 +579,6 @@ if (!wallrunning) {
 	x += horspeed * global.dt;
 	y += verspeed * global.dt;
 } else {
-	x += 0;
-	y += horspeed * global.dt;
+	x += horspeed * global.dt;
+	y += 0;
 }

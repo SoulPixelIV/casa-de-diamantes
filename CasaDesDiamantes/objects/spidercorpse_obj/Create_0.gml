@@ -65,7 +65,7 @@ testY = 0;
 attack2PrepareTimer = 70; //Timer before snap attack begins
 attack2StopTimer = 100; //Timer after snap attack begins
 snapAttack2 = false; //Snap Attack is happening
-wallrunning = true;
+wallrunning = false;
 rotateForWallrunning = false;
 
 snapHitboxDelay = 45; //Delay until damage hitbox spawns
