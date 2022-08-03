@@ -67,6 +67,9 @@ attack2StopTimer = 100; //Timer after snap attack begins
 snapAttack2 = false; //Snap Attack is happening
 wallrunning = false;
 rotateForWallrunning = false;
+ceilingCheck = noone;
+ceilingJumpTimer = random_range(200, 1000);
+onCeiling = false;
 
 snapHitboxDelay = 45; //Delay until damage hitbox spawns
 snapHitbox2Delay = 45; //Delay until damage hitbox spawns
@@ -84,6 +87,7 @@ attackTintDelay = -1;
 gravityStrengthSave = gravityStrength;
 checkForPlayerPosTimerSave = checkForPlayerPosTimer;
 stageTeleportTimerSave = stageTeleportTimer;
+ceilingJumpTimerSave = ceilingJumpTimer;
 
 attack1PrepareTimerSave = attack1PrepareTimer;
 attack1StopTimerSave = attack1StopTimer;

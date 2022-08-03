@@ -65,57 +65,60 @@ if (movement)
 {
 	if (aggro && (player_obj.x > x + 64 + randXDistanceToPlayer || player_obj.x < x - 64 + randXDistanceToPlayer))
 	{
-		//Check if ground to walk on exists
-		if (place_meeting(x + 16 * image_xscale, y + 24, colliderGlobal_obj)) {
-			if (instance_exists(hazard_obj))
+		if (instance_exists(hazard_obj))
+		{
+			//Check if hazard is near and avoid it
+			if (!collision_circle(x, y, 64, hazard_obj, false, true))
 			{
-				//Check if hazard is near and avoid it
-				if (!collision_circle(x, y, 64, hazard_obj, false, true))
+				if (player_obj.x > x)
 				{
-					if (player_obj.x > x)
-					{
-						horspeed = movSpeed;
-					}
-					else
-					{
-						horspeed = -movSpeed;
-					}
+					horspeed = movSpeed;
 				}
 				else
 				{
-					hazard = instance_nearest(x, y, hazard_obj);
-					if (hazard.x > x)
-					{
-						horspeed = -movSpeed / 2;
-					}
-					else
-					{
-						horspeed = movSpeed / 2;
-					}
+					horspeed = -movSpeed;
 				}
 			}
 			else
 			{
-				if (player_obj.x > x)
+				hazard = instance_nearest(x, y, hazard_obj);
+				if (hazard.x > x)
 				{
-					horspeed = movSpeed + random_range(-(movSpeed / 3), movSpeed / 3);
+					horspeed = -movSpeed / 2;
 				}
 				else
 				{
-					horspeed = -movSpeed + random_range(-(movSpeed / 3), movSpeed / 3);
+					horspeed = movSpeed / 2;
 				}
 			}
-		} else {
-			horspeed = 0;
+		}
+		else
+		{
+			if (player_obj.x > x)
+			{
+				horspeed = movSpeed + random_range(-(movSpeed / 3), movSpeed / 3);
+			}
+			else
+			{
+				horspeed = -movSpeed + random_range(-(movSpeed / 3), movSpeed / 3);
+			}
 		}
 		
 		if (dirLookat > 90 && dirLookat < 270)
 		{
-			image_xscale = -1;
+			if (!onCeiling) {
+				image_xscale = -1;
+			} else {
+				image_xscale = 1;
+			}
 		}
 		else
 		{
-			image_xscale = 1;
+			if (!onCeiling) {
+				image_xscale = 1;
+			} else {
+				image_xscale = -1;
+			}
 		}
 	}
 	else
@@ -124,13 +127,37 @@ if (movement)
 	}
 	
 	//Wallrunning
-	if (place_meeting(x, y - 32, collider_obj)) {
-		wallrunning = true;
-		noCollision = true;
-	}
-	if (wallrunning && !rotateForWallrunning) {
-		image_angle = 180;
-		rotateForWallrunning = true;
+	if (!onCeiling) {
+		ceilingJumpTimer -= global.dt;
+	
+		if (ceilingJumpTimer < 0) {
+			var startJump = choose(0,1);
+			
+			if (startJump == 0) {
+				if (!instance_exists(ceilingCheck)) {
+					ceilingCheck = instance_create_layer(x, y - 16, "Instances", ceilingCheck_obj);
+				}
+			}
+			ceilingJumpTimer = ceilingJumpTimerSave;
+		}
+	
+		if (instance_exists(ceilingCheck)) {
+			if (ceilingCheck.foundCeiling) {
+				image_angle += 180;
+				noGravity = true;
+				y = ceilingCheck.y;
+				instance_destroy(ceilingCheck);
+				onCeiling = true;
+			}
+		}
+	} else {
+		//Check if ceiling to walk on exists
+		if (!place_meeting(x + 16 * image_xscale, y - 24, colliderGlobal_obj)) {
+			ceilingJumpTimer = ceilingJumpTimerSave;
+			image_angle = 0;
+			noGravity = false;
+			onCeiling = false;
+		}
 	}
 }
 else
@@ -243,22 +270,13 @@ if (hp < 0)
 	instance_change(zombieSoldierGirlDeath1_obj, true);
 }
 
-//Remove Arm
-if (lostArm && !spawnedArm && !attackInProg)
-{
-	sprite_index = zombieGirl_spr;
-	//sprite_index = zombieGirlNoArm_spr;
-	instance_create_layer(x, y, "Instances", zombiegirlArm_obj);
-	spawnedArm = true;
-}
-
 //###Attack###
 
 //Cooldown
 if (!attackInProg && !attackInProg2 && aggro && !jumpToNewDest && (verspeed < 0.1 && verspeed > -0.1))
 {
 	if (distance_to_object(player_obj) < 128) {
-		//attackCooldown -= global.dt;
+		attackCooldown -= global.dt;
 	}
 }
 
@@ -266,21 +284,15 @@ if (!attackInProg && !attackInProg2 && aggro && !jumpToNewDest && (verspeed < 0.
 if (attackCooldown < 0)
 {
 	if (distance_to_object(player_obj) < 128) {
-		if (player_obj.y + 16 < y) {
-			sprite_index = zombieGirlAttack2_spr;
-			movement = false;
-			attackInProg2 = true;
-		} else {
-			sprite_index = zombieGirlAttack1_spr;
-			movement = false;
-			attackInProg = true;
-		}
+		sprite_index = spidercorpseAttack1_spr;
+		movement = false;
+		attackInProg = true;
 	}
 
 	attackCooldown = attackCooldownSave;
 }
 
-if (attackInProg || attackInProg2) {
+if (attackInProg) {
 	//Stop every animation at last frame during attack
 	if (image_index > image_number - 1) {
 		image_index = image_number - 1;
@@ -289,9 +301,6 @@ if (attackInProg || attackInProg2) {
 	animationSpeed = 0.75;
 	if (attackInProg) {
 		attack1PrepareTimer -= global.dt;
-	}
-	if (attackInProg2) {
-		attack2PrepareTimer -= global.dt;
 	}
 }
 
@@ -324,9 +333,19 @@ if (attackInProg)
 		
 		//Only Spawn hitbox once
 		if (!snapAttack) {
-			sprite_index = zombieGirlAttack1Start_spr;
+			//sprite_index = zombieGirlAttack1Start_spr;
 	
 			if (snapHitboxDelay < 0) {
+				//Front Dash
+				if (player_obj.y > y - 32 && player_obj.y < y + 32)
+				{
+					frontDash_scr(id);
+				}
+				else
+				{
+					frontDash_scr(id);
+				}
+	
 				hitboxFlowerAttack = instance_create_layer(x + (48 * image_xscale), y, "Instances", damageHitbox_obj);
 				hitboxFlowerAttack.image_yscale = 1.5;
 				hitboxFlowerAttack.image_xscale = 3.5;
@@ -489,12 +508,12 @@ if (damageTintTimer < 0)
 {
 	if (!lostArm)
 	{
-		sprite_index = zombieGirl_spr;
+		sprite_index = spidercorpse_spr;
 	}
 	else
 	{
 		if (!attackInProg) {
-			sprite_index = zombieGirl_spr;
+			sprite_index = spidercorpse_spr;
 			//sprite_index = zombieGirlNoArm_spr;
 		}
 	}
@@ -575,10 +594,10 @@ if (!noCollision) {
 	}
 }
 
-if (!wallrunning) {
+if (!onCeiling) {
 	x += horspeed * global.dt;
 	y += verspeed * global.dt;
 } else {
-	x += horspeed * global.dt;
-	y += 0;
+	x += (horspeed / 1.5) * global.dt;
+	y += verspeed * global.dt;
 }
