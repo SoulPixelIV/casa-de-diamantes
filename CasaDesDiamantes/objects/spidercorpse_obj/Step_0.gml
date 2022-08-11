@@ -288,10 +288,16 @@ if (!attackInProg && !attackInProg2 && aggro && !jumpToNewDest && (verspeed < 0.
 //Prepare Attack
 if (attackCooldown < 0)
 {
-	if (distance_to_object(player_obj) < 128 && !onCeiling) {
-		sprite_index = spidercorpseAttack1_spr;
-		movement = false;
-		attackInProg = true;
+	if (!onCeiling) {
+		if (distance_to_object(player_obj) < 128) {
+			sprite_index = spidercorpseAttack1_spr;
+			movement = false;
+			attackInProg = true;
+		}
+	} else {
+		sprite_index = spidercorpseAttack2_spr;
+			movement = false;
+			attackInProg2 = true;
 	}
 
 	attackCooldown = attackCooldownSave;
@@ -396,6 +402,19 @@ if (attackInProg && attack1StopTimer < 0) {
 	stoppedMomentum = false;
 }
 
+
+if (attackInProg2) {
+	//Stop every animation at last frame during attack
+	if (image_index > image_number - 1) {
+		image_index = image_number - 1;
+	}
+	
+	animationSpeed = 0.75;
+	if (attackInProg2) {
+		attack2PrepareTimer -= global.dt;
+	}
+}
+
 //START ATTACK 2
 if (attackInProg2)
 {	
@@ -426,12 +445,12 @@ if (attackInProg2)
 		
 		//Only Spawn hitbox once
 		if (!snapAttack2) {
-			sprite_index = zombieGirlAttack2Start_spr;
-	
+			onCeiling = false;
+			noGravity = false;
 			if (snapHitbox2Delay < 0) {
-				hitboxDash = instance_create_layer(x, y - 48, "Instances", damageHitbox_obj);
-				hitboxDash.image_yscale = 3.5;
-				hitboxDash.image_xscale = 1.5;
+				hitboxDash = instance_create_layer(x, y - 12, "Instances", damageHitbox_obj);
+				hitboxDash.image_yscale = 1.5;
+				hitboxDash.image_xscale = 3;
 				hitboxDash.damage = damage;
 				hitboxDash.timer = 100;
 
@@ -441,12 +460,8 @@ if (attackInProg2)
 	}
 }
 
-if (attackInProg2 && snapAttack2 && attack2StopTimer < 0) {
-	sprite_index = zombieGirlAttack2Stop_spr;
-}
-
 //END Attack 2
-if (attackInProg2 && sprite_index == zombieGirlAttack2Stop_spr && image_index = image_number -1) {
+if (attackInProg2 && attack2StopTimer < 0) {
 	attackDelay = attackDelaySave;
 	attack2PrepareTimer = attack2PrepareTimerSave;
 	attack2StopTimer = attack2StopTimerSave + random_range(-20, 20);
@@ -454,18 +469,11 @@ if (attackInProg2 && sprite_index == zombieGirlAttack2Stop_spr && image_index = 
 	snapAttack2 = false;
 	attackInProg2 = false;
 	animationSpeed = 0.75;
-	if (!lostArm)
-	{
-		sprite_index = zombieGirl_spr;
-	}
-	else
-	{
-		sprite_index = zombieGirl_spr;
-		//sprite_index = zombieGirlNoArm_spr;
-	}
+	sprite_index = spidercorpse_spr;
 	damageCollision = false;
 	movement = true;
 	spawnedHitbox = false;
+	image_angle = 0;
 	
 	attackTint = false;
 	attackTintTimer = attackTintTimerSave;
