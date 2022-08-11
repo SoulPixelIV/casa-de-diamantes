@@ -24,13 +24,13 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"d20b8bb9-d941-4fb8-bbb5-5c6937d965c6","path":"sprites/spidercorpseAttack1_spr/spidercorpseAttack1_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"d20b8bb9-d941-4fb8-bbb5-5c6937d965c6","path":"sprites/spidercorpseAttack1_spr/spidercorpseAttack1_spr.yy",},"LayerId":{"name":"182ca3e7-a3a8-4c06-9d0e-a2ea6b16f726","path":"sprites/spidercorpseAttack1_spr/spidercorpseAttack1_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-        {"FrameId":{"name":"d20b8bb9-d941-4fb8-bbb5-5c6937d965c6","path":"sprites/spidercorpseAttack1_spr/spidercorpseAttack1_spr.yy",},"LayerId":{"name":"d5588e13-2699-4744-bb02-954e2cded410","path":"sprites/spidercorpseAttack1_spr/spidercorpseAttack1_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spidercorpseAttack1_spr","path":"sprites/spidercorpseAttack1_spr/spidercorpseAttack1_spr.yy",},"resourceVersion":"1.0","name":"d20b8bb9-d941-4fb8-bbb5-5c6937d965c6","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"d20b8bb9-d941-4fb8-bbb5-5c6937d965c6","path":"sprites/spidercorpseAttack2_spr/spidercorpseAttack2_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"d20b8bb9-d941-4fb8-bbb5-5c6937d965c6","path":"sprites/spidercorpseAttack2_spr/spidercorpseAttack2_spr.yy",},"LayerId":{"name":"182ca3e7-a3a8-4c06-9d0e-a2ea6b16f726","path":"sprites/spidercorpseAttack2_spr/spidercorpseAttack2_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"d20b8bb9-d941-4fb8-bbb5-5c6937d965c6","path":"sprites/spidercorpseAttack2_spr/spidercorpseAttack2_spr.yy",},"LayerId":{"name":"d5588e13-2699-4744-bb02-954e2cded410","path":"sprites/spidercorpseAttack2_spr/spidercorpseAttack2_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spidercorpseAttack2_spr","path":"sprites/spidercorpseAttack2_spr/spidercorpseAttack2_spr.yy",},"resourceVersion":"1.0","name":"d20b8bb9-d941-4fb8-bbb5-5c6937d965c6","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"spidercorpseAttack1_spr","path":"sprites/spidercorpseAttack1_spr/spidercorpseAttack1_spr.yy",},
+    "spriteId": {"name":"spidercorpseAttack2_spr","path":"sprites/spidercorpseAttack2_spr/spidercorpseAttack2_spr.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 4.0,
@@ -42,7 +42,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"4193cdd1-9063-4373-bf6a-752142fdb844","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d20b8bb9-d941-4fb8-bbb5-5c6937d965c6","path":"sprites/spidercorpseAttack1_spr/spidercorpseAttack1_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
+            {"id":"4c68fee3-7e08-40d8-b43e-50b7ec2c8b74","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d20b8bb9-d941-4fb8-bbb5-5c6937d965c6","path":"sprites/spidercorpseAttack2_spr/spidercorpseAttack2_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -59,9 +59,9 @@
     "yorigin": 45,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spidercorpseAttack1_spr","path":"sprites/spidercorpseAttack1_spr/spidercorpseAttack1_spr.yy",},
+    "parent": {"name":"spidercorpseAttack2_spr","path":"sprites/spidercorpseAttack2_spr/spidercorpseAttack2_spr.yy",},
     "resourceVersion": "1.4",
-    "name": "spidercorpseAttack1_spr",
+    "name": "spidercorpseAttack2_spr",
     "tags": [],
     "resourceType": "GMSequence",
   },
@@ -75,7 +75,7 @@
     "path": "folders/Enemies/Enemy Sprites/SpiderCorpse.yy",
   },
   "resourceVersion": "1.0",
-  "name": "spidercorpseAttack1_spr",
+  "name": "spidercorpseAttack2_spr",
   "tags": [],
   "resourceType": "GMSprite",
 }

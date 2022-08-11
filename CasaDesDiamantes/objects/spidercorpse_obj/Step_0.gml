@@ -65,42 +65,44 @@ if (movement)
 {
 	if (aggro && (player_obj.x > x + 64 + randXDistanceToPlayer || player_obj.x < x - 64 + randXDistanceToPlayer))
 	{
-		if (instance_exists(hazard_obj))
-		{
-			//Check if hazard is near and avoid it
-			if (!collision_circle(x, y, 64, hazard_obj, false, true))
+		if (!attackInProg) {
+			if (instance_exists(hazard_obj))
+			{
+				//Check if hazard is near and avoid it
+				if (!collision_circle(x, y, 64, hazard_obj, false, true))
+				{
+					if (player_obj.x > x)
+					{
+						horspeed = movSpeed;
+					}
+					else
+					{
+						horspeed = -movSpeed;
+					}
+				}
+				else
+				{
+					hazard = instance_nearest(x, y, hazard_obj);
+					if (hazard.x > x)
+					{
+						horspeed = -movSpeed / 2;
+					}
+					else
+					{
+						horspeed = movSpeed / 2;
+					}
+				}
+			}
+			else
 			{
 				if (player_obj.x > x)
 				{
-					horspeed = movSpeed;
+					horspeed = movSpeed + random_range(-(movSpeed / 3), movSpeed / 3);
 				}
 				else
 				{
-					horspeed = -movSpeed;
+					horspeed = -movSpeed + random_range(-(movSpeed / 3), movSpeed / 3);
 				}
-			}
-			else
-			{
-				hazard = instance_nearest(x, y, hazard_obj);
-				if (hazard.x > x)
-				{
-					horspeed = -movSpeed / 2;
-				}
-				else
-				{
-					horspeed = movSpeed / 2;
-				}
-			}
-		}
-		else
-		{
-			if (player_obj.x > x)
-			{
-				horspeed = movSpeed + random_range(-(movSpeed / 3), movSpeed / 3);
-			}
-			else
-			{
-				horspeed = -movSpeed + random_range(-(movSpeed / 3), movSpeed / 3);
 			}
 		}
 		
@@ -162,7 +164,10 @@ if (movement)
 }
 else
 {
-	horspeed = 0;
+	if (!attackInProg)
+	{
+		horspeed = 0;
+	}
 }
 
 //Gravity
@@ -283,7 +288,7 @@ if (!attackInProg && !attackInProg2 && aggro && !jumpToNewDest && (verspeed < 0.
 //Prepare Attack
 if (attackCooldown < 0)
 {
-	if (distance_to_object(player_obj) < 128) {
+	if (distance_to_object(player_obj) < 128 && !onCeiling) {
 		sprite_index = spidercorpseAttack1_spr;
 		movement = false;
 		attackInProg = true;
@@ -306,6 +311,11 @@ if (attackInProg) {
 
 if (attackInProg)
 {	
+	if (!stoppedMomentum) {
+		horspeed = 0;
+		stoppedMomentum = true;
+	}
+	
 	//Attack Flashing
 	if (attack1PrepareTimer < 150 && attack1PrepareTimer > 0) {
 		attackTintTimer -= global.dt;
@@ -333,8 +343,6 @@ if (attackInProg)
 		
 		//Only Spawn hitbox once
 		if (!snapAttack) {
-			//sprite_index = zombieGirlAttack1Start_spr;
-	
 			if (snapHitboxDelay < 0) {
 				//Front Dash
 				if (player_obj.y > y - 32 && player_obj.y < y + 32)
@@ -346,11 +354,11 @@ if (attackInProg)
 					frontDash_scr(id);
 				}
 	
-				hitboxFlowerAttack = instance_create_layer(x + (48 * image_xscale), y, "Instances", damageHitbox_obj);
-				hitboxFlowerAttack.image_yscale = 1.5;
-				hitboxFlowerAttack.image_xscale = 3.5;
-				hitboxFlowerAttack.damage = damage;
-				hitboxFlowerAttack.timer = 100;
+				hitboxDash = instance_create_layer(x + (48 * image_xscale), y, "Instances", damageHitbox_obj);
+				hitboxDash.image_yscale = 1.5;
+				hitboxDash.image_xscale = 3.5;
+				hitboxDash.damage = damage;
+				hitboxDash.timer = 100;
 
 				snapAttack = true;
 			}
@@ -358,26 +366,22 @@ if (attackInProg)
 	}
 }
 
-if (instance_exists(hitboxFlowerAttack))
+if (instance_exists(hitboxDash))
 {
 	if (attackInProg) {
-		hitboxFlowerAttack.follow = true;
-		hitboxFlowerAttack.followX = x + (48 * image_xscale);
-		hitboxFlowerAttack.followY = y;
+		hitboxDash.follow = true;
+		hitboxDash.followX = x + (48 * image_xscale);
+		hitboxDash.followY = y;
 	}
 	if (attackInProg2) {
-		hitboxFlowerAttack.follow = true;
-		hitboxFlowerAttack.followX = x;
-		hitboxFlowerAttack.followY = y - 48;
+		hitboxDash.follow = true;
+		hitboxDash.followX = x;
+		hitboxDash.followY = y - 48;
 	}
-}
-
-if (attackInProg && snapAttack && attack1StopTimer < 0) {
-	sprite_index = zombieGirlAttack1Stop_spr;
 }
 
 //END Attack 1
-if (attackInProg && sprite_index == zombieGirlAttack1Stop_spr && image_index = image_number -1) {
+if (attackInProg && attack1StopTimer < 0) {
 	attackDelay = attackDelaySave;
 	attack1PrepareTimer = attack1PrepareTimerSave;
 	attack1StopTimer = attack1StopTimerSave + random_range(-20, 20);
@@ -385,18 +389,11 @@ if (attackInProg && sprite_index == zombieGirlAttack1Stop_spr && image_index = i
 	snapAttack = false;
 	attackInProg = false;
 	animationSpeed = 0.75;
-	if (!lostArm)
-	{
-		sprite_index = zombieGirl_spr;
-	}
-	else
-	{
-		sprite_index = zombieGirl_spr;
-		//sprite_index = zombieGirlNoArm_spr;
-	}
+	sprite_index = spidercorpse_spr;
 	damageCollision = false;
 	movement = true;
 	spawnedHitbox = false;
+	stoppedMomentum = false;
 }
 
 //START ATTACK 2
@@ -432,11 +429,11 @@ if (attackInProg2)
 			sprite_index = zombieGirlAttack2Start_spr;
 	
 			if (snapHitbox2Delay < 0) {
-				hitboxFlowerAttack = instance_create_layer(x, y - 48, "Instances", damageHitbox_obj);
-				hitboxFlowerAttack.image_yscale = 3.5;
-				hitboxFlowerAttack.image_xscale = 1.5;
-				hitboxFlowerAttack.damage = damage;
-				hitboxFlowerAttack.timer = 100;
+				hitboxDash = instance_create_layer(x, y - 48, "Instances", damageHitbox_obj);
+				hitboxDash.image_yscale = 3.5;
+				hitboxDash.image_xscale = 1.5;
+				hitboxDash.damage = damage;
+				hitboxDash.timer = 100;
 
 				snapAttack2 = true;
 			}
@@ -488,17 +485,7 @@ if (attackDelay < 0)
 	attackInProg2 = false;
 	startDrill = false;
 	animationSpeed = 0.75;
-	if (!lostArm)
-	{
-		sprite_index = zombieGirl_spr;
-	}
-	else
-	{
-		if (!attackInProg) {
-			sprite_index = zombieGirl_spr;
-			//sprite_index = zombieGirlNoArm_spr;
-		}
-	}
+	sprite_index = spidercorpse_spr;
 	damageCollision = false;
 	movement = true;
 	spawnedHitbox = false;

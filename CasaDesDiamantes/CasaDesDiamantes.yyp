@@ -641,6 +641,7 @@
     {"id":{"name":"cameraZoom_scr","path":"scripts/cameraZoom_scr/cameraZoom_scr.yy",},"order":1,},
     {"id":{"name":"playerShotgunWalking_spr","path":"sprites/playerShotgunWalking_spr/playerShotgunWalking_spr.yy",},"order":34,},
     {"id":{"name":"healthpackPickup_obj","path":"objects/healthpackPickup_obj/healthpackPickup_obj.yy",},"order":3,},
+    {"id":{"name":"spidercorpseAttack2_spr","path":"sprites/spidercorpseAttack2_spr/spidercorpseAttack2_spr.yy",},"order":3,},
     {"id":{"name":"cameraZoomOut_scr","path":"scripts/cameraZoomOut_scr/cameraZoomOut_scr.yy",},"order":2,},
     {"id":{"name":"resetJump_scr","path":"scripts/resetJump_scr/resetJump_scr.yy",},"order":3,},
     {"id":{"name":"frictionActive_scr","path":"scripts/frictionActive_scr/frictionActive_scr.yy",},"order":4,},
@@ -1253,7 +1254,7 @@
     {"name":"Main","path":"options/main/options_main.yy",},
     {"name":"operagx","path":"options/operagx/options_operagx.yy",},
   ],
-  "isDnDProject": false,
+  "defaultScriptType": 1,
   "isEcma": false,
   "configs": {
     "name": "Default",
@@ -1429,7 +1430,7 @@
     {"targets":-1,"resourceVersion":"1.3","name":"audiogroup_default","resourceType":"GMAudioGroup",},
   ],
   "TextureGroups": [
-    {"isScaled":true,"autocrop":true,"border":2,"mipsToGenerate":0,"groupParent":null,"targets":-1,"resourceVersion":"1.3","name":"Default","resourceType":"GMTextureGroup",},
+    {"isScaled":true,"compressFormat":"bz2","autocrop":true,"border":2,"mipsToGenerate":0,"groupParent":null,"targets":-1,"resourceVersion":"1.3","name":"Default","resourceType":"GMTextureGroup",},
   ],
   "IncludedFiles": [
     {"CopyToMask":-1,"filePath":"datafiles/GMLive","resourceVersion":"1.0","name":"gmlive-server.n","resourceType":"GMIncludedFile",},
@@ -1443,7 +1444,7 @@
     {"CopyToMask":-1,"filePath":"datafiles","resourceVersion":"1.0","name":"Casino3DFilledMarquee.ttf","resourceType":"GMIncludedFile",},
   ],
   "MetaData": {
-    "IDEVersion": "2022.2.1.618",
+    "IDEVersion": "2022.6.1.26",
   },
   "resourceVersion": "1.5",
   "name": "CasaDesDiamantes",
