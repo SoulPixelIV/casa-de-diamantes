@@ -61,6 +61,18 @@ if (aggroTimer < 0)
 	aggroTimer = aggroTimerSave;
 }
 
+//Callout Spiders
+if (aggro) {
+	if (callSpiders && !sendCallout) {
+		calloutDelay -= global.dt;
+		if (calloutDelay < 0) {
+			//SPAWN SPIDERS
+			
+			sendCallout = true;
+		}
+	}
+}
+
 if (movement)
 {
 	if (aggro && (player_obj.x > x + 64 + randXDistanceToPlayer || player_obj.x < x - 64 + randXDistanceToPlayer))
@@ -382,7 +394,7 @@ if (instance_exists(hitboxDash))
 	if (attackInProg2) {
 		hitboxDash.follow = true;
 		hitboxDash.followX = x;
-		hitboxDash.followY = y - 48;
+		hitboxDash.followY = y + 12;
 	}
 }
 
@@ -448,7 +460,7 @@ if (attackInProg2)
 			onCeiling = false;
 			noGravity = false;
 			if (snapHitbox2Delay < 0) {
-				hitboxDash = instance_create_layer(x, y - 12, "Instances", damageHitbox_obj);
+				hitboxDash = instance_create_layer(x, y + 12, "Instances", damageHitbox_obj);
 				hitboxDash.image_yscale = 1.5;
 				hitboxDash.image_xscale = 3;
 				hitboxDash.damage = damage;

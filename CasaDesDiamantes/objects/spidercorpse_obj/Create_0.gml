@@ -16,6 +16,8 @@ gotSpawned = false;
 lostArm = false;
 spawnedArm = false;
 
+sendCallout = false; //Call out for other spiders to spawn
+calloutDelay = 150;
 stoppedMomentum = false;
 hitboxDash = noone;
 lastBullet = bulletPistol_obj;
@@ -74,7 +76,7 @@ ceilingJumpTimer = random_range(200, 1000);
 onCeiling = false;
 
 snapHitboxDelay = 45; //Delay until damage hitbox spawns
-snapHitbox2Delay = 45; //Delay until damage hitbox spawns
+snapHitbox2Delay = 8; //Delay until damage hitbox spawns
 
 //Help Vars
 aggroTimerSave = aggroTimer;
