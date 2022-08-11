@@ -69,8 +69,11 @@ if (aggro) {
 			//SPAWN SPIDERS
 			spiderSpawnsNum = instance_number(spidercorpseSpawn_obj);
 			
-			for (i = 0; i < spiderSpawnsNum; i++) {
-				if 
+			for (i = 0; i < spiderSpawnsNum; i++) {				
+				var currSpawn = instance_find(spidercorpseSpawn_obj, i);
+				if (distance_to_object(currSpawn) < callSpidersRange) {
+					currSpawn.open = true;
+				}
 			}
 			
 			sendCallout = true;
