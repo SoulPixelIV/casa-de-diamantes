@@ -67,6 +67,11 @@ if (aggro) {
 		calloutDelay -= global.dt;
 		if (calloutDelay < 0) {
 			//SPAWN SPIDERS
+			spiderSpawnsNum = instance_number(spidercorpseSpawn_obj);
+			
+			for (i = 0; i < spiderSpawnsNum; i++) {
+				if 
+			}
 			
 			sendCallout = true;
 		}

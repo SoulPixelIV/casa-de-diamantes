@@ -140,6 +140,7 @@
     {"id":{"name":"hourglass_spr","path":"sprites/hourglass_spr/hourglass_spr.yy",},"order":9,},
     {"id":{"name":"healthCut_spr","path":"sprites/healthCut_spr/healthCut_spr.yy",},"order":13,},
     {"id":{"name":"forcefield_obj","path":"objects/forcefield_obj/forcefield_obj.yy",},"order":53,},
+    {"id":{"name":"spidercorpseSpawn_obj","path":"objects/spidercorpseSpawn_obj/spidercorpseSpawn_obj.yy",},"order":17,},
     {"id":{"name":"casinoLightTower_spr","path":"sprites/casinoLightTower_spr/casinoLightTower_spr.yy",},"order":76,},
     {"id":{"name":"darkcaveBackground3_obj","path":"objects/darkcaveBackground3_obj/darkcaveBackground3_obj.yy",},"order":2,},
     {"id":{"name":"colliderOnlyBullet_obj","path":"objects/colliderOnlyBullet_obj/colliderOnlyBullet_obj.yy",},"order":7,},
