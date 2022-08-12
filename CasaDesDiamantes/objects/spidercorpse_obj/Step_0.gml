@@ -65,7 +65,7 @@ if (aggroTimer < 0)
 if (aggro) {
 	if (callSpiders && !sendCallout) {
 		calloutDelay -= global.dt;
-		if (calloutDelay < 0) {
+		if (calloutDelay < 0) {			
 			//SPAWN SPIDERS
 			spiderSpawnsNum = instance_number(spidercorpseSpawn_obj);
 			
@@ -77,6 +77,15 @@ if (aggro) {
 			}
 			
 			sendCallout = true;
+		}
+	}
+	
+	if (callSpiders) {
+		//Create Scream
+		screamDelay -= global.dt;
+		if (screamDelay < 0) {
+			instance_create_layer(x, y, "ForegroundObjects", scream_obj);
+			screamDelay = screamDelaySave;
 		}
 	}
 }
@@ -209,6 +218,8 @@ image_index += (global.dt / 15) * animationSpeed;
 //###Death###
 if (hp < 0)
 {
+	sendCallout = true;
+	
 	var deathCross = instance_create_layer(x, y - 8, "ForegroundObjects", deathCross_obj);
 	
 	//Enemy Slowmo
