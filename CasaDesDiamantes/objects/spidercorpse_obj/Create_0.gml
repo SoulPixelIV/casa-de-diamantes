@@ -17,8 +17,9 @@ lostArm = false;
 spawnedArm = false;
 
 sendCallout = false; //Call out for other spiders to spawn
-calloutDelay = 150;
+calloutDelay = 300;
 screamDelay = 15;
+screamDeathTimer = 500;
 stoppedMomentum = false;
 hitboxDash = noone;
 lastBullet = bulletPistol_obj;

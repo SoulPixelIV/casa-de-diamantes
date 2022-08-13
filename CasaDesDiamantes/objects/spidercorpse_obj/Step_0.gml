@@ -77,16 +77,24 @@ if (aggro) {
 			}
 			
 			sendCallout = true;
+			movement = true;
 		}
 	}
 	
-	if (callSpiders) {
+	if (callSpiders && calloutDelay < 50) {
+		screamDeathTimer -= global.dt;
+		
 		//Create Scream
-		screamDelay -= global.dt;
-		if (screamDelay < 0) {
-			instance_create_layer(x, y, "ForegroundObjects", scream_obj);
-			screamDelay = screamDelaySave;
+		if (screamDeathTimer > 0) {
+			screamDelay -= global.dt;
+			if (screamDelay < 0) {
+				instance_create_layer(x, y, "ForegroundObjects", scream_obj);
+				screamDelay = screamDelaySave;
+			}
 		}
+		
+		movement = false;
+		horspeed = 0;
 	}
 }
 
@@ -311,8 +319,10 @@ if (hp < 0)
 //Cooldown
 if (!attackInProg && !attackInProg2 && aggro && !jumpToNewDest && (verspeed < 0.1 && verspeed > -0.1))
 {
-	if (distance_to_object(player_obj) < 128) {
-		attackCooldown -= global.dt;
+	if ((callSpiders && sendCallout) || !callSpiders) {
+		if (distance_to_object(player_obj) < 128) {
+			attackCooldown -= global.dt;
+		}
 	}
 }
 

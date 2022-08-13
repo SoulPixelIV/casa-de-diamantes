@@ -12,6 +12,12 @@ if (spawnTime < 0)
 	if (instance_exists(battleArenaSpawn_obj))
 	{
 		object.image_xscale = instance_nearest(x, y, battleArenaSpawn_obj).dir;
+		if (instance_nearest(x, y, battleArenaSpawn_obj).callSpiders) {
+			if (spawnObject == spidercorpse_obj) {
+				object.callSpiders = true;
+				object.callSpidersRange = instance_nearest(x, y, battleArenaSpawn_obj).callSpidersRange;
+			}
+		}
 	}
 	
 	with (object)
