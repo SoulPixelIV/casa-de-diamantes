@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"d20b8bb9-d941-4fb8-bbb5-5c6937d965c6","path":"sprites/zombieGirl_spr/zombieGirl_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"d20b8bb9-d941-4fb8-bbb5-5c6937d965c6","path":"sprites/zombieGirl_spr/zombieGirl_spr.yy",},"LayerId":{"name":"d5588e13-2699-4744-bb02-954e2cded410","path":"sprites/zombieGirl_spr/zombieGirl_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"zombieGirl_spr","path":"sprites/zombieGirl_spr/zombieGirl_spr.yy",},"resourceVersion":"1.0","name":"d20b8bb9-d941-4fb8-bbb5-5c6937d965c6","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"d20b8bb9-d941-4fb8-bbb5-5c6937d965c6","path":"sprites/rocketman_spr/rocketman_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"d20b8bb9-d941-4fb8-bbb5-5c6937d965c6","path":"sprites/rocketman_spr/rocketman_spr.yy",},"LayerId":{"name":"d5588e13-2699-4744-bb02-954e2cded410","path":"sprites/rocketman_spr/rocketman_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"rocketman_spr","path":"sprites/rocketman_spr/rocketman_spr.yy",},"resourceVersion":"1.0","name":"d20b8bb9-d941-4fb8-bbb5-5c6937d965c6","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"zombieGirl_spr","path":"sprites/zombieGirl_spr/zombieGirl_spr.yy",},
+    "spriteId": {"name":"rocketman_spr","path":"sprites/rocketman_spr/rocketman_spr.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 4.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"43eb67a1-972c-4f80-847b-894cca39f5e1","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d20b8bb9-d941-4fb8-bbb5-5c6937d965c6","path":"sprites/zombieGirl_spr/zombieGirl_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
+            {"id":"e85de52a-1818-4e54-8f4a-31fb297576cb","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d20b8bb9-d941-4fb8-bbb5-5c6937d965c6","path":"sprites/rocketman_spr/rocketman_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -58,9 +58,9 @@
     "yorigin": 30,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"zombieGirl_spr","path":"sprites/zombieGirl_spr/zombieGirl_spr.yy",},
+    "parent": {"name":"rocketman_spr","path":"sprites/rocketman_spr/rocketman_spr.yy",},
     "resourceVersion": "1.4",
-    "name": "zombieGirl_spr",
+    "name": "rocketman_spr",
     "tags": [],
     "resourceType": "GMSequence",
   },
@@ -69,11 +69,11 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "ZombieGirl",
-    "path": "folders/Enemies/Enemy Sprites/ZombieGirl.yy",
+    "name": "Rocketman",
+    "path": "folders/Enemies/Enemy Sprites/Rocketman.yy",
   },
   "resourceVersion": "1.0",
-  "name": "zombieGirl_spr",
+  "name": "rocketman_spr",
   "tags": [],
   "resourceType": "GMSprite",
 }
