@@ -9,4 +9,9 @@ if (open && spawnNum > 0) {
 	}
 }
 
+if (spawnNum == 0) {
+	open = false;
+	spawnNum = spawnNumSave;
+}
+
 
