@@ -24,7 +24,9 @@ if (attackCooldown > 75 && (attackInProg1 || attackInProg2))
 if (instance_exists(player_obj)) {
 	if (distance_to_object(player_obj) < aggroRange) {
 		if (attackCooldown > 150 || attackCooldown < 0) {
-			image_angle = point_direction(x, y, player_obj.x, player_obj.y);
+			if (!place_meeting(x + 12, y, collider_obj) && !place_meeting(x - 12, y, collider_obj) && !place_meeting(x, y + 12, collider_obj) && !place_meeting(x, y - 12, collider_obj)) {
+				image_angle = point_direction(x, y, player_obj.x, player_obj.y);
+			}
 		}
 	}
 	
