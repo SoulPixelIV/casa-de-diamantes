@@ -1,5 +1,5 @@
 dir = 1;
-liveTimer = 200;
+liveTimer = 50;
 if (dir == 1) {
 	image_xscale = random_range(0.7, 1);
 } else {

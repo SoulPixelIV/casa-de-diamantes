@@ -464,6 +464,7 @@ if (attackInProg2)
 				switchedSprite = true;
 			}
 			
+			screenshake(50, 12, 0.6, id);
 			flowerline = instance_create_layer(x + 15 * image_xscale, y + 38, "Instances", flowerline_obj);
 			flowerline.dir = image_xscale;
 			roseAttack = true;

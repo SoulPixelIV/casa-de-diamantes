@@ -55,34 +55,6 @@ if (cameraTargetTimer < 0)
 	player_obj.invincible = false;
 }
 
-if (shake) 
-{
-	if (!is_undefined(shake_id))
-	{
-		if (distance_to_object(shake_id) > 300)
-		{
-			shake = false;
-		}
-	}
-	shake_time -= global.dt;
-	var magnitude = choose(-shake_magnitude, shake_magnitude);
-	if (xTo + magnitude > minCameraXBorder && xTo + magnitude < maxCameraXBorder)
-	{
-		xTo += choose(-shake_magnitude, shake_magnitude); 
-	}
-	//yTo += choose(-shake_magnitude, shake_magnitude); 
-
-	if (shake_time <= 0) 
-	{ 
-		shake_magnitude -= shake_fade * global.dt; 
-
-		if (shake_magnitude <= 0) 
-		{ 
-			shake = false; 
-		} 
-	} 
-}
-
 //Floating Camera
 if (follow == player_obj && !cameraTarget && !cameraTargetMovement)
 {
@@ -285,4 +257,32 @@ if (firstMoveTimer < 0) {
 	follow = player_obj;
 	firstMoveDone = true;
 	firstMoveTimer = 0;
+}
+
+if (shake) 
+{
+	if (!is_undefined(shake_id))
+	{
+		if (distance_to_object(shake_id) > 300)
+		{
+			shake = false;
+		}
+	}
+	shake_time -= global.dt;
+	var magnitude = choose(-shake_magnitude, shake_magnitude);
+	if (x + magnitude > minCameraXBorder && x + magnitude < maxCameraXBorder)
+	{
+		x += choose(-shake_magnitude, shake_magnitude); 
+	}
+	y += choose(-shake_magnitude, shake_magnitude); 
+
+	if (shake_time <= 0) 
+	{ 
+		shake_magnitude -= shake_fade * global.dt; 
+
+		if (shake_magnitude <= 0) 
+		{ 
+			shake = false; 
+		} 
+	} 
 }

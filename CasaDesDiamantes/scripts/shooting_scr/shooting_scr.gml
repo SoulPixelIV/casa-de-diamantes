@@ -27,7 +27,7 @@ function shooting_scr(argument0) {
 		if (!player_obj.dashroll) {
 			instance_create_layer(shotLightx, shotLighty, "ForegroundObjects", smokecloud_obj);
 		}
-		screenshake(50, 2.5, 0.4, id);
+		screenshake(30, 6, 0.4, id);
 		
 		if (!huggingWall)
 		{
@@ -84,7 +84,7 @@ function shooting_scr(argument0) {
 				instance_create_layer(shotLightx, shotLighty, "ForegroundObjects", smokecloud_obj);
 				instance_create_layer(shotLightx - 2, shotLighty - 4, "ForegroundObjects", smokecloud_obj);
 			}
-			screenshake(50, 3.5, 0.4, id);
+			screenshake(30, 8, 0.4, id);
 		
 			if (!huggingWall)
 			{
@@ -143,7 +143,7 @@ function shooting_scr(argument0) {
 			if (!player_obj.dashroll) {
 				instance_create_layer(shotLightx, shotLighty, "ForegroundObjects", smokecloud_obj);
 			}
-			screenshake(50, 12, 0.6, id);
+			screenshake(40, 18, 0.6, id);
 		
 			if (!huggingWall)
 			{
