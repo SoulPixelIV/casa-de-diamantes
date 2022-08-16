@@ -148,11 +148,8 @@ if (movement && !isZombie)
 	//Dash
 	if (key_shift && !isDashing && dashDelay < 0)
 	{
-		if (horspeed > 0.3 || horspeed < -0.3)
-		{
-		    dash_scr();
-			dashInvincibilityOn = true;
-		}
+		dash_scr();
+		dashInvincibilityOn = true;
 	}
 	if (dashDelay >= 0 && wallJumps == wallJumpsMax)
 	{
