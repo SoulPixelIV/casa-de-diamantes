@@ -74,39 +74,7 @@ image_index += (global.dt / 15) * animationSpeed;
 
 //###Death###
 if (hp <= 0)
-{
-	//sprite_index = explosiveMerchantFlying_spr;
-	//animationSpeed = 1.75;
-	/*
-	if (!flying)
-	{
-		if (instance_exists(player_obj) && !checkedPlayer)
-		{
-			if (player_obj.x > x)
-			{
-				flyDir = 1;
-			}
-			else
-			{
-				flyDir = -1;
-			}
-			checkedPlayer = true;
-		}
-		
-		if (flyDir == 1)
-		{
-			image_xscale = 1;
-			horspeed = -2.8;
-		}
-		else
-		{
-			image_xscale = -1;
-			horspeed = 2.8;
-		}
-		flying = true;
-	}
-	*/
-	
+{	
 	var deathCross = instance_create_layer(x, y - 8, "ForegroundObjects", deathCross_obj);
 	
 	//Enemy Slowmo
@@ -176,26 +144,11 @@ if (hp <= 0)
 			instance_create_layer(x, y - 16, "Instances", chipRedPickup_obj);
 		}
 	}
-		
-	//Set Points
-	if (global.multiplier < 8) {
-		global.multiplier = global.multiplier * 2;
-	}
-	global.multiplierTimer = global.multiplierTimerSave;
-	global.scorepoints += points * global.multiplier;
 	
-	damageTint = false;
-	if (headshot)
-	{
-		instance_change(zombieGirlDeath1_obj, true);
-	}
-	else
-	{
-		instance_change(zombieGirlDeath2_obj, true);
-	}
+	instance_change(zombieGirlDeath2_obj, true);
 	instance_destroy(alarmLight);
 	instance_create_layer(x, y, "Instances", explosionBigOnlyEnemy_obj);
-	instance_destroy();
+	damageTint = false;
 }
 
 //Alarm Light
