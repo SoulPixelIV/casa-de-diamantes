@@ -13,7 +13,7 @@ if (invincibilityTimer > 0)
 //Collision
 if (invincibilityTimer <= 0)
 {
-	if (!place_free(x, y) && !place_meeting(x, y, colliderBulletFree_obj))
+	if (!place_free(x, y) && !place_meeting(x, y, colliderBulletFree_obj) && !place_meeting(x, y, colliderOneWay_obj))
 	{
 		audio_play_sound(bulletHitGround_snd, 0.9, false);
 		instance_change(bulletHit_obj, true);
