@@ -3152,8 +3152,8 @@
     "PhysicsWorldPixToMetres": 0.1,
   },
   "parent": {
-    "name": "ParediaWest",
-    "path": "folders/Levels/Main/ParediaWest.yy",
+    "name": "LEGACY",
+    "path": "folders/Levels/LEGACY.yy",
   },
   "resourceVersion": "1.0",
   "name": "level0_RoadToCasino",
