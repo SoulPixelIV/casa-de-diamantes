@@ -88,7 +88,10 @@ if (keyboard_check_pressed(vk_f12))
 }
 */
 
-if (room == level1_RoadToCasino || room == level0_RoadToCasino)
+if (room == level1) {
+	global.ambientShadowIntensity = 0.3 * global.gamma;
+}
+else if (room == level1_RoadToCasino || room == level0_RoadToCasino)
 {
 	global.ambientShadowIntensity = 0.45 * global.gamma;
 }

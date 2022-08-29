@@ -33,6 +33,10 @@ if (instance_exists(player_obj)) {
 	}
 }
 
+if (alwaysAggro) {
+	aggro = true;
+}
+
 if (aggroAtSpecificPoint)
 {
 	var specificPoint = instance_nearest(x, y, battleArenaPlayerpoint_obj);
@@ -63,7 +67,7 @@ if (aggroTimer < 0)
 	aggroTimer = aggroTimerSave;
 }
 
-if (aggro)
+if (aggro && movement)
 {
 	if (checkedWaypoint && !attackInProg1)
 	{
@@ -390,14 +394,14 @@ if (attackInProg1)
 		delay1 = true;
 		if (!instance_exists(dmgHitbox))
 		{
-			dmgHitbox = instance_create_layer(x + 37 * image_xscale, y - 32, "Instances", damageHitbox_obj);
+			dmgHitbox = instance_create_layer(x + 37 * image_xscale, y - 48, "Instances", damageHitbox_obj);
 			with (dmgHitbox)
 			{
 				body = instance_nearest(x, y, crawler_obj);
 			}
 			dmgHitbox.damage = 20;
 			dmgHitbox.image_xscale = 1.5;
-			dmgHitbox.image_yscale = 6;
+			dmgHitbox.image_yscale = 8;
 			dmgHitbox.timer = attackDelay1;
 		}
 	
@@ -484,7 +488,7 @@ if (instance_exists(dmgHitbox))
 	with (dmgHitbox)
 	{
 		x = body.x + 37 * body.image_xscale;
-		y = body.y - 32;
+		y = body.y - 48;
 	}
 }
 
