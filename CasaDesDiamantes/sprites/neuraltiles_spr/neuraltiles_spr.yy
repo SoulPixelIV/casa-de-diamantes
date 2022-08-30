@@ -24,13 +24,13 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"1bfb3df4-e099-4057-ac77-359769abf679","path":"sprites/forestTiles_spr/forestTiles_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"1bfb3df4-e099-4057-ac77-359769abf679","path":"sprites/forestTiles_spr/forestTiles_spr.yy",},"LayerId":{"name":"bbe75377-6bcf-4608-be53-f0484317fdcb","path":"sprites/forestTiles_spr/forestTiles_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-        {"FrameId":{"name":"1bfb3df4-e099-4057-ac77-359769abf679","path":"sprites/forestTiles_spr/forestTiles_spr.yy",},"LayerId":{"name":"e0ff861a-1de3-402f-b93c-bfe4b7126c41","path":"sprites/forestTiles_spr/forestTiles_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"forestTiles_spr","path":"sprites/forestTiles_spr/forestTiles_spr.yy",},"resourceVersion":"1.0","name":"1bfb3df4-e099-4057-ac77-359769abf679","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"1bfb3df4-e099-4057-ac77-359769abf679","path":"sprites/neuralTiles_spr/neuralTiles_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"1bfb3df4-e099-4057-ac77-359769abf679","path":"sprites/neuralTiles_spr/neuralTiles_spr.yy",},"LayerId":{"name":"bbe75377-6bcf-4608-be53-f0484317fdcb","path":"sprites/neuralTiles_spr/neuralTiles_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"1bfb3df4-e099-4057-ac77-359769abf679","path":"sprites/neuralTiles_spr/neuralTiles_spr.yy",},"LayerId":{"name":"e0ff861a-1de3-402f-b93c-bfe4b7126c41","path":"sprites/neuralTiles_spr/neuralTiles_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"neuralTiles_spr","path":"sprites/neuralTiles_spr/neuralTiles_spr.yy",},"resourceVersion":"1.0","name":"1bfb3df4-e099-4057-ac77-359769abf679","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"forestTiles_spr","path":"sprites/forestTiles_spr/forestTiles_spr.yy",},
+    "spriteId": {"name":"neuralTiles_spr","path":"sprites/neuralTiles_spr/neuralTiles_spr.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 15.0,
@@ -42,7 +42,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"4eba8f97-dfd1-4f54-b427-9d60d19ec89b","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"1bfb3df4-e099-4057-ac77-359769abf679","path":"sprites/forestTiles_spr/forestTiles_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
+            {"id":"743f5d4b-ecc1-4d72-a4f9-1b76012ed38e","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"1bfb3df4-e099-4057-ac77-359769abf679","path":"sprites/neuralTiles_spr/neuralTiles_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -59,9 +59,9 @@
     "yorigin": 128,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"forestTiles_spr","path":"sprites/forestTiles_spr/forestTiles_spr.yy",},
+    "parent": {"name":"neuralTiles_spr","path":"sprites/neuralTiles_spr/neuralTiles_spr.yy",},
     "resourceVersion": "1.4",
-    "name": "forestTiles_spr",
+    "name": "neuralTiles_spr",
     "tags": [],
     "resourceType": "GMSequence",
   },
@@ -75,7 +75,7 @@
     "path": "folders/Sprites/Tilesets.yy",
   },
   "resourceVersion": "1.0",
-  "name": "forestTiles_spr",
+  "name": "neuralTiles_spr",
   "tags": [],
   "resourceType": "GMSprite",
 }
