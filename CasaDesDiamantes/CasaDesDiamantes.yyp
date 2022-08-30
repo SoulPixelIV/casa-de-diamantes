@@ -1277,6 +1277,7 @@
   },
   "RoomOrderNodes": [
     {"roomId":{"name":"loadVars","path":"rooms/loadVars/loadVars.yy",},},
+    {"roomId":{"name":"level_Casino","path":"rooms/level_Casino/level_Casino.yy",},},
     {"roomId":{"name":"enemyTestRoom1","path":"rooms/enemyTestRoom1/enemyTestRoom1.yy",},},
     {"roomId":{"name":"level1","path":"rooms/level1/level1.yy",},},
     {"roomId":{"name":"mainmenu","path":"rooms/mainmenu/mainmenu.yy",},},
@@ -1288,7 +1289,6 @@
     {"roomId":{"name":"level3_Powerplant","path":"rooms/level3_Powerplant/level3_Powerplant.yy",},},
     {"roomId":{"name":"level0_SenzelaForest","path":"rooms/level0_SenzelaForest/level0_SenzelaForest.yy",},},
     {"roomId":{"name":"level1_SenzelaForest","path":"rooms/level1_SenzelaForest/level1_SenzelaForest.yy",},},
-    {"roomId":{"name":"level_Casino","path":"rooms/level_Casino/level_Casino.yy",},},
     {"roomId":{"name":"level1_RoadToCasino","path":"rooms/level1_RoadToCasino/level1_RoadToCasino.yy",},},
     {"roomId":{"name":"level2_Powerplant","path":"rooms/level2_Powerplant/level2_Powerplant.yy",},},
     {"roomId":{"name":"warpzone_Powerplant","path":"rooms/warpzone_Powerplant/warpzone_Powerplant.yy",},},
