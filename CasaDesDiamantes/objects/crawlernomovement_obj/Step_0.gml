@@ -5,7 +5,7 @@ if (!gotSpawned)
 	spawn = instance_create_layer(x, y, "Instances", enemyHiddenSpawnpoint_obj);
 	spawn.hp = hp;
 	spawn.aggroRange = aggroRange;
-	spawn.spawnID = crawler_obj;
+	spawn.spawnID = crawlerNoMovement_obj;
 	spawn.dir = image_xscale;
 	gotSpawned = true;
 }
@@ -31,6 +31,10 @@ if (instance_exists(player_obj)) {
 		aggroTimer = aggroTimerSave;
 		deaggroTimer -= global.dt;
 	}
+}
+
+if (alwaysAggro) {
+	aggro = true;
 }
 
 if (aggroAtSpecificPoint)
@@ -386,14 +390,17 @@ if (attackInProg1)
 		}
 	
 		animationSpeed = 1.25;
-		sprite_index = crawlerFireAttack_spr;
-		delay1 = true;
+		sprite_index = crawlerFireAttackProtected_spr;
+		
+		if (!NoCooldown) {
+			delay1 = true;
+		}
 		if (!instance_exists(dmgHitbox))
 		{
 			dmgHitbox = instance_create_layer(x + 37 * image_xscale, y - 48, "Instances", damageHitbox_obj);
 			with (dmgHitbox)
 			{
-				body = instance_nearest(x, y, crawler_obj);
+				body = instance_nearest(x, y, crawlerNoMovement_obj);
 			}
 			dmgHitbox.damage = 20;
 			dmgHitbox.image_xscale = 1.5;
@@ -407,7 +414,7 @@ if (attackInProg1)
 		}
 		with (light)
 		{
-			body = instance_nearest(x, y, crawler_obj);
+			body = instance_nearest(x, y, crawlerNoMovement_obj);
 		}
 	}
 }
