@@ -1285,6 +1285,7 @@
   },
   "RoomOrderNodes": [
     {"roomId":{"name":"loadVars","path":"rooms/loadVars/loadVars.yy",},},
+    {"roomId":{"name":"level1","path":"rooms/level1/level1.yy",},},
     {"roomId":{"name":"level0","path":"rooms/level0/level0.yy",},},
     {"roomId":{"name":"level_Casino","path":"rooms/level_Casino/level_Casino.yy",},},
     {"roomId":{"name":"enemyTestRoom1","path":"rooms/enemyTestRoom1/enemyTestRoom1.yy",},},
@@ -1319,7 +1320,6 @@
     {"roomId":{"name":"testRoom3","path":"rooms/testRoom3/testRoom3.yy",},},
     {"roomId":{"name":"testRoom2","path":"rooms/testRoom2/testRoom2.yy",},},
     {"roomId":{"name":"level2_Casino","path":"rooms/level2_Casino/level2_Casino.yy",},},
-    {"roomId":{"name":"level1","path":"rooms/level1/level1.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":20,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
