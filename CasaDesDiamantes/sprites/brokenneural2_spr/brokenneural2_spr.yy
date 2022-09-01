@@ -14,7 +14,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 288,
+  "width": 239,
   "height": 32,
   "textureGroupId": {
     "name": "Default",
@@ -24,15 +24,15 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"9bcb13b8-bff1-4944-a85a-b439f374ff6b","path":"sprites/fallingForestGround_spr/fallingForestGround_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"9bcb13b8-bff1-4944-a85a-b439f374ff6b","path":"sprites/fallingForestGround_spr/fallingForestGround_spr.yy",},"LayerId":{"name":"9561cbae-b912-45f8-a76f-922c16513218","path":"sprites/fallingForestGround_spr/fallingForestGround_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"fallingForestGround_spr","path":"sprites/fallingForestGround_spr/fallingForestGround_spr.yy",},"resourceVersion":"1.0","name":"9bcb13b8-bff1-4944-a85a-b439f374ff6b","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"9bcb13b8-bff1-4944-a85a-b439f374ff6b","path":"sprites/brokenNeural2_spr/brokenNeural2_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"9bcb13b8-bff1-4944-a85a-b439f374ff6b","path":"sprites/brokenNeural2_spr/brokenNeural2_spr.yy",},"LayerId":{"name":"9561cbae-b912-45f8-a76f-922c16513218","path":"sprites/brokenNeural2_spr/brokenNeural2_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"brokenNeural2_spr","path":"sprites/brokenNeural2_spr/brokenNeural2_spr.yy",},"resourceVersion":"1.0","name":"9bcb13b8-bff1-4944-a85a-b439f374ff6b","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"fallingForestGround_spr","path":"sprites/fallingForestGround_spr/fallingForestGround_spr.yy",},
+    "spriteId": {"name":"brokenNeural2_spr","path":"sprites/brokenNeural2_spr/brokenNeural2_spr.yy",},
     "timeUnits": 1,
     "playback": 1,
-    "playbackSpeed": 30.0,
+    "playbackSpeed": 12.0,
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"e46dff1f-5ec9-4a62-a578-1a0835d4fcc7","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"9bcb13b8-bff1-4944-a85a-b439f374ff6b","path":"sprites/fallingForestGround_spr/fallingForestGround_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
+            {"id":"f712fd09-86fb-4ea9-b0a1-4a8ca3ab9ff6","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"9bcb13b8-bff1-4944-a85a-b439f374ff6b","path":"sprites/brokenNeural2_spr/brokenNeural2_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -54,13 +54,13 @@
     "backdropHeight": 768,
     "backdropXOffset": 0.0,
     "backdropYOffset": 0.0,
-    "xorigin": 144,
+    "xorigin": 119,
     "yorigin": 16,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"fallingForestGround_spr","path":"sprites/fallingForestGround_spr/fallingForestGround_spr.yy",},
+    "parent": {"name":"brokenNeural2_spr","path":"sprites/brokenNeural2_spr/brokenNeural2_spr.yy",},
     "resourceVersion": "1.4",
-    "name": "fallingForestGround_spr",
+    "name": "brokenNeural2_spr",
     "tags": [],
     "resourceType": "GMSequence",
   },
@@ -73,7 +73,7 @@
     "path": "folders/Sprites.yy",
   },
   "resourceVersion": "1.0",
-  "name": "fallingForestGround_spr",
+  "name": "brokenNeural2_spr",
   "tags": [],
   "resourceType": "GMSprite",
 }
