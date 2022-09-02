@@ -2,25 +2,29 @@
 image_speed = 0;
 image_index += global.dt / 15 * animationSpeed;
 
-if (aimDelay > 160)
+var currPlayerAngle = point_direction(x, y, player_obj.x, player_obj.y) + 90;
+
+if (instance_exists(player_obj) && distance_to_object(player_obj) < aggroRange)
 {
-	if (instance_exists(player_obj) && distance_to_object(player_obj) < aggroRange)
-	{
-	    image_angle = point_direction(x, y, player_obj.x, player_obj.y) + 90;
-	}
-	else
-	{
-	    image_angle = 90;
+	if (currPlayerAngle != image_angle) {
+
+		if (currPlayerAngle - image_angle) {
+			if (image_angle < currAngle + 50) {
+				image_angle += global.dt / 3;
+			}
+		} else { 
+			if (image_angle > currAngle - 50) {
+				image_angle -= global.dt / 3;
+			}
+		}
+		
+	} else {
+		image_angle += 0;
 	}
 }
-else
-{
-	if (!setTarget && player_obj != noone)
-	{
-		targetX = player_obj.x;
-		targetY = player_obj.y;
-		setTarget = true;
-	}
+
+if (distance_to_object(player_obj) > aggroRange && instance_exists(player_obj)) {
+	image_angle += 0;
 }
 
 //Sight Check
@@ -64,7 +68,7 @@ if (aimDelay < 0)
 	shootDelay -= global.dt;
 }
 
-if (aimDelay < -200)
+if (aimDelay < -100)
 {
 	aimDelay = 230;
 	throttle = true;
@@ -122,7 +126,7 @@ if (hp < 0)
 	instance_change(zombieGirlDeath2_obj, true);
 }
 
-if (damageTint && sprite_index != zombieGirlFlashHeadshot_spr)
+if (damageTint)
 {
 	sprite_index = chaingunTurretFlash_spr;
 	damageTintTimer -= global.dt;

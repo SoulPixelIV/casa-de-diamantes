@@ -12,6 +12,8 @@ knockback = 0;
 damageCollision = false;
 dontRespawn = true;
 
+currAngle = image_angle;
+
 setTarget = false;
 damageTint = false;
 damageTintTimer = 15;

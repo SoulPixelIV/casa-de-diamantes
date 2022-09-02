@@ -3,6 +3,9 @@
 movSpeed = 1.65;
 createdFire = false;
 invincibilityTimer = 5;
+invisibleTimer = 22;
+
+image_alpha = 0;
 
 dealtDamage = false;
 penetrationTime = 3;
