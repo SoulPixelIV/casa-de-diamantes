@@ -11,8 +11,7 @@ hitable = true;
 knockback = 0;
 damageCollision = false;
 dontRespawn = true;
-
-currAngle = image_angle;
+firstSpinDone = false;
 
 setTarget = false;
 damageTint = false;

@@ -6,21 +6,23 @@ var currPlayerAngle = point_direction(x, y, player_obj.x, player_obj.y) + 90;
 
 if (instance_exists(player_obj) && distance_to_object(player_obj) < aggroRange)
 {
-	if (currPlayerAngle != image_angle) {
-
-		if (currPlayerAngle - image_angle) {
-			if (image_angle < currAngle + 50) {
-				image_angle += global.dt / 3;
-			}
-		} else { 
-			if (image_angle > currAngle - 50) {
-				image_angle -= global.dt / 3;
-			}
+	if (currPlayerAngle < image_angle) {
+		if (!firstSpinDone) {
+			image_angle -= global.dt * 3;
+		} else {
+			image_angle -= global.dt / 3;
 		}
-		
-	} else {
-		image_angle += 0;
+	} else { 
+		if (!firstSpinDone) {
+			image_angle += global.dt * 3;
+		} else {
+			image_angle += global.dt / 3;
+		}
 	}
+}
+
+if ((image_angle < currPlayerAngle + 1) && (image_angle > currPlayerAngle - 1)) {
+	firstSpinDone = true;
 }
 
 if (distance_to_object(player_obj) > aggroRange && instance_exists(player_obj)) {
