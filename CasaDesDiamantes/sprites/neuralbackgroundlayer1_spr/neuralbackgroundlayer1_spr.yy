@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"310e4ed0-14d4-4925-9a13-911fe3ad22c7","path":"sprites/darkcaveBackground2_spr/darkcaveBackground2_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"310e4ed0-14d4-4925-9a13-911fe3ad22c7","path":"sprites/darkcaveBackground2_spr/darkcaveBackground2_spr.yy",},"LayerId":{"name":"610c7e95-aa3f-4e3c-ade2-60564ad4a62e","path":"sprites/darkcaveBackground2_spr/darkcaveBackground2_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"darkcaveBackground2_spr","path":"sprites/darkcaveBackground2_spr/darkcaveBackground2_spr.yy",},"resourceVersion":"1.0","name":"310e4ed0-14d4-4925-9a13-911fe3ad22c7","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"73ffcf27-a766-4374-903f-b913066938c0","path":"sprites/neuralBackgroundLayer1_spr/neuralBackgroundLayer1_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"73ffcf27-a766-4374-903f-b913066938c0","path":"sprites/neuralBackgroundLayer1_spr/neuralBackgroundLayer1_spr.yy",},"LayerId":{"name":"16f59b53-502b-45b2-a491-8cec8371cfc2","path":"sprites/neuralBackgroundLayer1_spr/neuralBackgroundLayer1_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"neuralBackgroundLayer1_spr","path":"sprites/neuralBackgroundLayer1_spr/neuralBackgroundLayer1_spr.yy",},"resourceVersion":"1.0","name":"73ffcf27-a766-4374-903f-b913066938c0","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"darkcaveBackground2_spr","path":"sprites/darkcaveBackground2_spr/darkcaveBackground2_spr.yy",},
+    "spriteId": {"name":"neuralBackgroundLayer1_spr","path":"sprites/neuralBackgroundLayer1_spr/neuralBackgroundLayer1_spr.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"bf0b8fcc-6e9b-4913-9e10-88ac409c8fa9","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"310e4ed0-14d4-4925-9a13-911fe3ad22c7","path":"sprites/darkcaveBackground2_spr/darkcaveBackground2_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
+            {"id":"1ac8a554-de2d-46d5-86a7-3e65ed2b726b","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"73ffcf27-a766-4374-903f-b913066938c0","path":"sprites/neuralBackgroundLayer1_spr/neuralBackgroundLayer1_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -58,22 +58,22 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"darkcaveBackground2_spr","path":"sprites/darkcaveBackground2_spr/darkcaveBackground2_spr.yy",},
+    "parent": {"name":"neuralBackgroundLayer1_spr","path":"sprites/neuralBackgroundLayer1_spr/neuralBackgroundLayer1_spr.yy",},
     "resourceVersion": "1.4",
-    "name": "darkcaveBackground2_spr",
+    "name": "neuralBackgroundLayer1_spr",
     "tags": [],
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"610c7e95-aa3f-4e3c-ade2-60564ad4a62e","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"16f59b53-502b-45b2-a491-8cec8371cfc2","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
-    "name": "DarkCave",
-    "path": "folders/Backgrounds/Sprites/DarkCave.yy",
+    "name": "NeuralNetwork",
+    "path": "folders/Backgrounds/Sprites/NeuralNetwork.yy",
   },
   "resourceVersion": "1.0",
-  "name": "darkcaveBackground2_spr",
+  "name": "neuralBackgroundLayer1_spr",
   "tags": [],
   "resourceType": "GMSprite",
 }

@@ -1,4 +1,4 @@
-if (attackTint && !damageTint) {
+if (!attackTint && damageTint) {
 	gpu_set_blendmode(bm_add);
 	shader_set(shd_flashWhite);
 	shdAlpha = shader_get_uniform(shd_flashWhite, "_alpha");
