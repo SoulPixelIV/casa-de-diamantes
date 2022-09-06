@@ -1,8 +1,8 @@
 draw_set_font(gothicPixel_fnt);
 draw_set_halign(fa_left);
 draw_set_color(make_color_rgb(255, 215, 0));
-draw_text(32, optionsY[0], "Paredia West[WIP] (1)");
-draw_text(32, optionsY[1], "Paredia West[WIP] (2)");
+draw_text(32, optionsY[0], "Tutorial");
+draw_text(32, optionsY[1], "[Level 1] Paredia");
 draw_text(32, optionsY[2], "Casa De Diamantes");
 draw_text(32, optionsY[3], "Senzela Forest (1)");
 draw_text(32, optionsY[4], "Senzela Forest (2)");

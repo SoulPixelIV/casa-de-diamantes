@@ -26,10 +26,10 @@ if (keyboard_check_pressed(vk_enter))
 	switch (cursorPos)
 	{
 		case 0:
-			room_goto(level0_RoadToCasino);
+			room_goto(level0);
 		break;
 		case 1:
-			room_goto(level1_RoadToCasino);
+			room_goto(level1);
 		break;
 		case 2:
 			room_goto(level_Casino);
