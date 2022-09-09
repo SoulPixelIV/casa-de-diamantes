@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "warmJacketArm_spr",
   "bboxMode": 2,
   "collisionKind": 1,
   "type": 0,
@@ -24,12 +27,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"c2b29b90-dcba-4cfd-aead-bcf900d80392","path":"sprites/warmJacketArm_spr/warmJacketArm_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"c2b29b90-dcba-4cfd-aead-bcf900d80392","path":"sprites/warmJacketArm_spr/warmJacketArm_spr.yy",},"LayerId":{"name":"ce6ca150-8db9-4c36-b713-15a944e4bf2c","path":"sprites/warmJacketArm_spr/warmJacketArm_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"warmJacketArm_spr","path":"sprites/warmJacketArm_spr/warmJacketArm_spr.yy",},"resourceVersion":"1.0","name":"c2b29b90-dcba-4cfd-aead-bcf900d80392","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"c2b29b90-dcba-4cfd-aead-bcf900d80392",},
   ],
   "sequence": {
-    "spriteId": {"name":"warmJacketArm_spr","path":"sprites/warmJacketArm_spr/warmJacketArm_spr.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "warmJacketArm_spr",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 12.0,
@@ -40,9 +43,9 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"b8ca30b8-617f-4a5a-ba42-c46dee984087","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"c2b29b90-dcba-4cfd-aead-bcf900d80392","path":"sprites/warmJacketArm_spr/warmJacketArm_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -58,22 +61,13 @@
     "yorigin": 6,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"warmJacketArm_spr","path":"sprites/warmJacketArm_spr/warmJacketArm_spr.yy",},
-    "resourceVersion": "1.4",
-    "name": "warmJacketArm_spr",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"ce6ca150-8db9-4c36-b713-15a944e4bf2c","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"ce6ca150-8db9-4c36-b713-15a944e4bf2c","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "WarmJacket",
     "path": "folders/Steph/Clothes/WarmJacket.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "warmJacketArm_spr",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "smokingJacketWalking_spr",
   "bboxMode": 2,
   "collisionKind": 1,
   "type": 0,
@@ -24,21 +27,15 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"6b635012-8f7b-47a5-aad8-9c9762e710f3","path":"sprites/smokingJacketWalking_spr/smokingJacketWalking_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"6b635012-8f7b-47a5-aad8-9c9762e710f3","path":"sprites/smokingJacketWalking_spr/smokingJacketWalking_spr.yy",},"LayerId":{"name":"e206bbe7-9f68-413a-98b3-c502c8af2b51","path":"sprites/smokingJacketWalking_spr/smokingJacketWalking_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"smokingJacketWalking_spr","path":"sprites/smokingJacketWalking_spr/smokingJacketWalking_spr.yy",},"resourceVersion":"1.0","name":"6b635012-8f7b-47a5-aad8-9c9762e710f3","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"417e3f44-f9c1-4cb7-b1ce-8c0eca27a709","path":"sprites/smokingJacketWalking_spr/smokingJacketWalking_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"417e3f44-f9c1-4cb7-b1ce-8c0eca27a709","path":"sprites/smokingJacketWalking_spr/smokingJacketWalking_spr.yy",},"LayerId":{"name":"e206bbe7-9f68-413a-98b3-c502c8af2b51","path":"sprites/smokingJacketWalking_spr/smokingJacketWalking_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"smokingJacketWalking_spr","path":"sprites/smokingJacketWalking_spr/smokingJacketWalking_spr.yy",},"resourceVersion":"1.0","name":"417e3f44-f9c1-4cb7-b1ce-8c0eca27a709","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"42090ddd-680b-413c-b7b5-d99f5a3f12f7","path":"sprites/smokingJacketWalking_spr/smokingJacketWalking_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"42090ddd-680b-413c-b7b5-d99f5a3f12f7","path":"sprites/smokingJacketWalking_spr/smokingJacketWalking_spr.yy",},"LayerId":{"name":"e206bbe7-9f68-413a-98b3-c502c8af2b51","path":"sprites/smokingJacketWalking_spr/smokingJacketWalking_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"smokingJacketWalking_spr","path":"sprites/smokingJacketWalking_spr/smokingJacketWalking_spr.yy",},"resourceVersion":"1.0","name":"42090ddd-680b-413c-b7b5-d99f5a3f12f7","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"4fc4cf88-4390-4590-b960-2239a295996f","path":"sprites/smokingJacketWalking_spr/smokingJacketWalking_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"4fc4cf88-4390-4590-b960-2239a295996f","path":"sprites/smokingJacketWalking_spr/smokingJacketWalking_spr.yy",},"LayerId":{"name":"e206bbe7-9f68-413a-98b3-c502c8af2b51","path":"sprites/smokingJacketWalking_spr/smokingJacketWalking_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"smokingJacketWalking_spr","path":"sprites/smokingJacketWalking_spr/smokingJacketWalking_spr.yy",},"resourceVersion":"1.0","name":"4fc4cf88-4390-4590-b960-2239a295996f","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"6b635012-8f7b-47a5-aad8-9c9762e710f3",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"417e3f44-f9c1-4cb7-b1ce-8c0eca27a709",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"42090ddd-680b-413c-b7b5-d99f5a3f12f7",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"4fc4cf88-4390-4590-b960-2239a295996f",},
   ],
   "sequence": {
-    "spriteId": {"name":"smokingJacketWalking_spr","path":"sprites/smokingJacketWalking_spr/smokingJacketWalking_spr.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "smokingJacketWalking_spr",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 12.0,
@@ -49,12 +46,12 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"5e113619-cb2b-45d3-9899-754632031e54","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"6b635012-8f7b-47a5-aad8-9c9762e710f3","path":"sprites/smokingJacketWalking_spr/smokingJacketWalking_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"5ddab50b-562c-41a1-8207-11c6b8341081","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"417e3f44-f9c1-4cb7-b1ce-8c0eca27a709","path":"sprites/smokingJacketWalking_spr/smokingJacketWalking_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"4d025ec6-9818-4294-8ac0-ef1355a5aa53","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"42090ddd-680b-413c-b7b5-d99f5a3f12f7","path":"sprites/smokingJacketWalking_spr/smokingJacketWalking_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"4cb18f84-8bf9-4e00-948c-84ae39c9a581","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"4fc4cf88-4390-4590-b960-2239a295996f","path":"sprites/smokingJacketWalking_spr/smokingJacketWalking_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -70,22 +67,13 @@
     "yorigin": 26,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"smokingJacketWalking_spr","path":"sprites/smokingJacketWalking_spr/smokingJacketWalking_spr.yy",},
-    "resourceVersion": "1.4",
-    "name": "smokingJacketWalking_spr",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"e206bbe7-9f68-413a-98b3-c502c8af2b51","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"e206bbe7-9f68-413a-98b3-c502c8af2b51","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "SmokingJacket",
     "path": "folders/Steph/Clothes/SmokingJacket.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "smokingJacketWalking_spr",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "radiationMeterAlarm_spr",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,15 +27,13 @@
   "gridX": 2,
   "gridY": 2,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"b7900041-b5bc-49c3-b951-7d699b47f26d","path":"sprites/radiationMeterAlarm_spr/radiationMeterAlarm_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"b7900041-b5bc-49c3-b951-7d699b47f26d","path":"sprites/radiationMeterAlarm_spr/radiationMeterAlarm_spr.yy",},"LayerId":{"name":"ed80b9fc-e395-4795-88f9-5047a7a02e67","path":"sprites/radiationMeterAlarm_spr/radiationMeterAlarm_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"radiationMeterAlarm_spr","path":"sprites/radiationMeterAlarm_spr/radiationMeterAlarm_spr.yy",},"resourceVersion":"1.0","name":"b7900041-b5bc-49c3-b951-7d699b47f26d","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"8deb015c-202b-4d4e-88c2-8264f62bad0f","path":"sprites/radiationMeterAlarm_spr/radiationMeterAlarm_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"8deb015c-202b-4d4e-88c2-8264f62bad0f","path":"sprites/radiationMeterAlarm_spr/radiationMeterAlarm_spr.yy",},"LayerId":{"name":"ed80b9fc-e395-4795-88f9-5047a7a02e67","path":"sprites/radiationMeterAlarm_spr/radiationMeterAlarm_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"radiationMeterAlarm_spr","path":"sprites/radiationMeterAlarm_spr/radiationMeterAlarm_spr.yy",},"resourceVersion":"1.0","name":"8deb015c-202b-4d4e-88c2-8264f62bad0f","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"b7900041-b5bc-49c3-b951-7d699b47f26d",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"8deb015c-202b-4d4e-88c2-8264f62bad0f",},
   ],
   "sequence": {
-    "spriteId": {"name":"radiationMeterAlarm_spr","path":"sprites/radiationMeterAlarm_spr/radiationMeterAlarm_spr.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "radiationMeterAlarm_spr",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 15.0,
@@ -43,10 +44,10 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"4745c13c-cfc0-4852-be74-0585f64562e7","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b7900041-b5bc-49c3-b951-7d699b47f26d","path":"sprites/radiationMeterAlarm_spr/radiationMeterAlarm_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"668bc252-08d7-45cb-a2aa-714befa76ad0","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"8deb015c-202b-4d4e-88c2-8264f62bad0f","path":"sprites/radiationMeterAlarm_spr/radiationMeterAlarm_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -62,22 +63,13 @@
     "yorigin": 68,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"radiationMeterAlarm_spr","path":"sprites/radiationMeterAlarm_spr/radiationMeterAlarm_spr.yy",},
-    "resourceVersion": "1.4",
-    "name": "radiationMeterAlarm_spr",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"ed80b9fc-e395-4795-88f9-5047a7a02e67","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"ed80b9fc-e395-4795-88f9-5047a7a02e67","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "UI Sprites",
     "path": "folders/UI/UI Sprites.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "radiationMeterAlarm_spr",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

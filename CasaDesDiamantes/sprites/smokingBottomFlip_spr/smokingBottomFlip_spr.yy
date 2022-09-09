@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "smokingBottomFlip_spr",
   "bboxMode": 2,
   "collisionKind": 1,
   "type": 0,
@@ -24,12 +27,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"9ccd90e9-527d-4e38-9b22-ec37054ce24a","path":"sprites/smokingBottomFlip_spr/smokingBottomFlip_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"9ccd90e9-527d-4e38-9b22-ec37054ce24a","path":"sprites/smokingBottomFlip_spr/smokingBottomFlip_spr.yy",},"LayerId":{"name":"1bcb4e04-94a5-46ca-9ec5-8304905da48f","path":"sprites/smokingBottomFlip_spr/smokingBottomFlip_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"smokingBottomFlip_spr","path":"sprites/smokingBottomFlip_spr/smokingBottomFlip_spr.yy",},"resourceVersion":"1.0","name":"9ccd90e9-527d-4e38-9b22-ec37054ce24a","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"9ccd90e9-527d-4e38-9b22-ec37054ce24a",},
   ],
   "sequence": {
-    "spriteId": {"name":"smokingBottomFlip_spr","path":"sprites/smokingBottomFlip_spr/smokingBottomFlip_spr.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "smokingBottomFlip_spr",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 7.0,
@@ -40,9 +43,9 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"58905b37-14f5-457b-adcc-5da2d4dba167","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"9ccd90e9-527d-4e38-9b22-ec37054ce24a","path":"sprites/smokingBottomFlip_spr/smokingBottomFlip_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -58,22 +61,13 @@
     "yorigin": 26,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"smokingBottomFlip_spr","path":"sprites/smokingBottomFlip_spr/smokingBottomFlip_spr.yy",},
-    "resourceVersion": "1.4",
-    "name": "smokingBottomFlip_spr",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"1bcb4e04-94a5-46ca-9ec5-8304905da48f","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"1bcb4e04-94a5-46ca-9ec5-8304905da48f","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "SmokingBottom",
     "path": "folders/Steph/Clothes/SmokingBottom.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "smokingBottomFlip_spr",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

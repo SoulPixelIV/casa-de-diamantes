@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "zombieBucketGirlWalking_spr",
   "bboxMode": 2,
   "collisionKind": 1,
   "type": 0,
@@ -24,21 +27,15 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"6b15218b-91ab-4f54-a10a-9c3c924069e7","path":"sprites/zombieBucketGirlWalking_spr/zombieBucketGirlWalking_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"6b15218b-91ab-4f54-a10a-9c3c924069e7","path":"sprites/zombieBucketGirlWalking_spr/zombieBucketGirlWalking_spr.yy",},"LayerId":{"name":"49b03071-0b2f-4735-b4ff-48b1015af691","path":"sprites/zombieBucketGirlWalking_spr/zombieBucketGirlWalking_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"zombieBucketGirlWalking_spr","path":"sprites/zombieBucketGirlWalking_spr/zombieBucketGirlWalking_spr.yy",},"resourceVersion":"1.0","name":"6b15218b-91ab-4f54-a10a-9c3c924069e7","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"25fb763b-4f67-4138-9d55-1e6cee213a40","path":"sprites/zombieBucketGirlWalking_spr/zombieBucketGirlWalking_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"25fb763b-4f67-4138-9d55-1e6cee213a40","path":"sprites/zombieBucketGirlWalking_spr/zombieBucketGirlWalking_spr.yy",},"LayerId":{"name":"49b03071-0b2f-4735-b4ff-48b1015af691","path":"sprites/zombieBucketGirlWalking_spr/zombieBucketGirlWalking_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"zombieBucketGirlWalking_spr","path":"sprites/zombieBucketGirlWalking_spr/zombieBucketGirlWalking_spr.yy",},"resourceVersion":"1.0","name":"25fb763b-4f67-4138-9d55-1e6cee213a40","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"ab98169c-0d01-479b-81c7-0c8d4ae4450e","path":"sprites/zombieBucketGirlWalking_spr/zombieBucketGirlWalking_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"ab98169c-0d01-479b-81c7-0c8d4ae4450e","path":"sprites/zombieBucketGirlWalking_spr/zombieBucketGirlWalking_spr.yy",},"LayerId":{"name":"49b03071-0b2f-4735-b4ff-48b1015af691","path":"sprites/zombieBucketGirlWalking_spr/zombieBucketGirlWalking_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"zombieBucketGirlWalking_spr","path":"sprites/zombieBucketGirlWalking_spr/zombieBucketGirlWalking_spr.yy",},"resourceVersion":"1.0","name":"ab98169c-0d01-479b-81c7-0c8d4ae4450e","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"8b560b51-186e-4c5f-b296-6fdc16162cc6","path":"sprites/zombieBucketGirlWalking_spr/zombieBucketGirlWalking_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"8b560b51-186e-4c5f-b296-6fdc16162cc6","path":"sprites/zombieBucketGirlWalking_spr/zombieBucketGirlWalking_spr.yy",},"LayerId":{"name":"49b03071-0b2f-4735-b4ff-48b1015af691","path":"sprites/zombieBucketGirlWalking_spr/zombieBucketGirlWalking_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"zombieBucketGirlWalking_spr","path":"sprites/zombieBucketGirlWalking_spr/zombieBucketGirlWalking_spr.yy",},"resourceVersion":"1.0","name":"8b560b51-186e-4c5f-b296-6fdc16162cc6","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"6b15218b-91ab-4f54-a10a-9c3c924069e7",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"25fb763b-4f67-4138-9d55-1e6cee213a40",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"ab98169c-0d01-479b-81c7-0c8d4ae4450e",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"8b560b51-186e-4c5f-b296-6fdc16162cc6",},
   ],
   "sequence": {
-    "spriteId": {"name":"zombieBucketGirlWalking_spr","path":"sprites/zombieBucketGirlWalking_spr/zombieBucketGirlWalking_spr.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "zombieBucketGirlWalking_spr",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 15.0,
@@ -49,12 +46,12 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"78794a2b-58b6-4163-844a-0b52577951a9","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"6b15218b-91ab-4f54-a10a-9c3c924069e7","path":"sprites/zombieBucketGirlWalking_spr/zombieBucketGirlWalking_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"c8d70bbe-d621-4caa-bc4d-3f7a1d208e87","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"25fb763b-4f67-4138-9d55-1e6cee213a40","path":"sprites/zombieBucketGirlWalking_spr/zombieBucketGirlWalking_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"01a745b1-89ca-4941-acc9-a156308f7887","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"ab98169c-0d01-479b-81c7-0c8d4ae4450e","path":"sprites/zombieBucketGirlWalking_spr/zombieBucketGirlWalking_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"222812d8-4e69-48be-a4cc-d8fddf1bdb6d","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"8b560b51-186e-4c5f-b296-6fdc16162cc6","path":"sprites/zombieBucketGirlWalking_spr/zombieBucketGirlWalking_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -70,22 +67,13 @@
     "yorigin": 100,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"zombieBucketGirlWalking_spr","path":"sprites/zombieBucketGirlWalking_spr/zombieBucketGirlWalking_spr.yy",},
-    "resourceVersion": "1.4",
-    "name": "zombieBucketGirlWalking_spr",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"49b03071-0b2f-4735-b4ff-48b1015af691","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"49b03071-0b2f-4735-b4ff-48b1015af691","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "BucketZombie",
     "path": "folders/Enemies/Enemy Sprites/BucketZombie.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "zombieBucketGirlWalking_spr",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

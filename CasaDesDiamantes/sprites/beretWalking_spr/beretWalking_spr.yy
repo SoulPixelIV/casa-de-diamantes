@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "beretWalking_spr",
   "bboxMode": 2,
   "collisionKind": 1,
   "type": 0,
@@ -24,21 +27,15 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"f44e2509-83b7-4225-bece-8b01e9d7be40","path":"sprites/beretWalking_spr/beretWalking_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"f44e2509-83b7-4225-bece-8b01e9d7be40","path":"sprites/beretWalking_spr/beretWalking_spr.yy",},"LayerId":{"name":"3e6e376f-020b-4f08-99cb-29c5e5191b87","path":"sprites/beretWalking_spr/beretWalking_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"beretWalking_spr","path":"sprites/beretWalking_spr/beretWalking_spr.yy",},"resourceVersion":"1.0","name":"f44e2509-83b7-4225-bece-8b01e9d7be40","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"485038c1-d7a9-457f-840f-9be646c4d3a7","path":"sprites/beretWalking_spr/beretWalking_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"485038c1-d7a9-457f-840f-9be646c4d3a7","path":"sprites/beretWalking_spr/beretWalking_spr.yy",},"LayerId":{"name":"3e6e376f-020b-4f08-99cb-29c5e5191b87","path":"sprites/beretWalking_spr/beretWalking_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"beretWalking_spr","path":"sprites/beretWalking_spr/beretWalking_spr.yy",},"resourceVersion":"1.0","name":"485038c1-d7a9-457f-840f-9be646c4d3a7","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"627888e1-8618-4871-affb-05579440b6a1","path":"sprites/beretWalking_spr/beretWalking_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"627888e1-8618-4871-affb-05579440b6a1","path":"sprites/beretWalking_spr/beretWalking_spr.yy",},"LayerId":{"name":"3e6e376f-020b-4f08-99cb-29c5e5191b87","path":"sprites/beretWalking_spr/beretWalking_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"beretWalking_spr","path":"sprites/beretWalking_spr/beretWalking_spr.yy",},"resourceVersion":"1.0","name":"627888e1-8618-4871-affb-05579440b6a1","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"a487850b-4d09-4723-8bae-3d2aea4af245","path":"sprites/beretWalking_spr/beretWalking_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"a487850b-4d09-4723-8bae-3d2aea4af245","path":"sprites/beretWalking_spr/beretWalking_spr.yy",},"LayerId":{"name":"3e6e376f-020b-4f08-99cb-29c5e5191b87","path":"sprites/beretWalking_spr/beretWalking_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"beretWalking_spr","path":"sprites/beretWalking_spr/beretWalking_spr.yy",},"resourceVersion":"1.0","name":"a487850b-4d09-4723-8bae-3d2aea4af245","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"f44e2509-83b7-4225-bece-8b01e9d7be40",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"485038c1-d7a9-457f-840f-9be646c4d3a7",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"627888e1-8618-4871-affb-05579440b6a1",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"a487850b-4d09-4723-8bae-3d2aea4af245",},
   ],
   "sequence": {
-    "spriteId": {"name":"beretWalking_spr","path":"sprites/beretWalking_spr/beretWalking_spr.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "beretWalking_spr",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 7.0,
@@ -49,12 +46,12 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"61dc4d48-5294-4fc4-a049-735b285a3d16","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"f44e2509-83b7-4225-bece-8b01e9d7be40","path":"sprites/beretWalking_spr/beretWalking_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"34fdbdd9-27ff-4d70-b65e-0869f9fea5cb","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"485038c1-d7a9-457f-840f-9be646c4d3a7","path":"sprites/beretWalking_spr/beretWalking_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"68596974-78ba-444f-a4d2-c936131ed239","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"627888e1-8618-4871-affb-05579440b6a1","path":"sprites/beretWalking_spr/beretWalking_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"eae7c94f-05e7-4923-86c8-3fccd160e0d7","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"a487850b-4d09-4723-8bae-3d2aea4af245","path":"sprites/beretWalking_spr/beretWalking_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -70,22 +67,13 @@
     "yorigin": 5,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"beretWalking_spr","path":"sprites/beretWalking_spr/beretWalking_spr.yy",},
-    "resourceVersion": "1.4",
-    "name": "beretWalking_spr",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"3e6e376f-020b-4f08-99cb-29c5e5191b87","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"3e6e376f-020b-4f08-99cb-29c5e5191b87","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Beret",
     "path": "folders/Steph/Clothes/Beret.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "beretWalking_spr",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

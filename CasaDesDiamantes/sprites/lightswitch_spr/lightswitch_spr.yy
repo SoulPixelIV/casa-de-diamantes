@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "lightswitch_spr",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,27 +27,17 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"2d50b8a9-6db3-4445-9aeb-99a8912c5030","path":"sprites/lightswitch_spr/lightswitch_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"2d50b8a9-6db3-4445-9aeb-99a8912c5030","path":"sprites/lightswitch_spr/lightswitch_spr.yy",},"LayerId":{"name":"9bf924db-9aa1-472a-a972-a5967dc8920a","path":"sprites/lightswitch_spr/lightswitch_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"lightswitch_spr","path":"sprites/lightswitch_spr/lightswitch_spr.yy",},"resourceVersion":"1.0","name":"2d50b8a9-6db3-4445-9aeb-99a8912c5030","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"138032b9-d643-4e8a-8546-13519a906b36","path":"sprites/lightswitch_spr/lightswitch_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"138032b9-d643-4e8a-8546-13519a906b36","path":"sprites/lightswitch_spr/lightswitch_spr.yy",},"LayerId":{"name":"9bf924db-9aa1-472a-a972-a5967dc8920a","path":"sprites/lightswitch_spr/lightswitch_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"lightswitch_spr","path":"sprites/lightswitch_spr/lightswitch_spr.yy",},"resourceVersion":"1.0","name":"138032b9-d643-4e8a-8546-13519a906b36","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"e0a6d11f-72ce-47b6-b111-dfc19da4cde5","path":"sprites/lightswitch_spr/lightswitch_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"e0a6d11f-72ce-47b6-b111-dfc19da4cde5","path":"sprites/lightswitch_spr/lightswitch_spr.yy",},"LayerId":{"name":"9bf924db-9aa1-472a-a972-a5967dc8920a","path":"sprites/lightswitch_spr/lightswitch_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"lightswitch_spr","path":"sprites/lightswitch_spr/lightswitch_spr.yy",},"resourceVersion":"1.0","name":"e0a6d11f-72ce-47b6-b111-dfc19da4cde5","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"bfa49435-94fb-40ef-9646-60e755e312f6","path":"sprites/lightswitch_spr/lightswitch_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"bfa49435-94fb-40ef-9646-60e755e312f6","path":"sprites/lightswitch_spr/lightswitch_spr.yy",},"LayerId":{"name":"9bf924db-9aa1-472a-a972-a5967dc8920a","path":"sprites/lightswitch_spr/lightswitch_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"lightswitch_spr","path":"sprites/lightswitch_spr/lightswitch_spr.yy",},"resourceVersion":"1.0","name":"bfa49435-94fb-40ef-9646-60e755e312f6","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"2c4e4602-dc0a-410a-98aa-9330fec27c35","path":"sprites/lightswitch_spr/lightswitch_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"2c4e4602-dc0a-410a-98aa-9330fec27c35","path":"sprites/lightswitch_spr/lightswitch_spr.yy",},"LayerId":{"name":"9bf924db-9aa1-472a-a972-a5967dc8920a","path":"sprites/lightswitch_spr/lightswitch_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"lightswitch_spr","path":"sprites/lightswitch_spr/lightswitch_spr.yy",},"resourceVersion":"1.0","name":"2c4e4602-dc0a-410a-98aa-9330fec27c35","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"7c1c5dfc-8fe5-4722-9d3c-5846c3f51367","path":"sprites/lightswitch_spr/lightswitch_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"7c1c5dfc-8fe5-4722-9d3c-5846c3f51367","path":"sprites/lightswitch_spr/lightswitch_spr.yy",},"LayerId":{"name":"9bf924db-9aa1-472a-a972-a5967dc8920a","path":"sprites/lightswitch_spr/lightswitch_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"lightswitch_spr","path":"sprites/lightswitch_spr/lightswitch_spr.yy",},"resourceVersion":"1.0","name":"7c1c5dfc-8fe5-4722-9d3c-5846c3f51367","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"2d50b8a9-6db3-4445-9aeb-99a8912c5030",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"138032b9-d643-4e8a-8546-13519a906b36",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"e0a6d11f-72ce-47b6-b111-dfc19da4cde5",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"bfa49435-94fb-40ef-9646-60e755e312f6",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"2c4e4602-dc0a-410a-98aa-9330fec27c35",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"7c1c5dfc-8fe5-4722-9d3c-5846c3f51367",},
   ],
   "sequence": {
-    "spriteId": {"name":"lightswitch_spr","path":"sprites/lightswitch_spr/lightswitch_spr.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "lightswitch_spr",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -55,14 +48,14 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"26e889f0-6184-4572-bc33-8e70a1f26db3","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"2d50b8a9-6db3-4445-9aeb-99a8912c5030","path":"sprites/lightswitch_spr/lightswitch_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"da80cd77-0296-4542-9ee2-bc0b1f3a6818","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"138032b9-d643-4e8a-8546-13519a906b36","path":"sprites/lightswitch_spr/lightswitch_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"093b0a4f-d76e-4ddf-b73f-c2dd009b69c8","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"e0a6d11f-72ce-47b6-b111-dfc19da4cde5","path":"sprites/lightswitch_spr/lightswitch_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"05fed408-9538-4cf5-b1b6-f145b9b76335","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"bfa49435-94fb-40ef-9646-60e755e312f6","path":"sprites/lightswitch_spr/lightswitch_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"86546f96-0dc9-440e-8f8d-d791bc450d00","Key":4.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"2c4e4602-dc0a-410a-98aa-9330fec27c35","path":"sprites/lightswitch_spr/lightswitch_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"df73b051-2fb2-46c0-950b-1ea0ef9bb827","Key":5.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"7c1c5dfc-8fe5-4722-9d3c-5846c3f51367","path":"sprites/lightswitch_spr/lightswitch_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -78,22 +71,13 @@
     "yorigin": 8,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"lightswitch_spr","path":"sprites/lightswitch_spr/lightswitch_spr.yy",},
-    "resourceVersion": "1.4",
-    "name": "lightswitch_spr",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"9bf924db-9aa1-472a-a972-a5967dc8920a","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"9bf924db-9aa1-472a-a972-a5967dc8920a","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Sprites",
     "path": "folders/Sprites.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "lightswitch_spr",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "smokingTopClimbing_spr",
   "bboxMode": 2,
   "collisionKind": 1,
   "type": 0,
@@ -24,15 +27,13 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"33f26e4d-a2e8-4f2d-96cd-0576e8845e3d","path":"sprites/smokingTopClimbing_spr/smokingTopClimbing_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"33f26e4d-a2e8-4f2d-96cd-0576e8845e3d","path":"sprites/smokingTopClimbing_spr/smokingTopClimbing_spr.yy",},"LayerId":{"name":"bb0e7a21-4cd9-487e-82f6-5d62339d47a2","path":"sprites/smokingTopClimbing_spr/smokingTopClimbing_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"smokingTopClimbing_spr","path":"sprites/smokingTopClimbing_spr/smokingTopClimbing_spr.yy",},"resourceVersion":"1.0","name":"33f26e4d-a2e8-4f2d-96cd-0576e8845e3d","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"377ec3d6-66e5-4be3-9272-86e19e6eaefb","path":"sprites/smokingTopClimbing_spr/smokingTopClimbing_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"377ec3d6-66e5-4be3-9272-86e19e6eaefb","path":"sprites/smokingTopClimbing_spr/smokingTopClimbing_spr.yy",},"LayerId":{"name":"bb0e7a21-4cd9-487e-82f6-5d62339d47a2","path":"sprites/smokingTopClimbing_spr/smokingTopClimbing_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"smokingTopClimbing_spr","path":"sprites/smokingTopClimbing_spr/smokingTopClimbing_spr.yy",},"resourceVersion":"1.0","name":"377ec3d6-66e5-4be3-9272-86e19e6eaefb","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"33f26e4d-a2e8-4f2d-96cd-0576e8845e3d",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"377ec3d6-66e5-4be3-9272-86e19e6eaefb",},
   ],
   "sequence": {
-    "spriteId": {"name":"smokingTopClimbing_spr","path":"sprites/smokingTopClimbing_spr/smokingTopClimbing_spr.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "smokingTopClimbing_spr",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 3.0,
@@ -43,10 +44,10 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"862edac5-9d86-488a-a9f9-2e6bdf9f4b96","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"33f26e4d-a2e8-4f2d-96cd-0576e8845e3d","path":"sprites/smokingTopClimbing_spr/smokingTopClimbing_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"4df6f4c6-6378-4db2-b4b2-c90b15d0f9e1","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"377ec3d6-66e5-4be3-9272-86e19e6eaefb","path":"sprites/smokingTopClimbing_spr/smokingTopClimbing_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -62,22 +63,13 @@
     "yorigin": 26,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"smokingTopClimbing_spr","path":"sprites/smokingTopClimbing_spr/smokingTopClimbing_spr.yy",},
-    "resourceVersion": "1.4",
-    "name": "smokingTopClimbing_spr",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"bb0e7a21-4cd9-487e-82f6-5d62339d47a2","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"bb0e7a21-4cd9-487e-82f6-5d62339d47a2","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "SmokingTop",
     "path": "folders/Steph/Clothes/SmokingTop.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "smokingTopClimbing_spr",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

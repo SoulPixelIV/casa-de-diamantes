@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "edenCrate2_obj",
   "spriteId": {
     "name": "edenCrate2_spr",
     "path": "sprites/edenCrate2_spr/edenCrate2_spr.yy",
@@ -28,8 +31,4 @@
     "name": "Decoration",
     "path": "folders/Objects/Decoration.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "edenCrate2_obj",
-  "tags": [],
-  "resourceType": "GMObject",
 }

@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "zombieGirlAttack1_spr",
   "bboxMode": 2,
   "collisionKind": 1,
   "type": 0,
@@ -24,24 +27,16 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"d20b8bb9-d941-4fb8-bbb5-5c6937d965c6","path":"sprites/zombieGirlAttack1_spr/zombieGirlAttack1_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"d20b8bb9-d941-4fb8-bbb5-5c6937d965c6","path":"sprites/zombieGirlAttack1_spr/zombieGirlAttack1_spr.yy",},"LayerId":{"name":"d5588e13-2699-4744-bb02-954e2cded410","path":"sprites/zombieGirlAttack1_spr/zombieGirlAttack1_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"zombieGirlAttack1_spr","path":"sprites/zombieGirlAttack1_spr/zombieGirlAttack1_spr.yy",},"resourceVersion":"1.0","name":"d20b8bb9-d941-4fb8-bbb5-5c6937d965c6","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"0cd616c9-c1a2-4718-95f6-ca2b2dab592b","path":"sprites/zombieGirlAttack1_spr/zombieGirlAttack1_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"0cd616c9-c1a2-4718-95f6-ca2b2dab592b","path":"sprites/zombieGirlAttack1_spr/zombieGirlAttack1_spr.yy",},"LayerId":{"name":"d5588e13-2699-4744-bb02-954e2cded410","path":"sprites/zombieGirlAttack1_spr/zombieGirlAttack1_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"zombieGirlAttack1_spr","path":"sprites/zombieGirlAttack1_spr/zombieGirlAttack1_spr.yy",},"resourceVersion":"1.0","name":"0cd616c9-c1a2-4718-95f6-ca2b2dab592b","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"a9b50869-8f51-433b-aa87-18d4ab9c85bc","path":"sprites/zombieGirlAttack1_spr/zombieGirlAttack1_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"a9b50869-8f51-433b-aa87-18d4ab9c85bc","path":"sprites/zombieGirlAttack1_spr/zombieGirlAttack1_spr.yy",},"LayerId":{"name":"d5588e13-2699-4744-bb02-954e2cded410","path":"sprites/zombieGirlAttack1_spr/zombieGirlAttack1_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"zombieGirlAttack1_spr","path":"sprites/zombieGirlAttack1_spr/zombieGirlAttack1_spr.yy",},"resourceVersion":"1.0","name":"a9b50869-8f51-433b-aa87-18d4ab9c85bc","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"c2b4cd20-1f7c-4e11-8a84-196c48479a22","path":"sprites/zombieGirlAttack1_spr/zombieGirlAttack1_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"c2b4cd20-1f7c-4e11-8a84-196c48479a22","path":"sprites/zombieGirlAttack1_spr/zombieGirlAttack1_spr.yy",},"LayerId":{"name":"d5588e13-2699-4744-bb02-954e2cded410","path":"sprites/zombieGirlAttack1_spr/zombieGirlAttack1_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"zombieGirlAttack1_spr","path":"sprites/zombieGirlAttack1_spr/zombieGirlAttack1_spr.yy",},"resourceVersion":"1.0","name":"c2b4cd20-1f7c-4e11-8a84-196c48479a22","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"f6395122-72c8-4d7a-bd89-24663c3c9f29","path":"sprites/zombieGirlAttack1_spr/zombieGirlAttack1_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"f6395122-72c8-4d7a-bd89-24663c3c9f29","path":"sprites/zombieGirlAttack1_spr/zombieGirlAttack1_spr.yy",},"LayerId":{"name":"d5588e13-2699-4744-bb02-954e2cded410","path":"sprites/zombieGirlAttack1_spr/zombieGirlAttack1_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"zombieGirlAttack1_spr","path":"sprites/zombieGirlAttack1_spr/zombieGirlAttack1_spr.yy",},"resourceVersion":"1.0","name":"f6395122-72c8-4d7a-bd89-24663c3c9f29","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"d20b8bb9-d941-4fb8-bbb5-5c6937d965c6",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"0cd616c9-c1a2-4718-95f6-ca2b2dab592b",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"a9b50869-8f51-433b-aa87-18d4ab9c85bc",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"c2b4cd20-1f7c-4e11-8a84-196c48479a22",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"f6395122-72c8-4d7a-bd89-24663c3c9f29",},
   ],
   "sequence": {
-    "spriteId": {"name":"zombieGirlAttack1_spr","path":"sprites/zombieGirlAttack1_spr/zombieGirlAttack1_spr.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "zombieGirlAttack1_spr",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 8.0,
@@ -52,13 +47,13 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"06b768d6-a127-4b20-877f-4dd159e2aa84","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d20b8bb9-d941-4fb8-bbb5-5c6937d965c6","path":"sprites/zombieGirlAttack1_spr/zombieGirlAttack1_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"abc829bf-60d5-4c0c-99a6-ed7af05744e0","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"0cd616c9-c1a2-4718-95f6-ca2b2dab592b","path":"sprites/zombieGirlAttack1_spr/zombieGirlAttack1_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"8c02c7ce-9255-483f-936b-29657ad01fca","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"a9b50869-8f51-433b-aa87-18d4ab9c85bc","path":"sprites/zombieGirlAttack1_spr/zombieGirlAttack1_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"b3d0901b-6b4f-4365-b448-ddd199d5c64f","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"c2b4cd20-1f7c-4e11-8a84-196c48479a22","path":"sprites/zombieGirlAttack1_spr/zombieGirlAttack1_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"53a0a0a0-0bec-4c76-881d-462dacaf92a1","Key":4.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"f6395122-72c8-4d7a-bd89-24663c3c9f29","path":"sprites/zombieGirlAttack1_spr/zombieGirlAttack1_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -74,22 +69,13 @@
     "yorigin": 90,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"zombieGirlAttack1_spr","path":"sprites/zombieGirlAttack1_spr/zombieGirlAttack1_spr.yy",},
-    "resourceVersion": "1.4",
-    "name": "zombieGirlAttack1_spr",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"d5588e13-2699-4744-bb02-954e2cded410","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"d5588e13-2699-4744-bb02-954e2cded410","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "ZombieGirl",
     "path": "folders/Enemies/Enemy Sprites/ZombieGirl.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "zombieGirlAttack1_spr",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

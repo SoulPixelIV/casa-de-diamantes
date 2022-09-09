@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "playerShotgunWalking_spr",
   "bboxMode": 2,
   "collisionKind": 1,
   "type": 0,
@@ -24,27 +27,17 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"e13f39fc-a953-4939-8dcf-ed59f95d5666","path":"sprites/playerShotgunWalking_spr/playerShotgunWalking_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"e13f39fc-a953-4939-8dcf-ed59f95d5666","path":"sprites/playerShotgunWalking_spr/playerShotgunWalking_spr.yy",},"LayerId":{"name":"ce6ca150-8db9-4c36-b713-15a944e4bf2c","path":"sprites/playerShotgunWalking_spr/playerShotgunWalking_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"playerShotgunWalking_spr","path":"sprites/playerShotgunWalking_spr/playerShotgunWalking_spr.yy",},"resourceVersion":"1.0","name":"e13f39fc-a953-4939-8dcf-ed59f95d5666","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"6538373b-2e03-4646-8bf5-3777d8f57a7d","path":"sprites/playerShotgunWalking_spr/playerShotgunWalking_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"6538373b-2e03-4646-8bf5-3777d8f57a7d","path":"sprites/playerShotgunWalking_spr/playerShotgunWalking_spr.yy",},"LayerId":{"name":"ce6ca150-8db9-4c36-b713-15a944e4bf2c","path":"sprites/playerShotgunWalking_spr/playerShotgunWalking_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"playerShotgunWalking_spr","path":"sprites/playerShotgunWalking_spr/playerShotgunWalking_spr.yy",},"resourceVersion":"1.0","name":"6538373b-2e03-4646-8bf5-3777d8f57a7d","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"78e4d890-d3cd-4cb1-904d-c27b23414f0d","path":"sprites/playerShotgunWalking_spr/playerShotgunWalking_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"78e4d890-d3cd-4cb1-904d-c27b23414f0d","path":"sprites/playerShotgunWalking_spr/playerShotgunWalking_spr.yy",},"LayerId":{"name":"ce6ca150-8db9-4c36-b713-15a944e4bf2c","path":"sprites/playerShotgunWalking_spr/playerShotgunWalking_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"playerShotgunWalking_spr","path":"sprites/playerShotgunWalking_spr/playerShotgunWalking_spr.yy",},"resourceVersion":"1.0","name":"78e4d890-d3cd-4cb1-904d-c27b23414f0d","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"f75f7fdf-8565-431f-a830-6a4cf1fe02b7","path":"sprites/playerShotgunWalking_spr/playerShotgunWalking_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"f75f7fdf-8565-431f-a830-6a4cf1fe02b7","path":"sprites/playerShotgunWalking_spr/playerShotgunWalking_spr.yy",},"LayerId":{"name":"ce6ca150-8db9-4c36-b713-15a944e4bf2c","path":"sprites/playerShotgunWalking_spr/playerShotgunWalking_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"playerShotgunWalking_spr","path":"sprites/playerShotgunWalking_spr/playerShotgunWalking_spr.yy",},"resourceVersion":"1.0","name":"f75f7fdf-8565-431f-a830-6a4cf1fe02b7","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"757d20a6-d26d-45d0-aed1-557953fbf477","path":"sprites/playerShotgunWalking_spr/playerShotgunWalking_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"757d20a6-d26d-45d0-aed1-557953fbf477","path":"sprites/playerShotgunWalking_spr/playerShotgunWalking_spr.yy",},"LayerId":{"name":"ce6ca150-8db9-4c36-b713-15a944e4bf2c","path":"sprites/playerShotgunWalking_spr/playerShotgunWalking_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"playerShotgunWalking_spr","path":"sprites/playerShotgunWalking_spr/playerShotgunWalking_spr.yy",},"resourceVersion":"1.0","name":"757d20a6-d26d-45d0-aed1-557953fbf477","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"10634d33-0ff6-48ce-86e1-8932fe9cd8c9","path":"sprites/playerShotgunWalking_spr/playerShotgunWalking_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"10634d33-0ff6-48ce-86e1-8932fe9cd8c9","path":"sprites/playerShotgunWalking_spr/playerShotgunWalking_spr.yy",},"LayerId":{"name":"ce6ca150-8db9-4c36-b713-15a944e4bf2c","path":"sprites/playerShotgunWalking_spr/playerShotgunWalking_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"playerShotgunWalking_spr","path":"sprites/playerShotgunWalking_spr/playerShotgunWalking_spr.yy",},"resourceVersion":"1.0","name":"10634d33-0ff6-48ce-86e1-8932fe9cd8c9","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"e13f39fc-a953-4939-8dcf-ed59f95d5666",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"6538373b-2e03-4646-8bf5-3777d8f57a7d",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"78e4d890-d3cd-4cb1-904d-c27b23414f0d",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"f75f7fdf-8565-431f-a830-6a4cf1fe02b7",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"757d20a6-d26d-45d0-aed1-557953fbf477",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"10634d33-0ff6-48ce-86e1-8932fe9cd8c9",},
   ],
   "sequence": {
-    "spriteId": {"name":"playerShotgunWalking_spr","path":"sprites/playerShotgunWalking_spr/playerShotgunWalking_spr.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "playerShotgunWalking_spr",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 12.0,
@@ -55,14 +48,14 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"81ab0dc2-e894-47ee-9f3f-d433baa6a46a","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"e13f39fc-a953-4939-8dcf-ed59f95d5666","path":"sprites/playerShotgunWalking_spr/playerShotgunWalking_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"4a6d38bf-a162-4dfb-83ed-b55e99ba04d5","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"6538373b-2e03-4646-8bf5-3777d8f57a7d","path":"sprites/playerShotgunWalking_spr/playerShotgunWalking_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"f6ee4980-17ae-4ac1-adde-74ada016e744","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"78e4d890-d3cd-4cb1-904d-c27b23414f0d","path":"sprites/playerShotgunWalking_spr/playerShotgunWalking_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"942cbdba-2cba-4853-a9a7-257508fbb067","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"f75f7fdf-8565-431f-a830-6a4cf1fe02b7","path":"sprites/playerShotgunWalking_spr/playerShotgunWalking_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"c4605e69-9111-408d-b79f-9e12b33d9146","Key":4.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"757d20a6-d26d-45d0-aed1-557953fbf477","path":"sprites/playerShotgunWalking_spr/playerShotgunWalking_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"4b30c8c4-9503-4582-8ce1-e3580184c248","Key":5.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"10634d33-0ff6-48ce-86e1-8932fe9cd8c9","path":"sprites/playerShotgunWalking_spr/playerShotgunWalking_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -78,22 +71,13 @@
     "yorigin": 5,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"playerShotgunWalking_spr","path":"sprites/playerShotgunWalking_spr/playerShotgunWalking_spr.yy",},
-    "resourceVersion": "1.4",
-    "name": "playerShotgunWalking_spr",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"ce6ca150-8db9-4c36-b713-15a944e4bf2c","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"ce6ca150-8db9-4c36-b713-15a944e4bf2c","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Steph Sprites",
     "path": "folders/Steph/Steph Sprites.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "playerShotgunWalking_spr",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

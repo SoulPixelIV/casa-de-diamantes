@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "playerDualBarettas_spr",
   "bboxMode": 2,
   "collisionKind": 1,
   "type": 0,
@@ -24,21 +27,15 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"c2b29b90-dcba-4cfd-aead-bcf900d80392","path":"sprites/playerDualBarettas_spr/playerDualBarettas_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"c2b29b90-dcba-4cfd-aead-bcf900d80392","path":"sprites/playerDualBarettas_spr/playerDualBarettas_spr.yy",},"LayerId":{"name":"ce6ca150-8db9-4c36-b713-15a944e4bf2c","path":"sprites/playerDualBarettas_spr/playerDualBarettas_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"playerDualBarettas_spr","path":"sprites/playerDualBarettas_spr/playerDualBarettas_spr.yy",},"resourceVersion":"1.0","name":"c2b29b90-dcba-4cfd-aead-bcf900d80392","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"e5886353-9e58-4191-b9ee-046733d31841","path":"sprites/playerDualBarettas_spr/playerDualBarettas_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"e5886353-9e58-4191-b9ee-046733d31841","path":"sprites/playerDualBarettas_spr/playerDualBarettas_spr.yy",},"LayerId":{"name":"ce6ca150-8db9-4c36-b713-15a944e4bf2c","path":"sprites/playerDualBarettas_spr/playerDualBarettas_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"playerDualBarettas_spr","path":"sprites/playerDualBarettas_spr/playerDualBarettas_spr.yy",},"resourceVersion":"1.0","name":"e5886353-9e58-4191-b9ee-046733d31841","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"c4640a6a-5a8d-4b4e-93e4-329364247050","path":"sprites/playerDualBarettas_spr/playerDualBarettas_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"c4640a6a-5a8d-4b4e-93e4-329364247050","path":"sprites/playerDualBarettas_spr/playerDualBarettas_spr.yy",},"LayerId":{"name":"ce6ca150-8db9-4c36-b713-15a944e4bf2c","path":"sprites/playerDualBarettas_spr/playerDualBarettas_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"playerDualBarettas_spr","path":"sprites/playerDualBarettas_spr/playerDualBarettas_spr.yy",},"resourceVersion":"1.0","name":"c4640a6a-5a8d-4b4e-93e4-329364247050","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"9c01fad6-c3da-463e-aefa-307704c088cc","path":"sprites/playerDualBarettas_spr/playerDualBarettas_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"9c01fad6-c3da-463e-aefa-307704c088cc","path":"sprites/playerDualBarettas_spr/playerDualBarettas_spr.yy",},"LayerId":{"name":"ce6ca150-8db9-4c36-b713-15a944e4bf2c","path":"sprites/playerDualBarettas_spr/playerDualBarettas_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"playerDualBarettas_spr","path":"sprites/playerDualBarettas_spr/playerDualBarettas_spr.yy",},"resourceVersion":"1.0","name":"9c01fad6-c3da-463e-aefa-307704c088cc","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"c2b29b90-dcba-4cfd-aead-bcf900d80392",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"e5886353-9e58-4191-b9ee-046733d31841",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"c4640a6a-5a8d-4b4e-93e4-329364247050",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"9c01fad6-c3da-463e-aefa-307704c088cc",},
   ],
   "sequence": {
-    "spriteId": {"name":"playerDualBarettas_spr","path":"sprites/playerDualBarettas_spr/playerDualBarettas_spr.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "playerDualBarettas_spr",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 12.0,
@@ -49,12 +46,12 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"2087c497-8a11-493d-928d-2a6400680ef6","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"c2b29b90-dcba-4cfd-aead-bcf900d80392","path":"sprites/playerDualBarettas_spr/playerDualBarettas_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"b0f94d6e-0232-452e-9b38-4b54e9aec654","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"e5886353-9e58-4191-b9ee-046733d31841","path":"sprites/playerDualBarettas_spr/playerDualBarettas_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"5fe18855-728a-403e-a7c8-d6825dede35b","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"c4640a6a-5a8d-4b4e-93e4-329364247050","path":"sprites/playerDualBarettas_spr/playerDualBarettas_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"40b6ff4b-3ad2-46d4-9936-b280d05f2e65","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"9c01fad6-c3da-463e-aefa-307704c088cc","path":"sprites/playerDualBarettas_spr/playerDualBarettas_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -70,22 +67,13 @@
     "yorigin": 5,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"playerDualBarettas_spr","path":"sprites/playerDualBarettas_spr/playerDualBarettas_spr.yy",},
-    "resourceVersion": "1.4",
-    "name": "playerDualBarettas_spr",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"ce6ca150-8db9-4c36-b713-15a944e4bf2c","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"ce6ca150-8db9-4c36-b713-15a944e4bf2c","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Steph Sprites",
     "path": "folders/Steph/Steph Sprites.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "playerDualBarettas_spr",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

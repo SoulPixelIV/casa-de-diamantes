@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "ammoCircleDualBarettaField_spr",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,60 +27,28 @@
   "gridX": 2,
   "gridY": 2,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"827a162c-e099-4a9e-9a3b-e1a5abe8c0e5","path":"sprites/ammoCircleDualBarettaField_spr/ammoCircleDualBarettaField_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"827a162c-e099-4a9e-9a3b-e1a5abe8c0e5","path":"sprites/ammoCircleDualBarettaField_spr/ammoCircleDualBarettaField_spr.yy",},"LayerId":{"name":"ed80b9fc-e395-4795-88f9-5047a7a02e67","path":"sprites/ammoCircleDualBarettaField_spr/ammoCircleDualBarettaField_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"ammoCircleDualBarettaField_spr","path":"sprites/ammoCircleDualBarettaField_spr/ammoCircleDualBarettaField_spr.yy",},"resourceVersion":"1.0","name":"827a162c-e099-4a9e-9a3b-e1a5abe8c0e5","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"0a6b42c6-10f7-4528-acf4-4349fc53c2b5","path":"sprites/ammoCircleDualBarettaField_spr/ammoCircleDualBarettaField_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"0a6b42c6-10f7-4528-acf4-4349fc53c2b5","path":"sprites/ammoCircleDualBarettaField_spr/ammoCircleDualBarettaField_spr.yy",},"LayerId":{"name":"ed80b9fc-e395-4795-88f9-5047a7a02e67","path":"sprites/ammoCircleDualBarettaField_spr/ammoCircleDualBarettaField_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"ammoCircleDualBarettaField_spr","path":"sprites/ammoCircleDualBarettaField_spr/ammoCircleDualBarettaField_spr.yy",},"resourceVersion":"1.0","name":"0a6b42c6-10f7-4528-acf4-4349fc53c2b5","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"d37df2af-ec2f-420a-a847-d77b8e323c12","path":"sprites/ammoCircleDualBarettaField_spr/ammoCircleDualBarettaField_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"d37df2af-ec2f-420a-a847-d77b8e323c12","path":"sprites/ammoCircleDualBarettaField_spr/ammoCircleDualBarettaField_spr.yy",},"LayerId":{"name":"ed80b9fc-e395-4795-88f9-5047a7a02e67","path":"sprites/ammoCircleDualBarettaField_spr/ammoCircleDualBarettaField_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"ammoCircleDualBarettaField_spr","path":"sprites/ammoCircleDualBarettaField_spr/ammoCircleDualBarettaField_spr.yy",},"resourceVersion":"1.0","name":"d37df2af-ec2f-420a-a847-d77b8e323c12","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"6b8d41eb-aef3-4463-be58-654da27481ba","path":"sprites/ammoCircleDualBarettaField_spr/ammoCircleDualBarettaField_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"6b8d41eb-aef3-4463-be58-654da27481ba","path":"sprites/ammoCircleDualBarettaField_spr/ammoCircleDualBarettaField_spr.yy",},"LayerId":{"name":"ed80b9fc-e395-4795-88f9-5047a7a02e67","path":"sprites/ammoCircleDualBarettaField_spr/ammoCircleDualBarettaField_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"ammoCircleDualBarettaField_spr","path":"sprites/ammoCircleDualBarettaField_spr/ammoCircleDualBarettaField_spr.yy",},"resourceVersion":"1.0","name":"6b8d41eb-aef3-4463-be58-654da27481ba","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"279beef5-296c-4dcc-b9e3-9633230be548","path":"sprites/ammoCircleDualBarettaField_spr/ammoCircleDualBarettaField_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"279beef5-296c-4dcc-b9e3-9633230be548","path":"sprites/ammoCircleDualBarettaField_spr/ammoCircleDualBarettaField_spr.yy",},"LayerId":{"name":"ed80b9fc-e395-4795-88f9-5047a7a02e67","path":"sprites/ammoCircleDualBarettaField_spr/ammoCircleDualBarettaField_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"ammoCircleDualBarettaField_spr","path":"sprites/ammoCircleDualBarettaField_spr/ammoCircleDualBarettaField_spr.yy",},"resourceVersion":"1.0","name":"279beef5-296c-4dcc-b9e3-9633230be548","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"aa13afd8-06ca-41b4-aeee-e653362cc3b8","path":"sprites/ammoCircleDualBarettaField_spr/ammoCircleDualBarettaField_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"aa13afd8-06ca-41b4-aeee-e653362cc3b8","path":"sprites/ammoCircleDualBarettaField_spr/ammoCircleDualBarettaField_spr.yy",},"LayerId":{"name":"ed80b9fc-e395-4795-88f9-5047a7a02e67","path":"sprites/ammoCircleDualBarettaField_spr/ammoCircleDualBarettaField_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"ammoCircleDualBarettaField_spr","path":"sprites/ammoCircleDualBarettaField_spr/ammoCircleDualBarettaField_spr.yy",},"resourceVersion":"1.0","name":"aa13afd8-06ca-41b4-aeee-e653362cc3b8","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"63ab0944-9904-49ab-b480-953bcd424511","path":"sprites/ammoCircleDualBarettaField_spr/ammoCircleDualBarettaField_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"63ab0944-9904-49ab-b480-953bcd424511","path":"sprites/ammoCircleDualBarettaField_spr/ammoCircleDualBarettaField_spr.yy",},"LayerId":{"name":"ed80b9fc-e395-4795-88f9-5047a7a02e67","path":"sprites/ammoCircleDualBarettaField_spr/ammoCircleDualBarettaField_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"ammoCircleDualBarettaField_spr","path":"sprites/ammoCircleDualBarettaField_spr/ammoCircleDualBarettaField_spr.yy",},"resourceVersion":"1.0","name":"63ab0944-9904-49ab-b480-953bcd424511","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"3b8ed112-096a-44df-8033-70c42610fb87","path":"sprites/ammoCircleDualBarettaField_spr/ammoCircleDualBarettaField_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"3b8ed112-096a-44df-8033-70c42610fb87","path":"sprites/ammoCircleDualBarettaField_spr/ammoCircleDualBarettaField_spr.yy",},"LayerId":{"name":"ed80b9fc-e395-4795-88f9-5047a7a02e67","path":"sprites/ammoCircleDualBarettaField_spr/ammoCircleDualBarettaField_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"ammoCircleDualBarettaField_spr","path":"sprites/ammoCircleDualBarettaField_spr/ammoCircleDualBarettaField_spr.yy",},"resourceVersion":"1.0","name":"3b8ed112-096a-44df-8033-70c42610fb87","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"16ac4116-6247-4a3c-8127-ec3de75124d1","path":"sprites/ammoCircleDualBarettaField_spr/ammoCircleDualBarettaField_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"16ac4116-6247-4a3c-8127-ec3de75124d1","path":"sprites/ammoCircleDualBarettaField_spr/ammoCircleDualBarettaField_spr.yy",},"LayerId":{"name":"ed80b9fc-e395-4795-88f9-5047a7a02e67","path":"sprites/ammoCircleDualBarettaField_spr/ammoCircleDualBarettaField_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"ammoCircleDualBarettaField_spr","path":"sprites/ammoCircleDualBarettaField_spr/ammoCircleDualBarettaField_spr.yy",},"resourceVersion":"1.0","name":"16ac4116-6247-4a3c-8127-ec3de75124d1","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"d9384344-0aa4-4102-9617-b9107758f27c","path":"sprites/ammoCircleDualBarettaField_spr/ammoCircleDualBarettaField_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"d9384344-0aa4-4102-9617-b9107758f27c","path":"sprites/ammoCircleDualBarettaField_spr/ammoCircleDualBarettaField_spr.yy",},"LayerId":{"name":"ed80b9fc-e395-4795-88f9-5047a7a02e67","path":"sprites/ammoCircleDualBarettaField_spr/ammoCircleDualBarettaField_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"ammoCircleDualBarettaField_spr","path":"sprites/ammoCircleDualBarettaField_spr/ammoCircleDualBarettaField_spr.yy",},"resourceVersion":"1.0","name":"d9384344-0aa4-4102-9617-b9107758f27c","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"ed0abe0b-fc16-48e5-9a1b-67c7c44e137a","path":"sprites/ammoCircleDualBarettaField_spr/ammoCircleDualBarettaField_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"ed0abe0b-fc16-48e5-9a1b-67c7c44e137a","path":"sprites/ammoCircleDualBarettaField_spr/ammoCircleDualBarettaField_spr.yy",},"LayerId":{"name":"ed80b9fc-e395-4795-88f9-5047a7a02e67","path":"sprites/ammoCircleDualBarettaField_spr/ammoCircleDualBarettaField_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"ammoCircleDualBarettaField_spr","path":"sprites/ammoCircleDualBarettaField_spr/ammoCircleDualBarettaField_spr.yy",},"resourceVersion":"1.0","name":"ed0abe0b-fc16-48e5-9a1b-67c7c44e137a","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"5547609b-217c-4f40-9d33-7b27ee5ad520","path":"sprites/ammoCircleDualBarettaField_spr/ammoCircleDualBarettaField_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"5547609b-217c-4f40-9d33-7b27ee5ad520","path":"sprites/ammoCircleDualBarettaField_spr/ammoCircleDualBarettaField_spr.yy",},"LayerId":{"name":"ed80b9fc-e395-4795-88f9-5047a7a02e67","path":"sprites/ammoCircleDualBarettaField_spr/ammoCircleDualBarettaField_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"ammoCircleDualBarettaField_spr","path":"sprites/ammoCircleDualBarettaField_spr/ammoCircleDualBarettaField_spr.yy",},"resourceVersion":"1.0","name":"5547609b-217c-4f40-9d33-7b27ee5ad520","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"68c2c045-bce7-4a4b-aeff-96e303782f36","path":"sprites/ammoCircleDualBarettaField_spr/ammoCircleDualBarettaField_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"68c2c045-bce7-4a4b-aeff-96e303782f36","path":"sprites/ammoCircleDualBarettaField_spr/ammoCircleDualBarettaField_spr.yy",},"LayerId":{"name":"ed80b9fc-e395-4795-88f9-5047a7a02e67","path":"sprites/ammoCircleDualBarettaField_spr/ammoCircleDualBarettaField_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"ammoCircleDualBarettaField_spr","path":"sprites/ammoCircleDualBarettaField_spr/ammoCircleDualBarettaField_spr.yy",},"resourceVersion":"1.0","name":"68c2c045-bce7-4a4b-aeff-96e303782f36","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"dc82aa1b-9ce7-4f9d-86c7-bd2465c3dbcd","path":"sprites/ammoCircleDualBarettaField_spr/ammoCircleDualBarettaField_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"dc82aa1b-9ce7-4f9d-86c7-bd2465c3dbcd","path":"sprites/ammoCircleDualBarettaField_spr/ammoCircleDualBarettaField_spr.yy",},"LayerId":{"name":"ed80b9fc-e395-4795-88f9-5047a7a02e67","path":"sprites/ammoCircleDualBarettaField_spr/ammoCircleDualBarettaField_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"ammoCircleDualBarettaField_spr","path":"sprites/ammoCircleDualBarettaField_spr/ammoCircleDualBarettaField_spr.yy",},"resourceVersion":"1.0","name":"dc82aa1b-9ce7-4f9d-86c7-bd2465c3dbcd","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"b7256eca-ff91-4d3f-9e49-10dfc9ffa75b","path":"sprites/ammoCircleDualBarettaField_spr/ammoCircleDualBarettaField_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"b7256eca-ff91-4d3f-9e49-10dfc9ffa75b","path":"sprites/ammoCircleDualBarettaField_spr/ammoCircleDualBarettaField_spr.yy",},"LayerId":{"name":"ed80b9fc-e395-4795-88f9-5047a7a02e67","path":"sprites/ammoCircleDualBarettaField_spr/ammoCircleDualBarettaField_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"ammoCircleDualBarettaField_spr","path":"sprites/ammoCircleDualBarettaField_spr/ammoCircleDualBarettaField_spr.yy",},"resourceVersion":"1.0","name":"b7256eca-ff91-4d3f-9e49-10dfc9ffa75b","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"5474954f-353d-4e13-95af-1261157273a6","path":"sprites/ammoCircleDualBarettaField_spr/ammoCircleDualBarettaField_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"5474954f-353d-4e13-95af-1261157273a6","path":"sprites/ammoCircleDualBarettaField_spr/ammoCircleDualBarettaField_spr.yy",},"LayerId":{"name":"ed80b9fc-e395-4795-88f9-5047a7a02e67","path":"sprites/ammoCircleDualBarettaField_spr/ammoCircleDualBarettaField_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"ammoCircleDualBarettaField_spr","path":"sprites/ammoCircleDualBarettaField_spr/ammoCircleDualBarettaField_spr.yy",},"resourceVersion":"1.0","name":"5474954f-353d-4e13-95af-1261157273a6","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"0cc087cc-432b-4561-b7cc-42f3ac6d8817","path":"sprites/ammoCircleDualBarettaField_spr/ammoCircleDualBarettaField_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"0cc087cc-432b-4561-b7cc-42f3ac6d8817","path":"sprites/ammoCircleDualBarettaField_spr/ammoCircleDualBarettaField_spr.yy",},"LayerId":{"name":"ed80b9fc-e395-4795-88f9-5047a7a02e67","path":"sprites/ammoCircleDualBarettaField_spr/ammoCircleDualBarettaField_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"ammoCircleDualBarettaField_spr","path":"sprites/ammoCircleDualBarettaField_spr/ammoCircleDualBarettaField_spr.yy",},"resourceVersion":"1.0","name":"0cc087cc-432b-4561-b7cc-42f3ac6d8817","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"827a162c-e099-4a9e-9a3b-e1a5abe8c0e5",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"0a6b42c6-10f7-4528-acf4-4349fc53c2b5",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"d37df2af-ec2f-420a-a847-d77b8e323c12",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"6b8d41eb-aef3-4463-be58-654da27481ba",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"279beef5-296c-4dcc-b9e3-9633230be548",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"aa13afd8-06ca-41b4-aeee-e653362cc3b8",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"63ab0944-9904-49ab-b480-953bcd424511",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"3b8ed112-096a-44df-8033-70c42610fb87",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"16ac4116-6247-4a3c-8127-ec3de75124d1",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"d9384344-0aa4-4102-9617-b9107758f27c",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"ed0abe0b-fc16-48e5-9a1b-67c7c44e137a",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"5547609b-217c-4f40-9d33-7b27ee5ad520",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"68c2c045-bce7-4a4b-aeff-96e303782f36",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"dc82aa1b-9ce7-4f9d-86c7-bd2465c3dbcd",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"b7256eca-ff91-4d3f-9e49-10dfc9ffa75b",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"5474954f-353d-4e13-95af-1261157273a6",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"0cc087cc-432b-4561-b7cc-42f3ac6d8817",},
   ],
   "sequence": {
-    "spriteId": {"name":"ammoCircleDualBarettaField_spr","path":"sprites/ammoCircleDualBarettaField_spr/ammoCircleDualBarettaField_spr.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "ammoCircleDualBarettaField_spr",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 15.0,
@@ -88,7 +59,7 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"479fb2b1-9b6d-44f0-8bb3-0983d614917a","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"827a162c-e099-4a9e-9a3b-e1a5abe8c0e5","path":"sprites/ammoCircleDualBarettaField_spr/ammoCircleDualBarettaField_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"9e5eabe7-96f7-4e88-9f7d-66a59e4558a0","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"0a6b42c6-10f7-4528-acf4-4349fc53c2b5","path":"sprites/ammoCircleDualBarettaField_spr/ammoCircleDualBarettaField_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"5df7b056-3eb1-4cdf-87b9-eb0a1d67cd95","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d37df2af-ec2f-420a-a847-d77b8e323c12","path":"sprites/ammoCircleDualBarettaField_spr/ammoCircleDualBarettaField_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
@@ -106,7 +77,7 @@
             {"id":"fc51c9a9-179f-40f3-91e8-50098aac92f6","Key":14.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b7256eca-ff91-4d3f-9e49-10dfc9ffa75b","path":"sprites/ammoCircleDualBarettaField_spr/ammoCircleDualBarettaField_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"60c8e25b-92a5-4890-b666-ef859ecfc219","Key":15.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"5474954f-353d-4e13-95af-1261157273a6","path":"sprites/ammoCircleDualBarettaField_spr/ammoCircleDualBarettaField_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"91ad7c68-7ff3-43f1-83ac-f58cd0860836","Key":16.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"0cc087cc-432b-4561-b7cc-42f3ac6d8817","path":"sprites/ammoCircleDualBarettaField_spr/ammoCircleDualBarettaField_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -122,22 +93,13 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"ammoCircleDualBarettaField_spr","path":"sprites/ammoCircleDualBarettaField_spr/ammoCircleDualBarettaField_spr.yy",},
-    "resourceVersion": "1.4",
-    "name": "ammoCircleDualBarettaField_spr",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"ed80b9fc-e395-4795-88f9-5047a7a02e67","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"ed80b9fc-e395-4795-88f9-5047a7a02e67","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "UI Sprites",
     "path": "folders/UI/UI Sprites.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "ammoCircleDualBarettaField_spr",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

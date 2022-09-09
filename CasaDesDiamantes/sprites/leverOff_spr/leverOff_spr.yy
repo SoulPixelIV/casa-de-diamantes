@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "leverOff_spr",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,18 +27,14 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"18f76ebf-afe3-429b-8ffa-bc3fd62ca8bd","path":"sprites/leverOff_spr/leverOff_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"18f76ebf-afe3-429b-8ffa-bc3fd62ca8bd","path":"sprites/leverOff_spr/leverOff_spr.yy",},"LayerId":{"name":"26c2f64e-7839-4c91-a737-25d6bdc99c82","path":"sprites/leverOff_spr/leverOff_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"leverOff_spr","path":"sprites/leverOff_spr/leverOff_spr.yy",},"resourceVersion":"1.0","name":"18f76ebf-afe3-429b-8ffa-bc3fd62ca8bd","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"92874ff1-35a1-46fb-8349-e5568049c46b","path":"sprites/leverOff_spr/leverOff_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"92874ff1-35a1-46fb-8349-e5568049c46b","path":"sprites/leverOff_spr/leverOff_spr.yy",},"LayerId":{"name":"26c2f64e-7839-4c91-a737-25d6bdc99c82","path":"sprites/leverOff_spr/leverOff_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"leverOff_spr","path":"sprites/leverOff_spr/leverOff_spr.yy",},"resourceVersion":"1.0","name":"92874ff1-35a1-46fb-8349-e5568049c46b","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"5714fb7d-64f3-461e-b45a-cee5773c035e","path":"sprites/leverOff_spr/leverOff_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"5714fb7d-64f3-461e-b45a-cee5773c035e","path":"sprites/leverOff_spr/leverOff_spr.yy",},"LayerId":{"name":"26c2f64e-7839-4c91-a737-25d6bdc99c82","path":"sprites/leverOff_spr/leverOff_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"leverOff_spr","path":"sprites/leverOff_spr/leverOff_spr.yy",},"resourceVersion":"1.0","name":"5714fb7d-64f3-461e-b45a-cee5773c035e","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"18f76ebf-afe3-429b-8ffa-bc3fd62ca8bd",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"92874ff1-35a1-46fb-8349-e5568049c46b",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"5714fb7d-64f3-461e-b45a-cee5773c035e",},
   ],
   "sequence": {
-    "spriteId": {"name":"leverOff_spr","path":"sprites/leverOff_spr/leverOff_spr.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "leverOff_spr",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 4.0,
@@ -46,11 +45,11 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"2261c44a-beac-4a59-9f57-ad93caa516d5","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"18f76ebf-afe3-429b-8ffa-bc3fd62ca8bd","path":"sprites/leverOff_spr/leverOff_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"6523e5bc-1122-46c6-ad37-2f6b34fda3c9","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"92874ff1-35a1-46fb-8349-e5568049c46b","path":"sprites/leverOff_spr/leverOff_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"169cd822-14d4-486c-97ca-d9304f822c99","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"5714fb7d-64f3-461e-b45a-cee5773c035e","path":"sprites/leverOff_spr/leverOff_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -66,22 +65,13 @@
     "yorigin": 21,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"leverOff_spr","path":"sprites/leverOff_spr/leverOff_spr.yy",},
-    "resourceVersion": "1.4",
-    "name": "leverOff_spr",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"26c2f64e-7839-4c91-a737-25d6bdc99c82","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"26c2f64e-7839-4c91-a737-25d6bdc99c82","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Sprites",
     "path": "folders/Sprites.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "leverOff_spr",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

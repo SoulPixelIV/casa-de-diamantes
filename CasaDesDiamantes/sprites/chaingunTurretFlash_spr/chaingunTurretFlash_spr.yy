@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "chaingunTurretFlash_spr",
   "bboxMode": 2,
   "collisionKind": 1,
   "type": 0,
@@ -24,12 +27,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"e35d357a-f0c8-405e-9bb5-e956341cd85a","path":"sprites/chaingunTurretFlash_spr/chaingunTurretFlash_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"e35d357a-f0c8-405e-9bb5-e956341cd85a","path":"sprites/chaingunTurretFlash_spr/chaingunTurretFlash_spr.yy",},"LayerId":{"name":"ec34b56e-50bf-43c7-bc4d-873b3c854ce8","path":"sprites/chaingunTurretFlash_spr/chaingunTurretFlash_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"chaingunTurretFlash_spr","path":"sprites/chaingunTurretFlash_spr/chaingunTurretFlash_spr.yy",},"resourceVersion":"1.0","name":"e35d357a-f0c8-405e-9bb5-e956341cd85a","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"e35d357a-f0c8-405e-9bb5-e956341cd85a",},
   ],
   "sequence": {
-    "spriteId": {"name":"chaingunTurretFlash_spr","path":"sprites/chaingunTurretFlash_spr/chaingunTurretFlash_spr.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "chaingunTurretFlash_spr",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 15.0,
@@ -40,9 +43,9 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"7c0d5eda-aa71-4696-8371-6bd4ea4f2a6d","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"e35d357a-f0c8-405e-9bb5-e956341cd85a","path":"sprites/chaingunTurretFlash_spr/chaingunTurretFlash_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -58,22 +61,13 @@
     "yorigin": 33,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"chaingunTurretFlash_spr","path":"sprites/chaingunTurretFlash_spr/chaingunTurretFlash_spr.yy",},
-    "resourceVersion": "1.4",
-    "name": "chaingunTurretFlash_spr",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"ec34b56e-50bf-43c7-bc4d-873b3c854ce8","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"ec34b56e-50bf-43c7-bc4d-873b3c854ce8","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Sprites",
     "path": "folders/Sprites.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "chaingunTurretFlash_spr",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

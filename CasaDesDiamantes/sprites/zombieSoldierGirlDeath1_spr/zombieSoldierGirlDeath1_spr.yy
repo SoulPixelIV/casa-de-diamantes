@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "zombieSoldierGirlDeath1_spr",
   "bboxMode": 2,
   "collisionKind": 1,
   "type": 0,
@@ -24,57 +27,27 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"29b4f53c-504e-433d-9bfa-345b5f07c8fa","path":"sprites/zombieSoldierGirlDeath1_spr/zombieSoldierGirlDeath1_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"29b4f53c-504e-433d-9bfa-345b5f07c8fa","path":"sprites/zombieSoldierGirlDeath1_spr/zombieSoldierGirlDeath1_spr.yy",},"LayerId":{"name":"d0628fad-38ec-4d07-b897-1ff59cb8d890","path":"sprites/zombieSoldierGirlDeath1_spr/zombieSoldierGirlDeath1_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"zombieSoldierGirlDeath1_spr","path":"sprites/zombieSoldierGirlDeath1_spr/zombieSoldierGirlDeath1_spr.yy",},"resourceVersion":"1.0","name":"29b4f53c-504e-433d-9bfa-345b5f07c8fa","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"5f7b35d9-68ae-48d5-9275-8d9b61fd9b43","path":"sprites/zombieSoldierGirlDeath1_spr/zombieSoldierGirlDeath1_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"5f7b35d9-68ae-48d5-9275-8d9b61fd9b43","path":"sprites/zombieSoldierGirlDeath1_spr/zombieSoldierGirlDeath1_spr.yy",},"LayerId":{"name":"d0628fad-38ec-4d07-b897-1ff59cb8d890","path":"sprites/zombieSoldierGirlDeath1_spr/zombieSoldierGirlDeath1_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"zombieSoldierGirlDeath1_spr","path":"sprites/zombieSoldierGirlDeath1_spr/zombieSoldierGirlDeath1_spr.yy",},"resourceVersion":"1.0","name":"5f7b35d9-68ae-48d5-9275-8d9b61fd9b43","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"31be7416-0a89-45c3-a538-8a62417b3104","path":"sprites/zombieSoldierGirlDeath1_spr/zombieSoldierGirlDeath1_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"31be7416-0a89-45c3-a538-8a62417b3104","path":"sprites/zombieSoldierGirlDeath1_spr/zombieSoldierGirlDeath1_spr.yy",},"LayerId":{"name":"d0628fad-38ec-4d07-b897-1ff59cb8d890","path":"sprites/zombieSoldierGirlDeath1_spr/zombieSoldierGirlDeath1_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"zombieSoldierGirlDeath1_spr","path":"sprites/zombieSoldierGirlDeath1_spr/zombieSoldierGirlDeath1_spr.yy",},"resourceVersion":"1.0","name":"31be7416-0a89-45c3-a538-8a62417b3104","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"4045481c-a4de-46dd-9c46-cb849b26b4a5","path":"sprites/zombieSoldierGirlDeath1_spr/zombieSoldierGirlDeath1_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"4045481c-a4de-46dd-9c46-cb849b26b4a5","path":"sprites/zombieSoldierGirlDeath1_spr/zombieSoldierGirlDeath1_spr.yy",},"LayerId":{"name":"d0628fad-38ec-4d07-b897-1ff59cb8d890","path":"sprites/zombieSoldierGirlDeath1_spr/zombieSoldierGirlDeath1_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"zombieSoldierGirlDeath1_spr","path":"sprites/zombieSoldierGirlDeath1_spr/zombieSoldierGirlDeath1_spr.yy",},"resourceVersion":"1.0","name":"4045481c-a4de-46dd-9c46-cb849b26b4a5","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"d361cc5e-4ddd-4e67-9011-870949011932","path":"sprites/zombieSoldierGirlDeath1_spr/zombieSoldierGirlDeath1_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"d361cc5e-4ddd-4e67-9011-870949011932","path":"sprites/zombieSoldierGirlDeath1_spr/zombieSoldierGirlDeath1_spr.yy",},"LayerId":{"name":"d0628fad-38ec-4d07-b897-1ff59cb8d890","path":"sprites/zombieSoldierGirlDeath1_spr/zombieSoldierGirlDeath1_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"zombieSoldierGirlDeath1_spr","path":"sprites/zombieSoldierGirlDeath1_spr/zombieSoldierGirlDeath1_spr.yy",},"resourceVersion":"1.0","name":"d361cc5e-4ddd-4e67-9011-870949011932","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"1dc5331a-a86b-46f1-bb4c-a0685b07f73c","path":"sprites/zombieSoldierGirlDeath1_spr/zombieSoldierGirlDeath1_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"1dc5331a-a86b-46f1-bb4c-a0685b07f73c","path":"sprites/zombieSoldierGirlDeath1_spr/zombieSoldierGirlDeath1_spr.yy",},"LayerId":{"name":"d0628fad-38ec-4d07-b897-1ff59cb8d890","path":"sprites/zombieSoldierGirlDeath1_spr/zombieSoldierGirlDeath1_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"zombieSoldierGirlDeath1_spr","path":"sprites/zombieSoldierGirlDeath1_spr/zombieSoldierGirlDeath1_spr.yy",},"resourceVersion":"1.0","name":"1dc5331a-a86b-46f1-bb4c-a0685b07f73c","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"1b9dff1d-f475-4859-95f5-bc87b4017601","path":"sprites/zombieSoldierGirlDeath1_spr/zombieSoldierGirlDeath1_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"1b9dff1d-f475-4859-95f5-bc87b4017601","path":"sprites/zombieSoldierGirlDeath1_spr/zombieSoldierGirlDeath1_spr.yy",},"LayerId":{"name":"d0628fad-38ec-4d07-b897-1ff59cb8d890","path":"sprites/zombieSoldierGirlDeath1_spr/zombieSoldierGirlDeath1_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"zombieSoldierGirlDeath1_spr","path":"sprites/zombieSoldierGirlDeath1_spr/zombieSoldierGirlDeath1_spr.yy",},"resourceVersion":"1.0","name":"1b9dff1d-f475-4859-95f5-bc87b4017601","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"51e0946e-7cc9-47ff-bc04-b8245654082f","path":"sprites/zombieSoldierGirlDeath1_spr/zombieSoldierGirlDeath1_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"51e0946e-7cc9-47ff-bc04-b8245654082f","path":"sprites/zombieSoldierGirlDeath1_spr/zombieSoldierGirlDeath1_spr.yy",},"LayerId":{"name":"d0628fad-38ec-4d07-b897-1ff59cb8d890","path":"sprites/zombieSoldierGirlDeath1_spr/zombieSoldierGirlDeath1_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"zombieSoldierGirlDeath1_spr","path":"sprites/zombieSoldierGirlDeath1_spr/zombieSoldierGirlDeath1_spr.yy",},"resourceVersion":"1.0","name":"51e0946e-7cc9-47ff-bc04-b8245654082f","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"ba50aae2-54e4-45e4-aba7-42481c42bcb3","path":"sprites/zombieSoldierGirlDeath1_spr/zombieSoldierGirlDeath1_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"ba50aae2-54e4-45e4-aba7-42481c42bcb3","path":"sprites/zombieSoldierGirlDeath1_spr/zombieSoldierGirlDeath1_spr.yy",},"LayerId":{"name":"d0628fad-38ec-4d07-b897-1ff59cb8d890","path":"sprites/zombieSoldierGirlDeath1_spr/zombieSoldierGirlDeath1_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"zombieSoldierGirlDeath1_spr","path":"sprites/zombieSoldierGirlDeath1_spr/zombieSoldierGirlDeath1_spr.yy",},"resourceVersion":"1.0","name":"ba50aae2-54e4-45e4-aba7-42481c42bcb3","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"27a5c04c-ad64-479c-974a-bdb7d2181c24","path":"sprites/zombieSoldierGirlDeath1_spr/zombieSoldierGirlDeath1_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"27a5c04c-ad64-479c-974a-bdb7d2181c24","path":"sprites/zombieSoldierGirlDeath1_spr/zombieSoldierGirlDeath1_spr.yy",},"LayerId":{"name":"d0628fad-38ec-4d07-b897-1ff59cb8d890","path":"sprites/zombieSoldierGirlDeath1_spr/zombieSoldierGirlDeath1_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"zombieSoldierGirlDeath1_spr","path":"sprites/zombieSoldierGirlDeath1_spr/zombieSoldierGirlDeath1_spr.yy",},"resourceVersion":"1.0","name":"27a5c04c-ad64-479c-974a-bdb7d2181c24","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"8d8bcf60-06de-4e50-bd27-abd9dad4ff4a","path":"sprites/zombieSoldierGirlDeath1_spr/zombieSoldierGirlDeath1_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"8d8bcf60-06de-4e50-bd27-abd9dad4ff4a","path":"sprites/zombieSoldierGirlDeath1_spr/zombieSoldierGirlDeath1_spr.yy",},"LayerId":{"name":"d0628fad-38ec-4d07-b897-1ff59cb8d890","path":"sprites/zombieSoldierGirlDeath1_spr/zombieSoldierGirlDeath1_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"zombieSoldierGirlDeath1_spr","path":"sprites/zombieSoldierGirlDeath1_spr/zombieSoldierGirlDeath1_spr.yy",},"resourceVersion":"1.0","name":"8d8bcf60-06de-4e50-bd27-abd9dad4ff4a","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"917ea425-8081-40ad-9bc9-c6aad7347eae","path":"sprites/zombieSoldierGirlDeath1_spr/zombieSoldierGirlDeath1_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"917ea425-8081-40ad-9bc9-c6aad7347eae","path":"sprites/zombieSoldierGirlDeath1_spr/zombieSoldierGirlDeath1_spr.yy",},"LayerId":{"name":"d0628fad-38ec-4d07-b897-1ff59cb8d890","path":"sprites/zombieSoldierGirlDeath1_spr/zombieSoldierGirlDeath1_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"zombieSoldierGirlDeath1_spr","path":"sprites/zombieSoldierGirlDeath1_spr/zombieSoldierGirlDeath1_spr.yy",},"resourceVersion":"1.0","name":"917ea425-8081-40ad-9bc9-c6aad7347eae","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"00131788-0da3-4646-a803-ce648a33cc65","path":"sprites/zombieSoldierGirlDeath1_spr/zombieSoldierGirlDeath1_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"00131788-0da3-4646-a803-ce648a33cc65","path":"sprites/zombieSoldierGirlDeath1_spr/zombieSoldierGirlDeath1_spr.yy",},"LayerId":{"name":"d0628fad-38ec-4d07-b897-1ff59cb8d890","path":"sprites/zombieSoldierGirlDeath1_spr/zombieSoldierGirlDeath1_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"zombieSoldierGirlDeath1_spr","path":"sprites/zombieSoldierGirlDeath1_spr/zombieSoldierGirlDeath1_spr.yy",},"resourceVersion":"1.0","name":"00131788-0da3-4646-a803-ce648a33cc65","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"b7edc7e4-e0a3-4af4-94fe-1ccf1208badb","path":"sprites/zombieSoldierGirlDeath1_spr/zombieSoldierGirlDeath1_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"b7edc7e4-e0a3-4af4-94fe-1ccf1208badb","path":"sprites/zombieSoldierGirlDeath1_spr/zombieSoldierGirlDeath1_spr.yy",},"LayerId":{"name":"d0628fad-38ec-4d07-b897-1ff59cb8d890","path":"sprites/zombieSoldierGirlDeath1_spr/zombieSoldierGirlDeath1_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"zombieSoldierGirlDeath1_spr","path":"sprites/zombieSoldierGirlDeath1_spr/zombieSoldierGirlDeath1_spr.yy",},"resourceVersion":"1.0","name":"b7edc7e4-e0a3-4af4-94fe-1ccf1208badb","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"d0abc781-2fc8-4122-af4b-79c428870be8","path":"sprites/zombieSoldierGirlDeath1_spr/zombieSoldierGirlDeath1_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"d0abc781-2fc8-4122-af4b-79c428870be8","path":"sprites/zombieSoldierGirlDeath1_spr/zombieSoldierGirlDeath1_spr.yy",},"LayerId":{"name":"d0628fad-38ec-4d07-b897-1ff59cb8d890","path":"sprites/zombieSoldierGirlDeath1_spr/zombieSoldierGirlDeath1_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"zombieSoldierGirlDeath1_spr","path":"sprites/zombieSoldierGirlDeath1_spr/zombieSoldierGirlDeath1_spr.yy",},"resourceVersion":"1.0","name":"d0abc781-2fc8-4122-af4b-79c428870be8","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"68067672-4b61-4d61-a029-c5cf77d37c9a","path":"sprites/zombieSoldierGirlDeath1_spr/zombieSoldierGirlDeath1_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"68067672-4b61-4d61-a029-c5cf77d37c9a","path":"sprites/zombieSoldierGirlDeath1_spr/zombieSoldierGirlDeath1_spr.yy",},"LayerId":{"name":"d0628fad-38ec-4d07-b897-1ff59cb8d890","path":"sprites/zombieSoldierGirlDeath1_spr/zombieSoldierGirlDeath1_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"zombieSoldierGirlDeath1_spr","path":"sprites/zombieSoldierGirlDeath1_spr/zombieSoldierGirlDeath1_spr.yy",},"resourceVersion":"1.0","name":"68067672-4b61-4d61-a029-c5cf77d37c9a","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"29b4f53c-504e-433d-9bfa-345b5f07c8fa",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"5f7b35d9-68ae-48d5-9275-8d9b61fd9b43",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"31be7416-0a89-45c3-a538-8a62417b3104",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"4045481c-a4de-46dd-9c46-cb849b26b4a5",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"d361cc5e-4ddd-4e67-9011-870949011932",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"1dc5331a-a86b-46f1-bb4c-a0685b07f73c",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"1b9dff1d-f475-4859-95f5-bc87b4017601",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"51e0946e-7cc9-47ff-bc04-b8245654082f",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"ba50aae2-54e4-45e4-aba7-42481c42bcb3",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"27a5c04c-ad64-479c-974a-bdb7d2181c24",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"8d8bcf60-06de-4e50-bd27-abd9dad4ff4a",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"917ea425-8081-40ad-9bc9-c6aad7347eae",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"00131788-0da3-4646-a803-ce648a33cc65",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"b7edc7e4-e0a3-4af4-94fe-1ccf1208badb",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"d0abc781-2fc8-4122-af4b-79c428870be8",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"68067672-4b61-4d61-a029-c5cf77d37c9a",},
   ],
   "sequence": {
-    "spriteId": {"name":"zombieSoldierGirlDeath1_spr","path":"sprites/zombieSoldierGirlDeath1_spr/zombieSoldierGirlDeath1_spr.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 9.0,
@@ -85,7 +58,7 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"b2a54670-811d-413c-ab08-c6e8df8f7e37","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"29b4f53c-504e-433d-9bfa-345b5f07c8fa","path":"sprites/zombieSoldierGirlDeath1_spr/zombieSoldierGirlDeath1_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"964a58f9-ef47-4936-b492-fe19c1e41246","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"5f7b35d9-68ae-48d5-9275-8d9b61fd9b43","path":"sprites/zombieSoldierGirlDeath1_spr/zombieSoldierGirlDeath1_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"3cd77991-cf23-46fb-8462-3f741732b204","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"31be7416-0a89-45c3-a538-8a62417b3104","path":"sprites/zombieSoldierGirlDeath1_spr/zombieSoldierGirlDeath1_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
@@ -102,7 +75,7 @@
             {"id":"739b1576-b36d-43cc-830b-33a0b0fd0c5d","Key":13.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b7edc7e4-e0a3-4af4-94fe-1ccf1208badb","path":"sprites/zombieSoldierGirlDeath1_spr/zombieSoldierGirlDeath1_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"fef2972b-0b50-4c38-b469-59108a5a76f6","Key":14.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d0abc781-2fc8-4122-af4b-79c428870be8","path":"sprites/zombieSoldierGirlDeath1_spr/zombieSoldierGirlDeath1_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"559dbc80-64ec-4644-ab8f-bf8d0c3572ca","Key":15.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"68067672-4b61-4d61-a029-c5cf77d37c9a","path":"sprites/zombieSoldierGirlDeath1_spr/zombieSoldierGirlDeath1_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -118,22 +91,13 @@
     "yorigin": 38,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"zombieSoldierGirlDeath1_spr","path":"sprites/zombieSoldierGirlDeath1_spr/zombieSoldierGirlDeath1_spr.yy",},
-    "resourceVersion": "1.4",
-    "name": "",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"d0628fad-38ec-4d07-b897-1ff59cb8d890","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"d0628fad-38ec-4d07-b897-1ff59cb8d890","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Legacy Sprites",
     "path": "folders/Other + Legacy/Legacy Sprites.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "zombieSoldierGirlDeath1_spr",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

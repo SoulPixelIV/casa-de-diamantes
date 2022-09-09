@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "toxicWater_spr",
   "bboxMode": 2,
   "collisionKind": 1,
   "type": 0,
@@ -24,18 +27,14 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"651818f7-56b9-4aca-b44a-f1e05bccccf0","path":"sprites/toxicWater_spr/toxicWater_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"651818f7-56b9-4aca-b44a-f1e05bccccf0","path":"sprites/toxicWater_spr/toxicWater_spr.yy",},"LayerId":{"name":"253cd4a4-c827-4d11-9aec-bf5d49f90497","path":"sprites/toxicWater_spr/toxicWater_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"toxicWater_spr","path":"sprites/toxicWater_spr/toxicWater_spr.yy",},"resourceVersion":"1.0","name":"651818f7-56b9-4aca-b44a-f1e05bccccf0","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"81467ca2-6444-4f48-88ca-0fe27721c8a5","path":"sprites/toxicWater_spr/toxicWater_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"81467ca2-6444-4f48-88ca-0fe27721c8a5","path":"sprites/toxicWater_spr/toxicWater_spr.yy",},"LayerId":{"name":"253cd4a4-c827-4d11-9aec-bf5d49f90497","path":"sprites/toxicWater_spr/toxicWater_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"toxicWater_spr","path":"sprites/toxicWater_spr/toxicWater_spr.yy",},"resourceVersion":"1.0","name":"81467ca2-6444-4f48-88ca-0fe27721c8a5","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"a8d17e51-e468-4b69-87df-d7b7e7a483fd","path":"sprites/toxicWater_spr/toxicWater_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"a8d17e51-e468-4b69-87df-d7b7e7a483fd","path":"sprites/toxicWater_spr/toxicWater_spr.yy",},"LayerId":{"name":"253cd4a4-c827-4d11-9aec-bf5d49f90497","path":"sprites/toxicWater_spr/toxicWater_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"toxicWater_spr","path":"sprites/toxicWater_spr/toxicWater_spr.yy",},"resourceVersion":"1.0","name":"a8d17e51-e468-4b69-87df-d7b7e7a483fd","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"651818f7-56b9-4aca-b44a-f1e05bccccf0",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"81467ca2-6444-4f48-88ca-0fe27721c8a5",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"a8d17e51-e468-4b69-87df-d7b7e7a483fd",},
   ],
   "sequence": {
-    "spriteId": {"name":"toxicWater_spr","path":"sprites/toxicWater_spr/toxicWater_spr.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "toxicWater_spr",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 4.0,
@@ -46,11 +45,11 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"9984f535-f64a-4919-9fe4-3be028c772d3","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"651818f7-56b9-4aca-b44a-f1e05bccccf0","path":"sprites/toxicWater_spr/toxicWater_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"957d70e0-87ef-49fd-841a-64115ae5c927","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"81467ca2-6444-4f48-88ca-0fe27721c8a5","path":"sprites/toxicWater_spr/toxicWater_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"181ee402-f2f2-42e3-8282-9c095e6b6ccc","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"a8d17e51-e468-4b69-87df-d7b7e7a483fd","path":"sprites/toxicWater_spr/toxicWater_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -66,22 +65,13 @@
     "yorigin": 128,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"toxicWater_spr","path":"sprites/toxicWater_spr/toxicWater_spr.yy",},
-    "resourceVersion": "1.4",
-    "name": "toxicWater_spr",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"253cd4a4-c827-4d11-9aec-bf5d49f90497","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"253cd4a4-c827-4d11-9aec-bf5d49f90497","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Sprites",
     "path": "folders/Sprites.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "toxicWater_spr",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

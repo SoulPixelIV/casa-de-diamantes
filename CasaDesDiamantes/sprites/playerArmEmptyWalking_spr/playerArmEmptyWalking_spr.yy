@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "playerArmEmptyWalking_spr",
   "bboxMode": 2,
   "collisionKind": 1,
   "type": 0,
@@ -24,27 +27,17 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"a0d6307b-e6fa-4b85-911d-b3489fa5b24e","path":"sprites/playerArmEmptyWalking_spr/playerArmEmptyWalking_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"a0d6307b-e6fa-4b85-911d-b3489fa5b24e","path":"sprites/playerArmEmptyWalking_spr/playerArmEmptyWalking_spr.yy",},"LayerId":{"name":"ce6ca150-8db9-4c36-b713-15a944e4bf2c","path":"sprites/playerArmEmptyWalking_spr/playerArmEmptyWalking_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"playerArmEmptyWalking_spr","path":"sprites/playerArmEmptyWalking_spr/playerArmEmptyWalking_spr.yy",},"resourceVersion":"1.0","name":"a0d6307b-e6fa-4b85-911d-b3489fa5b24e","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"c2b29b90-dcba-4cfd-aead-bcf900d80392","path":"sprites/playerArmEmptyWalking_spr/playerArmEmptyWalking_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"c2b29b90-dcba-4cfd-aead-bcf900d80392","path":"sprites/playerArmEmptyWalking_spr/playerArmEmptyWalking_spr.yy",},"LayerId":{"name":"ce6ca150-8db9-4c36-b713-15a944e4bf2c","path":"sprites/playerArmEmptyWalking_spr/playerArmEmptyWalking_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"playerArmEmptyWalking_spr","path":"sprites/playerArmEmptyWalking_spr/playerArmEmptyWalking_spr.yy",},"resourceVersion":"1.0","name":"c2b29b90-dcba-4cfd-aead-bcf900d80392","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"817881da-0ffd-4d9e-b1de-edb1fcb0087e","path":"sprites/playerArmEmptyWalking_spr/playerArmEmptyWalking_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"817881da-0ffd-4d9e-b1de-edb1fcb0087e","path":"sprites/playerArmEmptyWalking_spr/playerArmEmptyWalking_spr.yy",},"LayerId":{"name":"ce6ca150-8db9-4c36-b713-15a944e4bf2c","path":"sprites/playerArmEmptyWalking_spr/playerArmEmptyWalking_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"playerArmEmptyWalking_spr","path":"sprites/playerArmEmptyWalking_spr/playerArmEmptyWalking_spr.yy",},"resourceVersion":"1.0","name":"817881da-0ffd-4d9e-b1de-edb1fcb0087e","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"d9aa0d87-f2a2-462d-8e58-0bb1899245b2","path":"sprites/playerArmEmptyWalking_spr/playerArmEmptyWalking_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"d9aa0d87-f2a2-462d-8e58-0bb1899245b2","path":"sprites/playerArmEmptyWalking_spr/playerArmEmptyWalking_spr.yy",},"LayerId":{"name":"ce6ca150-8db9-4c36-b713-15a944e4bf2c","path":"sprites/playerArmEmptyWalking_spr/playerArmEmptyWalking_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"playerArmEmptyWalking_spr","path":"sprites/playerArmEmptyWalking_spr/playerArmEmptyWalking_spr.yy",},"resourceVersion":"1.0","name":"d9aa0d87-f2a2-462d-8e58-0bb1899245b2","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"3166e408-fa40-4aa0-8464-3fde6b9533d0","path":"sprites/playerArmEmptyWalking_spr/playerArmEmptyWalking_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"3166e408-fa40-4aa0-8464-3fde6b9533d0","path":"sprites/playerArmEmptyWalking_spr/playerArmEmptyWalking_spr.yy",},"LayerId":{"name":"ce6ca150-8db9-4c36-b713-15a944e4bf2c","path":"sprites/playerArmEmptyWalking_spr/playerArmEmptyWalking_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"playerArmEmptyWalking_spr","path":"sprites/playerArmEmptyWalking_spr/playerArmEmptyWalking_spr.yy",},"resourceVersion":"1.0","name":"3166e408-fa40-4aa0-8464-3fde6b9533d0","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"2f30f2a4-0544-425c-9adb-508d0ac9b8d7","path":"sprites/playerArmEmptyWalking_spr/playerArmEmptyWalking_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"2f30f2a4-0544-425c-9adb-508d0ac9b8d7","path":"sprites/playerArmEmptyWalking_spr/playerArmEmptyWalking_spr.yy",},"LayerId":{"name":"ce6ca150-8db9-4c36-b713-15a944e4bf2c","path":"sprites/playerArmEmptyWalking_spr/playerArmEmptyWalking_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"playerArmEmptyWalking_spr","path":"sprites/playerArmEmptyWalking_spr/playerArmEmptyWalking_spr.yy",},"resourceVersion":"1.0","name":"2f30f2a4-0544-425c-9adb-508d0ac9b8d7","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"a0d6307b-e6fa-4b85-911d-b3489fa5b24e",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"c2b29b90-dcba-4cfd-aead-bcf900d80392",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"817881da-0ffd-4d9e-b1de-edb1fcb0087e",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"d9aa0d87-f2a2-462d-8e58-0bb1899245b2",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"3166e408-fa40-4aa0-8464-3fde6b9533d0",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"2f30f2a4-0544-425c-9adb-508d0ac9b8d7",},
   ],
   "sequence": {
-    "spriteId": {"name":"playerArmEmptyWalking_spr","path":"sprites/playerArmEmptyWalking_spr/playerArmEmptyWalking_spr.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "playerArmEmptyWalking_spr",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 12.0,
@@ -55,14 +48,14 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"88d80bc5-3ed4-423d-b5c6-021c4fe05cde","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"a0d6307b-e6fa-4b85-911d-b3489fa5b24e","path":"sprites/playerArmEmptyWalking_spr/playerArmEmptyWalking_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"aec6d8a7-e4d7-4d22-bad0-fe01c3981ee5","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"c2b29b90-dcba-4cfd-aead-bcf900d80392","path":"sprites/playerArmEmptyWalking_spr/playerArmEmptyWalking_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"2fd7c649-68b2-40eb-a767-3b4ac2575dca","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"817881da-0ffd-4d9e-b1de-edb1fcb0087e","path":"sprites/playerArmEmptyWalking_spr/playerArmEmptyWalking_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"8f2051b0-6a4e-49c6-8a16-714a1fb59237","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d9aa0d87-f2a2-462d-8e58-0bb1899245b2","path":"sprites/playerArmEmptyWalking_spr/playerArmEmptyWalking_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"86752e99-cda4-4baa-97cc-c6b3a5397887","Key":4.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"3166e408-fa40-4aa0-8464-3fde6b9533d0","path":"sprites/playerArmEmptyWalking_spr/playerArmEmptyWalking_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"5345eeed-6c81-4d6e-97cb-7bfd16525c94","Key":5.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"2f30f2a4-0544-425c-9adb-508d0ac9b8d7","path":"sprites/playerArmEmptyWalking_spr/playerArmEmptyWalking_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -78,22 +71,13 @@
     "yorigin": 5,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"playerArmEmptyWalking_spr","path":"sprites/playerArmEmptyWalking_spr/playerArmEmptyWalking_spr.yy",},
-    "resourceVersion": "1.4",
-    "name": "playerArmEmptyWalking_spr",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"ce6ca150-8db9-4c36-b713-15a944e4bf2c","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"ce6ca150-8db9-4c36-b713-15a944e4bf2c","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Steph Sprites",
     "path": "folders/Steph/Steph Sprites.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "playerArmEmptyWalking_spr",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

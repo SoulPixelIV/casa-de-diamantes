@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "laserbulletshield_spr",
   "bboxMode": 2,
   "collisionKind": 1,
   "type": 0,
@@ -24,21 +27,15 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"8d32f826-1d52-4397-8e8a-0e246bed0c08","path":"sprites/laserbulletshield_spr/laserbulletshield_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"8d32f826-1d52-4397-8e8a-0e246bed0c08","path":"sprites/laserbulletshield_spr/laserbulletshield_spr.yy",},"LayerId":{"name":"0aec219b-6b4d-4bf3-94f5-8980e341d993","path":"sprites/laserbulletshield_spr/laserbulletshield_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"laserbulletshield_spr","path":"sprites/laserbulletshield_spr/laserbulletshield_spr.yy",},"resourceVersion":"1.0","name":"8d32f826-1d52-4397-8e8a-0e246bed0c08","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"b6325ab9-14a2-48a7-beb0-218cccfe0e80","path":"sprites/laserbulletshield_spr/laserbulletshield_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"b6325ab9-14a2-48a7-beb0-218cccfe0e80","path":"sprites/laserbulletshield_spr/laserbulletshield_spr.yy",},"LayerId":{"name":"0aec219b-6b4d-4bf3-94f5-8980e341d993","path":"sprites/laserbulletshield_spr/laserbulletshield_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"laserbulletshield_spr","path":"sprites/laserbulletshield_spr/laserbulletshield_spr.yy",},"resourceVersion":"1.0","name":"b6325ab9-14a2-48a7-beb0-218cccfe0e80","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"e4359508-d90f-4c86-b740-d5ce4e1a624b","path":"sprites/laserbulletshield_spr/laserbulletshield_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"e4359508-d90f-4c86-b740-d5ce4e1a624b","path":"sprites/laserbulletshield_spr/laserbulletshield_spr.yy",},"LayerId":{"name":"0aec219b-6b4d-4bf3-94f5-8980e341d993","path":"sprites/laserbulletshield_spr/laserbulletshield_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"laserbulletshield_spr","path":"sprites/laserbulletshield_spr/laserbulletshield_spr.yy",},"resourceVersion":"1.0","name":"e4359508-d90f-4c86-b740-d5ce4e1a624b","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"a5669523-95d4-4ab5-aa12-f86fe7c732b4","path":"sprites/laserbulletshield_spr/laserbulletshield_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"a5669523-95d4-4ab5-aa12-f86fe7c732b4","path":"sprites/laserbulletshield_spr/laserbulletshield_spr.yy",},"LayerId":{"name":"0aec219b-6b4d-4bf3-94f5-8980e341d993","path":"sprites/laserbulletshield_spr/laserbulletshield_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"laserbulletshield_spr","path":"sprites/laserbulletshield_spr/laserbulletshield_spr.yy",},"resourceVersion":"1.0","name":"a5669523-95d4-4ab5-aa12-f86fe7c732b4","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"8d32f826-1d52-4397-8e8a-0e246bed0c08",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"b6325ab9-14a2-48a7-beb0-218cccfe0e80",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"e4359508-d90f-4c86-b740-d5ce4e1a624b",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"a5669523-95d4-4ab5-aa12-f86fe7c732b4",},
   ],
   "sequence": {
-    "spriteId": {"name":"laserbulletshield_spr","path":"sprites/laserbulletshield_spr/laserbulletshield_spr.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "laserbulletshield_spr",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 10.0,
@@ -49,12 +46,12 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"99556929-b11e-4075-8c79-417bc58672b9","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"8d32f826-1d52-4397-8e8a-0e246bed0c08","path":"sprites/laserbulletshield_spr/laserbulletshield_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"57b28379-a4c9-4802-a124-49466f55abf5","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b6325ab9-14a2-48a7-beb0-218cccfe0e80","path":"sprites/laserbulletshield_spr/laserbulletshield_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"81fbb6bf-a60d-4e92-ba28-3c84043acba2","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"e4359508-d90f-4c86-b740-d5ce4e1a624b","path":"sprites/laserbulletshield_spr/laserbulletshield_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"e643470f-2bf2-4669-a856-7b8fc7508079","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"a5669523-95d4-4ab5-aa12-f86fe7c732b4","path":"sprites/laserbulletshield_spr/laserbulletshield_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -70,22 +67,13 @@
     "yorigin": 62,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"laserbulletshield_spr","path":"sprites/laserbulletshield_spr/laserbulletshield_spr.yy",},
-    "resourceVersion": "1.4",
-    "name": "laserbulletshield_spr",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"Layer 1","resourceVersion":"1.0","name":"0aec219b-6b4d-4bf3-94f5-8980e341d993","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"0aec219b-6b4d-4bf3-94f5-8980e341d993","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"Layer 1",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Rainmaker",
     "path": "folders/Enemies/Enemy Sprites/Rainmaker.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "laserbulletshield_spr",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

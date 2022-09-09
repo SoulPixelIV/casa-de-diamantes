@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "brokenStreetTile_spr",
   "bboxMode": 2,
   "collisionKind": 1,
   "type": 0,
@@ -24,18 +27,14 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"031f40a1-12b4-4ecc-be8b-f6765e99814e","path":"sprites/brokenStreetTile_spr/brokenStreetTile_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"031f40a1-12b4-4ecc-be8b-f6765e99814e","path":"sprites/brokenStreetTile_spr/brokenStreetTile_spr.yy",},"LayerId":{"name":"05276678-b8d6-41a0-8e7a-cdbb4f9bafe1","path":"sprites/brokenStreetTile_spr/brokenStreetTile_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"brokenStreetTile_spr","path":"sprites/brokenStreetTile_spr/brokenStreetTile_spr.yy",},"resourceVersion":"1.0","name":"031f40a1-12b4-4ecc-be8b-f6765e99814e","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"730b457f-2541-4b10-8866-9aedba058bf8","path":"sprites/brokenStreetTile_spr/brokenStreetTile_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"730b457f-2541-4b10-8866-9aedba058bf8","path":"sprites/brokenStreetTile_spr/brokenStreetTile_spr.yy",},"LayerId":{"name":"05276678-b8d6-41a0-8e7a-cdbb4f9bafe1","path":"sprites/brokenStreetTile_spr/brokenStreetTile_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"brokenStreetTile_spr","path":"sprites/brokenStreetTile_spr/brokenStreetTile_spr.yy",},"resourceVersion":"1.0","name":"730b457f-2541-4b10-8866-9aedba058bf8","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"1119cdd5-0e1a-47c3-b30c-03bda6357cb4","path":"sprites/brokenStreetTile_spr/brokenStreetTile_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"1119cdd5-0e1a-47c3-b30c-03bda6357cb4","path":"sprites/brokenStreetTile_spr/brokenStreetTile_spr.yy",},"LayerId":{"name":"05276678-b8d6-41a0-8e7a-cdbb4f9bafe1","path":"sprites/brokenStreetTile_spr/brokenStreetTile_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"brokenStreetTile_spr","path":"sprites/brokenStreetTile_spr/brokenStreetTile_spr.yy",},"resourceVersion":"1.0","name":"1119cdd5-0e1a-47c3-b30c-03bda6357cb4","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"031f40a1-12b4-4ecc-be8b-f6765e99814e",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"730b457f-2541-4b10-8866-9aedba058bf8",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"1119cdd5-0e1a-47c3-b30c-03bda6357cb4",},
   ],
   "sequence": {
-    "spriteId": {"name":"brokenStreetTile_spr","path":"sprites/brokenStreetTile_spr/brokenStreetTile_spr.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 15.0,
@@ -46,11 +45,11 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"4575a2e4-40f6-48ad-bc7d-0bb53e2ff9a1","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"031f40a1-12b4-4ecc-be8b-f6765e99814e","path":"sprites/brokenStreetTile_spr/brokenStreetTile_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"a4b61d58-bca2-4f92-ae4c-0211629b6476","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"730b457f-2541-4b10-8866-9aedba058bf8","path":"sprites/brokenStreetTile_spr/brokenStreetTile_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"17590156-3fc8-487f-bd1e-6e8e9f722e1f","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"1119cdd5-0e1a-47c3-b30c-03bda6357cb4","path":"sprites/brokenStreetTile_spr/brokenStreetTile_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -66,22 +65,13 @@
     "yorigin": 16,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"brokenStreetTile_spr","path":"sprites/brokenStreetTile_spr/brokenStreetTile_spr.yy",},
-    "resourceVersion": "1.4",
-    "name": "",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"05276678-b8d6-41a0-8e7a-cdbb4f9bafe1","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"05276678-b8d6-41a0-8e7a-cdbb4f9bafe1","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Destructible",
     "path": "folders/Sprites/Destructible.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "brokenStreetTile_spr",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

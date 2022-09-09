@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "neural_spr",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,27 +27,17 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"00d38742-6e93-42d7-b125-65a636c3e7eb","path":"sprites/neural_spr/neural_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"00d38742-6e93-42d7-b125-65a636c3e7eb","path":"sprites/neural_spr/neural_spr.yy",},"LayerId":{"name":"ab17184f-7524-4984-801c-f8e65f709fc8","path":"sprites/neural_spr/neural_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"neural_spr","path":"sprites/neural_spr/neural_spr.yy",},"resourceVersion":"1.0","name":"00d38742-6e93-42d7-b125-65a636c3e7eb","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"8ef8d520-8c22-4466-86e0-c4463ec5cdc1","path":"sprites/neural_spr/neural_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"8ef8d520-8c22-4466-86e0-c4463ec5cdc1","path":"sprites/neural_spr/neural_spr.yy",},"LayerId":{"name":"ab17184f-7524-4984-801c-f8e65f709fc8","path":"sprites/neural_spr/neural_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"neural_spr","path":"sprites/neural_spr/neural_spr.yy",},"resourceVersion":"1.0","name":"8ef8d520-8c22-4466-86e0-c4463ec5cdc1","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"aef66f8c-6c8d-42c0-b898-a6b4c083ede5","path":"sprites/neural_spr/neural_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"aef66f8c-6c8d-42c0-b898-a6b4c083ede5","path":"sprites/neural_spr/neural_spr.yy",},"LayerId":{"name":"ab17184f-7524-4984-801c-f8e65f709fc8","path":"sprites/neural_spr/neural_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"neural_spr","path":"sprites/neural_spr/neural_spr.yy",},"resourceVersion":"1.0","name":"aef66f8c-6c8d-42c0-b898-a6b4c083ede5","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"fd94e0b1-0cf8-496e-8bfe-30de26207fa1","path":"sprites/neural_spr/neural_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"fd94e0b1-0cf8-496e-8bfe-30de26207fa1","path":"sprites/neural_spr/neural_spr.yy",},"LayerId":{"name":"ab17184f-7524-4984-801c-f8e65f709fc8","path":"sprites/neural_spr/neural_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"neural_spr","path":"sprites/neural_spr/neural_spr.yy",},"resourceVersion":"1.0","name":"fd94e0b1-0cf8-496e-8bfe-30de26207fa1","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"5c8abdac-b788-498e-a216-aa3b504bda5e","path":"sprites/neural_spr/neural_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"5c8abdac-b788-498e-a216-aa3b504bda5e","path":"sprites/neural_spr/neural_spr.yy",},"LayerId":{"name":"ab17184f-7524-4984-801c-f8e65f709fc8","path":"sprites/neural_spr/neural_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"neural_spr","path":"sprites/neural_spr/neural_spr.yy",},"resourceVersion":"1.0","name":"5c8abdac-b788-498e-a216-aa3b504bda5e","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"72933261-2c65-4424-b7e5-f31598bbdaf2","path":"sprites/neural_spr/neural_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"72933261-2c65-4424-b7e5-f31598bbdaf2","path":"sprites/neural_spr/neural_spr.yy",},"LayerId":{"name":"ab17184f-7524-4984-801c-f8e65f709fc8","path":"sprites/neural_spr/neural_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"neural_spr","path":"sprites/neural_spr/neural_spr.yy",},"resourceVersion":"1.0","name":"72933261-2c65-4424-b7e5-f31598bbdaf2","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"00d38742-6e93-42d7-b125-65a636c3e7eb",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"8ef8d520-8c22-4466-86e0-c4463ec5cdc1",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"aef66f8c-6c8d-42c0-b898-a6b4c083ede5",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"fd94e0b1-0cf8-496e-8bfe-30de26207fa1",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"5c8abdac-b788-498e-a216-aa3b504bda5e",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"72933261-2c65-4424-b7e5-f31598bbdaf2",},
   ],
   "sequence": {
-    "spriteId": {"name":"neural_spr","path":"sprites/neural_spr/neural_spr.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "neural_spr",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 12.0,
@@ -52,17 +45,17 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 6.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"5d3ef2a5-13fb-4aee-8e7c-7751d5a132da","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"00d38742-6e93-42d7-b125-65a636c3e7eb","path":"sprites/neural_spr/neural_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"03ffd5b7-0241-4cd2-85cc-bbdecff66dde","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"8ef8d520-8c22-4466-86e0-c4463ec5cdc1","path":"sprites/neural_spr/neural_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"d1279bd9-93da-4910-a62e-aa1f801487d0","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"aef66f8c-6c8d-42c0-b898-a6b4c083ede5","path":"sprites/neural_spr/neural_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"aadaf098-75f1-4225-8960-1c0162438cd3","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"fd94e0b1-0cf8-496e-8bfe-30de26207fa1","path":"sprites/neural_spr/neural_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"9a2038d2-475c-43aa-be13-65415acf7d49","Key":4.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"5c8abdac-b788-498e-a216-aa3b504bda5e","path":"sprites/neural_spr/neural_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"0369ef94-33ff-4c23-8529-b3eceb080a31","Key":5.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"72933261-2c65-4424-b7e5-f31598bbdaf2","path":"sprites/neural_spr/neural_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"5d3ef2a5-13fb-4aee-8e7c-7751d5a132da","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"00d38742-6e93-42d7-b125-65a636c3e7eb","path":"sprites/neural_spr/neural_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"03ffd5b7-0241-4cd2-85cc-bbdecff66dde","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"8ef8d520-8c22-4466-86e0-c4463ec5cdc1","path":"sprites/neural_spr/neural_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"d1279bd9-93da-4910-a62e-aa1f801487d0","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"aef66f8c-6c8d-42c0-b898-a6b4c083ede5","path":"sprites/neural_spr/neural_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"aadaf098-75f1-4225-8960-1c0162438cd3","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"fd94e0b1-0cf8-496e-8bfe-30de26207fa1","path":"sprites/neural_spr/neural_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"9a2038d2-475c-43aa-be13-65415acf7d49","Key":4.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"5c8abdac-b788-498e-a216-aa3b504bda5e","path":"sprites/neural_spr/neural_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"0369ef94-33ff-4c23-8529-b3eceb080a31","Key":5.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"72933261-2c65-4424-b7e5-f31598bbdaf2","path":"sprites/neural_spr/neural_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -78,22 +71,13 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"neural_spr","path":"sprites/neural_spr/neural_spr.yy",},
-    "resourceVersion": "1.4",
-    "name": "neural_spr",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"ab17184f-7524-4984-801c-f8e65f709fc8","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"ab17184f-7524-4984-801c-f8e65f709fc8","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Backgrounds",
     "path": "folders/Backgrounds.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "neural_spr",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "checkpointSpin_spr",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,18 +27,14 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"0397c55c-929f-4411-80ba-77c7b20da1ff","path":"sprites/checkpointSpin_spr/checkpointSpin_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"0397c55c-929f-4411-80ba-77c7b20da1ff","path":"sprites/checkpointSpin_spr/checkpointSpin_spr.yy",},"LayerId":{"name":"07cf778e-6ddd-4b88-aa0c-3cef29235f52","path":"sprites/checkpointSpin_spr/checkpointSpin_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"checkpointSpin_spr","path":"sprites/checkpointSpin_spr/checkpointSpin_spr.yy",},"resourceVersion":"1.0","name":"0397c55c-929f-4411-80ba-77c7b20da1ff","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"236eea35-4573-4182-8e3e-5e57613a41b8","path":"sprites/checkpointSpin_spr/checkpointSpin_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"236eea35-4573-4182-8e3e-5e57613a41b8","path":"sprites/checkpointSpin_spr/checkpointSpin_spr.yy",},"LayerId":{"name":"07cf778e-6ddd-4b88-aa0c-3cef29235f52","path":"sprites/checkpointSpin_spr/checkpointSpin_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"checkpointSpin_spr","path":"sprites/checkpointSpin_spr/checkpointSpin_spr.yy",},"resourceVersion":"1.0","name":"236eea35-4573-4182-8e3e-5e57613a41b8","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"35b864c4-5829-4c52-8e42-a9d2ddeee1ec","path":"sprites/checkpointSpin_spr/checkpointSpin_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"35b864c4-5829-4c52-8e42-a9d2ddeee1ec","path":"sprites/checkpointSpin_spr/checkpointSpin_spr.yy",},"LayerId":{"name":"07cf778e-6ddd-4b88-aa0c-3cef29235f52","path":"sprites/checkpointSpin_spr/checkpointSpin_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"checkpointSpin_spr","path":"sprites/checkpointSpin_spr/checkpointSpin_spr.yy",},"resourceVersion":"1.0","name":"35b864c4-5829-4c52-8e42-a9d2ddeee1ec","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"0397c55c-929f-4411-80ba-77c7b20da1ff",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"236eea35-4573-4182-8e3e-5e57613a41b8",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"35b864c4-5829-4c52-8e42-a9d2ddeee1ec",},
   ],
   "sequence": {
-    "spriteId": {"name":"checkpointSpin_spr","path":"sprites/checkpointSpin_spr/checkpointSpin_spr.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "checkpointSpin_spr",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 6.0,
@@ -46,11 +45,11 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"c0806ba1-0078-4870-bdf9-5d697cc1a9e5","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"0397c55c-929f-4411-80ba-77c7b20da1ff","path":"sprites/checkpointSpin_spr/checkpointSpin_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"98ece87e-542c-4e79-a5c8-020c0dfe675a","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"236eea35-4573-4182-8e3e-5e57613a41b8","path":"sprites/checkpointSpin_spr/checkpointSpin_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"fc408653-920f-41f3-a1c8-e5f08e117a88","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"35b864c4-5829-4c52-8e42-a9d2ddeee1ec","path":"sprites/checkpointSpin_spr/checkpointSpin_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -66,22 +65,13 @@
     "yorigin": 58,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"checkpointSpin_spr","path":"sprites/checkpointSpin_spr/checkpointSpin_spr.yy",},
-    "resourceVersion": "1.4",
-    "name": "checkpointSpin_spr",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"07cf778e-6ddd-4b88-aa0c-3cef29235f52","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"07cf778e-6ddd-4b88-aa0c-3cef29235f52","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Sprites",
     "path": "folders/Sprites.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "checkpointSpin_spr",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

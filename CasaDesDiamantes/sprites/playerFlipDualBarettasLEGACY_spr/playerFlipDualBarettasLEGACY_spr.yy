@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "playerFlipDualBarettasLEGACY_spr",
   "bboxMode": 2,
   "collisionKind": 1,
   "type": 0,
@@ -24,15 +27,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"7677a738-0344-4a37-89f6-7de5e64dd711","path":"sprites/playerFlipDualBarettasLEGACY_spr/playerFlipDualBarettasLEGACY_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"7677a738-0344-4a37-89f6-7de5e64dd711","path":"sprites/playerFlipDualBarettasLEGACY_spr/playerFlipDualBarettasLEGACY_spr.yy",},"LayerId":{"name":"566f4757-63c0-4675-bc04-3b6439cba61f","path":"sprites/playerFlipDualBarettasLEGACY_spr/playerFlipDualBarettasLEGACY_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-        {"FrameId":{"name":"7677a738-0344-4a37-89f6-7de5e64dd711","path":"sprites/playerFlipDualBarettasLEGACY_spr/playerFlipDualBarettasLEGACY_spr.yy",},"LayerId":{"name":"ae2891b9-34a6-434b-88db-32359e00a5b0","path":"sprites/playerFlipDualBarettasLEGACY_spr/playerFlipDualBarettasLEGACY_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-        {"FrameId":{"name":"7677a738-0344-4a37-89f6-7de5e64dd711","path":"sprites/playerFlipDualBarettasLEGACY_spr/playerFlipDualBarettasLEGACY_spr.yy",},"LayerId":{"name":"3e6e376f-020b-4f08-99cb-29c5e5191b87","path":"sprites/playerFlipDualBarettasLEGACY_spr/playerFlipDualBarettasLEGACY_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-        {"FrameId":{"name":"7677a738-0344-4a37-89f6-7de5e64dd711","path":"sprites/playerFlipDualBarettasLEGACY_spr/playerFlipDualBarettasLEGACY_spr.yy",},"LayerId":{"name":"1956fe10-9bb4-4ebb-a0d0-bbc965fc9c8f","path":"sprites/playerFlipDualBarettasLEGACY_spr/playerFlipDualBarettasLEGACY_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"playerFlipDualBarettasLEGACY_spr","path":"sprites/playerFlipDualBarettasLEGACY_spr/playerFlipDualBarettasLEGACY_spr.yy",},"resourceVersion":"1.0","name":"7677a738-0344-4a37-89f6-7de5e64dd711","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"7677a738-0344-4a37-89f6-7de5e64dd711",},
   ],
   "sequence": {
-    "spriteId": {"name":"playerFlipDualBarettasLEGACY_spr","path":"sprites/playerFlipDualBarettasLEGACY_spr/playerFlipDualBarettasLEGACY_spr.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "playerFlipDualBarettasLEGACY_spr",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 7.0,
@@ -43,9 +43,9 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"05acb892-6497-40b2-b3db-f63eb02d2ef2","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"7677a738-0344-4a37-89f6-7de5e64dd711","path":"sprites/playerFlipDualBarettasLEGACY_spr/playerFlipDualBarettasLEGACY_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -61,25 +61,16 @@
     "yorigin": 36,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"playerFlipDualBarettasLEGACY_spr","path":"sprites/playerFlipDualBarettasLEGACY_spr/playerFlipDualBarettasLEGACY_spr.yy",},
-    "resourceVersion": "1.4",
-    "name": "playerFlipDualBarettasLEGACY_spr",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"Weapons","resourceVersion":"1.0","name":"566f4757-63c0-4675-bc04-3b6439cba61f","tags":[],"resourceType":"GMImageLayer",},
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"Arm Foreground","resourceVersion":"1.0","name":"ae2891b9-34a6-434b-88db-32359e00a5b0","tags":[],"resourceType":"GMImageLayer",},
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"3e6e376f-020b-4f08-99cb-29c5e5191b87","tags":[],"resourceType":"GMImageLayer",},
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"Arm Background","resourceVersion":"1.0","name":"1956fe10-9bb4-4ebb-a0d0-bbc965fc9c8f","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"566f4757-63c0-4675-bc04-3b6439cba61f","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"Weapons",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"ae2891b9-34a6-434b-88db-32359e00a5b0","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"Arm Foreground",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"3e6e376f-020b-4f08-99cb-29c5e5191b87","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"1956fe10-9bb4-4ebb-a0d0-bbc965fc9c8f","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"Arm Background",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Legacy",
     "path": "folders/Steph/Steph Sprites/Legacy.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "playerFlipDualBarettasLEGACY_spr",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

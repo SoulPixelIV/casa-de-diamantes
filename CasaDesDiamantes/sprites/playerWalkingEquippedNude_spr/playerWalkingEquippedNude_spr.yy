@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "playerWalkingEquippedNude_spr",
   "bboxMode": 2,
   "collisionKind": 1,
   "type": 0,
@@ -24,21 +27,15 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"d819fdbe-f916-42ae-b987-e3b8474bcda1","path":"sprites/playerWalkingEquippedNude_spr/playerWalkingEquippedNude_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"d819fdbe-f916-42ae-b987-e3b8474bcda1","path":"sprites/playerWalkingEquippedNude_spr/playerWalkingEquippedNude_spr.yy",},"LayerId":{"name":"701c6637-89e0-40fd-868f-e0766e389cad","path":"sprites/playerWalkingEquippedNude_spr/playerWalkingEquippedNude_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"playerWalkingEquippedNude_spr","path":"sprites/playerWalkingEquippedNude_spr/playerWalkingEquippedNude_spr.yy",},"resourceVersion":"1.0","name":"d819fdbe-f916-42ae-b987-e3b8474bcda1","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"4786ce48-2ffe-46af-94ee-692484ec5a44","path":"sprites/playerWalkingEquippedNude_spr/playerWalkingEquippedNude_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"4786ce48-2ffe-46af-94ee-692484ec5a44","path":"sprites/playerWalkingEquippedNude_spr/playerWalkingEquippedNude_spr.yy",},"LayerId":{"name":"701c6637-89e0-40fd-868f-e0766e389cad","path":"sprites/playerWalkingEquippedNude_spr/playerWalkingEquippedNude_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"playerWalkingEquippedNude_spr","path":"sprites/playerWalkingEquippedNude_spr/playerWalkingEquippedNude_spr.yy",},"resourceVersion":"1.0","name":"4786ce48-2ffe-46af-94ee-692484ec5a44","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"23ff2ebf-23be-492e-a111-ce0afcfe4a60","path":"sprites/playerWalkingEquippedNude_spr/playerWalkingEquippedNude_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"23ff2ebf-23be-492e-a111-ce0afcfe4a60","path":"sprites/playerWalkingEquippedNude_spr/playerWalkingEquippedNude_spr.yy",},"LayerId":{"name":"701c6637-89e0-40fd-868f-e0766e389cad","path":"sprites/playerWalkingEquippedNude_spr/playerWalkingEquippedNude_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"playerWalkingEquippedNude_spr","path":"sprites/playerWalkingEquippedNude_spr/playerWalkingEquippedNude_spr.yy",},"resourceVersion":"1.0","name":"23ff2ebf-23be-492e-a111-ce0afcfe4a60","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"69b0d5e5-e78a-4f00-ab25-e243291deb0b","path":"sprites/playerWalkingEquippedNude_spr/playerWalkingEquippedNude_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"69b0d5e5-e78a-4f00-ab25-e243291deb0b","path":"sprites/playerWalkingEquippedNude_spr/playerWalkingEquippedNude_spr.yy",},"LayerId":{"name":"701c6637-89e0-40fd-868f-e0766e389cad","path":"sprites/playerWalkingEquippedNude_spr/playerWalkingEquippedNude_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"playerWalkingEquippedNude_spr","path":"sprites/playerWalkingEquippedNude_spr/playerWalkingEquippedNude_spr.yy",},"resourceVersion":"1.0","name":"69b0d5e5-e78a-4f00-ab25-e243291deb0b","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"d819fdbe-f916-42ae-b987-e3b8474bcda1",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"4786ce48-2ffe-46af-94ee-692484ec5a44",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"23ff2ebf-23be-492e-a111-ce0afcfe4a60",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"69b0d5e5-e78a-4f00-ab25-e243291deb0b",},
   ],
   "sequence": {
-    "spriteId": {"name":"playerWalkingEquippedNude_spr","path":"sprites/playerWalkingEquippedNude_spr/playerWalkingEquippedNude_spr.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "playerWalkingEquippedNude_spr",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 12.0,
@@ -49,12 +46,12 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"aebb5b5a-b710-4f33-8900-941c992a1e79","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d819fdbe-f916-42ae-b987-e3b8474bcda1","path":"sprites/playerWalkingEquippedNude_spr/playerWalkingEquippedNude_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"dad95c40-89b5-4237-8e72-a4d2265469e7","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"4786ce48-2ffe-46af-94ee-692484ec5a44","path":"sprites/playerWalkingEquippedNude_spr/playerWalkingEquippedNude_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"d8ee6e70-b67e-45b4-9f01-bf8231fc47a9","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"23ff2ebf-23be-492e-a111-ce0afcfe4a60","path":"sprites/playerWalkingEquippedNude_spr/playerWalkingEquippedNude_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"cf298ff3-82c0-46b2-89d7-eac1ef695741","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"69b0d5e5-e78a-4f00-ab25-e243291deb0b","path":"sprites/playerWalkingEquippedNude_spr/playerWalkingEquippedNude_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -70,22 +67,13 @@
     "yorigin": 26,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"playerWalkingEquippedNude_spr","path":"sprites/playerWalkingEquippedNude_spr/playerWalkingEquippedNude_spr.yy",},
-    "resourceVersion": "1.4",
-    "name": "playerWalkingEquippedNude_spr",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"701c6637-89e0-40fd-868f-e0766e389cad","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"701c6637-89e0-40fd-868f-e0766e389cad","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "No Clothes",
     "path": "folders/Steph/Steph Sprites/No Clothes.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "playerWalkingEquippedNude_spr",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

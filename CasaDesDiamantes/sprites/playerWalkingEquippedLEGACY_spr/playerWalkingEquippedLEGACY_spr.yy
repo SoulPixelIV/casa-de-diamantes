@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "playerWalkingEquippedLEGACY_spr",
   "bboxMode": 2,
   "collisionKind": 1,
   "type": 0,
@@ -24,21 +27,15 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"d819fdbe-f916-42ae-b987-e3b8474bcda1","path":"sprites/playerWalkingEquippedLEGACY_spr/playerWalkingEquippedLEGACY_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"d819fdbe-f916-42ae-b987-e3b8474bcda1","path":"sprites/playerWalkingEquippedLEGACY_spr/playerWalkingEquippedLEGACY_spr.yy",},"LayerId":{"name":"701c6637-89e0-40fd-868f-e0766e389cad","path":"sprites/playerWalkingEquippedLEGACY_spr/playerWalkingEquippedLEGACY_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"playerWalkingEquippedLEGACY_spr","path":"sprites/playerWalkingEquippedLEGACY_spr/playerWalkingEquippedLEGACY_spr.yy",},"resourceVersion":"1.0","name":"d819fdbe-f916-42ae-b987-e3b8474bcda1","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"4786ce48-2ffe-46af-94ee-692484ec5a44","path":"sprites/playerWalkingEquippedLEGACY_spr/playerWalkingEquippedLEGACY_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"4786ce48-2ffe-46af-94ee-692484ec5a44","path":"sprites/playerWalkingEquippedLEGACY_spr/playerWalkingEquippedLEGACY_spr.yy",},"LayerId":{"name":"701c6637-89e0-40fd-868f-e0766e389cad","path":"sprites/playerWalkingEquippedLEGACY_spr/playerWalkingEquippedLEGACY_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"playerWalkingEquippedLEGACY_spr","path":"sprites/playerWalkingEquippedLEGACY_spr/playerWalkingEquippedLEGACY_spr.yy",},"resourceVersion":"1.0","name":"4786ce48-2ffe-46af-94ee-692484ec5a44","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"23ff2ebf-23be-492e-a111-ce0afcfe4a60","path":"sprites/playerWalkingEquippedLEGACY_spr/playerWalkingEquippedLEGACY_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"23ff2ebf-23be-492e-a111-ce0afcfe4a60","path":"sprites/playerWalkingEquippedLEGACY_spr/playerWalkingEquippedLEGACY_spr.yy",},"LayerId":{"name":"701c6637-89e0-40fd-868f-e0766e389cad","path":"sprites/playerWalkingEquippedLEGACY_spr/playerWalkingEquippedLEGACY_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"playerWalkingEquippedLEGACY_spr","path":"sprites/playerWalkingEquippedLEGACY_spr/playerWalkingEquippedLEGACY_spr.yy",},"resourceVersion":"1.0","name":"23ff2ebf-23be-492e-a111-ce0afcfe4a60","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"69b0d5e5-e78a-4f00-ab25-e243291deb0b","path":"sprites/playerWalkingEquippedLEGACY_spr/playerWalkingEquippedLEGACY_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"69b0d5e5-e78a-4f00-ab25-e243291deb0b","path":"sprites/playerWalkingEquippedLEGACY_spr/playerWalkingEquippedLEGACY_spr.yy",},"LayerId":{"name":"701c6637-89e0-40fd-868f-e0766e389cad","path":"sprites/playerWalkingEquippedLEGACY_spr/playerWalkingEquippedLEGACY_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"playerWalkingEquippedLEGACY_spr","path":"sprites/playerWalkingEquippedLEGACY_spr/playerWalkingEquippedLEGACY_spr.yy",},"resourceVersion":"1.0","name":"69b0d5e5-e78a-4f00-ab25-e243291deb0b","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"d819fdbe-f916-42ae-b987-e3b8474bcda1",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"4786ce48-2ffe-46af-94ee-692484ec5a44",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"23ff2ebf-23be-492e-a111-ce0afcfe4a60",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"69b0d5e5-e78a-4f00-ab25-e243291deb0b",},
   ],
   "sequence": {
-    "spriteId": {"name":"playerWalkingEquippedLEGACY_spr","path":"sprites/playerWalkingEquippedLEGACY_spr/playerWalkingEquippedLEGACY_spr.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "playerWalkingEquippedLEGACY_spr",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 12.0,
@@ -49,12 +46,12 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"947d2c4f-bf0f-4ac4-8506-8fff6599f4ed","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d819fdbe-f916-42ae-b987-e3b8474bcda1","path":"sprites/playerWalkingEquippedLEGACY_spr/playerWalkingEquippedLEGACY_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"a51e4d8a-5142-44ac-bbdc-1dd81428b394","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"4786ce48-2ffe-46af-94ee-692484ec5a44","path":"sprites/playerWalkingEquippedLEGACY_spr/playerWalkingEquippedLEGACY_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"fae70ebd-404c-4558-8f7a-9aa3cf9b7576","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"23ff2ebf-23be-492e-a111-ce0afcfe4a60","path":"sprites/playerWalkingEquippedLEGACY_spr/playerWalkingEquippedLEGACY_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"1bf6b030-08ca-4aaa-a604-ed5f2f283624","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"69b0d5e5-e78a-4f00-ab25-e243291deb0b","path":"sprites/playerWalkingEquippedLEGACY_spr/playerWalkingEquippedLEGACY_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -70,22 +67,13 @@
     "yorigin": 26,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"playerWalkingEquippedLEGACY_spr","path":"sprites/playerWalkingEquippedLEGACY_spr/playerWalkingEquippedLEGACY_spr.yy",},
-    "resourceVersion": "1.4",
-    "name": "playerWalkingEquippedLEGACY_spr",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"701c6637-89e0-40fd-868f-e0766e389cad","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"701c6637-89e0-40fd-868f-e0766e389cad","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Legacy",
     "path": "folders/Steph/Steph Sprites/Legacy.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "playerWalkingEquippedLEGACY_spr",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

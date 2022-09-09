@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "playerWalking_spr_Backup",
   "bboxMode": 2,
   "collisionKind": 1,
   "type": 0,
@@ -24,15 +27,13 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"fed62431-9614-4e86-9b35-f23c9898974f","path":"sprites/playerWalking_spr_Backup/playerWalking_spr_Backup.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"fed62431-9614-4e86-9b35-f23c9898974f","path":"sprites/playerWalking_spr_Backup/playerWalking_spr_Backup.yy",},"LayerId":{"name":"b665f369-2a6b-48c2-85fe-b0b0d4dfa7f6","path":"sprites/playerWalking_spr_Backup/playerWalking_spr_Backup.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"playerWalking_spr_Backup","path":"sprites/playerWalking_spr_Backup/playerWalking_spr_Backup.yy",},"resourceVersion":"1.0","name":"fed62431-9614-4e86-9b35-f23c9898974f","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"824244a5-d4bd-49ae-a547-17bfcfcd3757","path":"sprites/playerWalking_spr_Backup/playerWalking_spr_Backup.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"824244a5-d4bd-49ae-a547-17bfcfcd3757","path":"sprites/playerWalking_spr_Backup/playerWalking_spr_Backup.yy",},"LayerId":{"name":"b665f369-2a6b-48c2-85fe-b0b0d4dfa7f6","path":"sprites/playerWalking_spr_Backup/playerWalking_spr_Backup.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"playerWalking_spr_Backup","path":"sprites/playerWalking_spr_Backup/playerWalking_spr_Backup.yy",},"resourceVersion":"1.0","name":"824244a5-d4bd-49ae-a547-17bfcfcd3757","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"fed62431-9614-4e86-9b35-f23c9898974f",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"824244a5-d4bd-49ae-a547-17bfcfcd3757",},
   ],
   "sequence": {
-    "spriteId": {"name":"playerWalking_spr_Backup","path":"sprites/playerWalking_spr_Backup/playerWalking_spr_Backup.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 1.0,
@@ -43,10 +44,10 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"7ccbde87-b4be-499c-9cf5-4d3ad6d8f427","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"fed62431-9614-4e86-9b35-f23c9898974f","path":"sprites/playerWalking_spr_Backup/playerWalking_spr_Backup.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"46adcf4f-7785-4e3d-98d7-4d1e96b1ea9f","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"824244a5-d4bd-49ae-a547-17bfcfcd3757","path":"sprites/playerWalking_spr_Backup/playerWalking_spr_Backup.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -62,22 +63,13 @@
     "yorigin": 32,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"playerWalking_spr_Backup","path":"sprites/playerWalking_spr_Backup/playerWalking_spr_Backup.yy",},
-    "resourceVersion": "1.4",
-    "name": "",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"b665f369-2a6b-48c2-85fe-b0b0d4dfa7f6","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"b665f369-2a6b-48c2-85fe-b0b0d4dfa7f6","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "PlayerOld",
     "path": "folders/Sprites/Player/PlayerOld.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "playerWalking_spr_Backup",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

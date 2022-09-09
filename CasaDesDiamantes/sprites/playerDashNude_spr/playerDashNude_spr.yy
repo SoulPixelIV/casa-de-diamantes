@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "playerDashNude_spr",
   "bboxMode": 2,
   "collisionKind": 1,
   "type": 0,
@@ -24,21 +27,15 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"3ce31e7f-6876-4968-bd78-b4ffdaaca974","path":"sprites/playerDashNude_spr/playerDashNude_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"3ce31e7f-6876-4968-bd78-b4ffdaaca974","path":"sprites/playerDashNude_spr/playerDashNude_spr.yy",},"LayerId":{"name":"477a9ca3-8676-4bd8-9e42-f0a2fad1cf85","path":"sprites/playerDashNude_spr/playerDashNude_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"playerDashNude_spr","path":"sprites/playerDashNude_spr/playerDashNude_spr.yy",},"resourceVersion":"1.0","name":"3ce31e7f-6876-4968-bd78-b4ffdaaca974","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"7af65bae-65e2-4ca6-b0dc-7a91f975063a","path":"sprites/playerDashNude_spr/playerDashNude_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"7af65bae-65e2-4ca6-b0dc-7a91f975063a","path":"sprites/playerDashNude_spr/playerDashNude_spr.yy",},"LayerId":{"name":"477a9ca3-8676-4bd8-9e42-f0a2fad1cf85","path":"sprites/playerDashNude_spr/playerDashNude_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"playerDashNude_spr","path":"sprites/playerDashNude_spr/playerDashNude_spr.yy",},"resourceVersion":"1.0","name":"7af65bae-65e2-4ca6-b0dc-7a91f975063a","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"500b8dbf-20e5-44cf-8165-839f6cae8c33","path":"sprites/playerDashNude_spr/playerDashNude_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"500b8dbf-20e5-44cf-8165-839f6cae8c33","path":"sprites/playerDashNude_spr/playerDashNude_spr.yy",},"LayerId":{"name":"477a9ca3-8676-4bd8-9e42-f0a2fad1cf85","path":"sprites/playerDashNude_spr/playerDashNude_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"playerDashNude_spr","path":"sprites/playerDashNude_spr/playerDashNude_spr.yy",},"resourceVersion":"1.0","name":"500b8dbf-20e5-44cf-8165-839f6cae8c33","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"b93e2e75-d518-4387-89f3-486de7fdbf0a","path":"sprites/playerDashNude_spr/playerDashNude_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"b93e2e75-d518-4387-89f3-486de7fdbf0a","path":"sprites/playerDashNude_spr/playerDashNude_spr.yy",},"LayerId":{"name":"477a9ca3-8676-4bd8-9e42-f0a2fad1cf85","path":"sprites/playerDashNude_spr/playerDashNude_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"playerDashNude_spr","path":"sprites/playerDashNude_spr/playerDashNude_spr.yy",},"resourceVersion":"1.0","name":"b93e2e75-d518-4387-89f3-486de7fdbf0a","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"3ce31e7f-6876-4968-bd78-b4ffdaaca974",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"7af65bae-65e2-4ca6-b0dc-7a91f975063a",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"500b8dbf-20e5-44cf-8165-839f6cae8c33",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"b93e2e75-d518-4387-89f3-486de7fdbf0a",},
   ],
   "sequence": {
-    "spriteId": {"name":"playerDashNude_spr","path":"sprites/playerDashNude_spr/playerDashNude_spr.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "playerDashNude_spr",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 12.0,
@@ -49,12 +46,12 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"62feb9b3-f3d3-4fb5-a723-6d9865a8fd29","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"3ce31e7f-6876-4968-bd78-b4ffdaaca974","path":"sprites/playerDashNude_spr/playerDashNude_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"8d6cf79a-3ff1-400a-9a39-26f3070da68b","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"7af65bae-65e2-4ca6-b0dc-7a91f975063a","path":"sprites/playerDashNude_spr/playerDashNude_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"db598698-6ac0-467d-9277-08c01d46a1f4","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"500b8dbf-20e5-44cf-8165-839f6cae8c33","path":"sprites/playerDashNude_spr/playerDashNude_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"4bebfe42-e6a3-4b1c-946e-663445310055","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b93e2e75-d518-4387-89f3-486de7fdbf0a","path":"sprites/playerDashNude_spr/playerDashNude_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -70,22 +67,13 @@
     "yorigin": 34,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"playerDashNude_spr","path":"sprites/playerDashNude_spr/playerDashNude_spr.yy",},
-    "resourceVersion": "1.4",
-    "name": "playerDashNude_spr",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"477a9ca3-8676-4bd8-9e42-f0a2fad1cf85","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"477a9ca3-8676-4bd8-9e42-f0a2fad1cf85","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "No Clothes",
     "path": "folders/Steph/Steph Sprites/No Clothes.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "playerDashNude_spr",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "playerEquippedLEGACY_spr",
   "bboxMode": 2,
   "collisionKind": 1,
   "type": 0,
@@ -24,45 +27,23 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"9ccd90e9-527d-4e38-9b22-ec37054ce24a","path":"sprites/playerEquippedLEGACY_spr/playerEquippedLEGACY_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"9ccd90e9-527d-4e38-9b22-ec37054ce24a","path":"sprites/playerEquippedLEGACY_spr/playerEquippedLEGACY_spr.yy",},"LayerId":{"name":"1bcb4e04-94a5-46ca-9ec5-8304905da48f","path":"sprites/playerEquippedLEGACY_spr/playerEquippedLEGACY_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"playerEquippedLEGACY_spr","path":"sprites/playerEquippedLEGACY_spr/playerEquippedLEGACY_spr.yy",},"resourceVersion":"1.0","name":"9ccd90e9-527d-4e38-9b22-ec37054ce24a","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"cfe7c38e-dae1-4bee-b882-8f5d8f7d461e","path":"sprites/playerEquippedLEGACY_spr/playerEquippedLEGACY_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"cfe7c38e-dae1-4bee-b882-8f5d8f7d461e","path":"sprites/playerEquippedLEGACY_spr/playerEquippedLEGACY_spr.yy",},"LayerId":{"name":"1bcb4e04-94a5-46ca-9ec5-8304905da48f","path":"sprites/playerEquippedLEGACY_spr/playerEquippedLEGACY_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"playerEquippedLEGACY_spr","path":"sprites/playerEquippedLEGACY_spr/playerEquippedLEGACY_spr.yy",},"resourceVersion":"1.0","name":"cfe7c38e-dae1-4bee-b882-8f5d8f7d461e","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"156c456b-b2ae-4a68-ab35-1a928d9b4da6","path":"sprites/playerEquippedLEGACY_spr/playerEquippedLEGACY_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"156c456b-b2ae-4a68-ab35-1a928d9b4da6","path":"sprites/playerEquippedLEGACY_spr/playerEquippedLEGACY_spr.yy",},"LayerId":{"name":"1bcb4e04-94a5-46ca-9ec5-8304905da48f","path":"sprites/playerEquippedLEGACY_spr/playerEquippedLEGACY_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"playerEquippedLEGACY_spr","path":"sprites/playerEquippedLEGACY_spr/playerEquippedLEGACY_spr.yy",},"resourceVersion":"1.0","name":"156c456b-b2ae-4a68-ab35-1a928d9b4da6","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"25db646b-b2b4-42a5-a26b-d68b07761893","path":"sprites/playerEquippedLEGACY_spr/playerEquippedLEGACY_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"25db646b-b2b4-42a5-a26b-d68b07761893","path":"sprites/playerEquippedLEGACY_spr/playerEquippedLEGACY_spr.yy",},"LayerId":{"name":"1bcb4e04-94a5-46ca-9ec5-8304905da48f","path":"sprites/playerEquippedLEGACY_spr/playerEquippedLEGACY_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"playerEquippedLEGACY_spr","path":"sprites/playerEquippedLEGACY_spr/playerEquippedLEGACY_spr.yy",},"resourceVersion":"1.0","name":"25db646b-b2b4-42a5-a26b-d68b07761893","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"a52d1c3a-7049-4c09-80d0-739edc65e8aa","path":"sprites/playerEquippedLEGACY_spr/playerEquippedLEGACY_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"a52d1c3a-7049-4c09-80d0-739edc65e8aa","path":"sprites/playerEquippedLEGACY_spr/playerEquippedLEGACY_spr.yy",},"LayerId":{"name":"1bcb4e04-94a5-46ca-9ec5-8304905da48f","path":"sprites/playerEquippedLEGACY_spr/playerEquippedLEGACY_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"playerEquippedLEGACY_spr","path":"sprites/playerEquippedLEGACY_spr/playerEquippedLEGACY_spr.yy",},"resourceVersion":"1.0","name":"a52d1c3a-7049-4c09-80d0-739edc65e8aa","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"3edb6194-099b-43ff-899b-ebffb5fdaaf4","path":"sprites/playerEquippedLEGACY_spr/playerEquippedLEGACY_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"3edb6194-099b-43ff-899b-ebffb5fdaaf4","path":"sprites/playerEquippedLEGACY_spr/playerEquippedLEGACY_spr.yy",},"LayerId":{"name":"1bcb4e04-94a5-46ca-9ec5-8304905da48f","path":"sprites/playerEquippedLEGACY_spr/playerEquippedLEGACY_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"playerEquippedLEGACY_spr","path":"sprites/playerEquippedLEGACY_spr/playerEquippedLEGACY_spr.yy",},"resourceVersion":"1.0","name":"3edb6194-099b-43ff-899b-ebffb5fdaaf4","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"00944992-ddaf-4576-8759-c4df9ecda210","path":"sprites/playerEquippedLEGACY_spr/playerEquippedLEGACY_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"00944992-ddaf-4576-8759-c4df9ecda210","path":"sprites/playerEquippedLEGACY_spr/playerEquippedLEGACY_spr.yy",},"LayerId":{"name":"1bcb4e04-94a5-46ca-9ec5-8304905da48f","path":"sprites/playerEquippedLEGACY_spr/playerEquippedLEGACY_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"playerEquippedLEGACY_spr","path":"sprites/playerEquippedLEGACY_spr/playerEquippedLEGACY_spr.yy",},"resourceVersion":"1.0","name":"00944992-ddaf-4576-8759-c4df9ecda210","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"5e865529-f825-4481-9718-f048c2175140","path":"sprites/playerEquippedLEGACY_spr/playerEquippedLEGACY_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"5e865529-f825-4481-9718-f048c2175140","path":"sprites/playerEquippedLEGACY_spr/playerEquippedLEGACY_spr.yy",},"LayerId":{"name":"1bcb4e04-94a5-46ca-9ec5-8304905da48f","path":"sprites/playerEquippedLEGACY_spr/playerEquippedLEGACY_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"playerEquippedLEGACY_spr","path":"sprites/playerEquippedLEGACY_spr/playerEquippedLEGACY_spr.yy",},"resourceVersion":"1.0","name":"5e865529-f825-4481-9718-f048c2175140","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"c1d5d07e-9c9d-413a-8809-e94c0de576ce","path":"sprites/playerEquippedLEGACY_spr/playerEquippedLEGACY_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"c1d5d07e-9c9d-413a-8809-e94c0de576ce","path":"sprites/playerEquippedLEGACY_spr/playerEquippedLEGACY_spr.yy",},"LayerId":{"name":"1bcb4e04-94a5-46ca-9ec5-8304905da48f","path":"sprites/playerEquippedLEGACY_spr/playerEquippedLEGACY_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"playerEquippedLEGACY_spr","path":"sprites/playerEquippedLEGACY_spr/playerEquippedLEGACY_spr.yy",},"resourceVersion":"1.0","name":"c1d5d07e-9c9d-413a-8809-e94c0de576ce","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"40c80a7c-34b0-4d7c-ad96-49b49c59ea63","path":"sprites/playerEquippedLEGACY_spr/playerEquippedLEGACY_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"40c80a7c-34b0-4d7c-ad96-49b49c59ea63","path":"sprites/playerEquippedLEGACY_spr/playerEquippedLEGACY_spr.yy",},"LayerId":{"name":"1bcb4e04-94a5-46ca-9ec5-8304905da48f","path":"sprites/playerEquippedLEGACY_spr/playerEquippedLEGACY_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"playerEquippedLEGACY_spr","path":"sprites/playerEquippedLEGACY_spr/playerEquippedLEGACY_spr.yy",},"resourceVersion":"1.0","name":"40c80a7c-34b0-4d7c-ad96-49b49c59ea63","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"61d823cb-1730-448e-b8de-3c296726b021","path":"sprites/playerEquippedLEGACY_spr/playerEquippedLEGACY_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"61d823cb-1730-448e-b8de-3c296726b021","path":"sprites/playerEquippedLEGACY_spr/playerEquippedLEGACY_spr.yy",},"LayerId":{"name":"1bcb4e04-94a5-46ca-9ec5-8304905da48f","path":"sprites/playerEquippedLEGACY_spr/playerEquippedLEGACY_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"playerEquippedLEGACY_spr","path":"sprites/playerEquippedLEGACY_spr/playerEquippedLEGACY_spr.yy",},"resourceVersion":"1.0","name":"61d823cb-1730-448e-b8de-3c296726b021","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"24a52c29-eb32-4bbb-b976-ef2ed97f9a76","path":"sprites/playerEquippedLEGACY_spr/playerEquippedLEGACY_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"24a52c29-eb32-4bbb-b976-ef2ed97f9a76","path":"sprites/playerEquippedLEGACY_spr/playerEquippedLEGACY_spr.yy",},"LayerId":{"name":"1bcb4e04-94a5-46ca-9ec5-8304905da48f","path":"sprites/playerEquippedLEGACY_spr/playerEquippedLEGACY_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"playerEquippedLEGACY_spr","path":"sprites/playerEquippedLEGACY_spr/playerEquippedLEGACY_spr.yy",},"resourceVersion":"1.0","name":"24a52c29-eb32-4bbb-b976-ef2ed97f9a76","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"9ccd90e9-527d-4e38-9b22-ec37054ce24a",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"cfe7c38e-dae1-4bee-b882-8f5d8f7d461e",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"156c456b-b2ae-4a68-ab35-1a928d9b4da6",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"25db646b-b2b4-42a5-a26b-d68b07761893",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"a52d1c3a-7049-4c09-80d0-739edc65e8aa",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"3edb6194-099b-43ff-899b-ebffb5fdaaf4",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"00944992-ddaf-4576-8759-c4df9ecda210",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"5e865529-f825-4481-9718-f048c2175140",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"c1d5d07e-9c9d-413a-8809-e94c0de576ce",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"40c80a7c-34b0-4d7c-ad96-49b49c59ea63",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"61d823cb-1730-448e-b8de-3c296726b021",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"24a52c29-eb32-4bbb-b976-ef2ed97f9a76",},
   ],
   "sequence": {
-    "spriteId": {"name":"playerEquippedLEGACY_spr","path":"sprites/playerEquippedLEGACY_spr/playerEquippedLEGACY_spr.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "playerEquippedLEGACY_spr",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 7.0,
@@ -73,7 +54,7 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"313ac179-6abf-4895-aa34-48b8e8461288","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"9ccd90e9-527d-4e38-9b22-ec37054ce24a","path":"sprites/playerEquippedLEGACY_spr/playerEquippedLEGACY_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"a12eae42-2cba-47a8-88ff-5b5885005ffb","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"cfe7c38e-dae1-4bee-b882-8f5d8f7d461e","path":"sprites/playerEquippedLEGACY_spr/playerEquippedLEGACY_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"f2ce21c3-e17b-4d7c-a854-3cd1b1c1acbe","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"156c456b-b2ae-4a68-ab35-1a928d9b4da6","path":"sprites/playerEquippedLEGACY_spr/playerEquippedLEGACY_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
@@ -86,7 +67,7 @@
             {"id":"05c68211-2fb7-4981-bf60-20d88dfe1cdd","Key":9.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"40c80a7c-34b0-4d7c-ad96-49b49c59ea63","path":"sprites/playerEquippedLEGACY_spr/playerEquippedLEGACY_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"f4515db7-860c-4ff9-a26b-2ccc7017bfc4","Key":10.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"61d823cb-1730-448e-b8de-3c296726b021","path":"sprites/playerEquippedLEGACY_spr/playerEquippedLEGACY_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"093635c7-f94b-4b4d-b303-41d330fd9b58","Key":11.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"24a52c29-eb32-4bbb-b976-ef2ed97f9a76","path":"sprites/playerEquippedLEGACY_spr/playerEquippedLEGACY_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -102,22 +83,13 @@
     "yorigin": 26,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"playerEquippedLEGACY_spr","path":"sprites/playerEquippedLEGACY_spr/playerEquippedLEGACY_spr.yy",},
-    "resourceVersion": "1.4",
-    "name": "playerEquippedLEGACY_spr",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"1bcb4e04-94a5-46ca-9ec5-8304905da48f","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"1bcb4e04-94a5-46ca-9ec5-8304905da48f","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Legacy",
     "path": "folders/Steph/Steph Sprites/Legacy.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "playerEquippedLEGACY_spr",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

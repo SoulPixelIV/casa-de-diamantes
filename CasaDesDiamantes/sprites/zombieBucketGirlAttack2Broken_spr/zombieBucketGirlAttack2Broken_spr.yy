@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "zombieBucketGirlAttack2Broken_spr",
   "bboxMode": 2,
   "collisionKind": 1,
   "type": 0,
@@ -24,27 +27,17 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"0a01dd3c-8790-4879-8b00-7507bd0b0512","path":"sprites/zombieBucketGirlAttack2Broken_spr/zombieBucketGirlAttack2Broken_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"0a01dd3c-8790-4879-8b00-7507bd0b0512","path":"sprites/zombieBucketGirlAttack2Broken_spr/zombieBucketGirlAttack2Broken_spr.yy",},"LayerId":{"name":"49b03071-0b2f-4735-b4ff-48b1015af691","path":"sprites/zombieBucketGirlAttack2Broken_spr/zombieBucketGirlAttack2Broken_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"zombieBucketGirlAttack2Broken_spr","path":"sprites/zombieBucketGirlAttack2Broken_spr/zombieBucketGirlAttack2Broken_spr.yy",},"resourceVersion":"1.0","name":"0a01dd3c-8790-4879-8b00-7507bd0b0512","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"d429a751-a4f1-49dc-8d19-5f3d070f5fa0","path":"sprites/zombieBucketGirlAttack2Broken_spr/zombieBucketGirlAttack2Broken_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"d429a751-a4f1-49dc-8d19-5f3d070f5fa0","path":"sprites/zombieBucketGirlAttack2Broken_spr/zombieBucketGirlAttack2Broken_spr.yy",},"LayerId":{"name":"49b03071-0b2f-4735-b4ff-48b1015af691","path":"sprites/zombieBucketGirlAttack2Broken_spr/zombieBucketGirlAttack2Broken_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"zombieBucketGirlAttack2Broken_spr","path":"sprites/zombieBucketGirlAttack2Broken_spr/zombieBucketGirlAttack2Broken_spr.yy",},"resourceVersion":"1.0","name":"d429a751-a4f1-49dc-8d19-5f3d070f5fa0","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"cf9a2256-09ab-4063-af95-0e7316469956","path":"sprites/zombieBucketGirlAttack2Broken_spr/zombieBucketGirlAttack2Broken_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"cf9a2256-09ab-4063-af95-0e7316469956","path":"sprites/zombieBucketGirlAttack2Broken_spr/zombieBucketGirlAttack2Broken_spr.yy",},"LayerId":{"name":"49b03071-0b2f-4735-b4ff-48b1015af691","path":"sprites/zombieBucketGirlAttack2Broken_spr/zombieBucketGirlAttack2Broken_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"zombieBucketGirlAttack2Broken_spr","path":"sprites/zombieBucketGirlAttack2Broken_spr/zombieBucketGirlAttack2Broken_spr.yy",},"resourceVersion":"1.0","name":"cf9a2256-09ab-4063-af95-0e7316469956","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"841789c2-df25-4681-97f1-1be037f6e32e","path":"sprites/zombieBucketGirlAttack2Broken_spr/zombieBucketGirlAttack2Broken_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"841789c2-df25-4681-97f1-1be037f6e32e","path":"sprites/zombieBucketGirlAttack2Broken_spr/zombieBucketGirlAttack2Broken_spr.yy",},"LayerId":{"name":"49b03071-0b2f-4735-b4ff-48b1015af691","path":"sprites/zombieBucketGirlAttack2Broken_spr/zombieBucketGirlAttack2Broken_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"zombieBucketGirlAttack2Broken_spr","path":"sprites/zombieBucketGirlAttack2Broken_spr/zombieBucketGirlAttack2Broken_spr.yy",},"resourceVersion":"1.0","name":"841789c2-df25-4681-97f1-1be037f6e32e","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"5c9d5fa0-c9c8-4c65-9ced-bb4e2c42dbf7","path":"sprites/zombieBucketGirlAttack2Broken_spr/zombieBucketGirlAttack2Broken_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"5c9d5fa0-c9c8-4c65-9ced-bb4e2c42dbf7","path":"sprites/zombieBucketGirlAttack2Broken_spr/zombieBucketGirlAttack2Broken_spr.yy",},"LayerId":{"name":"49b03071-0b2f-4735-b4ff-48b1015af691","path":"sprites/zombieBucketGirlAttack2Broken_spr/zombieBucketGirlAttack2Broken_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"zombieBucketGirlAttack2Broken_spr","path":"sprites/zombieBucketGirlAttack2Broken_spr/zombieBucketGirlAttack2Broken_spr.yy",},"resourceVersion":"1.0","name":"5c9d5fa0-c9c8-4c65-9ced-bb4e2c42dbf7","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"81afc7f5-4a80-45d2-aef9-c7964b454142","path":"sprites/zombieBucketGirlAttack2Broken_spr/zombieBucketGirlAttack2Broken_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"81afc7f5-4a80-45d2-aef9-c7964b454142","path":"sprites/zombieBucketGirlAttack2Broken_spr/zombieBucketGirlAttack2Broken_spr.yy",},"LayerId":{"name":"49b03071-0b2f-4735-b4ff-48b1015af691","path":"sprites/zombieBucketGirlAttack2Broken_spr/zombieBucketGirlAttack2Broken_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"zombieBucketGirlAttack2Broken_spr","path":"sprites/zombieBucketGirlAttack2Broken_spr/zombieBucketGirlAttack2Broken_spr.yy",},"resourceVersion":"1.0","name":"81afc7f5-4a80-45d2-aef9-c7964b454142","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"0a01dd3c-8790-4879-8b00-7507bd0b0512",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"d429a751-a4f1-49dc-8d19-5f3d070f5fa0",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"cf9a2256-09ab-4063-af95-0e7316469956",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"841789c2-df25-4681-97f1-1be037f6e32e",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"5c9d5fa0-c9c8-4c65-9ced-bb4e2c42dbf7",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"81afc7f5-4a80-45d2-aef9-c7964b454142",},
   ],
   "sequence": {
-    "spriteId": {"name":"zombieBucketGirlAttack2Broken_spr","path":"sprites/zombieBucketGirlAttack2Broken_spr/zombieBucketGirlAttack2Broken_spr.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "zombieBucketGirlAttack2Broken_spr",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 8.0,
@@ -55,14 +48,14 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"4bef2162-902a-4a80-81ed-bf0d1c3e49ee","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"0a01dd3c-8790-4879-8b00-7507bd0b0512","path":"sprites/zombieBucketGirlAttack2Broken_spr/zombieBucketGirlAttack2Broken_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"c81b4918-8432-4ad1-a02e-c7aa415402eb","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d429a751-a4f1-49dc-8d19-5f3d070f5fa0","path":"sprites/zombieBucketGirlAttack2Broken_spr/zombieBucketGirlAttack2Broken_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"4057b008-712b-41e9-9ebe-0cd256530051","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"cf9a2256-09ab-4063-af95-0e7316469956","path":"sprites/zombieBucketGirlAttack2Broken_spr/zombieBucketGirlAttack2Broken_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"023bf8c1-b7d1-4966-8b0f-39bd13e3e10c","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"841789c2-df25-4681-97f1-1be037f6e32e","path":"sprites/zombieBucketGirlAttack2Broken_spr/zombieBucketGirlAttack2Broken_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"266ba7ea-f4af-4fbf-ae04-10694f6466ca","Key":4.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"5c9d5fa0-c9c8-4c65-9ced-bb4e2c42dbf7","path":"sprites/zombieBucketGirlAttack2Broken_spr/zombieBucketGirlAttack2Broken_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"fd64cd53-a2ff-4d48-9229-ad15243964cd","Key":5.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"81afc7f5-4a80-45d2-aef9-c7964b454142","path":"sprites/zombieBucketGirlAttack2Broken_spr/zombieBucketGirlAttack2Broken_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -78,22 +71,13 @@
     "yorigin": 26,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"zombieBucketGirlAttack2Broken_spr","path":"sprites/zombieBucketGirlAttack2Broken_spr/zombieBucketGirlAttack2Broken_spr.yy",},
-    "resourceVersion": "1.4",
-    "name": "zombieBucketGirlAttack2Broken_spr",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"49b03071-0b2f-4735-b4ff-48b1015af691","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"49b03071-0b2f-4735-b4ff-48b1015af691","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Legacy Sprites",
     "path": "folders/Other + Legacy/Legacy Sprites.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "zombieBucketGirlAttack2Broken_spr",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

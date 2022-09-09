@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "woodDoor_spr",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,15 +27,13 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"05add5c7-824b-44e5-86fc-0896b03d9443","path":"sprites/woodDoor_spr/woodDoor_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"05add5c7-824b-44e5-86fc-0896b03d9443","path":"sprites/woodDoor_spr/woodDoor_spr.yy",},"LayerId":{"name":"5a9b8906-fb64-451f-af79-b9c90b6b2360","path":"sprites/woodDoor_spr/woodDoor_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"woodDoor_spr","path":"sprites/woodDoor_spr/woodDoor_spr.yy",},"resourceVersion":"1.0","name":"05add5c7-824b-44e5-86fc-0896b03d9443","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"ee11f8ca-28af-425a-aa20-8a8f8c22700a","path":"sprites/woodDoor_spr/woodDoor_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"ee11f8ca-28af-425a-aa20-8a8f8c22700a","path":"sprites/woodDoor_spr/woodDoor_spr.yy",},"LayerId":{"name":"5a9b8906-fb64-451f-af79-b9c90b6b2360","path":"sprites/woodDoor_spr/woodDoor_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"woodDoor_spr","path":"sprites/woodDoor_spr/woodDoor_spr.yy",},"resourceVersion":"1.0","name":"ee11f8ca-28af-425a-aa20-8a8f8c22700a","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"05add5c7-824b-44e5-86fc-0896b03d9443",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"ee11f8ca-28af-425a-aa20-8a8f8c22700a",},
   ],
   "sequence": {
-    "spriteId": {"name":"woodDoor_spr","path":"sprites/woodDoor_spr/woodDoor_spr.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 3.0,
@@ -43,10 +44,10 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"eddf4d3c-41dd-4704-a045-c1a20cdc0c29","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"05add5c7-824b-44e5-86fc-0896b03d9443","path":"sprites/woodDoor_spr/woodDoor_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"04fd8bba-5c31-4c03-a923-0dcc0681cd61","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"ee11f8ca-28af-425a-aa20-8a8f8c22700a","path":"sprites/woodDoor_spr/woodDoor_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": {"x":0.0,"y":0.0,},
     "lockOrigin": false,
@@ -62,22 +63,13 @@
     "yorigin": 75,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"woodDoor_spr","path":"sprites/woodDoor_spr/woodDoor_spr.yy",},
-    "resourceVersion": "1.4",
-    "name": "",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"5a9b8906-fb64-451f-af79-b9c90b6b2360","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"5a9b8906-fb64-451f-af79-b9c90b6b2360","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Sprites",
     "path": "folders/Sprites.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "woodDoor_spr",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "zombieSoldierGirlDESIGN_spr",
   "bboxMode": 2,
   "collisionKind": 1,
   "type": 0,
@@ -24,15 +27,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"a0e7804c-7807-450d-a1de-79b869554b9e","path":"sprites/zombieSoldierGirlDESIGN_spr/zombieSoldierGirlDESIGN_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"a0e7804c-7807-450d-a1de-79b869554b9e","path":"sprites/zombieSoldierGirlDESIGN_spr/zombieSoldierGirlDESIGN_spr.yy",},"LayerId":{"name":"bfe587d5-7259-4ad5-92a5-0042dbb81914","path":"sprites/zombieSoldierGirlDESIGN_spr/zombieSoldierGirlDESIGN_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-        {"FrameId":{"name":"a0e7804c-7807-450d-a1de-79b869554b9e","path":"sprites/zombieSoldierGirlDESIGN_spr/zombieSoldierGirlDESIGN_spr.yy",},"LayerId":{"name":"25c4a45b-65d6-42e7-b376-753ae72341c9","path":"sprites/zombieSoldierGirlDESIGN_spr/zombieSoldierGirlDESIGN_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-        {"FrameId":{"name":"a0e7804c-7807-450d-a1de-79b869554b9e","path":"sprites/zombieSoldierGirlDESIGN_spr/zombieSoldierGirlDESIGN_spr.yy",},"LayerId":{"name":"0ee93b85-8a45-4768-999b-489805674aa4","path":"sprites/zombieSoldierGirlDESIGN_spr/zombieSoldierGirlDESIGN_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-        {"FrameId":{"name":"a0e7804c-7807-450d-a1de-79b869554b9e","path":"sprites/zombieSoldierGirlDESIGN_spr/zombieSoldierGirlDESIGN_spr.yy",},"LayerId":{"name":"2097c93d-fe40-4f9b-97de-2d3b2da0bc77","path":"sprites/zombieSoldierGirlDESIGN_spr/zombieSoldierGirlDESIGN_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"zombieSoldierGirlDESIGN_spr","path":"sprites/zombieSoldierGirlDESIGN_spr/zombieSoldierGirlDESIGN_spr.yy",},"resourceVersion":"1.0","name":"a0e7804c-7807-450d-a1de-79b869554b9e","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"a0e7804c-7807-450d-a1de-79b869554b9e",},
   ],
   "sequence": {
-    "spriteId": {"name":"zombieSoldierGirlDESIGN_spr","path":"sprites/zombieSoldierGirlDESIGN_spr/zombieSoldierGirlDESIGN_spr.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "zombieSoldierGirlDESIGN_spr",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 5.0,
@@ -43,9 +43,9 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"c96ac5cd-ed6f-434c-832f-ec7c9f68b0bc","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"a0e7804c-7807-450d-a1de-79b869554b9e","path":"sprites/zombieSoldierGirlDESIGN_spr/zombieSoldierGirlDESIGN_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -61,25 +61,16 @@
     "yorigin": 50,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"zombieSoldierGirlDESIGN_spr","path":"sprites/zombieSoldierGirlDESIGN_spr/zombieSoldierGirlDESIGN_spr.yy",},
-    "resourceVersion": "1.4",
-    "name": "zombieSoldierGirlDESIGN_spr",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"Teeth","resourceVersion":"1.0","name":"2097c93d-fe40-4f9b-97de-2d3b2da0bc77","tags":[],"resourceType":"GMImageLayer",},
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"bfe587d5-7259-4ad5-92a5-0042dbb81914","tags":[],"resourceType":"GMImageLayer",},
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"Wings","resourceVersion":"1.0","name":"0ee93b85-8a45-4768-999b-489805674aa4","tags":[],"resourceType":"GMImageLayer",},
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"Flower","resourceVersion":"1.0","name":"25c4a45b-65d6-42e7-b376-753ae72341c9","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"2097c93d-fe40-4f9b-97de-2d3b2da0bc77","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"Teeth",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"bfe587d5-7259-4ad5-92a5-0042dbb81914","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"0ee93b85-8a45-4768-999b-489805674aa4","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"Wings",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"25c4a45b-65d6-42e7-b376-753ae72341c9","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"Flower",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "ZombieSoldier",
     "path": "folders/Enemies/Enemy Sprites/ZombieSoldier.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "zombieSoldierGirlDESIGN_spr",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

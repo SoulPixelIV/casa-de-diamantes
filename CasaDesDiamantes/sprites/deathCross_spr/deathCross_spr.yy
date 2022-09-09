@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "deathCross_spr",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,21 +27,15 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"c2c062f3-b61e-45e6-87a3-36e78f8e1d79","path":"sprites/deathCross_spr/deathCross_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"c2c062f3-b61e-45e6-87a3-36e78f8e1d79","path":"sprites/deathCross_spr/deathCross_spr.yy",},"LayerId":{"name":"dcf27b12-2ff8-4147-b40c-95ec535331ad","path":"sprites/deathCross_spr/deathCross_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"deathCross_spr","path":"sprites/deathCross_spr/deathCross_spr.yy",},"resourceVersion":"1.0","name":"c2c062f3-b61e-45e6-87a3-36e78f8e1d79","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"8649a349-050e-4fa5-8fd2-98996b7dced4","path":"sprites/deathCross_spr/deathCross_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"8649a349-050e-4fa5-8fd2-98996b7dced4","path":"sprites/deathCross_spr/deathCross_spr.yy",},"LayerId":{"name":"dcf27b12-2ff8-4147-b40c-95ec535331ad","path":"sprites/deathCross_spr/deathCross_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"deathCross_spr","path":"sprites/deathCross_spr/deathCross_spr.yy",},"resourceVersion":"1.0","name":"8649a349-050e-4fa5-8fd2-98996b7dced4","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"1d71be9a-e403-44e3-b3a2-cddf235f370c","path":"sprites/deathCross_spr/deathCross_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"1d71be9a-e403-44e3-b3a2-cddf235f370c","path":"sprites/deathCross_spr/deathCross_spr.yy",},"LayerId":{"name":"dcf27b12-2ff8-4147-b40c-95ec535331ad","path":"sprites/deathCross_spr/deathCross_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"deathCross_spr","path":"sprites/deathCross_spr/deathCross_spr.yy",},"resourceVersion":"1.0","name":"1d71be9a-e403-44e3-b3a2-cddf235f370c","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"02510580-4d3f-47ca-a817-0b42ee7031ac","path":"sprites/deathCross_spr/deathCross_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"02510580-4d3f-47ca-a817-0b42ee7031ac","path":"sprites/deathCross_spr/deathCross_spr.yy",},"LayerId":{"name":"dcf27b12-2ff8-4147-b40c-95ec535331ad","path":"sprites/deathCross_spr/deathCross_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"deathCross_spr","path":"sprites/deathCross_spr/deathCross_spr.yy",},"resourceVersion":"1.0","name":"02510580-4d3f-47ca-a817-0b42ee7031ac","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"c2c062f3-b61e-45e6-87a3-36e78f8e1d79",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"8649a349-050e-4fa5-8fd2-98996b7dced4",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"1d71be9a-e403-44e3-b3a2-cddf235f370c",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"02510580-4d3f-47ca-a817-0b42ee7031ac",},
   ],
   "sequence": {
-    "spriteId": {"name":"deathCross_spr","path":"sprites/deathCross_spr/deathCross_spr.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 8.0,
@@ -49,12 +46,12 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"de097635-12b0-4bb6-9d3c-6d097fb1be48","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"c2c062f3-b61e-45e6-87a3-36e78f8e1d79","path":"sprites/deathCross_spr/deathCross_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"c8e293a6-46a4-4944-94f5-f1cf8ed2b7bc","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"8649a349-050e-4fa5-8fd2-98996b7dced4","path":"sprites/deathCross_spr/deathCross_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"210dfbd3-6af7-49e1-b6a0-28199d11c571","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"1d71be9a-e403-44e3-b3a2-cddf235f370c","path":"sprites/deathCross_spr/deathCross_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"4cf0d011-9d6e-49c1-bf48-c3d0898ed69b","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"02510580-4d3f-47ca-a817-0b42ee7031ac","path":"sprites/deathCross_spr/deathCross_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -70,22 +67,13 @@
     "yorigin": 19,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"deathCross_spr","path":"sprites/deathCross_spr/deathCross_spr.yy",},
-    "resourceVersion": "1.4",
-    "name": "",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"dcf27b12-2ff8-4147-b40c-95ec535331ad","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"dcf27b12-2ff8-4147-b40c-95ec535331ad","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Sprites",
     "path": "folders/Sprites.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "deathCross_spr",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

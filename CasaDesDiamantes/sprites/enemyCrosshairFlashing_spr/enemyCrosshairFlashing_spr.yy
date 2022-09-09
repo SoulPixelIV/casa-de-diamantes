@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "enemyCrosshairFlashing_spr",
   "bboxMode": 2,
   "collisionKind": 1,
   "type": 0,
@@ -24,15 +27,13 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"1fe551ea-bd48-4115-91ca-fe14d350b50d","path":"sprites/enemyCrosshairFlashing_spr/enemyCrosshairFlashing_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"1fe551ea-bd48-4115-91ca-fe14d350b50d","path":"sprites/enemyCrosshairFlashing_spr/enemyCrosshairFlashing_spr.yy",},"LayerId":{"name":"c040da1c-61a6-4459-82e9-0021e2f9b571","path":"sprites/enemyCrosshairFlashing_spr/enemyCrosshairFlashing_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"enemyCrosshairFlashing_spr","path":"sprites/enemyCrosshairFlashing_spr/enemyCrosshairFlashing_spr.yy",},"resourceVersion":"1.0","name":"1fe551ea-bd48-4115-91ca-fe14d350b50d","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"0b3a8adf-1a3a-49b1-aa47-e87881e35994","path":"sprites/enemyCrosshairFlashing_spr/enemyCrosshairFlashing_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"0b3a8adf-1a3a-49b1-aa47-e87881e35994","path":"sprites/enemyCrosshairFlashing_spr/enemyCrosshairFlashing_spr.yy",},"LayerId":{"name":"c040da1c-61a6-4459-82e9-0021e2f9b571","path":"sprites/enemyCrosshairFlashing_spr/enemyCrosshairFlashing_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"enemyCrosshairFlashing_spr","path":"sprites/enemyCrosshairFlashing_spr/enemyCrosshairFlashing_spr.yy",},"resourceVersion":"1.0","name":"0b3a8adf-1a3a-49b1-aa47-e87881e35994","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"1fe551ea-bd48-4115-91ca-fe14d350b50d",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"0b3a8adf-1a3a-49b1-aa47-e87881e35994",},
   ],
   "sequence": {
-    "spriteId": {"name":"enemyCrosshairFlashing_spr","path":"sprites/enemyCrosshairFlashing_spr/enemyCrosshairFlashing_spr.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "enemyCrosshairFlashing_spr",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 12.0,
@@ -43,10 +44,10 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"14c34f90-98df-4b0f-8cce-43ba2e237d0f","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"1fe551ea-bd48-4115-91ca-fe14d350b50d","path":"sprites/enemyCrosshairFlashing_spr/enemyCrosshairFlashing_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"d33a1448-bb0c-45a5-88f9-8b39fd13c120","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"0b3a8adf-1a3a-49b1-aa47-e87881e35994","path":"sprites/enemyCrosshairFlashing_spr/enemyCrosshairFlashing_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -62,22 +63,13 @@
     "yorigin": 76,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"enemyCrosshairFlashing_spr","path":"sprites/enemyCrosshairFlashing_spr/enemyCrosshairFlashing_spr.yy",},
-    "resourceVersion": "1.4",
-    "name": "enemyCrosshairFlashing_spr",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"c040da1c-61a6-4459-82e9-0021e2f9b571","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"c040da1c-61a6-4459-82e9-0021e2f9b571","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "UI Sprites",
     "path": "folders/UI/UI Sprites.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "enemyCrosshairFlashing_spr",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "playerPistolWalking_spr",
   "bboxMode": 2,
   "collisionKind": 1,
   "type": 0,
@@ -24,27 +27,17 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"e3dfd69d-2f76-47c5-a4be-56bd8d913177","path":"sprites/playerPistolWalking_spr/playerPistolWalking_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"e3dfd69d-2f76-47c5-a4be-56bd8d913177","path":"sprites/playerPistolWalking_spr/playerPistolWalking_spr.yy",},"LayerId":{"name":"ce6ca150-8db9-4c36-b713-15a944e4bf2c","path":"sprites/playerPistolWalking_spr/playerPistolWalking_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"playerPistolWalking_spr","path":"sprites/playerPistolWalking_spr/playerPistolWalking_spr.yy",},"resourceVersion":"1.0","name":"e3dfd69d-2f76-47c5-a4be-56bd8d913177","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"c2b29b90-dcba-4cfd-aead-bcf900d80392","path":"sprites/playerPistolWalking_spr/playerPistolWalking_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"c2b29b90-dcba-4cfd-aead-bcf900d80392","path":"sprites/playerPistolWalking_spr/playerPistolWalking_spr.yy",},"LayerId":{"name":"ce6ca150-8db9-4c36-b713-15a944e4bf2c","path":"sprites/playerPistolWalking_spr/playerPistolWalking_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"playerPistolWalking_spr","path":"sprites/playerPistolWalking_spr/playerPistolWalking_spr.yy",},"resourceVersion":"1.0","name":"c2b29b90-dcba-4cfd-aead-bcf900d80392","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"033a79c2-5681-4ce1-a558-78b7c095a048","path":"sprites/playerPistolWalking_spr/playerPistolWalking_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"033a79c2-5681-4ce1-a558-78b7c095a048","path":"sprites/playerPistolWalking_spr/playerPistolWalking_spr.yy",},"LayerId":{"name":"ce6ca150-8db9-4c36-b713-15a944e4bf2c","path":"sprites/playerPistolWalking_spr/playerPistolWalking_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"playerPistolWalking_spr","path":"sprites/playerPistolWalking_spr/playerPistolWalking_spr.yy",},"resourceVersion":"1.0","name":"033a79c2-5681-4ce1-a558-78b7c095a048","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"b6691c4f-1473-4777-8634-ee977ac9c2fc","path":"sprites/playerPistolWalking_spr/playerPistolWalking_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"b6691c4f-1473-4777-8634-ee977ac9c2fc","path":"sprites/playerPistolWalking_spr/playerPistolWalking_spr.yy",},"LayerId":{"name":"ce6ca150-8db9-4c36-b713-15a944e4bf2c","path":"sprites/playerPistolWalking_spr/playerPistolWalking_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"playerPistolWalking_spr","path":"sprites/playerPistolWalking_spr/playerPistolWalking_spr.yy",},"resourceVersion":"1.0","name":"b6691c4f-1473-4777-8634-ee977ac9c2fc","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"8ee54d7a-cc60-4c2e-84e7-6578523179d7","path":"sprites/playerPistolWalking_spr/playerPistolWalking_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"8ee54d7a-cc60-4c2e-84e7-6578523179d7","path":"sprites/playerPistolWalking_spr/playerPistolWalking_spr.yy",},"LayerId":{"name":"ce6ca150-8db9-4c36-b713-15a944e4bf2c","path":"sprites/playerPistolWalking_spr/playerPistolWalking_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"playerPistolWalking_spr","path":"sprites/playerPistolWalking_spr/playerPistolWalking_spr.yy",},"resourceVersion":"1.0","name":"8ee54d7a-cc60-4c2e-84e7-6578523179d7","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"6a6d6224-54c5-406f-98d0-e5fb64323169","path":"sprites/playerPistolWalking_spr/playerPistolWalking_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"6a6d6224-54c5-406f-98d0-e5fb64323169","path":"sprites/playerPistolWalking_spr/playerPistolWalking_spr.yy",},"LayerId":{"name":"ce6ca150-8db9-4c36-b713-15a944e4bf2c","path":"sprites/playerPistolWalking_spr/playerPistolWalking_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"playerPistolWalking_spr","path":"sprites/playerPistolWalking_spr/playerPistolWalking_spr.yy",},"resourceVersion":"1.0","name":"6a6d6224-54c5-406f-98d0-e5fb64323169","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"e3dfd69d-2f76-47c5-a4be-56bd8d913177",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"c2b29b90-dcba-4cfd-aead-bcf900d80392",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"033a79c2-5681-4ce1-a558-78b7c095a048",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"b6691c4f-1473-4777-8634-ee977ac9c2fc",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"8ee54d7a-cc60-4c2e-84e7-6578523179d7",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"6a6d6224-54c5-406f-98d0-e5fb64323169",},
   ],
   "sequence": {
-    "spriteId": {"name":"playerPistolWalking_spr","path":"sprites/playerPistolWalking_spr/playerPistolWalking_spr.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "playerPistolWalking_spr",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 12.0,
@@ -55,14 +48,14 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"e2bbc05d-8f13-4c01-bd83-2ed7a667f9c5","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"e3dfd69d-2f76-47c5-a4be-56bd8d913177","path":"sprites/playerPistolWalking_spr/playerPistolWalking_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"42259a04-4dd5-44f9-ad24-53fe7816ecda","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"c2b29b90-dcba-4cfd-aead-bcf900d80392","path":"sprites/playerPistolWalking_spr/playerPistolWalking_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"625d437b-ad07-4748-aacf-5a76982f9210","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"033a79c2-5681-4ce1-a558-78b7c095a048","path":"sprites/playerPistolWalking_spr/playerPistolWalking_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"a94f79a4-8931-46c2-916d-f2b2149cbcb5","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b6691c4f-1473-4777-8634-ee977ac9c2fc","path":"sprites/playerPistolWalking_spr/playerPistolWalking_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"fa7245c7-78e3-4116-a6ba-af892e17ca66","Key":4.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"8ee54d7a-cc60-4c2e-84e7-6578523179d7","path":"sprites/playerPistolWalking_spr/playerPistolWalking_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"acceeb90-414f-4f5e-9b10-57f4aea08e3e","Key":5.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"6a6d6224-54c5-406f-98d0-e5fb64323169","path":"sprites/playerPistolWalking_spr/playerPistolWalking_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -78,22 +71,13 @@
     "yorigin": 6,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"playerPistolWalking_spr","path":"sprites/playerPistolWalking_spr/playerPistolWalking_spr.yy",},
-    "resourceVersion": "1.4",
-    "name": "playerPistolWalking_spr",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"ce6ca150-8db9-4c36-b713-15a944e4bf2c","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"ce6ca150-8db9-4c36-b713-15a944e4bf2c","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Steph Sprites",
     "path": "folders/Steph/Steph Sprites.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "playerPistolWalking_spr",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

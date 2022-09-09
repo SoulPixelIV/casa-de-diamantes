@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "grenatePlant_spr",
   "bboxMode": 2,
   "collisionKind": 1,
   "type": 0,
@@ -24,15 +27,13 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"fc69396c-ce7c-40fa-b3d7-5de50ecb4724","path":"sprites/grenatePlant_spr/grenatePlant_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"fc69396c-ce7c-40fa-b3d7-5de50ecb4724","path":"sprites/grenatePlant_spr/grenatePlant_spr.yy",},"LayerId":{"name":"2a1b3c57-6db1-4bf4-bd68-e98bf0313cde","path":"sprites/grenatePlant_spr/grenatePlant_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"grenatePlant_spr","path":"sprites/grenatePlant_spr/grenatePlant_spr.yy",},"resourceVersion":"1.0","name":"fc69396c-ce7c-40fa-b3d7-5de50ecb4724","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"f4bc93f1-1c37-4f9f-a588-d9a988fea67d","path":"sprites/grenatePlant_spr/grenatePlant_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"f4bc93f1-1c37-4f9f-a588-d9a988fea67d","path":"sprites/grenatePlant_spr/grenatePlant_spr.yy",},"LayerId":{"name":"2a1b3c57-6db1-4bf4-bd68-e98bf0313cde","path":"sprites/grenatePlant_spr/grenatePlant_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"grenatePlant_spr","path":"sprites/grenatePlant_spr/grenatePlant_spr.yy",},"resourceVersion":"1.0","name":"f4bc93f1-1c37-4f9f-a588-d9a988fea67d","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"fc69396c-ce7c-40fa-b3d7-5de50ecb4724",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"f4bc93f1-1c37-4f9f-a588-d9a988fea67d",},
   ],
   "sequence": {
-    "spriteId": {"name":"grenatePlant_spr","path":"sprites/grenatePlant_spr/grenatePlant_spr.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "grenatePlant_spr",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 6.0,
@@ -40,13 +41,13 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 2.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"d5da88b6-1534-41e9-bf7d-fdd52d4485e9","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"fc69396c-ce7c-40fa-b3d7-5de50ecb4724","path":"sprites/grenatePlant_spr/grenatePlant_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"440ffb71-05f1-4759-bec2-3df7ec38b88e","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"f4bc93f1-1c37-4f9f-a588-d9a988fea67d","path":"sprites/grenatePlant_spr/grenatePlant_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"d5da88b6-1534-41e9-bf7d-fdd52d4485e9","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"fc69396c-ce7c-40fa-b3d7-5de50ecb4724","path":"sprites/grenatePlant_spr/grenatePlant_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"440ffb71-05f1-4759-bec2-3df7ec38b88e","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"f4bc93f1-1c37-4f9f-a588-d9a988fea67d","path":"sprites/grenatePlant_spr/grenatePlant_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -62,22 +63,13 @@
     "yorigin": 8,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"grenatePlant_spr","path":"sprites/grenatePlant_spr/grenatePlant_spr.yy",},
-    "resourceVersion": "1.4",
-    "name": "grenatePlant_spr",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"2a1b3c57-6db1-4bf4-bd68-e98bf0313cde","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"2a1b3c57-6db1-4bf4-bd68-e98bf0313cde","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Sprites",
     "path": "folders/Sprites.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "grenatePlant_spr",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

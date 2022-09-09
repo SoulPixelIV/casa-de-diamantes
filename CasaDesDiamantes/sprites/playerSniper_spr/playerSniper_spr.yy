@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "playerSniper_spr",
   "bboxMode": 2,
   "collisionKind": 1,
   "type": 0,
@@ -24,21 +27,15 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"fd6affea-b640-4ed0-a0b2-9175289f9dee","path":"sprites/playerSniper_spr/playerSniper_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"fd6affea-b640-4ed0-a0b2-9175289f9dee","path":"sprites/playerSniper_spr/playerSniper_spr.yy",},"LayerId":{"name":"e131ec75-125f-4f88-af4f-4f5b517a95ca","path":"sprites/playerSniper_spr/playerSniper_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"playerSniper_spr","path":"sprites/playerSniper_spr/playerSniper_spr.yy",},"resourceVersion":"1.0","name":"fd6affea-b640-4ed0-a0b2-9175289f9dee","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"f8a507dc-46dc-462d-8835-bec4d8a37cbc","path":"sprites/playerSniper_spr/playerSniper_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"f8a507dc-46dc-462d-8835-bec4d8a37cbc","path":"sprites/playerSniper_spr/playerSniper_spr.yy",},"LayerId":{"name":"e131ec75-125f-4f88-af4f-4f5b517a95ca","path":"sprites/playerSniper_spr/playerSniper_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"playerSniper_spr","path":"sprites/playerSniper_spr/playerSniper_spr.yy",},"resourceVersion":"1.0","name":"f8a507dc-46dc-462d-8835-bec4d8a37cbc","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"6c9dbce4-37c9-4f70-9e7d-e1e6b6c566cc","path":"sprites/playerSniper_spr/playerSniper_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"6c9dbce4-37c9-4f70-9e7d-e1e6b6c566cc","path":"sprites/playerSniper_spr/playerSniper_spr.yy",},"LayerId":{"name":"e131ec75-125f-4f88-af4f-4f5b517a95ca","path":"sprites/playerSniper_spr/playerSniper_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"playerSniper_spr","path":"sprites/playerSniper_spr/playerSniper_spr.yy",},"resourceVersion":"1.0","name":"6c9dbce4-37c9-4f70-9e7d-e1e6b6c566cc","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"5b3fc6c2-7853-45c6-9489-3a394e7bc5cf","path":"sprites/playerSniper_spr/playerSniper_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"5b3fc6c2-7853-45c6-9489-3a394e7bc5cf","path":"sprites/playerSniper_spr/playerSniper_spr.yy",},"LayerId":{"name":"e131ec75-125f-4f88-af4f-4f5b517a95ca","path":"sprites/playerSniper_spr/playerSniper_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"playerSniper_spr","path":"sprites/playerSniper_spr/playerSniper_spr.yy",},"resourceVersion":"1.0","name":"5b3fc6c2-7853-45c6-9489-3a394e7bc5cf","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"fd6affea-b640-4ed0-a0b2-9175289f9dee",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"f8a507dc-46dc-462d-8835-bec4d8a37cbc",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"6c9dbce4-37c9-4f70-9e7d-e1e6b6c566cc",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"5b3fc6c2-7853-45c6-9489-3a394e7bc5cf",},
   ],
   "sequence": {
-    "spriteId": {"name":"playerSniper_spr","path":"sprites/playerSniper_spr/playerSniper_spr.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "playerSniper_spr",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 12.0,
@@ -49,12 +46,12 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"dc509f74-5037-420f-943c-00139a4e8dc5","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"fd6affea-b640-4ed0-a0b2-9175289f9dee","path":"sprites/playerSniper_spr/playerSniper_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"0f243f9c-e596-45ab-85d0-06adc18d6990","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"f8a507dc-46dc-462d-8835-bec4d8a37cbc","path":"sprites/playerSniper_spr/playerSniper_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"a29cfd1f-6dbf-4fa5-8eb1-7eb934809492","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"6c9dbce4-37c9-4f70-9e7d-e1e6b6c566cc","path":"sprites/playerSniper_spr/playerSniper_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"3d5e1240-6125-4c4d-9b05-db5bc628259a","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"5b3fc6c2-7853-45c6-9489-3a394e7bc5cf","path":"sprites/playerSniper_spr/playerSniper_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -70,22 +67,13 @@
     "yorigin": 5,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"playerSniper_spr","path":"sprites/playerSniper_spr/playerSniper_spr.yy",},
-    "resourceVersion": "1.4",
-    "name": "playerSniper_spr",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"e131ec75-125f-4f88-af4f-4f5b517a95ca","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"e131ec75-125f-4f88-af4f-4f5b517a95ca","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Steph Sprites",
     "path": "folders/Steph/Steph Sprites.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "playerSniper_spr",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

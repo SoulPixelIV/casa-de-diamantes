@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "sketchesVIP_spr",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,13 +27,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"1877d139-78ea-49b2-b4e3-cc97878a8c80","path":"sprites/sketchesVIP_spr/sketchesVIP_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"1877d139-78ea-49b2-b4e3-cc97878a8c80","path":"sprites/sketchesVIP_spr/sketchesVIP_spr.yy",},"LayerId":{"name":"9962b9ab-3b9b-4d6a-aa57-91586e4aaff0","path":"sprites/sketchesVIP_spr/sketchesVIP_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-        {"FrameId":{"name":"1877d139-78ea-49b2-b4e3-cc97878a8c80","path":"sprites/sketchesVIP_spr/sketchesVIP_spr.yy",},"LayerId":{"name":"4a823bb1-f99e-44be-97d4-43be5efa7439","path":"sprites/sketchesVIP_spr/sketchesVIP_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sketchesVIP_spr","path":"sprites/sketchesVIP_spr/sketchesVIP_spr.yy",},"resourceVersion":"1.0","name":"1877d139-78ea-49b2-b4e3-cc97878a8c80","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"1877d139-78ea-49b2-b4e3-cc97878a8c80",},
   ],
   "sequence": {
-    "spriteId": {"name":"sketchesVIP_spr","path":"sprites/sketchesVIP_spr/sketchesVIP_spr.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "sketchesVIP_spr",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,9 +43,9 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"71b45f96-0b4f-4e46-81d4-ae4f3ba650aa","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"1877d139-78ea-49b2-b4e3-cc97878a8c80","path":"sprites/sketchesVIP_spr/sketchesVIP_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -59,23 +61,14 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"sketchesVIP_spr","path":"sprites/sketchesVIP_spr/sketchesVIP_spr.yy",},
-    "resourceVersion": "1.4",
-    "name": "sketchesVIP_spr",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"Layer 1","resourceVersion":"1.0","name":"9962b9ab-3b9b-4d6a-aa57-91586e4aaff0","tags":[],"resourceType":"GMImageLayer",},
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"Layer 2 (2)","resourceVersion":"1.0","name":"4a823bb1-f99e-44be-97d4-43be5efa7439","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"9962b9ab-3b9b-4d6a-aa57-91586e4aaff0","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"Layer 1",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"4a823bb1-f99e-44be-97d4-43be5efa7439","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"Layer 2 (2)",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Character Sprites",
     "path": "folders/Characters/Character Sprites.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "sketchesVIP_spr",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

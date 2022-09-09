@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "casinobunny_spr",
   "bboxMode": 2,
   "collisionKind": 1,
   "type": 0,
@@ -24,27 +27,17 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"5f7cb13c-7d98-42fa-bfde-5a94fe0dc387","path":"sprites/casinobunny_spr/casinobunny_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"5f7cb13c-7d98-42fa-bfde-5a94fe0dc387","path":"sprites/casinobunny_spr/casinobunny_spr.yy",},"LayerId":{"name":"b07cbfab-e89b-4c54-b475-7be7bda645c7","path":"sprites/casinobunny_spr/casinobunny_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"casinobunny_spr","path":"sprites/casinobunny_spr/casinobunny_spr.yy",},"resourceVersion":"1.0","name":"5f7cb13c-7d98-42fa-bfde-5a94fe0dc387","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"e7205539-b665-480c-b227-c936a15077bc","path":"sprites/casinobunny_spr/casinobunny_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"e7205539-b665-480c-b227-c936a15077bc","path":"sprites/casinobunny_spr/casinobunny_spr.yy",},"LayerId":{"name":"b07cbfab-e89b-4c54-b475-7be7bda645c7","path":"sprites/casinobunny_spr/casinobunny_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"casinobunny_spr","path":"sprites/casinobunny_spr/casinobunny_spr.yy",},"resourceVersion":"1.0","name":"e7205539-b665-480c-b227-c936a15077bc","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"f287b60d-8570-4c0e-a89e-40a5025fbf2c","path":"sprites/casinobunny_spr/casinobunny_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"f287b60d-8570-4c0e-a89e-40a5025fbf2c","path":"sprites/casinobunny_spr/casinobunny_spr.yy",},"LayerId":{"name":"b07cbfab-e89b-4c54-b475-7be7bda645c7","path":"sprites/casinobunny_spr/casinobunny_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"casinobunny_spr","path":"sprites/casinobunny_spr/casinobunny_spr.yy",},"resourceVersion":"1.0","name":"f287b60d-8570-4c0e-a89e-40a5025fbf2c","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"d0149104-6e65-48c5-a08b-5382f4c21054","path":"sprites/casinobunny_spr/casinobunny_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"d0149104-6e65-48c5-a08b-5382f4c21054","path":"sprites/casinobunny_spr/casinobunny_spr.yy",},"LayerId":{"name":"b07cbfab-e89b-4c54-b475-7be7bda645c7","path":"sprites/casinobunny_spr/casinobunny_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"casinobunny_spr","path":"sprites/casinobunny_spr/casinobunny_spr.yy",},"resourceVersion":"1.0","name":"d0149104-6e65-48c5-a08b-5382f4c21054","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"b775a09b-2447-4d6f-9fa1-3fed87ed49f7","path":"sprites/casinobunny_spr/casinobunny_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"b775a09b-2447-4d6f-9fa1-3fed87ed49f7","path":"sprites/casinobunny_spr/casinobunny_spr.yy",},"LayerId":{"name":"b07cbfab-e89b-4c54-b475-7be7bda645c7","path":"sprites/casinobunny_spr/casinobunny_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"casinobunny_spr","path":"sprites/casinobunny_spr/casinobunny_spr.yy",},"resourceVersion":"1.0","name":"b775a09b-2447-4d6f-9fa1-3fed87ed49f7","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"ed57c2f8-2a29-4f98-bf7e-3df11666ca19","path":"sprites/casinobunny_spr/casinobunny_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"ed57c2f8-2a29-4f98-bf7e-3df11666ca19","path":"sprites/casinobunny_spr/casinobunny_spr.yy",},"LayerId":{"name":"b07cbfab-e89b-4c54-b475-7be7bda645c7","path":"sprites/casinobunny_spr/casinobunny_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"casinobunny_spr","path":"sprites/casinobunny_spr/casinobunny_spr.yy",},"resourceVersion":"1.0","name":"ed57c2f8-2a29-4f98-bf7e-3df11666ca19","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"5f7cb13c-7d98-42fa-bfde-5a94fe0dc387",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"e7205539-b665-480c-b227-c936a15077bc",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"f287b60d-8570-4c0e-a89e-40a5025fbf2c",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"d0149104-6e65-48c5-a08b-5382f4c21054",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"b775a09b-2447-4d6f-9fa1-3fed87ed49f7",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"ed57c2f8-2a29-4f98-bf7e-3df11666ca19",},
   ],
   "sequence": {
-    "spriteId": {"name":"casinobunny_spr","path":"sprites/casinobunny_spr/casinobunny_spr.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "casinobunny_spr",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 7.0,
@@ -55,14 +48,14 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"1fbc8d8e-bdc8-4f45-96b9-05e58c6538f0","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"5f7cb13c-7d98-42fa-bfde-5a94fe0dc387","path":"sprites/casinobunny_spr/casinobunny_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"4088cd5f-4db5-4290-909f-39a0e6ce2371","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"e7205539-b665-480c-b227-c936a15077bc","path":"sprites/casinobunny_spr/casinobunny_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"950b3399-9119-4964-a7bd-f18a8de5bb83","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"f287b60d-8570-4c0e-a89e-40a5025fbf2c","path":"sprites/casinobunny_spr/casinobunny_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"21b12011-283f-48e4-af7b-1fd83cd07311","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d0149104-6e65-48c5-a08b-5382f4c21054","path":"sprites/casinobunny_spr/casinobunny_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"5c92db38-6625-4ca2-b4cc-226a4f24c934","Key":4.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b775a09b-2447-4d6f-9fa1-3fed87ed49f7","path":"sprites/casinobunny_spr/casinobunny_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"18c507c1-f8fb-4ccd-9603-5485c68d4964","Key":5.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"ed57c2f8-2a29-4f98-bf7e-3df11666ca19","path":"sprites/casinobunny_spr/casinobunny_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -78,22 +71,13 @@
     "yorigin": 26,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"casinobunny_spr","path":"sprites/casinobunny_spr/casinobunny_spr.yy",},
-    "resourceVersion": "1.4",
-    "name": "casinobunny_spr",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"b07cbfab-e89b-4c54-b475-7be7bda645c7","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"b07cbfab-e89b-4c54-b475-7be7bda645c7","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Character Sprites",
     "path": "folders/Characters/Character Sprites.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "casinobunny_spr",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

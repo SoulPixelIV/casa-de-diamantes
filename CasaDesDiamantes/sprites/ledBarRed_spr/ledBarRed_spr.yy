@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "ledBarRed_spr",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,15 +27,13 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"383f66e1-ed0b-486c-9d76-be87e27d7fd6","path":"sprites/ledBarRed_spr/ledBarRed_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"383f66e1-ed0b-486c-9d76-be87e27d7fd6","path":"sprites/ledBarRed_spr/ledBarRed_spr.yy",},"LayerId":{"name":"92a33519-749c-4a3e-bd74-ef87c551a353","path":"sprites/ledBarRed_spr/ledBarRed_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"ledBarRed_spr","path":"sprites/ledBarRed_spr/ledBarRed_spr.yy",},"resourceVersion":"1.0","name":"383f66e1-ed0b-486c-9d76-be87e27d7fd6","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"79076d4f-acf9-48eb-8758-4c38c57d1389","path":"sprites/ledBarRed_spr/ledBarRed_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"79076d4f-acf9-48eb-8758-4c38c57d1389","path":"sprites/ledBarRed_spr/ledBarRed_spr.yy",},"LayerId":{"name":"92a33519-749c-4a3e-bd74-ef87c551a353","path":"sprites/ledBarRed_spr/ledBarRed_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"ledBarRed_spr","path":"sprites/ledBarRed_spr/ledBarRed_spr.yy",},"resourceVersion":"1.0","name":"79076d4f-acf9-48eb-8758-4c38c57d1389","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"383f66e1-ed0b-486c-9d76-be87e27d7fd6",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"79076d4f-acf9-48eb-8758-4c38c57d1389",},
   ],
   "sequence": {
-    "spriteId": {"name":"ledBarRed_spr","path":"sprites/ledBarRed_spr/ledBarRed_spr.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 0.0,
@@ -43,10 +44,10 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"1c0c5b25-ac23-4dfe-97b7-8ddfdc2fca4a","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"383f66e1-ed0b-486c-9d76-be87e27d7fd6","path":"sprites/ledBarRed_spr/ledBarRed_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"b7b0a1d7-1692-4d64-9d30-b7546af4559b","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"79076d4f-acf9-48eb-8758-4c38c57d1389","path":"sprites/ledBarRed_spr/ledBarRed_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -62,22 +63,13 @@
     "yorigin": 4,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"ledBarRed_spr","path":"sprites/ledBarRed_spr/ledBarRed_spr.yy",},
-    "resourceVersion": "1.4",
-    "name": "",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"92a33519-749c-4a3e-bd74-ef87c551a353","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"92a33519-749c-4a3e-bd74-ef87c551a353","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Decoration",
     "path": "folders/Sprites/Decoration.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "ledBarRed_spr",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

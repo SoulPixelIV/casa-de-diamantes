@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "zombieBucketGirlDESIGN_spr",
   "bboxMode": 2,
   "collisionKind": 1,
   "type": 0,
@@ -24,14 +27,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"0a01dd3c-8790-4879-8b00-7507bd0b0512","path":"sprites/zombieBucketGirlDESIGN_spr/zombieBucketGirlDESIGN_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"0a01dd3c-8790-4879-8b00-7507bd0b0512","path":"sprites/zombieBucketGirlDESIGN_spr/zombieBucketGirlDESIGN_spr.yy",},"LayerId":{"name":"c2c7b1cf-f69d-41ce-a0e7-062844c6d4ee","path":"sprites/zombieBucketGirlDESIGN_spr/zombieBucketGirlDESIGN_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-        {"FrameId":{"name":"0a01dd3c-8790-4879-8b00-7507bd0b0512","path":"sprites/zombieBucketGirlDESIGN_spr/zombieBucketGirlDESIGN_spr.yy",},"LayerId":{"name":"49b03071-0b2f-4735-b4ff-48b1015af691","path":"sprites/zombieBucketGirlDESIGN_spr/zombieBucketGirlDESIGN_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-        {"FrameId":{"name":"0a01dd3c-8790-4879-8b00-7507bd0b0512","path":"sprites/zombieBucketGirlDESIGN_spr/zombieBucketGirlDESIGN_spr.yy",},"LayerId":{"name":"15a4a9f9-a1f0-4ba5-a3f4-63c04a45d3b5","path":"sprites/zombieBucketGirlDESIGN_spr/zombieBucketGirlDESIGN_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"zombieBucketGirlDESIGN_spr","path":"sprites/zombieBucketGirlDESIGN_spr/zombieBucketGirlDESIGN_spr.yy",},"resourceVersion":"1.0","name":"0a01dd3c-8790-4879-8b00-7507bd0b0512","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"0a01dd3c-8790-4879-8b00-7507bd0b0512",},
   ],
   "sequence": {
-    "spriteId": {"name":"zombieBucketGirlDESIGN_spr","path":"sprites/zombieBucketGirlDESIGN_spr/zombieBucketGirlDESIGN_spr.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "zombieBucketGirlDESIGN_spr",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 1.0,
@@ -42,9 +43,9 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"37d5c0c3-2de2-476f-be17-198b69da9cb5","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"0a01dd3c-8790-4879-8b00-7507bd0b0512","path":"sprites/zombieBucketGirlDESIGN_spr/zombieBucketGirlDESIGN_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -60,24 +61,15 @@
     "yorigin": 45,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"zombieBucketGirlDESIGN_spr","path":"sprites/zombieBucketGirlDESIGN_spr/zombieBucketGirlDESIGN_spr.yy",},
-    "resourceVersion": "1.4",
-    "name": "zombieBucketGirlDESIGN_spr",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"Flower","resourceVersion":"1.0","name":"c2c7b1cf-f69d-41ce-a0e7-062844c6d4ee","tags":[],"resourceType":"GMImageLayer",},
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"49b03071-0b2f-4735-b4ff-48b1015af691","tags":[],"resourceType":"GMImageLayer",},
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"FlowerBG","resourceVersion":"1.0","name":"15a4a9f9-a1f0-4ba5-a3f4-63c04a45d3b5","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"c2c7b1cf-f69d-41ce-a0e7-062844c6d4ee","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"Flower",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"49b03071-0b2f-4735-b4ff-48b1015af691","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"15a4a9f9-a1f0-4ba5-a3f4-63c04a45d3b5","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"FlowerBG",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "BucketZombie",
     "path": "folders/Enemies/Enemy Sprites/BucketZombie.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "zombieBucketGirlDESIGN_spr",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

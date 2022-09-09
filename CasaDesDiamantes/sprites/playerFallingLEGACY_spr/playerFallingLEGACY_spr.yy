@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "playerFallingLEGACY_spr",
   "bboxMode": 2,
   "collisionKind": 1,
   "type": 0,
@@ -24,18 +27,14 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"da0f4515-dc62-400b-a17b-45ce11a8620c","path":"sprites/playerFallingLEGACY_spr/playerFallingLEGACY_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"da0f4515-dc62-400b-a17b-45ce11a8620c","path":"sprites/playerFallingLEGACY_spr/playerFallingLEGACY_spr.yy",},"LayerId":{"name":"8fcb7146-c1b5-4044-add7-b264646cf8f7","path":"sprites/playerFallingLEGACY_spr/playerFallingLEGACY_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"playerFallingLEGACY_spr","path":"sprites/playerFallingLEGACY_spr/playerFallingLEGACY_spr.yy",},"resourceVersion":"1.0","name":"da0f4515-dc62-400b-a17b-45ce11a8620c","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"6ecf7941-318b-402c-ab4f-90c329bd12f6","path":"sprites/playerFallingLEGACY_spr/playerFallingLEGACY_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"6ecf7941-318b-402c-ab4f-90c329bd12f6","path":"sprites/playerFallingLEGACY_spr/playerFallingLEGACY_spr.yy",},"LayerId":{"name":"8fcb7146-c1b5-4044-add7-b264646cf8f7","path":"sprites/playerFallingLEGACY_spr/playerFallingLEGACY_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"playerFallingLEGACY_spr","path":"sprites/playerFallingLEGACY_spr/playerFallingLEGACY_spr.yy",},"resourceVersion":"1.0","name":"6ecf7941-318b-402c-ab4f-90c329bd12f6","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"3dae78d7-8114-4f20-a569-f6e7426f8dc0","path":"sprites/playerFallingLEGACY_spr/playerFallingLEGACY_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"3dae78d7-8114-4f20-a569-f6e7426f8dc0","path":"sprites/playerFallingLEGACY_spr/playerFallingLEGACY_spr.yy",},"LayerId":{"name":"8fcb7146-c1b5-4044-add7-b264646cf8f7","path":"sprites/playerFallingLEGACY_spr/playerFallingLEGACY_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"playerFallingLEGACY_spr","path":"sprites/playerFallingLEGACY_spr/playerFallingLEGACY_spr.yy",},"resourceVersion":"1.0","name":"3dae78d7-8114-4f20-a569-f6e7426f8dc0","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"da0f4515-dc62-400b-a17b-45ce11a8620c",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"6ecf7941-318b-402c-ab4f-90c329bd12f6",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"3dae78d7-8114-4f20-a569-f6e7426f8dc0",},
   ],
   "sequence": {
-    "spriteId": {"name":"playerFallingLEGACY_spr","path":"sprites/playerFallingLEGACY_spr/playerFallingLEGACY_spr.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "playerFallingLEGACY_spr",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 7.0,
@@ -46,11 +45,11 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"925dbdb7-80c4-483f-af57-c0999fd17b2a","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"da0f4515-dc62-400b-a17b-45ce11a8620c","path":"sprites/playerFallingLEGACY_spr/playerFallingLEGACY_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"b892ed41-e49c-4022-96d3-576ba620ad78","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"6ecf7941-318b-402c-ab4f-90c329bd12f6","path":"sprites/playerFallingLEGACY_spr/playerFallingLEGACY_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"c18408e8-4906-4687-b207-e9bcdce620a0","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"3dae78d7-8114-4f20-a569-f6e7426f8dc0","path":"sprites/playerFallingLEGACY_spr/playerFallingLEGACY_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -66,22 +65,13 @@
     "yorigin": 26,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"playerFallingLEGACY_spr","path":"sprites/playerFallingLEGACY_spr/playerFallingLEGACY_spr.yy",},
-    "resourceVersion": "1.4",
-    "name": "playerFallingLEGACY_spr",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"8fcb7146-c1b5-4044-add7-b264646cf8f7","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"8fcb7146-c1b5-4044-add7-b264646cf8f7","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Legacy",
     "path": "folders/Steph/Steph Sprites/Legacy.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "playerFallingLEGACY_spr",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

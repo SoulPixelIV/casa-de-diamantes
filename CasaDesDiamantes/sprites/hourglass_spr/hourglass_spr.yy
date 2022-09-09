@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "hourglass_spr",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,30 +27,18 @@
   "gridX": 2,
   "gridY": 2,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"04914e38-7e99-424e-990d-a5e90b01c3e4","path":"sprites/hourglass_spr/hourglass_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"04914e38-7e99-424e-990d-a5e90b01c3e4","path":"sprites/hourglass_spr/hourglass_spr.yy",},"LayerId":{"name":"d7dbb694-3d4d-44e4-932c-0333eaaebe7a","path":"sprites/hourglass_spr/hourglass_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"hourglass_spr","path":"sprites/hourglass_spr/hourglass_spr.yy",},"resourceVersion":"1.0","name":"04914e38-7e99-424e-990d-a5e90b01c3e4","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"44c2fa57-94a1-40ab-9695-0084eda4cbd8","path":"sprites/hourglass_spr/hourglass_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"44c2fa57-94a1-40ab-9695-0084eda4cbd8","path":"sprites/hourglass_spr/hourglass_spr.yy",},"LayerId":{"name":"d7dbb694-3d4d-44e4-932c-0333eaaebe7a","path":"sprites/hourglass_spr/hourglass_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"hourglass_spr","path":"sprites/hourglass_spr/hourglass_spr.yy",},"resourceVersion":"1.0","name":"44c2fa57-94a1-40ab-9695-0084eda4cbd8","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"710ffcce-1d35-41f3-82db-524aae4e031e","path":"sprites/hourglass_spr/hourglass_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"710ffcce-1d35-41f3-82db-524aae4e031e","path":"sprites/hourglass_spr/hourglass_spr.yy",},"LayerId":{"name":"d7dbb694-3d4d-44e4-932c-0333eaaebe7a","path":"sprites/hourglass_spr/hourglass_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"hourglass_spr","path":"sprites/hourglass_spr/hourglass_spr.yy",},"resourceVersion":"1.0","name":"710ffcce-1d35-41f3-82db-524aae4e031e","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"691f30e4-6313-4e9e-a04c-aa1e5c2c1056","path":"sprites/hourglass_spr/hourglass_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"691f30e4-6313-4e9e-a04c-aa1e5c2c1056","path":"sprites/hourglass_spr/hourglass_spr.yy",},"LayerId":{"name":"d7dbb694-3d4d-44e4-932c-0333eaaebe7a","path":"sprites/hourglass_spr/hourglass_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"hourglass_spr","path":"sprites/hourglass_spr/hourglass_spr.yy",},"resourceVersion":"1.0","name":"691f30e4-6313-4e9e-a04c-aa1e5c2c1056","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"7e5cff07-fbea-4332-87ed-b466234224d6","path":"sprites/hourglass_spr/hourglass_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"7e5cff07-fbea-4332-87ed-b466234224d6","path":"sprites/hourglass_spr/hourglass_spr.yy",},"LayerId":{"name":"d7dbb694-3d4d-44e4-932c-0333eaaebe7a","path":"sprites/hourglass_spr/hourglass_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"hourglass_spr","path":"sprites/hourglass_spr/hourglass_spr.yy",},"resourceVersion":"1.0","name":"7e5cff07-fbea-4332-87ed-b466234224d6","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"606df922-76bf-4f7f-b705-e26bec296d3f","path":"sprites/hourglass_spr/hourglass_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"606df922-76bf-4f7f-b705-e26bec296d3f","path":"sprites/hourglass_spr/hourglass_spr.yy",},"LayerId":{"name":"d7dbb694-3d4d-44e4-932c-0333eaaebe7a","path":"sprites/hourglass_spr/hourglass_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"hourglass_spr","path":"sprites/hourglass_spr/hourglass_spr.yy",},"resourceVersion":"1.0","name":"606df922-76bf-4f7f-b705-e26bec296d3f","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"72562487-414a-4ddc-8865-f3dd42accd9a","path":"sprites/hourglass_spr/hourglass_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"72562487-414a-4ddc-8865-f3dd42accd9a","path":"sprites/hourglass_spr/hourglass_spr.yy",},"LayerId":{"name":"d7dbb694-3d4d-44e4-932c-0333eaaebe7a","path":"sprites/hourglass_spr/hourglass_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"hourglass_spr","path":"sprites/hourglass_spr/hourglass_spr.yy",},"resourceVersion":"1.0","name":"72562487-414a-4ddc-8865-f3dd42accd9a","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"04914e38-7e99-424e-990d-a5e90b01c3e4",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"44c2fa57-94a1-40ab-9695-0084eda4cbd8",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"710ffcce-1d35-41f3-82db-524aae4e031e",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"691f30e4-6313-4e9e-a04c-aa1e5c2c1056",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"7e5cff07-fbea-4332-87ed-b466234224d6",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"606df922-76bf-4f7f-b705-e26bec296d3f",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"72562487-414a-4ddc-8865-f3dd42accd9a",},
   ],
   "sequence": {
-    "spriteId": {"name":"hourglass_spr","path":"sprites/hourglass_spr/hourglass_spr.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 0.0,
@@ -58,7 +49,7 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"8b34083b-dfcb-4453-a3d5-d43fc8cba400","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"04914e38-7e99-424e-990d-a5e90b01c3e4","path":"sprites/hourglass_spr/hourglass_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"bf389b6f-2d2e-4427-8a45-fb3610fa10af","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"44c2fa57-94a1-40ab-9695-0084eda4cbd8","path":"sprites/hourglass_spr/hourglass_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"bf6791ae-69ba-4506-a58f-c5d550968c43","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"710ffcce-1d35-41f3-82db-524aae4e031e","path":"sprites/hourglass_spr/hourglass_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
@@ -66,7 +57,7 @@
             {"id":"1e94da2d-c580-4c02-8b0f-cb65681a30d8","Key":4.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"7e5cff07-fbea-4332-87ed-b466234224d6","path":"sprites/hourglass_spr/hourglass_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"e2acb84d-8bea-4556-bd8a-6e0a70a50049","Key":5.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"606df922-76bf-4f7f-b705-e26bec296d3f","path":"sprites/hourglass_spr/hourglass_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"582818d4-5ee1-4c51-ba20-df2540997d01","Key":6.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"72562487-414a-4ddc-8865-f3dd42accd9a","path":"sprites/hourglass_spr/hourglass_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": {"x":0.0,"y":0.0,},
     "lockOrigin": false,
@@ -82,22 +73,13 @@
     "yorigin": 32,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"hourglass_spr","path":"sprites/hourglass_spr/hourglass_spr.yy",},
-    "resourceVersion": "1.4",
-    "name": "",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"d7dbb694-3d4d-44e4-932c-0333eaaebe7a","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"d7dbb694-3d4d-44e4-932c-0333eaaebe7a","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "UI Sprites",
     "path": "folders/UI/UI Sprites.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "hourglass_spr",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "ledStripe3_spr",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,15 +27,13 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"07efb46b-1cf6-40af-82ca-82afd133783c","path":"sprites/ledStripe3_spr/ledStripe3_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"07efb46b-1cf6-40af-82ca-82afd133783c","path":"sprites/ledStripe3_spr/ledStripe3_spr.yy",},"LayerId":{"name":"84ba2033-8d9f-416b-a5b2-69c428a6d3f9","path":"sprites/ledStripe3_spr/ledStripe3_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"ledStripe3_spr","path":"sprites/ledStripe3_spr/ledStripe3_spr.yy",},"resourceVersion":"1.0","name":"07efb46b-1cf6-40af-82ca-82afd133783c","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"b71b7a0d-0a2b-423f-ad9d-071094eefc5a","path":"sprites/ledStripe3_spr/ledStripe3_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"b71b7a0d-0a2b-423f-ad9d-071094eefc5a","path":"sprites/ledStripe3_spr/ledStripe3_spr.yy",},"LayerId":{"name":"84ba2033-8d9f-416b-a5b2-69c428a6d3f9","path":"sprites/ledStripe3_spr/ledStripe3_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"ledStripe3_spr","path":"sprites/ledStripe3_spr/ledStripe3_spr.yy",},"resourceVersion":"1.0","name":"b71b7a0d-0a2b-423f-ad9d-071094eefc5a","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"07efb46b-1cf6-40af-82ca-82afd133783c",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"b71b7a0d-0a2b-423f-ad9d-071094eefc5a",},
   ],
   "sequence": {
-    "spriteId": {"name":"ledStripe3_spr","path":"sprites/ledStripe3_spr/ledStripe3_spr.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "ledStripe3_spr",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 1.0,
@@ -43,10 +44,10 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"678c468e-cdff-4ef9-8dad-7fc17f717f15","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"07efb46b-1cf6-40af-82ca-82afd133783c","path":"sprites/ledStripe3_spr/ledStripe3_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"548a390b-d8d0-4048-9d5f-b0655b069b2a","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b71b7a0d-0a2b-423f-ad9d-071094eefc5a","path":"sprites/ledStripe3_spr/ledStripe3_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -62,22 +63,13 @@
     "yorigin": 12,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"ledStripe3_spr","path":"sprites/ledStripe3_spr/ledStripe3_spr.yy",},
-    "resourceVersion": "1.4",
-    "name": "ledStripe3_spr",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"84ba2033-8d9f-416b-a5b2-69c428a6d3f9","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"84ba2033-8d9f-416b-a5b2-69c428a6d3f9","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Decoration",
     "path": "folders/Sprites/Decoration.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "ledStripe3_spr",
-  "tags": [],
-  "resourceType": "GMSprite",
 }
