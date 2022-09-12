@@ -1,20 +1,17 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "chipBluePickupStatic_obj",
+  "name": "brokenGlass_obj",
   "spriteId": {
-    "name": "chipBlue_spr",
-    "path": "sprites/chipBlue_spr/chipBlue_spr.yy",
+    "name": "brokenGlass_spr",
+    "path": "sprites/brokenGlass_spr/brokenGlass_spr.yy",
   },
-  "solid": false,
+  "solid": true,
   "visible": true,
   "managed": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": {
-    "name": "chips_obj",
-    "path": "objects/chips_obj/chips_obj.yy",
-  },
+  "parentObjectId": null,
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -30,12 +27,11 @@
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"player_obj","path":"objects/player_obj/player_obj.yy",},},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Pickups",
-    "path": "folders/Objects/Pickups.yy",
+    "name": "Destructible",
+    "path": "folders/Objects/Destructible.yy",
   },
 }
