@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "cameraTarget_obj",
   "spriteId": {
     "name": "cameraViewIcon_spr",
     "path": "sprites/cameraViewIcon_spr/cameraViewIcon_spr.yy",
@@ -28,8 +31,4 @@
     "name": "Camera",
     "path": "folders/Camera.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "cameraTarget_obj",
-  "tags": [],
-  "resourceType": "GMObject",
 }

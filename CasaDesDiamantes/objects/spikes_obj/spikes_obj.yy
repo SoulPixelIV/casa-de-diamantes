@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "spikes_obj",
   "spriteId": {
     "name": "spikes_spr",
     "path": "sprites/spikes_spr/spikes_spr.yy",
@@ -25,7 +28,7 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],
@@ -33,8 +36,4 @@
     "name": "Hazards",
     "path": "folders/Objects/Hazards.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spikes_obj",
-  "tags": [],
-  "resourceType": "GMObject",
 }

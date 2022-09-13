@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "battleArenaPlayerpoint_obj",
   "spriteId": {
     "name": "redstripes_spr",
     "path": "sprites/redstripes_spr/redstripes_spr.yy",
@@ -28,8 +31,4 @@
     "name": "Objects",
     "path": "folders/Objects.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "battleArenaPlayerpoint_obj",
-  "tags": [],
-  "resourceType": "GMObject",
 }

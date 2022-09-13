@@ -305,6 +305,7 @@
     {"id":{"name":"cameraViewIcon2_spr","path":"sprites/cameraViewIcon2_spr/cameraViewIcon2_spr.yy",},"order":7,},
     {"id":{"name":"radioactiveShield_spr","path":"sprites/radioactiveShield_spr/radioactiveShield_spr.yy",},"order":8,},
     {"id":{"name":"cameraIcon_spr","path":"sprites/cameraIcon_spr/cameraIcon_spr.yy",},"order":8,},
+    {"id":{"name":"level2","path":"rooms/level2/level2.yy",},"order":2,},
     {"id":{"name":"blackjackHitButton_spr","path":"sprites/blackjackHitButton_spr/blackjackHitButton_spr.yy",},"order":9,},
     {"id":{"name":"fallingObjectPlayer3_obj","path":"objects/fallingObjectPlayer3_obj/fallingObjectPlayer3_obj.yy",},"order":5,},
     {"id":{"name":"C_SF0_teleporter","path":"objects/C_SF0_teleporter/C_SF0_teleporter.yy",},"order":27,},
@@ -1306,6 +1307,7 @@
   },
   "RoomOrderNodes": [
     {"roomId":{"name":"loadVars","path":"rooms/loadVars/loadVars.yy",},},
+    {"roomId":{"name":"level2","path":"rooms/level2/level2.yy",},},
     {"roomId":{"name":"level1","path":"rooms/level1/level1.yy",},},
     {"roomId":{"name":"mainmenu","path":"rooms/mainmenu/mainmenu.yy",},},
     {"roomId":{"name":"level0","path":"rooms/level0/level0.yy",},},

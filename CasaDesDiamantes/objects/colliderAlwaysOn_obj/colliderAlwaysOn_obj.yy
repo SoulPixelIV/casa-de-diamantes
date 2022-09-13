@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "colliderAlwaysOn_obj",
   "spriteId": {
     "name": "colliderBox_spr",
     "path": "sprites/colliderBox_spr/colliderBox_spr.yy",
@@ -31,8 +34,4 @@
     "name": "Colliders",
     "path": "folders/Objects/Colliders.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "colliderAlwaysOn_obj",
-  "tags": [],
-  "resourceType": "GMObject",
 }

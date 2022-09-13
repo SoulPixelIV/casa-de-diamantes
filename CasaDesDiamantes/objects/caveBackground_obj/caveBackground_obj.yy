@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "caveBackground_obj",
   "spriteId": {
     "name": "caveBackground_spr",
     "path": "sprites/caveBackground_spr/caveBackground_spr.yy",
@@ -22,7 +25,7 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":2,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":2,"eventType":3,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],
@@ -30,8 +33,4 @@
     "name": "RoadToCasino",
     "path": "folders/Backgrounds/RoadToCasino.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "caveBackground_obj",
-  "tags": [],
-  "resourceType": "GMObject",
 }

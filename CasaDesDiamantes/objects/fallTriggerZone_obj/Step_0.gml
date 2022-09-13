@@ -1,6 +1,7 @@
 if (place_meeting(x, y, player_obj)) {
 	if (instance_exists(spawnpoint)) {
-		blackscreen_scr(0);
+		player_obj.x = spawnpoint.x;
+		player_obj.y = spawnpoint.y;
 	}
 }
 
