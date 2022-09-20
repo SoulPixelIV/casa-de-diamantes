@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "enemyVisionBlockZone_obj",
   "spriteId": {
     "name": "greenstripes_spr",
     "path": "sprites/greenstripes_spr/greenstripes_spr.yy",
@@ -28,8 +31,4 @@
     "name": "Objects",
     "path": "folders/Objects.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "enemyVisionBlockZone_obj",
-  "tags": [],
-  "resourceType": "GMObject",
 }

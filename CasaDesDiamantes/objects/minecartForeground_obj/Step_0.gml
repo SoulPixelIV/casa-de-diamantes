@@ -64,17 +64,17 @@ if (instance_exists(player_obj))
 }
 
 //Max Speed
-if (horspeed > 2.3)
+if (horspeed > 1.6)
 {
-	horspeed = 2.3;
+	horspeed = 1.6;
 }
-if (horspeed < -2.3)
+if (horspeed < -1.6)
 {
-	horspeed = -2.3;
+	horspeed = -1.6;
 }
 
 //Gravity
-if (verspeed < 14)
+if (verspeed < 14 && inMinecart)
 {
 	verspeed -= gravityStrength * global.dt;
 }
