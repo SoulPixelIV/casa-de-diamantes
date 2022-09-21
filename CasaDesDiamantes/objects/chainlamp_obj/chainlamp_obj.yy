@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "chainlamp_obj",
   "spriteId": {
     "name": "chainlamp_spr",
     "path": "sprites/chainlamp_spr/chainlamp_spr.yy",
@@ -28,8 +31,4 @@
     "name": "Decoration",
     "path": "folders/Objects/Decoration.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "chainlamp_obj",
-  "tags": [],
-  "resourceType": "GMObject",
 }

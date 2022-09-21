@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "chain_obj",
   "spriteId": {
     "name": "chain_spr",
     "path": "sprites/chain_spr/chain_spr.yy",
@@ -28,8 +31,4 @@
     "name": "Decoration",
     "path": "folders/Objects/Decoration.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "chain_obj",
-  "tags": [],
-  "resourceType": "GMObject",
 }
