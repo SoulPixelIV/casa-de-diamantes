@@ -239,15 +239,15 @@ if (hp < 0)
 	}
 
 	//Drop Money
-	repeat(50)
+	repeat(25)
 	{
 		instance_create_layer(x, y - 16, "Instances", chipBluePickup_obj);
 	}
-	repeat(50)
+	repeat(15)
 	{
 		instance_create_layer(x, y - 16, "Instances", chipRedPickup_obj);
 	}
-	repeat(15)
+	repeat(5)
 	{
 		instance_create_layer(x, y - 16, "Instances", chipVioletPickup_obj);
 	}

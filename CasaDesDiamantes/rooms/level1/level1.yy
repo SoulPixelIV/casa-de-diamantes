@@ -53,6 +53,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_2BE2F2A3","properties":[],"isDnd":false,"objectId":{"name":"fallTriggerSpawn_obj","path":"objects/fallTriggerSpawn_obj/fallTriggerSpawn_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":5376.0,"y":1120.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_323BFC4D","properties":[],"isDnd":false,"objectId":{"name":"fallTriggerZone_obj","path":"objects/fallTriggerZone_obj/fallTriggerZone_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":37.0,"scaleY":7.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":832.0,"y":1408.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_4A822FF6","properties":[],"isDnd":false,"objectId":{"name":"fallTriggerSpawn_obj","path":"objects/fallTriggerSpawn_obj/fallTriggerSpawn_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1184.0,"y":1184.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_74963F26","properties":[],"isDnd":false,"objectId":{"name":"Level1_Level2_teleporter","path":"objects/Level1_Level2_teleporter/Level1_Level2_teleporter.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":31.0,"scaleY":13.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":6384.0,"y":1440.0,},
       ],"visible":true,"depth":100,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMREffectLayer","resourceVersion":"1.0","name":"RedFilter","visible":true,"depth":200,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":"_filter_colourise","properties":[
         {"type":0,"name":"g_Intensity","value":"0.3",},
@@ -475,6 +476,7 @@
     {"name":"inst_2BE2F2A3","path":"rooms/level1/level1.yy",},
     {"name":"inst_323BFC4D","path":"rooms/level1/level1.yy",},
     {"name":"inst_4A822FF6","path":"rooms/level1/level1.yy",},
+    {"name":"inst_74963F26","path":"rooms/level1/level1.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

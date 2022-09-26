@@ -373,6 +373,7 @@
     {"id":{"name":"tutorialMousePromt_obj","path":"objects/tutorialMousePromt_obj/tutorialMousePromt_obj.yy",},"order":52,},
     {"id":{"name":"neural_spr","path":"sprites/neural_spr/neural_spr.yy",},"order":10,},
     {"id":{"name":"zombieGirlWalking_spr","path":"sprites/zombieGirlWalking_spr/zombieGirlWalking_spr.yy",},"order":16,},
+    {"id":{"name":"Level1_Level2_teleporter","path":"objects/Level1_Level2_teleporter/Level1_Level2_teleporter.yy",},"order":28,},
     {"id":{"name":"teleportBackToWarpzoneBeginning_obj","path":"objects/teleportBackToWarpzoneBeginning_obj/teleportBackToWarpzoneBeginning_obj.yy",},"order":0,},
     {"id":{"name":"crawlerFireAttack_spr","path":"sprites/crawlerFireAttack_spr/crawlerFireAttack_spr.yy",},"order":2,},
     {"id":{"name":"bulletDualBarettas_spr","path":"sprites/bulletDualBarettas_spr/bulletDualBarettas_spr.yy",},"order":20,},
