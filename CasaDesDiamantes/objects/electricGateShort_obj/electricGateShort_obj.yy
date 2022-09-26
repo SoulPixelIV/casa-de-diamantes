@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "electricGateShort_obj",
   "spriteId": {
     "name": "electricGateShort_spr",
     "path": "sprites/electricGateShort_spr/electricGateShort_spr.yy",
@@ -25,11 +28,11 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
   ],
   "properties": [
-    {"varType":1,"value":"0","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":null,"multiselect":false,"filters":[
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"moveDirection","varType":1,"value":"0","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":null,"multiselect":false,"filters":[
         "GMTileSet",
         "GMSprite",
         "GMSound",
@@ -40,16 +43,12 @@
         "GMTimeLine",
         "GMObject",
         "GMRoom",
-      ],"resourceVersion":"1.0","name":"moveDirection","tags":[],"resourceType":"GMObjectProperty",},
-    {"varType":3,"value":"0","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"resetAfterDeath","tags":[],"resourceType":"GMObjectProperty",},
+      ],},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"resetAfterDeath","varType":3,"value":"0","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],},
   ],
   "overriddenProperties": [],
   "parent": {
     "name": "Gates",
     "path": "folders/Objects/Gates.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "electricGateShort_obj",
-  "tags": [],
-  "resourceType": "GMObject",
 }

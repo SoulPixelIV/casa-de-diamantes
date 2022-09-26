@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "minecartRail3_obj",
   "spriteId": {
     "name": "minecartRail3_spr",
     "path": "sprites/minecartRail3_spr/minecartRail3_spr.yy",
@@ -28,8 +31,4 @@
     "name": "Decoration",
     "path": "folders/Objects/Decoration.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "minecartRail3_obj",
-  "tags": [],
-  "resourceType": "GMObject",
 }

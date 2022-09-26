@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "doorDecorative_obj",
   "spriteId": {
     "name": "doorDecorative_spr",
     "path": "sprites/doorDecorative_spr/doorDecorative_spr.yy",
@@ -28,8 +31,4 @@
     "name": "Decoration",
     "path": "folders/Objects/Decoration.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "doorDecorative_obj",
-  "tags": [],
-  "resourceType": "GMObject",
 }

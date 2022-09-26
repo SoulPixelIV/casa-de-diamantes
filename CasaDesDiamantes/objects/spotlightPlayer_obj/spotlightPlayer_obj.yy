@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "spotlightPlayer_obj",
   "spriteId": null,
   "solid": false,
   "visible": true,
@@ -22,22 +25,18 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [
-    {"propertyId":{"name":"Light_Type","path":"objects/obj_light/obj_light.yy",},"objectId":{"name":"obj_light","path":"objects/obj_light/obj_light.yy",},"value":"\"Point Light\"","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
-    {"propertyId":{"name":"Light_Color","path":"objects/obj_light/obj_light.yy",},"objectId":{"name":"obj_light","path":"objects/obj_light/obj_light.yy",},"value":"$FFFFFFFF","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
-    {"propertyId":{"name":"Light_Range","path":"objects/obj_light/obj_light.yy",},"objectId":{"name":"obj_light","path":"objects/obj_light/obj_light.yy",},"value":"75","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
-    {"propertyId":{"name":"Light_Intensity","path":"objects/obj_light/obj_light.yy",},"objectId":{"name":"obj_light","path":"objects/obj_light/obj_light.yy",},"value":"3","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
-    {"propertyId":{"name":"Light_Shadow_Length","path":"objects/obj_light/obj_light.yy",},"objectId":{"name":"obj_light","path":"objects/obj_light/obj_light.yy",},"value":"400","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"Light_Type","path":"objects/obj_light/obj_light.yy",},"objectId":{"name":"obj_light","path":"objects/obj_light/obj_light.yy",},"value":"\"Point Light\"",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"Light_Color","path":"objects/obj_light/obj_light.yy",},"objectId":{"name":"obj_light","path":"objects/obj_light/obj_light.yy",},"value":"$FFFFFFFF",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"Light_Range","path":"objects/obj_light/obj_light.yy",},"objectId":{"name":"obj_light","path":"objects/obj_light/obj_light.yy",},"value":"75",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"Light_Intensity","path":"objects/obj_light/obj_light.yy",},"objectId":{"name":"obj_light","path":"objects/obj_light/obj_light.yy",},"value":"3",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"Light_Shadow_Length","path":"objects/obj_light/obj_light.yy",},"objectId":{"name":"obj_light","path":"objects/obj_light/obj_light.yy",},"value":"400",},
   ],
   "parent": {
     "name": "Lighting",
     "path": "folders/Objects/Lighting.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spotlightPlayer_obj",
-  "tags": [],
-  "resourceType": "GMObject",
 }

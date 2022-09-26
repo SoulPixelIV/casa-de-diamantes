@@ -1,10 +1,14 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "colliderNoShadow_obj",
   "spriteId": {
     "name": "colliderBox_spr",
     "path": "sprites/colliderBox_spr/colliderBox_spr.yy",
   },
   "solid": true,
   "visible": true,
+  "managed": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
@@ -24,7 +28,7 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],
@@ -32,8 +36,4 @@
     "name": "Colliders",
     "path": "folders/Objects/Colliders.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "colliderNoShadow_obj",
-  "tags": [],
-  "resourceType": "GMObject",
 }

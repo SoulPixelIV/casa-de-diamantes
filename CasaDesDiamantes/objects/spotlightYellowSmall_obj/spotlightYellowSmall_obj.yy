@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "spotlightYellowSmall_obj",
   "spriteId": null,
   "solid": false,
   "visible": true,
@@ -22,25 +25,21 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
   ],
   "properties": [
-    {"varType":3,"value":"True","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"flicker","tags":[],"resourceType":"GMObjectProperty",},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"flicker","varType":3,"value":"True","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],},
   ],
   "overriddenProperties": [
-    {"propertyId":{"name":"Light_Type","path":"objects/obj_light/obj_light.yy",},"objectId":{"name":"obj_light","path":"objects/obj_light/obj_light.yy",},"value":"\"Point Light\"","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
-    {"propertyId":{"name":"Light_Color","path":"objects/obj_light/obj_light.yy",},"objectId":{"name":"obj_light","path":"objects/obj_light/obj_light.yy",},"value":"$FFB2FFFF","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
-    {"propertyId":{"name":"Light_Range","path":"objects/obj_light/obj_light.yy",},"objectId":{"name":"obj_light","path":"objects/obj_light/obj_light.yy",},"value":"85","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
-    {"propertyId":{"name":"Light_Intensity","path":"objects/obj_light/obj_light.yy",},"objectId":{"name":"obj_light","path":"objects/obj_light/obj_light.yy",},"value":"3","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
-    {"propertyId":{"name":"Light_Shadow_Length","path":"objects/obj_light/obj_light.yy",},"objectId":{"name":"obj_light","path":"objects/obj_light/obj_light.yy",},"value":"1","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"Light_Type","path":"objects/obj_light/obj_light.yy",},"objectId":{"name":"obj_light","path":"objects/obj_light/obj_light.yy",},"value":"\"Point Light\"",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"Light_Color","path":"objects/obj_light/obj_light.yy",},"objectId":{"name":"obj_light","path":"objects/obj_light/obj_light.yy",},"value":"$FFB2FFFF",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"Light_Range","path":"objects/obj_light/obj_light.yy",},"objectId":{"name":"obj_light","path":"objects/obj_light/obj_light.yy",},"value":"85",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"Light_Intensity","path":"objects/obj_light/obj_light.yy",},"objectId":{"name":"obj_light","path":"objects/obj_light/obj_light.yy",},"value":"3",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"Light_Shadow_Length","path":"objects/obj_light/obj_light.yy",},"objectId":{"name":"obj_light","path":"objects/obj_light/obj_light.yy",},"value":"1",},
   ],
   "parent": {
     "name": "Lighting",
     "path": "folders/Objects/Lighting.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spotlightYellowSmall_obj",
-  "tags": [],
-  "resourceType": "GMObject",
 }

@@ -46,4 +46,8 @@ if (room == level_Casino) {
 	if (!audio_is_playing(casinoTheme)) {
 		audio_play_sound(casinoTheme, 1, true);
 	}
+} else {
+	if (audio_is_playing(casinoTheme)) {
+		audio_stop_sound(casinoTheme);
+	}
 }

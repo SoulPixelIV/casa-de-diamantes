@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "Spawn2_obj",
   "spriteId": {
     "name": "bluecubex16_spr",
     "path": "sprites/bluecubex16_spr/bluecubex16_spr.yy",
@@ -28,8 +31,4 @@
     "name": "Spawns",
     "path": "folders/Objects/Spawns.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "Spawn2_obj",
-  "tags": [],
-  "resourceType": "GMObject",
 }

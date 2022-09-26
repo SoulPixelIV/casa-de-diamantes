@@ -722,6 +722,7 @@
     {"id":{"name":"polygon_create","path":"scripts/polygon_create/polygon_create.yy",},"order":1,},
     {"id":{"name":"goldenElevatorDirtyBackground_spr","path":"sprites/goldenElevatorDirtyBackground_spr/goldenElevatorDirtyBackground_spr.yy",},"order":85,},
     {"id":{"name":"rocketman_spr","path":"sprites/rocketman_spr/rocketman_spr.yy",},"order":0,},
+    {"id":{"name":"level3","path":"rooms/level3/level3.yy",},"order":3,},
     {"id":{"name":"polygon_from_instance","path":"scripts/polygon_from_instance/polygon_from_instance.yy",},"order":2,},
     {"id":{"name":"ammoPackShotgunPickup_obj","path":"objects/ammoPackShotgunPickup_obj/ammoPackShotgunPickup_obj.yy",},"order":5,},
     {"id":{"name":"hazardPlayerOnly_obj","path":"objects/hazardPlayerOnly_obj/hazardPlayerOnly_obj.yy",},"order":9,},
@@ -1309,8 +1310,8 @@
   },
   "RoomOrderNodes": [
     {"roomId":{"name":"loadVars","path":"rooms/loadVars/loadVars.yy",},},
-    {"roomId":{"name":"level2","path":"rooms/level2/level2.yy",},},
     {"roomId":{"name":"mainmenu","path":"rooms/mainmenu/mainmenu.yy",},},
+    {"roomId":{"name":"level2","path":"rooms/level2/level2.yy",},},
     {"roomId":{"name":"level1","path":"rooms/level1/level1.yy",},},
     {"roomId":{"name":"level0","path":"rooms/level0/level0.yy",},},
     {"roomId":{"name":"level_Casino","path":"rooms/level_Casino/level_Casino.yy",},},
@@ -1345,6 +1346,7 @@
     {"roomId":{"name":"testRoom3","path":"rooms/testRoom3/testRoom3.yy",},},
     {"roomId":{"name":"testRoom2","path":"rooms/testRoom2/testRoom2.yy",},},
     {"roomId":{"name":"level2_Casino","path":"rooms/level2_Casino/level2_Casino.yy",},},
+    {"roomId":{"name":"level3","path":"rooms/level3/level3.yy",},},
   ],
   "Folders": [
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Animations","folderPath":"folders/Animations.yy","order":28,},
