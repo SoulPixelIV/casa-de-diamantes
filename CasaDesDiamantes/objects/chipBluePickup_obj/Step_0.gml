@@ -1,6 +1,7 @@
 x += horspeed * global.dt / 3;
 y += verspeed * global.dt / 3;
 
+invTimer -= global.dt;
 despawnTimer -= global.dt;
 if (despawnTimer < 0)
 {
@@ -62,13 +63,15 @@ if (!place_free(x + horspeed, y))
 else
 {
 	//Move towards player
-	if (distance_to_object(player_obj) < 32)
-	{
-		move_towards_point(player_obj.x, player_obj.y, global.dt);
-	}
-	else
-	{
-		speed = 0;
+	if (invTimer < 0) {
+		if (distance_to_object(player_obj) < 32)
+		{
+			move_towards_point(player_obj.x, player_obj.y, global.dt);
+		}
+		else
+		{
+			speed = 0;
+		}
 	}
 }
 

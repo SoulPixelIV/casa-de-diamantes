@@ -1264,6 +1264,7 @@
     {"id":{"name":"Script74","path":"scripts/Script74/Script74.yy",},"order":27,},
     {"id":{"name":"SmokingBottomWall_spr","path":"sprites/SmokingBottomWall_spr/SmokingBottomWall_spr.yy",},"order":5,},
     {"id":{"name":"rewardsign_spr","path":"sprites/rewardsign_spr/rewardsign_spr.yy",},"order":37,},
+    {"id":{"name":"casinoTheme_msc","path":"sounds/casinoTheme_msc/casinoTheme_msc.yy",},"order":59,},
     {"id":{"name":"SF0_SF1_teleporter","path":"objects/SF0_SF1_teleporter/SF0_SF1_teleporter.yy",},"order":8,},
     {"id":{"name":"warpzoneTeleportPoint1_obj","path":"objects/warpzoneTeleportPoint1_obj/warpzoneTeleportPoint1_obj.yy",},"order":2,},
     {"id":{"name":"shaderTestEnvironment","path":"rooms/shaderTestEnvironment/shaderTestEnvironment.yy",},"order":4,},

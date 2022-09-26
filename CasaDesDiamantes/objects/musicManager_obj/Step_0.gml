@@ -1,4 +1,4 @@
-silence -= global.dt;
+//silence -= global.dt;
 
 if (silence < 0)
 {
@@ -38,5 +38,12 @@ with (player_obj)
 				silence = 100;
 			}
 		}
+	}
+}
+
+//Casino Theme
+if (room == level_Casino) {
+	if (!audio_is_playing(casinoTheme)) {
+		audio_play_sound(casinoTheme, 1, true);
 	}
 }
