@@ -51,3 +51,14 @@ if (room == level_Casino) {
 		audio_stop_sound(casinoTheme);
 	}
 }
+
+//Casino Low Pass Theme
+if (room == blackjackTable) {
+	if (!audio_is_playing(casinoThemeLowPass)) {
+		audio_play_sound(casinoThemeLowPass, 1, true);
+	}
+} else {
+	if (audio_is_playing(casinoThemeLowPass)) {
+		audio_stop_sound(casinoThemeLowPass);
+	}
+}

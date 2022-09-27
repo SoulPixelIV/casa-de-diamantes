@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "plagueDoor_obj",
   "spriteId": {
-    "name": "circleCross_spr",
-    "path": "sprites/circleCross_spr/circleCross_spr.yy",
+    "name": "purplestripes_spr",
+    "path": "sprites/purplestripes_spr/purplestripes_spr.yy",
   },
   "solid": false,
   "visible": false,

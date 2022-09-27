@@ -1,10 +1,14 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "elevatorCheckpoint2_obj",
   "spriteId": {
     "name": "debugBlock32x_spr",
     "path": "sprites/debugBlock32x_spr/debugBlock32x_spr.yy",
   },
   "solid": false,
   "visible": false,
+  "managed": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": null,
@@ -27,8 +31,4 @@
     "name": "Elevator",
     "path": "folders/Objects/Elevator.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "elevatorCheckpoint2_obj",
-  "tags": [],
-  "resourceType": "GMObject",
 }
