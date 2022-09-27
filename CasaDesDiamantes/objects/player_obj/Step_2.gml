@@ -1,4 +1,3 @@
-/*
 //###OutsideSolid###
 if (place_free(x, y))
 {
@@ -9,5 +8,5 @@ else
 {
 	x = savePosX;
 	y = savePosY;
-	verSpeed = 0;
+	//verSpeed = 0;
 }
