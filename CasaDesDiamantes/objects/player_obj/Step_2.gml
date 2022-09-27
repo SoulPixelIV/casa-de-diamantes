@@ -1,3 +1,4 @@
+/*
 //###OutsideSolid###
 if (place_free(x, y))
 {

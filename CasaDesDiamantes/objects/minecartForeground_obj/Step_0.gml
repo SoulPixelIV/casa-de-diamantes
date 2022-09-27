@@ -1,7 +1,6 @@
 if (inMinecart)
 {
 	player_obj.movement = false;
-	player_obj.invincible = true;
 	player_obj.colliding = false;
 	
 	if (!camera_obj.follow = camera_obj) {
