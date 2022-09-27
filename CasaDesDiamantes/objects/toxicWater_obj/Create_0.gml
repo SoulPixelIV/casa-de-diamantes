@@ -1,4 +1,4 @@
-damage = 9999999;
+damage = 25;
 knockback = 0;
 damageCollision = true;
 animationSpeed = 0.5;
