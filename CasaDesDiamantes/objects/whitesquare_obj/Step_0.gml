@@ -9,6 +9,7 @@ if (image_alpha > 0.95) {
 
 if (delayBeforeTeleport < 0) {
 	part_emitter_destroy_all(global.partSystem);
+	audio_stop_all();
 	instance_destroy(player_obj);
 	room_goto(level1);
 }

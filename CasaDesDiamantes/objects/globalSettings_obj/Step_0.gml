@@ -56,6 +56,7 @@ if (keyboard_check_pressed(vk_f2))
 if (keyboard_check_pressed(vk_f3))
 {
 	part_emitter_destroy_all(global.partSystem);
+	audio_stop_all();
 	instance_destroy(player_obj);
 	room_goto(levelSelect);
 }
