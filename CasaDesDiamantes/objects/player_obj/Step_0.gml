@@ -835,7 +835,7 @@ if (!isZombie && !deathActivated)
 			with (player_obj)
 			{
 				startShotCooldown = false;
-				if (key_shoot && !reloading && movement)
+				if (key_shoot && !reloading)
 				{
 					if (!onLadder || onLadder && verspeed == 0)
 					{
