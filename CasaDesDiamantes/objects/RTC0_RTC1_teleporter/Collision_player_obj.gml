@@ -5,6 +5,6 @@ if (instance_exists(player_obj))
 		part_emitter_destroy_all(global.partSystem);
 		audio_stop_all();
 		instance_destroy(player_obj);
-		room_goto(level1_RoadToCasino);
+		room_goto(level3);
 	}
 }
