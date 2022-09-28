@@ -862,11 +862,11 @@ if (showInfOverlay && !showedInf)
 	{
 		if (infOverlayX > 0)
 		{
-			infOverlayX -= 16;
+			infOverlayX -= 16 * global.dt;
 		}
 		if (infOverlayY < yScreenSize - 1)
 		{
-			infOverlayY += 9;
+			infOverlayY += 9 * global.dt;
 		}
 		if (infOverlayX < 0)
 		{
@@ -886,8 +886,8 @@ if (showInfOverlay && !showedInf)
 	
 	if (InfOverlayTimer < 0)
 	{
-		infOverlayX -= 16;
-		infOverlayY += 9;
+		infOverlayX -= 16 * global.dt;
+		infOverlayY += 9 * global.dt;
 		
 		if (infOverlayX < -xScreenSize)
 		{
