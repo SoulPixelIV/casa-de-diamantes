@@ -4,6 +4,7 @@ if (inMinecart)
 	player_obj.colliding = false;
 	player_obj.isDashing = false;
 	player_obj.dashroll = false;
+	player_obj.activateTrailEffect = true;
 	
 	if (!camera_obj.follow = camera_obj) {
 		camera_obj.follow = self;
@@ -125,6 +126,7 @@ if (instance_exists(player_obj))
 	{
 		inMinecart = false;
 		player_obj.grounded = false;
+		player_obj.activateTrailEffect = false;
 		player_obj.movement = true;
 		player_obj.invincible = false;
 		player_obj.horspeed += horspeed;

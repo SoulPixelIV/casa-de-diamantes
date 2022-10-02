@@ -60,6 +60,7 @@ shotgunArmCurvedY = 0;
 
 //Effects
 enemySlowMotionTimer = 100;
+activateTrailEffect = false;
 trailDensity = 1;
 shotZoomTimer = 8.75;
 walljumpDustTimer = 12;
