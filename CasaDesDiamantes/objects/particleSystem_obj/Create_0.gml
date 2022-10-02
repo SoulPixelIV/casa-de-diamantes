@@ -15,7 +15,7 @@ part_type_gravity(global.fireSparkPart, 0.0001, 270);
 global.toxicPart = part_type_create();
 part_type_sprite(global.toxicPart, toxicCloud_spr, true, true, true);
 part_type_life(global.toxicPart, 300, 700);
-part_type_size(global.toxicPart, 0.4, 1, 0, 0);
+part_type_size(global.toxicPart, 0.8, 4, 0, 0);
 part_type_orientation(global.toxicPart, 0, 359, 0.02, 0, 1);
 part_type_direction(global.toxicPart, 0, 359, 0, 3);
 part_type_gravity(global.toxicPart, 0.0001, 270);

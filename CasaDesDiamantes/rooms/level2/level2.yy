@@ -178,7 +178,6 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_21C357CF","properties":[],"isDnd":false,"objectId":{"name":"chainlamp_obj","path":"objects/chainlamp_obj/chainlamp_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1024.0,"y":928.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_729296AF","properties":[],"isDnd":false,"objectId":{"name":"chainlamp_obj","path":"objects/chainlamp_obj/chainlamp_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":992.0,"y":960.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_640B44D9","properties":[],"isDnd":false,"objectId":{"name":"chain_obj","path":"objects/chain_obj/chain_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":992.0,"y":925.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_29116153","properties":[],"isDnd":false,"objectId":{"name":"minecartForeground_obj","path":"objects/minecartForeground_obj/minecartForeground_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1696.0,"y":1120.0,},
       ],"visible":true,"depth":900,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Instances","instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_52CB5452","properties":[],"isDnd":false,"objectId":{"name":"Spawn1_obj","path":"objects/Spawn1_obj/Spawn1_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1248.0,"y":448.0,},
@@ -828,7 +827,6 @@
     {"name":"inst_4C463862","path":"rooms/level2/level2.yy",},
     {"name":"inst_1F9749F9","path":"rooms/level2/level2.yy",},
     {"name":"inst_21C6FE7A","path":"rooms/level2/level2.yy",},
-    {"name":"inst_29116153","path":"rooms/level2/level2.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
