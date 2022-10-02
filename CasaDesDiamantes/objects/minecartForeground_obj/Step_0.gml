@@ -2,6 +2,8 @@ if (inMinecart)
 {
 	player_obj.movement = false;
 	player_obj.colliding = false;
+	player_obj.isDashing = false;
+	player_obj.dashroll = false;
 	
 	if (!camera_obj.follow = camera_obj) {
 		camera_obj.follow = self;

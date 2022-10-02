@@ -364,7 +364,7 @@ draw_sprite(blackborder_spr, 0, x, (y + yScreenSize / 2) + 42 - blackbordersPos)
 
 if (!noHUD && instance_exists(player_obj))
 {
-	draw_set_font(global.optixFont);
+	//draw_set_font(global.optixFont);
 	draw_set_color(c_white);
 	//Debug
 	updateFPS -= global.dt;
@@ -787,7 +787,7 @@ if (deathDelayTimer < 0)
 			deathFadeIn = 1;
 		}
 		draw_set_alpha(deathFadeIn);
-		draw_set_font(global.optixFont);
+		//draw_set_font(global.optixFont);
 		draw_sprite_ext(death_spr, 0, x, (y - yScreenSize / 4), 1.5, 1.5, 0, -1, deathFadeIn);
 		draw_set_color(c_white);
 		draw_text((x + xScreenSize / 4) - 48, (y + yScreenSize / 4) + 32, "Syringes Left: " + string(global.syringes))

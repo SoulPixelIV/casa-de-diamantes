@@ -13,7 +13,7 @@ else
 
 if (distance_to_object(player_obj) < 32 && used)
 {
-	draw_set_font(global.optixFont);
+	//draw_set_font(global.optixFont);
 	draw_set_color(c_white);
 	draw_text(x - 32, y - 86, "Checkpoint!");
 }
