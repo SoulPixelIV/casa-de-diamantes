@@ -4,6 +4,9 @@ function dash_scr() {
 
 	player_obj.verspeed = -player_obj.jumpStrength / 2.5;
 	
+	player_obj.boosterLockedMovement = false;
+	player_obj.boosterLockedMovementTimer = player_obj.boosterLockedMovementTimerSave;
+	
 	if (player_obj.horspeed < 0)
 	{
 		player_obj.horspeed -= player_obj.dashSpeed;

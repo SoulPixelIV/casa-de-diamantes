@@ -58,7 +58,11 @@ if (movement && !wallJumping && !isDashing)
 		{
 			if (horspeed < movSpeed)
 			{
-				horspeed += global.dt / 10;
+				if (!boosterLockedMovement) {
+					horspeed += global.dt / 10;
+				} else {
+					horspeed += 0;
+				}
 			}
 			if (horspeed > movSpeed - 0.2 && horspeed < movSpeed + 0.2)
 			{
@@ -78,7 +82,11 @@ if (movement && !wallJumping && !isDashing)
 			}
 			if (horspeed > -movSpeed)
 			{
-				horspeed -= global.dt / 10;
+				if (!boosterLockedMovement) {
+					horspeed -= global.dt / 10;
+				} else {
+					horspeed -= 0;
+				}
 			}
 
 			if (!audio_is_playing(walk1_snd) && !audio_is_playing(walk2_snd) && grounded)
@@ -101,6 +109,16 @@ if (movement && !wallJumping && !isDashing)
 			}
 		}
 	}
+}
+
+//Booster Locked Movement
+if (boosterLockedMovement) {
+	boosterLockedMovementTimer -= global.dt;
+}
+
+if (boosterLockedMovementTimer < 0 || (grounded && boosterLockedMovementTimer < (boosterLockedMovementTimerSave - (boosterLockedMovementTimer / 8)))) {
+	boosterLockedMovement = false;
+	boosterLockedMovementTimer = boosterLockedMovementTimerSave;
 }
 
 //Moving Platform

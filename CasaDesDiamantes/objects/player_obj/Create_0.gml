@@ -41,6 +41,8 @@ fallJumpSafety = 25; //Coyote Time
 flipUsed = false;
 onMovingPlatform = false;
 onBooster = false;
+boosterLockedMovement = false;
+boosterLockedMovementTimer = 50;
 
 //Action
 hp = 100;
@@ -180,6 +182,7 @@ trailDensitySave = trailDensity;
 jumpspinAimTimerSave = jumpspinAimTimer;
 crouchRollTimerSave = crouchRollTimer;
 dashStartDelaySave = dashStartDelay;
+boosterLockedMovementTimerSave = boosterLockedMovementTimer;
 
 //Accessories
 theta = 0;

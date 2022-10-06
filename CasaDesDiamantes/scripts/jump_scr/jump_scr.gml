@@ -67,6 +67,8 @@ function jump_scr() {
 	player_obj.crouchslide = false;
 	player_obj.dashjumpbuffer = false;
 	player_obj.dashStartDelay = player_obj.dashStartDelaySave;
+	player_obj.boosterLockedMovement = false;
+	player_obj.boosterLockedMovementTimer = player_obj.boosterLockedMovementTimerSave;
 	if (!player_obj.isDashing)
 	{
 		player_obj.image_index = 0;
