@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMTileSet",
+  "resourceVersion": "1.0",
+  "name": "forestTiles",
   "spriteId": {
     "name": "forestTiles_spr",
     "path": "sprites/forestTiles_spr/forestTiles_spr.yy",
@@ -19,7 +22,7 @@
   "out_columns": 8,
   "tile_count": 64,
   "autoTileSets": [
-    {"tiles":[
+    {"resourceType":"GMAutoTileSet","resourceVersion":"1.0","name":"autotile_2","tiles":[
         0,
         0,
         0,
@@ -67,7 +70,7 @@
         0,
         0,
         0,
-      ],"closed_edge":false,"resourceVersion":"1.0","name":"autotile_2","tags":[],"resourceType":"GMAutoTileSet",},
+      ],"closed_edge":false,},
   ],
   "tileAnimationFrames": [],
   "tileAnimationSpeed": 15.0,
@@ -149,8 +152,4 @@
     "name": "Tile Sets",
     "path": "folders/Sprites/Tile Sets.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "forestTiles",
-  "tags": [],
-  "resourceType": "GMTileSet",
 }

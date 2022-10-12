@@ -806,6 +806,7 @@
     {"id":{"name":"blackjacktable_obj","path":"objects/blackjacktable_obj/blackjacktable_obj.yy",},"order":82,},
     {"id":{"name":"blackjackConverter_scr","path":"scripts/blackjackConverter_scr/blackjackConverter_scr.yy",},"order":17,},
     {"id":{"name":"Spawn3_obj","path":"objects/Spawn3_obj/Spawn3_obj.yy",},"order":2,},
+    {"id":{"name":"GMWwise","path":"extensions/GMWwise/GMWwise.yy",},"order":0,},
     {"id":{"name":"smokingTop_spr","path":"sprites/smokingTop_spr/smokingTop_spr.yy",},"order":0,},
     {"id":{"name":"crawler_spr","path":"sprites/crawler_spr/crawler_spr.yy",},"order":0,},
     {"id":{"name":"roseRoot_spr","path":"sprites/roseRoot_spr/roseRoot_spr.yy",},"order":50,},
@@ -1391,6 +1392,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Bodyparts","folderPath":"folders/Enemies/Enemy Sprites/ZombieGirl/Bodyparts.yy","order":8,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"ZombieGirlWounded","folderPath":"folders/Enemies/Enemy Sprites/ZombieGirlWounded.yy","order":0,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"ZombieSoldier","folderPath":"folders/Enemies/Enemy Sprites/ZombieSoldier.yy","order":2,},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Extensions","folderPath":"folders/Extensions.yy","order":29,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Global System Objects","folderPath":"folders/Global System Objects.yy","order":0,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Helper Objects","folderPath":"folders/Helper Objects.yy","order":27,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Hitboxes","folderPath":"folders/Hitboxes.yy","order":15,},
@@ -1495,7 +1497,7 @@
     {"resourceType":"GMAudioGroup","resourceVersion":"1.3","name":"audiogroup_default","targets":-1,},
   ],
   "TextureGroups": [
-    {"resourceType":"GMTextureGroup","resourceVersion":"1.3","name":"Default","isScaled":true,"compressFormat":"bz2","autocrop":true,"border":2,"mipsToGenerate":0,"groupParent":null,"targets":-1,},
+    {"resourceType":"GMTextureGroup","resourceVersion":"1.3","name":"Default","isScaled":true,"compressFormat":"bz2","loadType":"default","directory":"","autocrop":true,"border":2,"mipsToGenerate":0,"groupParent":null,"targets":-1,},
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"gmlive-server.n","CopyToMask":-1,"filePath":"datafiles/GMLive",},
@@ -1509,6 +1511,6 @@
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"Casino3DFilledMarquee.ttf","CopyToMask":-1,"filePath":"datafiles",},
   ],
   "MetaData": {
-    "IDEVersion": "2022.8.1.37",
+    "IDEVersion": "2022.9.0.49",
   },
 }

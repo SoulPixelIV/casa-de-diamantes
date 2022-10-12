@@ -1,0 +1,9 @@
+{
+  "extensionId": {
+    "name": "GMWwise",
+    "path": "extensions/GMWwise/GMWwise.yy"
+  },
+  "resourceVersion": "1.0",
+  "resourceType": "GMExtensionConfigSet",
+  "configurables": null
+}
