@@ -991,7 +991,7 @@ if (!isZombie && !deathActivated)
 					{
 						shooting_scr("bow");
 						audio_stop_sound(bowReadying_snd);
-						audio_play_sound(bowShot_snd, 1, false);
+						//audio_play_sound(bowShot_snd, 1, false);
 						audio_play_sound(arrowShotWind_snd, 0.9, false);
 						bowReadying = false;
 						bowReadyingImage = 0;

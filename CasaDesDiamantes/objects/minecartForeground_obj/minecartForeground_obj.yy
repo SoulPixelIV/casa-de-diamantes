@@ -12,8 +12,8 @@
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "deactivate_obj",
-    "path": "objects/deactivate_obj/deactivate_obj.yy",
+    "name": "minecartAll_obj",
+    "path": "objects/minecartAll_obj/minecartAll_obj.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,

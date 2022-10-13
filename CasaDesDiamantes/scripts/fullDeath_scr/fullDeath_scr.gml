@@ -22,6 +22,13 @@ function fullDeath_scr() {
 			instance_destroy();
 		}
 	}
+	//Destroy every Minecart
+	if (instance_exists(minecartAll_obj)) {
+		with (minecartAll_obj) {
+			instance_destroy();
+		}
+	}
+	
 	instance_activate_object(zombieGirlWounded_obj);
 	with (zombieGirlWounded_obj) {
 		if (variable_instance_exists(id, "dontRespawn")) {
@@ -39,6 +46,11 @@ function fullDeath_scr() {
 	with (enemyHiddenSpawnpoint_obj)
 	{
 		createEnemy = true;
+	}
+	
+	//Reset Minecarts
+	with (minecartHiddenSpawnpoint_obj) {
+		createMinecart = true;
 	}
 	
 	//Reset Pickups
