@@ -237,5 +237,3 @@ else
 		}
 	}
 }
-
-shader_reset();

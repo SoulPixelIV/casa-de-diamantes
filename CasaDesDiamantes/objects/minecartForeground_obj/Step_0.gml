@@ -81,6 +81,18 @@ if (verspeed < 14 && inMinecart)
 	verspeed -= gravityStrength * global.dt;
 }
 
+//Player Trail
+if (horspeed != 0) {
+	trailDensity -= global.dt;
+}
+if (trailDensity < 0) {
+	var trail = instance_create_layer(x, y, "Instances", minecartTrail_obj);
+	trail.sprite_index = sprite_index;
+	trail.image_speed = 0;
+	trail.image_index = image_index
+	trailDensity = trailDensitySave;
+}
+
 //Collision
 //horspeed
 if (!place_free(x + horspeed * global.dt, y))

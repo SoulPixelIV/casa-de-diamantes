@@ -1050,6 +1050,7 @@
     {"id":{"name":"tutorialShiftKeyPromt_obj","path":"objects/tutorialShiftKeyPromt_obj/tutorialShiftKeyPromt_obj.yy",},"order":51,},
     {"id":{"name":"sensoryTremblerBottom_spr","path":"sprites/sensoryTremblerBottom_spr/sensoryTremblerBottom_spr.yy",},"order":4,},
     {"id":{"name":"beretDashReverse_spr","path":"sprites/beretDashReverse_spr/beretDashReverse_spr.yy",},"order":4,},
+    {"id":{"name":"minecartTrail_obj","path":"objects/minecartTrail_obj/minecartTrail_obj.yy",},"order":10,},
     {"id":{"name":"brokenStreetTile_obj","path":"objects/brokenStreetTile_obj/brokenStreetTile_obj.yy",},"order":3,},
     {"id":{"name":"glitterTopStatic_obj","path":"objects/glitterTopStatic_obj/glitterTopStatic_obj.yy",},"order":53,},
     {"id":{"name":"blackJackCalc_obj","path":"objects/blackJackCalc_obj/blackJackCalc_obj.yy",},"order":5,},
