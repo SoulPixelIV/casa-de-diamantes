@@ -2,20 +2,6 @@
 
 setWave = false;
 
-//Start Soundtrack
-if (place_meeting(x, y, player_obj)) {
-	if (!playedMusic) {
-		currMusic = audio_play_sound(choose(track1_msc), 1, true);
-		audio_sound_gain(currMusic, 0, 0);
-		audio_sound_gain(currMusic, 1, 5000);
-	}
-	playedMusic = true;
-} else {
-	if (currMusic != noone) {
-		audio_sound_gain(currMusic, 0, 5000);
-	}
-}
-
 //Spawn wounded enemies
 woundedSpawntimer -= global.dt;
 

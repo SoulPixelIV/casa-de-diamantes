@@ -1186,7 +1186,7 @@
     "PhysicsWorldPixToMetres": 0.1,
   },
   "parent": {
-    "name": "ACT 1",
-    "path": "folders/Levels/Main/ACT 1.yy",
+    "name": "LEGACY",
+    "path": "folders/Levels/LEGACY.yy",
   },
 }
