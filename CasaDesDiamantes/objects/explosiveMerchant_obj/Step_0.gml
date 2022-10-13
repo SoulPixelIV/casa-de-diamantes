@@ -27,6 +27,12 @@ if (instance_exists(player_obj)) {
 				}
 			}
 		}
+		
+		//Check if player is right behind enemy
+		if (distance_to_point(player_obj.x, player_obj.y) < 18) {
+			deaggroTimer = deaggroTimerSave;
+			aggroTimer -= global.dt;
+		}
 	}
 	else
 	{
