@@ -370,11 +370,31 @@ if (movement && !isZombie)
 			setWallDir = false;
 		}
 	}
+	
+	//Let go of Wall
 	if (huggingWall && key_down)
 	{
 		huggingWall = false;
 		setWallDir = false;
 	}
+	
+	if (huggingWall) {
+		if (image_xscale == 1 && key_right) {
+			otherDirWallHugTimer -= global.dt;
+		}
+		if (image_xscale == -1 && key_left) {
+			otherDirWallHugTimer -= global.dt;
+		}
+		if (!key_right && !key_left) {
+			otherDirWallHugTimer = otherDirWallHugTimerSave;
+		}
+		if (otherDirWallHugTimer < 0) {
+			huggingWall = false;
+			setWallDir = false;
+			otherDirWallHugTimer = otherDirWallHugTimerSave;
+		}
+	}
+	
 	if (huggingWall)
 	{
 		flip = false;

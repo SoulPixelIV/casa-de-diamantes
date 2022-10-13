@@ -11,6 +11,7 @@ movSpeedZombie = 0.54;
 dashSpeed = 0.65; //1.23 before rework
 wallJumps = 3;
 wallJumpsMax = wallJumps;
+otherDirWallHugTimer = 24; //Amount of time player needs to hold other direction key to let go of wall
 dashDelay = 300;
 dashInvincibility = 120;
 dashInvincibilityOn = false;
@@ -186,6 +187,7 @@ crouchRollTimerSave = crouchRollTimer;
 dashStartDelaySave = dashStartDelay;
 boosterLockedMovementTimerSave = boosterLockedMovementTimer;
 dashStandupDelaySave = dashStandupDelay;
+otherDirWallHugTimerSave = otherDirWallHugTimer;
 
 //Accessories
 theta = 0;
