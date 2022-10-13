@@ -9,6 +9,12 @@ function fullDeath_scr() {
 	player_obj.deathActivated = false;
 	player_obj.radiation = 0;
 	
+	player_obj.grounded = false;
+	player_obj.activateTrailEffect = false;
+	player_obj.invincible = false;
+	camera_obj.follow = player_obj;
+	player_obj.colliding = true;
+	
 	//Destroy every Enemy
 	instance_activate_object(enemy_obj);
 	with (enemy_obj)
