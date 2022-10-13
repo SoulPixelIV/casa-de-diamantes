@@ -15,6 +15,8 @@ dashDelay = 300;
 dashInvincibility = 120;
 dashInvincibilityOn = false;
 dashStartDelay = 50;
+dashStandupDelay = 13; //Delay until jump gets recognized after dash has started
+dashStandupDelayStart = false;
 crouchRollTimer = 55; //120 before rework
 dashroll = false;
 dashjumpbuffer = false;
@@ -183,6 +185,7 @@ jumpspinAimTimerSave = jumpspinAimTimer;
 crouchRollTimerSave = crouchRollTimer;
 dashStartDelaySave = dashStartDelay;
 boosterLockedMovementTimerSave = boosterLockedMovementTimer;
+dashStandupDelaySave = dashStandupDelay;
 
 //Accessories
 theta = 0;

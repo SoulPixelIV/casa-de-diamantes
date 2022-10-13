@@ -153,13 +153,27 @@ if (movement && !isZombie)
 	if (grounded && key_jump || fallJumpSafety > 0 && key_jump || isDashing && key_jump || onBooster && key_jump && jumpType != 2)
 	{
 		if (!dashroll) {
-			jump_scr();
+			if (!isDashing) {
+				jump_scr();
+			} else {
+				dashStandupDelayStart = true;
+			}
 		} else {
 			dashjumpbuffer = true;
 		}
 	}
 	//Dash Jump Buffer
 	if (dashjumpbuffer && !dashroll) {
+		jump_scr();
+	}
+	
+	//Dash Standup Delay
+	if (dashStandupDelayStart) {
+		dashStandupDelay -= global.dt;
+	}
+	if (dashStandupDelay < 0) {
+		dashStandupDelayStart = false;
+		dashStandupDelay = dashStandupDelaySave;
 		jump_scr();
 	}
 	
