@@ -469,7 +469,7 @@ if (grounded)
 //Invincibility
 if (!movement)
 {
-	invincible = true;
+	//invincible = true;
 	horspeed = 0;
 	verspeed = 0;
 }
