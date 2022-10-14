@@ -10,7 +10,7 @@ if (distance_to_object(player_obj) < 32 && player_obj.key_up_pressed && !used)
 
 if (distance_to_object(player_obj) < 32)
 {
-	player_obj.lastCheckpoint = id;
+	global.lastCheckpoint = id;
 }
 
 if (active) {

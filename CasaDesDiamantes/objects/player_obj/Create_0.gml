@@ -53,7 +53,6 @@ hpOld = hp;
 zombieTimer = 1550;
 slowmoTimer = 260;
 damageCooldown = 200;
-lastCheckpoint = noone;
 jumpspinAim = true;
 jumpspinAimTimer = 70;
 shotgunX = 0;
@@ -147,6 +146,8 @@ spriteShotgun = shotgun_spr;
 //Debug
 forceSlowmo = false;
 
+key_jump = noone;
+key_shoot = noone;
 key_up_pressed = noone;
 key_down = noone;
 key_down_pressed = noone;
@@ -214,6 +215,14 @@ if (!instance_exists(spotlightPlayer_obj))
 instance_create_layer(x + 4 * currDir, y - 8, "Instances", playerBulletLine_obj);
 
 global.spawn = 0;
+
+//Check for Spawnpoint
+if (global.lastCheckpoint != noone) {
+	if (instance_exists(global.lastCheckpoint)) {
+		x = global.lastCheckpoint.x;
+		y = global.lastCheckpoint.y - 64;
+	}
+}
 
 gravityStrength = 0;
 dashDelay = 0;

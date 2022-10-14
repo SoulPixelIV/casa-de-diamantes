@@ -3,6 +3,7 @@
 global.spawn = 0;
 global.money = 0;
 global.syringes = 0;
+global.lastCheckpoint = noone;
 global.hasWarpzoneKey = false;
 global.key = false;
 global.scorepoints = 0;

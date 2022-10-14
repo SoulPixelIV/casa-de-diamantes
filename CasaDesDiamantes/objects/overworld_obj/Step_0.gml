@@ -35,7 +35,7 @@ if (keyboard_check_pressed(vk_enter) || gamepad_button_check_pressed(0, gp_face1
 			room_goto(level2);
 		break;
 		case 3:
-			room_goto(level3BROKEN);
+			room_goto(level3);
 		break;
 		case 4:
 			room_goto(level_Casino);

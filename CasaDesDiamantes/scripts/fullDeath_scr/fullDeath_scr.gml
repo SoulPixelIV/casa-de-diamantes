@@ -3,6 +3,8 @@ function fullDeath_scr() {
 	camera_obj.deathVignette = false;
 	camera_obj.noHUD = false;
 	camera_obj.drawInfectionText = false;
+	
+	/*
 	player_obj.movement = true;
 	player_obj.hp = 100;
 	player_obj.maxhp = 100;
@@ -12,7 +14,6 @@ function fullDeath_scr() {
 	player_obj.grounded = false;
 	player_obj.activateTrailEffect = false;
 	player_obj.invincible = false;
-	camera_obj.follow = player_obj;
 	player_obj.colliding = true;
 	
 	//Destroy every Enemy
@@ -144,18 +145,59 @@ function fullDeath_scr() {
 	{
 		used = false;
 	}
+	
+	*/
 
-	if (player_obj.lastCheckpoint != noone)
-	{
-		instance_activate_region((player_obj.lastCheckpoint.x - camera_obj.xScreenSize / 2) - 256, (player_obj.lastCheckpoint.y - 64 - camera_obj.yScreenSize / 2) - 256, camera_obj.xScreenSize + 512, camera_obj.yScreenSize + 512, true);
-		player_obj.x = player_obj.lastCheckpoint.x;
-		player_obj.y = player_obj.lastCheckpoint.y - 64;
-	}
+	//if (global.lastCheckpoint != noone)
+	//{
+		//instance_activate_region((global.lastCheckpoint.x - camera_obj.xScreenSize / 2) - 256, (global.lastCheckpoint.y - 64 - camera_obj.yScreenSize / 2) - 256, camera_obj.xScreenSize + 512, camera_obj.yScreenSize + 512, true);
+		
+		//player_obj.x = global.l
+		
+		//x = 2;
+		//y = 2;
+		//Check if spawn is not solid
+		/*
+		var i = 0;
+		for (i = 0; i < 76; i++) {
+			with (player_obj) {
+				if (place_free(global.lastCheckpoint.x, (global.lastCheckpoint.y - 64) - i)) {
+					x = global.lastCheckpoint.x;
+					y = global.lastCheckpoint.y - 64;
+					break;
+				}
+			
+				if (i == 75) {
+					x = global.lastCheckpoint.x;
+					y = (global.lastCheckpoint.y - 64) - i;
+					break;
+				}
+			}
+		}
+		*/
+	//}
+	/*
 	else
 	{
 		instance_activate_region((player_obj.firstPosX - camera_obj.xScreenSize / 2) - 256, (player_obj.firstPosY - camera_obj.yScreenSize / 2) - 256, camera_obj.xScreenSize + 512, camera_obj.yScreenSize + 512, true);
-		player_obj.x = player_obj.firstPosX;
-		player_obj.y = player_obj.firstPosY;
+		
+		//Check if spawn is not solid
+		var i = 0;
+		for (i = 0; i < 76; i++) {
+			with (player_obj) {
+				if (place_free(Spawn1_obj.x, (Spawn1_obj.y - 64) - i)) {
+					x = Spawn1_obj.x;
+					y = Spawn1_obj.y - 64;
+					break;
+				}
+			
+				if (i == 75) {
+					x = Spawn1_obj.x;
+					y = (Spawn1_obj.y - 64) - i;
+					break;
+				}
+			}
+		}
 	}
 	
 	player_obj.plagueTransformation = false;
@@ -169,4 +211,5 @@ function fullDeath_scr() {
 	camera_obj.infOverlayY = 0;
 	camera_obj.infOverlayLocked = false;
 	camera_obj.deathInProg = false;
+	*/
 }

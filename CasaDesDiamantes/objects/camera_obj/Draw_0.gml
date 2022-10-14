@@ -776,6 +776,7 @@ if (drawInfectionText)
 if (deathDelayTimer < 0)
 {
 	deathInProg = true;
+	//REVIVE SCREEN
 	if (!finalDeath)
 	{
 		if (deathFadeIn < 0.95)
@@ -801,6 +802,7 @@ if (deathDelayTimer < 0)
 		draw_set_halign(fa_left);
 	}
 	else
+	//FULL DEATH
 	{
 		draw_set_color(c_black);
 		draw_rectangle(300 - (x - xScreenSize / 2), 225 - (y - yScreenSize / 2), 1600 + (x - xScreenSize / 2), 1150 + (y - yScreenSize / 2), false);
@@ -821,6 +823,7 @@ if (deathDelayTimer < 0)
 			deathScreenIsDark = false;
 			respawnSetScreenBrightness = true;
 			finalDeathScreenTimer = finalDeathScreenTimerSave;
+			room_restart();
 			fullDeath_scr();
 			drawInfectionText = false;
 			finalDeath = false;
