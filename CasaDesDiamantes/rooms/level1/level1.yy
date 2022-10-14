@@ -306,7 +306,7 @@
       ],"visible":true,"depth":2600,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
   ],
   "inheritLayers": false,
-  "creationCodeFile": "${project_dir}/rooms/level0_RoadToCasino/RoomCreationCode.gml",
+  "creationCodeFile": "${project_dir}/rooms/level1/RoomCreationCode.gml",
   "inheritCode": false,
   "instanceCreationOrder": [
     {"name":"inst_2A8B1492_1_1","path":"rooms/level1/level1.yy",},
