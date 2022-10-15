@@ -299,7 +299,7 @@ if (isDashing && !onLadder)
 				//Check for Crouch Cancel while turning around
 				if (image_xscale != crouchDir && !dashjumpbuffer) {
 					crouchDirSet = false;
-					jump_scr();
+					//jump_scr();
 				}			
 			}
 		
