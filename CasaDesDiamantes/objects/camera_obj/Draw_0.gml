@@ -617,7 +617,7 @@ if (!noHUD && instance_exists(player_obj))
 	{
 		if (wheelSpeed > 2)
 		{
-			wheelSpeed -= global.dt / 10;
+			wheelSpeed -= global.dt / 2;
 		}
 		if (wheelSpeed < 2 && wheelSpeed >= 0)
 		{
