@@ -854,7 +854,7 @@
     "PhysicsWorldPixToMetres": 0.1,
   },
   "parent": {
-    "name": "ACT 1",
-    "path": "folders/Levels/Main/ACT 1.yy",
+    "name": "ACT 1 (Paredia)",
+    "path": "folders/Levels/Main/ACT 1 (Paredia).yy",
   },
 }
