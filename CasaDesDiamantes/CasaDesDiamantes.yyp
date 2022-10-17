@@ -23,6 +23,7 @@
     {"id":{"name":"enemySpawnerFlying_obj","path":"objects/enemySpawnerFlying_obj/enemySpawnerFlying_obj.yy",},"order":84,},
     {"id":{"name":"foregroundTiles_spr","path":"sprites/foregroundTiles_spr/foregroundTiles_spr.yy",},"order":6,},
     {"id":{"name":"cityBackground_spr","path":"sprites/cityBackground_spr/cityBackground_spr.yy",},"order":7,},
+    {"id":{"name":"goldenGateOpening_spr","path":"sprites/goldenGateOpening_spr/goldenGateOpening_spr.yy",},"order":157,},
     {"id":{"name":"explosiveBarrel_obj","path":"objects/explosiveBarrel_obj/explosiveBarrel_obj.yy",},"order":0,},
     {"id":{"name":"cityBackground2_spr","path":"sprites/cityBackground2_spr/cityBackground2_spr.yy",},"order":8,},
     {"id":{"name":"voidBackground_spr","path":"sprites/voidBackground_spr/voidBackground_spr.yy",},"order":9,},
