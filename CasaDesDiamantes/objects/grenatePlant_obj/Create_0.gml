@@ -1,4 +1,4 @@
-timer = 800;
+timer = 400;
 horspeed = 0;
 verspeed = 0;
 movSpeed = 4.3;
