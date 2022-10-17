@@ -24,6 +24,7 @@ key_shoot = mouse_check_button_pressed(mb_left) || gamepad_button_check_pressed(
 key_shoot_hold = mouse_check_button(mb_left) || gamepad_button_check(4, gp_shoulderrb) || gamepad_button_check(0, gp_shoulderrb);
 key_shoot_release = mouse_check_button_released(mb_left) || gamepad_button_check_released(4, gp_shoulderrb) || gamepad_button_check_released(0, gp_shoulderrb);
 key_reload = mouse_check_button_pressed(mb_right) || gamepad_button_check_pressed(4, gp_face2) || gamepad_button_check_pressed(0, gp_face2);
+key_lastWeapon = keyboard_check_pressed(ord("Q"));
 key_jump = keyboard_check_pressed(vk_space) || gamepad_button_check_pressed(4, gp_face1) || gamepad_button_check_pressed(0, gp_face1);
 key_jump_hold = keyboard_check(vk_space) || gamepad_button_check(4, gp_face1) || gamepad_button_check(0, gp_face1);
 key_jump_release = keyboard_check_released(vk_space) || gamepad_button_check_released(4, gp_face1) || gamepad_button_check_released(0, gp_face1);
@@ -1146,6 +1147,22 @@ with (gameManager_obj)
 //Weapon Switching
 if (!isZombie && !reloading)
 {
+	//Change to other tier weapon with "Q"
+	if (key_lastWeapon) {
+		if (global.currentWeapon == gameManager_obj.pickedWeapon.dualBarettas && global.unlockedWeapon[2]) {
+			pickWeapon_scr(2);
+		} else
+		if (global.currentWeapon == gameManager_obj.pickedWeapon.shotgun && global.unlockedWeapon[1]) {
+			pickWeapon_scr(1);
+		} else
+		if (global.currentWeapon == gameManager_obj.pickedWeapon.bow && global.unlockedWeapon[5]) {
+			pickWeapon_scr(5);
+		} else
+		if (global.currentWeapon == gameManager_obj.pickedWeapon.silencedMP && global.unlockedWeapon[4]) {
+			pickWeapon_scr(4);
+		}
+	}
+	
 	if (global.unlockedWeapon[1] || global.unlockedWeapon[2])
 	{
 		scrollWeapons = [0, 0];
