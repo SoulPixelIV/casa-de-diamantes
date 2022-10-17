@@ -837,6 +837,7 @@
     {"id":{"name":"ceilingCheck_obj","path":"objects/ceilingCheck_obj/ceilingCheck_obj.yy",},"order":16,},
     {"id":{"name":"neonBig_fnt","path":"fonts/neonBig_fnt/neonBig_fnt.yy",},"order":2,},
     {"id":{"name":"neonHuge_fnt","path":"fonts/neonHuge_fnt/neonHuge_fnt.yy",},"order":3,},
+    {"id":{"name":"slotblockOff_spr","path":"sprites/slotblockOff_spr/slotblockOff_spr.yy",},"order":154,},
     {"id":{"name":"particles","path":"objects/particles/particles.yy",},"order":0,},
     {"id":{"name":"shopWorker_obj","path":"objects/shopWorker_obj/shopWorker_obj.yy",},"order":4,},
     {"id":{"name":"ad_spr","path":"sprites/ad_spr/ad_spr.yy",},"order":41,},

@@ -52,7 +52,7 @@ if (used && !spawned && spinDone)
 		}
 	}
 	spawned = true;
-	sprite_index = slotblock_spr;
+	sprite_index = slotblockOff_spr;
 	animationSpeed = 1;
 }
 
