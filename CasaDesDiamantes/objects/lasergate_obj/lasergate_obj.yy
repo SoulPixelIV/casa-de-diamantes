@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "lasergate_obj",
   "spriteId": {
-    "name": "lasergate_spr",
-    "path": "sprites/lasergate_spr/lasergate_spr.yy",
+    "name": "goldenGate_spr",
+    "path": "sprites/goldenGate_spr/goldenGate_spr.yy",
   },
   "solid": false,
   "visible": true,

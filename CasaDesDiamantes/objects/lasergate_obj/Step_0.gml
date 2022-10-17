@@ -2,12 +2,7 @@ if (open)
 {
 	if (distance_to_object(player_obj) > 64)
 	{
-		sprite_index = lasergate_spr;
-		if (!spawnedLight)
-		{
-			lightRed = instance_create_layer(x, y + 40, "GraphicsLayer", spotlightRed_obj);
-			spawnedLight = true;
-		}
+		sprite_index = goldenGateOpen_spr;
 		if (!createdHitbox)
 		{
 			collider = instance_create_layer(x - 8, y, "TileCollider", colliderAlwaysOn_obj);
@@ -15,24 +10,15 @@ if (open)
 			collider.image_xscale = 0.5;
 			createdHitbox = true;
 		}
-		if (!spawnedPart)
-		{
-			sparkEmitter = part_emitter_create(global.partSystem);
-			part_emitter_region(global.partSystem, sparkEmitter, x - 4, x + 4, y + 80, y + 78, ps_shape_ellipse, ps_distr_gaussian);
-
-			part_emitter_stream(global.partSystem, sparkEmitter, global.lasergatePart, -5);
-			spawnedPart = true;
-		}
+	}
+	
+	if (image_index > image_number - 1) {
+		instance_destroy();
 	}
 }
 else
 {
-	sprite_index = lasergateOff_spr;
-	if (spawnedLight)
-	{
-		instance_destroy(lightRed);
-		spawnedLight = false;
-	}
+	sprite_index = goldenGate_spr;
 	if (createdHitbox)
 	{
 		if (instance_exists(collider))
@@ -41,6 +27,4 @@ else
 			createdHitbox = false;
 		}
 	}
-	part_emitter_destroy(global.partSystem, sparkEmitter);
-	spawnedPart = false;
 }
