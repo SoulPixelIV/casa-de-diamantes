@@ -76,7 +76,7 @@ if (horspeed < -1.6)
 }
 
 //Gravity
-if (verspeed < 14 && inMinecart)
+if (verspeed < 14)
 {
 	verspeed -= gravityStrength * global.dt;
 }
