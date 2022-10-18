@@ -1,10 +1,14 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "casinoCeilingLight_obj",
   "spriteId": {
     "name": "casinoCeilingLight_spr",
     "path": "sprites/casinoCeilingLight_spr/casinoCeilingLight_spr.yy",
   },
   "solid": false,
   "visible": true,
+  "managed": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": null,
@@ -27,8 +31,4 @@
     "name": "Decoration",
     "path": "folders/Objects/Decoration.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "casinoCeilingLight_obj",
-  "tags": [],
-  "resourceType": "GMObject",
 }

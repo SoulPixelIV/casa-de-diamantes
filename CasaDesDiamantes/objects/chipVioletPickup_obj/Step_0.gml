@@ -1,6 +1,3 @@
-x += horspeed * global.dt / 3;
-y += verspeed * global.dt / 3;
-
 invTimer -= global.dt;
 despawnTimer -= global.dt;
 if (despawnTimer < 0)
@@ -83,3 +80,6 @@ if (!place_free(x, y + verspeed))
 //Animation
 image_speed = 0;
 image_index += global.dt / 30;
+
+x += horspeed * global.dt / 3;
+y += verspeed * global.dt / 3;

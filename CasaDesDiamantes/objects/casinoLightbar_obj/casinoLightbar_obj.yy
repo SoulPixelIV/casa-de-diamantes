@@ -1,10 +1,14 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "casinoLightbar_obj",
   "spriteId": {
     "name": "casinoLightbar_spr",
     "path": "sprites/casinoLightbar_spr/casinoLightbar_spr.yy",
   },
   "solid": false,
   "visible": true,
+  "managed": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": null,
@@ -27,8 +31,4 @@
     "name": "Decoration",
     "path": "folders/Objects/Decoration.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "casinoLightbar_obj",
-  "tags": [],
-  "resourceType": "GMObject",
 }
