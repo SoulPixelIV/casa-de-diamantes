@@ -179,7 +179,7 @@ if (movement && !isZombie)
 	}
 	
 	//Dash
-	if (key_shift && !isDashing && dashDelay < 0)
+	if (key_shift && !isDashing && dashDelay < 0 && !huggingWall)
 	{
 		dash_scr();
 		dashInvincibilityOn = true;
