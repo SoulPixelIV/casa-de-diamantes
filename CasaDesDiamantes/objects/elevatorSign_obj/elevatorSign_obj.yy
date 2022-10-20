@@ -1,10 +1,14 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "elevatorSign_obj",
   "spriteId": {
     "name": "elevatorSign_spr",
     "path": "sprites/elevatorSign_spr/elevatorSign_spr.yy",
   },
   "solid": false,
   "visible": true,
+  "managed": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": null,
@@ -27,8 +31,4 @@
     "name": "Objects",
     "path": "folders/Objects.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "elevatorSign_obj",
-  "tags": [],
-  "resourceType": "GMObject",
 }

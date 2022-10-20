@@ -287,7 +287,7 @@
     "PhysicsWorldPixToMetres": 0.1,
   },
   "parent": {
-    "name": "Hub",
-    "path": "folders/Levels/Main/Hub.yy",
+    "name": "LEGACY",
+    "path": "folders/Levels/LEGACY.yy",
   },
 }

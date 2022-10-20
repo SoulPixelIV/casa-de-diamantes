@@ -1,10 +1,7 @@
 {
-  "resourceType": "GMTileSet",
-  "resourceVersion": "1.0",
-  "name": "casinoTiles",
   "spriteId": {
-    "name": "casinoTiles_spr",
-    "path": "sprites/casinoTiles_spr/casinoTiles_spr.yy",
+    "name": "streetTiles_spr",
+    "path": "sprites/streetTiles_spr/streetTiles_spr.yy",
   },
   "tileWidth": 32,
   "tileHeight": 32,
@@ -22,7 +19,7 @@
   "out_columns": 8,
   "tile_count": 64,
   "autoTileSets": [
-    {"resourceType":"GMAutoTileSet","resourceVersion":"1.0","name":"autotile_2","tiles":[
+    {"tiles":[
         0,
         0,
         0,
@@ -70,7 +67,7 @@
         0,
         0,
         0,
-      ],"closed_edge":false,},
+      ],"closed_edge":false,"resourceVersion":"1.0","name":"autotile_2","tags":[],"resourceType":"GMAutoTileSet",},
   ],
   "tileAnimationFrames": [],
   "tileAnimationSpeed": 15.0,
@@ -152,4 +149,8 @@
     "name": "Tile Sets",
     "path": "folders/Sprites/Tile Sets.yy",
   },
+  "resourceVersion": "1.0",
+  "name": "streetTiles",
+  "tags": [],
+  "resourceType": "GMTileSet",
 }

@@ -15,10 +15,10 @@ function jump_scr() {
 				var glittersnd = audio_play_sound(glitter_snd, 1, false);
 				audio_sound_pitch(glittersnd, random_range(0.9, 1.1));
 			}
-			partEmitter = part_emitter_create(global.partSystem);
-			part_emitter_region(global.partSystem, partEmitter, player_obj.x - 32, player_obj.x + 32, player_obj.y + 8, player_obj.y + 32, ps_shape_ellipse, ps_distr_linear);
-			part_emitter_burst(global.partSystem, partEmitter, global.playerPart, 20);
-			part_emitter_destroy(global.partSystem, partEmitter);
+			repeat(8)
+			{
+				instance_create_layer(player_obj.x + choose(-6, 6), player_obj.y + 26 + choose(-2, 2), "ForegroundObjects", dustParticle_obj);
+			}
 		}
 	}
 	//Dash Momentum after jump
@@ -54,10 +54,10 @@ function jump_scr() {
 		var glittersnd = audio_play_sound(glitter_snd, 1, false);
 		audio_sound_pitch(glittersnd, random_range(0.9, 1.1));
 	}
-	partEmitter = part_emitter_create(global.partSystem);
-	part_emitter_region(global.partSystem, partEmitter, player_obj.x - 32, player_obj.x + 32, player_obj.y - 4, player_obj.y + 12, ps_shape_ellipse, ps_distr_gaussian);
-	part_emitter_burst(global.partSystem, partEmitter, global.playerPart, 5);
-	part_emitter_destroy(global.partSystem, partEmitter);
+	repeat(8)
+	{
+		instance_create_layer(player_obj.x + choose(-6, 6), player_obj.y + 26 + choose(-2, 2), "ForegroundObjects", dustParticle_obj);
+	}
 	player_obj.jumping = true;
 	player_obj.onLadder = false;
 	player_obj.dashLastSpriteReached = false;

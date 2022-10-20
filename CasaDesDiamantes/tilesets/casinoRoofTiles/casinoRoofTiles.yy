@@ -1,10 +1,10 @@
 {
   "resourceType": "GMTileSet",
   "resourceVersion": "1.0",
-  "name": "casinoTiles",
+  "name": "casinoRoofTiles",
   "spriteId": {
-    "name": "casinoTiles_spr",
-    "path": "sprites/casinoTiles_spr/casinoTiles_spr.yy",
+    "name": "casinoRoofTiles_spr",
+    "path": "sprites/casinoRoofTiles_spr/casinoRoofTiles_spr.yy",
   },
   "tileWidth": 32,
   "tileHeight": 32,
