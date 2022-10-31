@@ -1,4 +1,4 @@
-animationSpeed = 0.75;
+animationSpeed = 1;
 verspeed = 0;
 speedVer = 0.035;
 dir = 0;
