@@ -243,7 +243,7 @@
     "PhysicsWorldPixToMetres": 0.1,
   },
   "parent": {
-    "name": "SenzelaForest",
-    "path": "folders/Levels/Main/SenzelaForest.yy",
+    "name": "LEGACY",
+    "path": "folders/Levels/LEGACY.yy",
   },
 }
