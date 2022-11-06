@@ -520,6 +520,7 @@
     {"id":{"name":"cavernBackground_spr","path":"sprites/cavernBackground_spr/cavernBackground_spr.yy",},"order":0,},
     {"id":{"name":"redOceanBackground_spr","path":"sprites/redOceanBackground_spr/redOceanBackground_spr.yy",},"order":1,},
     {"id":{"name":"woodplankSmall2_spr","path":"sprites/woodplankSmall2_spr/woodplankSmall2_spr.yy",},"order":1,},
+    {"id":{"name":"dualBarettasDrop_obj","path":"objects/dualBarettasDrop_obj/dualBarettasDrop_obj.yy",},"order":25,},
     {"id":{"name":"waterReflectionRed_spr","path":"sprites/waterReflectionRed_spr/waterReflectionRed_spr.yy",},"order":2,},
     {"id":{"name":"barrelTrigger_obj","path":"objects/barrelTrigger_obj/barrelTrigger_obj.yy",},"order":0,},
     {"id":{"name":"redparticleRedSpawner_obj","path":"objects/redparticleRedSpawner_obj/redparticleRedSpawner_obj.yy",},"order":47,},
