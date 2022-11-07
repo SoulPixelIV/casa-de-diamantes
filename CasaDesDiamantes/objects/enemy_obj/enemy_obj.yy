@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "enemy_obj",
   "spriteId": null,
   "solid": false,
   "visible": true,
@@ -28,8 +31,4 @@
     "name": "Parent Objects",
     "path": "folders/Other + Legacy/Parent Objects.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "enemy_obj",
-  "tags": [],
-  "resourceType": "GMObject",
 }

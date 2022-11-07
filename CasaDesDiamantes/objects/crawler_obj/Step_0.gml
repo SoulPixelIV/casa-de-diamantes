@@ -150,6 +150,7 @@ if (aggro && movement)
 	}
 	
 	//Stage Jumping
+	/*
 	if (instance_exists(player_obj) && !jumpToNewDest && aggro && !attackInProg1) {
 		checkForPlayerPosTimer -= global.dt;
 		
@@ -222,6 +223,7 @@ if (aggro && movement)
 			jumpToNewDest = false;
 		}
 	}
+	*/
 }
 
 //Gravity

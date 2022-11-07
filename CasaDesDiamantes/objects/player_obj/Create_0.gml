@@ -3,7 +3,7 @@
 //Movement
 horspeed = 0;
 verspeed = 0;
-horspeedMax = 2.4;
+horspeedMax = 2;
 verspeedMax = 8;
 movSpeed = 0.82;
 movSpeedSave = movSpeed;

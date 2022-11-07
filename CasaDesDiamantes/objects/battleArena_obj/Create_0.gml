@@ -15,7 +15,7 @@ enemyList[1] = noone;
 playedMusic = false;
 currMusic = noone;
 
-checkEnemycountTimer = 100;
+checkEnemycountTimer = 20;
 checkEnemycountTimerSave = checkEnemycountTimer;
 woundedSpawntimerSave = woundedSpawntimer;
 
