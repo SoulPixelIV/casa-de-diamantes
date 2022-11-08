@@ -209,12 +209,6 @@ else
 		//draw_sprite_ext(playerShotgun_spr, 0, x + ((2 - spinWeaponPos) * currDir) * changePos, y - 4, 1, -currDir, dirCursor, selCol, image_alpha);
 	}
 		
-	//SNIPER
-	if (global.currentWeapon == gameManager_obj.pickedWeapon.sniper)
-	{
-		//draw_sprite_ext(playerSniper_spr, 0, x + ((2 - spinWeaponPos) * currDir) * changePos, y - 4, 1, -currDir, dirCursor, selCol, image_alpha);
-	}
-		
 	//BOW
 	if (global.currentWeapon == gameManager_obj.pickedWeapon.bow)
 	{

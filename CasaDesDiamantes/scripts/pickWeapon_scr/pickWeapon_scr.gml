@@ -1,6 +1,6 @@
 function pickWeapon_scr(argument0) {
 	
-	if (argument0 == 0 && global.currentWeapon != gameManager_obj.pickedWeapon.pistol || argument0 == 1 && global.currentWeapon != gameManager_obj.pickedWeapon.dualBarettas || argument0 == 2 && global.currentWeapon != gameManager_obj.pickedWeapon.shotgun || argument0 == 3 && global.currentWeapon != gameManager_obj.pickedWeapon.sniper && argument0 == 5 && global.currentWeapon != gameManager_obj.pickedWeapon.silencedMP)
+	if (argument0 == 0 && global.currentWeapon != gameManager_obj.pickedWeapon.pistol || argument0 == 1 && global.currentWeapon != gameManager_obj.pickedWeapon.dualBarettas || argument0 == 2 && global.currentWeapon != gameManager_obj.pickedWeapon.shotgun || argument0 == 3 && global.currentWeapon != gameManager_obj.pickedWeapon.silencedMP || argument0 == 4 && global.currentWeapon != gameManager_obj.pickedWeapon.bow)
 	{
 		audio_play_sound(pickup_snd, 1, false);
 	}
@@ -20,17 +20,13 @@ function pickWeapon_scr(argument0) {
 			global.unlockedWeapon[2] = true;
 			break;
 		case 3:
-			global.currentWeapon = gameManager_obj.pickedWeapon.sniper;
+			global.currentWeapon = gameManager_obj.pickedWeapon.silencedMP;
 			global.unlockedWeapon[3] = true;
 			break;
 		case 4:
 			global.currentWeapon = gameManager_obj.pickedWeapon.bow;
 			global.unlockedWeapon[4] = true;
-			break;
-		case 5:
-			global.currentWeapon = gameManager_obj.pickedWeapon.silencedMP;
-			global.unlockedWeapon[5] = true;
-			break;
+			break;	
 	}
 	player_obj.unarmed = false;
 	player_obj.slowmo = false;

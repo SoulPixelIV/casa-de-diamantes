@@ -749,13 +749,6 @@ if (!isZombie && !deathActivated)
 				}
 			}
 		
-			//SNIPER
-			//#########LEGACY##########
-			if (global.currentWeapon == gameManager_obj.pickedWeapon.sniper)
-			{
-				draw_sprite_ext(playerSniper_spr, -1, x + ((2) * currDir) * changePos, y - 4, 1, -currDir, dirCursor, -1, image_alpha);
-			}
-		
 			//BOW
 			if (global.currentWeapon == gameManager_obj.pickedWeapon.bow)
 			{

@@ -603,9 +603,9 @@ if (!noHUD && instance_exists(player_obj))
 		{
 			draw_text(x, y + (yScreenSize / 3), "Shotgun");
 		}
-		if (global.currentWeapon == gameManager_obj.pickedWeapon.sniper)
+		if (global.currentWeapon == gameManager_obj.pickedWeapon.silencedMP)
 		{
-			draw_text(x, y + (yScreenSize / 3), "Sniper Rifle");
+			draw_text(x, y + (yScreenSize / 3), "Silenced MP");
 		}
 		if (global.currentWeapon == gameManager_obj.pickedWeapon.bow)
 		{

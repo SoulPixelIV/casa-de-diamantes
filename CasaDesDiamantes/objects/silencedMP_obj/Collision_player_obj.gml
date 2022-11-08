@@ -1,10 +1,10 @@
 /// @description Pickup
 
-if (global.silencedMPAmmo < global.silencedMPAmmoMax || global.unlockedWeapon[5] = false)
+if (global.silencedMPAmmo < global.silencedMPAmmoMax || global.unlockedWeapon[3] = false)
 {
-	if (global.unlockedWeapon[5] == false)
+	if (global.unlockedWeapon[3] == false)
 	{
-		pickWeapon_scr(5);
+		pickWeapon_scr(3);
 	}
 	if (global.silencedMPAmmo <= global.silencedMPAmmoMax - 8)
 	{

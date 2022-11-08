@@ -90,7 +90,6 @@ enum pickedWeapon {
 	pistol,
 	dualBarettas,
 	shotgun,
-	sniper,
 	bow,
 	silencedMP
 	}
@@ -102,4 +101,3 @@ global.unlockedWeapon[1] = false;
 global.unlockedWeapon[2] = false;
 global.unlockedWeapon[3] = false;
 global.unlockedWeapon[4] = false;
-global.unlockedWeapon[5] = false;
