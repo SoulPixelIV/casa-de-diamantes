@@ -1,6 +1,10 @@
 function jump_scr() {
 	//Do not allow infinite roof jumps
-	if ((player_obj.isDashing && place_free(x, y - 34)) || !player_obj.isDashing) {
+	if (player_obj.crouchslide) {
+		player_obj.verspeed = -player_obj.jumpStrength / 1.4;
+		player_obj.jumpType = 1;
+	}
+	else if ((player_obj.isDashing && place_free(x, y - 34)) || !player_obj.isDashing) {
 		if (player_obj.grounded || (player_obj.fallJumpSafety > 0 && !player_obj.grounded))
 		{
 			player_obj.verspeed = -player_obj.jumpStrength;
