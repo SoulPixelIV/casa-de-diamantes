@@ -1639,7 +1639,7 @@ if (colliding)
 			{
 				if (place_free(x, y + (verspeed * global.dt)))
 				{
-					if ((player_obj.isDashing && place_free(x, y - 16)) || !player_obj.isDashing) {
+					if (place_free(x, y - 16)) {
 						huggingWall = true;
 					}
 				}
