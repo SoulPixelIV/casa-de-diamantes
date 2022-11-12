@@ -352,7 +352,7 @@ if (attackInProg1 || attackInProg2) {
 if (attackInProg1)
 {
 	//Attack Flashing
-	if (attack1PrepareTimer < 150 && attack1PrepareTimer > 0) {
+	if (attack1PrepareTimer < 50 && attack1PrepareTimer > 0) {
 		attackTintTimer -= global.dt;
 		if (attackTintTimer > 0) {
 			attackTint = true;
@@ -439,7 +439,7 @@ if (attackInProg1 && sprite_index == zombieBucketGirlAttack1Stop_spr && image_in
 if (attackInProg2)
 {
 	//Attack Flashing
-	if (attack2PrepareTimer < 150 && attack2PrepareTimer > 0) {
+	if (attack2PrepareTimer < 50 && attack2PrepareTimer > 0) {
 		attackTintTimer -= global.dt;
 		if (attackTintTimer > 0) {
 			attackTint = true;
