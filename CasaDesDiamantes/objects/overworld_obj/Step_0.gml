@@ -46,11 +46,11 @@ if (keyboard_check_pressed(vk_enter) || gamepad_button_check_pressed(0, gp_face1
 			global.lastCheckpoint = noone;
 		break;
 		case 5:
-			room_goto(level2_SenzelaForest);
+			room_goto(level4);
 			global.lastCheckpoint = noone;
 		break;
 		case 6:
-			room_goto(level3_SenzelaForest);
+			room_goto(level5A);
 			global.lastCheckpoint = noone;
 		break;
 		case 7:

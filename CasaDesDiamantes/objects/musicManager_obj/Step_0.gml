@@ -28,7 +28,7 @@ with (player_obj) {
 }
 
 //Casino Theme
-if (room == level_Casino) {
+if (room == level_Casino || room == mainmenu || room == levelSelect) {
 	if (!audio_is_playing(casinoTheme)) {
 		audio_play_sound(casinoTheme, 1, true);
 		if (audio_is_playing(combatTheme)) {

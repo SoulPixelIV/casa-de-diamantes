@@ -1,7 +1,3 @@
-/// @description Enemy AI
-
-y += verspeed * global.dt;
-
 if (!gotSpawned)
 {
 	spawn = instance_create_layer(x, y, "Instances", enemyHiddenSpawnpoint_obj);
@@ -58,7 +54,7 @@ if (open || (!open && firstFall))
 
 //###Death###
 if (hp <= 0)
-{
+{	
 	//Drop Item
 	if (instance_exists(player_obj))
 	{
@@ -165,3 +161,5 @@ if (!firstFall && !open)
 {
 	gravityStrength = 0;
 }
+
+y += verspeed * global.dt;
