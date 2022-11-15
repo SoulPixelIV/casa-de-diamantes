@@ -115,6 +115,22 @@ if (movement && !wallJumping && !isDashing)
 //Booster Locked Movement
 if (boosterLockedMovement) {
 	boosterLockedMovementTimer -= global.dt;
+	
+	if (isDashing && place_free(x, y + 24)) {
+		isDashing = false;
+		crouchDirSet = false;
+		dashLastSpriteReached = false;
+		dashDustEndTimer = dashDustEndTimerSave;
+		crouchRollTimer = crouchRollTimerSave;
+		dashroll = false;
+		crouchslide = false;
+		dashjumpbuffer = false;
+		dashStartDelay = dashStartDelaySave;
+		boosterLockedMovement = false;
+		boosterLockedMovementTimer = boosterLockedMovementTimerSave;
+			
+		reachedGroundOnce = false;
+	}
 }
 
 if (boosterLockedMovementTimer < 0 || (grounded && boosterLockedMovementTimer < (boosterLockedMovementTimerSave - (boosterLockedMovementTimer / 8)))) {
@@ -179,7 +195,7 @@ if (movement && !isZombie)
 	}
 	
 	//Dash
-	if (key_shift && !isDashing && dashDelay < 0 && !huggingWall)
+	if (key_shift && !isDashing && dashDelay < 0 && !huggingWall && !boosterLockedMovement)
 	{
 		dash_scr();
 		dashInvincibilityOn = true;
