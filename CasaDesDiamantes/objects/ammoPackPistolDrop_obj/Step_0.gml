@@ -8,6 +8,10 @@ if (distance_to_object(player_obj) < 32 && global.pistolAmmo != global.pistolAmm
 	follow = true;
 }
 
+if (global.pistolAmmo == global.pistolAmmoMax) {
+	follow = false;
+}
+
 if (follow) {
 	if (player_obj.x > x)
 	{
