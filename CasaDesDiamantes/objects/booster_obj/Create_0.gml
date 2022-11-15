@@ -6,7 +6,7 @@ boostDelaySave = boostDelay;
 
 if (spawnLight)
 {
-	bluelight = instance_create_layer(x, y, "GraphicsLayer", spotlightLightBlue_obj);
+	bluelight = instance_create_layer(x, y, "GraphicsLayer", spotlightPink_obj);
 }
 else
 {
