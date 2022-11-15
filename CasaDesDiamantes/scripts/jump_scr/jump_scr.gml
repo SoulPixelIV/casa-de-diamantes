@@ -64,6 +64,7 @@ function jump_scr() {
 	}
 	player_obj.jumping = true;
 	player_obj.onLadder = false;
+	player_obj.reachedGroundOnce = false;
 	player_obj.dashLastSpriteReached = false;
 	player_obj.dashDustEndTimer = player_obj.dashDustEndTimerSave;
 	player_obj.crouchRollTimer = player_obj.crouchRollTimerSave;

@@ -22,6 +22,7 @@ crouchRollTimer = 55; //120 before rework
 dashroll = false;
 dashjumpbuffer = false;
 crouchslide = false;
+reachedGroundOnce = false; //True if crouchroll was already activated for this specific dash
 crouchDir = 1;
 crouchDirSet = false;
 stillInAir = false;

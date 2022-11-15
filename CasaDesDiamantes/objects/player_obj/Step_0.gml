@@ -270,15 +270,31 @@ if (isDashing && !onLadder)
 	dashStartDelay -= global.dt;
 	//Hitbox height difference between dash sprite and crouch roll sprite
 	if (place_free(x, y + 1)) {
-		if (((dirCursor > 90 && dirCursor < 270) && image_xscale == 1) || ((dirCursor < 90 || dirCursor > 270) && image_xscale == -1))
-		{
-			sprite_index = playerDashReverse_spr;
+		if (!reachedGroundOnce) {
+			if (((dirCursor > 90 && dirCursor < 270) && image_xscale == 1) || ((dirCursor < 90 || dirCursor > 270) && image_xscale == -1))
+			{
+				sprite_index = playerDashReverse_spr;
+			}
+			else
+			{
+				sprite_index = playerDash_spr;
+			}
+		} else {
+			isDashing = false;
+			crouchDirSet = false;
+			dashLastSpriteReached = false;
+			dashDustEndTimer = dashDustEndTimerSave;
+			crouchRollTimer = crouchRollTimerSave;
+			dashroll = false;
+			crouchslide = false;
+			dashjumpbuffer = false;
+			dashStartDelay = dashStartDelaySave;
+			boosterLockedMovement = false;
+			boosterLockedMovementTimer = boosterLockedMovementTimerSave;
+			
+			reachedGroundOnce = false;
 		}
-		else
-		{
-			sprite_index = playerDash_spr;
-		}
-	} else {
+	} else {		
 		//Ignore inital grounded position on dash startup
 		if (dashStartDelay < 0) {
 			//Ground Roll in to Crouch
@@ -288,6 +304,8 @@ if (isDashing && !onLadder)
 			
 				dashroll = true;
 			} else {
+				reachedGroundOnce = true;
+							
 				sprite_index = playerCrouch_spr;
 				
 				crouchslide = true;
@@ -306,6 +324,7 @@ if (isDashing && !onLadder)
 				
 				//Cancel Crouch on Movement
 				if (key_left || key_right) {
+					reachedGroundOnce = false;
 					crouchDirSet = false;
 					jump_scr();
 				}
