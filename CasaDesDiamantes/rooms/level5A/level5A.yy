@@ -517,6 +517,8 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7D2F5EF9","properties":[],"isDnd":false,"objectId":{"name":"chipRedPickupStatic_obj","path":"objects/chipRedPickupStatic_obj/chipRedPickupStatic_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":4928.0,"y":2063.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_4E7705F9","properties":[],"isDnd":false,"objectId":{"name":"chipRedPickupStatic_obj","path":"objects/chipRedPickupStatic_obj/chipRedPickupStatic_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":4896.0,"y":2095.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_1BC957B8","properties":[],"isDnd":false,"objectId":{"name":"chipRedPickupStatic_obj","path":"objects/chipRedPickupStatic_obj/chipRedPickupStatic_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":4864.0,"y":2063.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_4E65CDFF","properties":[],"isDnd":false,"objectId":{"name":"dualBarettas_obj","path":"objects/dualBarettas_obj/dualBarettas_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1248.0,"y":1920.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_254F9BC8","properties":[],"isDnd":false,"objectId":{"name":"shotgun_obj","path":"objects/shotgun_obj/shotgun_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1312.0,"y":1920.0,},
       ],"visible":true,"depth":1000,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":"none","properties":[],},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"MidgroundObjects","instances":[],"visible":true,"depth":1100,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Tiles","tilesetId":{"name":"caveTilesOld","path":"tilesets/caveTilesOld/caveTilesOld.yy",},"x":0,"y":0,"tiles":{"TileDataFormat":1,"SerialiseWidth":282,"SerialiseHeight":94,"TileCompressedData":[
@@ -1137,6 +1139,8 @@
     {"name":"inst_402F36EF","path":"rooms/level5A/level5A.yy",},
     {"name":"inst_5080AF1E","path":"rooms/level5A/level5A.yy",},
     {"name":"inst_2B262ECF","path":"rooms/level5A/level5A.yy",},
+    {"name":"inst_4E65CDFF","path":"rooms/level5A/level5A.yy",},
+    {"name":"inst_254F9BC8","path":"rooms/level5A/level5A.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

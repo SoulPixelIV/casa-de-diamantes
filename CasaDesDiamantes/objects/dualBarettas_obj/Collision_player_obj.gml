@@ -1,6 +1,6 @@
 /// @description Pickup
 
-if (global.pistolAmmo < global.pistolAmmoMax || global.unlockedWeapon[1] = false)
+if (global.pistolAmmo < global.pistolAmmoMax || global.unlockedWeapon[1] == false)
 {
 	if (global.unlockedWeapon[1] == false)
 	{
