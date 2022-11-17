@@ -659,6 +659,14 @@ if (!noHUD && instance_exists(player_obj))
 		}
 	}
 	
+	//Door Messages
+	if (redDoorMessage) {
+		draw_set_color(make_color_rgb(255,215,0));
+		draw_set_halign(fa_center);
+		draw_text(x, (y + (yScreenSize / 3)) - 32, "You need the red keycard to unlock this door!");
+		draw_set_halign(fa_left);
+	}
+	
 	//Timer + Combo for Horde Mode
 	if (room == infiniteSpawn) {
 		draw_text(x - xScreenSize / 3.5, y - yScreenSize / 2.5, "TIME: " + string(global.timer));

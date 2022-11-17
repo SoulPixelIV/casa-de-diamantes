@@ -2,6 +2,8 @@ if (!open)
 {
 	if (distance_to_object(player_obj) > 64)
 	{
+		camera_obj.redDoorMessage = false;
+		
 		if (!gateDown) {
 			sprite_index = redKeyGateOpening_spr;
 			animationSpeed = 2;
@@ -18,6 +20,10 @@ if (!open)
 				collider.image_xscale = 0.5;
 				createdHitbox = true;
 			}
+		}
+	} else {
+		if (!global.keyRed) {
+			camera_obj.redDoorMessage = true;
 		}
 	}
 }

@@ -51,6 +51,7 @@ currFps = fps_real;
 currDeltatime = global.dt;
 newWeapon = false;
 newWeaponTimer = 200;
+redDoorMessage = false;
 
 cameraSpeed = 0.02;
 ycameraSpeed = 0.02;
