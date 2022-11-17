@@ -459,6 +459,7 @@
     {"id":{"name":"zombiegirlPiece_obj","path":"objects/zombiegirlPiece_obj/zombiegirlPiece_obj.yy",},"order":11,},
     {"id":{"name":"playerWall_spr","path":"sprites/playerWall_spr/playerWall_spr.yy",},"order":45,},
     {"id":{"name":"guiBorder_spr","path":"sprites/guiBorder_spr/guiBorder_spr.yy",},"order":45,},
+    {"id":{"name":"redKeycard_spr","path":"sprites/redKeycard_spr/redKeycard_spr.yy",},"order":81,},
     {"id":{"name":"slowmoStart_snd","path":"sounds/slowmoStart_snd/slowmoStart_snd.yy",},"order":3,},
     {"id":{"name":"cardTest_spr","path":"sprites/cardTest_spr/cardTest_spr.yy",},"order":15,},
     {"id":{"name":"ad_obj","path":"objects/ad_obj/ad_obj.yy",},"order":59,},

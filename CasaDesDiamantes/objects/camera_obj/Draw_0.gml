@@ -439,6 +439,11 @@ if (!noHUD && instance_exists(player_obj))
 		draw_sprite_ext(syringe_spr, -1, 32 + x - xScreenSize / 2, ((y - yScreenSize / 2) + 70) + 16 * i, 1, 1, 0, -1, 1);
 	}
 	
+	//Keycards
+	if (global.keyRed) {
+		draw_sprite_ext(redKeycard_spr, -1, (x + xScreenSize / 2) - 28, (y - yScreenSize / 2) + 32, 1, 1, 0, -1, 1);
+	}
+	
 	//Diamond Key
 	if (global.hasWarpzoneKey) {
 		if (global.syringes == 0) {
