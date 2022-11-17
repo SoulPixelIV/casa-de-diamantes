@@ -1,3 +1,5 @@
+lightrayRotation += global.dt / 3;
+
 if (dir == 0)
 {
 	y -= global.dt / 60;
