@@ -55,8 +55,8 @@ attack1PrepareTimer = 100; //Timer before snap attack begins
 attack1StopTimer = 50; //Timer after snap attack begins
 snapAttack = false; //Snap Attack is happening
 
-attack2PrepareTimer = 100; //Timer before snap attack begins
-attack2StopTimer = 50; //Timer after snap attack begins
+attack2PrepareTimer = 150; //Timer before snap attack begins
+attack2StopTimer = 100; //Timer after snap attack begins
 roseAttack = false; //Rose Attack is happening
 
 snapHitboxDelay = 35; //Delay until damage hitbox spawns

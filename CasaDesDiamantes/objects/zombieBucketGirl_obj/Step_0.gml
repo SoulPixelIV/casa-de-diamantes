@@ -317,20 +317,18 @@ if (aggro && !attackInProg1 && !attackInProg2)
 //Prepare Attack
 if (attackCooldown < 0)
 {
-	if (randAttack == 1)
-	{
-		sprite_index = zombieBucketGirlAttack1_spr;
-		movement = false;
-		attackInProg1 = true;
+	if (instance_exists(player_obj)) {
+		if (distance_to_object(player_obj) < 64) {
+			sprite_index = zombieBucketGirlAttack1_spr;
+			movement = false;
+			attackInProg1 = true;
+		} else {
+			sprite_index = zombieBucketGirlAttack2_spr;
+			movement = false;
+			attackInProg2 = true;
+		}
+		attackCooldown = attackCooldownSave;
 	}
-	else
-	{
-		sprite_index = zombieBucketGirlAttack2_spr;
-		movement = false;
-		attackInProg2 = true;
-	}
-	
-	attackCooldown = attackCooldownSave;
 }
 
 if (attackInProg1 || attackInProg2) {
@@ -439,7 +437,7 @@ if (attackInProg1 && sprite_index == zombieBucketGirlAttack1Stop_spr && image_in
 if (attackInProg2)
 {
 	//Attack Flashing
-	if (attack2PrepareTimer < 50 && attack2PrepareTimer > 0) {
+	if (attack2PrepareTimer < 75 && attack2PrepareTimer > 0) {
 		attackTintTimer -= global.dt;
 		if (attackTintTimer > 0) {
 			attackTint = true;
@@ -479,11 +477,11 @@ if (attackInProg2)
 }
 
 if (attackInProg2 && roseAttack && attack2StopTimer < 0) {
-	sprite_index = zombieBucketGirlAttack1Stop_spr;
+	sprite_index = zombieBucketGirlAttack2Stop_spr;
 }
 
 //END Attack 2
-if (attackInProg2 && sprite_index == zombieBucketGirlAttack1Stop_spr && image_index = image_number -1) {
+if (attackInProg2 && sprite_index == zombieBucketGirlAttack2Stop_spr && image_index = image_number -1) {
 	attackDelay = attackDelaySave;
 	attack2PrepareTimer = attack2PrepareTimerSave;
 	attack2StopTimer = attack2StopTimerSave;
