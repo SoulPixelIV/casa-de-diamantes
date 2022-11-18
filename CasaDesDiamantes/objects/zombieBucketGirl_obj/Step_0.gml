@@ -366,7 +366,8 @@ if (attackInProg1)
 		}
 	}
 	
-	if (attack1PrepareTimer < 0) {		
+	if (attack1PrepareTimer < 0) {
+		//Stop Flashing
 		attackTint = false;
 		attackTintTimer = attackTintTimerSave;
 		attackTintDelay = -1;
@@ -386,7 +387,7 @@ if (attackInProg1)
 				hitboxFlowerAttack = instance_create_layer(x + (42 * image_xscale), y, "Instances", damageHitbox_obj);
 				hitboxFlowerAttack.image_yscale = 3;
 				hitboxFlowerAttack.image_xscale = 2;
-				hitboxFlowerAttack.damage = damage;
+				hitboxFlowerAttack.damage = damageAttack1;
 				hitboxFlowerAttack.timer = 100;
 				
 				instance_create_layer(x + 10 * image_xscale, y - 10 * image_xscale, "ForegroundObjects", dustParticle_obj);
@@ -417,7 +418,7 @@ if (attackInProg1 && snapAttack && attack1StopTimer < 0) {
 }
 
 //END Attack 1
-if (attackInProg1 && sprite_index == zombieBucketGirlAttack1Stop_spr && image_index = image_number -1) {
+if (attackInProg1 && sprite_index == zombieBucketGirlAttack1Stop_spr && image_index == image_number -1) {
 	attackDelay = attackDelaySave;
 	attack1PrepareTimer = attack1PrepareTimerSave;
 	attack1StopTimer = attack1StopTimerSave;
@@ -453,7 +454,8 @@ if (attackInProg2)
 		}
 	}
 	
-	if (attack2PrepareTimer < 0) {		
+	if (attack2PrepareTimer < 0) {
+		//Stop Flashing
 		attackTint = false;
 		attackTintTimer = attackTintTimerSave;
 		attackTintDelay = -1;
@@ -481,11 +483,12 @@ if (attackInProg2 && roseAttack && attack2StopTimer < 0) {
 }
 
 //END Attack 2
-if (attackInProg2 && sprite_index == zombieBucketGirlAttack2Stop_spr && image_index = image_number -1) {
+if (attackInProg2 && sprite_index == zombieBucketGirlAttack2Stop_spr && image_index == image_number -1) {
 	attackDelay = attackDelaySave;
 	attack2PrepareTimer = attack2PrepareTimerSave;
 	attack2StopTimer = attack2StopTimerSave;
 	roseAttack = false;
+	switchedSprite = false;
 	attackInProg2 = false;
 	animationSpeed = 0.75;
 	sprite_index = zombieBucketGirl_spr;

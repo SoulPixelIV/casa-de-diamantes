@@ -7,7 +7,7 @@ attackDelay = 50;
 colliding = true;
 hitable = true;
 level = 2;
-damage = 0;
+damageAttack1 = 25;
 moneyDropMin = 3;
 moneyDropMax = 6;
 knockback = 0;
@@ -56,7 +56,7 @@ attack1StopTimer = 50; //Timer after snap attack begins
 snapAttack = false; //Snap Attack is happening
 
 attack2PrepareTimer = 150; //Timer before snap attack begins
-attack2StopTimer = 100; //Timer after snap attack begins
+attack2StopTimer = 125; //Timer after snap attack begins
 roseAttack = false; //Rose Attack is happening
 
 snapHitboxDelay = 35; //Delay until damage hitbox spawns
