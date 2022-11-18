@@ -51,7 +51,7 @@ spawnedStageJumpAnimation = false;
 newDestPosX = x;
 newDestPosY = y;
 
-attack1PrepareTimer = 100; //Timer before snap attack begins
+attack1PrepareTimer = 75; //Timer before snap attack begins
 attack1StopTimer = 50; //Timer after snap attack begins
 snapAttack = false; //Snap Attack is happening
 

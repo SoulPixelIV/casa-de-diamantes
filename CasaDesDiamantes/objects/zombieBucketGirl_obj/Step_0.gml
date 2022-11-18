@@ -155,7 +155,7 @@ if (movement)
 							testY = xPosGoalLeft;
 							
 							//Check if jump is not too far
-							if (distance_to_point(randDestX, player_obj.y) < 360) {
+							if (distance_to_point(randDestX, player_obj.y) < 180) {
 								jumpToNewDest = true;
 								newDestPosX = randDestX;
 								newDestPosY = player_obj.y - 12;
@@ -318,7 +318,7 @@ if (aggro && !attackInProg1 && !attackInProg2)
 if (attackCooldown < 0)
 {
 	if (instance_exists(player_obj)) {
-		if (distance_to_object(player_obj) < 64) {
+		if (distance_to_object(player_obj) < 76) {
 			sprite_index = zombieBucketGirlAttack1_spr;
 			movement = false;
 			attackInProg1 = true;

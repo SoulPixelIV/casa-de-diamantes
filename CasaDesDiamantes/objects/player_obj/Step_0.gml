@@ -1377,13 +1377,15 @@ if (grounded || !flip)
 {
 	if (!wallJumpingInAir && (!isDashing || crouchslide) && !huggingWall && !setWallDir && !deathActivated && (!spin || (spin && jumpspinAim)))
 	{
-		if (dirCursor > 90 && dirCursor < 270)
-		{
-			image_xscale = -1;
-		}
-		else
-		{
-			image_xscale = 1;
+		if (!place_meeting(x, y, ladder_obj) || (place_meeting(x, y, ladder_obj) && verspeed == 0)) {
+			if (dirCursor > 90 && dirCursor < 270)
+			{
+				image_xscale = -1;
+			}
+			else
+			{
+				image_xscale = 1;
+			}
 		}
 	}
 }
