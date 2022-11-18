@@ -548,6 +548,7 @@ if (attackDelay < 0)
 
 if (damageTintTimer < 0)
 {
+	/*
 	if (!lostArm)
 	{
 		sprite_index = spidercorpse_spr;
@@ -558,7 +559,7 @@ if (damageTintTimer < 0)
 			sprite_index = spidercorpse_spr;
 			//sprite_index = zombieGirlNoArm_spr;
 		}
-	}
+	}*/
 	damageTintTimer = damageTintTimerSave;
 	damageTint = false;
 	damageTintHeadshot = false;

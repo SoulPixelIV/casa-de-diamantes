@@ -166,7 +166,7 @@ with (alarmLight)
 
 if (damageTintTimer < 0)
 {
-	sprite_index = explosiveMerchant_spr;
+	//sprite_index = explosiveMerchant_spr;
 	damageTintTimer = damageTintTimerSave;
 	damageTint = false;
 }

@@ -273,7 +273,7 @@ if (hp < 0)
 
 if (damageTintTimer < 0)
 {
-	sprite_index = zombieGirlWounded_spr;
+	//sprite_index = zombieGirlWounded_spr;
 	damageTintTimer = damageTintTimerSave;
 	damageTint = false;
 	damageTintHeadshot = false;

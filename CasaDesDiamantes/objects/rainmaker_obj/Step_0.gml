@@ -346,7 +346,7 @@ if (aggro)
 
 if (damageTintTimer < 0)
 {
-	sprite_index = rainmaker_spr;
+	//sprite_index = rainmaker_spr;
 	damageTintTimer = damageTintTimerSave;
 	damageTint = false;
 	damageTintHeadshot = false;

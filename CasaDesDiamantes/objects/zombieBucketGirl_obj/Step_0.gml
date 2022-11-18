@@ -519,7 +519,7 @@ if (attackDelay < 0)
 
 if (damageTintTimer < 0)
 {
-	sprite_index = zombieBucketGirl_spr;
+	//sprite_index = zombieBucketGirl_spr;
 	damageTintTimer = damageTintTimerSave;
 	damageTint = false;
 }

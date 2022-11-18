@@ -364,7 +364,7 @@ if (aggro)
 
 if (damageTintTimer < 0)
 {
-	sprite_index = zombieSoldierGirl_spr;
+	//sprite_index = zombieSoldierGirl_spr;
 	damageTintTimer = damageTintTimerSave;
 	damageTint = false;
 	damageTintHeadshot = false;
