@@ -5,28 +5,49 @@ if (despawnTimer < 0)
 	instance_destroy();
 }
 
-if (horspeed > 0)
+//Move towards player
+if (distance_to_object(player_obj) < 32)
 {
-	if (!place_meeting(x, y, booster_obj))
+	follow = true;
+}
+
+if (follow) {
+	if (player_obj.x > x)
+	{
+		horspeed += 0.1;
+	}
+	else
+	{
+		horspeed += -0.1;
+	}
+	
+	if (player_obj.y > y)
+	{
+		verspeed += 0.1;
+	}
+	else
+	{
+		verspeed += -0.1;
+	}
+} else {
+	if (horspeed > 0)
 	{
 		horspeed -= 0.002 * global.dt / 3;
-	}
 
-	if (horspeed < 0.3)
-	{
-		horspeed = 0;
+		if (horspeed < 0.3)
+		{
+			horspeed = 0;
+		}
 	}
-}
-else
-{
-	if (!place_meeting(x, y, booster_obj))
+	else
 	{
+
 		horspeed += 0.002 * global.dt / 3;
-	}
 
-	if (horspeed > -0.3)
-	{
-		horspeed = 0;
+		if (horspeed > -0.3)
+		{
+			horspeed = 0;
+		}
 	}
 }
 
@@ -40,55 +61,12 @@ if (verspeed < 2)
 //horspeed
 if (!place_free(x + horspeed, y))
 {
-	//Move towards player
-	if (distance_to_object(player_obj) < 32)
-	{
-		if (player_obj.x > x)
-		{
-			horspeed += 0.1;
-		}
-		else
-		{
-			horspeed += -0.1;
-		}
-	}
-	else
-	{
-		horspeed = 0;
-	}
-}
-else
-{
-	//Move towards player
-	if (invTimer < 0) {
-		if (distance_to_object(player_obj) < 32)
-		{
-			move_towards_point(player_obj.x, player_obj.y, global.dt);
-		}
-		else
-		{
-			speed = 0;
-		}
-	}
-}
-
+    horspeed = 0;
+} 
 //verspeed
 if (!place_free(x, y + verspeed))
 {
     verspeed = 0;   
-}
-
-//Move towards player
-if (distance_to_object(player_obj) < 32)
-{
-	if (player_obj.x > x)
-	{
-		horspeed += 0.1;
-	}
-	else
-	{
-		horspeed += -0.1;
-	}
 }
 
 //Animation

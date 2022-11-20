@@ -12,6 +12,7 @@ else
 	window_set_position(display_get_width() / 2 - global.xScreenSize * zoom, display_get_height() / 2 - global.yScreenSize * zoom);
 }
 
+/*
 if (keyboard_check_pressed(ord("P")))
 {
 	if (zoom == 1)
@@ -22,4 +23,4 @@ if (keyboard_check_pressed(ord("P")))
 	{
 		zoom = 1;
 	}
-}
+}*/

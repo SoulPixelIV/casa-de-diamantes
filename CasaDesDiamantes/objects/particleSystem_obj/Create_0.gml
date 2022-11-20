@@ -11,6 +11,16 @@ part_type_orientation(global.fireSparkPart, 0, 359, 1, 0, 1);
 part_type_direction(global.fireSparkPart, 0, 359, 0, 3);
 part_type_gravity(global.fireSparkPart, 0.0001, 270);
 
+//Glass Shards
+global.glasShardsPart = part_type_create();
+part_type_sprite(global.glasShardsPart, glasShard_spr, true, true, true);
+part_type_life(global.glasShardsPart, 1000, 1500);
+part_type_size(global.glasShardsPart, 0.1, 2.5, -0.015, 0);
+part_type_orientation(global.glasShardsPart, 0, 359, 0.01, 0, 1);
+part_type_direction(global.glasShardsPart, 220, 320, 0, 0);
+part_type_speed(global.glasShardsPart, 0.8, 1.4, 0, 0.1);
+part_type_gravity(global.glasShardsPart, 0.008, 270);
+
 //Toxic Particles
 global.toxicPart = part_type_create();
 part_type_sprite(global.toxicPart, toxicCloud_spr, true, true, true);
