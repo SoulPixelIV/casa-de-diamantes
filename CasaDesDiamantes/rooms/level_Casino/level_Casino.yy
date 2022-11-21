@@ -248,12 +248,22 @@
 8,9,8,-5,9,-2,8,17,9,8,9,8,9,8,9,8,9,8,9,8,9,8,9,8,9,-1657,-2147483648,-12,17,-50,-2147483648,1,0,-12,17,-50,-2147483648,1,0,-12,17,-1426,-2147483648,],},"visible":true,"depth":1500,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"CaveBackgroundTiles","tilesetId":{"name":"caveBackgroundTiles","path":"tilesets/caveBackgroundTiles/caveBackgroundTiles.yy",},"x":0,"y":0,"tiles":{"TileDataFormat":1,"SerialiseWidth":63,"SerialiseHeight":94,"TileCompressedData":[
 -1386,0,-4536,-2147483648,],},"visible":true,"depth":1600,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
+    {"resourceType":"GMREffectLayer","resourceVersion":"1.0","name":"BlurFilter","visible":true,"depth":1700,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":"_filter_large_blur","properties":[
+        {"type":0,"name":"g_Radius","value":"10",},
+        {"type":2,"name":"g_NoiseTexture","value":"_filter_large_blur_noise",},
+      ],},
+    {"resourceType":"GMREffectLayer","resourceVersion":"1.0","name":"DesaturationFilter2","visible":true,"depth":1800,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":"_filter_greyscale","properties":[
+        {"type":0,"name":"g_Intensity","value":"0.3",},
+      ],},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Background","instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_25F39D0","properties":[],"isDnd":false,"objectId":{"name":"caveBackgroundForeground_obj","path":"objects/caveBackgroundForeground_obj/caveBackgroundForeground_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":320.0,"y":992.0,},
-      ],"visible":true,"depth":1700,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
+      ],"visible":true,"depth":1900,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
+    {"resourceType":"GMREffectLayer","resourceVersion":"1.0","name":"DesaturationFilter1","visible":true,"depth":2000,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":"_filter_greyscale","properties":[
+        {"type":0,"name":"g_Intensity","value":"0.3",},
+      ],},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Background2","instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_1ADA2251","properties":[],"isDnd":false,"objectId":{"name":"caveBackground_obj","path":"objects/caveBackground_obj/caveBackground_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":384.0,"y":1024.0,},
-      ],"visible":true,"depth":1800,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
+      ],"visible":true,"depth":2100,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
   ],
   "inheritLayers": false,
   "creationCodeFile": "${project_dir}/rooms/level_Casino/RoomCreationCode.gml",
