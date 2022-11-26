@@ -562,7 +562,7 @@ if (place_meeting(x, y, slowmoCollider_obj)) {
 }
 
 //Player Trail
-if (dashInvincibilityOn || activateTrailEffect) {
+if (dashInvincibilityOn || activateTrailEffect || jumpType == 2) {
 	trailDensity -= global.dt;
 }
 if (trailDensity < 0) {

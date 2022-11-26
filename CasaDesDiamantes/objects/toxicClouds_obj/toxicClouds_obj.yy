@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "testfilter",
+  "name": "toxicClouds_obj",
   "spriteId": null,
   "solid": false,
   "visible": true,
