@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "warpzoneKey_obj",
   "spriteId": {
-    "name": "warpzoneKey_spr",
-    "path": "sprites/warpzoneKey_spr/warpzoneKey_spr.yy",
+    "name": "goldenKey_spr",
+    "path": "sprites/goldenKey_spr/goldenKey_spr.yy",
   },
   "solid": false,
   "visible": true,

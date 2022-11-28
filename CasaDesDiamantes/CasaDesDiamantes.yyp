@@ -515,6 +515,7 @@
     {"id":{"name":"blackjackBackground_spr","path":"sprites/blackjackBackground_spr/blackjackBackground_spr.yy",},"order":0,},
     {"id":{"name":"caveBackgroundForeground_spr","path":"sprites/caveBackgroundForeground_spr/caveBackgroundForeground_spr.yy",},"order":1,},
     {"id":{"name":"zombieGirlAttack2Start_spr","path":"sprites/zombieGirlAttack2Start_spr/zombieGirlAttack2Start_spr.yy",},"order":18,},
+    {"id":{"name":"goldenKey_spr","path":"sprites/goldenKey_spr/goldenKey_spr.yy",},"order":162,},
     {"id":{"name":"smokingJacketSpin_spr","path":"sprites/smokingJacketSpin_spr/smokingJacketSpin_spr.yy",},"order":5,},
     {"id":{"name":"circleCross_spr","path":"sprites/circleCross_spr/circleCross_spr.yy",},"order":26,},
     {"id":{"name":"barrel_spr","path":"sprites/barrel_spr/barrel_spr.yy",},"order":0,},
