@@ -41,8 +41,8 @@ if (room == blackjackTable) {
 }
 
 
-//PAREDIA WORLD MUSIC
-if (room == level0 || room == level1 || room == level2 || room == level3 || room == level4 || room == level5A || room == level5B) {
+//ACT1 WORLD MUSIC
+if (room == level0 || room == level1 || room == level2 || room == level3) {
 	act1MusicOn = true;
 } else {
 	act1MusicOn = false;
@@ -147,33 +147,19 @@ if (act1MusicOn && act1MusicStarted) {
 	}
 }
 
-/*
-//Ambience Theme
-with (player_obj) {
-	if (!place_meeting(x, y, battleArena_obj) && room != level_Casino && room != blackjackTable) {
-		with (musicManager_obj) {
-			if (!audio_is_playing(ambienceTheme)) {
-				//audio_play_sound(ambienceTheme, 1, true);
-			}
-		}
-	}
+//ACT2 WORLD MUSIC
+if (room == level4 || room == level5A || room == level5B) {
+	act2MusicOn = true;
+} else {
+	act2MusicOn = false;
+	act2MusicStarted = false;
 }
 
-//Combat Theme
-with (player_obj) {
-	if (place_meeting(x, y, battleArena_obj) || place_meeting(x, y, minecartForeground_obj) || place_meeting(x, y, plagueDoor_obj)) {
-		with (musicManager_obj) {
-			if (!audio_is_playing(combatTheme)) {
-				//audio_play_sound(combatTheme, 1, true);
-			}
-			if (audio_is_playing(ambienceTheme)) {
-					audio_stop_sound(ambienceTheme);
-			}
-		}
-	} else {
-		with (musicManager_obj) {
-			audio_stop_sound(combatTheme);
-		}
-	}
+if (act2MusicOn && !act2MusicStarted) {
+	cave1 = audio_play_sound(caveAmbience1, 1, true);
+	cave2 = audio_play_sound(caveAmbience2, 1, true);
+	cave3 = audio_play_sound(caveAmbience3, 1, true);
+	cave4 = audio_play_sound(caveAmbience4, 1, true);
+	
+	act2MusicStarted = true;
 }
-*/

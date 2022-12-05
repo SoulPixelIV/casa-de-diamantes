@@ -17,7 +17,7 @@
   "soundFile": "dressedToKillL3_msc.wav",
   "duration": 112.94118,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "Act1Music",
+    "path": "folders/Sounds/Act1Music.yy",
   },
 }
