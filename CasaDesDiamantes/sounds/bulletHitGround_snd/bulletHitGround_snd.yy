@@ -1,4 +1,8 @@
 {
+  "resourceType": "GMSound",
+  "resourceVersion": "1.0",
+  "name": "bulletHitGround_snd",
+  "conversionMode": 0,
   "compression": 0,
   "volume": 0.1,
   "preload": false,
@@ -11,13 +15,9 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "bulletHitGround_snd",
-  "duration": 0.389,
+  "duration": 0.384,
   "parent": {
     "name": "Weapons",
     "path": "folders/Sounds/Weapons.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "bulletHitGround_snd",
-  "tags": [],
-  "resourceType": "GMSound",
 }

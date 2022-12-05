@@ -69,8 +69,7 @@ function shooting_scr(argument0) {
 	{
 		if (global.pistolAmmo > 0)
 		{
-			var barettaShot = audio_play_sound(dualBarettasShot_snd, 1, false);
-			audio_sound_pitch(barettaShot, random_range(0.9, 1.1));
+			instance_create_layer(playerBulletLine_obj.x, playerBulletLine_obj.y, "Instances", bulletDualBarettasDuoSpawner_obj);
 		
 			var shotLightx = x + lengthdir_x(24, dirCursor);
 			var shotLighty = y - 8 + lengthdir_y(24, dirCursor);

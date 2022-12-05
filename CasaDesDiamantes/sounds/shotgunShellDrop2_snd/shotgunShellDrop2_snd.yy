@@ -1,4 +1,8 @@
 {
+  "resourceType": "GMSound",
+  "resourceVersion": "1.0",
+  "name": "shotgunShellDrop2_snd",
+  "conversionMode": 0,
   "compression": 0,
   "volume": 0.15,
   "preload": false,
@@ -10,14 +14,10 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "shotgunShellDrop2_snd.mp3",
-  "duration": 0.138625,
+  "soundFile": "shotgunShellDrop2_snd.wav",
+  "duration": 1.187506,
   "parent": {
     "name": "Weapons",
     "path": "folders/Sounds/Weapons.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "shotgunShellDrop2_snd",
-  "tags": [],
-  "resourceType": "GMSound",
 }

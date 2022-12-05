@@ -1,4 +1,11 @@
 function dash_scr() {
+	
+	if (!audio_is_playing(dashmoan_snd))
+	{
+		var dashmoansnd = audio_play_sound(dashmoan_snd, 1, false);
+		audio_sound_pitch(dashmoansnd, random_range(0.9, 1.1));
+	}
+	
 	player_obj.isDashing = true;
 	player_obj.dashDelay = player_obj.dashDelaySave;
 

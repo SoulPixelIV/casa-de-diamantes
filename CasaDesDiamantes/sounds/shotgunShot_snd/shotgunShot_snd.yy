@@ -1,4 +1,8 @@
 {
+  "resourceType": "GMSound",
+  "resourceVersion": "1.0",
+  "name": "shotgunShot_snd",
+  "conversionMode": 0,
   "compression": 0,
   "volume": 1.0,
   "preload": false,
@@ -10,14 +14,10 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "shotgunShot_snd",
-  "duration": 0.749,
+  "soundFile": "shotgunShot_snd.wav",
+  "duration": 1.537143,
   "parent": {
     "name": "Weapons",
     "path": "folders/Sounds/Weapons.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "shotgunShot_snd",
-  "tags": [],
-  "resourceType": "GMSound",
 }

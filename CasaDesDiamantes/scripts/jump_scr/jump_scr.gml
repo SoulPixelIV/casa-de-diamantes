@@ -19,6 +19,16 @@ function jump_scr() {
 				var glittersnd = audio_play_sound(glitter_snd, 1, false);
 				audio_sound_pitch(glittersnd, random_range(0.9, 1.1));
 			}
+			if (!audio_is_playing(jumpspin_snd))
+			{
+				var jumpspinsnd = audio_play_sound(jumpspin_snd, 1, false);
+				audio_sound_pitch(jumpspinsnd, random_range(0.9, 1.1));
+			}
+			if (!audio_is_playing(doublejumpmoan_snd))
+			{
+				var doublejumpmoansnd = audio_play_sound(doublejumpmoan_snd, 1, false);
+				audio_sound_pitch(doublejumpmoansnd, random_range(0.9, 1.1));
+			}
 			repeat(8)
 			{
 				instance_create_layer(player_obj.x + choose(-6, 6), player_obj.y + 26 + choose(-2, 2), "ForegroundObjects", dustParticle_obj);
@@ -62,6 +72,14 @@ function jump_scr() {
 	{
 		instance_create_layer(player_obj.x + choose(-6, 6), player_obj.y + 26 + choose(-2, 2), "ForegroundObjects", dustParticle_obj);
 	}
+	
+	if (player_obj.jumpType == 1) {
+		if (!audio_is_playing(jumpmoan_snd)) {
+			var jumpmoansnd = audio_play_sound(jumpmoan_snd, 1, false);
+			audio_sound_pitch(jumpmoansnd, random_range(0.9, 1.1));
+		}
+	}
+	
 	player_obj.jumping = true;
 	player_obj.onLadder = false;
 	player_obj.reachedGroundOnce = false;

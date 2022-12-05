@@ -1,4 +1,8 @@
 {
+  "resourceType": "GMSound",
+  "resourceVersion": "1.0",
+  "name": "sniperShotLoad_snd",
+  "conversionMode": 0,
   "compression": 0,
   "volume": 0.3,
   "preload": false,
@@ -11,13 +15,9 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sniperShotLoad_snd.mp3",
-  "duration": 0.135612,
+  "duration": 0.130612,
   "parent": {
     "name": "Weapons",
     "path": "folders/Sounds/Weapons.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "sniperShotLoad_snd",
-  "tags": [],
-  "resourceType": "GMSound",
 }

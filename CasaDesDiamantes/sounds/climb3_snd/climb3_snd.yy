@@ -1,4 +1,8 @@
 {
+  "resourceType": "GMSound",
+  "resourceVersion": "1.0",
+  "name": "climb3_snd",
+  "conversionMode": 0,
   "compression": 0,
   "volume": 0.5,
   "preload": false,
@@ -11,13 +15,9 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "climb3_snd",
-  "duration": 0.484456,
+  "duration": 0.479456,
   "parent": {
     "name": "Player",
     "path": "folders/Sounds/Player.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "climb3_snd",
-  "tags": [],
-  "resourceType": "GMSound",
 }

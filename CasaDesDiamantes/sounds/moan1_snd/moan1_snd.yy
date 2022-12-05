@@ -1,4 +1,8 @@
 {
+  "resourceType": "GMSound",
+  "resourceVersion": "1.0",
+  "name": "moan1_snd",
+  "conversionMode": 0,
   "compression": 0,
   "volume": 0.7,
   "preload": false,
@@ -11,13 +15,9 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "moan1_snd",
-  "duration": 0.364909,
+  "duration": 0.359909,
   "parent": {
     "name": "Player",
     "path": "folders/Sounds/Player.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "moan1_snd",
-  "tags": [],
-  "resourceType": "GMSound",
 }

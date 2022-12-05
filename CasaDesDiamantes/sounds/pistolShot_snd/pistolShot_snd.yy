@@ -1,6 +1,10 @@
 {
+  "resourceType": "GMSound",
+  "resourceVersion": "1.0",
+  "name": "pistolShot_snd",
+  "conversionMode": 0,
   "compression": 0,
-  "volume": 0.3,
+  "volume": 1.0,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -10,14 +14,10 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "pistolShot_snd",
-  "duration": 0.415635,
+  "soundFile": "pistolShot_snd.wav",
+  "duration": 0.585556,
   "parent": {
     "name": "Weapons",
     "path": "folders/Sounds/Weapons.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "pistolShot_snd",
-  "tags": [],
-  "resourceType": "GMSound",
 }

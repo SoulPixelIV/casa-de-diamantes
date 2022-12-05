@@ -1,4 +1,8 @@
 {
+  "resourceType": "GMSound",
+  "resourceVersion": "1.0",
+  "name": "glitter_snd",
+  "conversionMode": 0,
   "compression": 0,
   "volume": 0.9,
   "preload": false,
@@ -11,13 +15,9 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "glitter_snd",
-  "duration": 0.31924,
+  "duration": 0.31424,
   "parent": {
     "name": "Player",
     "path": "folders/Sounds/Player.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "glitter_snd",
-  "tags": [],
-  "resourceType": "GMSound",
 }

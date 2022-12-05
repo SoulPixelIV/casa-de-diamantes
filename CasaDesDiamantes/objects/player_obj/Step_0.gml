@@ -317,6 +317,12 @@ if (isDashing && !onLadder)
 			crouchRollTimer -= global.dt;
 			if (crouchRollTimer > 0) {
 				sprite_index = playerCrouchRoll_spr;
+				
+				if (!audio_is_playing(dashroll_snd))
+				{
+					var rollsnd = audio_play_sound(dashroll_snd, 1, false);
+					audio_sound_pitch(rollsnd, random_range(0.9, 1.1));
+				}
 			
 				dashroll = true;
 			} else {
@@ -1612,9 +1618,9 @@ audio_listener_position(x, y, 0);
 
 if (isDashing && grounded && horspeed != 0)
 {
-	if (!audio_is_playing(slide_snd))
+	if (!audio_is_playing(dashslide_snd))
 	{
-		var slidesnd = audio_play_sound(slide_snd, 1, false);
+		var slidesnd = audio_play_sound(dashslide_snd, 1, false);
 		audio_sound_pitch(slidesnd, random_range(0.9, 1.1));
 	}
 }
@@ -1622,7 +1628,7 @@ else
 {
 	if (!huggingWall)
 	{
-		audio_stop_sound(slide_snd);
+		audio_stop_sound(dashslide_snd);
 	}
 }
 

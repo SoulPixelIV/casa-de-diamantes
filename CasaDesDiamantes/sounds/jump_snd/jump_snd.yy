@@ -1,4 +1,8 @@
 {
+  "resourceType": "GMSound",
+  "resourceVersion": "1.0",
+  "name": "jump_snd",
+  "conversionMode": 0,
   "compression": 0,
   "volume": 0.75,
   "preload": false,
@@ -11,13 +15,9 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "jump_snd",
-  "duration": 0.161757,
+  "duration": 0.156757,
   "parent": {
     "name": "Player",
     "path": "folders/Sounds/Player.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "jump_snd",
-  "tags": [],
-  "resourceType": "GMSound",
 }

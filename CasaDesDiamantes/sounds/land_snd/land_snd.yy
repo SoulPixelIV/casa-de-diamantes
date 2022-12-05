@@ -1,4 +1,8 @@
 {
+  "resourceType": "GMSound",
+  "resourceVersion": "1.0",
+  "name": "land_snd",
+  "conversionMode": 0,
   "compression": 0,
   "volume": 0.15,
   "preload": false,
@@ -11,13 +15,9 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "land_snd",
-  "duration": 0.357653,
+  "duration": 0.352653,
   "parent": {
     "name": "Player",
     "path": "folders/Sounds/Player.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "land_snd",
-  "tags": [],
-  "resourceType": "GMSound",
 }

@@ -22,6 +22,7 @@ function resetJump_scr() {
 	if (!player_obj.landSoundPlayed)
 	{
 		audio_play_sound(land_snd, 1, false);
+		audio_play_sound(landmoan_snd, 1, false);
 		player_obj.landSoundPlayed = true;
 	}
 	if (distance_to_object(sidewaysPlatform_obj) < 2)
