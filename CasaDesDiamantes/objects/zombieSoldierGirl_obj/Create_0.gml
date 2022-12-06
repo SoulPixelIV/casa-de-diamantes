@@ -71,6 +71,7 @@ gravityStrengthSave = gravityStrength;
 
 image_yscale = -1;
 blend = image_blend;
+initalDir = image_xscale;
 
 //Create Emitter
 emitter = audio_emitter_create();

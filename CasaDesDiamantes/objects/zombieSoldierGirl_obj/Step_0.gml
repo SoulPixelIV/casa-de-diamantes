@@ -22,12 +22,18 @@ if (attackCooldown > 75 && (attackInProg1 || attackInProg2))
 
 //Rotate towards player
 if (instance_exists(player_obj)) {
-	if (distance_to_object(player_obj) < aggroRange) {
-		if (attackCooldown > 150 || attackCooldown < 0) {
-			if (!place_meeting(x + 12, y, collider_obj) && !place_meeting(x - 12, y, collider_obj) && !place_meeting(x, y + 12, collider_obj) && !place_meeting(x, y - 12, collider_obj)) {
-				image_angle = point_direction(x, y, player_obj.x, player_obj.y);
+	if (aggro) {
+		if (distance_to_object(player_obj) < aggroRange) {
+			if (attackCooldown > 150 || attackCooldown < 0) {
+				if (!place_meeting(x + 12, y, collider_obj) && !place_meeting(x - 12, y, collider_obj) && !place_meeting(x, y + 12, collider_obj) && !place_meeting(x, y - 12, collider_obj)) {
+					image_angle = point_direction(x, y, player_obj.x, player_obj.y);
+				}
 			}
 		}
+	}
+	
+	if (!aggro && initalDir == -1) {
+		image_angle = 180;
 	}
 	
 	if (image_xscale == -1) {
@@ -43,7 +49,7 @@ if (instance_exists(player_obj)) {
 
 //Sight Check
 if (instance_exists(player_obj)) {
-	if (!collision_line(x, y, player_obj.x, player_obj.y, colliderOneWay_obj, false, true) && !collision_line(x, y, player_obj.x, player_obj.y, enemyVisionBlockZone_obj, false, true))
+	if (!collision_line(x, y, player_obj.x, player_obj.y, colliderOneWay_obj, false, true) && !collision_line(x, y, player_obj.x, player_obj.y, collider_obj, false, true) && !collision_line(x, y, player_obj.x, player_obj.y, enemyVisionBlockZone_obj, false, true))
 	{
 		if (collision_line(x, y, player_obj.x, player_obj.y, player_obj, false, true))
 		{

@@ -18,10 +18,9 @@
   "layers": [
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Music","instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_31F60DEE","properties":[],"isDnd":false,"objectId":{"name":"musicBoxAmbience_obj","path":"objects/musicBoxAmbience_obj/musicBoxAmbience_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":23.0,"scaleY":10.5,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":896.0,"y":832.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_6B45B6ED","properties":[],"isDnd":false,"objectId":{"name":"musicBoxFastAmbience_obj","path":"objects/musicBoxFastAmbience_obj/musicBoxFastAmbience_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":11.0,"scaleY":8.5,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":2400.0,"y":864.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_CCBF53A","properties":[],"isDnd":false,"objectId":{"name":"musicBoxAmbience2_obj","path":"objects/musicBoxAmbience2_obj/musicBoxAmbience2_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":9.5,"scaleY":9.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":3136.0,"y":864.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_70AA98B9","properties":[],"isDnd":false,"objectId":{"name":"musicBoxFastAmbience2_obj","path":"objects/musicBoxFastAmbience2_obj/musicBoxFastAmbience2_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":10.15625,"scaleY":8.171875,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":3776.0,"y":853.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_49DF5AB3","properties":[],"isDnd":false,"objectId":{"name":"musicBoxBattle_obj","path":"objects/musicBoxBattle_obj/musicBoxBattle_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":35.03125,"scaleY":15.515625,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":4448.0,"y":351.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_35336B39","properties":[],"isDnd":false,"objectId":{"name":"musicBoxBattle_obj","path":"objects/musicBoxBattle_obj/musicBoxBattle_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":10.703125,"scaleY":9.3125,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":2413.0,"y":777.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_4E6404A2","properties":[],"isDnd":false,"objectId":{"name":"musicBoxAmbience_obj","path":"objects/musicBoxAmbience_obj/musicBoxAmbience_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":20.3125,"scaleY":8.109375,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":3123.0,"y":819.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_4F16DABA","properties":[],"isDnd":false,"objectId":{"name":"musicBoxBattle_obj","path":"objects/musicBoxBattle_obj/musicBoxBattle_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":36.59375,"scaleY":17.296875,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":4449.0,"y":303.0,},
       ],"visible":false,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Camera","instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_339DA1F3_1_1","properties":[],"isDnd":false,"objectId":{"name":"camera_obj","path":"objects/camera_obj/camera_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":64.0,"y":32.0,},
@@ -502,10 +501,9 @@
     {"name":"inst_609C61A1","path":"rooms/level1/level1.yy",},
     {"name":"inst_235F958","path":"rooms/level1/level1.yy",},
     {"name":"inst_31F60DEE","path":"rooms/level1/level1.yy",},
-    {"name":"inst_6B45B6ED","path":"rooms/level1/level1.yy",},
-    {"name":"inst_CCBF53A","path":"rooms/level1/level1.yy",},
-    {"name":"inst_70AA98B9","path":"rooms/level1/level1.yy",},
-    {"name":"inst_49DF5AB3","path":"rooms/level1/level1.yy",},
+    {"name":"inst_35336B39","path":"rooms/level1/level1.yy",},
+    {"name":"inst_4E6404A2","path":"rooms/level1/level1.yy",},
+    {"name":"inst_4F16DABA","path":"rooms/level1/level1.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
