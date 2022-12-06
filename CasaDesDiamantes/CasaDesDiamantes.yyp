@@ -533,7 +533,6 @@
     {"id":{"name":"edenCrate2_obj","path":"objects/edenCrate2_obj/edenCrate2_obj.yy",},"order":65,},
     {"id":{"name":"cavernBackground_spr","path":"sprites/cavernBackground_spr/cavernBackground_spr.yy",},"order":0,},
     {"id":{"name":"redOceanBackground_spr","path":"sprites/redOceanBackground_spr/redOceanBackground_spr.yy",},"order":1,},
-    {"id":{"name":"toxicClouds_obj","path":"objects/toxicClouds_obj/toxicClouds_obj.yy",},"order":102,},
     {"id":{"name":"woodplankSmall2_spr","path":"sprites/woodplankSmall2_spr/woodplankSmall2_spr.yy",},"order":1,},
     {"id":{"name":"dualBarettasDrop_obj","path":"objects/dualBarettasDrop_obj/dualBarettasDrop_obj.yy",},"order":25,},
     {"id":{"name":"waterReflectionRed_spr","path":"sprites/waterReflectionRed_spr/waterReflectionRed_spr.yy",},"order":2,},

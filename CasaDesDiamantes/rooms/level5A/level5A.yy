@@ -36,7 +36,6 @@
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"objectAccess","path":"objects/battleArena_obj/battleArena_obj.yy",},"objectId":{"name":"battleArena_obj","path":"objects/battleArena_obj/battleArena_obj.yy",},"value":"lasergate_obj",},
           ],"isDnd":false,"objectId":{"name":"battleArena_obj","path":"objects/battleArena_obj/battleArena_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":43.0,"scaleY":42.75,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":5825.0,"y":1278.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_162D6410","properties":[],"isDnd":false,"objectId":{"name":"fakewallTrigger_obj","path":"objects/fakewallTrigger_obj/fakewallTrigger_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":14.5,"scaleY":11.125,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":4270.0,"y":1407.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_62FFCA39","properties":[],"isDnd":false,"objectId":{"name":"toxicClouds_obj","path":"objects/toxicClouds_obj/toxicClouds_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1056.0,"y":1856.0,},
       ],"visible":true,"depth":100,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMREffectLayer","resourceVersion":"1.0","name":"RedFilter","visible":true,"depth":200,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":"_filter_colourise","properties":[
         {"type":0,"name":"g_Intensity","value":"0.3",},
@@ -1186,7 +1185,6 @@
     {"name":"inst_12523CCC","path":"rooms/level5A/level5A.yy",},
     {"name":"inst_42B932F0","path":"rooms/level5A/level5A.yy",},
     {"name":"inst_B261846","path":"rooms/level5A/level5A.yy",},
-    {"name":"inst_62FFCA39","path":"rooms/level5A/level5A.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
