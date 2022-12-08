@@ -3,17 +3,17 @@ if (room == level_Casino || room == mainmenu || room == levelSelect) {
 	if (!audio_is_playing(casinoTheme)) {
 		audio_play_sound(casinoTheme, 1, true);
 		
-		if (audio_is_playing(parediaSTEM)) {
-			audio_stop_sound(parediaSTEM);
+		if (audio_is_playing(dressedToKillSTEM_msc)) {
+			audio_stop_sound(dressedToKillSTEM_msc);
 		}
-		if (audio_is_playing(parediaL3)) {
-			audio_stop_sound(parediaL3);
+		if (audio_is_playing(dressedToKillL3_msc)) {
+			audio_stop_sound(dressedToKillL3_msc);
 		}
-		if (audio_is_playing(parediaL2)) {
-			audio_stop_sound(parediaL2);
+		if (audio_is_playing(dressedToKillL2_msc)) {
+			audio_stop_sound(dressedToKillL2_msc);
 		}
-		if (audio_is_playing(parediaL1)) {
-			audio_stop_sound(parediaL1);
+		if (audio_is_playing(dressedToKillL1_msc)) {
+			audio_stop_sound(dressedToKillL1_msc);
 		}
 
 	}
@@ -42,7 +42,7 @@ if (room == blackjackTable) {
 
 
 //ACT1 WORLD MUSIC
-if (room == level0 || room == level1 || room == level2 || room == level3) {
+if (room == level0 || room == level1 || room == level2 || room == level3 || room == level4 || room == level5A || room == level5B) {
 	act1MusicOn = true;
 } else {
 	act1MusicOn = false;

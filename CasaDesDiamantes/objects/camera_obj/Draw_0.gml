@@ -235,6 +235,7 @@ with (player_obj)
 //#####LAYER 0#####
 
 //Lens Dirt + Vignette
+/*
 draw_sprite_ext(lensDirt1_spr, 0, randParticleX + partMovement + (x - xScreenSize / 2), randParticleY + partMovement / 2 + (y - yScreenSize / 2), 1, 1, 0, -1, 0.135);
 draw_sprite_ext(lensDirt2_spr, 0, randParticleX2 + partMovement + (x - xScreenSize / 2), randParticleY2 + partMovement / 2 + (y - yScreenSize / 2), 1, 1, 0, -1, 0.135);
 draw_sprite_ext(lensDirt2_spr, 0, randParticleX3 + partMovement + (x - xScreenSize / 2), randParticleY3 + partMovement / 2 + (y - yScreenSize / 2), 1, 1, 0, -1, 0.135);
@@ -244,6 +245,7 @@ draw_sprite_ext(lensDirt1_spr, 0, randParticle2X + partMovement + (x - xScreenSi
 draw_sprite_ext(lensDirt2_spr, 0, randParticle2X2 + partMovement + (x - xScreenSize / 2), randParticle2Y2 + partMovement / 2 + (y - yScreenSize / 2), 1, 1, 0, -1, 0.135);
 draw_sprite_ext(lensDirt2_spr, 0, randParticle2X3 + partMovement + (x - xScreenSize / 2), randParticle2Y3 + partMovement / 2 + (y - yScreenSize / 2), 1, 1, 0, -1, 0.135);
 draw_sprite_ext(lensDirt2_spr, 0, randParticle2X4 + partMovement + (x - xScreenSize / 2), randParticle2Y4 + partMovement / 2 + (y - yScreenSize / 2), 1, 1, 0, -1, 0.135);
+*/
 	
 //Vignette Effect
 if (!hitVignette && !visualalarmlight)
