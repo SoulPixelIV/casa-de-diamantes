@@ -3,4 +3,4 @@
 event_inherited();
 polygon = polygon_from_instance(id);
 
-//image_index = 1;
+image_index = 1;
