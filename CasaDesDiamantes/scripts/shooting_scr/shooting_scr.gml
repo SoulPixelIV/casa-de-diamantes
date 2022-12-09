@@ -29,7 +29,7 @@ function shooting_scr(argument0) {
 		}
 		screenshake(30, 6, 0.4, id);
 		
-		if (!huggingWall)
+		if (!huggingWall && !isDashing)
 		{
 			if (dirCursor > 0 && dirCursor < 90)
 			{
@@ -85,7 +85,7 @@ function shooting_scr(argument0) {
 			}
 			screenshake(30, 8, 0.4, id);
 		
-			if (!huggingWall)
+			if (!huggingWall && !isDashing)
 			{
 				if (dirCursor > 0 && dirCursor < 90)
 				{
@@ -144,7 +144,7 @@ function shooting_scr(argument0) {
 			}
 			screenshake(40, 18, 0.6, id);
 		
-			if (!huggingWall)
+			if (!huggingWall && !isDashing)
 			{
 				if (dirCursor > 0 && dirCursor < 90)
 				{
@@ -186,7 +186,7 @@ function shooting_scr(argument0) {
 		instance_create_layer(shotLightx, shotLighty, "ForegroundObjects", smokecloud_obj);
 		screenshake(50, 12, 0.6, id);
 		
-		if (!huggingWall)
+		if (!huggingWall && !isDashing)
 		{
 			if (dirCursor > 0 && dirCursor < 90)
 			{
@@ -232,7 +232,7 @@ function shooting_scr(argument0) {
 	{		
 		instance_create_layer(playerBulletLine_obj.x, playerBulletLine_obj.y, "Instances", bulletSilencedMPSalveSpawner_obj);
 		
-		if (!huggingWall)
+		if (!huggingWall && !isDashing)
 		{
 			if (dirCursor > 0 && dirCursor < 90)
 			{
