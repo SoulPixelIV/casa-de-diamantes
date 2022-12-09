@@ -7,7 +7,7 @@
     "path": "sprites/redcubex16_spr/redcubex16_spr.yy",
   },
   "solid": false,
-  "visible": false,
+  "visible": true,
   "managed": true,
   "spriteMaskId": null,
   "persistent": false,

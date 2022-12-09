@@ -1,13 +1,13 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "flower_obj",
+  "name": "damageHitboxOnlyOnGround_obj",
   "spriteId": {
-    "name": "rose_spr",
-    "path": "sprites/rose_spr/rose_spr.yy",
+    "name": "redcubex16_spr",
+    "path": "sprites/redcubex16_spr/redcubex16_spr.yy",
   },
   "solid": false,
-  "visible": true,
+  "visible": false,
   "managed": true,
   "spriteMaskId": null,
   "persistent": false,
@@ -15,7 +15,7 @@
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
-  "physicsGroup": 1,
+  "physicsGroup": 0,
   "physicsDensity": 0.5,
   "physicsRestitution": 0.1,
   "physicsLinearDamping": 0.1,
@@ -31,7 +31,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Enemy Helper Objects",
-    "path": "folders/Enemies/Enemy Helper Objects.yy",
+    "name": "Hitboxes",
+    "path": "folders/Hitboxes.yy",
   },
 }

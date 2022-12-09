@@ -464,6 +464,9 @@ if (attackInProg2)
 		
 		//Only Spawn Flower Object once
 		if (!roseAttack) {
+			
+			instance_create_layer(x + 86 * image_xscale, y + 38, "ForegroundObjects", whiteExplosionEffect_obj);
+			
 			if (!switchedSprite) {
 				image_index = 0;
 				sprite_index = zombieBucketGirlAttack2Start_spr;
@@ -473,6 +476,11 @@ if (attackInProg2)
 			screenshake(50, 12, 0.6, id);
 			flowerline = instance_create_layer(x + 15 * image_xscale, y + 38, "Instances", flowerline_obj);
 			flowerline.dir = image_xscale;
+			
+			expl1 = instance_create_layer(x + 40 * image_xscale, y + 38, "ForegroundObjects", whiteExplosionEffectSmall_obj);
+			expl2 = instance_create_layer(x - 90 * image_xscale, y + 38, "ForegroundObjects", whiteExplosionEffectSmall_obj);
+			expl2.image_xscale = -1;
+			
 			roseAttack = true;
 		}
 	}
