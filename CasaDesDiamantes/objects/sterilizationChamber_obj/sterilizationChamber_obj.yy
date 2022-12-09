@@ -1,10 +1,10 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "desinfectionDoor_obj",
+  "name": "sterilizationChamber_obj",
   "spriteId": {
-    "name": "syringeGate_spr",
-    "path": "sprites/syringeGate_spr/syringeGate_spr.yy",
+    "name": "sterilizationChamber_spr",
+    "path": "sprites/sterilizationChamber_spr/sterilizationChamber_spr.yy",
   },
   "solid": false,
   "visible": true,
@@ -26,6 +26,7 @@
   "physicsShapePoints": [],
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"player_obj","path":"objects/player_obj/player_obj.yy",},},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],
