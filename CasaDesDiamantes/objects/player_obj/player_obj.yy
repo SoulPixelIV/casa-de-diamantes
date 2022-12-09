@@ -41,6 +41,7 @@
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"damageHitbox_obj","path":"objects/damageHitbox_obj/damageHitbox_obj.yy",},},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"damageHitboxKnockback_obj","path":"objects/damageHitboxKnockback_obj/damageHitboxKnockback_obj.yy",},},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"fallTriggerZone_obj","path":"objects/fallTriggerZone_obj/fallTriggerZone_obj.yy",},},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"damageHitboxOnlyOnGround_obj","path":"objects/damageHitboxOnlyOnGround_obj/damageHitboxOnlyOnGround_obj.yy",},},
   ],
   "properties": [],
   "overriddenProperties": [],

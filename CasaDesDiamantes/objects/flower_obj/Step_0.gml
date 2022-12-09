@@ -12,6 +12,6 @@ if (!place_meeting(x, y + 16, collider_obj) && !place_meeting(x, y + 16, collide
 	instance_destroy();
 }
 
-if (place_meeting(x + 8 * checkDir, y - 4, collider_obj) || place_meeting(x + 8 * checkDir, y - 4, colliderOneWay_obj)) {
+if (place_meeting(x + 8 * checkDir, y - 8, collider_obj) || place_meeting(x + 8 * checkDir, y - 8, colliderOneWay_obj)) {
 	instance_destroy();
 }
