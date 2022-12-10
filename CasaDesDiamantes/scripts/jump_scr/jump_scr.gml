@@ -27,7 +27,7 @@ function jump_scr() {
 			if (!audio_is_playing(doublejumpmoan_snd))
 			{
 				var doublejumpmoansnd = audio_play_sound(doublejumpmoan_snd, 1, false);
-				audio_sound_pitch(doublejumpmoansnd, random_range(0.9, 1.1));
+				audio_sound_pitch(doublejumpmoansnd, random_range(1, 1.1));
 			}
 			repeat(8)
 			{

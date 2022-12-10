@@ -38,6 +38,10 @@ else
 			instance_destroy(collider);
 			createdHitbox = false;
 		}
+		
+		if (instance_exists(bulletCol)) {
+			instance_destroy(bulletCol);
+		}
 	}
 	
 	if (image_index > image_number - 1) {
