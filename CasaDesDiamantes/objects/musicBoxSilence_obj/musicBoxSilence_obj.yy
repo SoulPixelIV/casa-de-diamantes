@@ -1,13 +1,13 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "Spawn3_obj",
+  "name": "musicBoxSilence_obj",
   "spriteId": {
-    "name": "bluecubex16_spr",
-    "path": "sprites/bluecubex16_spr/bluecubex16_spr.yy",
+    "name": "circles_spr",
+    "path": "sprites/circles_spr/circles_spr.yy",
   },
   "solid": false,
-  "visible": false,
+  "visible": true,
   "managed": true,
   "spriteMaskId": null,
   "persistent": false,
@@ -28,7 +28,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Spawns",
-    "path": "folders/Objects/Spawns.yy",
+    "name": "Act1Music",
+    "path": "folders/Sounds/Act1Music.yy",
   },
 }

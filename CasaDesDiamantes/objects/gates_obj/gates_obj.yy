@@ -1,7 +1,11 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "gates_obj",
   "spriteId": null,
   "solid": false,
   "visible": true,
+  "managed": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": null,
@@ -24,8 +28,4 @@
     "name": "Parent Objects",
     "path": "folders/Other + Legacy/Parent Objects.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "gates_obj",
-  "tags": [],
-  "resourceType": "GMObject",
 }

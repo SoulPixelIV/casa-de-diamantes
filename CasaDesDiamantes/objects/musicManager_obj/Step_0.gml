@@ -144,6 +144,15 @@ if (act1MusicOn && act1MusicStarted) {
 				}
 			}
 		}
+		
+		if (place_meeting(x, y, musicBoxSilence_obj)) {
+			with (musicManager_obj) {
+				audio_sound_gain(parediaSTEM, 0, 300);
+				audio_sound_gain(parediaL1, 0, 300);
+				audio_sound_gain(parediaL2, 0, 300);
+				audio_sound_gain(parediaL3, 0, 300);
+			}
+		}
 	}
 }
 

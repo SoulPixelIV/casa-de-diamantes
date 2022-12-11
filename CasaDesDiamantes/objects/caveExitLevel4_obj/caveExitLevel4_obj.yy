@@ -1,13 +1,13 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "Spawn3_obj",
+  "name": "caveExitLevel4_obj",
   "spriteId": {
-    "name": "bluecubex16_spr",
-    "path": "sprites/bluecubex16_spr/bluecubex16_spr.yy",
+    "name": "caveEntrance_spr",
+    "path": "sprites/caveEntrance_spr/caveEntrance_spr.yy",
   },
   "solid": false,
-  "visible": false,
+  "visible": true,
   "managed": true,
   "spriteMaskId": null,
   "persistent": false,
@@ -24,11 +24,14 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [],
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
+  ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Spawns",
-    "path": "folders/Objects/Spawns.yy",
+    "name": "Objects",
+    "path": "folders/Objects.yy",
   },
 }

@@ -1,10 +1,10 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "Spawn3_obj",
+  "name": "Level6_Level5A_teleporter",
   "spriteId": {
-    "name": "bluecubex16_spr",
-    "path": "sprites/bluecubex16_spr/bluecubex16_spr.yy",
+    "name": "redcubex16_spr",
+    "path": "sprites/redcubex16_spr/redcubex16_spr.yy",
   },
   "solid": false,
   "visible": false,
@@ -15,7 +15,7 @@
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
-  "physicsGroup": 1,
+  "physicsGroup": 0,
   "physicsDensity": 0.5,
   "physicsRestitution": 0.1,
   "physicsLinearDamping": 0.1,
@@ -24,11 +24,14 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [],
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
+  ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Spawns",
-    "path": "folders/Objects/Spawns.yy",
+    "name": "TeleportBoxes",
+    "path": "folders/Objects/Spawns/TeleportBoxes.yy",
   },
 }

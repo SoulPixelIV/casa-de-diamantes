@@ -54,11 +54,11 @@ if (keyboard_check_pressed(vk_enter) || gamepad_button_check_pressed(0, gp_face1
 			global.lastCheckpoint = noone;
 		break;
 		case 7:
-			room_goto(level0_Powerplant);
+			room_goto(level5B);
 			global.lastCheckpoint = noone;
 		break;
 		case 8:
-			room_goto(level1_Powerplant);
+			room_goto(level6);
 			global.lastCheckpoint = noone;
 		break;
 		case 9:
