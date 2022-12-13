@@ -21,6 +21,7 @@ if (finishingTeleport) {
 		part_emitter_destroy_all(global.partSystem);
 		audio_stop_all();
 		instance_destroy(player_obj);
+		global.level4DoorOpen = true;
 		global.spawn = 1;
 		room_goto(level4);
 	}

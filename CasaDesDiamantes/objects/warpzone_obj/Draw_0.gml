@@ -1,6 +1,6 @@
 draw_self();
 
-if (playerEntered) {
-	spawncloudAnim += global.dt / 30;
-	draw_sprite(spawnCloud_spr, spawncloudAnim, player_obj.x, player_obj.y);
+if (distance_to_object(player_obj) < 32 && global.hasWarpzoneKey)
+{
+	draw_sprite(wKeyIcon_spr, 0, player_obj.x, player_obj.y - 32);
 }

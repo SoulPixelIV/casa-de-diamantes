@@ -1,10 +1,10 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "caveExitLevel4_obj",
+  "name": "zombieSpawnEgg_obj",
   "spriteId": {
-    "name": "caveEntrance_spr",
-    "path": "sprites/caveEntrance_spr/caveEntrance_spr.yy",
+    "name": "grenatePlant_spr",
+    "path": "sprites/grenatePlant_spr/grenatePlant_spr.yy",
   },
   "solid": false,
   "visible": true,
@@ -15,7 +15,7 @@
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
-  "physicsGroup": 1,
+  "physicsGroup": 0,
   "physicsDensity": 0.5,
   "physicsRestitution": 0.1,
   "physicsLinearDamping": 0.1,

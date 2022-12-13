@@ -52,6 +52,8 @@ currDeltatime = global.dt;
 newWeapon = false;
 newWeaponTimer = 200;
 redDoorMessage = false;
+blueDoorMessage = false;
+warpzoneMessage = false;
 
 cameraSpeed = 0.02;
 ycameraSpeed = 0.02;

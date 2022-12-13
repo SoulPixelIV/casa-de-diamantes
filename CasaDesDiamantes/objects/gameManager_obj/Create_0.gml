@@ -58,7 +58,8 @@ global.silencedMPCooldownSave = global.silencedMPCooldown;
 global.silencedMPReload = 750;
 global.silencedMPReloadSave = global.silencedMPReload;
 
-//Gates etc.
+//Gates, Doors etc.
+global.level4DoorOpen = false;
 global.level6GateAOpen = false;
 global.level6GateBOpen = false;
 

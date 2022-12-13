@@ -1,30 +1,39 @@
-//Animation
-image_speed = 0;
-image_index += (global.dt / 15) * animationSpeed;
+if (distance_to_object(player_obj) < 64) {
+	if (!global.hasWarpzoneKey) {
+		camera_obj.warpzoneMessage = true;
+	}
+} else {
+	camera_obj.warpzoneMessage = false;
+}
 
-if (teleportTimer < 0) {
-	blackscreen_scr(0);
-	teleportDelay -= global.dt;
-	if (teleportDelay < 0) {
-		if (teleportpoint == 0) {
-			player_obj.x = warpzoneTeleportPoint1_obj.x;
-			player_obj.y = warpzoneTeleportPoint1_obj.y;
-		} else if (teleportpoint == 1) {
-			player_obj.x = warpzoneTeleportPoint2_obj.x;
-			player_obj.y = warpzoneTeleportPoint2_obj.y;
-		//EDEN POWERPLANT WARPZONE LEVEL SWITCH
-		} else if (teleportpoint == 2) {
-			part_emitter_destroy_all(global.partSystem);
-			instance_destroy(player_obj);
-			room_goto(warpzone_Powerplant);
-		} else if (teleportpoint == 3) {
-			part_emitter_destroy_all(global.partSystem);
-			instance_destroy(player_obj);
-			global.spawn = 2;
-			room_goto(level2_Powerplant);
-		}
-		teleportTimer = teleportTimerSave;
-		teleportDelay = teleportDelaySave;
-		playerEntered = false;
+
+if (distance_to_object(player_obj) < 32 && global.hasWarpzoneKey)
+{
+	if (keyboard_check_pressed(ord("W"))) {
+		teleporting = true;
+		player_obj.movement = false;
+		image_index = 1;
 	}
 }
+
+if (teleporting) {
+	blackscreen_scr(0);
+	blackscreenDelay -= global.dt;
+}
+
+if (blackscreenDelay < 0) {
+	finishingTeleport = true;
+	blackscreenDelay = blackscreenDelaySave;
+	teleporting = false;
+}
+
+if (finishingTeleport) {
+	waitDelay -= global.dt;
+	if (waitDelay < 0) {	
+		part_emitter_destroy_all(global.partSystem);
+		audio_stop_all();
+		instance_destroy(player_obj);
+		room_goto(warpzone1);
+	}
+}
+
