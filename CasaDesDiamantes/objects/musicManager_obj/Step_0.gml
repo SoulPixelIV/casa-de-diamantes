@@ -42,7 +42,7 @@ if (room == blackjackTable) {
 
 
 //ACT1 WORLD MUSIC
-if (room == level0 || room == level1 || room == level2 || room == level3 || room == level4 || room == level5A || room == level5B) {
+if (room == level0 || room == level1 || room == level2 || room == level3 || room == level4 || room == level5A || room == level5B || room == level6 || room == warpzone1) {
 	act1MusicOn = true;
 } else {
 	act1MusicOn = false;

@@ -53,6 +53,7 @@ newWeapon = false;
 newWeaponTimer = 200;
 redDoorMessage = false;
 blueDoorMessage = false;
+yellowDoorMessage = false;
 warpzoneMessage = false;
 
 cameraSpeed = 0.02;

@@ -446,7 +446,10 @@ if (!noHUD && instance_exists(player_obj))
 		draw_sprite_ext(redKeycard_spr, -1, (x + xScreenSize / 2) - 28, (y - yScreenSize / 2) + 32, 1, 1, 0, -1, 1);
 	}
 	if (global.keyBlue) {
-		draw_sprite_ext(blueKeycard_spr, -1, (x + xScreenSize / 2) - 36, (y - yScreenSize / 2) + 32, 1, 1, 0, -1, 1);
+		draw_sprite_ext(blueKeycard_spr, -1, (x + xScreenSize / 2) - 42, (y - yScreenSize / 2) + 32, 1, 1, 0, -1, 1);
+	}
+	if (global.keyBlue) {
+		draw_sprite_ext(yellowKeycard_spr, -1, (x + xScreenSize / 2) - 56, (y - yScreenSize / 2) + 32, 1, 1, 0, -1, 1);
 	}
 	
 	//Diamond Key
@@ -680,6 +683,12 @@ if (!noHUD && instance_exists(player_obj))
 		draw_set_color(make_color_rgb(255,215,0));
 		draw_set_halign(fa_center);
 		draw_text(x, (y + (yScreenSize / 3)) - 32, "You need the blue keycard to unlock this door!");
+		draw_set_halign(fa_left);
+	}
+	if (yellowDoorMessage) {
+		draw_set_color(make_color_rgb(255,215,0));
+		draw_set_halign(fa_center);
+		draw_text(x, (y + (yScreenSize / 3)) - 32, "You need the yellow keycard to unlock this door!");
 		draw_set_halign(fa_left);
 	}
 	if (warpzoneMessage) {
