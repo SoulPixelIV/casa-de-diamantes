@@ -1,8 +1,11 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "hazard_obj",
-  "spriteId": null,
+  "name": "ironDoorWarpzone1DECO_obj",
+  "spriteId": {
+    "name": "ironDoor_spr",
+    "path": "sprites/ironDoor_spr/ironDoor_spr.yy",
+  },
   "solid": false,
   "visible": true,
   "managed": true,
@@ -12,7 +15,7 @@
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
-  "physicsGroup": 0,
+  "physicsGroup": 1,
   "physicsDensity": 0.5,
   "physicsRestitution": 0.1,
   "physicsLinearDamping": 0.1,
@@ -21,11 +24,13 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [],
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
+  ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Parent Objects",
-    "path": "folders/Other + Legacy/Parent Objects.yy",
+    "name": "Objects",
+    "path": "folders/Objects.yy",
   },
 }

@@ -63,6 +63,8 @@ global.level4DoorOpen = false;
 global.level6GateAOpen = false;
 global.level6GateBOpen = false;
 
+global.warpzone1DoorOpen = false;
+
 
 global.hat = choose(noone);
 global.top1 = choose(noone);

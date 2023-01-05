@@ -1,10 +1,13 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "hazard_obj",
-  "spriteId": null,
+  "name": "enemyTeleportBlockZone_obj",
+  "spriteId": {
+    "name": "redstripes_spr",
+    "path": "sprites/redstripes_spr/redstripes_spr.yy",
+  },
   "solid": false,
-  "visible": true,
+  "visible": false,
   "managed": true,
   "spriteMaskId": null,
   "persistent": false,
@@ -12,7 +15,7 @@
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
-  "physicsGroup": 0,
+  "physicsGroup": 1,
   "physicsDensity": 0.5,
   "physicsRestitution": 0.1,
   "physicsLinearDamping": 0.1,
@@ -25,7 +28,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Parent Objects",
-    "path": "folders/Other + Legacy/Parent Objects.yy",
+    "name": "Objects",
+    "path": "folders/Objects.yy",
   },
 }

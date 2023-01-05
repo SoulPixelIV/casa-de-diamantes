@@ -156,9 +156,12 @@ if (movement)
 							
 							//Check if jump is not too far
 							if (distance_to_point(randDestX, player_obj.y) < 180) {
-								jumpToNewDest = true;
-								newDestPosX = randDestX;
-								newDestPosY = player_obj.y - 12;
+								//Check if destination is in teleport block zone
+								if (!instance_place(randDestX, player_obj.y - 12, enemyTeleportBlockZone_obj)) {
+									jumpToNewDest = true;
+									newDestPosX = randDestX;
+									newDestPosY = player_obj.y - 12;
+								}
 							}
 							break;
 						}

@@ -170,7 +170,7 @@
     "PhysicsWorldPixToMetres": 0.1,
   },
   "parent": {
-    "name": "ACT 2 (Senzela Forest)",
-    "path": "folders/Levels/Main/ACT 2 (Senzela Forest).yy",
+    "name": "LEGACY",
+    "path": "folders/Levels/LEGACY.yy",
   },
 }
