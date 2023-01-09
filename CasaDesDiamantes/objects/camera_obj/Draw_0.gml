@@ -898,46 +898,14 @@ if (player_obj.isZombie)
 
 if (showInfOverlay && !showedInf)
 {
-	InfOverlayTimer -= global.dt;
-	if (!infOverlayLocked)
-	{
-		if (infOverlayX > 0)
-		{
-			infOverlayX -= 16 * global.dt;
-		}
-		if (infOverlayY < yScreenSize - 1)
-		{
-			infOverlayY += 9 * global.dt;
-		}
-		if (infOverlayX < 0)
-		{
-			infOverlayLocked = true;
-		}
-		if (infOverlayY > yScreenSize - 1)
-		{
-			infOverlayLocked = true;
-		}
-	}
-
-	if (infOverlayLocked && InfOverlayTimer > 0)
-	{
-		infOverlayX = 0;
-		infOverlayY = yScreenSize - 1;
-	}
-	
-	if (InfOverlayTimer < 0)
-	{
-		infOverlayX -= 16 * global.dt;
-		infOverlayY += 9 * global.dt;
-		
-		if (infOverlayX < -xScreenSize)
-		{
-			showedInf = true;
-			InfOverlayTimer = InfOverlayTimerSave;
-		}
-	}
-
-	draw_sprite(infectedOverlay_spr, 0, infOverlayX + (x - xScreenSize / 2), infOverlayY + (y - yScreenSize / 2));
+	draw_set_font(gothicPixel_fnt);
+	draw_set_halign(fa_center);
+	draw_set_color(c_black);
+	draw_sprite_ext(dialogBorder_spr, 0, x, y - yScreenSize / 4,2 + string_length("!Infected!") / 3, 1.5, 0, -1, 1);
+	draw_text(x - 1, y - yScreenSize / 4 - 4, "!Infected!");
+	draw_set_color(make_color_rgb(255, 215, 0));
+	draw_text(x, y - yScreenSize / 4 - 4, "!Infected!");
+	draw_set_halign(fa_left);
 }
 
 //#####LAYER 3#####
