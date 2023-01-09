@@ -448,7 +448,7 @@ if (!noHUD && instance_exists(player_obj))
 	if (global.keyBlue) {
 		draw_sprite_ext(blueKeycard_spr, -1, (x + xScreenSize / 2) - 42, (y - yScreenSize / 2) + 32, 1, 1, 0, -1, 1);
 	}
-	if (global.keyBlue) {
+	if (global.keyYellow) {
 		draw_sprite_ext(yellowKeycard_spr, -1, (x + xScreenSize / 2) - 56, (y - yScreenSize / 2) + 32, 1, 1, 0, -1, 1);
 	}
 	

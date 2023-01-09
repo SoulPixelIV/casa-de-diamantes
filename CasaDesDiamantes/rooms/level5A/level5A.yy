@@ -535,7 +535,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_B21D5E6","properties":[],"isDnd":false,"objectId":{"name":"Level5A_Level6_teleporter","path":"objects/Level5A_Level6_teleporter/Level5A_Level6_teleporter.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":4.8125,"scaleY":13.4375,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":6727.5,"y":1526.5,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_3B342E0C","properties":[],"isDnd":false,"objectId":{"name":"Level5A_Level4_teleporter","path":"objects/Level5A_Level4_teleporter/Level5A_Level4_teleporter.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":5.75,"scaleY":11.6875,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1090.0,"y":1902.5,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_1A0417E9","properties":[],"isDnd":false,"objectId":{"name":"Spawn2_obj","path":"objects/Spawn2_obj/Spawn2_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":6592.0,"y":1568.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_323DDEA8","properties":[],"isDnd":false,"objectId":{"name":"warpzoneKey_obj","path":"objects/warpzoneKey_obj/warpzoneKey_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":6592.0,"y":1824.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_58CD3B1D","properties":[],"isDnd":false,"objectId":{"name":"Spawn3_obj","path":"objects/Spawn3_obj/Spawn3_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":6688.0,"y":1824.0,},
       ],"visible":true,"depth":1100,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":"none","properties":[],},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"MidgroundObjects","instances":[],"visible":true,"depth":1200,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Tiles","tilesetId":{"name":"caveTilesOld","path":"tilesets/caveTilesOld/caveTilesOld.yy",},"x":0,"y":0,"tiles":{"TileDataFormat":1,"SerialiseWidth":282,"SerialiseHeight":94,"TileCompressedData":[
@@ -765,7 +765,7 @@
       ],"visible":true,"depth":3200,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
   ],
   "inheritLayers": false,
-  "creationCodeFile": "${project_dir}/rooms/level3/RoomCreationCode.gml",
+  "creationCodeFile": "${project_dir}/rooms/level5A/RoomCreationCode.gml",
   "inheritCode": false,
   "instanceCreationOrder": [
     {"name":"inst_2A8B1492_1_1_1_1_1_1_1","path":"rooms/level5A/level5A.yy",},
@@ -1226,7 +1226,7 @@
     {"name":"inst_18CF951F","path":"rooms/level5A/level5A.yy",},
     {"name":"inst_46827521","path":"rooms/level5A/level5A.yy",},
     {"name":"inst_1C8CC80F","path":"rooms/level5A/level5A.yy",},
-    {"name":"inst_323DDEA8","path":"rooms/level5A/level5A.yy",},
+    {"name":"inst_58CD3B1D","path":"rooms/level5A/level5A.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

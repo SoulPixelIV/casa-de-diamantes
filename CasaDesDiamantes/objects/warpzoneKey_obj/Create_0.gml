@@ -7,3 +7,7 @@ movTimerSave = movTimer;
 
 spawnDelay = 156;
 alarm[0] = spawnDelay;
+
+if (global.hasWarpzoneKey) {
+	instance_destroy();
+}

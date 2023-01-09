@@ -64,6 +64,8 @@ global.level6GateAOpen = false;
 global.level6GateBOpen = false;
 
 global.warpzone1DoorOpen = false;
+global.warpzone1Reward = false;
+global.warpzone1RewardGiven = false;
 
 
 global.hat = choose(noone);

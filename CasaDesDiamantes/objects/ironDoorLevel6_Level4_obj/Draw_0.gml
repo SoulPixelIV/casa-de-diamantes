@@ -23,13 +23,13 @@ if (distance_to_object(player_obj) < 32 && image_index == 1)
 	
 	if (finishingTeleport) {
 		waitDelay -= global.dt;
-		if (waitDelay < 0) {			
-			player_obj.x = Spawn2_obj.x;
-			player_obj.y = Spawn2_obj.y;
-			global.warpzone1DoorOpen = true;
-			global.warpzone1Reward = true;
-			camera_obj.blackscreenStrength = 0;
-			player_obj.movement = true;
+		if (waitDelay < 0) {	
+			part_emitter_destroy_all(global.partSystem);
+			audio_stop_all();
+			instance_destroy(player_obj);
+			global.level4DoorOpen = true;
+			global.spawn = 1;
+			room_goto(level4);
 		}
 	}
 }
