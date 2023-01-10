@@ -378,7 +378,7 @@ if (!noHUD && instance_exists(player_obj))
 	draw_text_colour((x - xScreenSize / 2) + 16, (y + yScreenSize / 2) - 16, "Framerate: " + string(currFps), c_white, c_white, c_white, c_white, 1);
 	//draw_text_colour((x - xScreenSize / 2) + 16, (y + yScreenSize / 2) - 32, "Delta: " + string(currDeltatime), c_white, c_white, c_white, c_white, 1);
 	draw_set_halign(fa_center);
-	draw_text_color(x, (y - yScreenSize / 2) + 6, "F3 - Level Select", c_white, c_white, c_white, c_white, 1);
+	//draw_text_color(x, (y - yScreenSize / 2) + 6, "F3 - Level Select", c_white, c_white, c_white, c_white, 1);
 	draw_set_halign(fa_left);
 
 	//Healthbar
@@ -898,14 +898,52 @@ if (player_obj.isZombie)
 
 if (showInfOverlay && !showedInf)
 {
+	if (!showInfectionHealedText) {
+		if (!startAlphaTransition) {
+			overlayTextAlpha = 0;
+			startAlphaTransition = true;
+		}
+		
+		if (overlayTextAlpha < 1) {
+			overlayTextAlpha += global.dt / 50;
+		}
+		
+		draw_set_font(gothicPixel_fnt);
+		draw_set_halign(fa_center);
+		draw_set_color(c_black);
+		draw_set_alpha(overlayTextAlpha);
+		draw_sprite_ext(dialogBorder_spr, 0, x, y - yScreenSize / 3,2 + string_length("!Infected!") / 3, 1.5, 0, -1, overlayTextAlpha);
+		draw_text(x - 1, y - yScreenSize / 3 - 4, "!Infected!");
+		draw_set_color(make_color_rgb(255, 75, 0));
+		draw_text(x, y - yScreenSize / 3 - 4, "!Infected!");
+		draw_set_halign(fa_left);
+		draw_set_alpha(1);
+	}
+}
+if (showInfectionHealedText) {
+	infectionHealedTextTimer -= global.dt;
+		
 	draw_set_font(gothicPixel_fnt);
 	draw_set_halign(fa_center);
 	draw_set_color(c_black);
-	draw_sprite_ext(dialogBorder_spr, 0, x, y - yScreenSize / 4,2 + string_length("!Infected!") / 3, 1.5, 0, -1, 1);
-	draw_text(x - 1, y - yScreenSize / 4 - 4, "!Infected!");
-	draw_set_color(make_color_rgb(255, 215, 0));
-	draw_text(x, y - yScreenSize / 4 - 4, "!Infected!");
+	draw_set_alpha(overlayTextAlpha);
+	draw_sprite_ext(dialogBorder_spr, 0, x, y - yScreenSize / 3,2 + string_length("!Infection Healed!") / 3, 1.5, 0, -1, overlayTextAlpha);
+	draw_text(x - 1, y - yScreenSize / 3 - 4, "!Infection Healed!");
+	draw_set_color(make_color_rgb(75, 255, 0));
+	draw_text(x, y - yScreenSize / 3 - 4, "!Infection Healed!");
 	draw_set_halign(fa_left);
+	draw_set_alpha(1);
+		
+	if (infectionHealedTextTimer < 0) {
+		overlayTextAlpha -= global.dt / 100;
+		
+		if (overlayTextAlpha < 0.05) {
+			infectionHealedTextTimer = infectionHealedTextTimerSave;
+			overlayTextAlpha = 1;
+			startAlphaTransition = false;
+			showInfectionHealedText = false;
+		}
+	}
 }
 
 //#####LAYER 3#####

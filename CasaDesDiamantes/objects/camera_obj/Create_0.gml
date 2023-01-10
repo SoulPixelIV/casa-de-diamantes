@@ -55,6 +55,10 @@ redDoorMessage = false;
 blueDoorMessage = false;
 yellowDoorMessage = false;
 warpzoneMessage = false;
+showInfectionHealedText = false;
+infectionHealedTextTimer = 800;
+overlayTextAlpha = 1;
+startAlphaTransition = false;
 
 cameraSpeed = 0.02;
 ycameraSpeed = 0.02;
@@ -70,6 +74,7 @@ finalDeathScreenTimerSave = finalDeathScreenTimer;
 pauseDeathTimerSave = pauseDeathTimer;
 newWeaponTimerSave = newWeaponTimer;
 deathDelayTimerSave = deathDelayTimer;
+infectionHealedTextTimerSave = infectionHealedTextTimer;
 
 shake = false;
 shake_time = 0;

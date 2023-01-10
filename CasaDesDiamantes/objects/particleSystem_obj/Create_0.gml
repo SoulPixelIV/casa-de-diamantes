@@ -1,6 +1,6 @@
 //Particles
 
-global.partSystem = part_system_create();
+global.partSystem = part_system_create_layer("ForegroundObjects", false);
 
 //Fire Sparks
 global.fireSparkPart = part_type_create();
@@ -31,6 +31,17 @@ part_type_direction(global.toxicPart, 0, 359, 0, 3);
 part_type_gravity(global.toxicPart, 0.0001, 270);
 part_type_color1(global.toxicPart, c_purple);
 part_type_alpha3(global.toxicPart, 0, 0.25, 0);
+
+//Smoke Particles
+global.smokePart = part_type_create();
+part_type_sprite(global.smokePart, toxicCloud_spr, true, true, true);
+part_type_life(global.smokePart, 300, 700);
+part_type_size(global.smokePart, 0.7, 1.2, 0, 0);
+part_type_orientation(global.smokePart, 0, 359, 0.02, 0, 1);
+part_type_direction(global.smokePart, 0, 180, 0, 3);
+part_type_speed(global.smokePart, -0.6, 0.6, -0.001, 0);
+part_type_gravity(global.smokePart, 0.0001, 270);
+part_type_alpha3(global.smokePart, 0, 0.75, 0);
 
 global.fireSparkBigPart = part_type_create();
 part_type_sprite(global.fireSparkBigPart, fireSpark_spr, true, true, true);
