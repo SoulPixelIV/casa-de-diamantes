@@ -47,6 +47,7 @@ onMovingPlatform = false;
 onBooster = false;
 boosterLockedMovement = false;
 boosterLockedMovementTimer = 50;
+inChamber = false;
 
 //Action
 hp = 100;

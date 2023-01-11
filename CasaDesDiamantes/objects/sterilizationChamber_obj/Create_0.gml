@@ -7,7 +7,7 @@ sterilizationTimer = 600;
 sterilizationTimerSave = sterilizationTimer;
 
 smokeEmitter = part_emitter_create(global.partSystem);
-part_emitter_region(global.partSystem, smokeEmitter, x - 32, x + 32, y - 48, y + 12, ps_shape_ellipse, ps_distr_gaussian);
+part_emitter_region(global.partSystem, smokeEmitter, x - 48, x + 48, y - 24, y + 12, ps_shape_ellipse, ps_distr_gaussian);
 
 
 

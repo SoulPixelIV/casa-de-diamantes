@@ -209,7 +209,7 @@ if (movement && !isZombie)
 		dashInvincibility -= global.dt;
 	}
 	if (dashInvincibility < 0) {
-		if (!place_meeting(x, y, slowmoCollider_obj)) {
+		if (!place_meeting(x, y, slowmoCollider_obj) && !inChamber) {
 			invincible = false;
 		}
 		dashInvincibility = dashInvincibilitySave;
@@ -558,12 +558,12 @@ if (!movement)
 }
 else
 {
-	if (!dashInvincibilityOn && !place_meeting(x, y, slowmoCollider_obj)) {
+	if (!dashInvincibilityOn && !place_meeting(x, y, slowmoCollider_obj) && !inChamber) {
 		invincible = false;
 	}
 }
 
-if (place_meeting(x, y, slowmoCollider_obj)) {
+if (place_meeting(x, y, slowmoCollider_obj) || inChamber) {
 	invincible = true;
 }
 
@@ -1435,7 +1435,9 @@ if (damageFlickerTimer < 0)
 if (damageCooldown < 0)
 {
 	damageRecieved = false;
-	image_alpha = 1;
+	if (!inChamber) {
+		image_alpha = 1;
+	}
 }
 
 if (hp <= 0 || infection > hp)
