@@ -55,6 +55,7 @@ aggroTimer = 130;
 deaggroTimer = 3000;
 exclamationmarkTimer = 250;
 dmgHitbox = noone;
+body = noone;
 
 light = noone;
 hitbox = noone;

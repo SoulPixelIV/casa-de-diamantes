@@ -325,7 +325,30 @@ if (hp < 0)
 	{
 		instance_destroy(dmgHitbox);
 	}
-	instance_change(zombieGirlDeath2_obj, true);
+	
+	var leg = instance_create_layer(x + 6, y + 3, "Instances", crawlerBodyPart_obj);
+	leg.image_index = 0;
+	var cannon = instance_create_layer(x, y - 6, "Instances", crawlerBodyPart_obj);
+	cannon.image_index = 1;
+	var head = instance_create_layer(x + 9, y - 2, "Instances", crawlerBodyPart_obj);
+	head.image_index = 2;
+	
+	var amount = random_range(12, 18);
+	repeat(amount) {
+		instance_create_layer(x, y, "Instances", crawlerChunk_obj);
+	}
+	
+	var amount2 = random_range(6, 12);
+	repeat(amount2) {
+		var blood = instance_create_layer(x + random_range(-22, 22), y + random_range(-8, 8), "Instances", bloodSpread2_obj);
+		blood.image_xscale = choose(random_range(0.7, 1), random_range(-0.7, -1));
+		blood.image_yscale = choose(random_range(0.7, 1), random_range(-0.7, -1));
+	}
+	
+	if (instance_exists(dmgHitbox)) {
+		instance_destroy(dmgHitbox);
+	}
+	instance_destroy();
 }
 
 if (damageTintTimer < 0)
@@ -479,20 +502,22 @@ if (attackDelay1 < 0 || attackDelay2 < 0)
 	}
 }
 
-if (instance_exists(light))
-{
-	with (light)
+if (instance_exists(body)) {
+	if (instance_exists(light))
 	{
-		light[| eLight.X] = body.x;
-		light[| eLight.Y] = body.y;
+		with (light)
+		{
+			light[| eLight.X] = body.x;
+			light[| eLight.Y] = body.y;
+		}
 	}
-}
-if (instance_exists(dmgHitbox))
-{
-	with (dmgHitbox)
+	if (instance_exists(dmgHitbox))
 	{
-		x = body.x + 37 * body.image_xscale;
-		y = body.y - 48;
+		with (dmgHitbox)
+		{
+			x = body.x + 37 * body.image_xscale;
+			y = body.y - 48;
+		}
 	}
 }
 

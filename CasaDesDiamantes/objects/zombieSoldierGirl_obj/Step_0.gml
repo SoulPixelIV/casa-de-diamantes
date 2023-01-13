@@ -262,7 +262,27 @@ if (hp < 0)
 	damageTint = false;
 	damageTintHeadshot = false;
 	attackCooldown = attackCooldownSave;
-	instance_change(zombieSoldierGirlDeath1_obj, true);
+	
+	var stinger = instance_create_layer(x - 12, y, "Instances", zombieSoldierGirlBodyPart_obj);
+	stinger.image_index = 0;
+	var head = instance_create_layer(x + 6, y - 2, "Instances", zombieSoldierGirlBodyPart_obj);
+	head.image_index = 1;
+	var leg = instance_create_layer(x - 12, y + 6, "Instances", zombieSoldierGirlBodyPart_obj);
+	leg.image_index = 2;
+	
+	var amount = random_range(12, 18);
+	repeat(amount) {
+		instance_create_layer(x, y, "Instances", zombieChunk_obj);
+	}
+	
+	var amount2 = random_range(6, 12);
+	repeat(amount2) {
+		var blood = instance_create_layer(x + random_range(-16, 16), y + random_range(-20, 20), "Instances", bloodSpread2_obj);
+		blood.image_xscale = choose(random_range(0.7, 1), random_range(-0.7, -1));
+		blood.image_yscale = choose(random_range(0.7, 1), random_range(-0.7, -1));
+	}
+	
+	instance_destroy();
 }
 
 //Attack

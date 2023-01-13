@@ -18,3 +18,7 @@ if (follow)
 	x = followX;
 	y = followY;
 }
+
+if (!instance_exists(body)) {
+	instance_destroy();
+}

@@ -325,6 +325,13 @@ if (hp < 0)
 		instance_create_layer(x, y, "Instances", zombieChunk_obj);
 	}
 	
+	var amount2 = random_range(6, 12);
+	repeat(amount2) {
+		var blood = instance_create_layer(x + random_range(-16, 16), y + random_range(-20, 20), "Instances", bloodSpread2_obj);
+		blood.image_xscale = choose(random_range(0.7, 1), random_range(-0.7, -1));
+		blood.image_yscale = choose(random_range(0.7, 1), random_range(-0.7, -1));
+	}
+	
 	instance_destroy();
 }
 
