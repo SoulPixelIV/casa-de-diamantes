@@ -261,7 +261,7 @@ if (instance_exists(minecartForeground_obj))
 }
 
 //Create dust particles while dashing
-if (isDashing && dashDustEndTimer > 0) {
+if (isDashing && dashDustEndTimer > 0 && !inChamber) {
 	dashDustTimer -= global.dt;
 	dashDustEndTimer -= global.dt;
 	if (dashDustTimer < 0)
@@ -353,7 +353,7 @@ if (isDashing && !onLadder)
 			}
 		
 			//Particles
-			if (horspeed != 0 && crouchslide) {
+			if (horspeed != 0 && crouchslide && !inChamber) {
 				walljumpDustTimer -= global.dt;
 				if (walljumpDustTimer < 0)
 				{
@@ -568,7 +568,7 @@ if (place_meeting(x, y, slowmoCollider_obj) || inChamber) {
 }
 
 //Player Trail
-if (!huggingWall) {
+if (!huggingWall && !inChamber) {
 	if (dashInvincibilityOn || activateTrailEffect || jumpType == 2) {
 		trailDensity -= global.dt;
 	}
@@ -582,7 +582,7 @@ if (!huggingWall) {
 }
 
 //Create Dust Particles
-if (grounded && !createdParticles && !isDashing)
+if (grounded && !createdParticles && !isDashing && !inChamber)
 {
 	repeat(5)
 	{
@@ -875,7 +875,7 @@ if (huggingWall && !grounded && !deathActivated)
 	}
 
 	walljumpDustTimer -= global.dt;
-	if (walljumpDustTimer < 0)
+	if (walljumpDustTimer < 0 && !inChamber)
 	{
 		instance_create_layer(player_obj.x - 6 * image_xscale, player_obj.y + 22, "ForegroundObjects", dustParticle_obj);
 		walljumpDustTimer = walljumpDustTimerSave;

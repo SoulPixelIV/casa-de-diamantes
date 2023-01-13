@@ -1,5 +1,5 @@
 /// @description Damage Detection
-if (hp > 0)
+if (hp > 0 && !inChamber)
 {
 	if (!damageRecieved && !isZombie)
 	{

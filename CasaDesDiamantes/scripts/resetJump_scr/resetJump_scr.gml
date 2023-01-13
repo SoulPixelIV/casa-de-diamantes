@@ -19,7 +19,7 @@ function resetJump_scr() {
 	player_obj.wallJumps = player_obj.wallJumpsSave;
 	player_obj.wallJumpingInAir = false;
 	player_obj.invincible = false;
-	if (!player_obj.landSoundPlayed)
+	if (!player_obj.landSoundPlayed && !player_obj.inChamber)
 	{
 		audio_play_sound(land_snd, 1, false);
 		audio_play_sound(landmoan_snd, 1, false);
