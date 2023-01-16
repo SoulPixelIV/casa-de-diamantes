@@ -59,6 +59,7 @@ showInfectionHealedText = false;
 infectionHealedTextTimer = 800;
 overlayTextAlpha = 1;
 startAlphaTransition = false;
+drawTutorialInfection = false;
 
 cameraSpeed = 0.02;
 ycameraSpeed = 0.02;

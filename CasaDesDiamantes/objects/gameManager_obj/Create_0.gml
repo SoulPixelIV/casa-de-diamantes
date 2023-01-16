@@ -13,6 +13,7 @@ global.multiplier = 1;
 global.multiplierTimer = 700;
 global.multiplierTimerSave = global.multiplierTimer;
 global.timer = 0;
+global.drawTutorialInfectionUsed = false;
 multiplierRun = false;
 
 global.pwlevel2UnlockedElevator = false;

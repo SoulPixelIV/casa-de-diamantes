@@ -345,9 +345,6 @@ if (hp < 0)
 		blood.image_yscale = choose(random_range(0.7, 1), random_range(-0.7, -1));
 	}
 	
-	if (instance_exists(dmgHitbox)) {
-		instance_destroy(dmgHitbox);
-	}
 	instance_destroy();
 }
 

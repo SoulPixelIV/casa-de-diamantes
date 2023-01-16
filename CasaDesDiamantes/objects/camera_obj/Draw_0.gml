@@ -230,6 +230,24 @@ with (player_obj)
 	}
 }
 
+if (drawTutorialInfection) {	
+	player_obj.movement = false;
+	draw_sprite_ext(menuWindow_spr, 0, x, y, 1, 1, 0, -1, 1);
+	
+	draw_set_font(gothicPixel_fnt);
+	draw_set_halign(fa_center);
+	draw_set_color(c_black);
+	draw_text(x - 1, y - yScreenSize / 3 + 32, "Tutorial - Infection\nToxic Fumes and more can cause an Infection.\nFind a sterilization chamber to heal yourself!\nWatch your healthbar to see the\nprogress of the Infection.\n\nPress Space to Continue!");
+	draw_set_color(make_color_rgb(255, 215, 0));
+	draw_text(x, y - yScreenSize / 3 + 32, "Tutorial - Infection\nToxic Fumes and more can cause an Infection.\nFind a sterilization chamber to heal yourself!\nWatch your healthbar to see the\nprogress of the Infection.\n\nPress Space to Continue!");
+	draw_set_halign(fa_left);
+	
+	if (keyboard_check_pressed(vk_space) || gamepad_button_check_pressed(4, gp_face1) || gamepad_button_check_pressed(0, gp_face1)) {
+		drawTutorialInfection = false;
+		player_obj.movement = true;
+	}
+}
+
 //################################################################## GUI LAYER ######################################################################
 
 //#####LAYER 0#####

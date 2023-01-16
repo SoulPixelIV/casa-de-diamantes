@@ -850,6 +850,7 @@
     {"id":{"name":"lightTest","path":"rooms/lightTest/lightTest.yy",},"order":6,},
     {"id":{"name":"light_create_area","path":"scripts/light_create_area/light_create_area.yy",},"order":7,},
     {"id":{"name":"light_create_line","path":"scripts/light_create_line/light_create_line.yy",},"order":8,},
+    {"id":{"name":"tutorialInfectionCollider_obj","path":"objects/tutorialInfectionCollider_obj/tutorialInfectionCollider_obj.yy",},"order":113,},
     {"id":{"name":"light_add_to_world","path":"scripts/light_add_to_world/light_add_to_world.yy",},"order":9,},
     {"id":{"name":"Level5B_Level4_teleporter","path":"objects/Level5B_Level4_teleporter/Level5B_Level4_teleporter.yy",},"order":35,},
     {"id":{"name":"movingPlatformCheckpoint_obj","path":"objects/movingPlatformCheckpoint_obj/movingPlatformCheckpoint_obj.yy",},"order":43,},

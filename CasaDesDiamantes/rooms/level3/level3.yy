@@ -43,6 +43,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_2EAA3E5A","properties":[],"isDnd":false,"objectId":{"name":"plagueDoor_obj","path":"objects/plagueDoor_obj/plagueDoor_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":12.484375,"scaleY":7.34375,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":7618.5,"y":756.5,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_70B77422","properties":[],"isDnd":false,"objectId":{"name":"enemyVisionBlockZone_obj","path":"objects/enemyVisionBlockZone_obj/enemyVisionBlockZone_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":17.5625,"scaleY":1.8125,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":5722.5,"y":1081.5,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7BAFE629","properties":[],"isDnd":false,"objectId":{"name":"fakewallTrigger_obj","path":"objects/fakewallTrigger_obj/fakewallTrigger_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":13.0625,"scaleY":11.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":4187.5,"y":1577.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_4012321F","properties":[],"isDnd":false,"objectId":{"name":"tutorialInfectionCollider_obj","path":"objects/tutorialInfectionCollider_obj/tutorialInfectionCollider_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":3.5,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":2384.0,"y":2071.0,},
       ],"visible":true,"depth":200,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMREffectLayer","resourceVersion":"1.0","name":"RedFilter","visible":true,"depth":300,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":"_filter_colourise","properties":[
         {"type":0,"name":"g_Intensity","value":"0.3",},
@@ -776,6 +777,7 @@
     {"name":"inst_1B20CB58","path":"rooms/level3/level3.yy",},
     {"name":"inst_220F552C","path":"rooms/level3/level3.yy",},
     {"name":"inst_36AF03CD","path":"rooms/level3/level3.yy",},
+    {"name":"inst_4012321F","path":"rooms/level3/level3.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
