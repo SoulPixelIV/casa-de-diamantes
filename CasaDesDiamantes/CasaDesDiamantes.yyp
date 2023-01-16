@@ -1010,6 +1010,7 @@
     {"id":{"name":"ledStripe2_obj","path":"objects/ledStripe2_obj/ledStripe2_obj.yy",},"order":3,},
     {"id":{"name":"backgroundWindow_obj","path":"objects/backgroundWindow_obj/backgroundWindow_obj.yy",},"order":5,},
     {"id":{"name":"zombieSoldierGirlDESIGN_spr","path":"sprites/zombieSoldierGirlDESIGN_spr/zombieSoldierGirlDESIGN_spr.yy",},"order":8,},
+    {"id":{"name":"zombieBucketGirlBodyParts_spr","path":"sprites/zombieBucketGirlBodyParts_spr/zombieBucketGirlBodyParts_spr.yy",},"order":0,},
     {"id":{"name":"doorDecorative_obj","path":"objects/doorDecorative_obj/doorDecorative_obj.yy",},"order":6,},
     {"id":{"name":"backgroundRestaurant_obj","path":"objects/backgroundRestaurant_obj/backgroundRestaurant_obj.yy",},"order":7,},
     {"id":{"name":"ledSign1_obj","path":"objects/ledSign1_obj/ledSign1_obj.yy",},"order":8,},
@@ -1399,6 +1400,7 @@
     {"id":{"name":"r_test","path":"rooms/r_test/r_test.yy",},"order":2,},
     {"id":{"name":"slowmoEnd_snd","path":"sounds/slowmoEnd_snd/slowmoEnd_snd.yy",},"order":2,},
     {"id":{"name":"crawlerFireAttack2_spr","path":"sprites/crawlerFireAttack2_spr/crawlerFireAttack2_spr.yy",},"order":3,},
+    {"id":{"name":"zombieBucketGirlBodyPart_obj","path":"objects/zombieBucketGirlBodyPart_obj/zombieBucketGirlBodyPart_obj.yy",},"order":25,},
     {"id":{"name":"playerFlipNude_spr","path":"sprites/playerFlipNude_spr/playerFlipNude_spr.yy",},"order":3,},
     {"id":{"name":"playerBow_spr","path":"sprites/playerBow_spr/playerBow_spr.yy",},"order":9,},
     {"id":{"name":"grenatePlant_spr","path":"sprites/grenatePlant_spr/grenatePlant_spr.yy",},"order":146,},
@@ -1621,6 +1623,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"UI","folderPath":"folders/UI.yy","order":16,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"UI Objects","folderPath":"folders/UI/UI Objects.yy","order":3,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"UI Sprites","folderPath":"folders/UI/UI Sprites.yy","order":2,},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Bodyparts","folderPath":"folders/Enemies/Enemy Sprites/BucketZombie/Bodyparts.yy","order":26,},
   ],
   "AudioGroups": [
     {"resourceType":"GMAudioGroup","resourceVersion":"1.3","name":"audiogroup_default","targets":-1,},

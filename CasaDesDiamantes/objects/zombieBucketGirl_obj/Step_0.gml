@@ -305,6 +305,27 @@ if (hp < 0)
 	global.multiplierTimer = global.multiplierTimerSave;
 	global.scorepoints += points * global.multiplier;
 	
+	var arm = instance_create_layer(x - 12, y - 6, "Instances", zombieBucketGirlBodyPart_obj);
+	arm.image_index = 0;
+	var leg = instance_create_layer(x + 6, y + 12, "Instances", zombieBucketGirlBodyPart_obj);
+	leg.image_index = 1;
+	var rose = instance_create_layer(x - 3, y - 2, "Instances", zombieBucketGirlBodyPart_obj);
+	rose.image_index = 2;
+	var head = instance_create_layer(x, y - 6, "Instances", zombieBucketGirlBodyPart_obj);
+	head.image_index = 3;
+	
+	var amount = random_range(20, 28);
+	repeat(amount) {
+		instance_create_layer(x, y, "Instances", zombieChunk_obj);
+	}
+	
+	var amount2 = random_range(12, 18);
+	repeat(amount2) {
+		var blood = instance_create_layer(x + random_range(-32, 32), y + random_range(-30, 30), "Instances", bloodSpread2_obj);
+		blood.image_xscale = choose(random_range(0.7, 1), random_range(-0.7, -1));
+		blood.image_yscale = choose(random_range(0.7, 1), random_range(-0.7, -1));
+	}
+	
 	instance_destroy();
 }
 

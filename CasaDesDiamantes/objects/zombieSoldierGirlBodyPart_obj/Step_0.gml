@@ -11,14 +11,14 @@ if (verspeed < 2)
 
 //Collision
 //horspeed
-if (!place_free(x + horspeed * global.dt, y))
+if (place_meeting(x + horspeed * global.dt, y, collider_obj))
 {
-    horspeed = -horspeed / 2;
+    horspeed = -horspeed / 2.5;
 } 
 //verspeed
-if (!place_free(x, y + verspeed * global.dt))
+if (place_meeting(x, y + verspeed * global.dt, collider_obj))
 {
-    verspeed = -verspeed / 2;   
+    verspeed = -verspeed / 2.5;   
 }
 
 if (horspeed != 0)
