@@ -1,9 +1,9 @@
+horspeed = random_range(-1.2, 1.2);
+verspeed = random_range(-1.2, -2);
 sprite_index = choose(meatchunk_spr, meatchunk2_spr);
-image_xscale = random_range(0.5, 0.75);
-image_yscale = random_range(0.5, 0.75);
-
-horspeed = random_range(-1.3, 1.3);
-verspeed = random_range(-0.8, -1);
+image_speed = 0;
 image_angle = random_range(0, 359);
-gravityStrength = -0.065;
+image_xscale = choose(random_range(0.8, 1), random_range(-0.8, -1));
+image_yscale = choose(random_range(0.8, 1), random_range(-0.8, -1));
+gravityStrength = -0.058;
 destroyTimer = 1620;

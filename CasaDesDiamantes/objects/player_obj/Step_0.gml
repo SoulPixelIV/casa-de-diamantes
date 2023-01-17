@@ -1442,9 +1442,26 @@ if (damageCooldown < 0)
 
 if (hp <= 0 || infection > hp)
 {
-	if (global.syringes < 1)
+	if (global.syringes < 1 || room == level0 || room == level1 || room == level2 || room == level3)
 	{
 		camera_obj.finalDeath = true;
+		
+		if (!createDeathChunks) {
+			var amount = random_range(12, 18);
+			repeat(amount) {
+				instance_create_layer(x, y, "Instances", meatchunk_obj);
+			}
+	
+			var amount2 = random_range(8, 14);
+			repeat(amount2) {
+				var blood = instance_create_layer(x + random_range(-16, 16), y + random_range(-20, 20), "Instances", bloodSpread2_obj);
+				blood.image_xscale = choose(random_range(0.7, 1), random_range(-0.7, -1));
+				blood.image_yscale = choose(random_range(0.7, 1), random_range(-0.7, -1));
+			}
+	
+			inChamber = true;
+			createDeathChunks = true;
+		}
 	}
 	if (instance_exists(toxicWater_obj)) {
 		if (place_meeting(x, y, toxicWater_obj)) {
@@ -1467,6 +1484,23 @@ if (hp <= 0 || infection > hp)
 	if (keyboard_check_pressed(ord("Q")))
 	{
 		camera_obj.finalDeath = true;
+		
+		if (!createDeathChunks) {
+			var amount = random_range(14, 20);
+			repeat(amount) {
+				instance_create_layer(x, y, "Instances", meatchunk_obj);
+			}
+	
+			var amount2 = random_range(8, 14);
+			repeat(amount2) {
+				var blood = instance_create_layer(x + random_range(-16, 16), y + random_range(-20, 20), "Instances", bloodSpread2_obj);
+				blood.image_xscale = choose(random_range(0.7, 1), random_range(-0.7, -1));
+				blood.image_yscale = choose(random_range(0.7, 1), random_range(-0.7, -1));
+			}
+	
+			inChamber = true;
+			createDeathChunks = true;
+		}
 	}
 }
 

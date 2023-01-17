@@ -1,7 +1,3 @@
-x += horspeed * global.dt;
-y += verspeed * global.dt;
-image_angle += global.dt / 2;
-
 destroyTimer -= global.dt;
 
 //Gravity
@@ -12,14 +8,19 @@ if (verspeed < 2)
 
 //Collision
 //horspeed
-if (!place_free(x + horspeed, y))
+if (place_meeting(x + horspeed * global.dt, y, collider_obj))
 {
-    horspeed = -horspeed / 2;
+    horspeed = -horspeed / 2.5;
 } 
 //verspeed
-if (!place_free(x, y + verspeed))
+if (place_meeting(x, y + verspeed * global.dt, collider_obj))
 {
-    verspeed = -verspeed / 2;   
+    verspeed = -verspeed / 2.5;   
+}
+
+if (horspeed != 0)
+{
+	image_angle += global.dt / 2;
 }
 
 if (destroyTimer < 0)
@@ -30,3 +31,6 @@ if (destroyTimer < 0)
 		instance_destroy();
 	}
 }
+
+x += horspeed * global.dt;
+y += verspeed * global.dt;

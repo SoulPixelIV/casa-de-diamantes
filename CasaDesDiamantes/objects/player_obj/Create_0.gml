@@ -47,7 +47,6 @@ onMovingPlatform = false;
 onBooster = false;
 boosterLockedMovement = false;
 boosterLockedMovementTimer = 50;
-inChamber = false;
 
 //Action
 hp = 100;
@@ -78,6 +77,8 @@ blackborderPause = false;
 camFollowTarget = noone;
 glitterTimer = random_range(125,500);
 
+inChamber = false;
+createDeathChunks = false;
 radiationHitTimer = 35;
 sniperDamageValue = 0;
 sniperDamageValueMax = 500;
