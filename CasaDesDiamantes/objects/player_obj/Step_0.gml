@@ -1472,6 +1472,15 @@ if (hp <= 0 || infection > hp)
 	if (!deathActivated)
 	{
 		death_scr();
+		var vineAmount = random_range(6, 11);
+		repeat(vineAmount) {
+			currVine = instance_create_layer(x, y, "ForegroundObjects", vine_obj);
+			currVine.image_angle = random_range(0, 359);
+			currVine.growSpeed = random_range(1, 2.4);
+		}
+		movement = false;
+		inChamber = true;
+		
 		deathActivated = true;
 	}
 	

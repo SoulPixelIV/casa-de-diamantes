@@ -536,6 +536,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_3B342E0C","properties":[],"isDnd":false,"objectId":{"name":"Level5A_Level4_teleporter","path":"objects/Level5A_Level4_teleporter/Level5A_Level4_teleporter.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":5.75,"scaleY":11.6875,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1090.0,"y":1902.5,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_1A0417E9","properties":[],"isDnd":false,"objectId":{"name":"Spawn2_obj","path":"objects/Spawn2_obj/Spawn2_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":6592.0,"y":1568.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_58CD3B1D","properties":[],"isDnd":false,"objectId":{"name":"Spawn3_obj","path":"objects/Spawn3_obj/Spawn3_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":6688.0,"y":1824.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_11A202AD","properties":[],"isDnd":false,"objectId":{"name":"syringeStatic_obj","path":"objects/syringeStatic_obj/syringeStatic_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1696.0,"y":1888.0,},
       ],"visible":true,"depth":1100,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":"none","properties":[],},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"MidgroundObjects","instances":[],"visible":true,"depth":1200,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Tiles","tilesetId":{"name":"caveTilesOld","path":"tilesets/caveTilesOld/caveTilesOld.yy",},"x":0,"y":0,"tiles":{"TileDataFormat":1,"SerialiseWidth":282,"SerialiseHeight":94,"TileCompressedData":[
@@ -1227,6 +1228,7 @@
     {"name":"inst_46827521","path":"rooms/level5A/level5A.yy",},
     {"name":"inst_1C8CC80F","path":"rooms/level5A/level5A.yy",},
     {"name":"inst_58CD3B1D","path":"rooms/level5A/level5A.yy",},
+    {"name":"inst_11A202AD","path":"rooms/level5A/level5A.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
