@@ -10,6 +10,7 @@ function revive_scr() {
 	player_obj.infection = 0;
 	player_obj.hp = 100;
 	player_obj.deathActivated = false;
+	player_obj.inChamber = false;
 	damageRecieved = true;
 	
 	player_obj.plagueTransformation = true;

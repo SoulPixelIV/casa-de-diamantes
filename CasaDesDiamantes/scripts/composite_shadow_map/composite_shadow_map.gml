@@ -7,7 +7,7 @@ function composite_shadow_map(argument0) {
 	var lightCount = ds_list_size(lights);
 
 	// Pre-composite step
-	lighting_pre_composite();
+	//lighting_pre_composite();
 
 	if(lightCount == 0) {
 		// They mostly come at night...mostly...
@@ -119,7 +119,7 @@ function composite_shadow_map(argument0) {
 		var lightLutIntensity = light[| eLight.LutIntensity];
 	
 		// Draw the light to the shadow map
-		light_draw_shadow_map(light, shadowMap, true);
+		//light_draw_shadow_map(light, shadowMap, true);
 	
 		// Convert light color to an array
 		colorArray[0] = (lightColor & $FF) / $FF;			// R

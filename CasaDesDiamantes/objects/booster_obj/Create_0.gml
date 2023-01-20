@@ -12,3 +12,5 @@ else
 {
 	bluelight = noone;
 }
+
+animationSpeed = 0.5;

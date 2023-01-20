@@ -1,4 +1,4 @@
-image_xscale += (global.dt / 80) * growSpeed;
+image_xscale += (global.dt / 30) * growSpeed;
 
 
 
