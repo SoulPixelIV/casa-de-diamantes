@@ -1379,6 +1379,9 @@ switch (sprite_index)
 	case playerCrouch_spr:
 		animationSpeed = 0.5;
 		break;
+	case playerVineDeath_spr:
+		animationSpeed = 0.5;
+		break;
 }
 
 if (grounded || !flip)
@@ -1462,26 +1465,29 @@ if (hp <= 0 || infection > hp)
 			inChamber = true;
 			createDeathChunks = true;
 		}
+	} else {
+		//Death
+		if (!deathActivated)
+		{
+			death_scr();
+			var vineAmount = random_range(6, 11);
+			repeat(vineAmount) {
+				currVine = instance_create_layer(x, y, "Instances", vine_obj);
+				currVine.image_angle = random_range(0, 359);
+				currVine.growSpeed = random_range(1, 2.4);
+			}
+			vineDeathSprite = instance_create_layer(x, y, "ForegroundObjects", playerVineDeath_obj);
+			movement = false;
+			inChamber = true;
+		
+			deathActivated = true;
+		}
 	}
+	
 	if (instance_exists(toxicWater_obj)) {
 		if (place_meeting(x, y, toxicWater_obj)) {
 			camera_obj.finalDeath = true;
 		}
-	}
-	//Death
-	if (!deathActivated)
-	{
-		death_scr();
-		var vineAmount = random_range(6, 11);
-		repeat(vineAmount) {
-			currVine = instance_create_layer(x, y, "ForegroundObjects", vine_obj);
-			currVine.image_angle = random_range(0, 359);
-			currVine.growSpeed = random_range(1, 2.4);
-		}
-		movement = false;
-		inChamber = true;
-		
-		deathActivated = true;
 	}
 	
 	//Revive
@@ -1605,7 +1611,7 @@ if (!place_meeting(x, y, cameraViewIn_obj) && !place_meeting(x, y, cameraViewOut
 //Death Slowmo
 if (deathSlowmo)
 {
-	sprite_index = playerDeath_spr;
+	sprite_index = playerVineDeath_spr;
 	global.timeScale += global.dt / 200;
 	
 	if (global.timeScale > 0.95)

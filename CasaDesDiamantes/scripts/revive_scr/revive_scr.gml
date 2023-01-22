@@ -16,4 +16,11 @@ function revive_scr() {
 	player_obj.plagueTransformation = true;
 	player_obj.y -= 36;
 	camera_obj.showInfOverlay = true;
+	
+	if (instance_exists(vine_obj)) {
+		instance_destroy(vine_obj);
+	}
+	if (instance_exists(playerVineDeath_obj)) {
+		instance_destroy(playerVineDeath_obj);
+	}
 }
