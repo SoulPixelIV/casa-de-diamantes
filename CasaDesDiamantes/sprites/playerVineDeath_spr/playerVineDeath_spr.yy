@@ -37,7 +37,7 @@
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"98f2ce8e-2a91-4ba3-8a8f-f886bdedfc76",},
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"757b8328-db83-4c5a-bb39-358b19f75b67",},
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"4c808076-2af4-4dce-8e1d-b1d211588c7c",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"4b7efc4d-5536-40fd-b634-0b797029d34f",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"c3a25df3-f20d-4e5e-9adc-81eafeaea152",},
   ],
   "sequence": {
     "resourceType": "GMSequence",
@@ -63,7 +63,7 @@
             {"id":"6d5ef30b-a301-48f9-b6ee-b3c228076cce","Key":6.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"98f2ce8e-2a91-4ba3-8a8f-f886bdedfc76","path":"sprites/playerVineDeath_spr/playerVineDeath_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"51121d20-c6e8-4abd-a7c9-7e7a82169ab9","Key":7.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"757b8328-db83-4c5a-bb39-358b19f75b67","path":"sprites/playerVineDeath_spr/playerVineDeath_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"85c8cd44-9761-467e-939f-4944c5ce17e1","Key":8.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"4c808076-2af4-4dce-8e1d-b1d211588c7c","path":"sprites/playerVineDeath_spr/playerVineDeath_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"eeeca8a3-65c7-4b11-9180-292f21a74d3e","Key":9.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"4b7efc4d-5536-40fd-b634-0b797029d34f","path":"sprites/playerVineDeath_spr/playerVineDeath_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"dabf09fa-7439-4313-b84d-5af85e36bb06","Key":9.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"c3a25df3-f20d-4e5e-9adc-81eafeaea152","path":"sprites/playerVineDeath_spr/playerVineDeath_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,

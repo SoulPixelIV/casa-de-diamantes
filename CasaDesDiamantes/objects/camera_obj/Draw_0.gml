@@ -422,7 +422,7 @@ if (!noHUD && instance_exists(player_obj))
 	{
 		draw_sprite_ext(healthbarTop2_spr, -1, 18 + (x - xScreenSize / 2), 18 - (player_obj.hp - 100) + (y - yScreenSize / 2), 1, 1, 0, -1, 1);
 	}
-	draw_sprite_ext(healthbar_spr, 0, 18 + (x - xScreenSize / 2), 130 + (y - yScreenSize / 2), 1, 1 * (player_obj.hp / 100), 0, -1, 1);
+	draw_sprite_ext(healthbar_spr, 0, 18 + (x - xScreenSize / 2), 130 + (y - yScreenSize / 2), 1, clamp(1 * (player_obj.hp / 100), 0, 100), 0, -1, 1);
 	if (player_obj.plagueTransformation)
 	{
 		draw_sprite_ext(healthbarTop2Infection_spr, -1, 18 + (x - xScreenSize / 2), (118 - player_obj.infection) + (y - yScreenSize / 2), 1, 1, 0, -1, 1);
@@ -736,6 +736,56 @@ if (!noHUD && instance_exists(player_obj))
 	}
 }
 
+if (showInfOverlay && !showedInf)
+{
+	if (!showInfectionHealedText) {
+		if (!startAlphaTransition) {
+			overlayTextAlpha = 0;
+			startAlphaTransition = true;
+		}
+		
+		if (overlayTextAlpha < 1) {
+			overlayTextAlpha += global.dt / 50;
+		}
+		
+		draw_set_font(gothicPixel_fnt);
+		draw_set_halign(fa_center);
+		draw_set_color(c_black);
+		draw_set_alpha(overlayTextAlpha);
+		draw_sprite_ext(dialogBorder_spr, 0, x, y - yScreenSize / 3,2 + string_length("!Infected!") / 3, 1.5, 0, -1, overlayTextAlpha);
+		draw_text(x - 1, y - yScreenSize / 3 - 4, "!Infected!");
+		draw_set_color(make_color_rgb(255, 75, 0));
+		draw_text(x, y - yScreenSize / 3 - 4, "!Infected!");
+		draw_set_halign(fa_left);
+		draw_set_alpha(1);
+	}
+}
+if (showInfectionHealedText) {
+	infectionHealedTextTimer -= global.dt;
+		
+	draw_set_font(gothicPixel_fnt);
+	draw_set_halign(fa_center);
+	draw_set_color(c_black);
+	draw_set_alpha(overlayTextAlpha);
+	draw_sprite_ext(dialogBorder_spr, 0, x, y - yScreenSize / 3,2 + string_length("!Infection Healed!") / 3, 1.5, 0, -1, overlayTextAlpha);
+	draw_text(x - 1, y - yScreenSize / 3 - 4, "!Infection Healed!");
+	draw_set_color(make_color_rgb(75, 255, 0));
+	draw_text(x, y - yScreenSize / 3 - 4, "!Infection Healed!");
+	draw_set_halign(fa_left);
+	draw_set_alpha(1);
+		
+	if (infectionHealedTextTimer < 0) {
+		overlayTextAlpha -= global.dt / 100;
+		
+		if (overlayTextAlpha < 0.05) {
+			infectionHealedTextTimer = infectionHealedTextTimerSave;
+			overlayTextAlpha = 1;
+			startAlphaTransition = false;
+			showInfectionHealedText = false;
+		}
+	}
+}
+
 //#####LAYER 2#####
 //Menu Window
 if (showWindowMenu)
@@ -913,56 +963,6 @@ if (player_obj.isZombie)
 	draw_text(116, 111, "PRESS 'Q' TO DIE INSTANTLY!");
 }
 */
-
-if (showInfOverlay && !showedInf)
-{
-	if (!showInfectionHealedText) {
-		if (!startAlphaTransition) {
-			overlayTextAlpha = 0;
-			startAlphaTransition = true;
-		}
-		
-		if (overlayTextAlpha < 1) {
-			overlayTextAlpha += global.dt / 50;
-		}
-		
-		draw_set_font(gothicPixel_fnt);
-		draw_set_halign(fa_center);
-		draw_set_color(c_black);
-		draw_set_alpha(overlayTextAlpha);
-		draw_sprite_ext(dialogBorder_spr, 0, x, y - yScreenSize / 3,2 + string_length("!Infected!") / 3, 1.5, 0, -1, overlayTextAlpha);
-		draw_text(x - 1, y - yScreenSize / 3 - 4, "!Infected!");
-		draw_set_color(make_color_rgb(255, 75, 0));
-		draw_text(x, y - yScreenSize / 3 - 4, "!Infected!");
-		draw_set_halign(fa_left);
-		draw_set_alpha(1);
-	}
-}
-if (showInfectionHealedText) {
-	infectionHealedTextTimer -= global.dt;
-		
-	draw_set_font(gothicPixel_fnt);
-	draw_set_halign(fa_center);
-	draw_set_color(c_black);
-	draw_set_alpha(overlayTextAlpha);
-	draw_sprite_ext(dialogBorder_spr, 0, x, y - yScreenSize / 3,2 + string_length("!Infection Healed!") / 3, 1.5, 0, -1, overlayTextAlpha);
-	draw_text(x - 1, y - yScreenSize / 3 - 4, "!Infection Healed!");
-	draw_set_color(make_color_rgb(75, 255, 0));
-	draw_text(x, y - yScreenSize / 3 - 4, "!Infection Healed!");
-	draw_set_halign(fa_left);
-	draw_set_alpha(1);
-		
-	if (infectionHealedTextTimer < 0) {
-		overlayTextAlpha -= global.dt / 100;
-		
-		if (overlayTextAlpha < 0.05) {
-			infectionHealedTextTimer = infectionHealedTextTimerSave;
-			overlayTextAlpha = 1;
-			startAlphaTransition = false;
-			showInfectionHealedText = false;
-		}
-	}
-}
 
 //#####LAYER 3#####
 if (!noHUD)

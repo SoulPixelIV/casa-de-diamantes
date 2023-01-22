@@ -11,6 +11,7 @@ function revive_scr() {
 	player_obj.hp = 100;
 	player_obj.deathActivated = false;
 	player_obj.inChamber = false;
+	player_obj.gravityOn = true;
 	damageRecieved = true;
 	
 	player_obj.plagueTransformation = true;

@@ -165,6 +165,11 @@ else
 	unarmed = true;
 }
 
+//Set Blackscreen Strength
+blackscreenStartTimer = 300;
+blackscreenDone = false;
+camera_obj.blackscreenStrength = 1;
+
 //Help Vars
 damageFlickerTimerSave = damageFlickerTimer;
 walljumpDustTimerSave = walljumpDustTimer;

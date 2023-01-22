@@ -32,6 +32,18 @@ part_type_gravity(global.toxicPart, 0.0001, 270);
 part_type_color1(global.toxicPart, c_purple);
 part_type_alpha3(global.toxicPart, 0, 0.25, 0);
 
+//Respawn Particles
+global.infectionPart = part_type_create();
+part_type_sprite(global.infectionPart, toxicCloud_spr, true, true, true);
+part_type_life(global.infectionPart, 300, 700);
+part_type_size(global.infectionPart, 0.7, 1, 0, 0);
+part_type_orientation(global.infectionPart, 0, 359, 0.02, 0, 1);
+part_type_direction(global.infectionPart, 0, 180, 0, 3);
+part_type_speed(global.infectionPart, -0.3, 0.3, -0.001, 0);
+part_type_gravity(global.infectionPart, 0.0001, 270);
+part_type_alpha3(global.infectionPart, 0, 0.75, 0);
+part_type_color1(global.infectionPart, c_purple);
+
 //Smoke Particles
 global.smokePart = part_type_create();
 part_type_sprite(global.smokePart, toxicCloud_spr, true, true, true);

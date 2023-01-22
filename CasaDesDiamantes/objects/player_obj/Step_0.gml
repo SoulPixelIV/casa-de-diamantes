@@ -1063,6 +1063,20 @@ if (!isZombie && !deathActivated)
 	}
 }
 
+//Blackscreen Strength
+if (!blackscreenDone) {
+	if (blackscreenStartTimer > 0) {
+		blackscreenStartTimer -= global.dt;
+	}
+	if (blackscreenStartTimer <= 0) {
+		if (camera_obj.blackscreenStrength > 0) {
+			blackscreen_scr(1)
+		} else {
+			blackscreenDone = true;
+		}
+	}
+}
+
 //ShotZoom
 if (shotZoom)
 {
@@ -1448,6 +1462,10 @@ if (hp <= 0 || infection > hp)
 	if (global.syringes < 1 || room == level0 || room == level1 || room == level2 || room == level3)
 	{
 		camera_obj.finalDeath = true;
+		camera_obj.drawInfectionText = true;
+		movement = false;
+		inChamber = true;
+		gravityOn = false;
 		
 		if (!createDeathChunks) {
 			var amount = random_range(12, 18);
@@ -1470,8 +1488,7 @@ if (hp <= 0 || infection > hp)
 		if (!deathActivated)
 		{
 			death_scr();
-			var vineAmount = random_range(6, 11);
-			repeat(vineAmount) {
+			repeat(14) {
 				currVine = instance_create_layer(x, y, "Instances", vine_obj);
 				currVine.image_angle = random_range(0, 359);
 				currVine.growSpeed = random_range(1, 2.4);
@@ -1479,6 +1496,7 @@ if (hp <= 0 || infection > hp)
 			vineDeathSprite = instance_create_layer(x, y, "ForegroundObjects", playerVineDeath_obj);
 			movement = false;
 			inChamber = true;
+			gravityOn = false;
 		
 			deathActivated = true;
 		}
@@ -1487,6 +1505,7 @@ if (hp <= 0 || infection > hp)
 	if (instance_exists(toxicWater_obj)) {
 		if (place_meeting(x, y, toxicWater_obj)) {
 			camera_obj.finalDeath = true;
+			camera_obj.drawInfectionText = true;
 		}
 	}
 	
@@ -1499,6 +1518,7 @@ if (hp <= 0 || infection > hp)
 	if (keyboard_check_pressed(ord("Q")))
 	{
 		camera_obj.finalDeath = true;
+		camera_obj.drawInfectionText = true;
 		
 		if (!createDeathChunks) {
 			var amount = random_range(14, 20);
