@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "neuralnetworkLayer0_obj",
   "spriteId": {
     "name": "neuralBackgroundLayer0_spr",
     "path": "sprites/neuralBackgroundLayer0_spr/neuralBackgroundLayer0_spr.yy",
@@ -22,7 +25,7 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":2,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":2,"eventType":3,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],
@@ -30,8 +33,4 @@
     "name": "NeuralNetwork",
     "path": "folders/Backgrounds/NeuralNetwork.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "neuralnetworkLayer0_obj",
-  "tags": [],
-  "resourceType": "GMObject",
 }

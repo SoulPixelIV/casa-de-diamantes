@@ -5,6 +5,13 @@ zoom = 2;
 xWindowSize = xScreenSize * zoom;
 yWindowSize = yScreenSize * zoom;
 
+drawStartMenu = false;
+startMenuElement = 1;
+
+buttonBuffer = 120;
+buttonBufferStart = false;
+buttonBufferSave = buttonBuffer;
+
 titleAlpha = 0;
 
 optionsY = [200, 216, 232, 248];

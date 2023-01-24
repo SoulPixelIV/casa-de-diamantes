@@ -23,3 +23,9 @@ if (keyboard_check_pressed(ord("P")))
 		zoom = 1;
 	}
 }
+
+if (drawStartMenu) {
+	if (keyboard_check_pressed(vk_escape)) {
+		drawStartMenu = false;
+	}
+}

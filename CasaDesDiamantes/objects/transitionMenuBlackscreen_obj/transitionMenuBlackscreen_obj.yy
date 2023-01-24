@@ -1,10 +1,10 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "neuralnetworkLayer3_obj",
+  "name": "transitionMenuBlackscreen_obj",
   "spriteId": {
-    "name": "neuralBackgroundLayer3_spr",
-    "path": "sprites/neuralBackgroundLayer3_spr/neuralBackgroundLayer3_spr.yy",
+    "name": "black",
+    "path": "sprites/black/black.yy",
   },
   "solid": false,
   "visible": true,
@@ -15,7 +15,7 @@
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
-  "physicsGroup": 0,
+  "physicsGroup": 1,
   "physicsDensity": 0.5,
   "physicsRestitution": 0.1,
   "physicsLinearDamping": 0.1,
@@ -25,13 +25,13 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":2,"eventType":3,"collisionObjectId":null,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "NeuralNetwork",
-    "path": "folders/Backgrounds/NeuralNetwork.yy",
+    "name": "Objects",
+    "path": "folders/Objects.yy",
   },
 }
