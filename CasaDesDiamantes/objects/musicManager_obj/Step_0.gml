@@ -167,7 +167,7 @@ if (room == level4 || room == level5A || room == level5B) {
 if (act2MusicOn && !act2MusicStarted) {
 	cave1 = audio_play_sound(caveAmbience1, 1, true);
 	cave2 = audio_play_sound(caveAmbience2, 1, true);
-	cave3 = audio_play_sound(caveAmbience3, 1, true);
+	//cave3 = audio_play_sound(caveAmbience3, 1, true);
 	cave4 = audio_play_sound(caveAmbience4, 1, true);
 	
 	act2MusicStarted = true;
