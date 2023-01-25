@@ -3,24 +3,32 @@
 //Timescale
 if (realTimeScale < global.timeScale)
 {
-	if (!player_obj.enemySlowmo)
-	{
+	if (instance_exists(player_obj)) {
+		if (!player_obj.enemySlowmo)
+		{
+			realTimeScale += 0.02;
+		}
+		else
+		{
+			realTimeScale += 0.5;
+		}
+	} else {
 		realTimeScale += 0.02;
-	}
-	else
-	{
-		realTimeScale += 0.5;
 	}
 }
 if (realTimeScale > global.timeScale)
 {
-	if (!player_obj.enemySlowmo)
-	{
+	if (instance_exists(player_obj)) {
+		if (!player_obj.enemySlowmo)
+		{
+			realTimeScale -= 0.02;
+		}
+		else
+		{
+			realTimeScale -= 0.03;
+		}
+	} else {
 		realTimeScale -= 0.02;
-	}
-	else
-	{
-		realTimeScale -= 0.03;
 	}
 }
 
