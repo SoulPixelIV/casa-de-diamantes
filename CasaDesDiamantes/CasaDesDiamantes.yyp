@@ -442,6 +442,7 @@
     {"id":{"name":"ironDoorLevel6_Level4_obj","path":"objects/ironDoorLevel6_Level4_obj/ironDoorLevel6_Level4_obj.yy",},"order":112,},
     {"id":{"name":"leverOff_spr","path":"sprites/leverOff_spr/leverOff_spr.yy",},"order":31,},
     {"id":{"name":"beatMid_msc","path":"sounds/beatMid_msc/beatMid_msc.yy",},"order":1,},
+    {"id":{"name":"transitionBlackscreen_obj","path":"objects/transitionBlackscreen_obj/transitionBlackscreen_obj.yy",},"order":119,},
     {"id":{"name":"elevatorCheckpoint2_obj","path":"objects/elevatorCheckpoint2_obj/elevatorCheckpoint2_obj.yy",},"order":5,},
     {"id":{"name":"bulletDetect_obj","path":"objects/bulletDetect_obj/bulletDetect_obj.yy",},"order":12,},
     {"id":{"name":"paintingSmall_obj","path":"objects/paintingSmall_obj/paintingSmall_obj.yy",},"order":58,},
