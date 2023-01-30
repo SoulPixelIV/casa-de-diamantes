@@ -747,6 +747,7 @@
     {"id":{"name":"senzelaBackgroundBACKUP","path":"sprites/senzelaBackgroundBACKUP/senzelaBackgroundBACKUP.yy",},"order":1,},
     {"id":{"name":"bjCalcSum_scr","path":"scripts/bjCalcSum_scr/bjCalcSum_scr.yy",},"order":12,},
     {"id":{"name":"blueKeyGate_obj","path":"objects/blueKeyGate_obj/blueKeyGate_obj.yy",},"order":104,},
+    {"id":{"name":"particleGreenSpawner_obj","path":"objects/particleGreenSpawner_obj/particleGreenSpawner_obj.yy",},"order":2,},
     {"id":{"name":"rainmaker_spr","path":"sprites/rainmaker_spr/rainmaker_spr.yy",},"order":0,},
     {"id":{"name":"frontDash_scr","path":"scripts/frontDash_scr/frontDash_scr.yy",},"order":13,},
     {"id":{"name":"warmJacketDashReverse_spr","path":"sprites/warmJacketDashReverse_spr/warmJacketDashReverse_spr.yy",},"order":9,},
