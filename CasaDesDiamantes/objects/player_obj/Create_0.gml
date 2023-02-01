@@ -38,6 +38,8 @@ updowndir = 0; //Helper var for dircursor clamp
 //Physics
 gravityStrength = -0.03; //Lower is lower gravity
 gravityOn = true;
+inCutscene = false;
+shootingAllowed = true;
 jumpStrength = 2.4; //2 before rework
 frictionStrength = 0.015; //Lower is more slippery
 shotJumpStrength = 4;

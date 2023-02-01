@@ -1,10 +1,10 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "damageHitbox_obj",
+  "name": "level2IntroTrigger_obj",
   "spriteId": {
-    "name": "redcubex16_spr",
-    "path": "sprites/redcubex16_spr/redcubex16_spr.yy",
+    "name": "squares_spr",
+    "path": "sprites/squares_spr/squares_spr.yy",
   },
   "solid": false,
   "visible": false,
@@ -15,7 +15,7 @@
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
-  "physicsGroup": 0,
+  "physicsGroup": 1,
   "physicsDensity": 0.5,
   "physicsRestitution": 0.1,
   "physicsLinearDamping": 0.1,
@@ -25,13 +25,12 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"player_obj","path":"objects/player_obj/player_obj.yy",},},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Hitboxes",
-    "path": "folders/Hitboxes.yy",
+    "name": "Objects",
+    "path": "folders/Objects.yy",
   },
 }

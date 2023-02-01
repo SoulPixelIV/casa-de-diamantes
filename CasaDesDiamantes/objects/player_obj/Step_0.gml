@@ -51,62 +51,64 @@ if (verspeed < -verspeedMax)
 	verspeed = -verspeedMax;
 }
 
-if (movement && !wallJumping && !isDashing)
-{
-	if (!huggingWall)
+if (!inCutscene) {
+	if (movement && !wallJumping && !isDashing)
 	{
-		if (key_right)
+		if (!huggingWall)
 		{
-			if (horspeed < movSpeed)
+			if (key_right)
 			{
-				if (!boosterLockedMovement) {
-					horspeed += global.dt / 10;
-				} else {
-					horspeed += 0;
+				if (horspeed < movSpeed)
+				{
+					if (!boosterLockedMovement) {
+						horspeed += global.dt / 10;
+					} else {
+						horspeed += 0;
+					}
+				}
+				if (horspeed > movSpeed - 0.2 && horspeed < movSpeed + 0.2)
+				{
+					horspeed = movSpeed
+				}
+				if (!audio_is_playing(walk1_snd) && !audio_is_playing(walk2_snd) && grounded)
+				{
+					var walksnd = audio_play_sound(choose(walk1_snd, walk2_snd), 1, false);
+					audio_sound_pitch(walksnd, random_range(0.9, 1.1));
 				}
 			}
-			if (horspeed > movSpeed - 0.2 && horspeed < movSpeed + 0.2)
+			if (key_left)
 			{
-				horspeed = movSpeed
-			}
-			if (!audio_is_playing(walk1_snd) && !audio_is_playing(walk2_snd) && grounded)
-			{
-				var walksnd = audio_play_sound(choose(walk1_snd, walk2_snd), 1, false);
-				audio_sound_pitch(walksnd, random_range(0.9, 1.1));
-			}
-		}
-		if (key_left)
-		{
-			if (horspeed < -movSpeed + 0.2 && horspeed > -movSpeed - 0.2)
-			{
-				horspeed = -movSpeed
-			}
-			if (horspeed > -movSpeed)
-			{
-				if (!boosterLockedMovement) {
-					horspeed -= global.dt / 10;
-				} else {
-					horspeed -= 0;
+				if (horspeed < -movSpeed + 0.2 && horspeed > -movSpeed - 0.2)
+				{
+					horspeed = -movSpeed
 				}
-			}
+				if (horspeed > -movSpeed)
+				{
+					if (!boosterLockedMovement) {
+						horspeed -= global.dt / 10;
+					} else {
+						horspeed -= 0;
+					}
+				}
 
-			if (!audio_is_playing(walk1_snd) && !audio_is_playing(walk2_snd) && grounded)
-			{
-				audio_play_sound(walk1_snd, 1, false);
+				if (!audio_is_playing(walk1_snd) && !audio_is_playing(walk2_snd) && grounded)
+				{
+					audio_play_sound(walk1_snd, 1, false);
+				}
 			}
-		}
-		if (!key_right && grounded)
-		{
-			if (horspeed = movSpeed)
+			if (!key_right && grounded)
 			{
-				horspeed -= 0.05;
+				if (horspeed = movSpeed)
+				{
+					horspeed -= 0.05;
+				}
 			}
-		}
-		if (!key_left && grounded)
-		{
-			if (horspeed = -movSpeed)
+			if (!key_left && grounded)
 			{
-				horspeed += 0.05;
+				if (horspeed = -movSpeed)
+				{
+					horspeed += 0.05;
+				}
 			}
 		}
 	}
@@ -928,134 +930,136 @@ if (onLadder && !isZombie && !isDashing)
 	}
 }
 
-if (!isZombie && !deathActivated)
-{
-	//Pistol
-	with (gameManager_obj)
+if (shootingAllowed) {
+	if (!isZombie && !deathActivated)
 	{
-		if (global.currentWeapon == pickedWeapon.pistol && global.pistolCooldown <= 0)
+		//Pistol
+		with (gameManager_obj)
 		{
-			with (player_obj)
+			if (global.currentWeapon == pickedWeapon.pistol && global.pistolCooldown <= 0)
 			{
-				startShotCooldown = false;
-				if (key_shoot && !reloading)
+				with (player_obj)
 				{
-					if (!onLadder || onLadder && verspeed == 0)
+					startShotCooldown = false;
+					if (key_shoot && !reloading)
 					{
-						shooting_scr("pistol");
-					}
-				}
-			}
-		}
-	}
-
-	//Dual Barettas
-	with (gameManager_obj)
-	{
-		if (global.currentWeapon == pickedWeapon.dualBarettas && global.dualBarettasCooldown <= 0)
-		{
-			with (player_obj)
-			{
-				startShotCooldown = false;
-				if (key_shoot && !reloading)
-				{
-					if (!onLadder || onLadder && verspeed == 0)
-					{
-						shooting_scr("dualBarettas");
-					}
-				}
-			}
-		}
-	}
-
-	//Shotgun
-	with (gameManager_obj)
-	{
-		if (global.currentWeapon == pickedWeapon.shotgun && global.shotgunCooldown <= 0)
-		{
-			with (player_obj)
-			{
-				startShotCooldown = false;
-				if (key_shoot && !reloading)
-				{
-					if (!onLadder || onLadder && verspeed == 0)
-					{
-						shooting_scr("shotgun");
-					}
-				}
-			}
-		}
-		//Shotgun Cock
-		if (player_obj.startShotCooldown)
-		{
-			if (global.currentWeapon == pickedWeapon.shotgun && global.shotgunCooldown < global.shotgunCooldownSave / 2)
-			{
-				if (!audio_is_playing(shotgunPump_snd) && !player_obj.shotgunPumpDone)
-				{
-					audio_play_sound(shotgunPump_snd, 1, false);
-					instance_create_layer(playerBulletLine_obj.x, playerBulletLine_obj.y, "Instances", shotgunBulletCase_obj);
-					player_obj.shotgunPumpDone = true;
-				}
-			}
-		}
-		if (global.shotgunCooldown < 0)
-		{
-			player_obj.shotgunPumpDone = false;
-		}
-	}
-	
-	//Silenced MP
-	with (gameManager_obj)
-	{
-		if (global.currentWeapon == pickedWeapon.silencedMP && global.silencedMPCooldown <= 0)
-		{
-			with (player_obj)
-			{
-				startShotCooldown = false;
-				if (key_shoot_hold && !reloading)
-				{
-					if (!onLadder || onLadder && verspeed == 0)
-					{
-						shooting_scr("silencedMP");
-					}
-				}
-			}
-		}
-	}
-	
-	//Bow
-	with (gameManager_obj)
-	{
-		if (global.currentWeapon == pickedWeapon.bow && global.bowCooldown <= 0)
-		{
-			with (player_obj)
-			{
-				if (key_shoot_hold && !reloading && movement)
-				{
-					if (!onLadder || onLadder && verspeed == 0)
-					{
-						bowReadying = true;
-						if (bowReadyingImage < 4) { //playerbowReadying image number
-							bowReadyingImage += global.dt / 20;
-						}
-						if (!audio_is_playing(bowReadying_snd) && !playedSoundBowReadying)
+						if (!onLadder || onLadder && verspeed == 0)
 						{
-							audio_play_sound(bowReadying_snd, 1, false);
-							playedSoundBowReadying = true;
+							shooting_scr("pistol");
 						}
 					}
 				}
-				if (key_shoot_release)
+			}
+		}
+
+		//Dual Barettas
+		with (gameManager_obj)
+		{
+			if (global.currentWeapon == pickedWeapon.dualBarettas && global.dualBarettasCooldown <= 0)
+			{
+				with (player_obj)
 				{
-					if (bowReadyingImage > 0)
+					startShotCooldown = false;
+					if (key_shoot && !reloading)
 					{
-						shooting_scr("bow");
-						audio_stop_sound(bowReadying_snd);
-						//audio_play_sound(bowShot_snd, 1, false);
-						audio_play_sound(arrowShotWind_snd, 0.9, false);
-						bowReadying = false;
-						bowReadyingImage = 0;
-						playedSoundBowReadying = false;
+						if (!onLadder || onLadder && verspeed == 0)
+						{
+							shooting_scr("dualBarettas");
+						}
+					}
+				}
+			}
+		}
+
+		//Shotgun
+		with (gameManager_obj)
+		{
+			if (global.currentWeapon == pickedWeapon.shotgun && global.shotgunCooldown <= 0)
+			{
+				with (player_obj)
+				{
+					startShotCooldown = false;
+					if (key_shoot && !reloading)
+					{
+						if (!onLadder || onLadder && verspeed == 0)
+						{
+							shooting_scr("shotgun");
+						}
+					}
+				}
+			}
+			//Shotgun Cock
+			if (player_obj.startShotCooldown)
+			{
+				if (global.currentWeapon == pickedWeapon.shotgun && global.shotgunCooldown < global.shotgunCooldownSave / 2)
+				{
+					if (!audio_is_playing(shotgunPump_snd) && !player_obj.shotgunPumpDone)
+					{
+						audio_play_sound(shotgunPump_snd, 1, false);
+						instance_create_layer(playerBulletLine_obj.x, playerBulletLine_obj.y, "Instances", shotgunBulletCase_obj);
+						player_obj.shotgunPumpDone = true;
+					}
+				}
+			}
+			if (global.shotgunCooldown < 0)
+			{
+				player_obj.shotgunPumpDone = false;
+			}
+		}
+	
+		//Silenced MP
+		with (gameManager_obj)
+		{
+			if (global.currentWeapon == pickedWeapon.silencedMP && global.silencedMPCooldown <= 0)
+			{
+				with (player_obj)
+				{
+					startShotCooldown = false;
+					if (key_shoot_hold && !reloading)
+					{
+						if (!onLadder || onLadder && verspeed == 0)
+						{
+							shooting_scr("silencedMP");
+						}
+					}
+				}
+			}
+		}
+	
+		//Bow
+		with (gameManager_obj)
+		{
+			if (global.currentWeapon == pickedWeapon.bow && global.bowCooldown <= 0)
+			{
+				with (player_obj)
+				{
+					if (key_shoot_hold && !reloading && movement)
+					{
+						if (!onLadder || onLadder && verspeed == 0)
+						{
+							bowReadying = true;
+							if (bowReadyingImage < 4) { //playerbowReadying image number
+								bowReadyingImage += global.dt / 20;
+							}
+							if (!audio_is_playing(bowReadying_snd) && !playedSoundBowReadying)
+							{
+								audio_play_sound(bowReadying_snd, 1, false);
+								playedSoundBowReadying = true;
+							}
+						}
+					}
+					if (key_shoot_release)
+					{
+						if (bowReadyingImage > 0)
+						{
+							shooting_scr("bow");
+							audio_stop_sound(bowReadying_snd);
+							//audio_play_sound(bowShot_snd, 1, false);
+							audio_play_sound(arrowShotWind_snd, 0.9, false);
+							bowReadying = false;
+							bowReadyingImage = 0;
+							playedSoundBowReadying = false;
+						}
 					}
 				}
 			}

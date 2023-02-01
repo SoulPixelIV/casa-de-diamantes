@@ -5,6 +5,7 @@ xScreenSizeNew = x;
 yScreenSizeNew = y;
 snapCameraX = false;
 snapCameraY = false;
+cutsceneCamera = false;
 minCameraXBorder = global.xScreenSize / 2 + 32;
 maxCameraXBorder = (room_width - global.xScreenSize / 2) - 32;
 minCameraYBorder = global.yScreenSize / 2 + 32;

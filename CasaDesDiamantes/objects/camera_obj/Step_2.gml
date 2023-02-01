@@ -113,38 +113,43 @@ if (!cameraTarget && !cameraTargetMovement)
 	*/
 }
 
-if (snapCameraX)
-{
-	x = xTo;
-}
-else
-{
-	x += (xTo - x) * (global.dtNoSlowmo * cameraSpeed);
-}
-
-if (!cameraTarget && !cameraTargetMovement)
-{
-	//VERTICAL
-	/*
-	if (y < (yTo - cameraYBorder) + 1 && y > (yTo - cameraYBorder) - 1 && !shake)
+if (!cutsceneCamera) {
+	if (snapCameraX)
 	{
-		snapCameraY = true;
+		x = xTo;
 	}
-	*/
-}
+	else
+	{
+		x += (xTo - x) * (global.dtNoSlowmo * cameraSpeed);
+	}
 
-if (snapCameraY)
-{
-	y = yTo - cameraYBorder;
-}
-else
-{
-	y += (yTo - y - cameraYBorder) * (global.dtNoSlowmo * ycameraSpeed);
-}
+	if (!cameraTarget && !cameraTargetMovement)
+	{
+		//VERTICAL
+		/*
+		if (y < (yTo - cameraYBorder) + 1 && y > (yTo - cameraYBorder) - 1 && !shake)
+		{
+			snapCameraY = true;
+		}
+		*/
+	}
 
-if (follow == camera_obj)
-{
-	y += (yTo - y - cameraYBorder) * (global.dtNoSlowmo * cameraSpeed);
+	if (snapCameraY)
+	{
+		y = yTo - cameraYBorder;
+	}
+	else
+	{
+		y += (yTo - y - cameraYBorder) * (global.dtNoSlowmo * ycameraSpeed);
+	}
+
+	if (follow == camera_obj)
+	{
+		y += (yTo - y - cameraYBorder) * (global.dtNoSlowmo * cameraSpeed);
+	}
+} else {
+	x = player_obj.x;
+	y = player_obj.y;
 }
 
 var vm = matrix_build_lookat(x,y,-10,x,y,0,0,1,0);
