@@ -1,10 +1,14 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "headshotHitbox_obj",
   "spriteId": {
     "name": "redcubex16_spr",
     "path": "sprites/redcubex16_spr/redcubex16_spr.yy",
   },
   "solid": false,
   "visible": false,
+  "managed": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": null,
@@ -27,8 +31,4 @@
     "name": "Hitboxes",
     "path": "folders/Hitboxes.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "headshotHitbox_obj",
-  "tags": [],
-  "resourceType": "GMObject",
 }

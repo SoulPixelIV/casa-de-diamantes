@@ -1,0 +1,5 @@
+spawnedEnemy = false;
+
+
+
+

@@ -16,6 +16,8 @@ global.timer = 0;
 global.drawTutorialInfectionUsed = false;
 multiplierRun = false;
 
+global.cutsceneLevel2Done = false;
+
 global.pwlevel2UnlockedElevator = false;
 global.pwlevel3UnlockedElevator = false;
 

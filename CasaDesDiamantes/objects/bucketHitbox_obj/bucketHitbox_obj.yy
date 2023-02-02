@@ -1,10 +1,14 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "bucketHitbox_obj",
   "spriteId": {
     "name": "bluecubex16_spr",
     "path": "sprites/bluecubex16_spr/bluecubex16_spr.yy",
   },
   "solid": false,
   "visible": false,
+  "managed": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
@@ -30,8 +34,4 @@
     "name": "Hitboxes",
     "path": "folders/Hitboxes.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "bucketHitbox_obj",
-  "tags": [],
-  "resourceType": "GMObject",
 }

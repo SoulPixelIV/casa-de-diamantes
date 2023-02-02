@@ -34,6 +34,49 @@ if (startTimer2) {
 
 if (timer2 < 0) {
 	camera_obj.blackscreenStrength += global.dt / 700;
+	startTimer3 = true;
 }
 
+if (startTimer3) {
+	timer3 -= global.dt;
+}
 
+if (timer3 < 0) {
+	camera_obj.blackscreenStrength -= global.dt / 700;
+	startTimer4 = true;
+}
+
+if (startTimer4) {
+	timer4 -= global.dt;
+}
+
+if (timer4 < 0 && !spawnedBullet) {
+	instance_create_layer(camera_obj.x + global.xScreenSize / 2 + 48, camera_obj.y - global.yScreenSize / 2 - 24, "Instances", bulletLevel2Cutscene_obj);
+	spawnedBullet = true;
+	startTimer5 = true;
+}
+
+if (startTimer5) {
+	timer5 -= global.dt;
+}
+
+if (timer5 < 0) {
+	player_obj.inChamber = false;
+	player_obj.movement = true;
+	player_obj.inCutscene = false;
+	player_obj.shootingAllowed = true;
+	camera_obj.cutsceneCamera = false;
+	
+	musicManager_obj.act1MusicStarted = false;
+	
+	if (instance_exists(playerVineDeath_obj)) {
+		instance_destroy(playerVineDeath_obj);
+	}
+	if (instance_exists(vine_obj)) {
+		instance_destroy(vine_obj);
+	}
+	
+	instance_destroy();
+	
+	global.cutsceneLevel2Done = true;
+}
