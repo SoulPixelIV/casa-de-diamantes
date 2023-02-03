@@ -19,7 +19,6 @@ if (finishingTeleport) {
 	waitDelay -= global.dt;
 	if (waitDelay < 0) {	
 		part_emitter_destroy_all(global.partSystem);
-		audio_stop_all();
 		instance_destroy(player_obj);
 		room_goto(level6);
 	}

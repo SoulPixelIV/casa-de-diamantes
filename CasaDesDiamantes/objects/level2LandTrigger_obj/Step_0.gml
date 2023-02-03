@@ -11,7 +11,7 @@ if (firstBlackscreen) {
 	}
 }
 
-if (timer < 0) {
+if (timer < 0 && timer2 > 0) {
 	if (camera_obj.blackscreenStrength > 0.5) {
 		camera_obj.blackscreenStrength -= global.dt / 1300;
 	}
@@ -32,7 +32,7 @@ if (startTimer2) {
 	timer2 -= global.dt;
 }
 
-if (timer2 < 0) {
+if (timer2 < 0 && timer3 > 0) {
 	camera_obj.blackscreenStrength += global.dt / 700;
 	startTimer3 = true;
 }
@@ -41,7 +41,7 @@ if (startTimer3) {
 	timer3 -= global.dt;
 }
 
-if (timer3 < 0) {
+if (timer3 < 0 && timer4 > 0) {
 	camera_obj.blackscreenStrength -= global.dt / 700;
 	startTimer4 = true;
 }
