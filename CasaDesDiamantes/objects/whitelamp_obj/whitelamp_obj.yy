@@ -1,10 +1,14 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "whitelamp_obj",
   "spriteId": {
     "name": "whitelamp_spr",
     "path": "sprites/whitelamp_spr/whitelamp_spr.yy",
   },
   "solid": false,
   "visible": true,
+  "managed": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": null,
@@ -27,8 +31,4 @@
     "name": "Decoration",
     "path": "folders/Objects/Decoration.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "whitelamp_obj",
-  "tags": [],
-  "resourceType": "GMObject",
 }

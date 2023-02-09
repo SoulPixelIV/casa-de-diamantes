@@ -1,10 +1,10 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "toxicwaste_obj",
+  "name": "stephOverworld_obj",
   "spriteId": {
-    "name": "toxicwaste_spr",
-    "path": "sprites/toxicwaste_spr/toxicwaste_spr.yy",
+    "name": "stephOverworld_spr",
+    "path": "sprites/stephOverworld_spr/stephOverworld_spr.yy",
   },
   "solid": false,
   "visible": true,
@@ -24,13 +24,11 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,},
-  ],
+  "eventList": [],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Hazards",
-    "path": "folders/Objects/Hazards.yy",
+    "name": "Steph",
+    "path": "folders/Steph.yy",
   },
 }

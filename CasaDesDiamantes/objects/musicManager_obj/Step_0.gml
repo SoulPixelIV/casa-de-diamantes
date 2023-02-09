@@ -1,5 +1,5 @@
 //Casino Theme
-if (room == level_Casino || room == mainmenu || room == levelSelect) {
+if (room == level_Casino || room == mainmenu || room == levelSelect || room = worldmap) {
 	if (!audio_is_playing(casinoTheme)) {
 		audio_play_sound(casinoTheme, 1, true);
 		

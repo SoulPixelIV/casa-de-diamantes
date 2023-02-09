@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMTileSet",
+  "resourceVersion": "1.0",
+  "name": "powerplantTiles",
   "spriteId": {
     "name": "powerplantTiles_spr",
     "path": "sprites/powerplantTiles_spr/powerplantTiles_spr.yy",
@@ -99,8 +102,4 @@
     "name": "Tile Sets",
     "path": "folders/Sprites/Tile Sets.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "powerplantTiles",
-  "tags": [],
-  "resourceType": "GMTileSet",
 }

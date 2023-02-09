@@ -1,10 +1,14 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "battleArenaWoundedpoint_obj",
   "spriteId": {
     "name": "redstripes_spr",
     "path": "sprites/redstripes_spr/redstripes_spr.yy",
   },
   "solid": false,
   "visible": false,
+  "managed": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": null,
@@ -27,8 +31,4 @@
     "name": "Objects",
     "path": "folders/Objects.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "battleArenaWoundedpoint_obj",
-  "tags": [],
-  "resourceType": "GMObject",
 }

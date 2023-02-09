@@ -1,13 +1,13 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "toxicwaste_obj",
+  "name": "level3_Map_teleporter",
   "spriteId": {
-    "name": "toxicwaste_spr",
-    "path": "sprites/toxicwaste_spr/toxicwaste_spr.yy",
+    "name": "redcubex16_spr",
+    "path": "sprites/redcubex16_spr/redcubex16_spr.yy",
   },
   "solid": false,
-  "visible": true,
+  "visible": false,
   "managed": true,
   "spriteMaskId": null,
   "persistent": false,
@@ -15,7 +15,7 @@
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
-  "physicsGroup": 1,
+  "physicsGroup": 0,
   "physicsDensity": 0.5,
   "physicsRestitution": 0.1,
   "physicsLinearDamping": 0.1,
@@ -25,12 +25,13 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Hazards",
-    "path": "folders/Objects/Hazards.yy",
+    "name": "TeleportBoxes",
+    "path": "folders/Objects/Spawns/TeleportBoxes.yy",
   },
 }
