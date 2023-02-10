@@ -1,13 +1,13 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "stephOverworld_obj",
+  "name": "overworldTrigger2_obj",
   "spriteId": {
-    "name": "stephOverworld_spr",
-    "path": "sprites/stephOverworld_spr/stephOverworld_spr.yy",
+    "name": "bluecubex16_spr",
+    "path": "sprites/bluecubex16_spr/bluecubex16_spr.yy",
   },
   "solid": false,
-  "visible": true,
+  "visible": false,
   "managed": true,
   "spriteMaskId": null,
   "persistent": false,
@@ -24,14 +24,11 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
-  ],
+  "eventList": [],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Steph",
-    "path": "folders/Steph.yy",
+    "name": "Objects",
+    "path": "folders/Objects.yy",
   },
 }

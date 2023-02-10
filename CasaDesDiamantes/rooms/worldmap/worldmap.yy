@@ -18,7 +18,10 @@
   "layers": [
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Instances","instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_30CE3760","properties":[],"isDnd":false,"objectId":{"name":"overworldMap_obj","path":"objects/overworldMap_obj/overworldMap_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":240.0,"y":135.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7448A0FC","properties":[],"isDnd":false,"objectId":{"name":"stephOverworld_obj","path":"objects/stephOverworld_obj/stephOverworld_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":73.0,"y":181.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7448A0FC","properties":[],"isDnd":false,"objectId":{"name":"stephOverworld_obj","path":"objects/stephOverworld_obj/stephOverworld_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":69.0,"y":218.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_76B76DC6","properties":[],"isDnd":false,"objectId":{"name":"overworldTrigger1_obj","path":"objects/overworldTrigger1_obj/overworldTrigger1_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":69.0,"y":217.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_668814BA","properties":[],"isDnd":false,"objectId":{"name":"overworldTrigger2_obj","path":"objects/overworldTrigger2_obj/overworldTrigger2_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":180.0,"y":182.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_2D59706A","properties":[],"isDnd":false,"objectId":{"name":"overworldTrigger3_obj","path":"objects/overworldTrigger3_obj/overworldTrigger3_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":293.0,"y":222.0,},
       ],"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRBackgroundLayer","resourceVersion":"1.0","name":"Background","spriteId":null,"colour":4278190080,"x":0,"y":0,"htiled":false,"vtiled":false,"hspeed":0.0,"vspeed":0.0,"stretch":false,"animationFPS":15.0,"animationSpeedType":0,"userdefinedAnimFPS":false,"visible":true,"depth":100,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
   ],
@@ -28,6 +31,9 @@
   "instanceCreationOrder": [
     {"name":"inst_30CE3760","path":"rooms/worldmap/worldmap.yy",},
     {"name":"inst_7448A0FC","path":"rooms/worldmap/worldmap.yy",},
+    {"name":"inst_76B76DC6","path":"rooms/worldmap/worldmap.yy",},
+    {"name":"inst_668814BA","path":"rooms/worldmap/worldmap.yy",},
+    {"name":"inst_2D59706A","path":"rooms/worldmap/worldmap.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
