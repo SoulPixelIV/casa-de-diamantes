@@ -24,7 +24,7 @@ if (room == level_Casino || room == mainmenu || room == levelSelect || room = wo
 }
 
 //Casino Low Pass Theme
-if (room == blackjackTable) {
+if (room == blackjackTable || room == level_CasinoRoof) {
 	if (!audio_is_playing(casinoThemeLowPass)) {
 		audio_play_sound(casinoThemeLowPass, 1, true);
 	}
@@ -39,7 +39,7 @@ if (room == blackjackTable) {
 
 
 //ACT1 WORLD MUSIC
-if (room == level0 || room == level1 || room == level2 || room == level3 || room == level4 || room == level5A || room == level5B || room == level6 || room == warpzone1) {
+if (room == level0 || room == level1 || room == level2 || room == level3 || room == level4 || room == level5A || room == level5B || room == level6 || room == warpzone1 || room == level7) {
 	act1MusicOn = true;
 } else {
 	act1MusicOn = false;

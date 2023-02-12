@@ -970,6 +970,17 @@ if (!noHUD)
 	draw_sprite(guiBorder_spr, 0, x - xScreenSize / 2, y - yScreenSize / 2);
 }
 
+//Cursor
+//Crosshair Setup
+if (instance_exists(player_obj)) {
+	if (player_obj.inputMethod == 0)
+	{
+		draw_sprite(cursor_spr, 0, 
+		(window_mouse_get_x() / ((window_get_width()+1) / global.xScreenSize)) + (x - global.xScreenSize / 2), 
+		window_mouse_get_y() / ((window_get_height()+1) / global.yScreenSize) + (y - global.yScreenSize / 2));
+	}
+}
+
 //#####LAYER 4#####
 draw_set_alpha(blackscreenStrength);
 draw_set_color(c_black);
@@ -1066,15 +1077,4 @@ if (showStartTitle4) {
 	draw_set_font(gothicPixelSmall_fnt);
 	draw_text(x, y - global.yScreenSize / 3 + 72 - startScreenYAxis, "PRESS -START-");
 	draw_set_halign(fa_left);
-}
-
-//Cursor
-//Crosshair Setup
-if (instance_exists(player_obj)) {
-	if (player_obj.inputMethod == 0)
-	{
-		draw_sprite(cursor_spr, 0, 
-		(window_mouse_get_x() / ((window_get_width()+1) / global.xScreenSize)) + (x - global.xScreenSize / 2), 
-		window_mouse_get_y() / ((window_get_height()+1) / global.yScreenSize) + (y - global.yScreenSize / 2));
-	}
 }

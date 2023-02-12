@@ -1,7 +1,5 @@
 /// @description Draw Key
-draw_self();
-
-if (distance_to_object(player_obj) < 32 && image_index == 1)
+if (distance_to_object(player_obj) < 32)
 {
 	draw_sprite(wKeyIcon_spr, 0, player_obj.x, player_obj.y - 32);
 	
@@ -26,9 +24,7 @@ if (distance_to_object(player_obj) < 32 && image_index == 1)
 		if (waitDelay < 0) {	
 			part_emitter_destroy_all(global.partSystem);
 			instance_destroy(player_obj);
-			global.level4DoorOpen = true;
-			global.spawn = 1;
-			room_goto(level4);
+			room_goto(worldmap);
 		}
 	}
 }

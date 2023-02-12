@@ -25,7 +25,6 @@ if (distance_to_object(player_obj) < 32 && image_index == 1)
 		waitDelay -= global.dt;
 		if (waitDelay < 0) {
 			part_emitter_destroy_all(global.partSystem);
-			audio_stop_all();
 			instance_destroy(player_obj);
 			global.spawn = 2;
 			room_goto(level6);

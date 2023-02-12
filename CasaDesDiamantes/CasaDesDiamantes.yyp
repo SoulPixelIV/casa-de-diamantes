@@ -778,6 +778,7 @@
     {"id":{"name":"crawlerChunk_obj","path":"objects/crawlerChunk_obj/crawlerChunk_obj.yy",},"order":20,},
     {"id":{"name":"beep_snd","path":"sounds/beep_snd/beep_snd.yy",},"order":2,},
     {"id":{"name":"shadow_casters_exist","path":"scripts/shadow_casters_exist/shadow_casters_exist.yy",},"order":4,},
+    {"id":{"name":"level7","path":"rooms/level7/level7.yy",},"order":6,},
     {"id":{"name":"polygon_get_area","path":"scripts/polygon_get_area/polygon_get_area.yy",},"order":5,},
     {"id":{"name":"checkpointOutline_spr","path":"sprites/checkpointOutline_spr/checkpointOutline_spr.yy",},"order":93,},
     {"id":{"name":"bench_obj","path":"objects/bench_obj/bench_obj.yy",},"order":44,},
@@ -1407,6 +1408,7 @@
     {"id":{"name":"fireSpark_obj","path":"objects/fireSpark_obj/fireSpark_obj.yy",},"order":28,},
     {"id":{"name":"playerSilencedMP_spr","path":"sprites/playerSilencedMP_spr/playerSilencedMP_spr.yy",},"order":12,},
     {"id":{"name":"infectedOverlay_obj","path":"objects/infectedOverlay_obj/infectedOverlay_obj.yy",},"order":29,},
+    {"id":{"name":"teleportBlimp_obj","path":"objects/teleportBlimp_obj/teleportBlimp_obj.yy",},"order":128,},
     {"id":{"name":"cityShop_obj","path":"objects/cityShop_obj/cityShop_obj.yy",},"order":30,},
     {"id":{"name":"explosiveFortunae_spr","path":"sprites/explosiveFortunae_spr/explosiveFortunae_spr.yy",},"order":3,},
     {"id":{"name":"object194","path":"objects/object194/object194.yy",},"order":31,},
@@ -1479,6 +1481,7 @@
   },
   "RoomOrderNodes": [
     {"roomId":{"name":"loadVars","path":"rooms/loadVars/loadVars.yy",},},
+    {"roomId":{"name":"level7","path":"rooms/level7/level7.yy",},},
     {"roomId":{"name":"mainmenu","path":"rooms/mainmenu/mainmenu.yy",},},
     {"roomId":{"name":"transitionScreen","path":"rooms/transitionScreen/transitionScreen.yy",},},
     {"roomId":{"name":"warpzone1","path":"rooms/warpzone1/warpzone1.yy",},},
