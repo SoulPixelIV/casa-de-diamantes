@@ -28,11 +28,8 @@ if (room == blackjackTable) {
 	if (!audio_is_playing(casinoThemeLowPass)) {
 		audio_play_sound(casinoThemeLowPass, 1, true);
 	}
-	if (audio_is_playing(combatTheme)) {
-		audio_stop_sound(combatTheme);
-	}
-	if (audio_is_playing(ambienceTheme)) {
-		audio_stop_sound(ambienceTheme);
+	if (audio_is_playing(casinoTheme)) {
+		audio_stop_sound(casinoTheme);
 	}
 } else {
 	if (audio_is_playing(casinoThemeLowPass)) {
