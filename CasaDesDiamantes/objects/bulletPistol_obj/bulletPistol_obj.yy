@@ -41,6 +41,7 @@
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"zombieGirlWounded_obj","path":"objects/zombieGirlWounded_obj/zombieGirlWounded_obj.yy",},},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"explosiveMerchant_obj","path":"objects/explosiveMerchant_obj/explosiveMerchant_obj.yy",},},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"explosiveBarrel_obj","path":"objects/explosiveBarrel_obj/explosiveBarrel_obj.yy",},},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"slotblockMoving_obj","path":"objects/slotblockMoving_obj/slotblockMoving_obj.yy",},},
   ],
   "properties": [],
   "overriddenProperties": [],
