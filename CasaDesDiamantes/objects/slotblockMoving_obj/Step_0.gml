@@ -16,6 +16,15 @@ if (vertOrHor == 0) {
 	}
 }
 
+if (delayOn) {
+	delayTimer -= global.dt;
+	
+	if (delayTimer < 0) {
+		delayTimer = 100;
+		delayOn = false;
+	}
+}
+
 if (used && !spawned && !spinDone)
 {
 	spinTimer -= global.dt;

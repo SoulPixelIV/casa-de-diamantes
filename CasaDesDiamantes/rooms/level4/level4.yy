@@ -17,7 +17,7 @@
   ],
   "layers": [
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Music","instances":[
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_48425F30","properties":[],"isDnd":false,"objectId":{"name":"musicBoxSilence_obj","path":"objects/musicBoxSilence_obj/musicBoxSilence_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":41.5,"scaleY":18.453125,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":695.0,"y":53.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7C2CEEE7","properties":[],"isDnd":false,"objectId":{"name":"musicBoxAmbience2_obj","path":"objects/musicBoxAmbience2_obj/musicBoxAmbience2_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":38.90625,"scaleY":19.640625,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":864.0,"y":-32.0,},
       ],"visible":false,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Camera","instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_339DA1F3_1_1_1_1_1","properties":[],"isDnd":false,"objectId":{"name":"camera_obj","path":"objects/camera_obj/camera_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":64.0,"y":32.0,},
@@ -239,8 +239,8 @@
     {"name":"inst_69C9B402","path":"rooms/level4/level4.yy",},
     {"name":"inst_564CE5AE","path":"rooms/level4/level4.yy",},
     {"name":"inst_75F8F6B6","path":"rooms/level4/level4.yy",},
-    {"name":"inst_48425F30","path":"rooms/level4/level4.yy",},
     {"name":"inst_34B6AF67","path":"rooms/level4/level4.yy",},
+    {"name":"inst_7C2CEEE7","path":"rooms/level4/level4.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

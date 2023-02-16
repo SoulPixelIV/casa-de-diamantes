@@ -12,6 +12,10 @@ dressedToKillL2 = dressedToKillL2_msc;
 dressedToKillL3 = dressedToKillL3_msc;
 dressedToKillSTEM = dressedToKillSTEM_msc
 
+birchL1 = birchL1_msc;
+birchL2 = birchL2_msc;
+birchL3 = birchL3_msc;
+
 caveAmbience1 = caveAmbience1_amb;
 caveAmbience2 = caveAmbience2_amb;
 caveAmbience3 = caveAmbience3_amb;
