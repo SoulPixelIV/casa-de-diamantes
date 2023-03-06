@@ -16,9 +16,11 @@ if (global.currentWorld == 0 && !startSelectionTimer) {
 }
 	
 if (global.currentWorld == 1 && !startSelectionTimer) {
-	if (keyboard_check_pressed(ord("D")) || keyboard_check_pressed(vk_right) || gamepad_button_check_pressed(0, gp_padr) || gamepad_button_check_pressed(4, gp_padr)) {
-		global.currentWorld = 2;
-		startSelectionTimer = true;
+	if (global.act2Unlocked) {
+		if (keyboard_check_pressed(ord("D")) || keyboard_check_pressed(vk_right) || gamepad_button_check_pressed(0, gp_padr) || gamepad_button_check_pressed(4, gp_padr)) {
+			global.currentWorld = 2;
+			startSelectionTimer = true;
+		}
 	}
 	if (keyboard_check_pressed(ord("A")) || keyboard_check_pressed(vk_left) || gamepad_button_check_pressed(0, gp_padl) || gamepad_button_check_pressed(4, gp_padl)) {
 		global.currentWorld = 0;
