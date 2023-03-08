@@ -603,7 +603,26 @@ if (groundCollisionTimer < 0)
 	groundCollisionTimer = groundCollisionTimerSave;
 }
 
-//Ladder
+//Springladder
+if (onSpringLadder) {
+	gravityOn = false;
+	
+	nearestSpringLadder = instance_nearest(x, y, springladder_obj);
+	x = nearestSpringLadder.x;
+	y = nearestSpringLadder.y;
+	
+	if (key_jump) {
+		jump_scr();
+		verspeed -= global.dt * 1.7;
+		onSpringLadderDelay = onSpringLadderDelaySave;
+		onSpringLadder = false;
+		gravityOn = true;
+	}
+}
+
+onSpringLadderDelay -= global.dt;
+
+//Ladder LEGACY
 if (place_meeting(x, y, ladder_obj) && (key_up || key_down) && !isDashing)
 {
 	onLadder = true;
@@ -617,7 +636,7 @@ if (!place_meeting(x, y, ladder_obj))
 if (onLadder)
 {
 	flip = false;
-	resetJump_scr();
+	//resetJump_scr
 	if (!key_left && !key_right)
 	{
 		horspeed = 0;

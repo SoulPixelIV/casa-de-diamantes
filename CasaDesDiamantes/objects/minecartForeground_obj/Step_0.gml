@@ -119,19 +119,6 @@ if (!place_free(x, y + verspeed * global.dt))
 	}
 }
 
-//###OutsideSolid###
-if (place_free(x, y))
-{
-    savePosX = x;
-    savePosY = y;
-}
-else
-{
-    x = savePosX;
-    y = savePosY;
-    verspeed = 0;
-}
-
 if (instance_exists(player_obj))
 {
 	if (player_obj.key_jump && inMinecart)
