@@ -61,7 +61,7 @@ if (keyboard_check_pressed(vk_f2))
 		player_obj.y -= 32;
 	}
 }
-if (keyboard_check_pressed(vk_f3) && room != mainmenu)
+if (keyboard_check_pressed(vk_f3) && room != mainmenu && room != levelSelect && room != worldmap)
 {
 	part_emitter_destroy_all(global.partSystem);
 	audio_stop_all();

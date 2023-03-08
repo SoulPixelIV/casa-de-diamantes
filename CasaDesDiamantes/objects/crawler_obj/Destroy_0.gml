@@ -6,5 +6,5 @@ if (instance_exists(light))
 }
 if (instance_exists(dmgHitbox))
 {
-	instance_destroy(dmgHitbox);
+	dmgHitbox.timer = -1;
 }

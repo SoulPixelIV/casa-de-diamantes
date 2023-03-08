@@ -323,7 +323,7 @@ if (hp < 0)
 	}
 	if (instance_exists(dmgHitbox))
 	{
-		instance_destroy(dmgHitbox);
+		dmgHitbox.timer = -1;
 	}
 	
 	var leg = instance_create_layer(x + 6, y + 3, "Instances", crawlerBodyPart_obj);
@@ -487,7 +487,7 @@ if (attackDelay1 < 0 || attackDelay2 < 0)
 	}
 	if (instance_exists(dmgHitbox))
 	{
-		instance_destroy(dmgHitbox);
+		dmgHitbox.timer = -1;
 	}
 	dmgHitbox = noone;
 	light = noone;
