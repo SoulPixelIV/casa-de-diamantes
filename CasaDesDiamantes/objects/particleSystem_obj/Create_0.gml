@@ -93,7 +93,7 @@ part_type_gravity(global.ledBluePart, 0.0001, 270);
 
 global.bluePart = part_type_create();
 part_type_sprite(global.bluePart, spark_spr, true, false, true);
-part_type_life(global.bluePart, 6000, 6200);
+part_type_life(global.bluePart, 12000, 12200);
 part_type_size(global.bluePart, 0.2, 0.5, 0, 0);
 part_type_colour_rgb(global.bluePart, 255, 255, 255, 255, 70, 90);
 part_type_orientation(global.bluePart, 0, 359, 1, 0, 1);
