@@ -525,7 +525,6 @@
     {"id":{"name":"healthbarBorderInfection_spr","path":"sprites/healthbarBorderInfection_spr/healthbarBorderInfection_spr.yy",},"order":10,},
     {"id":{"name":"redKeyGate_spr","path":"sprites/redKeyGate_spr/redKeyGate_spr.yy",},"order":157,},
     {"id":{"name":"pistolBulletCase_spr","path":"sprites/pistolBulletCase_spr/pistolBulletCase_spr.yy",},"order":131,},
-    {"id":{"name":"springRope_spr","path":"sprites/springRope_spr/springRope_spr.yy",},"order":181,},
     {"id":{"name":"healthSmall_obj","path":"objects/healthSmall_obj/healthSmall_obj.yy",},"order":21,},
     {"id":{"name":"playerArmCurvedNoClothes_spr","path":"sprites/playerArmCurvedNoClothes_spr/playerArmCurvedNoClothes_spr.yy",},"order":54,},
     {"id":{"name":"blueKeyGate_spr","path":"sprites/blueKeyGate_spr/blueKeyGate_spr.yy",},"order":166,},
