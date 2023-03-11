@@ -1428,6 +1428,7 @@
     {"id":{"name":"teleportBlimp_obj","path":"objects/teleportBlimp_obj/teleportBlimp_obj.yy",},"order":128,},
     {"id":{"name":"cityShop_obj","path":"objects/cityShop_obj/cityShop_obj.yy",},"order":30,},
     {"id":{"name":"explosiveFortunae_spr","path":"sprites/explosiveFortunae_spr/explosiveFortunae_spr.yy",},"order":3,},
+    {"id":{"name":"blimpBackground_obj","path":"objects/blimpBackground_obj/blimpBackground_obj.yy",},"order":137,},
     {"id":{"name":"object194","path":"objects/object194/object194.yy",},"order":31,},
     {"id":{"name":"level1_RoadToCasino","path":"rooms/level1_RoadToCasino/level1_RoadToCasino.yy",},"order":1,},
     {"id":{"name":"zombieGirlREWORK_spr","path":"sprites/zombieGirlREWORK_spr/zombieGirlREWORK_spr.yy",},"order":10,},
