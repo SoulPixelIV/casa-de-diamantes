@@ -5,6 +5,7 @@ if (distance_to_object(player_obj) < 32)
 	
 	if (keyboard_check_pressed(ord("W"))) {
 		global.act2Unlocked = true;
+		global.currentWorld = 1;
 		teleporting = true;
 		player_obj.movement = false;
 	}

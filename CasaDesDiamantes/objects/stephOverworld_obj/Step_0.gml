@@ -1,4 +1,20 @@
-if (distance_to_object(dest) > 4) {
+if (lastWorld == 0) {
+	overworldIcon0_obj.draw = true;
+	overworldIcon1_obj.draw = false;
+	overworldIcon2_obj.draw = false;
+}
+if (lastWorld == 1) {
+	overworldIcon0_obj.draw = false;
+	overworldIcon1_obj.draw = true;
+	overworldIcon2_obj.draw = false;
+}
+if (lastWorld == 2) {
+	overworldIcon0_obj.draw = false;
+	overworldIcon1_obj.draw = false;
+	overworldIcon2_obj.draw = true;
+}
+
+if (distance_to_object(dest) > 2) {
 	move_towards_point(dest.x, dest.y, global.dt);
 } else {
 	speed = 0;
@@ -11,7 +27,9 @@ if (global.currentWorld == 0 && !startSelectionTimer) {
 	}
 	
 	if (keyboard_check_pressed(vk_enter) || gamepad_button_check_pressed(0, gp_face1) || gamepad_button_check_pressed(4, gp_face1)) {
-		room_goto(level1);
+		if (lastWorld != 0) {
+			room_goto(level1);
+		}
 	}
 }
 	
@@ -28,7 +46,9 @@ if (global.currentWorld == 1 && !startSelectionTimer) {
 	}
 	
 	if (keyboard_check_pressed(vk_enter) || gamepad_button_check_pressed(0, gp_face1) || gamepad_button_check_pressed(4, gp_face1)) {
-		room_goto(level_Casino);
+		if (lastWorld != 1) {
+			room_goto(level_Casino);
+		}
 	}
 }
 
@@ -39,7 +59,9 @@ if (global.currentWorld == 2 && !startSelectionTimer) {
 	}
 	
 	if (keyboard_check_pressed(vk_enter) || gamepad_button_check_pressed(0, gp_face1) || gamepad_button_check_pressed(4, gp_face1)) {
-		room_goto(level4);
+		if (lastWorld != 2) {
+			room_goto(level4);
+		}
 	}
 }
 
