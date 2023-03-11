@@ -52,16 +52,16 @@ audio_sound_pitch(walk2_snd, clamp(1 * global.timeScale, 0.5, 1.5));
 audio_sound_pitch(jump_snd, clamp(1 * global.timeScale, 0.5, 1.5));
 audio_sound_pitch(land_snd, clamp(1 * global.timeScale, 0.5, 1.5));
 audio_sound_pitch(slide_snd, clamp(1 * global.timeScale, 0.5, 1.5));
-audio_sound_pitch(moan1_snd, clamp(1 * global.timeScale, 0.5, 1.5));
-audio_sound_pitch(moan2_snd, clamp(1 * global.timeScale, 0.5, 1.5));
+audio_sound_pitch(moan1_snd, clamp(1, 0.5, 1.5));
+audio_sound_pitch(moan2_snd, clamp(1, 0.5, 1.5));
 
 audio_sound_pitch(dashslide_snd, clamp(1 * global.timeScale, 0.5, 1.5));
 audio_sound_pitch(dashroll_snd, clamp(1 * global.timeScale, 0.5, 1.5));
-audio_sound_pitch(dashmoan_snd, clamp(1 * global.timeScale, 0.5, 1.5));
+audio_sound_pitch(dashmoan_snd, clamp(1, 0.5, 1.5));
 audio_sound_pitch(jumpspin_snd, clamp(1 * global.timeScale, 0.5, 1.5));
-audio_sound_pitch(doublejumpmoan_snd, clamp(1 * global.timeScale, 0.5, 1.5));
-audio_sound_pitch(landmoan_snd, clamp(1 * global.timeScale, 0.5, 1.5));
-audio_sound_pitch(jumpmoan_snd, clamp(1 * global.timeScale, 0.5, 1.5));
+audio_sound_pitch(doublejumpmoan_snd, clamp(1, 0.5, 1.5));
+audio_sound_pitch(landmoan_snd, clamp(1, 0.5, 1.5));
+audio_sound_pitch(jumpmoan_snd, clamp(1, 0.5, 1.5));
 
 //Timer
 if (room == infiniteSpawn)
