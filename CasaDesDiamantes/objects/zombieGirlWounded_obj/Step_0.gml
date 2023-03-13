@@ -268,7 +268,8 @@ if (hp < 0)
 	damageTint = false;
 	damageTintHeadshot = false;
 	instance_destroy(alarmLight);
-	instance_change(zombieGirlWoundedDeath1_obj, false);
+	//instance_change(zombieGirlWoundedDeath1_obj, false);
+	instance_destroy();
 }
 
 if (damageTintTimer < 0)

@@ -1,25 +1,9 @@
 {
-  "spriteId": {
-    "name": "neuralTiles_spr",
-    "path": "sprites/neuralTiles_spr/neuralTiles_spr.yy",
-  },
-  "tileWidth": 32,
-  "tileHeight": 32,
-  "tilexoff": 0,
-  "tileyoff": 0,
-  "tilehsep": 0,
-  "tilevsep": 0,
-  "spriteNoExport": true,
-  "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
-  },
-  "out_tilehborder": 2,
-  "out_tilevborder": 2,
-  "out_columns": 8,
-  "tile_count": 64,
+  "resourceType": "GMTileSet",
+  "resourceVersion": "1.0",
+  "name": "neuralTiles",
   "autoTileSets": [
-    {"tiles":[
+    {"resourceType":"GMAutoTileSet","resourceVersion":"1.0","name":"autotile_2","closed_edge":false,"tiles":[
         0,
         0,
         0,
@@ -67,47 +51,30 @@
         0,
         0,
         0,
-      ],"closed_edge":false,"resourceVersion":"1.0","name":"autotile_2","tags":[],"resourceType":"GMAutoTileSet",},
+      ],},
   ],
-  "tileAnimationFrames": [
-    {"frames":[
-        24,
-        32,
-        40,
-        48,
-      ],"resourceVersion":"1.0","name":"animation_1","tags":[],"resourceType":"GMTileAnimation",},
-    {"frames":[
-        25,
-        33,
-        41,
-        49,
-      ],"resourceVersion":"1.0","name":"animation_2","tags":[],"resourceType":"GMTileAnimation",},
-    {"frames":[
-        19,
-        20,
-        21,
-        22,
-      ],"resourceVersion":"1.0","name":"animation_3","tags":[],"resourceType":"GMTileAnimation",},
-    {"frames":[
-        27,
-        28,
-        29,
-        30,
-      ],"resourceVersion":"1.0","name":"animation_4","tags":[],"resourceType":"GMTileAnimation",},
-    {"frames":[
-        59,
-        60,
-        61,
-        62,
-      ],"resourceVersion":"1.0","name":"animation_5","tags":[],"resourceType":"GMTileAnimation",},
-    {"frames":[
-        51,
-        52,
-        53,
-        54,
-      ],"resourceVersion":"1.0","name":"animation_6","tags":[],"resourceType":"GMTileAnimation",},
-  ],
-  "tileAnimationSpeed": 12.0,
+  "macroPageTiles": {
+    "SerialiseHeight": 0,
+    "SerialiseWidth": 0,
+    "TileSerialiseData": [],
+  },
+  "out_columns": 8,
+  "out_tilehborder": 2,
+  "out_tilevborder": 2,
+  "parent": {
+    "name": "Tile Sets",
+    "path": "folders/Sprites/Tile Sets.yy",
+  },
+  "spriteId": {
+    "name": "neuralTiles_spr",
+    "path": "sprites/neuralTiles_spr/neuralTiles_spr.yy",
+  },
+  "spriteNoExport": true,
+  "textureGroupId": {
+    "name": "Default",
+    "path": "texturegroups/Default",
+  },
+  "tile_count": 64,
   "tileAnimation": {
     "FrameData": [
       0,
@@ -369,17 +336,49 @@
     ],
     "SerialiseFrameCount": 4,
   },
-  "macroPageTiles": {
-    "SerialiseWidth": 0,
-    "SerialiseHeight": 0,
-    "TileSerialiseData": [],
-  },
-  "parent": {
-    "name": "Tile Sets",
-    "path": "folders/Sprites/Tile Sets.yy",
-  },
-  "resourceVersion": "1.0",
-  "name": "neuralTiles",
-  "tags": [],
-  "resourceType": "GMTileSet",
+  "tileAnimationFrames": [
+    {"resourceType":"GMTileAnimation","resourceVersion":"1.0","name":"animation_1","frames":[
+        24,
+        32,
+        40,
+        48,
+      ],},
+    {"resourceType":"GMTileAnimation","resourceVersion":"1.0","name":"animation_2","frames":[
+        25,
+        33,
+        41,
+        49,
+      ],},
+    {"resourceType":"GMTileAnimation","resourceVersion":"1.0","name":"animation_3","frames":[
+        19,
+        20,
+        21,
+        22,
+      ],},
+    {"resourceType":"GMTileAnimation","resourceVersion":"1.0","name":"animation_4","frames":[
+        27,
+        28,
+        29,
+        30,
+      ],},
+    {"resourceType":"GMTileAnimation","resourceVersion":"1.0","name":"animation_5","frames":[
+        59,
+        60,
+        61,
+        62,
+      ],},
+    {"resourceType":"GMTileAnimation","resourceVersion":"1.0","name":"animation_6","frames":[
+        51,
+        52,
+        53,
+        54,
+      ],},
+  ],
+  "tileAnimationSpeed": 12.0,
+  "tileHeight": 32,
+  "tilehsep": 0,
+  "tilevsep": 0,
+  "tileWidth": 32,
+  "tilexoff": 0,
+  "tileyoff": 0,
 }

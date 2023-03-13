@@ -547,7 +547,9 @@ if (checkPlayerTimer < 0)
 }
 
 //Audio
-audio_emitter_position(emitter, x, y, 0);
+if (audio_emitter_exists(emitter)) {
+	audio_emitter_position(emitter, x, y, 0);
+}
 
 //Collision
 //horspeed
