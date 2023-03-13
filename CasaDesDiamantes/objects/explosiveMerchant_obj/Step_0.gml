@@ -151,10 +151,11 @@ if (hp <= 0)
 		}
 	}
 	
-	instance_change(zombieGirlDeath2_obj, true);
+	//instance_change(zombieGirlDeath2_obj, true);
 	instance_destroy(alarmLight);
 	instance_create_layer(x, y, "Instances", explosionBigOnlyEnemy_obj);
 	damageTint = false;
+	instance_destroy();
 }
 
 //Alarm Light
