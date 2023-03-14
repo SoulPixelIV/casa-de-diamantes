@@ -1,2 +1,7 @@
+animationSpeed = 1;
 open = false;
-moveTimer = 400;
+verspeed = 0;
+speedVer = 0.05;
+dir = 0;
+movTimer = 200;
+movTimerSave = movTimer;
