@@ -9,10 +9,7 @@
     "name": "Colliders",
     "path": "folders/Objects/Colliders.yy",
   },
-  "parentObjectId": {
-    "name": "colliderGlobal_obj",
-    "path": "objects/colliderGlobal_obj/colliderGlobal_obj.yy",
-  },
+  "parentObjectId": null,
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,

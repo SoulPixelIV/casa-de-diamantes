@@ -75,7 +75,7 @@
   "packageId": "",
   "parent": {
     "name": "Extensions",
-    "path": "folders/Other + Legacy/Extensions.yy",
+    "path": "folders/Extensions.yy",
   },
   "productId": "",
   "sourcedir": "",

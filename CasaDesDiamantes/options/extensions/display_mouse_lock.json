@@ -1,6 +1,9 @@
 {
   "resourceType": "GMExtensionConfigSet",
   "configurables": null,
-  "extensionId": null,
+  "extensionId": {
+    "name": "display_mouse_lock",
+    "path": "extensions/display_mouse_lock/display_mouse_lock.yy"
+  },
   "resourceVersion": "1.0"
 }
