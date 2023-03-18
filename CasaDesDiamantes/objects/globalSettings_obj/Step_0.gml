@@ -1,5 +1,11 @@
 /// @description Shortcuts
 
+loadTimer -= global.dt;
+if (loadTimer < 0 && !loaded) {
+	room_goto_next();
+	loaded = true;
+}
+
 //Timescale
 if (realTimeScale < global.timeScale)
 {
