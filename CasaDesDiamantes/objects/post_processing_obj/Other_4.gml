@@ -11,4 +11,4 @@ var _profile_test = ppfx_profile_create("Cool Layer Effects", [
 ppfx_profile_load(layer_effects_id, _profile_test);
 
 layer_index = ppfx_layer_create();
-ppfx_layer_apply(layer_effects_id, layer_index, layer_get_id("Instances"), layer_get_id("Background2"), false);
+ppfx_layer_apply(layer_effects_id, layer_index, layer_get_id("Instances"), layer_get_id("Background2"), true);

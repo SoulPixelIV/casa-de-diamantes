@@ -291,7 +291,6 @@
     {"name":"inst_36AF03CD","path":"rooms/level3/level3.yy",},
     {"name":"inst_4012321F","path":"rooms/level3/level3.yy",},
     {"name":"inst_20602217","path":"rooms/level3/level3.yy",},
-    {"name":"inst_FD1F0AE","path":"rooms/level3/level3.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -324,7 +323,6 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_70B77422","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"enemyVisionBlockZone_obj","path":"objects/enemyVisionBlockZone_obj/enemyVisionBlockZone_obj.yy",},"properties":[],"rotation":0.0,"scaleX":17.5625,"scaleY":1.8125,"x":5722.5,"y":1081.5,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7BAFE629","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"fakewallTrigger_obj","path":"objects/fakewallTrigger_obj/fakewallTrigger_obj.yy",},"properties":[],"rotation":0.0,"scaleX":13.0625,"scaleY":11.0,"x":4187.5,"y":1577.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_4012321F","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"tutorialInfectionCollider_obj","path":"objects/tutorialInfectionCollider_obj/tutorialInfectionCollider_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":3.5,"x":2384.0,"y":2071.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_FD1F0AE","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"post_processing_obj","path":"objects/post_processing_obj/post_processing_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":192.0,"y":0.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMREffectLayer","resourceVersion":"1.0","name":"RedFilter","depth":400,"effectEnabled":true,"effectType":"_filter_colourise","gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[
         {"name":"g_Intensity","type":0,"value":"0.3",},
