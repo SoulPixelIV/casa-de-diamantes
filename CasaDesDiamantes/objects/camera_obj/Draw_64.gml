@@ -9,14 +9,14 @@ if (instance_exists(player_obj))
 		{
 			if (global.pistolAmmo < 5)
 			{
-				draw_sprite_ext(ammoCounter_spr, global.pistolAmmo, player_obj.x - 22, player_obj.y - 20, 1, 1, 0, -1, 1 / (global.pistolAmmo + 1) * 1.5);
+				draw_sprite_ext(ammoCounter_spr, global.pistolAmmo, ((player_obj.x) - x) + 220, ((player_obj.y - 20) - y) + 120, 1, 1, 0, -1, 1 / (global.pistolAmmo + 1) * 1.5);
 			}
 		}
 		if (global.currentWeapon == pickedWeapon.shotgun)
 		{
 			if (global.shotgunAmmo < 5)
 			{
-				draw_sprite_ext(ammoCounter_spr, global.shotgunAmmo, player_obj.x - 22, player_obj.y - 20, 1, 1, 0, -1, 1 / (global.shotgunAmmo + 1) * 1.5);
+				draw_sprite_ext(ammoCounter_spr, global.shotgunAmmo, ((player_obj.x) - x) + 220, ((player_obj.y - 20) - y) + 120, 1, 1, 0, -1, 1 / (global.shotgunAmmo + 1) * 1.5);
 			}
 		}
 	}
@@ -54,7 +54,7 @@ if (instance_exists(player_obj))
 	//Walljump Indicator
 	if (showWalljumpsLeft)
 	{
-		draw_sprite_ext(walljumpIndicator_spr, player_obj.wallJumps, player_obj.x + 14, player_obj.y - 18, 1, 1, 0, -1, 1);
+		draw_sprite_ext(walljumpIndicator_spr, player_obj.wallJumps, ((player_obj.x) - x) + 248, ((player_obj.y - 20) - y) + 122, 1, 1, 0, -1, 1);
 	}
 	if (player_obj.huggingWall)
 	{
@@ -68,7 +68,7 @@ if (instance_exists(player_obj))
 	//Dash Circle
 	if (player_obj.dashDelay < 150)
 	{
-		var dashCircle = draw_sprite_ext(dashCircle_spr, 0, player_obj.x, player_obj.y, 1 / (player_obj.dashDelay / 60), 1 / (player_obj.dashDelay / 60), 0, -1, 0.2 / (player_obj.dashDelay / 40))
+		var dashCircle = draw_sprite_ext(dashCircle_spr, 0, ((player_obj.x) - x) + 238, ((player_obj.y - 20) - y) + 143, 1 / (player_obj.dashDelay / 60), 1 / (player_obj.dashDelay / 60), 0, -1, 0.2 / (player_obj.dashDelay / 40))
 	}
 	
 	//Player Infection Timer
@@ -140,10 +140,10 @@ if (drawText && !showWindowMenu)
 	draw_set_font(gothicPixel_fnt);
 	draw_set_halign(fa_center);
 	draw_set_color(c_black);
-	draw_sprite_ext(dialogBorder_spr, 0, character.x, character.y - 34,2 + string_length(dialogueStripped) / 3, 1.5, 0, -1, 1);
-	draw_text(character.x - 1, character.y - 38 + 1, string_copy(dialogueStripped, 1, string_length(dialogue[dialogueLine])));
+	draw_sprite_ext(dialogBorder_spr, 0, character.x - x, (character.y - 34) - y,2 + string_length(dialogueStripped) / 3, 1.5, 0, -1, 1);
+	draw_text((character.x - 1) - x, (character.y - 38 + 1) - y, string_copy(dialogueStripped, 1, string_length(dialogue[dialogueLine])));
 	draw_set_color(make_color_rgb(255, 215, 0));
-	draw_text(character.x, character.y - 38, string_copy(dialogueStripped, 1, string_length(dialogue[dialogueLine])));
+	draw_text(character.x - x, (character.y - 38) - y, string_copy(dialogueStripped, 1, string_length(dialogue[dialogueLine])));
 	draw_set_halign(fa_left);
 
 	//Sentence incomplete
@@ -197,49 +197,49 @@ with (player_obj)
 	{
 		with (camera_obj)
 		{
-			draw_sprite(wKeyPromt_spr, tutorialAnimImage, player_obj.x, player_obj.y - 32);
+			draw_sprite(wKeyPromt_spr, tutorialAnimImage, player_obj.x - x, (player_obj.y - 32) - y);
 		}
 	}
 	if (place_meeting(x, y, tutorialADKeyPromt_obj))
 	{
 		with (camera_obj)
 		{
-			draw_sprite(adKeyPrompt_spr, tutorialAnimImage, player_obj.x, player_obj.y - 32);
+			draw_sprite(adKeyPrompt_spr, tutorialAnimImage, player_obj.x - x, (player_obj.y - 32) - y);
 		}
 	}
 	if (place_meeting(x, y, tutorialSpaceKeyPromt_obj))
 	{
 		with (camera_obj)
 		{
-			draw_sprite(spaceKeyPrompt_spr, tutorialAnimImage, player_obj.x, player_obj.y - 32);
+			draw_sprite(spaceKeyPrompt_spr, tutorialAnimImage, player_obj.x - x, (player_obj.y - 32) - y);
 		}
 	}
 	if (place_meeting(x, y, tutorialShiftKeyPromt_obj))
 	{
 		with (camera_obj)
 		{
-			draw_sprite(shiftKeyPrompt_spr, tutorialAnimImage, player_obj.x, player_obj.y - 32);
+			draw_sprite(shiftKeyPrompt_spr, tutorialAnimImage, player_obj.x - x, (player_obj.y - 32) - y);
 		}
 	}
 	if (place_meeting(x, y, tutorialMousePromt_obj))
 	{
 		with (camera_obj)
 		{
-			draw_sprite(mousePromt_spr, tutorialAnimImage, player_obj.x, player_obj.y - 32);
+			draw_sprite(mousePromt_spr, tutorialAnimImage, player_obj.x - x, (player_obj.y - 32) - y);
 		}
 	}
 }
 
 if (drawTutorialInfection) {	
 	player_obj.movement = false;
-	draw_sprite_ext(menuWindow_spr, 0, x, y, 1, 1, 0, -1, 1);
+	draw_sprite_ext(menuWindow_spr, 0, global.xScreenSize / 2, global.yScreenSize / 2, 1, 1, 0, -1, 1);
 	
 	draw_set_font(gothicPixel_fnt);
 	draw_set_halign(fa_center);
 	draw_set_color(c_black);
-	draw_text(x - 1, 0 / 3 + 32, "Tutorial - Infection\nToxic Fumes and more can cause an Infection.\nFind a sterilization chamber to heal yourself!\nWatch your healthbar to see the\nprogress of the Infection.\n\nPress Space to Continue!");
+	draw_text(global.xScreenSize / 2 - 1, 76, "Tutorial - Infection\nToxic Fumes and more can cause an Infection.\nFind a sterilization chamber to heal yourself!\nWatch your healthbar to see the\nprogress of the Infection.\n\nPress Space to Continue!");
 	draw_set_color(make_color_rgb(255, 215, 0));
-	draw_text(x, 0 / 3 + 32, "Tutorial - Infection\nToxic Fumes and more can cause an Infection.\nFind a sterilization chamber to heal yourself!\nWatch your healthbar to see the\nprogress of the Infection.\n\nPress Space to Continue!");
+	draw_text(global.xScreenSize / 2, 76, "Tutorial - Infection\nToxic Fumes and more can cause an Infection.\nFind a sterilization chamber to heal yourself!\nWatch your healthbar to see the\nprogress of the Infection.\n\nPress Space to Continue!");
 	draw_set_halign(fa_left);
 	
 	if (keyboard_check_pressed(vk_space) || gamepad_button_check_pressed(4, gp_face1) || gamepad_button_check_pressed(0, gp_face1)) {
