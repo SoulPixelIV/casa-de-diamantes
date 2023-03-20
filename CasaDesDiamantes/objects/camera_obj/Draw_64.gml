@@ -237,9 +237,9 @@ if (drawTutorialInfection) {
 	draw_set_font(gothicPixel_fnt);
 	draw_set_halign(fa_center);
 	draw_set_color(c_black);
-	draw_text(x - 1, y - yScreenSize / 3 + 32, "Tutorial - Infection\nToxic Fumes and more can cause an Infection.\nFind a sterilization chamber to heal yourself!\nWatch your healthbar to see the\nprogress of the Infection.\n\nPress Space to Continue!");
+	draw_text(x - 1, 0 / 3 + 32, "Tutorial - Infection\nToxic Fumes and more can cause an Infection.\nFind a sterilization chamber to heal yourself!\nWatch your healthbar to see the\nprogress of the Infection.\n\nPress Space to Continue!");
 	draw_set_color(make_color_rgb(255, 215, 0));
-	draw_text(x, y - yScreenSize / 3 + 32, "Tutorial - Infection\nToxic Fumes and more can cause an Infection.\nFind a sterilization chamber to heal yourself!\nWatch your healthbar to see the\nprogress of the Infection.\n\nPress Space to Continue!");
+	draw_text(x, 0 / 3 + 32, "Tutorial - Infection\nToxic Fumes and more can cause an Infection.\nFind a sterilization chamber to heal yourself!\nWatch your healthbar to see the\nprogress of the Infection.\n\nPress Space to Continue!");
 	draw_set_halign(fa_left);
 	
 	if (keyboard_check_pressed(vk_space) || gamepad_button_check_pressed(4, gp_face1) || gamepad_button_check_pressed(0, gp_face1)) {
@@ -254,15 +254,15 @@ if (drawTutorialInfection) {
 
 //Lens Dirt + Vignette
 /*
-draw_sprite_ext(lensDirt1_spr, 0, randParticleX + partMovement + (x - xScreenSize / 2), randParticleY + partMovement / 2 + (y - yScreenSize / 2), 1, 1, 0, -1, 0.135);
-draw_sprite_ext(lensDirt2_spr, 0, randParticleX2 + partMovement + (x - xScreenSize / 2), randParticleY2 + partMovement / 2 + (y - yScreenSize / 2), 1, 1, 0, -1, 0.135);
-draw_sprite_ext(lensDirt2_spr, 0, randParticleX3 + partMovement + (x - xScreenSize / 2), randParticleY3 + partMovement / 2 + (y - yScreenSize / 2), 1, 1, 0, -1, 0.135);
-draw_sprite_ext(lensDirt2_spr, 0, randParticleX4 + partMovement + (x - xScreenSize / 2), randParticleY4 + partMovement / 2 + (y - yScreenSize / 2), 1, 1, 0, -1, 0.135);
+draw_sprite_ext(lensDirt1_spr, 0, randParticleX + partMovement + (0 / 2), randParticleY + partMovement / 2 + (0 / 2), 1, 1, 0, -1, 0.135);
+draw_sprite_ext(lensDirt2_spr, 0, randParticleX2 + partMovement + (0 / 2), randParticleY2 + partMovement / 2 + (0 / 2), 1, 1, 0, -1, 0.135);
+draw_sprite_ext(lensDirt2_spr, 0, randParticleX3 + partMovement + (0 / 2), randParticleY3 + partMovement / 2 + (0 / 2), 1, 1, 0, -1, 0.135);
+draw_sprite_ext(lensDirt2_spr, 0, randParticleX4 + partMovement + (0 / 2), randParticleY4 + partMovement / 2 + (0 / 2), 1, 1, 0, -1, 0.135);
 
-draw_sprite_ext(lensDirt1_spr, 0, randParticle2X + partMovement + (x - xScreenSize / 2), randParticle2Y + partMovement / 2 + (y - yScreenSize / 2), 1, 1, 0, -1, 0.135);
-draw_sprite_ext(lensDirt2_spr, 0, randParticle2X2 + partMovement + (x - xScreenSize / 2), randParticle2Y2 + partMovement / 2 + (y - yScreenSize / 2), 1, 1, 0, -1, 0.135);
-draw_sprite_ext(lensDirt2_spr, 0, randParticle2X3 + partMovement + (x - xScreenSize / 2), randParticle2Y3 + partMovement / 2 + (y - yScreenSize / 2), 1, 1, 0, -1, 0.135);
-draw_sprite_ext(lensDirt2_spr, 0, randParticle2X4 + partMovement + (x - xScreenSize / 2), randParticle2Y4 + partMovement / 2 + (y - yScreenSize / 2), 1, 1, 0, -1, 0.135);
+draw_sprite_ext(lensDirt1_spr, 0, randParticle2X + partMovement + (0 / 2), randParticle2Y + partMovement / 2 + (0 / 2), 1, 1, 0, -1, 0.135);
+draw_sprite_ext(lensDirt2_spr, 0, randParticle2X2 + partMovement + (0 / 2), randParticle2Y2 + partMovement / 2 + (0 / 2), 1, 1, 0, -1, 0.135);
+draw_sprite_ext(lensDirt2_spr, 0, randParticle2X3 + partMovement + (0 / 2), randParticle2Y3 + partMovement / 2 + (0 / 2), 1, 1, 0, -1, 0.135);
+draw_sprite_ext(lensDirt2_spr, 0, randParticle2X4 + partMovement + (0 / 2), randParticle2Y4 + partMovement / 2 + (0 / 2), 1, 1, 0, -1, 0.135);
 */
 	
 //Vignette Effect
@@ -331,7 +331,7 @@ if (hitVignetteTimer < 0)
 
 shader_reset();
 draw_set_alpha(vignetteAlpha);
-draw_ellipse_colour(x - xScreenSize, y - yScreenSize, x + xScreenSize, y + yScreenSize, c_black , c_red, false);
+draw_ellipse_colour(0, 0, global.xScreenSize, global.yScreenSize, c_black , c_red, false);
 draw_set_alpha(1);
 
 if (instance_exists(player_obj)) {
@@ -339,7 +339,7 @@ if (instance_exists(player_obj)) {
 	{
 	    shader_reset();
 	    draw_set_alpha(0.4);
-	    draw_ellipse_colour(x - xScreenSize, y - yScreenSize, x + xScreenSize, y + yScreenSize, c_black , c_purple, false);
+	    draw_ellipse_colour(0, 0, global.xScreenSize, global.yScreenSize, c_black , c_purple, false);
 	    draw_set_alpha(1);
 	}
 
@@ -347,7 +347,7 @@ if (instance_exists(player_obj)) {
 	{
 		shader_reset();
 	    draw_set_alpha(((player_obj.sniperDamageValue / 100) / 5) / 2);
-	    draw_ellipse_colour(x - xScreenSize, y - yScreenSize, x + xScreenSize, y + yScreenSize, c_black , make_color_rgb(255,215,0), false);
+	    draw_ellipse_colour(0, 0, global.xScreenSize, global.yScreenSize, c_black , make_color_rgb(255,215,0), false);
 	    draw_set_alpha(1);
 	}
 }
@@ -378,8 +378,8 @@ else
 }
 
 //black borders
-draw_sprite(blackborder_spr, 0, x, blackbordersPos + (y - yScreenSize / 2));
-draw_sprite(blackborder_spr, 0, x, (y + yScreenSize / 2) + 42 - blackbordersPos);
+draw_sprite(blackborder_spr, 0, x, blackbordersPos + (0 / 2));
+draw_sprite(blackborder_spr, 0, x, (global.yScreenSize) + 42 - blackbordersPos);
 
 if (!noHUD && instance_exists(player_obj))
 {
@@ -393,47 +393,47 @@ if (!noHUD && instance_exists(player_obj))
 		currDeltatime = global.dt;
 		updateFPS = updateFPSSave;
 	}
-	draw_text_colour((x - xScreenSize / 2) + 16, (y + yScreenSize / 2) - 16, "Framerate: " + string(currFps), c_white, c_white, c_white, c_white, 1);
-	//draw_text_colour((x - xScreenSize / 2) + 16, (y + yScreenSize / 2) - 32, "Delta: " + string(currDeltatime), c_white, c_white, c_white, c_white, 1);
+	draw_text_colour((0 / 2) + 16, (global.yScreenSize) - 16, "Framerate: " + string(currFps), c_white, c_white, c_white, c_white, 1);
+	//draw_text_colour((0 / 2) + 16, (global.yScreenSize) - 32, "Delta: " + string(currDeltatime), c_white, c_white, c_white, c_white, 1);
 	draw_set_halign(fa_center);
-	//draw_text_color(x, (y - yScreenSize / 2) + 6, "F3 - Level Select", c_white, c_white, c_white, c_white, 1);
+	//draw_text_color(x, (0 / 2) + 6, "F3 - Level Select", c_white, c_white, c_white, c_white, 1);
 	draw_set_halign(fa_left);
 
 	//Healthbar
 	if (player_obj.plagueTransformation)
 	{
-		draw_sprite_ext(healthbarLensflare_spr, -1, (x - xScreenSize / 2) + 22, (y - yScreenSize / 2) + 130, 1, 1, 0, c_purple, 1);
-		draw_sprite_ext(healthbarBorderInfection_spr, -1, (x - xScreenSize / 2) + 16, (y - yScreenSize / 2) + 9, 1, 1, 0, -1, 1);
+		draw_sprite_ext(healthbarLensflare_spr, -1, (0 / 2) + 22, (0 / 2) + 130, 1, 1, 0, c_purple, 1);
+		draw_sprite_ext(healthbarBorderInfection_spr, -1, (0 / 2) + 16, (0 / 2) + 9, 1, 1, 0, -1, 1);
 	}
 	else if (player_obj.hp == 100)
 	{
-		draw_sprite_ext(healthbarBorderFull_spr, -1, (x - xScreenSize / 2) + 16, (y - yScreenSize / 2) + 9, 1, 1, 0, -1, 1);
+		draw_sprite_ext(healthbarBorderFull_spr, -1, (0 / 2) + 16, (0 / 2) + 9, 1, 1, 0, -1, 1);
 	}
 	else if (player_obj.hp > 20)
 	{
-		draw_sprite_ext(healthbarBorder_spr, -1, (x - xScreenSize / 2) + 16, (y - yScreenSize / 2) + 9, 1, 1, 0, -1, 1);
+		draw_sprite_ext(healthbarBorder_spr, -1, (0 / 2) + 16, (0 / 2) + 9, 1, 1, 0, -1, 1);
 	}
 	else
 	{
-		draw_sprite_ext(healthbarLensflare_spr, -1, (x - xScreenSize / 2) + 22, (y - yScreenSize / 2) + 130, 1, 1, 0, -1, 1);
-		draw_sprite_ext(healthbarBorderLow_spr, -1, (x - xScreenSize / 2) + 16, (y - yScreenSize / 2) + 9, 1, 1, 0, -1, 1);
+		draw_sprite_ext(healthbarLensflare_spr, -1, (0 / 2) + 22, (0 / 2) + 130, 1, 1, 0, -1, 1);
+		draw_sprite_ext(healthbarBorderLow_spr, -1, (0 / 2) + 16, (0 / 2) + 9, 1, 1, 0, -1, 1);
 	}
 	if (!player_obj.damageRecieved && healthbarDone)
 	{
-		draw_sprite_ext(healthbarTop2_spr, -1, 18 + (x - xScreenSize / 2), 18 - (player_obj.hp - 100) + (y - yScreenSize / 2), 1, 1, 0, -1, 1);
+		draw_sprite_ext(healthbarTop2_spr, -1, 18 + (0 / 2), 18 - (player_obj.hp - 100) + (0 / 2), 1, 1, 0, -1, 1);
 	}
-	draw_sprite_ext(healthbar_spr, 0, 18 + (x - xScreenSize / 2), 130 + (y - yScreenSize / 2), 1, clamp(1 * (player_obj.hp / 100), 0, 100), 0, -1, 1);
+	draw_sprite_ext(healthbar_spr, 0, 18 + (0 / 2), 130 + (0 / 2), 1, clamp(1 * (player_obj.hp / 100), 0, 100), 0, -1, 1);
 	if (player_obj.plagueTransformation)
 	{
-		draw_sprite_ext(healthbarTop2Infection_spr, -1, 18 + (x - xScreenSize / 2), (118 - player_obj.infection) + (y - yScreenSize / 2), 1, 1, 0, -1, 1);
-		draw_sprite_ext(healthbarInfection_spr, 0, 18 + (x - xScreenSize / 2), 130 + (y - yScreenSize / 2), 1, player_obj.infection / 100, 0, -1, 1);
+		draw_sprite_ext(healthbarTop2Infection_spr, -1, 18 + (0 / 2), (118 - player_obj.infection) + (0 / 2), 1, 1, 0, -1, 1);
+		draw_sprite_ext(healthbarInfection_spr, 0, 18 + (0 / 2), 130 + (0 / 2), 1, player_obj.infection / 100, 0, -1, 1);
 	}
 	//Damage Healthbar
 	if (player_obj.damageRecieved || healthbarShrinkStart)
 	{
 		healthbarDone = false;
-		draw_sprite_ext(healthbarTop2Damage_spr, -1, 18 + (x - xScreenSize / 2), ((18 - (player_obj.hpOld - 100)) + healthbarShrinking) + (y - yScreenSize / 2), 1, 1, 0, -1, 1);
-		draw_sprite_ext(healthbarDamage_spr, 0, 18 + (x - xScreenSize / 2), (30 - (player_obj.hpOld - 100)) + healthbarShrinking + (y - yScreenSize / 2), 1, ((player_obj.hp / 100) - (player_obj.hpOld / 100)) + (healthbarShrinking / 100), 0, -1, 1);
+		draw_sprite_ext(healthbarTop2Damage_spr, -1, 18 + (0 / 2), ((18 - (player_obj.hpOld - 100)) + healthbarShrinking) + (0 / 2), 1, 1, 0, -1, 1);
+		draw_sprite_ext(healthbarDamage_spr, 0, 18 + (0 / 2), (30 - (player_obj.hpOld - 100)) + healthbarShrinking + (0 / 2), 1, ((player_obj.hp / 100) - (player_obj.hpOld / 100)) + (healthbarShrinking / 100), 0, -1, 1);
 	}
 	if (!player_obj.damageRecieved && !healthbarDone)
 	{
@@ -456,31 +456,31 @@ if (!noHUD && instance_exists(player_obj))
 	//Syringes
 	for (i = 0; i < global.syringes; i++)
 	{
-		draw_sprite_ext(syringe_spr, -1, 32 + x - xScreenSize / 2, ((y - yScreenSize / 2) + 70) + 16 * i, 1, 1, 0, -1, 1);
+		draw_sprite_ext(syringe_spr, -1, 32 + 0 / 2, ((0 / 2) + 70) + 16 * i, 1, 1, 0, -1, 1);
 	}
 	
 	//Keycards
 	if (global.keyRed) {
-		draw_sprite_ext(redKeycard_spr, -1, (x + xScreenSize / 2) - 28, (y - yScreenSize / 2) + 32, 1, 1, 0, -1, 1);
+		draw_sprite_ext(redKeycard_spr, -1, (global.xScreenSize) - 28, (0 / 2) + 32, 1, 1, 0, -1, 1);
 	}
 	if (global.keyBlue) {
-		draw_sprite_ext(blueKeycard_spr, -1, (x + xScreenSize / 2) - 42, (y - yScreenSize / 2) + 32, 1, 1, 0, -1, 1);
+		draw_sprite_ext(blueKeycard_spr, -1, (global.xScreenSize) - 42, (0 / 2) + 32, 1, 1, 0, -1, 1);
 	}
 	if (global.keyYellow) {
-		draw_sprite_ext(yellowKeycard_spr, -1, (x + xScreenSize / 2) - 56, (y - yScreenSize / 2) + 32, 1, 1, 0, -1, 1);
+		draw_sprite_ext(yellowKeycard_spr, -1, (global.xScreenSize) - 56, (0 / 2) + 32, 1, 1, 0, -1, 1);
 	}
 	
 	//Diamond Key
 	if (global.hasWarpzoneKey) {
 		if (global.syringes == 0) {
-			draw_sprite_ext(diamond_spr, -1, 32 + x - xScreenSize / 2, (y - yScreenSize / 2) + 64, 1, 1, 0, -1, 1);
+			draw_sprite_ext(diamond_spr, -1, 32 + 0 / 2, (0 / 2) + 64, 1, 1, 0, -1, 1);
 		} else {
-			draw_sprite_ext(diamond_spr, -1, 54 + x - xScreenSize / 2, (y - yScreenSize / 2) + 64, 1, 1, 0, -1, 1);
+			draw_sprite_ext(diamond_spr, -1, 54 + 0 / 2, (0 / 2) + 64, 1, 1, 0, -1, 1);
 		}
 	}
 	
 	//Chipbar
-	draw_sprite_ext(scoreBorder_spr, -1, x + (xScreenSize / 2) - 16, 9 + y - (yScreenSize / 2), 1, 1, 0, -1, 1);
+	draw_sprite_ext(scoreBorder_spr, -1, global.xScreenSize - 16, 9, 1, 1, 0, -1, 1);
 	
 	//###### UI TECH ######
 	//Radiation Meter
@@ -488,13 +488,13 @@ if (!noHUD && instance_exists(player_obj))
 	{
 		if (player_obj.radiation > 0 && player_obj.radiation < 80)
 		{
-			draw_sprite(radiationMeter_spr, 0, (x + xScreenSize / 2) - 16, (y + yScreenSize / 2) - 9);
-			draw_sprite_ext(radiationMeterLine_spr, 0, (x + xScreenSize / 2) - 60, (y + yScreenSize / 2) - 48, 1, 1, (-player_obj.radiation * 1.5) +75, -1, 1);
+			draw_sprite(radiationMeter_spr, 0, (global.xScreenSize) - 16, (global.yScreenSize) - 9);
+			draw_sprite_ext(radiationMeterLine_spr, 0, (global.xScreenSize) - 60, (global.yScreenSize) - 48, 1, 1, (-player_obj.radiation * 1.5) +75, -1, 1);
 		}
 		if (player_obj.radiation > 80)
 		{
-			draw_sprite(radiationMeterAlarm_spr, -1, (x + xScreenSize / 2) - 16, (y + yScreenSize / 2) - 9);
-			draw_sprite_ext(radiationMeterLine_spr, 0, (x + xScreenSize / 2) - 60, (y + yScreenSize / 2) - 48, 1, 1, (-player_obj.radiation * 1.5) +75, -1, 1);
+			draw_sprite(radiationMeterAlarm_spr, -1, (global.xScreenSize) - 16, (global.yScreenSize) - 9);
+			draw_sprite_ext(radiationMeterLine_spr, 0, (global.xScreenSize) - 60, (global.yScreenSize) - 48, 1, 1, (-player_obj.radiation * 1.5) +75, -1, 1);
 		}
 	}
 	
@@ -503,7 +503,7 @@ if (!noHUD && instance_exists(player_obj))
 		var nearestProximityEnemy = instance_nearest(x, y, enemy_obj);
 		if (distance_to_object(nearestProximityEnemy) < 512) {
 			if (nearestProximityEnemy.object_index == crawler_obj || nearestProximityEnemy.object_index == zombieGirl_obj) {
-				draw_sprite(proximitySensor_spr, 0, (x + xScreenSize / 2) - 16, (y + yScreenSize / 2) - 9);
+				draw_sprite(proximitySensor_spr, 0, (global.xScreenSize) - 16, (global.yScreenSize) - 9);
 			
 				proximitysensorTimer -= global.dt;
 				if (proximitysensorTimer < 0) {
@@ -519,8 +519,8 @@ if (!noHUD && instance_exists(player_obj))
 				}
 
 				for (var i = 0; i < array_length(enemy); i++) {
-					var offsetX = (x + xScreenSize / 2) - 60;
-					var offsetY = (y + yScreenSize / 2) - 29;
+					var offsetX = (global.xScreenSize) - 60;
+					var offsetY = (global.yScreenSize) - 29;
 					var distToCenterX = 0;
 					var distToCenterY = 0;
 					if (instance_exists(enemy[i])) {
@@ -555,23 +555,23 @@ if (!noHUD && instance_exists(player_obj))
 	if (scoreSpin)
 	{
 		scoreSpinTimer -= global.dt;
-		draw_sprite(scoreNumberSpin_spr, -1, x + (xScreenSize / 2) - 28, 11 + (y - yScreenSize / 2));
-		draw_sprite(scoreNumberSpin_spr, -1, x + (xScreenSize / 2) - 38, 11 + (y - yScreenSize / 2));
-		draw_sprite(scoreNumberSpin_spr, -1, x + (xScreenSize / 2) - 48, 11 + (y - yScreenSize / 2));
-		draw_sprite(scoreNumberSpin_spr, -1, x + (xScreenSize / 2) - 58, 11 + (y - yScreenSize / 2));
-		draw_sprite(scoreNumberSpin_spr, -1, x + (xScreenSize / 2) - 68, 11 + (y - yScreenSize / 2));
-		draw_sprite(scoreNumberSpin_spr, -1, x + (xScreenSize / 2) - 78, 11 + (y - yScreenSize / 2));
-		draw_sprite(scoreNumberSpin_spr, -1, x + (xScreenSize / 2) - 88, 11 + (y - yScreenSize / 2));
+		draw_sprite(scoreNumberSpin_spr, -1, global.xScreenSize - 28, 11 + (0 / 2));
+		draw_sprite(scoreNumberSpin_spr, -1, global.xScreenSize - 38, 11 + (0 / 2));
+		draw_sprite(scoreNumberSpin_spr, -1, global.xScreenSize - 48, 11 + (0 / 2));
+		draw_sprite(scoreNumberSpin_spr, -1, global.xScreenSize - 58, 11 + (0 / 2));
+		draw_sprite(scoreNumberSpin_spr, -1, global.xScreenSize - 68, 11 + (0 / 2));
+		draw_sprite(scoreNumberSpin_spr, -1, global.xScreenSize - 78, 11 + (0 / 2));
+		draw_sprite(scoreNumberSpin_spr, -1, global.xScreenSize - 88, 11 + (0 / 2));
 	}
 	else
 	{
-		draw_sprite(scoreNumber_spr, slots[6], x + (xScreenSize / 2) - 28, 11 + (y - yScreenSize / 2));
-		draw_sprite(scoreNumber_spr, slots[5], x + (xScreenSize / 2) - 38, 11 + (y - yScreenSize / 2));
-		draw_sprite(scoreNumber_spr, slots[4], x + (xScreenSize / 2) - 48, 11 + (y - yScreenSize / 2));
-		draw_sprite(scoreNumber_spr, slots[3], x + (xScreenSize / 2) - 58, 11 + (y - yScreenSize / 2));
-		draw_sprite(scoreNumber_spr, slots[2], x + (xScreenSize / 2) - 68, 11 + (y - yScreenSize / 2));
-		draw_sprite(scoreNumber_spr, slots[1], x + (xScreenSize / 2) - 78, 11 + (y - yScreenSize / 2));
-		draw_sprite(scoreNumber_spr, slots[0], x + (xScreenSize / 2) - 88, 11 + (y - yScreenSize / 2));
+		draw_sprite(scoreNumber_spr, slots[6], global.xScreenSize - 28, 11 + (0 / 2));
+		draw_sprite(scoreNumber_spr, slots[5], global.xScreenSize - 38, 11 + (0 / 2));
+		draw_sprite(scoreNumber_spr, slots[4], global.xScreenSize - 48, 11 + (0 / 2));
+		draw_sprite(scoreNumber_spr, slots[3], global.xScreenSize - 58, 11 + (0 / 2));
+		draw_sprite(scoreNumber_spr, slots[2], global.xScreenSize - 68, 11 + (0 / 2));
+		draw_sprite(scoreNumber_spr, slots[1], global.xScreenSize - 78, 11 + (0 / 2));
+		draw_sprite(scoreNumber_spr, slots[0], global.xScreenSize - 88, 11 + (0 / 2));
 	}
 	
 	if (scoreSpinTimer < 0)
@@ -589,23 +589,23 @@ if (!noHUD && instance_exists(player_obj))
 	}
 	var field1Degree = 230;
 	var field2Degree = 50;
-	var field1 = draw_sprite_ext(ammoCircleDualBarettaField_spr, global.pistolAmmo, 59 + x - xScreenSize / 2, 36 + y - yScreenSize / 2, -1, -1, wheelRotation, -1, 1);
-	var field2 = draw_sprite_ext(ammoCircleShotgunField_spr, global.shotgunAmmo, 59 + x - xScreenSize / 2, 36 + y - yScreenSize / 2, 1, 1, wheelRotation, -1, 1);
+	var field1 = draw_sprite_ext(ammoCircleDualBarettaField_spr, global.pistolAmmo, 59 + 0 / 2, 36 + 0 / 2, -1, -1, wheelRotation, -1, 1);
+	var field2 = draw_sprite_ext(ammoCircleShotgunField_spr, global.shotgunAmmo, 59 + 0 / 2, 36 + 0 / 2, 1, 1, wheelRotation, -1, 1);
 	
-	var field3 = draw_sprite_ext(ammoCircleRedField_spr, 0, 59 + x - xScreenSize / 2, 36 + y - yScreenSize / 2, -1, 1, wheelRotation, -1, 1);
-	var field4 = draw_sprite_ext(ammoCircleRedField_spr, 0, 59 + x - xScreenSize / 2, 36 + y - yScreenSize / 2, 1, -1, wheelRotation, -1, 1);
+	var field3 = draw_sprite_ext(ammoCircleRedField_spr, 0, 59 + 0 / 2, 36 + 0 / 2, -1, 1, wheelRotation, -1, 1);
+	var field4 = draw_sprite_ext(ammoCircleRedField_spr, 0, 59 + 0 / 2, 36 + 0 / 2, 1, -1, wheelRotation, -1, 1);
 
 	if (global.currentWeapon == gameManager_obj.pickedWeapon.dualBarettas)
 	{
-		draw_sprite(ammoCircle_spr, 1, 32 + x - xScreenSize / 2, 9 + y - yScreenSize / 2);
+		draw_sprite(ammoCircle_spr, 1, 32 + 0 / 2, 9 + 0 / 2);
 	}
 	else if (global.currentWeapon == gameManager_obj.pickedWeapon.shotgun)
 	{
-		draw_sprite(ammoCircle_spr, 2, 32 + x - xScreenSize / 2, 9 + y - yScreenSize / 2);
+		draw_sprite(ammoCircle_spr, 2, 32 + 0 / 2, 9 + 0 / 2);
 	}
 	else
 	{
-		draw_sprite(ammoCircle_spr, 0, 32 + x - xScreenSize / 2, 9 + y - yScreenSize / 2);
+		draw_sprite(ammoCircle_spr, 0, 32 + 0 / 2, 9 + 0 / 2);
 	}
 	
 	//Weapon
@@ -681,7 +681,7 @@ if (!noHUD && instance_exists(player_obj))
 		draw_set_color(make_color_rgb(255,215,0));
 		draw_set_halign(fa_center);
 		arenaCompleteMessageTimer -= global.dt;
-		draw_text(x, y - (yScreenSize / 3), "ARENA CLEARED!");
+		draw_text(x, (yScreenSize / 3), "ARENA CLEARED!");
 		draw_set_halign(fa_left);
 		
 		if (arenaCompleteMessageTimer < 0) {
@@ -718,8 +718,8 @@ if (!noHUD && instance_exists(player_obj))
 	
 	//Timer + Combo for Horde Mode
 	if (room == infiniteSpawn) {
-		draw_text(x - xScreenSize / 3.5, y - yScreenSize / 2.5, "TIME: " + string(global.timer));
-		draw_text(x - xScreenSize / 3.5, (y - yScreenSize / 2.5) + 16, "SCORE: " + string(global.scorepoints));
+		draw_text(0 / 3.5, 0 / 2.5, "TIME: " + string(global.timer));
+		draw_text(0 / 3.5, (0 / 2.5) + 16, "SCORE: " + string(global.scorepoints));
 		
 		if (global.multiplier == 1) {
 			draw_sprite(score1X_spr, -1, player_obj.x + 32, player_obj.y - 32);
@@ -752,10 +752,10 @@ if (showInfOverlay && !showedInf)
 		draw_set_halign(fa_center);
 		draw_set_color(c_black);
 		draw_set_alpha(overlayTextAlpha);
-		draw_sprite_ext(dialogBorder_spr, 0, x, y - yScreenSize / 3,2 + string_length("!Infected!") / 3, 1.5, 0, -1, overlayTextAlpha);
-		draw_text(x - 1, y - yScreenSize / 3 - 4, "!Infected!");
+		draw_sprite_ext(dialogBorder_spr, 0, x, 0 / 3,2 + string_length("!Infected!") / 3, 1.5, 0, -1, overlayTextAlpha);
+		draw_text(x - 1, 0 / 3 - 4, "!Infected!");
 		draw_set_color(make_color_rgb(255, 75, 0));
-		draw_text(x, y - yScreenSize / 3 - 4, "!Infected!");
+		draw_text(x, 0 / 3 - 4, "!Infected!");
 		draw_set_halign(fa_left);
 		draw_set_alpha(1);
 	}
@@ -767,10 +767,10 @@ if (showInfectionHealedText) {
 	draw_set_halign(fa_center);
 	draw_set_color(c_black);
 	draw_set_alpha(overlayTextAlpha);
-	draw_sprite_ext(dialogBorder_spr, 0, x, y - yScreenSize / 3,2 + string_length("!Infection Healed!") / 3, 1.5, 0, -1, overlayTextAlpha);
-	draw_text(x - 1, y - yScreenSize / 3 - 4, "!Infection Healed!");
+	draw_sprite_ext(dialogBorder_spr, 0, x, 0 / 3,2 + string_length("!Infection Healed!") / 3, 1.5, 0, -1, overlayTextAlpha);
+	draw_text(x - 1, 0 / 3 - 4, "!Infection Healed!");
 	draw_set_color(make_color_rgb(75, 255, 0));
-	draw_text(x, y - yScreenSize / 3 - 4, "!Infection Healed!");
+	draw_text(x, 0 / 3 - 4, "!Infection Healed!");
 	draw_set_halign(fa_left);
 	draw_set_alpha(1);
 		
@@ -895,26 +895,26 @@ if (deathDelayTimer < 0)
 		}
 		draw_set_alpha(deathFadeIn);
 		draw_set_font(global.optixFont);
-		draw_sprite_ext(death_spr, 0, x, (y - yScreenSize / 4), 1.5, 1.5, 0, -1, deathFadeIn);
+		draw_sprite_ext(death_spr, 0, x, (0 / 4), 1.5, 1.5, 0, -1, deathFadeIn);
 		draw_set_color(c_white);
-		draw_text((x + xScreenSize / 4) - 48, (y + yScreenSize / 4) + 32, "Syringes Left: " + string(global.syringes))
+		draw_text((global.xScreenSize / 4) - 48, (global.yScreenSize / 4) + 32, "Syringes Left: " + string(global.syringes))
 		draw_set_font(gothicPixel_fnt);
 		draw_set_color(make_color_rgb(255, 215, 0));
 		draw_set_halign(fa_center);
-		draw_sprite(button_spr, 0, (x - xScreenSize / 4), (y + yScreenSize / 4));
-		draw_sprite(button_spr, 0, (x + xScreenSize / 4), (y + yScreenSize / 4));
-		draw_text((x - xScreenSize / 4), (y + yScreenSize / 4) - 4, "DIE [Q]");
-		draw_text((x + xScreenSize / 4), (y + yScreenSize / 4) - 4, "INFECT [E]");
+		draw_sprite(button_spr, 0, (0 / 4), (global.yScreenSize / 4));
+		draw_sprite(button_spr, 0, (global.xScreenSize / 4), (global.yScreenSize / 4));
+		draw_text((0 / 4), (global.yScreenSize / 4) - 4, "DIE [Q]");
+		draw_text((global.xScreenSize / 4), (global.yScreenSize / 4) - 4, "INFECT [E]");
 		draw_set_halign(fa_left);
 	}
 	else
 	//FULL DEATH
 	{
 		draw_set_color(c_black);
-		draw_rectangle(300 - (x - xScreenSize / 2), 225 - (y - yScreenSize / 2), 1600 + (x - xScreenSize / 2), 1150 + (y - yScreenSize / 2), false);
+		draw_rectangle(300 - (0 / 2), 225 - (0 / 2), 1600 + (0 / 2), 1150 + (0 / 2), false);
 		draw_set_alpha(1);
-		draw_sprite_ext(death_spr, 0, x, (y - yScreenSize / 4), 2, 2, 0, c_red, 0.2);
-		draw_sprite_ext(death_spr, 0, x, (y - yScreenSize / 4), 1.5, 1.5, 0, c_red, 1);
+		draw_sprite_ext(death_spr, 0, x, (0 / 4), 2, 2, 0, c_red, 0.2);
+		draw_sprite_ext(death_spr, 0, x, (0 / 4), 1.5, 1.5, 0, c_red, 1);
 		finalDeathScreenTimer -= global.dt;
 		if (finalDeathScreenTimer < 0)
 		{
@@ -967,7 +967,7 @@ if (player_obj.isZombie)
 //#####LAYER 3#####
 if (!noHUD)
 {
-	draw_sprite(guiBorder_spr, 0, x - xScreenSize / 2, y - yScreenSize / 2);
+	draw_sprite(guiBorder_spr, 0, 0, 0);
 }
 
 //Cursor
@@ -976,22 +976,22 @@ if (instance_exists(player_obj)) {
 	if (player_obj.inputMethod == 0)
 	{
 		draw_sprite(cursor_spr, 0, 
-		(window_mouse_get_x() / ((window_get_width()+1) / global.xScreenSize)) + (x - global.xScreenSize / 2), 
-		window_mouse_get_y() / ((window_get_height()+1) / global.yScreenSize) + (y - global.yScreenSize / 2));
+		(window_mouse_get_x() / ((window_get_width()+1) / global.xScreenSize)) + (0), 
+		window_mouse_get_y() / ((window_get_height()+1) / global.yScreenSize) + (0));
 	}
 }
 
 //#####LAYER 4#####
 draw_set_alpha(blackscreenStrength);
 draw_set_color(c_black);
-draw_rectangle(x - xScreenSize, y - yScreenSize, x + xScreenSize, y + yScreenSize, false);
+draw_rectangle(0, 0, global.xScreenSize, global.yScreenSize, false);
 draw_set_alpha(1);
 
 if (instance_exists(player_obj)) {
 	if (player_obj.sniperDamageValue > 0)
 	{
-		draw_sprite_ext(blackborder_spr, 0, x, 42 + (y - yScreenSize / 2), 1, 1, 0, -1, (player_obj.sniperDamageValue / 100) / 5);
-		draw_sprite_ext(blackborder_spr, 0, x, y + yScreenSize / 2, 1, 1, 0, -1, (player_obj.sniperDamageValue / 100) / 5);
+		draw_sprite_ext(blackborder_spr, 0, x, 42 + (0 / 2), 1, 1, 0, -1, (player_obj.sniperDamageValue / 100) / 5);
+		draw_sprite_ext(blackborder_spr, 0, x, global.yScreenSize, 1, 1, 0, -1, (player_obj.sniperDamageValue / 100) / 5);
 	}
 }
 
@@ -1000,8 +1000,8 @@ if (showStartscreen) {
 	player_obj.movement = false;
 	startScreenXAxis1 += global.dt / 2;
 	startScreenXAxis2 += global.dt / 2;
-	startScreen1Pos = (x - global.xScreenSize / 2) - startScreenXAxis1;
-	startScreen2Pos = ((x - global.xScreenSize / 2) - startScreenXAxis2) + 540;
+	startScreen1Pos = (0) - startScreenXAxis1;
+	startScreen2Pos = ((0) - startScreenXAxis2) + 540;
 	
 	draw_sprite(startOverlay_spr, 0, startScreen1Pos, y - global.yScreenSize - startScreenYAxis);
 	draw_sprite(startOverlay_spr, 0, startScreen2Pos, y - global.yScreenSize - startScreenYAxis);

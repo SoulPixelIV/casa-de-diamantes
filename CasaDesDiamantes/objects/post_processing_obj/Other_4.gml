@@ -1,14 +1,15 @@
-// Create system
-layer_effects_id = ppfx_create();
+// Call it only once
+ppfx_application_render_init();
 
-// Create profile with effects
-var _profile_test = ppfx_profile_create("Cool Layer Effects", [
-    new pp_sine_wave(true, 0.5, [0.005, 0.005], [30, 30]),
-    new pp_sunshafts(true, [0.5, 0.5], 0.3, 0.5, 3, 1, 0.3, true, 1, 0.08, 0.8, false),
-]);
+// Create ppfx system
+ppfx_id = ppfx_create();
 
-// Load profile
-ppfx_profile_load(layer_effects_id, _profile_test);
+// Create profile with all effects
+var effects = [
+    new pp_bloom(true, 6, 0.5, 1.8, c_white, true, undefined, 0.8, 1, true, true),
+	new pp_sunshafts(true, [0.5, 0.5], 0.3, 0.6, 1.25, 1.6, 0.4, true, 1, 0.05, 0.8, false, undefined, undefined),
+];
+main_profile = ppfx_profile_create("Main", effects);
 
-layer_index = ppfx_layer_create();
-ppfx_layer_apply(layer_effects_id, layer_index, layer_get_id("Instances"), layer_get_id("Background2"), true);
+// Load profile, so all effects will be used
+ppfx_profile_load(ppfx_id, main_profile);

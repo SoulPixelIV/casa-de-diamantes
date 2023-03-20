@@ -34,5 +34,5 @@ global.tilemap = layer_tilemap_get_id("TileCollider");
 
 //instance_create_layer(x, y, "GameManagerLayer", gifRecorder_obj);
 
-loadTimer = 1000;
+loadTimer = 100;
 loaded = false;
