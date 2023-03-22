@@ -25,7 +25,7 @@ if (instance_exists(player_obj)) {
 	if (aggro) {
 		if (distance_to_object(player_obj) < aggroRange) {
 			if (attackCooldown > 150 || attackCooldown < 0) {
-				if (!place_meeting(x + 12, y, collider_obj) && !place_meeting(x - 12, y, collider_obj) && !place_meeting(x, y + 12, collider_obj) && !place_meeting(x, y - 12, collider_obj)) {
+				if (!place_meeting(x + 24, y, collider_obj) && !place_meeting(x - 24, y, collider_obj) && !place_meeting(x, y + 24, collider_obj) && !place_meeting(x, y - 24, collider_obj)) {
 					image_angle = point_direction(x, y, player_obj.x, player_obj.y);
 				}
 			}

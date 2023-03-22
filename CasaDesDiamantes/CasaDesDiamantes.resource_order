@@ -1427,7 +1427,6 @@
     {"name":"glitterTopSpin_spr","order":4,"path":"sprites/glitterTopSpin_spr/glitterTopSpin_spr.yy",},
     {"name":"glitterBottomFlip_spr","order":4,"path":"sprites/glitterBottomFlip_spr/glitterBottomFlip_spr.yy",},
     {"name":"chaingunTurretFlash_spr","order":90,"path":"sprites/chaingunTurretFlash_spr/chaingunTurretFlash_spr.yy",},
-    {"name":"ParticleSystem1","order":1,"path":"particles/ParticleSystem1/ParticleSystem1.yy",},
     {"name":"testRoom3","order":3,"path":"rooms/testRoom3/testRoom3.yy",},
     {"name":"toxicCloud_obj","order":98,"path":"objects/toxicCloud_obj/toxicCloud_obj.yy",},
     {"name":"button_spr","order":37,"path":"sprites/button_spr/button_spr.yy",},

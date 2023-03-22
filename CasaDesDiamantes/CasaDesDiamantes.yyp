@@ -1724,7 +1724,6 @@
     {"id":{"name":"glitterTopSpin_spr","path":"sprites/glitterTopSpin_spr/glitterTopSpin_spr.yy",},},
     {"id":{"name":"glitterBottomFlip_spr","path":"sprites/glitterBottomFlip_spr/glitterBottomFlip_spr.yy",},},
     {"id":{"name":"chaingunTurretFlash_spr","path":"sprites/chaingunTurretFlash_spr/chaingunTurretFlash_spr.yy",},},
-    {"id":{"name":"ParticleSystem1","path":"particles/ParticleSystem1/ParticleSystem1.yy",},},
     {"id":{"name":"testRoom3","path":"rooms/testRoom3/testRoom3.yy",},},
     {"id":{"name":"toxicCloud_obj","path":"objects/toxicCloud_obj/toxicCloud_obj.yy",},},
     {"id":{"name":"button_spr","path":"sprites/button_spr/button_spr.yy",},},

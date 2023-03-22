@@ -11,6 +11,11 @@ var tutorialEffects = [
 	new pp_chromaber(true)
 ];
 tutorial_profile = ppfx_profile_create("Main", tutorialEffects);
+var casinoEffects = [
+    new pp_bloom(true, 6, 0.6, 1.19, c_white, true, undefined, 0.8, 1, true, true),
+	new pp_sunshafts(true, [0.5, 0.5], 0.3, 0.68, 1.4, 1.6, 0.4, true, 1, 0.05, 0.8, false, undefined, undefined),
+];
+casino_profile = ppfx_profile_create("Main", casinoEffects);
 var act1Effects = [
     new pp_bloom(true, 6, 0.5, 1.46, c_white, true, undefined, 0.8, 1, true, true),
 	new pp_sunshafts(true, [0.5, 0.5], 0.3, 0.65, 1.08, 1.6, 0.4, true, 1, 0.05, 0.8, false, undefined, undefined),
@@ -22,7 +27,11 @@ var act2Effects = [
 ];
 act2_profile = ppfx_profile_create("Main", act2Effects);
 
-if (room == level0) {
+if (room == level_Casino) {
+	ppfx_profile_load(ppfx_id, casino_profile);
+} else if (room == level_CasinoRoof) {
+	ppfx_profile_load(ppfx_id, act1_profile);
+} else if (room == level0) {
 	ppfx_profile_load(ppfx_id, tutorial_profile);
 } else if (room == level1) {
 	ppfx_profile_load(ppfx_id, act1_profile);
