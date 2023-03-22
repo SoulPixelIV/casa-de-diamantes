@@ -331,7 +331,7 @@ if (hitVignetteTimer < 0)
 
 shader_reset();
 draw_set_alpha(vignetteAlpha);
-draw_ellipse_colour(0, 0, global.xScreenSize, global.yScreenSize, c_black , c_red, false);
+draw_ellipse_colour(-100, -100, global.xScreenSize + 100, global.yScreenSize + 100, c_black , c_red, false);
 draw_set_alpha(1);
 
 if (instance_exists(player_obj)) {
@@ -339,7 +339,7 @@ if (instance_exists(player_obj)) {
 	{
 	    shader_reset();
 	    draw_set_alpha(0.4);
-	    draw_ellipse_colour(0, 0, global.xScreenSize, global.yScreenSize, c_black , c_purple, false);
+	    draw_ellipse_colour(-100, -100, global.xScreenSize + 100, global.yScreenSize + 100, c_black , c_purple, false);
 	    draw_set_alpha(1);
 	}
 
@@ -347,7 +347,7 @@ if (instance_exists(player_obj)) {
 	{
 		shader_reset();
 	    draw_set_alpha(((player_obj.sniperDamageValue / 100) / 5) / 2);
-	    draw_ellipse_colour(0, 0, global.xScreenSize, global.yScreenSize, c_black , make_color_rgb(255,215,0), false);
+	    draw_ellipse_colour(-100, -100, global.xScreenSize + 100, global.yScreenSize + 100, c_black , make_color_rgb(255,215,0), false);
 	    draw_set_alpha(1);
 	}
 }
@@ -378,8 +378,8 @@ else
 }
 
 //black borders
-draw_sprite(blackborder_spr, 0, x, blackbordersPos + (0 / 2));
-draw_sprite(blackborder_spr, 0, x, (global.yScreenSize) + 42 - blackbordersPos);
+draw_sprite(blackborder_spr, 0, global.xScreenSize / 2, blackbordersPos);
+draw_sprite(blackborder_spr, 0, global.xScreenSize / 2, (global.yScreenSize) + 42 - blackbordersPos);
 
 if (!noHUD && instance_exists(player_obj))
 {
@@ -393,7 +393,7 @@ if (!noHUD && instance_exists(player_obj))
 		currDeltatime = global.dt;
 		updateFPS = updateFPSSave;
 	}
-	draw_text_colour((0 / 2) + 16, (global.yScreenSize) - 16, "Framerate: " + string(currFps), c_white, c_white, c_white, c_white, 1);
+	draw_text_colour(16, (global.yScreenSize) - 16, "Framerate: " + string(currFps), c_white, c_white, c_white, c_white, 1);
 	//draw_text_colour((0 / 2) + 16, (global.yScreenSize) - 32, "Delta: " + string(currDeltatime), c_white, c_white, c_white, c_white, 1);
 	draw_set_halign(fa_center);
 	//draw_text_color(x, (0 / 2) + 6, "F3 - Level Select", c_white, c_white, c_white, c_white, 1);
@@ -624,23 +624,23 @@ if (!noHUD && instance_exists(player_obj))
 		}
 		if (global.currentWeapon == gameManager_obj.pickedWeapon.pistol)
 		{
-			draw_text(x, y + (yScreenSize / 3), "Pistol");
+			draw_text(global.xScreenSize / 2, global.yScreenSize - global.yScreenSize / 4, "Pistol");
 		}
 		if (global.currentWeapon == gameManager_obj.pickedWeapon.dualBarettas)
 		{
-			draw_text(x, y + (yScreenSize / 3), "Dual Barettas");
+			draw_text(global.xScreenSize / 2, global.yScreenSize - global.yScreenSize / 4, "Dual Barettas");
 		}
 		if (global.currentWeapon == gameManager_obj.pickedWeapon.shotgun)
 		{
-			draw_text(x, y + (yScreenSize / 3), "Shotgun");
+			draw_text(global.xScreenSize / 2, global.yScreenSize - global.yScreenSize / 4, "Shotgun");
 		}
 		if (global.currentWeapon == gameManager_obj.pickedWeapon.silencedMP)
 		{
-			draw_text(x, y + (yScreenSize / 3), "Silenced MP");
+			draw_text(global.xScreenSize / 2, global.yScreenSize - global.yScreenSize / 4, "Silenced MP");
 		}
 		if (global.currentWeapon == gameManager_obj.pickedWeapon.bow)
 		{
-			draw_text(x, y + (yScreenSize / 3), "Golden Arrow");
+			draw_text(global.xScreenSize / 2, global.yScreenSize - global.yScreenSize / 4, "Golden Arrow");
 		}
 	}
 	else
@@ -681,7 +681,7 @@ if (!noHUD && instance_exists(player_obj))
 		draw_set_color(make_color_rgb(255,215,0));
 		draw_set_halign(fa_center);
 		arenaCompleteMessageTimer -= global.dt;
-		draw_text(x, (yScreenSize / 3), "ARENA CLEARED!");
+		//draw_text(x, (yScreenSize / 3), "ARENA CLEARED!");
 		draw_set_halign(fa_left);
 		
 		if (arenaCompleteMessageTimer < 0) {
@@ -694,25 +694,25 @@ if (!noHUD && instance_exists(player_obj))
 	if (redDoorMessage) {
 		draw_set_color(make_color_rgb(255,215,0));
 		draw_set_halign(fa_center);
-		draw_text(x, (y + (yScreenSize / 3)) - 32, "You need the red keycard to unlock this door!");
+		draw_text(global.xScreenSize / 2, global.yScreenSize - global.yScreenSize / 4 - 32, "You need the red keycard to unlock this door!");
 		draw_set_halign(fa_left);
 	}
 	if (blueDoorMessage) {
 		draw_set_color(make_color_rgb(255,215,0));
 		draw_set_halign(fa_center);
-		draw_text(x, (y + (yScreenSize / 3)) - 32, "You need the blue keycard to unlock this door!");
+		draw_text(global.xScreenSize / 2, global.yScreenSize - global.yScreenSize / 4 - 32, "You need the blue keycard to unlock this door!");
 		draw_set_halign(fa_left);
 	}
 	if (yellowDoorMessage) {
 		draw_set_color(make_color_rgb(255,215,0));
 		draw_set_halign(fa_center);
-		draw_text(x, (y + (yScreenSize / 3)) - 32, "You need the yellow keycard to unlock this door!");
+		draw_text(global.xScreenSize / 2, global.yScreenSize - global.yScreenSize / 4 - 32, "You need the yellow keycard to unlock this door!");
 		draw_set_halign(fa_left);
 	}
 	if (warpzoneMessage) {
 		draw_set_color(make_color_rgb(255,215,0));
 		draw_set_halign(fa_center);
-		draw_text(x, (y + (yScreenSize / 3)) - 32, "You need the golden key to unlock this door!");
+		draw_text(global.xScreenSize / 2, global.yScreenSize - global.yScreenSize / 4 - 32, "You need the golden key to unlock this door!");
 		draw_set_halign(fa_left);
 	}
 	
@@ -752,10 +752,10 @@ if (showInfOverlay && !showedInf)
 		draw_set_halign(fa_center);
 		draw_set_color(c_black);
 		draw_set_alpha(overlayTextAlpha);
-		draw_sprite_ext(dialogBorder_spr, 0, x, 0 / 3,2 + string_length("!Infected!") / 3, 1.5, 0, -1, overlayTextAlpha);
-		draw_text(x - 1, 0 / 3 - 4, "!Infected!");
+		draw_sprite_ext(dialogBorder_spr, 0, global.xScreenSize / 2, global.yScreenSize / 6,2 + string_length("!Infected!") / 3, 1.5, 0, -1, overlayTextAlpha);
+		draw_text(global.xScreenSize / 2 - 1,global.yScreenSize / 6 - 4, "!Infected!");
 		draw_set_color(make_color_rgb(255, 75, 0));
-		draw_text(x, 0 / 3 - 4, "!Infected!");
+		draw_text(global.xScreenSize / 2, global.yScreenSize / 6 - 4, "!Infected!");
 		draw_set_halign(fa_left);
 		draw_set_alpha(1);
 	}
@@ -767,10 +767,10 @@ if (showInfectionHealedText) {
 	draw_set_halign(fa_center);
 	draw_set_color(c_black);
 	draw_set_alpha(overlayTextAlpha);
-	draw_sprite_ext(dialogBorder_spr, 0, x, 0 / 3,2 + string_length("!Infection Healed!") / 3, 1.5, 0, -1, overlayTextAlpha);
-	draw_text(x - 1, 0 / 3 - 4, "!Infection Healed!");
+	draw_sprite_ext(dialogBorder_spr, 0, global.xScreenSize / 2, global.yScreenSize / 6,2 + string_length("!Infection Healed!") / 3, 1.5, 0, -1, overlayTextAlpha);
+	draw_text(global.xScreenSize / 2 - 1, global.yScreenSize / 6 - 4, "!Infection Healed!");
 	draw_set_color(make_color_rgb(75, 255, 0));
-	draw_text(x, 0 / 3 - 4, "!Infection Healed!");
+	draw_text(global.xScreenSize / 2, global.yScreenSize / 6 - 4, "!Infection Healed!");
 	draw_set_halign(fa_left);
 	draw_set_alpha(1);
 		
@@ -895,7 +895,7 @@ if (deathDelayTimer < 0)
 		}
 		draw_set_alpha(deathFadeIn);
 		draw_set_font(global.optixFont);
-		draw_sprite_ext(death_spr, 0, x, (0 / 4), 1.5, 1.5, 0, -1, deathFadeIn);
+		draw_sprite_ext(death_spr, 0, global.xScreenSize / 2, (0 / 4), 1.5, 1.5, 0, -1, deathFadeIn);
 		draw_set_color(c_white);
 		draw_text((global.xScreenSize / 4) - 48, (global.yScreenSize / 4) + 32, "Syringes Left: " + string(global.syringes))
 		draw_set_font(gothicPixel_fnt);
@@ -913,8 +913,8 @@ if (deathDelayTimer < 0)
 		draw_set_color(c_black);
 		draw_rectangle(300 - (0 / 2), 225 - (0 / 2), 1600 + (0 / 2), 1150 + (0 / 2), false);
 		draw_set_alpha(1);
-		draw_sprite_ext(death_spr, 0, x, (0 / 4), 2, 2, 0, c_red, 0.2);
-		draw_sprite_ext(death_spr, 0, x, (0 / 4), 1.5, 1.5, 0, c_red, 1);
+		draw_sprite_ext(death_spr, 0, global.xScreenSize / 2, (0 / 4), 2, 2, 0, c_red, 0.2);
+		draw_sprite_ext(death_spr, 0, global.xScreenSize / 2, (0 / 4), 1.5, 1.5, 0, c_red, 1);
 		finalDeathScreenTimer -= global.dt;
 		if (finalDeathScreenTimer < 0)
 		{

@@ -104,7 +104,7 @@ global.greenPart = part_type_create();
 part_type_sprite(global.greenPart, spark_spr, true, false, true);
 part_type_life(global.greenPart, 6000, 6200);
 part_type_size(global.greenPart, 0.2, 0.5, 0, 0);
-part_type_colour_rgb(global.greenPart, 70, 90, 255, 255, 70, 90);
+part_type_colour_rgb(global.greenPart, 130, 170, 255, 255, 70, 90);
 part_type_orientation(global.greenPart, 0, 359, 1, 0, 1);
 part_type_direction(global.greenPart, 0, 180, 0, 3);
 part_type_speed(global.greenPart, 0.03, 0.07, 0, 0.03);
