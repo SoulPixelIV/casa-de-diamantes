@@ -2,6 +2,8 @@
 image_speed = 0;
 image_index += (global.dt / 15) * animationSpeed;
 
+image_alpha += global.dt / 100;
+
 spawnTime -= global.dt;
 
 if (spawnTime < 0)

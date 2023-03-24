@@ -681,7 +681,7 @@ if (!noHUD && instance_exists(player_obj))
 		draw_set_color(make_color_rgb(255,215,0));
 		draw_set_halign(fa_center);
 		arenaCompleteMessageTimer -= global.dt;
-		//draw_text(x, (yScreenSize / 3), "ARENA CLEARED!");
+		draw_text(x, (yScreenSize / 3), "ARENA CLEARED!");
 		draw_set_halign(fa_left);
 		
 		if (arenaCompleteMessageTimer < 0) {
