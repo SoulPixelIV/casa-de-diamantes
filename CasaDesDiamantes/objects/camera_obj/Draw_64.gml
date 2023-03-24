@@ -995,6 +995,12 @@ if (instance_exists(player_obj)) {
 	}
 }
 
+//Pause Screen
+if (global.pause) {
+	draw_sprite_ext(goldcornerBottom_spr, 0, 0, 0, 1, 1, 0, c_white, 1);
+	draw_sprite_ext(goldcornerTop_spr, 0, 0, 0, 1, 1, 0, c_white, 1);
+}
+
 //Start Screen
 if (showStartscreen) {
 	player_obj.movement = false;

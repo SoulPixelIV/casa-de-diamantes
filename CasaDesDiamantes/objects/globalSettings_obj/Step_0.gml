@@ -120,3 +120,8 @@ else
 {
 	global.ambientShadowIntensity = 0.6 * global.gamma;
 }
+
+//Pause
+if (global.pause) {
+	global.dt = 0;
+}
