@@ -33,8 +33,16 @@ key_shift = keyboard_check_pressed(vk_shift) || gamepad_button_check_pressed(4, 
 key_control = keyboard_check_pressed(vk_control) || gamepad_button_check_pressed(4, gp_face2) || gamepad_button_check_pressed(0, gp_face2);
 key_escape = keyboard_check_pressed(vk_escape) || gamepad_button_check_pressed(4, gp_start) || gamepad_button_check_pressed(0, gp_start);
 
-if (key_escape) {
+if (key_escape && !pauseDelayStart) {
 	global.pause = !global.pause;
+	pauseDelayStart = true;
+}
+if (pauseDelayStart) {
+	pauseDelay -= global.dtNoSlowmo;
+}
+if (pauseDelay < 0) {
+	pauseDelay = pauseDelaySave;
+	pauseDelayStart = false;
 }
 
 //Movement
@@ -171,7 +179,7 @@ if (!onMovingPlatform)
 	frictionActive_scr(id);
 }
 
-if (movement && !isZombie)
+if (movement && !isZombie && !global.pause)
 {
 	//Jump
 	if (grounded && key_jump || fallJumpSafety > 0 && key_jump || isDashing && key_jump || onBooster && key_jump && jumpType != 2)
@@ -954,7 +962,7 @@ if (onLadder && !isZombie && !isDashing)
 	}
 }
 
-if (shootingAllowed) {
+if (shootingAllowed && !global.pause) {
 	if (!isZombie && !deathActivated)
 	{
 		//Pistol

@@ -1134,6 +1134,7 @@
     {"id":{"name":"draw_shadow_map","path":"scripts/draw_shadow_map/draw_shadow_map.yy",},},
     {"id":{"name":"changeCamera_scr","path":"scripts/changeCamera_scr/changeCamera_scr.yy",},},
     {"id":{"name":"blackscreen_scr","path":"scripts/blackscreen_scr/blackscreen_scr.yy",},},
+    {"id":{"name":"mainmenuTitleSmall_spr","path":"sprites/mainmenuTitleSmall_spr/mainmenuTitleSmall_spr.yy",},},
     {"id":{"name":"blackjacktable_obj","path":"objects/blackjacktable_obj/blackjacktable_obj.yy",},},
     {"id":{"name":"blackjackConverter_scr","path":"scripts/blackjackConverter_scr/blackjackConverter_scr.yy",},},
     {"id":{"name":"Spawn3_obj","path":"objects/Spawn3_obj/Spawn3_obj.yy",},},
@@ -1743,9 +1744,9 @@
   ],
   "RoomOrderNodes": [
     {"roomId":{"name":"loadVars","path":"rooms/loadVars/loadVars.yy",},},
-    {"roomId":{"name":"level3","path":"rooms/level3/level3.yy",},},
     {"roomId":{"name":"mainmenu","path":"rooms/mainmenu/mainmenu.yy",},},
     {"roomId":{"name":"level1","path":"rooms/level1/level1.yy",},},
+    {"roomId":{"name":"level3","path":"rooms/level3/level3.yy",},},
     {"roomId":{"name":"worldmap","path":"rooms/worldmap/worldmap.yy",},},
     {"roomId":{"name":"level7","path":"rooms/level7/level7.yy",},},
     {"roomId":{"name":"transitionScreen","path":"rooms/transitionScreen/transitionScreen.yy",},},

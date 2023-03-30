@@ -900,6 +900,7 @@
     {"name":"draw_shadow_map","order":7,"path":"scripts/draw_shadow_map/draw_shadow_map.yy",},
     {"name":"changeCamera_scr","order":15,"path":"scripts/changeCamera_scr/changeCamera_scr.yy",},
     {"name":"blackscreen_scr","order":16,"path":"scripts/blackscreen_scr/blackscreen_scr.yy",},
+    {"name":"mainmenuTitleSmall_spr","order":86,"path":"sprites/mainmenuTitleSmall_spr/mainmenuTitleSmall_spr.yy",},
     {"name":"blackjacktable_obj","order":82,"path":"objects/blackjacktable_obj/blackjacktable_obj.yy",},
     {"name":"blackjackConverter_scr","order":17,"path":"scripts/blackjackConverter_scr/blackjackConverter_scr.yy",},
     {"name":"Spawn3_obj","order":2,"path":"objects/Spawn3_obj/Spawn3_obj.yy",},

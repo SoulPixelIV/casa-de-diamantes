@@ -149,6 +149,8 @@ laserAimImage = 0;
 armSpriteShotgun = playerArmEmpty_spr;
 armSpriteCurvedShotgun = playerArmCurved_spr;
 spriteShotgun = shotgun_spr;
+pauseDelay = 200;
+pauseDelayStart = false;
 
 //Debug
 forceSlowmo = false;
@@ -203,6 +205,7 @@ dashStartDelaySave = dashStartDelay;
 boosterLockedMovementTimerSave = boosterLockedMovementTimer;
 dashStandupDelaySave = dashStandupDelay;
 otherDirWallHugTimerSave = otherDirWallHugTimer;
+pauseDelaySave = pauseDelay;
 
 //Accessories
 theta = 0;

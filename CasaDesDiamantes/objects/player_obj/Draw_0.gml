@@ -1,7 +1,4 @@
 /// @description Draw Guns
-
-draw_text(x + 15, y - 10, global.pause);
-
 if (!inChamber) {
 	changePos = 1;
 	pistolSprite = playerPistol_spr;

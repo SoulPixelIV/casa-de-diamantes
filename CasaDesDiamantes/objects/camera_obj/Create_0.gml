@@ -61,6 +61,9 @@ infectionHealedTextTimer = 800;
 overlayTextAlpha = 1;
 startAlphaTransition = false;
 drawTutorialInfection = false;
+drawPause = false;
+pauseAlpha = 0;
+pauseOffset = 0;
 
 cameraSpeed = 0.02;
 ycameraSpeed = 0.02;

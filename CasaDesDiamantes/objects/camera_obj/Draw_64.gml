@@ -1,4 +1,12 @@
 /// @description Player UI
+
+//HIDE UI
+if (global.pause) {
+	noHUD = true;
+} else {
+	noHUD = false;
+}
+
 if (instance_exists(player_obj))
 {
 	//Ammo Counter
@@ -997,8 +1005,47 @@ if (instance_exists(player_obj)) {
 
 //Pause Screen
 if (global.pause) {
-	draw_sprite_ext(goldcornerBottom_spr, 0, 0, 0, 1, 1, 0, c_white, 1);
-	draw_sprite_ext(goldcornerTop_spr, 0, 0, 0, 1, 1, 0, c_white, 1);
+	drawPause = true;
+} else {
+	if (pauseOffset < 1 && pauseAlpha < 0.05) {
+		drawPause = false;
+	}
+}
+	
+if (drawPause) {
+	if (!global.pause) {
+		if (pauseAlpha > 0) {
+			pauseAlpha -= global.dtNoSlowmo / 100;
+		}
+		if (pauseOffset > 0) {
+			pauseOffset -= round(global.dtNoSlowmo) * 4;
+		}
+	} else {
+		if (pauseAlpha < 1) {
+			pauseAlpha += global.dtNoSlowmo / 50;
+		}
+		if (pauseOffset < 142) {
+			pauseOffset += round(global.dtNoSlowmo) * 2;
+		}
+	}
+	
+	draw_set_alpha(pauseAlpha);
+		
+	draw_sprite_ext(goldcornerBottom_spr, 0, -pauseOffset + 142, -pauseOffset + 142, 1, 1, 0, c_white, pauseAlpha);
+	draw_sprite_ext(goldcornerTop_spr, 0, pauseOffset - 142, pauseOffset - 142, 1, 1, 0, c_white, pauseAlpha);
+	
+	draw_sprite_ext(mainmenuTitleSmall_spr, 0, 16, global.yScreenSize - 16, 1, 1, 0, c_white, pauseAlpha);
+	draw_set_font(gothicPixel_fnt);
+	draw_set_halign(fa_center);
+	draw_set_color(make_color_rgb(255, 215, 0));
+	draw_text(global.xScreenSize / 2, global.yScreenSize / 2.5, "Resume");
+	draw_text(global.xScreenSize / 2, global.yScreenSize / 2.5 + 16, "Restart Section");
+	draw_text(global.xScreenSize / 2, global.yScreenSize / 2.5 + 32, "Return to Casino");
+	draw_text(global.xScreenSize / 2, global.yScreenSize / 2.5 + 48, "Quit to Main Menu");
+	
+	draw_sprite(chipRed_spr, -1, global.xScreenSize / 2 - 64, global.yScreenSize / 2.5 + 4);
+	
+	draw_set_alpha(1);
 }
 
 //Start Screen
