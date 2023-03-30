@@ -1,7 +1,23 @@
+if (instance_exists(player_obj)) {
+	audio_emitter_position(musicEmitter, player_obj.x, player_obj.y, 0);
+}
+
+if (global.pause) {
+	if (!usedFilter) {
+		musicBus.effects[0] = _lp_effect;
+		usedFilter = true;
+	}
+} else {
+	if (usedFilter) {
+		musicBus.effects[0] = undefined;
+		usedFilter = false;
+	}
+}
+
 //Casino Theme
 if (room == level_Casino || room == mainmenu || room == levelSelect || room = worldmap) {
 	if (!audio_is_playing(casinoTheme)) {
-		audio_play_sound(casinoTheme, 1, true);
+		audio_play_sound_on(musicEmitter, casinoTheme, 1, 1);
 		
 		if (audio_is_playing(dressedToKillSTEM_msc)) {
 			audio_stop_sound(dressedToKillSTEM_msc);
@@ -36,7 +52,7 @@ if (room == level_Casino || room == mainmenu || room == levelSelect || room = wo
 //Casino Low Pass Theme
 if (room == blackjackTable || room == level_CasinoRoof) {
 	if (!audio_is_playing(casinoThemeLowPass)) {
-		audio_play_sound(casinoThemeLowPass, 1, true);
+		audio_play_sound_on(musicEmitter, casinoThemeLowPass, 1, 1);
 	}
 	if (audio_is_playing(casinoTheme)) {
 		audio_stop_sound(casinoTheme);
@@ -57,10 +73,10 @@ if (room == level0 || room == level1 || room == level2 || room == level3) {
 }
 
 if (act1MusicOn && !act1MusicStarted) {
-	parediaSTEM = audio_play_sound(dressedToKillSTEM, 1, true);
-	parediaL3 = audio_play_sound(dressedToKillL3, 1, true);
-	parediaL2 = audio_play_sound(dressedToKillL2, 1, true);
-	parediaL1 = audio_play_sound(dressedToKillL1, 1, true);
+	parediaSTEM = audio_play_sound_on(musicEmitter, dressedToKillSTEM, 1, 1);
+	parediaL3 = audio_play_sound_on(musicEmitter, dressedToKillL3, 1, 1);
+	parediaL2 = audio_play_sound_on(musicEmitter, dressedToKillL2, 1, 1);
+	parediaL1 = audio_play_sound_on(musicEmitter, dressedToKillL1, 1, 1);
 	
 	audio_sound_gain(parediaSTEM, 0, 0);
 	audio_sound_gain(parediaL3, 0, 0);
@@ -172,9 +188,9 @@ if (room == level4 || room == level5A || room == level5B || room == warpzone1 ||
 }
 
 if (act2MusicOn && !act2MusicStarted) {
-	forestL1 = audio_play_sound(birchL1, 1, true);
-	forestL2 = audio_play_sound(birchL2, 1, true);
-	forestL3 = audio_play_sound(birchL3, 1, true);
+	forestL1 = audio_play_sound_on(musicEmitter, birchL1, 1, 1);
+	forestL2 = audio_play_sound_on(musicEmitter, birchL2, 1, 1);
+	forestL3 = audio_play_sound_on(musicEmitter, birchL3, 1, 1);
 	
 	audio_sound_gain(forestL1, 0, 0);
 	audio_sound_gain(forestL2, 0, 0);

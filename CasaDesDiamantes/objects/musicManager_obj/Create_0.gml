@@ -20,3 +20,14 @@ caveAmbience1 = caveAmbience1_amb;
 caveAmbience2 = caveAmbience2_amb;
 caveAmbience3 = caveAmbience3_amb;
 caveAmbience4 = caveAmbience4_amb;
+
+// Low-pass route
+usedFilter = false;
+musicEmitter = audio_emitter_create();
+musicBus = audio_bus_create();
+
+audio_emitter_bus(musicEmitter, musicBus);
+
+// Low-pass effect
+_lp_effect = audio_effect_create(AudioEffectType.LPF2);
+_lp_effect.cutoff = 300;
