@@ -303,4 +303,7 @@ letterDelaySave = letterDelay;
 partMovement = 0;
 partDir = 0;
 
+cursorPos = 0;
+cursorAnim = 0;
+
 smoothness = 0.3;

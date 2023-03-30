@@ -1006,9 +1006,57 @@ if (instance_exists(player_obj)) {
 //Pause Screen
 if (global.pause) {
 	drawPause = true;
+	
+	if (keyboard_check_pressed(vk_up) || keyboard_check_pressed(ord("W")) || gamepad_button_check_pressed(0, gp_padu) || gamepad_button_check_pressed(4, gp_padu))
+	{
+		if (cursorPos > 0)
+		{
+			cursorPos--;
+		}
+		else
+		{
+			cursorPos = 3;
+		}
+	}
+	if (keyboard_check_pressed(vk_down) || keyboard_check_pressed(ord("S")) || gamepad_button_check_pressed(0, gp_padd) || gamepad_button_check_pressed(4, gp_padd))
+	{
+		if (cursorPos < 3)
+		{
+			cursorPos++;
+		}
+		else
+		{
+			cursorPos = 0;
+		}
+	}
+
+	if (keyboard_check_pressed(vk_enter) || gamepad_button_check_pressed(0, gp_face1) || gamepad_button_check_pressed(4, gp_face1))
+	{
+		switch (cursorPos)
+		{
+			case 0:
+				if (!player_obj.pauseDelayStart) {
+					global.pause = false;
+				}
+			break;
+			case 1:
+				global.pause = false;
+				room_restart();
+			break;
+			case 2:
+				global.pause = false;
+				room_goto(level_Casino);
+			break;
+			case 3:
+				global.pause = false;
+				room_goto(mainmenu);
+			break;
+		}
+	}
 } else {
 	if (pauseOffset < 1 && pauseAlpha < 0.05) {
 		drawPause = false;
+		cursorAnim = 0;
 	}
 }
 	
@@ -1043,7 +1091,22 @@ if (drawPause) {
 	draw_text(global.xScreenSize / 2, global.yScreenSize / 2.5 + 32, "Return to Casino");
 	draw_text(global.xScreenSize / 2, global.yScreenSize / 2.5 + 48, "Quit to Main Menu");
 	
-	draw_sprite(chipRed_spr, -1, global.xScreenSize / 2 - 64, global.yScreenSize / 2.5 + 4);
+	cursorAnim += global.dtNoSlowmo / 17;
+	switch (cursorPos)
+	{
+		case 0:
+			draw_sprite(chipRed_spr, cursorAnim, global.xScreenSize / 2 - 64, global.yScreenSize / 2.5 + 4);
+		break;
+		case 1:
+			draw_sprite(chipRed_spr, cursorAnim, global.xScreenSize / 2 - 64, global.yScreenSize / 2.5 + 20);
+		break;
+		case 2:
+			draw_sprite(chipRed_spr, cursorAnim, global.xScreenSize / 2 - 64, global.yScreenSize / 2.5 + 36);
+		break;
+		case 3:
+			draw_sprite(chipRed_spr, cursorAnim, global.xScreenSize / 2 - 64, global.yScreenSize / 2.5 + 50);
+		break;
+	}
 	
 	draw_set_alpha(1);
 }
