@@ -7,7 +7,7 @@ if (global.pause) {
 	noHUD = false;
 }
 
-if (instance_exists(player_obj))
+if (instance_exists(player_obj) && !noHUD)
 {
 	//Ammo Counter
 	if (!player_obj.reloading)
@@ -744,7 +744,7 @@ if (!noHUD && instance_exists(player_obj))
 	}
 }
 
-if (showInfOverlay && !showedInf)
+if (showInfOverlay && !showedInf && !noHUD)
 {
 	if (!showInfectionHealedText) {
 		if (!startAlphaTransition) {
@@ -768,7 +768,7 @@ if (showInfOverlay && !showedInf)
 		draw_set_alpha(1);
 	}
 }
-if (showInfectionHealedText) {
+if (showInfectionHealedText && !noHUD) {
 	infectionHealedTextTimer -= global.dt;
 		
 	draw_set_font(gothicPixel_fnt);
@@ -978,31 +978,6 @@ if (!noHUD)
 	draw_sprite(guiBorder_spr, 0, 0, 0);
 }
 
-//Cursor
-//Crosshair Setup
-if (instance_exists(player_obj)) {
-	if (player_obj.inputMethod == 0)
-	{
-		draw_sprite(cursor_spr, 0, 
-		(window_mouse_get_x() / ((window_get_width()+1) / global.xScreenSize)) + (0), 
-		window_mouse_get_y() / ((window_get_height()+1) / global.yScreenSize) + (0));
-	}
-}
-
-//#####LAYER 4#####
-draw_set_alpha(blackscreenStrength);
-draw_set_color(c_black);
-draw_rectangle(0, 0, global.xScreenSize, global.yScreenSize, false);
-draw_set_alpha(1);
-
-if (instance_exists(player_obj)) {
-	if (player_obj.sniperDamageValue > 0)
-	{
-		draw_sprite_ext(blackborder_spr, 0, x, 42 + (0 / 2), 1, 1, 0, -1, (player_obj.sniperDamageValue / 100) / 5);
-		draw_sprite_ext(blackborder_spr, 0, x, global.yScreenSize, 1, 1, 0, -1, (player_obj.sniperDamageValue / 100) / 5);
-	}
-}
-
 //Pause Screen
 if (global.pause) {
 	drawPause = true;
@@ -1109,6 +1084,31 @@ if (drawPause) {
 	}
 	
 	draw_set_alpha(1);
+}
+
+//Cursor
+//Crosshair Setup
+if (instance_exists(player_obj)) {
+	if (player_obj.inputMethod == 0)
+	{
+		draw_sprite(cursor_spr, 0, 
+		(window_mouse_get_x() / ((window_get_width()+1) / global.xScreenSize)) + (0), 
+		window_mouse_get_y() / ((window_get_height()+1) / global.yScreenSize) + (0));
+	}
+}
+
+//#####LAYER 4#####
+draw_set_alpha(blackscreenStrength);
+draw_set_color(c_black);
+draw_rectangle(0, 0, global.xScreenSize, global.yScreenSize, false);
+draw_set_alpha(1);
+
+if (instance_exists(player_obj)) {
+	if (player_obj.sniperDamageValue > 0)
+	{
+		draw_sprite_ext(blackborder_spr, 0, x, 42 + (0 / 2), 1, 1, 0, -1, (player_obj.sniperDamageValue / 100) / 5);
+		draw_sprite_ext(blackborder_spr, 0, x, global.yScreenSize, 1, 1, 0, -1, (player_obj.sniperDamageValue / 100) / 5);
+	}
 }
 
 //Start Screen
