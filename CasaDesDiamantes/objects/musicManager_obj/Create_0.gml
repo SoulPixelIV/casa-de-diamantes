@@ -30,4 +30,4 @@ audio_emitter_bus(musicEmitter, musicBus);
 
 // Low-pass effect
 _lp_effect = audio_effect_create(AudioEffectType.LPF2);
-_lp_effect.cutoff = 300;
+_lp_effect.cutoff = 200;

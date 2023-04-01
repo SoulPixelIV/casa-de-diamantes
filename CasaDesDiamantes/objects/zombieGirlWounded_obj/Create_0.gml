@@ -15,6 +15,8 @@ knockback = 0;
 playerSightMax = 128;
 playerSightMin = 32;
 gotSpawned = false;
+turnDelay = 130;
+turnDelayStart = false;
 
 lastBullet = bulletPistol_obj;
 ammoSpawnCount = 8;
@@ -53,6 +55,7 @@ attackDelaySave = attackDelay;
 damageTintTimerSave = damageTintTimer;
 gravityStrengthSave = gravityStrength;
 moneyDropTimerSave = moneyDropTimer;
+turnDelaySave = turnDelay;
 
 checkPlayerTimer = 50;
 checkPlayerTimerSave = checkPlayerTimer;

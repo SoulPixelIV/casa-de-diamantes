@@ -12,7 +12,7 @@ var pauseEffects = [
 ];
 pause_profile = ppfx_profile_create("Main", pauseEffects);
 var menuEffects = [
-    new pp_bloom(true, 6, 0.5, 1.4, c_white, true, undefined, 0.8, 1, true, true),
+    new pp_bloom(true, 6, 0.5, 1.33, c_white, true, undefined, 0.8, 1, true, true),
 	new pp_sunshafts(true, [0.5, 0.5], 0.3, 0.8, 0.45, 1.6, 0.4, true, 1, 0.05, 0.8, false, undefined, undefined),
 ];
 menu_profile = ppfx_profile_create("Main", menuEffects);

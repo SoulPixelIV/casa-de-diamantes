@@ -68,6 +68,37 @@ if (movement)
 			{
 				if (!collision_circle(x, y, 64, hazard_obj, false, true))
 				{
+					if (!turnDelayStart) {
+						if (player_obj.x > x)
+						{
+							horspeed = -movSpeed;
+						}
+						else
+						{
+							horspeed = movSpeed;
+						}
+						turnDelayStart = true;
+					}
+				}
+				else
+				{
+					hazard = instance_nearest(x, y, hazard_obj);
+					if (!turnDelayStart) {
+						if (hazard.x > x)
+						{
+							horspeed = -movSpeed;
+						}
+						else
+						{
+							horspeed = movSpeed;
+						}
+						turnDelayStart = true;
+					}
+				}
+			}
+			else
+			{
+				if (!turnDelayStart) {
 					if (player_obj.x > x)
 					{
 						horspeed = -movSpeed;
@@ -76,29 +107,7 @@ if (movement)
 					{
 						horspeed = movSpeed;
 					}
-				}
-				else
-				{
-					hazard = instance_nearest(x, y, hazard_obj);
-					if (hazard.x > x)
-					{
-						horspeed = -movSpeed / 2;
-					}
-					else
-					{
-						horspeed = movSpeed / 2;
-					}
-				}
-			}
-			else
-			{
-				if (player_obj.x > x)
-				{
-					horspeed = -movSpeed;
-				}
-				else
-				{
-					horspeed = movSpeed;
+					turnDelayStart = true;
 				}
 			}
 			if (horspeed < 0)
@@ -177,6 +186,16 @@ if (place_meeting(x + horspeed * global.dt, y, player_obj))
 	{
 		horspeed = movSpeed;
 	}
+}
+
+//Turn Delay
+if (turnDelayStart) {
+	turnDelay -= global.dt;
+}
+
+if (turnDelay < 0) {
+	turnDelayStart = false;
+	turnDelay = turnDelaySave;
 }
 
 //###OutsideSolid###
