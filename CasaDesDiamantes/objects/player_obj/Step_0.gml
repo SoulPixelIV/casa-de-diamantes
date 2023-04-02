@@ -1,7 +1,16 @@
 //if (live_call()) return live_result;
 
 //Check for Controller or Keyboard
-if (gamepad_button_check_pressed(4, gp_face1) || gamepad_button_check_pressed(0, gp_face1))
+if (gamepad_button_check_pressed(4, gp_face1) || gamepad_button_check_pressed(0, gp_face1)
+ || gamepad_axis_value(4, gp_axislh) < -0.4 || gamepad_axis_value(0, gp_axislh) < -0.4
+  || gamepad_button_check(4, gp_padu) || gamepad_axis_value(4, gp_axislv) < -0.4 || gamepad_button_check(0, gp_padu) || gamepad_axis_value(0, gp_axislv) < -0.4
+   || gamepad_button_check(4, gp_padu) || gamepad_axis_value(4, gp_axislv) < -0.4 || gamepad_button_check(0, gp_padu) || gamepad_axis_value(0, gp_axislv) < -0.4
+    || gamepad_button_check(4, gp_padd) || gamepad_axis_value(4, gp_axislv) > 0.4 || gamepad_button_check(0, gp_padd) || gamepad_axis_value(0, gp_axislv) > 0.4
+	 || gamepad_button_check_pressed(4, gp_shoulderrb) || gamepad_button_check_pressed(0, gp_shoulderrb)
+	  || gamepad_button_check_pressed(4, gp_face2) || gamepad_button_check_pressed(0, gp_face2)
+	   || gamepad_button_check_pressed(4, gp_face3) || gamepad_button_check_pressed(0, gp_face3)
+	    || gamepad_button_check(4, gp_shoulderlb) || gamepad_button_check(0, gp_shoulderlb)
+		 || gamepad_button_check_pressed(4, gp_start) || gamepad_button_check_pressed(0, gp_start))
 {
 	inputMethod = 1;
 }
@@ -15,7 +24,7 @@ key_right = keyboard_check(ord("D")) || gamepad_axis_value(4, gp_axislh) > 0.4 |
 key_left_release = keyboard_check_released(ord("A")) || (gamepad_axis_value(4, gp_axislh) < 0.4 && gamepad_axis_value(4, gp_axislh) > -0.4) || (gamepad_axis_value(0, gp_axislh) < 0.4 && gamepad_axis_value(0, gp_axislh) > -0.4);
 key_right_release = keyboard_check_released(ord("D")) || (gamepad_axis_value(4, gp_axislh) < 0.4 && gamepad_axis_value(4, gp_axislh) > -0.4) || (gamepad_axis_value(0, gp_axislh) < 0.4 && gamepad_axis_value(0, gp_axislh) > -0.4);
 
-key_up = keyboard_check(ord("W")) || gamepad_button_check(4, gp_padu) || gamepad_axis_value(4, gp_axislv) < -0.4 || gamepad_button_check(0, gp_padu) || gamepad_axis_value(0, gp_axislv) < -0.4;
+key_up = keyboard_check(ord("W")) || gamepad_button_check(4, gp_padu) || gamepad_button_check(0, gp_padu);
 key_down = keyboard_check(ord("S")) || gamepad_button_check(4, gp_padd) || gamepad_axis_value(4, gp_axislv) > 0.4 || gamepad_button_check(0, gp_padd) || gamepad_axis_value(0, gp_axislv) > 0.4;
 key_up_pressed = keyboard_check_pressed(ord("W")) || gamepad_button_check_pressed(4, gp_padu) || gamepad_button_check_pressed(0, gp_padu);
 key_down_pressed = keyboard_check_pressed(ord("S")) || gamepad_button_check_pressed(4, gp_padd) || gamepad_button_check_pressed(0, gp_padd);
@@ -23,8 +32,8 @@ key_down_pressed = keyboard_check_pressed(ord("S")) || gamepad_button_check_pres
 key_shoot = mouse_check_button_pressed(mb_left) || gamepad_button_check_pressed(4, gp_shoulderrb) || gamepad_button_check_pressed(0, gp_shoulderrb);
 key_shoot_hold = mouse_check_button(mb_left) || gamepad_button_check(4, gp_shoulderrb) || gamepad_button_check(0, gp_shoulderrb);
 key_shoot_release = mouse_check_button_released(mb_left) || gamepad_button_check_released(4, gp_shoulderrb) || gamepad_button_check_released(0, gp_shoulderrb);
-key_reload = mouse_check_button_pressed(mb_right) || gamepad_button_check_pressed(4, gp_face2) || gamepad_button_check_pressed(0, gp_face2);
-key_lastWeapon = keyboard_check_pressed(ord("Q"));
+key_reload = mouse_check_button_pressed(mb_right) || gamepad_button_check_pressed(4, gp_face3) || gamepad_button_check_pressed(0, gp_face3);
+key_lastWeapon = keyboard_check_pressed(ord("Q")) || gamepad_button_check_pressed(4, gp_face2) || gamepad_button_check_pressed(0, gp_face2);
 key_jump = keyboard_check_pressed(vk_space) || gamepad_button_check_pressed(4, gp_face1) || gamepad_button_check_pressed(0, gp_face1);
 key_jump_hold = keyboard_check(vk_space) || gamepad_button_check(4, gp_face1) || gamepad_button_check(0, gp_face1);
 key_jump_release = keyboard_check_released(vk_space) || gamepad_button_check_released(4, gp_face1) || gamepad_button_check_released(0, gp_face1);
@@ -1244,7 +1253,7 @@ if (!isZombie && !reloading)
 		
 		if (!startScrollDelay)
 		{
-			if (mouse_wheel_up() || gamepad_button_check(0, gp_shoulderr) || gamepad_button_check(4, gp_shoulderr))
+			if (mouse_wheel_up() || gamepad_button_check_pressed(0, gp_shoulderr) || gamepad_button_check_pressed(4, gp_shoulderr))
 			{
 				startScrollDelay = true;
 				//SelWeapon starts at 1
@@ -1279,7 +1288,7 @@ if (!isZombie && !reloading)
 					pickWeapon_scr(selWeapon);
 				}
 			}
-			if (mouse_wheel_down() || gamepad_button_check(0, gp_shoulderl) || gamepad_button_check(4, gp_shoulderl))
+			if (mouse_wheel_down() || gamepad_button_check_pressed(0, gp_shoulderl) || gamepad_button_check_pressed(4, gp_shoulderl))
 			{
 				startScrollDelay = true;
 				if (selWeapon < 2)

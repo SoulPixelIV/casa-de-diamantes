@@ -1,4 +1,4 @@
-if (distance_to_object(player_obj) < 32 && keyboard_check_pressed(ord("W")) && !sterilization && player_obj.plagueTransformation) {
+if (distance_to_object(player_obj) < 32 && (keyboard_check_pressed(ord("W")) || gamepad_button_check(4, gp_padu) || gamepad_axis_value(4, gp_axislv) < -0.4 || gamepad_button_check(0, gp_padu) || gamepad_axis_value(0, gp_axislv) < -0.4) && !sterilization && player_obj.plagueTransformation) {
 	sterilization = true;
 	player_obj.movement = false;
 	player_obj.image_alpha = 0;

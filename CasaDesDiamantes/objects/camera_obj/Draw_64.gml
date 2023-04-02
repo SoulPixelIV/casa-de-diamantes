@@ -199,6 +199,7 @@ if (tutorialAnimTimer < 0)
 	tutorialAnimTimer = tutorialAnimTimerSave;
 }
 
+/*
 with (player_obj)
 {
 	if (place_meeting(x, y, tutorialWKeyPromt_obj))
@@ -237,6 +238,7 @@ with (player_obj)
 		}
 	}
 }
+*/
 
 if (drawTutorialInfection) {	
 	player_obj.movement = false;
