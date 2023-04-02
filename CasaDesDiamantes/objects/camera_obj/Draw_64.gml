@@ -1062,7 +1062,7 @@ if (drawPause) {
 	draw_set_halign(fa_center);
 	draw_set_color(make_color_rgb(255, 215, 0));
 	draw_text(global.xScreenSize / 2, global.yScreenSize / 2.5, "Resume");
-	draw_text(global.xScreenSize / 2, global.yScreenSize / 2.5 + 16, "Restart Section");
+	draw_text(global.xScreenSize / 2, global.yScreenSize / 2.5 + 16, "Restart Checkpoint");
 	draw_text(global.xScreenSize / 2, global.yScreenSize / 2.5 + 32, "Return to Casino");
 	draw_text(global.xScreenSize / 2, global.yScreenSize / 2.5 + 48, "Quit to Main Menu");
 	

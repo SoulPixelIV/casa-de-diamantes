@@ -2,7 +2,7 @@ if (ppfx_exists(ppfx_id)) {
 	if (global.pause) {
 		ppfx_profile_load(ppfx_id, pause_profile);
 	} else {
-		if (room == mainmenu || room == levelSelect) {
+		if (room == mainmenu || room == levelSelect || room == demoend) {
 			ppfx_profile_load(ppfx_id, menu_profile);
 		} else if (room == level_Casino) {
 			ppfx_profile_load(ppfx_id, casino_profile);

@@ -39,7 +39,7 @@ var act2Effects = [
 act2_profile = ppfx_profile_create("Main", act2Effects);
 
 
-if (room == mainmenu || room == levelSelect) {
+if (room == mainmenu || room == levelSelect || room == demoend) {
 	ppfx_profile_load(ppfx_id, menu_profile);
 } else if (room == level_Casino) {
 	ppfx_profile_load(ppfx_id, casino_profile);

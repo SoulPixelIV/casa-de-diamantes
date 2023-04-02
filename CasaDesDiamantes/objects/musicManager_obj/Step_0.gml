@@ -14,6 +14,41 @@ if (global.pause) {
 	}
 }
 
+//Endscreen Theme
+if (room == demoend) {
+	if (!audio_is_playing(powerplant_msc)) {
+		audio_play_sound_on(musicEmitter, powerplant_msc, 1, 1);
+		
+		if (audio_is_playing(dressedToKillSTEM_msc)) {
+			audio_stop_sound(dressedToKillSTEM_msc);
+		}
+		if (audio_is_playing(dressedToKillL3_msc)) {
+			audio_stop_sound(dressedToKillL3_msc);
+		}
+		if (audio_is_playing(dressedToKillL2_msc)) {
+			audio_stop_sound(dressedToKillL2_msc);
+		}
+		if (audio_is_playing(dressedToKillL1_msc)) {
+			audio_stop_sound(dressedToKillL1_msc);
+		}
+		
+		if (audio_is_playing(birchL1_msc)) {
+			audio_stop_sound(birchL1_msc);
+		}
+		if (audio_is_playing(birchL2_msc)) {
+			audio_stop_sound(birchL2_msc);
+		}
+		if (audio_is_playing(birchL3_msc)) {
+			audio_stop_sound(birchL3_msc);
+		}
+
+	}
+} else {
+	if (audio_is_playing(powerplant_msc)) {
+		audio_stop_sound(powerplant_msc);
+	}
+}
+
 //Casino Theme
 if (room == level_Casino || room == mainmenu || room == levelSelect || room = worldmap) {
 	if (!audio_is_playing(casinoTheme)) {
