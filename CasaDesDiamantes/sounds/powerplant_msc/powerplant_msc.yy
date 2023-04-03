@@ -12,8 +12,8 @@
   "conversionMode": 0,
   "duration": 58.253063,
   "parent": {
-    "name": "UnfinishedMusic",
-    "path": "folders/Sounds/UnfinishedMusic.yy",
+    "name": "MenuMusic",
+    "path": "folders/Sounds/MenuMusic.yy",
   },
   "preload": false,
   "sampleRate": 44100,
