@@ -65,17 +65,5 @@ if (keyboard_check_pressed(vk_enter) || gamepad_button_check_pressed(0, gp_face1
 			room_goto(level7);
 			global.lastCheckpoint = noone;
 		break;
-		case 10:
-			room_goto(level3_Powerplant);
-			global.lastCheckpoint = noone;
-		break;
-		case 11:
-			room_goto(level0_DarkSewers);
-			global.lastCheckpoint = noone;
-		break;
-		case 12:
-			room_goto(enemyTestRoom1);
-			global.lastCheckpoint = noone;
-		break;
 	}
 }

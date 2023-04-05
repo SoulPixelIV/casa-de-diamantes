@@ -7,7 +7,7 @@ draw_text(32, optionsY[2], "Settings [WIP]");
 draw_text(32, optionsY[3], "Exit");
 
 draw_set_halign(fa_right);
-draw_text(global.xScreenSize - 24, global.yScreenSize - 16, "DEMO v.0.11");
+draw_text(global.xScreenSize - 24, global.yScreenSize - 16, "PRE-DEMO v.0.12");
 draw_set_halign(fa_left);
 
 //Draw title
