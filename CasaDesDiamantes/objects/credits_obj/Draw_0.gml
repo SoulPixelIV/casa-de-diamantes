@@ -18,27 +18,27 @@ if (name == 4) {
 	draw_text(global.xScreenSize / 2, global.yScreenSize / 2.5, "now lick your wounds clean of mothers sweet ichor");
 }
 
-if (keyboard_check_pressed(vk_enter) || gamepad_button_check_pressed(0, gp_face1) || gamepad_button_check_pressed(4, gp_face1) || gamepad_button_check_pressed(0, gp_start) || gamepad_button_check_pressed(4, gp_start) || keyboard_check_pressed(vk_escape)) {
+if (keyboard_check_pressed(vk_space) || keyboard_check_pressed(vk_enter) || gamepad_button_check_pressed(0, gp_face1) || gamepad_button_check_pressed(4, gp_face1) || gamepad_button_check_pressed(0, gp_start) || gamepad_button_check_pressed(4, gp_start) || keyboard_check_pressed(vk_escape)) {
 	if (pressDelay < 0) {
 		if (name == 0) {
 			name = 1;
-			timer = 4300;
+			timer = 4200;
 		}
 		else if (name == 1) {
 			name = 2;
-			timer = 3600;
+			timer = 3400;
 		}
 		else if (name == 2) {
 			name = 3;
-			timer = 2900;
+			timer = 2600;
 		}
 		else if (name == 3) {
 			name = 4;
-			timer = 2200;
+			timer = 1800;
 		}
 		else if (name == 4) {
 			name = 5;
-			timer = 1700;
+			timer = 1000;
 		}
 		pressDelay = 70;
 	}
@@ -52,27 +52,27 @@ if (startDelay < 0 ) {
 
 startDelay -= global.dt;
 
-if (timer < 4300) {
+if (timer < 4200) {
 	if (name == 0) {
 		name = 1;
 	}
 }
-if (timer < 3600) {
+if (timer < 3400) {
 	if (name == 1) {
 		name = 2;
 	}
 }
-if (timer < 2900) {
+if (timer < 2600) {
 	if (name == 2) {
 		name = 3;
 	}
 }
-if (timer < 2200) {
+if (timer < 1800) {
 	if (name == 3) {
 		name = 4;
 	}
 }
-if (timer < 1700) {
+if (timer < 1000) {
 	room_goto(mainmenu);
 }
 
