@@ -27,11 +27,10 @@ if (!drawStartMenu) {
 		switch (cursorPos)
 		{
 			case 0:
-				buttonBufferStart = true;
-				drawStartMenu = true;
 			break;
 			case 1:
-				room_goto(levelSelect);
+				buttonBufferStart = true;
+				drawStartMenu = true;
 			break;
 			case 2:
 			break;
