@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "toxicWater_obj",
+  "name": "toxicWaterDown_obj",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
@@ -35,8 +35,8 @@
   ],
   "solid": false,
   "spriteId": {
-    "name": "poisonsludge_spr",
-    "path": "sprites/poisonsludge_spr/poisonsludge_spr.yy",
+    "name": "poisonsludgeDown_spr",
+    "path": "sprites/poisonsludgeDown_spr/poisonsludgeDown_spr.yy",
   },
   "spriteMaskId": null,
   "visible": true,
