@@ -27,6 +27,10 @@ if (!drawStartMenu) {
 		switch (cursorPos)
 		{
 			case 0:
+				if (file_exists("save1")) {
+					load_scr();
+					room_goto(global.room);
+				}
 			break;
 			case 1:
 				buttonBufferStart = true;

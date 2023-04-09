@@ -43,6 +43,7 @@ key_control = keyboard_check_pressed(vk_control) || gamepad_button_check_pressed
 key_escape = keyboard_check_pressed(vk_escape) || gamepad_button_check_pressed(4, gp_start) || gamepad_button_check_pressed(0, gp_start);
 
 if (key_escape && !pauseDelayStart) {
+	save_scr();
 	global.pause = !global.pause;
 	pauseDelayStart = true;
 }

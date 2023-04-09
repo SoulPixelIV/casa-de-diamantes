@@ -1,7 +1,13 @@
 draw_set_font(gothicPixel_fnt);
 draw_set_halign(fa_left);
-draw_set_color(make_color_rgb(110, 110, 110));
-draw_text(32, optionsY[0], "Continue");
+
+if (file_exists("save1")) {
+	draw_set_color(make_color_rgb(255, 215, 0));
+	draw_text(32, optionsY[0], "Continue");
+} else {
+	draw_set_color(make_color_rgb(110, 110, 110));
+	draw_text(32, optionsY[0], "Continue");
+}
 draw_set_color(make_color_rgb(255, 215, 0));
 draw_text(32, optionsY[1], "New Game");
 draw_text(32, optionsY[2], "Settings");

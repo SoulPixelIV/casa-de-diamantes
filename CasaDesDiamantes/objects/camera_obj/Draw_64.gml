@@ -1113,6 +1113,17 @@ if (instance_exists(player_obj)) {
 	}
 }
 
+//Save Icon
+if (currentlySaving) {
+	if (saveIconDelay > 0) {
+		draw_sprite(saveIcon_spr, 0, global.xScreenSize - 32, global.yScreenSize - 32);
+		saveIconDelay -= global.dtNoSlowmo;
+	} else {
+		currentlySaving = false;
+		saveIconDelay = saveIconDelaySave;
+	}
+}
+
 //Start Screen
 if (showStartscreen) {
 	player_obj.movement = false;

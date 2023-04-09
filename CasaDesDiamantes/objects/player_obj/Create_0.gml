@@ -1,5 +1,8 @@
 /// @description Vars
 
+//Save Game
+save_scr();
+
 //Movement
 horspeed = 0;
 verspeed = 0;

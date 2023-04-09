@@ -12,6 +12,7 @@ minCameraYBorder = global.yScreenSize / 2 + 32;
 maxCameraYBorder = (room_height - global.yScreenSize / 2) - 32;
 cameraSpeed = 1;
 cameraYBorder = 16;
+currentlySaving = false;
 deathDelayTimer = 500;
 visualalarmlight = false;
 visualalarmlightDir = 0;
@@ -123,6 +124,7 @@ firstMoveDone = false;
 arenaCompleteMessage = false;
 arenaCompleteMessageTimer = 1250;
 proximitysensorTimer = 100;
+saveIconDelay = 30;
 
 enemy[0] = noone;
 
@@ -132,6 +134,7 @@ checkCullingAreaTimerSave = checkCullingAreaTimer;
 wheelSpeedSave = wheelSpeed;
 arenaCompleteMessageTimerSave = arenaCompleteMessageTimer;
 proximitysensorTimerSave = proximitysensorTimer;
+saveIconDelaySave = saveIconDelay;
 
 checkCullingAreaTimer = 1;
 
