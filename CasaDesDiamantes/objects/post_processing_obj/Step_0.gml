@@ -6,6 +6,8 @@ if (ppfx_exists(ppfx_id)) {
 			ppfx_profile_load(ppfx_id, menu_profile);
 		} else if (room == credits) {
 			ppfx_profile_load(ppfx_id, credits_profile);
+		} else if (room == worldmap) {
+			ppfx_profile_load(ppfx_id, overworld_profile);
 		} else if (room == level_Casino) {
 			ppfx_profile_load(ppfx_id, casino_profile);
 		} else if (room == level_CasinoRoof) {

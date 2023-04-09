@@ -905,7 +905,7 @@ if (deathDelayTimer < 0)
 		}
 		draw_set_alpha(deathFadeIn);
 		draw_set_font(global.optixFont);
-		draw_sprite_ext(death_spr, 0, global.xScreenSize / 2, (0 / 4), 1.5, 1.5, 0, -1, deathFadeIn);
+		draw_sprite_ext(death_spr, 0, global.xScreenSize / 2, global.yScreenSize / 3, 1.5, 1.5, 0, -1, deathFadeIn);
 		draw_set_color(c_white);
 		draw_text((global.xScreenSize / 4) - 48, (global.yScreenSize / 4) + 32, "Syringes Left: " + string(global.syringes))
 		draw_set_font(gothicPixel_fnt);
@@ -921,10 +921,10 @@ if (deathDelayTimer < 0)
 	//FULL DEATH
 	{
 		draw_set_color(c_black);
-		draw_rectangle(300 - (0 / 2), 225 - (0 / 2), 1600 + (0 / 2), 1150 + (0 / 2), false);
+		draw_rectangle(-100, -100, global.xScreenSize + 100, global.yScreenSize + 100, false);
 		draw_set_alpha(1);
-		draw_sprite_ext(death_spr, 0, global.xScreenSize / 2, (0 / 4), 2, 2, 0, c_red, 0.2);
-		draw_sprite_ext(death_spr, 0, global.xScreenSize / 2, (0 / 4), 1.5, 1.5, 0, c_red, 1);
+		draw_sprite_ext(death_spr, 0, global.xScreenSize / 2, global.yScreenSize / 3, 2, 2, 0, c_red, 0.2);
+		draw_sprite_ext(death_spr, 0, global.xScreenSize / 2, global.yScreenSize / 3, 1.5, 1.5, 0, c_red, 1);
 		finalDeathScreenTimer -= global.dt;
 		if (finalDeathScreenTimer < 0)
 		{

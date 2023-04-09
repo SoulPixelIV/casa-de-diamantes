@@ -11,6 +11,11 @@ var pauseEffects = [
 	new pp_blur_gaussian(true, 0.03),
 ];
 pause_profile = ppfx_profile_create("Main", pauseEffects);
+var overworldEffects = [
+    new pp_bloom(true, 6, 0.5, 0.5, c_white, true, undefined, 0.8, 1, true, true),
+	new pp_sunshafts(true, [0.5, 0.5], 0.3, 0.8, 0.34, 1.6, 0.4, true, 1, 0.05, 0.8, false, undefined, undefined),
+];
+overworld_profile = ppfx_profile_create("Main", overworldEffects);
 var menuEffects = [
     new pp_bloom(true, 6, 0.5, 1.33, c_white, true, undefined, 0.8, 1, true, true),
 	new pp_sunshafts(true, [0.5, 0.5], 0.3, 0.8, 0.45, 1.6, 0.4, true, 1, 0.05, 0.8, false, undefined, undefined),
@@ -49,6 +54,8 @@ if (room == mainmenu || room == levelSelect || room == demoend) {
 	ppfx_profile_load(ppfx_id, menu_profile);
 } else if (room == credits) {
 	ppfx_profile_load(ppfx_id, credits_profile);
+} else if (room == worldmap) {
+	ppfx_profile_load(ppfx_id, overworld_profile);
 } else if (room == level_Casino) {
 	ppfx_profile_load(ppfx_id, casino_profile);
 } else if (room == level_CasinoRoof) {

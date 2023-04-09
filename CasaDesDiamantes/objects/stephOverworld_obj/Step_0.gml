@@ -14,7 +14,7 @@ if (lastWorld == 2) {
 	overworldIcon2_obj.draw = true;
 }
 
-if (distance_to_object(dest) > 2) {
+if (distance_to_point(dest.x, dest.y) > 0) {
 	move_towards_point(dest.x, dest.y, global.dt);
 } else {
 	speed = 0;
