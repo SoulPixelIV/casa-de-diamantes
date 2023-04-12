@@ -46,7 +46,6 @@ if (!drawStartMenu) {
 				}
 			break;
 			case 3:
-				global.speedrunTimer = !global.speedrunTimer;
 			break;
 		}
 		saveSettings_scr();
@@ -76,7 +75,22 @@ if (!drawStartMenu) {
 				}
 			break;
 			case 3:
-				global.speedrunTimer = !global.speedrunTimer;
+			break;
+		}
+		saveSettings_scr();
+	}
+	
+	if (keyboard_check_pressed(vk_enter) || gamepad_button_check_pressed(0, gp_face1) || gamepad_button_check_pressed(4, gp_face1)) {
+		switch (cursorPos)
+		{
+			case 0:
+			break;
+			case 1:
+			break;
+			case 2:
+			break;
+			case 3:
+				room_goto(mainmenu);
 			break;
 		}
 		saveSettings_scr();

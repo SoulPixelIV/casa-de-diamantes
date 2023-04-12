@@ -726,7 +726,7 @@ if (!noHUD && instance_exists(player_obj))
 		draw_set_halign(fa_left);
 	}
 	
-	//Timer + Combo for Horde Mode
+	//Combo for Horde Mode
 	if (room == infiniteSpawn) {
 		draw_text(0 / 3.5, 0 / 2.5, "TIME: " + string(global.timer));
 		draw_text(0 / 3.5, (0 / 2.5) + 16, "SCORE: " + string(global.scorepoints));

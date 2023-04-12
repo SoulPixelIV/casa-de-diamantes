@@ -157,6 +157,10 @@ currVolSlotmachineLevel1 = audio_sound_get_gain(slotmachineLevel1_snd);
 currVolSlotmachineLevel2 = audio_sound_get_gain(slotmachineLevel2_snd);
 currVolSlotmachineLevel3 = audio_sound_get_gain(slotmachineLevel3_snd);
 currVolSlotmachineSpinning = audio_sound_get_gain(slotmachineSpinning_snd);
+currVolCaveAmbience1 = audio_sound_get_gain(caveAmbience1_amb);
+currVolCaveAmbience2 = audio_sound_get_gain(caveAmbience2_amb);
+currVolCaveAmbience3 = audio_sound_get_gain(caveAmbience3_amb);
+currVolCaveAmbience4 = audio_sound_get_gain(caveAmbience4_amb);
 
 currVolInfectedVoice = audio_sound_get_gain(infectedVoice_snd);
 currVolInfectionVoice = audio_sound_get_gain(plagueInfectionVoice_snd);

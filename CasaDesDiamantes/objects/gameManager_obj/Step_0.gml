@@ -43,6 +43,10 @@ audio_sound_pitch(arrowImpact_snd, clamp(1 * global.timeScale, 0.5, 1.5));
 audio_sound_pitch(arrowShotWind_snd, clamp(1 * global.timeScale, 0.5, 1.5));
 audio_sound_pitch(bowReadying_snd, clamp(1 * global.timeScale, 0.5, 1.5));
 audio_sound_pitch(flyingInsectShot_snd, clamp(1 * global.timeScale, 0.5, 1.5));
+audio_sound_pitch(caveAmbience1_amb, clamp(1 * global.timeScale, 0.5, 1.5));
+audio_sound_pitch(caveAmbience2_amb, clamp(1 * global.timeScale, 0.5, 1.5));
+audio_sound_pitch(caveAmbience3_amb, clamp(1 * global.timeScale, 0.5, 1.5));
+audio_sound_pitch(caveAmbience4_amb, clamp(1 * global.timeScale, 0.5, 1.5));
 
 audio_sound_pitch(infectedVoice_snd, clamp(1 * global.timeScale, 0.5, 1.5));
 audio_sound_pitch(plagueInfectionVoice_snd, clamp(1 * global.timeScale, 0.5, 1.5));
@@ -114,6 +118,10 @@ audio_sound_gain(slotmachineLevel1_snd, (global.soundVolume / 100) * currVolSlot
 audio_sound_gain(slotmachineLevel2_snd, (global.soundVolume / 100) * currVolSlotmachineLevel2, 0);
 audio_sound_gain(slotmachineLevel3_snd, (global.soundVolume / 100) * currVolSlotmachineLevel3, 0);
 audio_sound_gain(slotmachineSpinning_snd, (global.soundVolume / 100) * currVolSlotmachineSpinning, 0);
+audio_sound_gain(caveAmbience1_amb, (global.soundVolume / 100) * currVolCaveAmbience1, 0);
+audio_sound_gain(caveAmbience2_amb, (global.soundVolume / 100) * currVolCaveAmbience2, 0);
+audio_sound_gain(caveAmbience3_amb, (global.soundVolume / 100) * currVolCaveAmbience3, 0);
+audio_sound_gain(caveAmbience4_amb, (global.soundVolume / 100) * currVolCaveAmbience4, 0);
 
 audio_sound_gain(infectedVoice_snd, (global.soundVolume / 100) * currVolInfectedVoice, 0);
 audio_sound_gain(plagueInfectionVoice_snd, (global.soundVolume / 100) * currVolInfectionVoice, 0);
@@ -142,9 +150,9 @@ audio_sound_gain(jumpmoan_snd, (global.soundVolume / 100) * currVolJumpMoan, 0);
 
 
 //Timer
-if (room == infiniteSpawn)
+if (room == level0 || room == level1 || room == level2 || room == level3)
 {
-	global.timer += global.dt / 185;
+	//global.timer += global.dt;
 }
 
 //Multiplier

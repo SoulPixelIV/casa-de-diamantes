@@ -4,7 +4,7 @@ draw_set_color(make_color_rgb(255, 215, 0));
 draw_text(32, optionsY[0], "Sound Volume [" + string(global.soundVolume) + "]");
 draw_text(32, optionsY[1], "Music Volume [" + string(global.musicVolume) + "]");
 draw_text(32, optionsY[2], "Maximum Framerate [" + string(globalSettings_obj.TARGET_FRAMERATE) + "]");
-draw_text(32, optionsY[3], "Speedrun Timer [" + string(global.speedrunTimer) + "]");
+draw_text(32, optionsY[3], "Back to Main Menu");
 
 draw_set_halign(fa_right);
 draw_text(global.xScreenSize - 24, global.yScreenSize - 16, "PRE-DEMO v.0.12");
