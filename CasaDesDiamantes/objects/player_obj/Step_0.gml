@@ -1610,7 +1610,7 @@ if (plagueTransformation)
 //Slowmotion
 if (!deathSlowmo)
 {	
-	if (slowmo || keyboard_check(vk_enter))
+	if (slowmo)
 	{
 		global.timeScale = 0.2;
 	}

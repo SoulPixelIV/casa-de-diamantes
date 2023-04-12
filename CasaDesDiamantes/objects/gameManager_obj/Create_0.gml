@@ -161,6 +161,8 @@ currVolCaveAmbience1 = audio_sound_get_gain(caveAmbience1_amb);
 currVolCaveAmbience2 = audio_sound_get_gain(caveAmbience2_amb);
 currVolCaveAmbience3 = audio_sound_get_gain(caveAmbience3_amb);
 currVolCaveAmbience4 = audio_sound_get_gain(caveAmbience4_amb);
+currVolSlowmoStart = audio_sound_get_gain(slowmoStart_snd);
+currVolSlowmoEnd = audio_sound_get_gain(slowmoEnd_snd);
 
 currVolInfectedVoice = audio_sound_get_gain(infectedVoice_snd);
 currVolInfectionVoice = audio_sound_get_gain(plagueInfectionVoice_snd);

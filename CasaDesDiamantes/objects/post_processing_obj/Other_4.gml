@@ -50,7 +50,7 @@ var act2Effects = [
 act2_profile = ppfx_profile_create("Main", act2Effects);
 
 
-if (room == mainmenu || room == levelSelect || room == demoend || room == settings) {
+if (room == mainmenu || room == levelSelect || room == demoend || room == settings || room == blackjackTable) {
 	ppfx_profile_load(ppfx_id, menu_profile);
 } else if (room == credits) {
 	ppfx_profile_load(ppfx_id, credits_profile);

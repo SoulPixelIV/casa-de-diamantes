@@ -148,10 +148,10 @@ if (drawText && !showWindowMenu)
 	draw_set_font(gothicPixel_fnt);
 	draw_set_halign(fa_center);
 	draw_set_color(c_black);
-	draw_sprite_ext(dialogBorder_spr, 0, character.x - x, (character.y - 34) - y,2 + string_length(dialogueStripped) / 3, 1.5, 0, -1, 1);
-	draw_text((character.x - 1) - x, (character.y - 38 + 1) - y, string_copy(dialogueStripped, 1, string_length(dialogue[dialogueLine])));
+	draw_sprite_ext(dialogBorder_spr, 0, (character.x - x) + global.xScreenSize / 2, (character.y - y) - 34 + global.yScreenSize / 2, 2 + string_length(dialogueStripped) / 3, 1.5, 0, -1, 1);
+	draw_text((character.x - x) + global.xScreenSize / 2 - 1, (character.y - y) - 38 + 1 + global.yScreenSize / 2, string_copy(dialogueStripped, 1, string_length(dialogue[dialogueLine])));
 	draw_set_color(make_color_rgb(255, 215, 0));
-	draw_text(character.x - x, (character.y - 38) - y, string_copy(dialogueStripped, 1, string_length(dialogue[dialogueLine])));
+	draw_text((character.x - x) + global.xScreenSize / 2, (character.y - y) - 38 + global.yScreenSize / 2, string_copy(dialogueStripped, 1, string_length(dialogue[dialogueLine])));
 	draw_set_halign(fa_left);
 
 	//Sentence incomplete

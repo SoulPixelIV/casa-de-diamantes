@@ -10,7 +10,7 @@
   "bitRate": 128,
   "compression": 0,
   "conversionMode": 0,
-  "duration": 1.598469,
+  "duration": 1.593469,
   "parent": {
     "name": "Priority Sounds",
     "path": "folders/Sounds/Priority Sounds.yy",

@@ -43,6 +43,9 @@ if (!drawStartMenu) {
 				} else if (globalSettings_obj.TARGET_FRAMERATE == 120) {
 					globalSettings_obj.TARGET_FRAMERATE = 144;
 					game_set_speed(globalSettings_obj.TARGET_FRAMERATE, gamespeed_fps);
+				} else if (globalSettings_obj.TARGET_FRAMERATE == 144) {
+					globalSettings_obj.TARGET_FRAMERATE = 240;
+					game_set_speed(globalSettings_obj.TARGET_FRAMERATE, gamespeed_fps);
 				}
 			break;
 			case 3:
@@ -66,7 +69,10 @@ if (!drawStartMenu) {
 				}
 			break;
 			case 2:
-				if (globalSettings_obj.TARGET_FRAMERATE == 144) {
+				if (globalSettings_obj.TARGET_FRAMERATE == 240) {
+					globalSettings_obj.TARGET_FRAMERATE = 144;
+					game_set_speed(globalSettings_obj.TARGET_FRAMERATE, gamespeed_fps);
+				} else if (globalSettings_obj.TARGET_FRAMERATE == 144) {
 					globalSettings_obj.TARGET_FRAMERATE = 120;
 					game_set_speed(globalSettings_obj.TARGET_FRAMERATE, gamespeed_fps);
 				} else if (globalSettings_obj.TARGET_FRAMERATE == 120) {
