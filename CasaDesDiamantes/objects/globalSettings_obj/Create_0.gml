@@ -38,3 +38,8 @@ global.tilemap = layer_tilemap_get_id("TileCollider");
 
 loadTimer = 100;
 loaded = false;
+
+//LOAD SETTINGS
+if (file_exists("gameSettings")) {
+	loadSettings_scr();
+}

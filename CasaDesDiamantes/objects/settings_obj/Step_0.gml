@@ -49,6 +49,7 @@ if (!drawStartMenu) {
 				global.speedrunTimer = !global.speedrunTimer;
 			break;
 		}
+		saveSettings_scr();
 	}
 	
 	if (keyboard_check_pressed(vk_left) || keyboard_check_pressed(ord("A")) || gamepad_button_check_pressed(0, gp_padl) || gamepad_button_check_pressed(4, gp_padl))
@@ -78,10 +79,12 @@ if (!drawStartMenu) {
 				global.speedrunTimer = !global.speedrunTimer;
 			break;
 		}
+		saveSettings_scr();
 	}
 }
 
 if (keyboard_check_pressed(vk_escape) || gamepad_button_check_pressed(4, gp_face2) || gamepad_button_check_pressed(0, gp_face2)) {
+	saveSettings_scr();
 	room_goto(mainmenu);
 }
 
