@@ -403,7 +403,7 @@ if (!noHUD && instance_exists(player_obj))
 		currDeltatime = global.dt;
 		updateFPS = updateFPSSave;
 	}
-	draw_text_colour(16, (global.yScreenSize) - 16, "Framerate: " + string(currFps), c_white, c_white, c_white, c_white, 1);
+	//draw_text_colour(16, (global.yScreenSize) - 16, "Framerate: " + string(currFps), c_white, c_white, c_white, c_white, 1);
 	//draw_text_colour((0 / 2) + 16, (global.yScreenSize) - 32, "Delta: " + string(currDeltatime), c_white, c_white, c_white, c_white, 1);
 	draw_set_halign(fa_center);
 	//draw_text_color(x, (0 / 2) + 6, "F3 - Level Select", c_white, c_white, c_white, c_white, 1);

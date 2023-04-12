@@ -1544,6 +1544,7 @@
     {"id":{"name":"shotLightPistol_obj","path":"objects/shotLightPistol_obj/shotLightPistol_obj.yy",},},
     {"id":{"name":"shotLightDualBarettas_obj","path":"objects/shotLightDualBarettas_obj/shotLightDualBarettas_obj.yy",},},
     {"id":{"name":"draw_colorbanding","path":"scripts/draw_colorbanding/draw_colorbanding.yy",},},
+    {"id":{"name":"settings","path":"rooms/settings/settings.yy",},},
     {"id":{"name":"shotLightShotgun_obj","path":"objects/shotLightShotgun_obj/shotLightShotgun_obj.yy",},},
     {"id":{"name":"explosion_obj","path":"objects/explosion_obj/explosion_obj.yy",},},
     {"id":{"name":"alarm_snd","path":"sounds/alarm_snd/alarm_snd.yy",},},
@@ -1727,6 +1728,7 @@
     {"id":{"name":"load_scr","path":"scripts/load_scr/load_scr.yy",},},
     {"id":{"name":"Script74","path":"scripts/Script74/Script74.yy",},},
     {"id":{"name":"SmokingBottomWall_spr","path":"sprites/SmokingBottomWall_spr/SmokingBottomWall_spr.yy",},},
+    {"id":{"name":"settings_obj","path":"objects/settings_obj/settings_obj.yy",},},
     {"id":{"name":"rewardsign_spr","path":"sprites/rewardsign_spr/rewardsign_spr.yy",},},
     {"id":{"name":"casinoTheme_msc","path":"sounds/casinoTheme_msc/casinoTheme_msc.yy",},},
     {"id":{"name":"SF0_SF1_teleporter","path":"objects/SF0_SF1_teleporter/SF0_SF1_teleporter.yy",},},
@@ -1820,6 +1822,7 @@
     {"roomId":{"name":"cutscene1","path":"rooms/cutscene1/cutscene1.yy",},},
     {"roomId":{"name":"cutscene2","path":"rooms/cutscene2/cutscene2.yy",},},
     {"roomId":{"name":"powerplantTest","path":"rooms/powerplantTest/powerplantTest.yy",},},
+    {"roomId":{"name":"settings","path":"rooms/settings/settings.yy",},},
   ],
   "TextureGroups": [
     {"resourceType":"GMTextureGroup","resourceVersion":"1.3","name":"Default","autocrop":true,"border":2,"compressFormat":"bz2","directory":"","groupParent":null,"isScaled":true,"loadType":"default","mipsToGenerate":0,"targets":-1,},

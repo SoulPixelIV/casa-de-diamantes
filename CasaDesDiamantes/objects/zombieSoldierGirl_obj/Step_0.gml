@@ -236,7 +236,7 @@ if (hp < 0)
 	var maxAmount = random_range(moneyDropMin, moneyDropMax);
 	for (i = 0; i < maxAmount; i++)
 	{
-		chip = choose(1,1,1,1,1,2,2,2,3);
+		chip = choose(1,1,1,1,2,2,2,3);
 		
 		if (chip == 1)
 		{

@@ -37,6 +37,7 @@ if (!drawStartMenu) {
 				drawStartMenu = true;
 			break;
 			case 2:
+				room_goto(settings);
 			break;
 			case 3:
 				game_end();

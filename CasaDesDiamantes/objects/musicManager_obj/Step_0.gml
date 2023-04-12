@@ -1,3 +1,6 @@
+//Volume
+audio_emitter_gain(musicEmitter, global.musicVolume / 100);
+
 if (instance_exists(player_obj)) {
 	audio_emitter_position(musicEmitter, player_obj.x, player_obj.y, 0);
 }
@@ -85,7 +88,7 @@ if (room == demoend) {
 }
 
 //Casino Theme
-if (room == level_Casino || room == mainmenu || room == levelSelect || room = worldmap) {
+if (room == level_Casino || room == mainmenu || room == levelSelect || room == worldmap || room == settings) {
 	if (!audio_is_playing(casinoTheme)) {
 		audio_play_sound_on(musicEmitter, casinoTheme, 1, 1);
 		
