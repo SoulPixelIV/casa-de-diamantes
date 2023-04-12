@@ -18,10 +18,6 @@ global.timer = 0;
 global.drawTutorialInfectionUsed = false;
 multiplierRun = false;
 
-global.soundVolume = 100;
-global.musicVolume = 100;
-global.speedrunTimer = false;
-
 global.act2Unlocked = false;
 
 global.cutsceneLevel2Done = false;

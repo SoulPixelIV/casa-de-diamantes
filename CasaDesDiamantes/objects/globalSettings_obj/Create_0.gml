@@ -39,6 +39,10 @@ global.tilemap = layer_tilemap_get_id("TileCollider");
 loadTimer = 100;
 loaded = false;
 
+global.soundVolume = 100;
+global.musicVolume = 100;
+global.speedrunTimer = false;
+
 //LOAD SETTINGS
 if (file_exists("gameSettings")) {
 	loadSettings_scr();
