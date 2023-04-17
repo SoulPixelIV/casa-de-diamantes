@@ -2,9 +2,11 @@ if (ppfx_exists(ppfx_id)) {
 	if (global.pause) {
 		ppfx_profile_load(ppfx_id, pause_profile);
 	} else {
-		if (room == mainmenu || room == levelSelect || room == demoend || room == settings || room == blackjackTable) {
+		if (room == mainmenu || room == levelSelect || room == demoend || room == settings) {
 			ppfx_profile_load(ppfx_id, menu_profile);
-		} else if (room == credits) {
+		} else if (room == blackjackTable) {
+			ppfx_profile_load(ppfx_id, blackjack_profile);
+		} else if (room == credits || room == cutscene1) {
 			ppfx_profile_load(ppfx_id, credits_profile);
 		} else if (room == worldmap) {
 			ppfx_profile_load(ppfx_id, overworld_profile);

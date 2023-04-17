@@ -1,6 +1,6 @@
 /// @description Check Player
 
-if ((distance_to_object(player_obj) < 32 && player_obj.key_up_pressed) && !used)
+if ((distance_to_object(player_obj) < 32 && player_obj.key_up_pressed) && !used && !global.pause)
 {
 	if (elevatorNumber == 0 || elevatorNumber == 1) {
 		sprite_index = elevatorOpening_spr;
@@ -38,7 +38,7 @@ if (elevatorTimer < 0 && used) {
 	if (elevatorNumber == 1) {
 		part_emitter_destroy_all(global.partSystem);
 		instance_destroy(player_obj);
-		global.spawn = 1;
+		global.spawn = 2;
 		room_goto(level_Casino);
 	}
 }

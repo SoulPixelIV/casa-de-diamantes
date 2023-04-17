@@ -1021,8 +1021,10 @@ if (global.pause) {
 				room_restart();
 			break;
 			case 2:
-				global.pause = false;
-				room_goto(level_Casino);
+				if (global.reachedCasino) {
+					global.pause = false;
+					room_goto(level_Casino);
+				}
 			break;
 			case 3:
 				global.pause = false;
@@ -1063,9 +1065,17 @@ if (drawPause) {
 	draw_set_font(gothicPixel_fnt);
 	draw_set_halign(fa_center);
 	draw_set_color(make_color_rgb(255, 215, 0));
+
 	draw_text(global.xScreenSize / 2, global.yScreenSize / 2.5, "Resume");
 	draw_text(global.xScreenSize / 2, global.yScreenSize / 2.5 + 16, "Restart Checkpoint");
-	draw_text(global.xScreenSize / 2, global.yScreenSize / 2.5 + 32, "Return to Casino");
+	if (global.reachedCasino) {
+		draw_set_color(make_color_rgb(255, 215, 0));
+		draw_text(global.xScreenSize / 2, global.yScreenSize / 2.5 + 32, "Return to Casino");
+	} else {
+		draw_set_color(make_color_rgb(110, 110, 110));
+		draw_text(global.xScreenSize / 2, global.yScreenSize / 2.5 + 32, "Return to Casino");
+	}
+	draw_set_color(make_color_rgb(255, 215, 0));
 	draw_text(global.xScreenSize / 2, global.yScreenSize / 2.5 + 48, "Quit to Main Menu");
 	
 	cursorAnim += global.dtNoSlowmo / 17;

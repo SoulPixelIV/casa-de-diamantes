@@ -29,16 +29,16 @@ if (instance_exists(player_obj))
 	{
 		if (horspeed > 0 && !player_obj.key_right)
 		{
-			horspeed -= global.dt / 400;
-			if (horspeed < 0.3)
+			horspeed -= movSpeed / 5;
+			if (horspeed < 0.1)
 			{
 				horspeed = 0;
 			}
 		}
 		if (horspeed < 0 && !player_obj.key_left)
 		{
-			horspeed += global.dt / 400;
-			if (horspeed > -0.3)
+			horspeed += movSpeed / 5;
+			if (horspeed > -0.1)
 			{
 				horspeed = 0;
 			}
@@ -48,16 +48,16 @@ if (instance_exists(player_obj))
 	{
 		if (horspeed > 0)
 		{
-			horspeed -= global.dt / 400;
-			if (horspeed < 0.3)
+			horspeed -= movSpeed / 5;
+			if (horspeed < 0.1)
 			{
 				horspeed = 0;
 			}
 		}
 		if (horspeed < 0)
 		{
-			horspeed += global.dt / 400;
-			if (horspeed > -0.3)
+			horspeed += movSpeed / 5;
+			if (horspeed > -0.1)
 			{
 				horspeed = 0;
 			}
@@ -66,17 +66,17 @@ if (instance_exists(player_obj))
 }
 
 //Max Speed
-if (horspeed > 1.6)
+if (horspeed > 2.4)
 {
-	horspeed = 1.6;
+	horspeed = 2.4;
 }
-if (horspeed < -1.6)
+if (horspeed < -2.4)
 {
-	horspeed = -1.6;
+	horspeed = -2.4;
 }
 
 //Gravity
-if (verspeed < 14)
+if (verspeed < 5)
 {
 	verspeed -= gravityStrength * global.dt;
 }
@@ -121,7 +121,7 @@ if (!place_free(x, y + verspeed * global.dt))
 
 if (instance_exists(player_obj))
 {
-	if (player_obj.key_jump && inMinecart)
+	if (player_obj.key_jump && inMinecart && !global.pause)
 	{
 		inMinecart = false;
 		player_obj.grounded = false;

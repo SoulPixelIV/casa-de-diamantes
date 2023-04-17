@@ -42,7 +42,7 @@ key_shift = keyboard_check_pressed(vk_shift) || gamepad_button_check_pressed(4, 
 key_control = keyboard_check_pressed(vk_control) || gamepad_button_check_pressed(4, gp_face2) || gamepad_button_check_pressed(0, gp_face2);
 key_escape = keyboard_check_pressed(vk_escape) || gamepad_button_check_pressed(4, gp_start) || gamepad_button_check_pressed(0, gp_start);
 
-if (key_escape && !pauseDelayStart) {
+if (key_escape && !pauseDelayStart && hp > 0) {
 	save_scr();
 	global.pause = !global.pause;
 	pauseDelayStart = true;
@@ -720,7 +720,7 @@ else
 }
 
 //Weapon System ###TODO###
-if (inputMethod == 0)
+if (inputMethod == 0 && !global.pause)
 {
 	dirCursor = point_direction(x, y, mouse_x, mouse_y);
 	if (huggingWall && image_xscale == 1) {

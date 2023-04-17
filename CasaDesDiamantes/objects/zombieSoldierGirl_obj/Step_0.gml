@@ -442,6 +442,10 @@ if (aggro && attackCooldown < 120 && attackInProg1)
 	}
 }
 
+if (global.pause) {
+	audio_stop_sound(sniperShotLoad_snd);
+}
+
 //Sound Position
 if (audio_emitter_exists(emitter)) {
 	audio_emitter_position(emitter, x, y, 0);

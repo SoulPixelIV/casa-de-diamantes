@@ -18,6 +18,7 @@ global.timer = 0;
 global.drawTutorialInfectionUsed = false;
 multiplierRun = false;
 
+global.reachedCasino = false;
 global.act2Unlocked = false;
 
 global.cutsceneLevel2Done = false;

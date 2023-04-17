@@ -195,7 +195,7 @@
     {"name":"inst_A2971A6","path":"rooms/level_Casino/level_Casino.yy",},
     {"name":"inst_1B80973A","path":"rooms/level_Casino/level_Casino.yy",},
     {"name":"inst_31CBE00C","path":"rooms/level_Casino/level_Casino.yy",},
-    {"name":"inst_4F5E04A2","path":"rooms/level_Casino/level_Casino.yy",},
+    {"name":"inst_64E05272","path":"rooms/level_Casino/level_Casino.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -264,7 +264,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_63B18725","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"Spawn3_obj","path":"objects/Spawn3_obj/Spawn3_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":416.0,"y":2257.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_2129E885","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"VIP_C_teleporter","path":"objects/VIP_C_teleporter/VIP_C_teleporter.yy",},"properties":[],"rotation":0.0,"scaleX":4.0,"scaleY":6.1875,"x":323.0,"y":2286.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_64EB91EF","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"C_SF0_teleporter","path":"objects/C_SF0_teleporter/C_SF0_teleporter.yy",},"properties":[],"rotation":0.0,"scaleX":3.0,"scaleY":12.999999,"x":369.0,"y":1278.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_4F5E04A2","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"Spawn2_obj","path":"objects/Spawn2_obj/Spawn2_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1664.0,"y":1312.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_64E05272","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"Spawn3_obj","path":"objects/Spawn3_obj/Spawn3_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1664.0,"y":1312.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"MidgroundObjects","depth":800,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_47E396D3","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"checkpoint_obj","path":"objects/checkpoint_obj/checkpoint_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1424.0,"y":1351.0,},

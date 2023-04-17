@@ -21,6 +21,11 @@ var menuEffects = [
 	new pp_sunshafts(true, [0.5, 0.5], 0.3, 0.8, 0.45, 1.6, 0.4, true, 1, 0.05, 0.8, false, undefined, undefined),
 ];
 menu_profile = ppfx_profile_create("Main", menuEffects);
+var blackjackEffects = [
+    new pp_bloom(true, 6, 0.5, 0.96, c_white, true, undefined, 0.8, 1, true, true),
+	new pp_sunshafts(true, [0.5, 0.5], 0.3, 0.8, 0.45, 1.6, 0.4, true, 1, 0.05, 0.8, false, undefined, undefined),
+];
+blackjack_profile = ppfx_profile_create("Main", blackjackEffects);
 var creditsEffects = [
     new pp_bloom(true, 6, 0.5, 1.33, c_white, true, undefined, 0.8, 1, true, true),
 	new pp_sunshafts(true, [0.5, 0.5], 0.3, 0.8, 0.45, 1.6, 0.4, true, 1, 0.05, 0.8, false, undefined, undefined),
@@ -50,9 +55,11 @@ var act2Effects = [
 act2_profile = ppfx_profile_create("Main", act2Effects);
 
 
-if (room == mainmenu || room == levelSelect || room == demoend || room == settings || room == blackjackTable) {
+if (room == mainmenu || room == levelSelect || room == demoend || room == settings) {
 	ppfx_profile_load(ppfx_id, menu_profile);
-} else if (room == credits) {
+} else if (room == blackjackTable) {
+	ppfx_profile_load(ppfx_id, blackjack_profile);
+} else if (room == credits || room == cutscene1) {
 	ppfx_profile_load(ppfx_id, credits_profile);
 } else if (room == worldmap) {
 	ppfx_profile_load(ppfx_id, overworld_profile);
