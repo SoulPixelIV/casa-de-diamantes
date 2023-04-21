@@ -26,7 +26,9 @@ if (keyboard_check_pressed(vk_up) || keyboard_check_pressed(ord("W")) || gamepad
 		switch (cursorPos)
 		{
 			case 0:
-				url_open("https://store.steampowered.com/app/1814890/Casa_De_Diamantes/");
+				if steam_initialised() {
+					steam_activate_overlay_browser("https://store.steampowered.com/app/1814890/Casa_De_Diamantes/");
+				}
 			break;
 			case 1:
 				room_goto(level_Casino);

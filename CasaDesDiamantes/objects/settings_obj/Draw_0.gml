@@ -7,7 +7,7 @@ draw_text(32, optionsY[2], "Maximum Framerate [" + string(globalSettings_obj.TAR
 draw_text(32, optionsY[3], "Back to Main Menu");
 
 draw_set_halign(fa_right);
-draw_text(global.xScreenSize - 24, global.yScreenSize - 16, "PRE-DEMO v.0.12");
+draw_text(global.xScreenSize - 24, global.yScreenSize - 16, "DEMO v.1.0");
 draw_set_halign(fa_left);
 
 //Draw title
@@ -77,3 +77,8 @@ if (drawStartMenu) {
 		}
 	}
 }
+
+//Cursor
+draw_sprite(cursor_spr, 0, 
+	(window_mouse_get_x() / ((window_get_width()+1) / global.xScreenSize)) + (0), 
+	window_mouse_get_y() / ((window_get_height()+1) / global.yScreenSize) + (0));

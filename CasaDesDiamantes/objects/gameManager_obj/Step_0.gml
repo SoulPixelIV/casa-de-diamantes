@@ -1,4 +1,8 @@
 /// @description Changing Values
+
+//STEAM
+steam_update();
+
 //Audio Pitch
 audio_sound_pitch(pistolShot_snd, clamp(1 * global.timeScale, 0.5, 1.5));
 audio_sound_pitch(dualBarettasShot_snd, clamp(1 * global.timeScale, 0.5, 1.5));

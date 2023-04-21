@@ -57,7 +57,7 @@
             {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"a780023e-4a8b-458b-ba60-a728ef8c7829","path":"sprites/discordLEDLogo_spr/discordLEDLogo_spr.yy",},},},"Disabled":false,"id":"38f263e8-456b-423d-8a72-1122a374d329","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
-    "visibleRange": {"x":0.0,"y":0.0,},
+    "visibleRange": null,
     "volume": 1.0,
     "xorigin": 22,
     "yorigin": 14,
