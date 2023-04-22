@@ -3,6 +3,22 @@
 //STEAM
 steam_update();
 
+//Rich Presence
+if (steam_initialised()) {
+	if (room == mainmenu || room == settings || room == cutscene0 || room == cutscene1 || room == transitionScreen || room == transitionScreen2 || room == level0) {
+		//steam_clear_rich_presence();
+		steam_set_rich_presence("steam_display", "#StatusMainMenu");
+	} else if (room == level1 || room == level2 || room == level3) {
+		steam_set_rich_presence("steam_display", "#StatusParedia");
+	} else if (room == level_Casino || room == level_CasinoRoof) {
+		steam_set_rich_presence("steam_display", "#StatusCasino");
+	} else if (room == blackjackTable) {
+		steam_set_rich_presence("steam_display", "#StatusBlackjack");
+	} else if (room == level4 || room == level5A || room == level5B || room == level6 || room == level7 || room == level8) {
+		steam_set_rich_presence("steam_display", "#StatusSenzelaForest");
+	}
+}
+
 //Audio Pitch
 audio_sound_pitch(pistolShot_snd, clamp(1 * global.timeScale, 0.5, 1.5));
 audio_sound_pitch(dualBarettasShot_snd, clamp(1 * global.timeScale, 0.5, 1.5));

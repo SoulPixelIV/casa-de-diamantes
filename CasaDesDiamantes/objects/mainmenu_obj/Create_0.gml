@@ -17,5 +17,3 @@ titleAlpha = 0;
 optionsY = [200, 216, 232, 248];
 
 cursorPos = 0;
-
-steam_set_rich_presence("steam_display", "Main Menu");
