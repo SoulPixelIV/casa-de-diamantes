@@ -192,7 +192,7 @@ if (screen == 1 || screen == 2)
 }
 
 //Escape
-if (keyboard_check(vk_escape))
+if (keyboard_check(vk_escape) || gamepad_button_check_pressed(4, gp_select) || gamepad_button_check_pressed(0, gp_select))
 {
 	global.spawn = 1;
 	room_goto(level_Casino);

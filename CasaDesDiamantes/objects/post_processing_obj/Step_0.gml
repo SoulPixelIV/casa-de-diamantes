@@ -32,6 +32,8 @@ if (ppfx_exists(ppfx_id)) {
 			ppfx_profile_load(ppfx_id, act2_profile);
 		} else if (room == level7) {
 			ppfx_profile_load(ppfx_id, act2_profile);
+		} else if (room == level8) {
+			ppfx_profile_load(ppfx_id, act2_profile);
 		}
 	}
 }

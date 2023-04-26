@@ -9,6 +9,13 @@ if (blackJackCalc_obj.screen == 0)
 	draw_text(global.xScreenSize / 2, 38, "Blackjack");
 	draw_text(global.xScreenSize / 2, 54, "Please place your bet!");
 }
+
+draw_set_halign(fa_left);
+if (inputMethod == 0) {
+	draw_text(24, global.yScreenSize - 24, "Press Escape to stop playing");
+} else {
+	draw_text(24, global.yScreenSize - 24, "Press Select to stop playing");
+}
 	
 //Chipbar Digit Calculation
 convMoney = string(global.money);

@@ -53,6 +53,7 @@ else
 	display_mouse_unlock();
 }
 
+/*
 if (keyboard_check_pressed(vk_f1))
 {
 	restartInProg = true;
@@ -67,6 +68,7 @@ if (keyboard_check_pressed(vk_f2))
 		player_obj.y -= 32;
 	}
 }
+*/
 if (keyboard_check_pressed(vk_f3) && room != mainmenu && room != levelSelect && room != worldmap && room != credits && room != cutscene0 && room != cutscene1 && !global.pause)
 {
 	part_emitter_destroy_all(global.partSystem);
