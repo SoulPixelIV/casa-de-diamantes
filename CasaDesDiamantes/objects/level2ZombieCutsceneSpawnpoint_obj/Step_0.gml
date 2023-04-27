@@ -8,6 +8,11 @@ if (instance_exists(level2LandTrigger_obj) && !spawnedEnemy) {
 	}
 }
 
+if (removeEnemy) {
+	if (instance_exists(zombie)) {
+		instance_destroy(zombie);
+	}
+}
 
 
 

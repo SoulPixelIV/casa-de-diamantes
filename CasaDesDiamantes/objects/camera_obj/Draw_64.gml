@@ -1129,6 +1129,16 @@ if (instance_exists(player_obj)) {
 	}
 }
 
+//Skip Cutscene Prompt
+draw_set_color(make_color_rgb(255, 215, 0));
+if (player_obj.inCutscene) {
+	if (player_obj.inputMethod == 0) {
+		draw_text(16, global.yScreenSize - 16, "Press Enter to skip");
+	} else {
+		draw_text(16, global.yScreenSize - 16, "Press Select to skip");
+	}
+}
+
 //Save Icon
 if (currentlySaving) {
 	if (saveIconDelay > 0) {

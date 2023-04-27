@@ -8,11 +8,15 @@ inputMethod = 0;
 cursorImage = 0;
 
 drawStartMenu = false;
+drawSkipMenu = false;
 startMenuElement = 1;
 
 buttonBuffer = 120;
+buttonBuffer2 = 120;
 buttonBufferStart = false;
+buttonBufferStart2 = false;
 buttonBufferSave = buttonBuffer;
+buttonBufferSave2 = buttonBuffer2;
 
 titleAlpha = 0;
 
