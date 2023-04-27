@@ -720,57 +720,82 @@ else
 }
 
 //Weapon System ###TODO###
-if (inputMethod == 0 && !global.pause)
-{
-	dirCursor = point_direction(x, y, mouse_x, mouse_y);
-	if (huggingWall && image_xscale == 1) {
-		if (dirCursor > 0 && dirCursor < 180) {
-			updowndir = 0;
-		}
-		if (dirCursor > 180 && dirCursor < 360) {
-			updowndir = 1;
-		}
+if (!global.pause) {
+	if (inputMethod == 0)
+	{
+		dirCursor = point_direction(x, y, mouse_x, mouse_y);
+		if (huggingWall && image_xscale == 1) {
+			if (dirCursor > 0 && dirCursor < 180) {
+				updowndir = 0;
+			}
+			if (dirCursor > 180 && dirCursor < 360) {
+				updowndir = 1;
+			}
 		
-		if (dirCursor > 75 && updowndir == 0) {
-			dirCursor = 75;
+			if (dirCursor > 75 && updowndir == 0) {
+				dirCursor = 75;
+			}
+			if (dirCursor < 285 && updowndir == 1) {
+				dirCursor = 285;
+			}
 		}
-		if (dirCursor < 285 && updowndir == 1) {
-			dirCursor = 285;
+		if (huggingWall && image_xscale == -1) {
+			if (dirCursor < 105) {
+				dirCursor = 105;
+			}
+			if (dirCursor > 255) {
+				dirCursor = 255;
+			}
 		}
 	}
-	if (huggingWall && image_xscale == -1) {
-		if (dirCursor < 105) {
-			dirCursor = 105;
-		}
-		if (dirCursor > 255) {
-			dirCursor = 255;
-		}
-	}
-}
-else
-{
-	if (gamepad_is_connected(4))
+	else
 	{
-		if ((gamepad_axis_value(4, gp_axisrh) > -controllerDeadzone && gamepad_axis_value(4, gp_axisrh) < controllerDeadzone && gamepad_axis_value(4, gp_axisrv) > -controllerDeadzone && gamepad_axis_value(4, gp_axisrv) < controllerDeadzone))
+		if (gamepad_is_connected(4))
 		{
-			dirCursor = controllerDirLastInput;
+			if ((gamepad_axis_value(4, gp_axisrh) > -controllerDeadzone && gamepad_axis_value(4, gp_axisrh) < controllerDeadzone && gamepad_axis_value(4, gp_axisrv) > -controllerDeadzone && gamepad_axis_value(4, gp_axisrv) < controllerDeadzone))
+			{
+				dirCursor = controllerDirLastInput;
+			}
+			else
+			{
+				dirCursor = point_direction(0, 0, gamepad_axis_value(4, gp_axisrh), gamepad_axis_value(4, gp_axisrv));
+				controllerDirLastInput = dirCursor;
+			}
 		}
-		else
+		if (gamepad_is_connected(0))
 		{
-			dirCursor = point_direction(0, 0, gamepad_axis_value(4, gp_axisrh), gamepad_axis_value(4, gp_axisrv));
-			controllerDirLastInput = dirCursor;
+			if (gamepad_axis_value(0, gp_axisrh) > -controllerDeadzone && gamepad_axis_value(0, gp_axisrh) < controllerDeadzone && gamepad_axis_value(0, gp_axisrv) > -controllerDeadzone && gamepad_axis_value(0, gp_axisrv) < controllerDeadzone)
+			{
+				dirCursor = controllerDirLastInput;
+			}
+			else
+			{
+				dirCursor = point_direction(0, 0, gamepad_axis_value(0, gp_axisrh), gamepad_axis_value(0, gp_axisrv));
+				controllerDirLastInput = dirCursor;
+			}
 		}
-	}
-	if (gamepad_is_connected(0))
-	{
-		if (gamepad_axis_value(0, gp_axisrh) > -controllerDeadzone && gamepad_axis_value(0, gp_axisrh) < controllerDeadzone && gamepad_axis_value(0, gp_axisrv) > -controllerDeadzone && gamepad_axis_value(0, gp_axisrv) < controllerDeadzone)
-		{
-			dirCursor = controllerDirLastInput;
+		if (huggingWall && image_xscale == 1) {
+			if (dirCursor > 0 && dirCursor < 180) {
+				updowndir = 0;
+			}
+			if (dirCursor > 180 && dirCursor < 360) {
+				updowndir = 1;
+			}
+		
+			if (dirCursor > 75 && updowndir == 0) {
+				dirCursor = 75;
+			}
+			if (dirCursor < 285 && updowndir == 1) {
+				dirCursor = 285;
+			}
 		}
-		else
-		{
-			dirCursor = point_direction(0, 0, gamepad_axis_value(0, gp_axisrh), gamepad_axis_value(0, gp_axisrv));
-			controllerDirLastInput = dirCursor;
+		if (huggingWall && image_xscale == -1) {
+			if (dirCursor < 105) {
+				dirCursor = 105;
+			}
+			if (dirCursor > 255) {
+				dirCursor = 255;
+			}
 		}
 	}
 }

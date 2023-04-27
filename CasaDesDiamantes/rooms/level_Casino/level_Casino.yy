@@ -188,7 +188,6 @@
     {"name":"inst_125E0AAC","path":"rooms/level_Casino/level_Casino.yy",},
     {"name":"inst_63B18725","path":"rooms/level_Casino/level_Casino.yy",},
     {"name":"inst_2129E885","path":"rooms/level_Casino/level_Casino.yy",},
-    {"name":"inst_64EB91EF","path":"rooms/level_Casino/level_Casino.yy",},
     {"name":"inst_55B23BE1","path":"rooms/level_Casino/level_Casino.yy",},
     {"name":"inst_45D501DB","path":"rooms/level_Casino/level_Casino.yy",},
     {"name":"inst_3A3D8959","path":"rooms/level_Casino/level_Casino.yy",},
@@ -263,7 +262,6 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_280CEEFF","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"vip_obj","path":"objects/vip_obj/vip_obj.yy",},"properties":[],"rotation":0.0,"scaleX":-1.0,"scaleY":1.0,"x":705.0,"y":2292.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_63B18725","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"Spawn3_obj","path":"objects/Spawn3_obj/Spawn3_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":416.0,"y":2257.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_2129E885","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"VIP_C_teleporter","path":"objects/VIP_C_teleporter/VIP_C_teleporter.yy",},"properties":[],"rotation":0.0,"scaleX":4.0,"scaleY":6.1875,"x":323.0,"y":2286.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_64EB91EF","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"C_SF0_teleporter","path":"objects/C_SF0_teleporter/C_SF0_teleporter.yy",},"properties":[],"rotation":0.0,"scaleX":3.0,"scaleY":12.999999,"x":369.0,"y":1278.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_64E05272","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"Spawn3_obj","path":"objects/Spawn3_obj/Spawn3_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1664.0,"y":1312.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"MidgroundObjects","depth":800,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[

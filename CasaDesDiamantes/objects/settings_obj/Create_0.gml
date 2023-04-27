@@ -4,6 +4,7 @@ image_speed = 0.02;
 zoom = 2;
 xWindowSize = xScreenSize * zoom;
 yWindowSize = yScreenSize * zoom;
+inputMethod = 0;
 
 drawStartMenu = false;
 startMenuElement = 1;

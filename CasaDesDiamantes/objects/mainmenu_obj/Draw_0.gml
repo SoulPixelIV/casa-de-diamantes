@@ -23,8 +23,9 @@ draw_set_halign(fa_left);
 draw_sprite_ext(mainmenuTitle_spr, 0, global.xScreenSize / 2, 86, 1, 1, 0, -1, titleAlpha);
 
 //Draw cursor
+cursorImage += global.dt / 16;
 if (!drawStartMenu) {
-	draw_sprite(chipRed_spr, -1, 20, optionsY[cursorPos] + 4);
+	draw_sprite(chipRed_spr, cursorImage, 20, optionsY[cursorPos] + 4);
 }
 
 //Start Window
@@ -53,9 +54,9 @@ if (drawStartMenu) {
 	draw_set_halign(fa_left);
 	
 	if (startMenuElement == 0) {
-		draw_sprite(chipRed_spr, -1, global.xScreenSize / 2 - 72 - 42, global.yScreenSize / 2.5 + 16);
+		draw_sprite(chipRed_spr, cursorImage, global.xScreenSize / 2 - 72 - 42, global.yScreenSize / 2.5 + 16);
 	} else {
-		draw_sprite(chipRed_spr, -1, global.xScreenSize / 2 + 72 - 17, global.yScreenSize / 2.5 + 16);
+		draw_sprite(chipRed_spr, cursorImage, global.xScreenSize / 2 + 72 - 17, global.yScreenSize / 2.5 + 16);
 	}
 	
 	if (keyboard_check_pressed(ord("A")) || keyboard_check_pressed(vk_left) || gamepad_button_check_pressed(0, gp_padl) || gamepad_button_check_pressed(4, gp_padl)) {
@@ -88,6 +89,8 @@ if (drawStartMenu) {
 }
 
 //Cursor
-draw_sprite(cursor_spr, 0, 
-	(window_mouse_get_x() / ((window_get_width()+1) / global.xScreenSize)) + (0), 
-	window_mouse_get_y() / ((window_get_height()+1) / global.yScreenSize) + (0));
+if (inputMethod == 0) {
+	draw_sprite(cursor_spr, 0, 
+		(window_mouse_get_x() / ((window_get_width()+1) / global.xScreenSize)) + (0), 
+		window_mouse_get_y() / ((window_get_height()+1) / global.yScreenSize) + (0));
+}
