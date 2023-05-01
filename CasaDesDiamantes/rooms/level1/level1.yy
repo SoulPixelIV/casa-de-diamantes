@@ -88,7 +88,6 @@
     {"name":"inst_AB5C2B6","path":"rooms/level1/level1.yy",},
     {"name":"inst_100BAA12","path":"rooms/level1/level1.yy",},
     {"name":"inst_2CA9CF55","path":"rooms/level1/level1.yy",},
-    {"name":"inst_31A285FC","path":"rooms/level1/level1.yy",},
     {"name":"inst_5EC0C147","path":"rooms/level1/level1.yy",},
     {"name":"inst_2488083D","path":"rooms/level1/level1.yy",},
     {"name":"inst_1E6E7790","path":"rooms/level1/level1.yy",},
@@ -259,7 +258,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_323BFC4D","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"fallTriggerZone_obj","path":"objects/fallTriggerZone_obj/fallTriggerZone_obj.yy",},"properties":[],"rotation":0.0,"scaleX":63.0,"scaleY":7.0,"x":688.0,"y":1536.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_4A822FF6","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"fallTriggerSpawn_obj","path":"objects/fallTriggerSpawn_obj/fallTriggerSpawn_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1184.0,"y":1184.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_74963F26","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"Level1_Level2_teleporter","path":"objects/Level1_Level2_teleporter/Level1_Level2_teleporter.yy",},"properties":[],"rotation":0.0,"scaleX":31.0,"scaleY":13.0,"x":6384.0,"y":1440.0,},
-      ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
+      ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":false,},
     {"resourceType":"GMREffectLayer","resourceVersion":"1.0","name":"RedFilter","depth":400,"effectEnabled":true,"effectType":"_filter_colourise","gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[
         {"name":"g_Intensity","type":0,"value":"0.3",},
         {"name":"g_TintCol","type":1,"value":"#FF0000FF",},
@@ -398,11 +397,6 @@
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"battleArenaSpawn_obj","path":"objects/battleArenaSpawn_obj/battleArenaSpawn_obj.yy",},"propertyId":{"name":"dir","path":"objects/battleArenaSpawn_obj/battleArenaSpawn_obj.yy",},"value":"-1",},
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"battleArenaSpawn_obj","path":"objects/battleArenaSpawn_obj/battleArenaSpawn_obj.yy",},"propertyId":{"name":"enemy","path":"objects/battleArenaSpawn_obj/battleArenaSpawn_obj.yy",},"value":"zombieSoldierGirl_obj",},
           ],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":5961.0,"y":983.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_31A285FC","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"battleArenaSpawn_obj","path":"objects/battleArenaSpawn_obj/battleArenaSpawn_obj.yy",},"properties":[
-            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"battleArenaSpawn_obj","path":"objects/battleArenaSpawn_obj/battleArenaSpawn_obj.yy",},"propertyId":{"name":"wave","path":"objects/battleArenaSpawn_obj/battleArenaSpawn_obj.yy",},"value":"1",},
-            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"battleArenaSpawn_obj","path":"objects/battleArenaSpawn_obj/battleArenaSpawn_obj.yy",},"propertyId":{"name":"dir","path":"objects/battleArenaSpawn_obj/battleArenaSpawn_obj.yy",},"value":"1",},
-            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"battleArenaSpawn_obj","path":"objects/battleArenaSpawn_obj/battleArenaSpawn_obj.yy",},"propertyId":{"name":"enemy","path":"objects/battleArenaSpawn_obj/battleArenaSpawn_obj.yy",},"value":"zombieSoldierGirl_obj",},
-          ],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":5599.0,"y":1043.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_5EC0C147","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"battleArenaSpawn_obj","path":"objects/battleArenaSpawn_obj/battleArenaSpawn_obj.yy",},"properties":[
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"battleArenaSpawn_obj","path":"objects/battleArenaSpawn_obj/battleArenaSpawn_obj.yy",},"propertyId":{"name":"wave","path":"objects/battleArenaSpawn_obj/battleArenaSpawn_obj.yy",},"value":"1",},
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"battleArenaSpawn_obj","path":"objects/battleArenaSpawn_obj/battleArenaSpawn_obj.yy",},"propertyId":{"name":"dir","path":"objects/battleArenaSpawn_obj/battleArenaSpawn_obj.yy",},"value":"1",},

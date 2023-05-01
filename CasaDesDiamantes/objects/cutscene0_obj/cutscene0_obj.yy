@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "cutscene0_spr",
-    "path": "sprites/cutscene0_spr/cutscene0_spr.yy",
+    "name": "newEyeCutscene_spr",
+    "path": "sprites/newEyeCutscene_spr/newEyeCutscene_spr.yy",
   },
   "spriteMaskId": null,
   "visible": true,
