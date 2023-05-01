@@ -17,14 +17,14 @@ if (instance_exists(player_obj) && !noHUD)
 		{
 			if (global.pistolAmmo < 5)
 			{
-				draw_sprite_ext(ammoCounter_spr, global.pistolAmmo, ((player_obj.x) - x) + 220, ((player_obj.y - 20) - y) + 120, 1, 1, 0, -1, 1 / (global.pistolAmmo + 1) * 1.5);
+				draw_sprite_ext(ammoCounter_spr, global.pistolAmmo, ((player_obj.x) - x) + 220, ((player_obj.y - 20) - y) + 120, 1, 1, 0, -1, 1 / (global.pistolAmmo + 1) * 3);
 			}
 		}
 		if (global.currentWeapon == pickedWeapon.shotgun)
 		{
 			if (global.shotgunAmmo < 5)
 			{
-				draw_sprite_ext(ammoCounter_spr, global.shotgunAmmo, ((player_obj.x) - x) + 220, ((player_obj.y - 20) - y) + 120, 1, 1, 0, -1, 1 / (global.shotgunAmmo + 1) * 1.5);
+				draw_sprite_ext(ammoCounter_spr, global.shotgunAmmo, ((player_obj.x) - x) + 220, ((player_obj.y - 20) - y) + 120, 1, 1, 0, -1, 1 / (global.shotgunAmmo + 1) * 3);
 			}
 		}
 	}
@@ -730,6 +730,47 @@ if (!noHUD && instance_exists(player_obj))
 		draw_set_halign(fa_center);
 		draw_text(global.xScreenSize / 2, global.yScreenSize - global.yScreenSize / 4 - 32, "You need the golden key to unlock this door!");
 		draw_set_halign(fa_left);
+	}
+	
+	//Low Ammo Message
+	if (!redDoorMessage && !blueDoorMessage && !yellowDoorMessage && !warpzoneMessage) {
+		if (global.unlockedWeapon[1] && global.unlockedWeapon[2]) {
+			if ((global.pistolAmmo + global.shotgunAmmo) < ((global.pistolAmmoMax + global.shotgunAmmoMax) / 5)) {
+				if (global.currentWeapon != gameManager_obj.pickedWeapon.pistol) {
+					draw_set_color(make_color_rgb(255,0,0));
+					draw_set_halign(fa_center);
+					draw_text(global.xScreenSize / 2, global.yScreenSize - global.yScreenSize / 4 + 16, "Low Ammo!");
+					draw_set_alpha(0.1);
+					draw_ellipse_color(-64, -150, global.xScreenSize + 64, global.yScreenSize + 360, c_red, c_black, false);
+					draw_set_alpha(1);
+					draw_set_halign(fa_left);
+				}
+			}
+		} else if (global.unlockedWeapon[1] && !global.unlockedWeapon[2]) {
+			if (global.pistolAmmo < global.pistolAmmoMax / 5) {
+				if (global.currentWeapon != gameManager_obj.pickedWeapon.pistol) {
+					draw_set_color(make_color_rgb(255,0,0));
+					draw_set_halign(fa_center);
+					draw_text(global.xScreenSize / 2, global.yScreenSize - global.yScreenSize / 4 + 16, "Low Ammo!");
+					draw_set_alpha(0.1);
+					draw_ellipse_color(-64, -150, global.xScreenSize + 64, global.yScreenSize + 360, c_red, c_black, false);
+					draw_set_alpha(1);
+					draw_set_halign(fa_left);
+				}
+			}
+		} else if (global.unlockedWeapon[2] && !global.unlockedWeapon[1]) {
+			if (global.shotgunAmmo < global.shotgunAmmoMax / 5) {
+				if (global.currentWeapon != gameManager_obj.pickedWeapon.pistol) {
+					draw_set_color(make_color_rgb(255,0,0));
+					draw_set_halign(fa_center);
+					draw_text(global.xScreenSize / 2, global.yScreenSize - global.yScreenSize / 4 + 16, "Low Ammo!");
+					draw_set_alpha(0.1);
+					draw_ellipse_color(-64, -150, global.xScreenSize + 64, global.yScreenSize + 360, c_red, c_black, false);
+					draw_set_alpha(1);
+					draw_set_halign(fa_left);
+				}
+			}
+		}
 	}
 	
 	//Combo for Horde Mode

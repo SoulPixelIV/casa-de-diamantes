@@ -607,6 +607,7 @@
     {"name":"score4X_spr","order":71,"path":"sprites/score4X_spr/score4X_spr.yy",},
     {"name":"minecartBackground_spr","order":55,"path":"sprites/minecartBackground_spr/minecartBackground_spr.yy",},
     {"name":"minecartForeground_spr","order":56,"path":"sprites/minecartForeground_spr/minecartForeground_spr.yy",},
+    {"name":"newEyeCutscene_spr","order":189,"path":"sprites/newEyeCutscene_spr/newEyeCutscene_spr.yy",},
     {"name":"marcusHatWalking_spr","order":4,"path":"sprites/marcusHatWalking_spr/marcusHatWalking_spr.yy",},
     {"name":"warpzone1","order":5,"path":"rooms/warpzone1/warpzone1.yy",},
     {"name":"grenate_spr","order":57,"path":"sprites/grenate_spr/grenate_spr.yy",},

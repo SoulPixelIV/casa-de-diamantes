@@ -817,6 +817,7 @@
     {"id":{"name":"score4X_spr","path":"sprites/score4X_spr/score4X_spr.yy",},},
     {"id":{"name":"minecartBackground_spr","path":"sprites/minecartBackground_spr/minecartBackground_spr.yy",},},
     {"id":{"name":"minecartForeground_spr","path":"sprites/minecartForeground_spr/minecartForeground_spr.yy",},},
+    {"id":{"name":"newEyeCutscene_spr","path":"sprites/newEyeCutscene_spr/newEyeCutscene_spr.yy",},},
     {"id":{"name":"marcusHatWalking_spr","path":"sprites/marcusHatWalking_spr/marcusHatWalking_spr.yy",},},
     {"id":{"name":"warpzone1","path":"rooms/warpzone1/warpzone1.yy",},},
     {"id":{"name":"grenate_spr","path":"sprites/grenate_spr/grenate_spr.yy",},},
@@ -1773,9 +1774,9 @@
   ],
   "RoomOrderNodes": [
     {"roomId":{"name":"loadVars","path":"rooms/loadVars/loadVars.yy",},},
+    {"roomId":{"name":"mainmenu","path":"rooms/mainmenu/mainmenu.yy",},},
     {"roomId":{"name":"credits","path":"rooms/credits/credits.yy",},},
     {"roomId":{"name":"level0","path":"rooms/level0/level0.yy",},},
-    {"roomId":{"name":"mainmenu","path":"rooms/mainmenu/mainmenu.yy",},},
     {"roomId":{"name":"level8","path":"rooms/level8/level8.yy",},},
     {"roomId":{"name":"demoend","path":"rooms/demoend/demoend.yy",},},
     {"roomId":{"name":"cutscene0","path":"rooms/cutscene0/cutscene0.yy",},},
