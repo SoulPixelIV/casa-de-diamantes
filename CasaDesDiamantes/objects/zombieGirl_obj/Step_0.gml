@@ -25,6 +25,18 @@ if (horspeed != 0 && !attackInProg && !attackInProg2) {
 	sprite_index = zombieGirlWalking_spr;
 }
 
+//Play Idle Sounds
+if (!playedSound) {
+	audio_play_sound_on(emitter, choose(basicZombieIdle1_snd, basicZombieIdle2_snd, basicZombieIdle3_snd, basicZombieIdle4_snd, basicZombieIdle5_snd), false, 1);
+	playedSound = true;
+} else {
+	idleSoundDelay -= global.dt;
+	if (idleSoundDelay < 0) {
+		playedSound = false;
+		idleSoundDelay = idleSoundDelaySave + random_range(-(idleSoundDelaySave / 2), idleSoundDelaySave / 2);
+	}
+}
+
 //Sight Check
 if (instance_exists(player_obj)) {
 	if (!collision_line(x, y, player_obj.x, player_obj.y, collider_obj, false, true) && !collision_line(x, y, player_obj.x, player_obj.y, enemyVisionBlockZone_obj, false, true))
@@ -359,7 +371,7 @@ if (attackCooldown < 0)
 			attackInProg = true;
 		}
 	}
-
+	audio_play_sound_on(emitter, basicZombieAttack1_snd, false, 1);
 	attackCooldown = attackCooldownSave;
 }
 
