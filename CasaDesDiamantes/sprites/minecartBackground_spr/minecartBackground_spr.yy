@@ -13,7 +13,7 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"e544dc05-dbb2-425e-8bfa-84196b2c230b",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"6b709518-9dc9-42c4-8617-e0ea64b4e930",},
   ],
   "gridX": 0,
   "gridY": 0,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"e544dc05-dbb2-425e-8bfa-84196b2c230b","path":"sprites/minecartBackground_spr/minecartBackground_spr.yy",},},},"Disabled":false,"id":"8847c567-be7a-47a2-b0e5-4348388b50e8","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"6b709518-9dc9-42c4-8617-e0ea64b4e930","path":"sprites/minecartBackground_spr/minecartBackground_spr.yy",},},},"Disabled":false,"id":"3b7418dc-18e5-4c28-9ad1-cd5ba3a51842","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
