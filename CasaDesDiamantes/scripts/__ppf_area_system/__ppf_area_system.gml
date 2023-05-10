@@ -13,8 +13,8 @@
 /// @param {Struct} pp_index The returned variable by ppfx_create()
 /// @returns {Undefined}
 function area_draw_rect(x, y, w, h, x_offset, y_offset, pp_index) {
-	__ppf_exception(!ppfx_exists(pp_index), "Post-processing system does not exist.");
-	var _surf = pp_index.__stack_surface[pp_index.__surf_index];
+	__ppf_exception(!ppfx_system_exists(pp_index), "Post-processing system does not exist.");
+	var _surf = pp_index.__stack_surface[pp_index.__stack_index];
 	if surface_exists(_surf) draw_surface_part(_surf, x-x_offset, y-y_offset, w, h, x, y);
 }
 
@@ -26,8 +26,8 @@ function area_draw_rect(x, y, w, h, x_offset, y_offset, pp_index) {
 /// @param {Struct} pp_index The returned variable by ppfx_create()
 /// @returns {Undefined}
 function area_draw_sprite_mask(sprite_mask, subimg, x, y, pp_index) {
-	__ppf_exception(!ppfx_exists(pp_index), "Post-processing system does not exist.");
-	var _surf = pp_index.__stack_surface[pp_index.__surf_index];
+	__ppf_exception(!ppfx_system_exists(pp_index), "Post-processing system does not exist.");
+	var _surf = pp_index.__stack_surface[pp_index.__stack_index];
 	if surface_exists(_surf) {
 		shader_set(__PPF_SH_SPRMSK);
 		shader_set_uniform_f(__PPF_SU.mask_render_posres, pp_index.__render_x, pp_index.__render_y, pp_index.__render_vw, pp_index.__render_vh);
@@ -50,8 +50,8 @@ function area_draw_sprite_mask(sprite_mask, subimg, x, y, pp_index) {
 /// @param {Struct} pp_index The returned variable by ppfx_create()
 /// @returns {Undefined}
 function area_draw_sprite_ext_mask(sprite_mask, subimg, x, y, xscale, yscale, rot, color, alpha, pp_index) {
-	__ppf_exception(!ppfx_exists(pp_index), "Post-processing system does not exist.");
-	var _surf = pp_index.__stack_surface[pp_index.__surf_index];
+	__ppf_exception(!ppfx_system_exists(pp_index), "Post-processing system does not exist.");
+	var _surf = pp_index.__stack_surface[pp_index.__stack_index];
 	if surface_exists(_surf) {
 		shader_set(__PPF_SH_SPRMSK);
 		shader_set_uniform_f(__PPF_SU.mask_render_posres, pp_index.__render_x, pp_index.__render_y, pp_index.__render_vw, pp_index.__render_vh);
@@ -71,8 +71,8 @@ function area_draw_sprite_ext_mask(sprite_mask, subimg, x, y, xscale, yscale, ro
 /// @param {Struct} pp_index The returned variable by ppfx_create()
 /// @returns {Undefined}
 function area_draw_sprite_stretched_mask(sprite_mask, subimg, x, y, w, h, pp_index) {
-	__ppf_exception(!ppfx_exists(pp_index), "Post-processing system does not exist.");
-	var _surf = pp_index.__stack_surface[pp_index.__surf_index];
+	__ppf_exception(!ppfx_system_exists(pp_index), "Post-processing system does not exist.");
+	var _surf = pp_index.__stack_surface[pp_index.__stack_index];
 	if surface_exists(_surf) {
 		shader_set(__PPF_SH_SPRMSK);
 		shader_set_uniform_f(__PPF_SU.mask_render_posres, pp_index.__render_x, pp_index.__render_y, pp_index.__render_vw, pp_index.__render_vh);
@@ -94,8 +94,8 @@ function area_draw_sprite_stretched_mask(sprite_mask, subimg, x, y, w, h, pp_ind
 /// @param {Struct} pp_index The returned variable by ppfx_create()
 /// @returns {Undefined}
 function area_draw_sprite_stretched_ext_mask(sprite_mask, subimg, x, y, w, h, color, alpha, pp_index) {
-	__ppf_exception(!ppfx_exists(pp_index), "Post-processing system does not exist.");
-	var _surf = pp_index.__stack_surface[pp_index.__surf_index];
+	__ppf_exception(!ppfx_system_exists(pp_index), "Post-processing system does not exist.");
+	var _surf = pp_index.__stack_surface[pp_index.__stack_index];
 	if surface_exists(_surf) {
 		shader_set(__PPF_SH_SPRMSK);
 		shader_set_uniform_f(__PPF_SU.mask_render_posres, pp_index.__render_x, pp_index.__render_y, pp_index.__render_vw, pp_index.__render_vh);

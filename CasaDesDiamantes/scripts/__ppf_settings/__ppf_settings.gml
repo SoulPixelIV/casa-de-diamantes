@@ -1,24 +1,40 @@
 
-/*----------------------------------------------------------------------------------------------
+/*--------------------------------------------------------------------------------------------------
 	Here you can modify some library behaviors.
 	You don't need to call this script, it runs automatically.
 	
-	If you want to change the quality of Motion Blur, Radial Blur and others, modify the
-	"ITERATIONS" variable of each one in the pixel shader.
-----------------------------------------------------------------------------------------------*/
+	If you want to change the quality of Blurs (radial, motion...), Sunshafts and others, modify the
+	"ITERATIONS" variable of each one in the pixel shader. Most effects don't need this.
+	
+	Some effects let you set the resolution. They have a parameter called "downscale", like
+	Bloom and Depth of Field.
+--------------------------------------------------------------------------------------------------*/
 
-// enable debug messages from Post-Processing FX
-#macro PPFX_CFG_TRACE_ENABLE true
+// Debug messages from Post-Processing FX
+// 0 > Disabled.
+// 1 > Error debug messages.
+// 2 > Error debug messages + Warnings.
+// 3 > Error debug messages + Warnings + Create/Destroy systems + Load Profiles.
+#macro PPFX_CFG_TRACE_LEVEL 2
 
-// enable error checking of Post-Processing FX functions (disabling this will increase CPU-side performance)
+// Enable error checking of Post-Processing FX functions (disabling this will increase CPU-side performance)
 #macro PPFX_CFG_ERROR_CHECKING_ENABLE true
 
-// enable hardware compatibility checking
+// Enable hardware compatibility checking
 #macro PPFX_CFG_HARDWARE_CHECKING true
 
-// time (in seconds) to reset the global PPFX timer (-1 for unlimited)
+// Time (in seconds) to reset the global PPFX timer (-1 for unlimited)
 // useful for Mobile devices
-#macro PPFX_CFG_TIMER 3600 // 60 minutes (1 hour) = 3600 seconds
+#macro PPFX_CFG_TIMER -1 // 3600 seconds = 60 minutes (1 hour)
 
-// global effects speed ( 1/60 = 0.016 ) >> 60 is the game speed, in frames per second
+// Global effects speed ( 1/60 = 0.016 ) >> 60 is the game speed, in frames per second
 #macro PPFX_CFG_SPEED 0.016
+
+// HDR (High Dynamic Range) for Post-Processing FX rendering.
+// This allows for better color depth, contrast and brightness (especially useful for the Bloom and Sunshafts/Godrays effect)
+// Note: This may affect performance.
+// Note: You will probably need some system that facilitates the use of HDR (mostly for Bloom and Sunshafts). Check out "https://foxyofjungle.itch.io" as we developing one.
+#macro PPFX_CFG_HDR_ENABLE true
+
+// HDR textures format
+#macro PPFX_CFG_HDR_TEX_FORMAT PPF_HDR_TEX_FORMAT.RGBA16

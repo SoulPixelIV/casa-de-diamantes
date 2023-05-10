@@ -2,7 +2,7 @@
 /*------------------------------------------------------------------
 You cannot redistribute this pixel shader source code anywhere.
 Only compiled binary executables. Don't remove this notice, please.
-Copyright (C) 2022 Mozart Junior (FoxyOfJungle). Kazan Games Ltd.
+Copyright (C) 2023 Mozart Junior (FoxyOfJungle). Kazan Games Ltd.
 Website: https://foxyofjungle.itch.io/ | Discord: FoxyOfJungle#0167
 -------------------------------------------------------------------*/
 
@@ -37,30 +37,18 @@ Website: https://foxyofjungle.itch.io/ | Discord: FoxyOfJungle#0167
 varying vec2 v_vTexcoord;
 varying vec2 v_TexelSize;
 
-uniform float bloom_threshold;
-uniform float bloom_intensity;
+uniform float u_bloom_threshold;
+uniform float u_bloom_intensity;
 
 float brightness(vec3 col) {
 	return max(max(col.r, col.g), col.b);
 }
 
-/*vec3 median(vec3 a, vec3 b, vec3 c) {
-	return a + b + c - min(min(a, b), c) - max(max(a, b), c);
-}*/
-
-// standard box filtering
-/*vec4 sample_box4(sampler2D tex, vec2 uv, float delta) {
-	vec4 d = v_TexelSize.xyxy * vec2(-delta, delta).xxyy;
-	vec4 col;
-	col =  (texture2D(tex, uv + d.xy));
-	col += (texture2D(tex, uv + d.zy));
-	col += (texture2D(tex, uv + d.xw));
-	col += (texture2D(tex, uv + d.zw));
-	return col * 0.25; // (1.0 / 4.0)
-}*/
-
 // standard box filtering
 vec4 sample_box4_antiflicker(sampler2D tex, vec2 uv, float delta) {
+	//vec2 texel = v_TexelSize;
+	//float angle = radians(45.0);
+	//texel *= mat2(cos(angle), -sin(angle), sin(angle), cos(angle));
 	vec4 d = v_TexelSize.xyxy * vec2(-delta, delta).xxyy;
 	
 	vec4 s1 = texture2D(tex, uv + d.xy);
@@ -79,10 +67,11 @@ vec4 sample_box4_antiflicker(sampler2D tex, vec2 uv, float delta) {
 }
 
 vec3 threshold(vec3 color) {
-	return max((color - bloom_threshold) * bloom_intensity, 0.0);
+	return max((color - u_bloom_threshold) * u_bloom_intensity, 0.0);
 }
 		
 void main() {
-	vec4 col_tex = sample_box4_antiflicker(gm_BaseTexture, v_vTexcoord, 1.0);
+	vec4 col_tex;
+	col_tex = sample_box4_antiflicker(gm_BaseTexture, v_vTexcoord, 0.5);
 	gl_FragColor = vec4(threshold(col_tex.rgb), 1.0);
 }

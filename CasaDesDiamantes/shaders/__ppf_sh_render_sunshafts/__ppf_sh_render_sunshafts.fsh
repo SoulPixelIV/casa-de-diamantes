@@ -2,41 +2,43 @@
 /*------------------------------------------------------------------
 You cannot redistribute this pixel shader source code anywhere.
 Only compiled binary executables. Don't remove this notice, please.
-Copyright (C) 2022 Mozart Junior (FoxyOfJungle). Kazan Games Ltd.
+Copyright (C) 2023 Mozart Junior (FoxyOfJungle). Kazan Games Ltd.
 Website: https://foxyofjungle.itch.io/ | Discord: FoxyOfJungle#0167
 -------------------------------------------------------------------*/
+
+// quality (low number = more performance)
+#ifdef _YY_HLSL11_
+#define ITERATIONS 24.0 // windows
+#else
+#define ITERATIONS 16.0 // others (android, operagx...)
+#endif
+
+precision highp float;
 
 varying vec2 v_vPosition;
 varying vec2 v_vTexcoord;
 
-uniform vec2 base_res;
+uniform vec2 u_resolution;
 uniform vec2 u_time_n_intensity;
-uniform vec2 sunshaft_position;
-uniform float sunshaft_center_smoothness;
-uniform float sunshaft_threshold;
-uniform float sunshaft_intensity;
-uniform float sunshaft_dimmer;
-uniform float sunshaft_scattering;
-uniform float sunshaft_noise_enable;
-uniform float sunshaft_rays_tiling;
-uniform float sunshaft_rays_speed;
-uniform float sunshaft_dual_textures;
-uniform sampler2D sunshaft_world_tex;
-uniform sampler2D sunshaft_sky_tex;
-uniform sampler2D sunshaft_noise_tex;
+uniform vec2 u_sunshaft_position;
+uniform float u_sunshaft_center_smoothness;
+uniform float u_sunshaft_threshold;
+uniform float u_sunshaft_intensity;
+uniform float u_sunshaft_dimmer;
+uniform float u_sunshaft_scattering;
+uniform float u_sunshaft_noise_enable;
+uniform float u_sunshaft_rays_intensity;
+uniform float u_sunshaft_rays_tiling;
+uniform float u_sunshaft_rays_speed;
+uniform float u_sunshaft_debug; //
+uniform sampler2D u_sunshaft_tex;
+uniform sampler2D u_sunshaft_noise_tex;
 
-uniform sampler2D base_tex;
-
-// quality (low number = more performance)
-#ifdef _YY_HLSL11_
-#define ITERATIONS 16.0 // windows
-#else
-#define ITERATIONS 16.0 // others (android, operagx...)
-#endif
 const float ITERATIONS_RECIPROCAL = 1.0/ITERATIONS;
+const float debug_alpha = 1.0;
 
 const float Phi = 1.61803398875;
-const float Tau = 6.2831;
+const float Tau = 6.28318;
 
 // (C) 2015, Dominic Cerisano
 float gold_noise(in vec2 fpos, in float seed) {
@@ -45,11 +47,21 @@ float gold_noise(in vec2 fpos, in float seed) {
 }
 
 vec3 threshold(vec3 color) {
-	return max((color - sunshaft_threshold), 0.0);
+	return max((color - u_sunshaft_threshold), 0.0);
 }
 
 float saturate(float x) {
 	return clamp(x, 0.0, 1.0);
+}
+
+const vec3 lum_weights = vec3(0.2126, 0.7152, 0.0722);
+float get_luminance(vec3 color) {
+	return dot(color, lum_weights);
+}
+
+vec3 tonemap_jodie_reinhard(vec3 c, float lum) {
+	vec3 tc = c / (c + 1.0);
+	return mix(c / (lum + 1.0), tc, tc);
 }
 
 float mask_radial(vec2 uv, vec2 center, float power, float scale, float smoothness) {
@@ -59,7 +71,7 @@ float mask_radial(vec2 uv, vec2 center, float power, float scale, float smoothne
 	return mask;
 }
 
-vec2 get_aspect_ratio(vec2 res, vec2 size) {
+vec2 get_aspect_ratio(vec2 size, vec2 res) {
 	float aspect_ratio = res.x / res.y;
 	return (res.x > res.y)
 	? vec2(size.x * aspect_ratio, size.y)
@@ -70,69 +82,38 @@ vec3 blend(vec3 source, vec3 dest) {
     return source + dest - source * dest;
 }
 
-vec3 blend_a(vec3 source, vec4 dest) {
-	return dest.rgb * dest.a + source * (1.0-dest.a);
-}
-
 void main() {
 	vec2 uv = v_vTexcoord;
-	float time = u_time_n_intensity.x * sunshaft_rays_speed;
+	float time = u_time_n_intensity.x * u_sunshaft_rays_speed;
 	
-	vec2 center_n = uv - sunshaft_position;
-	vec2 uv_n = vec2((length(center_n) * 0.01) - time, atan(center_n.y, center_n.x) * (1.0/Tau) * sunshaft_rays_tiling);
+	vec2 polar_center = uv - u_sunshaft_position;
+	vec2 uv_n = vec2((length(polar_center) * 0.01) - time, atan(polar_center.y, polar_center.x) * (1.0/Tau) * u_sunshaft_rays_tiling);
 	vec3 noise = vec3(1.0);
-	if (sunshaft_noise_enable > 0.5) noise = texture2D(sunshaft_noise_tex, uv_n).rgb + 0.8 * 0.5;
+	if (u_sunshaft_noise_enable > 0.5) noise = mix(noise, texture2D(u_sunshaft_noise_tex, uv_n).rgb * 0.9 + 0.5, u_sunshaft_rays_intensity);
 	
-	vec2 mask_size = get_aspect_ratio(base_res, vec2(1.0));
-	noise *= mask_radial(uv*mask_size, sunshaft_position*mask_size, sunshaft_center_smoothness, sunshaft_center_smoothness, 1.0);
+	vec2 mask_size = get_aspect_ratio(vec2(1.0), u_resolution);
+	noise *= mask_radial(uv*mask_size, u_sunshaft_position*mask_size, u_sunshaft_center_smoothness, u_sunshaft_center_smoothness, 1.0);
 	
 	// godrays
-    vec4 col_final;
-	
 	highp float offset = gold_noise(gl_FragCoord.xy, 1.0);
-	vec2 center = sunshaft_position - uv;
+	vec2 center = u_sunshaft_position - uv;
+	float lum_decay = u_sunshaft_dimmer;
+	float scattering = clamp(u_sunshaft_scattering, 0.0, 1.0);
 	
-	float lum_decay = sunshaft_dimmer;
-	vec2 move;
-	float total;
 	vec3 shaft;
-	
-	if (sunshaft_dual_textures < 0.5) {
-		// full
-		vec4 tex_base = texture2D(base_tex, uv); // using low-res texture instead of gm_BaseTexture
-		float scattering = clamp(sunshaft_scattering, 0.0, 1.0);
-		for(float i = 0.0; i < ITERATIONS; i++) {
-			float percent = (i + offset) / ITERATIONS;
-			move = center * percent * scattering;
-			vec3 tex = texture2D(base_tex, uv + move).rgb * noise;
-			shaft += threshold(tex) * lum_decay;
-			lum_decay *= (1.0-ITERATIONS_RECIPROCAL);
-			total++;
-		}
-		vec3 godray = (shaft / total) * sunshaft_intensity;
-		vec4 col_tex = texture2D(gm_BaseTexture, uv); 
-		col_tex.rgb = blend(col_tex.rgb, godray);
-		col_final = col_tex;
-	} else {
-		// dual
-		vec4 col_sky = texture2D(sunshaft_sky_tex, uv);
-		vec4 col_world = texture2D(sunshaft_world_tex, uv);
-		float scattering = clamp(sunshaft_scattering, 0.0, 1.0);
-		for(float i = 0.0; i < ITERATIONS; i++) {
-			float percent = (i + offset) / ITERATIONS;
-			move = center * percent * scattering;
-			vec3 sky = texture2D(sunshaft_sky_tex, uv + move).rgb * noise;
-			float mask = texture2D(sunshaft_world_tex, uv + move).a;
-			shaft += threshold(sky) * (1.0-mask) * lum_decay;
-			lum_decay *= (1.0-ITERATIONS_RECIPROCAL);
-			total++;
-		}
-		vec3 godray = (shaft / total) * sunshaft_intensity;
-		vec4 col_tex = texture2D(gm_BaseTexture, uv);
-		col_tex.rgb = blend_a(col_tex.rgb, col_sky);
-		col_tex.rgb = blend_a(col_tex.rgb, col_world);
-		col_tex.rgb = blend(col_tex.rgb, godray);
-		col_final = col_tex;
+	for(float i = 0.0; i < ITERATIONS; i++) {
+		float reciprocal = (i + offset) / ITERATIONS;
+		vec3 tex = texture2D(u_sunshaft_tex, uv + (center * reciprocal * scattering)).rgb * noise;
+		shaft += threshold(tex) * lum_decay;
+		lum_decay *= (1.0-ITERATIONS_RECIPROCAL);
 	}
-	gl_FragColor = col_final;
+	
+	vec3 godray = (shaft / ITERATIONS) * u_sunshaft_intensity;
+	godray = tonemap_jodie_reinhard(godray, get_luminance(godray));
+	
+	// blend
+	vec4 col_tex = texture2D(gm_BaseTexture, uv);
+	col_tex.rgb = mix(blend(col_tex.rgb, godray), col_tex.rgb, step(u_sunshaft_position.x + u_sunshaft_position.y, 0.0));
+	col_tex.rgb = mix(col_tex.rgb, godray, step(0.5, u_sunshaft_debug)*debug_alpha);
+	gl_FragColor = col_tex;
 }

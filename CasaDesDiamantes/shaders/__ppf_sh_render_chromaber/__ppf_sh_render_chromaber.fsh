@@ -2,7 +2,7 @@
 /*------------------------------------------------------------------
 You cannot redistribute this pixel shader source code anywhere.
 Only compiled binary executables. Don't remove this notice, please.
-Copyright (C) 2022 Mozart Junior (FoxyOfJungle). Kazan Games Ltd.
+Copyright (C) 2023 Mozart Junior (FoxyOfJungle). Kazan Games Ltd.
 Website: https://foxyofjungle.itch.io/ | Discord: FoxyOfJungle#0167
 -------------------------------------------------------------------*/
 
@@ -10,7 +10,6 @@ varying vec2 v_vTexcoord;
 varying vec4 v_vColour;
 
 varying vec2 v_TexelSize;
-
 uniform vec2 u_time_n_intensity;
 
 // quality (low number = more performance)
@@ -22,35 +21,35 @@ uniform vec2 u_time_n_intensity;
 
 // >> uniforms
 // chromatic aberration
-uniform float chromaber_direction;
-uniform float chromaber_intensity;
-uniform float chromaber_only_outer;
-uniform float chromaber_center_radius;
-uniform float chromaber_blur_enable;
-uniform sampler2D chromaber_prisma_lut;
+uniform float u_chromaber_direction;
+uniform float u_chromaber_intensity;
+uniform float u_chromaber_only_outer;
+uniform float u_chromaber_center_radius;
+uniform float u_chromaber_blur_enable;
+uniform sampler2D u_chromaber_prisma_lut;
 
 const float ITERATIONS_RECIPROCAL = 1.0/ITERATIONS;
 
 // >> effect
 vec4 chromaberration_fx(vec2 uv) {
-	float dir = radians(chromaber_direction);
+	float dir = radians(u_chromaber_direction);
 	vec2 direction = vec2(cos(dir), -sin(dir));
 	vec2 dist;
-	if (chromaber_only_outer > 0.5) {
-		float inner = pow(length(uv - 0.5), chromaber_center_radius);
+	if (u_chromaber_only_outer > 0.5) {
+		float inner = pow(length(uv - 0.5), u_chromaber_center_radius);
 		vec2 uv2 = 2.0 * uv - 1.0;
-	    float edge = dot(uv2, uv2) * 2.0 * inner * chromaber_intensity;
+	    float edge = dot(uv2, uv2) * 2.0 * inner * u_chromaber_intensity;
 		vec2 delta = (edge - uv) / 3.0;
 		dist = vec2(v_TexelSize * direction * uv2 * delta);
 	} else {
-		dist = vec2(v_TexelSize * direction * chromaber_intensity);
+		dist = vec2(v_TexelSize * direction * u_chromaber_intensity);
 	}
 	dist *= u_time_n_intensity.y;
-	vec4 col_prisma_a = texture2D(chromaber_prisma_lut, vec2(0.5/3.0, 0.0));
-	vec4 col_prisma_b = texture2D(chromaber_prisma_lut, vec2(1.5/3.0, 0.0));
-	vec4 col_prisma_c = texture2D(chromaber_prisma_lut, vec2(2.5/3.0, 0.0));
+	vec4 col_prisma_a = texture2D(u_chromaber_prisma_lut, vec2(0.5/3.0, 0.0));
+	vec4 col_prisma_b = texture2D(u_chromaber_prisma_lut, vec2(1.5/3.0, 0.0));
+	vec4 col_prisma_c = texture2D(u_chromaber_prisma_lut, vec2(2.5/3.0, 0.0));
 	vec4 col_chrm;
-	if (chromaber_blur_enable > 0.5) {
+	if (u_chromaber_blur_enable > 0.5) {
 		float rad = 2.0 * ITERATIONS_RECIPROCAL;
 		vec2 move; vec4 col; vec4 col_sum;
 		for(float i = 0.0; i < ITERATIONS; ++i) {

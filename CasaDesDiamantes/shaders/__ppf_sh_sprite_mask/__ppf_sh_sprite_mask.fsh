@@ -10,11 +10,11 @@ varying vec2 v_vPosition;
 varying vec2 v_vTexcoord;
 varying vec4 v_vColour;
 
-uniform vec4 render_pos_res;
-uniform sampler2D render_tex;
+uniform vec4 u_render_pos_res;
+uniform sampler2D u_render_tex;
 
 void main() {
-	vec2 vPos = (v_vPosition - render_pos_res.xy);
-	vec2 uv2 = vPos / render_pos_res.zw;
-	gl_FragColor = vec4(texture2D(render_tex, uv2).rgb, texture2D(gm_BaseTexture, v_vTexcoord).a) * v_vColour;
+	vec2 vPos = (v_vPosition - u_render_pos_res.xy);
+	vec2 uv2 = vPos / u_render_pos_res.zw;
+	gl_FragColor = vec4(texture2D(u_render_tex, uv2).rgb, texture2D(gm_BaseTexture, v_vTexcoord).a) * v_vColour;
 }

@@ -2,7 +2,7 @@
 /*------------------------------------------------------------------
 You cannot redistribute this pixel shader source code anywhere.
 Only compiled binary executables. Don't remove this notice, please.
-Copyright (C) 2022 Mozart Junior (FoxyOfJungle). Kazan Games Ltd.
+Copyright (C) 2023 Mozart Junior (FoxyOfJungle). Kazan Games Ltd.
 Website: https://foxyofjungle.itch.io/ | Discord: FoxyOfJungle#0167
 -------------------------------------------------------------------*/
 
@@ -11,75 +11,110 @@ varying vec2 v_vTexcoord;
 varying vec4 v_PosRes;
 
 uniform vec2 u_time_n_intensity;
-uniform float u_enabled[15];
+uniform float u_enabled[16];
 
 // >> uniforms
-uniform float lut3d_intensity;
-uniform vec2 lut3d_size;
-uniform float lut3d_squares;
-uniform sampler2D lut3d_tex;
+uniform float u_lut_intensity;
+uniform vec2 u_lut_size;
+uniform float u_lut_squares;
+uniform sampler2D u_lut_tex;
 
-uniform vec3 shadow_color;
-uniform vec3 midtone_color;
-uniform vec3 highlight_color;
-uniform float shadow_range;
-uniform float highlight_range;
+uniform vec3 u_shadow_color;
+uniform vec3 u_midtone_color;
+uniform vec3 u_highlight_color;
+uniform float u_shadow_range;
+uniform float u_highlight_range;
 
-uniform float exposure;
+uniform float u_exposure_val;
 
-uniform float brightness;
+uniform float u_brightness_val;
 
-uniform float contrast;
+uniform float u_contrast_val;
 
-uniform int tone_mapping_mode;
+uniform int u_tone_mapping_mode;
 
-uniform vec3 lift_rgb;
-uniform vec3 gamma_rgb;
-uniform vec3 gain_rgb;
+uniform vec3 u_lift_rgb;
+uniform vec3 u_gamma_rgb;
+uniform vec3 u_gain_rgb;
 
-uniform vec3 hue_shift;
+uniform vec3 u_hueshift_hsv;
 
-uniform float saturation;
+uniform float u_saturation_val;
 
-uniform vec3 colorize_color;
-uniform float colorize_intesity;
-uniform float colorize_darkness;
+uniform vec3 u_colortint_color;
 
-uniform float posterization_col_factor;
+uniform vec3 u_colorize_hsv;
+uniform float u_colorize_intensity;
 
-uniform float invert_colors_intensity;
+uniform float u_posterization_col_factor;
 
-uniform float texture_overlay_intensity;
-uniform sampler2D texture_overlay_tex;
+uniform float u_invert_colors_intensity;
+
+uniform float u_texture_overlay_intensity;
+uniform sampler2D u_texture_overlay_tex;
 uniform bool texture_overlay_is_outside;
-uniform float texture_overlay_zoom;
+uniform float u_texture_overlay_zoom;
 
 // >> dependencies
-
-uniform float lens_distortion_amount;
+uniform float u_lens_distortion_amount;
 vec2 lens_distortion_uv(vec2 uv) {
 	vec2 _uv = uv;
 	vec2 uv2 = _uv - 0.5;
 	float at = atan(uv2.x, uv2.y);
 	float uvd = length(uv2);
-	float dist = lens_distortion_amount * u_time_n_intensity.y;
+	float dist = u_lens_distortion_amount * u_time_n_intensity.y;
 	uvd *= (pow(uvd, 2.0) * dist + 1.0);
 	_uv = vec2(0.5) + vec2(sin(at), cos(at)) * uvd;
 	return _uv;
 }
 
-uniform float border_curvature;
-uniform float border_smooth;
-uniform vec3 border_color;
+uniform float u_border_curvature;
+uniform float u_border_smooth;
+uniform vec3 u_border_color;
 vec3 border_fx(vec3 color, vec2 uv) {
 	vec3 _col = color;
-	float curvature = border_curvature;
+	float curvature = u_border_curvature;
 	if (curvature <= 0.005) curvature = 0.005;
 	vec2 corner = pow(abs(uv*2.0-1.0), vec2(1.0/curvature));
 	float edge = pow(length(corner), curvature);
-	float border = smoothstep(1.0-border_smooth, 1.0, edge);
-	return mix(_col, border_color, border);
+	float border = smoothstep(1.0-u_border_smooth, 1.0, edge);
+	return mix(_col, u_border_color, border);
 }
+
+// >> effects
+vec3 rgb2hsv(vec3 color) {
+	vec4 K = vec4(0.0, -1.0 / 3.0, 2.0 / 3.0, -1.0);
+	vec4 p = mix(vec4(color.bg, K.wz), vec4(color.gb, K.xy), step(color.b, color.g));
+	vec4 q = mix(vec4(p.xyw, color.r), vec4(color.r, p.yzx), step(p.x, color.r));
+	float d = q.x - min(q.w, q.y);
+	float e = 1.0e-10;
+	vec3 hsv = vec3(abs(q.z + (q.w - q.y) / (6.0 * d + e)), d / (q.x + e), q.x);
+	return hsv;
+}
+
+vec3 hsv2rgb(vec3 color) {
+	vec4 K = vec4(1.0, 2.0 / 3.0, 1.0 / 3.0, 3.0);
+	vec3 p = abs(fract(color.xxx + K.xyz) * 6.0 - K.www);
+	return color.z * mix(K.xxx, clamp(p - K.xxx, 0.0, 1.0), color.y);
+}
+
+vec3 rgb2hsl(vec3 color) {
+	float mn = min(color.r, min(color.g, color.b));
+	float mx = max(color.r, max(color.g, color.b));
+	vec3 cl1 = (color - mn) / (mx - mn);
+	vec3 cl2 = cl1.gbr - cl1.rgb;
+	vec3 cl3 = cl1.rgb * cl1.gbr;
+	float disc = max(cl3.x, max(cl3.y, cl3.z));
+	cl1 = disc == 0. ? cl1 : cl3 / disc;
+	cl2 = ((cl2 / 2.0) + vec3(0.5, 1.5, 2.5)) * cl1;
+	return clamp(vec3((cl2.x + cl2.y + cl2.z) / 3., (mx - mn) / (1. - abs(mn + mx - 1.)), (mn + mx) * 0.5), 0., 1.);
+}
+
+vec3 hsl2rgb(vec3 color){
+	vec3 ch = clamp(2.0 - abs(mod(color.x * 6.0 + vec3(3.0, 1.0, 5.0), 6.0) - 3.0), 0.0, 1.0);
+	return mix(mix(vec3(0.0), mix(vec3(0.5), ch, color.y), clamp(color.z * 2.0, 0.0, 1.0)), vec3(1.0), clamp(color.z * 2.0-1.0, 0.0, 1.0));
+}
+
 
 // start of ACES
 #region ACES - License
@@ -176,7 +211,7 @@ vec3 tonemap_uncharted2(vec3 color) {
 	return curr * whiteScale;
 }
 
-const vec3 lum_weights = vec3(0.299, 0.587, 0.114);
+const vec3 lum_weights = vec3(0.2126729, 0.7151522, 0.0721750);
 
 float get_luminance(vec3 color) {
 	return dot(color, lum_weights);
@@ -190,11 +225,6 @@ vec3 saturate3(vec3 x) {
     return clamp(x, 0.0, 1.0);
 }
 
-vec3 hsv2rgb(in vec3 color) {
-	vec3 rgb = clamp(abs(mod(color.x * 6.0 + vec3(0.0, 4.0, 2.0), 6.0) - 3.0) - 1.0, 0.0, 1.0);
-	return color.z * mix(vec3(1.0), rgb, color.y);
-}
-
 vec3 blend_a(vec3 source, vec4 dest) {
 	return dest.rgb * dest.a + source * (1.0-dest.a);
 }
@@ -202,68 +232,68 @@ vec3 blend_a(vec3 source, vec4 dest) {
 // >> effects
 vec3 lut3d_fx(vec3 color) {
 	vec3 _col = color;
-	float _lut_area = (lut3d_squares * lut3d_squares);
-	float _blue = _col.b * _lut_area-color.b;
+	float lut_area = (u_lut_squares * u_lut_squares);
+	float blue = _col.b * lut_area-color.b;
 	
 	vec2 quad1 = vec2(0.0);
-	quad1.y = floor(floor(_blue) / lut3d_squares);
-	quad1.x = floor(_blue) - (quad1.y * lut3d_squares);
+	quad1.y = floor(floor(blue) / u_lut_squares);
+	quad1.x = floor(blue) - (quad1.y * u_lut_squares);
 	
 	vec2 quad2 = vec2(0.0);
-	quad2.y = floor(ceil(_blue) / lut3d_squares);
-	quad2.x = ceil(_blue) - (quad2.y * lut3d_squares);
+	quad2.y = floor(ceil(blue) / u_lut_squares);
+	quad2.x = ceil(blue) - (quad2.y * u_lut_squares);
 	
-	float pd = lut3d_squares / _lut_area;
+	float pd = u_lut_squares / lut_area;
 	
 	vec2 uv1 = vec2(0.0);
-	uv1.x = (quad1.x * pd) + 0.5/lut3d_size.x + ((pd - 1.0/lut3d_size.x) * _col.r);
-	uv1.y = (quad1.y * pd) + 0.5/lut3d_size.y + ((pd - 1.0/lut3d_size.y) * _col.g);
+	uv1.x = (quad1.x * pd) + 0.5/u_lut_size.x + ((pd - 1.0/u_lut_size.x) * _col.r);
+	uv1.y = (quad1.y * pd) + 0.5/u_lut_size.y + ((pd - 1.0/u_lut_size.y) * _col.g);
 	
 	vec2 uv2 = vec2(0.0);
-	uv2.x = (quad2.x * pd) + 0.5/lut3d_size.x + ((pd - 1.0/lut3d_size.x) * _col.r);
-	uv2.y = (quad2.y * pd) + 0.5/lut3d_size.y + ((pd - 1.0/lut3d_size.y) * _col.g);
+	uv2.x = (quad2.x * pd) + 0.5/u_lut_size.x + ((pd - 1.0/u_lut_size.x) * _col.r);
+	uv2.y = (quad2.y * pd) + 0.5/u_lut_size.y + ((pd - 1.0/u_lut_size.y) * _col.g);
 	
-	vec3 col1 = texture2D(lut3d_tex, uv1).rgb;
-	vec3 col2 = texture2D(lut3d_tex, uv2).rgb;
+	vec3 col1 = texture2D(u_lut_tex, uv1).rgb;
+	vec3 col2 = texture2D(u_lut_tex, uv2).rgb;
 	
-	_col = mix(col1, col2, fract(_blue));
-	return mix(color, _col, lut3d_intensity);
+	_col = mix(col1, col2, fract(blue));
+	return mix(color, _col, u_lut_intensity);
 }
 
 vec3 shadow_midtone_highlight_fx(vec3 color) {
 	vec3 _col = color;
 	float lum = get_luminance_ACES(_col);
-	float shadow_factor = 1.0 - smoothstep(0.0, shadow_range, lum);
-	float highlight_factor = smoothstep(highlight_range, 1.0, lum);
+	float shadow_factor = 1.0 - smoothstep(0.0, u_shadow_range, lum);
+	float highlight_factor = smoothstep(u_highlight_range, 1.0, lum);
 	float midtone_factor = 1.0 - shadow_factor - highlight_factor;
-	_col *= (shadow_factor * shadow_color) + (midtone_factor * midtone_color + (highlight_factor * highlight_color));
+	_col *= (shadow_factor * u_shadow_color) + (midtone_factor * u_midtone_color + (highlight_factor * u_highlight_color));
 	return _col;
 }
 
 vec3 exposure_fx(vec3 color) {
-	return exposure * color;
+	return u_exposure_val * color;
 }
 
 vec3 brightness_fx(vec3 color) {
-	return color + (brightness - 1.0);
+	return color + (u_brightness_val - 1.0);
 }
 
 vec3 contrast_fx(vec3 color) {
-	return saturate3(((color - 0.5) * max(contrast, 0.0)) + 0.5);
+	return saturate3(((color - 0.5) * max(u_contrast_val, 0.0)) + 0.5);
 }
 
 vec3 tone_mapping_fx(vec3 color) {
 	vec3 _col = color;
-	if (tone_mapping_mode == 0) {
+	if (u_tone_mapping_mode == 0) {
 		_col = tonemap_ACESFilm(_col);
 	} else
-	if (tone_mapping_mode == 1) {
+	if (u_tone_mapping_mode == 1) {
 		_col = tonemap_lottes(_col);
 	} else
-	if (tone_mapping_mode == 2) {
+	if (u_tone_mapping_mode == 2) {
 		_col = tonemap_uncharted2(_col);
 	} else
-	if (tone_mapping_mode == 3) {
+	if (u_tone_mapping_mode == 3) {
 		_col = tonemap_unreal3(_col);
 	}
 	return _col;
@@ -271,48 +301,57 @@ vec3 tone_mapping_fx(vec3 color) {
 
 vec3 lift_gamma_gain_fx(vec3 color) {
 	vec3 _col = color;
-	_col = saturate3(_col * (1.5-0.5 * lift_rgb) + 0.5 * lift_rgb - 0.5);
-	_col *= gain_rgb;
-	_col = saturate3(pow(_col, 1.0/gamma_rgb));
+	_col = saturate3(_col * (1.5-0.5 * u_lift_rgb) + 0.5 * u_lift_rgb - 0.5);
+	_col *= u_gain_rgb;
+	_col = saturate3(pow(_col, 1.0/u_gamma_rgb));
 	return _col;
 }
 
 vec3 hue_shift_fx(vec3 color) {
-	return color * hsv2rgb(hue_shift);
+	vec3 _col = color;
+	_col = rgb2hsv(_col);
+	_col.x = fract(_col.x + u_hueshift_hsv.x);
+	_col.y *= u_hueshift_hsv.y;
+	//_col.z *= u_hueshift_hsv.z;
+	_col = hsv2rgb(_col);
+	return _col;
 }
 
-vec3 saturation_fx(vec3 color) {
-	float lum = get_luminance(color);
-	return mix(vec3(lum), color, saturation);
+vec3 colortint_fx(in vec3 color) {
+	return color * u_colortint_color;
 }
 
 vec3 colorize_fx(vec3 color) {
-	vec3 _col = color;
 	float lum = get_luminance(color);
 	float aa = clamp(2.0 * lum, 0.0, 1.0);
 	float cc = clamp(2.0 * (1.0 - lum), 0.0, 1.0);
 	float bb = 1.0 - aa - cc;
-	_col = 1.0 - (bb * colorize_color * (1.0-colorize_darkness) + cc);
-	return mix(color, _col, colorize_intesity);
+	vec3 _merged = 1.0 - (bb * hsv2rgb(u_colorize_hsv) + cc);
+	return mix(color, _merged, u_colorize_intensity);
+}
+
+vec3 saturation_fx(vec3 color) {
+	float lum = get_luminance(color);
+	return mix(vec3(lum), color, u_saturation_val);
 }
 
 vec3 posterization_fx(vec3 color) {
 	vec3 _col = color;
-	_col = floor(_col * posterization_col_factor) / posterization_col_factor;
+	_col = floor(_col * u_posterization_col_factor) / u_posterization_col_factor;
 	return _col;
 }
 
 vec3 invert_colors_fx(vec3 color) {
 	vec3 _col = color;
 	_col = 1.0 - _col;
-	float intensity = (invert_colors_intensity == 0.5) ? 0.51 : invert_colors_intensity;
+	float intensity = (u_invert_colors_intensity == 0.5) ? 0.51 : u_invert_colors_intensity;
 	return mix(color, _col, intensity);
 }
 
 vec3 texture_overlay_fx(vec3 color, vec2 uv) {
 	vec3 _col = color;
-	_col = blend_a(_col, texture2D(texture_overlay_tex, (uv - 0.5) * (1.0-texture_overlay_zoom+1.0) + 0.5));
-	return mix(color, _col, texture_overlay_intensity);
+	_col = blend_a(_col, texture2D(u_texture_overlay_tex, (uv - 0.5) * (1.0-u_texture_overlay_zoom+1.0) + 0.5));
+	return mix(color, _col, u_texture_overlay_intensity);
 }
 
 void main() {
@@ -327,47 +366,50 @@ void main() {
 	vec4 col_tex = texture2D(gm_BaseTexture, uv);
 	vec4 col_final = col_tex;
 	
-	// lut3d
+	// lut
 	if (u_enabled[1] > 0.5) col_final.rgb = lut3d_fx(col_final.rgb);
 	
-	// shadow_midtone_highlight_fx
-	if (u_enabled[2] > 0.5) col_final.rgb = shadow_midtone_highlight_fx(col_final.rgb);
-	
 	// exposure_fx
-	if (u_enabled[3] > 0.5) col_final.rgb = exposure_fx(col_final.rgb);
+	if (u_enabled[2] > 0.5) col_final.rgb = exposure_fx(col_final.rgb);
 	
 	// brightness_fx
-	if (u_enabled[4] > 0.5) col_final.rgb = brightness_fx(col_final.rgb);
-	
-	// saturation_fx
-	if (u_enabled[5] > 0.5) col_final.rgb = saturation_fx(col_final.rgb);
+	if (u_enabled[3] > 0.5) col_final.rgb = brightness_fx(col_final.rgb);
 	
 	// contrast_fx
-	if (u_enabled[6] > 0.5) col_final.rgb = contrast_fx(col_final.rgb);
+	if (u_enabled[4] > 0.5) col_final.rgb = contrast_fx(col_final.rgb);
 	
-	// tone_mapping_fx
-	if (u_enabled[7] > 0.5) col_final.rgb = tone_mapping_fx(col_final.rgb);
+	// shadow_midtone_highlight_fx
+	if (u_enabled[5] > 0.5) col_final.rgb = shadow_midtone_highlight_fx(col_final.rgb);
 	
-	// lift_gamma_gain_fx
-	if (u_enabled[8] > 0.5) col_final.rgb = lift_gamma_gain_fx(col_final.rgb);
+	// saturation_fx
+	if (u_enabled[6] > 0.5) col_final.rgb = saturation_fx(col_final.rgb);
 	
 	// hue_shift_fx
-	if (u_enabled[9] > 0.5) col_final.rgb = hue_shift_fx(col_final.rgb);
+	if (u_enabled[7] > 0.5) col_final.rgb = hue_shift_fx(col_final.rgb);
+	
+	// color_tint
+	if (u_enabled[8] > 0.5) col_final.rgb = colortint_fx(col_final.rgb);
 	
 	// colorize_fx
-	if (u_enabled[10] > 0.5) col_final.rgb = colorize_fx(col_final.rgb);
+	if (u_enabled[9] > 0.5) col_final.rgb = colorize_fx(col_final.rgb);
 	
 	// posterization_fx
-	if (u_enabled[11] > 0.5) col_final.rgb = posterization_fx(col_final.rgb);
+	if (u_enabled[10] > 0.5) col_final.rgb = posterization_fx(col_final.rgb);
 	
 	// invert_colors_fx
-	if (u_enabled[12] > 0.5) col_final.rgb = invert_colors_fx(col_final.rgb);
+	if (u_enabled[11] > 0.5) col_final.rgb = invert_colors_fx(col_final.rgb);
 	
 	// texture_overlay_fx
-	if (u_enabled[13] > 0.5) col_final.rgb = texture_overlay_fx(col_final.rgb, uvl);
+	if (u_enabled[12] > 0.5) col_final.rgb = texture_overlay_fx(col_final.rgb, uvl);
+		
+	// lift_gamma_gain_fx
+	if (u_enabled[13] > 0.5) col_final.rgb = lift_gamma_gain_fx(col_final.rgb);
+	
+	// tone_mapping_fx
+	if (u_enabled[14] > 0.5) col_final.rgb = tone_mapping_fx(col_final.rgb);
 	
 	// border_fx
-	if (u_enabled[14] > 0.5) col_final.rgb = border_fx(col_final.rgb, uvl);
+	if (u_enabled[15] > 0.5) col_final.rgb = border_fx(col_final.rgb, uvl);
 	
 	gl_FragColor = mix(col_tex, col_final, u_time_n_intensity.y);
 }

@@ -2,74 +2,77 @@
 /*------------------------------------------------------------------
 You cannot redistribute this pixel shader source code anywhere.
 Only compiled binary executables. Don't remove this notice, please.
-Copyright (C) 2022 Mozart Junior (FoxyOfJungle). Kazan Games Ltd.
+Copyright (C) 2023 Mozart Junior (FoxyOfJungle). Kazan Games Ltd.
 Website: https://foxyofjungle.itch.io/ | Discord: FoxyOfJungle#0167
 -------------------------------------------------------------------*/
+
+precision highp float;
 
 varying vec2 v_vPosition;
 varying vec2 v_vTexcoord;
 varying vec2 v_TexelSize;
 varying vec4 v_PosRes;
 
-uniform vec2 u_time_n_intensity;
+uniform highp vec2 u_time_n_intensity;
 uniform float u_enabled[12];
 
 // >> uniforms
-uniform float rotation_angle;
+uniform float u_rotation_angle;
 
-uniform float zoom_amount;
-uniform vec2 zoom_center;
+uniform float u_zoom_amount;
+uniform float u_zoom_range;
+uniform vec2 u_zoom_center;
 
-uniform float shake_speed;
-uniform float shake_magnitude;
-uniform float shake_hspeed;
-uniform float shake_vspeed;
+uniform float u_shake_speed;
+uniform float u_shake_magnitude;
+uniform float u_shake_hspeed;
+uniform float u_shake_vspeed;
 
-uniform float panorama_depth;
-uniform float panorama_is_horizontal;
+uniform float u_panorama_depth_x;
+uniform float u_panorama_depth_y;
 
-uniform float lens_distortion_amount;
+uniform float u_lens_distortion_amount;
 
-uniform float pixelize_amount;
-uniform float pixelize_squares_max;
-uniform float pixelize_steps;
+uniform float u_pixelize_amount;
+uniform float u_pixelize_squares_max;
+uniform float u_pixelize_steps;
 
-uniform float swirl_angle;
-uniform float swirl_radius;
-uniform vec2 swirl_center;
+uniform float u_swirl_angle;
+uniform float u_swirl_radius;
+uniform vec2 u_swirl_center;
 
-uniform float shockwaves_amount;
-uniform float shockwaves_aberration;
-uniform sampler2D shockwaves_tex;
-uniform sampler2D shockwaves_prisma_lut_tex;
+uniform float u_shockwaves_amount;
+uniform float u_shockwaves_aberration;
+uniform sampler2D u_shockwaves_tex;
+uniform sampler2D u_shockwaves_prisma_lut_tex;
 
-uniform float displacemap_amount;
-uniform float displacemap_zoom;
-uniform float displacemap_angle;
-uniform float displacemap_speed;
-uniform sampler2D displacemap_tex;
-uniform vec2 displacemap_offset;
+uniform float u_displacemap_amount;
+uniform float u_displacemap_zoom;
+uniform float u_displacemap_angle;
+uniform float u_displacemap_speed;
+uniform sampler2D u_displacemap_tex;
+uniform vec2 u_displacemap_offset;
 
-uniform vec2 sinewave_frequency;
-uniform vec2 sinewave_amplitude;
-uniform float sinewave_speed;
-uniform vec2 sinewave_offset;
+uniform vec2 u_sinewave_frequency;
+uniform vec2 u_sinewave_amplitude;
+uniform float u_sinewave_speed;
+uniform vec2 u_sinewave_offset;
 
-uniform float glitch_speed;
-uniform float glitch_block_size;
-uniform float glitch_interval;
-uniform float glitch_intensity;
-uniform float glitch_peak_amplitude1;
-uniform float glitch_peak_amplitude2;
+uniform float u_glitch_speed;
+uniform float u_glitch_block_size;
+uniform float u_glitch_interval;
+uniform float u_glitch_intensity;
+uniform float u_glitch_peak_amplitude1;
+uniform float u_glitch_peak_amplitude2;
 
-uniform float white_balance_temperature;
-uniform float white_balance_tint;
+uniform float u_white_balance_temperature;
+uniform float u_white_balance_tint;
 
 // >> dependencies
 
-float rand(vec2 co) {
-	return fract(sin(dot(co, vec2(12.9898, 78.233))) * 43758.5453);
-}
+//float rand(vec2 co) {
+//	return fract(sin(dot(co, vec2(12.9898, 78.233))) * 43758.5453);
+//}
 
 float random(vec2 uv, float t) {
 	highp float d = 437.0 + mod(t, 10.0);
@@ -87,7 +90,8 @@ float noise(in vec2 p) {
 	random(i + vec2(1.0, 1.0), 0.0), u.x), u.y);
 }
 
-float peak(float x, float xpos, float scale) { // Thanks to: "BitOfGold"
+float peak(float x, float xpos, float scale) {
+	// Thanks to: "BitOfGold"
 	return clamp((1.0 - x) * scale * log(1.0 / abs(x - xpos)), 0.0, 1.0);
 }
 
@@ -107,7 +111,7 @@ vec2 get_aspect_ratio(vec2 res, vec2 size) {
 // >> effects
 vec2 rotation_uv(vec2 uv, vec2 fpos) {
 	vec2 _uv = uv;
-	float angle = radians(rotation_angle);
+	float angle = radians(u_rotation_angle);
 	mat2 rot = mat2(cos(angle), -sin(angle), sin(angle), cos(angle));
 	vec2 rs = v_PosRes.zw / vec2(2.0);
 	vec2 uv2 = fpos - rs;
@@ -117,83 +121,79 @@ vec2 rotation_uv(vec2 uv, vec2 fpos) {
 
 vec2 zoom_uv(vec2 uv) {
 	vec2 _uv = uv;
-	_uv += (uv - zoom_center) * (1.0-zoom_amount);
+	float zoom = 1.0 + (u_zoom_amount - 2.0);
+	_uv += (u_zoom_center - uv) * (zoom / max(1.0, u_zoom_range));
 	return _uv;
 }
 
 vec2 shake_uv(vec2 uv) {
 	vec2 _uv = uv;
-	highp float t = 100.0 + u_time_n_intensity.x * shake_speed;
-	float mag = shake_magnitude * u_time_n_intensity.y;
-	_uv.x += shake_hspeed * cos(t*135.0 + sin(t)) * mag;
-	_uv.y += shake_vspeed * sin(t*90.0 + cos(t)) * mag;
-	return _uv;
+	highp float t = 100.0 + u_time_n_intensity.x * u_shake_speed;
+	float mag = u_shake_magnitude * u_time_n_intensity.y;
+	vec2 offset;
+	offset.x = u_shake_hspeed * cos(t*135.0 + sin(t)) * mag;
+	offset.y = u_shake_vspeed * sin(t*90.0 + cos(t)) * mag;
+	return _uv + offset;
 }
 
 vec2 panorama_uv(vec2 uv) {
-	vec2 _uv = uv;
 	vec2 dist = vec2(length(uv.x - 0.5), length(uv.y - 0.5));
 	float offset = dist.x * dist.y;
-	float dir;
-	if (panorama_is_horizontal > 0.5) {
-		dir = uv.y <= 0.5 ? 1.0 : -1.0;
-		_uv = vec2(uv.x, uv.y + dist.x*(offset*dir*panorama_depth));
-	} else {
-		dir = uv.x <= 0.5 ? 1.0 : -1.0;
-		_uv = vec2(uv.x + dist.y*(offset*dir*panorama_depth), uv.y);
-	}
+	vec2 dir = vec2(1.0) - 2.0 * step(0.5, uv);
+	vec2 _uv = vec2(
+		uv.x + dist.y * (offset * dir.x * u_panorama_depth_x),
+		uv.y + dist.x * (offset * dir.y * u_panorama_depth_y)
+	);
 	return _uv;
 }
 
 vec2 lens_distortion_uv(vec2 uv) {
 	vec2 _uv = uv;
 	vec2 uv2 = _uv - 0.5;
-	float at = atan(uv2.x, uv2.y);
-	float uvd = length(uv2);
-	float dist = lens_distortion_amount * u_time_n_intensity.y;
-	uvd *= (pow(uvd, 2.0) * dist + 1.0);
-	_uv = vec2(0.5) + vec2(sin(at), cos(at)) * uvd;
+	float polar = atan(uv2.y, uv2.x);
+	float len = length(uv2);
+	float amount = u_lens_distortion_amount * u_time_n_intensity.y;
+	len *= (pow(len, 2.0) * amount + 1.0);
+	_uv = vec2(0.5) + vec2(cos(polar), sin(polar)) * len;
 	return _uv;
 }
 
 vec2 pixelize_uv(vec2 uv) {
 	vec2 _uv = uv;
-	float amount = pixelize_amount * u_time_n_intensity.y;
-	float steps = (pixelize_steps > 0.0) ? ceil(amount*pixelize_steps)/pixelize_steps : amount;
-	vec2 square_size = vec2(2.0*pixelize_squares_max*steps) * v_TexelSize;
+	float amount = u_pixelize_amount * u_time_n_intensity.y;
+	float steps = (u_pixelize_steps > 0.0) ? ceil(amount*u_pixelize_steps)/u_pixelize_steps : amount;
+	vec2 square_size = vec2(2.0*u_pixelize_squares_max*steps) * v_TexelSize;
 	_uv = (steps > 0.0) ? (floor(_uv/square_size)+0.5)*square_size : _uv;
 	return _uv;
 }
 
 vec2 swirl_uv(vec2 uv) {
 	vec2 _uv = uv;
-	float dist = length(uv - swirl_center);
-	uv -= swirl_center;
-	float d = smoothstep(0.0, swirl_radius, swirl_radius-dist) * radians(swirl_angle);
+	float dist = length(uv - u_swirl_center);
+	uv -= u_swirl_center;
+	float d = smoothstep(0.0, u_swirl_radius, u_swirl_radius-dist) * radians(u_swirl_angle);
 	mat2 rot = mat2(cos(d), -sin(d), sin(d), cos(d));
 	uv *= rot;
-	uv += swirl_center;
+	uv += u_swirl_center;
 	_uv = uv;
 	return _uv;
 }
 
 vec2 shockwaves_uv(vec2 uv, out vec2 offset_out) {
-	vec2 _uv = uv;
-	float size = 500.0 * shockwaves_amount * u_time_n_intensity.y;
-	vec2 offset = v_TexelSize * (texture2D(shockwaves_tex, _uv).rg * 2.0 - 1.0) * size;
-	_uv += offset;
+	float size = 500.0 * u_shockwaves_amount * u_time_n_intensity.y;
+	vec2 offset = v_TexelSize * (texture2D(u_shockwaves_tex, uv).rg * 2.0 - 1.0) * size;
 	offset_out = offset;
-	return _uv;
+	return uv + offset;
 }
 
 vec4 shockwaves_fx(vec4 color, vec2 uv, in vec2 offset_in) {
 	vec4 _col = color;
-	vec4 col_prisma_a = texture2D(shockwaves_prisma_lut_tex, vec2(0.5/3.0, 0.0));
-	vec4 col_prisma_b = texture2D(shockwaves_prisma_lut_tex, vec2(1.5/3.0, 0.0));
-	vec4 col_prisma_c = texture2D(shockwaves_prisma_lut_tex, vec2(2.5/3.0, 0.0));
-	//float dir = radians(shockwaves_aberration_angle);
+	vec4 col_prisma_a = texture2D(u_shockwaves_prisma_lut_tex, vec2(0.5/3.0, 0.0));
+	vec4 col_prisma_b = texture2D(u_shockwaves_prisma_lut_tex, vec2(1.5/3.0, 0.0));
+	vec4 col_prisma_c = texture2D(u_shockwaves_prisma_lut_tex, vec2(2.5/3.0, 0.0));
+	//float dir = radians(u_shockwaves_aberration_angle);
 	//vec2 direction = vec2(cos(dir), -sin(dir));
-	vec2 dist = vec2(v_TexelSize * offset_in * 500.0 * shockwaves_aberration);
+	vec2 dist = vec2(v_TexelSize * offset_in * 500.0 * u_shockwaves_aberration);
 	vec4 col_chroma_a = texture2D(gm_BaseTexture, uv + dist);
 	vec4 col_chroma_b = texture2D(gm_BaseTexture, uv);
 	vec4 col_chroma_c = texture2D(gm_BaseTexture, uv - dist);
@@ -204,44 +204,44 @@ vec4 shockwaves_fx(vec4 color, vec2 uv, in vec2 offset_in) {
 }
 
 vec2 displacement_maps_uv(vec2 uv, vec2 fpos) {
-	vec2 _uv = uv;
-	highp vec2 uv2 = _uv + (displacemap_offset / v_PosRes.zw);
-	highp float time = u_time_n_intensity.x * displacemap_speed;
-	float angle = radians(displacemap_angle);
+	highp vec2 uv2 = uv + (u_displacemap_offset / v_PosRes.zw);
+	float angle = radians(u_displacemap_angle);
 	//vec2 direction = vec2(cos(angle), -sin(angle));
 	mat2 rot = mat2(cos(angle), -sin(angle), sin(angle), cos(angle));
 	//vec2 rs = v_PosRes.zw / vec2(2.0);
 	//vec2 uv3 = fpos - rs;
 	//uv2 = (rot * uv3 + rs) / v_PosRes.zw;
 	uv2 = rot * (uv2 - 0.5) + 0.5;
-	uv2.x -= time;
-	uv2 = tiling_mirror(uv2, vec2(displacemap_zoom));
-	vec3 col_noise = texture2D(displacemap_tex, uv2).rgb;
-	highp float size = displacemap_amount * u_time_n_intensity.y;
-	highp vec2 offset = vec2(col_noise.rg * size - (size/2.0));
-	_uv += offset;
-	return _uv;
+	uv2.x -= u_time_n_intensity.x * u_displacemap_speed;
+	uv2 = tiling_mirror(uv2, vec2(u_displacemap_zoom));
+	vec3 col_noise = texture2D(u_displacemap_tex, uv2).rgb;
+	float size = u_displacemap_amount * u_time_n_intensity.y;
+	highp vec2 offset = vec2(col_noise.rg * size - (size*0.5));
+	return uv + offset;
 }
 
 vec2 sinewave_uv(vec2 uv) {
-	vec2 _uv = uv;
-	highp float spd = u_time_n_intensity.x * sinewave_speed;
-	vec2 amp = sinewave_amplitude * u_time_n_intensity.y;
-	vec2 uv2 = _uv + (sinewave_offset / v_PosRes.zw);
+	highp vec2 _uv = uv;
+	vec2 uv2 = _uv + (u_sinewave_offset / v_PosRes.zw);
+	
+	float spd = u_time_n_intensity.x * u_sinewave_speed;
+	vec2 freq = u_sinewave_frequency;
+	vec2 amp = u_sinewave_amplitude * u_time_n_intensity.y;
+	
 	vec2 offset;
-	offset.x += cos(uv2.y*sinewave_frequency.x - spd) * amp.x;
-	offset.y += sin(uv2.x*sinewave_frequency.y - spd) * amp.y;
-	_uv += offset;
-	return _uv;
+	offset.x = cos(uv2.y*freq.x - spd) * amp.x;
+	offset.y = sin(uv2.x*freq.y - spd) * amp.y;
+	
+	return _uv + offset;
 }
 
 vec2 glitch_uv(vec2 uv) {
-	vec2 _uv = uv;
-	highp float time = u_time_n_intensity.x * glitch_speed;
-	highp float glitch = random(vec2(0.0, ceil(_uv.y * (v_PosRes.w * (1.0-glitch_block_size)))), time);
+	highp vec2 _uv = uv;
+	highp float time = u_time_n_intensity.x * u_glitch_speed;
+	highp float glitch = random(vec2(0.0, ceil(_uv.y * (v_PosRes.w * (1.0-u_glitch_block_size)))), time);
 	highp float vscan = glitch;
-	glitch *= (glitch > glitch_interval) ? glitch_peak_amplitude1 : glitch_peak_amplitude2;
-	float ds = 0.05 * glitch_intensity * glitch * peak(_uv.y, vscan, vscan);
+	glitch *= (glitch > u_glitch_interval) ? u_glitch_peak_amplitude1 : u_glitch_peak_amplitude2;
+	float ds = 0.05 * u_glitch_intensity * glitch * peak(_uv.y, vscan, vscan);
 	ds *= u_time_n_intensity.y;
 	_uv.x -= ds;
 	//_uv.y += ds;
@@ -252,8 +252,8 @@ vec2 glitch_uv(vec2 uv) {
 vec3 white_balance_fx(vec3 color) {
 	vec3 _col = color;
 	// range ~[-1.67;1.67] works best
-	float t1 = white_balance_temperature * 10.0 / 6.0;
-	float t2 = white_balance_tint * 10.0 / 6.0;
+	float t1 = u_white_balance_temperature * 10.0 / 6.0;
+	float t2 = u_white_balance_tint * 10.0 / 6.0;
 	// get the CIE xy chromaticity of the reference white point.
 	// note: 0.31271 = x value on the D65 white point
 	float x = 0.31271 - t1 * (t1 < 0.0 ? 0.1 : 0.05);
@@ -288,7 +288,7 @@ vec3 white_balance_fx(vec3 color) {
 
 void main() {
 	vec2 vPos = (v_vPosition - v_PosRes.xy);
-	vec2 uv = v_vTexcoord;
+	highp vec2 uv = v_vTexcoord;
 	
 	// # base
 	// rotation

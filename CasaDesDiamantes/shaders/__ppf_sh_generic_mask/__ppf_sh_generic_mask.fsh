@@ -2,10 +2,10 @@
 varying vec2 v_vTexcoord;
 
 // >> uniforms
-uniform float mask_power;
-uniform float mask_scale;
-uniform float mask_smoothness;
-uniform sampler2D mask_tex;
+uniform float u_mask_power;
+uniform float u_mask_scale;
+uniform float u_mask_smoothness;
+uniform sampler2D u_mask_tex;
 
 // >> dependencies
 float saturate(float x) {
@@ -22,7 +22,7 @@ float mask_radial(vec2 uv, vec2 center, float power, float scale, float smoothne
 void main() {
 	vec2 uv = v_vTexcoord;
 	vec4 col_tex = texture2D(gm_BaseTexture, uv);
-	vec4 col_mask = texture2D(mask_tex, uv);
-	float mask = mask_radial(uv, vec2(0.5), mask_power, mask_scale, mask_smoothness);
+	vec4 col_mask = texture2D(u_mask_tex, uv);
+	float mask = mask_radial(uv, vec2(0.5), u_mask_power, u_mask_scale, u_mask_smoothness);
 	gl_FragColor = mix(col_tex, col_mask, mask);
 }

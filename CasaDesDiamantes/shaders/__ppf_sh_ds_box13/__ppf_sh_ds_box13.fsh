@@ -9,16 +9,6 @@ Website: https://foxyofjungle.itch.io/ | Discord: FoxyOfJungle#0167
 varying vec2 v_vTexcoord;
 varying vec2 v_TexelSize;
 
-uniform float reduce_banding;
-
-const float Phi = 1.61803398875;
-
-// (C) 2015, Dominic Cerisano
-float gold_noise(in vec2 fpos, in float seed) {
-	highp vec2 p = fpos;
-	return fract(tan(distance(p*Phi, p)*seed)*p.x);
-}
-
 // better, temporally stable box filtering
 // [Jimenez14] http://goo.gl/eomGso
 vec4 sample_box13(sampler2D tex, vec2 uv, float delta) {
@@ -48,5 +38,4 @@ vec4 sample_box13(sampler2D tex, vec2 uv, float delta) {
 
 void main() {
 	gl_FragColor = sample_box13(gm_BaseTexture, v_vTexcoord, 0.5);
-	if (reduce_banding > 0.5) gl_FragColor.rgb -= gold_noise(gl_FragCoord.xy, 1.0) * 0.0025;
 }

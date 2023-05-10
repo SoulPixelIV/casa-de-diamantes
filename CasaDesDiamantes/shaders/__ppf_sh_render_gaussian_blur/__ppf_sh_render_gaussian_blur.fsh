@@ -2,7 +2,7 @@
 /*------------------------------------------------------------------
 You cannot redistribute this pixel shader source code anywhere.
 Only compiled binary executables. Don't remove this notice, please.
-Copyright (C) 2022 Mozart Junior (FoxyOfJungle). Kazan Games Ltd.
+Copyright (C) 2023 Mozart Junior (FoxyOfJungle). Kazan Games Ltd.
 Website: https://foxyofjungle.itch.io/ | Discord: FoxyOfJungle#0167
 -------------------------------------------------------------------*/
 
@@ -20,11 +20,11 @@ const float Golden_Angle = 2.39996323;
 
 // >> uniforms
 uniform vec2 u_time_n_intensity;
-uniform float gaussian_blur_amount;
+uniform float u_gaussian_blur_amount;
 
 // >> effect
 vec4 gaussian_blur_fx(vec2 uv) {
-	vec2 radius = v_TexelSize * gaussian_blur_amount*3.0 * u_time_n_intensity.y;
+	vec2 radius = v_TexelSize * u_gaussian_blur_amount*3.0 * u_time_n_intensity.y;
 	vec4 blur;
 	float total;
 	for(float i = 0.0; i < ITERATIONS; i+=Golden_Angle) {
