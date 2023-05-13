@@ -1031,52 +1031,126 @@ if (!noHUD)
 if (global.pause) {
 	drawPause = true;
 	
-	if (keyboard_check_pressed(vk_up) || keyboard_check_pressed(ord("W")) || gamepad_button_check_pressed(0, gp_padu) || gamepad_button_check_pressed(4, gp_padu))
-	{
-		if (cursorPos > 0)
+	if (pauseScreen == 0) {
+		if (keyboard_check_pressed(vk_up) || keyboard_check_pressed(ord("W")) || gamepad_button_check_pressed(0, gp_padu) || gamepad_button_check_pressed(4, gp_padu))
 		{
-			cursorPos--;
+			if (cursorPos > 0)
+			{
+				cursorPos--;
+			}
+			else
+			{
+				cursorPos = 3;
+			}
 		}
-		else
+		if (keyboard_check_pressed(vk_down) || keyboard_check_pressed(ord("S")) || gamepad_button_check_pressed(0, gp_padd) || gamepad_button_check_pressed(4, gp_padd))
 		{
-			cursorPos = 3;
+			if (cursorPos < 3)
+			{
+				cursorPos++;
+			}
+			else
+			{
+				cursorPos = 0;
+			}
 		}
-	}
-	if (keyboard_check_pressed(vk_down) || keyboard_check_pressed(ord("S")) || gamepad_button_check_pressed(0, gp_padd) || gamepad_button_check_pressed(4, gp_padd))
-	{
-		if (cursorPos < 3)
-		{
-			cursorPos++;
-		}
-		else
-		{
-			cursorPos = 0;
-		}
-	}
 
-	if (keyboard_check_pressed(vk_enter) || gamepad_button_check_pressed(0, gp_face1) || gamepad_button_check_pressed(4, gp_face1))
-	{
-		switch (cursorPos)
+		if (keyboard_check_pressed(vk_enter) || gamepad_button_check_pressed(0, gp_face1) || gamepad_button_check_pressed(4, gp_face1))
 		{
-			case 0:
-				if (!player_obj.pauseDelayStart) {
+			switch (cursorPos)
+			{
+				case 0:
+					if (!player_obj.pauseDelayStart) {
+						global.pause = false;
+					}
+				break;
+				case 1:
+					pauseScreen = 1;
+					cursorPos = 0;
+				break;
+				case 2:
 					global.pause = false;
-				}
-			break;
-			case 1:
-				global.pause = false;
-				room_restart();
-			break;
-			case 2:
-				if (global.reachedCasino) {
+					room_restart();
+				break;
+				case 3:
+					if (global.reachedCasino) {
+						global.pause = false;
+						room_goto(level_Casino);
+					}
+				break;
+				case 4:
 					global.pause = false;
-					room_goto(level_Casino);
-				}
-			break;
-			case 3:
-				global.pause = false;
-				room_goto(mainmenu);
-			break;
+					room_goto(mainmenu);
+				break;
+			}
+		}
+	} else {
+		if (keyboard_check_pressed(vk_up) || keyboard_check_pressed(ord("W")) || gamepad_button_check_pressed(0, gp_padu) || gamepad_button_check_pressed(4, gp_padu))
+		{
+			if (cursorPos > 0)
+			{
+				cursorPos--;
+			}
+			else
+			{
+				cursorPos = 2;
+			}
+		}
+		if (keyboard_check_pressed(vk_down) || keyboard_check_pressed(ord("S")) || gamepad_button_check_pressed(0, gp_padd) || gamepad_button_check_pressed(4, gp_padd))
+		{
+			if (cursorPos < 2)
+			{
+				cursorPos++;
+			}
+			else
+			{
+				cursorPos = 0;
+			}
+		}
+		if (keyboard_check_pressed(vk_enter) || gamepad_button_check_pressed(0, gp_face1) || gamepad_button_check_pressed(4, gp_face1))
+		{
+			switch (cursorPos)
+			{
+				case 2:
+					pauseScreen = 0;
+					cursorPos = 0;
+				break;
+			}
+		}
+		if (keyboard_check_pressed(vk_right) || keyboard_check_pressed(ord("D")) || gamepad_button_check_pressed(0, gp_padr) || gamepad_button_check_pressed(4, gp_padr))
+		{
+			switch (cursorPos)
+			{
+				case 0:
+					if (global.soundVolume < 100) {
+						global.soundVolume += 10;
+					}
+				break;
+				case 1:
+					if (global.musicVolume < 100) {
+						global.musicVolume += 10;
+					}
+				break;
+			}
+			saveSettings_scr();
+		}
+	
+		if (keyboard_check_pressed(vk_left) || keyboard_check_pressed(ord("A")) || gamepad_button_check_pressed(0, gp_padl) || gamepad_button_check_pressed(4, gp_padl))
+		{
+			switch (cursorPos)
+			{
+				case 0:
+					if (global.soundVolume > 0) {
+						global.soundVolume -= 10;
+					}
+				break;
+				case 1:
+					if (global.musicVolume > 0) {
+						global.musicVolume -= 10;
+					}
+				break;
+			}
+			saveSettings_scr();
 		}
 	}
 } else {
@@ -1113,36 +1187,62 @@ if (drawPause) {
 	draw_set_halign(fa_center);
 	draw_set_color(make_color_rgb(255, 215, 0));
 
-	draw_text(global.xScreenSize / 2, global.yScreenSize / 2.5, "Resume");
-	draw_text(global.xScreenSize / 2, global.yScreenSize / 2.5 + 16, "Restart Checkpoint");
-	if (global.reachedCasino) {
+	if (pauseScreen == 0) {
+		draw_text(global.xScreenSize / 2, global.yScreenSize / 2.5, "Resume");
+		draw_text(global.xScreenSize / 2, global.yScreenSize / 2.5 + 16, "Settings");
+		draw_text(global.xScreenSize / 2, global.yScreenSize / 2.5 + 32, "Restart Checkpoint");
+		if (global.reachedCasino) {
+			draw_set_color(make_color_rgb(255, 215, 0));
+			draw_text(global.xScreenSize / 2, global.yScreenSize / 2.5 + 48, "Return to Casino");
+		} else {
+			draw_set_color(make_color_rgb(110, 110, 110));
+			draw_text(global.xScreenSize / 2, global.yScreenSize / 2.5 + 48, "Return to Casino");
+		}
 		draw_set_color(make_color_rgb(255, 215, 0));
-		draw_text(global.xScreenSize / 2, global.yScreenSize / 2.5 + 32, "Return to Casino");
+		draw_text(global.xScreenSize / 2, global.yScreenSize / 2.5 + 64, "Quit to Main Menu");
+	
+		cursorAnim += global.dtNoSlowmo / 17;
+		switch (cursorPos)
+		{
+			case 0:
+				draw_sprite(chipRed_spr, cursorAnim, global.xScreenSize / 2 - 64, global.yScreenSize / 2.5 + 4);
+			break;
+			case 1:
+				draw_sprite(chipRed_spr, cursorAnim, global.xScreenSize / 2 - 64, global.yScreenSize / 2.5 + 20);
+			break;
+			case 2:
+				draw_sprite(chipRed_spr, cursorAnim, global.xScreenSize / 2 - 64, global.yScreenSize / 2.5 + 36);
+			break;
+			case 3:
+				draw_sprite(chipRed_spr, cursorAnim, global.xScreenSize / 2 - 64, global.yScreenSize / 2.5 + 50);
+			break;
+			case 4:
+				draw_sprite(chipRed_spr, cursorAnim, global.xScreenSize / 2 - 64, global.yScreenSize / 2.5 + 66);
+			break;
+		}
+	
+		draw_set_alpha(1);
 	} else {
-		draw_set_color(make_color_rgb(110, 110, 110));
-		draw_text(global.xScreenSize / 2, global.yScreenSize / 2.5 + 32, "Return to Casino");
-	}
-	draw_set_color(make_color_rgb(255, 215, 0));
-	draw_text(global.xScreenSize / 2, global.yScreenSize / 2.5 + 48, "Quit to Main Menu");
+		draw_text(global.xScreenSize / 2, global.yScreenSize / 2.5, "Sound Volume [" + string(global.soundVolume) + "]");
+		draw_text(global.xScreenSize / 2, global.yScreenSize / 2.5 + 16, "Music Volume [" + string(global.musicVolume) + "]");
+		draw_text(global.xScreenSize / 2, global.yScreenSize / 2.5 + 32, "Back");
 	
-	cursorAnim += global.dtNoSlowmo / 17;
-	switch (cursorPos)
-	{
-		case 0:
-			draw_sprite(chipRed_spr, cursorAnim, global.xScreenSize / 2 - 64, global.yScreenSize / 2.5 + 4);
-		break;
-		case 1:
-			draw_sprite(chipRed_spr, cursorAnim, global.xScreenSize / 2 - 64, global.yScreenSize / 2.5 + 20);
-		break;
-		case 2:
-			draw_sprite(chipRed_spr, cursorAnim, global.xScreenSize / 2 - 64, global.yScreenSize / 2.5 + 36);
-		break;
-		case 3:
-			draw_sprite(chipRed_spr, cursorAnim, global.xScreenSize / 2 - 64, global.yScreenSize / 2.5 + 50);
-		break;
-	}
+		cursorAnim += global.dtNoSlowmo / 17;
+		switch (cursorPos)
+		{
+			case 0:
+				draw_sprite(chipRed_spr, cursorAnim, global.xScreenSize / 2 - 76, global.yScreenSize / 2.5 + 4);
+			break;
+			case 1:
+				draw_sprite(chipRed_spr, cursorAnim, global.xScreenSize / 2 - 76, global.yScreenSize / 2.5 + 20);
+			break;
+			case 2:
+				draw_sprite(chipRed_spr, cursorAnim, global.xScreenSize / 2 - 48, global.yScreenSize / 2.5 + 36);
+			break;
+		}
 	
-	draw_set_alpha(1);
+		draw_set_alpha(1);
+	}
 }
 
 //Cursor

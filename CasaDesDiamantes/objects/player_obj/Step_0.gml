@@ -45,6 +45,8 @@ key_escape = keyboard_check_pressed(vk_escape) || gamepad_button_check_pressed(4
 if (key_escape && !pauseDelayStart && hp > 0 && !inCutscene) {
 	save_scr();
 	global.pause = !global.pause;
+	camera_obj.pauseScreen = 0;
+	camera_obj.cursorPos = 0;
 	pauseDelayStart = true;
 }
 if (pauseDelayStart) {

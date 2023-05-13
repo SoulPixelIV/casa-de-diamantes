@@ -27,7 +27,7 @@ if (horspeed != 0 && !attackInProg && !attackInProg2) {
 
 //Play Idle Sounds
 if (!playedSound) {
-	audio_play_sound_on(emitter, choose(basicZombieIdle1_snd, basicZombieIdle2_snd, basicZombieIdle3_snd, basicZombieIdle4_snd, basicZombieIdle5_snd), false, 1);
+	//audio_play_sound_on(emitter, choose(basicZombieIdle1_snd, basicZombieIdle2_snd, basicZombieIdle3_snd, basicZombieIdle4_snd, basicZombieIdle5_snd), false, 1);
 	playedSound = true;
 } else {
 	idleSoundDelay -= global.dt;
@@ -371,7 +371,7 @@ if (attackCooldown < 0)
 			attackInProg = true;
 		}
 	}
-	audio_play_sound_on(emitter, basicZombieAttack1_snd, false, 1);
+	//audio_play_sound_on(emitter, basicZombieAttack1_snd, false, 1);
 	attackCooldown = attackCooldownSave;
 }
 
