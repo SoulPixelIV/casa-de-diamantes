@@ -21,6 +21,17 @@ else if (keyboard_check_pressed(vk_anykey))
 	inputMethod = 0;
 }
 
+//Blackscreen
+blackscreenDelay -= global.dt;
+
+if (blackscreenDelay < 0) {
+	if (blackscreenStrength > 0.05) {
+		blackscreenStrength -= global.dt / 100;
+	} else {
+		blackscreenStrength = 0;
+	}
+}
+
 //Coinbar
 if (scoreSpin)
 {

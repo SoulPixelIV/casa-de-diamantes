@@ -1040,12 +1040,12 @@ if (global.pause) {
 			}
 			else
 			{
-				cursorPos = 3;
+				cursorPos = 4;
 			}
 		}
 		if (keyboard_check_pressed(vk_down) || keyboard_check_pressed(ord("S")) || gamepad_button_check_pressed(0, gp_padd) || gamepad_button_check_pressed(4, gp_padd))
 		{
-			if (cursorPos < 3)
+			if (cursorPos < 4)
 			{
 				cursorPos++;
 			}

@@ -3,11 +3,17 @@ draw_sprite_ext(scoreBorder_spr, -1, 469, edgeMarginVer, 1, 1, 0, -1, 1);
 
 if (blackJackCalc_obj.screen == 0)
 {
-	draw_set_font(gothicPixel_fnt);
+	draw_set_font(gothicPixelBig_fnt);
 	draw_set_halign(fa_center);
+	draw_set_color(c_black);
+	draw_text(global.xScreenSize / 2 - 1, 88 + 1, "Blackjack");
 	draw_set_color(make_color_rgb(255, 215, 0));
-	draw_text(global.xScreenSize / 2, 38, "Blackjack");
-	draw_text(global.xScreenSize / 2, 54, "Please place your bet!");
+	draw_text(global.xScreenSize / 2, 88, "Blackjack");
+	draw_set_font(gothicPixel_fnt);
+	draw_set_color(c_black);
+	draw_text(global.xScreenSize / 2 - 1, 124 + 1, "- Press Start to Play -");
+	draw_set_color(make_color_rgb(255, 215, 0));
+	draw_text(global.xScreenSize / 2, 124, "- Press Start to Play -");
 }
 
 draw_set_halign(fa_left);
@@ -76,7 +82,7 @@ if (blackJackCalc_obj.screen == 1 || blackJackCalc_obj.screen == 2)
 
 //Draw Pot
 draw_set_halign(fa_center);
-draw_text(global.xScreenSize / 2, 250, "POT: " + string(blackJackCalc_obj.moneypool));
+//draw_text(global.xScreenSize / 2, 250, "POT: " + string(blackJackCalc_obj.moneypool));
 draw_set_halign(fa_left);
 
 //DRAW WIN OR LOOSE STATE
@@ -264,3 +270,9 @@ if (inputMethod == 0) {
 		}
 	}
 }
+
+//#####LAYER 4#####
+draw_set_alpha(blackscreenStrength);
+draw_set_color(c_black);
+draw_rectangle(0, 0, global.xScreenSize, global.yScreenSize, false);
+draw_set_alpha(1);

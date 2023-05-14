@@ -22,7 +22,7 @@ var menuEffects = [
 menu_profile = new PPFX_Profile("Main", menuEffects);
 var blackjackEffects = [
 	new FX_Bloom(true, 6, 0.5, 0.91, c_white, 0.3, true, undefined, 0.8, 1, true),
-	new FX_SunShafts(true, [0.5, 0.5], 0.3, 0.53, 0.45, 1.6, 0.4, true, 0.7, 0.05, 0.15),
+	new FX_SunShafts(true, [0.5, 0.5], 0.3, 0.7, 0.45, 1.6, 0.4, true, 0.7, 0.05, 0.15),
 ];
 blackjack_profile = new PPFX_Profile("Main", blackjackEffects);
 var creditsEffects = [
@@ -38,8 +38,8 @@ var tutorialEffects = [
 ];
 tutorial_profile = new PPFX_Profile("Main", tutorialEffects);
 var casinoEffects = [
-	new FX_Bloom(true, 6, 0.6, 1.14, c_white, 0.3, true, undefined, 0.8, 1, true),
-	new FX_SunShafts(true, [0.5, 0.5], 0.3, 0.57, 1.4, 1.6, 0.4, true, 0.7, 0.05, 0.15),
+	new FX_Bloom(true, 6, 0.6, 1.34, c_white, 0.3, true, undefined, 0.8, 1, true),
+	new FX_SunShafts(true, [0.5, 0.5], 0.3, 0.22, 1.4, 1.6, 0.4, true, 0.7, 0.05, 0.15),
 ];
 casino_profile = new PPFX_Profile("Main", casinoEffects);
 var act1Effects = [

@@ -6,6 +6,9 @@ inputMethod = 0;
 cursorImage = 0;
 blackjackMenuElement = 0;
 
+blackscreenDelay = 300;
+blackscreenStrength = 1;
+
 var vm = matrix_build_lookat(x,y,-10,x,y,0,0,1,0);
 var pm = matrix_build_projection_ortho(xScreenSize, yScreenSize, 1, 10000);
 

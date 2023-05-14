@@ -1,4 +1,4 @@
-if (blackJackCalc_obj.screen == 0)
+if (blackJackCalc_obj.screen == 2)
 {
 	if (bet50)
 	{
@@ -36,7 +36,7 @@ if (blackJackCalc_obj.screen == 0)
 	}
 }
 
-if (blackJackCalc_obj.screen == 1)
+if (blackJackCalc_obj.screen == 3)
 {
 	if (hit)
 	{
