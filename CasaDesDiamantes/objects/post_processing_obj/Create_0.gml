@@ -15,14 +15,14 @@ var overworldEffects = [
 	new FX_SunShafts(true, [0.5, 0.5], 0.3, 0.7, 0.34, 1.6, 0.4, true, 0.7, 0.05, 0.15),
 ];
 overworld_profile = new PPFX_Profile("Main", overworldEffects);
-var menuEffects = [	
+var menuEffects = [
 	new FX_Bloom(true, 6, 0.5, 1.29, c_white, 0.3, true, undefined, 0.8, 1, true),
 	new FX_SunShafts(true, [0.5, 0.5], 0.3, 0.53, 0.45, 1.6, 0.4, true, 0.7, 0.05, 0.15),
 ];
 menu_profile = new PPFX_Profile("Main", menuEffects);
 var blackjackEffects = [
 	new FX_Bloom(true, 6, 0.5, 0.91, c_white, 0.3, true, undefined, 0.8, 1, true),
-	new FX_SunShafts(true, [0.5, 0.5], 0.3, 0.7, 0.45, 1.6, 0.4, true, 0.7, 0.05, 0.15),
+	new FX_SunShafts(true, [0.5, 0.5], 0.27, 0.76, 0.45, 1.6, 0.4, true, 0.7, 0.05, 0.15),
 ];
 blackjack_profile = new PPFX_Profile("Main", blackjackEffects);
 var creditsEffects = [
@@ -38,8 +38,8 @@ var tutorialEffects = [
 ];
 tutorial_profile = new PPFX_Profile("Main", tutorialEffects);
 var casinoEffects = [
-	new FX_Bloom(true, 6, 0.6, 1.34, c_white, 0.3, true, undefined, 0.8, 1, true),
-	new FX_SunShafts(true, [0.5, 0.5], 0.3, 0.22, 1.4, 1.6, 0.4, true, 0.7, 0.05, 0.15),
+	new FX_Bloom(true, 6, 0.6, 1.2, c_white, 0.3, true, undefined, 0.8, 1, true),
+	new FX_SunShafts(true, [0.5, 0.5], 0.3, 0.18, 1.4, 1.6, 0.4, true, 0.7, 0.05, 0.15),
 ];
 casino_profile = new PPFX_Profile("Main", casinoEffects);
 var act1Effects = [

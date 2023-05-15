@@ -94,6 +94,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Music","folderPath":"folders/Music.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Objects","folderPath":"folders/Objects.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Animations","folderPath":"folders/Objects/Animations.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Blackjack","folderPath":"folders/Objects/Blackjack.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Colliders","folderPath":"folders/Objects/Colliders.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Decoration","folderPath":"folders/Objects/Decoration.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"woodplankSmall","folderPath":"folders/Objects/Decoration/woodplankSmall.yy",},
@@ -181,7 +182,6 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"UI","folderPath":"folders/UI.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"UI Objects","folderPath":"folders/UI/UI Objects.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"UI Sprites","folderPath":"folders/UI/UI Sprites.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Blackjack","folderPath":"folders/Objects/Blackjack.yy",},
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"Casino3DFilledMarquee.ttf","CopyToMask":-1,"filePath":"datafiles",},

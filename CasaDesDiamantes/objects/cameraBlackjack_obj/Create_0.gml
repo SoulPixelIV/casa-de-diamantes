@@ -1,5 +1,8 @@
 xScreenSize = 480;
 yScreenSize = 270;
+cursorPos = 0;
+cursorAnim = 0;
+pressDelay = 150;
 noHUD = false;
 camera = camera_create();
 inputMethod = 0;
@@ -37,3 +40,5 @@ scoreSpinTimer = 200;
 playScoreStop = false;
 spinsnd = noone;
 scoreSpinTimerSave = scoreSpinTimer;
+
+pressDelaySave = pressDelay;

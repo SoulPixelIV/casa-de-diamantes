@@ -37,7 +37,7 @@ if (drawCard)
 	drawCard = false;
 	if (playerSum >= 21 + (10 * numberofAces))
 	{
-		screen = 2;
+		screen = 3;
 	}
 }
 
@@ -80,11 +80,11 @@ if (dealerDraws)
 		dealerSlot++;
 	}
 	dealerDraws = false;
-	screen = 2;
+	screen = 3;
 }
 
 //Check Score
-if (screen == 2 && !transactionComplete)
+if (screen == 3 && !transactionComplete)
 {
 	if (playerSum > (21 + (10 * numberofAces)))
 	{
@@ -126,7 +126,7 @@ if (screen == 2 && !transactionComplete)
 }
 
 //Create Cards
-if (screen == 1 && !spawnedCards)
+if (screen == 2 && !spawnedCards)
 {
 	for (i = 0; i < 7; i++)
 	{
@@ -142,7 +142,7 @@ if (screen == 1 && !spawnedCards)
 }
 
 //Move Cards when used
-if (screen == 1 || screen == 2)
+if (screen == 2 || screen == 3)
 {
 	for (i = 0; i < 7; i++)
 	{
@@ -191,12 +191,20 @@ if (screen == 1 || screen == 2)
 	}
 }
 
+//Continue to Main Menu
+if (screen == 0) {
+	if (keyboard_check_pressed(vk_enter) || gamepad_button_check_pressed(0, gp_face1) || gamepad_button_check_pressed(4, gp_face1)) {
+		screen = 1;
+	}
+}
+
 //Escape
+/*
 if (keyboard_check(vk_escape) || gamepad_button_check_pressed(4, gp_select) || gamepad_button_check_pressed(0, gp_select))
 {
 	global.spawn = 1;
 	room_goto(level_Casino);
-}
+} */
 
 
 

@@ -26,10 +26,10 @@
     {"name":"Misc","order":3,"path":"folders/KazanGames/PostProcessingFX/Shaders/Misc.yy",},
     {"name":"Render","order":4,"path":"folders/KazanGames/PostProcessingFX/Shaders/Render.yy",},
     {"name":"Upsampling","order":5,"path":"folders/KazanGames/PostProcessingFX/Shaders/Upsampling.yy",},
+    {"name":"Blackjack","order":143,"path":"folders/Objects/Blackjack.yy",},
     {"name":"BasicZombie","order":6,"path":"folders/Sounds/Enemies/BasicZombie.yy",},
     {"name":"MenuMusic","order":64,"path":"folders/Sounds/MenuMusic.yy",},
     {"name":"Steamworks","order":3,"path":"folders/Steamworks.yy",},
-    {"name":"Blackjack","order":143,"path":"folders/Objects/Blackjack.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"dashroll_snd","order":12,"path":"sounds/dashroll_snd/dashroll_snd.yy",},

@@ -11,6 +11,7 @@ if (mouse_x > x - 24 && mouse_x < x + 24)
 		//Moving Card
 		if (mouse_check_button(mb_left))
 		{
+			image_angle += global.dt / 3;
 			if (!blackJackCalc_obj.holdingCard)
 			{
 				blackJackCalc_obj.holdingCard = true;

@@ -1,6 +1,7 @@
 //Chipbar
 draw_sprite_ext(scoreBorder_spr, -1, 469, edgeMarginVer, 1, 1, 0, -1, 1);
 
+//START MENU
 if (blackJackCalc_obj.screen == 0)
 {
 	draw_set_font(gothicPixelBig_fnt);
@@ -15,12 +16,103 @@ if (blackJackCalc_obj.screen == 0)
 	draw_set_color(make_color_rgb(255, 215, 0));
 	draw_text(global.xScreenSize / 2, 124, "- Press Start to Play -");
 }
-
 draw_set_halign(fa_left);
-if (inputMethod == 0) {
-	draw_text(24, 250, "Press Escape to stop playing");
-} else {
-	draw_text(24, 250, "Press Select to stop playing");
+
+//MAIN MENU
+if (blackJackCalc_obj.screen == 1) {
+	draw_set_font(gothicPixelBig_fnt);
+	draw_set_halign(fa_center);
+	draw_set_color(c_black);
+	draw_text(global.xScreenSize / 2 - 1, 88 + 1, "Blackjack");
+	draw_set_color(make_color_rgb(255, 215, 0));
+	draw_text(global.xScreenSize / 2, 88, "Blackjack");
+	draw_set_font(gothicPixel_fnt);
+	
+	draw_set_color(c_black);
+	draw_text(global.xScreenSize / 2 - 1, 124 + 1, "Play");
+	draw_set_color(make_color_rgb(255, 215, 0));
+	draw_text(global.xScreenSize / 2, 124, "Play");
+	
+	draw_set_color(c_black);
+	draw_text(global.xScreenSize / 2 - 1, 148 + 1, "How to Play");
+	draw_set_color(make_color_rgb(255, 215, 0));
+	draw_text(global.xScreenSize / 2, 148, "How to Play");
+	
+	draw_set_color(c_black);
+	draw_text(global.xScreenSize / 2 - 1, 172 + 1, "Quit");
+	draw_set_color(make_color_rgb(255, 215, 0));
+	draw_text(global.xScreenSize / 2, 172, "Quit");
+	
+	if (keyboard_check_pressed(vk_up) || keyboard_check_pressed(ord("W")) || gamepad_button_check_pressed(0, gp_padu) || gamepad_button_check_pressed(4, gp_padu))
+	{
+		if (cursorPos > 0)
+		{
+			cursorPos--;
+		}
+		else
+		{
+			cursorPos = 2;
+		}
+	}
+	if (keyboard_check_pressed(vk_down) || keyboard_check_pressed(ord("S")) || gamepad_button_check_pressed(0, gp_padd) || gamepad_button_check_pressed(4, gp_padd))
+	{
+		if (cursorPos < 2)
+		{
+			cursorPos++;
+		}
+		else
+		{
+			cursorPos = 0;
+		}
+	}
+	if (keyboard_check_pressed(vk_enter) || keyboard_check_pressed(vk_space) || gamepad_button_check_pressed(0, gp_face1) || gamepad_button_check_pressed(4, gp_face1))
+	{
+		switch (cursorPos)
+		{
+			case 0:
+				blackJackCalc_obj.screen = 2;
+				cursorPos = 0;
+			break;
+			case 1:
+				cursorPos = 0;
+			break;
+			case 2:
+				global.spawn = 1;
+				room_goto(level_Casino);
+				cursorPos = 0;
+			break;
+		}
+	}
+	
+	cursorAnim += global.dtNoSlowmo / 17;
+	switch (cursorPos)
+	{
+		case 0:
+			draw_sprite(chipRed_spr, cursorAnim, global.xScreenSize / 2 - 32, 128);
+		break;
+		case 1:
+			draw_sprite(chipRed_spr, cursorAnim, global.xScreenSize / 2 - 48, 152);
+		break;
+		case 2:
+			draw_sprite(chipRed_spr, cursorAnim, global.xScreenSize / 2 - 32, 176);
+		break;
+	}
+}
+
+//BET MENU
+if (blackJackCalc_obj.screen == 2) {
+	draw_set_font(gothicPixelBig_fnt);
+	draw_set_halign(fa_center);
+	draw_set_color(c_black);
+	draw_text(global.xScreenSize / 2 - 1, 88 + 1, "Blackjack");
+	draw_set_color(make_color_rgb(255, 215, 0));
+	draw_text(global.xScreenSize / 2, 88, "Blackjack");
+	
+	draw_set_font(gothicPixel_fnt);
+	draw_set_color(c_black);
+	draw_text(global.xScreenSize / 2 - 1, 124 + 1, "- Place your Bet -");
+	draw_set_color(make_color_rgb(255, 215, 0));
+	draw_text(global.xScreenSize / 2, 124, "- Place your Bet -");
 }
 	
 //Chipbar Digit Calculation
@@ -72,7 +164,7 @@ if (scoreSpinTimer < 0)
 //Blackjack System
 
 //Draw Card Sum TEMPORARY
-if (blackJackCalc_obj.screen == 1 || blackJackCalc_obj.screen == 2)
+if (blackJackCalc_obj.screen == 2)
 {
 	//Player Card Sum
 	draw_set_halign(fa_right);
