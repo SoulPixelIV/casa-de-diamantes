@@ -20,7 +20,7 @@ if (blackJackCalc_obj.screen == 0)
 	
 	//Continue to Main Menu
 	if (pressDelay < 0) {
-		if (keyboard_check_pressed(vk_enter) || gamepad_button_check_pressed(0, gp_face1) || gamepad_button_check_pressed(4, gp_face1)) {
+		if (keyboard_check_pressed(vk_enter) || keyboard_check_pressed(vk_space) || gamepad_button_check_pressed(0, gp_face1) || gamepad_button_check_pressed(4, gp_face1)) {
 			pressDelay = pressDelaySave;
 			blackJackCalc_obj.screen = 1;
 		}
@@ -180,21 +180,27 @@ if (scoreSpinTimer < 0)
 if (blackJackCalc_obj.screen == 3)
 {
 	//Player Card Sum
-	draw_set_halign(fa_right);
-	draw_text(global.xScreenSize - 16, 250, "Score: " + string(blackJackCalc_obj.playerSum) + " | Small Score: " + string(blackJackCalc_obj.playerSum - (10 * blackJackCalc_obj.numberofAces)));
+	draw_set_halign(fa_left);
+	draw_set_color(c_black);
+	draw_text(272 - 1, 180 + 1,  "Score: " + string(blackJackCalc_obj.playerSum));
+	draw_set_color(make_color_rgb(255, 215, 0));
+	draw_text(272, 180, "Score: " + string(blackJackCalc_obj.playerSum));
 	draw_set_halign(fa_left);
 }
 
 //Draw Pot
 if (blackJackCalc_obj.screen == 2) {
 	draw_set_halign(fa_center);
-	draw_text((global.xScreenSize / 2) + 24, 192, string(blackJackCalc_obj.moneypool));
+	draw_set_color(c_black);
+	draw_text((global.xScreenSize / 2) + 27 - 1, 198 + 1, string(blackJackCalc_obj.moneypool) + "$");
+	draw_set_color(make_color_rgb(255, 215, 0));
+	draw_text((global.xScreenSize / 2) + 27, 198, string(blackJackCalc_obj.moneypool) + "$");
 	draw_set_halign(fa_left);
 }
 
 //DRAW WIN OR LOOSE STATE
 draw_set_halign(fa_center);
-if (blackJackCalc_obj.screen == 3)
+if (blackJackCalc_obj.screen == 4)
 {
 	if (blackJackCalc_obj.playerSum > 21 + (10 * blackJackCalc_obj.numberofAces))
 	{

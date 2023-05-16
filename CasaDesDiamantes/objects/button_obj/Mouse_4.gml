@@ -8,6 +8,7 @@ if (blackJackCalc_obj.screen == 2)
 			global.money -= 50;
 			cameraBlackjack_obj.scoreSpin = true;
 			cameraBlackjack_obj.scoreSpinTimer = cameraBlackjack_obj.scoreSpinTimerSave;
+			blackjackChipHolderSpawner_obj.spawning50 = true;
 		}
 	}
 	else if (bet500)
@@ -18,6 +19,7 @@ if (blackJackCalc_obj.screen == 2)
 			global.money -= 500;
 			cameraBlackjack_obj.scoreSpin = true;
 			cameraBlackjack_obj.scoreSpinTimer = cameraBlackjack_obj.scoreSpinTimerSave;
+			blackjackChipHolderSpawner_obj.spawning500 = true;
 		}
 	}
 	else if (bet10000)
@@ -32,7 +34,7 @@ if (blackJackCalc_obj.screen == 2)
 	}
 	else if (start && blackJackCalc_obj.moneypool != 0)
 	{
-		blackJackCalc_obj.screen = 1;
+		blackJackCalc_obj.screen = 3;
 	}
 }
 

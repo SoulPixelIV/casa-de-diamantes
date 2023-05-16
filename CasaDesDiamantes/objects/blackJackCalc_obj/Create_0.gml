@@ -14,7 +14,7 @@ clubDeck = [2,3,4,5,6,7,8,9,"X","B","Q","K","A"];
 spadeDeck = [2,3,4,5,6,7,8,9,"X","B","Q","K","A"];
 
 cardTargetX = 204;
-cardTargetY = 220;
+cardTargetY = 170;
 cardTargetDealerY = 78;
 
 drawCard = false;

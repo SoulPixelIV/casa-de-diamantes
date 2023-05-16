@@ -42,6 +42,18 @@ else
 	}
 }
 
+if (!backgroundCard) {
+	if (image_angle != 0) {
+		if (!mouse_check_button(mb_left)) {
+			if (image_angle >= 180) {
+				image_angle += global.dt;
+			} else {
+				image_angle -= global.dt;
+			}
+		}
+	}
+}
+
 if (target)
 {
 	x = mouse_x;

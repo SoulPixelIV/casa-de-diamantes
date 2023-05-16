@@ -768,6 +768,7 @@
     {"id":{"name":"PW0_SF3_teleporter","path":"objects/PW0_SF3_teleporter/PW0_SF3_teleporter.yy",},},
     {"id":{"name":"electricGate_spr","path":"sprites/electricGate_spr/electricGate_spr.yy",},},
     {"id":{"name":"electricGateShort_spr","path":"sprites/electricGateShort_spr/electricGateShort_spr.yy",},},
+    {"id":{"name":"blackjackChipHolderSpawner_obj","path":"objects/blackjackChipHolderSpawner_obj/blackjackChipHolderSpawner_obj.yy",},},
     {"id":{"name":"jumpGoalDEBUG_obj","path":"objects/jumpGoalDEBUG_obj/jumpGoalDEBUG_obj.yy",},},
     {"id":{"name":"poisontear_spr","path":"sprites/poisontear_spr/poisontear_spr.yy",},},
     {"id":{"name":"electricGate2_spr","path":"sprites/electricGate2_spr/electricGate2_spr.yy",},},
