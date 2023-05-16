@@ -1,20 +1,30 @@
 //Chipbar
 draw_sprite_ext(scoreBorder_spr, -1, 469, edgeMarginVer, 1, 1, 0, -1, 1);
 
+pressDelay -= global.dt;
+
 //START MENU
 if (blackJackCalc_obj.screen == 0)
 {
 	draw_set_font(gothicPixelBig_fnt);
 	draw_set_halign(fa_center);
 	draw_set_color(c_black);
-	draw_text(global.xScreenSize / 2 - 1, 88 + 1, "Blackjack");
+	draw_text(global.xScreenSize / 2 - 1, 58 + 1, "Blackjack");
 	draw_set_color(make_color_rgb(255, 215, 0));
-	draw_text(global.xScreenSize / 2, 88, "Blackjack");
+	draw_text(global.xScreenSize / 2, 58, "Blackjack");
 	draw_set_font(gothicPixel_fnt);
 	draw_set_color(c_black);
 	draw_text(global.xScreenSize / 2 - 1, 124 + 1, "- Press Start to Play -");
 	draw_set_color(make_color_rgb(255, 215, 0));
 	draw_text(global.xScreenSize / 2, 124, "- Press Start to Play -");
+	
+	//Continue to Main Menu
+	if (pressDelay < 0) {
+		if (keyboard_check_pressed(vk_enter) || gamepad_button_check_pressed(0, gp_face1) || gamepad_button_check_pressed(4, gp_face1)) {
+			pressDelay = pressDelaySave;
+			blackJackCalc_obj.screen = 1;
+		}
+	}
 }
 draw_set_halign(fa_left);
 
@@ -23,9 +33,9 @@ if (blackJackCalc_obj.screen == 1) {
 	draw_set_font(gothicPixelBig_fnt);
 	draw_set_halign(fa_center);
 	draw_set_color(c_black);
-	draw_text(global.xScreenSize / 2 - 1, 88 + 1, "Blackjack");
+	draw_text(global.xScreenSize / 2 - 1, 58 + 1, "Blackjack");
 	draw_set_color(make_color_rgb(255, 215, 0));
-	draw_text(global.xScreenSize / 2, 88, "Blackjack");
+	draw_text(global.xScreenSize / 2, 58, "Blackjack");
 	draw_set_font(gothicPixel_fnt);
 	
 	draw_set_color(c_black);
@@ -65,22 +75,25 @@ if (blackJackCalc_obj.screen == 1) {
 			cursorPos = 0;
 		}
 	}
-	if (keyboard_check_pressed(vk_enter) || keyboard_check_pressed(vk_space) || gamepad_button_check_pressed(0, gp_face1) || gamepad_button_check_pressed(4, gp_face1))
-	{
-		switch (cursorPos)
+	if (pressDelay < 0) {
+		if (keyboard_check_pressed(vk_enter) || keyboard_check_pressed(vk_space) || gamepad_button_check_pressed(0, gp_face1) || gamepad_button_check_pressed(4, gp_face1))
 		{
-			case 0:
-				blackJackCalc_obj.screen = 2;
-				cursorPos = 0;
-			break;
-			case 1:
-				cursorPos = 0;
-			break;
-			case 2:
-				global.spawn = 1;
-				room_goto(level_Casino);
-				cursorPos = 0;
-			break;
+			pressDelay = pressDelaySave;
+			switch (cursorPos)
+			{
+				case 0:
+					blackJackCalc_obj.screen = 2;
+					cursorPos = 0;
+				break;
+				case 1:
+					cursorPos = 0;
+				break;
+				case 2:
+					global.spawn = 1;
+					room_goto(level_Casino);
+					cursorPos = 0;
+				break;
+			}
 		}
 	}
 	
@@ -104,15 +117,15 @@ if (blackJackCalc_obj.screen == 2) {
 	draw_set_font(gothicPixelBig_fnt);
 	draw_set_halign(fa_center);
 	draw_set_color(c_black);
-	draw_text(global.xScreenSize / 2 - 1, 88 + 1, "Blackjack");
+	draw_text(global.xScreenSize / 2 - 1, 58 + 1, "Blackjack");
 	draw_set_color(make_color_rgb(255, 215, 0));
-	draw_text(global.xScreenSize / 2, 88, "Blackjack");
+	draw_text(global.xScreenSize / 2, 58, "Blackjack");
 	
 	draw_set_font(gothicPixel_fnt);
 	draw_set_color(c_black);
-	draw_text(global.xScreenSize / 2 - 1, 124 + 1, "- Place your Bet -");
+	draw_text(global.xScreenSize / 2 - 1, 84 + 1, "- Place your Bet -");
 	draw_set_color(make_color_rgb(255, 215, 0));
-	draw_text(global.xScreenSize / 2, 124, "- Place your Bet -");
+	draw_text(global.xScreenSize / 2, 84, "- Place your Bet -");
 }
 	
 //Chipbar Digit Calculation
@@ -164,7 +177,7 @@ if (scoreSpinTimer < 0)
 //Blackjack System
 
 //Draw Card Sum TEMPORARY
-if (blackJackCalc_obj.screen == 2)
+if (blackJackCalc_obj.screen == 3)
 {
 	//Player Card Sum
 	draw_set_halign(fa_right);
@@ -173,13 +186,15 @@ if (blackJackCalc_obj.screen == 2)
 }
 
 //Draw Pot
-draw_set_halign(fa_center);
-//draw_text(global.xScreenSize / 2, 250, "POT: " + string(blackJackCalc_obj.moneypool));
-draw_set_halign(fa_left);
+if (blackJackCalc_obj.screen == 2) {
+	draw_set_halign(fa_center);
+	draw_text((global.xScreenSize / 2) + 24, 192, string(blackJackCalc_obj.moneypool));
+	draw_set_halign(fa_left);
+}
 
 //DRAW WIN OR LOOSE STATE
 draw_set_halign(fa_center);
-if (blackJackCalc_obj.screen == 2)
+if (blackJackCalc_obj.screen == 3)
 {
 	if (blackJackCalc_obj.playerSum > 21 + (10 * blackJackCalc_obj.numberofAces))
 	{

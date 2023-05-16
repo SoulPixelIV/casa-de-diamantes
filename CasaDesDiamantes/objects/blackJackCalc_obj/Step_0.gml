@@ -37,7 +37,7 @@ if (drawCard)
 	drawCard = false;
 	if (playerSum >= 21 + (10 * numberofAces))
 	{
-		screen = 3;
+		screen = 4;
 	}
 }
 
@@ -80,11 +80,11 @@ if (dealerDraws)
 		dealerSlot++;
 	}
 	dealerDraws = false;
-	screen = 3;
+	screen = 4;
 }
 
 //Check Score
-if (screen == 3 && !transactionComplete)
+if (screen == 4 && !transactionComplete)
 {
 	if (playerSum > (21 + (10 * numberofAces)))
 	{
@@ -126,7 +126,7 @@ if (screen == 3 && !transactionComplete)
 }
 
 //Create Cards
-if (screen == 2 && !spawnedCards)
+if (screen == 3 && !spawnedCards)
 {
 	for (i = 0; i < 7; i++)
 	{
@@ -142,7 +142,7 @@ if (screen == 2 && !spawnedCards)
 }
 
 //Move Cards when used
-if (screen == 2 || screen == 3)
+if (screen == 3 || screen == 4)
 {
 	for (i = 0; i < 7; i++)
 	{
@@ -188,13 +188,6 @@ if (screen == 2 || screen == 3)
 				}
 			}
 		}
-	}
-}
-
-//Continue to Main Menu
-if (screen == 0) {
-	if (keyboard_check_pressed(vk_enter) || gamepad_button_check_pressed(0, gp_face1) || gamepad_button_check_pressed(4, gp_face1)) {
-		screen = 1;
 	}
 }
 
