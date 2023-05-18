@@ -9,8 +9,13 @@ inputMethod = 0;
 cursorImage = 0;
 blackjackMenuElement = 0;
 
-blackscreenDelay = 300;
-blackscreenStrength = 1;
+if (!gameManager_obj.blackjackBackToMenu) {
+	blackscreenDelay = 300;
+	blackscreenStrength = 1;
+} else {
+	blackscreenDelay = 0;
+	blackscreenStrength = 0;
+}
 
 var vm = matrix_build_lookat(x,y,-10,x,y,0,0,1,0);
 var pm = matrix_build_projection_ortho(xScreenSize, yScreenSize, 1, 10000);
@@ -42,3 +47,8 @@ spinsnd = noone;
 scoreSpinTimerSave = scoreSpinTimer;
 
 pressDelaySave = pressDelay;
+
+if (gameManager_obj.blackjackBackToMenu) {
+	blackJackCalc_obj.screen = 2;
+	gameManager_obj.blackjackBackToMenu = false;
+}

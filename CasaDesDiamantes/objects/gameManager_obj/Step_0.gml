@@ -191,3 +191,6 @@ if (global.multiplierTimer < 0)
 	global.multiplierTimer = global.multiplierTimerSave;
 }
 
+//Button Delay
+global.pushDelay -= global.dt;
+

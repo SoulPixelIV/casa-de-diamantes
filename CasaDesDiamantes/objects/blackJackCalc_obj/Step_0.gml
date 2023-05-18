@@ -192,12 +192,19 @@ if (screen == 3 || screen == 4)
 }
 
 //Escape
-/*
 if (keyboard_check(vk_escape) || gamepad_button_check_pressed(4, gp_select) || gamepad_button_check_pressed(0, gp_select))
 {
-	global.spawn = 1;
-	room_goto(level_Casino);
-} */
+	if (global.pushDelay < 0) {
+		if (screen == 2) {
+			global.pushDelay = global.pushDelaySave;
+			screen = 1;
+		} else {
+			global.spawn = 1;
+			global.pushDelay = global.pushDelaySave;
+			room_goto(level_Casino);
+		}
+	}
+}
 
 
 

@@ -8,10 +8,14 @@ if (mouse_x > x - 24 && mouse_x < x + 24)
 			//image_yscale += global.dt / 50;
 		}
 		
+		//Rotate Card
+		if (mouse_check_button(mb_right)) {
+			image_angle += global.dt / 3;
+		}
+		
 		//Moving Card
 		if (mouse_check_button(mb_left))
 		{
-			image_angle += global.dt / 3;
 			if (!blackJackCalc_obj.holdingCard)
 			{
 				blackJackCalc_obj.holdingCard = true;
@@ -39,18 +43,6 @@ else
 	{
 		image_xscale -= global.dt / 50;
 		image_yscale -= global.dt / 50;
-	}
-}
-
-if (!backgroundCard) {
-	if (image_angle != 0) {
-		if (!mouse_check_button(mb_left)) {
-			if (image_angle >= 180) {
-				image_angle += global.dt;
-			} else {
-				image_angle -= global.dt;
-			}
-		}
 	}
 }
 

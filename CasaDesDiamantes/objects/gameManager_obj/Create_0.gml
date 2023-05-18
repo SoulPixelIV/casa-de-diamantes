@@ -16,6 +16,8 @@ global.multiplierTimer = 700;
 global.multiplierTimerSave = global.multiplierTimer;
 global.timer = 0;
 global.drawTutorialInfectionUsed = false;
+global.pushDelay = 60;
+global.pushDelaySave = global.pushDelay;
 multiplierRun = false;
 
 global.reachedCasino = false;
@@ -114,6 +116,7 @@ global.unlockedWeapon[2] = false;
 global.unlockedWeapon[3] = false;
 global.unlockedWeapon[4] = false;
 
+blackjackBackToMenu = false;
 
 currVolBulletHitGround = audio_sound_get_gain(bulletHitGround_snd);
 currVolPistolShot = audio_sound_get_gain(pistolShot_snd);

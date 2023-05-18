@@ -34,6 +34,7 @@
     {"name":"inst_4B9DB591","path":"rooms/blackjackTable/blackjackTable.yy",},
     {"name":"inst_548E4132","path":"rooms/blackjackTable/blackjackTable.yy",},
     {"name":"inst_81FCAD0","path":"rooms/blackjackTable/blackjackTable.yy",},
+    {"name":"inst_65FB79C0","path":"rooms/blackjackTable/blackjackTable.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -69,6 +70,14 @@
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"button_obj","path":"objects/button_obj/button_obj.yy",},"propertyId":{"name":"hit","path":"objects/button_obj/button_obj.yy",},"value":"False",},
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"button_obj","path":"objects/button_obj/button_obj.yy",},"propertyId":{"name":"stand","path":"objects/button_obj/button_obj.yy",},"value":"True",},
           ],"rotation":0.0,"scaleX":0.609375,"scaleY":0.609375,"x":305.0,"y":225.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_65FB79C0","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"button_obj","path":"objects/button_obj/button_obj.yy",},"properties":[
+            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"button_obj","path":"objects/button_obj/button_obj.yy",},"propertyId":{"name":"bet500","path":"objects/button_obj/button_obj.yy",},"value":"False",},
+            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"button_obj","path":"objects/button_obj/button_obj.yy",},"propertyId":{"name":"text","path":"objects/button_obj/button_obj.yy",},"value":"Back",},
+            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"button_obj","path":"objects/button_obj/button_obj.yy",},"propertyId":{"name":"start","path":"objects/button_obj/button_obj.yy",},"value":"False",},
+            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"button_obj","path":"objects/button_obj/button_obj.yy",},"propertyId":{"name":"hit","path":"objects/button_obj/button_obj.yy",},"value":"False",},
+            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"button_obj","path":"objects/button_obj/button_obj.yy",},"propertyId":{"name":"stand","path":"objects/button_obj/button_obj.yy",},"value":"False",},
+            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"button_obj","path":"objects/button_obj/button_obj.yy",},"propertyId":{"name":"back","path":"objects/button_obj/button_obj.yy",},"value":"True",},
+          ],"rotation":0.0,"scaleX":0.609375,"scaleY":0.609375,"x":240.0,"y":177.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"GraphicsLayer","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7615C38","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"spotlightRed_obj","path":"objects/spotlightRed_obj/spotlightRed_obj.yy",},"properties":[
