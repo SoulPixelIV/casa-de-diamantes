@@ -33,30 +33,46 @@ function shooting_scr(argument0) {
 			{
 				if (dirCursor > 0 && dirCursor < 90)
 				{
-					horspeed -= shotJumpStrength / 16;
-					if (!player_obj.grounded) {
-						verspeed -= shotJumpStrength / 16;
+					if (place_free(x + horspeed * global.dt, y)) {
+						horspeed -= shotJumpStrength / 16;
+					}
+					if (place_free(x, y + verspeed * global.dt)) {
+						if (!player_obj.grounded) {
+							verspeed -= shotJumpStrength / 16;
+						}
 					}
 				}
 				if (dirCursor < 180 && dirCursor > 90)
 				{
-					horspeed += shotJumpStrength / 16;
-					if (!player_obj.grounded) {
-						verspeed -= shotJumpStrength / 16;
+					if (place_free(x + horspeed * global.dt, y)) {
+						horspeed += shotJumpStrength / 16;
+					}
+					if (place_free(x, y + verspeed * global.dt)) {
+						if (!player_obj.grounded) {
+							verspeed -= shotJumpStrength / 16;
+						}
 					}
 				}
 				if (dirCursor > 180 && dirCursor < 270)
 				{
-					horspeed += shotJumpStrength / 16;
-					if (!player_obj.grounded) {
-						verspeed -= shotJumpStrength / 16;
+					if (place_free(x + horspeed * global.dt, y)) {
+						horspeed += shotJumpStrength / 16;
+					}
+					if (place_free(x, y + verspeed * global.dt)) {
+						if (!player_obj.grounded) {
+							verspeed -= shotJumpStrength / 16;
+						}
 					}
 				}
 				if (dirCursor < 360 && dirCursor > 270)
 				{
-					horspeed -= shotJumpStrength / 16;
-					if (!player_obj.grounded) {
-						verspeed -= shotJumpStrength / 16;
+					if (place_free(x + horspeed * global.dt, y)) {
+						horspeed -= shotJumpStrength / 16;
+					}
+					if (place_free(x, y + verspeed * global.dt)) {
+						if (!player_obj.grounded) {
+							verspeed -= shotJumpStrength / 16;
+						}
 					}
 				}
 			}
@@ -89,30 +105,46 @@ function shooting_scr(argument0) {
 				{
 					if (dirCursor > 0 && dirCursor < 90)
 					{
-						horspeed -= shotJumpStrength / 14;
-						if (!player_obj.grounded) {
-							verspeed -= shotJumpStrength / 14;
+						if (place_free(x + horspeed * global.dt, y)) {
+							horspeed -= shotJumpStrength / 14;
+						}
+						if (place_free(x, y + verspeed * global.dt)) {
+							if (!player_obj.grounded) {
+								verspeed -= shotJumpStrength / 14;
+							}
 						}
 					}
 					if (dirCursor < 180 && dirCursor > 90)
 					{
-						horspeed += shotJumpStrength / 14;
-						if (!player_obj.grounded) {
-							verspeed -= shotJumpStrength / 14;
+						if (place_free(x + horspeed * global.dt, y)) {
+							horspeed += shotJumpStrength / 14;
+						}
+						if (place_free(x, y + verspeed * global.dt)) {
+							if (!player_obj.grounded) {
+								verspeed -= shotJumpStrength / 14;
+							}
 						}
 					}
 					if (dirCursor > 180 && dirCursor < 270)
 					{
-						horspeed += shotJumpStrength / 14;
-						if (!player_obj.grounded) {
-							verspeed -= shotJumpStrength / 14;
+						if (place_free(x + horspeed * global.dt, y)) {
+							horspeed += shotJumpStrength / 14;
+						}
+						if (place_free(x, y + verspeed * global.dt)) {
+							if (!player_obj.grounded) {
+								verspeed -= shotJumpStrength / 14;
+							}
 						}
 					}
 					if (dirCursor < 360 && dirCursor > 270)
 					{
-						horspeed -= shotJumpStrength / 14;
-						if (!player_obj.grounded) {
-							verspeed -= shotJumpStrength / 14;
+						if (place_free(x + horspeed * global.dt, y)) {
+							horspeed -= shotJumpStrength / 14;
+						}
+						if (place_free(x, y + verspeed * global.dt)) {
+							if (!player_obj.grounded) {
+								verspeed -= shotJumpStrength / 14;
+							}
 						}
 					}
 				}
@@ -148,23 +180,39 @@ function shooting_scr(argument0) {
 				{
 					if (dirCursor > 0 && dirCursor < 90)
 					{
-						horspeed -= shotJumpStrength / 3.5;
-						verspeed -= shotJumpStrength / 3.5;
+						if (place_free(x + horspeed * global.dt, y)) {
+							horspeed -= shotJumpStrength / 3.5;
+						}
+						if (place_free(x, y + verspeed * global.dt)) {
+							verspeed -= shotJumpStrength / 3.5;
+						}
 					}
 					if (dirCursor < 180 && dirCursor > 90)
 					{
-						horspeed += shotJumpStrength / 3.5;
-						verspeed -= shotJumpStrength / 3.5;
+						if (place_free(x + horspeed * global.dt, y)) {
+							horspeed += shotJumpStrength / 3.5;
+						}
+						if (place_free(x, y + verspeed * global.dt)) {
+							verspeed -= shotJumpStrength / 3.5;
+						}
 					}
 					if (dirCursor > 180 && dirCursor < 270)
 					{
-						horspeed += shotJumpStrength / 3.5;
-						verspeed -= shotJumpStrength / 3.5;
+						if (place_free(x + horspeed * global.dt, y)) {
+							horspeed += shotJumpStrength / 3.5;
+						}
+						if (place_free(x, y + verspeed * global.dt)) {
+							verspeed -= shotJumpStrength / 3.5;
+						}
 					}
 					if (dirCursor < 360 && dirCursor > 270)
 					{
-						horspeed -= shotJumpStrength / 3.5;
-						verspeed -= shotJumpStrength / 3.5;
+						if (place_free(x + horspeed * global.dt, y)) {
+							horspeed -= shotJumpStrength / 3.5;
+						}
+						if (place_free(x, y + verspeed * global.dt)) {
+							verspeed -= shotJumpStrength / 3.5;
+						}
 					}
 				}
 				global.shotgunAmmo--;
@@ -190,23 +238,39 @@ function shooting_scr(argument0) {
 			{
 				if (dirCursor > 0 && dirCursor < 90)
 				{
-					horspeed -= shotJumpStrength / 2.5;
-					verspeed -= shotJumpStrength / 2.5;
+					if (place_free(x + horspeed * global.dt, y)) {
+						horspeed -= shotJumpStrength / 2.5;
+					}
+					if (place_free(x, y + verspeed * global.dt)) {
+						verspeed -= shotJumpStrength / 2.5;
+					}
 				}
 				if (dirCursor < 180 && dirCursor > 90)
 				{
-					horspeed += shotJumpStrength / 2.5;
-					verspeed -= shotJumpStrength / 2.5;
+					if (place_free(x + horspeed * global.dt, y)) {
+						horspeed += shotJumpStrength / 2.5;
+					}
+					if (place_free(x, y + verspeed * global.dt)) {
+						verspeed -= shotJumpStrength / 2.5;
+					}
 				}
 				if (dirCursor > 180 && dirCursor < 270)
 				{
-					horspeed += shotJumpStrength / 2.5;
-					verspeed -= shotJumpStrength / 2.5;
+					if (place_free(x + horspeed * global.dt, y)) {
+						horspeed += shotJumpStrength / 2.5;
+					}
+					if (place_free(x, y + verspeed * global.dt)) {
+						verspeed -= shotJumpStrength / 2.5;
+					}
 				}
 				if (dirCursor < 360 && dirCursor > 270)
 				{
-					horspeed -= shotJumpStrength / 2.5;
-					verspeed -= shotJumpStrength / 2.5;
+					if (place_free(x + horspeed * global.dt, y)) {
+						horspeed -= shotJumpStrength / 2.5;
+					}
+					if (place_free(x, y + verspeed * global.dt)) {
+						verspeed -= shotJumpStrength / 2.5;
+					}
 				}
 			}
 			global.sniperCooldown = global.sniperCooldownSave;
@@ -236,30 +300,46 @@ function shooting_scr(argument0) {
 			{
 				if (dirCursor > 0 && dirCursor < 90)
 				{
-					horspeed -= shotJumpStrength / 16;
-					if (!player_obj.grounded) {
-						verspeed -= shotJumpStrength / 16;
+					if (place_free(x + horspeed * global.dt, y)) {
+						horspeed -= shotJumpStrength / 16;
+					}
+					if (place_free(x, y + verspeed * global.dt)) {
+						if (!player_obj.grounded) {
+							verspeed -= shotJumpStrength / 16;
+						}
 					}
 				}
 				if (dirCursor < 180 && dirCursor > 90)
 				{
-					horspeed += shotJumpStrength / 16;
-					if (!player_obj.grounded) {
-						verspeed -= shotJumpStrength / 16;
+					if (place_free(x + horspeed * global.dt, y)) {
+						horspeed += shotJumpStrength / 16;
+					}
+					if (place_free(x, y + verspeed * global.dt)) {
+						if (!player_obj.grounded) {
+							verspeed -= shotJumpStrength / 16;
+						}
 					}
 				}
 				if (dirCursor > 180 && dirCursor < 270)
 				{
-					horspeed += shotJumpStrength / 16;
-					if (!player_obj.grounded) {
-						verspeed -= shotJumpStrength / 16;
+					if (place_free(x + horspeed * global.dt, y)) {
+						horspeed += shotJumpStrength / 16;
+					}
+					if (place_free(x, y + verspeed * global.dt)) {
+						if (!player_obj.grounded) {
+							verspeed -= shotJumpStrength / 16;
+						}
 					}
 				}
 				if (dirCursor < 360 && dirCursor > 270)
 				{
-					horspeed -= shotJumpStrength / 16;
-					if (!player_obj.grounded) {
-						verspeed -= shotJumpStrength / 16;
+					if (place_free(x + horspeed * global.dt, y)) {
+						horspeed -= shotJumpStrength / 16;
+					}
+					if (place_free(x, y + verspeed * global.dt)) {
+						if (!player_obj.grounded) {
+							verspeed -= shotJumpStrength / 16;
+						}
 					}
 				}
 			}

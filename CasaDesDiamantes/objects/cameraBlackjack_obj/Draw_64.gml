@@ -20,7 +20,7 @@ if (blackJackCalc_obj.screen == 0)
 	
 	//Continue to Main Menu
 	if (pressDelay < 0) {
-		if (keyboard_check_pressed(vk_enter) || keyboard_check_pressed(vk_space) || gamepad_button_check_pressed(0, gp_face1) || gamepad_button_check_pressed(4, gp_face1)) {
+		if (keyboard_check_pressed(vk_enter) || keyboard_check_pressed(vk_space) || gamepad_button_check_pressed(0, gp_face1) || gamepad_button_check_pressed(4, gp_face1) || mouse_check_button_pressed(mb_left)) {
 			pressDelay = pressDelaySave;
 			blackJackCalc_obj.screen = 1;
 		}
@@ -298,18 +298,15 @@ if (blackJackCalc_obj.screen == 4)
 	else if ((blackJackCalc_obj.playerSum - (10 * blackJackCalc_obj.numberofAces)) == (blackJackCalc_obj.dealerSum - (10 * blackJackCalc_obj.numberofAcesDealer)))
 	{
 		//DRAW
-		if (blackJackCalc_obj.dealerSum == 21)
-		{
-			draw_set_color(c_black);
-			draw_text(global.xScreenSize / 2 - 1, global.yScreenSize / 3 + 1, "DRAW - CREDITS BACK");
-			draw_set_color(make_color_rgb(255, 215, 0));
-			draw_text(global.xScreenSize / 2, global.yScreenSize / 3, "DRAW - CREDITS BACK");
+		draw_set_color(c_black);
+		draw_text(global.xScreenSize / 2 - 1, global.yScreenSize / 3 + 1, "DRAW - CREDITS BACK");
+		draw_set_color(make_color_rgb(255, 215, 0));
+		draw_text(global.xScreenSize / 2, global.yScreenSize / 3, "DRAW - CREDITS BACK");
 			
-			draw_set_color(c_black);
-			draw_text(global.xScreenSize / 2 - 1, global.yScreenSize / 3 + 32 + 1, "Won 0$");
-			draw_set_color(make_color_rgb(255, 215, 0));
-			draw_text(global.xScreenSize / 2, global.yScreenSize / 3 + 32, "Won 0$");
-		}
+		draw_set_color(c_black);
+		draw_text(global.xScreenSize / 2 - 1, global.yScreenSize / 3 + 32 + 1, "Won 0$");
+		draw_set_color(make_color_rgb(255, 215, 0));
+		draw_text(global.xScreenSize / 2, global.yScreenSize / 3 + 32, "Won 0$");
 	}
 	else if ((blackJackCalc_obj.playerSum - (10 * blackJackCalc_obj.numberofAces)) < (blackJackCalc_obj.dealerSum - (10 * blackJackCalc_obj.numberofAcesDealer)))
 	{
@@ -323,19 +320,6 @@ if (blackJackCalc_obj.screen == 4)
 		draw_text(global.xScreenSize / 2 - 1, global.yScreenSize / 3 + 32 + 1, "Lost " + string(blackJackCalc_obj.moneypool) + "$");
 		draw_set_color(make_color_rgb(255, 215, 0));
 		draw_text(global.xScreenSize / 2, global.yScreenSize / 3 + 32, "Lost " + string(blackJackCalc_obj.moneypool) + "$");
-	}
-	else if (blackJackCalc_obj.playerSum == blackJackCalc_obj.dealerSum)
-	{
-		//DRAW
-		draw_set_color(c_black);
-		draw_text(global.xScreenSize / 2 - 1, global.yScreenSize / 3 + 1, "DRAW - CREDITS BACK");
-		draw_set_color(make_color_rgb(255, 215, 0));
-		draw_text(global.xScreenSize / 2, global.yScreenSize / 3, "DRAW - CREDITS BACK");
-			
-		draw_set_color(c_black);
-		draw_text(global.xScreenSize / 2 - 1, global.yScreenSize / 3 + 32 + 1, "Won 0$");
-		draw_set_color(make_color_rgb(255, 215, 0));
-		draw_text(global.xScreenSize / 2, global.yScreenSize / 3 + 32, "Won 0$");
 	}
 }
 draw_set_halign(fa_left);
