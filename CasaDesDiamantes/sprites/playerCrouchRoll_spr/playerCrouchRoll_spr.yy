@@ -3,7 +3,7 @@
   "resourceVersion": "1.0",
   "name": "playerCrouchRoll_spr",
   "bbox_bottom": 38,
-  "bbox_left": 14,
+  "bbox_left": 13,
   "bbox_right": 26,
   "bbox_top": 8,
   "bboxMode": 2,
