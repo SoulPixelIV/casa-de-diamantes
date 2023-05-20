@@ -1831,7 +1831,7 @@ if (verspeed < 2 && !onLadder && gravityOn)
 	verspeed -= gravityStrength * global.dt;
 }
 
-//Collision
+//Collision [1 ISSUE LEFT (CORNER STUCK)]
 if (colliding)
 {
 	//horspeed
