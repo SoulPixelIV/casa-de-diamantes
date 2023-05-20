@@ -737,8 +737,10 @@ if (!noHUD && instance_exists(player_obj))
 		if (global.unlockedWeapon[1] && global.unlockedWeapon[2]) {
 			if ((global.pistolAmmo + global.shotgunAmmo) < ((global.pistolAmmoMax + global.shotgunAmmoMax) / 5)) {
 				if (global.currentWeapon != gameManager_obj.pickedWeapon.pistol) {
-					draw_set_color(make_color_rgb(255,0,0));
 					draw_set_halign(fa_center);
+					draw_set_color(c_black);
+					draw_text(global.xScreenSize / 2 - 1, global.yScreenSize - global.yScreenSize / 4 + 16 + 1, "Low Ammo!");
+					draw_set_color(make_color_rgb(255,0,0));
 					draw_text(global.xScreenSize / 2, global.yScreenSize - global.yScreenSize / 4 + 16, "Low Ammo!");
 					draw_set_alpha(0.1);
 					draw_ellipse_color(-64, -150, global.xScreenSize + 64, global.yScreenSize + 360, c_red, c_black, false);
@@ -749,8 +751,10 @@ if (!noHUD && instance_exists(player_obj))
 		} else if (global.unlockedWeapon[1] && !global.unlockedWeapon[2]) {
 			if (global.pistolAmmo < global.pistolAmmoMax / 5) {
 				if (global.currentWeapon != gameManager_obj.pickedWeapon.pistol) {
-					draw_set_color(make_color_rgb(255,0,0));
 					draw_set_halign(fa_center);
+					draw_set_color(c_black);
+					draw_text(global.xScreenSize / 2 - 1, global.yScreenSize - global.yScreenSize / 4 + 16 + 1, "Low Ammo!");
+					draw_set_color(make_color_rgb(255,0,0));
 					draw_text(global.xScreenSize / 2, global.yScreenSize - global.yScreenSize / 4 + 16, "Low Ammo!");
 					draw_set_alpha(0.1);
 					draw_ellipse_color(-64, -150, global.xScreenSize + 64, global.yScreenSize + 360, c_red, c_black, false);
@@ -761,8 +765,10 @@ if (!noHUD && instance_exists(player_obj))
 		} else if (global.unlockedWeapon[2] && !global.unlockedWeapon[1]) {
 			if (global.shotgunAmmo < global.shotgunAmmoMax / 5) {
 				if (global.currentWeapon != gameManager_obj.pickedWeapon.pistol) {
-					draw_set_color(make_color_rgb(255,0,0));
 					draw_set_halign(fa_center);
+					draw_set_color(c_black);
+					draw_text(global.xScreenSize / 2 - 1, global.yScreenSize - global.yScreenSize / 4 + 16 + 1, "Low Ammo!");
+					draw_set_color(make_color_rgb(255,0,0));
 					draw_text(global.xScreenSize / 2, global.yScreenSize - global.yScreenSize / 4 + 16, "Low Ammo!");
 					draw_set_alpha(0.1);
 					draw_ellipse_color(-64, -150, global.xScreenSize + 64, global.yScreenSize + 360, c_red, c_black, false);
@@ -1188,16 +1194,31 @@ if (drawPause) {
 	draw_set_color(make_color_rgb(255, 215, 0));
 
 	if (pauseScreen == 0) {
+		draw_set_color(c_black);
+		draw_text(global.xScreenSize / 2 - 1, global.yScreenSize / 2.5 + 1, "Resume");
+		draw_set_color(make_color_rgb(255, 215, 0));
 		draw_text(global.xScreenSize / 2, global.yScreenSize / 2.5, "Resume");
+		draw_set_color(c_black);
+		draw_text(global.xScreenSize / 2 - 1, global.yScreenSize / 2.5 + 16 + 1, "Settings");
+		draw_set_color(make_color_rgb(255, 215, 0));
 		draw_text(global.xScreenSize / 2, global.yScreenSize / 2.5 + 16, "Settings");
+		draw_set_color(c_black);
+		draw_text(global.xScreenSize / 2 - 1, global.yScreenSize / 2.5 + 32 + 1, "Restart Checkpoint");
+		draw_set_color(make_color_rgb(255, 215, 0));
 		draw_text(global.xScreenSize / 2, global.yScreenSize / 2.5 + 32, "Restart Checkpoint");
 		if (global.reachedCasino) {
+			draw_set_color(c_black);
+			draw_text(global.xScreenSize / 2 - 1, global.yScreenSize / 2.5 + 48 + 1, "Return to Casino");
 			draw_set_color(make_color_rgb(255, 215, 0));
 			draw_text(global.xScreenSize / 2, global.yScreenSize / 2.5 + 48, "Return to Casino");
 		} else {
+			draw_set_color(c_black);
+			draw_text(global.xScreenSize / 2 - 1, global.yScreenSize / 2.5 + 48 + 1, "Return to Casino");
 			draw_set_color(make_color_rgb(110, 110, 110));
 			draw_text(global.xScreenSize / 2, global.yScreenSize / 2.5 + 48, "Return to Casino");
 		}
+		draw_set_color(c_black);
+		draw_text(global.xScreenSize / 2 - 1, global.yScreenSize / 2.5 + 64 + 1, "Quit to Main Menu");
 		draw_set_color(make_color_rgb(255, 215, 0));
 		draw_text(global.xScreenSize / 2, global.yScreenSize / 2.5 + 64, "Quit to Main Menu");
 	
@@ -1223,6 +1244,11 @@ if (drawPause) {
 	
 		draw_set_alpha(1);
 	} else {
+		draw_set_color(c_black);
+		draw_text(global.xScreenSize / 2 - 1, global.yScreenSize / 2.5 + 1, "Sound Volume [" + string(global.soundVolume) + "]");
+		draw_text(global.xScreenSize / 2 - 1, global.yScreenSize / 2.5 + 16 + 1, "Music Volume [" + string(global.musicVolume) + "]");
+		draw_text(global.xScreenSize / 2 - 1, global.yScreenSize / 2.5 + 32 + 1, "Back");
+		draw_set_color(make_color_rgb(255, 215, 0));
 		draw_text(global.xScreenSize / 2, global.yScreenSize / 2.5, "Sound Volume [" + string(global.soundVolume) + "]");
 		draw_text(global.xScreenSize / 2, global.yScreenSize / 2.5 + 16, "Music Volume [" + string(global.musicVolume) + "]");
 		draw_text(global.xScreenSize / 2, global.yScreenSize / 2.5 + 32, "Back");
