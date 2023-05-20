@@ -1831,53 +1831,33 @@ if (verspeed < 2 && !onLadder && gravityOn)
 	verspeed -= gravityStrength * global.dt;
 }
 
-//Collision [1 ISSUE LEFT (CORNER STUCK)]
+//Collision [1 ISSUE LEFT (STUCK CORNER)]
 if (colliding)
 {
 	//horspeed
-	if (!place_free(x + horspeed * global.dt, y)) {
-		for (var i = 0; i < abs(horspeed * global.dt); i += min(abs(horspeed * global.dt) - i, 1)) {
-			if (!place_free(x + (i * sign(horspeed * global.dt)), y)) {
-				x += (i * sign(horspeed * global.dt)) + -(sign(horspeed * global.dt));
-			
-				if (!wallJumping) {
-					horspeed = 0;
-				}
-			
-				if (!grounded && verspeed > 0) {
-					if (place_free(x, y + (verspeed * global.dt))) {
-						if (place_free(x, y - 16)) {
-							huggingWall = true;
-						}
+	if (!place_free(x + horspeed * global.dt, y))
+	{
+		if (sign(horspeed) != 0)
+		{
+			while (place_free(x + sign(horspeed), y))
+			{
+				x += sign(horspeed);
+			}
+			if (!wallJumping)
+			{
+				horspeed = 0;
+			}
+			if (!grounded && verspeed > 0)
+			{
+				if (place_free(x, y + (verspeed * global.dt)))
+				{
+					if (place_free(x, y - 16)) {
+						huggingWall = true;
 					}
 				}
-			
-				break;
 			}
 		}
 	}
-	/*
-	if (sign(horspeed) != 0)
-	{
-		while (place_free(x + sign(horspeed), y))
-		{
-			x += sign(horspeed);
-		}
-		if (!wallJumping)
-		{
-			horspeed = 0;
-		}
-		if (!grounded && verspeed > 0)
-		{
-			if (place_free(x, y + (verspeed * global.dt)))
-			{
-				if (place_free(x, y - 16)) {
-					huggingWall = true;
-				}
-			}
-		}
-	}*/
-	//}
 	//Enemy Collision
 	if (!isDashing) {
 		if (place_meeting(x + horspeed * global.dt, y, enemy_obj))
@@ -1909,36 +1889,21 @@ if (colliding)
 	}
 
 	//verspeed
-	if (!place_free(x, y + verspeed * global.dt)) {
-		for (var i = 0; i < abs(verspeed * global.dt); i += min(abs(verspeed * global.dt) - i, 1)) {
-			if (!place_free(x, y + (i * sign(verspeed * global.dt)))) {
-				y += (i * sign(verspeed * global.dt)) + -(sign(verspeed * global.dt));
+	if (!place_free(x, y + verspeed * global.dt))
+	{
+		if (sign(verspeed) != 0)
+		{
+			while (place_free(x, y + sign(verspeed)))
+			{
+				y += sign(verspeed);
+			}
+			if (place_free(x, y - 16)) {
+				resetJump_scr();
+			} else {
 				verspeed = 0;
-				
-				if (place_free(x, y - 16)) {
-					resetJump_scr();
-				} else {
-					verspeed = 0;
-				}
-				
-				break;
 			}
 		}
 	}
-	/*
-	if (sign(verspeed) != 0)
-	{
-		while (place_free(x, y + sign(verspeed)))
-		{
-			y += sign(verspeed);
-		}
-		if (place_free(x, y - 16)) {
-			resetJump_scr();
-		} else {
-			verspeed = 0;
-		}
-	}*/
-	//}
 	else
 	{
 		fallJumpSafety -= global.dt;
