@@ -1831,7 +1831,7 @@ if (verspeed < 2 && !onLadder && gravityOn)
 	verspeed -= gravityStrength * global.dt;
 }
 
-//Collision [1 ISSUE LEFT (STUCK CORNER)]
+//Collision
 if (colliding)
 {
 	//horspeed
@@ -1858,6 +1858,8 @@ if (colliding)
 			}
 		}
 	}
+	x += horspeed * global.dt;
+	
 	//Enemy Collision
 	if (!isDashing) {
 		if (place_meeting(x + horspeed * global.dt, y, enemy_obj))
@@ -1911,6 +1913,8 @@ if (colliding)
 		onMovingPlatform = false;
 		createdParticles = false;
 	}
+	y += verspeed * global.dt;
+	
 	//Enemy Collision
 	if (!isDashing) {
 		if (place_meeting(x, y + verspeed * global.dt, enemy_obj))
@@ -1928,7 +1932,7 @@ if (colliding)
 			verspeed = 0;
 		}
 	}
+} else {
+	x += horspeed * global.dt;
+	y += verspeed * global.dt;
 }
-
-x += horspeed * global.dt;
-y += verspeed * global.dt;
