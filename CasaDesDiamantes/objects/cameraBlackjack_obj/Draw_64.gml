@@ -86,6 +86,7 @@ if (blackJackCalc_obj.screen == 1) {
 					cursorPos = 0;
 				break;
 				case 1:
+				blackJackCalc_obj.screen = 5;
 					cursorPos = 0;
 				break;
 				case 2:
@@ -126,6 +127,52 @@ if (blackJackCalc_obj.screen == 2) {
 	draw_text(global.xScreenSize / 2 - 1, 84 + 1, "- Place your Bet -");
 	draw_set_color(make_color_rgb(255, 215, 0));
 	draw_text(global.xScreenSize / 2, 84, "- Place your Bet -");
+}
+
+//HELP MENU
+if (blackJackCalc_obj.screen == 5)
+{
+	draw_set_font(gothicPixelBig_fnt);
+	draw_set_halign(fa_center);
+	draw_set_color(c_black);
+	draw_text(global.xScreenSize / 2 - 1, 58 + 1, "Blackjack");
+	draw_set_color(make_color_rgb(255, 215, 0));
+	draw_text(global.xScreenSize / 2, 58, "Blackjack");
+	draw_set_font(gothicPixel_fnt);
+	draw_set_color(c_black);
+	draw_text(global.xScreenSize / 2 - 1, 84 + 1, "- How to Play -");
+	draw_set_color(make_color_rgb(255, 215, 0));
+	draw_text(global.xScreenSize / 2, 84, "- How to Play -");
+	
+	draw_set_font(gothicPixel_fnt);
+	
+	draw_set_color(c_black);
+	draw_text(global.xScreenSize / 2 - 1, 104 + 1, "-Beat the Dealer by having a higher hand value");
+	draw_set_color(make_color_rgb(255, 215, 0));
+	draw_text(global.xScreenSize / 2, 104, "-Beat the Dealer by having a higher hand value");
+	
+	draw_set_color(c_black);
+	draw_text(global.xScreenSize / 2 - 1, 124 + 1, "-The score shows your hand value");
+	draw_set_color(make_color_rgb(255, 215, 0));
+	draw_text(global.xScreenSize / 2, 124, "-The score shows your hand value");
+	
+	draw_set_color(c_black);
+	draw_text(global.xScreenSize / 2 - 1, 144 + 1, "-Do not draw over a value of 21");
+	draw_set_color(make_color_rgb(255, 215, 0));
+	draw_text(global.xScreenSize / 2, 144, "-Do not draw over a value of 21");
+	
+	draw_set_color(c_black);
+	draw_text(global.xScreenSize / 2 - 1, 164 + 1, "-J,Q,K count as 10|A counts as either 1 or 11");
+	draw_set_color(make_color_rgb(255, 215, 0));
+	draw_text(global.xScreenSize / 2, 164, "-J,Q,K count as 10|A counts as either 1 or 11");
+	
+	//Continue to Main Menu
+	if (pressDelay < 0) {
+		if (keyboard_check_pressed(vk_enter) || keyboard_check_pressed(vk_space) || gamepad_button_check_pressed(0, gp_face1) || gamepad_button_check_pressed(4, gp_face1) || mouse_check_button_pressed(mb_left)) {
+			pressDelay = pressDelaySave;
+			blackJackCalc_obj.screen = 1;
+		}
+	}
 }
 	
 //Chipbar Digit Calculation
