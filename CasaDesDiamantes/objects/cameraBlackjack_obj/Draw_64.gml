@@ -78,21 +78,29 @@ if (blackJackCalc_obj.screen == 1) {
 	if (pressDelay < 0) {
 		if (keyboard_check_pressed(vk_enter) || keyboard_check_pressed(vk_space) || gamepad_button_check_pressed(0, gp_face1) || gamepad_button_check_pressed(4, gp_face1))
 		{
-			pressDelay = pressDelaySave;
 			switch (cursorPos)
 			{
 				case 0:
-					blackJackCalc_obj.screen = 2;
-					cursorPos = 0;
+					if (pressDelay < 0) {
+						blackJackCalc_obj.screen = 2;
+						cursorPos = 0;
+						pressDelay = pressDelaySave;
+					}
 				break;
 				case 1:
-				blackJackCalc_obj.screen = 5;
-					cursorPos = 0;
+					if (pressDelay < 0) {
+						blackJackCalc_obj.screen = 5;
+						cursorPos = 0;
+						pressDelay = pressDelaySave;
+					}
 				break;
 				case 2:
-					global.spawn = 1;
-					room_goto(level_Casino);
-					cursorPos = 0;
+					if (pressDelay < 0) {
+						global.spawn = 1;
+						room_goto(level_Casino);
+						cursorPos = 0;
+						pressDelay = pressDelaySave;
+					}
 				break;
 			}
 		}
@@ -157,17 +165,37 @@ if (blackJackCalc_obj.screen == 2) {
 			switch (cursorPos)
 			{
 				case 0:
-					//bet50
-					cursorPos = 0;
+					if (pressDelay < 0) {
+						if (global.money > 49) {
+							blackJackCalc_obj.moneypool += 50;
+							global.money -= 50;
+							cameraBlackjack_obj.scoreSpin = true;
+							cameraBlackjack_obj.scoreSpinTimer = cameraBlackjack_obj.scoreSpinTimerSave;
+							blackjackChipHolderSpawner_obj.spawning50 = true;
+						}
+						pressDelay = pressDelaySave;
+					}
 				break;
 				case 1:
-					//bet500
-					cursorPos = 0;
+					if (pressDelay < 0) {
+						if (global.money > 499) {
+							blackJackCalc_obj.moneypool += 500;
+							global.money -= 500;
+							cameraBlackjack_obj.scoreSpin = true;
+							cameraBlackjack_obj.scoreSpinTimer = cameraBlackjack_obj.scoreSpinTimerSave;
+							blackjackChipHolderSpawner_obj.spawning500 = true;
+						}
+						pressDelay = pressDelaySave;
+					}
 				break;
 				case 2:
-					global.spawn = 1;
-					room_goto(level_Casino);
-					cursorPos = 0;
+					if (pressDelay < 0) {
+						if (blackJackCalc_obj.moneypool != 0) {
+							blackJackCalc_obj.screen = 3;
+							cursorPos = 0;
+						}
+						pressDelay = pressDelaySave;
+					}
 				break;
 			}
 		}
@@ -177,13 +205,13 @@ if (blackJackCalc_obj.screen == 2) {
 	switch (cursorPos)
 	{
 		case 0:
-			draw_sprite(chipRed_spr, cursorAnim, global.xScreenSize / 2 - 32, 128);
+			draw_sprite(chipRed_spr, cursorAnim, global.xScreenSize / 2 - 92, 122);
 		break;
 		case 1:
-			draw_sprite(chipRed_spr, cursorAnim, global.xScreenSize / 2 - 48, 152);
+			draw_sprite(chipRed_spr, cursorAnim, global.xScreenSize / 2 - 92, 160);
 		break;
 		case 2:
-			draw_sprite(chipRed_spr, cursorAnim, global.xScreenSize / 2 - 32, 176);
+			draw_sprite(chipRed_spr, cursorAnim, global.xScreenSize / 2 - 92, 198);
 		break;
 	}
 }
@@ -441,14 +469,11 @@ if (inputMethod == 0) {
 } else {
 	cursorImage += global.dt / 16;
 	
-	/*
-	if (blackJackCalc_obj.screen == 0) {
+	if (blackJackCalc_obj.screen == 3) {
 		if (blackjackMenuElement == 0) {
 			draw_sprite(chipRed_spr, cursorImage, 142, 124);
 		} else if (blackjackMenuElement == 1) {
 			draw_sprite(chipRed_spr, cursorImage, 298, 124);
-		} else if (blackjackMenuElement == 2) {
-			draw_sprite(chipRed_spr, cursorImage, 206, 202);
 		}
 
 		if (keyboard_check_pressed(ord("A")) || keyboard_check_pressed(vk_left) || gamepad_button_check_pressed(0, gp_padl) || gamepad_button_check_pressed(4, gp_padl)) {
@@ -460,69 +485,6 @@ if (inputMethod == 0) {
 		}
 	
 		if (keyboard_check_pressed(ord("D")) || keyboard_check_pressed(vk_right) || gamepad_button_check_pressed(0, gp_padr) || gamepad_button_check_pressed(4, gp_padr)) {
-			if (blackjackMenuElement == 1) {
-				blackjackMenuElement = 0;
-			} else {
-				blackjackMenuElement = 1;
-			}
-		}
-	
-		if (keyboard_check_pressed(ord("S")) || keyboard_check_pressed(vk_down) || gamepad_button_check_pressed(0, gp_padd) || gamepad_button_check_pressed(4, gp_padd) || gamepad_button_check_pressed(0, gp_padu) || gamepad_button_check_pressed(4, gp_padu)) {
-			if (blackjackMenuElement == 0 || blackjackMenuElement == 1) {
-				blackjackMenuElement = 2;
-			} else {
-				blackjackMenuElement = 0;
-			}
-		}
-	
-		if (gamepad_button_check_pressed(0, gp_face1) || gamepad_button_check_pressed(4, gp_face1)) {
-			if (blackjackMenuElement == 0) {
-				if (global.money > 49)
-				{
-					blackJackCalc_obj.moneypool += 50;
-					global.money -= 50;
-					scoreSpin = true;
-					scoreSpinTimer = scoreSpinTimerSave;
-				}
-			} else if (blackjackMenuElement == 1) {
-				if (global.money > 499)
-				{
-					blackJackCalc_obj.moneypool += 500;
-					global.money -= 500;
-					cameraBlackjack_obj.scoreSpin = true;
-					cameraBlackjack_obj.scoreSpinTimer = cameraBlackjack_obj.scoreSpinTimerSave;
-				}
-			} else if (blackjackMenuElement == 2) {
-				if (blackJackCalc_obj.moneypool != 0)
-				{
-					blackJackCalc_obj.screen = 1;
-				}
-			}
-		}
-	} else if (blackJackCalc_obj.screen == 1) {
-		if (blackjackMenuElement == 0) {
-			draw_sprite(chipRed_spr, cursorImage, 73, 93);
-		} else if (blackjackMenuElement == 1) {
-			draw_sprite(chipRed_spr, cursorImage, 61, 189);
-		}
-
-		if (keyboard_check_pressed(ord("A")) || keyboard_check_pressed(vk_left) || gamepad_button_check_pressed(0, gp_padl) || gamepad_button_check_pressed(4, gp_padl)) {
-			if (blackjackMenuElement == 0) {
-				blackjackMenuElement = 1;
-			} else {
-				blackjackMenuElement = 0;
-			}
-		}
-	
-		if (keyboard_check_pressed(ord("D")) || keyboard_check_pressed(vk_right) || gamepad_button_check_pressed(0, gp_padr) || gamepad_button_check_pressed(4, gp_padr)) {
-			if (blackjackMenuElement == 1) {
-				blackjackMenuElement = 0;
-			} else {
-				blackjackMenuElement = 1;
-			}
-		}
-	
-		if (keyboard_check_pressed(ord("S")) || keyboard_check_pressed(vk_down) || gamepad_button_check_pressed(0, gp_padd) || gamepad_button_check_pressed(4, gp_padd) || gamepad_button_check_pressed(0, gp_padu) || gamepad_button_check_pressed(4, gp_padu)) {
 			if (blackjackMenuElement == 1) {
 				blackjackMenuElement = 0;
 			} else {
@@ -537,19 +499,7 @@ if (inputMethod == 0) {
 				blackJackCalc_obj.dealerDraws = true;
 			}
 		}
-	} else if (blackJackCalc_obj.screen == 2) {
-		blackjackMenuElement = 0;
-		if (blackjackMenuElement == 0) {
-			draw_sprite(chipRed_spr, cursorImage, 195, 202);
-		}
-	
-		if (gamepad_button_check_pressed(0, gp_face1) || gamepad_button_check_pressed(4, gp_face1)) {
-			if (blackjackMenuElement == 0) {
-				room_restart();
-			}
-		}
 	}
-	*/
 }
 
 //#####LAYER 4#####
