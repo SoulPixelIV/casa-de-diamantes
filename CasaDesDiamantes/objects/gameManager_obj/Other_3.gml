@@ -1,1 +1,1 @@
-//steam_shutdown();
+steam_shutdown();

@@ -53,6 +53,7 @@ else
 	display_mouse_unlock();
 }
 
+/*
 if (keyboard_check_pressed(vk_f1))
 {
 	restartInProg = true;
@@ -73,7 +74,7 @@ if (keyboard_check_pressed(vk_f3) && room != mainmenu && room != levelSelect && 
 	audio_stop_all();
 	instance_destroy(player_obj);
 	room_goto(levelSelect);
-}
+}*/
 /*
 if (keyboard_check_pressed(vk_f11))
 {

@@ -1,6 +1,5 @@
 /// @description Changing Values
 
-/*
 //STEAM
 steam_update();
 
@@ -18,7 +17,7 @@ if (steam_initialised()) {
 	} else if (room == level4 || room == level5A || room == level5B || room == level6 || room == level7 || room == level8) {
 		steam_set_rich_presence("steam_display", "#StatusSenzelaForest");
 	}
-}*/
+}
 
 //Audio Pitch
 audio_sound_pitch(pistolShot_snd, clamp(1 * global.timeScale, 0.5, 1.5));

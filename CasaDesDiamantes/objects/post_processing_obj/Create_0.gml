@@ -28,7 +28,7 @@ blackjack_profile = new PPFX_Profile("Main", blackjackEffects);
 var creditsEffects = [
 	new FX_Bloom(true, 6, 0.5, 1.18, c_white, 0.3, true, undefined, 0.8, 1, true),
 	new FX_SunShafts(true, [0.5, 0.5], 0.3, 0.43, 0.45, 1.6, 0.4, true, 0.7, 0.05, 0.15),
-	new FX_NoiseGrain(true, 0.05),
+	new FX_NoiseGrain(true, 0.5),
 ];
 credits_profile = new PPFX_Profile("Main", creditsEffects);
 var tutorialEffects = [
