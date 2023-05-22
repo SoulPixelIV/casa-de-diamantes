@@ -5,7 +5,7 @@ horspeed = 0;
 verspeed = 0;
 
 //Stats
-hp = 140;
+hp = 110;
 colliding = true;
 hitable = true;
 moneyDropTimer = 95;

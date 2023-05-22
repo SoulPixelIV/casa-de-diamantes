@@ -1858,7 +1858,6 @@ if (colliding)
 			}
 		}
 	}
-	x += horspeed * global.dt;
 	
 	//Enemy Collision
 	if (!isDashing) {
@@ -1889,6 +1888,8 @@ if (colliding)
 		huggingWall = false;
 		setWallDir = false;
 	}
+	
+	x += horspeed * global.dt;
 
 	//verspeed
 	if (!place_free(x, y + verspeed * global.dt))
@@ -1913,7 +1914,6 @@ if (colliding)
 		onMovingPlatform = false;
 		createdParticles = false;
 	}
-	y += verspeed * global.dt;
 	
 	//Enemy Collision
 	if (!isDashing) {
@@ -1932,6 +1932,8 @@ if (colliding)
 			verspeed = 0;
 		}
 	}
+	
+	y += verspeed * global.dt;
 } else {
 	x += horspeed * global.dt;
 	y += verspeed * global.dt;

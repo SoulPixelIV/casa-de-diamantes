@@ -192,7 +192,7 @@ if (screen == 3 || screen == 4)
 }
 
 //Escape
-if (keyboard_check(vk_escape) || gamepad_button_check_pressed(4, gp_select) || gamepad_button_check_pressed(0, gp_select))
+if (keyboard_check(vk_escape) || gamepad_button_check_pressed(4, gp_select) || gamepad_button_check_pressed(0, gp_select) || gamepad_button_check_pressed(4, gp_face2) || gamepad_button_check_pressed(0, gp_face2))
 {
 	if (global.pushDelay < 0) {
 		if (screen == 2) {
