@@ -419,37 +419,37 @@ if (!noHUD && instance_exists(player_obj))
 	if (player_obj.plagueTransformation)
 	{
 		draw_sprite_ext(healthbarLensflare_spr, -1, (0 / 2) + 22, (0 / 2) + 130, 1, 1, 0, c_purple, 1);
-		draw_sprite_ext(healthbarBorderInfection_spr, -1, (0 / 2) + 16, (0 / 2) + 9, 1, 1, 0, -1, 1);
+		draw_sprite_ext(healthbarBorderInfection_spr, -1, (0 / 2) + 11, (0 / 2) + 11, 1, 1, 0, -1, 1);
 	}
 	else if (player_obj.hp == 100)
 	{
-		draw_sprite_ext(healthbarBorderFull_spr, -1, (0 / 2) + 16, (0 / 2) + 9, 1, 1, 0, -1, 1);
+		draw_sprite_ext(healthbarBorderFull_spr, -1, (0 / 2) + 11, (0 / 2) + 11, 1, 1, 0, -1, 1);
 	}
 	else if (player_obj.hp > 20)
 	{
-		draw_sprite_ext(healthbarBorder_spr, -1, (0 / 2) + 16, (0 / 2) + 9, 1, 1, 0, -1, 1);
+		draw_sprite_ext(healthbarBorderFull_spr, -1, (0 / 2) + 11, (0 / 2) + 11, 1, 1, 0, -1, 1);
 	}
 	else
 	{
 		draw_sprite_ext(healthbarLensflare_spr, -1, (0 / 2) + 22, (0 / 2) + 130, 1, 1, 0, -1, 1);
-		draw_sprite_ext(healthbarBorderLow_spr, -1, (0 / 2) + 16, (0 / 2) + 9, 1, 1, 0, -1, 1);
+		draw_sprite_ext(healthbarBorderLow_spr, -1, (0 / 2) + 11, (0 / 2) + 11, 1, 1, 0, -1, 1);
 	}
 	if (!player_obj.damageRecieved && healthbarDone)
 	{
-		draw_sprite_ext(healthbarTop2_spr, -1, 18 + (0 / 2), 18 - (player_obj.hp - 100) + (0 / 2), 1, 1, 0, -1, 1);
+		draw_sprite_ext(healthbarTop2_spr, -1, 12 + (0 / 2), 18 - (player_obj.hp - 100) + (0 / 2), 1, 1, 0, -1, 1);
 	}
-	draw_sprite_ext(healthbar_spr, 0, 18 + (0 / 2), 130 + (0 / 2), 1, clamp(1 * (player_obj.hp / 100), 0, 100), 0, -1, 1);
+	draw_sprite_ext(healthbar_spr, 0, 12 + (0 / 2), 130 + (0 / 2), 1, clamp(1 * (player_obj.hp / 100), 0, 100), 0, -1, 1);
 	if (player_obj.plagueTransformation)
 	{
-		draw_sprite_ext(healthbarTop2Infection_spr, -1, 18 + (0 / 2), (118 - player_obj.infection) + (0 / 2), 1, 1, 0, -1, 1);
-		draw_sprite_ext(healthbarInfection_spr, 0, 18 + (0 / 2), 130 + (0 / 2), 1, player_obj.infection / 100, 0, -1, 1);
+		draw_sprite_ext(healthbarTop2Infection_spr, -1, 12 + (0 / 2), (118 - player_obj.infection) + (0 / 2), 1, 1, 0, -1, 1);
+		draw_sprite_ext(healthbarInfection_spr, 0, 12 + (0 / 2), 130 + (0 / 2), 1, player_obj.infection / 100, 0, -1, 1);
 	}
 	//Damage Healthbar
 	if (player_obj.damageRecieved || healthbarShrinkStart)
 	{
 		healthbarDone = false;
-		draw_sprite_ext(healthbarTop2Damage_spr, -1, 18 + (0 / 2), ((18 - (player_obj.hpOld - 100)) + healthbarShrinking) + (0 / 2), 1, 1, 0, -1, 1);
-		draw_sprite_ext(healthbarDamage_spr, 0, 18 + (0 / 2), (30 - (player_obj.hpOld - 100)) + healthbarShrinking + (0 / 2), 1, ((player_obj.hp / 100) - (player_obj.hpOld / 100)) + (healthbarShrinking / 100), 0, -1, 1);
+		draw_sprite_ext(healthbarTop2Damage_spr, -1, 12 + (0 / 2), ((18 - (player_obj.hpOld - 100)) + healthbarShrinking) + (0 / 2), 1, 1, 0, -1, 1);
+		draw_sprite_ext(healthbarDamage_spr, 0, 12 + (0 / 2), (30 - (player_obj.hpOld - 100)) + healthbarShrinking + (0 / 2), 1, ((player_obj.hp / 100) - (player_obj.hpOld / 100)) + (healthbarShrinking / 100), 0, -1, 1);
 	}
 	if (!player_obj.damageRecieved && !healthbarDone)
 	{

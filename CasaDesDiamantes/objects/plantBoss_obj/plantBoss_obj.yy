@@ -26,8 +26,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "plantBoss_spr",
-    "path": "sprites/plantBoss_spr/plantBoss_spr.yy",
+    "name": "eyeVirusBoss_spr",
+    "path": "sprites/eyeVirusBoss_spr/eyeVirusBoss_spr.yy",
   },
   "spriteMaskId": null,
   "visible": true,
