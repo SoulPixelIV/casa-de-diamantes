@@ -210,8 +210,6 @@
     {"name":"inst_512F18FF","path":"rooms/level7/level7.yy",},
     {"name":"inst_5B0AE96C","path":"rooms/level7/level7.yy",},
     {"name":"inst_6F45B85A","path":"rooms/level7/level7.yy",},
-    {"name":"inst_6D8B02A6","path":"rooms/level7/level7.yy",},
-    {"name":"inst_7EE61578","path":"rooms/level7/level7.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -440,8 +438,6 @@
           ],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":3872.0,"y":1664.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_119DD46E","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"dualBarettas_obj","path":"objects/dualBarettas_obj/dualBarettas_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1952.0,"y":2592.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_1857612B","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"shotgun_obj","path":"objects/shotgun_obj/shotgun_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1984.0,"y":2592.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_6D8B02A6","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"toxicCloud_obj","path":"objects/toxicCloud_obj/toxicCloud_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1216.0,"y":1728.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7EE61578","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"plagueDoor_obj","path":"objects/plagueDoor_obj/plagueDoor_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1216.0,"y":1728.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"MidgroundObjects","depth":1300,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Tiles","depth":1400,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":125,"SerialiseWidth":250,"TileCompressedData":[

@@ -436,9 +436,13 @@ if (!noHUD && instance_exists(player_obj))
 	}
 	if (!player_obj.damageRecieved && healthbarDone)
 	{
-		draw_sprite_ext(healthbarTop2_spr, -1, 12 + (0 / 2), 18 - (player_obj.hp - 100) + (0 / 2), 1, 1, 0, -1, 1);
+		if (player_obj.hp > 1) {
+			draw_sprite_ext(healthbarTop2_spr, -1, 12 + (0 / 2), 18 - (player_obj.hp - 100) + (0 / 2), 1, 1, 0, -1, 1);
+		}
 	}
-	draw_sprite_ext(healthbar_spr, 0, 12 + (0 / 2), 130 + (0 / 2), 1, clamp(1 * (player_obj.hp / 100), 0, 100), 0, -1, 1);
+	if (player_obj.hp > 1) {
+		draw_sprite_ext(healthbar_spr, 0, 12 + (0 / 2), 130 + (0 / 2), 1, clamp(1 * (player_obj.hp / 100), 0, 100), 0, -1, 1);
+	}
 	if (player_obj.plagueTransformation)
 	{
 		draw_sprite_ext(healthbarTop2Infection_spr, -1, 12 + (0 / 2), (118 - player_obj.infection) + (0 / 2), 1, 1, 0, -1, 1);
@@ -448,8 +452,10 @@ if (!noHUD && instance_exists(player_obj))
 	if (player_obj.damageRecieved || healthbarShrinkStart)
 	{
 		healthbarDone = false;
-		draw_sprite_ext(healthbarTop2Damage_spr, -1, 12 + (0 / 2), ((18 - (player_obj.hpOld - 100)) + healthbarShrinking) + (0 / 2), 1, 1, 0, -1, 1);
-		draw_sprite_ext(healthbarDamage_spr, 0, 12 + (0 / 2), (30 - (player_obj.hpOld - 100)) + healthbarShrinking + (0 / 2), 1, ((player_obj.hp / 100) - (player_obj.hpOld / 100)) + (healthbarShrinking / 100), 0, -1, 1);
+		if (player_obj.hp > 1) {
+			draw_sprite_ext(healthbarTop2Damage_spr, -1, 12 + (0 / 2), ((18 - (player_obj.hpOld - 100)) + healthbarShrinking) + (0 / 2), 1, 1, 0, -1, 1);
+			draw_sprite_ext(healthbarDamage_spr, 0, 12 + (0 / 2), (30 - (player_obj.hpOld - 100)) + healthbarShrinking + (0 / 2), 1, ((player_obj.hp / 100) - (player_obj.hpOld / 100)) + (healthbarShrinking / 100), 0, -1, 1);
+		}
 	}
 	if (!player_obj.damageRecieved && !healthbarDone)
 	{
