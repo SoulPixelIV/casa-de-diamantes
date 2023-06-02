@@ -1031,6 +1031,7 @@
     {"id":{"name":"basicZombieAttack1_snd","path":"sounds/basicZombieAttack1_snd/basicZombieAttack1_snd.yy",},},
     {"id":{"name":"shadow_map_ensure_exists","path":"scripts/shadow_map_ensure_exists/shadow_map_ensure_exists.yy",},},
     {"id":{"name":"goldenElevatorDirtyForeground_spr","path":"sprites/goldenElevatorDirtyForeground_spr/goldenElevatorDirtyForeground_spr.yy",},},
+    {"id":{"name":"healthbarBorderBoss_spr","path":"sprites/healthbarBorderBoss_spr/healthbarBorderBoss_spr.yy",},},
     {"id":{"name":"battleArenaWoundedpoint_obj","path":"objects/battleArenaWoundedpoint_obj/battleArenaWoundedpoint_obj.yy",},},
     {"id":{"name":"darkcaveBackground2_obj","path":"objects/darkcaveBackground2_obj/darkcaveBackground2_obj.yy",},},
     {"id":{"name":"rose_spr","path":"sprites/rose_spr/rose_spr.yy",},},

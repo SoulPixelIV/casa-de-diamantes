@@ -448,6 +448,12 @@ if (!noHUD && instance_exists(player_obj))
 		draw_sprite_ext(healthbarTop2Infection_spr, -1, 12 + (0 / 2), (118 - player_obj.infection) + (0 / 2), 1, 1, 0, -1, 1);
 		draw_sprite_ext(healthbarInfection_spr, 0, 12 + (0 / 2), 130 + (0 / 2), 1, player_obj.infection / 100, 0, -1, 1);
 	}
+	
+	//Boss Healthbar
+	if (showBossHealthbar) {
+		draw_sprite_ext(healthbarBorderBoss_spr, -1, global.xScreenSize / 2, global.yScreenSize - 26, 1, 1, 0, -1, 1);
+	}
+	
 	//Damage Healthbar
 	if (player_obj.damageRecieved || healthbarShrinkStart)
 	{
@@ -502,7 +508,7 @@ if (!noHUD && instance_exists(player_obj))
 	}
 	
 	//Chipbar
-	draw_sprite_ext(scoreBorder_spr, -1, global.xScreenSize - 16, 9, 1, 1, 0, -1, 1);
+	draw_sprite_ext(scoreBorder_spr, -1, global.xScreenSize - 11, 11, 1, 1, 0, -1, 1);
 	
 	//###### UI TECH ######
 	//Radiation Meter
@@ -577,23 +583,23 @@ if (!noHUD && instance_exists(player_obj))
 	if (scoreSpin)
 	{
 		scoreSpinTimer -= global.dt;
-		draw_sprite(scoreNumberSpin_spr, -1, global.xScreenSize - 28, 11 + (0 / 2));
-		draw_sprite(scoreNumberSpin_spr, -1, global.xScreenSize - 38, 11 + (0 / 2));
-		draw_sprite(scoreNumberSpin_spr, -1, global.xScreenSize - 48, 11 + (0 / 2));
-		draw_sprite(scoreNumberSpin_spr, -1, global.xScreenSize - 58, 11 + (0 / 2));
-		draw_sprite(scoreNumberSpin_spr, -1, global.xScreenSize - 68, 11 + (0 / 2));
-		draw_sprite(scoreNumberSpin_spr, -1, global.xScreenSize - 78, 11 + (0 / 2));
-		draw_sprite(scoreNumberSpin_spr, -1, global.xScreenSize - 88, 11 + (0 / 2));
+		draw_sprite(scoreNumberSpin_spr, -1, global.xScreenSize - 21, 12 + (0 / 2));
+		draw_sprite(scoreNumberSpin_spr, -1, global.xScreenSize - 31, 12 + (0 / 2));
+		draw_sprite(scoreNumberSpin_spr, -1, global.xScreenSize - 41, 12 + (0 / 2));
+		draw_sprite(scoreNumberSpin_spr, -1, global.xScreenSize - 51, 12 + (0 / 2));
+		draw_sprite(scoreNumberSpin_spr, -1, global.xScreenSize - 61, 12 + (0 / 2));
+		draw_sprite(scoreNumberSpin_spr, -1, global.xScreenSize - 71, 12 + (0 / 2));
+		draw_sprite(scoreNumberSpin_spr, -1, global.xScreenSize - 81, 12 + (0 / 2));
 	}
 	else
 	{
-		draw_sprite(scoreNumber_spr, slots[6], global.xScreenSize - 28, 11 + (0 / 2));
-		draw_sprite(scoreNumber_spr, slots[5], global.xScreenSize - 38, 11 + (0 / 2));
-		draw_sprite(scoreNumber_spr, slots[4], global.xScreenSize - 48, 11 + (0 / 2));
-		draw_sprite(scoreNumber_spr, slots[3], global.xScreenSize - 58, 11 + (0 / 2));
-		draw_sprite(scoreNumber_spr, slots[2], global.xScreenSize - 68, 11 + (0 / 2));
-		draw_sprite(scoreNumber_spr, slots[1], global.xScreenSize - 78, 11 + (0 / 2));
-		draw_sprite(scoreNumber_spr, slots[0], global.xScreenSize - 88, 11 + (0 / 2));
+		draw_sprite(scoreNumber_spr, slots[6], global.xScreenSize - 21, 12 + (0 / 2));
+		draw_sprite(scoreNumber_spr, slots[5], global.xScreenSize - 31, 12 + (0 / 2));
+		draw_sprite(scoreNumber_spr, slots[4], global.xScreenSize - 41, 12 + (0 / 2));
+		draw_sprite(scoreNumber_spr, slots[3], global.xScreenSize - 51, 12 + (0 / 2));
+		draw_sprite(scoreNumber_spr, slots[2], global.xScreenSize - 61, 12 + (0 / 2));
+		draw_sprite(scoreNumber_spr, slots[1], global.xScreenSize - 71, 12 + (0 / 2));
+		draw_sprite(scoreNumber_spr, slots[0], global.xScreenSize - 81, 12 + (0 / 2));
 	}
 	
 	if (scoreSpinTimer < 0)

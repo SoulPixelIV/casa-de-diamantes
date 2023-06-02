@@ -66,6 +66,7 @@ drawPause = false;
 pauseAlpha = 0;
 pauseOffset = 0;
 pauseScreen = 0;
+showBossHealthbar = true;
 
 cameraSpeed = 0.02;
 ycameraSpeed = 0.02;
