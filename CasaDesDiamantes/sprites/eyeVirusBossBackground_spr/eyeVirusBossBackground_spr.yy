@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
-  "name": "eyeVirusBoss_spr",
+  "name": "eyeVirusBossBackground_spr",
   "bbox_bottom": 127,
   "bbox_left": 197,
   "bbox_right": 281,
@@ -20,9 +20,9 @@
   "height": 185,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"3971deb5-26fa-4836-bcad-2cbfa32bda7c","blendMode":0,"displayName":"eye","isLocked":false,"opacity":100.0,"visible":true,},
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"fda2c408-9940-4dd0-80eb-f2636cbd6b19","blendMode":0,"displayName":"rootsForeground","isLocked":false,"opacity":100.0,"visible":false,},
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"291c10f7-2122-49c4-966c-16b50f4cda72","blendMode":0,"displayName":"roots","isLocked":false,"opacity":100.0,"visible":false,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"3971deb5-26fa-4836-bcad-2cbfa32bda7c","blendMode":0,"displayName":"eye","isLocked":false,"opacity":100.0,"visible":false,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"fda2c408-9940-4dd0-80eb-f2636cbd6b19","blendMode":0,"displayName":"rootsForeground","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"291c10f7-2122-49c4-966c-16b50f4cda72","blendMode":0,"displayName":"roots","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 4,
@@ -34,7 +34,7 @@
   "sequence": {
     "resourceType": "GMSequence",
     "resourceVersion": "1.4",
-    "name": "eyeVirusBoss_spr",
+    "name": "eyeVirusBossBackground_spr",
     "autoRecord": true,
     "backdropHeight": 768,
     "backdropImageOpacity": 0.5,
@@ -56,7 +56,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"15755288-e766-46ef-9118-a4bb67768e8c","path":"sprites/eyeVirusBoss_spr/eyeVirusBoss_spr.yy",},},},"Disabled":false,"id":"dcae3ec0-ee37-4689-8530-290e2c4f81ae","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"15755288-e766-46ef-9118-a4bb67768e8c","path":"sprites/eyeVirusBossBackground_spr/eyeVirusBossBackground_spr.yy",},},},"Disabled":false,"id":"c57eb90d-032e-41bf-9e88-7a46ea33b999","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
