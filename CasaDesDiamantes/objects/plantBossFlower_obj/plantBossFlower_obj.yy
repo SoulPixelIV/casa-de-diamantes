@@ -30,8 +30,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "rose_spr",
-    "path": "sprites/rose_spr/rose_spr.yy",
+    "name": "redstripes_spr",
+    "path": "sprites/redstripes_spr/redstripes_spr.yy",
   },
   "spriteMaskId": null,
   "visible": true,

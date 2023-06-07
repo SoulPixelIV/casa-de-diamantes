@@ -1,7 +1,7 @@
 growSpeed = 1.25;
 
 stopTimer = 700;
-despawnTimer = 1700;
+despawnTimer = 1200;
 
 randNum = choose(0,1,2);
 
