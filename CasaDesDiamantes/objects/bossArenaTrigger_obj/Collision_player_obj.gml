@@ -1,2 +1,6 @@
-plantBoss_obj.startBattle = true;
-camera_obj.showBossHealthbar = true;
+with (plantBoss_obj) {
+	startBattle = true;
+}
+with (camera_obj) {
+	showBossHealthbar = true;
+}

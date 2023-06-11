@@ -1,0 +1,12 @@
+body = noone;
+follow = false;
+followX = x;
+followY = y;
+speedX = 0;
+speedY = 0;
+damage = 10;
+knockback = 1;
+damageCollision = true;
+colliding = false;
+timer = 800;
+hp = 0

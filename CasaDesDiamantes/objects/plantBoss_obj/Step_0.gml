@@ -6,11 +6,42 @@ if (startBattle) {
 	}
 
 	attackTimer -= global.dt;
+	attackTimer2 -= global.dt;
 
 	if (attackTimer < 0) {
 		with (plantBossVineSpawner_obj) {
 			spawnVine = true;
 		}
 		attackTimer = attackTimerSave;
+	}
+	
+	if (attackTimer2 < 0) {
+		randNum = choose(4,6);
+		repeat (randNum) {
+			var damageOrb = instance_create_layer(x, y, "ForegroundObjects", damageOrb_obj);
+			damageOrb.speedX = random_range(-1.6, 1.6);
+			damageOrb.speedY = random_range(-1.6, 1.6);
+		}
+		attackTint = false;
+		attackTintTimer = attackTintTimerSave;
+		attackTintDelay = -1;
+		attackTimer2 = attackTimer2Save;
+	}
+	
+	//Attack Flash
+	if (attackTimer2 < 100) {
+		attackTintTimer -= global.dt;
+		if (attackTintTimer > 0) {
+			attackTint = true;
+			attackTintDelay = attackTintDelaySave;
+		}
+		if (attackTintTimer < 0) {
+			attackTint = false;
+			attackTintDelay -= global.dt;
+		}
+		
+		if (attackTintDelay < 0) {
+			attackTintTimer = attackTintTimerSave;
+		}
 	}
 }

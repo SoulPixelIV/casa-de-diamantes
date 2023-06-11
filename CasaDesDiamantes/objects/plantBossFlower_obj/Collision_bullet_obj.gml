@@ -8,6 +8,7 @@ if (randNum == 1) {
 } else {
 	repeat(randNum2) {
 		instance_create_layer(x, y, "Instances", zombieSpawnEgg_obj);
+		instance_create_layer(x, y, "Instances", healthpackDrop_obj);
 	}
 }
 instance_destroy(other);

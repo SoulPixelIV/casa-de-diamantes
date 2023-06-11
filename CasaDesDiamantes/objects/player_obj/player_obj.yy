@@ -15,6 +15,7 @@
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":{"name":"damageHitboxKnockback_obj","path":"objects/damageHitboxKnockback_obj/damageHitboxKnockback_obj.yy",},"eventNum":0,"eventType":4,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":{"name":"fallTriggerZone_obj","path":"objects/fallTriggerZone_obj/fallTriggerZone_obj.yy",},"eventNum":0,"eventType":4,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":{"name":"damageHitboxOnlyOnGround_obj","path":"objects/damageHitboxOnlyOnGround_obj/damageHitboxOnlyOnGround_obj.yy",},"eventNum":0,"eventType":4,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":{"name":"damageOrb_obj","path":"objects/damageOrb_obj/damageOrb_obj.yy",},"eventNum":0,"eventType":4,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
