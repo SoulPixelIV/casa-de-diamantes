@@ -3,7 +3,7 @@ damageTint = false;
 attackTint = false;
 startBattle = false;
 
-attackTimer = 1600;
+attackTimer = 1200;
 attackTimer2 = 500;
 attackTimerSave = attackTimer;
 

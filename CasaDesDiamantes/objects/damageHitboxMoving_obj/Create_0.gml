@@ -1,0 +1,12 @@
+body = noone;
+follow = false;
+followX = x;
+followY = y;
+damage = 10;
+knockback = 1;
+damageCollision = true;
+colliding = false;
+timer = 550;
+hp = 0
+goalX = player_obj.x;
+goalY = player_obj.y;

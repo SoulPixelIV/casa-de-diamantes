@@ -19,8 +19,8 @@ if (startBattle) {
 		randNum = choose(4,6);
 		repeat (randNum) {
 			var damageOrb = instance_create_layer(x, y, "ForegroundObjects", damageOrb_obj);
-			damageOrb.speedX = random_range(-1.6, 1.6);
-			damageOrb.speedY = random_range(-1.6, 1.6);
+			damageOrb.speedX = choose(random_range(-1.6, -0.6), random_range(1.6, 0.6));
+			damageOrb.speedY = choose(random_range(-1.6, -0.6), random_range(1.6, 0.6));
 		}
 		attackTint = false;
 		attackTintTimer = attackTintTimerSave;

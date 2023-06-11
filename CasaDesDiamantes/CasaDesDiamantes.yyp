@@ -1326,6 +1326,7 @@
     {"id":{"name":"lantern_obj","path":"objects/lantern_obj/lantern_obj.yy",},},
     {"id":{"name":"lightsRed_obj","path":"objects/lightsRed_obj/lightsRed_obj.yy",},},
     {"id":{"name":"ledBarRed_obj","path":"objects/ledBarRed_obj/ledBarRed_obj.yy",},},
+    {"id":{"name":"damageHitboxMoving_obj","path":"objects/damageHitboxMoving_obj/damageHitboxMoving_obj.yy",},},
     {"id":{"name":"lightswitch_obj","path":"objects/lightswitch_obj/lightswitch_obj.yy",},},
     {"id":{"name":"enemySpawner_obj","path":"objects/enemySpawner_obj/enemySpawner_obj.yy",},},
     {"id":{"name":"drill_snd","path":"sounds/drill_snd/drill_snd.yy",},},
