@@ -55,3 +55,7 @@ if (startBattle) {
 		}
 	}
 }
+
+if (getVisible) {
+	image_alpha += global.dt / 100;
+}

@@ -1,6 +1,8 @@
-hp = 100;
-image_index = 0;
+hp = 65;
+image_index = 1;
 image_speed = 0;
+getVisible = false;
+image_alpha = 0;
 damageTint = false;
 attackTint = false;
 startBattle = false;

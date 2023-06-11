@@ -3,7 +3,7 @@ if (other.startBattle) {
 	if (!dealtDamage && instance_exists(enemyTarget))
 	{
 		enemyTarget.damageTint = true;
-		enemyTarget.hp -= 0.7;
+		enemyTarget.hp -= 1;
 		bloodSpread = instance_create_layer(x, y, "Instances", bloodSpread_obj);
 		bloodSpread.image_angle = image_angle;
 		bloodSpread2 = instance_create_layer(x, y, "Instances", bloodSpread2_obj);

@@ -67,6 +67,7 @@ pauseAlpha = 0;
 pauseOffset = 0;
 pauseScreen = 0;
 showBossHealthbar = false;
+showBossHealthbar2 = false;
 
 cameraSpeed = 0.02;
 ycameraSpeed = 0.02;

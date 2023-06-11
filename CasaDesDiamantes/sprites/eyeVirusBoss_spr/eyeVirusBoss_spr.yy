@@ -13,7 +13,8 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"15755288-e766-46ef-9118-a4bb67768e8c",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"5ac102e7-7481-4fd8-9137-42ffa275d5c0",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"5c9750b6-0dc2-4e64-89c4-94d6924693d0",},
   ],
   "gridX": 0,
   "gridY": 0,
@@ -45,7 +46,7 @@
     "events": {"resourceType":"KeyframeStore<MessageEventKeyframe>","resourceVersion":"1.0","Keyframes":[],},
     "eventStubScript": null,
     "eventToFunction": {},
-    "length": 1.0,
+    "length": 2.0,
     "lockOrigin": false,
     "moments": {"resourceType":"KeyframeStore<MomentsEventKeyframe>","resourceVersion":"1.0","Keyframes":[],},
     "playback": 1,
@@ -56,7 +57,8 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"15755288-e766-46ef-9118-a4bb67768e8c","path":"sprites/eyeVirusBoss_spr/eyeVirusBoss_spr.yy",},},},"Disabled":false,"id":"dcae3ec0-ee37-4689-8530-290e2c4f81ae","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"5ac102e7-7481-4fd8-9137-42ffa275d5c0","path":"sprites/eyeVirusBoss_spr/eyeVirusBoss_spr.yy",},},},"Disabled":false,"id":"e062a124-196d-47cd-9d10-44c0a98d7794","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"5c9750b6-0dc2-4e64-89c4-94d6924693d0","path":"sprites/eyeVirusBoss_spr/eyeVirusBoss_spr.yy",},},},"Disabled":false,"id":"b9e148c9-0d76-4e69-b9d3-9b91d8eb63bd","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
