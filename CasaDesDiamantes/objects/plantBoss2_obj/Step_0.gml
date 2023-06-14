@@ -57,5 +57,5 @@ if (startBattle) {
 }
 
 if (getVisible) {
-	image_alpha += global.dt / 100;
+	image_alpha += global.dt / 1000;
 }
