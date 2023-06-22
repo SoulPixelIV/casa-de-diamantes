@@ -450,22 +450,24 @@ if (!noHUD && instance_exists(player_obj))
 	}
 	
 	//Boss Healthbar
-	if (showBossHealthbar) {
-		draw_sprite_ext(healthbarBorderBoss_spr, -1, global.xScreenSize / 2, global.yScreenSize - 26, 1, 1, 0, -1, 1);
-		if (plantBoss_obj.hp > 1) {
-			draw_sprite_ext(healthbarBoss_spr, 0, (global.xScreenSize / 2) - 86, global.yScreenSize - 27, clamp(1.6 * (plantBoss_obj.hp / 100), 0, 100), 1, 0, -1, 1);
+	if (instance_exists(plantBoss_obj)) {
+		if (showBossHealthbar) {
+			draw_sprite_ext(healthbarBorderBoss_spr, -1, global.xScreenSize / 2, global.yScreenSize - 26, 1, 1, 0, -1, 1);
+			if (plantBoss_obj.hp > 1) {
+				draw_sprite_ext(healthbarBoss_spr, 0, (global.xScreenSize / 2) - 86, global.yScreenSize - 27, clamp(1.6 * (plantBoss_obj.hp / 100), 0, 100), 1, 0, -1, 1);
+			}
+			if (plantBoss_obj.hp > 1) {
+				draw_sprite_ext(healthbarTop2Boss_spr, -1, ((global.xScreenSize / 2) - 86) + (1.6 * plantBoss_obj.hp), global.yScreenSize - 27, 1, 1, 0, -1, 1);
+			}
 		}
-		if (plantBoss_obj.hp > 1) {
-			draw_sprite_ext(healthbarTop2Boss_spr, -1, ((global.xScreenSize / 2) - 86) + (1.6 * plantBoss_obj.hp), global.yScreenSize - 27, 1, 1, 0, -1, 1);
-		}
-	}
-	if (showBossHealthbar2) {
-		draw_sprite_ext(healthbarBorderBoss_spr, -1, global.xScreenSize / 2, global.yScreenSize - 26, 1, 1, 0, -1, 1);
-		if (plantBoss2_obj.hp > 1) {
-			draw_sprite_ext(healthbarBoss_spr, 0, (global.xScreenSize / 2) - 86, global.yScreenSize - 27, clamp(1.6 * (plantBoss2_obj.hp / 100), 0, 100), 1, 0, -1, 1);
-		}
-		if (plantBoss2_obj.hp > 1) {
-			draw_sprite_ext(healthbarTop2Boss_spr, -1, ((global.xScreenSize / 2) - 86) + (1.6 * plantBoss2_obj.hp), global.yScreenSize - 27, 1, 1, 0, -1, 1);
+		if (showBossHealthbar2) {
+			draw_sprite_ext(healthbarBorderBoss_spr, -1, global.xScreenSize / 2, global.yScreenSize - 26, 1, 1, 0, -1, 1);
+			if (plantBoss2_obj.hp > 1) {
+				draw_sprite_ext(healthbarBoss_spr, 0, (global.xScreenSize / 2) - 86, global.yScreenSize - 27, clamp(1.6 * (plantBoss2_obj.hp / 100), 0, 100), 1, 0, -1, 1);
+			}
+			if (plantBoss2_obj.hp > 1) {
+				draw_sprite_ext(healthbarTop2Boss_spr, -1, ((global.xScreenSize / 2) - 86) + (1.6 * plantBoss2_obj.hp), global.yScreenSize - 27, 1, 1, 0, -1, 1);
+			}
 		}
 	}
 	

@@ -878,7 +878,7 @@
   ],
   "parent": {
     "name": "SenzelaForest",
-    "path": "folders/Levels/Main/SenzelaForest.yy",
+    "path": "folders/Levels/LEGACY/SenzelaForest.yy",
   },
   "parentRoom": null,
   "physicsSettings": {

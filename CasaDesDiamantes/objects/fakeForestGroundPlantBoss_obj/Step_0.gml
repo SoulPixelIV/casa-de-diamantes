@@ -6,6 +6,11 @@ if (falling)
 	destroyTimer -= global.dt;
 	with (plantBoss_obj) {
 		startBattle = false;
+		moveToSecondFloor = true;
+		hp = 64;
+	}
+	with (plantBossBackground_obj) {
+		moveToSecondFloor = true;
 	}
 }
 
