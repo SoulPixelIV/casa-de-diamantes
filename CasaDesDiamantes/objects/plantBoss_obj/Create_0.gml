@@ -4,22 +4,18 @@ image_speed = 0;
 damageTint = false;
 attackTint = false;
 startBattle = false;
-startBattle2 = false;
-moveToSecondFloor = false;
 
-attackTimer = 1200;
+attackTimer = 1000;
 attackTimer2 = 500;
-attackTimer3 = 1000;
-attackTimer4 = 350;
 
 explosionTimer = 30;
+dropTimer = 8;
 deathTimer = 1350;
 
 attackTimerSave = attackTimer;
-attackTimerSave3 = attackTimer3;
-attackTimerSave4 = attackTimer4;
 
 explosionTimerSave = explosionTimer + random_range(-5, 5);
+dropTimerSave = dropTimer + random_range(-2,2);
 
 damageTintTimer = 15;
 

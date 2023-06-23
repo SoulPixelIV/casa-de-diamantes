@@ -5,7 +5,9 @@ lifeLength -= global.dt;
 if (lifeLength < 0)
 {
 	image_alpha -= global.dt / 30;
-	instance_destroy(light);
+	if (instance_exists(light)) {
+		instance_destroy(light);
+	}
 }
 
 if (image_index > image_number - 1) 

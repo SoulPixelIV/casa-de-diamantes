@@ -6,7 +6,7 @@ animationSpeed = 1;
 lifeLength = 70;
 
 //Create light
-light = instance_create_layer(x, y, "GraphicsLayer", spotlightYellowIntense_obj);
+light = instance_create_layer(x, y, "GraphicsLayer", spotlightYellow_obj);
 
 //Create Emitter
 emitter = audio_emitter_create();

@@ -1,2 +1,4 @@
 audio_emitter_free(emitter);
-instance_destroy(light);
+if (instance_exists(light)) {
+	instance_destroy(light);
+}

@@ -4,3 +4,12 @@ with (plantBoss_obj) {
 with (camera_obj) {
 	showBossHealthbar = true;
 }
+if (instance_exists(plantBoss_obj)) {
+	with (lasergate_obj) {
+		open = true;
+	}
+} else {
+	with (lasergate_obj) {
+		open = false;
+	}
+}
