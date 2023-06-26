@@ -94,7 +94,7 @@ else if (room == level1_RoadToCasino || room == level0_RoadToCasino)
 }
 else if (room == level7)
 {
-	global.ambientShadowIntensity = 0.5 * global.gamma;
+	global.ambientShadowIntensity = 0.55 * global.gamma;
 }
 else if (room == level_CasinoHub)
 {

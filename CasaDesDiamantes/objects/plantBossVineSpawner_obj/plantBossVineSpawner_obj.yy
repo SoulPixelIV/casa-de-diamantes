@@ -34,5 +34,5 @@
     "path": "sprites/circleCross_spr/circleCross_spr.yy",
   },
   "spriteMaskId": null,
-  "visible": true,
+  "visible": false,
 }

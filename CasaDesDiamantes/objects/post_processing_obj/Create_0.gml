@@ -48,8 +48,8 @@ var act1Effects = [
 ];
 act1_profile = new PPFX_Profile("Main", act1Effects);
 var act2Effects = [
-	new FX_Bloom(true, 6, 0.4, 0.95, c_white, 0.3, true, undefined, 0.8, 1, true),
-	new FX_SunShafts(true, [0.5, 0.5], 0.3, 0.33, 0.9, 1.6, 0.4, true, 0.7, 0.05, 0.15),
+	new FX_Bloom(true, 6, 0.4, 0.6, c_white, 0.3, true, undefined, 0.8, 1, true),
+	new FX_SunShafts(true, [0.5, 0.5], 0.4, 0.12, 0.9, 1.6, 0.4, true, 0.7, 0.05, 0.15),
 ];
 act2_profile = new PPFX_Profile("Main", act2Effects);
 
