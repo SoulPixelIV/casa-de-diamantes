@@ -253,7 +253,7 @@ if (act1MusicOn && act1MusicStarted) {
 }
 
 //ACT2 WORLD MUSIC
-if (room == level4 || room == level5A || room == level5B || room == warpzone1 || room == level6 || room == level7) {
+if (room == level4 || room == level5A || room == level5B || room == warpzone1 || room == level6 || room == level7 || room == level8) {
 	act2MusicOn = true;
 } else {
 	act2MusicOn = false;
