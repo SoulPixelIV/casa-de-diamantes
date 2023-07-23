@@ -55,8 +55,11 @@ if (instance_exists(player_obj)) {
 		{
 			if (distance_to_point(player_obj.x, player_obj.y) < aggroRange)
 			{
-				if ((((image_angle > 0 && image_angle < 90) || (image_angle > 270 && image_angle < 359)) && player_obj.x >= x) || ((image_angle > 90 && image_angle < 270) && player_obj.x <= x))
-				{
+				if ((image_angle > 90 && image_angle < 270) && player_obj.x <= x) {
+					deaggroTimer = deaggroTimerSave;
+					aggroTimer -= global.dt;
+				}
+				if (initalDir == 1 && player_obj.x > x) {
 					deaggroTimer = deaggroTimerSave;
 					aggroTimer -= global.dt;
 				}
