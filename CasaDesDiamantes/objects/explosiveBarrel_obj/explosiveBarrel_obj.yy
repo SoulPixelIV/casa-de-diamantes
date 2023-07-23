@@ -34,8 +34,8 @@
   ],
   "solid": false,
   "spriteId": {
-    "name": "barrel_spr",
-    "path": "sprites/barrel_spr/barrel_spr.yy",
+    "name": "mine_spr",
+    "path": "sprites/mine_spr/mine_spr.yy",
   },
   "spriteMaskId": null,
   "visible": true,

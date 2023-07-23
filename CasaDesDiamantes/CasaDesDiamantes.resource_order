@@ -592,6 +592,7 @@
     {"name":"poisontear_spr","order":3,"path":"sprites/poisontear_spr/poisontear_spr.yy",},
     {"name":"electricGate2_spr","order":2,"path":"sprites/electricGate2_spr/electricGate2_spr.yy",},
     {"name":"electricGate3_spr","order":3,"path":"sprites/electricGate3_spr/electricGate3_spr.yy",},
+    {"name":"mine_spr","order":7,"path":"sprites/mine_spr/mine_spr.yy",},
     {"name":"playerWallLEGACY_spr","order":9,"path":"sprites/playerWallLEGACY_spr/playerWallLEGACY_spr.yy",},
     {"name":"electricGate3Short_spr","order":4,"path":"sprites/electricGate3Short_spr/electricGate3Short_spr.yy",},
     {"name":"level3_SenzelaForest","order":3,"path":"rooms/level3_SenzelaForest/level3_SenzelaForest.yy",},
