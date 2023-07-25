@@ -29,7 +29,7 @@ points = 250;
 
 lastBullet = bulletPistol_obj;
 ammoSpawnCount = 1;
-animationSpeed = 0.5;
+animationSpeed = 0.8;
 savePosX = x;
 savePosY = y;
 movement = true;
