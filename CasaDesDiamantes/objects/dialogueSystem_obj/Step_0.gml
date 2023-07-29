@@ -1,6 +1,8 @@
 //Scene 1
 if (scene1)
 {
+	inCutscene = true;
+	startScene1Timer = true;
 	if (!camera_obj.drawText)
 	{
 		for (i = scene1Low; i < scene1High + 1; i++)
@@ -11,6 +13,40 @@ if (scene1)
 		camera_obj.drawText = true;
 	}
 	scene1 = false;
+}
+if (startScene1Timer) {
+	scene1Timer -= global.dt;
+	
+	if (scene1Timer < 0) {
+		if (!startScene1BlackTimer) {
+			camera_obj.blackscreenStrength += global.dt / 40;
+		}
+		
+		if (camera_obj.blackscreenStrength > 0.98) {
+			startScene1BlackTimer = true;
+			global.cutsceneCasinoIntroDone = true;
+			camera_obj.drawBlackborders = false;
+			if (instance_exists(cindy_obj)) {
+				instance_destroy(cindy_obj);
+			}
+		}
+		
+		if (startScene1BlackTimer) {
+			scene1BlackTimer -= global.dt;
+			if (scene1BlackTimer < 0) {
+				camera_obj.blackscreenStrength -= global.dt / 40;
+				
+				if (camera_obj.blackscreenStrength < 0.05) {
+					player_obj.movement = true;
+					scene1Timer = scene1TimerSave;
+					startScene1Timer = false;
+					scene1BlackTimer = scene1BlackTimerSave;
+					startScene1BlackTimer = false;
+					inCutscene = false;
+				}
+			}
+		}
+	}
 }
 //Scene 2
 if (scene2)

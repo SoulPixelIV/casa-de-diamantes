@@ -1827,11 +1827,11 @@
   ],
   "RoomOrderNodes": [
     {"roomId":{"name":"loadVars","path":"rooms/loadVars/loadVars.yy",},},
+    {"roomId":{"name":"level_Casino","path":"rooms/level_Casino/level_Casino.yy",},},
     {"roomId":{"name":"level8","path":"rooms/level8/level8.yy",},},
     {"roomId":{"name":"level7","path":"rooms/level7/level7.yy",},},
     {"roomId":{"name":"credits","path":"rooms/credits/credits.yy",},},
     {"roomId":{"name":"mainmenu","path":"rooms/mainmenu/mainmenu.yy",},},
-    {"roomId":{"name":"level_Casino","path":"rooms/level_Casino/level_Casino.yy",},},
     {"roomId":{"name":"level4","path":"rooms/level4/level4.yy",},},
     {"roomId":{"name":"level0","path":"rooms/level0/level0.yy",},},
     {"roomId":{"name":"cutscene0","path":"rooms/cutscene0/cutscene0.yy",},},

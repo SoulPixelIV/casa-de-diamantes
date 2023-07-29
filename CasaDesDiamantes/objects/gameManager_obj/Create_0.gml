@@ -24,6 +24,7 @@ global.reachedCasino = false;
 global.act2Unlocked = false;
 
 global.cutsceneLevel2Done = false;
+global.cutsceneCasinoIntroDone = false;
 
 global.pwlevel2UnlockedElevator = false;
 global.pwlevel3UnlockedElevator = false;
