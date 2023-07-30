@@ -11,13 +11,13 @@ scene5 = false;
 scene1Low = 0;
 scene1High = 13;
 scene2Low = 14;
-scene2High = 19;
-scene3Low = 20;
-scene3High = 28;
-scene4Low = 29;
-scene4High = 31;
-scene5Low = 32;
-scene5High = 44;
+scene2High = 17;
+scene3Low = 18;
+scene3High = 23;
+scene4Low = 24;
+scene4High = 26;
+scene5Low = 27;
+scene5High = 39;
 
 //Dialogue Text
 //!!!ALWAYS 1 FREE SPACE BETWEEN SCENES
@@ -54,40 +54,39 @@ dialogue[12] = "$See ya.";
 dialogue[13] = ""; 
 
 //Scene 2
-dialogue[14] = "#*huff *huff";
-dialogue[15] = "$H-how did you survive the sniper?";
-dialogue[16] = "#I guess I'm very talented at walking..";
-dialogue[17] = "#What are you doing out here?";
-dialogue[18] = "$I'm on my way back to town";
-dialogue[19] = ""; 
+startScene2Timer = false;
+scene2Timer = 9400;
+scene2TimerSave = scene2Timer;
+
+dialogue[14] = "]Good evening and welcome to the Casa De Diamantes!";
+dialogue[15] = "]How can I be of service today?";
+dialogue[16] = "W1";
+dialogue[17] = "";
 
 //Scene 3
-dialogue[20] = "]Good evening and welcome to the Casa De Diamantes!";
-dialogue[21] = "]How can I be of service today?";
-dialogue[22] = "#Hey, yeah...I'm looking for a job.";
-dialogue[23] = "]Oh I'm sorry honey our staff is completly packed..";
-dialogue[24] = "#I actually meant something more..discrete.";
-dialogue[25] = "]Please head upstairs. He is already waiting for you.";
-dialogue[26] = "#Thanks.";
-dialogue[27] = "]Oh and please come back, if you need a drink.";
-dialogue[28] = "";
+dialogue[18] = "#*huff *huff";
+dialogue[19] = "$H-how did you survive the sniper?";
+dialogue[20] = "#I guess I'm very talented at walking..";
+dialogue[21] = "#What are you doing out here?";
+dialogue[22] = "$I'm on my way back to town";
+dialogue[23] = ""; 
 
 //Scene 4
-dialogue[29] = "[Good evening!";
-dialogue[30] = "G1";
-dialogue[31] = "";
+dialogue[24] = "[Good evening!";
+dialogue[25] = "G1";
+dialogue[26] = "";
 
 //Scene 5 VIP First Mission
-dialogue[32] = "^Evening.";
-dialogue[33] = "#I'm looking for a contract.";
-dialogue[34] = "^Well, let's get to business then.";
-dialogue[35] = "^I need you to eliminate a target for me.";
-dialogue[36] = "^No talking. No evidences. No mistakes.";
-dialogue[37] = "#What's the pay?";
-dialogue[38] = "^2000 chips upfront, 6000 on completion.";
-dialogue[39] = "#Sounds like a deal to me.";
-dialogue[40] = "^The target is located somewhere deep in the Senzela Forest.";
-dialogue[41] = "^He is also armed so prepare yourself.";
-dialogue[42] = "#Alright.";
-dialogue[43] = "^Now get going.";
-dialogue[44] = "";
+dialogue[27] = "^Evening.";
+dialogue[28] = "#I'm looking for a contract.";
+dialogue[29] = "^Well, let's get to business then.";
+dialogue[30] = "^I need you to eliminate a target for me.";
+dialogue[31] = "^No talking. No evidences. No mistakes.";
+dialogue[32] = "#What's the pay?";
+dialogue[33] = "^2000 chips upfront, 6000 on completion.";
+dialogue[34] = "#Sounds like a deal to me.";
+dialogue[35] = "^The target is located somewhere deep in the Senzela Forest.";
+dialogue[36] = "^He is also armed so prepare yourself.";
+dialogue[37] = "#Alright.";
+dialogue[38] = "^Now get going.";
+dialogue[39] = "";

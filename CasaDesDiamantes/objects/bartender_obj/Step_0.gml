@@ -5,5 +5,7 @@ image_index += (global.dt / 15) * animationSpeed;
 /// @description Check Player
 if ((distance_to_object(player_obj) < 32 && player_obj.key_up_pressed) && !global.pause)
 {
-	dialogueSystem_obj.scene3 = true;
+	dialogueSystem_obj.scene2 = true;
+	player_obj.movement = false;
+	camera_obj.drawBlackborders = true;
 }

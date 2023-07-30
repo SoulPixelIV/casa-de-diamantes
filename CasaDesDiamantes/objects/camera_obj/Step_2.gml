@@ -56,7 +56,7 @@ if (cameraTargetTimer < 0)
 }
 
 //Floating Camera
-if (player_obj.inputMethod == 0 && !global.pause) {
+if (player_obj.inputMethod == 0 && !global.pause && !dialogueSystem_obj.inCutscene) {
 	if (follow == player_obj && !cameraTarget && !cameraTargetMovement)
 	{
 		snapCameraX = false;
