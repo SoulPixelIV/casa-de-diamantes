@@ -406,6 +406,7 @@
     {"id":{"name":"houseTilesBackground_spr","path":"sprites/houseTilesBackground_spr/houseTilesBackground_spr.yy",},},
     {"id":{"name":"battleArenaPlayerpoint_obj","path":"objects/battleArenaPlayerpoint_obj/battleArenaPlayerpoint_obj.yy",},},
     {"id":{"name":"forestTorch_spr","path":"sprites/forestTorch_spr/forestTorch_spr.yy",},},
+    {"id":{"name":"elevatorSelectMenu_spr","path":"sprites/elevatorSelectMenu_spr/elevatorSelectMenu_spr.yy",},},
     {"id":{"name":"lightningSpawner_obj","path":"objects/lightningSpawner_obj/lightningSpawner_obj.yy",},},
     {"id":{"name":"lvl2_spr","path":"sprites/lvl2_spr/lvl2_spr.yy",},},
     {"id":{"name":"__spr_ppf_prism_lut_cp","path":"sprites/__spr_ppf_prism_lut_cp/__spr_ppf_prism_lut_cp.yy",},},

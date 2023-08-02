@@ -7,6 +7,8 @@ if (global.pause) {
 	noHUD = false;
 }
 
+draw_sprite(elevatorSelectMenu_spr, 0, global.xScreenSize / 2, global.yScreenSize / 2);
+
 if (instance_exists(player_obj) && !noHUD)
 {
 	//Ammo Counter

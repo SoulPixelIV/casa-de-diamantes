@@ -248,6 +248,7 @@
     {"name":"houseTilesBackground_spr","order":19,"path":"sprites/houseTilesBackground_spr/houseTilesBackground_spr.yy",},
     {"name":"battleArenaPlayerpoint_obj","order":64,"path":"objects/battleArenaPlayerpoint_obj/battleArenaPlayerpoint_obj.yy",},
     {"name":"forestTorch_spr","order":20,"path":"sprites/forestTorch_spr/forestTorch_spr.yy",},
+    {"name":"elevatorSelectMenu_spr","order":95,"path":"sprites/elevatorSelectMenu_spr/elevatorSelectMenu_spr.yy",},
     {"name":"lightningSpawner_obj","order":4,"path":"objects/lightningSpawner_obj/lightningSpawner_obj.yy",},
     {"name":"lvl2_spr","order":25,"path":"sprites/lvl2_spr/lvl2_spr.yy",},
     {"name":"zombiegirlBodyPart_obj","order":7,"path":"objects/zombiegirlBodyPart_obj/zombiegirlBodyPart_obj.yy",},
