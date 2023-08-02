@@ -3,7 +3,7 @@
 if ((distance_to_object(player_obj) < 32 && player_obj.key_up_pressed) && !used && !global.pause)
 {
 	if (elevatorNumber == 0 || elevatorNumber == 1) {
-		sprite_index = elevatorOpening_spr;
+		sprite_index = goldElevatorOpening_spr;
 		player_obj.movement = false;
 		used = true;
 	}

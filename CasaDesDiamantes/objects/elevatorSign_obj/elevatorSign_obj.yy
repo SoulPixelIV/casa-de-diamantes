@@ -26,8 +26,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "elevatorSign_spr",
-    "path": "sprites/elevatorSign_spr/elevatorSign_spr.yy",
+    "name": "goldElevatorSign_spr",
+    "path": "sprites/goldElevatorSign_spr/goldElevatorSign_spr.yy",
   },
   "spriteMaskId": null,
   "visible": true,

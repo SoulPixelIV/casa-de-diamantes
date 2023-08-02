@@ -13,8 +13,8 @@ scene1High = 13;
 scene2Low = 14;
 scene2High = 17;
 scene3Low = 18;
-scene3High = 23;
-scene4Low = 24;
+scene3High = 20;
+scene4Low = 21;
 scene4High = 26;
 scene5Low = 27;
 scene5High = 39;
@@ -55,26 +55,26 @@ dialogue[13] = "";
 
 //Scene 2
 startScene2Timer = false;
-scene2Timer = 9400;
+scene2Timer = 2600;
 scene2TimerSave = scene2Timer;
 
 dialogue[14] = "]Good evening and welcome to the Casa De Diamantes!";
 dialogue[15] = "]How can I be of service today?";
-dialogue[16] = "W1";
+dialogue[16] = "";
 dialogue[17] = "";
 
 //Scene 3
-dialogue[18] = "#*huff *huff";
-dialogue[19] = "$H-how did you survive the sniper?";
-dialogue[20] = "#I guess I'm very talented at walking..";
-dialogue[21] = "#What are you doing out here?";
-dialogue[22] = "$I'm on my way back to town";
-dialogue[23] = ""; 
+dialogue[18] = "[Good evening!";
+dialogue[19] = "G1";
+dialogue[20] = "";
 
 //Scene 4
-dialogue[24] = "[Good evening!";
-dialogue[25] = "G1";
-dialogue[26] = "";
+dialogue[21] = "#*huff *huff";
+dialogue[22] = "$H-how did you survive the sniper?";
+dialogue[23] = "#I guess I'm very talented at walking..";
+dialogue[24] = "#What are you doing out here?";
+dialogue[25] = "$I'm on my way back to town";
+dialogue[26] = ""; 
 
 //Scene 5 VIP First Mission
 dialogue[27] = "^Evening.";

@@ -32,8 +32,8 @@
   ],
   "solid": false,
   "spriteId": {
-    "name": "elevator_spr",
-    "path": "sprites/elevator_spr/elevator_spr.yy",
+    "name": "goldElevator_spr",
+    "path": "sprites/goldElevator_spr/goldElevator_spr.yy",
   },
   "spriteMaskId": null,
   "visible": true,
