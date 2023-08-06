@@ -68,13 +68,8 @@ if (startScene2Timer) {
 	scene2Timer -= global.dt;
 	
 	if (scene2Timer < 0) {
-		camera_obj.drawBlackborders = false;
-		player_obj.movement = true;
-		scene2Timer = scene2TimerSave;
-		startScene2Timer = false;
-		scene2BlackTimer = scene2BlackTimerSave;
-		startScene2BlackTimer = false;
-		inCutscene = false;
+		camera_obj.showWindowMenu = true;
+		camera_obj.windowType = 1;
 	}
 }
 

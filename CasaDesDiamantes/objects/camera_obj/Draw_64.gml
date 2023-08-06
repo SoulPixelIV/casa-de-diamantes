@@ -7,8 +7,6 @@ if (global.pause) {
 	noHUD = false;
 }
 
-draw_sprite(elevatorSelectMenu_spr, 0, global.xScreenSize / 2, global.yScreenSize / 2);
-
 if (instance_exists(player_obj) && !noHUD)
 {
 	//Ammo Counter
@@ -161,7 +159,7 @@ if (drawText && !showWindowMenu)
 			draw_sprite_ext(dialogBorder_spr, 0, (character.x - x) + global.xScreenSize / 2, (character.y - y) - 42 + global.yScreenSize / 2, 2 + string_length(dialogueStripped) / 3, 1.5, 0, c_aqua, 1);
 		}
 		 else if (character == casinobunny_obj) {
-			draw_sprite_ext(dialogBorder_spr, 0, (character.x - x) + global.xScreenSize / 2, (character.y - y) - 42 + global.yScreenSize / 2, 2 + string_length(dialogueStripped) / 3, 1.5, 0, c_black, 1);
+			draw_sprite_ext(dialogBorder_spr, 0, (character.x - x) + global.xScreenSize / 2, (character.y - y) - 42 + global.yScreenSize / 2, 2 + string_length(dialogueStripped) / 3, 1.5, 0, make_color_rgb(255, 215, 215), 1);
 		}
 	
 		draw_text((character.x - x) + global.xScreenSize / 2 - 1, (character.y - y) - 46 + 1 + global.yScreenSize / 2, string_copy(dialogueStripped, 1, string_length(dialogue[dialogueLine])));
@@ -898,7 +896,7 @@ if (showInfectionHealedText && !noHUD) {
 //Menu Window
 if (showWindowMenu)
 {
-	draw_sprite_ext(menuWindow_spr, 0, global.xScreenSize / 2, global.yScreenSize / 2, 1, 1, 0, -1, 1);
+	draw_sprite_ext(menuWindow_spr, 0, global.xScreenSize / 2, (global.yScreenSize / 2) + windowMenuOffset, 1, 1, 0, -1, 1);
 	
 	draw_set_font(gothicPixel_fnt);
 	draw_set_halign(fa_center);
@@ -915,25 +913,25 @@ if (showWindowMenu)
 		draw_set_font(gothicPixel_fnt);
 		draw_set_halign(fa_center);
 		draw_set_color(c_black);
-		draw_text(global.xScreenSize / 2 - 1, (((global.yScreenSize / 2) + windowMenuOffset) - 48) + 1, "Shotgun");
-		draw_text((global.xScreenSize / 2) + 86 - 1, (((global.yScreenSize / 2) + windowMenuOffset) - 48) + 1, "Jetpack");
-		draw_text((global.xScreenSize / 2) - 86 - 1, (((global.yScreenSize / 2) + windowMenuOffset) - 48) + 1, "Pistol Lasersight");
+		draw_text(global.xScreenSize / 2 - 1, (((global.yScreenSize / 2) + windowMenuOffset) - 48) + 1, "Beer");
+		draw_text((global.xScreenSize / 2) + 86 - 1, (((global.yScreenSize / 2) + windowMenuOffset) - 48) + 1, "Syringe");
+		draw_text((global.xScreenSize / 2) - 86 - 1, (((global.yScreenSize / 2) + windowMenuOffset) - 48) + 1, "Diamond Chip");
 		draw_set_color(make_color_rgb(255, 215, 0));
-		draw_text(global.xScreenSize / 2, ((global.yScreenSize / 2) + windowMenuOffset) - 48, "Shotgun");
-		draw_text((global.xScreenSize / 2) + 86, ((global.yScreenSize / 2) + windowMenuOffset) - 48, "Jetpack");
-		draw_text((global.xScreenSize / 2) - 86, ((global.yScreenSize / 2) + windowMenuOffset) - 48, "Pistol Lasersight");
+		draw_text(global.xScreenSize / 2, ((global.yScreenSize / 2) + windowMenuOffset) - 48, "Beer");
+		draw_text((global.xScreenSize / 2) + 86, ((global.yScreenSize / 2) + windowMenuOffset) - 48, "Syringe");
+		draw_text((global.xScreenSize / 2) - 86, ((global.yScreenSize / 2) + windowMenuOffset) - 48, "Diamong Chip");
 		draw_set_halign(fa_left);
 		//Frames
-		draw_sprite(itemFrame_spr, 0, global.xScreenSize / 2, (global.yScreenSize / 2) + windowMenuOffset);
-		draw_sprite(itemFrame_spr, 0, (global.xScreenSize / 2) + 86, (global.yScreenSize / 2) + windowMenuOffset);
-		draw_sprite(itemFrame_spr, 0, (global.xScreenSize / 2) - 86, (global.yScreenSize / 2) + windowMenuOffset);
+		draw_sprite(itemFrame_spr, 1, global.xScreenSize / 2, (global.yScreenSize / 2) + windowMenuOffset);
+		draw_sprite(itemFrame_spr, 2, (global.xScreenSize / 2) + 86, (global.yScreenSize / 2) + windowMenuOffset);
+		draw_sprite(itemFrame_spr, 3, (global.xScreenSize / 2) - 86, (global.yScreenSize / 2) + windowMenuOffset);
 		//Descriptions
 		draw_set_font(gothicPixel_fnt);
 		draw_set_halign(fa_center);
 		draw_set_color(c_black);
-		draw_text(global.xScreenSize / 2 - 1, (((global.yScreenSize / 2) + windowMenuOffset) + 42) + 1, "1350$");
-		draw_text((global.xScreenSize / 2) + 86 - 1, (((global.yScreenSize / 2) + windowMenuOffset) + 42) + 1, "3850$");
-		draw_text((global.xScreenSize / 2) - 86 - 1, (((global.yScreenSize / 2) + windowMenuOffset) + 42) + 1, "215$");
+		draw_text(global.xScreenSize / 2 - 1, (((global.yScreenSize / 2) + windowMenuOffset) + 42) + 1, "25$");
+		draw_text((global.xScreenSize / 2) + 86 - 1, (((global.yScreenSize / 2) + windowMenuOffset) + 42) + 1, "850$");
+		draw_text((global.xScreenSize / 2) - 86 - 1, (((global.yScreenSize / 2) + windowMenuOffset) + 42) + 1, "6750$");
 		if (global.money > 1349)
 		{
 			draw_set_color(make_color_rgb(255, 215, 0));
@@ -942,7 +940,7 @@ if (showWindowMenu)
 		{
 			draw_set_color(c_red);
 		}
-		draw_text(global.xScreenSize / 2, ((global.yScreenSize / 2) + windowMenuOffset) + 42, "1350$");
+		draw_text(global.xScreenSize / 2, ((global.yScreenSize / 2) + windowMenuOffset) + 42, "25$");
 		if (global.money > 3849)
 		{
 			draw_set_color(make_color_rgb(255, 215, 0));
@@ -951,7 +949,7 @@ if (showWindowMenu)
 		{
 			draw_set_color(c_red);
 		}
-		draw_text((global.xScreenSize / 2) + 86, ((global.yScreenSize / 2) + windowMenuOffset) + 42, "3850$");
+		draw_text((global.xScreenSize / 2) + 86, ((global.yScreenSize / 2) + windowMenuOffset) + 42, "850$");
 		if (global.money > 214)
 		{
 			draw_set_color(make_color_rgb(255, 215, 0));
@@ -960,7 +958,7 @@ if (showWindowMenu)
 		{
 			draw_set_color(c_red);
 		}
-		draw_text((global.xScreenSize / 2) - 86, ((global.yScreenSize / 2) + windowMenuOffset) + 42, "215$");
+		draw_text((global.xScreenSize / 2) - 86, ((global.yScreenSize / 2) + windowMenuOffset) + 42, "6750$");
 		draw_set_halign(fa_left);
 	}
 	
@@ -972,11 +970,51 @@ if (showWindowMenu)
 	{
 		windowMenuOffset -= global.dt * 1.5;
 	}
+	
+	if (keyboard_check_pressed(vk_escape) || gamepad_button_check_pressed(4, gp_start) || gamepad_button_check_pressed(0, gp_start)) {
+		dialogueSystem_obj.inCutscene = false;
+		dialogueSystem_obj.startScene2Timer = false;
+		dialogueSystem_obj.scene2Timer = dialogueSystem_obj.scene2TimerSave;
+		player_obj.movement = true;
+		drawBlackborders = false;
+		showWindowMenu = false;
+		windowType = 0;
+	}
 }
 else
 {
-	windowMenuOffset = windowMenuOffsetSave;
-	windowType = 0;
+	if (!camera_obj.drawElevatorSign) {
+		windowMenuOffset = windowMenuOffsetSave;
+		windowType = 0;
+	}
+}
+
+if (drawElevatorSign) {
+	draw_sprite(elevatorSelectMenu_spr, 0, global.xScreenSize / 2, (global.yScreenSize / 2) + windowMenuOffset);
+	
+	draw_set_font(gothicPixel_fnt);
+	draw_set_halign(fa_center);
+	draw_set_color(c_black);
+	draw_text(global.xScreenSize / 2 - 1, global.yScreenSize - 36 + 1, "Press Esc to Cancel");
+	draw_set_color(make_color_rgb(255, 215, 0));
+	draw_text(global.xScreenSize / 2, global.yScreenSize - 36, "Press Esc to Cancel");
+	draw_set_halign(fa_left);
+	
+	if (windowMenuOffset < 4)
+	{
+		windowMenuOffset = 0;
+	}
+	else
+	{
+		windowMenuOffset -= global.dt * 1.5;
+	}
+	
+	if (keyboard_check_pressed(vk_escape) || gamepad_button_check_pressed(4, gp_start) || gamepad_button_check_pressed(0, gp_start)) {
+		player_obj.movement = true;
+		drawBlackborders = false;
+		dialogueSystem_obj.inCutscene = false;
+		drawElevatorSign = false;
+	}
 }
 
 draw_set_alpha(1);
@@ -1318,7 +1356,7 @@ if (drawPause) {
 
 //Cursor
 //Crosshair Setup
-if (!dialogueSystem_obj.inCutscene) {
+if (!dialogueSystem_obj.inCutscene || (dialogueSystem_obj.inCutscene && drawElevatorSign) || (dialogueSystem_obj.inCutscene && showWindowMenu)) {
 	if (instance_exists(player_obj)) {
 		if (player_obj.inputMethod == 0)
 		{

@@ -43,6 +43,7 @@ cameraTarget = false;
 cameraTargetMovement = false;
 cameraTargetTimer = 500;
 showWindowMenu = false;
+drawElevatorSign = false;
 windowMenuOffset = global.yScreenSize;
 windowType = 0;
 healthbarShrinking = 0;

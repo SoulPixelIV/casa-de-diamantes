@@ -42,7 +42,7 @@ key_shift = keyboard_check_pressed(vk_shift) || gamepad_button_check_pressed(4, 
 key_control = keyboard_check_pressed(vk_control) || gamepad_button_check_pressed(4, gp_face2) || gamepad_button_check_pressed(0, gp_face2);
 key_escape = keyboard_check_pressed(vk_escape) || gamepad_button_check_pressed(4, gp_start) || gamepad_button_check_pressed(0, gp_start);
 
-if (key_escape && !pauseDelayStart && hp > 0 && !inCutscene && camera_obj.blackscreenStrength < 0.1) {
+if (key_escape && !pauseDelayStart && hp > 0 && !dialogueSystem_obj.inCutscene && !inCutscene && camera_obj.blackscreenStrength < 0.1) {
 	save_scr();
 	global.pause = !global.pause;
 	camera_obj.pauseScreen = 0;

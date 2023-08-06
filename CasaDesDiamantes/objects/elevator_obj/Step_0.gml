@@ -5,7 +5,10 @@ if ((distance_to_object(player_obj) < 32 && player_obj.key_up_pressed) && !used 
 	if (elevatorNumber == 0 || elevatorNumber == 1) {
 		sprite_index = goldElevatorOpening_spr;
 		player_obj.movement = false;
-		used = true;
+		camera_obj.drawBlackborders = true;
+		camera_obj.drawElevatorSign = true;
+		dialogueSystem_obj.inCutscene = true;
+		//used = true;
 	}
 }
 

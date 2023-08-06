@@ -11,13 +11,13 @@ scene5 = false;
 scene1Low = 0;
 scene1High = 13;
 scene2Low = 14;
-scene2High = 17;
-scene3Low = 18;
-scene3High = 20;
-scene4Low = 21;
-scene4High = 26;
-scene5Low = 27;
-scene5High = 39;
+scene2High = 16;
+scene3Low = 17;
+scene3High = 19;
+scene4Low = 20;
+scene4High = 25;
+scene5Low = 26;
+scene5High = 38;
 
 //Dialogue Text
 //!!!ALWAYS 1 FREE SPACE BETWEEN SCENES
@@ -55,38 +55,37 @@ dialogue[13] = "";
 
 //Scene 2
 startScene2Timer = false;
-scene2Timer = 2600;
+scene2Timer = 1600;
 scene2TimerSave = scene2Timer;
 
 dialogue[14] = "]Good evening and welcome to the Casa De Diamantes!";
 dialogue[15] = "]How can I be of service today?";
 dialogue[16] = "";
-dialogue[17] = "";
 
 //Scene 3
-dialogue[18] = "[Good evening!";
-dialogue[19] = "G1";
-dialogue[20] = "";
+dialogue[17] = "[Good evening!";
+dialogue[18] = "G1";
+dialogue[19] = "";
 
 //Scene 4
-dialogue[21] = "#*huff *huff";
-dialogue[22] = "$H-how did you survive the sniper?";
-dialogue[23] = "#I guess I'm very talented at walking..";
-dialogue[24] = "#What are you doing out here?";
-dialogue[25] = "$I'm on my way back to town";
-dialogue[26] = ""; 
+dialogue[20] = "#*huff *huff";
+dialogue[21] = "$H-how did you survive the sniper?";
+dialogue[22] = "#I guess I'm very talented at walking..";
+dialogue[23] = "#What are you doing out here?";
+dialogue[24] = "$I'm on my way back to town";
+dialogue[25] = ""; 
 
 //Scene 5 VIP First Mission
-dialogue[27] = "^Evening.";
-dialogue[28] = "#I'm looking for a contract.";
-dialogue[29] = "^Well, let's get to business then.";
-dialogue[30] = "^I need you to eliminate a target for me.";
-dialogue[31] = "^No talking. No evidences. No mistakes.";
-dialogue[32] = "#What's the pay?";
-dialogue[33] = "^2000 chips upfront, 6000 on completion.";
-dialogue[34] = "#Sounds like a deal to me.";
-dialogue[35] = "^The target is located somewhere deep in the Senzela Forest.";
-dialogue[36] = "^He is also armed so prepare yourself.";
-dialogue[37] = "#Alright.";
-dialogue[38] = "^Now get going.";
-dialogue[39] = "";
+dialogue[26] = "^Evening.";
+dialogue[27] = "#I'm looking for a contract.";
+dialogue[28] = "^Well, let's get to business then.";
+dialogue[29] = "^I need you to eliminate a target for me.";
+dialogue[30] = "^No talking. No evidences. No mistakes.";
+dialogue[31] = "#What's the pay?";
+dialogue[32] = "^2000 chips upfront, 6000 on completion.";
+dialogue[33] = "#Sounds like a deal to me.";
+dialogue[34] = "^The target is located somewhere deep in the Senzela Forest.";
+dialogue[35] = "^He is also armed so prepare yourself.";
+dialogue[36] = "#Alright.";
+dialogue[37] = "^Now get going.";
+dialogue[38] = "";
