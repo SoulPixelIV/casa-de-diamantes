@@ -158,7 +158,7 @@ if (drawText && !showWindowMenu)
 		} else if (character == bartender_obj) {
 			draw_sprite_ext(dialogBorder_spr, 0, (character.x - x) + global.xScreenSize / 2, (character.y - y) - 42 + global.yScreenSize / 2, 2 + string_length(dialogueStripped) / 3, 1.5, 0, c_aqua, 1);
 		}
-		 else if (character == casinobunny_obj) {
+			else if (character == casinobunny_obj) {
 			draw_sprite_ext(dialogBorder_spr, 0, (character.x - x) + global.xScreenSize / 2, (character.y - y) - 42 + global.yScreenSize / 2, 2 + string_length(dialogueStripped) / 3, 1.5, 0, make_color_rgb(255, 215, 215), 1);
 		}
 	
@@ -976,6 +976,7 @@ if (showWindowMenu)
 		dialogueSystem_obj.startScene2Timer = false;
 		dialogueSystem_obj.scene2Timer = dialogueSystem_obj.scene2TimerSave;
 		player_obj.movement = true;
+		bartender_obj.dialogueTriggered = false;
 		drawBlackborders = false;
 		showWindowMenu = false;
 		windowType = 0;
@@ -1390,6 +1391,18 @@ if (instance_exists(player_obj)) {
 		} else {
 			draw_text(16, global.yScreenSize - 16, "Press Select to skip");
 		}
+	}
+}
+
+//Show Shooting Prohibited Text
+if (showWeaponProhibited) {
+	weaponProhibitedTextTimer -= global.dt;
+	draw_set_halign(fa_center);
+	draw_text(global.xScreenSize / 2, global.yScreenSize - global.yScreenSize / 4, "Shooting Prohibited");
+	
+	if (weaponProhibitedTextTimer < 0) {
+		weaponProhibitedTextTimer = weaponProhibitedTextTimerSave;
+		showWeaponProhibited = false;
 	}
 }
 

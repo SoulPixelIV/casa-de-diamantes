@@ -14,6 +14,7 @@ if (keyboard_check_pressed(ord("J")))
 	}
 }
 
+/*
 if (showWindowMenu)
 {
 	if (keyboard_check_pressed(vk_escape) || mouse_check_button_pressed(mb_left))
@@ -21,7 +22,7 @@ if (showWindowMenu)
 		dialogueLine++;
 		showWindowMenu = false;
 	}
-}
+} */
 
 //Check Culling Area
 if (!deathInProg) {

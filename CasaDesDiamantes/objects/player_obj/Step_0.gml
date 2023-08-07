@@ -1031,7 +1031,11 @@ if (shootingAllowed && !global.pause) {
 					{
 						if (!onLadder || onLadder && verspeed == 0)
 						{
-							shooting_scr("pistol");
+							if (room == level_Casino || room == level_CasinoRoof) {
+								camera_obj.showWeaponProhibited = true;
+							} else {
+								shooting_scr("pistol");
+							}
 						}
 					}
 				}
@@ -1050,7 +1054,11 @@ if (shootingAllowed && !global.pause) {
 					{
 						if (!onLadder || onLadder && verspeed == 0)
 						{
-							shooting_scr("dualBarettas");
+							if (room == level_Casino || room == level_CasinoRoof) {
+								camera_obj.showWeaponProhibited = true;
+							} else {
+								shooting_scr("dualBarettas");
+							}
 						}
 					}
 				}
@@ -1069,7 +1077,11 @@ if (shootingAllowed && !global.pause) {
 					{
 						if (!onLadder || onLadder && verspeed == 0)
 						{
-							shooting_scr("shotgun");
+							if (room == level_Casino || room == level_CasinoRoof) {
+								camera_obj.showWeaponProhibited = true;
+							} else {
+								shooting_scr("shotgun");
+							}
 						}
 					}
 				}
@@ -1105,7 +1117,11 @@ if (shootingAllowed && !global.pause) {
 					{
 						if (!onLadder || onLadder && verspeed == 0)
 						{
-							shooting_scr("silencedMP");
+							if (room == level_Casino || room == level_CasinoRoof) {
+								camera_obj.showWeaponProhibited = true;
+							} else {
+								shooting_scr("silencedMP");
+							}
 						}
 					}
 				}
@@ -1138,13 +1154,17 @@ if (shootingAllowed && !global.pause) {
 					{
 						if (bowReadyingImage > 0)
 						{
-							shooting_scr("bow");
-							audio_stop_sound(bowReadying_snd);
-							//audio_play_sound(bowShot_snd, 1, false);
-							audio_play_sound(arrowShotWind_snd, 0.9, false);
-							bowReadying = false;
-							bowReadyingImage = 0;
-							playedSoundBowReadying = false;
+							if (room == level_Casino || room == level_CasinoRoof) {
+								camera_obj.showWeaponProhibited = true;
+							} else {
+								shooting_scr("bow");
+								audio_stop_sound(bowReadying_snd);
+								//audio_play_sound(bowShot_snd, 1, false);
+								audio_play_sound(arrowShotWind_snd, 0.9, false);
+								bowReadying = false;
+								bowReadyingImage = 0;
+								playedSoundBowReadying = false;
+							}
 						}
 					}
 				}

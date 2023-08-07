@@ -70,6 +70,7 @@ if (startScene2Timer) {
 	if (scene2Timer < 0) {
 		camera_obj.showWindowMenu = true;
 		camera_obj.windowType = 1;
+		scene2Timer = scene1BlackTimerSave;
 	}
 }
 

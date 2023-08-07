@@ -69,6 +69,8 @@ pauseOffset = 0;
 pauseScreen = 0;
 showBossHealthbar = false;
 showBossHealthbar2 = false;
+showWeaponProhibited = false;
+weaponProhibitedTextTimer = 120;
 
 cameraSpeed = 0.02;
 ycameraSpeed = 0.02;
@@ -85,6 +87,7 @@ pauseDeathTimerSave = pauseDeathTimer;
 newWeaponTimerSave = newWeaponTimer;
 deathDelayTimerSave = deathDelayTimer;
 infectionHealedTextTimerSave = infectionHealedTextTimer;
+weaponProhibitedTextTimerSave = weaponProhibitedTextTimer;
 
 shake = false;
 shake_time = 0;
