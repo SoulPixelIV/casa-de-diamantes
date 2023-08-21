@@ -7,6 +7,8 @@ verspeed = 0;
 DistFromPlayer = 150;
 colliding = true;
 hitable = true;
+frozen = false;
+freezeRes = 5;
 level = 1;
 moneyDropMin = 3;
 moneyDropMax = 6;
@@ -68,6 +70,7 @@ attackTintDelay = -1;
 lineFlashTimerSave = lineFlashTimer;
 turnDelaySave = turnDelay;
 gravityStrengthSave = gravityStrength;
+movSpeedSave = movSpeed;
 
 image_yscale = -1;
 blend = image_blend;

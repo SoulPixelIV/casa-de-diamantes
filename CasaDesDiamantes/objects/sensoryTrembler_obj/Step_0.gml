@@ -229,6 +229,19 @@ else
     verSpeed = 0;
 }
 
+//Frozen
+if (frozen) {
+	movSpeed = movSpeedSave / 2;
+	image_blend = make_color_rgb(120, 120, 255);
+} else {
+	movSpeed = movSpeedSave;
+	image_blend = c_white;
+}
+
+if (freezeRes <= 0) {
+	frozen = true;
+}
+
 if (aggroAtSpecificPoint)
 {
 	var specificPoint = instance_nearest(x, y, battleArenaPlayerpoint_obj);
@@ -382,7 +395,11 @@ if (!attackInProg && !attackInProg2 && !attackInProg3 && aggro)
 {
 	if (distance_to_object(player_obj) < aggroRange && distance_to_object(player_obj) > 86)
 	{
-		attackCooldown -= global.dt;
+		if (!frozen) {
+			attackCooldown -= global.dt;
+		} else {
+			attackCooldown -= global.dt / 2;
+		}
 	}
 	if (distance_to_object(player_obj) < 86 && distance_to_object(player_obj) > 32)
 	{

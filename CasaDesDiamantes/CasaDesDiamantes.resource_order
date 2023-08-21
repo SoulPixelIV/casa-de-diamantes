@@ -705,6 +705,7 @@
     {"name":"spikesShort_spr","order":117,"path":"sprites/spikesShort_spr/spikesShort_spr.yy",},
     {"name":"overworldTrigger2_obj","order":126,"path":"objects/overworldTrigger2_obj/overworldTrigger2_obj.yy",},
     {"name":"__ppf_sh_render_sunshafts","order":18,"path":"shaders/__ppf_sh_render_sunshafts/__ppf_sh_render_sunshafts.yy",},
+    {"name":"frozenskull_spr","order":198,"path":"sprites/frozenskull_spr/frozenskull_spr.yy",},
     {"name":"voidBackground","order":9,"path":"tilesets/voidBackground/voidBackground.yy",},
     {"name":"pistolShot_snd","order":11,"path":"sounds/pistolShot_snd/pistolShot_snd.yy",},
     {"name":"customization_obj","order":7,"path":"objects/customization_obj/customization_obj.yy",},

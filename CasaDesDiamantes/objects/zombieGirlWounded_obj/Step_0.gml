@@ -211,6 +211,19 @@ else
     verSpeed = 0;
 }
 
+//Frozen
+if (frozen) {
+	movSpeed = movSpeedSave / 2;
+	image_blend = make_color_rgb(120, 120, 255);
+} else {
+	movSpeed = movSpeedSave;
+	image_blend = c_white;
+}
+
+if (freezeRes <= 0) {
+	frozen = true;
+}
+
 //###Death###
 if (hp < 0)
 {

@@ -7,6 +7,8 @@ verspeed = 0;
 //Stats
 colliding = true;
 hitable = true;
+frozen = false;
+freezeRes = 12;
 level = 1;
 moneyDropMin = 20;
 moneyDropMax = 35;
@@ -79,6 +81,7 @@ randDirChangeTimerSave = randDirChangeTimer;
 initialShootDelaySave = initialShootDelay;
 slamDelaySave = slamDelay;
 pauseDelaySave = pauseDelay;
+movSpeedSave = movSpeed;
 
 //Create Emitter
 emitter = audio_emitter_create();

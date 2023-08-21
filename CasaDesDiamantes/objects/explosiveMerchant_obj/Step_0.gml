@@ -236,6 +236,21 @@ if (flying && place_meeting(x, y, enemy_obj))
 	exploding = true;
 }
 
+//Frozen
+if (frozen) {
+	movSpeed = movSpeedSave / 2;
+	image_blend = make_color_rgb(120, 120, 255);
+} else {
+	movSpeed = movSpeedSave;
+	if (!damageTint) {
+		image_blend = c_white;
+	}
+}
+
+if (freezeRes <= 0) {
+	frozen = true;
+}
+
 //verspeed
 if (!place_free(x, y + (verspeed * global.dt)) || place_meeting(x, y + verspeed * global.dt, colliderEnemyOnly_obj))
 {

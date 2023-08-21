@@ -16,6 +16,8 @@ else
 hp = 1;
 colliding = true;
 hitable = true;
+frozen = false;
+freezeRes = 1;
 level = 1;
 movSpeed = 0;
 moneyDropMin = 3;
@@ -42,6 +44,7 @@ open = false;
 //Help Vars
 damageTintTimerSave = damageTintTimer;
 gravityStrengthSave = gravityStrength;
+movSpeedSave = movSpeed;
 
 alarmLight = instance_create_layer(x, y, "GraphicsLayer", spotlightRed_obj); 
 with (alarmLight)

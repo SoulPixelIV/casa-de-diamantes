@@ -5,7 +5,7 @@ if (instance_exists(enemyTarget))
 	{
 		enemyTarget.lastBullet = bulletShotgun_obj;
 		enemyTarget.damageTint = true;
-		enemyTarget.hp -= 6;
+		enemyTarget.hp -= 6 * damageMultiplier;
 		enemyTarget.headshot = false;
 		enemyTarget.aggro = true;
 		penetration--;

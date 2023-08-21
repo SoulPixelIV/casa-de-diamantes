@@ -229,6 +229,21 @@ if (!noGravity) {
 image_speed = 0;
 image_index += (global.dt / 15) * animationSpeed;
 
+//Frozen
+if (frozen) {
+	movSpeed = movSpeedSave / 2;
+	image_blend = make_color_rgb(120, 120, 255);
+} else {
+	movSpeed = movSpeedSave;
+	if (!damageTint && !attackTint) {
+		image_blend = c_white;
+	}
+}
+
+if (freezeRes <= 0) {
+	frozen = true;
+}
+
 //###Death###
 if (hp < 0)
 {
@@ -327,7 +342,11 @@ if (!attackInProg && !attackInProg2 && aggro && !jumpToNewDest && (verspeed < 0.
 {
 	if ((callSpiders && sendCallout) || !callSpiders) {
 		if (distance_to_object(player_obj) < 128) {
-			attackCooldown -= global.dt;
+			if (!frozen) {
+				attackCooldown -= global.dt;
+			} else {
+				attackCooldown -= global.dt / 2;
+			}
 		}
 	}
 }

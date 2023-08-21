@@ -78,6 +78,7 @@
     {"name":"inst_34B6AF67","path":"rooms/level4/level4.yy",},
     {"name":"inst_7C2CEEE7","path":"rooms/level4/level4.yy",},
     {"name":"inst_45CA512A","path":"rooms/level4/level4.yy",},
+    {"name":"inst_9DCF795","path":"rooms/level4/level4.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -159,6 +160,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_12534B62","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"Spawn3_obj","path":"objects/Spawn3_obj/Spawn3_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":3072.0,"y":768.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_2F94874F","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"Spawn4_obj","path":"objects/Spawn4_obj/Spawn4_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":3072.0,"y":1024.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_45CA512A","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"level4_demoend_teleporter","path":"objects/level4_demoend_teleporter/level4_demoend_teleporter.yy",},"properties":[],"rotation":0.0,"scaleX":8.125,"scaleY":29.5625,"x":3186.0,"y":886.5,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_9DCF795","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"zombieGirl_obj","path":"objects/zombieGirl_obj/zombieGirl_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1234.0,"y":841.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"MidgroundObjects","depth":1300,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Tiles","depth":1400,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":63,"SerialiseWidth":282,"TileCompressedData":[

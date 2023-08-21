@@ -6,6 +6,8 @@ attackCooldown = 200;
 attackDelay = 50;
 colliding = true;
 hitable = true;
+frozen = false;
+freezeRes = 7;
 level = 2;
 damageAttack1 = 25;
 moneyDropMin = 8;
@@ -74,6 +76,7 @@ attackTintDelay = -1;
 gravityStrengthSave = gravityStrength;
 checkForPlayerPosTimerSave = checkForPlayerPosTimer;
 stageTeleportTimerSave = stageTeleportTimer;
+movSpeedSave = movSpeed;
 
 attack1PrepareTimerSave = attack1PrepareTimer;
 attack1StopTimerSave = attack1StopTimer;

@@ -24,6 +24,10 @@ if (aggro && exclamationmarkTimer > 0)
 	exclamationmarkTimer -= global.dt;
 	draw_sprite(exclamationmark_spr, 0, x, y - 32);
 }
+if (frozen) {
+	draw_sprite(frozenskull_spr, 0, x, y - 32);	
+}
+
 if (!aggro)
 {
 	exclamationmarkTimer = exclamationmarkTimerSave;

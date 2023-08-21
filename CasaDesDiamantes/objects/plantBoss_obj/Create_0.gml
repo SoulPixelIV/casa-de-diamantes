@@ -5,6 +5,9 @@ damageTint = false;
 attackTint = false;
 startBattle = false;
 
+frozen = false;
+freezeRes = 9999999;
+
 attackTimer = 1000;
 attackTimer2 = 500;
 

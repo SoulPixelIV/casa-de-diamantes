@@ -897,6 +897,7 @@
     {"id":{"name":"spikesShort_spr","path":"sprites/spikesShort_spr/spikesShort_spr.yy",},},
     {"id":{"name":"overworldTrigger2_obj","path":"objects/overworldTrigger2_obj/overworldTrigger2_obj.yy",},},
     {"id":{"name":"__ppf_sh_render_sunshafts","path":"shaders/__ppf_sh_render_sunshafts/__ppf_sh_render_sunshafts.yy",},},
+    {"id":{"name":"frozenskull_spr","path":"sprites/frozenskull_spr/frozenskull_spr.yy",},},
     {"id":{"name":"voidBackground","path":"tilesets/voidBackground/voidBackground.yy",},},
     {"id":{"name":"pistolShot_snd","path":"sounds/pistolShot_snd/pistolShot_snd.yy",},},
     {"id":{"name":"customization_obj","path":"objects/customization_obj/customization_obj.yy",},},

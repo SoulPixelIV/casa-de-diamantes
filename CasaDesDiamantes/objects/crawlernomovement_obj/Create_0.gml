@@ -6,6 +6,8 @@ gravityStrength = -0.05;
 hp = 99999999;
 colliding = false;
 hitable = true;
+frozen = false;
+freezeRes = 1;
 knockback = 0;
 movSpeed = 1.21;
 movSpeedGrad = 0;
@@ -71,6 +73,7 @@ useDelayTimerSave = useDelayTimer;
 gravityStrengthSave = gravityStrength;
 checkForPlayerPosTimerSave = checkForPlayerPosTimer;
 stageTeleportTimerSave = stageTeleportTimer;
+movSpeedSave = movSpeed;
 
 attack1PrepareTimerSave = attack1PrepareTimer;
 

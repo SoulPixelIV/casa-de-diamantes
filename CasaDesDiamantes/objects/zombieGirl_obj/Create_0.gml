@@ -7,6 +7,8 @@ verspeed = 0;
 //Stats
 colliding = true;
 hitable = true;
+frozen = false;
+freezeRes = 4;
 level = 1;
 moneyDropMin = 2;
 moneyDropMax = 3;
@@ -83,6 +85,7 @@ attackTintDelay = -1;
 gravityStrengthSave = gravityStrength;
 checkForPlayerPosTimerSave = checkForPlayerPosTimer;
 stageTeleportTimerSave = stageTeleportTimer;
+movSpeedSave = movSpeed;
 
 attack1PrepareTimerSave = attack1PrepareTimer;
 attack1StopTimerSave = attack1StopTimer;

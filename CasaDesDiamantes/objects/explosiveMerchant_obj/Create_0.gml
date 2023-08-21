@@ -9,6 +9,8 @@ dir = 0;
 hp = 1;
 colliding = true;
 hitable = true;
+frozen = false;
+freezeRes = 3;
 level = 1;
 movSpeed = 0.42;
 moneyDropMin = 3;
@@ -46,6 +48,7 @@ deaggroTimerSave = deaggroTimer;
 exclamationmarkTimerSave = exclamationmarkTimer;
 damageTintTimerSave = damageTintTimer;
 gravityStrengthSave = gravityStrength;
+movSpeedSave = movSpeed;
 
 blend = image_blend;
 

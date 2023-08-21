@@ -8,6 +8,8 @@ verspeed = 0;
 hp = 110;
 colliding = true;
 hitable = true;
+frozen = false;
+freezeRes = 1;
 moneyDropTimer = 95;
 level = 1;
 damage = 0;
@@ -56,6 +58,7 @@ damageTintTimerSave = damageTintTimer;
 gravityStrengthSave = gravityStrength;
 moneyDropTimerSave = moneyDropTimer;
 turnDelaySave = turnDelay;
+movSpeedSave = movSpeed;
 
 checkPlayerTimer = 50;
 checkPlayerTimerSave = checkPlayerTimer;

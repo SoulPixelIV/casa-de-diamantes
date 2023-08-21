@@ -5,6 +5,8 @@ ammoSpawnCount = 4;
 horspeed = 0;
 verspeed = 0;
 colliding = true;
+frozen = false;
+freezeRes = 6;
 hitable = true;
 level = 1;
 moneyDropMin = 4;
@@ -61,6 +63,7 @@ damageTintTimerSave = damageTintTimer;
 lineFlashTimerSave = lineFlashTimer;
 turnDelaySave = turnDelay;
 gravityStrengthSave = gravityStrength;
+movSpeedSave = movSpeed;
 
 blend = image_blend;
 
