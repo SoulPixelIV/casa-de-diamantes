@@ -4,8 +4,9 @@ if (other.startBattle) {
 	{
 		enemyTarget.damageTint = true;
 		enemyTarget.hp -= 1.3;
-		if (global.dualBarettasUpgrade1) {
+		if (global.dualBarettasUpgrade1 && !dealtFreezeDamage) {
 			enemyTarget.freezeRes -= 1;
+			dealtFreezeDamage = true;
 		}
 		bloodSpread = instance_create_layer(x, y, "Instances", bloodSpread_obj);
 		bloodSpread.image_angle = image_angle;

@@ -6,8 +6,9 @@ if (!dealtDamage && instance_exists(enemyTarget) && other.hitable)
 	enemyTarget.hp -= 8;
 	enemyTarget.headshot = false;
 	enemyTarget.aggro = true;
-	if (global.dualBarettasUpgrade1) {
+	if (global.dualBarettasUpgrade1 && !dealtFreezeDamage) {
 		enemyTarget.freezeRes -= 1;
+		dealtFreezeDamage = true;
 	}
 	penetration--;
 	bloodSpread = instance_create_layer(x, y, "Instances", bloodSpread_obj);

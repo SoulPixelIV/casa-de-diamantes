@@ -991,7 +991,38 @@ else
 }
 
 if (drawElevatorSign) {
-	draw_sprite(elevatorSelectMenu_spr, 0, global.xScreenSize / 2, (global.yScreenSize / 2) + windowMenuOffset);
+	
+	if (!createdElevatorSignButtons) {
+		elevatorButton1 = instance_create_layer(x, y, "Instances", elevatorSelectMenuButton1_obj);
+		elevatorButton2 = instance_create_layer(x, y, "Instances", elevatorSelectMenuButton2_obj);
+		elevatorButton3 = instance_create_layer(x, y, "Instances", elevatorSelectMenuButton3_obj);
+		createdElevatorSignButtons = true;
+	}
+	if (instance_exists(elevatorButton1)) {
+		elevatorButton1.x = x;
+		elevatorButton1.y = y;
+	}
+	if (instance_exists(elevatorButton2)) {
+		elevatorButton2.x = x;
+		elevatorButton2.y = y;
+	}
+	if (instance_exists(elevatorButton3)) {
+		elevatorButton3.x = x;
+		elevatorButton3.y = y;
+	}
+	
+	if (elevatorButton1.hover) {
+		draw_sprite(elevatorSelectMenu_spr, 1, global.xScreenSize / 2, (global.yScreenSize / 2) + windowMenuOffset);
+	}
+	if (elevatorButton2.hover) {
+		//draw_sprite(elevatorSelectMenu_spr, 2, global.xScreenSize / 2, (global.yScreenSize / 2) + windowMenuOffset);
+	}
+	if (elevatorButton3.hover) {
+		draw_sprite(elevatorSelectMenu_spr, 3, global.xScreenSize / 2, (global.yScreenSize / 2) + windowMenuOffset);
+	}
+	if (!elevatorButton1.hover && !elevatorButton2.hover && !elevatorButton3.hover) {
+		draw_sprite(elevatorSelectMenu_spr, 0, global.xScreenSize / 2, (global.yScreenSize / 2) + windowMenuOffset);
+	}
 	
 	draw_set_font(gothicPixel_fnt);
 	draw_set_halign(fa_center);
@@ -1395,7 +1426,7 @@ if (instance_exists(player_obj)) {
 }
 
 //Show Shooting Prohibited Text
-if (showWeaponProhibited) {
+if (showWeaponProhibited && !drawElevatorSign) {
 	weaponProhibitedTextTimer -= global.dt;
 	draw_set_halign(fa_center);
 	draw_text(global.xScreenSize / 2, global.yScreenSize - global.yScreenSize / 4, "Shooting Prohibited");

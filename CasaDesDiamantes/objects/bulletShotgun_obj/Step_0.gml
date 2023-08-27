@@ -1,7 +1,5 @@
 /// @description Movement
 
-x += movSpeedX;
-y += movSpeedY;
 image_angle = dir;
 
 //Invincibility
@@ -20,8 +18,16 @@ if (invincibilityTimer <= 0)
 			instance_change(bulletHit_obj, true);
 		} else {
 			audio_play_sound(bulletHitGround_snd, 1, false);
-			movSpeedX = -movSpeedX;
-			movSpeedY = -movSpeedY;
+			
+			if ((dir >= 0 && dir < 90) || (dir >= 180 && dir < 270)) {
+				dir -= 90;
+			}
+			else if ((dir >= 90 && dir < 180) || (dir >= 270 && dir < 359)) {
+				dir += 90;
+			}
+			
+			invincibilityTimer = 30;
+			
 			image_alpha = 1;
 			
 			if (global.shotgunUpgrade2) {
@@ -51,3 +57,8 @@ if (image_alpha < 0)
 {
 	instance_destroy();
 }
+
+movSpeedX = (lengthdir_x(movSpeed, dir)) * global.dt;
+movSpeedY = (lengthdir_y(movSpeed, dir)) * global.dt;
+x += movSpeedX;
+y += movSpeedY;
