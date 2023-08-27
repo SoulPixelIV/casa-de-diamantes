@@ -3,6 +3,7 @@ image_speed = 0;
 image_index = 0;
 
 used = false;
+target = 0;
 animationSpeed = 0.2;
 elevatorTimer = 600;
 

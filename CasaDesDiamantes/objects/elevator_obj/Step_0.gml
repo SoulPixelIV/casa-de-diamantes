@@ -32,13 +32,14 @@ if (image_index < image_number - 1) {
 }
 
 if (elevatorTimer < 0 && used) {
-	if (elevatorNumber == 0) {
+	if (target == 0) {
 		part_emitter_destroy_all(global.partSystem);
-		instance_destroy(player_obj);
-		global.spawn = 0;
-		room_goto(level_CasinoRoof);
+		global.spawn = 3;
+		player_obj.x = Spawn4_obj.x;
+		player_obj.y = Spawn4_obj.y;
+		used = false;
 	}
-	if (elevatorNumber == 1) {
+	if (target == 1) {
 		part_emitter_destroy_all(global.partSystem);
 		instance_destroy(player_obj);
 		global.spawn = 2;
