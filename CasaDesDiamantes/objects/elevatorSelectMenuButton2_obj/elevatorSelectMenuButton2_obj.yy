@@ -6,6 +6,7 @@
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":10,"eventType":6,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":11,"eventType":6,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":4,"eventType":6,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
@@ -30,9 +31,9 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "elevatorSelectMenuButton1_spr",
-    "path": "sprites/elevatorSelectMenuButton1_spr/elevatorSelectMenuButton1_spr.yy",
+    "name": "elevatorSelectMenuButton2_spr",
+    "path": "sprites/elevatorSelectMenuButton2_spr/elevatorSelectMenuButton2_spr.yy",
   },
   "spriteMaskId": null,
-  "visible": true,
+  "visible": false,
 }

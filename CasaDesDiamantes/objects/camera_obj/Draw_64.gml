@@ -991,7 +991,6 @@ else
 }
 
 if (drawElevatorSign) {
-	
 	if (!createdElevatorSignButtons) {
 		elevatorButton1 = instance_create_layer(x, y, "Instances", elevatorSelectMenuButton1_obj);
 		elevatorButton2 = instance_create_layer(x, y, "Instances", elevatorSelectMenuButton2_obj);
@@ -1015,7 +1014,7 @@ if (drawElevatorSign) {
 		draw_sprite(elevatorSelectMenu_spr, 1, global.xScreenSize / 2, (global.yScreenSize / 2) + windowMenuOffset);
 	}
 	if (elevatorButton2.hover) {
-		//draw_sprite(elevatorSelectMenu_spr, 2, global.xScreenSize / 2, (global.yScreenSize / 2) + windowMenuOffset);
+		draw_sprite(elevatorSelectMenu_spr, 2, global.xScreenSize / 2, (global.yScreenSize / 2) + windowMenuOffset);
 	}
 	if (elevatorButton3.hover) {
 		draw_sprite(elevatorSelectMenu_spr, 3, global.xScreenSize / 2, (global.yScreenSize / 2) + windowMenuOffset);

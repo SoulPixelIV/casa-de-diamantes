@@ -35,5 +35,5 @@
     "path": "sprites/elevatorSelectMenuButton1_spr/elevatorSelectMenuButton1_spr.yy",
   },
   "spriteMaskId": null,
-  "visible": true,
+  "visible": false,
 }
