@@ -22,3 +22,11 @@ if (global.spawn == 5)
 {
 	instance_create_layer(Spawn6_obj.x, Spawn6_obj.y, "Instances", player_obj);
 }
+if (global.spawn == 6)
+{
+	instance_create_layer(Spawn7_obj.x, Spawn7_obj.y, "Instances", player_obj);
+}
+if (global.spawn == 7)
+{
+	instance_create_layer(Spawn8_obj.x, Spawn8_obj.y, "Instances", player_obj);
+}
