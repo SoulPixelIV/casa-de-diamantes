@@ -49,7 +49,7 @@ dialogue[7] = "$We can do that after the job is done.";
 dialogue[8] = "$Don't forget to visit me after you talked to the manager.";
 dialogue[9] = "$I have something for you.";
 dialogue[10] = "#Doesn't that sound great..";
-dialogue[11] = "$You will find me on the third floor."; 
+dialogue[11] = "$You will find me on the VIP floor."; 
 dialogue[12] = "$See ya."; 
 dialogue[13] = ""; 
 
@@ -68,8 +68,9 @@ dialogue[18] = "G1";
 dialogue[19] = "";
 
 //Scene 4
-dialogue[20] = "#*huff *huff";
-dialogue[21] = "$H-how did you survive the sniper?";
+dialogue[20] = "$Steph I have a present for you.";
+dialogue[21] = "$Give me just one second..";
+//BLACKSCREEN
 dialogue[22] = "#I guess I'm very talented at walking..";
 dialogue[23] = "#What are you doing out here?";
 dialogue[24] = "$I'm on my way back to town";

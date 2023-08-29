@@ -1122,6 +1122,7 @@
     {"id":{"name":"smokingJacketDash_spr","path":"sprites/smokingJacketDash_spr/smokingJacketDash_spr.yy",},},
     {"id":{"name":"light_maintain_shadow_map","path":"scripts/light_maintain_shadow_map/light_maintain_shadow_map.yy",},},
     {"id":{"name":"light_draw_shadow_map","path":"scripts/light_draw_shadow_map/light_draw_shadow_map.yy",},},
+    {"id":{"name":"cindy2_obj","path":"objects/cindy2_obj/cindy2_obj.yy",},},
     {"id":{"name":"__ppf_sh_dp_blend_normals","path":"shaders/__ppf_sh_dp_blend_normals/__ppf_sh_dp_blend_normals.yy",},},
     {"id":{"name":"level3_Map_teleporter","path":"objects/level3_Map_teleporter/level3_Map_teleporter.yy",},},
     {"id":{"name":"zombieBucketGirlAttack1Stop_spr","path":"sprites/zombieBucketGirlAttack1Stop_spr/zombieBucketGirlAttack1Stop_spr.yy",},},
