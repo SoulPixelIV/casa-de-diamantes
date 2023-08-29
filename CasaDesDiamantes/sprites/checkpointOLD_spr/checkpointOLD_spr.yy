@@ -59,7 +59,7 @@
             {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"b7ece1b8-d607-4088-a3cd-6db223e04f2e","path":"sprites/checkpointOLD_spr/checkpointOLD_spr.yy",},},},"Disabled":false,"id":"8e4d2db2-5fa6-41ea-b77e-afa85fc2e7b0","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
-    "visibleRange": {"x":0.0,"y":0.0,},
+    "visibleRange": null,
     "volume": 1.0,
     "xorigin": 16,
     "yorigin": 75,
