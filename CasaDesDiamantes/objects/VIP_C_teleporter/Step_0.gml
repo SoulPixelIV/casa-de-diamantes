@@ -1,17 +1,11 @@
-if (place_meeting(x, y, player_obj))
-{
-	teleporting = true;
-	player_obj.movement = false;
-}
-
 if (teleporting) {
 	blackscreen_scr(0);
 	blackscreenDelay -= global.dt;
 }
 
 if (blackscreenDelay < 0) {
-	player_obj.x = Spawn4_obj.x;
-	player_obj.y = Spawn4_obj.y;
+	player_obj.x = Spawn6_obj.x;
+	player_obj.y = Spawn6_obj.y;
 	player_obj.movement = true;
 	finishingTeleport = true;
 	blackscreenDelay = blackscreenDelaySave;

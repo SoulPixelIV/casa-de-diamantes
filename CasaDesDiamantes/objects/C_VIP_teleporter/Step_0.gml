@@ -10,8 +10,8 @@ if (teleporting) {
 }
 
 if (blackscreenDelay < 0) {
-	player_obj.x = Spawn3_obj.x;
-	player_obj.y = Spawn3_obj.y;
+	player_obj.x = Spawn5_obj.x;
+	player_obj.y = Spawn5_obj.y;
 	player_obj.movement = true;
 	finishingTeleport = true;
 	blackscreenDelay = blackscreenDelaySave;
