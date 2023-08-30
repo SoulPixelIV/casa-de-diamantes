@@ -15,9 +15,9 @@ scene2High = 16;
 scene3Low = 17;
 scene3High = 19;
 scene4Low = 20;
-scene4High = 25;
-scene5Low = 26;
-scene5High = 38;
+scene4High = 28;
+scene5Low = 29;
+scene5High = 41;
 
 //Dialogue Text
 //!!!ALWAYS 1 FREE SPACE BETWEEN SCENES
@@ -68,25 +68,31 @@ dialogue[18] = "G1";
 dialogue[19] = "";
 
 //Scene 4
+startScene4Timer = false;
+scene4Timer = 8200;
+scene4TimerSave = scene4Timer;
+
 dialogue[20] = "$Steph I have a present for you.";
-dialogue[21] = "$Give me just one second..";
-//BLACKSCREEN
-dialogue[22] = "#I guess I'm very talented at walking..";
-dialogue[23] = "#What are you doing out here?";
-dialogue[24] = "$I'm on my way back to town";
-dialogue[25] = ""; 
+dialogue[21] = "$I developed a mechanism which allows..";
+dialogue[22] = "$..the user to endure more damage.";
+dialogue[23] = "$It uses these syringes to revive you..";
+dialogue[24] = "$..when you are in critical condition.";
+dialogue[25] = "$But that's not all!";
+dialogue[26] = "$I also worked on a prototype companion!";
+dialogue[27] = "$See for yourself..";
+dialogue[28] = ""; 
 
 //Scene 5 VIP First Mission
-dialogue[26] = "^Evening.";
-dialogue[27] = "#I'm looking for a contract.";
-dialogue[28] = "^Well, let's get to business then.";
-dialogue[29] = "^I need you to eliminate a target for me.";
-dialogue[30] = "^No talking. No evidences. No mistakes.";
-dialogue[31] = "#What's the pay?";
-dialogue[32] = "^2000 chips upfront, 6000 on completion.";
-dialogue[33] = "#Sounds like a deal to me.";
-dialogue[34] = "^The target is located somewhere deep in the Senzela Forest.";
-dialogue[35] = "^He is also armed so prepare yourself.";
-dialogue[36] = "#Alright.";
-dialogue[37] = "^Now get going.";
-dialogue[38] = "";
+dialogue[29] = "^Evening.";
+dialogue[30] = "#I'm looking for a contract.";
+dialogue[31] = "^Well, let's get to business then.";
+dialogue[32] = "^I need you to eliminate a target for me.";
+dialogue[33] = "^No talking. No evidences. No mistakes.";
+dialogue[34] = "#What's the pay?";
+dialogue[35] = "^2000 chips upfront, 6000 on completion.";
+dialogue[36] = "#Sounds like a deal to me.";
+dialogue[37] = "^The target is located somewhere deep in the Senzela Forest.";
+dialogue[38] = "^He is also armed so prepare yourself.";
+dialogue[39] = "#Alright.";
+dialogue[40] = "^Now get going.";
+dialogue[41] = "";

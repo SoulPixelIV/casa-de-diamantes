@@ -27,6 +27,7 @@ startScreenXAxis2 = 0;
 startScreenYAxis = 0;
 deathFadeIn = 0;
 noHUD = false;
+textSpeed = 1;
 image_speed = 1;
 anim = 0;
 anim2 = 0;

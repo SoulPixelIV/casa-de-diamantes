@@ -15,7 +15,7 @@ if (scene1)
 	scene1 = false;
 }
 if (startScene1Timer) {
-	scene1Timer -= global.dt;
+	scene1Timer -= global.dt * camera_obj.textSpeed;
 	
 	if (scene1Timer < 0) {
 		if (!startScene1BlackTimer) {
@@ -31,7 +31,7 @@ if (startScene1Timer) {
 		}
 		
 		if (startScene1BlackTimer) {
-			scene1BlackTimer -= global.dt;
+			scene1BlackTimer -= global.dt * camera_obj.textSpeed;
 			if (scene1BlackTimer < 0) {
 				camera_obj.blackscreenStrength -= global.dt / 40;
 				
@@ -65,7 +65,7 @@ if (scene2)
 	scene2 = false;
 }
 if (startScene2Timer) {
-	scene2Timer -= global.dt;
+	scene2Timer -= global.dt * camera_obj.textSpeed;
 	
 	if (scene2Timer < 0) {
 		camera_obj.showWindowMenu = true;
@@ -91,6 +91,8 @@ if (scene3)
 //Scene 4
 if (scene4)
 {
+	inCutscene = true;
+	startScene1Timer = true;
 	if (!camera_obj.drawText)
 	{
 		for (i = scene4Low; i < scene4High + 1; i++)
@@ -102,6 +104,19 @@ if (scene4)
 	}
 	scene4 = false;
 }
+if (startScene4Timer) {
+	scene4Timer -= global.dt * camera_obj.textSpeed;
+	
+	if (scene4Timer < 0) {
+		scene4Timer = scene4TimerSave;
+		startScene4Timer = false;
+		
+		part_emitter_destroy_all(global.partSystem);
+		instance_destroy(player_obj);
+		room_goto(upgrademenu);
+	}
+}
+
 //Scene 5
 if (scene5)
 {

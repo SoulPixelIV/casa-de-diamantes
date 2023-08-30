@@ -1651,6 +1651,7 @@
     {"id":{"name":"spotlightYellow_obj","path":"objects/spotlightYellow_obj/spotlightYellow_obj.yy",},},
     {"id":{"name":"spotlightPlayer_obj","path":"objects/spotlightPlayer_obj/spotlightPlayer_obj.yy",},},
     {"id":{"name":"Spawn2_obj","path":"objects/Spawn2_obj/Spawn2_obj.yy",},},
+    {"id":{"name":"upgrademenu","path":"rooms/upgrademenu/upgrademenu.yy",},},
     {"id":{"name":"powerplantWallDestruct_spr","path":"sprites/powerplantWallDestruct_spr/powerplantWallDestruct_spr.yy",},},
     {"id":{"name":"hazard_obj","path":"objects/hazard_obj/hazard_obj.yy",},},
     {"id":{"name":"spotlightBlue_obj","path":"objects/spotlightBlue_obj/spotlightBlue_obj.yy",},},
@@ -1902,6 +1903,7 @@
     {"roomId":{"name":"powerplantTest","path":"rooms/powerplantTest/powerplantTest.yy",},},
     {"roomId":{"name":"settings","path":"rooms/settings/settings.yy",},},
     {"roomId":{"name":"level9","path":"rooms/level9/level9.yy",},},
+    {"roomId":{"name":"upgrademenu","path":"rooms/upgrademenu/upgrademenu.yy",},},
   ],
   "TextureGroups": [
     {"resourceType":"GMTextureGroup","resourceVersion":"1.3","name":"Default","autocrop":true,"border":2,"compressFormat":"bz2","directory":"","groupParent":null,"isScaled":true,"loadType":"default","mipsToGenerate":0,"targets":-1,},
