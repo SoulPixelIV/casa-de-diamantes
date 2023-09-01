@@ -149,16 +149,6 @@ if (drawText && !showWindowMenu)
 	draw_set_halign(fa_center);
 	draw_set_color(c_black);
 	
-	//Fastforward Dialogue
-	//draw_set_color(make_color_rgb(255, 215, 0));
-	//draw_set_halign(fa_center);
-	//draw_text(global.xScreenSize / 2, global.yScreenSize - global.yScreenSize / 4 + 32, "Hold Space to Fastforward");
-	if (keyboard_check(vk_space) || gamepad_button_check(4, gp_face1) || gamepad_button_check(0, gp_face1)) {
-		textSpeed = 3;
-	} else {
-		textSpeed = 1;
-	}
-	
 	//Choose Dialogborder Color
 	if (instance_exists(character)) {
 		if (character == player_obj) {
@@ -1432,6 +1422,18 @@ if (instance_exists(player_obj)) {
 			draw_text(16, global.yScreenSize - 16, "Press Select to skip");
 		}
 	}
+}
+
+//Fastforward Dialogue
+draw_set_color(make_color_rgb(255, 215, 0));
+draw_set_halign(fa_center);
+draw_text(global.xScreenSize / 2, global.yScreenSize - global.yScreenSize / 4 + 32, "Hold Space to Fastforward");
+draw_set_color(c_black);
+	
+if (keyboard_check(vk_space) || gamepad_button_check(4, gp_face1) || gamepad_button_check(0, gp_face1)) {
+	textSpeed = 3;
+} else {
+	textSpeed = 1;
 }
 
 //Show Shooting Prohibited Text

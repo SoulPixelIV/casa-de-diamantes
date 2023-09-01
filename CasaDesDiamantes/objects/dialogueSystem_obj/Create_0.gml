@@ -6,6 +6,7 @@ scene2 = false;
 scene3 = false;
 scene4 = false;
 scene5 = false;
+scene6 = false;
 
 //Dialogue Markers
 scene1Low = 0;
@@ -18,6 +19,8 @@ scene4Low = 20;
 scene4High = 28;
 scene5Low = 29;
 scene5High = 41;
+scene6Low = 42;
+scene6High = 44;
 
 //Dialogue Text
 //!!!ALWAYS 1 FREE SPACE BETWEEN SCENES
@@ -67,7 +70,7 @@ dialogue[17] = "[Good evening!";
 dialogue[18] = "G1";
 dialogue[19] = "";
 
-//Scene 4
+//Scene 4 Cindy Intro Upgrade Dialogue
 startScene4Timer = false;
 scene4Timer = 8200;
 scene4TimerSave = scene4Timer;
@@ -96,3 +99,8 @@ dialogue[38] = "^He is also armed so prepare yourself.";
 dialogue[39] = "#Alright.";
 dialogue[40] = "^Now get going.";
 dialogue[41] = "";
+
+//Scene 6 Cindy Upgrade Menu
+dialogue[42] = "$Please take a look..";
+dialogue[43] = "";
+dialogue[44] = "";

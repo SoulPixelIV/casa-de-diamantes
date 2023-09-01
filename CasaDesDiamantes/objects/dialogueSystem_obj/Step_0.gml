@@ -92,7 +92,7 @@ if (scene3)
 if (scene4)
 {
 	inCutscene = true;
-	startScene1Timer = true;
+	startScene4Timer = true;
 	if (!camera_obj.drawText)
 	{
 		for (i = scene4Low; i < scene4High + 1; i++)
