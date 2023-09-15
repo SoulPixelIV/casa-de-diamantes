@@ -21,7 +21,7 @@ var menuEffects = [
 ];
 menu_profile = new PPFX_Profile("Main", menuEffects);
 var blackjackEffects = [
-	new FX_Bloom(true, 6, 0.5, 0.91, c_white, 0.3, true, undefined, 0.8, 1, true),
+	new FX_Bloom(true, 6, 0.5, 0.85, c_white, 0.3, true, undefined, 0.8, 1, true),
 	new FX_SunShafts(true, [0.5, 0.5], 0.27, 0.76, 0.45, 1.6, 0.4, true, 0.7, 0.05, 0.15),
 ];
 blackjack_profile = new PPFX_Profile("Main", blackjackEffects);
@@ -53,7 +53,7 @@ var act2Effects = [
 ];
 act2_profile = new PPFX_Profile("Main", act2Effects);
 
-if (room == mainmenu || room == levelSelect || room == demoend || room == settings) {
+if (room == mainmenu || room == levelSelect || room == demoend || room == settings || room == upgrademenu) {
 	ppfx_id.ProfileLoad(menu_profile);
 } else if (room == blackjackTable) {
 	ppfx_id.ProfileLoad(blackjack_profile);

@@ -5,6 +5,6 @@ zoom = 2;
 xWindowSize = xScreenSize * zoom;
 yWindowSize = yScreenSize * zoom;
 
-optionsY = [64, 80, 96, 112, 128, 144, 160, 176, 192, 208];
+optionsY = [64, 80, 96, 112, 128, 144, 160, 176, 192, 208, 224, 240];
 
 cursorPos = 0;

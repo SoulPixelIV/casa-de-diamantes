@@ -88,6 +88,7 @@ if (scene3)
 	}
 	scene3 = false;
 }
+
 //Scene 4
 if (scene4)
 {
@@ -110,10 +111,11 @@ if (startScene4Timer) {
 	if (scene4Timer < 0) {
 		scene4Timer = scene4TimerSave;
 		startScene4Timer = false;
-		
-		part_emitter_destroy_all(global.partSystem);
-		instance_destroy(player_obj);
-		room_goto(upgrademenu);
+		cindy2_obj.introDialogueDone = true;
+		cindy2_obj.dialogueTriggered = false;
+		player_obj.movement = true;
+		inCutscene = false;
+		camera_obj.drawBlackborders = false;
 	}
 }
 
@@ -130,4 +132,31 @@ if (scene5)
 		camera_obj.drawText = true;
 	}
 	scene5 = false;
+}
+
+//Scene 6
+if (scene6)
+{
+	inCutscene = true;
+	startScene6Timer = true;
+	if (!camera_obj.drawText)
+	{
+		for (i = scene6Low; i < scene6High + 1; i++)
+		{
+			camera_obj.dialogue[i] = dialogue[i];
+		}
+		camera_obj.dialogueLine = scene6Low;
+		camera_obj.drawText = true;
+	}
+	scene6 = false;
+}
+if (startScene6Timer) {
+	scene6Timer -= global.dt * camera_obj.textSpeed;
+	
+	if (scene6Timer < 0) {
+		scene6Timer = scene6TimerSave;
+		startScene6Timer = false;
+		cindy2_obj.introDialogueDone = true;
+		cindy2_obj.dialogueTriggered = false;
+	}
 }

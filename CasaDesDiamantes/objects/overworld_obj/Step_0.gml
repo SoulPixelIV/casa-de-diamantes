@@ -65,5 +65,13 @@ if (keyboard_check_pressed(vk_enter) || gamepad_button_check_pressed(0, gp_face1
 			room_goto(level7);
 			global.lastCheckpoint = noone;
 		break;
+		case 10:
+			room_goto(level8);
+			global.lastCheckpoint = noone;
+		break;
+		case 11:
+			room_goto(level9);
+			global.lastCheckpoint = noone;
+		break;
 	}
 }

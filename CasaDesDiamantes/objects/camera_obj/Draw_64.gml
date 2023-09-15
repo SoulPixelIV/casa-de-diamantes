@@ -105,6 +105,10 @@ if (string_char_at(dialogue[dialogueLine], 1) == "$")
 {
 	character = cindy_obj;
 }
+if (string_char_at(dialogue[dialogueLine], 1) == "*")
+{
+	character = cindy2_obj;
+}
 if (string_char_at(dialogue[dialogueLine], 1) == "%")
 {
 	character = cutieplus_obj;
@@ -131,6 +135,16 @@ if (string_char_at(dialogue[dialogueLine], 1) == "W")
 		windowType = 1;
 	}
 }
+if (string_char_at(dialogue[dialogueLine], 1) == "W")
+{
+	if (string_char_at(dialogue[dialogueLine], 2) == "2")
+	{			
+		part_emitter_destroy_all(global.partSystem);
+		instance_destroy(player_obj);
+		room_goto(upgrademenu);
+	}
+}
+
 //Games
 if (string_char_at(dialogue[dialogueLine], 1) == "G")
 {
@@ -153,13 +167,14 @@ if (drawText && !showWindowMenu)
 	if (instance_exists(character)) {
 		if (character == player_obj) {
 			draw_sprite_ext(dialogBorder_spr, 0, (character.x - x) + global.xScreenSize / 2, (character.y - y) - 42 + global.yScreenSize / 2, 2 + string_length(dialogueStripped) / 3, 1.5, 0, make_color_rgb(255, 215, 0), 1);
-		} else if (character == cindy_obj) {
+		} else if (character == cindy_obj || character == cindy2_obj) {
 			draw_sprite_ext(dialogBorder_spr, 0, (character.x - x) + global.xScreenSize / 2, (character.y - y) - 42 + global.yScreenSize / 2, 2 + string_length(dialogueStripped) / 3, 1.5, 0, c_purple, 1);
 		} else if (character == bartender_obj) {
 			draw_sprite_ext(dialogBorder_spr, 0, (character.x - x) + global.xScreenSize / 2, (character.y - y) - 42 + global.yScreenSize / 2, 2 + string_length(dialogueStripped) / 3, 1.5, 0, c_aqua, 1);
-		}
-			else if (character == casinobunny_obj) {
+		} else if (character == casinobunny_obj) {
 			draw_sprite_ext(dialogBorder_spr, 0, (character.x - x) + global.xScreenSize / 2, (character.y - y) - 42 + global.yScreenSize / 2, 2 + string_length(dialogueStripped) / 3, 1.5, 0, make_color_rgb(255, 215, 215), 1);
+		} else if (character == vip_obj) {
+			draw_sprite_ext(dialogBorder_spr, 0, (character.x - x) + global.xScreenSize / 2, (character.y - y) - 42 + global.yScreenSize / 2, 2 + string_length(dialogueStripped) / 3, 1.5, 0, c_lime, 1);
 		}
 	
 		draw_text((character.x - x) + global.xScreenSize / 2 - 1, (character.y - y) - 46 + 1 + global.yScreenSize / 2, string_copy(dialogueStripped, 1, string_length(dialogue[dialogueLine])));
@@ -1425,10 +1440,12 @@ if (instance_exists(player_obj)) {
 }
 
 //Fastforward Dialogue
-draw_set_color(make_color_rgb(255, 215, 0));
-draw_set_halign(fa_center);
-draw_text(global.xScreenSize / 2, global.yScreenSize - global.yScreenSize / 4 + 32, "Hold Space to Fastforward");
-draw_set_color(c_black);
+if (dialogueSystem_obj.inCutscene) {
+	draw_set_color(make_color_rgb(255, 215, 0));
+	draw_set_halign(fa_center);
+	draw_text(global.xScreenSize / 2, global.yScreenSize - global.yScreenSize / 4 + 32, "Hold Space to Fastforward");
+	draw_set_color(c_black);
+}
 	
 if (keyboard_check(vk_space) || gamepad_button_check(4, gp_face1) || gamepad_button_check(0, gp_face1)) {
 	textSpeed = 3;

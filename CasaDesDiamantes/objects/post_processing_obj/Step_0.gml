@@ -2,7 +2,7 @@ if (ppfx_system_exists(ppfx_id)) {
 	if (global.pause) {
 		ppfx_id.ProfileLoad(pause_profile);
 	} else {
-		if (room == mainmenu || room == levelSelect || room == demoend || room == settings) {
+		if (room == mainmenu || room == levelSelect || room == demoend || room == settings || room == upgrademenu) {
 			ppfx_id.ProfileLoad(menu_profile);
 		} else if (room == blackjackTable) {
 			ppfx_id.ProfileLoad(blackjack_profile);

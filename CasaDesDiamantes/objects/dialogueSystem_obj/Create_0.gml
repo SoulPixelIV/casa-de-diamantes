@@ -27,6 +27,7 @@ scene6High = 44;
 // # = Steph
 // @ = 
 // $ = Cindy
+// * = Cindy2
 // % = Cutie-Plus
 // ] = Bartender
 // [ = Bunnygirl
@@ -72,17 +73,17 @@ dialogue[19] = "";
 
 //Scene 4 Cindy Intro Upgrade Dialogue
 startScene4Timer = false;
-scene4Timer = 8200;
+scene4Timer = 6200;
 scene4TimerSave = scene4Timer;
 
-dialogue[20] = "$Steph I have a present for you.";
-dialogue[21] = "$I developed a mechanism which allows..";
-dialogue[22] = "$..the user to endure more damage.";
-dialogue[23] = "$It uses these syringes to revive you..";
-dialogue[24] = "$..when you are in critical condition.";
-dialogue[25] = "$But that's not all!";
-dialogue[26] = "$I also worked on a prototype companion!";
-dialogue[27] = "$See for yourself..";
+dialogue[20] = "*Steph I have a present for you.";
+dialogue[21] = "*I developed a mechanism which allows..";
+dialogue[22] = "*..the user to endure more damage.";
+dialogue[23] = "*It uses these syringes to revive you..";
+dialogue[24] = "*..when you are in critical condition.";
+dialogue[25] = "*But that's not all!";
+dialogue[26] = "*I also worked on a prototype companion!";
+dialogue[27] = "*See for yourself..";
 dialogue[28] = ""; 
 
 //Scene 5 VIP First Mission
@@ -101,6 +102,10 @@ dialogue[40] = "^Now get going.";
 dialogue[41] = "";
 
 //Scene 6 Cindy Upgrade Menu
-dialogue[42] = "$Please take a look..";
-dialogue[43] = "";
+startScene6Timer = false;
+scene6Timer = 900;
+scene6TimerSave = scene6Timer;
+
+dialogue[42] = "*Please take a look..";
+dialogue[43] = "W2";
 dialogue[44] = "";
