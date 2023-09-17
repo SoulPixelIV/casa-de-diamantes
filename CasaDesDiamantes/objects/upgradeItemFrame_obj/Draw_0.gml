@@ -70,3 +70,7 @@ else
 	draw_set_color(c_red);
 }
 draw_text_ext(x, y + 22, priceText, 12, 99999);
+
+if (used) {
+	image_index = 0;
+}

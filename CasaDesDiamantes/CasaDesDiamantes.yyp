@@ -1744,6 +1744,7 @@
     {"id":{"name":"playerVineDeath_obj","path":"objects/playerVineDeath_obj/playerVineDeath_obj.yy",},},
     {"id":{"name":"collider_obj","path":"objects/collider_obj/collider_obj.yy",},},
     {"id":{"name":"powerplantTiles_spr","path":"sprites/powerplantTiles_spr/powerplantTiles_spr.yy",},},
+    {"id":{"name":"upgrademenuCursor_obj","path":"objects/upgrademenuCursor_obj/upgrademenuCursor_obj.yy",},},
     {"id":{"name":"casinoTiles","path":"tilesets/casinoTiles/casinoTiles.yy",},},
     {"id":{"name":"spr_light","path":"sprites/spr_light/spr_light.yy",},},
     {"id":{"name":"colliderBulletFree_obj","path":"objects/colliderBulletFree_obj/colliderBulletFree_obj.yy",},},
