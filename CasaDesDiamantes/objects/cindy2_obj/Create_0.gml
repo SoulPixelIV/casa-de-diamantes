@@ -1,3 +1,3 @@
-animationSpeed = 0.7;
+animationSpeed = 0.6;
 dialogueTriggered = false;
 introDialogueDone = false; //MAKE GLOBAL

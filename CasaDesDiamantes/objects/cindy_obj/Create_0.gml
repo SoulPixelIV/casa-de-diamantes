@@ -1,4 +1,4 @@
-animationSpeed = 0.7;
+animationSpeed = 0.6;
 dialogueTriggered = false;
 //instance_destroy();
 if (room == level_Casino && global.cutsceneCasinoIntroDone) {
