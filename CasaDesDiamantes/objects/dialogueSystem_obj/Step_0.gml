@@ -145,6 +145,7 @@ if (startScene5Timer) {
 		player_obj.movement = true;
 		inCutscene = false;
 		camera_obj.drawBlackborders = false;
+		global.act2Unlocked = true;
 	}
 }
 

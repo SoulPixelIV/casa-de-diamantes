@@ -1162,6 +1162,28 @@ if (!noHUD)
 	draw_sprite(guiBorder_spr, 0, 0, 0);
 }
 
+//Show Shooting Prohibited Text
+if (showWeaponProhibited && !drawElevatorSign) {
+	weaponProhibitedTextTimer -= global.dt;
+	draw_set_halign(fa_center);
+	draw_text(global.xScreenSize / 2, global.yScreenSize - global.yScreenSize / 4, "Shooting Prohibited");
+	
+	if (weaponProhibitedTextTimer < 0) {
+		weaponProhibitedTextTimer = weaponProhibitedTextTimerSave;
+		showWeaponProhibited = false;
+	}
+}
+
+//Show Mission Text
+if (drawMission) {
+	draw_set_halign(fa_center);
+	draw_set_font(gothicPixel_fnt);
+	draw_set_color(c_black);
+	draw_text(global.xScreenSize / 2 - 1, global.yScreenSize - 16 + 1, "Mission: Find and Execute Target in Senzela Forest");
+	draw_set_color(make_color_rgb(255, 215, 0));
+	draw_text(global.xScreenSize / 2, global.yScreenSize - 16, "Mission: Find and Execute Target in Senzela Forest");
+}
+
 //Pause Screen
 if (global.pause) {
 	drawPause = true;
@@ -1451,18 +1473,6 @@ if (keyboard_check(vk_space) || gamepad_button_check(4, gp_face1) || gamepad_but
 	textSpeed = 3;
 } else {
 	textSpeed = 1;
-}
-
-//Show Shooting Prohibited Text
-if (showWeaponProhibited && !drawElevatorSign) {
-	weaponProhibitedTextTimer -= global.dt;
-	draw_set_halign(fa_center);
-	draw_text(global.xScreenSize / 2, global.yScreenSize - global.yScreenSize / 4, "Shooting Prohibited");
-	
-	if (weaponProhibitedTextTimer < 0) {
-		weaponProhibitedTextTimer = weaponProhibitedTextTimerSave;
-		showWeaponProhibited = false;
-	}
 }
 
 //Save Icon
