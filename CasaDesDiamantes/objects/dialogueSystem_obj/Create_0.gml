@@ -87,16 +87,20 @@ dialogue[27] = "*See for yourself..";
 dialogue[28] = ""; 
 
 //Scene 5 VIP First Mission
+startScene5Timer = false;
+scene5Timer = 8600;
+scene5TimerSave = scene5Timer;
+
 dialogue[29] = "^Evening.";
 dialogue[30] = "#I'm looking for a contract.";
 dialogue[31] = "^Well, let's get to business then.";
 dialogue[32] = "^I need you to eliminate a target for me.";
-dialogue[33] = "^No talking. No evidences. No mistakes.";
+dialogue[33] = "^A plant creature to be quite specific.";
 dialogue[34] = "#What's the pay?";
 dialogue[35] = "^2000 chips upfront, 6000 on completion.";
 dialogue[36] = "#Sounds like a deal to me.";
 dialogue[37] = "^The target is located somewhere deep in the Senzela Forest.";
-dialogue[38] = "^He is also armed so prepare yourself.";
+dialogue[38] = "^Oh and do not inhale its fumes..";
 dialogue[39] = "#Alright.";
 dialogue[40] = "^Now get going.";
 dialogue[41] = "";

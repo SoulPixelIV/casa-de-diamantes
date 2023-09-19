@@ -1850,8 +1850,8 @@
   ],
   "RoomOrderNodes": [
     {"roomId":{"name":"loadVars","path":"rooms/loadVars/loadVars.yy",},},
-    {"roomId":{"name":"upgrademenu","path":"rooms/upgrademenu/upgrademenu.yy",},},
     {"roomId":{"name":"level_Casino","path":"rooms/level_Casino/level_Casino.yy",},},
+    {"roomId":{"name":"upgrademenu","path":"rooms/upgrademenu/upgrademenu.yy",},},
     {"roomId":{"name":"level8","path":"rooms/level8/level8.yy",},},
     {"roomId":{"name":"level7","path":"rooms/level7/level7.yy",},},
     {"roomId":{"name":"credits","path":"rooms/credits/credits.yy",},},

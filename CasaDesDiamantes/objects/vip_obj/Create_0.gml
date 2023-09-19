@@ -1,2 +1,2 @@
-animationSpeed = 1;
+animationSpeed = 0.5;
 dialogueTriggered = false;

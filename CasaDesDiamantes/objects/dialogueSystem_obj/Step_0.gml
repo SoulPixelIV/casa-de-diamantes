@@ -122,6 +122,8 @@ if (startScene4Timer) {
 //Scene 5
 if (scene5)
 {
+	inCutscene = true;
+	startScene5Timer = true;
 	if (!camera_obj.drawText)
 	{
 		for (i = scene5Low; i < scene5High + 1; i++)
@@ -132,6 +134,18 @@ if (scene5)
 		camera_obj.drawText = true;
 	}
 	scene5 = false;
+}
+if (startScene5Timer) {
+	scene5Timer -= global.dt * camera_obj.textSpeed;
+	
+	if (scene5Timer < 0) {
+		scene5Timer = scene5TimerSave;
+		startScene5Timer = false;
+		vip_obj.dialogueTriggered = false;
+		player_obj.movement = true;
+		inCutscene = false;
+		camera_obj.drawBlackborders = false;
+	}
 }
 
 //Scene 6
