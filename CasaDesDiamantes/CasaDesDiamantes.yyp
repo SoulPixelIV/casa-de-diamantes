@@ -1655,6 +1655,7 @@
     {"id":{"name":"spotlightPlayer_obj","path":"objects/spotlightPlayer_obj/spotlightPlayer_obj.yy",},},
     {"id":{"name":"Spawn2_obj","path":"objects/Spawn2_obj/Spawn2_obj.yy",},},
     {"id":{"name":"upgrademenu","path":"rooms/upgrademenu/upgrademenu.yy",},},
+    {"id":{"name":"cutieplusSteph_obj","path":"objects/cutieplusSteph_obj/cutieplusSteph_obj.yy",},},
     {"id":{"name":"powerplantWallDestruct_spr","path":"sprites/powerplantWallDestruct_spr/powerplantWallDestruct_spr.yy",},},
     {"id":{"name":"hazard_obj","path":"objects/hazard_obj/hazard_obj.yy",},},
     {"id":{"name":"spotlightBlue_obj","path":"objects/spotlightBlue_obj/spotlightBlue_obj.yy",},},

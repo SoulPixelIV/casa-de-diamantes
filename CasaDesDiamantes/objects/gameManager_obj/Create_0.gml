@@ -20,10 +20,12 @@ global.pushDelay = 60;
 global.pushDelaySave = global.pushDelay;
 multiplierRun = false;
 
-global.shotgunUpgrade1 = false;
-global.shotgunUpgrade2 = false;
+global.shotgunUpgrade1 = true;
+global.shotgunUpgrade2 = true;
 
-global.dualBarettasUpgrade1 = false;
+global.dualBarettasUpgrade1 = true;
+
+global.cupyUpgrade1 = true;
 
 global.reachedCasino = false;
 global.act2Unlocked = false;

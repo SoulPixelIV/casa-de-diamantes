@@ -1396,6 +1396,7 @@
     {"name":"spotlightPlayer_obj","order":5,"path":"objects/spotlightPlayer_obj/spotlightPlayer_obj.yy",},
     {"name":"Spawn2_obj","order":1,"path":"objects/Spawn2_obj/Spawn2_obj.yy",},
     {"name":"upgrademenu","order":7,"path":"rooms/upgrademenu/upgrademenu.yy",},
+    {"name":"cutieplusSteph_obj","order":7,"path":"objects/cutieplusSteph_obj/cutieplusSteph_obj.yy",},
     {"name":"powerplantWallDestruct_spr","order":115,"path":"sprites/powerplantWallDestruct_spr/powerplantWallDestruct_spr.yy",},
     {"name":"hazard_obj","order":8,"path":"objects/hazard_obj/hazard_obj.yy",},
     {"name":"spotlightBlue_obj","order":6,"path":"objects/spotlightBlue_obj/spotlightBlue_obj.yy",},
