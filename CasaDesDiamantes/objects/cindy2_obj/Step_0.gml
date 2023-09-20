@@ -2,7 +2,7 @@
 image_speed = 0;
 image_index += (global.dt / 15) * animationSpeed;
 
-if (!introDialogueDone) {
+if (!global.introDialogueCindyDone) {
 	if (distance_to_object(player_obj) < 48 && !dialogueTriggered && player_obj.key_up_pressed && !global.pause)
 	{
 		dialogueSystem_obj.scene4 = true;

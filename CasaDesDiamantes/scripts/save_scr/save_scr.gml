@@ -23,6 +23,7 @@ function save_scr(){
 	
 	ini_write_real("save1", "shownCutsceneLevel2", global.cutsceneLevel2Done);
 	ini_write_real("save1", "shownCutsceneCasinoIntro", global.cutsceneCasinoIntroDone);
+	ini_write_real("save1", "shownVIPIntro", global.introDialogueVIPDone);
 
 	ini_write_real("save1", "pwlevel2UnlockedElevator", global.pwlevel2UnlockedElevator);
 	ini_write_real("save1", "pwlevel3UnlockedElevator", global.pwlevel3UnlockedElevator);
@@ -47,6 +48,8 @@ function save_scr(){
 	ini_write_real("save1", "unlockedWeapon2", global.unlockedWeapon[2]);
 	ini_write_real("save1", "unlockedWeapon3", global.unlockedWeapon[3]);
 	ini_write_real("save1", "unlockedWeapon4", global.unlockedWeapon[4]);
+	
+	ini_write_real("save1", "drawMission", global.drawMission);
 	
 	ini_close();
 }

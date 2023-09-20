@@ -1175,13 +1175,15 @@ if (showWeaponProhibited && !drawElevatorSign) {
 }
 
 //Show Mission Text
-if (drawMission) {
-	draw_set_halign(fa_center);
-	draw_set_font(gothicPixel_fnt);
-	draw_set_color(c_black);
-	draw_text(global.xScreenSize / 2 - 1, global.yScreenSize - 16 + 1, "Mission: Find and Execute Target in Senzela Forest");
-	draw_set_color(make_color_rgb(255, 215, 0));
-	draw_text(global.xScreenSize / 2, global.yScreenSize - 16, "Mission: Find and Execute Target in Senzela Forest");
+if (global.drawMission) {
+	if (room == level_Casino || room == level_CasinoRoof) {
+		draw_set_halign(fa_center);
+		draw_set_font(gothicPixel_fnt);
+		draw_set_color(c_black);
+		draw_text(global.xScreenSize / 2 - 1, global.yScreenSize - 16 + 1, "Mission - Find and Execute Target in Senzela Forest");
+		draw_set_color(make_color_rgb(255, 215, 0));
+		draw_text(global.xScreenSize / 2, global.yScreenSize - 16, "Mission - Find and Execute Target in Senzela Forest");
+	}
 }
 
 //Pause Screen

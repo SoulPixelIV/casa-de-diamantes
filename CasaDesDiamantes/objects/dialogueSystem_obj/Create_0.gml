@@ -7,6 +7,7 @@ scene3 = false;
 scene4 = false;
 scene5 = false;
 scene6 = false;
+scene7 = false;
 
 //Dialogue Markers
 scene1Low = 0;
@@ -21,6 +22,8 @@ scene5Low = 29;
 scene5High = 41;
 scene6Low = 42;
 scene6High = 44;
+scene7Low = 45;
+scene7High = 46;
 
 //Dialogue Text
 //!!!ALWAYS 1 FREE SPACE BETWEEN SCENES
@@ -99,7 +102,7 @@ dialogue[33] = "^A plant creature to be quite specific.";
 dialogue[34] = "#What's the pay?";
 dialogue[35] = "^2000 chips upfront, 6000 on completion.";
 dialogue[36] = "#Sounds like a deal to me.";
-dialogue[37] = "^The target is located somewhere deep in the Senzela Forest.";
+dialogue[37] = "^The target is located in the Senzela Forest.";
 dialogue[38] = "^Oh and do not inhale its fumes..";
 dialogue[39] = "#Alright.";
 dialogue[40] = "^Now get going.";
@@ -113,3 +116,11 @@ scene6TimerSave = scene6Timer;
 dialogue[42] = "*Please take a look..";
 dialogue[43] = "W2";
 dialogue[44] = "";
+
+//Scene 7 VIP During Mission Talk
+startScene7Timer = false;
+scene7Timer = 450;
+scene7TimerSave = scene7Timer;
+
+dialogue[45] = "^...";
+dialogue[46] = "";

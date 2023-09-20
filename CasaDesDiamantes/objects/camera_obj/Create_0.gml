@@ -26,7 +26,6 @@ startScreenXAxis1 = 0;
 startScreenXAxis2 = 0;
 startScreenYAxis = 0;
 deathFadeIn = 0;
-drawMission = true;
 noHUD = false;
 textSpeed = 1;
 image_speed = 1;

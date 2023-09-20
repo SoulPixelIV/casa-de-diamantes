@@ -111,7 +111,7 @@ if (startScene4Timer) {
 	if (scene4Timer < 0) {
 		scene4Timer = scene4TimerSave;
 		startScene4Timer = false;
-		cindy2_obj.introDialogueDone = true;
+		global.introDialogueCindyDone = true;
 		cindy2_obj.dialogueTriggered = false;
 		player_obj.movement = true;
 		inCutscene = false;
@@ -146,6 +146,8 @@ if (startScene5Timer) {
 		inCutscene = false;
 		camera_obj.drawBlackborders = false;
 		global.act2Unlocked = true;
+		global.introDialogueVIPDone = true;
+		global.drawMission = true;
 	}
 }
 
@@ -173,5 +175,34 @@ if (startScene6Timer) {
 		startScene6Timer = false;
 		cindy2_obj.introDialogueDone = true;
 		cindy2_obj.dialogueTriggered = false;
+	}
+}
+
+//Scene 7
+if (scene7)
+{
+	inCutscene = true;
+	startScene7Timer = true;
+	if (!camera_obj.drawText)
+	{
+		for (i = scene7Low; i < scene7High + 1; i++)
+		{
+			camera_obj.dialogue[i] = dialogue[i];
+		}
+		camera_obj.dialogueLine = scene7Low;
+		camera_obj.drawText = true;
+	}
+	scene7 = false;
+}
+if (startScene7Timer) {
+	scene7Timer -= global.dt * camera_obj.textSpeed;
+	
+	if (scene7Timer < 0) {
+		scene7Timer = scene7TimerSave;
+		startScene7Timer = false;
+		vip_obj.dialogueTriggered = false;
+		player_obj.movement = true;
+		camera_obj.drawBlackborders = false;
+		inCutscene = false;
 	}
 }

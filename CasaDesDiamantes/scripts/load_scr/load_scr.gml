@@ -18,6 +18,7 @@ function load_scr(){
 	
 	global.cutsceneLevel2Done = ini_read_real("save1", "shownCutsceneLevel2", false);
 	global.cutsceneCasinoIntroDone = ini_read_real("save1", "shownCutsceneCasinoIntro", false);
+	global.introDialogueVIPDone = ini_read_real("save1", "shownVIPIntro", false);
 
 	global.pwlevel2UnlockedElevator = ini_read_real("save1", "pwlevel2UnlockedElevator", false);
 	global.pwlevel3UnlockedElevator = ini_read_real("save1", "pwlevel3UnlockedElevator", false);
@@ -42,6 +43,8 @@ function load_scr(){
 	global.unlockedWeapon[2] = ini_read_real("save1", "unlockedWeapon2", false);
 	global.unlockedWeapon[3] = ini_read_real("save1", "unlockedWeapon3", false);
 	global.unlockedWeapon[4] = ini_read_real("save1", "unlockedWeapon4", false);
+	
+	global.drawMission = ini_read_real("save1", "drawMission", false);
 	
 	ini_close();
 }
