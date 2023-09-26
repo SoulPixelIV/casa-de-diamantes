@@ -1,6 +1,12 @@
 animationSpeed = 0.75;
 verspeed = 0;
 speedVer = 0.035;
+movspeed = 0.82;
 dir = 0;
 movTimer = 120;
 movTimerSave = movTimer;
+target = player_obj;
+oldPos = player_obj.image_xscale;
+targetPosX = target.x - 27 * player_obj.image_xscale;
+targetPosY = target.y - 33;
+switchedPos = false;
