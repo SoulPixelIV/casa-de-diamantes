@@ -406,6 +406,7 @@
     {"name":"playerControllerLine_spr","order":5,"path":"sprites/playerControllerLine_spr/playerControllerLine_spr.yy",},
     {"name":"slowmoCollider_obj","order":9,"path":"objects/slowmoCollider_obj/slowmoCollider_obj.yy",},
     {"name":"potionShopForeground_spr","order":86,"path":"sprites/potionShopForeground_spr/potionShopForeground_spr.yy",},
+    {"name":"blimpFlying_snd","order":65,"path":"sounds/blimpFlying_snd/blimpFlying_snd.yy",},
     {"name":"slotblock_spr","order":113,"path":"sprites/slotblock_spr/slotblock_spr.yy",},
     {"name":"blackjackStandButton_spr","order":10,"path":"sprites/blackjackStandButton_spr/blackjackStandButton_spr.yy",},
     {"name":"sniperZone_obj","order":70,"path":"objects/sniperZone_obj/sniperZone_obj.yy",},

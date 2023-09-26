@@ -181,6 +181,7 @@ currVolSlowmoEnd = audio_sound_get_gain(slowmoEnd_snd);
 
 currVolInfectedVoice = audio_sound_get_gain(infectedVoice_snd);
 currVolInfectionVoice = audio_sound_get_gain(plagueInfectionVoice_snd);
+currVolBlimpFlying = audio_sound_get_gain(blimpFlying_snd);
 
 currVolWalk1 = audio_sound_get_gain(walk1_snd);
 currVolGlitter = audio_sound_get_gain(glitter_snd);

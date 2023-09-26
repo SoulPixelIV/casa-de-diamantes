@@ -148,6 +148,7 @@ audio_sound_gain(slowmoEnd_snd, (global.soundVolume / 100) * currVolSlowmoEnd, 0
 
 audio_sound_gain(infectedVoice_snd, (global.soundVolume / 100) * currVolInfectedVoice, 0);
 audio_sound_gain(plagueInfectionVoice_snd, (global.soundVolume / 100) * currVolInfectionVoice, 0);
+audio_sound_gain(blimpFlying_snd, (global.soundVolume / 100) * currVolBlimpFlying, 0);
 
 audio_sound_gain(walk1_snd, (global.soundVolume / 100) * currVolWalk1, 0);
 audio_sound_gain(glitter_snd, (global.soundVolume / 100) * currVolGlitter, 0);

@@ -580,6 +580,7 @@
     {"id":{"name":"playerControllerLine_spr","path":"sprites/playerControllerLine_spr/playerControllerLine_spr.yy",},},
     {"id":{"name":"slowmoCollider_obj","path":"objects/slowmoCollider_obj/slowmoCollider_obj.yy",},},
     {"id":{"name":"potionShopForeground_spr","path":"sprites/potionShopForeground_spr/potionShopForeground_spr.yy",},},
+    {"id":{"name":"blimpFlying_snd","path":"sounds/blimpFlying_snd/blimpFlying_snd.yy",},},
     {"id":{"name":"slotblock_spr","path":"sprites/slotblock_spr/slotblock_spr.yy",},},
     {"id":{"name":"blackjackStandButton_spr","path":"sprites/blackjackStandButton_spr/blackjackStandButton_spr.yy",},},
     {"id":{"name":"sniperZone_obj","path":"objects/sniperZone_obj/sniperZone_obj.yy",},},
