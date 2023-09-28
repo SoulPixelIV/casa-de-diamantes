@@ -16,6 +16,9 @@
     {"name":"inst_32805C71","path":"rooms/worldmap/worldmap.yy",},
     {"name":"inst_6D2A9289","path":"rooms/worldmap/worldmap.yy",},
     {"name":"inst_2EA16BD1","path":"rooms/worldmap/worldmap.yy",},
+    {"name":"inst_271F7C1C","path":"rooms/worldmap/worldmap.yy",},
+    {"name":"inst_22701F5F","path":"rooms/worldmap/worldmap.yy",},
+    {"name":"inst_1AC0177B","path":"rooms/worldmap/worldmap.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -31,6 +34,11 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_1F712E71","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"lockIcon_obj","path":"objects/lockIcon_obj/lockIcon_obj.yy",},"properties":[
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"lockIcon_obj","path":"objects/lockIcon_obj/lockIcon_obj.yy",},"propertyId":{"name":"stage","path":"objects/lockIcon_obj/lockIcon_obj.yy",},"value":"2",},
           ],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":294.0,"y":224.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_271F7C1C","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"overworldIcon3_obj","path":"objects/overworldIcon3_obj/overworldIcon3_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":394.0,"y":216.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_22701F5F","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"overworldTrigger4_obj","path":"objects/overworldTrigger4_obj/overworldTrigger4_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":395.0,"y":216.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_1AC0177B","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"lockIcon2_obj","path":"objects/lockIcon2_obj/lockIcon2_obj.yy",},"properties":[
+            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"lockIcon2_obj","path":"objects/lockIcon2_obj/lockIcon2_obj.yy",},"propertyId":{"name":"stage","path":"objects/lockIcon2_obj/lockIcon2_obj.yy",},"value":"3",},
+          ],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":394.0,"y":218.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRBackgroundLayer","resourceVersion":"1.0","name":"Background","animationFPS":15.0,"animationSpeedType":0,"colour":4278190080,"depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"spriteId":null,"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
   ],

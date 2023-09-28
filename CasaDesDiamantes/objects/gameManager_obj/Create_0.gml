@@ -28,7 +28,8 @@ global.dualBarettasUpgrade1 = true;
 global.cupyUpgrade1 = true;
 
 global.reachedCasino = false;
-global.act2Unlocked = false;
+global.act2Unlocked = true;
+global.act3Unlocked = true;
 
 global.cutsceneLevel2Done = false;
 global.cutsceneCasinoIntroDone = false;
@@ -126,6 +127,8 @@ global.unlockedWeapon[1] = false;
 global.unlockedWeapon[2] = false;
 global.unlockedWeapon[3] = false;
 global.unlockedWeapon[4] = false;
+
+global.moveToWorld = 0;
 
 blackjackBackToMenu = false;
 

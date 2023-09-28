@@ -227,8 +227,8 @@
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Background4","depth":2500,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
   ],
   "parent": {
-    "name": "DarkSewers",
-    "path": "folders/Levels/Main/DarkSewers.yy",
+    "name": "ACT 3 (Endless Depths)",
+    "path": "folders/Levels/Main/ACT 3 (Endless Depths).yy",
   },
   "parentRoom": null,
   "physicsSettings": {

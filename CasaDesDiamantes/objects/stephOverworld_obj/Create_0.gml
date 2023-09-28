@@ -17,6 +17,10 @@ if (global.currentWorld == 2) {
 	overworldIcon2_obj.draw = true;
 	dest = overworldTrigger3_obj
 }
+if (global.currentWorld == 3) {
+	overworldIcon3_obj.draw = true;
+	dest = overworldTrigger4_obj
+}
 
 x = dest.x;
 y = dest.y;
