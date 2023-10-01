@@ -573,7 +573,7 @@ if (!noHUD && instance_exists(player_obj))
 	}
 	
 	//Proximity Sensor
-	if (room == level0_DarkSewers) {
+	if (room == level10) {
 		var nearestProximityEnemy = instance_nearest(x, y, enemy_obj);
 		if (distance_to_object(nearestProximityEnemy) < 512) {
 			if (nearestProximityEnemy.object_index == crawler_obj || nearestProximityEnemy.object_index == zombieGirl_obj) {

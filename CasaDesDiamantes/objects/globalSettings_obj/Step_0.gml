@@ -116,7 +116,7 @@ else if (room == warpzone_Powerplant)
 {
 	global.ambientShadowIntensity = 0.7 * global.gamma;
 }
-else if (room == level0_DarkSewers)
+else if (room == level10)
 {
 	global.ambientShadowIntensity = 0.7 * global.gamma;
 }
