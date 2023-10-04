@@ -44,6 +44,19 @@ if (room == credits) {
 		if (audio_is_playing(birchL3_msc)) {
 			audio_stop_sound(birchL3_msc);
 		}
+		
+		if (audio_is_playing(caveAmbience1)) {
+			audio_stop_sound(caveAmbience1);
+		}
+		if (audio_is_playing(caveAmbience2)) {
+			audio_stop_sound(caveAmbience2);
+		}
+		if (audio_is_playing(caveAmbience3)) {
+			audio_stop_sound(caveAmbience3);
+		}
+		if (audio_is_playing(caveAmbience4)) {
+			audio_stop_sound(caveAmbience4);
+		}
 
 	}
 } else {
@@ -79,6 +92,19 @@ if (room == demoend) {
 		if (audio_is_playing(birchL3_msc)) {
 			audio_stop_sound(birchL3_msc);
 		}
+		
+		if (audio_is_playing(caveAmbience1)) {
+			audio_stop_sound(caveAmbience1);
+		}
+		if (audio_is_playing(caveAmbience2)) {
+			audio_stop_sound(caveAmbience2);
+		}
+		if (audio_is_playing(caveAmbience3)) {
+			audio_stop_sound(caveAmbience3);
+		}
+		if (audio_is_playing(caveAmbience4)) {
+			audio_stop_sound(caveAmbience4);
+		}
 
 	}
 } else {
@@ -113,6 +139,19 @@ if (room == level_Casino || room == mainmenu || room == levelSelect || room == w
 		}
 		if (audio_is_playing(birchL3_msc)) {
 			audio_stop_sound(birchL3_msc);
+		}
+		
+		if (audio_is_playing(caveAmbience1)) {
+			audio_stop_sound(caveAmbience1);
+		}
+		if (audio_is_playing(caveAmbience2)) {
+			audio_stop_sound(caveAmbience2);
+		}
+		if (audio_is_playing(caveAmbience3)) {
+			audio_stop_sound(caveAmbience3);
+		}
+		if (audio_is_playing(caveAmbience4)) {
+			audio_stop_sound(caveAmbience4);
 		}
 
 	}
@@ -253,7 +292,7 @@ if (act1MusicOn && act1MusicStarted) {
 }
 
 //ACT2 WORLD MUSIC
-if (room == level4 || room == level5A || room == level5B || room == warpzone1 || room == level6 || room == level7 || room == level8) {
+if (room == level4 || room == level5A || room == level5B || room == warpzone1 || room == level6 || room == level7 || room == level8 || room == level9) {
 	act2MusicOn = true;
 } else {
 	act2MusicOn = false;
@@ -309,6 +348,86 @@ if (act2MusicOn && act2MusicStarted) {
 				audio_sound_gain(forestL1, 0, 300);
 				audio_sound_gain(forestL2, 0, 300);
 				audio_sound_gain(forestL3, 0, 300);
+			}
+		}
+	}
+}
+
+//ACT3 WORLD MUSIC
+if (room == level10) {
+	act3MusicOn = true;
+} else {
+	act3MusicOn = false;
+	act3MusicStarted = false;
+}
+
+if (act3MusicOn && !act3MusicStarted) {
+	caveL1 = audio_play_sound_on(musicEmitter, caveAmbience1, 1, 1);
+	caveL2 = audio_play_sound_on(musicEmitter, caveAmbience2, 1, 1);
+	caveL3 = audio_play_sound_on(musicEmitter, caveAmbience3, 1, 1);
+	caveL4 = audio_play_sound_on(musicEmitter, caveAmbience4, 1, 1);
+	
+	audio_sound_gain(caveL1, 0, 0);
+	audio_sound_gain(caveL2, 0, 0);
+	audio_sound_gain(caveL3, 0, 0);
+	audio_sound_gain(caveL4, 0, 0);
+	
+	act3MusicStarted = true;
+}
+
+if (act3MusicOn && act3MusicStarted) {
+	with (player_obj) {	
+		if (place_meeting(x, y, musicBoxAmbience_obj)) {
+			with (musicManager_obj) {
+				if (audio_sound_get_gain(caveL1) == 0) {
+					audio_sound_gain(caveL1, 1, 300);
+				}
+				if (audio_sound_get_gain(caveL2) == 0) {
+					audio_sound_gain(caveL2, 1, 300);
+				}
+				audio_sound_gain(caveL3, 0, 300);
+				audio_sound_gain(caveL4, 0, 300);
+			}
+		}
+		
+		if (place_meeting(x, y, musicBoxAmbience2_obj)) {
+			with (musicManager_obj) {
+				if (audio_sound_get_gain(caveL1) == 0) {
+					audio_sound_gain(caveL1, 1, 300);
+				}
+				if (audio_sound_get_gain(caveL2) == 0) {
+					audio_sound_gain(caveL2, 1, 300);
+				}
+				if (audio_sound_get_gain(caveL4) == 0) {
+					audio_sound_gain(caveL4, 1, 300);
+				}
+				audio_sound_gain(caveL3, 0, 300);
+			}
+		}
+	
+		if (place_meeting(x, y, musicBoxBattle_obj)) {
+			with (musicManager_obj) {
+				if (audio_sound_get_gain(caveL1) == 0) {
+					audio_sound_gain(caveL1, 1, 300);
+				}
+				if (audio_sound_get_gain(caveL2) == 0) {
+					audio_sound_gain(caveL2, 1, 300);
+				}
+				if (audio_sound_get_gain(caveL3) == 0) {
+					audio_sound_gain(caveL3, 1, 300);
+				}
+				if (audio_sound_get_gain(caveL4) == 0) {
+					audio_sound_gain(caveL4, 1, 300);
+				}
+			}
+		}
+		
+		if (place_meeting(x, y, musicBoxSilence_obj)) {
+			with (musicManager_obj) {
+				audio_sound_gain(caveL1, 0, 300);
+				audio_sound_gain(caveL2, 0, 300);
+				audio_sound_gain(caveL3, 0, 300);
+				audio_sound_gain(caveL3, 0, 300);
 			}
 		}
 	}

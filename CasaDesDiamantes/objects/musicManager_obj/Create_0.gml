@@ -4,6 +4,9 @@ act1MusicStarted = false;
 act2MusicOn = false;
 act2MusicStarted = false;
 
+act3MusicOn = false;
+act3MusicStarted = false;
+
 casinoTheme = casinoTheme_msc;
 casinoThemeLowPass = casinoThemeLowpass_msc;
 

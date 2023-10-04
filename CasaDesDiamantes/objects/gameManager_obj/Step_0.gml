@@ -140,10 +140,10 @@ audio_sound_gain(slotmachineLevel1_snd, (global.soundVolume / 100) * currVolSlot
 audio_sound_gain(slotmachineLevel2_snd, (global.soundVolume / 100) * currVolSlotmachineLevel2, 0);
 audio_sound_gain(slotmachineLevel3_snd, (global.soundVolume / 100) * currVolSlotmachineLevel3, 0);
 audio_sound_gain(slotmachineSpinning_snd, (global.soundVolume / 100) * currVolSlotmachineSpinning, 0);
-audio_sound_gain(caveAmbience1_amb, (global.soundVolume / 100) * currVolCaveAmbience1, 0);
-audio_sound_gain(caveAmbience2_amb, (global.soundVolume / 100) * currVolCaveAmbience2, 0);
-audio_sound_gain(caveAmbience3_amb, (global.soundVolume / 100) * currVolCaveAmbience3, 0);
-audio_sound_gain(caveAmbience4_amb, (global.soundVolume / 100) * currVolCaveAmbience4, 0);
+audio_sound_gain(caveAmbience1_amb, (global.soundVolume / 100) * currVolCaveAmbience1 * 40, 0);
+audio_sound_gain(caveAmbience2_amb, (global.soundVolume / 100) * currVolCaveAmbience2 * 20, 0);
+audio_sound_gain(caveAmbience3_amb, (global.soundVolume / 100) * currVolCaveAmbience3 * 10, 0);
+audio_sound_gain(caveAmbience4_amb, (global.soundVolume / 100) * currVolCaveAmbience4 * 40, 0);
 audio_sound_gain(slowmoStart_snd, (global.soundVolume / 100) * currVolSlowmoStart, 0);
 audio_sound_gain(slowmoEnd_snd, (global.soundVolume / 100) * currVolSlowmoEnd, 0);
 audio_sound_gain(glitching_snd, (global.soundVolume / 100) * currVolGlitching, 0);
