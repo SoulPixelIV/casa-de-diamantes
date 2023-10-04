@@ -7,6 +7,7 @@ moneyDropMax = 17;
 
 playedSound1 = false;
 playedSound2 = false;
+playedSound3 = false;
 timer1Sound = 100;
 timer2Sound = 450;
 

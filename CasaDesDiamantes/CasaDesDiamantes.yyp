@@ -1520,6 +1520,7 @@
     {"id":{"name":"fallingObjectPlayer_obj","path":"objects/fallingObjectPlayer_obj/fallingObjectPlayer_obj.yy",},},
     {"id":{"name":"tutorialShiftKeyPromt_obj","path":"objects/tutorialShiftKeyPromt_obj/tutorialShiftKeyPromt_obj.yy",},},
     {"id":{"name":"sensoryTremblerBottom_spr","path":"sprites/sensoryTremblerBottom_spr/sensoryTremblerBottom_spr.yy",},},
+    {"id":{"name":"glitching_snd","path":"sounds/glitching_snd/glitching_snd.yy",},},
     {"id":{"name":"flyingInsectShot_snd","path":"sounds/flyingInsectShot_snd/flyingInsectShot_snd.yy",},},
     {"id":{"name":"__ppf_sh_render_fxaa","path":"shaders/__ppf_sh_render_fxaa/__ppf_sh_render_fxaa.yy",},},
     {"id":{"name":"goldElevator_spr","path":"sprites/goldElevator_spr/goldElevator_spr.yy",},},

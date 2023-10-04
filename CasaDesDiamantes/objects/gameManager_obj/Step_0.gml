@@ -68,6 +68,7 @@ audio_sound_pitch(caveAmbience3_amb, clamp(1 * global.timeScale, 0.5, 1.5));
 audio_sound_pitch(caveAmbience4_amb, clamp(1 * global.timeScale, 0.5, 1.5));
 audio_sound_pitch(slowmoStart_snd, clamp(1 * global.timeScale, 0.5, 1.5));
 audio_sound_pitch(slowmoEnd_snd, clamp(1 * global.timeScale, 0.5, 1.5));
+audio_sound_pitch(glitching_snd, clamp(1 * global.timeScale, 0.5, 1.5));
 
 audio_sound_pitch(infectedVoice_snd, clamp(1 * global.timeScale, 0.5, 1.5));
 audio_sound_pitch(plagueInfectionVoice_snd, clamp(1 * global.timeScale, 0.5, 1.5));
@@ -145,6 +146,7 @@ audio_sound_gain(caveAmbience3_amb, (global.soundVolume / 100) * currVolCaveAmbi
 audio_sound_gain(caveAmbience4_amb, (global.soundVolume / 100) * currVolCaveAmbience4, 0);
 audio_sound_gain(slowmoStart_snd, (global.soundVolume / 100) * currVolSlowmoStart, 0);
 audio_sound_gain(slowmoEnd_snd, (global.soundVolume / 100) * currVolSlowmoEnd, 0);
+audio_sound_gain(glitching_snd, (global.soundVolume / 100) * currVolGlitching, 0);
 
 audio_sound_gain(infectedVoice_snd, (global.soundVolume / 100) * currVolInfectedVoice, 0);
 audio_sound_gain(plagueInfectionVoice_snd, (global.soundVolume / 100) * currVolInfectionVoice, 0);

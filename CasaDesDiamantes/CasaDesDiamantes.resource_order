@@ -1271,6 +1271,7 @@
     {"name":"fallingObjectPlayer_obj","order":2,"path":"objects/fallingObjectPlayer_obj/fallingObjectPlayer_obj.yy",},
     {"name":"tutorialShiftKeyPromt_obj","order":51,"path":"objects/tutorialShiftKeyPromt_obj/tutorialShiftKeyPromt_obj.yy",},
     {"name":"sensoryTremblerBottom_spr","order":4,"path":"sprites/sensoryTremblerBottom_spr/sensoryTremblerBottom_spr.yy",},
+    {"name":"glitching_snd","order":66,"path":"sounds/glitching_snd/glitching_snd.yy",},
     {"name":"flyingInsectShot_snd","order":5,"path":"sounds/flyingInsectShot_snd/flyingInsectShot_snd.yy",},
     {"name":"__ppf_sh_render_fxaa","order":9,"path":"shaders/__ppf_sh_render_fxaa/__ppf_sh_render_fxaa.yy",},
     {"name":"goldElevator_spr","order":195,"path":"sprites/goldElevator_spr/goldElevator_spr.yy",},

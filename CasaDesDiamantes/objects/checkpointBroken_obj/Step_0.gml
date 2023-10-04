@@ -32,6 +32,10 @@ if (timer1Sound < 0) {
 
 if (active && timer2Sound < 0)
 {	
+	if (!playedSound3) {
+		audio_play_sound_on(emitter, glitching_snd, false, 1);
+		playedSound3 = true;
+	}
 	if (instance_exists(spotlightbroken)) {
 		with (spotlightbroken) {
 			open = false;
