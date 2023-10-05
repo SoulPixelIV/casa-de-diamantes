@@ -32,6 +32,28 @@ part_type_gravity(global.toxicPart, 0.0001, 270);
 part_type_color1(global.toxicPart, c_purple);
 part_type_alpha3(global.toxicPart, 0, 0.25, 0);
 
+//Void Particles
+global.voidPart = part_type_create();
+part_type_sprite(global.voidPart, voidMonster_spr, true, true, true);
+part_type_life(global.voidPart, 300, 700);
+part_type_size(global.voidPart, 0.7, 3, 0, 0);
+part_type_orientation(global.voidPart, 0, 359, 0.02, 0, 1);
+part_type_direction(global.voidPart, 0, 359, 0, 3);
+part_type_gravity(global.voidPart, 0.0001, 270);
+part_type_color1(global.voidPart, c_red);
+part_type_alpha3(global.voidPart, 0, 0.8, 0);
+
+//Eyes Particles
+global.eyesPart = part_type_create();
+part_type_sprite(global.eyesPart, voidMonsterEyes_spr, true, true, true);
+part_type_life(global.eyesPart, 300, 700);
+part_type_size(global.eyesPart, 0.5, 2, 0, 0);
+part_type_orientation(global.eyesPart, 0, 359, 0.02, 0, 1);
+part_type_direction(global.eyesPart, 0, 359, 0, 3);
+part_type_gravity(global.eyesPart, 0.0001, 270);
+part_type_color1(global.eyesPart, c_white);
+part_type_alpha3(global.eyesPart, 0, 1, 0);
+
 //Respawn Particles
 global.infectionPart = part_type_create();
 part_type_sprite(global.infectionPart, toxicCloud_spr, true, true, true);
