@@ -47,12 +47,12 @@ part_type_alpha3(global.voidPart, 0, 0.8, 0);
 global.eyesPart = part_type_create();
 part_type_sprite(global.eyesPart, voidMonsterEyes_spr, true, true, true);
 part_type_life(global.eyesPart, 300, 700);
-part_type_size(global.eyesPart, 0.5, 2, 0, 0);
+part_type_size(global.eyesPart, 0.5, 1.5, 0, 0);
 part_type_orientation(global.eyesPart, 0, 359, 0.02, 0, 1);
 part_type_direction(global.eyesPart, 0, 359, 0, 3);
 part_type_gravity(global.eyesPart, 0.0001, 270);
 part_type_color1(global.eyesPart, c_white);
-part_type_alpha3(global.eyesPart, 0, 1, 0);
+part_type_alpha3(global.eyesPart, 0, 0.8, 0);
 
 //Respawn Particles
 global.infectionPart = part_type_create();

@@ -1,5 +1,5 @@
 movspeed = 0;
-movspeedMax = 0.48;
+movspeedMax = -0.39;
 
 voidEmitter = part_emitter_create(global.partSystem);
 

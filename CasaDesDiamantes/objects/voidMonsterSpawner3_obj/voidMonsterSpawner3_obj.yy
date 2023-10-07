@@ -1,11 +1,11 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "voidMonster_obj",
+  "name": "voidMonsterSpawner3_obj",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":{"name":"voidMonsterDestroy_obj","path":"objects/voidMonsterDestroy_obj/voidMonsterDestroy_obj.yy",},"eventNum":0,"eventType":4,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":{"name":"player_obj","path":"objects/player_obj/player_obj.yy",},"eventNum":0,"eventType":4,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
@@ -30,9 +30,9 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "backgroundWindow_spr",
-    "path": "sprites/backgroundWindow_spr/backgroundWindow_spr.yy",
+    "name": "exclamationMarks_spr",
+    "path": "sprites/exclamationMarks_spr/exclamationMarks_spr.yy",
   },
   "spriteMaskId": null,
-  "visible": false,
+  "visible": true,
 }
