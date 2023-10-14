@@ -4,3 +4,5 @@ dialogueTriggered = false;
 if (room == level_Casino && global.cutsceneCasinoIntroDone) {
 	instance_destroy();
 }
+
+col = colliderCindy_obj;

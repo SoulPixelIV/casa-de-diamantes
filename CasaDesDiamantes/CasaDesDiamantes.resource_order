@@ -661,6 +661,7 @@
     {"name":"level8","order":7,"path":"rooms/level8/level8.yy",},
     {"name":"fireball_spr","order":14,"path":"sprites/fireball_spr/fireball_spr.yy",},
     {"name":"minecartFalling_spr","order":57,"path":"sprites/minecartFalling_spr/minecartFalling_spr.yy",},
+    {"name":"colliderCindy_obj","order":12,"path":"objects/colliderCindy_obj/colliderCindy_obj.yy",},
     {"name":"Level6_Level7_teleporter","order":40,"path":"objects/Level6_Level7_teleporter/Level6_Level7_teleporter.yy",},
     {"name":"score4X_spr","order":71,"path":"sprites/score4X_spr/score4X_spr.yy",},
     {"name":"minecartBackground_spr","order":58,"path":"sprites/minecartBackground_spr/minecartBackground_spr.yy",},

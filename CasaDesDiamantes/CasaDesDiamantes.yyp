@@ -850,6 +850,7 @@
     {"id":{"name":"level8","path":"rooms/level8/level8.yy",},},
     {"id":{"name":"fireball_spr","path":"sprites/fireball_spr/fireball_spr.yy",},},
     {"id":{"name":"minecartFalling_spr","path":"sprites/minecartFalling_spr/minecartFalling_spr.yy",},},
+    {"id":{"name":"colliderCindy_obj","path":"objects/colliderCindy_obj/colliderCindy_obj.yy",},},
     {"id":{"name":"Level6_Level7_teleporter","path":"objects/Level6_Level7_teleporter/Level6_Level7_teleporter.yy",},},
     {"id":{"name":"score4X_spr","path":"sprites/score4X_spr/score4X_spr.yy",},},
     {"id":{"name":"minecartBackground_spr","path":"sprites/minecartBackground_spr/minecartBackground_spr.yy",},},
