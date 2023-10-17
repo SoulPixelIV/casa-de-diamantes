@@ -573,6 +573,7 @@ if (!noHUD && instance_exists(player_obj))
 	}
 	
 	//Proximity Sensor
+	/*
 	if (room == level10) {
 		var nearestProximityEnemy = instance_nearest(x, y, enemy_obj);
 		if (distance_to_object(nearestProximityEnemy) < 512) {
@@ -607,7 +608,7 @@ if (!noHUD && instance_exists(player_obj))
 			}
 		}
 	}
-	
+	*/
 	//Chipbar Digit Calculation
 	convMoney = string(global.money);
 	slots = [0,0,0,0,0,0,0];
