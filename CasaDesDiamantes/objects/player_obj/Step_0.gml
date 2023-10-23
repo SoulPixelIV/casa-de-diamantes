@@ -211,77 +211,79 @@ if (!onMovingPlatform)
 if (movement && !isZombie && !global.pause && !inCutscene)
 {
 	//Jump
-	if (grounded && key_jump || fallJumpSafety > 0 && key_jump || isDashing && key_jump || onBooster && key_jump && jumpType != 2)
-	{
-		if (!dashroll) {
-			if (!isDashing) {
-				jump_scr();
-			} else {
-				dashStandupDelayStart = true;
-			}
-		} else {
-			dashjumpbuffer = true;
-		}
-	}
-	//Dash Jump Buffer
-	if (dashjumpbuffer && !dashroll) {
-		jump_scr();
-	}
-	
-	//Dash Standup Delay
-	if (dashStandupDelayStart) {
-		dashStandupDelay -= global.dt;
-	}
-	if (dashStandupDelay < 0) {
-		dashStandupDelayStart = false;
-		dashStandupDelay = dashStandupDelaySave;
-		jump_scr();
-	}
-	
-	//Dash
-	if (key_shift && !isDashing && dashDelay < 0 && !huggingWall && !boosterLockedMovement)
-	{
-		dash_scr();
-		dashInvincibilityOn = true;
-	}
-	if (dashDelay >= 0 && wallJumps == wallJumpsMax)
-	{
-		dashDelay -= global.dt;
-	}
-	if (dashInvincibilityOn) {
-		invincible = true;
-		dashInvincibility -= global.dt;
-	}
-	if (dashInvincibility < 0) {
-		if (!place_meeting(x, y, slowmoCollider_obj) && !inChamber) {
-			invincible = false;
-		}
-		dashInvincibility = dashInvincibilitySave;
-		dashInvincibilityOn = false;
-	}
-	
-	//Cancel Dash
-	if (stoppedDashing || onLadder)
-	{
-		//Check for collision with ground (Different hitbox sizes cause issues)
-		if (place_free(x, y + 32))
+	if (!place_meeting(x, y, slowmoCollider_obj)) {
+		if (grounded && key_jump || fallJumpSafety > 0 && key_jump || isDashing && key_jump || onBooster && key_jump && jumpType != 2)
 		{
-			if (!place_meeting(x, y + 32, enemy_obj))
-			{
-				isDashing = false;
-				stoppedDashing = false;
+			if (!dashroll) {
+				if (!isDashing) {
+					jump_scr();
+				} else {
+					dashStandupDelayStart = true;
+				}
+			} else {
+				dashjumpbuffer = true;
 			}
 		}
-	}
+		//Dash Jump Buffer
+		if (dashjumpbuffer && !dashroll) {
+			jump_scr();
+		}
 	
-	//Short Jump
-	if (key_jump_release && fullJump == false && !isDashing && !flip)
-	{
-	    if (verspeed < 0)
-	    {
-	        verspeed /= 2;
-			shortJump = true;
-	    }
+		//Dash Standup Delay
+		if (dashStandupDelayStart) {
+			dashStandupDelay -= global.dt;
+		}
+		if (dashStandupDelay < 0) {
+			dashStandupDelayStart = false;
+			dashStandupDelay = dashStandupDelaySave;
+			jump_scr();
+		}
+	
+		//Dash
+		if (key_shift && !isDashing && dashDelay < 0 && !huggingWall && !boosterLockedMovement)
+		{
+			dash_scr();
+			dashInvincibilityOn = true;
+		}
+		if (dashDelay >= 0 && wallJumps == wallJumpsMax)
+		{
+			dashDelay -= global.dt;
+		}
+		if (dashInvincibilityOn) {
+			invincible = true;
+			dashInvincibility -= global.dt;
+		}
+		if (dashInvincibility < 0) {
+			if (!place_meeting(x, y, slowmoCollider_obj) && !inChamber) {
+				invincible = false;
+			}
+			dashInvincibility = dashInvincibilitySave;
+			dashInvincibilityOn = false;
+		}
+	
+		//Cancel Dash
+		if (stoppedDashing || onLadder)
+		{
+			//Check for collision with ground (Different hitbox sizes cause issues)
+			if (place_free(x, y + 32))
+			{
+				if (!place_meeting(x, y + 32, enemy_obj))
+				{
+					isDashing = false;
+					stoppedDashing = false;
+				}
+			}
+		}
+	
+		//Short Jump
+		if (key_jump_release && fullJump == false && !isDashing && !flip)
+		{
+		    if (verspeed < 0)
+		    {
+		        verspeed /= 2;
+				shortJump = true;
+		    }
+		}
 	}
 }
 
@@ -500,6 +502,10 @@ if (movement && !isZombie)
 			isDashing = false;
 		}
 	}
+}
+
+if (!place_meeting(x, y, slowmoCollider_obj)) {
+	huggingWall = false;
 }
 
 if (wallJumping)
@@ -1687,8 +1693,10 @@ if (!deathSlowmo)
 	
 	if (slowmoTimer < 30)
 	{
-		slowmo = false
-		global.timeScale = 1;
+		if (!place_meeting(x, y, slowmoCollider_obj)) {
+			slowmo = false
+			global.timeScale = 1;
+		}
 	}
 	with (camera_obj) {
 		if (distance_to_object(player_obj.camFollowTarget) < 512) { //Chech if target too far away
@@ -1872,7 +1880,9 @@ if (colliding)
 				if (place_free(x, y + (verspeed * global.dt)))
 				{
 					if (place_free(x, y - 16)) {
-						huggingWall = true;
+						if (!place_meeting(x, y, slowmoCollider_obj)) {
+							huggingWall = true;
+						}
 					}
 				}
 			}
