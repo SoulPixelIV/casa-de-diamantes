@@ -504,7 +504,7 @@ if (movement && !isZombie)
 	}
 }
 
-if (!place_meeting(x, y, slowmoCollider_obj)) {
+if (place_meeting(x, y, slowmoCollider_obj)) {
 	huggingWall = false;
 }
 

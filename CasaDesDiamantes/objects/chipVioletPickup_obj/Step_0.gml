@@ -6,7 +6,7 @@ if (despawnTimer < 0)
 }
 
 //Move towards player
-if (distance_to_object(player_obj) < 32)
+if (distance_to_object(player_obj) < 32 || distance_to_object(player_obj) > 500)
 {
 	follow = true;
 }
