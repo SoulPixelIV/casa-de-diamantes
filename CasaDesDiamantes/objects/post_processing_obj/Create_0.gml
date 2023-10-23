@@ -16,8 +16,8 @@ var overworldEffects = [
 ];
 overworld_profile = new PPFX_Profile("Main", overworldEffects);
 var menuEffects = [
-	new FX_Bloom(true, 6, 0.5, 1.17, c_white, 0.3, true, undefined, 0.8, 1, true),
-	new FX_SunShafts(true, [0.5, 0.5], 0.3, 0.4, 0.45, 1.6, 0.4, true, 0.7, 0.05, 0.15),
+	new FX_Bloom(true, 6, 0.5, 1.14, c_white, 0.3, true, undefined, 0.8, 1, true),
+	new FX_SunShafts(true, [0.5, 0.5], 0.3, 0.36, 0.45, 1.6, 0.4, true, 0.7, 0.05, 0.15),
 ];
 menu_profile = new PPFX_Profile("Main", menuEffects);
 var blackjackEffects = [
