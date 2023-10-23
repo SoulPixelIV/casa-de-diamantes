@@ -58,7 +58,7 @@ if (aggroTimer < 0)
 	aggroTimer = aggroTimerSave;
 }
 
-if (movement)
+if (movement && distance_to_object(player_obj) < 500)
 {
 	if (aggro)
 	{
