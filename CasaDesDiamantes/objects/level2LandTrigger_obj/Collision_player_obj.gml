@@ -1,4 +1,4 @@
-if (!global.cutsceneLevel2Done) {
+//if (!global.cutsceneLevel2Done) {
 	if (!firstBlackscreenUsed) {
 		player_obj.inChamber = true;
 		player_obj.movement = false;
@@ -7,4 +7,4 @@ if (!global.cutsceneLevel2Done) {
 	
 		firstBlackscreenUsed = true;
 	}
-}
+//}

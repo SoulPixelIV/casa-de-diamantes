@@ -8,11 +8,11 @@ firstBlackscreenUsed = false;
 spawnedVines = false;
 spawnEverything = false;
 spawnedBullet = false;
-timer = 1200;
-timer2 = 1100;
-timer3 = 1400;
-timer4 = 1800;
-timer5 = 500;
+timer = 900;
+timer2 = 800;
+timer3 = 700;
+timer4 = 1100;
+timer5 = 200;
 
 
 
