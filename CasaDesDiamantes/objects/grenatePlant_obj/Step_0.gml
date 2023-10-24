@@ -45,6 +45,7 @@ if (!global.pause) {
 	}
 	if (timer < 0)
 	{
+		audio_stop_sound(beep_snd);
 		instance_change(explosionTiny_obj, true);
 	}
 
