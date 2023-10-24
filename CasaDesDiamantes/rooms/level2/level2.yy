@@ -323,6 +323,7 @@
     {"name":"inst_6EF53E14","path":"rooms/level2/level2.yy",},
     {"name":"inst_65741136","path":"rooms/level2/level2.yy",},
     {"name":"inst_2828986D","path":"rooms/level2/level2.yy",},
+    {"name":"inst_1791C740","path":"rooms/level2/level2.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -358,6 +359,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_F751F56","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"fakewallTrigger_obj","path":"objects/fakewallTrigger_obj/fakewallTrigger_obj.yy",},"properties":[],"rotation":0.0,"scaleX":20.75,"scaleY":10.875,"x":3724.0,"y":1470.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_21D003BA","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"level2IntroTrigger_obj","path":"objects/level2IntroTrigger_obj/level2IntroTrigger_obj.yy",},"properties":[],"rotation":0.0,"scaleX":10.5,"scaleY":1.0,"x":1120.0,"y":0.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_6365317D","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"level2LandTrigger_obj","path":"objects/level2LandTrigger_obj/level2LandTrigger_obj.yy",},"properties":[],"rotation":0.0,"scaleX":8.0,"scaleY":0.4375,"x":1112.0,"y":1126.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_1791C740","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"arrowDown_obj","path":"objects/arrowDown_obj/arrowDown_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":2494.0,"y":1026.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMREffectLayer","resourceVersion":"1.0","name":"RedFilter","depth":400,"effectEnabled":true,"effectType":"_filter_colourise","gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[
         {"name":"g_Intensity","type":0,"value":"0.3",},
@@ -807,6 +809,8 @@
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"lever_obj","path":"objects/lever_obj/lever_obj.yy",},"propertyId":{"name":"objectAccess","path":"objects/lever_obj/lever_obj.yy",},"value":"RTC0_RTC1_teleporter",},
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"lever_obj","path":"objects/lever_obj/lever_obj.yy",},"propertyId":{"name":"objectCount","path":"objects/lever_obj/lever_obj.yy",},"value":"1",},
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"lever_obj","path":"objects/lever_obj/lever_obj.yy",},"propertyId":{"name":"activateCamera","path":"objects/lever_obj/lever_obj.yy",},"value":"True",},
+            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"lever_obj","path":"objects/lever_obj/lever_obj.yy",},"propertyId":{"name":"objectAccess2","path":"objects/lever_obj/lever_obj.yy",},"value":"arrowDown_obj",},
+            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"lever_obj","path":"objects/lever_obj/lever_obj.yy",},"propertyId":{"name":"objectCount2","path":"objects/lever_obj/lever_obj.yy",},"value":"1",},
           ],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":2080.0,"y":1312.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_6FF6694B","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"electricGate_obj","path":"objects/electricGate_obj/electricGate_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1999.0,"y":1143.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_48453170","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"springladder_obj","path":"objects/springladder_obj/springladder_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1600.0,"y":1792.0,},
