@@ -1,10 +1,12 @@
 /// @description Vars
 
-lifeTimer = random_range(3200, 4100);
+lifeTimer = random_range(1800, 2300);
 
 //Movement
 horspeed = 0;
 verspeed = 0;
+
+randDist = random_range(-12, 12);
 
 //Stats
 colliding = true;

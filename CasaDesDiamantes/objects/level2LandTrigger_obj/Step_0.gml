@@ -11,11 +11,17 @@ if (firstBlackscreen) {
 	}
 }
 
+//FIRST BLACKSCREEN LEAVING
 if (timer < 0 && timer2 > 0) {
 	if (camera_obj.blackscreenStrength > 0.5) {
 		camera_obj.blackscreenStrength -= global.dt / 1300;
 	}
 	startTimer2 = true;
+	
+	if (!playedPlantSound2) {
+		audio_play_sound(plantGrowing_snd, 1, false);
+		playedPlantSound2 = true;
+	}
 }
 
 if (spawnEverything && !spawnedVines) {
@@ -31,7 +37,7 @@ if (spawnEverything && !spawnedVines) {
 if (startTimer2) {
 	timer2 -= global.dt;
 }
-
+//SECOND BLACKSCREEN
 if (timer2 < 0 && timer3 > 0) {
 	camera_obj.blackscreenStrength += global.dt / 700;
 	startTimer3 = true;
@@ -41,9 +47,15 @@ if (startTimer3) {
 	timer3 -= global.dt;
 }
 
+//SECOND BLACKSCREEN LEAVING
 if (timer3 < 0 && timer4 > 0) {
-	camera_obj.blackscreenStrength -= global.dt / 700;
+	camera_obj.blackscreenStrength -= global.dt / 500;
 	startTimer4 = true;
+	
+	if (!playedPlantSound1) {
+		audio_play_sound(plantGrowing_snd, 1, false);
+		playedPlantSound1 = true;
+	}
 }
 
 if (startTimer4) {

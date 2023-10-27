@@ -8,11 +8,14 @@ firstBlackscreenUsed = false;
 spawnedVines = false;
 spawnEverything = false;
 spawnedBullet = false;
-timer = 900;
+playedPlantSound1 = false;
+playedPlantSound2 = false;
+timer = 700;
 timer2 = 800;
+//SECOND BLACKSCREEN
 timer3 = 700;
-timer4 = 1100;
-timer5 = 200;
+timer4 = 800;
+timer5 = 400;
 
 
 

@@ -182,6 +182,8 @@ currVolCaveAmbience4 = audio_sound_get_gain(caveAmbience4_amb);
 currVolSlowmoStart = audio_sound_get_gain(slowmoStart_snd);
 currVolSlowmoEnd = audio_sound_get_gain(slowmoEnd_snd);
 currVolGlitching = audio_sound_get_gain(glitching_snd);
+currVolImpactGround = audio_sound_get_gain(impactGround_snd);
+currVolPlantGrowing = audio_sound_get_gain(plantGrowing_snd);
 
 currVolInfectedVoice = audio_sound_get_gain(infectedVoice_snd);
 currVolInfectionVoice = audio_sound_get_gain(plagueInfectionVoice_snd);

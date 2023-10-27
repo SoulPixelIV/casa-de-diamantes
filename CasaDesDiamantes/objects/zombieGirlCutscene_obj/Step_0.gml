@@ -76,7 +76,7 @@ if (aggroTimer < 0)
 
 if (movement)
 {
-	if (aggro && distance_to_object(player_obj) > 24)
+	if (aggro && distance_to_object(player_obj) > 24 + randDist)
 	{
 		//Check if ground to walk on exists
 		if (place_meeting(x + 16 * image_xscale, y + 24, colliderGlobal_obj)) {
