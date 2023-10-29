@@ -43,6 +43,7 @@ if (startScene1Timer) {
 					startScene1BlackTimer = false;
 					inCutscene = false;
 					global.cutsceneCasinoIntroDone = true;
+					save_scr();
 				}
 			}
 		}

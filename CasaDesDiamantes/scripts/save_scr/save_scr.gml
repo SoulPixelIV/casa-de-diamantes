@@ -43,6 +43,10 @@ function save_scr(){
 	
 	ini_write_real("save1", "currentWeapon", global.currentWeapon);
 	
+	ini_write_real("save1", "arrowLevel2", global.arrowLevel2Done);
+	ini_write_real("save1", "arrowVIP", global.arrowVIPDone);
+	ini_write_real("save1", "arrowCindy", global.arrowCindyDone);
+	
 	ini_write_real("save1", "unlockedWeapon0", global.unlockedWeapon[0]);
 	ini_write_real("save1", "unlockedWeapon1", global.unlockedWeapon[1]);
 	ini_write_real("save1", "unlockedWeapon2", global.unlockedWeapon[2]);

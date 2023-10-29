@@ -34,6 +34,10 @@ global.act3Unlocked = true;
 global.cutsceneLevel2Done = false;
 global.cutsceneCasinoIntroDone = false;
 
+global.arrowLevel2Done = false;
+global.arrowVIPDone = false;
+global.arrowCindyDone = false;
+
 global.pwlevel2UnlockedElevator = false;
 global.pwlevel3UnlockedElevator = false;
 

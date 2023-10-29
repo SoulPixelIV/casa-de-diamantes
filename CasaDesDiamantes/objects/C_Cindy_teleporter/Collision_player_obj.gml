@@ -1,6 +1,6 @@
 if (instance_exists(arrowDown_obj)) {
-	arrow = instance_nearest(x, y, arrowDown_obj);
-	instance_destroy(arrow);
+	global.arrowCindyDone = true;
+	save_scr();
 }
 
 teleporting = true;

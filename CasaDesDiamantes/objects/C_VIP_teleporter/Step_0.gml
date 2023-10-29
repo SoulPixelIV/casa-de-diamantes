@@ -1,9 +1,7 @@
 if (keyboard_check_pressed(ord("W")) && place_meeting(x, y, player_obj))
 {
-	if (instance_exists(arrowDown_obj)) {
-		arrow = instance_nearest(x, y, arrowDown_obj);
-		instance_destroy(arrow);
-	}
+	global.arrowVIPDone = true;
+	save_scr();
 	
 	teleporting = true;
 	player_obj.movement = false;

@@ -38,6 +38,10 @@ function load_scr(){
 	
 	global.currentWeapon = ini_read_real("save1", "currentWeapon", 0);
 	
+	global.arrowLevel2Done = ini_read_real("save1", "arrowLevel2", false);
+	global.arrowVIPDone = ini_read_real("save1", "arrowVIP", false);
+	global.arrowCindyDone = ini_read_real("save1", "arrowCindy", false);
+	
 	global.unlockedWeapon[0] = ini_read_real("save1", "unlockedWeapon0", false);
 	global.unlockedWeapon[1] = ini_read_real("save1", "unlockedWeapon1", false);
 	global.unlockedWeapon[2] = ini_read_real("save1", "unlockedWeapon2", false);
