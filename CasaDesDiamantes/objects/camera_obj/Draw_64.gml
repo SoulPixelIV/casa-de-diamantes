@@ -269,9 +269,15 @@ with (player_obj)
 }
 */
 
-if (drawTutorialInfection) {	
+if (drawTutorialInfection) {
+	if (drawTutorialAlpha <= 1) {
+		drawTutorialAlpha += global.dt / 24;
+	}
+	drawTutorialInputDelay += global.dt;
+	
+	draw_set_alpha(drawTutorialAlpha);
 	player_obj.movement = false;
-	draw_sprite_ext(menuWindow_spr, 0, global.xScreenSize / 2, global.yScreenSize / 2, 1, 1, 0, -1, 1);
+	draw_sprite_ext(menuWindow_spr, 0, global.xScreenSize / 2, global.yScreenSize / 2, 1, 1, 0, -1, drawTutorialAlpha);
 	
 	draw_set_font(gothicPixel_fnt);
 	draw_set_halign(fa_center);
@@ -288,9 +294,16 @@ if (drawTutorialInfection) {
 	draw_set_halign(fa_left);
 	
 	if (keyboard_check_pressed(vk_space) || gamepad_button_check_pressed(4, gp_face1) || gamepad_button_check_pressed(0, gp_face1)) {
-		drawTutorialInfection = false;
-		player_obj.movement = true;
+		if (drawTutorialInputDelay >= 120) {
+			drawTutorialInfection = false;
+			player_obj.movement = true;
+		}
 	}
+	
+	draw_set_alpha(1);
+} else {
+	drawTutorialAlpha = 0;
+	drawTutorialInputDelay = 0;
 }
 
 //################################################################## GUI LAYER ######################################################################
