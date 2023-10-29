@@ -39,7 +39,7 @@ ySave = y;
 animationSpeed = 1;
 
 //Score
-edgeMarginVer = 8;
+edgeMarginVer = 11;
 scoreSpin = false;
 scoreSpinTimer = 200;
 playScoreStop = false;
