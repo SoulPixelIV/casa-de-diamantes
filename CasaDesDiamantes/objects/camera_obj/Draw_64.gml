@@ -942,13 +942,13 @@ if (showWindowMenu)
 		draw_set_font(gothicPixel_fnt);
 		draw_set_halign(fa_center);
 		draw_set_color(c_black);
-		draw_text(global.xScreenSize / 2 - 1, (((global.yScreenSize / 2) + windowMenuOffset) - 48) + 1, "Beer");
+		draw_text(global.xScreenSize / 2 - 1, (((global.yScreenSize / 2) + windowMenuOffset) - 48) + 1, "Cocktail");
 		draw_text((global.xScreenSize / 2) + 86 - 1, (((global.yScreenSize / 2) + windowMenuOffset) - 48) + 1, "Syringe");
 		draw_text((global.xScreenSize / 2) - 86 - 1, (((global.yScreenSize / 2) + windowMenuOffset) - 48) + 1, "Diamond Chip");
 		draw_set_color(make_color_rgb(255, 215, 0));
-		draw_text(global.xScreenSize / 2, ((global.yScreenSize / 2) + windowMenuOffset) - 48, "Beer");
+		draw_text(global.xScreenSize / 2, ((global.yScreenSize / 2) + windowMenuOffset) - 48, "Cocktail");
 		draw_text((global.xScreenSize / 2) + 86, ((global.yScreenSize / 2) + windowMenuOffset) - 48, "Syringe");
-		draw_text((global.xScreenSize / 2) - 86, ((global.yScreenSize / 2) + windowMenuOffset) - 48, "Diamong Chip");
+		draw_text((global.xScreenSize / 2) - 86, ((global.yScreenSize / 2) + windowMenuOffset) - 48, "Diamond Chip");
 		draw_set_halign(fa_left);
 		//Frames
 		draw_sprite(itemFrame_spr, 1, global.xScreenSize / 2, (global.yScreenSize / 2) + windowMenuOffset);
