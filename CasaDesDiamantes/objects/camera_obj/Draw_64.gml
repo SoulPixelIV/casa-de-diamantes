@@ -1478,7 +1478,7 @@ if (instance_exists(player_obj)) {
 }
 
 //Fastforward Dialogue
-if (dialogueSystem_obj.inCutscene && !camera_obj.drawElevatorSign) {
+if (dialogueSystem_obj.inCutscene && !camera_obj.drawElevatorSign && !showWindowMenu) {
 	draw_set_color(make_color_rgb(255, 215, 0));
 	draw_set_halign(fa_center);
 	draw_text(global.xScreenSize / 2, global.yScreenSize - global.yScreenSize / 4 + 32, "Hold Space to Fastforward");
