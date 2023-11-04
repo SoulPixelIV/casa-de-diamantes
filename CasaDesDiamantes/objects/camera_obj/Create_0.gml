@@ -76,6 +76,7 @@ showBossHealthbar = false;
 showBossHealthbar2 = false;
 showWeaponProhibited = false;
 weaponProhibitedTextTimer = 120;
+barkeeperWindowIndex = 2;
 
 cameraSpeed = 0.02;
 ycameraSpeed = 0.02;

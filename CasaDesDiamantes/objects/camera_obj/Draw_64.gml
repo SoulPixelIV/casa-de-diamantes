@@ -944,24 +944,44 @@ if (showWindowMenu)
 		draw_set_color(c_black);
 		draw_text(global.xScreenSize / 2 - 1, (((global.yScreenSize / 2) + windowMenuOffset) - 48) + 1, "Cocktail");
 		draw_text((global.xScreenSize / 2) + 86 - 1, (((global.yScreenSize / 2) + windowMenuOffset) - 48) + 1, "Syringe");
-		draw_text((global.xScreenSize / 2) - 86 - 1, (((global.yScreenSize / 2) + windowMenuOffset) - 48) + 1, "Diamond Chip");
+		draw_text((global.xScreenSize / 2) - 86 - 1, (((global.yScreenSize / 2) + windowMenuOffset) - 48) + 1, "Locked");
 		draw_set_color(make_color_rgb(255, 215, 0));
 		draw_text(global.xScreenSize / 2, ((global.yScreenSize / 2) + windowMenuOffset) - 48, "Cocktail");
 		draw_text((global.xScreenSize / 2) + 86, ((global.yScreenSize / 2) + windowMenuOffset) - 48, "Syringe");
-		draw_text((global.xScreenSize / 2) - 86, ((global.yScreenSize / 2) + windowMenuOffset) - 48, "Diamond Chip");
+		draw_text((global.xScreenSize / 2) - 86, ((global.yScreenSize / 2) + windowMenuOffset) - 48, "Locked");
 		draw_set_halign(fa_left);
 		//Frames
-		draw_sprite(itemFrame_spr, 1, global.xScreenSize / 2, (global.yScreenSize / 2) + windowMenuOffset);
-		draw_sprite(itemFrame_spr, 2, (global.xScreenSize / 2) + 86, (global.yScreenSize / 2) + windowMenuOffset);
-		draw_sprite(itemFrame_spr, 3, (global.xScreenSize / 2) - 86, (global.yScreenSize / 2) + windowMenuOffset);
+		var frame1 = 2;
+		var frame2 = 3;
+		var frame3 = 4;
+		
+		if (barkeeperWindowIndex == 1) {
+			frame1 = 5;
+		} else {
+			frame1 = 2;
+		}
+		if (barkeeperWindowIndex == 0) {
+			frame2 = 6;
+		} else {
+			frame2 = 3;
+		}
+		if (barkeeperWindowIndex == 2) {
+			frame3 = 8;
+		} else {
+			frame3 = 1;
+		}
+		
+		draw_sprite(itemFrame_spr, frame1, global.xScreenSize / 2, (global.yScreenSize / 2) + windowMenuOffset);
+		draw_sprite(itemFrame_spr, frame2, (global.xScreenSize / 2) + 86, (global.yScreenSize / 2) + windowMenuOffset);
+		draw_sprite(itemFrame_spr, frame3, (global.xScreenSize / 2) - 86, (global.yScreenSize / 2) + windowMenuOffset);
 		//Descriptions
 		draw_set_font(gothicPixel_fnt);
 		draw_set_halign(fa_center);
 		draw_set_color(c_black);
 		draw_text(global.xScreenSize / 2 - 1, (((global.yScreenSize / 2) + windowMenuOffset) + 42) + 1, "25$");
 		draw_text((global.xScreenSize / 2) + 86 - 1, (((global.yScreenSize / 2) + windowMenuOffset) + 42) + 1, "850$");
-		draw_text((global.xScreenSize / 2) - 86 - 1, (((global.yScreenSize / 2) + windowMenuOffset) + 42) + 1, "6750$");
-		if (global.money > 1349)
+		//draw_text((global.xScreenSize / 2) - 86 - 1, (((global.yScreenSize / 2) + windowMenuOffset) + 42) + 1, "6750$");
+		if (global.money > 24)
 		{
 			draw_set_color(make_color_rgb(255, 215, 0));
 		}
@@ -970,7 +990,7 @@ if (showWindowMenu)
 			draw_set_color(c_red);
 		}
 		draw_text(global.xScreenSize / 2, ((global.yScreenSize / 2) + windowMenuOffset) + 42, "25$");
-		if (global.money > 3849)
+		if (global.money > 849)
 		{
 			draw_set_color(make_color_rgb(255, 215, 0));
 		}
@@ -979,7 +999,7 @@ if (showWindowMenu)
 			draw_set_color(c_red);
 		}
 		draw_text((global.xScreenSize / 2) + 86, ((global.yScreenSize / 2) + windowMenuOffset) + 42, "850$");
-		if (global.money > 214)
+		if (global.money > 6749)
 		{
 			draw_set_color(make_color_rgb(255, 215, 0));
 		}
@@ -987,7 +1007,7 @@ if (showWindowMenu)
 		{
 			draw_set_color(c_red);
 		}
-		draw_text((global.xScreenSize / 2) - 86, ((global.yScreenSize / 2) + windowMenuOffset) + 42, "6750$");
+		//draw_text((global.xScreenSize / 2) - 86, ((global.yScreenSize / 2) + windowMenuOffset) + 42, "6750$");
 		draw_set_halign(fa_left);
 	}
 	
@@ -1009,6 +1029,38 @@ if (showWindowMenu)
 		drawBlackborders = false;
 		showWindowMenu = false;
 		windowType = 0;
+	}
+	if (keyboard_check_pressed(vk_enter) || gamepad_button_check_pressed(0, gp_face1) || gamepad_button_check_pressed(4, gp_face1)) {
+		if (barkeeperWindowIndex == 1) {
+			if (global.money > 24) {
+				if (player_obj.drunknessLevel < 0.75) {
+					player_obj.drunknessLevel += 0.05;
+				}
+				global.money -= 25;
+			}
+		}
+		if (barkeeperWindowIndex == 0) {
+			if (global.money > 849) {
+				if (global.syringes < 5) {
+					global.syringes += 1;
+				}
+				global.money -= 850;
+			}
+		}
+	}
+	if (keyboard_check_pressed(vk_right) || keyboard_check_pressed(ord("D")) || gamepad_button_check_pressed(0, gp_padr) || gamepad_button_check_pressed(4, gp_padr)) {
+		if (barkeeperWindowIndex > 0) {
+			barkeeperWindowIndex -= 1;
+		} else {
+			barkeeperWindowIndex = 2;
+		}
+	}
+	if (keyboard_check_pressed(vk_left) || keyboard_check_pressed(ord("A")) || gamepad_button_check_pressed(0, gp_padl) || gamepad_button_check_pressed(4, gp_padl)) {
+		if (barkeeperWindowIndex < 2) {
+			barkeeperWindowIndex += 1;
+		} else {
+			barkeeperWindowIndex = 0;
+		}
 	}
 }
 else

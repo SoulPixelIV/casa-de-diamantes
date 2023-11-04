@@ -36,6 +36,7 @@ controllerDeadzone = 0.3;
 controllerDirLastInput = 0;
 playerRotation = 0;
 radiation = 0;
+drunknessLevel = 0;
 updowndir = 0; //Helper var for dircursor clamp
 
 //Physics

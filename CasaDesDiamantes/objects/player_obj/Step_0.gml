@@ -287,6 +287,17 @@ if (movement && !isZombie && !global.pause && !inCutscene)
 	}
 }
 
+//Drunk Filter
+if (room == level_Casino) {
+	fil1 = layer_get_fx("DrunkFilter1");
+	fil2 = layer_get_fx("DrunkFilter2");
+	
+	fx_set_parameter(fil1, "g_Distort1Amount", drunknessLevel);
+	fx_set_parameter(fil1, "g_Distort2Amount", drunknessLevel * 2);
+	
+	fx_set_parameter(fil2, "g_TwistBlurIntensity", drunknessLevel / 100);
+}
+
 //Stop Dash in Minecart
 if (instance_exists(minecartForeground_obj))
 {
