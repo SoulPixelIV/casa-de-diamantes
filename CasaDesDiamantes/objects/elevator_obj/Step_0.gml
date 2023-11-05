@@ -34,13 +34,18 @@ if (elevatorTimer < 0 && used) {
 	if (target == 0) {
 		part_emitter_destroy_all(global.partSystem);
 		global.spawn = 3;
-		player_obj.x = Spawn4_obj.x;
-		player_obj.y = Spawn4_obj.y;
+		instance_destroy(player_obj);
+		instance_create_layer(Spawn4_obj.x, Spawn4_obj.y, "Instances", player_obj);
+		//player_obj.x = Spawn4_obj.x;
+		//player_obj.y = Spawn4_obj.y;
 		player_obj.movement = true;
 		camera_obj.drawBlackborders = false;
 		camera_obj.drawElevatorSign = false;
 		dialogueSystem_obj.inCutscene = false;
+		sprite_index = goldElevator_spr;
+		used = false;
 		
+		/*
 		blackscreenTimer -= global.dt;
 		
 		if (blackscreenTimer < 0) {
@@ -57,6 +62,7 @@ if (elevatorTimer < 0 && used) {
 		
 			used = false;
 		}
+		*/
 	}
 	if (target == 1) {
 		part_emitter_destroy_all(global.partSystem);
@@ -74,13 +80,18 @@ if (elevatorTimer < 0 && used) {
 	if (target == 3) {
 		part_emitter_destroy_all(global.partSystem);
 		global.spawn = 0;
-		player_obj.x = Spawn3_obj.x;
-		player_obj.y = Spawn3_obj.y;
+		instance_destroy(player_obj);
+		instance_create_layer(Spawn3_obj.x, Spawn3_obj.y, "Instances", player_obj);
+		//player_obj.x = Spawn3_obj.x;
+		//player_obj.y = Spawn3_obj.y;
 		player_obj.movement = true;
 		camera_obj.drawBlackborders = false;
 		camera_obj.drawElevatorSign = false;
 		dialogueSystem_obj.inCutscene = false;
+		sprite_index = goldElevator_spr;
+		used = false;
 		
+		/*
 		blackscreenTimer -= global.dt;
 		
 		if (blackscreenTimer < 0) {
@@ -91,11 +102,13 @@ if (elevatorTimer < 0 && used) {
 		if (blackscreenTimer2 < 0) {
 			blackscreenTimer = blackscreenTimerSave;
 			blackscreenTimer2 = blackscreenTimer2Save;
+			elevatorTimer = elevatorTimerSave;
 			
 			sprite_index = goldElevator_spr;
 		
 			used = false;
 		}
+		*/
 	}
 	if (target == 4) {
 		part_emitter_destroy_all(global.partSystem);
