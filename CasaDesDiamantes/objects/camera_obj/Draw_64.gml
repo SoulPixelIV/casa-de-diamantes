@@ -1229,7 +1229,7 @@ if (!noHUD)
 }
 
 //Show Shooting Prohibited Text
-if (showWeaponProhibited && !drawElevatorSign) {
+if (showWeaponProhibited && !drawElevatorSign && !showWindowMenu) {
 	weaponProhibitedTextTimer -= global.dt;
 	draw_set_halign(fa_center);
 	draw_text(global.xScreenSize / 2, global.yScreenSize - global.yScreenSize / 4, "Shooting Prohibited");
