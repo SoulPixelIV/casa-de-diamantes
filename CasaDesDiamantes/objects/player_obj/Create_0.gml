@@ -247,7 +247,9 @@ if (global.lastCheckpoint != noone) {
 
 //Create CuPy
 if (global.cupyUpgrade1) {
-	instance_create_layer(x - 21, y - 21, "Instances", cutieplusSteph_obj);
+	if (!instance_exists(cutieplusSteph_obj)) {
+		instance_create_layer(x - 21, y - 21, "Instances", cutieplusSteph_obj);
+	}
 }
 
 gravityStrength = 0;

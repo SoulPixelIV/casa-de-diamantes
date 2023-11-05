@@ -1,4 +1,4 @@
-if (instance_exists(elevator_obj) && global.spawn != 0) {
+if (instance_exists(elevator_obj) && room == level_Casino) {
 	elevator_obj.target = 3;
 	elevator_obj.used = true;
 }
