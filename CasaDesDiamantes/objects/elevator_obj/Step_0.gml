@@ -17,7 +17,7 @@ if (image_index == image_number - 1) {
 }
 
 if (used) {
-	player_obj.image_alpha = 0;
+	//player_obj.image_alpha = 0;
 	elevatorTimer -= global.dt;
 	if (elevatorTimer < 200 && elevatorTimer > 0) {
 		blackscreen_scr(0);
@@ -34,10 +34,13 @@ if (elevatorTimer < 0 && used) {
 	if (target == 0) {
 		part_emitter_destroy_all(global.partSystem);
 		global.spawn = 3;
-		instance_destroy(player_obj);
-		instance_create_layer(Spawn4_obj.x, Spawn4_obj.y, "Instances", player_obj);
-		player_obj.x = Spawn4_obj.x;
-		player_obj.y = Spawn4_obj.y;
+		if (!playerSpawned) {
+			instance_destroy(player_obj);
+			instance_create_layer(Spawn4_obj.x, Spawn4_obj.y, "Instances", player_obj);
+			player_obj.x = Spawn4_obj.x;
+			player_obj.y = Spawn4_obj.y;
+			playerSpawned = true;
+		}
 		player_obj.movement = true;
 		camera_obj.drawBlackborders = false;
 		camera_obj.drawElevatorSign = false;
@@ -58,6 +61,7 @@ if (elevatorTimer < 0 && used) {
 			sprite_index = goldElevator_spr;
 		
 			used = false;
+			playerSpawned = false;
 		}
 	}
 	if (target == 1) {
@@ -76,10 +80,13 @@ if (elevatorTimer < 0 && used) {
 	if (target == 3) {
 		part_emitter_destroy_all(global.partSystem);
 		global.spawn = 0;
-		instance_destroy(player_obj);
-		instance_create_layer(Spawn3_obj.x, Spawn3_obj.y, "Instances", player_obj);
-		player_obj.x = Spawn3_obj.x;
-		player_obj.y = Spawn3_obj.y;
+		if (!playerSpawned) {
+			instance_destroy(player_obj);
+			instance_create_layer(Spawn4_obj.x, Spawn4_obj.y, "Instances", player_obj);
+			player_obj.x = Spawn3_obj.x;
+			player_obj.y = Spawn3_obj.y;
+			playerSpawned = true;
+		}
 		player_obj.movement = true;
 		camera_obj.drawBlackborders = false;
 		camera_obj.drawElevatorSign = false;
@@ -100,6 +107,7 @@ if (elevatorTimer < 0 && used) {
 			sprite_index = goldElevator_spr;
 		
 			used = false;
+			playerSpawned = false;
 		}
 	}
 	if (target == 4) {

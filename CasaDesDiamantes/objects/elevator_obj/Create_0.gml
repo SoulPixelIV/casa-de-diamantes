@@ -4,9 +4,10 @@ image_index = 0;
 
 used = false;
 target = 0;
+playerSpawned = false;
 animationSpeed = 0.2;
 elevatorTimer = 300;
-blackscreenTimer = 150;
+blackscreenTimer = 250;
 blackscreenTimer2 = 100;
 
 blackscreenTimerSave = blackscreenTimer;
