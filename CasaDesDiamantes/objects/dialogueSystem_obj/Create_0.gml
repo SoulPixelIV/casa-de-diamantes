@@ -91,7 +91,7 @@ dialogue[28] = "";
 
 //Scene 5 VIP First Mission
 startScene5Timer = false;
-scene5Timer = 8600;
+scene5Timer = 8200;
 scene5TimerSave = scene5Timer;
 
 dialogue[29] = "^Evening.";
