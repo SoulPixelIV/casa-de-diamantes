@@ -56,35 +56,37 @@ if (cameraTargetTimer < 0)
 }
 
 //Floating Camera
-if (player_obj.inputMethod == 0 && !global.pause && !dialogueSystem_obj.inCutscene) {
-	if (follow == player_obj && !cameraTarget && !cameraTargetMovement)
-	{
-		snapCameraX = false;
-		snapCameraY = false;
-		if (instance_exists(player_obj)) {
-			if (player_obj.x - xScreenSize / 2 > minCameraXBorder && player_obj.x + xScreenSize / 2 < maxCameraXBorder)
-			{
-				xTo = player_obj.x + (mouse_x - player_obj.x) / 4;
-			}
-			if (player_obj.y - yScreenSize / 2 > minCameraYBorder && player_obj.y + yScreenSize / 2 < maxCameraYBorder)
-			{
-				yTo = (player_obj.y + cameraYBorder) + (mouse_y - (player_obj.y + cameraYBorder)) / 4;
+if (instance_exists(player_obj)) {
+	if (player_obj.inputMethod == 0 && !global.pause && !dialogueSystem_obj.inCutscene) {
+		if (follow == player_obj && !cameraTarget && !cameraTargetMovement)
+		{
+			snapCameraX = false;
+			snapCameraY = false;
+			if (instance_exists(player_obj)) {
+				if (player_obj.x - xScreenSize / 2 > minCameraXBorder && player_obj.x + xScreenSize / 2 < maxCameraXBorder)
+				{
+					xTo = player_obj.x + (mouse_x - player_obj.x) / 4;
+				}
+				if (player_obj.y - yScreenSize / 2 > minCameraYBorder && player_obj.y + yScreenSize / 2 < maxCameraYBorder)
+				{
+					yTo = (player_obj.y + cameraYBorder) + (mouse_y - (player_obj.y + cameraYBorder)) / 4;
+				}
 			}
 		}
-	}
-} else {
-	if (follow == player_obj && !cameraTarget && !cameraTargetMovement)
-	{
-		snapCameraX = false;
-		snapCameraY = false;
-		if (instance_exists(player_obj)) {
-			if (player_obj.x - xScreenSize / 2 > minCameraXBorder && player_obj.x + xScreenSize / 2 < maxCameraXBorder)
-			{
-				xTo = player_obj.x;
-			}
-			if (player_obj.y - yScreenSize / 2 > minCameraYBorder && player_obj.y + yScreenSize / 2 < maxCameraYBorder)
-			{
-				yTo = player_obj.y + cameraYBorder;
+	} else {
+		if (follow == player_obj && !cameraTarget && !cameraTargetMovement)
+		{
+			snapCameraX = false;
+			snapCameraY = false;
+			if (instance_exists(player_obj)) {
+				if (player_obj.x - xScreenSize / 2 > minCameraXBorder && player_obj.x + xScreenSize / 2 < maxCameraXBorder)
+				{
+					xTo = player_obj.x;
+				}
+				if (player_obj.y - yScreenSize / 2 > minCameraYBorder && player_obj.y + yScreenSize / 2 < maxCameraYBorder)
+				{
+					yTo = player_obj.y + cameraYBorder;
+				}
 			}
 		}
 	}

@@ -1154,15 +1154,28 @@ if (deathDelayTimer < 0)
 		draw_set_alpha(deathFadeIn);
 		draw_set_font(global.optixFont);
 		draw_sprite_ext(death_spr, 0, global.xScreenSize / 2, global.yScreenSize / 3, 1.5, 1.5, 0, -1, deathFadeIn);
-		draw_set_color(c_white);
-		draw_text((global.xScreenSize / 4) - 48, (global.yScreenSize / 4) + 32, "Syringes Left: " + string(global.syringes))
+		
+		draw_set_color(c_black);
+		draw_text((global.xScreenSize - (global.xScreenSize / 4)) - 8 - 1, (global.yScreenSize / 1.5) + 32 + 1, "Syringes Left: " + string(global.syringes));
+		draw_set_color(make_color_rgb(255, 215, 0));
+		draw_text((global.xScreenSize - (global.xScreenSize / 4)) - 8, (global.yScreenSize / 1.5) + 32, "Syringes Left: " + string(global.syringes))
+		
 		draw_set_font(gothicPixel_fnt);
 		draw_set_color(make_color_rgb(255, 215, 0));
 		draw_set_halign(fa_center);
-		draw_sprite(button_spr, 0, (0 / 4), (global.yScreenSize / 4));
-		draw_sprite(button_spr, 0, (global.xScreenSize / 4), (global.yScreenSize / 4));
-		draw_text((0 / 4), (global.yScreenSize / 4) - 4, "DIE [Q]");
-		draw_text((global.xScreenSize / 4), (global.yScreenSize / 4) - 4, "INFECT [E]");
+		draw_sprite(button_spr, 0, global.xScreenSize / 4, global.yScreenSize / 1.5);
+		draw_sprite(button_spr, 0, global.xScreenSize - (global.xScreenSize / 4), global.yScreenSize / 1.5);
+		
+		draw_set_color(c_black);
+		draw_text((global.xScreenSize / 4) - 1, (global.yScreenSize / 1.5) - 4 + 1, "DIE [Q]");
+		draw_set_color(make_color_rgb(255, 215, 0));
+		draw_text(global.xScreenSize / 4, (global.yScreenSize / 1.5) - 4, "DIE [Q]");
+		
+		draw_set_color(c_black);
+		draw_text((global.xScreenSize - (global.xScreenSize / 4)) - 1, ((global.yScreenSize / 1.5) - 4) + 1, "INFECT [E]");
+		draw_set_color(make_color_rgb(255, 215, 0));
+		draw_text(global.xScreenSize - (global.xScreenSize / 4), (global.yScreenSize / 1.5) - 4, "INFECT [E]");
+		
 		draw_set_halign(fa_left);
 	}
 	else
