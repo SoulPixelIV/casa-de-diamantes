@@ -69,6 +69,7 @@ if (elevatorTimer < 0 && used) {
 		instance_destroy(player_obj);
 		global.spawn = 0;
 		room_goto(level_CasinoRoof);
+		used = false;
 	}
 	if (target == 2) {
 		part_emitter_destroy_all(global.partSystem);
@@ -76,6 +77,7 @@ if (elevatorTimer < 0 && used) {
 		global.spawn = 3;
 		global.lastCheckpoint = noone;
 		room_goto(level_Casino);
+		used = false;
 	}
 	if (target == 3) {
 		part_emitter_destroy_all(global.partSystem);
@@ -115,5 +117,6 @@ if (elevatorTimer < 0 && used) {
 		instance_destroy(player_obj);
 		global.spawn = 2;
 		room_goto(level_Casino);
+		used = false;
 	}
 }

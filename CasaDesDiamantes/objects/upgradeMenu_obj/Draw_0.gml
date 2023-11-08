@@ -12,6 +12,11 @@ draw_text(global.xScreenSize / 2 - 1, global.yScreenSize / 5.5 + 1, "- Select an
 draw_set_color(make_color_rgb(255, 215, 0));
 draw_text(global.xScreenSize / 2, global.yScreenSize / 5.5, "- Select an Upgrade -");
 
+draw_set_color(c_black);
+draw_text(global.xScreenSize / 2 - 1, (global.yScreenSize - 14) + 1, explanationText);
+draw_set_color(make_color_rgb(255, 215, 0));
+draw_text(global.xScreenSize / 2, global.yScreenSize - 14, explanationText);
+
 /*
 cursorAnim += global.dtNoSlowmo / 17;
 switch (cursorPos)

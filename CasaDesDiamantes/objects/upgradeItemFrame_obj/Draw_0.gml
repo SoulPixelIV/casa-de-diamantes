@@ -39,8 +39,7 @@ switch (frame) {
 		priceText = "3450$";
 		price = 3450;
 		twolinemode = true;
-	break;
-	
+	break;	
 }
 
 draw_set_font(gothicPixel_fnt);

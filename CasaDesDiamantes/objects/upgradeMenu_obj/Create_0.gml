@@ -1,5 +1,6 @@
 cursorPos = 0;
 cursorAnim = 0;
+explanationText = ""
 
 xScreenSize = 480;
 yScreenSize = 270;
