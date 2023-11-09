@@ -8,10 +8,6 @@ if (liveTimer < 0) {
 image_speed = 0;
 image_index += (global.dt / 15) * animationSpeed;
 
-if (!place_meeting(x, y + 16, collider_obj) && !place_meeting(x, y + 16, colliderOneWay_obj)) {
-	instance_destroy();
-}
-
-if (place_meeting(x + 8 * checkDir, y - 8, collider_obj) || place_meeting(x + 8 * checkDir, y - 8, colliderOneWay_obj)) {
+if (!instance_exists(whiteExplosionEffectSmall_obj)) {
 	instance_destroy();
 }

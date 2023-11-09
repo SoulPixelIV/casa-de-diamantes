@@ -21,6 +21,6 @@ if (spawnTimer < 0) {
 	spawnTimer = random_range(15,25);
 }
 
-if (liveTimer < 0) {
+if (liveTimer < 0 || stopSpawning) {
 	instance_destroy();
 }

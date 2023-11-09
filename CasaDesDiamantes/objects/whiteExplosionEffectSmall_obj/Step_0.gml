@@ -19,6 +19,9 @@ if (!place_meeting(x, y + 16, collider_obj) && !place_meeting(x, y + 16, collide
 }
 
 if (place_meeting(x + 8 * checkDir, y - 4, collider_obj) || place_meeting(x + 8 * checkDir, y - 4, colliderOneWay_obj)) {
+	if (instance_exists(flowerline_obj)) {
+		flowerline_obj.stopSpawning = true;
+	}
 	instance_destroy();
 }
 

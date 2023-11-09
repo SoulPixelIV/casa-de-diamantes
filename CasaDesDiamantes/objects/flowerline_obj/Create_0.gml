@@ -2,6 +2,7 @@ spawnTimer = random_range(0.3,0.8);
 liveTimer = 250;
 xPos = 0;
 dir = 0;
+stopSpawning = false;
 
 hitboxFlowerAttack = instance_create_layer(x + 42 * dir, y, "Instances", damageHitboxOnlyOnGround_obj);
 
