@@ -209,9 +209,7 @@ if (act1MusicOn && act1MusicStarted) {
 				audio_sound_gain(parediaL2, 0, 300);
 				audio_sound_gain(parediaL1, 0, 300);
 			}
-		}
-	
-		if (place_meeting(x, y, musicBoxAmbience2_obj)) {
+		} else if (place_meeting(x, y, musicBoxAmbience2_obj)) {
 			with (musicManager_obj) {
 				if (audio_sound_get_gain(parediaSTEM) == 0) {
 					audio_sound_gain(parediaSTEM, 1, 300);
@@ -222,9 +220,7 @@ if (act1MusicOn && act1MusicStarted) {
 				audio_sound_gain(parediaL3, 0, 300);
 				audio_sound_gain(parediaL1, 0, 300);
 			}
-		}
-	
-		if (place_meeting(x, y, musicBoxFastAmbience_obj)) {
+		} else if (place_meeting(x, y, musicBoxFastAmbience_obj)) {
 			with (musicManager_obj) {
 				if (audio_sound_get_gain(parediaSTEM) == 0) {
 					audio_sound_gain(parediaSTEM, 1, 300);
@@ -235,9 +231,7 @@ if (act1MusicOn && act1MusicStarted) {
 				audio_sound_gain(parediaL3, 0, 300);
 				audio_sound_gain(parediaL2, 0, 300);
 			}
-		}
-	
-		if (place_meeting(x, y, musicBoxFastAmbience2_obj)) {
+		} else if (place_meeting(x, y, musicBoxFastAmbience2_obj)) {
 			with (musicManager_obj) {
 				if (audio_sound_get_gain(parediaL1) == 0) {
 					audio_sound_gain(parediaL1, 1, 300);
@@ -248,9 +242,7 @@ if (act1MusicOn && act1MusicStarted) {
 				audio_sound_gain(parediaSTEM, 0, 300);
 				audio_sound_gain(parediaL2, 0, 300);
 			}
-		}
-	
-		if (place_meeting(x, y, musicBoxBattle_obj)) {
+		} else if (place_meeting(x, y, musicBoxBattle_obj)) {
 			with (musicManager_obj) {
 				if (audio_sound_get_gain(parediaSTEM) == 0) {
 					audio_sound_gain(parediaSTEM, 1, 300);
@@ -261,9 +253,7 @@ if (act1MusicOn && act1MusicStarted) {
 				audio_sound_gain(parediaL1, 0, 300);
 				audio_sound_gain(parediaL2, 0, 300);
 			}
-		}
-	
-		if (place_meeting(x, y, musicBoxBattleBig_obj)) {
+		} else if (place_meeting(x, y, musicBoxBattleBig_obj)) {
 			with (musicManager_obj) {
 				if (audio_sound_get_gain(parediaSTEM) == 0) {
 					audio_sound_gain(parediaSTEM, 1, 300);
@@ -278,9 +268,7 @@ if (act1MusicOn && act1MusicStarted) {
 					audio_sound_gain(parediaL3, 1, 300);
 				}
 			}
-		}
-		
-		if (place_meeting(x, y, musicBoxSilence_obj)) {
+		} else if (place_meeting(x, y, musicBoxSilence_obj)) {
 			with (musicManager_obj) {
 				audio_sound_gain(parediaSTEM, 0, 300);
 				audio_sound_gain(parediaL1, 0, 300);
@@ -321,9 +309,7 @@ if (act2MusicOn && act2MusicStarted) {
 				audio_sound_gain(forestL1, 0, 300);
 				audio_sound_gain(forestL3, 0, 300);
 			}
-		}
-		
-		if (place_meeting(x, y, musicBoxAmbience2_obj)) {
+		} else if (place_meeting(x, y, musicBoxAmbience2_obj)) {
 			with (musicManager_obj) {
 				if (audio_sound_get_gain(forestL3) == 0) {
 					audio_sound_gain(forestL3, 1, 300);
@@ -331,9 +317,7 @@ if (act2MusicOn && act2MusicStarted) {
 				audio_sound_gain(forestL1, 0, 300);
 				audio_sound_gain(forestL2, 0, 300);
 			}
-		}
-	
-		if (place_meeting(x, y, musicBoxBattleBig_obj)) {
+		} else if (place_meeting(x, y, musicBoxBattleBig_obj)) {
 			with (musicManager_obj) {
 				if (audio_sound_get_gain(forestL1) == 0) {
 					audio_sound_gain(forestL1, 1, 300);
@@ -341,9 +325,7 @@ if (act2MusicOn && act2MusicStarted) {
 				audio_sound_gain(forestL2, 0, 300);
 				audio_sound_gain(forestL3, 0, 300);
 			}
-		}
-		
-		if (place_meeting(x, y, musicBoxSilence_obj)) {
+		} else if (place_meeting(x, y, musicBoxSilence_obj)) {
 			with (musicManager_obj) {
 				audio_sound_gain(forestL1, 0, 300);
 				audio_sound_gain(forestL2, 0, 300);
@@ -388,9 +370,7 @@ if (act3MusicOn && act3MusicStarted) {
 				audio_sound_gain(caveL3, 0, 300);
 				audio_sound_gain(caveL4, 0, 300);
 			}
-		}
-		
-		if (place_meeting(x, y, musicBoxAmbience2_obj)) {
+		} else if (place_meeting(x, y, musicBoxAmbience2_obj)) {
 			with (musicManager_obj) {
 				if (audio_sound_get_gain(caveL1) == 0) {
 					audio_sound_gain(caveL1, 1, 300);
@@ -403,9 +383,7 @@ if (act3MusicOn && act3MusicStarted) {
 				}
 				audio_sound_gain(caveL3, 0, 300);
 			}
-		}
-	
-		if (place_meeting(x, y, musicBoxBattle_obj)) {
+		} else if (place_meeting(x, y, musicBoxBattle_obj)) {
 			with (musicManager_obj) {
 				if (audio_sound_get_gain(caveL1) == 0) {
 					audio_sound_gain(caveL1, 1, 300);
@@ -420,9 +398,7 @@ if (act3MusicOn && act3MusicStarted) {
 					audio_sound_gain(caveL4, 1, 300);
 				}
 			}
-		}
-		
-		if (place_meeting(x, y, musicBoxSilence_obj)) {
+		} else if (place_meeting(x, y, musicBoxSilence_obj)) {
 			with (musicManager_obj) {
 				audio_sound_gain(caveL1, 0, 300);
 				audio_sound_gain(caveL2, 0, 300);
