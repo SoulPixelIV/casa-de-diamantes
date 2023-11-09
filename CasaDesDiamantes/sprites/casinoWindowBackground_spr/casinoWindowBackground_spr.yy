@@ -1,11 +1,11 @@
 {
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
-  "name": "casinoBuildingNEW_spr",
-  "bbox_bottom": 518,
-  "bbox_left": 5,
-  "bbox_right": 754,
-  "bbox_top": 38,
+  "name": "casinoWindowBackground_spr",
+  "bbox_bottom": 199,
+  "bbox_left": 25,
+  "bbox_right": 716,
+  "bbox_top": 55,
   "bboxMode": 0,
   "collisionKind": 1,
   "collisionTolerance": 0,
@@ -17,7 +17,7 @@
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 520,
+  "height": 200,
   "HTile": false,
   "layers": [
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"1fb903dd-0af2-4989-bea5-8f53ec9c36ed","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
@@ -32,7 +32,7 @@
   "sequence": {
     "resourceType": "GMSequence",
     "resourceVersion": "1.4",
-    "name": "casinoBuildingNEW_spr",
+    "name": "casinoWindowBackground_spr",
     "autoRecord": true,
     "backdropHeight": 1080,
     "backdropImageOpacity": 0.5,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"0cd05b03-75a3-45d7-b95d-aa4415de8289","path":"sprites/casinoBuildingNEW_spr/casinoBuildingNEW_spr.yy",},},},"Disabled":false,"id":"66f23442-62dd-4b75-932c-06de341c8188","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"0cd05b03-75a3-45d7-b95d-aa4415de8289","path":"sprites/casinoWindowBackground_spr/casinoWindowBackground_spr.yy",},},},"Disabled":false,"id":"f789eff9-2f88-4d8a-8bf2-96e027b28214","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
