@@ -65,8 +65,8 @@
     {"name":"inst_4E54CF0A","path":"rooms/level6/level6.yy",},
     {"name":"inst_2CA9494C","path":"rooms/level6/level6.yy",},
     {"name":"inst_16F026AA","path":"rooms/level6/level6.yy",},
-    {"name":"inst_28ADF46A","path":"rooms/level6/level6.yy",},
     {"name":"inst_13813916","path":"rooms/level6/level6.yy",},
+    {"name":"inst_41C7FEA7","path":"rooms/level6/level6.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -143,7 +143,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_101C2B6C","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"Spawn3_obj","path":"objects/Spawn3_obj/Spawn3_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1248.0,"y":960.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_5EFB355D","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"Level6_Level5B_teleporter","path":"objects/Level6_Level5B_teleporter/Level6_Level5B_teleporter.yy",},"properties":[],"rotation":0.0,"scaleX":5.3125,"scaleY":10.5,"x":1113.5,"y":1406.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_5BEFF2A6","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"Level6_Level5A_teleporter","path":"objects/Level6_Level5A_teleporter/Level6_Level5A_teleporter.yy",},"properties":[],"rotation":0.0,"scaleX":5.25,"scaleY":9.375,"x":1115.0,"y":510.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_28ADF46A","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"Level6_Level7_teleporter","path":"objects/Level6_Level7_teleporter/Level6_Level7_teleporter.yy",},"properties":[],"rotation":0.0,"scaleX":10.5,"scaleY":11.75,"x":1981.98,"y":970.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_41C7FEA7","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"level4_demoend_teleporter","path":"objects/level4_demoend_teleporter/level4_demoend_teleporter.yy",},"properties":[],"rotation":0.0,"scaleX":10.875,"scaleY":12.8125,"x":1982.0,"y":967.5,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"MidgroundObjects","depth":1300,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Tiles","depth":1400,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":63,"SerialiseWidth":94,"TileCompressedData":[
