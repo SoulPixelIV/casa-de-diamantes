@@ -1,4 +1,4 @@
 if (!dealtDamage && damageToEnemies)
 {
-	other.hp -= damage * 3;
+	other.hp -= damage * 5;
 }
