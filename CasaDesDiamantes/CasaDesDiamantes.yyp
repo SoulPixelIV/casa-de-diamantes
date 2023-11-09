@@ -1891,6 +1891,7 @@
   ],
   "RoomOrderNodes": [
     {"roomId":{"name":"loadVars","path":"rooms/loadVars/loadVars.yy",},},
+    {"roomId":{"name":"warpzone1","path":"rooms/warpzone1/warpzone1.yy",},},
     {"roomId":{"name":"level_CasinoRoof","path":"rooms/level_CasinoRoof/level_CasinoRoof.yy",},},
     {"roomId":{"name":"level_Casino","path":"rooms/level_Casino/level_Casino.yy",},},
     {"roomId":{"name":"level0","path":"rooms/level0/level0.yy",},},
@@ -1908,7 +1909,6 @@
     {"roomId":{"name":"level1","path":"rooms/level1/level1.yy",},},
     {"roomId":{"name":"level3","path":"rooms/level3/level3.yy",},},
     {"roomId":{"name":"transitionScreen","path":"rooms/transitionScreen/transitionScreen.yy",},},
-    {"roomId":{"name":"warpzone1","path":"rooms/warpzone1/warpzone1.yy",},},
     {"roomId":{"name":"level6","path":"rooms/level6/level6.yy",},},
     {"roomId":{"name":"level5B","path":"rooms/level5B/level5B.yy",},},
     {"roomId":{"name":"level5A","path":"rooms/level5A/level5A.yy",},},
