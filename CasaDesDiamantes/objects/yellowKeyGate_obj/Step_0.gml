@@ -49,6 +49,10 @@ else
 	}
 }
 
+if (global.keyYellow) {
+	camera_obj.yellowDoorMessage = false;
+}
+
 if (instance_exists(player_obj)) {
 	if (distance_to_object(player_obj) < 64 && global.keyYellow) {
 		open = true;

@@ -55,6 +55,10 @@ if (instance_exists(player_obj)) {
 	}
 }
 
+if (global.keyRed) {
+	camera_obj.redDoorMessage = false;
+}
+
 //Animation
 image_speed = 0;
 image_index += (global.dt / 15) * animationSpeed;

@@ -1,10 +1,10 @@
-if (distance_to_object(player_obj) < 32)
+if (place_meeting(x, y, player_obj))
 {
-	if (keyboard_check_pressed(ord("W"))) {
-		teleporting = true;
-		player_obj.movement = false;
-		image_index = 1;
-	}
+	teleporting = true;
+	player_obj.movement = false;
+	global.keyRed = false;
+	global.keyBlue = false;
+	global.keyYellow = false;
 }
 
 if (teleporting) {
@@ -27,4 +27,3 @@ if (finishingTeleport) {
 		room_goto(level5A);
 	}
 }
-

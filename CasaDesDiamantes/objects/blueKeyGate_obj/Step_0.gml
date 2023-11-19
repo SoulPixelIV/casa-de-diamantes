@@ -49,6 +49,10 @@ else
 	}
 }
 
+if (global.keyBlue) {
+	camera_obj.blueDoorMessage = false;
+}
+
 if (instance_exists(player_obj)) {
 	if (distance_to_object(player_obj) < 64 && global.keyBlue) {
 		open = true;

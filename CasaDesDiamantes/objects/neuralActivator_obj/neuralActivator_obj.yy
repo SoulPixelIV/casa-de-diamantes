@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "warpzone_obj",
+  "name": "neuralActivator_obj",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
@@ -32,8 +32,8 @@
   ],
   "solid": false,
   "spriteId": {
-    "name": "warpzoneDoor_spr",
-    "path": "sprites/warpzoneDoor_spr/warpzoneDoor_spr.yy",
+    "name": "neuralActivator_spr",
+    "path": "sprites/neuralActivator_spr/neuralActivator_spr.yy",
   },
   "spriteMaskId": null,
   "visible": true,
