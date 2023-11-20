@@ -28,6 +28,15 @@ function load_scr(){
 	global.bowAmmo = ini_read_real("save1", "bowAmmo", 0);
 	global.silencedMPAmmo = ini_read_real("save1", "silencedMPAmmo", 0);
 	
+	global.shotgunUpgrade1 = ini_read_real("save1", "shotgunUpgrade1", false);
+	global.shotgunUpgrade2 = ini_read_real("save1", "shotgunUpgrade2", false);
+	
+	global.dualBarettasUpgrade1 = ini_read_real("save1", "dualBarettasUpgrade1", false);
+	global.dualBarettasUpgrade2 = ini_read_real("save1", "dualBarettasUpgrade2", false);
+	
+	global.cupyUpgrade1 = ini_read_real("save1", "global.cupyUpgrade1", false);
+	global.cupyUpgrade2 = ini_read_real("save1", "global.cupyUpgrade2", false);
+	
 	global.level4DoorOpen = ini_read_real("save1", "level4DoorOpen", false);
 	global.level6GateAOpen = ini_read_real("save1", "level6GateAOpen", false);
 	global.level6GateBOpen = ini_read_real("save1", "level6GateBOpen", false);

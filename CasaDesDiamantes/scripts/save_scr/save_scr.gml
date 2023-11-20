@@ -3,7 +3,7 @@ function save_scr(){
 	
 	ini_open("save1");
 	
-	if (room == level0 || room == level1 || room == level2 || room == level3 || room == level_Casino || room == level_CasinoRoof || room == level4 || room == level5A || room == level5B || room == level6 || room == level7) {
+	if (room == level0 || room == level1 || room == level2 || room == level3 || room == level_Casino || room == level_CasinoRoof || room == level4 || room == level5A || room == level5B || room == level6 || room == level7 || room == level8 || room == level9 || room == level10) {
 		ini_write_real("save1", "room", room);
 	}
 	
@@ -32,6 +32,15 @@ function save_scr(){
 	ini_write_real("save1", "shotgunAmmo", global.shotgunAmmo);
 	ini_write_real("save1", "bowAmmo", global.bowAmmo);
 	ini_write_real("save1", "silencedMPAmmo", global.silencedMPAmmo);
+	
+	ini_write_real("save1", "shotgunUpgrade1", global.shotgunUpgrade1);
+	ini_write_real("save1", "shotgunUpgrade2", global.shotgunUpgrade2);
+	
+	ini_write_real("save1", "dualBarettasUpgrade1", global.dualBarettasUpgrade1);
+	ini_write_real("save1", "dualBarettasUpgrade2", global.dualBarettasUpgrade2);
+	
+	ini_write_real("save1", "global.cupyUpgrade1", global.cupyUpgrade1);
+	ini_write_real("save1", "global.cupyUpgrade2", global.cupyUpgrade2);
 	
 	ini_write_real("save1", "level4DoorOpen", global.level4DoorOpen);
 	ini_write_real("save1", "level6GateAOpen", global.level6GateAOpen);
