@@ -233,6 +233,16 @@ image_index += (global.dt / 15) * animationSpeed;
 if (frozen) {
 	movSpeed = movSpeedSave / 2;
 	image_blend = make_color_rgb(120, 120, 255);
+	
+	//Icecicle Shot
+	if (global.dualBarettasUpgrade2) {
+		icecicleAttackTimer -= global.dt;
+		if (icecicleAttackTimer < 0) {
+			icecicle = instance_create_layer(x, y, "Instances", icecicle_obj);
+			icecicle.dir = random_range(0, 359);
+			icecicleAttackTimer = 200 + random_range(-30, 30);
+		}
+	}
 } else {
 	movSpeed = movSpeedSave;
 	if (!damageTint && !attackTint) {

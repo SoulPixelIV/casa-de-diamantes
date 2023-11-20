@@ -19,6 +19,7 @@ playerSightMin = 32;
 gotSpawned = false;
 turnDelay = 130;
 turnDelayStart = false;
+icecicleAttackTimer = 200;
 
 lastBullet = bulletPistol_obj;
 ammoSpawnCount = 8;

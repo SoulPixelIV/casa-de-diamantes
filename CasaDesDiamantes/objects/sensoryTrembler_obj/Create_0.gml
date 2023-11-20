@@ -16,6 +16,7 @@ damage = 23;
 knockback = 0;
 gotSpawned = false;
 points = 1500;
+icecicleAttackTimer = 200;
 
 alarmLight = noone;
 turretRotDir = 0;

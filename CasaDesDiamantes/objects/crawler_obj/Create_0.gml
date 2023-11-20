@@ -26,6 +26,7 @@ gotSpawned = false;
 playedSound = false;
 flameSound = noone;
 points = 75;
+icecicleAttackTimer = 200;
 
 damageTint = false;
 attackTint = false;

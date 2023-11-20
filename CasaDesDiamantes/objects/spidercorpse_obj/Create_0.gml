@@ -17,6 +17,7 @@ knockback = 0;
 gotSpawned = false;
 lostArm = false;
 spawnedArm = false;
+icecicleAttackTimer = 200;
 
 sendCallout = false; //Call out for other spiders to spawn
 calloutDelay = 300;

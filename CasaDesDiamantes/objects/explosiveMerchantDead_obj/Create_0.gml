@@ -28,6 +28,7 @@ playerSightMax = 128;
 playerSightMin = 8;
 gotSpawned = false;
 points = 250;
+icecicleAttackTimer = 200;
 
 lastBullet = bulletPistol_obj;
 ammoSpawnCount = 1;

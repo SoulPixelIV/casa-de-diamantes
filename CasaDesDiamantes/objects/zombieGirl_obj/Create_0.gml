@@ -68,6 +68,7 @@ testY = 0;
 attack2PrepareTimer = 70; //Timer before snap attack begins
 attack2StopTimer = 100; //Timer after snap attack begins
 snapAttack2 = false; //Snap Attack is happening
+icecicleAttackTimer = 200;
 
 snapHitboxDelay = 45; //Delay until damage hitbox spawns
 snapHitbox2Delay = 45; //Delay until damage hitbox spawns

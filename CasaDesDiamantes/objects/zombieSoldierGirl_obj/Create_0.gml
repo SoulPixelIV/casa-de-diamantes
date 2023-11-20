@@ -32,6 +32,7 @@ dir = 0;
 gotSpawned = false;
 playerPosRandOffsetX = random_range(-48, 48);
 playerPosRandOffsetY = random_range(-48, 48);
+icecicleAttackTimer = 200;
 
 if (instance_exists(player_obj))
 {

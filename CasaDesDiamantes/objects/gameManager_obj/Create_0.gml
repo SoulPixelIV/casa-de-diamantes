@@ -24,6 +24,7 @@ global.shotgunUpgrade1 = true;
 global.shotgunUpgrade2 = true;
 
 global.dualBarettasUpgrade1 = true;
+global.dualBarettasUpgrade2 = true;
 
 global.cupyUpgrade1 = true;
 

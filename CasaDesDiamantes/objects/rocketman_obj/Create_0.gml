@@ -17,6 +17,7 @@ knockback = 0;
 gotSpawned = false;
 lostArm = false;
 spawnedArm = false;
+icecicleAttackTimer = 200;
 
 lastBullet = bulletPistol_obj;
 ammoSpawnCount = 4;

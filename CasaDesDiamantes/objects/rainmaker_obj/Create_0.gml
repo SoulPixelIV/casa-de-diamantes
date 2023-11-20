@@ -30,6 +30,7 @@ turnDir = 1;
 dir = 0;
 defenseEnemy = noone;
 gotSpawned = false;
+icecicleAttackTimer = 200;
 
 if (instance_exists(player_obj))
 {

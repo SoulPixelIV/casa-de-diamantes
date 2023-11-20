@@ -15,6 +15,7 @@ moneyDropMax = 14;
 knockback = 0;
 randAttack = 1;
 gotSpawned = false;
+icecicleAttackTimer = 200;
 
 switchedSprite = false;
 
