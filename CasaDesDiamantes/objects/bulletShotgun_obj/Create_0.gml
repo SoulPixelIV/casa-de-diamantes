@@ -2,6 +2,7 @@
 
 movSpeed = 3.5 + random_range(-0.5, 0.5);
 penetration = 2;
+deleteTimer = 800;
 penetrationTime = 3;
 invincibilityTimer = 5;
 damageMultiplier = 1;
