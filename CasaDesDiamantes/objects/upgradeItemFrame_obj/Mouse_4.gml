@@ -10,7 +10,12 @@ switch (frame) {
 		}
 	break;
 	case 3:
-		//ADD SECOND DUAL BARETTAS UPGRADE
+		if (global.money >= 1920 && !global.dualBarettasUpgrade2) {
+			global.dualBarettasUpgrade2 = true;
+			global.money -= 1920;
+			frame = 0;
+			used = true;
+		}
 	break;
 	case 4:
 		if (global.money >= 1850 && !global.shotgunUpgrade1) {
@@ -29,10 +34,19 @@ switch (frame) {
 		}
 	break;
 	case 6:
-		//ADD CUPY UPGRADE 1
+		if (!global.cupyUpgrade1) {
+			global.cupyUpgrade1 = true;
+			frame = 0;
+			used = true;
+		}
 	break;
 	case 7:
-		//ADD CUPY UPGRADE 2
+		if (global.money >= 3450 && !global.cupyUpgrade2) {
+			global.cupyUpgrade2 = true;
+			global.money -= 3450;
+			frame = 0;
+			used = true;
+		}
 	break;
 	
 }

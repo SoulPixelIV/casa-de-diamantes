@@ -27,6 +27,7 @@ global.dualBarettasUpgrade1 = true;
 global.dualBarettasUpgrade2 = true;
 
 global.cupyUpgrade1 = true;
+global.cupyUpgrade2 = true;
 
 global.reachedCasino = false;
 global.act2Unlocked = true;
