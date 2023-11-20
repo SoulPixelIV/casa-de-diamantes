@@ -30,8 +30,8 @@ global.cupyUpgrade1 = false;
 global.cupyUpgrade2 = false;
 
 global.reachedCasino = false;
-global.act2Unlocked = true;
-global.act3Unlocked = true;
+global.act2Unlocked = false;
+global.act3Unlocked = false;
 
 global.cutsceneLevel2Done = false;
 global.cutsceneCasinoIntroDone = false;

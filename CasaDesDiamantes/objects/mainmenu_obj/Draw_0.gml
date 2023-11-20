@@ -107,14 +107,14 @@ if (drawSkipMenu) {
 	draw_text(global.xScreenSize / 2, global.yScreenSize / 2.5 - 45, "Skip Intro?");
 	
 	draw_set_color(c_black);
-	draw_text((global.xScreenSize / 2 - 1) - 72, global.yScreenSize / 2.5 + 12, "Yes, Please!");
+	draw_text((global.xScreenSize / 2 - 1) - 72, global.yScreenSize / 2.5 + 12, "Yes");
 	draw_set_color(make_color_rgb(255, 215, 0));
-	draw_text(global.xScreenSize / 2 - 72, global.yScreenSize / 2.5 + 12, "Yes, Please!");
+	draw_text(global.xScreenSize / 2 - 72, global.yScreenSize / 2.5 + 12, "Yes");
 	
 	draw_set_color(c_black);
-	draw_text((global.xScreenSize / 2 - 1) + 72, global.yScreenSize / 2.5 + 12, "No");
+	draw_text((global.xScreenSize / 2 - 1) + 72, global.yScreenSize / 2.5 + 12, "Don't Skip");
 	draw_set_color(make_color_rgb(255, 215, 0));
-	draw_text(global.xScreenSize / 2 + 72, global.yScreenSize / 2.5 + 12, "No");
+	draw_text(global.xScreenSize / 2 + 72, global.yScreenSize / 2.5 + 12, "Don't Skip");
 	draw_set_halign(fa_left);
 	
 	if (startMenuElement == 0) {

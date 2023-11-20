@@ -14,8 +14,9 @@ draw_set_halign(fa_left);
 draw_sprite_ext(mainmenuTitle_spr, 0, global.xScreenSize / 2, 86, 1, 1, 0, -1, titleAlpha);
 
 //Draw cursor
+cursorImage += global.dt / 16;
 if (!drawStartMenu) {
-	draw_sprite(chipRed_spr, -1, 20, optionsY[cursorPos] + 4);
+	draw_sprite(chipRed_spr, cursorImage, 20, optionsY[cursorPos] + 4);
 }
 
 //Start Window

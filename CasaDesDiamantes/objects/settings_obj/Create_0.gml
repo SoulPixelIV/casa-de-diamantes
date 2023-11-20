@@ -5,6 +5,7 @@ zoom = 2;
 xWindowSize = xScreenSize * zoom;
 yWindowSize = yScreenSize * zoom;
 inputMethod = 0;
+cursorImage = 0;
 
 drawStartMenu = false;
 startMenuElement = 1;
