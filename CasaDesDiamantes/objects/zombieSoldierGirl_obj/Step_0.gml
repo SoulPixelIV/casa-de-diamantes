@@ -187,6 +187,7 @@ if (frozen) {
 	if (global.dualBarettasUpgrade2) {
 		icecicleAttackTimer -= global.dt;
 		if (icecicleAttackTimer < 0) {
+			audio_play_sound_on(emitter, icecicleShot_snd, false, false);
 			icecicle = instance_create_layer(x, y, "Instances", icecicle_obj);
 			icecicle.dir = random_range(0, 359);
 			icecicleAttackTimer = 200 + random_range(-30, 30);

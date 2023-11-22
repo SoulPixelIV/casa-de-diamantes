@@ -359,6 +359,7 @@
     {"name":"bloodSpread2_spr","order":2,"path":"sprites/bloodSpread2_spr/bloodSpread2_spr.yy",},
     {"name":"casinoLightbar_obj","order":29,"path":"objects/casinoLightbar_obj/casinoLightbar_obj.yy",},
     {"name":"cutscene2_obj","order":5,"path":"objects/cutscene2_obj/cutscene2_obj.yy",},
+    {"name":"icecicleShot_snd","order":73,"path":"sounds/icecicleShot_snd/icecicleShot_snd.yy",},
     {"name":"__ppf_sh_render_final","order":8,"path":"shaders/__ppf_sh_render_final/__ppf_sh_render_final.yy",},
     {"name":"Level5A_Level4_teleporter","order":34,"path":"objects/Level5A_Level4_teleporter/Level5A_Level4_teleporter.yy",},
     {"name":"healthbarBorderFull_spr","order":7,"path":"sprites/healthbarBorderFull_spr/healthbarBorderFull_spr.yy",},

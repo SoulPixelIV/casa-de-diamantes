@@ -528,6 +528,7 @@
     {"id":{"name":"level0","path":"rooms/level0/level0.yy",},},
     {"id":{"name":"casinoLightbar_obj","path":"objects/casinoLightbar_obj/casinoLightbar_obj.yy",},},
     {"id":{"name":"cutscene2_obj","path":"objects/cutscene2_obj/cutscene2_obj.yy",},},
+    {"id":{"name":"icecicleShot_snd","path":"sounds/icecicleShot_snd/icecicleShot_snd.yy",},},
     {"id":{"name":"__ppf_sh_render_final","path":"shaders/__ppf_sh_render_final/__ppf_sh_render_final.yy",},},
     {"id":{"name":"Level5A_Level4_teleporter","path":"objects/Level5A_Level4_teleporter/Level5A_Level4_teleporter.yy",},},
     {"id":{"name":"healthbarBorderFull_spr","path":"sprites/healthbarBorderFull_spr/healthbarBorderFull_spr.yy",},},
@@ -1901,9 +1902,9 @@
   ],
   "RoomOrderNodes": [
     {"roomId":{"name":"loadVars","path":"rooms/loadVars/loadVars.yy",},},
+    {"roomId":{"name":"level5A","path":"rooms/level5A/level5A.yy",},},
     {"roomId":{"name":"credits","path":"rooms/credits/credits.yy",},},
     {"roomId":{"name":"mainmenu","path":"rooms/mainmenu/mainmenu.yy",},},
-    {"roomId":{"name":"level5A","path":"rooms/level5A/level5A.yy",},},
     {"roomId":{"name":"warpzone1","path":"rooms/warpzone1/warpzone1.yy",},},
     {"roomId":{"name":"level_CasinoRoof","path":"rooms/level_CasinoRoof/level_CasinoRoof.yy",},},
     {"roomId":{"name":"level_Casino","path":"rooms/level_Casino/level_Casino.yy",},},
