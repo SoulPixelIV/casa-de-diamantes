@@ -10,14 +10,14 @@
   "bitRate": 128,
   "compression": 0,
   "conversionMode": 0,
-  "duration": 1.317449,
+  "duration": 1.410612,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
   },
   "preload": false,
   "sampleRate": 44100,
-  "soundFile": "explosionTiny_snd",
+  "soundFile": "explosionTiny_snd.mp3",
   "type": 0,
-  "volume": 0.1,
+  "volume": 0.2,
 }

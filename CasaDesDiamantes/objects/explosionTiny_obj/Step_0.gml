@@ -12,7 +12,9 @@ if (lifeLength < 0)
 
 if (image_index > image_number - 1) 
 {
-    instance_destroy();
+	if (!audio_is_playing(explosionTiny_snd)) {
+		instance_destroy();
+	}
 }
 
 //Animation
