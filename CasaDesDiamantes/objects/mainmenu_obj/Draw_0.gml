@@ -118,7 +118,7 @@ if (drawSkipMenu) {
 	draw_set_halign(fa_left);
 	
 	if (startMenuElement == 0) {
-		draw_sprite(chipRed_spr, cursorImage, global.xScreenSize / 2 - 72 - 17, global.yScreenSize / 2.5 + 16);
+		draw_sprite(chipRed_spr, cursorImage, global.xScreenSize / 2 - 72 - 21, global.yScreenSize / 2.5 + 16);
 	} else {
 		draw_sprite(chipRed_spr, cursorImage, global.xScreenSize / 2 + 72 - 42, global.yScreenSize / 2.5 + 16);
 	}
