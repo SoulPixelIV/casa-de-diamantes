@@ -89,11 +89,20 @@ if (screen == 4 && !transactionComplete)
 	if (playerSum > (21 + (10 * numberofAces)))
 	{
 		//LOOSE
+		if (!playedSound) {
+			audio_play_sound(blackjackLose_snd, 1, false);
+			playedSound = true;
+		}
 	}
 	else if (dealerSum > (21 + (10 * numberofAcesDealer)))
 	{
 		//WIN NORMAL
 		global.money += moneypool * 2;
+		if (!playedSound) {
+			audio_play_sound(blackjackWin_snd, 1, false);
+			playedSound = true;
+		}
+		
 	}
 	else if (playerSum == 21)
 	{	
@@ -107,20 +116,36 @@ if (screen == 4 && !transactionComplete)
 		{			
 			global.money += moneypool * 3;
 		}
+		if (!playedSound) {
+			audio_play_sound(blackjackWin_snd, 1, false);
+			playedSound = true;
+		}
 	}
 	else if ((playerSum - (10 * numberofAces)) > (dealerSum - (10 * numberofAcesDealer)))
 	{
 		//WIN NORMAL
 		global.money += moneypool * 2;
+		if (!playedSound) {
+			audio_play_sound(blackjackWin_snd, 1, false);
+			playedSound = true;
+		}
 	}
 	else if ((playerSum - (10 * numberofAces)) == (dealerSum - (10 * numberofAcesDealer)))
 	{
 		//DRAW
 		global.money += moneypool;
+		if (!playedSound) {
+			audio_play_sound(blackjackWin_snd, 1, false);
+			playedSound = true;
+		}
 	}
 	else if ((playerSum - (10 * numberofAces)) < (dealerSum - (10 * numberofAcesDealer)))
 	{
 		//LOOSE
+		if (!playedSound) {
+			audio_play_sound(blackjackLose_snd, 1, false);
+			playedSound = true;
+		}
 	}
 	transactionComplete = true;
 }
@@ -197,10 +222,12 @@ if (keyboard_check(vk_escape) || gamepad_button_check_pressed(4, gp_select) || g
 	if (global.pushDelay < 0) {
 		if (screen == 2) {
 			global.pushDelay = global.pushDelaySave;
+			playedSound = false;
 			screen = 1;
 		} else {
 			global.spawn = 1;
 			global.pushDelay = global.pushDelaySave;
+			playedSound = false;
 			room_goto(level_Casino);
 		}
 	}

@@ -30,6 +30,8 @@ holdingCard = false;
 playerSum = 0;
 dealerSum = 0;
 
+playedSound = false;
+
 //First Round -> Player gets 2 Cards
 for (i = 0; i < 2; i++)
 {
