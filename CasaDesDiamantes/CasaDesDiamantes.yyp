@@ -1059,6 +1059,7 @@
     {"id":{"name":"reload_scr","path":"scripts/reload_scr/reload_scr.yy",},},
     {"id":{"name":"casinoPillarBackground_spr","path":"sprites/casinoPillarBackground_spr/casinoPillarBackground_spr.yy",},},
     {"id":{"name":"playerWallNoArm_spr","path":"sprites/playerWallNoArm_spr/playerWallNoArm_spr.yy",},},
+    {"id":{"name":"buying_snd","path":"sounds/buying_snd/buying_snd.yy",},},
     {"id":{"name":"credits","path":"rooms/credits/credits.yy",},},
     {"id":{"name":"death_scr","path":"scripts/death_scr/death_scr.yy",},},
     {"id":{"name":"sensoryTremblerBaseDestroyed_spr","path":"sprites/sensoryTremblerBaseDestroyed_spr/sensoryTremblerBaseDestroyed_spr.yy",},},

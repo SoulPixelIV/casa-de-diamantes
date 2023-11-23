@@ -1036,6 +1036,7 @@ if (showWindowMenu)
 				if (player_obj.drunknessLevel < 0.75) {
 					player_obj.drunknessLevel += 0.05;
 				}
+				audio_play_sound(buying_snd, 1, false);
 				global.money -= 25;
 			}
 		}
@@ -1044,6 +1045,7 @@ if (showWindowMenu)
 				if (global.syringes < 5) {
 					global.syringes += 1;
 				}
+				audio_play_sound(buying_snd, 1, false);
 				global.money -= 850;
 			}
 		}
