@@ -71,6 +71,11 @@ audio_sound_pitch(slowmoEnd_snd, clamp(1 * global.timeScale, 0.5, 1.5));
 audio_sound_pitch(glitching_snd, clamp(1 * global.timeScale, 0.5, 1.5));
 audio_sound_pitch(impactGround_snd, clamp(1 * global.timeScale, 0.5, 1.5));
 audio_sound_pitch(plantGrowing_snd, clamp(1 * global.timeScale, 0.5, 1.5));
+audio_sound_pitch(icecicleShot_snd, clamp(1 * global.timeScale, 0.5, 1.5));
+audio_sound_pitch(chipsFalling_snd, clamp(1 * global.timeScale, 0.5, 1.5));
+audio_sound_pitch(buying_snd, clamp(1 * global.timeScale, 0.5, 1.5));
+audio_sound_pitch(blackjackWin_snd, clamp(1 * global.timeScale, 0.5, 1.5));
+audio_sound_pitch(blackjackLose_snd, clamp(1 * global.timeScale, 0.5, 1.5));
 
 audio_sound_pitch(infectedVoice_snd, clamp(1 * global.timeScale, 0.5, 1.5));
 audio_sound_pitch(plagueInfectionVoice_snd, clamp(1 * global.timeScale, 0.5, 1.5));
@@ -151,6 +156,11 @@ audio_sound_gain(slowmoEnd_snd, (global.soundVolume / 100) * currVolSlowmoEnd, 0
 audio_sound_gain(glitching_snd, (global.soundVolume / 100) * currVolGlitching, 0);
 audio_sound_gain(impactGround_snd, (global.soundVolume / 100) * currVolImpactGround, 0);
 audio_sound_gain(plantGrowing_snd, (global.soundVolume / 100) * currVolPlantGrowing, 0);
+audio_sound_gain(icecicleShot_snd, (global.soundVolume / 100) * currVolIcecicleShot, 0);
+audio_sound_gain(chipsFalling_snd, (global.soundVolume / 100) * currVolChipsFalling, 0);
+audio_sound_gain(buying_snd, (global.soundVolume / 100) * currVolBuying, 0);
+audio_sound_gain(blackjackWin_snd, (global.soundVolume / 100) * currVolBJWin, 0);
+audio_sound_gain(blackjackLose_snd, (global.soundVolume / 100) * currVolBJLose, 0);
 
 audio_sound_gain(infectedVoice_snd, (global.soundVolume / 100) * currVolInfectedVoice, 0);
 audio_sound_gain(plagueInfectionVoice_snd, (global.soundVolume / 100) * currVolInfectionVoice, 0);

@@ -194,6 +194,11 @@ currVolPlantGrowing = audio_sound_get_gain(plantGrowing_snd);
 currVolInfectedVoice = audio_sound_get_gain(infectedVoice_snd);
 currVolInfectionVoice = audio_sound_get_gain(plagueInfectionVoice_snd);
 currVolBlimpFlying = audio_sound_get_gain(blimpFlying_snd);
+currVolIcecicleShot = audio_sound_get_gain(icecicleShot_snd);
+currVolChipsFalling = audio_sound_get_gain(chipsFalling_snd);
+currVolBuying = audio_sound_get_gain(buying_snd);
+currVolBJWin = audio_sound_get_gain(blackjackWin_snd);
+currVolBJLose = audio_sound_get_gain(blackjackLose_snd);
 
 currVolWalk1 = audio_sound_get_gain(walk1_snd);
 currVolGlitter = audio_sound_get_gain(glitter_snd);
