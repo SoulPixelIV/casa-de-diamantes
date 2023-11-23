@@ -12,6 +12,7 @@ function load_scr(){
 	global.keyYellow = ini_read_real("save1", "keyYellow", false);
 	global.currentWorld = ini_read_real("save1", "currentWorld", 0);
 	global.drawTutorialInfectionUsed = ini_read_real("save1", "shownInfectionTutorial", false);
+	global.drunknessLevel = ini_read_real("save1", "drunkness", 0);
 	
 	global.reachedCasino = ini_read_real("save1", "reachedCasino", false);
 	global.act2Unlocked = ini_read_real("save1", "act2Unlocked", false);

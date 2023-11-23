@@ -288,14 +288,18 @@ if (movement && !isZombie && !global.pause && !inCutscene)
 }
 
 //Drunk Filter
-if (room == level_Casino) {
+if (room == level_Casino || room == level_CasinoRoof || room == blackjackTable || room == level0 || room == level1 || room == level2 || room == level3 || room == level4 || room == level5A || room == level5B || room == level6 || room == level7 || room == level8 || room == level9 || room == warpzone1 || room == level10) {
 	fil1 = layer_get_fx("DrunkFilter1");
 	fil2 = layer_get_fx("DrunkFilter2");
 	
-	fx_set_parameter(fil1, "g_Distort1Amount", drunknessLevel);
-	fx_set_parameter(fil1, "g_Distort2Amount", drunknessLevel * 2);
+	fx_set_parameter(fil1, "g_Distort1Amount", global.drunknessLevel);
+	fx_set_parameter(fil1, "g_Distort2Amount", global.drunknessLevel * 2);
 	
-	fx_set_parameter(fil2, "g_TwistBlurIntensity", drunknessLevel / 100);
+	fx_set_parameter(fil2, "g_TwistBlurIntensity", global.drunknessLevel / 100);
+}
+//Slowly remove drunkness
+if (global.drunknessLevel > 0) {
+	global.drunknessLevel -= global.dt / 25000;
 }
 
 //Stop Dash in Minecart

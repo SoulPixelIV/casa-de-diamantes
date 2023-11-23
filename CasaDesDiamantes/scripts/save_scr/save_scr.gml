@@ -17,6 +17,7 @@ function save_scr(){
 	ini_write_real("save1", "keyYellow", global.keyYellow);
 	ini_write_real("save1", "currentWorld", global.currentWorld);
 	ini_write_real("save1", "shownInfectionTutorial", global.drawTutorialInfectionUsed);
+	ini_write_real("save1", "drunkness", global.drunknessLevel);
 	
 	ini_write_real("save1", "reachedCasino", global.reachedCasino);
 	ini_write_real("save1", "act2Unlocked", global.act2Unlocked);

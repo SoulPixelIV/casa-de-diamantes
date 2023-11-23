@@ -1033,8 +1033,8 @@ if (showWindowMenu)
 	if (keyboard_check_pressed(vk_enter) || gamepad_button_check_pressed(0, gp_face1) || gamepad_button_check_pressed(4, gp_face1)) {
 		if (barkeeperWindowIndex == 1) {
 			if (global.money > 24) {
-				if (player_obj.drunknessLevel < 0.75) {
-					player_obj.drunknessLevel += 0.05;
+				if (global.drunknessLevel < 0.75) {
+					global.drunknessLevel += 0.05;
 				}
 				audio_play_sound(buying_snd, 1, false);
 				global.money -= 25;
