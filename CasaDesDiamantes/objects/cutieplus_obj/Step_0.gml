@@ -25,3 +25,7 @@ else
 }
 
 movTimer -= global.dt;
+
+if (instance_exists(cutieplusSteph_obj)) {
+	instance_destroy();
+}
