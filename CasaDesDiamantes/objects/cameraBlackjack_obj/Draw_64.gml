@@ -130,7 +130,7 @@ if (blackJackCalc_obj.screen == 2) {
 	draw_set_color(make_color_rgb(255, 215, 0));
 	draw_text(global.xScreenSize / 2, 84, "- Place your Bet -");
 	
-	if (gamepad_button_check_pressed(0, gp_padu) || gamepad_button_check_pressed(4, gp_padu))
+	if (keyboard_check_pressed(vk_up) || keyboard_check_pressed(ord("W")) || gamepad_button_check_pressed(0, gp_padu) || gamepad_button_check_pressed(4, gp_padu))
 	{
 		if (cursorPos > 0)
 		{
@@ -141,7 +141,7 @@ if (blackJackCalc_obj.screen == 2) {
 			cursorPos = 2;
 		}
 	}
-	if (gamepad_button_check_pressed(0, gp_padd) || gamepad_button_check_pressed(4, gp_padd))
+	if (keyboard_check_pressed(vk_down) || keyboard_check_pressed(ord("S")) || gamepad_button_check_pressed(0, gp_padd) || gamepad_button_check_pressed(4, gp_padd))
 	{
 		if (cursorPos < 2)
 		{
@@ -153,7 +153,7 @@ if (blackJackCalc_obj.screen == 2) {
 		}
 	}
 	if (pressDelay < 0) {
-		if (gamepad_button_check_pressed(0, gp_face1) || gamepad_button_check_pressed(4, gp_face1))
+		if (gamepad_button_check_pressed(0, gp_face1) || gamepad_button_check_pressed(4, gp_face1) || keyboard_check_pressed(vk_enter) || keyboard_check_pressed(vk_space))
 		{
 			switch (cursorPos)
 			{
