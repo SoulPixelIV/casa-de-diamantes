@@ -14,3 +14,8 @@ if (global.spawn == 3)
 {
 	instance_create_layer(Spawn4_obj.x, Spawn4_obj.y, "Instances", player_obj);
 }
+
+global.unlockedWeapon[1] = false;
+global.unlockedWeapon[2] = false;
+global.pistolAmmo = 0;
+global.shotgunAmmo = 0;
