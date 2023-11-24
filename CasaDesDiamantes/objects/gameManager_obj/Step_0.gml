@@ -13,7 +13,7 @@ if (steam_initialised()) {
 		steam_set_rich_presence("steam_display", "#StatusCasino");
 	} else if (room == blackjackTable) {
 		steam_set_rich_presence("steam_display", "#StatusBlackjack");
-	} else if (room == level4 || room == level5A || room == level5B || room == level6 || room == level7 || room == level8) {
+	} else if (room == level4 || room == level5A || room == level5B || room == level6 || room == level7 || room == level8 || room == level9) {
 		steam_set_rich_presence("steam_display", "#StatusSenzelaForest");
 	}
 }

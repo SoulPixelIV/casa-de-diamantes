@@ -38,7 +38,7 @@ if (!deathInProg) {
 				}
 			}
 			//128px Safezone
-			instance_activate_region((x - xScreenSize / 2) - 256, (y - yScreenSize / 2) - 256, xScreenSize + 512, yScreenSize + 512, true);
+			instance_activate_region((x - xScreenSize / 2) - 384, (y - yScreenSize / 2) - 384, xScreenSize + 768, yScreenSize + 768, true);
 			checkCullingAreaTimer = checkCullingAreaTimerSave;
 		}
 	}
