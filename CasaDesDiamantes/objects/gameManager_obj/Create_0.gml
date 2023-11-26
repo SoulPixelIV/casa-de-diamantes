@@ -19,6 +19,7 @@ global.drawTutorialInfectionUsed = false;
 global.pushDelay = 60;
 global.pushDelaySave = global.pushDelay;
 global.drunknessLevel = 0;
+global.transitionScreenDest = noone;
 multiplierRun = false;
 
 global.shotgunUpgrade1 = false;

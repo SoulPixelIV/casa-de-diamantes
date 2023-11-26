@@ -1,5 +1,5 @@
 image_alpha = 0;
 
-timer = 3600;
+timer = 1800;
 
 startedPlayingSound = false;

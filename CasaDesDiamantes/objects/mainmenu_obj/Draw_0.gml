@@ -148,6 +148,7 @@ if (drawSkipMenu) {
 				buttonBuffer2 = buttonBufferSave2;
 				buttonBufferStart2 = false;
 			} else {
+				global.transitionScreenDest = level0;
 				room_goto(transitionScreen);
 				startMenuElement = 1;
 				drawSkipMenu = false;

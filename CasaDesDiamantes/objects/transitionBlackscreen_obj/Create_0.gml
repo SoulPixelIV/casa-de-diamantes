@@ -1,3 +1,3 @@
 image_alpha = 1;
 
-timer = 1100;
+timer = 600;
