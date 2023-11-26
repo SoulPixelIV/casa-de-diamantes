@@ -11,7 +11,7 @@ switch (frame) {
 		}
 	break;
 	case 3:
-		if (global.money >= 1920 && !global.dualBarettasUpgrade2) {
+		if (global.money >= 1920 && !global.dualBarettasUpgrade2 && global.dualBarettasUpgrade1) {
 			audio_play_sound(buying_snd, 1, false);
 			global.dualBarettasUpgrade2 = true;
 			global.money -= 1920;
@@ -29,7 +29,7 @@ switch (frame) {
 		}
 	break;
 	case 5:
-		if (global.money >= 2430 && !global.shotgunUpgrade2) {
+		if (global.money >= 2430 && !global.shotgunUpgrade2 && global.shotgunUpgrade1) {
 			audio_play_sound(buying_snd, 1, false);
 			global.shotgunUpgrade2 = true;
 			global.money -= 2430;
@@ -46,7 +46,7 @@ switch (frame) {
 		}
 	break;
 	case 7:
-		if (global.money >= 3450 && !global.cupyUpgrade2) {
+		if (global.money >= 3450 && !global.cupyUpgrade2 && global.cupyUpgrade1) {
 			audio_play_sound(buying_snd, 1, false);
 			global.cupyUpgrade2 = true;
 			global.money -= 3450;

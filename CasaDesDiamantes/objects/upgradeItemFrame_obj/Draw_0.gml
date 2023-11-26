@@ -12,10 +12,23 @@ switch (frame) {
 		twolinemode = true;
 	break;
 	case 3:
-		nameText = "Freeze\nBreakshot";
-		priceText = "1920$";
 		price = 1920;
-		twolinemode = true;
+		
+		if (!global.dualBarettasUpgrade1) {
+			twolinemode = false;
+			nameText = "Locked";
+			priceText = "";
+			if (!used && !mouseEntered) {
+				image_index = 1;
+			}
+		} else {
+			twolinemode = true;
+			nameText = "Freeze\nBreakshot";
+			priceText = "1920$";
+			if (!used && !mouseEntered) {
+				image_index = frame;
+			}
+		}
 	break;
 	case 4:
 		nameText = "Ricochet H\nBullets";
@@ -24,10 +37,24 @@ switch (frame) {
 		twolinemode = true;
 	break;
 	case 5:
-		nameText = "Ricochet\nDamage";
-		priceText = "2430$";
 		price = 2430;
 		twolinemode = true;
+		
+		if (!global.shotgunUpgrade1) {
+			twolinemode = false;
+			nameText = "Locked";
+			priceText = "";
+			if (!used && !mouseEntered) {
+				image_index = 1;
+			}
+		} else {
+			twolinemode = true;
+			nameText = "Ricochet\nDamage";
+			priceText = "2430$";
+			if (!used && !mouseEntered) {
+				image_index = frame;
+			}
+		}
 	break;
 	case 6:
 		nameText = "CuPy Drone";
@@ -35,10 +62,24 @@ switch (frame) {
 		price = 0;
 	break;
 	case 7:
-		nameText = "CuPy Drone\nLaser";
-		priceText = "3450$";
 		price = 3450;
 		twolinemode = true;
+		
+		if (!global.cupyUpgrade1) {
+			twolinemode = false;
+			nameText = "Locked";
+			priceText = "";
+			if (!used && !mouseEntered) {
+				image_index = 1;
+			}
+		} else {
+			twolinemode = true;
+			nameText = "CuPy Drone\nLaser";
+			priceText = "3450$";
+			if (!used && !mouseEntered) {
+				image_index = frame;
+			}
+		}
 	break;	
 }
 

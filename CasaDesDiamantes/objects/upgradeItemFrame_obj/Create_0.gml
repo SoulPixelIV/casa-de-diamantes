@@ -5,4 +5,5 @@ priceText = "priceText";
 price = 0;
 twolinemode = false;
 used = false;
+mouseEntered = false;
 
