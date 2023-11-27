@@ -28,11 +28,15 @@ if (ppfx_system_exists(ppfx_id)) {
 			ppfx_id.ProfileLoad(act2_profile);
 		} else if (room == level5B) {
 			ppfx_id.ProfileLoad(act2_profile);
+		} else if (room == warpzone1) {
+			ppfx_id.ProfileLoad(tutorial_profile);
 		} else if (room == level6) {
 			ppfx_id.ProfileLoad(act2_profile);
 		} else if (room == level7) {
 			ppfx_id.ProfileLoad(act2_profile);
 		} else if (room == level8) {
+			ppfx_id.ProfileLoad(act2_profile);
+		} else if (room == level9) {
 			ppfx_id.ProfileLoad(act2_profile);
 		}
 	}

@@ -177,7 +177,7 @@ if (room == blackjackTable || room == level_CasinoRoof) {
 
 
 //ACT1 WORLD MUSIC
-if (room == level0 || room == level1 || room == level2 || room == level3) {
+if (room == level0 || room == level1 || room == level2 || room == level3 || room == warpzone1) {
 	act1MusicOn = true;
 } else {
 	act1MusicOn = false;
@@ -280,7 +280,7 @@ if (act1MusicOn && act1MusicStarted) {
 }
 
 //ACT2 WORLD MUSIC
-if (room == level4 || room == level5A || room == level5B || room == warpzone1 || room == level6 || room == level7 || room == level8 || room == level9) {
+if (room == level4 || room == level5A || room == level5B || room == level6 || room == level7 || room == level8 || room == level9) {
 	act2MusicOn = true;
 } else {
 	act2MusicOn = false;
