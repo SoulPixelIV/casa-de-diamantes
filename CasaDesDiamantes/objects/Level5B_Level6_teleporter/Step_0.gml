@@ -1,5 +1,6 @@
 if (place_meeting(x, y, player_obj))
 {
+	global.lastCheckpoint = noone;
 	teleporting = true;
 	player_obj.movement = false;
 	global.keyRed = false;

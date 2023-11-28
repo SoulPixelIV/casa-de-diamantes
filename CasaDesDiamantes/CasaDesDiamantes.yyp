@@ -1905,6 +1905,7 @@
   ],
   "RoomOrderNodes": [
     {"roomId":{"name":"loadVars","path":"rooms/loadVars/loadVars.yy",},},
+    {"roomId":{"name":"level6","path":"rooms/level6/level6.yy",},},
     {"roomId":{"name":"level5A","path":"rooms/level5A/level5A.yy",},},
     {"roomId":{"name":"credits","path":"rooms/credits/credits.yy",},},
     {"roomId":{"name":"mainmenu","path":"rooms/mainmenu/mainmenu.yy",},},
@@ -1924,7 +1925,6 @@
     {"roomId":{"name":"level1","path":"rooms/level1/level1.yy",},},
     {"roomId":{"name":"level3","path":"rooms/level3/level3.yy",},},
     {"roomId":{"name":"transitionScreen","path":"rooms/transitionScreen/transitionScreen.yy",},},
-    {"roomId":{"name":"level6","path":"rooms/level6/level6.yy",},},
     {"roomId":{"name":"level5B","path":"rooms/level5B/level5B.yy",},},
     {"roomId":{"name":"JANASPECIALLEVEL","path":"rooms/JANASPECIALLEVEL/JANASPECIALLEVEL.yy",},},
     {"roomId":{"name":"level1_SenzelaForest","path":"rooms/level1_SenzelaForest/level1_SenzelaForest.yy",},},
