@@ -34,5 +34,5 @@
     "path": "sprites/exclamationMarks_spr/exclamationMarks_spr.yy",
   },
   "spriteMaskId": null,
-  "visible": true,
+  "visible": false,
 }

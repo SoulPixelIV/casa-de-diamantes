@@ -11,6 +11,7 @@ if (!place_free(x, y)) {
 	falling = false;
 	if (!playedSound) {
 		audio_play_sound_on(emitter, metalDrop_snd, false, 1);
+		screenshake(120, 40, 0.8, id);
 		playedSound = true;
 	}
 }

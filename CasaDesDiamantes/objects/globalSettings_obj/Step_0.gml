@@ -74,6 +74,7 @@ if (keyboard_check_pressed(vk_f3) && room != mainmenu && room != levelSelect && 
 	instance_destroy(player_obj);
 	room_goto(levelSelect);
 }
+
 /*
 if (keyboard_check_pressed(vk_f11))
 {
