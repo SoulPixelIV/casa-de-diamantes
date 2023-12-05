@@ -52,6 +52,11 @@ var act2Effects = [
 	new FX_SunShafts(true, [0.5, 0.5], 0.4, 0.35, 0.9, 1.6, 0.4, true, 0.7, 0.05, 0.15),
 ];
 act2_profile = new PPFX_Profile("Main", act2Effects);
+var act3Effects = [
+	new FX_Bloom(true, 6, 0.7, 1.3, c_white, 0.3, true, undefined, 0.8, 1, true),
+	new FX_SunShafts(true, [0.5, 0.5], 0.4, 0.35, 0.9, 1.6, 0.4, true, 0.7, 0.05, 0.15),
+];
+act3_profile = new PPFX_Profile("Main", act3Effects);
 
 if (room == mainmenu || room == levelSelect || room == demoend || room == settings || room == upgrademenu || room == blimpAnim) {
 	ppfx_id.ProfileLoad(menu_profile);
@@ -65,7 +70,7 @@ if (room == mainmenu || room == levelSelect || room == demoend || room == settin
 	ppfx_id.ProfileLoad(casino_profile);
 } else if (room == level_CasinoRoof) {
 	ppfx_id.ProfileLoad(act1_profile);
-} else if (room == level0) {
+} else if (room == level0 || room == warpzone1) {
 	ppfx_id.ProfileLoad(tutorial_profile);
 } else if (room == level1) {
 	ppfx_id.ProfileLoad(act1_profile);
@@ -85,4 +90,10 @@ if (room == mainmenu || room == levelSelect || room == demoend || room == settin
 	ppfx_id.ProfileLoad(act2_profile);
 } else if (room == level8) {
 	ppfx_id.ProfileLoad(act2_profile);
+} else if (room == level9) {
+	ppfx_id.ProfileLoad(act2_profile);
+} else if (room == level10) {
+	ppfx_id.ProfileLoad(act3_profile);
+} else if (room == level11) {
+	ppfx_id.ProfileLoad(act3_profile);
 }

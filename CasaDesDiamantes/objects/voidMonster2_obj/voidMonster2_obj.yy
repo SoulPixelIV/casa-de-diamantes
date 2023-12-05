@@ -30,9 +30,9 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "backgroundWindow_spr",
-    "path": "sprites/backgroundWindow_spr/backgroundWindow_spr.yy",
+    "name": "voidMonster_spr",
+    "path": "sprites/voidMonster_spr/voidMonster_spr.yy",
   },
   "spriteMaskId": null,
-  "visible": false,
+  "visible": true,
 }

@@ -677,10 +677,11 @@ if (!noHUD && instance_exists(player_obj))
 	}
 	var field1Degree = 230;
 	var field2Degree = 50;
+	var field3Degree = 140;
 	var field1 = draw_sprite_ext(ammoCircleDualBarettaField_spr, global.pistolAmmo, 59 + 0 / 2, 36 + 0 / 2, -1, -1, wheelRotation, -1, 1);
-	var field2 = draw_sprite_ext(ammoCircleShotgunField_spr, global.shotgunAmmo, 59 + 0 / 2, 36 + 0 / 2, 1, 1, wheelRotation, -1, 1);
+	var field2 = draw_sprite_ext(ammoCircleShotgunField_spr, global.shotgunAmmo, 59 + 0 / 2, 36 + 0 / 2, 1, 1, wheelRotation, -1, 1);	
+	var field3 = draw_sprite_ext(ammoCircleSilencedMPField_spr, global.silencedMPAmmo, 59 + 0 / 2, 36 + 0 / 2, -1, 1, wheelRotation, -1, 1);
 	
-	var field3 = draw_sprite_ext(ammoCircleRedField_spr, 0, 59 + 0 / 2, 36 + 0 / 2, -1, 1, wheelRotation, -1, 1);
 	var field4 = draw_sprite_ext(ammoCircleRedField_spr, 0, 59 + 0 / 2, 36 + 0 / 2, 1, -1, wheelRotation, -1, 1);
 
 	if (global.currentWeapon == gameManager_obj.pickedWeapon.dualBarettas)
@@ -690,6 +691,10 @@ if (!noHUD && instance_exists(player_obj))
 	else if (global.currentWeapon == gameManager_obj.pickedWeapon.shotgun)
 	{
 		draw_sprite(ammoCircle_spr, 2, 32 + 0 / 2, 9 + 0 / 2);
+	}
+	else if (global.currentWeapon == gameManager_obj.pickedWeapon.silencedMP)
+	{
+		draw_sprite(ammoCircle_spr, 3, 32 + 0 / 2, 9 + 0 / 2);
 	}
 	else
 	{
@@ -755,6 +760,14 @@ if (!noHUD && instance_exists(player_obj))
 					wheelRotation = field2Degree;
 				}
 			}
+			if (global.currentWeapon == gameManager_obj.pickedWeapon.silencedMP)
+			{
+				if (wheelRotation > field3Degree - 15 && wheelRotation < field3Degree + 15)
+				{
+					wheelSpeed = 0;
+					wheelRotation = field3Degree;
+				}
+			}
 		}
 	}
 	if (newWeaponTimer < 0)
@@ -806,42 +819,34 @@ if (!noHUD && instance_exists(player_obj))
 	
 	//Low Ammo Message
 	if (!redDoorMessage && !blueDoorMessage && !yellowDoorMessage && !warpzoneMessage) {
-		if (global.unlockedWeapon[1] && global.unlockedWeapon[2]) {
-			if ((global.pistolAmmo + global.shotgunAmmo) < ((global.pistolAmmoMax + global.shotgunAmmoMax) / 5)) {
-				if (global.currentWeapon != gameManager_obj.pickedWeapon.pistol) {
+		if (global.unlockedWeapon[1] || global.unlockedWeapon[2] || global.unlockedWeapon[3]) {
+			if (global.currentWeapon != gameManager_obj.pickedWeapon.pistol) {
+				if ((global.pistolAmmo < 6)) {
 					draw_set_halign(fa_center);
 					draw_set_color(c_black);
-					draw_text(global.xScreenSize / 2 - 1, global.yScreenSize - global.yScreenSize / 4 + 16 + 1, "Low Ammo!");
+					draw_text(global.xScreenSize / 2 - 1, global.yScreenSize - global.yScreenSize / 4 + 16 + 1, "Low Dual Barettas Ammo!");
 					draw_set_color(make_color_rgb(255,0,0));
-					draw_text(global.xScreenSize / 2, global.yScreenSize - global.yScreenSize / 4 + 16, "Low Ammo!");
+					draw_text(global.xScreenSize / 2, global.yScreenSize - global.yScreenSize / 4 + 16, "Low Dual Barettas Ammo!");
 					draw_set_alpha(0.1);
 					draw_ellipse_color(-64, -150, global.xScreenSize + 64, global.yScreenSize + 360, c_red, c_black, false);
 					draw_set_alpha(1);
 					draw_set_halign(fa_left);
-				}
-			}
-		} else if (global.unlockedWeapon[1] && !global.unlockedWeapon[2]) {
-			if (global.pistolAmmo < global.pistolAmmoMax / 5) {
-				if (global.currentWeapon != gameManager_obj.pickedWeapon.pistol) {
+				} else if ((global.shotgunAmmo < 2)) {
 					draw_set_halign(fa_center);
 					draw_set_color(c_black);
-					draw_text(global.xScreenSize / 2 - 1, global.yScreenSize - global.yScreenSize / 4 + 16 + 1, "Low Ammo!");
+					draw_text(global.xScreenSize / 2 - 1, global.yScreenSize - global.yScreenSize / 4 + 16 + 1, "Low Shotgun Ammo!");
 					draw_set_color(make_color_rgb(255,0,0));
-					draw_text(global.xScreenSize / 2, global.yScreenSize - global.yScreenSize / 4 + 16, "Low Ammo!");
+					draw_text(global.xScreenSize / 2, global.yScreenSize - global.yScreenSize / 4 + 16, "Low Shotgun Ammo!");
 					draw_set_alpha(0.1);
 					draw_ellipse_color(-64, -150, global.xScreenSize + 64, global.yScreenSize + 360, c_red, c_black, false);
 					draw_set_alpha(1);
 					draw_set_halign(fa_left);
-				}
-			}
-		} else if (global.unlockedWeapon[2] && !global.unlockedWeapon[1]) {
-			if (global.shotgunAmmo < global.shotgunAmmoMax / 5) {
-				if (global.currentWeapon != gameManager_obj.pickedWeapon.pistol) {
+				} else if ((global.silencedMPAmmo < 9)) {
 					draw_set_halign(fa_center);
 					draw_set_color(c_black);
-					draw_text(global.xScreenSize / 2 - 1, global.yScreenSize - global.yScreenSize / 4 + 16 + 1, "Low Ammo!");
+					draw_text(global.xScreenSize / 2 - 1, global.yScreenSize - global.yScreenSize / 4 + 16 + 1, "Low Silenced MP Ammo!");
 					draw_set_color(make_color_rgb(255,0,0));
-					draw_text(global.xScreenSize / 2, global.yScreenSize - global.yScreenSize / 4 + 16, "Low Ammo!");
+					draw_text(global.xScreenSize / 2, global.yScreenSize - global.yScreenSize / 4 + 16, "Low Silenced MP Ammo!");
 					draw_set_alpha(0.1);
 					draw_ellipse_color(-64, -150, global.xScreenSize + 64, global.yScreenSize + 360, c_red, c_black, false);
 					draw_set_alpha(1);

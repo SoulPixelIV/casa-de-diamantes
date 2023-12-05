@@ -13,7 +13,7 @@ if (movspeed < movspeedMax) {
 	movspeed += global.dt / 10;
 }
 
-if (distance_to_object(player_obj) < 48)
+if (distance_to_object(player_obj) < 56)
 {
 	teleporting = true;
 	player_obj.movement = false;
