@@ -819,39 +819,37 @@ if (!noHUD && instance_exists(player_obj))
 	
 	//Low Ammo Message
 	if (!redDoorMessage && !blueDoorMessage && !yellowDoorMessage && !warpzoneMessage) {
-		if (global.unlockedWeapon[1] || global.unlockedWeapon[2] || global.unlockedWeapon[3]) {
-			if (global.currentWeapon != gameManager_obj.pickedWeapon.pistol) {
-				if ((global.pistolAmmo < 6)) {
-					draw_set_halign(fa_center);
-					draw_set_color(c_black);
-					draw_text(global.xScreenSize / 2 - 1, global.yScreenSize - global.yScreenSize / 4 + 16 + 1, "Low Dual Barettas Ammo!");
-					draw_set_color(make_color_rgb(255,0,0));
-					draw_text(global.xScreenSize / 2, global.yScreenSize - global.yScreenSize / 4 + 16, "Low Dual Barettas Ammo!");
-					draw_set_alpha(0.1);
-					draw_ellipse_color(-64, -150, global.xScreenSize + 64, global.yScreenSize + 360, c_red, c_black, false);
-					draw_set_alpha(1);
-					draw_set_halign(fa_left);
-				} else if ((global.shotgunAmmo < 2)) {
-					draw_set_halign(fa_center);
-					draw_set_color(c_black);
-					draw_text(global.xScreenSize / 2 - 1, global.yScreenSize - global.yScreenSize / 4 + 16 + 1, "Low Shotgun Ammo!");
-					draw_set_color(make_color_rgb(255,0,0));
-					draw_text(global.xScreenSize / 2, global.yScreenSize - global.yScreenSize / 4 + 16, "Low Shotgun Ammo!");
-					draw_set_alpha(0.1);
-					draw_ellipse_color(-64, -150, global.xScreenSize + 64, global.yScreenSize + 360, c_red, c_black, false);
-					draw_set_alpha(1);
-					draw_set_halign(fa_left);
-				} else if ((global.silencedMPAmmo < 9)) {
-					draw_set_halign(fa_center);
-					draw_set_color(c_black);
-					draw_text(global.xScreenSize / 2 - 1, global.yScreenSize - global.yScreenSize / 4 + 16 + 1, "Low Silenced MP Ammo!");
-					draw_set_color(make_color_rgb(255,0,0));
-					draw_text(global.xScreenSize / 2, global.yScreenSize - global.yScreenSize / 4 + 16, "Low Silenced MP Ammo!");
-					draw_set_alpha(0.1);
-					draw_ellipse_color(-64, -150, global.xScreenSize + 64, global.yScreenSize + 360, c_red, c_black, false);
-					draw_set_alpha(1);
-					draw_set_halign(fa_left);
-				}
+		if (global.currentWeapon != gameManager_obj.pickedWeapon.pistol) {
+			if ((global.pistolAmmo < 6 && global.unlockedWeapon[1])) {
+				draw_set_halign(fa_center);
+				draw_set_color(c_black);
+				draw_text(global.xScreenSize / 2 - 1, global.yScreenSize - global.yScreenSize / 4 + 16 + 1, "Low Dual Barettas Ammo!");
+				draw_set_color(make_color_rgb(255,0,0));
+				draw_text(global.xScreenSize / 2, global.yScreenSize - global.yScreenSize / 4 + 16, "Low Dual Barettas Ammo!");
+				draw_set_alpha(0.1);
+				draw_ellipse_color(-64, -150, global.xScreenSize + 64, global.yScreenSize + 360, c_red, c_black, false);
+				draw_set_alpha(1);
+				draw_set_halign(fa_left);
+			} else if ((global.shotgunAmmo < 2 && global.unlockedWeapon[2])) {
+				draw_set_halign(fa_center);
+				draw_set_color(c_black);
+				draw_text(global.xScreenSize / 2 - 1, global.yScreenSize - global.yScreenSize / 4 + 16 + 1, "Low Shotgun Ammo!");
+				draw_set_color(make_color_rgb(255,0,0));
+				draw_text(global.xScreenSize / 2, global.yScreenSize - global.yScreenSize / 4 + 16, "Low Shotgun Ammo!");
+				draw_set_alpha(0.1);
+				draw_ellipse_color(-64, -150, global.xScreenSize + 64, global.yScreenSize + 360, c_red, c_black, false);
+				draw_set_alpha(1);
+				draw_set_halign(fa_left);
+			} else if ((global.silencedMPAmmo < 9 && global.unlockedWeapon[3])) {
+				draw_set_halign(fa_center);
+				draw_set_color(c_black);
+				draw_text(global.xScreenSize / 2 - 1, global.yScreenSize - global.yScreenSize / 4 + 16 + 1, "Low Silenced MP Ammo!");
+				draw_set_color(make_color_rgb(255,0,0));
+				draw_text(global.xScreenSize / 2, global.yScreenSize - global.yScreenSize / 4 + 16, "Low Silenced MP Ammo!");
+				draw_set_alpha(0.1);
+				draw_ellipse_color(-64, -150, global.xScreenSize + 64, global.yScreenSize + 360, c_red, c_black, false);
+				draw_set_alpha(1);
+				draw_set_halign(fa_left);
 			}
 		}
 	}

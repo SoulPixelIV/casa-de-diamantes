@@ -597,6 +597,17 @@ if (!grounded && !isZombie && !flip && !isDashing && !groundCollisionTimerOn && 
 					sprite_index = playerShotgunStance_spr;
 				}
 			}
+			if (global.currentWeapon == pickedWeapon.silencedMP) {
+				if (global.top1 == noone)
+				{
+					sprite_index = playerSilencedMPStance_spr;
+				}
+				else
+				{
+					//sprite_index = playerJumpSpinNude_spr;
+					sprite_index = playerSilencedMPStance_spr;
+				}
+			}
 		}
 	}
 	
@@ -1486,6 +1497,9 @@ switch (sprite_index)
 		animationSpeed = 1.5;
 		break;
 	case playerPistolStance_spr:
+		animationSpeed = 1.5;
+		break;
+	case playerSilencedMPStance_spr:
 		animationSpeed = 1.5;
 		break;
 	case playerJumpSpinUnequipped_spr:

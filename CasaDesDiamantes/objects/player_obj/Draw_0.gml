@@ -443,7 +443,7 @@ if (!inChamber) {
 		}
 		else
 		{
-			if (sprite_index != playerShotgunStance_spr && sprite_index != playerDualBarettasStance_spr && sprite_index != playerPistolStance_spr && !flip && sprite_index != playerCrouchRoll_spr) {
+			if (sprite_index != playerShotgunStance_spr && sprite_index != playerDualBarettasStance_spr && sprite_index != playerSilencedMPStance_spr && sprite_index != playerPistolStance_spr && !flip && sprite_index != playerCrouchRoll_spr) {
 				//Laser Animation
 				if (laserAimImage < 6) {
 					laserAimImage += global.dt / 20;
@@ -673,7 +673,7 @@ if (!inChamber) {
 				}
 			}
 		
-			if (sprite_index != playerShotgunStance_spr && sprite_index != playerDualBarettasStance_spr && sprite_index != playerPistolStance_spr && !flip && sprite_index != playerCrouchRoll_spr) {
+			if (sprite_index != playerShotgunStance_spr && sprite_index != playerDualBarettasStance_spr && sprite_index != playerSilencedMPStance_spr && sprite_index != playerPistolStance_spr && !flip && sprite_index != playerCrouchRoll_spr) {
 				//PISTOL
 				if (global.currentWeapon == gameManager_obj.pickedWeapon.pistol)
 				{

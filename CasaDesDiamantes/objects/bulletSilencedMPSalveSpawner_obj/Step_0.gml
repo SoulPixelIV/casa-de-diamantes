@@ -19,6 +19,7 @@ if (salveDelay < 0) {
 
 	instance_create_layer(shotLightx, shotLighty, "ForegroundObjects", shotLightPistol_obj);
 	
+	global.silencedMPAmmo--;
 	salveAmount--;
 	salveDelay = salveDelaySave;
 	

@@ -1549,6 +1549,7 @@
     {"name":"casinoTiles","order":10,"path":"tilesets/casinoTiles/casinoTiles.yy",},
     {"name":"spr_light","order":90,"path":"sprites/spr_light/spr_light.yy",},
     {"name":"colliderBulletFree_obj","order":1,"path":"objects/colliderBulletFree_obj/colliderBulletFree_obj.yy",},
+    {"name":"playerSilencedMPStance_spr","order":57,"path":"sprites/playerSilencedMPStance_spr/playerSilencedMPStance_spr.yy",},
     {"name":"whiteExplosionEffectSmall_spr","order":25,"path":"sprites/whiteExplosionEffectSmall_spr/whiteExplosionEffectSmall_spr.yy",},
     {"name":"glasPlaneForest_obj","order":8,"path":"objects/glasPlaneForest_obj/glasPlaneForest_obj.yy",},
     {"name":"colliderNoShadow_obj","order":2,"path":"objects/colliderNoShadow_obj/colliderNoShadow_obj.yy",},

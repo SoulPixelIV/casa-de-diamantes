@@ -1819,6 +1819,7 @@
     {"id":{"name":"spr_light","path":"sprites/spr_light/spr_light.yy",},},
     {"id":{"name":"colliderBulletFree_obj","path":"objects/colliderBulletFree_obj/colliderBulletFree_obj.yy",},},
     {"id":{"name":"darkcaveBackground_spr","path":"sprites/darkcaveBackground_spr/darkcaveBackground_spr.yy",},},
+    {"id":{"name":"playerSilencedMPStance_spr","path":"sprites/playerSilencedMPStance_spr/playerSilencedMPStance_spr.yy",},},
     {"id":{"name":"whiteExplosionEffectSmall_spr","path":"sprites/whiteExplosionEffectSmall_spr/whiteExplosionEffectSmall_spr.yy",},},
     {"id":{"name":"glasPlaneForest_obj","path":"objects/glasPlaneForest_obj/glasPlaneForest_obj.yy",},},
     {"id":{"name":"colliderNoShadow_obj","path":"objects/colliderNoShadow_obj/colliderNoShadow_obj.yy",},},
