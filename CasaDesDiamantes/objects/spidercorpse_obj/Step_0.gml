@@ -33,10 +33,15 @@ if (instance_exists(player_obj)) {
 		{
 			if (distance_to_point(player_obj.x, player_obj.y) < aggroRange)
 			{
-				if ((image_xscale == 1 && player_obj.x >= x) || (image_xscale == -1 && player_obj.x <= x))
-				{
+				if (stationary) {
 					deaggroTimer = deaggroTimerSave;
 					aggroTimer -= global.dt;
+				} else {
+					if ((image_xscale == 1 && player_obj.x >= x) || (image_xscale == -1 && player_obj.x <= x))
+					{
+						deaggroTimer = deaggroTimerSave;
+						aggroTimer -= global.dt;
+					}
 				}
 			}
 		}
@@ -87,7 +92,7 @@ if (aggro) {
 		}
 	}
 	
-	if (callSpiders && calloutDelay < 50) {
+	if (callSpiders && calloutDelay < 50 && !calloutDone) {
 		screamDeathTimer -= global.dt;
 		
 		//Create Scream
@@ -95,6 +100,7 @@ if (aggro) {
 			screamDelay -= global.dt;
 			if (screamDelay < 0) {
 				instance_create_layer(x, y, "ForegroundObjects", scream_obj);
+				calloutDone = true;
 				screamDelay = screamDelaySave;
 			}
 		}

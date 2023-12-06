@@ -20,6 +20,7 @@ spawnedArm = false;
 icecicleAttackTimer = 200;
 
 sendCallout = false; //Call out for other spiders to spawn
+calloutDone = false;
 calloutDelay = 300;
 screamDelay = 15;
 screamDeathTimer = 500;
