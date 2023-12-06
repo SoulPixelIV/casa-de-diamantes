@@ -1,4 +1,4 @@
-spawnDelay = random_range(80,160);
+spawnDelay = random_range(230, 920);
 spawnNumSave = spawnNum;
 
 

@@ -79,7 +79,16 @@ if (active && timer2Sound < 0)
 		var maxAmount = random_range(1, 4);
 		for (i = 0; i < maxAmount; i++)
 		{
-			ammo = choose(1,1,1,1,1,2,2)
+			ammo = 1;
+			if (global.unlockedWeapon[1]) {
+				ammo = choose(1)
+			}
+			if (global.unlockedWeapon[2]) {
+				ammo = choose(1, 1, 1, 1, 1, 2, 2)
+			}
+			if (global.unlockedWeapon[3]) {
+				ammo = choose(1, 1, 1, 1, 1, 2, 2, 3, 3, 3, 3)
+			}
 		
 			if (ammo == 1)
 			{
@@ -88,6 +97,10 @@ if (active && timer2Sound < 0)
 			if (ammo == 2)
 			{
 				instance_create_layer(x, y - 64, "Instances", ammoPackShotgunDrop_obj);
+			}
+			if (ammo == 3)
+			{
+				instance_create_layer(x, y - 64, "Instances", ammoPackMGDrop_obj);
 			}
 		}
 	}
@@ -141,7 +154,16 @@ if (active && timer2Sound < 0)
 		var maxAmount = random_range(1, 4);
 		for (i = 0; i < maxAmount; i++)
 		{
-			ammo = choose(1,1,1,1,1,2,2)
+			ammo = 1;
+			if (global.unlockedWeapon[1]) {
+				ammo = choose(1)
+			}
+			if (global.unlockedWeapon[2]) {
+				ammo = choose(1, 1, 1, 1, 1, 2, 2)
+			}
+			if (global.unlockedWeapon[3]) {
+				ammo = choose(1, 1, 1, 1, 1, 2, 2, 3, 3, 3, 3)
+			}
 		
 			if (ammo == 1)
 			{
@@ -150,6 +172,10 @@ if (active && timer2Sound < 0)
 			if (ammo == 2)
 			{
 				instance_create_layer(x, y - 64, "Instances", ammoPackShotgunDrop_obj);
+			}
+			if (ammo == 3)
+			{
+				instance_create_layer(x, y - 64, "Instances", ammoPackMGDrop_obj);
 			}
 		}
 		

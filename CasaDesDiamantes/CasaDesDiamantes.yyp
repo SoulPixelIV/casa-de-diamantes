@@ -611,6 +611,7 @@
     {"id":{"name":"enemyHiddenSpawnpoint_obj","path":"objects/enemyHiddenSpawnpoint_obj/enemyHiddenSpawnpoint_obj.yy",},},
     {"id":{"name":"glitterTopDash_spr","path":"sprites/glitterTopDash_spr/glitterTopDash_spr.yy",},},
     {"id":{"name":"caveAmbience3_amb","path":"sounds/caveAmbience3_amb/caveAmbience3_amb.yy",},},
+    {"id":{"name":"ammoPackMGDrop_obj","path":"objects/ammoPackMGDrop_obj/ammoPackMGDrop_obj.yy",},},
     {"id":{"name":"__obj_ppf_rain_renderer","path":"objects/__obj_ppf_rain_renderer/__obj_ppf_rain_renderer.yy",},},
     {"id":{"name":"spr_lut_light_intensity_spot","path":"sprites/spr_lut_light_intensity_spot/spr_lut_light_intensity_spot.yy",},},
     {"id":{"name":"colliderTemporary_obj","path":"objects/colliderTemporary_obj/colliderTemporary_obj.yy",},},

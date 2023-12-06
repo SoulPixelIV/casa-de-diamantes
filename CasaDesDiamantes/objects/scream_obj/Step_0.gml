@@ -11,7 +11,9 @@ if (image_alpha < 0.1) {
 	instance_destroy();
 }
 
-x = body.x;
-y = body.y;
+if (instance_exists(body)) {
+	x = body.x;
+	y = body.y;
+}
 
 

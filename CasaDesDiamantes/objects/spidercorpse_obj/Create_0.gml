@@ -5,7 +5,7 @@ horspeed = 0;
 verspeed = 0;
 
 //Stats
-colliding = true;
+colliding = false;
 hitable = true;
 frozen = false;
 freezeRes = 1;
@@ -39,11 +39,11 @@ attackInProg = false;
 attackInProg2 = false;
 startDrill = false;
 dashed = false;
-damageCollision = false;
+damageCollision = true;
 spawnedHitbox = false;
 hitboxFlowerAttack = noone;
 points = 125;
-movSpeed = 0.87;
+movSpeed = 0.56;
 randXDistanceToPlayer = random_range(-14, 14); //Random distance to player modifier so enemies dont stack on one position
 movement = true;
 gravityStrength = -0.05;
@@ -79,6 +79,9 @@ rotateForWallrunning = false;
 ceilingCheck = noone;
 ceilingJumpTimer = random_range(200, 1000);
 onCeiling = false;
+randFallTimer = random_range(500, 1400);
+stageJumpDelay = 120;
+usedTeleportAnim = false;
 
 snapHitboxDelay = 45; //Delay until damage hitbox spawns
 snapHitbox2Delay = 8; //Delay until damage hitbox spawns

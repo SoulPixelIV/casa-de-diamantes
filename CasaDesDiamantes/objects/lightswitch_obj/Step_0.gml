@@ -4,22 +4,22 @@ if (open) {
 	if (lightTimer > 600) {
 		image_index = 0;
 		with (light) {
-			light[| eLight.Intensity] = 2;
+			light[| eLight.Intensity] = 2.5;
 		}
 	} else if (lightTimer > 450) {
 		image_index = 1;
 		with (light) {
-			light[| eLight.Intensity] = 1.5;
+			light[| eLight.Intensity] = 2;
 		}
 	} else if (lightTimer > 300) {
 		image_index = 2;
 		with (light) {
-			light[| eLight.Intensity] = 1;
+			light[| eLight.Intensity] = 1.5;
 		}
 	} else if (lightTimer > 150) {
 		image_index = 3;
 		with (light) {
-			light[| eLight.Intensity] = 0.5;
+			light[| eLight.Intensity] = 1.25;
 		}
 	} else if (lightTimer < 150 && lightTimer > 0) {
 		image_index = 4;
@@ -30,7 +30,7 @@ if (open) {
 	image_index = 5;
 	lightTimer = lightTimerSave;
 	with (light) {
-		light[| eLight.Intensity] = 0.1;
+		light[| eLight.Intensity] = 0.65;
 	}
 }
 

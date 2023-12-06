@@ -732,19 +732,19 @@ if (!inChamber) {
 				{
 					//Second arm
 					if (dirCursor > 90 && dirCursor < 270) {
-						draw_sprite_ext(playerSilencedMP_spr, -1, x + ((2) * currDir) * changePos, y - 8, 1, -currDir, clamp(dirCursor - 11 * -currDir, 90, 245), -1, image_alpha);
+						draw_sprite_ext(playerSilencedMP_spr, -1, x + ((2) * currDir) * changePos, y - 8, 1, -currDir, clamp(dirCursor - 5 * -currDir, 90, 245), -1, image_alpha);
 						draw_sprite_ext(playerArmCurved_spr, -1, armMPPosX, armMPPosY, 1, -currDir, clamp(dirCursor - 11 * -currDir, 90, 245), -1, image_alpha);
 					} 
 					if (dirCursor > 270 && dirCursor < 360) {
-						draw_sprite_ext(playerSilencedMP_spr, -1, x + ((2) * currDir) * changePos, y - 8, 1, -currDir, clamp(dirCursor - 11 * -currDir, 295, 360), -1, image_alpha);
+						draw_sprite_ext(playerSilencedMP_spr, -1, x + ((2) * currDir) * changePos, y - 8, 1, -currDir, clamp(dirCursor - 5 * -currDir, 295, 360), -1, image_alpha);
 						draw_sprite_ext(playerArmCurved_spr, -1, armMPPosX, armMPPosY, 1, -currDir, clamp(dirCursor - 11 * -currDir, 295, 360), -1, image_alpha);
 					}
 					if (dirCursor > 0 && dirCursor < 14) {
-						draw_sprite_ext(playerSilencedMP_spr, -1, x + ((2) * currDir) * changePos, y - 8, 1, -currDir, dirCursor - 11 * -currDir, -1, image_alpha);
+						draw_sprite_ext(playerSilencedMP_spr, -1, x + ((2) * currDir) * changePos, y - 8, 1, -currDir, dirCursor - 5 * -currDir, -1, image_alpha);
 						draw_sprite_ext(playerArmCurved_spr, -1, armMPPosX, armMPPosY, 1, -currDir, dirCursor - 11 * -currDir, -1, image_alpha);
 					}
 					if (dirCursor > 14 && dirCursor < 90) {
-						draw_sprite_ext(playerSilencedMP_spr, -1, x + ((2) * currDir) * changePos, y - 8, 1, -currDir, clamp(dirCursor - 11 * -currDir, 0, 90), -1, image_alpha);
+						draw_sprite_ext(playerSilencedMP_spr, -1, x + ((2) * currDir) * changePos, y - 8, 1, -currDir, clamp(dirCursor - 5 * -currDir, 0, 90), -1, image_alpha);
 						draw_sprite_ext(playerArmCurved_spr, -1, armMPPosX, armMPPosY, 1, -currDir, clamp(dirCursor - 11 * -currDir, 0, 90), -1, image_alpha);
 					}
 				}
