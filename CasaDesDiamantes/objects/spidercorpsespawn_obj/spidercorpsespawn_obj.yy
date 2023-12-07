@@ -38,5 +38,5 @@
     "path": "sprites/greenstripes_spr/greenstripes_spr.yy",
   },
   "spriteMaskId": null,
-  "visible": true,
+  "visible": false,
 }
