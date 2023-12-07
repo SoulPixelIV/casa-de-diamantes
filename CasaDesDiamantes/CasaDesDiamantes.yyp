@@ -1468,6 +1468,7 @@
     {"id":{"name":"laserCuPy_obj","path":"objects/laserCuPy_obj/laserCuPy_obj.yy",},},
     {"id":{"name":"plantBossFlower_obj","path":"objects/plantBossFlower_obj/plantBossFlower_obj.yy",},},
     {"id":{"name":"dashWall_obj","path":"objects/dashWall_obj/dashWall_obj.yy",},},
+    {"id":{"name":"level12","path":"rooms/level12/level12.yy",},},
     {"id":{"name":"playerWalkingNude_spr","path":"sprites/playerWalkingNude_spr/playerWalkingNude_spr.yy",},},
     {"id":{"name":"stagejumpAnimation_spr","path":"sprites/stagejumpAnimation_spr/stagejumpAnimation_spr.yy",},},
     {"id":{"name":"waterfall_obj","path":"objects/waterfall_obj/waterfall_obj.yy",},},
@@ -1925,6 +1926,7 @@
   ],
   "RoomOrderNodes": [
     {"roomId":{"name":"loadVars","path":"rooms/loadVars/loadVars.yy",},},
+    {"roomId":{"name":"level12","path":"rooms/level12/level12.yy",},},
     {"roomId":{"name":"level11","path":"rooms/level11/level11.yy",},},
     {"roomId":{"name":"level10","path":"rooms/level10/level10.yy",},},
     {"roomId":{"name":"credits","path":"rooms/credits/credits.yy",},},

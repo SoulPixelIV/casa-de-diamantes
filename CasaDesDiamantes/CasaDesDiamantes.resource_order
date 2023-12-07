@@ -1232,6 +1232,7 @@
     {"name":"laserCuPy_obj","order":27,"path":"objects/laserCuPy_obj/laserCuPy_obj.yy",},
     {"name":"plantBossFlower_obj","order":25,"path":"objects/plantBossFlower_obj/plantBossFlower_obj.yy",},
     {"name":"dashWall_obj","order":142,"path":"objects/dashWall_obj/dashWall_obj.yy",},
+    {"name":"level12","order":2,"path":"rooms/level12/level12.yy",},
     {"name":"playerWalkingNude_spr","order":6,"path":"sprites/playerWalkingNude_spr/playerWalkingNude_spr.yy",},
     {"name":"stagejumpAnimation_spr","order":147,"path":"sprites/stagejumpAnimation_spr/stagejumpAnimation_spr.yy",},
     {"name":"waterfall_obj","order":22,"path":"objects/waterfall_obj/waterfall_obj.yy",},
