@@ -96,10 +96,10 @@ if (aggro) {
 		screamDeathTimer -= global.dt;
 		
 		//Create Scream
+		instance_create_layer(x, y, "ForegroundObjects", scream_obj);
 		if (screamDeathTimer > 0) {
 			screamDelay -= global.dt;
 			if (screamDelay < 0) {
-				instance_create_layer(x, y, "ForegroundObjects", scream_obj);
 				calloutDone = true;
 				screamDelay = screamDelaySave;
 			}

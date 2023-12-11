@@ -405,6 +405,8 @@ if (act3MusicOn && act3MusicStarted) {
 				if (audio_sound_get_gain(caveL4) == 0) {
 					audio_sound_gain(caveL4, 1, 300);
 				}
+				audio_sound_gain(parediaL1, 0, 0);
+				audio_sound_gain(parediaL2, 0, 0);
 			}
 		} else if (place_meeting(x, y, musicBoxBattleBig_obj)) {
 			with (musicManager_obj) {
