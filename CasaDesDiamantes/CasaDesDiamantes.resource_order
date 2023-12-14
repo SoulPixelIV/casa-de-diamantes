@@ -1227,7 +1227,7 @@
     {"name":"shiftKeyPrompt_spr","order":43,"path":"sprites/shiftKeyPrompt_spr/shiftKeyPrompt_spr.yy",},
     {"name":"minecartRail3_obj","order":21,"path":"objects/minecartRail3_obj/minecartRail3_obj.yy",},
     {"name":"mainmenuTitleSmall_spr","order":88,"path":"sprites/mainmenuTitleSmall_spr/mainmenuTitleSmall_spr.yy",},
-    {"name":"rocketman_obj","order":11,"path":"objects/rocketman_obj/rocketman_obj.yy",},
+    {"name":"floraBlaster_obj","order":11,"path":"objects/floraBlaster_obj/floraBlaster_obj.yy",},
     {"name":"glitterBottomWalking_spr","order":6,"path":"sprites/glitterBottomWalking_spr/glitterBottomWalking_spr.yy",},
     {"name":"laserCuPy_obj","order":27,"path":"objects/laserCuPy_obj/laserCuPy_obj.yy",},
     {"name":"plantBossFlower_obj","order":25,"path":"objects/plantBossFlower_obj/plantBossFlower_obj.yy",},

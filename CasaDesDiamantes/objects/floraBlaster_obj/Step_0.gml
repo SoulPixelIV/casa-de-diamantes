@@ -19,11 +19,13 @@ else
 	dirLookat = 0;
 }
 
+/*
 //Walking Animation
 if (horspeed != 0 && !attackInProg && !attackInProg2) {
 	animationSpeed = 0.5;
 	sprite_index = zombieGirlWalking_spr;
 }
+*/
 
 //Sight Check
 if (instance_exists(player_obj)) {
@@ -130,6 +132,7 @@ if (movement)
 	}
 	
 	//Stage Jumping
+	/*
 	if (instance_exists(player_obj) && !jumpToNewDest && aggro) {
 		checkForPlayerPosTimer -= global.dt;
 		
@@ -202,6 +205,7 @@ if (movement)
 			jumpToNewDest = false;
 		}
 	}
+	*/
 }
 else
 {
@@ -355,9 +359,9 @@ if (!attackInProg && !attackInProg2 && aggro && !jumpToNewDest && (verspeed < 0.
 {
 	if (distance_to_object(player_obj) < 128) {
 		if (!frozen) {
-			attackCooldown -= global.dt;
+			//attackCooldown -= global.dt;
 		} else {
-			attackCooldown -= global.dt / 2;
+			//attackCooldown -= global.dt / 2;
 		}
 	}
 }

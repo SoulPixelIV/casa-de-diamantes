@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 7,
   "parent": {
-    "name": "Rocketman",
-    "path": "folders/Enemies/Enemy Sprites/Rocketman.yy",
+    "name": "FloraBlaster",
+    "path": "folders/Enemies/Enemy Sprites/FloraBlaster.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
