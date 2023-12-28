@@ -26,10 +26,10 @@
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"de137554-9234-4ffb-9931-95da9ac81723","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
-  "origin": 7,
+  "origin": 9,
   "parent": {
-    "name": "SensoryTrembler",
-    "path": "folders/Enemies/Enemy Sprites/SensoryTrembler.yy",
+    "name": "FloraBlaster",
+    "path": "folders/Enemies/Enemy Sprites/FloraBlaster.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
@@ -66,7 +66,7 @@
     "visibleRange": null,
     "volume": 1.0,
     "xorigin": 9,
-    "yorigin": 29,
+    "yorigin": 21,
   },
   "swatchColours": null,
   "swfPrecision": 2.525,

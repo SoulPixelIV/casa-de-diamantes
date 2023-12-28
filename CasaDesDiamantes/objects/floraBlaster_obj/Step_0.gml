@@ -71,7 +71,7 @@ if (aggroTimer < 0)
 
 if (movement)
 {
-	if (aggro && distance_to_object(player_obj) > 24)
+	if (aggro && distance_to_object(player_obj) > 24 && distance_to_object(player_obj) < maxRunAwayDistance)
 	{
 		//Check if ground to walk on exists
 		if (place_meeting(x + 16 * image_xscale, y + 24, colliderGlobal_obj)) {
@@ -82,11 +82,11 @@ if (movement)
 				{
 					if (player_obj.x > x)
 					{
-						horspeed = movSpeed;
+						horspeed = -movSpeed;
 					}
 					else
 					{
-						horspeed = -movSpeed;
+						horspeed = movSpeed;
 					}
 				}
 				else
@@ -106,11 +106,11 @@ if (movement)
 			{
 				if (player_obj.x > x)
 				{
-					horspeed = movSpeed;
+					horspeed = -movSpeed;
 				}
 				else
 				{
-					horspeed = -movSpeed;
+					horspeed = movSpeed;
 				}
 			}
 		} else {
@@ -357,12 +357,10 @@ if (lostArm && !spawnedArm && !attackInProg)
 //Cooldown
 if (!attackInProg && !attackInProg2 && aggro && !jumpToNewDest && (verspeed < 0.1 && verspeed > -0.1))
 {
-	if (distance_to_object(player_obj) < 128) {
-		if (!frozen) {
-			//attackCooldown -= global.dt;
-		} else {
-			//attackCooldown -= global.dt / 2;
-		}
+	if (!frozen) {
+		attackCooldown -= global.dt;
+	} else {
+		attackCooldown -= global.dt / 2;
 	}
 }
 
@@ -370,15 +368,16 @@ if (!attackInProg && !attackInProg2 && aggro && !jumpToNewDest && (verspeed < 0.
 if (attackCooldown < 0)
 {
 	if (distance_to_object(player_obj) < 128) {
-		if (player_obj.y + 16 < y) {
-			sprite_index = zombieGirlAttack2_spr;
-			movement = false;
-			attackInProg2 = true;
-		} else {
-			sprite_index = zombieGirlAttack1_spr;
+		////////////////////ADD SECOND ATTACK//////////////////////////////
+		//if (player_obj.y + 16 < y) {
+			//sprite_index = zombieGirlAttack2_spr;
+			//movement = false;
+			//attackInProg2 = true;
+		//} else {
+			sprite_index = florablasterAttack1_spr;
 			movement = false;
 			attackInProg = true;
-		}
+		//}
 	}
 
 	attackCooldown = attackCooldownSave;
@@ -428,14 +427,10 @@ if (attackInProg)
 		
 		//Only Spawn hitbox once
 		if (!snapAttack) {
-			sprite_index = zombieGirlAttack1Start_spr;
+			sprite_index = florablasterAttack1Start_spr;
 	
 			if (snapHitboxDelay < 0) {
-				hitboxFlowerAttack = instance_create_layer(x + (48 * image_xscale), y, "Instances", damageHitbox_obj);
-				hitboxFlowerAttack.image_yscale = 1.5;
-				hitboxFlowerAttack.image_xscale = 3.5;
-				hitboxFlowerAttack.damage = damage;
-				hitboxFlowerAttack.timer = 100;
+				instance_create_layer(x, y - 16, "Instances", sensoryRocket_obj);
 
 				snapAttack = true;
 			}
@@ -443,26 +438,12 @@ if (attackInProg)
 	}
 }
 
-if (instance_exists(hitboxFlowerAttack))
-{
-	if (attackInProg) {
-		hitboxFlowerAttack.follow = true;
-		hitboxFlowerAttack.followX = x + (48 * image_xscale);
-		hitboxFlowerAttack.followY = y;
-	}
-	if (attackInProg2) {
-		hitboxFlowerAttack.follow = true;
-		hitboxFlowerAttack.followX = x;
-		hitboxFlowerAttack.followY = y - 48;
-	}
-}
-
 if (attackInProg && snapAttack && attack1StopTimer < 0) {
-	sprite_index = zombieGirlAttack1Stop_spr;
+	sprite_index = florablasterAttack1Stop_spr;
 }
 
 //END Attack 1
-if (attackInProg && sprite_index == zombieGirlAttack1Stop_spr && image_index = image_number -1) {
+if (attackInProg && sprite_index == florablasterAttack1Stop_spr && image_index = image_number -1) {
 	attackDelay = attackDelaySave;
 	attack1PrepareTimer = attack1PrepareTimerSave;
 	attack1StopTimer = attack1StopTimerSave + random_range(-20, 20);
@@ -470,15 +451,7 @@ if (attackInProg && sprite_index == zombieGirlAttack1Stop_spr && image_index = i
 	snapAttack = false;
 	attackInProg = false;
 	animationSpeed = 0.75;
-	if (!lostArm)
-	{
-		sprite_index = zombieGirl_spr;
-	}
-	else
-	{
-		sprite_index = zombieGirl_spr;
-		//sprite_index = zombieGirlNoArm_spr;
-	}
+	sprite_index = florablaster_spr;
 	damageCollision = false;
 	movement = true;
 	spawnedHitbox = false;

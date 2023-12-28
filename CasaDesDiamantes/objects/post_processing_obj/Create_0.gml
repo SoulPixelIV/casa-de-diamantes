@@ -96,4 +96,6 @@ if (room == mainmenu || room == levelSelect || room == demoend || room == settin
 	ppfx_id.ProfileLoad(act3_profile);
 } else if (room == level11) {
 	ppfx_id.ProfileLoad(act3_profile);
+} else if (room == level12) {
+	ppfx_id.ProfileLoad(act3_profile);
 }
