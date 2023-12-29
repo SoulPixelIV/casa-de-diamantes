@@ -7,10 +7,10 @@ image_angle = direction + 90;
 
 speed = movSpeed * global.dt;
 
-if (!place_free(x, y) || place_meeting(x, y, player_obj))
+if (!place_free(x, y) || (place_meeting(x, y, player_obj) && !player_obj.isDashing))
 {
 	if (!place_meeting(x, y, colliderOneWay_obj)) {
-		movSpeed = 0;
+		speed = 0;
 		instance_change(explosionTiny_obj, true);
 	}
 }

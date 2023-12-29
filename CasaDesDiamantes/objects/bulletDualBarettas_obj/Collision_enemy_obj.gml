@@ -3,7 +3,7 @@ if (!dealtDamage && instance_exists(enemyTarget) && other.hitable)
 {
 	enemyTarget.lastBullet = bulletDualBarettas_obj;
 	enemyTarget.damageTint = true;
-	enemyTarget.hp -= 8;
+	enemyTarget.hp -= 8 / enemyTarget.damageRes;
 	enemyTarget.headshot = false;
 	enemyTarget.aggro = true;
 	if (global.dualBarettasUpgrade1 && !dealtFreezeDamage) {

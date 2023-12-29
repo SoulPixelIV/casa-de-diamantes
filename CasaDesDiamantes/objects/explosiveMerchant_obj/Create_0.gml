@@ -7,6 +7,7 @@ dir = 0;
 
 //Stats
 hp = 1;
+damageRes = 1;
 colliding = true;
 hitable = true;
 frozen = false;

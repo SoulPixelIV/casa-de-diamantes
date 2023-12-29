@@ -3,7 +3,7 @@ if (!dealtDamage && instance_exists(enemyTarget) && other.hitable)
 {
 	enemyTarget.lastBullet = bulletPistol_obj;
 	enemyTarget.damageTint = true;
-	enemyTarget.hp -= 6;
+	enemyTarget.hp -= 6 / enemyTarget.damageRes;
 	enemyTarget.headshot = false;
 	enemyTarget.aggro = true;
 	bloodSpread = instance_create_layer(x, y, "Instances", bloodSpread_obj);

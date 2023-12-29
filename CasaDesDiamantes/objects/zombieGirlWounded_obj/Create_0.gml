@@ -12,6 +12,7 @@ frozen = false;
 freezeRes = 1;
 moneyDropTimer = 95;
 level = 1;
+damageRes = 1;
 damage = 0;
 knockback = 0;
 playerSightMax = 128;

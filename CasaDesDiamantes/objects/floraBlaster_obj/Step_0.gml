@@ -368,16 +368,15 @@ if (!attackInProg && !attackInProg2 && aggro && !jumpToNewDest && (verspeed < 0.
 if (attackCooldown < 0)
 {
 	if (distance_to_object(player_obj) < 128) {
-		////////////////////ADD SECOND ATTACK//////////////////////////////
-		//if (player_obj.y + 16 < y) {
-			//sprite_index = zombieGirlAttack2_spr;
-			//movement = false;
-			//attackInProg2 = true;
-		//} else {
+		if (distance_to_object(player_obj) < 64) {
+			sprite_index = florablasterAttack2_spr;
+			movement = false;
+			attackInProg2 = true;
+		} else {
 			sprite_index = florablasterAttack1_spr;
 			movement = false;
 			attackInProg = true;
-		//}
+		}
 	}
 
 	attackCooldown = attackCooldownSave;
@@ -430,7 +429,7 @@ if (attackInProg)
 			sprite_index = florablasterAttack1Start_spr;
 	
 			if (snapHitboxDelay < 0) {
-				instance_create_layer(x, y - 16, "Instances", sensoryRocket_obj);
+				instance_create_layer(x, y - 24, "Instances", sensoryRocket_obj);
 
 				snapAttack = true;
 			}
@@ -487,7 +486,7 @@ if (attackInProg2)
 		
 		//Only Spawn hitbox once
 		if (!snapAttack2) {
-			sprite_index = zombieGirlAttack2Start_spr;
+			sprite_index = florablasterAttack2Start_spr;
 	
 			if (snapHitbox2Delay < 0) {
 				hitboxFlowerAttack = instance_create_layer(x, y - 48, "Instances", damageHitbox_obj);
@@ -495,6 +494,8 @@ if (attackInProg2)
 				hitboxFlowerAttack.image_xscale = 1.5;
 				hitboxFlowerAttack.damage = damage;
 				hitboxFlowerAttack.timer = 100;
+				
+				damageRes = 3;
 
 				snapAttack2 = true;
 			}
@@ -503,11 +504,11 @@ if (attackInProg2)
 }
 
 if (attackInProg2 && snapAttack2 && attack2StopTimer < 0) {
-	sprite_index = zombieGirlAttack2Stop_spr;
+	sprite_index = florablasterAttack2Start_spr;
 }
 
 //END Attack 2
-if (attackInProg2 && sprite_index == zombieGirlAttack2Stop_spr && image_index = image_number -1) {
+if (attackInProg2 && sprite_index == florablasterAttack2Stop_spr && image_index = image_number -1) {
 	attackDelay = attackDelaySave;
 	attack2PrepareTimer = attack2PrepareTimerSave;
 	attack2StopTimer = attack2StopTimerSave + random_range(-20, 20);
@@ -515,18 +516,11 @@ if (attackInProg2 && sprite_index == zombieGirlAttack2Stop_spr && image_index = 
 	snapAttack2 = false;
 	attackInProg2 = false;
 	animationSpeed = 0.75;
-	if (!lostArm)
-	{
-		sprite_index = zombieGirl_spr;
-	}
-	else
-	{
-		sprite_index = zombieGirl_spr;
-		//sprite_index = zombieGirlNoArm_spr;
-	}
+	sprite_index = florablaster_spr;
 	damageCollision = false;
 	movement = true;
 	spawnedHitbox = false;
+	damageRes = 1;
 	
 	attackTint = false;
 	attackTintTimer = attackTintTimerSave;

@@ -9,6 +9,7 @@ hitable = true;
 frozen = false;
 freezeRes = 7;
 level = 2;
+damageRes = 1;
 damageAttack1 = 25;
 moneyDropMin = 8;
 moneyDropMax = 14;

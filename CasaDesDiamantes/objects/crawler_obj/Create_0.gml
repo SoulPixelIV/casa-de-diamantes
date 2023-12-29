@@ -4,6 +4,7 @@ verspeed = 0;
 gravityStrength = -0.05;
 
 hp = 25;
+damageRes = 1;
 colliding = false;
 hitable = true;
 frozen = false;

@@ -13,8 +13,7 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"30259792-bd84-4a80-995e-f5f7a3350acc",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"c2bc3290-04a6-4ba1-91ab-6ccfd76ef1e2",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"12b300f6-cbb5-4ba6-8402-9541995ffb12",},
   ],
   "gridX": 0,
   "gridY": 0,
@@ -46,7 +45,7 @@
     "events": {"resourceType":"KeyframeStore<MessageEventKeyframe>","resourceVersion":"1.0","Keyframes":[],},
     "eventStubScript": null,
     "eventToFunction": {},
-    "length": 2.0,
+    "length": 1.0,
     "lockOrigin": false,
     "moments": {"resourceType":"KeyframeStore<MomentsEventKeyframe>","resourceVersion":"1.0","Keyframes":[],},
     "playback": 1,
@@ -57,8 +56,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"30259792-bd84-4a80-995e-f5f7a3350acc","path":"sprites/florablasterAttack1Start_spr/florablasterAttack1Start_spr.yy",},},},"Disabled":false,"id":"65ab0a66-b071-4b7e-a2b1-05d40fff5005","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"c2bc3290-04a6-4ba1-91ab-6ccfd76ef1e2","path":"sprites/florablasterAttack1Start_spr/florablasterAttack1Start_spr.yy",},},},"Disabled":false,"id":"b47c1783-36d3-4c66-9483-3a3782350831","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"12b300f6-cbb5-4ba6-8402-9541995ffb12","path":"sprites/florablasterAttack1Start_spr/florablasterAttack1Start_spr.yy",},},},"Disabled":false,"id":"663b6431-1069-4924-9419-1eb4a31abcf4","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

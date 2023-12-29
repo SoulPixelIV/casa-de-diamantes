@@ -9,6 +9,7 @@ frozen = false;
 freezeRes = 6;
 hitable = true;
 level = 1;
+damageRes = 1;
 moneyDropMin = 4;
 moneyDropMax = 9;
 attackCooldown = 750;
