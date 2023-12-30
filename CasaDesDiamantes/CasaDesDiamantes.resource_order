@@ -1329,6 +1329,7 @@
     {"name":"flyingInsectShot_snd","order":5,"path":"sounds/flyingInsectShot_snd/flyingInsectShot_snd.yy",},
     {"name":"__ppf_sh_render_fxaa","order":9,"path":"shaders/__ppf_sh_render_fxaa/__ppf_sh_render_fxaa.yy",},
     {"name":"goldElevator_spr","order":195,"path":"sprites/goldElevator_spr/goldElevator_spr.yy",},
+    {"name":"florablasterTrigger_obj","order":28,"path":"objects/florablasterTrigger_obj/florablasterTrigger_obj.yy",},
     {"name":"beretDashReverse_spr","order":4,"path":"sprites/beretDashReverse_spr/beretDashReverse_spr.yy",},
     {"name":"minecartTrail_obj","order":10,"path":"objects/minecartTrail_obj/minecartTrail_obj.yy",},
     {"name":"brokenStreetTile_obj","order":3,"path":"objects/brokenStreetTile_obj/brokenStreetTile_obj.yy",},

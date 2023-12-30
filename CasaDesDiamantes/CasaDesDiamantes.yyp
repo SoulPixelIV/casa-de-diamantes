@@ -1578,6 +1578,7 @@
     {"id":{"name":"flyingInsectShot_snd","path":"sounds/flyingInsectShot_snd/flyingInsectShot_snd.yy",},},
     {"id":{"name":"__ppf_sh_render_fxaa","path":"shaders/__ppf_sh_render_fxaa/__ppf_sh_render_fxaa.yy",},},
     {"id":{"name":"goldElevator_spr","path":"sprites/goldElevator_spr/goldElevator_spr.yy",},},
+    {"id":{"name":"florablasterTrigger_obj","path":"objects/florablasterTrigger_obj/florablasterTrigger_obj.yy",},},
     {"id":{"name":"beretDashReverse_spr","path":"sprites/beretDashReverse_spr/beretDashReverse_spr.yy",},},
     {"id":{"name":"minecartTrail_obj","path":"objects/minecartTrail_obj/minecartTrail_obj.yy",},},
     {"id":{"name":"brokenStreetTile_obj","path":"objects/brokenStreetTile_obj/brokenStreetTile_obj.yy",},},
