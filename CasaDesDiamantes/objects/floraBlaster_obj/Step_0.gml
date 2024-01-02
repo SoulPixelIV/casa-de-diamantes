@@ -375,7 +375,7 @@ if (!attackInProg && !attackInProg2 && aggro && !jumpToNewDest && (verspeed < 0.
 //Prepare Attack
 if (attackCooldown < 0)
 {
-	if (distance_to_object(player_obj) < 128) {
+	if (distance_to_object(player_obj) < hideDistance) {
 		sprite_index = florablasterAttack2_spr;
 		movement = false;
 		attackInProg2 = true;

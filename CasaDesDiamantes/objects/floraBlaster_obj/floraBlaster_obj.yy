@@ -37,7 +37,8 @@
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"hp","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"240","varType":0,},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"aggroRange","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"900","varType":1,},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"maxRunAwayDistance","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"350","varType":1,},
-    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"externalAggroTrigger","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"0","varType":3,},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"externalAggroTrigger","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"True","varType":3,},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"hideDistance","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"128","varType":1,},
   ],
   "solid": false,
   "spriteId": {

@@ -4,7 +4,7 @@
   "name": "fakeSewerGround_spr",
   "bbox_bottom": 31,
   "bbox_left": 0,
-  "bbox_right": 127,
+  "bbox_right": 223,
   "bbox_top": 16,
   "bboxMode": 2,
   "collisionKind": 1,
