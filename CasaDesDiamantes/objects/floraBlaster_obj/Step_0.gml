@@ -375,7 +375,7 @@ if (!attackInProg && !attackInProg2 && aggro && !jumpToNewDest && (verspeed < 0.
 //Prepare Attack
 if (attackCooldown < 0)
 {
-	if (distance_to_object(player_obj) < 64) {
+	if (distance_to_object(player_obj) < 128) {
 		sprite_index = florablasterAttack2_spr;
 		movement = false;
 		attackInProg2 = true;
@@ -495,11 +495,6 @@ if (attackInProg2)
 			sprite_index = florablasterAttack2Start_spr;
 	
 			if (snapHitbox2Delay < 0) {
-				hitboxFlowerAttack = instance_create_layer(x, y - 48, "Instances", damageHitbox_obj);
-				hitboxFlowerAttack.image_yscale = 3.5;
-				hitboxFlowerAttack.image_xscale = 1.5;
-				hitboxFlowerAttack.damage = damage;
-				hitboxFlowerAttack.timer = 100;
 				
 				damageRes = 3;
 
@@ -510,7 +505,7 @@ if (attackInProg2)
 }
 
 if (attackInProg2 && snapAttack2 && attack2StopTimer < 0) {
-	sprite_index = florablasterAttack2Start_spr;
+	sprite_index = florablasterAttack2Stop_spr;
 }
 
 //END Attack 2
