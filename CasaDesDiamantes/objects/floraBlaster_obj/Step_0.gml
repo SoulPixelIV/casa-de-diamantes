@@ -21,7 +21,7 @@ else
 
 if (externalAggroTrigger) {
 	if (instance_exists(florablasterTrigger_obj)) {
-		if (florablasterTrigger_obj.trigger) {
+		if (florablasterTrigger_obj.trigger == true) {
 			aggro = true;
 		}
 	}
