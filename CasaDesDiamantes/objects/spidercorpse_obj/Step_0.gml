@@ -285,7 +285,7 @@ if (hp < 0)
 {
 	sendCallout = true;
 	
-	var deathCross = instance_create_layer(x, y - 8, "ForegroundObjects", deathCross_obj);
+	var deathCross = instance_create_layer(x, y, "ForegroundObjects", deathCross_obj);
 	
 	//Enemy Slowmo
 	var randNum = choose(1,2,3,4,5,6,7,8,9);
@@ -308,14 +308,14 @@ if (hp < 0)
 			{
 				repeat (2)
 				{
-					instance_create_layer(x, y - 16, "Instances", healthSmall_obj);
+					instance_create_layer(x, y, "Instances", healthSmall_obj);
 				}
 			}
 			else
 			{
 				repeat (4)
 				{
-					instance_create_layer(x, y - 16, "Instances", healthSmall_obj);
+					instance_create_layer(x, y, "Instances", healthSmall_obj);
 				}
 			}
 		}
@@ -351,11 +351,11 @@ if (hp < 0)
 		
 		if (chip == 1)
 		{
-			instance_create_layer(x, y - 16, "Instances", chipBluePickup_obj);
+			instance_create_layer(x, y, "Instances", chipBluePickup_obj);
 		}
 		if (chip == 2)
 		{
-			instance_create_layer(x, y - 16, "Instances", chipRedPickup_obj);
+			instance_create_layer(x, y, "Instances", chipRedPickup_obj);
 		}
 	}
 	

@@ -348,16 +348,8 @@ if (hp < 0)
 	
 	damageTint = false;
 	damageTintHeadshot = false;
-	instance_change(zombieSoldierGirlDeath1_obj, true);
-}
-
-//Remove Arm
-if (lostArm && !spawnedArm && !attackInProg)
-{
-	sprite_index = zombieGirl_spr;
-	//sprite_index = zombieGirlNoArm_spr;
-	instance_create_layer(x, y, "Instances", zombiegirlArm_obj);
-	spawnedArm = true;
+	
+	instance_destroy();
 }
 
 //###Attack###

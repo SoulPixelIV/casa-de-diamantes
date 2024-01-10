@@ -7,6 +7,9 @@ image_angle = direction + 90;
 
 speed = movSpeed * global.dt;
 
+rocketLight.light[| eLight.X] = x;
+rocketLight.light[| eLight.Y] = y;
+
 if (!place_free(x, y) || (place_meeting(x, y, player_obj) && !player_obj.isDashing))
 {
 	if (!place_meeting(x, y, colliderOneWay_obj)) {

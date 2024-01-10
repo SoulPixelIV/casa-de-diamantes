@@ -12,6 +12,9 @@ if (!gotSpawned)
 	gotSpawned = true;
 }
 
+//Sound Position
+audio_emitter_position(emitter, x, y, 0);
+
 //Sight Check
 if (instance_exists(player_obj)) {
 	if (!collision_line(x, y, player_obj.x, player_obj.y, collider_obj, false, true) && !collision_line(x, y, player_obj.x, player_obj.y, enemyVisionBlockZone_obj, false, true))

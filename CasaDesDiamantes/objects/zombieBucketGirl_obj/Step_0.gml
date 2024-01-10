@@ -221,6 +221,9 @@ else
     verSpeed = 0;
 }
 
+//Sound Position
+audio_emitter_position(emitter, x, y, 0);
+
 //Frozen
 if (frozen) {
 	movSpeed = movSpeedSave / 2;
