@@ -32,7 +32,7 @@ var creditsEffects = [
 ];
 credits_profile = new PPFX_Profile("Main", creditsEffects);
 var tutorialEffects = [
-	new FX_Bloom(true, 6, 0.5, 1.3, c_white, 0.3, true, undefined, 0.8, 1, true),
+	new FX_Bloom(true, 6, 0.5, 1.2, c_white, 0.3, true, undefined, 0.8, 1, true),
 	new FX_SunShafts(true, [0.5, 0.5], 0.3, 0.35, 1.08, 1.6, 0.4, true, 0.7, 0.05, 0.15),
 	new FX_ChromaticAberration(true),
 ];
@@ -70,7 +70,7 @@ if (room == mainmenu || room == levelSelect || room == demoend || room == settin
 	ppfx_id.ProfileLoad(casino_profile);
 } else if (room == level_CasinoRoof) {
 	ppfx_id.ProfileLoad(act1_profile);
-} else if (room == level0 || room == warpzone1) {
+} else if (room == level0 || room == warpzone1 || room == warpzone2) {
 	ppfx_id.ProfileLoad(tutorial_profile);
 } else if (room == level1) {
 	ppfx_id.ProfileLoad(act1_profile);

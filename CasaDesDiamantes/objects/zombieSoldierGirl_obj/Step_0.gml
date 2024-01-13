@@ -26,7 +26,9 @@ if (instance_exists(player_obj)) {
 		if (distance_to_object(player_obj) < aggroRange) {
 			if (attackCooldown > 150 || attackCooldown < 0) {
 				if (!place_meeting(x + 24, y, collider_obj) && !place_meeting(x - 24, y, collider_obj) && !place_meeting(x, y + 24, collider_obj) && !place_meeting(x, y - 24, collider_obj)) {
-					image_angle = point_direction(x, y, player_obj.x, player_obj.y);
+					if (!place_meeting(x + 24, y, neuralColliders_obj) && !place_meeting(x - 24, y, neuralColliders_obj) && !place_meeting(x, y + 24, neuralColliders_obj) && !place_meeting(x, y - 24, neuralColliders_obj)) {
+						image_angle = point_direction(x, y, player_obj.x, player_obj.y);
+					}
 				}
 			}
 		}
@@ -49,7 +51,7 @@ if (instance_exists(player_obj)) {
 
 //Sight Check
 if (instance_exists(player_obj)) {
-	if (!collision_line(x, y, player_obj.x, player_obj.y, colliderOneWay_obj, false, true) && !collision_line(x, y, player_obj.x, player_obj.y, collider_obj, false, true) && !collision_line(x, y, player_obj.x, player_obj.y, enemyVisionBlockZone_obj, false, true))
+	if (!collision_line(x, y, player_obj.x, player_obj.y, colliderOneWay_obj, false, true) && !collision_line(x, y, player_obj.x, player_obj.y, collider_obj, false, true) && !collision_line(x, y, player_obj.x, player_obj.y, enemyVisionBlockZone_obj, false, true) && !collision_line(x, y, player_obj.x, player_obj.y, neuralColliders_obj, false, true))
 	{
 		if (collision_line(x, y, player_obj.x, player_obj.y, player_obj, false, true))
 		{
@@ -486,7 +488,7 @@ if (audio_emitter_exists(emitter)) {
 
 //Collision
 //horspeed
-if (place_meeting(x + (horspeed * global.dt), y, collider_obj))
+if (place_meeting(x + (horspeed * global.dt), y, collider_obj) || place_meeting(x + (horspeed * global.dt), y, neuralColliders_obj))
 {
 	if (sign(horspeed) != 0)
 	{
@@ -498,7 +500,7 @@ if (place_meeting(x + (horspeed * global.dt), y, collider_obj))
 	}
 } 
 //verspeed
-if (place_meeting(x, y + (verspeed * global.dt), collider_obj))
+if (place_meeting(x, y + (verspeed * global.dt), collider_obj) || place_meeting(x + (horspeed * global.dt), y, neuralColliders_obj))
 {
 	if (sign(verspeed) != 0)
 	{

@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "neuralBlock_obj",
+  "name": "neuralBlockLong_obj",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
@@ -34,8 +34,8 @@
   ],
   "solid": true,
   "spriteId": {
-    "name": "neuralBlock_spr",
-    "path": "sprites/neuralBlock_spr/neuralBlock_spr.yy",
+    "name": "neuralBlockLong_spr",
+    "path": "sprites/neuralBlockLong_spr/neuralBlockLong_spr.yy",
   },
   "spriteMaskId": null,
   "visible": true,

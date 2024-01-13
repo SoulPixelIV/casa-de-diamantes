@@ -13,8 +13,8 @@
     "path": "folders/Objects.yy",
   },
   "parentObjectId": {
-    "name": "colliderGlobal_obj",
-    "path": "objects/colliderGlobal_obj/colliderGlobal_obj.yy",
+    "name": "neuralColliders_obj",
+    "path": "objects/neuralColliders_obj/neuralColliders_obj.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,
