@@ -1941,6 +1941,7 @@
   "RoomOrderNodes": [
     {"roomId":{"name":"loadVars","path":"rooms/loadVars/loadVars.yy",},},
     {"roomId":{"name":"warpzone2","path":"rooms/warpzone2/warpzone2.yy",},},
+    {"roomId":{"name":"level_Casino","path":"rooms/level_Casino/level_Casino.yy",},},
     {"roomId":{"name":"level12","path":"rooms/level12/level12.yy",},},
     {"roomId":{"name":"level11","path":"rooms/level11/level11.yy",},},
     {"roomId":{"name":"level10","path":"rooms/level10/level10.yy",},},
@@ -1951,7 +1952,6 @@
     {"roomId":{"name":"upgrademenu","path":"rooms/upgrademenu/upgrademenu.yy",},},
     {"roomId":{"name":"warpzone1","path":"rooms/warpzone1/warpzone1.yy",},},
     {"roomId":{"name":"level_CasinoRoof","path":"rooms/level_CasinoRoof/level_CasinoRoof.yy",},},
-    {"roomId":{"name":"level_Casino","path":"rooms/level_Casino/level_Casino.yy",},},
     {"roomId":{"name":"level0","path":"rooms/level0/level0.yy",},},
     {"roomId":{"name":"worldmap","path":"rooms/worldmap/worldmap.yy",},},
     {"roomId":{"name":"blimpAnim","path":"rooms/blimpAnim/blimpAnim.yy",},},
