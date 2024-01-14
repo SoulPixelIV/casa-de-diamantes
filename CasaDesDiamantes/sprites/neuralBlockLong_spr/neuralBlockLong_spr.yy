@@ -2,7 +2,7 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "neuralBlockLong_spr",
-  "bbox_bottom": 255,
+  "bbox_bottom": 511,
   "bbox_left": 23,
   "bbox_right": 95,
   "bbox_top": 13,
