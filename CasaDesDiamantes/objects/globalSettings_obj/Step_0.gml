@@ -86,7 +86,7 @@ if (keyboard_check_pressed(vk_f12))
 }
 */
 
-if (room == level0 || room == level1 || room == level2 || room == level3 || room == warpzone1) {
+if (room == level0 || room == level1 || room == level2 || room == level3 || room == warpzone1 || room == warpzone2) {
 	global.ambientShadowIntensity = 0.5 * global.gamma;
 }
 else if (room == level1_RoadToCasino || room == level0_RoadToCasino)
