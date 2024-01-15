@@ -21,7 +21,12 @@ if (blackscreenDelay < 0) {
 if (finishingTeleport) {
 	waitDelay -= global.dt;
 	if (waitDelay < 0) {
-		global.transitionScreenDest = warpzone1;
+		if (teleportpoint == 0) {
+			global.transitionScreenDest = warpzone1;
+		}
+		if (teleportpoint == 1) {
+			global.transitionScreenDest = warpzone2;
+		}
 		part_emitter_destroy_all(global.partSystem);
 		instance_destroy(player_obj);
 		room_goto(transitionScreen);

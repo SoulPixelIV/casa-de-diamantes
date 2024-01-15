@@ -1329,6 +1329,7 @@
     {"name":"caEffect_obj","order":3,"path":"objects/caEffect_obj/caEffect_obj.yy",},
     {"name":"ladder_obj","order":2,"path":"objects/ladder_obj/ladder_obj.yy",},
     {"name":"__ppf_sh_render_dof_coc","order":7,"path":"shaders/__ppf_sh_render_dof_coc/__ppf_sh_render_dof_coc.yy",},
+    {"name":"Warpzone2_Level12_teleporter","order":47,"path":"objects/Warpzone2_Level12_teleporter/Warpzone2_Level12_teleporter.yy",},
     {"name":"proximitySensor_spr","order":79,"path":"sprites/proximitySensor_spr/proximitySensor_spr.yy",},
     {"name":"diamond_spr","order":76,"path":"sprites/diamond_spr/diamond_spr.yy",},
     {"name":"smokingJacketWalking_spr","order":4,"path":"sprites/smokingJacketWalking_spr/smokingJacketWalking_spr.yy",},

@@ -10,3 +10,15 @@ if (global.spawn == 2)
 {
 	instance_create_layer(Spawn3_obj.x, Spawn3_obj.y, "Instances", player_obj);
 }
+if (global.spawn == 3)
+{
+	instance_create_layer(Spawn4_obj.x, Spawn4_obj.y, "Instances", player_obj);
+}
+if (global.spawn == 4)
+{
+	instance_create_layer(Spawn5_obj.x, Spawn5_obj.y, "Instances", player_obj);
+}
+if (global.spawn == 5)
+{
+	instance_create_layer(Spawn6_obj.x, Spawn6_obj.y, "Instances", player_obj);
+}
