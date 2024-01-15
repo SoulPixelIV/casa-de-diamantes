@@ -542,6 +542,7 @@
     {"name":"bulletDetect_obj","order":12,"path":"objects/bulletDetect_obj/bulletDetect_obj.yy",},
     {"name":"paintingSmall_obj","order":58,"path":"objects/paintingSmall_obj/paintingSmall_obj.yy",},
     {"name":"lasergate_obj","order":60,"path":"objects/lasergate_obj/lasergate_obj.yy",},
+    {"name":"neuralBlockWideInverted_obj","order":179,"path":"objects/neuralBlockWideInverted_obj/neuralBlockWideInverted_obj.yy",},
     {"name":"fallingCaveGround_spr","order":101,"path":"sprites/fallingCaveGround_spr/fallingCaveGround_spr.yy",},
     {"name":"wKeyIcon_spr","order":36,"path":"sprites/wKeyIcon_spr/wKeyIcon_spr.yy",},
     {"name":"worldmap","order":3,"path":"rooms/worldmap/worldmap.yy",},
