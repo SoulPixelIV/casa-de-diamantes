@@ -584,7 +584,6 @@
     {"name":"inst_3A79664D","path":"rooms/level12/level12.yy",},
     {"name":"inst_1C9C224D","path":"rooms/level12/level12.yy",},
     {"name":"inst_2F437FC1","path":"rooms/level12/level12.yy",},
-    {"name":"inst_41F507F5","path":"rooms/level12/level12.yy",},
     {"name":"inst_6EE96A76","path":"rooms/level12/level12.yy",},
     {"name":"inst_33D46BB0","path":"rooms/level12/level12.yy",},
   ],
@@ -1266,7 +1265,6 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_3A79664D","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"shotgun_obj","path":"objects/shotgun_obj/shotgun_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":6080.0,"y":920.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_1C9C224D","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"silencedMP_obj","path":"objects/silencedMP_obj/silencedMP_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":6112.0,"y":920.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_2F437FC1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"Spawn2_obj","path":"objects/Spawn2_obj/Spawn2_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":6176.0,"y":896.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_41F507F5","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"warpzoneKey_obj","path":"objects/warpzoneKey_obj/warpzoneKey_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":3136.0,"y":2368.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"MidgroundObjects","depth":1500,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_58E8B308","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"checkpoint_obj","path":"objects/checkpoint_obj/checkpoint_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":3581.0,"y":2571.0,},

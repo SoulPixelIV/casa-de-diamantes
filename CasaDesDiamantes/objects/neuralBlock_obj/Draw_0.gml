@@ -8,3 +8,7 @@ if (distance_to_object(player_obj) < distVisible) {
 		image_alpha -= global.dt / 90;
 	}
 }
+
+//Animation
+image_speed = 0;
+image_index += global.dt / 30;
