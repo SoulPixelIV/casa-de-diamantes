@@ -745,6 +745,7 @@
     {"name":"playerArmEmptyWalking_spr","order":33,"path":"sprites/playerArmEmptyWalking_spr/playerArmEmptyWalking_spr.yy",},
     {"name":"cityBackground","order":7,"path":"tilesets/cityBackground/cityBackground.yy",},
     {"name":"collisionCheck_obj","order":11,"path":"objects/collisionCheck_obj/collisionCheck_obj.yy",},
+    {"name":"level13","order":4,"path":"rooms/level13/level13.yy",},
     {"name":"overworldIcon0_obj","order":134,"path":"objects/overworldIcon0_obj/overworldIcon0_obj.yy",},
     {"name":"cityBackground2","order":8,"path":"tilesets/cityBackground2/cityBackground2.yy",},
     {"name":"slotblockTrigger_obj","order":130,"path":"objects/slotblockTrigger_obj/slotblockTrigger_obj.yy",},

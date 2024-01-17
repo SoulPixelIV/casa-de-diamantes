@@ -937,6 +937,7 @@
     {"id":{"name":"playerArmEmptyWalking_spr","path":"sprites/playerArmEmptyWalking_spr/playerArmEmptyWalking_spr.yy",},},
     {"id":{"name":"cityBackground","path":"tilesets/cityBackground/cityBackground.yy",},},
     {"id":{"name":"collisionCheck_obj","path":"objects/collisionCheck_obj/collisionCheck_obj.yy",},},
+    {"id":{"name":"level13","path":"rooms/level13/level13.yy",},},
     {"id":{"name":"overworldIcon0_obj","path":"objects/overworldIcon0_obj/overworldIcon0_obj.yy",},},
     {"id":{"name":"cityBackground2","path":"tilesets/cityBackground2/cityBackground2.yy",},},
     {"id":{"name":"slotblockTrigger_obj","path":"objects/slotblockTrigger_obj/slotblockTrigger_obj.yy",},},
@@ -1948,6 +1949,7 @@
   ],
   "RoomOrderNodes": [
     {"roomId":{"name":"loadVars","path":"rooms/loadVars/loadVars.yy",},},
+    {"roomId":{"name":"level13","path":"rooms/level13/level13.yy",},},
     {"roomId":{"name":"level12","path":"rooms/level12/level12.yy",},},
     {"roomId":{"name":"warpzone2","path":"rooms/warpzone2/warpzone2.yy",},},
     {"roomId":{"name":"level_Casino","path":"rooms/level_Casino/level_Casino.yy",},},
