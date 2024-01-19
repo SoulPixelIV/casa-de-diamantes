@@ -66,13 +66,13 @@ if (instance_exists(player_obj))
 }
 
 //Max Speed
-if (horspeed > 2.4)
+if (horspeed > 1.65)
 {
-	horspeed = 2.4;
+	horspeed = 1.65;
 }
-if (horspeed < -2.4)
+if (horspeed < -1.65)
 {
-	horspeed = -2.4;
+	horspeed = -1.65;
 }
 
 //Gravity
