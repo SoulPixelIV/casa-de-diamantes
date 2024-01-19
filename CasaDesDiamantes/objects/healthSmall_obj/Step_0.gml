@@ -21,16 +21,19 @@ if (followTimer > 0)
 //Move towards player
 followTimer -= global.dt;
 
-if (followTimer == 0)
-{
-	horspeed = 0;
-	verspeed = 0;
-}
-
 if (followTimer < 0)
 {
 	if (instance_exists(player_obj))
 	{
-		move_towards_point(player_obj.x, player_obj.y, global.dt * 2);
+		if (distance_to_object(player_obj) < 42) {
+			move_towards_point(player_obj.x, player_obj.y, global.dt * 2);
+		} else {
+			horspeed = 0;
+			verspeed = 0;
+		}
 	}
 }
+
+//Animation
+image_speed = 0;
+image_index += global.dt / 30;
