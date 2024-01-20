@@ -351,11 +351,11 @@ if (hp < 0)
 		
 		if (chip == 1)
 		{
-			instance_create_layer(x, y, "Instances", chipBluePickup_obj);
+			instance_create_layer(x, y + 2, "Instances", chipBluePickup_obj);
 		}
 		if (chip == 2)
 		{
-			instance_create_layer(x, y, "Instances", chipRedPickup_obj);
+			instance_create_layer(x, y + 2, "Instances", chipRedPickup_obj);
 		}
 	}
 	

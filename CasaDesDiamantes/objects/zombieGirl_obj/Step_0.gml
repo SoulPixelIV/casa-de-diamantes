@@ -271,13 +271,15 @@ if (hp < 0)
 	var deathCross = instance_create_layer(x, y - 8, "ForegroundObjects", deathCross_obj);
 	
 	//Enemy Slowmo
-	var randNum = choose(1,2,3,4,5,6,7,8,9);
-	if (randNum == 9 || player_obj.forceSlowmo)
-	{
-		with (player_obj) {
-			if (!place_meeting(x, y, slowmoCollider_obj)) {
-				enemySlowmo = true;
-				camFollowTarget = deathCross;
+	if (!disableSlowmo) {
+		var randNum = choose(1,2,3,4,5,6,7,8,9);
+		if (randNum == 9 || player_obj.forceSlowmo)
+		{
+			with (player_obj) {
+				if (!place_meeting(x, y, slowmoCollider_obj)) {
+					enemySlowmo = true;
+					camFollowTarget = deathCross;
+				}
 			}
 		}
 	}

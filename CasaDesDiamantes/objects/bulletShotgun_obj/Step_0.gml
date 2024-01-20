@@ -55,7 +55,7 @@ y += movSpeedY;
 
 //Destroy
 deleteTimer -= global.dt;
-if (deleteTimer < 0 || distance_to_object(camera_obj) > 500)
+if (deleteTimer < 0 || distance_to_object(camera_obj) > 300)
 {
 	instance_destroy();
 }
