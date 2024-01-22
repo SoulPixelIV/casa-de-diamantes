@@ -351,11 +351,19 @@ if (hp < 0)
 		
 		if (chip == 1)
 		{
-			instance_create_layer(x, y + 2, "Instances", chipBluePickup_obj);
+			if (image_yscale == 1) {
+				instance_create_layer(x, y - 4, "Instances", chipBluePickup_obj);
+			} else {
+				instance_create_layer(x, y + 4, "Instances", chipBluePickup_obj);
+			}
 		}
 		if (chip == 2)
 		{
-			instance_create_layer(x, y + 2, "Instances", chipRedPickup_obj);
+			if (image_yscale == 1) {
+				instance_create_layer(x, y - 4, "Instances", chipRedPickup_obj);
+			} else {
+				instance_create_layer(x, y + 4, "Instances", chipRedPickup_obj);
+			}
 		}
 	}
 	

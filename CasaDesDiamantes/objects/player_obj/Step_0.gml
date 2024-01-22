@@ -1892,11 +1892,11 @@ if (verspeed < 2 && !onLadder && gravityOn)
 if (colliding)
 {
 	//horspeed
-	if (!place_free(x + horspeed * global.dt, y))
+	if (!place_free(x + horspeed * global.dt, y) || place_meeting(x + horspeed * global.dt, y, colliderPlayerOnly_obj))
 	{
 		if (sign(horspeed) != 0)
 		{
-			while (place_free(x + sign(horspeed), y))
+			while (place_free(x + sign(horspeed), y) && !place_meeting(x + sign(horspeed), y, colliderPlayerOnly_obj))
 			{
 				x += sign(horspeed);
 			}
@@ -1906,9 +1906,9 @@ if (colliding)
 			}
 			if (!grounded && verspeed > 0)
 			{
-				if (place_free(x, y + (verspeed * global.dt)))
+				if (place_free(x, y + (verspeed * global.dt)) && !place_meeting(x, y + (verspeed * global.dt), colliderPlayerOnly_obj))
 				{
-					if (place_free(x, y - 16)) {
+					if (place_free(x, y - 16) && !place_meeting(x, y -16, colliderPlayerOnly_obj)) {
 						if (!place_meeting(x, y, slowmoCollider_obj)) {
 							huggingWall = true;
 						}
@@ -1951,15 +1951,15 @@ if (colliding)
 	x += horspeed * global.dt;
 
 	//verspeed
-	if (!place_free(x, y + verspeed * global.dt))
+	if (!place_free(x, y + verspeed * global.dt) || place_meeting(x, y + verspeed * global.dt, colliderPlayerOnly_obj))
 	{
 		if (sign(verspeed) != 0)
 		{
-			while (place_free(x, y + sign(verspeed)))
+			while (place_free(x, y + sign(verspeed)) && !place_meeting(x, y + sign(verspeed), colliderPlayerOnly_obj))
 			{
 				y += sign(verspeed);
 			}
-			if (place_free(x, y - 16)) {
+			if (place_free(x, y - 16) && !place_meeting(x, y - 16, colliderPlayerOnly_obj)) {
 				resetJump_scr();
 			} else {
 				verspeed = 0;

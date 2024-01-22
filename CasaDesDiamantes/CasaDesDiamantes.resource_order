@@ -1178,6 +1178,7 @@
     {"name":"demoend_obj","order":138,"path":"objects/demoend_obj/demoend_obj.yy",},
     {"name":"voidMonsterPos2_obj","order":160,"path":"objects/voidMonsterPos2_obj/voidMonsterPos2_obj.yy",},
     {"name":"painting2_obj","order":62,"path":"objects/painting2_obj/painting2_obj.yy",},
+    {"name":"colliderPlayerOnly_obj","order":14,"path":"objects/colliderPlayerOnly_obj/colliderPlayerOnly_obj.yy",},
     {"name":"plantBossVineSpawner_obj","order":146,"path":"objects/plantBossVineSpawner_obj/plantBossVineSpawner_obj.yy",},
     {"name":"blimp_spr","order":157,"path":"sprites/blimp_spr/blimp_spr.yy",},
     {"name":"sniperController_obj","order":54,"path":"objects/sniperController_obj/sniperController_obj.yy",},

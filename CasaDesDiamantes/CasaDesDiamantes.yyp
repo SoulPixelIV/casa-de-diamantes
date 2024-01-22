@@ -1404,6 +1404,7 @@
     {"id":{"name":"demoend_obj","path":"objects/demoend_obj/demoend_obj.yy",},},
     {"id":{"name":"voidMonsterPos2_obj","path":"objects/voidMonsterPos2_obj/voidMonsterPos2_obj.yy",},},
     {"id":{"name":"painting2_obj","path":"objects/painting2_obj/painting2_obj.yy",},},
+    {"id":{"name":"colliderPlayerOnly_obj","path":"objects/colliderPlayerOnly_obj/colliderPlayerOnly_obj.yy",},},
     {"id":{"name":"plantBossVineSpawner_obj","path":"objects/plantBossVineSpawner_obj/plantBossVineSpawner_obj.yy",},},
     {"id":{"name":"blimp_spr","path":"sprites/blimp_spr/blimp_spr.yy",},},
     {"id":{"name":"bartender_obj","path":"objects/bartender_obj/bartender_obj.yy",},},
