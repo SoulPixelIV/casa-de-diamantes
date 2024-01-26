@@ -73,9 +73,35 @@ if (movement)
 		
 	if (aggro && distance_to_object(player_obj) > 128)
 	{
-		if (instance_exists(hazard_obj))
-		{
-			if (!collision_circle(x, y, 64, hazard_obj, false, true))
+		//Check if ground to walk on exists
+		if (place_meeting(x + 24 * image_xscale, y + 38, colliderGlobal_obj)) {
+			if (instance_exists(hazard_obj))
+			{
+				if (!collision_circle(x, y, 64, hazard_obj, false, true))
+				{
+					if (player_obj.x > x)
+					{
+						horspeed = movSpeed;
+					}
+					else
+					{
+						horspeed = -movSpeed;
+					}
+				}
+				else
+				{
+					hazard = instance_nearest(x, y, hazard_obj);
+					if (hazard.x > x)
+					{
+						horspeed = -movSpeed / 2;
+					}
+					else
+					{
+						horspeed = movSpeed / 2;
+					}
+				}
+			}
+			else
 			{
 				if (player_obj.x > x)
 				{
@@ -86,29 +112,6 @@ if (movement)
 					horspeed = -movSpeed;
 				}
 			}
-			else
-			{
-				hazard = instance_nearest(x, y, hazard_obj);
-				if (hazard.x > x)
-				{
-					horspeed = -movSpeed / 2;
-				}
-				else
-				{
-					horspeed = movSpeed / 2;
-				}
-			}
-		}
-		else
-		{
-			if (player_obj.x > x)
-			{
-				horspeed = movSpeed;
-			}
-			else
-			{
-				horspeed = -movSpeed;
-			}
 		}
 	}
 	else
@@ -117,6 +120,7 @@ if (movement)
 	}
 	
 	//Stage Jumping
+	/*
 	if (instance_exists(player_obj) && !jumpToNewDest && aggro && !attackInProg1 && !attackInProg2) {
 		checkForPlayerPosTimer -= global.dt;
 		
@@ -192,6 +196,7 @@ if (movement)
 			jumpToNewDest = false;
 		}
 	}
+	*/
 }
 else
 {

@@ -24,6 +24,11 @@ function shooting_scr(argument0) {
 			instance_create_layer(playerBulletLine_obj.x, playerBulletLine_obj.y, "Instances", pistolBulletCase_obj);
 		
 			instance_create_layer(shotLightx, shotLighty, "ForegroundObjects", shotLightPistol_obj);
+			
+			if (instance_exists(spotlightPlayer_obj)) {
+				spotlightPlayer_obj.shotlight = true;
+			}
+			
 			if (!player_obj.dashroll) {
 				instance_create_layer(shotLightx, shotLighty, "ForegroundObjects", smokecloud_obj);
 			}
@@ -95,6 +100,11 @@ function shooting_scr(argument0) {
 			
 				instance_create_layer(shotLightx, shotLighty, "ForegroundObjects", shotLightDualBarettas_obj);
 				instance_create_layer(shotLightx - 2, shotLighty - 4, "ForegroundObjects", shotLightDualBarettas_obj);
+				
+				if (instance_exists(spotlightPlayer_obj)) {
+					spotlightPlayer_obj.shotlight = true;
+				}
+				
 				if (!player_obj.dashroll) {
 					instance_create_layer(shotLightx, shotLighty, "ForegroundObjects", smokecloud_obj);
 					instance_create_layer(shotLightx - 2, shotLighty - 4, "ForegroundObjects", smokecloud_obj);
@@ -171,6 +181,11 @@ function shooting_scr(argument0) {
 				}
 			
 				instance_create_layer(shotLightx, shotLighty, "ForegroundObjects", shotLightShotgun_obj);
+				
+				if (instance_exists(spotlightPlayer_obj)) {
+					spotlightPlayer_obj.shotlightBig = true;
+				}
+			
 				if (!player_obj.dashroll) {
 					instance_create_layer(shotLightx, shotLighty, "ForegroundObjects", smokecloud_obj);
 				}
@@ -231,6 +246,10 @@ function shooting_scr(argument0) {
 			var shotLighty = y - 8 + lengthdir_y(24, dirCursor);
 			instance_create_layer(playerBulletLine_obj.x, playerBulletLine_obj.y, "Instances", bulletSniper_obj);
 			instance_create_layer(shotLightx, shotLighty, "ForegroundObjects", shotLightShotgun_obj);
+			
+			if (instance_exists(spotlightPlayer_obj)) {
+				spotlightPlayer_obj.shotlight = true;
+			}
 			instance_create_layer(shotLightx, shotLighty, "ForegroundObjects", smokecloud_obj);
 			screenshake(50, 12, 0.6, id);
 		

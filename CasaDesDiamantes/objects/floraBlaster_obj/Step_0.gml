@@ -82,7 +82,7 @@ if (movement)
 	if (aggro && distance_to_object(player_obj) > 24 && distance_to_object(player_obj) < maxRunAwayDistance)
 	{
 		//Check if ground to walk on exists
-		if (place_meeting(x + 16 * image_xscale, y + 24, colliderGlobal_obj)) {
+		if (place_meeting(x + 16 * image_xscale, y + 32, colliderGlobal_obj)) {
 			if (instance_exists(hazard_obj))
 			{
 				//Check if hazard is near and avoid it

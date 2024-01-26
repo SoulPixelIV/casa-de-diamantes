@@ -2,4 +2,4 @@
 
 lightSize = 1.7;
 lightStrength = 0.75;
-lifeLength = 15;
+lifeLength = 10;

@@ -11,7 +11,11 @@ if (salveDelay < 0) {
 	var shotLightx = x + 2 + lengthdir_x(24, player_obj.dirCursor);
 	var shotLighty = y - 3 + lengthdir_y(24, player_obj.dirCursor);
 
-	//instance_create_layer(shotLightx, shotLighty, "ForegroundObjects", shotLightPistol_obj);
+	instance_create_layer(shotLightx, shotLighty, "ForegroundObjects", shotLightPistol_obj);
+	
+	if (instance_exists(spotlightPlayer_obj)) {
+		spotlightPlayer_obj.shotlight = true;
+	}
 	
 	global.silencedMPAmmo--;
 	salveAmount--;

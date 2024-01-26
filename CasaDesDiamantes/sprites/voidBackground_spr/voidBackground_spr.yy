@@ -2,7 +2,7 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "voidBackground_spr",
-  "bbox_bottom": 159,
+  "bbox_bottom": 223,
   "bbox_left": 0,
   "bbox_right": 127,
   "bbox_top": 0,
