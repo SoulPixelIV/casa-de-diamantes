@@ -23,6 +23,7 @@ if (menu == 0) {
 	draw_text(32, optionsY[0], "[Level 10] Sewer Fall");
 	draw_text(32, optionsY[1], "[Level 11] Corpse Nest");
 	draw_text(32, optionsY[2], "[Level 12] Dark Halls");
+	draw_text(32, optionsY[3], "[Level 13] The Hole");
 } else if (menu == 4) {
 	draw_text(32, optionsY[0], "[Warpzone 1] Slotblock Fever");
 	draw_text(32, optionsY[1], "[Warpzone 2] Blind Action");
