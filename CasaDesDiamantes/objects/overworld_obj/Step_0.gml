@@ -115,6 +115,10 @@ if (pushDelay < 0) {
 					room_goto(level8);
 					global.lastCheckpoint = noone;
 				break;
+				case 6:
+					room_goto(level9);
+					global.lastCheckpoint = noone;
+				break;
 			}
 		} else if (menu == 3) {
 			switch (cursorPos)
@@ -133,6 +137,10 @@ if (pushDelay < 0) {
 				break;
 				case 3:
 					room_goto(level13);
+					global.lastCheckpoint = noone;
+				break;
+				case 4:
+					room_goto(level14);
 					global.lastCheckpoint = noone;
 				break;
 			}

@@ -19,11 +19,13 @@ if (menu == 0) {
 	draw_text(32, optionsY[3], "[Level 6] Senzela Crossroad");
 	draw_text(32, optionsY[4], "[Level 7] Open Field");
 	draw_text(32, optionsY[5], "[Level 8] Blossom Tree");
+	draw_text(32, optionsY[6], "[Level 9] Overlook");
 } else if (menu == 3) {
 	draw_text(32, optionsY[0], "[Level 10] Sewer Fall");
 	draw_text(32, optionsY[1], "[Level 11] Corpse Nest");
 	draw_text(32, optionsY[2], "[Level 12] Dark Halls");
 	draw_text(32, optionsY[3], "[Level 13] The Hole");
+	draw_text(32, optionsY[4], "[Level 14] The Great Escape");
 } else if (menu == 4) {
 	draw_text(32, optionsY[0], "[Warpzone 1] Slotblock Fever");
 	draw_text(32, optionsY[1], "[Warpzone 2] Blind Action");

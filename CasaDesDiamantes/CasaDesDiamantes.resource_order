@@ -190,6 +190,7 @@
     {"name":"ticks_spr","order":30,"path":"sprites/ticks_spr/ticks_spr.yy",},
     {"name":"radiationMeterAlarm_spr","order":73,"path":"sprites/radiationMeterAlarm_spr/radiationMeterAlarm_spr.yy",},
     {"name":"beatHigh_msc","order":2,"path":"sounds/beatHigh_msc/beatHigh_msc.yy",},
+    {"name":"level14","order":5,"path":"rooms/level14/level14.yy",},
     {"name":"playerDashReverseLEGACY_spr","order":13,"path":"sprites/playerDashReverseLEGACY_spr/playerDashReverseLEGACY_spr.yy",},
     {"name":"lensflareRed_spr","order":8,"path":"sprites/lensflareRed_spr/lensflareRed_spr.yy",},
     {"name":"explosiveMerchantDead_spr","order":1,"path":"sprites/explosiveMerchantDead_spr/explosiveMerchantDead_spr.yy",},
@@ -1671,5 +1672,6 @@
     {"name":"level2_Casino","order":5,"path":"rooms/level2_Casino/level2_Casino.yy",},
     {"name":"leverOn_spr","order":118,"path":"sprites/leverOn_spr/leverOn_spr.yy",},
     {"name":"teleportToCasino","order":24,"path":"objects/teleportToCasino/teleportToCasino.yy",},
+    {"name":"chipPlatinumPickup_obj","order":6,"path":"objects/chipPlatinumPickup_obj/chipPlatinumPickup_obj.yy",},
   ],
 }
