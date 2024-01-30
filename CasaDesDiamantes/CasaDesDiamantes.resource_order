@@ -941,6 +941,7 @@
     {"name":"zombieGirlNoArm_spr","order":9,"path":"sprites/zombieGirlNoArm_spr/zombieGirlNoArm_spr.yy",},
     {"name":"cross_product","order":8,"path":"scripts/cross_product/cross_product.yy",},
     {"name":"moviesign_spr","order":35,"path":"sprites/moviesign_spr/moviesign_spr.yy",},
+    {"name":"teleportBlimpToCasino_obj","order":180,"path":"objects/teleportBlimpToCasino_obj/teleportBlimpToCasino_obj.yy",},
     {"name":"SF1_SF0_teleporter","order":13,"path":"objects/SF1_SF0_teleporter/SF1_SF0_teleporter.yy",},
     {"name":"chain_spr","order":48,"path":"sprites/chain_spr/chain_spr.yy",},
     {"name":"point_in_polygon","order":9,"path":"scripts/point_in_polygon/point_in_polygon.yy",},
