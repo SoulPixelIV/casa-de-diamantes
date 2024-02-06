@@ -58,7 +58,7 @@ var act3Effects = [
 ];
 act3_profile = new PPFX_Profile("Main", act3Effects);
 
-if (room == mainmenu || room == levelSelect || room == demoend || room == settings || room == upgrademenu || room == blimpAnim) {
+if (room == mainmenu || room == levelSelect || room == storySelect || room == demoend || room == settings || room == upgrademenu || room == blimpAnim) {
 	ppfx_id.ProfileLoad(menu_profile);
 } else if (room == blackjackTable) {
 	ppfx_id.ProfileLoad(blackjack_profile);
