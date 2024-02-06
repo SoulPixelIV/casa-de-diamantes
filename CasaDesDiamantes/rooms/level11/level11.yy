@@ -278,6 +278,7 @@
     {"name":"inst_4EF69F08","path":"rooms/level11/level11.yy",},
     {"name":"inst_7E3B547B","path":"rooms/level11/level11.yy",},
     {"name":"inst_5C32DD6A","path":"rooms/level11/level11.yy",},
+    {"name":"inst_1C4E82CA","path":"rooms/level11/level11.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -310,6 +311,7 @@
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"battleArena_obj","path":"objects/battleArena_obj/battleArena_obj.yy",},"propertyId":{"name":"objectAccess","path":"objects/battleArena_obj/battleArena_obj.yy",},"value":"lasergate_obj",},
           ],"rotation":0.0,"scaleX":50.625004,"scaleY":19.5625,"x":6565.148,"y":3205.5,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_40567757","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"enemyVisionBlockZone_obj","path":"objects/enemyVisionBlockZone_obj/enemyVisionBlockZone_obj.yy",},"properties":[],"rotation":90.0,"scaleX":17.0625,"scaleY":2.25,"x":5344.0,"y":2784.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_1C4E82CA","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"Level11_Level12_teleporter","path":"objects/Level11_Level12_teleporter/Level11_Level12_teleporter.yy",},"properties":[],"rotation":0.0,"scaleX":7.6875,"scaleY":10.125,"x":7350.5,"y":3263.3572,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMREffectLayer","resourceVersion":"1.0","name":"RedFilter","depth":400,"effectEnabled":true,"effectType":"_filter_colourise","gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[
         {"name":"g_Intensity","type":0,"value":"0.3",},

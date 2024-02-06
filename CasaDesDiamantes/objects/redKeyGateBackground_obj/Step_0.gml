@@ -40,6 +40,18 @@ if (global.keyRed) {
 	camera_obj.redDoorMessage = false;
 }
 
+if (instance_exists(player_obj)) {
+	if (distance_to_object(player_obj) < 32) {
+		if (player_obj.key_up_pressed && open)
+		{
+			save_scr();
+			part_emitter_destroy_all(global.partSystem);
+			instance_destroy(player_obj);
+			room_goto(level13);
+		}
+	}
+}
+
 //Animation
 image_speed = 0;
 image_index += (global.dt / 15) * animationSpeed;

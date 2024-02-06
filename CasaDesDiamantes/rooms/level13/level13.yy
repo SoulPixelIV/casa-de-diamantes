@@ -570,6 +570,7 @@
     {"name":"inst_EBDBC44","path":"rooms/level13/level13.yy",},
     {"name":"inst_445E5C8F","path":"rooms/level13/level13.yy",},
     {"name":"inst_7A083C39","path":"rooms/level13/level13.yy",},
+    {"name":"inst_7EA79BA4","path":"rooms/level13/level13.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -639,6 +640,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_6F1A0224","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"enemyBlockZone_obj","path":"objects/enemyBlockZone_obj/enemyBlockZone_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":3693.0,"y":4312.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_250D853F","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"fakewallTrigger_obj","path":"objects/fakewallTrigger_obj/fakewallTrigger_obj.yy",},"properties":[],"rotation":0.0,"scaleX":16.75,"scaleY":10.4375,"x":4727.0,"y":4580.5,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_61AE51EA","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"fakewallTrigger_obj","path":"objects/fakewallTrigger_obj/fakewallTrigger_obj.yy",},"properties":[],"rotation":0.0,"scaleX":39.875,"scaleY":14.0625,"x":5699.0,"y":4390.5,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7EA79BA4","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"Level13_Level14_teleporter","path":"objects/Level13_Level14_teleporter/Level13_Level14_teleporter.yy",},"properties":[],"rotation":0.0,"scaleX":9.375,"scaleY":12.3125,"x":5901.0,"y":3374.5,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMREffectLayer","resourceVersion":"1.0","name":"RedFilter","depth":400,"effectEnabled":true,"effectType":"_filter_colourise","gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[
         {"name":"g_Intensity","type":0,"value":"0.3",},
