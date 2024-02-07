@@ -22,19 +22,7 @@ if (keyboard_check_pressed(vk_down) || keyboard_check_pressed(ord("S")) || gamep
 }
 
 if (menu == 0) {
-	options = 5;
-}
-if (menu == 1) {
 	options = 2;
-}
-if (menu == 2) {
-	options = 5;
-}
-if (menu == 3) {
-	options = 2;
-}
-if (menu == 4) {
-	options = 1;
 }
 
 if (pushDelay < 0) {
@@ -44,17 +32,19 @@ if (pushDelay < 0) {
 			switch (cursorPos)
 			{
 				case 0:
-					room_goto(level0);
+					global.storyAct = 0;
+					room_goto(level_Casino);
 					global.lastCheckpoint = noone;
 				break;
 				case 1:
+					global.storyAct = 1;
 					room_goto(level_Casino);
 					global.lastCheckpoint = noone;
 				break;
 				case 2:
-					pushDelay = 70;
-					menu = 4;
-					cursorPos = 0;
+					global.storyAct = 2;
+					room_goto(level_Casino);
+					global.lastCheckpoint = noone;
 				break;
 			}
 		}

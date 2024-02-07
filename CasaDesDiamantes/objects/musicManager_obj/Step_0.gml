@@ -114,7 +114,7 @@ if (room == demoend) {
 }
 
 //Casino Theme
-if (room == level_Casino || room == mainmenu || room == levelSelect || room == worldmap || room == settings || room == upgrademenu) {
+if (room == level_Casino || room == mainmenu || room == levelSelect || room == storySelect || room == worldmap || room == settings || room == upgrademenu) {
 	if (!audio_is_playing(casinoTheme)) {
 		audio_play_sound_on(musicEmitter, casinoTheme, 1, 1);
 		

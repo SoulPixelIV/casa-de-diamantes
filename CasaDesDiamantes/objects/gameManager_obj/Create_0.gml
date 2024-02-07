@@ -11,6 +11,7 @@ global.keyBlue = false;
 global.keyYellow = false;
 global.scorepoints = 0;
 global.currentWorld = 0;
+global.storyAct = 0;
 global.multiplier = 1;
 global.multiplierTimer = 700;
 global.multiplierTimerSave = global.multiplierTimer;

@@ -207,3 +207,209 @@ if (startScene7Timer) {
 		inCutscene = false;
 	}
 }
+
+//Scene 8
+if (scene8)
+{
+	inCutscene = true;
+	startScene8Timer = true;
+	if (!camera_obj.drawText)
+	{
+		for (i = scene8Low; i < scene8High + 1; i++)
+		{
+			camera_obj.dialogue[i] = dialogue[i];
+		}
+		camera_obj.dialogueLine = scene8Low;
+		camera_obj.drawText = true;
+	}
+	if (instance_exists(camera_obj)) {
+		camera_obj.follow = vip2_obj;
+	}
+	scene8 = false;
+}
+if (startScene8Timer) {
+	scene8Timer -= global.dt * camera_obj.textSpeed;
+	
+	if (scene8Timer < 0) {
+		if (!startScene8BlackTimer) {
+			camera_obj.blackscreenStrength += global.dt / 40;
+		}
+		
+		if (camera_obj.blackscreenStrength > 0.98) {
+			startScene8BlackTimer = true;
+			camera_obj.drawBlackborders = false;
+			//CREATE CINDY NPC
+			if (!instance_exists(cindy_obj)) {
+				if (instance_exists(spawnCindyNPC_obj)) {
+					var cindyNPC = instance_create_layer(spawnCindyNPC_obj.x, spawnCindyNPC_obj.y, "Instances", cindy_obj);
+					cindyNPC.image_xscale = -1;
+				}
+			}
+		}
+		
+		if (startScene8BlackTimer) {
+			scene8BlackTimer -= global.dt * camera_obj.textSpeed;
+			if (scene8BlackTimer < 0) {
+				camera_obj.blackscreenStrength -= global.dt / 40;
+				
+				if (camera_obj.blackscreenStrength < 0.05) {
+					//Start Next Dialogue
+					dialogueSystem_obj.scene9 = true;
+					camera_obj.drawBlackborders = true;
+					
+					scene8Timer = scene8TimerSave;
+					startScene8Timer = false;
+					scene8BlackTimer = scene8BlackTimerSave;
+					startScene8BlackTimer = false;
+					inCutscene = false;
+					global.cutsceneCasinoIntroDone = true;
+					save_scr();
+				}
+			}
+		}
+	}
+}
+
+//Scene 9
+if (scene9)
+{
+	inCutscene = true;
+	startScene9Timer = true;
+	if (!camera_obj.drawText)
+	{
+		for (i = scene9Low; i < scene9High + 1; i++)
+		{
+			camera_obj.dialogue[i] = dialogue[i];
+		}
+		camera_obj.dialogueLine = scene9Low;
+		camera_obj.drawText = true;
+	}
+	if (instance_exists(camera_obj)) {
+		if (scene9Timer > 4000) {
+			camera_obj.follow = cindy_obj;
+		}
+	}
+	scene9 = false;
+}
+
+//Switch Camera Target
+if (scene9Timer < 4000) {
+	camera_obj.follow = vip2_obj;
+}
+
+if (startScene9Timer) {
+	scene9Timer -= global.dt * camera_obj.textSpeed;
+	
+	if (scene9Timer < 0) {
+		if (!startScene9BlackTimer) {
+			camera_obj.blackscreenStrength += global.dt / 40;
+		}
+		
+		if (camera_obj.blackscreenStrength > 0.98) {
+			startScene9BlackTimer = true;
+			camera_obj.drawBlackborders = false;
+			//REMOVE VIP NPC
+			if (instance_exists(vip2_obj)) {
+				instance_destroy(vip2_obj);
+			}
+			
+			//Move Cindy NPC
+			if (instance_exists(cindy_obj)) {
+				var cindy = instance_nearest(x, y, cindy_obj);
+				cindy.x = spawnCindyNPC2_obj.x;
+				cindy.y = spawnCindyNPC2_obj.y;
+			}
+		}
+		
+		if (startScene9BlackTimer) {
+			scene9BlackTimer -= global.dt * camera_obj.textSpeed;
+			if (scene9BlackTimer < 0) {
+				camera_obj.blackscreenStrength -= global.dt / 40;
+				
+				if (camera_obj.blackscreenStrength < 0.05) {
+					//Start Next Dialogue
+					dialogueSystem_obj.scene10 = true;
+					camera_obj.drawBlackborders = true;
+					
+					scene9Timer = scene9TimerSave;
+					startScene9Timer = false;
+					scene9BlackTimer = scene9BlackTimerSave;
+					startScene9BlackTimer = false;
+					inCutscene = false;
+					global.cutsceneCasinoIntroDone = true;
+					save_scr();
+				}
+			}
+		}
+	}
+}
+
+//Scene 10
+if (scene10)
+{
+	inCutscene = true;
+	startScene10Timer = true;
+	if (!camera_obj.drawText)
+	{
+		for (i = scene10Low; i < scene10High + 1; i++)
+		{
+			camera_obj.dialogue[i] = dialogue[i];
+		}
+		camera_obj.dialogueLine = scene10Low;
+		camera_obj.drawText = true;
+	}
+	if (instance_exists(camera_obj)) {
+		if (scene10Timer > 5480) {
+			camera_obj.follow = cindy_obj;
+		}
+	}
+	scene10 = false;
+}
+
+//Switch Camera Target
+if (scene10Timer < 5480 && scene10Timer > 5000) {
+	camera_obj.follow = player_obj;
+}
+if (scene10Timer < 5000 && scene10Timer > 2200) {
+	camera_obj.follow = cindy_obj;
+}
+if (scene10Timer < 2200 && scene10Timer > 800) {
+	camera_obj.follow = player_obj;
+}
+if (scene10Timer < 800) {
+	camera_obj.follow = cindy_obj;
+}
+
+if (startScene10Timer) {
+	scene10Timer -= global.dt * camera_obj.textSpeed;
+	
+	if (scene10Timer < 0) {
+		if (!startScene10BlackTimer) {
+			camera_obj.blackscreenStrength += global.dt / 40;
+		}
+		
+		if (camera_obj.blackscreenStrength > 0.98) {
+			startScene10BlackTimer = true;
+			camera_obj.drawBlackborders = false;
+		}
+		
+		if (startScene10BlackTimer) {
+			scene10BlackTimer -= global.dt * camera_obj.textSpeed;
+			if (scene10BlackTimer < 0) {
+				camera_obj.blackscreenStrength -= global.dt / 40;
+				
+				if (camera_obj.blackscreenStrength < 0.05) {
+					
+					player_obj.movement = true;
+					camera_obj.drawBlackborders = false;
+					scene10Timer = scene10TimerSave;
+					startScene10Timer = false;
+					scene10BlackTimer = scene10BlackTimerSave;
+					startScene10BlackTimer = false;
+					inCutscene = false;
+					save_scr();
+				}
+			}
+		}
+	}
+}

@@ -8,6 +8,9 @@ scene4 = false;
 scene5 = false;
 scene6 = false;
 scene7 = false;
+scene8 = false;
+scene9 = false;
+scene10 = false;
 
 //Dialogue Markers
 scene1Low = 0;
@@ -24,6 +27,12 @@ scene6Low = 42;
 scene6High = 44;
 scene7Low = 45;
 scene7High = 46;
+scene8Low = 47;
+scene8High = 52;
+scene9Low = 53;
+scene9High = 60;
+scene10Low = 61;
+scene10High = 69;
 
 //Dialogue Text
 //!!!ALWAYS 1 FREE SPACE BETWEEN SCENES
@@ -35,6 +44,7 @@ scene7High = 46;
 // ] = Bartender
 // [ = Bunnygirl
 // ^ = VIP
+// <= VIP2
 // W[Number] = Open specific window menu
 
 //Scene 1
@@ -124,3 +134,53 @@ scene7TimerSave = scene7Timer;
 
 dialogue[45] = "^...";
 dialogue[46] = "";
+
+//Scene 8 First Time Entering Casino
+startScene8Timer = false;
+scene8Timer = 4340;
+scene8TimerSave = scene8Timer;
+startScene8BlackTimer = false;
+scene8BlackTimer = 300;
+scene8BlackTimerSave = scene8Timer;
+
+dialogue[47] = "<Welcome to my jewel, the Casa De Diamantes, stranger!";
+dialogue[48] = "<Where strangers become friends and friends become strangers!";
+dialogue[49] = "<Please, enjoy your stay.";
+dialogue[50] = "<You're a pretty heavy sleeper, huh?";
+dialogue[51] = "<Girl's managed to empty 6 clips until you finally woke up.";
+dialogue[52] = "";
+
+//Scene 9 First Time Entering Casino
+startScene9Timer = false;
+scene9Timer = 4700;
+scene9TimerSave = scene9Timer;
+startScene9BlackTimer = false;
+scene9BlackTimer = 500;
+scene9BlackTimerSave = scene9Timer;
+
+dialogue[53] = "$They're magazines, not clips.";
+dialogue[54] = "<...";
+dialogue[55] = "<I'm glad you made it here alive!";
+dialogue[56] = "<I'm also getting a call right now..";
+dialogue[57] = "<Meet me in my office on the second floor when you get the chance.";
+dialogue[58] = "<For now, enjoy our games and entertainment!";
+dialogue[59] = "<See ya.";
+dialogue[60] = "";
+
+//Scene 10 First Time Entering Casino
+startScene10Timer = false;
+scene10Timer = 5900;
+scene10TimerSave = scene10Timer;
+startScene10BlackTimer = false;
+scene10BlackTimer = 400;
+scene10BlackTimerSave = scene10Timer;
+
+dialogue[61] = "$Steph!!";
+dialogue[62] = "#Cindy!!";
+dialogue[63] = "$I'm so glad you're finally here! Are you well? Was the trip okay?";
+dialogue[64] = "$I set up a room here already, come on you gotta get some rest.";
+dialogue[65] = "$We got a lot of work before us.";
+dialogue[66] = "#I won't answer questions you don't even remember asking..";
+dialogue[67] = "#..but sure, lead the way!";
+dialogue[68] = "$Come on, you'll love what i did to the place!";
+dialogue[69] = "";
