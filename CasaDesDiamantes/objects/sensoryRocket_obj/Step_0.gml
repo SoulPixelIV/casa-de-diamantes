@@ -22,3 +22,7 @@ if (place_meeting(x, y, bulletDualBarettas_obj) ||place_meeting(x, y, bulletPist
 	speed = 0;
 	instance_change(explosionTiny_obj, true);
 }
+
+if (global.pause) {
+	speed = 0;
+}

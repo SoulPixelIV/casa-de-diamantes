@@ -68,3 +68,10 @@ if (!place_free(x, y + verspeed))
 {
     verspeed = 0;   
 }
+
+//Animation
+image_speed = 0;
+image_index += global.dt / 30;
+
+x += horspeed * global.dt / 3;
+y += verspeed * global.dt / 3;
