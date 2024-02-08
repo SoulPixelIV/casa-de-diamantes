@@ -30,5 +30,5 @@
     "path": "sprites/redcubex16_spr/redcubex16_spr.yy",
   },
   "spriteMaskId": null,
-  "visible": true,
+  "visible": false,
 }

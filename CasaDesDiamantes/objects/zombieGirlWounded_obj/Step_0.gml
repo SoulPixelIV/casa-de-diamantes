@@ -134,7 +134,7 @@ else
 if (horspeed != 0) {
 	moneyDropTimer -= global.dt;
 	if (moneyDropTimer < 0) {
-		instance_create_layer(x, y, "Instances", chipBluePickup_obj);
+		instance_create_layer(x, y - 4, "Instances", chipBluePickup_obj);
 		moneyDropTimer = moneyDropTimerSave;
 	}
 }

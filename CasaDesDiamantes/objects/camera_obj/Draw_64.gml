@@ -79,6 +79,13 @@ if (instance_exists(player_obj) && !noHUD)
 		var dashCircle = draw_sprite_ext(dashCircle_spr, 0, ((player_obj.x) - x) + 238, ((player_obj.y - 20) - y) + 143, 1 / (player_obj.dashDelay / 60), 1 / (player_obj.dashDelay / 60), 0, -1, 0.2 / (player_obj.dashDelay / 40))
 	}
 	
+	//Draw Haze Effect
+	if (hazeEffect) {
+		gpu_set_blendmode(bm_subtract);
+		draw_sprite(hazeEffectAnimated_spr, -1, 0, 0);
+		gpu_set_blendmode(bm_normal);
+	}
+	
 	//Player Infection Timer
 	/*
 	if (player_obj.plagueTransformation)
@@ -396,13 +403,32 @@ draw_set_alpha(vignetteAlpha);
 draw_ellipse_colour(-100, -100, global.xScreenSize + 100, global.yScreenSize + 100, c_black , c_red, false);
 draw_set_alpha(1);
 
+if (hazeEffect) {
+	if (hazeAnimDir == 0) {
+		hazeAnim -= global.dt / 7;
+		if (hazeAnim < -15) {
+			hazeAnimDir = 1;
+		}
+	}
+	if (hazeAnimDir == 1) {
+		hazeAnim += global.dt / 7;
+		if (hazeAnim > 15) {
+			hazeAnimDir = 0;
+		}
+	}
+	draw_set_alpha(0.15);
+	draw_ellipse_colour(-100 - hazeAnim, -100 - hazeAnim, global.xScreenSize + 100 + hazeAnim, global.yScreenSize + 100 + hazeAnim, c_black , c_green, false);
+	draw_set_alpha(1);
+}
+
 if (instance_exists(player_obj)) {
 	if (player_obj.plagueTransformation)
 	{
-	    shader_reset();
-	    draw_set_alpha(0.4);
-	    draw_ellipse_colour(-100, -100, global.xScreenSize + 100, global.yScreenSize + 100, c_black , c_purple, false);
-	    draw_set_alpha(1);
+	    //shader_reset();
+	    //draw_set_alpha(0.4);
+	    //draw_ellipse_colour(-100, -100, global.xScreenSize + 100, global.yScreenSize + 100, c_black , c_purple, false);
+	    //draw_set_alpha(1);
+		camera_obj.hazeEffect = true;
 	}
 
 	if (player_obj.slowmo)
@@ -1263,7 +1289,7 @@ if (showWeaponProhibited && !drawElevatorSign && !showWindowMenu) {
 }
 
 //Show Mission Text
-if (global.drawMission) {
+if (global.drawMission && !global.pause) {
 	if (room == level_Casino || room == level_CasinoRoof) {
 		draw_set_halign(fa_center);
 		draw_set_font(gothicPixel_fnt);

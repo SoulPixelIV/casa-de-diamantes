@@ -83,6 +83,7 @@
     {"name":"voidBackground_spr","order":9,"path":"sprites/voidBackground_spr/voidBackground_spr.yy",},
     {"name":"spotlightWhite_obj","order":14,"path":"objects/spotlightWhite_obj/spotlightWhite_obj.yy",},
     {"name":"lightning_spr","order":7,"path":"sprites/lightning_spr/lightning_spr.yy",},
+    {"name":"hazeEffectAnimated_spr","order":221,"path":"sprites/hazeEffectAnimated_spr/hazeEffectAnimated_spr.yy",},
     {"name":"fakeForestGround2_spr","order":163,"path":"sprites/fakeForestGround2_spr/fakeForestGround2_spr.yy",},
     {"name":"__ppf_sh_render_gaussian_blur","order":10,"path":"shaders/__ppf_sh_render_gaussian_blur/__ppf_sh_render_gaussian_blur.yy",},
     {"name":"playerWalking_spr","order":16,"path":"sprites/playerWalking_spr/playerWalking_spr.yy",},

@@ -228,6 +228,7 @@
     {"id":{"name":"voidBackground_spr","path":"sprites/voidBackground_spr/voidBackground_spr.yy",},},
     {"id":{"name":"spotlightWhite_obj","path":"objects/spotlightWhite_obj/spotlightWhite_obj.yy",},},
     {"id":{"name":"lightning_spr","path":"sprites/lightning_spr/lightning_spr.yy",},},
+    {"id":{"name":"hazeEffectAnimated_spr","path":"sprites/hazeEffectAnimated_spr/hazeEffectAnimated_spr.yy",},},
     {"id":{"name":"fakeForestGround2_spr","path":"sprites/fakeForestGround2_spr/fakeForestGround2_spr.yy",},},
     {"id":{"name":"__ppf_sh_render_gaussian_blur","path":"shaders/__ppf_sh_render_gaussian_blur/__ppf_sh_render_gaussian_blur.yy",},},
     {"id":{"name":"playerWalking_spr","path":"sprites/playerWalking_spr/playerWalking_spr.yy",},},

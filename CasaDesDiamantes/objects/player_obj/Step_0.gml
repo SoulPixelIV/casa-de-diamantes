@@ -1630,6 +1630,9 @@ if (hp <= 0 || infection > hp)
 		}
 	} else {
 		//Death
+		if (instance_exists(camera_obj)) {
+			camera_obj.hazeEffect = true;
+		}
 		if (!deathActivated)
 		{
 			death_scr();
@@ -1664,6 +1667,9 @@ if (hp <= 0 || infection > hp)
 	{
 		camera_obj.finalDeath = true;
 		camera_obj.drawInfectionText = true;
+		if (instance_exists(camera_obj)) {
+			camera_obj.hazeEffect = false;
+		}
 		
 		if (!createDeathChunks) {
 			var amount = random_range(14, 20);

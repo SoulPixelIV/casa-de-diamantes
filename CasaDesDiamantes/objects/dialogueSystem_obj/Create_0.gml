@@ -169,7 +169,7 @@ dialogue[60] = "";
 
 //Scene 10 First Time Entering Casino
 startScene10Timer = false;
-scene10Timer = 5900;
+scene10Timer = 6000;
 scene10TimerSave = scene10Timer;
 startScene10BlackTimer = false;
 scene10BlackTimer = 400;

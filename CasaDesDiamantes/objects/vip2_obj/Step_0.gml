@@ -9,8 +9,8 @@ if (instance_exists(player_obj)) {
 		dialogueSystem_obj.scene8 = true;
 		player_obj.movement = false;
 		camera_obj.drawBlackborders = true;
-		if (instance_exists(col)) {
-			instance_destroy(col);
+		if (instance_exists(colliderCasinoCutscene_obj)) {
+			instance_destroy(colliderCasinoCutscene_obj);
 		}
 	}
 }

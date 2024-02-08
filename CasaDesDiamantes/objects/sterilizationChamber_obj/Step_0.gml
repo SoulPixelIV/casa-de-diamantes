@@ -7,6 +7,9 @@ if (distance_to_object(player_obj) < 32 && (keyboard_check_pressed(ord("W")) || 
 	image_index = 1;
 	
 	player_obj.plagueTransformation = false;
+	if (instance_exists(camera_obj)) {
+		camera_obj.hazeEffect = false;
+	}
 	player_obj.infection = 0;
 	camera_obj.zombiespikeEffectBorder = camera_obj.zombiespikeEffectBorderSave;
 	camera_obj.zombiespikeBorderTransparent = camera_obj.zombiespikeBorderTransparentSave;

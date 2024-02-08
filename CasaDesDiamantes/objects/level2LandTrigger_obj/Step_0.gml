@@ -8,6 +8,8 @@ if (firstBlackscreen) {
 	if (camera_obj.blackscreenStrength > 1) {
 		firstBlackscreen = false;
 		spawnEverything = true;
+		
+		camera_obj.hazeEffect = true;
 	}
 }
 
@@ -87,6 +89,8 @@ if (timer5 < 0) {
 	if (instance_exists(vine_obj)) {
 		instance_destroy(vine_obj);
 	}
+	
+	camera_obj.hazeEffect = false;
 	
 	instance_destroy();
 	

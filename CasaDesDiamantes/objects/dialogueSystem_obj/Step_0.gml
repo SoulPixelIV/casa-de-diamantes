@@ -19,7 +19,7 @@ if (startScene1Timer) {
 	
 	if (scene1Timer < 0) {
 		if (!startScene1BlackTimer) {
-			camera_obj.blackscreenStrength += global.dt / 40;
+			camera_obj.blackscreenStrength += (global.dt / 40) * camera_obj.textSpeed;
 		}
 		
 		if (camera_obj.blackscreenStrength > 0.98) {
@@ -33,7 +33,7 @@ if (startScene1Timer) {
 		if (startScene1BlackTimer) {
 			scene1BlackTimer -= global.dt * camera_obj.textSpeed;
 			if (scene1BlackTimer < 0) {
-				camera_obj.blackscreenStrength -= global.dt / 40;
+				camera_obj.blackscreenStrength -= (global.dt / 40) * camera_obj.textSpeed;
 				
 				if (camera_obj.blackscreenStrength < 0.05) {
 					player_obj.movement = true;
@@ -134,6 +134,7 @@ if (scene5)
 		camera_obj.dialogueLine = scene5Low;
 		camera_obj.drawText = true;
 	}
+	camera_obj.follow = vip_obj;
 	scene5 = false;
 }
 if (startScene5Timer) {
@@ -143,6 +144,7 @@ if (startScene5Timer) {
 		scene5Timer = scene5TimerSave;
 		startScene5Timer = false;
 		vip_obj.dialogueTriggered = false;
+		camera_obj.follow = player_obj;
 		player_obj.movement = true;
 		inCutscene = false;
 		camera_obj.drawBlackborders = false;
@@ -193,6 +195,7 @@ if (scene7)
 		camera_obj.dialogueLine = scene7Low;
 		camera_obj.drawText = true;
 	}
+	camera_obj.follow = vip_obj;
 	scene7 = false;
 }
 if (startScene7Timer) {
@@ -203,6 +206,7 @@ if (startScene7Timer) {
 		startScene7Timer = false;
 		vip_obj.dialogueTriggered = false;
 		player_obj.movement = true;
+		camera_obj.follow = player_obj;
 		camera_obj.drawBlackborders = false;
 		inCutscene = false;
 	}
@@ -232,7 +236,7 @@ if (startScene8Timer) {
 	
 	if (scene8Timer < 0) {
 		if (!startScene8BlackTimer) {
-			camera_obj.blackscreenStrength += global.dt / 40;
+			camera_obj.blackscreenStrength += (global.dt / 40) * camera_obj.textSpeed;
 		}
 		
 		if (camera_obj.blackscreenStrength > 0.98) {
@@ -250,7 +254,7 @@ if (startScene8Timer) {
 		if (startScene8BlackTimer) {
 			scene8BlackTimer -= global.dt * camera_obj.textSpeed;
 			if (scene8BlackTimer < 0) {
-				camera_obj.blackscreenStrength -= global.dt / 40;
+				camera_obj.blackscreenStrength -= (global.dt / 40) * camera_obj.textSpeed;
 				
 				if (camera_obj.blackscreenStrength < 0.05) {
 					//Start Next Dialogue
@@ -302,7 +306,7 @@ if (startScene9Timer) {
 	
 	if (scene9Timer < 0) {
 		if (!startScene9BlackTimer) {
-			camera_obj.blackscreenStrength += global.dt / 40;
+			camera_obj.blackscreenStrength += (global.dt / 40) * camera_obj.textSpeed;
 		}
 		
 		if (camera_obj.blackscreenStrength > 0.98) {
@@ -324,7 +328,7 @@ if (startScene9Timer) {
 		if (startScene9BlackTimer) {
 			scene9BlackTimer -= global.dt * camera_obj.textSpeed;
 			if (scene9BlackTimer < 0) {
-				camera_obj.blackscreenStrength -= global.dt / 40;
+				camera_obj.blackscreenStrength -= (global.dt / 40) * camera_obj.textSpeed;
 				
 				if (camera_obj.blackscreenStrength < 0.05) {
 					//Start Next Dialogue
@@ -359,7 +363,7 @@ if (scene10)
 		camera_obj.drawText = true;
 	}
 	if (instance_exists(camera_obj)) {
-		if (scene10Timer > 5480) {
+		if (scene10Timer > 5580) {
 			camera_obj.follow = cindy_obj;
 		}
 	}
@@ -367,16 +371,16 @@ if (scene10)
 }
 
 //Switch Camera Target
-if (scene10Timer < 5480 && scene10Timer > 5000) {
+if (scene10Timer < 5580 && scene10Timer > 5100) {
 	camera_obj.follow = player_obj;
 }
-if (scene10Timer < 5000 && scene10Timer > 2200) {
+if (scene10Timer < 5100 && scene10Timer > 2300) {
 	camera_obj.follow = cindy_obj;
 }
-if (scene10Timer < 2200 && scene10Timer > 800) {
+if (scene10Timer < 2280 && scene10Timer > 700) {
 	camera_obj.follow = player_obj;
 }
-if (scene10Timer < 800) {
+if (scene10Timer < 630 && scene10Timer > 0) {
 	camera_obj.follow = cindy_obj;
 }
 
@@ -385,18 +389,23 @@ if (startScene10Timer) {
 	
 	if (scene10Timer < 0) {
 		if (!startScene10BlackTimer) {
-			camera_obj.blackscreenStrength += global.dt / 40;
+			camera_obj.blackscreenStrength += (global.dt / 40) * camera_obj.textSpeed;
 		}
 		
 		if (camera_obj.blackscreenStrength > 0.98) {
 			startScene10BlackTimer = true;
 			camera_obj.drawBlackborders = false;
+			
+			camera_obj.follow = player_obj;
+			if (instance_exists(cindy_obj)) {
+				instance_destroy(cindy_obj);
+			}
 		}
 		
 		if (startScene10BlackTimer) {
 			scene10BlackTimer -= global.dt * camera_obj.textSpeed;
 			if (scene10BlackTimer < 0) {
-				camera_obj.blackscreenStrength -= global.dt / 40;
+				camera_obj.blackscreenStrength -= (global.dt / 40) * camera_obj.textSpeed;
 				
 				if (camera_obj.blackscreenStrength < 0.05) {
 					
