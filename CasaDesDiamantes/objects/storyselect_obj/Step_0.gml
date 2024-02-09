@@ -34,6 +34,9 @@ if (pushDelay < 0) {
 				case 0:
 					global.storyAct = 0;
 					global.cutsceneCasinoIntroDone = false;
+					global.introDialogueVIPDone = false;
+					global.introDialogueCindyDone = false;
+					global.introDialogueOutOfRoomDone = false;
 					global.cupyUpgrade1 = false;
 					global.cupyUpgrade2 = false;
 					room_goto(level_Casino);

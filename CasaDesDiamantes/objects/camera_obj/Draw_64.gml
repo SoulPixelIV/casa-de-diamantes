@@ -145,6 +145,10 @@ if (string_char_at(dialogue[dialogueLine], 1) == "<")
 	character = vip2_obj;
 	follow = vip2_obj; 
 }
+if (string_char_at(dialogue[dialogueLine], 1) == "´")
+{
+	character = customStoryTarget_obj;
+}
 
 //Windows
 if (string_char_at(dialogue[dialogueLine], 1) == "W")
@@ -193,7 +197,7 @@ if (drawText && !showWindowMenu)
 			draw_sprite_ext(dialogBorder_spr, 0, (character.x - x) + global.xScreenSize / 2, (character.y - y) - 42 + global.yScreenSize / 2, 2 + string_length(dialogueStripped) / 3, 1.5, 0, c_aqua, 1);
 		} else if (character == casinobunny_obj) {
 			draw_sprite_ext(dialogBorder_spr, 0, (character.x - x) + global.xScreenSize / 2, (character.y - y) - 42 + global.yScreenSize / 2, 2 + string_length(dialogueStripped) / 3, 1.5, 0, make_color_rgb(255, 215, 215), 1);
-		} else if (character == vip_obj || character == vip2_obj) {
+		} else if (character == vip_obj || character == vip2_obj || character == customStoryTarget_obj) {
 			draw_sprite_ext(dialogBorder_spr, 0, (character.x - x) + global.xScreenSize / 2, (character.y - y) - 42 + global.yScreenSize / 2, 2 + string_length(dialogueStripped) / 3, 1.5, 0, c_lime, 1);
 		}
 	

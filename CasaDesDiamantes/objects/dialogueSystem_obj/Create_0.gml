@@ -11,6 +11,7 @@ scene7 = false;
 scene8 = false;
 scene9 = false;
 scene10 = false;
+scene11 = false;
 
 //Dialogue Markers
 scene1Low = 0;
@@ -33,6 +34,8 @@ scene9Low = 56;
 scene9High = 63;
 scene10Low = 64;
 scene10High = 72;
+scene11Low = 73;
+scene11High = 75;
 
 //Dialogue Text
 //!!!ALWAYS 1 FREE SPACE BETWEEN SCENES
@@ -44,7 +47,8 @@ scene10High = 72;
 // ] = Bartender
 // [ = Bunnygirl
 // ^ = VIP
-// <= VIP2
+// < = VIP2
+// ´ = CustomTarget
 // W[Number] = Open specific window menu
 
 //Scene 1
@@ -86,7 +90,7 @@ dialogue[19] = "";
 
 //Scene 4 Cindy Intro Upgrade Dialogue
 startScene4Timer = false;
-scene4Timer = 6200;
+scene4Timer = 5830;
 scene4TimerSave = scene4Timer;
 
 dialogue[20] = "*Steph I have a present for you.";
@@ -116,7 +120,7 @@ dialogue[37] = "^Are you up for it?";
 dialogue[38] = "#Shoot me the details.";
 dialogue[39] = "^Straight to the point!";
 dialogue[40] = "^We don't know what the target looks like by now,..";
-dialogue[41] = "^..but we do know it ran into the woods a day ago, never to be seen again";
+dialogue[41] = "^..but we do know it ran into the woods a day ago, never to be seen again.";
 dialogue[42] = "^You'd best start looking there.";
 dialogue[43] = "#Alright, see you in an hour.";
 dialogue[44] = "";
@@ -187,3 +191,12 @@ dialogue[69] = "#I won't answer questions you don't even remember asking..";
 dialogue[70] = "#..but sure, lead the way!";
 dialogue[71] = "$Come on, you'll love what i did to the place!";
 dialogue[72] = "";
+
+//Scene 11 VIP Out Of Room Interaction
+startScene11Timer = false;
+scene11Timer = 800;
+scene11TimerSave = scene11Timer;
+
+dialogue[73] = "´...";
+dialogue[74] = "´cocky.";
+dialogue[75] = "";

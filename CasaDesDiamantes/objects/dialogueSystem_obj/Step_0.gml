@@ -42,6 +42,7 @@ if (startScene1Timer) {
 					scene1BlackTimer = scene1BlackTimerSave;
 					startScene1BlackTimer = false;
 					inCutscene = false;
+					camera_obj.follow = player_obj;
 					global.cutsceneCasinoIntroDone = true;
 					save_scr();
 				}
@@ -71,6 +72,7 @@ if (startScene2Timer) {
 	if (scene2Timer < 0) {
 		camera_obj.showWindowMenu = true;
 		camera_obj.windowType = 1;
+		camera_obj.follow = player_obj;
 		scene2Timer = scene1BlackTimerSave;
 	}
 }
@@ -88,6 +90,7 @@ if (scene3)
 		camera_obj.drawText = true;
 	}
 	scene3 = false;
+	camera_obj.follow = player_obj;
 }
 
 //Scene 4
@@ -116,6 +119,7 @@ if (startScene4Timer) {
 		cindy2_obj.dialogueTriggered = false;
 		player_obj.movement = true;
 		inCutscene = false;
+		camera_obj.follow = player_obj;
 		camera_obj.drawBlackborders = false;
 	}
 }
@@ -145,6 +149,7 @@ if (startScene5Timer) {
 		vip_obj.dialogueTriggered = false;
 		player_obj.movement = true;
 		inCutscene = false;
+		camera_obj.follow = player_obj;
 		camera_obj.drawBlackborders = false;
 		global.act2Unlocked = true;
 		global.introDialogueVIPDone = true;
@@ -174,6 +179,7 @@ if (startScene6Timer) {
 	if (scene6Timer < 0) {
 		scene6Timer = scene6TimerSave;
 		startScene6Timer = false;
+		camera_obj.follow = player_obj;
 		cindy2_obj.introDialogueDone = true;
 		cindy2_obj.dialogueTriggered = false;
 	}
@@ -205,6 +211,7 @@ if (startScene7Timer) {
 		player_obj.movement = true;
 		camera_obj.drawBlackborders = false;
 		inCutscene = false;
+		camera_obj.follow = player_obj;
 	}
 }
 
@@ -259,8 +266,8 @@ if (startScene8Timer) {
 					scene8BlackTimer = scene8BlackTimerSave;
 					startScene8BlackTimer = false;
 					inCutscene = false;
+					camera_obj.follow = player_obj;
 					global.cutsceneCasinoIntroDone = true;
-					save_scr();
 				}
 			}
 		}
@@ -323,8 +330,8 @@ if (startScene9Timer) {
 					scene9BlackTimer = scene9BlackTimerSave;
 					startScene9BlackTimer = false;
 					inCutscene = false;
+					camera_obj.follow = player_obj;
 					global.cutsceneCasinoIntroDone = true;
-					save_scr();
 				}
 			}
 		}
@@ -379,9 +386,42 @@ if (startScene10Timer) {
 					scene10BlackTimer = scene10BlackTimerSave;
 					startScene10BlackTimer = false;
 					inCutscene = false;
+					camera_obj.follow = player_obj;
 					save_scr();
 				}
 			}
 		}
+	}
+}
+
+//Scene 11
+if (scene11)
+{
+	//inCutscene = true;
+	startScene11Timer = true;
+	if (!camera_obj.drawText)
+	{
+		for (i = scene11Low; i < scene11High + 1; i++)
+		{
+			camera_obj.dialogue[i] = dialogue[i];
+		}
+		camera_obj.dialogueLine = scene11Low;
+		camera_obj.drawText = true;
+	}
+	scene11 = false;
+}
+
+if (startScene11Timer) {
+	scene11Timer -= global.dt * camera_obj.textSpeed;
+	
+	if (scene11Timer < 0) {				
+		//player_obj.movement = true;
+		//camera_obj.drawBlackborders = false;
+		scene11Timer = scene11TimerSave;
+		startScene11Timer = false;
+		//inCutscene = false;
+		//camera_obj.follow = player_obj;
+		global.introDialogueOutOfRoomDone = true;
+		save_scr();
 	}
 }

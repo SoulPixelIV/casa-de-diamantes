@@ -98,6 +98,7 @@ global.warpzone1RewardGiven = false;
 global.drawMission = false;
 global.introDialogueCindyDone = false;
 global.introDialogueVIPDone = false;
+global.introDialogueOutOfRoomDone = false;
 
 global.hat = choose(noone);
 global.top1 = choose(noone);
