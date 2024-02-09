@@ -103,38 +103,47 @@ if (instance_exists(player_obj) && !noHUD)
 if (string_char_at(dialogue[dialogueLine], 1) == "#")
 {
 	character = player_obj;
+	follow = player_obj;
 }
 if (string_char_at(dialogue[dialogueLine], 1) == "@")
 {
 	character = shopWorker_obj;
+	follow = shopWorker_obj;
 }
 if (string_char_at(dialogue[dialogueLine], 1) == "$")
 {
 	character = cindy_obj;
+	follow = cindy_obj; 
 }
 if (string_char_at(dialogue[dialogueLine], 1) == "*")
 {
 	character = cindy2_obj;
+	follow = cindy2_obj; 
 }
 if (string_char_at(dialogue[dialogueLine], 1) == "%")
 {
 	character = cutieplus_obj;
+	follow = cutieplus_obj; 
 }
 if (string_char_at(dialogue[dialogueLine], 1) == "]")
 {
 	character = bartender_obj;
+	follow = bartender_obj; 
 }
 if (string_char_at(dialogue[dialogueLine], 1) == "[")
 {
 	character = casinobunny_obj;
+	follow = casinobunny_obj; 
 }
 if (string_char_at(dialogue[dialogueLine], 1) == "^")
 {
 	character = vip_obj;
+	follow = vip_obj; 
 }
 if (string_char_at(dialogue[dialogueLine], 1) == "<")
 {
 	character = vip2_obj;
+	follow = vip2_obj; 
 }
 
 //Windows
