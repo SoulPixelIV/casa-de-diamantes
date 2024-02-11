@@ -122,8 +122,7 @@ if (string_char_at(dialogue[dialogueLine], 1) == "*")
 }
 if (string_char_at(dialogue[dialogueLine], 1) == "%")
 {
-	character = cutieplus_obj;
-	follow = cutieplus_obj; 
+	character = cutieplusSteph_obj;
 }
 if (string_char_at(dialogue[dialogueLine], 1) == "]")
 {
@@ -193,6 +192,8 @@ if (drawText && !showWindowMenu)
 			draw_sprite_ext(dialogBorder_spr, 0, (character.x - x) + global.xScreenSize / 2, (character.y - y) - 42 + global.yScreenSize / 2, 2 + string_length(dialogueStripped) / 3, 1.5, 0, make_color_rgb(255, 215, 0), 1);
 		} else if (character == cindy_obj || character == cindy2_obj) {
 			draw_sprite_ext(dialogBorder_spr, 0, (character.x - x) + global.xScreenSize / 2, (character.y - y) - 42 + global.yScreenSize / 2, 2 + string_length(dialogueStripped) / 3, 1.5, 0, c_purple, 1);
+		} else if (character == cutieplusSteph_obj) {
+			draw_sprite_ext(dialogBorder_spr, 0, (character.x - x) + global.xScreenSize / 2, (character.y - y) - 22 + global.yScreenSize / 2, 2 + string_length(dialogueStripped) / 3, 1.5, 0, c_purple, 1);
 		} else if (character == bartender_obj) {
 			draw_sprite_ext(dialogBorder_spr, 0, (character.x - x) + global.xScreenSize / 2, (character.y - y) - 42 + global.yScreenSize / 2, 2 + string_length(dialogueStripped) / 3, 1.5, 0, c_aqua, 1);
 		} else if (character == casinobunny_obj) {
@@ -201,10 +202,17 @@ if (drawText && !showWindowMenu)
 			draw_sprite_ext(dialogBorder_spr, 0, (character.x - x) + global.xScreenSize / 2, (character.y - y) - 42 + global.yScreenSize / 2, 2 + string_length(dialogueStripped) / 3, 1.5, 0, c_lime, 1);
 		}
 	
-		draw_text((character.x - x) + global.xScreenSize / 2 - 1, (character.y - y) - 46 + 1 + global.yScreenSize / 2, string_copy(dialogueStripped, 1, string_length(dialogue[dialogueLine])));
-		draw_set_color(make_color_rgb(255, 215, 0));
-		draw_text((character.x - x) + global.xScreenSize / 2, (character.y - y) - 46 + global.yScreenSize / 2, string_copy(dialogueStripped, 1, string_length(dialogue[dialogueLine])));
-		draw_set_halign(fa_left);
+		if (character == cutieplusSteph_obj) {
+			draw_text((character.x - x) + global.xScreenSize / 2 - 1, (character.y - y) - 26 + 1 + global.yScreenSize / 2, string_copy(dialogueStripped, 1, string_length(dialogue[dialogueLine])));
+			draw_set_color(make_color_rgb(255, 215, 0));
+			draw_text((character.x - x) + global.xScreenSize / 2, (character.y - y) - 26 + global.yScreenSize / 2, string_copy(dialogueStripped, 1, string_length(dialogue[dialogueLine])));
+			draw_set_halign(fa_left);
+		} else {
+			draw_text((character.x - x) + global.xScreenSize / 2 - 1, (character.y - y) - 46 + 1 + global.yScreenSize / 2, string_copy(dialogueStripped, 1, string_length(dialogue[dialogueLine])));
+			draw_set_color(make_color_rgb(255, 215, 0));
+			draw_text((character.x - x) + global.xScreenSize / 2, (character.y - y) - 46 + global.yScreenSize / 2, string_copy(dialogueStripped, 1, string_length(dialogue[dialogueLine])));
+			draw_set_halign(fa_left);
+		}
 	}
 
 	//Sentence incomplete
@@ -1598,10 +1606,12 @@ if (dialogueSystem_obj.inCutscene && !camera_obj.drawElevatorSign && !showWindow
 	draw_set_color(c_black);
 }
 	
-if (keyboard_check(vk_space) || gamepad_button_check(4, gp_face1) || gamepad_button_check(0, gp_face1)) {
-	textSpeed = 3;
-} else {
-	textSpeed = 1;
+if (character != cutieplusSteph_obj) {
+	if (keyboard_check(vk_space) || gamepad_button_check(4, gp_face1) || gamepad_button_check(0, gp_face1)) {
+		textSpeed = 3;
+	} else {
+		textSpeed = 1;
+	}
 }
 
 //Save Icon

@@ -12,6 +12,11 @@ scene8 = false;
 scene9 = false;
 scene10 = false;
 scene11 = false;
+scene12 = false;
+scene13 = false;
+scene14 = false;
+scene15 = false;
+scene16 = false;
 
 //Dialogue Markers
 scene1Low = 0;
@@ -36,6 +41,16 @@ scene10Low = 64;
 scene10High = 72;
 scene11Low = 73;
 scene11High = 75;
+scene12Low = 76;
+scene12High = 80;
+scene13Low = 81;
+scene13High = 82;
+scene14Low = 83;
+scene14High = 84;
+scene15Low = 85;
+scene15High = 87;
+scene16Low = 88;
+scene16High = 90;
 
 //Dialogue Text
 //!!!ALWAYS 1 FREE SPACE BETWEEN SCENES
@@ -200,3 +215,49 @@ scene11TimerSave = scene11Timer;
 dialogue[73] = "´...";
 dialogue[74] = "´cocky.";
 dialogue[75] = "";
+
+//Scene 12 CuPy Dialogue 1
+startScene12Timer = false;
+scene12Timer = 2400;
+scene12TimerSave = scene12Timer;
+
+dialogue[76] = "%*bzzzzrr*";
+dialogue[77] = "%Steph, It's me Cindy!";
+dialogue[78] = "%I can collect data and comunicate with you through CuPy.";
+dialogue[79] = "%I will try my best to support you on your mission!";
+dialogue[80] = "";
+
+//Scene 13 CuPy Dialogue 2
+startScene13Timer = false;
+scene13Timer = 600;
+scene13TimerSave = scene13Timer;
+
+dialogue[81] = "%Nice! The red keycard!";
+dialogue[82] = "";
+
+//Scene 14 CuPy Dialogue 3
+startScene14Timer = false;
+scene14Timer = 800;
+scene14TimerSave = scene14Timer;
+
+dialogue[83] = "%Huh, we could try to find the key.";
+dialogue[84] = "";
+
+//Scene 15 CuPy Dialogue 4
+startScene15Timer = false;
+scene15Timer = 1200;
+scene15TimerSave = scene15Timer;
+
+dialogue[85] = "%Oh, this looks like a maze..";
+dialogue[86] = "%Let's try to find the red keycard.";
+dialogue[87] = "";
+
+//Scene 16 CuPy Dialogue 5
+startScene16Timer = false;
+scene16Timer = 1200;
+scene16TimerSave = scene16Timer;
+
+dialogue[88] = "%Do we checkout ";
+dialogue[89] = "%Let's try to find the red keycard.";
+dialogue[90] = "";
+

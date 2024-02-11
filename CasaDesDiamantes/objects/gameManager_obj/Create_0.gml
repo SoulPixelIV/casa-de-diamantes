@@ -99,6 +99,11 @@ global.drawMission = false;
 global.introDialogueCindyDone = false;
 global.introDialogueVIPDone = false;
 global.introDialogueOutOfRoomDone = false;
+global.cupyDialogue1Done = false;
+global.cupyDialogue2Done = false;
+global.cupyDialogue3Done = false;
+global.cupyDialogue4Done = false;
+global.cupyDialogue5Done = false;
 
 global.hat = choose(noone);
 global.top1 = choose(noone);

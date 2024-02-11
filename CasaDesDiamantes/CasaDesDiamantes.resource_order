@@ -1453,6 +1453,7 @@
     {"name":"maskAnimationFunctions","order":2,"path":"scripts/maskAnimationFunctions/maskAnimationFunctions.yy",},
     {"name":"plantBossBackground_obj","order":144,"path":"objects/plantBossBackground_obj/plantBossBackground_obj.yy",},
     {"name":"smokingTopSpin_spr","order":2,"path":"sprites/smokingTopSpin_spr/smokingTopSpin_spr.yy",},
+    {"name":"cupyDialogueTrigger_obj","order":185,"path":"objects/cupyDialogueTrigger_obj/cupyDialogueTrigger_obj.yy",},
     {"name":"playerArmEmptyNoClothes_spr","order":53,"path":"sprites/playerArmEmptyNoClothes_spr/playerArmEmptyNoClothes_spr.yy",},
     {"name":"neural_obj","order":5,"path":"objects/neural_obj/neural_obj.yy",},
     {"name":"Effects","order":20,"path":"scripts/Effects/Effects.yy",},

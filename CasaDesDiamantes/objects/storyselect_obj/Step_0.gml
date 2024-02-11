@@ -39,6 +39,11 @@ if (pushDelay < 0) {
 					global.introDialogueOutOfRoomDone = false;
 					global.cupyUpgrade1 = false;
 					global.cupyUpgrade2 = false;
+					global.cupyDialogue1Done = false;
+					global.cupyDialogue2Done = false;
+					global.cupyDialogue3Done = false;
+					global.cupyDialogue4Done = false;
+					global.cupyDialogue5Done = false;
 					room_goto(level_Casino);
 					global.lastCheckpoint = noone;
 				break;

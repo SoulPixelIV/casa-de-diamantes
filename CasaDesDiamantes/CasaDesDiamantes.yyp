@@ -1710,6 +1710,7 @@
     {"id":{"name":"glitterTop_spr","path":"sprites/glitterTop_spr/glitterTop_spr.yy",},},
     {"id":{"name":"smokingTopSpin_spr","path":"sprites/smokingTopSpin_spr/smokingTopSpin_spr.yy",},},
     {"id":{"name":"cutscene0_spr","path":"sprites/cutscene0_spr/cutscene0_spr.yy",},},
+    {"id":{"name":"cupyDialogueTrigger_obj","path":"objects/cupyDialogueTrigger_obj/cupyDialogueTrigger_obj.yy",},},
     {"id":{"name":"playerArmEmptyNoClothes_spr","path":"sprites/playerArmEmptyNoClothes_spr/playerArmEmptyNoClothes_spr.yy",},},
     {"id":{"name":"neural_obj","path":"objects/neural_obj/neural_obj.yy",},},
     {"id":{"name":"Effects","path":"scripts/Effects/Effects.yy",},},

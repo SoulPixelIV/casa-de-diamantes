@@ -381,6 +381,7 @@ if (startScene10Timer) {
 					
 					player_obj.movement = true;
 					camera_obj.drawBlackborders = false;
+					camera_obj.follow = player_obj;
 					scene10Timer = scene10TimerSave;
 					startScene10Timer = false;
 					scene10BlackTimer = scene10BlackTimerSave;
@@ -422,6 +423,166 @@ if (startScene11Timer) {
 		//inCutscene = false;
 		//camera_obj.follow = player_obj;
 		global.introDialogueOutOfRoomDone = true;
+		save_scr();
+	}
+}
+
+//Scene 12
+if (scene12)
+{
+	//inCutscene = true;
+	startScene12Timer = true;
+	if (!camera_obj.drawText)
+	{
+		for (i = scene12Low; i < scene12High + 1; i++)
+		{
+			camera_obj.dialogue[i] = dialogue[i];
+		}
+		camera_obj.dialogueLine = scene12Low;
+		camera_obj.drawText = true;
+	}
+	scene12 = false;
+}
+
+if (startScene12Timer) {
+	scene12Timer -= global.dt * camera_obj.textSpeed;
+	
+	if (scene12Timer < 0) {				
+		//player_obj.movement = true;
+		//camera_obj.drawBlackborders = false;
+		scene12Timer = scene12TimerSave;
+		startScene12Timer = false;
+		//inCutscene = false;
+		//camera_obj.follow = player_obj;
+		global.cupyDialogue1Done = true;
+		save_scr();
+	}
+}
+
+//Scene 13
+if (scene13)
+{
+	//inCutscene = true;
+	startScene13Timer = true;
+	if (!camera_obj.drawText)
+	{
+		for (i = scene13Low; i < scene13High + 1; i++)
+		{
+			camera_obj.dialogue[i] = dialogue[i];
+		}
+		camera_obj.dialogueLine = scene13Low;
+		camera_obj.drawText = true;
+	}
+	scene13 = false;
+}
+
+if (startScene13Timer) {
+	scene13Timer -= global.dt * camera_obj.textSpeed;
+	
+	if (scene13Timer < 0) {				
+		//player_obj.movement = true;
+		//camera_obj.drawBlackborders = false;
+		scene13Timer = scene13TimerSave;
+		startScene13Timer = false;
+		//inCutscene = false;
+		//camera_obj.follow = player_obj;
+		global.cupyDialogue2Done = true;
+		save_scr();
+	}
+}
+
+//Scene 14
+if (scene14)
+{
+	//inCutscene = true;
+	startScene14Timer = true;
+	if (!camera_obj.drawText)
+	{
+		for (i = scene14Low; i < scene14High + 1; i++)
+		{
+			camera_obj.dialogue[i] = dialogue[i];
+		}
+		camera_obj.dialogueLine = scene14Low;
+		camera_obj.drawText = true;
+	}
+	scene14 = false;
+}
+
+if (startScene14Timer) {
+	scene14Timer -= global.dt * camera_obj.textSpeed;
+	
+	if (scene14Timer < 0) {				
+		//player_obj.movement = true;
+		//camera_obj.drawBlackborders = false;
+		scene14Timer = scene14TimerSave;
+		startScene14Timer = false;
+		//inCutscene = false;
+		//camera_obj.follow = player_obj;
+		global.cupyDialogue3Done = true;
+		save_scr();
+	}
+}
+
+//Scene 15
+if (scene15)
+{
+	//inCutscene = true;
+	startScene15Timer = true;
+	if (!camera_obj.drawText)
+	{
+		for (i = scene15Low; i < scene15High + 1; i++)
+		{
+			camera_obj.dialogue[i] = dialogue[i];
+		}
+		camera_obj.dialogueLine = scene15Low;
+		camera_obj.drawText = true;
+	}
+	scene15 = false;
+}
+
+if (startScene15Timer) {
+	scene15Timer -= global.dt * camera_obj.textSpeed;
+	
+	if (scene15Timer < 0) {				
+		//player_obj.movement = true;
+		//camera_obj.drawBlackborders = false;
+		scene15Timer = scene15TimerSave;
+		startScene15Timer = false;
+		//inCutscene = false;
+		//camera_obj.follow = player_obj;
+		global.cupyDialogue4Done = true;
+		save_scr();
+	}
+}
+
+//Scene 16
+if (scene16)
+{
+	//inCutscene = true;
+	startScene16Timer = true;
+	if (!camera_obj.drawText)
+	{
+		for (i = scene16Low; i < scene16High + 1; i++)
+		{
+			camera_obj.dialogue[i] = dialogue[i];
+		}
+		camera_obj.dialogueLine = scene16Low;
+		camera_obj.drawText = true;
+	}
+	scene16 = false;
+}
+
+if (startScene16Timer) {
+	scene16Timer -= global.dt * camera_obj.textSpeed;
+	
+	if (scene16Timer < 0) {				
+		//player_obj.movement = true;
+		//camera_obj.drawBlackborders = false;
+		scene16Timer = scene16TimerSave;
+		startScene16Timer = false;
+		//inCutscene = false;
+		//camera_obj.follow = player_obj;
+		global.cupyDialogue5Done = true;
 		save_scr();
 	}
 }
