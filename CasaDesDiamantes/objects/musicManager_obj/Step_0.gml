@@ -292,6 +292,19 @@ if (act2MusicOn && !act2MusicStarted) {
 	forestL2 = audio_play_sound_on(musicEmitter, birchL2, 1, 1);
 	forestL3 = audio_play_sound_on(musicEmitter, birchL3, 1, 1);
 	
+	if (audio_is_playing(dressedToKillSTEM_msc)) {
+		audio_stop_sound(dressedToKillSTEM_msc);
+	}
+	if (audio_is_playing(dressedToKillL3_msc)) {
+		audio_stop_sound(dressedToKillL3_msc);
+	}
+	if (audio_is_playing(dressedToKillL2_msc)) {
+		audio_stop_sound(dressedToKillL2_msc);
+	}
+	if (audio_is_playing(dressedToKillL1_msc)) {
+		audio_stop_sound(dressedToKillL1_msc);
+	}
+	
 	audio_sound_gain(forestL1, 0, 0);
 	audio_sound_gain(forestL2, 0, 0);
 	audio_sound_gain(forestL3, 0, 0);
