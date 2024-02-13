@@ -377,11 +377,9 @@ if (startScene10Timer) {
 			if (scene10BlackTimer < 0) {
 				camera_obj.blackscreenStrength -= (global.dt / 40) * camera_obj.textSpeed;
 				
-				if (camera_obj.blackscreenStrength < 0.05) {
-					
+				if (camera_obj.blackscreenStrength < 0.05) {		
 					player_obj.movement = true;
 					camera_obj.drawBlackborders = false;
-					camera_obj.follow = player_obj;
 					scene10Timer = scene10TimerSave;
 					startScene10Timer = false;
 					scene10BlackTimer = scene10BlackTimerSave;

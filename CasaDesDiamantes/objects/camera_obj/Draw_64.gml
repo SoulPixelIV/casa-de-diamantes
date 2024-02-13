@@ -238,6 +238,8 @@ if (drawText && !showWindowMenu)
 			{
 				drawText = false;
 				dialogueLine = 0;
+				character = player_obj;
+				follow = player_obj;
 			}
 			textDelay = textDelaySave;
 		}
