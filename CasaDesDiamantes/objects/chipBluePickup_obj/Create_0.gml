@@ -8,3 +8,18 @@ gravityStrength = -0.12;
 despawnTimer = 3000;
 
 invTimer = random_range(90, 150);
+
+//Check if Stuck
+if (!place_free(x, y)) {
+	//Check for free space to teleport to
+	if (place_free(x + 8, y)) {
+		x += 8;
+	} else if (place_free(x - 8, y)) {
+		x -= 8;
+	} else if (place_free(x, y + 8)) {
+		y += 8;
+	} else if (place_free(x, y - 8)) {
+		y -= 8;
+	}
+}
+	
