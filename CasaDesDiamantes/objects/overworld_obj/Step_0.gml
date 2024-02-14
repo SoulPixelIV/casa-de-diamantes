@@ -28,7 +28,7 @@ if (menu == 1) {
 	options = 2;
 }
 if (menu == 2) {
-	options = 5;
+	options = 6;
 }
 if (menu == 3) {
 	options = 4;
