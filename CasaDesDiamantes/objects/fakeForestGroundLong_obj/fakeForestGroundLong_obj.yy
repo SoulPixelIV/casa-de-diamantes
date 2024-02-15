@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "damageHitboxMoving_obj",
+  "name": "fakeForestGroundLong_obj",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
@@ -9,8 +9,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Hitboxes",
-    "path": "folders/Hitboxes.yy",
+    "name": "Destructible",
+    "path": "folders/Objects/Destructible.yy",
   },
   "parentObjectId": null,
   "persistent": false,
@@ -27,10 +27,10 @@
   "physicsShapePoints": [],
   "physicsStartAwake": true,
   "properties": [],
-  "solid": false,
+  "solid": true,
   "spriteId": {
-    "name": "rose_spr",
-    "path": "sprites/rose_spr/rose_spr.yy",
+    "name": "fakeForestGroundLong_spr",
+    "path": "sprites/fakeForestGroundLong_spr/fakeForestGroundLong_spr.yy",
   },
   "spriteMaskId": null,
   "visible": true,

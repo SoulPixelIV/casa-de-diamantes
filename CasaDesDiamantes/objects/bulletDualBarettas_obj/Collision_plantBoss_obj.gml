@@ -3,7 +3,7 @@ if (other.startBattle) {
 	if (!dealtDamage && instance_exists(enemyTarget))
 	{
 		enemyTarget.damageTint = true;
-		enemyTarget.hp -= 1.3;
+		enemyTarget.hp -= 0.7;
 		if (global.dualBarettasUpgrade1 && !dealtFreezeDamage) {
 			enemyTarget.freezeRes -= 1;
 			dealtFreezeDamage = true;

@@ -8,8 +8,8 @@ startBattle = false;
 frozen = false;
 freezeRes = 9999999;
 
-attackTimer = 1000;
-attackTimer2 = 500;
+attackTimer = 800;
+attackTimer2 = 350;
 
 explosionTimer = 30;
 dropTimer = 8;
