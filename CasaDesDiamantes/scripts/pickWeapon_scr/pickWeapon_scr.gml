@@ -2,7 +2,11 @@ function pickWeapon_scr(argument0) {
 	
 	if (argument0 == 0 && global.currentWeapon != gameManager_obj.pickedWeapon.pistol || argument0 == 1 && global.currentWeapon != gameManager_obj.pickedWeapon.dualBarettas || argument0 == 2 && global.currentWeapon != gameManager_obj.pickedWeapon.shotgun || argument0 == 3 && global.currentWeapon != gameManager_obj.pickedWeapon.silencedMP || argument0 == 4 && global.currentWeapon != gameManager_obj.pickedWeapon.bow)
 	{
-		audio_play_sound(pickup_snd, 1, false);
+		if (instance_exists(player_obj)) {
+			if (player_obj.muteSoundTimer < 0) {
+				audio_play_sound(pickup_snd, 1, false);
+			}
+		}
 	}
 	
 	switch (argument0)

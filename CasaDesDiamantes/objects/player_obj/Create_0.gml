@@ -37,6 +37,7 @@ controllerDirLastInput = 0;
 playerRotation = 0;
 radiation = 0;
 updowndir = 0; //Helper var for dircursor clamp
+muteSoundTimer = 400; //Mute player soundeffects when spawning
 
 //Physics
 gravityStrength = -0.03; //Lower is lower gravity

@@ -10,7 +10,7 @@
   "bitRate": 128,
   "compression": 0,
   "conversionMode": 0,
-  "duration": 0.239014,
+  "duration": 0.234014,
   "parent": {
     "name": "Pickups",
     "path": "folders/Sounds/Pickups.yy",

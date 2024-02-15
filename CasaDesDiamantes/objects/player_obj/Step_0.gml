@@ -76,6 +76,8 @@ if (verspeed < -verspeedMax)
 	verspeed = -verspeedMax;
 }
 
+muteSoundTimer -= global.dt;
+
 if (!inCutscene) {
 	if (movement && !wallJumping && !isDashing)
 	{

@@ -19,10 +19,13 @@ function resetJump_scr() {
 	player_obj.wallJumps = player_obj.wallJumpsSave;
 	player_obj.wallJumpingInAir = false;
 	player_obj.invincible = false;
-	if (!player_obj.landSoundPlayed && !player_obj.inChamber)
+	if (!player_obj.landSoundPlayed && !player_obj.inChamber && player_obj.muteSoundTimer < 0)
 	{
 		audio_play_sound(land_snd, 1, false);
 		audio_play_sound(landmoan_snd, 1, false);
+		player_obj.landSoundPlayed = true;
+	}
+	if (player_obj.muteSoundTimer > 0) {
 		player_obj.landSoundPlayed = true;
 	}
 	if (distance_to_object(sidewaysPlatform_obj) < 2)

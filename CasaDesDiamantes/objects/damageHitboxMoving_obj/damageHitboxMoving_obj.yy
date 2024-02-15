@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "rose_spr",
-    "path": "sprites/rose_spr/rose_spr.yy",
+    "name": "bluestripes_spr",
+    "path": "sprites/bluestripes_spr/bluestripes_spr.yy",
   },
   "spriteMaskId": null,
   "visible": true,
