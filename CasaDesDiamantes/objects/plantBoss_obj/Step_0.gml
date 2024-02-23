@@ -93,6 +93,20 @@ if (startBattle) {
 			if (image_alpha < 0.05) {
 				instance_destroy();
 				instance_destroy(plantBossBackground_obj);
+				instance_destroy(plantBossBackground2_obj);
+				instance_destroy(plantBossBackgroundRing_obj);
+				for (var i = 0; i < instance_number(zombieGirl_obj); i++) {
+					var enemy = instance_find(zombieGirl_obj, i);
+					if (distance_to_object(enemy) < 512) {
+						instance_destroy(enemy);
+					}
+				}
+				for (var i = 0; i < instance_number(plantBossFlower_obj); i++) {
+					var flower = instance_find(plantBossFlower_obj, i);
+					if (instance_exists(flower)) {
+						instance_destroy(flower);
+					}
+				}
 			}
 		}
 	}

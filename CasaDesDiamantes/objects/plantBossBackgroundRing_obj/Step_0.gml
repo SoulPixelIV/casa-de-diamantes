@@ -3,3 +3,5 @@ if (moveToSecondFloor) {
 		y += global.dt;
 	}
 }
+
+image_angle += global.dt / 20;
