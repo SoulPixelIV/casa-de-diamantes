@@ -689,7 +689,7 @@ if (onSpringLadder) {
 	
 	if (key_jump) {
 		jump_scr();
-		verspeed -= global.dt * 1.7;
+		//verspeed -= global.dt * 1.7;
 		onSpringLadderDelay = onSpringLadderDelaySave;
 		onSpringLadder = false;
 		gravityOn = true;

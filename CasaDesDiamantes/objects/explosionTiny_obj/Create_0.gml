@@ -21,7 +21,7 @@ var expSnd = audio_play_sound_on(emitter, explosionTiny_snd, false, 1);
 audio_sound_pitch(expSnd, random_range(0.8, 1));
 if (instance_number(explosionTiny_obj) > 3)
 {
-	audio_sound_gain(expSnd, 0.075, 0);
+	audio_sound_gain(expSnd, 0.6, 0);
 }
 
 screenshake(60, 25, 0.6, id);
