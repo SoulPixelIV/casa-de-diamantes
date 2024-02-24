@@ -105,6 +105,7 @@ global.cupyDialogue2Done = false;
 global.cupyDialogue3Done = false;
 global.cupyDialogue4Done = false;
 global.cupyDialogue5Done = false;
+global.cupyDialogue6Done = false;
 
 global.hat = choose(noone);
 global.top1 = choose(noone);

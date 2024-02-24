@@ -584,3 +584,35 @@ if (startScene16Timer) {
 		save_scr();
 	}
 }
+
+//Scene 17
+if (scene17)
+{
+	//inCutscene = true;
+	startScene17Timer = true;
+	if (!camera_obj.drawText)
+	{
+		for (i = scene17Low; i < scene17High + 1; i++)
+		{
+			camera_obj.dialogue[i] = dialogue[i];
+		}
+		camera_obj.dialogueLine = scene17Low;
+		camera_obj.drawText = true;
+	}
+	scene17 = false;
+}
+
+if (startScene17Timer) {
+	scene17Timer -= global.dt * camera_obj.textSpeed;
+	
+	if (scene17Timer < 0) {				
+		//player_obj.movement = true;
+		//camera_obj.drawBlackborders = false;
+		scene17Timer = scene17TimerSave;
+		startScene17Timer = false;
+		//inCutscene = false;
+		//camera_obj.follow = player_obj;
+		global.cupyDialogue6Done = true;
+		save_scr();
+	}
+}

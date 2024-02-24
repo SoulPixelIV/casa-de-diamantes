@@ -29,4 +29,10 @@ if (instance_exists(cutieplusSteph_obj)) {
 			dialogueTriggered = true;
 		}
 	}
+	if (dialogue == 5) {
+		if (!global.cupyDialogue6Done && !dialogueTriggered) {
+			dialogueSystem_obj.scene17 = true;
+			dialogueTriggered = true;
+		}
+	}
 }
