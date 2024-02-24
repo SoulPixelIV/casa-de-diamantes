@@ -20,6 +20,7 @@ global.drawTutorialInfectionUsed = false;
 global.pushDelay = 60;
 global.pushDelaySave = global.pushDelay;
 global.drunknessLevel = 0;
+global.chromaticLevel = 0;
 global.transitionScreenDest = noone;
 multiplierRun = false;
 
@@ -200,6 +201,8 @@ currVolGlitching = audio_sound_get_gain(glitching_snd);
 currVolImpactGround = audio_sound_get_gain(impactGround_snd);
 currVolPlantGrowing = audio_sound_get_gain(plantGrowing_snd);
 currVolMetalDrop = audio_sound_get_gain(metalDrop_snd);
+currVolAtomicLaser = audio_sound_get_gain(atomicLaser_snd);
+currVolAtomicLaserMuffled = audio_sound_get_gain(atomicLaserMuffled_snd);
 
 currVolInfectedVoice = audio_sound_get_gain(infectedVoice_snd);
 currVolInfectionVoice = audio_sound_get_gain(plagueInfectionVoice_snd);

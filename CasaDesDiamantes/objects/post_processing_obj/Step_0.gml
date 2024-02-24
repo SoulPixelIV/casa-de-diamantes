@@ -52,4 +52,9 @@ if (ppfx_system_exists(ppfx_id)) {
 			ppfx_id.ProfileLoad(act2_profile);
 		}
 	}
+	
+	//Chromatic Filter
+	if (room != warpzone1 && room != warpzone2) {
+		ppfx_id.SetEffectParameter(FX_EFFECT.CHROMATIC_ABERRATION, PP_CHROMABER_INTENSITY, global.chromaticLevel);
+	}
 }

@@ -290,7 +290,7 @@ if (movement && !isZombie && !global.pause && !inCutscene)
 }
 
 //Drunk Filter
-if (room == level_Casino || room == level_CasinoRoof || room == blackjackTable || room == level0 || room == level1 || room == level2 || room == level3 || room == level4 || room == level5A || room == level5B || room == level6 || room == level7 || room == level8 || room == level9 || room == warpzone1 || room == level10) {
+if (room == level_Casino || room == level_CasinoRoof || room == blackjackTable || room == level0 || room == level1 || room == level2 || room == level3 || room == level4 || room == level5A || room == level5B || room == level6 || room == level7 || room == level8 || room == level9 || room == warpzone1 || room == level10 || room == level11 || room == level12 || room == level13 || room == level14 || room == warpzone2) {
 	fil1 = layer_get_fx("DrunkFilter1");
 	fil2 = layer_get_fx("DrunkFilter2");
 	

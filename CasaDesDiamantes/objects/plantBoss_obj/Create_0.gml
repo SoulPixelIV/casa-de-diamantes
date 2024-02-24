@@ -20,6 +20,10 @@ attackTimerSave = attackTimer;
 explosionTimerSave = explosionTimer + random_range(-5, 5);
 dropTimerSave = dropTimer + random_range(-2,2);
 
+//Particles
+toxicEmitter = part_emitter_create(global.partSystem);
+part_emitter_region(global.partSystem, toxicEmitter, x - 320, x + 320, y - 150, y + 210, ps_shape_ellipse, ps_distr_gaussian);
+
 damageTintTimer = 15;
 
 attackTint = false;

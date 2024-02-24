@@ -1,18 +1,17 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "plantBoss_obj",
+  "name": "atomicLaserTrigger_obj",
   "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":{"name":"player_obj","path":"objects/player_obj/player_obj.yy",},"eventNum":0,"eventType":4,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":1,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Decoration",
+    "path": "folders/Objects/Decoration.yy",
   },
   "parentObjectId": null,
   "persistent": false,
@@ -31,9 +30,9 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "eyeVirusBoss_spr",
-    "path": "sprites/eyeVirusBoss_spr/eyeVirusBoss_spr.yy",
+    "name": "cameraViewIcon2_spr",
+    "path": "sprites/cameraViewIcon2_spr/cameraViewIcon2_spr.yy",
   },
   "spriteMaskId": null,
-  "visible": true,
+  "visible": false,
 }

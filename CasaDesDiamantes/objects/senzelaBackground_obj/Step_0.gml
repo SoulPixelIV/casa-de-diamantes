@@ -15,3 +15,8 @@ if (brightTimer < 0)
 	brightTimer = brightTimerSave + random_range(-10, 10);
 	startTimer = startTimerSave + random_range(-10, 10);
 }
+
+if (global.chromaticLevel > 0.5) {
+	sprite_index = senzelaBackgroundBright_spr;
+}
+	

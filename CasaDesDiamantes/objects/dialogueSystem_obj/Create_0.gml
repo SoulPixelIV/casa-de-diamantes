@@ -50,7 +50,7 @@ scene14High = 84;
 scene15Low = 85;
 scene15High = 87;
 scene16Low = 88;
-scene16High = 90;
+scene16High = 89;
 
 //Dialogue Text
 //!!!ALWAYS 1 FREE SPACE BETWEEN SCENES
@@ -254,10 +254,9 @@ dialogue[87] = "";
 
 //Scene 16 CuPy Dialogue 5
 startScene16Timer = false;
-scene16Timer = 1200;
+scene16Timer = 400;
 scene16TimerSave = scene16Timer;
 
-dialogue[88] = "%Do we checkout ";
-dialogue[89] = "%Let's try to find the red keycard.";
-dialogue[90] = "";
+dialogue[88] = "%Oh nice!";
+dialogue[89] = "";
 
