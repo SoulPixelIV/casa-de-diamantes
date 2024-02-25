@@ -64,7 +64,7 @@ if (instance_exists(player_obj))
 	{
 		if (place_meeting(x, y, sniperZone_obj))
 		{
-			//sniperController_obj.enableShooting = true;
+			sniperController_obj.enableShooting = true;
 		}
 		else
 		{

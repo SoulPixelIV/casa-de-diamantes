@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "slotblockTrigger_obj",
+  "name": "slotblockLine_obj",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
   ],
@@ -28,8 +28,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "slotblockGear_spr",
-    "path": "sprites/slotblockGear_spr/slotblockGear_spr.yy",
+    "name": "slotblockLine_spr",
+    "path": "sprites/slotblockLine_spr/slotblockLine_spr.yy",
   },
   "spriteMaskId": null,
   "visible": true,
