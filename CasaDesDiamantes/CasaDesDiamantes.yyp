@@ -1977,6 +1977,8 @@
   ],
   "RoomOrderNodes": [
     {"roomId":{"name":"loadVars","path":"rooms/loadVars/loadVars.yy",},},
+    {"roomId":{"name":"credits","path":"rooms/credits/credits.yy",},},
+    {"roomId":{"name":"mainmenu","path":"rooms/mainmenu/mainmenu.yy",},},
     {"roomId":{"name":"level7","path":"rooms/level7/level7.yy",},},
     {"roomId":{"name":"level14","path":"rooms/level14/level14.yy",},},
     {"roomId":{"name":"level13","path":"rooms/level13/level13.yy",},},
@@ -1986,8 +1988,6 @@
     {"roomId":{"name":"level5A","path":"rooms/level5A/level5A.yy",},},
     {"roomId":{"name":"level11","path":"rooms/level11/level11.yy",},},
     {"roomId":{"name":"level10","path":"rooms/level10/level10.yy",},},
-    {"roomId":{"name":"credits","path":"rooms/credits/credits.yy",},},
-    {"roomId":{"name":"mainmenu","path":"rooms/mainmenu/mainmenu.yy",},},
     {"roomId":{"name":"level6","path":"rooms/level6/level6.yy",},},
     {"roomId":{"name":"upgrademenu","path":"rooms/upgrademenu/upgrademenu.yy",},},
     {"roomId":{"name":"warpzone1","path":"rooms/warpzone1/warpzone1.yy",},},

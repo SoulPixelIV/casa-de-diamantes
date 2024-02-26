@@ -1,1 +1,1 @@
-image_angle += global.dt * 10;
+image_angle += global.dt * 5;

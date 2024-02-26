@@ -1535,8 +1535,8 @@ if (drawPause) {
 		draw_set_alpha(1);
 	} else {
 		draw_set_color(c_black);
-		draw_text(global.xScreenSize / 2 - 1, global.yScreenSize / 2.5 + 1, "Sound Volume [" + string(global.soundVolume) + "]");
-		draw_text(global.xScreenSize / 2 - 1, global.yScreenSize / 2.5 + 16 + 1, "Music Volume [" + string(global.musicVolume) + "]");
+		draw_text(global.xScreenSize / 2 - 1, global.yScreenSize / 2.5 + 1, "Sound Volume [" + string(global.soundVolume) + "%]");
+		draw_text(global.xScreenSize / 2 - 1, global.yScreenSize / 2.5 + 16 + 1, "Music Volume [" + string(global.musicVolume) + "%]");
 		draw_text(global.xScreenSize / 2 - 1, global.yScreenSize / 2.5 + 32 + 1, "Back");
 		draw_set_color(make_color_rgb(255, 215, 0));
 		draw_text(global.xScreenSize / 2, global.yScreenSize / 2.5, "Sound Volume [" + string(global.soundVolume) + "]");
