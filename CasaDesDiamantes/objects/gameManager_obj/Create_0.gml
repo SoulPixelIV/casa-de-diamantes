@@ -24,13 +24,13 @@ global.chromaticLevel = 0;
 global.transitionScreenDest = noone;
 multiplierRun = false;
 
-global.shotgunUpgrade1 = false;
-global.shotgunUpgrade2 = false;
+global.shotgunUpgrade1 = true;
+global.shotgunUpgrade2 = true;
 
-global.dualBarettasUpgrade1 = false;
-global.dualBarettasUpgrade2 = false;
+global.dualBarettasUpgrade1 = true;
+global.dualBarettasUpgrade2 = true;
 
-global.cupyUpgrade1 = false;
+global.cupyUpgrade1 = true;
 global.cupyUpgrade2 = false;
 
 global.reachedCasino = false;
