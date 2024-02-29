@@ -17,6 +17,7 @@
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":{"name":"explosiveMerchant_obj","path":"objects/explosiveMerchant_obj/explosiveMerchant_obj.yy",},"eventNum":0,"eventType":4,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":{"name":"explosiveBarrel_obj","path":"objects/explosiveBarrel_obj/explosiveBarrel_obj.yy",},"eventNum":0,"eventType":4,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":{"name":"slotblockMoving_obj","path":"objects/slotblockMoving_obj/slotblockMoving_obj.yy",},"eventNum":0,"eventType":4,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":{"name":"sniperBoy_obj","path":"objects/sniperBoy_obj/sniperBoy_obj.yy",},"eventNum":0,"eventType":4,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],

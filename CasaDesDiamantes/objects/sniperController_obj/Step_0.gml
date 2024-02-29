@@ -1,4 +1,4 @@
-if (enableShooting && !player_obj.deathActivated)
+if (enableShooting && !player_obj.deathActivated && instance_exists(sniperBoy_obj))
 {
 	if (!positionCrosshair)
 	{

@@ -1,4 +1,4 @@
-if (enableShooting)
+if (enableShooting && instance_exists(sniperBoy_obj))
 {
 	if (shootDelay > 100)
 	{
