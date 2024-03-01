@@ -29,7 +29,6 @@
     {"name":"inst_47228FC5","path":"rooms/level9/level9.yy",},
     {"name":"inst_2F1EB74A","path":"rooms/level9/level9.yy",},
     {"name":"inst_4EEC98D4","path":"rooms/level9/level9.yy",},
-    {"name":"inst_BC1176C","path":"rooms/level9/level9.yy",},
     {"name":"inst_17B9886C","path":"rooms/level9/level9.yy",},
     {"name":"inst_6C7456E9","path":"rooms/level9/level9.yy",},
     {"name":"inst_40ECF42F","path":"rooms/level9/level9.yy",},
@@ -51,11 +50,15 @@
     {"name":"inst_70D8CC7","path":"rooms/level9/level9.yy",},
     {"name":"inst_63F7786B","path":"rooms/level9/level9.yy",},
     {"name":"inst_7959C53A","path":"rooms/level9/level9.yy",},
+    {"name":"inst_7886514D","path":"rooms/level9/level9.yy",},
+    {"name":"inst_571BCE1","path":"rooms/level9/level9.yy",},
+    {"name":"inst_5F918720","path":"rooms/level9/level9.yy",},
+    {"name":"inst_22F6DB76","path":"rooms/level9/level9.yy",},
   ],
   "isDnd": false,
   "layers": [
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Music","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_BC1176C","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"musicBoxSilence_obj","path":"objects/musicBoxSilence_obj/musicBoxSilence_obj.yy",},"properties":[],"rotation":0.0,"scaleX":46.0,"scaleY":35.0,"x":-32.0,"y":-64.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_22F6DB76","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"musicBoxAmbience_obj","path":"objects/musicBoxAmbience_obj/musicBoxAmbience_obj.yy",},"properties":[],"rotation":0.0,"scaleX":31.5,"scaleY":18.5,"x":736.0,"y":320.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":false,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Camera","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_339DA1F3_1_1_1_1_1_2_2","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"camera_obj","path":"objects/camera_obj/camera_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":64.0,"y":32.0,},
@@ -66,6 +69,9 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_56F2E88E_1_1_1_1_1_2_2","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_light_renderer","path":"objects/obj_light_renderer/obj_light_renderer.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":64.0,"y":0.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7A49DBDB_1_1_1_1_1_2_2","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"dialogueSystem_obj","path":"objects/dialogueSystem_obj/dialogueSystem_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":128.0,"y":0.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_6FDF6854_2_2","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"lightningSpawner_obj","path":"objects/lightningSpawner_obj/lightningSpawner_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":192.0,"y":0.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7886514D","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"act2ExitCutsceneTrigger_obj","path":"objects/act2ExitCutsceneTrigger_obj/act2ExitCutsceneTrigger_obj.yy",},"properties":[],"rotation":0.0,"scaleX":5.0,"scaleY":29.875,"x":2467.655,"y":998.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_571BCE1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"cameraTarget_obj","path":"objects/cameraTarget_obj/cameraTarget_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":2592.0,"y":1120.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_5F918720","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"blimpAct2End_obj","path":"objects/blimpAct2End_obj/blimpAct2End_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":3712.0,"y":928.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMREffectLayer","resourceVersion":"1.0","name":"RedFilter","depth":400,"effectEnabled":true,"effectType":"_filter_colourise","gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[
         {"name":"g_Intensity","type":0,"value":"0.3",},

@@ -510,6 +510,7 @@
     {"id":{"name":"zombieSoldierGirlDeath1_spr","path":"sprites/zombieSoldierGirlDeath1_spr/zombieSoldierGirlDeath1_spr.yy",},},
     {"id":{"name":"elevator_spr","path":"sprites/elevator_spr/elevator_spr.yy",},},
     {"id":{"name":"fireballSmall_spr","path":"sprites/fireballSmall_spr/fireballSmall_spr.yy",},},
+    {"id":{"name":"blimpAct2End_obj","path":"objects/blimpAct2End_obj/blimpAct2End_obj.yy",},},
     {"id":{"name":"exclamationmark_spr","path":"sprites/exclamationmark_spr/exclamationmark_spr.yy",},},
     {"id":{"name":"__ppf_sh_render_vhs","path":"shaders/__ppf_sh_render_vhs/__ppf_sh_render_vhs.yy",},},
     {"id":{"name":"enemyTeleportBlockZone_obj","path":"objects/enemyTeleportBlockZone_obj/enemyTeleportBlockZone_obj.yy",},},
@@ -1774,6 +1775,7 @@
     {"id":{"name":"smokingTopDash_spr","path":"sprites/smokingTopDash_spr/smokingTopDash_spr.yy",},},
     {"id":{"name":"spotlightRed_obj","path":"objects/spotlightRed_obj/spotlightRed_obj.yy",},},
     {"id":{"name":"hugeTree2_obj","path":"objects/hugeTree2_obj/hugeTree2_obj.yy",},},
+    {"id":{"name":"act2ExitCutsceneTrigger_obj","path":"objects/act2ExitCutsceneTrigger_obj/act2ExitCutsceneTrigger_obj.yy",},},
     {"id":{"name":"ledSignCocktailsOff_obj","path":"objects/ledSignCocktailsOff_obj/ledSignCocktailsOff_obj.yy",},},
     {"id":{"name":"spotlightPink_obj","path":"objects/spotlightPink_obj/spotlightPink_obj.yy",},},
     {"id":{"name":"chipVioletSide_obj","path":"objects/chipVioletSide_obj/chipVioletSide_obj.yy",},},
@@ -1979,6 +1981,7 @@
   ],
   "RoomOrderNodes": [
     {"roomId":{"name":"loadVars","path":"rooms/loadVars/loadVars.yy",},},
+    {"roomId":{"name":"level9","path":"rooms/level9/level9.yy",},},
     {"roomId":{"name":"level7","path":"rooms/level7/level7.yy",},},
     {"roomId":{"name":"credits","path":"rooms/credits/credits.yy",},},
     {"roomId":{"name":"mainmenu","path":"rooms/mainmenu/mainmenu.yy",},},
@@ -2042,7 +2045,6 @@
     {"roomId":{"name":"cutscene1","path":"rooms/cutscene1/cutscene1.yy",},},
     {"roomId":{"name":"powerplantTest","path":"rooms/powerplantTest/powerplantTest.yy",},},
     {"roomId":{"name":"settings","path":"rooms/settings/settings.yy",},},
-    {"roomId":{"name":"level9","path":"rooms/level9/level9.yy",},},
     {"roomId":{"name":"storySelect","path":"rooms/storySelect/storySelect.yy",},},
   ],
   "TextureGroups": [
