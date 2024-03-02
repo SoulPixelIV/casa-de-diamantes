@@ -36,8 +36,8 @@
   "nineSlice": null,
   "origin": 4,
   "parent": {
-    "name": "No Clothes",
-    "path": "folders/Steph/Steph Sprites/No Clothes.yy",
+    "name": "No ClothesOLD",
+    "path": "folders/Steph/Steph Sprites/No ClothesOLD.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

@@ -141,7 +141,7 @@ if (sprite_index = playerDashReverse_spr || sprite_index = playerDashReverseNude
 	}
 }
 
-if (sprite_index == playerWalkingEquipped_spr || sprite_index == playerWalkingEquippedNude_spr)
+if (sprite_index == playerWalkingEquippedOLD_spr || sprite_index == playerWalkingEquippedNude_spr)
 {
 	if (global.hat == beret_spr)
 	{

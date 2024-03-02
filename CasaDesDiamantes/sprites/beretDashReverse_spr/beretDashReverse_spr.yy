@@ -26,7 +26,7 @@
   "origin": 9,
   "parent": {
     "name": "Beret",
-    "path": "folders/Steph/Clothes/Beret.yy",
+    "path": "folders/Steph/ClothesOLD/Beret.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

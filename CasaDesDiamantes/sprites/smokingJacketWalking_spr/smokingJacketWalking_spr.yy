@@ -29,7 +29,7 @@
   "origin": 4,
   "parent": {
     "name": "SmokingJacket",
-    "path": "folders/Steph/Clothes/SmokingJacket.yy",
+    "path": "folders/Steph/ClothesOLD/SmokingJacket.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

@@ -26,7 +26,7 @@
   "origin": 4,
   "parent": {
     "name": "WarmJacket",
-    "path": "folders/Steph/Clothes/WarmJacket.yy",
+    "path": "folders/Steph/ClothesOLD/WarmJacket.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

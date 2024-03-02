@@ -30,7 +30,7 @@
   "origin": 9,
   "parent": {
     "name": "GlitterTop",
-    "path": "folders/Steph/Clothes/GlitterTop.yy",
+    "path": "folders/Steph/ClothesOLD/GlitterTop.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

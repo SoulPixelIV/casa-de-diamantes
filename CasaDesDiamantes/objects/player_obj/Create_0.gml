@@ -69,6 +69,15 @@ shotgunArmY = 0;
 shotgunArmCurvedX = 0;
 shotgunArmCurvedY = 0;
 
+//Sprites
+playerEquippedSprite = playerEquippedSkin1_spr;
+playerArmEmptySprite = playerArmEmptySkin1_spr;
+playerArmEmpty2Sprite = playerArmEmpty2Skin1_spr;
+playerArmCurvedSprite = playerArmCurvedSkin1_spr;
+playerAimStanceSprite = playerAimStanceSkin1_spr;
+playerWalkingSprite = playerWalkingEquipped_spr;
+playerWalkingEquippedReverse = playerWalkingEquippedReverse_spr;
+
 //Effects
 enemySlowMotionTimer = 100;
 activateTrailEffect = false;

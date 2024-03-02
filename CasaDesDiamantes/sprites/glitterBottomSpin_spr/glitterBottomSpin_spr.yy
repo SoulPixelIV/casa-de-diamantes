@@ -30,7 +30,7 @@
   "origin": 4,
   "parent": {
     "name": "GlitterBottom",
-    "path": "folders/Steph/Clothes/GlitterBottom.yy",
+    "path": "folders/Steph/ClothesOLD/GlitterBottom.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

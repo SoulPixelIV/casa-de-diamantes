@@ -564,7 +564,7 @@ if (!grounded && !isZombie && !flip && !isDashing && !groundCollisionTimerOn && 
 		spin = true;
 		
 		if (jumpspinAim) {
-			sprite_index = playerAimStance_spr;
+			sprite_index = playerAimStanceSprite;
 		} else {
 			if (global.currentWeapon == pickedWeapon.pistol) {
 				if (global.top1 == noone)
@@ -867,29 +867,15 @@ with (gameManager_obj)
 					{
 						if (horspeed != 0 && movement)
 						{
-							if (global.top1 == noone)
-							{
-								if (sign(horspeed) == image_xscale) {
-									sprite_index = playerWalkingEquipped_spr;
-								} else {
-									sprite_index = playerWalkingEquippedReverse_spr;
-								}
-							}
-							else
-							{
-								sprite_index = playerWalkingEquippedNude_spr;
+							if (sign(horspeed) == image_xscale) {
+								sprite_index = playerWalkingSprite;
+							} else {
+								sprite_index = playerWalkingEquippedReverse;
 							}
 						}
 						else
 						{
-							if (global.top1 == noone)
-							{
-								sprite_index = playerEquipped_spr;
-							}
-							else
-							{
-								sprite_index = playerEquippedNude_spr;
-							}
+							sprite_index = playerEquippedSprite;
 						}
 					}
 					else
@@ -1023,14 +1009,7 @@ if (onLadder && !isZombie && !isDashing)
 	{
 		if (global.currentWeapon != unarmed)
 		{
-			if (global.top1 == noone)
-			{
-				sprite_index = playerEquipped_spr;
-			}
-			else
-			{
-				sprite_index = playerEquippedNude_spr;
-			}
+			sprite_index = playerEquippedSprite;
 		}
 		else
 		{
@@ -1510,17 +1489,17 @@ switch (sprite_index)
 	case playerJumpSpinUnequippedNude_spr:
 		animationSpeed = 1.2;
 		break;
-	case playerEquipped_spr:
+	case playerEquippedSprite:
 		animationSpeed = 0.5;
 		break;
 	case playerEquippedNude_spr:
 		animationSpeed = 0.5;
 		break;
-	case playerWalkingEquipped_spr:
-		animationSpeed = 0.9;
+	case playerWalkingSprite:
+		animationSpeed = 1.15;
 		break;
-	case playerWalkingEquippedReverse_spr:
-		animationSpeed = 0.9;
+	case playerWalkingEquippedReverse:
+		animationSpeed = 1.15;
 		break;
 	case playerWalkingEquippedNude_spr:
 		animationSpeed = 0.8;
