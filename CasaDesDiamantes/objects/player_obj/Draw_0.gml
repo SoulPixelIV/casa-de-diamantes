@@ -217,9 +217,12 @@ if (!inChamber) {
 				if (global.currentWeapon == gameManager_obj.pickedWeapon.dualBarettas)
 				{
 					//First arm
-					if (sprite_index == playerWalkingEquipped_spr || sprite_index == playerWalkingEquippedNude_spr || sprite_index == playerWalkingEquippedReverse_spr) {
+					if (sprite_index == playerWalkingEquippedReverse_spr) {
 						draw_sprite_ext(playerDualBarettasWalking_spr, -1, armDBPosX, armDBPosY, 1, -currDir, dirCursor, -1, image_alpha);
 						draw_sprite_ext(playerArmEmptyWalkingSprite, -1, armDBPosX, armDBPosY, 1, -currDir, dirCursor - 14 * -currDir, -1, image_alpha);
+					} else if (sprite_index == playerWalkingEquipped_spr || sprite_index == playerWalkingEquippedNude_spr) {
+						draw_sprite_ext(playerDualBarettasWalkingReverse_spr, -1, armDBPosX, armDBPosY, 1, -currDir, dirCursor, -1, image_alpha);
+						draw_sprite_ext(playerArmEmptyWalkingSpriteReverse, -1, armDBPosX, armDBPosY, 1, -currDir, dirCursor - 14 * -currDir, -1, image_alpha);
 					} else {
 						draw_sprite_ext(playerDualBarettas_spr, -1, armDBPosX, armDBPosY, 1, -currDir, dirCursor, -1, image_alpha);
 						draw_sprite_ext(drawSpriteArm, -1, armDBPosX, armDBPosY, 1, -currDir, dirCursor - 14 * -currDir, -1, image_alpha);
@@ -229,8 +232,10 @@ if (!inChamber) {
 				//SHOTGUN
 				if (global.currentWeapon == gameManager_obj.pickedWeapon.shotgun)
 				{
-					if (sprite_index == playerWalkingEquipped_spr || sprite_index == playerWalkingEquippedNude_spr || sprite_index == playerWalkingEquippedReverse_spr) {
+					if (sprite_index == playerWalkingEquippedReverse_spr) {
 						armSpriteShotgun = playerArmEmptyWalkingSprite;
+					} else if (sprite_index == playerWalkingEquipped_spr || sprite_index == playerWalkingEquippedNude_spr) {
+						armSpriteShotgun = playerArmEmptyWalkingSpriteReverse;
 					} else {
 						armSpriteShotgun = playerArmEmptySprite;
 					}
@@ -439,8 +444,10 @@ if (!inChamber) {
 				//PISTOL
 				if (global.currentWeapon == gameManager_obj.pickedWeapon.pistol)
 				{
-					if (sprite_index == playerWalkingEquipped_spr || sprite_index == playerWalkingEquippedNude_spr || sprite_index == playerWalkingEquippedReverse_spr) {
+					if (sprite_index == playerWalkingEquippedReverse_spr) {
 						draw_sprite_ext(playerPistolWalking_spr, -1, armPistolPosX, armPistolPosY, 1, -currDir, dirCursor, -1, image_alpha);
+					} else if (sprite_index == playerWalkingEquipped_spr || sprite_index == playerWalkingEquippedNude_spr) {
+						draw_sprite_ext(playerPistolWalkingReverse_spr, -1, armPistolPosX, armPistolPosY, 1, -currDir, dirCursor, -1, image_alpha);
 					} else {
 						draw_sprite_ext(playerPistol_spr, -1, armPistolPosX, armPistolPosY, 1, -currDir, dirCursor, -1, image_alpha);
 					}
@@ -450,9 +457,12 @@ if (!inChamber) {
 				if (global.currentWeapon == gameManager_obj.pickedWeapon.dualBarettas)
 				{
 					//Second arm
-					if (sprite_index == playerWalkingEquipped_spr || sprite_index == playerWalkingEquippedNude_spr || sprite_index == playerWalkingEquippedReverse_spr) {
+					if (sprite_index == playerWalkingEquippedReverse_spr) {
 						draw_sprite_ext(playerDualBarettasWalking_spr, -1, armDB2PosX, armDB2PosY, 1, -currDir, dirCursor, -1, image_alpha);
 						draw_sprite_ext(playerArmEmptyWalkingSprite, -1, armDB2PosX, armDB2PosY, 1, -currDir, dirCursor - 14 * -currDir, -1, image_alpha);
+					} else if (sprite_index == playerWalkingEquipped_spr || sprite_index == playerWalkingEquippedNude_spr) {
+						draw_sprite_ext(playerDualBarettasWalkingReverse_spr, -1, armDB2PosX, armDB2PosY, 1, -currDir, dirCursor, -1, image_alpha);
+						draw_sprite_ext(playerArmEmptyWalkingSpriteReverse, -1, armDB2PosX, armDB2PosY, 1, -currDir, dirCursor - 14 * -currDir, -1, image_alpha);
 					} else {
 						draw_sprite_ext(playerDualBarettas_spr, -1, armDB2PosX, armDB2PosY, 1, -currDir, dirCursor, -1, image_alpha);
 						draw_sprite_ext(drawSpriteArm, -1, armDB2PosX, armDB2PosY, 1, -currDir, dirCursor - 14 * -currDir, -1, image_alpha);
@@ -462,9 +472,12 @@ if (!inChamber) {
 				//SHOTGUN
 				if (global.currentWeapon == gameManager_obj.pickedWeapon.shotgun)
 				{
-					if (sprite_index == playerWalkingEquipped_spr || sprite_index == playerWalkingEquippedNude_spr || sprite_index == playerWalkingEquippedReverse_spr) {
+					if (sprite_index == playerWalkingEquippedReverse_spr) {
 						armSpriteCurvedShotgun = playerArmCurvedWalkingSprite;
 						spriteShotgun = playerShotgunWalking_spr;
+					} else if (sprite_index == playerWalkingEquipped_spr || sprite_index == playerWalkingEquippedNude_spr) {
+						armSpriteCurvedShotgun = playerArmCurvedWalkingSpriteReverse;
+						spriteShotgun = playerShotgunWalkingReverse_spr;
 					} else {
 						armSpriteCurvedShotgun = playerArmCurvedSprite;
 						spriteShotgun = playerShotgun_spr;
@@ -528,8 +541,10 @@ if (!inChamber) {
 				//MAIN ARM
 				if (global.currentWeapon != gameManager_obj.pickedWeapon.dualBarettas && global.currentWeapon != gameManager_obj.pickedWeapon.shotgun && global.currentWeapon != gameManager_obj.pickedWeapon.silencedMP)
 				{
-					if (sprite_index == playerWalkingEquipped_spr || sprite_index == playerWalkingEquippedNude_spr || sprite_index == playerWalkingEquippedReverse_spr) {
+					if (sprite_index == playerWalkingEquippedReverse_spr) {
 						draw_sprite_ext(playerArmEmptyWalkingSprite, -1, armMainPosX, armMainPosY, 1, -currDir, dirCursor - 14 * -currDir, -1, image_alpha);
+					} else if (sprite_index == playerWalkingEquipped_spr || sprite_index == playerWalkingEquippedNude_spr) {
+						draw_sprite_ext(playerArmEmptyWalkingSpriteReverse, -1, armMainPosX, armMainPosY, 1, -currDir, dirCursor - 14 * -currDir, -1, image_alpha);
 					} else {
 						draw_sprite_ext(playerArmEmptySprite, -1, armMainPosX, armMainPosY, 1, -currDir, dirCursor - 14 * -currDir, -1, image_alpha);
 					}
