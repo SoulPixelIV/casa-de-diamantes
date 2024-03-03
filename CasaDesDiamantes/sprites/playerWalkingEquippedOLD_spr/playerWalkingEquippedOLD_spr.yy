@@ -30,8 +30,8 @@
   "nineSlice": null,
   "origin": 9,
   "parent": {
-    "name": "Steph Sprites",
-    "path": "folders/Steph/Steph Sprites.yy",
+    "name": "Legacy",
+    "path": "folders/Steph/Steph Sprites/Legacy.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
