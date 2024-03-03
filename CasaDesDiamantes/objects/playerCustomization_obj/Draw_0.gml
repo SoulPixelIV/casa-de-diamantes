@@ -33,7 +33,7 @@ drawSpriteBottom = global.bottomName[customization_obj.currSelectionBottom];
 
 if (drawSpriteArm == noone)
 {
-	drawSpriteArm = playerArmEmpty_spr;
+	drawSpriteArm = playerArmEmptyWalking_spr;
 }
 
 if (global.currentWeapon == gameManager_obj.pickedWeapon.unarmed)

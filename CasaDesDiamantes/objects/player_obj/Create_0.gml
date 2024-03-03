@@ -70,11 +70,13 @@ shotgunArmCurvedX = 0;
 shotgunArmCurvedY = 0;
 
 //Sprites
-playerEquippedSprite = playerEquippedSkin1_spr;
-playerArmEmptySprite = playerArmEmptySkin1_spr;
-playerArmEmpty2Sprite = playerArmEmpty2Skin1_spr;
-playerArmCurvedSprite = playerArmCurvedSkin1_spr;
-playerAimStanceSprite = playerAimStanceSkin1_spr;
+playerEquippedSprite = playerEquipped_spr;
+playerArmEmptySprite = playerArmEmpty_spr;
+playerArmEmptyWalkingSprite = playerArmEmptyWalking_spr;
+playerArmEmpty2Sprite = playerArmEmpty2_spr;
+playerArmCurvedSprite = playerArmCurved_spr;
+playerArmCurvedWalkingSprite = playerArmCurvedWalking_spr;
+playerAimStanceSprite = playerAimStance_spr;
 playerWalkingSprite = playerWalkingEquipped_spr;
 playerWalkingEquippedReverse = playerWalkingEquippedReverse_spr;
 
@@ -159,7 +161,7 @@ scrollDelay = 20;
 startScrollDelay = false;
 playedSoundBowReadying = false;
 laserAimImage = 0;
-armSpriteShotgun = playerArmEmpty_spr;
+armSpriteShotgun = playerArmEmptyWalking_spr;
 armSpriteCurvedShotgun = playerArmCurved_spr;
 spriteShotgun = shotgun_spr;
 pauseDelay = 200;
