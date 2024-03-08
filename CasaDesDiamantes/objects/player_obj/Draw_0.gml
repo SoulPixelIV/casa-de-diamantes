@@ -411,41 +411,6 @@ if (!inChamber) {
 			if (!flip && sprite_index != playerCrouchRoll_spr)
 			{
 				draw_self();
-				if (drawSpriteHat != noone)
-				{
-					draw_sprite_ext(drawSpriteHat, -1, x, y - 20, image_xscale, 1, playerRotation, -1, image_alpha);
-				}
-				if (drawSpriteBottom != noone)
-				{
-					draw_sprite_ext(drawSpriteBottom, -1, x, y, image_xscale, 1, playerRotation, -1, image_alpha);
-				}
-				if (drawSpriteTop1 != noone)
-				{
-					draw_sprite_ext(drawSpriteTop1, -1, x, y, image_xscale, 1, playerRotation, -1, image_alpha);
-				}
-				if (drawSpriteTop2 != noone)
-				{
-					draw_sprite_ext(drawSpriteTop2, -1, x, y, image_xscale, 1, playerRotation, -1, image_alpha);
-				}
-			}
-			else
-			{
-				if (drawSpriteHat != noone)
-				{
-					draw_sprite_ext(drawSpriteHat, 0, originX + lengthdir_x(radius, theta), originY + lengthdir_y(radius, theta), image_xscale, 1, playerRotation, -1, image_alpha);
-				}
-				if (drawSpriteTop1 != noone)
-				{
-					draw_sprite_ext(drawSpriteTop1, 0, originX + lengthdir_x(radiusTop1, theta), originY + lengthdir_y(radiusTop1, theta), image_xscale, 1, playerRotation, -1, image_alpha);
-				}
-				if (drawSpriteTop2 != noone)
-				{
-					draw_sprite_ext(drawSpriteTop2, 0, originX + lengthdir_x(radiusTop1, theta), originY + lengthdir_y(radiusTop1, theta), image_xscale, 1, playerRotation, -1, image_alpha);
-				}
-				if (drawSpriteBottom != noone)
-				{
-					draw_sprite_ext(drawSpriteBottom, 0, originX + lengthdir_x(radiusTop1, theta), originY + lengthdir_y(radiusTop1, theta), image_xscale, 1, playerRotation, -1, image_alpha);
-				}
 			}
 		
 			if (sprite_index != playerShotgunStance_spr && sprite_index != playerDualBarettasStance_spr && sprite_index != playerSilencedMPStance_spr && sprite_index != playerPistolStance_spr && !flip && sprite_index != playerCrouchRoll_spr) {
