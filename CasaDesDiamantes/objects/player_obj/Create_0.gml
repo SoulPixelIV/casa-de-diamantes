@@ -166,6 +166,7 @@ laserAimImage = 0;
 armSpriteShotgun = playerArmEmptyWalking_spr;
 armSpriteCurvedShotgun = playerArmCurved_spr;
 spriteShotgun = shotgun_spr;
+spriteMP = silencedMP_spr;
 pauseDelay = 200;
 pauseDelayStart = false;
 

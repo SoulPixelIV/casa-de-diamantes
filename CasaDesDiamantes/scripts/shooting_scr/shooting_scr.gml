@@ -313,58 +313,60 @@ function shooting_scr(argument0) {
 
 		if (argument0 == "silencedMP")
 		{		
-			instance_create_layer(playerBulletLine_obj.x, playerBulletLine_obj.y, "Instances", bulletSilencedMPSalveSpawner_obj);
+			if (global.silencedMPAmmo > 0) {
+				instance_create_layer(playerBulletLine_obj.x, playerBulletLine_obj.y, "Instances", bulletSilencedMPSalveSpawner_obj);
 		
-			if (!huggingWall && !isDashing)
-			{
-				if (dirCursor > 0 && dirCursor < 90)
+				if (!huggingWall && !isDashing)
 				{
-					if (place_free(x + horspeed * global.dt, y)) {
-						horspeed -= shotJumpStrength / 16;
+					if (dirCursor > 0 && dirCursor < 90)
+					{
+						if (place_free(x + horspeed * global.dt, y)) {
+							horspeed -= shotJumpStrength / 16;
+						}
+						if (place_free(x, y + verspeed * global.dt)) {
+							if (!player_obj.grounded) {
+								verspeed -= shotJumpStrength / 16;
+							}
+						}
 					}
-					if (place_free(x, y + verspeed * global.dt)) {
-						if (!player_obj.grounded) {
-							verspeed -= shotJumpStrength / 16;
+					if (dirCursor < 180 && dirCursor > 90)
+					{
+						if (place_free(x + horspeed * global.dt, y)) {
+							horspeed += shotJumpStrength / 16;
+						}
+						if (place_free(x, y + verspeed * global.dt)) {
+							if (!player_obj.grounded) {
+								verspeed -= shotJumpStrength / 16;
+							}
+						}
+					}
+					if (dirCursor > 180 && dirCursor < 270)
+					{
+						if (place_free(x + horspeed * global.dt, y)) {
+							horspeed += shotJumpStrength / 16;
+						}
+						if (place_free(x, y + verspeed * global.dt)) {
+							if (!player_obj.grounded) {
+								verspeed -= shotJumpStrength / 16;
+							}
+						}
+					}
+					if (dirCursor < 360 && dirCursor > 270)
+					{
+						if (place_free(x + horspeed * global.dt, y)) {
+							horspeed -= shotJumpStrength / 16;
+						}
+						if (place_free(x, y + verspeed * global.dt)) {
+							if (!player_obj.grounded) {
+								verspeed -= shotJumpStrength / 16;
+							}
 						}
 					}
 				}
-				if (dirCursor < 180 && dirCursor > 90)
-				{
-					if (place_free(x + horspeed * global.dt, y)) {
-						horspeed += shotJumpStrength / 16;
-					}
-					if (place_free(x, y + verspeed * global.dt)) {
-						if (!player_obj.grounded) {
-							verspeed -= shotJumpStrength / 16;
-						}
-					}
-				}
-				if (dirCursor > 180 && dirCursor < 270)
-				{
-					if (place_free(x + horspeed * global.dt, y)) {
-						horspeed += shotJumpStrength / 16;
-					}
-					if (place_free(x, y + verspeed * global.dt)) {
-						if (!player_obj.grounded) {
-							verspeed -= shotJumpStrength / 16;
-						}
-					}
-				}
-				if (dirCursor < 360 && dirCursor > 270)
-				{
-					if (place_free(x + horspeed * global.dt, y)) {
-						horspeed -= shotJumpStrength / 16;
-					}
-					if (place_free(x, y + verspeed * global.dt)) {
-						if (!player_obj.grounded) {
-							verspeed -= shotJumpStrength / 16;
-						}
-					}
-				}
+				global.silencedMPCooldown = global.silencedMPCooldownSave;
+				shotZoom = true;
+				player_obj.startShotCooldown = true;
 			}
-			global.silencedMPCooldown = global.silencedMPCooldownSave;
-			shotZoom = true;
-			player_obj.startShotCooldown = true;
 		}
 	}
 }
