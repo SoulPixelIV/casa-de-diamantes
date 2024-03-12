@@ -1993,6 +1993,7 @@
   ],
   "RoomOrderNodes": [
     {"roomId":{"name":"loadVars","path":"rooms/loadVars/loadVars.yy",},},
+    {"roomId":{"name":"level2","path":"rooms/level2/level2.yy",},},
     {"roomId":{"name":"level_Casino","path":"rooms/level_Casino/level_Casino.yy",},},
     {"roomId":{"name":"level9","path":"rooms/level9/level9.yy",},},
     {"roomId":{"name":"level7","path":"rooms/level7/level7.yy",},},
@@ -2022,7 +2023,6 @@
     {"roomId":{"name":"level5B","path":"rooms/level5B/level5B.yy",},},
     {"roomId":{"name":"JANASPECIALLEVEL","path":"rooms/JANASPECIALLEVEL/JANASPECIALLEVEL.yy",},},
     {"roomId":{"name":"level1_SenzelaForest","path":"rooms/level1_SenzelaForest/level1_SenzelaForest.yy",},},
-    {"roomId":{"name":"level2","path":"rooms/level2/level2.yy",},},
     {"roomId":{"name":"enemyTestRoom1","path":"rooms/enemyTestRoom1/enemyTestRoom1.yy",},},
     {"roomId":{"name":"level2_SenzelaForest","path":"rooms/level2_SenzelaForest/level2_SenzelaForest.yy",},},
     {"roomId":{"name":"level0_RoadToCasino","path":"rooms/level0_RoadToCasino/level0_RoadToCasino.yy",},},
