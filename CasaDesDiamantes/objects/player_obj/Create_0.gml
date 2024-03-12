@@ -70,15 +70,15 @@ shotgunArmCurvedX = 0;
 shotgunArmCurvedY = 0;
 
 //Sprites
-playerEquippedSprite = playerEquipped_spr;
-playerArmEmptySprite = playerArmEmpty_spr;
-playerArmEmptyWalkingSprite = playerArmEmptyWalking_spr;
-playerArmEmptyWalkingSpriteReverse = playerArmEmptyWalkingReverse_spr;
-playerArmEmpty2Sprite = playerArmEmpty2_spr;
-playerArmCurvedSprite = playerArmCurved_spr;
-playerArmCurvedWalkingSprite = playerArmCurvedWalking_spr;
-playerArmCurvedWalkingSpriteReverse = playerArmCurvedWalkingReverse_spr
-playerAimStanceSprite = playerAimStance_spr;
+playerEquippedSprite = playerEquippedSkin1_spr;
+playerArmEmptySprite = playerArmEmptySkin1_spr;
+playerArmEmptyWalkingSprite = playerArmEmptyWalkingSkin1_spr;
+playerArmEmptyWalkingSpriteReverse = playerArmEmptyWalkingReverseSkin1_spr;
+playerArmEmpty2Sprite = playerArmEmpty2Skin1_spr;
+playerArmCurvedSprite = playerArmCurvedSkin1_spr;
+playerArmCurvedWalkingSprite = playerArmCurvedWalkingSkin1_spr;
+playerArmCurvedWalkingSpriteReverse = playerArmCurvedWalkingReverseSkin1_spr
+playerAimStanceSprite = playerAimStanceSkin1_spr;
 playerWalkingSprite = playerWalkingEquipped_spr;
 playerWalkingEquippedReverse = playerWalkingEquippedReverse_spr;
 
