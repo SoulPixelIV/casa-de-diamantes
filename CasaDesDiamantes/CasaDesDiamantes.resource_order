@@ -272,6 +272,7 @@
     {"name":"spotlightYellowTurnoff_obj","order":21,"path":"objects/spotlightYellowTurnoff_obj/spotlightYellowTurnoff_obj.yy",},
     {"name":"hugeTree2_spr","order":27,"path":"sprites/hugeTree2_spr/hugeTree2_spr.yy",},
     {"name":"infectionbarBorder_spr","order":16,"path":"sprites/infectionbarBorder_spr/infectionbarBorder_spr.yy",},
+    {"name":"playerWalkingEquippedReverseSkin1_spr","order":10,"path":"sprites/playerWalkingEquippedReverseSkin1_spr/playerWalkingEquippedReverseSkin1_spr.yy",},
     {"name":"infectionbar_spr","order":17,"path":"sprites/infectionbar_spr/infectionbar_spr.yy",},
     {"name":"syringe_spr","order":18,"path":"sprites/syringe_spr/syringe_spr.yy",},
     {"name":"slotblockSpinning_spr","order":114,"path":"sprites/slotblockSpinning_spr/slotblockSpinning_spr.yy",},

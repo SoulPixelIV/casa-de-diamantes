@@ -409,6 +409,7 @@
     {"id":{"name":"spotlightYellowTurnoff_obj","path":"objects/spotlightYellowTurnoff_obj/spotlightYellowTurnoff_obj.yy",},},
     {"id":{"name":"hugeTree2_spr","path":"sprites/hugeTree2_spr/hugeTree2_spr.yy",},},
     {"id":{"name":"infectionbarBorder_spr","path":"sprites/infectionbarBorder_spr/infectionbarBorder_spr.yy",},},
+    {"id":{"name":"playerWalkingEquippedReverseSkin1_spr","path":"sprites/playerWalkingEquippedReverseSkin1_spr/playerWalkingEquippedReverseSkin1_spr.yy",},},
     {"id":{"name":"infectionbar_spr","path":"sprites/infectionbar_spr/infectionbar_spr.yy",},},
     {"id":{"name":"syringe_spr","path":"sprites/syringe_spr/syringe_spr.yy",},},
     {"id":{"name":"slotblockSpinning_spr","path":"sprites/slotblockSpinning_spr/slotblockSpinning_spr.yy",},},
