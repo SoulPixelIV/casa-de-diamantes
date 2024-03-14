@@ -567,48 +567,16 @@ if (!grounded && !isZombie && !flip && !isDashing && !groundCollisionTimerOn && 
 			sprite_index = playerAimStanceSprite;
 		} else {
 			if (global.currentWeapon == pickedWeapon.pistol) {
-				if (global.top1 == noone)
-				{
-					sprite_index = playerPistolStance_spr;
-				}
-				else
-				{
-					//sprite_index = playerJumpSpinNude_spr;
-					sprite_index = playerPistolStance_spr;
-				}
+				sprite_index = playerPistolStanceSprite;
 			}
 			if (global.currentWeapon == pickedWeapon.dualBarettas) {
-				if (global.top1 == noone)
-				{
-					sprite_index = playerDualBarettasStance_spr;
-				}
-				else
-				{
-					//sprite_index = playerJumpSpinNude_spr;
-					sprite_index = playerDualBarettasStance_spr;
-				}
+				sprite_index = playerDualBarettasStanceSprite;
 			}
 			if (global.currentWeapon == pickedWeapon.shotgun) {
-				if (global.top1 == noone)
-				{
-					sprite_index = playerShotgunStance_spr;
-				}
-				else
-				{
-					//sprite_index = playerJumpSpinNude_spr;
-					sprite_index = playerShotgunStance_spr;
-				}
+				sprite_index = playerShotgunStanceSprite;
 			}
 			if (global.currentWeapon == pickedWeapon.silencedMP) {
-				if (global.top1 == noone)
-				{
-					sprite_index = playerSilencedMPStance_spr;
-				}
-				else
-				{
-					//sprite_index = playerJumpSpinNude_spr;
-					sprite_index = playerSilencedMPStance_spr;
-				}
+				sprite_index = playerSilencedMPStanceSprite;
 			}
 		}
 	}
@@ -1471,16 +1439,16 @@ switch (sprite_index)
 	case playerJumpSpinNude_spr:
 		animationSpeed = 1.2;
 		break;
-	case playerShotgunStance_spr:
+	case playerShotgunStanceSprite:
 		animationSpeed = 1.5;
 		break;
-	case playerDualBarettasStance_spr:
+	case playerDualBarettasStanceSprite:
 		animationSpeed = 1.5;
 		break;
-	case playerPistolStance_spr:
+	case playerPistolStanceSprite:
 		animationSpeed = 1.5;
 		break;
-	case playerSilencedMPStance_spr:
+	case playerSilencedMPStanceSprite:
 		animationSpeed = 1.5;
 		break;
 	case playerJumpSpinUnequipped_spr:

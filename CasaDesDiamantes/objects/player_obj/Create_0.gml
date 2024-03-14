@@ -83,6 +83,10 @@ playerWalkingSprite = playerWalkingEquippedSkin1_spr;
 playerWalkingEquippedReverse = playerWalkingEquippedReverseSkin1_spr;
 playerCrouchRollSprite = playerCrouchRollSkin1_spr;
 playerFlipSprite = playerFlipSkin1_spr;
+playerPistolStanceSprite = playerPistolStanceSkin1_spr;
+playerDualBarettasStanceSprite = playerDualBarettasStanceSkin1_spr;
+playerShotgunStanceSprite = playerShotgunStanceSkin1_spr;
+playerSilencedMPStanceSprite = playerSilencedMPStanceSkin1_spr;
 
 //Effects
 enemySlowMotionTimer = 100;
