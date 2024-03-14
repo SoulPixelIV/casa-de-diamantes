@@ -352,11 +352,11 @@ if (isDashing && !onLadder)
 		if (!reachedGroundOnce) {
 			if (((dirCursor > 90 && dirCursor < 270) && image_xscale == 1) || ((dirCursor < 90 || dirCursor > 270) && image_xscale == -1))
 			{
-				sprite_index = playerDashReverse_spr;
+				sprite_index = playerDashReverseSprite;
 			}
 			else
 			{
-				sprite_index = playerDash_spr;
+				sprite_index = playerDashSprite;
 			}
 		} else {
 			isDashing = false;
@@ -379,7 +379,7 @@ if (isDashing && !onLadder)
 			//Ground Roll in to Crouch
 			crouchRollTimer -= global.dt;
 			if (crouchRollTimer > 0) {
-				sprite_index = playerCrouchRoll_spr;
+				sprite_index = playerCrouchRollSprite;
 				
 				if (!audio_is_playing(dashroll_snd))
 				{
@@ -391,7 +391,7 @@ if (isDashing && !onLadder)
 			} else {
 				reachedGroundOnce = true;
 							
-				sprite_index = playerCrouch_spr;
+				sprite_index = playerCrouchSprite;
 				
 				crouchslide = true;
 				dashroll = false;
@@ -1481,10 +1481,10 @@ switch (sprite_index)
 	case playerClimbing_spr:
 		animationSpeed = 0.5;
 		break;
-	case playerCrouchRoll_spr:
+	case playerCrouchRollSprite:
 		animationSpeed = 0;
 		break;
-	case playerCrouch_spr:
+	case playerCrouchSprite:
 		animationSpeed = 0.5;
 		break;
 	case playerVineDeath_spr:

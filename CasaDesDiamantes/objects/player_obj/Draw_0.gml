@@ -54,7 +54,7 @@ if (!inChamber) {
 		if (crouchRollTimer > 0) {
 			draw_sprite_ext(playerCrouchRollSprite, 0, x, y, image_xscale, 1, playerRotation, -1, 1);
 		} else {
-			draw_sprite_ext(playerCrouch_spr, 0, x, y, image_xscale, 1, 0, -1, 1);
+			draw_sprite_ext(playerCrouchSprite, 0, x, y, image_xscale, 1, 0, -1, 1);
 		}
 	}
 

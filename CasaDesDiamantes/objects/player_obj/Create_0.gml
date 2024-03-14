@@ -87,6 +87,9 @@ playerPistolStanceSprite = playerPistolStanceSkin1_spr;
 playerDualBarettasStanceSprite = playerDualBarettasStanceSkin1_spr;
 playerShotgunStanceSprite = playerShotgunStanceSkin1_spr;
 playerSilencedMPStanceSprite = playerSilencedMPStanceSkin1_spr;
+playerDashSprite = playerDashSkin1_spr;
+playerDashReverseSprite = playerDashReverseSkin1_spr;
+playerCrouchSprite = playerCrouchSkin1_spr;
 
 //Effects
 enemySlowMotionTimer = 100;
