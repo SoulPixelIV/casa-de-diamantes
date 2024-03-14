@@ -70,26 +70,57 @@ shotgunArmCurvedX = 0;
 shotgunArmCurvedY = 0;
 
 //Sprites
-playerEquippedSprite = playerEquippedSkin1_spr;
-playerArmEmptySprite = playerArmEmptySkin1_spr;
-playerArmEmptyWalkingSprite = playerArmEmptyWalkingSkin1_spr;
-playerArmEmptyWalkingSpriteReverse = playerArmEmptyWalkingReverseSkin1_spr;
-playerArmEmpty2Sprite = playerArmEmpty2Skin1_spr;
-playerArmCurvedSprite = playerArmCurvedSkin1_spr;
-playerArmCurvedWalkingSprite = playerArmCurvedWalkingSkin1_spr;
-playerArmCurvedWalkingSpriteReverse = playerArmCurvedWalkingReverseSkin1_spr
-playerAimStanceSprite = playerAimStanceSkin1_spr;
-playerWalkingSprite = playerWalkingEquippedSkin1_spr;
-playerWalkingEquippedReverse = playerWalkingEquippedReverseSkin1_spr;
-playerCrouchRollSprite = playerCrouchRollSkin1_spr;
-playerFlipSprite = playerFlipSkin1_spr;
-playerPistolStanceSprite = playerPistolStanceSkin1_spr;
-playerDualBarettasStanceSprite = playerDualBarettasStanceSkin1_spr;
-playerShotgunStanceSprite = playerShotgunStanceSkin1_spr;
-playerSilencedMPStanceSprite = playerSilencedMPStanceSkin1_spr;
-playerDashSprite = playerDashSkin1_spr;
-playerDashReverseSprite = playerDashReverseSkin1_spr;
-playerCrouchSprite = playerCrouchSkin1_spr;
+if (global.skin == 0) {
+	playerEquippedSprite = playerEquipped_spr;
+	playerArmEmptySprite = playerArmEmpty_spr;
+	playerArmEmptyWalkingSprite = playerArmEmptyWalking_spr;
+	playerArmEmptyWalkingSpriteReverse = playerArmEmptyWalkingReverse_spr;
+	playerArmEmpty2Sprite = playerArmEmpty2_spr;
+	playerArmCurvedSprite = playerArmCurved_spr;
+	playerArmCurvedWalkingSprite = playerArmCurvedWalking_spr;
+	playerArmCurvedWalkingSpriteReverse = playerArmCurvedWalkingReverse_spr
+	playerAimStanceSprite = playerAimStance_spr;
+	playerWalkingSprite = playerWalkingEquipped_spr;
+	playerWalkingEquippedReverse = playerWalkingEquippedReverse_spr;
+	playerCrouchRollSprite = playerCrouchRoll_spr;
+	playerFlipSprite = playerFlip_spr;
+	playerPistolStanceSprite = playerPistolStance_spr;
+	playerDualBarettasStanceSprite = playerDualBarettasStance_spr;
+	playerShotgunStanceSprite = playerShotgunStance_spr;
+	playerSilencedMPStanceSprite = playerSilencedMPStance_spr;
+	playerDashSprite = playerDash_spr;
+	playerDashReverseSprite = playerDashReverse_spr;
+	playerCrouchSprite = playerCrouch_spr;
+	playerVineDeathSprite = playerVineDeath_spr;
+	playerWallSprite = playerWall_spr;
+	playerWallNoArmSprite = playerWallNoArm_spr;
+}
+
+if (global.skin == 1) {
+	playerEquippedSprite = playerEquippedSkin1_spr;
+	playerArmEmptySprite = playerArmEmptySkin1_spr;
+	playerArmEmptyWalkingSprite = playerArmEmptyWalkingSkin1_spr;
+	playerArmEmptyWalkingSpriteReverse = playerArmEmptyWalkingReverseSkin1_spr;
+	playerArmEmpty2Sprite = playerArmEmpty2Skin1_spr;
+	playerArmCurvedSprite = playerArmCurvedSkin1_spr;
+	playerArmCurvedWalkingSprite = playerArmCurvedWalkingSkin1_spr;
+	playerArmCurvedWalkingSpriteReverse = playerArmCurvedWalkingReverseSkin1_spr
+	playerAimStanceSprite = playerAimStanceSkin1_spr;
+	playerWalkingSprite = playerWalkingEquippedSkin1_spr;
+	playerWalkingEquippedReverse = playerWalkingEquippedReverseSkin1_spr;
+	playerCrouchRollSprite = playerCrouchRollSkin1_spr;
+	playerFlipSprite = playerFlipSkin1_spr;
+	playerPistolStanceSprite = playerPistolStanceSkin1_spr;
+	playerDualBarettasStanceSprite = playerDualBarettasStanceSkin1_spr;
+	playerShotgunStanceSprite = playerShotgunStanceSkin1_spr;
+	playerSilencedMPStanceSprite = playerSilencedMPStanceSkin1_spr;
+	playerDashSprite = playerDashSkin1_spr;
+	playerDashReverseSprite = playerDashReverseSkin1_spr;
+	playerCrouchSprite = playerCrouchSkin1_spr;
+	playerVineDeathSprite = playerVineDeathSkin1_spr;
+	playerWallSprite = playerWallSkin1_spr;
+	playerWallNoArmSprite = playerWallNoArmSkin1_spr;
+}
 
 //Effects
 enemySlowMotionTimer = 100;

@@ -943,11 +943,11 @@ if (huggingWall && !grounded && !deathActivated)
 {
 	if (global.currentWeapon == gameManager_obj.pickedWeapon.dualBarettas)
 	{
-		sprite_index = playerWallNoArm_spr;
+		sprite_index = playerWallNoArmSprite;
 	}
 	else
 	{
-		sprite_index = playerWall_spr;
+		sprite_index = playerWallSprite;
 	}
 
 	walljumpDustTimer -= global.dt;
@@ -1487,7 +1487,7 @@ switch (sprite_index)
 	case playerCrouchSprite:
 		animationSpeed = 0.5;
 		break;
-	case playerVineDeath_spr:
+	case playerVineDeathSprite:
 		animationSpeed = 0.5;
 		break;
 }
@@ -1733,7 +1733,7 @@ if (!place_meeting(x, y, cameraViewIn_obj) && !place_meeting(x, y, cameraViewOut
 //Death Slowmo
 if (deathSlowmo)
 {
-	sprite_index = playerVineDeath_spr;
+	sprite_index = playerVineDeathSprite;
 	global.timeScale += global.dt / 200;
 	
 	if (global.timeScale > 0.95)

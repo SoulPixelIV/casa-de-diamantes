@@ -85,7 +85,7 @@ if (!inChamber) {
 		changePos = 1;
 	}
 
-	if (spin && sprite_index != playerWall_spr && !flip && !onLadder && !huggingWall)
+	if (spin && sprite_index != playerWallSprite && !flip && !onLadder && !huggingWall)
 	{
 		if (spinWeaponPos > 6)
 		{
