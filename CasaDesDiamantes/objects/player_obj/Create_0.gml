@@ -81,8 +81,8 @@ playerArmCurvedWalkingSpriteReverse = playerArmCurvedWalkingReverseSkin1_spr
 playerAimStanceSprite = playerAimStanceSkin1_spr;
 playerWalkingSprite = playerWalkingEquippedSkin1_spr;
 playerWalkingEquippedReverse = playerWalkingEquippedReverseSkin1_spr;
-playerCrouchRollSprite = playerCrouchRoll_spr; //TODO SKIN1
-playerFlipSprite = playerFlip_spr; //TODO SKIN1
+playerCrouchRollSprite = playerCrouchRollSkin1_spr;
+playerFlipSprite = playerFlipSkin1_spr;
 
 //Effects
 enemySlowMotionTimer = 100;
