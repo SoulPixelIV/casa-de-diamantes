@@ -9,6 +9,7 @@ animationSpeed = 0.2;
 elevatorTimer = 300;
 blackscreenTimer = 250;
 blackscreenTimer2 = 100;
+playedSound = false;
 
 blackscreenTimerSave = blackscreenTimer;
 blackscreenTimer2Save = blackscreenTimer2;

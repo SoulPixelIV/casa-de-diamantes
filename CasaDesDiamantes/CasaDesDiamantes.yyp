@@ -1693,6 +1693,7 @@
     {"id":{"name":"lockedDoorClosed_obj","path":"objects/lockedDoorClosed_obj/lockedDoorClosed_obj.yy",},},
     {"id":{"name":"level2_SenzelaForest","path":"rooms/level2_SenzelaForest/level2_SenzelaForest.yy",},},
     {"id":{"name":"playerAimStanceSkin1_spr","path":"sprites/playerAimStanceSkin1_spr/playerAimStanceSkin1_spr.yy",},},
+    {"id":{"name":"elevatorBell_snd","path":"sounds/elevatorBell_snd/elevatorBell_snd.yy",},},
     {"id":{"name":"__spr_ppf_empty","path":"sprites/__spr_ppf_empty/__spr_ppf_empty.yy",},},
     {"id":{"name":"fakeForestGroundLong_obj","path":"objects/fakeForestGroundLong_obj/fakeForestGroundLong_obj.yy",},},
     {"id":{"name":"neuralBlockWide_obj","path":"objects/neuralBlockWide_obj/neuralBlockWide_obj.yy",},},

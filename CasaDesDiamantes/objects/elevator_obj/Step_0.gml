@@ -8,6 +8,10 @@ if ((distance_to_object(player_obj) < 32 && player_obj.key_up_pressed) && !used 
 		camera_obj.drawBlackborders = true;
 		camera_obj.drawElevatorSign = true;
 		dialogueSystem_obj.inCutscene = true;
+		if (!playedSound) {
+			audio_play_sound(elevatorBell_snd, 1, false);
+			playedSound = true;
+		}
 	}
 }
 
@@ -31,6 +35,7 @@ if (image_index < image_number - 1) {
 }
 
 if (elevatorTimer < 0 && used) {
+	playedSound = false;
 	if (target == 0) {
 		part_emitter_destroy_all(global.partSystem);
 		global.spawn = 3;

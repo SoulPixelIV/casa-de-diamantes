@@ -1460,6 +1460,7 @@
     {"name":"lockedDoorClosed_obj","order":6,"path":"objects/lockedDoorClosed_obj/lockedDoorClosed_obj.yy",},
     {"name":"level2_SenzelaForest","order":2,"path":"rooms/level2_SenzelaForest/level2_SenzelaForest.yy",},
     {"name":"playerAimStanceSkin1_spr","order":4,"path":"sprites/playerAimStanceSkin1_spr/playerAimStanceSkin1_spr.yy",},
+    {"name":"elevatorBell_snd","order":77,"path":"sounds/elevatorBell_snd/elevatorBell_snd.yy",},
     {"name":"__spr_ppf_empty","order":1,"path":"sprites/__spr_ppf_empty/__spr_ppf_empty.yy",},
     {"name":"fakeForestGroundLong_obj","order":12,"path":"objects/fakeForestGroundLong_obj/fakeForestGroundLong_obj.yy",},
     {"name":"neuralBlockWide_obj","order":175,"path":"objects/neuralBlockWide_obj/neuralBlockWide_obj.yy",},
