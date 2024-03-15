@@ -80,6 +80,8 @@ audio_sound_pitch(metalDrop_snd, clamp(1 * global.timeScale, 0.5, 1.5));
 audio_sound_pitch(atomicLaser_snd, clamp(1 * global.timeScale, 0.5, 1.5));
 audio_sound_pitch(atomicLaserMuffled_snd, clamp(1 * global.timeScale, 0.5, 1.5));
 audio_sound_pitch(elevatorBell_snd, clamp(1 * global.timeScale, 0.5, 1.5));
+audio_sound_pitch(slotWin1_snd, clamp(1 * global.timeScale, 0.5, 1.5));
+audio_sound_pitch(slotWin2_snd, clamp(1 * global.timeScale, 0.5, 1.5));
 
 audio_sound_pitch(infectedVoice_snd, clamp(1 * global.timeScale, 0.5, 1.5));
 audio_sound_pitch(plagueInfectionVoice_snd, clamp(1 * global.timeScale, 0.5, 1.5));
@@ -169,6 +171,8 @@ audio_sound_gain(metalDrop_snd, (global.soundVolume / 100) * currVolMetalDrop, 0
 audio_sound_gain(atomicLaser_snd, (global.soundVolume / 100) * currVolAtomicLaser, 0);
 audio_sound_gain(atomicLaserMuffled_snd, (global.soundVolume / 100) * currVolAtomicLaserMuffled, 0);
 audio_sound_gain(elevatorBell_snd, (global.soundVolume / 100) * currVolElevatorBell, 0);
+audio_sound_gain(slotWin1_snd, (global.soundVolume / 100) * currVolSlotWin1, 0);
+audio_sound_gain(slotWin2_snd, (global.soundVolume / 100) * currVolSlotWin2, 0);
 
 audio_sound_gain(infectedVoice_snd, (global.soundVolume / 100) * currVolInfectedVoice, 0);
 audio_sound_gain(plagueInfectionVoice_snd, (global.soundVolume / 100) * currVolInfectionVoice, 0);

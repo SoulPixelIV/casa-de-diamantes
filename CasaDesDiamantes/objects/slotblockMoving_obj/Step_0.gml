@@ -16,6 +16,34 @@ if (vertOrHor == 0) {
 	}
 }
 
+//Audio
+if (audio_emitter_exists(emitter)) {
+	audio_emitter_position(emitter, x, y, 0);
+}
+
+//Trigger on Contact with Player
+if (distance_to_object(player_obj) < 10 && !used && !jumpAnim) {
+	if (player_obj.y > y + 8) {
+		if (player_obj.verspeed < 0) {
+			jumpAnim = true;
+			animationSpeed = 2;
+		}
+	}
+}
+
+if (jumpAnim) {
+	if (!playedSound) {
+		spinSound = audio_play_sound_on(emitter, slotmachineSpinning_snd, false, false);
+		playedSound = true;
+		sprite_index = slotblockJump_spr;
+		image_index = 0;
+	}
+	if (image_index > image_number - 1) {
+		used = true;
+		jumpAnim = false;
+	}
+}
+
 if (delayOn) {
 	delayTimer -= global.dt;
 	
@@ -27,6 +55,11 @@ if (delayOn) {
 
 if (used && !spawned && !spinDone)
 {
+	animationSpeed = 1;
+	if (!playedSound) {
+		spinSound = audio_play_sound_on(emitter, slotmachineSpinning_snd, false, false);
+		playedSound = true;
+	}
 	spinTimer -= global.dt;
 	sprite_index = slotblockSpinning_spr;
 	animationSpeed = 1;
@@ -39,6 +72,7 @@ if (spinTimer < 0)
 
 if (used && !spawned && spinDone)
 {
+	audio_play_sound_on(emitter, slotWin2_snd, false, false);
 	if (spawnElement1 != noone)
 	{
 		repeat(spawnNumber1)

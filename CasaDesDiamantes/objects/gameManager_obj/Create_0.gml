@@ -206,6 +206,8 @@ currVolMetalDrop = audio_sound_get_gain(metalDrop_snd);
 currVolAtomicLaser = audio_sound_get_gain(atomicLaser_snd);
 currVolAtomicLaserMuffled = audio_sound_get_gain(atomicLaserMuffled_snd);
 currVolElevatorBell = audio_sound_get_gain(elevatorBell_snd);
+currVolSlotWin1 = audio_sound_get_gain(slotWin1_snd);
+currVolSlotWin2 = audio_sound_get_gain(slotWin2_snd);
 
 currVolInfectedVoice = audio_sound_get_gain(infectedVoice_snd);
 currVolInfectionVoice = audio_sound_get_gain(plagueInfectionVoice_snd);
