@@ -244,6 +244,63 @@ if (drawText && !showWindowMenu)
 			textDelay = textDelaySave;
 		}
 	}
+	
+	//Skip Dialogue
+	if (keyboard_check_pressed(vk_escape) || gamepad_button_check_pressed(4, gp_start) || gamepad_button_check_pressed(0, gp_start)) {
+		if (instance_exists(dialogueSystem_obj)) {
+			if (dialogueSystem_obj.startScene1Timer) {
+				dialogueSystem_obj.scene1Timer = 0;
+			}
+			if (dialogueSystem_obj.startScene2Timer) {
+				dialogueSystem_obj.scene2Timer = 0;
+			}
+			if (dialogueSystem_obj.startScene4Timer) {
+				dialogueSystem_obj.scene4Timer = 0;
+			}
+			if (dialogueSystem_obj.startScene5Timer) {
+				dialogueSystem_obj.scene5Timer = 0;
+			}
+			if (dialogueSystem_obj.startScene6Timer) {
+				dialogueSystem_obj.scene6Timer = 0;
+			}
+			if (dialogueSystem_obj.startScene7Timer) {
+				dialogueSystem_obj.scene7Timer = 0;
+			}
+			if (dialogueSystem_obj.startScene8Timer) {
+				dialogueSystem_obj.scene8Timer = 0;
+				dialogueSystem_obj.scene8BlackTimer = 0;
+			}
+			if (dialogueSystem_obj.startScene9Timer) {
+				dialogueSystem_obj.scene9Timer = 0;
+				dialogueSystem_obj.scene9BlackTimer = 0;
+			}
+			if (dialogueSystem_obj.startScene10Timer) {
+				dialogueSystem_obj.scene10Timer = 0;
+				dialogueSystem_obj.scene10BlackTimer = 0;
+			}
+			if (dialogueSystem_obj.startScene11Timer) {
+				dialogueSystem_obj.scene11Timer = 0;
+			}
+			if (dialogueSystem_obj.startScene12Timer) {
+				dialogueSystem_obj.scene12Timer = 0;
+			}
+			if (dialogueSystem_obj.startScene13Timer) {
+				dialogueSystem_obj.scene13Timer = 0;
+			}
+			if (dialogueSystem_obj.startScene14Timer) {
+				dialogueSystem_obj.scene14Timer = 0;
+			}
+			if (dialogueSystem_obj.startScene15Timer) {
+				dialogueSystem_obj.scene15Timer = 0;
+			}
+			if (dialogueSystem_obj.startScene16Timer) {
+				dialogueSystem_obj.scene16Timer = 0;
+			}
+			if (dialogueSystem_obj.startScene17Timer) {
+				dialogueSystem_obj.scene17Timer = 0;
+			}
+		}
+	}
 }
 
 //Draw Tutorials
@@ -1620,6 +1677,7 @@ if (dialogueSystem_obj.inCutscene && !camera_obj.drawElevatorSign && !showWindow
 	draw_set_color(make_color_rgb(255, 215, 0));
 	draw_set_halign(fa_center);
 	draw_text(global.xScreenSize / 2, global.yScreenSize - global.yScreenSize / 4 + 32, "Hold Space to Fastforward");
+	draw_text(global.xScreenSize / 2, global.yScreenSize - global.yScreenSize / 4 + 48, "Press Escape to Skip");
 	draw_set_color(c_black);
 }
 	

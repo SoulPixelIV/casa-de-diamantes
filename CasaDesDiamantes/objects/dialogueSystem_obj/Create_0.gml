@@ -266,7 +266,7 @@ dialogue[89] = "";
 //Scene 17 CuPy Dialogue 6
 startScene17Timer = false;
 scene17Timer = 3200;
-scene17TimerSave = scene16Timer;
+scene17TimerSave = scene17Timer;
 
 dialogue[90] = "#Cindy, it's done but I don't think I'm heading back yet.";
 dialogue[91] = "%I know..saw it from up here. You'll definitely want to see it.";
