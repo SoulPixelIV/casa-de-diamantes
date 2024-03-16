@@ -84,6 +84,12 @@ if (keyboard_check_pressed(vk_f4) && room != mainmenu && room != levelSelect && 
 if (keyboard_check_pressed(vk_f7) && room != mainmenu && room != levelSelect && room != worldmap && room != credits && room != cutscene0 && room != cutscene1 && !global.pause)
 {
 	global.money += 1000;
+	camera_obj.scoreSpin = true;
+	camera_obj.scoreDif = true;
+	camera_obj.scoreSpinTimer = camera_obj.scoreSpinTimerSave;
+	camera_obj.scoreDifTimer = camera_obj.scoreDifTimerSave;
+	camera_obj.chipDif += 1000;
+	audio_play_sound(coin3_snd, 1, false);
 }
 
 /*
