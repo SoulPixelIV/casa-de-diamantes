@@ -715,10 +715,25 @@ if (!noHUD && instance_exists(player_obj))
 		draw_sprite(scoreNumber_spr, slots[0], global.xScreenSize - 81, 12 + (0 / 2));
 	}
 	
-	if (scoreSpinTimer < 0)
-	{
-		scoreSpinTimer = scoreSpinTimerSave;
+	if (scoreSpinTimer < 0) {
 		scoreSpin = false;
+		scoreSpinTimer = scoreSpinTimerSave;
+	}
+	if (scoreDifTimer < 0) {	
+		scoreDif = false;
+	}
+	
+	//Draw Money Text
+	if (scoreDif) {
+		scoreDifTimer -= global.dt;
+		
+		draw_set_color(make_color_rgb(255,215,0));
+		draw_set_font(gothicPixelSmall_fnt);
+		draw_set_halign(fa_center);
+		draw_text(global.xScreenSize - 36, 26, "+" + string(chipDif) + " Chips");
+		draw_set_font(gothicPixel_fnt);
+	} else {
+		chipDif = 0;
 	}
 
 	//Ammo

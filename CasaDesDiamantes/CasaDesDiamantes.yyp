@@ -1175,6 +1175,7 @@
     {"id":{"name":"moviesign_spr","path":"sprites/moviesign_spr/moviesign_spr.yy",},},
     {"id":{"name":"teleportBlimpToCasino_obj","path":"objects/teleportBlimpToCasino_obj/teleportBlimpToCasino_obj.yy",},},
     {"id":{"name":"SF1_SF0_teleporter","path":"objects/SF1_SF0_teleporter/SF1_SF0_teleporter.yy",},},
+    {"id":{"name":"chainlampBroken_spr","path":"sprites/chainlampBroken_spr/chainlampBroken_spr.yy",},},
     {"id":{"name":"chain_spr","path":"sprites/chain_spr/chain_spr.yy",},},
     {"id":{"name":"point_in_polygon","path":"scripts/point_in_polygon/point_in_polygon.yy",},},
     {"id":{"name":"lighting_debug_shadow_casters","path":"scripts/lighting_debug_shadow_casters/lighting_debug_shadow_casters.yy",},},

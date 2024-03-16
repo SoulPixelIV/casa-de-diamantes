@@ -1,6 +1,9 @@
 global.money += 5;
 camera_obj.scoreSpin = true;
+camera_obj.scoreDif = true;
 camera_obj.scoreSpinTimer = camera_obj.scoreSpinTimerSave;
+camera_obj.scoreDifTimer = camera_obj.scoreDifTimerSave;
+camera_obj.chipDif += 5;
 audio_play_sound(coin2_snd, 1, false);
 
 partEmitter = part_emitter_create(global.partSystem);

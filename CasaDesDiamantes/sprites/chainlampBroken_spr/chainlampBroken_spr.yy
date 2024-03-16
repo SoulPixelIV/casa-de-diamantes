@@ -1,12 +1,12 @@
 {
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
-  "name": "chainlamp_spr",
-  "bbox_bottom": 119,
-  "bbox_left": 3,
+  "name": "chainlampBroken_spr",
+  "bbox_bottom": 117,
+  "bbox_left": 2,
   "bbox_right": 11,
-  "bbox_top": 104,
-  "bboxMode": 2,
+  "bbox_top": 0,
+  "bboxMode": 0,
   "collisionKind": 1,
   "collisionTolerance": 0,
   "DynamicTexturePage": false,
@@ -32,7 +32,7 @@
   "sequence": {
     "resourceType": "GMSequence",
     "resourceVersion": "1.4",
-    "name": "chainlamp_spr",
+    "name": "chainlampBroken_spr",
     "autoRecord": true,
     "backdropHeight": 768,
     "backdropImageOpacity": 0.5,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"54ccbaf4-8118-4068-97d6-f6b2e9b4a28c","path":"sprites/chainlamp_spr/chainlamp_spr.yy",},},},"Disabled":false,"id":"5e9d96a8-d192-45b0-9ba1-40ce89cd1da7","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"54ccbaf4-8118-4068-97d6-f6b2e9b4a28c","path":"sprites/chainlampBroken_spr/chainlampBroken_spr.yy",},},},"Disabled":false,"id":"7ed6aad7-fcb6-4ae3-87d9-7e9777692884","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

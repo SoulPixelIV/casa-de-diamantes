@@ -80,6 +80,7 @@ showBossHealthbar2 = false;
 showWeaponProhibited = false;
 weaponProhibitedTextTimer = 120;
 barkeeperWindowIndex = 2;
+chipDif = 0;
 
 cameraSpeed = 0.02;
 ycameraSpeed = 0.02;
@@ -301,10 +302,13 @@ randParticle2Y4 = random_range(global.yScreenSize + 12, global.yScreenSize - 48)
 
 //Score
 scoreSpin = false;
+scoreDif = false;
 scoreSpinTimer = 200;
+scoreDifTimer = 500;
 playScoreStop = false;
 spinsnd = noone;
 scoreSpinTimerSave = scoreSpinTimer;
+scoreDifTimerSave = scoreDifTimer;
 
 //Dialogue Drawing
 drawText = false;

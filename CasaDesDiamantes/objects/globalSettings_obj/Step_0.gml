@@ -81,6 +81,10 @@ if (keyboard_check_pressed(vk_f4) && room != mainmenu && room != levelSelect && 
 	instance_destroy(player_obj);
 	room_goto(storySelect);
 }
+if (keyboard_check_pressed(vk_f7) && room != mainmenu && room != levelSelect && room != worldmap && room != credits && room != cutscene0 && room != cutscene1 && !global.pause)
+{
+	global.money += 1000;
+}
 
 /*
 if (keyboard_check_pressed(vk_f11))
