@@ -191,15 +191,15 @@ if (drawText && !showWindowMenu)
 		if (character == player_obj) {
 			draw_sprite_ext(dialogBorder_spr, 0, (character.x - x) + global.xScreenSize / 2, (character.y - y) - 42 + global.yScreenSize / 2, 2 + string_length(dialogueStripped) / 3, 1.5, 0, make_color_rgb(255, 215, 0), 1);
 		} else if (character == cindy_obj || character == cindy2_obj) {
-			draw_sprite_ext(dialogBorder_spr, 0, (character.x - x) + global.xScreenSize / 2, (character.y - y) - 42 + global.yScreenSize / 2, 2 + string_length(dialogueStripped) / 3, 1.5, 0, c_purple, 1);
+			draw_sprite_ext(dialogBorder_spr, 0, (character.x - x) + global.xScreenSize / 2, (character.y - y) - 42 + global.yScreenSize / 2, 2 + string_length(dialogueStripped) / 3, 1.5, 0, make_color_rgb(82, 43, 82), 1);
 		} else if (character == cutieplusSteph_obj) {
-			draw_sprite_ext(dialogBorder_spr, 0, (character.x - x) + global.xScreenSize / 2, (character.y - y) - 22 + global.yScreenSize / 2, 2 + string_length(dialogueStripped) / 3, 1.5, 0, c_purple, 1);
+			draw_sprite_ext(dialogBorder_spr, 0, (character.x - x) + global.xScreenSize / 2, (character.y - y) - 22 + global.yScreenSize / 2, 2 + string_length(dialogueStripped) / 3, 1.5, 0, make_color_rgb(82, 43, 82), 1);
 		} else if (character == bartender_obj) {
-			draw_sprite_ext(dialogBorder_spr, 0, (character.x - x) + global.xScreenSize / 2, (character.y - y) - 42 + global.yScreenSize / 2, 2 + string_length(dialogueStripped) / 3, 1.5, 0, c_aqua, 1);
+			draw_sprite_ext(dialogBorder_spr, 0, (character.x - x) + global.xScreenSize / 2, (character.y - y) - 42 + global.yScreenSize / 2, 2 + string_length(dialogueStripped) / 3, 1.5, 0, make_color_rgb(102, 181, 181), 1);
 		} else if (character == casinobunny_obj) {
 			draw_sprite_ext(dialogBorder_spr, 0, (character.x - x) + global.xScreenSize / 2, (character.y - y) - 42 + global.yScreenSize / 2, 2 + string_length(dialogueStripped) / 3, 1.5, 0, make_color_rgb(255, 215, 215), 1);
 		} else if (character == vip_obj || character == vip2_obj || character == customStoryTarget_obj) {
-			draw_sprite_ext(dialogBorder_spr, 0, (character.x - x) + global.xScreenSize / 2, (character.y - y) - 42 + global.yScreenSize / 2, 2 + string_length(dialogueStripped) / 3, 1.5, 0, c_lime, 1);
+			draw_sprite_ext(dialogBorder_spr, 0, (character.x - x) + global.xScreenSize / 2, (character.y - y) - 42 + global.yScreenSize / 2, 2 + string_length(dialogueStripped) / 3, 1.5, 0, make_color_rgb(106, 203, 106), 1);
 		}
 	
 		if (character == cutieplusSteph_obj) {
@@ -247,163 +247,163 @@ if (drawText && !showWindowMenu)
 	
 	//Skip Dialogue
 	if (keyboard_check_pressed(vk_enter) || gamepad_button_check_pressed(4, gp_start) || gamepad_button_check_pressed(0, gp_start)) {
-		if (!dialogueSystem_obj.scene3 && !dialogueSystem_obj.scene6) {
-			if (instance_exists(dialogueSystem_obj)) {
-				if (dialogueSystem_obj.startScene2Timer) {
-					showWindowMenu = true;
-					windowType = 1;
-					follow = player_obj;
-					dialogueSystem_obj.scene2Timer = dialogueSystem_obj.scene2TimerSave;
-					for (i = dialogueSystem_obj.scene2Low; i < dialogueSystem_obj.scene2High + 1; i++)
-					{
-						dialogue[i] = "";
-					}
-					dialogueStripped = "";
-					drawDialogueBorder = false;
+		if (instance_exists(dialogueSystem_obj)) {
+			if (dialogueSystem_obj.startScene2Timer) {
+				showWindowMenu = true;
+				windowType = 1;
+				follow = player_obj;
+				dialogueSystem_obj.scene2Timer = dialogueSystem_obj.scene2TimerSave;
+				for (i = dialogueSystem_obj.scene2Low; i < dialogueSystem_obj.scene2High + 1; i++)
+				{
+					dialogue[i] = "";
 				}
-				if (dialogueSystem_obj.startScene4Timer) {
-					dialogueSystem_obj.scene4Timer = dialogueSystem_obj.scene4TimerSave;
-					dialogueSystem_obj.startScene4Timer = false;
-					global.introDialogueCindyDone = true;
-					cindy2_obj.dialogueTriggered = false;
-					player_obj.movement = true;
-					dialogueSystem_obj.inCutscene = false;
-					follow = player_obj;
-					drawBlackborders = false;
-					for (i = dialogueSystem_obj.scene4Low; i < dialogueSystem_obj.scene4High + 1; i++)
-					{
-						dialogue[i] = "";
-					}
-					dialogueStripped = "";
-					drawDialogueBorder = false;
+				dialogueStripped = "";
+				drawDialogueBorder = false;
+			}
+			if (dialogueSystem_obj.startScene4Timer) {
+				dialogueSystem_obj.scene4Timer = dialogueSystem_obj.scene4TimerSave;
+				dialogueSystem_obj.startScene4Timer = false;
+				global.introDialogueCindyDone = true;
+				cindy2_obj.dialogueTriggered = false;
+				player_obj.movement = true;
+				dialogueSystem_obj.inCutscene = false;
+				follow = player_obj;
+				drawBlackborders = false;
+				for (i = dialogueSystem_obj.scene4Low; i < dialogueSystem_obj.scene4High + 1; i++)
+				{
+					dialogue[i] = "";
 				}
-				if (dialogueSystem_obj.startScene5Timer) {
-					dialogueSystem_obj.scene5Timer = dialogueSystem_obj.scene5TimerSave;
-					dialogueSystem_obj.startScene5Timer = false;
-					vip_obj.dialogueTriggered = false;
-					player_obj.movement = true;
-					dialogueSystem_obj.inCutscene = false;
-					follow = player_obj;
-					drawBlackborders = false;
-					global.act2Unlocked = true;
-					global.introDialogueVIPDone = true;
-					global.drawMission = true;
-					drawDialogueBorder = false;
-					for (i = dialogueSystem_obj.scene5Low; i < dialogueSystem_obj.scene5High + 1; i++)
-					{
-						dialogue[i] = "";
-					}
-					dialogueStripped = "";
-					drawDialogueBorder = false;
+				dialogueStripped = "";
+				drawDialogueBorder = false;
+			}
+			if (dialogueSystem_obj.startScene5Timer) {
+				dialogueSystem_obj.scene5Timer = dialogueSystem_obj.scene5TimerSave;
+				dialogueSystem_obj.startScene5Timer = false;
+				vip_obj.dialogueTriggered = false;
+				player_obj.movement = true;
+				dialogueSystem_obj.inCutscene = false;
+				follow = player_obj;
+				drawBlackborders = false;
+				global.act2Unlocked = true;
+				global.introDialogueVIPDone = true;
+				global.drawMission = true;
+				drawDialogueBorder = false;
+				for (i = dialogueSystem_obj.scene5Low; i < dialogueSystem_obj.scene5High + 1; i++)
+				{
+					dialogue[i] = "";
 				}
-				if (dialogueSystem_obj.startScene6Timer) {
-					dialogueSystem_obj.scene6Timer = 0;
+				dialogueStripped = "";
+				drawDialogueBorder = false;
+			}
+			if (dialogueSystem_obj.startScene6Timer) {
+				part_emitter_destroy_all(global.partSystem);
+				instance_destroy(player_obj);
+				room_goto(upgrademenu);
+			}
+			if (dialogueSystem_obj.startScene7Timer) {
+				dialogueSystem_obj.scene7Timer = 0;
+			}
+			if (dialogueSystem_obj.startScene8Timer) {
+				dialogueSystem_obj.startScene8Timer = false;
+				dialogueSystem_obj.scene8Timer = dialogueSystem_obj.scene8TimerSave;
+				dialogueSystem_obj.scene8BlackTimer = dialogueSystem_obj.scene8BlackTimerSave;
+				for (i = dialogueSystem_obj.scene8Low; i < dialogueSystem_obj.scene8High + 1; i++)
+				{
+					dialogue[i] = "";
 				}
-				if (dialogueSystem_obj.startScene7Timer) {
-					dialogueSystem_obj.scene7Timer = 0;
+				player_obj.movement = true;
+				drawBlackborders = false;
+				dialogueSystem_obj.scene10Timer = dialogueSystem_obj.scene10TimerSave;
+				dialogueSystem_obj.startScene10Timer = false;
+				dialogueSystem_obj.scene10BlackTimer = dialogueSystem_obj.scene10BlackTimerSave;
+				dialogueSystem_obj.startScene10BlackTimer = false;
+				dialogueSystem_obj.inCutscene = false;
+				if (instance_exists(cindy_obj)) {
+					instance_destroy(cindy_obj);
 				}
-				if (dialogueSystem_obj.startScene8Timer) {
-					dialogueSystem_obj.startScene8Timer = false;
-					dialogueSystem_obj.scene8Timer = dialogueSystem_obj.scene8TimerSave;
-					dialogueSystem_obj.scene8BlackTimer = dialogueSystem_obj.scene8BlackTimerSave;
-					for (i = dialogueSystem_obj.scene8Low; i < dialogueSystem_obj.scene8High + 1; i++)
-					{
-						dialogue[i] = "";
-					}
-					player_obj.movement = true;
-					drawBlackborders = false;
-					dialogueSystem_obj.scene10Timer = dialogueSystem_obj.scene10TimerSave;
-					dialogueSystem_obj.startScene10Timer = false;
-					dialogueSystem_obj.scene10BlackTimer = dialogueSystem_obj.scene10BlackTimerSave;
-					dialogueSystem_obj.startScene10BlackTimer = false;
-					dialogueSystem_obj.inCutscene = false;
-					if (instance_exists(cindy_obj)) {
-						instance_destroy(cindy_obj);
-					}
-					if (instance_exists(vip2_obj)) {
-						instance_destroy(vip2_obj);
-					}
-					camera_obj.blackscreenStrength = 0;
-					global.cutsceneCasinoIntroDone = true;
-					follow = player_obj;
-					save_scr();
-					dialogueStripped = "";
-					drawDialogueBorder = false;
+				if (instance_exists(vip2_obj)) {
+					instance_destroy(vip2_obj);
 				}
-				if (dialogueSystem_obj.startScene9Timer) {
-					dialogueSystem_obj.startScene9Timer = false;
-					dialogueSystem_obj.scene9Timer = dialogueSystem_obj.scene9TimerSave;
-					dialogueSystem_obj.scene9BlackTimer = dialogueSystem_obj.scene9BlackTimerSave;
-					for (i = dialogueSystem_obj.scene9Low; i < dialogueSystem_obj.scene9High + 1; i++)
-					{
-						dialogue[i] = "";
-					}
-					player_obj.movement = true;
-					drawBlackborders = false;
-					dialogueSystem_obj.scene10Timer = dialogueSystem_obj.scene10TimerSave;
-					dialogueSystem_obj.startScene10Timer = false;
-					dialogueSystem_obj.scene10BlackTimer = dialogueSystem_obj.scene10BlackTimerSave;
-					dialogueSystem_obj.startScene10BlackTimer = false;
-					dialogueSystem_obj.inCutscene = false;
-					if (instance_exists(cindy_obj)) {
-						instance_destroy(cindy_obj);
-					}
-					if (instance_exists(vip2_obj)) {
-						instance_destroy(vip2_obj);
-					}
-					camera_obj.blackscreenStrength = 0;
-					global.cutsceneCasinoIntroDone = true;
-					follow = player_obj;
-					save_scr();
-					dialogueStripped = "";
-					drawDialogueBorder = false;
+				camera_obj.blackscreenStrength = 0;
+				global.cutsceneCasinoIntroDone = true;
+				follow = player_obj;
+				save_scr();
+				dialogueStripped = "";
+				drawDialogueBorder = false;
+			}
+			if (dialogueSystem_obj.startScene9Timer) {
+				dialogueSystem_obj.startScene9Timer = false;
+				dialogueSystem_obj.scene9Timer = dialogueSystem_obj.scene9TimerSave;
+				dialogueSystem_obj.scene9BlackTimer = dialogueSystem_obj.scene9BlackTimerSave;
+				for (i = dialogueSystem_obj.scene9Low; i < dialogueSystem_obj.scene9High + 1; i++)
+				{
+					dialogue[i] = "";
 				}
-				if (dialogueSystem_obj.startScene10Timer) {
-					for (i = dialogueSystem_obj.scene10Low; i < dialogueSystem_obj.scene10High + 1; i++)
-					{
-						dialogue[i] = "";
-					}
-					player_obj.movement = true;
-					drawBlackborders = false;
-					dialogueSystem_obj.scene10Timer = dialogueSystem_obj.scene10TimerSave;
-					dialogueSystem_obj.startScene10Timer = false;
-					dialogueSystem_obj.scene10BlackTimer = dialogueSystem_obj.scene10BlackTimerSave;
-					dialogueSystem_obj.startScene10BlackTimer = false;
-					dialogueSystem_obj.inCutscene = false;
-					if (instance_exists(cindy_obj)) {
-						instance_destroy(cindy_obj);
-					}
-					if (instance_exists(vip2_obj)) {
-						instance_destroy(vip2_obj);
-					}
-					camera_obj.blackscreenStrength = 0;
-					global.cutsceneCasinoIntroDone = true;
-					follow = player_obj;
-					save_scr();
-					dialogueStripped = "";
-					drawDialogueBorder = false;
+				player_obj.movement = true;
+				drawBlackborders = false;
+				dialogueSystem_obj.scene10Timer = dialogueSystem_obj.scene10TimerSave;
+				dialogueSystem_obj.startScene10Timer = false;
+				dialogueSystem_obj.scene10BlackTimer = dialogueSystem_obj.scene10BlackTimerSave;
+				dialogueSystem_obj.startScene10BlackTimer = false;
+				dialogueSystem_obj.inCutscene = false;
+				if (instance_exists(cindy_obj)) {
+					instance_destroy(cindy_obj);
 				}
-				if (dialogueSystem_obj.startScene11Timer) {
-					dialogueSystem_obj.scene11Timer = 0;
+				if (instance_exists(vip2_obj)) {
+					instance_destroy(vip2_obj);
 				}
-				if (dialogueSystem_obj.startScene12Timer) {
-					dialogueSystem_obj.scene12Timer = 0;
+				camera_obj.blackscreenStrength = 0;
+				global.cutsceneCasinoIntroDone = true;
+				follow = player_obj;
+				save_scr();
+				dialogueStripped = "";
+				drawDialogueBorder = false;
+			}
+			if (dialogueSystem_obj.startScene10Timer) {
+				for (i = dialogueSystem_obj.scene10Low; i < dialogueSystem_obj.scene10High + 1; i++)
+				{
+					dialogue[i] = "";
 				}
-				if (dialogueSystem_obj.startScene13Timer) {
-					dialogueSystem_obj.scene13Timer = 0;
+				player_obj.movement = true;
+				drawBlackborders = false;
+				dialogueSystem_obj.scene10Timer = dialogueSystem_obj.scene10TimerSave;
+				dialogueSystem_obj.startScene10Timer = false;
+				dialogueSystem_obj.scene10BlackTimer = dialogueSystem_obj.scene10BlackTimerSave;
+				dialogueSystem_obj.startScene10BlackTimer = false;
+				dialogueSystem_obj.inCutscene = false;
+				if (instance_exists(cindy_obj)) {
+					instance_destroy(cindy_obj);
 				}
-				if (dialogueSystem_obj.startScene14Timer) {
-					dialogueSystem_obj.scene14Timer = 0;
+				if (instance_exists(vip2_obj)) {
+					instance_destroy(vip2_obj);
 				}
-				if (dialogueSystem_obj.startScene15Timer) {
-					dialogueSystem_obj.scene15Timer = 0;
-				}
-				if (dialogueSystem_obj.startScene16Timer) {
-					dialogueSystem_obj.scene16Timer = 0;
-				}
-				if (dialogueSystem_obj.startScene17Timer) {
-					dialogueSystem_obj.scene17Timer = 0;
-				}
+				camera_obj.blackscreenStrength = 0;
+				global.cutsceneCasinoIntroDone = true;
+				follow = player_obj;
+				save_scr();
+				dialogueStripped = "";
+				drawDialogueBorder = false;
+			}
+			if (dialogueSystem_obj.startScene11Timer) {
+				dialogueSystem_obj.scene11Timer = 0;
+			}
+			if (dialogueSystem_obj.startScene12Timer) {
+				dialogueSystem_obj.scene12Timer = 0;
+			}
+			if (dialogueSystem_obj.startScene13Timer) {
+				dialogueSystem_obj.scene13Timer = 0;
+			}
+			if (dialogueSystem_obj.startScene14Timer) {
+				dialogueSystem_obj.scene14Timer = 0;
+			}
+			if (dialogueSystem_obj.startScene15Timer) {
+				dialogueSystem_obj.scene15Timer = 0;
+			}
+			if (dialogueSystem_obj.startScene16Timer) {
+				dialogueSystem_obj.scene16Timer = 0;
+			}
+			if (dialogueSystem_obj.startScene17Timer) {
+				dialogueSystem_obj.scene17Timer = 0;
 			}
 		}
 	}
@@ -1494,9 +1494,9 @@ if (global.drawMission && !global.pause) {
 		draw_set_halign(fa_center);
 		draw_set_font(gothicPixel_fnt);
 		draw_set_color(c_black);
-		draw_text(global.xScreenSize / 2 - 1, global.yScreenSize - 16 + 1, "Mission - Find and Execute Target in Senzela Forest");
+		draw_text(global.xScreenSize / 2 - 1, 8 + 1, "Mission - Find and Execute Target in Senzela Forest");
 		draw_set_color(make_color_rgb(255, 215, 0));
-		draw_text(global.xScreenSize / 2, global.yScreenSize - 16, "Mission - Find and Execute Target in Senzela Forest");
+		draw_text(global.xScreenSize / 2, 8, "Mission - Find and Execute Target in Senzela Forest");
 	}
 }
 
@@ -1778,7 +1778,7 @@ if (instance_exists(player_obj)) {
 }
 
 //Fastforward Dialogue
-if (dialogueSystem_obj.inCutscene && !camera_obj.drawElevatorSign && !showWindowMenu && !dialogueSystem_obj.scene3 && !dialogueSystem_obj.scene6) {
+if (dialogueSystem_obj.inCutscene && !camera_obj.drawElevatorSign && !showWindowMenu) {
 	draw_set_color(make_color_rgb(255, 215, 0));
 	draw_set_halign(fa_center);
 	draw_text(global.xScreenSize / 2, global.yScreenSize - global.yScreenSize / 4 + 32, "Hold Space to Fastforward");

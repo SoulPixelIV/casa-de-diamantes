@@ -1333,7 +1333,6 @@
     {"id":{"name":"slotblockOff_spr","path":"sprites/slotblockOff_spr/slotblockOff_spr.yy",},},
     {"id":{"name":"particles","path":"objects/particles/particles.yy",},},
     {"id":{"name":"arrowDown_obj","path":"objects/arrowDown_obj/arrowDown_obj.yy",},},
-    {"id":{"name":"shopWorker_obj","path":"objects/shopWorker_obj/shopWorker_obj.yy",},},
     {"id":{"name":"ad_spr","path":"sprites/ad_spr/ad_spr.yy",},},
     {"id":{"name":"fakeSewerGround_obj","path":"objects/fakeSewerGround_obj/fakeSewerGround_obj.yy",},},
     {"id":{"name":"ramp_spr","path":"sprites/ramp_spr/ramp_spr.yy",},},

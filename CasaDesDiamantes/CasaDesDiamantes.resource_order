@@ -1138,7 +1138,6 @@
     {"name":"neonHuge_fnt","order":3,"path":"fonts/neonHuge_fnt/neonHuge_fnt.yy",},
     {"name":"slotblockOff_spr","order":153,"path":"sprites/slotblockOff_spr/slotblockOff_spr.yy",},
     {"name":"arrowDown_obj","order":10,"path":"objects/arrowDown_obj/arrowDown_obj.yy",},
-    {"name":"shopWorker_obj","order":4,"path":"objects/shopWorker_obj/shopWorker_obj.yy",},
     {"name":"ad_spr","order":41,"path":"sprites/ad_spr/ad_spr.yy",},
     {"name":"fakeSewerGround_obj","order":10,"path":"objects/fakeSewerGround_obj/fakeSewerGround_obj.yy",},
     {"name":"ramp_spr","order":1,"path":"sprites/ramp_spr/ramp_spr.yy",},

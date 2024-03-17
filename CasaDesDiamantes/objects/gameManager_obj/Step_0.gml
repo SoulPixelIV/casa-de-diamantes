@@ -220,6 +220,15 @@ if (global.multiplierTimer < 0)
 	global.multiplierTimer = global.multiplierTimerSave;
 }
 
+//Dialogue Delay
+if (global.dialogueDelayStart) {
+	global.dialogueDelay -= global.dt;
+	if (global.dialogueDelay < 0) {
+		global.dialogueDelay = global.dialogueDelaySave;
+		global.dialogueDelayStart = false;
+	}
+}
+
 //Button Delay
 global.pushDelay -= global.dt;
 

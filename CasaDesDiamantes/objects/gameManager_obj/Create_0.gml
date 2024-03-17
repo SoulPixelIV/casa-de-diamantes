@@ -23,6 +23,9 @@ global.pushDelaySave = global.pushDelay;
 global.drunknessLevel = 0;
 global.chromaticLevel = 0;
 global.transitionScreenDest = noone;
+global.dialogueDelayStart = false;
+global.dialogueDelay = 900;
+global.dialogueDelaySave = global.dialogueDelay;
 multiplierRun = false;
 
 global.shotgunUpgrade1 = true;
