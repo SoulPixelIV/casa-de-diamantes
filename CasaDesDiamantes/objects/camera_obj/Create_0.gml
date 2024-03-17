@@ -80,6 +80,7 @@ showBossHealthbar2 = false;
 showWeaponProhibited = false;
 weaponProhibitedTextTimer = 120;
 barkeeperWindowIndex = 2;
+drawDialogueBorder = false;
 chipDif = 0;
 
 cameraSpeed = 0.02;
