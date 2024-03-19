@@ -251,7 +251,7 @@ else
 }
 
 //Coinbar
-if (scoreSpin)
+if (scoreSpin && !global.pause)
 {
 	if (!audio_is_playing(coinbarSpin_snd))
 	{
