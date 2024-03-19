@@ -31,7 +31,7 @@ switch (frame) {
 		}
 	break;
 	case 4:
-		nameText = "Ricochet H\nBullets";
+		nameText = "Inf. Range\nShots";
 		priceText = "1850$";
 		price = 1850;
 		twolinemode = true;
@@ -49,7 +49,7 @@ switch (frame) {
 			}
 		} else {
 			twolinemode = true;
-			nameText = "Ricochet\nDamage";
+			nameText = "Ricochet H\nBullets";
 			priceText = "2430$";
 			if (!used && !mouseEntered) {
 				image_index = frame;

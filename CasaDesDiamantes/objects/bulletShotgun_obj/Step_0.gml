@@ -10,7 +10,7 @@ if (invincibilityTimer > 0)
 
 //Collision
 if (!place_free(x, y) && !place_meeting(x, y, colliderBulletFree_obj) && !place_meeting(x, y, colliderOneWay_obj)) {
-	if (!global.shotgunUpgrade1) {
+	if (!global.shotgunUpgrade2) {
 		if (global.bulletDelay < 0) {
 			audio_play_sound(bulletHitGround_snd, 1, false);
 			global.bulletDelay = global.bulletDelaySave;
@@ -25,7 +25,6 @@ if (!place_free(x, y) && !place_meeting(x, y, colliderBulletFree_obj) && !place_
 		}
 			
 		if (global.shotgunUpgrade2) {
-			damageMultiplier = damageMultiplier * 1.31;
 			if (damageMultiplierColor > make_color_rgb(255, 29, 29)) {
 				damageMultiplierColor -= make_color_rgb(0, 30, 30);
 			}
