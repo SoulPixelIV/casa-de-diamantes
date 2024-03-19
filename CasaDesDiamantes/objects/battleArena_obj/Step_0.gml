@@ -1,5 +1,16 @@
 /// @description Spawn enemies
 
+//Check if Arena Done
+if (arenaIndex == 1 && global.level5AArena1Done) {
+	done = true;
+}
+if (arenaIndex == 2 && global.level5AArena2Done) {
+	done = true;
+}
+if (arenaIndex == 3 && global.level5BArena3Done) {
+	done = true;
+}
+
 setWave = false;
 
 //Spawn wounded enemies
@@ -43,6 +54,15 @@ if (!place_meeting(x, y, enemy_obj) && !place_meeting(x, y, spawnCloud_obj))
 	if (wave == highestWave && !setWave)
 	{
 		done = true;
+		if (arenaIndex == 1) {
+			global.level5AArena1Done = true;
+		}
+		if (arenaIndex == 2) {
+			global.level5AArena2Done = true;
+		}
+		if (arenaIndex == 3) {
+			global.level5BArena3Done = true;
+		}
 	}
 }
 

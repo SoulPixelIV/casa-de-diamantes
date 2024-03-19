@@ -30,6 +30,10 @@ global.bulletDelay = 4;
 global.bulletDelaySave = global.bulletDelay;
 multiplierRun = false;
 
+global.level5AArena1Done = false;
+global.level5AArena2Done = false;
+global.level5BArena3Done = false;
+
 global.shotgunUpgrade1 = true;
 global.shotgunUpgrade2 = true;
 

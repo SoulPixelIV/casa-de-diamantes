@@ -1026,24 +1026,28 @@ if (!noHUD && instance_exists(player_obj))
 	if (redDoorMessage) {
 		draw_set_color(make_color_rgb(255,215,0));
 		draw_set_halign(fa_center);
+		draw_set_font(gothicPixel_fnt);
 		draw_text(global.xScreenSize / 2, global.yScreenSize - global.yScreenSize / 4 - 32, "You need the red keycard to unlock this door!");
 		draw_set_halign(fa_left);
 	}
 	if (blueDoorMessage) {
 		draw_set_color(make_color_rgb(255,215,0));
 		draw_set_halign(fa_center);
+		draw_set_font(gothicPixel_fnt);
 		draw_text(global.xScreenSize / 2, global.yScreenSize - global.yScreenSize / 4 - 32, "You need the blue keycard to unlock this door!");
 		draw_set_halign(fa_left);
 	}
 	if (yellowDoorMessage) {
 		draw_set_color(make_color_rgb(255,215,0));
 		draw_set_halign(fa_center);
+		draw_set_font(gothicPixel_fnt);
 		draw_text(global.xScreenSize / 2, global.yScreenSize - global.yScreenSize / 4 - 32, "You need the yellow keycard to unlock this door!");
 		draw_set_halign(fa_left);
 	}
 	if (warpzoneMessage) {
 		draw_set_color(make_color_rgb(255,215,0));
 		draw_set_halign(fa_center);
+		draw_set_font(gothicPixel_fnt);
 		draw_text(global.xScreenSize / 2, global.yScreenSize - global.yScreenSize / 4 - 32, "You need the golden key to unlock this door!");
 		draw_set_halign(fa_left);
 	}
