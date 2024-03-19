@@ -11,12 +11,18 @@ if (invincibilityTimer > 0)
 //Collision
 if (!place_free(x, y) && !place_meeting(x, y, colliderBulletFree_obj) && !place_meeting(x, y, colliderOneWay_obj)) {
 	if (!global.shotgunUpgrade1) {
-		audio_play_sound(bulletHitGround_snd, 1, false);
+		if (global.bulletDelay < 0) {
+			audio_play_sound(bulletHitGround_snd, 1, false);
+			global.bulletDelay = global.bulletDelaySave;
+		}
 		instance_change(bulletHit_obj, true);
 	} else {			
 		dir += 180;
 
-		audio_play_sound(bulletHitGround_snd, 1, false);
+		if (global.bulletDelay < 0) {
+			audio_play_sound(bulletHitGround_snd, 1, false);
+			global.bulletDelay = global.bulletDelaySave;
+		}
 			
 		if (global.shotgunUpgrade2) {
 			damageMultiplier = damageMultiplier * 1.31;

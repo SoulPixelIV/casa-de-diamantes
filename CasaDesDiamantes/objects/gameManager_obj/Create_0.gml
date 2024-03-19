@@ -26,6 +26,8 @@ global.transitionScreenDest = noone;
 global.dialogueDelayStart = false;
 global.dialogueDelay = 900;
 global.dialogueDelaySave = global.dialogueDelay;
+global.bulletDelay = 4;
+global.bulletDelaySave = global.bulletDelay;
 multiplierRun = false;
 
 global.shotgunUpgrade1 = true;

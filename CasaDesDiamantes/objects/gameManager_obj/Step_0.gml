@@ -229,6 +229,9 @@ if (global.dialogueDelayStart) {
 	}
 }
 
+//Bullet Delay
+global.bulletDelay -= global.dt;
+
 //Button Delay
 global.pushDelay -= global.dt;
 
