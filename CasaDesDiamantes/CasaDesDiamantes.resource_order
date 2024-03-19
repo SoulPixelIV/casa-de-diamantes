@@ -1560,6 +1560,7 @@
     {"name":"plantBoss_obj","order":131,"path":"objects/plantBoss_obj/plantBoss_obj.yy",},
     {"name":"warmJacketDashEquipped_spr","order":3,"path":"sprites/warmJacketDashEquipped_spr/warmJacketDashEquipped_spr.yy",},
     {"name":"spotlightYellow_obj","order":4,"path":"objects/spotlightYellow_obj/spotlightYellow_obj.yy",},
+    {"name":"goldenKeyUI_spr","order":103,"path":"sprites/goldenKeyUI_spr/goldenKeyUI_spr.yy",},
     {"name":"spotlightPlayer_obj","order":5,"path":"objects/spotlightPlayer_obj/spotlightPlayer_obj.yy",},
     {"name":"voidMonsterPos4_obj","order":165,"path":"objects/voidMonsterPos4_obj/voidMonsterPos4_obj.yy",},
     {"name":"Spawn2_obj","order":1,"path":"objects/Spawn2_obj/Spawn2_obj.yy",},

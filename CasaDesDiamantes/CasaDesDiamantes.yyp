@@ -1799,6 +1799,7 @@
     {"id":{"name":"plantBoss_obj","path":"objects/plantBoss_obj/plantBoss_obj.yy",},},
     {"id":{"name":"warmJacketDashEquipped_spr","path":"sprites/warmJacketDashEquipped_spr/warmJacketDashEquipped_spr.yy",},},
     {"id":{"name":"spotlightYellow_obj","path":"objects/spotlightYellow_obj/spotlightYellow_obj.yy",},},
+    {"id":{"name":"goldenKeyUI_spr","path":"sprites/goldenKeyUI_spr/goldenKeyUI_spr.yy",},},
     {"id":{"name":"spotlightPlayer_obj","path":"objects/spotlightPlayer_obj/spotlightPlayer_obj.yy",},},
     {"id":{"name":"voidMonsterPos4_obj","path":"objects/voidMonsterPos4_obj/voidMonsterPos4_obj.yy",},},
     {"id":{"name":"Spawn2_obj","path":"objects/Spawn2_obj/Spawn2_obj.yy",},},

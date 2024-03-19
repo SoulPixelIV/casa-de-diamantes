@@ -764,22 +764,18 @@ if (!noHUD && instance_exists(player_obj))
 	
 	//Keycards
 	if (global.keyRed) {
-		draw_sprite_ext(redKeycard_spr, -1, (global.xScreenSize) - 28, (0 / 2) + 32, 1, 1, 0, -1, 1);
+		draw_sprite_ext(redKeycard_spr, -1, (global.xScreenSize) - 22, (0 / 2) + 32, 1, 1, 0, -1, 1);
 	}
 	if (global.keyBlue) {
-		draw_sprite_ext(blueKeycard_spr, -1, (global.xScreenSize) - 42, (0 / 2) + 32, 1, 1, 0, -1, 1);
+		draw_sprite_ext(blueKeycard_spr, -1, (global.xScreenSize) - 36, (0 / 2) + 32, 1, 1, 0, -1, 1);
 	}
 	if (global.keyYellow) {
-		draw_sprite_ext(yellowKeycard_spr, -1, (global.xScreenSize) - 56, (0 / 2) + 32, 1, 1, 0, -1, 1);
+		draw_sprite_ext(yellowKeycard_spr, -1, (global.xScreenSize) - 50, (0 / 2) + 32, 1, 1, 0, -1, 1);
 	}
 	
-	//Diamond Key
+	//Neural Key
 	if (global.hasWarpzoneKey) {
-		if (global.syringes == 0) {
-			draw_sprite_ext(diamond_spr, -1, 32 + 0 / 2, (0 / 2) + 64, 1, 1, 0, -1, 1);
-		} else {
-			draw_sprite_ext(diamond_spr, -1, 54 + 0 / 2, (0 / 2) + 64, 1, 1, 0, -1, 1);
-		}
+		draw_sprite_ext(goldenKeyUI_spr, -1, (global.xScreenSize) - 64, (0 / 2) + 32, 1, 1, 0, -1, 1);
 	}
 	
 	//Chipbar
