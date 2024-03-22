@@ -15,6 +15,10 @@ if (teleporting) {
 if (blackscreenDelay < 0) {
 	player_obj.x = Spawn5_obj.x;
 	player_obj.y = Spawn5_obj.y;
+	if (instance_exists(cutieplusSteph_obj)) {
+		cutieplusSteph_obj.x = Spawn5_obj.x;
+		cutieplusSteph_obj.y = Spawn5_obj.y;
+	}
 	player_obj.movement = true;
 	finishingTeleport = true;
 	blackscreenDelay = blackscreenDelaySave;

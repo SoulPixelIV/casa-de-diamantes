@@ -44,6 +44,10 @@ if (elevatorTimer < 0 && used) {
 			instance_create_layer(Spawn4_obj.x, Spawn4_obj.y, "Instances", player_obj);
 			player_obj.x = Spawn4_obj.x;
 			player_obj.y = Spawn4_obj.y;
+			if (instance_exists(cutieplusSteph_obj)) {
+				cutieplusSteph_obj.x = Spawn4_obj.x;
+				cutieplusSteph_obj.y = Spawn4_obj.y;
+			}
 			playerSpawned = true;
 		}
 		player_obj.movement = true;
@@ -92,6 +96,10 @@ if (elevatorTimer < 0 && used) {
 			instance_create_layer(Spawn4_obj.x, Spawn4_obj.y, "Instances", player_obj);
 			player_obj.x = Spawn3_obj.x;
 			player_obj.y = Spawn3_obj.y;
+			if (instance_exists(cutieplusSteph_obj)) {
+				cutieplusSteph_obj.x = Spawn3_obj.x;
+				cutieplusSteph_obj.y = Spawn3_obj.y;
+			}
 			playerSpawned = true;
 		}
 		player_obj.movement = true;
