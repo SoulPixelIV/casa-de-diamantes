@@ -23,3 +23,14 @@ audio_sound_pitch(expSnd, random_range(0.8, 1));
 screenshake(60, 25, 0.6, id);
 
 alarm[0] = 1;
+
+//Bigger Explosion Size for Enemies
+if (!dealtDamage && damageToEnemies) {
+	numEnemies = instance_number(enemy_obj);
+	for (i = 0; i < numEnemies; i++) {
+		currEnemy = instance_find(enemy_obj, i);
+		if (distance_to_object(currEnemy) < 100) {
+			currEnemy.hp -= damage * 3;
+		}
+	}
+}

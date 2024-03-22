@@ -6,6 +6,7 @@ if (breakOnContact) {
 	if (instance_exists(col)) {
 		instance_destroy(col);
 	}
+	audio_play_sound_on(emitter, glassBreaking_snd, false, false);
 	instance_destroy();
 }
 
