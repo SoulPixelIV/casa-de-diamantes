@@ -1006,10 +1006,13 @@ if (!noHUD && instance_exists(player_obj))
 	
 	//Battlearena Onscreen Message
 	if (arenaCompleteMessage) {
-		draw_set_color(make_color_rgb(255,215,0));
-		draw_set_halign(fa_center);
 		arenaCompleteMessageTimer -= global.dt;
-		draw_text(x, (yScreenSize / 3), "ARENA CLEARED!");
+		draw_set_halign(fa_center);
+		draw_set_font(gothicPixel_fnt);
+		draw_set_color(c_black);
+		draw_text(global.xScreenSize / 2 - 1, global.yScreenSize / 4 + 1, "ARENA CLEARED");
+		draw_set_color(make_color_rgb(255,215,0));
+		draw_text(global.xScreenSize / 2, global.yScreenSize / 4, "ARENA CLEARED");
 		draw_set_halign(fa_left);
 		
 		if (arenaCompleteMessageTimer < 0) {
