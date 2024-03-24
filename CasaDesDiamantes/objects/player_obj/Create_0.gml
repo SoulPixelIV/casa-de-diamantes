@@ -229,6 +229,9 @@ else
 	unarmed = true;
 }
 
+//Create Dropshadow
+instance_create_layer(x, y + 26, "BackgroundObjects", dropShadow_obj);
+
 //Set Blackscreen Strength
 blackscreenStartTimer = 300;
 blackscreenDone = false;
