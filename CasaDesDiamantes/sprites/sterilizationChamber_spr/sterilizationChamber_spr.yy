@@ -14,13 +14,17 @@
   "For3D": false,
   "frames": [
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"3184cd77-ff3b-4200-a73e-c838c4c38e4a",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"fd757c88-ccf3-41e5-98ef-6eff89ad09ab",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"9894a0b3-0222-40d0-9918-e944fe9b4ac2",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"8e638b8f-276f-4796-884b-bcec84df0238",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"2f470f5c-05f3-4f35-b903-ca5becb15ccb",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 88,
   "HTile": false,
   "layers": [
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"0e3cd1cd-a1d4-46f6-b9b3-8bda723628c8","blendMode":0,"displayName":"Layer 4","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"9c4082f2-2a15-4208-8a10-13e3867c1a56","blendMode":0,"displayName":"Layer 3","isLocked":false,"opacity":100.0,"visible":true,},
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"0464a8af-6b58-4b55-9bac-a8b926406844","blendMode":0,"displayName":"Layer 1","isLocked":false,"opacity":100.0,"visible":true,},
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"7cb53790-54d4-48f5-95bd-8d888e5c24bf","blendMode":0,"displayName":"Layer 2","isLocked":false,"opacity":100.0,"visible":true,},
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"e43f6024-9dad-42ba-ad2f-7505d341742f","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
@@ -46,7 +50,7 @@
     "events": {"resourceType":"KeyframeStore<MessageEventKeyframe>","resourceVersion":"1.0","Keyframes":[],},
     "eventStubScript": null,
     "eventToFunction": {},
-    "length": 2.0,
+    "length": 4.0,
     "lockOrigin": false,
     "moments": {"resourceType":"KeyframeStore<MomentsEventKeyframe>","resourceVersion":"1.0","Keyframes":[],},
     "playback": 1,
@@ -58,7 +62,9 @@
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
             {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"3184cd77-ff3b-4200-a73e-c838c4c38e4a","path":"sprites/sterilizationChamber_spr/sterilizationChamber_spr.yy",},},},"Disabled":false,"id":"b1b24300-9230-47f6-8523-4373b7de08f8","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"fd757c88-ccf3-41e5-98ef-6eff89ad09ab","path":"sprites/sterilizationChamber_spr/sterilizationChamber_spr.yy",},},},"Disabled":false,"id":"6f856015-8d6f-4a9f-98b9-3defd56fcc61","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"9894a0b3-0222-40d0-9918-e944fe9b4ac2","path":"sprites/sterilizationChamber_spr/sterilizationChamber_spr.yy",},},},"Disabled":false,"id":"4b8d1b46-a6fe-43ab-bbd1-e013852e13d1","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"8e638b8f-276f-4796-884b-bcec84df0238","path":"sprites/sterilizationChamber_spr/sterilizationChamber_spr.yy",},},},"Disabled":false,"id":"db1074ba-00ca-456f-bd58-64f0e43db15b","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"2f470f5c-05f3-4f35-b903-ca5becb15ccb","path":"sprites/sterilizationChamber_spr/sterilizationChamber_spr.yy",},},},"Disabled":false,"id":"fd948702-e3e3-43cf-91b2-6c1dab6d8c2c","IsCreationKey":false,"Key":3.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

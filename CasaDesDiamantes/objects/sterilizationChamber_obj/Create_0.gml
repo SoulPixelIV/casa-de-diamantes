@@ -1,5 +1,6 @@
 image_speed = 0;
 image_index = 0;
+animationSpeed = 1;
 
 sterilization = false;
 sterilizationTimer = 600;

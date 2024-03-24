@@ -262,6 +262,7 @@
     {"id":{"name":"test","path":"sprites/test/test.yy",},},
     {"id":{"name":"__obj_ppf_heatwave_renderer","path":"objects/__obj_ppf_heatwave_renderer/__obj_ppf_heatwave_renderer.yy",},},
     {"id":{"name":"slide_snd","path":"sounds/slide_snd/slide_snd.yy",},},
+    {"id":{"name":"sterilizationChamberScanning_spr","path":"sprites/sterilizationChamberScanning_spr/sterilizationChamberScanning_spr.yy",},},
     {"id":{"name":"playerDashNude_spr","path":"sprites/playerDashNude_spr/playerDashNude_spr.yy",},},
     {"id":{"name":"playerFlipLEGACY_spr","path":"sprites/playerFlipLEGACY_spr/playerFlipLEGACY_spr.yy",},},
     {"id":{"name":"ledBarRed_spr","path":"sprites/ledBarRed_spr/ledBarRed_spr.yy",},},

@@ -10,5 +10,9 @@ if (distance_to_object(player_obj) < 32 && !sterilization && player_obj.plagueTr
 	}
 	sprite_index = sterilizationChamberOutline_spr;
 } else {
-	sprite_index = sterilizationChamber_spr;
+	if (sterilization) {
+		sprite_index = sterilizationChamberScanning_spr;
+	} else {
+		sprite_index = sterilizationChamber_spr;
+	}
 }

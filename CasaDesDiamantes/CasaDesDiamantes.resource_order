@@ -133,6 +133,7 @@
     {"name":"houseTiles_spr","order":17,"path":"sprites/houseTiles_spr/houseTiles_spr.yy",},
     {"name":"test","order":140,"path":"sprites/test/test.yy",},
     {"name":"slide_snd","order":11,"path":"sounds/slide_snd/slide_snd.yy",},
+    {"name":"sterilizationChamberScanning_spr","order":229,"path":"sprites/sterilizationChamberScanning_spr/sterilizationChamberScanning_spr.yy",},
     {"name":"playerFlipLEGACY_spr","order":7,"path":"sprites/playerFlipLEGACY_spr/playerFlipLEGACY_spr.yy",},
     {"name":"ledBarRed_spr","order":1,"path":"sprites/ledBarRed_spr/ledBarRed_spr.yy",},
     {"name":"redKeyGateBackgroundOpening_spr","order":216,"path":"sprites/redKeyGateBackgroundOpening_spr/redKeyGateBackgroundOpening_spr.yy",},
