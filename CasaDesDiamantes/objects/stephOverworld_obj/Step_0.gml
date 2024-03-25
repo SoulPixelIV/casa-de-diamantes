@@ -56,14 +56,12 @@ if (global.currentWorld == 1 && !startSelectionTimer) {
 	}
 	
 	if (keyboard_check_pressed(vk_enter) || gamepad_button_check_pressed(0, gp_face1) || gamepad_button_check_pressed(4, gp_face1)) {
-		if (lastWorld != 1) {
-			if (!global.reachedCasino) {
-				room_goto(level_Casino);
-				global.reachedCasino = true;
-			} else {
-				global.moveToWorld = 1;
-				room_goto(blimpAnim);
-			}
+		if (!global.reachedCasino) {
+			room_goto(level_Casino);
+			global.reachedCasino = true;
+		} else {
+			global.moveToWorld = 1;
+			room_goto(blimpAnim);
 		}
 	}
 }

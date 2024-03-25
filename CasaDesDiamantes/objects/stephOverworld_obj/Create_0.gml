@@ -1,5 +1,5 @@
 startSelectionTimer = false;
-selectionDelay = 160;
+selectionDelay = 90;
 
 selectionDelaySave = selectionDelay;
 
