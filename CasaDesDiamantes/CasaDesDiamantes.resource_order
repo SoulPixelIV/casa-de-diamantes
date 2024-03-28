@@ -1020,6 +1020,7 @@
     {"name":"diamond_obj","order":26,"path":"objects/diamond_obj/diamond_obj.yy",},
     {"name":"lighting_get_active_camera","order":4,"path":"scripts/lighting_get_active_camera/lighting_get_active_camera.yy",},
     {"name":"slotmachineLevel3_snd","order":47,"path":"sounds/slotmachineLevel3_snd/slotmachineLevel3_snd.yy",},
+    {"name":"fuse_snd","order":81,"path":"sounds/fuse_snd/fuse_snd.yy",},
     {"name":"__ppf_sh_render_dof","order":5,"path":"shaders/__ppf_sh_render_dof/__ppf_sh_render_dof.yy",},
     {"name":"playerJumpSpin_spr","order":18,"path":"sprites/playerJumpSpin_spr/playerJumpSpin_spr.yy",},
     {"name":"lighting_update_camera","order":5,"path":"scripts/lighting_update_camera/lighting_update_camera.yy",},

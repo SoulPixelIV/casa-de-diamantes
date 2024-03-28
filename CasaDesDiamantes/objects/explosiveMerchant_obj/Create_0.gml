@@ -26,7 +26,7 @@ icecicleAttackTimer = 200;
 
 lastBullet = bulletPistol_obj;
 ammoSpawnCount = 1;
-animationSpeed = 0.5;
+animationSpeed = 1;
 savePosX = x;
 savePosY = y;
 movement = true;
@@ -74,3 +74,6 @@ audio_drop_start = 150;
 audio_falloff_set_model(audio_falloff_linear_distance);
 audio_emitter_position(emitter, x, y, 0);
 audio_emitter_falloff(emitter, audio_drop_start, audio_max_distance, 1);
+
+//Fuse Sound
+audio_play_sound_on(emitter, fuse_snd, true, false);
