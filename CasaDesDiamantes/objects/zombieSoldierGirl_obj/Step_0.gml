@@ -24,7 +24,7 @@ if (attackCooldown > 75 && (attackInProg1 || attackInProg2))
 if (instance_exists(player_obj)) {
 	if (aggro) {
 		if (distance_to_object(player_obj) < aggroRange) {
-			if (attackCooldown > 150 || attackCooldown < 0) {
+			if (attackCooldown > 75 || attackCooldown < 0) {
 				if (!place_meeting(x + 24, y, collider_obj) && !place_meeting(x - 24, y, collider_obj) && !place_meeting(x, y + 24, collider_obj) && !place_meeting(x, y - 24, collider_obj)) {
 					if (!place_meeting(x + 24, y, neuralColliders_obj) && !place_meeting(x - 24, y, neuralColliders_obj) && !place_meeting(x, y + 24, neuralColliders_obj) && !place_meeting(x, y - 24, neuralColliders_obj)) {
 						image_angle = point_direction(x, y, player_obj.x, player_obj.y);
