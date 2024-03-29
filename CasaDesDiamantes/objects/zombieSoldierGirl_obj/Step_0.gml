@@ -369,7 +369,6 @@ if (aggro)
 		audio_sound_pitch(shot, random_range(0.9, 1.1));
 		
 		instance_create_layer(x + 10, y, "Instances", bulletZombieSoldierGirl_obj);
-		instance_create_layer(x + 10, y, "Instances", shotLightDualBarettas_obj);	
 
 		attackCooldown = attackCooldownSave;
 		sprite_index = zombieSoldierGirl_spr;
