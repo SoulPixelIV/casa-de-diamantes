@@ -123,7 +123,6 @@
     {"name":"inst_632E5877","path":"rooms/level2/level2.yy",},
     {"name":"inst_39FC190A","path":"rooms/level2/level2.yy",},
     {"name":"inst_7D86BBCE","path":"rooms/level2/level2.yy",},
-    {"name":"inst_70831BD","path":"rooms/level2/level2.yy",},
     {"name":"inst_915EBE6","path":"rooms/level2/level2.yy",},
     {"name":"inst_F521A1C","path":"rooms/level2/level2.yy",},
     {"name":"inst_6B5D6FCD","path":"rooms/level2/level2.yy",},
@@ -327,6 +326,7 @@
     {"name":"inst_3E70E03D","path":"rooms/level2/level2.yy",},
     {"name":"inst_496B3824","path":"rooms/level2/level2.yy",},
     {"name":"inst_352DEDDB","path":"rooms/level2/level2.yy",},
+    {"name":"inst_536DD19A","path":"rooms/level2/level2.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -623,7 +623,6 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_632E5877","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"fallingMinecart_obj","path":"objects/fallingMinecart_obj/fallingMinecart_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":3653.0,"y":1592.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_39FC190A","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"chipRedPickupStatic_obj","path":"objects/chipRedPickupStatic_obj/chipRedPickupStatic_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":3776.0,"y":1504.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7D86BBCE","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"chipBluePickupStatic_obj","path":"objects/chipBluePickupStatic_obj/chipBluePickupStatic_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":3776.0,"y":1472.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_70831BD","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"syringeStatic_obj","path":"objects/syringeStatic_obj/syringeStatic_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":3808.0,"y":1495.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_915EBE6","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"chipRedPickupStatic_obj","path":"objects/chipRedPickupStatic_obj/chipRedPickupStatic_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":3840.0,"y":1504.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_F521A1C","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"chipBluePickupStatic_obj","path":"objects/chipBluePickupStatic_obj/chipBluePickupStatic_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":3808.0,"y":1440.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_6B5D6FCD","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"chipRedPickupStatic_obj","path":"objects/chipRedPickupStatic_obj/chipRedPickupStatic_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":3808.0,"y":1472.0,},
@@ -740,6 +739,7 @@
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"level2ZombieCutsceneSpawnpoint_obj","path":"objects/level2ZombieCutsceneSpawnpoint_obj/level2ZombieCutsceneSpawnpoint_obj.yy",},"propertyId":{"name":"dir","path":"objects/level2ZombieCutsceneSpawnpoint_obj/level2ZombieCutsceneSpawnpoint_obj.yy",},"value":"-1",},
           ],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1568.0,"y":1088.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_4CAF01F4","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"level2ZombieCutsceneSpawnpoint2_obj","path":"objects/level2ZombieCutsceneSpawnpoint2_obj/level2ZombieCutsceneSpawnpoint2_obj.yy",},"properties":[],"rotation":0.0,"scaleX":0.25,"scaleY":0.5,"x":1376.0,"y":1088.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_536DD19A","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"diamond_obj","path":"objects/diamond_obj/diamond_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":3808.0,"y":1504.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"MidgroundObjects","depth":1500,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_4FF5F634","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"checkpoint_obj","path":"objects/checkpoint_obj/checkpoint_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":2656.0,"y":1120.0,},

@@ -1553,7 +1553,7 @@ if (damageCooldown < 0)
 
 if (hp <= 0 || infection > hp)
 {
-	if (global.syringes < 1 || room == level0 || room == level1 || room == level2 || room == level3)
+	if (global.syringes < 1)
 	{
 		camera_obj.finalDeath = true;
 		camera_obj.drawInfectionText = true;
@@ -1590,12 +1590,7 @@ if (hp <= 0 || infection > hp)
 				currVine.image_angle = random_range(0, 359);
 				currVine.growSpeed = random_range(1, 2.4);
 			}
-			vineDeathSprite = instance_create_layer(x, y, "ForegroundObjects", playerVineDeath_obj);
-			movement = false;
-			inChamber = true;
-			gravityOn = false;
-		
-			deathActivated = true;
+			instance_create_layer(x, y, "ForegroundObjects", playerVineDeath_obj);		
 		}
 	}
 	

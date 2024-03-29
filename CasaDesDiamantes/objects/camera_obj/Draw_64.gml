@@ -1053,6 +1053,7 @@ if (!noHUD && instance_exists(player_obj))
 	
 	//Low Ammo Message
 	if (!redDoorMessage && !blueDoorMessage && !yellowDoorMessage && !warpzoneMessage) {
+		draw_set_font(gothicPixel_fnt);
 		if (global.currentWeapon != gameManager_obj.pickedWeapon.pistol) {
 			if ((global.pistolAmmo < 6 && global.unlockedWeapon[1])) {
 				draw_set_halign(fa_center);
