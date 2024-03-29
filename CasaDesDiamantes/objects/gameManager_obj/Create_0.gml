@@ -218,6 +218,8 @@ currVolElevatorBell = audio_sound_get_gain(elevatorBell_snd);
 currVolSlotWin1 = audio_sound_get_gain(slotWin1_snd);
 currVolSlotWin2 = audio_sound_get_gain(slotWin2_snd);
 currVolGlassBreaking = audio_sound_get_gain(glassBreaking_snd);
+currVolFuse = audio_sound_get_gain(fuse_snd);
+currVolInsectSpit = audio_sound_get_gain(insectSpit_snd);
 
 currVolInfectedVoice = audio_sound_get_gain(infectedVoice_snd);
 currVolInfectionVoice = audio_sound_get_gain(plagueInfectionVoice_snd);

@@ -1274,6 +1274,7 @@
     {"id":{"name":"movingPlatformCheckpoint_obj","path":"objects/movingPlatformCheckpoint_obj/movingPlatformCheckpoint_obj.yy",},},
     {"id":{"name":"SF3_PW0_teleporter","path":"objects/SF3_PW0_teleporter/SF3_PW0_teleporter.yy",},},
     {"id":{"name":"light_remove_from_world","path":"scripts/light_remove_from_world/light_remove_from_world.yy",},},
+    {"id":{"name":"insectSpit_snd","path":"sounds/insectSpit_snd/insectSpit_snd.yy",},},
     {"id":{"name":"light_destroy","path":"scripts/light_destroy/light_destroy.yy",},},
     {"id":{"name":"lighting_global","path":"scripts/lighting_global/lighting_global.yy",},},
     {"id":{"name":"slotblockGear_spr","path":"sprites/slotblockGear_spr/slotblockGear_spr.yy",},},

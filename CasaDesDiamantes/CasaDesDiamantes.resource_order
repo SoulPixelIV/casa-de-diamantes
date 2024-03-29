@@ -1087,6 +1087,7 @@
     {"name":"movingPlatformCheckpoint_obj","order":44,"path":"objects/movingPlatformCheckpoint_obj/movingPlatformCheckpoint_obj.yy",},
     {"name":"SF3_PW0_teleporter","order":18,"path":"objects/SF3_PW0_teleporter/SF3_PW0_teleporter.yy",},
     {"name":"light_remove_from_world","order":10,"path":"scripts/light_remove_from_world/light_remove_from_world.yy",},
+    {"name":"insectSpit_snd","order":82,"path":"sounds/insectSpit_snd/insectSpit_snd.yy",},
     {"name":"light_destroy","order":11,"path":"scripts/light_destroy/light_destroy.yy",},
     {"name":"lighting_global","order":3,"path":"scripts/lighting_global/lighting_global.yy",},
     {"name":"slotblockGear_spr","order":226,"path":"sprites/slotblockGear_spr/slotblockGear_spr.yy",},

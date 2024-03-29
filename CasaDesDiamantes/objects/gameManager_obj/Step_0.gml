@@ -83,6 +83,8 @@ audio_sound_pitch(elevatorBell_snd, clamp(1 * global.timeScale, 0.5, 1.5));
 audio_sound_pitch(slotWin1_snd, clamp(1 * global.timeScale, 0.5, 1.5));
 audio_sound_pitch(slotWin2_snd, clamp(1 * global.timeScale, 0.5, 1.5));
 audio_sound_pitch(glassBreaking_snd, clamp(1 * global.timeScale, 0.5, 1.5));
+audio_sound_pitch(fuse_snd, clamp(1 * global.timeScale, 0.5, 1.5));
+audio_sound_pitch(insectSpit_snd, clamp(1 * global.timeScale, 0.5, 1.5));
 
 audio_sound_pitch(infectedVoice_snd, clamp(1 * global.timeScale, 0.5, 1.5));
 audio_sound_pitch(plagueInfectionVoice_snd, clamp(1 * global.timeScale, 0.5, 1.5));
@@ -175,6 +177,8 @@ audio_sound_gain(elevatorBell_snd, (global.soundVolume / 100) * currVolElevatorB
 audio_sound_gain(slotWin1_snd, (global.soundVolume / 100) * currVolSlotWin1, 0);
 audio_sound_gain(slotWin2_snd, (global.soundVolume / 100) * currVolSlotWin2, 0);
 audio_sound_gain(glassBreaking_snd, (global.soundVolume / 100) * currVolGlassBreaking, 0);
+audio_sound_gain(fuse_snd, (global.soundVolume / 100) * currVolFuse, 0);
+audio_sound_gain(insectSpit_snd, (global.soundVolume / 100) * currVolInsectSpit, 0);
 
 audio_sound_gain(infectedVoice_snd, (global.soundVolume / 100) * currVolInfectedVoice, 0);
 audio_sound_gain(plagueInfectionVoice_snd, (global.soundVolume / 100) * currVolInfectionVoice, 0);
