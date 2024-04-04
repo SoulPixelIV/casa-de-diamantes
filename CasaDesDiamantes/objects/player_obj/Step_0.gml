@@ -1551,7 +1551,7 @@ if (damageCooldown < 0)
 	}
 }
 
-if (hp <= 0 || infection > hp)
+if (hp <= 0 || infection > hp || deathActivated)
 {	
 	player_obj.plagueTransformation = false;
 	player_obj.infection = 0;

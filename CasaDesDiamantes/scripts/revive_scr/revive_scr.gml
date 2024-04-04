@@ -4,6 +4,7 @@ function revive_scr() {
 	camera_obj.deathDelayTimer = camera_obj.deathDelayTimerSave;
 	camera_obj.noHUD = false;
 	camera_obj.drawInfectionText = false;
+	camera_obj.deathFadeIn = 0;
 	player_obj.movement = true;
 	global.syringes -= 1;
 	player_obj.syringesLost += 1;
