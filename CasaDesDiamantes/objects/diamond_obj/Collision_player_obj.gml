@@ -1,4 +1,4 @@
-global.hasWarpzoneKey = true;
+global.diamonds++;
 
 partEmitter = part_emitter_create(global.partSystem);
 part_emitter_region(global.partSystem, partEmitter, x - 32, x + 32, y - 32, y + 32, ps_shape_ellipse, ps_distr_invgaussian);

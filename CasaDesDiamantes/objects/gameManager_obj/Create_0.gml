@@ -5,6 +5,7 @@ global.money = 0;
 global.skin = 1;
 global.syringes = 2;
 global.room = noone;
+global.diamonds = 2;
 global.lastCheckpoint = noone;
 global.hasWarpzoneKey = false;
 global.keyRed = false;

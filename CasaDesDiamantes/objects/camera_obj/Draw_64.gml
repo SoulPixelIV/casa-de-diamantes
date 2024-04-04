@@ -781,6 +781,14 @@ if (!noHUD && instance_exists(player_obj))
 	//Chipbar
 	draw_sprite_ext(scoreBorder_spr, -1, global.xScreenSize - 11, 11, 1, 1, 0, -1, 1);
 	
+	//Diamonds
+	draw_sprite_ext(diamond_spr, -1, global.xScreenSize - 39, global.yScreenSize - 20, 1, 1, 0, -1, 1);
+	draw_set_color(make_color_rgb(255,215,0));
+	draw_set_font(gothicPixel_fnt);
+	draw_set_halign(fa_left);
+	draw_text(global.xScreenSize - 29, global.yScreenSize - 17, "x " + string(global.diamonds));
+	draw_set_font(gothicPixel_fnt);
+	
 	//###### UI TECH ######
 	//Radiation Meter
 	if (instance_exists(player_obj))
