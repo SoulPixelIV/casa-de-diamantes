@@ -2,7 +2,7 @@
   "resourceType": "GMRoom",
   "resourceVersion": "1.0",
   "name": "transitionScreen",
-  "creationCodeFile": "",
+  "creationCodeFile": "${project_dir}/rooms/transitionScreen/RoomCreationCode.gml",
   "inheritCode": false,
   "inheritCreationOrder": false,
   "inheritLayers": false,
