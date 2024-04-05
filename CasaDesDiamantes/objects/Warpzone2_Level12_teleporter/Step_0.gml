@@ -2,9 +2,6 @@ if (place_meeting(x, y, player_obj))
 {
 	teleporting = true;
 	player_obj.movement = false;
-	global.keyRed = false;
-	global.keyBlue = false;
-	global.keyYellow = false;
 }
 
 if (teleporting) {
