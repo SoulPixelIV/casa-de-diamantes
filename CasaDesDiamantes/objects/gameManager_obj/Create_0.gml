@@ -3,9 +3,9 @@
 global.spawn = 0;
 global.money = 0;
 global.skin = 1;
-global.syringes = 2;
+global.syringes = 0;
 global.room = noone;
-global.diamonds = 2;
+global.diamonds = 0;
 global.lastCheckpoint = noone;
 global.hasWarpzoneKey = false;
 global.keyRed = false;
@@ -57,6 +57,17 @@ global.arrowCindyDone = false;
 
 global.pwlevel2UnlockedElevator = false;
 global.pwlevel3UnlockedElevator = false;
+
+global.level2Gate = false;
+global.level5ABooster = false;
+global.level5ABooster2 = false;
+global.level5BGate = false;
+global.level5BGate2 = false;
+global.level8Booster = false;
+global.level8Booster2 = false;
+global.level8Booster3 = false;
+global.level12Gate = false;
+global.level13Booster = false;
 
 global.pistolAmmo = 0;
 global.pistolAmmoMax = 16;
