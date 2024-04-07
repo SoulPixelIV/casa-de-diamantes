@@ -6,3 +6,11 @@ goalY2 = y + 176;
 
 originX = x;
 originY = y;
+
+if (room == level5A && global.level5AGate) {
+	open = true;
+}
+
+if (room == level5B && global.level5BGate2) {
+	open = true;
+}

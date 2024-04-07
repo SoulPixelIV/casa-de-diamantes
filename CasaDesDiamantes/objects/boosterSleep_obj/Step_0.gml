@@ -11,6 +11,22 @@ if (boostDelay < 0)
 
 if (open)
 {
+	if (room == level5A) {
+		global.level5ABooster = true;
+	}	
+	if (room == level8 && index == 0) {
+		global.level8Booster = true;
+	}	
+	if (room == level8 && index == 1) {
+		global.level8Booster2 = true;
+	}	
+	if (room == level8 && index == 2) {
+		global.level8Booster3 = true;
+	}
+	if (room == level13 && index == 3) {
+		global.level13Booster = true;
+	}
+		
 	sprite_index = boosterOn_spr;
 	
 	if (!createdLight)

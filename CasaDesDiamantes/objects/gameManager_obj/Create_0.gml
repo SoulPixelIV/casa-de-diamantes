@@ -60,7 +60,7 @@ global.pwlevel3UnlockedElevator = false;
 
 global.level2Gate = false;
 global.level5ABooster = false;
-global.level5ABooster2 = false;
+global.level5AGate = false;
 global.level5BGate = false;
 global.level5BGate2 = false;
 global.level8Booster = false;

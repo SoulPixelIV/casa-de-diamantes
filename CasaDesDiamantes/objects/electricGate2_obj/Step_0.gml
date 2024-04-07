@@ -4,6 +4,13 @@ if (instance_exists(player_obj) && distance_to_object(player_obj) > 32 && place_
 {
 	if (open)
 	{
+		if (room == level5A) {
+			global.level5AGate = true;
+		}
+		if (room == level5B) {
+			global.level5BGate2 = true;
+		}
+	
 		if (moveDirection == 0)
 		{
 			if (x > goalX1)
