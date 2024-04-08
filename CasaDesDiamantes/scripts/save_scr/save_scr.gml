@@ -9,6 +9,7 @@ function save_scr(){
 	
 	ini_write_real("save1", "spawn", global.spawn);
 	ini_write_real("save1", "money", global.money);
+	ini_write_real("save1", "diamonds", global.diamonds);
 	ini_write_real("save1", "syringes", global.syringes);
 	ini_write_string("save1", "lastCheckpoint", string(global.lastCheckpoint));
 	ini_write_real("save1", "warpzoneKey", global.hasWarpzoneKey);
@@ -43,6 +44,9 @@ function save_scr(){
 	
 	ini_write_real("save1", "global.cupyUpgrade1", global.cupyUpgrade1);
 	ini_write_real("save1", "global.cupyUpgrade2", global.cupyUpgrade2);
+	
+	ini_write_real("save1", "global.boughtSkin1", global.boughtSkin1);
+	ini_write_real("save1", "global.skin", global.skin);
 	
 	ini_write_real("save1", "level4DoorOpen", global.level4DoorOpen);
 	ini_write_real("save1", "level6GateAOpen", global.level6GateAOpen);

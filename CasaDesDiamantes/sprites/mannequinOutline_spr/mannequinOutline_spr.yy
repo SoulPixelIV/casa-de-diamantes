@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
-  "name": "mannequin_spr",
+  "name": "mannequinOutline_spr",
   "bbox_bottom": 51,
   "bbox_left": 12,
   "bbox_right": 19,
@@ -35,7 +35,7 @@
   "sequence": {
     "resourceType": "GMSequence",
     "resourceVersion": "1.4",
-    "name": "mannequin_spr",
+    "name": "mannequinOutline_spr",
     "autoRecord": true,
     "backdropHeight": 768,
     "backdropImageOpacity": 0.5,
@@ -57,8 +57,8 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"a43c6ea7-b626-47e1-a52f-b42067e2f35d","path":"sprites/mannequin_spr/mannequin_spr.yy",},},},"Disabled":false,"id":"0b1942a3-4b9d-4f1d-8fac-4d97c37e71c9","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"2bc87a5c-19d5-487b-8c15-cd710ddb421b","path":"sprites/mannequin_spr/mannequin_spr.yy",},},},"Disabled":false,"id":"21625ef8-da86-4793-8799-91fd6de9fc61","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"a43c6ea7-b626-47e1-a52f-b42067e2f35d","path":"sprites/mannequinOutline_spr/mannequinOutline_spr.yy",},},},"Disabled":false,"id":"60e28cb9-e7db-4d8f-a544-93a8adcca92b","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"2bc87a5c-19d5-487b-8c15-cd710ddb421b","path":"sprites/mannequinOutline_spr/mannequinOutline_spr.yy",},},},"Disabled":false,"id":"f61f621b-2f5e-4fd6-97a8-f30e72935b36","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

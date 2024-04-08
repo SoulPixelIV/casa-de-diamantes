@@ -1059,6 +1059,22 @@ if (!noHUD && instance_exists(player_obj))
 		draw_set_halign(fa_left);
 	}
 	
+	//Mannequin Messages
+	if (mannequinMessage1) {
+		draw_set_color(make_color_rgb(255,215,0));
+		draw_set_halign(fa_center);
+		draw_set_font(gothicPixel_fnt);
+		draw_text(global.xScreenSize / 2, global.yScreenSize - global.yScreenSize / 4 - 32, "Starfarer Skin - Purchase for 2 Diamonds");
+		draw_set_halign(fa_left);
+	}
+	if (mannequinMessage2) {
+		draw_set_color(make_color_rgb(255,215,0));
+		draw_set_halign(fa_center);
+		draw_set_font(gothicPixel_fnt);
+		draw_text(global.xScreenSize / 2, global.yScreenSize - global.yScreenSize / 4 - 32, "Switch Skin?");
+		draw_set_halign(fa_left);
+	}
+	
 	//Low Ammo Message
 	if (!redDoorMessage && !blueDoorMessage && !yellowDoorMessage && !warpzoneMessage) {
 		draw_set_font(gothicPixel_fnt);

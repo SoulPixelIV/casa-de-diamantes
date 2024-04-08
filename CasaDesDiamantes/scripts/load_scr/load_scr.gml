@@ -4,6 +4,7 @@ function load_scr(){
 	global.room = ini_read_real("save1", "room", level0);
 	global.spawn = ini_read_real("save1", "spawn", 0);
 	global.money = ini_read_real("save1", "money", 0);
+	global.diamonds = ini_read_real("save1", "diamonds", 0);
 	global.syringes = ini_read_real("save1", "syringes", 0);
 	global.lastCheckpoint = ini_write_string("save1", "lastCheckpoint", string(noone));
 	global.hasWarpzoneKey = ini_read_real("save1", "warpzoneKey", false);
@@ -38,6 +39,9 @@ function load_scr(){
 	
 	global.cupyUpgrade1 = ini_read_real("save1", "global.cupyUpgrade1", false);
 	global.cupyUpgrade2 = ini_read_real("save1", "global.cupyUpgrade2", false);
+	
+	global.boughtSkin1 = ini_read_real("save1", "global.boughtSkin1", false);
+	global.skin = ini_read_real("save1", "global.skin", false);
 	
 	global.level4DoorOpen = ini_read_real("save1", "level4DoorOpen", false);
 	global.level6GateAOpen = ini_read_real("save1", "level6GateAOpen", false);
