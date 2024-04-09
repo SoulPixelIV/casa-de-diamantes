@@ -17,6 +17,40 @@ else if (keyboard_check_pressed(vk_anykey))
 	inputMethod = 0;
 }
 
+//Mouse Cursor Controls
+if (instance_exists(cursorHitbox_obj)) {
+	for (var i = 0; i < instance_number(cursorHitbox_obj); ++i;) {
+		var hitbox = instance_find(cursorHitbox_obj, i);
+		if (instance_exists(hitbox)) {
+			if (hitbox.open) {
+				cursorPos = hitbox.index;
+				
+				if (mouse_check_button_pressed(mb_left)) {
+					switch (cursorPos)
+					{
+						case 0:
+							if (file_exists("save1")) {
+								load_scr();
+								room_goto(global.room);
+							}
+						break;
+						case 1:
+							buttonBufferStart = true;
+							drawStartMenu = true;
+						break;
+						case 2:
+							room_goto(settings);
+						break;
+						case 3:
+							game_end();
+						break;
+					}
+				}
+			}
+		}
+	}
+}
+
 if (!drawStartMenu) {
 	if (keyboard_check_pressed(vk_up) || keyboard_check_pressed(ord("W")) || gamepad_button_check_pressed(0, gp_padu) || gamepad_button_check_pressed(4, gp_padu))
 	{

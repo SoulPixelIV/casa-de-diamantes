@@ -1532,6 +1532,14 @@ if (global.drawMission && !global.pause) {
 if (global.pause) {
 	drawPause = true;
 	
+	if (!pauseSpawnedHitboxes) {
+		for (var i = 0; i < 7; i++) {
+			var hitbox = instance_create_layer(player_obj.x, player_obj.y - player_obj.y / 4 + 16 * i, "Instances", cursorHitbox_obj);
+			hitbox.index = i;
+		}
+		pauseSpawnedHitboxes = true;
+	}
+	
 	if (pauseScreen == 0) {
 		if (keyboard_check_pressed(vk_up) || keyboard_check_pressed(ord("W")) || gamepad_button_check_pressed(0, gp_padu) || gamepad_button_check_pressed(4, gp_padu))
 		{
@@ -1659,6 +1667,11 @@ if (global.pause) {
 		drawPause = false;
 		cursorAnim = 0;
 	}
+	
+	if (instance_exists(cursorHitbox_obj)) {
+		instance_destroy(cursorHitbox_obj);
+	}
+	pauseSpawnedHitboxes = false;
 }
 	
 if (drawPause) {

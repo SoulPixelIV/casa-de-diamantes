@@ -17,6 +17,47 @@ else if (keyboard_check_pressed(vk_anykey))
 	inputMethod = 0;
 }
 
+//Mouse Cursor Controls
+if (instance_exists(cursorHitbox_obj)) {
+	for (var i = 0; i < instance_number(cursorHitbox_obj); ++i;) {
+		var hitbox = instance_find(cursorHitbox_obj, i);
+		if (instance_exists(hitbox)) {
+			if (hitbox.open) {
+				cursorPos = hitbox.index;
+				
+				if (mouse_check_button_pressed(mb_left)) {
+					switch (cursorPos)
+					{
+						case 0:
+						break;
+						case 1:
+						break;
+						case 2:
+							if (globalSettings_obj.TARGET_FRAMERATE == 60) {
+								globalSettings_obj.TARGET_FRAMERATE = 120;
+								game_set_speed(globalSettings_obj.TARGET_FRAMERATE, gamespeed_fps);
+							} else if (globalSettings_obj.TARGET_FRAMERATE == 120) {
+								globalSettings_obj.TARGET_FRAMERATE = 144;
+								game_set_speed(globalSettings_obj.TARGET_FRAMERATE, gamespeed_fps);
+							} else if (globalSettings_obj.TARGET_FRAMERATE == 144) {
+								globalSettings_obj.TARGET_FRAMERATE = 240;
+								game_set_speed(globalSettings_obj.TARGET_FRAMERATE, gamespeed_fps);
+							} else if (globalSettings_obj.TARGET_FRAMERATE == 240) {
+								globalSettings_obj.TARGET_FRAMERATE = 60;
+								game_set_speed(globalSettings_obj.TARGET_FRAMERATE, gamespeed_fps);
+							}
+						break;
+						case 3:
+							room_goto(mainmenu);
+						break;
+					}
+					saveSettings_scr();
+				}
+			}
+		}
+	}
+}
+
 if (!drawStartMenu) {
 	if (keyboard_check_pressed(vk_up) || keyboard_check_pressed(ord("W")) || gamepad_button_check_pressed(0, gp_padu) || gamepad_button_check_pressed(4, gp_padu))
 	{

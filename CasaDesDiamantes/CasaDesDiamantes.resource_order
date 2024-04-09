@@ -539,6 +539,7 @@
     {"name":"toxicrain_spr","order":9,"path":"sprites/toxicrain_spr/toxicrain_spr.yy",},
     {"name":"bulletPistol_spr","order":22,"path":"sprites/bulletPistol_spr/bulletPistol_spr.yy",},
     {"name":"playerWalkingLEGACY_spr","order":6,"path":"sprites/playerWalkingLEGACY_spr/playerWalkingLEGACY_spr.yy",},
+    {"name":"cursorHitbox_obj","order":12,"path":"objects/cursorHitbox_obj/cursorHitbox_obj.yy",},
     {"name":"birchL3_msc","order":6,"path":"sounds/birchL3_msc/birchL3_msc.yy",},
     {"name":"smokingTopWalking_spr","order":1,"path":"sprites/smokingTopWalking_spr/smokingTopWalking_spr.yy",},
     {"name":"bulletSensoryTrembler_obj","order":7,"path":"objects/bulletSensoryTrembler_obj/bulletSensoryTrembler_obj.yy",},

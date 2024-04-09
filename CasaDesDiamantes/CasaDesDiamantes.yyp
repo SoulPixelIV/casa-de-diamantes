@@ -696,6 +696,7 @@
     {"id":{"name":"toxicrain_spr","path":"sprites/toxicrain_spr/toxicrain_spr.yy",},},
     {"id":{"name":"bulletPistol_spr","path":"sprites/bulletPistol_spr/bulletPistol_spr.yy",},},
     {"id":{"name":"playerWalkingLEGACY_spr","path":"sprites/playerWalkingLEGACY_spr/playerWalkingLEGACY_spr.yy",},},
+    {"id":{"name":"cursorHitbox_obj","path":"objects/cursorHitbox_obj/cursorHitbox_obj.yy",},},
     {"id":{"name":"birchL3_msc","path":"sounds/birchL3_msc/birchL3_msc.yy",},},
     {"id":{"name":"smokingTopWalking_spr","path":"sprites/smokingTopWalking_spr/smokingTopWalking_spr.yy",},},
     {"id":{"name":"bulletSensoryTrembler_obj","path":"objects/bulletSensoryTrembler_obj/bulletSensoryTrembler_obj.yy",},},

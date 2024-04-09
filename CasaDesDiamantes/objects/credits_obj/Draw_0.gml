@@ -27,7 +27,7 @@ if (name == 4) {
 	}
 }
 
-if (keyboard_check_pressed(vk_space) || keyboard_check_pressed(vk_enter) || gamepad_button_check_pressed(0, gp_face1) || gamepad_button_check_pressed(4, gp_face1) || gamepad_button_check_pressed(0, gp_start) || gamepad_button_check_pressed(4, gp_start) || keyboard_check_pressed(vk_escape)) {
+if (keyboard_check_pressed(vk_space) || keyboard_check_pressed(vk_enter) || gamepad_button_check_pressed(0, gp_face1) || gamepad_button_check_pressed(4, gp_face1) || gamepad_button_check_pressed(0, gp_start) || gamepad_button_check_pressed(4, gp_start) || keyboard_check_pressed(vk_escape) || mouse_check_button_pressed(mb_left)) {
 	if (pressDelay < 0) {
 		if (name == 0) {
 			name = 1;
