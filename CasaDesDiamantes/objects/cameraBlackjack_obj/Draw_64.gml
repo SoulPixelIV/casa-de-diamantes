@@ -53,6 +53,42 @@ if (blackJackCalc_obj.screen == 1) {
 	draw_set_color(make_color_rgb(255, 215, 0));
 	draw_text(global.xScreenSize / 2, 172, "Quit");
 	
+	//Mouse Cursor Controls
+	if (instance_exists(cursorHitbox_obj)) {
+		for (var i = 0; i < instance_number(cursorHitbox_obj); ++i;) {
+			var hitbox = instance_find(cursorHitbox_obj, i);
+			if (instance_exists(hitbox)) {
+				if (hitbox.open) {
+					cursorPos = hitbox.index;
+				
+					if (mouse_check_button_pressed(mb_left)) {
+						if (pressDelay < 0) {
+							switch (cursorPos)
+							{
+								case 0:
+									blackJackCalc_obj.screen = 2;
+									cursorPos = 0;
+									pressDelay = pressDelaySave;
+								break;
+								case 1:
+									blackJackCalc_obj.screen = 5;
+									cursorPos = 0;
+									pressDelay = pressDelaySave;
+								break;
+								case 2:
+									global.spawn = 1;
+									room_goto(level_Casino);
+									cursorPos = 0;
+									pressDelay = pressDelaySave;
+								break;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	
 	if (keyboard_check_pressed(vk_up) || keyboard_check_pressed(ord("W")) || gamepad_button_check_pressed(0, gp_padu) || gamepad_button_check_pressed(4, gp_padu))
 	{
 		if (cursorPos > 0)
@@ -189,17 +225,19 @@ if (blackJackCalc_obj.screen == 2) {
 	}
 	
 	cursorAnim += global.dtNoSlowmo / 17;
-	switch (cursorPos)
-	{
-		case 0:
-			draw_sprite(chipRed_spr, cursorAnim, global.xScreenSize / 2 - 92, 122);
-		break;
-		case 1:
-			draw_sprite(chipRed_spr, cursorAnim, global.xScreenSize / 2 - 92, 160);
-		break;
-		case 2:
-			draw_sprite(chipRed_spr, cursorAnim, global.xScreenSize / 2 - 92, 198);
-		break;
+	if (inputMethod == 1 || inputMethod == 0) {
+		switch (cursorPos)
+		{
+			case 0:
+				draw_sprite(chipRed_spr, cursorAnim, global.xScreenSize / 2 - 92, 122);
+			break;
+			case 1:
+				draw_sprite(chipRed_spr, cursorAnim, global.xScreenSize / 2 - 92, 160);
+			break;
+			case 2:
+				draw_sprite(chipRed_spr, cursorAnim, global.xScreenSize / 2 - 92, 198);
+			break;
+		}
 	}
 }
 
@@ -460,16 +498,18 @@ if (!noHUD)
 }
 
 //Cursor
-if (inputMethod == 0) {
+if (inputMethod == 0 || inputMethod == 2) {
 	draw_sprite(mousecursor_spr, 0, mouse_x, mouse_y);
 } else {
 	cursorImage += global.dt / 16;
 	
 	if (blackJackCalc_obj.screen == 3) {
-		if (blackjackMenuElement == 0) {
-			draw_sprite(chipRed_spr, cursorImage, 122, 223);
-		} else if (blackjackMenuElement == 1) {
-			draw_sprite(chipRed_spr, cursorImage, 254, 223);
+		if (inputMethod == 1 || inputMethod == 0) {
+			if (blackjackMenuElement == 0) {
+				draw_sprite(chipRed_spr, cursorImage, 122, 223);
+			} else if (blackjackMenuElement == 1) {
+				draw_sprite(chipRed_spr, cursorImage, 254, 223);
+			}
 		}
 
 		if (keyboard_check_pressed(ord("A")) || keyboard_check_pressed(vk_left) || gamepad_button_check_pressed(0, gp_padl) || gamepad_button_check_pressed(4, gp_padl)) {

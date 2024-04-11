@@ -1533,8 +1533,10 @@ if (global.pause) {
 	drawPause = true;
 	
 	if (!pauseSpawnedHitboxes) {
-		for (var i = 0; i < 7; i++) {
-			var hitbox = instance_create_layer(player_obj.x, player_obj.y - player_obj.y / 4 + 16 * i, "Instances", cursorHitbox_obj);
+		for (var i = 0; i < 5; i++) {
+			var hitbox = instance_create_layer(player_obj.x - 52, player_obj.y - 29 + 16 * i, "GameManagerLayer", cursorHitbox_obj);
+			hitbox.image_yscale = 0.18;
+			hitbox.image_xscale = 1.65;
 			hitbox.index = i;
 		}
 		pauseSpawnedHitboxes = true;
@@ -1561,6 +1563,47 @@ if (global.pause) {
 			else
 			{
 				cursorPos = 0;
+			}
+		}
+		
+		//Mouse Cursor Controls
+		if (instance_exists(cursorHitbox_obj)) {
+			for (var i = 0; i < instance_number(cursorHitbox_obj); ++i;) {
+				var hitbox = instance_find(cursorHitbox_obj, i);
+				if (instance_exists(hitbox)) {
+					if (hitbox.open) {
+						cursorPos = hitbox.index;
+				
+						if (mouse_check_button_pressed(mb_left)) {
+							switch (cursorPos)
+							{
+								case 0:
+									if (!player_obj.pauseDelayStart) {
+										global.pause = false;
+									}
+								break;
+								case 1:
+									pauseScreen = 1;
+									cursorPos = 0;
+								break;
+								case 2:
+									global.pause = false;
+									room_restart();
+								break;
+								case 3:
+									if (global.reachedCasino) {
+										global.pause = false;
+										room_goto(level_Casino);
+									}
+								break;
+								case 4:
+									global.pause = false;
+									room_goto(mainmenu);
+								break;
+							}
+						}
+					}
+				}
 			}
 		}
 
@@ -1614,6 +1657,27 @@ if (global.pause) {
 			else
 			{
 				cursorPos = 0;
+			}
+		}
+		//Mouse Cursor Controls
+		if (instance_exists(cursorHitbox_obj)) {
+			for (var i = 0; i < instance_number(cursorHitbox_obj); ++i;) {
+				var hitbox = instance_find(cursorHitbox_obj, i);
+				if (instance_exists(hitbox)) {
+					if (hitbox.open) {
+						cursorPos = hitbox.index;
+				
+						if (mouse_check_button_pressed(mb_left)) {
+							switch (cursorPos)
+							{
+								case 2:
+									pauseScreen = 0;
+									cursorPos = 0;
+								break;
+							}
+						}
+					}
+				}
 			}
 		}
 		if (keyboard_check_pressed(vk_enter) || gamepad_button_check_pressed(0, gp_face1) || gamepad_button_check_pressed(4, gp_face1))
@@ -1785,9 +1849,15 @@ if (!dialogueSystem_obj.inCutscene || (dialogueSystem_obj.inCutscene && drawElev
 	if (instance_exists(player_obj)) {
 		if (player_obj.inputMethod == 0)
 		{
-			draw_sprite(cursor_spr, 0, 
-			(window_mouse_get_x() / ((window_get_width()+1) / global.xScreenSize)) + (0), 
-			window_mouse_get_y() / ((window_get_height()+1) / global.yScreenSize) + (0));
+			if (!global.pause) {
+				draw_sprite(cursor_spr, 0, 
+				(window_mouse_get_x() / ((window_get_width()+1) / global.xScreenSize)) + (0), 
+				window_mouse_get_y() / ((window_get_height()+1) / global.yScreenSize) + (0));
+			} else {
+				draw_sprite(mousecursor_spr, 0, 
+				(window_mouse_get_x() / ((window_get_width()+1) / global.xScreenSize)) + (0), 
+				window_mouse_get_y() / ((window_get_height()+1) / global.yScreenSize) + (0));
+			}
 		}
 	}
 }

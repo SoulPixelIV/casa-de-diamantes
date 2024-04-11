@@ -35,6 +35,9 @@
     {"name":"inst_548E4132","path":"rooms/blackjackTable/blackjackTable.yy",},
     {"name":"inst_81FCAD0","path":"rooms/blackjackTable/blackjackTable.yy",},
     {"name":"inst_65FB79C0","path":"rooms/blackjackTable/blackjackTable.yy",},
+    {"name":"inst_20E72EF4","path":"rooms/blackjackTable/blackjackTable.yy",},
+    {"name":"inst_4B4FC65","path":"rooms/blackjackTable/blackjackTable.yy",},
+    {"name":"inst_448DA8CF","path":"rooms/blackjackTable/blackjackTable.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -123,6 +126,15 @@
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"TileCollider","depth":600,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Instances","depth":700,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7178DBD5","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"collider_obj","path":"objects/collider_obj/collider_obj.yy",},"properties":[],"rotation":0.0,"scaleX":2.0,"scaleY":1.0,"x":544.0,"y":96.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_20E72EF4","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"cursorHitbox_obj","path":"objects/cursorHitbox_obj/cursorHitbox_obj.yy",},"properties":[
+            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"cursorHitbox_obj","path":"objects/cursorHitbox_obj/cursorHitbox_obj.yy",},"propertyId":{"name":"index","path":"objects/cursorHitbox_obj/cursorHitbox_obj.yy",},"value":"0",},
+          ],"rotation":0.0,"scaleX":1.078125,"scaleY":0.3125,"x":205.0,"y":119.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_4B4FC65","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"cursorHitbox_obj","path":"objects/cursorHitbox_obj/cursorHitbox_obj.yy",},"properties":[
+            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"cursorHitbox_obj","path":"objects/cursorHitbox_obj/cursorHitbox_obj.yy",},"propertyId":{"name":"index","path":"objects/cursorHitbox_obj/cursorHitbox_obj.yy",},"value":"1",},
+          ],"rotation":0.0,"scaleX":1.5625,"scaleY":0.265625,"x":190.0,"y":144.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_448DA8CF","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"cursorHitbox_obj","path":"objects/cursorHitbox_obj/cursorHitbox_obj.yy",},"properties":[
+            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"cursorHitbox_obj","path":"objects/cursorHitbox_obj/cursorHitbox_obj.yy",},"propertyId":{"name":"index","path":"objects/cursorHitbox_obj/cursorHitbox_obj.yy",},"value":"2",},
+          ],"rotation":0.0,"scaleX":0.953125,"scaleY":0.265625,"x":209.0,"y":168.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Tiles","depth":800,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":9,"SerialiseWidth":15,"TileCompressedData":[
 -135,0,],"TileDataFormat":1,},"tilesetId":{"name":"caveTilesOld","path":"tilesets/caveTilesOld/caveTilesOld.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
