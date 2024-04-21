@@ -1198,8 +1198,18 @@ if (showWindowMenu)
 	draw_set_halign(fa_left);
 	
 	//Draw items
-	if (windowType == 1)
-	{
+	if (windowType == 1) {
+		if (!window1SpawnedHitboxes) {
+			for (var i = 0; i < 2; i++) {
+				var hitbox = instance_create_layer((player_obj.x - 132) + 116 * i, player_obj.y - 46, "GameManagerLayer", cursorHitbox_obj);
+				hitbox.image_yscale = 1.4;
+				hitbox.image_xscale = 2.2;
+				hitbox.index = i;
+			}
+			window1SpawnedHitboxes = true;
+		}
+	
+		player_obj.movement = false;
 		//Names
 		draw_set_font(gothicPixel_fnt);
 		draw_set_halign(fa_center);
@@ -1271,6 +1281,13 @@ if (showWindowMenu)
 		}
 		//draw_text((global.xScreenSize / 2) - 86, ((global.yScreenSize / 2) + windowMenuOffset) + 42, "6750$");
 		draw_set_halign(fa_left);
+	} else {
+		if (!global.pause) {
+			if (instance_exists(cursorHitbox_obj)) {
+				instance_destroy(cursorHitbox_obj);
+			}
+			window1SpawnedHitboxes = false;
+		}
 	}
 	
 	if (windowMenuOffset < 4)
@@ -1291,6 +1308,45 @@ if (showWindowMenu)
 		showWindowMenu = false;
 		windowType = 0;
 	}
+	
+	//Mouse Cursor Controls
+	if (instance_exists(cursorHitbox_obj)) {
+		for (var i = 0; i < instance_number(cursorHitbox_obj); ++i;) {
+			var hitbox = instance_find(cursorHitbox_obj, i);
+			if (instance_exists(hitbox)) {
+				if (hitbox.open) {
+					barkeeperWindowIndex = hitbox.index;
+				
+					if (mouse_check_button_pressed(mb_left)) {
+						switch (barkeeperWindowIndex)
+						{
+							case 0:
+								if (global.money > 849) {
+									if (global.syringes < 5) {
+										global.syringes += 1;
+									}
+									audio_play_sound(buying_snd, 1, false);
+									global.money -= 850;
+								}
+							break;
+							case 1:
+								if (global.money > 24) {
+									if (global.drunknessLevel < 0.75) {
+										global.drunknessLevel += 0.05;
+									}
+									audio_play_sound(buying_snd, 1, false);
+									global.money -= 25;
+								}
+							break;
+							case 2:
+							break;
+						}
+					}
+				}
+			}
+		}
+	}
+		
 	if (keyboard_check_pressed(vk_enter) || gamepad_button_check_pressed(0, gp_face1) || gamepad_button_check_pressed(4, gp_face1)) {
 		if (barkeeperWindowIndex == 1) {
 			if (global.money > 24) {
@@ -1732,10 +1788,12 @@ if (global.pause) {
 		cursorAnim = 0;
 	}
 	
-	if (instance_exists(cursorHitbox_obj)) {
-		instance_destroy(cursorHitbox_obj);
+	if (windowType != 1) {
+		if (instance_exists(cursorHitbox_obj)) {
+			instance_destroy(cursorHitbox_obj);
+		}
+		pauseSpawnedHitboxes = false;
 	}
-	pauseSpawnedHitboxes = false;
 }
 	
 if (drawPause) {
@@ -1847,8 +1905,11 @@ if (drawPause) {
 //Crosshair Setup
 if (!dialogueSystem_obj.inCutscene || (dialogueSystem_obj.inCutscene && drawElevatorSign) || (dialogueSystem_obj.inCutscene && showWindowMenu)) {
 	if (instance_exists(player_obj)) {
-		if (player_obj.inputMethod == 0)
-		{
+		if (windowType == 1) {
+			draw_sprite(mousecursor_spr, 0, 
+				(window_mouse_get_x() / ((window_get_width()+1) / global.xScreenSize)) + (0), 
+				window_mouse_get_y() / ((window_get_height()+1) / global.yScreenSize) + (0));
+		} else if (player_obj.inputMethod == 0) {
 			if (!global.pause) {
 				draw_sprite(cursor_spr, 0, 
 				(window_mouse_get_x() / ((window_get_width()+1) / global.xScreenSize)) + (0), 

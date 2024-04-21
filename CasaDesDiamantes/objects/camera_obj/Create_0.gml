@@ -78,6 +78,7 @@ pauseAlpha = 0;
 pauseOffset = 0;
 pauseScreen = 0;
 pauseSpawnedHitboxes = false;
+window1SpawnedHitboxes = false;
 showBossHealthbar = false;
 showBossHealthbar2 = false;
 showWeaponProhibited = false;
