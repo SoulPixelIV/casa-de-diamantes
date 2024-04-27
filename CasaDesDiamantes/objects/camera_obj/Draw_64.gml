@@ -1200,11 +1200,17 @@ if (showWindowMenu)
 	//Draw items
 	if (windowType == 1) {
 		if (!window1SpawnedHitboxes) {
-			for (var i = 0; i < 2; i++) {
-				var hitbox = instance_create_layer((player_obj.x - 132) + 116 * i, player_obj.y - 46, "GameManagerLayer", cursorHitbox_obj);
+			for (var i = 0; i < 3; i++) {
+				var hitbox = instance_create_layer((player_obj.x - 132) + 84 * i, player_obj.y - 46, "GameManagerLayer", cursorHitbox_obj);
 				hitbox.image_yscale = 1.4;
-				hitbox.image_xscale = 2.2;
-				hitbox.index = i;
+				hitbox.image_xscale = 1.45;
+				if (i == 0) {
+					hitbox.index = 2;
+				} else if (i == 1) {
+					hitbox.index = 1;
+				} else {
+					hitbox.index = 0;
+				}
 			}
 			window1SpawnedHitboxes = true;
 		}
