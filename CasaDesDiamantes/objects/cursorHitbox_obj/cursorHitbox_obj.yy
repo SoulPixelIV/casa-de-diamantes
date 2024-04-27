@@ -37,5 +37,5 @@
     "path": "sprites/whitesquare_spr/whitesquare_spr.yy",
   },
   "spriteMaskId": null,
-  "visible": true,
+  "visible": false,
 }

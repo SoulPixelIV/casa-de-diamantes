@@ -1,11 +1,11 @@
 /// @description Variables
 
 global.spawn = 0;
-global.money = 10000;
+global.money = 0;
 global.skin = 0;
 global.syringes = 0;
 global.room = noone;
-global.diamonds = 4;
+global.diamonds = 0;
 global.lastCheckpoint = noone;
 global.hasWarpzoneKey = false;
 global.keyRed = false;
