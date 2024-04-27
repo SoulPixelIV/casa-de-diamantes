@@ -1287,13 +1287,6 @@ if (showWindowMenu)
 		}
 		//draw_text((global.xScreenSize / 2) - 86, ((global.yScreenSize / 2) + windowMenuOffset) + 42, "6750$");
 		draw_set_halign(fa_left);
-	} else {
-		if (!global.pause) {
-			if (instance_exists(cursorHitbox_obj)) {
-				instance_destroy(cursorHitbox_obj);
-			}
-			window1SpawnedHitboxes = false;
-		}
 	}
 	
 	if (windowMenuOffset < 4)
@@ -1393,6 +1386,13 @@ else
 	if (!camera_obj.drawElevatorSign) {
 		windowMenuOffset = windowMenuOffsetSave;
 		windowType = 0;
+	}
+	
+	if (!global.pause) {
+		if (instance_exists(cursorHitbox_obj)) {
+			instance_destroy(cursorHitbox_obj);
+		}
+		window1SpawnedHitboxes = false;
 	}
 }
 

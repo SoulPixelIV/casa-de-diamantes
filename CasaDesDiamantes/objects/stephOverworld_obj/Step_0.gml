@@ -29,6 +29,60 @@ if (distance_to_point(dest.x, dest.y) > 0) {
 	speed = 0;
 }
 
+//Mouse Cursor Controls
+if (instance_exists(cursorHitbox_obj)) {
+	for (var i = 0; i < instance_number(cursorHitbox_obj); ++i;) {
+		var hitbox = instance_find(cursorHitbox_obj, i);
+		if (instance_exists(hitbox)) {
+			if (hitbox.open) {
+				
+				if (hitbox.index == 2 && global.act2Unlocked) {
+					global.currentWorld = 2;
+				} else if (hitbox.index == 3 && global.act3Unlocked) {
+					global.currentWorld = 3;
+				} else if (hitbox.index == 1) {
+					global.currentWorld = 1;
+				} else if (hitbox.index == 0) {
+					global.currentWorld = 0;
+				}
+				
+				if (mouse_check_button_pressed(mb_left)) {
+					switch (global.currentWorld)
+					{
+						case 0:
+							if (lastWorld != 0) {
+								global.moveToWorld = 0;
+								room_goto(blimpAnim);
+							}
+						break;
+						case 1:
+							if (!global.reachedCasino) {
+								room_goto(level_Casino);
+								global.reachedCasino = true;
+							} else {
+								global.moveToWorld = 1;
+								room_goto(blimpAnim);
+							}
+						break;
+						case 2:
+							if (lastWorld != 2) {
+								global.moveToWorld = 2;
+								room_goto(blimpAnim);
+							}
+						break;
+						case 3:
+							if (lastWorld != 3) {
+								global.moveToWorld = 3;
+								room_goto(blimpAnim);
+							}
+						break;
+					}
+				}
+			}
+		}
+	}
+}
+
 if (global.currentWorld == 0 && !startSelectionTimer) {
 	if (keyboard_check_pressed(ord("D")) || keyboard_check_pressed(vk_right) || gamepad_button_check_pressed(0, gp_padr) || gamepad_button_check_pressed(4, gp_padr)) {
 		global.currentWorld = 1;
