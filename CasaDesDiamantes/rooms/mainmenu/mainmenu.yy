@@ -15,6 +15,8 @@
     {"name":"inst_2A80EF7F","path":"rooms/mainmenu/mainmenu.yy",},
     {"name":"inst_83B6626","path":"rooms/mainmenu/mainmenu.yy",},
     {"name":"inst_34636160","path":"rooms/mainmenu/mainmenu.yy",},
+    {"name":"inst_7F31D236","path":"rooms/mainmenu/mainmenu.yy",},
+    {"name":"inst_3892F223","path":"rooms/mainmenu/mainmenu.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -33,6 +35,12 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_34636160","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"cursorHitbox_obj","path":"objects/cursorHitbox_obj/cursorHitbox_obj.yy",},"properties":[
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"cursorHitbox_obj","path":"objects/cursorHitbox_obj/cursorHitbox_obj.yy",},"propertyId":{"name":"index","path":"objects/cursorHitbox_obj/cursorHitbox_obj.yy",},"value":"0",},
           ],"rotation":0.0,"scaleX":0.94254035,"scaleY":0.1875,"x":31.0,"y":198.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7F31D236","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"cursorHitbox_obj","path":"objects/cursorHitbox_obj/cursorHitbox_obj.yy",},"properties":[
+            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"cursorHitbox_obj","path":"objects/cursorHitbox_obj/cursorHitbox_obj.yy",},"propertyId":{"name":"index","path":"objects/cursorHitbox_obj/cursorHitbox_obj.yy",},"value":"4",},
+          ],"rotation":0.0,"scaleX":2.21875,"scaleY":1.140625,"x":96.0,"y":90.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_3892F223","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"cursorHitbox_obj","path":"objects/cursorHitbox_obj/cursorHitbox_obj.yy",},"properties":[
+            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"cursorHitbox_obj","path":"objects/cursorHitbox_obj/cursorHitbox_obj.yy",},"propertyId":{"name":"index","path":"objects/cursorHitbox_obj/cursorHitbox_obj.yy",},"value":"5",},
+          ],"rotation":0.0,"scaleX":2.21875,"scaleY":1.140625,"x":244.0,"y":90.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"BackgroundObjects","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7308B569","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"discordLEDLogo_obj","path":"objects/discordLEDLogo_obj/discordLEDLogo_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":448.0,"y":224.0,},

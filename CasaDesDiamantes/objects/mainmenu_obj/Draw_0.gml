@@ -53,6 +53,44 @@ if (drawStartMenu) {
 	draw_text(global.xScreenSize / 2 + 72, global.yScreenSize / 2.5 + 12, "No");
 	draw_set_halign(fa_left);
 	
+	//Mouse Cursor Controls
+	if (instance_exists(cursorHitbox_obj)) {
+		for (var i = 0; i < instance_number(cursorHitbox_obj); ++i;) {
+			var hitbox = instance_find(cursorHitbox_obj, i);
+			if (instance_exists(hitbox)) {
+				if (hitbox.open) {
+					if (hitbox.index == 4 || hitbox.index == 5) {
+						if (hitbox.index == 4) {
+							startMenuElement = 0;
+						}
+						if (hitbox.index == 5) {
+							startMenuElement = 1;
+						}
+				
+						if (mouse_check_button_pressed(mb_left)) {
+							if (!buttonBufferStart) {
+								switch (startMenuElement)
+								{
+									case 0:
+										//room_goto(transitionScreen);
+										buttonBufferStart2 = true;
+										startMenuElement = 1;
+										drawStartMenu = false;
+										drawSkipMenu = true;
+									break;
+									case 1:
+										startMenuElement = 1;
+										drawStartMenu = false;
+									break;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	
 	if (startMenuElement == 0) {
 		draw_sprite(chipRed_spr, cursorImage, global.xScreenSize / 2 - 72 - 42, global.yScreenSize / 2.5 + 16);
 	} else {
@@ -116,6 +154,47 @@ if (drawSkipMenu) {
 	draw_set_color(make_color_rgb(255, 215, 0));
 	draw_text(global.xScreenSize / 2 + 72, global.yScreenSize / 2.5 + 12, "Don't Skip");
 	draw_set_halign(fa_left);
+	
+	//Mouse Cursor Controls
+	if (instance_exists(cursorHitbox_obj)) {
+		for (var i = 0; i < instance_number(cursorHitbox_obj); ++i;) {
+			var hitbox = instance_find(cursorHitbox_obj, i);
+			if (instance_exists(hitbox)) {
+				if (hitbox.open) {
+					if (hitbox.index == 4 || hitbox.index == 5) {
+						if (hitbox.index == 4) {
+							startMenuElement = 0;
+						}
+						if (hitbox.index == 5) {
+							startMenuElement = 1;
+						}
+				
+						if (mouse_check_button_pressed(mb_left)) {
+							if (buttonBuffer2 < 0) {
+								switch (startMenuElement)
+								{
+									case 0:
+										room_goto(level1);
+										drawSkipMenu = false;
+										buttonBuffer2 = buttonBufferSave2;
+										buttonBufferStart2 = false;
+									break;
+									case 1:
+										global.transitionScreenDest = level0;
+										room_goto(transitionScreen);
+										startMenuElement = 1;
+										drawSkipMenu = false;
+										buttonBuffer2 = buttonBufferSave2;
+										buttonBufferStart2 = false;
+									break;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
 	
 	if (startMenuElement == 0) {
 		draw_sprite(chipRed_spr, cursorImage, global.xScreenSize / 2 - 72 - 21, global.yScreenSize / 2.5 + 16);

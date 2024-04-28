@@ -1,7 +1,7 @@
 /// @description Variables
 
 global.spawn = 0;
-global.money = 10000;
+global.money = 0;
 global.skin = 0;
 global.syringes = 0;
 global.room = noone;
@@ -234,6 +234,9 @@ currVolSlotWin2 = audio_sound_get_gain(slotWin2_snd);
 currVolGlassBreaking = audio_sound_get_gain(glassBreaking_snd);
 currVolFuse = audio_sound_get_gain(fuse_snd);
 currVolInsectSpit = audio_sound_get_gain(insectSpit_snd);
+currVolMinecartHit = audio_sound_get_gain(minecartHit_snd);
+currVolPlacingCard = audio_sound_get_gain(placingCard_snd);
+currVolTakingCard = audio_sound_get_gain(takingCard_snd);
 
 currVolInfectedVoice = audio_sound_get_gain(infectedVoice_snd);
 currVolInfectionVoice = audio_sound_get_gain(plagueInfectionVoice_snd);

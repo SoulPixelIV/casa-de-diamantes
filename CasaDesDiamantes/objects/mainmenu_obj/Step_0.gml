@@ -23,27 +23,29 @@ if (instance_exists(cursorHitbox_obj)) {
 		var hitbox = instance_find(cursorHitbox_obj, i);
 		if (instance_exists(hitbox)) {
 			if (hitbox.open) {
-				cursorPos = hitbox.index;
+				if (hitbox.index < 4) {
+					cursorPos = hitbox.index;
 				
-				if (mouse_check_button_pressed(mb_left)) {
-					switch (cursorPos)
-					{
-						case 0:
-							if (file_exists("save1")) {
-								load_scr();
-								room_goto(global.room);
-							}
-						break;
-						case 1:
-							buttonBufferStart = true;
-							drawStartMenu = true;
-						break;
-						case 2:
-							room_goto(settings);
-						break;
-						case 3:
-							game_end();
-						break;
+					if (mouse_check_button_pressed(mb_left)) {
+						switch (cursorPos)
+						{
+							case 0:
+								if (file_exists("save1")) {
+									load_scr();
+									room_goto(global.room);
+								}
+							break;
+							case 1:
+								buttonBufferStart = true;
+								drawStartMenu = true;
+							break;
+							case 2:
+								room_goto(settings);
+							break;
+							case 3:
+								game_end();
+							break;
+						}
 					}
 				}
 			}
