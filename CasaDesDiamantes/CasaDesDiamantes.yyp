@@ -1323,6 +1323,7 @@
     {"id":{"name":"blurShaderNew","path":"shaders/blurShaderNew/blurShaderNew.yy",},},
     {"id":{"name":"bwShader","path":"shaders/bwShader/bwShader.yy",},},
     {"id":{"name":"level1_SenzelaForest","path":"rooms/level1_SenzelaForest/level1_SenzelaForest.yy",},},
+    {"id":{"name":"minecartHit_snd","path":"sounds/minecartHit_snd/minecartHit_snd.yy",},},
     {"id":{"name":"SF1_SF2_teleporter","path":"objects/SF1_SF2_teleporter/SF1_SF2_teleporter.yy",},},
     {"id":{"name":"leverOutline_spr","path":"sprites/leverOutline_spr/leverOutline_spr.yy",},},
     {"id":{"name":"emailLEDLogo_obj","path":"objects/emailLEDLogo_obj/emailLEDLogo_obj.yy",},},
@@ -2030,6 +2031,7 @@
   ],
   "RoomOrderNodes": [
     {"roomId":{"name":"loadVars","path":"rooms/loadVars/loadVars.yy",},},
+    {"roomId":{"name":"level2","path":"rooms/level2/level2.yy",},},
     {"roomId":{"name":"level3","path":"rooms/level3/level3.yy",},},
     {"roomId":{"name":"blackjackTable","path":"rooms/blackjackTable/blackjackTable.yy",},},
     {"roomId":{"name":"demoend","path":"rooms/demoend/demoend.yy",},},
@@ -2037,7 +2039,6 @@
     {"roomId":{"name":"level_Casino","path":"rooms/level_Casino/level_Casino.yy",},},
     {"roomId":{"name":"credits","path":"rooms/credits/credits.yy",},},
     {"roomId":{"name":"mainmenu","path":"rooms/mainmenu/mainmenu.yy",},},
-    {"roomId":{"name":"level2","path":"rooms/level2/level2.yy",},},
     {"roomId":{"name":"level9","path":"rooms/level9/level9.yy",},},
     {"roomId":{"name":"level7","path":"rooms/level7/level7.yy",},},
     {"roomId":{"name":"level14","path":"rooms/level14/level14.yy",},},

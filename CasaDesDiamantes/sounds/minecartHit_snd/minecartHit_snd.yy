@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSound",
   "resourceVersion": "1.0",
-  "name": "minecart_snd",
+  "name": "minecartHit_snd",
   "audioGroupId": {
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
@@ -10,14 +10,14 @@
   "bitRate": 128,
   "compression": 0,
   "conversionMode": 0,
-  "duration": 4.783311,
+  "duration": 0.84,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
   },
   "preload": false,
   "sampleRate": 44100,
-  "soundFile": "minecart_snd.wav",
+  "soundFile": "minecartHit_snd.mp3",
   "type": 0,
-  "volume": 0.6,
+  "volume": 0.4,
 }

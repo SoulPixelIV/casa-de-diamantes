@@ -1132,6 +1132,7 @@
     {"name":"blurShaderNew","order":3,"path":"shaders/blurShaderNew/blurShaderNew.yy",},
     {"name":"bwShader","order":4,"path":"shaders/bwShader/bwShader.yy",},
     {"name":"level1_SenzelaForest","order":1,"path":"rooms/level1_SenzelaForest/level1_SenzelaForest.yy",},
+    {"name":"minecartHit_snd","order":86,"path":"sounds/minecartHit_snd/minecartHit_snd.yy",},
     {"name":"SF1_SF2_teleporter","order":14,"path":"objects/SF1_SF2_teleporter/SF1_SF2_teleporter.yy",},
     {"name":"leverOutline_spr","order":119,"path":"sprites/leverOutline_spr/leverOutline_spr.yy",},
     {"name":"emailLEDLogo_obj","order":3,"path":"objects/emailLEDLogo_obj/emailLEDLogo_obj.yy",},

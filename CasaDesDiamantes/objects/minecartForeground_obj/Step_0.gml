@@ -12,20 +12,14 @@ if (inMinecart)
 	
 	player_obj.x = x;
 	player_obj.y = y - 32;
-	
-	if (!playedSound) {
-		minecartSound = audio_play_sound_on(emitter, minecart_snd, true, false);
-		audio_sound_gain(minecart_snd, 1 * abs(horspeed), 0);
-		playedSound = true;
-	}
-} else {
-	audio_stop_sound(minecart_snd);
-	playedSound = false;
 }
 
 //Audio
 if (audio_emitter_exists(emitter)) {
 	audio_emitter_position(emitter, x, y, 0);
+}
+if (audio_exists(minecartSound)) {
+	audio_sound_gain(minecartSound, 1 * abs(horspeed), 0);
 }
 
 if (instance_exists(player_obj))
@@ -89,6 +83,10 @@ if (horspeed < -1.65)
 	horspeed = -1.65;
 }
 
+if (horspeed > 0.5 || horspeed < -0.5) {
+	playedCrashSound = false;
+}
+
 //Gravity
 if (verspeed < 5)
 {
@@ -118,6 +116,10 @@ if (!place_free(x + horspeed * global.dt, y))
 			x += sign(horspeed);
 		}
 		horspeed = 0;
+		if (!playedCrashSound) {
+			audio_play_sound_on(emitter, minecartHit_snd, false, 1);
+			playedCrashSound = true;
+		}
 	}
 } 
 //verspeed

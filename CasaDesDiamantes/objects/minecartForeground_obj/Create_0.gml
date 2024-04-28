@@ -5,7 +5,7 @@ savePosX = x;
 savePosY = y;
 gravityStrength = -0.016;
 movSpeed = 0.007;
-playedSound = false;
+playedCrashSound = false;
 
 trailDensity = 1;
 
@@ -21,3 +21,5 @@ audio_drop_start = 180;
 audio_falloff_set_model(audio_falloff_linear_distance);
 audio_emitter_position(emitter, x, y, 0);
 audio_emitter_falloff(emitter, audio_drop_start, audio_max_distance, 1);
+
+minecartSound = audio_play_sound_on(emitter, minecart_snd, true, false);
