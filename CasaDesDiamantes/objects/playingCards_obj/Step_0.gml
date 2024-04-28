@@ -14,6 +14,15 @@ if (mouse_x > x - 24 && mouse_x < x + 24)
 		}
 		
 		//Moving Card
+		if (mouse_check_button_pressed(mb_left)) {
+			if (!playedSound && isVisible) {
+				if (!audio_is_playing(takingCard_snd)) {
+					audio_play_sound(takingCard_snd, 1, false);
+				}
+				playedSound = true;
+			}
+		}
+		
 		if (mouse_check_button(mb_left))
 		{
 			if (!blackJackCalc_obj.holdingCard)
@@ -24,6 +33,12 @@ if (mouse_x > x - 24 && mouse_x < x + 24)
 		}
 		else
 		{
+			if (playedSound && isVisible) {
+				if (!audio_is_playing(placingCard_snd)) {
+					audio_play_sound(placingCard_snd, 1, false);
+				}
+				playedSound = false;
+			}
 			blackJackCalc_obj.holdingCard = false;
 			target = false;
 		}

@@ -1,7 +1,7 @@
 /// @description Variables
 
 global.spawn = 0;
-global.money = 0;
+global.money = 10000;
 global.skin = 0;
 global.syringes = 0;
 global.room = noone;

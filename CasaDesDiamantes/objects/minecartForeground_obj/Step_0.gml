@@ -11,7 +11,21 @@ if (inMinecart)
 	}
 	
 	player_obj.x = x;
-	player_obj.y = y - 30;
+	player_obj.y = y - 32;
+	
+	if (!playedSound) {
+		minecartSound = audio_play_sound_on(emitter, minecart_snd, true, false);
+		audio_sound_gain(minecart_snd, 1 * abs(horspeed), 0);
+		playedSound = true;
+	}
+} else {
+	audio_stop_sound(minecart_snd);
+	playedSound = false;
+}
+
+//Audio
+if (audio_emitter_exists(emitter)) {
+	audio_emitter_position(emitter, x, y, 0);
 }
 
 if (instance_exists(player_obj))
