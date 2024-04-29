@@ -259,7 +259,6 @@
     {"name":"inst_7FF2DD42","path":"rooms/level5A/level5A.yy",},
     {"name":"inst_29CCE6C7","path":"rooms/level5A/level5A.yy",},
     {"name":"inst_70B81CB3","path":"rooms/level5A/level5A.yy",},
-    {"name":"inst_F52E882","path":"rooms/level5A/level5A.yy",},
     {"name":"inst_2396946F","path":"rooms/level5A/level5A.yy",},
     {"name":"inst_54F219C5","path":"rooms/level5A/level5A.yy",},
     {"name":"inst_78CCEB26","path":"rooms/level5A/level5A.yy",},
@@ -894,11 +893,6 @@
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"battleArenaSpawn_obj","path":"objects/battleArenaSpawn_obj/battleArenaSpawn_obj.yy",},"propertyId":{"name":"wave","path":"objects/battleArenaSpawn_obj/battleArenaSpawn_obj.yy",},"value":"2",},
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"battleArenaSpawn_obj","path":"objects/battleArenaSpawn_obj/battleArenaSpawn_obj.yy",},"propertyId":{"name":"dir","path":"objects/battleArenaSpawn_obj/battleArenaSpawn_obj.yy",},"value":"-1",},
           ],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":5984.0,"y":1199.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_F52E882","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"battleArenaSpawn_obj","path":"objects/battleArenaSpawn_obj/battleArenaSpawn_obj.yy",},"properties":[
-            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"battleArenaSpawn_obj","path":"objects/battleArenaSpawn_obj/battleArenaSpawn_obj.yy",},"propertyId":{"name":"enemy","path":"objects/battleArenaSpawn_obj/battleArenaSpawn_obj.yy",},"value":"zombieSoldierGirl_obj",},
-            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"battleArenaSpawn_obj","path":"objects/battleArenaSpawn_obj/battleArenaSpawn_obj.yy",},"propertyId":{"name":"wave","path":"objects/battleArenaSpawn_obj/battleArenaSpawn_obj.yy",},"value":"2",},
-            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"battleArenaSpawn_obj","path":"objects/battleArenaSpawn_obj/battleArenaSpawn_obj.yy",},"propertyId":{"name":"dir","path":"objects/battleArenaSpawn_obj/battleArenaSpawn_obj.yy",},"value":"-1",},
-          ],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":5850.0,"y":1301.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_2396946F","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"battleArenaSpawn_obj","path":"objects/battleArenaSpawn_obj/battleArenaSpawn_obj.yy",},"properties":[
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"battleArenaSpawn_obj","path":"objects/battleArenaSpawn_obj/battleArenaSpawn_obj.yy",},"propertyId":{"name":"enemy","path":"objects/battleArenaSpawn_obj/battleArenaSpawn_obj.yy",},"value":"ammoPackShotgun_obj",},
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"battleArenaSpawn_obj","path":"objects/battleArenaSpawn_obj/battleArenaSpawn_obj.yy",},"propertyId":{"name":"wave","path":"objects/battleArenaSpawn_obj/battleArenaSpawn_obj.yy",},"value":"2",},

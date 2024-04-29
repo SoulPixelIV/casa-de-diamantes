@@ -88,6 +88,7 @@ audio_sound_pitch(insectSpit_snd, clamp(1 * global.timeScale, 0.5, 1.5));
 audio_sound_pitch(minecartHit_snd, clamp(1 * global.timeScale, 0.5, 1.5));
 audio_sound_pitch(placingCard_snd, clamp(1 * global.timeScale, 0.5, 1.5));
 audio_sound_pitch(takingCard_snd, clamp(1 * global.timeScale, 0.5, 1.5));
+audio_sound_pitch(emptyClip_snd, clamp(1 * global.timeScale, 0.5, 1.5));
 
 audio_sound_pitch(infectedVoice_snd, clamp(1 * global.timeScale, 0.5, 1.5));
 audio_sound_pitch(plagueInfectionVoice_snd, clamp(1 * global.timeScale, 0.5, 1.5));
@@ -185,6 +186,7 @@ audio_sound_gain(insectSpit_snd, (global.soundVolume / 100) * currVolInsectSpit,
 audio_sound_gain(minecartHit_snd, (global.soundVolume / 100) * currVolMinecartHit, 0);
 audio_sound_gain(placingCard_snd, (global.soundVolume / 100) * currVolPlacingCard, 0);
 audio_sound_gain(takingCard_snd, (global.soundVolume / 100) * currVolTakingCard, 0);
+audio_sound_gain(emptyClip_snd, (global.soundVolume / 100) * currVolEmptyClip, 0);
 
 audio_sound_gain(infectedVoice_snd, (global.soundVolume / 100) * currVolInfectedVoice, 0);
 audio_sound_gain(plagueInfectionVoice_snd, (global.soundVolume / 100) * currVolInfectionVoice, 0);

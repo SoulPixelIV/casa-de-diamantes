@@ -1091,7 +1091,14 @@ if (shootingAllowed && !global.pause) {
 							if (room == level_Casino || room == level_CasinoRoof) {
 								camera_obj.showWeaponProhibited = true;
 							} else {
-								shooting_scr("dualBarettas");
+								if (global.pistolAmmo > 0) {
+									shooting_scr("dualBarettas");
+								} else {
+									if (!audio_is_playing(emptyClip_snd)) {
+										var emptyShot = audio_play_sound(emptyClip_snd, 1, false);
+										audio_sound_pitch(emptyShot, random_range(0.9, 1.1));
+									}
+								}
 							}
 						}
 					}
@@ -1114,7 +1121,14 @@ if (shootingAllowed && !global.pause) {
 							if (room == level_Casino || room == level_CasinoRoof) {
 								camera_obj.showWeaponProhibited = true;
 							} else {
-								shooting_scr("shotgun");
+								if (global.shotgunAmmo > 0) {
+									shooting_scr("shotgun");
+								} else {
+									if (!audio_is_playing(emptyClip_snd)) {
+										var emptyShot = audio_play_sound(emptyClip_snd, 1, false);
+										audio_sound_pitch(emptyShot, random_range(0.9, 1.1));
+									}
+								}
 							}
 						}
 					}
@@ -1154,7 +1168,14 @@ if (shootingAllowed && !global.pause) {
 							if (room == level_Casino || room == level_CasinoRoof) {
 								camera_obj.showWeaponProhibited = true;
 							} else {
-								shooting_scr("silencedMP");
+								if (global.silencedMPAmmo > 0) {
+									shooting_scr("silencedMP");
+								} else {
+									if (!audio_is_playing(emptyClip_snd)) {
+										var emptyShot = audio_play_sound(emptyClip_snd, 1, false);
+										audio_sound_pitch(emptyShot, random_range(0.9, 1.1));
+									}
+								}
 							}
 						}
 					}

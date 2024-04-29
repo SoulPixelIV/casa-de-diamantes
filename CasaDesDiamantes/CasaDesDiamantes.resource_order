@@ -1604,6 +1604,7 @@
     {"name":"ammoCircleShotgunField_spr","order":64,"path":"sprites/ammoCircleShotgunField_spr/ammoCircleShotgunField_spr.yy",},
     {"name":"lampForm_obj","order":13,"path":"objects/lampForm_obj/lampForm_obj.yy",},
     {"name":"senzelaForeground_obj","order":2,"path":"objects/senzelaForeground_obj/senzelaForeground_obj.yy",},
+    {"name":"emptyClip_snd","order":87,"path":"sounds/emptyClip_snd/emptyClip_snd.yy",},
     {"name":"woodBridge_obj","order":45,"path":"objects/woodBridge_obj/woodBridge_obj.yy",},
     {"name":"toxicWater_obj","order":2,"path":"objects/toxicWater_obj/toxicWater_obj.yy",},
     {"name":"dustParticle_obj","order":6,"path":"objects/dustParticle_obj/dustParticle_obj.yy",},

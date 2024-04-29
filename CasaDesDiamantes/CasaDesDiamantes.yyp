@@ -1844,6 +1844,7 @@
     {"id":{"name":"ammoCircleShotgunField_spr","path":"sprites/ammoCircleShotgunField_spr/ammoCircleShotgunField_spr.yy",},},
     {"id":{"name":"lampForm_obj","path":"objects/lampForm_obj/lampForm_obj.yy",},},
     {"id":{"name":"senzelaForeground_obj","path":"objects/senzelaForeground_obj/senzelaForeground_obj.yy",},},
+    {"id":{"name":"emptyClip_snd","path":"sounds/emptyClip_snd/emptyClip_snd.yy",},},
     {"id":{"name":"woodBridge_obj","path":"objects/woodBridge_obj/woodBridge_obj.yy",},},
     {"id":{"name":"toxicWater_obj","path":"objects/toxicWater_obj/toxicWater_obj.yy",},},
     {"id":{"name":"dustParticle_obj","path":"objects/dustParticle_obj/dustParticle_obj.yy",},},

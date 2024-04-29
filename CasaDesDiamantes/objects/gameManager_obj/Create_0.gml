@@ -237,6 +237,7 @@ currVolInsectSpit = audio_sound_get_gain(insectSpit_snd);
 currVolMinecartHit = audio_sound_get_gain(minecartHit_snd);
 currVolPlacingCard = audio_sound_get_gain(placingCard_snd);
 currVolTakingCard = audio_sound_get_gain(takingCard_snd);
+currVolEmptyClip = audio_sound_get_gain(emptyClip_snd);
 
 currVolInfectedVoice = audio_sound_get_gain(infectedVoice_snd);
 currVolInfectionVoice = audio_sound_get_gain(plagueInfectionVoice_snd);
