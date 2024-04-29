@@ -3,7 +3,11 @@ draw_set_halign(fa_left);
 draw_set_color(make_color_rgb(255, 215, 0));
 draw_text(32, optionsY[0], "Sound Volume [" + string(global.soundVolume) + "%]");
 draw_text(32, optionsY[1], "Music Volume [" + string(global.musicVolume) + "%]");
-draw_text(32, optionsY[2], "Maximum Framerate [" + string(globalSettings_obj.TARGET_FRAMERATE) + "FPS]");
+if (global.gamma != 1.4) {
+	draw_text(32, optionsY[2], "Gamma [" + string(global.gamma) + "]");
+} else {
+	draw_text(32, optionsY[2], "Gamma [1.4 Standard]");
+}
 draw_text(32, optionsY[3], "Back to Main Menu");
 
 draw_set_halign(fa_right);

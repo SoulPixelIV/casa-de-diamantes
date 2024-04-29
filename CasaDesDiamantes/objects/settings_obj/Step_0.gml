@@ -33,18 +33,30 @@ if (instance_exists(cursorHitbox_obj)) {
 						case 1:
 						break;
 						case 2:
-							if (globalSettings_obj.TARGET_FRAMERATE == 60) {
-								globalSettings_obj.TARGET_FRAMERATE = 120;
-								game_set_speed(globalSettings_obj.TARGET_FRAMERATE, gamespeed_fps);
-							} else if (globalSettings_obj.TARGET_FRAMERATE == 120) {
-								globalSettings_obj.TARGET_FRAMERATE = 144;
-								game_set_speed(globalSettings_obj.TARGET_FRAMERATE, gamespeed_fps);
-							} else if (globalSettings_obj.TARGET_FRAMERATE == 144) {
-								globalSettings_obj.TARGET_FRAMERATE = 240;
-								game_set_speed(globalSettings_obj.TARGET_FRAMERATE, gamespeed_fps);
-							} else if (globalSettings_obj.TARGET_FRAMERATE == 240) {
-								globalSettings_obj.TARGET_FRAMERATE = 60;
-								game_set_speed(globalSettings_obj.TARGET_FRAMERATE, gamespeed_fps);
+							if (global.gamma == 1.4) {
+								global.gamma = 1.6;
+							} else if (global.gamma == 1.6) {
+								global.gamma = 1.8;
+							} else if (global.gamma == 1.8) {
+								global.gamma = 2;
+							} else if (global.gamma == 2) {
+								global.gamma = 2.2;
+							} else if (global.gamma == 2.2) {
+								global.gamma = 2.4;
+							} else if (global.gamma == 2.4) {
+								global.gamma = 0.2;
+							} else if (global.gamma == 0.2) {
+								global.gamma = 0.4;
+							} else if (global.gamma == 0.4) {
+								global.gamma = 0.6;
+							} else if (global.gamma == 0.6) {
+								global.gamma = 0.8;
+							} else if (global.gamma == 0.8) {
+								global.gamma = 1;
+							} else if (global.gamma == 1) {
+								global.gamma = 1.2;
+							} else if (global.gamma == 1.2) {
+								global.gamma = 1.4;
 							}
 						break;
 						case 3:
@@ -97,15 +109,30 @@ if (!drawStartMenu) {
 				}
 			break;
 			case 2:
-				if (globalSettings_obj.TARGET_FRAMERATE == 60) {
-					globalSettings_obj.TARGET_FRAMERATE = 120;
-					game_set_speed(globalSettings_obj.TARGET_FRAMERATE, gamespeed_fps);
-				} else if (globalSettings_obj.TARGET_FRAMERATE == 120) {
-					globalSettings_obj.TARGET_FRAMERATE = 144;
-					game_set_speed(globalSettings_obj.TARGET_FRAMERATE, gamespeed_fps);
-				} else if (globalSettings_obj.TARGET_FRAMERATE == 144) {
-					globalSettings_obj.TARGET_FRAMERATE = 240;
-					game_set_speed(globalSettings_obj.TARGET_FRAMERATE, gamespeed_fps);
+				if (global.gamma == 1.4) {
+					global.gamma = 1.6;
+				} else if (global.gamma == 1.6) {
+					global.gamma = 1.8;
+				} else if (global.gamma == 1.8) {
+					global.gamma = 2;
+				} else if (global.gamma == 2) {
+					global.gamma = 2.2;
+				} else if (global.gamma == 2.2) {
+					global.gamma = 2.4;
+				} else if (global.gamma == 2.4) {
+					global.gamma = 0.2;
+				} else if (global.gamma == 0.2) {
+					global.gamma = 0.4;
+				} else if (global.gamma == 0.4) {
+					global.gamma = 0.6;
+				} else if (global.gamma == 0.6) {
+					global.gamma = 0.8;
+				} else if (global.gamma == 0.8) {
+					global.gamma = 1;
+				} else if (global.gamma == 1) {
+					global.gamma = 1.2;
+				} else if (global.gamma == 1.2) {
+					global.gamma = 1.4;
 				}
 			break;
 			case 3:
@@ -129,15 +156,30 @@ if (!drawStartMenu) {
 				}
 			break;
 			case 2:
-				if (globalSettings_obj.TARGET_FRAMERATE == 240) {
-					globalSettings_obj.TARGET_FRAMERATE = 144;
-					game_set_speed(globalSettings_obj.TARGET_FRAMERATE, gamespeed_fps);
-				} else if (globalSettings_obj.TARGET_FRAMERATE == 144) {
-					globalSettings_obj.TARGET_FRAMERATE = 120;
-					game_set_speed(globalSettings_obj.TARGET_FRAMERATE, gamespeed_fps);
-				} else if (globalSettings_obj.TARGET_FRAMERATE == 120) {
-					globalSettings_obj.TARGET_FRAMERATE = 60;
-					game_set_speed(globalSettings_obj.TARGET_FRAMERATE, gamespeed_fps);
+				if (global.gamma == 1.4) {
+					global.gamma = 1.2;
+				} else if (global.gamma == 1.2) {
+					global.gamma = 1;
+				} else if (global.gamma == 1) {
+					global.gamma = 0.8;
+				} else if (global.gamma == 0.8) {
+					global.gamma = 0.6;
+				} else if (global.gamma == 0.6) {
+					global.gamma = 0.4;
+				} else if (global.gamma == 0.4) {
+					global.gamma = 0.2;
+				} else if (global.gamma == 0.2) {
+					global.gamma = 2.4;
+				} else if (global.gamma == 2.4) {
+					global.gamma = 2.2;
+				} else if (global.gamma == 2.2) {
+					global.gamma = 2;
+				} else if (global.gamma == 2) {
+					global.gamma = 1.8;
+				} else if (global.gamma == 1.8) {
+					global.gamma = 1.6;
+				} else if (global.gamma == 1.6) {
+					global.gamma = 1.4;
 				}
 			break;
 			case 3:
