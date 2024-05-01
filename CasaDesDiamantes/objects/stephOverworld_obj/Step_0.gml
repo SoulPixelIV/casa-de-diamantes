@@ -89,7 +89,7 @@ if (global.currentWorld == 0 && !startSelectionTimer) {
 		startSelectionTimer = true;
 	}
 	
-	if (keyboard_check_pressed(vk_enter) || gamepad_button_check_pressed(0, gp_face1) || gamepad_button_check_pressed(4, gp_face1)) {
+	if (keyboard_check_pressed(vk_enter) || keyboard_check_pressed(vk_space) || gamepad_button_check_pressed(0, gp_face1) || gamepad_button_check_pressed(4, gp_face1)) {
 		if (lastWorld != 0) {
 			global.moveToWorld = 0;
 			room_goto(blimpAnim);
@@ -109,7 +109,7 @@ if (global.currentWorld == 1 && !startSelectionTimer) {
 		startSelectionTimer = true;
 	}
 	
-	if (keyboard_check_pressed(vk_enter) || gamepad_button_check_pressed(0, gp_face1) || gamepad_button_check_pressed(4, gp_face1)) {
+	if (keyboard_check_pressed(vk_enter) || keyboard_check_pressed(vk_space) || gamepad_button_check_pressed(0, gp_face1) || gamepad_button_check_pressed(4, gp_face1)) {
 		if (!global.reachedCasino) {
 			room_goto(level_Casino);
 			global.reachedCasino = true;
@@ -132,7 +132,7 @@ if (global.currentWorld == 2 && !startSelectionTimer) {
 		startSelectionTimer = true;
 	}
 	
-	if (keyboard_check_pressed(vk_enter) || gamepad_button_check_pressed(0, gp_face1) || gamepad_button_check_pressed(4, gp_face1)) {
+	if (keyboard_check_pressed(vk_enter) || keyboard_check_pressed(vk_space) || gamepad_button_check_pressed(0, gp_face1) || gamepad_button_check_pressed(4, gp_face1)) {
 		if (lastWorld != 2) {
 			global.moveToWorld = 2;
 			room_goto(blimpAnim);
@@ -146,7 +146,7 @@ if (global.currentWorld == 3 && !startSelectionTimer) {
 		startSelectionTimer = true;
 	}
 	
-	if (keyboard_check_pressed(vk_enter) || gamepad_button_check_pressed(0, gp_face1) || gamepad_button_check_pressed(4, gp_face1)) {
+	if (keyboard_check_pressed(vk_enter) || keyboard_check_pressed(vk_space) || gamepad_button_check_pressed(0, gp_face1) || gamepad_button_check_pressed(4, gp_face1)) {
 		if (lastWorld != 3) {
 			global.moveToWorld = 3;
 			room_goto(blimpAnim);
