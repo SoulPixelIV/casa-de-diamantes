@@ -72,11 +72,9 @@ if (drawStartMenu) {
 								switch (startMenuElement)
 								{
 									case 0:
-										//room_goto(transitionScreen);
-										buttonBufferStart2 = true;
+										global.transitionScreenDest = level0;
+										room_goto(transitionScreen);
 										startMenuElement = 1;
-										drawStartMenu = false;
-										drawSkipMenu = true;
 									break;
 									case 1:
 										startMenuElement = 1;
@@ -117,11 +115,9 @@ if (drawStartMenu) {
 		if (keyboard_check_pressed(vk_enter) || gamepad_button_check_pressed(0, gp_face1) || gamepad_button_check_pressed(4, gp_face1))
 		{
 			if (startMenuElement == 0) {
-				//room_goto(transitionScreen);
-				buttonBufferStart2 = true;
+				global.transitionScreenDest = level0;
+				room_goto(transitionScreen);
 				startMenuElement = 1;
-				drawStartMenu = false;
-				drawSkipMenu = true;
 			} else {
 				startMenuElement = 1;
 				drawStartMenu = false;
