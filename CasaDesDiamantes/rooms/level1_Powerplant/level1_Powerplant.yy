@@ -1175,8 +1175,8 @@
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
   ],
   "parent": {
-    "name": "EDENPowerplant",
-    "path": "folders/Levels/Main/EDENPowerplant.yy",
+    "name": "LEGACY",
+    "path": "folders/Levels/LEGACY.yy",
   },
   "parentRoom": null,
   "physicsSettings": {

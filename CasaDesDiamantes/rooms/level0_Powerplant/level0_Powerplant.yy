@@ -296,8 +296,8 @@
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Background4","depth":2300,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
   ],
   "parent": {
-    "name": "EDENPowerplant",
-    "path": "folders/Levels/Main/EDENPowerplant.yy",
+    "name": "LEGACY",
+    "path": "folders/Levels/LEGACY.yy",
   },
   "parentRoom": null,
   "physicsSettings": {

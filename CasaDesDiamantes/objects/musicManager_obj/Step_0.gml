@@ -453,3 +453,81 @@ if (act3MusicOn && act3MusicStarted) {
 		}
 	}
 }
+
+//ACT4 WORLD MUSIC
+if (room == level15) {
+	act4MusicOn = true;
+} else {
+	act4MusicOn = false;
+	act4MusicStarted = false;
+}
+
+if (act4MusicOn && !act4MusicStarted) {
+	atomicL1 = audio_play_sound_on(musicEmitter, nuclidesL1, 1, 1);
+	atomicL2 = audio_play_sound_on(musicEmitter, nuclidesL2, 1, 1);
+	atomicL3 = audio_play_sound_on(musicEmitter, nuclidesL3, 1, 1);
+	
+	audio_sound_gain(atomicL3, 0, 0);
+	audio_sound_gain(atomicL2, 0, 0);
+	audio_sound_gain(atomicL1, 0, 0);
+	
+	act4MusicStarted = true;
+}
+
+if (act4MusicOn && act4MusicStarted) {
+	with (player_obj) {
+		if (place_meeting(x, y, musicBoxSilence_obj)) {
+			with (musicManager_obj) {
+				audio_sound_gain(atomicL3, 0, 300);
+				audio_sound_gain(atomicL2, 0, 300);
+				audio_sound_gain(atomicL1, 0, 300);
+			}
+		} else if (place_meeting(x, y, musicBoxAmbience_obj)) {
+			with (musicManager_obj) {
+				if (audio_sound_get_gain(atomicL2) == 0) {
+					audio_sound_gain(atomicL2, 1, 300);
+				}
+				audio_sound_gain(atomicL3, 0, 300);
+				audio_sound_gain(atomicL1, 0, 300);
+			}
+		} else if (place_meeting(x, y, musicBoxBattle_obj)) {
+			with (musicManager_obj) {
+				if (audio_sound_get_gain(atomicL1) == 0) {
+					audio_sound_gain(atomicL1, 1, 300);
+				}
+				audio_sound_gain(atomicL2, 0, 300);
+				audio_sound_gain(atomicL3, 0, 300);
+			}
+		} else if (place_meeting(x, y, musicBoxFastAmbience_obj)) {
+			with (musicManager_obj) {
+				if (audio_sound_get_gain(atomicL3) == 0) {
+					audio_sound_gain(atomicL3, 1, 300);
+				}
+				audio_sound_gain(atomicL1, 0, 300);
+				audio_sound_gain(atomicL2, 0, 300);
+			}
+		} else if (place_meeting(x, y, musicBoxFastAmbience2_obj)) {
+			with (musicManager_obj) {
+				if (audio_sound_get_gain(atomicL1) == 0) {
+					audio_sound_gain(atomicL1, 1, 300);
+				}
+				if (audio_sound_get_gain(atomicL3) == 0) {
+					audio_sound_gain(atomicL3, 1, 300);
+				}
+				audio_sound_gain(atomicL2, 0, 300);
+			}
+		} else if (place_meeting(x, y, musicBoxBattleBig_obj)) {
+			with (musicManager_obj) {
+				if (audio_sound_get_gain(atomicL1) == 0) {
+					audio_sound_gain(atomicL1, 1, 300);
+				}
+				if (audio_sound_get_gain(atomicL2) == 0) {
+					audio_sound_gain(atomicL2, 1, 300);
+				}
+				if (audio_sound_get_gain(atomicL3) == 0) {
+					audio_sound_gain(atomicL3, 1, 300);
+				}
+			}
+		}
+	}
+}

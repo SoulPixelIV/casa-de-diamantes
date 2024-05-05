@@ -111,4 +111,6 @@ if (room == mainmenu || room == levelSelect || room == storySelect || room == de
 	ppfx_id.ProfileLoad(act3_profile);
 } else if (room == level14) {
 	ppfx_id.ProfileLoad(act2_profile);
+} else if (room == level15) {
+	ppfx_id.ProfileLoad(act2_profile);
 }

@@ -7,6 +7,9 @@ act2MusicStarted = false;
 act3MusicOn = false;
 act3MusicStarted = false;
 
+act4MusicOn = false;
+act4MusicStarted = false;
+
 casinoTheme = casinoTheme_msc;
 casinoThemeLowPass = casinoThemeLowpass_msc;
 
@@ -23,6 +26,10 @@ caveAmbience1 = caveAmbience1_amb;
 caveAmbience2 = caveAmbience2_amb;
 caveAmbience3 = caveAmbience3_amb;
 caveAmbience4 = caveAmbience4_amb;
+
+nuclidesL1 = nuclidesL1_msc;
+nuclidesL2 = nuclidesL2_msc;
+nuclidesL3 = nuclidesL3_msc;
 
 // Low-pass route
 usedFilter = false;
