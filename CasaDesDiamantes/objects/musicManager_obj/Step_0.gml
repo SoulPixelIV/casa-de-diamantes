@@ -57,6 +57,16 @@ if (room == credits) {
 		if (audio_is_playing(caveAmbience4)) {
 			audio_stop_sound(caveAmbience4);
 		}
+		
+		if (audio_is_playing(nuclidesL1_msc)) {
+			audio_stop_sound(nuclidesL1_msc);
+		}
+		if (audio_is_playing(nuclidesL2_msc)) {
+			audio_stop_sound(nuclidesL2_msc);
+		}
+		if (audio_is_playing(nuclidesL3_msc)) {
+			audio_stop_sound(nuclidesL3_msc);
+		}
 
 	}
 } else {
@@ -105,6 +115,16 @@ if (room == demoend) {
 		if (audio_is_playing(caveAmbience4)) {
 			audio_stop_sound(caveAmbience4);
 		}
+		
+		if (audio_is_playing(nuclidesL1_msc)) {
+			audio_stop_sound(nuclidesL1_msc);
+		}
+		if (audio_is_playing(nuclidesL2_msc)) {
+			audio_stop_sound(nuclidesL2_msc);
+		}
+		if (audio_is_playing(nuclidesL3_msc)) {
+			audio_stop_sound(nuclidesL3_msc);
+		}
 
 	}
 } else {
@@ -152,6 +172,16 @@ if (room == level_Casino || room == mainmenu || room == levelSelect || room == s
 		}
 		if (audio_is_playing(caveAmbience4)) {
 			audio_stop_sound(caveAmbience4);
+		}
+		
+		if (audio_is_playing(nuclidesL1_msc)) {
+			audio_stop_sound(nuclidesL1_msc);
+		}
+		if (audio_is_playing(nuclidesL2_msc)) {
+			audio_stop_sound(nuclidesL2_msc);
+		}
+		if (audio_is_playing(nuclidesL3_msc)) {
+			audio_stop_sound(nuclidesL3_msc);
 		}
 
 	}
