@@ -1220,13 +1220,13 @@ if (showWindowMenu)
 		draw_set_font(gothicPixel_fnt);
 		draw_set_halign(fa_center);
 		draw_set_color(c_black);
-		draw_text(global.xScreenSize / 2 - 1, (((global.yScreenSize / 2) + windowMenuOffset) - 48) + 1, "Cocktail");
-		draw_text((global.xScreenSize / 2) + 86 - 1, (((global.yScreenSize / 2) + windowMenuOffset) - 48) + 1, "Syringe");
-		draw_text((global.xScreenSize / 2) - 86 - 1, (((global.yScreenSize / 2) + windowMenuOffset) - 48) + 1, "Locked");
+		draw_text(global.xScreenSize / 2 - 1, (((global.yScreenSize / 2) + windowMenuOffset) - 48) + 1, "Syringe");
+		draw_text((global.xScreenSize / 2) + 86 - 1, (((global.yScreenSize / 2) + windowMenuOffset) - 48) + 1, "Diamond");
+		draw_text((global.xScreenSize / 2) - 86 - 1, (((global.yScreenSize / 2) + windowMenuOffset) - 48) + 1, "Cocktail");
 		draw_set_color(make_color_rgb(255, 215, 0));
-		draw_text(global.xScreenSize / 2, ((global.yScreenSize / 2) + windowMenuOffset) - 48, "Cocktail");
-		draw_text((global.xScreenSize / 2) + 86, ((global.yScreenSize / 2) + windowMenuOffset) - 48, "Syringe");
-		draw_text((global.xScreenSize / 2) - 86, ((global.yScreenSize / 2) + windowMenuOffset) - 48, "Locked");
+		draw_text(global.xScreenSize / 2, ((global.yScreenSize / 2) + windowMenuOffset) - 48, "Syringe");
+		draw_text((global.xScreenSize / 2) + 86, ((global.yScreenSize / 2) + windowMenuOffset) - 48, "Diamond");
+		draw_text((global.xScreenSize / 2) - 86, ((global.yScreenSize / 2) + windowMenuOffset) - 48, "Cocktail");
 		draw_set_halign(fa_left);
 		//Frames
 		var frame1 = 2;
@@ -1234,19 +1234,19 @@ if (showWindowMenu)
 		var frame3 = 4;
 		
 		if (barkeeperWindowIndex == 1) {
-			frame1 = 5;
-		} else {
-			frame1 = 2;
-		}
-		if (barkeeperWindowIndex == 0) {
 			frame2 = 6;
 		} else {
 			frame2 = 3;
 		}
-		if (barkeeperWindowIndex == 2) {
-			frame3 = 8;
+		if (barkeeperWindowIndex == 0) {
+			frame2 = 7;
 		} else {
-			frame3 = 1;
+			frame2 = 4;
+		}
+		if (barkeeperWindowIndex == 2) {
+			frame1 = 5;
+		} else {
+			frame1 = 2;
 		}
 		
 		draw_sprite(itemFrame_spr, frame1, global.xScreenSize / 2, (global.yScreenSize / 2) + windowMenuOffset);
@@ -1256,9 +1256,27 @@ if (showWindowMenu)
 		draw_set_font(gothicPixel_fnt);
 		draw_set_halign(fa_center);
 		draw_set_color(c_black);
-		draw_text(global.xScreenSize / 2 - 1, (((global.yScreenSize / 2) + windowMenuOffset) + 42) + 1, "25$");
-		draw_text((global.xScreenSize / 2) + 86 - 1, (((global.yScreenSize / 2) + windowMenuOffset) + 42) + 1, "850$");
-		//draw_text((global.xScreenSize / 2) - 86 - 1, (((global.yScreenSize / 2) + windowMenuOffset) + 42) + 1, "6750$");
+		draw_text(global.xScreenSize / 2 - 1, (((global.yScreenSize / 2) + windowMenuOffset) + 42) + 1, "2250$");
+		draw_text((global.xScreenSize / 2) + 86 - 1, (((global.yScreenSize / 2) + windowMenuOffset) + 42) + 1, "12300$");
+		draw_text((global.xScreenSize / 2) - 86 - 1, (((global.yScreenSize / 2) + windowMenuOffset) + 42) + 1, "25$");
+		if (global.money > 2249)
+		{
+			draw_set_color(make_color_rgb(255, 215, 0));
+		}
+		else
+		{
+			draw_set_color(c_red);
+		}
+		draw_text(global.xScreenSize / 2, ((global.yScreenSize / 2) + windowMenuOffset) + 42, "2250$");
+		if (global.money > 12299)
+		{
+			draw_set_color(make_color_rgb(255, 215, 0));
+		}
+		else
+		{
+			draw_set_color(c_red);
+		}
+		draw_text((global.xScreenSize / 2) + 86, ((global.yScreenSize / 2) + windowMenuOffset) + 42, "12300$");
 		if (global.money > 24)
 		{
 			draw_set_color(make_color_rgb(255, 215, 0));
@@ -1267,25 +1285,7 @@ if (showWindowMenu)
 		{
 			draw_set_color(c_red);
 		}
-		draw_text(global.xScreenSize / 2, ((global.yScreenSize / 2) + windowMenuOffset) + 42, "25$");
-		if (global.money > 849)
-		{
-			draw_set_color(make_color_rgb(255, 215, 0));
-		}
-		else
-		{
-			draw_set_color(c_red);
-		}
-		draw_text((global.xScreenSize / 2) + 86, ((global.yScreenSize / 2) + windowMenuOffset) + 42, "850$");
-		if (global.money > 6749)
-		{
-			draw_set_color(make_color_rgb(255, 215, 0));
-		}
-		else
-		{
-			draw_set_color(c_red);
-		}
-		//draw_text((global.xScreenSize / 2) - 86, ((global.yScreenSize / 2) + windowMenuOffset) + 42, "6750$");
+		draw_text((global.xScreenSize / 2) - 86, ((global.yScreenSize / 2) + windowMenuOffset) + 42, "25$");
 		draw_set_halign(fa_left);
 	}
 	
@@ -1320,15 +1320,22 @@ if (showWindowMenu)
 						switch (barkeeperWindowIndex)
 						{
 							case 0:
-								if (global.money > 849) {
+								if (global.money > 12299) {
+									global.diamonds += 1;
+									audio_play_sound(buying_snd, 1, false);
+									global.money -= 12300;
+								}
+							break;
+							case 1:
+								if (global.money > 2249) {
 									if (global.syringes < 5) {
 										global.syringes += 1;
 									}
 									audio_play_sound(buying_snd, 1, false);
-									global.money -= 850;
+									global.money -= 2250;
 								}
 							break;
-							case 1:
+							case 2:
 								if (global.money > 24) {
 									if (global.drunknessLevel < 0.75) {
 										global.drunknessLevel += 0.05;
@@ -1336,8 +1343,6 @@ if (showWindowMenu)
 									audio_play_sound(buying_snd, 1, false);
 									global.money -= 25;
 								}
-							break;
-							case 2:
 							break;
 						}
 					}
@@ -1348,21 +1353,28 @@ if (showWindowMenu)
 		
 	if (keyboard_check_pressed(vk_enter) || gamepad_button_check_pressed(0, gp_face1) || gamepad_button_check_pressed(4, gp_face1)) {
 		if (barkeeperWindowIndex == 1) {
+			if (global.money > 12299) {
+				global.diamonds += 1;
+				audio_play_sound(buying_snd, 1, false);
+				global.money -= 12300;
+			}
+		}
+		if (barkeeperWindowIndex == 0) {
+			if (global.money > 2249) {
+				if (global.syringes < 5) {
+					global.syringes += 1;
+				}
+				audio_play_sound(buying_snd, 1, false);
+				global.money -= 2250;
+			}
+		}
+		if (barkeeperWindowIndex == 2) {
 			if (global.money > 24) {
 				if (global.drunknessLevel < 0.75) {
 					global.drunknessLevel += 0.05;
 				}
 				audio_play_sound(buying_snd, 1, false);
 				global.money -= 25;
-			}
-		}
-		if (barkeeperWindowIndex == 0) {
-			if (global.money > 849) {
-				if (global.syringes < 5) {
-					global.syringes += 1;
-				}
-				audio_play_sound(buying_snd, 1, false);
-				global.money -= 850;
 			}
 		}
 	}
