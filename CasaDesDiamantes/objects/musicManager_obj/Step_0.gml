@@ -520,7 +520,7 @@ if (act4MusicOn && act4MusicStarted) {
 				audio_sound_gain(atomicL3, 0, 300);
 				audio_sound_gain(atomicL1, 0, 300);
 			}
-		} else if (place_meeting(x, y, musicBoxBattle_obj)) {
+		} else if (place_meeting(x, y, musicBoxFastAmbience_obj)) {
 			with (musicManager_obj) {
 				if (audio_sound_get_gain(atomicL1) == 0) {
 					audio_sound_gain(atomicL1, 1, 300);
@@ -528,7 +528,7 @@ if (act4MusicOn && act4MusicStarted) {
 				audio_sound_gain(atomicL2, 0, 300);
 				audio_sound_gain(atomicL3, 0, 300);
 			}
-		} else if (place_meeting(x, y, musicBoxFastAmbience_obj)) {
+		} else if (place_meeting(x, y, musicBoxBattle_obj)) {
 			with (musicManager_obj) {
 				if (audio_sound_get_gain(atomicL3) == 0) {
 					audio_sound_gain(atomicL3, 1, 300);

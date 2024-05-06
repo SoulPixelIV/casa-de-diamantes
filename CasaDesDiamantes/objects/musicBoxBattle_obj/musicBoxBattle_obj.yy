@@ -30,5 +30,5 @@
     "path": "sprites/ticks_spr/ticks_spr.yy",
   },
   "spriteMaskId": null,
-  "visible": true,
+  "visible": false,
 }

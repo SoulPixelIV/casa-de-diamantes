@@ -30,5 +30,5 @@
     "path": "sprites/squares_spr/squares_spr.yy",
   },
   "spriteMaskId": null,
-  "visible": true,
+  "visible": false,
 }
