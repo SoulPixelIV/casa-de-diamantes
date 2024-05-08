@@ -22,7 +22,7 @@ if (keyboard_check_pressed(vk_down) || keyboard_check_pressed(ord("S")) || gamep
 }
 
 if (menu == 0) {
-	options = 5;
+	options = 6;
 }
 if (menu == 1) {
 	options = 2;
@@ -35,6 +35,9 @@ if (menu == 3) {
 }
 if (menu == 4) {
 	options = 1;
+}
+if (menu == 5) {
+	options = 0;
 }
 
 if (pushDelay < 0) {
@@ -69,6 +72,11 @@ if (pushDelay < 0) {
 				case 5:
 					pushDelay = 70;
 					menu = 3;
+					cursorPos = 0;
+				break;
+				case 6:
+					pushDelay = 70;
+					menu = 5;
 					cursorPos = 0;
 				break;
 			}
@@ -153,6 +161,14 @@ if (pushDelay < 0) {
 				break;
 				case 1:
 					room_goto(warpzone2);
+					global.lastCheckpoint = noone;
+				break;
+			}
+		} else if (menu == 5) {
+			switch (cursorPos)
+			{
+				case 0:
+					room_goto(level15);
 					global.lastCheckpoint = noone;
 				break;
 			}

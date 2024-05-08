@@ -1743,6 +1743,7 @@
     {"name":"OLDlevel2_CasinoHub","order":2,"path":"rooms/OLDlevel2_CasinoHub/OLDlevel2_CasinoHub.yy",},
     {"name":"lightingTest","order":3,"path":"rooms/lightingTest/lightingTest.yy",},
     {"name":"load_scr","order":29,"path":"scripts/load_scr/load_scr.yy",},
+    {"name":"springLadderShortcutPoint_obj","order":191,"path":"objects/springLadderShortcutPoint_obj/springLadderShortcutPoint_obj.yy",},
     {"name":"Script74","order":27,"path":"scripts/Script74/Script74.yy",},
     {"name":"SmokingBottomWall_spr","order":5,"path":"sprites/SmokingBottomWall_spr/SmokingBottomWall_spr.yy",},
     {"name":"casinoPillarBackground_obj","order":168,"path":"objects/casinoPillarBackground_obj/casinoPillarBackground_obj.yy",},

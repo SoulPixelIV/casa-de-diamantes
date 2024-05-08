@@ -8,6 +8,7 @@ if (menu == 0) {
 	draw_text(32, optionsY[3], "[Act1] Paredia");
 	draw_text(32, optionsY[4], "[Act2] Senzela Forest");
 	draw_text(32, optionsY[5], "[Act3] Endless Depths");
+	draw_text(32, optionsY[6], "[Act4] EDEN Powerplant");
 } else if (menu == 1) {
 	draw_text(32, optionsY[0], "[Level 1] Paredia");
 	draw_text(32, optionsY[1], "[Level 2] Paredia Streets");
@@ -29,6 +30,8 @@ if (menu == 0) {
 } else if (menu == 4) {
 	draw_text(32, optionsY[0], "[Warpzone 1] Slotblock Fever");
 	draw_text(32, optionsY[1], "[Warpzone 2] Blind Action");
+} else if (menu == 5) {
+	draw_text(32, optionsY[0], "[Level 15] Permitted Entrance");
 }
 
 draw_set_halign(fa_center);

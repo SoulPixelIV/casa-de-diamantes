@@ -1994,6 +1994,7 @@
     {"id":{"name":"OLDlevel2_CasinoHub","path":"rooms/OLDlevel2_CasinoHub/OLDlevel2_CasinoHub.yy",},},
     {"id":{"name":"lightingTest","path":"rooms/lightingTest/lightingTest.yy",},},
     {"id":{"name":"load_scr","path":"scripts/load_scr/load_scr.yy",},},
+    {"id":{"name":"springLadderShortcutPoint_obj","path":"objects/springLadderShortcutPoint_obj/springLadderShortcutPoint_obj.yy",},},
     {"id":{"name":"Script74","path":"scripts/Script74/Script74.yy",},},
     {"id":{"name":"SmokingBottomWall_spr","path":"sprites/SmokingBottomWall_spr/SmokingBottomWall_spr.yy",},},
     {"id":{"name":"casinoPillarBackground_obj","path":"objects/casinoPillarBackground_obj/casinoPillarBackground_obj.yy",},},
