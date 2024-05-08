@@ -1,13 +1,13 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "springLadderShortcutPoint_obj",
+  "name": "cameraTarget2_obj",
   "eventList": [],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Camera",
+    "path": "folders/Camera.yy",
   },
   "parentObjectId": null,
   "persistent": false,
@@ -26,8 +26,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "exclamationMarks_spr",
-    "path": "sprites/exclamationMarks_spr/exclamationMarks_spr.yy",
+    "name": "cameraViewIcon3_spr",
+    "path": "sprites/cameraViewIcon3_spr/cameraViewIcon3_spr.yy",
   },
   "spriteMaskId": null,
   "visible": false,

@@ -23,10 +23,19 @@ if ((distance_to_object(player_obj) < 32 && player_obj.key_up_pressed) && !used 
 				object = instance_nearest(x, y, objectAccess);
 				object.open = true;
 			}
-			else
+			if (activateCamera)
 			{
 				var selfId = id;
 				with (instance_nearest(x, y, cameraTarget_obj))
+				{
+					object = instance_nearest(x, y, selfId.objectAccess);
+					object.open = true;
+				}
+			}
+			if (activateCamera2)
+			{
+				var selfId = id;
+				with (instance_nearest(x, y, cameraTarget2_obj))
 				{
 					object = instance_nearest(x, y, selfId.objectAccess);
 					object.open = true;
