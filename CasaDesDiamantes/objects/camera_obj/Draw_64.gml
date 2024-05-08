@@ -1205,9 +1205,9 @@ if (showWindowMenu)
 				hitbox.image_yscale = 1.4;
 				hitbox.image_xscale = 1.45;
 				if (i == 0) {
-					hitbox.index = 2;
-				} else if (i == 1) {
 					hitbox.index = 1;
+				} else if (i == 1) {
+					hitbox.index = 2;
 				} else {
 					hitbox.index = 0;
 				}
@@ -1234,9 +1234,9 @@ if (showWindowMenu)
 		var frame3 = 4;
 		
 		if (barkeeperWindowIndex == 1) {
-			frame2 = 6;
+			frame3 = 5;
 		} else {
-			frame2 = 3;
+			frame3 = 2;
 		}
 		if (barkeeperWindowIndex == 0) {
 			frame2 = 7;
@@ -1244,9 +1244,9 @@ if (showWindowMenu)
 			frame2 = 4;
 		}
 		if (barkeeperWindowIndex == 2) {
-			frame1 = 5;
+			frame1 = 6;
 		} else {
-			frame1 = 2;
+			frame1 = 3;
 		}
 		
 		draw_sprite(itemFrame_spr, frame1, global.xScreenSize / 2, (global.yScreenSize / 2) + windowMenuOffset);
@@ -1320,28 +1320,28 @@ if (showWindowMenu)
 						switch (barkeeperWindowIndex)
 						{
 							case 0:
-								if (global.money > 12299) {
+								if (global.money >= 12300) {
 									global.diamonds += 1;
 									audio_play_sound(buying_snd, 1, false);
 									global.money -= 12300;
 								}
 							break;
 							case 1:
-								if (global.money > 2249) {
-									if (global.syringes < 5) {
-										global.syringes += 1;
-									}
-									audio_play_sound(buying_snd, 1, false);
-									global.money -= 2250;
-								}
-							break;
-							case 2:
-								if (global.money > 24) {
+								if (global.money >= 25) {
 									if (global.drunknessLevel < 0.75) {
 										global.drunknessLevel += 0.05;
 									}
 									audio_play_sound(buying_snd, 1, false);
 									global.money -= 25;
+								}
+							break;
+							case 2:
+								if (global.money >= 2250) {
+									if (global.syringes < 5) {
+										global.syringes += 1;
+									}
+									audio_play_sound(buying_snd, 1, false);
+									global.money -= 2250;
 								}
 							break;
 						}
@@ -1352,15 +1352,15 @@ if (showWindowMenu)
 	}
 		
 	if (keyboard_check_pressed(vk_enter) || gamepad_button_check_pressed(0, gp_face1) || gamepad_button_check_pressed(4, gp_face1)) {
-		if (barkeeperWindowIndex == 1) {
-			if (global.money > 12299) {
+		if (barkeeperWindowIndex == 0) {
+			if (global.money >= 12300) {
 				global.diamonds += 1;
 				audio_play_sound(buying_snd, 1, false);
 				global.money -= 12300;
 			}
 		}
-		if (barkeeperWindowIndex == 0) {
-			if (global.money > 2249) {
+		if (barkeeperWindowIndex == 2) {
+			if (global.money >= 2250) {
 				if (global.syringes < 5) {
 					global.syringes += 1;
 				}
@@ -1368,8 +1368,8 @@ if (showWindowMenu)
 				global.money -= 2250;
 			}
 		}
-		if (barkeeperWindowIndex == 2) {
-			if (global.money > 24) {
+		if (barkeeperWindowIndex == 1) {
+			if (global.money >= 25) {
 				if (global.drunknessLevel < 0.75) {
 					global.drunknessLevel += 0.05;
 				}
@@ -1379,17 +1379,17 @@ if (showWindowMenu)
 		}
 	}
 	if (keyboard_check_pressed(vk_right) || keyboard_check_pressed(ord("D")) || gamepad_button_check_pressed(0, gp_padr) || gamepad_button_check_pressed(4, gp_padr)) {
-		if (barkeeperWindowIndex > 0) {
-			barkeeperWindowIndex -= 1;
-		} else {
-			barkeeperWindowIndex = 2;
-		}
-	}
-	if (keyboard_check_pressed(vk_left) || keyboard_check_pressed(ord("A")) || gamepad_button_check_pressed(0, gp_padl) || gamepad_button_check_pressed(4, gp_padl)) {
 		if (barkeeperWindowIndex < 2) {
 			barkeeperWindowIndex += 1;
 		} else {
 			barkeeperWindowIndex = 0;
+		}
+	}
+	if (keyboard_check_pressed(vk_left) || keyboard_check_pressed(ord("A")) || gamepad_button_check_pressed(0, gp_padl) || gamepad_button_check_pressed(4, gp_padl)) {
+		if (barkeeperWindowIndex > 0) {
+			barkeeperWindowIndex -= 1;
+		} else {
+			barkeeperWindowIndex = 2;
 		}
 	}
 }
