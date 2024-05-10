@@ -30,6 +30,17 @@ if (cameraTarget)
 	player_obj.movement = false;
 	player_obj.invincible = true;
 }
+if (cameraTarget2)
+{
+	snapCameraX = false;
+	snapCameraY = false;
+	cameraTargetTimer -= global.dt;
+	follow = instance_nearest(x, y, cameraTarget2_obj);
+	cameraSpeed = 0.01;
+	ycameraSpeed = 0.01;
+	player_obj.movement = false;
+	player_obj.invincible = true;
+}
 if (cameraTargetMovement)
 {
 	snapCameraX = false;
@@ -48,6 +59,7 @@ if (cameraTargetTimer < 0)
 	follow = player_obj;
 	cameraTargetTimer = cameraTargetTimerSave;
 	cameraTarget = false;
+	cameraTarget2 = false;
 	cameraTargetMovement = false;
 	cameraSpeed = originalCameraSpeed;
 	ycameraSpeed = originalyCameraSpeed;

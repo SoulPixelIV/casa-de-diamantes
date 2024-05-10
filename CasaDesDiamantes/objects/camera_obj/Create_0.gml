@@ -41,6 +41,7 @@ pauseDeathTimer = 200;
 deathInProg = false;
 respawnSetScreenBrightness = false;
 cameraTarget = false;
+cameraTarget2 = false;
 cameraTargetMovement = false;
 cameraTargetTimer = 500;
 showWindowMenu = false;

@@ -4,6 +4,10 @@ if (instance_exists(player_obj) && distance_to_object(player_obj) > 32 && place_
 {
 	if (open)
 	{
+		if (index == 1) {
+			global.level15Shortcut = true;
+		}
+		
 		if (moveDirection == 0)
 		{
 			if (x > goalX1)
@@ -52,4 +56,8 @@ if (instance_exists(player_obj) && distance_to_object(player_obj) > 32 && place_
 			y += global.dt / 3;
 		}
 	}
+}
+
+if (index == 1 && global.level15Shortcut) {
+	open = true;
 }

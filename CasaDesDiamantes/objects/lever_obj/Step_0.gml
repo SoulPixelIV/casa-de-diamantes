@@ -107,7 +107,20 @@ if ((distance_to_object(player_obj) < 32 && player_obj.key_up_pressed) && !used 
 		camera_obj.cameraTarget = true;
 		usedCamera = true;
 	}
+	if (activateCamera2 && !usedCamera)
+	{
+		camera_obj.cameraTarget2 = true;
+		usedCamera = true;
+	}
 	
+	used = true;
+}
+
+if (index == 1 && global.level15Shortcut) {
+	used = true;
+}
+
+if (index == 2 && global.level15Spring) {
 	used = true;
 }
 
