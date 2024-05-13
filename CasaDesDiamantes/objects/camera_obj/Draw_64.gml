@@ -791,6 +791,7 @@ if (!noHUD && instance_exists(player_obj))
 	
 	//###### UI TECH ######
 	//Radiation Meter
+	/*
 	if (instance_exists(player_obj))
 	{
 		if (player_obj.radiation > 0 && player_obj.radiation < 80)
@@ -804,7 +805,7 @@ if (!noHUD && instance_exists(player_obj))
 			draw_sprite_ext(radiationMeterLine_spr, 0, (global.xScreenSize) - 60, (global.yScreenSize) - 48, 1, 1, (-player_obj.radiation * 1.5) +75, -1, 1);
 		}
 	}
-	
+	*/
 	//Proximity Sensor
 	/*
 	if (room == level10) {

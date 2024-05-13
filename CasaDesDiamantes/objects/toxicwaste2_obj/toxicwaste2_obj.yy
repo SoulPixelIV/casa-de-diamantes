@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "toxicwaste_obj",
+  "name": "toxicwaste2_obj",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "toxicwaste_spr",
-    "path": "sprites/toxicwaste_spr/toxicwaste_spr.yy",
+    "name": "toxicwaste2_spr",
+    "path": "sprites/toxicwaste2_spr/toxicwaste2_spr.yy",
   },
   "spriteMaskId": null,
   "visible": true,

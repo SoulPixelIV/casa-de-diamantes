@@ -25,6 +25,11 @@ if (!inChamber) {
 	{
 		theta = 90;
 	}
+	
+	//Radiation
+	if (radiation >= 80) {
+		draw_sprite(radiated_spr, 0, x, y - 35);
+	}
 
 	drawSpriteHat = global.hat;
 	drawSpriteTop1 = global.top1;

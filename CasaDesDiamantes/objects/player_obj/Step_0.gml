@@ -1832,39 +1832,26 @@ if (global.top1 == glitterTop_spr) {
 	}
 }
 
-//Radiation
-if (distance_to_object(toxicwaste_obj) > 64 && distance_to_object(rainmaker_obj) > 76)
-{
-	if (radiation > 1)
-	{
-		radiation -= global.dt / 24;
-	}
-	else
-	{
-		radiation = 0;
-	}
-}
-if ((distance_to_object(toxicwaste_obj) < 64 && distance_to_object(toxicwaste_obj) > 18) || distance_to_object(rainmaker_obj) < 76)
-{
-	if (radiation < 100)
-	{
-		radiation += global.dt / 16;
-	}
-}
-if (distance_to_object(toxicwaste_obj) < 18)
-{
-	if (radiation < 100)
-	{
-		radiation += global.dt / 8;
-	}
-}
-
+//Radiatio
 if (radiation > 80) {
 	radiationHitTimer -= global.dt;
 	if (radiationHitTimer < 0) {
-		hp -= 1;
-		radiationHitTimer = radiationHitTimerSave;
-		camera_obj.hitVignette = true;
+		if (hp > 10) {
+			hp -= 1;
+			radiationHitTimer = radiationHitTimerSave;
+			camera_obj.hitVignette = true;
+			if (!audio_is_playing(moan1_snd) && !audio_is_playing(moan2_snd)) {
+				audio_play_sound(choose(moan1_snd, moan2_snd), 1, false);
+			}
+		}
+	}
+}
+
+if (!place_meeting(x, y, toxicwaste_obj)) {
+	if (radiation > 1) {
+		radiation -= global.dt / 24;
+	} else {
+		radiation = 0;
 	}
 }
 	
