@@ -66,6 +66,12 @@ var act3Effects = [
 	new FX_ChromaticAberration(true, 0),
 ];
 act3_profile = new PPFX_Profile("Main", act3Effects);
+var act4Effects = [
+	new FX_Bloom(true, 6, 0.5, 1.3, c_white, 0.3, true, undefined, 0.8, 1, true),
+	new FX_SunShafts(true, [0.5, 0.5], 0.4, 0.35, 1.08, 1.6, 0.4, true, 0.7, 0.05, 0.15),
+	new FX_ChromaticAberration(true, 0),
+];
+act4_profile = new PPFX_Profile("Main", act4Effects);
 
 if (room == mainmenu || room == levelSelect || room == storySelect || room == demoend || room == settings || room == upgrademenu || room == blimpAnim) {
 	ppfx_id.ProfileLoad(menu_profile);
@@ -113,4 +119,6 @@ if (room == mainmenu || room == levelSelect || room == storySelect || room == de
 	ppfx_id.ProfileLoad(act2_profile);
 } else if (room == level15) {
 	ppfx_id.ProfileLoad(act2_profile);
+} else if (room == level16) {
+	ppfx_id.ProfileLoad(act4_profile);
 }

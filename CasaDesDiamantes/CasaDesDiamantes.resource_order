@@ -682,6 +682,7 @@
     {"name":"healthSmall_obj","order":21,"path":"objects/healthSmall_obj/healthSmall_obj.yy",},
     {"name":"blueKeyGate_spr","order":167,"path":"sprites/blueKeyGate_spr/blueKeyGate_spr.yy",},
     {"name":"voidMonsterSpawner3_obj","order":164,"path":"objects/voidMonsterSpawner3_obj/voidMonsterSpawner3_obj.yy",},
+    {"name":"level16","order":1,"path":"rooms/level16/level16.yy",},
     {"name":"chaingunTurret_spr","order":53,"path":"sprites/chaingunTurret_spr/chaingunTurret_spr.yy",},
     {"name":"forestTorch_obj","order":35,"path":"objects/forestTorch_obj/forestTorch_obj.yy",},
     {"name":"PW0_SF3_teleporter","order":19,"path":"objects/PW0_SF3_teleporter/PW0_SF3_teleporter.yy",},

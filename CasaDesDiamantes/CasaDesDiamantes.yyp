@@ -839,6 +839,7 @@
     {"id":{"name":"playerArmCurvedSkin1_spr","path":"sprites/playerArmCurvedSkin1_spr/playerArmCurvedSkin1_spr.yy",},},
     {"id":{"name":"blueKeyGate_spr","path":"sprites/blueKeyGate_spr/blueKeyGate_spr.yy",},},
     {"id":{"name":"voidMonsterSpawner3_obj","path":"objects/voidMonsterSpawner3_obj/voidMonsterSpawner3_obj.yy",},},
+    {"id":{"name":"level16","path":"rooms/level16/level16.yy",},},
     {"id":{"name":"chaingunTurret_spr","path":"sprites/chaingunTurret_spr/chaingunTurret_spr.yy",},},
     {"id":{"name":"forestTorch_obj","path":"objects/forestTorch_obj/forestTorch_obj.yy",},},
     {"id":{"name":"PW0_SF3_teleporter","path":"objects/PW0_SF3_teleporter/PW0_SF3_teleporter.yy",},},
@@ -2113,6 +2114,7 @@
     {"roomId":{"name":"powerplantTest","path":"rooms/powerplantTest/powerplantTest.yy",},},
     {"roomId":{"name":"settings","path":"rooms/settings/settings.yy",},},
     {"roomId":{"name":"storySelect","path":"rooms/storySelect/storySelect.yy",},},
+    {"roomId":{"name":"level16","path":"rooms/level16/level16.yy",},},
   ],
   "TextureGroups": [
     {"resourceType":"GMTextureGroup","resourceVersion":"1.3","name":"Default","autocrop":true,"border":2,"compressFormat":"bz2","directory":"","groupParent":null,"isScaled":true,"loadType":"default","mipsToGenerate":0,"targets":-1,},

@@ -32,6 +32,7 @@ if (menu == 0) {
 	draw_text(32, optionsY[1], "[Warpzone 2] Blind Action");
 } else if (menu == 5) {
 	draw_text(32, optionsY[0], "[Level 15] Permitted Entrance");
+	draw_text(32, optionsY[1], "[Level 16] Control Room");
 }
 
 draw_set_halign(fa_center);
