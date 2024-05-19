@@ -355,6 +355,7 @@
     {"name":"grenateSmallSpawned_obj","order":74,"path":"objects/grenateSmallSpawned_obj/grenateSmallSpawned_obj.yy",},
     {"name":"zombieGirlWoundedDeath1_spr","order":1,"path":"sprites/zombieGirlWoundedDeath1_spr/zombieGirlWoundedDeath1_spr.yy",},
     {"name":"roseRoot_obj","order":11,"path":"objects/roseRoot_obj/roseRoot_obj.yy",},
+    {"name":"playerBowStance_spr","order":52,"path":"sprites/playerBowStance_spr/playerBowStance_spr.yy",},
     {"name":"overworldIcon2_obj","order":136,"path":"objects/overworldIcon2_obj/overworldIcon2_obj.yy",},
     {"name":"musicBoxAmbience2_obj","order":1,"path":"objects/musicBoxAmbience2_obj/musicBoxAmbience2_obj.yy",},
     {"name":"whitelamp_spr","order":29,"path":"sprites/whitelamp_spr/whitelamp_spr.yy",},

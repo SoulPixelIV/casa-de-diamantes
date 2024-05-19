@@ -492,6 +492,7 @@
     {"id":{"name":"grenateSmallSpawned_obj","path":"objects/grenateSmallSpawned_obj/grenateSmallSpawned_obj.yy",},},
     {"id":{"name":"zombieGirlWoundedDeath1_spr","path":"sprites/zombieGirlWoundedDeath1_spr/zombieGirlWoundedDeath1_spr.yy",},},
     {"id":{"name":"roseRoot_obj","path":"objects/roseRoot_obj/roseRoot_obj.yy",},},
+    {"id":{"name":"playerBowStance_spr","path":"sprites/playerBowStance_spr/playerBowStance_spr.yy",},},
     {"id":{"name":"overworldIcon2_obj","path":"objects/overworldIcon2_obj/overworldIcon2_obj.yy",},},
     {"id":{"name":"musicBoxAmbience2_obj","path":"objects/musicBoxAmbience2_obj/musicBoxAmbience2_obj.yy",},},
     {"id":{"name":"whitelamp_spr","path":"sprites/whitelamp_spr/whitelamp_spr.yy",},},
