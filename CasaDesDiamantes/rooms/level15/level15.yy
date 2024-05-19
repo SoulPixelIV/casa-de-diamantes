@@ -2,7 +2,7 @@
   "resourceType": "GMRoom",
   "resourceVersion": "1.0",
   "name": "level15",
-  "creationCodeFile": "${project_dir}/rooms/level6/RoomCreationCode.gml",
+  "creationCodeFile": "${project_dir}/rooms/level15/RoomCreationCode.gml",
   "inheritCode": false,
   "inheritCreationOrder": false,
   "inheritLayers": false,
