@@ -1194,9 +1194,10 @@ if (shootingAllowed && !global.pause) {
 					{
 						if (!onLadder || onLadder && verspeed == 0)
 						{
+							screenshake(50, 10, 0.6, id);
 							bowReadying = true;
 							if (bowReadyingImage < 4) { //playerbowReadying image number
-								bowReadyingImage += global.dt / 20;
+								bowReadyingImage += global.dt / 30;
 							}
 							if (!audio_is_playing(bowReadying_snd) && !playedSoundBowReadying)
 							{
@@ -1212,13 +1213,21 @@ if (shootingAllowed && !global.pause) {
 							if (room == level_Casino || room == level_CasinoRoof) {
 								camera_obj.showWeaponProhibited = true;
 							} else {
-								shooting_scr("bow");
-								audio_stop_sound(bowReadying_snd);
-								//audio_play_sound(bowShot_snd, 1, false);
-								audio_play_sound(arrowShotWind_snd, 0.9, false);
-								bowReadying = false;
-								bowReadyingImage = 0;
-								playedSoundBowReadying = false;
+								if (bowReadyingImage > 1.5) {
+									shooting_scr("bow");
+									audio_stop_sound(bowReadying_snd);
+									//audio_play_sound(bowShot_snd, 1, false);
+									audio_play_sound(arrowShotWind_snd, 1, false);
+									bowReadying = false;
+									bowReadyingImage = 0;
+									playedSoundBowReadying = false;
+								} else {
+									audio_stop_sound(bowReadying_snd);
+									audio_play_sound(bowDry_snd, 1, false);
+									bowReadying = false;
+									bowReadyingImage = 0;
+									playedSoundBowReadying = false;
+								}
 							}
 						}
 					}

@@ -491,6 +491,7 @@
     {"name":"slotWin1_snd","order":78,"path":"sounds/slotWin1_snd/slotWin1_snd.yy",},
     {"name":"caveAmbience3_amb","order":2,"path":"sounds/caveAmbience3_amb/caveAmbience3_amb.yy",},
     {"name":"ammoPackMGDrop_obj","order":34,"path":"objects/ammoPackMGDrop_obj/ammoPackMGDrop_obj.yy",},
+    {"name":"bowDry_snd","order":19,"path":"sounds/bowDry_snd/bowDry_snd.yy",},
     {"name":"__obj_ppf_rain_renderer","order":1,"path":"objects/__obj_ppf_rain_renderer/__obj_ppf_rain_renderer.yy",},
     {"name":"spr_lut_light_intensity_spot","order":1,"path":"sprites/spr_lut_light_intensity_spot/spr_lut_light_intensity_spot.yy",},
     {"name":"colliderTemporary_obj","order":13,"path":"objects/colliderTemporary_obj/colliderTemporary_obj.yy",},

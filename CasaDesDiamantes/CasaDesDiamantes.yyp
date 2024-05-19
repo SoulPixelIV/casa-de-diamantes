@@ -641,6 +641,7 @@
     {"id":{"name":"slotWin1_snd","path":"sounds/slotWin1_snd/slotWin1_snd.yy",},},
     {"id":{"name":"caveAmbience3_amb","path":"sounds/caveAmbience3_amb/caveAmbience3_amb.yy",},},
     {"id":{"name":"ammoPackMGDrop_obj","path":"objects/ammoPackMGDrop_obj/ammoPackMGDrop_obj.yy",},},
+    {"id":{"name":"bowDry_snd","path":"sounds/bowDry_snd/bowDry_snd.yy",},},
     {"id":{"name":"__obj_ppf_rain_renderer","path":"objects/__obj_ppf_rain_renderer/__obj_ppf_rain_renderer.yy",},},
     {"id":{"name":"spr_lut_light_intensity_spot","path":"sprites/spr_lut_light_intensity_spot/spr_lut_light_intensity_spot.yy",},},
     {"id":{"name":"colliderTemporary_obj","path":"objects/colliderTemporary_obj/colliderTemporary_obj.yy",},},
@@ -2048,6 +2049,7 @@
   ],
   "RoomOrderNodes": [
     {"roomId":{"name":"loadVars","path":"rooms/loadVars/loadVars.yy",},},
+    {"roomId":{"name":"level16","path":"rooms/level16/level16.yy",},},
     {"roomId":{"name":"level15","path":"rooms/level15/level15.yy",},},
     {"roomId":{"name":"level_Casino","path":"rooms/level_Casino/level_Casino.yy",},},
     {"roomId":{"name":"credits","path":"rooms/credits/credits.yy",},},
@@ -2114,7 +2116,6 @@
     {"roomId":{"name":"powerplantTest","path":"rooms/powerplantTest/powerplantTest.yy",},},
     {"roomId":{"name":"settings","path":"rooms/settings/settings.yy",},},
     {"roomId":{"name":"storySelect","path":"rooms/storySelect/storySelect.yy",},},
-    {"roomId":{"name":"level16","path":"rooms/level16/level16.yy",},},
   ],
   "TextureGroups": [
     {"resourceType":"GMTextureGroup","resourceVersion":"1.3","name":"Default","autocrop":true,"border":2,"compressFormat":"bz2","directory":"","groupParent":null,"isScaled":true,"loadType":"default","mipsToGenerate":0,"targets":-1,},

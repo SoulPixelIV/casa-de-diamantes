@@ -101,7 +101,7 @@ global.sniperReloadSave = global.sniperReload;
 
 global.bowAmmo = 0;
 global.bowAmmoMax = 8;
-global.bowCooldown = 5;
+global.bowCooldown = 14;
 global.bowCooldownSave = global.bowCooldown;
 global.bowReload = 600;
 global.bowReloadSave = global.bowReload;

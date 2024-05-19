@@ -1,3 +1,5 @@
+//Audio
+audio_emitter_position(emitter, x, y, 0);
 
 if (!stuckInEnemy) {
 	x += horspeed * global.dt / 3;
@@ -93,7 +95,8 @@ if (stuckInEnemy) {
 
 	if (timer < 0)
 	{
-		instance_change(explosionTinyOnlyEnemy_obj, true);
+		instance_create_layer(x, y, "Instances", explosionBigDelay_obj);
+		instance_destroy();
 	}
 
 	//Play sound
@@ -107,6 +110,3 @@ if (stuckInEnemy) {
 		}
 	}
 }
-
-//Audio
-audio_emitter_position(emitter, x, y, 0);

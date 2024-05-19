@@ -1,4 +1,4 @@
-damage = 30;
+damage = 90;
 damageToEnemies = true;
 knockback = 3.5;
 dealtDamage = false;

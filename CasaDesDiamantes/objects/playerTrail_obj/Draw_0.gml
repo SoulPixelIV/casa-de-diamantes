@@ -142,7 +142,9 @@ else
 	if (global.currentWeapon == gameManager_obj.pickedWeapon.bow)
 	{
 		//First arm
-		draw_sprite_ext(drawSpriteArm, 0, x + ((-4 + spinWeaponPos) * currDir) * changePos, y - 4, 1, -currDir, dirCursor, selCol, image_alpha);
+		if (global.arm != noone) {
+			draw_sprite_ext(drawSpriteArm, 0, x + ((-4 + spinWeaponPos) * currDir) * changePos, y - 4, 1, -currDir, dirCursor, selCol, image_alpha);
+		}
 	}
 		
 	//Draw Steph
@@ -212,15 +214,15 @@ else
 	//BOW
 	if (global.currentWeapon == gameManager_obj.pickedWeapon.bow)
 	{
-		draw_text(player_obj.x + 100, player_obj.y + 50, string(bowReadyingImage));
+		//draw_text(player_obj.x + 100, player_obj.y + 50, string(bowReadyingImage));
 		//Second arm
-		if (!bowReadying) {
+		//if (!bowReadying) {
 			//draw_sprite_ext(playerBow_spr, 0, x + ((2 - spinWeaponPos) * currDir) * changePos, y - 4, 1, -currDir, dirCursor, selCol, image_alpha);
 			//draw_sprite_ext(bombArrow_spr, 0, x + ((2 - spinWeaponPos) * currDir) * changePos, y - 4, 1, -currDir, dirCursor, selCol, image_alpha);
-		} else {
+		//} else {
 			//draw_sprite_ext(playerBowReady_spr, bowReadyingImage, x + ((2 - spinWeaponPos) * currDir) * changePos, y - 4, 1, -currDir, dirCursor, selCol, image_alpha);
 			//draw_sprite_ext(bombArrowReadying_spr, bowReadyingImage, (x + ((2 - spinWeaponPos) * currDir) * changePos), y - 4, 1, -currDir, dirCursor, selCol, image_alpha);
-		}
+		//}
 	}
 		
 	//MAIN ARM
