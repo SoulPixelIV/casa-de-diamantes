@@ -279,6 +279,21 @@ if (movement && !isZombie && !global.pause && !inCutscene)
 				dashjumpbuffer = true;
 			}
 		}
+		//Falling Second Jump
+		if (!grounded && key_jump && jumpType != 2 && jumpType != 1) {
+			if (!dashroll) {
+				if (!isDashing) {
+					sprite_index = playerFlip_spr;
+					flip = true;
+					flipUsed = true;
+					jump_scr();
+				} else {
+					dashStandupDelayStart = true;
+				}
+			} else {
+				dashjumpbuffer = true;
+			}
+		}
 		//Dash Jump Buffer
 		if (dashjumpbuffer && !dashroll) {
 			jump_scr();
