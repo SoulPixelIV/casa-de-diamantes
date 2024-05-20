@@ -1,7 +1,7 @@
 /// @description Draw Key
 draw_self();
 
-if (distance_to_object(player_obj) < 32 && image_index == 1 && !global.doorDelayStart)
+if (distance_to_object(player_obj) < 32 && image_index == 1)
 {
 	if (player_obj.inputMethod == 0) {
 		draw_sprite(wKeyIcon_spr, 0, player_obj.x, player_obj.y - 32);
@@ -9,7 +9,7 @@ if (distance_to_object(player_obj) < 32 && image_index == 1 && !global.doorDelay
 		draw_sprite(joystick_spr, 0, player_obj.x, player_obj.y - 32);
 	}
 	
-	if (keyboard_check_pressed(ord("W"))) {
+	if (keyboard_check_pressed(ord("W")) && !global.doorDelayStart) {
 		teleporting = true;
 		global.doorDelayStart = true;
 		player_obj.movement = false;
