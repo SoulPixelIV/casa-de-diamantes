@@ -18,3 +18,4 @@ global.shotgunAmmo = 0;
 global.sniperAmmo = 0;
 global.bowAmmo = 0;
 global.silencedMPAmmo = 0;
+global.hasWarpzoneKey = false;
