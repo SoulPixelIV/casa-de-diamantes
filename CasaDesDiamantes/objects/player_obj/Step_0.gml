@@ -279,6 +279,7 @@ if (movement && !isZombie && !global.pause && !inCutscene)
 				dashjumpbuffer = true;
 			}
 		}
+		
 		//Falling Second Jump
 		if (!grounded && key_jump && jumpType != 2 && jumpType != 1) {
 			if (!dashroll) {
@@ -294,6 +295,7 @@ if (movement && !isZombie && !global.pause && !inCutscene)
 				dashjumpbuffer = true;
 			}
 		}
+		
 		//Dash Jump Buffer
 		if (dashjumpbuffer && !dashroll) {
 			jump_scr();

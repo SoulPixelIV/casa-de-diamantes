@@ -12,7 +12,10 @@
     "name": "Destructible",
     "path": "folders/Objects/Destructible.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "colliderGlobal_obj",
+    "path": "objects/colliderGlobal_obj/colliderGlobal_obj.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
