@@ -7,8 +7,6 @@ if (global.spawn == 1)
 	instance_create_layer(Spawn2_obj.x, Spawn2_obj.y, "Instances", player_obj);
 }
 
-global.currentWeapon = gameManager_obj.pickedWeapon.pistol;	
-global.unlockedWeapon[0] = false;
 global.unlockedWeapon[1] = false;
 global.unlockedWeapon[2] = false;
 global.unlockedWeapon[3] = false;
