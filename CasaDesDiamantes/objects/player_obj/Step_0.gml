@@ -627,7 +627,7 @@ if (grounded || isDashing)
 }
 
 //Jump Spin
-if (!grounded && !isZombie && !flip && !isDashing && !groundCollisionTimerOn && movement && !unarmed && !deathActivated)
+if (!grounded && !isZombie && !flip && !isDashing && !groundCollisionTimerOn && !unarmed && !deathActivated)
 {
 	if (horspeed < movSpeed - 0.3 || horspeed > -movSpeed + 0.3)
 	{
@@ -985,7 +985,7 @@ with (gameManager_obj)
 				}
 				else
 				{
-					if (jumping && movement)
+					if (jumping)
 					{
 						if (verspeed < 0)
 						{
