@@ -104,6 +104,8 @@ part_type_orientation(global.ledRedPart, 0, 359, 1, 0, 1);
 part_type_direction(global.ledRedPart, 0, 359, 0, 3);
 part_type_gravity(global.ledRedPart, 0.0001, 270);
 
+
+
 global.ledBluePart = part_type_create();
 part_type_sprite(global.ledBluePart, spark_spr, true, true, true);
 part_type_colour_rgb(global.ledBluePart, 10, 40, 0, 0, 200, 255);
@@ -122,6 +124,14 @@ part_type_orientation(global.bluePart, 0, 359, 1, 0, 1);
 part_type_direction(global.bluePart, 210, 240, 0, 3);
 part_type_speed(global.bluePart, 0.04, 0.1, 0, 0.1);
 
+global.yellowFallingPart = part_type_create();
+part_type_sprite(global.yellowFallingPart, fireSpark_spr, true, true, true);
+part_type_life(global.yellowFallingPart, 2000, 2600);
+part_type_size(global.yellowFallingPart, 0.1, 0.2, 0, 0);
+part_type_orientation(global.yellowFallingPart, 0, 359, 1, 0, 1);
+part_type_direction(global.yellowFallingPart, 270, 359, 0, 3);
+part_type_speed(global.yellowFallingPart, 0.07, 0.11, 0, 0.02);
+
 global.greenPart = part_type_create();
 part_type_sprite(global.greenPart, spark_spr, true, false, true);
 part_type_life(global.greenPart, 6000, 6200);
@@ -129,7 +139,7 @@ part_type_size(global.greenPart, 0.2, 0.5, 0, 0);
 part_type_colour_rgb(global.greenPart, 130, 170, 255, 255, 70, 90);
 part_type_orientation(global.greenPart, 0, 359, 1, 0, 1);
 part_type_direction(global.greenPart, 0, 180, 0, 3);
-part_type_speed(global.greenPart, 0.03, 0.07, 0, 0.03);
+part_type_speed(global.greenPart, 0.08, 0.12, 0, 0.03);
 
 global.greenStillPart = part_type_create();
 part_type_sprite(global.greenStillPart, spark_spr, true, false, true);
@@ -139,6 +149,14 @@ part_type_colour_rgb(global.greenStillPart, 70, 90, 255, 255, 70, 90);
 part_type_orientation(global.greenStillPart, 0, 359, 1, 0, 1);
 part_type_direction(global.greenStillPart, 0, 359, 0, 3);
 part_type_speed(global.greenStillPart, 0.001, 0.002, 0, 0.0005);
+
+global.whiteStillPart = part_type_create();
+part_type_sprite(global.whiteStillPart, spark_spr, true, false, true);
+part_type_life(global.whiteStillPart, 6000, 6200);
+part_type_size(global.whiteStillPart, 0.2, 0.5, 0, 0);
+part_type_orientation(global.whiteStillPart, 0, 359, 1, 0, 1);
+part_type_direction(global.whiteStillPart, 0, 359, 0, 3);
+part_type_speed(global.whiteStillPart, 0.0002, 0.0005, 0, 0.0002);
 
 global.playerPart = part_type_create();
 part_type_sprite(global.playerPart, fireSpark_spr, true, true, true);

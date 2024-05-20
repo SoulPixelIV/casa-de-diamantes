@@ -230,7 +230,9 @@ else
 }
 
 //Create Dropshadow
-instance_create_layer(x, y + 26, "BackgroundObjects", dropShadow_obj);
+if (!instance_exists(dropShadow_obj)) {
+	instance_create_layer(x, y + 26, "BackgroundObjects", dropShadow_obj);
+}
 
 //Set Blackscreen Strength
 blackscreenStartTimer = 300;

@@ -37,7 +37,6 @@ if (image_index < image_number - 1) {
 if (elevatorTimer < 0 && used) {
 	playedSound = false;
 	if (target == 0) {
-		part_emitter_destroy_all(global.partSystem);
 		global.spawn = 3;
 		if (!playerSpawned) {
 			instance_destroy(player_obj);
@@ -89,7 +88,6 @@ if (elevatorTimer < 0 && used) {
 		used = false;
 	}
 	if (target == 3) {
-		part_emitter_destroy_all(global.partSystem);
 		global.spawn = 0;
 		if (!playerSpawned) {
 			instance_destroy(player_obj);
