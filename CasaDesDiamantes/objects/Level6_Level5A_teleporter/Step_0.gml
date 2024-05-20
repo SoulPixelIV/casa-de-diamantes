@@ -1,8 +1,9 @@
-if (place_meeting(x, y, player_obj))
+if (place_meeting(x, y, player_obj) && !global.doorDelayStart)
 {
 	global.lastCheckpoint = noone;
 	teleporting = true;
 	player_obj.movement = false;
+	global.doorDelayStart = true;
 	global.keyRed = false;
 	global.keyBlue = false;
 	global.keyYellow = false;

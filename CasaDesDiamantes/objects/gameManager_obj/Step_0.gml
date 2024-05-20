@@ -242,6 +242,15 @@ if (global.dialogueDelayStart) {
 	}
 }
 
+//Door Delay
+if (global.doorDelayStart) {
+	global.doorDelay -= global.dt;
+	if (global.doorDelay < 0) {
+		global.doorDelay = global.doorDelaySave;
+		global.doorDelayStart = false;
+	}
+}
+
 //Bullet Delay
 global.bulletDelay -= global.dt;
 
