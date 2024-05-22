@@ -5,7 +5,7 @@ if (!inChamber) {
 	dualBarettasSprite = playerDualBarettas_spr;
 	shotgunSprite = playerShotgun_spr;
 	sniperSprite = playerSniper_spr;
-	bowSprite = playerBow_spr;
+	antiMaterialRifleSprite = antiMaterialRifle_spr;
 	silencedMPSprite = playerSilencedMP_spr;
 
 	//Draw Accessories
@@ -409,11 +409,11 @@ if (!inChamber) {
 					}
 				}
 		
-				//BOW
+				//Anti Material Rifle
 				if (global.currentWeapon == gameManager_obj.pickedWeapon.bow)
 				{
 					//First arm
-					draw_sprite_ext(drawSpriteArm, 0, armBowPosX, armBowPosY, 1, -currDir, dirCursor, -1, image_alpha);
+					draw_sprite_ext(drawSpriteArm, -1, armBowPosX, armBowPosY, 1, -currDir, dirCursor, -1, image_alpha);
 				}
 			}
 		
@@ -518,22 +518,41 @@ if (!inChamber) {
 					}
 				}
 		
-				//BOW
+				//Anti Material Rifle
 				if (global.currentWeapon == gameManager_obj.pickedWeapon.bow)
 				{
-					draw_text(player_obj.x + 100, player_obj.y + 50, string(bowReadyingImage));
-					//Second arm
-					if (!bowReadying) {
-						draw_sprite_ext(playerBow_spr, -1, x + ((2) * currDir) * changePos, y - 4, 1, -currDir, dirCursor, -1, image_alpha);
-						draw_sprite_ext(bombArrow_spr, 0, x + ((2) * currDir) * changePos, y - 4, 1, -currDir, dirCursor, -1, image_alpha);
+					if (sprite_index == playerWalkingEquippedReverse_spr) {
+						armSpriteCurvedShotgun = playerArmCurvedWalkingSprite;
+						spriteAntiMaterialRifle = playerAntiMaterialRifleWalking_spr;
+					} else if (sprite_index == playerWalkingEquipped_spr || sprite_index == playerWalkingEquippedNude_spr) {
+						armSpriteCurvedShotgun = playerArmCurvedWalkingSpriteReverse;
+						spriteAntiMaterialRifle = playerAntiMaterialRifleReverse_spr;
 					} else {
-						draw_sprite_ext(playerBowReady_spr, bowReadyingImage, x + ((2) * currDir) * changePos, y - 4, 1, -currDir, dirCursor, -1, image_alpha);
-						draw_sprite_ext(bombArrowReadying_spr, bowReadyingImage, (x + ((2) * currDir) * changePos), y - 4, 1, -currDir, dirCursor, -1, image_alpha);
+						armSpriteCurvedShotgun = playerArmCurvedSprite;
+						spriteAntiMaterialRifle = playerAntiMaterialRifle_spr;
+					}
+			
+					//Second arm
+					if (dirCursor > 90 && dirCursor < 270) {
+						draw_sprite_ext(spriteAntiMaterialRifle, -1, shotgunX, shotgunY, 1, -currDir, clamp(dirCursor, 90, 245), -1, image_alpha);
+						draw_sprite_ext(armSpriteCurvedShotgun, -1, shotgunArmCurvedX, shotgunArmCurvedY, 1, -currDir, clamp(dirCursor, 90, 245), -1, image_alpha);
+					} 
+					if (dirCursor > 270 && dirCursor < 360) {
+						draw_sprite_ext(spriteAntiMaterialRifle, -1, shotgunX, shotgunY, 1, -currDir, clamp(dirCursor, 295, 360), -1, image_alpha);
+						draw_sprite_ext(armSpriteCurvedShotgun, -1, shotgunArmCurvedX, shotgunArmCurvedY, 1, -currDir, clamp(dirCursor, 295, 360), -1, image_alpha);
+					}
+					if (dirCursor > 0 && dirCursor < 14) {
+						draw_sprite_ext(spriteAntiMaterialRifle, -1, shotgunX, shotgunY, 1, -currDir, dirCursor, -1, image_alpha);
+						draw_sprite_ext(armSpriteCurvedShotgun, -1, shotgunArmCurvedX, shotgunArmCurvedY, 1, -currDir, dirCursor, -1, image_alpha);
+					}
+					if (dirCursor > 14 && dirCursor < 90) {
+						draw_sprite_ext(spriteAntiMaterialRifle, -1, shotgunX, shotgunY, 1, -currDir, clamp(dirCursor, 0, 90), -1, image_alpha);
+						draw_sprite_ext(armSpriteCurvedShotgun, -1, shotgunArmCurvedX, shotgunArmCurvedY, 1, -currDir, clamp(dirCursor, 0, 90), -1, image_alpha);
 					}
 				}
 		
 				//MAIN ARM
-				if (global.currentWeapon != gameManager_obj.pickedWeapon.dualBarettas && global.currentWeapon != gameManager_obj.pickedWeapon.shotgun && global.currentWeapon != gameManager_obj.pickedWeapon.silencedMP)
+				if (global.currentWeapon != gameManager_obj.pickedWeapon.dualBarettas && global.currentWeapon != gameManager_obj.pickedWeapon.shotgun && global.currentWeapon != gameManager_obj.pickedWeapon.silencedMP && global.currentWeapon != gameManager_obj.pickedWeapon.bow)
 				{
 					if (sprite_index == playerWalkingEquippedReverse_spr) {
 						draw_sprite_ext(playerArmEmptyWalkingSprite, -1, armMainPosX, armMainPosY, 1, -currDir, dirCursor - 14 * -currDir, -1, image_alpha);

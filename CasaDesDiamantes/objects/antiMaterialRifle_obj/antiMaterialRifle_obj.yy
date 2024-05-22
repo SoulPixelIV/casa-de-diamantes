@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "bow_obj",
+  "name": "antiMaterialRifle_obj",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":{"name":"player_obj","path":"objects/player_obj/player_obj.yy",},"eventNum":0,"eventType":4,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
@@ -31,8 +31,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "bow_spr",
-    "path": "sprites/bow_spr/bow_spr.yy",
+    "name": "antiMaterialRifle_spr",
+    "path": "sprites/antiMaterialRifle_spr/antiMaterialRifle_spr.yy",
   },
   "spriteMaskId": null,
   "visible": true,

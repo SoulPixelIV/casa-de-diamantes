@@ -969,7 +969,7 @@ if (!noHUD && instance_exists(player_obj))
 		}
 		if (global.currentWeapon == gameManager_obj.pickedWeapon.bow)
 		{
-			draw_text(global.xScreenSize / 2, global.yScreenSize - global.yScreenSize / 4, "Golden Arrow");
+			draw_text(global.xScreenSize / 2, global.yScreenSize - global.yScreenSize / 4, "Anti-Materiel Rifle");
 		}
 	}
 	else
