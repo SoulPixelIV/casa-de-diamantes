@@ -73,6 +73,20 @@ if (drawStartMenu) {
 								{
 									case 0:
 										global.transitionScreenDest = level0;
+										global.syringes = 0;
+										global.diamonds = 0;
+										global.hasWarpzoneKey = false;
+										global.unlockedWeapon[1] = false;
+										global.unlockedWeapon[2] = false;
+										global.unlockedWeapon[3] = false;
+										global.unlockedWeapon[4] = false;
+										global.pistolAmmo = 0;
+										global.shotgunAmmo = 0;
+										global.sniperAmmo = 0;
+										global.bowAmmo = 0;
+										global.silencedMPAmmo = 0;
+										global.cutsceneLevel2Done = false;
+										global.reachedCasino = false;
 										room_goto(transitionScreen);
 										startMenuElement = 1;
 									break;

@@ -76,6 +76,7 @@ if (global.skin == 0) {
 	playerDualBarettasStanceSprite = playerDualBarettasStance_spr;
 	playerShotgunStanceSprite = playerShotgunStance_spr;
 	playerSilencedMPStanceSprite = playerSilencedMPStance_spr;
+	playerAntiMaterialRifleStanceSprite = playerAntiMaterialRifleStance_spr;
 	playerDashSprite = playerDash_spr;
 	playerDashReverseSprite = playerDashReverse_spr;
 	playerCrouchSprite = playerCrouch_spr;
@@ -102,6 +103,7 @@ if (global.skin == 1) {
 	playerDualBarettasStanceSprite = playerDualBarettasStanceSkin1_spr;
 	playerShotgunStanceSprite = playerShotgunStanceSkin1_spr;
 	playerSilencedMPStanceSprite = playerSilencedMPStanceSkin1_spr;
+	playerAntiMaterialRifleStanceSprite = playerAntiMaterialRifleStance_spr;
 	playerDashSprite = playerDashSkin1_spr;
 	playerDashReverseSprite = playerDashReverseSkin1_spr;
 	playerCrouchSprite = playerCrouchSkin1_spr;
@@ -647,6 +649,9 @@ if (!grounded && !isZombie && !flip && !isDashing && !groundCollisionTimerOn && 
 			}
 			if (global.currentWeapon == pickedWeapon.silencedMP) {
 				sprite_index = playerSilencedMPStanceSprite;
+			}
+			if (global.currentWeapon == pickedWeapon.bow) {
+				sprite_index = playerAntiMaterialRifleStanceSprite;
 			}
 		}
 	}
@@ -1549,6 +1554,9 @@ switch (sprite_index)
 		animationSpeed = 1.5;
 		break;
 	case playerSilencedMPStanceSprite:
+		animationSpeed = 1.5;
+		break;
+	case playerAntiMaterialRifleStanceSprite:
 		animationSpeed = 1.5;
 		break;
 	case playerJumpSpinUnequipped_spr:

@@ -88,6 +88,7 @@ if (global.skin == 0) {
 	playerDualBarettasStanceSprite = playerDualBarettasStance_spr;
 	playerShotgunStanceSprite = playerShotgunStance_spr;
 	playerSilencedMPStanceSprite = playerSilencedMPStance_spr;
+	playerAntiMaterialRifleStanceSprite = playerAntiMaterialRifleStance_spr;
 	playerDashSprite = playerDash_spr;
 	playerDashReverseSprite = playerDashReverse_spr;
 	playerCrouchSprite = playerCrouch_spr;
