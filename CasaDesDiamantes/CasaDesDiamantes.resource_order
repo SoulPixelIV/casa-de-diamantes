@@ -1778,6 +1778,7 @@
     {"name":"zombieBucketGirlBodyPart_obj","order":21,"path":"objects/zombieBucketGirlBodyPart_obj/zombieBucketGirlBodyPart_obj.yy",},
     {"name":"playerFlipNude_spr","order":3,"path":"sprites/playerFlipNude_spr/playerFlipNude_spr.yy",},
     {"name":"playerBow_spr","order":7,"path":"sprites/playerBow_spr/playerBow_spr.yy",},
+    {"name":"playerAntiMaterialRifleStanceSkin1_spr","order":23,"path":"sprites/playerAntiMaterialRifleStanceSkin1_spr/playerAntiMaterialRifleStanceSkin1_spr.yy",},
     {"name":"grenatePlant_spr","order":145,"path":"sprites/grenatePlant_spr/grenatePlant_spr.yy",},
     {"name":"glitterTopSpin_spr","order":4,"path":"sprites/glitterTopSpin_spr/glitterTopSpin_spr.yy",},
     {"name":"glitterBottomFlip_spr","order":4,"path":"sprites/glitterBottomFlip_spr/glitterBottomFlip_spr.yy",},

@@ -103,7 +103,7 @@ if (global.skin == 1) {
 	playerDualBarettasStanceSprite = playerDualBarettasStanceSkin1_spr;
 	playerShotgunStanceSprite = playerShotgunStanceSkin1_spr;
 	playerSilencedMPStanceSprite = playerSilencedMPStanceSkin1_spr;
-	playerAntiMaterialRifleStanceSprite = playerAntiMaterialRifleStance_spr;
+	playerAntiMaterialRifleStanceSprite = playerAntiMaterialRifleStanceSkin1_spr;
 	playerDashSprite = playerDashSkin1_spr;
 	playerDashReverseSprite = playerDashReverseSkin1_spr;
 	playerCrouchSprite = playerCrouchSkin1_spr;
@@ -1205,50 +1205,28 @@ if (shootingAllowed && !global.pause) {
 			}
 		}
 	
-		//Bow
+		//Anti-Material Rifle
 		with (gameManager_obj)
 		{
 			if (global.currentWeapon == pickedWeapon.bow && global.bowCooldown <= 0)
 			{
 				with (player_obj)
 				{
-					if (key_shoot_hold && !reloading && movement)
+					startShotCooldown = false;
+					if (key_shoot && !reloading)
 					{
 						if (!onLadder || onLadder && verspeed == 0)
-						{
-							screenshake(50, 10, 0.6, id);
-							bowReadying = true;
-							if (bowReadyingImage < 4) { //playerbowReadying image number
-								bowReadyingImage += global.dt / 30;
-							}
-							if (!audio_is_playing(bowReadying_snd) && !playedSoundBowReadying)
-							{
-								audio_play_sound(bowReadying_snd, 1, false);
-								playedSoundBowReadying = true;
-							}
-						}
-					}
-					if (key_shoot_release)
-					{
-						if (bowReadyingImage > 0)
 						{
 							if (room == level_Casino || room == level_CasinoRoof) {
 								camera_obj.showWeaponProhibited = true;
 							} else {
-								if (bowReadyingImage > 1.5) {
+								if (global.bowAmmo > 0) {
 									shooting_scr("bow");
-									audio_stop_sound(bowReadying_snd);
-									//audio_play_sound(bowShot_snd, 1, false);
-									audio_play_sound(arrowShotWind_snd, 1, false);
-									bowReadying = false;
-									bowReadyingImage = 0;
-									playedSoundBowReadying = false;
 								} else {
-									audio_stop_sound(bowReadying_snd);
-									audio_play_sound(bowDry_snd, 1, false);
-									bowReadying = false;
-									bowReadyingImage = 0;
-									playedSoundBowReadying = false;
+									if (!audio_is_playing(emptyClip_snd)) {
+										var emptyShot = audio_play_sound(emptyClip_snd, 1, false);
+										audio_sound_pitch(emptyShot, random_range(0.9, 1.1));
+									}
 								}
 							}
 						}

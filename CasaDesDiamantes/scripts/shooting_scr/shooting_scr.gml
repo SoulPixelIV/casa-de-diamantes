@@ -299,13 +299,60 @@ function shooting_scr(argument0) {
 	
 		if (argument0 == "bow")
 		{
-			//var pistolShot = audio_play_sound(bowShot_snd, 1, false);
-			//audio_sound_pitch(pistolShot, 2 - ((player_obj.bowDamageValue / 100) / 5));
-			screenshake(50, 40, 0.6, id);
-			var bombarrow = instance_create_layer(playerBulletLine_obj.x, playerBulletLine_obj.y, "Instances", bombArrow_obj);
-			bombarrow.horspeed = cos(degtorad(player_obj.dirCursor)) * (player_obj.bowReadyingImage * 3.2 + 6);
-			bombarrow.verspeed = -sin(degtorad(player_obj.dirCursor)) * (player_obj.bowReadyingImage * 3.2 + 6);
+			screenshake(80, 30, 0.6, id);
+			var rifleShot = audio_play_sound(sniperShot_snd, 1, false);
+			audio_sound_pitch(rifleShot, 2 - ((player_obj.sniperDamageValue / 100) / 5));
 		
+			var shotLightx = x + lengthdir_x(36, dirCursor);
+			var shotLighty = y - 8 + lengthdir_y(36, dirCursor);
+			instance_create_layer(playerBulletLine_obj.x, playerBulletLine_obj.y, "Instances", bulletSniper_obj);
+			instance_create_layer(shotLightx, shotLighty, "ForegroundObjects", shotLightShotgun_obj);
+			
+			if (instance_exists(spotlightPlayer_obj)) {
+				spotlightPlayer_obj.shotlight = true;
+			}
+			instance_create_layer(shotLightx, shotLighty, "ForegroundObjects", smokecloud_obj);
+			
+			if (!huggingWall && !isDashing)
+			{
+				if (dirCursor > 0 && dirCursor < 90)
+				{
+					if (place_free(x + horspeed * global.dt, y)) {
+						horspeed -= shotJumpStrength / 3.5;
+					}
+					if (place_free(x, y + verspeed * global.dt)) {
+						verspeed -= shotJumpStrength / 3.5;
+					}
+				}
+				if (dirCursor < 180 && dirCursor > 90)
+				{
+					if (place_free(x + horspeed * global.dt, y)) {
+						horspeed += shotJumpStrength / 3.5;
+					}
+					if (place_free(x, y + verspeed * global.dt)) {
+						verspeed -= shotJumpStrength / 3.5;
+					}
+				}
+				if (dirCursor > 180 && dirCursor < 270)
+				{
+					if (place_free(x + horspeed * global.dt, y)) {
+						horspeed += shotJumpStrength / 3.5;
+					}
+					if (place_free(x, y + verspeed * global.dt)) {
+						verspeed -= shotJumpStrength / 3.5;
+					}
+				}
+				if (dirCursor < 360 && dirCursor > 270)
+				{
+					if (place_free(x + horspeed * global.dt, y)) {
+						horspeed -= shotJumpStrength / 3.5;
+					}
+					if (place_free(x, y + verspeed * global.dt)) {
+						verspeed -= shotJumpStrength / 3.5;
+					}
+				}
+			}
+			global.bowAmmo--;
 			global.bowCooldown = global.bowCooldownSave;
 			shotZoom = true;
 			player_obj.startShotCooldown = true;
