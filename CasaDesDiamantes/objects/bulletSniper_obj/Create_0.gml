@@ -1,5 +1,6 @@
 /// @description Variables
 
+damage = 180;
 damageBonus = 0;
 if (instance_exists(player_obj))
 {

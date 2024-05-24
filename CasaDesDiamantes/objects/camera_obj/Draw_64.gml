@@ -27,6 +27,20 @@ if (instance_exists(player_obj) && !noHUD)
 				draw_sprite_ext(ammoCounter_spr, global.shotgunAmmo, ((player_obj.x) - x) + 220, ((player_obj.y - 20) - y) + 120, 1, 1, 0, -1, 1 / (global.shotgunAmmo + 1) * 3);
 			}
 		}
+		if (global.currentWeapon == pickedWeapon.silencedMP)
+		{
+			if (global.silencedMPAmmo < 9)
+			{
+				draw_sprite_ext(ammoCounter_spr, global.silencedMPAmmo / 2, ((player_obj.x) - x) + 220, ((player_obj.y - 20) - y) + 120, 1, 1, 0, -1, 1 / (global.silencedMPAmmo + 1) * 2);
+			}
+		}
+		if (global.currentWeapon == pickedWeapon.bow)
+		{
+			if (global.bowAmmo < 5)
+			{
+				draw_sprite_ext(ammoCounter_spr, global.bowAmmo, ((player_obj.x) - x) + 220, ((player_obj.y - 20) - y) + 120, 1, 1, 0, -1, 1 / (global.bowAmmo + 1) * 3);
+			}
+		}
 	}
 	else
 	{
@@ -1110,7 +1124,7 @@ if (!noHUD && instance_exists(player_obj))
 				draw_ellipse_color(-64, -150, global.xScreenSize + 64, global.yScreenSize + 360, c_red, c_black, false);
 				draw_set_alpha(1);
 				draw_set_halign(fa_left);
-			} else if ((global.bowAmmo < 9 && global.unlockedWeapon[4])) {
+			} else if ((global.bowAmmo < 4 && global.unlockedWeapon[4])) {
 				draw_set_halign(fa_center);
 				draw_set_color(c_black);
 				draw_text(global.xScreenSize / 2 - 1, global.yScreenSize - global.yScreenSize / 4 + 16 + 1, "Low Anti-Material Rifle Ammo");

@@ -291,6 +291,26 @@ if (hp < 0)
 			instance_create_layer(x, y, "Instances", ammoShotgunSmall_obj);
 		}
 	}
+	if (lastBullet == bulletSilencedMP_obj)
+	{
+		if (global.unlockedWeapon[4])
+		{
+			repeat (ceil(ammoSpawnCount / 4))
+			{
+				instance_create_layer(x, y, "Instances", ammoSniperSmall_obj);
+			}
+		}
+	}
+	if (lastBullet == bulletSniper_obj)
+	{
+		if (global.unlockedWeapon[3])
+		{
+			repeat (ceil(ammoSpawnCount / 2))
+			{
+				instance_create_layer(x, y, "Instances", ammoSilencedMPSmall_obj);
+			}
+		}
+	}
 
 	//Drop Money
 	repeat(25)
