@@ -142,6 +142,10 @@ else if (room == level11 || room == level12)
 {
 	global.ambientShadowIntensity = 0.75 * global.gamma;
 }
+else if (room == level16)
+{
+	global.ambientShadowIntensity = 0.4 * global.gamma;
+}
 else
 {
 	global.ambientShadowIntensity = 0.6 * global.gamma;

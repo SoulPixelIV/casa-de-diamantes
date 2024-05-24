@@ -248,8 +248,9 @@ function shooting_scr(argument0) {
 			instance_create_layer(shotLightx, shotLighty, "ForegroundObjects", shotLightShotgun_obj);
 			
 			if (instance_exists(spotlightPlayer_obj)) {
-				spotlightPlayer_obj.shotlight = true;
+					spotlightPlayer_obj.shotlightBig = true;
 			}
+			
 			instance_create_layer(shotLightx, shotLighty, "ForegroundObjects", smokecloud_obj);
 			screenshake(50, 12, 0.6, id);
 		
@@ -299,9 +300,9 @@ function shooting_scr(argument0) {
 	
 		if (argument0 == "bow")
 		{
-			screenshake(80, 30, 0.6, id);
+			screenshake(130, 50, 0.6, id);
 			var rifleShot = audio_play_sound(sniperShot_snd, 1, false);
-			audio_sound_pitch(rifleShot, 2 - ((player_obj.sniperDamageValue / 100) / 5));
+			audio_sound_pitch(rifleShot, random_range(0.9, 1.1));		
 		
 			var shotLightx = x + lengthdir_x(36, dirCursor);
 			var shotLighty = y - 8 + lengthdir_y(36, dirCursor);
@@ -313,42 +314,42 @@ function shooting_scr(argument0) {
 			}
 			instance_create_layer(shotLightx, shotLighty, "ForegroundObjects", smokecloud_obj);
 			
-			if (!huggingWall && !isDashing)
+			if (!huggingWall && !isDashing) 
 			{
 				if (dirCursor > 0 && dirCursor < 90)
 				{
 					if (place_free(x + horspeed * global.dt, y)) {
-						horspeed -= shotJumpStrength / 3.5;
+						horspeed -= shotJumpStrength / 2.5;
 					}
 					if (place_free(x, y + verspeed * global.dt)) {
-						verspeed -= shotJumpStrength / 3.5;
+						verspeed -= shotJumpStrength / 2.5;
 					}
 				}
 				if (dirCursor < 180 && dirCursor > 90)
 				{
 					if (place_free(x + horspeed * global.dt, y)) {
-						horspeed += shotJumpStrength / 3.5;
+						horspeed += shotJumpStrength / 2.5;
 					}
 					if (place_free(x, y + verspeed * global.dt)) {
-						verspeed -= shotJumpStrength / 3.5;
+						verspeed -= shotJumpStrength / 2.5;
 					}
 				}
 				if (dirCursor > 180 && dirCursor < 270)
 				{
 					if (place_free(x + horspeed * global.dt, y)) {
-						horspeed += shotJumpStrength / 3.5;
+						horspeed += shotJumpStrength / 2.5;
 					}
 					if (place_free(x, y + verspeed * global.dt)) {
-						verspeed -= shotJumpStrength / 3.5;
+						verspeed -= shotJumpStrength / 2.5;
 					}
 				}
 				if (dirCursor < 360 && dirCursor > 270)
 				{
 					if (place_free(x + horspeed * global.dt, y)) {
-						horspeed -= shotJumpStrength / 3.5;
+						horspeed -= shotJumpStrength / 2.5;
 					}
 					if (place_free(x, y + verspeed * global.dt)) {
-						verspeed -= shotJumpStrength / 3.5;
+						verspeed -= shotJumpStrength / 2.5;
 					}
 				}
 			}
