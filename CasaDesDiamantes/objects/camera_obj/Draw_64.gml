@@ -1985,9 +1985,9 @@ draw_set_color(make_color_rgb(255, 215, 0));
 if (instance_exists(player_obj)) {
 	if (player_obj.inCutscene) {
 		if (player_obj.inputMethod == 0) {
-			draw_text(16, global.yScreenSize - 16, "Press Enter to skip");
+			draw_text(16, global.yScreenSize - 16, "Press Enter to Skip");
 		} else {
-			draw_text(16, global.yScreenSize - 16, "Press Select to skip");
+			draw_text(16, global.yScreenSize - 16, "Press Select to Skip");
 		}
 	}
 }

@@ -1,6 +1,7 @@
 /// @description Variables
 
-audio_play_sound(pistolShot_snd, 1, false);
+audio_play_sound(sniperShot_snd, 1, false);
+audio_play_sound(riflePing_snd, 1, false);
 damageBonus = 100;
 if (instance_exists(player_obj))
 {

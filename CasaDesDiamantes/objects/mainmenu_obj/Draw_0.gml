@@ -73,9 +73,6 @@ if (drawStartMenu) {
 								{
 									case 0:
 										global.transitionScreenDest = level0;
-										global.syringes = 0;
-										global.diamonds = 0;
-										global.hasWarpzoneKey = false;
 										global.unlockedWeapon[1] = false;
 										global.unlockedWeapon[2] = false;
 										global.unlockedWeapon[3] = false;
@@ -86,7 +83,88 @@ if (drawStartMenu) {
 										global.bowAmmo = 0;
 										global.silencedMPAmmo = 0;
 										global.cutsceneLevel2Done = false;
+										global.reachedCasino = false;					
+										global.spawn = 0;
+										global.money = 0;
+										global.skin = 0;
+										global.syringes = 0;
+										global.room = noone;
+										global.diamonds = 0;
+										global.lastCheckpoint = noone;
+										global.hasWarpzoneKey = false;
+										global.keyRed = false;
+										global.keyBlue = false;
+										global.keyYellow = false;
+										global.scorepoints = 0;
+										global.currentWorld = 0;
+										global.storyAct = 0;
+										global.multiplier = 1;
+										global.multiplierTimer = 700;
+										global.multiplierTimerSave = global.multiplierTimer;
+										global.timer = 0;
+										global.drawTutorialInfectionUsed = false;
+										global.level5AArena1Done = false;
+										global.level5AArena2Done = false;
+										global.level5BArena3Done = false;
+
+										global.shotgunUpgrade1 = false;
+										global.shotgunUpgrade2 = false;
+
+										global.dualBarettasUpgrade1 = false;
+										global.dualBarettasUpgrade2 = false;
+
+										global.cupyUpgrade1 = false;
+										global.cupyUpgrade2 = false;
+
+										global.boughtSkin1 = false;
+
 										global.reachedCasino = false;
+										global.act2Unlocked = false;
+										global.act3Unlocked = false;
+
+										global.cutsceneLevel2Done = false;
+										global.cutsceneCasinoIntroDone = false;
+
+										global.arrowLevel2Done = false;
+										global.arrowVIPDone = false;
+										global.arrowCindyDone = false;
+
+										global.pwlevel2UnlockedElevator = false;
+										global.pwlevel3UnlockedElevator = false;
+
+										global.level2Gate = false;
+										global.level5ABooster = false;
+										global.level5AGate = false;
+										global.level5BGate = false;
+										global.level5BGate2 = false;
+										global.level8Booster = false;
+										global.level8Booster2 = false;
+										global.level8Booster3 = false;
+										global.level12Gate = false;
+										global.level13Booster = false;
+										global.level15Spring = false;
+										global.level15Shortcut = false;
+										
+										global.level4DoorOpen = false;
+										global.level6GateAOpen = false;
+										global.level6GateBOpen = false;
+
+										global.warpzone1DoorOpen = false;
+										global.warpzone1Reward = false;
+										global.warpzone1RewardGiven = false;
+
+										global.drawMission = false;
+										global.introDialogueCindyDone = false;
+										global.introDialogueVIPDone = false;
+										global.introDialogueOutOfRoomDone = false;
+										global.cupyDialogue1Done = false;
+										global.cupyDialogue2Done = false;
+										global.cupyDialogue3Done = false;
+										global.cupyDialogue4Done = false;
+										global.cupyDialogue5Done = false;
+										global.cupyDialogue6Done = false;
+										global.moveToWorld = 0;
+										
 										room_goto(transitionScreen);
 										startMenuElement = 1;
 									break;
@@ -130,6 +208,98 @@ if (drawStartMenu) {
 		{
 			if (startMenuElement == 0) {
 				global.transitionScreenDest = level0;
+				global.unlockedWeapon[1] = false;
+				global.unlockedWeapon[2] = false;
+				global.unlockedWeapon[3] = false;
+				global.unlockedWeapon[4] = false;
+				global.pistolAmmo = 0;
+				global.shotgunAmmo = 0;
+				global.sniperAmmo = 0;
+				global.bowAmmo = 0;
+				global.silencedMPAmmo = 0;
+				global.cutsceneLevel2Done = false;
+				global.reachedCasino = false;					
+				global.spawn = 0;
+				global.money = 0;
+				global.skin = 0;
+				global.syringes = 0;
+				global.room = noone;
+				global.diamonds = 0;
+				global.lastCheckpoint = noone;
+				global.hasWarpzoneKey = false;
+				global.keyRed = false;
+				global.keyBlue = false;
+				global.keyYellow = false;
+				global.scorepoints = 0;
+				global.currentWorld = 0;
+				global.storyAct = 0;
+				global.multiplier = 1;
+				global.multiplierTimer = 700;
+				global.multiplierTimerSave = global.multiplierTimer;
+				global.timer = 0;
+				global.drawTutorialInfectionUsed = false;
+				global.level5AArena1Done = false;
+				global.level5AArena2Done = false;
+				global.level5BArena3Done = false;
+
+				global.shotgunUpgrade1 = false;
+				global.shotgunUpgrade2 = false;
+
+				global.dualBarettasUpgrade1 = false;
+				global.dualBarettasUpgrade2 = false;
+
+				global.cupyUpgrade1 = false;
+				global.cupyUpgrade2 = false;
+
+				global.boughtSkin1 = false;
+
+				global.reachedCasino = false;
+				global.act2Unlocked = false;
+				global.act3Unlocked = false;
+
+				global.cutsceneLevel2Done = false;
+				global.cutsceneCasinoIntroDone = false;
+
+				global.arrowLevel2Done = false;
+				global.arrowVIPDone = false;
+				global.arrowCindyDone = false;
+
+				global.pwlevel2UnlockedElevator = false;
+				global.pwlevel3UnlockedElevator = false;
+
+				global.level2Gate = false;
+				global.level5ABooster = false;
+				global.level5AGate = false;
+				global.level5BGate = false;
+				global.level5BGate2 = false;
+				global.level8Booster = false;
+				global.level8Booster2 = false;
+				global.level8Booster3 = false;
+				global.level12Gate = false;
+				global.level13Booster = false;
+				global.level15Spring = false;
+				global.level15Shortcut = false;
+										
+				global.level4DoorOpen = false;
+				global.level6GateAOpen = false;
+				global.level6GateBOpen = false;
+
+				global.warpzone1DoorOpen = false;
+				global.warpzone1Reward = false;
+				global.warpzone1RewardGiven = false;
+
+				global.drawMission = false;
+				global.introDialogueCindyDone = false;
+				global.introDialogueVIPDone = false;
+				global.introDialogueOutOfRoomDone = false;
+				global.cupyDialogue1Done = false;
+				global.cupyDialogue2Done = false;
+				global.cupyDialogue3Done = false;
+				global.cupyDialogue4Done = false;
+				global.cupyDialogue5Done = false;
+				global.cupyDialogue6Done = false;
+				global.moveToWorld = 0;
+										
 				room_goto(transitionScreen);
 				startMenuElement = 1;
 			} else {

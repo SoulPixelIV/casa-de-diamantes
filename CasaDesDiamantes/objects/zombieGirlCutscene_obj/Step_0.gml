@@ -3,7 +3,8 @@
 lifeTimer -= global.dt;
 
 if (lifeTimer < 0) {
-	audio_play_sound(pistolShot_snd, 1, false);
+	audio_play_sound(sniperShot_snd, 1, false);
+	audio_play_sound(riflePing_snd, 1, false);
 	instance_destroy();
 }
 
