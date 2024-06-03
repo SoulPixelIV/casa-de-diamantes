@@ -106,6 +106,7 @@ if (drawStartMenu) {
 										global.level5AArena1Done = false;
 										global.level5AArena2Done = false;
 										global.level5BArena3Done = false;
+										global.level4DoorOpen = false;
 
 										global.shotgunUpgrade1 = false;
 										global.shotgunUpgrade2 = false;
