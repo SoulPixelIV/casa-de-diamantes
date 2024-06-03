@@ -433,6 +433,8 @@
     {"name":"inst_4AE6F6CF","path":"rooms/level5A/level5A.yy",},
     {"name":"inst_43D7C178","path":"rooms/level5A/level5A.yy",},
     {"name":"inst_254F0802","path":"rooms/level5A/level5A.yy",},
+    {"name":"inst_667FC88A","path":"rooms/level5A/level5A.yy",},
+    {"name":"inst_47A22712","path":"rooms/level5A/level5A.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -955,6 +957,8 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_6006DC43","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"silencedMP_obj","path":"objects/silencedMP_obj/silencedMP_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":4225.0,"y":1456.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_C2270B5","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"ammoPackMG_obj","path":"objects/ammoPackMG_obj/ammoPackMG_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":4257.0,"y":1456.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_4AE6F6CF","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"ammoPackMG_obj","path":"objects/ammoPackMG_obj/ammoPackMG_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":4193.0,"y":1456.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_667FC88A","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"dualBarettas_obj","path":"objects/dualBarettas_obj/dualBarettas_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":8192.0,"y":1856.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_47A22712","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"shotgun_obj","path":"objects/shotgun_obj/shotgun_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":8224.0,"y":1856.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"MidgroundObjects","depth":1500,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Tiles","depth":1600,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":94,"SerialiseWidth":313,"TileCompressedData":[
