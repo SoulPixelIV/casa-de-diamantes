@@ -1890,6 +1890,7 @@ else
 invincibleHitCooldown -= global.dt;
 
 //Lock Movement when no window focus
+/*
 if (!window_has_focus())
 {
 	movement = false;
@@ -1899,7 +1900,7 @@ else if (setMovAfterScreen)
 {
 	movement = true;
 	setMovAfterScreen = false;
-}
+}*/
 
 //Deactivate Movement if away from camera
 if (instance_exists(camera_obj))

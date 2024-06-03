@@ -6,11 +6,11 @@ if (keyboard_check_pressed(ord("J")))
 {
 	if (noHUD)
 	{
-		noHUD = false;
+		//noHUD = false;
 	}
 	else
 	{
-		noHUD = true;
+		//noHUD = true;
 	}
 }
 
