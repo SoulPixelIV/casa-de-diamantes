@@ -481,9 +481,11 @@ if (isDashing && !onLadder)
 				
 				//Cancel Crouch on Movement
 				if (key_left || key_right) {
-					reachedGroundOnce = false;
-					crouchDirSet = false;
-					jump_scr();
+					if (movement) {
+						reachedGroundOnce = false;
+						crouchDirSet = false;
+						jump_scr();
+					}
 				}
 			}
 		
