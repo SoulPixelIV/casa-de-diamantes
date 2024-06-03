@@ -1,3 +1,5 @@
+image_alpha = 0.5;
+
 //Create Emitter
 emitter = audio_emitter_create();
 audio_max_distance = 900;
