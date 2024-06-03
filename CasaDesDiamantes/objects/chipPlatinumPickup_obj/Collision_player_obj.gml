@@ -1,5 +1,6 @@
 if (invTimer < 0) {
 	global.money += 50;
+	audio_play_sound(coin3_snd, 1, false);
 	camera_obj.scoreSpin = true;
 	camera_obj.scoreDif = true;
 	camera_obj.scoreSpinTimer = camera_obj.scoreSpinTimerSave;
