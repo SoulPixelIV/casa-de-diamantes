@@ -51,13 +51,14 @@ for (i = array_length(slots) - convMoneyLen; i < 7; i++) {
 	normIndex ++; //Index starting at 0 for convMoney reading
 }
 
+/*
 draw_set_font(gothicPixel_fnt);
 draw_set_halign(fa_center);
 draw_set_color(c_black);
 draw_text(global.xScreenSize / 2 - 1, (global.yScreenSize / 2) + 96 + 1, "Press Esc to Exit");
 draw_set_color(make_color_rgb(255, 215, 0));
 draw_text(global.xScreenSize / 2, (global.yScreenSize / 2) + 96, "Press Esc to Exit");
-draw_set_halign(fa_left);
+draw_set_halign(fa_left); */
 
 //Chipbar
 draw_sprite_ext(scoreBorder_spr, -1, global.xScreenSize - 11, 11, 1, 1, 0, -1, 1);

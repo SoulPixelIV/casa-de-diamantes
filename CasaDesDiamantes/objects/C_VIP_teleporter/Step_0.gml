@@ -4,7 +4,6 @@ if (keyboard_check_pressed(ord("W")) && place_meeting(x, y, player_obj) && !glob
 	save_scr();
 	
 	teleporting = true;
-	global.doorDelayStart = true;
 	player_obj.movement = false;
 }
 
