@@ -67,7 +67,7 @@ if (!place_meeting(x, y, enemy_obj) && !place_meeting(x, y, spawnCloud_obj))
 }
 
 //Send arena message
-if (done && !setArenaMessage) {
+if (done && !setArenaMessage && arenaClearedMessage) {
 	camera_obj.arenaCompleteMessage = true;
 	setArenaMessage = true;
 	audio_sound_gain(currMusic, 0, 5000);
