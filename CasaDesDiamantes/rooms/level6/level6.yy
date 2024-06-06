@@ -92,7 +92,7 @@
     {"name":"inst_30F6E3D","path":"rooms/level6/level6.yy",},
     {"name":"inst_477D57F4","path":"rooms/level6/level6.yy",},
     {"name":"inst_39EE97C1","path":"rooms/level6/level6.yy",},
-    {"name":"inst_2F6337B5","path":"rooms/level6/level6.yy",},
+    {"name":"inst_7FC99C90","path":"rooms/level6/level6.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -110,7 +110,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_6FDF6854_2","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"lightningSpawner_obj","path":"objects/lightningSpawner_obj/lightningSpawner_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":192.0,"y":0.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_55A95D5E","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"cameraTarget_obj","path":"objects/cameraTarget_obj/cameraTarget_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1472.0,"y":1120.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_5C57DEED","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"cameraTarget_obj","path":"objects/cameraTarget_obj/cameraTarget_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1856.0,"y":1120.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_2F6337B5","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"level4_demoend_teleporter","path":"objects/level4_demoend_teleporter/level4_demoend_teleporter.yy",},"properties":[],"rotation":0.0,"scaleX":9.0,"scaleY":9.0,"x":1984.0,"y":576.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7FC99C90","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"Level6_Level7_teleporter","path":"objects/Level6_Level7_teleporter/Level6_Level7_teleporter.yy",},"properties":[],"rotation":0.0,"scaleX":9.375,"scaleY":8.625,"x":1987.0,"y":573.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMREffectLayer","resourceVersion":"1.0","name":"RedFilter","depth":400,"effectEnabled":true,"effectType":"_filter_colourise","gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[
         {"name":"g_Intensity","type":0,"value":"0.3",},

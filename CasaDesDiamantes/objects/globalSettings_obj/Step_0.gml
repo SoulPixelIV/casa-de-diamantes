@@ -52,7 +52,7 @@ else
 {
 	display_mouse_unlock();
 }
-/*
+
 if (keyboard_check_pressed(vk_f1))
 {
 	restartInProg = true;
@@ -91,7 +91,7 @@ if (keyboard_check_pressed(vk_f7) && room != mainmenu && room != levelSelect && 
 	camera_obj.chipDif += 1000;
 	audio_play_sound(coin3_snd, 1, false);
 }
-*/
+
 /*
 if (keyboard_check_pressed(vk_f11))
 {
