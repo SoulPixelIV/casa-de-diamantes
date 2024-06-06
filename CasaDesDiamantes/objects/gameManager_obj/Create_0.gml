@@ -245,6 +245,7 @@ currVolTakingCard = audio_sound_get_gain(takingCard_snd);
 currVolEmptyClip = audio_sound_get_gain(emptyClip_snd);
 currVolRiflePing = audio_sound_get_gain(riflePing_snd);
 currVolHealthPickup = audio_sound_get_gain(healthPickup_snd);
+currVolJumpPad = audio_sound_get_gain(jumpPad_snd);
 
 currVolInfectedVoice = audio_sound_get_gain(infectedVoice_snd);
 currVolInfectionVoice = audio_sound_get_gain(plagueInfectionVoice_snd);

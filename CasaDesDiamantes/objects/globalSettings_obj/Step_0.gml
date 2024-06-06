@@ -52,7 +52,6 @@ else
 {
 	display_mouse_unlock();
 }
-
 /*
 if (keyboard_check_pressed(vk_f1))
 {

@@ -1,5 +1,6 @@
 if (!speedRecieved && open)
 {
+	audio_play_sound(jumpPad_snd, 1, false);
 	resetJump_scr();
 	other.verspeed = boostStrengthY;
 	other.horspeed = boostStrengthX;

@@ -92,6 +92,7 @@ audio_sound_pitch(takingCard_snd, clamp(1 * global.timeScale, 0.5, 1.5));
 audio_sound_pitch(emptyClip_snd, clamp(1 * global.timeScale, 0.5, 1.5));
 audio_sound_pitch(riflePing_snd, clamp(1 * global.timeScale, 0.5, 1.5));
 audio_sound_pitch(healthPickup_snd, clamp(1 * global.timeScale, 0.5, 1.5));
+audio_sound_pitch(jumpPad_snd, clamp(1 * global.timeScale, 0.5, 1.5));
 
 audio_sound_pitch(infectedVoice_snd, clamp(1 * global.timeScale, 0.5, 1.5));
 audio_sound_pitch(plagueInfectionVoice_snd, clamp(1 * global.timeScale, 0.5, 1.5));
@@ -192,6 +193,7 @@ audio_sound_gain(takingCard_snd, (global.soundVolume / 100) * currVolTakingCard,
 audio_sound_gain(emptyClip_snd, (global.soundVolume / 100) * currVolEmptyClip, 0);
 audio_sound_gain(riflePing_snd, (global.soundVolume / 100) * currVolRiflePing, 0);
 audio_sound_gain(healthPickup_snd, (global.soundVolume / 100) * currVolHealthPickup, 0);
+audio_sound_gain(jumpPad_snd, (global.soundVolume / 100) * currVolJumpPad, 0);
 
 audio_sound_gain(infectedVoice_snd, (global.soundVolume / 100) * currVolInfectedVoice, 0);
 audio_sound_gain(plagueInfectionVoice_snd, (global.soundVolume / 100) * currVolInfectionVoice, 0);

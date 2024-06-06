@@ -1174,6 +1174,7 @@
     {"id":{"name":"ammoPackPistolDrop_obj","path":"objects/ammoPackPistolDrop_obj/ammoPackPistolDrop_obj.yy",},},
     {"id":{"name":"minecart_snd","path":"sounds/minecart_snd/minecart_snd.yy",},},
     {"id":{"name":"crawlerChunk_obj","path":"objects/crawlerChunk_obj/crawlerChunk_obj.yy",},},
+    {"id":{"name":"jumpPad_snd","path":"sounds/jumpPad_snd/jumpPad_snd.yy",},},
     {"id":{"name":"beep_snd","path":"sounds/beep_snd/beep_snd.yy",},},
     {"id":{"name":"shadow_casters_exist","path":"scripts/shadow_casters_exist/shadow_casters_exist.yy",},},
     {"id":{"name":"level7","path":"rooms/level7/level7.yy",},},

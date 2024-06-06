@@ -996,6 +996,7 @@
     {"name":"ammoPackPistolDrop_obj","order":15,"path":"objects/ammoPackPistolDrop_obj/ammoPackPistolDrop_obj.yy",},
     {"name":"minecart_snd","order":85,"path":"sounds/minecart_snd/minecart_snd.yy",},
     {"name":"crawlerChunk_obj","order":20,"path":"objects/crawlerChunk_obj/crawlerChunk_obj.yy",},
+    {"name":"jumpPad_snd","order":92,"path":"sounds/jumpPad_snd/jumpPad_snd.yy",},
     {"name":"beep_snd","order":2,"path":"sounds/beep_snd/beep_snd.yy",},
     {"name":"shadow_casters_exist","order":4,"path":"scripts/shadow_casters_exist/shadow_casters_exist.yy",},
     {"name":"level7","order":6,"path":"rooms/level7/level7.yy",},
