@@ -1,7 +1,6 @@
 if (place_meeting(x, y, player_obj) && !global.doorDelayStart)
 {
 	teleporting = true;
-	global.doorDelayStart = true;
 	player_obj.movement = false;
 }
 

@@ -12,7 +12,7 @@ if (name == 2) {
 	draw_text(global.xScreenSize / 2, global.yScreenSize / 2.5, "Art & Design by\nWilliam Djalal\nJana Lel\nEmilia Rzepka");
 }
 if (name == 3) {
-	draw_text(global.xScreenSize / 2, global.yScreenSize / 2.5, "Playtesting by \nAlkan Akarsu\nEmilia Rzepka\nJana Lel");
+	draw_text(global.xScreenSize / 2, global.yScreenSize / 2.5, "Support by \nAlkan Akarsu\nEmilia Rzepka\nJana Lel\nChristopher Grunzke");
 }
 if (name == 4) {
 	if (flickerTimer > 0) {
