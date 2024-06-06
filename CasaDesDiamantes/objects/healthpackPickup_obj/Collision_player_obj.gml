@@ -2,6 +2,7 @@
 
 if (player_obj.hp < player_obj.maxhp || player_obj.plagueTransformation)
 {
+	audio_play_sound(healthPickup_snd, 1, false);
 	if (player_obj.hp < player_obj.maxhp - 25)
 	{
 		player_obj.hp += 25;

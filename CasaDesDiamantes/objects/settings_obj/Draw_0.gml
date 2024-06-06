@@ -11,7 +11,7 @@ if (global.gamma != 1.4) {
 draw_text(32, optionsY[3], "Back to Main Menu");
 
 draw_set_halign(fa_right);
-draw_text(global.xScreenSize - 24, global.yScreenSize - 16, "DEMO v.1.5");
+draw_text(global.xScreenSize - 24, global.yScreenSize - 16, "DEMO v.1.5.1");
 draw_set_halign(fa_left);
 
 //Draw title

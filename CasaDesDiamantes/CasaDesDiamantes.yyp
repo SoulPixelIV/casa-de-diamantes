@@ -1291,6 +1291,7 @@
     {"id":{"name":"light_create_line","path":"scripts/light_create_line/light_create_line.yy",},},
     {"id":{"name":"tutorialInfectionCollider_obj","path":"objects/tutorialInfectionCollider_obj/tutorialInfectionCollider_obj.yy",},},
     {"id":{"name":"light_add_to_world","path":"scripts/light_add_to_world/light_add_to_world.yy",},},
+    {"id":{"name":"healthPickup_snd","path":"sounds/healthPickup_snd/healthPickup_snd.yy",},},
     {"id":{"name":"Level5B_Level4_teleporter","path":"objects/Level5B_Level4_teleporter/Level5B_Level4_teleporter.yy",},},
     {"id":{"name":"movingPlatformCheckpoint_obj","path":"objects/movingPlatformCheckpoint_obj/movingPlatformCheckpoint_obj.yy",},},
     {"id":{"name":"SF3_PW0_teleporter","path":"objects/SF3_PW0_teleporter/SF3_PW0_teleporter.yy",},},
