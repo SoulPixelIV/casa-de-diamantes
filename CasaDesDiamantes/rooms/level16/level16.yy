@@ -439,6 +439,7 @@
     {"name":"inst_76DAEB2","path":"rooms/level16/level16.yy",},
     {"name":"inst_2D7C50E6","path":"rooms/level16/level16.yy",},
     {"name":"inst_5804F2AD","path":"rooms/level16/level16.yy",},
+    {"name":"inst_2B6AFD4F","path":"rooms/level16/level16.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -1227,6 +1228,7 @@
       ],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Background","depth":3500,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_1B759BDB","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"darkcaveBackground4_obj","path":"objects/darkcaveBackground4_obj/darkcaveBackground4_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1408.0,"y":3296.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_2B6AFD4F","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"moth_obj","path":"objects/moth_obj/moth_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":2656.0,"y":3488.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMREffectLayer","resourceVersion":"1.0","name":"DesaturationFilter1","depth":3600,"effectEnabled":true,"effectType":"_filter_greyscale","gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[
         {"name":"g_Intensity","type":0,"value":"0.3",},
