@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
-  "name": "moth_spr",
+  "name": "mothFlying_spr",
   "bbox_bottom": 65,
   "bbox_left": 30,
   "bbox_right": 57,
@@ -14,6 +14,7 @@
   "For3D": false,
   "frames": [
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"3abdbb7e-4892-416a-bc69-3583386baa06",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"a52fabf3-e6ad-4b0a-a600-14d44596729b",},
   ],
   "gridX": 0,
   "gridY": 0,
@@ -43,7 +44,7 @@
   "sequence": {
     "resourceType": "GMSequence",
     "resourceVersion": "1.4",
-    "name": "moth_spr",
+    "name": "mothFlying_spr",
     "autoRecord": true,
     "backdropHeight": 768,
     "backdropImageOpacity": 0.5,
@@ -54,7 +55,7 @@
     "events": {"resourceType":"KeyframeStore<MessageEventKeyframe>","resourceVersion":"1.0","Keyframes":[],},
     "eventStubScript": null,
     "eventToFunction": {},
-    "length": 1.0,
+    "length": 2.0,
     "lockOrigin": false,
     "moments": {"resourceType":"KeyframeStore<MomentsEventKeyframe>","resourceVersion":"1.0","Keyframes":[],},
     "playback": 1,
@@ -65,7 +66,8 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"3abdbb7e-4892-416a-bc69-3583386baa06","path":"sprites/moth_spr/moth_spr.yy",},},},"Disabled":false,"id":"9bcd2b36-0e23-4f83-8676-db86b22c09d4","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"3abdbb7e-4892-416a-bc69-3583386baa06","path":"sprites/mothFlying_spr/mothFlying_spr.yy",},},},"Disabled":false,"id":"129d7edc-3721-4cba-aa40-5fae69458d83","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"a52fabf3-e6ad-4b0a-a600-14d44596729b","path":"sprites/mothFlying_spr/mothFlying_spr.yy",},},},"Disabled":false,"id":"47a388c8-569a-475d-8d6d-80c143ac4248","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

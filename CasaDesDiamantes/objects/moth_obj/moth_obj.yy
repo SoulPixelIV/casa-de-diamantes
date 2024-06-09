@@ -2,7 +2,9 @@
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
   "name": "moth_obj",
-  "eventList": [],
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
+  ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
@@ -26,8 +28,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "moth_spr",
-    "path": "sprites/moth_spr/moth_spr.yy",
+    "name": "mothFlying_spr",
+    "path": "sprites/mothFlying_spr/mothFlying_spr.yy",
   },
   "spriteMaskId": null,
   "visible": true,
