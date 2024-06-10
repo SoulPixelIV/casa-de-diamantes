@@ -65,14 +65,14 @@ if (instance_exists(player_obj)) {
 		deaggroTimer -= global.dt;
 	}
 }
-
+/*
 if (deaggroTimer < 0)
 {
 	if (!place_meeting(x, y, battleArena_obj) && room != infiniteSpawn) {
 		aggro = false;
 		deaggroTimer = deaggroTimerSave;
 	}
-}
+}*/
 if (aggroTimer < 0)
 {
 	aggro = true;

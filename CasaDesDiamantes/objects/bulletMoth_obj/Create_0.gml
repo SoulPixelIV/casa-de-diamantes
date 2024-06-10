@@ -11,7 +11,7 @@ bullet3 = false;
 dealtDamage = false;
 penetrationTime = 3;
 
-body = instance_nearest(x, y, zombieSoldierGirl_obj);
+body = instance_nearest(x, y, moth_obj);
 if (body.image_xscale == -1)
 {
 	dir = 180;
@@ -23,13 +23,7 @@ else
 
 move_towards_point(body.playerPosX, body.playerPosY, movSpeed * global.dt);
 
-if (bullet2) {
-	image_angle = point_direction(x, y, body.playerPosX, body.playerPosY) + 30;
-} else if (bullet3) {
-	image_angle = point_direction(x, y, body.playerPosX, body.playerPosY) - 30;
-} else {
-	image_angle = point_direction(x, y, body.playerPosX, body.playerPosY);
-}
+image_angle = point_direction(x, y, body.playerPosX, body.playerPosY);
 
 //Create Emitter
 emitter = audio_emitter_create();

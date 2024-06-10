@@ -32,6 +32,17 @@ part_type_gravity(global.toxicPart, 0.0001, 270);
 part_type_color1(global.toxicPart, c_purple);
 part_type_alpha3(global.toxicPart, 0, 0.25, 0);
 
+//Toxic Green Particles
+global.toxicPartGreen = part_type_create();
+part_type_sprite(global.toxicPartGreen, toxicCloud_spr, true, true, true);
+part_type_life(global.toxicPartGreen, 300, 700);
+part_type_size(global.toxicPartGreen, 0.6, 2.5, 0, 0);
+part_type_orientation(global.toxicPartGreen, 0, 359, 0.02, 0, 1);
+part_type_direction(global.toxicPartGreen, 0, 359, 0, 3);
+part_type_gravity(global.toxicPartGreen, 0.0001, 270);
+part_type_color1(global.toxicPartGreen, c_green);
+part_type_alpha3(global.toxicPartGreen, 0, 0.25, 0);
+
 //Void Particles
 global.voidPart = part_type_create();
 part_type_sprite(global.voidPart, voidMonster_spr, true, true, true);

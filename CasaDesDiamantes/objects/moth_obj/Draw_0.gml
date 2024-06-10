@@ -50,7 +50,8 @@ if (!aggro)
 //Vision line
 if (attackCooldown < 75 && !attackInProg2 && aggro)
 {
-	draw_sprite_ext(warninglaser_spr, -1, x, y, 1, 1, image_angle, -1, 1);
+	//draw_sprite_ext(warninglaser_spr, -1, x, y, 1, 1, image_angle + 30, -1, 1);
+	//draw_sprite_ext(warninglaser_spr, -1, x, y, 1, 1, image_angle - 30, -1, 1);
 }
 
 if (player_obj != noone)

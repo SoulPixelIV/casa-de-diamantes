@@ -78,14 +78,14 @@ if (instance_exists(player_obj)) {
 		deaggroTimer -= global.dt;
 	}
 }
-
+/*
 if (deaggroTimer < 0)
 {
 	if (!place_meeting(x, y, battleArena_obj) && room != infiniteSpawn) {
 		aggro = false;
 		deaggroTimer = deaggroTimerSave;
 	}
-}
+}*/
 if (aggroTimer < 0)
 {
 	aggro = true;
@@ -144,6 +144,9 @@ if (movement)
 			}
 		}*/
 	}
+} else {
+	horspeed = 0;
+	verspeed = 0;
 }
 
 //Slow Floating Movement
@@ -359,6 +362,7 @@ if (aggro)
 			}
 		} else {
 			attackCooldown = attackCooldownSave;
+			movement = true;
 		}
 	}
 
@@ -368,7 +372,7 @@ if (aggro)
 	}
 	else
 	{
-		attackInProg2 = true;
+		attackInProg1 = true;
 		//sprite_index = moth_objGrenate_spr;
 	}
 
@@ -379,6 +383,7 @@ if (aggro)
 		
 		//Attack Flash
 		if (attackCooldown < 75) {
+			movement = false;
 			attackTintTimer -= global.dt;
 			if (attackTintTimer > 0) {
 				attackTint = true;
@@ -396,10 +401,10 @@ if (aggro)
 	}
 	if (attackCooldown < 0 && attackInProg1)
 	{
-		var shot = audio_play_sound_on(emitter, insectSpit_snd, false, 1);
-		audio_sound_pitch(shot, random_range(0.9, 1.1));
+		//var shot = audio_play_sound_on(emitter, insectSpit_snd, false, 1);
+		//audio_sound_pitch(shot, random_range(0.9, 1.1));
 		
-		//instance_create_layer(x + 10, y, "Instances", bulletmoth_obj);
+		instance_create_layer(x, y, "Instances", radioactiveCloud_obj);
 
 		attackCooldown = attackCooldownSave;
 		sprite_index = mothFlying_spr;
@@ -410,6 +415,7 @@ if (aggro)
 		attackTint = false;
 		attackTintTimer = attackTintTimerSave;
 		attackTintDelay = -1;
+		movement = true;
 	}
 	
 	//#######ATTACK 2###############
