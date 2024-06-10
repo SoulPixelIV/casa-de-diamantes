@@ -35,7 +35,7 @@ if (instance_exists(player_obj)) {
 		}
 		
 		//Check if player is right behind enemy
-		if (distance_to_point(player_obj.x, player_obj.y) < 18) {
+		if (distance_to_point(player_obj.x, player_obj.y) < 48) {
 			deaggroTimer = deaggroTimerSave;
 			aggroTimer -= global.dt;
 		}

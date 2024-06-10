@@ -67,7 +67,7 @@ if (instance_exists(player_obj)) {
 		}
 		
 		//Check if player is right behind enemy
-		if (distance_to_point(player_obj.x, player_obj.y) < 18) {
+		if (distance_to_point(player_obj.x, player_obj.y) < 32) {
 			deaggroTimer = deaggroTimerSave;
 			aggroTimer -= global.dt;
 		}
@@ -116,7 +116,7 @@ if (movement)
 			} else {
 				horspeed = -movSpeed;
 			}
-			if (player_obj.y + playerPosRandOffsetY > y) {
+			if ((player_obj.y - groundSafeZone) + playerPosRandOffsetY > y) {
 				verspeed = movSpeed;
 			} else {
 				verspeed = -movSpeed;
@@ -128,7 +128,7 @@ if (movement)
 			} else {
 				horspeed = movSpeed / 1.5;
 			}
-			if (player_obj.y + playerPosRandOffsetY > y) {
+			if ((player_obj.y - groundSafeZone) + playerPosRandOffsetY > y) {
 				verspeed = -movSpeed / 1.5;
 			} else {
 				verspeed = movSpeed / 1.5;
