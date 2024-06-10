@@ -32,9 +32,11 @@ exclamationmarkTimer = 250;
 turnDir = 1;
 dir = 0;
 gotSpawned = false;
-playerPosRandOffsetX = random_range(-48, 48);
-playerPosRandOffsetY = random_range(-48, 48);
+playerPosRandOffsetX = random_range(-148, 148);
+playerPosRandOffsetY = random_range(-148, 148);
 icecicleAttackTimer = 200;
+changeFlyPosTimer = random_range(345, 655);
+changeFlyPosTimerSave = changeFlyPosTimer;
 
 if (instance_exists(player_obj))
 {

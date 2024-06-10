@@ -109,19 +109,28 @@ if (movement)
 	
 	if (aggro)
 	{
+		//Random Flying Position
+		changeFlyPosTimer -= global.dt;
+		if (changeFlyPosTimer < 0) {
+			playerPosRandOffsetX = random_range(-148, 148);
+			playerPosRandOffsetY = random_range(-148, 148);
+			changeFlyPosTimer = random_range(345, 655);
+		}
+		
 		//MOVE TOWARDS PLAYER
-		if (distance_to_object(player_obj) > DistFromPlayer) {
-			if (player_obj.x + playerPosRandOffsetX > x) {
-				horspeed = movSpeed;
-			} else {
-				horspeed = -movSpeed;
-			}
-			if ((player_obj.y - groundSafeZone) + playerPosRandOffsetY > y) {
-				verspeed = movSpeed;
-			} else {
-				verspeed = -movSpeed;
-			}
+		//if (distance_to_object(player_obj) > DistFromPlayer) {
+		if (player_obj.x + playerPosRandOffsetX > x) {
+			horspeed = movSpeed;
+		} else {
+			horspeed = -movSpeed;
+		}
+		if ((player_obj.y - groundSafeZone) + playerPosRandOffsetY > y) {
+			verspeed = movSpeed;
+		} else {
+			verspeed = -movSpeed;
+		}
 		//MOVE AWAY FROM PLAYER
+		/*
 		} else {
 			if (player_obj.x + playerPosRandOffsetX > x) {
 				horspeed = -movSpeed / 1.5;
@@ -133,7 +142,7 @@ if (movement)
 			} else {
 				verspeed = movSpeed / 1.5;
 			}
-		}
+		}*/
 	}
 }
 
