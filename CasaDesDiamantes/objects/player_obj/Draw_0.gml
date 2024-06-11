@@ -526,7 +526,7 @@ if (!inChamber) {
 						spriteAntiMaterialRifle = playerAntiMaterialRifleWalking_spr;
 					} else if (sprite_index == playerWalkingEquipped_spr || sprite_index == playerWalkingEquippedNude_spr) {
 						armSpriteCurvedShotgun = playerArmCurvedWalkingSpriteReverse;
-						spriteAntiMaterialRifle = playerAntiMaterialRifleReverse_spr;
+						spriteAntiMaterialRifle = playerAntiMaterialRifleWalkingReverse_spr;
 					} else {
 						armSpriteCurvedShotgun = playerArmCurvedSprite;
 						spriteAntiMaterialRifle = playerAntiMaterialRifle_spr;

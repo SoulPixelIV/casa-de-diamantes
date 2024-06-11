@@ -325,8 +325,6 @@
     {"name":"inst_536DD19A","path":"rooms/level2/level2.yy",},
     {"name":"inst_7AC67694","path":"rooms/level2/level2.yy",},
     {"name":"inst_27C3869C","path":"rooms/level2/level2.yy",},
-    {"name":"inst_1CBE1B4D","path":"rooms/level2/level2.yy",},
-    {"name":"inst_711E1FA8","path":"rooms/level2/level2.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -740,8 +738,6 @@
           ],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1568.0,"y":1088.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_4CAF01F4","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"level2ZombieCutsceneSpawnpoint2_obj","path":"objects/level2ZombieCutsceneSpawnpoint2_obj/level2ZombieCutsceneSpawnpoint2_obj.yy",},"properties":[],"rotation":0.0,"scaleX":0.25,"scaleY":0.5,"x":1376.0,"y":1088.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_536DD19A","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"diamond_obj","path":"objects/diamond_obj/diamond_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":3808.0,"y":1504.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_1CBE1B4D","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"moth_obj","path":"objects/moth_obj/moth_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1568.0,"y":992.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_711E1FA8","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"moth_obj","path":"objects/moth_obj/moth_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1696.0,"y":1024.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"MidgroundObjects","depth":1500,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_4FF5F634","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"checkpoint_obj","path":"objects/checkpoint_obj/checkpoint_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":2656.0,"y":1120.0,},
