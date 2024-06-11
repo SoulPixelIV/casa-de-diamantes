@@ -297,7 +297,7 @@ if (hp < 0)
 	var maxAmount = random_range(moneyDropMin, moneyDropMax);
 	for (i = 0; i < maxAmount; i++)
 	{
-		chip = choose(1,1,1,1,2,2,2,3);
+		chip = choose(1,1,2,2,2,3,3,3,3,4,4);
 		
 		if (chip == 1)
 		{
@@ -310,6 +310,10 @@ if (hp < 0)
 		if (chip == 3)
 		{
 			instance_create_layer(x, y, "Instances", chipVioletPickup_obj);
+		}
+		if (chip == 4)
+		{
+			instance_create_layer(x, y, "Instances", chipPlatinumPickup_obj);
 		}
 	}
 	

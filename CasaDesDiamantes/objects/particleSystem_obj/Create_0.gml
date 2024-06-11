@@ -35,7 +35,7 @@ part_type_alpha3(global.toxicPart, 0, 0.25, 0);
 //Toxic Green Particles
 global.toxicPartGreen = part_type_create();
 part_type_sprite(global.toxicPartGreen, toxicCloud_spr, true, true, true);
-part_type_life(global.toxicPartGreen, 300, 700);
+part_type_life(global.toxicPartGreen, 600, 950);
 part_type_size(global.toxicPartGreen, 0.6, 2.5, 0, 0);
 part_type_orientation(global.toxicPartGreen, 0, 359, 0.02, 0, 1);
 part_type_direction(global.toxicPartGreen, 0, 359, 0, 3);
