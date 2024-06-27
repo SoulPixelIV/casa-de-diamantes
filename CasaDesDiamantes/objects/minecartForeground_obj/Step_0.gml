@@ -118,6 +118,7 @@ if (!place_free(x + horspeed * global.dt, y))
 		horspeed = 0;
 		if (!playedCrashSound) {
 			audio_play_sound_on(emitter, minecartHit_snd, false, 1);
+			screenshake(50, 12, 0.6, id);
 			playedCrashSound = true;
 		}
 	}
