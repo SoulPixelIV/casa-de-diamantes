@@ -587,6 +587,7 @@
     {"name":"inst_7DC2E124","path":"rooms/level16/level16.yy",},
     {"name":"inst_61CAED48","path":"rooms/level16/level16.yy",},
     {"name":"inst_3E2E8244","path":"rooms/level16/level16.yy",},
+    {"name":"inst_744E35F9","path":"rooms/level16/level16.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -688,6 +689,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7DC2E124","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"levelTransition_obj","path":"objects/levelTransition_obj/levelTransition_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":5504.0,"y":4064.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_61CAED48","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"levelTransition_obj","path":"objects/levelTransition_obj/levelTransition_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":5504.0,"y":4000.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_3E2E8244","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"levelTransition_obj","path":"objects/levelTransition_obj/levelTransition_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":5504.0,"y":3936.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_744E35F9","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"enemyBlockZone_obj","path":"objects/enemyBlockZone_obj/enemyBlockZone_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":8.1875,"x":4685.0,"y":3385.5,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMREffectLayer","resourceVersion":"1.0","name":"RedFilter","depth":400,"effectEnabled":true,"effectType":"_filter_colourise","gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[
         {"name":"g_Intensity","type":0,"value":"0.3",},
