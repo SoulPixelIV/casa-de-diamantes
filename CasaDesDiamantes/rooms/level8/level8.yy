@@ -13,7 +13,6 @@
     {"name":"inst_C112630_1_1_1_1_1_2_1_1","path":"rooms/level8/level8.yy",},
     {"name":"inst_1239231A_1_1_1_1_1_2_1_1","path":"rooms/level8/level8.yy",},
     {"name":"inst_339DA1F3_1_1_1_1_1_2_1_1","path":"rooms/level8/level8.yy",},
-    {"name":"inst_7003AC95_2_1_1","path":"rooms/level8/level8.yy",},
     {"name":"inst_3CA7FB3D_2_1_1","path":"rooms/level8/level8.yy",},
     {"name":"inst_6FDF6854_2_1_1","path":"rooms/level8/level8.yy",},
     {"name":"inst_17893C36_1","path":"rooms/level8/level8.yy",},
@@ -669,6 +668,7 @@
     {"name":"inst_1146D3F8","path":"rooms/level8/level8.yy",},
     {"name":"inst_40566C18","path":"rooms/level8/level8.yy",},
     {"name":"inst_32291411","path":"rooms/level8/level8.yy",},
+    {"name":"inst_22CB3108","path":"rooms/level8/level8.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -1646,7 +1646,7 @@
         {"name":"g_Intensity","type":0,"value":"0.3",},
       ],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Background","depth":3500,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7003AC95_2_1_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"senzelaForeground_obj","path":"objects/senzelaForeground_obj/senzelaForeground_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":2944.0,"y":1696.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_22CB3108","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"powerplantBackground_obj","path":"objects/powerplantBackground_obj/powerplantBackground_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":2816.0,"y":1496.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMREffectLayer","resourceVersion":"1.0","name":"DesaturationFilter1","depth":3600,"effectEnabled":true,"effectType":"_filter_greyscale","gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[
         {"name":"g_Intensity","type":0,"value":"0.3",},

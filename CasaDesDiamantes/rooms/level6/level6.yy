@@ -13,7 +13,6 @@
     {"name":"inst_C112630_1_1_1_1_1_2","path":"rooms/level6/level6.yy",},
     {"name":"inst_1239231A_1_1_1_1_1_2","path":"rooms/level6/level6.yy",},
     {"name":"inst_339DA1F3_1_1_1_1_1_2","path":"rooms/level6/level6.yy",},
-    {"name":"inst_7003AC95_2","path":"rooms/level6/level6.yy",},
     {"name":"inst_3CA7FB3D_2","path":"rooms/level6/level6.yy",},
     {"name":"inst_6FDF6854_2","path":"rooms/level6/level6.yy",},
     {"name":"inst_5A77E9FC","path":"rooms/level6/level6.yy",},
@@ -297,9 +296,7 @@
     {"resourceType":"GMREffectLayer","resourceVersion":"1.0","name":"DesaturationFilter2","depth":3200,"effectEnabled":true,"effectType":"_filter_greyscale","gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[
         {"name":"g_Intensity","type":0,"value":"0.3",},
       ],"userdefinedDepth":false,"visible":true,},
-    {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Background","depth":3300,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7003AC95_2","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"senzelaForeground_obj","path":"objects/senzelaForeground_obj/senzelaForeground_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":2944.0,"y":1696.0,},
-      ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
+    {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Background","depth":3300,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMREffectLayer","resourceVersion":"1.0","name":"DesaturationFilter1","depth":3400,"effectEnabled":true,"effectType":"_filter_greyscale","gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[
         {"name":"g_Intensity","type":0,"value":"0.3",},
       ],"userdefinedDepth":false,"visible":true,},
