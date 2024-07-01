@@ -306,6 +306,7 @@
     {"name":"inst_791D0723","path":"rooms/level7/level7.yy",},
     {"name":"inst_7861738D","path":"rooms/level7/level7.yy",},
     {"name":"inst_743F47F0","path":"rooms/level7/level7.yy",},
+    {"name":"inst_52370B28","path":"rooms/level7/level7.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -355,6 +356,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_54AC99C7","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"cupyDialogueTrigger_obj","path":"objects/cupyDialogueTrigger_obj/cupyDialogueTrigger_obj.yy",},"properties":[
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"cupyDialogueTrigger_obj","path":"objects/cupyDialogueTrigger_obj/cupyDialogueTrigger_obj.yy",},"propertyId":{"name":"dialogue","path":"objects/cupyDialogueTrigger_obj/cupyDialogueTrigger_obj.yy",},"value":"5",},
           ],"rotation":0.0,"scaleX":4.15625,"scaleY":6.765625,"x":4288.0,"y":2304.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_52370B28","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"laserWhitescreen_obj","path":"objects/laserWhitescreen_obj/laserWhitescreen_obj.yy",},"properties":[],"rotation":0.0,"scaleX":135.0,"scaleY":71.0,"x":-480.0,"y":-96.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMREffectLayer","resourceVersion":"1.0","name":"RedFilter","depth":400,"effectEnabled":true,"effectType":"_filter_colourise","gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[
         {"name":"g_Intensity","type":0,"value":"0.3",},

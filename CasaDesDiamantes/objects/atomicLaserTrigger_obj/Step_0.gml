@@ -14,5 +14,8 @@ if (global.chromaticLevel > 0 && !chromaticDone && screenShakeTimer < 0) {
 	if (global.chromaticLevel < 0.1) {
 		chromaticDone = true;
 		global.chromaticLevel = 0;
+		if (instance_exists(powerplantBackground_obj)) {
+			powerplantBackground_obj.laserOn = false;
+		}
 	}
 }

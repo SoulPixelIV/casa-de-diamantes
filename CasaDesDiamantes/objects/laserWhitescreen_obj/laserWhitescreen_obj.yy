@@ -1,9 +1,8 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "powerplantBackground_obj",
+  "name": "laserWhitescreen_obj",
   "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":2,"eventType":3,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
   ],
@@ -30,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "powerplantBackground_spr",
-    "path": "sprites/powerplantBackground_spr/powerplantBackground_spr.yy",
+    "name": "whitesquare_spr",
+    "path": "sprites/whitesquare_spr/whitesquare_spr.yy",
   },
   "spriteMaskId": null,
   "visible": true,
