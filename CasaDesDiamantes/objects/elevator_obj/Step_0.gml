@@ -91,7 +91,7 @@ if (elevatorTimer < 0 && used) {
 		global.spawn = 0;
 		if (!playerSpawned) {
 			instance_destroy(player_obj);
-			instance_create_layer(Spawn4_obj.x, Spawn4_obj.y, "Instances", player_obj);
+			instance_create_layer(Spawn3_obj.x, Spawn3_obj.y, "Instances", player_obj);
 			player_obj.x = Spawn3_obj.x;
 			player_obj.y = Spawn3_obj.y;
 			if (instance_exists(cutieplusSteph_obj)) {

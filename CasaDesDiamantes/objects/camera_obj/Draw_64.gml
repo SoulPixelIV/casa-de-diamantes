@@ -1466,6 +1466,36 @@ if (drawElevatorSign) {
 		draw_sprite(elevatorSelectMenu_spr, 0, global.xScreenSize / 2, (global.yScreenSize / 2) + windowMenuOffset);
 	}
 	
+	//Draw "You Are Here" Sign
+	if (room == level_CasinoRoof) {
+		draw_sprite(elevatorHereMarker_spr, 0, global.xScreenSize / 2, (global.yScreenSize / 2) + windowMenuOffset);
+	}
+	if (room == level_Casino) {
+		with (player_obj) {
+			if (distance_to_object(Spawn4_obj) < distance_to_object(Spawn3_obj)) {
+				with (camera_obj) {
+					draw_sprite(elevatorHereMarker_spr, 1, global.xScreenSize / 2, (global.yScreenSize / 2) + windowMenuOffset);
+				}
+			} else {
+				with (camera_obj) {
+					draw_sprite(elevatorHereMarker_spr, 5, global.xScreenSize / 2, (global.yScreenSize / 2) + windowMenuOffset);
+				}
+			}
+		}
+	}
+	
+	//Draw Interest Sign
+	if (global.storyAct == 0) {
+		if (!global.act2Unlocked) {
+			draw_sprite(elevatorInterestMarker_spr, 1, global.xScreenSize / 2, (global.yScreenSize / 2) + windowMenuOffset);
+		} else {
+			draw_sprite(elevatorInterestMarker_spr, 0, global.xScreenSize / 2, (global.yScreenSize / 2) + windowMenuOffset);
+		}
+	}
+	if (global.storyAct == 1) {
+		draw_sprite(elevatorInterestMarker_spr, 1, global.xScreenSize / 2, (global.yScreenSize / 2) + windowMenuOffset);
+	}
+	
 	draw_set_font(gothicPixel_fnt);
 	draw_set_halign(fa_center);
 	draw_set_color(c_black);
@@ -1948,7 +1978,7 @@ if (drawPause) {
 //Crosshair Setup
 if (!dialogueSystem_obj.inCutscene || (dialogueSystem_obj.inCutscene && drawElevatorSign) || (dialogueSystem_obj.inCutscene && showWindowMenu)) {
 	if (instance_exists(player_obj)) {
-		if (windowType == 1) {
+		if (windowType == 1 || drawElevatorSign) {
 			draw_sprite(mousecursor_spr, 0, 
 				(window_mouse_get_x() / ((window_get_width()+1) / global.xScreenSize)) + (0), 
 				window_mouse_get_y() / ((window_get_height()+1) / global.yScreenSize) + (0));

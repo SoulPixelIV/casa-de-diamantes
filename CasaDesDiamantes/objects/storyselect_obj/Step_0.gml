@@ -44,12 +44,26 @@ if (pushDelay < 0) {
 					global.cupyDialogue3Done = false;
 					global.cupyDialogue4Done = false;
 					global.cupyDialogue5Done = false;
+					
 					room_goto(level_Casino);
 					global.lastCheckpoint = noone;
 				break;
 				case 1:
 					global.storyAct = 1;
-					room_goto(level_Casino);
+					
+					global.cutsceneCasinoIntroDone = true;
+					global.introDialogueVIPDone = true;
+					global.introDialogueCindyDone = true;
+					global.introDialogueOutOfRoomDone = true;
+					global.cupyDialogue1Done = true;
+					global.cupyDialogue2Done = true;
+					global.cupyDialogue3Done = true;
+					global.cupyDialogue4Done = true;
+					global.cupyDialogue5Done = true;
+					global.act2Unlocked = false;
+					global.drawMission = false;
+					
+					room_goto(level_CasinoRoof);
 					global.lastCheckpoint = noone;
 				break;
 				case 2:
