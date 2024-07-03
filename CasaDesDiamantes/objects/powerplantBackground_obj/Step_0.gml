@@ -5,7 +5,7 @@ image_index += (global.dt / 15) * animationSpeed;
 if (laserOn) {
 	laserDelay -= global.dt;
 } else {
-	laserDelay = 1100;
+	laserDelay = 950;
 	sprite_index = powerplantBackground_spr;
 }
 

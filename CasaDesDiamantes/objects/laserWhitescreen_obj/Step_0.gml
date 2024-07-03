@@ -1,5 +1,10 @@
 if (laserOn) {
 	laserDelay -= global.dt;
+} else {
+	image_alpha = 0;
+	alphaVal = 300;
+	laserDelay = 950;
+	laserDelay2 = 160;
 }
 
 if (laserDelay < 0 && laserDelay2 > 0) {
@@ -8,5 +13,6 @@ if (laserDelay < 0 && laserDelay2 > 0) {
 }
 
 if (laserDelay2 < 0) {
-	image_alpha -= global.dt / 300;
+	alphaVal -= global.dt;
+	image_alpha = alphaVal / 300;
 }
