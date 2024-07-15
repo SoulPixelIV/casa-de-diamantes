@@ -18,6 +18,7 @@ scene14 = false;
 scene15 = false;
 scene16 = false;
 scene17 = false;
+scene18 = false;
 
 //Dialogue Markers
 scene1Low = 0;
@@ -54,6 +55,8 @@ scene16Low = 88;
 scene16High = 89;
 scene17Low = 90;
 scene17High = 94;
+scene18Low = 95;
+scene18High = "FIX";
 
 //Dialogue Text
 //!!!ALWAYS 1 FREE SPACE BETWEEN SCENES
@@ -61,6 +64,10 @@ scene17High = 94;
 // @ = 
 // $ = Cindy
 // * = Cindy2
+// § = Cindy3
+// > = Komo
+// ; = Tristram
+// _ = Komo+Tristram
 // % = Cutie-Plus
 // ] = Bartender
 // [ = Bunnygirl
@@ -273,4 +280,15 @@ dialogue[91] = "%I know..saw it from up here. You'll definitely want to see it."
 dialogue[92] = "%Keep going east, theres an overlook next your rendezvous point.";
 dialogue[93] = "#On it.";
 dialogue[94] = "";
+
+//Scene 18 Team Meetup VIP Room
+startScene18Timer = false;
+scene18Timer = 3200;
+scene18TimerSave = scene18Timer;
+
+dialogue[95] = "_Steph!";
+dialogue[96] = "%I know..saw it from up here. You'll definitely want to see it.";
+dialogue[97] = "%Keep going east, theres an overlook next your rendezvous point.";
+dialogue[98] = "#On it.";
+dialogue[99] = "";
 

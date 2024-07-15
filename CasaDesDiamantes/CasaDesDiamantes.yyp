@@ -185,6 +185,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"UI","folderPath":"folders/UI.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"UI Objects","folderPath":"folders/UI/UI Objects.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"UI Sprites","folderPath":"folders/UI/UI Sprites.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Dialogue Objects","folderPath":"folders/Characters/Dialogue Objects.yy",},
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"Casino3DFilledMarquee.ttf","CopyToMask":-1,"filePath":"datafiles",},
@@ -1109,6 +1110,7 @@
     {"id":{"name":"vine_obj","path":"objects/vine_obj/vine_obj.yy",},},
     {"id":{"name":"shd_flashWhite","path":"shaders/shd_flashWhite/shd_flashWhite.yy",},},
     {"id":{"name":"coinbarStop_snd","path":"sounds/coinbarStop_snd/coinbarStop_snd.yy",},},
+    {"id":{"name":"teamMeetupDialogue","path":"objects/teamMeetupDialogue/teamMeetupDialogue.yy",},},
     {"id":{"name":"basicZombieIdle3_snd","path":"sounds/basicZombieIdle3_snd/basicZombieIdle3_snd.yy",},},
     {"id":{"name":"jetpack_snd","path":"sounds/jetpack_snd/jetpack_snd.yy",},},
     {"id":{"name":"lever_snd","path":"sounds/lever_snd/lever_snd.yy",},},
@@ -1139,6 +1141,7 @@
     {"id":{"name":"casinoPillarBackground_spr","path":"sprites/casinoPillarBackground_spr/casinoPillarBackground_spr.yy",},},
     {"id":{"name":"playerWallNoArm_spr","path":"sprites/playerWallNoArm_spr/playerWallNoArm_spr.yy",},},
     {"id":{"name":"buying_snd","path":"sounds/buying_snd/buying_snd.yy",},},
+    {"id":{"name":"cindy3_obj","path":"objects/cindy3_obj/cindy3_obj.yy",},},
     {"id":{"name":"credits","path":"rooms/credits/credits.yy",},},
     {"id":{"name":"death_scr","path":"scripts/death_scr/death_scr.yy",},},
     {"id":{"name":"sensoryTremblerBaseDestroyed_spr","path":"sprites/sensoryTremblerBaseDestroyed_spr/sensoryTremblerBaseDestroyed_spr.yy",},},

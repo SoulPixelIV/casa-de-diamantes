@@ -162,6 +162,10 @@ if (string_char_at(dialogue[dialogueLine], 1) == "´")
 {
 	character = customStoryTarget_obj;
 }
+if (string_char_at(dialogue[dialogueLine], 1) == "_")
+{
+	character = "KomoTristram";
+}
 
 //Windows
 if (string_char_at(dialogue[dialogueLine], 1) == "W")
@@ -214,6 +218,9 @@ if (drawText && !showWindowMenu)
 			draw_sprite_ext(dialogBorder_spr, 0, (character.x - x) + global.xScreenSize / 2, (character.y - y) - 42 + global.yScreenSize / 2, 2 + string_length(dialogueStripped) / 3, 1.5, 0, make_color_rgb(255, 215, 215), 1);
 		} else if (character == vip_obj || character == vip2_obj || character == customStoryTarget_obj) {
 			draw_sprite_ext(dialogBorder_spr, 0, (character.x - x) + global.xScreenSize / 2, (character.y - y) - 42 + global.yScreenSize / 2, 2 + string_length(dialogueStripped) / 3, 1.5, 0, make_color_rgb(106, 203, 106), 1);
+		} else if (character == "KomoTristram") {
+			draw_sprite_ext(dialogBorder_spr, 0, (komo_obj.x - x) + global.xScreenSize / 2, (character.y - y) - 42 + global.yScreenSize / 2, 2 + string_length(dialogueStripped) / 3, 1.5, 0, make_color_rgb(106, 203, 106), 1);
+			draw_sprite_ext(dialogBorder_spr, 0, (tristram_obj.x - x) + global.xScreenSize / 2, (character.y - y) - 42 + global.yScreenSize / 2, 2 + string_length(dialogueStripped) / 3, 1.5, 0, make_color_rgb(106, 203, 106), 1);
 		}
 	
 		if (character == cutieplusSteph_obj) {
@@ -418,6 +425,9 @@ if (drawText && !showWindowMenu)
 			}
 			if (dialogueSystem_obj.startScene17Timer) {
 				dialogueSystem_obj.scene17Timer = 0;
+			}
+			if (dialogueSystem_obj.startScene18Timer) {
+				dialogueSystem_obj.scene18Timer = 0;
 			}
 		}
 	}

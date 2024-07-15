@@ -94,6 +94,7 @@
     {"name":"No ClothesOLD","order":1,"path":"folders/Steph/Steph Sprites/No ClothesOLD.yy",},
     {"name":"Skin1","order":40,"path":"folders/Steph/Steph Sprites/Skin1.yy",},
     {"name":"UI","order":20,"path":"folders/UI.yy",},
+    {"name":"Dialogue Objects","order":2,"path":"folders/Characters/Dialogue Objects.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"dashroll_snd","order":12,"path":"sounds/dashroll_snd/dashroll_snd.yy",},
@@ -973,6 +974,7 @@
     {"name":"casinoPillarBackground_spr","order":204,"path":"sprites/casinoPillarBackground_spr/casinoPillarBackground_spr.yy",},
     {"name":"playerWallNoArm_spr","order":33,"path":"sprites/playerWallNoArm_spr/playerWallNoArm_spr.yy",},
     {"name":"buying_snd","order":74,"path":"sounds/buying_snd/buying_snd.yy",},
+    {"name":"cindy3_obj","order":11,"path":"objects/cindy3_obj/cindy3_obj.yy",},
     {"name":"credits","order":5,"path":"rooms/credits/credits.yy",},
     {"name":"death_scr","order":9,"path":"scripts/death_scr/death_scr.yy",},
     {"name":"sensoryTremblerBaseDestroyed_spr","order":11,"path":"sprites/sensoryTremblerBaseDestroyed_spr/sensoryTremblerBaseDestroyed_spr.yy",},
