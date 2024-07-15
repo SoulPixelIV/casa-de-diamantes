@@ -18,7 +18,7 @@ if (teleportTimer < 0) {
 }
 
 if (blackscreenTimer < 0) {
-	global.moveToWorld = 1;
+	global.moveToWorld = 4;
 	room_goto(blimpAnim);
 }
 

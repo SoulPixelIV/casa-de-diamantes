@@ -20,4 +20,7 @@ if (teleportTimer < 0) {
 	if (global.moveToWorld == 3) {
 		room_goto(level10);
 	}
+	if (global.moveToWorld == 4) {
+		room_goto(cutscene3);
+	}
 }
