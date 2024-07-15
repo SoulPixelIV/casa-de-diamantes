@@ -2030,6 +2030,7 @@
     {"id":{"name":"rainmakerWalking_spr","path":"sprites/rainmakerWalking_spr/rainmakerWalking_spr.yy",},},
     {"id":{"name":"zombieSpawnEgg_obj","path":"objects/zombieSpawnEgg_obj/zombieSpawnEgg_obj.yy",},},
     {"id":{"name":"healthbarInfection_spr","path":"sprites/healthbarInfection_spr/healthbarInfection_spr.yy",},},
+    {"id":{"name":"tristram_spr","path":"sprites/tristram_spr/tristram_spr.yy",},},
     {"id":{"name":"OLDlevel0_RoadToCasino","path":"rooms/OLDlevel0_RoadToCasino/OLDlevel0_RoadToCasino.yy",},},
     {"id":{"name":"startOverlay_spr","path":"sprites/startOverlay_spr/startOverlay_spr.yy",},},
     {"id":{"name":"OLDlevel1_RoadToCasino","path":"rooms/OLDlevel1_RoadToCasino/OLDlevel1_RoadToCasino.yy",},},

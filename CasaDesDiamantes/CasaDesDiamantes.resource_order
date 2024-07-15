@@ -1789,6 +1789,7 @@
     {"name":"rainmakerWalking_spr","order":2,"path":"sprites/rainmakerWalking_spr/rainmakerWalking_spr.yy",},
     {"name":"zombieSpawnEgg_obj","order":103,"path":"objects/zombieSpawnEgg_obj/zombieSpawnEgg_obj.yy",},
     {"name":"healthbarInfection_spr","order":54,"path":"sprites/healthbarInfection_spr/healthbarInfection_spr.yy",},
+    {"name":"tristram_spr","order":9,"path":"sprites/tristram_spr/tristram_spr.yy",},
     {"name":"startOverlay_spr","order":78,"path":"sprites/startOverlay_spr/startOverlay_spr.yy",},
     {"name":"OLDlevel1_RoadToCasino","order":1,"path":"rooms/OLDlevel1_RoadToCasino/OLDlevel1_RoadToCasino.yy",},
     {"name":"ammoSilencedMPSmall_obj","order":36,"path":"objects/ammoSilencedMPSmall_obj/ammoSilencedMPSmall_obj.yy",},
