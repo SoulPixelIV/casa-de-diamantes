@@ -470,6 +470,7 @@
     {"name":"debugParticleSpawner2_spr","order":3,"path":"sprites/debugParticleSpawner2_spr/debugParticleSpawner2_spr.yy",},
     {"name":"lightRays_spr","order":14,"path":"sprites/lightRays_spr/lightRays_spr.yy",},
     {"name":"redcubex16_spr","order":4,"path":"sprites/redcubex16_spr/redcubex16_spr.yy",},
+    {"name":"level_DiningHall","order":4,"path":"rooms/level_DiningHall/level_DiningHall.yy",},
     {"name":"switchableSpikes_obj","order":42,"path":"objects/switchableSpikes_obj/switchableSpikes_obj.yy",},
     {"name":"toxicrain_obj","order":8,"path":"objects/toxicrain_obj/toxicrain_obj.yy",},
     {"name":"coinslot_snd","order":44,"path":"sounds/coinslot_snd/coinslot_snd.yy",},
