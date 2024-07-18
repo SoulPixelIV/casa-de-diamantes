@@ -1498,6 +1498,7 @@ if (drawElevatorSign) {
 		elevatorButton1 = instance_create_layer(x, y, "Instances", elevatorSelectMenuButton1_obj);
 		elevatorButton2 = instance_create_layer(x, y, "Instances", elevatorSelectMenuButton2_obj);
 		elevatorButton3 = instance_create_layer(x, y, "Instances", elevatorSelectMenuButton3_obj);
+		elevatorButton4 = instance_create_layer(x, y, "Instances", elevatorSelectMenuButton4_obj);
 		createdElevatorSignButtons = true;
 	}
 	if (instance_exists(elevatorButton1)) {
@@ -1512,6 +1513,10 @@ if (drawElevatorSign) {
 		elevatorButton3.x = x;
 		elevatorButton3.y = y;
 	}
+	if (instance_exists(elevatorButton4)) {
+		elevatorButton4.x = x;
+		elevatorButton4.y = y;
+	}
 	
 	if (elevatorButton1.hover) {
 		draw_sprite(elevatorSelectMenu_spr, 1, global.xScreenSize / 2, (global.yScreenSize / 2) + windowMenuOffset);
@@ -1522,7 +1527,10 @@ if (drawElevatorSign) {
 	if (elevatorButton3.hover) {
 		draw_sprite(elevatorSelectMenu_spr, 3, global.xScreenSize / 2, (global.yScreenSize / 2) + windowMenuOffset);
 	}
-	if (!elevatorButton1.hover && !elevatorButton2.hover && !elevatorButton3.hover) {
+	if (elevatorButton4.hover) {
+		draw_sprite(elevatorSelectMenu_spr, 4, global.xScreenSize / 2, (global.yScreenSize / 2) + windowMenuOffset);
+	}
+	if (!elevatorButton1.hover && !elevatorButton2.hover && !elevatorButton3.hover && !elevatorButton4.hover) {
 		draw_sprite(elevatorSelectMenu_spr, 0, global.xScreenSize / 2, (global.yScreenSize / 2) + windowMenuOffset);
 	}
 	
