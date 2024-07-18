@@ -30,6 +30,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Characters","folderPath":"folders/Characters.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Character Sprites","folderPath":"folders/Characters/Character Sprites.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Characters","folderPath":"folders/Characters/Characters.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Dialogue Objects","folderPath":"folders/Characters/Dialogue Objects.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Enemies","folderPath":"folders/Enemies.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Enemies","folderPath":"folders/Enemies/Enemies.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Enemy Helper Objects","folderPath":"folders/Enemies/Enemy Helper Objects.yy",},
@@ -185,7 +186,6 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"UI","folderPath":"folders/UI.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"UI Objects","folderPath":"folders/UI/UI Objects.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"UI Sprites","folderPath":"folders/UI/UI Sprites.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Dialogue Objects","folderPath":"folders/Characters/Dialogue Objects.yy",},
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"Casino3DFilledMarquee.ttf","CopyToMask":-1,"filePath":"datafiles",},

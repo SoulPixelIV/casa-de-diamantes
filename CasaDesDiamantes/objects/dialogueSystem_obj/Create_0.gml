@@ -56,7 +56,7 @@ scene16High = 89;
 scene17Low = 90;
 scene17High = 94;
 scene18Low = 95;
-scene18High = "FIX";
+scene18High = 111;
 
 //Dialogue Text
 //!!!ALWAYS 1 FREE SPACE BETWEEN SCENES
@@ -68,6 +68,7 @@ scene18High = "FIX";
 // > = Komo
 // ; = Tristram
 // _ = Komo+Tristram
+// } = Steph+Cindy
 // % = Cutie-Plus
 // ] = Bartender
 // [ = Bunnygirl
@@ -283,12 +284,23 @@ dialogue[94] = "";
 
 //Scene 18 Team Meetup VIP Room
 startScene18Timer = false;
-scene18Timer = 3200;
+scene18Timer = 11600;
 scene18TimerSave = scene18Timer;
 
 dialogue[95] = "_Steph!";
-dialogue[96] = "%I know..saw it from up here. You'll definitely want to see it.";
-dialogue[97] = "%Keep going east, theres an overlook next your rendezvous point.";
-dialogue[98] = "#On it.";
-dialogue[99] = "";
-
+dialogue[96] = "#Guys! So happy to see you again! How was singapore?";
+dialogue[97] = ";Oh we left for indonesia pretty much a few days in because";
+dialogue[98] = ">the strand we were looking for wasn't anywhere to be found.";
+dialogue[99] = "#Shame, you to were looking forward to it...";
+dialogue[100] = "#nonetheless, I'm glad you were able to make it here.";
+dialogue[101] = "#How was the flight?";
+dialogue[102] = ";Never jumping again.";
+dialogue[103] = ">Incredible.";
+dialogue[104] = "}I guessed as much.";
+dialogue[105] = "§Next time we'll order an airship.";
+dialogue[106] = ";You better be!";
+dialogue[107] = "§Anyway, the manager organzied a little something tonight...";
+dialogue[108] = "§...and we're all invited!";
+dialogue[109] = "§You dont have to come but...";
+dialogue[110] = "§...hope you brought an empty belly!";
+dialogue[111] = "";

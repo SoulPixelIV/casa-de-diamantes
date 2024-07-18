@@ -649,3 +649,37 @@ if (startScene17Timer) {
 		save_scr();
 	}
 }
+
+//Scene 18
+if (scene18)
+{
+	//inCutscene = true;
+	startScene18Timer = true;
+	camera_obj.drawDialogueBorder = true;
+	if (!camera_obj.drawText)
+	{
+		for (i = scene18Low; i < scene18High + 1; i++)
+		{
+			camera_obj.dialogue[i] = dialogue[i];
+		}
+		camera_obj.dialogueLine = scene18Low;
+		camera_obj.drawText = true;
+	}
+	scene18 = false;
+}
+
+if (startScene18Timer) {
+	scene18Timer -= global.dt * camera_obj.textSpeed;
+	
+	if (scene18Timer < 0) {				
+		player_obj.movement = true;
+		camera_obj.drawBlackborders = false;
+		scene18Timer = scene18TimerSave;
+		startScene18Timer = false;
+		inCutscene = false;
+		camera_obj.follow = player_obj;
+		//global.cupyDialogue6Done = true;
+		camera_obj.drawDialogueBorder = false;
+		save_scr();
+	}
+}

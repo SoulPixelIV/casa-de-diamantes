@@ -5,6 +5,7 @@
     {"name":"Camera","order":3,"path":"folders/Camera.yy",},
     {"name":"Characters","order":4,"path":"folders/Characters.yy",},
     {"name":"Characters","order":1,"path":"folders/Characters/Characters.yy",},
+    {"name":"Dialogue Objects","order":2,"path":"folders/Characters/Dialogue Objects.yy",},
     {"name":"Enemies","order":5,"path":"folders/Enemies.yy",},
     {"name":"Crawler","order":1,"path":"folders/Enemies/Enemy Sprites/Crawler.yy",},
     {"name":"ExplosiveMerchant","order":2,"path":"folders/Enemies/Enemy Sprites/ExplosiveMerchant.yy",},
@@ -94,7 +95,6 @@
     {"name":"No ClothesOLD","order":1,"path":"folders/Steph/Steph Sprites/No ClothesOLD.yy",},
     {"name":"Skin1","order":40,"path":"folders/Steph/Steph Sprites/Skin1.yy",},
     {"name":"UI","order":20,"path":"folders/UI.yy",},
-    {"name":"Dialogue Objects","order":2,"path":"folders/Characters/Dialogue Objects.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"dashroll_snd","order":12,"path":"sounds/dashroll_snd/dashroll_snd.yy",},
