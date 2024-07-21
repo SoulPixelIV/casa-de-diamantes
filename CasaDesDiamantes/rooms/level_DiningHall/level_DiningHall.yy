@@ -42,6 +42,7 @@
     {"name":"inst_5907DBC1","path":"rooms/level_DiningHall/level_DiningHall.yy",},
     {"name":"inst_6A9B65AD","path":"rooms/level_DiningHall/level_DiningHall.yy",},
     {"name":"inst_5C47A43B","path":"rooms/level_DiningHall/level_DiningHall.yy",},
+    {"name":"inst_545FF693","path":"rooms/level_DiningHall/level_DiningHall.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -147,13 +148,15 @@
 -63,0,-19,-2147483648,-63,0,-19,-2147483648,-63,0,-19,-2147483648,-63,0,-19,-2147483648,-63,0,-19,-2147483648,-63,0,-19,-2147483648,-63,0,-19,-2147483648,-63,0,-19,-2147483648,-63,0,-19,-2147483648,-63,0,-19,-2147483648,-63,0,-19,-2147483648,-63,0,-19,-2147483648,-63,0,-19,-2147483648,-63,0,-19,-2147483648,-63,0,-19,-2147483648,-63,0,-19,-2147483648,-63,0,-19,-2147483648,-63,0,-19,-2147483648,-63,0,-19,-2147483648,-63,0,-19,-2147483648,-63,0,
 -19,-2147483648,-63,0,-1279,-2147483648,1,0,-2101,-2147483648,],"TileDataFormat":1,},"tilesetId":{"name":"caveBackgroundTiles","path":"tilesets/caveBackgroundTiles/caveBackgroundTiles.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"resourceType":"GMREffectLayer","resourceVersion":"1.0","name":"BlurFilter","depth":2200,"effectEnabled":true,"effectType":"_filter_large_blur","gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[
-        {"name":"g_Radius","type":0,"value":"10",},
+        {"name":"g_Radius","type":0,"value":"3",},
         {"name":"g_NoiseTexture","type":2,"value":"_filter_large_blur_noise",},
       ],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMREffectLayer","resourceVersion":"1.0","name":"DesaturationFilter2","depth":2300,"effectEnabled":true,"effectType":"_filter_greyscale","gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[
         {"name":"g_Intensity","type":0,"value":"0.3",},
       ],"userdefinedDepth":false,"visible":true,},
-    {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Background","depth":2400,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
+    {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Background","depth":2400,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_545FF693","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"diningHallBackground_obj","path":"objects/diningHallBackground_obj/diningHallBackground_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":800.0,"y":1344.0,},
+      ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMREffectLayer","resourceVersion":"1.0","name":"DesaturationFilter1","depth":2500,"effectEnabled":true,"effectType":"_filter_greyscale","gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[
         {"name":"g_Intensity","type":0,"value":"0.3",},
       ],"userdefinedDepth":false,"visible":true,},
