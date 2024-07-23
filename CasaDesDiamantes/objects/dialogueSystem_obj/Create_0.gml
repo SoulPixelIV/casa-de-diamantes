@@ -301,6 +301,6 @@ dialogue[105] = "§Next time we'll order an airship.";
 dialogue[106] = ";You better be!";
 dialogue[107] = "§Anyway, the manager organzied a little something tonight...";
 dialogue[108] = "§...and we're all invited!";
-dialogue[109] = "§You dont have to come but...";
+dialogue[109] = "§You don't have to come but...";
 dialogue[110] = "§...hope you brought an empty belly!";
 dialogue[111] = "";
