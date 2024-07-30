@@ -336,3 +336,8 @@ cursorPos = 0;
 cursorAnim = 0;
 
 smoothness = 0.3;
+
+//Character Border Creator
+if (!instance_exists(characterBorderCreator_obj)) {
+	instance_create_layer(x, y, "MidgroundObjects", characterBorderCreator_obj);
+}

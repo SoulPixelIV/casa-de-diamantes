@@ -29,3 +29,7 @@ movTimer -= global.dt;
 if (instance_exists(cutieplusSteph_obj)) {
 	instance_destroy();
 }
+
+if (global.storyAct != 0) {
+	instance_destroy();
+}
