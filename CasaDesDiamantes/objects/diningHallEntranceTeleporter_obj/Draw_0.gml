@@ -32,6 +32,10 @@ if (distance_to_object(player_obj) < 32) {
 				if (instance_exists(player_obj)) {
 					player_obj.x = Spawn2_obj.x;
 					player_obj.y = Spawn2_obj.y;
+					
+					if (camera_obj.blackscreenStrength > 0) {
+						camera_obj.blackscreenStrength -= (global.dt / 40) * camera_obj.textSpeed;
+					}
 				}
 			}
 		}
