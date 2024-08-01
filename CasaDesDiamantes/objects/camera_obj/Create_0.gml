@@ -132,6 +132,7 @@ vignetteColorClamp = clamp(vignetteColor, 0, 1);
 vignetteColorDir = 0;
 vignetteFlash = false;
 drawInfectionText = false;
+drawDiningEntranceText = false;
 drawBlackborders = false;
 blackbordersPos = 0;
 hitVignette = false;

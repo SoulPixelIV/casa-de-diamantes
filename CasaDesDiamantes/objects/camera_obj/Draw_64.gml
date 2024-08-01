@@ -90,7 +90,7 @@ if (instance_exists(player_obj) && !noHUD)
 	//Dash Circle
 	if (player_obj.dashDelay < 150)
 	{
-		var dashCircle = draw_sprite_ext(dashCircle_spr, 0, ((player_obj.x) - x) + 238, ((player_obj.y - 20) - y) + 143, 1 / (player_obj.dashDelay / 60), 1 / (player_obj.dashDelay / 60), 0, -1, 0.2 / (player_obj.dashDelay / 40))
+		//var dashCircle = draw_sprite_ext(dashCircle_spr, 0, ((player_obj.x) - x) + 238, ((player_obj.y - 20) - y) + 143, 1 / (player_obj.dashDelay / 60), 1 / (player_obj.dashDelay / 60), 0, -1, 0.2 / (player_obj.dashDelay / 40))
 	}
 	
 	//Draw Haze Effect
@@ -1147,6 +1147,13 @@ if (!noHUD && instance_exists(player_obj))
 		draw_set_halign(fa_center);
 		draw_set_font(gothicPixel_fnt);
 		draw_text(global.xScreenSize / 2, global.yScreenSize - global.yScreenSize / 4 - 32, "Switch Skin?");
+		draw_set_halign(fa_left);
+	}
+	if (drawDiningEntranceText) {
+		draw_set_color(make_color_rgb(255,215,0));
+		draw_set_halign(fa_center);
+		draw_set_font(gothicPixel_fnt);
+		draw_text(global.xScreenSize / 2, global.yScreenSize - global.yScreenSize / 4 - 32, "Locked");
 		draw_set_halign(fa_left);
 	}
 	

@@ -1177,6 +1177,7 @@
     {"id":{"name":"rose_spr","path":"sprites/rose_spr/rose_spr.yy",},},
     {"id":{"name":"casinoCandleLight_obj","path":"objects/casinoCandleLight_obj/casinoCandleLight_obj.yy",},},
     {"id":{"name":"lockIcon2_obj","path":"objects/lockIcon2_obj/lockIcon2_obj.yy",},},
+    {"id":{"name":"diningHallEntranceTeleporter_obj","path":"objects/diningHallEntranceTeleporter_obj/diningHallEntranceTeleporter_obj.yy",},},
     {"id":{"name":"steamLEDLogo_obj","path":"objects/steamLEDLogo_obj/steamLEDLogo_obj.yy",},},
     {"id":{"name":"get_next_pot","path":"scripts/get_next_pot/get_next_pot.yy",},},
     {"id":{"name":"zombieBucketGirlAttack1_spr","path":"sprites/zombieBucketGirlAttack1_spr/zombieBucketGirlAttack1_spr.yy",},},

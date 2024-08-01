@@ -1007,6 +1007,7 @@
     {"name":"rose_spr","order":49,"path":"sprites/rose_spr/rose_spr.yy",},
     {"name":"casinoCandleLight_obj","order":32,"path":"objects/casinoCandleLight_obj/casinoCandleLight_obj.yy",},
     {"name":"lockIcon2_obj","order":153,"path":"objects/lockIcon2_obj/lockIcon2_obj.yy",},
+    {"name":"diningHallEntranceTeleporter_obj","order":198,"path":"objects/diningHallEntranceTeleporter_obj/diningHallEntranceTeleporter_obj.yy",},
     {"name":"steamLEDLogo_obj","order":4,"path":"objects/steamLEDLogo_obj/steamLEDLogo_obj.yy",},
     {"name":"get_next_pot","order":1,"path":"scripts/get_next_pot/get_next_pot.yy",},
     {"name":"zombieBucketGirlAttack1_spr","order":14,"path":"sprites/zombieBucketGirlAttack1_spr/zombieBucketGirlAttack1_spr.yy",},
