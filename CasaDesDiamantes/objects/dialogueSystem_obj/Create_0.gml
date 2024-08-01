@@ -283,6 +283,8 @@ dialogue[93] = "#On it.";
 dialogue[94] = "";
 
 //Scene 18 Team Meetup VIP Room
+startScene18BlackTimer = false;
+scene18BlackTimer = 300;
 startScene18Timer = false;
 scene18Timer = 11600;
 scene18TimerSave = scene18Timer;

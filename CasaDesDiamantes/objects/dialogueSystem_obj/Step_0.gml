@@ -671,15 +671,41 @@ if (scene18)
 if (startScene18Timer) {
 	scene18Timer -= global.dt * camera_obj.textSpeed;
 	
-	if (scene18Timer < 0) {				
-		player_obj.movement = true;
-		camera_obj.drawBlackborders = false;
-		scene18Timer = scene18TimerSave;
-		startScene18Timer = false;
-		inCutscene = false;
-		camera_obj.follow = player_obj;
-		//global.cupyDialogue6Done = true;
-		camera_obj.drawDialogueBorder = false;
-		save_scr();
+	if (scene18Timer < 0) {	
+		if (!startScene18BlackTimer) {
+			camera_obj.blackscreenStrength += (global.dt / 40) * camera_obj.textSpeed;
+		}
+		
+		if (camera_obj.blackscreenStrength > 0.98) {
+			startScene18BlackTimer = true;
+			camera_obj.drawBlackborders = false;
+			
+			//REMOVE NPCS
+			if (instance_exists(komo_obj)) {
+				instance_destroy(komo_obj);
+			}
+			if (instance_exists(tristram_obj)) {
+				instance_destroy(tristram_obj);
+			}
+		}
+		
+		if (startScene18BlackTimer) {
+			scene18BlackTimer -= global.dt * camera_obj.textSpeed;
+			if (scene18BlackTimer < 0) {
+				camera_obj.blackscreenStrength -= (global.dt / 40) * camera_obj.textSpeed;
+				
+				if (camera_obj.blackscreenStrength < 0.05) {
+					player_obj.movement = true;
+					camera_obj.drawBlackborders = false;
+					scene18Timer = scene18TimerSave;
+					startScene18Timer = false;
+					inCutscene = false;
+					camera_obj.follow = player_obj;
+					//global.cupyDialogue6Done = true;
+					camera_obj.drawDialogueBorder = false;
+					save_scr();
+				}
+			}
+		}
 	}
 }
