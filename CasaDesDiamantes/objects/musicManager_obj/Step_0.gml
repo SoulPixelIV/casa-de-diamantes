@@ -192,7 +192,7 @@ if (room == level_Casino || room == mainmenu || room == levelSelect || room == s
 }
 
 //Casino Low Pass Theme
-if (room == blackjackTable || room == level_CasinoRoof) {
+if (room == blackjackTable || room == level_CasinoRoof || room == level_DiningHall) {
 	if (!audio_is_playing(casinoThemeLowPass)) {
 		audio_play_sound_on(musicEmitter, casinoThemeLowPass, 1, 1);
 	}
