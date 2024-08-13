@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "komo_spr",
-    "path": "sprites/komo_spr/komo_spr.yy",
+    "name": "komoEatingTEST_spr",
+    "path": "sprites/komoEatingTEST_spr/komoEatingTEST_spr.yy",
   },
   "spriteMaskId": null,
   "visible": true,

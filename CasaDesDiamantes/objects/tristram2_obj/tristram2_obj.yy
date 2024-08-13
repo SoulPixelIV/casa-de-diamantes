@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "tristram_spr",
-    "path": "sprites/tristram_spr/tristram_spr.yy",
+    "name": "tristramSmoking_spr",
+    "path": "sprites/tristramSmoking_spr/tristramSmoking_spr.yy",
   },
   "spriteMaskId": null,
   "visible": true,

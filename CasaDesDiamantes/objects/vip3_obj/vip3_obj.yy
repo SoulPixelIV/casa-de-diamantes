@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "VIP_spr",
-    "path": "sprites/VIP_spr/VIP_spr.yy",
+    "name": "VIPEating_spr",
+    "path": "sprites/VIPEating_spr/VIPEating_spr.yy",
   },
   "spriteMaskId": null,
   "visible": true,

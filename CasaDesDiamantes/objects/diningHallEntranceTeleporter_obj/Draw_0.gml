@@ -47,7 +47,7 @@ if (finishingTeleport) {
 				finishingTeleport = false;
 				waitDelay = waitDelaySave;
 				secondBlackscreenDelay = secondBlackscreenDelaySave;
-				player_obj.movement = true;
+				//player_obj.movement = true;
 			}
 			
 		}

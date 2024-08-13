@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "cindy_spr",
-    "path": "sprites/cindy_spr/cindy_spr.yy",
+    "name": "cindyEating_spr",
+    "path": "sprites/cindyEating_spr/cindyEating_spr.yy",
   },
   "spriteMaskId": null,
   "visible": true,
