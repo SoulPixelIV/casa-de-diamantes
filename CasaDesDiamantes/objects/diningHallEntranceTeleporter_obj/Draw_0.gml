@@ -36,8 +36,9 @@ if (finishingTeleport) {
 	waitDelay -= global.dt;
 	if (waitDelay < 0) {
 		if (instance_exists(player_obj)) {
-			player_obj.x = Spawn2_obj.x;
-			player_obj.y = Spawn2_obj.y;
+			if (!instance_exists(steph2_obj)) {
+				instance_create_layer(Spawn2_obj.x, Spawn2_obj.y, "Instances", steph2_obj);
+			}
 				
 			secondBlackscreenDelay -= global.dt;
 			
@@ -47,7 +48,6 @@ if (finishingTeleport) {
 				finishingTeleport = false;
 				waitDelay = waitDelaySave;
 				secondBlackscreenDelay = secondBlackscreenDelaySave;
-				//player_obj.movement = true;
 			}
 			
 		}

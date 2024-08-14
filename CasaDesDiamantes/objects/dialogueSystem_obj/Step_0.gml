@@ -709,3 +709,60 @@ if (startScene18Timer) {
 		}
 	}
 }
+
+//Scene 19
+if (scene19)
+{
+	//inCutscene = true;
+	startScene19Timer = true;
+	camera_obj.drawDialogueBorder = true;
+	if (!camera_obj.drawText)
+	{
+		for (i = scene19Low; i < scene19High + 1; i++)
+		{
+			camera_obj.dialogue[i] = dialogue[i];
+		}
+		camera_obj.dialogueLine = scene19Low;
+		camera_obj.drawText = true;
+	}
+	scene19 = false;
+}
+
+if (startScene19Timer) {
+	scene19Timer -= global.dt * camera_obj.textSpeed;
+	
+	if (scene19Timer < 0) {	
+		if (!startScene19BlackTimer) {
+			camera_obj.blackscreenStrength += (global.dt / 40) * camera_obj.textSpeed;
+		}
+		
+		if (camera_obj.blackscreenStrength > 0.98) {
+			startScene19BlackTimer = true;
+			camera_obj.drawBlackborders = false;
+			
+			//REMOVE FAKE STEPH
+			if (instance_exists(steph2_obj)) {
+				instance_destroy(steph2_obj);
+			}
+		}
+		
+		if (startScene19BlackTimer) {
+			scene19BlackTimer -= global.dt * camera_obj.textSpeed;
+			if (scene19BlackTimer < 0) {
+				camera_obj.blackscreenStrength -= (global.dt / 40) * camera_obj.textSpeed;
+				
+				if (camera_obj.blackscreenStrength < 0.05) {
+					player_obj.movement = true;
+					camera_obj.drawBlackborders = false;
+					scene19Timer = scene19TimerSave;
+					startScene19Timer = false;
+					inCutscene = false;
+					camera_obj.follow = player_obj;
+					//global.cupyDialogue6Done = true;
+					camera_obj.drawDialogueBorder = false;
+					save_scr();
+				}
+			}
+		}
+	}
+}

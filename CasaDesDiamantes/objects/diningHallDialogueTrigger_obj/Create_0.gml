@@ -1,0 +1,1 @@
+dialogueTriggered = false;
