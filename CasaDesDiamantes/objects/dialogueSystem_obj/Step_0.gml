@@ -651,8 +651,7 @@ if (startScene17Timer) {
 }
 
 //Scene 18
-if (scene18)
-{
+if (scene18) {
 	inCutscene = true;
 	startScene18Timer = true;
 	camera_obj.drawDialogueBorder = true;
@@ -669,11 +668,9 @@ if (scene18)
 }
 
 if (startScene18Timer) {
-	scene18Timer -= global.dt * camera_obj.textSpeed;
-	
-	if (scene18Timer < 0) {	
+	if (camera_obj.dialogueLine == scene18High - 1) {
 		if (!startScene18BlackTimer) {
-			camera_obj.blackscreenStrength += (global.dt / 40) * camera_obj.textSpeed;
+			camera_obj.blackscreenStrength += global.dt;
 		}
 		
 		if (camera_obj.blackscreenStrength > 0.98) {
@@ -692,16 +689,15 @@ if (startScene18Timer) {
 		if (startScene18BlackTimer) {
 			scene18BlackTimer -= global.dt * camera_obj.textSpeed;
 			if (scene18BlackTimer < 0) {
-				camera_obj.blackscreenStrength -= (global.dt / 40) * camera_obj.textSpeed;
+				camera_obj.blackscreenStrength -= global.dt;
 				
 				if (camera_obj.blackscreenStrength < 0.05) {
 					player_obj.movement = true;
 					camera_obj.drawBlackborders = false;
-					scene18Timer = scene18TimerSave;
 					startScene18Timer = false;
 					inCutscene = false;
 					camera_obj.follow = player_obj;
-					//global.cupyDialogue6Done = true;
+					global.firstmeetingDialogue = true;
 					camera_obj.drawDialogueBorder = false;
 					save_scr();
 				}
@@ -711,8 +707,7 @@ if (startScene18Timer) {
 }
 
 //Scene 19
-if (scene19)
-{
+if (scene19) {
 	inCutscene = true;
 	startScene19Timer = true;
 	camera_obj.drawDialogueBorder = true;
@@ -729,11 +724,9 @@ if (scene19)
 }
 
 if (startScene19Timer) {
-	scene19Timer -= global.dt * camera_obj.textSpeed;
-	
-	if (scene19Timer < 0) {	
+	if (camera_obj.dialogueLine == scene19High - 1) {
 		if (!startScene19BlackTimer) {
-			camera_obj.blackscreenStrength += (global.dt / 40) * camera_obj.textSpeed;
+			camera_obj.blackscreenStrength += global.dt;
 		}
 		
 		if (camera_obj.blackscreenStrength > 0.98) {
@@ -749,12 +742,11 @@ if (startScene19Timer) {
 		if (startScene19BlackTimer) {
 			scene19BlackTimer -= global.dt * camera_obj.textSpeed;
 			if (scene19BlackTimer < 0) {
-				camera_obj.blackscreenStrength -= (global.dt / 40) * camera_obj.textSpeed;
+				camera_obj.blackscreenStrength -= global.dt;
 				
 				if (camera_obj.blackscreenStrength < 0.05) {
 					player_obj.movement = true;
 					camera_obj.drawBlackborders = false;
-					scene19Timer = scene19TimerSave;
 					startScene19Timer = false;
 					inCutscene = false;
 					camera_obj.follow = player_obj;

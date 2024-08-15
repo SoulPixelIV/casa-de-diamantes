@@ -134,7 +134,7 @@ if (room == demoend) {
 }
 
 //Casino Theme
-if (room == level_Casino || room == mainmenu || room == levelSelect || room == storySelect || room == worldmap || room == settings || room == upgrademenu) {
+if (room == level_Casino || room == mainmenu || room == levelSelect || room == storySelect || room == worldmap || room == settings || room == upgrademenu || room == level_DiningHall) {
 	if (!audio_is_playing(casinoTheme)) {
 		audio_play_sound_on(musicEmitter, casinoTheme, 1, 1);
 		
@@ -192,7 +192,7 @@ if (room == level_Casino || room == mainmenu || room == levelSelect || room == s
 }
 
 //Casino Low Pass Theme
-if (room == blackjackTable || room == level_CasinoRoof || room == level_DiningHall) {
+if (room == blackjackTable || room == level_CasinoRoof) {
 	if (!audio_is_playing(casinoThemeLowPass)) {
 		audio_play_sound_on(musicEmitter, casinoThemeLowPass, 1, 1);
 	}

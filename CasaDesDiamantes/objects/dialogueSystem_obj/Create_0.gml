@@ -57,9 +57,9 @@ scene16High = 89;
 scene17Low = 90;
 scene17High = 94;
 scene18Low = 95;
-scene18High = 111;
-scene19Low = 112;
-scene19High = 136;
+scene18High = 112;
+scene19Low = 113;
+scene19High = 138;
 
 //Dialogue Text
 //!!!ALWAYS 1 FREE SPACE BETWEEN SCENES
@@ -287,14 +287,12 @@ dialogue[94] = "";
 
 //Scene 18 Team Meetup VIP Room
 startScene18BlackTimer = false;
-scene18BlackTimer = 300;
+scene18BlackTimer = 400;
 startScene18Timer = false;
-scene18Timer = 11600;
-scene18TimerSave = scene18Timer;
 
 dialogue[95] = "_Steph!";
 dialogue[96] = "#Guys! So happy to see you again! How was singapore?";
-dialogue[97] = ";Oh we left for indonesia pretty much a few days in because";
+dialogue[97] = ";Oh we left for Indonesia pretty much a few days in because";
 dialogue[98] = ">the strand we were looking for wasn't anywhere to be found.";
 dialogue[99] = "#Shame, you to were looking forward to it...";
 dialogue[100] = "#nonetheless, I'm glad you were able to make it here.";
@@ -308,37 +306,37 @@ dialogue[107] = "§Anyway, the manager organzied a little something tonight...";
 dialogue[108] = "§...and we're all invited!";
 dialogue[109] = "§You don't have to come but...";
 dialogue[110] = "§...hope you brought an empty belly!";
-dialogue[111] = "";
+dialogue[111] = " ";
+dialogue[112] = "";
 
 //Scene 19 Dining Hall
 startScene19BlackTimer = false;
-scene19BlackTimer = 300;
+scene19BlackTimer = 400;
 startScene19Timer = false;
-scene19Timer = 19900;
-scene19TimerSave = scene19Timer;
 
-dialogue[112] = "$Wow, that is some great duck! Props to the chef!";
-dialogue[113] = "^Passing it on!";
-dialogue[114] = "$But Steph, how long have you been eating meat again?";
-dialogue[115] = "$I thought you can't handle that stuff.";
-dialogue[116] = "#...";
-dialogue[117] = "#I haven't really thought about it...";
-dialogue[118] = "$No pressure, just wondering.";
-dialogue[119] = "$I've always been ordering vegan with you for your sake.";
-dialogue[120] = "$I take it that you don't mind me indulging like that?";
-dialogue[121] = "#I guess I don't.";
-dialogue[122] = ">I've always been weak but she never seemed to care.";
-dialogue[123] = ">Where's the problem.";
-dialogue[124] = ";Komo, you barely ever eat anything that isn't pure meat.";
-dialogue[125] = ";It's hard for the average brain to even process...";
-dialogue[126] = ";...that this is supposed to be food fit for human consumption.";
-dialogue[127] = ";Let alone that it's made of real animals.";
-dialogue[128] = ">Hey! You're not even making sense!";
-dialogue[129] = "#You'll take any chance to pick on her for trivial things like that, eh?";
-dialogue[130] = ";I'm just a poor and innocent little court jester, pay me no mind.";
-dialogue[131] = "$Ehem. Well, Komo, there's an unwritten contract between Steph and me.";
-dialogue[132] = "$I'm just surprised she broke it first, considering she... unwrote it.";
-dialogue[133] = ">*chomp* ...a contract? And you left me out of it?!";
-dialogue[134] = "$We hoped to keep it's integrity for longer than three days.";
-dialogue[135] = "_...fair";
-dialogue[136] = "";
+dialogue[113] = "$Wow, that is some great duck! Props to the chef!";
+dialogue[114] = "^Passing it on!";
+dialogue[115] = "$But Steph, how long have you been eating meat again?";
+dialogue[116] = "$I thought you can't handle that stuff.";
+dialogue[117] = "#...";
+dialogue[118] = "#I haven't really thought about it...";
+dialogue[119] = "$No pressure, just wondering.";
+dialogue[120] = "$I've always been ordering vegan with you for your sake.";
+dialogue[121] = "$I take it that you don't mind me indulging like that?";
+dialogue[122] = "#I guess I don't.";
+dialogue[123] = ">I've always been weak but she never seemed to care.";
+dialogue[124] = ">Where's the problem.";
+dialogue[125] = ";Komo, you barely ever eat anything that isn't pure meat.";
+dialogue[126] = ";It's hard for the average brain to even process...";
+dialogue[127] = ";...that this is supposed to be food fit for human consumption.";
+dialogue[128] = ";Let alone that it's made of real animals.";
+dialogue[129] = ">Hey! You're not even making sense!";
+dialogue[130] = "#You'll take any chance to pick on her for trivial things like that, eh?";
+dialogue[131] = ";I'm just a poor and innocent little court jester, pay me no mind.";
+dialogue[132] = "$Ehem. Well, Komo, there's an unwritten contract between Steph and me.";
+dialogue[133] = "$I'm just surprised she broke it first, considering she... unwrote it.";
+dialogue[134] = ">*chomp* ...a contract? And you left me out of it?!";
+dialogue[135] = "$We hoped to keep it's integrity for longer than three days.";
+dialogue[136] = "_...fair";
+dialogue[137] = " ";
+dialogue[138] = "";

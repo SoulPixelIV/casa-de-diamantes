@@ -272,8 +272,12 @@ if (drawText && !showWindowMenu)
 		} else if (character == vip_obj || character == vip2_obj || character == vip3_obj || character == customStoryTarget_obj) {
 			draw_sprite_ext(dialogBorder_spr, 0, (character.x - x) + global.xScreenSize / 2, (character.y - y) - 42 + global.yScreenSize / 2, 2 + string_length(dialogueStripped) / 3, 1.5, 0, make_color_rgb(134, 105, 175), 1);
 		} else if (character == casinoLantern_obj) {
-			draw_sprite_ext(dialogBorder_spr, 0, (komo_obj.x - x) + global.xScreenSize / 2, (komo_obj.y - y) - 42 + global.yScreenSize / 2, 2 + string_length(dialogueStripped) / 3, 1.5, 0, make_color_rgb(127, 172, 255), 1);
-			draw_sprite_ext(dialogBorder_spr, 0, (tristram_obj.x - x) + global.xScreenSize / 2, (tristram_obj.y - y) - 42 + global.yScreenSize / 2, 2 + string_length(dialogueStripped) / 3, 1.5, 0, make_color_rgb(198, 204, 99), 1);
+			if (instance_exists(komo_obj)) {
+				draw_sprite_ext(dialogBorder_spr, 0, (komo_obj.x - x) + global.xScreenSize / 2, (komo_obj.y - y) - 42 + global.yScreenSize / 2, 2 + string_length(dialogueStripped) / 3, 1.5, 0, make_color_rgb(127, 172, 255), 1);
+			}
+			if (instance_exists(tristram_obj)) {
+				draw_sprite_ext(dialogBorder_spr, 0, (tristram_obj.x - x) + global.xScreenSize / 2, (tristram_obj.y - y) - 42 + global.yScreenSize / 2, 2 + string_length(dialogueStripped) / 3, 1.5, 0, make_color_rgb(198, 204, 99), 1);
+			}
 		} else if (character == dinnerTable_obj) {
 			draw_sprite_ext(dialogBorder_spr, 0, (komo2_obj.x - x) + global.xScreenSize / 2, (komo2_obj.y - y) - 42 + global.yScreenSize / 2, 2 + string_length(dialogueStripped) / 3, 1.5, 0, make_color_rgb(127, 172, 255), 1);
 			draw_sprite_ext(dialogBorder_spr, 0, (tristram2_obj.x - x) + global.xScreenSize / 2, (tristram2_obj.y - y) - 42 + global.yScreenSize / 2, 2 + string_length(dialogueStripped) / 3, 1.5, 0, make_color_rgb(198, 204, 99), 1);
@@ -292,17 +296,21 @@ if (drawText && !showWindowMenu)
 			draw_text((character.x - x) + global.xScreenSize / 2, (character.y - y) - 26 + global.yScreenSize / 2, string_copy(dialogueStripped, 1, string_length(dialogue[dialogueLine])));
 			draw_set_halign(fa_left);
 		} else if (character == casinoLantern_obj) {
-			draw_text((komo_obj.x - x) + global.xScreenSize / 2 - 1, (komo_obj.y - y) - 46 + 1 + global.yScreenSize / 2, string_copy(dialogueStripped, 1, string_length(dialogue[dialogueLine])));
-			draw_set_color(make_color_rgb(255, 215, 0));
-			draw_text((komo_obj.x - x) + global.xScreenSize / 2, (komo_obj.y - y) - 46 + global.yScreenSize / 2, string_copy(dialogueStripped, 1, string_length(dialogue[dialogueLine])));
-			draw_set_halign(fa_left);
+			if (instance_exists(komo_obj)) {
+				draw_text((komo_obj.x - x) + global.xScreenSize / 2 - 1, (komo_obj.y - y) - 46 + 1 + global.yScreenSize / 2, string_copy(dialogueStripped, 1, string_length(dialogue[dialogueLine])));
+				draw_set_color(make_color_rgb(255, 215, 0));
+				draw_text((komo_obj.x - x) + global.xScreenSize / 2, (komo_obj.y - y) - 46 + global.yScreenSize / 2, string_copy(dialogueStripped, 1, string_length(dialogue[dialogueLine])));
+				draw_set_halign(fa_left);
+			}
 			
-			draw_set_halign(fa_center);
-			draw_set_color(c_black);
-			draw_text((tristram_obj.x - x) + global.xScreenSize / 2 - 1, (tristram_obj.y - y) - 46 + 1 + global.yScreenSize / 2, string_copy(dialogueStripped, 1, string_length(dialogue[dialogueLine])));
-			draw_set_color(make_color_rgb(255, 215, 0));
-			draw_text((tristram_obj.x - x) + global.xScreenSize / 2, (tristram_obj.y - y) - 46 + global.yScreenSize / 2, string_copy(dialogueStripped, 1, string_length(dialogue[dialogueLine])));
-			draw_set_halign(fa_left);
+			if (instance_exists(tristram_obj)) {
+				draw_set_halign(fa_center);
+				draw_set_color(c_black);
+				draw_text((tristram_obj.x - x) + global.xScreenSize / 2 - 1, (tristram_obj.y - y) - 46 + 1 + global.yScreenSize / 2, string_copy(dialogueStripped, 1, string_length(dialogue[dialogueLine])));
+				draw_set_color(make_color_rgb(255, 215, 0));
+				draw_text((tristram_obj.x - x) + global.xScreenSize / 2, (tristram_obj.y - y) - 46 + global.yScreenSize / 2, string_copy(dialogueStripped, 1, string_length(dialogue[dialogueLine])));
+				draw_set_halign(fa_left);
+			}
 		} else if (character == dinnerTable_obj) {
 			draw_text((komo2_obj.x - x) + global.xScreenSize / 2 - 1, (komo2_obj.y - y) - 46 + 1 + global.yScreenSize / 2, string_copy(dialogueStripped, 1, string_length(dialogue[dialogueLine])));
 			draw_set_color(make_color_rgb(255, 215, 0));
@@ -1620,7 +1628,15 @@ if (drawElevatorSign) {
 		}
 	}
 	if (global.storyAct == 1) {
-		draw_sprite(elevatorInterestMarker_spr, 1, global.xScreenSize / 2, (global.yScreenSize / 2) + windowMenuOffset);
+		if (!global.firstmeetingDialogue) {
+			draw_sprite(elevatorInterestMarker_spr, 1, global.xScreenSize / 2, (global.yScreenSize / 2) + windowMenuOffset);
+		} else {
+			draw_sprite(elevatorInterestMarker_spr, 1, global.xScreenSize / 2, (global.yScreenSize / 2) + windowMenuOffset);
+			if (!global.dinnerDialogue) {
+				draw_sprite(elevatorInterestMarker_spr, 2, global.xScreenSize / 2, (global.yScreenSize / 2) + windowMenuOffset);
+			}
+			draw_sprite(elevatorInterestMarker_spr, 6, global.xScreenSize / 2, (global.yScreenSize / 2) + windowMenuOffset);
+		}
 	}
 	
 	draw_set_font(gothicPixel_fnt);

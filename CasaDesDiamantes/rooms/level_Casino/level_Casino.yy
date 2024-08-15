@@ -299,6 +299,7 @@
     {"name":"inst_13D6B76E","path":"rooms/level_Casino/level_Casino.yy",},
     {"name":"inst_5AAC3447","path":"rooms/level_Casino/level_Casino.yy",},
     {"name":"inst_10B63862","path":"rooms/level_Casino/level_Casino.yy",},
+    {"name":"inst_3E2458F9","path":"rooms/level_Casino/level_Casino.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -329,6 +330,11 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_18D065E4","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"outOfRoomVIPDialogue_obj","path":"objects/outOfRoomVIPDialogue_obj/outOfRoomVIPDialogue_obj.yy",},"properties":[],"rotation":0.0,"scaleX":3.375,"scaleY":10.9375,"x":566.0,"y":3205.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_77C81D49","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"customStoryTarget_obj","path":"objects/customStoryTarget_obj/customStoryTarget_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":497.0,"y":3230.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_10B63862","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"teamMeetupDialogue","path":"objects/teamMeetupDialogue/teamMeetupDialogue.yy",},"properties":[],"rotation":0.0,"scaleX":1.3125,"scaleY":7.5,"x":949.0,"y":4214.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_3E2458F9","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"arrowDown_obj","path":"objects/arrowDown_obj/arrowDown_obj.yy",},"properties":[
+            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"arrowDown_obj","path":"objects/arrowDown_obj/arrowDown_obj.yy",},"propertyId":{"name":"open","path":"objects/arrowDown_obj/arrowDown_obj.yy",},"value":"True",},
+            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"arrowDown_obj","path":"objects/arrowDown_obj/arrowDown_obj.yy",},"propertyId":{"name":"arrowNumber","path":"objects/arrowDown_obj/arrowDown_obj.yy",},"value":"0",},
+            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"arrowDown_obj","path":"objects/arrowDown_obj/arrowDown_obj.yy",},"propertyId":{"name":"storyAct","path":"objects/arrowDown_obj/arrowDown_obj.yy",},"value":"1",},
+          ],"rotation":90.0,"scaleX":1.0,"scaleY":1.0,"x":1496.0,"y":3210.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMREffectLayer","resourceVersion":"1.0","name":"RedFilter","depth":400,"effectEnabled":true,"effectType":"_filter_colourise","gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[
         {"name":"g_Intensity","type":0,"value":"0.3",},

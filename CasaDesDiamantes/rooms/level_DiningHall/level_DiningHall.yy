@@ -59,6 +59,7 @@
     {"name":"inst_BBC96AC","path":"rooms/level_DiningHall/level_DiningHall.yy",},
     {"name":"inst_295E6477","path":"rooms/level_DiningHall/level_DiningHall.yy",},
     {"name":"inst_235513A6","path":"rooms/level_DiningHall/level_DiningHall.yy",},
+    {"name":"inst_72C41FA1","path":"rooms/level_DiningHall/level_DiningHall.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -77,6 +78,11 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_2824485E_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"dialogueSystem_obj","path":"objects/dialogueSystem_obj/dialogueSystem_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":384.0,"y":864.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_435B8232","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"diningHallEntranceTeleporter_obj","path":"objects/diningHallEntranceTeleporter_obj/diningHallEntranceTeleporter_obj.yy",},"properties":[],"rotation":0.0,"scaleX":3.375,"scaleY":5.75,"x":799.88025,"y":1315.9742,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_2B0FAE03","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"diningHallDialogueTrigger_obj","path":"objects/diningHallDialogueTrigger_obj/diningHallDialogueTrigger_obj.yy",},"properties":[],"rotation":0.0,"scaleX":3.25,"scaleY":7.625,"x":1744.0,"y":701.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_72C41FA1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"arrowDown_obj","path":"objects/arrowDown_obj/arrowDown_obj.yy",},"properties":[
+            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"arrowDown_obj","path":"objects/arrowDown_obj/arrowDown_obj.yy",},"propertyId":{"name":"open","path":"objects/arrowDown_obj/arrowDown_obj.yy",},"value":"True",},
+            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"arrowDown_obj","path":"objects/arrowDown_obj/arrowDown_obj.yy",},"propertyId":{"name":"arrowNumber","path":"objects/arrowDown_obj/arrowDown_obj.yy",},"value":"1",},
+            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"arrowDown_obj","path":"objects/arrowDown_obj/arrowDown_obj.yy",},"propertyId":{"name":"storyAct","path":"objects/arrowDown_obj/arrowDown_obj.yy",},"value":"1",},
+          ],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":800.0,"y":1259.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMREffectLayer","resourceVersion":"1.0","name":"RedFilter","depth":400,"effectEnabled":true,"effectType":"_filter_colourise","gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[
         {"name":"g_Intensity","type":0,"value":"0.3",},
