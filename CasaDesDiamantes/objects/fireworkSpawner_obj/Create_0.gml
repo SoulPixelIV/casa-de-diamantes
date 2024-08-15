@@ -1,6 +1,3 @@
-light = noone;
-lightSpawned = false;
-timerSpawn = random_range(200, 600);
-timerDelete = 200;
-timerDeleteSave = timerDelete;
-alarm[0] = 50;
+fireworkEmitter = part_emitter_create(global.partSystem);
+burstTimer = random_range(400, 1700);
+//part_emitter_stream(global.partSystem, fireworkEmitter, global.fireworkGreenPart, 10);

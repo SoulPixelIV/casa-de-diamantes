@@ -194,35 +194,34 @@ part_type_speed(global.bloodPart, 1, 2, 0, 0);
 global.fireworkGreenPart = part_type_create();
 part_type_sprite(global.fireworkGreenPart, spark_spr, true, true, true);
 part_type_colour_rgb(global.fireworkGreenPart, 0, 0, 200, 255, 0, 0);
-part_type_life(global.fireworkGreenPart, 170, 230);
+part_type_life(global.fireworkGreenPart, 800, 1200);
 part_type_size(global.fireworkGreenPart, 0.5, 1, -0.0025, 0);
 part_type_orientation(global.fireworkGreenPart, 0, 359, 1, 0, 1);
 part_type_direction(global.fireworkGreenPart, 0, 360, 0, 0);
 part_type_gravity(global.fireworkGreenPart, 0.0025, 270);
-part_type_speed(global.fireworkGreenPart, 0.8, 1.3, -0.003, 0);
+part_type_speed(global.fireworkGreenPart, 0.2, 0.35, -0.003, 0);
 
 global.fireworkPinkPart = part_type_create();
 part_type_sprite(global.fireworkPinkPart, spark_spr, true, true, true);
 part_type_colour_rgb(global.fireworkPinkPart, 200, 255, 0, 0, 200, 255);
-part_type_life(global.fireworkPinkPart, 170, 230);
+part_type_life(global.fireworkPinkPart, 800, 1200);
 part_type_size(global.fireworkPinkPart, 0.5, 1, -0.0025, 0);
 part_type_orientation(global.fireworkPinkPart, 0, 359, 1, 0, 1);
 part_type_direction(global.fireworkPinkPart, 0, 360, 0, 0);
 part_type_gravity(global.fireworkPinkPart, 0.0025, 270);
-part_type_speed(global.fireworkPinkPart, 0.8, 1.3, -0.003, 0);
+part_type_speed(global.fireworkPinkPart, 0.2, 0.35, -0.003, 0);
 
 global.fireworkBluePart = part_type_create();
 part_type_sprite(global.fireworkBluePart, spark_spr, true, true, true);
 part_type_colour_rgb(global.fireworkBluePart, 0, 0, 0, 0, 200, 255);
-part_type_life(global.fireworkBluePart, 170, 300);
-part_type_size(global.fireworkBluePart, 0.5, 1, -0.0015, 0);
+part_type_life(global.fireworkBluePart, 800, 1200);
+part_type_size(global.fireworkBluePart, 0.5, 1, -0.0025, 0);
 part_type_orientation(global.fireworkBluePart, 0, 359, 1, 0, 1);
 part_type_direction(global.fireworkBluePart, 0, 360, 0, 0);
-part_type_gravity(global.fireworkBluePart, 0.0035, 270);
-part_type_speed(global.fireworkBluePart, 1.2, 1.7, -0.004, 0);
+part_type_gravity(global.fireworkBluePart, 0.0025, 270);
+part_type_speed(global.fireworkBluePart, 0.2, 0.35, -0.003, 0);
 
 //Coins
-
 global.coinBluePart = part_type_create();
 part_type_sprite(global.coinBluePart, particleBlue_spr, true, true, true);
 part_type_life(global.coinBluePart, 100, 140);
