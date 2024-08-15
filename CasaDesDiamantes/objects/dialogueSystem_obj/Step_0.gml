@@ -653,7 +653,7 @@ if (startScene17Timer) {
 //Scene 18
 if (scene18)
 {
-	//inCutscene = true;
+	inCutscene = true;
 	startScene18Timer = true;
 	camera_obj.drawDialogueBorder = true;
 	if (!camera_obj.drawText)
@@ -713,7 +713,7 @@ if (startScene18Timer) {
 //Scene 19
 if (scene19)
 {
-	//inCutscene = true;
+	inCutscene = true;
 	startScene19Timer = true;
 	camera_obj.drawDialogueBorder = true;
 	if (!camera_obj.drawText)
@@ -758,7 +758,7 @@ if (startScene19Timer) {
 					startScene19Timer = false;
 					inCutscene = false;
 					camera_obj.follow = player_obj;
-					//global.cupyDialogue6Done = true;
+					global.dinnerDialogue = true;
 					camera_obj.drawDialogueBorder = false;
 					save_scr();
 				}

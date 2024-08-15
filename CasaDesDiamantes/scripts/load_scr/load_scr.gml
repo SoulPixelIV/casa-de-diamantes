@@ -22,6 +22,7 @@ function load_scr(){
 	global.cutsceneCasinoIntroDone = ini_read_real("save1", "shownCutsceneCasinoIntro", false);
 	global.introDialogueVIPDone = ini_read_real("save1", "shownVIPIntro", false);
 	global.introDialogueOutOfRoomDone = ini_read_real("save1", "shownOutOfRoomIntro", false);
+	global.dinnerDialogue = ini_read_real("save1", "dinnerDialogue", false);
 
 	global.pwlevel2UnlockedElevator = ini_read_real("save1", "pwlevel2UnlockedElevator", false);
 	global.pwlevel3UnlockedElevator = ini_read_real("save1", "pwlevel3UnlockedElevator", false);

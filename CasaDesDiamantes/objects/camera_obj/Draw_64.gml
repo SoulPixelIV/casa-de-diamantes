@@ -303,6 +303,18 @@ if (drawText && !showWindowMenu)
 			draw_set_color(make_color_rgb(255, 215, 0));
 			draw_text((tristram_obj.x - x) + global.xScreenSize / 2, (tristram_obj.y - y) - 46 + global.yScreenSize / 2, string_copy(dialogueStripped, 1, string_length(dialogue[dialogueLine])));
 			draw_set_halign(fa_left);
+		} else if (character == dinnerTable_obj) {
+			draw_text((komo2_obj.x - x) + global.xScreenSize / 2 - 1, (komo2_obj.y - y) - 46 + 1 + global.yScreenSize / 2, string_copy(dialogueStripped, 1, string_length(dialogue[dialogueLine])));
+			draw_set_color(make_color_rgb(255, 215, 0));
+			draw_text((komo2_obj.x - x) + global.xScreenSize / 2, (komo2_obj.y - y) - 46 + global.yScreenSize / 2, string_copy(dialogueStripped, 1, string_length(dialogue[dialogueLine])));
+			draw_set_halign(fa_left);
+			
+			draw_set_halign(fa_center);
+			draw_set_color(c_black);
+			draw_text((tristram2_obj.x - x) + global.xScreenSize / 2 - 1, (tristram2_obj.y - y) - 46 + 1 + global.yScreenSize / 2, string_copy(dialogueStripped, 1, string_length(dialogue[dialogueLine])));
+			draw_set_color(make_color_rgb(255, 215, 0));
+			draw_text((tristram2_obj.x - x) + global.xScreenSize / 2, (tristram2_obj.y - y) - 46 + global.yScreenSize / 2, string_copy(dialogueStripped, 1, string_length(dialogue[dialogueLine])));
+			draw_set_halign(fa_left);
 		} else if (character == mannequin_obj) {
 			draw_text((player_obj.x - x) + global.xScreenSize / 2 - 1, (player_obj.y - y) - 46 + 1 + global.yScreenSize / 2, string_copy(dialogueStripped, 1, string_length(dialogue[dialogueLine])));
 			draw_set_color(make_color_rgb(255, 215, 0));
@@ -1581,6 +1593,9 @@ if (drawElevatorSign) {
 	//Draw "You Are Here" Sign
 	if (room == level_CasinoRoof) {
 		draw_sprite(elevatorHereMarker_spr, 0, global.xScreenSize / 2, (global.yScreenSize / 2) + windowMenuOffset);
+	}
+	if (room == level_DiningHall) {
+		draw_sprite(elevatorHereMarker_spr, 2, global.xScreenSize / 2, (global.yScreenSize / 2) + windowMenuOffset);
 	}
 	if (room == level_Casino) {
 		with (player_obj) {

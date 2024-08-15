@@ -314,7 +314,7 @@ dialogue[111] = "";
 startScene19BlackTimer = false;
 scene19BlackTimer = 300;
 startScene19Timer = false;
-scene19Timer = 20000;
+scene19Timer = 19900;
 scene19TimerSave = scene19Timer;
 
 dialogue[112] = "$Wow, that is some great duck! Props to the chef!";

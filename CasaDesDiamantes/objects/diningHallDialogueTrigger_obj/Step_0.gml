@@ -6,7 +6,6 @@ if (instance_exists(player_obj) && !global.dialogueDelayStart) {
 			dialogueTriggered = true;
 			dialogueSystem_obj.scene19 = true;
 			player_obj.movement = false;
-			player_obj.gravityOn = false;
 			camera_obj.drawBlackborders = true;
 		}
 	}

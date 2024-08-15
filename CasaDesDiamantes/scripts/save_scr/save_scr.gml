@@ -25,6 +25,7 @@ function save_scr(){
 	
 	ini_write_real("save1", "shownCutsceneLevel2", global.cutsceneLevel2Done);
 	ini_write_real("save1", "shownCutsceneCasinoIntro", global.cutsceneCasinoIntroDone);
+	ini_write_real("save1", "dinnerDialogue", global.dinnerDialogue);
 	ini_write_real("save1", "shownVIPIntro", global.introDialogueVIPDone);
 	ini_write_real("save1", "shownOutOfRoomIntro", global.introDialogueOutOfRoomDone);
 

@@ -129,6 +129,7 @@ global.drawMission = false;
 global.introDialogueCindyDone = false;
 global.introDialogueVIPDone = false;
 global.introDialogueOutOfRoomDone = false;
+global.dinnerDialogue = false;
 global.cupyDialogue1Done = false;
 global.cupyDialogue2Done = false;
 global.cupyDialogue3Done = false;

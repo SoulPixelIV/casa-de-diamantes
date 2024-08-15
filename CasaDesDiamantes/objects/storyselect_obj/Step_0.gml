@@ -55,6 +55,7 @@ if (pushDelay < 0) {
 					global.introDialogueVIPDone = true;
 					global.introDialogueCindyDone = true;
 					global.introDialogueOutOfRoomDone = true;
+					global.dinnerDialogue = false;
 					global.cupyDialogue1Done = true;
 					global.cupyDialogue2Done = true;
 					global.cupyDialogue3Done = true;
