@@ -588,6 +588,7 @@
     {"id":{"name":"explosion_spr","path":"sprites/explosion_spr/explosion_spr.yy",},},
     {"id":{"name":"beretDash_spr","path":"sprites/beretDash_spr/beretDash_spr.yy",},},
     {"id":{"name":"explosionVerySmall_spr","path":"sprites/explosionVerySmall_spr/explosionVerySmall_spr.yy",},},
+    {"id":{"name":"level_Basement","path":"rooms/level_Basement/level_Basement.yy",},},
     {"id":{"name":"smokecloud_spr","path":"sprites/smokecloud_spr/smokecloud_spr.yy",},},
     {"id":{"name":"fireLong_spr","path":"sprites/fireLong_spr/fireLong_spr.yy",},},
     {"id":{"name":"spawnCloud_spr","path":"sprites/spawnCloud_spr/spawnCloud_spr.yy",},},
@@ -1981,6 +1982,7 @@
     {"id":{"name":"bombArrow_spr","path":"sprites/bombArrow_spr/bombArrow_spr.yy",},},
     {"id":{"name":"eyes_obj","path":"objects/eyes_obj/eyes_obj.yy",},},
     {"id":{"name":"darkcaveBackground4_spr","path":"sprites/darkcaveBackground4_spr/darkcaveBackground4_spr.yy",},},
+    {"id":{"name":"komo3_obj","path":"objects/komo3_obj/komo3_obj.yy",},},
     {"id":{"name":"goldElevatorSign_spr","path":"sprites/goldElevatorSign_spr/goldElevatorSign_spr.yy",},},
     {"id":{"name":"shdMask","path":"shaders/shdMask/shdMask.yy",},},
     {"id":{"name":"zombieChunk_obj","path":"objects/zombieChunk_obj/zombieChunk_obj.yy",},},
@@ -2122,6 +2124,7 @@
   ],
   "RoomOrderNodes": [
     {"roomId":{"name":"loadVars","path":"rooms/loadVars/loadVars.yy",},},
+    {"roomId":{"name":"level_Basement","path":"rooms/level_Basement/level_Basement.yy",},},
     {"roomId":{"name":"level_DiningHall","path":"rooms/level_DiningHall/level_DiningHall.yy",},},
     {"roomId":{"name":"level9","path":"rooms/level9/level9.yy",},},
     {"roomId":{"name":"level14","path":"rooms/level14/level14.yy",},},
