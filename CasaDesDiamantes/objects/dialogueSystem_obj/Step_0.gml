@@ -668,7 +668,7 @@ if (scene18) {
 }
 
 if (startScene18Timer) {
-	if (camera_obj.dialogueLine >= scene18High - 2) {
+	if (camera_obj.dialogueLine >= scene18High - 1) {
 		if (!startScene18BlackTimer) {
 			camera_obj.blackscreenStrength += global.dt;
 		}
@@ -687,7 +687,7 @@ if (startScene18Timer) {
 		}
 		
 		if (startScene18BlackTimer) {
-			scene18BlackTimer -= global.dt * camera_obj.textSpeed;
+			scene18BlackTimer -= global.dt;
 			if (scene18BlackTimer < 0) {
 				camera_obj.blackscreenStrength -= global.dt;
 				
@@ -726,7 +726,7 @@ if (scene19) {
 }
 
 if (startScene19Timer) {
-	if (camera_obj.dialogueLine >= scene19High - 2) {
+	if (camera_obj.dialogueLine >= scene19High - 1) {
 		if (!startScene19BlackTimer) {
 			camera_obj.blackscreenStrength += global.dt;
 		}
@@ -742,7 +742,7 @@ if (startScene19Timer) {
 		}
 		
 		if (startScene19BlackTimer) {
-			scene19BlackTimer -= global.dt * camera_obj.textSpeed;
+			scene19BlackTimer -= global.dt;
 			if (scene19BlackTimer < 0) {
 				camera_obj.blackscreenStrength -= global.dt;
 				
@@ -781,7 +781,7 @@ if (scene20) {
 }
 
 if (startScene20Timer) {
-	if (camera_obj.dialogueLine >= scene20High - 2) {
+	if (camera_obj.dialogueLine >= scene20High - 1) {
 		if (!startScene20BlackTimer) {
 			camera_obj.blackscreenStrength += global.dt;
 		}
@@ -792,7 +792,7 @@ if (startScene20Timer) {
 		}
 		
 		if (startScene20BlackTimer) {
-			scene20BlackTimer -= global.dt * camera_obj.textSpeed;
+			scene20BlackTimer -= global.dt;
 			if (scene20BlackTimer < 0) {
 				camera_obj.blackscreenStrength -= global.dt;
 				
@@ -804,7 +804,7 @@ if (startScene20Timer) {
 					startScene20Timer = false;
 					inCutscene = false;
 					camera_obj.follow = player_obj;
-					global.firstmeetingDialogue = true;
+					global.komoBasementDialogue = true;
 					camera_obj.drawDialogueBorder = false;
 					save_scr();
 				}

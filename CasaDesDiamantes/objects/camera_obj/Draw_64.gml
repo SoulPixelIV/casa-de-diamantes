@@ -538,44 +538,13 @@ if (drawText && !showWindowMenu)
 				dialogueSystem_obj.scene17Timer = 0;
 			}
 			if (dialogueSystem_obj.startScene18Timer) {
-				//REMOVE NPCS
-				if (instance_exists(komo_obj)) {
-					instance_destroy(komo_obj);
-				}
-				if (instance_exists(tristram_obj)) {
-					instance_destroy(tristram_obj);
-				}
-				player_obj.movement = true;
-				camera_obj.drawBlackborders = false;
-				camera_obj.drawText = false;
-				startScene18Timer = false;
-				inCutscene = false;
-				camera_obj.follow = player_obj;
-				global.firstmeetingDialogue = true;
-				camera_obj.drawDialogueBorder = false;
-				save_scr();
+				dialogueLine = dialogueSystem_obj.scene18High - 1;
 			}
 			if (dialogueSystem_obj.startScene19Timer) {
-				player_obj.movement = true;
-				camera_obj.drawBlackborders = false;
-				camera_obj.drawText = false;
-				startScene19Timer = false;
-				inCutscene = false;
-				camera_obj.follow = player_obj;
-				global.dinnerDialogue = true;
-				camera_obj.drawDialogueBorder = false;
-				save_scr();
+				dialogueLine = dialogueSystem_obj.scene19High - 1;
 			}
 			if (dialogueSystem_obj.startScene20Timer) {
-				player_obj.movement = true;
-				camera_obj.drawBlackborders = false;
-				camera_obj.drawText = false;
-				startScene20Timer = false;
-				inCutscene = false;
-				camera_obj.follow = player_obj;
-				global.firstmeetingDialogue = true;
-				camera_obj.drawDialogueBorder = false;
-				save_scr();
+				dialogueLine = dialogueSystem_obj.scene20High - 1;
 			}
 		}
 	}
@@ -1687,7 +1656,9 @@ if (drawElevatorSign) {
 			if (!global.dinnerDialogue) {
 				draw_sprite(elevatorInterestMarker_spr, 2, global.xScreenSize / 2, (global.yScreenSize / 2) + windowMenuOffset);
 			}
-			draw_sprite(elevatorInterestMarker_spr, 6, global.xScreenSize / 2, (global.yScreenSize / 2) + windowMenuOffset);
+			if (!global.komoBasementDialogue) {
+				draw_sprite(elevatorInterestMarker_spr, 6, global.xScreenSize / 2, (global.yScreenSize / 2) + windowMenuOffset);
+			}
 		}
 	}
 	
@@ -1842,13 +1813,25 @@ if (showWeaponProhibited && !drawElevatorSign && !showWindowMenu) {
 
 //Show Mission Text
 if (global.drawMission && !global.pause) {
-	if (room == level_Casino || room == level_CasinoRoof) {
-		draw_set_halign(fa_center);
-		draw_set_font(gothicPixel_fnt);
-		draw_set_color(c_black);
-		draw_text(global.xScreenSize / 2 - 1, 8 + 1, "Mission - Find and Execute Target in Senzela Forest");
-		draw_set_color(make_color_rgb(255, 215, 0));
-		draw_text(global.xScreenSize / 2, 8, "Mission - Find and Execute Target in Senzela Forest");
+	if (global.storyAct == 0) {
+		if (room == level_Casino || room == level_CasinoRoof || room == level_DiningHall || room == level_Basement) {
+			draw_set_halign(fa_center);
+			draw_set_font(gothicPixel_fnt);
+			draw_set_color(c_black);
+			draw_text(global.xScreenSize / 2 - 1, 8 + 1, "Mission - Find and Execute Target in Senzela Forest");
+			draw_set_color(make_color_rgb(255, 215, 0));
+			draw_text(global.xScreenSize / 2, 8, "Mission - Find and Execute Target in Senzela Forest");
+		}
+	}
+	if (global.storyAct == 1) {
+		if (room == level_Casino || room == level_CasinoRoof || room == level_DiningHall || room == level_Basement) {
+			draw_set_halign(fa_center);
+			draw_set_font(gothicPixel_fnt);
+			draw_set_color(c_black);
+			draw_text(global.xScreenSize / 2 - 1, 8 + 1, "Mission - Enjoy the evening & meet back at the VIP room");
+			draw_set_color(make_color_rgb(255, 215, 0));
+			draw_text(global.xScreenSize / 2, 8, "Mission - Enjoy the evening & meet back at the VIP room");
+		}
 	}
 }
 

@@ -309,7 +309,7 @@ dialogue[107] = "§Anyway, the manager organzied a little something tonight...";
 dialogue[108] = "§...and we're all invited!";
 dialogue[109] = "§You don't have to come but...";
 dialogue[110] = "§...hope you brought an empty belly!";
-dialogue[111] = " ";
+dialogue[111] = "                                                                                                             ";
 dialogue[112] = "";
 
 //Scene 19 Dining Hall
@@ -341,7 +341,7 @@ dialogue[133] = "$I'm just surprised she broke it first, considering she... unwr
 dialogue[134] = ">*chomp* ...a contract? And you left me out of it?!";
 dialogue[135] = "$We hoped to keep it's integrity for longer than three days.";
 dialogue[136] = "_...fair";
-dialogue[137] = " ";
+dialogue[137] = "                                                                                                             ";
 dialogue[138] = "";
 
 //Scene 20 Komo Basement
@@ -363,7 +363,7 @@ dialogue[149] = "#You don't have to.";
 dialogue[150] = ">I do, I do have to punch. It's why I'm here.";
 dialogue[151] = "#Prove it, I mean.";
 dialogue[152] = "#Your worth, we know it.";
-dialogue[153] = "#and you're more than that.";
+dialogue[153] = "#And you're more than that.";
 dialogue[154] = ">Steph. I would never think you guys would leave me or anything like that.";
 dialogue[155] = ">There's something else.";
 dialogue[156] = "#I think SHE is thinking of abandoning us.";
@@ -375,5 +375,5 @@ dialogue[161] = ">You're right. Still, I've got much work to do.";
 dialogue[162] = ">I'll have to set up this whole basement and I gotta get to it soon.";
 dialogue[163] = ">We'll talk later if that's fine.";
 dialogue[164] = "That's fine. See ya!";
-dialogue[165] = " ";
+dialogue[165] = "                                                                                                             ";
 dialogue[166] = "";
