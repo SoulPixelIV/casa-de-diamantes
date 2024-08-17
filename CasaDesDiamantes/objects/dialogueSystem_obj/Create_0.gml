@@ -294,7 +294,7 @@ scene18BlackTimer = 400;
 startScene18Timer = false;
 
 dialogue[95] = "_Steph!";
-dialogue[96] = "#Guys! So happy to see you again! How was singapore?";
+dialogue[96] = "#Guys! So happy to see you again! How was Singapore?";
 dialogue[97] = ";Oh we left for Indonesia pretty much a few days in because";
 dialogue[98] = ">the strand we were looking for wasn't anywhere to be found.";
 dialogue[99] = "#Shame, you to were looking forward to it...";

@@ -1823,7 +1823,7 @@ if (global.drawMission && !global.pause) {
 			draw_text(global.xScreenSize / 2, 8, "Mission - Find and Execute Target in Senzela Forest");
 		}
 	}
-	if (global.storyAct == 1) {
+	if (global.storyAct == 1 && global.firstmeetingDialogue) {
 		if (room == level_Casino || room == level_CasinoRoof || room == level_DiningHall || room == level_Basement) {
 			draw_set_halign(fa_center);
 			draw_set_font(gothicPixel_fnt);
