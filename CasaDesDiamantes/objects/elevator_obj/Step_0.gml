@@ -137,4 +137,11 @@ if (elevatorTimer < 0 && used) {
 		room_goto(level_DiningHall);
 		used = false;
 	}
+	if (target == 6) {
+		part_emitter_destroy_all(global.partSystem);
+		instance_destroy(player_obj);
+		global.spawn = 0;
+		room_goto(level_Basement);
+		used = false;
+	}
 }

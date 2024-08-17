@@ -40,6 +40,9 @@ if (camera_obj.drawText) {
 	if (instance_exists(komo2_obj)) {
 		draw_sprite_ext(komoBackground_spr, 0, komo2_obj.x, komo2_obj.y, 1, 1, backgroundRotVal, -1, 1);
 	}
+	if (instance_exists(komo3_obj)) {
+		draw_sprite_ext(komoBackground_spr, 0, komo3_obj.x, komo3_obj.y, 1, 1, backgroundRotVal, -1, 1);
+	}
 	if (instance_exists(tristram2_obj)) {
 		draw_sprite_ext(tristramBackground_spr, 0, tristram2_obj.x, tristram2_obj.y, 1, 1, backgroundRotVal, -1, 1);
 	}

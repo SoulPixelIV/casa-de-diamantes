@@ -20,6 +20,7 @@ scene16 = false;
 scene17 = false;
 scene18 = false;
 scene19 = false;
+scene20 = false;
 
 //Dialogue Markers
 scene1Low = 0;
@@ -60,6 +61,8 @@ scene18Low = 95;
 scene18High = 112;
 scene19Low = 113;
 scene19High = 138;
+scene20Low = 139;
+scene20High = 166;
 
 //Dialogue Text
 //!!!ALWAYS 1 FREE SPACE BETWEEN SCENES
@@ -340,3 +343,37 @@ dialogue[135] = "$We hoped to keep it's integrity for longer than three days.";
 dialogue[136] = "_...fair";
 dialogue[137] = " ";
 dialogue[138] = "";
+
+//Scene 20 Komo Basement
+startScene20BlackTimer = false;
+scene20BlackTimer = 400;
+startScene20Timer = false;
+
+dialogue[139] = "#Hey Ko-";
+dialogue[140] = ">STEPH! Stop sneaking like that!!";
+dialogue[141] = "#I wasn't!";
+dialogue[142] = "#You couldn't hear my loud stomping because of your punching.";
+dialogue[143] = "#You always jab in the same rhythm as your walk.";
+dialogue[144] = "#And we have the same walking speed.";
+dialogue[145] = "#You need to get in some delayed hooks more often, keeps your opponent guessing.";
+dialogue[146] = ">You're right, there's still a lot on my mind.";
+dialogue[147] = ">So give me a while to get back in my flow.";
+dialogue[148] = ">Punching's the one thing i'm good at and-";
+dialogue[149] = "#You don't have to.";
+dialogue[150] = ">I do, I do have to punch. It's why I'm here.";
+dialogue[151] = "#Prove it, I mean.";
+dialogue[152] = "#Your worth, we know it.";
+dialogue[153] = "#and you're more than that.";
+dialogue[154] = ">Steph. I would never think you guys would leave me or anything like that.";
+dialogue[155] = ">There's something else.";
+dialogue[156] = "#I think SHE is thinking of abandoning us.";
+dialogue[157] = "#It's the chemicals.";
+dialogue[158] = "#We are HER children, and HER best.";
+dialogue[159] = "#I haven't a clue what you mean but you probably misinterpreted something.";
+dialogue[160] = "#It's a fragile way of communication after all.";
+dialogue[161] = ">You're right. Still, I've got much work to do.";
+dialogue[162] = ">I'll have to set up this whole basement and I gotta get to it soon.";
+dialogue[163] = ">We'll talk later if that's fine.";
+dialogue[164] = "That's fine. See ya!";
+dialogue[165] = " ";
+dialogue[166] = "";

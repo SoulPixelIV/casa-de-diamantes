@@ -205,6 +205,10 @@ if (string_char_at(dialogue[dialogueLine], 1) == ">")
 		character = komo2_obj;
 		follow = komo2_obj;
 	}
+	if (instance_exists(komo3_obj)) {
+		character = komo3_obj;
+		follow = komo3_obj;
+	}
 }
 if (string_char_at(dialogue[dialogueLine], 1) == "_")
 {
@@ -286,7 +290,7 @@ if (drawText && !showWindowMenu)
 			draw_sprite_ext(dialogBorder_spr, 0, (cindy3_obj.x - x) + global.xScreenSize / 2, (cindy3_obj.y - y) - 42 + global.yScreenSize / 2, 2 + string_length(dialogueStripped) / 3, 1.5, 0, make_color_rgb(91, 204, 151), 1);
 		} else if (character == tristram_obj || character == tristram2_obj) {
 			draw_sprite_ext(dialogBorder_spr, 0, (character.x - x) + global.xScreenSize / 2, (character.y - y) - 42 + global.yScreenSize / 2, 2 + string_length(dialogueStripped) / 3, 1.5, 0, make_color_rgb(198, 204, 99), 1);
-		} else if (character == komo_obj || character == komo2_obj) {
+		} else if (character == komo_obj || character == komo2_obj || character == komo3_obj) {
 			draw_sprite_ext(dialogBorder_spr, 0, (character.x - x) + global.xScreenSize / 2, (character.y - y) - 42 + global.yScreenSize / 2, 2 + string_length(dialogueStripped) / 3, 1.5, 0, make_color_rgb(127, 172, 255), 1);
 		}
 	
@@ -534,7 +538,44 @@ if (drawText && !showWindowMenu)
 				dialogueSystem_obj.scene17Timer = 0;
 			}
 			if (dialogueSystem_obj.startScene18Timer) {
-				dialogueSystem_obj.scene18Timer = 0;
+				//REMOVE NPCS
+				if (instance_exists(komo_obj)) {
+					instance_destroy(komo_obj);
+				}
+				if (instance_exists(tristram_obj)) {
+					instance_destroy(tristram_obj);
+				}
+				player_obj.movement = true;
+				camera_obj.drawBlackborders = false;
+				camera_obj.drawText = false;
+				startScene18Timer = false;
+				inCutscene = false;
+				camera_obj.follow = player_obj;
+				global.firstmeetingDialogue = true;
+				camera_obj.drawDialogueBorder = false;
+				save_scr();
+			}
+			if (dialogueSystem_obj.startScene19Timer) {
+				player_obj.movement = true;
+				camera_obj.drawBlackborders = false;
+				camera_obj.drawText = false;
+				startScene19Timer = false;
+				inCutscene = false;
+				camera_obj.follow = player_obj;
+				global.dinnerDialogue = true;
+				camera_obj.drawDialogueBorder = false;
+				save_scr();
+			}
+			if (dialogueSystem_obj.startScene20Timer) {
+				player_obj.movement = true;
+				camera_obj.drawBlackborders = false;
+				camera_obj.drawText = false;
+				startScene20Timer = false;
+				inCutscene = false;
+				camera_obj.follow = player_obj;
+				global.firstmeetingDialogue = true;
+				camera_obj.drawDialogueBorder = false;
+				save_scr();
 			}
 		}
 	}
@@ -1563,6 +1604,7 @@ if (drawElevatorSign) {
 		elevatorButton2 = instance_create_layer(x, y, "Instances", elevatorSelectMenuButton2_obj);
 		elevatorButton3 = instance_create_layer(x, y, "Instances", elevatorSelectMenuButton3_obj);
 		elevatorButton4 = instance_create_layer(x, y, "Instances", elevatorSelectMenuButton4_obj);
+		elevatorButton5 = instance_create_layer(x, y, "Instances", elevatorSelectMenuButton5_obj);
 		createdElevatorSignButtons = true;
 	}
 	if (instance_exists(elevatorButton1)) {
@@ -1581,6 +1623,10 @@ if (drawElevatorSign) {
 		elevatorButton4.x = x;
 		elevatorButton4.y = y;
 	}
+	if (instance_exists(elevatorButton5)) {
+		elevatorButton5.x = x;
+		elevatorButton5.y = y;
+	}
 	
 	if (elevatorButton1.hover) {
 		draw_sprite(elevatorSelectMenu_spr, 1, global.xScreenSize / 2, (global.yScreenSize / 2) + windowMenuOffset);
@@ -1594,7 +1640,10 @@ if (drawElevatorSign) {
 	if (elevatorButton4.hover) {
 		draw_sprite(elevatorSelectMenu_spr, 4, global.xScreenSize / 2, (global.yScreenSize / 2) + windowMenuOffset);
 	}
-	if (!elevatorButton1.hover && !elevatorButton2.hover && !elevatorButton3.hover && !elevatorButton4.hover) {
+	if (elevatorButton5.hover) {
+		draw_sprite(elevatorSelectMenu_spr, 5, global.xScreenSize / 2, (global.yScreenSize / 2) + windowMenuOffset);
+	}
+	if (!elevatorButton1.hover && !elevatorButton2.hover && !elevatorButton3.hover && !elevatorButton4.hover && !elevatorButton5.hover) {
 		draw_sprite(elevatorSelectMenu_spr, 0, global.xScreenSize / 2, (global.yScreenSize / 2) + windowMenuOffset);
 	}
 	
@@ -1604,6 +1653,9 @@ if (drawElevatorSign) {
 	}
 	if (room == level_DiningHall) {
 		draw_sprite(elevatorHereMarker_spr, 2, global.xScreenSize / 2, (global.yScreenSize / 2) + windowMenuOffset);
+	}
+	if (room == level_Basement) {
+		draw_sprite(elevatorHereMarker_spr, 6, global.xScreenSize / 2, (global.yScreenSize / 2) + windowMenuOffset);
 	}
 	if (room == level_Casino) {
 		with (player_obj) {

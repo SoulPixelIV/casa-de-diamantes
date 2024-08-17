@@ -668,7 +668,7 @@ if (scene18) {
 }
 
 if (startScene18Timer) {
-	if (camera_obj.dialogueLine == scene18High - 1) {
+	if (camera_obj.dialogueLine >= scene18High - 2) {
 		if (!startScene18BlackTimer) {
 			camera_obj.blackscreenStrength += global.dt;
 		}
@@ -694,6 +694,8 @@ if (startScene18Timer) {
 				if (camera_obj.blackscreenStrength < 0.05) {
 					player_obj.movement = true;
 					camera_obj.drawBlackborders = false;
+					camera_obj.drawText = false;
+					dialogueSystem_obj.inCutscene = false;
 					startScene18Timer = false;
 					inCutscene = false;
 					camera_obj.follow = player_obj;
@@ -724,7 +726,7 @@ if (scene19) {
 }
 
 if (startScene19Timer) {
-	if (camera_obj.dialogueLine == scene19High - 1) {
+	if (camera_obj.dialogueLine >= scene19High - 2) {
 		if (!startScene19BlackTimer) {
 			camera_obj.blackscreenStrength += global.dt;
 		}
@@ -747,10 +749,62 @@ if (startScene19Timer) {
 				if (camera_obj.blackscreenStrength < 0.05) {
 					player_obj.movement = true;
 					camera_obj.drawBlackborders = false;
+					camera_obj.drawText = false;
+					dialogueSystem_obj.inCutscene = false;
 					startScene19Timer = false;
 					inCutscene = false;
 					camera_obj.follow = player_obj;
 					global.dinnerDialogue = true;
+					camera_obj.drawDialogueBorder = false;
+					save_scr();
+				}
+			}
+		}
+	}
+}
+
+//Scene 20
+if (scene20) {
+	inCutscene = true;
+	startScene20Timer = true;
+	camera_obj.drawDialogueBorder = true;
+	if (!camera_obj.drawText)
+	{
+		for (i = scene20Low; i < scene20High + 1; i++)
+		{
+			camera_obj.dialogue[i] = dialogue[i];
+		}
+		camera_obj.dialogueLine = scene20Low;
+		camera_obj.drawText = true;
+	}
+	scene20 = false;
+}
+
+if (startScene20Timer) {
+	if (camera_obj.dialogueLine >= scene20High - 2) {
+		if (!startScene20BlackTimer) {
+			camera_obj.blackscreenStrength += global.dt;
+		}
+		
+		if (camera_obj.blackscreenStrength > 0.98) {
+			startScene20BlackTimer = true;
+			camera_obj.drawBlackborders = false;
+		}
+		
+		if (startScene20BlackTimer) {
+			scene20BlackTimer -= global.dt * camera_obj.textSpeed;
+			if (scene20BlackTimer < 0) {
+				camera_obj.blackscreenStrength -= global.dt;
+				
+				if (camera_obj.blackscreenStrength < 0.05) {
+					player_obj.movement = true;
+					camera_obj.drawBlackborders = false;
+					camera_obj.drawText = false;
+					dialogueSystem_obj.inCutscene = false;
+					startScene20Timer = false;
+					inCutscene = false;
+					camera_obj.follow = player_obj;
+					global.firstmeetingDialogue = true;
 					camera_obj.drawDialogueBorder = false;
 					save_scr();
 				}
