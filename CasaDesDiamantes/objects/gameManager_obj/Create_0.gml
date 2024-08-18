@@ -132,6 +132,7 @@ global.introDialogueOutOfRoomDone = false;
 global.firstmeetingDialogue = false;
 global.dinnerDialogue = false;
 global.komoBasementDialogue = false;
+global.tristramDialogue = false;
 global.cupyDialogue1Done = false;
 global.cupyDialogue2Done = false;
 global.cupyDialogue3Done = false;

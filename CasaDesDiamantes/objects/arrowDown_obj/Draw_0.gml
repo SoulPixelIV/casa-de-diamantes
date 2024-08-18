@@ -41,4 +41,13 @@ if (storyAct == 1) {
 			instance_destroy();
 		}
 	}
+	
+	if (arrowNumber == 2) {
+		if (global.tristramDialogue) {
+			instance_destroy();
+		}
+		if (!global.firstmeetingDialogue) {
+			instance_destroy();
+		}
+	}
 }

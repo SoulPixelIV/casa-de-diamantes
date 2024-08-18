@@ -30,7 +30,3 @@ if (global.spawn == 7)
 {
 	instance_create_layer(Spawn8_obj.x, Spawn8_obj.y, "Instances", player_obj);
 }
-if (global.spawn == 8)
-{
-	instance_create_layer(Spawn9_obj.x, Spawn9_obj.y, "Instances", player_obj);
-}
