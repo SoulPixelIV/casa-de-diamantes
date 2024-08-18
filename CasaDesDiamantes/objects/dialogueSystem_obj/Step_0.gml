@@ -812,3 +812,106 @@ if (startScene20Timer) {
 		}
 	}
 }
+
+//Scene 21
+if (scene21) {
+	inCutscene = true;
+	startScene21Timer = true;
+	camera_obj.drawDialogueBorder = true;
+	if (!camera_obj.drawText)
+	{
+		for (i = scene21Low; i < scene21High + 1; i++)
+		{
+			camera_obj.dialogue[i] = dialogue[i];
+		}
+		camera_obj.dialogueLine = scene21Low;
+		camera_obj.drawText = true;
+	}
+	scene21 = false;
+}
+
+if (startScene21Timer) {
+	if (camera_obj.dialogueLine >= scene21High - 1) {
+		if (!startScene21BlackTimer) {
+			camera_obj.blackscreenStrength += global.dt;
+		}
+		
+		if (camera_obj.blackscreenStrength > 0.98) {
+			startScene21BlackTimer = true;
+			camera_obj.drawBlackborders = false;
+		}
+		
+		if (startScene21BlackTimer) {
+			scene21BlackTimer -= global.dt;
+			if (scene21BlackTimer < 0) {
+				camera_obj.blackscreenStrength -= global.dt;
+				
+				if (camera_obj.blackscreenStrength < 0.05) {
+					if (instance_exists(tristram3_obj)) {
+						tristram3_obj.sprite_index = tristram_spr;
+						tristram3_obj.image_xscale = -1;
+					}
+					player_obj.movement = true;
+					camera_obj.drawBlackborders = false;
+					camera_obj.drawText = false;
+					dialogueSystem_obj.inCutscene = false;
+					startScene21Timer = false;
+					inCutscene = false;
+					camera_obj.follow = player_obj;
+					camera_obj.drawDialogueBorder = false;
+					scene22 = true;
+				}
+			}
+		}
+	}
+}
+
+//Scene 22
+if (scene22) {
+	inCutscene = true;
+	startScene22Timer = true;
+	camera_obj.drawDialogueBorder = true;
+	if (!camera_obj.drawText)
+	{
+		for (i = scene22Low; i < scene22High + 1; i++)
+		{
+			camera_obj.dialogue[i] = dialogue[i];
+		}
+		camera_obj.dialogueLine = scene22Low;
+		camera_obj.drawText = true;
+	}
+	scene22 = false;
+}
+
+if (startScene22Timer) {
+	if (camera_obj.dialogueLine >= scene22High - 1) {
+		if (!startScene22BlackTimer) {
+			camera_obj.blackscreenStrength += global.dt;
+		}
+		
+		if (camera_obj.blackscreenStrength > 0.98) {
+			startScene22BlackTimer = true;
+			camera_obj.drawBlackborders = false;
+		}
+		
+		if (startScene22BlackTimer) {
+			scene22BlackTimer -= global.dt;
+			if (scene22BlackTimer < 0) {
+				camera_obj.blackscreenStrength -= global.dt;
+				
+				if (camera_obj.blackscreenStrength < 0.05) {
+					player_obj.movement = true;
+					camera_obj.drawBlackborders = false;
+					camera_obj.drawText = false;
+					dialogueSystem_obj.inCutscene = false;
+					startScene22Timer = false;
+					inCutscene = false;
+					camera_obj.follow = player_obj;
+					global.tristramDialogue = true;
+					camera_obj.drawDialogueBorder = false;
+					save_scr();
+				}
+			}
+		}
+	}
+}

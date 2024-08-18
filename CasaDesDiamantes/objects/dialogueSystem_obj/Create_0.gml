@@ -21,6 +21,8 @@ scene17 = false;
 scene18 = false;
 scene19 = false;
 scene20 = false;
+scene21 = false;
+scene22 = false;
 
 //Dialogue Markers
 scene1Low = 0;
@@ -63,9 +65,13 @@ scene19Low = 113;
 scene19High = 138;
 scene20Low = 139;
 scene20High = 166;
+scene21Low = 167;
+scene21High = 169;
+scene22Low = 170;
+scene22High = 194;
 
 //Dialogue Text
-//!!!ALWAYS 1 FREE SPACE BETWEEN SCENES
+//!!!ALWAYS 1 EMPTY SPACE & 1 FREE SPACE BETWEEN SCENES
 // # = Steph
 // @ = 
 // $ = Cindy
@@ -75,6 +81,7 @@ scene20High = 166;
 // ; = Tristram
 // _ = Komo+Tristram
 // } = Steph+Cindy
+// { = Steph+Tristram
 // % = Cutie-Plus
 // ] = Bartender
 // [ = Bunnygirl
@@ -377,3 +384,43 @@ dialogue[163] = ">We'll talk later if that's fine.";
 dialogue[164] = "That's fine. See ya!";
 dialogue[165] = "                                                                                                             ";
 dialogue[166] = "";
+
+//Scene 21 Tristram Shirtless Dialogue
+startScene21BlackTimer = false;
+scene21BlackTimer = 400;
+startScene21Timer = false;
+
+dialogue[167] = "#New ink? Didn't know you liked lizards that much.";
+dialogue[168] = "                                                                                                             ";
+dialogue[169] = "";
+
+//Scene 22 Tristram Dialogue
+startScene22BlackTimer = false;
+scene22BlackTimer = 400;
+startScene22Timer = false;
+
+dialogue[170] = ";What do you mean, you're all my favorite people.";
+dialogue[171] = ";Your cold blood hasn't deterred me.";
+dialogue[172] = "#That's low.";
+dialogue[173] = ";No ill intent here.";
+dialogue[174] = ";I guess our condition is hard on you?";
+dialogue[175] = "#Feels weird is all.";
+dialogue[176] = "#What's with that tattoo though?";
+dialogue[177] = ";It's a dragon.";
+dialogue[178] = "#Doesn't look much like one.";
+dialogue[179] = ";A komodo dragon. Designed it myself.";
+dialogue[180] = "#What a coincidence.";
+dialogue[181] = ";It's not. I designed it for her originally.";
+dialogue[182] = "#But-";
+dialogue[183] = ";She wanted that tat but you know how our komo is, scared of needles and all.";
+dialogue[184] = ";Chickened out in the end.";
+dialogue[185] = "#You got it in her place...";
+dialogue[186] = ";A lot of effort went into it-";
+dialogue[187] = "#And a lot of blood, sweat and tears.";
+dialogue[188] = ";...";
+dialogue[189] = "#I like it. She would too. Show it to her.";
+dialogue[190] = ";How did you-";
+dialogue[191] = "#She would have told me before.";
+dialogue[192] = "{haha";
+dialogue[193] = "                                                                                                             ";
+dialogue[194] = "";

@@ -194,6 +194,10 @@ if (string_char_at(dialogue[dialogueLine], 1) == ";")
 		character = tristram2_obj;
 		follow = tristram2_obj;
 	}
+	if (instance_exists(tristram3_obj)) {
+		character = tristram3_obj;
+		follow = tristram3_obj;
+	}
 }
 if (string_char_at(dialogue[dialogueLine], 1) == ">")
 {
@@ -222,6 +226,10 @@ if (string_char_at(dialogue[dialogueLine], 1) == "_")
 if (string_char_at(dialogue[dialogueLine], 1) == "}")
 {
 	character = mannequin_obj;
+}
+if (string_char_at(dialogue[dialogueLine], 1) == "{")
+{
+	character = casinoCandleLight_obj;
 }
 
 //Windows
@@ -288,7 +296,10 @@ if (drawText && !showWindowMenu)
 		} else if (character == mannequin_obj) {
 			draw_sprite_ext(dialogBorder_spr, 0, (player_obj.x - x) + global.xScreenSize / 2, (player_obj.y - y) - 42 + global.yScreenSize / 2, 2 + string_length(dialogueStripped) / 3, 1.5, 0, make_color_rgb(229, 171, 113), 1);
 			draw_sprite_ext(dialogBorder_spr, 0, (cindy3_obj.x - x) + global.xScreenSize / 2, (cindy3_obj.y - y) - 42 + global.yScreenSize / 2, 2 + string_length(dialogueStripped) / 3, 1.5, 0, make_color_rgb(91, 204, 151), 1);
-		} else if (character == tristram_obj || character == tristram2_obj) {
+		} else if (character == casinoCandleLight_obj) {
+			draw_sprite_ext(dialogBorder_spr, 0, (player_obj.x - x) + global.xScreenSize / 2, (player_obj.y - y) - 42 + global.yScreenSize / 2, 2 + string_length(dialogueStripped) / 3, 1.5, 0, make_color_rgb(229, 171, 113), 1);
+			draw_sprite_ext(dialogBorder_spr, 0, (tristram3_obj.x - x) + global.xScreenSize / 2, (tristram3_obj.y - y) - 42 + global.yScreenSize / 2, 2 + string_length(dialogueStripped) / 3, 1.5, 0, make_color_rgb(91, 204, 151), 1);
+		} else if (character == tristram_obj || character == tristram2_obj || character == tristram3_obj) {
 			draw_sprite_ext(dialogBorder_spr, 0, (character.x - x) + global.xScreenSize / 2, (character.y - y) - 42 + global.yScreenSize / 2, 2 + string_length(dialogueStripped) / 3, 1.5, 0, make_color_rgb(198, 204, 99), 1);
 		} else if (character == komo_obj || character == komo2_obj || character == komo3_obj) {
 			draw_sprite_ext(dialogBorder_spr, 0, (character.x - x) + global.xScreenSize / 2, (character.y - y) - 42 + global.yScreenSize / 2, 2 + string_length(dialogueStripped) / 3, 1.5, 0, make_color_rgb(127, 172, 255), 1);
@@ -338,6 +349,18 @@ if (drawText && !showWindowMenu)
 			draw_text((cindy3_obj.x - x) + global.xScreenSize / 2 - 1, (cindy3_obj.y - y) - 46 + 1 + global.yScreenSize / 2, string_copy(dialogueStripped, 1, string_length(dialogue[dialogueLine])));
 			draw_set_color(make_color_rgb(255, 215, 0));
 			draw_text((cindy3_obj.x - x) + global.xScreenSize / 2, (cindy3_obj.y - y) - 46 + global.yScreenSize / 2, string_copy(dialogueStripped, 1, string_length(dialogue[dialogueLine])));
+			draw_set_halign(fa_left);
+		} else if (character == casinoCandleLight_obj) {
+			draw_text((player_obj.x - x) + global.xScreenSize / 2 - 1, (player_obj.y - y) - 46 + 1 + global.yScreenSize / 2, string_copy(dialogueStripped, 1, string_length(dialogue[dialogueLine])));
+			draw_set_color(make_color_rgb(255, 215, 0));
+			draw_text((player_obj.x - x) + global.xScreenSize / 2, (player_obj.y - y) - 46 + global.yScreenSize / 2, string_copy(dialogueStripped, 1, string_length(dialogue[dialogueLine])));
+			draw_set_halign(fa_left);
+			
+			draw_set_halign(fa_center);
+			draw_set_color(c_black);
+			draw_text((tristram3_obj.x - x) + global.xScreenSize / 2 - 1, (tristram3_obj.y - y) - 46 + 1 + global.yScreenSize / 2, string_copy(dialogueStripped, 1, string_length(dialogue[dialogueLine])));
+			draw_set_color(make_color_rgb(255, 215, 0));
+			draw_text((tristram3_obj.x - x) + global.xScreenSize / 2, (tristram3_obj.y - y) - 46 + global.yScreenSize / 2, string_copy(dialogueStripped, 1, string_length(dialogue[dialogueLine])));
 			draw_set_halign(fa_left);
 		} else {
 			draw_text((character.x - x) + global.xScreenSize / 2 - 1, (character.y - y) - 46 + 1 + global.yScreenSize / 2, string_copy(dialogueStripped, 1, string_length(dialogue[dialogueLine])));
@@ -1824,7 +1847,7 @@ if (global.drawMission && !global.pause) {
 		}
 	}
 	if (global.storyAct == 1 && global.firstmeetingDialogue) {
-		if (room == level_Casino || room == level_CasinoRoof || room == level_DiningHall || room == level_Basement) {
+		if (room == level_Casino || room == level_CasinoRoof || room == level_DiningHall || room == level_Basement || room == level_TristramRoom) {
 			draw_set_halign(fa_center);
 			draw_set_font(gothicPixel_fnt);
 			draw_set_color(c_black);

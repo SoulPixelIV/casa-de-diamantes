@@ -1089,7 +1089,7 @@ if (shootingAllowed && !global.pause) {
 					{
 						if (!onLadder || onLadder && verspeed == 0)
 						{
-							if (room == level_Casino || room == level_CasinoRoof || room == level_DiningHall || room == level_Basement) {
+							if (room == level_Casino || room == level_CasinoRoof || room == level_DiningHall || room == level_Basement || room == level_TristramRoom) {
 								camera_obj.showWeaponProhibited = true;
 							} else {
 								shooting_scr("pistol");
@@ -1112,7 +1112,7 @@ if (shootingAllowed && !global.pause) {
 					{
 						if (!onLadder || onLadder && verspeed == 0)
 						{
-							if (room == level_Casino || room == level_CasinoRoof || room == level_DiningHall || room == level_Basement) {
+							if (room == level_Casino || room == level_CasinoRoof || room == level_DiningHall || room == level_Basement || room == level_TristramRoom) {
 								camera_obj.showWeaponProhibited = true;
 							} else {
 								if (global.pistolAmmo > 0) {
@@ -1142,7 +1142,7 @@ if (shootingAllowed && !global.pause) {
 					{
 						if (!onLadder || onLadder && verspeed == 0)
 						{
-							if (room == level_Casino || room == level_CasinoRoof || room == level_DiningHall || room == level_Basement) {
+							if (room == level_Casino || room == level_CasinoRoof || room == level_DiningHall || room == level_Basement || room == level_TristramRoom) {
 								camera_obj.showWeaponProhibited = true;
 							} else {
 								if (global.shotgunAmmo > 0) {
@@ -1189,7 +1189,7 @@ if (shootingAllowed && !global.pause) {
 					{
 						if (!onLadder || onLadder && verspeed == 0)
 						{
-							if (room == level_Casino || room == level_CasinoRoof || room == level_DiningHall || room == level_Basement) {
+							if (room == level_Casino || room == level_CasinoRoof || room == level_DiningHall || room == level_Basement || room == level_TristramRoom) {
 								camera_obj.showWeaponProhibited = true;
 							} else {
 								if (global.silencedMPAmmo > 0) {
@@ -1219,7 +1219,7 @@ if (shootingAllowed && !global.pause) {
 					{
 						if (!onLadder || onLadder && verspeed == 0)
 						{
-							if (room == level_Casino || room == level_CasinoRoof || room == level_DiningHall || room == level_Basement) {
+							if (room == level_Casino || room == level_CasinoRoof || room == level_DiningHall || room == level_Basement || room == level_TristramRoom) {
 								camera_obj.showWeaponProhibited = true;
 							} else {
 								if (global.bowAmmo > 0) {

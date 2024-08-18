@@ -46,6 +46,9 @@ if (camera_obj.drawText) {
 	if (instance_exists(tristram2_obj)) {
 		draw_sprite_ext(tristramBackground_spr, 0, tristram2_obj.x, tristram2_obj.y, 1, 1, backgroundRotVal, -1, 1);
 	}
+	if (instance_exists(tristram3_obj)) {
+		draw_sprite_ext(tristramBackground_spr, 0, tristram3_obj.x, tristram3_obj.y, 1, 1, backgroundRotVal, -1, 1);
+	}
 	if (instance_exists(vip_obj)) {
 		draw_sprite_ext(VIPBackground_spr, 0, vip_obj.x, vip_obj.y, 1, 1, backgroundRotVal, -1, 1);
 	}
