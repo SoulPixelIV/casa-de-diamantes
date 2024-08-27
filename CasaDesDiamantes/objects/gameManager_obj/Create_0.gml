@@ -130,6 +130,7 @@ global.introDialogueCindyDone = false;
 global.introDialogueVIPDone = false;
 global.introDialogueOutOfRoomDone = false;
 global.firstmeetingDialogue = false;
+global.meeting2Dialogue = false;
 global.dinnerDialogue = false;
 global.komoBasementDialogue = false;
 global.tristramDialogue = false;

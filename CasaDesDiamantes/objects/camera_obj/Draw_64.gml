@@ -135,6 +135,10 @@ if (string_char_at(dialogue[dialogueLine], 1) == "$")
 		character = cindy_obj;
 		follow = cindy_obj;
 	}
+	if (instance_exists(cindy3_obj)) {
+		character = cindy3_obj;
+		follow = cindy3_obj;
+	}
 	if (instance_exists(cindy4_obj)) {
 		character = cindy4_obj;
 		follow = cindy4_obj;

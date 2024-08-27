@@ -757,6 +757,7 @@ if (startScene19Timer) {
 					global.dinnerDialogue = true;
 					camera_obj.drawDialogueBorder = false;
 					save_scr();
+					room_restart();
 				}
 			}
 		}
