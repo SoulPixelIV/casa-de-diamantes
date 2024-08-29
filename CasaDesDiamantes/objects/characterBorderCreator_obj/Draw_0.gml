@@ -31,6 +31,9 @@ if (camera_obj.drawText) {
 	if (instance_exists(cindy4_obj)) {
 		draw_sprite_ext(cindyBackground_spr, 0, cindy4_obj.x, cindy4_obj.y, 1, 1, backgroundRotVal, -1, 1);
 	}
+	if (instance_exists(cindy5_obj)) {
+		draw_sprite_ext(cindyBackground_spr, 0, cindy5_obj.x, cindy5_obj.y, 1, 1, backgroundRotVal, -1, 1);
+	}
 	if (instance_exists(komo_obj)) {
 		draw_sprite_ext(komoBackground_spr, 0, komo_obj.x, komo_obj.y, 1, 1, backgroundRotVal, -1, 1);
 	}
@@ -43,11 +46,17 @@ if (camera_obj.drawText) {
 	if (instance_exists(komo3_obj)) {
 		draw_sprite_ext(komoBackground_spr, 0, komo3_obj.x, komo3_obj.y, 1, 1, backgroundRotVal, -1, 1);
 	}
+	if (instance_exists(komo4_obj)) {
+		draw_sprite_ext(komoBackground_spr, 0, komo4_obj.x, komo4_obj.y, 1, 1, backgroundRotVal, -1, 1);
+	}
 	if (instance_exists(tristram2_obj)) {
 		draw_sprite_ext(tristramBackground_spr, 0, tristram2_obj.x, tristram2_obj.y, 1, 1, backgroundRotVal, -1, 1);
 	}
 	if (instance_exists(tristram3_obj)) {
 		draw_sprite_ext(tristramBackground_spr, 0, tristram3_obj.x, tristram3_obj.y, 1, 1, backgroundRotVal, -1, 1);
+	}
+	if (instance_exists(tristram4_obj)) {
+		draw_sprite_ext(tristramBackground_spr, 0, tristram4_obj.x, tristram4_obj.y, 1, 1, backgroundRotVal, -1, 1);
 	}
 	if (instance_exists(vip_obj)) {
 		draw_sprite_ext(VIPBackground_spr, 0, vip_obj.x, vip_obj.y, 1, 1, backgroundRotVal, -1, 1);

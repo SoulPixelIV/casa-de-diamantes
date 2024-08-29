@@ -184,14 +184,19 @@ if (scene6)
 	scene6 = false;
 }
 if (startScene6Timer) {
-	scene6Timer -= global.dt * camera_obj.textSpeed;
-	
-	if (scene6Timer < 0) {
-		scene6Timer = scene6TimerSave;
+	if (camera_obj.dialogueLine >= scene6High) {
 		startScene6Timer = false;
 		camera_obj.follow = player_obj;
-		cindy2_obj.introDialogueDone = true;
-		cindy2_obj.dialogueTriggered = false;
+		if (instance_exists(cindy2_obj)) {
+			cindy2_obj.introDialogueDone = true;
+			cindy2_obj.dialogueTriggered = false;
+		}
+		if (instance_exists(cindy3_obj)) {
+			cindy3_obj.dialogueTriggered = false;
+		}
+		if (instance_exists(cindy5_obj)) {
+			cindy5_obj.dialogueTriggered = false;
+		}
 		camera_obj.drawDialogueBorder = false;
 	}
 }
@@ -909,6 +914,56 @@ if (startScene22Timer) {
 					inCutscene = false;
 					camera_obj.follow = player_obj;
 					global.tristramDialogue = true;
+					camera_obj.drawDialogueBorder = false;
+					save_scr();
+				}
+			}
+		}
+	}
+}
+
+//Scene 23
+if (scene23) {
+	inCutscene = true;
+	startScene23Timer = true;
+	camera_obj.drawDialogueBorder = true;
+	if (!camera_obj.drawText)
+	{
+		for (i = scene23Low; i < scene23High + 1; i++)
+		{
+			camera_obj.dialogue[i] = dialogue[i];
+		}
+		camera_obj.dialogueLine = scene23Low;
+		camera_obj.drawText = true;
+	}
+	scene23 = false;
+}
+
+if (startScene23Timer) {
+	if (camera_obj.dialogueLine >= scene23High - 1) {
+		if (!startScene23BlackTimer) {
+			camera_obj.blackscreenStrength += global.dt;
+		}
+		
+		if (camera_obj.blackscreenStrength > 0.98) {
+			startScene23BlackTimer = true;
+			camera_obj.drawBlackborders = false;
+		}
+		
+		if (startScene23BlackTimer) {
+			scene23BlackTimer -= global.dt;
+			if (scene23BlackTimer < 0) {
+				camera_obj.blackscreenStrength -= global.dt;
+				
+				if (camera_obj.blackscreenStrength < 0.05) {
+					player_obj.movement = true;
+					camera_obj.drawBlackborders = false;
+					camera_obj.drawText = false;
+					dialogueSystem_obj.inCutscene = false;
+					startScene23Timer = false;
+					inCutscene = false;
+					camera_obj.follow = player_obj;
+					global.meeting2Dialogue = true;
 					camera_obj.drawDialogueBorder = false;
 					save_scr();
 				}

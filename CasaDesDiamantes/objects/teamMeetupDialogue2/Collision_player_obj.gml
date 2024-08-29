@@ -1,6 +1,6 @@
 /// @description Check Player
 
-if (global.firstmeetingDialogue) {
+if (global.dinnerDialogue) {
 	if (instance_exists(player_obj) && !global.dialogueDelayStart && !global.meeting2Dialogue) {
 		if (!global.pause && !dialogueTriggered && player_obj.grounded) {
 			global.dialogueDelayStart = true;
