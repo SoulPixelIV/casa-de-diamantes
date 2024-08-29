@@ -307,6 +307,7 @@
     {"name":"inst_280A0FA4","path":"rooms/level_Casino/level_Casino.yy",},
     {"name":"inst_3B8290AB","path":"rooms/level_Casino/level_Casino.yy",},
     {"name":"inst_3856CA00","path":"rooms/level_Casino/level_Casino.yy",},
+    {"name":"inst_4EE5EAC8","path":"rooms/level_Casino/level_Casino.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -599,6 +600,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_2F7AB538","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"casinoLightbar_obj","path":"objects/casinoLightbar_obj/casinoLightbar_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1176.0,"y":4160.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_E905BF6","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"casinoLantern_obj","path":"objects/casinoLantern_obj/casinoLantern_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1170.0,"y":4226.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_3A08B062","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"casinoLantern_obj","path":"objects/casinoLantern_obj/casinoLantern_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1102.0,"y":4226.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_4EE5EAC8","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"projection_obj","path":"objects/projection_obj/projection_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":961.0,"y":4221.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"BackgroundObjects2","depth":1700,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_64F4C3B4","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"casinoLightbar_obj","path":"objects/casinoLightbar_obj/casinoLightbar_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":407.0,"y":1336.0,},
