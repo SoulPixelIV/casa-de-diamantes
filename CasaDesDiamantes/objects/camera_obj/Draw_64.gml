@@ -605,6 +605,11 @@ if (drawText && !showWindowMenu)
 			}
 			if (dialogueSystem_obj.startScene21Timer) {
 				dialogueLine = dialogueSystem_obj.scene21High - 1;
+				dialogueSystem_obj.phase2 = true;
+				if (instance_exists(tristram3_obj)) {
+					tristram3_obj.sprite_index = tristram_spr;
+					tristram3_obj.image_xscale = -1;
+				}
 			}
 			if (dialogueSystem_obj.startScene22Timer) {
 				dialogueLine = dialogueSystem_obj.scene22High - 1;
@@ -614,6 +619,9 @@ if (drawText && !showWindowMenu)
 			}
 		}
 	}
+} else {
+	textDelay = 400;
+	dialogueLine = 0;
 }
 
 //Draw Tutorials

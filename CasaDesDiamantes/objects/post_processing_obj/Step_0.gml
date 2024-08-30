@@ -10,7 +10,7 @@ if (ppfx_system_exists(ppfx_id)) {
 			ppfx_id.ProfileLoad(credits_profile);
 		} else if (room == worldmap) {
 			ppfx_id.ProfileLoad(overworld_profile);
-		} else if (room == level_Casino || room == level_DiningHall) {
+		} else if (room == level_Casino || room == level_DiningHall || room == level_TristramRoom) {
 			ppfx_id.ProfileLoad(casino_profile);
 		} else if (room == level_CasinoRoof) {
 			ppfx_id.ProfileLoad(act1_profile);

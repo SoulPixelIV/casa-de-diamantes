@@ -67,7 +67,7 @@ scene19High = 138;
 scene20Low = 139;
 scene20High = 166;
 scene21Low = 167;
-scene21High = 169;
+scene21High = 194;
 scene22Low = 170;
 scene22High = 195;
 scene23Low = 196;
@@ -388,44 +388,44 @@ dialogue[166] = "";
 
 //Scene 21 Tristram Shirtless Dialogue
 startScene21BlackTimer = false;
-scene21BlackTimer = 400;
+scene21BlackTimer = 600;
 startScene21Timer = false;
+phase2 = false;
 
 dialogue[167] = "#New ink? Didn't know you liked lizards that much.";
-dialogue[168] = "                                                                                                             ";
-dialogue[169] = "";
+dialogue[168] = "                   ";
+dialogue[169] = ";...";
+dialogue[170] = ";What do you mean, you're all my favorite people.";
+dialogue[171] = ";Your cold blood hasn't deterred me.";
+dialogue[172] = "#That's low.";
+dialogue[173] = ";No ill intent here.";
+dialogue[174] = ";I guess our condition is hard on you?";
+dialogue[175] = "#Feels weird is all.";
+dialogue[176] = "#What's with that tattoo though?";
+dialogue[177] = ";It's a dragon.";
+dialogue[178] = "#Doesn't look much like one.";
+dialogue[179] = ";A komodo dragon. Designed it myself.";
+dialogue[180] = "#What a coincidence.";
+dialogue[181] = ";It's not. I designed it for her originally.";
+dialogue[182] = "#But-";
+dialogue[183] = ";She wanted that tat but you know how our Komo is, scared of needles and all.";
+dialogue[184] = ";Chickened out in the end.";
+dialogue[185] = "#You got it in her place...";
+dialogue[186] = ";A lot of effort went into it-";
+dialogue[187] = "#And a lot of blood, sweat and tears.";
+dialogue[188] = ";...";
+dialogue[189] = "#I like it. She would too. Show it to her.";
+dialogue[190] = ";How did you-";
+dialogue[191] = "#She would have told me before.";
+dialogue[192] = "{haha";
+dialogue[193] = "                                                                                                             ";
+dialogue[194] = "";
 
-//Scene 22 Tristram Dialogue
+//Scene 22 FREE
 startScene22BlackTimer = false;
 scene22BlackTimer = 400;
 startScene22Timer = false;
 
-dialogue[170] = ";...";
-dialogue[171] = ";What do you mean, you're all my favorite people.";
-dialogue[172] = ";Your cold blood hasn't deterred me.";
-dialogue[173] = "#That's low.";
-dialogue[174] = ";No ill intent here.";
-dialogue[175] = ";I guess our condition is hard on you?";
-dialogue[176] = "#Feels weird is all.";
-dialogue[177] = "#What's with that tattoo though?";
-dialogue[178] = ";It's a dragon.";
-dialogue[179] = "#Doesn't look much like one.";
-dialogue[180] = ";A komodo dragon. Designed it myself.";
-dialogue[181] = "#What a coincidence.";
-dialogue[182] = ";It's not. I designed it for her originally.";
-dialogue[183] = "#But-";
-dialogue[184] = ";She wanted that tat but you know how our Komo is, scared of needles and all.";
-dialogue[185] = ";Chickened out in the end.";
-dialogue[186] = "#You got it in her place...";
-dialogue[187] = ";A lot of effort went into it-";
-dialogue[188] = "#And a lot of blood, sweat and tears.";
-dialogue[189] = ";...";
-dialogue[190] = "#I like it. She would too. Show it to her.";
-dialogue[191] = ";How did you-";
-dialogue[192] = "#She would have told me before.";
-dialogue[193] = "{haha";
-dialogue[194] = "                                                                                                             ";
-dialogue[195] = "";
 
 //Scene 23 2.Meeting
 startScene23BlackTimer = false;

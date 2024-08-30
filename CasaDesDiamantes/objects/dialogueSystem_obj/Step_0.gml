@@ -167,8 +167,7 @@ if (startScene5Timer) {
 }
 
 //Scene 6
-if (scene6)
-{
+if (scene6) {
 	inCutscene = true;
 	startScene6Timer = true;
 	camera_obj.drawDialogueBorder = true;
@@ -700,11 +699,12 @@ if (startScene18Timer) {
 					player_obj.movement = true;
 					camera_obj.drawBlackborders = false;
 					camera_obj.drawText = false;
-					dialogueSystem_obj.inCutscene = false;
+					inCutscene = false;
 					startScene18Timer = false;
 					inCutscene = false;
 					camera_obj.follow = player_obj;
 					global.firstmeetingDialogue = true;
+					global.introDialogueCindyDone = true;
 					camera_obj.drawDialogueBorder = false;
 					save_scr();
 				}
@@ -837,7 +837,33 @@ if (scene21) {
 }
 
 if (startScene21Timer) {
-	if (camera_obj.dialogueLine >= scene21High - 1) {
+	if (!phase2) {
+		if (camera_obj.dialogueLine >= scene21Low + 1) {
+			if (!startScene21BlackTimer) {
+				camera_obj.blackscreenStrength += global.dt;
+			}	
+			if (camera_obj.blackscreenStrength > 0.98) {
+				startScene21BlackTimer = true;
+			
+				if (instance_exists(tristram3_obj)) {
+					tristram3_obj.sprite_index = tristram_spr;
+					tristram3_obj.image_xscale = -1;
+				}
+			}
+			if (startScene21BlackTimer) {
+				scene21BlackTimer -= global.dt;
+				if (scene21BlackTimer < 0) {
+					camera_obj.blackscreenStrength -= global.dt;
+				
+					if (camera_obj.blackscreenStrength < 0.05) {
+						startScene21BlackTimer = false;
+						scene21BlackTimer = 600;
+						phase2 = true;
+					}
+				}
+			}
+		}
+	} else if (camera_obj.dialogueLine >= scene21High - 1) {
 		if (!startScene21BlackTimer) {
 			camera_obj.blackscreenStrength += global.dt;
 		}
@@ -853,10 +879,6 @@ if (startScene21Timer) {
 				camera_obj.blackscreenStrength -= global.dt;
 				
 				if (camera_obj.blackscreenStrength < 0.05) {
-					if (instance_exists(tristram3_obj)) {
-						tristram3_obj.sprite_index = tristram_spr;
-						tristram3_obj.image_xscale = -1;
-					}
 					player_obj.movement = true;
 					camera_obj.drawBlackborders = false;
 					camera_obj.drawText = false;
@@ -864,8 +886,9 @@ if (startScene21Timer) {
 					startScene21Timer = false;
 					inCutscene = false;
 					camera_obj.follow = player_obj;
+					global.tristramDialogue = true;
 					camera_obj.drawDialogueBorder = false;
-					scene22 = true;
+					save_scr();
 				}
 			}
 		}
