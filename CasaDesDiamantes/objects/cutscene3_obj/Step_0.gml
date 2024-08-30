@@ -2,6 +2,8 @@ timer -= global.dt;
 
 if (timer < 0) {
 	audio_stop_all();
+	global.storyAct = 1;
+					
 	global.cutsceneCasinoIntroDone = true;
 	global.introDialogueVIPDone = true;
 	global.introDialogueCindyDone = true;
