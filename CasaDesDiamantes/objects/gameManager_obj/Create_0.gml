@@ -48,10 +48,11 @@ global.cupyUpgrade1 = false;
 global.cupyUpgrade2 = false;
 
 global.boughtSkin1 = false;
-
-global.reachedCasino = false;
-global.act2Unlocked = false;
-global.act3Unlocked = false;
+//CHANGE BACK TO FALSE
+global.reachedCasino = true;
+global.act2Unlocked = true;
+global.act3Unlocked = true;
+global.act4Unlocked = true;
 
 global.cutsceneLevel2Done = false;
 global.cutsceneCasinoIntroDone = false;

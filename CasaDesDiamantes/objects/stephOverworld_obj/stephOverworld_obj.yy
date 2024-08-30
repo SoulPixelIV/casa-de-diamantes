@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "stephOverworld_spr",
-    "path": "sprites/stephOverworld_spr/stephOverworld_spr.yy",
+    "name": "blimpIcon_spr",
+    "path": "sprites/blimpIcon_spr/blimpIcon_spr.yy",
   },
   "spriteMaskId": null,
   "visible": true,

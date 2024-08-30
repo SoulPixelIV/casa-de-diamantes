@@ -3,24 +3,35 @@ if (lastWorld == 0) {
 	overworldIcon1_obj.draw = false;
 	overworldIcon2_obj.draw = false;
 	overworldIcon3_obj.draw = false;
+	overworldIcon4_obj.draw = false;
 }
 if (lastWorld == 1) {
 	overworldIcon0_obj.draw = false;
 	overworldIcon1_obj.draw = true;
 	overworldIcon2_obj.draw = false;
 	overworldIcon3_obj.draw = false;
+	overworldIcon4_obj.draw = false;
 }
 if (lastWorld == 2) {
 	overworldIcon0_obj.draw = false;
 	overworldIcon1_obj.draw = false;
 	overworldIcon2_obj.draw = true;
 	overworldIcon3_obj.draw = false;
+	overworldIcon4_obj.draw = false;
 }
 if (lastWorld == 3) {
 	overworldIcon0_obj.draw = false;
 	overworldIcon1_obj.draw = false;
 	overworldIcon2_obj.draw = false;
 	overworldIcon3_obj.draw = true;
+	overworldIcon4_obj.draw = false;
+}
+if (lastWorld == 4) {
+	overworldIcon0_obj.draw = false;
+	overworldIcon1_obj.draw = false;
+	overworldIcon2_obj.draw = false;
+	overworldIcon3_obj.draw = false;
+	overworldIcon4_obj.draw = true;
 }
 
 if (distance_to_point(dest.x, dest.y) > 0) {
@@ -40,6 +51,8 @@ if (instance_exists(cursorHitbox_obj)) {
 					global.currentWorld = 2;
 				} else if (hitbox.index == 3 && global.act3Unlocked) {
 					global.currentWorld = 3;
+				} else if (hitbox.index == 4 && global.act4Unlocked) {
+					global.currentWorld = 4;
 				} else if (hitbox.index == 1) {
 					global.currentWorld = 1;
 				} else if (hitbox.index == 0) {
@@ -73,6 +86,12 @@ if (instance_exists(cursorHitbox_obj)) {
 						case 3:
 							if (lastWorld != 3) {
 								global.moveToWorld = 3;
+								room_goto(blimpAnim);
+							}
+						break;
+						case 4:
+							if (lastWorld != 4) {
+								global.moveToWorld = 5;
 								room_goto(blimpAnim);
 							}
 						break;
@@ -141,6 +160,12 @@ if (global.currentWorld == 2 && !startSelectionTimer) {
 }
 
 if (global.currentWorld == 3 && !startSelectionTimer) {
+	if (global.act4Unlocked) {
+		if (keyboard_check_pressed(ord("D")) || keyboard_check_pressed(vk_right) || gamepad_button_check_pressed(0, gp_padr) || gamepad_button_check_pressed(4, gp_padr)) {
+			global.currentWorld = 4;
+			startSelectionTimer = true;
+		}
+	}
 	if (keyboard_check_pressed(ord("A")) || keyboard_check_pressed(vk_left) || gamepad_button_check_pressed(0, gp_padl) || gamepad_button_check_pressed(4, gp_padl)) {
 		global.currentWorld = 2;
 		startSelectionTimer = true;
@@ -149,6 +174,26 @@ if (global.currentWorld == 3 && !startSelectionTimer) {
 	if (keyboard_check_pressed(vk_enter) || keyboard_check_pressed(vk_space) || gamepad_button_check_pressed(0, gp_face1) || gamepad_button_check_pressed(4, gp_face1)) {
 		if (lastWorld != 3) {
 			global.moveToWorld = 3;
+			room_goto(blimpAnim);
+		}
+	}
+}
+
+if (global.currentWorld == 4 && !startSelectionTimer) {
+	if (global.act4Unlocked) {
+		if (keyboard_check_pressed(ord("D")) || keyboard_check_pressed(vk_right) || gamepad_button_check_pressed(0, gp_padr) || gamepad_button_check_pressed(4, gp_padr)) {
+			global.currentWorld = 4;
+			startSelectionTimer = true;
+		}
+	}
+	if (keyboard_check_pressed(ord("A")) || keyboard_check_pressed(vk_left) || gamepad_button_check_pressed(0, gp_padl) || gamepad_button_check_pressed(4, gp_padl)) {
+		global.currentWorld = 3;
+		startSelectionTimer = true;
+	}
+	
+	if (keyboard_check_pressed(vk_enter) || keyboard_check_pressed(vk_space) || gamepad_button_check_pressed(0, gp_face1) || gamepad_button_check_pressed(4, gp_face1)) {
+		if (lastWorld != 4) {
+			global.moveToWorld = 4;
 			room_goto(blimpAnim);
 		}
 	}
@@ -176,6 +221,9 @@ if (global.currentWorld == 2) {
 }
 if (global.currentWorld == 3) {
 	dest = overworldTrigger4_obj
+}
+if (global.currentWorld == 4) {
+	dest = overworldTrigger5_obj
 }
 
 

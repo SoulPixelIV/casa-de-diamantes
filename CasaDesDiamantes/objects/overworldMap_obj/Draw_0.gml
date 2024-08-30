@@ -58,6 +58,9 @@ switch (global.currentWorld) {
 	case 3:
 		worldText = "Endless Depths"
 	break;
+	case 4:
+		worldText = "EDEN Powerplant"
+	break;
 }
 
 draw_set_font(gothicPixel_fnt);

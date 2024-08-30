@@ -33,6 +33,7 @@ if (pushDelay < 0) {
 			{
 				case 0:
 					global.storyAct = 0;
+					global.drawMission = false;
 					global.cutsceneCasinoIntroDone = false;
 					global.introDialogueVIPDone = false;
 					global.introDialogueCindyDone = false;
