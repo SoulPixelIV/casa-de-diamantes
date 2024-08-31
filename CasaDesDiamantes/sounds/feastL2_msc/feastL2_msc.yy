@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSound",
   "resourceVersion": "1.0",
-  "name": "beatMid_msc",
+  "name": "feastL2_msc",
   "audioGroupId": {
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
@@ -10,14 +10,14 @@
   "bitRate": 128,
   "compression": 0,
   "conversionMode": 0,
-  "duration": 16.723333,
+  "duration": 96.130615,
   "parent": {
-    "name": "LegacyMusic",
-    "path": "folders/LegacyMusic.yy",
+    "name": "Act3Music",
+    "path": "folders/Sounds/Act3Music.yy",
   },
   "preload": false,
   "sampleRate": 44100,
-  "soundFile": "beatMid_msc.mp3",
+  "soundFile": "feastL2_msc.mp3",
   "type": 0,
   "volume": 1.0,
 }

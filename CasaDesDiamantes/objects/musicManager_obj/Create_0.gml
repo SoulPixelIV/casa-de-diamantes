@@ -31,6 +31,9 @@ nuclidesL1 = nuclidesL1_msc;
 nuclidesL2 = nuclidesL2_msc;
 nuclidesL3 = nuclidesL3_msc;
 
+feastL1 = feastL1_msc;
+feastL2 = feastL2_msc;
+
 // Low-pass route
 usedFilter = false;
 musicEmitter = audio_emitter_create();

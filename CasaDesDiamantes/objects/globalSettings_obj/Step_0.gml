@@ -110,7 +110,7 @@ else if (room == level1_RoadToCasino || room == level0_RoadToCasino)
 {
 	global.ambientShadowIntensity = 0.45 * global.gamma;
 }
-else if (room == level4 || room == level5A || room == level5B || room == level6 || room == level7 || room == level8 || room == level9 || room == level13 || room == level15)
+else if (room == level4 || room == level5A || room == level5B || room == level6 || room == level7 || room == level8 || room == level9 || room == level15)
 {
 	global.ambientShadowIntensity = 0.5 * global.gamma;
 }
@@ -134,13 +134,9 @@ else if (room == warpzone_Powerplant)
 {
 	global.ambientShadowIntensity = 0.7 * global.gamma;
 }
-else if (room == level10)
+else if (room == level10 || room == level11 || room == level12 || room == level13 || room == level14)
 {
-	global.ambientShadowIntensity = 0.7 * global.gamma;
-}
-else if (room == level11 || room == level12)
-{
-	global.ambientShadowIntensity = 0.75 * global.gamma;
+	global.ambientShadowIntensity = 0.6 * global.gamma;
 }
 else if (room == level16)
 {

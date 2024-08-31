@@ -12,8 +12,8 @@
   "conversionMode": 0,
   "duration": 33.729084,
   "parent": {
-    "name": "Music",
-    "path": "folders/Music.yy",
+    "name": "LegacyMusic",
+    "path": "folders/LegacyMusic.yy",
   },
   "preload": false,
   "sampleRate": 44100,
