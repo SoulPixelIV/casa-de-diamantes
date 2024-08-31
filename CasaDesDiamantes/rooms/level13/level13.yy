@@ -567,6 +567,7 @@
     {"name":"inst_1BFC2423","path":"rooms/level13/level13.yy",},
     {"name":"inst_35B28F99","path":"rooms/level13/level13.yy",},
     {"name":"inst_5D28810","path":"rooms/level13/level13.yy",},
+    {"name":"inst_641023C6","path":"rooms/level13/level13.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -1204,6 +1205,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_3774EBA3","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"chipPlatinumStatic_obj","path":"objects/chipPlatinumStatic_obj/chipPlatinumStatic_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":4704.0,"y":4608.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_2EFA8A2","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"chipPlatinumStatic_obj","path":"objects/chipPlatinumStatic_obj/chipPlatinumStatic_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":4672.0,"y":4608.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_77946BFD","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"chipPlatinumStatic_obj","path":"objects/chipPlatinumStatic_obj/chipPlatinumStatic_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":4640.0,"y":4608.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_641023C6","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"zombieGirl_obj","path":"objects/zombieGirl_obj/zombieGirl_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":3695.0,"y":5678.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"MidgroundObjects","depth":1500,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_35BE2339","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"sterilizationChamber_obj","path":"objects/sterilizationChamber_obj/sterilizationChamber_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":5120.0,"y":5038.0,},

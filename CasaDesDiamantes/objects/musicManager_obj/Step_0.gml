@@ -67,6 +67,13 @@ if (room == credits) {
 		if (audio_is_playing(nuclidesL3_msc)) {
 			audio_stop_sound(nuclidesL3_msc);
 		}
+		
+		if (audio_is_playing(feastL1_msc)) {
+			audio_stop_sound(feastL1_msc);
+		}
+		if (audio_is_playing(feastL2_msc)) {
+			audio_stop_sound(feastL2_msc);
+		}
 
 	}
 } else {
@@ -125,6 +132,13 @@ if (room == demoend) {
 		if (audio_is_playing(nuclidesL3_msc)) {
 			audio_stop_sound(nuclidesL3_msc);
 		}
+		
+		if (audio_is_playing(feastL1_msc)) {
+			audio_stop_sound(feastL1_msc);
+		}
+		if (audio_is_playing(feastL2_msc)) {
+			audio_stop_sound(feastL2_msc);
+		}
 
 	}
 } else {
@@ -182,6 +196,13 @@ if (room == level_Casino || room == mainmenu || room == levelSelect || room == s
 		}
 		if (audio_is_playing(nuclidesL3_msc)) {
 			audio_stop_sound(nuclidesL3_msc);
+		}
+		
+		if (audio_is_playing(feastL1_msc)) {
+			audio_stop_sound(feastL1_msc);
+		}
+		if (audio_is_playing(feastL2_msc)) {
+			audio_stop_sound(feastL2_msc);
 		}
 
 	}
