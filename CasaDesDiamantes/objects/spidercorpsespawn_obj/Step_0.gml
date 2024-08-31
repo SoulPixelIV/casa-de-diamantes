@@ -2,7 +2,7 @@ if (open && spawnNum > 0) {
 	spawnDelay -= global.dt;
 	
 	if (spawnDelay < 0) {
-		var enemy = instance_create_layer(x + random_range(-8, 8), y, "Instances", spidercorpse_obj);
+		var enemy = instance_create_layer(x + random_range(-8, 8), y, "BackgroundObjects", spidercorpse_obj);
 		enemy.aggro = true;
 		spawnNum--;
 		spawnDelay = random_range(spawnDelayLow, spawnDelayHigh);
