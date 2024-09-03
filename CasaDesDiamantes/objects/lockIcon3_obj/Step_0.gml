@@ -1,4 +1,4 @@
-if (global.act4Unlocked) {
+if (global.act3Unlocked) {
 	sprite_index = noone;
 }
 

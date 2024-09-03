@@ -49,9 +49,9 @@ if (instance_exists(cursorHitbox_obj)) {
 				
 				if (hitbox.index == 2 && global.act2Unlocked) {
 					global.currentWorld = 2;
-				} else if (hitbox.index == 3 && global.act3Unlocked) {
+				} else if (hitbox.index == 3 && global.act4Unlocked) {
 					global.currentWorld = 3;
-				} else if (hitbox.index == 4 && global.act4Unlocked) {
+				} else if (hitbox.index == 4 && global.act3Unlocked) {
 					global.currentWorld = 4;
 				} else if (hitbox.index == 1) {
 					global.currentWorld = 1;
@@ -91,7 +91,12 @@ if (instance_exists(cursorHitbox_obj)) {
 						break;
 						case 4:
 							if (lastWorld != 4) {
-								global.moveToWorld = 5;
+								if (global.act3Unlocked && !global.act4Unlocked) {
+									global.moveToWorld = 6;
+								}
+								if (global.act3Unlocked && global.act4Unlocked) {
+									global.moveToWorld = 5;
+								}
 								room_goto(blimpAnim);
 							}
 						break;

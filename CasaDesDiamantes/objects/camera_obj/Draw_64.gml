@@ -1723,16 +1723,20 @@ if (drawElevatorSign) {
 		}
 	}
 	if (global.storyAct == 1) {
-		if (!global.firstmeetingDialogue) {
-			draw_sprite(elevatorInterestMarker_spr, 1, global.xScreenSize / 2, (global.yScreenSize / 2) + windowMenuOffset);
+		if (!global.meeting2Dialogue) {
+			if (!global.firstmeetingDialogue) {
+				draw_sprite(elevatorInterestMarker_spr, 1, global.xScreenSize / 2, (global.yScreenSize / 2) + windowMenuOffset);
+			} else {
+				draw_sprite(elevatorInterestMarker_spr, 1, global.xScreenSize / 2, (global.yScreenSize / 2) + windowMenuOffset);
+				if (!global.dinnerDialogue) {
+					draw_sprite(elevatorInterestMarker_spr, 2, global.xScreenSize / 2, (global.yScreenSize / 2) + windowMenuOffset);
+				}
+				if (!global.komoBasementDialogue) {
+					draw_sprite(elevatorInterestMarker_spr, 6, global.xScreenSize / 2, (global.yScreenSize / 2) + windowMenuOffset);
+				}
+			}
 		} else {
-			draw_sprite(elevatorInterestMarker_spr, 1, global.xScreenSize / 2, (global.yScreenSize / 2) + windowMenuOffset);
-			if (!global.dinnerDialogue) {
-				draw_sprite(elevatorInterestMarker_spr, 2, global.xScreenSize / 2, (global.yScreenSize / 2) + windowMenuOffset);
-			}
-			if (!global.komoBasementDialogue) {
-				draw_sprite(elevatorInterestMarker_spr, 6, global.xScreenSize / 2, (global.yScreenSize / 2) + windowMenuOffset);
-			}
+			draw_sprite(elevatorInterestMarker_spr, 0, global.xScreenSize / 2, (global.yScreenSize / 2) + windowMenuOffset);
 		}
 	}
 	

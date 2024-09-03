@@ -987,6 +987,7 @@ if (startScene23Timer) {
 					inCutscene = false;
 					camera_obj.follow = player_obj;
 					global.meeting2Dialogue = true;
+					global.act3Unlocked = true;
 					camera_obj.drawDialogueBorder = false;
 					save_scr();
 				}

@@ -45,6 +45,7 @@ if (pushDelay < 0) {
 					global.cupyDialogue3Done = false;
 					global.cupyDialogue4Done = false;
 					global.cupyDialogue5Done = false;
+					global.act2Unlocked = false;
 					
 					room_goto(level_Casino);
 					global.lastCheckpoint = noone;
