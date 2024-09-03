@@ -308,6 +308,7 @@
     {"name":"inst_3B8290AB","path":"rooms/level_Casino/level_Casino.yy",},
     {"name":"inst_3856CA00","path":"rooms/level_Casino/level_Casino.yy",},
     {"name":"inst_4EE5EAC8","path":"rooms/level_Casino/level_Casino.yy",},
+    {"name":"inst_42141D6E","path":"rooms/level_Casino/level_Casino.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -407,6 +408,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_68B5F9C6","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"levelTransition_obj","path":"objects/levelTransition_obj/levelTransition_obj.yy",},"properties":[],"rotation":0.0,"scaleX":-1.0,"scaleY":1.0,"x":768.0,"y":4192.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_49B32813","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"levelTransition_obj","path":"objects/levelTransition_obj/levelTransition_obj.yy",},"properties":[],"rotation":0.0,"scaleX":-1.0,"scaleY":1.0,"x":768.0,"y":4128.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_6A0EB47B","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"levelTransition_obj","path":"objects/levelTransition_obj/levelTransition_obj.yy",},"properties":[],"rotation":0.0,"scaleX":-1.0,"scaleY":1.0,"x":768.0,"y":4064.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_42141D6E","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"lightrays2_obj","path":"objects/lightrays2_obj/lightrays2_obj.yy",},"properties":[],"rotation":-21.792883,"scaleX":1.0,"scaleY":3.0,"x":927.4796,"y":4320.8525,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"VoidBackground","depth":900,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":157,"SerialiseWidth":82,"TileCompressedData":[
 -2881,9,1,13,-46,2,1,12,-34,9,1,4,-36,0,-9,-2147483648,2,0,3,-34,9,1,4,-45,-2147483648,2,0,3,-34,9,1,4,-45,-2147483648,2,0,3,-34,9,1,4,-45,-2147483648,2,0,3,-34,9,1,4,-45,-2147483648,2,0,3,-34,9,1,4,-45,-2147483648,2,0,3,-34,9,1,4,-45,-2147483648,2,0,3,-34,9,1,10,-46,1,1,11,-1919,

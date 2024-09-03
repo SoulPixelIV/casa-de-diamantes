@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "projection_obj",
+  "name": "lightrays2_obj",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
   ],
@@ -28,8 +28,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "projection_spr",
-    "path": "sprites/projection_spr/projection_spr.yy",
+    "name": "lightRays2_spr",
+    "path": "sprites/lightRays2_spr/lightRays2_spr.yy",
   },
   "spriteMaskId": null,
   "visible": true,
