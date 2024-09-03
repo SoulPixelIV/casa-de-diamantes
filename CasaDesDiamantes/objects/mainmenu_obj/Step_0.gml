@@ -27,6 +27,8 @@ if (instance_exists(cursorHitbox_obj)) {
 					cursorPos = hitbox.index;
 				
 					if (mouse_check_button_pressed(mb_left)) {
+						audio_play_sound(typewriterPush_snd, 1, false);
+						
 						switch (cursorPos)
 						{
 							case 0:
@@ -56,6 +58,7 @@ if (instance_exists(cursorHitbox_obj)) {
 if (!drawStartMenu) {
 	if (keyboard_check_pressed(vk_up) || keyboard_check_pressed(ord("W")) || gamepad_button_check_pressed(0, gp_padu) || gamepad_button_check_pressed(4, gp_padu))
 	{
+		audio_play_sound(typewriter_snd, 1, false);
 		if (cursorPos > 0)
 		{
 			cursorPos--;
@@ -67,6 +70,7 @@ if (!drawStartMenu) {
 	}
 	if (keyboard_check_pressed(vk_down) || keyboard_check_pressed(ord("S")) || gamepad_button_check_pressed(0, gp_padd) || gamepad_button_check_pressed(4, gp_padd))
 	{
+		audio_play_sound(typewriter_snd, 1, false);
 		if (cursorPos < array_length(optionsY) - 1)
 		{
 			cursorPos++;
@@ -79,6 +83,7 @@ if (!drawStartMenu) {
 
 	if (keyboard_check_pressed(vk_enter) || gamepad_button_check_pressed(0, gp_face1) || gamepad_button_check_pressed(4, gp_face1))
 	{
+		audio_play_sound(typewriterPush_snd, 1, false);
 		switch (cursorPos)
 		{
 			case 0:

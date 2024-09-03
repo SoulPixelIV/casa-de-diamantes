@@ -21,6 +21,7 @@ if (blackJackCalc_obj.screen == 0)
 	//Continue to Main Menu
 	if (pressDelay < 0) {
 		if (keyboard_check_pressed(vk_enter) || keyboard_check_pressed(vk_space) || gamepad_button_check_pressed(0, gp_face1) || gamepad_button_check_pressed(4, gp_face1) || mouse_check_button_pressed(mb_left) || gamepad_button_check_pressed(0, gp_start) || gamepad_button_check_pressed(4, gp_start)) {
+			audio_play_sound(typewriterPush_snd, 1, false);
 			pressDelay = pressDelaySave;
 			blackJackCalc_obj.screen = 1;
 		}
@@ -62,6 +63,7 @@ if (blackJackCalc_obj.screen == 1) {
 					cursorPos = hitbox.index;
 				
 					if (mouse_check_button_pressed(mb_left)) {
+						audio_play_sound(typewriterPush_snd, 1, false);
 						if (pressDelay < 0) {
 							switch (cursorPos)
 							{
@@ -91,6 +93,7 @@ if (blackJackCalc_obj.screen == 1) {
 	
 	if (keyboard_check_pressed(vk_up) || keyboard_check_pressed(ord("W")) || gamepad_button_check_pressed(0, gp_padu) || gamepad_button_check_pressed(4, gp_padu))
 	{
+		audio_play_sound(typewriter_snd, 1, false);
 		if (cursorPos > 0)
 		{
 			cursorPos--;
@@ -102,6 +105,7 @@ if (blackJackCalc_obj.screen == 1) {
 	}
 	if (keyboard_check_pressed(vk_down) || keyboard_check_pressed(ord("S")) || gamepad_button_check_pressed(0, gp_padd) || gamepad_button_check_pressed(4, gp_padd))
 	{
+		audio_play_sound(typewriter_snd, 1, false);
 		if (cursorPos < 2)
 		{
 			cursorPos++;
@@ -114,6 +118,7 @@ if (blackJackCalc_obj.screen == 1) {
 	if (pressDelay < 0) {
 		if (keyboard_check_pressed(vk_enter) || keyboard_check_pressed(vk_space) || gamepad_button_check_pressed(0, gp_face1) || gamepad_button_check_pressed(4, gp_face1))
 		{
+			audio_play_sound(typewriterPush_snd, 1, false);
 			switch (cursorPos)
 			{
 				case 0:
@@ -168,6 +173,7 @@ if (blackJackCalc_obj.screen == 2) {
 	
 	if (keyboard_check_pressed(vk_up) || keyboard_check_pressed(ord("W")) || gamepad_button_check_pressed(0, gp_padu) || gamepad_button_check_pressed(4, gp_padu))
 	{
+		audio_play_sound(typewriter_snd, 1, false);
 		if (cursorPos > 0)
 		{
 			cursorPos--;
@@ -179,6 +185,7 @@ if (blackJackCalc_obj.screen == 2) {
 	}
 	if (keyboard_check_pressed(vk_down) || keyboard_check_pressed(ord("S")) || gamepad_button_check_pressed(0, gp_padd) || gamepad_button_check_pressed(4, gp_padd))
 	{
+		audio_play_sound(typewriter_snd, 1, false);
 		if (cursorPos < 2)
 		{
 			cursorPos++;
@@ -191,6 +198,7 @@ if (blackJackCalc_obj.screen == 2) {
 	if (pressDelay < 0) {
 		if (gamepad_button_check_pressed(0, gp_face1) || gamepad_button_check_pressed(4, gp_face1) || keyboard_check_pressed(vk_enter) || keyboard_check_pressed(vk_space))
 		{
+			audio_play_sound(typewriterPush_snd, 1, false);
 			switch (cursorPos)
 			{
 				case 0:
@@ -281,6 +289,7 @@ if (blackJackCalc_obj.screen == 5)
 	//Continue to Main Menu
 	if (pressDelay < 0) {
 		if (keyboard_check_pressed(vk_enter) || keyboard_check_pressed(vk_space) || gamepad_button_check_pressed(0, gp_face1) || gamepad_button_check_pressed(4, gp_face1) || mouse_check_button_pressed(mb_left)) {
+			audio_play_sound(typewriterPush_snd, 1, false);
 			pressDelay = pressDelaySave;
 			blackJackCalc_obj.screen = 1;
 		}
@@ -391,6 +400,7 @@ if (blackJackCalc_obj.screen == 4)
 		draw_sprite(chipRed_spr, cursorImage, 188, 176);
 		
 		if (gamepad_button_check_pressed(0, gp_face1) || gamepad_button_check_pressed(4, gp_face1)) {
+			audio_play_sound(typewriterPush_snd, 1, false);
 			gameManager_obj.blackjackBackToMenu = true;
 			room_restart();
 		}
@@ -513,6 +523,7 @@ if (inputMethod == 0 || inputMethod == 2) {
 		}
 
 		if (keyboard_check_pressed(ord("A")) || keyboard_check_pressed(vk_left) || gamepad_button_check_pressed(0, gp_padl) || gamepad_button_check_pressed(4, gp_padl)) {
+			audio_play_sound(typewriter_snd, 1, false);
 			if (blackjackMenuElement == 0) {
 				blackjackMenuElement = 1;
 			} else {
@@ -521,6 +532,7 @@ if (inputMethod == 0 || inputMethod == 2) {
 		}
 	
 		if (keyboard_check_pressed(ord("D")) || keyboard_check_pressed(vk_right) || gamepad_button_check_pressed(0, gp_padr) || gamepad_button_check_pressed(4, gp_padr)) {
+			audio_play_sound(typewriter_snd, 1, false);
 			if (blackjackMenuElement == 1) {
 				blackjackMenuElement = 0;
 			} else {
@@ -531,9 +543,11 @@ if (inputMethod == 0 || inputMethod == 2) {
 		if (gamepad_button_check_pressed(0, gp_face1) || gamepad_button_check_pressed(4, gp_face1)) {
 			if (pressDelay < 0) {
 				if (blackjackMenuElement == 0) {
+					audio_play_sound(typewriterPush_snd, 1, false);
 					blackJackCalc_obj.drawCard = true;
 					pressDelay = pressDelaySave;
 				} else if (blackjackMenuElement == 1) {
+					audio_play_sound(typewriterPush_snd, 1, false);
 					blackJackCalc_obj.dealerDraws = true;
 					pressDelay = pressDelaySave;
 				}

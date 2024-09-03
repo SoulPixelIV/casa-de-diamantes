@@ -220,6 +220,7 @@ if (screen == 3 || screen == 4)
 if (keyboard_check(vk_escape) || gamepad_button_check_pressed(4, gp_select) || gamepad_button_check_pressed(0, gp_select) || gamepad_button_check_pressed(4, gp_face2) || gamepad_button_check_pressed(0, gp_face2))
 {
 	if (global.pushDelay < 0) {
+		audio_play_sound(typewriterPush_snd, 1, false);
 		if (screen == 2) {
 			global.pushDelay = global.pushDelaySave;
 			playedSound = false;

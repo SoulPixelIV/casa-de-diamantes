@@ -68,6 +68,7 @@ if (drawStartMenu) {
 						}
 				
 						if (mouse_check_button_pressed(mb_left)) {
+							audio_play_sound(typewriterPush_snd, 1, false);
 							if (!buttonBufferStart) {
 								switch (startMenuElement)
 								{
@@ -189,6 +190,7 @@ if (drawStartMenu) {
 	}
 	
 	if (keyboard_check_pressed(ord("A")) || keyboard_check_pressed(vk_left) || gamepad_button_check_pressed(0, gp_padl) || gamepad_button_check_pressed(4, gp_padl)) {
+		audio_play_sound(typewriter_snd, 1, false);
 		if (startMenuElement == 0) {
 			startMenuElement = 1;
 		} else {
@@ -197,6 +199,7 @@ if (drawStartMenu) {
 	}
 	
 	if (keyboard_check_pressed(ord("D")) || keyboard_check_pressed(vk_right) || gamepad_button_check_pressed(0, gp_padr) || gamepad_button_check_pressed(4, gp_padr)) {
+		audio_play_sound(typewriter_snd, 1, false);
 		if (startMenuElement == 1) {
 			startMenuElement = 0;
 		} else {
@@ -207,6 +210,7 @@ if (drawStartMenu) {
 	if (!buttonBufferStart) {
 		if (keyboard_check_pressed(vk_enter) || gamepad_button_check_pressed(0, gp_face1) || gamepad_button_check_pressed(4, gp_face1))
 		{
+			audio_play_sound(typewriterPush_snd, 1, false);
 			if (startMenuElement == 0) {
 				global.transitionScreenDest = level0;
 				global.unlockedWeapon[1] = false;

@@ -1,3 +1,7 @@
+if (drawn) {
+	audio_play_sound(typewriterPush_snd, 1, false);
+}
+
 if (global.pushDelay < 0) {
 	if (blackJackCalc_obj.screen == 2)
 	{

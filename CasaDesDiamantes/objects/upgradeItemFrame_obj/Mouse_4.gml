@@ -1,3 +1,4 @@
+audio_play_sound(typewriterPush_snd, 1, false);
 switch (frame) {
 	case 1:
 	break;

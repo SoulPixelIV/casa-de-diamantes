@@ -7,9 +7,12 @@ if (blackJackCalc_obj.screen == 2) {
 		draw_text(x - 1, y - 3, text);
 		draw_set_color(make_color_rgb(255, 215, 0));
 		draw_text(x, y - 4, text);
+		drawn = true;
+	} else {
+		drawn = false;
 	}
 }
-if (blackJackCalc_obj.screen == 3) {	
+else if (blackJackCalc_obj.screen == 3) {	
 	if (hit || stand) {
 		draw_sprite_ext(sprite_index, 0, x, y, sizeX, sizeY, 0, -1, 1);
 		draw_set_font(gothicPixel_fnt);
@@ -18,9 +21,12 @@ if (blackJackCalc_obj.screen == 3) {
 		draw_text(x - 1, y - 7, text);
 		draw_set_color(make_color_rgb(255, 215, 0));
 		draw_text(x, y - 8, text);
+		drawn = true;
+	} else {
+		drawn = false;
 	}
 }
-if (blackJackCalc_obj.screen == 4) {
+else if (blackJackCalc_obj.screen == 4) {
 	if (back) {
 		draw_sprite_ext(sprite_index, 0, x, y, sizeX, sizeY, 0, -1, 1);
 		draw_set_font(gothicPixel_fnt);
@@ -29,5 +35,10 @@ if (blackJackCalc_obj.screen == 4) {
 		draw_text(x - 1, y - 3, text);
 		draw_set_color(make_color_rgb(255, 215, 0));
 		draw_text(x, y - 4, text);
+		drawn = true;
+	} else {
+		drawn = false;
 	}
+} else {
+	drawn = false;
 }

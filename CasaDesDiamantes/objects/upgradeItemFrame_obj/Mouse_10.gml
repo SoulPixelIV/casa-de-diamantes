@@ -1,4 +1,5 @@
 mouseEntered = true;
+audio_play_sound(typewriter_snd, 1, false);
 
 if (!used) {
 	if (frame == 3 && !global.dualBarettasUpgrade1) {

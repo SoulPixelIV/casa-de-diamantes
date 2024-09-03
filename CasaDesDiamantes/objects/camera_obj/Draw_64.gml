@@ -707,6 +707,7 @@ if (drawTutorialInfection) {
 	
 	if (keyboard_check_pressed(vk_space) || gamepad_button_check_pressed(4, gp_face1) || gamepad_button_check_pressed(0, gp_face1)) {
 		if (drawTutorialInputDelay >= 120) {
+			audio_play_sound(typewriterPush_snd, 1, false);
 			drawTutorialInfection = false;
 			player_obj.movement = true;
 		}
@@ -1531,6 +1532,7 @@ if (showWindowMenu)
 		windowMenuOffset -= global.dt * 1.5;
 	}
 	if (keyboard_check_pressed(vk_escape) || gamepad_button_check_pressed(4, gp_start) || gamepad_button_check_pressed(0, gp_start)) {
+		audio_play_sound(typewriterPush_snd, 1, false);
 		dialogueSystem_obj.inCutscene = false;
 		dialogueSystem_obj.startScene2Timer = false;
 		dialogueSystem_obj.scene2Timer = dialogueSystem_obj.scene2TimerSave;
@@ -1550,6 +1552,7 @@ if (showWindowMenu)
 					barkeeperWindowIndex = hitbox.index;
 				
 					if (mouse_check_button_pressed(mb_left)) {
+						audio_play_sound(typewriterPush_snd, 1, false);
 						switch (barkeeperWindowIndex)
 						{
 							case 0:
@@ -1587,6 +1590,7 @@ if (showWindowMenu)
 	if (keyboard_check_pressed(vk_enter) || gamepad_button_check_pressed(0, gp_face1) || gamepad_button_check_pressed(4, gp_face1)) {
 		if (barkeeperWindowIndex == 0) {
 			if (global.money >= 12300) {
+				audio_play_sound(typewriterPush_snd, 1, false);
 				global.diamonds += 1;
 				audio_play_sound(buying_snd, 1, false);
 				global.money -= 12300;
@@ -1594,6 +1598,7 @@ if (showWindowMenu)
 		}
 		if (barkeeperWindowIndex == 2) {
 			if (global.money >= 2250) {
+				audio_play_sound(typewriterPush_snd, 1, false);
 				if (global.syringes < 5) {
 					global.syringes += 1;
 				}
@@ -1603,6 +1608,7 @@ if (showWindowMenu)
 		}
 		if (barkeeperWindowIndex == 1) {
 			if (global.money >= 25) {
+				audio_play_sound(typewriterPush_snd, 1, false);
 				if (global.drunknessLevel < 0.75) {
 					global.drunknessLevel += 0.05;
 				}
@@ -1612,6 +1618,7 @@ if (showWindowMenu)
 		}
 	}
 	if (keyboard_check_pressed(vk_right) || keyboard_check_pressed(ord("D")) || gamepad_button_check_pressed(0, gp_padr) || gamepad_button_check_pressed(4, gp_padr)) {
+		audio_play_sound(typewriter_snd, 1, false);
 		if (barkeeperWindowIndex < 2) {
 			barkeeperWindowIndex += 1;
 		} else {
@@ -1619,6 +1626,7 @@ if (showWindowMenu)
 		}
 	}
 	if (keyboard_check_pressed(vk_left) || keyboard_check_pressed(ord("A")) || gamepad_button_check_pressed(0, gp_padl) || gamepad_button_check_pressed(4, gp_padl)) {
+		audio_play_sound(typewriter_snd, 1, false);
 		if (barkeeperWindowIndex > 0) {
 			barkeeperWindowIndex -= 1;
 		} else {
@@ -1758,6 +1766,7 @@ if (drawElevatorSign) {
 	}
 	
 	if (keyboard_check_pressed(vk_escape) || gamepad_button_check_pressed(4, gp_start) || gamepad_button_check_pressed(0, gp_start)) {
+		audio_play_sound(typewriterPush_snd, 1, false);
 		player_obj.movement = true;
 		drawBlackborders = false;
 		dialogueSystem_obj.inCutscene = false;
@@ -1940,6 +1949,7 @@ if (global.pause) {
 	if (pauseScreen == 0) {
 		if (keyboard_check_pressed(vk_up) || keyboard_check_pressed(ord("W")) || gamepad_button_check_pressed(0, gp_padu) || gamepad_button_check_pressed(4, gp_padu))
 		{
+			audio_play_sound(typewriter_snd, 1, false);
 			if (cursorPos > 0)
 			{
 				cursorPos--;
@@ -1951,6 +1961,7 @@ if (global.pause) {
 		}
 		if (keyboard_check_pressed(vk_down) || keyboard_check_pressed(ord("S")) || gamepad_button_check_pressed(0, gp_padd) || gamepad_button_check_pressed(4, gp_padd))
 		{
+			audio_play_sound(typewriter_snd, 1, false);
 			if (cursorPos < 4)
 			{
 				cursorPos++;
@@ -1970,6 +1981,7 @@ if (global.pause) {
 						cursorPos = hitbox.index;
 				
 						if (mouse_check_button_pressed(mb_left)) {
+							audio_play_sound(typewriterPush_snd, 1, false);
 							switch (cursorPos)
 							{
 								case 0:
@@ -2004,6 +2016,7 @@ if (global.pause) {
 
 		if (keyboard_check_pressed(vk_enter) || gamepad_button_check_pressed(0, gp_face1) || gamepad_button_check_pressed(4, gp_face1))
 		{
+			audio_play_sound(typewriterPush_snd, 1, false);
 			switch (cursorPos)
 			{
 				case 0:
@@ -2034,6 +2047,7 @@ if (global.pause) {
 	} else {
 		if (keyboard_check_pressed(vk_up) || keyboard_check_pressed(ord("W")) || gamepad_button_check_pressed(0, gp_padu) || gamepad_button_check_pressed(4, gp_padu))
 		{
+			audio_play_sound(typewriter_snd, 1, false);
 			if (cursorPos > 0)
 			{
 				cursorPos--;
@@ -2045,6 +2059,7 @@ if (global.pause) {
 		}
 		if (keyboard_check_pressed(vk_down) || keyboard_check_pressed(ord("S")) || gamepad_button_check_pressed(0, gp_padd) || gamepad_button_check_pressed(4, gp_padd))
 		{
+			audio_play_sound(typewriter_snd, 1, false);
 			if (cursorPos < 2)
 			{
 				cursorPos++;
@@ -2063,6 +2078,7 @@ if (global.pause) {
 						cursorPos = hitbox.index;
 				
 						if (mouse_check_button_pressed(mb_left)) {
+							audio_play_sound(typewriterPush_snd, 1, false);
 							switch (cursorPos)
 							{
 								case 2:
@@ -2077,6 +2093,7 @@ if (global.pause) {
 		}
 		if (keyboard_check_pressed(vk_enter) || gamepad_button_check_pressed(0, gp_face1) || gamepad_button_check_pressed(4, gp_face1))
 		{
+			audio_play_sound(typewriterPush_snd, 1, false);
 			switch (cursorPos)
 			{
 				case 2:
@@ -2087,6 +2104,7 @@ if (global.pause) {
 		}
 		if (keyboard_check_pressed(vk_right) || keyboard_check_pressed(ord("D")) || gamepad_button_check_pressed(0, gp_padr) || gamepad_button_check_pressed(4, gp_padr))
 		{
+			audio_play_sound(typewriter_snd, 1, false);
 			switch (cursorPos)
 			{
 				case 0:
@@ -2105,6 +2123,7 @@ if (global.pause) {
 	
 		if (keyboard_check_pressed(vk_left) || keyboard_check_pressed(ord("A")) || gamepad_button_check_pressed(0, gp_padl) || gamepad_button_check_pressed(4, gp_padl))
 		{
+			audio_play_sound(typewriter_snd, 1, false);
 			switch (cursorPos)
 			{
 				case 0:

@@ -60,6 +60,7 @@ if (instance_exists(cursorHitbox_obj)) {
 				}
 				
 				if (mouse_check_button_pressed(mb_left)) {
+					audio_play_sound(typewriterPush_snd, 1, false);
 					switch (global.currentWorld)
 					{
 						case 0:
@@ -109,11 +110,13 @@ if (instance_exists(cursorHitbox_obj)) {
 
 if (global.currentWorld == 0 && !startSelectionTimer) {
 	if (keyboard_check_pressed(ord("D")) || keyboard_check_pressed(vk_right) || gamepad_button_check_pressed(0, gp_padr) || gamepad_button_check_pressed(4, gp_padr)) {
+		audio_play_sound(typewriter_snd, 1, false);
 		global.currentWorld = 1;
 		startSelectionTimer = true;
 	}
 	
 	if (keyboard_check_pressed(vk_enter) || keyboard_check_pressed(vk_space) || gamepad_button_check_pressed(0, gp_face1) || gamepad_button_check_pressed(4, gp_face1)) {
+		audio_play_sound(typewriterPush_snd, 1, false);
 		if (lastWorld != 0) {
 			global.moveToWorld = 0;
 			room_goto(blimpAnim);
@@ -124,16 +127,19 @@ if (global.currentWorld == 0 && !startSelectionTimer) {
 if (global.currentWorld == 1 && !startSelectionTimer) {
 	if (global.act2Unlocked) {
 		if (keyboard_check_pressed(ord("D")) || keyboard_check_pressed(vk_right) || gamepad_button_check_pressed(0, gp_padr) || gamepad_button_check_pressed(4, gp_padr)) {
+			audio_play_sound(typewriter_snd, 1, false);
 			global.currentWorld = 2;
 			startSelectionTimer = true;
 		}
 	}
 	if (keyboard_check_pressed(ord("A")) || keyboard_check_pressed(vk_left) || gamepad_button_check_pressed(0, gp_padl) || gamepad_button_check_pressed(4, gp_padl)) {
+		audio_play_sound(typewriter_snd, 1, false);
 		global.currentWorld = 0;
 		startSelectionTimer = true;
 	}
 	
 	if (keyboard_check_pressed(vk_enter) || keyboard_check_pressed(vk_space) || gamepad_button_check_pressed(0, gp_face1) || gamepad_button_check_pressed(4, gp_face1)) {
+		audio_play_sound(typewriterPush_snd, 1, false);
 		if (!global.reachedCasino) {
 			room_goto(level_Casino);
 			global.reachedCasino = true;
@@ -147,16 +153,19 @@ if (global.currentWorld == 1 && !startSelectionTimer) {
 if (global.currentWorld == 2 && !startSelectionTimer) {
 	if (global.act3Unlocked) {
 		if (keyboard_check_pressed(ord("D")) || keyboard_check_pressed(vk_right) || gamepad_button_check_pressed(0, gp_padr) || gamepad_button_check_pressed(4, gp_padr)) {
+			audio_play_sound(typewriter_snd, 1, false);
 			global.currentWorld = 3;
 			startSelectionTimer = true;
 		}
 	}
 	if (keyboard_check_pressed(ord("A")) || keyboard_check_pressed(vk_left) || gamepad_button_check_pressed(0, gp_padl) || gamepad_button_check_pressed(4, gp_padl)) {
+		audio_play_sound(typewriter_snd, 1, false);
 		global.currentWorld = 1;
 		startSelectionTimer = true;
 	}
 	
 	if (keyboard_check_pressed(vk_enter) || keyboard_check_pressed(vk_space) || gamepad_button_check_pressed(0, gp_face1) || gamepad_button_check_pressed(4, gp_face1)) {
+		audio_play_sound(typewriterPush_snd, 1, false);
 		if (lastWorld != 2) {
 			global.moveToWorld = 2;
 			room_goto(blimpAnim);
@@ -167,16 +176,19 @@ if (global.currentWorld == 2 && !startSelectionTimer) {
 if (global.currentWorld == 3 && !startSelectionTimer) {
 	if (global.act4Unlocked) {
 		if (keyboard_check_pressed(ord("D")) || keyboard_check_pressed(vk_right) || gamepad_button_check_pressed(0, gp_padr) || gamepad_button_check_pressed(4, gp_padr)) {
+			audio_play_sound(typewriter_snd, 1, false);
 			global.currentWorld = 4;
 			startSelectionTimer = true;
 		}
 	}
 	if (keyboard_check_pressed(ord("A")) || keyboard_check_pressed(vk_left) || gamepad_button_check_pressed(0, gp_padl) || gamepad_button_check_pressed(4, gp_padl)) {
+		audio_play_sound(typewriter_snd, 1, false);
 		global.currentWorld = 2;
 		startSelectionTimer = true;
 	}
 	
 	if (keyboard_check_pressed(vk_enter) || keyboard_check_pressed(vk_space) || gamepad_button_check_pressed(0, gp_face1) || gamepad_button_check_pressed(4, gp_face1)) {
+		audio_play_sound(typewriterPush_snd, 1, false);
 		if (lastWorld != 3) {
 			global.moveToWorld = 3;
 			room_goto(blimpAnim);
@@ -187,16 +199,19 @@ if (global.currentWorld == 3 && !startSelectionTimer) {
 if (global.currentWorld == 4 && !startSelectionTimer) {
 	if (global.act4Unlocked) {
 		if (keyboard_check_pressed(ord("D")) || keyboard_check_pressed(vk_right) || gamepad_button_check_pressed(0, gp_padr) || gamepad_button_check_pressed(4, gp_padr)) {
+			audio_play_sound(typewriter_snd, 1, false);
 			global.currentWorld = 4;
 			startSelectionTimer = true;
 		}
 	}
 	if (keyboard_check_pressed(ord("A")) || keyboard_check_pressed(vk_left) || gamepad_button_check_pressed(0, gp_padl) || gamepad_button_check_pressed(4, gp_padl)) {
+		audio_play_sound(typewriter_snd, 1, false);
 		global.currentWorld = 3;
 		startSelectionTimer = true;
 	}
 	
 	if (keyboard_check_pressed(vk_enter) || keyboard_check_pressed(vk_space) || gamepad_button_check_pressed(0, gp_face1) || gamepad_button_check_pressed(4, gp_face1)) {
+		audio_play_sound(typewriterPush_snd, 1, false);
 		if (lastWorld != 4) {
 			global.moveToWorld = 4;
 			room_goto(blimpAnim);
