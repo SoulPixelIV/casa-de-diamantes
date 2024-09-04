@@ -2154,10 +2154,10 @@
   ],
   "RoomOrderNodes": [
     {"roomId":{"name":"loadVars","path":"rooms/loadVars/loadVars.yy",},},
+    {"roomId":{"name":"level_Casino","path":"rooms/level_Casino/level_Casino.yy",},},
     {"roomId":{"name":"worldmap","path":"rooms/worldmap/worldmap.yy",},},
     {"roomId":{"name":"mainmenu","path":"rooms/mainmenu/mainmenu.yy",},},
     {"roomId":{"name":"credits","path":"rooms/credits/credits.yy",},},
-    {"roomId":{"name":"level_Casino","path":"rooms/level_Casino/level_Casino.yy",},},
     {"roomId":{"name":"level_TristramRoom","path":"rooms/level_TristramRoom/level_TristramRoom.yy",},},
     {"roomId":{"name":"level_Basement","path":"rooms/level_Basement/level_Basement.yy",},},
     {"roomId":{"name":"level_DiningHall","path":"rooms/level_DiningHall/level_DiningHall.yy",},},
