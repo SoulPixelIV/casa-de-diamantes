@@ -54,6 +54,8 @@ global.act2Unlocked = false;
 global.act3Unlocked = false;
 global.act4Unlocked = false;
 
+global.helicopterIntro = false;
+
 global.cutsceneLevel2Done = false;
 global.cutsceneCasinoIntroDone = false;
 
@@ -254,6 +256,7 @@ currVolHealthPickup = audio_sound_get_gain(healthPickup_snd);
 currVolJumpPad = audio_sound_get_gain(jumpPad_snd);
 currVolTypewriter = audio_sound_get_gain(typewriter_snd);
 currVolTypewriterPush = audio_sound_get_gain(typewriterPush_snd);
+currVolHelicopter = audio_sound_get_gain(helicopter_snd);
 
 currVolInfectedVoice = audio_sound_get_gain(infectedVoice_snd);
 currVolInfectionVoice = audio_sound_get_gain(plagueInfectionVoice_snd);

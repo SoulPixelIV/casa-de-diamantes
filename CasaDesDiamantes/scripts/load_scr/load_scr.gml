@@ -17,6 +17,7 @@ function load_scr(){
 	
 	global.reachedCasino = ini_read_real("save1", "reachedCasino", false);
 	global.act2Unlocked = ini_read_real("save1", "act2Unlocked", false);
+	global.helicopterIntro = ini_read_real("save1", "helicopterIntro", false);
 	
 	global.cutsceneLevel2Done = ini_read_real("save1", "shownCutsceneLevel2", false);
 	global.cutsceneCasinoIntroDone = ini_read_real("save1", "shownCutsceneCasinoIntro", false);
