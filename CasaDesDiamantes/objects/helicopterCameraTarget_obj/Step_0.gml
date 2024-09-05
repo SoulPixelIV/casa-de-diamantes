@@ -4,6 +4,7 @@ if (!global.helicopterIntro) {
 		camera_obj.drawBlackborders = true;
 		player_obj.movement = false;
 		player_obj.invincible = true;
+		player_obj.shootingAllowed = false;
 	}
 	
 	cutsceneTimer -= global.dt;
@@ -16,6 +17,7 @@ if (!global.helicopterIntro) {
 
 	if (cutsceneTimer < -500) {
 		camera_obj.drawBlackborders = false;
+		player_obj.shootingAllowed = true;
 		global.helicopterIntro = true;
 	}
 }

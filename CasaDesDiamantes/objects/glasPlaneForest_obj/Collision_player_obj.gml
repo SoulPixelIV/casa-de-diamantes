@@ -1,3 +1,10 @@
+breakTimer -= global.dt;
+image_index = 1;
+
+if (breakTimer < 0) {
+	breakOnContact = true;
+}
+
 if (breakOnContact) {
 	part_emitter_burst(global.partSystem, glasShardEmitter, global.glasShardsPart, 25);
 
