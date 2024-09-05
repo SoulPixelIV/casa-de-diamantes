@@ -3,6 +3,7 @@ startTimer2 = false;
 startTimer3 = false;
 startTimer4 = false;
 startTimer5 = false;
+spawnedCrosshair = false;
 firstBlackscreen = false;
 firstBlackscreenUsed = false;
 spawnedVines = false;

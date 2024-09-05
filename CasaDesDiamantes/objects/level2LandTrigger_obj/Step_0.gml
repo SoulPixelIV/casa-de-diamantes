@@ -54,6 +54,11 @@ if (timer3 < 0 && timer4 > 0) {
 	camera_obj.blackscreenStrength -= global.dt / 500;
 	startTimer4 = true;
 	
+	if (!spawnedCrosshair) {
+		crosshair = instance_create_layer(player_obj.x + 98, player_obj.y - 9, "Crosshair", cindyCrosshair_obj);
+		spawnedCrosshair = true;
+	}
+	
 	if (!playedPlantSound1) {
 		audio_play_sound(plantGrowing_snd, 1, false);
 		playedPlantSound1 = true;
@@ -91,6 +96,10 @@ if (timer5 < 0) {
 	}
 	
 	camera_obj.hazeEffect = false;
+	
+	if (instance_exists(crosshair)) {
+		instance_destroy(crosshair);
+	}
 	
 	instance_destroy();
 	
