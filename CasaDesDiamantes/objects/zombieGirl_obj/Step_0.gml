@@ -478,7 +478,7 @@ if (attackInProg)
 				hitboxFlowerAttack.image_yscale = 1.5;
 				hitboxFlowerAttack.image_xscale = 3.5;
 				hitboxFlowerAttack.damage = damage;
-				hitboxFlowerAttack.timer = 100;
+				hitboxFlowerAttack.timer = 20;
 
 				snapAttack = true;
 			}
@@ -564,7 +564,7 @@ if (attackInProg2)
 				hitboxFlowerAttack.image_yscale = 3.5;
 				hitboxFlowerAttack.image_xscale = 1.5;
 				hitboxFlowerAttack.damage = damage;
-				hitboxFlowerAttack.timer = 100;
+				hitboxFlowerAttack.timer = 20;
 
 				snapAttack2 = true;
 			}
