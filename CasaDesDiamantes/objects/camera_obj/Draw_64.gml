@@ -1246,6 +1246,15 @@ if (!noHUD && instance_exists(player_obj))
 		}
 	}
 	
+	//HP FULL MESSAGE
+	if (hpFullMessage) {
+		draw_set_color(c_red);
+		draw_set_halign(fa_center);
+		draw_set_font(gothicPixel_fnt);
+		draw_text(global.xScreenSize / 2, global.yScreenSize - global.yScreenSize / 4 - 32, "HP already full!");
+		draw_set_halign(fa_left);
+	}
+	
 	//Door Messages
 	if (redDoorMessage) {
 		draw_set_color(make_color_rgb(255,215,0));

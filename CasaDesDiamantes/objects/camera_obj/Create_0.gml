@@ -62,6 +62,7 @@ currDeltatime = global.dt;
 newWeapon = false;
 newWeaponTimer = 200;
 redDoorMessage = false;
+hpFullMessage = false;
 blueDoorMessage = false;
 yellowDoorMessage = false;
 warpzoneMessage = false;

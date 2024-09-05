@@ -705,6 +705,13 @@ if (!huggingWall && !inChamber) {
 	}
 }
 
+//HP FULL
+if (place_meeting(x, y, healthpackPickup_obj) || place_meeting(x, y, healthpack_obj) || place_meeting(x, y, healthpackDrop_obj) ||place_meeting(x, y, maxHealthpack_obj)) {
+	camera_obj.hpFullMessage = true;
+} else {
+	camera_obj.hpFullMessage = false;
+}
+
 //Create Dust Particles
 if (grounded && !createdParticles && !isDashing && !inChamber)
 {
