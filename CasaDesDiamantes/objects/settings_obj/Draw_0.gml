@@ -1,14 +1,14 @@
 draw_set_font(gothicPixel_fnt);
-draw_set_halign(fa_left);
+draw_set_halign(fa_center);
 draw_set_color(make_color_rgb(255, 215, 0));
-draw_text(32, optionsY[0], "Sound Volume [" + string(global.soundVolume) + "%]");
-draw_text(32, optionsY[1], "Music Volume [" + string(global.musicVolume) + "%]");
+draw_text(global.xScreenSize / 2, optionsY[0], "Sound Volume [" + string(global.soundVolume) + "%]");
+draw_text(global.xScreenSize / 2, optionsY[1], "Music Volume [" + string(global.musicVolume) + "%]");
 if (global.gamma != 1.4) {
-	draw_text(32, optionsY[2], "Gamma [" + string(global.gamma) + "]");
+	draw_text(global.xScreenSize / 2, optionsY[2], "Gamma [" + string(global.gamma) + "]");
 } else {
-	draw_text(32, optionsY[2], "Gamma [1.4 Standard]");
+	draw_text(global.xScreenSize / 2, optionsY[2], "Gamma [1.4 Standard]");
 }
-draw_text(32, optionsY[3], "Back to Main Menu");
+draw_text(global.xScreenSize / 2, optionsY[3], "Back to Main Menu");
 
 draw_set_halign(fa_right);
 draw_text(global.xScreenSize - 24, global.yScreenSize - 16, "MAIN v.1.6");
@@ -20,7 +20,8 @@ draw_sprite_ext(mainmenuTitle_spr, 0, global.xScreenSize / 2, 86, 1, 1, 0, -1, t
 //Draw cursor
 cursorImage += global.dt / 16;
 if (!drawStartMenu) {
-	draw_sprite(chipRed_spr, cursorImage, 20, optionsY[cursorPos] + 4);
+	draw_sprite(chipRed_spr, cursorImage, global.xScreenSize / 2 - 80, optionsY[cursorPos] + 4);
+	draw_sprite(chipRed_spr, cursorImage, global.xScreenSize / 2 + 80, optionsY[cursorPos] + 4);
 }
 
 //Start Window

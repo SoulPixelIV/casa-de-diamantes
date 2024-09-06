@@ -1,17 +1,17 @@
 draw_set_font(gothicPixel_fnt);
-draw_set_halign(fa_left);
+draw_set_halign(fa_center);
 
 if (file_exists("save1")) {
 	draw_set_color(make_color_rgb(255, 215, 0));
-	draw_text(32, optionsY[0], "Continue");
+	draw_text(global.xScreenSize / 2, optionsY[0], "Continue");
 } else {
 	draw_set_color(make_color_rgb(110, 110, 110));
-	draw_text(32, optionsY[0], "Continue");
+	draw_text(global.xScreenSize / 2, optionsY[0], "Continue");
 }
 draw_set_color(make_color_rgb(255, 215, 0));
-draw_text(32, optionsY[1], "New Game");
-draw_text(32, optionsY[2], "Settings");
-draw_text(32, optionsY[3], "Exit");
+draw_text(global.xScreenSize / 2, optionsY[1], "New Game");
+draw_text(global.xScreenSize / 2, optionsY[2], "Settings");
+draw_text(global.xScreenSize / 2, optionsY[3], "Exit");
 
 draw_set_halign(fa_right);
 draw_text(global.xScreenSize - 24, global.yScreenSize - 16, "MAIN v.1.6");
@@ -25,7 +25,8 @@ draw_sprite_ext(mainmenuTitle_spr, 0, global.xScreenSize / 2, 86, 1, 1, 0, -1, t
 //Draw cursor
 cursorImage += global.dt / 16;
 if (!drawStartMenu) {
-	draw_sprite(chipRed_spr, cursorImage, 20, optionsY[cursorPos] + 4);
+	draw_sprite(chipRed_spr, cursorImage, global.xScreenSize / 2 - 40, optionsY[cursorPos] + 4);
+	draw_sprite(chipRed_spr, cursorImage, global.xScreenSize / 2 + 40, optionsY[cursorPos] + 4);
 }
 
 //Start Window
