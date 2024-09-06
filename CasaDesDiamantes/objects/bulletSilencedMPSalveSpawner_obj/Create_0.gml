@@ -1,4 +1,4 @@
-salveDelay = 12;
+salveDelay = 9;
 salveAmount = 2;
 
 salveDelaySave = salveDelay;
