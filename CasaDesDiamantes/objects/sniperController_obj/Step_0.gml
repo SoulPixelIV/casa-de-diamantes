@@ -18,7 +18,7 @@ if (enableShooting && !player_obj.deathActivated && instance_exists(sniperBoy_ob
 
 	if (shootDelay < 0)
 	{
-		var pistolShot = audio_play_sound(pistolShot_snd, 1, false);
+		var pistolShot = audio_play_sound(sniperShot_snd, 1, false);
 		audio_sound_pitch(pistolShot, random_range(0.9, 1.1));
 		screenshake(50, 20, 0.5, id);
 	

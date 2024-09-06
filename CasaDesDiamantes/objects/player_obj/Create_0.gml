@@ -6,8 +6,8 @@ save_scr();
 //Movement
 horspeed = 0;
 verspeed = 0;
-horspeedMax = 2;
-verspeedMax = 8;
+horspeedMax = 1.8;
+verspeedMax = 7;
 movSpeed = 0.82;
 movSpeedSave = movSpeed;
 movSpeedZombie = 0.54;

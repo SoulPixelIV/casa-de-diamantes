@@ -98,7 +98,7 @@ if (instance_exists(cursorHitbox_obj)) {
 								if (global.act3Unlocked && global.act4Unlocked) {
 									global.moveToWorld = 5;
 								}
-								room_goto(blimpAnim);
+								room_goto(blimpAnim2);
 							}
 						break;
 					}

@@ -57,7 +57,7 @@
             {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"4670ce63-4b16-42f6-aabc-7a216458cc09","path":"sprites/caveTilesOld_spr/caveTilesOld_spr.yy",},},},"Disabled":false,"id":"0db420e3-43e7-4573-bef0-5476ac880db2","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
-    "visibleRange": {"x":0.0,"y":0.0,},
+    "visibleRange": null,
     "volume": 1.0,
     "xorigin": 48,
     "yorigin": 64,
