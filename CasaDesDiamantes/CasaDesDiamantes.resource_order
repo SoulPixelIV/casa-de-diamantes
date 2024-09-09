@@ -921,6 +921,7 @@
     {"name":"__ppf_sh_render_hq4x","order":11,"path":"shaders/__ppf_sh_render_hq4x/__ppf_sh_render_hq4x.yy",},
     {"name":"walk2_snd","order":1,"path":"sounds/walk2_snd/walk2_snd.yy",},
     {"name":"jump_snd","order":2,"path":"sounds/jump_snd/jump_snd.yy",},
+    {"name":"level17","order":2,"path":"rooms/level17/level17.yy",},
     {"name":"land_snd","order":3,"path":"sounds/land_snd/land_snd.yy",},
     {"name":"level_TristramRoom","order":6,"path":"rooms/level_TristramRoom/level_TristramRoom.yy",},
     {"name":"zombieGirlAttack2_spr","order":17,"path":"sprites/zombieGirlAttack2_spr/zombieGirlAttack2_spr.yy",},

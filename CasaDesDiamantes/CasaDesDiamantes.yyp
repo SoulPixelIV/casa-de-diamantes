@@ -1083,6 +1083,7 @@
     {"id":{"name":"__ppf_sh_render_hq4x","path":"shaders/__ppf_sh_render_hq4x/__ppf_sh_render_hq4x.yy",},},
     {"id":{"name":"walk2_snd","path":"sounds/walk2_snd/walk2_snd.yy",},},
     {"id":{"name":"jump_snd","path":"sounds/jump_snd/jump_snd.yy",},},
+    {"id":{"name":"level17","path":"rooms/level17/level17.yy",},},
     {"id":{"name":"land_snd","path":"sounds/land_snd/land_snd.yy",},},
     {"id":{"name":"level_TristramRoom","path":"rooms/level_TristramRoom/level_TristramRoom.yy",},},
     {"id":{"name":"zombieGirlAttack2_spr","path":"sprites/zombieGirlAttack2_spr/zombieGirlAttack2_spr.yy",},},
@@ -2160,6 +2161,7 @@
   ],
   "RoomOrderNodes": [
     {"roomId":{"name":"loadVars","path":"rooms/loadVars/loadVars.yy",},},
+    {"roomId":{"name":"level17","path":"rooms/level17/level17.yy",},},
     {"roomId":{"name":"credits","path":"rooms/credits/credits.yy",},},
     {"roomId":{"name":"mainmenu","path":"rooms/mainmenu/mainmenu.yy",},},
     {"roomId":{"name":"level0","path":"rooms/level0/level0.yy",},},
