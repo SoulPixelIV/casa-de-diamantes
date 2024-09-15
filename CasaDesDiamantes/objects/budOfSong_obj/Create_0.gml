@@ -20,12 +20,14 @@ lostArm = false;
 spawnedArm = false;
 icecicleAttackTimer = 200;
 
+nearestEnemy = noone;
+buffEnabled = false;
 lastBullet = bulletPistol_obj;
 ammoSpawnCount = 4;
 animationSpeed = 0.75;
 savePosX = x;
 savePosY = y;
-attackCooldown = 375;
+attackCooldown = 860;
 delay = false;
 isDashing = false;
 attackDelay = 50;

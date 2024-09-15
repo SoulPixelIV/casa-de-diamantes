@@ -391,15 +391,23 @@ if (!attackInProg && !attackInProg2 && aggro && !jumpToNewDest && (verspeed < 0.
 //Prepare Attack
 if (attackCooldown < 0)
 {
-	if (distance_to_object(player_obj) < hideDistance) {
-		sprite_index = florablasterAttack2_spr;
-		movement = false;
-		attackInProg2 = true;
-	} else {
-		sprite_index = florablasterAttack1_spr;
-		movement = false;
-		attackInProg = true;
+	//if (distance_to_object(player_obj) < hideDistance) {
+		//sprite_index = florablasterAttack2_spr;
+		//movement = false;
+		//attackInProg2 = true;
+	//} else {
+	if (instance_exists(enemy_obj)) {
+		xx = x;
+		x -= 10000;
+		nearestEnemy = instance_nearest(xx, y, enemy_obj);
+		x += 10000
+		if (distance_to_object(nearestEnemy) < buffRange) {
+			sprite_index = budOfSongSinging_spr;
+			movement = false;
+			attackInProg = true;
+		}
 	}
+	//}
 
 	attackCooldown = attackCooldownSave;
 }
@@ -421,50 +429,17 @@ if (attackInProg || attackInProg2) {
 
 if (attackInProg)
 {	
-	//Attack Flashing
-	if (attack1PrepareTimer < 150 && attack1PrepareTimer > 0) {
-		attackTintTimer -= global.dt;
-		if (attackTintTimer > 0) {
-			attackTint = true;
-			attackTintDelay = attackTintDelaySave;
+	if (attack1PrepareTimer < 0) {	
+		if (!buffEnabled) {
+			buffEnabled = true;
+			nearestEnemy.buffed = true;
 		}
-		if (attackTintTimer < 0) {
-			attackTint = false;
-			attackTintDelay -= global.dt;
-		}
-		
-		if (attackTintDelay < 0) {
-			attackTintTimer = attackTintTimerSave;
-		}
-	}
-	
-	if (attack1PrepareTimer < 0) {		
-		attackTint = false;
-		attackTintTimer = attackTintTimerSave;
-		attackTintDelay = -1;
-	
 		attack1StopTimer -= global.dt;
-		snapHitboxDelay -= global.dt;
-		
-		//Only Spawn hitbox once
-		if (!snapAttack) {
-			sprite_index = florablasterAttack1Start_spr;
-	
-			if (snapHitboxDelay < 0) {
-				instance_create_layer(x, y - 24, "Instances", sensoryRocket_obj);
-
-				snapAttack = true;
-			}
-		}
 	}
-}
-
-if (attackInProg && snapAttack && attack1StopTimer < 0) {
-	sprite_index = florablasterAttack1Stop_spr;
 }
 
 //END Attack 1
-if (attackInProg && sprite_index == florablasterAttack1Stop_spr && image_index = image_number -1) {
+if (attackInProg && attack1StopTimer < 0 && image_index = image_number -1) {
 	attackDelay = attackDelaySave;
 	attack1PrepareTimer = attack1PrepareTimerSave;
 	attack1StopTimer = attack1StopTimerSave + random_range(-20, 20);
@@ -472,10 +447,11 @@ if (attackInProg && sprite_index == florablasterAttack1Stop_spr && image_index =
 	snapAttack = false;
 	attackInProg = false;
 	animationSpeed = 0.75;
-	sprite_index = florablaster_spr;
+	sprite_index = budOfSong_spr;
 	damageCollision = false;
 	movement = true;
 	spawnedHitbox = false;
+	buffEnabled = false;
 }
 
 //START ATTACK 2

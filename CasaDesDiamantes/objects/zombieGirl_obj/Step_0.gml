@@ -19,6 +19,15 @@ else
 	dirLookat = 0;
 }
 
+//Apply Buff
+if (buffed) {
+	if (!buffApplied) {
+		hp *= 2.5
+		freezeRes *= 2.5;
+		buffApplied = true;
+	}
+}
+
 //Walking Animation
 if (horspeed != 0 && !attackInProg && !attackInProg2) {
 	animationSpeed = 0.5;
