@@ -5,7 +5,7 @@ if (!gotSpawned)
 	spawn = instance_create_layer(x, y, "Instances", enemyHiddenSpawnpoint_obj);
 	spawn.hp = hp;
 	spawn.aggroRange = aggroRange;
-	spawn.spawnID = zombieGirl_obj;
+	spawn.spawnID = budOfSong_obj;
 	spawn.dir = image_xscale;
 	gotSpawned = true;
 }
@@ -20,8 +20,8 @@ else
 }
 
 if (externalAggroTrigger) {
-	if (instance_exists(florablasterTrigger_obj)) {
-		if (florablasterTrigger_obj.trigger == true) {
+	if (instance_exists(budofsongTrigger_obj)) {
+		if (budofsongTrigger_obj.trigger == true) {
 			aggro = true;
 		}
 	}
@@ -34,6 +34,30 @@ if (horspeed != 0 && !attackInProg && !attackInProg2) {
 	sprite_index = zombieGirlWalking_spr;
 }
 */
+
+//Apply Buff
+if (buffed) {
+	if (!buffApplied) {
+		if (hp < hpSave * 2.5) {
+			hp *= 2.5
+		}
+		if (freezeRes < freezeResSave * 2.5) {
+			freezeRes *= 2.5;
+		}
+		buffApplied = true;
+	}
+	buffTimer -= global.dt;
+}
+
+if (buffTimer < 0) {
+	buffApplied = false;
+	buffed = false;
+	
+	movSpeed = movSpeedSave;
+	damage = damageSave;
+	
+	buffTimer = buffTimerSave;
+}
 
 //Sight Check
 if (instance_exists(player_obj)) {
@@ -308,7 +332,7 @@ if (hp < 0)
 		{
 			repeat (ceil(ammoSpawnCount / 4))
 			{
-				instance_create_layer(x, y, "Instances", ammoShotgunSmall_obj);
+				instance_create_layer(x, y - 22, "Instances", ammoShotgunSmall_obj);
 			}
 		}
 	}
@@ -318,7 +342,7 @@ if (hp < 0)
 		{
 			repeat (ammoSpawnCount)
 			{
-				instance_create_layer(x, y, "Instances", ammoPistolSmall_obj);
+				instance_create_layer(x, y - 22, "Instances", ammoPistolSmall_obj);
 			}
 		}
 	}
@@ -328,7 +352,7 @@ if (hp < 0)
 		{
 			repeat (ceil(ammoSpawnCount / 4))
 			{
-				instance_create_layer(x, y, "Instances", ammoSniperSmall_obj);
+				instance_create_layer(x, y - 22, "Instances", ammoSniperSmall_obj);
 			}
 		}
 	}
@@ -338,7 +362,7 @@ if (hp < 0)
 		{
 			repeat (ceil(ammoSpawnCount / 2))
 			{
-				instance_create_layer(x, y, "Instances", ammoSilencedMPSmall_obj);
+				instance_create_layer(x, y - 22, "Instances", ammoSilencedMPSmall_obj);
 			}
 		}
 	}
@@ -351,15 +375,15 @@ if (hp < 0)
 		
 		if (chip == 1)
 		{
-			instance_create_layer(x, y, "Instances", chipBluePickup_obj);
+			instance_create_layer(x, y - 22, "Instances", chipBluePickup_obj);
 		}
 		if (chip == 2)
 		{
-			instance_create_layer(x, y, "Instances", chipRedPickup_obj);
+			instance_create_layer(x, y - 22, "Instances", chipRedPickup_obj);
 		}
 		if (chip == 3)
 		{
-			instance_create_layer(x, y, "Instances", chipVioletPickup_obj);
+			instance_create_layer(x, y - 22, "Instances", chipVioletPickup_obj);
 		}
 	}
 	
@@ -391,23 +415,29 @@ if (!attackInProg && !attackInProg2 && aggro && !jumpToNewDest && (verspeed < 0.
 //Prepare Attack
 if (attackCooldown < 0)
 {
-	//if (distance_to_object(player_obj) < hideDistance) {
-		//sprite_index = florablasterAttack2_spr;
-		//movement = false;
-		//attackInProg2 = true;
-	//} else {
-	if (instance_exists(enemy_obj)) {
-		xx = x;
-		x -= 10000;
-		nearestEnemy = instance_nearest(xx, y, enemy_obj);
-		x += 10000
-		if (distance_to_object(nearestEnemy) < buffRange) {
-			sprite_index = budOfSongSinging_spr;
-			movement = false;
-			attackInProg = true;
+	if (distance_to_object(player_obj) < hideDistance) {
+		nearestEnemy = id;
+		attackInProg = true;
+		sprite_index = budOfSongSinging_spr;
+		movement = false;
+	} else {
+		if (instance_exists(enemy_obj)) {
+			xx = x;
+			x -= 10000;
+			nearestEnemy = instance_nearest(xx, y, enemy_obj);
+			x += 10000
+			if (distance_to_object(nearestEnemy) < buffRange) {
+				sprite_index = budOfSongSinging_spr;
+				movement = false;
+				attackInProg = true;
+			} else {
+				nearestEnemy = id;
+				sprite_index = budOfSongSinging_spr;
+				movement = false;
+				attackInProg = true;
+			}
 		}
 	}
-	//}
 
 	attackCooldown = attackCooldownSave;
 }
@@ -430,9 +460,22 @@ if (attackInProg || attackInProg2) {
 if (attackInProg)
 {	
 	if (attack1PrepareTimer < 0) {	
-		if (!buffEnabled) {
-			buffEnabled = true;
-			nearestEnemy.buffed = true;
+		if (!nearestEnemy.buffApplied) {
+			if (!buffEnabled) {
+				buffEnabled = true;
+			
+				var randNum = choose(1, 2)
+				if (randNum == 1) {
+					nearestEnemy.buffed = true;
+				} else {
+					nearestEnemy.aggroBuffed = true;
+				}
+			}
+		} else {
+			if (!buffEnabled) {
+				buffEnabled = true;
+				buffed = true;
+			}
 		}
 		attack1StopTimer -= global.dt;
 	}
@@ -540,7 +583,7 @@ if (attackDelay < 0)
 	else
 	{
 		if (!attackInProg) {
-			sprite_index = zombieGirl_spr;
+			sprite_index = budOfSong_spr;
 			//sprite_index = zombieGirlNoArm_spr;
 		}
 	}

@@ -40,6 +40,9 @@ if (damageTint) {
 if (buffed) {
 	draw_sprite(buff_spr, 0, x, y);
 }
+if (aggroBuffed) {
+	draw_sprite(aggroBuff_spr, 0, x, y);
+}
 
 shader_reset();
 gpu_set_blendmode(bm_normal);
