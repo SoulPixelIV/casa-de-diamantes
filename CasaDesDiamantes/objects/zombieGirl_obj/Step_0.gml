@@ -21,23 +21,28 @@ else
 
 //Apply Buff
 if (buffed) {
-	if (!buffApplied) {
-		if (hp < hpSave * 2.5) {
-			hp *= 2.5
+	randBuffDelay -= global.dt;
+	
+	if (randBuffDelay < 0) {
+		if (!buffApplied) {
+			if (hp < hpSave * 2.5) {
+				hp *= 2.5
+			}
+			if (freezeRes < freezeResSave * 2.5) {
+				freezeRes *= 2.5;
+			}
+			damage *= 1.5;
+			buffApplied = true;
 		}
-		if (freezeRes < freezeResSave * 2.5) {
-			freezeRes *= 2.5;
-		}
-		damage *= 1.5;
-		buffApplied = true;
+		buffTimer -= global.dt;
 	}
-	buffTimer -= global.dt;
 }
 
 if (buffTimer < 0) {
 	buffApplied = false;
 	buffed = false;
 	damage = damageSave;
+	randBuffDelay = randBuffDelaySave;
 	
 	buffTimer = buffTimerSave;
 }

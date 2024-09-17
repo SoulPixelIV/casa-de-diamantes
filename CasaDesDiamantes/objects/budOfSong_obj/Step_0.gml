@@ -36,6 +36,7 @@ if (horspeed != 0 && !attackInProg && !attackInProg2) {
 */
 
 //Apply Buff
+/*
 if (buffed) {
 	if (!buffApplied) {
 		if (hp < hpSave * 2.5) {
@@ -54,7 +55,7 @@ if (buffTimer < 0) {
 	buffed = false;
 	
 	buffTimer = buffTimerSave;
-}
+}*/
 
 //Sight Check
 if (instance_exists(player_obj)) {

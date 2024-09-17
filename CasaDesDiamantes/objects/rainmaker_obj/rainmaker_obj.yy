@@ -14,8 +14,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Enemies",
-    "path": "folders/Enemies/Enemies.yy",
+    "name": "Legacy Objects",
+    "path": "folders/Other + Legacy/Legacy Objects.yy",
   },
   "parentObjectId": {
     "name": "enemy_obj",

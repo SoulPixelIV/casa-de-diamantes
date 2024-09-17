@@ -52,7 +52,7 @@ if (ppfx_system_exists(ppfx_id)) {
 			ppfx_id.ProfileLoad(act2_profile);
 		} else if (room == level15) {
 			ppfx_id.ProfileLoad(act2_profile);
-		} else if (room == level16) {
+		} else if (room == level16 || room == level17) {
 			ppfx_id.ProfileLoad(act4_profile);
 		}
 	}

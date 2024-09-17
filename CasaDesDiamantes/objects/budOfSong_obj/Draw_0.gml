@@ -47,7 +47,9 @@ if (buffDir = 1) {
 } else {
 	buffScale -= global.dt / 200;
 }
-draw_sprite_ext(aggroBuff_spr, 0, x, y - 22, buffScale * 4, buffScale * 4, buffScale, -1, buffScale / 2);
 
 shader_reset();
 gpu_set_blendmode(bm_normal);
+
+buffRot += global.dt / 200;
+draw_sprite_ext(buffZone_spr, 0, x, y - 22, 1, 1, buffRot, -1, buffScale / 2);

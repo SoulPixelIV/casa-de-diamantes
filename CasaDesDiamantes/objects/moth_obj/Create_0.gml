@@ -37,6 +37,13 @@ groundSafeZone = 48;
 icecicleAttackTimer = 200;
 changeFlyPosTimer = random_range(85, 225);
 changeFlyPosTimerSave = changeFlyPosTimer;
+buffed = false;
+buffApplied = false;
+buffTimer = 3200;
+buffScale = 1;
+buffDir = 1;
+buffTimerSave = buffTimer;
+randBuffDelay = choose(20, 300);
 
 if (instance_exists(player_obj))
 {
@@ -76,6 +83,10 @@ lineFlashTimerSave = lineFlashTimer;
 turnDelaySave = turnDelay;
 gravityStrengthSave = gravityStrength;
 movSpeedSave = movSpeed;
+hpSave = hp;
+freezeResSave = freezeRes;
+damageSave = damage;
+randBuffDelaySave = randBuffDelay;
 
 image_yscale = -1;
 blend = image_blend;

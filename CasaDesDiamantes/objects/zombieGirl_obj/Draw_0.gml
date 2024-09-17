@@ -49,7 +49,7 @@ if (buffed) {
 	} else {
 		buffScale -= global.dt / 200;
 	}
-	draw_sprite_ext(aggroBuff_spr, 0, x, y, buffScale, buffScale, buffScale, -1, buffScale / 2);
+	draw_sprite_ext(buff_spr, 0, x, y, buffScale, buffScale, buffScale, -1, buffScale / 2);
 }
 
 shader_reset();

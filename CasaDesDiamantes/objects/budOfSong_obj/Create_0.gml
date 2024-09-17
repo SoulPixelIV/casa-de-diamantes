@@ -79,6 +79,7 @@ freezeResSave = freezeRes;
 playedSound = false;
 buffScale = 1;
 buffDir = 1;
+buffRot = 0;
 
 snapHitboxDelay = 45; //Delay until damage hitbox spawns
 snapHitbox2Delay = 45; //Delay until damage hitbox spawns

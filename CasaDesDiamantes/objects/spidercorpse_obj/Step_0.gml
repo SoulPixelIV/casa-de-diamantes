@@ -25,6 +25,34 @@ if (horspeed != 0 && !attackInProg && !attackInProg2) {
 	sprite_index = spidercorpseWalking_spr;
 }
 
+//Apply Buff
+if (buffed) {
+	randBuffDelay -= global.dt;
+	
+	if (randBuffDelay < 0) {
+		if (!buffApplied) {
+			if (hp < hpSave * 2.5) {
+				hp *= 2.5
+			}
+			if (freezeRes < freezeResSave * 2.5) {
+				freezeRes *= 2.5;
+			}
+			damage *= 1.5;
+			buffApplied = true;
+		}
+		buffTimer -= global.dt;
+	}
+}
+
+if (buffTimer < 0) {
+	buffApplied = false;
+	buffed = false;
+	damage = damageSave;
+	randBuffDelay = randBuffDelaySave;
+	
+	buffTimer = buffTimerSave;
+}
+
 //Sight Check
 if (instance_exists(player_obj)) {
 	if (!collision_line(x, y, player_obj.x, player_obj.y, collider_obj, false, true) && !collision_line(x, y, player_obj.x, player_obj.y, enemyVisionBlockZone_obj, false, true))
@@ -110,7 +138,12 @@ if (aggro) {
 	}
 }
 
-if (movement)
+if (global.pause) {
+	horspeed = 0;
+	verspeed = 0;
+}
+
+if (movement && !global.pause)
 {
 	if (aggro && (player_obj.x > x + 16 + randXDistanceToPlayer || player_obj.x < x - 16 + randXDistanceToPlayer))
 	{
@@ -202,14 +235,14 @@ if (movement)
 				stageJumpDelay -= global.dt;
 				
 				if (stageJumpDelay < 0) {
-					image_angle += 180;
 					noGravity = true;
 					y = ceilingCheck.y;
 					instance_destroy(ceilingCheck);
 					onCeiling = true;
 					movement = true;
-					stageJumpDelay = 120;
 					usedTeleportAnim = false;
+					image_angle += 180;
+					stageJumpDelay = 120;
 				}
 			}
 		}
@@ -217,11 +250,15 @@ if (movement)
 		randFallTimer -= global.dt;
 
 		if (randFallTimer < 0 || !place_meeting(x + 16 * image_xscale, y - 24, colliderGlobal_obj)) {
-			ceilingJumpTimer = ceilingJumpTimerSave;
-			image_angle = 0;
+			flipDelay -= global.dt;
 			noGravity = false;
-			onCeiling = false;
-			randFallTimer = random_range(500, 1400);
+			if (flipDelay < 0) {
+				image_angle = 0;
+				flipDelay = flipDelaySave;
+				onCeiling = false;
+				randFallTimer = random_range(500, 1400);
+				ceilingJumpTimer = ceilingJumpTimerSave;
+			}
 		}
 	}
 }

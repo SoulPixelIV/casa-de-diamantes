@@ -36,6 +36,7 @@ freezeResSave = freezeRes;
 buffScale = 1;
 buffDir = 1;
 buffTimerSave = buffTimer;
+randBuffDelay = choose(20, 300);
 
 damageTint = false;
 attackTint = false;
@@ -87,6 +88,7 @@ checkForPlayerPosTimerSave = checkForPlayerPosTimer;
 stageTeleportTimerSave = stageTeleportTimer;
 movSpeedSave = movSpeed;
 damageSave = damage;
+randBuffDelaySave = randBuffDelay;
 
 attack1PrepareTimerSave = attack1PrepareTimer;
 

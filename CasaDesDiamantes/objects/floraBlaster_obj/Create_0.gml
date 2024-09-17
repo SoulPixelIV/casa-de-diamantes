@@ -19,6 +19,15 @@ gotSpawned = false;
 lostArm = false;
 spawnedArm = false;
 icecicleAttackTimer = 200;
+buffed = false;
+buffApplied = false;
+buffTimer = 3200;
+hpSave = hp;
+freezeResSave = freezeRes;
+buffScale = 1;
+buffDir = 1;
+buffTimerSave = buffTimer;
+randBuffDelay = choose(20, 300);
 
 lastBullet = bulletPistol_obj;
 ammoSpawnCount = 4;
@@ -69,6 +78,8 @@ attack2PrepareTimer = 70; //Timer before snap attack begins
 attack2StopTimer = 850; //Timer after snap attack begins
 attack2HideTimer = 550;
 snapAttack2 = false; //Snap Attack is happening
+damageSave = damage;
+randBuffDelaySave = randBuffDelay;
 
 snapHitboxDelay = 45; //Delay until damage hitbox spawns
 snapHitbox2Delay = 45; //Delay until damage hitbox spawns
@@ -87,6 +98,10 @@ gravityStrengthSave = gravityStrength;
 checkForPlayerPosTimerSave = checkForPlayerPosTimer;
 stageTeleportTimerSave = stageTeleportTimer;
 movSpeedSave = movSpeed;
+damageSave = damage;
+randBuffDelaySave = randBuffDelay;
+hpSave = hp;
+freezeResSave = freezeRes;
 
 attack1PrepareTimerSave = attack1PrepareTimer;
 attack1StopTimerSave = attack1StopTimer;

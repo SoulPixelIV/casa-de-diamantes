@@ -84,6 +84,18 @@ onCeiling = false;
 randFallTimer = random_range(500, 1400);
 stageJumpDelay = 120;
 usedTeleportAnim = false;
+buffed = false;
+buffApplied = false;
+buffTimer = 3200;
+buffScale = 1;
+buffDir = 1;
+buffTimerSave = buffTimer;
+randBuffDelay = choose(20, 300);
+freezeResSave = freezeRes;
+flipDelay = 30;
+flipDelaySave = flipDelay;
+damageSave = damage;
+randBuffDelaySave = randBuffDelay;
 
 snapHitboxDelay = 45; //Delay until damage hitbox spawns
 snapHitbox2Delay = 8; //Delay until damage hitbox spawns
@@ -104,6 +116,7 @@ stageTeleportTimerSave = stageTeleportTimer;
 ceilingJumpTimerSave = ceilingJumpTimer;
 screamDelaySave = screamDelay;
 movSpeedSave = movSpeed;
+hpSave = hp;
 
 attack1PrepareTimerSave = attack1PrepareTimer;
 attack1StopTimerSave = attack1StopTimer;

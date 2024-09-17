@@ -47,6 +47,14 @@ aggro = false;
 aggroTimer = 130;
 deaggroTimer = 3000;
 exclamationmarkTimer = 250;
+buffed = false;
+buffApplied = false;
+buffTimer = 3200;
+buffScale = 1;
+buffDir = 1;
+buffTimerSave = buffTimer;
+randBuffDelay = choose(20, 300);
+hpSave = hp;
 
 checkForPlayerPosTimer = 650; //Occasionally check for player pos for stage jumping
 stageTeleportTimer = 120 + random_range(-30, 30); //Timer until stage jump starts
@@ -79,6 +87,9 @@ gravityStrengthSave = gravityStrength;
 checkForPlayerPosTimerSave = checkForPlayerPosTimer;
 stageTeleportTimerSave = stageTeleportTimer;
 movSpeedSave = movSpeed;
+freezeResSave = freezeRes;
+damageSave = damageAttack1;
+randBuffDelaySave = randBuffDelay;
 
 attack1PrepareTimerSave = attack1PrepareTimer;
 attack1StopTimerSave = attack1StopTimer;

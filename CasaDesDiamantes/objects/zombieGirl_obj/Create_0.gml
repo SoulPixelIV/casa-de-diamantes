@@ -77,6 +77,7 @@ hpSave = hp;
 freezeResSave = freezeRes;
 buffScale = 1;
 buffDir = 1;
+randBuffDelay = choose(20, 300);
 
 snapHitboxDelay = 45; //Delay until damage hitbox spawns
 snapHitbox2Delay = 45; //Delay until damage hitbox spawns
@@ -97,6 +98,7 @@ stageTeleportTimerSave = stageTeleportTimer;
 movSpeedSave = movSpeed;
 buffTimerSave = buffTimer;
 damageSave = damage;
+randBuffDelaySave = randBuffDelay;
 
 attack1PrepareTimerSave = attack1PrepareTimer;
 attack1StopTimerSave = attack1StopTimer;
