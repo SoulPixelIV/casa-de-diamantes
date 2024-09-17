@@ -257,6 +257,7 @@ currVolJumpPad = audio_sound_get_gain(jumpPad_snd);
 currVolTypewriter = audio_sound_get_gain(typewriter_snd);
 currVolTypewriterPush = audio_sound_get_gain(typewriterPush_snd);
 currVolHelicopter = audio_sound_get_gain(helicopter_snd);
+currVolSinging = audio_sound_get_gain(singing_snd);
 
 currVolInfectedVoice = audio_sound_get_gain(infectedVoice_snd);
 currVolInfectionVoice = audio_sound_get_gain(plagueInfectionVoice_snd);

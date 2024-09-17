@@ -96,6 +96,7 @@ audio_sound_pitch(jumpPad_snd, clamp(1 * global.timeScale, 0.5, 1.5));
 audio_sound_pitch(typewriter_snd, clamp(1 * global.timeScale, 0.5, 1.5));
 audio_sound_pitch(typewriterPush_snd, clamp(1 * global.timeScale, 0.5, 1.5));
 audio_sound_pitch(helicopter_snd, clamp(1 * global.timeScale, 0.5, 1.5));
+audio_sound_pitch(singing_snd, clamp(1 * global.timeScale, 0.5, 1.5));
 
 audio_sound_pitch(infectedVoice_snd, clamp(1 * global.timeScale, 0.5, 1.5));
 audio_sound_pitch(plagueInfectionVoice_snd, clamp(1 * global.timeScale, 0.5, 1.5));
@@ -200,6 +201,7 @@ audio_sound_gain(jumpPad_snd, (global.soundVolume / 100) * currVolJumpPad, 0);
 audio_sound_gain(typewriter_snd, (global.soundVolume / 100) * currVolTypewriter, 0);
 audio_sound_gain(typewriterPush_snd, (global.soundVolume / 100) * currVolTypewriterPush, 0);
 audio_sound_gain(helicopter_snd, (global.soundVolume / 100) * currVolHelicopter, 0);
+audio_sound_gain(singing_snd, (global.soundVolume / 100) * currVolSinging, 0);
 
 audio_sound_gain(infectedVoice_snd, (global.soundVolume / 100) * currVolInfectedVoice, 0);
 audio_sound_gain(plagueInfectionVoice_snd, (global.soundVolume / 100) * currVolInfectionVoice, 0);

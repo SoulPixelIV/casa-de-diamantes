@@ -28,15 +28,7 @@ if (buffed) {
 		if (freezeRes < freezeResSave * 2.5) {
 			freezeRes *= 2.5;
 		}
-		buffApplied = true;
-	}
-	buffTimer -= global.dt;
-}
-if (aggroBuffed) {
-	if (!buffApplied) {
-		movSpeed *= 1.5;
-		damage *= 2;
-		freezeRes *= 2.5;
+		damage *= 1.5;
 		buffApplied = true;
 	}
 	buffTimer -= global.dt;
@@ -45,9 +37,6 @@ if (aggroBuffed) {
 if (buffTimer < 0) {
 	buffApplied = false;
 	buffed = false;
-	aggroBuffed = false;
-	
-	movSpeed = movSpeedSave;
 	damage = damageSave;
 	
 	buffTimer = buffTimerSave;
@@ -275,11 +264,7 @@ image_index += (global.dt / 15) * animationSpeed;
 
 //Frozen
 if (frozen) {
-	if (!aggroBuffed) {
-		movSpeed = movSpeedSave / 2;
-	} else {
-		movSpeed = (movSpeedSave * 1.5) / 2;
-	}
+	movSpeed = movSpeedSave / 2;
 	image_blend = make_color_rgb(120, 120, 255);
 	
 	//Icecicle Shot
@@ -293,11 +278,7 @@ if (frozen) {
 		}
 	}
 } else {
-	if (!aggroBuffed) {
-		movSpeed = movSpeedSave;
-	} else {
-		movSpeed = movSpeedSave * 1.5;
-	}
+	movSpeed = movSpeedSave;
 	if (!damageTint && !attackTint) {
 		image_blend = c_white;
 	}

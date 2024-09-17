@@ -8,6 +8,9 @@ damageRes = 1;
 colliding = false;
 hitable = true;
 frozen = false;
+buffed = false;
+buffApplied = false;
+buffTimer = 3200;
 freezeRes = 1;
 knockback = 0;
 movSpeed = 1.21;
@@ -28,6 +31,11 @@ playedSound = false;
 flameSound = noone;
 points = 75;
 icecicleAttackTimer = 200;
+hpSave = hp;
+freezeResSave = freezeRes;
+buffScale = 1;
+buffDir = 1;
+buffTimerSave = buffTimer;
 
 damageTint = false;
 attackTint = false;
@@ -65,6 +73,7 @@ light = noone;
 hitbox = noone;
 
 attackCooldownSave = attackCooldown;
+attackCooldownSaveBuffed = attackCooldownSave;
 attackDelay1Save = attackDelay1;
 attackDelay2Save = attackDelay2;
 
@@ -77,6 +86,7 @@ gravityStrengthSave = gravityStrength;
 checkForPlayerPosTimerSave = checkForPlayerPosTimer;
 stageTeleportTimerSave = stageTeleportTimer;
 movSpeedSave = movSpeed;
+damageSave = damage;
 
 attack1PrepareTimerSave = attack1PrepareTimer;
 

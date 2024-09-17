@@ -53,9 +53,6 @@ if (buffTimer < 0) {
 	buffApplied = false;
 	buffed = false;
 	
-	movSpeed = movSpeedSave;
-	damage = damageSave;
-	
 	buffTimer = buffTimerSave;
 }
 
@@ -415,10 +412,15 @@ if (!attackInProg && !attackInProg2 && aggro && !jumpToNewDest && (verspeed < 0.
 //Prepare Attack
 if (attackCooldown < 0)
 {
+	/*
 	if (distance_to_object(player_obj) < hideDistance) {
 		nearestEnemy = id;
 		attackInProg = true;
 		sprite_index = budOfSongSinging_spr;
+		if (!playedSound) {
+			audio_play_sound_on(emitter, singing_snd, false, false, 1, 0, choose(1.1, 1.3));		
+			playedSound = true;
+		}
 		movement = false;
 	} else {
 		if (instance_exists(enemy_obj)) {
@@ -426,16 +428,40 @@ if (attackCooldown < 0)
 			x -= 10000;
 			nearestEnemy = instance_nearest(xx, y, enemy_obj);
 			x += 10000
-			if (distance_to_object(nearestEnemy) < buffRange) {
-				sprite_index = budOfSongSinging_spr;
-				movement = false;
-				attackInProg = true;
-			} else {
-				nearestEnemy = id;
-				sprite_index = budOfSongSinging_spr;
-				movement = false;
-				attackInProg = true;
+			if (instance_exists(nearestEnemy)) {
+				if (distance_to_object(nearestEnemy) < buffRange) {
+					sprite_index = budOfSongSinging_spr;
+					movement = false;
+					attackInProg = true;
+					if (!playedSound) {
+						audio_play_sound_on(emitter, singing_snd, false, false, 1, 0, choose(1.1, 1.3));		
+						playedSound = true;
+					}
+				} else {
+					nearestEnemy = id;
+					sprite_index = budOfSongSinging_spr;
+					movement = false;
+					attackInProg = true;
+					if (!playedSound) {
+						audio_play_sound_on(emitter, singing_snd, false, false, 1, 0, choose(1.1, 1.3));		
+						playedSound = true;
+					}
+				}
 			}
+		}
+	}
+	*/
+	//Find all enemies in radius
+	for (var i = 0; i < instance_number(enemy_obj); ++i) {
+	    enemyList[i] = instance_find(enemy_obj,i);
+		if (distance_to_object(enemyList[i]) < buffRange) {
+			attackInProg = true;
+			sprite_index = budOfSongSinging_spr;
+			if (!playedSound) {
+				audio_play_sound_on(emitter, singing_snd, false, false, 1, 0, choose(1.1, 1.3));		
+				playedSound = true;
+			}
+			movement = false;
 		}
 	}
 
@@ -444,9 +470,9 @@ if (attackCooldown < 0)
 
 if (attackInProg || attackInProg2) {
 	//Stop every animation at last frame during attack
-	if (image_index > image_number - 1) {
-		image_index = image_number - 1;
-	}
+	//if (image_index > image_number - 1) {
+		//image_index = image_number - 1;
+	//}
 	
 	animationSpeed = 0.75;
 	if (attackInProg) {
@@ -459,30 +485,35 @@ if (attackInProg || attackInProg2) {
 
 if (attackInProg)
 {	
-	if (attack1PrepareTimer < 0) {	
-		if (!nearestEnemy.buffApplied) {
-			if (!buffEnabled) {
-				buffEnabled = true;
-			
-				var randNum = choose(1, 2)
-				if (randNum == 1) {
+	if (attack1PrepareTimer < 0) {
+		/*
+		if (instance_exists(nearestEnemy)) {
+			if (!nearestEnemy.buffApplied) {
+				if (!buffEnabled) {
+					buffEnabled = true;
 					nearestEnemy.buffed = true;
-				} else {
-					nearestEnemy.aggroBuffed = true;
+				}
+			} else {
+				if (!buffEnabled) {
+					buffEnabled = true;
+					buffed = true;
 				}
 			}
-		} else {
-			if (!buffEnabled) {
-				buffEnabled = true;
-				buffed = true;
+		}*/
+		for (var i = 0; i < array_length(enemyList); i++) {
+			if (instance_exists(enemyList[i])) {
+				if (!enemyList[i].buffApplied) {
+					enemyList[i].buffed = true;
+				}
 			}
 		}
+		
 		attack1StopTimer -= global.dt;
 	}
 }
 
 //END Attack 1
-if (attackInProg && attack1StopTimer < 0 && image_index = image_number -1) {
+if (attackInProg && attack1StopTimer < 0) {
 	attackDelay = attackDelaySave;
 	attack1PrepareTimer = attack1PrepareTimerSave;
 	attack1StopTimer = attack1StopTimerSave + random_range(-20, 20);
@@ -495,6 +526,7 @@ if (attackInProg && attack1StopTimer < 0 && image_index = image_number -1) {
 	movement = true;
 	spawnedHitbox = false;
 	buffEnabled = false;
+	playedSound = false;
 }
 
 //START ATTACK 2

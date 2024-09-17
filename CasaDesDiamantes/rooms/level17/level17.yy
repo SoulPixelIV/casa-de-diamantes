@@ -151,10 +151,9 @@
     {"name":"inst_1A96CB21","path":"rooms/level17/level17.yy",},
     {"name":"inst_5DC2BE90","path":"rooms/level17/level17.yy",},
     {"name":"inst_27EB656D","path":"rooms/level17/level17.yy",},
-    {"name":"inst_22EFC98B","path":"rooms/level17/level17.yy",},
-    {"name":"inst_5D6570B2","path":"rooms/level17/level17.yy",},
     {"name":"inst_7F505B76","path":"rooms/level17/level17.yy",},
     {"name":"inst_C694440","path":"rooms/level17/level17.yy",},
+    {"name":"inst_5737DFA","path":"rooms/level17/level17.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -324,8 +323,7 @@
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"budOfSong_obj","path":"objects/budOfSong_obj/budOfSong_obj.yy",},"propertyId":{"name":"maxRunAwayDistance","path":"objects/budOfSong_obj/budOfSong_obj.yy",},"value":"150",},
           ],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":4800.0,"y":2176.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_27EB656D","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"zombieGirl_obj","path":"objects/zombieGirl_obj/zombieGirl_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":4896.0,"y":2240.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_22EFC98B","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"zombieGirl_obj","path":"objects/zombieGirl_obj/zombieGirl_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":5024.0,"y":2240.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_5D6570B2","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"zombieGirl_obj","path":"objects/zombieGirl_obj/zombieGirl_obj.yy",},"properties":[],"rotation":0.0,"scaleX":-1.0,"scaleY":1.0,"x":5088.0,"y":2240.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_5737DFA","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"crawler_obj","path":"objects/crawler_obj/crawler_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":4939.0,"y":2266.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"MidgroundObjects","depth":1500,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Tiles","depth":1600,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":188,"SerialiseWidth":250,"TileCompressedData":[

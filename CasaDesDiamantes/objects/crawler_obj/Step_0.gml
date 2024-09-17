@@ -10,6 +10,29 @@ if (!gotSpawned)
 	gotSpawned = true;
 }
 
+//Apply Buff
+if (buffed) {
+	if (!buffApplied) {
+		if (hp < hpSave * 2.5) {
+			hp *= 2.5
+		}
+		if (freezeRes < freezeResSave * 2.5) {
+			freezeRes *= 2.5;
+		}
+		damage *= 1.5;
+		buffApplied = true;
+	}
+	buffTimer -= global.dt;
+}
+
+if (buffTimer < 0) {
+	buffApplied = false;
+	buffed = false;
+	damage = damageSave;
+	
+	buffTimer = buffTimerSave;
+}
+
 //Sight Check
 if (instance_exists(player_obj)) {
 	if (!collision_line(x, y, player_obj.x, player_obj.y, collider_obj, false, true) && !collision_line(x, y, player_obj.x, player_obj.y, enemyVisionBlockZone_obj, false, true))
