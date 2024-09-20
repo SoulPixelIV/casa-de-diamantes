@@ -21,7 +21,8 @@ else
 
 if (externalAggroTrigger) {
 	if (instance_exists(budofsongTrigger_obj)) {
-		if (budofsongTrigger_obj.trigger == true) {
+		var nearestTrigger = instance_nearest(x, y, budofsongTrigger_obj);
+		if (nearestTrigger.trigger == true) {
 			aggro = true;
 		}
 	}
