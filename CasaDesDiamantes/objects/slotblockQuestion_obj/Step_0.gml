@@ -48,46 +48,50 @@ if (spinTimer < 0)
 
 if (used && !spawned && spinDone)
 {
-	animationSpeed = 1;
-	audio_stop_sound(spinSound);
-	audio_play_sound_on(emitter, slotWin2_snd, false, false);
-	if (spawnElement1 != noone)
-	{
-		repeat(spawnNumber1)
+	if (!bomb) {
+		animationSpeed = 1;
+		audio_stop_sound(spinSound);
+		audio_play_sound_on(emitter, slotWin2_snd, false, false);
+		if (spawnElement1 != noone)
 		{
-			instance_create_layer(x, y - 16, "Instances", spawnElement1);
+			repeat(spawnNumber1)
+			{
+				instance_create_layer(x, y - 16, "Instances", spawnElement1);
+			}
 		}
-	}
-	if (spawnElement2 != noone)
-	{
-		repeat(spawnNumber2)
+		if (spawnElement2 != noone)
 		{
-			instance_create_layer(x, y - 16, "Instances", spawnElement2);
+			repeat(spawnNumber2)
+			{
+				instance_create_layer(x, y - 16, "Instances", spawnElement2);
+			}
 		}
-	}
-	if (spawnElement3 != noone)
-	{
-		repeat(spawnNumber3)
+		if (spawnElement3 != noone)
 		{
-			instance_create_layer(x, y - 16, "Instances", spawnElement3);
+			repeat(spawnNumber3)
+			{
+				instance_create_layer(x, y - 16, "Instances", spawnElement3);
+			}
 		}
-	}
-	if (spawnElement4 != noone)
-	{
-		repeat(spawnNumber4)
+		if (spawnElement4 != noone)
 		{
-			instance_create_layer(x, y - 16, "Instances", spawnElement4);
+			repeat(spawnNumber4)
+			{
+				instance_create_layer(x, y - 16, "Instances", spawnElement4);
+			}
 		}
-	}
-	if (spawnElement5 != noone)
-	{
-		repeat(spawnNumber5)
+		if (spawnElement5 != noone)
 		{
-			instance_create_layer(x, y - 16, "Instances", spawnElement5);
+			repeat(spawnNumber5)
+			{
+				instance_create_layer(x, y - 16, "Instances", spawnElement5);
+			}
 		}
+		spawned = true;
+		sprite_index = slotblockOff_spr;
+		animationSpeed = 1;
+	} else {
+		instance_change(slotblockBomb_obj, true);
 	}
-	spawned = true;
-	sprite_index = slotblockOff_spr;
-	animationSpeed = 1;
 }
 

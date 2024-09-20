@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "slotblockQuestion_obj",
+  "name": "slotblockBomb_obj",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
@@ -54,8 +54,8 @@
   ],
   "solid": false,
   "spriteId": {
-    "name": "slotblockQuestion_spr",
-    "path": "sprites/slotblockQuestion_spr/slotblockQuestion_spr.yy",
+    "name": "slotblockBomb_spr",
+    "path": "sprites/slotblockBomb_spr/slotblockBomb_spr.yy",
   },
   "spriteMaskId": null,
   "visible": true,

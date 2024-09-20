@@ -37,6 +37,9 @@ if (damageTint) {
 	damageTintTimer -= global.dt;
 }
 
+shader_reset();
+gpu_set_blendmode(bm_normal);
+
 if (buffed) {
 	if (buffScale > 1.1) {
 		buffDir = -1;
@@ -51,6 +54,3 @@ if (buffed) {
 	}
 	draw_sprite_ext(buff_spr, 0, x, y, buffScale, buffScale, buffScale, -1, buffScale / 2);
 }
-
-shader_reset();
-gpu_set_blendmode(bm_normal);
