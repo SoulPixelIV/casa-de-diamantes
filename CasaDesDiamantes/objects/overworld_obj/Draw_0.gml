@@ -33,6 +33,7 @@ if (menu == 0) {
 } else if (menu == 5) {
 	draw_text(32, optionsY[0], "[Level 15] Permitted Entrance");
 	draw_text(32, optionsY[1], "[Level 16] Control Room");
+	draw_text(32, optionsY[2], "[Level 17] Gamma Ray Concert");
 }
 
 draw_set_halign(fa_center);

@@ -11,15 +11,3 @@ else
 {
 	window_set_position(display_get_width() / 2 - xScreenSize * zoom, display_get_height() / 2 - yScreenSize * zoom);
 }
-
-if (keyboard_check_pressed(ord("P")))
-{
-	if (zoom == 1)
-	{
-		zoom = 2;
-	}
-	else
-	{
-		zoom = 1;
-	}
-}
