@@ -1,5 +1,13 @@
 draw_sprite_ext(sprite_index,image_index,x,y,image_xscale,image_yscale,image_angle, make_color_rgb(255, 122, 122), image_alpha);
 
+
+if (damageTint) {
+	blend = c_red;
+	damageTintTimer -= global.dt;
+} else {
+	blend = image_blend;
+}
+
 //Draw Aggro Mode
 if (aggroTimer < aggroTimerSave && aggroTimer > 0 && !aggro)
 {
@@ -16,11 +24,4 @@ if (frozen) {
 if (!aggro)
 {
 	exclamationmarkTimer = exclamationmarkTimerSave;
-}
-
-if (damageTint) {
-	blend = c_red;
-	damageTintTimer -= global.dt;
-} else {
-	blend = image_blend;
 }

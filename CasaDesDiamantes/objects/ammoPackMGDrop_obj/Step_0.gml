@@ -6,12 +6,12 @@ x += horspeed * global.dt / 3;
 y += verspeed * global.dt / 3;
 
 //Move towards player
-if (distance_to_object(player_obj) < 32 && global.shotgunAmmo != global.shotgunAmmoMax)
+if (distance_to_object(player_obj) < 32 && global.silencedMPAmmo != global.silencedMPAmmoMax)
 {
 	follow = true;
 }
 
-if (global.shotgunAmmo == global.shotgunAmmoMax) {
+if (global.silencedMPAmmo == global.silencedMPAmmoMax) {
 	follow = false;
 }
 

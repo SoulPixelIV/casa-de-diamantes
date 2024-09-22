@@ -14,24 +14,6 @@ if (!attackTint && damageTint) {
 
 draw_self();
 
-//Draw Aggro Mode
-if (aggroTimer < aggroTimerSave && aggroTimer > 0 && !aggro)
-{
-	draw_sprite(questionmark_spr, 0, x, y - 32);
-}
-if (aggro && exclamationmarkTimer > 0)
-{
-	exclamationmarkTimer -= global.dt;
-	draw_sprite(exclamationmark_spr, 0, x, y - 32);
-}
-if (frozen) {
-	draw_sprite(frozenskull_spr, 0, x, y - 32);	
-}
-if (!aggro)
-{
-	exclamationmarkTimer = exclamationmarkTimerSave;
-}
-
 if (damageTint) {
 	blend = c_red;
 	damageTintTimer -= global.dt;
@@ -55,4 +37,22 @@ if (buffed) {
 		buffScale -= global.dt / 200;
 	}
 	draw_sprite_ext(buff_spr, 0, x, y - 3, buffScale, buffScale, buffScale, -1, buffScale / 2);
+}
+
+//Draw Aggro Mode
+if (aggroTimer < aggroTimerSave && aggroTimer > 0 && !aggro)
+{
+	draw_sprite(questionmark_spr, 0, x, y - 32);
+}
+if (aggro && exclamationmarkTimer > 0)
+{
+	exclamationmarkTimer -= global.dt;
+	draw_sprite(exclamationmark_spr, 0, x, y - 32);
+}
+if (frozen) {
+	draw_sprite(frozenskull_spr, 0, x, y - 32);	
+}
+if (!aggro)
+{
+	exclamationmarkTimer = exclamationmarkTimerSave;
 }

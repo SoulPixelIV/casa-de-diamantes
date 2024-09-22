@@ -17,7 +17,9 @@ if (salveDelay < 0) {
 		spotlightPlayer_obj.shotlight = true;
 	}
 	
-	global.silencedMPAmmo--;
+	if (global.silencedMPAmmo > 0) {
+		global.silencedMPAmmo--;
+	}
 	salveAmount--;
 	salveDelay = salveDelaySave;
 	

@@ -7,6 +7,16 @@ if (!attackTint && damageTint) {
 
 draw_self();
 
+if (damageTint) {
+	blend = c_red;
+	damageTintTimer -= global.dt;
+} else {
+	blend = image_blend;
+}
+
+shader_reset();
+gpu_set_blendmode(bm_normal);
+
 //Draw Aggro Mode
 if (aggroTimer < aggroTimerSave && aggroTimer > 0 && !aggro)
 {
@@ -24,13 +34,3 @@ if (!aggro)
 {
 	exclamationmarkTimer = exclamationmarkTimerSave;
 }
-
-if (damageTint) {
-	blend = c_red;
-	damageTintTimer -= global.dt;
-} else {
-	blend = image_blend;
-}
-
-shader_reset();
-gpu_set_blendmode(bm_normal);

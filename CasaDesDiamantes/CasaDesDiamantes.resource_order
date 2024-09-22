@@ -734,7 +734,7 @@
     {"name":"PW0_SF3_teleporter","order":19,"path":"objects/PW0_SF3_teleporter/PW0_SF3_teleporter.yy",},
     {"name":"electricGateShort_spr","order":1,"path":"sprites/electricGateShort_spr/electricGateShort_spr.yy",},
     {"name":"blackjackChipHolderSpawner_obj","order":2,"path":"objects/blackjackChipHolderSpawner_obj/blackjackChipHolderSpawner_obj.yy",},
-    {"name":"jumpGoalDEBUG_obj","order":9,"path":"objects/jumpGoalDEBUG_obj/jumpGoalDEBUG_obj.yy",},
+    {"name":"jumpGoalDEBUG_obj","order":30,"path":"objects/jumpGoalDEBUG_obj/jumpGoalDEBUG_obj.yy",},
     {"name":"poisontear_spr","order":3,"path":"sprites/poisontear_spr/poisontear_spr.yy",},
     {"name":"electricGate2_spr","order":2,"path":"sprites/electricGate2_spr/electricGate2_spr.yy",},
     {"name":"electricGate3_spr","order":3,"path":"sprites/electricGate3_spr/electricGate3_spr.yy",},

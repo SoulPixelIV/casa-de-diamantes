@@ -14,24 +14,6 @@ if (attackTint && !damageTint) {
 
 draw_self();
 
-//Draw Aggro Mode
-if (aggroTimer < aggroTimerSave && aggroTimer > 0 && !aggro)
-{
-	draw_sprite(questionmark_spr, 0, x, y - 46);
-}
-if (aggro && exclamationmarkTimer > 0)
-{
-	exclamationmarkTimer -= global.dt;
-	draw_sprite(exclamationmark_spr, 0, x, y - 46);
-}
-if (frozen) {
-	draw_sprite(frozenskull_spr, 0, x, y - 46);	
-}
-if (!aggro)
-{
-	exclamationmarkTimer = exclamationmarkTimerSave;
-}
-
 if (damageTint) {
 	damageTintTimer -= global.dt;
 }
@@ -53,3 +35,21 @@ gpu_set_blendmode(bm_normal);
 
 buffRot += global.dt / 200;
 draw_sprite_ext(buffZone_spr, 0, x, y - 22, 1, 1, buffRot, -1, buffScale / 2);
+
+//Draw Aggro Mode
+if (aggroTimer < aggroTimerSave && aggroTimer > 0 && !aggro)
+{
+	draw_sprite(questionmark_spr, 0, x, y - 55);
+}
+if (aggro && exclamationmarkTimer > 0)
+{
+	exclamationmarkTimer -= global.dt;
+	draw_sprite(exclamationmark_spr, 0, x, y - 55);
+}
+if (frozen) {
+	draw_sprite(frozenskull_spr, 0, x, y - 55);	
+}
+if (!aggro)
+{
+	exclamationmarkTimer = exclamationmarkTimerSave;
+}
