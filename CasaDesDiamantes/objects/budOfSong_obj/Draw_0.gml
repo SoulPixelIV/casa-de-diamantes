@@ -33,8 +33,8 @@ if (buffDir = 1) {
 shader_reset();
 gpu_set_blendmode(bm_normal);
 
-buffRot += global.dt / 200;
-draw_sprite_ext(buffZone_spr, 0, x, y - 22, 1, 1, buffRot, -1, buffScale / 2);
+//buffRot += global.dt / 200;
+//draw_sprite_ext(buffZone_spr, 0, x, y - 22, 1, 1, buffRot, -1, buffScale / 2);
 
 //Draw Aggro Mode
 if (aggroTimer < aggroTimerSave && aggroTimer > 0 && !aggro)

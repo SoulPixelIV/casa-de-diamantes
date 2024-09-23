@@ -589,7 +589,6 @@
     {"id":{"name":"danceChallenge_obj","path":"objects/danceChallenge_obj/danceChallenge_obj.yy",},},
     {"id":{"name":"alarmLamp_spr","path":"sprites/alarmLamp_spr/alarmLamp_spr.yy",},},
     {"id":{"name":"lockIcon_spr","path":"sprites/lockIcon_spr/lockIcon_spr.yy",},},
-    {"id":{"name":"budOfSongTEMP_spr","path":"sprites/budOfSongTEMP_spr/budOfSongTEMP_spr.yy",},},
     {"id":{"name":"explosionSmall_spr","path":"sprites/explosionSmall_spr/explosionSmall_spr.yy",},},
     {"id":{"name":"fakeSewerGround_spr","path":"sprites/fakeSewerGround_spr/fakeSewerGround_spr.yy",},},
     {"id":{"name":"arrowShotWind_snd","path":"sounds/arrowShotWind_snd/arrowShotWind_snd.yy",},},

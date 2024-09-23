@@ -36,7 +36,7 @@
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"5f19a67d-2cf6-4b80-95ed-ba3f4dbd4688","blendMode":0,"displayName":"Background","isLocked":false,"opacity":100.0,"visible":false,},
   ],
   "nineSlice": null,
-  "origin": 7,
+  "origin": 4,
   "parent": {
     "name": "BudOfSong",
     "path": "folders/Enemies/Enemy Sprites/BudOfSong.yy",
@@ -78,7 +78,7 @@
     "visibleRange": null,
     "volume": 1.0,
     "xorigin": 26,
-    "yorigin": 59,
+    "yorigin": 29,
   },
   "swatchColours": null,
   "swfPrecision": 2.525,

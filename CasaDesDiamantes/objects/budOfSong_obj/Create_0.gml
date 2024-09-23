@@ -124,4 +124,3 @@ audio_emitter_falloff(emitter, audio_drop_start, audio_max_distance, 1);
 checkPlayerTimer = 50;
 checkPlayerTimerSave = checkPlayerTimer;
 checkPlayerTimer = 0;
-gravityStrength = 0;
