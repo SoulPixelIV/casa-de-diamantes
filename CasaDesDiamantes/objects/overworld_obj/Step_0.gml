@@ -37,7 +37,7 @@ if (menu == 4) {
 	options = 1;
 }
 if (menu == 5) {
-	options = 2;
+	options = 3;
 }
 
 if (pushDelay < 0) {
@@ -177,6 +177,10 @@ if (pushDelay < 0) {
 				break;
 				case 2:
 					room_goto(level17);
+					global.lastCheckpoint = noone;
+				break;
+				case 3:
+					room_goto(level18);
 					global.lastCheckpoint = noone;
 				break;
 			}
