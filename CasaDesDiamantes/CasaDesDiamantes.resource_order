@@ -229,6 +229,7 @@
     {"name":"whiteExplosionEffect_obj","order":15,"path":"objects/whiteExplosionEffect_obj/whiteExplosionEffect_obj.yy",},
     {"name":"playerVineDeathSkin1_spr","order":20,"path":"sprites/playerVineDeathSkin1_spr/playerVineDeathSkin1_spr.yy",},
     {"name":"menuCircleRed_obj","order":140,"path":"objects/menuCircleRed_obj/menuCircleRed_obj.yy",},
+    {"name":"warpzone3","order":4,"path":"rooms/warpzone3/warpzone3.yy",},
     {"name":"particleRed_spr","order":1,"path":"sprites/particleRed_spr/particleRed_spr.yy",},
     {"name":"stephOverworld_spr","order":1,"path":"sprites/stephOverworld_spr/stephOverworld_spr.yy",},
     {"name":"light_spr","order":2,"path":"sprites/light_spr/light_spr.yy",},

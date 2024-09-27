@@ -347,6 +347,7 @@
     {"id":{"name":"playerVineDeathSkin1_spr","path":"sprites/playerVineDeathSkin1_spr/playerVineDeathSkin1_spr.yy",},},
     {"id":{"name":"particleBlue_spr","path":"sprites/particleBlue_spr/particleBlue_spr.yy",},},
     {"id":{"name":"menuCircleRed_obj","path":"objects/menuCircleRed_obj/menuCircleRed_obj.yy",},},
+    {"id":{"name":"warpzone3","path":"rooms/warpzone3/warpzone3.yy",},},
     {"id":{"name":"particleRed_spr","path":"sprites/particleRed_spr/particleRed_spr.yy",},},
     {"id":{"name":"stephOverworld_spr","path":"sprites/stephOverworld_spr/stephOverworld_spr.yy",},},
     {"id":{"name":"light_spr","path":"sprites/light_spr/light_spr.yy",},},
@@ -2256,6 +2257,7 @@
     {"roomId":{"name":"settings","path":"rooms/settings/settings.yy",},},
     {"roomId":{"name":"storySelect","path":"rooms/storySelect/storySelect.yy",},},
     {"roomId":{"name":"cutscene3","path":"rooms/cutscene3/cutscene3.yy",},},
+    {"roomId":{"name":"warpzone3","path":"rooms/warpzone3/warpzone3.yy",},},
   ],
   "TextureGroups": [
     {"resourceType":"GMTextureGroup","resourceVersion":"1.3","name":"Default","autocrop":true,"border":2,"compressFormat":"bz2","directory":"","groupParent":null,"isScaled":true,"loadType":"default","mipsToGenerate":0,"targets":-1,},
