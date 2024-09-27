@@ -394,6 +394,7 @@
     {"name":"inst_2E6AA24A","path":"rooms/level15/level15.yy",},
     {"name":"inst_75C276F4","path":"rooms/level15/level15.yy",},
     {"name":"inst_DD82EAB","path":"rooms/level15/level15.yy",},
+    {"name":"inst_6122ED6C","path":"rooms/level15/level15.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -453,6 +454,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_5EB4D9B7","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"enemyBlockZone_obj","path":"objects/enemyBlockZone_obj/enemyBlockZone_obj.yy",},"properties":[],"rotation":0.0,"scaleX":7.375,"scaleY":10.0,"x":2624.0,"y":1088.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_427A5D22","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"cameraTarget2_obj","path":"objects/cameraTarget2_obj/cameraTarget2_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":4222.0,"y":1984.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_88EF6C7","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"fakewallTrigger_obj","path":"objects/fakewallTrigger_obj/fakewallTrigger_obj.yy",},"properties":[],"rotation":0.0,"scaleX":16.6875,"scaleY":9.8125,"x":3992.5,"y":2247.5,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_6122ED6C","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"level15_level16_teleporter","path":"objects/level15_level16_teleporter/level15_level16_teleporter.yy",},"properties":[],"rotation":0.0,"scaleX":8.875,"scaleY":12.937501,"x":5092.0,"y":2708.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMREffectLayer","resourceVersion":"1.0","name":"RedFilter","depth":400,"effectEnabled":true,"effectType":"_filter_colourise","gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[
         {"name":"g_Intensity","type":0,"value":"0.3",},
