@@ -71,11 +71,8 @@ if (instance_exists(player_obj)) {
 		{
 			if (distance_to_point(player_obj.x, player_obj.y) < aggroRange)
 			{
-				if ((image_xscale == 1 && player_obj.x >= x) || (image_xscale == -1 && player_obj.x <= x))
-				{
-					deaggroTimer = deaggroTimerSave;
-					aggroTimer -= global.dt;
-				}
+				deaggroTimer = deaggroTimerSave;
+				aggroTimer -= global.dt;
 			}
 		}
 		
