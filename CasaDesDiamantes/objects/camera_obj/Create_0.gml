@@ -88,6 +88,7 @@ weaponProhibitedTextTimer = 120;
 barkeeperWindowIndex = 2;
 drawDialogueBorder = false;
 chipDif = 0;
+minecartCamera = false;
 
 cameraSpeed = 0.02;
 ycameraSpeed = 0.02;

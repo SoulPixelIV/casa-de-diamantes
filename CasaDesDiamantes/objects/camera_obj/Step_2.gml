@@ -70,7 +70,7 @@ if (cameraTargetTimer < 0)
 //Floating Camera
 if (instance_exists(player_obj)) {
 	if (player_obj.inputMethod == 0 && !global.pause && !dialogueSystem_obj.inCutscene) {
-		if (follow == player_obj && !cameraTarget && !cameraTargetMovement)
+		if ((follow == player_obj || follow = minecart_obj) && !cameraTarget && !cameraTargetMovement)
 		{
 			snapCameraX = false;
 			snapCameraY = false;
@@ -86,7 +86,7 @@ if (instance_exists(player_obj)) {
 			}
 		}
 	} else {
-		if (follow == player_obj && !cameraTarget && !cameraTargetMovement)
+		if ((follow == player_obj || follow = minecart_obj) && !cameraTarget && !cameraTargetMovement)
 		{
 			snapCameraX = false;
 			snapCameraY = false;
@@ -125,6 +125,20 @@ if (!cameraTarget && !cameraTargetMovement)
 		snapCameraX = true;
 	}
 	*/
+}
+
+//Minecart Camera
+if (instance_exists(minecart_obj)) {
+	if (minecartCamera) {	
+		follow = minecart_obj;
+		cameraSpeed = 0.05;
+		ycameraSpeed = 0.05;
+	}
+}
+
+if (!minecartCamera) {	
+	cameraSpeed = 0.02;
+	ycameraSpeed = 0.02;
 }
 
 if (!cutsceneCamera) {
