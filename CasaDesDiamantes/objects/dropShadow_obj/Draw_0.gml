@@ -4,4 +4,10 @@ if (instance_exists(player_obj)) {
 			draw_self();
 		}
 	}
+	
+	if (player_obj.sittingInMinecart) {
+		image_alpha = 0;
+	} else {
+		image_alpha = 1;
+	}
 }

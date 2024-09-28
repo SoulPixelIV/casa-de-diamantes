@@ -10,9 +10,13 @@ if (inMinecart)
 		camera_obj.follow = self;
 	}
 	
-	player_obj.x = x;
-	player_obj.y = y - 32;
+	player_obj.x = x - 42;
+	player_obj.y = y - 16;
 }
+
+//Animation
+image_speed = 0;
+image_index += (global.dt / 15) * animationSpeed;
 
 //Audio
 if (audio_emitter_exists(emitter)) {
@@ -27,10 +31,12 @@ if (instance_exists(player_obj))
 	if (inMinecart && player_obj.key_left)
 	{
 		horspeed -= movSpeed;
+		animationSpeed -= movSpeed;
 	}
 	if (inMinecart && player_obj.key_right)
 	{
 		horspeed += movSpeed;
+		animationSpeed += movSpeed;
 	}
 
 	if (inMinecart)
@@ -38,17 +44,25 @@ if (instance_exists(player_obj))
 		if (horspeed > 0 && !player_obj.key_right)
 		{
 			horspeed -= movSpeed / 5;
+			animationSpeed -= movSpeed / 5;
 			if (horspeed < 0.1)
 			{
 				horspeed = 0;
+			}
+			if (animationSpeed < 0.1) {
+				animationSpeed = 0;
 			}
 		}
 		if (horspeed < 0 && !player_obj.key_left)
 		{
 			horspeed += movSpeed / 5;
+			animationSpeed += movSpeed / 5;
 			if (horspeed > -0.1)
 			{
 				horspeed = 0;
+			}
+			if (animationSpeed > -0.1) {
+				animationSpeed = 0;
 			}
 		}
 	}
@@ -70,6 +84,23 @@ if (instance_exists(player_obj))
 				horspeed = 0;
 			}
 		}
+		
+		if (animationSpeed > 0)
+		{
+			animationSpeed -= movSpeed / 5;
+			if (animationSpeed < 0.1)
+			{
+				animationSpeed = 0;
+			}
+		}
+		if (animationSpeed < 0)
+		{
+			animationSpeed += movSpeed / 5;
+			if (animationSpeed > -0.1)
+			{
+				animationSpeed = 0;
+			}
+		}
 	}
 }
 
@@ -81,6 +112,14 @@ if (horspeed > 1.65)
 if (horspeed < -1.65)
 {
 	horspeed = -1.65;
+}
+
+//Max Animation Speed
+if (animationSpeed > animationSpeedMax) {
+	animationSpeed = animationSpeedMax;
+}
+if (animationSpeed < -animationSpeedMax) {
+	animationSpeed = -animationSpeedMax;
 }
 
 if (horspeed > 0.5 || horspeed < -0.5) {
@@ -145,9 +184,10 @@ if (instance_exists(player_obj))
 		player_obj.activateTrailEffect = false;
 		player_obj.movement = true;
 		player_obj.invincible = false;
+		player_obj.sittingInMinecart = false;
 		player_obj.horspeed += horspeed;
-		player_obj.x = x;
-		player_obj.y = y - 64;
+		player_obj.x = x - 42;
+		player_obj.y = y - 32;
 		jump_scr();
 		camera_obj.follow = player_obj;
 		player_obj.colliding = true;

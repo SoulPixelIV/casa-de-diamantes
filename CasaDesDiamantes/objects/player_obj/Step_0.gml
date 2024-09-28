@@ -377,9 +377,9 @@ if (global.drunknessLevel > 0) {
 }
 
 //Stop Dash in Minecart
-if (instance_exists(minecartForeground_obj))
+if (instance_exists(minecart_obj))
 {
-	if (instance_nearest(x, y, minecartForeground_obj).inMinecart)
+	if (instance_nearest(x, y, minecart_obj).inMinecart)
 	{
 		stoppedDashing = true;
 		stillInAir = true;
