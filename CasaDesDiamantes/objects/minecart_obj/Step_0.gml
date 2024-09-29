@@ -1,3 +1,5 @@
+enterDelay -= global.dt;
+
 if (inMinecart)
 {
 	player_obj.movement = false;
@@ -10,7 +12,12 @@ if (inMinecart)
 		camera_obj.minecartCamera = true;
 	}
 	
-	player_obj.x = x - 46;
+	if (image_xscale == 1) {
+		player_obj.x = x - 46;
+	} else {
+		player_obj.x = x + 46;
+	}
+	
 	player_obj.y = y - 16;
 }
 
@@ -186,7 +193,11 @@ if (instance_exists(player_obj))
 		player_obj.invincible = false;
 		player_obj.sittingInMinecart = false;
 		player_obj.horspeed += horspeed;
-		player_obj.x = x - 46;
+		if (image_xscale == 1) {
+			player_obj.x = x - 46;
+		} else {
+			player_obj.x = x + 46;
+		}
 		player_obj.y = y - 42;
 		jump_scr();
 		camera_obj.follow = player_obj;
@@ -195,6 +206,7 @@ if (instance_exists(player_obj))
 		camera_obj.cameraSpeed = 0.02;
 		camera_obj.ycameraSpeed = 0.02;
 		player_obj.colliding = true;
+		enterDelay = enterDelaySave;
 	}
 }
 

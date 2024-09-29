@@ -85,7 +85,7 @@ if (room == mainmenu || room == levelSelect || room == storySelect || room == de
 	ppfx_id.ProfileLoad(casino_profile);
 } else if (room == level_CasinoRoof) {
 	ppfx_id.ProfileLoad(act1_profile);
-} else if (room == level0 || room == warpzone1 || room == warpzone2) {
+} else if (room == level0 || room == warpzone1 || room == warpzone2 || room == warpzone3) {
 	ppfx_id.ProfileLoad(tutorial_profile);
 } else if (room == level1) {
 	ppfx_id.ProfileLoad(act1_profile);

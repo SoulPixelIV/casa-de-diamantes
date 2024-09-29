@@ -8,13 +8,16 @@ movSpeed = 0.007;
 playedCrashSound = false;
 animationSpeed = 0;
 animationSpeedMax = 2;
-sprite_index = minecartForeground_spr;
+createdMinecart = false;
+
+enterDelay = 75;
+enterDelaySave = enterDelay;
+enterDelay = 0;
 
 trailDensity = 1;
 
 trailDensitySave = trailDensity;
 
-instance_create_layer(x, y, "BackgroundObjects", minecartBackground_obj);
 instance_create_layer(x, y, "Instances", minecartHiddenSpawnpoint_obj);
 
 //Create Emitter
