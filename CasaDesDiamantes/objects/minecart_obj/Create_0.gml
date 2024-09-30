@@ -9,6 +9,7 @@ playedCrashSound = false;
 animationSpeed = 0;
 animationSpeedMax = 2;
 createdMinecart = false;
+offline = false;
 
 enterDelay = 75;
 enterDelaySave = enterDelay;
