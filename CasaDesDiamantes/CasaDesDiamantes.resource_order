@@ -196,6 +196,7 @@
     {"name":"playerFlipOLD_spr","order":22,"path":"sprites/playerFlipOLD_spr/playerFlipOLD_spr.yy",},
     {"name":"elevatorSelectMenuButton2_obj","order":7,"path":"objects/elevatorSelectMenuButton2_obj/elevatorSelectMenuButton2_obj.yy",},
     {"name":"ledStripe_spr","order":12,"path":"sprites/ledStripe_spr/ledStripe_spr.yy",},
+    {"name":"temp","order":257,"path":"sprites/temp/temp.yy",},
     {"name":"beatVeryHigh_msc","order":3,"path":"sounds/beatVeryHigh_msc/beatVeryHigh_msc.yy",},
     {"name":"ledStripe2_spr","order":13,"path":"sprites/ledStripe2_spr/ledStripe2_spr.yy",},
     {"name":"doorDecorative_spr","order":14,"path":"sprites/doorDecorative_spr/doorDecorative_spr.yy",},

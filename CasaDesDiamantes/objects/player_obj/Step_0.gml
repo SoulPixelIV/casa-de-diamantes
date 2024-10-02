@@ -553,8 +553,8 @@ if (movement && !isZombie)
 		}
 		else
 		{
-			huggingWall = false;
-			setWallDir = false;
+			//huggingWall = false;
+			//setWallDir = false;
 		}
 	}
 	

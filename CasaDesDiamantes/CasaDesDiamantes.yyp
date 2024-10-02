@@ -312,6 +312,7 @@
     {"id":{"name":"playerFlipOLD_spr","path":"sprites/playerFlipOLD_spr/playerFlipOLD_spr.yy",},},
     {"id":{"name":"elevatorSelectMenuButton2_obj","path":"objects/elevatorSelectMenuButton2_obj/elevatorSelectMenuButton2_obj.yy",},},
     {"id":{"name":"ledStripe_spr","path":"sprites/ledStripe_spr/ledStripe_spr.yy",},},
+    {"id":{"name":"temp","path":"sprites/temp/temp.yy",},},
     {"id":{"name":"beatVeryHigh_msc","path":"sounds/beatVeryHigh_msc/beatVeryHigh_msc.yy",},},
     {"id":{"name":"ledStripe2_spr","path":"sprites/ledStripe2_spr/ledStripe2_spr.yy",},},
     {"id":{"name":"doorDecorative_spr","path":"sprites/doorDecorative_spr/doorDecorative_spr.yy",},},
