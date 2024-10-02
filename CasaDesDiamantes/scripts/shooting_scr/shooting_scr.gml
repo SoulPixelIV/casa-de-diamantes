@@ -171,7 +171,16 @@ function shooting_scr(argument0) {
 			{
 				//player_obj.horGrounded = false;
 				var shotgunShot = audio_play_sound(shotgunShot_snd, 1, false);
-				audio_sound_pitch(shotgunShot, random_range(0.9, 1.1));		
+				
+				if (global.shotgunAmmo > 2) {
+					audio_sound_pitch(shotgunShot, random_range(0.9, 1.1));
+				}
+				if (global.shotgunAmmo == 2) {
+					audio_sound_pitch(shotgunShot, 1.2);
+				}
+				if (global.shotgunAmmo <= 1) {
+					audio_sound_pitch(shotgunShot, 1.4);
+				}
 		
 				var shotLightx = x + lengthdir_x(24, dirCursor);
 				var shotLighty = y - 8 + lengthdir_y(24, dirCursor);
@@ -301,10 +310,25 @@ function shooting_scr(argument0) {
 		if (argument0 == "bow")
 		{
 			screenshake(130, 50, 0.6, id);
-			var rifleShot = audio_play_sound(sniperShot_snd, 1, false);
-			audio_sound_pitch(rifleShot, random_range(0.9, 1.1));
-			var pingSound = audio_play_sound(riflePing_snd, 1, false);
-			audio_sound_pitch(pingSound, random_range(0.9, 1.1));	
+			
+			if (global.bowAmmo > 2) {
+				var rifleShot = audio_play_sound(sniperShot_snd, 1, false);
+				audio_sound_pitch(rifleShot, random_range(0.9, 1.1));
+				var pingSound = audio_play_sound(riflePing_snd, 1, false);
+				audio_sound_pitch(pingSound, random_range(0.9, 1.1));
+			}
+			if (global.bowAmmo == 2) {
+				var rifleShot = audio_play_sound(sniperShot_snd, 1, false);
+				audio_sound_pitch(rifleShot, 1.2);
+				var pingSound = audio_play_sound(riflePing_snd, 1, false);
+				audio_sound_pitch(pingSound, 1.2);
+			}
+			if (global.bowAmmo <= 1) {
+				var rifleShot = audio_play_sound(sniperShot_snd, 1, false);
+				audio_sound_pitch(rifleShot, 1.4);
+				var pingSound = audio_play_sound(riflePing_snd, 1, false);
+				audio_sound_pitch(pingSound, 1.4);
+			}
 		
 			var shotLightx = x + lengthdir_x(36, dirCursor);
 			var shotLighty = y - 8 + lengthdir_y(36, dirCursor);
