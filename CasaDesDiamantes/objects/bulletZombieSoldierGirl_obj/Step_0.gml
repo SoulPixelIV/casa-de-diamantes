@@ -33,7 +33,7 @@ if (invincibilityTimer <= 0)
 	}
 }
 
-if (place_meeting(x, y, player_obj) && !player_obj.isZombie && !player_obj.invincible && !player_obj.damageRecieved && speed != 0)
+if (place_meeting(x, y, player_obj) && !player_obj.isZombie && !player_obj.invincible && !player_obj.damageRecieved && speed != 0 && !player_obj.inChamber)
 {
 	player_obj.hpOld = player_obj.hp;
 	player_obj.hp -= 28;
