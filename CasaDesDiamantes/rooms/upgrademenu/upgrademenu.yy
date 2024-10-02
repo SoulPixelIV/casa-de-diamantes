@@ -26,6 +26,9 @@
     {"name":"inst_37E419FC","path":"rooms/upgrademenu/upgrademenu.yy",},
     {"name":"inst_3EB34286","path":"rooms/upgrademenu/upgrademenu.yy",},
     {"name":"inst_295E84F4","path":"rooms/upgrademenu/upgrademenu.yy",},
+    {"name":"inst_1C15694A","path":"rooms/upgrademenu/upgrademenu.yy",},
+    {"name":"inst_282340DA","path":"rooms/upgrademenu/upgrademenu.yy",},
+    {"name":"inst_622D6989","path":"rooms/upgrademenu/upgrademenu.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -65,6 +68,9 @@
           ],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":368.0,"y":208.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_3EB34286","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"dualBarettas_obj","path":"objects/dualBarettas_obj/dualBarettas_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":112.0,"y":72.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_295E84F4","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"shotgun_obj","path":"objects/shotgun_obj/shotgun_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":176.0,"y":72.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_1C15694A","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"silencedMP_obj","path":"objects/silencedMP_obj/silencedMP_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":240.0,"y":73.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_282340DA","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"antiMaterialRifle_obj","path":"objects/antiMaterialRifle_obj/antiMaterialRifle_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":305.0,"y":74.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_622D6989","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"cutieplus_obj","path":"objects/cutieplus_obj/cutieplus_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":368.0,"y":73.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"BackgroundInstances","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_F446358","colour":2030043135,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"upgradeChain_pbj","path":"objects/upgradeChain_pbj/upgradeChain_pbj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":112.0,"y":166.0,},
