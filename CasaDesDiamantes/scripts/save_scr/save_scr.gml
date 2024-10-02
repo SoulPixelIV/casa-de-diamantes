@@ -55,6 +55,7 @@ function save_scr(){
 	ini_write_real("save1", "level4DoorOpen", global.level4DoorOpen);
 	ini_write_real("save1", "level6GateAOpen", global.level6GateAOpen);
 	ini_write_real("save1", "level6GateBOpen", global.level6GateBOpen);
+	ini_write_real("save1", "level15Shortcut", global.level15Shortcut);
 	
 	ini_write_real("save1", "warpzone1DoorOpen", global.warpzone1DoorOpen);
 	ini_write_real("save1", "warpzone1Reward", global.warpzone1Reward);

@@ -50,6 +50,7 @@ function load_scr(){
 	global.level4DoorOpen = ini_read_real("save1", "level4DoorOpen", false);
 	global.level6GateAOpen = ini_read_real("save1", "level6GateAOpen", false);
 	global.level6GateBOpen = ini_read_real("save1", "level6GateBOpen", false);
+	global.level15Shortcut = ini_read_real("save1", "level15Shortcut", false);
 	
 	global.warpzone1DoorOpen = ini_read_real("save1", "warpzone1DoorOpen", false);
 	global.warpzone1Reward = ini_read_real("save1", "warpzone1Reward", false);

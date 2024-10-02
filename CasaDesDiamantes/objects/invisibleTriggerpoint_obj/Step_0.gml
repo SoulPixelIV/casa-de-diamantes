@@ -4,7 +4,7 @@ if (place_meeting(x, y, player_obj) && !used || (place_meeting(x, y, crawler_obj
 {
 	if (!playedSound)
 	{
-		audio_play_sound(lever_snd, 1, false);
+		//audio_play_sound(lever_snd, 1, false);
 		playedSound = true;
 	}
 	if (instance_exists(crawler_obj))

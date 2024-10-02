@@ -24,7 +24,7 @@ if (teleportTimer < 0) {
 		room_goto(cutscene3);
 	}
 	if (global.moveToWorld == 5) {
-		room_goto(level15);
+		room_goto(weaponRemove);
 	}
 	if (global.moveToWorld == 6) {
 		room_goto(level10);

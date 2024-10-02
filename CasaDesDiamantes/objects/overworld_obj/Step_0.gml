@@ -168,7 +168,7 @@ if (pushDelay < 0) {
 			switch (cursorPos)
 			{
 				case 0:
-					room_goto(level15);
+					room_goto(weaponRemove);
 					global.lastCheckpoint = noone;
 				break;
 				case 1:

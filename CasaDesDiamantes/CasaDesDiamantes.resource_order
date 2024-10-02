@@ -642,6 +642,7 @@
     {"name":"EDENPowerplant","order":22,"path":"tilesets/EDENPowerplant/EDENPowerplant.yy",},
     {"name":"leverOff_spr","order":34,"path":"sprites/leverOff_spr/leverOff_spr.yy",},
     {"name":"beatMid_msc","order":1,"path":"sounds/beatMid_msc/beatMid_msc.yy",},
+    {"name":"weaponRemove","order":5,"path":"rooms/weaponRemove/weaponRemove.yy",},
     {"name":"transitionBlackscreen_obj","order":119,"path":"objects/transitionBlackscreen_obj/transitionBlackscreen_obj.yy",},
     {"name":"elevatorCheckpoint2_obj","order":5,"path":"objects/elevatorCheckpoint2_obj/elevatorCheckpoint2_obj.yy",},
     {"name":"bulletDetect_obj","order":12,"path":"objects/bulletDetect_obj/bulletDetect_obj.yy",},
