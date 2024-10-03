@@ -3,6 +3,10 @@ if (moving) {
 } else {
 	if (!open || (open && movedShortcut)) {
 		if (y < startPos) {
+			if (!playedSound) {
+				audio_play_sound_on(emitter, springLadderShortcut_snd, true, 1);
+				playedSound = true;
+			}
 			y += global.dt * 2;
 		}
 	}
@@ -23,6 +27,8 @@ if (shortcut && open && !movedShortcut) {
 	startPos = y;
 }
 
+//Sound Position
+audio_emitter_position(emitter, x, y, 0);
 
 
 
