@@ -7,5 +7,8 @@ if (pot > 99 && pot < 499) {
 if (pot > 499 && pot < 2999) {
 	image_index = 3;
 }
+if (pot > 2999) {
+	image_index = 4;
+}
 
 
