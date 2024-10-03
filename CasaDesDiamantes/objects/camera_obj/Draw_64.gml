@@ -10,65 +10,67 @@ if (global.pause) {
 if (instance_exists(player_obj) && !noHUD)
 {
 	//Ammo Counter
-	if (!player_obj.reloading)
-	{
-		anim = 0;
-		if (global.currentWeapon == pickedWeapon.dualBarettas)
+	if (room != level_Casino && room != level_CasinoRoof && room != level_Basement && room != level_DiningHall && room != level_TristramRoom) {
+		if (!player_obj.reloading)
 		{
-			if (global.pistolAmmo < 5)
+			anim = 0;
+			if (global.currentWeapon == pickedWeapon.dualBarettas)
 			{
-				draw_sprite_ext(ammoCounter_spr, global.pistolAmmo, ((player_obj.x) - x) + 220, ((player_obj.y - 20) - y) + 120, 1, 1, 0, -1, 1 / (global.pistolAmmo + 1) * 3);
+				if (global.pistolAmmo < 5)
+				{
+					draw_sprite_ext(ammoCounter_spr, global.pistolAmmo, ((player_obj.x) - x) + 220, ((player_obj.y - 20) - y) + 120, 1, 1, 0, -1, 1 / (global.pistolAmmo + 1) * 3);
+				}
 			}
-		}
-		if (global.currentWeapon == pickedWeapon.shotgun)
-		{
-			if (global.shotgunAmmo < 5)
+			if (global.currentWeapon == pickedWeapon.shotgun)
 			{
-				draw_sprite_ext(ammoCounter_spr, global.shotgunAmmo, ((player_obj.x) - x) + 220, ((player_obj.y - 20) - y) + 120, 1, 1, 0, -1, 1 / (global.shotgunAmmo + 1) * 3);
+				if (global.shotgunAmmo < 5)
+				{
+					draw_sprite_ext(ammoCounter_spr, global.shotgunAmmo, ((player_obj.x) - x) + 220, ((player_obj.y - 20) - y) + 120, 1, 1, 0, -1, 1 / (global.shotgunAmmo + 1) * 3);
+				}
 			}
-		}
-		if (global.currentWeapon == pickedWeapon.silencedMP)
-		{
-			if (global.silencedMPAmmo < 9)
+			if (global.currentWeapon == pickedWeapon.silencedMP)
 			{
-				draw_sprite_ext(ammoCounter_spr, global.silencedMPAmmo / 2, ((player_obj.x) - x) + 220, ((player_obj.y - 20) - y) + 120, 1, 1, 0, -1, 1 / (global.silencedMPAmmo + 1) * 2);
+				if (global.silencedMPAmmo < 9)
+				{
+					draw_sprite_ext(ammoCounter_spr, global.silencedMPAmmo / 2, ((player_obj.x) - x) + 220, ((player_obj.y - 20) - y) + 120, 1, 1, 0, -1, 1 / (global.silencedMPAmmo + 1) * 2);
+				}
 			}
-		}
-		if (global.currentWeapon == pickedWeapon.bow)
-		{
-			if (global.bowAmmo < 5)
+			if (global.currentWeapon == pickedWeapon.bow)
 			{
-				draw_sprite_ext(ammoCounter_spr, global.bowAmmo, ((player_obj.x) - x) + 220, ((player_obj.y - 20) - y) + 120, 1, 1, 0, -1, 1 / (global.bowAmmo + 1) * 3);
-			}
-		}
-	}
-	else
-	{
-		if (anim >= sprite_get_number(ammoCounterReloading_spr))
-		{
-			anim2 += global.dt / 20;
-			draw_sprite_ext(ammoCounterReloadingFailed_spr, anim2, player_obj.x - 22, player_obj.y - 20, 1, 1, 0, -1, 1);
-			if (anim2 >= sprite_get_number(ammoCounterReloadingFailed_spr))
-			{
-				anim2 = 0;
+				if (global.bowAmmo < 5)
+				{
+					draw_sprite_ext(ammoCounter_spr, global.bowAmmo, ((player_obj.x) - x) + 220, ((player_obj.y - 20) - y) + 120, 1, 1, 0, -1, 1 / (global.bowAmmo + 1) * 3);
+				}
 			}
 		}
 		else
 		{
-			anim += global.dt / 20;
-			draw_sprite_ext(ammoCounterReloading_spr, anim, player_obj.x - 22, player_obj.y - 20, 1, 1, 0, -1, 1);
-		}
-
-		//Check Perfect Reload
-		if (player_obj.key_reload && !reloadFailed && anim > 3)
-		{
-			if (anim > sprite_get_number(ammoCounterReloading_spr) - 3 && anim <= sprite_get_number(ammoCounterReloading_spr))
+			if (anim >= sprite_get_number(ammoCounterReloading_spr))
 			{
-				reload_scr();
+				anim2 += global.dt / 20;
+				draw_sprite_ext(ammoCounterReloadingFailed_spr, anim2, player_obj.x - 22, player_obj.y - 20, 1, 1, 0, -1, 1);
+				if (anim2 >= sprite_get_number(ammoCounterReloadingFailed_spr))
+				{
+					anim2 = 0;
+				}
 			}
 			else
 			{
-				reloadFailed = true;
+				anim += global.dt / 20;
+				draw_sprite_ext(ammoCounterReloading_spr, anim, player_obj.x - 22, player_obj.y - 20, 1, 1, 0, -1, 1);
+			}
+
+			//Check Perfect Reload
+			if (player_obj.key_reload && !reloadFailed && anim > 3)
+			{
+				if (anim > sprite_get_number(ammoCounterReloading_spr) - 3 && anim <= sprite_get_number(ammoCounterReloading_spr))
+				{
+					reload_scr();
+				}
+				else
+				{
+					reloadFailed = true;
+				}
 			}
 		}
 	}
@@ -1309,7 +1311,7 @@ if (!noHUD && instance_exists(player_obj))
 	}
 	
 	//Low Ammo Message
-	if (!redDoorMessage && !blueDoorMessage && !yellowDoorMessage && !warpzoneMessage && room != level_Casino && room != level_CasinoRoof) {
+	if (!redDoorMessage && !blueDoorMessage && !yellowDoorMessage && !warpzoneMessage && room != level_Casino && room != level_CasinoRoof && room != level_Basement && room != level_DiningHall && room != level_TristramRoom) {
 		draw_set_font(gothicPixel_fnt);
 		if (global.currentWeapon != gameManager_obj.pickedWeapon.pistol) {
 			if ((global.pistolAmmo < 6 && global.unlockedWeapon[1])) {
@@ -1910,7 +1912,7 @@ if (showWeaponProhibited && !drawElevatorSign && !showWindowMenu) {
 //Show Mission Text
 if (global.drawMission && !global.pause) {
 	if (global.storyAct == 0) {
-		if (room == level_Casino || room == level_CasinoRoof || room == level_DiningHall || room == level_Basement) {
+		if (room == level_Casino || room == level_CasinoRoof || room == level_DiningHall || room == level_Basement || room == level_TristramRoom) {
 			draw_set_halign(fa_center);
 			draw_set_font(gothicPixel_fnt);
 			draw_set_color(c_black);
