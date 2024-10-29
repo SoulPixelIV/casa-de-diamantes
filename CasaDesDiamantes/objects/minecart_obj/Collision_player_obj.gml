@@ -5,6 +5,7 @@ if (!offline) {
 			inMinecart = true;
 			player_obj.grounded = true;
 			player_obj.sittingInMinecart = true;
+			resetJump_scr();
 		}
 
 		if (!createdMinecart) {

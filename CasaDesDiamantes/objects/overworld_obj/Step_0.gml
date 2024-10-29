@@ -34,7 +34,7 @@ if (menu == 3) {
 	options = 4;
 }
 if (menu == 4) {
-	options = 1;
+	options = 2;
 }
 if (menu == 5) {
 	options = 3;
@@ -161,6 +161,10 @@ if (pushDelay < 0) {
 				break;
 				case 1:
 					room_goto(warpzone2);
+					global.lastCheckpoint = noone;
+				break;
+				case 2:
+					room_goto(warpzone3);
 					global.lastCheckpoint = noone;
 				break;
 			}
