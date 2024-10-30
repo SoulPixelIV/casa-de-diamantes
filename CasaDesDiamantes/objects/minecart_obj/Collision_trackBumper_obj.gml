@@ -20,7 +20,7 @@ if (!other.offline) {
 			} else {
 				player_obj.x = x + 46;
 			}
-			player_obj.y = y - 42;
+			player_obj.y = y - 32;
 			jump_scr();
 			camera_obj.follow = player_obj;
 			camera_obj.minecartCamera = false;
