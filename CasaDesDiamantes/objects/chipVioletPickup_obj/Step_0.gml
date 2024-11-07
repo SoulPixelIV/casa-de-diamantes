@@ -1,6 +1,6 @@
 invTimer -= global.dt;
 despawnTimer -= global.dt;
-if (despawnTimer < 0)
+if (despawnTimer < 0 || distance_to_object(player_obj) > 500)
 {
 	instance_destroy();
 }
