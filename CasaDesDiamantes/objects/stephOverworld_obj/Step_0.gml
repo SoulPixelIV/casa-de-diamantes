@@ -35,7 +35,8 @@ if (lastWorld == 4) {
 }
 
 if (distance_to_point(dest.x, dest.y) > 0) {
-	move_towards_point(dest.x, dest.y, global.dt);
+	x = dest.x - 6;
+	y = dest.y - 8;
 } else {
 	speed = 0;
 }
