@@ -1550,6 +1550,7 @@ if (showWindowMenu)
 		player_obj.movement = true;
 		bartender_obj.dialogueTriggered = false;
 		drawBlackborders = false;
+		drawText = false;
 		showWindowMenu = false;
 		windowType = 0;
 	}

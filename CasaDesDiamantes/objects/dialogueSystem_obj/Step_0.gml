@@ -53,15 +53,12 @@ if (startScene1Timer) {
 	}
 }
 //Scene 2
-if (scene2)
-{
+if (scene2) {
 	inCutscene = true;
 	startScene2Timer = true;
 	camera_obj.drawDialogueBorder = true;
-	if (!camera_obj.drawText)
-	{
-		for (i = scene2Low; i < scene2High + 1; i++)
-		{
+	if (!camera_obj.drawText) {
+		for (i = scene2Low; i < scene2High + 1; i++) {
 			camera_obj.dialogue[i] = dialogue[i];
 		}
 		camera_obj.dialogueLine = scene2Low;
