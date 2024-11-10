@@ -243,7 +243,7 @@ dialogue[75] = "";
 
 //Scene 12 CuPy Dialogue 1
 startScene12Timer = false;
-scene12Timer = 2400;
+scene12Timer = 3600;
 scene12TimerSave = scene12Timer;
 
 dialogue[76] = "%*bzzzzrr*";
