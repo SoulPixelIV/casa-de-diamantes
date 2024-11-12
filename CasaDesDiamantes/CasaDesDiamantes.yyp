@@ -874,6 +874,7 @@
     {"id":{"name":"antiMaterialRifle_obj","path":"objects/antiMaterialRifle_obj/antiMaterialRifle_obj.yy",},},
     {"id":{"name":"cutieplus_obj","path":"objects/cutieplus_obj/cutieplus_obj.yy",},},
     {"id":{"name":"toxicWater_spr","path":"sprites/toxicWater_spr/toxicWater_spr.yy",},},
+    {"id":{"name":"level19","path":"rooms/level19/level19.yy",},},
     {"id":{"name":"radiated_spr","path":"sprites/radiated_spr/radiated_spr.yy",},},
     {"id":{"name":"yellowKeyGate_spr","path":"sprites/yellowKeyGate_spr/yellowKeyGate_spr.yy",},},
     {"id":{"name":"rewardsign_obj","path":"objects/rewardsign_obj/rewardsign_obj.yy",},},
@@ -2269,6 +2270,7 @@
     {"roomId":{"name":"storySelect","path":"rooms/storySelect/storySelect.yy",},},
     {"roomId":{"name":"cutscene3","path":"rooms/cutscene3/cutscene3.yy",},},
     {"roomId":{"name":"weaponRemove","path":"rooms/weaponRemove/weaponRemove.yy",},},
+    {"roomId":{"name":"level19","path":"rooms/level19/level19.yy",},},
   ],
   "TextureGroups": [
     {"resourceType":"GMTextureGroup","resourceVersion":"1.3","name":"Default","autocrop":true,"border":2,"compressFormat":"bz2","directory":"","groupParent":null,"isScaled":true,"loadType":"default","mipsToGenerate":0,"targets":-1,},

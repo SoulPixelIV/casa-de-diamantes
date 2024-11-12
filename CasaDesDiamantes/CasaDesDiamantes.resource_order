@@ -728,6 +728,7 @@
     {"name":"antiMaterialRifle_obj","order":22,"path":"objects/antiMaterialRifle_obj/antiMaterialRifle_obj.yy",},
     {"name":"cutieplus_obj","order":3,"path":"objects/cutieplus_obj/cutieplus_obj.yy",},
     {"name":"toxicWater_spr","order":50,"path":"sprites/toxicWater_spr/toxicWater_spr.yy",},
+    {"name":"level19","order":6,"path":"rooms/level19/level19.yy",},
     {"name":"radiated_spr","order":229,"path":"sprites/radiated_spr/radiated_spr.yy",},
     {"name":"yellowKeyGate_spr","order":170,"path":"sprites/yellowKeyGate_spr/yellowKeyGate_spr.yy",},
     {"name":"rewardsign_obj","order":55,"path":"objects/rewardsign_obj/rewardsign_obj.yy",},
