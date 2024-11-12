@@ -2,7 +2,7 @@
   "resourceType": "GMRoom",
   "resourceVersion": "1.0",
   "name": "level17",
-  "creationCodeFile": "${project_dir}/rooms/level6/RoomCreationCode.gml",
+  "creationCodeFile": "${project_dir}/rooms/level17/RoomCreationCode.gml",
   "inheritCode": false,
   "inheritCreationOrder": false,
   "inheritLayers": false,
@@ -384,6 +384,7 @@
     {"name":"inst_35FE645A","path":"rooms/level17/level17.yy",},
     {"name":"inst_D565A76","path":"rooms/level17/level17.yy",},
     {"name":"inst_34F25CBC","path":"rooms/level17/level17.yy",},
+    {"name":"inst_5F662CFA","path":"rooms/level17/level17.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -870,6 +871,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_2BF61DF9","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"antiMaterialRifle_obj","path":"objects/antiMaterialRifle_obj/antiMaterialRifle_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":7052.0,"y":5104.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_3683815C","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"Spawn4_obj","path":"objects/Spawn4_obj/Spawn4_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":6880.0,"y":5088.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_76A8C7C7","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"Spawn3_obj","path":"objects/Spawn3_obj/Spawn3_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":5952.0,"y":4096.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_5F662CFA","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"Spawn5_obj","path":"objects/Spawn5_obj/Spawn5_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":7072.0,"y":5088.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"MidgroundObjects","depth":1500,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Tiles","depth":1600,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":188,"SerialiseWidth":250,"TileCompressedData":[

@@ -20,6 +20,7 @@
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":{"name":"toxicwaste_obj","path":"objects/toxicwaste_obj/toxicwaste_obj.yy",},"eventNum":0,"eventType":4,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":{"name":"toxicwaste2_obj","path":"objects/toxicwaste2_obj/toxicwaste2_obj.yy",},"eventNum":0,"eventType":4,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":{"name":"radioactiveCloud_obj","path":"objects/radioactiveCloud_obj/radioactiveCloud_obj.yy",},"eventNum":0,"eventType":4,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":{"name":"hazardMinecart_obj","path":"objects/hazardMinecart_obj/hazardMinecart_obj.yy",},"eventNum":0,"eventType":4,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],

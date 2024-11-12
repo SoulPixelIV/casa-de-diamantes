@@ -27,6 +27,9 @@ if (finishingTeleport) {
 		if (teleportpoint == 1) {
 			global.transitionScreenDest = warpzone2;
 		}
+		if (teleportpoint == 2) {
+			global.transitionScreenDest = warpzone3;
+		}
 		part_emitter_destroy_all(global.partSystem);
 		instance_destroy(player_obj);
 		room_goto(transitionScreen);
