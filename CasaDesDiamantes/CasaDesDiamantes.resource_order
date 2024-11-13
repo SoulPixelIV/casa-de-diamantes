@@ -738,6 +738,7 @@
     {"name":"healthbarBorderInfection_spr","order":10,"path":"sprites/healthbarBorderInfection_spr/healthbarBorderInfection_spr.yy",},
     {"name":"redKeyGate_spr","order":157,"path":"sprites/redKeyGate_spr/redKeyGate_spr.yy",},
     {"name":"pistolBulletCase_spr","order":131,"path":"sprites/pistolBulletCase_spr/pistolBulletCase_spr.yy",},
+    {"name":"blimpAct4End_obj","order":215,"path":"objects/blimpAct4End_obj/blimpAct4End_obj.yy",},
     {"name":"healthSmall_obj","order":21,"path":"objects/healthSmall_obj/healthSmall_obj.yy",},
     {"name":"blueKeyGate_spr","order":166,"path":"sprites/blueKeyGate_spr/blueKeyGate_spr.yy",},
     {"name":"voidMonsterSpawner3_obj","order":164,"path":"objects/voidMonsterSpawner3_obj/voidMonsterSpawner3_obj.yy",},

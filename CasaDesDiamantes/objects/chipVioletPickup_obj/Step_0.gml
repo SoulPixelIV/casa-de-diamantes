@@ -12,30 +12,34 @@ if (distance_to_object(player_obj) < 32 || distance_to_object(player_obj) > 500)
 }
 
 if (follow) {
-	if (player_obj.x > x)
-	{
-		if (horspeed < 5) {
-			horspeed += 0.1;
+	if (distance_to_object(player_obj) < 256) {
+		if (player_obj.x > x)
+		{
+			if (horspeed < 5) {
+				horspeed += 0.1;
+			}
 		}
-	}
-	else
-	{
-		if (horspeed > -5) {
-			horspeed += -0.1;
+		else
+		{
+			if (horspeed > -5) {
+				horspeed += -0.1;
+			}
 		}
-	}
 	
-	if (player_obj.y > y)
-	{
-		if (verspeed < 5) {
-			verspeed += 0.1;
+		if (player_obj.y > y)
+		{
+			if (verspeed < 5) {
+				verspeed += 0.1;
+			}
 		}
-	}
-	else
-	{
-		if (verspeed > -5) {
-			verspeed += -0.1;
+		else
+		{
+			if (verspeed > -5) {
+				verspeed += -0.1;
+			}
 		}
+	} else {
+		instance_destroy();
 	}
 } else {
 	if (horspeed > 0)

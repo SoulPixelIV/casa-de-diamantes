@@ -494,7 +494,7 @@ if (act3MusicOn && act3MusicStarted) {
 }
 
 //ACT4 WORLD MUSIC
-if (room == level15 || room == level16 || room == level17 || room == level18) {
+if (room == level15 || room == level16 || room == level17 || room == level18 || room == level19) {
 	act4MusicOn = true;
 } else {
 	act4MusicOn = false;

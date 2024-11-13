@@ -8,3 +8,9 @@ if (flicker)
 		flickerTimer = random_range(flickerTimerSave - flickerTimerSave / 15, flickerTimerSave + flickerTimerSave / 15);
 	}
 }
+
+if (body != noone) {
+	if (!instance_exists(body)) {
+		instance_destroy();
+	}
+}

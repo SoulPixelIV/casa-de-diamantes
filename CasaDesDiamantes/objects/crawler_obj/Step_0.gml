@@ -511,10 +511,7 @@ if (attackInProg1)
 		if (!instance_exists(light))
 		{
 			light = instance_create_layer(x, y, "GraphicsLayer", spotlightYellow_obj);
-		}
-		with (light)
-		{
-			body = instance_nearest(x, y, crawler_obj);
+			light.body = id;
 		}
 	}
 }
