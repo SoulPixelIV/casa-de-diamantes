@@ -262,9 +262,13 @@ if (global.dialogueDelayStart) {
 if (global.doorDelayStart) {
 	global.doorDelay -= global.dt;
 	if (global.doorDelay < 200) {
-		player_obj.movement = true;
+		if (instance_exists(player_obj)) {
+			player_obj.movement = true;
+		}
 	} else {
-		player_obj.movement = false;
+		if (instance_exists(player_obj)) {
+			player_obj.movement = false;
+		}
 	}
 	if (global.doorDelay < 0) {
 		global.doorDelay = global.doorDelaySave;

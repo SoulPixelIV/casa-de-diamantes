@@ -1862,6 +1862,7 @@
     {"name":"battleArena_obj","order":25,"path":"objects/battleArena_obj/battleArena_obj.yy",},
     {"name":"powerplantBackgroundLaser_spr","order":239,"path":"sprites/powerplantBackgroundLaser_spr/powerplantBackgroundLaser_spr.yy",},
     {"name":"playerDashReverse_spr","order":32,"path":"sprites/playerDashReverse_spr/playerDashReverse_spr.yy",},
+    {"name":"teleportDoor_obj","order":216,"path":"objects/teleportDoor_obj/teleportDoor_obj.yy",},
     {"name":"damageHitboxOnlyOnGround_obj","order":6,"path":"objects/damageHitboxOnlyOnGround_obj/damageHitboxOnlyOnGround_obj.yy",},
     {"name":"blimpAnim2_obj","order":209,"path":"objects/blimpAnim2_obj/blimpAnim2_obj.yy",},
     {"name":"caveAmbience4_amb","order":3,"path":"sounds/caveAmbience4_amb/caveAmbience4_amb.yy",},

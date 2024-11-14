@@ -36,6 +36,7 @@ if (menu == 0) {
 	draw_text(32, optionsY[1], "[Level 16] Control Room");
 	draw_text(32, optionsY[2], "[Level 17] Gamma Ray Concert");
 	draw_text(32, optionsY[3], "[Level 18] Revelation");
+	draw_text(32, optionsY[4], "[Level 19] Final Countdown");
 }
 
 draw_set_halign(fa_center);

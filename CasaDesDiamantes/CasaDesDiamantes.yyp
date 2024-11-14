@@ -2103,6 +2103,7 @@
     {"id":{"name":"powerplantBackgroundLaser_spr","path":"sprites/powerplantBackgroundLaser_spr/powerplantBackgroundLaser_spr.yy",},},
     {"id":{"name":"playerDashReverse_spr","path":"sprites/playerDashReverse_spr/playerDashReverse_spr.yy",},},
     {"id":{"name":"explosiveMerchant_spr","path":"sprites/explosiveMerchant_spr/explosiveMerchant_spr.yy",},},
+    {"id":{"name":"teleportDoor_obj","path":"objects/teleportDoor_obj/teleportDoor_obj.yy",},},
     {"id":{"name":"damageHitboxOnlyOnGround_obj","path":"objects/damageHitboxOnlyOnGround_obj/damageHitboxOnlyOnGround_obj.yy",},},
     {"id":{"name":"blimpAnim2_obj","path":"objects/blimpAnim2_obj/blimpAnim2_obj.yy",},},
     {"id":{"name":"neuralSpawner_obj","path":"objects/neuralSpawner_obj/neuralSpawner_obj.yy",},},
