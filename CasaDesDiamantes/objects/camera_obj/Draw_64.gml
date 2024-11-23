@@ -946,6 +946,17 @@ if (!noHUD && instance_exists(player_obj))
 			}
 		}
 	}
+	if (instance_exists(plantWallBoss_obj)) {
+		if (showBossHealthbar) {
+			draw_sprite_ext(healthbarBorderBoss_spr, -1, global.xScreenSize / 2, global.yScreenSize - 26, 1, 1, 0, -1, 1);
+			if (plantWallBoss_obj.hp > 1) {
+				draw_sprite_ext(healthbarBoss_spr, 0, (global.xScreenSize / 2) - 86, global.yScreenSize - 27, clamp(1.6 * (plantWallBoss_obj.hp / 100), 0, 100), 1, 0, -1, 1);
+			}
+			if (plantWallBoss_obj.hp > 1) {
+				draw_sprite_ext(healthbarTop2Boss_spr, -1, ((global.xScreenSize / 2) - 86) + (1.6 * plantWallBoss_obj.hp), global.yScreenSize - 27, 1, 1, 0, -1, 1);
+			}
+		}
+	}
 	
 	//Damage Healthbar
 	if (player_obj.damageRecieved || healthbarShrinkStart)

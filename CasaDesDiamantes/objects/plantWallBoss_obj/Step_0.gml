@@ -14,18 +14,19 @@ if (startBattle) {
 		attackTimer2 -= global.dt;
 
 		if (attackTimer < 0) {
-			with (plantBossVineSpawner_obj) {
-				spawnVine = true;
+			repeat(choose(3, 4)) {
+				instance_create_layer(random_range(x - 256, x + 256), y + 130, "Instances", plantRootsWarning_obj);
 			}
 			attackTimer = attackTimerSave;
 		}
 	
+		/*
 		if (attackTimer2 < 0) {
 			randNum = choose(4,6);
 			repeat (randNum) {
 				var damageOrb = instance_create_layer(x, y, "ForegroundObjects", damageOrb_obj);
 				damageOrb.speedX = choose(random_range(-1.6, -0.6), random_range(1.6, 0.6));
-				damageOrb.speedY = choose(random_range(-1.6, -0.6), random_range(1.6, 0.6));
+				damageOrb.speedY = choose(0, random_range(1.6, 0.6));
 			}
 			attackTint = false;
 			attackTintTimer = attackTintTimerSave;
@@ -49,6 +50,7 @@ if (startBattle) {
 				attackTintTimer = attackTintTimerSave;
 			}
 		}
+		*/
 	}
 	
 	if (hp < 1) {

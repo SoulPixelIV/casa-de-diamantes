@@ -1,1 +1,1 @@
-animationSpeed = random_range(0.9, 1.1);
+animationSpeed = random_range(0.7, 0.9);
