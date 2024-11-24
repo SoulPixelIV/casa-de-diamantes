@@ -10,8 +10,10 @@ if (startBattle) {
 	}
 
 	if (hp > 0) {
-		attackTimer -= global.dt;
-		attackTimer2 -= global.dt;
+		if (!global.pause) {
+			attackTimer -= global.dt;
+			attackTimer2 -= global.dt;
+		}
 
 		if (attackTimer < 0) {
 			repeat(choose(3, 4)) {
@@ -20,37 +22,10 @@ if (startBattle) {
 			attackTimer = attackTimerSave;
 		}
 	
-		/*
 		if (attackTimer2 < 0) {
-			randNum = choose(4,6);
-			repeat (randNum) {
-				var damageOrb = instance_create_layer(x, y, "ForegroundObjects", damageOrb_obj);
-				damageOrb.speedX = choose(random_range(-1.6, -0.6), random_range(1.6, 0.6));
-				damageOrb.speedY = choose(0, random_range(1.6, 0.6));
-			}
-			attackTint = false;
-			attackTintTimer = attackTintTimerSave;
-			attackTintDelay = -1;
+			instance_create_layer(random_range(x - 256, x + 256), y, "Instances", plantEye_obj);
 			attackTimer2 = attackTimer2Save;
 		}
-	
-		//Attack Flash
-		if (attackTimer2 < 100) {
-			attackTintTimer -= global.dt;
-			if (attackTintTimer > 0) {
-				attackTint = true;
-				attackTintDelay = attackTintDelaySave;
-			}
-			if (attackTintTimer < 0) {
-				attackTint = false;
-				attackTintDelay -= global.dt;
-			}
-		
-			if (attackTintDelay < 0) {
-				attackTintTimer = attackTintTimerSave;
-			}
-		}
-		*/
 	}
 	
 	if (hp < 1) {

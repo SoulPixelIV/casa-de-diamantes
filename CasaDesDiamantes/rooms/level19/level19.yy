@@ -410,6 +410,8 @@
     {"name":"inst_6FF96DA3","path":"rooms/level19/level19.yy",},
     {"name":"inst_5F937D7F","path":"rooms/level19/level19.yy",},
     {"name":"inst_28CD7F63","path":"rooms/level19/level19.yy",},
+    {"name":"inst_20E0F9B9","path":"rooms/level19/level19.yy",},
+    {"name":"inst_4EBB7122","path":"rooms/level19/level19.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -762,6 +764,8 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_1DAA4797","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"shotgun_obj","path":"objects/shotgun_obj/shotgun_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":3712.0,"y":3666.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_1F8D44CA","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"ammoPackShotgun_obj","path":"objects/ammoPackShotgun_obj/ammoPackShotgun_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":3680.0,"y":3666.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_5F937D7F","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"Spawn5_obj","path":"objects/Spawn5_obj/Spawn5_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":4032.0,"y":2112.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_20E0F9B9","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"ammoPackPistol_obj","path":"objects/ammoPackPistol_obj/ammoPackPistol_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":4960.0,"y":2112.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_4EBB7122","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"ammoPackPistol_obj","path":"objects/ammoPackPistol_obj/ammoPackPistol_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":4960.0,"y":2080.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"MidgroundObjects","depth":1500,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Tiles","depth":1600,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":188,"SerialiseWidth":250,"TileCompressedData":[
