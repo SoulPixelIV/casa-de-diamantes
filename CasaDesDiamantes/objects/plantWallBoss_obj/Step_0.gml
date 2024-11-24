@@ -23,12 +23,18 @@ if (startBattle) {
 		}
 	
 		if (attackTimer2 < 0) {
-			instance_create_layer(random_range(x - 256, x + 256), y, "Instances", plantEye_obj);
+			if (instance_number(plantBossFlower2_obj) < 12) {
+				flower = instance_create_layer(choose(random_range(x - 256, x - 350), random_range(x + 256, x + 350)), y + 12, "Instances", plantBossFlower2_obj);
+				flower.image_angle = random_range(60, 120);
+			}
 			attackTimer2 = attackTimer2Save;
 		}
 	}
 	
 	if (hp < 1) {
+		if (place_meeting(x, y, collider_obj)) {
+			instance_destroy(instance_nearest(x, y, collider_obj));
+		}
 		explosionTimer -= global.dt;
 		deathTimer -= global.dt;
 		dropTimer -= global.dt;

@@ -10,7 +10,7 @@ frozen = false;
 freezeRes = 9999999;
 
 attackTimer = 800;
-attackTimer2 = 350;
+attackTimer2 = 900;
 
 explosionTimer = 30;
 dropTimer = 8;

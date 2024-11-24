@@ -189,6 +189,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"UI","folderPath":"folders/UI.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"UI Objects","folderPath":"folders/UI/UI Objects.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"UI Sprites","folderPath":"folders/UI/UI Sprites.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Boss","folderPath":"folders/Objects/Boss.yy",},
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"Casino3DFilledMarquee.ttf","CopyToMask":-1,"filePath":"datafiles",},
@@ -1393,6 +1394,7 @@
     {"id":{"name":"tristramBackground_spr","path":"sprites/tristramBackground_spr/tristramBackground_spr.yy",},},
     {"id":{"name":"vine_spr","path":"sprites/vine_spr/vine_spr.yy",},},
     {"id":{"name":"alarmLamps_obj","path":"objects/alarmLamps_obj/alarmLamps_obj.yy",},},
+    {"id":{"name":"plantBossFlower2_obj","path":"objects/plantBossFlower2_obj/plantBossFlower2_obj.yy",},},
     {"id":{"name":"explosionTinyOnlyEnemy_obj","path":"objects/explosionTinyOnlyEnemy_obj/explosionTinyOnlyEnemy_obj.yy",},},
     {"id":{"name":"PW0_PW1_teleporter","path":"objects/PW0_PW1_teleporter/PW0_PW1_teleporter.yy",},},
     {"id":{"name":"composite_shadow_map","path":"scripts/composite_shadow_map/composite_shadow_map.yy",},},

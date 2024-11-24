@@ -1,16 +1,17 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "vinePlantBoss_obj",
+  "name": "plantBossFlower2_obj",
   "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":{"name":"bullet_obj","path":"objects/bullet_obj/bullet_obj.yy",},"eventNum":0,"eventType":4,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Boss",
-    "path": "folders/Objects/Boss.yy",
+    "name": "Enemy Helper Objects",
+    "path": "folders/Enemies/Enemy Helper Objects.yy",
   },
   "parentObjectId": null,
   "persistent": false,
@@ -29,8 +30,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "vineBoss_spr",
-    "path": "sprites/vineBoss_spr/vineBoss_spr.yy",
+    "name": "rose_spr",
+    "path": "sprites/rose_spr/rose_spr.yy",
   },
   "spriteMaskId": null,
   "visible": true,
