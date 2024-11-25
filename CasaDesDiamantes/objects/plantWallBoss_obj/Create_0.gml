@@ -5,12 +5,13 @@ animationSpeed = 1;
 damageTint = false;
 attackTint = false;
 startBattle = false;
+destroyedCollider = false;
 
 frozen = false;
 freezeRes = 9999999;
 
 attackTimer = 800;
-attackTimer2 = 900;
+attackTimer2 = 1500;
 
 explosionTimer = 30;
 dropTimer = 8;

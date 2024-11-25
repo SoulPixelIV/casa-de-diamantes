@@ -239,6 +239,15 @@ part_type_orientation(global.coinRedPart, 0, 359, 1, 0, 1);
 part_type_direction(global.coinRedPart, 0, 360, 0, 3);
 part_type_speed(global.coinRedPart, 0.1, 0.16, 0, 0.1);
 
+global.coinGreenPart = part_type_create();
+part_type_sprite(global.coinGreenPart, particleBlue_spr, true, true, true);
+part_type_colour_rgb(global.coinGreenPart, 0, 0, 190, 255, 0, 0);
+part_type_life(global.coinGreenPart, 100, 140);
+part_type_size(global.coinGreenPart, 0.1, 0.2, 0, 0);
+part_type_orientation(global.coinGreenPart, 0, 359, 1, 0, 1);
+part_type_direction(global.coinGreenPart, 0, 360, 0, 3);
+part_type_speed(global.coinGreenPart, 0.1, 0.16, 0, 0.1);
+
 //Leaves
 
 global.pinkLeaves = part_type_create();
