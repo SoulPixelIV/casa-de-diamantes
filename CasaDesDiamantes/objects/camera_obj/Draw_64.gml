@@ -1143,27 +1143,31 @@ if (!noHUD && instance_exists(player_obj))
 	var field1Degree = 230;
 	var field2Degree = 50;
 	var field3Degree = 140;
-	var field1 = draw_sprite_ext(ammoCircleDualBarettaField_spr, global.pistolAmmo, 59 + 0 / 2, 36 + 0 / 2, -1, -1, wheelRotation, -1, 1);
-	var field2 = draw_sprite_ext(ammoCircleShotgunField_spr, global.shotgunAmmo, 59 + 0 / 2, 36 + 0 / 2, 1, 1, wheelRotation, -1, 1);	
-	var field3 = draw_sprite_ext(ammoCircleSilencedMPField_spr, global.silencedMPAmmo, 59 + 0 / 2, 36 + 0 / 2, -1, 1, wheelRotation, -1, 1);
+	//var field1 = draw_sprite_ext(ammoCircleDualBarettaField_spr, global.pistolAmmo, 59 + 0 / 2, 36 + 0 / 2, -1, -1, wheelRotation, -1, 1);
+	//var field2 = draw_sprite_ext(ammoCircleShotgunField_spr, global.shotgunAmmo, 59 + 0 / 2, 36 + 0 / 2, 1, 1, wheelRotation, -1, 1);	
+	//var field3 = draw_sprite_ext(ammoCircleSilencedMPField_spr, global.silencedMPAmmo, 59 + 0 / 2, 36 + 0 / 2, -1, 1, wheelRotation, -1, 1);
 	
-	var field4 = draw_sprite_ext(ammoCircleRedField_spr, 0, 59 + 0 / 2, 36 + 0 / 2, 1, -1, wheelRotation, -1, 1);
+	//var field4 = draw_sprite_ext(ammoCircleRedField_spr, 0, 59 + 0 / 2, 36 + 0 / 2, 1, -1, wheelRotation, -1, 1);
 
 	if (global.currentWeapon == gameManager_obj.pickedWeapon.dualBarettas)
 	{
-		draw_sprite(ammoCircle_spr, 1, 32 + 0 / 2, 9 + 0 / 2);
+		draw_sprite(ammoCircle_spr, 1, 32, 9);
 	}
 	else if (global.currentWeapon == gameManager_obj.pickedWeapon.shotgun)
 	{
-		draw_sprite(ammoCircle_spr, 2, 32 + 0 / 2, 9 + 0 / 2);
+		draw_sprite(ammoCircle_spr, 2, 32, 9);
 	}
 	else if (global.currentWeapon == gameManager_obj.pickedWeapon.silencedMP)
 	{
-		draw_sprite(ammoCircle_spr, 3, 32 + 0 / 2, 9 + 0 / 2);
+		draw_sprite(ammoCircle_spr, 3, 32, 9);
+	}
+	else if (global.currentWeapon == gameManager_obj.pickedWeapon.bow)
+	{
+		draw_sprite(ammoCircle_spr, 4, 32, 9);
 	}
 	else
 	{
-		draw_sprite(ammoCircle_spr, 0, 32 + 0 / 2, 9 + 0 / 2);
+		draw_sprite(ammoCircle_spr, 0, 32, 9);
 	}
 	
 	//Weapon
