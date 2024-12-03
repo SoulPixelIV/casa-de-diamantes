@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "whitesquare_spr",
-    "path": "sprites/whitesquare_spr/whitesquare_spr.yy",
+    "name": "whitesquareINV_spr",
+    "path": "sprites/whitesquareINV_spr/whitesquareINV_spr.yy",
   },
   "spriteMaskId": null,
   "visible": true,

@@ -1514,6 +1514,7 @@
     {"id":{"name":"casinoDoor_obj","path":"objects/casinoDoor_obj/casinoDoor_obj.yy",},},
     {"id":{"name":"bulletShotgun_obj","path":"objects/bulletShotgun_obj/bulletShotgun_obj.yy",},},
     {"id":{"name":"plantRootsWarning_obj","path":"objects/plantRootsWarning_obj/plantRootsWarning_obj.yy",},},
+    {"id":{"name":"whitesquareINV_spr","path":"sprites/whitesquareINV_spr/whitesquareINV_spr.yy",},},
     {"id":{"name":"whitelamp_obj","path":"objects/whitelamp_obj/whitelamp_obj.yy",},},
     {"id":{"name":"fakeForestGroundLong_spr","path":"sprites/fakeForestGroundLong_spr/fakeForestGroundLong_spr.yy",},},
     {"id":{"name":"exclamationMarks_spr","path":"sprites/exclamationMarks_spr/exclamationMarks_spr.yy",},},

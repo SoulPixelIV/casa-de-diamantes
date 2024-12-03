@@ -10,8 +10,9 @@ if (startBattle) {
 		attackTimer2 -= global.dt;
 
 		if (attackTimer < 0) {
-			with (plantBossVineSpawner_obj) {
-				spawnVine = true;
+			if (instance_number(plantBossFlower2_obj) < 6) {
+				flower = instance_create_layer(x + 300, y + random_range(-24, 16), "Instances", plantBossFlower2_obj);
+				flower.image_angle = random_range(120, 160);
 			}
 			attackTimer = attackTimerSave;
 		}

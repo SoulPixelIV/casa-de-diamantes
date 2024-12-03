@@ -8,7 +8,7 @@ startBattle = false;
 frozen = false;
 freezeRes = 9999999;
 
-attackTimer = 800;
+attackTimer = 1100;
 attackTimer2 = 350;
 
 explosionTimer = 30;

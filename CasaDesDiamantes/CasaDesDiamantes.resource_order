@@ -1326,6 +1326,7 @@
     {"name":"casinoDoor_obj","order":86,"path":"objects/casinoDoor_obj/casinoDoor_obj.yy",},
     {"name":"bulletShotgun_obj","order":2,"path":"objects/bulletShotgun_obj/bulletShotgun_obj.yy",},
     {"name":"plantRootsWarning_obj","order":223,"path":"objects/plantRootsWarning_obj/plantRootsWarning_obj.yy",},
+    {"name":"whitesquareINV_spr","order":34,"path":"sprites/whitesquareINV_spr/whitesquareINV_spr.yy",},
     {"name":"whitelamp_obj","order":46,"path":"objects/whitelamp_obj/whitelamp_obj.yy",},
     {"name":"fakeForestGroundLong_spr","order":221,"path":"sprites/fakeForestGroundLong_spr/fakeForestGroundLong_spr.yy",},
     {"name":"exclamationMarks_spr","order":31,"path":"sprites/exclamationMarks_spr/exclamationMarks_spr.yy",},
