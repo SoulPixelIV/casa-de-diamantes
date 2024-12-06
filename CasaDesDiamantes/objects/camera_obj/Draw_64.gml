@@ -1151,24 +1151,26 @@ if (!noHUD && instance_exists(player_obj))
 
 	if (global.currentWeapon == gameManager_obj.pickedWeapon.dualBarettas)
 	{
-		draw_sprite(ammoCircle_spr, 1, 32, 9);
+		draw_sprite(ammoCircle_spr, 1, 32, 25);
 	}
 	else if (global.currentWeapon == gameManager_obj.pickedWeapon.shotgun)
 	{
-		draw_sprite(ammoCircle_spr, 2, 32, 9);
+		draw_sprite(ammoCircle_spr, 2, 32, 25);
 	}
 	else if (global.currentWeapon == gameManager_obj.pickedWeapon.silencedMP)
 	{
-		draw_sprite(ammoCircle_spr, 3, 32, 9);
+		draw_sprite(ammoCircle_spr, 3, 32, 25);
 	}
 	else if (global.currentWeapon == gameManager_obj.pickedWeapon.bow)
 	{
-		draw_sprite(ammoCircle_spr, 4, 32, 9);
+		draw_sprite(ammoCircle_spr, 4, 32, 25);
 	}
 	else
 	{
-		draw_sprite(ammoCircle_spr, 0, 32, 9);
+		draw_sprite(ammoCircle_spr, 0, 32, 25);
 	}
+	
+	draw_sprite(bulletbar_spr, 0, 26, 32);
 	
 	//Weapon
 	draw_set_color(make_color_rgb(255,215,0));
