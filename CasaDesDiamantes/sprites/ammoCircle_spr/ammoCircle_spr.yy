@@ -2,9 +2,9 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "ammoCircle_spr",
-  "bbox_bottom": 49,
+  "bbox_bottom": 51,
   "bbox_left": 0,
-  "bbox_right": 49,
+  "bbox_right": 51,
   "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 1,
@@ -21,7 +21,7 @@
   ],
   "gridX": 2,
   "gridY": 2,
-  "height": 50,
+  "height": 52,
   "HTile": false,
   "layers": [
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"2a583ea2-74f7-4db2-bd45-159552959c97","blendMode":0,"displayName":"weapon","isLocked":false,"opacity":100.0,"visible":true,},
@@ -79,5 +79,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 50,
+  "width": 52,
 }

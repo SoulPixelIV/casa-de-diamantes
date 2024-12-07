@@ -7,6 +7,10 @@ instance_create_layer(playerBulletLine_obj.x, playerBulletLine_obj.y, "Instances
 		
 instance_create_layer(playerBulletLine_obj.x, playerBulletLine_obj.y, "Instances", pistolBulletCase_obj);
 
+if (global.silencedMPAmmo > 0) {
+	global.silencedMPAmmo--;
+}
+
 var silencedMPShot = audio_play_sound(pistolShot_snd, 1, false);
 if (global.silencedMPAmmo > 9) {
 	audio_sound_pitch(silencedMPShot, random_range(0.9, 1.1));
