@@ -1149,30 +1149,39 @@ if (!noHUD && instance_exists(player_obj))
 	
 	//var field4 = draw_sprite_ext(ammoCircleRedField_spr, 0, 59 + 0 / 2, 36 + 0 / 2, 1, -1, wheelRotation, -1, 1);
 
+	draw_set_font(gothicPixel_fnt);
+	draw_set_color(make_color_rgb(255, 215, 0));
+	draw_set_halign(fa_left);
+	
 	if (global.currentWeapon == gameManager_obj.pickedWeapon.dualBarettas)
 	{
 		draw_sprite(ammoCircle_spr, 1, 31, 24);
 		draw_sprite(bulletbarDualBarettas_spr, global.pistolAmmo, 26, 32);
+		draw_text(86, 29, string(global.pistolAmmo) + "-" + string(global.pistolAmmoMax));
 	}
 	else if (global.currentWeapon == gameManager_obj.pickedWeapon.shotgun)
 	{
 		draw_sprite(ammoCircle_spr, 2, 31, 24);
 		draw_sprite(bulletbarShotgun_spr, global.shotgunAmmo, 26, 32);
+		draw_text(86, 29, string(global.shotgunAmmo) + "-" + string(global.shotgunAmmoMax));
 	}
 	else if (global.currentWeapon == gameManager_obj.pickedWeapon.silencedMP)
 	{
 		draw_sprite(ammoCircle_spr, 3, 31, 24);
 		draw_sprite(bulletbarSilencedMP_spr, global.silencedMPAmmo, 26, 32);
+		draw_text(86, 29, string(global.silencedMPAmmo) + "-" + string(global.silencedMPAmmoMax));
 	}
 	else if (global.currentWeapon == gameManager_obj.pickedWeapon.bow)
 	{
 		draw_sprite(ammoCircle_spr, 4, 31, 24);
 		draw_sprite(bulletbarAntiMaterialRife_spr, global.bowAmmo, 26, 32);
+		draw_text(86, 29, string(global.bowAmmo) + "-" + string(global.bowAmmoMax));
 	}
 	else
 	{
 		draw_sprite(ammoCircle_spr, 0, 31, 24);
 		draw_sprite(bulletbarSilencedMP_spr, 0, 26, 32);
+		draw_text(86, 29, "No Ammo");
 	}
 	
 	//Weapon
