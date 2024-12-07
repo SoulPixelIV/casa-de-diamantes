@@ -1690,6 +1690,7 @@
     {"id":{"name":"fireworkSpawner_obj","path":"objects/fireworkSpawner_obj/fireworkSpawner_obj.yy",},},
     {"id":{"name":"feastL2_msc","path":"sounds/feastL2_msc/feastL2_msc.yy",},},
     {"id":{"name":"smokingJacketDashReverse_spr","path":"sprites/smokingJacketDashReverse_spr/smokingJacketDashReverse_spr.yy",},},
+    {"id":{"name":"upgradeWindow_spr","path":"sprites/upgradeWindow_spr/upgradeWindow_spr.yy",},},
     {"id":{"name":"atomicLaserTrigger_obj","path":"objects/atomicLaserTrigger_obj/atomicLaserTrigger_obj.yy",},},
     {"id":{"name":"elevatorHereMarker_spr","path":"sprites/elevatorHereMarker_spr/elevatorHereMarker_spr.yy",},},
     {"id":{"name":"caveBackground_obj","path":"objects/caveBackground_obj/caveBackground_obj.yy",},},

@@ -1155,31 +1155,47 @@ if (!noHUD && instance_exists(player_obj))
 	
 	if (global.currentWeapon == gameManager_obj.pickedWeapon.dualBarettas)
 	{
-		draw_sprite(ammoCircle_spr, 1, 31, 24);
+		draw_sprite(ammoCircle_spr, 1, 32, 24);
 		draw_sprite(bulletbarDualBarettas_spr, global.pistolAmmo, 26, 32);
 		draw_text(86, 29, string(global.pistolAmmo) + "-" + string(global.pistolAmmoMax));
+		
+		if (global.dualBarettasUpgrade1) {
+			draw_sprite_ext(upgradeWindow_spr, 0, 34, 80, 1, 1, 0, -1, 1);
+		}
+		if (global.dualBarettasUpgrade2) {
+			draw_sprite_ext(upgradeWindow_spr, 0, 34, 80, 1, 1, 0, -1, 1);
+			draw_sprite_ext(upgradeWindow_spr, 1, 82, 80, 1, 1, 0, -1, 1);
+		}
 	}
 	else if (global.currentWeapon == gameManager_obj.pickedWeapon.shotgun)
 	{
-		draw_sprite(ammoCircle_spr, 2, 31, 24);
+		draw_sprite(ammoCircle_spr, 2, 32, 24);
 		draw_sprite(bulletbarShotgun_spr, global.shotgunAmmo, 26, 32);
 		draw_text(86, 29, string(global.shotgunAmmo) + "-" + string(global.shotgunAmmoMax));
+		
+		if (global.shotgunUpgrade1) {
+			draw_sprite_ext(upgradeWindow_spr, 2, 34, 80, 1, 1, 0, -1, 1);
+		}
+		if (global.shotgunUpgrade2) {
+			draw_sprite_ext(upgradeWindow_spr, 2, 34, 80, 1, 1, 0, -1, 1);
+			draw_sprite_ext(upgradeWindow_spr, 3, 82, 80, 1, 1, 0, -1, 1);
+		}
 	}
 	else if (global.currentWeapon == gameManager_obj.pickedWeapon.silencedMP)
 	{
-		draw_sprite(ammoCircle_spr, 3, 31, 24);
+		draw_sprite(ammoCircle_spr, 3, 32, 24);
 		draw_sprite(bulletbarSilencedMP_spr, global.silencedMPAmmo, 26, 32);
 		draw_text(86, 29, string(global.silencedMPAmmo) + "-" + string(global.silencedMPAmmoMax));
 	}
 	else if (global.currentWeapon == gameManager_obj.pickedWeapon.bow)
 	{
-		draw_sprite(ammoCircle_spr, 4, 31, 24);
+		draw_sprite(ammoCircle_spr, 4, 32, 24);
 		draw_sprite(bulletbarAntiMaterialRife_spr, global.bowAmmo, 26, 32);
 		draw_text(86, 29, string(global.bowAmmo) + "-" + string(global.bowAmmoMax));
 	}
 	else
 	{
-		draw_sprite(ammoCircle_spr, 0, 31, 24);
+		draw_sprite(ammoCircle_spr, 0, 32, 24);
 		draw_sprite(bulletbarSilencedMP_spr, 0, 26, 32);
 		draw_text(86, 29, "No Ammo");
 	}

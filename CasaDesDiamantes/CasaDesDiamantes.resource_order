@@ -1485,6 +1485,7 @@
     {"name":"fireworkSpawner_obj","order":28,"path":"objects/fireworkSpawner_obj/fireworkSpawner_obj.yy",},
     {"name":"feastL2_msc","order":1,"path":"sounds/feastL2_msc/feastL2_msc.yy",},
     {"name":"smokingJacketDashReverse_spr","order":9,"path":"sprites/smokingJacketDashReverse_spr/smokingJacketDashReverse_spr.yy",},
+    {"name":"upgradeWindow_spr","order":114,"path":"sprites/upgradeWindow_spr/upgradeWindow_spr.yy",},
     {"name":"atomicLaserTrigger_obj","order":68,"path":"objects/atomicLaserTrigger_obj/atomicLaserTrigger_obj.yy",},
     {"name":"elevatorHereMarker_spr","order":104,"path":"sprites/elevatorHereMarker_spr/elevatorHereMarker_spr.yy",},
     {"name":"tutorialWKeyPromt_obj","order":48,"path":"objects/tutorialWKeyPromt_obj/tutorialWKeyPromt_obj.yy",},
