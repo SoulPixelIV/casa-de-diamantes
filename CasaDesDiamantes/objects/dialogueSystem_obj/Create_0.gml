@@ -136,10 +136,10 @@ scene4Timer = 5830;
 scene4TimerSave = scene4Timer;
 
 dialogue[20] = "*Steph I have a present for you.";
-dialogue[21] = "*I developed a mechanism which allows..";
-dialogue[22] = "*..the user to endure more damage.";
-dialogue[23] = "*It uses these syringes to revive you..";
-dialogue[24] = "*..when you are in critical condition.";
+dialogue[21] = "*I developed these syringes to revive you, ..";
+dialogue[22] = "*..when you're in critical condition.";
+//dialogue[23] = "*It uses these syringes to revive you..";
+//dialogue[24] = "*..when you are in critical condition.";
 dialogue[25] = "*But that's not all!";
 dialogue[26] = "*I also worked on a prototype companion!";
 dialogue[27] = "*See for yourself..";
@@ -150,21 +150,21 @@ startScene5Timer = false;
 scene5Timer = 12100;
 scene5TimerSave = scene5Timer;
 
-dialogue[29] = "^Stranger!";
-dialogue[30] = "^So, I'm guessing you're one of those mercenaries.."
-dialogue[31] = "^..that keep showing up on my doorstep?";
-dialogue[32] = "^Not that I mind, this situation seems to be getting a bit out of control.";
+dialogue[29] = "^Steph. I have a contract for you.";
+dialogue[32] = "^The situation seems to be getting a bit out of control.";
 dialogue[33] = "^Overwhelming, rather.";
-dialogue[34] = "^You see I've got a job for someone with your kinds of skills.";
-dialogue[35] = "^While more of a hit, than an assault, it's not like you have any luck..";
-dialogue[36] = "^..finding other employment around here right now..";
-dialogue[37] = "^Are you up for it?";
+//dialogue[34] = "^You see I've got a job for someone with your kinds of skills.";
+//dialogue[35] = "^While more of a hit, than an assault, it's not like you have any luck..";
+//dialogue[36] = "^..finding other employment around here right now..";
+dialogue[37] = "^Are you interested?";
 dialogue[38] = "#Shoot me the details.";
 dialogue[39] = "^Straight to the point!";
-dialogue[40] = "^We don't know what the target looks like by now,..";
-dialogue[41] = "^..but we do know it ran into the woods a day ago, never to be seen again.";
-dialogue[42] = "^You'd best start looking there.";
-dialogue[43] = "#Alright, see you in an hour.";
+dialogue[30] = "^We need you to investigate the Senzela Forest."
+dialogue[31] = "^We have found a high concentration of spore cells there.";
+dialogue[40] = "^This phenomenon started appearing a few days ago.";
+dialogue[41] = "^Investigate the situation and find the cause for the uprise.";
+dialogue[42] = "^You will be compensated for your work.";
+dialogue[43] = "#I'll be on my way then.";
 dialogue[44] = "";
 
 //Scene 6 Cindy Upgrade Menu
@@ -190,10 +190,10 @@ startScene8BlackTimer = false;
 scene8BlackTimer = 300;
 scene8BlackTimerSave = scene8Timer;
 
-dialogue[50] = "<Welcome to my jewel, the Casa De Diamantes, stranger!";
-dialogue[51] = "<Where strangers become friends and friends become strangers!";
+dialogue[50] = "<Welcome to my jewel, the Casa De Diamantes.";
+dialogue[51] = "<Where strangers become friends!";
 dialogue[52] = "<Please, enjoy your stay.";
-dialogue[53] = "<You're a pretty heavy sleeper, huh?";
+dialogue[53] = "<I heard you've had some trouble on the way here.";
 dialogue[54] = "<Girl's managed to empty 6 clips until you finally woke up.";
 dialogue[55] = "";
 
@@ -207,11 +207,11 @@ scene9BlackTimerSave = scene9Timer;
 
 dialogue[56] = "$They're magazines, not clips.";
 dialogue[57] = "<...";
-dialogue[58] = "<I'm glad you made it here alive!";
-dialogue[59] = "<I'm also getting a call right now..";
-dialogue[60] = "<Meet me in my office on the VIP floor when you get the chance.";
+dialogue[58] = "<I'm glad you made it out alive Steph.";
+//dialogue[59] = "<I'm also getting a call right now..";
+dialogue[60] = "<Meet me in my office on the VIP floor.";
 dialogue[61] = "<For now, enjoy our games and entertainment!";
-dialogue[62] = "<See ya.";
+dialogue[62] = "<Until then.";
 dialogue[63] = "";
 
 //Scene 10 First Time Entering Casino
@@ -222,14 +222,14 @@ startScene10BlackTimer = false;
 scene10BlackTimer = 400;
 scene10BlackTimerSave = scene10Timer;
 
-dialogue[64] = "$Steph!!";
-dialogue[65] = "#Cindy!!";
-dialogue[66] = "$I'm so glad you're finally here! Are you well? Was the trip okay?";
+dialogue[64] = "$Steph!";
+dialogue[65] = "#Cindy.";
+dialogue[66] = "$I'm so glad you're finally here.";
 dialogue[67] = "$I set up a room here already, come on you gotta get some rest.";
 dialogue[68] = "$We got a lot of work before us.";
-dialogue[69] = "#I won't answer questions you don't even remember asking..";
-dialogue[70] = "#..but sure, lead the way!";
-dialogue[71] = "$Come on, you'll love what i did to the place!";
+//dialogue[69] = "#I won't answer questions you don't even remember asking..";
+dialogue[70] = "#Sure, lead the way.";
+dialogue[71] = "$Come on, you'll love what I did to the place!";
 dialogue[72] = "";
 
 //Scene 11 VIP Out Of Room Interaction

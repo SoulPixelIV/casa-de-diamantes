@@ -2,7 +2,7 @@
   "resourceType": "GMRoom",
   "resourceVersion": "1.0",
   "name": "level_TristramRoom",
-  "creationCodeFile": "${project_dir}/rooms/level_DiningHall/RoomCreationCode.gml",
+  "creationCodeFile": "${project_dir}/rooms/level_TristramRoom/RoomCreationCode.gml",
   "inheritCode": false,
   "inheritCreationOrder": false,
   "inheritLayers": false,

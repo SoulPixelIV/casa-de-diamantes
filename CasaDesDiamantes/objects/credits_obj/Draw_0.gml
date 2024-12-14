@@ -16,7 +16,7 @@ if (name == 3) {
 }
 if (name == 4) {
 	if (flickerTimer > 0) {
-		draw_text(global.xScreenSize / 2, global.yScreenSize / 2.5, "now lick your wounds clean of mothers sweet ichor");
+		draw_text(global.xScreenSize / 2, global.yScreenSize / 2.5, "Please wake up..We need you.");
 		flickerTimer -= global.dt;
 	} else {
 		flickerDelay -= global.dt;
