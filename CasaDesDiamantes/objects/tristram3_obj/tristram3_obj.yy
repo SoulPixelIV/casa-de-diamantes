@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "tristramBack_spr",
-    "path": "sprites/tristramBack_spr/tristramBack_spr.yy",
+    "name": "tristram_spr",
+    "path": "sprites/tristram_spr/tristram_spr.yy",
   },
   "spriteMaskId": null,
   "visible": true,

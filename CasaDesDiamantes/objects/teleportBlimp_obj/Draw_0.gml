@@ -39,6 +39,8 @@ if (global.storyAct == 0) {
 	} else {
 		if (distance_to_object(player_obj) < 32) {
 			camera_obj.drawDiningEntranceText = true;
+		} else {
+			camera_obj.drawDiningEntranceText = false;
 		}
 	}
 }
@@ -82,6 +84,8 @@ if (global.storyAct == 1) {
 	} else {
 		if (distance_to_object(player_obj) < 32) {
 			camera_obj.drawDiningEntranceText = true;
+		} else {
+			camera_obj.drawDiningEntranceText = false;
 		}
 	}
 }
