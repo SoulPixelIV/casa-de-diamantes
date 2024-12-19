@@ -495,85 +495,13 @@ if (drawText && !showWindowMenu)
 				dialogueSystem_obj.scene7Timer = 0;
 			}
 			if (dialogueSystem_obj.startScene8Timer) {
-				dialogueSystem_obj.startScene8Timer = false;
-				dialogueSystem_obj.scene8Timer = dialogueSystem_obj.scene8TimerSave;
-				dialogueSystem_obj.scene8BlackTimer = dialogueSystem_obj.scene8BlackTimerSave;
-				for (i = dialogueSystem_obj.scene8Low; i < dialogueSystem_obj.scene8High + 1; i++)
-				{
-					dialogue[i] = "";
-				}
-				player_obj.movement = true;
-				drawBlackborders = false;
-				dialogueSystem_obj.scene10Timer = dialogueSystem_obj.scene10TimerSave;
-				dialogueSystem_obj.startScene10Timer = false;
-				dialogueSystem_obj.scene10BlackTimer = dialogueSystem_obj.scene10BlackTimerSave;
-				dialogueSystem_obj.startScene10BlackTimer = false;
-				dialogueSystem_obj.inCutscene = false;
-				if (instance_exists(cindy_obj)) {
-					instance_destroy(cindy_obj);
-				}
-				if (instance_exists(vip2_obj)) {
-					instance_destroy(vip2_obj);
-				}
-				camera_obj.blackscreenStrength = 0;
-				global.cutsceneCasinoIntroDone = true;
-				follow = player_obj;
-				save_scr();
-				dialogueStripped = "";
-				drawDialogueBorder = false;
+				dialogueLine = dialogueSystem_obj.scene8High - 1;
 			}
 			if (dialogueSystem_obj.startScene9Timer) {
-				dialogueSystem_obj.startScene9Timer = false;
-				dialogueSystem_obj.scene9Timer = dialogueSystem_obj.scene9TimerSave;
-				dialogueSystem_obj.scene9BlackTimer = dialogueSystem_obj.scene9BlackTimerSave;
-				for (i = dialogueSystem_obj.scene9Low; i < dialogueSystem_obj.scene9High + 1; i++)
-				{
-					dialogue[i] = "";
-				}
-				player_obj.movement = true;
-				drawBlackborders = false;
-				dialogueSystem_obj.scene10Timer = dialogueSystem_obj.scene10TimerSave;
-				dialogueSystem_obj.startScene10Timer = false;
-				dialogueSystem_obj.scene10BlackTimer = dialogueSystem_obj.scene10BlackTimerSave;
-				dialogueSystem_obj.startScene10BlackTimer = false;
-				dialogueSystem_obj.inCutscene = false;
-				if (instance_exists(cindy_obj)) {
-					instance_destroy(cindy_obj);
-				}
-				if (instance_exists(vip2_obj)) {
-					instance_destroy(vip2_obj);
-				}
-				camera_obj.blackscreenStrength = 0;
-				global.cutsceneCasinoIntroDone = true;
-				follow = player_obj;
-				save_scr();
-				dialogueStripped = "";
-				drawDialogueBorder = false;
+				dialogueLine = dialogueSystem_obj.scene9High - 1;
 			}
 			if (dialogueSystem_obj.startScene10Timer) {
-				for (i = dialogueSystem_obj.scene10Low; i < dialogueSystem_obj.scene10High + 1; i++)
-				{
-					dialogue[i] = "";
-				}
-				player_obj.movement = true;
-				drawBlackborders = false;
-				dialogueSystem_obj.scene10Timer = dialogueSystem_obj.scene10TimerSave;
-				dialogueSystem_obj.startScene10Timer = false;
-				dialogueSystem_obj.scene10BlackTimer = dialogueSystem_obj.scene10BlackTimerSave;
-				dialogueSystem_obj.startScene10BlackTimer = false;
-				dialogueSystem_obj.inCutscene = false;
-				if (instance_exists(cindy_obj)) {
-					instance_destroy(cindy_obj);
-				}
-				if (instance_exists(vip2_obj)) {
-					instance_destroy(vip2_obj);
-				}
-				camera_obj.blackscreenStrength = 0;
-				global.cutsceneCasinoIntroDone = true;
-				follow = player_obj;
-				save_scr();
-				dialogueStripped = "";
-				drawDialogueBorder = false;
+				dialogueLine = dialogueSystem_obj.scene10High - 1;
 			}
 			if (dialogueSystem_obj.startScene11Timer) {
 				dialogueSystem_obj.scene11Timer = 0;
@@ -1962,9 +1890,9 @@ if (global.drawMission && !global.pause) {
 			draw_set_halign(fa_center);
 			draw_set_font(gothicPixel_fnt);
 			draw_set_color(c_black);
-			draw_text(global.xScreenSize / 2 - 1 + 6, 10 + 1, "Mission - Find and Execute Target in Senzela Forest");
+			draw_text(global.xScreenSize / 2 - 1 + 11, 11 + 1, "Mission - Find and Execute Target in Senzela Forest");
 			draw_set_color(make_color_rgb(255, 215, 0));
-			draw_text(global.xScreenSize / 2 + 6, 10, "Mission - Find and Execute Target in Senzela Forest");
+			draw_text(global.xScreenSize / 2 + 11, 11, "Mission - Find and Execute Target in Senzela Forest");
 		}
 	}
 	if (global.storyAct == 1 && global.firstmeetingDialogue && !global.meeting2Dialogue) {
@@ -1972,9 +1900,9 @@ if (global.drawMission && !global.pause) {
 			draw_set_halign(fa_center);
 			draw_set_font(gothicPixel_fnt);
 			draw_set_color(c_black);
-			draw_text(global.xScreenSize / 2 - 1 + 6, 10 + 1, "Mission - Enjoy the evening & meet back at the VIP room");
+			draw_text(global.xScreenSize / 2 - 1 + 11, 11 + 1, "Mission - Enjoy the evening & meet back at the VIP room");
 			draw_set_color(make_color_rgb(255, 215, 0));
-			draw_text(global.xScreenSize / 2 + 6, 10, "Mission - Enjoy the evening & meet back at the VIP room");
+			draw_text(global.xScreenSize / 2 + 11, 11, "Mission - Enjoy the evening & meet back at the VIP room");
 		}
 	}
 	if (global.storyAct == 1 && global.firstmeetingDialogue && global.meeting2Dialogue) {
@@ -1982,9 +1910,9 @@ if (global.drawMission && !global.pause) {
 			draw_set_halign(fa_center);
 			draw_set_font(gothicPixel_fnt);
 			draw_set_color(c_black);
-			draw_text(global.xScreenSize / 2 - 1 + 6, 10 + 1, "Mission - Investigate EDEN Powerplant");
+			draw_text(global.xScreenSize / 2 - 1 + 11, 11 + 1, "Mission - Investigate EDEN Powerplant");
 			draw_set_color(make_color_rgb(255, 215, 0));
-			draw_text(global.xScreenSize / 2 + 6, 10, "Mission - Investigate EDEN Powerplant");
+			draw_text(global.xScreenSize / 2 + 11, 11, "Mission - Investigate EDEN Powerplant");
 		}
 	}
 }

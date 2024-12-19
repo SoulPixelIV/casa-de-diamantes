@@ -1,7 +1,7 @@
 /// @description Draw Key
 draw_self();
 
-if (distance_to_object(player_obj) < 82 && !camera_obj.drawText && player_obj.grounded)
+if (distance_to_object(player_obj) < 82 && !camera_obj.drawText && player_obj.grounded && !global.introDialogueVIPDone)
 {
 	draw_sprite(wKeyIcon_spr, 0, player_obj.x, player_obj.y - 32);
 }

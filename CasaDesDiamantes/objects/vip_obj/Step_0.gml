@@ -13,14 +13,5 @@ if (instance_exists(player_obj) && !global.dialogueDelayStart) {
 			camera_obj.drawBlackborders = true;
 			dialogueTriggered = true;
 		}
-	} else {
-		if ((distance_to_object(player_obj) < 82 && player_obj.key_up_pressed) && !global.pause && !dialogueTriggered && player_obj.grounded)
-		{
-			global.dialogueDelayStart = true;
-			dialogueSystem_obj.scene7 = true;
-			player_obj.movement = false;
-			camera_obj.drawBlackborders = true;
-			dialogueTriggered = true;
-		}
 	}
 }

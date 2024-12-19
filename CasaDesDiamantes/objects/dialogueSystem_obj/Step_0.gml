@@ -113,9 +113,7 @@ if (scene4)
 	scene4 = false;
 }
 if (startScene4Timer) {
-	scene4Timer -= global.dt * camera_obj.textSpeed;
-	
-	if (scene4Timer < 0) {
+	if (camera_obj.dialogueLine >= scene4High - 1) {
 		scene4Timer = scene4TimerSave;
 		startScene4Timer = false;
 		global.introDialogueCindyDone = true;
@@ -125,6 +123,7 @@ if (startScene4Timer) {
 		camera_obj.follow = player_obj;
 		camera_obj.drawBlackborders = false;
 		camera_obj.drawDialogueBorder = false;
+		camera_obj.drawText = false;
 	}
 }
 
@@ -146,10 +145,7 @@ if (scene5)
 	scene5 = false;
 }
 if (startScene5Timer) {
-	scene5Timer -= global.dt * camera_obj.textSpeed;
-	
-	if (scene5Timer < 0) {
-		scene5Timer = scene5TimerSave;
+	if (camera_obj.dialogueLine >= scene5High - 1) {
 		startScene5Timer = false;
 		vip_obj.dialogueTriggered = false;
 		player_obj.movement = true;
@@ -160,6 +156,8 @@ if (startScene5Timer) {
 		global.introDialogueVIPDone = true;
 		global.drawMission = true;
 		camera_obj.drawDialogueBorder = false;
+		camera_obj.drawText = false;
+		save_scr();
 	}
 }
 
@@ -194,6 +192,7 @@ if (startScene6Timer) {
 			cindy5_obj.dialogueTriggered = false;
 		}
 		camera_obj.drawDialogueBorder = false;
+		camera_obj.drawText = false;
 	}
 }
 
@@ -215,7 +214,7 @@ if (scene7)
 	scene7 = false;
 }
 if (startScene7Timer) {
-	scene7Timer -= global.dt * camera_obj.textSpeed;
+	scene7Timer -= global.dt;
 	
 	if (scene7Timer < 0) {
 		scene7Timer = scene7TimerSave;
@@ -226,6 +225,7 @@ if (startScene7Timer) {
 		inCutscene = false;
 		camera_obj.follow = player_obj;
 		camera_obj.drawDialogueBorder = false;
+		camera_obj.drawText = false;
 	}
 }
 
@@ -247,11 +247,9 @@ if (scene8)
 	scene8 = false;
 }
 if (startScene8Timer) {
-	scene8Timer -= global.dt * camera_obj.textSpeed;
-	
-	if (scene8Timer < 0) {
+	if (camera_obj.dialogueLine >= scene8High - 1) {
 		if (!startScene8BlackTimer) {
-			camera_obj.blackscreenStrength += (global.dt / 40) * camera_obj.textSpeed;
+			camera_obj.blackscreenStrength += global.dt;
 		}
 		
 		if (camera_obj.blackscreenStrength > 0.98) {
@@ -267,23 +265,21 @@ if (startScene8Timer) {
 		}
 		
 		if (startScene8BlackTimer) {
-			scene8BlackTimer -= global.dt * camera_obj.textSpeed;
+			scene8BlackTimer -= global.dt;
 			if (scene8BlackTimer < 0) {
-				camera_obj.blackscreenStrength -= (global.dt / 40) * camera_obj.textSpeed;
+				camera_obj.blackscreenStrength -= global.dt;
 				
 				if (camera_obj.blackscreenStrength < 0.05) {
-					//Start Next Dialogue
-					dialogueSystem_obj.scene9 = true;
-					camera_obj.drawBlackborders = true;
-					
-					scene8Timer = scene8TimerSave;
+					camera_obj.drawBlackborders = false;
+					camera_obj.drawText = false;
+					dialogueSystem_obj.inCutscene = false;
 					startScene8Timer = false;
-					scene8BlackTimer = scene8BlackTimerSave;
-					startScene8BlackTimer = false;
 					inCutscene = false;
 					camera_obj.follow = player_obj;
 					global.cutsceneCasinoIntroDone = true;
-					camera_obj.drawDialogueBorder = false;
+				
+					//Start Next Dialogue
+					dialogueSystem_obj.scene9 = true;
 				}
 			}
 		}
@@ -296,6 +292,7 @@ if (scene9)
 	inCutscene = true;
 	startScene9Timer = true;
 	camera_obj.drawDialogueBorder = true;
+	camera_obj.letterCount = 0;
 	if (!camera_obj.drawText)
 	{
 		for (i = scene9Low; i < scene9High + 1; i++)
@@ -309,11 +306,9 @@ if (scene9)
 }
 
 if (startScene9Timer) {
-	scene9Timer -= global.dt * camera_obj.textSpeed;
-	
-	if (scene9Timer < 0) {
+	if (camera_obj.dialogueLine >= scene9High - 1) {
 		if (!startScene9BlackTimer) {
-			camera_obj.blackscreenStrength += (global.dt / 40) * camera_obj.textSpeed;
+			camera_obj.blackscreenStrength += global.dt;
 		}
 		
 		if (camera_obj.blackscreenStrength > 0.98) {
@@ -333,23 +328,21 @@ if (startScene9Timer) {
 		}
 		
 		if (startScene9BlackTimer) {
-			scene9BlackTimer -= global.dt * camera_obj.textSpeed;
+			scene9BlackTimer -= global.dt;
 			if (scene9BlackTimer < 0) {
-				camera_obj.blackscreenStrength -= (global.dt / 40) * camera_obj.textSpeed;
+				camera_obj.blackscreenStrength -= global.dt;
 				
 				if (camera_obj.blackscreenStrength < 0.05) {
-					//Start Next Dialogue
-					dialogueSystem_obj.scene10 = true;
-					camera_obj.drawBlackborders = true;
-					
-					scene9Timer = scene9TimerSave;
+					camera_obj.drawBlackborders = false;
+					camera_obj.drawText = false;
+					dialogueSystem_obj.inCutscene = false;
 					startScene9Timer = false;
-					scene9BlackTimer = scene9BlackTimerSave;
-					startScene9BlackTimer = false;
 					inCutscene = false;
 					camera_obj.follow = player_obj;
 					global.cutsceneCasinoIntroDone = true;
-					camera_obj.drawDialogueBorder = false;
+				
+					//Start Next Dialogue
+					dialogueSystem_obj.scene10 = true;
 				}
 			}
 		}
@@ -362,6 +355,7 @@ if (scene10)
 	inCutscene = true;
 	startScene10Timer = true;
 	camera_obj.drawDialogueBorder = true;
+	camera_obj.letterCount = 0;
 	if (!camera_obj.drawText)
 	{
 		for (i = scene10Low; i < scene10High + 1; i++)
@@ -375,34 +369,31 @@ if (scene10)
 }
 
 if (startScene10Timer) {
-	scene10Timer -= global.dt * camera_obj.textSpeed;
-	
-	if (scene10Timer < 0) {
+	if (camera_obj.dialogueLine >= scene10High - 1) {
 		if (!startScene10BlackTimer) {
-			camera_obj.blackscreenStrength += (global.dt / 40) * camera_obj.textSpeed;
-		}
+			camera_obj.blackscreenStrength += global.dt;
 		
-		if (camera_obj.blackscreenStrength > 0.98) {
-			startScene10BlackTimer = true;
-			camera_obj.drawBlackborders = false;
+			if (camera_obj.blackscreenStrength > 0.98) {
+				startScene10BlackTimer = true;
 			
-			if (instance_exists(cindy_obj)) {
-				instance_destroy(cindy_obj);
+				if (instance_exists(cindy_obj)) {
+					instance_destroy(cindy_obj);
+				}
 			}
 		}
 		
 		if (startScene10BlackTimer) {
-			scene10BlackTimer -= global.dt * camera_obj.textSpeed;
+			camera_obj.letterCount = 0;
+			scene10BlackTimer -= global.dt;
 			if (scene10BlackTimer < 0) {
-				camera_obj.blackscreenStrength -= (global.dt / 40) * camera_obj.textSpeed;
+				camera_obj.blackscreenStrength -= global.dt;
 				
 				if (camera_obj.blackscreenStrength < 0.05) {		
 					player_obj.movement = true;
 					camera_obj.drawBlackborders = false;
-					scene10Timer = scene10TimerSave;
+					camera_obj.blackscreenStrength = 0;
+					camera_obj.drawText = false;
 					startScene10Timer = false;
-					scene10BlackTimer = scene10BlackTimerSave;
-					startScene10BlackTimer = false;
 					inCutscene = false;
 					camera_obj.follow = player_obj;
 					camera_obj.drawDialogueBorder = false;
@@ -432,17 +423,14 @@ if (scene11)
 }
 
 if (startScene11Timer) {
-	scene11Timer -= global.dt * camera_obj.textSpeed;
+	scene11Timer -= global.dt;
 	
 	if (scene11Timer < 0) {				
-		//player_obj.movement = true;
-		//camera_obj.drawBlackborders = false;
 		scene11Timer = scene11TimerSave;
 		startScene11Timer = false;
-		//inCutscene = false;
-		//camera_obj.follow = player_obj;
 		global.introDialogueOutOfRoomDone = true;
 		camera_obj.drawDialogueBorder = false;
+		camera_obj.drawText = false;
 		save_scr();
 	}
 }

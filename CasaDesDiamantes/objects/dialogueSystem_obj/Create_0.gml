@@ -93,7 +93,7 @@ scene23High = 211;
 // ´ = CustomTarget
 // W[Number] = Open specific window menu
 
-//Scene 1
+//Scene 1 UNUSED
 startScene1Timer = false;
 scene1Timer = 9400;
 scene1TimerSave = scene1Timer;
@@ -138,9 +138,9 @@ scene4TimerSave = scene4Timer;
 dialogue[20] = "*Steph I have a present for you.";
 dialogue[21] = "*I developed these syringes to revive you, ..";
 dialogue[22] = "*..when you're in critical condition.";
-dialogue[23] = "*But that's not all!";
-dialogue[24] = "*I also worked on a prototype companion!";
-dialogue[25] = "*See for yourself..";
+dialogue[23] = "*I also worked on a prototype companion!";
+dialogue[24] = "*See for yourself..";
+dialogue[25] = "                                                                                                             ";
 dialogue[26] = ""; 
 
 //Scene 5 VIP First Mission
@@ -150,16 +150,16 @@ scene5TimerSave = scene5Timer;
 
 dialogue[27] = "^Steph. I have a contract for you.";
 dialogue[28] = "^The situation seems to be getting a bit out of control.";
-dialogue[29] = "^Overwhelming, rather.";
-dialogue[30] = "^Are you interested?";
-dialogue[31] = "#Shoot me the details.";
-dialogue[32] = "^Straight to the point!";
-dialogue[33] = "^We need you to investigate the Senzela Forest."
-dialogue[34] = "^We have found a high concentration of spore cells there.";
-dialogue[35] = "^This phenomenon started appearing a few days ago.";
-dialogue[36] = "^Investigate the situation and find the cause for the uprise.";
-dialogue[37] = "^You will be compensated for your work.";
-dialogue[38] = "#I'll be on my way then.";
+dialogue[29] = "^Overwhelming, rather...interested?";
+dialogue[30] = "#Shoot me the details.";
+dialogue[31] = "^Straight to the point!";
+dialogue[32] = "^We need you to investigate the Senzela Forest."
+dialogue[33] = "^We have found a high concentration of spore cells there.";
+dialogue[34] = "^This phenomenon started appearing a few days ago.";
+dialogue[35] = "^Investigate the situation and find the cause for the uprise.";
+dialogue[36] = "^You will be compensated for your work.";
+dialogue[37] = "#I'll be on my way then.";
+dialogue[38] = "                                                                                                             ";
 dialogue[39] = "";
 
 //Scene 6 Cindy Upgrade Menu
@@ -186,10 +186,10 @@ scene8BlackTimer = 300;
 scene8BlackTimerSave = scene8Timer;
 
 dialogue[45] = "<Welcome to my jewel, the Casa De Diamantes.";
-dialogue[46] = "<Where strangers become friends!";
-dialogue[47] = "<Please, enjoy your stay.";
-dialogue[48] = "<I heard you've had some trouble on the way here.";
-dialogue[49] = "<Girl's managed to empty 6 clips until you finally woke up.";
+dialogue[46] = "<Where strangers become friends! Please, enjoy your stay.";
+dialogue[47] = "<I heard you've had some trouble on the way here.";
+dialogue[48] = "<Girl's managed to empty 6 clips until you finally woke up.";
+dialogue[49] = "                                                                                                             ";
 dialogue[50] = "";
 
 //Scene 9 First Time Entering Casino
@@ -201,11 +201,11 @@ scene9BlackTimer = 500;
 scene9BlackTimerSave = scene9Timer;
 
 dialogue[51] = "$They're magazines, not clips.";
-dialogue[52] = "<...";
-dialogue[53] = "<I'm glad you made it out alive Steph.";
-dialogue[54] = "<Meet me in my office on the VIP floor.";
-dialogue[55] = "<For now, enjoy our games and entertainment!";
-dialogue[56] = "<Until then.";
+dialogue[52] = "<...I'm glad you made it out alive Steph.";
+dialogue[53] = "<Meet me in my office on the VIP floor.";
+dialogue[54] = "<For now, enjoy our games and entertainment!";
+dialogue[55] = "<Until then.";
+dialogue[56] = "                                                                                                             ";
 dialogue[57] = "";
 
 //Scene 10 First Time Entering Casino
@@ -221,8 +221,8 @@ dialogue[59] = "#Cindy.";
 dialogue[60] = "$I'm so glad you're finally here.";
 dialogue[61] = "$I set up a room here already, come on you gotta get some rest.";
 dialogue[62] = "$We got a lot of work before us.";
-dialogue[63] = "#Sure, lead the way.";
-dialogue[64] = "$Come on, you'll love what I did to the place!";
+dialogue[63] = "$Come on, you'll love what I did to the place!";
+dialogue[44] = "                                                                                                             ";
 dialogue[65] = "";
 
 //Scene 11 VIP Out Of Room Interaction
