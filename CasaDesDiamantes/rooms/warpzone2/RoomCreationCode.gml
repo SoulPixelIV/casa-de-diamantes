@@ -23,4 +23,5 @@ if (global.lastCheckpoint == noone) {
 	global.pistolAmmo = 0;
 	global.shotgunAmmo = 0;
 	global.silencedMPAmmo = 0;
+	global.bowAmmo = 0;
 }

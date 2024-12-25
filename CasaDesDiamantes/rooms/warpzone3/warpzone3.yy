@@ -2,7 +2,7 @@
   "resourceType": "GMRoom",
   "resourceVersion": "1.0",
   "name": "warpzone3",
-  "creationCodeFile": "${project_dir}/rooms/warpzone2/RoomCreationCode.gml",
+  "creationCodeFile": "${project_dir}/rooms/warpzone3/RoomCreationCode.gml",
   "inheritCode": false,
   "inheritCreationOrder": false,
   "inheritLayers": false,

@@ -408,7 +408,6 @@
     {"name":"inst_5F937D7F","path":"rooms/level19/level19.yy",},
     {"name":"inst_28CD7F63","path":"rooms/level19/level19.yy",},
     {"name":"inst_20E0F9B9","path":"rooms/level19/level19.yy",},
-    {"name":"inst_4EBB7122","path":"rooms/level19/level19.yy",},
     {"name":"inst_17B33732","path":"rooms/level19/level19.yy",},
     {"name":"inst_EAF8D69","path":"rooms/level19/level19.yy",},
     {"name":"inst_1A9D4E57","path":"rooms/level19/level19.yy",},
@@ -419,8 +418,6 @@
     {"name":"inst_412E124C","path":"rooms/level19/level19.yy",},
     {"name":"inst_5C71EBE4","path":"rooms/level19/level19.yy",},
     {"name":"inst_548EB995","path":"rooms/level19/level19.yy",},
-    {"name":"inst_664E9EE9","path":"rooms/level19/level19.yy",},
-    {"name":"inst_92B46AB","path":"rooms/level19/level19.yy",},
     {"name":"inst_708A4788","path":"rooms/level19/level19.yy",},
     {"name":"inst_1C8A48E3","path":"rooms/level19/level19.yy",},
     {"name":"inst_5701822B","path":"rooms/level19/level19.yy",},
@@ -430,6 +427,7 @@
     {"name":"inst_69156709","path":"rooms/level19/level19.yy",},
     {"name":"inst_5F203CE3","path":"rooms/level19/level19.yy",},
     {"name":"inst_54D6F64B","path":"rooms/level19/level19.yy",},
+    {"name":"inst_18C58748","path":"rooms/level19/level19.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -653,7 +651,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_3F37C70F","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"levelTransition_obj","path":"objects/levelTransition_obj/levelTransition_obj.yy",},"properties":[],"rotation":0.0,"scaleX":-1.0,"scaleY":1.0,"x":1440.0,"y":5120.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Instances","depth":1400,"effectEnabled":true,"effectType":"none","gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_3EE0CF47","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"Spawn1_obj","path":"objects/Spawn1_obj/Spawn1_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":4160.0,"y":2112.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_3EE0CF47","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"Spawn1_obj","path":"objects/Spawn1_obj/Spawn1_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1504.0,"y":5056.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_5CFFFBD","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"diamond_obj","path":"objects/diamond_obj/diamond_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":2688.0,"y":4256.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_286552A2","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"chipPlatinumStatic_obj","path":"objects/chipPlatinumStatic_obj/chipPlatinumStatic_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":2656.0,"y":4256.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_3F4312EC","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"chipPlatinumStatic_obj","path":"objects/chipPlatinumStatic_obj/chipPlatinumStatic_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":2688.0,"y":4288.0,},
@@ -785,13 +783,11 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_1F8D44CA","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"ammoPackShotgun_obj","path":"objects/ammoPackShotgun_obj/ammoPackShotgun_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":3680.0,"y":3666.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_5F937D7F","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"Spawn5_obj","path":"objects/Spawn5_obj/Spawn5_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":4032.0,"y":2112.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_20E0F9B9","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"ammoPackPistol_obj","path":"objects/ammoPackPistol_obj/ammoPackPistol_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":4960.0,"y":2112.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_4EBB7122","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"ammoPackPistol_obj","path":"objects/ammoPackPistol_obj/ammoPackPistol_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":4960.0,"y":2080.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_664E9EE9","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"dualBarettas_obj","path":"objects/dualBarettas_obj/dualBarettas_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":4096.0,"y":2112.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_92B46AB","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"shotgun_obj","path":"objects/shotgun_obj/shotgun_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":4128.0,"y":2112.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_5F203CE3","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"enemySpawnerBossArena_obj","path":"objects/enemySpawnerBossArena_obj/enemySpawnerBossArena_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":4000.0,"y":2112.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_54D6F64B","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"enemySpawnerBossArena_obj","path":"objects/enemySpawnerBossArena_obj/enemySpawnerBossArena_obj.yy",},"properties":[
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"enemySpawnerBossArena_obj","path":"objects/enemySpawnerBossArena_obj/enemySpawnerBossArena_obj.yy",},"propertyId":{"name":"dir","path":"objects/enemySpawnerBossArena_obj/enemySpawnerBossArena_obj.yy",},"value":"-1",},
           ],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":4960.0,"y":2112.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_18C58748","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"dualBarettas_obj","path":"objects/dualBarettas_obj/dualBarettas_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":4960.0,"y":2080.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"MidgroundObjects","depth":1500,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Tiles","depth":1600,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":188,"SerialiseWidth":250,"TileCompressedData":[
