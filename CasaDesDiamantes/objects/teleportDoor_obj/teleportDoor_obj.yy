@@ -32,8 +32,8 @@
   ],
   "solid": false,
   "spriteId": {
-    "name": "warpzoneDoor_spr",
-    "path": "sprites/warpzoneDoor_spr/warpzoneDoor_spr.yy",
+    "name": "powerplantBackgroundDoor_spr",
+    "path": "sprites/powerplantBackgroundDoor_spr/powerplantBackgroundDoor_spr.yy",
   },
   "spriteMaskId": null,
   "visible": true,

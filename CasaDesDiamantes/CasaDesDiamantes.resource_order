@@ -1150,6 +1150,7 @@
     {"name":"light_draw_shadow_map","order":1,"path":"scripts/light_draw_shadow_map/light_draw_shadow_map.yy",},
     {"name":"cindy2_obj","order":6,"path":"objects/cindy2_obj/cindy2_obj.yy",},
     {"name":"characterBorderCreator_obj","order":7,"path":"objects/characterBorderCreator_obj/characterBorderCreator_obj.yy",},
+    {"name":"powerplantBackgroundDoor_spr","order":269,"path":"sprites/powerplantBackgroundDoor_spr/powerplantBackgroundDoor_spr.yy",},
     {"name":"__ppf_sh_dp_blend_normals","order":1,"path":"shaders/__ppf_sh_dp_blend_normals/__ppf_sh_dp_blend_normals.yy",},
     {"name":"level3_Map_teleporter","order":38,"path":"objects/level3_Map_teleporter/level3_Map_teleporter.yy",},
     {"name":"zombieBucketGirlAttack1Stop_spr","order":16,"path":"sprites/zombieBucketGirlAttack1Stop_spr/zombieBucketGirlAttack1Stop_spr.yy",},
