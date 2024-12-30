@@ -914,10 +914,12 @@ if (!noHUD && instance_exists(player_obj))
 	}
 
 	//Syringes
-	for (i = 0; i < global.syringes; i++)
-	{
-		draw_sprite_ext(syringe_spr, -1, 32 + 0 / 2, ((0 / 2) + 70) + 16 * i, 1, 1, 0, -1, 1);
-	}
+	draw_sprite_ext(syringe_spr, -1, 25, 96, 1, 1, 0, -1, 1);
+	draw_set_color(make_color_rgb(255,215,0));
+	draw_set_font(gothicPixel_fnt);
+	draw_set_halign(fa_left);
+	draw_text(25 + 21, 97, "x " + string(global.syringes));
+	draw_set_font(gothicPixel_fnt);
 	
 	//Keycards
 	if (global.keyRed) {

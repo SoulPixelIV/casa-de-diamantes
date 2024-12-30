@@ -3,7 +3,7 @@
 global.spawn = 0;
 global.money = 0;
 global.skin = 0;
-global.syringes = 0;
+global.syringes = 4;
 global.room = noone;
 global.diamonds = 0;
 global.lastCheckpoint = noone;
