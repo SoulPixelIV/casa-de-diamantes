@@ -128,6 +128,10 @@ global.warpzone1DoorOpen = false;
 global.warpzone1Reward = false;
 global.warpzone1RewardGiven = false;
 
+global.warpzone1Done = false;
+global.warpzone2Done = false;
+global.warpzone3Done = false;
+
 global.drawMission = false;
 global.introDialogueCindyDone = false;
 global.introDialogueVIPDone = false;

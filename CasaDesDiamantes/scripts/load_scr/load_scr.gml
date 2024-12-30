@@ -19,6 +19,10 @@ function load_scr(){
 	global.act2Unlocked = ini_read_real("save1", "act2Unlocked", false);
 	global.helicopterIntro = ini_read_real("save1", "helicopterIntro", false);
 	
+	global.warpzone1Done = ini_read_real("save1", "warpzone1Done", false);
+	global.warpzone2Done = ini_read_real("save1", "warpzone2Done", false);
+	global.warpzone3Done = ini_read_real("save1", "warpzone3Done", false);
+	
 	global.cutsceneLevel2Done = ini_read_real("save1", "shownCutsceneLevel2", false);
 	global.cutsceneCasinoIntroDone = ini_read_real("save1", "shownCutsceneCasinoIntro", false);
 	global.introDialogueVIPDone = ini_read_real("save1", "shownVIPIntro", false);

@@ -21,6 +21,7 @@ if (finishingTeleport) {
 	if (waitDelay < 0) {	
 		part_emitter_destroy_all(global.partSystem);
 		instance_destroy(player_obj);
+		global.warpzone3Done = true;
 		global.spawn = 4;
 		room_goto(level17);
 	}

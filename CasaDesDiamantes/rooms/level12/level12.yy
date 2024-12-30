@@ -550,7 +550,6 @@
     {"name":"inst_2C253390","path":"rooms/level12/level12.yy",},
     {"name":"inst_E8DAFE8","path":"rooms/level12/level12.yy",},
     {"name":"inst_213FF722","path":"rooms/level12/level12.yy",},
-    {"name":"inst_37ED8995","path":"rooms/level12/level12.yy",},
     {"name":"inst_118296B4","path":"rooms/level12/level12.yy",},
     {"name":"inst_7F6CDD34","path":"rooms/level12/level12.yy",},
     {"name":"inst_2C52B7E6","path":"rooms/level12/level12.yy",},
@@ -591,6 +590,7 @@
     {"name":"inst_290BBD22","path":"rooms/level12/level12.yy",},
     {"name":"inst_2264FA12","path":"rooms/level12/level12.yy",},
     {"name":"inst_1E50D5F2","path":"rooms/level12/level12.yy",},
+    {"name":"inst_24AB066E","path":"rooms/level12/level12.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -1404,9 +1404,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_6EE5804E","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"caveLampRed_obj","path":"objects/caveLampRed_obj/caveLampRed_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":4064.0,"y":3776.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_71F3DCD7","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"yellowKeyGate_obj","path":"objects/yellowKeyGate_obj/yellowKeyGate_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":3840.0,"y":2272.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_2C253390","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"neuralDoorExit_obj","path":"objects/neuralDoorExit_obj/neuralDoorExit_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":5920.0,"y":928.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_37ED8995","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"neuralActivator_obj","path":"objects/neuralActivator_obj/neuralActivator_obj.yy",},"properties":[
-            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"neuralActivator_obj","path":"objects/neuralActivator_obj/neuralActivator_obj.yy",},"propertyId":{"name":"teleportpoint","path":"objects/neuralActivator_obj/neuralActivator_obj.yy",},"value":"1",},
-          ],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":6236.0,"y":940.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_24AB066E","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"neuralActivatorWarpzone2_obj","path":"objects/neuralActivatorWarpzone2_obj/neuralActivatorWarpzone2_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":6236.0,"y":938.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"SewerTiles","depth":1900,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":141,"SerialiseWidth":250,"TileCompressedData":[
 -109,0,-141,-2147483648,-109,0,-141,-2147483648,-109,0,-141,-2147483648,-109,0,-141,-2147483648,-109,0,-141,-2147483648,-109,0,-141,-2147483648,-109,0,-141,-2147483648,-109,0,-92,-2147483648,-18,0,-31,-2147483648,-109,0,-92,-2147483648,-18,0,-31,-2147483648,-109,0,-8,-2147483648,-41,0,-41,-2147483648,-20,0,-31,-2147483648,-109,0,-4,-2147483648,-45,0,-41,-2147483648,-20,0,-31,-2147483648,-109,0,-4,-2147483648,-45,0,-41,-2147483648,-20,0,-31,-2147483648,-109,0,-4,-2147483648,-82,0,1,-2147483648,-23,0,-31,-2147483648,-195,0,1,-2147483648,-23,0,-31,-2147483648,-195,0,1,-2147483648,-23,0,-31,-2147483648,-195,0,1,-2147483648,-23,0,-31,-2147483648,-219,0,-31,-2147483648,-219,0,-31,-2147483648,-219,0,-31,-2147483648,-219,0,-31,-2147483648,-219,0,-31,-2147483648,-219,0,-31,-2147483648,-219,0,-31,-2147483648,-219,0,-31,-2147483648,-182,0,1,53,-14,28,1,54,-21,0,-31,-2147483648,-182,0,1,36,-13,0,2,11,29,-21,0,-31,-2147483648,-182,0,1,36,-13,0,2,11,29,-21,0,-31,-2147483648,-182,0,1,36,-13,0,2,11,29,-21,0,-31,-2147483648,-182,0,1,36,-13,0,2,11,29,-21,0,-31,-2147483648,-182,0,1,36,-5,1,10,8,9,1,1,8,9,1,1,10,29,-21,0,-31,-2147483648,-182,0,1,61,-14,20,1,62,-21,0,-31,-2147483648,-219,0,-31,-2147483648,-219,

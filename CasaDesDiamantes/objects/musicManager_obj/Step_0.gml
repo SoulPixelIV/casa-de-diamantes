@@ -415,6 +415,19 @@ if (act3MusicOn && !act3MusicStarted) {
 	feastL1Track = audio_play_sound_on(musicEmitter, feastL1, 1, 1);
 	feastL2Track = audio_play_sound_on(musicEmitter, feastL2, 1, 1);
 	
+	if (audio_is_playing(dressedToKillSTEM_msc)) {
+		audio_stop_sound(dressedToKillSTEM_msc);
+	}
+	if (audio_is_playing(dressedToKillL3_msc)) {
+		audio_stop_sound(dressedToKillL3_msc);
+	}
+	if (audio_is_playing(dressedToKillL2_msc)) {
+		audio_stop_sound(dressedToKillL2_msc);
+	}
+	if (audio_is_playing(dressedToKillL1_msc)) {
+		audio_stop_sound(dressedToKillL1_msc);
+	}
+	
 	audio_sound_gain(caveL1, 0, 0);
 	audio_sound_gain(caveL2, 0, 0);
 	audio_sound_gain(caveL3, 0, 0);
@@ -505,6 +518,19 @@ if (act4MusicOn && !act4MusicStarted) {
 	atomicL1 = audio_play_sound_on(musicEmitter, nuclidesL1, 1, 1);
 	atomicL2 = audio_play_sound_on(musicEmitter, nuclidesL2, 1, 1);
 	atomicL3 = audio_play_sound_on(musicEmitter, nuclidesL3, 1, 1);
+	
+	if (audio_is_playing(dressedToKillSTEM_msc)) {
+		audio_stop_sound(dressedToKillSTEM_msc);
+	}
+	if (audio_is_playing(dressedToKillL3_msc)) {
+		audio_stop_sound(dressedToKillL3_msc);
+	}
+	if (audio_is_playing(dressedToKillL2_msc)) {
+		audio_stop_sound(dressedToKillL2_msc);
+	}
+	if (audio_is_playing(dressedToKillL1_msc)) {
+		audio_stop_sound(dressedToKillL1_msc);
+	}
 	
 	audio_sound_gain(atomicL3, 0, 0);
 	audio_sound_gain(atomicL2, 0, 0);
