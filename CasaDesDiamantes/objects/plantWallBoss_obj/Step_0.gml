@@ -89,7 +89,7 @@ if (startBattle) {
 				instance_destroy(plantWallBossForeground_obj);
 				instance_destroy(eye_obj);
 				instance_destroy(mouth_obj);
-				instance_destroy(vine_obj);
+				instance_destroy(vines_obj);
 				if (instance_exists(springladder_obj)) {
 					spring = instance_nearest(x, y, springladder_obj);
 					spring.open = true;
