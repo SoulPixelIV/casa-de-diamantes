@@ -24,6 +24,10 @@ scene20 = false;
 scene21 = false;
 scene22 = false;
 scene23 = false;
+scene24 = false;
+scene25 = false;
+scene26 = false;
+scene27 = false;
 
 //Dialogue Markers
 scene1Low = 0;
@@ -72,6 +76,14 @@ scene22Low = 166;
 scene22High = 211;
 scene23Low = 166;
 scene23High = 211;
+scene24Low = 212;
+scene24High = 214;
+scene25Low = 215;
+scene25High = 219;
+scene26Low = 220;
+scene26High = 223;
+scene27Low = 224;
+scene27High = 226;
 
 //Dialogue Text
 //!!!ALWAYS 1 EMPTY SPACE & 1 FREE SPACE BETWEEN SCENES
@@ -449,3 +461,43 @@ dialogue[208] = "$See what you can find out.";
 dialogue[209] = "$For tonight, you're dismissed! Good night.";
 dialogue[210] = "                                                                                                             ";
 dialogue[211] = "";
+
+//Scene 24 CuPy Dialogue 1 Endless Depths
+startScene24BlackTimer = false;
+scene24BlackTimer = 600;
+startScene24Timer = false;
+
+dialogue[212] = "%*bzzzrt* Steph wha-..";
+dialogue[213] = "                                                                                                             ";
+dialogue[214] = "";
+
+//Scene 25 CuPy Dialogue 2 Endless Depths
+startScene25BlackTimer = false;
+scene25BlackTimer = 600;
+startScene25Timer = false;
+
+dialogue[215] = "%Steph, do you copy?";
+dialogue[216] = "%The connection should be back online.";
+dialogue[217] = "%The airship sho- *bzzrt*";
+dialogue[218] = "                                                                                                             ";
+dialogue[219] = "";
+
+
+//Scene 26 CuPy Dialogue 3 Endless Depths
+startScene26BlackTimer = false;
+scene26BlackTimer = 600;
+startScene26Timer = false;
+
+dialogue[220] = "%The airship is repaired.";
+dialogue[221] = "%Steph, I'm sending you the coordinates.";
+dialogue[222] = "                                                                                                             ";
+dialogue[223] = "";
+
+//Scene 27 CuPy Dialogue 4 Endless Depths
+startScene27BlackTimer = false;
+scene27BlackTimer = 600;
+startScene27Timer = false;
+
+dialogue[224] = "%Please be safe...";
+dialogue[225] = "                                                                                                             ";
+dialogue[226] = "";

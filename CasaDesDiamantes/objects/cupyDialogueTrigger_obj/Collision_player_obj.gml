@@ -35,4 +35,28 @@ if (instance_exists(cutieplusSteph_obj)) {
 			dialogueTriggered = true;
 		}
 	}
+	if (dialogue == 6) {
+		if (!global.cupyDialogue7Done && !dialogueTriggered) {
+			dialogueSystem_obj.scene24 = true;
+			dialogueTriggered = true;
+		}
+	}
+	if (dialogue == 7) {
+		if (!global.cupyDialogue8Done && !dialogueTriggered) {
+			dialogueSystem_obj.scene25 = true;
+			dialogueTriggered = true;
+		}
+	}
+	if (dialogue == 8) {
+		if (!global.cupyDialogue9Done && !dialogueTriggered) {
+			dialogueSystem_obj.scene26 = true;
+			dialogueTriggered = true;
+		}
+	}
+	if (dialogue == 9) {
+		if (!global.cupyDialogue10Done && !dialogueTriggered) {
+			dialogueSystem_obj.scene27 = true;
+			dialogueTriggered = true;
+		}
+	}
 }

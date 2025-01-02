@@ -980,3 +980,111 @@ if (startScene23Timer) {
 		}
 	}
 }
+
+//Scene 24
+if (scene24)
+{
+	startScene24Timer = true;
+	camera_obj.drawDialogueBorder = true;
+	if (!camera_obj.drawText)
+	{
+		for (i = scene24Low; i < scene24High + 1; i++)
+		{
+			camera_obj.dialogue[i] = dialogue[i];
+		}
+		camera_obj.dialogueLine = scene24Low;
+		camera_obj.drawText = true;
+	}
+	scene24 = false;
+}
+
+if (startScene24Timer) {
+	if (camera_obj.dialogueLine >= scene24High - 1) {			
+		startScene24Timer = false;
+		camera_obj.drawText = false;
+		global.cupyDialogue7Done = true;
+		camera_obj.drawDialogueBorder = false;
+		save_scr();
+	}
+}
+
+//Scene 25
+if (scene25)
+{
+	startScene25Timer = true;
+	camera_obj.drawDialogueBorder = true;
+	if (!camera_obj.drawText)
+	{
+		for (i = scene25Low; i < scene25High + 1; i++)
+		{
+			camera_obj.dialogue[i] = dialogue[i];
+		}
+		camera_obj.dialogueLine = scene25Low;
+		camera_obj.drawText = true;
+	}
+	scene25 = false;
+}
+
+if (startScene25Timer) {
+	if (camera_obj.dialogueLine >= scene25High - 1) {			
+		startScene25Timer = false;
+		global.cupyDialogue7Done = true;
+		camera_obj.drawText = false;
+		camera_obj.drawDialogueBorder = false;
+		save_scr();
+	}
+}
+
+//Scene 26
+if (scene26)
+{
+	startScene26Timer = true;
+	camera_obj.drawDialogueBorder = true;
+	if (!camera_obj.drawText)
+	{
+		for (i = scene26Low; i < scene26High + 1; i++)
+		{
+			camera_obj.dialogue[i] = dialogue[i];
+		}
+		camera_obj.dialogueLine = scene26Low;
+		camera_obj.drawText = true;
+	}
+	scene26 = false;
+}
+
+if (startScene26Timer) {
+	if (camera_obj.dialogueLine >= scene26High - 1) {			
+		startScene26Timer = false;
+		camera_obj.drawText = false;
+		global.cupyDialogue7Done = true;
+		camera_obj.drawDialogueBorder = false;
+		save_scr();
+	}
+}
+
+//Scene 27
+if (scene27)
+{
+	startScene27Timer = true;
+	camera_obj.drawDialogueBorder = true;
+	if (!camera_obj.drawText)
+	{
+		for (i = scene27Low; i < scene27High + 1; i++)
+		{
+			camera_obj.dialogue[i] = dialogue[i];
+		}
+		camera_obj.dialogueLine = scene27Low;
+		camera_obj.drawText = true;
+	}
+	scene27 = false;
+}
+
+if (startScene27Timer) {
+	if (camera_obj.dialogueLine >= scene27High - 1) {			
+		startScene27Timer = false;
+		camera_obj.drawText = false;
+		global.cupyDialogue7Done = true;
+		camera_obj.drawDialogueBorder = false;
+		save_scr();
+	}
+}

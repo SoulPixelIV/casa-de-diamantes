@@ -3,7 +3,7 @@
 global.spawn = 0;
 global.money = 0;
 global.skin = 0;
-global.syringes = 4;
+global.syringes = 0;
 global.room = noone;
 global.diamonds = 0;
 global.lastCheckpoint = noone;
@@ -44,7 +44,7 @@ global.shotgunUpgrade2 = true;
 global.dualBarettasUpgrade1 = true;
 global.dualBarettasUpgrade2 = true;
 
-global.cupyUpgrade1 = false;
+global.cupyUpgrade1 = true;
 global.cupyUpgrade2 = false;
 
 global.boughtSkin1 = false;
@@ -147,6 +147,10 @@ global.cupyDialogue3Done = false;
 global.cupyDialogue4Done = false;
 global.cupyDialogue5Done = false;
 global.cupyDialogue6Done = false;
+global.cupyDialogue7Done = false;
+global.cupyDialogue8Done = false;
+global.cupyDialogue9Done = false;
+global.cupyDialogue10Done = false;
 
 global.hat = choose(noone);
 global.top1 = choose(noone);
