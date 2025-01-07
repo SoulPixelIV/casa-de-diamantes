@@ -28,6 +28,8 @@ scene24 = false;
 scene25 = false;
 scene26 = false;
 scene27 = false;
+scene28 = false;
+scene29 = false;
 
 //Dialogue Markers
 scene1Low = 0;
@@ -84,6 +86,10 @@ scene26Low = 220;
 scene26High = 223;
 scene27Low = 224;
 scene27High = 226;
+scene28Low = 227;
+scene28High = 232;
+scene29Low = 233;
+scene29High = 253;
 
 //Dialogue Text
 //!!!ALWAYS 1 EMPTY SPACE & 1 FREE SPACE BETWEEN SCENES
@@ -503,8 +509,6 @@ dialogue[225] = "                                                               
 dialogue[226] = "";
 
 //Scene 28 Komo Blackjack
-startScene28BlackTimer = false;
-scene28BlackTimer = 600;
 startScene28Timer = false;
 
 dialogue[227] = "#Komo, you will not believe what just happened to me...";
@@ -519,23 +523,23 @@ startScene29BlackTimer = false;
 scene29BlackTimer = 600;
 startScene29Timer = false;
 
-dialogue[233] = "§Steph!";
+dialogue[233] = "*Steph!";
 dialogue[234] = ";I was worried about you.";
 dialogue[235] = "#Thank you, I'm alright.";
-dialogue[236] = "§The airship is fully functional and ready for liftoff.";
+dialogue[236] = "*The airship is fully functional and ready for liftoff.";
 dialogue[237] = ";A mistake like this is unforgiveable!";
 dialogue[238] = ";Cindy, you were responsible for the calculations!";
-dialogue[239] = "§It wasn't a mistake...";
+dialogue[239] = "*It wasn't a mistake...";
 dialogue[240] = ";What?";
-dialogue[241] = "§The airship has been shot!";
+dialogue[241] = "*The airship has been shot!";
 dialogue[242] = "#How is this possible?";
-dialogue[243] = "§Someone knew about our coordinates.";
-dialogue[244] = "§But we are the only ones with this information.";
+dialogue[243] = "*Someone knew about our coordinates.";
+dialogue[244] = "*But we are the only ones with this information.";
 dialogue[245] = ";I was with Komo the whole time.";
 dialogue[246] = ";Komo is very talkative I know that.";
 dialogue[247] = ";But I had an eye on her the whole time!";
 dialogue[248] = "#Could it be that we-";
-dialogue[249] = "§You should investigate the EDEN Powerplant.";
+dialogue[249] = "*You should investigate the EDEN Powerplant.";
 dialogue[250] = ";You should investigate the EDEN Powerplant.";
 dialogue[251] = "#I should investigate the EDEN Powerplant.";
 dialogue[252] = "                                                                                                             ";

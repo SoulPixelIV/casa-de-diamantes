@@ -149,6 +149,10 @@ if (string_char_at(dialogue[dialogueLine], 1) == "$")
 		character = cindy5_obj;
 		follow = cindy5_obj;
 	}
+	if (instance_exists(cindy6_obj)) {
+		character = cindy6_obj;
+		follow = cindy6_obj;
+	}
 }
 if (string_char_at(dialogue[dialogueLine], 1) == "§")
 {
@@ -176,6 +180,10 @@ if (string_char_at(dialogue[dialogueLine], 1) == "*")
 	if (instance_exists(cindy5_obj)) {
 		character = cindy5_obj;
 		follow = cindy5_obj;
+	}
+	if (instance_exists(cindy6_obj)) {
+		character = cindy6_obj;
+		follow = cindy6_obj;
 	}
 }
 if (string_char_at(dialogue[dialogueLine], 1) == "%")
@@ -230,6 +238,10 @@ if (string_char_at(dialogue[dialogueLine], 1) == ";")
 		character = tristram4_obj;
 		follow = tristram4_obj;
 	}
+	if (instance_exists(tristram5_obj)) {
+		character = tristram5_obj;
+		follow = tristram5_obj;
+	}
 }
 if (string_char_at(dialogue[dialogueLine], 1) == ">")
 {
@@ -248,6 +260,10 @@ if (string_char_at(dialogue[dialogueLine], 1) == ">")
 	if (instance_exists(komo4_obj)) {
 		character = komo4_obj;
 		follow = komo4_obj;
+	}
+	if (instance_exists(komo5_obj)) {
+		character = komo5_obj;
+		follow = komo5_obj;
 	}
 }
 if (string_char_at(dialogue[dialogueLine], 1) == "_")
@@ -309,7 +325,7 @@ if (drawText && !showWindowMenu)
 	if (instance_exists(character) && drawDialogueBorder) {
 		if (character == player_obj || character == steph2_obj) {
 			draw_sprite_ext(dialogBorder_spr, 0, (character.x - x) + global.xScreenSize / 2, (character.y - y) - 42 + global.yScreenSize / 2, 2 + string_length(dialogueStripped) / 3, 1.5, 0, make_color_rgb(229, 171, 113), 1);
-		} else if (character == cindy_obj || character == cindy2_obj || character == cindy3_obj || character == cindy4_obj || character == cindy5_obj) {
+		} else if (character == cindy_obj || character == cindy2_obj || character == cindy3_obj || character == cindy4_obj || character == cindy5_obj || character == cindy6_obj) {
 			draw_sprite_ext(dialogBorder_spr, 0, (character.x - x) + global.xScreenSize / 2, (character.y - y) - 42 + global.yScreenSize / 2, 2 + string_length(dialogueStripped) / 3, 1.5, 0, make_color_rgb(91, 204, 151), 1);
 		} else if (character == cutieplusSteph_obj) {
 			draw_sprite_ext(dialogBorder_spr, 0, (character.x - x) + global.xScreenSize / 2, (character.y - y) - 22 + global.yScreenSize / 2, 2 + string_length(dialogueStripped) / 3, 1.5, 0, make_color_rgb(82, 43, 82), 1);
@@ -335,9 +351,9 @@ if (drawText && !showWindowMenu)
 		} else if (character == casinoCandleLight_obj) {
 			draw_sprite_ext(dialogBorder_spr, 0, (player_obj.x - x) + global.xScreenSize / 2, (player_obj.y - y) - 42 + global.yScreenSize / 2, 2 + string_length(dialogueStripped) / 3, 1.5, 0, make_color_rgb(229, 171, 113), 1);
 			draw_sprite_ext(dialogBorder_spr, 0, (tristram3_obj.x - x) + global.xScreenSize / 2, (tristram3_obj.y - y) - 42 + global.yScreenSize / 2, 2 + string_length(dialogueStripped) / 3, 1.5, 0, make_color_rgb(91, 204, 151), 1);
-		} else if (character == tristram_obj || character == tristram2_obj || character == tristram3_obj || character == tristram4_obj) {
+		} else if (character == tristram_obj || character == tristram2_obj || character == tristram3_obj || character == tristram4_obj || character == tristram5_obj) {
 			draw_sprite_ext(dialogBorder_spr, 0, (character.x - x) + global.xScreenSize / 2, (character.y - y) - 42 + global.yScreenSize / 2, 2 + string_length(dialogueStripped) / 3, 1.5, 0, make_color_rgb(198, 204, 99), 1);
-		} else if (character == komo_obj || character == komo2_obj || character == komo3_obj || character == komo4_obj) {
+		} else if (character == komo_obj || character == komo2_obj || character == komo3_obj || character == komo4_obj || character == komo5_obj) {
 			draw_sprite_ext(dialogBorder_spr, 0, (character.x - x) + global.xScreenSize / 2, (character.y - y) - 42 + global.yScreenSize / 2, 2 + string_length(dialogueStripped) / 3, 1.5, 0, make_color_rgb(127, 172, 255), 1);
 		}
 	
@@ -1908,6 +1924,16 @@ if (global.drawMission && !global.pause) {
 		}
 	}
 	if (global.storyAct == 1 && global.firstmeetingDialogue && global.meeting2Dialogue) {
+		if (room == level_Casino || room == level_CasinoRoof || room == level_DiningHall || room == level_Basement || room == level_TristramRoom) {
+			draw_set_halign(fa_center);
+			draw_set_font(gothicPixel_fnt);
+			draw_set_color(c_black);
+			draw_text(global.xScreenSize / 2 - 1 + 11, 11 + 1, "Mission - Investigate EDEN Powerplant");
+			draw_set_color(make_color_rgb(255, 215, 0));
+			draw_text(global.xScreenSize / 2 + 11, 11, "Mission - Investigate EDEN Powerplant");
+		}
+	}
+	if (global.storyAct == 2 && global.tristramCindyQuestioningDialogueDone) {
 		if (room == level_Casino || room == level_CasinoRoof || room == level_DiningHall || room == level_Basement || room == level_TristramRoom) {
 			draw_set_halign(fa_center);
 			draw_set_font(gothicPixel_fnt);

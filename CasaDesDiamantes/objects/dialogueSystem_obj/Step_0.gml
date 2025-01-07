@@ -1088,3 +1088,69 @@ if (startScene27Timer) {
 		save_scr();
 	}
 }
+
+//Scene 28
+if (scene28) {
+	inCutscene = true;
+	startScene28Timer = true;
+	camera_obj.drawDialogueBorder = true;
+	if (!camera_obj.drawText)
+	{
+		for (i = scene28Low; i < scene28High + 1; i++)
+		{
+			camera_obj.dialogue[i] = dialogue[i];
+		}
+		camera_obj.dialogueLine = scene28Low;
+		camera_obj.drawText = true;
+	}
+	scene28 = false;
+}
+
+if (startScene28Timer) {
+	if (camera_obj.dialogueLine >= scene28High - 1) {
+		player_obj.movement = true;
+		camera_obj.drawBlackborders = false;
+		camera_obj.drawText = false;
+		dialogueSystem_obj.inCutscene = false;
+		startScene28Timer = false;
+		inCutscene = false;
+		camera_obj.follow = player_obj;
+		global.komoGamblingDialogueDone = true;
+		camera_obj.drawDialogueBorder = false;
+		save_scr();
+	}
+}
+
+//Scene 29
+if (scene29) {
+	inCutscene = true;
+	startScene29Timer = true;
+	camera_obj.drawDialogueBorder = true;
+	if (!camera_obj.drawText)
+	{
+		for (i = scene29Low; i < scene29High + 1; i++)
+		{
+			camera_obj.dialogue[i] = dialogue[i];
+		}
+		camera_obj.dialogueLine = scene29Low;
+		camera_obj.drawText = true;
+	}
+	scene29 = false;
+}
+
+if (startScene29Timer) {
+	if (camera_obj.dialogueLine >= scene29High - 1) {
+		player_obj.movement = true;
+		camera_obj.drawBlackborders = false;
+		camera_obj.drawText = false;
+		dialogueSystem_obj.inCutscene = false;
+		startScene29Timer = false;
+		inCutscene = false;
+		camera_obj.follow = player_obj;
+		global.tristramCindyQuestioningDialogueDone = true;
+		global.drawMission = true;
+		//global.act3Unlocked = true;
+		camera_obj.drawDialogueBorder = false;
+		save_scr();
+	}
+}

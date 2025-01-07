@@ -72,8 +72,20 @@ if (pushDelay < 0) {
 					global.lastCheckpoint = noone;
 				break;
 				case 2:
+				global.cutsceneCasinoIntroDone = true;
+					global.introDialogueVIPDone = true;
+					global.introDialogueCindyDone = true;
+					global.introDialogueOutOfRoomDone = true;
+					global.cupyDialogue1Done = true;
+					global.cupyDialogue2Done = true;
+					global.cupyDialogue3Done = true;
+					global.cupyDialogue4Done = true;
+					global.cupyDialogue5Done = true;
+					global.komoGamblingDialogueDone = false;
+					global.tristramCindyQuestioningDialogueDone = false;
+					global.drawMission = false;
 					global.storyAct = 2;
-					room_goto(level_Casino);
+					room_goto(level_CasinoRoof);
 					global.lastCheckpoint = noone;
 				break;
 			}

@@ -35,6 +35,9 @@ function save_scr(){
 	ini_write_real("save1", "shownOutOfRoomIntro", global.introDialogueOutOfRoomDone);
 	ini_write_real("save1", "firstmeetingDialogue", global.firstmeetingDialogue);
 	ini_write_real("save1", "firstmeetingDialogue", global.firstmeetingDialogue);
+	
+	ini_write_real("save1", "komoGamblingDialogueDone", global.komoGamblingDialogueDone);
+	ini_write_real("save1", "tristramCindyQuestioningDialogueDone", global.tristramCindyQuestioningDialogueDone);
 
 	ini_write_real("save1", "pwlevel2UnlockedElevator", global.pwlevel2UnlockedElevator);
 	ini_write_real("save1", "pwlevel3UnlockedElevator", global.pwlevel3UnlockedElevator);

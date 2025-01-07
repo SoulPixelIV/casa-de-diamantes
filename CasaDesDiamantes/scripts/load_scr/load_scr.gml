@@ -30,6 +30,9 @@ function load_scr(){
 	global.dinnerDialogue = ini_read_real("save1", "dinnerDialogue", false);
 	global.firstmeetingDialogue = ini_read_real("save1", "firstmeetingDialogue", false);
 	global.firstmeetingDialogue = ini_read_real("save1", "firstmeetingDialogue", false);
+	
+	global.komoGamblingDialogueDone = ini_read_real("save1", "komoGamblingDialogueDone", false);
+	global.tristramCindyQuestioningDialogueDone = ini_read_real("save1", "tristramCindyQuestioningDialogueDone", false);
 
 	global.pwlevel2UnlockedElevator = ini_read_real("save1", "pwlevel2UnlockedElevator", false);
 	global.pwlevel3UnlockedElevator = ini_read_real("save1", "pwlevel3UnlockedElevator", false);
