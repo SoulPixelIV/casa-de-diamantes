@@ -1139,6 +1139,10 @@ if (scene29) {
 }
 
 if (startScene29Timer) {
+	if (camera_obj.dialogueLine >= scene29High - 4) {
+		camera_obj.hazeEffect = true;
+		audio_stop_sound(casinoTheme);
+	}
 	if (camera_obj.dialogueLine >= scene29High - 1) {
 		player_obj.movement = true;
 		camera_obj.drawBlackborders = false;
@@ -1147,6 +1151,7 @@ if (startScene29Timer) {
 		startScene29Timer = false;
 		inCutscene = false;
 		camera_obj.follow = player_obj;
+		camera_obj.hazeEffect = false;
 		global.tristramCindyQuestioningDialogueDone = true;
 		global.drawMission = true;
 		//global.act3Unlocked = true;
