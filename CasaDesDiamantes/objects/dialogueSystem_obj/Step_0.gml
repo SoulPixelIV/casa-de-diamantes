@@ -746,6 +746,13 @@ if (startScene19Timer) {
 					camera_obj.follow = player_obj;
 					global.dinnerDialogue = true;
 					camera_obj.drawDialogueBorder = false;
+					global.money += 7500;
+					camera_obj.scoreSpin = true;
+					camera_obj.scoreDif = true;
+					camera_obj.scoreSpinTimer = camera_obj.scoreSpinTimerSave;
+					camera_obj.scoreDifTimer = camera_obj.scoreDifTimerSave;
+					camera_obj.chipDif += 7500;
+					audio_play_sound(buying_snd, 1, false);
 					save_scr();
 					room_restart();
 				}
