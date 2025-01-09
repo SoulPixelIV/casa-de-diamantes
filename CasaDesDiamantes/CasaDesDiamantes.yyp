@@ -1741,6 +1741,7 @@
     {"id":{"name":"mainmenuBackground_spr","path":"sprites/mainmenuBackground_spr/mainmenuBackground_spr.yy",},},
     {"id":{"name":"bowReadying_snd","path":"sounds/bowReadying_snd/bowReadying_snd.yy",},},
     {"id":{"name":"pistol_obj","path":"objects/pistol_obj/pistol_obj.yy",},},
+    {"id":{"name":"particleRadiationStillSpawner_obj","path":"objects/particleRadiationStillSpawner_obj/particleRadiationStillSpawner_obj.yy",},},
     {"id":{"name":"buttonSelected_spr","path":"sprites/buttonSelected_spr/buttonSelected_spr.yy",},},
     {"id":{"name":"dressedToKillL1_msc","path":"sounds/dressedToKillL1_msc/dressedToKillL1_msc.yy",},},
     {"id":{"name":"elevatorSelectMenuButton3_obj","path":"objects/elevatorSelectMenuButton3_obj/elevatorSelectMenuButton3_obj.yy",},},

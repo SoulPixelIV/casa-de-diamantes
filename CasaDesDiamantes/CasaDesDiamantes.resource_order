@@ -1527,6 +1527,7 @@
     {"name":"windowBackground_obj","order":14,"path":"objects/windowBackground_obj/windowBackground_obj.yy",},
     {"name":"mainmenuBackground_spr","order":68,"path":"sprites/mainmenuBackground_spr/mainmenuBackground_spr.yy",},
     {"name":"bowReadying_snd","order":3,"path":"sounds/bowReadying_snd/bowReadying_snd.yy",},
+    {"name":"particleRadiationStillSpawner_obj","order":6,"path":"objects/particleRadiationStillSpawner_obj/particleRadiationStillSpawner_obj.yy",},
     {"name":"buttonSelected_spr","order":90,"path":"sprites/buttonSelected_spr/buttonSelected_spr.yy",},
     {"name":"dressedToKillL1_msc","order":6,"path":"sounds/dressedToKillL1_msc/dressedToKillL1_msc.yy",},
     {"name":"elevatorSelectMenuButton3_obj","order":8,"path":"objects/elevatorSelectMenuButton3_obj/elevatorSelectMenuButton3_obj.yy",},

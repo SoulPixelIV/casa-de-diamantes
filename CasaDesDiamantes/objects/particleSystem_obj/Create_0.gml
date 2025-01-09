@@ -169,6 +169,15 @@ part_type_orientation(global.whiteStillPart, 0, 359, 1, 0, 1);
 part_type_direction(global.whiteStillPart, 0, 359, 0, 3);
 part_type_speed(global.whiteStillPart, 0.0002, 0.0005, 0, 0.0002);
 
+global.radiationStillPart = part_type_create();
+part_type_sprite(global.radiationStillPart, spark_spr, true, false, true);
+part_type_life(global.radiationStillPart, 6000, 6200);
+part_type_size(global.radiationStillPart, 0.2, 0.5, 0, 0);
+part_type_orientation(global.radiationStillPart, 0, 359, 1, 0, 1);
+part_type_direction(global.radiationStillPart, 0, 359, 0, 3);
+part_type_speed(global.radiationStillPart, 0.0002, 0.0005, 0, 0.0002);
+part_type_colour_rgb(global.radiationStillPart, 0, 00, 255, 255, 0, 0);
+
 global.playerPart = part_type_create();
 part_type_sprite(global.playerPart, fireSpark_spr, true, true, true);
 part_type_colour_rgb(global.playerPart, 55, 120, 0, 0, 120, 155);
