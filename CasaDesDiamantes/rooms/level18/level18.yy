@@ -316,6 +316,8 @@
     {"name":"inst_4C84EFE4","path":"rooms/level18/level18.yy",},
     {"name":"inst_1D246D76","path":"rooms/level18/level18.yy",},
     {"name":"inst_7922808E","path":"rooms/level18/level18.yy",},
+    {"name":"inst_79E5BE4A","path":"rooms/level18/level18.yy",},
+    {"name":"inst_7EC2EA23","path":"rooms/level18/level18.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -364,6 +366,12 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_63B1229","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"enemyBlockZone_obj","path":"objects/enemyBlockZone_obj/enemyBlockZone_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":6.6875,"x":3541.0,"y":2515.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_70632BC4","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"fakewallTrigger_obj","path":"objects/fakewallTrigger_obj/fakewallTrigger_obj.yy",},"properties":[],"rotation":0.0,"scaleX":15.375,"scaleY":13.875,"x":1641.9736,"y":2746.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7922808E","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"level18_level17_teleporter","path":"objects/level18_level17_teleporter/level18_level17_teleporter.yy",},"properties":[],"rotation":0.0,"scaleX":5.75,"scaleY":9.8125,"x":6635.0,"y":924.5,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_79E5BE4A","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"cupyDialogueTrigger_obj","path":"objects/cupyDialogueTrigger_obj/cupyDialogueTrigger_obj.yy",},"properties":[
+            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"cupyDialogueTrigger_obj","path":"objects/cupyDialogueTrigger_obj/cupyDialogueTrigger_obj.yy",},"propertyId":{"name":"dialogue","path":"objects/cupyDialogueTrigger_obj/cupyDialogueTrigger_obj.yy",},"value":"13",},
+          ],"rotation":0.0,"scaleX":4.9375,"scaleY":3.5,"x":1805.0,"y":2749.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7EC2EA23","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"cupyDialogueTrigger_obj","path":"objects/cupyDialogueTrigger_obj/cupyDialogueTrigger_obj.yy",},"properties":[
+            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"cupyDialogueTrigger_obj","path":"objects/cupyDialogueTrigger_obj/cupyDialogueTrigger_obj.yy",},"propertyId":{"name":"dialogue","path":"objects/cupyDialogueTrigger_obj/cupyDialogueTrigger_obj.yy",},"value":"14",},
+          ],"rotation":0.0,"scaleX":6.5,"scaleY":3.5,"x":5101.0,"y":1867.9999,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMREffectLayer","resourceVersion":"1.0","name":"RedFilter","depth":400,"effectEnabled":true,"effectType":"_filter_colourise","gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[
         {"name":"g_Intensity","type":0,"value":"0.3",},

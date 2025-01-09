@@ -30,6 +30,12 @@ scene26 = false;
 scene27 = false;
 scene28 = false;
 scene29 = false;
+scene30 = false;
+scene31 = false;
+scene32 = false;
+scene33 = false;
+scene34 = false;
+scene35 = false;
 
 //Dialogue Markers
 scene1Low = 0;
@@ -90,6 +96,18 @@ scene28Low = 227;
 scene28High = 232;
 scene29Low = 233;
 scene29High = 253;
+scene30Low = 254;
+scene30High = 256;
+scene31Low = 257;
+scene31High = 259;
+scene32Low = 260;
+scene32High = 263;
+scene33Low = 264;
+scene33High = 267;
+scene34Low = 268;
+scene34High = 271;
+scene35Low = 272;
+scene35High = 275;
 
 //Dialogue Text
 //!!!ALWAYS 1 EMPTY SPACE & 1 FREE SPACE BETWEEN SCENES
@@ -544,3 +562,49 @@ dialogue[250] = ";You shouLd investigate the eden powerPlant.";
 dialogue[251] = "#i shXould investiXXgate tXhe edenX powXXerplXant.";
 dialogue[252] = "                                                                                                             ";
 dialogue[253] = "";
+
+//Scene 30 CuPy Dialogue 1 Powerplant
+startScene30Timer = false;
+
+dialogue[254] = "%We need to find the entrance to the alpha-level.";
+dialogue[255] = "                                                                                                             ";
+dialogue[256] = "";
+
+//Scene 31 CuPy Dialogue 2 Powerplant
+startScene31Timer = false;
+
+dialogue[257] = "%Good job, Steph!";
+dialogue[258] = "                                                                                                             ";
+dialogue[259] = "";
+
+//Scene 32 CuPy Dialogue 3 Powerplant
+startScene32Timer = false;
+
+dialogue[260] = "%I'm detecting a huge increase in gamma rays.";
+dialogue[261] = "%Steph, the radiation levels are off the charts!";
+dialogue[262] = "                                                                                                             ";
+dialogue[263] = "";
+
+//Scene 33 CuPy Dialogue 4 Powerplant
+startScene33Timer = false;
+
+dialogue[264] = "%That's it, the research facility!";
+dialogue[265] = "%The overflowing radiation is its power source!";
+dialogue[266] = "                                                                                                             ";
+dialogue[267] = "";
+
+//Scene 34 CuPy Dialogue 5 Powerplant
+startScene34Timer = false;
+
+dialogue[268] = "%The facility seems to be inaccessible.";
+dialogue[269] = "%The radiation would kill us all in an instant.";
+dialogue[270] = "                                                                                                             ";
+dialogue[271] = "";
+
+//Scene 35 CuPy Dialogue 6 Powerplant
+startScene35Timer = false;
+
+dialogue[272] = "%Steph! I have gathered all the information we need.";
+dialogue[273] = "%Head for the exit on the top floor!";
+dialogue[274] = "                                                                                                             ";
+dialogue[275] = "";

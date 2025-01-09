@@ -1141,7 +1141,7 @@ if (scene29) {
 if (startScene29Timer) {
 	if (camera_obj.dialogueLine >= scene29High - 4) {
 		camera_obj.hazeEffect = true;
-		audio_stop_sound(casinoTheme);
+		audio_stop_sound(casinoTheme_msc);
 	}
 	if (camera_obj.dialogueLine >= scene29High - 1) {
 		player_obj.movement = true;
@@ -1155,6 +1155,168 @@ if (startScene29Timer) {
 		global.tristramCindyQuestioningDialogueDone = true;
 		global.drawMission = true;
 		//global.act3Unlocked = true;
+		camera_obj.drawDialogueBorder = false;
+		save_scr();
+	}
+}
+
+//Scene 30
+if (scene30)
+{
+	startScene30Timer = true;
+	camera_obj.drawDialogueBorder = true;
+	if (!camera_obj.drawText)
+	{
+		for (i = scene30Low; i < scene30High + 1; i++)
+		{
+			camera_obj.dialogue[i] = dialogue[i];
+		}
+		camera_obj.dialogueLine = scene30Low;
+		camera_obj.drawText = true;
+	}
+	scene30 = false;
+}
+
+if (startScene30Timer) {
+	if (camera_obj.dialogueLine >= scene30High - 1) {			
+		startScene30Timer = false;
+		camera_obj.drawText = false;
+		global.cupyDialogue7Done = true;
+		camera_obj.drawDialogueBorder = false;
+		save_scr();
+	}
+}
+
+//Scene 31
+if (scene31)
+{
+	startScene31Timer = true;
+	camera_obj.drawDialogueBorder = true;
+	if (!camera_obj.drawText)
+	{
+		for (i = scene31Low; i < scene31High + 1; i++)
+		{
+			camera_obj.dialogue[i] = dialogue[i];
+		}
+		camera_obj.dialogueLine = scene31Low;
+		camera_obj.drawText = true;
+	}
+	scene31 = false;
+}
+
+if (startScene31Timer) {
+	if (camera_obj.dialogueLine >= scene31High - 1) {			
+		startScene31Timer = false;
+		camera_obj.drawText = false;
+		global.cupyDialogue7Done = true;
+		camera_obj.drawDialogueBorder = false;
+		save_scr();
+	}
+}
+
+//Scene 32
+if (scene32)
+{
+	startScene32Timer = true;
+	camera_obj.drawDialogueBorder = true;
+	if (!camera_obj.drawText)
+	{
+		for (i = scene32Low; i < scene32High + 1; i++)
+		{
+			camera_obj.dialogue[i] = dialogue[i];
+		}
+		camera_obj.dialogueLine = scene32Low;
+		camera_obj.drawText = true;
+	}
+	scene32 = false;
+}
+
+if (startScene32Timer) {
+	if (camera_obj.dialogueLine >= scene32High - 1) {			
+		startScene32Timer = false;
+		camera_obj.drawText = false;
+		global.cupyDialogue7Done = true;
+		camera_obj.drawDialogueBorder = false;
+		save_scr();
+	}
+}
+
+//Scene 33
+if (scene33)
+{
+	startScene33Timer = true;
+	camera_obj.drawDialogueBorder = true;
+	if (!camera_obj.drawText)
+	{
+		for (i = scene33Low; i < scene33High + 1; i++)
+		{
+			camera_obj.dialogue[i] = dialogue[i];
+		}
+		camera_obj.dialogueLine = scene33Low;
+		camera_obj.drawText = true;
+	}
+	scene33 = false;
+}
+
+if (startScene33Timer) {
+	if (camera_obj.dialogueLine >= scene33High - 1) {			
+		startScene33Timer = false;
+		camera_obj.drawText = false;
+		global.cupyDialogue7Done = true;
+		camera_obj.drawDialogueBorder = false;
+		save_scr();
+	}
+}
+
+//Scene 34
+if (scene34)
+{
+	startScene34Timer = true;
+	camera_obj.drawDialogueBorder = true;
+	if (!camera_obj.drawText)
+	{
+		for (i = scene34Low; i < scene34High + 1; i++)
+		{
+			camera_obj.dialogue[i] = dialogue[i];
+		}
+		camera_obj.dialogueLine = scene34Low;
+		camera_obj.drawText = true;
+	}
+	scene34 = false;
+}
+
+if (startScene34Timer) {
+	if (camera_obj.dialogueLine >= scene34High - 1) {			
+		startScene34Timer = false;
+		camera_obj.drawText = false;
+		global.cupyDialogue7Done = true;
+		camera_obj.drawDialogueBorder = false;
+		save_scr();
+	}
+}
+
+//Scene 35
+if (scene35)
+{
+	startScene35Timer = true;
+	camera_obj.drawDialogueBorder = true;
+	if (!camera_obj.drawText)
+	{
+		for (i = scene35Low; i < scene35High + 1; i++)
+		{
+			camera_obj.dialogue[i] = dialogue[i];
+		}
+		camera_obj.dialogueLine = scene35Low;
+		camera_obj.drawText = true;
+	}
+	scene35 = false;
+}
+
+if (startScene35Timer) {
+	if (camera_obj.dialogueLine >= scene35High - 1) {			
+		startScene35Timer = false;
+		camera_obj.drawText = false;
+		global.cupyDialogue7Done = true;
 		camera_obj.drawDialogueBorder = false;
 		save_scr();
 	}

@@ -153,6 +153,12 @@ global.cupyDialogue7Done = false;
 global.cupyDialogue8Done = false;
 global.cupyDialogue9Done = false;
 global.cupyDialogue10Done = false;
+global.cupyDialogue11Done = false;
+global.cupyDialogue12Done = false;
+global.cupyDialogue13Done = false;
+global.cupyDialogue14Done = false;
+global.cupyDialogue15Done = false;
+global.cupyDialogue16Done = false;
 
 global.hat = choose(noone);
 global.top1 = choose(noone);
