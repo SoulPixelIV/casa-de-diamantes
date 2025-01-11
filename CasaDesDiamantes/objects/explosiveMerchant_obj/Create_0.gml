@@ -12,6 +12,9 @@ colliding = true;
 hitable = true;
 frozen = false;
 freezeRes = 3;
+burnt = false;
+burnRes = 4;
+burnTimer = 75;
 level = 1;
 movSpeed = 0.42;
 moneyDropMin = 3;
@@ -51,6 +54,7 @@ exclamationmarkTimerSave = exclamationmarkTimer;
 damageTintTimerSave = damageTintTimer;
 gravityStrengthSave = gravityStrength;
 movSpeedSave = movSpeed;
+burnTimerSave = burnTimer;
 
 blend = image_blend;
 
@@ -77,3 +81,6 @@ audio_emitter_falloff(emitter, audio_drop_start, audio_max_distance, 1);
 
 //Fuse Sound
 audio_play_sound_on(emitter, fuse_snd, true, false);
+
+//Particle System
+partEmitter = part_emitter_create(global.partSystem);

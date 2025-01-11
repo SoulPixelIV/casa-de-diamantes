@@ -10,6 +10,9 @@ colliding = true;
 hitable = true;
 frozen = false;
 freezeRes = 1;
+burnt = false;
+burnRes = 4;
+burnTimer = 75;
 moneyDropTimer = 95;
 level = 1;
 damageRes = 1;
@@ -61,6 +64,7 @@ gravityStrengthSave = gravityStrength;
 moneyDropTimerSave = moneyDropTimer;
 turnDelaySave = turnDelay;
 movSpeedSave = movSpeed;
+burnTimerSave = burnTimer;
 
 checkPlayerTimer = 50;
 checkPlayerTimerSave = checkPlayerTimer;
@@ -87,3 +91,6 @@ with (alarmLight)
 {
 	body = instance_nearest(x, y, zombieGirlWounded_obj);
 }
+
+//Particle System
+partEmitter = part_emitter_create(global.partSystem);

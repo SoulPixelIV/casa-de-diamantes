@@ -8,6 +8,9 @@ damageRes = 1;
 colliding = false;
 hitable = true;
 frozen = false;
+burnt = false;
+burnRes = 1;
+burnTimer = 75;
 buffed = false;
 buffApplied = false;
 buffTimer = 3200;
@@ -89,6 +92,7 @@ stageTeleportTimerSave = stageTeleportTimer;
 movSpeedSave = movSpeed;
 damageSave = damage;
 randBuffDelaySave = randBuffDelay;
+burnTimerSave = burnTimer;
 
 attack1PrepareTimerSave = attack1PrepareTimer;
 
@@ -122,3 +126,6 @@ audio_drop_start = 180;
 audio_falloff_set_model(audio_falloff_linear_distance);
 audio_emitter_position(emitter, x, y, 0);
 audio_emitter_falloff(emitter, audio_drop_start, audio_max_distance, 1);
+
+//Particle System
+partEmitter = part_emitter_create(global.partSystem);

@@ -9,6 +9,9 @@ colliding = false;
 hitable = true;
 frozen = false;
 freezeRes = 1;
+burnt = false;
+burnRes = 1;
+burnTimer = 75;
 level = 1;
 damageRes = 1;
 moneyDropMin = 2;
@@ -125,6 +128,7 @@ snapHitboxDelaySave = snapHitboxDelay;
 attack2PrepareTimerSave = attack2PrepareTimer;
 attack2StopTimerSave = attack2StopTimer;
 snapHitbox2DelaySave = snapHitbox2Delay;
+burnTimerSave = burnTimer;
 
 blend = image_blend;
 
@@ -141,3 +145,6 @@ checkPlayerTimer = 50;
 checkPlayerTimerSave = checkPlayerTimer;
 checkPlayerTimer = 0;
 gravityStrength = 0;
+
+//Particle System
+partEmitter = part_emitter_create(global.partSystem);

@@ -44,6 +44,9 @@ global.shotgunUpgrade2 = true;
 global.dualBarettasUpgrade1 = true;
 global.dualBarettasUpgrade2 = true;
 
+global.silencedMPUpgrade1 = true;
+global.silencedMPUpgrade2 = true;
+
 global.cupyUpgrade1 = true;
 global.cupyUpgrade2 = false;
 

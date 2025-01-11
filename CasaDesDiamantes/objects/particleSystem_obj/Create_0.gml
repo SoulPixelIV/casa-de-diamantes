@@ -11,6 +11,15 @@ part_type_orientation(global.fireSparkPart, 0, 359, 1, 0, 1);
 part_type_direction(global.fireSparkPart, 0, 359, 0, 3);
 part_type_gravity(global.fireSparkPart, 0.0001, 270);
 
+//Flame Sparks
+global.flameSparkPart = part_type_create();
+part_type_sprite(global.flameSparkPart, flameSmall_spr, true, true, true);
+part_type_life(global.flameSparkPart, 30, 100);
+part_type_size(global.flameSparkPart, 0.5, 1, 0, 0.1);
+part_type_orientation(global.flameSparkPart, 0, 359, 1, 0, 1);
+//part_type_direction(global.flameSparkPart, 0, 359, 0, 3);
+//part_type_gravity(global.flameSparkPart, 0.0001, 270);
+
 //Glass Shards
 global.glasShardsPart = part_type_create();
 part_type_sprite(global.glasShardsPart, glasShard_spr, true, true, true);

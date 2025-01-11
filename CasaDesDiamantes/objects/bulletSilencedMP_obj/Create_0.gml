@@ -2,6 +2,7 @@
 
 movSpeed = 5.2;
 penetration = 4;
+dealtBurnDamage = false;
 penetrationTime = 3;
 deleteTimer = 95;
 invincibilityTimer = 5;

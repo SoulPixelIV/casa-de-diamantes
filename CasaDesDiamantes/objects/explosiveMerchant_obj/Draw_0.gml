@@ -21,6 +21,9 @@ if (aggro && exclamationmarkTimer > 0)
 if (frozen) {
 	draw_sprite(frozenskull_spr, 0, x + 8 * image_xscale, y - 32);	
 }
+if (burnt) {
+	draw_sprite(flameIcon_spr, 0, x, y - 32);
+}
 if (!aggro)
 {
 	exclamationmarkTimer = exclamationmarkTimerSave;

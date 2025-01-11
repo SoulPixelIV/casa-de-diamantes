@@ -9,6 +9,9 @@ colliding = true;
 hitable = true;
 frozen = false;
 freezeRes = 2;
+burnt = false;
+burnRes = 4;
+burnTimer = 75;
 level = 1;
 damageRes = 1;
 moneyDropMin = 3;
@@ -86,6 +89,7 @@ gravityStrengthSave = gravityStrength;
 movSpeedSave = movSpeed;
 hpSave = hp;
 freezeResSave = freezeRes;
+burnTimerSave = burnTimer;
 randBuffDelaySave = randBuffDelay;
 
 image_yscale = -1;
@@ -107,3 +111,6 @@ checkPlayerTimer = 50;
 checkPlayerTimerSave = checkPlayerTimer;
 checkPlayerTimer = 0;
 gravityStrength = 0;
+
+//Particle System
+partEmitter = part_emitter_create(global.partSystem);

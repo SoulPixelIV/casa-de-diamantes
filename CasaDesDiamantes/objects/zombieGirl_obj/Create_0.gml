@@ -8,6 +8,9 @@ verspeed = 0;
 colliding = true;
 hitable = true;
 frozen = false;
+burnt = false;
+burnRes = 4;
+burnTimer = 75;
 buffed = false;
 buffApplied = false;
 freezeRes = 4;
@@ -78,6 +81,7 @@ freezeResSave = freezeRes;
 buffScale = 1;
 buffDir = 1;
 randBuffDelay = choose(20, 300);
+burnTimerSave = burnTimer;
 
 snapHitboxDelay = 45; //Delay until damage hitbox spawns
 snapHitbox2Delay = 45; //Delay until damage hitbox spawns
@@ -124,3 +128,6 @@ checkPlayerTimer = 50;
 checkPlayerTimerSave = checkPlayerTimer;
 checkPlayerTimer = 0;
 gravityStrength = 0;
+
+//Particle System
+partEmitter = part_emitter_create(global.partSystem);

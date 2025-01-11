@@ -293,6 +293,31 @@ if (freezeRes <= 0) {
 	frozen = true;
 }
 
+//Particle System
+part_emitter_region(global.partSystem, partEmitter, x - 12, x + 12, y - 18, y + 26, ps_shape_ellipse, ps_distr_invgaussian);
+
+//Burnt
+if (burnt) {
+	image_blend = make_color_rgb(255, 144, 0);
+	burnTimer -= global.dt;
+	if (burnTimer < 0) {
+		part_emitter_burst(global.partSystem, partEmitter, global.flameSparkPart, 19);
+		damageTint = true;
+		hp -= 2 / damageRes;
+		aggro = true;
+		bloodSpread = instance_create_layer(x, y, "Instances", bloodSpread_obj);
+		bloodSpread.image_angle = random_range(0, 359);
+		bloodSpread2 = instance_create_layer(x, y, "Instances", bloodSpread2_obj);
+		bloodSpread2.image_angle = random_range(0, 359);	
+		audio_play_sound(bulletHit_snd, 1, false);
+		burnTimer = burnTimerSave;
+	}
+}
+
+if (burnRes <= 0) {
+	burnt = true;
+}
+
 //###Death###
 if (hp < 0)
 {

@@ -9,6 +9,9 @@ colliding = true;
 hitable = true;
 frozen = false;
 freezeRes = 3;
+burnt = false;
+burnRes = 16;
+burnTimer = 75;
 level = 1;
 damageRes = 1;
 moneyDropMin = 7;
@@ -101,6 +104,7 @@ stageTeleportTimerSave = stageTeleportTimer;
 movSpeedSave = movSpeed;
 damageSave = damage;
 buffTimerSave = buffTimer;
+burnTimerSave = burnTimer;
 
 attack1PrepareTimerSave = attack1PrepareTimer;
 attack1StopTimerSave = attack1StopTimer;
@@ -124,3 +128,6 @@ audio_emitter_falloff(emitter, audio_drop_start, audio_max_distance, 1);
 checkPlayerTimer = 50;
 checkPlayerTimerSave = checkPlayerTimer;
 checkPlayerTimer = 0;
+
+//Particle System
+partEmitter = part_emitter_create(global.partSystem);

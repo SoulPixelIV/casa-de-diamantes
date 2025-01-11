@@ -7,7 +7,10 @@ attackDelay = 50;
 colliding = true;
 hitable = true;
 frozen = false;
-freezeRes = 7;
+freezeRes = 12;
+burnt = false;
+burnRes = 4;
+burnTimer = 75;
 level = 2;
 damageRes = 1;
 damageAttack1 = 25;
@@ -90,6 +93,7 @@ movSpeedSave = movSpeed;
 freezeResSave = freezeRes;
 damageSave = damageAttack1;
 randBuffDelaySave = randBuffDelay;
+burnTimerSave = burnTimer;
 
 attack1PrepareTimerSave = attack1PrepareTimer;
 attack1StopTimerSave = attack1StopTimer;
@@ -113,3 +117,6 @@ audio_drop_start = 150;
 audio_falloff_set_model(audio_falloff_linear_distance);
 audio_emitter_position(emitter, x, y, 0);
 audio_emitter_falloff(emitter, audio_drop_start, audio_max_distance, 1);
+
+//Particle System
+partEmitter = part_emitter_create(global.partSystem);
