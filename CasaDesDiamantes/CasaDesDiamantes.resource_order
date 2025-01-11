@@ -390,6 +390,7 @@
     {"name":"plantWallBossForeground_spr","order":260,"path":"sprites/plantWallBossForeground_spr/plantWallBossForeground_spr.yy",},
     {"name":"scoreNumber_spr","order":34,"path":"sprites/scoreNumber_spr/scoreNumber_spr.yy",},
     {"name":"redKeyGateBackground_spr","order":214,"path":"sprites/redKeyGateBackground_spr/redKeyGateBackground_spr.yy",},
+    {"name":"fireballFlamethrower_obj","order":230,"path":"objects/fireballFlamethrower_obj/fireballFlamethrower_obj.yy",},
     {"name":"playerArmEmptyWalkingSkin1_spr","order":5,"path":"sprites/playerArmEmptyWalkingSkin1_spr/playerArmEmptyWalkingSkin1_spr.yy",},
     {"name":"playerArmEmpty2Skin1_spr","order":3,"path":"sprites/playerArmEmpty2Skin1_spr/playerArmEmpty2Skin1_spr.yy",},
     {"name":"scoreNumberSpin_spr","order":35,"path":"sprites/scoreNumberSpin_spr/scoreNumberSpin_spr.yy",},

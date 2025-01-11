@@ -1,4 +1,5 @@
 /// @description Draw Guns
+draw_text(x + 20, y, flamethrowerLoad);
 if (!inChamber) {
 	changePos = 1;
 	pistolSprite = playerPistol_spr;
@@ -500,21 +501,40 @@ if (!inChamber) {
 					}
 					
 					//Second arm
-					if (dirCursor > 90 && dirCursor < 270) {
-						draw_sprite_ext(spriteMP, -1, silencedMPX, silencedMPY, 1, -currDir, clamp(dirCursor - 5 * -currDir, 90, 245), -1, image_alpha);
-						draw_sprite_ext(armSpriteCurvedMP, -1, armCurvedMPPosX, armCurvedMPPosY, 1, -currDir, clamp(dirCursor - 11 * -currDir, 90, 245), -1, image_alpha);
-					} 
-					if (dirCursor > 270 && dirCursor < 360) {
-						draw_sprite_ext(spriteMP, -1, silencedMPX, silencedMPY, 1, -currDir, clamp(dirCursor - 5 * -currDir, 295, 360), -1, image_alpha);
-						draw_sprite_ext(armSpriteCurvedMP, -1, armCurvedMPPosX, armCurvedMPPosY, 1, -currDir, clamp(dirCursor - 11 * -currDir, 295, 360), -1, image_alpha);
-					}
-					if (dirCursor > 0 && dirCursor < 14) {
-						draw_sprite_ext(spriteMP, -1, silencedMPX, silencedMPY, 1, -currDir, dirCursor - 5 * -currDir, -1, image_alpha);
-						draw_sprite_ext(armSpriteCurvedMP, -1, armCurvedMPPosX, armCurvedMPPosY, 1, -currDir, dirCursor - 11 * -currDir, -1, image_alpha);
-					}
-					if (dirCursor > 14 && dirCursor < 90) {
-						draw_sprite_ext(spriteMP, -1, silencedMPX, silencedMPY, 1, -currDir, clamp(dirCursor - 5 * -currDir, 0, 90), -1, image_alpha);
-						draw_sprite_ext(armSpriteCurvedMP, -1, armCurvedMPPosX, armCurvedMPPosY, 1, -currDir, clamp(dirCursor - 11 * -currDir, 0, 90), -1, image_alpha);
+					if (global.silencedMPUpgrade2) {
+						if (dirCursor > 90 && dirCursor < 270) {
+							draw_sprite_ext(spriteMP, -1, silencedMPX, silencedMPY, 1, -currDir, clamp(dirCursor - 5 * -currDir, 90, 245), make_color_rgb((255 / 100) * (flamethrowerLoad / 4), 255, 255), image_alpha);
+							draw_sprite_ext(armSpriteCurvedMP, -1, armCurvedMPPosX, armCurvedMPPosY, 1, -currDir, clamp(dirCursor - 11 * -currDir, 90, 245), -1, image_alpha);
+						} 
+						if (dirCursor > 270 && dirCursor < 360) {
+							draw_sprite_ext(spriteMP, -1, silencedMPX, silencedMPY, 1, -currDir, clamp(dirCursor - 5 * -currDir, 295, 360), make_color_rgb((255 / 100) * (flamethrowerLoad / 4), 255, 255), image_alpha);
+							draw_sprite_ext(armSpriteCurvedMP, -1, armCurvedMPPosX, armCurvedMPPosY, 1, -currDir, clamp(dirCursor - 11 * -currDir, 295, 360), -1, image_alpha);
+						}
+						if (dirCursor > 0 && dirCursor < 14) {
+							draw_sprite_ext(spriteMP, -1, silencedMPX, silencedMPY, 1, -currDir, dirCursor - 5 * -currDir, make_color_rgb((255 / 100) * (flamethrowerLoad / 4), 255, 255), image_alpha);
+							draw_sprite_ext(armSpriteCurvedMP, -1, armCurvedMPPosX, armCurvedMPPosY, 1, -currDir, dirCursor - 11 * -currDir, -1, image_alpha);
+						}
+						if (dirCursor > 14 && dirCursor < 90) {
+							draw_sprite_ext(spriteMP, -1, silencedMPX, silencedMPY, 1, -currDir, clamp(dirCursor - 5 * -currDir, 0, 90), make_color_rgb((255 / 100) * (flamethrowerLoad / 4), 255, 255), image_alpha);
+							draw_sprite_ext(armSpriteCurvedMP, -1, armCurvedMPPosX, armCurvedMPPosY, 1, -currDir, clamp(dirCursor - 11 * -currDir, 0, 90), -1, image_alpha);
+						}
+					} else {
+						if (dirCursor > 90 && dirCursor < 270) {
+							draw_sprite_ext(spriteMP, -1, silencedMPX, silencedMPY, 1, -currDir, clamp(dirCursor - 5 * -currDir, 90, 245), -1, image_alpha);
+							draw_sprite_ext(armSpriteCurvedMP, -1, armCurvedMPPosX, armCurvedMPPosY, 1, -currDir, clamp(dirCursor - 11 * -currDir, 90, 245), -1, image_alpha);
+						} 
+						if (dirCursor > 270 && dirCursor < 360) {
+							draw_sprite_ext(spriteMP, -1, silencedMPX, silencedMPY, 1, -currDir, clamp(dirCursor - 5 * -currDir, 295, 360), -1, image_alpha);
+							draw_sprite_ext(armSpriteCurvedMP, -1, armCurvedMPPosX, armCurvedMPPosY, 1, -currDir, clamp(dirCursor - 11 * -currDir, 295, 360), -1, image_alpha);
+						}
+						if (dirCursor > 0 && dirCursor < 14) {
+							draw_sprite_ext(spriteMP, -1, silencedMPX, silencedMPY, 1, -currDir, dirCursor - 5 * -currDir, -1, image_alpha);
+							draw_sprite_ext(armSpriteCurvedMP, -1, armCurvedMPPosX, armCurvedMPPosY, 1, -currDir, dirCursor - 11 * -currDir, -1, image_alpha);
+						}
+						if (dirCursor > 14 && dirCursor < 90) {
+							draw_sprite_ext(spriteMP, -1, silencedMPX, silencedMPY, 1, -currDir, clamp(dirCursor - 5 * -currDir, 0, 90), -1, image_alpha);
+							draw_sprite_ext(armSpriteCurvedMP, -1, armCurvedMPPosX, armCurvedMPPosY, 1, -currDir, clamp(dirCursor - 11 * -currDir, 0, 90), -1, image_alpha);
+						}
 					}
 				}
 		

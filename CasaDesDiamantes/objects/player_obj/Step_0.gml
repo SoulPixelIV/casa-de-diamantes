@@ -1214,6 +1214,27 @@ if (shootingAllowed && !global.pause) {
 				}
 			}
 		}
+		//Flamethrower Load
+		if (global.silencedMPUpgrade2 && global.currentWeapon == pickedWeapon.silencedMP) {
+			if (key_shoot_hold) {
+				if (!flamethrowerOn) {
+					if (flamethrowerLoad < 400) {
+						flamethrowerLoad += global.dt;
+					} else {
+						flamethrowerLoad = 400;
+						flamethrowerOn = true;
+					}
+				}
+			} else {
+				if (!flamethrowerOn) {
+					if (flamethrowerLoad > 0) {
+						flamethrowerLoad -= global.dt;
+					} else {
+						flamethrowerLoad = 0;
+					}
+				}
+			}
+		}
 	
 		//Anti-Material Rifle
 		with (gameManager_obj)

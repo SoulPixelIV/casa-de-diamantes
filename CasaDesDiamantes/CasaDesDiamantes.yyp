@@ -516,6 +516,7 @@
     {"id":{"name":"plantWallBossForeground_spr","path":"sprites/plantWallBossForeground_spr/plantWallBossForeground_spr.yy",},},
     {"id":{"name":"scoreNumber_spr","path":"sprites/scoreNumber_spr/scoreNumber_spr.yy",},},
     {"id":{"name":"redKeyGateBackground_spr","path":"sprites/redKeyGateBackground_spr/redKeyGateBackground_spr.yy",},},
+    {"id":{"name":"fireballFlamethrower_obj","path":"objects/fireballFlamethrower_obj/fireballFlamethrower_obj.yy",},},
     {"id":{"name":"playerArmEmptyWalkingSkin1_spr","path":"sprites/playerArmEmptyWalkingSkin1_spr/playerArmEmptyWalkingSkin1_spr.yy",},},
     {"id":{"name":"playerArmEmpty2Skin1_spr","path":"sprites/playerArmEmpty2Skin1_spr/playerArmEmpty2Skin1_spr.yy",},},
     {"id":{"name":"scoreNumberSpin_spr","path":"sprites/scoreNumberSpin_spr/scoreNumberSpin_spr.yy",},},
