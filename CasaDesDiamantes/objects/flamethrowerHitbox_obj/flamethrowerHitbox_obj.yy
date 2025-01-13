@@ -1,16 +1,17 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "particleSystem_obj",
+  "name": "flamethrowerHitbox_obj",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":{"name":"enemy_obj","path":"objects/enemy_obj/enemy_obj.yy",},"eventNum":0,"eventType":4,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Global System Objects",
-    "path": "folders/Global System Objects.yy",
+    "name": "Hitboxes",
+    "path": "folders/Hitboxes.yy",
   },
   "parentObjectId": null,
   "persistent": false,
@@ -28,7 +29,10 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": null,
+  "spriteId": {
+    "name": "redcubex16_spr",
+    "path": "sprites/redcubex16_spr/redcubex16_spr.yy",
+  },
   "spriteMaskId": null,
   "visible": true,
 }

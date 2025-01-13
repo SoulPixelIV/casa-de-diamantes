@@ -1901,6 +1901,7 @@
     {"id":{"name":"sensoryTremblerBase_spr","path":"sprites/sensoryTremblerBase_spr/sensoryTremblerBase_spr.yy",},},
     {"id":{"name":"darkcaveBackground3_spr","path":"sprites/darkcaveBackground3_spr/darkcaveBackground3_spr.yy",},},
     {"id":{"name":"warpzoneGate_spr","path":"sprites/warpzoneGate_spr/warpzoneGate_spr.yy",},},
+    {"id":{"name":"flamethrowerHitbox_obj","path":"objects/flamethrowerHitbox_obj/flamethrowerHitbox_obj.yy",},},
     {"id":{"name":"save_scr","path":"scripts/save_scr/save_scr.yy",},},
     {"id":{"name":"Level11_Level12_teleporter","path":"objects/Level11_Level12_teleporter/Level11_Level12_teleporter.yy",},},
     {"id":{"name":"buildingWallFront_obj","path":"objects/buildingWallFront_obj/buildingWallFront_obj.yy",},},

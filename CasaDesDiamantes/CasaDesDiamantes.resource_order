@@ -1677,6 +1677,7 @@
     {"name":"sensoryTremblerBase_spr","order":2,"path":"sprites/sensoryTremblerBase_spr/sensoryTremblerBase_spr.yy",},
     {"name":"darkcaveBackground3_spr","order":2,"path":"sprites/darkcaveBackground3_spr/darkcaveBackground3_spr.yy",},
     {"name":"warpzoneGate_spr","order":105,"path":"sprites/warpzoneGate_spr/warpzoneGate_spr.yy",},
+    {"name":"flamethrowerHitbox_obj","order":9,"path":"objects/flamethrowerHitbox_obj/flamethrowerHitbox_obj.yy",},
     {"name":"save_scr","order":28,"path":"scripts/save_scr/save_scr.yy",},
     {"name":"Level11_Level12_teleporter","order":48,"path":"objects/Level11_Level12_teleporter/Level11_Level12_teleporter.yy",},
     {"name":"buildingWallFront_obj","order":8,"path":"objects/buildingWallFront_obj/buildingWallFront_obj.yy",},

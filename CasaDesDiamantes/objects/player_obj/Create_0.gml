@@ -38,6 +38,7 @@ playerRotation = 0;
 radiation = 0;
 flamethrowerLoad = 0;
 flamethrowerOn = false;
+flameBurstOn = false;
 updowndir = 0; //Helper var for dircursor clamp
 muteSoundTimer = 400; //Mute player soundeffects when spawning
 sittingInMinecart = false;
@@ -274,6 +275,10 @@ boosterLockedMovementTimerSave = boosterLockedMovementTimer;
 dashStandupDelaySave = dashStandupDelay;
 otherDirWallHugTimerSave = otherDirWallHugTimer;
 pauseDelaySave = pauseDelay;
+partX = 0;
+partY = 0;
+partX2 = 0;
+partY2 = 0;
 
 //Accessories
 theta = 0;
@@ -317,3 +322,6 @@ if (global.cupyUpgrade1) {
 
 gravityStrength = 0;
 dashDelay = 0;
+
+//Particle System
+partEmitter = part_emitter_create(global.partSystem);

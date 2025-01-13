@@ -392,11 +392,6 @@ function shooting_scr(argument0) {
 		{		
 			if (global.silencedMPAmmo > 0) {
 				instance_create_layer(playerBulletLine_obj.x, playerBulletLine_obj.y, "Instances", bulletSilencedMPSalveSpawner_obj);
-				if (player_obj.flamethrowerOn) {
-					repeat (choose(3, 4, 5)) {
-						instance_create_layer(playerBulletLine_obj.x, playerBulletLine_obj.y, "Instances", fireballFlamethrower_obj);
-					}
-				}
 		
 				if (!huggingWall && !isDashing)
 				{

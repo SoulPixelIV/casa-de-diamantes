@@ -1214,6 +1214,14 @@ if (shootingAllowed && !global.pause) {
 				}
 			}
 		}
+		//Particle System
+		partX = playerBulletLine_obj.x + lengthdir_x(24, dirCursor);
+		partY = playerBulletLine_obj.y + lengthdir_y(24, dirCursor);
+		partX2 = playerBulletLine_obj.x + lengthdir_x(86, dirCursor);
+		partY2 = playerBulletLine_obj.y + lengthdir_y(86, dirCursor);
+			
+		part_emitter_region(global.partSystem, partEmitter, partX, partX, partY, partY, ps_shape_ellipse, ps_distr_invgaussian);
+
 		//Flamethrower Load
 		if (global.silencedMPUpgrade2 && global.currentWeapon == pickedWeapon.silencedMP) {
 			if (key_shoot_hold) {
@@ -1233,6 +1241,14 @@ if (shootingAllowed && !global.pause) {
 						flamethrowerLoad = 0;
 					}
 				}
+			}
+		}
+		
+		if (player_obj.flamethrowerOn) {			
+			if (!flameBurstOn) {
+				instance_create_layer(partX2, partY2, "Instances", flamethrowerHitbox_obj);
+				part_emitter_stream(global.partSystem, partEmitter, global.flamethrowerSparkPart, 19);
+				flameBurstOn = true;
 			}
 		}
 	
