@@ -391,7 +391,9 @@ function shooting_scr(argument0) {
 		if (argument0 == "silencedMP")
 		{		
 			if (global.silencedMPAmmo > 0) {
-				instance_create_layer(playerBulletLine_obj.x, playerBulletLine_obj.y, "Instances", bulletSilencedMPSalveSpawner_obj);
+				if (!flamethrowerOn) {
+					instance_create_layer(playerBulletLine_obj.x, playerBulletLine_obj.y, "Instances", bulletSilencedMPSalveSpawner_obj);
+				}
 		
 				if (!huggingWall && !isDashing)
 				{

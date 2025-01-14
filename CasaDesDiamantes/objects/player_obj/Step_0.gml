@@ -1223,13 +1223,13 @@ if (shootingAllowed && !global.pause) {
 		part_emitter_region(global.partSystem, partEmitter, partX, partX, partY, partY, ps_shape_ellipse, ps_distr_invgaussian);
 
 		//Flamethrower Load
-		if (global.silencedMPUpgrade2 && global.currentWeapon == pickedWeapon.silencedMP) {
+		if (global.silencedMPUpgrade2 && global.currentWeapon == pickedWeapon.silencedMP && global.silencedMPAmmo != 0) {
 			if (key_shoot_hold) {
 				if (!flamethrowerOn) {
-					if (flamethrowerLoad < 400) {
+					if (flamethrowerLoad < 300) {
 						flamethrowerLoad += global.dt;
 					} else {
-						flamethrowerLoad = 400;
+						flamethrowerLoad = 300;
 						flamethrowerOn = true;
 					}
 				}
@@ -1244,12 +1244,36 @@ if (shootingAllowed && !global.pause) {
 			}
 		}
 		
-		if (player_obj.flamethrowerOn) {			
+		if (flamethrowerOn) {
+			flamethrowerTimer -= global.dt;
 			if (!flameBurstOn) {
 				instance_create_layer(partX2, partY2, "Instances", flamethrowerHitbox_obj);
+				flameSound = audio_play_sound(flamethrower_snd, 1, true);
+				partEmitter = part_emitter_create(global.partSystem);
 				part_emitter_stream(global.partSystem, partEmitter, global.flamethrowerSparkPart, 19);
 				flameBurstOn = true;
 			}
+		} else {
+			if (instance_exists(flamethrowerHitbox_obj)) {
+				instance_destroy(flamethrowerHitbox_obj);
+			}
+			part_emitter_destroy(global.partSystem, partEmitter);
+			audio_stop_sound(flameSound)
+			flameBurstOn = false;
+		}
+		
+		if (flamethrowerTimer < 0 || global.silencedMPAmmo == 0 || global.currentWeapon != pickedWeapon.silencedMP) {
+			if (shootingAllowed && !global.pause) {
+				part_emitter_destroy(global.partSystem, partEmitter);
+				flamethrowerOn = false;
+				flamethrowerLoad = 0;
+				flamethrowerTimer = flamethrowerTimerSave;
+			}
+		}
+		if (!key_shoot_hold) {
+			flamethrowerOn = false;
+			flamethrowerLoad = 0;
+			flamethrowerTimer = flamethrowerTimerSave;
 		}
 	
 		//Anti-Material Rifle

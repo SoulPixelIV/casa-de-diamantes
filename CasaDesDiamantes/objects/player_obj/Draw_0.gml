@@ -1,5 +1,4 @@
 /// @description Draw Guns
-draw_text(x + 20, y, flamethrowerLoad);
 if (!inChamber) {
 	changePos = 1;
 	pistolSprite = playerPistol_spr;

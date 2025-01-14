@@ -39,6 +39,7 @@ radiation = 0;
 flamethrowerLoad = 0;
 flamethrowerOn = false;
 flameBurstOn = false;
+flamethrowerTimer = 700;
 updowndir = 0; //Helper var for dircursor clamp
 muteSoundTimer = 400; //Mute player soundeffects when spawning
 sittingInMinecart = false;
@@ -275,10 +276,12 @@ boosterLockedMovementTimerSave = boosterLockedMovementTimer;
 dashStandupDelaySave = dashStandupDelay;
 otherDirWallHugTimerSave = otherDirWallHugTimer;
 pauseDelaySave = pauseDelay;
+flamethrowerTimerSave = flamethrowerTimer;
 partX = 0;
 partY = 0;
 partX2 = 0;
 partY2 = 0;
+flameSound = noone;
 
 //Accessories
 theta = 0;

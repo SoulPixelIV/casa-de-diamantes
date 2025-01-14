@@ -18,7 +18,7 @@ if (salveDelay < 0) {
 	}
 	
 	if (global.silencedMPAmmo > 0) {
-		//global.silencedMPAmmo--;
+		global.silencedMPAmmo--;
 	}
 	salveAmount--;
 	salveDelay = salveDelaySave;

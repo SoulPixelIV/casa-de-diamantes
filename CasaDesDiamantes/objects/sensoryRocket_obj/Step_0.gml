@@ -18,7 +18,7 @@ if (!place_free(x, y) || (place_meeting(x, y, player_obj) && !player_obj.isDashi
 	}
 }
 
-if (place_meeting(x, y, bulletDualBarettas_obj) ||place_meeting(x, y, bulletPistol_obj) ||place_meeting(x, y, bulletShotgun_obj) ||place_meeting(x, y, bulletSilencedMP_obj) ||place_meeting(x, y, bulletSniper_obj) ||place_meeting(x, y, bulletZombieSoldierGirl_obj)) {
+if (place_meeting(x, y, bulletDualBarettas_obj) || place_meeting(x, y, bulletPistol_obj) ||place_meeting(x, y, bulletShotgun_obj) || place_meeting(x, y, bulletSilencedMP_obj) || place_meeting(x, y, bulletSniper_obj) || place_meeting(x, y, bulletZombieSoldierGirl_obj) || place_meeting(x, y, flamethrowerHitbox_obj) ) {
 	speed = 0;
 	instance_change(explosionTiny_obj, true);
 }
