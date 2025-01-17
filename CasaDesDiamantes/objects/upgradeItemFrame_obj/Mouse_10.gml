@@ -10,6 +10,9 @@ if (!used) {
 	}
 	else if (frame == 7 && !global.cupyUpgrade1) {
 		image_index = 8;
+	}
+	else if (frame == 9 && !global.silencedMPUpgrade1) {
+		image_index = 8;
 	} else {
 		image_index = (image_number / 2) + frame;
 	}
@@ -62,5 +65,19 @@ switch (frame) {
 				upgradeMenu_obj.explanationText = "";
 			}
 		}
-	break;	
+	break;
+	case 8:
+		if (instance_exists(upgradeMenu_obj)) {
+			upgradeMenu_obj.explanationText = "[Silenced MP] Burn Enemies";
+		}
+	break;
+	case 9:
+		if (instance_exists(upgradeMenu_obj)) {
+			if (global.silencedMPUpgrade1) {
+				upgradeMenu_obj.explanationText = "[Silenced MP] Flamethrower";
+			} else {
+				upgradeMenu_obj.explanationText = "";
+			}
+		}
+	break;
 }

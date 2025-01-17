@@ -130,7 +130,49 @@ switch (frame) {
 					image_index = frame;
 				}
 		}
-	break;	
+	break;
+	case 8:
+		if (!global.silencedMPUpgrade1) {
+			nameText = "Flame AP\nBullets";
+			priceText = "3400$";
+			price = 3400;
+			twolinemode = true;
+		} else {
+			nameText = "Flame AP\nBullets";
+			priceText = "Purchased";
+			price = 9999999999999999;
+			twolinemode = true;
+		}
+	break;
+	case 9:
+		price = 5000;
+		
+		if (!global.silencedMPUpgrade2) {
+			if (!global.silencedMPUpgrade1) {
+				twolinemode = false;
+				nameText = "Locked";
+				priceText = "";
+				if (!used && !mouseEntered) {
+					image_index = 1;
+				}
+			} else {
+				twolinemode = true;
+				nameText = "Flamethrower";
+				priceText = "5000$";
+				if (!used && !mouseEntered) {
+					image_index = frame;
+				}
+			}
+		} else {
+			twolinemode = true;
+			nameText = "Flamethrower";
+			priceText = "Purchased";
+			price = 999999999999;
+			if (!used && !mouseEntered) {
+				image_index = frame;
+			}
+		}
+	break;
 }
 
 draw_set_font(gothicPixel_fnt);

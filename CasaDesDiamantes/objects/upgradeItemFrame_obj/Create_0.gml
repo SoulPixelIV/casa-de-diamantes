@@ -39,6 +39,14 @@ switch (frame) {
 		if (global.cupyUpgrade2) {
 			used = true;
 		}
+	case 8:
+		if (global.silencedMPUpgrade1) {
+			used = true;
+		}
+	case 9:
+		if (global.silencedMPUpgrade2) {
+			used = true;
+		}
 	break;	
 }
 

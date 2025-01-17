@@ -55,5 +55,22 @@ switch (frame) {
 			used = true;
 		}
 	break;
-	
+	case 8:
+		if (global.money >= 3400 && !global.silencedMPUpgrade1) {
+			audio_play_sound(buying_snd, 1, false);
+			global.silencedMPUpgrade1 = true;
+			global.money -= 3400;
+			frame = 0;
+			used = true;
+		}
+	break;
+	case 7:
+		if (global.money >= 5000 && !global.silencedMPUpgrade2 && global.silencedMPUpgrade1) {
+			audio_play_sound(buying_snd, 1, false);
+			global.silencedMPUpgrade2 = true;
+			global.money -= 5000;
+			frame = 0;
+			used = true;
+		}
+	break;
 }
