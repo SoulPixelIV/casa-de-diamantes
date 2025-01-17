@@ -157,7 +157,7 @@ switch (frame) {
 				}
 			} else {
 				twolinemode = true;
-				nameText = "Flamethrower";
+				nameText = "Flame\nDispenser";
 				priceText = "5000$";
 				if (!used && !mouseEntered) {
 					image_index = frame;
@@ -165,7 +165,7 @@ switch (frame) {
 			}
 		} else {
 			twolinemode = true;
-			nameText = "Flamethrower";
+			nameText = "Flame\nDispenser";
 			priceText = "Purchased";
 			price = 999999999999;
 			if (!used && !mouseEntered) {

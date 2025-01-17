@@ -74,7 +74,7 @@ switch (frame) {
 	case 9:
 		if (instance_exists(upgradeMenu_obj)) {
 			if (global.silencedMPUpgrade1) {
-				upgradeMenu_obj.explanationText = "[Silenced MP] Flamethrower";
+				upgradeMenu_obj.explanationText = "[Silenced MP] Flame Dispenser";
 			} else {
 				upgradeMenu_obj.explanationText = "";
 			}

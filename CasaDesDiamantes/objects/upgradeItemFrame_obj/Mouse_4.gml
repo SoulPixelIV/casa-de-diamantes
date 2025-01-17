@@ -64,7 +64,7 @@ switch (frame) {
 			used = true;
 		}
 	break;
-	case 7:
+	case 9:
 		if (global.money >= 5000 && !global.silencedMPUpgrade2 && global.silencedMPUpgrade1) {
 			audio_play_sound(buying_snd, 1, false);
 			global.silencedMPUpgrade2 = true;
