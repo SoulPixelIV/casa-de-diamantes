@@ -308,40 +308,46 @@ function shooting_scr(argument0) {
 		}
 	
 		if (argument0 == "bow")
-		{
-			screenshake(130, 50, 0.6, id);
+		{		
+			if (!global.sniperUpgrade1) {
+				if (global.bowAmmo > 2) {
+					var rifleShot = audio_play_sound(sniperShot_snd, 1, false);
+					audio_sound_pitch(rifleShot, random_range(0.9, 1.1));
+					var pingSound = audio_play_sound(riflePing_snd, 1, false);
+					audio_sound_pitch(pingSound, random_range(0.9, 1.1));
+				}
+				if (global.bowAmmo == 2) {
+					var rifleShot = audio_play_sound(sniperShot_snd, 1, false);
+					audio_sound_pitch(rifleShot, 1.2);
+					var pingSound = audio_play_sound(riflePing_snd, 1, false);
+					audio_sound_pitch(pingSound, 1.2);
+				}
+				if (global.bowAmmo <= 1) {
+					var rifleShot = audio_play_sound(sniperShot_snd, 1, false);
+					audio_sound_pitch(rifleShot, 1.4);
+					var pingSound = audio_play_sound(riflePing_snd, 1, false);
+					audio_sound_pitch(pingSound, 1.4);
+				}
+				
+				var shotLightx = x + lengthdir_x(36, dirCursor);
+				var shotLighty = y - 8 + lengthdir_y(36, dirCursor);
+				
+				screenshake(130, 50, 0.6, id);
+				
+				instance_create_layer(shotLightx, shotLighty, "ForegroundObjects", shotLightShotgun_obj);
 			
-			if (global.bowAmmo > 2) {
-				var rifleShot = audio_play_sound(sniperShot_snd, 1, false);
-				audio_sound_pitch(rifleShot, random_range(0.9, 1.1));
-				var pingSound = audio_play_sound(riflePing_snd, 1, false);
-				audio_sound_pitch(pingSound, random_range(0.9, 1.1));
+				if (instance_exists(spotlightPlayer_obj)) {
+					spotlightPlayer_obj.shotlight = true;
+				}
+				instance_create_layer(shotLightx, shotLighty, "ForegroundObjects", smokecloud_obj);
+				
+				instance_create_layer(playerBulletLine_obj.x, playerBulletLine_obj.y, "Instances", bulletSniper_obj);
+				instance_create_layer(playerBulletLine_obj.x, playerBulletLine_obj.y, "Instances", rifleBulletCase_obj);
+				
+				global.bowAmmo--;
+			} else {
+				instance_create_layer(playerBulletLine_obj.x, playerBulletLine_obj.y, "Instances", bulletSniperSalveSpawner_obj);
 			}
-			if (global.bowAmmo == 2) {
-				var rifleShot = audio_play_sound(sniperShot_snd, 1, false);
-				audio_sound_pitch(rifleShot, 1.2);
-				var pingSound = audio_play_sound(riflePing_snd, 1, false);
-				audio_sound_pitch(pingSound, 1.2);
-			}
-			if (global.bowAmmo <= 1) {
-				var rifleShot = audio_play_sound(sniperShot_snd, 1, false);
-				audio_sound_pitch(rifleShot, 1.4);
-				var pingSound = audio_play_sound(riflePing_snd, 1, false);
-				audio_sound_pitch(pingSound, 1.4);
-			}
-		
-			var shotLightx = x + lengthdir_x(36, dirCursor);
-			var shotLighty = y - 8 + lengthdir_y(36, dirCursor);
-			instance_create_layer(playerBulletLine_obj.x, playerBulletLine_obj.y, "Instances", bulletSniper_obj);
-			
-			instance_create_layer(playerBulletLine_obj.x, playerBulletLine_obj.y, "Instances", rifleBulletCase_obj);
-			
-			instance_create_layer(shotLightx, shotLighty, "ForegroundObjects", shotLightShotgun_obj);
-			
-			if (instance_exists(spotlightPlayer_obj)) {
-				spotlightPlayer_obj.shotlight = true;
-			}
-			instance_create_layer(shotLightx, shotLighty, "ForegroundObjects", smokecloud_obj);
 			
 			if (!huggingWall && !isDashing) 
 			{
@@ -382,7 +388,6 @@ function shooting_scr(argument0) {
 					}
 				}
 			}
-			global.bowAmmo--;
 			global.bowCooldown = global.bowCooldownSave;
 			shotZoom = true;
 			player_obj.startShotCooldown = true;

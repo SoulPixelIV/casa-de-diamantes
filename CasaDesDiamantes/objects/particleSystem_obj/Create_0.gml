@@ -104,6 +104,29 @@ part_type_speed(global.smokePart, -0.3, 0.3, -0.001, 0);
 part_type_gravity(global.smokePart, 0.0001, 270);
 part_type_alpha3(global.smokePart, 0, 0.75, 0);
 
+global.smokePinkPart = part_type_create();
+part_type_sprite(global.smokePinkPart, toxicCloud_spr, true, true, true);
+part_type_life(global.smokePinkPart, 2500, 2500);
+part_type_size(global.smokePinkPart, 1, 1.5, 0, 0);
+part_type_orientation(global.smokePinkPart, 0, 359, 0.02, 0, 1);
+part_type_direction(global.smokePinkPart, 0, 180, 0, 3);
+part_type_speed(global.smokePinkPart, -0.3, 0.3, -0.001, 0);
+part_type_color2(global.smokePinkPart, make_color_rgb(195, 111, 237), make_color_rgb(235, 0, 117));
+part_type_gravity(global.smokePinkPart, 0.0001, 270);
+part_type_alpha3(global.smokePinkPart, 0, 0.6, 0);
+
+//Health
+global.healthPart = part_type_create();
+part_type_sprite(global.healthPart, healthSmall_spr, true, true, true);
+part_type_life(global.healthPart, 2600, 1600);
+part_type_size(global.healthPart, 0.5, 1, 0, 0);
+part_type_orientation(global.healthPart, 0, 359, 0.02, 0, 1);
+part_type_direction(global.healthPart, 0, 180, 0, 3);
+part_type_speed(global.healthPart, -0.3, 0.3, -0.001, 0);
+//part_type_color2(global.healthPart, make_color_rgb(195, 111, 237), make_color_rgb(235, 0, 117));
+part_type_gravity(global.healthPart, 0.0001, 270);
+part_type_alpha3(global.healthPart, 0, 1, 0);
+
 global.fireSparkBigPart = part_type_create();
 part_type_sprite(global.fireSparkBigPart, fireSpark_spr, true, true, true);
 part_type_life(global.fireSparkBigPart, 300, 700);
