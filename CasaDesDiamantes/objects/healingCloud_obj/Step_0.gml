@@ -1,14 +1,6 @@
 lifeTimer -= global.dt;
 healDelay -= global.dt;
 
-if (!streamedParts) {
-	smokePinkEmitter = part_emitter_create(global.partSystem);
-	part_emitter_burst(global.partSystem, smokePinkEmitter, global.smokePinkPart, 60);
-	part_emitter_burst(global.partSystem, smokePinkEmitter, global.healthPart, 28);
-	part_emitter_region(global.partSystem, smokePinkEmitter, x - 64, x + 64, y - 64, y + 64, ps_shape_ellipse, ps_distr_gaussian);
-	streamedParts = true;
-}
-
 if (lifeTimer < 0) {
 	instance_destroy();
 }

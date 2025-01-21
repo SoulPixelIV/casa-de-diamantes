@@ -1,6 +1,7 @@
 //Particles
 
 global.partSystem = part_system_create_layer("Particles", false);
+global.partSystem2 = part_system_create_layer("Particles", false);
 
 //Fire Sparks
 global.fireSparkPart = part_type_create();
