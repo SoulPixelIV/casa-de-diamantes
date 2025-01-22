@@ -18,3 +18,7 @@ if (room == level5B && global.level5BGate) {
 if (room == level12 && global.level12Gate) {
 	open = true;
 }
+
+if (room == level16 && global.level16Shortcut) {
+	open = true;
+}

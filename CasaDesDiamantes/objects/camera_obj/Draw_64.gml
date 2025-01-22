@@ -563,6 +563,12 @@ if (drawText && !showWindowMenu)
 			if (dialogueSystem_obj.startScene23Timer) {
 				dialogueLine = dialogueSystem_obj.scene23High - 1;
 			}
+			if (dialogueSystem_obj.startScene28Timer) {
+				dialogueLine = dialogueSystem_obj.scene28High - 1;
+			}
+			if (dialogueSystem_obj.startScene29Timer) {
+				dialogueLine = dialogueSystem_obj.scene29High - 1;
+			}
 		}
 	}
 } else {
@@ -1758,6 +1764,16 @@ if (drawElevatorSign) {
 					draw_sprite(elevatorInterestMarker_spr, 6, global.xScreenSize / 2, (global.yScreenSize / 2) + windowMenuOffset);
 				}
 			}
+		} else {
+			draw_sprite(elevatorInterestMarker_spr, 0, global.xScreenSize / 2, (global.yScreenSize / 2) + windowMenuOffset);
+		}
+	}
+	if (global.storyAct == 2) {
+		if (!global.komoGamblingDialogueDone) {
+			draw_sprite(elevatorInterestMarker_spr, 5, global.xScreenSize / 2, (global.yScreenSize / 2) + windowMenuOffset);
+		}
+		if (!global.tristramCindyQuestioningDialogueDone) {
+			draw_sprite(elevatorInterestMarker_spr, 1, global.xScreenSize / 2, (global.yScreenSize / 2) + windowMenuOffset);
 		} else {
 			draw_sprite(elevatorInterestMarker_spr, 0, global.xScreenSize / 2, (global.yScreenSize / 2) + windowMenuOffset);
 		}

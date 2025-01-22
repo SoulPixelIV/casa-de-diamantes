@@ -1035,7 +1035,7 @@ if (scene25)
 if (startScene25Timer) {
 	if (camera_obj.dialogueLine >= scene25High - 1) {			
 		startScene25Timer = false;
-		global.cupyDialogue7Done = true;
+		global.cupyDialogue8Done = true;
 		camera_obj.drawText = false;
 		camera_obj.drawDialogueBorder = false;
 		save_scr();
@@ -1063,7 +1063,7 @@ if (startScene26Timer) {
 	if (camera_obj.dialogueLine >= scene26High - 1) {			
 		startScene26Timer = false;
 		camera_obj.drawText = false;
-		global.cupyDialogue7Done = true;
+		global.cupyDialogue9Done = true;
 		camera_obj.drawDialogueBorder = false;
 		save_scr();
 	}
@@ -1188,7 +1188,7 @@ if (startScene30Timer) {
 	if (camera_obj.dialogueLine >= scene30High - 1) {			
 		startScene30Timer = false;
 		camera_obj.drawText = false;
-		global.cupyDialogue7Done = true;
+		global.cupyDialogue11Done = true;
 		camera_obj.drawDialogueBorder = false;
 		save_scr();
 	}
@@ -1215,7 +1215,7 @@ if (startScene31Timer) {
 	if (camera_obj.dialogueLine >= scene31High - 1) {			
 		startScene31Timer = false;
 		camera_obj.drawText = false;
-		global.cupyDialogue7Done = true;
+		global.cupyDialogue12Done = true;
 		camera_obj.drawDialogueBorder = false;
 		save_scr();
 	}
@@ -1242,7 +1242,7 @@ if (startScene32Timer) {
 	if (camera_obj.dialogueLine >= scene32High - 1) {			
 		startScene32Timer = false;
 		camera_obj.drawText = false;
-		global.cupyDialogue7Done = true;
+		global.cupyDialogue13Done = true;
 		camera_obj.drawDialogueBorder = false;
 		save_scr();
 	}
@@ -1269,7 +1269,7 @@ if (startScene33Timer) {
 	if (camera_obj.dialogueLine >= scene33High - 1) {			
 		startScene33Timer = false;
 		camera_obj.drawText = false;
-		global.cupyDialogue7Done = true;
+		global.cupyDialogue14Done = true;
 		camera_obj.drawDialogueBorder = false;
 		save_scr();
 	}
@@ -1296,7 +1296,7 @@ if (startScene34Timer) {
 	if (camera_obj.dialogueLine >= scene34High - 1) {			
 		startScene34Timer = false;
 		camera_obj.drawText = false;
-		global.cupyDialogue7Done = true;
+		global.cupyDialogue15Done = true;
 		camera_obj.drawDialogueBorder = false;
 		save_scr();
 	}
@@ -1323,7 +1323,7 @@ if (startScene35Timer) {
 	if (camera_obj.dialogueLine >= scene35High - 1) {			
 		startScene35Timer = false;
 		camera_obj.drawText = false;
-		global.cupyDialogue7Done = true;
+		global.cupyDialogue16Done = true;
 		camera_obj.drawDialogueBorder = false;
 		save_scr();
 	}

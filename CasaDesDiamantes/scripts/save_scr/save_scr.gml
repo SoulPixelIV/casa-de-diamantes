@@ -53,6 +53,12 @@ function save_scr(){
 	ini_write_real("save1", "dualBarettasUpgrade1", global.dualBarettasUpgrade1);
 	ini_write_real("save1", "dualBarettasUpgrade2", global.dualBarettasUpgrade2);
 	
+	ini_write_real("save1", "silencedMPUpgrade1", global.silencedMPUpgrade1);
+	ini_write_real("save1", "silencedMPUpgrade2", global.silencedMPUpgrade2);
+	
+	ini_write_real("save1", "sniperUpgrade1", global.sniperUpgrade1);
+	ini_write_real("save1", "sniperUpgrade2", global.sniperUpgrade2);
+	
 	ini_write_real("save1", "global.cupyUpgrade1", global.cupyUpgrade1);
 	ini_write_real("save1", "global.cupyUpgrade2", global.cupyUpgrade2);
 	

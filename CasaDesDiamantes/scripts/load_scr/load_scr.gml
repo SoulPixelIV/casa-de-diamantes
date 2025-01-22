@@ -48,6 +48,12 @@ function load_scr(){
 	global.dualBarettasUpgrade1 = ini_read_real("save1", "dualBarettasUpgrade1", false);
 	global.dualBarettasUpgrade2 = ini_read_real("save1", "dualBarettasUpgrade2", false);
 	
+	global.silencedMPUpgrade1 = ini_read_real("save1", "silencedMPUpgrade1", false);
+	global.silencedMPUpgrade2 = ini_read_real("save1", "silencedMPUpgrade2", false);
+
+	global.sniperUpgrade1 = ini_read_real("save1", "sniperUpgrade1", false);
+	global.sniperUpgrade2 = ini_read_real("save1", "sniperUpgrade2", false);
+	
 	global.cupyUpgrade1 = ini_read_real("save1", "global.cupyUpgrade1", false);
 	global.cupyUpgrade2 = ini_read_real("save1", "global.cupyUpgrade2", false);
 	

@@ -84,6 +84,7 @@ global.level12Gate = false;
 global.level13Booster = false;
 global.level15Spring = false;
 global.level15Shortcut = false;
+global.level16Shortcut = false;
 
 global.pistolAmmo = 0;
 global.pistolAmmoMax = 16;

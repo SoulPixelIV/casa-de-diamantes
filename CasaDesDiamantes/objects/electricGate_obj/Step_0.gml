@@ -13,6 +13,9 @@ if (instance_exists(player_obj) && distance_to_object(player_obj) > 32 && place_
 		if (room == level12) {
 			global.level12Gate = true;
 		}
+		if (room == level16) {
+			global.level16Shortcut = true;
+		}
 		
 		if (moveDirection == 0)
 		{
