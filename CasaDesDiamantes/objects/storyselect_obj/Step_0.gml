@@ -72,7 +72,7 @@ if (pushDelay < 0) {
 					global.lastCheckpoint = noone;
 				break;
 				case 2:
-				global.cutsceneCasinoIntroDone = true;
+					global.cutsceneCasinoIntroDone = true;
 					global.introDialogueVIPDone = true;
 					global.introDialogueCindyDone = true;
 					global.introDialogueOutOfRoomDone = true;

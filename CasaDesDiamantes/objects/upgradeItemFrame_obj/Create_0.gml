@@ -47,6 +47,14 @@ switch (frame) {
 		if (global.silencedMPUpgrade2) {
 			used = true;
 		}
+	case 10:
+		if (global.sniperUpgrade1) {
+			used = true;
+		}
+	case 11:
+		if (global.sniperUpgrade2) {
+			used = true;
+		}
 	break;	
 }
 

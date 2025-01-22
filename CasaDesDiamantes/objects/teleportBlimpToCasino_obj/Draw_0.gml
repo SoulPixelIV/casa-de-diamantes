@@ -26,9 +26,8 @@ if (distance_to_object(player_obj) < 32)
 	if (finishingTeleport) {
 		waitDelay -= global.dt;
 		if (waitDelay < 0) {	
-			part_emitter_destroy_all(global.partSystem);
-			instance_destroy(player_obj);
-			room_goto(level_Casino);
+			global.moveToWorld = 7;
+			room_goto(blimpAnim);
 		}
 	}
 }

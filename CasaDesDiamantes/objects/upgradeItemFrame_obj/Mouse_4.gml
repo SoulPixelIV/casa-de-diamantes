@@ -73,4 +73,22 @@ switch (frame) {
 			used = true;
 		}
 	break;
+	case 10:
+		if (global.money >= 4200 && !global.sniperUpgrade1) {
+			audio_play_sound(buying_snd, 1, false);
+			global.sniperUpgrade1 = true;
+			global.money -= 4200;
+			frame = 0;
+			used = true;
+		}
+	break;
+	case 11:
+		if (global.money >= 5500 && !global.sniperUpgrade2 && global.sniperUpgrade1) {
+			audio_play_sound(buying_snd, 1, false);
+			global.sniperUpgrade2 = true;
+			global.money -= 5500;
+			frame = 0;
+			used = true;
+		}
+	break;
 }

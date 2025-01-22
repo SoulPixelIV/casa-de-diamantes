@@ -1131,13 +1131,25 @@ if (!noHUD && instance_exists(player_obj))
 	{
 		draw_sprite(ammoCircle_spr, 3, 32, 24);
 		draw_sprite(bulletbarSilencedMP_spr, global.silencedMPAmmo, 26, 32);
-		//draw_text(86, 29, string(global.silencedMPAmmo) + "-" + string(global.silencedMPAmmoMax));
+		if (global.silencedMPUpgrade1) {
+			draw_sprite_ext(upgradeWindow_spr, 4, 34, 80, 1, 1, 0, -1, 1);
+		}
+		if (global.silencedMPUpgrade2) {
+			draw_sprite_ext(upgradeWindow_spr, 4, 34, 80, 1, 1, 0, -1, 1);
+			draw_sprite_ext(upgradeWindow_spr, 5, 82, 80, 1, 1, 0, -1, 1);
+		}
 	}
 	else if (global.currentWeapon == gameManager_obj.pickedWeapon.bow)
 	{
 		draw_sprite(ammoCircle_spr, 4, 32, 24);
 		draw_sprite(bulletbarAntiMaterialRife_spr, global.bowAmmo, 26, 32);
-		//draw_text(86, 29, string(global.bowAmmo) + "-" + string(global.bowAmmoMax));
+		if (global.sniperUpgrade1) {
+			draw_sprite_ext(upgradeWindow_spr, 6, 34, 80, 1, 1, 0, -1, 1);
+		}
+		if (global.sniperUpgrade2) {
+			draw_sprite_ext(upgradeWindow_spr, 6, 34, 80, 1, 1, 0, -1, 1);
+			draw_sprite_ext(upgradeWindow_spr, 7, 82, 80, 1, 1, 0, -1, 1);
+		}
 	}
 	else
 	{

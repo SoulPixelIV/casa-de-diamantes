@@ -173,6 +173,48 @@ switch (frame) {
 			}
 		}
 	break;
+	case 10:
+		if (!global.sniperUpgrade1) {
+			nameText = "Split\nBullets";
+			priceText = "4200$";
+			price = 4200;
+			twolinemode = true;
+		} else {
+			nameText = "Split\nBullets";
+			priceText = "Purchased";
+			price = 9999999999999999;
+			twolinemode = true;
+		}
+	break;
+	case 11:
+		price = 5500;
+		
+		if (!global.sniperUpgrade2) {
+			if (!global.sniperUpgrade1) {
+				twolinemode = false;
+				nameText = "Locked";
+				priceText = "";
+				if (!used && !mouseEntered) {
+					image_index = 1;
+				}
+			} else {
+				twolinemode = true;
+				nameText = "Healing\nAura";
+				priceText = "5500$";
+				if (!used && !mouseEntered) {
+					image_index = frame;
+				}
+			}
+		} else {
+			twolinemode = true;
+			nameText = "Healing\nAura";
+			priceText = "Purchased";
+			price = 999999999999;
+			if (!used && !mouseEntered) {
+				image_index = frame;
+			}
+		}
+	break;
 }
 
 draw_set_font(gothicPixel_fnt);

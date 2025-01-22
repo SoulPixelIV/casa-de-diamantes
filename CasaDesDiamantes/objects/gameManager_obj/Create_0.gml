@@ -2,7 +2,7 @@
 
 global.spawn = 0;
 global.money = 0;
-global.skin = 0;
+global.skin = 1;
 global.syringes = 0;
 global.room = noone;
 global.diamonds = 0;
@@ -44,8 +44,8 @@ global.shotgunUpgrade2 = true;
 global.dualBarettasUpgrade1 = true;
 global.dualBarettasUpgrade2 = true;
 
-global.silencedMPUpgrade1 = false;
-global.silencedMPUpgrade2 = false;
+global.silencedMPUpgrade1 = true;
+global.silencedMPUpgrade2 = true;
 
 global.sniperUpgrade1 = true;
 global.sniperUpgrade2 = true;
