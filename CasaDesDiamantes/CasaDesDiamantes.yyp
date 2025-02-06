@@ -193,6 +193,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"UI","folderPath":"folders/UI.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"UI Objects","folderPath":"folders/UI/UI Objects.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"UI Sprites","folderPath":"folders/UI/UI Sprites.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Act5Music","folderPath":"folders/Sounds/Act5Music.yy",},
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"Casino3DFilledMarquee.ttf","CopyToMask":-1,"filePath":"datafiles",},
@@ -325,6 +326,7 @@
     {"id":{"name":"doorDecorative_spr","path":"sprites/doorDecorative_spr/doorDecorative_spr.yy",},},
     {"id":{"name":"atomicLaser_snd","path":"sounds/atomicLaser_snd/atomicLaser_snd.yy",},},
     {"id":{"name":"chips_obj","path":"objects/chips_obj/chips_obj.yy",},},
+    {"id":{"name":"sliceExp_msc","path":"sounds/sliceExp_msc/sliceExp_msc.yy",},},
     {"id":{"name":"tutorialSpaceKeyPromt_obj","path":"objects/tutorialSpaceKeyPromt_obj/tutorialSpaceKeyPromt_obj.yy",},},
     {"id":{"name":"playerAntiMaterialRifle_spr","path":"sprites/playerAntiMaterialRifle_spr/playerAntiMaterialRifle_spr.yy",},},
     {"id":{"name":"minecartRail_spr","path":"sprites/minecartRail_spr/minecartRail_spr.yy",},},
@@ -754,6 +756,7 @@
     {"id":{"name":"spotlightRedIntense_obj","path":"objects/spotlightRedIntense_obj/spotlightRedIntense_obj.yy",},},
     {"id":{"name":"glitterBottomDash_spr","path":"sprites/glitterBottomDash_spr/glitterBottomDash_spr.yy",},},
     {"id":{"name":"cursor_spr","path":"sprites/cursor_spr/cursor_spr.yy",},},
+    {"id":{"name":"sliceCom_msc","path":"sounds/sliceCom_msc/sliceCom_msc.yy",},},
     {"id":{"name":"playerWalkingEquippedReverse_spr","path":"sprites/playerWalkingEquippedReverse_spr/playerWalkingEquippedReverse_spr.yy",},},
     {"id":{"name":"toxicrain_spr","path":"sprites/toxicrain_spr/toxicrain_spr.yy",},},
     {"id":{"name":"bulletPistol_spr","path":"sprites/bulletPistol_spr/bulletPistol_spr.yy",},},

@@ -109,6 +109,7 @@
     {"name":"No ClothesOLD","order":1,"path":"folders/Steph/Steph Sprites/No ClothesOLD.yy",},
     {"name":"Skin1","order":40,"path":"folders/Steph/Steph Sprites/Skin1.yy",},
     {"name":"UI","order":20,"path":"folders/UI.yy",},
+    {"name":"Act5Music","order":99,"path":"folders/Sounds/Act5Music.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"dashroll_snd","order":12,"path":"sounds/dashroll_snd/dashroll_snd.yy",},
@@ -215,6 +216,7 @@
     {"name":"doorDecorative_spr","order":14,"path":"sprites/doorDecorative_spr/doorDecorative_spr.yy",},
     {"name":"atomicLaser_snd","order":75,"path":"sounds/atomicLaser_snd/atomicLaser_snd.yy",},
     {"name":"chips_obj","order":13,"path":"objects/chips_obj/chips_obj.yy",},
+    {"name":"sliceExp_msc","order":1,"path":"sounds/sliceExp_msc/sliceExp_msc.yy",},
     {"name":"tutorialSpaceKeyPromt_obj","order":50,"path":"objects/tutorialSpaceKeyPromt_obj/tutorialSpaceKeyPromt_obj.yy",},
     {"name":"playerAntiMaterialRifle_spr","order":231,"path":"sprites/playerAntiMaterialRifle_spr/playerAntiMaterialRifle_spr.yy",},
     {"name":"minecartRail_spr","order":15,"path":"sprites/minecartRail_spr/minecartRail_spr.yy",},
