@@ -13,6 +13,11 @@ if (verspeed < 2)
 	verspeed -= gravityStrength * global.dt;
 }
 
+//Move Left
+if (flyToLeft && !global.pause) {
+	x -= 0.75 * global.dt;
+}
+
 //Animation
 image_speed = 0;
 image_index += (global.dt / 15) * animationSpeed;
