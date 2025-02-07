@@ -151,6 +151,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Act2Music","folderPath":"folders/Sounds/Act2Music.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Act3Music","folderPath":"folders/Sounds/Act3Music.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Act4Music","folderPath":"folders/Sounds/Act4Music.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Act5Music","folderPath":"folders/Sounds/Act5Music.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Enemies","folderPath":"folders/Sounds/Enemies.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"BasicZombie","folderPath":"folders/Sounds/Enemies/BasicZombie.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Legacy","folderPath":"folders/Sounds/Legacy.yy",},
@@ -193,7 +194,6 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"UI","folderPath":"folders/UI.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"UI Objects","folderPath":"folders/UI/UI Objects.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"UI Sprites","folderPath":"folders/UI/UI Sprites.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Act5Music","folderPath":"folders/Sounds/Act5Music.yy",},
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"Casino3DFilledMarquee.ttf","CopyToMask":-1,"filePath":"datafiles",},

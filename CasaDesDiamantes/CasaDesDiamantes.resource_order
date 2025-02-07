@@ -91,6 +91,7 @@
     {"name":"Sounds","order":17,"path":"folders/Sounds.yy",},
     {"name":"Act3Music","order":93,"path":"folders/Sounds/Act3Music.yy",},
     {"name":"Act4Music","order":88,"path":"folders/Sounds/Act4Music.yy",},
+    {"name":"Act5Music","order":99,"path":"folders/Sounds/Act5Music.yy",},
     {"name":"BasicZombie","order":6,"path":"folders/Sounds/Enemies/BasicZombie.yy",},
     {"name":"MenuMusic","order":64,"path":"folders/Sounds/MenuMusic.yy",},
     {"name":"Sprites","order":18,"path":"folders/Sprites.yy",},
@@ -109,7 +110,6 @@
     {"name":"No ClothesOLD","order":1,"path":"folders/Steph/Steph Sprites/No ClothesOLD.yy",},
     {"name":"Skin1","order":40,"path":"folders/Steph/Steph Sprites/Skin1.yy",},
     {"name":"UI","order":20,"path":"folders/UI.yy",},
-    {"name":"Act5Music","order":99,"path":"folders/Sounds/Act5Music.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"dashroll_snd","order":12,"path":"sounds/dashroll_snd/dashroll_snd.yy",},
