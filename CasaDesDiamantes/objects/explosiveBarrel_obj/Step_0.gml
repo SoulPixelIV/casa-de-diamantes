@@ -16,6 +16,10 @@ if (verspeed < 2)
 //Move Left
 if (flyToLeft && !global.pause) {
 	x -= 0.75 * global.dt;
+	lifeTimer -= global.dt;
+	if (lifeTimer < 0) {
+		instance_destroy();
+	}
 }
 
 //Animation

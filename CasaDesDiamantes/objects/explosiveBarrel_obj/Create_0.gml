@@ -38,6 +38,7 @@ damageCollision = false;
 damageTintTimer = 15;
 headshot = false;
 open = false;
+lifeTimer = 10000;
 
 //Help Vars
 damageTintTimerSave = damageTintTimer;
