@@ -1,11 +1,11 @@
 {
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
-  "name": "stratoTrain_spr",
-  "bbox_bottom": 127,
+  "name": "stratoTrainBack_spr",
+  "bbox_bottom": 121,
   "bbox_left": 0,
-  "bbox_right": 289,
-  "bbox_top": 20,
+  "bbox_right": 38,
+  "bbox_top": 22,
   "bboxMode": 0,
   "collisionKind": 1,
   "collisionTolerance": 0,
@@ -20,11 +20,10 @@
   "height": 128,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"ed9c8a68-5e32-4710-8cb7-fe6bca9d07dc","blendMode":0,"displayName":"Light","isLocked":false,"opacity":100.0,"visible":true,},
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"b7bd8507-6dbd-440a-a183-9a7917aaae76","blendMode":0,"displayName":"Line Art","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
-  "origin": 7,
+  "origin": 9,
   "parent": {
     "name": "Sprites",
     "path": "folders/Sprites.yy",
@@ -33,7 +32,7 @@
   "sequence": {
     "resourceType": "GMSequence",
     "resourceVersion": "1.4",
-    "name": "stratoTrain_spr",
+    "name": "stratoTrainBack_spr",
     "autoRecord": true,
     "backdropHeight": 768,
     "backdropImageOpacity": 0.5,
@@ -55,12 +54,12 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"7103dbc7-d83c-4776-ae92-de06583c9d9e","path":"sprites/stratoTrain_spr/stratoTrain_spr.yy",},},},"Disabled":false,"id":"3c8d409e-300a-4954-a65c-a9db6aa66bd3","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"7103dbc7-d83c-4776-ae92-de06583c9d9e","path":"sprites/stratoTrainBack_spr/stratoTrainBack_spr.yy",},},},"Disabled":false,"id":"81f30acd-e006-4365-a175-4e1cda5a20b4","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
     "volume": 1.0,
-    "xorigin": 150,
+    "xorigin": 17,
     "yorigin": 128,
   },
   "swatchColours": null,
@@ -71,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 300,
+  "width": 39,
 }
