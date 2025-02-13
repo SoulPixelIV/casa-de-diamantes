@@ -4,8 +4,9 @@ if (instance_exists(camera_obj))
 	yTo = camera_obj.y - 150;
 	setOffset = (camera_obj.x - 232) - offset
 
-	x = floor(xTo - (setOffset / 4));
+	x = round(xTo - (setOffset / 4));
 	if (movingXOffset <= -600) {
+		movingXOffset = -605;
 		movingXOffset += 2880;
 	} else {
 		movingXOffset -= global.dt * 2;
