@@ -1,9 +1,8 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "stratoTrain_obj",
+  "name": "fogCreator_obj",
   "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
   ],
   "managed": true,
@@ -29,9 +28,9 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "stratoTrain_spr",
-    "path": "sprites/stratoTrain_spr/stratoTrain_spr.yy",
+    "name": "debugPartHor_spr",
+    "path": "sprites/debugPartHor_spr/debugPartHor_spr.yy",
   },
   "spriteMaskId": null,
-  "visible": true,
+  "visible": false,
 }

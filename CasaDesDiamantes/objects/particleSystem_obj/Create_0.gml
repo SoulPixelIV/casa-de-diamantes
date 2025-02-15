@@ -12,6 +12,15 @@ part_type_orientation(global.fireSparkPart, 0, 359, 1, 0, 1);
 part_type_direction(global.fireSparkPart, 0, 359, 0, 3);
 part_type_gravity(global.fireSparkPart, 0.0001, 270);
 
+//Fog Cloud
+global.fogPart = part_type_create();
+part_type_sprite(global.fogPart, fogParticle_spr, true, true, true);
+part_type_life(global.fogPart, 1300, 1800);
+part_type_size(global.fogPart, 0.7, 1, 0, 0);
+part_type_orientation(global.fogPart, 160, 200, 0, 0, 1);
+part_type_alpha3(global.fogPart, 0, 0.02, 0);
+part_type_colour2(global.fogPart, make_color_rgb(255, 204, 0), make_color_rgb(255, 245, 204));
+
 //Flame Sparks
 global.flameSparkPart = part_type_create();
 part_type_sprite(global.flameSparkPart, flameSmall_spr, true, true, true);
