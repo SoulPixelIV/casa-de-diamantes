@@ -3,7 +3,9 @@ image_speed = 0;
 image_index += (global.dt / 15) * animationSpeed;
 
 //Cutscene Movement
-x += global.dt * movSpeed;
+if (movement) {
+	x += global.dt * movSpeed;
+}
 
 if (!ridingCutscene) {
 	if (movSpeed > 0) {

@@ -521,6 +521,7 @@
     {"id":{"name":"dropShadow_obj","path":"objects/dropShadow_obj/dropShadow_obj.yy",},},
     {"id":{"name":"deathOverlay_spr","path":"sprites/deathOverlay_spr/deathOverlay_spr.yy",},},
     {"id":{"name":"menuCircleRed_spr","path":"sprites/menuCircleRed_spr/menuCircleRed_spr.yy",},},
+    {"id":{"name":"level20_level21_teleporter","path":"objects/level20_level21_teleporter/level20_level21_teleporter.yy",},},
     {"id":{"name":"playerArmEmptyWalkingReverse_spr","path":"sprites/playerArmEmptyWalkingReverse_spr/playerArmEmptyWalkingReverse_spr.yy",},},
     {"id":{"name":"plantWallBossForeground_spr","path":"sprites/plantWallBossForeground_spr/plantWallBossForeground_spr.yy",},},
     {"id":{"name":"scoreNumber_spr","path":"sprites/scoreNumber_spr/scoreNumber_spr.yy",},},
