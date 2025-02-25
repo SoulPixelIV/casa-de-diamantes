@@ -1,11 +1,8 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "fogCreator_obj",
-  "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":12,"isDnD":false,},
-  ],
+  "name": "greyCloud_obj",
+  "eventList": [],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
@@ -29,9 +26,9 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "debugPartHor_spr",
-    "path": "sprites/debugPartHor_spr/debugPartHor_spr.yy",
+    "name": "greyCloud_spr",
+    "path": "sprites/greyCloud_spr/greyCloud_spr.yy",
   },
   "spriteMaskId": null,
-  "visible": false,
+  "visible": true,
 }

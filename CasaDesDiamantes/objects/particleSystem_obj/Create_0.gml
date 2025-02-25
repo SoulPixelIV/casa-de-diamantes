@@ -21,6 +21,15 @@ part_type_orientation(global.fogPart, 160, 200, 0, 0, 1);
 part_type_alpha3(global.fogPart, 0, 0.02, 0);
 part_type_colour2(global.fogPart, make_color_rgb(255, 204, 0), make_color_rgb(255, 245, 204));
 
+//Grey Cloud
+global.greyCloudPart = part_type_create();
+part_type_sprite(global.greyCloudPart, fogParticle_spr, true, true, true);
+part_type_life(global.greyCloudPart, 1300, 1800);
+part_type_size(global.greyCloudPart, 0.7, 1, 0, 0);
+part_type_orientation(global.greyCloudPart, 160, 200, 0, 0, 1);
+part_type_alpha3(global.greyCloudPart, 0, 0.02, 0);
+part_type_colour2(global.greyCloudPart, make_color_rgb(200, 200, 200), make_color_rgb(100, 100, 100));
+
 //Flame Sparks
 global.flameSparkPart = part_type_create();
 part_type_sprite(global.flameSparkPart, flameSmall_spr, true, true, true);
@@ -192,6 +201,13 @@ part_type_orientation(global.yellowFallingPart, 0, 359, 1, 0, 1);
 part_type_direction(global.yellowFallingPart, 270, 359, 0, 3);
 part_type_speed(global.yellowFallingPart, 0.07, 0.11, 0, 0.02);
 
+global.goldenPart = part_type_create();
+part_type_sprite(global.goldenPart, fireSpark_spr, true, true, true);
+part_type_life(global.goldenPart, 2000, 2600);
+part_type_size(global.goldenPart, 0.1, 0.2, 0, 0);
+part_type_alpha3(global.goldenPart, 0, 0.2, 1);
+part_type_orientation(global.goldenPart, 0, 359, 1, 0, 1);
+
 global.greenPart = part_type_create();
 part_type_sprite(global.greenPart, spark_spr, true, false, true);
 part_type_life(global.greenPart, 6000, 6200);
@@ -217,6 +233,14 @@ part_type_size(global.whiteStillPart, 0.2, 0.5, 0, 0);
 part_type_orientation(global.whiteStillPart, 0, 359, 1, 0, 1);
 part_type_direction(global.whiteStillPart, 0, 359, 0, 3);
 part_type_speed(global.whiteStillPart, 0.0002, 0.0005, 0, 0.0002);
+
+global.whiteMovingLeftPart = part_type_create();
+part_type_sprite(global.whiteMovingLeftPart, spark_spr, true, false, true);
+part_type_life(global.whiteMovingLeftPart, 6000, 6200);
+part_type_size(global.whiteMovingLeftPart, 0.2, 0.5, 0, 0);
+part_type_orientation(global.whiteMovingLeftPart, 0, 359, 1, 0, 1);
+part_type_direction(global.whiteMovingLeftPart, 175, 185, 0, 3);
+part_type_speed(global.whiteMovingLeftPart, 0.5, 1, 0, 0.0002);
 
 global.radiationStillPart = part_type_create();
 part_type_sprite(global.radiationStillPart, spark_spr, true, false, true);

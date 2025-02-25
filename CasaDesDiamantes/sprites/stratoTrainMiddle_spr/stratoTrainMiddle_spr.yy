@@ -14,6 +14,8 @@
   "For3D": false,
   "frames": [
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"7103dbc7-d83c-4776-ae92-de06583c9d9e",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"864f236a-e3ad-461d-972d-5693931abdee",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"49baa321-71ff-4298-b6c5-2b6ffe746018",},
   ],
   "gridX": 0,
   "gridY": 0,
@@ -43,7 +45,7 @@
     "events": {"resourceType":"KeyframeStore<MessageEventKeyframe>","resourceVersion":"1.0","Keyframes":[],},
     "eventStubScript": null,
     "eventToFunction": {},
-    "length": 1.0,
+    "length": 3.0,
     "lockOrigin": false,
     "moments": {"resourceType":"KeyframeStore<MomentsEventKeyframe>","resourceVersion":"1.0","Keyframes":[],},
     "playback": 1,
@@ -55,6 +57,8 @@
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
             {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"7103dbc7-d83c-4776-ae92-de06583c9d9e","path":"sprites/stratoTrainMiddle_spr/stratoTrainMiddle_spr.yy",},},},"Disabled":false,"id":"5daac152-1307-4fb6-97ad-baf299d3b7f9","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"864f236a-e3ad-461d-972d-5693931abdee","path":"sprites/stratoTrainMiddle_spr/stratoTrainMiddle_spr.yy",},},},"Disabled":false,"id":"a751b447-6470-441d-b10c-84a1b545b9d0","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"49baa321-71ff-4298-b6c5-2b6ffe746018","path":"sprites/stratoTrainMiddle_spr/stratoTrainMiddle_spr.yy",},},},"Disabled":false,"id":"d591f377-1dbe-4f6b-a71d-82c645206f25","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

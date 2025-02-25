@@ -9,6 +9,7 @@ if (menu == 0) {
 	draw_text(32, optionsY[4], "[Act2] Senzela Forest");
 	draw_text(32, optionsY[5], "[Act3] Endless Depths");
 	draw_text(32, optionsY[6], "[Act4] EDEN Powerplant");
+	draw_text(32, optionsY[7], "[Act5] Strato Train Station");
 } else if (menu == 1) {
 	draw_text(32, optionsY[0], "[Level 1] Paredia");
 	draw_text(32, optionsY[1], "[Level 2] Paredia Streets");
@@ -37,6 +38,8 @@ if (menu == 0) {
 	draw_text(32, optionsY[2], "[Level 17] Gamma Ray Concert");
 	draw_text(32, optionsY[3], "[Level 18] Revelation");
 	draw_text(32, optionsY[4], "[Level 19] Final Countdown");
+} else if (menu == 6) {
+	draw_text(32, optionsY[0], "[Level 20] Explosive Opening");
 }
 
 draw_set_halign(fa_center);

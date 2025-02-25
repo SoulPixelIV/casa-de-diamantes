@@ -1,10 +1,9 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "fogCreator_obj",
+  "name": "trainStopTrigger_obj",
   "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":12,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":{"name":"stratoTrain_obj","path":"objects/stratoTrain_obj/stratoTrain_obj.yy",},"eventNum":0,"eventType":4,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
@@ -29,9 +28,9 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "debugPartHor_spr",
-    "path": "sprites/debugPartHor_spr/debugPartHor_spr.yy",
+    "name": "bluecubex16_spr",
+    "path": "sprites/bluecubex16_spr/bluecubex16_spr.yy",
   },
   "spriteMaskId": null,
-  "visible": false,
+  "visible": true,
 }

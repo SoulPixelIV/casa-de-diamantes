@@ -41,6 +41,17 @@ if (cameraTarget2)
 	player_obj.movement = false;
 	player_obj.invincible = true;
 }
+if (cameraTrainCutscene)
+{
+	snapCameraX = false;
+	snapCameraY = false;
+	//cameraTargetTimer -= global.dt;
+	follow = stephRidingStill_obj;
+	cameraSpeed = 0.01;
+	ycameraSpeed = 0.01;
+	player_obj.movement = false;
+	player_obj.invincible = true;
+}
 if (cameraTargetMovement)
 {
 	snapCameraX = false;

@@ -42,6 +42,7 @@ deathInProg = false;
 respawnSetScreenBrightness = false;
 cameraTarget = false;
 cameraTarget2 = false;
+cameraTrainCutscene = false;
 cameraTargetMovement = false;
 cameraTargetTimer = 500;
 showWindowMenu = false;
