@@ -10,8 +10,10 @@ if (movement) {
 if (!ridingCutscene) {
 	if (movSpeed > 0) {
 		movSpeed -= global.dt / 150;
+		animationSpeed -= global.dt / 150;
 		if (movSpeed < 0) {
 			movSpeed = 0;
+			animationSpeed = 0;
 		}
 	}
 }
