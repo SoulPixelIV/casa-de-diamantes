@@ -29,7 +29,7 @@
   "origin": 9,
   "parent": {
     "name": "Destructible",
-    "path": "folders/Sprites/Destructible.yy",
+    "path": "folders/Objects/Sprites/Destructible.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

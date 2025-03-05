@@ -32,7 +32,7 @@
   "origin": 0,
   "parent": {
     "name": "Particles",
-    "path": "folders/Sprites/Particles.yy",
+    "path": "folders/Objects/Sprites/Particles.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

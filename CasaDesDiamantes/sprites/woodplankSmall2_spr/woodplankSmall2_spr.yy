@@ -26,7 +26,7 @@
   "origin": 0,
   "parent": {
     "name": "woodplankSmall",
-    "path": "folders/Sprites/Decoration/woodplankSmall.yy",
+    "path": "folders/Objects/Sprites/Decoration/woodplankSmall.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

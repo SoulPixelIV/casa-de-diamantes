@@ -63,7 +63,7 @@
   "out_tilevborder": 2,
   "parent": {
     "name": "Tile Sets",
-    "path": "folders/Sprites/Tile Sets.yy",
+    "path": "folders/Objects/Sprites/Tile Sets.yy",
   },
   "spriteId": {
     "name": "casinoTiles_spr",

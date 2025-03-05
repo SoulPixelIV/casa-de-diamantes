@@ -26,7 +26,7 @@
   "origin": 7,
   "parent": {
     "name": "Debug",
-    "path": "folders/Sprites/Debug.yy",
+    "path": "folders/Objects/Sprites/Debug.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

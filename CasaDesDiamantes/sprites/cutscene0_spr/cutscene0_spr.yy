@@ -45,7 +45,7 @@
   "origin": 0,
   "parent": {
     "name": "Cutscenes",
-    "path": "folders/Sprites/Cutscenes.yy",
+    "path": "folders/Objects/Sprites/Cutscenes.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
