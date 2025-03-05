@@ -619,7 +619,7 @@ if (act4MusicOn && act4MusicStarted) {
 }
 
 //ACT5 WORLD MUSIC
-if (room == level20) {
+if (room == level20 || room == level21) {
 	act5MusicOn = true;
 } else {
 	act5MusicOn = false;
