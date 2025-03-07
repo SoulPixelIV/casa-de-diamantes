@@ -32,5 +32,5 @@
     "path": "sprites/bluecubex16_spr/bluecubex16_spr.yy",
   },
   "spriteMaskId": null,
-  "visible": true,
+  "visible": false,
 }
