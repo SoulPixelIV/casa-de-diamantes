@@ -51,6 +51,7 @@ if (cameraTrainCutscene)
 	ycameraSpeed = 0.01;
 	player_obj.movement = false;
 	player_obj.invincible = true;
+	player_obj.shootingAllowed = false;
 }
 if (cameraTargetMovement)
 {

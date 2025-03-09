@@ -282,6 +282,8 @@ currVolTypewriterPush = audio_sound_get_gain(typewriterPush_snd);
 currVolHelicopter = audio_sound_get_gain(helicopter_snd);
 currVolSinging = audio_sound_get_gain(singing_snd);
 currVolSpringLadderShortcut = audio_sound_get_gain(springLadderShortcut_snd);
+currVolTrainCrossingAlarm = audio_sound_get_gain(trainCrossingAlarm_snd);
+currVolTrainHonk = audio_sound_get_gain(trainHonk_snd);
 
 currVolInfectedVoice = audio_sound_get_gain(infectedVoice_snd);
 currVolInfectionVoice = audio_sound_get_gain(plagueInfectionVoice_snd);
