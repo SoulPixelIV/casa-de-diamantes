@@ -435,6 +435,8 @@
     {"name":"inst_4DF8E49","path":"rooms/level21/level21.yy",},
     {"name":"inst_E9E0D65","path":"rooms/level21/level21.yy",},
     {"name":"inst_EA5DC95","path":"rooms/level21/level21.yy",},
+    {"name":"inst_690DCF1C","path":"rooms/level21/level21.yy",},
+    {"name":"inst_636A1A60","path":"rooms/level21/level21.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -1054,6 +1056,12 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_3755BA1E","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"stratoBackgroundStill_obj","path":"objects/stratoBackgroundStill_obj/stratoBackgroundStill_obj.yy",},"properties":[
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"stratoBackgroundStill_obj","path":"objects/stratoBackgroundStill_obj/stratoBackgroundStill_obj.yy",},"propertyId":{"name":"num","path":"objects/stratoBackgroundStill_obj/stratoBackgroundStill_obj.yy",},"value":"4",},
           ],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":3104.0,"y":3136.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_690DCF1C","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"stratoBackgroundStill_obj","path":"objects/stratoBackgroundStill_obj/stratoBackgroundStill_obj.yy",},"properties":[
+            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"stratoBackgroundStill_obj","path":"objects/stratoBackgroundStill_obj/stratoBackgroundStill_obj.yy",},"propertyId":{"name":"num","path":"objects/stratoBackgroundStill_obj/stratoBackgroundStill_obj.yy",},"value":"5",},
+          ],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":3584.0,"y":3136.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_636A1A60","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"stratoBackgroundStill_obj","path":"objects/stratoBackgroundStill_obj/stratoBackgroundStill_obj.yy",},"properties":[
+            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"stratoBackgroundStill_obj","path":"objects/stratoBackgroundStill_obj/stratoBackgroundStill_obj.yy",},"propertyId":{"name":"num","path":"objects/stratoBackgroundStill_obj/stratoBackgroundStill_obj.yy",},"value":"6",},
+          ],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":4064.0,"y":3136.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"CloudParts","depth":3300,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMREffectLayer","resourceVersion":"1.0","name":"DesaturationFilter1","depth":3400,"effectEnabled":true,"effectType":"_filter_greyscale","gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[

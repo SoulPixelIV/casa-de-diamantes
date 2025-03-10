@@ -1324,6 +1324,7 @@
     {"name":"particleRed_obj","order":2,"path":"objects/particleRed_obj/particleRed_obj.yy",},
     {"name":"particleYellowFallingSpawner_obj","order":5,"path":"objects/particleYellowFallingSpawner_obj/particleYellowFallingSpawner_obj.yy",},
     {"name":"spotlightYellowIntense_obj","order":16,"path":"objects/spotlightYellowIntense_obj/spotlightYellowIntense_obj.yy",},
+    {"name":"level22","order":2,"path":"rooms/level22/level22.yy",},
     {"name":"fallingGround_spr","order":87,"path":"sprites/fallingGround_spr/fallingGround_spr.yy",},
     {"name":"overworldTrigger5_obj","order":198,"path":"objects/overworldTrigger5_obj/overworldTrigger5_obj.yy",},
     {"name":"bet1000_spr","order":17,"path":"sprites/bet1000_spr/bet1000_spr.yy",},

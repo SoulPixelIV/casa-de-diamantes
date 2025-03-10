@@ -40,6 +40,8 @@ if (menu == 0) {
 	draw_text(32, optionsY[4], "[Level 19] Final Countdown");
 } else if (menu == 6) {
 	draw_text(32, optionsY[0], "[Level 20] Explosive Opening");
+	draw_text(32, optionsY[1], "[Level 21] Parallel Riding");
+	draw_text(32, optionsY[2], "[Level 22] Train Crossing Madness");
 }
 
 draw_set_halign(fa_center);
