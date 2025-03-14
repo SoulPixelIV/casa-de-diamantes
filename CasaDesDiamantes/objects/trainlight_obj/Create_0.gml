@@ -7,8 +7,8 @@ image_speed = 0;
 
 //Create alarmEmitter
 alarmEmitter = audio_emitter_create();
-audio_max_distance = 400;
-audio_drop_start = 100;
+audio_max_distance = 200;
+audio_drop_start = 50;
 
 audio_falloff_set_model(audio_falloff_linear_distance);
 audio_emitter_position(alarmEmitter, x, y, 0);

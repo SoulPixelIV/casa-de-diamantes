@@ -27,7 +27,7 @@ if (trainPhase == 2) {
 
 if (instance_exists(stratoTrainComplete_obj)) {
 	var train = instance_nearest(x, y, stratoTrainComplete_obj);
-	if (distance_to_object(train) < 1400) {
+	if (distance_to_object(train) < distanceAlarm) {
 		trainPhase = 1;
 	} else {
 		trainPhase = 0;

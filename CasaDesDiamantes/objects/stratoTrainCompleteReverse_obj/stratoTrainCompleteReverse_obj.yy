@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "trainlight_obj",
+  "name": "stratoTrainCompleteReverse_obj",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
@@ -12,7 +12,10 @@
     "name": "Objects",
     "path": "folders/Objects.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "hazard_obj",
+    "path": "objects/hazard_obj/hazard_obj.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -26,13 +29,11 @@
   "physicsShape": 1,
   "physicsShapePoints": [],
   "physicsStartAwake": true,
-  "properties": [
-    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"distanceAlarm","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"1400","varType":1,},
-  ],
+  "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "trainlight_spr",
-    "path": "sprites/trainlight_spr/trainlight_spr.yy",
+    "name": "stratoTrainCompleteReverse_spr",
+    "path": "sprites/stratoTrainCompleteReverse_spr/stratoTrainCompleteReverse_spr.yy",
   },
   "spriteMaskId": null,
   "visible": true,
