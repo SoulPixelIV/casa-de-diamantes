@@ -59,6 +59,7 @@ if (buffTimer < 0) {
 	buffed = false;
 	damage = damageSave;
 	randBuffDelay = randBuffDelaySave;
+	hp = hpSave / 2;
 	
 	buffTimer = buffTimerSave;
 }
