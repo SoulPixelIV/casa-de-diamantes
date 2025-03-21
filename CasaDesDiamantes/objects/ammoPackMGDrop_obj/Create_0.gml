@@ -7,6 +7,6 @@ dir = 0;
 movTimer = 200;
 movTimerSave = movTimer;
 
-horspeed = random_range(-1.1, 1.1);
+horspeed = choose(random_range(-2, -4), random_range(2, 4));
 verspeed = random_range(-1, -3.9);
 gravityStrength = -0.12;

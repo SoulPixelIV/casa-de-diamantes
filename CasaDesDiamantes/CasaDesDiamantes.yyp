@@ -2061,6 +2061,7 @@
     {"id":{"name":"bulletSniperSalveSpawner_obj","path":"objects/bulletSniperSalveSpawner_obj/bulletSniperSalveSpawner_obj.yy",},},
     {"id":{"name":"Level13_Level14_teleporter","path":"objects/Level13_Level14_teleporter/Level13_Level14_teleporter.yy",},},
     {"id":{"name":"voidMonsterPos1_obj","path":"objects/voidMonsterPos1_obj/voidMonsterPos1_obj.yy",},},
+    {"id":{"name":"flamethrowerHitbox_spr","path":"sprites/flamethrowerHitbox_spr/flamethrowerHitbox_spr.yy",},},
     {"id":{"name":"projection_spr","path":"sprites/projection_spr/projection_spr.yy",},},
     {"id":{"name":"neuralBackgroundLayer3_spr","path":"sprites/neuralBackgroundLayer3_spr/neuralBackgroundLayer3_spr.yy",},},
     {"id":{"name":"flowerzombieSpawnEgg_obj","path":"objects/flowerzombieSpawnEgg_obj/flowerzombieSpawnEgg_obj.yy",},},

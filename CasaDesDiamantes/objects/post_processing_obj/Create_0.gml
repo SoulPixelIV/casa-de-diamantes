@@ -73,7 +73,7 @@ var act4Effects = [
 ];
 act4_profile = new PPFX_Profile("Main", act4Effects);
 var act5Effects = [
-	new FX_Bloom(true, 4, 0.5, 1, c_white, 0.3, true, undefined, 0.8, 1, true),
+	new FX_Bloom(true, 4, 0.5, 0.95, c_white, 0.3, true, undefined, 0.8, 1, true),
 	new FX_SunShafts(true, [0.5, 0.5], 0.4, 0.22, 1.08, 1.6, 0.4, true, 0.7, 0.05, 0.15),
 	new FX_ChromaticAberration(true, 0),
 ];

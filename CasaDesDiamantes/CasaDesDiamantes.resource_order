@@ -1835,6 +1835,7 @@
     {"name":"bulletSniperSalveSpawner_obj","order":15,"path":"objects/bulletSniperSalveSpawner_obj/bulletSniperSalveSpawner_obj.yy",},
     {"name":"Level13_Level14_teleporter","order":49,"path":"objects/Level13_Level14_teleporter/Level13_Level14_teleporter.yy",},
     {"name":"voidMonsterPos1_obj","order":152,"path":"objects/voidMonsterPos1_obj/voidMonsterPos1_obj.yy",},
+    {"name":"flamethrowerHitbox_spr","order":38,"path":"sprites/flamethrowerHitbox_spr/flamethrowerHitbox_spr.yy",},
     {"name":"projection_spr","order":247,"path":"sprites/projection_spr/projection_spr.yy",},
     {"name":"neuralBackgroundLayer3_spr","order":3,"path":"sprites/neuralBackgroundLayer3_spr/neuralBackgroundLayer3_spr.yy",},
     {"name":"flowerzombieSpawnEgg_obj","order":105,"path":"objects/flowerzombieSpawnEgg_obj/flowerzombieSpawnEgg_obj.yy",},

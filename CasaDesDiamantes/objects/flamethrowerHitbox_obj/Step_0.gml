@@ -9,3 +9,6 @@ if (dealtDamage = true) {
 		damageDelay = damageDelaySave;
 	}
 }
+
+part_emitter_region(global.partSystem, partEmitterFlamethrower, x, x, y, y, ps_shape_ellipse, ps_distr_invgaussian);
+part_emitter_stream(global.partSystem, partEmitterFlamethrower, global.flamethrowerSparkPart, 19);

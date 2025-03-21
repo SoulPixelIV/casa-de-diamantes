@@ -1217,10 +1217,10 @@ if (shootingAllowed && !global.pause) {
 		//Particle System
 		partX = playerBulletLine_obj.x + lengthdir_x(24, dirCursor);
 		partY = playerBulletLine_obj.y + lengthdir_y(24, dirCursor);
-		partX2 = playerBulletLine_obj.x + lengthdir_x(86, dirCursor);
-		partY2 = playerBulletLine_obj.y + lengthdir_y(86, dirCursor);
+		partX2 = playerBulletLine_obj.x + lengthdir_x(18, dirCursor);
+		partY2 = playerBulletLine_obj.y + lengthdir_y(18, dirCursor);
 			
-		part_emitter_region(global.partSystem, partEmitter, partX, partX, partY, partY, ps_shape_ellipse, ps_distr_invgaussian);
+		part_emitter_region(global.partSystem, partEmitterPlayer, partX, partX, partY, partY, ps_shape_ellipse, ps_distr_invgaussian);
 
 		//Flamethrower Load
 		if (global.silencedMPUpgrade2 && global.currentWeapon == pickedWeapon.silencedMP && global.silencedMPAmmo != 0) {
@@ -1249,22 +1249,22 @@ if (shootingAllowed && !global.pause) {
 			if (!flameBurstOn) {
 				instance_create_layer(partX2, partY2, "Instances", flamethrowerHitbox_obj);
 				flameSound = audio_play_sound(flamethrower_snd, 1, true);
-				partEmitter = part_emitter_create(global.partSystem);
-				part_emitter_stream(global.partSystem, partEmitter, global.flamethrowerSparkPart, 19);
+				partEmitterPlayer = part_emitter_create(global.partSystem);
+				//part_emitter_stream(global.partSystem, partEmitterPlayer, global.flamethrowerSparkPart, 19);
 				flameBurstOn = true;
 			}
 		} else {
 			if (instance_exists(flamethrowerHitbox_obj)) {
 				instance_destroy(flamethrowerHitbox_obj);
 			}
-			part_emitter_destroy(global.partSystem, partEmitter);
+			part_emitter_destroy(global.partSystem, partEmitterPlayer);
 			audio_stop_sound(flameSound)
 			flameBurstOn = false;
 		}
 		
 		if (flamethrowerTimer < 0 || global.silencedMPAmmo == 0 || global.currentWeapon != pickedWeapon.silencedMP) {
 			if (shootingAllowed && !global.pause) {
-				part_emitter_destroy(global.partSystem, partEmitter);
+				part_emitter_destroy(global.partSystem, partEmitterPlayer);
 				flamethrowerOn = false;
 				flamethrowerLoad = 0;
 				flamethrowerTimer = flamethrowerTimerSave;

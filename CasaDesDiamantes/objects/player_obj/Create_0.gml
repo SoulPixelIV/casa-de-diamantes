@@ -327,4 +327,4 @@ gravityStrength = 0;
 dashDelay = 0;
 
 //Particle System
-partEmitter = part_emitter_create(global.partSystem);
+partEmitterPlayer = part_emitter_create(global.partSystem);

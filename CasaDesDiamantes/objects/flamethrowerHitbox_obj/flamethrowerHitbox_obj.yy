@@ -6,6 +6,7 @@
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":{"name":"enemy_obj","path":"objects/enemy_obj/enemy_obj.yy",},"eventNum":0,"eventType":4,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":12,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
@@ -30,9 +31,9 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "redcubex16_spr",
-    "path": "sprites/redcubex16_spr/redcubex16_spr.yy",
+    "name": "flamethrowerHitbox_spr",
+    "path": "sprites/flamethrowerHitbox_spr/flamethrowerHitbox_spr.yy",
   },
   "spriteMaskId": null,
-  "visible": false,
+  "visible": true,
 }

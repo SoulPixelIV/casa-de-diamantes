@@ -11,5 +11,8 @@ damageDelaySave = damageDelay;
 colliding = false;
 hp = 0
 
-image_xscale = 12;
-image_yscale = 3;
+//image_xscale = 12;
+//image_yscale = 3;
+
+//Particle System
+partEmitterFlamethrower = part_emitter_create(global.partSystem);
