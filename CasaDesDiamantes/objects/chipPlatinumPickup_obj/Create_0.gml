@@ -5,7 +5,7 @@ follow = false;
 spawnDelay = 156;
 alarm[0] = spawnDelay;
 
-horspeed = choose(random_range(-1.3, -1.8), random_range(1.3, 1.8));
+horspeed = choose(random_range(-1.3, -1.5), random_range(1.3, 1.5));
 verspeed = random_range(-1, -3.9);
 gravityStrength = -0.34;
 despawnTimer = 3000;
