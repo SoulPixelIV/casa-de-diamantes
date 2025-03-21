@@ -2,7 +2,7 @@ image_xscale = 0.75;
 image_yscale = 0.75;
 
 follow = false;
-horspeed = random_range(-1.1, 1.1);
+horspeed = choose(random_range(-1.3, -1.8), random_range(1.3, 1.8));
 verspeed = random_range(-1, -3.9);
 gravityStrength = -0.12;
 despawnTimer = 3000;

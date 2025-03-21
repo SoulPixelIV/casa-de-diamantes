@@ -1249,7 +1249,7 @@ if (shootingAllowed && !global.pause) {
 			if (!flameBurstOn) {
 				instance_create_layer(partX2, partY2, "Instances", flamethrowerHitbox_obj);
 				flameSound = audio_play_sound(flamethrower_snd, 1, true);
-				partEmitterPlayer = part_emitter_create(global.partSystem);
+				//partEmitterPlayer = part_emitter_create(global.partSystem);
 				//part_emitter_stream(global.partSystem, partEmitterPlayer, global.flamethrowerSparkPart, 19);
 				flameBurstOn = true;
 			}
@@ -1257,7 +1257,7 @@ if (shootingAllowed && !global.pause) {
 			if (instance_exists(flamethrowerHitbox_obj)) {
 				instance_destroy(flamethrowerHitbox_obj);
 			}
-			part_emitter_destroy(global.partSystem, partEmitterPlayer);
+			//part_emitter_destroy(global.partSystem, partEmitterPlayer);
 			audio_stop_sound(flameSound)
 			flameBurstOn = false;
 		}

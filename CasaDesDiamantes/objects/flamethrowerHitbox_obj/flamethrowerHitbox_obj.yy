@@ -35,5 +35,5 @@
     "path": "sprites/flamethrowerHitbox_spr/flamethrowerHitbox_spr.yy",
   },
   "spriteMaskId": null,
-  "visible": true,
+  "visible": false,
 }
