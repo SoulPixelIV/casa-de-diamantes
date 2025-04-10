@@ -37,8 +37,10 @@ nuclidesL3 = nuclidesL3_msc;
 feastL1 = feastL1_msc;
 feastL2 = feastL2_msc;
 
-sliceCom = sliceCom_msc;
-sliceExp = sliceExp_msc;
+sliceL1 = sliceL1_msc;
+sliceL2 = sliceL2_msc;
+sliceL3 = sliceL3_msc;
+sliceL4 = sliceL4_msc;
 
 // Low-pass route
 usedFilter = false;

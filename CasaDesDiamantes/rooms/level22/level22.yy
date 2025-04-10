@@ -88,7 +88,6 @@
     {"name":"inst_DC68042","path":"rooms/level22/level22.yy",},
     {"name":"inst_130B5268","path":"rooms/level22/level22.yy",},
     {"name":"inst_332D3508","path":"rooms/level22/level22.yy",},
-    {"name":"inst_3F585E97","path":"rooms/level22/level22.yy",},
     {"name":"inst_D1522C3","path":"rooms/level22/level22.yy",},
     {"name":"inst_6AF831E2","path":"rooms/level22/level22.yy",},
     {"name":"inst_60651F80","path":"rooms/level22/level22.yy",},
@@ -316,11 +315,22 @@
     {"name":"inst_6A67F59A","path":"rooms/level22/level22.yy",},
     {"name":"inst_9C912C0","path":"rooms/level22/level22.yy",},
     {"name":"inst_2D1D8532","path":"rooms/level22/level22.yy",},
+    {"name":"inst_DD8ABA1","path":"rooms/level22/level22.yy",},
+    {"name":"inst_306D3769","path":"rooms/level22/level22.yy",},
+    {"name":"inst_251F51D4","path":"rooms/level22/level22.yy",},
+    {"name":"inst_221F5E08","path":"rooms/level22/level22.yy",},
+    {"name":"inst_3E4B12C1","path":"rooms/level22/level22.yy",},
+    {"name":"inst_5EF13422","path":"rooms/level22/level22.yy",},
   ],
   "isDnd": false,
   "layers": [
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Music","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_3F585E97","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"musicBoxBattleBig_obj","path":"objects/musicBoxBattleBig_obj/musicBoxBattleBig_obj.yy",},"properties":[],"rotation":0.0,"scaleX":72.0,"scaleY":47.5,"x":704.0,"y":4064.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_DD8ABA1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"musicBoxAmbience_obj","path":"objects/musicBoxAmbience_obj/musicBoxAmbience_obj.yy",},"properties":[],"rotation":0.0,"scaleX":34.0,"scaleY":20.734375,"x":2080.0,"y":5521.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_306D3769","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"musicBoxBattle_obj","path":"objects/musicBoxBattle_obj/musicBoxBattle_obj.yy",},"properties":[],"rotation":0.0,"scaleX":35.96875,"scaleY":2.984375,"x":2042.0,"y":5297.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_251F51D4","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"musicBoxAmbience_obj","path":"objects/musicBoxAmbience_obj/musicBoxAmbience_obj.yy",},"properties":[],"rotation":0.0,"scaleX":23.34375,"scaleY":2.328125,"x":2888.0,"y":5131.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_221F5E08","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"musicBoxBattleBig_obj","path":"objects/musicBoxBattleBig_obj/musicBoxBattleBig_obj.yy",},"properties":[],"rotation":0.0,"scaleX":35.75,"scaleY":2.953125,"x":2064.0,"y":4907.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_3E4B12C1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"musicBoxBattle_obj","path":"objects/musicBoxBattle_obj/musicBoxBattle_obj.yy",},"properties":[],"rotation":0.0,"scaleX":20.140625,"scaleY":4.328125,"x":2103.0,"y":4598.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_5EF13422","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"musicBoxAmbience2_obj","path":"objects/musicBoxAmbience2_obj/musicBoxAmbience2_obj.yy",},"properties":[],"rotation":0.0,"scaleX":22.734375,"scaleY":14.40625,"x":2269.0,"y":3665.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":false,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Camera","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_339DA1F3_1_1_1_1_1_2_2_2_1_1_1_1_1_1_1_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"camera_obj","path":"objects/camera_obj/camera_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":64.0,"y":32.0,},
@@ -492,7 +502,7 @@
             {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_C112630_1_1_1_1_1_2_2_2_1_1_1_1_1_1_1_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"fakeTileDisable_obj","path":"objects/fakeTileDisable_obj/fakeTileDisable_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":0.0,"y":32.0,},
           ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
         {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"FakeVoidBackground","depth":1100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":250,"SerialiseWidth":219,"TileCompressedData":[
--20586,0,-14545,-2147483648,-3,1,2,8,20,-214,-2147483648,-3,9,2,4,24,-214,-2147483648,-3,9,2,4,24,-214,-2147483648,-3,2,2,5,24,-214,-2147483648,-4,21,-18739,-2147483648,],"TileDataFormat":1,},"tilesetId":{"name":"voidBackground","path":"tilesets/voidBackground/voidBackground.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
+-20586,0,-14545,-2147483648,-3,1,2,8,20,-214,-2147483648,-3,9,2,4,24,-214,-2147483648,-3,9,2,4,24,-214,-2147483648,-3,2,2,5,24,-214,-2147483648,-4,21,1,28,-18738,-2147483648,],"TileDataFormat":1,},"tilesetId":{"name":"voidBackground","path":"tilesets/voidBackground/voidBackground.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
         {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"FakeTilesOff","depth":1200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
             {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_1239231A_1_1_1_1_1_2_2_2_1_1_1_1_1_1_1_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"fakeTileEnable_obj","path":"objects/fakeTileEnable_obj/fakeTileEnable_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":0.0,"y":0.0,},
           ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},

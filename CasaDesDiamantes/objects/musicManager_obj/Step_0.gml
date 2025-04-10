@@ -75,11 +75,17 @@ if (room == credits) {
 			audio_stop_sound(feastL2_msc);
 		}
 		
-		if (audio_is_playing(sliceCom_msc)) {
-			audio_stop_sound(sliceCom_msc);
+		if (audio_is_playing(sliceL1_msc)) {
+			audio_stop_sound(sliceL1_msc);
 		}
-		if (audio_is_playing(sliceExp_msc)) {
-			audio_stop_sound(sliceExp_msc);
+		if (audio_is_playing(sliceL2_msc)) {
+			audio_stop_sound(sliceL2_msc);
+		}
+		if (audio_is_playing(sliceL3_msc)) {
+			audio_stop_sound(sliceL3_msc);
+		}
+		if (audio_is_playing(sliceL4_msc)) {
+			audio_stop_sound(sliceL4_msc);
 		}
 
 	}
@@ -147,11 +153,17 @@ if (room == demoend) {
 			audio_stop_sound(feastL2_msc);
 		}
 		
-		if (audio_is_playing(sliceCom_msc)) {
-			audio_stop_sound(sliceCom_msc);
+		if (audio_is_playing(sliceL1_msc)) {
+			audio_stop_sound(sliceL1_msc);
 		}
-		if (audio_is_playing(sliceExp_msc)) {
-			audio_stop_sound(sliceExp_msc);
+		if (audio_is_playing(sliceL2_msc)) {
+			audio_stop_sound(sliceL2_msc);
+		}
+		if (audio_is_playing(sliceL3_msc)) {
+			audio_stop_sound(sliceL3_msc);
+		}
+		if (audio_is_playing(sliceL4_msc)) {
+			audio_stop_sound(sliceL4_msc);
 		}
 
 	}
@@ -219,11 +231,17 @@ if (room == level_Casino || room == mainmenu || room == levelSelect || room == s
 			audio_stop_sound(feastL2_msc);
 		}
 		
-		if (audio_is_playing(sliceCom_msc)) {
-			audio_stop_sound(sliceCom_msc);
+		if (audio_is_playing(sliceL1_msc)) {
+			audio_stop_sound(sliceL1_msc);
 		}
-		if (audio_is_playing(sliceExp_msc)) {
-			audio_stop_sound(sliceExp_msc);
+		if (audio_is_playing(sliceL2_msc)) {
+			audio_stop_sound(sliceL2_msc);
+		}
+		if (audio_is_playing(sliceL3_msc)) {
+			audio_stop_sound(sliceL3_msc);
+		}
+		if (audio_is_playing(sliceL4_msc)) {
+			audio_stop_sound(sliceL4_msc);
 		}
 	}
 } else {
@@ -293,11 +311,17 @@ if (room == blackjackTable || room == level_CasinoRoof) {
 			audio_stop_sound(feastL2_msc);
 		}
 		
-		if (audio_is_playing(sliceCom_msc)) {
-			audio_stop_sound(sliceCom_msc);
+		if (audio_is_playing(sliceL1_msc)) {
+			audio_stop_sound(sliceL1_msc);
 		}
-		if (audio_is_playing(sliceExp_msc)) {
-			audio_stop_sound(sliceExp_msc);
+		if (audio_is_playing(sliceL2_msc)) {
+			audio_stop_sound(sliceL2_msc);
+		}
+		if (audio_is_playing(sliceL3_msc)) {
+			audio_stop_sound(sliceL3_msc);
+		}
+		if (audio_is_playing(sliceL4_msc)) {
+			audio_stop_sound(sliceL4_msc);
 		}
 } else {
 	if (audio_is_playing(casinoThemeLowPass)) {
@@ -685,8 +709,10 @@ if (room == level20 || room == level21 || room == level22 || room == level23) {
 }
 
 if (act5MusicOn && !act5MusicStarted) {
-	sliceDiceCom = audio_play_sound_on(musicEmitter, sliceCom, 1, 1);
-	sliceDiceExp = audio_play_sound_on(musicEmitter, sliceExp, 1, 1);
+	sliceDiceL1 = audio_play_sound_on(musicEmitter, sliceL1, 1, 1);
+	sliceDiceL2 = audio_play_sound_on(musicEmitter, sliceL2, 1, 1);
+	sliceDiceL3 = audio_play_sound_on(musicEmitter, sliceL3, 1, 1);
+	sliceDiceL4 = audio_play_sound_on(musicEmitter, sliceL4, 1, 1);
 	
 	if (audio_is_playing(dressedToKillSTEM_msc)) {
 		audio_stop_sound(dressedToKillSTEM_msc);
@@ -701,8 +727,10 @@ if (act5MusicOn && !act5MusicStarted) {
 		audio_stop_sound(dressedToKillL1_msc);
 	}
 	
-	audio_sound_gain(sliceDiceCom, 0, 0);
-	audio_sound_gain(sliceDiceExp, 0, 0);
+	audio_sound_gain(sliceDiceL1, 0, 0);
+	audio_sound_gain(sliceDiceL2, 0, 0);
+	audio_sound_gain(sliceDiceL3, 0, 0);
+	audio_sound_gain(sliceDiceL4, 0, 0);
 	
 	act5MusicStarted = true;
 }
@@ -711,22 +739,46 @@ if (act5MusicOn && act5MusicStarted) {
 	with (player_obj) {
 		if (place_meeting(x, y, musicBoxSilence_obj)) {
 			with (musicManager_obj) {
-				audio_sound_gain(sliceDiceCom, 0, 300);
-				audio_sound_gain(sliceDiceExp, 0, 300);
-			}
-		} else if (place_meeting(x, y, musicBoxBattle_obj)) {
-			with (musicManager_obj) {
-				if (audio_sound_get_gain(sliceDiceExp) == 0) {
-					audio_sound_gain(sliceDiceExp, 1, 300);
-				}
-				audio_sound_gain(sliceDiceCom, 0, 300);
+				audio_sound_gain(sliceDiceL1, 0, 300);
+				audio_sound_gain(sliceDiceL2, 0, 300);
+				audio_sound_gain(sliceDiceL3, 0, 300);
+				audio_sound_gain(sliceDiceL4, 0, 300);
 			}
 		} else if (place_meeting(x, y, musicBoxBattleBig_obj)) {
 			with (musicManager_obj) {
-				if (audio_sound_get_gain(sliceDiceCom) == 0) {
-					audio_sound_gain(sliceDiceCom, 1, 300);
+				if (audio_sound_get_gain(sliceDiceL1) == 0) {
+					audio_sound_gain(sliceDiceL1, 1, 300);
 				}
-				audio_sound_gain(sliceDiceExp, 0, 300);
+				audio_sound_gain(sliceDiceL2, 0, 300);
+				audio_sound_gain(sliceDiceL3, 0, 300);
+				audio_sound_gain(sliceDiceL4, 0, 300);
+			}
+		} else if (place_meeting(x, y, musicBoxBattle_obj)) {
+			with (musicManager_obj) {
+				if (audio_sound_get_gain(sliceDiceL2) == 0) {
+					audio_sound_gain(sliceDiceL2, 1, 300);
+				}
+				audio_sound_gain(sliceDiceL1, 0, 300);
+				audio_sound_gain(sliceDiceL3, 0, 300);
+				audio_sound_gain(sliceDiceL4, 0, 300);
+			}
+		} else if (place_meeting(x, y, musicBoxAmbience_obj)) {
+			with (musicManager_obj) {
+				if (audio_sound_get_gain(sliceDiceL3) == 0) {
+					audio_sound_gain(sliceDiceL3, 1, 300);
+				}
+				audio_sound_gain(sliceDiceL1, 0, 300);
+				audio_sound_gain(sliceDiceL2, 0, 300);
+				audio_sound_gain(sliceDiceL4, 0, 300);
+			}
+		} else if (place_meeting(x, y, musicBoxAmbience2_obj)) {
+			with (musicManager_obj) {
+				if (audio_sound_get_gain(sliceDiceL4) == 0) {
+					audio_sound_gain(sliceDiceL4, 1, 300);
+				}
+				audio_sound_gain(sliceDiceL1, 0, 300);
+				audio_sound_gain(sliceDiceL2, 0, 300);
+				audio_sound_gain(sliceDiceL3, 0, 300);
 			}
 		}
 	}
