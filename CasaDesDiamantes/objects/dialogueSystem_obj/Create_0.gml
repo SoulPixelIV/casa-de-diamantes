@@ -36,6 +36,8 @@ scene32 = false;
 scene33 = false;
 scene34 = false;
 scene35 = false;
+scene36 = false;
+scene37 = false;
 
 //Dialogue Markers
 scene1Low = 0;
@@ -108,6 +110,10 @@ scene34Low = 268;
 scene34High = 271;
 scene35Low = 272;
 scene35High = 275;
+scene36Low = 276;
+scene36High = 280;
+scene37Low = 281;
+scene37High = 291;
 
 //Dialogue Text
 //!!!ALWAYS 1 EMPTY SPACE & 1 FREE SPACE BETWEEN SCENES
@@ -608,3 +614,31 @@ dialogue[272] = "%Steph! I have gathered all the information we need.";
 dialogue[273] = "%Head for the exit on the top floor!";
 dialogue[274] = "                                                                                                             ";
 dialogue[275] = "";
+
+//Scene 36 VIP Crazy
+startScene36BlackTimer = false;
+scene36BlackTimer = 600;
+startScene36Timer = false;
+
+dialogue[276] = "^T..Th...The";
+dialogue[277] = "^ThX End is nXar";
+dialogue[278] = "#...";
+dialogue[279] = "                                                                                                             ";
+dialogue[280] = "";
+
+//Scene 37 Komo Scared
+startScene37BlackTimer = false;
+scene37BlackTimer = 600;
+startScene37Timer = false;
+
+dialogue[281] = ">I told you something was up!";
+dialogue[282] = "#What happened?";
+dialogue[283] = ">The manager, Steph...He is gone.";
+dialogue[284] = ">He was talking gibberish and now his office is empty...";
+dialogue[285] = "#I will talk to the others about this.";
+dialogue[286] = ">Steph.";
+dialogue[287] = ">You promised me that everything is gonna be fine...";
+dialogue[288] = "#EverXthiXg iX gonna be fiXe";
+dialogue[289] = ">...steph?";
+dialogue[290] = "                                                                                                             ";
+dialogue[291] = "";

@@ -313,6 +313,9 @@
     {"name":"inst_B01F230","path":"rooms/level22/level22.yy",},
     {"name":"inst_2071BDEA","path":"rooms/level22/level22.yy",},
     {"name":"inst_27448B8","path":"rooms/level22/level22.yy",},
+    {"name":"inst_6A67F59A","path":"rooms/level22/level22.yy",},
+    {"name":"inst_9C912C0","path":"rooms/level22/level22.yy",},
+    {"name":"inst_2D1D8532","path":"rooms/level22/level22.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -622,6 +625,9 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_B01F230","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"spikes_obj","path":"objects/spikes_obj/spikes_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":2177.0,"y":5102.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_2071BDEA","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"spikes_obj","path":"objects/spikes_obj/spikes_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":2113.0,"y":5102.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_27448B8","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"antiMaterialRifle_obj","path":"objects/antiMaterialRifle_obj/antiMaterialRifle_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":3065.0,"y":4850.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_6A67F59A","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"keyBlue_obj","path":"objects/keyBlue_obj/keyBlue_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":2656.0,"y":4512.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_9C912C0","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"blackjackChip_obj","path":"objects/blackjackChip_obj/blackjackChip_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":2624.0,"y":4512.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_2D1D8532","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"blackjackChip_obj","path":"objects/blackjackChip_obj/blackjackChip_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":2592.0,"y":4512.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"MidgroundObjects","depth":1500,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Tiles","depth":1600,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":250,"SerialiseWidth":219,"TileCompressedData":[

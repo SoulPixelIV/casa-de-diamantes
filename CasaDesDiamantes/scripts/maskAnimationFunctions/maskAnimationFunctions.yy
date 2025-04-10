@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "testAnimation",
-    "path": "folders/Objects/Sprites/testAnimation.yy",
+    "path": "folders/Sprites/testAnimation.yy",
   },
 }

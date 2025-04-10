@@ -430,6 +430,7 @@
     {"name":"inst_18C58748","path":"rooms/level19/level19.yy",},
     {"name":"inst_78C2BA3","path":"rooms/level19/level19.yy",},
     {"name":"inst_485FB683","path":"rooms/level19/level19.yy",},
+    {"name":"inst_6E4BC0D0","path":"rooms/level19/level19.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -477,6 +478,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_78C2BA3","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"cupyDialogueTrigger_obj","path":"objects/cupyDialogueTrigger_obj/cupyDialogueTrigger_obj.yy",},"properties":[
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"cupyDialogueTrigger_obj","path":"objects/cupyDialogueTrigger_obj/cupyDialogueTrigger_obj.yy",},"propertyId":{"name":"dialogue","path":"objects/cupyDialogueTrigger_obj/cupyDialogueTrigger_obj.yy",},"value":"15",},
           ],"rotation":0.0,"scaleX":4.6875,"scaleY":4.015625,"x":1792.0,"y":5021.5,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_6E4BC0D0","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"teleportBlimpPowerplantToCasino_obj","path":"objects/teleportBlimpPowerplantToCasino_obj/teleportBlimpPowerplantToCasino_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":4657.0,"y":1644.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMREffectLayer","resourceVersion":"1.0","name":"RedFilter","depth":400,"effectEnabled":true,"effectType":"_filter_colourise","gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[
         {"name":"g_Intensity","type":0,"value":"0.3",},

@@ -150,6 +150,7 @@ global.komoBasementDialogue = false;
 global.tristramDialogue = false;
 global.komoGamblingDialogueDone = false;
 global.tristramCindyQuestioningDialogueDone = false;
+global.komoScaredDialogueDone = false;
 global.cupyDialogue1Done = false;
 global.cupyDialogue2Done = false;
 global.cupyDialogue3Done = false;

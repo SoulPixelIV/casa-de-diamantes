@@ -26,7 +26,7 @@
   "origin": 0,
   "parent": {
     "name": "LUT",
-    "path": "folders/Objects/Sprites/Debug/Lighting/LUT.yy",
+    "path": "folders/Sprites/Debug/Lighting/LUT.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

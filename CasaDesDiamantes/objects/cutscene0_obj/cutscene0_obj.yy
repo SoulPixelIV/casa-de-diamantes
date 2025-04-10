@@ -10,7 +10,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Cutscenes",
-    "path": "folders/Objects/Sprites/Cutscenes.yy",
+    "path": "folders/Sprites/Cutscenes.yy",
   },
   "parentObjectId": null,
   "persistent": false,

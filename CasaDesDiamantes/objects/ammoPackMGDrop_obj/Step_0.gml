@@ -36,7 +36,9 @@ if (follow) {
 } else {
 	if (horspeed > 0)
 	{
-		horspeed -= 0.002 * global.dt / 3;
+		if (!place_meeting(x, y, slotblock_obj) && !place_meeting(x, y, slotblockBomb_obj) && !place_meeting(x, y, slotblockQuestion_obj) && !place_meeting(x, y, slotblockMoving_obj)) {
+			horspeed -= 0.002 * global.dt / 3;
+		}
 
 		if (horspeed < 0.3)
 		{
@@ -45,8 +47,9 @@ if (follow) {
 	}
 	else
 	{
-
-		horspeed += 0.002 * global.dt / 3;
+		if (!place_meeting(x, y, slotblock_obj) && !place_meeting(x, y, slotblockBomb_obj) && !place_meeting(x, y, slotblockQuestion_obj) && !place_meeting(x, y, slotblockMoving_obj)) {
+			horspeed += 0.002 * global.dt / 3;
+		}
 
 		if (horspeed > -0.3)
 		{

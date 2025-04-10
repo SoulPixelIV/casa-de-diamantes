@@ -26,7 +26,7 @@
   "origin": 3,
   "parent": {
     "name": "Gates",
-    "path": "folders/Objects/Sprites/Gates.yy",
+    "path": "folders/Sprites/Gates.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

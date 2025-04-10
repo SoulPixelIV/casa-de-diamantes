@@ -26,7 +26,7 @@
   "origin": 0,
   "parent": {
     "name": "Graphics",
-    "path": "folders/Objects/Sprites/Graphics.yy",
+    "path": "folders/Sprites/Graphics.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

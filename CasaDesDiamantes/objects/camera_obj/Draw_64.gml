@@ -210,6 +210,10 @@ if (string_char_at(dialogue[dialogueLine], 1) == "^")
 		character = vip3_obj;
 		follow = vip3_obj;
 	}
+	if (instance_exists(vip4_obj)) {
+		character = vip4_obj;
+		follow = vip4_obj;
+	}
 }
 if (string_char_at(dialogue[dialogueLine], 1) == "<")
 {
@@ -264,6 +268,10 @@ if (string_char_at(dialogue[dialogueLine], 1) == ">")
 	if (instance_exists(komo5_obj)) {
 		character = komo5_obj;
 		follow = komo5_obj;
+	}
+	if (instance_exists(komo6_obj)) {
+		character = komo6_obj;
+		follow = komo6_obj;
 	}
 }
 if (string_char_at(dialogue[dialogueLine], 1) == "_")
@@ -333,7 +341,7 @@ if (drawText && !showWindowMenu)
 			draw_sprite_ext(dialogBorder_spr, 0, (character.x - x) + global.xScreenSize / 2, (character.y - y) - 42 + global.yScreenSize / 2, 2 + string_length(dialogueStripped) / 3, 1.5, 0, make_color_rgb(102, 181, 181), 1);
 		} else if (character == casinobunny_obj) {
 			draw_sprite_ext(dialogBorder_spr, 0, (character.x - x) + global.xScreenSize / 2, (character.y - y) - 42 + global.yScreenSize / 2, 2 + string_length(dialogueStripped) / 3, 1.5, 0, make_color_rgb(255, 215, 215), 1);
-		} else if (character == vip_obj || character == vip2_obj || character == vip3_obj || character == customStoryTarget_obj) {
+		} else if (character == vip_obj || character == vip2_obj || character == vip3_obj || character == vip4_obj || character == customStoryTarget_obj) {
 			draw_sprite_ext(dialogBorder_spr, 0, (character.x - x) + global.xScreenSize / 2, (character.y - y) - 42 + global.yScreenSize / 2, 2 + string_length(dialogueStripped) / 3, 1.5, 0, make_color_rgb(134, 105, 175), 1);
 		} else if (character == casinoLantern_obj) {
 			if (instance_exists(komo_obj)) {
@@ -353,7 +361,7 @@ if (drawText && !showWindowMenu)
 			draw_sprite_ext(dialogBorder_spr, 0, (tristram3_obj.x - x) + global.xScreenSize / 2, (tristram3_obj.y - y) - 42 + global.yScreenSize / 2, 2 + string_length(dialogueStripped) / 3, 1.5, 0, make_color_rgb(91, 204, 151), 1);
 		} else if (character == tristram_obj || character == tristram2_obj || character == tristram3_obj || character == tristram4_obj || character == tristram5_obj) {
 			draw_sprite_ext(dialogBorder_spr, 0, (character.x - x) + global.xScreenSize / 2, (character.y - y) - 42 + global.yScreenSize / 2, 2 + string_length(dialogueStripped) / 3, 1.5, 0, make_color_rgb(198, 204, 99), 1);
-		} else if (character == komo_obj || character == komo2_obj || character == komo3_obj || character == komo4_obj || character == komo5_obj) {
+		} else if (character == komo_obj || character == komo2_obj || character == komo3_obj || character == komo4_obj || character == komo5_obj || character == komo6_obj) {
 			draw_sprite_ext(dialogBorder_spr, 0, (character.x - x) + global.xScreenSize / 2, (character.y - y) - 42 + global.yScreenSize / 2, 2 + string_length(dialogueStripped) / 3, 1.5, 0, make_color_rgb(127, 172, 255), 1);
 		}
 	
@@ -1777,6 +1785,9 @@ if (drawElevatorSign) {
 		} else {
 			draw_sprite(elevatorInterestMarker_spr, 0, global.xScreenSize / 2, (global.yScreenSize / 2) + windowMenuOffset);
 		}
+	}
+	if (global.storyAct == 3) {
+		draw_sprite(elevatorInterestMarker_spr, 1, global.xScreenSize / 2, (global.yScreenSize / 2) + windowMenuOffset);
 	}
 	
 	draw_set_font(gothicPixel_fnt);

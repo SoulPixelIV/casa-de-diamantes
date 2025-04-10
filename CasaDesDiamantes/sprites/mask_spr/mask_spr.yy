@@ -26,7 +26,7 @@
   "origin": 0,
   "parent": {
     "name": "testAnimation",
-    "path": "folders/Objects/Sprites/testAnimation.yy",
+    "path": "folders/Sprites/testAnimation.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

@@ -26,7 +26,7 @@
   "origin": 4,
   "parent": {
     "name": "Lighting",
-    "path": "folders/Objects/Sprites/Debug/Lighting.yy",
+    "path": "folders/Sprites/Debug/Lighting.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

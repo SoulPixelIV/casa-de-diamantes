@@ -225,7 +225,6 @@ if (room == level_Casino || room == mainmenu || room == levelSelect || room == s
 		if (audio_is_playing(sliceExp_msc)) {
 			audio_stop_sound(sliceExp_msc);
 		}
-
 	}
 } else {
 	if (audio_is_playing(casinoTheme)) {
@@ -241,6 +240,65 @@ if (room == blackjackTable || room == level_CasinoRoof) {
 	if (audio_is_playing(casinoTheme)) {
 		audio_stop_sound(casinoTheme);
 	}
+	if (audio_is_playing(dressedToKillSTEM_msc)) {
+			audio_stop_sound(dressedToKillSTEM_msc);
+		}
+		if (audio_is_playing(dressedToKillL3_msc)) {
+			audio_stop_sound(dressedToKillL3_msc);
+		}
+		if (audio_is_playing(dressedToKillL2_msc)) {
+			audio_stop_sound(dressedToKillL2_msc);
+		}
+		if (audio_is_playing(dressedToKillL1_msc)) {
+			audio_stop_sound(dressedToKillL1_msc);
+		}
+		
+		if (audio_is_playing(birchL1_msc)) {
+			audio_stop_sound(birchL1_msc);
+		}
+		if (audio_is_playing(birchL2_msc)) {
+			audio_stop_sound(birchL2_msc);
+		}
+		if (audio_is_playing(birchL3_msc)) {
+			audio_stop_sound(birchL3_msc);
+		}
+		
+		if (audio_is_playing(caveAmbience1)) {
+			audio_stop_sound(caveAmbience1);
+		}
+		if (audio_is_playing(caveAmbience2)) {
+			audio_stop_sound(caveAmbience2);
+		}
+		if (audio_is_playing(caveAmbience3)) {
+			audio_stop_sound(caveAmbience3);
+		}
+		if (audio_is_playing(caveAmbience4)) {
+			audio_stop_sound(caveAmbience4);
+		}
+		
+		if (audio_is_playing(nuclidesL1_msc)) {
+			audio_stop_sound(nuclidesL1_msc);
+		}
+		if (audio_is_playing(nuclidesL2_msc)) {
+			audio_stop_sound(nuclidesL2_msc);
+		}
+		if (audio_is_playing(nuclidesL3_msc)) {
+			audio_stop_sound(nuclidesL3_msc);
+		}
+		
+		if (audio_is_playing(feastL1_msc)) {
+			audio_stop_sound(feastL1_msc);
+		}
+		if (audio_is_playing(feastL2_msc)) {
+			audio_stop_sound(feastL2_msc);
+		}
+		
+		if (audio_is_playing(sliceCom_msc)) {
+			audio_stop_sound(sliceCom_msc);
+		}
+		if (audio_is_playing(sliceExp_msc)) {
+			audio_stop_sound(sliceExp_msc);
+		}
 } else {
 	if (audio_is_playing(casinoThemeLowPass)) {
 		audio_stop_sound(casinoThemeLowPass);

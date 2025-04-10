@@ -281,7 +281,9 @@ partX = 0;
 partY = 0;
 partX2 = 0;
 partY2 = 0;
-flameSound = noone;
+flameSound1 = noone;
+flameSound2 = noone;
+flameSound3 = noone;
 
 //Accessories
 theta = 0;

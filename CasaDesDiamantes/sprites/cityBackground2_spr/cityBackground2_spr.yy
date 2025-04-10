@@ -26,7 +26,7 @@
   "origin": 4,
   "parent": {
     "name": "Tilesets",
-    "path": "folders/Objects/Sprites/Tilesets.yy",
+    "path": "folders/Sprites/Tilesets.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

@@ -29,7 +29,7 @@
   "origin": 9,
   "parent": {
     "name": "Decoration",
-    "path": "folders/Objects/Sprites/Decoration.yy",
+    "path": "folders/Sprites/Decoration.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
