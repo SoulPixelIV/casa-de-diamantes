@@ -441,6 +441,8 @@
     {"name":"inst_26E25B17","path":"rooms/level21/level21.yy",},
     {"name":"inst_1BB7A46B","path":"rooms/level21/level21.yy",},
     {"name":"inst_2895A87B","path":"rooms/level21/level21.yy",},
+    {"name":"inst_7DF857B1","path":"rooms/level21/level21.yy",},
+    {"name":"inst_602BB92B","path":"rooms/level21/level21.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -456,7 +458,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_26E25B17","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"musicBoxAmbience_obj","path":"objects/musicBoxAmbience_obj/musicBoxAmbience_obj.yy",},"properties":[],"rotation":0.0,"scaleX":6.46875,"scaleY":15.4375,"x":7978.0,"y":1957.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_1BB7A46B","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"musicBoxAmbience2_obj","path":"objects/musicBoxAmbience2_obj/musicBoxAmbience2_obj.yy",},"properties":[],"rotation":0.0,"scaleX":22.5,"scaleY":4.5,"x":6400.0,"y":1728.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_2895A87B","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"musicBoxBattleBig_obj","path":"objects/musicBoxBattleBig_obj/musicBoxBattleBig_obj.yy",},"properties":[],"rotation":0.0,"scaleX":9.640625,"scaleY":5.53125,"x":7872.0,"y":1583.0,},
-      ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
+      ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":false,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Camera","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_339DA1F3_1_1_1_1_1_2_2_2_1_1_1_1_1_1_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"camera_obj","path":"objects/camera_obj/camera_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":64.0,"y":32.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
@@ -479,6 +481,12 @@
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"battleArena_obj","path":"objects/battleArena_obj/battleArena_obj.yy",},"propertyId":{"name":"arenaIndex","path":"objects/battleArena_obj/battleArena_obj.yy",},"value":"1",},
           ],"rotation":0.0,"scaleX":41.3125,"scaleY":23.1875,"x":8178.5,"y":1763.5,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_306CB119","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"springLadderShortcutPoint_obj","path":"objects/springLadderShortcutPoint_obj/springLadderShortcutPoint_obj.yy",},"properties":[],"rotation":0.0,"scaleX":2.5,"scaleY":1.0,"x":6016.0,"y":2016.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7DF857B1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"cupyDialogueTrigger_obj","path":"objects/cupyDialogueTrigger_obj/cupyDialogueTrigger_obj.yy",},"properties":[
+            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"cupyDialogueTrigger_obj","path":"objects/cupyDialogueTrigger_obj/cupyDialogueTrigger_obj.yy",},"propertyId":{"name":"dialogue","path":"objects/cupyDialogueTrigger_obj/cupyDialogueTrigger_obj.yy",},"value":"16",},
+          ],"rotation":0.0,"scaleX":6.59375,"scaleY":4.84375,"x":5269.0,"y":1941.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_602BB92B","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"cupyDialogueTrigger_obj","path":"objects/cupyDialogueTrigger_obj/cupyDialogueTrigger_obj.yy",},"properties":[
+            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"cupyDialogueTrigger_obj","path":"objects/cupyDialogueTrigger_obj/cupyDialogueTrigger_obj.yy",},"propertyId":{"name":"dialogue","path":"objects/cupyDialogueTrigger_obj/cupyDialogueTrigger_obj.yy",},"value":"17",},
+          ],"rotation":0.0,"scaleX":6.4375,"scaleY":2.734375,"x":8331.0,"y":3035.5,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMREffectLayer","resourceVersion":"1.0","name":"RedFilter","depth":400,"effectEnabled":true,"effectType":"_filter_colourise","gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[
         {"name":"g_Intensity","type":0,"value":"0.3",},

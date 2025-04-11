@@ -2,6 +2,8 @@
 image_speed = 0;
 image_index += (global.dt / 15) * animationSpeed;
 
+target = player_obj;
+
 if (instance_exists(target)) {
 	if (distance_to_point(target.x - 27 * target.image_xscale, target.y - 33) > 16) {
 		move_towards_point(target.x - 27 * target.image_xscale, target.y - 33, movspeed);

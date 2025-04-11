@@ -95,4 +95,34 @@ if (instance_exists(cutieplusSteph_obj)) {
 			dialogueTriggered = true;
 		}
 	}
+	if (dialogue == 16) {
+		if (!global.cupyStratoDialogue1Done && !dialogueTriggered) {
+			dialogueSystem_obj.scene38 = true;
+			dialogueTriggered = true;
+		}
+	}
+	if (dialogue == 17) {
+		if (!global.cupyStratoDialogue2Done && !dialogueTriggered) {
+			dialogueSystem_obj.scene39 = true;
+			dialogueTriggered = true;
+		}
+	}
+	if (dialogue == 18) {
+		if (!global.cupyStratoDialogue3Done && !dialogueTriggered) {
+			dialogueSystem_obj.scene40 = true;
+			dialogueTriggered = true;
+		}
+	}
+	if (dialogue == 19) {
+		if (!global.cupyStratoDialogue4Done && !dialogueTriggered) {
+			dialogueSystem_obj.scene41 = true;
+			dialogueTriggered = true;
+		}
+	}
+	if (dialogue == 20) {
+		if (!global.cupyStratoDialogue5Done && !dialogueTriggered) {
+			dialogueSystem_obj.scene42 = true;
+			dialogueTriggered = true;
+		}
+	}
 }

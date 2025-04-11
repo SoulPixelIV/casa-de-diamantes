@@ -38,6 +38,11 @@ scene34 = false;
 scene35 = false;
 scene36 = false;
 scene37 = false;
+scene38 = false;
+scene39 = false;
+scene40 = false;
+scene41 = false;
+scene42 = false;
 
 //Dialogue Markers
 scene1Low = 0;
@@ -114,6 +119,16 @@ scene36Low = 276;
 scene36High = 280;
 scene37Low = 281;
 scene37High = 291;
+scene38Low = 292;
+scene38High = 297;
+scene39Low = 298;
+scene39High = 301;
+scene40Low = 302;
+scene40High = 305;
+scene41Low = 306;
+scene41High = 309;
+scene42Low = 310;
+scene42High = 313;
 
 //Dialogue Text
 //!!!ALWAYS 1 EMPTY SPACE & 1 FREE SPACE BETWEEN SCENES
@@ -642,3 +657,55 @@ dialogue[288] = "#EverXthiXg iX gonna be fiXe";
 dialogue[289] = ">...steph?";
 dialogue[290] = "                                                                                                             ";
 dialogue[291] = "";
+
+//Scene 38 CuPy Dialogue Strato 1
+startScene38Timer = false;
+scene38Timer = 600;
+scene38TimerSave = scene38Timer;
+
+dialogue[292] = "%Steph, can you hear me?";
+dialogue[293] = "%We are ready to infiltrate the research lab.";
+dialogue[294] = "%WX arX ready to Xnfiltrate the rXsearch lXb.";
+dialogue[295] = "%*static noise*";
+dialogue[296] = "                                                                                                             ";
+dialogue[297] = "";
+
+//Scene 39 CuPy Dialogue Strato 2
+startScene39Timer = false;
+scene39Timer = 600;
+scene39TimerSave = scene39Timer;
+
+dialogue[298] = "%What Xs the purpose of lXfe, Steph?";
+dialogue[299] = "%I don't wXnt to be nutrXtion for a god...";
+dialogue[300] = "                                                                                                             ";
+dialogue[301] = "";
+
+//Scene 40 CuPy Dialogue Strato 3
+startScene40Timer = false;
+scene40Timer = 600;
+scene40TimerSave = scene40Timer;
+
+dialogue[302] = "%I wXll miss our timX together.";
+dialogue[303] = "%We do not dXserve thXs.";
+dialogue[304] = "                                                                                                             ";
+dialogue[305] = "";
+
+//Scene 41 CuPy Dialogue Strato 4
+startScene41Timer = false;
+scene41Timer = 600;
+scene41TimerSave = scene41Timer;
+
+dialogue[306] = "%It Xs time tX comX home, StXph.";
+dialogue[307] = "%YoX cannot OXtrun fatX!";
+dialogue[308] = "                                                                                                             ";
+dialogue[309] = "";
+
+//Scene 42 CuPy Dialogue Strato 5
+startScene42Timer = false;
+scene42Timer = 600;
+scene42TimerSave = scene42Timer;
+
+dialogue[310] = "%LXt us go, mX child.";
+dialogue[311] = "%Your mXssion is nXw over.";
+dialogue[312] = "                                                                                                             ";
+dialogue[313] = "";

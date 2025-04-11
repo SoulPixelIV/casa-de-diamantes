@@ -1392,3 +1392,138 @@ if (startScene37Timer) {
 		save_scr();
 	}
 }
+
+//Scene 38
+if (scene38)
+{
+	startScene38Timer = true;
+	camera_obj.drawDialogueBorder = true;
+	if (!camera_obj.drawText)
+	{
+		for (i = scene38Low; i < scene38High + 1; i++)
+		{
+			camera_obj.dialogue[i] = dialogue[i];
+		}
+		camera_obj.dialogueLine = scene38Low;
+		camera_obj.drawText = true;
+	}
+	scene38 = false;
+}
+
+if (startScene38Timer) {
+	if (camera_obj.dialogueLine >= scene38High - 1) {			
+		startScene38Timer = false;
+		camera_obj.drawText = false;
+		global.cupyStratoDialogue1Done = true;
+		camera_obj.drawDialogueBorder = false;
+		save_scr();
+	}
+}
+
+//Scene 39
+if (scene39)
+{
+	startScene39Timer = true;
+	camera_obj.drawDialogueBorder = true;
+	if (!camera_obj.drawText)
+	{
+		for (i = scene39Low; i < scene39High + 1; i++)
+		{
+			camera_obj.dialogue[i] = dialogue[i];
+		}
+		camera_obj.dialogueLine = scene39Low;
+		camera_obj.drawText = true;
+	}
+	scene39 = false;
+}
+
+if (startScene39Timer) {
+	if (camera_obj.dialogueLine >= scene39High - 1) {			
+		startScene39Timer = false;
+		camera_obj.drawText = false;
+		global.cupyStratoDialogue2Done = true;
+		camera_obj.drawDialogueBorder = false;
+		save_scr();
+	}
+}
+
+//Scene 40
+if (scene40)
+{
+	startScene40Timer = true;
+	camera_obj.drawDialogueBorder = true;
+	if (!camera_obj.drawText)
+	{
+		for (i = scene40Low; i < scene40High + 1; i++)
+		{
+			camera_obj.dialogue[i] = dialogue[i];
+		}
+		camera_obj.dialogueLine = scene40Low;
+		camera_obj.drawText = true;
+	}
+	scene40 = false;
+}
+
+if (startScene40Timer) {
+	if (camera_obj.dialogueLine >= scene40High - 1) {			
+		startScene40Timer = false;
+		camera_obj.drawText = false;
+		global.cupyStratoDialogue3Done = true;
+		camera_obj.drawDialogueBorder = false;
+		save_scr();
+	}
+}
+
+//Scene 41
+if (scene41)
+{
+	startScene41Timer = true;
+	camera_obj.drawDialogueBorder = true;
+	if (!camera_obj.drawText)
+	{
+		for (i = scene41Low; i < scene41High + 1; i++)
+		{
+			camera_obj.dialogue[i] = dialogue[i];
+		}
+		camera_obj.dialogueLine = scene41Low;
+		camera_obj.drawText = true;
+	}
+	scene41 = false;
+}
+
+if (startScene41Timer) {
+	if (camera_obj.dialogueLine >= scene41High - 1) {			
+		startScene41Timer = false;
+		camera_obj.drawText = false;
+		global.cupyStratoDialogue4Done = true;
+		camera_obj.drawDialogueBorder = false;
+		save_scr();
+	}
+}
+
+//Scene 42
+if (scene42)
+{
+	startScene42Timer = true;
+	camera_obj.drawDialogueBorder = true;
+	if (!camera_obj.drawText)
+	{
+		for (i = scene42Low; i < scene42High + 1; i++)
+		{
+			camera_obj.dialogue[i] = dialogue[i];
+		}
+		camera_obj.dialogueLine = scene42Low;
+		camera_obj.drawText = true;
+	}
+	scene42 = false;
+}
+
+if (startScene42Timer) {
+	if (camera_obj.dialogueLine >= scene42High - 1) {			
+		startScene42Timer = false;
+		camera_obj.drawText = false;
+		global.cupyStratoDialogue5Done = true;
+		camera_obj.drawDialogueBorder = false;
+		save_scr();
+	}
+}

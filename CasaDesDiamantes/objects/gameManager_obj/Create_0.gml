@@ -167,6 +167,11 @@ global.cupyDialogue13Done = false;
 global.cupyDialogue14Done = false;
 global.cupyDialogue15Done = false;
 global.cupyDialogue16Done = false;
+global.cupyStratoDialogue1Done = false;
+global.cupyStratoDialogue2Done = false;
+global.cupyStratoDialogue3Done = false;
+global.cupyStratoDialogue4Done = false;
+global.cupyStratoDialogue5Done = false;
 
 global.hat = choose(noone);
 global.top1 = choose(noone);
