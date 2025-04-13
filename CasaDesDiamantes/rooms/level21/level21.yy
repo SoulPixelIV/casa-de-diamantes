@@ -443,6 +443,7 @@
     {"name":"inst_2895A87B","path":"rooms/level21/level21.yy",},
     {"name":"inst_7DF857B1","path":"rooms/level21/level21.yy",},
     {"name":"inst_602BB92B","path":"rooms/level21/level21.yy",},
+    {"name":"inst_4FCE5E4A","path":"rooms/level21/level21.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -487,6 +488,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_602BB92B","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"cupyDialogueTrigger_obj","path":"objects/cupyDialogueTrigger_obj/cupyDialogueTrigger_obj.yy",},"properties":[
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"cupyDialogueTrigger_obj","path":"objects/cupyDialogueTrigger_obj/cupyDialogueTrigger_obj.yy",},"propertyId":{"name":"dialogue","path":"objects/cupyDialogueTrigger_obj/cupyDialogueTrigger_obj.yy",},"value":"17",},
           ],"rotation":0.0,"scaleX":6.4375,"scaleY":2.734375,"x":8331.0,"y":3035.5,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_4FCE5E4A","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"level21_level22_teleporter","path":"objects/level21_level22_teleporter/level21_level22_teleporter.yy",},"properties":[],"rotation":0.0,"scaleX":11.0,"scaleY":21.0,"x":6096.0,"y":1152.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMREffectLayer","resourceVersion":"1.0","name":"RedFilter","depth":400,"effectEnabled":true,"effectType":"_filter_colourise","gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[
         {"name":"g_Intensity","type":0,"value":"0.3",},
