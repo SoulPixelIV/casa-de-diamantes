@@ -43,6 +43,7 @@ if (menu == 0) {
 	draw_text(32, optionsY[1], "[Level 21] Parallel Riding");
 	draw_text(32, optionsY[2], "[Level 22] Train Crossing Madness");
 	draw_text(32, optionsY[3], "[Level 23] Nightmare Tunnels");
+	draw_text(32, optionsY[4], "[Level 24] The Awakening");
 }
 
 draw_set_halign(fa_center);

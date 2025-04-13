@@ -219,6 +219,10 @@ if (pushDelay < 0) {
 					room_goto(level23);
 					global.lastCheckpoint = noone;
 				break;
+				case 4:
+					room_goto(level24);
+					global.lastCheckpoint = noone;
+				break;
 			}
 		}
 	}
