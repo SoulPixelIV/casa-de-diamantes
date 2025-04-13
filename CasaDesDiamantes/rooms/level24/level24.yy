@@ -217,6 +217,7 @@
     {"name":"inst_FAFF38D","path":"rooms/level24/level24.yy",},
     {"name":"inst_1A269488","path":"rooms/level24/level24.yy",},
     {"name":"inst_712A5A65","path":"rooms/level24/level24.yy",},
+    {"name":"inst_5D9726A2","path":"rooms/level24/level24.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -272,6 +273,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_2FC647C5","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"fakewallTrigger_obj","path":"objects/fakewallTrigger_obj/fakewallTrigger_obj.yy",},"properties":[],"rotation":0.0,"scaleX":14.9375,"scaleY":22.0625,"x":3033.5,"y":4838.5,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_32481A48","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"fakewallTrigger_obj","path":"objects/fakewallTrigger_obj/fakewallTrigger_obj.yy",},"properties":[],"rotation":0.0,"scaleX":14.9375,"scaleY":22.0625,"x":2534.0,"y":4837.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_FAFF38D","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"fakewallTrigger_obj","path":"objects/fakewallTrigger_obj/fakewallTrigger_obj.yy",},"properties":[],"rotation":0.0,"scaleX":17.5625,"scaleY":11.25,"x":2777.0,"y":4923.5,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_5D9726A2","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"hazeToConsumedCasino_teleporter","path":"objects/hazeToConsumedCasino_teleporter/hazeToConsumedCasino_teleporter.yy",},"properties":[],"rotation":0.0,"scaleX":13.500001,"scaleY":3.5,"x":5440.0,"y":2688.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMREffectLayer","resourceVersion":"1.0","name":"RedFilter","depth":400,"effectEnabled":true,"effectType":"_filter_colourise","gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[
         {"name":"g_Intensity","type":0,"value":"0.3",},

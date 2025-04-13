@@ -1752,6 +1752,7 @@
     {"id":{"name":"trainHonk_snd","path":"sounds/trainHonk_snd/trainHonk_snd.yy",},},
     {"id":{"name":"chipsFalling_snd","path":"sounds/chipsFalling_snd/chipsFalling_snd.yy",},},
     {"id":{"name":"minecartBackground_spr","path":"sprites/minecartBackground_spr/minecartBackground_spr.yy",},},
+    {"id":{"name":"hazeToConsumedCasino_teleporter","path":"objects/hazeToConsumedCasino_teleporter/hazeToConsumedCasino_teleporter.yy",},},
     {"id":{"name":"charCustomization","path":"rooms/charCustomization/charCustomization.yy",},},
     {"id":{"name":"typewriterPush_snd","path":"sounds/typewriterPush_snd/typewriterPush_snd.yy",},},
     {"id":{"name":"caveBackgroundForeground_obj","path":"objects/caveBackgroundForeground_obj/caveBackgroundForeground_obj.yy",},},

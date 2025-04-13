@@ -1548,6 +1548,7 @@
     {"name":"trainHonk_snd","order":101,"path":"sounds/trainHonk_snd/trainHonk_snd.yy",},
     {"name":"chipsFalling_snd","order":70,"path":"sounds/chipsFalling_snd/chipsFalling_snd.yy",},
     {"name":"minecartBackground_spr","order":254,"path":"sprites/minecartBackground_spr/minecartBackground_spr.yy",},
+    {"name":"hazeToConsumedCasino_teleporter","order":63,"path":"objects/hazeToConsumedCasino_teleporter/hazeToConsumedCasino_teleporter.yy",},
     {"name":"typewriterPush_snd","order":95,"path":"sounds/typewriterPush_snd/typewriterPush_snd.yy",},
     {"name":"caveBackgroundForeground_obj","order":1,"path":"objects/caveBackgroundForeground_obj/caveBackgroundForeground_obj.yy",},
     {"name":"waterReflectionRed_obj","order":3,"path":"objects/waterReflectionRed_obj/waterReflectionRed_obj.yy",},
