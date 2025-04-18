@@ -22,7 +22,7 @@ if (keyboard_check_pressed(vk_down) || keyboard_check_pressed(ord("S")) || gamep
 }
 
 if (menu == 0) {
-	options = 7;
+	options = 8;
 }
 if (menu == 1) {
 	options = 2;
@@ -41,6 +41,9 @@ if (menu == 5) {
 }
 if (menu == 6) {
 	options = 4;
+}
+if (menu == 7) {
+	options = 0;
 }
 
 if (pushDelay < 0) {
@@ -85,6 +88,11 @@ if (pushDelay < 0) {
 				case 7:
 					pushDelay = 70;
 					menu = 6;
+					cursorPos = 0;
+				break;
+				case 8:
+					pushDelay = 70;
+					menu = 7;
 					cursorPos = 0;
 				break;
 			}
@@ -221,6 +229,14 @@ if (pushDelay < 0) {
 				break;
 				case 4:
 					room_goto(level24);
+					global.lastCheckpoint = noone;
+				break;
+			}
+		} else if (menu == 7) {
+			switch (cursorPos)
+			{
+				case 0:
+					room_goto(level25);
 					global.lastCheckpoint = noone;
 				break;
 			}

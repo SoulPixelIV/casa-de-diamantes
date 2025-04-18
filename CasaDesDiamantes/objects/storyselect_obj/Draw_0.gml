@@ -6,6 +6,7 @@ if (menu == 0) {
 	draw_text(32, optionsY[1], "[Act2] Returning from Senzela Forest");
 	draw_text(32, optionsY[2], "[Act3] Escaped from Endless Depths");
 	draw_text(32, optionsY[3], "[Act4] Gathered Info from EDEN");
+	draw_text(32, optionsY[4], "[Act5] Awakening at the Consumed Casino");
 }
 
 draw_set_halign(fa_center);

@@ -10,6 +10,7 @@ if (menu == 0) {
 	draw_text(32, optionsY[5], "[Act3] Endless Depths");
 	draw_text(32, optionsY[6], "[Act4] EDEN Powerplant");
 	draw_text(32, optionsY[7], "[Act5] Strato Train Station");
+	draw_text(32, optionsY[8], "[Act6] Mothers Womb");
 } else if (menu == 1) {
 	draw_text(32, optionsY[0], "[Level 1] Paredia");
 	draw_text(32, optionsY[1], "[Level 2] Paredia Streets");
@@ -44,6 +45,8 @@ if (menu == 0) {
 	draw_text(32, optionsY[2], "[Level 22] Train Crossing Madness");
 	draw_text(32, optionsY[3], "[Level 23] Nightmare Tunnels");
 	draw_text(32, optionsY[4], "[Level 24] The Awakening");
+} else if (menu == 7) {
+	draw_text(32, optionsY[0], "[Level 25] The First Test");
 }
 
 draw_set_halign(fa_center);

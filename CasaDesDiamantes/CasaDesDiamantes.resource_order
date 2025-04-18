@@ -110,6 +110,7 @@
     {"name":"No ClothesOLD","order":1,"path":"folders/Steph/Steph Sprites/No ClothesOLD.yy",},
     {"name":"Skin1","order":40,"path":"folders/Steph/Steph Sprites/Skin1.yy",},
     {"name":"UI","order":28,"path":"folders/UI.yy",},
+    {"name":"ACT 6 (Mothers Womb)","order":9,"path":"folders/Levels/Main/ACT 6 (Mothers Womb).yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"dashroll_snd","order":12,"path":"sounds/dashroll_snd/dashroll_snd.yy",},
@@ -178,6 +179,7 @@
     {"name":"sterilizationChamberScanning_spr","order":228,"path":"sprites/sterilizationChamberScanning_spr/sterilizationChamberScanning_spr.yy",},
     {"name":"level23","order":3,"path":"rooms/level23/level23.yy",},
     {"name":"playerFlipLEGACY_spr","order":7,"path":"sprites/playerFlipLEGACY_spr/playerFlipLEGACY_spr.yy",},
+    {"name":"cindy7_obj","order":29,"path":"objects/cindy7_obj/cindy7_obj.yy",},
     {"name":"ledBarRed_spr","order":1,"path":"sprites/ledBarRed_spr/ledBarRed_spr.yy",},
     {"name":"redKeyGateBackgroundOpening_spr","order":215,"path":"sprites/redKeyGateBackgroundOpening_spr/redKeyGateBackgroundOpening_spr.yy",},
     {"name":"overworld_obj","order":6,"path":"objects/overworld_obj/overworld_obj.yy",},

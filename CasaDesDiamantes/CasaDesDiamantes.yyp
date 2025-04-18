@@ -194,6 +194,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"UI","folderPath":"folders/UI.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"UI Objects","folderPath":"folders/UI/UI Objects.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"UI Sprites","folderPath":"folders/UI/UI Sprites.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"ACT 6 (Mothers Womb)","folderPath":"folders/Levels/Main/ACT 6 (Mothers Womb).yy",},
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"Casino3DFilledMarquee.ttf","CopyToMask":-1,"filePath":"datafiles",},
@@ -287,6 +288,7 @@
     {"id":{"name":"playerDashNude_spr","path":"sprites/playerDashNude_spr/playerDashNude_spr.yy",},},
     {"id":{"name":"level23","path":"rooms/level23/level23.yy",},},
     {"id":{"name":"playerFlipLEGACY_spr","path":"sprites/playerFlipLEGACY_spr/playerFlipLEGACY_spr.yy",},},
+    {"id":{"name":"cindy7_obj","path":"objects/cindy7_obj/cindy7_obj.yy",},},
     {"id":{"name":"ledBarRed_spr","path":"sprites/ledBarRed_spr/ledBarRed_spr.yy",},},
     {"id":{"name":"redKeyGateBackgroundOpening_spr","path":"sprites/redKeyGateBackgroundOpening_spr/redKeyGateBackgroundOpening_spr.yy",},},
     {"id":{"name":"overworld_obj","path":"objects/overworld_obj/overworld_obj.yy",},},
@@ -2060,6 +2062,7 @@
     {"id":{"name":"healthbarTop2Infection_spr","path":"sprites/healthbarTop2Infection_spr/healthbarTop2Infection_spr.yy",},},
     {"id":{"name":"glitterBottomWall_spr","path":"sprites/glitterBottomWall_spr/glitterBottomWall_spr.yy",},},
     {"id":{"name":"playerWallNoArmSkin1_spr","path":"sprites/playerWallNoArmSkin1_spr/playerWallNoArmSkin1_spr.yy",},},
+    {"id":{"name":"level25","path":"rooms/level25/level25.yy",},},
     {"id":{"name":"fallingForestGround2_spr","path":"sprites/fallingForestGround2_spr/fallingForestGround2_spr.yy",},},
     {"id":{"name":"teleportBlimpPowerplantToCasino_obj","path":"objects/teleportBlimpPowerplantToCasino_obj/teleportBlimpPowerplantToCasino_obj.yy",},},
     {"id":{"name":"plantBoss_obj","path":"objects/plantBoss_obj/plantBoss_obj.yy",},},
@@ -2326,6 +2329,7 @@
   ],
   "RoomOrderNodes": [
     {"roomId":{"name":"loadVars","path":"rooms/loadVars/loadVars.yy",},},
+    {"roomId":{"name":"level25","path":"rooms/level25/level25.yy",},},
     {"roomId":{"name":"level_BasementConsumed","path":"rooms/level_BasementConsumed/level_BasementConsumed.yy",},},
     {"roomId":{"name":"level_ConsumedCasino","path":"rooms/level_ConsumedCasino/level_ConsumedCasino.yy",},},
     {"roomId":{"name":"level_Casino","path":"rooms/level_Casino/level_Casino.yy",},},

@@ -22,7 +22,7 @@ if (keyboard_check_pressed(vk_down) || keyboard_check_pressed(ord("S")) || gamep
 }
 
 if (menu == 0) {
-	options = 3;
+	options = 4;
 }
 
 if (pushDelay < 0) {
@@ -103,6 +103,23 @@ if (pushDelay < 0) {
 					global.drawMission = false;
 					global.storyAct = 3;
 					room_goto(level_CasinoRoof);
+					global.lastCheckpoint = noone;
+				break;
+				case 4:
+					global.cutsceneCasinoIntroDone = true;
+					global.introDialogueVIPDone = true;
+					global.introDialogueCindyDone = true;
+					global.introDialogueOutOfRoomDone = true;
+					global.cupyDialogue1Done = true;
+					global.cupyDialogue2Done = true;
+					global.cupyDialogue3Done = true;
+					global.cupyDialogue4Done = true;
+					global.cupyDialogue5Done = true;
+					global.komoGamblingDialogueDone = true;
+					global.tristramCindyQuestioningDialogueDone = true;
+					global.drawMission = false;
+					global.storyAct = 4;
+					room_goto(level_ConsumedCasino);
 					global.lastCheckpoint = noone;
 				break;
 			}
