@@ -43,6 +43,7 @@ scene39 = false;
 scene40 = false;
 scene41 = false;
 scene42 = false;
+scene43 = false;
 
 //Dialogue Markers
 scene1Low = 0;
@@ -129,6 +130,8 @@ scene41Low = 306;
 scene41High = 309;
 scene42Low = 310;
 scene42High = 313;
+scene43Low = 314;
+scene43High = 322;
 
 //Dialogue Text
 //!!!ALWAYS 1 EMPTY SPACE & 1 FREE SPACE BETWEEN SCENES
@@ -709,3 +712,18 @@ dialogue[310] = "%LXt us go, mX child.";
 dialogue[311] = "%Your mXssion is nXw over.";
 dialogue[312] = "                                                                                                             ";
 dialogue[313] = "";
+
+//Scene 43 Komo Tristram Consumed
+startScene43BlackTimer = false;
+scene43BlackTimer = 600;
+startScene43Timer = false;
+
+dialogue[314] = ";I'm glXd yoX could jXin us.";
+dialogue[315] = ">Thanks to yoX I have lXcated the vXrgin plant.";
+dialogue[316] = ";YoX were alwXys my favourite chXld.";
+dialogue[317] = ">TXnight will be a special occXsion!";
+dialogue[318] = ";A new AgX...for Xll of us.";
+dialogue[319] = ">Now if yoX don't mXnd...";
+dialogue[320] = ";PleasX come to mX.";
+dialogue[321] = "                                                                                                             ";
+dialogue[322] = "";

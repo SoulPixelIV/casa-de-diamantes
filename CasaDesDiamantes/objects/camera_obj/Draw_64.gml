@@ -246,6 +246,10 @@ if (string_char_at(dialogue[dialogueLine], 1) == ";")
 		character = tristram5_obj;
 		follow = tristram5_obj;
 	}
+	if (instance_exists(tristram6_obj)) {
+		character = tristram6_obj;
+		follow = tristram6_obj;
+	}
 }
 if (string_char_at(dialogue[dialogueLine], 1) == ">")
 {
@@ -272,6 +276,10 @@ if (string_char_at(dialogue[dialogueLine], 1) == ">")
 	if (instance_exists(komo6_obj)) {
 		character = komo6_obj;
 		follow = komo6_obj;
+	}
+	if (instance_exists(komo7_obj)) {
+		character = komo7_obj;
+		follow = komo7_obj;
 	}
 }
 if (string_char_at(dialogue[dialogueLine], 1) == "_")
@@ -359,9 +367,9 @@ if (drawText && !showWindowMenu)
 		} else if (character == casinoCandleLight_obj) {
 			draw_sprite_ext(dialogBorder_spr, 0, (player_obj.x - x) + global.xScreenSize / 2, (player_obj.y - y) - 42 + global.yScreenSize / 2, 2 + string_length(dialogueStripped) / 3, 1.5, 0, make_color_rgb(229, 171, 113), 1);
 			draw_sprite_ext(dialogBorder_spr, 0, (tristram3_obj.x - x) + global.xScreenSize / 2, (tristram3_obj.y - y) - 42 + global.yScreenSize / 2, 2 + string_length(dialogueStripped) / 3, 1.5, 0, make_color_rgb(91, 204, 151), 1);
-		} else if (character == tristram_obj || character == tristram2_obj || character == tristram3_obj || character == tristram4_obj || character == tristram5_obj) {
+		} else if (character == tristram_obj || character == tristram2_obj || character == tristram3_obj || character == tristram4_obj || character == tristram5_obj || character == tristram6_obj) {
 			draw_sprite_ext(dialogBorder_spr, 0, (character.x - x) + global.xScreenSize / 2, (character.y - y) - 42 + global.yScreenSize / 2, 2 + string_length(dialogueStripped) / 3, 1.5, 0, make_color_rgb(198, 204, 99), 1);
-		} else if (character == komo_obj || character == komo2_obj || character == komo3_obj || character == komo4_obj || character == komo5_obj || character == komo6_obj) {
+		} else if (character == komo_obj || character == komo2_obj || character == komo3_obj || character == komo4_obj || character == komo5_obj || character == komo6_obj || character == komo7_obj) {
 			draw_sprite_ext(dialogBorder_spr, 0, (character.x - x) + global.xScreenSize / 2, (character.y - y) - 42 + global.yScreenSize / 2, 2 + string_length(dialogueStripped) / 3, 1.5, 0, make_color_rgb(127, 172, 255), 1);
 		}
 	
