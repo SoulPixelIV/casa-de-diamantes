@@ -87,7 +87,7 @@ if (room == mainmenu || room == levelSelect || room == storySelect || room == de
 	ppfx_id.ProfileLoad(credits_profile);
 } else if (room == worldmap) {
 	ppfx_id.ProfileLoad(overworld_profile);
-} else if (room == level_Casino || room == level_DiningHall || room == level_TristramRoom || room == level_Basement) {
+} else if (room == level_Casino || room == level_DiningHall || room == level_TristramRoom || room == level_Basement || room == level_ConsumedCasino || room == level_BasementConsumed) {
 	ppfx_id.ProfileLoad(casino_profile);
 } else if (room == level_CasinoRoof) {
 	ppfx_id.ProfileLoad(act1_profile);
@@ -127,6 +127,6 @@ if (room == mainmenu || room == levelSelect || room == storySelect || room == de
 	ppfx_id.ProfileLoad(act2_profile);
 } else if (room == level16 || room == level17 || room == level18 || room == level19) {
 	ppfx_id.ProfileLoad(act4_profile);
-} else if (room == level20 || room == level21 || room == level22 || room == level23) {
+} else if (room == level20 || room == level21 || room == level22 || room == level23 || room == level24) {
 	ppfx_id.ProfileLoad(act5_profile);
 }
