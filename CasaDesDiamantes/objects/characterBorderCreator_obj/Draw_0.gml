@@ -37,6 +37,9 @@ if (camera_obj.drawText) {
 	if (instance_exists(cindy6_obj)) {
 		draw_sprite_ext(cindyBackground_spr, 0, cindy6_obj.x, cindy6_obj.y, 1, 1, backgroundRotVal, -1, 1);
 	}
+	if (instance_exists(cindy7_obj)) {
+		draw_sprite_ext(cindyBackground_spr, 0, cindy7_obj.x, cindy7_obj.y, 1, 1, backgroundRotVal, -1, 1);
+	}
 	if (instance_exists(komo_obj)) {
 		draw_sprite_ext(komoBackground_spr, 0, komo_obj.x, komo_obj.y, 1, 1, backgroundRotVal, -1, 1);
 	}

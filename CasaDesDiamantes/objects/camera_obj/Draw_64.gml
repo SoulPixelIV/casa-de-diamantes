@@ -153,6 +153,10 @@ if (string_char_at(dialogue[dialogueLine], 1) == "$")
 		character = cindy6_obj;
 		follow = cindy6_obj;
 	}
+	if (instance_exists(cindy7_obj)) {
+		character = cindy7_obj;
+		follow = cindy7_obj;
+	}
 }
 if (string_char_at(dialogue[dialogueLine], 1) == "§")
 {
@@ -184,6 +188,10 @@ if (string_char_at(dialogue[dialogueLine], 1) == "*")
 	if (instance_exists(cindy6_obj)) {
 		character = cindy6_obj;
 		follow = cindy6_obj;
+	}
+	if (instance_exists(cindy7_obj)) {
+		character = cindy7_obj;
+		follow = cindy7_obj;
 	}
 }
 if (string_char_at(dialogue[dialogueLine], 1) == "%")
@@ -318,6 +326,15 @@ if (string_char_at(dialogue[dialogueLine], 1) == "W")
 		room_goto(upgrademenu);
 	}
 }
+if (string_char_at(dialogue[dialogueLine], 1) == "W")
+{
+	if (string_char_at(dialogue[dialogueLine], 2) == "3")
+	{			
+		part_emitter_destroy_all(global.partSystem);
+		instance_destroy(player_obj);
+		room_goto(upgrademenu2);
+	}
+}
 
 //Games
 if (string_char_at(dialogue[dialogueLine], 1) == "G")
@@ -341,7 +358,7 @@ if (drawText && !showWindowMenu)
 	if (instance_exists(character) && drawDialogueBorder) {
 		if (character == player_obj || character == steph2_obj) {
 			draw_sprite_ext(dialogBorder_spr, 0, (character.x - x) + global.xScreenSize / 2, (character.y - y) - 42 + global.yScreenSize / 2, 2 + string_length(dialogueStripped) / 3, 1.5, 0, make_color_rgb(229, 171, 113), 1);
-		} else if (character == cindy_obj || character == cindy2_obj || character == cindy3_obj || character == cindy4_obj || character == cindy5_obj || character == cindy6_obj) {
+		} else if (character == cindy_obj || character == cindy2_obj || character == cindy3_obj || character == cindy4_obj || character == cindy5_obj || character == cindy6_obj || character == cindy7_obj) {
 			draw_sprite_ext(dialogBorder_spr, 0, (character.x - x) + global.xScreenSize / 2, (character.y - y) - 42 + global.yScreenSize / 2, 2 + string_length(dialogueStripped) / 3, 1.5, 0, make_color_rgb(91, 204, 151), 1);
 		} else if (character == cutieplusSteph_obj) {
 			draw_sprite_ext(dialogBorder_spr, 0, (character.x - x) + global.xScreenSize / 2, (character.y - y) - 22 + global.yScreenSize / 2, 2 + string_length(dialogueStripped) / 3, 1.5, 0, make_color_rgb(82, 43, 82), 1);

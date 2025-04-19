@@ -1560,3 +1560,28 @@ if (startScene43Timer) {
 		save_scr();
 	}
 }
+
+//Scene 44
+if (scene44) {
+	inCutscene = true;
+	startScene44Timer = true;
+	camera_obj.drawDialogueBorder = true;
+	if (!camera_obj.drawText)
+	{
+		for (i = scene44Low; i < scene44High + 1; i++)
+		{
+			camera_obj.dialogue[i] = dialogue[i];
+		}
+		camera_obj.dialogueLine = scene44Low;
+		camera_obj.drawText = true;
+	}
+	scene44 = false;
+}
+if (startScene44Timer) {
+	if (camera_obj.dialogueLine >= scene44High) {
+		startScene44Timer = false;
+		camera_obj.follow = player_obj;
+		camera_obj.drawDialogueBorder = false;
+		camera_obj.drawText = false;
+	}
+}

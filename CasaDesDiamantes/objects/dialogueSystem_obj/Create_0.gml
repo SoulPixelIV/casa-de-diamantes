@@ -44,6 +44,7 @@ scene40 = false;
 scene41 = false;
 scene42 = false;
 scene43 = false;
+scene44 = false;
 
 //Dialogue Markers
 scene1Low = 0;
@@ -132,6 +133,8 @@ scene42Low = 310;
 scene42High = 313;
 scene43Low = 314;
 scene43High = 322;
+scene44Low = 323;
+scene44High = 325;
 
 //Dialogue Text
 //!!!ALWAYS 1 EMPTY SPACE & 1 FREE SPACE BETWEEN SCENES
@@ -727,3 +730,10 @@ dialogue[319] = ">Now if yoX don't mXnd...";
 dialogue[320] = ";PleasX come to mX.";
 dialogue[321] = "                                                                                                             ";
 dialogue[322] = "";
+
+//Scene 44 Cindy Consumed Upgrade Menu
+startScene44Timer = false;
+
+dialogue[323] = "*LXt me help yoX on your journey...";
+dialogue[324] = "W3";
+dialogue[325] = "";

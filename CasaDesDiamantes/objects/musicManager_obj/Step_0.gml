@@ -87,7 +87,9 @@ if (room == credits) {
 		if (audio_is_playing(sliceL4_msc)) {
 			audio_stop_sound(sliceL4_msc);
 		}
-
+		if (audio_is_playing(faceL1_msc)) {
+			audio_stop_sound(faceL1_msc);
+		}
 	}
 } else {
 	if (audio_is_playing(credits_msc)) {
@@ -165,6 +167,9 @@ if (room == demoend) {
 		if (audio_is_playing(sliceL4_msc)) {
 			audio_stop_sound(sliceL4_msc);
 		}
+		if (audio_is_playing(faceL1_msc)) {
+			audio_stop_sound(faceL1_msc);
+		}
 
 	}
 } else {
@@ -174,7 +179,7 @@ if (room == demoend) {
 }
 
 //Casino Theme
-if (room == level_Casino || room == mainmenu || room == levelSelect || room == storySelect || room == worldmap || room == settings || room == upgrademenu || room == level_DiningHall || room == level_TristramRoom) {
+if (room == level_Casino || room == mainmenu || room == levelSelect || room == storySelect || room == worldmap || room == settings || room == upgrademenu || room == upgrademenu2 || room == level_DiningHall || room == level_TristramRoom) {
 	if (!audio_is_playing(casinoTheme)) {
 		audio_play_sound_on(musicEmitter, casinoTheme, 1, 1);
 		
@@ -242,6 +247,9 @@ if (room == level_Casino || room == mainmenu || room == levelSelect || room == s
 		}
 		if (audio_is_playing(sliceL4_msc)) {
 			audio_stop_sound(sliceL4_msc);
+		}
+		if (audio_is_playing(faceL1_msc)) {
+			audio_stop_sound(faceL1_msc);
 		}
 	}
 } else {
@@ -322,6 +330,9 @@ if (room == blackjackTable || room == level_CasinoRoof) {
 		}
 		if (audio_is_playing(sliceL4_msc)) {
 			audio_stop_sound(sliceL4_msc);
+		}
+		if (audio_is_playing(faceL1_msc)) {
+			audio_stop_sound(faceL1_msc);
 		}
 } else {
 	if (audio_is_playing(casinoThemeLowPass)) {
@@ -779,6 +790,51 @@ if (act5MusicOn && act5MusicStarted) {
 				audio_sound_gain(sliceDiceL1, 0, 300);
 				audio_sound_gain(sliceDiceL2, 0, 300);
 				audio_sound_gain(sliceDiceL3, 0, 300);
+			}
+		}
+	}
+}
+
+//ACT6 WORLD MUSIC
+if (room == level25) {
+	act6MusicOn = true;
+} else {
+	act6MusicOn = false;
+	act6MusicStarted = false;
+}
+
+if (act6MusicOn && !act6MusicStarted) {
+	faceReflL1 = audio_play_sound_on(musicEmitter, faceL1, 1, 1);
+	
+	if (audio_is_playing(dressedToKillSTEM_msc)) {
+		audio_stop_sound(dressedToKillSTEM_msc);
+	}
+	if (audio_is_playing(dressedToKillL3_msc)) {
+		audio_stop_sound(dressedToKillL3_msc);
+	}
+	if (audio_is_playing(dressedToKillL2_msc)) {
+		audio_stop_sound(dressedToKillL2_msc);
+	}
+	if (audio_is_playing(dressedToKillL1_msc)) {
+		audio_stop_sound(dressedToKillL1_msc);
+	}
+	
+	audio_sound_gain(faceReflL1, 0, 0);
+	
+	act6MusicStarted = true;
+}
+
+if (act6MusicOn && act6MusicStarted) {
+	with (player_obj) {
+		if (place_meeting(x, y, musicBoxSilence_obj)) {
+			with (musicManager_obj) {
+				audio_sound_gain(faceReflL1, 0, 300);
+			}
+		} else if (place_meeting(x, y, musicBoxBattleBig_obj)) {
+			with (musicManager_obj) {
+				if (audio_sound_get_gain(faceReflL1) == 0) {
+					audio_sound_gain(faceReflL1, 1, 300);
+				}
 			}
 		}
 	}

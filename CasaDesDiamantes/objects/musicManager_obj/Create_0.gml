@@ -13,6 +13,9 @@ act4MusicStarted = false;
 act5MusicOn = false;
 act5MusicStarted = false;
 
+act6MusicOn = false;
+act6MusicStarted = false;
+
 casinoTheme = casinoTheme_msc;
 casinoThemeLowPass = casinoThemeLowpass_msc;
 
@@ -41,6 +44,8 @@ sliceL1 = sliceL1_msc;
 sliceL2 = sliceL2_msc;
 sliceL3 = sliceL3_msc;
 sliceL4 = sliceL4_msc;
+
+faceL1 = faceL1_msc;
 
 // Low-pass route
 usedFilter = false;
