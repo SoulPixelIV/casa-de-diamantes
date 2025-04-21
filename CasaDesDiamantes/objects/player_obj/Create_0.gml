@@ -73,6 +73,7 @@ shotgunArmX = 0;
 shotgunArmY = 0;
 shotgunArmCurvedX = 0;
 shotgunArmCurvedY = 0;
+dodgeRewardTimer = 17;
 
 //Sprites
 if (global.skin == 0) {
@@ -277,6 +278,8 @@ dashStandupDelaySave = dashStandupDelay;
 otherDirWallHugTimerSave = otherDirWallHugTimer;
 pauseDelaySave = pauseDelay;
 flamethrowerTimerSave = flamethrowerTimer;
+dodgeRewardTimerSave = dodgeRewardTimer;
+
 partX = 0;
 partY = 0;
 partX2 = 0;

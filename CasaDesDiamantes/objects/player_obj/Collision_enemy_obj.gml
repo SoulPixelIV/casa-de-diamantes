@@ -15,17 +15,12 @@ if (hp > 0 && !inChamber)
 		}
 	}
 	
-	if (invincible && invincibleHitCooldown < 0) {
-		if (!audio_is_playing(glitter_snd))
-		{
-			var glittersnd = audio_play_sound(glitter_snd, 1, false);
-			audio_sound_pitch(glittersnd, random_range(0.9, 1.1));
+	if (invincible && invincibleHitCooldown < 0 && dodgeRewardTimer < 0) {
+		audio_play_sound(ding_snd, 1, false);
+		repeat(choose(2, 3)) {
+			instance_create_layer(x, y, "Instances", chipBluePickup_obj);
 		}
-		partEmitter = part_emitter_create(global.partSystem);
-		part_emitter_region(global.partSystem, partEmitter, player_obj.x - 32, player_obj.x + 32, player_obj.y + 8, player_obj.y + 32, ps_shape_ellipse, ps_distr_linear);
-		part_emitter_burst(global.partSystem, partEmitter, global.playerPart, 50);
-		part_emitter_destroy(global.partSystem, partEmitter);
-		invincibleHitCooldown = invincibleHitCooldownSave;
+		dodgeRewardTimer = dodgeRewardTimerSave;
 	}
 
 	if (!damageRecieved && !isZombie && !invincible)

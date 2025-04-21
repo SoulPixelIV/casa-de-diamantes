@@ -18,3 +18,20 @@ elevatorTimerSave = elevatorTimer;
 if (instance_exists(elevatorSign_obj)) {
 	elevSign = instance_nearest(x, y, elevatorSign_obj);
 }
+
+teleportTimer = 400;
+teleportDelay = 200;
+playerEntered = false;
+
+teleportTimerSave = teleportTimer;
+teleportDelaySave = teleportDelay;
+
+blackscreenDelay = 250;
+whitescreenDelay = 250;
+waitDelay = 150;
+teleporting = false;
+finishingTeleport = false;
+
+blackscreenDelaySave = blackscreenDelay;
+whitescreenDelaySave = whitescreenDelay;
+waitDelaySave = waitDelay;

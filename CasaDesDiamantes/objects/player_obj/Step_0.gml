@@ -1963,6 +1963,7 @@ else
 
 //Hit Cooldown while invincible
 invincibleHitCooldown -= global.dt;
+dodgeRewardTimer -= global.dt;
 
 //Lock Movement when no window focus
 /*
