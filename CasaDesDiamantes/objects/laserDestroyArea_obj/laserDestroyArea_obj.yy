@@ -30,5 +30,5 @@
     "path": "sprites/redstripes_spr/redstripes_spr.yy",
   },
   "spriteMaskId": null,
-  "visible": true,
+  "visible": false,
 }

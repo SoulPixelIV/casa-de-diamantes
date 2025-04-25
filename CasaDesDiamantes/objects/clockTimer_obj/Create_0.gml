@@ -3,5 +3,5 @@ image_speed = 0;
 
 startTimer = false;
 
-secondTimer = 400;
+secondTimer = 200;
 secondTimerSave = secondTimer;

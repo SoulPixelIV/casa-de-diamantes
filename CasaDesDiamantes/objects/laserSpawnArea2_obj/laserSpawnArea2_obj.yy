@@ -30,5 +30,5 @@
     "path": "sprites/bluestripesUp_spr/bluestripesUp_spr.yy",
   },
   "spriteMaskId": null,
-  "visible": true,
+  "visible": false,
 }
