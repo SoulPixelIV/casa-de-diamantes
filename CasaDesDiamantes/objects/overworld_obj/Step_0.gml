@@ -43,7 +43,7 @@ if (menu == 6) {
 	options = 4;
 }
 if (menu == 7) {
-	options = 0;
+	options = 1;
 }
 
 if (pushDelay < 0) {

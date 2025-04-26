@@ -197,16 +197,16 @@ if (phase6) {
 	if (laserSpawnTimer6 < 0) {
 		var randNum = choose(0, 1, 2, 3);
 		if (randNum == 0) {
-			instance_create_layer(x + random_range(200, -200), y - 32, "Instances", chipBluePickup_obj);
+			instance_create_layer(x + random_range(200, -200), y - 48, "Instances", chipBluePickup_obj);
 		}
 		if (randNum == 1) {
-			instance_create_layer(x + random_range(200, -200), y - 32, "Instances", chipRedPickup_obj);
+			instance_create_layer(x + random_range(200, -200), y - 48, "Instances", chipRedPickup_obj);
 		}
 		if (randNum == 2) {
-			instance_create_layer(x + random_range(200, -200), y - 32, "Instances", chipVioletPickup_obj);
+			instance_create_layer(x + random_range(200, -200), y - 48, "Instances", chipVioletPickup_obj);
 		}
 		if (randNum == 3) {
-			instance_create_layer(x + random_range(200, -200), y - 32, "Instances", chipPlatinumPickup_obj);
+			instance_create_layer(x + random_range(200, -200), y - 48, "Instances", chipPlatinumPickup_obj);
 		}
 		laserSpawnTimer6 = laserSpawnTimer6Save;		
 	}

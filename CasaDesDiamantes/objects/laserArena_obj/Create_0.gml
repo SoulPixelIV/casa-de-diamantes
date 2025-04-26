@@ -39,7 +39,7 @@ phase5Dir = 1;
 
 //Phase 6
 phase6 = false;
-phase6Timer = 1000;
+phase6Timer = 1100;
 laserSpawnTimer6 = 5;
 laserSpawnTimer6Save = laserSpawnTimer6;
 phase6Dir = 1;

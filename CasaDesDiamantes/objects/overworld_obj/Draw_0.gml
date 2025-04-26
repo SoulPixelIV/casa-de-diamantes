@@ -47,6 +47,7 @@ if (menu == 0) {
 	draw_text(32, optionsY[4], "[Level 24] The Awakening");
 } else if (menu == 7) {
 	draw_text(32, optionsY[0], "[Level 25] The First Test");
+	draw_text(32, optionsY[0], "[Level 26] The Second Test");
 }
 
 draw_set_halign(fa_center);
