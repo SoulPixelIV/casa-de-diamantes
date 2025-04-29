@@ -4,6 +4,10 @@ if (instance_exists(player_obj)) {
 			if (instance_exists(lasergate_obj)) {
 				lasergate_obj.open = true;
 			}
+			
+			if (instance_exists(spikesMovingUp_obj)) {
+				spikesMovingUp_obj.open = true;
+			}
 		
 			openFloor = true;
 			
