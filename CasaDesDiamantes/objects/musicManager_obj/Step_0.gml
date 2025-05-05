@@ -796,7 +796,7 @@ if (act5MusicOn && act5MusicStarted) {
 }
 
 //ACT6 WORLD MUSIC
-if (room == level25 || room == room == level26) {
+if (room == level25 || room == level26 || room == level27) {
 	act6MusicOn = true;
 } else {
 	act6MusicOn = false;

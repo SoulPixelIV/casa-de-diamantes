@@ -17,11 +17,25 @@ if (elevatorNumber != 0) {
 		if (elevatorNumber == 1) {
 			player_obj.x = Spawn3_obj.x;
 			player_obj.y = Spawn3_obj.y;
+			player_obj.movement = true;
+			finishingTeleport = true;
+			blackscreenDelay = blackscreenDelaySave;
+			teleporting = false;
 		}
-		player_obj.movement = true;
-		finishingTeleport = true;
-		blackscreenDelay = blackscreenDelaySave;
-		teleporting = false;
+		
+		if (elevatorNumber == 2) {
+			part_emitter_destroy_all(global.partSystem);
+			instance_destroy(player_obj);
+			global.spawn = 0;
+			room_goto(level26);
+		}
+		
+		if (elevatorNumber == 3) {
+			part_emitter_destroy_all(global.partSystem);
+			instance_destroy(player_obj);
+			global.spawn = 0;
+			room_goto(level27);
+		}
 	}
 
 	if (finishingTeleport) {
