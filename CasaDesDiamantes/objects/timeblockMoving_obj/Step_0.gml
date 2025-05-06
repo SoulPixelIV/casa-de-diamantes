@@ -1,3 +1,17 @@
+if (vertOrHor == 0) {
+	if (dir == 0) {
+		x += global.dt;
+	} else {
+		x -= global.dt;
+	}
+} else {
+	if (dir == 0) {
+		y += global.dt;
+	} else {
+		y -= global.dt;
+	}
+}
+
 if (open) {
 	if (image_index != 4) {
 		startDelay -= global.dt;
@@ -22,11 +36,20 @@ if (used && switchOn) {
 	}
 	
 	image_index = 0;
-	startDelay = random_range(800, 2800);
+	startDelay = random_range(1800, 3000);
 	countDelay = countDelaySave;
 	switchOn = false;
 	used = false;
 	playedSound = false;
+}
+
+if (delayOn) {
+	delayTimer -= global.dt;
+	
+	if (delayTimer < 0) {
+		delayTimer = 100;
+		delayOn = false;
+	}
 }
 
 if (image_index == 4) {

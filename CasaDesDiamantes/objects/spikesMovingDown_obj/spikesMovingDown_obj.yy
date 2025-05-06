@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "spikesMovingUp_obj",
+  "name": "spikesMovingDown_obj",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
@@ -35,8 +35,8 @@
   ],
   "solid": false,
   "spriteId": {
-    "name": "spikesLong_spr",
-    "path": "sprites/spikesLong_spr/spikesLong_spr.yy",
+    "name": "spikesLongDown_spr",
+    "path": "sprites/spikesLongDown_spr/spikesLongDown_spr.yy",
   },
   "spriteMaskId": null,
   "visible": true,

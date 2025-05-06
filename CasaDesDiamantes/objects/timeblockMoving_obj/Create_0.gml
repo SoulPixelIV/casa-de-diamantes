@@ -4,9 +4,13 @@ col.image_yscale = 0.6;
 col.x = x - 8;
 col.y = y - 8;
 
+dir = 0;
+
 switchOn = false;
 countDelay = 500;
-startDelay = random_range(200, 3500);
+startDelay = 4000;
+delayTimer = 100;
+delayOn = false;
 
 countDelaySave = countDelay;
 
