@@ -6,7 +6,7 @@ col.y = y - 8;
 
 switchOn = false;
 countDelay = 500;
-startDelay = random_range(200, 3500);
+startDelay = random_range(1000, 3000);
 
 countDelaySave = countDelay;
 
@@ -22,6 +22,7 @@ used = false;
 spinDone = false;
 spawned = false;
 playedSound = false;
+playedStartSound = false;
 jumpAnim = false;
 
 //Create Emitter

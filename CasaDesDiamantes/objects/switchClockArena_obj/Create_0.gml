@@ -9,3 +9,5 @@ coinSpawnTimer = 5;
 lifeTimerStart = false;
 coinSpawnTimerSave = coinSpawnTimer;
 lifeTimerSave = lifeTimer;
+deactivateBlocks = false;
+openedBlocks = false;
