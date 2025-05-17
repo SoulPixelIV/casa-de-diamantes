@@ -1,9 +1,9 @@
-var enemyTarget = instance_place(x, y, growingVine_obj);
+var enemyTarget = instance_place(x, y, VIPConsumed_obj);
 if (other.hp > 0) {
 	if (!dealtDamage && instance_exists(enemyTarget))
 	{
 		enemyTarget.damageTint = true;
-		enemyTarget.hp -= 0.6 * damageMultiplier;
+		enemyTarget.hp -= 0.6;
 		bloodSpread = instance_create_layer(x, y, "Instances", bloodSpread_obj);
 		bloodSpread.image_angle = image_angle;
 		bloodSpread2 = instance_create_layer(x, y, "Instances", bloodSpread2_obj);

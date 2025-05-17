@@ -45,6 +45,7 @@ scene41 = false;
 scene42 = false;
 scene43 = false;
 scene44 = false;
+scene45 = false;
 
 //Dialogue Markers
 scene1Low = 0;
@@ -135,6 +136,8 @@ scene43Low = 314;
 scene43High = 322;
 scene44Low = 323;
 scene44High = 325;
+scene45Low = 326;
+scene45High = 333;
 
 //Dialogue Text
 //!!!ALWAYS 1 EMPTY SPACE & 1 FREE SPACE BETWEEN SCENES
@@ -153,6 +156,7 @@ scene44High = 325;
 // [ = Bunnygirl
 // ^ = VIP
 // < = VIP2
+// ß = Consumed VIP
 // ´ = CustomTarget
 // W[Number] = Open specific window menu
 
@@ -737,3 +741,17 @@ startScene44Timer = false;
 dialogue[323] = "*LXt me help yoX on your journey...";
 dialogue[324] = "W3";
 dialogue[325] = "";
+
+//Scene 45 Consumed VIP
+startScene45BlackTimer = false;
+scene45BlackTimer = 600;
+startScene45Timer = false;
+
+dialogue[326] = "ßThYs is not thY end!";
+dialogue[327] = "ßWe wYll fight till the last flower fYlls.";
+dialogue[328] = "ßWe Yre a strong breed!";
+dialogue[329] = "ßBut who am I tYlking to anyway?";
+dialogue[330] = "ßIt seems lYke they don't have thYs one under control.";
+dialogue[331] = "ßDear child, dY what must be dYne.";
+dialogue[332] = "                                                                                                             ";
+dialogue[333] = "";

@@ -1,10 +1,11 @@
-hp = 7.5;
+hp = 70.0;
 image_index = 0;
 image_speed = 0;
 animationSpeed = 0.4;
 damageTint = false;
 attackTint = false;
 destroyedCollider = false;
+dialogueTriggered = false;
 
 col = instance_create_layer(x + 38, y - 86, "Instances", colliderBoss_obj);
 col.image_xscale = 0.7;
@@ -18,7 +19,7 @@ attackTimer2 = 1500;
 
 explosionTimer = 30;
 dropTimer = 8;
-deathTimer = 450;
+deathTimer = 900;
 
 attackTimerSave = attackTimer;
 

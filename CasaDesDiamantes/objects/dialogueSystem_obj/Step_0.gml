@@ -1585,3 +1585,36 @@ if (startScene44Timer) {
 		camera_obj.drawText = false;
 	}
 }
+
+//Scene 45
+if (scene45) {
+	inCutscene = true;
+	startScene45Timer = true;
+	camera_obj.drawDialogueBorder = true;
+	if (!camera_obj.drawText)
+	{
+		for (i = scene45Low; i < scene45High + 1; i++)
+		{
+			camera_obj.dialogue[i] = dialogue[i];
+		}
+		camera_obj.dialogueLine = scene45Low;
+		camera_obj.drawText = true;
+	}
+	scene45 = false;
+}
+
+if (startScene45Timer) {
+	if (camera_obj.dialogueLine >= scene45High - 1) {
+		player_obj.movement = true;
+		camera_obj.drawBlackborders = false;
+		camera_obj.drawText = false;
+		dialogueSystem_obj.inCutscene = false;
+		startScene45Timer = false;
+		inCutscene = false;
+		camera_obj.follow = player_obj;
+		camera_obj.drawDialogueBorder = false;
+		global.komoTristramConsumedDialogueDone = true;
+		camera_obj.hazeEffect = true;
+		save_scr();
+	}
+}

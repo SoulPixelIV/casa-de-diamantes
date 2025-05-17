@@ -1,4 +1,4 @@
-var enemyTarget = instance_place(x, y, growingVine_obj);
+var enemyTarget = instance_place(x, y, VIPConsumed_obj);
 if (other.hp > 0) {
 	if (!dealtDamage && instance_exists(enemyTarget))
 	{
