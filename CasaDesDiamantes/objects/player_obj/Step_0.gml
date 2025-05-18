@@ -2052,6 +2052,16 @@ if (colliding)
 				}
 			}
 		}
+		if (place_meeting(x + horspeed * global.dt, y, glassWall_obj)) {
+			var nearEnemy = instance_place(x + horspeed * global.dt, y, glassWall_obj);
+			if (nearEnemy != noone)
+			{
+				if (nearEnemy.colliding)
+				{
+					horspeed = 0;
+				}
+			}
+		}
 	}
 	if ((place_free(x + 1, y) && place_free(x - 1, y)) || grounded)
 	{
@@ -2098,6 +2108,11 @@ if (colliding)
 		}
 		if (place_meeting(x, y + verspeed * global.dt, zombieGirlTutorial_obj)) {
 			var collidingEnemy = instance_place(x, y + verspeed * global.dt, zombieGirlTutorial_obj);
+			collidingEnemy.verspeed = 0;
+			verspeed = 0;
+		}
+		if (place_meeting(x, y + verspeed * global.dt, glassWall_obj)) {
+			var collidingEnemy = instance_place(x, y + verspeed * global.dt, glassWall_obj);
 			collidingEnemy.verspeed = 0;
 			verspeed = 0;
 		}

@@ -11,6 +11,11 @@ if (other.hp > 0) {
 		audio_play_sound(bulletHit_snd, 1, false);
 		dealtDamage = true;
 		penetration = 0;
+		
+		if (global.silencedMPUpgrade1 && !dealtBurnDamage) {
+			enemyTarget.burnRes -= 1;
+			dealtBurnDamage = true;
+		}
 	}
 
 	if (penetration < 1)

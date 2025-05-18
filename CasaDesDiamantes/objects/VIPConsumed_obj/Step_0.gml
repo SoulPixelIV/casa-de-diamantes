@@ -67,6 +67,28 @@ if (hp < 1) {
 	}
 }
 
+//Burnt
+if (burnt) {
+	image_blend = make_color_rgb(255, 144, 0);
+	burnTimer -= global.dt;
+	if (burnTimer < 0) {
+		part_emitter_burst(global.partSystem, partEmitter, global.flameSparkPart, 19);
+		damageTint = true;
+		hp -= 0.5 / damageRes;
+		aggro = true;
+		bloodSpread = instance_create_layer(x, y, "Instances", bloodSpread_obj);
+		bloodSpread.image_angle = random_range(0, 359);
+		bloodSpread2 = instance_create_layer(x, y, "Instances", bloodSpread2_obj);
+		bloodSpread2.image_angle = random_range(0, 359);	
+		audio_play_sound(bulletHit_snd, 1, false);
+		burnTimer = burnTimerSave;
+	}
+}
+
+if (burnRes <= 0) {
+	burnt = true;
+}
+
 /// @description Check Player
 if (instance_exists(player_obj) && !global.dialogueDelayStart) {
 	if (distance_to_object(player_obj) < 100 && !global.pause && !dialogueTriggered)

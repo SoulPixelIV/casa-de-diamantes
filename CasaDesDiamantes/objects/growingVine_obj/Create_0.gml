@@ -5,6 +5,12 @@ animationSpeed = 0.4;
 damageTint = false;
 attackTint = false;
 destroyedCollider = false;
+burnt = false;
+burnRes = 4;
+burnTimer = 75;
+burnTimerSave = burnTimer;
+damageRes = 1;
+hitable = true;
 
 col = instance_create_layer(x + 38, y - 86, "Instances", colliderBoss_obj);
 col.image_xscale = 0.7;
@@ -45,3 +51,6 @@ attackTintDelay = -1;
 fakegroundDestroyTimer = 200;
 
 randNum = choose(4,6);
+
+//Particle System
+partEmitter = part_emitter_create(global.partSystem);
