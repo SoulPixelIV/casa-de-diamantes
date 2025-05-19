@@ -966,6 +966,7 @@
     {"name":"frozenskull_spr","order":197,"path":"sprites/frozenskull_spr/frozenskull_spr.yy",},
     {"name":"voidBackground","order":9,"path":"tilesets/voidBackground/voidBackground.yy",},
     {"name":"pistolShot_snd","order":11,"path":"sounds/pistolShot_snd/pistolShot_snd.yy",},
+    {"name":"level28","order":3,"path":"rooms/level28/level28.yy",},
     {"name":"customization_obj","order":7,"path":"objects/customization_obj/customization_obj.yy",},
     {"name":"casinoReceptionForeground_spr","order":120,"path":"sprites/casinoReceptionForeground_spr/casinoReceptionForeground_spr.yy",},
     {"name":"dualBarettasShot_snd","order":18,"path":"sounds/dualBarettasShot_snd/dualBarettasShot_snd.yy",},

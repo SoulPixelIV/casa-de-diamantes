@@ -19,6 +19,6 @@ if (active) {
 		player_obj.slowmo = false;
 		instance_destroy(player_obj);
 		active = false;
-		room_goto(level12);
+		room_goto(level28);
 	}
 }

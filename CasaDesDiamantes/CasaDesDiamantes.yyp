@@ -1123,6 +1123,7 @@
     {"id":{"name":"frozenskull_spr","path":"sprites/frozenskull_spr/frozenskull_spr.yy",},},
     {"id":{"name":"voidBackground","path":"tilesets/voidBackground/voidBackground.yy",},},
     {"id":{"name":"pistolShot_snd","path":"sounds/pistolShot_snd/pistolShot_snd.yy",},},
+    {"id":{"name":"level28","path":"rooms/level28/level28.yy",},},
     {"id":{"name":"customization_obj","path":"objects/customization_obj/customization_obj.yy",},},
     {"id":{"name":"casinoReceptionForeground_spr","path":"sprites/casinoReceptionForeground_spr/casinoReceptionForeground_spr.yy",},},
     {"id":{"name":"dualBarettasShot_snd","path":"sounds/dualBarettasShot_snd/dualBarettasShot_snd.yy",},},
@@ -2378,6 +2379,7 @@
   ],
   "RoomOrderNodes": [
     {"roomId":{"name":"loadVars","path":"rooms/loadVars/loadVars.yy",},},
+    {"roomId":{"name":"level28","path":"rooms/level28/level28.yy",},},
     {"roomId":{"name":"level27","path":"rooms/level27/level27.yy",},},
     {"roomId":{"name":"level_ConsumedCasino","path":"rooms/level_ConsumedCasino/level_ConsumedCasino.yy",},},
     {"roomId":{"name":"level26","path":"rooms/level26/level26.yy",},},
