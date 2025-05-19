@@ -56,6 +56,15 @@ part_type_direction(global.glasShardsPart, 220, 320, 0, 0);
 part_type_speed(global.glasShardsPart, 0.8, 1.4, 0, 0.1);
 part_type_gravity(global.glasShardsPart, 0.008, 270);
 
+//Glass Shards Slowmo
+global.glasShardsSlowmoPart = part_type_create();
+part_type_sprite(global.glasShardsSlowmoPart, glasShard_spr, true, true, true);
+part_type_life(global.glasShardsSlowmoPart, 10000, 10000);
+part_type_size(global.glasShardsSlowmoPart, 0.1, 2.5, -0.015, 0);
+part_type_orientation(global.glasShardsSlowmoPart, 0, 359, 0.01, 0, 1);
+part_type_direction(global.glasShardsSlowmoPart, 120, 240, 0, 0);
+part_type_speed(global.glasShardsSlowmoPart, 0.02, 0.03, 0, 0.005);
+
 //Toxic Particles
 global.toxicPart = part_type_create();
 part_type_sprite(global.toxicPart, toxicCloud_spr, true, true, true);

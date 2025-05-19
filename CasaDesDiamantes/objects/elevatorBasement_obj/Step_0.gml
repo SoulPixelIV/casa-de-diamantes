@@ -36,6 +36,15 @@ if (elevatorNumber != 0) {
 			global.spawn = 0;
 			room_goto(level27);
 		}
+		
+		if (elevatorNumber == 4) {
+			player_obj.x = Spawn2_obj.x;
+			player_obj.y = Spawn2_obj.y;
+			player_obj.movement = true;
+			finishingTeleport = true;
+			blackscreenDelay = blackscreenDelaySave;
+			teleporting = false;
+		}
 	}
 
 	if (finishingTeleport) {

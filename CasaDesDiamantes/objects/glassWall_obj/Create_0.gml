@@ -4,6 +4,9 @@
 horspeed = 0;
 verspeed = 0;
 
+active = false;
+delayToTeleport = 200;
+
 //Stats
 colliding = true;
 hitable = true;
@@ -98,7 +101,7 @@ blend = image_blend;
 spawnedParticles = false;
 
 glasShardEmitter = part_emitter_create(global.partSystem);
-part_emitter_region(global.partSystem, glasShardEmitter, x - 36, x + 36, y - 14, y + 14, ps_shape_ellipse, ps_distr_gaussian);
+part_emitter_region(global.partSystem, glasShardEmitter, x - 16, x + 16, y - 170, y, ps_shape_ellipse, ps_distr_gaussian);
 
 //Create Emitter
 emitter = audio_emitter_create();

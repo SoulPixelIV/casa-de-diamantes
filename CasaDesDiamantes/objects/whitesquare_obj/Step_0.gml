@@ -3,14 +3,16 @@ if (instance_exists(camera_obj)) {
 	y = camera_obj.y - global.yScreenSize / 2;
 }
 
-if (image_alpha > 0.95) {
-	delayBeforeTeleport -= global.dt;
-}
+if (room != level27) {
+	if (image_alpha > 0.95) {
+		delayBeforeTeleport -= global.dt;
+	}
 
-if (delayBeforeTeleport < 0) {
-	part_emitter_destroy_all(global.partSystem);
-	audio_stop_all();
-	instance_destroy(player_obj);
-	room_goto(transitionScreen2);
+	if (delayBeforeTeleport < 0) {
+		part_emitter_destroy_all(global.partSystem);
+		audio_stop_all();
+		instance_destroy(player_obj);
+		room_goto(transitionScreen2);
+	}
 }
 
