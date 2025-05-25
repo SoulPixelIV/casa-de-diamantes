@@ -15,6 +15,7 @@ if (instance_exists(camera_obj)) {
 	camera_obj.hazeEffect = true;
 	camera_obj.drawBlackborders = true;
 	camera_obj.follow = player_obj;
+	camera_obj.noHUD = true;
 }
 
 if (instance_exists(cutieplusSteph_obj)) {

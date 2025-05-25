@@ -90,6 +90,9 @@ if (room == credits) {
 		if (audio_is_playing(faceL1_msc)) {
 			audio_stop_sound(faceL1_msc);
 		}
+		if (audio_is_playing(consumed_msc)) {
+			audio_stop_sound(consumed_msc);
+		}
 	}
 } else {
 	if (audio_is_playing(credits_msc)) {
@@ -169,6 +172,9 @@ if (room == demoend) {
 		}
 		if (audio_is_playing(faceL1_msc)) {
 			audio_stop_sound(faceL1_msc);
+		}
+		if (audio_is_playing(consumed_msc)) {
+			audio_stop_sound(consumed_msc);
 		}
 
 	}
@@ -250,6 +256,9 @@ if (room == level_Casino || room == mainmenu || room == levelSelect || room == s
 		}
 		if (audio_is_playing(faceL1_msc)) {
 			audio_stop_sound(faceL1_msc);
+		}
+		if (audio_is_playing(consumed_msc)) {
+			audio_stop_sound(consumed_msc);
 		}
 	}
 } else {
@@ -333,6 +342,9 @@ if (room == blackjackTable || room == level_CasinoRoof) {
 		}
 		if (audio_is_playing(faceL1_msc)) {
 			audio_stop_sound(faceL1_msc);
+		}
+		if (audio_is_playing(consumed_msc)) {
+			audio_stop_sound(consumed_msc);
 		}
 } else {
 	if (audio_is_playing(casinoThemeLowPass)) {
@@ -796,7 +808,7 @@ if (act5MusicOn && act5MusicStarted) {
 }
 
 //ACT6 WORLD MUSIC
-if (room == level25 || room == level26 || room == level27) {
+if (room == level25 || room == level26 || room == level27 || room == level28 || room == level_ConsumedCasino || room == level_BasementConsumed) {
 	act6MusicOn = true;
 } else {
 	act6MusicOn = false;
@@ -805,6 +817,7 @@ if (room == level25 || room == level26 || room == level27) {
 
 if (act6MusicOn && !act6MusicStarted) {
 	faceReflL1 = audio_play_sound_on(musicEmitter, faceL1, 1, 1);
+	consumedCasL1 = audio_play_sound_on(musicEmitter, consumedL1, 1, 1);
 	
 	if (audio_is_playing(dressedToKillSTEM_msc)) {
 		audio_stop_sound(dressedToKillSTEM_msc);
@@ -820,6 +833,7 @@ if (act6MusicOn && !act6MusicStarted) {
 	}
 	
 	audio_sound_gain(faceReflL1, 0, 0);
+	audio_sound_gain(consumedCasL1, 0, 0)
 	
 	act6MusicStarted = true;
 }
@@ -832,8 +846,16 @@ if (act6MusicOn && act6MusicStarted) {
 			}
 		} else if (place_meeting(x, y, musicBoxBattleBig_obj)) {
 			with (musicManager_obj) {
+				audio_sound_gain(consumedCasL1, 0, 300);
 				if (audio_sound_get_gain(faceReflL1) == 0) {
 					audio_sound_gain(faceReflL1, 1, 300);
+				}
+			}
+		} else if (place_meeting(x, y, musicBoxBattle_obj)) {
+			with (musicManager_obj) {
+				audio_sound_gain(faceReflL1, 0, 300);
+				if (audio_sound_get_gain(consumedCasL1) == 0) {
+					audio_sound_gain(consumedCasL1, 1, 300);
 				}
 			}
 		}

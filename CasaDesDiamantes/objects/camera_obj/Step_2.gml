@@ -81,7 +81,7 @@ if (cameraTargetTimer < 0)
 
 //Floating Camera
 if (instance_exists(player_obj)) {
-	if (player_obj.inputMethod == 0 && !global.pause && !dialogueSystem_obj.inCutscene) {
+	if (player_obj.inputMethod == 0 && !global.pause && !dialogueSystem_obj.inCutscene && room != level28) {
 		if ((follow == player_obj || follow = minecart_obj) && !cameraTarget && !cameraTargetMovement)
 		{
 			snapCameraX = false;

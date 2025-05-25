@@ -46,9 +46,11 @@ if (menu == 0) {
 	draw_text(32, optionsY[3], "[Level 23] Nightmare Tunnels");
 	draw_text(32, optionsY[4], "[Level 24] The Awakening");
 } else if (menu == 7) {
-	draw_text(32, optionsY[0], "[Level 25] The First Test");
-	draw_text(32, optionsY[1], "[Level 26] The Second Test");
-	draw_text(32, optionsY[2], "[Level 27] The Third Test");
+	draw_text(32, optionsY[0], "Consumed Casino");
+	draw_text(32, optionsY[1], "[Level 25] The First Test");
+	draw_text(32, optionsY[2], "[Level 26] The Second Test");
+	draw_text(32, optionsY[3], "[Level 27] The Third Test");
+	draw_text(32, optionsY[4], "[Level 28] The End");
 }
 
 draw_set_halign(fa_center);

@@ -4,5 +4,6 @@ if (instance_exists(player_obj)) {
 		instance_destroy(player_obj);
 		global.transitionScreenDest = level_ConsumedCasino;
 		room_goto(transitionScreen);
+		audio_stop_all();
 	}
 }

@@ -4,7 +4,9 @@
 if (global.pause) {
 	noHUD = true;
 } else {
-	noHUD = false;
+	if (room != level28) {
+		noHUD = false;
+	}
 }
 
 if (instance_exists(player_obj) && !noHUD)
@@ -113,6 +115,15 @@ if (instance_exists(player_obj) && !noHUD)
 		draw_set_halign(fa_left);
 	}
 	*/
+}
+
+if (room == level28) {
+	//Draw Haze Effect
+	if (hazeEffect) {
+		gpu_set_blendmode(bm_subtract);
+		draw_sprite(hazeEffectAnimated_spr, -1, 0, 0);
+		gpu_set_blendmode(bm_normal);
+	}
 }
 
 //Set Character for Dialogue

@@ -43,7 +43,7 @@ if (menu == 6) {
 	options = 4;
 }
 if (menu == 7) {
-	options = 2;
+	options = 4;
 }
 
 if (pushDelay < 0) {
@@ -236,15 +236,23 @@ if (pushDelay < 0) {
 			switch (cursorPos)
 			{
 				case 0:
-					room_goto(level25);
+					room_goto(level_ConsumedCasino);
 					global.lastCheckpoint = noone;
 				break;
 				case 1:
-					room_goto(level26);
+					room_goto(level25);
 					global.lastCheckpoint = noone;
 				break;
 				case 2:
+					room_goto(level26);
+					global.lastCheckpoint = noone;
+				break;
+				case 3:
 					room_goto(level27);
+					global.lastCheckpoint = noone;
+				break;
+				case 4:
+					room_goto(level28);
 					global.lastCheckpoint = noone;
 				break;
 			}
