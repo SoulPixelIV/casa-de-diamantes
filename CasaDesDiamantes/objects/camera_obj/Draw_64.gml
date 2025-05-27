@@ -2356,21 +2356,23 @@ if (drawPause) {
 
 //Cursor
 //Crosshair Setup
-if (!dialogueSystem_obj.inCutscene || (dialogueSystem_obj.inCutscene && drawElevatorSign) || (dialogueSystem_obj.inCutscene && showWindowMenu)) {
-	if (instance_exists(player_obj)) {
-		if (windowType == 1 || drawElevatorSign) {
-			draw_sprite(mousecursor_spr, 0, 
-				(window_mouse_get_x() / ((window_get_width()+1) / global.xScreenSize)) + (0), 
-				window_mouse_get_y() / ((window_get_height()+1) / global.yScreenSize) + (0));
-		} else if (player_obj.inputMethod == 0) {
-			if (!global.pause) {
-				draw_sprite(cursor_spr, 0, 
-				(window_mouse_get_x() / ((window_get_width()+1) / global.xScreenSize)) + (0), 
-				window_mouse_get_y() / ((window_get_height()+1) / global.yScreenSize) + (0));
-			} else {
+if (room != level28) {
+	if (!dialogueSystem_obj.inCutscene || (dialogueSystem_obj.inCutscene && drawElevatorSign) || (dialogueSystem_obj.inCutscene && showWindowMenu)) {
+		if (instance_exists(player_obj)) {
+			if (windowType == 1 || drawElevatorSign) {
 				draw_sprite(mousecursor_spr, 0, 
-				(window_mouse_get_x() / ((window_get_width()+1) / global.xScreenSize)) + (0), 
-				window_mouse_get_y() / ((window_get_height()+1) / global.yScreenSize) + (0));
+					(window_mouse_get_x() / ((window_get_width()+1) / global.xScreenSize)) + (0), 
+					window_mouse_get_y() / ((window_get_height()+1) / global.yScreenSize) + (0));
+			} else if (player_obj.inputMethod == 0) {
+				if (!global.pause) {
+					draw_sprite(cursor_spr, 0, 
+					(window_mouse_get_x() / ((window_get_width()+1) / global.xScreenSize)) + (0), 
+					window_mouse_get_y() / ((window_get_height()+1) / global.yScreenSize) + (0));
+				} else {
+					draw_sprite(mousecursor_spr, 0, 
+					(window_mouse_get_x() / ((window_get_width()+1) / global.xScreenSize)) + (0), 
+					window_mouse_get_y() / ((window_get_height()+1) / global.yScreenSize) + (0));
+				}
 			}
 		}
 	}

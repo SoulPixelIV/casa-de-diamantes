@@ -64,9 +64,11 @@ if (!inChamber) {
 	}
 
 	//Controller Line
-	if (inputMethod == 1 && !global.pause)
-	{
-		draw_sprite_ext(playerControllerLine_spr, -1, x - 6 * currDir, y - 6, 2, 1, dirCursor, -1, 1);
+	if (room != level28) {
+		if (inputMethod == 1 && !global.pause)
+		{
+			draw_sprite_ext(playerControllerLine_spr, -1, x - 6 * currDir, y - 6, 2, 1, dirCursor, -1, 1);
+		}
 	}
 
 	if (!flip || flip && huggingWall)
