@@ -173,6 +173,7 @@ global.cupyStratoDialogue2Done = false;
 global.cupyStratoDialogue3Done = false;
 global.cupyStratoDialogue4Done = false;
 global.cupyStratoDialogue5Done = false;
+global.finalRoomDialogue1 = false;
 
 global.hat = choose(noone);
 global.top1 = choose(noone);

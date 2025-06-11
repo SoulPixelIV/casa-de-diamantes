@@ -13,7 +13,7 @@ if (camera_obj.drawText) {
 		backgroundRotVal -= global.dt / 200;
 	}
 		
-	if (instance_exists(player_obj)) {
+	if (instance_exists(player_obj) && room != level28) {
 		draw_sprite_ext(playerBackground_spr, 0, player_obj.x, player_obj.y, 1, 1, backgroundRotVal, -1, 1);
 	}
 	if (instance_exists(steph2_obj)) {
@@ -40,6 +40,9 @@ if (camera_obj.drawText) {
 	if (instance_exists(cindy7_obj)) {
 		draw_sprite_ext(cindyBackground_spr, 0, cindy7_obj.x, cindy7_obj.y, 1, 1, backgroundRotVal, -1, 1);
 	}
+	if (instance_exists(cindy8_obj)) {
+		draw_sprite_ext(cindyBackground_spr, 0, cindy8_obj.x, cindy8_obj.y, 1, 1, backgroundRotVal, -1, 1);
+	}
 	if (instance_exists(komo_obj)) {
 		draw_sprite_ext(komoBackground_spr, 0, komo_obj.x, komo_obj.y, 1, 1, backgroundRotVal, -1, 1);
 	}
@@ -64,6 +67,9 @@ if (camera_obj.drawText) {
 	if (instance_exists(komo7_obj)) {
 		draw_sprite_ext(komoBackground_spr, 0, komo7_obj.x, komo7_obj.y, 1, 1, backgroundRotVal, -1, 1);
 	}
+	if (instance_exists(komo8_obj)) {
+		draw_sprite_ext(komoBackground_spr, 0, komo8_obj.x, komo8_obj.y, 1, 1, backgroundRotVal, -1, 1);
+	}
 	if (instance_exists(tristram2_obj)) {
 		draw_sprite_ext(tristramBackground_spr, 0, tristram2_obj.x, tristram2_obj.y, 1, 1, backgroundRotVal, -1, 1);
 	}
@@ -78,6 +84,9 @@ if (camera_obj.drawText) {
 	}
 	if (instance_exists(tristram6_obj)) {
 		draw_sprite_ext(tristramBackground_spr, 0, tristram6_obj.x, tristram6_obj.y, 1, 1, backgroundRotVal, -1, 1);
+	}
+	if (instance_exists(tristram7_obj)) {
+		draw_sprite_ext(tristramBackground_spr, 0, tristram7_obj.x, tristram7_obj.y, 1, 1, backgroundRotVal, -1, 1);
 	}
 	if (instance_exists(vip_obj)) {
 		draw_sprite_ext(VIPBackground_spr, 0, vip_obj.x, vip_obj.y, 1, 1, backgroundRotVal, -1, 1);

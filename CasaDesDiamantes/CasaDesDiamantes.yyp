@@ -627,6 +627,7 @@
     {"id":{"name":"bloodSpread_spr","path":"sprites/bloodSpread_spr/bloodSpread_spr.yy",},},
     {"id":{"name":"plantWallBoss_obj","path":"objects/plantWallBoss_obj/plantWallBoss_obj.yy",},},
     {"id":{"name":"__spr_ppf_pal_default","path":"sprites/__spr_ppf_pal_default/__spr_ppf_pal_default.yy",},},
+    {"id":{"name":"whitesquare2_obj","path":"objects/whitesquare2_obj/whitesquare2_obj.yy",},},
     {"id":{"name":"VIP_spr","path":"sprites/VIP_spr/VIP_spr.yy",},},
     {"id":{"name":"glasPlaneForest_spr","path":"sprites/glasPlaneForest_spr/glasPlaneForest_spr.yy",},},
     {"id":{"name":"Level7_Level8_teleporter","path":"objects/Level7_Level8_teleporter/Level7_Level8_teleporter.yy",},},
@@ -2393,8 +2394,8 @@
   ],
   "RoomOrderNodes": [
     {"roomId":{"name":"loadVars","path":"rooms/loadVars/loadVars.yy",},},
-    {"roomId":{"name":"level28","path":"rooms/level28/level28.yy",},},
     {"roomId":{"name":"level27","path":"rooms/level27/level27.yy",},},
+    {"roomId":{"name":"level28","path":"rooms/level28/level28.yy",},},
     {"roomId":{"name":"level_ConsumedCasino","path":"rooms/level_ConsumedCasino/level_ConsumedCasino.yy",},},
     {"roomId":{"name":"level26","path":"rooms/level26/level26.yy",},},
     {"roomId":{"name":"level25","path":"rooms/level25/level25.yy",},},

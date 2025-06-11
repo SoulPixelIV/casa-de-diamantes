@@ -46,6 +46,7 @@ scene42 = false;
 scene43 = false;
 scene44 = false;
 scene45 = false;
+scene46 = false;
 
 //Dialogue Markers
 scene1Low = 0;
@@ -138,6 +139,8 @@ scene44Low = 323;
 scene44High = 325;
 scene45Low = 326;
 scene45High = 333;
+scene46Low = 334;
+scene46High = 339;
 
 //Dialogue Text
 //!!!ALWAYS 1 EMPTY SPACE & 1 FREE SPACE BETWEEN SCENES
@@ -755,3 +758,15 @@ dialogue[330] = "ßIt seems lYke they don't have thYs one under control.";
 dialogue[331] = "ßDear child, dY what must be dYne.";
 dialogue[332] = "                                                                                                             ";
 dialogue[333] = "";
+
+//Scene 46 Final Room
+startScene46BlackTimer = false;
+scene46BlackTimer = 600;
+startScene46Timer = false;
+
+dialogue[334] = "$ThXere you are.";
+dialogue[335] = "$I thXnk you for joining us.";
+dialogue[336] = "$You see, I neXd all of my seeds for the trXnsformation.";
+dialogue[337] = ">And the tXme has come for all of us to be one agXin.";
+dialogue[338] = "                                                                                                             ";
+dialogue[339] = "";

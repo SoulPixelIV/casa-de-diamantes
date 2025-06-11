@@ -498,6 +498,7 @@
     {"name":"explosiveMerchantDead_obj","order":15,"path":"objects/explosiveMerchantDead_obj/explosiveMerchantDead_obj.yy",},
     {"name":"zombieBucketGirlAttack1Broken_spr","order":28,"path":"sprites/zombieBucketGirlAttack1Broken_spr/zombieBucketGirlAttack1Broken_spr.yy",},
     {"name":"bloodSpread_spr","order":1,"path":"sprites/bloodSpread_spr/bloodSpread_spr.yy",},
+    {"name":"whitesquare2_obj","order":265,"path":"objects/whitesquare2_obj/whitesquare2_obj.yy",},
     {"name":"VIP_spr","order":6,"path":"sprites/VIP_spr/VIP_spr.yy",},
     {"name":"glasPlaneForest_spr","order":4,"path":"sprites/glasPlaneForest_spr/glasPlaneForest_spr.yy",},
     {"name":"Level7_Level8_teleporter","order":41,"path":"objects/Level7_Level8_teleporter/Level7_Level8_teleporter.yy",},
