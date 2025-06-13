@@ -47,6 +47,8 @@ scene43 = false;
 scene44 = false;
 scene45 = false;
 scene46 = false;
+scene47 = false;
+scene48 = false;
 
 //Dialogue Markers
 scene1Low = 0;
@@ -141,6 +143,10 @@ scene45Low = 326;
 scene45High = 333;
 scene46Low = 334;
 scene46High = 339;
+scene47Low = 340;
+scene47High = 342;
+scene48Low = 343;
+scene48High = 345;
 
 //Dialogue Text
 //!!!ALWAYS 1 EMPTY SPACE & 1 FREE SPACE BETWEEN SCENES
@@ -770,3 +776,21 @@ dialogue[336] = "$You see, I neXd all of my seeds for the trXnsformation.";
 dialogue[337] = ">And the tXme has come for all of us to be one agXin.";
 dialogue[338] = "                                                                                                             ";
 dialogue[339] = "";
+
+//Scene 47 Final Room 2
+startScene47BlackTimer = false;
+scene47BlackTimer = 600;
+startScene47Timer = false;
+
+dialogue[340] = ";SacrificX yourselfes fXr me...now!";
+dialogue[341] = "                                                                                                             ";
+dialogue[342] = "";
+
+//Scene 48 Final Room 3
+startScene48BlackTimer = false;
+scene48BlackTimer = 600;
+startScene48Timer = false;
+
+dialogue[343] = ">sSSX sS-Steph...?";
+dialogue[344] = "                                                                                                             ";
+dialogue[345] = "";

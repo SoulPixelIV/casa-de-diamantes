@@ -1643,6 +1643,71 @@ if (startScene46Timer) {
 		inCutscene = false;
 		global.finalRoomDialogue1 = true;
 		camera_obj.follow = player_obj;
+		if (instance_exists(whitesquare3_obj)) {
+			whitesquare3_obj.open = true;
+		}
+		save_scr();
+	}
+}
+
+//Scene 47
+if (scene47) {
+	inCutscene = true;
+	startScene47Timer = true;
+	camera_obj.drawDialogueBorder = true;
+	if (!camera_obj.drawText)
+	{
+		for (i = scene47Low; i < scene47High + 1; i++)
+		{
+			camera_obj.dialogue[i] = dialogue[i];
+		}
+		camera_obj.dialogueLine = scene47Low;
+		camera_obj.drawText = true;
+	}
+	scene47 = false;
+}
+
+if (startScene47Timer) {
+	if (camera_obj.dialogueLine >= scene47High - 1) {
+		camera_obj.drawText = false;
+		startScene47Timer = false;
+		inCutscene = false;
+		global.finalRoomDialogue2 = true;
+		if (instance_exists(tristram7_obj)) {
+			tristram7_obj.open = true;
+		}
+		camera_obj.follow = player_obj;
+		save_scr();
+	}
+}
+
+//Scene 48
+if (scene48) {
+	inCutscene = true;
+	startScene48Timer = true;
+	camera_obj.drawDialogueBorder = true;
+	if (!camera_obj.drawText)
+	{
+		for (i = scene48Low; i < scene48High + 1; i++)
+		{
+			camera_obj.dialogue[i] = dialogue[i];
+		}
+		camera_obj.dialogueLine = scene48Low;
+		camera_obj.drawText = true;
+	}
+	scene48 = false;
+}
+
+if (startScene48Timer) {
+	if (camera_obj.dialogueLine >= scene48High - 1) {
+		camera_obj.drawText = false;
+		startScene48Timer = false;
+		inCutscene = false;
+		global.finalRoomDialogue2 = true;
+		if (instance_exists(tristram7_obj)) {
+			tristram7_obj.open = true;
+		}
+		camera_obj.follow = player_obj;
 		save_scr();
 	}
 }
