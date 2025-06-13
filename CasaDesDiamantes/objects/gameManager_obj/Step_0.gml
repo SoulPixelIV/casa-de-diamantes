@@ -10,12 +10,22 @@ if (steam_initialised()) {
 		steam_set_rich_presence("steam_display", "#StatusMainMenu");
 	} else if (room == level1 || room == level2 || room == level3) {
 		steam_set_rich_presence("steam_display", "#StatusParedia");
-	} else if (room == level_Casino || room == level_CasinoRoof) {
+	} else if (room == level_Casino || room == level_CasinoRoof || room == level_Basement || room == level_DiningHall || room == level_TristramRoom) {
 		steam_set_rich_presence("steam_display", "#StatusCasino");
 	} else if (room == blackjackTable) {
 		steam_set_rich_presence("steam_display", "#StatusBlackjack");
 	} else if (room == level4 || room == level5A || room == level5B || room == level6 || room == level7 || room == level8 || room == level9) {
 		steam_set_rich_presence("steam_display", "#StatusSenzelaForest");
+	} else if (room == warpzone1 || room == warpzone2 || room == warpzone3) {
+		steam_set_rich_presence("steam_display", "#StatusWarpzone");
+	} else if (room == level10 || room == level11 || room == level12 || room == level13 || room == level14) {
+		steam_set_rich_presence("steam_display", "#StatusEndlessDepths");
+	} else if (room == level15 || room == level16 || room == level17 || room == level18 || room == level19) {
+		steam_set_rich_presence("steam_display", "#StatusEDENPowerplant");
+	} else if (room == level20 || room == level21 || room == level22 || room == level23 || room == level24) {
+		steam_set_rich_presence("steam_display", "#StatusStratosTerminal");
+	} else if (room == level25 || room == level26 || room == level27 || room == level28 || room == level_ConsumedCasino || room == level_BasementConsumed) {
+		steam_set_rich_presence("steam_display", "#StatusMothersWomb");
 	}
 }
 

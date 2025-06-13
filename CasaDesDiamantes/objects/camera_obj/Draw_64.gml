@@ -1630,6 +1630,7 @@ if (showWindowMenu)
 		drawBlackborders = false;
 		drawText = false;
 		showWindowMenu = false;
+		follow = player_obj;
 		windowType = 0;
 	}
 	

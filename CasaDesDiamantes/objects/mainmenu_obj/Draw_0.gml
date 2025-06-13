@@ -115,6 +115,12 @@ if (drawStartMenu) {
 
 										global.dualBarettasUpgrade1 = false;
 										global.dualBarettasUpgrade2 = false;
+										
+										global.silencedMPUpgrade1 = false;
+										global.silencedMPUpgrade2 = false;
+
+										global.sniperUpgrade1 = false;
+										global.sniperUpgrade2 = false;
 
 										global.cupyUpgrade1 = false;
 										global.cupyUpgrade2 = false;
