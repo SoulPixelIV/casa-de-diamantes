@@ -25,7 +25,10 @@ if (startDelay < 0) {
 		dialogueDelay -= global.dt;
 		
 		if (dialogueDelay < 0) {
-			//ACTIVATE LASER
+			if (instance_exists(finalRoomLaser_obj)) {
+				finalRoomLaser_obj.open = true;
+				global.dialogueDelay = 9999999999999;
+			}
 		}
 	}
 }

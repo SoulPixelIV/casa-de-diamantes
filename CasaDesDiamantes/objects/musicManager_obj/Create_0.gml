@@ -48,6 +48,8 @@ sliceL4 = sliceL4_msc;
 faceL1 = faceL1_msc;
 consumedL1 = consumed_msc;
 
+stopMusicForCredits = false;
+
 // Low-pass route
 usedFilter = false;
 musicEmitter = audio_emitter_create();

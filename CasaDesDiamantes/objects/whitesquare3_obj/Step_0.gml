@@ -4,6 +4,10 @@ if (instance_exists(camera_obj)) {
 }
 
 if (open) {
+	if (!playedSound) {
+		audio_play_sound(atomicLaserMuffled_snd, 1, false);
+		playedSound = true;
+	}
 	if (image_alpha < 1) {
 		image_alpha += global.dt / 30;
 	} else {

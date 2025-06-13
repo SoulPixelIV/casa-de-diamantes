@@ -58,6 +58,8 @@ if (ppfx_system_exists(ppfx_id)) {
 			ppfx_id.ProfileLoad(act4_profile);
 		} else if (room == level20 || room == level21 || room == level22 || room == level23 || room == level24) {
 			ppfx_id.ProfileLoad(act5_profile);
+		} else if (room == endcredits) {
+			ppfx_id.ProfileLoad(endCredits_profile);
 		}
 	}
 	

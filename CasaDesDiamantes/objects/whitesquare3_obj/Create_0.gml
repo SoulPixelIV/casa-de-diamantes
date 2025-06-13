@@ -7,5 +7,6 @@ open = false;
 startDelay = 700;
 dialogueTriggered = false;
 dialogueDelay = 700;
+playedSound = false;
 
 

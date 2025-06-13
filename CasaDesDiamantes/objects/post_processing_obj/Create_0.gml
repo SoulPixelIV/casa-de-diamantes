@@ -78,6 +78,13 @@ var act5Effects = [
 	new FX_ChromaticAberration(true, 0),
 ];
 act5_profile = new PPFX_Profile("Main", act5Effects);
+var endCreditsEffects = [
+	new FX_Bloom(true, 6, 0.5, 1, c_white, 0.3, true, undefined, 0.8, 1, true),
+	new FX_SunShafts(true, [0.5, 0.5], 0.3, 0.43, 0.45, 1.6, 0.4, true, 0.7, 0.05, 0.15),
+	new FX_NoiseGrain(true, 0.5),
+	new FX_ChromaticAberration(true, 0),
+];
+endCredits_profile = new PPFX_Profile("Main", endCreditsEffects);
 
 if (room == mainmenu || room == levelSelect || room == storySelect || room == demoend || room == settings || room == upgrademenu || room == blimpAnim || room == blimpAnim2) {
 	ppfx_id.ProfileLoad(menu_profile);
@@ -129,4 +136,6 @@ if (room == mainmenu || room == levelSelect || room == storySelect || room == de
 	ppfx_id.ProfileLoad(act4_profile);
 } else if (room == level20 || room == level21 || room == level22 || room == level23 || room == level24) {
 	ppfx_id.ProfileLoad(act5_profile);
+} else if (room == endcredits) {
+	ppfx_id.ProfileLoad(endCredits_profile);
 }

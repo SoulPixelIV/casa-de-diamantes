@@ -6,6 +6,6 @@ open = false;
 
 startDelay = 700;
 dialogueTriggered = false;
-dialogueDelay = 700;
+dialogueDelay = 400;
 
 
