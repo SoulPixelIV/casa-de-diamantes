@@ -9,9 +9,10 @@ if (window_get_fullscreen())
 }
 else
 {
-	window_set_position(display_get_width() / 2 - xScreenSize * zoom, display_get_height() / 2 - yScreenSize * zoom);
+	//window_set_position(display_get_width() / 2 - xScreenSize * zoom, display_get_height() / 2 - yScreenSize * zoom);
 }
 
+/*
 if (keyboard_check_pressed(ord("P")))
 {
 	if (zoom == 1)
@@ -22,7 +23,7 @@ if (keyboard_check_pressed(ord("P")))
 	{
 		zoom = 1;
 	}
-}
+}*/
 
 if (drawStartMenu) {
 	if (keyboard_check_pressed(vk_escape)) {

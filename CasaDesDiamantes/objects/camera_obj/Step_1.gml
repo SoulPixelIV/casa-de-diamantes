@@ -5,11 +5,15 @@ if (window_get_fullscreen())
 		window_set_size(global.xScreenSize * zoom, global.yScreenSize * zoom);
 		surface_resize(application_surface, global.xScreenSize, global.yScreenSize);
 		display_set_gui_size(global.xScreenSize, global.yScreenSize);
+		centeredWindow = false;
 	}
 }
 else
 {
-	window_set_position(display_get_width() / 2 - global.xScreenSize * zoom, display_get_height() / 2 - global.yScreenSize * zoom);
+	if (!centeredWindow) {
+		//window_set_position(display_get_width() / 2, display_get_height() / 2);
+		centeredWindow = true;
+	}
 }
 
 /*

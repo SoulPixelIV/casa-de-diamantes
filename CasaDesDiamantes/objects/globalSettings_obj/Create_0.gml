@@ -12,6 +12,10 @@ keyboardActive = true;
 global.xScreenSize = 480;
 global.yScreenSize = 270;
 
+window_set_size(global.xScreenSize * 3, global.yScreenSize * 3);
+surface_resize(application_surface, global.xScreenSize, global.yScreenSize);
+display_set_gui_size(global.xScreenSize, global.yScreenSize);
+
 global.pause = false;
 
 surface_depth_disable(true);

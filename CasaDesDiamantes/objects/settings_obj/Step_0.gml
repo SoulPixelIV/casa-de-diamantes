@@ -61,6 +61,16 @@ if (instance_exists(cursorHitbox_obj)) {
 							}
 						break;
 						case 3:
+							if (window_get_fullscreen()) {
+								window_set_fullscreen(false);
+								window_set_size(xScreenSize*3, yScreenSize*3);
+								surface_resize(application_surface, xScreenSize, yScreenSize);
+								display_set_gui_size(xScreenSize, yScreenSize);
+							} else {
+								window_set_fullscreen(true);
+							}
+						break;
+						case 4:
 							room_goto(mainmenu);
 						break;
 					}
@@ -204,6 +214,16 @@ if (!drawStartMenu) {
 			case 2:
 			break;
 			case 3:
+				if (window_get_fullscreen()) {
+					window_set_fullscreen(false);
+					window_set_size(xScreenSize*3, yScreenSize*3);
+					surface_resize(application_surface, xScreenSize, yScreenSize);
+					display_set_gui_size(xScreenSize, yScreenSize);
+				} else {
+					window_set_fullscreen(true);
+				}
+			break;
+			case 4:
 				room_goto(mainmenu);
 			break;
 		}

@@ -9,7 +9,7 @@ if (window_get_fullscreen())
 }
 else
 {
-	window_set_position(display_get_width() / 2 - xScreenSize * zoom, display_get_height() / 2 - yScreenSize * zoom);
+	//window_set_position(display_get_width() / 2 - xScreenSize * zoom, display_get_height() / 2 - yScreenSize * zoom);
 }
 
 if (keyboard_check_pressed(ord("P")))

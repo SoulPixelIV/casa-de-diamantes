@@ -1,6 +1,6 @@
 xScreenSize = global.xScreenSize;
 yScreenSize = global.yScreenSize;
-zoom = 2;
+zoom = 3;
 xScreenSizeNew = x;
 yScreenSizeNew = y;
 snapCameraX = false;
@@ -107,6 +107,8 @@ newWeaponTimerSave = newWeaponTimer;
 deathDelayTimerSave = deathDelayTimer;
 infectionHealedTextTimerSave = infectionHealedTextTimer;
 weaponProhibitedTextTimerSave = weaponProhibitedTextTimer;
+
+centeredWindow = false;
 
 shake = false;
 shake_time = 0;
