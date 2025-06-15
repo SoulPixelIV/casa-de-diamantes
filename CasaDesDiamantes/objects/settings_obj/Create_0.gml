@@ -16,6 +16,6 @@ buttonBufferSave = buttonBuffer;
 
 titleAlpha = 0;
 
-optionsY = [200, 216, 232, 248, 264];
+optionsY = [176, 192, 208, 224, 240];
 
 cursorPos = 0;
