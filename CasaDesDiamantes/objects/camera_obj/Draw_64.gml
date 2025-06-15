@@ -9,6 +9,10 @@ if (global.pause) {
 	}
 }
 
+draw_text(128, 32, "delta_time (ms): " + string(delta_time / 1000000));
+draw_text(128, 64, "global.dt: " + string(global.dt));
+draw_text(128, 96, "global timescale: " + string(global.timeScale));
+
 if (instance_exists(player_obj) && !noHUD)
 {
 	//Ammo Counter
