@@ -31,28 +31,28 @@ if (!offline) {
 		audio_emitter_position(emitter, x, y, 0);
 	}
 	if (audio_exists(minecartSound)) {
-		audio_sound_gain(minecartSound, 1 * abs(horspeed), 0);
+		audio_sound_gain(minecartSound, 1 * (horspeed * 100), 0);
 	}
 
 	if (instance_exists(player_obj))
 	{
 		if (inMinecart && player_obj.key_left)
 		{
-			horspeed -= movSpeed;
-			animationSpeed -= movSpeed;
+			horspeed -= movSpeed * global.dt;
+			animationSpeed -= movSpeed * global.dt;
 		}
 		if (inMinecart && player_obj.key_right)
 		{
-			horspeed += movSpeed;
-			animationSpeed += movSpeed;
+			horspeed += movSpeed * global.dt;
+			animationSpeed += movSpeed * global.dt;
 		}
 
 		if (inMinecart)
 		{
 			if (horspeed > 0 && !player_obj.key_right)
 			{
-				horspeed -= movSpeed / 5;
-				animationSpeed -= movSpeed / 5;
+				horspeed -= (movSpeed / 5) * global.dt;
+				animationSpeed -= (movSpeed / 5) * global.dt;
 				if (horspeed < 0.1)
 				{
 					horspeed = 0;
@@ -63,8 +63,8 @@ if (!offline) {
 			}
 			if (horspeed < 0 && !player_obj.key_left)
 			{
-				horspeed += movSpeed / 5;
-				animationSpeed += movSpeed / 5;
+				horspeed += (movSpeed / 5) * global.dt;
+				animationSpeed += (movSpeed / 5) * global.dt;
 				if (horspeed > -0.1)
 				{
 					horspeed = 0;
@@ -78,7 +78,7 @@ if (!offline) {
 		{
 			if (horspeed > 0)
 			{
-				horspeed -= movSpeed / 5;
+				horspeed -= (movSpeed / 5) * global.dt;
 				if (horspeed < 0.1)
 				{
 					horspeed = 0;
@@ -86,7 +86,7 @@ if (!offline) {
 			}
 			if (horspeed < 0)
 			{
-				horspeed += movSpeed / 5;
+				horspeed += (movSpeed / 5) * global.dt;
 				if (horspeed > -0.1)
 				{
 					horspeed = 0;
@@ -95,7 +95,7 @@ if (!offline) {
 		
 			if (animationSpeed > 0)
 			{
-				animationSpeed -= movSpeed / 5;
+				animationSpeed -= (movSpeed / 5) * global.dt;
 				if (animationSpeed < 0.2)
 				{
 					animationSpeed = 0;
@@ -103,7 +103,7 @@ if (!offline) {
 			}
 			if (animationSpeed < 0)
 			{
-				animationSpeed += movSpeed / 5;
+				animationSpeed += (movSpeed / 5) * global.dt;
 				if (animationSpeed > -0.2)
 				{
 					animationSpeed = 0;
@@ -220,4 +220,12 @@ if (!offline) {
 	if (audio_exists(minecartSound)) {
 		audio_stop_sound(minecartSound);
 	}
+}
+
+if (global.pause) {
+	startedMinecartSound = false;
+	audio_stop_sound(minecart_snd);
+} else {
+	minecartSound = audio_play_sound_on(emitter, minecart_snd, true, false);
+	startedMinecartSound = true;
 }
