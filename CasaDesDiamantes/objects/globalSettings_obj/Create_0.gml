@@ -4,7 +4,7 @@ randomize();
 global.timeScale = 1;
 global.gamma = 1.4;
 global.zoom = 3;
-TARGET_FRAMERATE = 50;
+TARGET_FRAMERATE = 60;
 cursor_sprite = noone;
 realTimeScale = global.timeScale;
 restartInProg = false;
@@ -32,8 +32,8 @@ global.optixFontHuge = font_add("Optixal.ttf", 18, true, false, 32, 128);
 //ideal_delta_time = 1000000 / room_speed;
 //global.dt = clamp((delta_time / ideal_delta_time) * realTimeScale, 0.1, 3);
 //global.dtNoSlowmo = clamp(delta_time / ideal_delta_time, 0.1, 3);
-global.dt = clamp(((delta_time / 1000000) * 185) * realTimeScale, 0, 10);
-global.dtNoSlowmo = clamp((delta_time / 1000000) * 185, 0, 10);
+global.dt = clamp(((delta_time / 1000000) * 185) * realTimeScale, 0, 5);
+global.dtNoSlowmo = clamp((delta_time / 1000000) * 185, 0, 5);
 
 global.tilemap = layer_tilemap_get_id("TileCollider");
 
