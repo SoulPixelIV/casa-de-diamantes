@@ -2286,6 +2286,8 @@ if (drawPause) {
 		}
 		if (pauseOffset < 142) {
 			pauseOffset += round(global.dtNoSlowmo) * 2;
+		} else {
+			pauseOffset = 142;
 		}
 	}
 	
