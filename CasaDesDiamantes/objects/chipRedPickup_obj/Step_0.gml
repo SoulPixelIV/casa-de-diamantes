@@ -16,26 +16,26 @@ if (follow) {
 		if (player_obj.x > x)
 		{
 			if (horspeed < 5) {
-				horspeed += 0.1;
+				horspeed += 0.1 * global.dt;
 			}
 		}
 		else
 		{
 			if (horspeed > -5) {
-				horspeed += -0.1;
+				horspeed += -0.1 * global.dt;
 			}
 		}
 	
 		if (player_obj.y > y)
 		{
 			if (verspeed < 5) {
-				verspeed += 0.1;
+				verspeed += 0.1 * global.dt;
 			}
 		}
 		else
 		{
 			if (verspeed > -5) {
-				verspeed += -0.1;
+				verspeed += -0.1 * global.dt;
 			}
 		}
 	} else {

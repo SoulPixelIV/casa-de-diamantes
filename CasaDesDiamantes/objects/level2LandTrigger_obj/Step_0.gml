@@ -5,7 +5,7 @@ if (startTimer) {
 if (firstBlackscreen) {
 	camera_obj.blackscreenStrength += global.dt / 10;
 	
-	if (camera_obj.blackscreenStrength > 1) {
+	if (camera_obj.blackscreenStrength >= 1) {
 		firstBlackscreen = false;
 		spawnEverything = true;
 		
@@ -15,8 +15,8 @@ if (firstBlackscreen) {
 
 //FIRST BLACKSCREEN LEAVING
 if (timer < 0 && timer2 > 0) {
-	if (camera_obj.blackscreenStrength > 0.5) {
-		camera_obj.blackscreenStrength -= global.dt / 1300;
+	if (camera_obj.blackscreenStrength > 0.2) {
+		camera_obj.blackscreenStrength -= global.dt / 900;
 	}
 	startTimer2 = true;
 	

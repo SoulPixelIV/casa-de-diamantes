@@ -11,20 +11,20 @@ if (distance_to_object(player_obj) < 32)
 if (follow) {
 	if (player_obj.x > x)
 	{
-		horspeed += 0.1;
+		horspeed += 0.1 * global.dt;
 	}
 	else
 	{
-		horspeed += -0.1;
+		horspeed += -0.1 * global.dt;
 	}
 	
 	if (player_obj.y > y)
 	{
-		verspeed += 0.1;
+		verspeed += 0.1 * global.dt;
 	}
 	else
 	{
-		verspeed += -0.1;
+		verspeed += -0.1 * global.dt;
 	}
 }
 
