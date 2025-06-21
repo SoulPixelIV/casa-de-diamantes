@@ -2,6 +2,26 @@
 image_speed = 0;
 image_index += (global.dt / 15) * animationSpeed;
 
+var minecartIsMoving = abs(horspeed) > 0.05; // Schwellenwert gegen Flackern
+var sound_is_playing = audio_is_playing(minecartSound);
+
+// Sound stoppen wenn Minecart steht
+if (!minecartIsMoving && sound_is_playing) {
+    audio_stop_sound(minecartSound);
+    startedMinecartSound = false;
+}
+
+if (minecartIsMoving && !sound_is_playing && !global.pause) {
+    minecartSound = audio_play_sound_on(emitter, minecart_snd, true, false);
+    startedMinecartSound = true;
+}
+
+// Dynamische Lautstärke je nach Geschwindigkeit
+if (minecartIsMoving) {
+    var gain = clamp(abs(horspeed) / 1.65, 0, 1); // Normalisieren
+    audio_sound_gain(minecartSound, gain, 0.1); // mit weichem Übergang
+}
+
 if (!offline) {
 	enterDelay -= global.dt;
 
@@ -28,10 +48,7 @@ if (!offline) {
 
 	//Audio
 	if (audio_emitter_exists(emitter)) {
-		audio_emitter_position(emitter, x, y, 0);
-	}
-	if (audio_exists(minecartSound)) {
-		audio_sound_gain(minecartSound, 1 * (horspeed * 100), 0);
+		audio_emitter_position(emitter, x + 48, y, 0);
 	}
 
 	if (instance_exists(player_obj))
@@ -220,12 +237,4 @@ if (!offline) {
 	if (audio_exists(minecartSound)) {
 		audio_stop_sound(minecartSound);
 	}
-}
-
-if (global.pause) {
-	startedMinecartSound = false;
-	audio_stop_sound(minecart_snd);
-} else {
-	minecartSound = audio_play_sound_on(emitter, minecart_snd, true, false);
-	startedMinecartSound = true;
 }
