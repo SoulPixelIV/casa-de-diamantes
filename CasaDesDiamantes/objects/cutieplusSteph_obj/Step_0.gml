@@ -5,15 +5,32 @@ image_index += (global.dt / 15) * animationSpeed;
 target = player_obj;
 
 if (instance_exists(target)) {
-	if (distance_to_point(target.x - 27 * target.image_xscale, target.y - 33) > 16) {
-		move_towards_point(target.x - 27 * target.image_xscale, target.y - 33, movspeed);
-		if (player_obj.image_xscale == 1) {
-			image_xscale = 1;
+	//Image Rotation
+	var target_scale = player_obj.image_xscale;
+	if (target_scale != image_xscale && !turnMinus && !turnPlus) {
+		if (image_xscale == 1) {
+			turnMinus = true;
+		} else {
+			turnPlus = true;
+		}
+	}
+		
+	if (turnMinus) {
+		if (image_xscale > -1) {
+			image_xscale -= global.dt / 10;
 		} else {
 			image_xscale = -1;
+			turnMinus = false;
 		}
-	} else {
-		speed = 0;
+	}
+		
+	if (turnPlus) {
+		if (image_xscale < 1) {
+			image_xscale += global.dt / 10;
+		} else {
+			image_xscale = 1;
+			turnPlus = false;
+		}
 	}
 }
 

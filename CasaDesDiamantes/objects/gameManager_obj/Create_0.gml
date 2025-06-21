@@ -50,7 +50,7 @@ global.silencedMPUpgrade2 = false;
 global.sniperUpgrade1 = false;
 global.sniperUpgrade2 = false;
 
-global.cupyUpgrade1 = false;
+global.cupyUpgrade1 = true;
 global.cupyUpgrade2 = false;
 
 global.boughtSkin1 = false;
