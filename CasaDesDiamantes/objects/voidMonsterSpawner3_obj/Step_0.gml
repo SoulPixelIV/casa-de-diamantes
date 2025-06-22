@@ -1,4 +1,7 @@
 if (open && !createdCloud) {
-	instance_create_layer(voidMonsterPos4_obj.x, voidMonsterPos4_obj.y, "ForegroundObjects", voidMonster4_obj);
+	if (instance_exists(voidMonsterSpawnerFINAL4_obj)) {
+		voidMonsterSpawnerFINAL4_obj.x = voidMonsterPos4_obj.x;
+		voidMonsterSpawnerFINAL4_obj.y = voidMonsterPos4_obj.y;
+	}
 	createdCloud = true;
 }

@@ -98,6 +98,17 @@ part_type_gravity(global.voidPart, 0.0001, 270);
 part_type_color1(global.voidPart, c_red);
 part_type_alpha3(global.voidPart, 0, 0.8, 0);
 
+//Void Particles
+global.voidMonsterPart = part_type_create();
+part_type_sprite(global.voidMonsterPart, voidMonster_spr, true, true, true);
+part_type_life(global.voidMonsterPart, 300, 700);
+part_type_size(global.voidMonsterPart, 0.7, 3, 0, 0);
+part_type_orientation(global.voidMonsterPart, 0, 359, 0.02, 0, 1);
+part_type_direction(global.voidMonsterPart, 0, 359, 0, 3);
+part_type_gravity(global.voidMonsterPart, 0.0001, 270);
+part_type_color1(global.voidMonsterPart, c_red);
+part_type_alpha3(global.voidMonsterPart, 0, 0.8, 0);
+
 //Eyes Particles
 global.eyesPart = part_type_create();
 part_type_sprite(global.eyesPart, voidMonsterEyes_spr, true, true, true);
