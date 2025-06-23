@@ -1082,7 +1082,7 @@ if (onLadder && !isZombie && !isDashing)
 	}
 }
 
-if (shootingAllowed && !global.pause) {
+if (shootingAllowed && !global.pause && !inCutscene && !camera_obj.drawTutorialInfection) {
 	if (!isZombie && !deathActivated)
 	{
 		//Pistol
@@ -1399,7 +1399,7 @@ with (gameManager_obj)
 }	
 
 //Weapon Switching
-if (!isZombie && !reloading && !inCutscene)
+if (!isZombie && !reloading && !inCutscene && !camera_obj.drawTutorialInfection)
 {
 	//Change to other tier weapon with "Q"
 	if (key_lastWeapon) {
