@@ -1399,7 +1399,7 @@ with (gameManager_obj)
 }	
 
 //Weapon Switching
-if (!isZombie && !reloading && !inCutscene && !camera_obj.drawTutorialInfection)
+if (!isZombie && !reloading && !inCutscene && !camera_obj.drawTutorialInfection && movement)
 {
 	//Change to other tier weapon with "Q"
 	if (key_lastWeapon) {
