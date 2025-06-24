@@ -40,13 +40,15 @@ if (hp > 0 && !inChamber)
 		}
 	}
 	
-	if (invincible && invincibleHitCooldown < 0) {
-		if (invincible && invincibleHitCooldown < 0 && dodgeRewardTimer < 0) {
-			audio_play_sound(ding_snd, 1, false);
-			repeat(choose(2, 3)) {
-				instance_create_layer(x, y, "Instances", chipBluePickup_obj);
+	if (!place_meeting(x, y, enemyBlockZone_obj)) {
+		if (invincible && invincibleHitCooldown < 0) {
+			if (invincible && invincibleHitCooldown < 0 && dodgeRewardTimer < 0) {
+				audio_play_sound(ding_snd, 1, false);
+				repeat(choose(2, 3)) {
+					instance_create_layer(x, y, "Instances", chipBluePickup_obj);
+				}
+				dodgeRewardTimer = dodgeRewardTimerSave;
 			}
-			dodgeRewardTimer = dodgeRewardTimerSave;
 		}
 	}
 }
