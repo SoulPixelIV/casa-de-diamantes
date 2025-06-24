@@ -7,9 +7,13 @@ if (!global.dialogueDelayStart) {
 	if ((distance_to_object(player_obj) < 32 && player_obj.key_up_pressed) && !global.pause && !camera_obj.showWindowMenu && !dialogueTriggered && player_obj.grounded && !global.dialogueDelayStart)
 	{
 		global.dialogueDelayStart = true;
-		dialogueSystem_obj.scene2 = true;
+		//dialogueSystem_obj.scene2 = true;
 		player_obj.movement = false;
 		camera_obj.drawBlackborders = true;
 		dialogueTriggered = true;
+		camera_obj.showWindowMenu = true;
+		camera_obj.windowType = 1;
+		camera_obj.follow = player_obj;
+		camera_obj.drawDialogueBorder = false;
 	}
 }
