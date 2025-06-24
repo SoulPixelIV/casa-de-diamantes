@@ -147,7 +147,6 @@ if (movement)
 		}
 		
 		//MOVE TOWARDS PLAYER
-		//if (distance_to_object(player_obj) > DistFromPlayer) {
 		if (player_obj.x + playerPosRandOffsetX > x) {
 			horspeed = movSpeed;
 		} else {
@@ -568,7 +567,7 @@ if (audio_emitter_exists(emitter)) {
 
 //Collision
 //horspeed
-if (place_meeting(x + (horspeed * global.dt), y, collider_obj) || place_meeting(x + (horspeed * global.dt), y, neuralColliders_obj))
+if (place_meeting(x + (horspeed * global.dt), y, collider_obj) || place_meeting(x + (horspeed * global.dt), y, neuralColliders_obj) || place_meeting(x + (horspeed * global.dt), y, lasergate_obj) || place_meeting(x + (horspeed * global.dt), y, enemyBlockZone_obj) || place_meeting(x + (horspeed * global.dt), y, colliderPlayerOnly_obj))
 {
 	if (sign(horspeed) != 0)
 	{
@@ -580,7 +579,7 @@ if (place_meeting(x + (horspeed * global.dt), y, collider_obj) || place_meeting(
 	}
 } 
 //verspeed
-if (place_meeting(x, y + (verspeed * global.dt), collider_obj) || place_meeting(x, y + (verspeed * global.dt), neuralColliders_obj))
+if (place_meeting(x, y + (verspeed * global.dt), collider_obj) || place_meeting(x, y + (verspeed * global.dt), neuralColliders_obj) || place_meeting(x, y + (verspeed * global.dt), lasergate_obj) || place_meeting(x, y + (verspeed * global.dt), enemyBlockZone_obj) || place_meeting(x, y + (verspeed * global.dt), colliderPlayerOnly_obj))
 {
 	if (sign(verspeed) != 0)
 	{

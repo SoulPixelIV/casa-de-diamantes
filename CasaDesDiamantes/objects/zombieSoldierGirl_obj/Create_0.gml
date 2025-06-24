@@ -74,6 +74,8 @@ lineFlashTimer = 10;
 lineColor = c_yellow;
 animationSpeed = 1;
 headshot = false;
+lastSafeZoneX = x;
+lastSafeZoneY = y;
 
 aggroTimerSave = aggroTimer;
 deaggroTimerSave = deaggroTimer;
