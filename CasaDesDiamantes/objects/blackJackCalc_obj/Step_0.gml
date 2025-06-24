@@ -225,10 +225,15 @@ if (keyboard_check(vk_escape) || gamepad_button_check_pressed(4, gp_select) || g
 			global.pushDelay = global.pushDelaySave;
 			playedSound = false;
 			screen = 1;
+		} else if (screen == 5) {
+			global.pushDelay = global.pushDelaySave;
+			playedSound = false;
+			screen = 1;
 		} else {
 			global.spawn = 1;
 			global.pushDelay = global.pushDelaySave;
 			playedSound = false;
+			global.money += blackJackCalc_obj.moneypool;
 			room_goto(level_Casino);
 		}
 	}
