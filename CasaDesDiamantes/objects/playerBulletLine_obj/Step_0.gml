@@ -21,6 +21,8 @@ if (theta > 14 && theta < 90) {
 x = originX + lengthdir_x(radius, theta);
 y = originY + lengthdir_y(radius, theta); */
 
-x = player_obj.x;
-y = player_obj.y - 5;
-image_angle = player_obj.dirCursor;
+if (instance_exists(player_obj)) {
+	x = player_obj.x;
+	y = player_obj.y - 5;
+	image_angle = player_obj.dirCursor;
+}
