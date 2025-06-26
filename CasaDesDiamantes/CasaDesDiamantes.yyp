@@ -1582,6 +1582,7 @@
     {"id":{"name":"spotlightYellowIntense_obj","path":"objects/spotlightYellowIntense_obj/spotlightYellowIntense_obj.yy",},},
     {"id":{"name":"level22","path":"rooms/level22/level22.yy",},},
     {"id":{"name":"fallingGround_spr","path":"sprites/fallingGround_spr/fallingGround_spr.yy",},},
+    {"id":{"name":"staticnoise3","path":"rooms/staticnoise3/staticnoise3.yy",},},
     {"id":{"name":"overworldTrigger5_obj","path":"objects/overworldTrigger5_obj/overworldTrigger5_obj.yy",},},
     {"id":{"name":"bet1000_spr","path":"sprites/bet1000_spr/bet1000_spr.yy",},},
     {"id":{"name":"level5B","path":"rooms/level5B/level5B.yy",},},
@@ -2276,6 +2277,7 @@
     {"id":{"name":"plantGrowing_snd","path":"sounds/plantGrowing_snd/plantGrowing_snd.yy",},},
     {"id":{"name":"mett_snd","path":"sounds/mett_snd/mett_snd.yy",},},
     {"id":{"name":"collider_obj","path":"objects/collider_obj/collider_obj.yy",},},
+    {"id":{"name":"staticnoise3_obj","path":"objects/staticnoise3_obj/staticnoise3_obj.yy",},},
     {"id":{"name":"powerplantTiles_spr","path":"sprites/powerplantTiles_spr/powerplantTiles_spr.yy",},},
     {"id":{"name":"upgrademenuCursor_obj","path":"objects/upgrademenuCursor_obj/upgrademenuCursor_obj.yy",},},
     {"id":{"name":"casinoTiles","path":"tilesets/casinoTiles/casinoTiles.yy",},},
@@ -2513,6 +2515,7 @@
     {"roomId":{"name":"upgrademenu2","path":"rooms/upgrademenu2/upgrademenu2.yy",},},
     {"roomId":{"name":"scare","path":"rooms/scare/scare.yy",},},
     {"roomId":{"name":"staticnoise2","path":"rooms/staticnoise2/staticnoise2.yy",},},
+    {"roomId":{"name":"staticnoise3","path":"rooms/staticnoise3/staticnoise3.yy",},},
   ],
   "TextureGroups": [
     {"resourceType":"GMTextureGroup","resourceVersion":"1.3","name":"Default","autocrop":true,"border":2,"compressFormat":"bz2","directory":"","groupParent":null,"isScaled":true,"loadType":"default","mipsToGenerate":0,"targets":-1,},
