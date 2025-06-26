@@ -1528,6 +1528,7 @@
     {"id":{"name":"playerShotgunWalkingReverse_spr","path":"sprites/playerShotgunWalkingReverse_spr/playerShotgunWalkingReverse_spr.yy",},},
     {"id":{"name":"GMWwise","path":"extensions/GMWwise/GMWwise.yy",},},
     {"id":{"name":"smokingTop_spr","path":"sprites/smokingTop_spr/smokingTop_spr.yy",},},
+    {"id":{"name":"staticnoise2_obj","path":"objects/staticnoise2_obj/staticnoise2_obj.yy",},},
     {"id":{"name":"crawler_spr","path":"sprites/crawler_spr/crawler_spr.yy",},},
     {"id":{"name":"roseRoot_spr","path":"sprites/roseRoot_spr/roseRoot_spr.yy",},},
     {"id":{"name":"playerJumpSpinUnequippedNude_spr","path":"sprites/playerJumpSpinUnequippedNude_spr/playerJumpSpinUnequippedNude_spr.yy",},},
@@ -2092,6 +2093,7 @@
     {"id":{"name":"casinoWindowBackground_obj","path":"objects/casinoWindowBackground_obj/casinoWindowBackground_obj.yy",},},
     {"id":{"name":"playerWalkingDraft2_spr","path":"sprites/playerWalkingDraft2_spr/playerWalkingDraft2_spr.yy",},},
     {"id":{"name":"playerFlip_spr","path":"sprites/playerFlip_spr/playerFlip_spr.yy",},},
+    {"id":{"name":"staticnoise2","path":"rooms/staticnoise2/staticnoise2.yy",},},
     {"id":{"name":"ammoCircleBlackField_spr","path":"sprites/ammoCircleBlackField_spr/ammoCircleBlackField_spr.yy",},},
     {"id":{"name":"komoBackground_spr","path":"sprites/komoBackground_spr/komoBackground_spr.yy",},},
     {"id":{"name":"maskAnimationFunctions","path":"scripts/maskAnimationFunctions/maskAnimationFunctions.yy",},},
@@ -2510,6 +2512,7 @@
     {"roomId":{"name":"weaponRemove","path":"rooms/weaponRemove/weaponRemove.yy",},},
     {"roomId":{"name":"upgrademenu2","path":"rooms/upgrademenu2/upgrademenu2.yy",},},
     {"roomId":{"name":"scare","path":"rooms/scare/scare.yy",},},
+    {"roomId":{"name":"staticnoise2","path":"rooms/staticnoise2/staticnoise2.yy",},},
   ],
   "TextureGroups": [
     {"resourceType":"GMTextureGroup","resourceVersion":"1.3","name":"Default","autocrop":true,"border":2,"compressFormat":"bz2","directory":"","groupParent":null,"isScaled":true,"loadType":"default","mipsToGenerate":0,"targets":-1,},
