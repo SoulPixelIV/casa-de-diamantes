@@ -295,6 +295,7 @@ currVolSpringLadderShortcut = audio_sound_get_gain(springLadderShortcut_snd);
 currVolTrainCrossingAlarm = audio_sound_get_gain(trainCrossingAlarm_snd);
 currVolTrainHonk = audio_sound_get_gain(trainHonk_snd);
 currVolDing = audio_sound_get_gain(ding_snd);
+currVolStatic = audio_sound_get_gain(staticnoise_snd);
 
 currVolInfectedVoice = audio_sound_get_gain(infectedVoice_snd);
 currVolInfectionVoice = audio_sound_get_gain(plagueInfectionVoice_snd);

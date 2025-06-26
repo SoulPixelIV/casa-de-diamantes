@@ -11,6 +11,13 @@ if (dir == 3) {
 	y -= global.dt / 2;
 }
 
+audioDelay -= global.dt;
+
+if (audioDelay < 0 && !playedSound) {
+	audio_play_sound_on(emitter, jetpack_snd, true, 1);
+	playedSound = true;
+}
+
 if (instance_exists(player_obj)) {
 	if (distance_to_object(player_obj) < 256) {
 		screenshake(50, 20, 0.6, id);
@@ -19,7 +26,7 @@ if (instance_exists(player_obj)) {
 	if (place_meeting(x, y, player_obj)) {
 		audio_stop_all();
 		part_emitter_destroy_all(global.partSystem);
-		room_goto(level11);
+		room_goto(staticnoise);
 	}
 }
 

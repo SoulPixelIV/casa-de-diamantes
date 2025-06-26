@@ -7,7 +7,7 @@ if (open) {
 		draw_text(global.xScreenSize / 2, global.yScreenSize / 2.5, "Made by William Djalal");
 	}
 	if (name == 1) {
-		draw_text(global.xScreenSize / 2, global.yScreenSize / 2.5, "Music & SFX by\nThomas Hitchcock\nCordele Glass");
+		draw_text(global.xScreenSize / 2, global.yScreenSize / 2.5, "Music & SFX by\nHolly Hitchcock\nCordele Glass");
 	}
 	if (name == 2) {
 		draw_text(global.xScreenSize / 2, global.yScreenSize / 2.5, "Art & Design by\nWilliam Djalal\nJana Lel\nEmilia Rzepka");

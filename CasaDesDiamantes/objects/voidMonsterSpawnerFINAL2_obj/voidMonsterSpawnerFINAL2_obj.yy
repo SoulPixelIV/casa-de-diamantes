@@ -44,8 +44,8 @@
   ],
   "solid": false,
   "spriteId": {
-    "name": "voidMonsterDrawn_spr",
-    "path": "sprites/voidMonsterDrawn_spr/voidMonsterDrawn_spr.yy",
+    "name": "voidMonsterDrawn2_spr",
+    "path": "sprites/voidMonsterDrawn2_spr/voidMonsterDrawn2_spr.yy",
   },
   "spriteMaskId": null,
   "visible": false,

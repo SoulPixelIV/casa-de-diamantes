@@ -13,4 +13,5 @@ audio_falloff_set_model(audio_falloff_linear_distance);
 audio_emitter_position(emitter, x, y, 0);
 audio_emitter_falloff(emitter, audio_drop_start, audio_max_distance, 1);
 
-audio_play_sound_on(emitter, jetpack_snd, true, 1);
+playedSound = false;
+audioDelay = 800;

@@ -111,6 +111,7 @@ audio_sound_pitch(springLadderShortcut_snd, clamp(1 * global.timeScale, 0.5, 1.5
 audio_sound_pitch(trainCrossingAlarm_snd, clamp(1 * global.timeScale, 0.5, 1.5));
 audio_sound_pitch(trainHonk_snd, clamp(1 * global.timeScale, 0.5, 1.5));
 audio_sound_pitch(ding_snd, clamp(1 * global.timeScale, 0.5, 1.5));
+audio_sound_pitch(staticnoise_snd, clamp(1 * global.timeScale, 0.5, 1.5));
 
 audio_sound_pitch(infectedVoice_snd, clamp(1 * global.timeScale, 0.5, 1.5));
 audio_sound_pitch(plagueInfectionVoice_snd, clamp(1 * global.timeScale, 0.5, 1.5));
@@ -220,6 +221,7 @@ audio_sound_gain(springLadderShortcut_snd, (global.soundVolume / 100) * currVolS
 audio_sound_gain(trainCrossingAlarm_snd, (global.soundVolume / 100) * currVolTrainCrossingAlarm, 0);
 audio_sound_gain(trainHonk_snd, (global.soundVolume / 100) * currVolTrainHonk, 0);
 audio_sound_gain(ding_snd, (global.soundVolume / 100) * currVolDing, 0);
+audio_sound_gain(staticnoise_snd, (global.soundVolume / 100) * currVolStatic, 0);
 
 audio_sound_gain(infectedVoice_snd, (global.soundVolume / 100) * currVolInfectedVoice, 0);
 audio_sound_gain(plagueInfectionVoice_snd, (global.soundVolume / 100) * currVolInfectionVoice, 0);

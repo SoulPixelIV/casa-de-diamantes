@@ -1,0 +1,1 @@
+teleportTimer = 700;

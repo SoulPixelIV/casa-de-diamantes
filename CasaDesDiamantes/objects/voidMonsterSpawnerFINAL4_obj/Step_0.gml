@@ -19,8 +19,15 @@ if (instance_exists(player_obj)) {
 	if (place_meeting(x, y, player_obj)) {
 		audio_stop_all();
 		part_emitter_destroy_all(global.partSystem);
-		room_goto(level11);
+		room_goto(staticnoise);
 	}
+}
+
+audioDelay -= global.dt;
+
+if (audioDelay < 0 && !playedSound) {
+	audio_play_sound_on(emitter, jetpack_snd, true, 1);
+	playedSound = true;
 }
 
 part_emitter_region(global.partSystem, voidEmitter, x - 114, x + 114, y - 114, y + 114, ps_shape_ellipse, ps_distr_gaussian);

@@ -44,11 +44,19 @@ if (instance_exists(player_obj)) {
 	if (distance_to_object(player_obj) < 32 && !global.doorDelayStart) {
 		if (player_obj.key_up_pressed && open)
 		{
-			save_scr();
-			part_emitter_destroy_all(global.partSystem);
-			global.doorDelayStart = true;
-			instance_destroy(player_obj);
-			room_goto(level13);
+			if (room == level17) {
+				save_scr();
+				part_emitter_destroy_all(global.partSystem);
+				global.doorDelayStart = true;
+				instance_destroy(player_obj);
+				room_goto(level19);
+			} else {
+				save_scr();
+				part_emitter_destroy_all(global.partSystem);
+				global.doorDelayStart = true;
+				instance_destroy(player_obj);
+				room_goto(level13);
+			}
 		}
 	}
 }
