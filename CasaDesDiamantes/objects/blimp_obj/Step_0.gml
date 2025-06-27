@@ -39,11 +39,10 @@ if (open) {
 				room_goto(blimpAnim);
 			}
 			if (global.storyAct == 1) {
-				global.moveToWorld = 3;
-				room_goto(blimpAnim);
+				room_goto(blimpAnim2);
 			}
 			if (global.storyAct == 2) {
-				global.moveToWorld = 4;
+				global.moveToWorld = 6;
 				room_goto(blimpAnim);
 			}
 		}

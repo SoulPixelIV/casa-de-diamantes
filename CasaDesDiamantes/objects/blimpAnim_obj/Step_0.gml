@@ -27,7 +27,7 @@ if (teleportTimer < 0) {
 		room_goto(weaponRemove);
 	}
 	if (global.moveToWorld == 6) {
-		room_goto(level10);
+		room_goto(level15);
 	}
 	if (global.moveToWorld == 7) {
 		global.cutsceneCasinoIntroDone = true;

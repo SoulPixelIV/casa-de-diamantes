@@ -14,6 +14,9 @@ if (global.storyAct == 0) {
 				if (instance_exists(player_obj)) {
 					instance_destroy(player_obj);
 				}
+				if (instance_exists(cutieplusSteph_obj)) {
+					instance_destroy(cutieplusSteph_obj);
+				}
 				if (instance_exists(blimp_obj)) {
 					blimp_obj.open = true;
 				}
@@ -62,6 +65,9 @@ if (global.storyAct == 1) {
 				if (instance_exists(player_obj)) {
 					instance_destroy(player_obj);
 				}
+				if (instance_exists(cutieplusSteph_obj)) {
+					instance_destroy(cutieplusSteph_obj);
+				}
 				if (instance_exists(blimp_obj)) {
 					blimp_obj.open = true;
 				}
@@ -108,6 +114,9 @@ if (global.storyAct == 2) {
 			if (player_obj.key_up_pressed) {
 				if (instance_exists(player_obj)) {
 					instance_destroy(player_obj);
+				}
+				if (instance_exists(cutieplusSteph_obj)) {
+					instance_destroy(cutieplusSteph_obj);
 				}
 				if (instance_exists(blimp_obj)) {
 					blimp_obj.open = true;
