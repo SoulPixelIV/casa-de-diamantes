@@ -21,7 +21,7 @@ if (finishingTeleport) {
 		part_emitter_destroy_all(global.partSystem);
 		global.warpzone1Done = true;
 		instance_destroy(player_obj);
-		global.spawn = 2;
-		room_goto(level5A);
+		global.spawn = 3;
+		room_goto(level6);
 	}
 }
