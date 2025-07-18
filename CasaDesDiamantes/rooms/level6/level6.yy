@@ -28,7 +28,6 @@
     {"name":"inst_175AF9F0","path":"rooms/level6/level6.yy",},
     {"name":"inst_761250A1","path":"rooms/level6/level6.yy",},
     {"name":"inst_36B8CFC9","path":"rooms/level6/level6.yy",},
-    {"name":"inst_20A920A6","path":"rooms/level6/level6.yy",},
     {"name":"inst_5297A7BB","path":"rooms/level6/level6.yy",},
     {"name":"inst_4E54CF0A","path":"rooms/level6/level6.yy",},
     {"name":"inst_66EA727","path":"rooms/level6/level6.yy",},
@@ -76,6 +75,7 @@
     {"name":"inst_4AEEC31D","path":"rooms/level6/level6.yy",},
     {"name":"inst_F0D5A8F","path":"rooms/level6/level6.yy",},
     {"name":"inst_7C93C17","path":"rooms/level6/level6.yy",},
+    {"name":"inst_62073F1A","path":"rooms/level6/level6.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -187,7 +187,7 @@
 1,12,-79,9,1,4,-13,0,1,3,-79,9,1,4,-13,0,1,3,-79,9,1,4,-13,0,1,3,-79,9,1,4,-13,0,1,3,-79,9,1,4,-13,0,1,3,-79,9,1,4,-13,0,1,3,-79,9,1,4,-13,0,1,3,-79,9,1,10,-13,1,1,11,-866,9,],"TileDataFormat":1,},"tilesetId":{"name":"voidBackground","path":"tilesets/voidBackground/voidBackground.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"BackgroundObjects","depth":1800,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_1CE2073E","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"lever_obj","path":"objects/lever_obj/lever_obj.yy",},"properties":[
-            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"lever_obj","path":"objects/lever_obj/lever_obj.yy",},"propertyId":{"name":"objectAccess","path":"objects/lever_obj/lever_obj.yy",},"value":"electricGateShort6B_obj",},
+            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"lever_obj","path":"objects/lever_obj/lever_obj.yy",},"propertyId":{"name":"objectAccess","path":"objects/lever_obj/lever_obj.yy",},"value":"electricGate_obj",},
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"lever_obj","path":"objects/lever_obj/lever_obj.yy",},"propertyId":{"name":"objectCount","path":"objects/lever_obj/lever_obj.yy",},"value":"1",},
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"lever_obj","path":"objects/lever_obj/lever_obj.yy",},"propertyId":{"name":"activateCamera","path":"objects/lever_obj/lever_obj.yy",},"value":"False",},
           ],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1376.0,"y":992.0,},
@@ -242,14 +242,14 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_36B8CFC9","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"electricGateShort6A_obj","path":"objects/electricGateShort6A_obj/electricGateShort6A_obj.yy",},"properties":[
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"electricGateShort6A_obj","path":"objects/electricGateShort6A_obj/electricGateShort6A_obj.yy",},"propertyId":{"name":"moveDirection","path":"objects/electricGateShort6A_obj/electricGateShort6A_obj.yy",},"value":"2",},
           ],"rotation":90.0,"scaleX":-1.0,"scaleY":1.0,"x":1465.0,"y":599.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_20A920A6","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"electricGateShort6B_obj","path":"objects/electricGateShort6B_obj/electricGateShort6B_obj.yy",},"properties":[
-            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"electricGateShort6B_obj","path":"objects/electricGateShort6B_obj/electricGateShort6B_obj.yy",},"propertyId":{"name":"moveDirection","path":"objects/electricGateShort6B_obj/electricGateShort6B_obj.yy",},"value":"3",},
-          ],"rotation":90.0,"scaleX":1.0,"scaleY":1.0,"x":1465.0,"y":1114.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_6A66A620","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"neuralDoorExit_obj","path":"objects/neuralDoorExit_obj/neuralDoorExit_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":2016.0,"y":1632.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_65227E17","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"dualBarettas_obj","path":"objects/dualBarettas_obj/dualBarettas_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":2121.0,"y":1600.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_23248A6","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"shotgun_obj","path":"objects/shotgun_obj/shotgun_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":2153.0,"y":1600.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_48E1BDB5","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"neuralActivatorWarpzone1_obj","path":"objects/neuralActivatorWarpzone1_obj/neuralActivatorWarpzone1_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":2241.0,"y":1635.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_3AC79426","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"spotlightRed_obj","path":"objects/spotlightRed_obj/spotlightRed_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":2239.0,"y":1580.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_62073F1A","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"electricGate_obj","path":"objects/electricGate_obj/electricGate_obj.yy",},"properties":[
+            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"electricGate_obj","path":"objects/electricGate_obj/electricGate_obj.yy",},"propertyId":{"name":"moveDirection","path":"objects/electricGate_obj/electricGate_obj.yy",},"value":"3",},
+          ],"rotation":90.0,"scaleX":1.0,"scaleY":1.0,"x":1465.0,"y":1260.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"CaveBackgroundTiles","depth":3100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":63,"SerialiseWidth":94,"TileCompressedData":[
 -7,0,-7,-2147483648,-87,0,-7,-2147483648,-87,0,-7,-2147483648,-87,0,-7,-2147483648,-87,0,-7,-2147483648,-87,0,-7,-2147483648,-87,0,-7,-2147483648,-87,0,-7,-2147483648,-87,0,-7,-2147483648,-87,0,-7,-2147483648,-87,0,-7,-2147483648,-87,0,-7,-2147483648,-87,0,-7,-2147483648,-87,0,-7,-2147483648,-87,0,-7,-2147483648,-87,0,-7,-2147483648,-87,0,-7,-2147483648,-87,0,-7,-2147483648,-87,0,-7,-2147483648,-87,0,-7,-2147483648,-87,0,-7,-2147483648,-87,0,-7,-2147483648,-18,0,-5,16,1,17,
