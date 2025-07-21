@@ -25,6 +25,13 @@ function load_scr(){
 	global.cupyDialogue4Done = ini_read_real("save1", "cupyDialogue4Done", false);
 	global.cupyDialogue5Done = ini_read_real("save1", "cupyDialogue5Done", false);
 	
+	global.laserShot0 = ini_read_real("save1", "laserShot0", false);
+	global.laserShot1 = ini_read_real("save1", "laserShot1", false);
+	global.laserShot2 = ini_read_real("save1", "laserShot2", false);
+	global.laserShot3 = ini_read_real("save1", "laserShot3", false);
+	global.laserShot4 = ini_read_real("save1", "laserShot4", false);
+	global.laserShot5 = ini_read_real("save1", "laserShot5", false);
+	
 	global.reachedCasino = ini_read_real("save1", "reachedCasino", false);
 	global.act2Unlocked = ini_read_real("save1", "act2Unlocked", false);
 	global.helicopterIntro = ini_read_real("save1", "helicopterIntro", false);

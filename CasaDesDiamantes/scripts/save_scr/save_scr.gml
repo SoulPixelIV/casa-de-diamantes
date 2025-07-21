@@ -30,6 +30,13 @@ function save_scr(){
 	ini_write_real("save1", "cupyDialogue4Done", global.cupyDialogue4Done);
 	ini_write_real("save1", "cupyDialogue5Done", global.cupyDialogue5Done);
 	
+	ini_write_real("save1", "laserShot0", global.laserShot0);
+	ini_write_real("save1", "laserShot1", global.laserShot1);
+	ini_write_real("save1", "laserShot2", global.laserShot2);
+	ini_write_real("save1", "laserShot3", global.laserShot3);
+	ini_write_real("save1", "laserShot4", global.laserShot4);
+	ini_write_real("save1", "laserShot5", global.laserShot5);
+	
 	ini_write_real("save1", "reachedCasino", global.reachedCasino);
 	ini_write_real("save1", "act2Unlocked", global.act2Unlocked);
 	ini_write_real("save1", "helicopterIntro", global.helicopterIntro);

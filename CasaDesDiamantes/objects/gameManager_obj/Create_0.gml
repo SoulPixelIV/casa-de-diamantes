@@ -126,6 +126,13 @@ global.silencedMPCooldownSave = global.silencedMPCooldown;
 global.silencedMPReload = 750;
 global.silencedMPReloadSave = global.silencedMPReload;
 
+global.laserShot0 = false;
+global.laserShot1 = false;
+global.laserShot2 = false;
+global.laserShot3 = false;
+global.laserShot4 = false;
+global.laserShot5 = false;
+
 //Gates, Doors etc.
 global.level4DoorOpen = false;
 global.level6GateAOpen = false;
