@@ -20,6 +20,16 @@ function save_scr(){
 	ini_write_real("save1", "shownInfectionTutorial", global.drawTutorialInfectionUsed);
 	ini_write_real("save1", "drunkness", global.drunknessLevel);
 	
+	ini_write_real("save1", "storyAct", global.storyAct);
+	ini_write_real("save1", "drawMission", global.drawMission);
+	
+	ini_write_real("save1", "introDialogueCindyDone", global.introDialogueCindyDone);
+	ini_write_real("save1", "cupyDialogue1Done", global.cupyDialogue1Done);
+	ini_write_real("save1", "cupyDialogue2Done", global.cupyDialogue2Done);
+	ini_write_real("save1", "cupyDialogue3Done", global.cupyDialogue3Done);
+	ini_write_real("save1", "cupyDialogue4Done", global.cupyDialogue4Done);
+	ini_write_real("save1", "cupyDialogue5Done", global.cupyDialogue5Done);
+	
 	ini_write_real("save1", "reachedCasino", global.reachedCasino);
 	ini_write_real("save1", "act2Unlocked", global.act2Unlocked);
 	ini_write_real("save1", "helicopterIntro", global.helicopterIntro);

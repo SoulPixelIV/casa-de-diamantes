@@ -15,6 +15,16 @@ function load_scr(){
 	global.drawTutorialInfectionUsed = ini_read_real("save1", "shownInfectionTutorial", false);
 	global.drunknessLevel = ini_read_real("save1", "drunkness", 0);
 	
+	global.storyAct = ini_read_real("save1", "storyAct", 0);
+	global.drawMission = ini_read_real("save1", "drawMission", false);
+
+	global.introDialogueCindyDone = ini_read_real("save1", "introDialogueCindyDone", false);
+	global.cupyDialogue1Done = ini_read_real("save1", "cupyDialogue1Done", false);
+	global.cupyDialogue2Done = ini_read_real("save1", "cupyDialogue2Done", false);
+	global.cupyDialogue3Done = ini_read_real("save1", "cupyDialogue3Done", false);
+	global.cupyDialogue4Done = ini_read_real("save1", "cupyDialogue4Done", false);
+	global.cupyDialogue5Done = ini_read_real("save1", "cupyDialogue5Done", false);
+	
 	global.reachedCasino = ini_read_real("save1", "reachedCasino", false);
 	global.act2Unlocked = ini_read_real("save1", "act2Unlocked", false);
 	global.helicopterIntro = ini_read_real("save1", "helicopterIntro", false);
