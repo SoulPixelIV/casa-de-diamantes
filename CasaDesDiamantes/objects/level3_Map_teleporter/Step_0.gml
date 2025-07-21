@@ -20,6 +20,6 @@ if (finishingTeleport) {
 	if (waitDelay < 0) {	
 		part_emitter_destroy_all(global.partSystem);
 		instance_destroy(player_obj);
-		room_goto(worldmap);
+		room_goto(stephAnim);
 	}
 }

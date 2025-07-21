@@ -291,6 +291,7 @@
     {"id":{"name":"slide_snd","path":"sounds/slide_snd/slide_snd.yy",},},
     {"id":{"name":"sterilizationChamberScanning_spr","path":"sprites/sterilizationChamberScanning_spr/sterilizationChamberScanning_spr.yy",},},
     {"id":{"name":"playerDashNude_spr","path":"sprites/playerDashNude_spr/playerDashNude_spr.yy",},},
+    {"id":{"name":"playerAnimTraverseScreen_obj","path":"objects/playerAnimTraverseScreen_obj/playerAnimTraverseScreen_obj.yy",},},
     {"id":{"name":"level23","path":"rooms/level23/level23.yy",},},
     {"id":{"name":"playerFlipLEGACY_spr","path":"sprites/playerFlipLEGACY_spr/playerFlipLEGACY_spr.yy",},},
     {"id":{"name":"cindy7_obj","path":"objects/cindy7_obj/cindy7_obj.yy",},},
@@ -2401,6 +2402,7 @@
     {"id":{"name":"toxicWaterDown_obj","path":"objects/toxicWaterDown_obj/toxicWaterDown_obj.yy",},},
     {"id":{"name":"testRoom3","path":"rooms/testRoom3/testRoom3.yy",},},
     {"id":{"name":"toxicCloud_obj","path":"objects/toxicCloud_obj/toxicCloud_obj.yy",},},
+    {"id":{"name":"stephAnim","path":"rooms/stephAnim/stephAnim.yy",},},
     {"id":{"name":"button_spr","path":"sprites/button_spr/button_spr.yy",},},
     {"id":{"name":"Spawn5_obj","path":"objects/Spawn5_obj/Spawn5_obj.yy",},},
     {"id":{"name":"elevatorConsumed_obj","path":"objects/elevatorConsumed_obj/elevatorConsumed_obj.yy",},},
@@ -2422,6 +2424,7 @@
   ],
   "RoomOrderNodes": [
     {"roomId":{"name":"loadVars","path":"rooms/loadVars/loadVars.yy",},},
+    {"roomId":{"name":"stephAnim","path":"rooms/stephAnim/stephAnim.yy",},},
     {"roomId":{"name":"level10","path":"rooms/level10/level10.yy",},},
     {"roomId":{"name":"credits","path":"rooms/credits/credits.yy",},},
     {"roomId":{"name":"mainmenu","path":"rooms/mainmenu/mainmenu.yy",},},
