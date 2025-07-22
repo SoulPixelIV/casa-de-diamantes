@@ -86,7 +86,7 @@ var endCreditsEffects = [
 ];
 endCredits_profile = new PPFX_Profile("Main", endCreditsEffects);
 
-if (room == mainmenu || room == levelSelect || room == storySelect || room == demoend || room == settings || room == upgrademenu || room == blimpAnim || room == blimpAnim2) {
+if (room == mainmenu || room == levelSelect || room == storySelect || room == demoend || room == settings || room == upgrademenu || room == blimpAnim || room == blimpAnim2 || room == stephAnim) {
 	ppfx_id.ProfileLoad(menu_profile);
 } else if (room == blackjackTable) {
 	ppfx_id.ProfileLoad(blackjack_profile);

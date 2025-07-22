@@ -2,7 +2,7 @@
   "resourceType": "GMRoom",
   "resourceVersion": "1.0",
   "name": "stephAnim",
-  "creationCodeFile": "",
+  "creationCodeFile": "${project_dir}/rooms/stephAnim/RoomCreationCode.gml",
   "inheritCode": false,
   "inheritCreationOrder": false,
   "inheritLayers": false,

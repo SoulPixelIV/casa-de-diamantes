@@ -293,6 +293,8 @@ radiusTop1 = point_distance(originX, originY, x, y);
 //Second Dualbarettas arm
 sprID = layer_sprite_create("BackgroundObjects", -1000, -1000, playerDualBarettas_spr);
 
+sprite_index = playerWalkingEquipped_spr;
+
 //Audio
 audio_listener_orientation(0,0,1000,0,-1,0);
 
