@@ -14,3 +14,9 @@ if (room == level5A && global.level5AGate) {
 if (room == level5B && global.level5BGate2) {
 	open = true;
 }
+
+if (index == 0) {
+	if (global.level22Stage3Gate) {
+		open = true;
+	}
+}

@@ -77,10 +77,35 @@ function load_scr(){
 	global.boughtSkin1 = ini_read_real("save1", "global.boughtSkin1", false);
 	global.skin = ini_read_real("save1", "global.skin", false);
 	
-	global.level4DoorOpen = ini_read_real("save1", "level4DoorOpen", false);
 	global.level6GateAOpen = ini_read_real("save1", "level6GateAOpen", false);
 	global.level6GateBOpen = ini_read_real("save1", "level6GateBOpen", false);
+	global.level2Gate = ini_read_real("save1", "level2Gate", false);
+	global.level5ABooster = ini_read_real("save1", "level5ABooster", false);
+	global.level5AGate = ini_read_real("save1", "level5AGate", false);
+	global.level5BGate = ini_read_real("save1", "level5BGate", false);
+	global.level5BGate2 = ini_read_real("save1", "level5BGate2", false);
+	global.level8Booster = ini_read_real("save1", "level8Booster", false);
+	global.level8Booster2 = ini_read_real("save1", "level8Booster2", false);
+	global.level8Booster3 = ini_read_real("save1", "level8Booster3", false);
+	global.level12Gate = ini_read_real("save1", "level12Gate", false);
+	global.level13Booster = ini_read_real("save1", "level13Booster", false);
+	global.level15Spring = ini_read_real("save1", "level15Spring", false);
 	global.level15Shortcut = ini_read_real("save1", "level15Shortcut", false);
+	global.level16Shortcut = ini_read_real("save1", "level16Shortcut", false);
+	
+	global.level16FloorGate = ini_read_real("save1", "level16FloorGate", false);
+	global.level16ArenaGate = ini_read_real("save1", "level16ArenaGate", false);
+	global.level16BacktrackGate1 = ini_read_real("save1", "level16BacktrackGate1", false);
+	global.level16BacktrackGate2 = ini_read_real("save1", "level16BacktrackGate2", false);
+	global.level18SecretGate1 = ini_read_real("save1", "level18SecretGate1", false);
+	global.level18SecretGate2 = ini_read_real("save1", "level18SecretGate2", false);
+	global.level19Shortcut1 = ini_read_real("save1", "level19Shortcut1", false);
+	global.level21WeaponGate = ini_read_real("save1", "level21WeaponGate", false);
+	global.level21MainGate = ini_read_real("save1", "level21MainGate", false);
+	global.level21ExitGate = ini_read_real("save1", "level21ExitGate", false);
+	global.level22Stage1Gate = ini_read_real("save1", "level22Stage1Gate", false);
+	global.level22Stage2Gate = ini_read_real("save1", "level22Stage2Gate", false);
+	global.level22Stage3Gate = ini_read_real("save1", "level22Stage3Gate", false);
 	
 	global.warpzone1DoorOpen = ini_read_real("save1", "warpzone1DoorOpen", false);
 	global.warpzone1Reward = ini_read_real("save1", "warpzone1Reward", false);

@@ -34,3 +34,33 @@ if (global.spawn == 8)
 {
 	instance_create_layer(Spawn9_obj.x, Spawn9_obj.y, "Instances", player_obj);
 }
+
+global.level6GateAOpen = false;
+global.level6GateBOpen = false;
+global.level2Gate = false;
+global.level5ABooster = false;
+global.level5AGate = false;
+global.level5BGate = false;
+global.level5BGate2 = false;
+global.level8Booster = false;
+global.level8Booster2 = false;
+global.level8Booster3 = false;
+global.level12Gate = false;
+global.level13Booster = false;
+global.level15Spring = false;
+global.level15Shortcut = false;
+global.level16Shortcut = false;
+	
+global.level16FloorGate = false;
+global.level16ArenaGate = false;
+global.level16BacktrackGate1 = false;
+global.level16BacktrackGate2 = false;
+global.level18SecretGate1 = false;
+global.level18SecretGate2 = false;
+global.level19Shortcut1 = false;
+global.level21WeaponGate = false;
+global.level21MainGate = false;
+global.level21ExitGate = false;
+global.level22Stage1Gate = false;
+global.level22Stage2Gate = false;
+global.level22Stage3Gate = false;

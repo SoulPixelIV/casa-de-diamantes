@@ -86,6 +86,20 @@ global.level15Spring = false;
 global.level15Shortcut = false;
 global.level16Shortcut = false;
 
+global.level16FloorGate = false;
+global.level16ArenaGate = false;
+global.level16BacktrackGate1 = false;
+global.level16BacktrackGate2 = false;
+global.level18SecretGate1 = false;
+global.level18SecretGate2 = false;
+global.level19Shortcut1 = false;
+global.level21WeaponGate = false;
+global.level21MainGate = false;
+global.level21ExitGate = false;
+global.level22Stage1Gate = false;
+global.level22Stage2Gate = false;
+global.level22Stage3Gate = false;
+
 global.pistolAmmo = 0;
 global.pistolAmmoMax = 16;
 global.pistolCooldown = 3;

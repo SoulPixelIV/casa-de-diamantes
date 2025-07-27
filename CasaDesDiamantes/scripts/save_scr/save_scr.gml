@@ -82,10 +82,35 @@ function save_scr(){
 	ini_write_real("save1", "global.boughtSkin1", global.boughtSkin1);
 	ini_write_real("save1", "global.skin", global.skin);
 	
-	ini_write_real("save1", "level4DoorOpen", global.level4DoorOpen);
 	ini_write_real("save1", "level6GateAOpen", global.level6GateAOpen);
 	ini_write_real("save1", "level6GateBOpen", global.level6GateBOpen);
+	ini_write_real("save1", "level2Gate", global.level2Gate);
+	ini_write_real("save1", "level5ABooster", global.level5ABooster);
+	ini_write_real("save1", "level5AGate", global.level5AGate);
+	ini_write_real("save1", "level5BGate", global.level5BGate);
+	ini_write_real("save1", "level5BGate2", global.level5BGate2);
+	ini_write_real("save1", "level8Booster", global.level8Booster);
+	ini_write_real("save1", "level8Booster2", global.level8Booster2);
+	ini_write_real("save1", "level8Booster3", global.level8Booster3);
+	ini_write_real("save1", "level12Gate", global.level12Gate);
+	ini_write_real("save1", "level13Booster", global.level13Booster);
+	ini_write_real("save1", "level15Spring", global.level15Spring);
 	ini_write_real("save1", "level15Shortcut", global.level15Shortcut);
+	ini_write_real("save1", "level16Shortcut", global.level16Shortcut);
+
+	ini_write_real("save1", "level16FloorGate", global.level16FloorGate);
+	ini_write_real("save1", "level16ArenaGate", global.level16ArenaGate);
+	ini_write_real("save1", "level16BacktrackGate1", global.level16BacktrackGate1);
+	ini_write_real("save1", "level16BacktrackGate2", global.level16BacktrackGate2);
+	ini_write_real("save1", "level18SecretGate1", global.level18SecretGate1);
+	ini_write_real("save1", "level18SecretGate2", global.level18SecretGate2);
+	ini_write_real("save1", "level19Shortcut1", global.level19Shortcut1);
+	ini_write_real("save1", "level21WeaponGate", global.level21WeaponGate);
+	ini_write_real("save1", "level21MainGate", global.level21MainGate);
+	ini_write_real("save1", "level21ExitGate", global.level21ExitGate);
+	ini_write_real("save1", "level22Stage1Gate", global.level22Stage1Gate);
+	ini_write_real("save1", "level22Stage2Gate", global.level22Stage2Gate);
+	ini_write_real("save1", "level22Stage3Gate", global.level22Stage3Gate);
 	
 	ini_write_real("save1", "warpzone1DoorOpen", global.warpzone1DoorOpen);
 	ini_write_real("save1", "warpzone1Reward", global.warpzone1Reward);

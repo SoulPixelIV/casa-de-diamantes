@@ -10,6 +10,9 @@ if (instance_exists(player_obj) && distance_to_object(player_obj) > 32 && place_
 		if (room == level5B) {
 			global.level5BGate2 = true;
 		}
+		if (index == 0) {
+			global.level22Stage3Gate = true;
+		}
 	
 		if (moveDirection == 0)
 		{

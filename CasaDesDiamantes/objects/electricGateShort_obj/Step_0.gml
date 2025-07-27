@@ -4,6 +4,19 @@ if (instance_exists(player_obj) && distance_to_object(player_obj) > 32 && place_
 {
 	if (open)
 	{
+		if (index == 0) {
+			global.level16BacktrackGate1 = true;
+		}
+		if (index == 1) {
+			global.level16BacktrackGate2 = true;
+		}
+		if (index == 2) {
+			global.level18SecretGate1 = true;
+		}
+		if (index == 3) {
+			global.level21WeaponGate = true;
+		}
+		
 		if (moveDirection == 0)
 		{
 			if (x > goalX1)

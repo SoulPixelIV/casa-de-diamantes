@@ -6,3 +6,24 @@ goalY2 = y + 88;
 
 originX = x;
 originY = y;
+
+if (index == 0) {
+	if (global.level16BacktrackGate1) {
+		open = true;
+	}
+}
+if (index == 1) {
+	if (global.level16BacktrackGate2) {
+		open = true;
+	}
+}
+if (index == 2) {
+	if (global.level18SecretGate1) {
+		open = true;
+	}
+}
+if (index == 3) {
+	if (global.level21WeaponGate) {
+		open = true;
+	}
+}
