@@ -77,6 +77,11 @@ if (pushDelay < 0) {
 					global.level22Stage2Gate = false;
 					global.level22Stage3Gate = false;
 					
+					global.hasWarpzoneKey = false;
+					global.keyBlue = false;
+					global.keyRed = false;
+					global.keyYellow = false;
+					
 					room_goto(level_Casino);
 					global.lastCheckpoint = noone;
 				break;
@@ -128,6 +133,11 @@ if (pushDelay < 0) {
 					global.level22Stage2Gate = false;
 					global.level22Stage3Gate = false;
 					
+					global.hasWarpzoneKey = false;
+					global.keyBlue = false;
+					global.keyRed = false;
+					global.keyYellow = false;
+					
 					room_goto(level_CasinoRoof);
 					global.lastCheckpoint = noone;
 				break;
@@ -175,6 +185,11 @@ if (pushDelay < 0) {
 					global.level22Stage1Gate = false;
 					global.level22Stage2Gate = false;
 					global.level22Stage3Gate = false;
+					
+					global.hasWarpzoneKey = false;
+					global.keyBlue = false;
+					global.keyRed = false;
+					global.keyYellow = false;
 					
 					room_goto(level_CasinoRoof);
 					global.lastCheckpoint = noone;
@@ -224,6 +239,11 @@ if (pushDelay < 0) {
 					global.level22Stage2Gate = false;
 					global.level22Stage3Gate = false;
 					
+					global.hasWarpzoneKey = false;
+					global.keyBlue = false;
+					global.keyRed = false;
+					global.keyYellow = false;
+					
 					room_goto(level_CasinoRoof);
 					global.lastCheckpoint = noone;
 				break;
@@ -271,6 +291,11 @@ if (pushDelay < 0) {
 					global.level22Stage1Gate = false;
 					global.level22Stage2Gate = false;
 					global.level22Stage3Gate = false;
+					
+					global.hasWarpzoneKey = false;
+					global.keyBlue = false;
+					global.keyRed = false;
+					global.keyYellow = false;
 					
 					room_goto(level_ConsumedCasino);
 					global.lastCheckpoint = noone;

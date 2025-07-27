@@ -64,3 +64,8 @@ global.level21ExitGate = false;
 global.level22Stage1Gate = false;
 global.level22Stage2Gate = false;
 global.level22Stage3Gate = false;
+
+global.hasWarpzoneKey = false;
+global.keyBlue = false;
+global.keyRed = false;
+global.keyYellow = false;
