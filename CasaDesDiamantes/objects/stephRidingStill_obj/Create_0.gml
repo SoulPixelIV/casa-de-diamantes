@@ -1,4 +1,8 @@
 animationSpeed = 0.75;
 movSpeed = 2.4;
-checkedPlayer = false;
-firstCutscene = true;
+if (global.spawn == 0) {
+	checkedPlayer = false;
+} else {
+	checkedPlayer = true;
+}
+firstCutscene = false;
