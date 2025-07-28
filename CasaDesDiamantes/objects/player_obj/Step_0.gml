@@ -42,13 +42,14 @@ key_shift = keyboard_check_pressed(vk_shift) || gamepad_button_check_pressed(4, 
 key_control = keyboard_check_pressed(vk_control) || gamepad_button_check_pressed(4, gp_face2) || gamepad_button_check_pressed(0, gp_face2);
 key_escape = keyboard_check_pressed(vk_escape) || gamepad_button_check_pressed(4, gp_start) || gamepad_button_check_pressed(0, gp_start);
 
-if (key_escape && !pauseDelayStart && !enemySlowmo && hp > 0 && !dialogueSystem_obj.inCutscene && camera_obj.blackscreenStrength < 0.1 && !deathActivated && !camera_obj.cameraTrainCutscene && room != level28 && movement) {
+if (key_escape && !pauseDelayStart && !enemySlowmo && hp > 0 && !dialogueSystem_obj.inCutscene && camera_obj.blackscreenStrength < 0.1 && !deathActivated && !camera_obj.cameraTrainCutscene && room != level28 && (movement || sittingInMinecart)) {
 	save_scr();
 	global.pause = !global.pause;
 	camera_obj.pauseScreen = 0;
 	camera_obj.cursorPos = 0;
 	pauseDelayStart = true;
 }
+
 if (pauseDelayStart) {
 	pauseDelay -= global.dtNoSlowmo;
 }
@@ -1399,7 +1400,7 @@ with (gameManager_obj)
 }	
 
 //Weapon Switching
-if (!isZombie && !reloading && !inCutscene && !camera_obj.drawTutorialInfection && movement)
+if (!isZombie && !reloading && !inCutscene && !camera_obj.drawTutorialInfection && (movement || sittingInMinecart))
 {
 	//Change to other tier weapon with "Q"
 	if (key_lastWeapon) {
