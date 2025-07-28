@@ -207,6 +207,15 @@ audio_sound_gain(glassBreaking_snd, (global.soundVolume / 100) * currVolGlassBre
 audio_sound_gain(fuse_snd, (global.soundVolume / 100) * currVolFuse, 0);
 audio_sound_gain(insectSpit_snd, (global.soundVolume / 100) * currVolInsectSpit, 0);
 audio_sound_gain(minecartHit_snd, (global.soundVolume / 100) * currVolMinecartHit, 0);
+if (global.soundVolume == 0) {
+	audio_sound_gain(minecart_snd, 0, 0);
+	minecartVolSet = false;
+} else {
+	if (!minecartVolSet) {
+		audio_sound_gain(minecart_snd, 0.6, 0);
+		minecartVolSet = true;
+	}
+}
 audio_sound_gain(placingCard_snd, (global.soundVolume / 100) * currVolPlacingCard, 0);
 audio_sound_gain(takingCard_snd, (global.soundVolume / 100) * currVolTakingCard, 0);
 audio_sound_gain(emptyClip_snd, (global.soundVolume / 100) * currVolEmptyClip, 0);

@@ -48,6 +48,9 @@ if (key_escape && !pauseDelayStart && !enemySlowmo && hp > 0 && !dialogueSystem_
 	camera_obj.pauseScreen = 0;
 	camera_obj.cursorPos = 0;
 	pauseDelayStart = true;
+	if (audio_is_playing(minecart_snd)) {
+		audio_stop_sound(minecart_snd);
+	}
 }
 
 if (pauseDelayStart) {

@@ -302,6 +302,7 @@ currVolGlassBreaking = audio_sound_get_gain(glassBreaking_snd);
 currVolFuse = audio_sound_get_gain(fuse_snd);
 currVolInsectSpit = audio_sound_get_gain(insectSpit_snd);
 currVolMinecartHit = audio_sound_get_gain(minecartHit_snd);
+currVolMinecart = audio_sound_get_gain(minecart_snd);
 currVolPlacingCard = audio_sound_get_gain(placingCard_snd);
 currVolTakingCard = audio_sound_get_gain(takingCard_snd);
 currVolEmptyClip = audio_sound_get_gain(emptyClip_snd);
@@ -348,3 +349,5 @@ currVolJumpSpin = audio_sound_get_gain(jumpspin_snd);
 currVolDoubleJumpMoan = audio_sound_get_gain(doublejumpmoan_snd);
 currVolLandMoan = audio_sound_get_gain(landmoan_snd);
 currVolJumpMoan = audio_sound_get_gain(jumpmoan_snd);
+
+minecartVolSet = false;
