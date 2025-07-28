@@ -1729,7 +1729,7 @@ if (hp <= 0 || infection > hp || deathActivated)
 	camera_obj.infOverlayY = 0;
 	camera_obj.infOverlayLocked = false;
 	
-	if (global.syringes < 1)
+	if (global.syringes < 1 || room == level10)
 	{
 		camera_obj.finalDeath = true;
 		camera_obj.drawInfectionText = true;
