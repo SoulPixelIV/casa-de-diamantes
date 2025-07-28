@@ -25,6 +25,7 @@ if (open) {
 		image_index = 4;
 	} else if (lightTimer < 0) {
 		open = false;
+		playedSound = false;
 	}
 } else {
 	image_index = 5;
@@ -37,4 +38,9 @@ if (open) {
 if (place_meeting(x, y, bullet_obj)) {
 	open = true;
 	lightTimer = lightTimerSave;
+	
+	if (!playedSound) {
+		audio_play_sound_on(emitter, icecicleShot_snd, false, false);
+		playedSound = true;
+	}
 }

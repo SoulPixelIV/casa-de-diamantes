@@ -2,9 +2,9 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "lightswitch_spr",
-  "bbox_bottom": 15,
+  "bbox_bottom": 17,
   "bbox_left": 0,
-  "bbox_right": 15,
+  "bbox_right": 17,
   "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 1,
@@ -13,7 +13,7 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"2d50b8a9-6db3-4445-9aeb-99a8912c5030",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"91533bcf-8d16-43d4-a91a-17c72b45cc6c",},
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"138032b9-d643-4e8a-8546-13519a906b36",},
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"e0a6d11f-72ce-47b6-b111-dfc19da4cde5",},
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"bfa49435-94fb-40ef-9646-60e755e312f6",},
@@ -22,7 +22,7 @@
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 16,
+  "height": 18,
   "HTile": false,
   "layers": [
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"9bf924db-9aa1-472a-a972-a5967dc8920a","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
@@ -59,7 +59,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"2d50b8a9-6db3-4445-9aeb-99a8912c5030","path":"sprites/lightswitch_spr/lightswitch_spr.yy",},},},"Disabled":false,"id":"26e889f0-6184-4572-bc33-8e70a1f26db3","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"91533bcf-8d16-43d4-a91a-17c72b45cc6c","path":"sprites/lightswitch_spr/lightswitch_spr.yy",},},},"Disabled":false,"id":"22efd24c-5cf1-4a3e-bab1-25f2dd293dec","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
             {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"138032b9-d643-4e8a-8546-13519a906b36","path":"sprites/lightswitch_spr/lightswitch_spr.yy",},},},"Disabled":false,"id":"da80cd77-0296-4542-9ee2-bc0b1f3a6818","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
             {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"e0a6d11f-72ce-47b6-b111-dfc19da4cde5","path":"sprites/lightswitch_spr/lightswitch_spr.yy",},},},"Disabled":false,"id":"093b0a4f-d76e-4ddf-b73f-c2dd009b69c8","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
             {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"bfa49435-94fb-40ef-9646-60e755e312f6","path":"sprites/lightswitch_spr/lightswitch_spr.yy",},},},"Disabled":false,"id":"05fed408-9538-4cf5-b1b6-f145b9b76335","IsCreationKey":false,"Key":3.0,"Length":1.0,"Stretch":false,},
@@ -69,8 +69,8 @@
     ],
     "visibleRange": null,
     "volume": 1.0,
-    "xorigin": 8,
-    "yorigin": 8,
+    "xorigin": 9,
+    "yorigin": 9,
   },
   "swatchColours": null,
   "swfPrecision": 2.525,
@@ -80,5 +80,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 16,
+  "width": 18,
 }
