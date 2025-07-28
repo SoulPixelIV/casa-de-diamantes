@@ -1524,6 +1524,7 @@ if (showWindowMenu)
 	
 	//Draw items
 	if (windowType == 1) {
+		bartenderPurchaseWindowStartDelay -= global.dt;
 		if (!window1SpawnedHitboxes) {
 			for (var i = 0; i < 3; i++) {
 				var hitbox = instance_create_layer((player_obj.x - 132) + 84 * i, player_obj.y - 46, "GameManagerLayer", cursorHitbox_obj);
@@ -1634,6 +1635,7 @@ if (showWindowMenu)
 		showWindowMenu = false;
 		follow = player_obj;
 		windowType = 0;
+		bartenderPurchaseWindowStartDelay = bartenderPurchaseWindowStartDelaySave;
 	}
 	
 	//Mouse Cursor Controls
@@ -1644,35 +1646,37 @@ if (showWindowMenu)
 				if (hitbox.open) {
 					barkeeperWindowIndex = hitbox.index;
 				
-					if (mouse_check_button_pressed(mb_left)) {
-						audio_play_sound(typewriterPush_snd, 1, false);
-						switch (barkeeperWindowIndex)
-						{
-							case 0:
-								if (global.money >= 12300) {
-									global.diamonds += 1;
-									audio_play_sound(buying_snd, 1, false);
-									global.money -= 12300;
-								}
-							break;
-							case 1:
-								if (global.money >= 25) {
-									if (global.drunknessLevel < 0.75) {
-										global.drunknessLevel += 0.05;
+					if (bartenderPurchaseWindowStartDelay < 0) {
+						if (mouse_check_button_pressed(mb_left)) {
+							audio_play_sound(typewriterPush_snd, 1, false);
+							switch (barkeeperWindowIndex)
+							{
+								case 0:
+									if (global.money >= 12300) {
+										global.diamonds += 1;
+										audio_play_sound(buying_snd, 1, false);
+										global.money -= 12300;
 									}
-									audio_play_sound(buying_snd, 1, false);
-									global.money -= 25;
-								}
-							break;
-							case 2:
-								if (global.money >= 2250) {
-									if (global.syringes < 5) {
-										global.syringes += 1;
+								break;
+								case 1:
+									if (global.money >= 25) {
+										if (global.drunknessLevel < 0.75) {
+											global.drunknessLevel += 0.05;
+										}
+										audio_play_sound(buying_snd, 1, false);
+										global.money -= 25;
 									}
-									audio_play_sound(buying_snd, 1, false);
-									global.money -= 2250;
-								}
-							break;
+								break;
+								case 2:
+									if (global.money >= 2250) {
+										if (global.syringes < 5) {
+											global.syringes += 1;
+										}
+										audio_play_sound(buying_snd, 1, false);
+										global.money -= 2250;
+									}
+								break;
+							}
 						}
 					}
 				}
@@ -1680,33 +1684,35 @@ if (showWindowMenu)
 		}
 	}
 		
-	if (keyboard_check_pressed(vk_enter) || gamepad_button_check_pressed(0, gp_face1) || gamepad_button_check_pressed(4, gp_face1)) {
-		if (barkeeperWindowIndex == 0) {
-			if (global.money >= 12300) {
-				audio_play_sound(typewriterPush_snd, 1, false);
-				global.diamonds += 1;
-				audio_play_sound(buying_snd, 1, false);
-				global.money -= 12300;
-			}
-		}
-		if (barkeeperWindowIndex == 2) {
-			if (global.money >= 2250) {
-				audio_play_sound(typewriterPush_snd, 1, false);
-				if (global.syringes < 5) {
-					global.syringes += 1;
+	if (bartenderPurchaseWindowStartDelay < 0) {
+		if (keyboard_check_pressed(vk_enter) || gamepad_button_check_pressed(0, gp_face1) || gamepad_button_check_pressed(4, gp_face1)) {
+			if (barkeeperWindowIndex == 0) {
+				if (global.money >= 12300) {
+					audio_play_sound(typewriterPush_snd, 1, false);
+					global.diamonds += 1;
+					audio_play_sound(buying_snd, 1, false);
+					global.money -= 12300;
 				}
-				audio_play_sound(buying_snd, 1, false);
-				global.money -= 2250;
 			}
-		}
-		if (barkeeperWindowIndex == 1) {
-			if (global.money >= 25) {
-				audio_play_sound(typewriterPush_snd, 1, false);
-				if (global.drunknessLevel < 0.75) {
-					global.drunknessLevel += 0.05;
+			if (barkeeperWindowIndex == 2) {
+				if (global.money >= 2250) {
+					audio_play_sound(typewriterPush_snd, 1, false);
+					if (global.syringes < 5) {
+						global.syringes += 1;
+					}
+					audio_play_sound(buying_snd, 1, false);
+					global.money -= 2250;
 				}
-				audio_play_sound(buying_snd, 1, false);
-				global.money -= 25;
+			}
+			if (barkeeperWindowIndex == 1) {
+				if (global.money >= 25) {
+					audio_play_sound(typewriterPush_snd, 1, false);
+					if (global.drunknessLevel < 0.75) {
+						global.drunknessLevel += 0.05;
+					}
+					audio_play_sound(buying_snd, 1, false);
+					global.money -= 25;
+				}
 			}
 		}
 	}

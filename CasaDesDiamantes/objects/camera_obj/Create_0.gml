@@ -90,6 +90,8 @@ barkeeperWindowIndex = 2;
 drawDialogueBorder = false;
 chipDif = 0;
 minecartCamera = false;
+bartenderPurchaseWindowStartDelay = 200;
+bartenderPurchaseWindowStartDelaySave = bartenderPurchaseWindowStartDelay;
 
 cameraSpeed = 0.02;
 ycameraSpeed = 0.02;

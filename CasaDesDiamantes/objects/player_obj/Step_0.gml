@@ -377,7 +377,7 @@ if (room == level_Casino || room == level_CasinoRoof || room == blackjackTable |
 }
 //Slowly remove drunkness
 if (global.drunknessLevel > 0) {
-	global.drunknessLevel -= global.dt / 25000;
+	global.drunknessLevel -= global.dt / 35000;
 }
 
 //Stop Dash in Minecart
