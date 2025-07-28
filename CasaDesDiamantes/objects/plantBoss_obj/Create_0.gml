@@ -1,4 +1,4 @@
-hp = 100.0;
+hp = 85.0;
 image_index = 0;
 image_speed = 0;
 damageTint = false;
@@ -8,7 +8,7 @@ startBattle = false;
 frozen = false;
 freezeRes = 9999999;
 
-attackTimer = 1100;
+attackTimer = 400;
 attackTimer2 = 350;
 
 explosionTimer = 30;

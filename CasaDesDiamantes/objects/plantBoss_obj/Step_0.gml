@@ -9,10 +9,40 @@ if (startBattle) {
 		attackTimer -= global.dt;
 		attackTimer2 -= global.dt;
 
-		if (attackTimer < 0) {
-			if (instance_number(plantBossFlower2_obj) < 6) {
-				flower = instance_create_layer(x + 300, y + random_range(-24, 16), "Instances", plantBossFlower2_obj);
-				flower.image_angle = random_range(120, 160);
+		if (attackTimer < 0) {	
+			for (var i = 0; i < instance_number(plantBossSpawnPoint_obj); ++i;) {
+			    spawnpoint[i] = instance_find(plantBossSpawnPoint_obj, i);
+				var randNumEn = choose(0, 0, 0, 0, 1, 1, 1, 2, 2, 3, 4, 4, 4, 4, 5, 5, 5, 5, 6);
+				var randNumSpawn = choose(0, 1, 1, 1);
+				if (randNumSpawn == 0) {
+					switch (randNumEn) {
+						case 0:
+							var enemy = instance_create_layer(spawnpoint[i].x, spawnpoint[i].y, "Instances", crawler_obj);
+							enemy.aggro = true;
+						break;
+						case 1:
+							var enemy = instance_create_layer(spawnpoint[i].x, spawnpoint[i].y, "Instances", zombieGirl_obj);
+							enemy.aggro = true;
+						break;
+						case 2:
+							var enemy = instance_create_layer(spawnpoint[i].x, spawnpoint[i].y, "Instances", zombieSoldierGirl_obj);
+							enemy.aggro = true;
+						break;
+						case 3:
+							var enemy = instance_create_layer(spawnpoint[i].x, spawnpoint[i].y, "Instances", zombieBucketGirl_obj);
+							enemy.aggro = true;
+						break;
+						case 4:
+							instance_create_layer(spawnpoint[i].x, spawnpoint[i].y, "Instances", ammoPackPistolDrop_obj);
+						break;
+						case 5:
+							instance_create_layer(spawnpoint[i].x, spawnpoint[i].y, "Instances", ammoPackShotgunDrop_obj);
+						break;
+						case 6:
+							instance_create_layer(spawnpoint[i].x, spawnpoint[i].y, "Instances", healthpackDrop_obj);
+						break;
+					}
+				}
 			}
 			attackTimer = attackTimerSave;
 		}
@@ -20,9 +50,19 @@ if (startBattle) {
 		if (attackTimer2 < 0) {
 			randNum = choose(4,6);
 			repeat (randNum) {
-				var damageOrb = instance_create_layer(x, y, "ForegroundObjects", damageOrb_obj);
-				damageOrb.speedX = choose(random_range(-1.6, -0.6), random_range(1.6, 0.6));
-				damageOrb.speedY = choose(random_range(-1.6, -0.6), random_range(1.6, 0.6));
+				var damageOrb = instance_create_layer(x, y, "ForegroundObjects", damageOrbPlantBoss_obj);
+				var dx = player_obj.x - x;
+		        var dy = player_obj.y - y;
+		        var dir = point_direction(x, y, player_obj.x, player_obj.y);
+
+		        // Etwas Zufalls-Spread hinzufügen (z.B. ±15 Grad)
+		        var spread = random_range(-15, 15);
+		        var finalDir = dir + spread;
+
+		        // Geschwindigkeit setzen basierend auf der Richtung
+		        damageOrb.speedX = lengthdir_x(global.dt, finalDir);
+		        damageOrb.speedY = lengthdir_y(global.dt, finalDir);
+				damageOrb.image_angle = dir + spread;
 			}
 			attackTint = false;
 			attackTintTimer = attackTintTimerSave;
