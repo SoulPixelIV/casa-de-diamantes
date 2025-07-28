@@ -6,11 +6,11 @@ if (global.silencedMPAmmo < global.silencedMPAmmoMax || global.unlockedWeapon[3]
 	{
 		pickWeapon_scr(3);
 	}
-	if (global.silencedMPAmmo <= global.silencedMPAmmoMax - 8)
+	if (global.silencedMPAmmo <= global.silencedMPAmmoMax - 16)
 	{
-	    global.silencedMPAmmo += 8;
+	    global.silencedMPAmmo += 16;
 	}
-	else if (global.silencedMPAmmo > global.silencedMPAmmoMax - 8)
+	else if (global.silencedMPAmmo > global.silencedMPAmmoMax - 16)
 	{
 		global.silencedMPAmmo = global.silencedMPAmmoMax;
 	}

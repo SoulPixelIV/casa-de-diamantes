@@ -1207,7 +1207,7 @@ if (!noHUD && instance_exists(player_obj))
 	else if (global.currentWeapon == gameManager_obj.pickedWeapon.silencedMP)
 	{
 		draw_sprite(ammoCircle_spr, 3, 32, 24);
-		draw_sprite(bulletbarSilencedMP_spr, global.silencedMPAmmo, 26, 32);
+		draw_sprite(bulletbarSilencedMP_spr, global.silencedMPAmmo / 2, 26, 32);
 		if (global.silencedMPUpgrade1) {
 			draw_sprite_ext(upgradeWindow_spr, 4, 34, 80, 1, 1, 0, -1, 1);
 		}
