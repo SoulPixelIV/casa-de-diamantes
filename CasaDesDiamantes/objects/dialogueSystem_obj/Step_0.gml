@@ -752,9 +752,8 @@ if (startScene19Timer) {
 					camera_obj.scoreSpinTimer = camera_obj.scoreSpinTimerSave;
 					camera_obj.scoreDifTimer = camera_obj.scoreDifTimerSave;
 					camera_obj.chipDif += 7500;
-					audio_play_sound(buying_snd, 1, false);
 					save_scr();
-					room_restart();
+					room_goto(cutscene4);
 				}
 			}
 		}
