@@ -33,8 +33,8 @@ if (instance_exists(cursorHitbox_obj)) {
 						{
 							case 0:
 								if (file_exists("save1")) {
-									load_scr();
-									room_goto(global.room);
+									//load_scr();
+									//room_goto(global.room);
 								}
 							break;
 							case 1:
@@ -88,8 +88,8 @@ if (!drawStartMenu) {
 		{
 			case 0:
 				if (file_exists("save1")) {
-					load_scr();
-					room_goto(global.room);
+					//load_scr();
+					//room_goto(global.room);
 				}
 			break;
 			case 1:

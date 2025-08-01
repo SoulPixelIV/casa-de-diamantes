@@ -12,7 +12,7 @@ if (startBattle) {
 		if (attackTimer < 0) {	
 			for (var i = 0; i < instance_number(plantBossSpawnPoint_obj); ++i;) {
 			    spawnpoint[i] = instance_find(plantBossSpawnPoint_obj, i);
-				var randNumEn = choose(0, 0, 0, 0, 1, 1, 1, 2, 2, 3, 4, 4, 4, 4, 5, 5, 5, 5, 6);
+				var randNumEn = choose(0, 0, 0, 0, 1, 1, 1, 2, 2, 5, 4, 4, 4, 4, 5, 5, 5, 5, 4, 6, 6);
 				var randNumSpawn = choose(0, 1, 1, 1);
 				if (randNumSpawn == 0) {
 					switch (randNumEn) {

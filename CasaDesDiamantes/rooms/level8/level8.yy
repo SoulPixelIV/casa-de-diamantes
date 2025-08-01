@@ -90,8 +90,6 @@
     {"name":"inst_64CFD107","path":"rooms/level8/level8.yy",},
     {"name":"inst_22FC6D0E","path":"rooms/level8/level8.yy",},
     {"name":"inst_49D60604","path":"rooms/level8/level8.yy",},
-    {"name":"inst_198AFE43","path":"rooms/level8/level8.yy",},
-    {"name":"inst_1DFEB930","path":"rooms/level8/level8.yy",},
     {"name":"inst_538D68E6","path":"rooms/level8/level8.yy",},
     {"name":"inst_2351C78B","path":"rooms/level8/level8.yy",},
     {"name":"inst_6AAA9A82","path":"rooms/level8/level8.yy",},
@@ -1364,8 +1362,6 @@
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"boosterSleep_obj","path":"objects/boosterSleep_obj/boosterSleep_obj.yy",},"propertyId":{"name":"boostStrengthY","path":"objects/boosterSleep_obj/boosterSleep_obj.yy",},"value":"-4.4",},
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"boosterSleep_obj","path":"objects/boosterSleep_obj/boosterSleep_obj.yy",},"propertyId":{"name":"index","path":"objects/boosterSleep_obj/boosterSleep_obj.yy",},"value":"0",},
           ],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":2832.0,"y":5858.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_198AFE43","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"lasergate_obj","path":"objects/lasergate_obj/lasergate_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":3176.0,"y":5536.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_1DFEB930","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"lasergate_obj","path":"objects/lasergate_obj/lasergate_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":2487.0,"y":5536.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_21534CA3","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"drawString_obj","path":"objects/drawString_obj/drawString_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1856.0,"y":5184.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_196F1C56","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"springladder_obj","path":"objects/springladder_obj/springladder_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1856.0,"y":5504.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_5D690F9","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"boosterSleep_obj","path":"objects/boosterSleep_obj/boosterSleep_obj.yy",},"properties":[
