@@ -2,7 +2,7 @@
   "resourceType": "GMRoom",
   "resourceVersion": "1.0",
   "name": "cutscene4",
-  "creationCodeFile": "${project_dir}/rooms/cutscene3/RoomCreationCode.gml",
+  "creationCodeFile": "${project_dir}/rooms/cutscene4/RoomCreationCode.gml",
   "inheritCode": false,
   "inheritCreationOrder": false,
   "inheritLayers": false,

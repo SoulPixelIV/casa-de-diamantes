@@ -411,7 +411,7 @@ dialogue[119] = "$I have analyzed your findings.";
 dialogue[120] = "$I have found some disturbing evidence for my hypothesis..";
 dialogue[121] = "$We will talk about it later in our room.";
 dialogue[122] = "$But for now let us enjoy the evening.";
-dialogue[123] = ">I hope you all have a wonderful stay!";
+dialogue[123] = "^I hope you all have a wonderful stay!";
 dialogue[124] = "                                                                                                             ";
 dialogue[125] = "";
 

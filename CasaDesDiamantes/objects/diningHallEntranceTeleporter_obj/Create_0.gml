@@ -6,6 +6,7 @@ waitDelay = 300;
 secondBlackscreenDelay = 200;
 teleporting = false;
 finishingTeleport = false;
+used = false;
 
 secondBlackscreenDelaySave = secondBlackscreenDelay;
 blackscreenDelaySave = blackscreenDelay;
