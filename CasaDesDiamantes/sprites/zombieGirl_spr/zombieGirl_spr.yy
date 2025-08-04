@@ -23,7 +23,7 @@
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 70,
+  "height": 71,
   "HTile": false,
   "layers": [
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"06a08679-d901-4c9b-a968-9ace0bc40054","blendMode":0,"displayName":"Head","isLocked":false,"opacity":100.0,"visible":true,},
@@ -31,6 +31,7 @@
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"cbafe64e-9e52-4633-896c-758a28e3837a","blendMode":0,"displayName":"Body","isLocked":false,"opacity":100.0,"visible":true,},
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"920b6962-3a90-49c8-bd14-b614cfea7bec","blendMode":0,"displayName":"Arm2","isLocked":false,"opacity":100.0,"visible":true,},
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"0a6ab609-597c-4b85-b364-b7a0f7ed8e68","blendMode":0,"displayName":"VineBackground","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"b94ed0b3-7a94-4905-8ba0-27fe9f340f86","blendMode":0,"displayName":"Enemy Light","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 9,

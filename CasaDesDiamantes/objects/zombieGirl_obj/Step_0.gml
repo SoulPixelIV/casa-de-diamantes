@@ -50,7 +50,7 @@ if (buffTimer < 0) {
 
 //Walking Animation
 if (horspeed != 0 && !attackInProg && !attackInProg2) {
-	animationSpeed = 0.5;
+	animationSpeed = 1;
 	sprite_index = zombieGirlWalking_spr;
 }
 
@@ -156,13 +156,38 @@ if (movement)
 			horspeed = 0;
 		}
 		
+		var target_scale = 1;
 		if (dirLookat > 90 && dirLookat < 270)
 		{
-			image_xscale = -1;
+			target_scale = -1;
 		}
 		else
 		{
-			image_xscale = 1;
+			target_scale = 1;
+		}
+		if (target_scale != image_xscale && !turnMinus && !turnPlus) {
+			if (image_xscale == 1) {
+				turnMinus = true;
+			} else {
+				turnPlus = true;
+			}
+		}
+		
+		if (turnMinus) {
+			if (image_xscale > -1) {
+				image_xscale -= global.dt / 10;
+			} else {
+				image_xscale = -1;
+				turnMinus = false;
+			}
+		}
+		if (turnPlus) {
+			if (image_xscale < 1) {
+				image_xscale += global.dt / 10;
+			} else {
+				image_xscale = 1;
+				turnPlus = false;
+			}
 		}
 	}
 	else
@@ -456,9 +481,9 @@ if (!attackInProg && !attackInProg2 && aggro && !jumpToNewDest && (verspeed < 0.
 {
 	if (distance_to_object(player_obj) < 128) {
 		if (!frozen) {
-			attackCooldown -= global.dt;
+			//attackCooldown -= global.dt;
 		} else {
-			attackCooldown -= global.dt / 2;
+			//attackCooldown -= global.dt / 2;
 		}
 	}
 }
@@ -487,7 +512,7 @@ if (attackInProg || attackInProg2) {
 		image_index = image_number - 1;
 	}
 	
-	animationSpeed = 0.75;
+	animationSpeed = 1;
 	if (attackInProg) {
 		attack1PrepareTimer -= global.dt;
 	}
@@ -566,7 +591,7 @@ if (attackInProg && sprite_index == zombieGirlAttack1Stop_spr && image_index = i
 	snapHitboxDelay = snapHitboxDelaySave;
 	snapAttack = false;
 	attackInProg = false;
-	animationSpeed = 0.75;
+	animationSpeed = 1;
 	if (!lostArm)
 	{
 		sprite_index = zombieGirl_spr;
@@ -638,7 +663,7 @@ if (attackInProg2 && sprite_index == zombieGirlAttack2Stop_spr && image_index = 
 	snapHitbox2Delay = snapHitbox2DelaySave;
 	snapAttack2 = false;
 	attackInProg2 = false;
-	animationSpeed = 0.75;
+	animationSpeed = 1;
 	if (!lostArm)
 	{
 		sprite_index = zombieGirl_spr;
@@ -669,7 +694,7 @@ if (attackDelay < 0)
 	attackInProg = false;
 	attackInProg2 = false;
 	startDrill = false;
-	animationSpeed = 0.75;
+	animationSpeed = 1;
 	if (!lostArm)
 	{
 		sprite_index = zombieGirl_spr;

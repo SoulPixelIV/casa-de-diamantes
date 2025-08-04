@@ -29,7 +29,7 @@ idleSoundDelay = 1600;
 
 lastBullet = bulletPistol_obj;
 ammoSpawnCount = 4;
-animationSpeed = 0.75;
+animationSpeed = 1;
 savePosX = x;
 savePosY = y;
 attackCooldown = 250;
@@ -82,6 +82,8 @@ buffScale = 1;
 buffDir = 1;
 randBuffDelay = choose(20, 300);
 burnTimerSave = burnTimer;
+turnMinus = false;
+turnPlus = false;
 
 snapHitboxDelay = 45; //Delay until damage hitbox spawns
 snapHitbox2Delay = 45; //Delay until damage hitbox spawns
