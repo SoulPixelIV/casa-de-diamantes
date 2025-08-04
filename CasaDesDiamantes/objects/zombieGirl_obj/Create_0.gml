@@ -84,6 +84,7 @@ randBuffDelay = choose(20, 300);
 burnTimerSave = burnTimer;
 turnMinus = false;
 turnPlus = false;
+target_scale = 1;
 
 snapHitboxDelay = 45; //Delay until damage hitbox spawns
 snapHitbox2Delay = 45; //Delay until damage hitbox spawns

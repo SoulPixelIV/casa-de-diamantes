@@ -110,6 +110,45 @@ if (aggroTimer < 0)
 
 if (movement)
 {
+	//Turning towards Player
+	if (aggro) {
+		if (!turnMinus && !turnPlus) {
+			target_scale = 1;
+			if (dirLookat > 90 && dirLookat < 270)
+			{
+				target_scale = -1;
+			}
+			else
+			{
+				target_scale = 1;
+			}
+		}
+		if (target_scale != image_xscale && !turnMinus && !turnPlus) {
+			if (image_xscale == 1) {
+				turnMinus = true;
+			} else {
+				turnPlus = true;
+			}
+		}
+		
+		if (turnMinus) {
+			if (image_xscale > -1) {
+				image_xscale -= global.dt / 8;
+			} else {
+				image_xscale = -1;
+				turnMinus = false;
+			}
+		}
+		if (turnPlus) {
+			if (image_xscale < 1) {
+				image_xscale += global.dt / 8;
+			} else {
+				image_xscale = 1;
+				turnPlus = false;
+			}
+		}
+	}
+	
 	if (aggro && distance_to_object(player_obj) > 24)
 	{
 		//Check if ground to walk on exists
@@ -154,40 +193,6 @@ if (movement)
 			}
 		} else {
 			horspeed = 0;
-		}
-		
-		var target_scale = 1;
-		if (dirLookat > 90 && dirLookat < 270)
-		{
-			target_scale = -1;
-		}
-		else
-		{
-			target_scale = 1;
-		}
-		if (target_scale != image_xscale && !turnMinus && !turnPlus) {
-			if (image_xscale == 1) {
-				turnMinus = true;
-			} else {
-				turnPlus = true;
-			}
-		}
-		
-		if (turnMinus) {
-			if (image_xscale > -1) {
-				image_xscale -= global.dt / 10;
-			} else {
-				image_xscale = -1;
-				turnMinus = false;
-			}
-		}
-		if (turnPlus) {
-			if (image_xscale < 1) {
-				image_xscale += global.dt / 10;
-			} else {
-				image_xscale = 1;
-				turnPlus = false;
-			}
 		}
 	}
 	else

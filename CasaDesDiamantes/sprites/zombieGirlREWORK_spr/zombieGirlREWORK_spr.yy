@@ -27,8 +27,8 @@
   "nineSlice": null,
   "origin": 4,
   "parent": {
-    "name": "ZombieGirl",
-    "path": "folders/Enemies/Enemy Sprites/ZombieGirl.yy",
+    "name": "Legacy",
+    "path": "folders/Enemies/Enemy Sprites/ZombieGirl/Legacy.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
