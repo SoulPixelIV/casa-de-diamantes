@@ -486,22 +486,23 @@ if (!attackInProg && !attackInProg2 && aggro && !jumpToNewDest && (verspeed < 0.
 {
 	if (distance_to_object(player_obj) < 128) {
 		if (!frozen) {
-			//attackCooldown -= global.dt;
+			attackCooldown -= global.dt;
 		} else {
-			//attackCooldown -= global.dt / 2;
+			attackCooldown -= global.dt / 2;
 		}
 	}
 }
 
 //Prepare Attack
-if (attackCooldown < 0)
+if (attackCooldown < 0 && !attackInProg && !attackInProg2)
 {
 	if (distance_to_object(player_obj) < 128) {
 		if (player_obj.y + 16 < y) {
-			sprite_index = zombieGirlAttack2_spr;
-			movement = false;
-			attackInProg2 = true;
+			//sprite_index = zombieGirlAttack2_spr;
+			//movement = false;
+			//attackInProg2 = true;
 		} else {
+			image_index = 0;
 			sprite_index = zombieGirlAttack1_spr;
 			movement = false;
 			attackInProg = true;
@@ -558,9 +559,9 @@ if (attackInProg)
 			sprite_index = zombieGirlAttack1Start_spr;
 	
 			if (snapHitboxDelay < 0) {
-				hitboxFlowerAttack = instance_create_layer(x + (48 * image_xscale), y, "Instances", damageHitbox_obj);
+				hitboxFlowerAttack = instance_create_layer(x + (38 * image_xscale), y, "Instances", damageHitbox_obj);
 				hitboxFlowerAttack.image_yscale = 1.5;
-				hitboxFlowerAttack.image_xscale = 3.5;
+				hitboxFlowerAttack.image_xscale = 3.7;
 				hitboxFlowerAttack.damage = damage;
 				hitboxFlowerAttack.timer = 20;
 
