@@ -25,6 +25,7 @@
     {"name":"SensoryTrembler","order":5,"path":"folders/Enemies/Enemy Sprites/SensoryTrembler.yy",},
     {"name":"SpiderCorpse","order":6,"path":"folders/Enemies/Enemy Sprites/SpiderCorpse.yy",},
     {"name":"ZombieGirl","order":7,"path":"folders/Enemies/Enemy Sprites/ZombieGirl.yy",},
+    {"name":"Legacy","order":24,"path":"folders/Enemies/Enemy Sprites/ZombieGirl/Legacy.yy",},
     {"name":"ZombieGirlWounded","order":8,"path":"folders/Enemies/Enemy Sprites/ZombieGirlWounded.yy",},
     {"name":"ZombieSoldier","order":9,"path":"folders/Enemies/Enemy Sprites/ZombieSoldier.yy",},
     {"name":"Extensions","order":15,"path":"folders/Extensions.yy",},
@@ -112,7 +113,6 @@
     {"name":"No ClothesOLD","order":1,"path":"folders/Steph/Steph Sprites/No ClothesOLD.yy",},
     {"name":"Skin1","order":40,"path":"folders/Steph/Steph Sprites/Skin1.yy",},
     {"name":"UI","order":28,"path":"folders/UI.yy",},
-    {"name":"Legacy","order":24,"path":"folders/Enemies/Enemy Sprites/ZombieGirl/Legacy.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"dashroll_snd","order":12,"path":"sounds/dashroll_snd/dashroll_snd.yy",},

@@ -51,6 +51,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"SpiderCorpse","folderPath":"folders/Enemies/Enemy Sprites/SpiderCorpse.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"ZombieGirl","folderPath":"folders/Enemies/Enemy Sprites/ZombieGirl.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Bodyparts","folderPath":"folders/Enemies/Enemy Sprites/ZombieGirl/Bodyparts.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Legacy","folderPath":"folders/Enemies/Enemy Sprites/ZombieGirl/Legacy.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"ZombieGirlWounded","folderPath":"folders/Enemies/Enemy Sprites/ZombieGirlWounded.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"ZombieSoldier","folderPath":"folders/Enemies/Enemy Sprites/ZombieSoldier.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Bodyparts","folderPath":"folders/Enemies/Enemy Sprites/ZombieSoldier/Bodyparts.yy",},
@@ -196,7 +197,6 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"UI","folderPath":"folders/UI.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"UI Objects","folderPath":"folders/UI/UI Objects.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"UI Sprites","folderPath":"folders/UI/UI Sprites.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Legacy","folderPath":"folders/Enemies/Enemy Sprites/ZombieGirl/Legacy.yy",},
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"Casino3DFilledMarquee.ttf","CopyToMask":-1,"filePath":"datafiles",},
