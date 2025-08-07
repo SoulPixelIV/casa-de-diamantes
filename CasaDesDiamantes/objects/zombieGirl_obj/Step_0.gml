@@ -498,9 +498,10 @@ if (attackCooldown < 0 && !attackInProg && !attackInProg2)
 {
 	if (distance_to_object(player_obj) < 128) {
 		if (player_obj.y + 16 < y) {
-			//sprite_index = zombieGirlAttack2_spr;
-			//movement = false;
-			//attackInProg2 = true;
+			image_index = 0;
+			sprite_index = zombieGirlAttack2_spr;
+			movement = false;
+			attackInProg2 = true;
 		} else {
 			image_index = 0;
 			sprite_index = zombieGirlAttack1_spr;
