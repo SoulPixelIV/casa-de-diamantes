@@ -666,6 +666,7 @@
     {"name":"inst_22CB3108","path":"rooms/level8/level8.yy",},
     {"name":"inst_59EDB039","path":"rooms/level8/level8.yy",},
     {"name":"inst_40B6EEAC","path":"rooms/level8/level8.yy",},
+    {"name":"inst_7C84D4E1","path":"rooms/level8/level8.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -1328,6 +1329,7 @@
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"battleArenaSpawn_obj","path":"objects/battleArenaSpawn_obj/battleArenaSpawn_obj.yy",},"propertyId":{"name":"dir","path":"objects/battleArenaSpawn_obj/battleArenaSpawn_obj.yy",},"value":"1",},
           ],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":2528.0,"y":5792.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_577093DE","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"sniperBoy_obj","path":"objects/sniperBoy_obj/sniperBoy_obj.yy",},"properties":[],"rotation":0.0,"scaleX":-1.0,"scaleY":1.0,"x":3030.0,"y":3451.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7C84D4E1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"crawler_obj","path":"objects/crawler_obj/crawler_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1408.0,"y":6048.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"MidgroundObjects","depth":1500,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Tiles","depth":1600,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":219,"SerialiseWidth":157,"TileCompressedData":[

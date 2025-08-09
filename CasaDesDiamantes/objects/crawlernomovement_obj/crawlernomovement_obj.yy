@@ -43,8 +43,8 @@
   ],
   "solid": false,
   "spriteId": {
-    "name": "crawler_spr",
-    "path": "sprites/crawler_spr/crawler_spr.yy",
+    "name": "crawlerOLD_spr",
+    "path": "sprites/crawlerOLD_spr/crawlerOLD_spr.yy",
   },
   "spriteMaskId": null,
   "visible": true,

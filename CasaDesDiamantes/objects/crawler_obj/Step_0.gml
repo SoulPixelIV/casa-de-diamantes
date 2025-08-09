@@ -108,12 +108,12 @@ if (aggro && movement)
 			if (player_obj.x > x)
 			{
 				dir = 0;
-				image_xscale = 1;
+				//image_xscale = 1;
 			}
 			else
 			{
 				dir = 1;
-				image_xscale = -1;
+				//image_xscale = -1;
 			}
 		}
 	}
@@ -481,7 +481,7 @@ if (aggro && checkedWaypoint)
 	
 		if (attackCooldown < 0 && !attackInProg1)
 		{
-			attackInProg1 = true;
+			//attackInProg1 = true;
 		}
 	}
 }
