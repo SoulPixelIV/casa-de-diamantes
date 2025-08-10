@@ -101,7 +101,7 @@ if (aggroTimer < 0)
 
 if (aggro && movement)
 {
-	if (checkedWaypoint && !attackInProg1)
+	if (checkedWaypoint)
 	{
 		if (instance_exists(player_obj))
 		{
@@ -135,7 +135,7 @@ if (aggro && movement)
 	
 	if (attackInProg1)
 	{
-		movSpeedGrad = 0;
+		//movSpeedGrad = 0;
 	}
 	
 	if (checkedWaypoint)
@@ -481,7 +481,7 @@ if (aggro && checkedWaypoint)
 	
 		if (attackCooldown < 0 && !attackInProg1)
 		{
-			//attackInProg1 = true;
+			attackInProg1 = true;
 		}
 	}
 }
@@ -529,6 +529,7 @@ if (attackInProg1)
 				body = instance_nearest(x, y, crawler_obj);
 			}
 			dmgHitbox.damage = 20;
+			dmgHitbox.follow = true;
 			dmgHitbox.image_xscale = 1.5;
 			dmgHitbox.image_yscale = 8;
 			dmgHitbox.timer = attackDelay1;

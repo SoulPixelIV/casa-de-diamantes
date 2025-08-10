@@ -103,7 +103,7 @@ attackTintDelay = -1;
 
 blend = image_blend;
 
-animationSpeed = 0.5;
+animationSpeed = 1;
 
 if (instance_exists(waypoint))
 {

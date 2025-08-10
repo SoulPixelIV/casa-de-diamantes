@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 9,
   "parent": {
-    "name": "Crawler",
-    "path": "folders/Enemies/Enemy Sprites/Crawler.yy",
+    "name": "Legacy",
+    "path": "folders/Enemies/Enemy Sprites/Crawler/Legacy.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
