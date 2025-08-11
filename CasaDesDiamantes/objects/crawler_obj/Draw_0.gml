@@ -1,3 +1,9 @@
+if (!standingStill) {
+	draw_sprite(dropShadow_spr, 0, x - 2, y + 8);
+} else {
+	draw_sprite(dropShadow_spr, 0, x - 1, y + 8);
+}
+
 if (!damageTint && attackTint) {
 	gpu_set_blendmode(bm_add);
 	shader_set(shd_flash);
@@ -42,18 +48,18 @@ if (buffed) {
 //Draw Aggro Mode
 if (aggroTimer < aggroTimerSave && aggroTimer > 0 && !aggro)
 {
-	draw_sprite(questionmark_spr, 0, x, y - 32);
+	draw_sprite(questionmark_spr, 0, x, y - 38);
 }
 if (aggro && exclamationmarkTimer > 0)
 {
 	exclamationmarkTimer -= global.dt;
-	draw_sprite(exclamationmark_spr, 0, x, y - 32);
+	draw_sprite(exclamationmark_spr, 0, x, y - 38);
 }
 if (frozen) {
-	draw_sprite(frozenskull_spr, 0, x, y - 32);	
+	draw_sprite(frozenskull_spr, 0, x, y - 38);	
 }
 if (burnt) {
-	draw_sprite(flameIcon_spr, 0, x, y - 32);
+	draw_sprite(flameIcon_spr, 0, x, y - 38);
 }
 if (!aggro)
 {

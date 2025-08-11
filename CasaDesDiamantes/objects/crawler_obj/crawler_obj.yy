@@ -34,15 +34,15 @@
   "physicsShapePoints": [],
   "physicsStartAwake": true,
   "properties": [
-    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"aggroRange","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"270","varType":1,},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"aggroRange","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"200","varType":1,},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"waypoint","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"noone","varType":5,},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"aggroAtSpecificPoint","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"0","varType":3,},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"movement","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"True","varType":3,},
   ],
   "solid": false,
   "spriteId": {
-    "name": "crawler_spr",
-    "path": "sprites/crawler_spr/crawler_spr.yy",
+    "name": "crawlerFullBody_spr",
+    "path": "sprites/crawlerFullBody_spr/crawlerFullBody_spr.yy",
   },
   "spriteMaskId": null,
   "visible": true,

@@ -1,3 +1,9 @@
+if (target_scale == -1) { 
+	draw_sprite(dropShadow_spr, 0, x, y + 34);
+} else {
+	draw_sprite(dropShadow_spr, 0, x - 4, y + 34);
+}
+
 if (!damageTint && attackTint) {
 	gpu_set_blendmode(bm_add);
 	shader_set(shd_flash);

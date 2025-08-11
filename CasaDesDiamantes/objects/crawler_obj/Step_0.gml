@@ -47,11 +47,8 @@ if (instance_exists(player_obj)) {
 		{
 			if (distance_to_point(player_obj.x, player_obj.y) < aggroRange)
 			{
-				if ((image_xscale == 1 && player_obj.x >= x) || (image_xscale == -1 && player_obj.x <= x))
-				{
-					deaggroTimer = deaggroTimerSave;
-					aggroTimer -= global.dt;
-				}
+				deaggroTimer = deaggroTimerSave;
+				aggroTimer -= global.dt;
 			}
 		}
 		
@@ -99,7 +96,27 @@ if (aggroTimer < 0)
 	aggroTimer = aggroTimerSave;
 }
 
-if (aggro && movement)
+if (aggro && standingStill) {
+	stillTimer -= global.dt;
+}
+
+if (sprite_index == crawlerTransform_spr && image_index > image_number - 1) {
+	image_index = 0;
+	sprite_index = crawlerFireAttack_spr;
+}
+
+if (sprite_index == crawlerTransformBack_spr && image_index > image_number - 1) {
+	image_index = 0;
+	sprite_index = crawlerFullBody_spr;
+}
+
+if (sprite_index == crawlerFullBody_spr) {
+	damageRes = 1;
+} else {
+	damageRes = 2;
+}
+
+if (aggro && movement && sprite_index != crawlerFullBody_spr)
 {
 	if (checkedWaypoint)
 	{
@@ -178,82 +195,6 @@ if (aggro && movement)
 			checkedWaypoint = true;
 		}
 	}
-	
-	//Stage Jumping
-	/*
-	if (instance_exists(player_obj) && !jumpToNewDest && aggro && !attackInProg1) {
-		checkForPlayerPosTimer -= global.dt;
-		
-		if (checkForPlayerPosTimer < 0) {
-			currPlayerPosY = player_obj.y;
-			
-			var platformToCheck = noone;
-			var platformStanding = instance_place(x, y + 42, colliderGlobal_obj);
-			with (player_obj) {
-				platformToCheck = instance_place(x, y + 42, colliderGlobal_obj);
-			}
-			//Check if player is not on same stage
-			if (platformToCheck != platformStanding) {
-				if (player_obj.grounded) {
-					if (instance_exists(platformToCheck)) {
-						xPosGoalRight = player_obj.x;
-						xPosGoalLeft = player_obj.x;
-						for (i = 0; i < 512; i++) {	
-							//Look for edge of platform
-							if (!place_meeting(xPosGoalRight + 1, player_obj.y, colliderGlobal_obj) && place_meeting(xPosGoalRight + 1, player_obj.y + 42, colliderGlobal_obj)) {
-								xPosGoalRight += 1;
-								continue;
-							}
-							//Look for edge of platform
-							if (!place_meeting(xPosGoalLeft - 1, player_obj.y, colliderGlobal_obj) && place_meeting(xPosGoalLeft - 1, player_obj.y + 42, colliderGlobal_obj)) {
-								xPosGoalLeft -= 1;
-								continue;
-							}
-							
-							if (xPosGoalLeft < xPosGoalRight) {
-								randDestX = random_range(xPosGoalLeft, xPosGoalRight);
-							} else {
-								randDestX = random_range(xPosGoalRight, xPosGoalLeft);
-							}
-							testX = xPosGoalRight;
-							testY = xPosGoalLeft;
-							
-							//Check if jump is not too far
-							if (distance_to_point(randDestX, player_obj.y) < 360) {
-								jumpToNewDest = true;
-								newDestPosX = randDestX;
-								newDestPosY = player_obj.y - 12;
-							}
-							break;
-						}
-					}
-				} 
-			}
-		}
-	}
-	
-	if (jumpToNewDest) {		
-		stageTeleportTimer -= global.dt;
-		
-		if (!spawnedStageJumpAnimation) {
-			instance_create_layer(x, y, "Instances", stagejumpAnimation_obj);
-			instance_create_layer(newDestPosX, newDestPosY, "Instances", stagejumpAnimation_obj);
-			spawnedStageJumpAnimation = true;
-		}
-		
-		if (stageTeleportTimer < 0) {
-			x = newDestPosX;
-			y = newDestPosY;
-		
-			//Reset Timer
-			checkForPlayerPosTimer = checkForPlayerPosTimerSave;
-			
-			stageTeleportTimer = stageTeleportTimerSave + random_range(-30, 30);
-			spawnedStageJumpAnimation = false;
-			jumpToNewDest = false;
-		}
-	}
-	*/
 }
 
 //Gravity
@@ -469,7 +410,7 @@ if (useDelayTimer < 0)
 //###Attack###
 
 //Cooldown
-if (aggro && checkedWaypoint)
+if (aggro && checkedWaypoint && stillTimer < 0)
 {	
 	if (!attackInProg1)
 	{
@@ -519,8 +460,12 @@ if (attackInProg1)
 		}
 	
 		animationSpeed = 1.25;
-		sprite_index = crawlerFireAttack_spr;
-		delay1 = true;
+		
+		if (!delay1) {
+			image_index = 0;
+			sprite_index = crawlerTransform_spr;
+			delay1 = true;
+		}
 		if (!instance_exists(dmgHitbox))
 		{
 			dmgHitbox = instance_create_layer(x + 37 * image_xscale, y - 48, "Instances", damageHitbox_obj);
@@ -541,6 +486,11 @@ if (attackInProg1)
 			light.body = id;
 		}
 	}
+}
+
+if (instance_exists(dmgHitbox)) {
+	dmgHitbox.followX = x * image_xscale;
+	dmgHitbox.followY = y - 48;
 }
 
 //Start Attack 2
@@ -582,7 +532,6 @@ if (attackDelay1 < 0 || attackDelay2 < 0)
 	attackInProg2 = false;
 	attack1PrepareTimer = attack1PrepareTimerSave;
 	animationSpeed = 1;
-	sprite_index = crawler_spr;
 	damageCollision = false;
 	if (instance_exists(light))
 	{
@@ -600,6 +549,12 @@ if (attackDelay1 < 0 || attackDelay2 < 0)
 		audio_stop_sound(flameSound)
 		flameSound = noone;
 	}
+	
+	//Turn Back to Standstill
+	image_index = 0;
+	sprite_index = crawlerTransformBack_spr;
+	stillTimer = stillTimerSave;
+	standingStill = true;
 }
 
 if (instance_exists(body)) {

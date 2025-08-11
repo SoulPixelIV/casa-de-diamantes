@@ -31,6 +31,7 @@
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"10aa751e-908a-4506-84df-6c5a64542712","blendMode":0,"displayName":"Plants","isLocked":false,"opacity":100.0,"visible":true,},
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"b417b0b9-121a-4df0-a9e5-314170e000f1","blendMode":0,"displayName":"Body","isLocked":false,"opacity":100.0,"visible":true,},
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"31e321f0-5061-42ef-b271-6a52c45bfef7","blendMode":0,"displayName":"Fire","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"660d68c6-df60-423c-abb4-e25b6af31a74","blendMode":0,"displayName":"EnemyLight","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 9,

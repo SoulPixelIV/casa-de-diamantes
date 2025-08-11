@@ -3,7 +3,7 @@ horspeed = 0;
 verspeed = 0;
 gravityStrength = -0.05;
 
-hp = 25;
+hp = 45;
 damageRes = 1;
 colliding = false;
 hitable = true;
@@ -40,6 +40,9 @@ buffScale = 1;
 buffDir = 1;
 buffTimerSave = buffTimer;
 randBuffDelay = choose(20, 300);
+standingStill = true;
+stillTimer = 0;
+stillTimerSave = 500;
 
 damageTint = false;
 attackTint = false;
@@ -61,8 +64,8 @@ ammoSpawnCount = 2;
 attackInProg1 = false;
 attackInProg2 = false;
 fireballInstance = noone;
-attackCooldown = 320;
-attackDelay1 = 800;
+attackCooldown = 160;
+attackDelay1 = 1100;
 attackDelay2 = 350;
 delay1 = false;
 delay2 = false;
@@ -76,9 +79,9 @@ body = noone;
 light = noone;
 hitbox = noone;
 
-attackCooldownSave = attackCooldown;
+attackCooldownSave = 320;
 attackCooldownSaveBuffed = attackCooldownSave;
-attackDelay1Save = attackDelay1;
+attackDelay1Save = 1100;
 attackDelay2Save = attackDelay2;
 
 damageTintTimerSave = damageTintTimer;
@@ -103,7 +106,7 @@ attackTintDelay = -1;
 
 blend = image_blend;
 
-animationSpeed = 1;
+animationSpeed = 0.75;
 
 if (instance_exists(waypoint))
 {
