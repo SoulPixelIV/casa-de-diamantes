@@ -496,21 +496,23 @@ if (!attackInProg && !attackInProg2 && aggro && !jumpToNewDest && (verspeed < 0.
 //Prepare Attack
 if (attackCooldown < 0 && !attackInProg && !attackInProg2)
 {
-	if (distance_to_object(player_obj) < 128) {
-		if (player_obj.y + 16 < y) {
-			image_index = 0;
-			sprite_index = zombieGirlAttack2_spr;
-			movement = false;
-			attackInProg2 = true;
-		} else {
-			image_index = 0;
-			sprite_index = zombieGirlAttack1_spr;
-			movement = false;
-			attackInProg = true;
+	if (image_xscale == 1 || image_xscale == -1) {
+		if (distance_to_object(player_obj) < 128) {
+			if (player_obj.y + 16 < y) {
+				image_index = 0;
+				sprite_index = zombieGirlAttack2_spr;
+				movement = false;
+				attackInProg2 = true;
+			} else {
+				image_index = 0;
+				sprite_index = zombieGirlAttack1_spr;
+				movement = false;
+				attackInProg = true;
+			}
 		}
+		//audio_play_sound_on(emitter, basicZombieAttack1_snd, false, 1);
+		attackCooldown = attackCooldownSave;
 	}
-	//audio_play_sound_on(emitter, basicZombieAttack1_snd, false, 1);
-	attackCooldown = attackCooldownSave;
 }
 
 if (attackInProg || attackInProg2) {
