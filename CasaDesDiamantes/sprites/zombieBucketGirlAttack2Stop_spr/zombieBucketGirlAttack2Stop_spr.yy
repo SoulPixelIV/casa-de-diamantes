@@ -15,7 +15,7 @@
   "frames": [
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"af819215-6e59-46d9-a762-bd8de6486cad",},
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"ab9a3372-7e96-4cc7-a537-f8e124f4ae4c",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"593d57e9-72fc-4409-b46d-12d012bb6e18",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"0b209bb6-5404-4179-9fdd-96986e9dabe4",},
   ],
   "gridX": 0,
   "gridY": 0,
@@ -58,7 +58,7 @@
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
             {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"af819215-6e59-46d9-a762-bd8de6486cad","path":"sprites/zombieBucketGirlAttack2Stop_spr/zombieBucketGirlAttack2Stop_spr.yy",},},},"Disabled":false,"id":"0eb761db-5e09-4c11-8e8f-579c7a38fbc0","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
             {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"ab9a3372-7e96-4cc7-a537-f8e124f4ae4c","path":"sprites/zombieBucketGirlAttack2Stop_spr/zombieBucketGirlAttack2Stop_spr.yy",},},},"Disabled":false,"id":"f661bb9f-89f3-4a36-9ea6-625977e29a9d","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"593d57e9-72fc-4409-b46d-12d012bb6e18","path":"sprites/zombieBucketGirlAttack2Stop_spr/zombieBucketGirlAttack2Stop_spr.yy",},},},"Disabled":false,"id":"6b23f706-4ed7-40a2-a38c-7e00d57ab7c3","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"0b209bb6-5404-4179-9fdd-96986e9dabe4","path":"sprites/zombieBucketGirlAttack2Stop_spr/zombieBucketGirlAttack2Stop_spr.yy",},},},"Disabled":false,"id":"d5d3e643-2b43-4858-8861-5d8689110087","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

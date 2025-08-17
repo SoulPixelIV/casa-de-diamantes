@@ -41,8 +41,8 @@
   ],
   "solid": false,
   "spriteId": {
-    "name": "zombieBucketGirl_spr",
-    "path": "sprites/zombieBucketGirl_spr/zombieBucketGirl_spr.yy",
+    "name": "zombieBucketGirlOLD_spr",
+    "path": "sprites/zombieBucketGirlOLD_spr/zombieBucketGirlOLD_spr.yy",
   },
   "spriteMaskId": null,
   "visible": true,

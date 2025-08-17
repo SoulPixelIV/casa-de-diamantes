@@ -1,0 +1,1 @@
+instance_change(explosionTiny_obj, true);

@@ -27,8 +27,8 @@
   "nineSlice": null,
   "origin": 9,
   "parent": {
-    "name": "BucketZombie",
-    "path": "folders/Enemies/Enemy Sprites/BucketZombie.yy",
+    "name": "Legacy",
+    "path": "folders/Enemies/Enemy Sprites/BucketZombie/Legacy.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

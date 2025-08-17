@@ -456,7 +456,7 @@ if (aggro && !attackInProg1 && !attackInProg2)
 if (attackCooldown < 0)
 {
 	if (instance_exists(player_obj)) {
-		if (distance_to_object(player_obj) < 76) {
+		if (distance_to_object(player_obj) < 112) {
 			sprite_index = zombieBucketGirlAttack1_spr;
 			movement = false;
 			attackInProg1 = true;
@@ -522,11 +522,11 @@ if (attackInProg1)
 			}
 	
 			if (snapHitboxDelay < 0) {
-				hitboxFlowerAttack = instance_create_layer(x + (42 * image_xscale), y, "Instances", damageHitbox_obj);
-				hitboxFlowerAttack.image_yscale = 3;
-				hitboxFlowerAttack.image_xscale = 2;
-				hitboxFlowerAttack.damage = damageAttack1;
-				hitboxFlowerAttack.timer = 100;
+				//hitboxFlowerAttack = instance_create_layer(x + (42 * image_xscale), y, "Instances", damageHitbox_obj);
+				//hitboxFlowerAttack.image_yscale = 3;
+				//hitboxFlowerAttack.image_xscale = 2;
+				//hitboxFlowerAttack.damage = damageAttack1;
+				//hitboxFlowerAttack.timer = 100;
 				
 				instance_create_layer(x + 10 * image_xscale, y - 10 * image_xscale, "ForegroundObjects", dustParticle_obj);
 				repeat(6)

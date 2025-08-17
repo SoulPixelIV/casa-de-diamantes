@@ -5,13 +5,15 @@ if (other.image_alpha > 0) {
 		if (!damageRecieved && !isZombie)
 		{
 			nextExplosion = instance_nearest(x, y, explosionParent_obj);
-			if (nextExplosion.x > x)
-			{
-				horspeed -= other.knockback;
-			}
-			else
-			{
-				horspeed += other.knockback;
+			if (instance_exists(nextExplosion)) {
+				if (nextExplosion.x > x)
+				{
+					horspeed -= other.knockback;
+				}
+				else
+				{
+					horspeed += other.knockback;
+				}
 			}
 		}
 
