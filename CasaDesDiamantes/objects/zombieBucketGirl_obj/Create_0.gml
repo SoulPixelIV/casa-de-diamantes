@@ -20,6 +20,9 @@ knockback = 0;
 randAttack = 1;
 gotSpawned = false;
 icecicleAttackTimer = 200;
+turnMinus = false;
+turnPlus = false;
+target_scale = 1;
 
 switchedSprite = false;
 

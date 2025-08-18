@@ -89,6 +89,47 @@ if (aggroTimer < 0)
 	aggroTimer = aggroTimerSave;
 }
 
+if (aggro) {
+	//Turning towards Player
+	if (aggro) {
+		if (!turnMinus && !turnPlus) {
+			target_scale = 1;
+			if (dirLookat > 90 && dirLookat < 270)
+			{
+				target_scale = -1;
+			}
+			else
+			{
+				target_scale = 1;
+			}
+		}
+		if (target_scale != image_xscale && !turnMinus && !turnPlus) {
+			if (image_xscale == 1) {
+				turnMinus = true;
+			} else {
+				turnPlus = true;
+			}
+		}
+		
+		if (turnMinus) {
+			if (image_xscale > -1) {
+				image_xscale -= global.dt / 8;
+			} else {
+				image_xscale = -1;
+				turnMinus = false;
+			}
+		}
+		if (turnPlus) {
+			if (image_xscale < 1) {
+				image_xscale += global.dt / 8;
+			} else {
+				image_xscale = 1;
+				turnPlus = false;
+			}
+		}
+	}
+}
+
 if (movement)
 {
 	if (dirLookat > 90 && dirLookat < 270)
@@ -455,17 +496,19 @@ if (aggro && !attackInProg1 && !attackInProg2)
 //Prepare Attack
 if (attackCooldown < 0)
 {
-	if (instance_exists(player_obj)) {
-		if (distance_to_object(player_obj) < 112) {
-			sprite_index = zombieBucketGirlAttack1_spr;
-			movement = false;
-			attackInProg1 = true;
-		} else {
-			sprite_index = zombieBucketGirlAttack2_spr;
-			movement = false;
-			attackInProg2 = true;
+	if (image_xscale == 1 || image_xscale == -1) {
+		if (instance_exists(player_obj)) {
+			if (distance_to_object(player_obj) < 112) {
+				sprite_index = zombieBucketGirlAttack1_spr;
+				movement = false;
+				attackInProg1 = true;
+			} else {
+				sprite_index = zombieBucketGirlAttack2_spr;
+				movement = false;
+				attackInProg2 = true;
+			}
+			attackCooldown = attackCooldownSave;
 		}
-		attackCooldown = attackCooldownSave;
 	}
 }
 
@@ -603,7 +646,35 @@ if (attackInProg2)
 		//Only Spawn Flower Object once
 		if (!roseAttack) {
 			
-			instance_create_layer(x + 86 * image_xscale, y + 38, "ForegroundObjects", whiteExplosionEffect_obj);
+			var shot = audio_play_sound_on(emitter, insectSpit_snd, false, 1);
+			audio_sound_pitch(shot, random_range(0.9, 1.1));
+		
+			var bullet1 = instance_create_layer(x, y, "Instances", bulletZombieBrawler_obj);
+			var bullet2 = instance_create_layer(x, y, "Instances", bulletZombieBrawler_obj);
+			var bullet3 = instance_create_layer(x, y, "Instances", bulletZombieBrawler_obj);
+			var bullet4 = instance_create_layer(x, y, "Instances", bulletZombieBrawler_obj);
+			var bullet5 = instance_create_layer(x, y, "Instances", bulletZombieBrawler_obj);
+			var bullet6 = instance_create_layer(x, y, "Instances", bulletZombieBrawler_obj);
+			var bullet7 = instance_create_layer(x, y, "Instances", bulletZombieBrawler_obj);
+			var bullet8 = instance_create_layer(x, y, "Instances", bulletZombieBrawler_obj);
+		
+			bullet1.image_angle = 0;
+			bullet2.image_angle = 45;
+			bullet3.image_angle = 90;
+			bullet4.image_angle = 135;
+			bullet5.image_angle = 180;
+			bullet6.image_angle = 215;
+			bullet7.image_angle = 260;
+			bullet8.image_angle = 305;
+			
+			bullet1.dir = 0;
+			bullet2.dir = 1;
+			bullet3.dir = 2;
+			bullet4.dir = 3;
+			bullet5.dir = 4;
+			bullet6.dir = 5;
+			bullet7.dir = 6;
+			bullet8.dir = 7;
 			
 			if (!switchedSprite) {
 				image_index = 0;
@@ -612,12 +683,12 @@ if (attackInProg2)
 			}
 			
 			screenshake(50, 12, 0.6, id);
-			flowerline = instance_create_layer(x + 15 * image_xscale, y + 38, "Instances", flowerline_obj);
-			flowerline.dir = image_xscale;
+			//flowerline = instance_create_layer(x + 15 * image_xscale, y + 38, "Instances", flowerline_obj);
+			//flowerline.dir = image_xscale;
 			
-			expl1 = instance_create_layer(x + 40 * image_xscale, y + 38, "ForegroundObjects", whiteExplosionEffectSmall_obj);
-			expl2 = instance_create_layer(x - 90 * image_xscale, y + 38, "ForegroundObjects", whiteExplosionEffectSmall_obj);
-			expl2.image_xscale = -1;
+			//expl1 = instance_create_layer(x + 40 * image_xscale, y + 38, "ForegroundObjects", whiteExplosionEffectSmall_obj);
+			//expl2 = instance_create_layer(x - 90 * image_xscale, y + 38, "ForegroundObjects", whiteExplosionEffectSmall_obj);
+			//expl2.image_xscale = -1;
 			
 			roseAttack = true;
 		}

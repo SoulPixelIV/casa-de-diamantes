@@ -1,6 +1,6 @@
 /// @description Variables
 
-movSpeed = 2.7;
+movSpeed = 2.2;
 createdFire = false;
 invincibilityTimer = 5;
 playedSound = false;
