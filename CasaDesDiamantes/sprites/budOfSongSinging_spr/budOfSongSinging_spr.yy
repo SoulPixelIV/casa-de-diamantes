@@ -35,6 +35,7 @@
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"2d11faee-6b7a-44a2-9df4-5efe6f5d5e9d","blendMode":0,"displayName":"Hair","isLocked":false,"opacity":100.0,"visible":true,},
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"9b3a3070-2d77-406f-98cc-ab6494798a35","blendMode":0,"displayName":"Lady","isLocked":false,"opacity":100.0,"visible":true,},
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"046af8e4-1c6b-41db-a9f1-613865013242","blendMode":0,"displayName":"FlowerBase","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"fe488341-b633-42ea-9aa9-776ae124d08d","blendMode":0,"displayName":"Enemy Light","isLocked":false,"opacity":100.0,"visible":true,},
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"5f19a67d-2cf6-4b80-95ed-ba3f4dbd4688","blendMode":0,"displayName":"Background","isLocked":false,"opacity":100.0,"visible":false,},
   ],
   "nineSlice": null,

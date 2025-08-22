@@ -118,6 +118,7 @@
     {"name":"Bodyparts","order":5,"path":"folders/Enemies/Enemy Sprites/SpiderCorpse/Bodyparts.yy",},
     {"name":"Bodyparts","order":14,"path":"folders/Enemies/Enemy Sprites/FloraBlaster/Bodyparts.yy",},
     {"name":"Bodyparts","order":3,"path":"folders/Enemies/Enemy Sprites/Moth/Bodyparts.yy",},
+    {"name":"Bodyparts","order":6,"path":"folders/Enemies/Enemy Sprites/BudOfSong/Bodyparts.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"dashroll_snd","order":12,"path":"sounds/dashroll_snd/dashroll_snd.yy",},
@@ -873,6 +874,7 @@
     {"name":"warpzoneTeleportPoint2_obj","order":3,"path":"objects/warpzoneTeleportPoint2_obj/warpzoneTeleportPoint2_obj.yy",},
     {"name":"springLadder_spr","order":178,"path":"sprites/springLadder_spr/springLadder_spr.yy",},
     {"name":"eyeVirusBossBackgroundRing_spr","order":223,"path":"sprites/eyeVirusBossBackgroundRing_spr/eyeVirusBossBackgroundRing_spr.yy",},
+    {"name":"budOfSongBodyPart_obj","order":35,"path":"objects/budOfSongBodyPart_obj/budOfSongBodyPart_obj.yy",},
     {"name":"__spr_ppf_bayer2x2","order":1,"path":"sprites/__spr_ppf_bayer2x2/__spr_ppf_bayer2x2.yy",},
     {"name":"endcredits_obj","order":273,"path":"objects/endcredits_obj/endcredits_obj.yy",},
     {"name":"whitesquare_obj","order":97,"path":"objects/whitesquare_obj/whitesquare_obj.yy",},

@@ -148,13 +148,43 @@ if (movement)
 			horspeed = 0;
 		}
 		
-		if (dirLookat > 90 && dirLookat < 270)
-		{
-			image_xscale = -1;
-		}
-		else
-		{
-			image_xscale = 1;
+		//Turning towards Player
+		if (aggro) {
+			if (!turnMinus && !turnPlus) {
+				target_scale = 1;
+				if (dirLookat > 90 && dirLookat < 270)
+				{
+					target_scale = -1;
+				}
+				else
+				{
+					target_scale = 1;
+				}
+			}
+			if (target_scale != image_xscale && !turnMinus && !turnPlus) {
+				if (image_xscale == 1) {
+					turnMinus = true;
+				} else {
+					turnPlus = true;
+				}
+			}
+		
+			if (turnMinus) {
+				if (image_xscale > -1) {
+					image_xscale -= global.dt / 8;
+				} else {
+					image_xscale = -1;
+					turnMinus = false;
+				}
+			}
+			if (turnPlus) {
+				if (image_xscale < 1) {
+					image_xscale += global.dt / 8;
+				} else {
+					image_xscale = 1;
+					turnPlus = false;
+				}
+			}
 		}
 	}
 	else
@@ -409,6 +439,18 @@ if (hp < 0)
 		{
 			instance_create_layer(x, y - 22, "Instances", chipVioletPickup_obj);
 		}
+	}
+	
+	var head = instance_create_layer(x, y - 8, "Instances", budOfSongBodyPart_obj);
+	head.image_index = 0;
+	var leg = instance_create_layer(x + 2, y + 8, "Instances", budOfSongBodyPart_obj);
+	leg.image_index = 1;
+	var arm = instance_create_layer(x - 4, y, "Instances", budOfSongBodyPart_obj);
+	arm.image_index = 2;
+	
+	var amount = random_range(12, 18);
+	repeat(amount) {
+		instance_create_layer(x, y, "Instances", zombieChunk_obj);
 	}
 	
 	//Set Points

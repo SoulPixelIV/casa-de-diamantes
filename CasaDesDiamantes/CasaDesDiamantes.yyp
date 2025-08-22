@@ -202,6 +202,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Bodyparts","folderPath":"folders/Enemies/Enemy Sprites/SpiderCorpse/Bodyparts.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Bodyparts","folderPath":"folders/Enemies/Enemy Sprites/FloraBlaster/Bodyparts.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Bodyparts","folderPath":"folders/Enemies/Enemy Sprites/Moth/Bodyparts.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Bodyparts","folderPath":"folders/Enemies/Enemy Sprites/BudOfSong/Bodyparts.yy",},
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"Casino3DFilledMarquee.ttf","CopyToMask":-1,"filePath":"datafiles",},
@@ -1024,6 +1025,7 @@
     {"id":{"name":"warpzoneTeleportPoint2_obj","path":"objects/warpzoneTeleportPoint2_obj/warpzoneTeleportPoint2_obj.yy",},},
     {"id":{"name":"springLadder_spr","path":"sprites/springLadder_spr/springLadder_spr.yy",},},
     {"id":{"name":"eyeVirusBossBackgroundRing_spr","path":"sprites/eyeVirusBossBackgroundRing_spr/eyeVirusBossBackgroundRing_spr.yy",},},
+    {"id":{"name":"budOfSongBodyPart_obj","path":"objects/budOfSongBodyPart_obj/budOfSongBodyPart_obj.yy",},},
     {"id":{"name":"__spr_ppf_bayer2x2","path":"sprites/__spr_ppf_bayer2x2/__spr_ppf_bayer2x2.yy",},},
     {"id":{"name":"endcredits_obj","path":"objects/endcredits_obj/endcredits_obj.yy",},},
     {"id":{"name":"whitesquare_obj","path":"objects/whitesquare_obj/whitesquare_obj.yy",},},
@@ -1087,6 +1089,7 @@
     {"id":{"name":"minecartFalling_spr","path":"sprites/minecartFalling_spr/minecartFalling_spr.yy",},},
     {"id":{"name":"colliderCasinoCutscene_obj","path":"objects/colliderCasinoCutscene_obj/colliderCasinoCutscene_obj.yy",},},
     {"id":{"name":"Level6_Level7_teleporter","path":"objects/Level6_Level7_teleporter/Level6_Level7_teleporter.yy",},},
+    {"id":{"name":"budOfSongBodyParts_spr","path":"sprites/budOfSongBodyParts_spr/budOfSongBodyParts_spr.yy",},},
     {"id":{"name":"score4X_spr","path":"sprites/score4X_spr/score4X_spr.yy",},},
     {"id":{"name":"newEyeCutscene_spr","path":"sprites/newEyeCutscene_spr/newEyeCutscene_spr.yy",},},
     {"id":{"name":"marcusHatWalking_spr","path":"sprites/marcusHatWalking_spr/marcusHatWalking_spr.yy",},},

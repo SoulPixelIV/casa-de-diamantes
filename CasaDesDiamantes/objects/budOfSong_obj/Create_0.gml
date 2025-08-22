@@ -22,6 +22,9 @@ gotSpawned = false;
 lostArm = false;
 spawnedArm = false;
 icecicleAttackTimer = 200;
+turnMinus = false;
+turnPlus = false;
+target_scale = 1;
 
 buffed = false;
 enemyList = [];
