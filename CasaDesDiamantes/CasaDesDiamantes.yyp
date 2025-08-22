@@ -201,6 +201,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"UI Sprites","folderPath":"folders/UI/UI Sprites.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Bodyparts","folderPath":"folders/Enemies/Enemy Sprites/SpiderCorpse/Bodyparts.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Bodyparts","folderPath":"folders/Enemies/Enemy Sprites/FloraBlaster/Bodyparts.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Bodyparts","folderPath":"folders/Enemies/Enemy Sprites/Moth/Bodyparts.yy",},
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"Casino3DFilledMarquee.ttf","CopyToMask":-1,"filePath":"datafiles",},
@@ -622,6 +623,7 @@
     {"id":{"name":"TVResearchLab_spr","path":"sprites/TVResearchLab_spr/TVResearchLab_spr.yy",},},
     {"id":{"name":"blimpAct2End_obj","path":"objects/blimpAct2End_obj/blimpAct2End_obj.yy",},},
     {"id":{"name":"cutscene4","path":"rooms/cutscene4/cutscene4.yy",},},
+    {"id":{"name":"mothBodyParts_spr","path":"sprites/mothBodyParts_spr/mothBodyParts_spr.yy",},},
     {"id":{"name":"exclamationmark_spr","path":"sprites/exclamationmark_spr/exclamationmark_spr.yy",},},
     {"id":{"name":"__ppf_sh_render_vhs","path":"shaders/__ppf_sh_render_vhs/__ppf_sh_render_vhs.yy",},},
     {"id":{"name":"enemyTeleportBlockZone_obj","path":"objects/enemyTeleportBlockZone_obj/enemyTeleportBlockZone_obj.yy",},},
@@ -1436,6 +1438,7 @@
     {"id":{"name":"playerJumpSpin_spr","path":"sprites/playerJumpSpin_spr/playerJumpSpin_spr.yy",},},
     {"id":{"name":"lighting_update_camera","path":"scripts/lighting_update_camera/lighting_update_camera.yy",},},
     {"id":{"name":"slotblockLine_obj","path":"objects/slotblockLine_obj/slotblockLine_obj.yy",},},
+    {"id":{"name":"mothBodyPart_obj","path":"objects/mothBodyPart_obj/mothBodyPart_obj.yy",},},
     {"id":{"name":"neuralActivatorWarpzone1_obj","path":"objects/neuralActivatorWarpzone1_obj/neuralActivatorWarpzone1_obj.yy",},},
     {"id":{"name":"__spr_ppf_prism_lut_gp","path":"sprites/__spr_ppf_prism_lut_gp/__spr_ppf_prism_lut_gp.yy",},},
     {"id":{"name":"ext_light_attenuation_init","path":"scripts/ext_light_attenuation_init/ext_light_attenuation_init.yy",},},

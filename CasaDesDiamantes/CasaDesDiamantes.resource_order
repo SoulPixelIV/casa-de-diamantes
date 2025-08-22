@@ -117,6 +117,7 @@
     {"name":"UI","order":28,"path":"folders/UI.yy",},
     {"name":"Bodyparts","order":5,"path":"folders/Enemies/Enemy Sprites/SpiderCorpse/Bodyparts.yy",},
     {"name":"Bodyparts","order":14,"path":"folders/Enemies/Enemy Sprites/FloraBlaster/Bodyparts.yy",},
+    {"name":"Bodyparts","order":3,"path":"folders/Enemies/Enemy Sprites/Moth/Bodyparts.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"dashroll_snd","order":12,"path":"sounds/dashroll_snd/dashroll_snd.yy",},
@@ -1266,6 +1267,7 @@
     {"name":"playerJumpSpin_spr","order":18,"path":"sprites/playerJumpSpin_spr/playerJumpSpin_spr.yy",},
     {"name":"lighting_update_camera","order":5,"path":"scripts/lighting_update_camera/lighting_update_camera.yy",},
     {"name":"slotblockLine_obj","order":181,"path":"objects/slotblockLine_obj/slotblockLine_obj.yy",},
+    {"name":"mothBodyPart_obj","order":34,"path":"objects/mothBodyPart_obj/mothBodyPart_obj.yy",},
     {"name":"neuralActivatorWarpzone1_obj","order":214,"path":"objects/neuralActivatorWarpzone1_obj/neuralActivatorWarpzone1_obj.yy",},
     {"name":"__spr_ppf_prism_lut_gp","order":1,"path":"sprites/__spr_ppf_prism_lut_gp/__spr_ppf_prism_lut_gp.yy",},
     {"name":"fakeTileEnable_obj","order":65,"path":"objects/fakeTileEnable_obj/fakeTileEnable_obj.yy",},
