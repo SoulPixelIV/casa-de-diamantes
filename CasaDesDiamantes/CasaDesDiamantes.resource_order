@@ -116,6 +116,7 @@
     {"name":"Skin1","order":40,"path":"folders/Steph/Steph Sprites/Skin1.yy",},
     {"name":"UI","order":28,"path":"folders/UI.yy",},
     {"name":"Bodyparts","order":5,"path":"folders/Enemies/Enemy Sprites/SpiderCorpse/Bodyparts.yy",},
+    {"name":"Bodyparts","order":14,"path":"folders/Enemies/Enemy Sprites/FloraBlaster/Bodyparts.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"dashroll_snd","order":12,"path":"sounds/dashroll_snd/dashroll_snd.yy",},
@@ -1587,6 +1588,7 @@
     {"name":"ledSignCocktails_obj","order":10,"path":"objects/ledSignCocktails_obj/ledSignCocktails_obj.yy",},
     {"name":"teamMeetupDialogue2","order":3,"path":"objects/teamMeetupDialogue2/teamMeetupDialogue2.yy",},
     {"name":"playerArmCurvedWalkingReverseSkin1_spr","order":8,"path":"sprites/playerArmCurvedWalkingReverseSkin1_spr/playerArmCurvedWalkingReverseSkin1_spr.yy",},
+    {"name":"floraBlasterBodyPart_obj","order":33,"path":"objects/floraBlasterBodyPart_obj/floraBlasterBodyPart_obj.yy",},
     {"name":"backgroundBuildings_spr","order":303,"path":"sprites/backgroundBuildings_spr/backgroundBuildings_spr.yy",},
     {"name":"lJoystickIcon_spr","order":183,"path":"sprites/lJoystickIcon_spr/lJoystickIcon_spr.yy",},
     {"name":"ledSignEmail_obj","order":12,"path":"objects/ledSignEmail_obj/ledSignEmail_obj.yy",},

@@ -414,6 +414,18 @@ if (hp < 0)
 		}
 	}
 	
+	var head = instance_create_layer(x, y - 8, "Instances", floraBlasterBodyPart_obj);
+	head.image_index = 0;
+	var leg = instance_create_layer(x + 2, y + 8, "Instances", floraBlasterBodyPart_obj);
+	leg.image_index = 1;
+	var arm = instance_create_layer(x - 4, y, "Instances", floraBlasterBodyPart_obj);
+	arm.image_index = 2;
+	
+	var amount = random_range(8, 14);
+	repeat(amount) {
+		instance_create_layer(x, y, "Instances", zombieChunk_obj);
+	}
+	
 	//Set Points
 	if (global.multiplier < 8) {
 		global.multiplier = global.multiplier * 2;

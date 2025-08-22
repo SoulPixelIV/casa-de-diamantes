@@ -1,3 +1,5 @@
+draw_sprite(dropShadow_spr, 0, x - 2, y + 25);
+
 if (damageTint && !attackTint) {
 	gpu_set_blendmode(bm_add);
 	shader_set(shd_flash);

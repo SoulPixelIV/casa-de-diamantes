@@ -200,6 +200,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"UI Objects","folderPath":"folders/UI/UI Objects.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"UI Sprites","folderPath":"folders/UI/UI Sprites.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Bodyparts","folderPath":"folders/Enemies/Enemy Sprites/SpiderCorpse/Bodyparts.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Bodyparts","folderPath":"folders/Enemies/Enemy Sprites/FloraBlaster/Bodyparts.yy",},
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"Casino3DFilledMarquee.ttf","CopyToMask":-1,"filePath":"datafiles",},
@@ -371,6 +372,7 @@
     {"id":{"name":"blackjackTable","path":"rooms/blackjackTable/blackjackTable.yy",},},
     {"id":{"name":"brokenGlass_obj","path":"objects/brokenGlass_obj/brokenGlass_obj.yy",},},
     {"id":{"name":"basicZombieIdle5_snd","path":"sounds/basicZombieIdle5_snd/basicZombieIdle5_snd.yy",},},
+    {"id":{"name":"floraBlasterBodyParts_spr","path":"sprites/floraBlasterBodyParts_spr/floraBlasterBodyParts_spr.yy",},},
     {"id":{"name":"edenCrate2_spr","path":"sprites/edenCrate2_spr/edenCrate2_spr.yy",},},
     {"id":{"name":"glitterBottomStatic_obj","path":"objects/glitterBottomStatic_obj/glitterBottomStatic_obj.yy",},},
     {"id":{"name":"bulletSniper_spr","path":"sprites/bulletSniper_spr/bulletSniper_spr.yy",},},
@@ -1783,6 +1785,7 @@
     {"id":{"name":"ledSignCocktails_obj","path":"objects/ledSignCocktails_obj/ledSignCocktails_obj.yy",},},
     {"id":{"name":"teamMeetupDialogue2","path":"objects/teamMeetupDialogue2/teamMeetupDialogue2.yy",},},
     {"id":{"name":"playerArmCurvedWalkingReverseSkin1_spr","path":"sprites/playerArmCurvedWalkingReverseSkin1_spr/playerArmCurvedWalkingReverseSkin1_spr.yy",},},
+    {"id":{"name":"floraBlasterBodyPart_obj","path":"objects/floraBlasterBodyPart_obj/floraBlasterBodyPart_obj.yy",},},
     {"id":{"name":"backgroundBuildings_spr","path":"sprites/backgroundBuildings_spr/backgroundBuildings_spr.yy",},},
     {"id":{"name":"lJoystickIcon_spr","path":"sprites/lJoystickIcon_spr/lJoystickIcon_spr.yy",},},
     {"id":{"name":"ledSignEmail_obj","path":"objects/ledSignEmail_obj/ledSignEmail_obj.yy",},},
