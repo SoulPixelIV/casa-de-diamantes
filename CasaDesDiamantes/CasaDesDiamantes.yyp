@@ -199,6 +199,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"UI","folderPath":"folders/UI.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"UI Objects","folderPath":"folders/UI/UI Objects.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"UI Sprites","folderPath":"folders/UI/UI Sprites.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Bodyparts","folderPath":"folders/Enemies/Enemy Sprites/SpiderCorpse/Bodyparts.yy",},
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"Casino3DFilledMarquee.ttf","CopyToMask":-1,"filePath":"datafiles",},
@@ -1814,6 +1815,7 @@
     {"id":{"name":"feastL1_msc","path":"sounds/feastL1_msc/feastL1_msc.yy",},},
     {"id":{"name":"sparkleSpawnerY_obj","path":"objects/sparkleSpawnerY_obj/sparkleSpawnerY_obj.yy",},},
     {"id":{"name":"smokingJacketClimbing_spr","path":"sprites/smokingJacketClimbing_spr/smokingJacketClimbing_spr.yy",},},
+    {"id":{"name":"spiderCorpseBodyParts_spr","path":"sprites/spiderCorpseBodyParts_spr/spiderCorpseBodyParts_spr.yy",},},
     {"id":{"name":"mannequin_obj","path":"objects/mannequin_obj/mannequin_obj.yy",},},
     {"id":{"name":"edenCrate1_obj","path":"objects/edenCrate1_obj/edenCrate1_obj.yy",},},
     {"id":{"name":"Level4_Level5A_teleporter","path":"objects/Level4_Level5A_teleporter/Level4_Level5A_teleporter.yy",},},
@@ -2394,6 +2396,7 @@
     {"id":{"name":"OLDlevel1_RoadToCasino","path":"rooms/OLDlevel1_RoadToCasino/OLDlevel1_RoadToCasino.yy",},},
     {"id":{"name":"plantEye_spr","path":"sprites/plantEye_spr/plantEye_spr.yy",},},
     {"id":{"name":"stratoBackground_spr","path":"sprites/stratoBackground_spr/stratoBackground_spr.yy",},},
+    {"id":{"name":"spidercorpseBodyPart_obj","path":"objects/spidercorpseBodyPart_obj/spidercorpseBodyPart_obj.yy",},},
     {"id":{"name":"blacksquare_obj","path":"objects/blacksquare_obj/blacksquare_obj.yy",},},
     {"id":{"name":"ammoSilencedMPSmall_obj","path":"objects/ammoSilencedMPSmall_obj/ammoSilencedMPSmall_obj.yy",},},
     {"id":{"name":"OLDlevel2_CasinoHub","path":"rooms/OLDlevel2_CasinoHub/OLDlevel2_CasinoHub.yy",},},

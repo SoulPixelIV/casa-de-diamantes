@@ -115,6 +115,7 @@
     {"name":"No ClothesOLD","order":1,"path":"folders/Steph/Steph Sprites/No ClothesOLD.yy",},
     {"name":"Skin1","order":40,"path":"folders/Steph/Steph Sprites/Skin1.yy",},
     {"name":"UI","order":28,"path":"folders/UI.yy",},
+    {"name":"Bodyparts","order":5,"path":"folders/Enemies/Enemy Sprites/SpiderCorpse/Bodyparts.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"dashroll_snd","order":12,"path":"sounds/dashroll_snd/dashroll_snd.yy",},
@@ -2150,6 +2151,7 @@
     {"name":"startOverlay_spr","order":78,"path":"sprites/startOverlay_spr/startOverlay_spr.yy",},
     {"name":"OLDlevel1_RoadToCasino","order":1,"path":"rooms/OLDlevel1_RoadToCasino/OLDlevel1_RoadToCasino.yy",},
     {"name":"plantEye_spr","order":266,"path":"sprites/plantEye_spr/plantEye_spr.yy",},
+    {"name":"spidercorpseBodyPart_obj","order":32,"path":"objects/spidercorpseBodyPart_obj/spidercorpseBodyPart_obj.yy",},
     {"name":"blacksquare_obj","order":268,"path":"objects/blacksquare_obj/blacksquare_obj.yy",},
     {"name":"ammoSilencedMPSmall_obj","order":36,"path":"objects/ammoSilencedMPSmall_obj/ammoSilencedMPSmall_obj.yy",},
     {"name":"OLDlevel2_CasinoHub","order":2,"path":"rooms/OLDlevel2_CasinoHub/OLDlevel2_CasinoHub.yy",},
