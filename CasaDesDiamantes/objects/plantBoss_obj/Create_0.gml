@@ -4,11 +4,12 @@ image_speed = 0;
 damageTint = false;
 attackTint = false;
 startBattle = false;
+maxNumEnemy = 0;
 
 frozen = false;
 freezeRes = 9999999;
 
-attackTimer = 400;
+attackTimer = 450;
 attackTimer2 = 420;
 
 explosionTimer = 30;

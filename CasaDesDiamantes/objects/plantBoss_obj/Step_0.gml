@@ -15,32 +15,38 @@ if (startBattle) {
 				var randNumEn = choose(0, 0, 0, 0, 1, 1, 1, 2, 2, 5, 4, 4, 4, 4, 5, 5, 5, 5, 4, 6, 6);
 				var randNumSpawn = choose(0, 1, 1, 1);
 				if (randNumSpawn == 0) {
-					switch (randNumEn) {
-						case 0:
-							var enemy = instance_create_layer(spawnpoint[i].x, spawnpoint[i].y, "Instances", crawler_obj);
-							enemy.aggro = true;
-						break;
-						case 1:
-							var enemy = instance_create_layer(spawnpoint[i].x, spawnpoint[i].y, "Instances", zombieGirl_obj);
-							enemy.aggro = true;
-						break;
-						case 2:
-							var enemy = instance_create_layer(spawnpoint[i].x, spawnpoint[i].y, "Instances", zombieSoldierGirl_obj);
-							enemy.aggro = true;
-						break;
-						case 3:
-							var enemy = instance_create_layer(spawnpoint[i].x, spawnpoint[i].y, "Instances", zombieBucketGirl_obj);
-							enemy.aggro = true;
-						break;
-						case 4:
-							instance_create_layer(spawnpoint[i].x, spawnpoint[i].y, "Instances", ammoPackPistolDrop_obj);
-						break;
-						case 5:
-							instance_create_layer(spawnpoint[i].x, spawnpoint[i].y, "Instances", ammoPackShotgunDrop_obj);
-						break;
-						case 6:
-							instance_create_layer(spawnpoint[i].x, spawnpoint[i].y, "Instances", healthpackDrop_obj);
-						break;
+					if (maxNumEnemy < 6) {					
+						switch (randNumEn) {
+							case 0:
+								var enemy = instance_create_layer(spawnpoint[i].x, spawnpoint[i].y, "Instances", crawler_obj);
+								enemy.aggro = true;
+								maxNumEnemy++;
+							break;
+							case 1:
+								var enemy = instance_create_layer(spawnpoint[i].x, spawnpoint[i].y, "Instances", zombieGirl_obj);
+								enemy.aggro = true;
+								maxNumEnemy++;
+							break;
+							case 2:
+								var enemy = instance_create_layer(spawnpoint[i].x, spawnpoint[i].y, "Instances", zombieSoldierGirl_obj);
+								enemy.aggro = true;
+								maxNumEnemy++;
+							break;
+							case 3:
+								var enemy = instance_create_layer(spawnpoint[i].x, spawnpoint[i].y, "Instances", zombieBucketGirl_obj);
+								enemy.aggro = true;
+								maxNumEnemy++;
+							break;
+							case 4:
+								instance_create_layer(spawnpoint[i].x, spawnpoint[i].y, "Instances", ammoPackPistolDrop_obj);
+							break;
+							case 5:
+								instance_create_layer(spawnpoint[i].x, spawnpoint[i].y, "Instances", ammoPackShotgunDrop_obj);
+							break;
+							case 6:
+								instance_create_layer(spawnpoint[i].x, spawnpoint[i].y, "Instances", healthpackDrop_obj);
+							break;
+						}
 					}
 				}
 			}
@@ -89,6 +95,21 @@ if (startBattle) {
 	}
 	
 	if (hp < 1) {
+		for (var i = 0; i < instance_number(enemy_obj); ++i)
+		{
+		    enemy[i] = instance_find(enemy_obj, i);
+			if (distance_to_object(enemy[i]) < 2000) {
+				instance_destroy(enemy[i]);
+			}
+		}
+		for (var i = 0; i < instance_number(crawler_obj); ++i)
+		{
+		    crawler[i] = instance_find(crawler_obj, i);
+			if (distance_to_object(crawler[i]) < 2000) {
+				instance_destroy(crawler[i]);
+			}
+		}
+
 		explosionTimer -= global.dt;
 		deathTimer -= global.dt;
 		dropTimer -= global.dt;

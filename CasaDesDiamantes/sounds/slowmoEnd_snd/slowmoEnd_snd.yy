@@ -10,7 +10,7 @@
   "bitRate": 128,
   "compression": 0,
   "conversionMode": 0,
-  "duration": 1.128265,
+  "duration": 1.123265,
   "parent": {
     "name": "Priority Sounds",
     "path": "folders/Sounds/Priority Sounds.yy",
@@ -19,5 +19,5 @@
   "sampleRate": 44100,
   "soundFile": "slowmoEnd_snd.mp3",
   "type": 0,
-  "volume": 0.5,
+  "volume": 1.0,
 }
