@@ -1,4 +1,6 @@
-audio_emitter_free(emitter);
+if (audio_emitter_exists(emitter)) {
+	audio_emitter_free(emitter);
+}
 audio_stop_sound(flameSound);
 if (instance_exists(light))
 {
