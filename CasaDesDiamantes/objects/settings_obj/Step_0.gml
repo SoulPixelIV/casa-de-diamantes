@@ -34,30 +34,12 @@ if (instance_exists(cursorHitbox_obj)) {
 						case 1:
 						break;
 						case 2:
-							if (global.gamma == 1.4) {
-								global.gamma = 1.6;
-							} else if (global.gamma == 1.6) {
-								global.gamma = 1.8;
-							} else if (global.gamma == 1.8) {
-								global.gamma = 2;
-							} else if (global.gamma == 2) {
-								global.gamma = 2.2;
-							} else if (global.gamma == 2.2) {
-								global.gamma = 2.4;
-							} else if (global.gamma == 2.4) {
-								global.gamma = 0.2;
-							} else if (global.gamma == 0.2) {
-								global.gamma = 0.4;
-							} else if (global.gamma == 0.4) {
-								global.gamma = 0.6;
-							} else if (global.gamma == 0.6) {
-								global.gamma = 0.8;
-							} else if (global.gamma == 0.8) {
-								global.gamma = 1;
-							} else if (global.gamma == 1) {
-								global.gamma = 1.2;
-							} else if (global.gamma == 1.2) {
-								global.gamma = 1.4;
+							if (global.vsync == 0) {
+								display_reset(0, true);
+								global.vsync = 1;
+							} else {
+								display_reset(0, false);
+								global.vsync = 0;
 							}
 						break;
 						case 3:
@@ -123,30 +105,12 @@ if (!drawStartMenu) {
 				}
 			break;
 			case 2:
-				if (global.gamma == 1.4) {
-					global.gamma = 1.6;
-				} else if (global.gamma == 1.6) {
-					global.gamma = 1.8;
-				} else if (global.gamma == 1.8) {
-					global.gamma = 2;
-				} else if (global.gamma == 2) {
-					global.gamma = 2.2;
-				} else if (global.gamma == 2.2) {
-					global.gamma = 2.4;
-				} else if (global.gamma == 2.4) {
-					global.gamma = 0.2;
-				} else if (global.gamma == 0.2) {
-					global.gamma = 0.4;
-				} else if (global.gamma == 0.4) {
-					global.gamma = 0.6;
-				} else if (global.gamma == 0.6) {
-					global.gamma = 0.8;
-				} else if (global.gamma == 0.8) {
-					global.gamma = 1;
-				} else if (global.gamma == 1) {
-					global.gamma = 1.2;
-				} else if (global.gamma == 1.2) {
-					global.gamma = 1.4;
+				if (global.vsync == 0) {
+					display_reset(0, true);
+					global.vsync = 1;
+				} else {
+					display_reset(0, false);
+					global.vsync = 0;
 				}
 			break;
 			case 3:
@@ -171,30 +135,12 @@ if (!drawStartMenu) {
 				}
 			break;
 			case 2:
-				if (global.gamma == 1.4) {
-					global.gamma = 1.2;
-				} else if (global.gamma == 1.2) {
-					global.gamma = 1;
-				} else if (global.gamma == 1) {
-					global.gamma = 0.8;
-				} else if (global.gamma == 0.8) {
-					global.gamma = 0.6;
-				} else if (global.gamma == 0.6) {
-					global.gamma = 0.4;
-				} else if (global.gamma == 0.4) {
-					global.gamma = 0.2;
-				} else if (global.gamma == 0.2) {
-					global.gamma = 2.4;
-				} else if (global.gamma == 2.4) {
-					global.gamma = 2.2;
-				} else if (global.gamma == 2.2) {
-					global.gamma = 2;
-				} else if (global.gamma == 2) {
-					global.gamma = 1.8;
-				} else if (global.gamma == 1.8) {
-					global.gamma = 1.6;
-				} else if (global.gamma == 1.6) {
-					global.gamma = 1.4;
+				if (global.vsync == 0) {
+					display_reset(0, true);
+					global.vsync = 1;
+				} else {
+					display_reset(0, false);
+					global.vsync = 0;
 				}
 			break;
 			case 3:

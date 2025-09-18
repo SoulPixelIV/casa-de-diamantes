@@ -3,16 +3,17 @@ draw_set_halign(fa_center);
 draw_set_color(make_color_rgb(255, 215, 0));
 draw_text(global.xScreenSize / 2, optionsY[0], "Sound Volume [" + string(global.soundVolume) + "%]");
 draw_text(global.xScreenSize / 2, optionsY[1], "Music Volume [" + string(global.musicVolume) + "%]");
-if (global.gamma != 1.4) {
-	draw_text(global.xScreenSize / 2, optionsY[2], "Gamma [" + string(global.gamma) + "]");
-} else {
-	draw_text(global.xScreenSize / 2, optionsY[2], "Gamma [1.4 Standard]");
+if (global.vsync == 0) {
+	draw_text(global.xScreenSize / 2, optionsY[2], "Vsync [Off]");
+}
+if (global.vsync == 1) {
+	draw_text(global.xScreenSize / 2, optionsY[2], "Vsync [On]");
 }
 draw_text(global.xScreenSize / 2, optionsY[3], "Toggle Fullscreen");
 draw_text(global.xScreenSize / 2, optionsY[4], "Back to Main Menu");
 
 draw_set_halign(fa_right);
-draw_text(global.xScreenSize - 24, global.yScreenSize - 16, "MAIN v.1.9");
+draw_text(global.xScreenSize - 24, global.yScreenSize - 16, "MAIN v.1.10");
 draw_set_halign(fa_left);
 
 //Draw title

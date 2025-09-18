@@ -5,6 +5,7 @@
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
@@ -32,8 +33,8 @@
   ],
   "solid": false,
   "spriteId": {
-    "name": "zombieGirlTestOLD_spr",
-    "path": "sprites/zombieGirlTestOLD_spr/zombieGirlTestOLD_spr.yy",
+    "name": "zombieGirl_spr",
+    "path": "sprites/zombieGirl_spr/zombieGirl_spr.yy",
   },
   "spriteMaskId": null,
   "visible": true,

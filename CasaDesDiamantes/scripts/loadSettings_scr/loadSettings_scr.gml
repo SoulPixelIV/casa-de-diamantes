@@ -4,6 +4,7 @@ function loadSettings_scr(){
 	global.soundVolume = ini_read_real("gameSettings", "soundVol", 100);
 	global.musicVolume = ini_read_real("gameSettings", "musicVol", 100);
 	//globalSettings_obj.TARGET_FRAMERATE = ini_read_real("gameSettings", "targetFramerate", 240);
+	global.vsync = ini_read_real("gameSettings", "vsync", 0);
 	global.speedrunTimer = ini_read_real("gameSettings", "speedrunTimer", 0);
 		
 	ini_close();

@@ -3,6 +3,7 @@
 randomize();
 global.timeScale = 1;
 global.gamma = 1.4;
+global.vsync = false;
 global.zoom = 3;
 TARGET_FRAMERATE = 240;
 cursor_sprite = noone;
@@ -44,8 +45,8 @@ global.tilemap = layer_tilemap_get_id("TileCollider");
 loadTimer = 100;
 loaded = false;
 
-global.soundVolume = 100;
-global.musicVolume = 100;
+global.soundVolume = 70;
+global.musicVolume = 90;
 global.speedrunTimer = false;
 
 //LOAD SETTINGS

@@ -223,7 +223,7 @@
           ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
       ],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"DashTutorial","depth":1300,"effectEnabled":true,"effectType":"_filter_fractal_noise","gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_BB8E5B6","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"zombieGirlTutorial_obj","path":"objects/zombieGirlTutorial_obj/zombieGirlTutorial_obj.yy",},"properties":[],"rotation":0.0,"scaleX":-1.0,"scaleY":1.0,"x":2722.0,"y":1202.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_BB8E5B6","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"zombieGirlTutorial_obj","path":"objects/zombieGirlTutorial_obj/zombieGirlTutorial_obj.yy",},"properties":[],"rotation":0.0,"scaleX":-1.0,"scaleY":1.0,"x":2722.0,"y":1195.0,},
       ],"layers":[],"properties":[
         {"name":"g_FractalNoiseScale","type":0,"value":"8",},
         {"name":"g_FractalNoisePersistence","type":0,"value":"0.375",},
