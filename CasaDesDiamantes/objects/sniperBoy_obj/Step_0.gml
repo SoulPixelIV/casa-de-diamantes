@@ -151,27 +151,29 @@ image_index += (global.dt / 15) * animationSpeed;
 
 //Collision
 //horspeed
-if (!place_free(x + (horspeed * global.dt), y))
-{
-	if (sign(horspeed) != 0)
-	{
-		while (place_free(x + sign(horspeed) / 100, y))
-		{
-			x += sign(horspeed) / 100;
-		}
-		horspeed = 0;
+if (!place_free(x + horspeed * global.dt, y) || place_meeting(x + horspeed * global.dt, y, colliderEnemyOnly_obj)) {
+	if (sign(horspeed) != 0) {
+	    var stepSign = sign(horspeed);
+	    var safety = 0;
+	    var maxIterations = 1024;
+	    while (place_free(x + stepSign, y) && !place_meeting(x + stepSign, y, colliderEnemyOnly_obj) && safety < maxIterations) {
+	        x += stepSign;
+	        safety += 1;
+	    }
+	    horspeed = 0;
 	}
-} 
+}
 //verspeed
-if (!place_free(x, y + (verspeed * global.dt)))
-{
-	if (sign(verspeed) != 0)
-	{
-		while (place_free(x, y + sign(verspeed) / 100))
-		{
-			y += sign(verspeed) / 100;
-		}
-		verspeed = 0;
+if (!place_free(x, y + verspeed * global.dt) || place_meeting(x, y + verspeed * global.dt, colliderEnemyOnly_obj)) {
+	if (sign(verspeed) != 0) {
+	    var stepSignY = sign(verspeed);
+	    var safetyY = 0;
+	    var maxIterationsY = 1024;
+	    while (place_free(x, y + stepSignY) && !place_meeting(x, y + stepSignY, colliderEnemyOnly_obj) && safetyY < maxIterationsY) {
+	        y += stepSignY;
+	        safetyY += 1;
+	    }
+	    verspeed = 0;
 	}
 }
 

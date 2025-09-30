@@ -591,6 +591,8 @@
     {"name":"inst_9DB168A","path":"rooms/level13/level13.yy",},
     {"name":"inst_B50BCCC","path":"rooms/level13/level13.yy",},
     {"name":"inst_49A19FC1","path":"rooms/level13/level13.yy",},
+    {"name":"inst_78AB0D6","path":"rooms/level13/level13.yy",},
+    {"name":"inst_3F5C17E7","path":"rooms/level13/level13.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -670,6 +672,8 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_B50BCCC","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"cupyDialogueTrigger_obj","path":"objects/cupyDialogueTrigger_obj/cupyDialogueTrigger_obj.yy",},"properties":[
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"cupyDialogueTrigger_obj","path":"objects/cupyDialogueTrigger_obj/cupyDialogueTrigger_obj.yy",},"propertyId":{"name":"dialogue","path":"objects/cupyDialogueTrigger_obj/cupyDialogueTrigger_obj.yy",},"value":"9",},
           ],"rotation":0.0,"scaleX":5.0,"scaleY":4.5,"x":5088.0,"y":4912.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_78AB0D6","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"enemyBlockZone_obj","path":"objects/enemyBlockZone_obj/enemyBlockZone_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":3.0,"x":5792.0,"y":5040.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_3F5C17E7","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"enemyBlockZone_obj","path":"objects/enemyBlockZone_obj/enemyBlockZone_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":3.0,"x":5876.0,"y":5040.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMREffectLayer","resourceVersion":"1.0","name":"RedFilter","depth":400,"effectEnabled":true,"effectType":"_filter_colourise","gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[
         {"name":"g_Intensity","type":0,"value":"0.3",},

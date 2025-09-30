@@ -592,28 +592,50 @@ if (audio_emitter_exists(emitter)) {
 
 //Collision
 //horspeed
-if (place_meeting(x + (horspeed * global.dt), y, collider_obj) || place_meeting(x + (horspeed * global.dt), y, neuralColliders_obj))
+if (place_meeting(x + (horspeed * global.dt), y, collider_obj)
+ || place_meeting(x + (horspeed * global.dt), y, neuralColliders_obj)
+ || place_meeting(x + (horspeed * global.dt), y, lasergate_obj)
+ || place_meeting(x + (horspeed * global.dt), y, enemyBlockZone_obj)
+ || place_meeting(x + (horspeed * global.dt), y, colliderPlayerOnly_obj))
 {
-	if (sign(horspeed) != 0)
-	{
-		while (place_free(x + sign(horspeed), y))
-		{
-			x += sign(horspeed);
-		}
-		horspeed = 0;
-	}
-} 
+    if (sign(horspeed) != 0) {
+        var stepSign = sign(horspeed);
+        var safety = 0;
+        var maxIterations = 1024;
+        while (place_free(x + stepSign, y) && safety < maxIterations
+			&& !place_meeting(x + stepSign, y, collider_obj)
+			&& !place_meeting(x + stepSign, y, neuralColliders_obj)
+			&& !place_meeting(x + stepSign, y, lasergate_obj)
+			&& !place_meeting(x + stepSign, y, enemyBlockZone_obj)
+			&& !place_meeting(x + stepSign, y, colliderPlayerOnly_obj)) {
+            x += stepSign;
+            safety += 1;
+        }
+        horspeed = 0;
+    }
+}
 //verspeed
-if (place_meeting(x, y + (verspeed * global.dt), collider_obj) || place_meeting(x, y + (verspeed * global.dt), neuralColliders_obj))
+if (place_meeting(x, y + (verspeed * global.dt), collider_obj)
+ || place_meeting(x, y + (verspeed * global.dt), neuralColliders_obj)
+ || place_meeting(x, y + (verspeed * global.dt), lasergate_obj)
+ || place_meeting(x, y + (verspeed * global.dt), enemyBlockZone_obj)
+ || place_meeting(x, y + (verspeed * global.dt), colliderPlayerOnly_obj))
 {
-	if (sign(verspeed) != 0)
-	{
-		while (place_free(x, y + sign(verspeed)))
-		{
-			y += sign(verspeed);
-		}
-		verspeed = 0;
-	}
+    if (sign(verspeed) != 0) {
+        var stepSignY = sign(verspeed);
+        var safetyY = 0;
+        var maxIterationsY = 1024;
+        while (place_free(x, y + stepSignY) && safetyY < maxIterationsY
+			&& !place_meeting(x, y + stepSignY, collider_obj)
+			&& !place_meeting(x, y + stepSignY, neuralColliders_obj)
+			&& !place_meeting(x, y + stepSignY, lasergate_obj)
+			&& !place_meeting(x, y + stepSignY, enemyBlockZone_obj)
+			&& !place_meeting(x, y + stepSignY, colliderPlayerOnly_obj)) {
+            y += stepSignY;
+            safetyY += 1;
+        }
+        verspeed = 0;
+    }
 }
 
 x += horspeed * global.dt;

@@ -2,13 +2,13 @@
 
 global.spawn = 0;
 global.money = 1342;
-global.skin = 1;
-global.syringes = 2;
+global.skin = 0;
+global.syringes = 1;
 global.room = noone;
-global.diamonds = 3;
+global.diamonds = 6;
 global.lastCheckpoint = noone;
 global.hasWarpzoneKey = false;
-global.keyRed = true;
+global.keyRed = false;
 global.keyBlue = false;
 global.keyYellow = false;
 global.scorepoints = 0;
@@ -44,8 +44,8 @@ global.shotgunUpgrade2 = false;
 global.dualBarettasUpgrade1 = false;
 global.dualBarettasUpgrade2 = false;
 
-global.silencedMPUpgrade1 = false;
-global.silencedMPUpgrade2 = false;
+global.silencedMPUpgrade1 = true;
+global.silencedMPUpgrade2 = true;
 
 global.sniperUpgrade1 = false;
 global.sniperUpgrade2 = false;
