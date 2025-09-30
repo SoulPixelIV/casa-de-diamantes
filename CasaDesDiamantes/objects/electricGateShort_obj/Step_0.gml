@@ -16,6 +16,9 @@ if (instance_exists(player_obj) && distance_to_object(player_obj) > 32 && place_
 		if (index == 3) {
 			global.level21WeaponGate = true;
 		}
+		if (index == 4) {
+			global.level12Gate = true;
+		}
 		
 		if (moveDirection == 0)
 		{

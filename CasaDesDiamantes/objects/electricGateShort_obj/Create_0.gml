@@ -27,3 +27,8 @@ if (index == 3) {
 		open = true;
 	}
 }
+if (index == 4) {
+	if (global.level12Gate) {
+		open = true;
+	}
+}

@@ -7,6 +7,11 @@ goalY2 = y + 88;
 originX = x;
 originY = y;
 
+if (index == 1) {
+	if (global.level15Shortcut = true) {
+		open = true;
+	}
+}
 if (index == 2) {
 	if (global.level16ArenaGate) {
 		open = true;

@@ -151,6 +151,7 @@ global.laserShot5 = false;
 global.level4DoorOpen = false;
 global.level6GateAOpen = false;
 global.level6GateBOpen = false;
+global.level12Gate = false;
 
 global.warpzone1DoorOpen = false;
 global.warpzone1Reward = false;
