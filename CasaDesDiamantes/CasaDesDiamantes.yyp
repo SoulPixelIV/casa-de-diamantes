@@ -1217,6 +1217,7 @@
     {"id":{"name":"walljumpIndicator_spr","path":"sprites/walljumpIndicator_spr/walljumpIndicator_spr.yy",},},
     {"id":{"name":"lightning_obj","path":"objects/lightning_obj/lightning_obj.yy",},},
     {"id":{"name":"moan1_snd","path":"sounds/moan1_snd/moan1_snd.yy",},},
+    {"id":{"name":"tutorialSKeyPromt_obj","path":"objects/tutorialSKeyPromt_obj/tutorialSKeyPromt_obj.yy",},},
     {"id":{"name":"healthbarTop2Boss_spr","path":"sprites/healthbarTop2Boss_spr/healthbarTop2Boss_spr.yy",},},
     {"id":{"name":"casinoPillar_spr","path":"sprites/casinoPillar_spr/casinoPillar_spr.yy",},},
     {"id":{"name":"fakewallTrigger_obj","path":"objects/fakewallTrigger_obj/fakewallTrigger_obj.yy",},},

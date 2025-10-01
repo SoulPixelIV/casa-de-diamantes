@@ -330,6 +330,7 @@
     {"name":"inst_48D0E96B","path":"rooms/level3/level3.yy",},
     {"name":"inst_713121A3","path":"rooms/level3/level3.yy",},
     {"name":"inst_4E5A0D8E","path":"rooms/level3/level3.yy",},
+    {"name":"inst_7FFA0E4A","path":"rooms/level3/level3.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -375,6 +376,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_1970DC9C","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"enemyBlockZone_obj","path":"objects/enemyBlockZone_obj/enemyBlockZone_obj.yy",},"properties":[],"rotation":0.0,"scaleX":3.25,"scaleY":9.0,"x":7980.7383,"y":767.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_36197303","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"enemyBlockZone_obj","path":"objects/enemyBlockZone_obj/enemyBlockZone_obj.yy",},"properties":[],"rotation":0.0,"scaleX":4.0,"scaleY":9.0,"x":7239.5,"y":772.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_289674A9","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"enemyTeleportBlockZone_obj","path":"objects/enemyTeleportBlockZone_obj/enemyTeleportBlockZone_obj.yy",},"properties":[],"rotation":0.0,"scaleX":3.9375,"scaleY":29.4375,"x":7225.0,"y":767.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7FFA0E4A","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"tutorialSKeyPromt_obj","path":"objects/tutorialSKeyPromt_obj/tutorialSKeyPromt_obj.yy",},"properties":[],"rotation":0.0,"scaleX":48.125,"scaleY":9.6875,"x":7622.446,"y":593.5,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMREffectLayer","resourceVersion":"1.0","name":"RedFilter","depth":400,"effectEnabled":true,"effectType":"_filter_colourise","gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[
         {"name":"g_Intensity","type":0,"value":"0.3",},

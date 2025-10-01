@@ -1052,6 +1052,7 @@
     {"name":"walljumpIndicator_spr","order":53,"path":"sprites/walljumpIndicator_spr/walljumpIndicator_spr.yy",},
     {"name":"lightning_obj","order":2,"path":"objects/lightning_obj/lightning_obj.yy",},
     {"name":"moan1_snd","order":9,"path":"sounds/moan1_snd/moan1_snd.yy",},
+    {"name":"tutorialSKeyPromt_obj","order":285,"path":"objects/tutorialSKeyPromt_obj/tutorialSKeyPromt_obj.yy",},
     {"name":"healthbarTop2Boss_spr","order":94,"path":"sprites/healthbarTop2Boss_spr/healthbarTop2Boss_spr.yy",},
     {"name":"casinoPillar_spr","order":71,"path":"sprites/casinoPillar_spr/casinoPillar_spr.yy",},
     {"name":"fakewallTrigger_obj","order":67,"path":"objects/fakewallTrigger_obj/fakewallTrigger_obj.yy",},
