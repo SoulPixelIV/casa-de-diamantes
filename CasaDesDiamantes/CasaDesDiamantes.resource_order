@@ -715,6 +715,7 @@
     {"name":"spotlight_spr","order":24,"path":"sprites/spotlight_spr/spotlight_spr.yy",},
     {"name":"__ppf_debug","order":1,"path":"scripts/__ppf_debug/__ppf_debug.yy",},
     {"name":"mainmenu_obj","order":8,"path":"objects/mainmenu_obj/mainmenu_obj.yy",},
+    {"name":"tutorialAmmoRecycleCollider_obj","order":284,"path":"objects/tutorialAmmoRecycleCollider_obj/tutorialAmmoRecycleCollider_obj.yy",},
     {"name":"protoBanana_spr","order":25,"path":"sprites/protoBanana_spr/protoBanana_spr.yy",},
     {"name":"blimp_obj","order":100,"path":"objects/blimp_obj/blimp_obj.yy",},
     {"name":"colliderBox_spr","order":26,"path":"sprites/colliderBox_spr/colliderBox_spr.yy",},

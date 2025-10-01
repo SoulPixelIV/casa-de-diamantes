@@ -14,6 +14,7 @@ function load_scr(){
 	global.currentWorld = ini_read_real("save1", "currentWorld", 0);
 	global.drawTutorialInfectionUsed = ini_read_real("save1", "shownInfectionTutorial", false);
 	global.drawTutorialWeaponScrollUsed = ini_read_real("save1", "shownWeaponScrollTutorial", false);
+	global.drawTutorialAmmoRecycle = ini_read_real("save1", "drawTutorialAmmoRecycle", false);
 	global.drunknessLevel = ini_read_real("save1", "drunkness", 0);
 	
 	global.storyAct = ini_read_real("save1", "storyAct", 0);

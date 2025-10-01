@@ -92,6 +92,7 @@
     {"name":"inst_100B87AE","path":"rooms/level4/level4.yy",},
     {"name":"inst_389B793D","path":"rooms/level4/level4.yy",},
     {"name":"inst_4E4FAFE3","path":"rooms/level4/level4.yy",},
+    {"name":"inst_5B722C42","path":"rooms/level4/level4.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -113,6 +114,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_1304F79E","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"cupyDialogueTrigger_obj","path":"objects/cupyDialogueTrigger_obj/cupyDialogueTrigger_obj.yy",},"properties":[],"rotation":0.0,"scaleX":16.0,"scaleY":9.5,"x":1760.0,"y":592.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_69F734DF","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"level4_demoend_teleporter","path":"objects/level4_demoend_teleporter/level4_demoend_teleporter.yy",},"properties":[],"rotation":0.0,"scaleX":9.1875,"scaleY":15.75,"x":3264.0,"y":768.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_4BD5AEC9","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"level4_demoend_teleporter","path":"objects/level4_demoend_teleporter/level4_demoend_teleporter.yy",},"properties":[],"rotation":0.0,"scaleX":9.125,"scaleY":16.6875,"x":3264.0,"y":1056.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_5B722C42","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"tutorialAmmoRecycleCollider_obj","path":"objects/tutorialAmmoRecycleCollider_obj/tutorialAmmoRecycleCollider_obj.yy",},"properties":[],"rotation":0.0,"scaleX":4.0,"scaleY":17.5,"x":2889.0,"y":606.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMREffectLayer","resourceVersion":"1.0","name":"RedFilter","depth":400,"effectEnabled":true,"effectType":"_filter_colourise","gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[
         {"name":"g_Intensity","type":0,"value":"0.3",},

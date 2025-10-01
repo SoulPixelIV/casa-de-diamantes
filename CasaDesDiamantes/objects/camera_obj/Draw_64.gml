@@ -704,7 +704,7 @@ with (player_obj)
 }
 */
 
-if (drawTutorialInfection || drawTutorialWeaponScroll) {
+if (drawTutorialInfection || drawTutorialWeaponScroll || drawTutorialAmmoRecycle) {
 	if (drawTutorialAlpha <= 1) {
 		drawTutorialAlpha += global.dt / 24;
 	}
@@ -730,7 +730,7 @@ if (drawTutorialInfection || drawTutorialWeaponScroll) {
 		}
 		draw_set_halign(fa_left);
 	}
-	
+
 	if (drawTutorialWeaponScroll) {
 		if (player_obj.inputMethod == 0) {
 			draw_text(global.xScreenSize / 2 - 1, 76, "Tutorial - Weapon Switching\nSwap between your weapons with\n[Mouse Scroll] or [1,2,3,4]\nUse [Q] to quickswap to your last weapon.\nEmpty weapons are not swapped automatically.\n\nPress Space to Continue!");
@@ -744,11 +744,25 @@ if (drawTutorialInfection || drawTutorialWeaponScroll) {
 		draw_set_halign(fa_left);
 	}
 	
+	if (drawTutorialAmmoRecycle) {
+		if (player_obj.inputMethod == 0) {
+			draw_text(global.xScreenSize / 2 - 1, 76, "Tutorial - Ammo Recycling\nKilling enemies with one weapon\nalways gives you ammo for the opposite weapon.\nSwap often between weapons\nto always receive ammo for all weapons.\n\nPress Space to Continue!");
+			draw_set_color(make_color_rgb(255, 215, 0));
+			draw_text(global.xScreenSize / 2, 76, "Tutorial - Ammo Recycling\nKilling enemies with one weapon\nalways gives you ammo for the opposite weapon.\nSwap often between weapons\nto always receive ammo for all weapons.\n\nPress Space to Continue!");
+		} else {
+			draw_text(global.xScreenSize / 2 - 1, 76, "Tutorial - Ammo Recycling\nKilling enemies with one weapon\nalways gives you ammo for the opposite weapon.\nSwap often between weapons\nto always receive ammo for all weapons.\n\nPress A to Continue!");
+			draw_set_color(make_color_rgb(255, 215, 0));
+			draw_text(global.xScreenSize / 2, 76, "Tutorial - Ammo Recycling\nKilling enemies with one weapon\nalways gives you ammo for the opposite weapon.\nSwap often between weapons\nto always receive ammo for all weapons.\n\nPress A to Continue!");
+		}
+		draw_set_halign(fa_left);
+	}
+	
 	if (keyboard_check_pressed(vk_space) || gamepad_button_check_pressed(4, gp_face1) || gamepad_button_check_pressed(0, gp_face1)) {
 		if (drawTutorialInputDelay >= 120) {
 			audio_play_sound(typewriterPush_snd, 1, false);
 			drawTutorialInfection = false;
 			drawTutorialWeaponScroll = false;
+			drawTutorialAmmoRecycle = false;
 			player_obj.movement = true;
 		}
 	}

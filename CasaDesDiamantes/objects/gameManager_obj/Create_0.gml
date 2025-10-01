@@ -20,6 +20,7 @@ global.multiplierTimerSave = global.multiplierTimer;
 global.timer = 0;
 global.drawTutorialInfectionUsed = false;
 global.drawTutorialWeaponScrollUsed = false;
+global.drawTutorialAmmoRecycle = false;
 global.pushDelay = 60;
 global.pushDelaySave = global.pushDelay;
 global.drunknessLevel = 0;

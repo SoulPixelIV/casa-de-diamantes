@@ -75,6 +75,7 @@ overlayTextAlpha = 1;
 startAlphaTransition = false;
 drawTutorialInfection = false;
 drawTutorialWeaponScroll = false
+drawTutorialAmmoRecycle = false;
 drawTutorialAlpha = 0;
 drawTutorialInputDelay = 0;
 drawPause = false;

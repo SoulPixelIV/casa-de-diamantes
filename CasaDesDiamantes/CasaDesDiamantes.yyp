@@ -860,6 +860,7 @@
     {"id":{"name":"spotlight_spr","path":"sprites/spotlight_spr/spotlight_spr.yy",},},
     {"id":{"name":"__ppf_debug","path":"scripts/__ppf_debug/__ppf_debug.yy",},},
     {"id":{"name":"mainmenu_obj","path":"objects/mainmenu_obj/mainmenu_obj.yy",},},
+    {"id":{"name":"tutorialAmmoRecycleCollider_obj","path":"objects/tutorialAmmoRecycleCollider_obj/tutorialAmmoRecycleCollider_obj.yy",},},
     {"id":{"name":"protoBanana_spr","path":"sprites/protoBanana_spr/protoBanana_spr.yy",},},
     {"id":{"name":"blimp_obj","path":"objects/blimp_obj/blimp_obj.yy",},},
     {"id":{"name":"colliderBox_spr","path":"sprites/colliderBox_spr/colliderBox_spr.yy",},},
