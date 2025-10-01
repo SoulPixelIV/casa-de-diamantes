@@ -5,7 +5,7 @@ if (startBattle) {
 		damageTint = false;
 	}
 
-	if (hp > 0) {
+	if (hp > 1) {
 		attackTimer -= global.dt;
 		attackTimer2 -= global.dt;
 
@@ -95,6 +95,8 @@ if (startBattle) {
 	}
 	
 	if (hp < 1) {
+		attackTimer = 99999999999;
+		attackTimer2 = 999999999999;
 		for (var i = 0; i < instance_number(enemy_obj); ++i)
 		{
 		    enemy[i] = instance_find(enemy_obj, i);

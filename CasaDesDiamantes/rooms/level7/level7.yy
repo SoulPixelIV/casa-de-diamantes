@@ -393,6 +393,8 @@
     {"name":"inst_7E401525","path":"rooms/level7/level7.yy",},
     {"name":"inst_A4A7C4","path":"rooms/level7/level7.yy",},
     {"name":"inst_29BFC4E0","path":"rooms/level7/level7.yy",},
+    {"name":"inst_30C820F","path":"rooms/level7/level7.yy",},
+    {"name":"inst_6BF6E247","path":"rooms/level7/level7.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -445,6 +447,8 @@
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"cupyDialogueTrigger_obj","path":"objects/cupyDialogueTrigger_obj/cupyDialogueTrigger_obj.yy",},"propertyId":{"name":"dialogue","path":"objects/cupyDialogueTrigger_obj/cupyDialogueTrigger_obj.yy",},"value":"5",},
           ],"rotation":0.0,"scaleX":4.15625,"scaleY":15.875,"x":5511.0,"y":2258.5,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_52370B28","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"laserWhitescreen_obj","path":"objects/laserWhitescreen_obj/laserWhitescreen_obj.yy",},"properties":[],"rotation":0.0,"scaleX":135.5,"scaleY":71.0,"x":-224.0,"y":-224.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_30C820F","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"enemyVisionBlockZone_obj","path":"objects/enemyVisionBlockZone_obj/enemyVisionBlockZone_obj.yy",},"properties":[],"rotation":0.0,"scaleX":107.56251,"scaleY":10.0625,"x":3824.0,"y":1952.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_6BF6E247","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"enemyBlockZone_obj","path":"objects/enemyBlockZone_obj/enemyBlockZone_obj.yy",},"properties":[],"rotation":0.0,"scaleX":107.0,"scaleY":7.0,"x":3824.0,"y":1872.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMREffectLayer","resourceVersion":"1.0","name":"RedFilter","depth":400,"effectEnabled":true,"effectType":"_filter_colourise","gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[
         {"name":"g_Intensity","type":0,"value":"0.3",},
