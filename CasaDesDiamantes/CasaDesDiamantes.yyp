@@ -378,6 +378,7 @@
     {"id":{"name":"senzelaBackground_spr","path":"sprites/senzelaBackground_spr/senzelaBackground_spr.yy",},},
     {"id":{"name":"overworldIcon3_obj","path":"objects/overworldIcon3_obj/overworldIcon3_obj.yy",},},
     {"id":{"name":"ammoSniperSmall_spr","path":"sprites/ammoSniperSmall_spr/ammoSniperSmall_spr.yy",},},
+    {"id":{"name":"tutorialWeaponScrollCollider_obj","path":"objects/tutorialWeaponScrollCollider_obj/tutorialWeaponScrollCollider_obj.yy",},},
     {"id":{"name":"C_Cindy_teleporter","path":"objects/C_Cindy_teleporter/C_Cindy_teleporter.yy",},},
     {"id":{"name":"blackjackTable","path":"rooms/blackjackTable/blackjackTable.yy",},},
     {"id":{"name":"brokenGlass_obj","path":"objects/brokenGlass_obj/brokenGlass_obj.yy",},},

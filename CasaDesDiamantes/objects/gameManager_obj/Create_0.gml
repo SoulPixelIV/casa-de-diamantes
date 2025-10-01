@@ -1,11 +1,11 @@
 /// @description Variables
 
 global.spawn = 0;
-global.money = 1342;
+global.money = 673;
 global.skin = 0;
-global.syringes = 1;
+global.syringes = 3;
 global.room = noone;
-global.diamonds = 6;
+global.diamonds = 2;
 global.lastCheckpoint = noone;
 global.hasWarpzoneKey = false;
 global.keyRed = false;
@@ -19,6 +19,7 @@ global.multiplierTimer = 700;
 global.multiplierTimerSave = global.multiplierTimer;
 global.timer = 0;
 global.drawTutorialInfectionUsed = false;
+global.drawTutorialWeaponScrollUsed = false;
 global.pushDelay = 60;
 global.pushDelaySave = global.pushDelay;
 global.drunknessLevel = 0;

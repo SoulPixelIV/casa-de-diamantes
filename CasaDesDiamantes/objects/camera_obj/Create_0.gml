@@ -74,6 +74,7 @@ infectionHealedTextTimer = 800;
 overlayTextAlpha = 1;
 startAlphaTransition = false;
 drawTutorialInfection = false;
+drawTutorialWeaponScroll = false
 drawTutorialAlpha = 0;
 drawTutorialInputDelay = 0;
 drawPause = false;

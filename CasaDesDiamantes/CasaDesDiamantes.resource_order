@@ -266,6 +266,7 @@
     {"name":"senzelaBackground_spr","order":2,"path":"sprites/senzelaBackground_spr/senzelaBackground_spr.yy",},
     {"name":"overworldIcon3_obj","order":147,"path":"objects/overworldIcon3_obj/overworldIcon3_obj.yy",},
     {"name":"ammoSniperSmall_spr","order":235,"path":"sprites/ammoSniperSmall_spr/ammoSniperSmall_spr.yy",},
+    {"name":"tutorialWeaponScrollCollider_obj","order":283,"path":"objects/tutorialWeaponScrollCollider_obj/tutorialWeaponScrollCollider_obj.yy",},
     {"name":"C_Cindy_teleporter","order":43,"path":"objects/C_Cindy_teleporter/C_Cindy_teleporter.yy",},
     {"name":"blackjackTable","order":1,"path":"rooms/blackjackTable/blackjackTable.yy",},
     {"name":"brokenGlass_obj","order":7,"path":"objects/brokenGlass_obj/brokenGlass_obj.yy",},

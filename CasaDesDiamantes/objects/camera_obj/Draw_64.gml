@@ -704,7 +704,7 @@ with (player_obj)
 }
 */
 
-if (drawTutorialInfection) {
+if (drawTutorialInfection || drawTutorialWeaponScroll) {
 	if (drawTutorialAlpha <= 1) {
 		drawTutorialAlpha += global.dt / 24;
 	}
@@ -717,21 +717,38 @@ if (drawTutorialInfection) {
 	draw_set_font(gothicPixel_fnt);
 	draw_set_halign(fa_center);
 	draw_set_color(c_black);
-	if (player_obj.inputMethod == 0) {
-		draw_text(global.xScreenSize / 2 - 1, 76, "Tutorial - Infection\nToxic Fumes and more can cause an Infection.\nFind a sterilization chamber to heal yourself!\nWatch your healthbar to see the\nprogress of the Infection.\n\nPress Space to Continue!");
-		draw_set_color(make_color_rgb(255, 215, 0));
-		draw_text(global.xScreenSize / 2, 76, "Tutorial - Infection\nToxic Fumes and more can cause an Infection.\nFind a sterilization chamber to heal yourself!\nWatch your healthbar to see the\nprogress of the Infection.\n\nPress Space to Continue!");
-	} else {
-		draw_text(global.xScreenSize / 2 - 1, 76, "Tutorial - Infection\nToxic Fumes and more can cause an Infection.\nFind a sterilization chamber to heal yourself!\nWatch your healthbar to see the\nprogress of the Infection.\n\nPress A to Continue!");
-		draw_set_color(make_color_rgb(255, 215, 0));
-		draw_text(global.xScreenSize / 2, 76, "Tutorial - Infection\nToxic Fumes and more can cause an Infection.\nFind a sterilization chamber to heal yourself!\nWatch your healthbar to see the\nprogress of the Infection.\n\nPress A to Continue!");
+	
+	if (drawTutorialInfection) {
+		if (player_obj.inputMethod == 0) {
+			draw_text(global.xScreenSize / 2 - 1, 76, "Tutorial - Infection\nToxic Fumes and more can cause an Infection.\nFind a sterilization chamber to heal yourself!\nWatch your healthbar to see the\nprogress of the Infection.\n\nPress Space to Continue!");
+			draw_set_color(make_color_rgb(255, 215, 0));
+			draw_text(global.xScreenSize / 2, 76, "Tutorial - Infection\nToxic Fumes and more can cause an Infection.\nFind a sterilization chamber to heal yourself!\nWatch your healthbar to see the\nprogress of the Infection.\n\nPress Space to Continue!");
+		} else {
+			draw_text(global.xScreenSize / 2 - 1, 76, "Tutorial - Infection\nToxic Fumes and more can cause an Infection.\nFind a sterilization chamber to heal yourself!\nWatch your healthbar to see the\nprogress of the Infection.\n\nPress A to Continue!");
+			draw_set_color(make_color_rgb(255, 215, 0));
+			draw_text(global.xScreenSize / 2, 76, "Tutorial - Infection\nToxic Fumes and more can cause an Infection.\nFind a sterilization chamber to heal yourself!\nWatch your healthbar to see the\nprogress of the Infection.\n\nPress A to Continue!");
+		}
+		draw_set_halign(fa_left);
 	}
-	draw_set_halign(fa_left);
+	
+	if (drawTutorialWeaponScroll) {
+		if (player_obj.inputMethod == 0) {
+			draw_text(global.xScreenSize / 2 - 1, 76, "Tutorial - Weapon Switching\nSwap between your weapons with\n[Mouse Scroll] or [1,2,3,4]\nUse [Q] to quickswap to your last weapon.\nEmpty weapons are not swapped automatically.\n\nPress Space to Continue!");
+			draw_set_color(make_color_rgb(255, 215, 0));
+			draw_text(global.xScreenSize / 2, 76, "Tutorial - Weapon Switching\nSwap between your weapons with\n[Mouse Scroll] or [1,2,3,4]\nUse [Q] to quickswap to your last weapon.\nEmpty weapons are not swapped automatically.\n\nPress Space to Continue!");
+		} else {
+			draw_text(global.xScreenSize / 2 - 1, 76, "Tutorial - Weapon Switching\nSwap between your weapons with\n[Mouse Scroll] or [1,2,3,4]\nUse [Q] to quickswap to your last weapon.\nEmpty weapons are not swapped automatically.\n\nPress A to Continue!");
+			draw_set_color(make_color_rgb(255, 215, 0));
+			draw_text(global.xScreenSize / 2, 76, "Tutorial - Weapon Switching\nSwap between your weapons with\n[Mouse Scroll] or [1,2,3,4]\nUse [Q] to quickswap to your last weapon.\nEmpty weapons are not swapped automatically.\n\nPress A to Continue!");
+		}
+		draw_set_halign(fa_left);
+	}
 	
 	if (keyboard_check_pressed(vk_space) || gamepad_button_check_pressed(4, gp_face1) || gamepad_button_check_pressed(0, gp_face1)) {
 		if (drawTutorialInputDelay >= 120) {
 			audio_play_sound(typewriterPush_snd, 1, false);
 			drawTutorialInfection = false;
+			drawTutorialWeaponScroll = false;
 			player_obj.movement = true;
 		}
 	}
