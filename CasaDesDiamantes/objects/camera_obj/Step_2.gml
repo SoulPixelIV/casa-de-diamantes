@@ -81,35 +81,119 @@ if (cameraTargetTimer < 0)
 
 //Floating Camera
 if (instance_exists(player_obj)) {
-	if (player_obj.inputMethod == 0 && !global.pause && !dialogueSystem_obj.inCutscene && room != level28) {
-		if ((follow == player_obj || follow = minecart_obj) && !cameraTarget && !cameraTargetMovement)
-		{
-			snapCameraX = false;
-			snapCameraY = false;
-			if (instance_exists(player_obj)) {
-				if (player_obj.x - xScreenSize / 2 > minCameraXBorder && player_obj.x + xScreenSize / 2 < maxCameraXBorder)
-				{
-					xTo = player_obj.x + (mouse_x - player_obj.x) / 4;
+	if (player_obj.inputMethod == 0) {
+		if (player_obj.inputMethod == 0 && !global.pause && !dialogueSystem_obj.inCutscene && room != level28) {
+			if ((follow == player_obj || follow = minecart_obj) && !cameraTarget && !cameraTargetMovement)
+			{
+				snapCameraX = false;
+				snapCameraY = false;
+				if (instance_exists(player_obj)) {
+					if (player_obj.x - xScreenSize / 2 > minCameraXBorder && player_obj.x + xScreenSize / 2 < maxCameraXBorder)
+					{
+						xTo = player_obj.x + (mouse_x - player_obj.x) / 4;
+					}
+					if (player_obj.y - yScreenSize / 2 > minCameraYBorder && player_obj.y + yScreenSize / 2 < maxCameraYBorder)
+					{
+						yTo = (player_obj.y + cameraYBorder) + (mouse_y - (player_obj.y + cameraYBorder)) / 4;
+					}
 				}
-				if (player_obj.y - yScreenSize / 2 > minCameraYBorder && player_obj.y + yScreenSize / 2 < maxCameraYBorder)
-				{
-					yTo = (player_obj.y + cameraYBorder) + (mouse_y - (player_obj.y + cameraYBorder)) / 4;
+			}
+		} else {
+			if ((follow == player_obj || follow = minecart_obj) && !cameraTarget && !cameraTargetMovement)
+			{
+				snapCameraX = false;
+				snapCameraY = false;
+				if (instance_exists(player_obj)) {
+					if (player_obj.x - xScreenSize / 2 > minCameraXBorder && player_obj.x + xScreenSize / 2 < maxCameraXBorder)
+					{
+						xTo = player_obj.x;
+					}
+					if (player_obj.y - yScreenSize / 2 > minCameraYBorder && player_obj.y + yScreenSize / 2 < maxCameraYBorder)
+					{
+						yTo = player_obj.y + cameraYBorder;
+					}
 				}
 			}
 		}
 	} else {
-		if ((follow == player_obj || follow = minecart_obj) && !cameraTarget && !cameraTargetMovement)
-		{
-			snapCameraX = false;
-			snapCameraY = false;
-			if (instance_exists(player_obj)) {
-				if (player_obj.x - xScreenSize / 2 > minCameraXBorder && player_obj.x + xScreenSize / 2 < maxCameraXBorder)
-				{
-					xTo = player_obj.x;
+		if (player_obj.inputMethod == 1 && !global.pause && !dialogueSystem_obj.inCutscene && room != level28) {
+			if ((follow == player_obj || follow = minecart_obj) && !cameraTarget && !cameraTargetMovement)
+			{
+				snapCameraX = false;
+				snapCameraY = false;
+				
+				if (instance_exists(player_obj)) {
+					var camInfluence = 0;
+					var stickX = 0;
+					var stickY = 0;
+					var leftX = 0;
+			        var leftY = 0;
+			        var rightX = 0;
+			        var rightY = 0;
+					
+					var deadzone = 0.2; 
+
+					if (gamepad_is_connected(0)) {
+					    // Linker Stick
+			            leftX  = gamepad_axis_value(0, gp_axislh);
+			            leftY  = gamepad_axis_value(0, gp_axislv);
+
+			            // Rechter Stick
+			            rightX = gamepad_axis_value(0, gp_axisrh);
+			            rightY = gamepad_axis_value(0, gp_axisrv);
+					}
+					else if (gamepad_is_connected(4)) {
+					    // Linker Stick
+			            leftX  = gamepad_axis_value(4, gp_axislh);
+			            leftY  = gamepad_axis_value(4, gp_axislv);
+
+			            // Rechter Stick
+			            rightX = gamepad_axis_value(4, gp_axisrh);
+			            rightY = gamepad_axis_value(4, gp_axisrv);
+					}
+					
+					if (abs(leftX) < deadzone) leftX = 0;
+		            if (abs(leftY) < deadzone) leftY = 0;
+		            if (abs(rightX) < deadzone) rightX = 0;
+		            if (abs(rightY) < deadzone) rightY = 0;
+					
+					// Standardmäßig: linker Stick
+		            stickX = leftX;
+		            stickY = leftY;
+					camInfluence = 42;
+
+		            // Wenn rechter Stick bewegt wird → Priorität!
+		            if (rightX != 0 || rightY != 0) {
+		                stickX = rightX;
+		                stickY = rightY;
+						camInfluence = 75;
+		            }
+					
+			
+					if (player_obj.x - xScreenSize / 2 > minCameraXBorder && player_obj.x + xScreenSize / 2 < maxCameraXBorder)
+					{
+						xTo = player_obj.x + stickX * camInfluence;
+					}
+					if (player_obj.y - yScreenSize / 2 > minCameraYBorder && player_obj.y + yScreenSize / 2 < maxCameraYBorder)
+					{
+						yTo = (player_obj.y + cameraYBorder) + stickY * camInfluence;
+					}
 				}
-				if (player_obj.y - yScreenSize / 2 > minCameraYBorder && player_obj.y + yScreenSize / 2 < maxCameraYBorder)
-				{
-					yTo = player_obj.y + cameraYBorder;
+			}
+		} else {
+			if ((follow == player_obj || follow = minecart_obj) && !cameraTarget && !cameraTargetMovement)
+			{
+				snapCameraX = false;
+				snapCameraY = false;
+				if (instance_exists(player_obj)) {
+					if (player_obj.x - xScreenSize / 2 > minCameraXBorder && player_obj.x + xScreenSize / 2 < maxCameraXBorder)
+					{
+						xTo = player_obj.x;
+					}
+					if (player_obj.y - yScreenSize / 2 > minCameraYBorder && player_obj.y + yScreenSize / 2 < maxCameraYBorder)
+					{
+						yTo = player_obj.y + cameraYBorder;
+					}
 				}
 			}
 		}

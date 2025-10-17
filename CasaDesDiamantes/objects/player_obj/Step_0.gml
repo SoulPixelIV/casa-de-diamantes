@@ -860,30 +860,48 @@ if (!global.pause) {
 	}
 	else
 	{
-		if (gamepad_is_connected(4))
+		var pad = -1;
+		if (gamepad_is_connected(0)) pad = 0;
+		else if (gamepad_is_connected(4)) pad = 4;
+
+		if (pad != -1)
 		{
-			if ((gamepad_axis_value(4, gp_axisrh) > -controllerDeadzone && gamepad_axis_value(4, gp_axisrh) < controllerDeadzone && gamepad_axis_value(4, gp_axisrv) > -controllerDeadzone && gamepad_axis_value(4, gp_axisrv) < controllerDeadzone))
-			{
-				dirCursor = controllerDirLastInput;
-			}
-			else
-			{
-				dirCursor = point_direction(0, 0, gamepad_axis_value(4, gp_axisrh), gamepad_axis_value(4, gp_axisrv));
-				controllerDirLastInput = dirCursor;
-			}
+		    // Stickwerte holen
+		    var lx = gamepad_axis_value(pad, gp_axislh);
+		    var ly = gamepad_axis_value(pad, gp_axislv);
+		    var rx = gamepad_axis_value(pad, gp_axisrh);
+		    var ry = gamepad_axis_value(pad, gp_axisrv);
+
+		    // Deadzone anwenden
+		    var dz = 0.1;
+		    if (abs(lx) < dz) lx = 0;
+		    if (abs(ly) < dz) ly = 0;
+		    if (abs(rx) < dz) rx = 0;
+		    if (abs(ry) < dz) ry = 0;
+
+		    // Standardmäßig linker Stick
+		    var stickX = lx;
+		    var stickY = ly;
+
+		    // Wenn rechter Stick bewegt wird → Priorität!
+		    if (rx != 0 || ry != 0) {
+		        stickX = rx;
+		        stickY = ry;
+		    }
+
+		    // Falls beide still → letzte Richtung beibehalten
+		    if (stickX == 0 && stickY == 0)
+		    {
+		        dirCursor = controllerDirLastInput;
+		    }
+		    else
+		    {
+		        // Richtung aktualisieren
+		        dirCursor = point_direction(0, 0, stickX, stickY);
+		        controllerDirLastInput = dirCursor;
+		    }
 		}
-		if (gamepad_is_connected(0))
-		{
-			if (gamepad_axis_value(0, gp_axisrh) > -controllerDeadzone && gamepad_axis_value(0, gp_axisrh) < controllerDeadzone && gamepad_axis_value(0, gp_axisrv) > -controllerDeadzone && gamepad_axis_value(0, gp_axisrv) < controllerDeadzone)
-			{
-				dirCursor = controllerDirLastInput;
-			}
-			else
-			{
-				dirCursor = point_direction(0, 0, gamepad_axis_value(0, gp_axisrh), gamepad_axis_value(0, gp_axisrv));
-				controllerDirLastInput = dirCursor;
-			}
-		}
+		
 		if (huggingWall && image_xscale == 1) {
 			if (dirCursor > 0 && dirCursor < 180) {
 				updowndir = 0;
