@@ -23,3 +23,14 @@ audio_sound_pitch(expSnd, random_range(0.8, 1));
 screenshake(60, 25, 0.6, id);
 
 alarm[0] = 1;
+
+global.vibrationDelay = 25;
+var pad = -1;
+if (gamepad_is_connected(0)) pad = 0;
+else if (gamepad_is_connected(4)) pad = 4;
+
+if (player_obj.inputMethod != 0) {
+	if (pad != -1) {
+		gamepad_set_vibration(pad, 0.6, 0.6);
+	}
+}

@@ -23,6 +23,7 @@ global.drawTutorialWeaponScrollUsed = false;
 global.drawTutorialAmmoRecycle = false;
 global.pushDelay = 60;
 global.pushDelaySave = global.pushDelay;
+global.vibrationDelay = 0;
 global.drunknessLevel = 0;
 global.chromaticLevel = 0;
 global.transitionScreenDest = noone;

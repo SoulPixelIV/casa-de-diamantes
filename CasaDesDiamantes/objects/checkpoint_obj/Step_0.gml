@@ -3,9 +3,20 @@ image_speed = 0;
 image_index += (global.dt / 15) * animationSpeed;
 
 //Activate Checkpoint
-if (distance_to_object(player_obj) < 32 && player_obj.key_up_pressed && !used)
+if (distance_to_object(player_obj) < 32 && player_obj.key_up_pressed && !used && !active)
 {
 	active = true;
+	
+	global.vibrationDelay = 15;
+	var pad = -1;
+	if (gamepad_is_connected(0)) pad = 0;
+	else if (gamepad_is_connected(4)) pad = 4;
+
+	if (player_obj.inputMethod != 0) {
+		if (pad != -1) {
+			gamepad_set_vibration(pad, 0.7, 0.7);
+		}
+	}
 }
 
 if (distance_to_object(player_obj) < 32)

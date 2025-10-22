@@ -322,6 +322,17 @@ if (movement && !isZombie && !global.pause && !inCutscene)
 		{
 			dash_scr();
 			dashInvincibilityOn = true;
+			
+			global.vibrationDelay = 20;
+			var pad = -1;
+			if (gamepad_is_connected(0)) pad = 0;
+			else if (gamepad_is_connected(4)) pad = 4;
+
+			if (player_obj.inputMethod != 0) {
+				if (pad != -1) {
+					gamepad_set_vibration(pad, 0.8, 0.8);
+				}
+			}
 		}
 		if (dashDelay >= 0 && wallJumps == wallJumpsMax)
 		{
@@ -1123,6 +1134,17 @@ if (shootingAllowed && !global.pause && !inCutscene && !camera_obj.drawTutorialI
 								camera_obj.showWeaponProhibited = true;
 							} else {
 								shooting_scr("pistol");
+								
+								global.vibrationDelay = 15;
+								var pad = -1;
+								if (gamepad_is_connected(0)) pad = 0;
+								else if (gamepad_is_connected(4)) pad = 4;
+
+								if (player_obj.inputMethod != 0) {
+									if (pad != -1) {
+										gamepad_set_vibration(pad, 0.7, 0.7);
+									}
+								}
 							}
 						}
 					}
@@ -1147,6 +1169,17 @@ if (shootingAllowed && !global.pause && !inCutscene && !camera_obj.drawTutorialI
 							} else {
 								if (global.pistolAmmo > 0) {
 									shooting_scr("dualBarettas");
+									
+									global.vibrationDelay = 20;
+									var pad = -1;
+									if (gamepad_is_connected(0)) pad = 0;
+									else if (gamepad_is_connected(4)) pad = 4;
+
+									if (player_obj.inputMethod != 0) {
+										if (pad != -1) {
+											gamepad_set_vibration(pad, 0.8, 0.8);
+										}
+									}
 								} else {
 									if (!audio_is_playing(emptyClip_snd)) {
 										var emptyShot = audio_play_sound(emptyClip_snd, 1, false);
@@ -1177,6 +1210,17 @@ if (shootingAllowed && !global.pause && !inCutscene && !camera_obj.drawTutorialI
 							} else {
 								if (global.shotgunAmmo > 0) {
 									shooting_scr("shotgun");
+									
+									global.vibrationDelay = 55;
+									var pad = -1;
+									if (gamepad_is_connected(0)) pad = 0;
+									else if (gamepad_is_connected(4)) pad = 4;
+
+									if (player_obj.inputMethod != 0) {
+										if (pad != -1) {
+											gamepad_set_vibration(pad, 1, 1);
+										}
+									}
 								} else {
 									if (!audio_is_playing(emptyClip_snd)) {
 										var emptyShot = audio_play_sound(emptyClip_snd, 1, false);
@@ -1198,6 +1242,17 @@ if (shootingAllowed && !global.pause && !inCutscene && !camera_obj.drawTutorialI
 						audio_play_sound(shotgunPump_snd, 1, false);
 						instance_create_layer(playerBulletLine_obj.x, playerBulletLine_obj.y, "Instances", shotgunBulletCase_obj);
 						player_obj.shotgunPumpDone = true;
+						
+						global.vibrationDelay = 10;
+						var pad = -1;
+						if (gamepad_is_connected(0)) pad = 0;
+						else if (gamepad_is_connected(4)) pad = 4;
+
+						if (player_obj.inputMethod != 0) {
+							if (pad != -1) {
+								gamepad_set_vibration(pad, 0.5, 0.5);
+							}
+						}
 					}
 				}
 			}
@@ -1224,6 +1279,17 @@ if (shootingAllowed && !global.pause && !inCutscene && !camera_obj.drawTutorialI
 							} else {
 								if (global.silencedMPAmmo > 0) {
 									shooting_scr("silencedMP");
+									
+									global.vibrationDelay = 65;
+									var pad = -1;
+									if (gamepad_is_connected(0)) pad = 0;
+									else if (gamepad_is_connected(4)) pad = 4;
+
+									if (player_obj.inputMethod != 0) {
+										if (pad != -1) {
+											gamepad_set_vibration(pad, 0.7, 0.7);
+										}
+									}
 								} else {
 									if (!audio_is_playing(emptyClip_snd)) {
 										var emptyShot = audio_play_sound(emptyClip_snd, 1, false);
@@ -1268,6 +1334,16 @@ if (shootingAllowed && !global.pause && !inCutscene && !camera_obj.drawTutorialI
 		
 		if (flamethrowerOn) {
 			flamethrowerTimer -= global.dt;
+			global.vibrationDelay = 1;
+			var pad = -1;
+			if (gamepad_is_connected(0)) pad = 0;
+			else if (gamepad_is_connected(4)) pad = 4;
+
+			if (player_obj.inputMethod != 0) {
+				if (pad != -1) {
+					gamepad_set_vibration(pad, 1, 1);
+				}
+			}
 			if (!flameBurstOn) {
 				instance_create_layer(partX2, partY2, "Instances", flamethrowerHitbox_obj);
 				flameSound1 = audio_play_sound(flamethrower_snd, 1, true);
@@ -1319,6 +1395,17 @@ if (shootingAllowed && !global.pause && !inCutscene && !camera_obj.drawTutorialI
 							} else {
 								if (global.bowAmmo > 0) {
 									shooting_scr("bow");
+									
+									global.vibrationDelay = 100;
+									var pad = -1;
+									if (gamepad_is_connected(0)) pad = 0;
+									else if (gamepad_is_connected(4)) pad = 4;
+
+									if (player_obj.inputMethod != 0) {
+										if (pad != -1) {
+											gamepad_set_vibration(pad, 1, 1);
+										}
+									}
 								} else {
 									if (!audio_is_playing(emptyClip_snd)) {
 										var emptyShot = audio_play_sound(emptyClip_snd, 1, false);

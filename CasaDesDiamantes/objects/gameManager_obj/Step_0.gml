@@ -303,6 +303,23 @@ if (global.doorDelayStart) {
 	}
 }
 
+//Vibrations Delay
+global.vibrationDelay -= global.dt;
+
+if (global.vibrationDelay <= 0) {
+	var pad = -1;
+	if (gamepad_is_connected(0)) pad = 0;
+	else if (gamepad_is_connected(4)) pad = 4;
+
+	if (instance_exists(player_obj)) {
+		if (player_obj.inputMethod != 0) {
+			if (pad != -1) {
+				gamepad_set_vibration(pad, 0, 0);
+			}
+		}
+	}
+}
+
 //Bullet Delay
 global.bulletDelay -= global.dt;
 

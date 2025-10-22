@@ -39,6 +39,17 @@ if (other.image_alpha > 0) {
 						audio_play_sound(choose(moan1_snd, moan2_snd), 1, false);
 					}
 					camera_obj.hitVignette = true;
+					
+					global.vibrationDelay = 15;
+					var pad = -1;
+					if (gamepad_is_connected(0)) pad = 0;
+					else if (gamepad_is_connected(4)) pad = 4;
+
+					if (player_obj.inputMethod != 0) {
+						if (pad != -1) {
+							gamepad_set_vibration(pad, 0.8, 0.8);
+						}
+					}
 				}
 				other.dealtDamage = true;
 			}

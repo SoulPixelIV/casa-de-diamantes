@@ -171,15 +171,6 @@ function shooting_scr(argument0) {
 			{
 				//player_obj.horGrounded = false;
 				var shotgunShot = audio_play_sound(shotgunShot_snd, 1, false);
-				var pad = -1;
-				if (gamepad_is_connected(0)) pad = 0;
-				else if (gamepad_is_connected(4)) pad = 4;
-
-				if (player_obj.inputMethod != 0) {
-					if (pad != -1) {
-						gamepad_set_vibration(pad, 1, 1);
-					}
-				}
 				
 				if (global.shotgunAmmo > 2) {
 					audio_sound_pitch(shotgunShot, random_range(0.9, 1.1));
