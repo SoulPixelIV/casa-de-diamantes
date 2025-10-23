@@ -11,9 +11,9 @@ if (triggerText) {
 			draw_text(player_obj.x + 32, player_obj.y - 64, "Press S to Go Down");	
 			draw_set_color(c_black);
 		} else {
-			draw_text(player_obj.x + 32, player_obj.y - 64, "Push Down to Go Down");
+			draw_text(player_obj.x + 32, player_obj.y - 64, "Push [DPad-Down] to Go Down");
 			draw_set_color(make_color_rgb(255, 215, 0));
-			draw_text(player_obj.x + 32, player_obj.y - 64, "Push Down to Go Down");	
+			draw_text(player_obj.x + 32, player_obj.y - 64, "Push [DPad-Down] to Go Down");	
 			draw_set_color(c_black);
 		}
 	}

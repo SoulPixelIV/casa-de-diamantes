@@ -737,9 +737,9 @@ if (drawTutorialInfection || drawTutorialWeaponScroll || drawTutorialAmmoRecycle
 			draw_set_color(make_color_rgb(255, 215, 0));
 			draw_text(global.xScreenSize / 2, 76, "Tutorial - Weapon Switching\nSwap between your weapons with\n[Mouse Scroll] or [1,2,3,4]\nUse [Q] to quickswap to your last weapon.\nEmpty weapons are not swapped automatically.\n\nPress Space to Continue!");
 		} else {
-			draw_text(global.xScreenSize / 2 - 1, 76, "Tutorial - Weapon Switching\nSwap between your weapons with\n[Mouse Scroll] or [1,2,3,4]\nUse [Q] to quickswap to your last weapon.\nEmpty weapons are not swapped automatically.\n\nPress A to Continue!");
+			draw_text(global.xScreenSize / 2 - 1, 76, "Tutorial - Weapon Switching\nSwap between your weapons with\n[Left Trigger] and [Right Trigger]\nPush [B] to quickswap to your last weapon.\nEmpty weapons are not swapped automatically.\n\nPress A to Continue!");
 			draw_set_color(make_color_rgb(255, 215, 0));
-			draw_text(global.xScreenSize / 2, 76, "Tutorial - Weapon Switching\nSwap between your weapons with\n[Mouse Scroll] or [1,2,3,4]\nUse [Q] to quickswap to your last weapon.\nEmpty weapons are not swapped automatically.\n\nPress A to Continue!");
+			draw_text(global.xScreenSize / 2, 76, "Tutorial - Weapon Switching\nSwap between your weapons with\n[Left Trigger] and [Right Trigger]\nPush [B] to quickswap to your last weapon.\nEmpty weapons are not swapped automatically.\n\nPress A to Continue!");
 		}
 		draw_set_halign(fa_left);
 	}
@@ -1547,11 +1547,20 @@ if (showWindowMenu)
 	
 	draw_set_font(gothicPixel_fnt);
 	draw_set_halign(fa_center);
-	draw_set_color(c_black);
-	draw_text(global.xScreenSize / 2 - 1, (global.yScreenSize / 2) + 86 + 1, "Press Esc to Cancel");
-	draw_set_color(make_color_rgb(255, 215, 0));
-	draw_text(global.xScreenSize / 2, (global.yScreenSize / 2) + 86, "Press Esc to Cancel");
-	draw_set_halign(fa_left);
+	
+	if (player_obj.inputMethod == 0) {
+		draw_set_color(c_black);
+		draw_text(global.xScreenSize / 2 - 1, (global.yScreenSize / 2) + 86 + 1, "Press Esc to Cancel");
+		draw_set_color(make_color_rgb(255, 215, 0));
+		draw_text(global.xScreenSize / 2, (global.yScreenSize / 2) + 86, "Press Esc to Cancel");
+		draw_set_halign(fa_left);
+	} else {
+		draw_set_color(c_black);
+		draw_text(global.xScreenSize / 2 - 1, (global.yScreenSize / 2) + 86 + 1, "Press Start to Cancel");
+		draw_set_color(make_color_rgb(255, 215, 0));
+		draw_text(global.xScreenSize / 2, (global.yScreenSize / 2) + 86, "Press Start to Cancel");
+		draw_set_halign(fa_left);
+	}
 	
 	//Draw items
 	if (windowType == 1) {
@@ -2481,8 +2490,13 @@ if (blackscreenStrength < 0.98) {
 	if (dialogueSystem_obj.inCutscene && !camera_obj.drawElevatorSign && !showWindowMenu && room != level28) {
 		draw_set_color(make_color_rgb(255, 215, 0));
 		draw_set_halign(fa_center);
-		draw_text(global.xScreenSize / 2, global.yScreenSize - global.yScreenSize / 4 + 32, "Hold Space to Fastforward");
-		draw_text(global.xScreenSize / 2, global.yScreenSize - global.yScreenSize / 4 + 48, "Press Enter to Skip");
+		if (player_obj.inputMethod == 0) {
+			draw_text(global.xScreenSize / 2, global.yScreenSize - global.yScreenSize / 4 + 32, "Hold Space to Fastforward");
+			draw_text(global.xScreenSize / 2, global.yScreenSize - global.yScreenSize / 4 + 48, "Press Enter to Skip");
+		} else {
+			draw_text(global.xScreenSize / 2, global.yScreenSize - global.yScreenSize / 4 + 32, "Hold A to Fastforward");
+			draw_text(global.xScreenSize / 2, global.yScreenSize - global.yScreenSize / 4 + 48, "Press Start to Skip");
+		}
 		draw_set_color(c_black);
 	}
 }

@@ -147,6 +147,7 @@
     {"name":"streetTiles_spr","order":2,"path":"sprites/streetTiles_spr/streetTiles_spr.yy",},
     {"name":"zombieBucketGirl_spr","order":26,"path":"sprites/zombieBucketGirl_spr/zombieBucketGirl_spr.yy",},
     {"name":"slotblock_obj","order":63,"path":"objects/slotblock_obj/slotblock_obj.yy",},
+    {"name":"controllerAimRect_spr","order":312,"path":"sprites/controllerAimRect_spr/controllerAimRect_spr.yy",},
     {"name":"explosionBigDelay_obj","order":13,"path":"objects/explosionBigDelay_obj/explosionBigDelay_obj.yy",},
     {"name":"lines_spr","order":25,"path":"sprites/lines_spr/lines_spr.yy",},
     {"name":"buildingTiles_spr","order":3,"path":"sprites/buildingTiles_spr/buildingTiles_spr.yy",},

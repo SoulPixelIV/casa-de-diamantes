@@ -36,7 +36,7 @@ function shooting_scr(argument0) {
 		
 			if (!huggingWall && !isDashing)
 			{
-				if (dirCursor > 0 && dirCursor < 90)
+				if (dirCursor >= 0 && dirCursor < 90)
 				{
 					if (place_free(x + horspeed * global.dt, y)) {
 						horspeed -= shotJumpStrength / 16;
@@ -47,7 +47,7 @@ function shooting_scr(argument0) {
 						}
 					}
 				}
-				if (dirCursor < 180 && dirCursor > 90)
+				if (dirCursor < 180 && dirCursor >= 90)
 				{
 					if (place_free(x + horspeed * global.dt, y)) {
 						horspeed += shotJumpStrength / 16;
@@ -58,7 +58,7 @@ function shooting_scr(argument0) {
 						}
 					}
 				}
-				if (dirCursor > 180 && dirCursor < 270)
+				if (dirCursor >= 180 && dirCursor < 270)
 				{
 					if (place_free(x + horspeed * global.dt, y)) {
 						horspeed += shotJumpStrength / 16;
@@ -69,7 +69,7 @@ function shooting_scr(argument0) {
 						}
 					}
 				}
-				if (dirCursor < 360 && dirCursor > 270)
+				if (dirCursor < 360 && dirCursor >= 270)
 				{
 					if (place_free(x + horspeed * global.dt, y)) {
 						horspeed -= shotJumpStrength / 16;
@@ -113,7 +113,7 @@ function shooting_scr(argument0) {
 		
 				if (!huggingWall && !isDashing)
 				{
-					if (dirCursor > 0 && dirCursor < 90)
+					if (dirCursor >= 0 && dirCursor < 90)
 					{
 						if (place_free(x + horspeed * global.dt, y)) {
 							horspeed -= shotJumpStrength / 14;
@@ -124,7 +124,7 @@ function shooting_scr(argument0) {
 							}
 						}
 					}
-					if (dirCursor < 180 && dirCursor > 90)
+					if (dirCursor < 180 && dirCursor >= 90)
 					{
 						if (place_free(x + horspeed * global.dt, y)) {
 							horspeed += shotJumpStrength / 14;
@@ -135,7 +135,7 @@ function shooting_scr(argument0) {
 							}
 						}
 					}
-					if (dirCursor > 180 && dirCursor < 270)
+					if (dirCursor >= 180 && dirCursor < 270)
 					{
 						if (place_free(x + horspeed * global.dt, y)) {
 							horspeed += shotJumpStrength / 14;
@@ -146,7 +146,7 @@ function shooting_scr(argument0) {
 							}
 						}
 					}
-					if (dirCursor < 360 && dirCursor > 270)
+					if (dirCursor < 360 && dirCursor >= 270)
 					{
 						if (place_free(x + horspeed * global.dt, y)) {
 							horspeed -= shotJumpStrength / 14;
@@ -202,7 +202,7 @@ function shooting_scr(argument0) {
 		
 				if (!huggingWall && !isDashing)
 				{
-					if (dirCursor > 0 && dirCursor < 90)
+					if (dirCursor >= 0 && dirCursor < 90)
 					{
 						if (place_free(x + horspeed * global.dt, y)) {
 							horspeed -= shotJumpStrength / 3.5;
@@ -211,7 +211,7 @@ function shooting_scr(argument0) {
 							verspeed -= shotJumpStrength / 3.5;
 						}
 					}
-					if (dirCursor < 180 && dirCursor > 90)
+					if (dirCursor < 180 && dirCursor >= 90)
 					{
 						if (place_free(x + horspeed * global.dt, y)) {
 							horspeed += shotJumpStrength / 3.5;
@@ -220,7 +220,7 @@ function shooting_scr(argument0) {
 							verspeed -= shotJumpStrength / 3.5;
 						}
 					}
-					if (dirCursor > 180 && dirCursor < 270)
+					if (dirCursor >= 180 && dirCursor < 270)
 					{
 						if (place_free(x + horspeed * global.dt, y)) {
 							horspeed += shotJumpStrength / 3.5;
@@ -229,7 +229,7 @@ function shooting_scr(argument0) {
 							verspeed -= shotJumpStrength / 3.5;
 						}
 					}
-					if (dirCursor < 360 && dirCursor > 270)
+					if (dirCursor < 360 && dirCursor >= 270)
 					{
 						if (place_free(x + horspeed * global.dt, y)) {
 							horspeed -= shotJumpStrength / 3.5;
@@ -265,7 +265,7 @@ function shooting_scr(argument0) {
 		
 			if (!huggingWall && !isDashing)
 			{
-				if (dirCursor > 0 && dirCursor < 90)
+				if (dirCursor >= 0 && dirCursor < 90)
 				{
 					if (place_free(x + horspeed * global.dt, y)) {
 						horspeed -= shotJumpStrength / 2.5;
@@ -274,7 +274,7 @@ function shooting_scr(argument0) {
 						verspeed -= shotJumpStrength / 2.5;
 					}
 				}
-				if (dirCursor < 180 && dirCursor > 90)
+				if (dirCursor < 180 && dirCursor >= 90)
 				{
 					if (place_free(x + horspeed * global.dt, y)) {
 						horspeed += shotJumpStrength / 2.5;
@@ -283,7 +283,7 @@ function shooting_scr(argument0) {
 						verspeed -= shotJumpStrength / 2.5;
 					}
 				}
-				if (dirCursor > 180 && dirCursor < 270)
+				if (dirCursor >= 180 && dirCursor < 270)
 				{
 					if (place_free(x + horspeed * global.dt, y)) {
 						horspeed += shotJumpStrength / 2.5;
@@ -292,7 +292,7 @@ function shooting_scr(argument0) {
 						verspeed -= shotJumpStrength / 2.5;
 					}
 				}
-				if (dirCursor < 360 && dirCursor > 270)
+				if (dirCursor < 360 && dirCursor >= 270)
 				{
 					if (place_free(x + horspeed * global.dt, y)) {
 						horspeed -= shotJumpStrength / 2.5;
@@ -351,7 +351,7 @@ function shooting_scr(argument0) {
 			
 			if (!huggingWall && !isDashing) 
 			{
-				if (dirCursor > 0 && dirCursor < 90)
+				if (dirCursor >= 0 && dirCursor < 90)
 				{
 					if (place_free(x + horspeed * global.dt, y)) {
 						horspeed -= shotJumpStrength / 2.5;
@@ -360,7 +360,7 @@ function shooting_scr(argument0) {
 						verspeed -= shotJumpStrength / 2.5;
 					}
 				}
-				if (dirCursor < 180 && dirCursor > 90)
+				if (dirCursor < 180 && dirCursor >= 90)
 				{
 					if (place_free(x + horspeed * global.dt, y)) {
 						horspeed += shotJumpStrength / 2.5;
@@ -369,7 +369,7 @@ function shooting_scr(argument0) {
 						verspeed -= shotJumpStrength / 2.5;
 					}
 				}
-				if (dirCursor > 180 && dirCursor < 270)
+				if (dirCursor >= 180 && dirCursor < 270)
 				{
 					if (place_free(x + horspeed * global.dt, y)) {
 						horspeed += shotJumpStrength / 2.5;
@@ -378,7 +378,7 @@ function shooting_scr(argument0) {
 						verspeed -= shotJumpStrength / 2.5;
 					}
 				}
-				if (dirCursor < 360 && dirCursor > 270)
+				if (dirCursor < 360 && dirCursor >= 270)
 				{
 					if (place_free(x + horspeed * global.dt, y)) {
 						horspeed -= shotJumpStrength / 2.5;
@@ -402,7 +402,7 @@ function shooting_scr(argument0) {
 		
 				if (!huggingWall && !isDashing)
 				{
-					if (dirCursor > 0 && dirCursor < 90)
+					if (dirCursor >= 0 && dirCursor < 90)
 					{
 						if (place_free(x + horspeed * global.dt, y)) {
 							horspeed -= shotJumpStrength / 16;
@@ -413,7 +413,7 @@ function shooting_scr(argument0) {
 							}
 						}
 					}
-					if (dirCursor < 180 && dirCursor > 90)
+					if (dirCursor < 180 && dirCursor >= 90)
 					{
 						if (place_free(x + horspeed * global.dt, y)) {
 							horspeed += shotJumpStrength / 16;
@@ -424,7 +424,7 @@ function shooting_scr(argument0) {
 							}
 						}
 					}
-					if (dirCursor > 180 && dirCursor < 270)
+					if (dirCursor >= 180 && dirCursor < 270)
 					{
 						if (place_free(x + horspeed * global.dt, y)) {
 							horspeed += shotJumpStrength / 16;
@@ -435,7 +435,7 @@ function shooting_scr(argument0) {
 							}
 						}
 					}
-					if (dirCursor < 360 && dirCursor > 270)
+					if (dirCursor < 360 && dirCursor >= 270)
 					{
 						if (place_free(x + horspeed * global.dt, y)) {
 							horspeed -= shotJumpStrength / 16;

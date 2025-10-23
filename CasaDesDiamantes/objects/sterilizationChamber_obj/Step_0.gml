@@ -13,6 +13,18 @@ if (distance_to_object(player_obj) < 32 && (keyboard_check_pressed(ord("W")) || 
 	if (instance_exists(camera_obj)) {
 		camera_obj.hazeEffect = false;
 	}
+	
+	global.vibrationDelay = 15;
+	var pad = -1;
+	if (gamepad_is_connected(0)) pad = 0;
+	else if (gamepad_is_connected(4)) pad = 4;
+
+	if (player_obj.inputMethod != 0) {
+		if (pad != -1) {
+			gamepad_set_vibration(pad, 0.7, 0.7);
+		}
+	}
+	
 	player_obj.infection = 0;
 	camera_obj.zombiespikeEffectBorder = camera_obj.zombiespikeEffectBorderSave;
 	camera_obj.zombiespikeBorderTransparent = camera_obj.zombiespikeBorderTransparentSave;

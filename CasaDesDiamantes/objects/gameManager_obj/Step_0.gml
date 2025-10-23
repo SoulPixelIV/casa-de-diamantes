@@ -312,10 +312,8 @@ if (global.vibrationDelay <= 0) {
 	else if (gamepad_is_connected(4)) pad = 4;
 
 	if (instance_exists(player_obj)) {
-		if (player_obj.inputMethod != 0) {
-			if (pad != -1) {
-				gamepad_set_vibration(pad, 0, 0);
-			}
+		if (pad != -1) {
+			gamepad_set_vibration(pad, 0, 0);
 		}
 	}
 }

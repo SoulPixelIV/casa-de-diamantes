@@ -5,6 +5,18 @@ if ((distance_to_object(player_obj) < 32 && player_obj.key_up_pressed) && !used 
 	if (!playedSound)
 	{
 		audio_play_sound(lever_snd, 1, false);
+		
+		global.vibrationDelay = 15;
+		var pad = -1;
+		if (gamepad_is_connected(0)) pad = 0;
+		else if (gamepad_is_connected(4)) pad = 4;
+
+		if (player_obj.inputMethod != 0) {
+			if (pad != -1) {
+				gamepad_set_vibration(pad, 0.8, 0.8);
+			}
+		}
+	
 		playedSound = true;
 	}
 	if (instance_exists(crawler_obj))

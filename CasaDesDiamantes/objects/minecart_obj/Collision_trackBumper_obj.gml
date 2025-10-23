@@ -4,6 +4,18 @@ if (!other.offline) {
 			if (!playedCrashSound) {
 				audio_play_sound_on(emitter, minecartHit_snd, false, 1);
 				screenshake(60, 24, 0.7, id);
+				
+				global.vibrationDelay = 55;
+				var pad = -1;
+				if (gamepad_is_connected(0)) pad = 0;
+				else if (gamepad_is_connected(4)) pad = 4;
+
+				if (player_obj.inputMethod != 0) {
+					if (pad != -1) {
+						gamepad_set_vibration(pad, 1, 1);
+					}
+				}
+									
 				playedCrashSound = true;
 				horspeed = 0;
 			}

@@ -286,10 +286,17 @@ if (blackJackCalc_obj.screen == 5)
 	draw_set_color(make_color_rgb(255, 215, 0));
 	draw_text(global.xScreenSize / 2, 164, "-J,Q,K count as 10|A counts as either 1 or 11");
 	
-	draw_set_color(c_black);
-	draw_text(global.xScreenSize / 2 - 1, 223 + 1, "Press Escape to Return");
-	draw_set_color(make_color_rgb(255, 215, 0));
-	draw_text(global.xScreenSize / 2, 224, "Press Escape to Return");
+	if (inputMethod == 0) {
+		draw_set_color(c_black);
+		draw_text(global.xScreenSize / 2 - 1, 223 + 1, "Press Escape to Return");
+		draw_set_color(make_color_rgb(255, 215, 0));
+		draw_text(global.xScreenSize / 2, 224, "Press Escape to Return");
+	} else {
+		draw_set_color(c_black);
+		draw_text(global.xScreenSize / 2 - 1, 223 + 1, "Press B to Return");
+		draw_set_color(make_color_rgb(255, 215, 0));
+		draw_text(global.xScreenSize / 2, 224, "Press B to Return");
+	}
 	
 	//Continue to Main Menu
 	if (pressDelay < 0) {
