@@ -10,6 +10,7 @@ if ((distance_to_object(player_obj) < 32 && player_obj.key_up_pressed) && !used 
 		dialogueSystem_obj.inCutscene = true;
 		if (!playedSound) {
 			audio_play_sound(elevatorBell_snd, 1, false);
+			camera_obj.elevatorMenuIndex = 4;
 			playedSound = true;
 		}
 	}

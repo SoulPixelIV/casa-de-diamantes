@@ -2612,12 +2612,14 @@ if (blackscreenStrength < 0.98) {
 	if (dialogueSystem_obj.inCutscene && !camera_obj.drawElevatorSign && !showWindowMenu && room != level28) {
 		draw_set_color(make_color_rgb(255, 215, 0));
 		draw_set_halign(fa_center);
-		if (player_obj.inputMethod == 0) {
-			draw_text(global.xScreenSize / 2, global.yScreenSize - global.yScreenSize / 4 + 32, "Hold Space to Fastforward");
-			draw_text(global.xScreenSize / 2, global.yScreenSize - global.yScreenSize / 4 + 48, "Press Enter to Skip");
-		} else {
-			draw_text(global.xScreenSize / 2, global.yScreenSize - global.yScreenSize / 4 + 32, "Hold A to Fastforward");
-			draw_text(global.xScreenSize / 2, global.yScreenSize - global.yScreenSize / 4 + 48, "Press Start to Skip");
+		if (instance_exists(player_obj)) {
+			if (player_obj.inputMethod == 0) {
+				draw_text(global.xScreenSize / 2, global.yScreenSize - global.yScreenSize / 4 + 32, "Hold Space to Fastforward");
+				draw_text(global.xScreenSize / 2, global.yScreenSize - global.yScreenSize / 4 + 48, "Press Enter to Skip");
+			} else {
+				draw_text(global.xScreenSize / 2, global.yScreenSize - global.yScreenSize / 4 + 32, "Hold A to Fastforward");
+				draw_text(global.xScreenSize / 2, global.yScreenSize - global.yScreenSize / 4 + 48, "Press Start to Skip");
+			}
 		}
 		draw_set_color(c_black);
 	}

@@ -1,4 +1,4 @@
-if (keyboard_check_pressed(ord("W")) && place_meeting(x, y, player_obj) && !global.doorDelayStart) {
+if (player_obj.key_up_pressed && place_meeting(x, y, player_obj) && !global.doorDelayStart) {
 	if (instance_exists(arrowDown_obj)) {
 		global.arrowCindyDone = true;
 		save_scr();
