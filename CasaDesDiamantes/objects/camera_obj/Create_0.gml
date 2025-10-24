@@ -91,6 +91,7 @@ weaponProhibitedTextTimer = 120;
 barkeeperWindowIndex = 2;
 drawDialogueBorder = false;
 chipDif = 0;
+elevatorMenuIndex = 0;
 minecartCamera = false;
 bartenderPurchaseWindowStartDelay = 200;
 bartenderPurchaseWindowStartDelaySave = bartenderPurchaseWindowStartDelay;

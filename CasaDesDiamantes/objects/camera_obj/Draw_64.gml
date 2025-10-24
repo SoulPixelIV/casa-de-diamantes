@@ -1818,23 +1818,132 @@ if (drawElevatorSign) {
 		elevatorButton5.y = y;
 	}
 	
-	if (elevatorButton1.hover) {
-		draw_sprite(elevatorSelectMenu_spr, 1, global.xScreenSize / 2, (global.yScreenSize / 2) + windowMenuOffset);
-	}
-	if (elevatorButton2.hover) {
-		draw_sprite(elevatorSelectMenu_spr, 2, global.xScreenSize / 2, (global.yScreenSize / 2) + windowMenuOffset);
-	}
-	if (elevatorButton3.hover) {
-		draw_sprite(elevatorSelectMenu_spr, 3, global.xScreenSize / 2, (global.yScreenSize / 2) + windowMenuOffset);
-	}
-	if (elevatorButton4.hover) {
-		draw_sprite(elevatorSelectMenu_spr, 4, global.xScreenSize / 2, (global.yScreenSize / 2) + windowMenuOffset);
-	}
-	if (elevatorButton5.hover) {
-		draw_sprite(elevatorSelectMenu_spr, 5, global.xScreenSize / 2, (global.yScreenSize / 2) + windowMenuOffset);
-	}
-	if (!elevatorButton1.hover && !elevatorButton2.hover && !elevatorButton3.hover && !elevatorButton4.hover && !elevatorButton5.hover) {
-		draw_sprite(elevatorSelectMenu_spr, 0, global.xScreenSize / 2, (global.yScreenSize / 2) + windowMenuOffset);
+	if (instance_exists(player_obj)) {
+		if (player_obj.inputMethod == 0) {
+			if (elevatorButton1.hover) {
+				draw_sprite(elevatorSelectMenu_spr, 1, global.xScreenSize / 2, (global.yScreenSize / 2) + windowMenuOffset);
+			}
+			if (elevatorButton2.hover) {
+				draw_sprite(elevatorSelectMenu_spr, 2, global.xScreenSize / 2, (global.yScreenSize / 2) + windowMenuOffset);
+			}
+			if (elevatorButton3.hover) {
+				draw_sprite(elevatorSelectMenu_spr, 3, global.xScreenSize / 2, (global.yScreenSize / 2) + windowMenuOffset);
+			}
+			if (elevatorButton4.hover) {
+				draw_sprite(elevatorSelectMenu_spr, 4, global.xScreenSize / 2, (global.yScreenSize / 2) + windowMenuOffset);
+			}
+			if (elevatorButton5.hover) {
+				draw_sprite(elevatorSelectMenu_spr, 5, global.xScreenSize / 2, (global.yScreenSize / 2) + windowMenuOffset);
+			}
+			if (!elevatorButton1.hover && !elevatorButton2.hover && !elevatorButton3.hover && !elevatorButton4.hover && !elevatorButton5.hover) {
+				draw_sprite(elevatorSelectMenu_spr, 0, global.xScreenSize / 2, (global.yScreenSize / 2) + windowMenuOffset);
+			}
+		} else {
+			if (elevatorMenuIndex == 3) {
+				draw_sprite(elevatorSelectMenu_spr, 1, global.xScreenSize / 2, (global.yScreenSize / 2) + windowMenuOffset);
+			}
+			if (elevatorMenuIndex == 4) {
+				draw_sprite(elevatorSelectMenu_spr, 2, global.xScreenSize / 2, (global.yScreenSize / 2) + windowMenuOffset);
+			}
+			if (elevatorMenuIndex == 1) {
+				draw_sprite(elevatorSelectMenu_spr, 3, global.xScreenSize / 2, (global.yScreenSize / 2) + windowMenuOffset);
+			}
+			if (elevatorMenuIndex == 2) {
+				draw_sprite(elevatorSelectMenu_spr, 4, global.xScreenSize / 2, (global.yScreenSize / 2) + windowMenuOffset);
+			}
+			if (elevatorMenuIndex == 0) {
+				draw_sprite(elevatorSelectMenu_spr, 5, global.xScreenSize / 2, (global.yScreenSize / 2) + windowMenuOffset);
+			}
+			
+			if (keyboard_check_pressed(vk_down) || keyboard_check_pressed(ord("S")) || gamepad_button_check_pressed(0, gp_padd) || gamepad_button_check_pressed(4, gp_padd)) {
+				audio_play_sound(typewriter_snd, 1, false);
+				if (elevatorMenuIndex > 0) {
+					elevatorMenuIndex--;
+				} else {
+					elevatorMenuIndex = 4;
+				}
+			}
+			if (keyboard_check_pressed(vk_up) || keyboard_check_pressed(ord("W")) || gamepad_button_check_pressed(0, gp_padu) || gamepad_button_check_pressed(4, gp_padu)) {
+				audio_play_sound(typewriter_snd, 1, false);
+				if (elevatorMenuIndex < 4) {
+					elevatorMenuIndex++;
+				} else {
+					elevatorMenuIndex = 0;
+				}
+			}
+
+			if (keyboard_check_pressed(vk_enter) || gamepad_button_check_pressed(0, gp_face1) || gamepad_button_check_pressed(4, gp_face1)) {
+				audio_play_sound(typewriterPush_snd, 1, false);
+				switch (elevatorMenuIndex)
+				{
+					case 0:
+						audio_play_sound(typewriterPush_snd, 1, false);
+						if (instance_exists(elevator_obj) && room != level_Basement) {
+							elevator_obj.target = 6;
+							elevator_obj.used = true;
+						}
+					break;
+					case 1:
+						audio_play_sound(typewriterPush_snd, 1, false);
+						if (instance_exists(elevator_obj) && room == level_Casino) {
+							elevator_obj.target = 3;
+							elevator_obj.used = true;
+						}
+
+						if (instance_exists(elevator_obj) && room == level_CasinoRoof) {
+							elevator_obj.target = 4;
+							elevator_obj.used = true;
+						}
+
+						if (instance_exists(elevator_obj) && room == level_DiningHall) {
+							elevator_obj.target = 4;
+							elevator_obj.used = true;
+						}
+
+						if (instance_exists(elevator_obj) && room == level_Basement) {
+							elevator_obj.target = 4;
+							elevator_obj.used = true;
+						}
+					break;
+					case 2:
+						audio_play_sound(typewriterPush_snd, 1, false);
+						if (instance_exists(elevator_obj) && room != level_DiningHall) {
+							elevator_obj.target = 5;
+							elevator_obj.used = true;
+						}
+					break;
+					case 3:
+						audio_play_sound(typewriterPush_snd, 1, false);
+						if (instance_exists(elevator_obj) && room == level_Casino) {
+							elevator_obj.target = 0;
+							elevator_obj.used = true;
+						}
+
+						if (instance_exists(elevator_obj) && room == level_CasinoRoof) {
+							elevator_obj.target = 2;
+							elevator_obj.used = true;
+						}
+
+						if (instance_exists(elevator_obj) && room == level_DiningHall) {
+							elevator_obj.target = 2;
+							elevator_obj.used = true;
+						}
+
+						if (instance_exists(elevator_obj) && room == level_Basement) {
+							elevator_obj.target = 2;
+							elevator_obj.used = true;
+						}
+					break;
+					case 4:
+						audio_play_sound(typewriterPush_snd, 1, false);
+						if (instance_exists(elevator_obj) && room != level_CasinoRoof) {
+							elevator_obj.target = 1;
+							elevator_obj.used = true;
+						}
+					break;
+				}
+			}
+		}
 	}
 	
 	//Draw "You Are Here" Sign
@@ -1900,29 +2009,40 @@ if (drawElevatorSign) {
 		draw_sprite(elevatorInterestMarker_spr, 1, global.xScreenSize / 2, (global.yScreenSize / 2) + windowMenuOffset);
 	}
 	
-	draw_set_font(gothicPixel_fnt);
-	draw_set_halign(fa_center);
-	draw_set_color(c_black);
-	draw_text(global.xScreenSize / 2 - 1, global.yScreenSize - 36 + 1, "Press Esc to Cancel");
-	draw_set_color(make_color_rgb(255, 215, 0));
-	draw_text(global.xScreenSize / 2, global.yScreenSize - 36, "Press Esc to Cancel");
-	draw_set_halign(fa_left);
+	if (instance_exists(player_obj)) {
+		draw_set_font(gothicPixel_fnt);
+		draw_set_halign(fa_center);
+		
+		if (player_obj.inputMethod == 0) {
+			draw_set_color(c_black);
+			draw_text(global.xScreenSize / 2 - 1, global.yScreenSize - 36 + 1, "Press Esc to Cancel");
+			draw_set_color(make_color_rgb(255, 215, 0));
+			draw_text(global.xScreenSize / 2, global.yScreenSize - 36, "Press Esc to Cancel");
+			draw_set_halign(fa_left);
+		} else {
+			draw_set_color(c_black);
+			draw_text(global.xScreenSize / 2 - 1, global.yScreenSize - 36 + 1, "Press Start to Cancel");
+			draw_set_color(make_color_rgb(255, 215, 0));
+			draw_text(global.xScreenSize / 2, global.yScreenSize - 36, "Press Start to Cancel");
+			draw_set_halign(fa_left);
+		}
 	
-	if (windowMenuOffset < 4)
-	{
-		windowMenuOffset = 0;
-	}
-	else
-	{
-		windowMenuOffset -= global.dt * 1.5;
-	}
+		if (windowMenuOffset < 4)
+		{
+			windowMenuOffset = 0;
+		}
+		else
+		{
+			windowMenuOffset -= global.dt * 1.5;
+		}
 	
-	if (keyboard_check_pressed(vk_escape) || gamepad_button_check_pressed(4, gp_start) || gamepad_button_check_pressed(0, gp_start)) {
-		audio_play_sound(typewriterPush_snd, 1, false);
-		player_obj.movement = true;
-		drawBlackborders = false;
-		dialogueSystem_obj.inCutscene = false;
-		drawElevatorSign = false;
+		if (keyboard_check_pressed(vk_escape) || gamepad_button_check_pressed(4, gp_start) || gamepad_button_check_pressed(0, gp_start)) {
+			audio_play_sound(typewriterPush_snd, 1, false);
+			player_obj.movement = true;
+			drawBlackborders = false;
+			dialogueSystem_obj.inCutscene = false;
+			drawElevatorSign = false;
+		}
 	}
 }
 
@@ -2438,19 +2558,21 @@ if (drawPause) {
 if (room != level28) {
 	if (!dialogueSystem_obj.inCutscene || (dialogueSystem_obj.inCutscene && drawElevatorSign) || (dialogueSystem_obj.inCutscene && showWindowMenu)) {
 		if (instance_exists(player_obj)) {
-			if (windowType == 1 || drawElevatorSign) {
-				draw_sprite(mousecursor_spr, 0, 
-					(window_mouse_get_x() / ((window_get_width()+1) / global.xScreenSize)) + (0), 
-					window_mouse_get_y() / ((window_get_height()+1) / global.yScreenSize) + (0));
-			} else if (player_obj.inputMethod == 0) {
-				if (!global.pause) {
-					draw_sprite(cursor_spr, 0, 
-					(window_mouse_get_x() / ((window_get_width()+1) / global.xScreenSize)) + (0), 
-					window_mouse_get_y() / ((window_get_height()+1) / global.yScreenSize) + (0));
-				} else {
+			if (player_obj.inputMethod == 0) {
+				if (windowType == 1 || drawElevatorSign) {
 					draw_sprite(mousecursor_spr, 0, 
-					(window_mouse_get_x() / ((window_get_width()+1) / global.xScreenSize)) + (0), 
-					window_mouse_get_y() / ((window_get_height()+1) / global.yScreenSize) + (0));
+						(window_mouse_get_x() / ((window_get_width()+1) / global.xScreenSize)) + (0), 
+						window_mouse_get_y() / ((window_get_height()+1) / global.yScreenSize) + (0));
+				} else if (player_obj.inputMethod == 0) {
+					if (!global.pause) {
+						draw_sprite(cursor_spr, 0, 
+						(window_mouse_get_x() / ((window_get_width()+1) / global.xScreenSize)) + (0), 
+						window_mouse_get_y() / ((window_get_height()+1) / global.yScreenSize) + (0));
+					} else {
+						draw_sprite(mousecursor_spr, 0, 
+						(window_mouse_get_x() / ((window_get_width()+1) / global.xScreenSize)) + (0), 
+						window_mouse_get_y() / ((window_get_height()+1) / global.yScreenSize) + (0));
+					}
 				}
 			}
 		}
