@@ -9,7 +9,7 @@ if (distance_to_object(player_obj) < 64) {
 
 if (distance_to_object(player_obj) < 32 && global.hasWarpzoneKey && !global.doorDelayStart)
 {
-	if (keyboard_check_pressed(ord("W"))) {
+	if (player_obj.key_up_pressed) {
 		teleporting = true;
 		player_obj.movement = false;
 		image_index = 1;

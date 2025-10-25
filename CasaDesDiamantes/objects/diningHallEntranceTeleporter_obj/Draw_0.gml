@@ -10,7 +10,7 @@ if (!global.dinnerDialogue && !used) {
 				draw_sprite(joystick_spr, 0, player_obj.x, player_obj.y - 32);
 			}
 	
-			if (keyboard_check_pressed(ord("W")) && !global.doorDelayStart) {
+			if (player_obj.key_up_pressed && !global.doorDelayStart) {
 				teleporting = true;
 				global.doorDelayStart = true;
 				player_obj.movement = false;
