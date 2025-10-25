@@ -14,3 +14,6 @@ scoreSpinTimer = 200;
 playScoreStop = false;
 spinsnd = noone;
 scoreSpinTimerSave = scoreSpinTimer;
+
+inputMethod = 0;
+scrollSpeed = 9;
