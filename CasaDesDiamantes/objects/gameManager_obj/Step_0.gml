@@ -112,6 +112,7 @@ audio_sound_pitch(trainCrossingAlarm_snd, clamp(1 * global.timeScale, 0.5, 1.5))
 audio_sound_pitch(trainHonk_snd, clamp(1 * global.timeScale, 0.5, 1.5));
 audio_sound_pitch(ding_snd, clamp(1 * global.timeScale, 0.5, 1.5));
 audio_sound_pitch(staticnoise_snd, clamp(1 * global.timeScale, 0.5, 1.5));
+audio_sound_pitch(connectionSevered_snd, clamp(1 * global.timeScale, 0.5, 1.5));
 
 audio_sound_pitch(infectedVoice_snd, clamp(1 * global.timeScale, 0.5, 1.5));
 audio_sound_pitch(plagueInfectionVoice_snd, clamp(1 * global.timeScale, 0.5, 1.5));
@@ -207,6 +208,8 @@ audio_sound_gain(glassBreaking_snd, (global.soundVolume / 100) * currVolGlassBre
 audio_sound_gain(fuse_snd, (global.soundVolume / 100) * currVolFuse, 0);
 audio_sound_gain(insectSpit_snd, (global.soundVolume / 100) * currVolInsectSpit, 0);
 audio_sound_gain(minecartHit_snd, (global.soundVolume / 100) * currVolMinecartHit, 0);
+audio_sound_gain(connectionSevered_snd, (global.soundVolume / 100) * currVolConnectionSevered, 0);
+
 if (global.soundVolume == 0) {
 	audio_sound_gain(minecart_snd, 0, 0);
 	minecartVolSet = false;

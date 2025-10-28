@@ -61,6 +61,12 @@ if (ppfx_system_exists(ppfx_id)) {
 		} else if (room == endcredits) {
 			ppfx_id.ProfileLoad(endCredits_profile);
 		}
+		
+		if (instance_exists(camera_obj)) {
+			if (camera_obj.finalDeath) {
+				ppfx_id.ProfileLoad(credits_profile);
+			}
+		}
 	}
 	
 	//Chromatic Filter

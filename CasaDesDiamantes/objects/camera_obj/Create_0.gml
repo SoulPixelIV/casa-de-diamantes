@@ -36,7 +36,7 @@ tutorialAnimImage = 0;
 reloadAnimTimer = 25;
 reloadFailed = false;
 finalDeath = false;
-finalDeathScreenTimer = 350;
+finalDeathScreenTimer = 520;
 pauseDeathTimer = 200;
 deathInProg = false;
 respawnSetScreenBrightness = false;
@@ -95,6 +95,7 @@ elevatorMenuIndex = 0;
 minecartCamera = false;
 bartenderPurchaseWindowStartDelay = 200;
 bartenderPurchaseWindowStartDelaySave = bartenderPurchaseWindowStartDelay;
+playedDeathSound = false;
 
 cameraSpeed = 0.02;
 ycameraSpeed = 0.02;

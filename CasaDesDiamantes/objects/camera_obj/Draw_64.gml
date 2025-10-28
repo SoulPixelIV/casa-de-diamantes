@@ -2098,11 +2098,26 @@ if (deathDelayTimer < 0)
 	else
 	//FULL DEATH
 	{
+		if (!playedDeathSound) {
+			audio_play_sound(connectionSevered_snd, 1, false);
+			playedDeathSound = true;
+		}
 		draw_set_color(c_black);
 		draw_rectangle(-100, -100, global.xScreenSize + 100, global.yScreenSize + 100, false);
+		draw_set_alpha(0.3);
+		draw_ellipse_colour(-100, -100, global.xScreenSize + 100, global.yScreenSize + 100, c_black , c_red, false);
 		draw_set_alpha(1);
-		draw_sprite_ext(death_spr, 0, global.xScreenSize / 2, global.yScreenSize / 3, 2, 2, 0, c_red, 0.2);
-		draw_sprite_ext(death_spr, 0, global.xScreenSize / 2, global.yScreenSize / 3, 1.5, 1.5, 0, c_red, 1);
+		draw_set_halign(fa_center);
+		draw_set_font(global.optixFont);
+		draw_set_color(c_green);
+		draw_text(global.xScreenSize / 2, (global.yScreenSize / 3.5) + 1, "The Connection has been severed");
+		draw_set_color(c_red);
+		draw_text(global.xScreenSize / 2, global.yScreenSize / 3.5, "The Connection has been severed");
+		draw_set_color(c_black);
+		draw_set_halign(fa_left);
+		gpu_set_blendmode(bm_subtract);
+		draw_sprite(hazeEffectAnimated_spr, -1, 0, 0);
+		gpu_set_blendmode(bm_normal);
 		finalDeathScreenTimer -= global.dt;
 		if (finalDeathScreenTimer < 0)
 		{

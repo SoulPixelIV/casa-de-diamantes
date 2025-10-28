@@ -1,11 +1,11 @@
 /// @description Variables
 
 global.spawn = 0;
-global.money = 6442;
+global.money = 0;
 global.skin = 0;
-global.syringes = 2;
+global.syringes = 0;
 global.room = noone;
-global.diamonds = 1;
+global.diamonds = 0;
 global.lastCheckpoint = noone;
 global.hasWarpzoneKey = false;
 global.keyRed = false;
@@ -322,6 +322,7 @@ currVolTrainCrossingAlarm = audio_sound_get_gain(trainCrossingAlarm_snd);
 currVolTrainHonk = audio_sound_get_gain(trainHonk_snd);
 currVolDing = audio_sound_get_gain(ding_snd);
 currVolStatic = audio_sound_get_gain(staticnoise_snd);
+currVolConnectionSevered = audio_sound_get_gain(connectionSevered_snd);
 
 currVolInfectedVoice = audio_sound_get_gain(infectedVoice_snd);
 currVolInfectionVoice = audio_sound_get_gain(plagueInfectionVoice_snd);
