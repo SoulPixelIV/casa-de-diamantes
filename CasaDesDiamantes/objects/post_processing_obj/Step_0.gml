@@ -63,7 +63,7 @@ if (ppfx_system_exists(ppfx_id)) {
 		}
 		
 		if (instance_exists(camera_obj)) {
-			if (camera_obj.finalDeath) {
+			if (camera_obj.finalDeath || camera_obj.deathInProg) {
 				ppfx_id.ProfileLoad(credits_profile);
 			}
 		}

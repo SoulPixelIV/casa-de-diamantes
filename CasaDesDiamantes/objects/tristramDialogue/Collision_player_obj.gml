@@ -1,5 +1,5 @@
 /// @description Check Player
-if (instance_exists(player_obj) && !global.dialogueDelayStart && !global.tristramDialogue) {
+if (instance_exists(player_obj) && !global.dialogueDelayStart && !global.tristramDialogue && !global.meeting2Dialogue) {
 	if (!global.pause && !dialogueTriggered && player_obj.grounded) {
 		global.dialogueDelayStart = true;
 		dialogueTriggered = true;

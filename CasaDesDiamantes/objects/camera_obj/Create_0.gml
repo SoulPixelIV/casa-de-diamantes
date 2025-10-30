@@ -78,6 +78,7 @@ drawTutorialWeaponScroll = false
 drawTutorialAmmoRecycle = false;
 drawTutorialAlpha = 0;
 drawTutorialInputDelay = 0;
+inputMethod = 0;
 drawPause = false;
 pauseAlpha = 0;
 pauseOffset = 0;

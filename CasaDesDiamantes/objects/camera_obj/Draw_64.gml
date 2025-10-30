@@ -2055,8 +2055,9 @@ if (drawInfectionText)
 }
 
 if (deathDelayTimer < 0)
-{
+{	
 	deathInProg = true;
+			
 	//REVIVE SCREEN
 	if (!finalDeath)
 	{
@@ -2080,18 +2081,30 @@ if (deathDelayTimer < 0)
 		draw_set_font(gothicPixel_fnt);
 		draw_set_color(make_color_rgb(255, 215, 0));
 		draw_set_halign(fa_center);
-		draw_sprite(button_spr, 0, global.xScreenSize / 4, global.yScreenSize / 1.5);
-		draw_sprite(button_spr, 0, global.xScreenSize - (global.xScreenSize / 4), global.yScreenSize / 1.5);
+		draw_sprite_ext(button_spr, 0, global.xScreenSize / 4, global.yScreenSize / 1.5, 0.9, 0.75, 0, -1, 1);
+		draw_sprite_ext(button_spr, 0, global.xScreenSize - (global.xScreenSize / 4), global.yScreenSize / 1.5, 0.9, 0.75, 0, -1, 1);
 		
-		draw_set_color(c_black);
-		draw_text((global.xScreenSize / 4) - 1, (global.yScreenSize / 1.5) - 4 + 1, "DIE [Q]");
-		draw_set_color(make_color_rgb(255, 215, 0));
-		draw_text(global.xScreenSize / 4, (global.yScreenSize / 1.5) - 4, "DIE [Q]");
+		if (inputMethod == 0) {
+			draw_set_color(c_black);
+			draw_text((global.xScreenSize / 4) - 1, (global.yScreenSize / 1.5) - 4 + 1, "DIE [Q]");
+			draw_set_color(make_color_rgb(255, 215, 0));
+			draw_text(global.xScreenSize / 4, (global.yScreenSize / 1.5) - 4, "DIE [Q]");
 		
-		draw_set_color(c_black);
-		draw_text((global.xScreenSize - (global.xScreenSize / 4)) - 1, ((global.yScreenSize / 1.5) - 4) + 1, "INFECT [E]");
-		draw_set_color(make_color_rgb(255, 215, 0));
-		draw_text(global.xScreenSize - (global.xScreenSize / 4), (global.yScreenSize / 1.5) - 4, "INFECT [E]");
+			draw_set_color(c_black);
+			draw_text((global.xScreenSize - (global.xScreenSize / 4)) - 1, ((global.yScreenSize / 1.5) - 4) + 1, "INFECT [E]");
+			draw_set_color(make_color_rgb(255, 215, 0));
+			draw_text(global.xScreenSize - (global.xScreenSize / 4), (global.yScreenSize / 1.5) - 4, "INFECT [E]");
+		} else {
+			draw_set_color(c_black);
+			draw_text((global.xScreenSize / 4) - 1, (global.yScreenSize / 1.5) - 4 + 1, "DIE [L1]");
+			draw_set_color(make_color_rgb(255, 215, 0));
+			draw_text(global.xScreenSize / 4, (global.yScreenSize / 1.5) - 4, "DIE [L1]");
+		
+			draw_set_color(c_black);
+			draw_text((global.xScreenSize - (global.xScreenSize / 4)) - 1, ((global.yScreenSize / 1.5) - 4) + 1, "INFECT [R1]");
+			draw_set_color(make_color_rgb(255, 215, 0));
+			draw_text(global.xScreenSize - (global.xScreenSize / 4), (global.yScreenSize / 1.5) - 4, "INFECT [R1]");
+		}
 		
 		draw_set_halign(fa_left);
 	}
@@ -2574,19 +2587,21 @@ if (room != level28) {
 	if (!dialogueSystem_obj.inCutscene || (dialogueSystem_obj.inCutscene && drawElevatorSign) || (dialogueSystem_obj.inCutscene && showWindowMenu)) {
 		if (instance_exists(player_obj)) {
 			if (player_obj.inputMethod == 0) {
-				if (windowType == 1 || drawElevatorSign) {
-					draw_sprite(mousecursor_spr, 0, 
-						(window_mouse_get_x() / ((window_get_width()+1) / global.xScreenSize)) + (0), 
-						window_mouse_get_y() / ((window_get_height()+1) / global.yScreenSize) + (0));
-				} else if (player_obj.inputMethod == 0) {
-					if (!global.pause) {
-						draw_sprite(cursor_spr, 0, 
-						(window_mouse_get_x() / ((window_get_width()+1) / global.xScreenSize)) + (0), 
-						window_mouse_get_y() / ((window_get_height()+1) / global.yScreenSize) + (0));
-					} else {
+				if (!deathInProg) {
+					if (windowType == 1 || drawElevatorSign) {
 						draw_sprite(mousecursor_spr, 0, 
-						(window_mouse_get_x() / ((window_get_width()+1) / global.xScreenSize)) + (0), 
-						window_mouse_get_y() / ((window_get_height()+1) / global.yScreenSize) + (0));
+							(window_mouse_get_x() / ((window_get_width()+1) / global.xScreenSize)) + (0), 
+							window_mouse_get_y() / ((window_get_height()+1) / global.yScreenSize) + (0));
+					} else if (player_obj.inputMethod == 0) {
+						if (!global.pause) {
+							draw_sprite(cursor_spr, 0, 
+							(window_mouse_get_x() / ((window_get_width()+1) / global.xScreenSize)) + (0), 
+							window_mouse_get_y() / ((window_get_height()+1) / global.yScreenSize) + (0));
+						} else {
+							draw_sprite(mousecursor_spr, 0, 
+							(window_mouse_get_x() / ((window_get_width()+1) / global.xScreenSize)) + (0), 
+							window_mouse_get_y() / ((window_get_height()+1) / global.yScreenSize) + (0));
+						}
 					}
 				}
 			}

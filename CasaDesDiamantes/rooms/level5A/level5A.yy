@@ -440,8 +440,6 @@
     {"name":"inst_452D80CA","path":"rooms/level5A/level5A.yy",},
     {"name":"inst_17270FAC","path":"rooms/level5A/level5A.yy",},
     {"name":"inst_23000D9","path":"rooms/level5A/level5A.yy",},
-    {"name":"inst_760E10D2","path":"rooms/level5A/level5A.yy",},
-    {"name":"inst_2242C672","path":"rooms/level5A/level5A.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -965,8 +963,6 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_5A7D0476","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"shotgun_obj","path":"objects/shotgun_obj/shotgun_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":5248.0,"y":1200.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_43B140BE","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"dualBarettas_obj","path":"objects/dualBarettas_obj/dualBarettas_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":5215.0,"y":1168.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_3D7B84BC","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"warpzoneKey_obj","path":"objects/warpzoneKey_obj/warpzoneKey_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":6752.0,"y":1824.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_760E10D2","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"zombieGirl_obj","path":"objects/zombieGirl_obj/zombieGirl_obj.yy",},"properties":[],"rotation":0.0,"scaleX":-1.0,"scaleY":1.0,"x":1408.0,"y":1888.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_2242C672","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"syringeStatic_obj","path":"objects/syringeStatic_obj/syringeStatic_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1472.0,"y":1888.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"MidgroundObjects","depth":1500,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Tiles","depth":1600,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":94,"SerialiseWidth":313,"TileCompressedData":[

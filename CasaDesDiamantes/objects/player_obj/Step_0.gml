@@ -1895,12 +1895,12 @@ if (hp <= 0 || infection > hp || deathActivated)
 	}
 	
 	//Revive
-	if (keyboard_check_pressed(ord("E")) && global.syringes > 0 && !place_meeting(x, y, toxicWater_obj))
+	if ((keyboard_check_pressed(ord("E")) || gamepad_button_check(4, gp_shoulderr) || gamepad_button_check(0, gp_shoulderr)) && global.syringes > 0 && !place_meeting(x, y, toxicWater_obj))
 	{
 		revive_scr();
 	}
 	//Full Death
-	if (keyboard_check_pressed(ord("Q")))
+	if (keyboard_check_pressed(ord("Q")) || gamepad_button_check(4, gp_shoulderl) || gamepad_button_check(0, gp_shoulderl))
 	{
 		camera_obj.finalDeath = true;
 		camera_obj.drawInfectionText = true;
