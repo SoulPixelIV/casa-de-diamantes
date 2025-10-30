@@ -10,7 +10,8 @@ if (timer < 0) {
 	global.introDialogueOutOfRoomDone = true;
 	global.firstmeetingDialogue = true;
 	global.dinnerDialogue = true;
-	global.komoBasementDialogue = false;
+	global.komoBasementDialogue = true;
+	global.tristramDialogue = true;
 	global.cupyDialogue1Done = true;
 	global.cupyDialogue2Done = true;
 	global.cupyDialogue3Done = true;

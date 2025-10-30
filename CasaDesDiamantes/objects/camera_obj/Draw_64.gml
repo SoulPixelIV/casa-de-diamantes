@@ -1983,7 +1983,13 @@ if (drawElevatorSign) {
 			if (!global.firstmeetingDialogue) {
 				draw_sprite(elevatorInterestMarker_spr, 1, global.xScreenSize / 2, (global.yScreenSize / 2) + windowMenuOffset);
 			} else {
-				draw_sprite(elevatorInterestMarker_spr, 1, global.xScreenSize / 2, (global.yScreenSize / 2) + windowMenuOffset);
+				if (!global.dinnerDialogue) {
+					if (!global.tristramDialogue) {
+						draw_sprite(elevatorInterestMarker_spr, 1, global.xScreenSize / 2, (global.yScreenSize / 2) + windowMenuOffset);
+					}
+				} else {
+					draw_sprite(elevatorInterestMarker_spr, 1, global.xScreenSize / 2, (global.yScreenSize / 2) + windowMenuOffset);
+				}
 				if (!global.dinnerDialogue) {
 					draw_sprite(elevatorInterestMarker_spr, 2, global.xScreenSize / 2, (global.yScreenSize / 2) + windowMenuOffset);
 				}
