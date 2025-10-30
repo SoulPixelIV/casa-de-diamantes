@@ -20,18 +20,18 @@ if (!global.pause) {
 		}
 	
 		if (used && switchOn) {
-		if (!playedSound) {
-			spinSound = audio_play_sound_on(emitter, ding_snd, false, false);
-			playedSound = true;
-		}
+			if (!playedSound) {
+				spinSound = audio_play_sound_on(emitter, ding_snd, false, false);
+				playedSound = true;
+			}
 	
-		image_index = 0;
-		startDelay = random_range(800, 2800);
-		countDelay = countDelaySave;
-		switchOn = false;
-		used = false;
-		playedSound = false;
-		playedStartSound = false;
+			image_index = 0;
+			startDelay = random_range(800, 2800);
+			countDelay = countDelaySave;
+			switchOn = false;
+			used = false;
+			playedSound = false;
+			playedStartSound = false;
 		}
 
 		if (image_index == 4) {
