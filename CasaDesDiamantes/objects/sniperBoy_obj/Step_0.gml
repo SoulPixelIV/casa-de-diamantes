@@ -280,6 +280,9 @@ if (hp < 0)
 		}
 	}
 	
+	//Count Kill
+	global.killsInARow++;
+	
 	//Drop Item
 	if (instance_exists(player_obj))
 	{

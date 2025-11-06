@@ -271,6 +271,9 @@ if (hp < 0)
 		player_obj.camFollowTarget = deathCross;
 	}
 	
+	//Count Kill
+	global.killsInARow++;
+	
 	//Drop Item
 	if (instance_exists(player_obj))
 	{

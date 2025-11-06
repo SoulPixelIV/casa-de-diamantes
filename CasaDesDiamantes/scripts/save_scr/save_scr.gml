@@ -21,6 +21,9 @@ function save_scr(){
 	ini_write_real("save1", "shownWeaponScrollTutorial", global.drawTutorialWeaponScrollUsed);
 	ini_write_real("save1", "drawTutorialAmmoRecycle", global.drawTutorialAmmoRecycle);
 	ini_write_real("save1", "drunkness", global.drunknessLevel);
+	ini_write_real("save1", "deaths", global.deaths);
+	ini_write_real("save1", "playtime", global.playtime);
+	ini_write_real("save1", "succDashes", global.succDashes);
 	
 	ini_write_real("save1", "storyAct", global.storyAct);
 	ini_write_real("save1", "drawMission", global.drawMission);

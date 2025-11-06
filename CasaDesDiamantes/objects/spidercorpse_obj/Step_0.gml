@@ -407,6 +407,9 @@ if (hp < 0)
 		}
 	}
 	
+	//Count Kill
+	global.killsInARow++;
+	
 	//Drop Ammo
 	if (lastBullet == bulletDualBarettas_obj)
 	{

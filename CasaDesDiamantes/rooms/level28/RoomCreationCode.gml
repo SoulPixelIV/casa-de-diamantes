@@ -28,3 +28,19 @@ if (instance_exists(player_obj)) {
 	player_obj.image_alpha = 0;
 	player_obj.shootingAllowed = false;
 }
+
+if (steam_initialised()) {
+	if (steam_stats_ready()) {
+		if (!steam_get_achievement("ACH_FINISH_GAME")) {
+			steam_set_achievement("ACH_FINISH_GAME");
+			steam_update();
+		}
+		
+		if (global.playtime <= 3600) {
+			if (!steam_get_achievement("ACH_FINISH_1HOUR")) {
+				steam_set_achievement("ACH_FINISH_1HOUR");
+				steam_update();
+			}
+		}
+	}
+}

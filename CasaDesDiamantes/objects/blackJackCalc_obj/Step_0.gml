@@ -103,6 +103,15 @@ if (screen == 4 && !transactionComplete)
 			playedSound = true;
 		}
 		
+		if (steam_initialised()) {
+			if (steam_stats_ready()) {
+				if (!steam_get_achievement("ACH_WIN_GAMBLE")) {
+					steam_set_achievement("ACH_WIN_GAMBLE");
+					steam_update();
+				}
+			}
+		}
+		
 	}
 	else if (playerSum == 21)
 	{	
@@ -115,6 +124,15 @@ if (screen == 4 && !transactionComplete)
 		else
 		{			
 			global.money += moneypool * 3;
+			
+			if (steam_initialised()) {
+				if (steam_stats_ready()) {
+					if (!steam_get_achievement("ACH_WIN_GAMBLE")) {
+						steam_set_achievement("ACH_WIN_GAMBLE");
+						steam_update();
+					}
+				}
+			}
 		}
 		if (!playedSound) {
 			audio_play_sound(blackjackWin_snd, 1, false);
@@ -128,6 +146,15 @@ if (screen == 4 && !transactionComplete)
 		if (!playedSound) {
 			audio_play_sound(blackjackWin_snd, 1, false);
 			playedSound = true;
+		}
+		
+		if (steam_initialised()) {
+			if (steam_stats_ready()) {
+				if (!steam_get_achievement("ACH_WIN_GAMBLE")) {
+					steam_set_achievement("ACH_WIN_GAMBLE");
+					steam_update();
+				}
+			}
 		}
 	}
 	else if ((playerSum - (10 * numberofAces)) == (dealerSum - (10 * numberofAcesDealer)))
@@ -220,6 +247,7 @@ if (screen == 3 || screen == 4)
 if (keyboard_check(vk_escape) || gamepad_button_check_pressed(4, gp_select) || gamepad_button_check_pressed(0, gp_select) || gamepad_button_check_pressed(4, gp_face2) || gamepad_button_check_pressed(0, gp_face2))
 {
 	if (global.pushDelay < 0) {
+		global.blackjackPlays = 0;
 		audio_play_sound(typewriterPush_snd, 1, false);
 		if (screen == 2) {
 			global.pushDelay = global.pushDelaySave;

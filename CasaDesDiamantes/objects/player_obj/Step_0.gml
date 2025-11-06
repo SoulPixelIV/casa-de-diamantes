@@ -61,6 +61,11 @@ if (pauseDelay < 0) {
 	pauseDelayStart = false;
 }
 
+if (!grounded) {
+	global.airtime += global.dt / 190;
+} else {
+	global.airtime = 0;
+}
 //Sprites
 if (global.skin == 0) {
 	playerEquippedSprite = playerEquipped_spr;
@@ -377,7 +382,7 @@ if (movement && !isZombie && !global.pause && !inCutscene)
 }
 
 //Drunk Filter
-if (room == level_Casino || room == level_CasinoRoof || room == blackjackTable || room == level0 || room == level1 || room == level2 || room == level3 || room == level4 || room == level5A || room == level5B || room == level6 || room == level7 || room == level8 || room == level9 || room == warpzone1 || room == level10 || room == level11 || room == level12 || room == level13 || room == level14 || room == warpzone2) {
+if (room == level_Casino || room == level_CasinoRoof || room == blackjackTable || room == level0 || room == level1 || room == level2 || room == level3 || room == level4 || room == level5A || room == level5B || room == level6 || room == level7 || room == level8 || room == level9 || room == warpzone1 || room == level10 || room == level11 || room == level12 || room == level13 || room == level14 || room == warpzone2 || room == level15 || room == level16 || room == level17 || room == level18 || room == level19 || room == level20 || room == level21 || room == level22 || room == level23 || room == level24 || room == level25 || room == level26 || room == level27 || room == level28 || room == warpzone3) {
 	fil1 = layer_get_fx("DrunkFilter1");
 	fil2 = layer_get_fx("DrunkFilter2");
 	
@@ -1833,6 +1838,17 @@ if (damageCooldown < 0)
 	}
 }
 
+if (infection > hp) {
+	if (steam_initialised()) {
+		if (steam_stats_ready()) {
+			if (!steam_get_achievement("ACH_INFECTION_DEATH")) {
+				steam_set_achievement("ACH_INFECTION_DEATH");
+				steam_update();
+			}
+		}
+	}
+}
+
 if (hp <= 0 || infection > hp || deathActivated)
 {	
 	player_obj.plagueTransformation = false;
@@ -1853,6 +1869,11 @@ if (hp <= 0 || infection > hp || deathActivated)
 		movement = false;
 		inChamber = true;
 		gravityOn = false;
+		
+		if (!countedDeath) {
+			global.deaths ++;
+			countedDeath = true;
+		}
 		
 		if (!createDeathChunks) {
 			var amount = random_range(12, 18);
@@ -1906,6 +1927,11 @@ if (hp <= 0 || infection > hp || deathActivated)
 		camera_obj.drawInfectionText = true;
 		if (instance_exists(camera_obj)) {
 			camera_obj.hazeEffect = false;
+		}
+		
+		if (!countedDeath) {
+			global.deaths ++;
+			countedDeath = true;
 		}
 		
 		if (!createDeathChunks) {

@@ -16,6 +16,9 @@ function load_scr(){
 	global.drawTutorialWeaponScrollUsed = ini_read_real("save1", "shownWeaponScrollTutorial", false);
 	global.drawTutorialAmmoRecycle = ini_read_real("save1", "drawTutorialAmmoRecycle", false);
 	global.drunknessLevel = ini_read_real("save1", "drunkness", 0);
+	global.deaths = ini_read_real("save1", "deaths", 0);
+	global.playtime = ini_read_real("save1", "playtime", 0);
+	global.succDashes = ini_read_real("save1", "succDashes", 0);
 	
 	global.storyAct = ini_read_real("save1", "storyAct", 0);
 	global.drawMission = ini_read_real("save1", "drawMission", false);

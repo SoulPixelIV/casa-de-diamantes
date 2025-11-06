@@ -40,6 +40,7 @@ if (global.pushDelay < 0) {
 		else if (start && blackJackCalc_obj.moneypool != 0)
 		{
 			blackJackCalc_obj.screen = 3;
+			global.blackjackPlays++;
 		}
 	}
 

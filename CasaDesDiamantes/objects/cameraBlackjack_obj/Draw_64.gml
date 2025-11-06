@@ -224,6 +224,7 @@ if (blackJackCalc_obj.screen == 2) {
 				case 2:
 					if (blackJackCalc_obj.moneypool != 0) {
 						blackJackCalc_obj.screen = 3;
+						global.blackjackPlays++;
 						cursorPos = 0;
 					}
 					pressDelay = pressDelaySave;

@@ -17,6 +17,7 @@ wallJumpsMax = wallJumps;
 otherDirWallHugTimer = 24; //Amount of time player needs to hold other direction key to let go of wall
 dashDelay = 300;
 dashInvincibility = 120;
+countedDeath = false;
 dashInvincibilityOn = false;
 dashStartDelay = 50;
 dashStandupDelay = 13; //Delay until jump gets recognized after dash has started

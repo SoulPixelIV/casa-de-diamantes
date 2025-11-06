@@ -2,6 +2,17 @@ if (place_meeting(x, y, player_obj))
 {
 	teleporting = true;
 	player_obj.movement = false;
+	
+	if (steam_initialised()) {
+		if (steam_stats_ready()) {
+			if (global.deaths == 0) {
+				if (!steam_get_achievement("ACH_NODEATH_WORLD1")) {
+					steam_set_achievement("ACH_NODEATH_WORLD1");
+					steam_update();
+				}
+			}
+		}
+	}
 }
 
 if (teleporting) {

@@ -20,6 +20,7 @@ if (hp > 0 && !inChamber)
 		repeat(choose(2, 3)) {
 			instance_create_layer(x, y, "Instances", chipBluePickup_obj);
 		}
+		global.succDashes++;
 		dodgeRewardTimer = dodgeRewardTimerSave;
 	}
 

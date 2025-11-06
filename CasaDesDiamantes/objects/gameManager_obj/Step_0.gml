@@ -29,6 +29,70 @@ if (steam_initialised()) {
 	}
 }
 
+global.killResetTimer -= global.dt;
+
+if (room == level_Casino || room == level_CasinoRoof || room == blackjackTable || room == level0 || room == level1 || room == level2 || room == level3 || room == level4 || room == level5A || room == level5B || room == level6 || room == level7 || room == level8 || room == level9 || room == warpzone1 || room == level10 || room == level11 || room == level12 || room == level13 || room == level14 || room == warpzone2 || room == level15 || room == level16 || room == level17 || room == level18 || room == level19 || room == level20 || room == level21 || room == level22 || room == level23 || room == level24 || room == level25 || room == level26 || room == level27 || room == level28 || room == warpzone3) {
+	global.playtime += global.dt / 190;
+}
+
+if (global.killResetTimer < 0) {
+	global.killsInARow = 0;
+	global.killResetTimer = global.killResetTimerSave;
+}
+
+if (steam_initialised()) {
+	if (steam_stats_ready()) {
+		if (global.money == 777) {
+			if (!steam_get_achievement("ACH_777_CHIPS")) {
+				steam_set_achievement("ACH_777_CHIPS");
+				steam_update();
+			}
+		}
+		if (global.money == 7777) {
+			if (!steam_get_achievement("ACH_7777_CHIPS")) {
+				steam_set_achievement("ACH_7777_CHIPS");
+				steam_update();
+			}
+		}
+		if (global.money == 77777) {
+			if (!steam_get_achievement("ACH_77777_CHIPS")) {
+				steam_set_achievement("ACH_77777_CHIPS");
+				steam_update();
+			}
+		}
+		if (global.skin == 1) {
+			if (!steam_get_achievement("ACH_SKIN_UNLOCKED")) {
+				steam_set_achievement("ACH_SKIN_UNLOCKED");
+				steam_update();
+			}
+		}
+		if (global.killsInARow >= 3) {
+			if (!steam_get_achievement("ACH_MULTIKILL_1SHOT")) {
+				steam_set_achievement("ACH_MULTIKILL_1SHOT");
+				steam_update();
+			}
+		}
+		if (global.blackjackPlays >= 20) {
+			if (!steam_get_achievement("ACH_GAMBLE_ADDICT")) {
+				steam_set_achievement("ACH_GAMBLE_ADDICT");
+				steam_update();
+			}
+		}
+		if (global.succDashes >= 10) {
+			if (!steam_get_achievement("ACH_DASH_10X")) {
+				steam_set_achievement("ACH_DASH_10X");
+				steam_update();
+			}
+		}
+		if (global.airtime >= 10) {
+			if (!steam_get_achievement("ACH_AIRTIME_10S")) {
+				steam_set_achievement("ACH_AIRTIME_10S");
+				steam_update();
+			}
+		}
+	}
+}
+
 //Audio Pitch
 audio_sound_pitch(pistolShot_snd, clamp(1 * global.timeScale, 0.5, 1.5));
 audio_sound_pitch(dualBarettasShot_snd, clamp(1 * global.timeScale, 0.5, 1.5));

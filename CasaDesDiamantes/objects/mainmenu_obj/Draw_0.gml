@@ -14,7 +14,7 @@ draw_text(global.xScreenSize / 2, optionsY[2], "Settings");
 draw_text(global.xScreenSize / 2, optionsY[3], "Exit");
 
 draw_set_halign(fa_right);
-draw_text(global.xScreenSize - 24, global.yScreenSize - 16, "DEMO v.1.10.1");
+draw_text(global.xScreenSize - 24, global.yScreenSize - 16, "MAIN v.1.0");
 draw_set_halign(fa_center);
 //draw_text(global.xScreenSize / 2, global.yScreenSize - 16, "Mouse & Keyboard Recommended");
 draw_set_halign(fa_left);
@@ -88,6 +88,7 @@ if (drawStartMenu) {
 										global.reachedCasino = false;					
 										global.spawn = 0;
 										global.money = 0;
+										global.deaths = 0;
 										global.skin = 0;
 										global.syringes = 0;
 										global.room = noone;
@@ -109,6 +110,7 @@ if (drawStartMenu) {
 										global.level5AArena2Done = false;
 										global.level5BArena3Done = false;
 										global.level4DoorOpen = false;
+										global.playtime = 0;
 
 										global.shotgunUpgrade1 = false;
 										global.shotgunUpgrade2 = false;
@@ -246,6 +248,7 @@ if (drawStartMenu) {
 				global.reachedCasino = false;					
 				global.spawn = 0;
 				global.money = 0;
+				global.deaths = 0;
 				global.skin = 0;
 				global.syringes = 0;
 				global.room = noone;
@@ -263,6 +266,7 @@ if (drawStartMenu) {
 				global.multiplierTimerSave = global.multiplierTimer;
 				global.timer = 0;
 				global.drawTutorialInfectionUsed = false;
+				global.playtime = 0;
 				global.level5AArena1Done = false;
 				global.level5AArena2Done = false;
 				global.level5BArena3Done = false;
