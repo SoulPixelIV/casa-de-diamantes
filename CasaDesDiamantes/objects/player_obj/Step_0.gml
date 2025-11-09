@@ -53,6 +53,18 @@ if (key_escape && !pauseDelayStart && hp > 0 && !dialogueSystem_obj.inCutscene &
 	}
 }
 
+if (steam_initialised()) {
+	if (steam_is_overlay_activated() && !pauseDelayStart && hp > 0 && !dialogueSystem_obj.inCutscene && camera_obj.blackscreenStrength < 0.1 && !deathActivated && !camera_obj.cameraTrainCutscene && room != level28 && (movement || sittingInMinecart)) {
+		global.pause = true;
+		camera_obj.pauseScreen = 0;
+		camera_obj.cursorPos = 0;
+		pauseDelayStart = true;
+		if (audio_is_playing(minecart_snd)) {
+			audio_stop_sound(minecart_snd);
+		}
+	}
+}
+
 if (pauseDelayStart) {
 	pauseDelay -= global.dtNoSlowmo;
 }
