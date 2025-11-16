@@ -1850,12 +1850,14 @@ if (damageCooldown < 0)
 	}
 }
 
-if (infection > hp) {
-	if (steam_initialised()) {
-		if (steam_stats_ready()) {
-			if (!steam_get_achievement("ACH_INFECTION_DEATH")) {
-				steam_set_achievement("ACH_INFECTION_DEATH");
-				steam_update();
+if (plagueTransformation) {
+	if (infection > hp) {
+		if (steam_initialised()) {
+			if (steam_stats_ready()) {
+				if (!steam_get_achievement("ACH_INFECTION_DEATH")) {
+					steam_set_achievement("ACH_INFECTION_DEATH");
+					steam_update();
+				}
 			}
 		}
 	}
