@@ -49,11 +49,11 @@ global.level5AArena1Done = false;
 global.level5AArena2Done = false;
 global.level5BArena3Done = false;
 
-global.shotgunUpgrade1 = false;
-global.shotgunUpgrade2 = false;
+global.shotgunUpgrade1 = true;
+global.shotgunUpgrade2 = true;
 
-global.dualBarettasUpgrade1 = false;
-global.dualBarettasUpgrade2 = false;
+global.dualBarettasUpgrade1 = true;
+global.dualBarettasUpgrade2 = true;
 
 global.silencedMPUpgrade1 = true;
 global.silencedMPUpgrade2 = true;
