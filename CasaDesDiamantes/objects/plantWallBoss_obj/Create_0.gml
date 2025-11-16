@@ -8,7 +8,12 @@ startBattle = false;
 destroyedCollider = false;
 
 frozen = false;
-freezeRes = 9999999;
+freezeRes = 4; //24
+icecicleAttackTimer = 200;
+
+burnt = false;
+burnRes = 4;
+burnTimer = 75;
 
 attackTimer = 800;
 attackTimer2 = 1500;
@@ -42,3 +47,12 @@ attackTintDelay = -1;
 fakegroundDestroyTimer = 200;
 
 randNum = choose(4,6);
+
+//Create Emitter
+emitter = audio_emitter_create();
+audio_max_distance = 400;
+audio_drop_start = 150;
+
+audio_falloff_set_model(audio_falloff_linear_distance);
+audio_emitter_position(emitter, x, y, 0);
+audio_emitter_falloff(emitter, audio_drop_start, audio_max_distance, 1);

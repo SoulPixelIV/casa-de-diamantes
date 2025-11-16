@@ -99,3 +99,30 @@ if (startBattle) {
 		}
 	}
 }
+
+//Sound Position
+audio_emitter_position(emitter, x, y, 0);
+
+//Frozen
+if (frozen) {
+	image_blend = make_color_rgb(120, 120, 255);
+	
+	//Icecicle Shot
+	if (global.dualBarettasUpgrade2) {
+		icecicleAttackTimer -= global.dt;
+		if (icecicleAttackTimer < 0) {
+			audio_play_sound_on(emitter, icecicleShot_snd, false, false);
+			icecicle = instance_create_layer(x + random_range(-156, 156), y, "Instances", icecicle_obj);
+			icecicle.dir = random_range(270, 359);
+			icecicleAttackTimer = 200 + random_range(-30, 30);
+		}
+	}
+} else {
+	if (!damageTint && !attackTint) {
+		image_blend = c_white;
+	}
+}
+
+if (freezeRes <= 0) {
+	frozen = true;
+}
