@@ -8,12 +8,16 @@ startBattle = false;
 destroyedCollider = false;
 
 frozen = false;
-freezeRes = 4; //24
+freezeRes = 22;
 icecicleAttackTimer = 200;
 
 burnt = false;
-burnRes = 4;
+burnRes = 12;
 burnTimer = 75;
+burnTimerSave = burnTimer;
+
+hitable = true;
+damageRes = 1;
 
 attackTimer = 800;
 attackTimer2 = 1500;
@@ -56,3 +60,6 @@ audio_drop_start = 150;
 audio_falloff_set_model(audio_falloff_linear_distance);
 audio_emitter_position(emitter, x, y, 0);
 audio_emitter_falloff(emitter, audio_drop_start, audio_max_distance, 1);
+
+//Particle System
+partEmitter = part_emitter_create(global.partSystem);

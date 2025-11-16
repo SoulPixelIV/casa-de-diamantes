@@ -58,8 +58,8 @@ global.dualBarettasUpgrade2 = true;
 global.silencedMPUpgrade1 = true;
 global.silencedMPUpgrade2 = true;
 
-global.sniperUpgrade1 = false;
-global.sniperUpgrade2 = false;
+global.sniperUpgrade1 = true;
+global.sniperUpgrade2 = true;
 
 global.cupyUpgrade1 = false;
 global.cupyUpgrade2 = false;
