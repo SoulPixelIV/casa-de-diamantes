@@ -85,9 +85,13 @@ if (steam_initialised()) {
 			}
 		}
 		if (global.airtime >= 10) {
-			if (!steam_get_achievement("ACH_AIRTIME_10S")) {
-				steam_set_achievement("ACH_AIRTIME_10S");
-				steam_update();
+			if (instance_exists(player_obj)) {
+				if (!player_obj.inCutscene) {
+					if (!steam_get_achievement("ACH_AIRTIME_10S")) {
+						steam_set_achievement("ACH_AIRTIME_10S");
+						steam_update();
+					}
+				}
 			}
 		}
 	}
