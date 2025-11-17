@@ -48,6 +48,7 @@
     {"name":"inst_47032160","path":"rooms/level_BasementConsumed/level_BasementConsumed.yy",},
     {"name":"inst_36E20471","path":"rooms/level_BasementConsumed/level_BasementConsumed.yy",},
     {"name":"inst_7C6E0A8","path":"rooms/level_BasementConsumed/level_BasementConsumed.yy",},
+    {"name":"inst_47370B79","path":"rooms/level_BasementConsumed/level_BasementConsumed.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -69,6 +70,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_2824485E_1_1_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"dialogueSystem_obj","path":"objects/dialogueSystem_obj/dialogueSystem_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":384.0,"y":864.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_47032160","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"komoTristramConsumedDialogue","path":"objects/komoTristramConsumedDialogue/komoTristramConsumedDialogue.yy",},"properties":[],"rotation":0.0,"scaleX":1.75,"scaleY":11.0,"x":854.0,"y":1297.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7C6E0A8","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"consumedBasement_level25_teleporter","path":"objects/consumedBasement_level25_teleporter/consumedBasement_level25_teleporter.yy",},"properties":[],"rotation":0.0,"scaleX":5.0,"scaleY":11.0,"x":1152.0,"y":1296.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_47370B79","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"goArrow_obj","path":"objects/goArrow_obj/goArrow_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":992.0,"y":1312.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMREffectLayer","resourceVersion":"1.0","name":"RedFilter","depth":400,"effectEnabled":true,"effectType":"_filter_colourise","gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[
         {"name":"g_Intensity","type":0,"value":"0.3",},
