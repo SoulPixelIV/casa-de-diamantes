@@ -18,6 +18,4 @@ function blackjackConverter_scr(argument0) {
 	{
 		return (real(chosenChar));
 	}
-
-
 }

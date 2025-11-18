@@ -139,7 +139,7 @@ if (screen == 4 && !transactionComplete)
 			playedSound = true;
 		}
 	}
-	else if ((playerSum - (10 * numberofAces)) > (dealerSum - (10 * numberofAcesDealer)))
+	else if (playerSum > dealerSum)
 	{
 		//WIN NORMAL
 		global.money += moneypool * 2;
@@ -166,7 +166,7 @@ if (screen == 4 && !transactionComplete)
 			playedSound = true;
 		}
 	}
-	else if ((playerSum - (10 * numberofAces)) < (dealerSum - (10 * numberofAcesDealer)))
+	else if (playerSum < dealerSum)
 	{
 		//LOOSE
 		if (!playedSound) {
