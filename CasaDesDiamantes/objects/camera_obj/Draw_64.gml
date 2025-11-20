@@ -1711,9 +1711,9 @@ if (showWindowMenu)
 									if (global.money >= 2250) {
 										if (global.syringes < 5) {
 											global.syringes += 1;
-										}
-										audio_play_sound(buying_snd, 1, false);
-										global.money -= 2250;
+											audio_play_sound(buying_snd, 1, false);
+											global.money -= 2250;
+										}	
 									}
 								break;
 							}
@@ -1739,9 +1739,9 @@ if (showWindowMenu)
 					audio_play_sound(typewriterPush_snd, 1, false);
 					if (global.syringes < 5) {
 						global.syringes += 1;
+						audio_play_sound(buying_snd, 1, false);
+						global.money -= 2250;
 					}
-					audio_play_sound(buying_snd, 1, false);
-					global.money -= 2250;
 				}
 			}
 			if (barkeeperWindowIndex == 1) {
