@@ -846,7 +846,7 @@ if (!place_meeting(x, y, toxicwaste_obj)) {
 }
 	
 //Audio
-audio_listener_position(x, y, 0);
+//audio_listener_position(x, y, 0);
 
 if (isDashing && grounded && horspeed != 0)
 {
