@@ -49,17 +49,17 @@ global.level5AArena1Done = false;
 global.level5AArena2Done = false;
 global.level5BArena3Done = false;
 
-global.shotgunUpgrade1 = true;
-global.shotgunUpgrade2 = true;
+global.shotgunUpgrade1 = false;
+global.shotgunUpgrade2 = false;
 
-global.dualBarettasUpgrade1 = true;
-global.dualBarettasUpgrade2 = true;
+global.dualBarettasUpgrade1 = false;
+global.dualBarettasUpgrade2 = false;
 
-global.silencedMPUpgrade1 = true;
-global.silencedMPUpgrade2 = true;
+global.silencedMPUpgrade1 = false;
+global.silencedMPUpgrade2 = false;
 
-global.sniperUpgrade1 = true;
-global.sniperUpgrade2 = true;
+global.sniperUpgrade1 = false;
+global.sniperUpgrade2 = false;
 
 global.cupyUpgrade1 = false;
 global.cupyUpgrade2 = false;

@@ -8,8 +8,8 @@ switch (frame) {
 	case 2:
 		if (!global.dualBarettasUpgrade1) {
 			nameText = "Ice HP\nBullets";
-			priceText = "1350$";
-			price = 1350;
+			priceText = "1680$";
+			price = 1680;
 			twolinemode = true;
 		} else {
 			nameText = "Ice HP\nBullets";
@@ -19,7 +19,7 @@ switch (frame) {
 		}
 	break;
 	case 3:
-		price = 1920;
+		price = 2400;
 		
 		if (!global.dualBarettasUpgrade2) {
 			if (!global.dualBarettasUpgrade1) {
@@ -32,7 +32,7 @@ switch (frame) {
 			} else {
 				twolinemode = true;
 				nameText = "Freeze\nBreakshot";
-				priceText = "1920$";
+				priceText = "2400$";
 				if (!used && !mouseEntered) {
 					image_index = frame;
 				}
@@ -50,8 +50,8 @@ switch (frame) {
 	case 4:
 		if (!global.shotgunUpgrade1) {
 			nameText = "Inf. Range\nShots";
-			priceText = "1850$";
-			price = 1850;
+			priceText = "2300$";
+			price = 2300;
 			twolinemode = true;
 		} else {
 			nameText = "Inf. Range\nShots";
@@ -61,7 +61,7 @@ switch (frame) {
 		}
 	break;
 	case 5:
-		price = 2430;
+		price = 3000;
 		twolinemode = true;
 		
 		if (!global.shotgunUpgrade2) {
@@ -75,7 +75,7 @@ switch (frame) {
 			} else {
 				twolinemode = true;
 				nameText = "Ricochet H\nBullets";
-				priceText = "2430$";
+				priceText = "3000$";
 				if (!used && !mouseEntered) {
 					image_index = frame;
 				}
@@ -102,7 +102,7 @@ switch (frame) {
 		}
 	break;
 	case 7:
-		price = 3450;
+		price = 4300;
 		twolinemode = true;
 		
 		if (!global.cupyUpgrade2) {
@@ -116,7 +116,7 @@ switch (frame) {
 			} else {
 				twolinemode = true;
 				nameText = "CuPy Drone\nLaser";
-				priceText = "3450$";
+				priceText = "4300$";
 				if (!used && !mouseEntered) {
 					image_index = frame;
 				}
@@ -134,8 +134,8 @@ switch (frame) {
 	case 8:
 		if (!global.silencedMPUpgrade1) {
 			nameText = "Flame AP\nBullets";
-			priceText = "3400$";
-			price = 3400;
+			priceText = "4250$";
+			price = 4250;
 			twolinemode = true;
 		} else {
 			nameText = "Flame AP\nBullets";
@@ -145,7 +145,7 @@ switch (frame) {
 		}
 	break;
 	case 9:
-		price = 5000;
+		price = 6250;
 		
 		if (!global.silencedMPUpgrade2) {
 			if (!global.silencedMPUpgrade1) {
@@ -158,7 +158,7 @@ switch (frame) {
 			} else {
 				twolinemode = true;
 				nameText = "Flame\nDispenser";
-				priceText = "5000$";
+				priceText = "6250$";
 				if (!used && !mouseEntered) {
 					image_index = frame;
 				}
@@ -176,8 +176,8 @@ switch (frame) {
 	case 10:
 		if (!global.sniperUpgrade1) {
 			nameText = "Split\nBullets";
-			priceText = "4200$";
-			price = 4200;
+			priceText = "5250$";
+			price = 5250;
 			twolinemode = true;
 		} else {
 			nameText = "Split\nBullets";
@@ -187,7 +187,7 @@ switch (frame) {
 		}
 	break;
 	case 11:
-		price = 5500;
+		price = 6875;
 		
 		if (!global.sniperUpgrade2) {
 			if (!global.sniperUpgrade1) {
@@ -200,7 +200,7 @@ switch (frame) {
 			} else {
 				twolinemode = true;
 				nameText = "Healing\nAura";
-				priceText = "5500$";
+				priceText = "6875$";
 				if (!used && !mouseEntered) {
 					image_index = frame;
 				}
