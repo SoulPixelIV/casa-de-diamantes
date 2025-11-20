@@ -1,7 +1,7 @@
 var enemyTarget = instance_place(x, y, explosiveBarrel_obj);
 if (!dealtDamage && instance_exists(enemyTarget) && other.hitable)
 {
-	enemyTarget.lastBullet = bulletPistol_obj;
+	enemyTarget.lastBullet = bulletSniper_obj;
 	enemyTarget.damageTint = true;
 	enemyTarget.hp -= damage;
 	enemyTarget.headshot = false;

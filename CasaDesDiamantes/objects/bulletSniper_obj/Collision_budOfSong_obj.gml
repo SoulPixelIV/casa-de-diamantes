@@ -1,7 +1,7 @@
 var enemyTarget = instance_place(x, y, budOfSong_obj);
 if (!dealtDamage && instance_exists(enemyTarget) && other.hitable)
 {
-	enemyTarget.lastBullet = bulletPistol_obj;
+	enemyTarget.lastBullet = bulletSniper_obj;
 	enemyTarget.damageTint = true;
 	enemyTarget.hp -= damage / enemyTarget.damageRes;
 	enemyTarget.headshot = false;
