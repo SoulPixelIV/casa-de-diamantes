@@ -2,15 +2,13 @@ draw_set_font(gothicPixel_fnt);
 draw_set_halign(fa_left);
 draw_set_color(make_color_rgb(255, 215, 0));
 if (menu == 0) {
-	draw_text(global.xScreenSize / 3, optionsY[0], "Tutorial");
-	draw_text(global.xScreenSize / 3, optionsY[1], "Casa De Diamantes");
-	draw_text(global.xScreenSize / 3, optionsY[2], "Warpzones");
-	draw_text(global.xScreenSize / 3, optionsY[3], "[Act1] Paredia");
-	draw_text(global.xScreenSize / 3, optionsY[4], "[Act2] Senzela Forest");
-	draw_text(global.xScreenSize / 3, optionsY[5], "[Act3] Endless Depths");
-	draw_text(global.xScreenSize / 3, optionsY[6], "[Act4] EDEN Powerplant");
-	draw_text(global.xScreenSize / 3, optionsY[7], "[Act5] Strato Train Station");
-	draw_text(global.xScreenSize / 3, optionsY[8], "[Act6] Mothers Womb");
+	draw_text(global.xScreenSize / 3, optionsY[0], "Casa De Diamantes");
+	draw_text(global.xScreenSize / 3, optionsY[1], "[Act1] Paredia");
+	draw_text(global.xScreenSize / 3, optionsY[2], "[Act2] Senzela Forest");
+	draw_text(global.xScreenSize / 3, optionsY[3], "[Act3] Endless Depths");
+	draw_text(global.xScreenSize / 3, optionsY[4], "[Act4] EDEN Powerplant");
+	draw_text(global.xScreenSize / 3, optionsY[5], "[Act5] Strato Train Station");
+	draw_text(global.xScreenSize / 3, optionsY[6], "[Act6] Mothers Womb");
 } else if (menu == 1) {
 	draw_text(global.xScreenSize / 3, optionsY[0], "[Level 1] Paredia");
 	draw_text(global.xScreenSize / 3, optionsY[1], "[Level 2] Paredia Streets");
@@ -56,6 +54,13 @@ if (menu == 0) {
 draw_set_halign(fa_center);
 draw_text(240, 32, "-Level Select-");
 
-//Draw cursor
+//Draw Menu Chip
 cursorImage += global.dt / 16;
 draw_sprite(chipRed_spr, cursorImage, global.xScreenSize / 3 - 20, optionsY[cursorPos] + 4);
+
+//Cursor
+if (inputMethod == 0) {
+	draw_sprite(mousecursor_spr, 0, 
+		(window_mouse_get_x() / ((window_get_width()+1) / global.xScreenSize)) + (0), 
+		window_mouse_get_y() / ((window_get_height()+1) / global.yScreenSize) + (0));
+}
