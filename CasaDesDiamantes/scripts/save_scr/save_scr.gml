@@ -4,7 +4,7 @@ function save_scr(){
 	ini_open("save1");
 	
 	if (room == level0 || room == level1 || room == level2 || room == level3 || room == level_Casino || room == level_CasinoRoof || room == level_Basement || room == level_BasementConsumed || room == level_ConsumedCasino || room == level_DiningHall || room == level_TristramRoom || room == level4 || room == level5A || room == level5B || room == level6 || room == level7 || room == level8 || room == level9 || room == warpzone1 || room == level10 || room == level11 || room == level12 || room == level13 || room == level14 || room == warpzone2 || room == level15 || room == level16 || room == level17 || room == level18 || room == level19 || room == warpzone3 || room == level20 || room == level21 || room == level22 || room == level23 || room == level24 || room == level25 || room == level26 || room == level27) {
-		ini_write_real("save1", "room", room);
+		ini_write_string("save1", "room", room_get_name(room));
 	}
 	
 	ini_write_real("save1", "spawn", global.spawn);
@@ -55,7 +55,6 @@ function save_scr(){
 	ini_write_real("save1", "dinnerDialogue", global.dinnerDialogue);
 	ini_write_real("save1", "shownVIPIntro", global.introDialogueVIPDone);
 	ini_write_real("save1", "shownOutOfRoomIntro", global.introDialogueOutOfRoomDone);
-	ini_write_real("save1", "firstmeetingDialogue", global.firstmeetingDialogue);
 	ini_write_real("save1", "firstmeetingDialogue", global.firstmeetingDialogue);
 	
 	ini_write_real("save1", "komoGamblingDialogueDone", global.komoGamblingDialogueDone);

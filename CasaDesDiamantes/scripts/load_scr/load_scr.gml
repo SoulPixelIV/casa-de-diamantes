@@ -1,7 +1,21 @@
 function load_scr(){
 	ini_open("save1");
 	
-	global.room = ini_read_real("save1", "room", level0);
+	var rm_name = ini_read_string("save1", "room", "level0");
+	
+	// erzwinge string
+	rm_name = string(rm_name);
+	
+	// Jetzt den Raum holen
+	var rm_index = asset_get_index(rm_name);
+	
+	// wenn ungültig → fallback
+	if (rm_index < 0 || !room_exists(rm_index)) {
+	    rm_index = asset_get_index("level0");
+	}
+	
+	global.room = rm_index;
+		
 	global.spawn = ini_read_real("save1", "spawn", 0);
 	global.money = ini_read_real("save1", "money", 0);
 	global.diamonds = ini_read_real("save1", "diamonds", 0);
@@ -50,7 +64,6 @@ function load_scr(){
 	global.introDialogueVIPDone = ini_read_real("save1", "shownVIPIntro", false);
 	global.introDialogueOutOfRoomDone = ini_read_real("save1", "shownOutOfRoomIntro", false);
 	global.dinnerDialogue = ini_read_real("save1", "dinnerDialogue", false);
-	global.firstmeetingDialogue = ini_read_real("save1", "firstmeetingDialogue", false);
 	global.firstmeetingDialogue = ini_read_real("save1", "firstmeetingDialogue", false);
 	
 	global.komoGamblingDialogueDone = ini_read_real("save1", "komoGamblingDialogueDone", false);
@@ -131,4 +144,10 @@ function load_scr(){
 	global.drawMission = ini_read_real("save1", "drawMission", false);
 	
 	ini_close();
+	
+	if (room_exists(global.room)) {
+	    room_goto(global.room);
+	} else {
+	    room_goto("level0");
+	}
 }

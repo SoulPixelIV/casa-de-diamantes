@@ -10,7 +10,9 @@ if (!gotSpawned)
 	gotSpawned = true;
 }
 
-dirLookat = point_direction(x, y, player_obj.x, player_obj.y);
+if (instance_exists(player_obj)) {
+	dirLookat = point_direction(x, y, player_obj.x, player_obj.y);
+}
 
 //Walking Animation
 if (horspeed != 0 && !attackInProg1 && !attackInProg2) {
