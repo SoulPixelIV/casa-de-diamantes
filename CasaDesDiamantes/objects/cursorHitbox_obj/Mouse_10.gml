@@ -1,7 +1,7 @@
 open = true;
 if (room == mainmenu) {
 	if (mainmenu_obj.cursorPos != index) {
-		if (index != 5) {
+		if (index != 5 && index != 6) {
 			audio_play_sound(typewriter_snd, 1, false);
 		} else {
 			if (mainmenu_obj.drawStartMenu) {

@@ -2084,6 +2084,7 @@
     {"name":"transitionScreen","order":4,"path":"rooms/transitionScreen/transitionScreen.yy",},
     {"name":"trapdoorClosed_obj","order":5,"path":"objects/trapdoorClosed_obj/trapdoorClosed_obj.yy",},
     {"name":"trapdoorOpen_obj","order":6,"path":"objects/trapdoorOpen_obj/trapdoorOpen_obj.yy",},
+    {"name":"loadNoRoom_scr","order":32,"path":"scripts/loadNoRoom_scr/loadNoRoom_scr.yy",},
     {"name":"checkpoint_obj","order":16,"path":"objects/checkpoint_obj/checkpoint_obj.yy",},
     {"name":"triggerBlockA_obj","order":1,"path":"objects/triggerBlockA_obj/triggerBlockA_obj.yy",},
     {"name":"triggerBlockB_obj","order":2,"path":"objects/triggerBlockB_obj/triggerBlockB_obj.yy",},

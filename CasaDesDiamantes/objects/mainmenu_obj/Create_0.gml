@@ -9,6 +9,7 @@ cursorImage = 0;
 
 drawStartMenu = false;
 drawSkipMenu = false;
+drawWarningMenu = false;
 startMenuElement = 1;
 
 buttonBuffer = 120;

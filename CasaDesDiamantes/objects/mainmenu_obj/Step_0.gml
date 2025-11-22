@@ -32,9 +32,28 @@ if (instance_exists(cursorHitbox_obj)) {
 						switch (cursorPos)
 						{
 							case 0:
-								if (file_exists("save1")) {
-									load_scr();
+								ini_open("save1");
+	
+								var rm_name = ini_read_string("save1", "room", "level0");
+	
+								// erzwinge string
+								rm_name = string(rm_name);
+	
+								// Jetzt den Raum holen
+								var rm_index = asset_get_index(rm_name);
+	
+								// wenn ungültig → fallback
+								if (rm_index < 0 || !room_exists(rm_index)) {
+								    drawWarningMenu = true;
+								} else {
+									if (file_exists("save1")) {
+										load_scr();
+									} else {
+										drawWarningMenu = true;
+									}
 								}
+								
+								ini_close();								
 							break;
 							case 1:
 								buttonBufferStart = true;
@@ -89,9 +108,28 @@ if (!drawStartMenu) {
 		switch (cursorPos)
 		{
 			case 0:
-				if (file_exists("save1")) {
-					load_scr();
+				ini_open("save1");
+	
+				var rm_name = ini_read_string("save1", "room", "level0");
+	
+				// erzwinge string
+				rm_name = string(rm_name);
+	
+				// Jetzt den Raum holen
+				var rm_index = asset_get_index(rm_name);
+	
+				// wenn ungültig → fallback
+				if (rm_index < 0 || !room_exists(rm_index)) {
+					drawWarningMenu = true;
+				} else {
+					if (file_exists("save1")) {
+						load_scr();
+					} else {
+						drawWarningMenu = true;
+					}
 				}
+								
+				ini_close();
 			break;
 			case 1:
 				buttonBufferStart = true;

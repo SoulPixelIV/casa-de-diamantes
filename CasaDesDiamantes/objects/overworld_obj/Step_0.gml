@@ -31,6 +31,7 @@ if (instance_exists(cursorHitboxLevelSelect_obj)) {
 							switch (cursorPos)
 							{
 								case 0:
+									loadNoRoom_scr();
 									room_goto(level_Casino);
 									global.lastCheckpoint = noone;
 								break;
@@ -69,14 +70,17 @@ if (instance_exists(cursorHitboxLevelSelect_obj)) {
 							switch (cursorPos)
 							{
 								case 0:
+									loadNoRoom_scr();
 									room_goto(level1);
 									global.lastCheckpoint = noone;
 								break;
 								case 1:
+									loadNoRoom_scr();
 									room_goto(level2);
 									global.lastCheckpoint = noone;
 								break;
 								case 2:
+									loadNoRoom_scr();
 									room_goto(level3);
 									global.lastCheckpoint = noone;
 								break;
@@ -85,30 +89,37 @@ if (instance_exists(cursorHitboxLevelSelect_obj)) {
 							switch (cursorPos)
 							{
 								case 0:
+									loadNoRoom_scr();
 									room_goto(level4);
 									global.lastCheckpoint = noone;
 								break;
 								case 1:
+									loadNoRoom_scr();
 									room_goto(level5A);
 									global.lastCheckpoint = noone;
 								break;
 								case 2:
+									loadNoRoom_scr();
 									room_goto(level5B);
 									global.lastCheckpoint = noone;
 								break;
 								case 3:
+									loadNoRoom_scr();
 									room_goto(level6);
 									global.lastCheckpoint = noone;
 								break;
 								case 4:
+									loadNoRoom_scr();
 									room_goto(level7);
 									global.lastCheckpoint = noone;
 								break;
 								case 5:
+									loadNoRoom_scr();
 									room_goto(level8);
 									global.lastCheckpoint = noone;
 								break;
 								case 6:
+									loadNoRoom_scr();
 									room_goto(level9);
 									global.lastCheckpoint = noone;
 								break;
@@ -117,22 +128,27 @@ if (instance_exists(cursorHitboxLevelSelect_obj)) {
 							switch (cursorPos)
 							{
 								case 0:
+									loadNoRoom_scr();
 									room_goto(level10);
 									global.lastCheckpoint = noone;
 								break;
 								case 1:
+									loadNoRoom_scr();
 									room_goto(level11);
 									global.lastCheckpoint = noone;
 								break;
 								case 2:
+									loadNoRoom_scr();
 									room_goto(level12);
 									global.lastCheckpoint = noone;
 								break;
 								case 3:
+									loadNoRoom_scr();
 									room_goto(level13);
 									global.lastCheckpoint = noone;
 								break;
 								case 4:
+									loadNoRoom_scr();
 									room_goto(level14);
 									global.lastCheckpoint = noone;
 								break;
@@ -141,14 +157,17 @@ if (instance_exists(cursorHitboxLevelSelect_obj)) {
 							switch (cursorPos)
 							{
 								case 0:
+									loadNoRoom_scr();
 									room_goto(warpzone1);
 									global.lastCheckpoint = noone;
 								break;
 								case 1:
+									loadNoRoom_scr();
 									room_goto(warpzone2);
 									global.lastCheckpoint = noone;
 								break;
 								case 2:
+									loadNoRoom_scr();
 									room_goto(warpzone3);
 									global.lastCheckpoint = noone;
 								break;
@@ -157,22 +176,27 @@ if (instance_exists(cursorHitboxLevelSelect_obj)) {
 							switch (cursorPos)
 							{
 								case 0:
+									loadNoRoom_scr();
 									room_goto(weaponRemove);
 									global.lastCheckpoint = noone;
 								break;
 								case 1:
+									loadNoRoom_scr();
 									room_goto(level16);
 									global.lastCheckpoint = noone;
 								break;
 								case 2:
+									loadNoRoom_scr();
 									room_goto(level17);
 									global.lastCheckpoint = noone;
 								break;
 								case 3:
+									loadNoRoom_scr();
 									room_goto(level18);
 									global.lastCheckpoint = noone;
 								break;
 								case 4:
+									loadNoRoom_scr();
 									room_goto(level19);
 									global.lastCheckpoint = noone;
 								break;
@@ -181,22 +205,27 @@ if (instance_exists(cursorHitboxLevelSelect_obj)) {
 							switch (cursorPos)
 							{
 								case 0:
+									loadNoRoom_scr();
 									room_goto(level20);
 									global.lastCheckpoint = noone;
 								break;
 								case 1:
+									loadNoRoom_scr();
 									room_goto(level21);
 									global.lastCheckpoint = noone;
 								break;
 								case 2:
+									loadNoRoom_scr();
 									room_goto(level22);
 									global.lastCheckpoint = noone;
 								break;
 								case 3:
+									loadNoRoom_scr();
 									room_goto(level23);
 									global.lastCheckpoint = noone;
 								break;
 								case 4:
+									loadNoRoom_scr();
 									room_goto(level24);
 									global.lastCheckpoint = noone;
 								break;
@@ -205,22 +234,27 @@ if (instance_exists(cursorHitboxLevelSelect_obj)) {
 							switch (cursorPos)
 							{
 								case 0:
+									loadNoRoom_scr();
 									room_goto(level_ConsumedCasino);
 									global.lastCheckpoint = noone;
 								break;
 								case 1:
+									loadNoRoom_scr();
 									room_goto(level25);
 									global.lastCheckpoint = noone;
 								break;
 								case 2:
+									loadNoRoom_scr();
 									room_goto(level26);
 									global.lastCheckpoint = noone;
 								break;
 								case 3:
+									loadNoRoom_scr();
 									room_goto(level27);
 									global.lastCheckpoint = noone;
 								break;
 								case 4:
+									loadNoRoom_scr();
 									room_goto(level28);
 									global.lastCheckpoint = noone;
 								break;
@@ -288,6 +322,7 @@ if (pushDelay < 0) {
 			switch (cursorPos)
 			{
 				case 0:
+					loadNoRoom_scr();
 					room_goto(level_Casino);
 					global.lastCheckpoint = noone;
 				break;
@@ -326,14 +361,17 @@ if (pushDelay < 0) {
 			switch (cursorPos)
 			{
 				case 0:
+					loadNoRoom_scr();
 					room_goto(level1);
 					global.lastCheckpoint = noone;
 				break;
 				case 1:
+					loadNoRoom_scr();
 					room_goto(level2);
 					global.lastCheckpoint = noone;
 				break;
 				case 2:
+					loadNoRoom_scr();
 					room_goto(level3);
 					global.lastCheckpoint = noone;
 				break;
@@ -342,30 +380,37 @@ if (pushDelay < 0) {
 			switch (cursorPos)
 			{
 				case 0:
+					loadNoRoom_scr();
 					room_goto(level4);
 					global.lastCheckpoint = noone;
 				break;
 				case 1:
+					loadNoRoom_scr();
 					room_goto(level5A);
 					global.lastCheckpoint = noone;
 				break;
 				case 2:
+					loadNoRoom_scr();
 					room_goto(level5B);
 					global.lastCheckpoint = noone;
 				break;
 				case 3:
+					loadNoRoom_scr();
 					room_goto(level6);
 					global.lastCheckpoint = noone;
 				break;
 				case 4:
+					loadNoRoom_scr();
 					room_goto(level7);
 					global.lastCheckpoint = noone;
 				break;
 				case 5:
+					loadNoRoom_scr();
 					room_goto(level8);
 					global.lastCheckpoint = noone;
 				break;
 				case 6:
+					loadNoRoom_scr();
 					room_goto(level9);
 					global.lastCheckpoint = noone;
 				break;
@@ -374,22 +419,27 @@ if (pushDelay < 0) {
 			switch (cursorPos)
 			{
 				case 0:
+					loadNoRoom_scr();
 					room_goto(level10);
 					global.lastCheckpoint = noone;
 				break;
 				case 1:
+					loadNoRoom_scr();
 					room_goto(level11);
 					global.lastCheckpoint = noone;
 				break;
 				case 2:
+					loadNoRoom_scr();
 					room_goto(level12);
 					global.lastCheckpoint = noone;
 				break;
 				case 3:
+					loadNoRoom_scr();
 					room_goto(level13);
 					global.lastCheckpoint = noone;
 				break;
 				case 4:
+					loadNoRoom_scr();
 					room_goto(level14);
 					global.lastCheckpoint = noone;
 				break;
@@ -398,14 +448,17 @@ if (pushDelay < 0) {
 			switch (cursorPos)
 			{
 				case 0:
+					loadNoRoom_scr();
 					room_goto(warpzone1);
 					global.lastCheckpoint = noone;
 				break;
 				case 1:
+					loadNoRoom_scr();
 					room_goto(warpzone2);
 					global.lastCheckpoint = noone;
 				break;
 				case 2:
+					loadNoRoom_scr();
 					room_goto(warpzone3);
 					global.lastCheckpoint = noone;
 				break;
@@ -414,22 +467,27 @@ if (pushDelay < 0) {
 			switch (cursorPos)
 			{
 				case 0:
+					loadNoRoom_scr();
 					room_goto(weaponRemove);
 					global.lastCheckpoint = noone;
 				break;
 				case 1:
+					loadNoRoom_scr();
 					room_goto(level16);
 					global.lastCheckpoint = noone;
 				break;
 				case 2:
+					loadNoRoom_scr();
 					room_goto(level17);
 					global.lastCheckpoint = noone;
 				break;
 				case 3:
+					loadNoRoom_scr();
 					room_goto(level18);
 					global.lastCheckpoint = noone;
 				break;
 				case 4:
+					loadNoRoom_scr();
 					room_goto(level19);
 					global.lastCheckpoint = noone;
 				break;
@@ -438,22 +496,27 @@ if (pushDelay < 0) {
 			switch (cursorPos)
 			{
 				case 0:
+					loadNoRoom_scr();
 					room_goto(level20);
 					global.lastCheckpoint = noone;
 				break;
 				case 1:
+					loadNoRoom_scr();
 					room_goto(level21);
 					global.lastCheckpoint = noone;
 				break;
 				case 2:
+					loadNoRoom_scr();
 					room_goto(level22);
 					global.lastCheckpoint = noone;
 				break;
 				case 3:
+					loadNoRoom_scr();
 					room_goto(level23);
 					global.lastCheckpoint = noone;
 				break;
 				case 4:
+					loadNoRoom_scr();
 					room_goto(level24);
 					global.lastCheckpoint = noone;
 				break;
@@ -462,22 +525,27 @@ if (pushDelay < 0) {
 			switch (cursorPos)
 			{
 				case 0:
+					loadNoRoom_scr();
 					room_goto(level_ConsumedCasino);
 					global.lastCheckpoint = noone;
 				break;
 				case 1:
+					loadNoRoom_scr();
 					room_goto(level25);
 					global.lastCheckpoint = noone;
 				break;
 				case 2:
+					loadNoRoom_scr();
 					room_goto(level26);
 					global.lastCheckpoint = noone;
 				break;
 				case 3:
+					loadNoRoom_scr();
 					room_goto(level27);
 					global.lastCheckpoint = noone;
 				break;
 				case 4:
+					loadNoRoom_scr();
 					room_goto(level28);
 					global.lastCheckpoint = noone;
 				break;

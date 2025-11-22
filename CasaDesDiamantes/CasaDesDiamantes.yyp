@@ -2326,6 +2326,7 @@
     {"id":{"name":"transitionScreen","path":"rooms/transitionScreen/transitionScreen.yy",},},
     {"id":{"name":"trapdoorClosed_obj","path":"objects/trapdoorClosed_obj/trapdoorClosed_obj.yy",},},
     {"id":{"name":"trapdoorOpen_obj","path":"objects/trapdoorOpen_obj/trapdoorOpen_obj.yy",},},
+    {"id":{"name":"loadNoRoom_scr","path":"scripts/loadNoRoom_scr/loadNoRoom_scr.yy",},},
     {"id":{"name":"checkpoint_obj","path":"objects/checkpoint_obj/checkpoint_obj.yy",},},
     {"id":{"name":"triggerBox_obj","path":"objects/triggerBox_obj/triggerBox_obj.yy",},},
     {"id":{"name":"triggerBlockA_obj","path":"objects/triggerBlockA_obj/triggerBlockA_obj.yy",},},

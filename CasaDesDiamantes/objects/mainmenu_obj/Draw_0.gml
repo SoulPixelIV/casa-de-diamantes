@@ -30,6 +30,17 @@ if (!drawStartMenu) {
 	draw_sprite(chipRed_spr, cursorImage, global.xScreenSize / 2 + 46, optionsY[cursorPos] + 4);
 }
 
+//Warning Window
+if (drawWarningMenu && !drawStartMenu && !drawSkipMenu) {
+	draw_sprite_ext(menuWindow_spr, 0, global.xScreenSize / 2, global.yScreenSize / 2.5, 1, 0.79, 0, -1, 1);
+	draw_set_font(gothicPixel_fnt);
+	draw_set_halign(fa_center);
+	draw_set_color(c_black);
+	draw_text(global.xScreenSize / 2 - 1, global.yScreenSize / 2.5 - 45, "Important!\nThe current save file is corrupted due to an Update.\nEverything except for the level progress is saved!\nPlease use the Level Select in the Main Menu.\nSorry for the inconvenience!");
+	draw_set_color(make_color_rgb(255, 215, 0));
+	draw_text(global.xScreenSize / 2, global.yScreenSize / 2.5 - 45, "Important!\nThe current save file is corrupted due to an Update.\nEverything except for the level progress is saved!\nPlease use the Level Select in the Main Menu.\nSorry for the inconvenience!");
+}
+
 //Start Window
 if (drawStartMenu) {
 	draw_sprite_ext(menuWindow_spr, 0, global.xScreenSize / 2, global.yScreenSize / 2.5, 1, 0.79, 0, -1, 1);
@@ -61,11 +72,11 @@ if (drawStartMenu) {
 			var hitbox = instance_find(cursorHitbox_obj, i);
 			if (instance_exists(hitbox)) {
 				if (hitbox.open) {
-					if (hitbox.index == 4 || hitbox.index == 5) {
-						if (hitbox.index == 4) {
+					if (hitbox.index == 5 || hitbox.index == 6) {
+						if (hitbox.index == 5) {
 							startMenuElement = 0;
 						}
-						if (hitbox.index == 5) {
+						if (hitbox.index == 6) {
 							startMenuElement = 1;
 						}
 				
@@ -371,11 +382,11 @@ if (drawSkipMenu) {
 			var hitbox = instance_find(cursorHitbox_obj, i);
 			if (instance_exists(hitbox)) {
 				if (hitbox.open) {
-					if (hitbox.index == 4 || hitbox.index == 5) {
-						if (hitbox.index == 4) {
+					if (hitbox.index == 5 || hitbox.index == 6) {
+						if (hitbox.index == 5) {
 							startMenuElement = 0;
 						}
-						if (hitbox.index == 5) {
+						if (hitbox.index == 6) {
 							startMenuElement = 1;
 						}
 				
