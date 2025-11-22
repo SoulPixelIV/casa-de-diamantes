@@ -13,7 +13,7 @@ draw_text(global.xScreenSize / 2, optionsY[3], "Toggle Fullscreen");
 draw_text(global.xScreenSize / 2, optionsY[4], "Back to Main Menu");
 
 draw_set_halign(fa_right);
-draw_text(global.xScreenSize - 24, global.yScreenSize - 16, "MAIN v.1.1");
+draw_text(global.xScreenSize - 24, global.yScreenSize - 16, "MAIN v.1.1A");
 draw_set_halign(fa_left);
 
 //Draw title

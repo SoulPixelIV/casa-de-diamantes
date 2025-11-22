@@ -23,7 +23,7 @@ if (instance_exists(cursorHitbox_obj)) {
 		var hitbox = instance_find(cursorHitbox_obj, i);
 		if (instance_exists(hitbox)) {
 			if (hitbox.open) {
-				if (hitbox.index < 4) {
+				if (hitbox.index < 5) {
 					cursorPos = hitbox.index;
 				
 					if (mouse_check_button_pressed(mb_left)) {
@@ -40,10 +40,14 @@ if (instance_exists(cursorHitbox_obj)) {
 								buttonBufferStart = true;
 								drawStartMenu = true;
 							break;
+							//LEVELSELECT
 							case 2:
-								room_goto(settings);
+								room_goto(settings);		
 							break;
 							case 3:
+								room_goto(settings);
+							break;
+							case 4:
 								game_end();
 							break;
 						}
@@ -94,10 +98,14 @@ if (!drawStartMenu) {
 				buttonBufferStart = true;
 				drawStartMenu = true;
 			break;
+			//LEVELSELECT
 			case 2:
 				room_goto(settings);
 			break;
 			case 3:
+				room_goto(settings);
+			break;
+			case 4:
 				game_end();
 			break;
 		}
