@@ -1,6 +1,7 @@
 xScreenSize = 480;
 yScreenSize = 270;
 image_speed = 0.02;
+inputMethod = 0;
 zoom = 3;
 menu = 0;
 xWindowSize = xScreenSize * zoom;

@@ -40,9 +40,8 @@ if (instance_exists(cursorHitbox_obj)) {
 								buttonBufferStart = true;
 								drawStartMenu = true;
 							break;
-							//LEVELSELECT
 							case 2:
-								room_goto(settings);		
+								room_goto(levelSelect);		
 							break;
 							case 3:
 								room_goto(settings);
@@ -98,9 +97,8 @@ if (!drawStartMenu) {
 				buttonBufferStart = true;
 				drawStartMenu = true;
 			break;
-			//LEVELSELECT
 			case 2:
-				room_goto(settings);
+				room_goto(levelSelect);
 			break;
 			case 3:
 				room_goto(settings);
