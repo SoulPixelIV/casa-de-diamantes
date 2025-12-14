@@ -126,6 +126,7 @@
     {"name":"No ClothesOLD","order":1,"path":"folders/Steph/Steph Sprites/No ClothesOLD.yy",},
     {"name":"Skin1","order":40,"path":"folders/Steph/Steph Sprites/Skin1.yy",},
     {"name":"UI","order":28,"path":"folders/UI.yy",},
+    {"name":"World-Covers","order":330,"path":"folders/Sprites/World-Covers.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"dashroll_snd","order":12,"path":"sounds/dashroll_snd/dashroll_snd.yy",},
@@ -391,6 +392,7 @@
     {"name":"playerPistolWalkingReverse_spr","order":45,"path":"sprites/playerPistolWalkingReverse_spr/playerPistolWalkingReverse_spr.yy",},
     {"name":"overworldTrigger1_obj","order":125,"path":"objects/overworldTrigger1_obj/overworldTrigger1_obj.yy",},
     {"name":"magazine_spr","order":21,"path":"sprites/magazine_spr/magazine_spr.yy",},
+    {"name":"testtttttttttttttt","order":287,"path":"objects/testtttttttttttttt/testtttttttttttttt.yy",},
     {"name":"warpzoneGate_obj","order":69,"path":"objects/warpzoneGate_obj/warpzoneGate_obj.yy",},
     {"name":"healthCutOld_spr","order":14,"path":"sprites/healthCutOld_spr/healthCutOld_spr.yy",},
     {"name":"poisonpuddle_obj","order":3,"path":"objects/poisonpuddle_obj/poisonpuddle_obj.yy",},
