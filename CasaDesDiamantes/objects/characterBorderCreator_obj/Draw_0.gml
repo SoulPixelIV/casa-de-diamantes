@@ -13,7 +13,7 @@ if (camera_obj.drawText) {
 		backgroundRotVal -= global.dt / 200;
 	}
 		
-	if (instance_exists(player_obj) && room != level28) {
+	if (instance_exists(player_obj) && room != level28 && room != level4 && room != level5A && room != level5B && room != level6 && room != level7 && room != level8 && room != level9 && room != level10 && room != level11 && room != level12 && room != level13 && room != level14 && room != level15 && room != level16 && room != level17 && room != level18 && room != level19 && room != level20 && room != level21 && room != level22 && room != level23 && room != level24) {
 		draw_sprite_ext(playerBackground_spr, 0, player_obj.x, player_obj.y, 1, 1, backgroundRotVal, -1, 1);
 	}
 	if (instance_exists(steph2_obj)) {
