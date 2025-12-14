@@ -15,7 +15,7 @@ draw_text(global.xScreenSize / 2, optionsY[3], "Settings");
 draw_text(global.xScreenSize / 2, optionsY[4], "Exit");
 
 draw_set_halign(fa_right);
-draw_text(global.xScreenSize - 24, global.yScreenSize - 16, "MAIN v.1.1A");
+draw_text(global.xScreenSize - 24, global.yScreenSize - 16, "MAIN v.1.2");
 draw_set_halign(fa_center);
 //draw_text(global.xScreenSize / 2, global.yScreenSize - 16, "Mouse & Keyboard Recommended");
 draw_set_halign(fa_left);

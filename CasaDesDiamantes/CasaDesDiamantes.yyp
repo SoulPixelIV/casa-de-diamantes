@@ -2514,6 +2514,7 @@
   ],
   "RoomOrderNodes": [
     {"roomId":{"name":"loadVars","path":"rooms/loadVars/loadVars.yy",},},
+    {"roomId":{"name":"level25","path":"rooms/level25/level25.yy",},},
     {"roomId":{"name":"credits","path":"rooms/credits/credits.yy",},},
     {"roomId":{"name":"mainmenu","path":"rooms/mainmenu/mainmenu.yy",},},
     {"roomId":{"name":"level0","path":"rooms/level0/level0.yy",},},
@@ -2535,7 +2536,6 @@
     {"roomId":{"name":"level28","path":"rooms/level28/level28.yy",},},
     {"roomId":{"name":"level_ConsumedCasino","path":"rooms/level_ConsumedCasino/level_ConsumedCasino.yy",},},
     {"roomId":{"name":"level26","path":"rooms/level26/level26.yy",},},
-    {"roomId":{"name":"level25","path":"rooms/level25/level25.yy",},},
     {"roomId":{"name":"level_BasementConsumed","path":"rooms/level_BasementConsumed/level_BasementConsumed.yy",},},
     {"roomId":{"name":"level24","path":"rooms/level24/level24.yy",},},
     {"roomId":{"name":"level23","path":"rooms/level23/level23.yy",},},
