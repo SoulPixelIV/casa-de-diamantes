@@ -4,12 +4,12 @@ draw_set_color(make_color_rgb(255, 215, 0));
 if (menu == 0) {
 	draw_set_halign(fa_center);
 	draw_text(global.xScreenSize / 2, global.yScreenSize - 82, "Casa De Diamantes");
-	draw_text(global.xScreenSize / 4 - 5, 34, "Paredia");
+	draw_text(global.xScreenSize / 4 - 8, 34, "Paredia");
 	draw_text(global.xScreenSize / 2, 34, "Senzela Forest");
-	draw_text(global.xScreenSize - global.xScreenSize / 4 + 5, 34, "Endless Depths");
-	draw_text(global.xScreenSize / 4 - 5, global.yScreenSize - global.yScreenSize / 1.5 + 22, "EDEN Powerplant");
+	draw_text(global.xScreenSize - global.xScreenSize / 4 + 8, 34, "Endless Depths");
+	draw_text(global.xScreenSize / 4 - 8, global.yScreenSize - global.yScreenSize / 1.5 + 22, "EDEN Powerplant");
 	draw_text(global.xScreenSize / 2, global.yScreenSize - global.yScreenSize / 1.5 + 22, "Strato Train Station");
-	draw_text(global.xScreenSize - global.xScreenSize / 4 + 5, global.yScreenSize - global.yScreenSize / 1.5 + 22, "Mothers Womb");
+	draw_text(global.xScreenSize - global.xScreenSize / 4 + 8, global.yScreenSize - global.yScreenSize / 1.5 + 22, "Mothers Womb");
 	
 	draw_text(global.xScreenSize / 4 - 5 + 36, 90, "1");
 	draw_text(global.xScreenSize / 2 + 39, 90, "2");

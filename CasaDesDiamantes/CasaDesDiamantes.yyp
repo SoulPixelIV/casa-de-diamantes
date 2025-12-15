@@ -137,6 +137,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Spawns","folderPath":"folders/Objects/Spawns.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"TeleportBoxes","folderPath":"folders/Objects/Spawns/TeleportBoxes.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Trigger","folderPath":"folders/Objects/Trigger.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"World Covers","folderPath":"folders/Objects/World Covers.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Other + Legacy","folderPath":"folders/Other + Legacy.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Extensions","folderPath":"folders/Other + Legacy/Extensions.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"GMLive","folderPath":"folders/Other + Legacy/Extensions/GMLive.yy",},
@@ -211,7 +212,6 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"UI","folderPath":"folders/UI.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"UI Objects","folderPath":"folders/UI/UI Objects.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"UI Sprites","folderPath":"folders/UI/UI Sprites.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"World Covers","folderPath":"folders/Objects/World Covers.yy",},
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"Casino3DFilledMarquee.ttf","CopyToMask":-1,"filePath":"datafiles",},
