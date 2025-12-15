@@ -1,13 +1,13 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "testtttttttttttttt",
+  "name": "casino_cover_obj",
   "eventList": [],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "World Covers",
+    "path": "folders/Objects/World Covers.yy",
   },
   "parentObjectId": null,
   "persistent": false,
@@ -26,8 +26,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "paredia_cover_spr",
-    "path": "sprites/paredia_cover_spr/paredia_cover_spr.yy",
+    "name": "casino_cover_spr",
+    "path": "sprites/casino_cover_spr/casino_cover_spr.yy",
   },
   "spriteMaskId": null,
   "visible": true,
