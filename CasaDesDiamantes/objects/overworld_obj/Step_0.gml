@@ -267,6 +267,256 @@ if (instance_exists(cursorHitboxLevelSelect_obj)) {
 	}
 }
 
+//Mouse Cursor Controls 2
+if (instance_exists(cursorHitboxLevelSelect2_obj)) {
+	for (var i = 0; i < instance_number(cursorHitboxLevelSelect2_obj); ++i;) {
+		var hitbox = instance_find(cursorHitboxLevelSelect2_obj, i);
+		if (instance_exists(hitbox)) {
+			if (hitbox.open) {
+				if (hitbox.index < 7) {
+					cursorPos = hitbox.index;
+				
+					if (mouse_check_button_pressed(mb_left)) {
+						if (menu == 0) {
+							switch (cursorPos)
+							{
+								case 0:
+									loadNoRoom_scr();
+									room_goto(level_Casino);
+									global.lastCheckpoint = noone;
+								break;
+								case 1:
+									pushDelay = 70;
+									menu = 1;
+									cursorPos = 0;
+								break;
+								case 2:
+									pushDelay = 70;
+									menu = 2;
+									cursorPos = 0;
+								break;
+								case 3:
+									pushDelay = 70;
+									menu = 3;
+									cursorPos = 0;
+								break;
+								case 4:
+									pushDelay = 70;
+									menu = 5;
+									cursorPos = 0;
+								break;
+								case 5:
+									pushDelay = 70;
+									menu = 6;
+									cursorPos = 0;
+								break;
+								case 6:
+									pushDelay = 70;
+									menu = 7;
+									cursorPos = 0;
+								break;
+							}
+						} else if (menu == 1) {
+							switch (cursorPos)
+							{
+								case 0:
+									loadNoRoom_scr();
+									room_goto(level1);
+									global.lastCheckpoint = noone;
+								break;
+								case 1:
+									loadNoRoom_scr();
+									room_goto(level2);
+									global.lastCheckpoint = noone;
+								break;
+								case 2:
+									loadNoRoom_scr();
+									room_goto(level3);
+									global.lastCheckpoint = noone;
+								break;
+							}
+						} else if (menu == 2) {
+							switch (cursorPos)
+							{
+								case 0:
+									loadNoRoom_scr();
+									room_goto(level4);
+									global.lastCheckpoint = noone;
+								break;
+								case 1:
+									loadNoRoom_scr();
+									room_goto(level5A);
+									global.lastCheckpoint = noone;
+								break;
+								case 2:
+									loadNoRoom_scr();
+									room_goto(level5B);
+									global.lastCheckpoint = noone;
+								break;
+								case 3:
+									loadNoRoom_scr();
+									room_goto(level6);
+									global.lastCheckpoint = noone;
+								break;
+								case 4:
+									loadNoRoom_scr();
+									room_goto(level7);
+									global.lastCheckpoint = noone;
+								break;
+								case 5:
+									loadNoRoom_scr();
+									room_goto(level8);
+									global.lastCheckpoint = noone;
+								break;
+								case 6:
+									loadNoRoom_scr();
+									room_goto(level9);
+									global.lastCheckpoint = noone;
+								break;
+							}
+						} else if (menu == 3) {
+							switch (cursorPos)
+							{
+								case 0:
+									loadNoRoom_scr();
+									room_goto(level10);
+									global.lastCheckpoint = noone;
+								break;
+								case 1:
+									loadNoRoom_scr();
+									room_goto(level11);
+									global.lastCheckpoint = noone;
+								break;
+								case 2:
+									loadNoRoom_scr();
+									room_goto(level12);
+									global.lastCheckpoint = noone;
+								break;
+								case 3:
+									loadNoRoom_scr();
+									room_goto(level13);
+									global.lastCheckpoint = noone;
+								break;
+								case 4:
+									loadNoRoom_scr();
+									room_goto(level14);
+									global.lastCheckpoint = noone;
+								break;
+							}
+						} else if (menu == 4) {
+							switch (cursorPos)
+							{
+								case 0:
+									loadNoRoom_scr();
+									room_goto(warpzone1);
+									global.lastCheckpoint = noone;
+								break;
+								case 1:
+									loadNoRoom_scr();
+									room_goto(warpzone2);
+									global.lastCheckpoint = noone;
+								break;
+								case 2:
+									loadNoRoom_scr();
+									room_goto(warpzone3);
+									global.lastCheckpoint = noone;
+								break;
+							}
+						} else if (menu == 5) {
+							switch (cursorPos)
+							{
+								case 0:
+									loadNoRoom_scr();
+									room_goto(weaponRemove);
+									global.lastCheckpoint = noone;
+								break;
+								case 1:
+									loadNoRoom_scr();
+									room_goto(level16);
+									global.lastCheckpoint = noone;
+								break;
+								case 2:
+									loadNoRoom_scr();
+									room_goto(level17);
+									global.lastCheckpoint = noone;
+								break;
+								case 3:
+									loadNoRoom_scr();
+									room_goto(level18);
+									global.lastCheckpoint = noone;
+								break;
+								case 4:
+									loadNoRoom_scr();
+									room_goto(level19);
+									global.lastCheckpoint = noone;
+								break;
+							}
+						} else if (menu == 6) {
+							switch (cursorPos)
+							{
+								case 0:
+									loadNoRoom_scr();
+									room_goto(level20);
+									global.lastCheckpoint = noone;
+								break;
+								case 1:
+									loadNoRoom_scr();
+									room_goto(level21);
+									global.lastCheckpoint = noone;
+								break;
+								case 2:
+									loadNoRoom_scr();
+									room_goto(level22);
+									global.lastCheckpoint = noone;
+								break;
+								case 3:
+									loadNoRoom_scr();
+									room_goto(level23);
+									global.lastCheckpoint = noone;
+								break;
+								case 4:
+									loadNoRoom_scr();
+									room_goto(level24);
+									global.lastCheckpoint = noone;
+								break;
+							}
+						} else if (menu == 7) {
+							switch (cursorPos)
+							{
+								case 0:
+									loadNoRoom_scr();
+									room_goto(level_ConsumedCasino);
+									global.lastCheckpoint = noone;
+								break;
+								case 1:
+									loadNoRoom_scr();
+									room_goto(level25);
+									global.lastCheckpoint = noone;
+								break;
+								case 2:
+									loadNoRoom_scr();
+									room_goto(level26);
+									global.lastCheckpoint = noone;
+								break;
+								case 3:
+									loadNoRoom_scr();
+									room_goto(level27);
+									global.lastCheckpoint = noone;
+								break;
+								case 4:
+									loadNoRoom_scr();
+									room_goto(level28);
+									global.lastCheckpoint = noone;
+								break;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
 if (keyboard_check_pressed(vk_up) || keyboard_check_pressed(ord("W")) || gamepad_button_check_pressed(0, gp_padu) || gamepad_button_check_pressed(4, gp_padu))
 {
 	if (cursorPos > 0)
@@ -564,3 +814,26 @@ if (keyboard_check_pressed(vk_escape) || gamepad_button_check_pressed(4, gp_face
 }
 
 pushDelay -= global.dt;
+
+var pad = -1;
+if (gamepad_is_connected(0)) pad = 0;
+else if (gamepad_is_connected(4)) pad = 4;
+
+if (inputMethod != 0) {
+	if (pad != -1) {
+		var inputx = gamepad_axis_value(pad, gp_axislh);
+		var inputy = gamepad_axis_value(pad, gp_axislv);
+		
+		// Deadzone, damit der Cursor nicht zittert:
+		if (abs(inputx) < 0.2) inputx = 0;
+		if (abs(inputy) < 0.2) inputy = 0;
+	
+		var cursorx = window_mouse_get_x() + inputx * scrollSpeed;
+		var cursory = window_mouse_get_y() + inputy * scrollSpeed;
+		
+		cursorx = clamp(cursorx, 0, display_get_width());
+		cursory = clamp(cursory, 0, display_get_height());
+	
+		window_mouse_set(cursorx, cursory);
+	}
+}

@@ -1077,6 +1077,7 @@
     {"id":{"name":"caveBackgroundForeground_spr","path":"sprites/caveBackgroundForeground_spr/caveBackgroundForeground_spr.yy",},},
     {"id":{"name":"zombieGirlAttack2StartOLD_spr","path":"sprites/zombieGirlAttack2StartOLD_spr/zombieGirlAttack2StartOLD_spr.yy",},},
     {"id":{"name":"casinoCeilingLightConsumed_spr","path":"sprites/casinoCeilingLightConsumed_spr/casinoCeilingLightConsumed_spr.yy",},},
+    {"id":{"name":"cursorHitboxLevelSelect2_obj","path":"objects/cursorHitboxLevelSelect2_obj/cursorHitboxLevelSelect2_obj.yy",},},
     {"id":{"name":"goldenKey_spr","path":"sprites/goldenKey_spr/goldenKey_spr.yy",},},
     {"id":{"name":"smokingJacketSpin_spr","path":"sprites/smokingJacketSpin_spr/smokingJacketSpin_spr.yy",},},
     {"id":{"name":"caveLampRed_obj","path":"objects/caveLampRed_obj/caveLampRed_obj.yy",},},

@@ -70,12 +70,12 @@ draw_set_halign(fa_center);
 draw_text(240, 18, "-Level Select-");
 
 //Draw Menu Chip
-//cursorImage += global.dt / 16;
-//draw_sprite(chipRed_spr, cursorImage, global.xScreenSize / 3 - 20, optionsY[cursorPos] + 4);
+if (menu != 0) {
+	cursorImage += global.dt / 16;
+	draw_sprite(chipRed_spr, cursorImage, global.xScreenSize / 3 - 20, optionsY[cursorPos] + 4);
+}
 
 //Cursor
-if (inputMethod == 0) {
-	draw_sprite(mousecursor_spr, 0, 
-		(window_mouse_get_x() / ((window_get_width()+1) / global.xScreenSize)) + (0), 
-		window_mouse_get_y() / ((window_get_height()+1) / global.yScreenSize) + (0));
-}
+draw_sprite(mousecursor_spr, 0, 
+	(window_mouse_get_x() / ((window_get_width()+1) / global.xScreenSize)) + (0), 
+	window_mouse_get_y() / ((window_get_height()+1) / global.yScreenSize) + (0));

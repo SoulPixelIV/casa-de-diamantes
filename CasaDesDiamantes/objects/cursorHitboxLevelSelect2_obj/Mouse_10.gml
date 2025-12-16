@@ -1,5 +1,5 @@
 if (instance_exists(overworld_obj)) {
-	if (overworld_obj.menu == 0) {
+	if (overworld_obj.menu != 0) {
 		if (overworld_obj.menu == 0) {
 			if (index < 7) {
 				open = true;

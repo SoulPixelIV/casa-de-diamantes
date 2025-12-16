@@ -922,6 +922,7 @@
     {"name":"caveBackgroundForeground_spr","order":1,"path":"sprites/caveBackgroundForeground_spr/caveBackgroundForeground_spr.yy",},
     {"name":"zombieGirlAttack2StartOLD_spr","order":12,"path":"sprites/zombieGirlAttack2StartOLD_spr/zombieGirlAttack2StartOLD_spr.yy",},
     {"name":"casinoCeilingLightConsumed_spr","order":284,"path":"sprites/casinoCeilingLightConsumed_spr/casinoCeilingLightConsumed_spr.yy",},
+    {"name":"cursorHitboxLevelSelect2_obj","order":19,"path":"objects/cursorHitboxLevelSelect2_obj/cursorHitboxLevelSelect2_obj.yy",},
     {"name":"goldenKey_spr","order":160,"path":"sprites/goldenKey_spr/goldenKey_spr.yy",},
     {"name":"smokingJacketSpin_spr","order":5,"path":"sprites/smokingJacketSpin_spr/smokingJacketSpin_spr.yy",},
     {"name":"caveLampRed_obj","order":67,"path":"objects/caveLampRed_obj/caveLampRed_obj.yy",},
