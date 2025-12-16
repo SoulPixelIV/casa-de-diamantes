@@ -11,9 +11,3 @@ else
 {
 	//window_set_position(display_get_width() / 2 - xScreenSize * zoom, display_get_height() / 2 - yScreenSize * zoom);
 }
-
-if (drawStartMenu) {
-	if (keyboard_check_pressed(vk_escape)) {
-		drawStartMenu = false;
-	}
-}

@@ -6,6 +6,7 @@ function loadSettings_scr(){
 	//globalSettings_obj.TARGET_FRAMERATE = ini_read_real("gameSettings", "targetFramerate", 240);
 	global.vsync = ini_read_real("gameSettings", "vsync", 0);
 	global.speedrunTimer = ini_read_real("gameSettings", "speedrunTimer", 0);
+	global.fullscreen = ini_read_real("gameSettings", "fullscreen", true);
 		
 	ini_close();
 }

@@ -48,8 +48,10 @@ if (instance_exists(cursorHitbox_obj)) {
 								window_set_size(xScreenSize*3, yScreenSize*3);
 								surface_resize(application_surface, xScreenSize, yScreenSize);
 								display_set_gui_size(xScreenSize, yScreenSize);
+								global.fullscreen = false;
 							} else {
 								window_set_fullscreen(true);
+								global.fullscreen = true;
 							}
 						break;
 						case 4:
@@ -165,8 +167,10 @@ if (!drawStartMenu) {
 					window_set_size(xScreenSize*3, yScreenSize*3);
 					surface_resize(application_surface, xScreenSize, yScreenSize);
 					display_set_gui_size(xScreenSize, yScreenSize);
+					global.fullscreen = false;
 				} else {
 					window_set_fullscreen(true);
+					global.fullscreen = true;
 				}
 			break;
 			case 4:
