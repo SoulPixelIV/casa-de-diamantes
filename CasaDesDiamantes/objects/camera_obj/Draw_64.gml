@@ -1425,7 +1425,7 @@ if (!noHUD && instance_exists(player_obj))
 	if (!redDoorMessage && !blueDoorMessage && !yellowDoorMessage && !warpzoneMessage && room != level_Casino && room != level_CasinoRoof && room != level_Basement && room != level_DiningHall && room != level_TristramRoom) {
 		draw_set_font(gothicPixel_fnt);
 		if (global.currentWeapon != gameManager_obj.pickedWeapon.pistol) {
-			if ((global.pistolAmmo < 6 && global.unlockedWeapon[1])) {
+			if ((global.pistolAmmo < 6 && global.unlockedWeapon[1]) && global.currentWeapon == gameManager_obj.pickedWeapon.dualBarettas) {
 				draw_set_halign(fa_center);
 				draw_set_color(c_black);
 				draw_text(global.xScreenSize / 2 - 1, global.yScreenSize - global.yScreenSize / 4 + 16 + 1, "Low Dual Barettas Ammo");
@@ -1435,7 +1435,7 @@ if (!noHUD && instance_exists(player_obj))
 				draw_ellipse_color(-64, -150, global.xScreenSize + 64, global.yScreenSize + 360, c_red, c_black, false);
 				draw_set_alpha(1);
 				draw_set_halign(fa_left);
-			} else if ((global.shotgunAmmo < 2 && global.unlockedWeapon[2])) {
+			} else if ((global.shotgunAmmo < 2 && global.unlockedWeapon[2]) && global.currentWeapon == gameManager_obj.pickedWeapon.shotgun) {
 				draw_set_halign(fa_center);
 				draw_set_color(c_black);
 				draw_text(global.xScreenSize / 2 - 1, global.yScreenSize - global.yScreenSize / 4 + 16 + 1, "Low Shotgun Ammo");
@@ -1445,7 +1445,7 @@ if (!noHUD && instance_exists(player_obj))
 				draw_ellipse_color(-64, -150, global.xScreenSize + 64, global.yScreenSize + 360, c_red, c_black, false);
 				draw_set_alpha(1);
 				draw_set_halign(fa_left);
-			} else if ((global.silencedMPAmmo < 9 && global.unlockedWeapon[3])) {
+			} else if ((global.silencedMPAmmo < 9 && global.unlockedWeapon[3]) && global.currentWeapon == gameManager_obj.pickedWeapon.silencedMP) {
 				draw_set_halign(fa_center);
 				draw_set_color(c_black);
 				draw_text(global.xScreenSize / 2 - 1, global.yScreenSize - global.yScreenSize / 4 + 16 + 1, "Low Silenced MP Ammo");
@@ -1455,7 +1455,7 @@ if (!noHUD && instance_exists(player_obj))
 				draw_ellipse_color(-64, -150, global.xScreenSize + 64, global.yScreenSize + 360, c_red, c_black, false);
 				draw_set_alpha(1);
 				draw_set_halign(fa_left);
-			} else if ((global.bowAmmo < 4 && global.unlockedWeapon[4])) {
+			} else if ((global.bowAmmo < 4 && global.unlockedWeapon[4]) && global.currentWeapon == gameManager_obj.pickedWeapon.bow) {
 				draw_set_halign(fa_center);
 				draw_set_color(c_black);
 				draw_text(global.xScreenSize / 2 - 1, global.yScreenSize - global.yScreenSize / 4 + 16 + 1, "Low Anti-Material Rifle Ammo");
