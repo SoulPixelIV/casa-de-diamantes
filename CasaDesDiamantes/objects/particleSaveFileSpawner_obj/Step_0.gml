@@ -1,0 +1,1 @@
+part_emitter_region(global.partSystem, saveFileEmitter, x - 1024, x + 1024, y - 64, y + 64, ps_shape_ellipse, ps_distr_gaussian);

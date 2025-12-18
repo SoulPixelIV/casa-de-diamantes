@@ -2398,6 +2398,7 @@
     {"id":{"name":"playerSilencedMPStance_spr","path":"sprites/playerSilencedMPStance_spr/playerSilencedMPStance_spr.yy",},},
     {"id":{"name":"whiteExplosionEffectSmall_spr","path":"sprites/whiteExplosionEffectSmall_spr/whiteExplosionEffectSmall_spr.yy",},},
     {"id":{"name":"glasPlaneForest_obj","path":"objects/glasPlaneForest_obj/glasPlaneForest_obj.yy",},},
+    {"id":{"name":"particleSaveFileSpawner_obj","path":"objects/particleSaveFileSpawner_obj/particleSaveFileSpawner_obj.yy",},},
     {"id":{"name":"colliderNoShadow_obj","path":"objects/colliderNoShadow_obj/colliderNoShadow_obj.yy",},},
     {"id":{"name":"playerPistol_spr","path":"sprites/playerPistol_spr/playerPistol_spr.yy",},},
     {"id":{"name":"voidMonsterEyes_spr","path":"sprites/voidMonsterEyes_spr/voidMonsterEyes_spr.yy",},},

@@ -2148,6 +2148,7 @@
     {"name":"playerSilencedMPStance_spr","order":39,"path":"sprites/playerSilencedMPStance_spr/playerSilencedMPStance_spr.yy",},
     {"name":"whiteExplosionEffectSmall_spr","order":3,"path":"sprites/whiteExplosionEffectSmall_spr/whiteExplosionEffectSmall_spr.yy",},
     {"name":"glasPlaneForest_obj","order":8,"path":"objects/glasPlaneForest_obj/glasPlaneForest_obj.yy",},
+    {"name":"particleSaveFileSpawner_obj","order":15,"path":"objects/particleSaveFileSpawner_obj/particleSaveFileSpawner_obj.yy",},
     {"name":"colliderNoShadow_obj","order":2,"path":"objects/colliderNoShadow_obj/colliderNoShadow_obj.yy",},
     {"name":"playerPistol_spr","order":14,"path":"sprites/playerPistol_spr/playerPistol_spr.yy",},
     {"name":"voidMonsterEyes_spr","order":201,"path":"sprites/voidMonsterEyes_spr/voidMonsterEyes_spr.yy",},
