@@ -14,6 +14,7 @@ global.keyYellow = false;
 global.scorepoints = 0;
 global.currentWorld = 0;
 global.storyAct = 0;
+global.currentSaveFile = 0;
 global.deaths = 0;
 global.killsInARow = 0;
 global.killResetTimer = 25;
