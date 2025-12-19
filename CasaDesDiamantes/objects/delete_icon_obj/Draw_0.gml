@@ -1,7 +1,7 @@
 draw_self();
 
 //Warning Window
-if (global.drawWarningMenu && !global.drawStartMenu && !global.drawSkipMenu) {
+if (global.drawWarningMenu && !global.drawStartMenu && !global.drawSkipMenu && !global.drawEraseMenu) {
 	draw_sprite_ext(menuWindow_spr, 0, global.xScreenSize / 2, global.yScreenSize / 2.5, 1, 0.79, 0, -1, 1);
 	draw_set_font(gothicPixel_fnt);
 	draw_set_halign(fa_center);
@@ -13,7 +13,7 @@ if (global.drawWarningMenu && !global.drawStartMenu && !global.drawSkipMenu) {
 }
 
 //Go to Background
-if (global.drawWarningMenu || global.drawStartMenu) {
+if (global.drawWarningMenu || global.drawStartMenu || global.drawEraseMenu) {
 	image_alpha = 0.2;
 } else {
 	image_alpha = 1;

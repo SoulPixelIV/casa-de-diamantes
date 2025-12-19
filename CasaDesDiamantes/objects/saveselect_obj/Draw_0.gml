@@ -1,4 +1,4 @@
-if (global.drawWarningMenu || global.drawStartMenu) {
+if (global.drawWarningMenu || global.drawStartMenu || global.drawEraseMenu) {
 	draw_set_alpha(0.2);
 } else {
 	draw_set_alpha(1);

@@ -1,6 +1,6 @@
 pushDelay = pushDelaySave;
 
-if (!global.drawWarningMenu && !global.drawStartMenu && !global.drawSkipMenu) {
+if (!global.drawWarningMenu && !global.drawStartMenu && !global.drawSkipMenu && !global.drawEraseMenu) {
 	if (index == 0) {
 		global.currentSaveFile = 0;
 					

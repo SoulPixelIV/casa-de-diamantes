@@ -1,4 +1,4 @@
-if (!global.drawWarningMenu && !global.drawStartMenu && !global.drawSkipMenu) {
+if (!global.drawWarningMenu && !global.drawStartMenu && !global.drawSkipMenu && !global.drawEraseMenu) {
 	pushDelay = pushDelaySave;
 	
 	if (open) {
