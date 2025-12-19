@@ -8,6 +8,16 @@ image_speed = 0;
 saveImageIndex = 0;
 open = false;
 
+startMenuElement = 1;
+cursorImage = 0;
+
+buttonBuffer = 120;
+buttonBuffer2 = 120;
+buttonBufferStart = false;
+buttonBufferStart2 = false;
+buttonBufferSave = buttonBuffer;
+buttonBufferSave2 = buttonBuffer2;
+
 if (index == 0) {
 	if (file_exists("save1")) {
 		ini_open("save1");

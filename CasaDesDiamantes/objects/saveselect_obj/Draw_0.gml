@@ -1,4 +1,4 @@
-if (global.drawWarningMenu) {
+if (global.drawWarningMenu || global.drawStartMenu) {
 	draw_set_alpha(0.2);
 } else {
 	draw_set_alpha(1);
@@ -9,7 +9,7 @@ draw_set_halign(fa_center);
 draw_set_color(make_color_rgb(255, 215, 0));
 draw_text(global.xScreenSize / 4 - 8, 108, "Savefile 1");
 draw_text(global.xScreenSize / 2, 110, "Savefile 2");
-draw_text(global.xScreenSize / 1.3 - 2, 110, "Savefile 3");
+draw_text(global.xScreenSize / 1.3 - 1, 110, "Savefile 3");
 
 if (file_exists("save1")) {
 	ini_open("save1");
@@ -169,12 +169,12 @@ if (file_exists("save3")) {
 	
 	var deaths = ini_read_real("save3", "deaths", 0);
 	
-	draw_text(global.xScreenSize / 1.3 - 2, 101 + 32, currSection);
+	draw_text(global.xScreenSize / 1.3 - 1, 101 + 32, currSection);
 	
-	draw_text(global.xScreenSize / 1.3 - 2, 101 + 48 + 16, "Deaths " + string(deaths));	
-	draw_text(global.xScreenSize / 1.3 - 2, 101 + 64 + 16, "Chips " + string(saveMoney));
-	draw_text(global.xScreenSize / 1.3 - 2, 101 + 80 + 16, "Syringes " + string(saveSyringes));
-	draw_text(global.xScreenSize / 1.3 - 2, 101 + 96 + 16, "Diamonds " + string(saveDiamonds));
+	draw_text(global.xScreenSize / 1.3 - 1, 101 + 48 + 16, "Deaths " + string(deaths));	
+	draw_text(global.xScreenSize / 1.3 - 1, 101 + 64 + 16, "Chips " + string(saveMoney));
+	draw_text(global.xScreenSize / 1.3 - 1, 101 + 80 + 16, "Syringes " + string(saveSyringes));
+	draw_text(global.xScreenSize / 1.3 - 1, 101 + 96 + 16, "Diamonds " + string(saveDiamonds));
 								
 	ini_close();
 }
