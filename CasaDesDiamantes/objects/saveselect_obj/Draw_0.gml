@@ -1,3 +1,9 @@
+if (global.drawWarningMenu) {
+	draw_set_alpha(0.2);
+} else {
+	draw_set_alpha(1);
+}
+
 draw_set_font(gothicPixel_fnt);
 draw_set_halign(fa_center);
 draw_set_color(make_color_rgb(255, 215, 0));
@@ -175,6 +181,8 @@ if (file_exists("save3")) {
 
 draw_set_halign(fa_center);
 draw_text(240, 18, "-Save File Select-");
+
+draw_set_alpha(1);
 
 //Cursor
 draw_sprite(mousecursor_spr, 0, 

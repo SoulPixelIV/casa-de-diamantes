@@ -47,6 +47,9 @@ global.bulletDelaySave = global.bulletDelay;
 multiplierRun = false;
 
 global.fullscreen = false;
+global.drawWarningMenu = false;
+global.drawStartMenu = false;
+global.drawSkipMenu = false;
 
 global.level5AArena1Done = false;
 global.level5AArena2Done = false;

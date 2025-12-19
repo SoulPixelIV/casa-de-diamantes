@@ -1,3 +1,9 @@
+drawStartMenu = false;
+drawSkipMenu = false;
+
+pushDelay = 50;
+pushDelaySave = pushDelay;
+
 image_speed = 0;
 saveImageIndex = 0;
 open = false;
