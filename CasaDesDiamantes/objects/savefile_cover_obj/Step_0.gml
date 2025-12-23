@@ -22,7 +22,23 @@ if (!global.drawWarningMenu && !global.drawStartMenu && !global.drawSkipMenu && 
 						global.drawWarningMenu = true;
 					} else {
 						if (file_exists("save1")) {
-							load_scr();
+							if (global.roomTeleportWish == noone) {
+								global.drawWarningMenu = false;
+								global.drawStartMenu = false;
+								global.drawSkipMenu = false;
+								global.drawEraseMenu = false;
+								global.roomTeleportWish = noone;
+								load_scr();
+							} else {
+								room_goto(global.roomTeleportWish);
+								global.drawWarningMenu = false;
+								global.drawStartMenu = false;
+								global.drawSkipMenu = false;
+								global.drawEraseMenu = false;
+								global.roomTeleportWish = noone;
+								loadNoRoom_scr();
+								global.lastCheckpoint = noone;
+							}					
 						} else {
 							global.drawWarningMenu = true;
 						}
@@ -53,7 +69,23 @@ if (!global.drawWarningMenu && !global.drawStartMenu && !global.drawSkipMenu && 
 						global.drawWarningMenu = true;
 					} else {
 						if (file_exists("save2")) {
-							load_scr();
+							if (global.roomTeleportWish == noone) {
+								global.drawWarningMenu = false;
+								global.drawStartMenu = false;
+								global.drawSkipMenu = false;
+								global.drawEraseMenu = false;
+								global.roomTeleportWish = noone;
+								load_scr();
+							} else {
+								room_goto(global.roomTeleportWish);
+								global.drawWarningMenu = false;
+								global.drawStartMenu = false;
+								global.drawSkipMenu = false;
+								global.drawEraseMenu = false;
+								global.roomTeleportWish = noone;
+								loadNoRoom_scr();
+								global.lastCheckpoint = noone;
+							}		
 						} else {
 							global.drawWarningMenu = true;
 						}
@@ -84,7 +116,23 @@ if (!global.drawWarningMenu && !global.drawStartMenu && !global.drawSkipMenu && 
 						global.drawWarningMenu = true;
 					} else {
 						if (file_exists("save3")) {
-							load_scr();
+							if (global.roomTeleportWish == noone) {
+								global.drawWarningMenu = false;
+								global.drawStartMenu = false;
+								global.drawSkipMenu = false;
+								global.drawEraseMenu = false;
+								global.roomTeleportWish = noone;
+								load_scr();
+							} else {
+								room_goto(global.roomTeleportWish);
+								global.drawWarningMenu = false;
+								global.drawStartMenu = false;
+								global.drawSkipMenu = false;
+								global.drawEraseMenu = false;
+								global.roomTeleportWish = noone;
+								loadNoRoom_scr();
+								global.lastCheckpoint = noone;
+							}		
 						} else {
 							global.drawWarningMenu = true;
 						}
@@ -105,6 +153,7 @@ if (global.drawWarningMenu) {
 	if (pushDelay < 0) {
 		if (gamepad_button_check_pressed(0, gp_face1) || mouse_check_button_pressed(mb_left) || gamepad_button_check_pressed(4, gp_face1) || keyboard_check_pressed(vk_enter)) {
 			room_goto(mainmenu);
+			global.roomTeleportWish = noone;
 		}
 	}
 }

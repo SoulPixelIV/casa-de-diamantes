@@ -51,6 +51,7 @@ global.drawWarningMenu = false;
 global.drawStartMenu = false;
 global.drawSkipMenu = false;
 global.drawEraseMenu = false;
+global.roomTeleportWish = noone;
 
 global.level5AArena1Done = false;
 global.level5AArena2Done = false;

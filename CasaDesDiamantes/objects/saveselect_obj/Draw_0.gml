@@ -42,7 +42,7 @@ if (file_exists("save1")) {
 		currSection = "Endless Depths";
 	}
 	if (rm_index == level15 || rm_index == level16 || rm_index == level17 || rm_index == level18 || rm_index == level19 || rm_index == warpzone3) {
-		currSection = "EDEN Powerplant";
+		currSection = "EDEN Pwrplant";
 	}
 	if (rm_index == level20 || rm_index == level21 || rm_index == level22 || rm_index == level23 || rm_index == level24) {
 		currSection = "Strato Terminal";
@@ -98,7 +98,7 @@ if (file_exists("save2")) {
 		currSection = "Endless Depths";
 	}
 	if (rm_index == level15 || rm_index == level16 || rm_index == level17 || rm_index == level18 || rm_index == level19 || rm_index == warpzone3) {
-		currSection = "EDEN Powerplant";
+		currSection = "EDEN Pwrplant";
 	}
 	if (rm_index == level20 || rm_index == level21 || rm_index == level22 || rm_index == level23 || rm_index == level24) {
 		currSection = "Strato Terminal";
@@ -154,7 +154,7 @@ if (file_exists("save3")) {
 		currSection = "Endless Depths";
 	}
 	if (rm_index == level15 || rm_index == level16 || rm_index == level17 || rm_index == level18 || rm_index == level19 || rm_index == warpzone3) {
-		currSection = "EDEN Powerplant";
+		currSection = "EDEN Pwrplant";
 	}
 	if (rm_index == level20 || rm_index == level21 || rm_index == level22 || rm_index == level23 || rm_index == level24) {
 		currSection = "Strato Terminal";
@@ -181,6 +181,11 @@ if (file_exists("save3")) {
 
 draw_set_halign(fa_center);
 draw_text(240, 18, "-Save File Select-");
+
+if (global.roomTeleportWish != noone) {
+	draw_set_halign(fa_center);
+	draw_text(240, global.yScreenSize - 18, "Selected Level (" + room_get_name(global.roomTeleportWish) + ") will be loaded!");
+}
 
 draw_set_alpha(1);
 

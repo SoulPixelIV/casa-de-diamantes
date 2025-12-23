@@ -172,7 +172,17 @@ if (global.drawStartMenu) {
 										global.cupyDialogue6Done = false;
 										global.moveToWorld = 0;
 										
-										room_goto(transitionScreen);
+										if (global.roomTeleportWish == noone) {
+											room_goto(transitionScreen);
+										} else {
+											room_goto(global.roomTeleportWish);
+											global.lastCheckpoint = noone;
+										}
+										global.drawWarningMenu = false;
+										global.drawStartMenu = false;
+										global.drawSkipMenu = false;
+										global.drawEraseMenu = false;
+										global.roomTeleportWish = noone;
 										startMenuElement = 1;
 									break;
 									case 1:
@@ -312,7 +322,17 @@ if (global.drawStartMenu) {
 				global.cupyDialogue6Done = false;
 				global.moveToWorld = 0;
 										
-				room_goto(transitionScreen);
+				if (global.roomTeleportWish == noone) {
+					room_goto(transitionScreen);
+				} else {
+					room_goto(global.roomTeleportWish);
+					global.lastCheckpoint = noone;
+				}
+				global.drawWarningMenu = false;
+				global.drawStartMenu = false;
+				global.drawSkipMenu = false;
+				global.drawEraseMenu = false;
+				global.roomTeleportWish = noone;
 				startMenuElement = 1;
 			} else {
 				startMenuElement = 1;
@@ -425,6 +445,8 @@ if (global.drawEraseMenu) {
 										
 										global.drawEraseMenu = false;
 										startMenuElement = 1;
+										
+										room_goto(saveSelect);
 									break;
 									case 1:
 										startMenuElement = 1;
@@ -526,6 +548,8 @@ if (global.drawEraseMenu) {
 										
 				global.drawEraseMenu = false;
 				startMenuElement = 1;
+				
+				room_goto(saveSelect);
 			} else {
 				startMenuElement = 1;
 				global.drawEraseMenu = false;

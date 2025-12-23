@@ -17,31 +17,6 @@ else if (keyboard_check_pressed(vk_anykey))
 	inputMethod = 0;
 }
 
-if (keyboard_check_pressed(vk_up) || keyboard_check_pressed(ord("W")) || gamepad_button_check_pressed(0, gp_padu) || gamepad_button_check_pressed(4, gp_padu))
-{
-	if (cursorPos > 0)
-	{
-		cursorPos--;
-	}
-	else
-	{
-		cursorPos = options;
-	}
-}
-if (keyboard_check_pressed(vk_down) || keyboard_check_pressed(ord("S")) || gamepad_button_check_pressed(0, gp_padd) || gamepad_button_check_pressed(4, gp_padd))
-{
-	if (cursorPos < options)
-	{
-		cursorPos++;
-	}
-	else
-	{
-		cursorPos = 0;
-	}
-}
-
-
-
 if (keyboard_check_pressed(vk_escape) || gamepad_button_check_pressed(4, gp_face2) || gamepad_button_check_pressed(0, gp_face2)) {
 	audio_play_sound(typewriterPush_snd, 1, false);
 	
@@ -52,6 +27,7 @@ if (keyboard_check_pressed(vk_escape) || gamepad_button_check_pressed(4, gp_face
 		global.drawEraseMenu = false;
 	} else {
 		if (menu == 0) {
+			global.roomTeleportWish = noone;
 			room_goto(mainmenu);
 		} else {
 			menu = 0;

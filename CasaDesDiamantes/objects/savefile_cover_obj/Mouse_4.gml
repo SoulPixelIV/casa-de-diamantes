@@ -20,7 +20,13 @@ if (!global.drawWarningMenu && !global.drawStartMenu && !global.drawSkipMenu && 
 				global.drawWarningMenu = true;
 			} else {
 				if (file_exists("save1")) {
-					load_scr();
+					if (global.roomTeleportWish == noone) {
+						load_scr();
+					} else {
+						room_goto(global.roomTeleportWish);
+						loadNoRoom_scr();
+						global.lastCheckpoint = noone;
+					}
 				} else {
 					global.drawWarningMenu = true;
 				}
@@ -51,7 +57,13 @@ if (!global.drawWarningMenu && !global.drawStartMenu && !global.drawSkipMenu && 
 				global.drawWarningMenu = true;
 			} else {
 				if (file_exists("save2")) {
-					load_scr();
+					if (global.roomTeleportWish == noone) {
+						load_scr();
+					} else {
+						room_goto(global.roomTeleportWish);
+						loadNoRoom_scr();
+						global.lastCheckpoint = noone;
+					}
 				} else {
 					global.drawWarningMenu = true;
 				}
@@ -82,7 +94,13 @@ if (!global.drawWarningMenu && !global.drawStartMenu && !global.drawSkipMenu && 
 				global.drawWarningMenu = true;
 			} else {
 				if (file_exists("save3")) {
-					load_scr();
+					if (global.roomTeleportWish == noone) {
+						load_scr();
+					} else {
+						room_goto(global.roomTeleportWish);
+						loadNoRoom_scr();
+						global.lastCheckpoint = noone;
+					}
 				} else {
 					global.drawWarningMenu = true;
 				}

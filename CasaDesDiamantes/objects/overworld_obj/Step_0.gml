@@ -31,9 +31,8 @@ if (instance_exists(cursorHitboxLevelSelect_obj)) {
 							switch (cursorPos)
 							{
 								case 0:
-									loadNoRoom_scr();
-									room_goto(level_Casino);
-									global.lastCheckpoint = noone;
+									global.roomTeleportWish = level_Casino;
+									room_goto(saveSelect);
 								break;
 								case 1:
 									pushDelay = 70;
@@ -70,193 +69,160 @@ if (instance_exists(cursorHitboxLevelSelect_obj)) {
 							switch (cursorPos)
 							{
 								case 0:
-									loadNoRoom_scr();
-									room_goto(level1);
-									global.lastCheckpoint = noone;
+									global.roomTeleportWish = level1;
+									room_goto(saveSelect);
 								break;
 								case 1:
-									loadNoRoom_scr();
-									room_goto(level2);
-									global.lastCheckpoint = noone;
+									global.roomTeleportWish = level2;
+									room_goto(saveSelect);
 								break;
 								case 2:
-									loadNoRoom_scr();
-									room_goto(level3);
-									global.lastCheckpoint = noone;
+									global.roomTeleportWish = level3;
+									room_goto(saveSelect);
 								break;
 							}
 						} else if (menu == 2) {
 							switch (cursorPos)
 							{
 								case 0:
-									loadNoRoom_scr();
-									room_goto(level4);
-									global.lastCheckpoint = noone;
+									global.roomTeleportWish = level4;
+									room_goto(saveSelect);
 								break;
 								case 1:
-									loadNoRoom_scr();
-									room_goto(level5A);
-									global.lastCheckpoint = noone;
+									global.roomTeleportWish = level5A;
+									room_goto(saveSelect);
 								break;
 								case 2:
-									loadNoRoom_scr();
-									room_goto(level5B);
-									global.lastCheckpoint = noone;
+									global.roomTeleportWish = level5B;
+									room_goto(saveSelect);
 								break;
 								case 3:
-									loadNoRoom_scr();
-									room_goto(level6);
-									global.lastCheckpoint = noone;
+									global.roomTeleportWish = level6;
+									room_goto(saveSelect);
 								break;
 								case 4:
-									loadNoRoom_scr();
-									room_goto(level7);
-									global.lastCheckpoint = noone;
+									global.roomTeleportWish = level7;
+									room_goto(saveSelect);
 								break;
 								case 5:
-									loadNoRoom_scr();
-									room_goto(level8);
-									global.lastCheckpoint = noone;
+									global.roomTeleportWish = level8;
+									room_goto(saveSelect);
 								break;
 								case 6:
-									loadNoRoom_scr();
-									room_goto(level9);
-									global.lastCheckpoint = noone;
+									global.roomTeleportWish = level9;
+									room_goto(saveSelect);
 								break;
 							}
 						} else if (menu == 3) {
 							switch (cursorPos)
 							{
 								case 0:
-									loadNoRoom_scr();
-									room_goto(level10);
-									global.lastCheckpoint = noone;
+									global.roomTeleportWish = level10;
+									room_goto(saveSelect);
 								break;
 								case 1:
-									loadNoRoom_scr();
-									room_goto(level11);
-									global.lastCheckpoint = noone;
+									global.roomTeleportWish = level11;
+									room_goto(saveSelect);
 								break;
 								case 2:
-									loadNoRoom_scr();
-									room_goto(level12);
-									global.lastCheckpoint = noone;
+									global.roomTeleportWish = level12;
+									room_goto(saveSelect);
 								break;
 								case 3:
-									loadNoRoom_scr();
-									room_goto(level13);
-									global.lastCheckpoint = noone;
+									global.roomTeleportWish = level13;
+									room_goto(saveSelect);
 								break;
 								case 4:
-									loadNoRoom_scr();
-									room_goto(level14);
-									global.lastCheckpoint = noone;
+									global.roomTeleportWish = level14;
+									room_goto(saveSelect);
 								break;
 							}
 						} else if (menu == 4) {
 							switch (cursorPos)
 							{
 								case 0:
-									loadNoRoom_scr();
-									room_goto(warpzone1);
-									global.lastCheckpoint = noone;
+									global.roomTeleportWish = warpzone1;
+									room_goto(saveSelect);
 								break;
 								case 1:
-									loadNoRoom_scr();
-									room_goto(warpzone2);
-									global.lastCheckpoint = noone;
+									global.roomTeleportWish = warpzone2;
+									room_goto(saveSelect);
 								break;
 								case 2:
-									loadNoRoom_scr();
-									room_goto(warpzone3);
-									global.lastCheckpoint = noone;
+									global.roomTeleportWish = warpzone3;
+									room_goto(saveSelect);
 								break;
 							}
 						} else if (menu == 5) {
 							switch (cursorPos)
 							{
 								case 0:
-									loadNoRoom_scr();
-									room_goto(weaponRemove);
-									global.lastCheckpoint = noone;
+									global.roomTeleportWish = weaponRemove;
+									room_goto(saveSelect);
 								break;
 								case 1:
-									loadNoRoom_scr();
-									room_goto(level16);
-									global.lastCheckpoint = noone;
+									global.roomTeleportWish = level16;
+									room_goto(saveSelect);
 								break;
 								case 2:
-									loadNoRoom_scr();
-									room_goto(level17);
-									global.lastCheckpoint = noone;
+									global.roomTeleportWish = level17;
+									room_goto(saveSelect);
 								break;
 								case 3:
-									loadNoRoom_scr();
-									room_goto(level18);
-									global.lastCheckpoint = noone;
+									global.roomTeleportWish = level18;
+									room_goto(saveSelect);
 								break;
 								case 4:
-									loadNoRoom_scr();
-									room_goto(level19);
-									global.lastCheckpoint = noone;
+									global.roomTeleportWish = level19;
+									room_goto(saveSelect);
 								break;
 							}
 						} else if (menu == 6) {
 							switch (cursorPos)
 							{
 								case 0:
-									loadNoRoom_scr();
-									room_goto(level20);
-									global.lastCheckpoint = noone;
+									global.roomTeleportWish = level20;
+									room_goto(saveSelect);
 								break;
 								case 1:
-									loadNoRoom_scr();
-									room_goto(level21);
-									global.lastCheckpoint = noone;
+									global.roomTeleportWish = level21;
+									room_goto(saveSelect);
 								break;
 								case 2:
-									loadNoRoom_scr();
-									room_goto(level22);
-									global.lastCheckpoint = noone;
+									global.roomTeleportWish = level22;
+									room_goto(saveSelect);
 								break;
 								case 3:
-									loadNoRoom_scr();
-									room_goto(level23);
-									global.lastCheckpoint = noone;
+									global.roomTeleportWish = level23;
+									room_goto(saveSelect);
 								break;
 								case 4:
-									loadNoRoom_scr();
-									room_goto(level24);
-									global.lastCheckpoint = noone;
+									global.roomTeleportWish = level24;
+									room_goto(saveSelect);
 								break;
 							}
 						} else if (menu == 7) {
 							switch (cursorPos)
 							{
 								case 0:
-									loadNoRoom_scr();
-									room_goto(level_ConsumedCasino);
-									global.lastCheckpoint = noone;
+									global.roomTeleportWish = level_ConsumedCasino;
+									room_goto(saveSelect);
 								break;
 								case 1:
-									loadNoRoom_scr();
-									room_goto(level25);
-									global.lastCheckpoint = noone;
+									global.roomTeleportWish = level25;
+									room_goto(saveSelect);
 								break;
 								case 2:
-									loadNoRoom_scr();
-									room_goto(level26);
-									global.lastCheckpoint = noone;
+									global.roomTeleportWish = level26;
+									room_goto(saveSelect);
 								break;
 								case 3:
-									loadNoRoom_scr();
-									room_goto(level27);
-									global.lastCheckpoint = noone;
+									global.roomTeleportWish = level27;
+									room_goto(saveSelect);
 								break;
 								case 4:
-									loadNoRoom_scr();
-									room_goto(level28);
-									global.lastCheckpoint = noone;
+									global.roomTeleportWish = level28;
+									room_goto(saveSelect);
 								break;
 							}
 						}
@@ -281,9 +247,8 @@ if (instance_exists(cursorHitboxLevelSelect2_obj)) {
 							switch (cursorPos)
 							{
 								case 0:
-									loadNoRoom_scr();
-									room_goto(level_Casino);
-									global.lastCheckpoint = noone;
+									global.roomTeleportWish = level_Casino;
+									room_goto(saveSelect);
 								break;
 								case 1:
 									pushDelay = 70;
@@ -320,193 +285,160 @@ if (instance_exists(cursorHitboxLevelSelect2_obj)) {
 							switch (cursorPos)
 							{
 								case 0:
-									loadNoRoom_scr();
-									room_goto(level1);
-									global.lastCheckpoint = noone;
+									global.roomTeleportWish = level1;
+									room_goto(saveSelect);
 								break;
 								case 1:
-									loadNoRoom_scr();
-									room_goto(level2);
-									global.lastCheckpoint = noone;
+									global.roomTeleportWish = level2;
+									room_goto(saveSelect);
 								break;
 								case 2:
-									loadNoRoom_scr();
-									room_goto(level3);
-									global.lastCheckpoint = noone;
+									global.roomTeleportWish = level3;
+									room_goto(saveSelect);
 								break;
 							}
 						} else if (menu == 2) {
 							switch (cursorPos)
 							{
 								case 0:
-									loadNoRoom_scr();
-									room_goto(level4);
-									global.lastCheckpoint = noone;
+									global.roomTeleportWish = level4;
+									room_goto(saveSelect);
 								break;
 								case 1:
-									loadNoRoom_scr();
-									room_goto(level5A);
-									global.lastCheckpoint = noone;
+									global.roomTeleportWish = level5A;
+									room_goto(saveSelect);
 								break;
 								case 2:
-									loadNoRoom_scr();
-									room_goto(level5B);
-									global.lastCheckpoint = noone;
+									global.roomTeleportWish = level5B;
+									room_goto(saveSelect);
 								break;
 								case 3:
-									loadNoRoom_scr();
-									room_goto(level6);
-									global.lastCheckpoint = noone;
+									global.roomTeleportWish = level6;
+									room_goto(saveSelect);
 								break;
 								case 4:
-									loadNoRoom_scr();
-									room_goto(level7);
-									global.lastCheckpoint = noone;
+									global.roomTeleportWish = level7;
+									room_goto(saveSelect);
 								break;
 								case 5:
-									loadNoRoom_scr();
-									room_goto(level8);
-									global.lastCheckpoint = noone;
+									global.roomTeleportWish = level8;
+									room_goto(saveSelect);
 								break;
 								case 6:
-									loadNoRoom_scr();
-									room_goto(level9);
-									global.lastCheckpoint = noone;
+									global.roomTeleportWish = level9;
+									room_goto(saveSelect);
 								break;
 							}
 						} else if (menu == 3) {
 							switch (cursorPos)
 							{
 								case 0:
-									loadNoRoom_scr();
-									room_goto(level10);
-									global.lastCheckpoint = noone;
+									global.roomTeleportWish = level10;
+									room_goto(saveSelect);
 								break;
 								case 1:
-									loadNoRoom_scr();
-									room_goto(level11);
-									global.lastCheckpoint = noone;
+									global.roomTeleportWish = level11;
+									room_goto(saveSelect);
 								break;
 								case 2:
-									loadNoRoom_scr();
-									room_goto(level12);
-									global.lastCheckpoint = noone;
+									global.roomTeleportWish = level12;
+									room_goto(saveSelect);
 								break;
 								case 3:
-									loadNoRoom_scr();
-									room_goto(level13);
-									global.lastCheckpoint = noone;
+									global.roomTeleportWish = level13;
+									room_goto(saveSelect);
 								break;
 								case 4:
-									loadNoRoom_scr();
-									room_goto(level14);
-									global.lastCheckpoint = noone;
+									global.roomTeleportWish = level14;
+									room_goto(saveSelect);
 								break;
 							}
 						} else if (menu == 4) {
 							switch (cursorPos)
 							{
 								case 0:
-									loadNoRoom_scr();
-									room_goto(warpzone1);
-									global.lastCheckpoint = noone;
+									global.roomTeleportWish = warpzone1;
+									room_goto(saveSelect);
 								break;
 								case 1:
-									loadNoRoom_scr();
-									room_goto(warpzone2);
-									global.lastCheckpoint = noone;
+									global.roomTeleportWish = warpzone2;
+									room_goto(saveSelect);
 								break;
 								case 2:
-									loadNoRoom_scr();
-									room_goto(warpzone3);
-									global.lastCheckpoint = noone;
+									global.roomTeleportWish = warpzone3;
+									room_goto(saveSelect);
 								break;
 							}
 						} else if (menu == 5) {
 							switch (cursorPos)
 							{
 								case 0:
-									loadNoRoom_scr();
-									room_goto(weaponRemove);
-									global.lastCheckpoint = noone;
+									global.roomTeleportWish = weaponRemove;
+									room_goto(saveSelect);
 								break;
 								case 1:
-									loadNoRoom_scr();
-									room_goto(level16);
-									global.lastCheckpoint = noone;
+									global.roomTeleportWish = level16;
+									room_goto(saveSelect);
 								break;
 								case 2:
-									loadNoRoom_scr();
-									room_goto(level17);
-									global.lastCheckpoint = noone;
+									global.roomTeleportWish = level17;
+									room_goto(saveSelect);
 								break;
 								case 3:
-									loadNoRoom_scr();
-									room_goto(level18);
-									global.lastCheckpoint = noone;
+									global.roomTeleportWish = level18;
+									room_goto(saveSelect);
 								break;
 								case 4:
-									loadNoRoom_scr();
-									room_goto(level19);
-									global.lastCheckpoint = noone;
+									global.roomTeleportWish = level19;
+									room_goto(saveSelect);
 								break;
 							}
 						} else if (menu == 6) {
 							switch (cursorPos)
 							{
 								case 0:
-									loadNoRoom_scr();
-									room_goto(level20);
-									global.lastCheckpoint = noone;
+									global.roomTeleportWish = level20;
+									room_goto(saveSelect);
 								break;
 								case 1:
-									loadNoRoom_scr();
-									room_goto(level21);
-									global.lastCheckpoint = noone;
+									global.roomTeleportWish = level21;
+									room_goto(saveSelect);
 								break;
 								case 2:
-									loadNoRoom_scr();
-									room_goto(level22);
-									global.lastCheckpoint = noone;
+									global.roomTeleportWish = level22;
+									room_goto(saveSelect);
 								break;
 								case 3:
-									loadNoRoom_scr();
-									room_goto(level23);
-									global.lastCheckpoint = noone;
+									global.roomTeleportWish = level23;
+									room_goto(saveSelect);
 								break;
 								case 4:
-									loadNoRoom_scr();
-									room_goto(level24);
-									global.lastCheckpoint = noone;
+									global.roomTeleportWish = level24;
+									room_goto(saveSelect);
 								break;
 							}
 						} else if (menu == 7) {
 							switch (cursorPos)
 							{
 								case 0:
-									loadNoRoom_scr();
-									room_goto(level_ConsumedCasino);
-									global.lastCheckpoint = noone;
+									global.roomTeleportWish = level_ConsumedCasino;
+									room_goto(saveSelect);
 								break;
 								case 1:
-									loadNoRoom_scr();
-									room_goto(level25);
-									global.lastCheckpoint = noone;
+									global.roomTeleportWish = level25;
+									room_goto(saveSelect);
 								break;
 								case 2:
-									loadNoRoom_scr();
-									room_goto(level26);
-									global.lastCheckpoint = noone;
+									global.roomTeleportWish = level26;
+									room_goto(saveSelect);
 								break;
 								case 3:
-									loadNoRoom_scr();
-									room_goto(level27);
-									global.lastCheckpoint = noone;
+									global.roomTeleportWish = level27;
+									room_goto(saveSelect);
 								break;
 								case 4:
-									loadNoRoom_scr();
-									room_goto(level28);
-									global.lastCheckpoint = noone;
+									global.roomTeleportWish = level28;
+									room_goto(saveSelect);
 								break;
 							}
 						}
@@ -572,9 +504,8 @@ if (pushDelay < 0) {
 			switch (cursorPos)
 			{
 				case 0:
-					loadNoRoom_scr();
-					room_goto(level_Casino);
-					global.lastCheckpoint = noone;
+					global.roomTeleportWish = level_Casino;
+					room_goto(saveSelect);
 				break;
 				case 1:
 					pushDelay = 70;
@@ -611,193 +542,160 @@ if (pushDelay < 0) {
 			switch (cursorPos)
 			{
 				case 0:
-					loadNoRoom_scr();
-					room_goto(level1);
-					global.lastCheckpoint = noone;
+					global.roomTeleportWish = level1;
+					room_goto(saveSelect);
 				break;
 				case 1:
-					loadNoRoom_scr();
-					room_goto(level2);
-					global.lastCheckpoint = noone;
+					global.roomTeleportWish = level2;
+					room_goto(saveSelect);
 				break;
 				case 2:
-					loadNoRoom_scr();
-					room_goto(level3);
-					global.lastCheckpoint = noone;
+					global.roomTeleportWish = level3;
+					room_goto(saveSelect);
 				break;
 			}
 		} else if (menu == 2) {
 			switch (cursorPos)
 			{
 				case 0:
-					loadNoRoom_scr();
-					room_goto(level4);
-					global.lastCheckpoint = noone;
+					global.roomTeleportWish = level4;
+					room_goto(saveSelect);
 				break;
 				case 1:
-					loadNoRoom_scr();
-					room_goto(level5A);
-					global.lastCheckpoint = noone;
+					global.roomTeleportWish = level5A;
+					room_goto(saveSelect);
 				break;
 				case 2:
-					loadNoRoom_scr();
-					room_goto(level5B);
-					global.lastCheckpoint = noone;
+					global.roomTeleportWish = level5B;
+					room_goto(saveSelect);
 				break;
 				case 3:
-					loadNoRoom_scr();
-					room_goto(level6);
-					global.lastCheckpoint = noone;
+					global.roomTeleportWish = level6;
+					room_goto(saveSelect);
 				break;
 				case 4:
-					loadNoRoom_scr();
-					room_goto(level7);
-					global.lastCheckpoint = noone;
+					global.roomTeleportWish = level7;
+					room_goto(saveSelect);
 				break;
 				case 5:
-					loadNoRoom_scr();
-					room_goto(level8);
-					global.lastCheckpoint = noone;
+					global.roomTeleportWish = level8;
+					room_goto(saveSelect);
 				break;
 				case 6:
-					loadNoRoom_scr();
-					room_goto(level9);
-					global.lastCheckpoint = noone;
+					global.roomTeleportWish = level9;
+					room_goto(saveSelect);
 				break;
 			}
 		} else if (menu == 3) {
 			switch (cursorPos)
 			{
 				case 0:
-					loadNoRoom_scr();
-					room_goto(level10);
-					global.lastCheckpoint = noone;
+					global.roomTeleportWish = level10;
+					room_goto(saveSelect);
 				break;
 				case 1:
-					loadNoRoom_scr();
-					room_goto(level11);
-					global.lastCheckpoint = noone;
+					global.roomTeleportWish = level11;
+					room_goto(saveSelect);
 				break;
 				case 2:
-					loadNoRoom_scr();
-					room_goto(level12);
-					global.lastCheckpoint = noone;
+					global.roomTeleportWish = level12;
+					room_goto(saveSelect);
 				break;
 				case 3:
-					loadNoRoom_scr();
-					room_goto(level13);
-					global.lastCheckpoint = noone;
+					global.roomTeleportWish = level13;
+					room_goto(saveSelect);
 				break;
 				case 4:
-					loadNoRoom_scr();
-					room_goto(level14);
-					global.lastCheckpoint = noone;
+					global.roomTeleportWish = level14;
+					room_goto(saveSelect);
 				break;
 			}
 		} else if (menu == 4) {
 			switch (cursorPos)
 			{
 				case 0:
-					loadNoRoom_scr();
-					room_goto(warpzone1);
-					global.lastCheckpoint = noone;
+					global.roomTeleportWish = warpzone1;
+					room_goto(saveSelect);
 				break;
 				case 1:
-					loadNoRoom_scr();
-					room_goto(warpzone2);
-					global.lastCheckpoint = noone;
+					global.roomTeleportWish = warpzone2;
+					room_goto(saveSelect);
 				break;
 				case 2:
-					loadNoRoom_scr();
-					room_goto(warpzone3);
-					global.lastCheckpoint = noone;
+					global.roomTeleportWish = warpzone3;
+					room_goto(saveSelect);
 				break;
 			}
 		} else if (menu == 5) {
 			switch (cursorPos)
 			{
 				case 0:
-					loadNoRoom_scr();
-					room_goto(weaponRemove);
-					global.lastCheckpoint = noone;
+					global.roomTeleportWish = weaponRemove;
+					room_goto(saveSelect);
 				break;
 				case 1:
-					loadNoRoom_scr();
-					room_goto(level16);
-					global.lastCheckpoint = noone;
+					global.roomTeleportWish = level16;
+					room_goto(saveSelect);
 				break;
 				case 2:
-					loadNoRoom_scr();
-					room_goto(level17);
-					global.lastCheckpoint = noone;
+					global.roomTeleportWish = level17;
+					room_goto(saveSelect);
 				break;
 				case 3:
-					loadNoRoom_scr();
-					room_goto(level18);
-					global.lastCheckpoint = noone;
+					global.roomTeleportWish = level18;
+					room_goto(saveSelect);
 				break;
 				case 4:
-					loadNoRoom_scr();
-					room_goto(level19);
-					global.lastCheckpoint = noone;
+					global.roomTeleportWish = level19;
+					room_goto(saveSelect);
 				break;
 			}
 		} else if (menu == 6) {
 			switch (cursorPos)
 			{
 				case 0:
-					loadNoRoom_scr();
-					room_goto(level20);
-					global.lastCheckpoint = noone;
+					global.roomTeleportWish = level20;
+					room_goto(saveSelect);
 				break;
 				case 1:
-					loadNoRoom_scr();
-					room_goto(level21);
-					global.lastCheckpoint = noone;
+					global.roomTeleportWish = level21;
+					room_goto(saveSelect);
 				break;
 				case 2:
-					loadNoRoom_scr();
-					room_goto(level22);
-					global.lastCheckpoint = noone;
+					global.roomTeleportWish = level22;
+					room_goto(saveSelect);
 				break;
 				case 3:
-					loadNoRoom_scr();
-					room_goto(level23);
-					global.lastCheckpoint = noone;
+					global.roomTeleportWish = level23;
+					room_goto(saveSelect);
 				break;
 				case 4:
-					loadNoRoom_scr();
-					room_goto(level24);
-					global.lastCheckpoint = noone;
+					global.roomTeleportWish = level24;
+					room_goto(saveSelect);
 				break;
 			}
 		} else if (menu == 7) {
 			switch (cursorPos)
 			{
 				case 0:
-					loadNoRoom_scr();
-					room_goto(level_ConsumedCasino);
-					global.lastCheckpoint = noone;
+					global.roomTeleportWish = level_ConsumedCasino;
+					room_goto(saveSelect);
 				break;
 				case 1:
-					loadNoRoom_scr();
-					room_goto(level25);
-					global.lastCheckpoint = noone;
+					global.roomTeleportWish = level25;
+					room_goto(saveSelect);
 				break;
 				case 2:
-					loadNoRoom_scr();
-					room_goto(level26);
-					global.lastCheckpoint = noone;
+					global.roomTeleportWish = level26;
+					room_goto(saveSelect);
 				break;
 				case 3:
-					loadNoRoom_scr();
-					room_goto(level27);
-					global.lastCheckpoint = noone;
+					global.roomTeleportWish = level27;
+					room_goto(saveSelect);
 				break;
 				case 4:
-					loadNoRoom_scr();
-					room_goto(level28);
-					global.lastCheckpoint = noone;
+					global.roomTeleportWish = level28;
+					room_goto(saveSelect);
 				break;
 			}
 		}
