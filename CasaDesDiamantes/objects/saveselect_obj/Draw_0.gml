@@ -7,7 +7,7 @@ if (global.drawWarningMenu || global.drawStartMenu || global.drawEraseMenu) {
 draw_set_font(gothicPixel_fnt);
 draw_set_halign(fa_center);
 draw_set_color(make_color_rgb(255, 215, 0));
-draw_text(global.xScreenSize / 4 - 8, 108, "Savefile 1");
+draw_text(global.xScreenSize / 4 - 8, 110, "Savefile 1");
 draw_text(global.xScreenSize / 2, 110, "Savefile 2");
 draw_text(global.xScreenSize / 1.3 - 1, 110, "Savefile 3");
 

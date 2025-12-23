@@ -44,10 +44,18 @@ if (keyboard_check_pressed(vk_down) || keyboard_check_pressed(ord("S")) || gamep
 
 if (keyboard_check_pressed(vk_escape) || gamepad_button_check_pressed(4, gp_face2) || gamepad_button_check_pressed(0, gp_face2)) {
 	audio_play_sound(typewriterPush_snd, 1, false);
-	if (menu == 0) {
-		room_goto(mainmenu);
+	
+	if (global.drawWarningMenu || global.drawStartMenu || global.drawSkipMenu || global.drawEraseMenu) {
+		global.drawWarningMenu = false;
+		global.drawStartMenu = false;
+		global.drawSkipMenu = false;
+		global.drawEraseMenu = false;
 	} else {
-		menu = 0;
+		if (menu == 0) {
+			room_goto(mainmenu);
+		} else {
+			menu = 0;
+		}
 	}
 }
 
