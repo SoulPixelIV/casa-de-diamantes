@@ -1,3 +1,5 @@
+global.drawWarningMenu = false;
+
 drawStartMenu = false;
 drawSkipMenu = false;
 

@@ -151,9 +151,10 @@ pushDelay -= global.dt;
 
 if (global.drawWarningMenu) {
 	if (pushDelay < 0) {
-		if (gamepad_button_check_pressed(0, gp_face1) || mouse_check_button_pressed(mb_left) || gamepad_button_check_pressed(4, gp_face1) || keyboard_check_pressed(vk_enter)) {
-			room_goto(mainmenu);
+		if (gamepad_button_check_pressed(0, gp_face1) || mouse_check_button_pressed(mb_left) || gamepad_button_check_pressed(4, gp_face1) || keyboard_check_pressed(vk_enter) || keyboard_check_pressed(vk_space)) {
 			global.roomTeleportWish = noone;
+			global.drawWarningMenu = false;
+			room_goto(mainmenu);
 		}
 	}
 }
