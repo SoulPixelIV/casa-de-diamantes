@@ -2669,6 +2669,10 @@ if (character != cutieplusSteph_obj && room != level28) {
 	}
 }
 
+if (character == cutieplusSteph_obj) {
+	textSpeed = 1;
+}
+
 //Save Icon
 if (currentlySaving) {
 	if (saveIconDelay > 0) {
