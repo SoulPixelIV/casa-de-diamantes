@@ -1,1 +1,1 @@
-part_emitter_destroy(global.partSystem2, smokePinkEmitter);
+part_emitter_destroy(global.partSystem2, smokeWhiteEmitter);

@@ -154,6 +154,17 @@ part_type_color2(global.smokePinkPart, make_color_rgb(195, 111, 237), make_color
 part_type_gravity(global.smokePinkPart, 0.0001, 270);
 part_type_alpha3(global.smokePinkPart, 0, 0.6, 0);
 
+global.smokeWhitePart = part_type_create();
+part_type_sprite(global.smokeWhitePart, toxicCloud_spr, true, true, true);
+part_type_life(global.smokeWhitePart, 2500, 2500);
+part_type_size(global.smokeWhitePart, 1, 1.5, 0, 0);
+part_type_orientation(global.smokeWhitePart, 0, 359, 0.02, 0, 1);
+part_type_direction(global.smokeWhitePart, 0, 180, 0, 3);
+part_type_speed(global.smokeWhitePart, -0.3, 0.3, -0.001, 0);
+//part_type_color2(global.smokeWhitePart, make_color_rgb(195, 111, 237), make_color_rgb(235, 0, 117));
+part_type_gravity(global.smokeWhitePart, 0.0001, 270);
+part_type_alpha3(global.smokeWhitePart, 0, 0.6, 0);
+
 //Health
 global.healthPart = part_type_create();
 part_type_sprite(global.healthPart, healthSmall_spr, true, true, true);
