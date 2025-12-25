@@ -19,7 +19,18 @@ if (!global.drawWarningMenu && !global.drawStartMenu && !global.drawSkipMenu && 
 	
 					// wenn ungültig → fallback
 					if (rm_index < 0 || !room_exists(rm_index)) {
-						global.drawWarningMenu = true;
+						if (global.roomTeleportWish == noone) {
+							global.drawWarningMenu = true;
+						} else {
+							room_goto(global.roomTeleportWish);
+							global.drawWarningMenu = false;
+							global.drawStartMenu = false;
+							global.drawSkipMenu = false;
+							global.drawEraseMenu = false;
+							global.roomTeleportWish = noone;
+							loadNoRoom_scr();
+							global.lastCheckpoint = noone;
+						}
 					} else {
 						if (file_exists("save1")) {
 							if (global.roomTeleportWish == noone) {
@@ -66,7 +77,18 @@ if (!global.drawWarningMenu && !global.drawStartMenu && !global.drawSkipMenu && 
 	
 					// wenn ungültig → fallback
 					if (rm_index < 0 || !room_exists(rm_index)) {
-						global.drawWarningMenu = true;
+						if (global.roomTeleportWish == noone) {
+							global.drawWarningMenu = true;
+						} else {
+							room_goto(global.roomTeleportWish);
+							global.drawWarningMenu = false;
+							global.drawStartMenu = false;
+							global.drawSkipMenu = false;
+							global.drawEraseMenu = false;
+							global.roomTeleportWish = noone;
+							loadNoRoom_scr();
+							global.lastCheckpoint = noone;
+						}
 					} else {
 						if (file_exists("save2")) {
 							if (global.roomTeleportWish == noone) {
@@ -113,7 +135,18 @@ if (!global.drawWarningMenu && !global.drawStartMenu && !global.drawSkipMenu && 
 	
 					// wenn ungültig → fallback
 					if (rm_index < 0 || !room_exists(rm_index)) {
-						global.drawWarningMenu = true;
+						if (global.roomTeleportWish == noone) {
+							global.drawWarningMenu = true;
+						} else {
+							room_goto(global.roomTeleportWish);
+							global.drawWarningMenu = false;
+							global.drawStartMenu = false;
+							global.drawSkipMenu = false;
+							global.drawEraseMenu = false;
+							global.roomTeleportWish = noone;
+							loadNoRoom_scr();
+							global.lastCheckpoint = noone;
+						}
 					} else {
 						if (file_exists("save3")) {
 							if (global.roomTeleportWish == noone) {
