@@ -36,7 +36,7 @@ if (steam_initialised()) {
 			steam_update();
 		}
 		
-		if (global.playtime <= 3600) {
+		if (global.playtime > 600 && global.playtime <= 7200) {
 			if (!steam_get_achievement("ACH_FINISH_1HOUR")) {
 				steam_set_achievement("ACH_FINISH_1HOUR");
 				steam_update();
