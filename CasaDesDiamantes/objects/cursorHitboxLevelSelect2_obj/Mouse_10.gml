@@ -43,7 +43,7 @@ if (instance_exists(overworld_obj)) {
 			}
 		}
 		if (overworld_obj.menu == 7) {
-			if (index < 5) {
+			if (index < 4) {
 				open = true;
 				audio_play_sound(typewriter_snd, 1, false);
 			}

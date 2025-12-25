@@ -220,10 +220,6 @@ if (instance_exists(cursorHitboxLevelSelect_obj)) {
 									global.roomTeleportWish = level27;
 									room_goto(saveSelect);
 								break;
-								case 4:
-									global.roomTeleportWish = level28;
-									room_goto(saveSelect);
-								break;
 							}
 						}
 					}
@@ -436,10 +432,6 @@ if (instance_exists(cursorHitboxLevelSelect2_obj)) {
 									global.roomTeleportWish = level27;
 									room_goto(saveSelect);
 								break;
-								case 4:
-									global.roomTeleportWish = level28;
-									room_goto(saveSelect);
-								break;
 							}
 						}
 					}
@@ -494,7 +486,7 @@ if (menu == 6) {
 	options = 4;
 }
 if (menu == 7) {
-	options = 4;
+	options = 3;
 }
 
 if (pushDelay < 0) {
@@ -691,10 +683,6 @@ if (pushDelay < 0) {
 				break;
 				case 3:
 					global.roomTeleportWish = level27;
-					room_goto(saveSelect);
-				break;
-				case 4:
-					global.roomTeleportWish = level28;
 					room_goto(saveSelect);
 				break;
 			}

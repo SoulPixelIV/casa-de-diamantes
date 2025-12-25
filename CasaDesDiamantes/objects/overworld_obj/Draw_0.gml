@@ -63,7 +63,6 @@ if (menu == 0) {
 	draw_text(global.xScreenSize / 3, optionsY[1], "[Level 25] The First Test");
 	draw_text(global.xScreenSize / 3, optionsY[2], "[Level 26] The Second Test");
 	draw_text(global.xScreenSize / 3, optionsY[3], "[Level 27] The Third Test");
-	draw_text(global.xScreenSize / 3, optionsY[4], "[Level 28] The End");
 }
 
 draw_set_halign(fa_center);
